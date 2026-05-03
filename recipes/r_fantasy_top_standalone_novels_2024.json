@@ -1,0 +1,16 @@
+{
+  "name": "r/Fantasy Top Standalone Novels 2024",
+  "order": 20,
+  "parser": "reddit_results",
+  "url": "https://www.reddit.com/r/Fantasy/comments/1agicpw/rfantasys_2024_top_standalone_novel_poll_results/",
+  "fetch_urls": [
+    "https://old.reddit.com/r/Fantasy/comments/1agicpw/rfantasys_2024_top_standalone_novel_poll_results/",
+    "https://www.reddit.com/r/Fantasy/comments/1agicpw/rfantasys_2024_top_standalone_novel_poll_results/"
+  ],
+  "schemas": [
+    {
+      "headers": ["Rank", "Title", "Author", "Votes", "Rank change"],
+      "fields": ["position", "title", "author", "votes", "rank_change"]
+    }
+  ]
+}

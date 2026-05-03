@@ -1,0 +1,22 @@
+{
+  "name": "r/Fantasy Top Self-Published Novels 2024",
+  "order": 30,
+  "parser": "reddit_results",
+  "url": "https://www.reddit.com/r/Fantasy/comments/1g3lo7l/big_list_rfantasys_top_selfpublished_novels_2024/",
+  "fetch_urls": [
+    "https://old.reddit.com/r/Fantasy/comments/1g3lo7l/big_list_rfantasys_top_selfpublished_novels_2024/",
+    "https://www.reddit.com/r/Fantasy/comments/1g3lo7l/big_list_rfantasys_top_selfpublished_novels_2024/"
+  ],
+  "schemas": [
+    {
+      "headers": [
+        "Rank / Change",
+        "Book/series",
+        "Author",
+        "Number of Votes",
+        "GR ratings (the first book in the series)"
+      ],
+      "fields": ["position", "title", "author", "votes", "ratings"]
+    }
+  ]
+}

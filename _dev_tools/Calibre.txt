@@ -1,0 +1,461 @@
+﻿List Switchboard [recipe]: import recipe=Sword and Laser url=https://swordandlaser.fandom.com/wiki/Book_List
+List Switchboard [recipe]: import fetch url=https://swordandlaser.fandom.com/wiki/Book_List
+List Switchboard [recipe]: import fetched bytes=272698 from https://swordandlaser.fandom.com/wiki/Book_List
+List Switchboard [recipe]: import fetched preview: <!DOCTYPE html>\n<html class="client-nojs sse-splat-787-variant1 l2u-other" lang="en" dir="ltr">\n<head>\n<meta charset="UTF-8">\n<title>Book List | Swordandlaser Wiki | Fandom</title>\n<script>document.documentElement.className="client-js sse-splat-787-variant1 l2u-other";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"fd6ecac8367f06e034420fe5b792446d","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Book_List","wgTitle":"Book List","wgCurRevisionId":8882,"wgRevisionId":8882,"wgArticleId":2066,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Book_List","wgRelevantArticleId":2066,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRestrictionComment":[],"wgNoExternals":false,"wgArticleInterlangList":[],"wikiaPageType":"article","isDarkTheme":false,"wgCiteReferencePreviewsActive":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgEnableLightboxExt":true,"wgMFDisplayWikibaseDescriptions":{"search":false,"watchlist":false,"tagline":false},"egMapsScriptPath":"/extensions-ucp/mw143/Maps/","egMapsDebugJS":false,"egMapsAvailableServices":["leaflet","googlemaps3"],"egMapsLeafletLayersApiKeys":{"MapBox":"","MapQuestOpen":"","Thunderforest":"","GeoportailFrance":""},"wgDisableCMSNotifications":false,"wgCityId":529174,"wikiVertical":"books","wgSiteName":"Swordandlaser Wiki","wgFandomQuizzesEnabled":true,"wgFandomQuizzesOnFepoEnabled":false,"wgFandomQuizzesGenAiQuizzesOnArticlesEnabled":false,"wgFandomQuizzesCommunityQuizzesOnArticlesEnabled":true,"viewTrackURL":"https://beacon.wikia-services.com/__track/view?a=2066\u0026n=0\u0026env=prod\u0026c=529174\u0026lc=en\u0026lid=75\u0026x=swordandlaser\u0026s=ucp_desktop\u0026mobile_theme=fandom-light\u0026rollout_tracking=mw143-cloudflare","mediaWikiVersion":"mw143-cloudflare","wgUserIdForTracking":-1,"wgPageLanguageHasWordBreaks":true,"wgEditSubmitButtonLabelPublish":false,"wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"egFacebookAppId":"112328095453510","wgDisableAnonymousEditing":true,"comscoreKeyword":"wikiacsid_books","quantcastLabels":"","wgCategorySelect":{"defaultNamespace":"Category","defaultNamespaces":"Category"},"mwAuthBaseUrl":"https://auth.fandom.com","oneTapAuthUrl":"https://auth.fandom.com/auth/onetap/init?uselang=en\u0026wikiId=529174\u0026vertical=books\u0026metadata=one-tap\u0026redirect=https%3A%2F%2Fswordandlaser.fandom.com%2Fwiki%2FBook_List","wgEnab... <truncated 273675 chars>
+List Switchboard [recipe]: Sword & Laser March Madness start: {'main_entries': 214, 'linked_entries': 214, 'fetched_pages': 0, 'failed_pages': 0, 'pages_with_nominations': 0, 'nominations_found': 0, 'entries_added': 0, 'duplicates_skipped': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Slow Gods', 'position': '203', 'url': 'https://swordandlaser.fandom.com/wiki/Slow_Gods'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Slow Gods', 'url': 'https://swordandlaser.fandom.com/wiki/Slow_Gods', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Raven Scholar', 'position': '202', 'url': 'https://swordandlaser.fandom.com/wiki/The_Raven_Scholar'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Raven Scholar', 'url': 'https://swordandlaser.fandom.com/wiki/The_Raven_Scholar', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Automatic Noodle', 'position': '201', 'url': 'https://swordandlaser.fandom.com/wiki/Automatic_Noodle'}
+List Switchboard [recipe]: recipe linked page failed title=Automatic Noodle url=https://swordandlaser.fandom.com/wiki/Automatic_Noodle: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Someplace To Be Flying', 'position': '200', 'url': 'https://swordandlaser.fandom.com/wiki/Someplace_To_Be_Flying'}
+List Switchboard [recipe]: recipe linked page failed title=Someplace To Be Flying url=https://swordandlaser.fandom.com/wiki/Someplace_To_Be_Flying: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': "I'm Starting to Worry About This Black Box of Doom", 'position': '199', 'url': 'https://swordandlaser.fandom.com/wiki/I%27m_Starting_to_Worry_About_This_Black_Box_of_Doom'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': "I'm Starting to Worry About This Black Box of Doom", 'url': 'https://swordandlaser.fandom.com/wiki/I%27m_Starting_to_Worry_About_This_Black_Box_of_Doom', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': "The Book That Wouldn't Burn", 'position': '198', 'url': 'https://swordandlaser.fandom.com/wiki/The_Book_That_Wouldn%22t_Burn'}
+List Switchboard [recipe]: recipe linked page failed title=The Book That Wouldn't Burn url=https://swordandlaser.fandom.com/wiki/The_Book_That_Wouldn%22t_Burn: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Floating Hotel', 'position': '197', 'url': 'https://swordandlaser.fandom.com/wiki/Floating_Hotel'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Floating Hotel', 'url': 'https://swordandlaser.fandom.com/wiki/Floating_Hotel', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Interview With the Vampire', 'position': '196', 'url': 'https://swordandlaser.fandom.com/wiki/Interview_With_the_Vampire'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Interview With the Vampire', 'url': 'https://swordandlaser.fandom.com/wiki/Interview_With_the_Vampire', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Hexologists', 'position': '195', 'url': 'https://swordandlaser.fandom.com/wiki/The_Hexologists'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Hexologists', 'url': 'https://swordandlaser.fandom.com/wiki/The_Hexologists', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'She Who Became the Sun', 'position': '194', 'url': 'https://swordandlaser.fandom.com/wiki/She_Who_Became_the_Sun'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'She Who Became the Sun', 'url': 'https://swordandlaser.fandom.com/wiki/She_Who_Became_the_Sun', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Devils', 'position': '193', 'url': 'https://swordandlaser.fandom.com/wiki/The_Devils'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Devils', 'url': 'https://swordandlaser.fandom.com/wiki/The_Devils', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Lives of Tao', 'position': '192', 'url': 'https://swordandlaser.fandom.com/wiki/The_Lives_of_Tao'}
+List Switchboard [recipe]: recipe linked page failed title=The Lives of Tao url=https://swordandlaser.fandom.com/wiki/The_Lives_of_Tao: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Mickey 7', 'position': '191', 'url': 'https://swordandlaser.fandom.com/wiki/Mickey_7'}
+List Switchboard [recipe]: recipe linked page failed title=Mickey 7 url=https://swordandlaser.fandom.com/wiki/Mickey_7: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Dungeon Crawler Carl', 'position': '190', 'url': 'https://swordandlaser.fandom.com/wiki/Dungeon_Crawler_Carl'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Dungeon Crawler Carl', 'url': 'https://swordandlaser.fandom.com/wiki/Dungeon_Crawler_Carl', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The City & the City', 'position': '189', 'url': 'https://swordandlaser.fandom.com/wiki/The_City_%26_the_City'}
+List Switchboard [recipe]: recipe linked page failed title=The City & the City url=https://swordandlaser.fandom.com/wiki/The_City_%26_the_City: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Will of the Many', 'position': '188', 'url': 'https://swordandlaser.fandom.com/wiki/The_Will_of_the_Many'}
+List Switchboard [recipe]: recipe linked page failed title=The Will of the Many url=https://swordandlaser.fandom.com/wiki/The_Will_of_the_Many: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Ministry of Time', 'position': '187', 'url': 'https://swordandlaser.fandom.com/wiki/The_Ministry_of_Time'}
+List Switchboard [recipe]: recipe linked page failed title=The Ministry of Time url=https://swordandlaser.fandom.com/wiki/The_Ministry_of_Time: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Akata Witch', 'position': '186', 'url': 'https://swordandlaser.fandom.com/wiki/Akata_Witch'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Akata Witch', 'url': 'https://swordandlaser.fandom.com/wiki/Akata_Witch', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': "The Hitchhiker's Guide to the Galaxy", 'position': '185', 'url': 'https://swordandlaser.fandom.com/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy'}
+List Switchboard [recipe]: recipe linked page failed title=The Hitchhiker's Guide to the Galaxy url=https://swordandlaser.fandom.com/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'A Night in the Lonesome October', 'position': '184', 'url': 'https://swordandlaser.fandom.com/wiki/A_Night_in_the_Lonesome_October'}
+List Switchboard [recipe]: recipe linked page failed title=A Night in the Lonesome October url=https://swordandlaser.fandom.com/wiki/A_Night_in_the_Lonesome_October: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Some Desperate Glory', 'position': '183', 'url': 'https://swordandlaser.fandom.com/wiki/Some_Desperate_Glory'}
+List Switchboard [recipe]: recipe linked page failed title=Some Desperate Glory url=https://swordandlaser.fandom.com/wiki/Some_Desperate_Glory: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Spear Cuts Through Water', 'position': '182', 'url': 'https://swordandlaser.fandom.com/wiki/The_Spear_Cuts_Through_Water'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Spear Cuts Through Water', 'url': 'https://swordandlaser.fandom.com/wiki/The_Spear_Cuts_Through_Water', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Cursed Bunny', 'position': '181', 'url': 'https://swordandlaser.fandom.com/wiki/Cursed_Bunny'}
+List Switchboard [recipe]: recipe linked page failed title=Cursed Bunny url=https://swordandlaser.fandom.com/wiki/Cursed_Bunny: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Sword of Kaigen', 'position': '180', 'url': 'https://swordandlaser.fandom.com/wiki/The_Sword_of_Kaigen'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Sword of Kaigen', 'url': 'https://swordandlaser.fandom.com/wiki/The_Sword_of_Kaigen', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': "Emily Wilde's Encyclopaedia of Faeries", 'position': '179', 'url': 'https://swordandlaser.fandom.com/wiki/Emily_Wilde%27s_Encyclopaedia_of_Faeries'}
+List Switchboard [recipe]: recipe linked page failed title=Emily Wilde's Encyclopaedia of Faeries url=https://swordandlaser.fandom.com/wiki/Emily_Wilde%27s_Encyclopaedia_of_Faeries: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': "Cordelia's Honour", 'position': '178', 'url': 'https://swordandlaser.fandom.com/wiki/Cordelia%27s_Honour'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': "Cordelia's Honour", 'url': 'https://swordandlaser.fandom.com/wiki/Cordelia%27s_Honour', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Iron Widow', 'position': '177', 'url': 'https://swordandlaser.fandom.com/wiki/Iron_Widow'}
+List Switchboard [recipe]: recipe linked page failed title=Iron Widow url=https://swordandlaser.fandom.com/wiki/Iron_Widow: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Shadow of the Gods', 'position': '176', 'url': 'https://swordandlaser.fandom.com/wiki/The_Shadow_of_the_Gods'}
+List Switchboard [recipe]: recipe linked page failed title=The Shadow of the Gods url=https://swordandlaser.fandom.com/wiki/The_Shadow_of_the_Gods: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Shining Girls', 'position': '175', 'url': 'https://swordandlaser.fandom.com/wiki/The_Shining_Girls'}
+List Switchboard [recipe]: recipe linked page failed title=The Shining Girls url=https://swordandlaser.fandom.com/wiki/The_Shining_Girls: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Kings of the Wyld', 'position': '174', 'url': 'https://swordandlaser.fandom.com/wiki/Kings_of_the_Wyld'}
+List Switchboard [recipe]: recipe linked page failed title=Kings of the Wyld url=https://swordandlaser.fandom.com/wiki/Kings_of_the_Wyld: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Mimicking of Known Successes', 'position': '173', 'url': 'https://swordandlaser.fandom.com/wiki/The_Mimicking_of_Known_Successes'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Mimicking of Known Successes', 'url': 'https://swordandlaser.fandom.com/wiki/The_Mimicking_of_Known_Successes', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Library at Mount Char', 'position': '172', 'url': 'https://swordandlaser.fandom.com/wiki/The_Library_at_Mount_Char'}
+List Switchboard [recipe]: recipe linked page failed title=The Library at Mount Char url=https://swordandlaser.fandom.com/wiki/The_Library_at_Mount_Char: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'China Mountain Zhang', 'position': '171', 'url': 'https://swordandlaser.fandom.com/wiki/China_Mountain_Zhang'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'China Mountain Zhang', 'url': 'https://swordandlaser.fandom.com/wiki/China_Mountain_Zhang', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Ninth House', 'position': '170', 'url': 'https://swordandlaser.fandom.com/wiki/Ninth_House'}
+List Switchboard [recipe]: recipe linked page failed title=Ninth House url=https://swordandlaser.fandom.com/wiki/Ninth_House: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Planetfall', 'position': '169', 'url': 'https://swordandlaser.fandom.com/wiki/Planetfall'}
+List Switchboard [recipe]: recipe linked page failed title=Planetfall url=https://swordandlaser.fandom.com/wiki/Planetfall: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Fourth Wing', 'position': '168', 'url': 'https://swordandlaser.fandom.com/wiki/Fourth_Wing'}
+List Switchboard [recipe]: recipe linked page failed title=Fourth Wing url=https://swordandlaser.fandom.com/wiki/Fourth_Wing: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Children of Time', 'position': '167', 'url': 'https://swordandlaser.fandom.com/wiki/Children_of_Time'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Children of Time', 'url': 'https://swordandlaser.fandom.com/wiki/Children_of_Time', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Legends & Lattes', 'position': '166', 'url': 'https://swordandlaser.fandom.com/wiki/Legends_%26_Lattes'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Legends & Lattes', 'url': 'https://swordandlaser.fandom.com/wiki/Legends_%26_Lattes', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Under Fortunate Stars', 'position': '165', 'url': 'https://swordandlaser.fandom.com/wiki/Under_Fortunate_Stars'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Under Fortunate Stars', 'url': 'https://swordandlaser.fandom.com/wiki/Under_Fortunate_Stars', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Nettle & Bone', 'position': '164', 'url': 'https://swordandlaser.fandom.com/wiki/Nettle_%26_Bone'}
+List Switchboard [recipe]: recipe linked page failed title=Nettle & Bone url=https://swordandlaser.fandom.com/wiki/Nettle_%26_Bone: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Brightness Falls from the Air', 'position': '163', 'url': 'https://swordandlaser.fandom.com/wiki/Brightness_Falls_from_the_Air'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Brightness Falls from the Air', 'url': 'https://swordandlaser.fandom.com/wiki/Brightness_Falls_from_the_Air', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Elric of Melniboné', 'position': '162', 'url': 'https://swordandlaser.fandom.com/wiki/Elric_of_Melnibon%C3%A9'}
+List Switchboard [recipe]: recipe linked page failed title=Elric of Melniboné url=https://swordandlaser.fandom.com/wiki/Elric_of_Melnibon%C3%A9: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Six Wakes', 'position': '161', 'url': 'https://swordandlaser.fandom.com/wiki/Six_Wakes'}
+List Switchboard [recipe]: recipe linked page failed title=Six Wakes url=https://swordandlaser.fandom.com/wiki/Six_Wakes: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Jasmine Throne', 'position': '160', 'url': 'https://swordandlaser.fandom.com/wiki/The_Jasmine_Throne'}
+List Switchboard [recipe]: recipe linked page failed title=The Jasmine Throne url=https://swordandlaser.fandom.com/wiki/The_Jasmine_Throne: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'How High We Go in the Dark', 'position': '159', 'url': 'https://swordandlaser.fandom.com/wiki/How_High_We_Go_in_the_Dark'}
+List Switchboard [recipe]: recipe linked page failed title=How High We Go in the Dark url=https://swordandlaser.fandom.com/wiki/How_High_We_Go_in_the_Dark: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Rivers of London', 'position': '158', 'url': 'https://swordandlaser.fandom.com/wiki/Rivers_of_London'}
+List Switchboard [recipe]: recipe linked page failed title=Rivers of London url=https://swordandlaser.fandom.com/wiki/Rivers_of_London: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Hunt the Stars', 'position': '157', 'url': 'https://swordandlaser.fandom.com/wiki/Hunt_the_Stars'}
+List Switchboard [recipe]: recipe linked page failed title=Hunt the Stars url=https://swordandlaser.fandom.com/wiki/Hunt_the_Stars: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Machinehood', 'position': '156', 'url': 'https://swordandlaser.fandom.com/wiki/Machinehood'}
+List Switchboard [recipe]: recipe linked page failed title=Machinehood url=https://swordandlaser.fandom.com/wiki/Machinehood: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'A Master of Djinn', 'position': '155', 'url': 'https://swordandlaser.fandom.com/wiki/A_Master_of_Djinn'}
+List Switchboard [recipe]: recipe linked page failed title=A Master of Djinn url=https://swordandlaser.fandom.com/wiki/A_Master_of_Djinn: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': "Pandora's Star", 'position': '154', 'url': 'https://swordandlaser.fandom.com/wiki/Pandora%27s_Star'}
+List Switchboard [recipe]: recipe linked page failed title=Pandora's Star url=https://swordandlaser.fandom.com/wiki/Pandora%27s_Star: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Empress of Salt and Fortune', 'position': '153', 'url': 'https://swordandlaser.fandom.com/wiki/The_Empress_of_Salt_and_Fortune'}
+List Switchboard [recipe]: recipe linked page failed title=The Empress of Salt and Fortune url=https://swordandlaser.fandom.com/wiki/The_Empress_of_Salt_and_Fortune: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Light from Uncommon Stars', 'position': '152', 'url': 'https://swordandlaser.fandom.com/wiki/Light_from_Uncommon_Stars'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Light from Uncommon Stars', 'url': 'https://swordandlaser.fandom.com/wiki/Light_from_Uncommon_Stars', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Inheritance of Orquídea Divina', 'position': '151', 'url': 'https://swordandlaser.fandom.com/wiki/The_Inheritance_of_Orqu%C3%ADdea_Divina'}
+List Switchboard [recipe]: recipe linked page failed title=The Inheritance of Orquídea Divina url=https://swordandlaser.fandom.com/wiki/The_Inheritance_of_Orqu%C3%ADdea_Divina: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Aurora Rising', 'position': '150', 'url': 'https://swordandlaser.fandom.com/wiki/Aurora_Rising'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Aurora Rising', 'url': 'https://swordandlaser.fandom.com/wiki/Aurora_Rising', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'NOS4A2', 'position': '149', 'url': 'https://swordandlaser.fandom.com/wiki/NOS4A2'}
+List Switchboard [recipe]: recipe linked page failed title=NOS4A2 url=https://swordandlaser.fandom.com/wiki/NOS4A2: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Terra Nullius', 'position': '148', 'url': 'https://swordandlaser.fandom.com/wiki/Terra_Nullius'}
+List Switchboard [recipe]: recipe linked page failed title=Terra Nullius url=https://swordandlaser.fandom.com/wiki/Terra_Nullius: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': "The Ruthless Lady's Guide to Wizardry", 'position': '147', 'url': 'https://swordandlaser.fandom.com/wiki/The_Ruthless_Lady%27s_Guide_to_Wizardry'}
+List Switchboard [recipe]: recipe linked page failed title=The Ruthless Lady's Guide to Wizardry url=https://swordandlaser.fandom.com/wiki/The_Ruthless_Lady%27s_Guide_to_Wizardry: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Consider Phlebas', 'position': '146', 'url': 'https://swordandlaser.fandom.com/wiki/Consider_Phlebas'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Consider Phlebas', 'url': 'https://swordandlaser.fandom.com/wiki/Consider_Phlebas', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Piranesi', 'position': '145', 'url': 'https://swordandlaser.fandom.com/wiki/Piranesi'}
+List Switchboard [recipe]: recipe linked page failed title=Piranesi url=https://swordandlaser.fandom.com/wiki/Piranesi: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Network Effect', 'position': '144', 'url': 'https://swordandlaser.fandom.com/wiki/Network_Effect'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Network Effect', 'url': 'https://swordandlaser.fandom.com/wiki/Network_Effect', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The House in the Cerulean Sea', 'position': '143', 'url': 'https://swordandlaser.fandom.com/wiki/The_House_in_the_Cerulean_Sea'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The House in the Cerulean Sea', 'url': 'https://swordandlaser.fandom.com/wiki/The_House_in_the_Cerulean_Sea', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Elatsoe', 'position': '142', 'url': 'https://swordandlaser.fandom.com/wiki/Elatsoe'}
+List Switchboard [recipe]: recipe linked page failed title=Elatsoe url=https://swordandlaser.fandom.com/wiki/Elatsoe: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Fold', 'position': '141', 'url': 'https://swordandlaser.fandom.com/wiki/The_Fold'}
+List Switchboard [recipe]: recipe linked page failed title=The Fold url=https://swordandlaser.fandom.com/wiki/The_Fold: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Marrow Thieves', 'position': '140', 'url': 'https://swordandlaser.fandom.com/wiki/The_Marrow_Thieves'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Marrow Thieves', 'url': 'https://swordandlaser.fandom.com/wiki/The_Marrow_Thieves', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Finding Baba Yaga', 'position': '139.5', 'url': 'https://swordandlaser.fandom.com/wiki/Finding_Baba_Yaga'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Finding Baba Yaga', 'url': 'https://swordandlaser.fandom.com/wiki/Finding_Baba_Yaga', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Parable of the Sower', 'position': '139', 'url': 'https://swordandlaser.fandom.com/wiki/Parable_of_the_Sower'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Parable of the Sower', 'url': 'https://swordandlaser.fandom.com/wiki/Parable_of_the_Sower', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': "Howl's Moving Castle", 'position': '138', 'url': 'https://swordandlaser.fandom.com/wiki/Howl%27s_Moving_Castle'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': "Howl's Moving Castle", 'url': 'https://swordandlaser.fandom.com/wiki/Howl%27s_Moving_Castle', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Finder', 'position': '137', 'url': 'https://swordandlaser.fandom.com/wiki/Finder'}
+List Switchboard [recipe]: recipe linked page failed title=Finder url=https://swordandlaser.fandom.com/wiki/Finder: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Ten Thousand Doors of January', 'position': '136', 'url': 'https://swordandlaser.fandom.com/wiki/The_Ten_Thousand_Doors_of_January'}
+List Switchboard [recipe]: recipe linked page failed title=The Ten Thousand Doors of January url=https://swordandlaser.fandom.com/wiki/The_Ten_Thousand_Doors_of_January: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Elysium', 'position': '135', 'url': 'https://swordandlaser.fandom.com/wiki/Elysium'}
+List Switchboard [recipe]: recipe linked page failed title=Elysium url=https://swordandlaser.fandom.com/wiki/Elysium: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Black Leopard, Red Wolf', 'position': '134', 'url': 'https://swordandlaser.fandom.com/wiki/Black_Leopard,_Red_Wolf'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Black Leopard, Red Wolf', 'url': 'https://swordandlaser.fandom.com/wiki/Black_Leopard,_Red_Wolf', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'A Memory Called Empire', 'position': '133', 'url': 'https://swordandlaser.fandom.com/wiki/A_Memory_Called_Empire'}
+List Switchboard [recipe]: recipe linked page failed title=A Memory Called Empire url=https://swordandlaser.fandom.com/wiki/A_Memory_Called_Empire: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Magician: Apprentice', 'position': '132', 'url': 'https://swordandlaser.fandom.com/wiki/Magician:_Apprentice'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Magician: Apprentice', 'url': 'https://swordandlaser.fandom.com/wiki/Magician:_Apprentice', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'This is How You Lose the Time War', 'position': '131', 'url': 'https://swordandlaser.fandom.com/wiki/This_is_How_You_Lose_the_Time_War'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'This is How You Lose the Time War', 'url': 'https://swordandlaser.fandom.com/wiki/This_is_How_You_Lose_the_Time_War', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Light Brigade', 'position': '130', 'url': 'https://swordandlaser.fandom.com/wiki/The_Light_Brigade'}
+List Switchboard [recipe]: recipe linked page failed title=The Light Brigade url=https://swordandlaser.fandom.com/wiki/The_Light_Brigade: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Gideon the Ninth', 'position': '129', 'url': 'https://swordandlaser.fandom.com/wiki/Gideon_the_Ninth'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Gideon the Ninth', 'url': 'https://swordandlaser.fandom.com/wiki/Gideon_the_Ninth', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'In the Company of Others', 'position': '128', 'url': 'https://swordandlaser.fandom.com/wiki/In_the_Company_of_Others'}
+List Switchboard [recipe]: recipe linked page failed title=In the Company of Others url=https://swordandlaser.fandom.com/wiki/In_the_Company_of_Others: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Hogfather', 'position': '127', 'url': 'https://swordandlaser.fandom.com/wiki/Hogfather'}
+List Switchboard [recipe]: recipe linked page failed title=Hogfather url=https://swordandlaser.fandom.com/wiki/Hogfather: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Snow Queen', 'position': '126', 'url': 'https://swordandlaser.fandom.com/wiki/The_Snow_Queen'}
+List Switchboard [recipe]: recipe linked page failed title=The Snow Queen url=https://swordandlaser.fandom.com/wiki/The_Snow_Queen: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Seven Blades in Black', 'position': '125', 'url': 'https://swordandlaser.fandom.com/wiki/Seven_Blades_in_Black'}
+List Switchboard [recipe]: recipe linked page failed title=Seven Blades in Black url=https://swordandlaser.fandom.com/wiki/Seven_Blades_in_Black: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Trail of Lightning', 'position': '124', 'url': 'https://swordandlaser.fandom.com/wiki/Trail_of_Lightning'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Trail of Lightning', 'url': 'https://swordandlaser.fandom.com/wiki/Trail_of_Lightning', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Poppy War', 'position': '123', 'url': 'https://swordandlaser.fandom.com/wiki/The_Poppy_War'}
+List Switchboard [recipe]: recipe linked page failed title=The Poppy War url=https://swordandlaser.fandom.com/wiki/The_Poppy_War: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Vessel', 'position': '122', 'url': 'https://swordandlaser.fandom.com/wiki/Vessel'}
+List Switchboard [recipe]: recipe linked page failed title=Vessel url=https://swordandlaser.fandom.com/wiki/Vessel: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Last Unicorn', 'position': '121', 'url': 'https://swordandlaser.fandom.com/wiki/The_Last_Unicorn'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Last Unicorn', 'url': 'https://swordandlaser.fandom.com/wiki/The_Last_Unicorn', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Martian Chronicles', 'position': '120', 'url': 'https://swordandlaser.fandom.com/wiki/The_Martian_Chronicles'}
+List Switchboard [recipe]: recipe linked page failed title=The Martian Chronicles url=https://swordandlaser.fandom.com/wiki/The_Martian_Chronicles: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Theft of Swords', 'position': '119', 'url': 'https://swordandlaser.fandom.com/wiki/Theft_of_Swords'}
+List Switchboard [recipe]: recipe linked page failed title=Theft of Swords url=https://swordandlaser.fandom.com/wiki/Theft_of_Swords: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': "Harry Potter and the Philosopher's Stone", 'position': '118', 'url': 'https://swordandlaser.fandom.com/wiki/Harry_Potter_and_the_Philosopher%27s_Stone'}
+List Switchboard [recipe]: recipe linked page failed title=Harry Potter and the Philosopher's Stone url=https://swordandlaser.fandom.com/wiki/Harry_Potter_and_the_Philosopher%27s_Stone: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Calculating Stars', 'position': '117', 'url': 'https://swordandlaser.fandom.com/wiki/The_Calculating_Stars'}
+List Switchboard [recipe]: recipe linked page failed title=The Calculating Stars url=https://swordandlaser.fandom.com/wiki/The_Calculating_Stars: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Ninefox Gambit', 'position': '116', 'url': 'https://swordandlaser.fandom.com/wiki/Ninefox_Gambit'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Ninefox Gambit', 'url': 'https://swordandlaser.fandom.com/wiki/Ninefox_Gambit', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Ka: Dar Oakley in the Ruin of Ymr', 'position': '115', 'url': 'https://swordandlaser.fandom.com/wiki/Ka:_Dar_Oakley_in_the_Ruin_of_Ymr'}
+List Switchboard [recipe]: recipe linked page failed title=Ka: Dar Oakley in the Ruin of Ymr url=https://swordandlaser.fandom.com/wiki/Ka:_Dar_Oakley_in_the_Ruin_of_Ymr: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Zeroes', 'position': '114', 'url': 'https://swordandlaser.fandom.com/wiki/Zeroes'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Zeroes', 'url': 'https://swordandlaser.fandom.com/wiki/Zeroes', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Lovecraft Country', 'position': '113', 'url': 'https://swordandlaser.fandom.com/wiki/Lovecraft_Country'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Lovecraft Country', 'url': 'https://swordandlaser.fandom.com/wiki/Lovecraft_Country', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Slan', 'position': '112', 'url': 'https://swordandlaser.fandom.com/wiki/Slan'}
+List Switchboard [recipe]: recipe linked page failed title=Slan url=https://swordandlaser.fandom.com/wiki/Slan: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Jade City', 'position': '111', 'url': 'https://swordandlaser.fandom.com/wiki/Jade_City'}
+List Switchboard [recipe]: recipe linked page failed title=Jade City url=https://swordandlaser.fandom.com/wiki/Jade_City: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Mortal Engines', 'position': '110', 'url': 'https://swordandlaser.fandom.com/wiki/Mortal_Engines'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Mortal Engines', 'url': 'https://swordandlaser.fandom.com/wiki/Mortal_Engines', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Circe', 'position': '109', 'url': 'https://swordandlaser.fandom.com/wiki/Circe'}
+List Switchboard [recipe]: recipe linked page failed title=Circe url=https://swordandlaser.fandom.com/wiki/Circe: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': "Night's Master", 'position': '108', 'url': 'https://swordandlaser.fandom.com/wiki/Night%27s_Master'}
+List Switchboard [recipe]: recipe linked page failed title=Night's Master url=https://swordandlaser.fandom.com/wiki/Night%27s_Master: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Soulless', 'position': '107.5', 'url': 'https://swordandlaser.fandom.com/wiki/Soulless'}
+List Switchboard [recipe]: recipe linked page failed title=Soulless url=https://swordandlaser.fandom.com/wiki/Soulless: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'We are Legion We are Bob', 'position': '107', 'url': 'https://swordandlaser.fandom.com/wiki/We_are_Legion_We_are_Bob'}
+List Switchboard [recipe]: recipe linked page failed title=We are Legion We are Bob url=https://swordandlaser.fandom.com/wiki/We_are_Legion_We_are_Bob: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'An Unkindness of Ghosts', 'position': '106', 'url': 'https://swordandlaser.fandom.com/wiki/An_Unkindness_of_Ghosts'}
+List Switchboard [recipe]: recipe linked page failed title=An Unkindness of Ghosts url=https://swordandlaser.fandom.com/wiki/An_Unkindness_of_Ghosts: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'A Wrinkle in Time', 'position': '105', 'url': 'https://swordandlaser.fandom.com/wiki/A_Wrinkle_in_Time'}
+List Switchboard [recipe]: recipe linked page failed title=A Wrinkle in Time url=https://swordandlaser.fandom.com/wiki/A_Wrinkle_in_Time: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Frankenstein, or the Modern Prometheus', 'position': '104', 'url': 'https://swordandlaser.fandom.com/wiki/Frankenstein,_or_the_Modern_Prometheus'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Frankenstein, or the Modern Prometheus', 'url': 'https://swordandlaser.fandom.com/wiki/Frankenstein,_or_the_Modern_Prometheus', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'California Bones', 'position': '103', 'url': 'https://swordandlaser.fandom.com/wiki/California_Bones'}
+List Switchboard [recipe]: recipe linked page failed title=California Bones url=https://swordandlaser.fandom.com/wiki/California_Bones: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Doomsday Book', 'position': '102', 'url': 'https://swordandlaser.fandom.com/wiki/Doomsday_Book'}
+List Switchboard [recipe]: recipe linked page failed title=Doomsday Book url=https://swordandlaser.fandom.com/wiki/Doomsday_Book: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': "The Strange Case of the Alchemist's Daughter", 'position': '101', 'url': 'https://swordandlaser.fandom.com/wiki/The_Strange_Case_of_the_Alchemist%27s_Daughter'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': "The Strange Case of the Alchemist's Daughter", 'url': 'https://swordandlaser.fandom.com/wiki/The_Strange_Case_of_the_Alchemist%27s_Daughter', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Helliconia Spring', 'position': '100', 'url': 'https://swordandlaser.fandom.com/wiki/Helliconia_Spring'}
+List Switchboard [recipe]: recipe linked page failed title=Helliconia Spring url=https://swordandlaser.fandom.com/wiki/Helliconia_Spring: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Gunslinger', 'position': '99', 'url': 'https://swordandlaser.fandom.com/wiki/The_Gunslinger'}
+List Switchboard [recipe]: recipe linked page failed title=The Gunslinger url=https://swordandlaser.fandom.com/wiki/The_Gunslinger: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Left Hand of Darkness', 'position': '98', 'url': 'https://swordandlaser.fandom.com/wiki/The_Left_Hand_of_Darkness'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Left Hand of Darkness', 'url': 'https://swordandlaser.fandom.com/wiki/The_Left_Hand_of_Darkness', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Hum and the Shiver', 'position': '97', 'url': 'https://swordandlaser.fandom.com/wiki/The_Hum_and_the_Shiver'}
+List Switchboard [recipe]: recipe linked page failed title=The Hum and the Shiver url=https://swordandlaser.fandom.com/wiki/The_Hum_and_the_Shiver: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Long Way to a Small, Angry Planet', 'position': '96', 'url': 'https://swordandlaser.fandom.com/wiki/The_Long_Way_to_a_Small,_Angry_Planet'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Long Way to a Small, Angry Planet', 'url': 'https://swordandlaser.fandom.com/wiki/The_Long_Way_to_a_Small,_Angry_Planet', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Invisible Library', 'position': '95', 'url': 'https://swordandlaser.fandom.com/wiki/The_Invisible_Library'}
+List Switchboard [recipe]: recipe linked page failed title=The Invisible Library url=https://swordandlaser.fandom.com/wiki/The_Invisible_Library: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Gateway', 'position': '94', 'url': 'https://swordandlaser.fandom.com/wiki/Gateway'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Gateway', 'url': 'https://swordandlaser.fandom.com/wiki/Gateway', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Salt Roads', 'position': '93', 'url': 'https://swordandlaser.fandom.com/wiki/The_Salt_Roads'}
+List Switchboard [recipe]: recipe linked page failed title=The Salt Roads url=https://swordandlaser.fandom.com/wiki/The_Salt_Roads: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Three-Body Problem', 'position': '92', 'url': 'https://swordandlaser.fandom.com/wiki/The_Three-Body_Problem'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Three-Body Problem', 'url': 'https://swordandlaser.fandom.com/wiki/The_Three-Body_Problem', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Rook', 'position': '91', 'url': 'https://swordandlaser.fandom.com/wiki/The_Rook'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Rook', 'url': 'https://swordandlaser.fandom.com/wiki/The_Rook', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Futuristic Violence and Fancy Suits', 'position': '90', 'url': 'https://swordandlaser.fandom.com/wiki/Futuristic_Violence_and_Fancy_Suits'}
+List Switchboard [recipe]: recipe linked page failed title=Futuristic Violence and Fancy Suits url=https://swordandlaser.fandom.com/wiki/Futuristic_Violence_and_Fancy_Suits: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Golem and the Jinni', 'position': '89', 'url': 'https://swordandlaser.fandom.com/wiki/The_Golem_and_the_Jinni'}
+List Switchboard [recipe]: recipe linked page failed title=The Golem and the Jinni url=https://swordandlaser.fandom.com/wiki/The_Golem_and_the_Jinni: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'A Fire Upon The Deep', 'position': '88', 'url': 'https://swordandlaser.fandom.com/wiki/A_Fire_Upon_The_Deep'}
+List Switchboard [recipe]: recipe linked page failed title=A Fire Upon The Deep url=https://swordandlaser.fandom.com/wiki/A_Fire_Upon_The_Deep: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Last Wish', 'position': '87', 'url': 'https://swordandlaser.fandom.com/wiki/The_Last_Wish'}
+List Switchboard [recipe]: recipe linked page failed title=The Last Wish url=https://swordandlaser.fandom.com/wiki/The_Last_Wish: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Time Traders', 'position': '86', 'url': 'https://swordandlaser.fandom.com/wiki/The_Time_Traders'}
+List Switchboard [recipe]: recipe linked page failed title=The Time Traders url=https://swordandlaser.fandom.com/wiki/The_Time_Traders: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Updraft', 'position': '85', 'url': 'https://swordandlaser.fandom.com/wiki/Updraft'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Updraft', 'url': 'https://swordandlaser.fandom.com/wiki/Updraft', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Aurora', 'position': '84', 'url': 'https://swordandlaser.fandom.com/wiki/Aurora'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Aurora', 'url': 'https://swordandlaser.fandom.com/wiki/Aurora', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'A Darker Shade of Magic', 'position': '83', 'url': 'https://swordandlaser.fandom.com/wiki/A_Darker_Shade_of_Magic'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'A Darker Shade of Magic', 'url': 'https://swordandlaser.fandom.com/wiki/A_Darker_Shade_of_Magic', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Fifth Season', 'position': '83.5', 'url': 'https://swordandlaser.fandom.com/wiki/The_Fifth_Season'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Fifth Season', 'url': 'https://swordandlaser.fandom.com/wiki/The_Fifth_Season', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'All the Birds in the Sky', 'position': '82', 'url': 'https://swordandlaser.fandom.com/wiki/All_the_Birds_in_the_Sky'}
+List Switchboard [recipe]: recipe linked page failed title=All the Birds in the Sky url=https://swordandlaser.fandom.com/wiki/All_the_Birds_in_the_Sky: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Sword of Shannara', 'position': '81', 'url': 'https://swordandlaser.fandom.com/wiki/The_Sword_of_Shannara'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Sword of Shannara', 'url': 'https://swordandlaser.fandom.com/wiki/The_Sword_of_Shannara', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Radiance', 'position': '80', 'url': 'https://swordandlaser.fandom.com/wiki/Radiance'}
+List Switchboard [recipe]: recipe linked page failed title=Radiance url=https://swordandlaser.fandom.com/wiki/Radiance: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Arrows of the Queen', 'position': '79', 'url': 'https://swordandlaser.fandom.com/wiki/Arrows_of_the_Queen'}
+List Switchboard [recipe]: recipe linked page failed title=Arrows of the Queen url=https://swordandlaser.fandom.com/wiki/Arrows_of_the_Queen: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Time and Again', 'position': '78', 'url': 'https://swordandlaser.fandom.com/wiki/Time_and_Again'}
+List Switchboard [recipe]: recipe linked page failed title=Time and Again url=https://swordandlaser.fandom.com/wiki/Time_and_Again: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Traitor Baru Cormorant', 'position': '77', 'url': 'https://swordandlaser.fandom.com/wiki/The_Traitor_Baru_Cormorant'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Traitor Baru Cormorant', 'url': 'https://swordandlaser.fandom.com/wiki/The_Traitor_Baru_Cormorant', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'A Canticle for Leibowitz', 'position': '76', 'url': 'https://swordandlaser.fandom.com/wiki/A_Canticle_for_Leibowitz'}
+List Switchboard [recipe]: recipe linked page failed title=A Canticle for Leibowitz url=https://swordandlaser.fandom.com/wiki/A_Canticle_for_Leibowitz: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Uprooted', 'position': '75', 'url': 'https://swordandlaser.fandom.com/wiki/Uprooted'}
+List Switchboard [recipe]: recipe linked page failed title=Uprooted url=https://swordandlaser.fandom.com/wiki/Uprooted: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Station Eleven', 'position': '74', 'url': 'https://swordandlaser.fandom.com/wiki/Station_Eleven'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Station Eleven', 'url': 'https://swordandlaser.fandom.com/wiki/Station_Eleven', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'City of Stairs', 'position': '73', 'url': 'https://swordandlaser.fandom.com/wiki/City_of_Stairs'}
+List Switchboard [recipe]: recipe linked page failed title=City of Stairs url=https://swordandlaser.fandom.com/wiki/City_of_Stairs: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Sword of Rhiannon', 'position': '72', 'url': 'https://swordandlaser.fandom.com/wiki/The_Sword_of_Rhiannon'}
+List Switchboard [recipe]: recipe linked page failed title=The Sword of Rhiannon url=https://swordandlaser.fandom.com/wiki/The_Sword_of_Rhiannon: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Wyrd Sisters', 'position': '71', 'url': 'https://swordandlaser.fandom.com/wiki/Wyrd_Sisters'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Wyrd Sisters', 'url': 'https://swordandlaser.fandom.com/wiki/Wyrd_Sisters', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Goblin Emperor', 'position': '70', 'url': 'https://swordandlaser.fandom.com/wiki/The_Goblin_Emperor'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Goblin Emperor', 'url': 'https://swordandlaser.fandom.com/wiki/The_Goblin_Emperor', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Annihilation', 'position': '69', 'url': 'https://swordandlaser.fandom.com/wiki/Annihilation'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Annihilation', 'url': 'https://swordandlaser.fandom.com/wiki/Annihilation', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Sparrow', 'position': '68', 'url': 'https://swordandlaser.fandom.com/wiki/The_Sparrow'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Sparrow', 'url': 'https://swordandlaser.fandom.com/wiki/The_Sparrow', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Night Circus', 'position': '67', 'url': 'https://swordandlaser.fandom.com/wiki/The_Night_Circus'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Night Circus', 'url': 'https://swordandlaser.fandom.com/wiki/The_Night_Circus', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Do Androids Dream of Electric Sheep', 'position': '66', 'url': 'https://swordandlaser.fandom.com/wiki/Do_Androids_Dream_of_Electric_Sheep'}
+List Switchboard [recipe]: recipe linked page failed title=Do Androids Dream of Electric Sheep url=https://swordandlaser.fandom.com/wiki/Do_Androids_Dream_of_Electric_Sheep: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Alif the Unseen', 'position': '65', 'url': 'https://swordandlaser.fandom.com/wiki/Alif_the_Unseen'}
+List Switchboard [recipe]: recipe linked page failed title=Alif the Unseen url=https://swordandlaser.fandom.com/wiki/Alif_the_Unseen: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Stories of Your Life and Others', 'position': '64', 'url': 'https://swordandlaser.fandom.com/wiki/Stories_of_Your_Life_and_Others'}
+List Switchboard [recipe]: recipe linked page failed title=Stories of Your Life and Others url=https://swordandlaser.fandom.com/wiki/Stories_of_Your_Life_and_Others: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Name of the Wind', 'position': '63', 'url': 'https://swordandlaser.fandom.com/wiki/The_Name_of_the_Wind'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Name of the Wind', 'url': 'https://swordandlaser.fandom.com/wiki/The_Name_of_the_Wind', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Dawn', 'position': '62', 'url': 'https://swordandlaser.fandom.com/wiki/Dawn'}
+List Switchboard [recipe]: recipe linked page failed title=Dawn url=https://swordandlaser.fandom.com/wiki/Dawn: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Promise of Blood', 'position': '61', 'url': 'https://swordandlaser.fandom.com/wiki/Promise_of_Blood'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Promise of Blood', 'url': 'https://swordandlaser.fandom.com/wiki/Promise_of_Blood', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Martian', 'position': '60', 'url': 'https://swordandlaser.fandom.com/wiki/The_Martian'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Martian', 'url': 'https://swordandlaser.fandom.com/wiki/The_Martian', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'A Dance of Cloaks', 'position': '59', 'url': 'https://swordandlaser.fandom.com/wiki/A_Dance_of_Cloaks'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'A Dance of Cloaks', 'url': 'https://swordandlaser.fandom.com/wiki/A_Dance_of_Cloaks', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Brand', 'position': '59.5', 'url': 'https://swordandlaser.fandom.com/wiki/The_Brand'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Brand', 'url': 'https://swordandlaser.fandom.com/wiki/The_Brand', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Altered Carbon', 'position': '58', 'url': 'https://swordandlaser.fandom.com/wiki/Altered_Carbon'}
+List Switchboard [recipe]: recipe linked page failed title=Altered Carbon url=https://swordandlaser.fandom.com/wiki/Altered_Carbon: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'A Wizard of Earthsea', 'position': '57', 'url': 'https://swordandlaser.fandom.com/wiki/A_Wizard_of_Earthsea'}
+List Switchboard [recipe]: recipe linked page failed title=A Wizard of Earthsea url=https://swordandlaser.fandom.com/wiki/A_Wizard_of_Earthsea: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Einstein Intersection', 'position': '56', 'url': 'https://swordandlaser.fandom.com/wiki/The_Einstein_Intersection'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Einstein Intersection', 'url': 'https://swordandlaser.fandom.com/wiki/The_Einstein_Intersection', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': "His Majesty's Dragon", 'position': '55.5', 'url': 'https://swordandlaser.fandom.com/wiki/His_Majesty%27s_Dragon'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': "His Majesty's Dragon", 'url': 'https://swordandlaser.fandom.com/wiki/His_Majesty%27s_Dragon', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'A Natural History of Dragons: A Memoir by Lady Trent', 'position': '55', 'url': 'https://swordandlaser.fandom.com/wiki/A_Natural_History_of_Dragons:_A_Memoir_by_Lady_Trent'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'A Natural History of Dragons: A Memoir by Lady Trent', 'url': 'https://swordandlaser.fandom.com/wiki/A_Natural_History_of_Dragons:_A_Memoir_by_Lady_Trent', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Ancillary Justice', 'position': '54', 'url': 'https://swordandlaser.fandom.com/wiki/Ancillary_Justice'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Ancillary Justice', 'url': 'https://swordandlaser.fandom.com/wiki/Ancillary_Justice', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Boneshaker', 'position': '53', 'url': 'https://swordandlaser.fandom.com/wiki/Boneshaker'}
+List Switchboard [recipe]: recipe linked page failed title=Boneshaker url=https://swordandlaser.fandom.com/wiki/Boneshaker: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Demolished Man', 'position': '52', 'url': 'https://swordandlaser.fandom.com/wiki/The_Demolished_Man'}
+List Switchboard [recipe]: recipe linked page failed title=The Demolished Man url=https://swordandlaser.fandom.com/wiki/The_Demolished_Man: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Curse of Chalion', 'position': '51', 'url': 'https://swordandlaser.fandom.com/wiki/The_Curse_of_Chalion'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Curse of Chalion', 'url': 'https://swordandlaser.fandom.com/wiki/The_Curse_of_Chalion', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Ringworld', 'position': '50', 'url': 'https://swordandlaser.fandom.com/wiki/Ringworld'}
+List Switchboard [recipe]: recipe linked page failed title=Ringworld url=https://swordandlaser.fandom.com/wiki/Ringworld: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'RedShirts', 'position': '49.5', 'url': 'https://swordandlaser.fandom.com/wiki/RedShirts'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'RedShirts', 'url': 'https://swordandlaser.fandom.com/wiki/RedShirts', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Among Others', 'position': '49', 'url': 'https://swordandlaser.fandom.com/wiki/Among_Others'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Among Others', 'url': 'https://swordandlaser.fandom.com/wiki/Among_Others', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Wool', 'position': '48', 'url': 'https://swordandlaser.fandom.com/wiki/Wool'}
+List Switchboard [recipe]: recipe linked page failed title=Wool url=https://swordandlaser.fandom.com/wiki/Wool: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Dragonflight', 'position': '47', 'url': 'https://swordandlaser.fandom.com/wiki/Dragonflight'}
+List Switchboard [recipe]: recipe linked page failed title=Dragonflight url=https://swordandlaser.fandom.com/wiki/Dragonflight: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Downbelow Station', 'position': '46', 'url': 'https://swordandlaser.fandom.com/wiki/Downbelow_Station'}
+List Switchboard [recipe]: recipe linked page failed title=Downbelow Station url=https://swordandlaser.fandom.com/wiki/Downbelow_Station: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Bridge of Birds', 'position': '45', 'url': 'https://swordandlaser.fandom.com/wiki/Bridge_of_Birds'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Bridge of Birds', 'url': 'https://swordandlaser.fandom.com/wiki/Bridge_of_Birds', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': "Old Man's War", 'position': '44', 'url': 'https://swordandlaser.fandom.com/wiki/Old_Man%27s_War'}
+List Switchboard [recipe]: recipe linked page failed title=Old Man's War url=https://swordandlaser.fandom.com/wiki/Old_Man%27s_War: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Hobbit', 'position': '43', 'url': 'https://swordandlaser.fandom.com/wiki/The_Hobbit'}
+List Switchboard [recipe]: recipe linked page failed title=The Hobbit url=https://swordandlaser.fandom.com/wiki/The_Hobbit: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Dirty Streets of Heaven', 'position': '42', 'url': 'https://swordandlaser.fandom.com/wiki/The_Dirty_Streets_of_Heaven'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Dirty Streets of Heaven', 'url': 'https://swordandlaser.fandom.com/wiki/The_Dirty_Streets_of_Heaven', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Cloud Atlas', 'position': '41', 'url': 'https://swordandlaser.fandom.com/wiki/Cloud_Atlas'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Cloud Atlas', 'url': 'https://swordandlaser.fandom.com/wiki/Cloud_Atlas', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Foundation', 'position': '40', 'url': 'https://swordandlaser.fandom.com/wiki/Foundation'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Foundation', 'url': 'https://swordandlaser.fandom.com/wiki/Foundation', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': "Assassin's Apprentice", 'position': '39', 'url': 'https://swordandlaser.fandom.com/wiki/Assassin%27s_Apprentice'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': "Assassin's Apprentice", 'url': 'https://swordandlaser.fandom.com/wiki/Assassin%27s_Apprentice', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Leviathan Wakes', 'position': '38', 'url': 'https://swordandlaser.fandom.com/wiki/Leviathan_Wakes'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Leviathan Wakes', 'url': 'https://swordandlaser.fandom.com/wiki/Leviathan_Wakes', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Tigana', 'position': '37', 'url': 'https://swordandlaser.fandom.com/wiki/Tigana'}
+List Switchboard [recipe]: recipe linked page failed title=Tigana url=https://swordandlaser.fandom.com/wiki/Tigana: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Hyperion', 'position': '36', 'url': 'https://swordandlaser.fandom.com/wiki/Hyperion'}
+List Switchboard [recipe]: recipe linked page failed title=Hyperion url=https://swordandlaser.fandom.com/wiki/Hyperion: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Magicians', 'position': '35', 'url': 'https://swordandlaser.fandom.com/wiki/The_Magicians'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Magicians', 'url': 'https://swordandlaser.fandom.com/wiki/The_Magicians', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Lies of Locke Lamora', 'position': '34', 'url': 'https://swordandlaser.fandom.com/wiki/The_Lies_of_Locke_Lamora'}
+List Switchboard [recipe]: recipe linked page failed title=The Lies of Locke Lamora url=https://swordandlaser.fandom.com/wiki/The_Lies_of_Locke_Lamora: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Empire State', 'position': '33.5', 'url': 'https://swordandlaser.fandom.com/wiki/Empire_State'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Empire State', 'url': 'https://swordandlaser.fandom.com/wiki/Empire_State', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Rule 34', 'position': '33', 'url': 'https://swordandlaser.fandom.com/wiki/Rule_34'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Rule 34', 'url': 'https://swordandlaser.fandom.com/wiki/Rule_34', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': '1Q84', 'position': '32.5', 'url': 'https://swordandlaser.fandom.com/wiki/1Q84'}
+List Switchboard [recipe]: recipe linked page failed title=1Q84 url=https://swordandlaser.fandom.com/wiki/1Q84: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Elantris', 'position': '32', 'url': 'https://swordandlaser.fandom.com/wiki/Elantris'}
+List Switchboard [recipe]: recipe linked page failed title=Elantris url=https://swordandlaser.fandom.com/wiki/Elantris: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Reamde', 'position': '31.5', 'url': 'https://swordandlaser.fandom.com/wiki/Reamde'}
+List Switchboard [recipe]: recipe linked page failed title=Reamde url=https://swordandlaser.fandom.com/wiki/Reamde: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Ready Player One', 'position': '31', 'url': 'https://swordandlaser.fandom.com/wiki/Ready_Player_One'}
+List Switchboard [recipe]: recipe linked page failed title=Ready Player One url=https://swordandlaser.fandom.com/wiki/Ready_Player_One: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Flashforward', 'position': '30', 'url': 'https://swordandlaser.fandom.com/wiki/Flashforward'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Flashforward', 'url': 'https://swordandlaser.fandom.com/wiki/Flashforward', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Fuzzy Nation', 'position': '29.5', 'url': 'https://swordandlaser.fandom.com/wiki/Fuzzy_Nation'}
+List Switchboard [recipe]: recipe linked page failed title=Fuzzy Nation url=https://swordandlaser.fandom.com/wiki/Fuzzy_Nation: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'A Dance With Dragons', 'position': '29', 'url': 'https://swordandlaser.fandom.com/wiki/A_Dance_With_Dragons'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'A Dance With Dragons', 'url': 'https://swordandlaser.fandom.com/wiki/A_Dance_With_Dragons', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Hunger Games', 'position': '28', 'url': 'https://swordandlaser.fandom.com/wiki/The_Hunger_Games'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Hunger Games', 'url': 'https://swordandlaser.fandom.com/wiki/The_Hunger_Games', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Hundred Thousand Kingdoms', 'position': '27', 'url': 'https://swordandlaser.fandom.com/wiki/The_Hundred_Thousand_Kingdoms'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Hundred Thousand Kingdoms', 'url': 'https://swordandlaser.fandom.com/wiki/The_Hundred_Thousand_Kingdoms', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Blindsight', 'position': '26', 'url': 'https://swordandlaser.fandom.com/wiki/Blindsight'}
+List Switchboard [recipe]: recipe linked page failed title=Blindsight url=https://swordandlaser.fandom.com/wiki/Blindsight: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Shadow and Claw', 'position': '25', 'url': 'https://swordandlaser.fandom.com/wiki/Shadow_and_Claw'}
+List Switchboard [recipe]: recipe linked page failed title=Shadow and Claw url=https://swordandlaser.fandom.com/wiki/Shadow_and_Claw: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Good Omens', 'position': '24', 'url': 'https://swordandlaser.fandom.com/wiki/Good_Omens'}
+List Switchboard [recipe]: recipe linked page failed title=Good Omens url=https://swordandlaser.fandom.com/wiki/Good_Omens: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'How to Live Safely in a Science Fictional Universe', 'position': '23', 'url': 'https://swordandlaser.fandom.com/wiki/How_to_Live_Safely_in_a_Science_Fictional_Universe'}
+List Switchboard [recipe]: recipe linked page failed title=How to Live Safely in a Science Fictional Universe url=https://swordandlaser.fandom.com/wiki/How_to_Live_Safely_in_a_Science_Fictional_Universe: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Princess Bride', 'position': '22', 'url': 'https://swordandlaser.fandom.com/wiki/The_Princess_Bride'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Princess Bride', 'url': 'https://swordandlaser.fandom.com/wiki/The_Princess_Bride', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Once and Future King', 'position': '21', 'url': 'https://swordandlaser.fandom.com/wiki/The_Once_and_Future_King'}
+List Switchboard [recipe]: recipe linked page failed title=The Once and Future King url=https://swordandlaser.fandom.com/wiki/The_Once_and_Future_King: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Moon is a Harsh Mistress', 'position': '20', 'url': 'https://swordandlaser.fandom.com/wiki/The_Moon_is_a_Harsh_Mistress'}
+List Switchboard [recipe]: recipe linked page failed title=The Moon is a Harsh Mistress url=https://swordandlaser.fandom.com/wiki/The_Moon_is_a_Harsh_Mistress: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Blade Itself', 'position': '19.5', 'url': 'https://swordandlaser.fandom.com/wiki/The_Blade_Itself'}
+List Switchboard [recipe]: recipe linked page failed title=The Blade Itself url=https://swordandlaser.fandom.com/wiki/The_Blade_Itself: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'World War Z: An Oral History of the Zombie War', 'position': '19', 'url': 'https://swordandlaser.fandom.com/wiki/World_War_Z:_An_Oral_History_of_the_Zombie_War'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'World War Z: An Oral History of the Zombie War', 'url': 'https://swordandlaser.fandom.com/wiki/World_War_Z:_An_Oral_History_of_the_Zombie_War', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Bitter Seeds', 'position': '18', 'url': 'https://swordandlaser.fandom.com/wiki/Bitter_Seeds'}
+List Switchboard [recipe]: recipe linked page failed title=Bitter Seeds url=https://swordandlaser.fandom.com/wiki/Bitter_Seeds: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Windup Girl', 'position': '17', 'url': 'https://swordandlaser.fandom.com/wiki/The_Windup_Girl'}
+List Switchboard [recipe]: recipe linked page failed title=The Windup Girl url=https://swordandlaser.fandom.com/wiki/The_Windup_Girl: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Down and out in the Magic Kingdom', 'position': '16', 'url': 'https://swordandlaser.fandom.com/wiki/Down_and_out_in_the_Magic_Kingdom'}
+List Switchboard [recipe]: recipe linked page failed title=Down and out in the Magic Kingdom url=https://swordandlaser.fandom.com/wiki/Down_and_out_in_the_Magic_Kingdom: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Mists of Avalon', 'position': '15', 'url': 'https://swordandlaser.fandom.com/wiki/Mists_of_Avalon'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Mists of Avalon', 'url': 'https://swordandlaser.fandom.com/wiki/Mists_of_Avalon', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Forever War', 'position': '14', 'url': 'https://swordandlaser.fandom.com/wiki/The_Forever_War'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'The Forever War', 'url': 'https://swordandlaser.fandom.com/wiki/The_Forever_War', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'A Game of Thrones', 'position': '13', 'url': 'https://swordandlaser.fandom.com/wiki/A_Game_of_Thrones'}
+List Switchboard [recipe]: recipe linked page failed title=A Game of Thrones url=https://swordandlaser.fandom.com/wiki/A_Game_of_Thrones: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Daemon', 'position': '12', 'url': 'https://swordandlaser.fandom.com/wiki/Daemon'}
+List Switchboard [recipe]: recipe linked page failed title=Daemon url=https://swordandlaser.fandom.com/wiki/Daemon: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Dune', 'position': '11', 'url': 'https://swordandlaser.fandom.com/wiki/Dune'}
+List Switchboard [recipe]: recipe linked page failed title=Dune url=https://swordandlaser.fandom.com/wiki/Dune: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Eye of the World', 'position': '10', 'url': 'https://swordandlaser.fandom.com/wiki/The_Eye_of_the_World'}
+List Switchboard [recipe]: recipe linked page failed title=The Eye of the World url=https://swordandlaser.fandom.com/wiki/The_Eye_of_the_World: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Memoirs Found in a Bathtub', 'position': '09', 'url': 'https://swordandlaser.fandom.com/wiki/Memoirs_Found_in_a_Bathtub'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Memoirs Found in a Bathtub', 'url': 'https://swordandlaser.fandom.com/wiki/Memoirs_Found_in_a_Bathtub', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Anathem', 'position': '08', 'url': 'https://swordandlaser.fandom.com/wiki/Anathem'}
+List Switchboard [recipe]: recipe linked page failed title=Anathem url=https://swordandlaser.fandom.com/wiki/Anathem: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Watership Down', 'position': '07', 'url': 'https://swordandlaser.fandom.com/wiki/Watership_Down'}
+List Switchboard [recipe]: recipe linked page failed title=Watership Down url=https://swordandlaser.fandom.com/wiki/Watership_Down: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Unshapely Things', 'position': '06', 'url': 'https://swordandlaser.fandom.com/wiki/Unshapely_Things'}
+List Switchboard [recipe]: recipe linked page failed title=Unshapely Things url=https://swordandlaser.fandom.com/wiki/Unshapely_Things: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': "Childhood's End", 'position': '05', 'url': 'https://swordandlaser.fandom.com/wiki/Childhood%27s_End'}
+List Switchboard [recipe]: recipe linked page failed title=Childhood's End url=https://swordandlaser.fandom.com/wiki/Childhood%27s_End: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'Neuromancer', 'position': '04', 'url': 'https://swordandlaser.fandom.com/wiki/Neuromancer'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'Neuromancer', 'url': 'https://swordandlaser.fandom.com/wiki/Neuromancer', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'American Gods', 'position': '03', 'url': 'https://swordandlaser.fandom.com/wiki/American_Gods'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': 'American Gods', 'url': 'https://swordandlaser.fandom.com/wiki/American_Gods', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': "Ender's Game", 'position': '02', 'url': 'https://swordandlaser.fandom.com/wiki/Ender%27s_Game'}
+List Switchboard [recipe]: Sword & Laser March Madness parsed-linked-page: {'title': "Ender's Game", 'url': 'https://swordandlaser.fandom.com/wiki/Ender%27s_Game', 'nominations': 0}
+List Switchboard [recipe]: Sword & Laser March Madness fetch-linked-page: {'title': 'The Golden Compass', 'position': '01', 'url': 'https://swordandlaser.fandom.com/wiki/The_Golden_Compass'}
+List Switchboard [recipe]: recipe linked page failed title=The Golden Compass url=https://swordandlaser.fandom.com/wiki/The_Golden_Compass: HTTP Error 403: Forbidden
+List Switchboard [recipe]: Sword & Laser March Madness finished: {'main_entries': 214, 'linked_entries': 214, 'fetched_pages': 90, 'failed_pages': 124, 'pages_with_nominations': 0, 'nominations_found': 0, 'entries_added': 0, 'duplicates_skipped': 0}
+List Switchboard [recipe]: recipe output name=Sword and Laser url=https://swordandlaser.fandom.com/wiki/Book_List entries=214
+List Switchboard [recipe]: recipe entry 1: {'position': '01', 'title': 'The Golden Compass', 'author': 'Philip Pullman', 'source_url': 'https://swordandlaser.fandom.com/wiki/The_Golden_Compass'}
+List Switchboard [recipe]: recipe entry 2: {'position': '02', 'title': "Ender's Game", 'author': 'Orson Scott Card', 'source_url': 'https://swordandlaser.fandom.com/wiki/Ender%27s_Game'}
+List Switchboard [recipe]: recipe entry 3: {'position': '03', 'title': 'American Gods', 'author': 'Neil Gaiman', 'source_url': 'https://swordandlaser.fandom.com/wiki/American_Gods'}
+List Switchboard [recipe]: recipe entry 4: {'position': '04', 'title': 'Neuromancer', 'author': 'William Gibson', 'source_url': 'https://swordandlaser.fandom.com/wiki/Neuromancer'}
+List Switchboard [recipe]: recipe entry 5: {'position': '05', 'title': "Childhood's End", 'author': 'Arthur C. Clarke', 'source_url': 'https://swordandlaser.fandom.com/wiki/Childhood%27s_End'}
+List Switchboard [recipe]: recipe entry 6: {'position': '06', 'title': 'Unshapely Things', 'author': 'Mark Del Franco', 'source_url': 'https://swordandlaser.fandom.com/wiki/Unshapely_Things'}
+List Switchboard [recipe]: recipe entry 7: {'position': '07', 'title': 'Watership Down', 'author': 'Richard Adams', 'source_url': 'https://swordandlaser.fandom.com/wiki/Watership_Down'}
+List Switchboard [recipe]: recipe entry 8: {'position': '08', 'title': 'Anathem', 'author': 'Neal Stephenson', 'source_url': 'https://swordandlaser.fandom.com/wiki/Anathem'}
+List Switchboard [recipe]: recipe entry 9: {'position': '09', 'title': 'Memoirs Found in a Bathtub', 'author': 'Stanislaw Lem', 'source_url': 'https://swordandlaser.fandom.com/wiki/Memoirs_Found_in_a_Bathtub'}
+List Switchboard [recipe]: recipe entry 10: {'position': '10', 'title': 'The Eye of the World', 'author': 'Robert Jordan', 'source_url': 'https://swordandlaser.fandom.com/wiki/The_Eye_of_the_World'}
+List Switchboard [recipe]: recipe entry 11: {'position': '11', 'title': 'Dune', 'author': 'Frank Herbert', 'source_url': 'https://swordandlaser.fandom.com/wiki/Dune'}
+List Switchboard [recipe]: recipe entry 12: {'position': '12', 'title': 'Daemon', 'author': 'Daniel Suarez', 'source_url': 'https://swordandlaser.fandom.com/wiki/Daemon'}
+List Switchboard [recipe]: recipe entry 13: {'position': '13', 'title': 'A Game of Thrones', 'author': 'George R. R. Martin', 'source_url': 'https://swordandlaser.fandom.com/wiki/A_Game_of_Thrones'}
+List Switchboard [recipe]: recipe entry 14: {'position': '14', 'title': 'The Forever War', 'author': 'Joe Haldeman', 'source_url': 'https://swordandlaser.fandom.com/wiki/The_Forever_War'}
+List Switchboard [recipe]: recipe entry 15: {'position': '15', 'title': 'Mists of Avalon', 'author': 'Marion Zimmer Bradley', 'source_url': 'https://swordandlaser.fandom.com/wiki/Mists_of_Avalon'}
+List Switchboard [recipe]: recipe entry 16: {'position': '16', 'title': 'Down and out in the Magic Kingdom', 'author': 'Cory Doctorow', 'source_url': 'https://swordandlaser.fandom.com/wiki/Down_and_out_in_the_Magic_Kingdom'}
+List Switchboard [recipe]: recipe entry 17: {'position': '17', 'title': 'The Windup Girl', 'author': 'Paolo Bacigalupi', 'source_url': 'https://swordandlaser.fandom.com/wiki/The_Windup_Girl'}
+List Switchboard [recipe]: recipe entry 18: {'position': '18', 'title': 'Bitter Seeds', 'author': 'Ian Tregillis', 'source_url': 'https://swordandlaser.fandom.com/wiki/Bitter_Seeds'}
+List Switchboard [recipe]: recipe entry 19: {'position': '19', 'title': 'World War Z: An Oral History of the Zombie War', 'author': 'Max Brooks', 'source_url': 'https://swordandlaser.fandom.com/wiki/World_War_Z:_An_Oral_History_of_the_Zombie_War'}
+List Switchboard [recipe]: recipe entry 20: {'position': '19.5', 'title': 'The Blade Itself', 'author': 'Joe Abercrombie', 'source_url': 'https://swordandlaser.fandom.com/wiki/The_Blade_Itself'}
+List Switchboard [recipe]: recipe entry 21: {'position': '20', 'title': 'The Moon is a Harsh Mistress', 'author': 'Robert A. Heinlein', 'source_url': 'https://swordandlaser.fandom.com/wiki/The_Moon_is_a_Harsh_Mistress'}
+List Switchboard [recipe]: recipe entry 22: {'position': '21', 'title': 'The Once and Future King', 'author': 'T. H. White', 'source_url': 'https://swordandlaser.fandom.com/wiki/The_Once_and_Future_King'}
+List Switchboard [recipe]: recipe entry 23: {'position': '22', 'title': 'The Princess Bride', 'author': 'William Goldman', 'source_url': 'https://swordandlaser.fandom.com/wiki/The_Princess_Bride'}
+List Switchboard [recipe]: recipe entry 24: {'position': '23', 'title': 'How to Live Safely in a Science Fictional Universe', 'author': 'Charles Yu', 'source_url': 'https://swordandlaser.fandom.com/wiki/How_to_Live_Safely_in_a_Science_Fictional_Universe'}
+List Switchboard [recipe]: recipe entry 25: {'position': '24', 'title': 'Good Omens', 'author': 'Neil Gaiman & Terry Pratchett', 'source_url': 'https://swordandlaser.fandom.com/wiki/Good_Omens'}
+List Switchboard [recipe]: recipe entry log truncated; 189 additional entries
