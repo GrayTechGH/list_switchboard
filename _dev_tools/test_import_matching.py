@@ -5,6 +5,7 @@ import json
 import sys
 import types
 import unittest
+from copy import deepcopy
 from pathlib import Path
 
 
@@ -39,10 +40,16 @@ sys.modules.setdefault('qt', qt)
 sys.modules.setdefault('qt.core', qt_core)
 
 calibre = types.ModuleType('calibre')
+calibre_ebooks = types.ModuleType('calibre.ebooks')
+calibre_ebooks_metadata = types.ModuleType('calibre.ebooks.metadata')
+calibre_ebooks_metadata.title_sort = lambda value: (
+  value[4:] + ', The' if value.startswith('The ') else value)
 calibre_gui2 = types.ModuleType('calibre.gui2')
 calibre_gui2.error_dialog = Dummy()
 calibre_gui2.question_dialog = Dummy()
 sys.modules.setdefault('calibre', calibre)
+sys.modules.setdefault('calibre.ebooks', calibre_ebooks)
+sys.modules.setdefault('calibre.ebooks.metadata', calibre_ebooks_metadata)
 sys.modules.setdefault('calibre.gui2', calibre_gui2)
 
 plugin_package = types.ModuleType('calibre_plugins')
@@ -54,6 +61,27 @@ sys.modules.setdefault('calibre_plugins.list_switchboard', list_switchboard_pack
 sys.modules.setdefault('calibre_plugins.list_switchboard.config', config_module)
 
 import main
+from parser.reddit import parse_reddit_results
+from parser.sword_and_laser import (
+  parse_sword_and_laser_book_list,
+  parse_sword_and_laser_march_page,
+)
+from url_fetcher.r_fantasy_top_novels_2025 import UrlFetcherRFantasyTopNovels2025
+from url_fetcher.r_fantasy_top_self_published_novels_2024 import (
+  UrlFetcherRFantasyTopSelfPublishedNovels2024,
+)
+from url_fetcher.r_fantasy_top_standalone_novels_2024 import (
+  UrlFetcherRFantasyTopStandaloneNovels2024,
+)
+from url_fetcher.sword_and_laser import UrlFetcherSwordAndLaser
+
+
+def parser_source(fetcher, **options):
+  return types.SimpleNamespace(
+    NAME=fetcher.NAME,
+    URL=fetcher.URL,
+    schemas=fetcher.schemas,
+    options={**deepcopy(fetcher.options), **options})
 
 
 def build_lookup(values):
@@ -68,20 +96,16 @@ class ImportMatchingTest(unittest.TestCase):
 
   def test_recipe_preserves_goodreads_source_url(self):
     try:
-      import recipe_parser
+      import bs4  # noqa: F401
     except ModuleNotFoundError as err:
       if err.name == 'bs4':
         self.skipTest('BeautifulSoup is not available in this Python environment')
       raise
 
-    def load_recipe(name):
-      path = ROOT / 'recipes' / name
-      return main.JsonRecipe(json.loads(path.read_text(encoding='utf-8')), name)
-
-    top_novels = load_recipe('r_fantasy_top_novels_2025.json')
-    standalone_recipe = load_recipe('r_fantasy_top_standalone_novels_2024.json')
-    self_published_recipe = load_recipe('r_fantasy_top_self_published_novels_2024.json')
-    sword_laser_recipe = load_recipe('sword_and_laser_book_list.json')
+    top_novels = UrlFetcherRFantasyTopNovels2025()
+    standalone_recipe = UrlFetcherRFantasyTopStandaloneNovels2024()
+    self_published_recipe = UrlFetcherRFantasyTopSelfPublishedNovels2024()
+    sword_laser_recipe = parser_source(UrlFetcherSwordAndLaser(), include_march_madness=False)
     html = '''
       <table>
         <tr><th>Rank</th><th>Series</th><th>Votes</th><th>Author</th><th>Rank Change</th></tr>
@@ -94,7 +118,7 @@ class ImportMatchingTest(unittest.TestCase):
         </tr>
       </table>
     '''
-    parsed = recipe_parser.parse_recipe_html(top_novels, html)
+    parsed = parse_reddit_results(html, top_novels.NAME, top_novels.URL, top_novels.schemas)
 
     self.assertEqual('r/Fantasy Top Novels 2025', parsed['name'])
     self.assertEqual('Middle-Earth Universe', parsed['entries'][0]['title'])
@@ -102,7 +126,8 @@ class ImportMatchingTest(unittest.TestCase):
       'https://www.goodreads.com/series/66175-middle-earth',
       parsed['entries'][0]['source_url'])
 
-    standalone = recipe_parser.parse_recipe_html(standalone_recipe, '''
+    standalone = parse_reddit_results(
+      '''
       <table>
         <tr><th>Rank</th><th>Title</th><th>Author</th><th>Votes</th><th>Rank change</th></tr>
         <tr>
@@ -113,14 +138,16 @@ class ImportMatchingTest(unittest.TestCase):
           <td>+1</td>
         </tr>
       </table>
-    ''')
+    ''',
+      standalone_recipe.NAME, standalone_recipe.URL, standalone_recipe.schemas)
 
     self.assertEqual('r/Fantasy Top Standalone Novels 2024', standalone['name'])
     self.assertEqual('The Hobbit', standalone['entries'][0]['title'])
     self.assertEqual('J.R.R. Tolkien', standalone['entries'][0]['author'])
     self.assertEqual('65', standalone['entries'][0]['votes'])
 
-    self_published = recipe_parser.parse_recipe_html(self_published_recipe, '''
+    self_published = parse_reddit_results(
+      '''
       <table>
         <tr>
           <th>Rank / Change</th><th>Book/series</th><th>Author</th>
@@ -134,7 +161,8 @@ class ImportMatchingTest(unittest.TestCase):
           <td>47 367</td>
         </tr>
       </table>
-    ''')
+    ''',
+      self_published_recipe.NAME, self_published_recipe.URL, self_published_recipe.schemas)
 
     self.assertEqual('r/Fantasy Top Self-Published Novels 2024', self_published['name'])
     self.assertEqual('2', self_published['entries'][0]['position'])
@@ -143,7 +171,7 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertEqual('Will Wight', self_published['entries'][0]['author'])
     self.assertEqual('30', self_published['entries'][0]['votes'])
 
-    sword_laser = recipe_parser.parse_recipe_html(sword_laser_recipe, '''
+    sword_laser = parse_sword_and_laser_book_list(sword_laser_recipe, '''
       <table>
         <tr><th>Title</th><th>Author(s)</th><th>Publisher</th><th>Month Read</th><th>Seq</th></tr>
         <tr>
@@ -169,12 +197,7 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertEqual('Finding Baba Yaga', sword_laser['entries'][0]['title'])
 
   def test_sword_and_laser_march_madness_flag_controls_sublist_fetching(self):
-    import recipe_parser
-
-    data = json.loads(
-      (ROOT / 'recipes' / 'sword_and_laser_book_list.json').read_text(encoding='utf-8'))
-    data['options']['include_march_madness'] = False
-    recipe = main.JsonRecipe(data, 'sword_and_laser_book_list.json')
+    recipe = parser_source(UrlFetcherSwordAndLaser(), include_march_madness=False)
     html = '''
       <table>
         <tr><th>Title</th><th>Author(s)</th><th>Publisher</th><th>Month Read</th><th>Seq</th></tr>
@@ -188,19 +211,14 @@ class ImportMatchingTest(unittest.TestCase):
       </table>
     '''
 
-    parsed = recipe_parser.parse_recipe_html(
+    parsed = parse_sword_and_laser_book_list(
       recipe, html,
       fetch_url=lambda _url: self.fail('sublist should not be fetched when flag is false'))
 
     self.assertEqual(['Dungeon Crawler Carl'], [entry['title'] for entry in parsed['entries']])
 
   def test_sword_and_laser_march_madness_failed_sublist_is_reported(self):
-    import recipe_parser
-
-    data = json.loads(
-      (ROOT / 'recipes' / 'sword_and_laser_book_list.json').read_text(encoding='utf-8'))
-    data['options']['include_march_madness'] = True
-    recipe = main.JsonRecipe(data, 'sword_and_laser_book_list.json')
+    recipe = parser_source(UrlFetcherSwordAndLaser(), include_march_madness=True)
     failures = []
     html = '''
       <table>
@@ -218,7 +236,7 @@ class ImportMatchingTest(unittest.TestCase):
     def fail_fetch(url):
       raise RuntimeError('HTTP Error 403: Forbidden')
 
-    parsed = recipe_parser.parse_recipe_html(
+    parsed = parse_sword_and_laser_book_list(
       recipe, html,
       fetch_url=fail_fetch,
       fetch_error=lambda url, err, entry: failures.append((url, str(err), entry.get('title', ''))))
@@ -226,7 +244,8 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertEqual(['Dungeon Crawler Carl'], [entry['title'] for entry in parsed['entries']])
     self.assertEqual(
       [('https://swordandlaser.fandom.com/wiki/Dungeon_Crawler_Carl',
-        'HTTP Error 403: Forbidden', 'Dungeon Crawler Carl')],
+        'All fallback URLs failed for https://swordandlaser.fandom.com/wiki/Dungeon_Crawler_Carl',
+        'Dungeon Crawler Carl')],
       failures)
     self.assertEqual(1, len(parsed['march_madness_unavailable_pages']))
     self.assertIn(
@@ -235,13 +254,10 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertIn('Dungeon Crawler Carl', parsed['notes'][1])
 
   def test_sword_and_laser_march_madness_success_adds_nominations(self):
-    import recipe_parser
-
-    data = json.loads(
-      (ROOT / 'recipes' / 'sword_and_laser_book_list.json').read_text(encoding='utf-8'))
-    data['options']['include_march_madness'] = True
-    data['options']['fetch_delay_seconds'] = 0
-    recipe = main.JsonRecipe(data, 'sword_and_laser_book_list.json')
+    recipe = parser_source(
+      UrlFetcherSwordAndLaser(),
+      include_march_madness=True,
+      fetch_delay_seconds=0)
     html = '''
       <table>
         <tr><th>Title</th><th>Author(s)</th><th>Publisher</th><th>Month Read</th><th>Seq</th></tr>
@@ -264,7 +280,7 @@ class ImportMatchingTest(unittest.TestCase):
 
     logs = []
     progress = []
-    parsed = recipe_parser.parse_recipe_html(
+    parsed = parse_sword_and_laser_book_list(
       recipe, html,
       fetch_url=lambda url: march_html if url.endswith('/Dungeon_Crawler_Carl') else self.fail(url),
       log=logs.append,
@@ -285,11 +301,7 @@ class ImportMatchingTest(unittest.TestCase):
       for done, total, message in progress))
 
   def test_sword_and_laser_parser_accepts_fandom_api_parse_json(self):
-    import recipe_parser
-
-    recipe = main.JsonRecipe(json.loads(
-      (ROOT / 'recipes' / 'sword_and_laser_book_list.json').read_text(encoding='utf-8')),
-      'sword_and_laser_book_list.json')
+    recipe = parser_source(UrlFetcherSwordAndLaser(), include_march_madness=False)
     html = json.dumps({
       'parse': {
         'text': {
@@ -309,7 +321,7 @@ class ImportMatchingTest(unittest.TestCase):
       }
     })
 
-    parsed = recipe_parser.parse_recipe_html(recipe, html)
+    parsed = parse_sword_and_laser_book_list(recipe, html)
 
     self.assertEqual('Dungeon Crawler Carl', parsed['entries'][0]['title'])
     self.assertEqual('190', parsed['entries'][0]['position'])
@@ -321,14 +333,17 @@ class ImportMatchingTest(unittest.TestCase):
     urls = core.fallback_fetch_urls('https://swordandlaser.fandom.com/wiki/Book_List')
 
     self.assertEqual(
-      'https://swordandlaser.fandom.com/wiki/Book_List?action=raw',
+      'https://swordandlaser.fandom.com/api.php?action=parse&page=Book_List&prop=text&format=json',
       urls[0])
     self.assertEqual(
-      'https://swordandlaser.fandom.com/api.php?action=parse&page=Book_List&prop=text&format=json',
+      'https://swordandlaser.fandom.com/wiki/Book_List',
       urls[1])
     self.assertEqual(
-      'https://swordandlaser.fandom.com/wiki/Special:Export/Book_List',
+      'https://swordandlaser.fandom.com/wiki/Book_List?action=raw',
       urls[2])
+    self.assertEqual(
+      'https://swordandlaser.fandom.com/wiki/Special:Export/Book_List',
+      urls[3])
 
   def test_fallback_debug_section_can_be_enabled_alone(self):
     self.assertIn(('fallback', 'Fallback activity only'), main.DEBUG_SECTIONS)
@@ -348,12 +363,8 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertEqual(urls, logged[0][1])
 
   def test_sword_and_laser_parser_accepts_raw_wikitext_table(self):
-    import recipe_parser
-
-    recipe = main.JsonRecipe(json.loads(
-      (ROOT / 'recipes' / 'sword_and_laser_book_list.json').read_text(encoding='utf-8')),
-      'sword_and_laser_book_list.json')
-    parsed = recipe_parser.parse_recipe_html(recipe, '''
+    recipe = parser_source(UrlFetcherSwordAndLaser(), include_march_madness=False)
+    parsed = parse_sword_and_laser_book_list(recipe, '''
       {| class="wikitable"
       ! Title !! Author(s) !! Publisher !! Month Read !! Seq
       |-
@@ -369,7 +380,6 @@ class ImportMatchingTest(unittest.TestCase):
       parsed['entries'][0]['source_url'])
 
   def test_sword_and_laser_march_madness_parser_numbers_nominations(self):
-    import recipe_parser
     from bs4 import BeautifulSoup
 
     soup = BeautifulSoup('''
@@ -385,7 +395,7 @@ class ImportMatchingTest(unittest.TestCase):
       142  56.1%  Dungeon Crawler Carl  Matt Dinnaman
     ''', 'html.parser')
 
-    nominations = recipe_parser.parse_sword_and_laser_march_page(
+    nominations = parse_sword_and_laser_march_page(
       soup, {'position': '190', 'title': 'Dungeon Crawler Carl', 'author': 'Matt Dinniman'})
 
     self.assertEqual(
@@ -393,13 +403,10 @@ class ImportMatchingTest(unittest.TestCase):
        ('190.03', 'She Who Became the Sun'), ('190.04', 'The Adventures of Amina-al-Sirafi')],
       [(entry['position'], entry['title']) for entry in nominations])
 
-  def test_recipe_folder_contains_only_json_files(self):
-    recipe_files = [path.name for path in (ROOT / 'recipes').iterdir() if path.is_file()]
+  def test_legacy_json_recipe_folder_is_removed(self):
+    self.assertFalse((ROOT / 'recipes').exists())
 
-    self.assertTrue(recipe_files)
-    self.assertTrue(all(path.endswith('.json') for path in recipe_files))
-
-  def test_available_import_recipes_are_loaded_from_json_folder(self):
+  def test_available_import_recipes_are_loaded_from_url_fetcher_folder(self):
     core = object.__new__(main.ListSwitchboardCore)
     core.debug_log = lambda *_args, **_kwargs: None
 
@@ -421,24 +428,17 @@ class ImportMatchingTest(unittest.TestCase):
 
     self.assertIn('r/Fantasy Top Novels 2025', names)
 
-  def test_recipe_sources_can_load_from_calibre_plugin_resources(self):
-    class PluginBase:
-      def load_resources(self, names):
-        self.names = names
-        return {
-          'recipes/sword_and_laser_book_list.json': (
-            ROOT / 'recipes' / 'sword_and_laser_book_list.json').read_bytes()
-        }
-
+  def test_builtin_url_fetchers_load_without_plugin_resources(self):
     core = object.__new__(main.ListSwitchboardCore)
-    plugin_base = PluginBase()
-    core.plugin_base = plugin_base
 
-    sources = core.calibre_recipe_json_sources()
+    fetchers = core.builtin_url_fetchers()
 
-    self.assertEqual(main.RECIPE_RESOURCE_NAMES, plugin_base.names)
-    self.assertEqual('sword_and_laser_book_list.json', sources[0][0])
-    self.assertIn('"Sword and Laser"', sources[0][1])
+    self.assertEqual([
+      'r_fantasy_top_novels_2025',
+      'r_fantasy_top_standalone_novels_2024',
+      'r_fantasy_top_self_published_novels_2024',
+      'sword_and_laser_book_list',
+    ], [fetcher.source_id for fetcher in fetchers])
 
   def test_goodreads_series_source_matches_relaxed_local_series_name(self):
     core = object.__new__(main.ListSwitchboardCore)
@@ -815,7 +815,39 @@ class ImportMatchingTest(unittest.TestCase):
 
     self.assertEqual([2], looked_up)
     self.assertEqual([2], candidates)
+  def test_import_matching_prefers_exact_title_over_series_match(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    core.update_import_match_progress = lambda *args, **kwargs: None
+    core.update_import_match_step_progress = lambda *args, **kwargs: None
+    core.import_entry_keys = main.ListSwitchboardCore.import_entry_keys.__get__(core)
+    core.debug_import_match_entry = lambda *_args: None
+    core.debug_import_empty_entry = lambda *_args: None
+    core.debug_import_goodreads_candidates = lambda *_args: None
+    core.debug_import_matched_book = lambda *_args: None
+    core.goodreads_source_recovery_candidates = lambda *_args: []
 
+    class FakeApi:
+      def all_field_for(self, field, ids, default_value=''):
+        if field == 'title':
+          return {1: 'American Gods', 2: 'Anansi Boys'}
+        if field == 'series':
+          return {1: ['American Gods'], 2: ['American Gods']}
+        if field == 'authors':
+          return {1: ['Neil Gaiman'], 2: ['Neil Gaiman']}
+        return {book_id: default_value for book_id in ids}
+
+    class FakeDb:
+      new_api = FakeApi()
+
+    core.db = FakeDb()
+    core.all_book_ids = lambda: [1, 2]
+
+    matched, missing = core.match_imported_entries([
+      {'position': '1', 'title': 'American Gods', 'author': 'Neil Gaiman'},
+    ], match_series=False)
+
+    self.assertEqual({1: '1'}, matched)
+    self.assertEqual([], missing)
 
 if __name__ == '__main__':
   unittest.main()

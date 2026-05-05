@@ -10,7 +10,6 @@ import os
 import traceback
 import json
 import time
-import zipfile
 from urllib.request import Request, urlopen
 from collections import Counter, OrderedDict
 
@@ -19,15 +18,18 @@ try:
 except Exception:
   BeautifulSoup = None
 
-from qt.core import (
-  QApplication, QCheckBox, QDialog, QDialogButtonBox, QHBoxLayout, QHeaderView,
-  QInputDialog, QLabel, QListWidget, QMessageBox, QProgressDialog, QPushButton,
-  QSizePolicy, QTableWidget, QTableWidgetItem, QVBoxLayout
-)
+from qt.core import QApplication, QDialog, QInputDialog, QMessageBox, QProgressDialog
 
 from calibre.ebooks.metadata import title_sort
 from calibre.gui2 import error_dialog, question_dialog
 from calibre_plugins.list_switchboard.config import prefs
+
+try:
+  from calibre_plugins.list_switchboard.dialogs import (
+    ChoiceDialog, DebugDialog, ImportReportDialog, StoredListsDialog
+  )
+except ImportError:
+  from dialogs import ChoiceDialog, DebugDialog, ImportReportDialog, StoredListsDialog
 
 try:
   from calibre.utils.browser import Browser as CalibreBrowser
@@ -59,40 +61,7 @@ DEBUG_SECTIONS = (
 IMPORT_MATCH_PROGRESS_MAX = 500
 IMPORT_WRITE_PROGRESS_MAX = 1000
 RELAXED_MATCH_MIN_NON_INITIAL_CHARS = 6
-RECIPE_RESOURCE_NAMES = (
-  'recipes/r_fantasy_top_novels_2025.json',
-  'recipes/r_fantasy_top_self_published_novels_2024.json',
-  'recipes/r_fantasy_top_standalone_novels_2024.json',
-  'recipes/sword_and_laser_book_list.json',
-)
-
-
-class JsonRecipe:
-
-  def __init__(self, data, source_name=''):
-    self.source_name = source_name
-    self.NAME = str(data.get('name') or '').strip()
-    self.URL = str(data.get('url') or '').strip()
-    self.FETCH_URLS = tuple(data.get('fetch_urls') or [self.URL])
-    self.parser = str(data.get('parser') or 'reddit_results').strip()
-    self.schemas = data.get('schemas') or []
-    self.order = int(data.get('order') or 0)
-    self.options = data.get('options') or {}
-    if not self.NAME:
-      raise ValueError(f'Recipe file "{source_name}" does not define a name.')
-    if not self.URL:
-      raise ValueError(f'Recipe file "{source_name}" does not define a url.')
-    if not self.schemas:
-      raise ValueError(f'Recipe file "{source_name}" does not define schemas.')
-
-  def parse(self, html, fetch_url=None, sleep=None, fetch_error=None, log=None, progress=None):
-    try:
-      from calibre_plugins.list_switchboard.recipe_parser import parse_recipe_html
-    except ImportError:
-      from recipe_parser import parse_recipe_html
-    return parse_recipe_html(
-      self, html, fetch_url=fetch_url, sleep=sleep, fetch_error=fetch_error,
-      log=log, progress=progress)
+URL_FETCHER_PACKAGE = 'url_fetcher'
 
 
 class ListSwitchboardError(Exception):
@@ -237,270 +206,6 @@ def unique_case_insensitive(names):
   return list(seen.values())
 
 
-class ChoiceDialog(QDialog):
-
-  def __init__(self, parent, title, intro, choices, button_text):
-    QDialog.__init__(self, parent)
-    self.setWindowTitle(title)
-    self.choice = None
-
-    layout = QVBoxLayout()
-    self.setLayout(layout)
-    layout.addWidget(QLabel(intro, self))
-
-    self.list_widget = QListWidget(self)
-    for choice in choices:
-      self.list_widget.addItem(choice)
-    if choices:
-      self.list_widget.setCurrentRow(0)
-    layout.addWidget(self.list_widget)
-
-    buttons = QDialogButtonBox(QDialogButtonBox.Cancel, self)
-    accept_button = QPushButton(button_text, self)
-    buttons.addButton(accept_button, QDialogButtonBox.AcceptRole)
-    buttons.accepted.connect(self.accept)
-    buttons.rejected.connect(self.reject)
-    layout.addWidget(buttons)
-
-  def accept(self):
-    item = self.list_widget.currentItem()
-    if item is None:
-      return
-    self.choice = item.text()
-    QDialog.accept(self)
-
-
-class DebugDialog(QDialog):
-
-  def __init__(self, parent):
-    QDialog.__init__(self, parent)
-    self.setWindowTitle('List Switchboard Debug')
-
-    layout = QVBoxLayout()
-    self.setLayout(layout)
-    layout.addWidget(QLabel(
-      'Debug logging writes selected List Switchboard troubleshooting details to the Calibre debug log.',
-      self))
-
-    self.debug_logging = QCheckBox('Enable all debug logging', self)
-    self.debug_logging.setChecked(bool(prefs.get('debug_logging', False)))
-    layout.addWidget(self.debug_logging)
-
-    layout.addWidget(QLabel('Debug sections:', self))
-    saved_sections = prefs.get('debug_sections', {}) or {}
-    self.section_boxes = OrderedDict()
-    for key, label in DEBUG_SECTIONS:
-      box = QCheckBox(label, self)
-      box.setChecked(bool(saved_sections.get(key, False)))
-      self.section_boxes[key] = box
-      layout.addWidget(box)
-
-    buttons = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel, self)
-    buttons.accepted.connect(self.accept)
-    buttons.rejected.connect(self.reject)
-    layout.addWidget(buttons)
-
-
-class StoredListsDialog(QDialog):
-
-  def __init__(self, parent, core, stored):
-    QDialog.__init__(self, parent)
-    self.core = core
-    self.stored = stored
-    self.setWindowTitle('Manage Stored Lists')
-
-    layout = QVBoxLayout()
-    self.setLayout(layout)
-
-    content = QHBoxLayout()
-    layout.addLayout(content)
-
-    left = QVBoxLayout()
-    left.addWidget(QLabel('Stored Lists', self))
-    self.list_widget = QListWidget(self)
-    left.addWidget(self.list_widget)
-    content.addLayout(left)
-
-    right = QVBoxLayout()
-    right.addWidget(QLabel('Books in selected list', self))
-    self.book_table = QTableWidget(self)
-    self.book_table.setColumnCount(3)
-    self.book_table.setHorizontalHeaderLabels(['Position', 'Title', 'Author'])
-    self.book_table.setSelectionBehavior(QTableWidget.SelectionBehavior.SelectRows)
-    self.book_table.setEditTriggers(QTableWidget.EditTrigger.NoEditTriggers)
-    self.book_table.horizontalHeader().setSectionResizeMode(0, QHeaderView.ResizeMode.ResizeToContents)
-    self.book_table.horizontalHeader().setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch)
-    self.book_table.horizontalHeader().setSectionResizeMode(2, QHeaderView.ResizeMode.Stretch)
-    right.addWidget(self.book_table)
-    content.addLayout(right)
-
-    buttons = QDialogButtonBox(QDialogButtonBox.Close, self)
-    self.switch_button = QPushButton('Switch to Selected List', self)
-    self.rename_button = QPushButton('Rename List', self)
-    self.remove_button = QPushButton('Remove List', self)
-    buttons.addButton(self.switch_button, QDialogButtonBox.ActionRole)
-    buttons.addButton(self.rename_button, QDialogButtonBox.ActionRole)
-    buttons.addButton(self.remove_button, QDialogButtonBox.ActionRole)
-    buttons.rejected.connect(self.reject)
-    self.switch_button.clicked.connect(self.switch_selected)
-    self.rename_button.clicked.connect(self.rename_selected)
-    self.remove_button.clicked.connect(self.remove_selected)
-    layout.addWidget(buttons)
-
-    self.list_widget.currentRowChanged.connect(self.update_books)
-    self.refresh_lists()
-    self.resize(900, 500)
-
-  def selected_list_name(self):
-    row = self.list_widget.currentRow()
-    if row < 0 or row >= len(self.stored):
-      return None
-    return self.stored[row]
-
-  def refresh_lists(self):
-    current = self.selected_list_name()
-    self.list_widget.clear()
-    self.stored = self.core.current_stored_lists()
-    for name in self.stored:
-      count = len(self.core.books_for_stored_list(name))
-      self.list_widget.addItem(f'{name} ({count})')
-    if self.stored:
-      row = self.stored.index(current) if current in self.stored else 0
-      self.list_widget.setCurrentRow(row)
-    else:
-      self.update_books(-1)
-
-  def update_books(self, row):
-    name = self.selected_list_name()
-    rows = self.core.books_for_stored_list(name) if name else []
-    self.book_table.setRowCount(len(rows))
-    for row_index, row_data in enumerate(rows):
-      for column, value in enumerate(row_data):
-        self.book_table.setItem(row_index, column, QTableWidgetItem(value))
-
-  def switch_selected(self):
-    name = self.selected_list_name()
-    if not name:
-      return
-    active = self.core.current_active()
-    if active is None:
-      self.core.create_new_active_list(selected_ids=self.core.selected_book_ids())
-    else:
-      try:
-        self.core._switch_to_existing(active, name, show_progress=True)
-        self.core.status_message(f'Switched Active List to "{name}".')
-      except Exception as err:
-        self.core.show_exception('Switch Active List', err)
-        return
-    self.accept()
-
-  def rename_selected(self):
-    name = self.selected_list_name()
-    if not name:
-      return
-    self.core.rename_stored_list(name)
-    self.refresh_lists()
-
-  def remove_selected(self):
-    name = self.selected_list_name()
-    if not name:
-      return
-    self.core.remove_stored_list(name)
-    self.refresh_lists()
-
-
-class ImportReportDialog(QDialog):
-
-  def __init__(
-      self, parent, list_name, matched_count, entries_count, missing_entries,
-      allow_deep_recovery=False, notes=None):
-    QDialog.__init__(self, parent)
-    self.missing_entries = missing_entries
-    self.deep_recovery_requested = False
-    self.setWindowTitle('Import List Report')
-    notes = [note for note in (notes or []) if note]
-    note_text = '\n' + '\n'.join(notes) if notes else ''
-
-    layout = QVBoxLayout()
-    self.setLayout(layout)
-    summary = QLabel(
-      f'Imported "{list_name}".\n'
-      f'Placed {matched_count} books in the Active List.\n'
-      f'Matched {matched_count} of {entries_count} recipe entries.\n'
-      f'Missing {len(missing_entries)} recipe entries.'
-      f'{note_text}',
-      self)
-    summary.setWordWrap(True)
-    summary.setSizePolicy(self.ignored_width_size_policy())
-    layout.addWidget(summary)
-
-    self.missing_table = QTableWidget(self)
-    self.missing_table.setColumnCount(3)
-    self.missing_table.setHorizontalHeaderLabels(['Position', 'Title', 'Author'])
-    self.missing_table.setSelectionBehavior(QTableWidget.SelectionBehavior.SelectRows)
-    self.missing_table.setEditTriggers(QTableWidget.EditTrigger.NoEditTriggers)
-    self.missing_table.horizontalHeader().setSectionResizeMode(0, QHeaderView.ResizeMode.ResizeToContents)
-    self.missing_table.horizontalHeader().setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch)
-    self.missing_table.horizontalHeader().setSectionResizeMode(2, QHeaderView.ResizeMode.Stretch)
-    self.missing_table.setRowCount(len(missing_entries))
-    for row, entry in enumerate(missing_entries):
-      values = [
-        str(entry.get('position', '') or ''),
-        str(entry.get('title', '') or ''),
-        str(entry.get('author', '') or ''),
-      ]
-      for column, value in enumerate(values):
-        self.missing_table.setItem(row, column, QTableWidgetItem(value))
-    layout.addWidget(self.missing_table)
-
-    buttons = QDialogButtonBox(QDialogButtonBox.Close, self)
-    self.copy_button = QPushButton('Copy Missing List', self)
-    buttons.addButton(self.copy_button, QDialogButtonBox.ActionRole)
-    self.copy_button.clicked.connect(self.copy_missing_list)
-    if allow_deep_recovery and missing_entries:
-      self.deep_recovery_button = QPushButton('Try Deep Recovery', self)
-      buttons.addButton(self.deep_recovery_button, QDialogButtonBox.ActionRole)
-      self.deep_recovery_button.clicked.connect(self.request_deep_recovery)
-    buttons.rejected.connect(self.reject)
-    layout.addWidget(buttons)
-    self.resize(*self.initial_report_size())
-
-  def initial_report_size(self):
-    width = 850
-    height = 500
-    try:
-      screen = QApplication.primaryScreen()
-      if screen is not None:
-        available = screen.availableGeometry()
-        width = min(width, max(420, int(available.width() * 0.85)))
-    except Exception:
-      pass
-    return width, height
-
-  def ignored_width_size_policy(self):
-    try:
-      return QSizePolicy(QSizePolicy.Policy.Ignored, QSizePolicy.Policy.Preferred)
-    except Exception:
-      return QSizePolicy(QSizePolicy.Ignored, QSizePolicy.Preferred)
-
-  def missing_list_text(self):
-    lines = ['Position\tTitle\tAuthor']
-    for entry in self.missing_entries:
-      lines.append('\t'.join([
-        str(entry.get('position', '') or ''),
-        str(entry.get('title', '') or ''),
-        str(entry.get('author', '') or ''),
-      ]))
-    return '\n'.join(lines)
-
-  def copy_missing_list(self):
-    QApplication.clipboard().setText(self.missing_list_text())
-
-  def request_deep_recovery(self):
-    self.deep_recovery_requested = True
-    self.accept()
-
-
 class ListSwitchboardCore:
 
   def __init__(self, gui, do_user_config, plugin_base=None):
@@ -627,7 +332,7 @@ class ListSwitchboardCore:
       f'recipe linked page failed title={title} url={url}: {err}',
       section='recipe')
 
-  def debug_recipe_parser_message(self, message):
+  def debug_parser_message(self, message):
     self.debug_log(message, section='recipe')
 
   def debug_recipe_output(self, parsed):
@@ -1182,16 +887,12 @@ class ListSwitchboardCore:
     return self.browser
 
   def fallback_fetch_urls(self, url):
-    if 'swordandlaser.fandom.com/wiki/' not in url:
-      return ()
-    title = url.rsplit('/wiki/', 1)[-1]
-    urls = (
-      f'https://swordandlaser.fandom.com/wiki/{title}?action=raw',
-      f'https://swordandlaser.fandom.com/api.php?action=parse&page={title}&prop=text&format=json',
-      f'https://swordandlaser.fandom.com/wiki/Special:Export/{title}',
-    )
-    self.debug_fallback_urls(url, urls)
-    return urls
+    for fetcher in self.available_import_recipes():
+      urls = fetcher.fallback_urls(url) if hasattr(fetcher, 'fallback_urls') else ()
+      if urls:
+        self.debug_fallback_urls(url, urls)
+        return urls
+    return ()
 
   def load_default_recipe(self):
     recipes = self.available_import_recipes()
@@ -1200,90 +901,22 @@ class ListSwitchboardCore:
     return recipes[0]
 
   def available_import_recipes(self):
-    recipes = []
     try:
-      sources = self.recipe_json_sources()
+      fetchers = self.builtin_url_fetchers()
     except Exception as err:
-      self.debug_log(f'could not enumerate recipe JSON files: {err}', section='recipe')
+      self.debug_log(f'could not load URL fetchers: {err}', section='recipe')
       return ()
-    for source_name, raw_json in sources:
-      try:
-        recipes.append(JsonRecipe(json.loads(raw_json), source_name))
-      except Exception as err:
-        self.debug_log(f'could not load recipe {source_name}: {err}', section='recipe')
-    return tuple(sorted(recipes, key=lambda recipe: (recipe.order, recipe.NAME.casefold())))
+    return tuple(sorted(fetchers, key=lambda fetcher: (fetcher.order, fetcher.NAME.casefold())))
 
-  def recipe_json_sources(self):
-    recipe_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'recipes')
-    if os.path.isdir(recipe_dir):
-      sources = []
-      for name in sorted(os.listdir(recipe_dir)):
-        if not name.casefold().endswith('.json'):
-          continue
-        path = os.path.join(recipe_dir, name)
-        with open(path, 'r', encoding='utf-8') as handle:
-          sources.append((name, handle.read()))
-      return sources
-
-    sources = self.calibre_recipe_json_sources()
-    if sources:
-      return sources
-
-    archive_path = self.plugin_archive_path()
-    if not archive_path:
-      return []
-    sources = []
-    with zipfile.ZipFile(archive_path) as archive:
-      for name in sorted(archive.namelist()):
-        if name.startswith('recipes/') and name.casefold().endswith('.json'):
-          sources.append((os.path.basename(name), archive.read(name).decode('utf-8')))
-    return sources
-
-  def calibre_recipe_json_sources(self):
-    plugin_base = getattr(self, 'plugin_base', None)
-    if plugin_base is None or not hasattr(plugin_base, 'load_resources'):
-      return []
-    resources = plugin_base.load_resources(RECIPE_RESOURCE_NAMES) or {}
-    sources = []
-    for resource_name in RECIPE_RESOURCE_NAMES:
-      raw_json = resources.get(resource_name)
-      if raw_json is None:
-        continue
-      if isinstance(raw_json, bytes):
-        raw_json = raw_json.decode('utf-8')
-      sources.append((os.path.basename(resource_name), raw_json))
-    return sources
-
-  def plugin_archive_path(self):
-    path = os.path.abspath(__file__)
-    lower = path.casefold()
-    marker = '.zip'
-    index = lower.find(marker)
-    if index < 0:
-      return ''
-    archive_path = path[:index + len(marker)]
-    return archive_path if os.path.exists(archive_path) else ''
+  def builtin_url_fetchers(self):
+    try:
+      from calibre_plugins.list_switchboard.url_fetcher import available_url_fetchers
+    except ImportError:
+      from url_fetcher import available_url_fetchers
+    return available_url_fetchers()
 
   def recipe_discovery_summary(self):
-    recipe_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'recipes')
-    if os.path.isdir(recipe_dir):
-      try:
-        count = len([name for name in os.listdir(recipe_dir) if name.casefold().endswith('.json')])
-      except Exception as err:
-        return f'Could not read recipe folder: {err}'
-      return f'No JSON recipes found in {recipe_dir}' if count == 0 else f'Could not load {count} JSON recipe file(s)'
-    archive_path = self.plugin_archive_path()
-    if not archive_path:
-      return f'No recipe folder found near {os.path.abspath(__file__)}'
-    try:
-      with zipfile.ZipFile(archive_path) as archive:
-        count = len([
-          name for name in archive.namelist()
-          if name.startswith('recipes/') and name.casefold().endswith('.json')
-        ])
-    except Exception as err:
-      return f'Could not read plugin ZIP recipes: {err}'
-    return f'No JSON recipes found in plugin ZIP' if count == 0 else f'Could not load {count} JSON recipe file(s)'
+    return f'Could not load built-in URL fetchers from {URL_FETCHER_PACKAGE}.'
 
   def import_default_recipe(self):
     self.import_recipe(self.load_default_recipe())
@@ -1301,7 +934,7 @@ class ListSwitchboardCore:
     progress = None
     try:
       self.debug_recipe_start(recipe)
-      progress = self.create_import_progress()
+      progress = self.create_import_progress(recipe.NAME)
       self.import_progress = progress
       self.update_import_progress(0, f'Fetching "{recipe.NAME}"...')
       parsed = self.fetch_and_parse_recipe(recipe)
@@ -1317,9 +950,9 @@ class ListSwitchboardCore:
       if progress is not None:
         progress.close()
 
-  def create_import_progress(self):
+  def create_import_progress(self, list_name):
     progress = QProgressDialog('Preparing import...', 'Cancel', 0, IMPORT_WRITE_PROGRESS_MAX, self.gui)
-    progress.setWindowTitle('Import List')
+    progress.setWindowTitle(f'Import List: {list_name}')
     progress.setMinimumDuration(0)
     progress.setAutoClose(False)
     progress.setAutoReset(False)
@@ -1431,38 +1064,20 @@ class ListSwitchboardCore:
       time.sleep(min(0.1, max(0, end_time - time.time())))
 
   def fetch_and_parse_recipe(self, recipe):
-    last_error = None
-    errors = []
-    urls = getattr(recipe, 'FETCH_URLS', None) or (recipe.URL,)
-    urls = tuple(urls)
-    expanded_urls = []
-    for url in urls:
-      expanded_urls.append(url)
-      expanded_urls.extend(self.fallback_fetch_urls(url))
-    for url in expanded_urls:
-      try:
-        self.debug_recipe_fetch_url(url)
-        self.update_import_progress(message=f'Fetching "{recipe.NAME}" from {url}...')
-        html = self.fetch_url(url)
-        self.debug_recipe_fetched(url, html)
-        self.update_import_progress(message=f'Parsing "{recipe.NAME}"...')
-        parsed = recipe.parse(
-          html,
-          fetch_url=self.fetch_url,
-          sleep=lambda seconds, message: self.sleep_with_events(seconds, message),
-          fetch_error=lambda url, err, entry: self.debug_recipe_linked_page_failed(url, err, entry),
-          log=lambda message: self.debug_recipe_parser_message(message),
-          progress=lambda done, total, message: self.update_import_fetch_progress(done, total, message))
-        parsed.setdefault('source_url', url)
-        return parsed
-      except Exception as err:
-        last_error = err
-        errors.append(f'{url}: {err}')
-        self.debug_recipe_failed(url, err)
-    if last_error is not None:
-      raise ListSwitchboardError(
-        'Could not fetch or parse the imported list.\n\nTried:\n- ' + '\n- '.join(errors))
-    raise ListSwitchboardError('The recipe did not define a URL to import.')
+    try:
+      return recipe.fetch_and_parse(
+        self.fetch_url,
+        sleep=lambda seconds, message: self.sleep_with_events(seconds, message),
+        fetch_error=lambda url, err, entry: self.debug_recipe_linked_page_failed(url, err, entry),
+        log=lambda message: self.debug_parser_message(message),
+        progress=lambda done, total, message: self.update_import_fetch_progress(done, total, message),
+        before_fetch=lambda url: (
+          self.debug_recipe_fetch_url(url),
+          self.update_import_progress(message=f'Fetching "{recipe.NAME}"...')),
+        after_fetch=lambda url, html: self.debug_recipe_fetched(url, html),
+        before_parse=lambda _url: self.update_import_progress(message=f'Parsing "{recipe.NAME}"...'))
+    except Exception as err:
+      raise ListSwitchboardError(str(err))
 
   def log_recipe_output(self, parsed):
     self.debug_recipe_output(parsed)
@@ -1476,7 +1091,13 @@ class ListSwitchboardCore:
     active = self.current_active()
     self.debug_import_target(list_name, active)
     self.update_import_match_progress(0, len(entries), f'Matching 0 of {len(entries)} recipe entries...')
-    matched, missing_entries = self.match_imported_entries(entries)
+    match_series = parsed.get('match_series', True)
+    try:
+      matched, missing_entries = self.match_imported_entries(entries, match_series=match_series)
+    except TypeError as err:
+      if 'match_series' not in str(err):
+        raise
+      matched, missing_entries = self.match_imported_entries(entries)
     self.debug_import_summary(matched, missing_entries, entries)
     if not matched:
       raise ListSwitchboardError('No books in this library matched the imported list.')
@@ -1518,11 +1139,13 @@ class ListSwitchboardCore:
       f'{len(missing_entries)} missing.')
     self.show_import_report(
       list_name, len(matched), len(entries), missing_entries,
-      matched_book_ids=set(matched), notes=parsed.get('notes'))
+      matched_book_ids=set(matched), notes=parsed.get('notes'),
+      match_series=match_series)
 
   def show_import_report(
       self, list_name, matched_count, entries_count, missing_entries,
-      allow_deep_recovery=True, matched_book_ids=None, notes=None):
+      allow_deep_recovery=True, matched_book_ids=None, notes=None,
+      match_series=True):
     self.debug_import_missing_entries(missing_entries)
     d = ImportReportDialog(
       self.gui, list_name, matched_count, entries_count, missing_entries,
@@ -1531,11 +1154,12 @@ class ListSwitchboardCore:
       self.close_import_progress()
       self.run_deep_recovery(
         list_name, matched_count, entries_count, missing_entries,
-        excluded_book_ids=matched_book_ids)
+        excluded_book_ids=matched_book_ids,
+        match_series=match_series)
 
   def run_deep_recovery(
       self, list_name, matched_count, entries_count, missing_entries,
-      excluded_book_ids=None):
+      excluded_book_ids=None, match_series=True):
     if not missing_entries:
       return
     excluded_book_ids = set(excluded_book_ids or [])
@@ -1550,7 +1174,8 @@ class ListSwitchboardCore:
     QApplication.processEvents()
     try:
       matched, still_missing = self.match_deep_recovery_entries(
-        missing_entries, excluded_book_ids=excluded_book_ids)
+        missing_entries, excluded_book_ids=excluded_book_ids,
+        match_series=match_series)
       if matched:
         progress.setCancelButton(None)
         index_updates = {}
@@ -1582,7 +1207,8 @@ class ListSwitchboardCore:
       self.show_import_report(
         list_name, total_matched, entries_count, still_missing,
         allow_deep_recovery=False,
-        matched_book_ids=excluded_book_ids | set(matched))
+        matched_book_ids=excluded_book_ids | set(matched),
+        match_series=match_series)
     except ImportCancelledError as err:
       self.status_message(str(err))
     except Exception as err:
@@ -1591,7 +1217,7 @@ class ListSwitchboardCore:
       self.import_progress = None
       progress.close()
 
-  def match_imported_entries(self, entries):
+  def match_imported_entries(self, entries, match_series=True):
     db = self.db.new_api
     ids = self.all_book_ids()
     titles = db.all_field_for('title', ids, default_value='')
@@ -1629,19 +1255,20 @@ class ListSwitchboardCore:
       for entry_key in entry_keys:
         title_candidates.extend(by_title.get(entry_key, []))
         series_candidates.extend(by_series.get(entry_key, []))
-      candidates = title_candidates + series_candidates
+      candidates = title_candidates + (series_candidates if match_series else [])
       candidates = list(OrderedDict((book_id, None) for book_id in candidates).keys())
       self.debug_import_match_entry(entry, candidates)
       entry_matched = False
-      series_candidates = list(OrderedDict(
-        (book_id, None) for book_id in series_candidates).keys())
-      for book_id in series_candidates:
-        if book_id in matched:
-          continue
-        if self.author_matches(authors.get(book_id, ''), entry.get('author', '')):
-          matched[book_id] = entry.get('position', '')
-          entry_matched = True
-          self.debug_import_matched_book('matched', book_id, entry, titles, series)
+      if match_series:
+        series_candidates = list(OrderedDict(
+          (book_id, None) for book_id in series_candidates).keys())
+        for book_id in series_candidates:
+          if book_id in matched:
+            continue
+          if self.author_matches(authors.get(book_id, ''), entry.get('author', '')):
+            matched[book_id] = entry.get('position', '')
+            entry_matched = True
+            self.debug_import_matched_book('matched', book_id, entry, titles, series)
       if not entry_matched:
         title_candidates = list(OrderedDict(
           (book_id, None) for book_id in title_candidates).keys())
@@ -1661,8 +1288,9 @@ class ListSwitchboardCore:
           f'Checking Goodreads for {entry_index} of {total_entries}: {entry.get("title", "")}')
         progress = lambda fraction, message: self.update_import_match_step_progress(
           entry_index, total_entries, fraction, message)
-        goodreads_candidates = self.goodreads_source_recovery_candidates(
-          entry, titles, series, authors, by_title, by_series)
+        goodreads_candidates = self.goodreads_source_recovery_candidates_for_match(
+          entry, titles, series, authors, by_title, by_series,
+          match_series=match_series)
         progress(0.6, f'Checked Goodreads source for: {entry.get("title", "")}')
         self.debug_import_goodreads_candidates(entry, goodreads_candidates)
         for book_id in goodreads_candidates:
@@ -1679,7 +1307,7 @@ class ListSwitchboardCore:
         f'Matched {entry_index} of {total_entries} recipe entries...')
     return matched, missing_entries
 
-  def match_deep_recovery_entries(self, entries, excluded_book_ids=None):
+  def match_deep_recovery_entries(self, entries, excluded_book_ids=None, match_series=True):
     excluded_book_ids = set(excluded_book_ids or [])
     db = self.db.new_api
     ids = self.all_book_ids()
@@ -1709,7 +1337,8 @@ class ListSwitchboardCore:
         entry_index, total_entries, fraction, message)
       candidates = self.goodreads_recovery_candidates(
         entry, ids, titles, series, authors, by_title, by_series, progress,
-        excluded_book_ids=excluded_book_ids)
+        excluded_book_ids=excluded_book_ids,
+        match_series=match_series)
       self.debug_import_goodreads_candidates(entry, candidates)
       entry_matched = False
       for book_id in candidates:
@@ -1728,10 +1357,11 @@ class ListSwitchboardCore:
 
   def goodreads_recovery_candidates(
       self, entry, ids, titles, series, authors, by_title, by_series, progress=None,
-      excluded_book_ids=None):
+      excluded_book_ids=None, match_series=True):
     excluded_book_ids = set(excluded_book_ids or [])
-    source_candidates = self.goodreads_source_recovery_candidates(
-      entry, titles, series, authors, by_title, by_series)
+    source_candidates = self.goodreads_source_recovery_candidates_for_match(
+      entry, titles, series, authors, by_title, by_series,
+      match_series=match_series)
     source_candidates = [
       book_id for book_id in source_candidates
       if book_id not in excluded_book_ids
@@ -1740,6 +1370,9 @@ class ListSwitchboardCore:
       progress(0.6, f'Checked Goodreads source for: {entry.get("title", "")}')
     if source_candidates:
       return source_candidates
+
+    if not match_series:
+      return []
 
     entry_keys = self.import_entry_keys(entry)
     relaxed_entry_keys = set()
@@ -1777,13 +1410,27 @@ class ListSwitchboardCore:
       progress(0.95, f'Finished Goodreads checks for: {entry.get("title", "")}')
     return candidates
 
-  def goodreads_source_recovery_candidates(self, entry, titles, series, authors, by_title, by_series):
+  def goodreads_source_recovery_candidates_for_match(
+      self, entry, titles, series, authors, by_title, by_series, match_series=True):
+    try:
+      return self.goodreads_source_recovery_candidates(
+        entry, titles, series, authors, by_title, by_series,
+        match_series=match_series)
+    except TypeError as err:
+      if 'match_series' not in str(err):
+        raise
+      return self.goodreads_source_recovery_candidates(
+        entry, titles, series, authors, by_title, by_series) if match_series else []
+
+  def goodreads_source_recovery_candidates(
+      self, entry, titles, series, authors, by_title, by_series, match_series=True):
     data = self.fetch_goodreads_source_data(entry.get('source_url', ''))
     candidates = []
-    for series_name in data.get('series_names', []):
-      keys = set(series_match_keys(series_name))
-      for key in keys:
-        candidates.extend(by_series.get(key, []))
+    if match_series:
+      for series_name in data.get('series_names', []):
+        keys = set(series_match_keys(series_name))
+        for key in keys:
+          candidates.extend(by_series.get(key, []))
     for source_book in data.get('books', []):
       for title_key in match_keys(source_book.get('title', '')):
         for book_id in by_title.get(title_key, []):
@@ -2095,7 +1742,7 @@ class ListSwitchboardCore:
     return [(position, title, authors) for _sort_key, position, title, authors in rows]
 
   def show_debug_dialog(self):
-    d = DebugDialog(self.gui)
+    d = DebugDialog(self.gui, DEBUG_SECTIONS)
     if d.exec() != QDialog.Accepted:
       return
     prefs['debug_logging'] = bool(d.debug_logging.isChecked())

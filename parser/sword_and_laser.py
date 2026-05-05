@@ -1,0 +1,508 @@
+#!/usr/bin/env python
+# vim:fileencoding=UTF-8:ts=2:sw=2:sta:et:sts=2:ai
+
+import re
+from urllib.parse import quote, unquote, urljoin, urlparse
+
+from bs4 import BeautifulSoup
+
+from .fandom import fandom_api_html, fandom_wikitext_table_to_html, looks_like_wikitext
+from .generic import matching_schema, position_sort_key, token_header_start
+
+
+def parse_sword_and_laser_book_list(
+    recipe, html, fetch_url=None, sleep=None, fetch_error=None, log=None, progress=None):
+  html = fandom_api_html(html)
+  if looks_like_wikitext(html):
+    html = fandom_wikitext_table_to_html(html)
+  soup = BeautifulSoup(html, 'html.parser')
+  entries = parse_sword_and_laser_main_entries(recipe, soup)
+  unavailable_march_pages = []
+  march_summary = None
+  notes = []
+  if recipe.options.get('include_march_madness', False):
+    entries, unavailable_march_pages, march_summary = add_sword_and_laser_march_entries(
+      recipe, entries, fetch_url, sleep, fetch_error, log, progress)
+    if fetch_url is not None and entries and not any(entry.get('source_url') for entry in entries):
+      notes.append(
+        'March Madness details were not fetched because the imported table did not include linked page URLs.')
+    elif march_summary is not None:
+      notes.append(march_madness_summary_note(march_summary))
+  parsed = {
+    'name': recipe.NAME,
+    'url': recipe.URL,
+    'entries': sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
+  }
+  if march_summary is not None:
+    parsed['march_madness_summary'] = march_summary
+  if unavailable_march_pages:
+    parsed['march_madness_unavailable_pages'] = unavailable_march_pages
+    notes.append(march_madness_unavailable_note(unavailable_march_pages))
+  if notes:
+    parsed['notes'] = notes
+  return parsed
+
+
+def parse_sword_and_laser_main_entries(recipe, soup):
+  entries = []
+  for table in soup.select('table'):
+    headers = [cell.get_text(' ', strip=True) for cell in table.select('tr th')]
+    schema = matching_schema(headers, recipe.schemas)
+    if not schema:
+      continue
+    for row in table.select('tr')[1:]:
+      cells = row.find_all(['td', 'th'])
+      if len(cells) < len(schema['headers']):
+        continue
+      values = [cell.get_text(' ', strip=True) for cell in cells]
+      data = sword_and_laser_entry(values, schema, recipe.URL, cells)
+      if data:
+        entries.append(data)
+    if entries:
+      return entries
+
+  text = soup.get_text('\n', strip=True)
+  return parse_sword_and_laser_text_entries(recipe, text)
+
+
+def parse_sword_and_laser_text_entries(recipe, text):
+  lines = [line.strip() for line in text.splitlines() if line.strip()]
+  for schema in recipe.schemas:
+    start = token_header_start(lines, schema['headers'])
+    if start is None:
+      continue
+    entries = []
+    index = start
+    width = len(schema['headers'])
+    while index + width - 1 < len(lines):
+      values = lines[index:index + width]
+      data = sword_and_laser_entry(values, schema, recipe.URL)
+      if not data:
+        break
+      entries.append(data)
+      index += width
+    if entries:
+      return entries
+  return []
+
+
+def sword_and_laser_entry(values, schema, url, cells=None):
+  fields = schema['fields']
+  data = {}
+  for field, value in zip(fields, values):
+    data[field] = value.strip()
+  seq = data.get('position', '').strip()
+  position = sword_and_laser_position(seq)
+  title = clean_sword_and_laser_title(data.get('title', ''))
+  author = data.get('author', '').strip()
+  if title is None:
+    return None
+  if not position or not title or not author:
+    return None
+  source_url = ''
+  if cells:
+    title_index = fields.index('title')
+    link = cells[title_index].find('a', href=True)
+    if link is not None:
+      source_url = urljoin(url, link['href'])
+  result = {
+    'position': position,
+    'title': title,
+    'author': author,
+  }
+  if source_url:
+    result['source_url'] = source_url
+  return result
+
+
+def sword_and_laser_position(seq):
+  seq = seq.strip()
+  if not seq:
+    return ''
+  match = re.match(r'^(\d+)(?:\.(\d*))?([a-z])?$', seq, re.I)
+  if not match:
+    return ''
+  number = match.group(1)
+  decimal = match.group(2) or ''
+  suffix = (match.group(3) or '').casefold()
+  if suffix == 'a':
+    return f'{number}.5'
+  if suffix:
+    return ''
+  if decimal and set(decimal) != {'0'}:
+    return f'{number}.{decimal}'
+  return number
+
+
+def clean_sword_and_laser_title(title):
+  title = re.sub(r'\s*\(Alternate Pick\)\s*$', '', title).strip()
+  if re.search(r'\bSeries\b', title, re.I):
+    return None
+  series_indicators = ('chronicles', 'saga', 'cycle', 'trilogy', 'tetralogy', 'quintet')
+  book_indicators = ('book', 'volume', 'part', '#', 'vol.')
+  title_key = title.casefold()
+  has_series_word = any(word in title_key for word in series_indicators)
+  has_book_indicator = any(indicator in title_key for indicator in book_indicators)
+  if has_series_word and not has_book_indicator:
+    return None
+  return title
+
+
+def fetch_sword_and_laser_page(url, fetch_url):
+  parsed = urlparse(url)
+  if '/wiki/' not in parsed.path:
+    return fetch_url(url), url
+  page = unquote(parsed.path.split('/wiki/', 1)[1]).replace('_', ' ')
+  base = f'{parsed.scheme}://{parsed.netloc}'
+  fallback_urls = (
+    f'{base}/api.php?action=parse&page={quote(page)}&prop=text&format=json',
+    f'{base}/wiki/Special:Export/{quote(page)}',
+    url,
+    f'{url}?action=raw',
+  )
+  for fallback_url in fallback_urls:
+    try:
+      html = fandom_api_html(fetch_url(fallback_url))
+      if looks_like_wikitext(html):
+        html = fandom_wikitext_table_to_html(html)
+      return html, fallback_url
+    except Exception:
+      continue
+  raise ValueError(f'All fallback URLs failed for {url}')
+
+
+def add_sword_and_laser_march_entries(
+    recipe, entries, fetch_url, sleep, fetch_error=None, log=None, progress=None):
+  summary = {
+    'main_entries': len(entries),
+    'linked_entries': len([entry for entry in entries if entry.get('source_url')]),
+    'fetched_pages': 0,
+    'failed_pages': 0,
+    'pages_with_nominations': 0,
+    'nominations_found': 0,
+    'entries_added': 0,
+    'duplicates_skipped': 0,
+  }
+  log_march(log, 'start', summary)
+  progress_march(progress, 0, summary['linked_entries'], 'Preparing Sword & Laser March Madness pages...')
+  if fetch_url is None:
+    log_march(log, 'no-fetch-callback', summary)
+    return entries, [], summary
+  by_key = {
+    (normalize_match_title(entry.get('title', '')), normalize_match_title(entry.get('author', ''))): entry
+    for entry in entries
+  }
+  unavailable_pages = []
+  delay = float(recipe.options.get('fetch_delay_seconds', 1.5))
+  linked_index = 0
+  for entry in list(entries):
+    url = entry.get('source_url')
+    if not url:
+      log_march(log, 'skip-no-link', {
+        'title': entry.get('title', ''),
+        'position': entry.get('position', ''),
+      })
+      continue
+    linked_index += 1
+    log_march(log, 'fetch-linked-page', {
+      'title': entry.get('title', ''),
+      'position': entry.get('position', ''),
+      'url': url,
+    })
+    progress_march(
+      progress, linked_index, summary['linked_entries'],
+      f'Fetching March Madness page {linked_index} of {summary["linked_entries"]}: '
+      f'{entry.get("title", "")}')
+    if sleep is not None:
+      sleep(
+        delay,
+        f'page {linked_index} of {summary["linked_entries"]}: '
+        f'{entry.get("title", "")}')
+    try:
+      html, fetched_url = fetch_sword_and_laser_page(url, fetch_url)
+      summary['fetched_pages'] += 1
+    except Exception as err:
+      summary['failed_pages'] += 1
+      unavailable_pages.append(march_madness_unavailable_page(entry, url, err))
+      if fetch_error is not None:
+        fetch_error(url, err, entry)
+      continue
+    soup = BeautifulSoup(html, 'html.parser')
+    nominations = parse_sword_and_laser_march_page(soup, entry)
+    summary['nominations_found'] += len(nominations)
+    if nominations:
+      summary['pages_with_nominations'] += 1
+    log_march(log, 'parsed-linked-page', {
+      'title': entry.get('title', ''),
+      'url': url,
+      'fetched_url': fetched_url,
+      'nominations': len(nominations),
+    })
+    for nomination in nominations:
+      key = (
+        normalize_match_title(nomination.get('title', '')),
+        normalize_match_title(nomination.get('author', '')),
+      )
+      if key not in by_key:
+        by_key[key] = nomination
+        summary['entries_added'] += 1
+      else:
+        summary['duplicates_skipped'] += 1
+  log_march(log, 'finished', summary)
+  return list(by_key.values()), unavailable_pages, summary
+
+
+def progress_march(progress, done, total, message):
+  if progress is not None:
+    progress(done, total, message)
+
+
+def log_march(log, event, data):
+  if log is not None:
+    log(f'Sword & Laser March Madness {event}: {data}')
+
+
+def march_madness_summary_note(summary):
+  if summary.get('linked_entries', 0) == 0:
+    return (
+      'March Madness was enabled, but no linked Sword & Laser book pages were available '
+      f'from {summary.get("main_entries", 0)} main entries.')
+  return (
+    'March Madness checked '
+    f'{summary.get("fetched_pages", 0)} of {summary.get("linked_entries", 0)} linked pages; '
+    f'found {summary.get("nominations_found", 0)} nomination entries; '
+    f'added {summary.get("entries_added", 0)} new recipe entries; '
+    f'skipped {summary.get("duplicates_skipped", 0)} duplicate entries.')
+
+
+def march_madness_unavailable_page(entry, url, err):
+  return {
+    'title': entry.get('title', ''),
+    'url': url,
+    'error': str(err),
+  }
+
+
+def march_madness_unavailable_note(pages):
+  count = len(pages)
+  label = 'page' if count == 1 else 'pages'
+  details = []
+  for page in pages[:5]:
+    title = page.get('title', '') or page.get('url', '')
+    details.append(title)
+  note = f'March Madness details were unavailable for {count} linked {label}'
+  if details:
+    note += ': ' + '; '.join(details)
+    if count > len(details):
+      note += f'; and {count - len(details)} more'
+    note += ' (URLs are available in recipe debug logging)'
+  return note + '.'
+
+
+def parse_sword_and_laser_march_page(soup, official_entry):
+  base = float(official_entry.get('position', '') or 0)
+  rows = parse_sword_and_laser_march_table_rows(soup)
+  if rows:
+    nominations = []
+    for index, (votes, percent, title, author) in enumerate(rows, start=1):
+      nominations.append({
+        'position': f'{base + (index / 100.0):g}',
+        'title': title,
+        'author': author,
+        'votes': votes,
+        'percent': percent,
+      })
+    return nominations
+
+  text = soup.get_text('\n', strip=True)
+  if 'from:' in text.casefold():
+    nominations = []
+    lines = [line.strip() for line in text.splitlines() if line.strip()]
+    in_poll = False
+    for line in lines:
+      line = re.sub(r'[\u200b\u200c\u200d]+', '', line).strip()
+      if not line:
+        continue
+      lower_line = line.casefold()
+      if 'from:' in lower_line:
+        in_poll = True
+        continue
+      if not in_poll:
+        continue
+      if lower_line.startswith(('this book', 'it was decided')):
+        continue
+      if lower_line.startswith(('sword and laser podcasts:', 'kick off:', 'wrap up:', 'other books in', 'external link:')):
+        break
+      if 'podcast' in lower_line:
+        break
+      if line.startswith(official_entry.get('title', '')):
+        break
+      title = line
+      author = official_entry.get('author', '')
+      if ' by ' in line:
+        title, author = line.rsplit(' by ', 1)
+      nominations.append({
+        'position': f'{base + ((len(nominations) + 1) / 100.0):g}',
+        'title': title.strip(),
+        'author': author.strip(),
+        'votes': '0',
+        'percent': '0%',
+      })
+    return nominations
+
+  lines = [line.strip() for line in text.splitlines() if line.strip()]
+  first_round = first_round_vote_lines(lines)
+  nominations = []
+  for index, line in enumerate(first_round, start=1):
+    parsed = parse_vote_line(line)
+    if not parsed:
+      continue
+    votes, percent, title, author = parsed
+    nominations.append({
+      'position': f'{base + (index / 100.0):g}',
+      'title': title,
+      'author': author,
+      'votes': votes,
+      'percent': percent,
+    })
+  return nominations
+
+
+def parse_sword_and_laser_march_table_rows(soup):
+  all_rows = []
+  for table in soup.select('table'):
+    rows = []
+    last_author = None
+    for row in table.select('tr')[1:]:
+      cells = row.find_all(['td', 'th'])
+      if len(cells) < 4:
+        continue
+      values = [cell.get_text(' ', strip=True) for cell in cells]
+      if any('total' in value.casefold() for value in values):
+        continue
+
+      vote_col = None
+      percent_col = None
+      for index, value in enumerate(values):
+        stripped = value.strip()
+        if vote_col is None and re.match(r'^\d+', stripped):
+          vote_col = index
+        if percent_col is None and re.search(r'\d+\.?\d*%?', stripped):
+          if '%' in stripped or (index != vote_col and re.match(r'^\d+\.?\d*$', stripped)):
+            percent_col = index
+      if vote_col is not None and percent_col is None and vote_col + 1 < len(values):
+        next_value = values[vote_col + 1].strip()
+        if re.match(r'^\d+\.?\d*$', next_value):
+          percent_col = vote_col + 1
+      if vote_col is None or percent_col is None:
+        continue
+
+      title_col = max(vote_col, percent_col) + 1
+      author_col = title_col + 1
+      if author_col >= len(values):
+        continue
+      title = clean_sword_and_laser_title(values[title_col].strip())
+      if title is None:
+        continue
+
+      votes_match = re.search(r'^\d+', values[vote_col].strip())
+      percent_match = re.search(r'(\d+\.?\d*)(%)?', values[percent_col].strip())
+      if not votes_match or not percent_match:
+        continue
+      percent = percent_match.group(1)
+      if not percent_match.group(2):
+        percent += '%'
+
+      author = values[author_col].strip()
+      if re.fullmatch(r'["\u201c\u201d\s]+', author):
+        author = last_author or author
+      else:
+        last_author = author
+
+      rows.append((votes_match.group(0), percent, title, author))
+    all_rows.extend(rows)
+  return all_rows
+
+
+def first_round_vote_lines(lines):
+  def looks_like_vote_line_start(value):
+    return bool(re.match(r'^(\d+\s+)?(votes\s+)?\d+\.?\d*%', value.strip(), re.I))
+
+  reassembled = []
+  index = 0
+  while index < len(lines):
+    line = lines[index]
+    if re.match(r'^\d+\s+votes\s+\d+\.?\d*%', line, re.I) and index + 1 < len(lines):
+      next_line = lines[index + 1]
+      if (
+          ' by ' in next_line.casefold()
+          and not looks_like_vote_line_start(next_line)
+          and not next_line.startswith('Round ')
+          and not next_line.startswith('Match ')
+          and not next_line.endswith(' Total')):
+        reassembled.append(line + ' ' + next_line)
+        index += 2
+        continue
+    reassembled.append(line)
+    index += 1
+
+  lines = reassembled
+  rows = []
+  in_round_one = False
+  for line in lines:
+    if line.startswith('Round 1 Match'):
+      in_round_one = True
+      continue
+    if in_round_one and line.startswith('Round 2 '):
+      break
+    if not in_round_one or line.startswith('Match ') or line.endswith(' Total'):
+      continue
+    if parse_vote_line(line):
+      rows.append(line)
+  if not rows:
+    for line in lines:
+      if line.startswith('Round 2 ') or line.startswith('Semi') or line.startswith('Final'):
+        break
+      if (
+          line.startswith('Round ')
+          or line.startswith('Match ')
+          or line.endswith(' Total')
+          or len(line) < 15
+          or '===' in line):
+        continue
+      if parse_vote_line(line):
+        rows.append(line)
+  return rows
+
+
+def parse_vote_line(line):
+  original_line = line
+  match = re.match(r'^(\d+)\s+([0-9.]+%)\s+(.+?)\s{2,}(.+)$', original_line)
+  if match:
+    return (
+      match.group(1).strip(),
+      match.group(2).strip(),
+      match.group(3).strip(),
+      match.group(4).strip(),
+    )
+  line = re.sub(r'[\s\u00a0]+', ' ', line).strip()
+  for pattern in (
+      r'^(\d+)\s+votes\s+([0-9.]+%)\s+(.+)$',
+      r'^(\d+)\s+([0-9.]+%)\s+(.+)$'):
+    match = re.match(pattern, line, re.I)
+    if not match:
+      continue
+    votes = match.group(1).strip()
+    percent = match.group(2).strip()
+    remainder = match.group(3).strip()
+    if ' by ' in remainder:
+      title, author = remainder.rsplit(' by ', 1)
+      return votes, percent, title.strip(), author.strip()
+    fallback = re.match(r'^(.+)\s+([A-Z][^0-9]+)$', remainder)
+    if fallback:
+      return votes, percent, fallback.group(1).strip(), fallback.group(2).strip()
+  return None
+
+
+def normalize_match_title(value):
+  return re.sub(r'[^a-z0-9]+', ' ', value.casefold()).strip()

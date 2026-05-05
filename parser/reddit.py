@@ -1,0 +1,146 @@
+#!/usr/bin/env python
+# vim:fileencoding=UTF-8:ts=2:sw=2:sta:et:sts=2:ai
+
+import re
+from urllib.parse import urljoin
+
+from bs4 import BeautifulSoup
+
+from .generic import matching_schema, normalize_header, row_entry, strip_markdown_link, token_header_start
+
+
+BLOCKED_MARKERS = (
+  'Please wait for verification',
+  'blocked by network security',
+  'You have been blocked',
+  'whoa there, pardner',
+)
+
+
+def blocked_message(text):
+  for marker in BLOCKED_MARKERS:
+    if marker.casefold() in text.casefold():
+      return (
+        'Reddit returned a verification or blocking page instead of the r/Fantasy results table. '
+        'Enable List Switchboard debug logging and retry to record the fetched page preview.')
+  return None
+
+
+def parse_reddit_results(html, name, url, schemas):
+  soup = BeautifulSoup(html, 'html.parser')
+  text = soup.get_text('\n', strip=True)
+  message = blocked_message(text)
+  if message:
+    raise ValueError(message)
+
+  for parser in (parse_html_table, parse_token_table, parse_plain_text_table, parse_markdown_table):
+    entries = parser(soup, text, url, schemas)
+    if entries:
+      return {
+        'name': name,
+        'url': url,
+        'entries': entries,
+      }
+  raise ValueError('Could not find the r/Fantasy results table in the fetched page.')
+
+
+def parse_html_table(soup, _text, url, schemas):
+  for row in soup.select('table tr'):
+    headers = [cell.get_text(' ', strip=True) for cell in row.find_all('th')]
+    schema = matching_schema(headers, schemas)
+    if not schema:
+      continue
+    entries = []
+    table = row.find_parent('table')
+    if table is None:
+      continue
+    for data_row in table.select('tr')[1:]:
+      cells = data_row.find_all(['td', 'th'])
+      if len(cells) < len(schema['headers']):
+        continue
+      values = [cell.get_text(' ', strip=True) for cell in cells]
+      source_url = ''
+      title_index = schema['fields'].index('title')
+      link = cells[title_index].find('a', href=True)
+      if link is not None:
+        source_url = urljoin(url, link['href'])
+      data = row_entry(values, schema, source_url=source_url)
+      if data:
+        entries.append(data)
+    if entries:
+      return entries
+  return []
+
+
+def parse_token_table(_soup, text, _url, schemas):
+  strings = [line.strip() for line in text.splitlines() if line.strip()]
+  for schema in schemas:
+    start = token_header_start(strings, schema['headers'])
+    if start is None:
+      continue
+    entries = []
+    index = start
+    width = len(schema['headers'])
+    while index + width - 1 < len(strings):
+      values = strings[index:index + width]
+      data = row_entry(values, schema)
+      if not data:
+        break
+      entries.append(data)
+      index += width
+    if entries:
+      return entries
+  return []
+
+
+def parse_plain_text_table(_soup, text, _url, schemas):
+  for schema in schemas:
+    entries = []
+    in_table = False
+    for line in text.splitlines():
+      line = line.strip()
+      if not line:
+        continue
+      if not in_table:
+        if normalize_header(line) == normalize_header(' '.join(schema['headers'])):
+          in_table = True
+        continue
+
+      columns = re.split(r'\s{2,}', line)
+      if len(columns) < len(schema['headers']):
+        if entries:
+          break
+        continue
+      data = row_entry(columns[:len(schema['headers'])], schema)
+      if not data:
+        if entries:
+          break
+        continue
+      entries.append(data)
+    if entries:
+      return entries
+  return []
+
+
+def parse_markdown_table(_soup, text, _url, schemas):
+  rows = []
+  for line in text.splitlines():
+    line = line.strip()
+    if not line.startswith('|') or not line.endswith('|'):
+      continue
+    columns = [column.strip() for column in line.strip('|').split('|')]
+    rows.append(columns)
+  for index, row in enumerate(rows):
+    schema = matching_schema(row, schemas)
+    if not schema:
+      continue
+    entries = []
+    for values in rows[index + 1:]:
+      if len(values) < len(schema['headers']):
+        continue
+      data = row_entry([strip_markdown_link(value) for value in values], schema)
+      if data:
+        entries.append(data)
+    if entries:
+      return entries
+  return []
