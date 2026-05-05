@@ -1,10 +1,35 @@
 #!/usr/bin/env python
 # vim:fileencoding=UTF-8:ts=2:sw=2:sta:et:sts=2:ai
 
+"""
+Shared parser helpers for schema-driven list tables.
+
+Schema contract:
+- A schema is a dict with `headers` and `fields` in the same column order.
+- `headers` are human-facing table labels and are normalized before matching.
+- `fields` are canonical output keys such as position, title, author, votes,
+  rank_change, and ratings.
+
+Maintenance notes:
+- These helpers intentionally accept several imperfect source shapes: real HTML
+  tables, markdown tables, and text extracted from pages where table structure
+  was flattened.
+- row_entry() is deliberately strict: an entry must have numeric position,
+  title, and author. This prevents table captions, totals, and prose from
+  leaking into import matching.
+"""
+
 import re
 
 
 def token_header_start(strings, headers):
+  """
+  Return the first index after a header sequence in flattened text tokens.
+
+  Invariant:
+  - `strings` is already stripped and empty tokens were removed.
+  - Complexity: O(n * h), where n is token count and h is header width.
+  """
   width = len(headers)
   for index in range(len(strings) - width + 1):
     if [normalize_header(value) for value in strings[index:index + width]] == [
@@ -14,6 +39,13 @@ def token_header_start(strings, headers):
 
 
 def matching_schema(headers, schemas):
+  """
+  Pick the first schema whose expected headers prefix-match the observed row.
+
+  Maintenance note:
+  - Prefix matching allows source tables to append extra columns without
+    invalidating the import recipe.
+  """
   normalized = [normalize_header(value) for value in headers]
   for schema in schemas:
     expected = [normalize_header(value) for value in schema['headers']]
@@ -23,10 +55,18 @@ def matching_schema(headers, schemas):
 
 
 def normalize_header(value):
+  """Normalize display headers so punctuation/case drift does not break recipes."""
   return re.sub(r'[^a-z0-9]+', ' ', value.casefold()).strip()
 
 
 def row_entry(values, schema, source_url=''):
+  """
+  Convert one table row into the normalized recipe-entry shape.
+
+  Invariant:
+  - `values` and schema['fields'] must be in the same order.
+  - Returns None for non-book rows rather than raising.
+  """
   fields = schema['fields']
   data = {}
   for field, value in zip(fields, values):
@@ -51,6 +91,7 @@ def row_entry(values, schema, source_url=''):
 
 
 def split_rank_change(value):
+  """Split combined rank/change values such as "2 / +1" into separate fields."""
   value = value.strip()
   match = re.match(r'^(\d+)\s*/\s*(.+)$', value)
   if match:
@@ -59,6 +100,7 @@ def split_rank_change(value):
 
 
 def valid_entry(data):
+  """Reject totals, notes, and partial rows before they reach matching."""
   position = data.get('position', '').strip()
   title = data.get('title', '').strip()
   author = data.get('author', '').strip()
@@ -69,6 +111,7 @@ def valid_entry(data):
 
 
 def strip_markdown_link(value):
+  """Return the label from a simple `[label](url)` markdown link."""
   value = value.strip()
   if '](' not in value or not value.startswith('['):
     return value
@@ -77,6 +120,7 @@ def strip_markdown_link(value):
 
 
 def position_sort_key(position):
+  """Sort imported positions numerically while keeping invalid values stable at 0."""
   try:
     return float(position)
   except Exception:

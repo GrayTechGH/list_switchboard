@@ -1,6 +1,18 @@
 #!/usr/bin/env python
 # vim:fileencoding=UTF-8:ts=2:sw=2:sta:et:sts=2:ai
 
+"""
+r/Fantasy result parsers.
+
+Maintenance notes:
+- Reddit output is unstable: the same post may arrive as structured HTML,
+  flattened text, old markdown, or a network/security interstitial.
+- parse_reddit_results() tries parsers from most structured to least structured
+  so we preserve source links when available.
+- Parser helpers return [] when they do not recognize a table; only the top-level
+  function raises a user-facing error after all strategies fail.
+"""
+
 import re
 from urllib.parse import urljoin
 
@@ -33,6 +45,8 @@ def parse_reddit_results(html, name, url, schemas):
   if message:
     raise ValueError(message)
 
+  # Ordered by fidelity: HTML keeps title source URLs; token/plain/markdown
+  # recover data from progressively flatter representations.
   for parser in (parse_html_table, parse_token_table, parse_plain_text_table, parse_markdown_table):
     entries = parser(soup, text, url, schemas)
     if entries:
@@ -45,6 +59,7 @@ def parse_reddit_results(html, name, url, schemas):
 
 
 def parse_html_table(soup, _text, url, schemas):
+  """Parse real table markup and preserve title links as Goodreads source URLs."""
   for row in soup.select('table tr'):
     headers = [cell.get_text(' ', strip=True) for cell in row.find_all('th')]
     schema = matching_schema(headers, schemas)
@@ -73,6 +88,7 @@ def parse_html_table(soup, _text, url, schemas):
 
 
 def parse_token_table(_soup, text, _url, schemas):
+  """Parse pages where the table was flattened into one text token per cell."""
   strings = [line.strip() for line in text.splitlines() if line.strip()]
   for schema in schemas:
     start = token_header_start(strings, schema['headers'])
@@ -94,6 +110,7 @@ def parse_token_table(_soup, text, _url, schemas):
 
 
 def parse_plain_text_table(_soup, text, _url, schemas):
+  """Parse fixed-ish text tables where columns are separated by 2+ spaces."""
   for schema in schemas:
     entries = []
     in_table = False
@@ -123,6 +140,7 @@ def parse_plain_text_table(_soup, text, _url, schemas):
 
 
 def parse_markdown_table(_soup, text, _url, schemas):
+  """Parse old Reddit markdown tables after BeautifulSoup exposes raw text."""
   rows = []
   for line in text.splitlines():
     line = line.strip()

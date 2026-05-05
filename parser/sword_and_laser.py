@@ -1,6 +1,19 @@
 #!/usr/bin/env python
 # vim:fileencoding=UTF-8:ts=2:sw=2:sta:et:sts=2:ai
 
+"""
+Sword & Laser parser, including optional March Madness nomination recovery.
+
+Maintenance notes:
+- Main list entries come from the Fandom book-list table. Optional March Madness
+  entries come from each linked book page and are inserted at fractional
+  positions after the official pick.
+- Fandom responses are normalized before parsing because fallback URLs may return
+  API JSON, Special:Export XML, raw wikitext, or HTML.
+- March Madness parsing is best-effort. Failed linked pages are reported in
+  notes instead of aborting the main import.
+"""
+
 import re
 from urllib.parse import quote, unquote, urljoin, urlparse
 
@@ -12,6 +25,13 @@ from .generic import matching_schema, position_sort_key, token_header_start
 
 def parse_sword_and_laser_book_list(
     recipe, html, fetch_url=None, sleep=None, fetch_error=None, log=None, progress=None):
+  """
+  Parse the main Sword & Laser list and optionally enrich with nominations.
+
+  Invariant:
+  - Returned entries are sorted by numeric position, including fractional
+    positions for alternates and nominations.
+  """
   html = fandom_api_html(html)
   if looks_like_wikitext(html):
     html = fandom_wikitext_table_to_html(html)
@@ -44,6 +64,7 @@ def parse_sword_and_laser_book_list(
 
 
 def parse_sword_and_laser_main_entries(recipe, soup):
+  """Parse the official book-list table, with flattened text as a fallback."""
   entries = []
   for table in soup.select('table'):
     headers = [cell.get_text(' ', strip=True) for cell in table.select('tr th')]
@@ -66,6 +87,7 @@ def parse_sword_and_laser_main_entries(recipe, soup):
 
 
 def parse_sword_and_laser_text_entries(recipe, text):
+  """Recover entries from flattened Fandom text when table tags are unavailable."""
   lines = [line.strip() for line in text.splitlines() if line.strip()]
   for schema in recipe.schemas:
     start = token_header_start(lines, schema['headers'])
@@ -87,6 +109,7 @@ def parse_sword_and_laser_text_entries(recipe, text):
 
 
 def sword_and_laser_entry(values, schema, url, cells=None):
+  """Normalize one official Sword & Laser row into a recipe entry."""
   fields = schema['fields']
   data = {}
   for field, value in zip(fields, values):
@@ -116,6 +139,13 @@ def sword_and_laser_entry(values, schema, url, cells=None):
 
 
 def sword_and_laser_position(seq):
+  """
+  Convert Sword & Laser sequence labels into sortable numeric positions.
+
+  Maintenance note:
+  - The historical alternate-pick suffix "a" sorts halfway after the official
+    pick, so "139a" becomes "139.5".
+  """
   seq = seq.strip()
   if not seq:
     return ''
@@ -135,6 +165,14 @@ def sword_and_laser_position(seq):
 
 
 def clean_sword_and_laser_title(title):
+  """
+  Normalize title text and reject rows that represent a whole series.
+
+  Refactor warning:
+  - The series-word check is intentionally conservative. "book", "volume", and
+    similar indicators allow titles that contain words like "Chronicles" but are
+    still individual books.
+  """
   title = re.sub(r'\s*\(Alternate Pick\)\s*$', '', title).strip()
   if re.search(r'\bSeries\b', title, re.I):
     return None
@@ -149,6 +187,13 @@ def clean_sword_and_laser_title(title):
 
 
 def fetch_sword_and_laser_page(url, fetch_url):
+  """
+  Fetch a linked Fandom page through fallback URL shapes.
+
+  Maintenance note:
+  - API parse is tried before normal HTML/raw/export because it is usually the
+    most stable representation for modern Fandom pages.
+  """
   parsed = urlparse(url)
   if '/wiki/' not in parsed.path:
     return fetch_url(url), url
@@ -173,6 +218,14 @@ def fetch_sword_and_laser_page(url, fetch_url):
 
 def add_sword_and_laser_march_entries(
     recipe, entries, fetch_url, sleep, fetch_error=None, log=None, progress=None):
+  """
+  Add first-round March Madness nominations from linked book pages.
+
+  Invariants:
+  - Duplicate title/author pairs are skipped.
+  - Network/page failures are collected and reported without discarding the main
+    Sword & Laser list.
+  """
   summary = {
     'main_entries': len(entries),
     'linked_entries': len([entry for entry in entries if entry.get('source_url')]),
@@ -300,6 +353,14 @@ def march_madness_unavailable_note(pages):
 
 
 def parse_sword_and_laser_march_page(soup, official_entry):
+  """
+  Parse March Madness nominations for one official entry.
+
+  Strategy order:
+  - Structured poll tables.
+  - Fandom pages with a "from:" nominations section.
+  - Plain first-round vote lines.
+  """
   base = float(official_entry.get('position', '') or 0)
   rows = parse_sword_and_laser_march_table_rows(soup)
   if rows:
@@ -369,6 +430,13 @@ def parse_sword_and_laser_march_page(soup, official_entry):
 
 
 def parse_sword_and_laser_march_table_rows(soup):
+  """
+  Parse table-based March Madness poll rows.
+
+  Maintenance note:
+  - Some tables repeat authors with quote marks. `last_author` carries the most
+    recent explicit author through those rows.
+  """
   all_rows = []
   for table in soup.select('table'):
     rows = []
@@ -425,6 +493,7 @@ def parse_sword_and_laser_march_table_rows(soup):
 
 
 def first_round_vote_lines(lines):
+  """Return vote lines from the first March Madness round only."""
   def looks_like_vote_line_start(value):
     return bool(re.match(r'^(\d+\s+)?(votes\s+)?\d+\.?\d*%', value.strip(), re.I))
 
@@ -434,6 +503,8 @@ def first_round_vote_lines(lines):
     line = lines[index]
     if re.match(r'^\d+\s+votes\s+\d+\.?\d*%', line, re.I) and index + 1 < len(lines):
       next_line = lines[index + 1]
+      # Load-bearing: some Fandom exports split "votes/percent" and
+      # "Title by Author" onto separate lines. Reassemble before round parsing.
       if (
           ' by ' in next_line.casefold()
           and not looks_like_vote_line_start(next_line)
@@ -476,6 +547,14 @@ def first_round_vote_lines(lines):
 
 
 def parse_vote_line(line):
+  """
+  Parse one poll result line into votes, percent, title, and author.
+
+  Maintenance note:
+  - Fandom pages use both aligned columns and collapsed whitespace. The first
+    pattern preserves aligned title/author columns; the later patterns recover
+    from collapsed text.
+  """
   original_line = line
   match = re.match(r'^(\d+)\s+([0-9.]+%)\s+(.+?)\s{2,}(.+)$', original_line)
   if match:
@@ -505,4 +584,5 @@ def parse_vote_line(line):
 
 
 def normalize_match_title(value):
+  """Normalize title/author pairs for duplicate detection within one import."""
   return re.sub(r'[^a-z0-9]+', ' ', value.casefold()).strip()

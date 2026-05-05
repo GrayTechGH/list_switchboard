@@ -61,6 +61,7 @@ sys.modules.setdefault('calibre_plugins.list_switchboard', list_switchboard_pack
 sys.modules.setdefault('calibre_plugins.list_switchboard.config', config_module)
 
 import main
+import list_state
 from parser.reddit import parse_reddit_results
 from parser.sword_and_laser import (
   parse_sword_and_laser_book_list,
@@ -495,6 +496,70 @@ class ImportMatchingTest(unittest.TestCase):
       captured.get('active_updates'))
     self.assertEqual({101: 1.0}, captured.get('active_index_updates'))
 
+  def test_active_to_stored_updates_skips_unchanged_stored_rows(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    main.prefs['active_list_field'] = '#reading_series'
+    main.prefs['stored_lists_field'] = '#stored_lists'
+    core.ensure_active_list_can_be_stored = lambda _active: None
+    core.all_book_ids = lambda: [1, 2, 3]
+    active_values = {
+      1: 'Sword and Laser',
+      2: '',
+      3: '',
+    }
+    stored_values = {
+      1: '',
+      2: 'Existing List [4]',
+      3: 'Sword and Laser [24]',
+    }
+    core.read_field = lambda field, book_id: (
+      active_values[book_id] if field == main.prefs['active_list_field']
+      else stored_values[book_id])
+    core.stored_entry_for_active = lambda _book_id, active, require_position=False: (
+      f'{active} [24]')
+
+    active_updates, stored_updates = core.active_to_stored_updates('Sword and Laser')
+
+    self.assertEqual({1: ''}, active_updates)
+    self.assertEqual({1: 'Sword and Laser [24]'}, stored_updates)
+
+  def test_remove_active_list_skips_unchanged_stored_rows(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    main.prefs['active_list_field'] = '#reading_series'
+    main.prefs['stored_lists_field'] = '#stored_lists'
+    captured = {}
+    core.gui = None
+    core.current_active = lambda: 'Current List'
+    core.all_book_ids = lambda: [1, 2, 3]
+    active_values = {
+      1: 'Current List',
+      2: '',
+      3: '',
+    }
+    stored_values = {
+      1: 'Current List [1], Other List [3]',
+      2: 'Other List [4]',
+      3: 'Current List [2]',
+    }
+    core.read_field = lambda field, book_id: (
+      active_values[book_id] if field == main.prefs['active_list_field']
+      else stored_values[book_id])
+    core.write_fields_with_progress = lambda *_args, **kwargs: captured.update(kwargs)
+    core.status_message = lambda _message: None
+
+    original_question_dialog = list_state.question_dialog
+    try:
+      list_state.question_dialog = lambda *_args, **_kwargs: True
+      core.remove_active_list()
+    finally:
+      list_state.question_dialog = original_question_dialog
+
+    self.assertEqual({1: ''}, captured.get('active_updates'))
+    self.assertEqual({
+      1: 'Other List [3]',
+      3: '',
+    }, captured.get('stored_updates'))
+
   def test_import_skips_unchanged_matched_book_write(self):
     core = object.__new__(main.ListSwitchboardCore)
     captured = {}
@@ -610,6 +675,30 @@ class ImportMatchingTest(unittest.TestCase):
 
     self.assertEqual([], set_field_calls)
     self.assertEqual([set()], refreshed)
+
+  def test_add_selected_index_updates_use_next_whole_number_after_current_max(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    main.prefs['active_list_field'] = '#reading_series'
+    core.active_series_index_field = lambda: '#reading_series_index'
+    core.all_book_ids = lambda: [1, 2, 3, 4, 5]
+    active_values = {
+      1: 'Current List',
+      2: 'Current List',
+      3: 'Other List',
+      4: '',
+      5: '',
+    }
+    index_values = {
+      1: 5,
+      2: 33.05,
+      3: 99,
+    }
+    core.read_field = lambda _field, book_id: active_values.get(book_id, '')
+    core.read_series_index = lambda _index_field, book_id: index_values.get(book_id)
+
+    self.assertEqual(
+      {4: 34.0, 5: 35.0},
+      core.added_active_index_updates('Current List', {4: 'Current List', 5: 'Current List'}))
 
   def test_match_keys_include_calibre_article_normalized_title(self):
     self.assertIn('hobbit', main.match_keys('The Hobbit'))

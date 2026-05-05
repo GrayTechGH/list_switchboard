@@ -3,11 +3,6 @@
 
 from urllib.parse import parse_qs, quote, unquote, urlparse
 
-try:
-  from calibre_plugins.list_switchboard.parser.sword_and_laser import parse_sword_and_laser_book_list
-except ImportError:
-  from parser.sword_and_laser import parse_sword_and_laser_book_list
-
 from .generic import UrlFetcherGeneric
 
 
@@ -55,6 +50,11 @@ class UrlFetcherSwordAndLaser(UrlFetcherGeneric):
     return urls
 
   def parse(self, html, fetch_url=None, sleep=None, fetch_error=None, log=None, progress=None):
+    try:
+      from calibre_plugins.list_switchboard.parser.sword_and_laser import parse_sword_and_laser_book_list
+    except ImportError:
+      from parser.sword_and_laser import parse_sword_and_laser_book_list
+
     return parse_sword_and_laser_book_list(
       self,
       html,
