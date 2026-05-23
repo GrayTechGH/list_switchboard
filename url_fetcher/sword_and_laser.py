@@ -3,7 +3,12 @@
 
 from urllib.parse import parse_qs, quote, unquote, urlparse
 
-from .generic import UrlFetcherGeneric
+from .generic import (
+  CATEGORY_FANTASY,
+  CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,
+  CATEGORY_SCIENCE_FICTION,
+  UrlFetcherGeneric,
+)
 
 
 class UrlFetcherSwordAndLaser(UrlFetcherGeneric):
@@ -20,6 +25,11 @@ class UrlFetcherSwordAndLaser(UrlFetcherGeneric):
     'fetch_delay_seconds': 1.5,
     'match_series': False,
   }
+  FILTER_CATEGORIES = (
+    CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,
+    CATEGORY_SCIENCE_FICTION,
+    CATEGORY_FANTASY,
+  )
   schemas = (
     {
       'headers': ('Title', 'Author(s)', 'Publisher', 'Month Read', 'Seq'),
@@ -49,13 +59,16 @@ class UrlFetcherSwordAndLaser(UrlFetcherGeneric):
       urls = (api_url,) + urls
     return urls
 
-  def parse(self, html, fetch_url=None, sleep=None, fetch_error=None, log=None, progress=None):
+  def create_parser(self):
     try:
-      from calibre_plugins.list_switchboard.parser.sword_and_laser import parse_sword_and_laser_book_list
+      from calibre_plugins.list_switchboard.parser.sword_and_laser import SwordAndLaserParser
     except ImportError:
-      from parser.sword_and_laser import parse_sword_and_laser_book_list
+      from parser.sword_and_laser import SwordAndLaserParser
 
-    return parse_sword_and_laser_book_list(
+    return SwordAndLaserParser()
+
+  def parse(self, html, fetch_url=None, sleep=None, fetch_error=None, log=None, progress=None):
+    return self.parser().parse(
       self,
       html,
       fetch_url=fetch_url,

@@ -243,6 +243,15 @@ class MetadataMixin:
     except Exception:
       return str(value), None
 
+  def read_active_position(self, index_field, book_id):
+    if index_field:
+      numeric_position = self.read_series_index(index_field, book_id)
+      if numeric_position is not None:
+        return numeric_position
+    _position, numeric_position = self.read_position_display(
+      None, book_id, self.read_field(prefs['active_list_field'], book_id))
+    return numeric_position
+
   def normalized_position_text(self, position):
     if position in (None, ''):
       return ''
@@ -337,18 +346,20 @@ class MetadataMixin:
 
   def series_index_updates(self, active_updates):
     index_field = self.active_series_index_field()
-    if not index_field:
+    if not index_field and not self.active_field_is_series():
       return {}
     max_by_list = {}
+    max_in_field = 0
     update_ids = set(active_updates)
     for book_id in self.all_book_ids():
       if book_id in update_ids:
         continue
       list_name = clean_name(self.read_field(prefs['active_list_field'], book_id))
-      if not list_name:
-        continue
-      index = self.read_series_index(index_field, book_id)
+      index = self.read_active_position(index_field, book_id)
       if index is None:
+        continue
+      max_in_field = max(max_in_field, index)
+      if not list_name:
         continue
       key = normalize_key(list_name)
       max_by_list[key] = max(max_by_list.get(key, 0), index)
@@ -359,8 +370,10 @@ class MetadataMixin:
       if not list_name:
         continue
       key = normalize_key(list_name)
-      next_index = int(max_by_list.get(key, 0)) + 1
+      current_max = max_by_list[key] if key in max_by_list else max_in_field
+      next_index = next_whole_index_after(current_max)
       max_by_list[key] = next_index
+      max_in_field = max(max_in_field, next_index)
       index_updates[book_id] = float(next_index)
     return index_updates
 

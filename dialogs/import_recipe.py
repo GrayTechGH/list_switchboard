@@ -1,0 +1,255 @@
+#!/usr/bin/env python
+# vim:fileencoding=UTF-8:ts=2:sw=2:sta:et:sts=2:ai
+
+from qt.core import (
+  QCheckBox, QComboBox, QDialog, QDialogButtonBox, QGridLayout, QHBoxLayout,
+  QLabel, QLineEdit, QListWidget, QPushButton, QVBoxLayout, Qt
+)
+
+try:
+  from calibre_plugins.list_switchboard.config import prefs
+except ImportError:
+  from config import prefs
+
+
+ALL_LISTS_FILTER = 'All Lists'
+SPECULATIVE_FICTION_FILTER = 'Speculative Fiction'
+BOOK_CLUBS_FILTER = 'Book Clubs'
+
+SPECULATIVE_FICTION_CATEGORIES = frozenset((
+  'Science Fiction',
+  'Fantasy',
+  'Horror & Dark Fiction',
+))
+BOOK_CLUB_CATEGORIES = frozenset((
+  'General Audience Book Clubs',
+  'Online Community Book Clubs',
+))
+
+
+class ImportRecipeDialog(QDialog):
+
+  def __init__(self, parent, recipes):
+    QDialog.__init__(self, parent)
+    self.recipes = tuple(recipes or ())
+    self.visible_recipes = []
+    self.selected_recipe = None
+    self.selected_options = {}
+    self.setWindowTitle('Import List')
+
+    layout = QVBoxLayout()
+    self.setLayout(layout)
+    label = QLabel('Choose a list recipe to import:', self)
+    layout.addWidget(label)
+
+    filter_layout = QHBoxLayout()
+    layout.addLayout(filter_layout)
+
+    self.filter_edit = QLineEdit(self)
+    self.filter_edit.setPlaceholderText('Search import lists')
+    filter_layout.addWidget(self.filter_edit)
+
+    self.category_combo = QComboBox(self)
+    filter_layout.addWidget(self.category_combo)
+    self.populate_category_combo()
+
+    self.list_widget = QListWidget(self)
+    layout.addWidget(self.list_widget)
+
+    options_label = QLabel('Import options:', self)
+    layout.addWidget(options_label)
+
+    options_grid = QGridLayout()
+    options_grid.setColumnStretch(0, 0)
+    options_grid.setColumnStretch(1, 0)
+    options_grid.setColumnStretch(2, 1)
+    options_grid.setHorizontalSpacing(24)
+
+    layout.addLayout(options_grid)
+
+    self.match_series = QCheckBox('Match series', self)
+    self.match_series.setChecked(bool(prefs.get('include_calibre_series', False)))
+    options_grid.addWidget(self.match_series, 0, 0, alignment=Qt.AlignmentFlag.AlignLeft)
+
+    self.award_winners_only = QCheckBox('Match winners only', self)
+    options_grid.addWidget(self.award_winners_only, 0, 1, alignment=Qt.AlignmentFlag.AlignLeft)
+
+    self.source_label = QLabel('Source:', self)
+    options_grid.addWidget(self.source_label, 1, 0)
+
+    self.source_choice = QComboBox(self)
+    options_grid.addWidget(self.source_choice, 1, 1)
+
+    buttons = QDialogButtonBox(QDialogButtonBox.Cancel, self)
+    self.import_button = QPushButton('Import Selected List', self)
+    buttons.addButton(self.import_button, QDialogButtonBox.AcceptRole)
+    buttons.accepted.connect(self.accept)
+    buttons.rejected.connect(self.reject)
+    layout.addWidget(buttons)
+
+    self.filter_edit.textChanged.connect(self.apply_filter)
+    self.category_combo.currentIndexChanged.connect(lambda _index: self.apply_filter())
+    try:
+      self.list_widget.currentRowChanged.connect(lambda _row: self.update_option_state())
+    except Exception:
+      pass
+    self.list_widget.itemDoubleClicked.connect(lambda _item: self.accept())
+    self.apply_filter('')
+    self.resize(520, 420)
+
+  def current_options(self):
+    requires_series = self.recipe_requires_series_matching(self.current_recipe())
+    return {
+      'source_choice': self.current_source_choice(),
+      'match_series': True if requires_series else bool(self.match_series.isChecked()),
+      'award_winners_only': bool(self.award_winners_only.isChecked()),
+    }
+
+  def current_source_choice(self):
+    try:
+      value = self.source_choice.currentData()
+    except Exception:
+      value = None
+    if value is None:
+      try:
+        value = self.source_choice.currentText()
+      except Exception:
+        value = None
+    return value if value is not None else 'automatic'
+
+  def recipe_source_choices(self, recipe):
+    try:
+      choices = recipe.source_choices()
+    except Exception:
+      choices = ()
+    normalized = []
+    for index, choice in enumerate(choices or ()):
+      if isinstance(choice, dict):
+        label = str(choice.get('label') or '')
+        value = choice.get('value')
+      else:
+        try:
+          label, value = choice
+        except Exception:
+          label, value = str(choice or ''), index
+      if label:
+        normalized.append({'label': label, 'value': value})
+    if not normalized or normalized[0].get('value') != 'automatic':
+      normalized.insert(0, {'label': 'Automatic', 'value': 'automatic'})
+    return tuple(normalized)
+
+  def recipe_filter_labels(self, recipe):
+    try:
+      filters = recipe.get_filter_list()
+    except Exception:
+      filters = ()
+    labels = []
+    for filter_data in filters or ():
+      if isinstance(filter_data, dict):
+        label = str(filter_data.get('label') or '')
+      else:
+        label = str(filter_data or '')
+      if label:
+        labels.append(label)
+    return tuple(labels)
+
+  def category_options(self):
+    labels = set()
+    for recipe in self.recipes:
+      labels.update(self.recipe_filter_labels(recipe))
+
+    options = [ALL_LISTS_FILTER]
+    if labels.intersection(SPECULATIVE_FICTION_CATEGORIES):
+      options.append(SPECULATIVE_FICTION_FILTER)
+    if labels.intersection(BOOK_CLUB_CATEGORIES):
+      options.append(BOOK_CLUBS_FILTER)
+    options.extend(sorted(labels, key=str.casefold))
+    return tuple(options)
+
+  def populate_category_combo(self):
+    for option in self.category_options():
+      self.category_combo.addItem(option)
+
+  def filter_text(self):
+    try:
+      return str(self.filter_edit.text() or '')
+    except Exception:
+      return ''
+
+  def category_filter_text(self):
+    try:
+      current_text = self.category_combo.currentText()
+    except Exception:
+      return ALL_LISTS_FILTER
+    if not isinstance(current_text, str):
+      return ALL_LISTS_FILTER
+    return current_text or ALL_LISTS_FILTER
+
+  def recipe_matches_category(self, recipe, category):
+    if not category or category == ALL_LISTS_FILTER:
+      return True
+    labels = set(self.recipe_filter_labels(recipe))
+    if category == SPECULATIVE_FICTION_FILTER:
+      return bool(labels.intersection(SPECULATIVE_FICTION_CATEGORIES))
+    if category == BOOK_CLUBS_FILTER:
+      return bool(labels.intersection(BOOK_CLUB_CATEGORIES))
+    return category in labels
+
+  def apply_filter(self, text=None):
+    needle = str(self.filter_text() if text is None else text).casefold()
+    category = self.category_filter_text()
+    self.visible_recipes = sorted(
+      [
+        recipe for recipe in self.recipes
+        if self.recipe_matches_category(recipe, category)
+        and (not needle or needle in recipe.NAME.casefold())
+      ],
+      key=lambda recipe: recipe.NAME.casefold())
+    self.list_widget.clear()
+    for recipe in self.visible_recipes:
+      self.list_widget.addItem(recipe.NAME)
+    if self.visible_recipes:
+      self.list_widget.setCurrentRow(0)
+      self.import_button.setEnabled(True)
+    else:
+      self.list_widget.setCurrentRow(-1)
+      self.import_button.setEnabled(False)
+    self.update_option_state()
+
+  def current_recipe(self):
+    row = self.list_widget.currentRow()
+    if row < 0 or row >= len(self.visible_recipes):
+      return None
+    return self.visible_recipes[row]
+
+  def recipe_requires_series_matching(self, recipe):
+    return bool(getattr(recipe, 'REQUIRES_SERIES_MATCHING', False))
+
+  def update_option_state(self):
+    if not hasattr(self, 'match_series'):
+      return
+    requires_series = self.recipe_requires_series_matching(self.current_recipe())
+    self.match_series.setEnabled(not requires_series)
+    if requires_series:
+      self.match_series.setChecked(True)
+    self.update_source_choice_state()
+
+  def update_source_choice_state(self):
+    if not hasattr(self, 'source_choice'):
+      return
+    choices = self.recipe_source_choices(self.current_recipe())
+    try:
+      self.source_choice.clear()
+      for choice in choices:
+        self.source_choice.addItem(choice['label'], choice.get('value'))
+      self.source_choice.setEnabled(len(choices) > 1)
+    except Exception:
+      pass
+
+  def accept(self):
+    recipe = self.current_recipe()
+    if recipe is None:
+      return
+    self.selected_recipe = recipe
+    self.selected_options = self.current_options()
+    QDialog.accept(self)

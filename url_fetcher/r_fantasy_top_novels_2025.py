@@ -8,6 +8,7 @@ class UrlFetcherRFantasyTopNovels2025(UrlFetcherReddit):
 
   source_id = 'r_fantasy_top_novels_2025'
   NAME = 'r/Fantasy Top Novels 2025'
+  REQUIRES_SERIES_MATCHING = True
   URL = 'https://www.reddit.com/r/Fantasy/comments/1jjif55/rfantasy_top_novels_2025_results/'
   FETCH_URLS = (
     'https://old.reddit.com/r/Fantasy/comments/1jjif55/rfantasy_top_novels_2025_results/',

@@ -23,6 +23,7 @@ DEBUG_SECTIONS = (
   ('metadata', 'Metadata state and cleanup'),
   ('selection', 'Book selection and series expansion'),
   ('writes', 'Metadata writes'),
+  ('storage', 'List storage and saved matches'),
   ('recipe', 'Recipe fetch and parsed output'),
   ('fallback', 'Fallback activity only'),
   ('import', 'Import matching and report'),
@@ -134,6 +135,158 @@ class DebugMixin:
       f'writing active series field={field} label={label} count={len(active_updates)} '
       f'index_count={len(index_updates or {})}', section='writes')
 
+  def debug_storage_path(self, label, path):
+    self.debug_log(f'{label} path={path}', section='storage')
+
+  def debug_storage_root(self, root, source):
+    self.debug_log(f'storage root={root} source={source}', section='storage')
+
+  def debug_storage_root_ready(self, root):
+    self.debug_log(f'storage root ready={root}', section='storage')
+
+  def debug_storage_read_missing(self, path):
+    self.debug_log(f'JSON file missing path={path}', section='storage')
+
+  def debug_storage_read_failed(self, path, err):
+    self.debug_log(f'could not read JSON file path={path}: {err}', section='storage')
+
+  def debug_storage_read_invalid(self, path, reason):
+    self.debug_log(f'ignored JSON file path={path}: {reason}', section='storage')
+
+  def debug_storage_read_ok(self, path, keys):
+    self.debug_log(f'read JSON file path={path} keys={keys}', section='storage')
+
+  def debug_storage_write_start(self, path, label, count=None):
+    detail = f' count={count}' if count is not None else ''
+    self.debug_log(f'writing {label} path={path}{detail}', section='storage')
+
+  def debug_storage_write_ok(self, path, bytes_written):
+    self.debug_log(f'wrote JSON file path={path} bytes={bytes_written}', section='storage')
+
+  def debug_storage_import_cache(self, list_id, state, entries=0, reason=''):
+    detail = f' reason={reason}' if reason else ''
+    self.debug_log(
+      f'import cache {state} list_id={list_id} entries={entries}{detail}',
+      section='storage')
+
+  def debug_storage_append_cache(self, list_id, old_count, new_count, action, reason=''):
+    detail = f' reason={reason}' if reason else ''
+    self.debug_log(
+      f'append cache {action} list_id={list_id} old_entries={old_count} '
+      f'new_entries={new_count}{detail}',
+      section='storage')
+
+  def debug_storage_match_cache(self, list_id, state, matches=0, reason=''):
+    detail = f' reason={reason}' if reason else ''
+    self.debug_log(
+      f'match cache {state} list_id={list_id} matches={matches}{detail}',
+      section='storage')
+
+  def debug_storage_save_matches_start(self, list_id, list_name, active_count, cached_count, existing_count):
+    self.debug_log(
+      f'save active matches start list_id={list_id} list={list_name} '
+      f'active_books={active_count} cached_entries={cached_count} existing_matches={existing_count}',
+      section='storage')
+
+  def debug_storage_save_matches_missing_positions(self, list_id, missing_entries):
+    for index, entry in enumerate(missing_entries[:80], start=1):
+      self.debug_log(
+        f'save active matches cached entry without active book {index} list_id={list_id} '
+        f'position={entry.get("position", "")} title={entry.get("title", "")} '
+        f'author={entry.get("author", "")}',
+        section='storage')
+    if len(missing_entries) > 80:
+      self.debug_log(
+        f'save active matches cached entry without active book truncated list_id={list_id} '
+        f'additional={len(missing_entries) - 80}',
+        section='storage')
+
+  def debug_storage_save_match_skipped(self, book_id, reason, position=''):
+    self.debug_log(
+      f'save match skipped book_id={book_id} position={position} reason={reason}',
+      section='storage')
+
+  def debug_storage_save_match_direct_candidates(self, book_id, position, entry, direct_candidates):
+    self.debug_log(
+      f'save match direct candidates book_id={book_id} position={position} '
+      f'entry_title={entry.get("title", "")} entry_author={entry.get("author", "")} '
+      f'direct_candidates={direct_candidates}',
+      section='storage')
+
+  def debug_storage_save_match(self, book_id, entry_key, position):
+    self.debug_log(
+      f'saved match override book_id={book_id} position={position} entry_key={entry_key}',
+      section='storage')
+
+  def debug_storage_cached_active_add_start(self, active, list_id, update_count, entry_count):
+    self.debug_log(
+      f'cached active add start active={active} list_id={list_id} '
+      f'updates={update_count} cached_entries={entry_count}',
+      section='storage')
+
+  def debug_storage_cached_active_add_context(
+      self, list_id, selected_count, library_count, entry_count, unique_entry_count,
+      override_count, override_book_count, title_key_count, series_key_count,
+      cached_title_key_count, exact_key_count):
+    self.debug_log(
+      f'cached active add context built list_id={list_id} '
+      f'selected_books={selected_count} library_books={library_count} '
+      f'cached_entries={entry_count} unique_cached_entries={unique_entry_count} '
+      f'saved_overrides={override_count} override_books={override_book_count} '
+      f'library_title_keys={title_key_count} library_series_keys={series_key_count} '
+      f'cached_title_keys={cached_title_key_count} exact_cached_keys={exact_key_count}',
+      section='storage')
+
+  def debug_storage_cached_active_add_import_map(self, list_id, state, entry_count,
+      unique_entry_count, cached_title_key_count, exact_key_count):
+    self.debug_log(
+      f'cached active add import map {state} list_id={list_id} '
+      f'cached_entries={entry_count} unique_cached_entries={unique_entry_count} '
+      f'cached_title_keys={cached_title_key_count} exact_cached_keys={exact_key_count}',
+      section='storage')
+
+  def debug_storage_cached_active_add_import_map_invalidated(self, list_id, cleared_count=0):
+    detail = f' cleared={cleared_count}' if not list_id else ''
+    self.debug_log(
+      f'cached active add import map invalidated list_id={list_id or "all"}{detail}',
+      section='storage')
+
+  def debug_storage_cached_active_add_book(self, book_id, title, authors, default_index):
+    self.debug_log(
+      f'cached active add book book_id={book_id} title={title} authors={authors} '
+      f'default_index={default_index}',
+      section='storage')
+
+  def debug_storage_cached_active_add_candidates(self, book_id, candidates):
+    preview = []
+    for score, entry in candidates[:12]:
+      preview.append({
+        'score': score,
+        'position': entry.get('position', ''),
+        'title': entry.get('title', ''),
+        'author': entry.get('author', ''),
+      })
+    self.debug_log(
+      f'cached active add candidates book_id={book_id} count={len(candidates)} '
+      f'candidates={preview}',
+      section='storage')
+
+  def debug_storage_cached_active_add_decision(self, book_id, decision, entry=None, index_value=None):
+    detail = ''
+    if entry is not None:
+      detail = (
+        f' position={entry.get("position", "")} title={entry.get("title", "")} '
+        f'author={entry.get("author", "")}')
+    self.debug_log(
+      f'cached active add decision book_id={book_id} decision={decision} '
+      f'index_value={index_value}{detail}',
+      section='storage')
+
+  def debug_storage_save_matches_finished(self, list_id, saved, total):
+    self.debug_log(
+      f'save active matches finished list_id={list_id} saved={saved} total_matches={total}',
+      section='storage')
+
   def debug_recipe_start(self, recipe):
     self.debug_log(f'import recipe={recipe.NAME} url={recipe.URL}', section='recipe')
 
@@ -182,6 +335,13 @@ class DebugMixin:
       f'import matched books={len(matched)} missing entries={len(missing_entries)} '
       f'of entries={len(entries)}', section='import')
 
+  def debug_import_match_start(self, list_id, match_series, book_count, entry_count, title_keys, series_keys):
+    self.debug_log(
+      f'import match start list_id={list_id} match_series={match_series} '
+      f'library_books={book_count} entries={entry_count} title_index_keys={title_keys} '
+      f'series_index_keys={series_keys}',
+      section='import')
+
   def debug_import_missing_entries(self, missing_entries):
     for index, entry in enumerate(missing_entries[:50], start=1):
       self.debug_log(f'import missing entry {index}: {entry}', section='import')
@@ -199,10 +359,44 @@ class DebugMixin:
       f'aliases={entry.get("aliases", [])} author={entry.get("author", "")} candidates={candidates}',
       section='import')
 
+  def debug_import_match_entry_detail(
+      self, entry_index, total_entries, entry, entry_keys, title_candidates,
+      series_candidates, candidates, author_candidates, already_matched):
+    self.debug_log(
+      f'import match detail {entry_index}/{total_entries} position={entry.get("position", "")} '
+      f'title={entry.get("title", "")} author={entry.get("author", "")} keys={entry_keys} '
+      f'title_candidates={title_candidates} series_candidates={series_candidates} '
+      f'all_candidates={candidates} author_candidates={author_candidates} '
+      f'already_matched={already_matched}',
+      section='import')
+
+  def debug_import_saved_override_lookup(self, entry, list_id, saved_book_ids):
+    self.debug_log(
+      f'import saved override lookup list_id={list_id} position={entry.get("position", "")} '
+      f'title={entry.get("title", "")} author={entry.get("author", "")} '
+      f'saved_book_ids={saved_book_ids}',
+      section='import')
+
+  def debug_import_candidate_rejected(self, reason, book_id, entry, titles, authors):
+    self.debug_log(
+      f'import candidate rejected reason={reason} book_id={book_id} '
+      f'entry_position={entry.get("position", "")} entry_title={entry.get("title", "")} '
+      f'entry_author={entry.get("author", "")} book_title={titles.get(book_id, "")} '
+      f'book_authors={authors.get(book_id, "")}',
+      section='import')
+
   def debug_import_matched_book(self, label, book_id, entry, titles, series):
     self.debug_log(
       f'import {label} book_id={book_id} position={entry.get("position", "")} '
-      f'title={titles.get(book_id, "")} series={series.get(book_id, "")}',
+      f'entry_title={entry.get("title", "")} entry_author={entry.get("author", "")} '
+      f'entry_source_url={entry.get("source_url", "")} '
+      f'book_title={titles.get(book_id, "")} series={series.get(book_id, "")}',
+      section='import')
+
+  def debug_import_matched_book_write_skipped(self, book_id, list_name, position):
+    self.debug_log(
+      f'import matched book write skipped unchanged book_id={book_id} '
+      f'list={list_name} position={position}',
       section='import')
 
   def debug_exception(self):

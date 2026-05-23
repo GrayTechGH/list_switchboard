@@ -31,11 +31,15 @@ class Dummy:
 qt = types.ModuleType('qt')
 qt_core = types.ModuleType('qt.core')
 for name in (
-    'QApplication', 'QCheckBox', 'QDialog', 'QDialogButtonBox', 'QHBoxLayout',
-    'QHeaderView', 'QInputDialog', 'QLabel', 'QListWidget', 'QMessageBox',
-    'QProgressDialog', 'QPushButton', 'QTableWidget', 'QTableWidgetItem',
-    'QSizePolicy', 'QVBoxLayout'):
+    'QApplication', 'QButtonGroup', 'QCheckBox', 'QComboBox', 'QDialog',
+    'QDialogButtonBox', 'QGridLayout', 'QGroupBox', 'QHBoxLayout',
+    'QHeaderView', 'QInputDialog', 'QLabel', 'QLineEdit', 'QListWidget',
+    'QMessageBox', 'QProgressDialog', 'QPushButton', 'QRadioButton',
+    'QSizePolicy', 'QSpinBox', 'QTableWidget', 'QTableWidgetItem',
+    'QVBoxLayout'):
   setattr(qt_core, name, Dummy)
+qt_core.Qt = types.SimpleNamespace(
+  AlignmentFlag=types.SimpleNamespace(AlignLeft=0))
 sys.modules.setdefault('qt', qt)
 sys.modules.setdefault('qt.core', qt_core)
 
@@ -76,6 +80,8 @@ from url_fetcher.r_fantasy_top_standalone_novels_2024 import (
 )
 from url_fetcher.sword_and_laser import UrlFetcherSwordAndLaser
 
+SCRAPS_ISFDB_ROOT = ROOT / '_dev_tools' / 'Scraps Cache' / 'isfdb'
+
 
 def parser_source(fetcher, **options):
   return types.SimpleNamespace(
@@ -91,6 +97,24 @@ def build_lookup(values):
     for key in main.match_keys(value):
       lookup.setdefault(key, []).append(book_id)
   return lookup
+
+
+def load_text(path):
+  return Path(path).read_text(encoding='utf-8', errors='replace')
+
+
+def isfdb_folder_fetch(folder_name):
+  folder = SCRAPS_ISFDB_ROOT / folder_name
+  source_urls = json.loads((folder / 'source_urls.json').read_text(encoding='utf-8'))
+  by_url = {
+    url: folder / filename
+    for filename, url in source_urls.items()
+  }
+
+  def fetch(url):
+    return load_text(by_url[url])
+
+  return folder, source_urls, fetch
 
 
 class ImportMatchingTest(unittest.TestCase):
@@ -418,7 +442,9 @@ class ImportMatchingTest(unittest.TestCase):
       'r/Fantasy Top Standalone Novels 2024',
       'r/Fantasy Top Self-Published Novels 2024',
       'Sword and Laser',
-    ], names)
+    ], names[:4])
+    self.assertEqual(179, len(names))
+    self.assertIn('Theakston Old Peculier Crime Novel of the Year', names)
 
   def test_core_can_discover_recipes_before_gui_current_db_exists(self):
     class StartupGui:
@@ -434,12 +460,16 @@ class ImportMatchingTest(unittest.TestCase):
 
     fetchers = core.builtin_url_fetchers()
 
+    source_ids = [fetcher.source_id for fetcher in fetchers]
+
     self.assertEqual([
       'r_fantasy_top_novels_2025',
       'r_fantasy_top_standalone_novels_2024',
       'r_fantasy_top_self_published_novels_2024',
       'sword_and_laser_book_list',
-    ], [fetcher.source_id for fetcher in fetchers])
+    ], source_ids[:4])
+    self.assertEqual(179, len(source_ids))
+    self.assertIn('theakston_old_peculier_crime_novel_of_the_year', source_ids)
 
   def test_goodreads_series_source_matches_relaxed_local_series_name(self):
     core = object.__new__(main.ListSwitchboardCore)
@@ -937,6 +967,393 @@ class ImportMatchingTest(unittest.TestCase):
 
     self.assertEqual({1: '1'}, matched)
     self.assertEqual([], missing)
+
+
+class AwardParserSmokeTest(unittest.TestCase):
+
+  def test_wikipedia_award_table_parser_base_smoke(self):
+    from parser.wikipedia_base import WikipediaAwardTableParserBase
+
+    parser = WikipediaAwardTableParserBase()
+    parser.AWARD_NAME = 'Smoke Award'
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Title</th><th>Author</th><th>Result</th><th>Category</th></tr>
+        <tr>
+          <td>2024</td>
+          <td><a href="/wiki/Winning_Book">Winning Book</a></td>
+          <td>Winner Writer</td>
+          <td>Winner</td>
+          <td>Novel</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><a href="/wiki/Shortlisted_Book">Shortlisted Book</a></td>
+          <td>Short Writer</td>
+          <td>Shortlisted</td>
+          <td>Novel</td>
+        </tr>
+      </table>
+    '''
+
+    parsed = parser.parse(
+      html, 'https://example.com/wiki_award', 'Smoke Award - Novel', 'Novel')
+
+    self.assertEqual(['Winning Book', 'Shortlisted Book'], [
+      entry['title'] for entry in parsed['entries']
+    ])
+    self.assertEqual(['2024', '2024.01'], [
+      entry['position'] for entry in parsed['entries']
+    ])
+    self.assertEqual(['winner', 'shortlisted'], [
+      entry['result'] for entry in parsed['entries']
+    ])
+
+  def test_isfdb_award_parser_base_smoke(self):
+    from parser.isfdb_base import ISFDBAwardParserBase
+
+    parser = ISFDBAwardParserBase()
+    parser.AWARD_NAME = 'Smoke ISFDB Award'
+    html = '''
+      <table>
+        <tr><td>2024</td></tr>
+        <tr>
+          <td>Winner</td>
+          <td><a href="/cgi-bin/title.cgi?1">Winning Book</a></td>
+          <td><a href="/cgi-bin/ea.cgi?1">Winner Writer</a></td>
+        </tr>
+        <tr>
+          <td>Nominee</td>
+          <td><a href="/cgi-bin/title.cgi?2">Nominee Book</a></td>
+          <td><a href="/cgi-bin/ea.cgi?2">Nominee Writer</a></td>
+        </tr>
+      </table>
+    '''
+
+    parsed = parser.parse(
+      html,
+      'https://www.isfdb.org/cgi-bin/award_category.cgi?50+1',
+      'Smoke ISFDB - Novel',
+      'Novel')
+
+    self.assertEqual(['Winning Book', 'Nominee Book'], [
+      entry['title'] for entry in parsed['entries']
+    ])
+    self.assertEqual(['winner', 'nominee'], [
+      entry['result'] for entry in parsed['entries']
+    ])
+    self.assertTrue(all(
+      entry['source_url'].startswith('https://www.isfdb.org/cgi-bin/title.cgi?')
+      for entry in parsed['entries']))
+
+  def test_isfdb_fallback_smoke_uses_saved_scraps(self):
+    from url_fetcher.prometheus import UrlFetcherPrometheusNovel
+
+    folder, _source_urls, fetch = isfdb_folder_fetch('prometheus')
+    fetcher = UrlFetcherPrometheusNovel()
+    parsed = fetcher.parse_isfdb_award_type(
+      load_text(folder / 'overview.html'),
+      fetcher.isfdb_url(),
+      fetch_url=fetch)
+
+    self.assertEqual(fetcher.NAME, parsed['name'])
+    self.assertTrue(parsed['entries'])
+    self.assertTrue(any(
+      entry.get('category') == fetcher.CATEGORY for entry in parsed['entries']))
+    self.assertTrue(any(
+      'isfdb.org/cgi-bin/title.cgi?' in entry.get('source_url', '')
+      for entry in parsed['entries']))
+
+  def test_aurealis_isfdb_category_smoke_uses_saved_scraps(self):
+    from url_fetcher.aurealis import UrlFetcherAurealisSFNovel
+
+    fetcher = UrlFetcherAurealisSFNovel()
+    folder = SCRAPS_ISFDB_ROOT / 'aurealis_categories'
+    path = folder / 'aurealis_sf_novel.html'
+    url = 'https://www.isfdb.org/cgi-bin/award_category.cgi?50+1'
+
+    parsed = fetcher.parse_isfdb_pages(
+      load_text(path),
+      url,
+      (url,),
+      fetch_url=lambda extra_url: self.fail(f'unexpected extra fetch: {extra_url}'))
+
+    self.assertEqual(fetcher.NAME, parsed['name'])
+    self.assertTrue(parsed['entries'])
+    self.assertTrue(all(
+      entry.get('category') == fetcher.CATEGORY for entry in parsed['entries']))
+
+  def test_crime_writers_of_canada_wikipedia_parser_smoke(self):
+    from parser.crime_writers_canada import CrimeWritersOfCanadaWikipediaParser
+
+    html = '''
+      <h2>Best Novel</h2>
+      <table>
+        <tr><th>Year</th><th>Title</th><th>Author</th></tr>
+        <tr>
+          <td>2024</td>
+          <td><a href="/wiki/Everyone_on_This_Train">Everyone on This Train Is a Suspect</a></td>
+          <td>Benjamin Stevenson</td>
+        </tr>
+      </table>
+    '''
+
+    parsed = CrimeWritersOfCanadaWikipediaParser().parse(
+      html,
+      'https://en.wikipedia.org/wiki/Crime_Writers_of_Canada_Award_for_Best_Novel',
+      'Crime Writers of Canada Award - Novel',
+      'Novel',
+      ('Best Novel',))
+
+    self.assertEqual(['Everyone on This Train Is a Suspect'], [
+      entry['title'] for entry in parsed['entries']
+    ])
+    self.assertEqual(['winner'], [entry['result'] for entry in parsed['entries']])
+
+  def test_davitt_wikipedia_parser_smoke(self):
+    from parser.davitt import DavittWikipediaParser
+
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Title</th><th>Author</th><th>Category</th></tr>
+        <tr>
+          <td>2024</td>
+          <td><a href="/wiki/Exiles">Exiles</a></td>
+          <td>Jane Harper</td>
+          <td>Adult Fiction</td>
+        </tr>
+        <tr>
+          <td><a href="/wiki/White_Crow">White Crow</a></td>
+          <td>Michael Robotham</td>
+          <td>Adult Fiction</td>
+        </tr>
+      </table>
+    '''
+
+    parsed = DavittWikipediaParser().parse(
+      html,
+      'https://en.wikipedia.org/wiki/Davitt_Award',
+      'Davitt Award - Adult Novel',
+      'Adult Fiction',
+      ('Adult Novel',),
+      allowed_results=('winner',))
+
+    self.assertEqual(['Exiles', 'White Crow'], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual(['2024', '2024'], [entry['award_year'] for entry in parsed['entries']])
+    self.assertTrue(all(entry['result'] == 'winner' for entry in parsed['entries']))
+
+  def test_dilys_wikipedia_parser_smoke(self):
+    from parser.dilys import DilysWikipediaParser
+
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Title</th><th>Author</th><th>Result</th></tr>
+        <tr>
+          <td>2024</td>
+          <td><a href="/wiki/The_Tainted_Cup">The Tainted Cup</a></td>
+          <td>Robert Jackson Bennett</td>
+          <td>Winner</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><a href="/wiki/All_the_Sinners_Bleed">All the Sinners Bleed</a></td>
+          <td>S. A. Cosby</td>
+          <td>Shortlisted</td>
+        </tr>
+      </table>
+    '''
+
+    parsed = DilysWikipediaParser().parse(
+      html,
+      'https://en.wikipedia.org/wiki/Dilys_Award',
+      'Dilys Award',
+      'Dilys Award',
+      (),
+      allowed_results=('winner', 'shortlisted'))
+
+    self.assertEqual(['winner', 'shortlisted'], [
+      entry['result'] for entry in parsed['entries']
+    ])
+
+  def test_gumshoe_wikipedia_parser_smoke(self):
+    from parser.gumshoe import GumshoeWikipediaParser
+
+    html = '''
+      <h2>Best Mystery</h2>
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th></tr>
+        <tr>
+          <td>2024</td>
+          <td>S. J. Rozan</td>
+          <td><a href="/wiki/The_Murder_of_Mr._Ma">The Murder of Mr. Ma</a></td>
+        </tr>
+      </table>
+    '''
+
+    parsed = GumshoeWikipediaParser().parse(
+      html,
+      'https://en.wikipedia.org/wiki/Gumshoe_Awards',
+      'Gumshoe Award - Mystery',
+      'Mystery',
+      ('Best Mystery', 'Best Novel'))
+
+    self.assertEqual(['The Murder of Mr. Ma'], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual(['winner'], [entry['result'] for entry in parsed['entries']])
+
+  def test_ned_kelly_wikipedia_parser_smoke(self):
+    from parser.ned_kelly import NedKellyWikipediaParser
+
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Best Crime Novel</th></tr>
+        <tr><td>2023</td><td>Stone Town by Margaret Hickey</td></tr>
+      </table>
+      <h2>Best Crime Novel</h2>
+      <table>
+        <tr><th>Year</th><th>Title</th><th>Author</th><th>Result</th></tr>
+        <tr>
+          <td>2024</td>
+          <td><a href="/wiki/Black_River">Black River</a></td>
+          <td>Matthew Spencer</td>
+          <td>Winner</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><a href="/wiki/Other_Finalist">Other Finalist</a></td>
+          <td>Another Author</td>
+          <td>Shortlisted</td>
+        </tr>
+      </table>
+    '''
+
+    parsed = NedKellyWikipediaParser().parse(
+      html,
+      'https://en.wikipedia.org/wiki/Ned_Kelly_Awards',
+      'Ned Kelly Award - Crime Fiction',
+      'Best Crime Novel',
+      ('Crime Fiction', 'Best Novel'))
+
+    self.assertEqual(
+      {'2023', '2024'},
+      {entry['award_year'] for entry in parsed['entries']})
+    self.assertTrue(any(entry['title'] == 'Stone Town' for entry in parsed['entries']))
+    self.assertTrue(any(entry['title'] == 'Black River' for entry in parsed['entries']))
+
+  def test_ngaio_marsh_wikipedia_parser_smoke(self):
+    from parser.ngaio_marsh import NgaioMarshWikipediaParser
+
+    html = '''
+      <h3>2024</h3>
+      <h4>Crime Novel</h4>
+      <ul>
+        <li><a href="/wiki/Red_Herring">Red Herring</a> by Jane Smith
+          <ul>
+            <li><a href="/wiki/Blue_Herring">Blue Herring</a> by John Smith</li>
+          </ul>
+        </li>
+      </ul>
+    '''
+
+    parsed = NgaioMarshWikipediaParser().parse(
+      html,
+      'https://en.wikipedia.org/wiki/Ngaio_Marsh_Awards',
+      'Ngaio Marsh Award - Crime Novel',
+      'Crime Novel',
+      ('Novel',))
+
+    self.assertEqual(['Red Herring', 'Blue Herring'], [
+      entry['title'] for entry in parsed['entries']
+    ])
+    self.assertEqual(['winner', 'nominee'], [
+      entry['result'] for entry in parsed['entries']
+    ])
+
+  def test_theakston_wikipedia_parser_smoke(self):
+    from parser.theakston import TheakstonWikipediaParser
+
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Title</th><th>Author</th><th>Result</th></tr>
+        <tr>
+          <td>2024</td>
+          <td><a href="/wiki/The_Last_Word">The Last Word</a></td>
+          <td>Elly Griffiths</td>
+          <td>Winner</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><a href="/wiki/Everybody_Knows">Everybody Knows</a></td>
+          <td>Jordan Harper</td>
+          <td>Shortlisted</td>
+        </tr>
+      </table>
+    '''
+
+    parsed = TheakstonWikipediaParser().parse(
+      html,
+      'https://en.wikipedia.org/wiki/Theakston_Old_Peculier_Crime_Novel_of_the_Year_Award',
+      'Theakston Old Peculier Crime Novel of the Year',
+      'Theakston Old Peculier Crime Novel of the Year',
+      ('Crime Novel of the Year',),
+      allowed_results=('winner', 'shortlisted'))
+
+    self.assertEqual(['The Last Word', 'Everybody Knows'], [
+      entry['title'] for entry in parsed['entries']
+    ])
+
+  def test_crime_fetcher_falls_back_to_wikipedia_smoke(self):
+    from url_fetcher.crime_writers_canada import UrlFetcherCrimeWritersOfCanadaNovel
+
+    fetcher = UrlFetcherCrimeWritersOfCanadaNovel()
+    wiki_html = '''
+      <h2>Best Novel</h2>
+      <table>
+        <tr><th>Year</th><th>Title</th><th>Author</th></tr>
+        <tr>
+          <td>2024</td>
+          <td><a href="/wiki/Everyone_on_This_Train">Everyone on This Train Is a Suspect</a></td>
+          <td>Benjamin Stevenson</td>
+        </tr>
+      </table>
+    '''
+
+    def fetch_url(url):
+      if url == fetcher.URL:
+        raise RuntimeError('librarything unavailable')
+      if url == fetcher.WIKIPEDIA_URL:
+        return wiki_html
+      self.fail(url)
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+
+    self.assertEqual(fetcher.NAME, parsed['name'])
+    self.assertEqual(['Everyone on This Train Is a Suspect'], [
+      entry['title'] for entry in parsed['entries']
+    ])
+
+  def test_ngaio_fetcher_falls_back_to_wikipedia_smoke(self):
+    from url_fetcher.ngaio_marsh import UrlFetcherNgaioMarshCrimeNovel
+
+    fetcher = UrlFetcherNgaioMarshCrimeNovel()
+    wiki_html = '''
+      <h3>2024</h3>
+      <h4>Crime Novel</h4>
+      <ul>
+        <li><a href="/wiki/Red_Herring">Red Herring</a> by Jane Smith</li>
+      </ul>
+    '''
+
+    def fetch_url(url):
+      if url == fetcher.URL:
+        raise RuntimeError('librarything unavailable')
+      if url == fetcher.WIKIPEDIA_URL:
+        return wiki_html
+      self.fail(url)
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+
+    self.assertEqual(fetcher.NAME, parsed['name'])
+    self.assertEqual(['Red Herring'], [entry['title'] for entry in parsed['entries']])
 
 if __name__ == '__main__':
   unittest.main()

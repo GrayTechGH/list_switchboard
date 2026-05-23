@@ -14,6 +14,7 @@ Maintenance notes:
 """
 
 import re
+import unicodedata
 from collections import OrderedDict
 
 from calibre.ebooks.metadata import title_sort
@@ -23,6 +24,21 @@ SERIES_SUFFIX_WORDS = frozenset([
   'cycle', 'saga', 'series', 'trilogy', 'universe', 'world'
 ])
 RELAXED_MATCH_MIN_NON_INITIAL_CHARS = 6
+FIND_MODE_IDENTICAL = 'identical'
+FIND_MODE_SIMILAR = 'similar'
+FIND_MODE_SOUNDEX = 'soundex'
+FIND_MODE_FUZZY = 'fuzzy'
+FIND_MODE_IGNORE = 'ignore'
+FIND_MATCH_MODES = (
+  FIND_MODE_IDENTICAL, FIND_MODE_SIMILAR, FIND_MODE_SOUNDEX, FIND_MODE_FUZZY,
+  FIND_MODE_IGNORE,
+)
+FIND_MATCH_TITLE_SOUNDEX_LENGTH_DEFAULT = 6
+FIND_MATCH_AUTHOR_SOUNDEX_LENGTH_DEFAULT = 8
+AUTHOR_SUFFIX_WORDS = frozenset(['jr', 'sr', 'ii', 'iii', 'iv', 'v'])
+ALT_TITLE_JOIN_RE = re.compile(r'\s+(and|or|aka|also known as)\s+.*$', re.I)
+PARENTHETICAL_RE = re.compile(r'[\(\[\{].*?[\)\]\}]')
+SUBTITLE_RE = re.compile(r'\s*[:;]\s+.*$')
 
 
 def normalize_key(name):
@@ -30,6 +46,7 @@ def normalize_key(name):
 
 
 POSITION_SUFFIX = re.compile(r'^(.*?)\s*\[([0-9]+(?:\.[0-9]+)?)\]\s*$')
+GOODREADS_BOOK_URL = re.compile(r'goodreads\.com/book/show/([0-9]+)', re.I)
 
 
 def split_position_suffix(name):
@@ -56,6 +73,121 @@ def normalize_match_text(value):
   return re.sub(r'[^a-z0-9]+', ' ', value).strip()
 
 
+def strip_accents(value):
+  value = str(value or '')
+  return ''.join(
+    char for char in unicodedata.normalize('NFKD', value)
+    if not unicodedata.combining(char)
+  )
+
+
+def find_similar_title_key(value):
+  return normalize_match_text(title_sort_without_article(strip_accents(value)))
+
+
+def find_identical_title_key(value):
+  return normalize_match_text(strip_accents(value))
+
+
+def find_fuzzy_title_key(value):
+  value = strip_accents(value)
+  value = PARENTHETICAL_RE.sub(' ', value)
+  value = SUBTITLE_RE.sub('', value)
+  value = ALT_TITLE_JOIN_RE.sub('', value)
+  return find_similar_title_key(value)
+
+
+def author_tokens(value):
+  text = normalize_match_text(strip_accents(value))
+  tokens = [token for token in text.split() if token not in AUTHOR_SUFFIX_WORDS]
+  return [token for token in tokens if token]
+
+
+def find_similar_author_key(value):
+  tokens = author_tokens(value)
+  if len(tokens) > 1 and ',' in str(value or ''):
+    tokens = tokens[1:] + tokens[:1]
+  tokens = [token for token in tokens if len(token) > 1]
+  return ' '.join(tokens)
+
+
+def find_identical_author_key(value):
+  return normalize_match_text(strip_accents(value))
+
+
+def find_fuzzy_author_key(value):
+  tokens = author_tokens(value)
+  if not tokens:
+    return ''
+  surname = tokens[0] if len(tokens) == 1 else tokens[-1]
+  first_initial = tokens[0][:1] if len(tokens) > 1 else ''
+  return ' '.join(part for part in (first_initial, surname) if part)
+
+
+def soundex_token(value):
+  value = re.sub(r'[^a-z]+', '', strip_accents(value).casefold())
+  if not value:
+    return ''
+  groups = {
+    'b': '1', 'f': '1', 'p': '1', 'v': '1',
+    'c': '2', 'g': '2', 'j': '2', 'k': '2', 'q': '2', 's': '2', 'x': '2', 'z': '2',
+    'd': '3', 't': '3',
+    'l': '4',
+    'm': '5', 'n': '5',
+    'r': '6',
+  }
+  first = value[0].upper()
+  previous = groups.get(value[0], '')
+  digits = []
+  for char in value[1:]:
+    digit = groups.get(char, '')
+    if digit and digit != previous:
+      digits.append(digit)
+    previous = digit
+  return (first + ''.join(digits) + '000')[:4]
+
+
+def soundex_key(value, length):
+  tokens = normalize_match_text(value).split()
+  codes = [soundex_token(token) for token in tokens]
+  return ''.join(code for code in codes if code)[:int(length or 0)]
+
+
+def title_find_key(value, mode, soundex_length=FIND_MATCH_TITLE_SOUNDEX_LENGTH_DEFAULT):
+  if mode == FIND_MODE_IGNORE:
+    return ''
+  if mode == FIND_MODE_IDENTICAL:
+    return find_identical_title_key(value)
+  if mode == FIND_MODE_FUZZY:
+    return find_fuzzy_title_key(value)
+  if mode == FIND_MODE_SOUNDEX:
+    return soundex_key(find_similar_title_key(value), soundex_length)
+  return find_similar_title_key(value)
+
+
+def author_find_key(value, mode, soundex_length=FIND_MATCH_AUTHOR_SOUNDEX_LENGTH_DEFAULT):
+  if mode == FIND_MODE_IGNORE:
+    return ''
+  if mode == FIND_MODE_IDENTICAL:
+    return find_identical_author_key(value)
+  if mode == FIND_MODE_FUZZY:
+    return find_fuzzy_author_key(value)
+  if mode == FIND_MODE_SOUNDEX:
+    return soundex_key(find_similar_author_key(value), soundex_length)
+  return find_similar_author_key(value)
+
+
+def validate_find_match_modes(title_mode, author_mode):
+  if title_mode not in FIND_MATCH_MODES:
+    raise ValueError(f'Unsupported title match mode: {title_mode}')
+  if author_mode not in FIND_MATCH_MODES:
+    raise ValueError(f'Unsupported author match mode: {author_mode}')
+  if title_mode == FIND_MODE_IGNORE and author_mode == FIND_MODE_IGNORE:
+    raise ValueError('Title and author cannot both be ignored.')
+  if title_mode == FIND_MODE_IDENTICAL and author_mode == FIND_MODE_IDENTICAL:
+    raise ValueError('Title and author cannot both be identical.')
+
+
 def title_sort_without_article(value):
   value = clean_name(value)
   if not value:
@@ -63,9 +195,11 @@ def title_sort_without_article(value):
   try:
     sorted_value = title_sort(value)
   except Exception:
-    return ''
+    sorted_value = value
   if ',' in sorted_value:
     sorted_value = sorted_value.rsplit(',', 1)[0]
+  if normalize_match_text(sorted_value) == normalize_match_text(value):
+    sorted_value = re.sub(r'^\s*(a|an|the)\s+', '', sorted_value, flags=re.IGNORECASE)
   return sorted_value.strip()
 
 
@@ -87,6 +221,28 @@ def match_keys(value):
     if relaxed_key and relaxed_key not in keys and enough_non_initial_characters(key):
       keys.append(relaxed_key)
   return keys
+
+
+def entry_key_for_saved_match(entry):
+  return '|'.join([
+    normalize_match_text(entry.get('title', '')),
+    normalize_match_text(entry.get('author', '')),
+  ])
+
+
+def import_entry_priority(entry):
+  if entry.get('source_url') and not (entry.get('votes') or entry.get('percent')):
+    return 2
+  return 1
+
+
+def imported_entry_preferred(new_entry, old_entry):
+  return import_entry_priority(new_entry) > import_entry_priority(old_entry or {})
+
+
+def goodreads_book_id_from_url(url):
+  match = GOODREADS_BOOK_URL.search(url or '')
+  return match.group(1) if match is not None else ''
 
 
 def relaxed_series_key(value):
@@ -130,6 +286,14 @@ class MatchingMixin:
     import reports and write order should follow recipe/local lookup order.
   """
 
+  def __getattr__(self, name):
+    if name.startswith('debug_import_'):
+      return self._debug_import_noop
+    raise AttributeError(name)
+
+  def _debug_import_noop(self, *_args, **_kwargs):
+    pass
+
   def author_matches(self, book_authors, imported_author):
     imported = normalize_match_text(imported_author)
     if not imported:
@@ -141,13 +305,7 @@ class MatchingMixin:
     book_parts = {part for part in book_text.split() if len(part) > 1}
     return bool(imported_parts & book_parts)
 
-  def match_imported_entries(self, entries, match_series=True):
-    db = self.db.new_api
-    ids = self.all_book_ids()
-    titles = db.all_field_for('title', ids, default_value='')
-    series = self.all_local_series_values(ids)
-    authors = db.all_field_for('authors', ids, default_value='')
-
+  def import_match_indexes(self, ids, titles, series):
     by_title = {}
     by_series = {}
     for book_id in ids:
@@ -156,18 +314,282 @@ class MatchingMixin:
       for series_value in series.get(book_id, []):
         for series_key in series_match_keys(series_value):
           by_series.setdefault(series_key, []).append(book_id)
+    return by_title, by_series
+
+  def direct_match_candidates_for_entry(
+      self, entry, by_title=None, by_series=None, authors=None, match_series=True):
+    if by_title is None or by_series is None or authors is None:
+      db = self.db.new_api
+      ids = self.all_book_ids()
+      titles = db.all_field_for('title', ids, default_value='')
+      series = self.all_local_series_values(ids)
+      authors = db.all_field_for('authors', ids, default_value='')
+      by_title, by_series = self.import_match_indexes(ids, titles, series)
+
+    title_candidates = []
+    series_candidates = []
+    for entry_key in self.import_entry_keys(entry):
+      title_candidates.extend(by_title.get(entry_key, []))
+      series_candidates.extend(by_series.get(entry_key, []))
+    candidates = title_candidates + (series_candidates if match_series else [])
+    candidates = list(OrderedDict((book_id, None) for book_id in candidates).keys())
+    return [
+      book_id for book_id in candidates
+      if self.author_matches(authors.get(book_id, ''), entry.get('author', ''))
+    ]
+
+  def saved_override_candidates_for_entry(self, entry, list_id, ids):
+    if not list_id:
+      return []
+    overrides = self.saved_match_overrides(list_id)
+    override = overrides.get(entry_key_for_saved_match(entry))
+    if not override:
+      return []
+    raw_book_ids = override.get('matched_book_ids')
+    if raw_book_ids is None:
+      raw_book_ids = [override.get('matched_book_id')]
+    if not isinstance(raw_book_ids, (list, tuple)):
+      raw_book_ids = [raw_book_ids]
+    available_ids = set(ids)
+    book_ids = []
+    for raw_book_id in raw_book_ids:
+      try:
+        book_id = int(raw_book_id)
+      except Exception:
+        continue
+      if book_id in available_ids and book_id not in book_ids:
+        book_ids.append(book_id)
+    return book_ids
+
+  def matched_book_details(self, book_ids, titles, authors):
+    details = []
+    for book_id in book_ids or []:
+      book_authors = authors.get(book_id, '')
+      if isinstance(book_authors, (list, tuple)):
+        book_authors = ', '.join(str(author) for author in book_authors)
+      details.append({
+        'matched_book_id': book_id,
+        'matched_title': titles.get(book_id, '') or '',
+        'matched_authors': book_authors or '',
+      })
+    return details
+
+  def find_import_match_candidates(
+      self, entry, title_mode=FIND_MODE_SIMILAR, author_mode=FIND_MODE_SIMILAR,
+      title_soundex_length=FIND_MATCH_TITLE_SOUNDEX_LENGTH_DEFAULT,
+      author_soundex_length=FIND_MATCH_AUTHOR_SOUNDEX_LENGTH_DEFAULT,
+      excluded_book_ids=None):
+    validate_find_match_modes(title_mode, author_mode)
+    index = self.find_match_library_index(
+      title_mode=title_mode,
+      author_mode=author_mode,
+      title_soundex_length=title_soundex_length,
+      author_soundex_length=author_soundex_length)
+    return self.find_import_match_candidates_from_index(
+      entry, index, excluded_book_ids=excluded_book_ids)
+
+  def find_match_library_index(
+      self, title_mode=FIND_MODE_SIMILAR, author_mode=FIND_MODE_SIMILAR,
+      title_soundex_length=FIND_MATCH_TITLE_SOUNDEX_LENGTH_DEFAULT,
+      author_soundex_length=FIND_MATCH_AUTHOR_SOUNDEX_LENGTH_DEFAULT):
+    validate_find_match_modes(title_mode, author_mode)
+    db = self.db.new_api
+    ids = self.all_book_ids()
+    titles = db.all_field_for('title', ids, default_value='')
+    authors = db.all_field_for('authors', ids, default_value='')
+    by_title = {}
+    by_author = {}
+    by_title_author = {}
+    for book_id in ids:
+      title_key = title_find_key(titles.get(book_id, ''), title_mode, title_soundex_length)
+      author_key = author_find_key(authors.get(book_id, ''), author_mode, author_soundex_length)
+      if title_mode != FIND_MODE_IGNORE and title_key:
+        by_title.setdefault(title_key, []).append(book_id)
+      if author_mode != FIND_MODE_IGNORE and author_key:
+        by_author.setdefault(author_key, []).append(book_id)
+      if (
+          title_mode != FIND_MODE_IGNORE and author_mode != FIND_MODE_IGNORE
+          and title_key and author_key):
+        by_title_author.setdefault((title_key, author_key), []).append(book_id)
+    return {
+      'title_mode': title_mode,
+      'author_mode': author_mode,
+      'title_soundex_length': title_soundex_length,
+      'author_soundex_length': author_soundex_length,
+      'ids': ids,
+      'titles': titles,
+      'authors': authors,
+      'by_title': by_title,
+      'by_author': by_author,
+      'by_title_author': by_title_author,
+    }
+
+  def find_import_match_candidates_from_index(self, entry, index, excluded_book_ids=None):
+    excluded_book_ids = set(excluded_book_ids or [])
+    title_mode = index.get('title_mode', FIND_MODE_SIMILAR)
+    author_mode = index.get('author_mode', FIND_MODE_SIMILAR)
+    title_soundex_length = index.get(
+      'title_soundex_length', FIND_MATCH_TITLE_SOUNDEX_LENGTH_DEFAULT)
+    author_soundex_length = index.get(
+      'author_soundex_length', FIND_MATCH_AUTHOR_SOUNDEX_LENGTH_DEFAULT)
+    validate_find_match_modes(title_mode, author_mode)
+    titles = index.get('titles') or {}
+    authors = index.get('authors') or {}
+    entry_title_key = title_find_key(entry.get('title', ''), title_mode, title_soundex_length)
+    entry_author_key = author_find_key(entry.get('author', ''), author_mode, author_soundex_length)
+    if title_mode != FIND_MODE_IGNORE and not entry_title_key:
+      return []
+    if author_mode != FIND_MODE_IGNORE and not entry_author_key:
+      return []
+
+    if title_mode == FIND_MODE_IGNORE:
+      ids = index.get('by_author', {}).get(entry_author_key, [])
+    elif author_mode == FIND_MODE_IGNORE:
+      ids = index.get('by_title', {}).get(entry_title_key, [])
+    else:
+      ids = index.get('by_title_author', {}).get((entry_title_key, entry_author_key), [])
+
+    candidates = []
+    for book_id in ids:
+      if book_id in excluded_book_ids:
+        continue
+      title_matched = title_mode != FIND_MODE_IGNORE
+      author_matched = author_mode != FIND_MODE_IGNORE
+      book_authors = authors.get(book_id, '')
+      if isinstance(book_authors, (list, tuple)):
+        book_authors = ', '.join(str(author) for author in book_authors)
+      candidates.append({
+        'book_id': book_id,
+        'matched_book_id': book_id,
+        'title': titles.get(book_id, '') or '',
+        'matched_title': titles.get(book_id, '') or '',
+        'authors': book_authors or '',
+        'matched_authors': book_authors or '',
+        'source': 'manual find',
+        'reason': self.find_match_reason(title_mode, author_mode, title_matched, author_matched),
+        'title_matched': bool(title_matched and title_mode != FIND_MODE_IGNORE),
+        'author_matched': bool(author_matched and author_mode != FIND_MODE_IGNORE),
+      })
+    return self.sorted_find_candidates(candidates)
+
+  def find_match_reason(self, title_mode, author_mode, title_matched, author_matched):
+    parts = []
+    if title_matched and title_mode != FIND_MODE_IGNORE:
+      parts.append(f'title {title_mode}')
+    if author_matched and author_mode != FIND_MODE_IGNORE:
+      parts.append(f'author {author_mode}')
+    return ', '.join(parts)
+
+  def sorted_find_candidates(self, candidates):
+    by_id = OrderedDict()
+    for candidate in candidates or []:
+      book_id = candidate.get('book_id', candidate.get('matched_book_id'))
+      if book_id is None or book_id in by_id:
+        continue
+      candidate = dict(candidate)
+      candidate['book_id'] = book_id
+      candidate.setdefault('matched_book_id', book_id)
+      by_id[book_id] = candidate
+    return sorted(
+      by_id.values(),
+      key=lambda item: (
+        0 if item.get('title_matched') and item.get('author_matched') else 1,
+        normalize_match_text(item.get('title') or item.get('matched_title') or ''),
+        item.get('book_id'),
+      ))
+
+  def import_review_row(
+      self, entry, entry_key='', matched=False, book_ids=None, matched_books=None,
+      match_source='never matched', directive=None):
+    book_ids = list(book_ids or [])
+    matched_books = list(matched_books or [])
+    previous_book_ids = []
+    previous_books = []
+    if directive:
+      previous_book_ids = list(directive.get('previous_matched_book_ids') or [])
+      if not previous_book_ids and directive.get('previous_matched_book_id') is not None:
+        previous_book_ids = [directive.get('previous_matched_book_id')]
+      previous_books = list(directive.get('previous_matched_books') or [])
+    return {
+      'entry': entry,
+      'entry_key': entry_key or entry_key_for_saved_match(entry),
+      'imported_position': entry.get('position', ''),
+      'imported_title': entry.get('title', ''),
+      'imported_author': entry.get('author', ''),
+      'matched': bool(matched),
+      'original_matched': bool(matched),
+      'book_ids': book_ids,
+      'original_book_ids': list(book_ids),
+      'matched_books': matched_books,
+      'original_matched_books': list(matched_books),
+      'previous_book_ids': previous_book_ids,
+      'previous_matched_books': previous_books,
+      'match_source': match_source,
+      'original_match_source': match_source,
+      'can_toggle_on': bool(matched or previous_book_ids),
+    }
+
+  def match_imported_entries(
+      self, entries, match_series=True, list_id=None, allow_goodreads_recovery=True,
+      return_details=False, award_winners_only=False):
+    return self.match_imported_entries_for_list(
+      entries,
+      match_series=match_series,
+      list_id=list_id,
+      allow_goodreads_recovery=allow_goodreads_recovery,
+      return_details=return_details,
+      award_winners_only=award_winners_only)
+
+  def match_imported_entries_for_list(
+      self, entries, match_series=True, list_id=None, allow_goodreads_recovery=True,
+      return_details=False, award_winners_only=False):
+    db = self.db.new_api
+    ids = self.all_book_ids()
+    titles = db.all_field_for('title', ids, default_value='')
+    series = self.all_local_series_values(ids)
+    authors = db.all_field_for('authors', ids, default_value='')
+    by_title, by_series = self.import_match_indexes(ids, titles, series)
+    unmatched_overrides = self.saved_unmatched_overrides(list_id) if list_id else {}
+    self.debug_import_match_start(
+      list_id, match_series, len(ids), len(entries), len(by_title), len(by_series))
 
     matched = OrderedDict()
+    matched_entries = {}
+    matched_sources = {}
+    review_rows = []
+    rows_by_entry_id = {}
     missing_entries = []
     total_entries = len(entries)
     for entry_index, entry in enumerate(entries, start=1):
+      row = self.import_review_row(entry)
+      review_rows.append(row)
+      rows_by_entry_id[id(entry)] = row
       self.update_import_match_progress(
         entry_index - 1,
         total_entries,
         f'Matching {entry_index} of {total_entries}: {entry.get("title", "")}')
+      if award_winners_only and entry.get('result') and entry.get('result') != 'winner':
+        missing_entries.append(entry)
+        self.update_import_match_progress(
+          entry_index,
+          total_entries,
+          f'Matched {entry_index} of {total_entries} recipe entries...')
+        continue
       entry_keys = self.import_entry_keys(entry)
       if not entry_keys:
         self.debug_import_empty_entry(entry)
+        missing_entries.append(entry)
+        self.update_import_match_progress(
+          entry_index,
+          total_entries,
+          f'Matched {entry_index} of {total_entries} recipe entries...')
+        continue
+      saved_entry_key = entry_key_for_saved_match(entry)
+      unmatched_override = unmatched_overrides.get(saved_entry_key)
+      if unmatched_override:
+        row.update(self.import_review_row(
+          entry, entry_key=saved_entry_key, match_source='explicit unmatched',
+          directive=unmatched_override))
         missing_entries.append(entry)
         self.update_import_match_progress(
           entry_index,
@@ -181,30 +603,107 @@ class MatchingMixin:
         series_candidates.extend(by_series.get(entry_key, []))
       candidates = title_candidates + (series_candidates if match_series else [])
       candidates = list(OrderedDict((book_id, None) for book_id in candidates).keys())
+      author_candidates = [
+        book_id for book_id in candidates
+        if self.author_matches(authors.get(book_id, ''), entry.get('author', ''))
+      ]
+      already_matched = [book_id for book_id in candidates if book_id in matched]
+      self.debug_import_match_entry_detail(
+        entry_index, total_entries, entry, entry_keys,
+        list(OrderedDict((book_id, None) for book_id in title_candidates).keys()),
+        list(OrderedDict((book_id, None) for book_id in series_candidates).keys()),
+        candidates, author_candidates, already_matched)
       self.debug_import_match_entry(entry, candidates)
       entry_matched = False
+
+      def remember_match(book_id, source):
+        previous_entry = matched_entries.get(book_id)
+        if previous_entry is not None and previous_entry is not entry:
+          previous_row = rows_by_entry_id.get(id(previous_entry))
+          if previous_row is not None and book_id in previous_row.get('book_ids', []):
+            previous_row['book_ids'] = [
+              existing_id for existing_id in previous_row.get('book_ids', [])
+              if existing_id != book_id
+            ]
+            previous_row['matched_books'] = [
+              book for book in previous_row.get('matched_books', [])
+              if book.get('matched_book_id') != book_id
+            ]
+            previous_row['matched'] = bool(previous_row.get('book_ids'))
+            previous_row['original_matched'] = bool(previous_row.get('book_ids'))
+        if book_id not in row['book_ids']:
+          row['book_ids'].append(book_id)
+          row['matched_books'] = self.matched_book_details(row['book_ids'], titles, authors)
+        row['matched'] = True
+        row['original_matched'] = True
+        row['original_book_ids'] = list(row['book_ids'])
+        row['original_matched_books'] = list(row['matched_books'])
+        row['match_source'] = source
+        row['original_match_source'] = source
+        row['can_toggle_on'] = True
+        matched_sources[book_id] = source
+
       if match_series:
         series_candidates = list(OrderedDict(
           (book_id, None) for book_id in series_candidates).keys())
         for book_id in series_candidates:
           if book_id in matched:
+            if imported_entry_preferred(entry, matched_entries.get(book_id)):
+              matched[book_id] = entry.get('position', '')
+              remember_match(book_id, 'automatic')
+              matched_entries[book_id] = entry
+              self.debug_import_matched_book('replaced duplicate match', book_id, entry, titles, series)
+            entry_matched = True
+            self.debug_import_candidate_rejected('already matched', book_id, entry, titles, authors)
             continue
           if self.author_matches(authors.get(book_id, ''), entry.get('author', '')):
             matched[book_id] = entry.get('position', '')
+            matched_entries[book_id] = entry
+            remember_match(book_id, 'automatic')
             entry_matched = True
             self.debug_import_matched_book('matched', book_id, entry, titles, series)
+          else:
+            self.debug_import_candidate_rejected('author mismatch', book_id, entry, titles, authors)
       if not entry_matched:
         title_candidates = list(OrderedDict(
           (book_id, None) for book_id in title_candidates).keys())
         for book_id in title_candidates:
           if book_id in matched:
+            if imported_entry_preferred(entry, matched_entries.get(book_id)):
+              matched[book_id] = entry.get('position', '')
+              remember_match(book_id, 'automatic')
+              matched_entries[book_id] = entry
+              self.debug_import_matched_book('replaced duplicate match', book_id, entry, titles, series)
+            entry_matched = True
+            self.debug_import_candidate_rejected('already matched', book_id, entry, titles, authors)
             continue
           if self.author_matches(authors.get(book_id, ''), entry.get('author', '')):
             matched[book_id] = entry.get('position', '')
+            matched_entries[book_id] = entry
+            remember_match(book_id, 'automatic')
             entry_matched = True
             self.debug_import_matched_book('matched', book_id, entry, titles, series)
             break
+          self.debug_import_candidate_rejected('author mismatch', book_id, entry, titles, authors)
       if not entry_matched:
+        saved_book_ids = self.saved_override_candidates_for_entry(entry, list_id, ids)
+        self.debug_import_saved_override_lookup(entry, list_id, saved_book_ids)
+        for book_id in saved_book_ids:
+          if book_id in matched:
+            if imported_entry_preferred(entry, matched_entries.get(book_id)):
+              matched[book_id] = entry.get('position', '')
+              remember_match(book_id, 'saved/manual override')
+              matched_entries[book_id] = entry
+              self.debug_import_matched_book('replaced duplicate saved override match', book_id, entry, titles, series)
+            entry_matched = True
+            self.debug_import_candidate_rejected('saved override already matched', book_id, entry, titles, authors)
+            continue
+          matched[book_id] = entry.get('position', '')
+          matched_entries[book_id] = entry
+          remember_match(book_id, 'saved/manual override')
+          entry_matched = True
+          self.debug_import_matched_book('saved override matched', book_id, entry, titles, series)
+      if not entry_matched and allow_goodreads_recovery:
         self.update_import_match_step_progress(
           entry_index,
           total_entries,
@@ -219,8 +718,16 @@ class MatchingMixin:
         self.debug_import_goodreads_candidates(entry, goodreads_candidates)
         for book_id in goodreads_candidates:
           if book_id in matched:
+            if imported_entry_preferred(entry, matched_entries.get(book_id)):
+              matched[book_id] = entry.get('position', '')
+              remember_match(book_id, 'Goodreads/deep recovery')
+              matched_entries[book_id] = entry
+              self.debug_import_matched_book('replaced duplicate Goodreads match', book_id, entry, titles, series)
+            entry_matched = True
             continue
           matched[book_id] = entry.get('position', '')
+          matched_entries[book_id] = entry
+          remember_match(book_id, 'Goodreads/deep recovery')
           entry_matched = True
           self.debug_import_matched_book('Goodreads matched', book_id, entry, titles, series)
       if not entry_matched:
@@ -229,6 +736,13 @@ class MatchingMixin:
         entry_index,
         total_entries,
         f'Matched {entry_index} of {total_entries} recipe entries...')
+    review_rows = [
+      row for row in review_rows
+      if row.get('matched') or row.get('match_source') == 'explicit unmatched'
+      or row.get('entry') in missing_entries
+    ]
+    if return_details:
+      return matched, missing_entries, review_rows
     return matched, missing_entries
 
   def match_deep_recovery_entries(self, entries, excluded_book_ids=None, match_series=True):
@@ -349,13 +863,25 @@ class MatchingMixin:
   def goodreads_source_recovery_candidates(
       self, entry, titles, series, authors, by_title, by_series, match_series=True):
     data = self.fetch_goodreads_source_data(entry.get('source_url', ''))
+    source_goodreads_id = goodreads_book_id_from_url(entry.get('source_url', ''))
+    if source_goodreads_id:
+      exact_ids = [
+        book_id for book_id in titles
+        if self.goodreads_id_for_book(book_id) == source_goodreads_id
+      ]
+      if exact_ids:
+        self.debug_import_goodreads_source_candidates(entry, data, exact_ids)
+        return exact_ids
+
     candidates = []
-    if match_series:
+    if match_series and not source_goodreads_id:
       for series_name in data.get('series_names', []):
         keys = set(series_match_keys(series_name))
         for key in keys:
           candidates.extend(by_series.get(key, []))
     for source_book in data.get('books', []):
+      if source_goodreads_id and not self.source_book_matches_entry(source_book, entry):
+        continue
       for title_key in match_keys(source_book.get('title', '')):
         for book_id in by_title.get(title_key, []):
           source_author = source_book.get('author', '') or entry.get('author', '')
@@ -370,3 +896,8 @@ class MatchingMixin:
         deduped.append(book_id)
     self.debug_import_goodreads_source_candidates(entry, data, deduped)
     return deduped
+
+  def source_book_matches_entry(self, source_book, entry):
+    source_keys = set(match_keys(source_book.get('title', '')))
+    entry_keys = set(self.import_entry_keys(entry))
+    return bool(source_keys & entry_keys)

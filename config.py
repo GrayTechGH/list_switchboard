@@ -17,6 +17,11 @@ prefs.defaults['stored_lists_field'] = ''
 prefs.defaults['include_calibre_series'] = False
 prefs.defaults['debug_logging'] = False
 prefs.defaults['debug_sections'] = {}
+prefs.defaults['debug_force_fallback_level'] = 0
+prefs.defaults['find_match_title_mode'] = 'similar'
+prefs.defaults['find_match_author_mode'] = 'similar'
+prefs.defaults['find_match_title_soundex_length'] = 6
+prefs.defaults['find_match_author_soundex_length'] = 8
 
 def field_label(field_key, metadata):
   name = metadata.get('name') or field_key

@@ -1,76 +1,162 @@
 #!/usr/bin/env python
 # vim:fileencoding=UTF-8:ts=2:sw=2:sta:et:sts=2:ai
 
+import csv
+from io import StringIO
+
 from qt.core import (
-  QApplication, QDialog, QDialogButtonBox, QHeaderView, QLabel, QPushButton,
-  QSizePolicy, QTableWidget, QTableWidgetItem, QVBoxLayout
+  QApplication, QComboBox, QDialog, QDialogButtonBox, QHBoxLayout, QHeaderView,
+  QLabel, QPushButton, QSizePolicy, QTableWidget, QTableWidgetItem, QVBoxLayout
 )
+
+from calibre.gui2 import error_dialog
+
+try:
+  from calibre_plugins.list_switchboard.dialogs.import_find import (
+    FindModeDialog, MatchReviewDialog,
+  )
+except ImportError:
+  from dialogs.import_find import FindModeDialog, MatchReviewDialog
+
+
+VIEW_ALL = 'All'
+VIEW_MATCHED = 'Matched'
+VIEW_UNMATCHED = 'Unmatched'
+
+IMPORT_REVIEW_HEADERS = [
+  'Position', 'Title', 'Author', 'ID', 'Match', 'Source',
+]
+IMPORT_REVIEW_FIXED_COLUMNS = (0, 3, 4, 5)
+IMPORT_REVIEW_STRETCH_COLUMNS = (1, 2)
 
 
 class ImportReportDialog(QDialog):
+  """
+  Import review dialog for entry-to-library matches.
+
+  Refactor warning:
+  - This dialog is intentionally being rebuilt from the management dialog's
+    list/table/action pattern. Keep the imported entry as the primary row; the
+    selected Calibre library match is row data, not the other way around.
+  """
 
   def __init__(
-      self, parent, list_name, matched_count, entries_count, missing_entries,
-      allow_deep_recovery=False, notes=None):
+      self, parent, list_name, matched_count=0, entries_count=0,
+      missing_entries=None, allow_deep_recovery=False, notes=None,
+      review_rows=None, find_match_settings=None, save_find_match_settings=None,
+      find_match_index_callback=None, find_match_callback=None, view_book_callback=None):
     QDialog.__init__(self, parent)
-    self.missing_entries = missing_entries
+    self.list_name = list_name
+    self.review_rows = [
+      self.normalized_review_row(row) for row in (review_rows or [])
+    ]
+    if not self.review_rows:
+      self.review_rows = [
+        self.normalized_review_row({'entry': entry, 'match_source': 'never matched'})
+        for entry in (missing_entries or [])
+      ]
+    self.visible_rows = []
+    self.find_match_settings = dict(find_match_settings or {})
+    self.save_find_match_settings = save_find_match_settings
+    self.find_match_index_callback = find_match_index_callback
+    self.find_match_callback = find_match_callback
+    self.find_match_index = None
+    self.find_match_index_settings = None
+    self.view_book_callback = view_book_callback
     self.deep_recovery_requested = False
-    self.setWindowTitle('Import List Report')
+    self.setWindowTitle('Import List Review')
     notes = [note for note in (notes or []) if note]
     note_text = '\n' + '\n'.join(notes) if notes else ''
 
     layout = QVBoxLayout()
     self.setLayout(layout)
     summary = QLabel(
-      f'Imported "{list_name}".\n'
-      f'Placed {matched_count} books in the Active List.\n'
-      f'Matched {matched_count} of {entries_count} recipe entries.\n'
-      f'Missing {len(missing_entries)} recipe entries.'
+      f'Review "{list_name}" before writing it as the Active List.\n'
+      f'Matched {matched_count} of {entries_count} recipe entries.'
       f'{note_text}',
       self)
     summary.setWordWrap(True)
     summary.setSizePolicy(self.ignored_width_size_policy())
     layout.addWidget(summary)
 
-    self.missing_table = QTableWidget(self)
-    self.missing_table.setColumnCount(3)
-    self.missing_table.setHorizontalHeaderLabels(['Position', 'Title', 'Author'])
-    self.missing_table.setSelectionBehavior(QTableWidget.SelectionBehavior.SelectRows)
-    self.missing_table.setEditTriggers(QTableWidget.EditTrigger.NoEditTriggers)
-    self.missing_table.horizontalHeader().setSectionResizeMode(0, QHeaderView.ResizeMode.ResizeToContents)
-    self.missing_table.horizontalHeader().setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch)
-    self.missing_table.horizontalHeader().setSectionResizeMode(2, QHeaderView.ResizeMode.Stretch)
-    self.missing_table.setRowCount(len(missing_entries))
-    for row, entry in enumerate(missing_entries):
-      values = [
-        str(entry.get('position', '') or ''),
-        str(entry.get('title', '') or ''),
-        str(entry.get('author', '') or ''),
-      ]
-      for column, value in enumerate(values):
-        self.missing_table.setItem(row, column, QTableWidgetItem(value))
-    layout.addWidget(self.missing_table)
+    view_layout = QHBoxLayout()
+    view_layout.addWidget(QLabel('View:', self))
+    self.view_combo = QComboBox(self)
+    self.view_combo.addItems([VIEW_ALL, VIEW_MATCHED, VIEW_UNMATCHED])
+    self.view_combo.setCurrentText(VIEW_UNMATCHED)
+    view_layout.addWidget(self.view_combo)
+    view_layout.addStretch(1)
+    layout.addLayout(view_layout)
 
-    buttons = QDialogButtonBox(QDialogButtonBox.Close, self)
-    self.copy_button = QPushButton('Copy Missing List', self)
-    buttons.addButton(self.copy_button, QDialogButtonBox.ActionRole)
-    self.copy_button.clicked.connect(self.copy_missing_list)
+    self.toggle_button = QPushButton('Toggle matched', self)
+    self.find_button = QPushButton('Find match', self)
+    self.match_mode_button = QPushButton('Match mode', self)
+
+    self.match_table = QTableWidget(self)
+    self.match_table.setColumnCount(6)
+    self.match_table.setHorizontalHeaderLabels(IMPORT_REVIEW_HEADERS)
+    self.match_table.setSelectionBehavior(QTableWidget.SelectionBehavior.SelectRows)
+    self.match_table.setEditTriggers(QTableWidget.EditTrigger.NoEditTriggers)
+    self.configure_table_column_resizing()
+    layout.addWidget(self.match_table)
+
+    action_layout = QHBoxLayout()
+    action_layout.addWidget(self.toggle_button)
+    action_layout.addSpacing(12)
+    action_layout.addWidget(self.find_button)
+    action_layout.addWidget(self.match_mode_button)
+    action_layout.addSpacing(12)
+    self.copy_button = QPushButton('Copy view', self)
+    action_layout.addWidget(self.copy_button)
     if allow_deep_recovery and missing_entries:
       self.deep_recovery_button = QPushButton('Try Deep Recovery', self)
-      buttons.addButton(self.deep_recovery_button, QDialogButtonBox.ActionRole)
-      self.deep_recovery_button.clicked.connect(self.request_deep_recovery)
+      self.deep_recovery_button.setEnabled(False)
+      action_layout.addWidget(self.deep_recovery_button)
+    layout.addLayout(action_layout)
+
+    buttons = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel, self)
+    buttons.accepted.connect(self.accept)
     buttons.rejected.connect(self.reject)
     layout.addWidget(buttons)
+
+    self.view_combo.currentTextChanged.connect(self.update_table)
+    self.match_table.currentCellChanged.connect(self.update_toggle_button)
+    self.toggle_button.clicked.connect(self.toggle_selected_match)
+    self.find_button.clicked.connect(self.open_find_matches)
+    self.match_mode_button.clicked.connect(self.open_match_mode)
+    self.copy_button.clicked.connect(self.copy_current_view)
+    self.update_table()
     self.resize(*self.initial_report_size())
 
+  def normalized_review_row(self, row):
+    row = dict(row or {})
+    entry = row.get('entry') or {}
+    row['entry'] = entry
+    row.setdefault('imported_position', entry.get('position', ''))
+    row.setdefault('imported_title', entry.get('title', ''))
+    row.setdefault('imported_author', entry.get('author', ''))
+    row.setdefault('matched', False)
+    row.setdefault('original_matched', bool(row.get('matched')))
+    row.setdefault('book_ids', [])
+    row.setdefault('original_book_ids', list(row.get('book_ids') or []))
+    row.setdefault('matched_books', [])
+    row.setdefault('original_matched_books', list(row.get('matched_books') or []))
+    row.setdefault('previous_book_ids', [])
+    row.setdefault('previous_matched_books', [])
+    row.setdefault('match_source', 'never matched')
+    row.setdefault('original_match_source', row.get('match_source', 'never matched'))
+    row.setdefault('can_toggle_on', bool(row.get('matched') or row.get('previous_book_ids')))
+    row.setdefault('possible_matches', [])
+    return row
+
   def initial_report_size(self):
-    width = 850
-    height = 500
+    width = 980
+    height = 560
     try:
       screen = QApplication.primaryScreen()
       if screen is not None:
         available = screen.availableGeometry()
-        width = min(width, max(420, int(available.width() * 0.85)))
+        width = min(width, max(520, int(available.width() * 0.9)))
     except Exception:
       pass
     return width, height
@@ -81,20 +167,305 @@ class ImportReportDialog(QDialog):
     except Exception:
       return QSizePolicy(QSizePolicy.Ignored, QSizePolicy.Preferred)
 
-  def missing_list_text(self):
-    lines = ['Position\tTitle\tAuthor']
-    for entry in self.missing_entries:
-      lines.append('\t'.join([
-        str(entry.get('position', '') or ''),
-        str(entry.get('title', '') or ''),
-        str(entry.get('author', '') or ''),
-      ]))
-    return '\n'.join(lines)
+  def current_view_mode(self):
+    try:
+      return self.view_combo.currentText()
+    except Exception:
+      return VIEW_UNMATCHED
 
-  def copy_missing_list(self):
-    QApplication.clipboard().setText(self.missing_list_text())
+  def rows_for_current_view(self):
+    mode = self.current_view_mode()
+    if mode == VIEW_MATCHED:
+      return [row for row in self.review_rows if row.get('matched')]
+    if mode == VIEW_UNMATCHED:
+      return [row for row in self.review_rows if not row.get('matched')]
+    return list(self.review_rows)
 
-  def request_deep_recovery(self):
-    self.deep_recovery_requested = True
-    self.accept()
+  def update_table(self, *_args):
+    self.visible_rows = self.rows_for_current_view()
+    self.match_table.setRowCount(len(self.visible_rows))
+    for row_index, row in enumerate(self.visible_rows):
+      for column, value in enumerate(self.csv_values_for_row(row)):
+        self.match_table.setItem(row_index, column, QTableWidgetItem(value))
+    if self.visible_rows:
+      self.match_table.setCurrentCell(0, 0)
+    self.apply_stable_fixed_column_widths()
+    self.update_toggle_button()
 
+  def configure_table_column_resizing(self):
+    header = self.match_table.horizontalHeader()
+    fixed_mode = self.header_resize_mode('Fixed')
+    stretch_mode = self.header_resize_mode('Stretch')
+    for column in IMPORT_REVIEW_FIXED_COLUMNS:
+      header.setSectionResizeMode(column, fixed_mode)
+    for column in IMPORT_REVIEW_STRETCH_COLUMNS:
+      header.setSectionResizeMode(column, stretch_mode)
+
+  def header_resize_mode(self, mode_name):
+    try:
+      return getattr(QHeaderView.ResizeMode, mode_name)
+    except AttributeError:
+      return getattr(QHeaderView, mode_name)
+
+  def stable_width_rows(self):
+    matched_rows = [row for row in self.review_rows if row.get('matched')]
+    possible_rows = [
+      row for row in self.review_rows
+      if not row.get('matched') and row.get('possible_matches')
+    ]
+    return matched_rows + possible_rows or list(self.review_rows)
+
+  def fixed_column_width_values(self, column):
+    values = [IMPORT_REVIEW_HEADERS[column]]
+    values.extend(
+      self.csv_values_for_row(row)[column] for row in self.stable_width_rows()
+    )
+    return values
+
+  def apply_stable_fixed_column_widths(self):
+    metrics = self.match_table.fontMetrics()
+    for column in IMPORT_REVIEW_FIXED_COLUMNS:
+      width = max(
+        self.text_width(metrics, value)
+        for value in self.fixed_column_width_values(column)
+      )
+      self.match_table.setColumnWidth(column, width + 28)
+
+  def text_width(self, metrics, value):
+    text = str(value or '')
+    try:
+      return metrics.horizontalAdvance(text)
+    except AttributeError:
+      return metrics.boundingRect(text).width()
+
+  def selected_review_row(self):
+    row = self.match_table.currentRow()
+    if row < 0 or row >= len(self.visible_rows):
+      return None
+    return self.visible_rows[row]
+
+  def update_toggle_button(self, *_args):
+    row = self.selected_review_row()
+    if row is None:
+      self.toggle_button.setEnabled(False)
+      return
+    if row.get('matched'):
+      self.toggle_button.setEnabled(True)
+      return
+    self.toggle_button.setEnabled(bool(row.get('can_toggle_on')))
+
+  def toggle_selected_match(self):
+    row = self.selected_review_row()
+    if row is None:
+      return
+    if row.get('matched'):
+      row['matched'] = False
+      row['book_ids'] = []
+      row['matched_books'] = []
+    elif row.get('can_toggle_on'):
+      row['matched'] = True
+      if not row.get('book_ids'):
+        row['book_ids'] = list(row.get('previous_book_ids') or [])
+      if not row.get('matched_books'):
+        row['matched_books'] = list(row.get('previous_matched_books') or [])
+    self.update_table()
+
+  def matched_books_text(self, row, field):
+    values = []
+    for book in row.get('matched_books') or []:
+      value = book.get(field, '')
+      if isinstance(value, (list, tuple)):
+        value = ', '.join(str(item) for item in value)
+      if value:
+        values.append(str(value))
+    return '; '.join(values)
+
+  def csv_values_for_row(self, row):
+    match = 'Yes' if row.get('matched') else 'No'
+    if not row.get('matched') and row.get('possible_matches'):
+      match = f'Possible ({len(row.get("possible_matches") or [])})'
+    source = str(row.get('match_source', '') or '')
+    if source == 'never matched':
+      source = 'None'
+    return [
+      str(row.get('imported_position', '') or ''),
+      str(row.get('imported_title', '') or ''),
+      str(row.get('imported_author', '') or ''),
+      '; '.join(str(book_id) for book_id in (row.get('book_ids') or [])),
+      match,
+      source,
+    ]
+
+  def unmatched_review_rows(self):
+    return [row for row in self.review_rows if not row.get('matched')]
+
+  def candidate_review_rows(self):
+    return [
+      row for row in self.review_rows
+      if not row.get('matched') and row.get('possible_matches')
+    ]
+
+  def select_review_row(self, target_row):
+    if target_row is None:
+      return
+    if target_row not in self.rows_for_current_view():
+      try:
+        self.view_combo.setCurrentText(VIEW_UNMATCHED)
+      except Exception:
+        pass
+      self.update_table()
+    for row_index, row in enumerate(self.visible_rows):
+      if row is target_row:
+        self.match_table.setCurrentCell(row_index, 0)
+        return
+
+  def candidate_row_from(self, row=None, direction=1, include_start=True):
+    candidates = self.candidate_review_rows()
+    if not candidates:
+      return None
+    if row is None:
+      return candidates[0]
+    try:
+      start_index = self.review_rows.index(row)
+    except ValueError:
+      return candidates[0]
+    if include_start and row in candidates:
+      return row
+    step = 1 if direction >= 0 else -1
+    count = len(self.review_rows)
+    for offset in range(1, count + 1):
+      candidate = self.review_rows[(start_index + (offset * step)) % count]
+      if candidate in candidates:
+        return candidate
+    return None
+
+  def show_find_notice(self, message):
+    error_dialog(self, 'Find match', message, show=True)
+
+  def open_match_mode(self):
+    dialog = FindModeDialog(self, self.find_match_settings)
+    if dialog.exec() != QDialog.Accepted:
+      return
+    settings = dialog.selected_mode()
+    if dict(settings) != self.find_match_settings:
+      self.find_match_index = None
+      self.find_match_index_settings = None
+      for row in self.review_rows:
+        row['possible_matches'] = []
+    self.find_match_settings = dict(settings)
+    if self.save_find_match_settings is not None:
+      self.save_find_match_settings(settings)
+
+  def open_find_matches(self):
+    selected_row = self.selected_review_row()
+    if not self.candidate_review_rows():
+      self.run_find_matches(self.review_rows)
+      self.update_table()
+      if not self.candidate_review_rows():
+        self.show_find_notice(
+          'No possible matches were found. Change Match mode to use different criteria.')
+        return
+    row = self.candidate_row_from(selected_row, include_start=True)
+    if row is None:
+      self.show_find_notice(
+        'There are no possible matches left. Change Match mode to find more candidates.')
+      return
+    self.review_candidate_rows(row)
+    self.update_table()
+
+  def run_find_matches(self, rows):
+    if self.find_match_callback is None:
+      return rows
+    index = self.current_find_match_index()
+    try:
+      self.find_match_callback(self.review_rows, self.find_match_settings, index=index)
+    except TypeError as err:
+      if 'index' not in str(err):
+        raise
+      self.find_match_callback(self.review_rows, self.find_match_settings)
+    return rows
+
+  def current_find_match_index(self):
+    settings = dict(self.find_match_settings)
+    if self.find_match_index is not None and self.find_match_index_settings == settings:
+      return self.find_match_index
+    if self.find_match_index_callback is None:
+      return None
+    self.find_match_index = self.find_match_index_callback(
+      title_mode=settings.get('title_mode', 'similar'),
+      author_mode=settings.get('author_mode', 'similar'),
+      title_soundex_length=settings.get('title_soundex_length', 6),
+      author_soundex_length=settings.get('author_soundex_length', 8))
+    self.find_match_index_settings = settings
+    return self.find_match_index
+
+  def review_candidate_rows(self, start_row):
+    row = start_row
+    while row is not None:
+      self.select_review_row(row)
+      dialog = MatchReviewDialog(
+        self, row, view_book_callback=self.view_book_callback)
+      result = dialog.exec()
+      if result != QDialog.Accepted or dialog.navigation_action == 'cancel':
+        return
+      if dialog.navigation_action == 'previous':
+        row = self.candidate_row_from(row, direction=-1, include_start=False)
+        continue
+      if dialog.navigation_action == 'next':
+        row = self.candidate_row_from(row, direction=1, include_start=False)
+        continue
+      if dialog.selected_candidate is not None:
+        self.apply_manual_find_match(row, dialog.selected_candidate)
+        self.update_table()
+        row = self.candidate_row_from(row, direction=1, include_start=False)
+        if row is None:
+          self.show_find_notice(
+            'There are no possible matches left. Change Match mode to find more candidates.')
+          return
+        continue
+      return
+
+  def apply_manual_find_match(self, row, candidate):
+    if row is None or candidate is None:
+      return
+    book_id = candidate.get('book_id', candidate.get('matched_book_id'))
+    if book_id is None:
+      return
+    authors = candidate.get('authors', candidate.get('matched_authors', ''))
+    row['matched'] = True
+    row['book_ids'] = [book_id]
+    row['matched_books'] = [{
+      'matched_book_id': book_id,
+      'matched_title': candidate.get('title', candidate.get('matched_title', '')),
+      'matched_authors': authors,
+    }]
+    row['match_source'] = 'manual find'
+    row['can_toggle_on'] = True
+
+  def current_view_csv(self):
+    output = StringIO()
+    writer = csv.writer(output, lineterminator='\n')
+    writer.writerow(IMPORT_REVIEW_HEADERS)
+    for row in self.rows_for_current_view():
+      writer.writerow(self.csv_values_for_row(row))
+    return output.getvalue()
+
+  def copy_current_view(self):
+    QApplication.clipboard().setText(self.current_view_csv())
+
+  def accepted_matched(self):
+    matched = {}
+    for row in self.review_rows:
+      if not row.get('matched'):
+        continue
+      position = row.get('imported_position', '')
+      for book_id in row.get('book_ids') or []:
+        matched[book_id] = position
+    return matched
+
+  def accepted_missing_entries(self):
+    return [
+      row.get('entry') or {}
+      for row in self.review_rows
+      if not row.get('matched')
+    ]

@@ -69,20 +69,15 @@ class ListSwitchboardAction(InterfaceAction):
 
     menu.addSeparator()
 
-    import_menu = menu.addMenu('Import List')
-    core = self.core()
-    recipes = core.available_import_recipes()
-    if not recipes:
-      action = QAction(core.recipe_discovery_summary(), self.gui)
-      action.setEnabled(False)
-      import_menu.addAction(action)
-    for recipe in recipes:
-      self.add_menu_action(import_menu, recipe.NAME,
-        lambda checked=False, recipe_name=recipe.NAME: self.core().import_recipe_by_name(recipe_name))
+    self.add_menu_action(menu, 'Import List...',
+      lambda: self.core().choose_and_import_recipe())
 
     menu.addSeparator()
 
     active_menu = menu.addMenu('Active List')
+    self.add_menu_action(active_menu, 'Save Matches',
+      lambda: self.core().save_active_matches_for_current_active_list())
+    active_menu.addSeparator()
     self.add_menu_action(active_menu, 'Switch...', lambda: self.core().switch_active_list())
     self.add_menu_action(active_menu, 'Create New...', lambda: self.core().create_new_active_list())
     self.add_menu_action(active_menu, 'Rename...', lambda: self.core().rename_active_list())
@@ -128,11 +123,17 @@ class ListSwitchboardAction(InterfaceAction):
     modifiers = QApplication.keyboardModifiers()
     return bool(modifiers & Qt.KeyboardModifier.ShiftModifier)
 
+  def ctrl_pressed(self):
+    modifiers = QApplication.keyboardModifiers()
+    return bool(modifiers & Qt.KeyboardModifier.ControlModifier)
+
   def add_selected_to_active(self, checked=False):
-    if self.shift_pressed():
+    shift = self.shift_pressed()
+    ctrl = self.ctrl_pressed()
+    if shift and ctrl:
       self.core().show_debug_dialog()
       return
-    self.core().add_selected_to_active()
+    self.core().add_selected_to_active(force_match_review=shift)
 
   def configure(self):
     self.interface_action_base_plugin.do_user_config(parent=self.gui)

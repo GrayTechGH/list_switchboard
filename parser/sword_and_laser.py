@@ -19,48 +19,94 @@ from urllib.parse import quote, unquote, urljoin, urlparse
 
 from bs4 import BeautifulSoup
 
+try:
+  from calibre_plugins.list_switchboard.parser.base import (
+    CATEGORY_FANTASY,
+    CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,
+    CATEGORY_SCIENCE_FICTION,
+    ListParserBase,
+  )
+except ImportError:
+  from .base import (
+    CATEGORY_FANTASY,
+    CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,
+    CATEGORY_SCIENCE_FICTION,
+    ListParserBase,
+  )
+
 from .fandom import fandom_api_html, fandom_wikitext_table_to_html, looks_like_wikitext
 from .generic import matching_schema, position_sort_key, token_header_start
 
 
-def parse_sword_and_laser_book_list(
-    recipe, html, fetch_url=None, sleep=None, fetch_error=None, log=None, progress=None):
+class SwordAndLaserParser(ListParserBase):
   """
-  Parse the main Sword & Laser list and optionally enrich with nominations.
+  Parser for the main Sword & Laser list and optional March Madness recovery.
 
   Invariant:
   - Returned entries are sorted by numeric position, including fractional
     positions for alternates and nominations.
   """
-  html = fandom_api_html(html)
-  if looks_like_wikitext(html):
-    html = fandom_wikitext_table_to_html(html)
-  soup = BeautifulSoup(html, 'html.parser')
-  entries = parse_sword_and_laser_main_entries(recipe, soup)
-  unavailable_march_pages = []
-  march_summary = None
-  notes = []
-  if recipe.options.get('include_march_madness', False):
-    entries, unavailable_march_pages, march_summary = add_sword_and_laser_march_entries(
+
+  FILTER_CATEGORIES = (
+    CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,
+    CATEGORY_SCIENCE_FICTION,
+    CATEGORY_FANTASY,
+  )
+
+  def parse(self, recipe, html, fetch_url=None, sleep=None, fetch_error=None,
+            log=None, progress=None):
+    html = fandom_api_html(html)
+    if looks_like_wikitext(html):
+      html = fandom_wikitext_table_to_html(html)
+    soup = BeautifulSoup(html, 'html.parser')
+    entries = self.parse_main_entries(recipe, soup)
+    unavailable_march_pages = []
+    march_summary = None
+    notes = []
+    if recipe.options.get('include_march_madness', False):
+      entries, unavailable_march_pages, march_summary = self.add_march_entries(
+        recipe, entries, fetch_url, sleep, fetch_error, log, progress)
+      if fetch_url is not None and entries and not any(entry.get('source_url') for entry in entries):
+        notes.append(
+          'March Madness details were not fetched because the imported table did not include linked page URLs.')
+      elif march_summary is not None:
+        notes.append(march_madness_summary_note(march_summary))
+    parsed = {
+      'name': recipe.NAME,
+      'url': recipe.URL,
+      'entries': sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
+    }
+    if march_summary is not None:
+      parsed['march_madness_summary'] = march_summary
+    if unavailable_march_pages:
+      parsed['march_madness_unavailable_pages'] = unavailable_march_pages
+      notes.append(march_madness_unavailable_note(unavailable_march_pages))
+    if notes:
+      parsed['notes'] = notes
+    return parsed
+
+  def parse_main_entries(self, recipe, soup):
+    return parse_sword_and_laser_main_entries(recipe, soup)
+
+  def add_march_entries(self, recipe, entries, fetch_url, sleep, fetch_error=None,
+                        log=None, progress=None):
+    return add_sword_and_laser_march_entries(
       recipe, entries, fetch_url, sleep, fetch_error, log, progress)
-    if fetch_url is not None and entries and not any(entry.get('source_url') for entry in entries):
-      notes.append(
-        'March Madness details were not fetched because the imported table did not include linked page URLs.')
-    elif march_summary is not None:
-      notes.append(march_madness_summary_note(march_summary))
-  parsed = {
-    'name': recipe.NAME,
-    'url': recipe.URL,
-    'entries': sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
-  }
-  if march_summary is not None:
-    parsed['march_madness_summary'] = march_summary
-  if unavailable_march_pages:
-    parsed['march_madness_unavailable_pages'] = unavailable_march_pages
-    notes.append(march_madness_unavailable_note(unavailable_march_pages))
-  if notes:
-    parsed['notes'] = notes
-  return parsed
+
+  def parse_march_page(self, soup, official_entry):
+    return parse_sword_and_laser_march_page(soup, official_entry)
+
+
+def parse_sword_and_laser_book_list(
+    recipe, html, fetch_url=None, sleep=None, fetch_error=None, log=None, progress=None):
+  return SwordAndLaserParser().parse(
+    recipe,
+    html,
+    fetch_url=fetch_url,
+    sleep=sleep,
+    fetch_error=fetch_error,
+    log=log,
+    progress=progress)
 
 
 def parse_sword_and_laser_main_entries(recipe, soup):

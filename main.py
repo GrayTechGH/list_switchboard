@@ -23,6 +23,8 @@ import os
 import time
 from urllib.request import Request, urlopen
 
+from bs4 import UnicodeDammit
+
 from qt.core import QApplication, QDialog, QMessageBox
 
 from calibre.gui2 import error_dialog
@@ -60,13 +62,27 @@ except ImportError:
 
 try:
   from calibre_plugins.list_switchboard.matching import (
-    MatchingMixin, clean_name, match_keys, normalize_key, normalize_match_text,
-    series_match_keys, split_position_suffix, title_sort_without_article,
+    FIND_MATCH_AUTHOR_SOUNDEX_LENGTH_DEFAULT, FIND_MATCH_MODES,
+    FIND_MATCH_TITLE_SOUNDEX_LENGTH_DEFAULT, FIND_MODE_FUZZY, FIND_MODE_IDENTICAL,
+    FIND_MODE_IGNORE,
+    FIND_MODE_SIMILAR, FIND_MODE_SOUNDEX, MatchingMixin, author_find_key,
+    clean_name, find_fuzzy_author_key, find_fuzzy_title_key,
+    find_identical_author_key, find_identical_title_key,
+    find_similar_author_key, find_similar_title_key, match_keys, normalize_key,
+    normalize_match_text, series_match_keys, split_position_suffix,
+    title_find_key, title_sort_without_article, validate_find_match_modes,
   )
 except ImportError:
   from matching import (
-    MatchingMixin, clean_name, match_keys, normalize_key, normalize_match_text,
-    series_match_keys, split_position_suffix, title_sort_without_article,
+    FIND_MATCH_AUTHOR_SOUNDEX_LENGTH_DEFAULT, FIND_MATCH_MODES,
+    FIND_MATCH_TITLE_SOUNDEX_LENGTH_DEFAULT, FIND_MODE_FUZZY, FIND_MODE_IDENTICAL,
+    FIND_MODE_IGNORE,
+    FIND_MODE_SIMILAR, FIND_MODE_SOUNDEX, MatchingMixin, author_find_key,
+    clean_name, find_fuzzy_author_key, find_fuzzy_title_key,
+    find_identical_author_key, find_identical_title_key,
+    find_similar_author_key, find_similar_title_key, match_keys, normalize_key,
+    normalize_match_text, series_match_keys, split_position_suffix,
+    title_find_key, title_sort_without_article, validate_find_match_modes,
   )
 
 try:
@@ -86,6 +102,13 @@ except ImportError:
   from list_state import ListStateMixin
 
 try:
+  from calibre_plugins.list_switchboard.storage import (
+    StorageMixin, entry_key, parsed_append_state, safe_list_id,
+  )
+except ImportError:
+  from storage import StorageMixin, entry_key, parsed_append_state, safe_list_id
+
+try:
   from calibre_plugins.list_switchboard.dialogs import DebugDialog
 except ImportError:
   from dialogs import DebugDialog
@@ -102,7 +125,37 @@ A Calibre GUI plugin for managing an active reading list and stored alternate li
 
 List Switchboard only edits the configured metadata fields. It does not delete, move, convert, or modify book files.'''
 
-class ListSwitchboardCore(DebugMixin, ImportFlowMixin, ListStateMixin, MetadataMixin, GoodreadsMixin, MatchingMixin):
+
+def decode_url_response(response):
+  data = response.read()
+  charset = response.headers.get_content_charset() if response.headers else None
+  known_encodings = (charset,) if charset else ()
+  decoded = UnicodeDammit(
+    data,
+    known_definite_encodings=known_encodings,
+    is_html=True).unicode_markup
+  if decoded:
+    return decoded
+  if charset:
+    try:
+      return data.decode(charset)
+    except (LookupError, UnicodeDecodeError):
+      pass
+  for candidate in ('utf-8', 'windows-1252'):
+    try:
+      return data.decode(candidate)
+    except (LookupError, UnicodeDecodeError):
+      pass
+  return data.decode(charset or 'utf-8', 'replace')
+
+class ListSwitchboardCore(
+    DebugMixin,
+    StorageMixin,
+    ImportFlowMixin,
+    ListStateMixin,
+    MetadataMixin,
+    GoodreadsMixin,
+    MatchingMixin):
   """
   Facade object owned by Calibre's InterfaceAction.
 
@@ -130,6 +183,7 @@ class ListSwitchboardCore(DebugMixin, ImportFlowMixin, ListStateMixin, MetadataM
     self.plugin_base = plugin_base
     self.db = getattr(gui, 'current_db', None)
     self.goodreads_series_cache = {}
+    self._cached_active_add_import_map = None
     self.last_goodreads_lookup_time = 0
     self.import_progress = None
     self.browser = None
@@ -199,13 +253,11 @@ class ListSwitchboardCore(DebugMixin, ImportFlowMixin, ListStateMixin, MetadataM
     if CalibreBrowser is not None:
       browser = self.calibre_browser(headers)
       response = browser.open(url, timeout=30)
-      charset = response.headers.get_content_charset() or 'utf-8'
-      return response.read().decode(charset, 'replace')
+      return decode_url_response(response)
     self.debug_fallback_urllib_fetch(url)
     request = Request(url, headers=headers)
     with urlopen(request, timeout=30) as response:
-      charset = response.headers.get_content_charset() or 'utf-8'
-      return response.read().decode(charset, 'replace')
+      return decode_url_response(response)
 
   def calibre_browser(self, headers):
     if self.browser is None:
@@ -272,6 +324,7 @@ class ListSwitchboardCore(DebugMixin, ImportFlowMixin, ListStateMixin, MetadataM
       key: bool(box.isChecked())
       for key, box in d.section_boxes.items()
     }
+    prefs['debug_force_fallback_level'] = int(d.force_fallback_level.currentData() or 0)
     if prefs['debug_logging']:
       self.status_message('List Switchboard debug logging is on for all sections.')
     else:
