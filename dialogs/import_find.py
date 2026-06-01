@@ -220,9 +220,56 @@ class FindImportMatchesDialog(QDialog):
 
 class MatchReviewDialog(QDialog):
 
-  def __init__(self, parent, review_row, candidates=None, view_book_callback=None):
+  def __init__(
+      self, parent, review_row, candidates=None, view_book_callback=None,
+      match_callback=None, ignore_callback=None, previous_callback=None,
+      next_callback=None):
     QDialog.__init__(self, parent)
     self.setWindowTitle('Possible matches')
+    self.view_book_callback = view_book_callback
+    self.match_callback = match_callback
+    self.ignore_callback = ignore_callback
+    self.previous_callback = previous_callback
+    self.next_callback = next_callback
+    self.selected_candidate = None
+    self.navigation_action = None
+
+    layout = QVBoxLayout()
+    self.setLayout(layout)
+    self.review_label = QLabel('', self)
+    layout.addWidget(self.review_label)
+    self.match_table = QTableWidget(self)
+    self.match_table.setColumnCount(5)
+    self.match_table.setHorizontalHeaderLabels(['ID', 'Title', 'Author', 'Series', 'Reason'])
+    self.match_table.setSelectionBehavior(QTableWidget.SelectionBehavior.SelectRows)
+    self.match_table.setSelectionMode(self.selection_mode('ExtendedSelection'))
+    self.match_table.setEditTriggers(QTableWidget.EditTrigger.NoEditTriggers)
+    layout.addWidget(self.match_table)
+
+    actions = QHBoxLayout()
+    self.match_button = QPushButton('Match selected', self)
+    self.ignore_button = QPushButton('Ignore', self)
+    self.view_book_button = QPushButton('View book', self)
+    self.previous_button = QPushButton('Previous', self)
+    self.next_button = QPushButton('Next', self)
+    self.cancel_button = QPushButton('Cancel', self)
+    for button in (
+        self.match_button, self.ignore_button, self.view_book_button,
+        self.previous_button, self.next_button, self.cancel_button):
+      actions.addWidget(button)
+    actions.addStretch(1)
+    layout.addLayout(actions)
+    self.match_button.clicked.connect(self.accept)
+    self.ignore_button.clicked.connect(self.ignore_current)
+    self.view_book_button.clicked.connect(self.view_selected_book)
+    self.previous_button.clicked.connect(self.previous_row)
+    self.next_button.clicked.connect(self.next_row)
+    self.cancel_button.clicked.connect(self.reject)
+    self.set_review_row(review_row, candidates=candidates, preserve_column_widths=False)
+    self.resize(820, 500)
+
+  def set_review_row(self, review_row, candidates=None, preserve_column_widths=True):
+    widths = self.column_widths() if preserve_column_widths else []
     if isinstance(review_row, (list, tuple)):
       self.review_row = {}
       self.candidates = list(review_row or [])
@@ -231,45 +278,35 @@ class MatchReviewDialog(QDialog):
       self.candidates = list(
         candidates if candidates is not None
         else self.review_row.get('possible_matches') or [])
-    self.view_book_callback = view_book_callback
-    self.selected_candidate = None
-    self.navigation_action = None
+    self.update_label()
+    self.update_table()
+    if widths:
+      self.restore_column_widths(widths)
 
-    layout = QVBoxLayout()
-    self.setLayout(layout)
+  def update_label(self):
     label_lines = []
     if self.review_row:
       label_lines.append(str(self.review_row.get('imported_title', '') or 'Untitled'))
       author = str(self.review_row.get('imported_author', '') or '')
       if author:
         label_lines.append(author)
-    if label_lines:
-      layout.addWidget(QLabel('\n'.join(label_lines), self))
-    self.match_table = QTableWidget(self)
-    self.match_table.setColumnCount(4)
-    self.match_table.setHorizontalHeaderLabels(['ID', 'Title', 'Author', 'Reason'])
-    self.match_table.setSelectionBehavior(QTableWidget.SelectionBehavior.SelectRows)
-    self.match_table.setEditTriggers(QTableWidget.EditTrigger.NoEditTriggers)
-    layout.addWidget(self.match_table)
+    self.review_label.setText('\n'.join(label_lines))
 
-    actions = QHBoxLayout()
-    self.match_button = QPushButton('Match selected', self)
-    self.view_book_button = QPushButton('View book', self)
-    self.previous_button = QPushButton('Previous', self)
-    self.next_button = QPushButton('Next', self)
-    self.cancel_button = QPushButton('Cancel', self)
-    for button in (
-        self.match_button, self.view_book_button, self.previous_button,
-        self.next_button, self.cancel_button):
-      actions.addWidget(button)
-    actions.addStretch(1)
-    layout.addLayout(actions)
-    self.match_button.clicked.connect(self.accept)
-    self.view_book_button.clicked.connect(self.view_selected_book)
-    self.previous_button.clicked.connect(self.previous_row)
-    self.next_button.clicked.connect(self.next_row)
-    self.cancel_button.clicked.connect(self.reject)
-    self.update_table()
+  def column_widths(self):
+    widths = []
+    try:
+      for column in range(self.match_table.columnCount()):
+        widths.append(self.match_table.columnWidth(column))
+    except Exception:
+      return []
+    return widths
+
+  def restore_column_widths(self, widths):
+    for column, width in enumerate(widths or []):
+      try:
+        self.match_table.setColumnWidth(column, width)
+      except Exception:
+        pass
 
   def update_table(self):
     self.match_table.setRowCount(len(self.candidates))
@@ -278,6 +315,7 @@ class MatchReviewDialog(QDialog):
         candidate.get('book_id', candidate.get('matched_book_id', '')),
         candidate.get('title', candidate.get('matched_title', '')),
         candidate.get('authors', candidate.get('matched_authors', '')),
+        candidate.get('series', candidate.get('matched_series', '')),
         candidate.get('reason', candidate.get('source', '')),
       ]
       for column, value in enumerate(values):
@@ -289,6 +327,13 @@ class MatchReviewDialog(QDialog):
     enabled = bool(self.candidates)
     self.match_button.setEnabled(enabled)
     self.view_book_button.setEnabled(enabled and self.view_book_callback is not None)
+    self.ignore_button.setEnabled(True)
+
+  def selection_mode(self, mode_name):
+    try:
+      return getattr(QTableWidget.SelectionMode, mode_name)
+    except AttributeError:
+      return getattr(QTableWidget, mode_name)
 
   def selected_row_candidate(self):
     row = self.match_table.currentRow()
@@ -296,19 +341,62 @@ class MatchReviewDialog(QDialog):
       return None
     return self.candidates[row]
 
+  def selected_row_indexes(self):
+    rows = []
+    try:
+      selected_rows = self.match_table.selectionModel().selectedRows()
+      rows.extend(index.row() for index in selected_rows)
+    except Exception:
+      pass
+    if not rows:
+      try:
+        rows.extend(item.row() for item in self.match_table.selectedItems())
+      except Exception:
+        pass
+    if not rows:
+      row = self.match_table.currentRow()
+      if row >= 0:
+        rows.append(row)
+    unique_rows = []
+    for row in rows:
+      if row not in unique_rows and 0 <= row < len(self.candidates):
+        unique_rows.append(row)
+    return sorted(unique_rows)
+
+  def selected_row_candidates(self):
+    return [self.candidates[row] for row in self.selected_row_indexes()]
+
   def accept(self):
-    self.selected_candidate = self.selected_row_candidate()
-    if self.selected_candidate is None:
+    selected = self.selected_row_candidates()
+    if not selected:
       return
+    self.selected_candidate = selected[0] if len(selected) == 1 else selected
     self.navigation_action = 'match'
+    if self.match_callback is not None:
+      self.match_callback(self.selected_candidate)
+      return
     self.accept_dialog()
 
   def previous_row(self):
     self.navigation_action = 'previous'
+    if self.previous_callback is not None:
+      self.previous_callback()
+      return
+    self.accept_dialog()
+
+  def ignore_current(self):
+    self.selected_candidate = None
+    self.navigation_action = 'ignore'
+    if self.ignore_callback is not None:
+      self.ignore_callback()
+      return
     self.accept_dialog()
 
   def next_row(self):
     self.navigation_action = 'next'
+    if self.next_callback is not None:
+      self.next_callback()
+      return
     self.accept_dialog()
 
   def reject(self):
@@ -322,7 +410,12 @@ class MatchReviewDialog(QDialog):
       return
     book_id = candidate.get('book_id', candidate.get('matched_book_id'))
     if book_id is not None:
-      self.view_book_callback(book_id)
+      try:
+        self.view_book_callback(book_id, parent=self)
+      except TypeError as err:
+        if 'parent' not in str(err):
+          raise
+        self.view_book_callback(book_id)
 
   def accept_dialog(self):
     try:

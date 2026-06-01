@@ -1,0 +1,452 @@
+{
+  "append_state": {
+    "entry_count": 62,
+    "last_entry_key": "the lord of the rings|j r r tolkien",
+    "last_position": "57",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "author": "Susanna Clarke",
+      "position": "1",
+      "rank_change": "NEW",
+      "title": "Piranesi",
+      "votes": "92"
+    },
+    {
+      "author": "J.R.R. Tolkien",
+      "position": "2",
+      "rank_change": "+1",
+      "title": "The Hobbit",
+      "votes": "65"
+    },
+    {
+      "author": "Terry Pratchett & Neil Gaiman",
+      "position": "3",
+      "rank_change": "+2",
+      "title": "Good Omens",
+      "votes": "52"
+    },
+    {
+      "author": "M.L. Wang",
+      "position": "4",
+      "rank_change": "+41",
+      "title": "The Sword of Kaigen",
+      "votes": "50"
+    },
+    {
+      "author": "Andy Weir",
+      "position": "5",
+      "rank_change": "NEW",
+      "title": "Project Hail Mary",
+      "votes": "49"
+    },
+    {
+      "author": "Naomi Novik",
+      "position": "6",
+      "rank_change": "+7",
+      "title": "Spinning Silver",
+      "votes": "47"
+    },
+    {
+      "author": "Susanna Clarke",
+      "position": "7",
+      "rank_change": "-3",
+      "title": "Jonathan Strange & Mr. Norrell",
+      "votes": "46"
+    },
+    {
+      "author": "Madeline Miller",
+      "position": "8",
+      "rank_change": "+8",
+      "title": "Circe",
+      "votes": "45"
+    },
+    {
+      "author": "Katherine Addison",
+      "position": "9",
+      "rank_change": "-8",
+      "title": "The Goblin Emperor",
+      "votes": "41"
+    },
+    {
+      "author": "Brandon Sanderson",
+      "position": "10",
+      "rank_change": "NEW",
+      "title": "Tress of the Emerald Sea",
+      "votes": "35"
+    },
+    {
+      "author": "Guy Gavriel Kay",
+      "position": "11",
+      "rank_change": "-9",
+      "title": "The Lions of Al-Rassan",
+      "votes": "33"
+    },
+    {
+      "author": "Naomi Novik",
+      "position": "11",
+      "rank_change": "-6",
+      "title": "Uprooted",
+      "votes": "33"
+    },
+    {
+      "author": "Lois McMaster Bujold",
+      "position": "13",
+      "rank_change": "+13",
+      "title": "The Curse of Chalion",
+      "votes": "32"
+    },
+    {
+      "author": "Ursula K. Le Guin",
+      "position": "14",
+      "rank_change": "+7",
+      "title": "The Left Hand of Darkness",
+      "votes": "31"
+    },
+    {
+      "author": "Octavia E. Butler",
+      "position": "15",
+      "rank_change": "+1",
+      "title": "Kindred",
+      "votes": "30"
+    },
+    {
+      "author": "Andy Weir",
+      "position": "15",
+      "rank_change": "-7",
+      "title": "The Martian",
+      "votes": "30"
+    },
+    {
+      "author": "Terry Pratchett",
+      "position": "17",
+      "rank_change": "+9",
+      "title": "Small Gods",
+      "votes": "29"
+    },
+    {
+      "author": "Amal El-Mohtar & Max Gladstone",
+      "position": "17",
+      "rank_change": "-2",
+      "title": "This Is How You Lose the Time War",
+      "votes": "29"
+    },
+    {
+      "author": "Brandon Sanderson",
+      "position": "17",
+      "rank_change": "+2",
+      "title": "Warbreaker",
+      "votes": "29"
+    },
+    {
+      "author": "Brandon Sanderson",
+      "position": "20",
+      "rank_change": "-10",
+      "title": "The Emperor's Soul",
+      "votes": "27"
+    },
+    {
+      "author": "Joe Abercrombie",
+      "position": "21",
+      "rank_change": "-5",
+      "title": "Best Served Cold",
+      "votes": "26"
+    },
+    {
+      "author": "Scott Hawkins",
+      "position": "21",
+      "rank_change": "-16",
+      "title": "The Library at Mount Char",
+      "votes": "26"
+    },
+    {
+      "author": "Simon Jimenez",
+      "position": "21",
+      "rank_change": "NEW",
+      "title": "The Spear Cuts Through Water",
+      "votes": "26"
+    },
+    {
+      "author": "Neil Gaiman",
+      "position": "24",
+      "rank_change": "-11",
+      "title": "American Gods",
+      "votes": "25"
+    },
+    {
+      "author": "Madeline Miller",
+      "position": "25",
+      "rank_change": "+14",
+      "title": "The Song of Achilles",
+      "votes": "23"
+    },
+    {
+      "author": "Joe Abercrombie",
+      "position": "26",
+      "rank_change": "+9",
+      "title": "The Heroes",
+      "votes": "22"
+    },
+    {
+      "author": "Guy Gavriel Kay",
+      "position": "26",
+      "rank_change": "-14",
+      "title": "Tigana",
+      "votes": "22"
+    },
+    {
+      "author": "Brandon Sanderson",
+      "position": "28",
+      "rank_change": "NEW",
+      "title": "Yumi and the Nightmare Painter",
+      "votes": "22"
+    },
+    {
+      "author": "Emily St. John Mandel",
+      "position": "29",
+      "rank_change": "+6",
+      "title": "Station Eleven",
+      "votes": "21"
+    },
+    {
+      "author": "Neil Gaiman",
+      "position": "30",
+      "rank_change": "-4",
+      "title": "The Ocean at the End of the Lane",
+      "votes": "20"
+    },
+    {
+      "author": "Brandon Sanderson",
+      "position": "31",
+      "rank_change": "-8",
+      "title": "Elantris",
+      "votes": "19"
+    },
+    {
+      "author": "Neil Gaiman",
+      "position": "31",
+      "rank_change": "-1",
+      "title": "Neverwhere",
+      "votes": "19"
+    },
+    {
+      "author": "Peter S. Beagle",
+      "position": "31",
+      "rank_change": "+14",
+      "title": "The Last Unicorn",
+      "votes": "19"
+    },
+    {
+      "author": "Samantha Shannon",
+      "position": "31",
+      "rank_change": "+8",
+      "title": "The Priory of the Orange Tree",
+      "votes": "19"
+    },
+    {
+      "author": "Alix E. Harrow",
+      "position": "31",
+      "rank_change": "+24",
+      "title": "The Ten Thousand Doors of January",
+      "votes": "19"
+    },
+    {
+      "author": "Nicholas Eames",
+      "position": "36",
+      "rank_change": "+19",
+      "title": "Kings of the Wyld",
+      "votes": "18"
+    },
+    {
+      "author": "Richard Adams",
+      "position": "36",
+      "rank_change": "-1",
+      "title": "Watership Down",
+      "votes": "18"
+    },
+    {
+      "author": "M.L. Wang",
+      "position": "38",
+      "rank_change": "NEW",
+      "title": "Blood Over Bright Haven",
+      "votes": "17"
+    },
+    {
+      "author": "George Orwell",
+      "position": "39",
+      "rank_change": "NEW",
+      "title": "1984",
+      "votes": "16"
+    },
+    {
+      "author": "Mary Shelley",
+      "position": "39",
+      "rank_change": "+30",
+      "title": "Frankenstein",
+      "votes": "16"
+    },
+    {
+      "author": "Patricia A. McKillip",
+      "position": "39",
+      "rank_change": "-20",
+      "title": "The Forgotten Beasts of Eld",
+      "votes": "16"
+    },
+    {
+      "author": "Becky Chambers",
+      "position": "39",
+      "rank_change": "+30",
+      "title": "To Be Taught, If Fortunate",
+      "votes": "16"
+    },
+    {
+      "author": "William Goldman",
+      "position": "43",
+      "rank_change": "-20",
+      "title": "The Princess Bride",
+      "votes": "15"
+    },
+    {
+      "author": "R.F. Kuang",
+      "position": "44",
+      "rank_change": "NEW",
+      "title": "Babel",
+      "votes": "14"
+    },
+    {
+      "author": "Diana Wynne Jones",
+      "position": "44",
+      "rank_change": "NEW",
+      "title": "Howl's Moving Castle",
+      "votes": "14"
+    },
+    {
+      "author": "Ursula K. Le Guin",
+      "position": "44",
+      "rank_change": "+1",
+      "title": "The Dispossessed",
+      "votes": "14"
+    },
+    {
+      "author": "David Mitchell",
+      "position": "47",
+      "rank_change": "+8",
+      "title": "Cloud Atlas",
+      "votes": "13"
+    },
+    {
+      "author": "T. Kingfisher",
+      "position": "47",
+      "rank_change": "NEW",
+      "title": "Nettle & Bone",
+      "votes": "13"
+    },
+    {
+      "author": "China Mieville",
+      "position": "47",
+      "rank_change": "+8",
+      "title": "The City & the City",
+      "votes": "13"
+    },
+    {
+      "author": "Alix E. Harrow",
+      "position": "47",
+      "rank_change": "NEW",
+      "title": "The Once and Future Witches",
+      "votes": "13"
+    },
+    {
+      "author": "J.R.R. Tolkien",
+      "position": "47",
+      "rank_change": "+22",
+      "title": "The Silmarillion",
+      "votes": "13"
+    },
+    {
+      "author": "Stephen King",
+      "position": "47",
+      "rank_change": "NEW",
+      "title": "The Stand",
+      "votes": "13"
+    },
+    {
+      "author": "Erin Morgenstern",
+      "position": "53",
+      "rank_change": "-30",
+      "title": "The Night Circus",
+      "votes": "12"
+    },
+    {
+      "author": "Robin McKinley",
+      "position": "54",
+      "rank_change": "-15",
+      "title": "Deerskin",
+      "votes": "11"
+    },
+    {
+      "author": "Neil Gaiman",
+      "position": "54",
+      "rank_change": "-28",
+      "title": "Stardust",
+      "votes": "11"
+    },
+    {
+      "author": "Ann Leckie",
+      "position": "54",
+      "rank_change": "+1",
+      "title": "The Raven Tower",
+      "votes": "11"
+    },
+    {
+      "author": "Stephen King",
+      "position": "57",
+      "rank_change": "NEW",
+      "title": "11-22-63",
+      "votes": "10"
+    },
+    {
+      "author": "Christopher Buehlman",
+      "position": "57",
+      "rank_change": "NEW",
+      "title": "Between Two Fires",
+      "votes": "10"
+    },
+    {
+      "author": "Adrian Tchaikovsky",
+      "position": "57",
+      "rank_change": "-27",
+      "title": "Guns of the Dawn",
+      "votes": "10"
+    },
+    {
+      "author": "Terry Pratchett",
+      "position": "57",
+      "rank_change": "NEW",
+      "title": "Monstrous Regiment",
+      "votes": "10"
+    },
+    {
+      "author": "Kazuo Ishiguro",
+      "position": "57",
+      "rank_change": "-2",
+      "title": "Never Let Me Go",
+      "votes": "10"
+    },
+    {
+      "author": "J.R.R. Tolkien",
+      "position": "57",
+      "rank_change": "+30",
+      "title": "The Lord of the Rings",
+      "votes": "10"
+    }
+  ],
+  "fetched_at": "2026-05-06T04:05:12Z",
+  "list_id": "r_fantasy_top_standalone_novels_2024",
+  "list_name": "r/Fantasy Top Standalone Novels 2024",
+  "match_series": true,
+  "notes": [],
+  "parser": "r_fantasy_top_standalone_novels_2024",
+  "schema_version": 1,
+  "source_url": "https://old.reddit.com/r/Fantasy/comments/1agicpw/rfantasys_2024_top_standalone_novel_poll_results/"
+}

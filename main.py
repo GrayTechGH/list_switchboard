@@ -125,6 +125,12 @@ A Calibre GUI plugin for managing an active reading list and stored alternate li
 
 List Switchboard only edits the configured metadata fields. It does not delete, move, convert, or modify book files.'''
 
+DEFAULT_USER_AGENT = (
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
+  'AppleWebKit/537.36 (KHTML, like Gecko) '
+  'Chrome/124.0.0.0 Safari/537.36'
+)
+
 
 def decode_url_response(response):
   data = response.read()
@@ -239,17 +245,16 @@ class ListSwitchboardCore(
       return ', '.join(str(author) for author in authors)
     return str(authors)
 
-  def fetch_url(self, url):
-    headers = {
-      'User-Agent': (
-        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
-        'AppleWebKit/537.36 (KHTML, like Gecko) '
-        'Chrome/124.0.0.0 Safari/537.36'
-      ),
+  def fetch_headers(self, user_agent=None):
+    return {
+      'User-Agent': user_agent or DEFAULT_USER_AGENT,
       'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
       'Accept-Language': 'en-US,en;q=0.9',
       'Connection': 'close',
     }
+
+  def fetch_url(self, url, user_agent=None):
+    headers = self.fetch_headers(user_agent=user_agent)
     if CalibreBrowser is not None:
       browser = self.calibre_browser(headers)
       response = browser.open(url, timeout=30)

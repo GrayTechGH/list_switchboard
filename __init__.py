@@ -12,8 +12,8 @@ class ListSwitchboardPlugin(InterfaceActionBase):
   name = 'List Switchboard'
   description = 'Manage active and stored reading lists in configured metadata fields'
   supported_platforms = ['windows', 'osx', 'linux']
-  author = 'List Switchboard contributors'
-  version = (1, 0, 0)
+  author = 'GrayTechGH'
+  version = (1, 1, 0)
   minimum_calibre_version = (0, 7, 53)
   actual_plugin = 'calibre_plugins.list_switchboard.ui:ListSwitchboardAction'
 

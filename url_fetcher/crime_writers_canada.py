@@ -116,7 +116,13 @@ class UrlFetcherCrimeWritersOfCanadaNonfiction(UrlFetcherCrimeWritersOfCanadaAwa
   NAME = 'Crime Writers of Canada Award - Nonfiction'
   FILTER_CATEGORIES = CWC_NONFICTION_CATEGORIES
   CATEGORY = 'True Crime'
-  CATEGORY_ALIASES = ('Nonfiction', 'Non-Fiction', 'Best Nonfiction Crime Book')
+  CATEGORY_ALIASES = (
+    'Nonfiction',
+    'Non-Fiction',
+    'Best Nonfiction Crime Book',
+    'Best Crime Nonfiction',
+    'Crime Nonfiction',
+  )
 
 
 class UrlFetcherCrimeWritersOfCanadaJuvenileYA(UrlFetcherCrimeWritersOfCanadaAward):
@@ -124,11 +130,22 @@ class UrlFetcherCrimeWritersOfCanadaJuvenileYA(UrlFetcherCrimeWritersOfCanadaAwa
   NAME = 'Crime Writers of Canada Award - Juvenile/Young Adult'
   FILTER_CATEGORIES = CWC_YA_CATEGORIES
   CATEGORY = 'Juvenile or Young Adult'
-  CATEGORY_ALIASES = ('Juvenile/Young Adult', 'Young Adult', 'Best Juvenile or Young Adult')
+  CATEGORY_ALIASES = (
+    'Juvenile/Young Adult',
+    'Young Adult',
+    'Best Juvenile or Young Adult',
+    'Best Juvenile or Young Adult Crime Book',
+    'Juvenile or Young Adult Crime Book',
+  )
 
 
 class UrlFetcherCrimeWritersOfCanadaFrenchCrimeBook(UrlFetcherCrimeWritersOfCanadaAward):
   source_id = 'crime_writers_of_canada_award_french_language_crime_book'
   NAME = 'Crime Writers of Canada Award - French Language Crime Book'
   CATEGORY = 'French Crime Book'
-  CATEGORY_ALIASES = ('French Language Crime Book', 'Best French Crime Book')
+  CATEGORY_ALIASES = (
+    'French Language Crime Book',
+    'Best French Crime Book',
+    'Best Crime Book in French',
+    'Crime Book in French',
+  )

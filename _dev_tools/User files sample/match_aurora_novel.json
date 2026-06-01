@@ -1,0 +1,149 @@
+{
+  "list_id": "aurora_novel",
+  "matches": [
+    {
+      "entry_key": "the siege of burning grass|premee moham",
+      "imported_author": "Premee Moham",
+      "imported_title": "The Siege of Burning Grass",
+      "matched_at": "2026-05-18T08:47:41Z",
+      "matched_authors": [
+        "Premee Mohamed"
+      ],
+      "matched_book_id": 38816,
+      "matched_book_ids": [
+        38816
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Premee Mohamed"
+          ],
+          "matched_book_id": 38816,
+          "matched_title": "The Siege of Burning Grass"
+        }
+      ],
+      "matched_title": "The Siege of Burning Grass"
+    },
+    {
+      "entry_key": "a broken darkness|premee moham",
+      "imported_author": "Premee Moham",
+      "imported_title": "A Broken Darkness",
+      "matched_at": "2026-05-18T09:10:27Z",
+      "matched_authors": [
+        "Premee Mohamed"
+      ],
+      "matched_book_id": 38823,
+      "matched_book_ids": [
+        38823
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Premee Mohamed"
+          ],
+          "matched_book_id": 38823,
+          "matched_title": "A Broken Darkness"
+        }
+      ],
+      "matched_title": "A Broken Darkness"
+    },
+    {
+      "entry_key": "the void ascendant|premee moham",
+      "imported_author": "Premee Moham",
+      "imported_title": "The Void Ascendant",
+      "matched_at": "2026-05-18T09:10:35Z",
+      "matched_authors": [
+        "Premee Mohamed"
+      ],
+      "matched_book_id": 38821,
+      "matched_book_ids": [
+        38821
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Premee Mohamed"
+          ],
+          "matched_book_id": 38821,
+          "matched_title": "The Void Ascendant"
+        }
+      ],
+      "matched_title": "The Void Ascendant"
+    },
+    {
+      "entry_key": "beneath the rising|premee moham",
+      "imported_author": "Premee Moham",
+      "imported_title": "Beneath the Rising",
+      "matched_at": "2026-05-18T09:10:57Z",
+      "matched_authors": [
+        "Carol McMichael Reese",
+        "Michael Sorkin",
+        "Anthony Fontenot"
+      ],
+      "matched_book_id": 38824,
+      "matched_book_ids": [
+        38824
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Carol McMichael Reese",
+            "Michael Sorkin",
+            "Anthony Fontenot"
+          ],
+          "matched_book_id": 38824,
+          "matched_title": "Beneath the Rising"
+        }
+      ],
+      "matched_title": "Beneath the Rising"
+    },
+    {
+      "entry_key": "a stitch in time|kelley armstrong",
+      "imported_author": "Kelley Armstrong",
+      "imported_title": "A Stitch in Time",
+      "matched_at": "2026-05-18T09:42:42Z",
+      "matched_authors": [
+        "Kelley Armstrong"
+      ],
+      "matched_book_id": 38828,
+      "matched_book_ids": [
+        38828
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Kelley Armstrong"
+          ],
+          "matched_book_id": 38828,
+          "matched_title": "A Twist of Fate"
+        }
+      ],
+      "matched_title": "A Twist of Fate"
+    },
+    {
+      "entry_key": "eutopia a novel of terrible optimism|david nickle",
+      "imported_author": "David Nickle",
+      "imported_title": "Eutopia: A Novel of Terrible Optimism",
+      "matched_at": "2026-05-18T13:27:37Z",
+      "matched_authors": [
+        "David Nickle"
+      ],
+      "matched_book_id": 38870,
+      "matched_book_ids": [
+        38870
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "David Nickle"
+          ],
+          "matched_book_id": 38870,
+          "matched_title": "Eutopia"
+        }
+      ],
+      "matched_title": "Eutopia"
+    }
+  ],
+  "saved_at": "2026-05-18T13:27:37Z",
+  "schema_version": 1
+}

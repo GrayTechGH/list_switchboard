@@ -54,6 +54,7 @@ class UrlFetcherGeneric:
   FILTER_CATEGORIES = DEFAULT_FILTER_CATEGORIES
   PARSER_CLASS = ListParserBase
   REQUIRES_SERIES_MATCHING = False
+  USER_AGENT = None
 
   @property
   def name(self):
@@ -124,6 +125,16 @@ class UrlFetcherGeneric:
   def get_filter_list(self):
     return self.parser().get_filter_list()
 
+  def fetch_url(self, fetch_url, url):
+    user_agent = getattr(self, 'USER_AGENT', None)
+    if user_agent:
+      try:
+        return fetch_url(url, user_agent=user_agent)
+      except TypeError as err:
+        if 'user_agent' not in str(err) and 'keyword' not in str(err):
+          raise
+    return fetch_url(url)
+
   def fetch_and_parse(
       self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
       before_fetch=None, after_fetch=None, before_parse=None,
@@ -155,14 +166,15 @@ class UrlFetcherGeneric:
       try:
         if before_fetch is not None:
           before_fetch(url)
-        html = fetch_url(url)
+        fetcher_fetch_url = lambda target_url: self.fetch_url(fetch_url, target_url)
+        html = fetcher_fetch_url(url)
         if after_fetch is not None:
           after_fetch(url, html)
         if before_parse is not None:
           before_parse(url)
         parsed = self.parse(
           html,
-          fetch_url=fetch_url,
+          fetch_url=fetcher_fetch_url,
           sleep=sleep,
           fetch_error=fetch_error,
           log=log,

@@ -1,0 +1,822 @@
+{
+  "list_id": "sword_and_laser_book_list",
+  "matches": [
+    {
+      "entry_key": "cordelia s honour|lois mcmaster bujold",
+      "imported_author": "Lois McMaster Bujold",
+      "imported_title": "Cordelia's Honour",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Lois McMaster Bujold"
+      ],
+      "matched_book_id": 117,
+      "matched_book_ids": [
+        117
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Lois McMaster Bujold"
+          ],
+          "matched_book_id": 117,
+          "matched_title": "Cordelia's Honor (Books 2-3)"
+        }
+      ],
+      "matched_title": "Cordelia's Honor (Books 2-3)"
+    },
+    {
+      "entry_key": "shadow and claw|gene wolfe",
+      "imported_author": "Gene Wolfe",
+      "imported_title": "Shadow and Claw",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Gene Wolfe"
+      ],
+      "matched_book_id": 15513,
+      "matched_book_ids": [
+        15513
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Gene Wolfe"
+          ],
+          "matched_book_id": 15513,
+          "matched_title": "Shadow & Claw (Books 1-2)"
+        }
+      ],
+      "matched_title": "Shadow & Claw (Books 1-2)"
+    },
+    {
+      "entry_key": "a psalm for the wild bilt|becky chambers",
+      "imported_author": "Becky Chambers",
+      "imported_title": "A Psalm for the Wild-Bilt",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Becky Chambers"
+      ],
+      "matched_book_id": 16437,
+      "matched_book_ids": [
+        16437
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Becky Chambers"
+          ],
+          "matched_book_id": 16437,
+          "matched_title": "A Psalm for the Wild-Built"
+        }
+      ],
+      "matched_title": "A Psalm for the Wild-Built"
+    },
+    {
+      "entry_key": "mickey 7|edward ashton",
+      "imported_author": "Edward Ashton",
+      "imported_title": "Mickey 7",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Edward Ashton"
+      ],
+      "matched_book_id": 16442,
+      "matched_book_ids": [
+        16442
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Edward Ashton"
+          ],
+          "matched_book_id": 16442,
+          "matched_title": "Mickey7"
+        }
+      ],
+      "matched_title": "Mickey7"
+    },
+    {
+      "entry_key": "wool|hugh howey",
+      "imported_author": "Hugh Howey",
+      "imported_title": "Wool",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Hugh Howey"
+      ],
+      "matched_book_id": 16880,
+      "matched_book_ids": [
+        16880
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Hugh Howey"
+          ],
+          "matched_book_id": 16880,
+          "matched_title": "The Silo Saga Omnibus: Wool, Shift, Dust, and Silo Stories"
+        }
+      ],
+      "matched_title": "The Silo Saga Omnibus: Wool, Shift, Dust, and Silo Stories"
+    },
+    {
+      "entry_key": "oryx and crake|margaret atwood",
+      "imported_author": "Margaret Atwood",
+      "imported_title": "Oryx and Crake",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Margaret Atwood"
+      ],
+      "matched_book_id": 16921,
+      "matched_book_ids": [
+        16921
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Margaret Atwood"
+          ],
+          "matched_book_id": 16921,
+          "matched_title": "The MaddAddam Trilogy: Oryx and Crake; The Year of the Flood; MaddAddam"
+        }
+      ],
+      "matched_title": "The MaddAddam Trilogy: Oryx and Crake; The Year of the Flood; MaddAddam"
+    },
+    {
+      "entry_key": "way station|clifford d simak",
+      "imported_author": "Clifford D. Simak",
+      "imported_title": "Way Station",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Clifford D. Simak"
+      ],
+      "matched_book_id": 16958,
+      "matched_book_ids": [
+        16958
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Clifford D. Simak"
+          ],
+          "matched_book_id": 16958,
+          "matched_title": "The Waystation"
+        }
+      ],
+      "matched_title": "The Waystation"
+    },
+    {
+      "entry_key": "wild seed|octavia e butler",
+      "imported_author": "Octavia E. Butler",
+      "imported_title": "Wild Seed",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Octavia E. Butler"
+      ],
+      "matched_book_id": 16989,
+      "matched_book_ids": [
+        16989
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Octavia E. Butler"
+          ],
+          "matched_book_id": 16989,
+          "matched_title": "Seed to Harvest: The Complete Patternist Series"
+        }
+      ],
+      "matched_title": "Seed to Harvest: The Complete Patternist Series"
+    },
+    {
+      "entry_key": "lud in the mist|hope mirrlees",
+      "imported_author": "Hope Mirrlees",
+      "imported_title": "Lud-in-the-Mist",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Hope Mirrlees"
+      ],
+      "matched_book_id": 18395,
+      "matched_book_ids": [
+        18395
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Hope Mirrlees"
+          ],
+          "matched_book_id": 18395,
+          "matched_title": "Lud-In-The-Mist by Hope Mirrlees, Fiction, Epic Poetry, Classics"
+        }
+      ],
+      "matched_title": "Lud-In-The-Mist by Hope Mirrlees, Fiction, Epic Poetry, Classics"
+    },
+    {
+      "entry_key": "the last wish|andrzej sapkowski",
+      "imported_author": "Andrzej Sapkowski",
+      "imported_title": "The Last Wish",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Andrzej Sapkowski"
+      ],
+      "matched_book_id": 18533,
+      "matched_book_ids": [
+        18533
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Andrzej Sapkowski"
+          ],
+          "matched_book_id": 18533,
+          "matched_title": "Introducing the Witcher: The Last Wish, Sword of Destiny and Blood of Elves"
+        }
+      ],
+      "matched_title": "Introducing the Witcher: The Last Wish, Sword of Destiny and Blood of Elves"
+    },
+    {
+      "entry_key": "the time traders|andre norton",
+      "imported_author": "Andre Norton",
+      "imported_title": "The Time Traders",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Andre Norton"
+      ],
+      "matched_book_id": 18540,
+      "matched_book_ids": [
+        18540
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Andre Norton"
+          ],
+          "matched_book_id": 18540,
+          "matched_title": "Time Traders/Galactic Derelict (Books 1-2)"
+        }
+      ],
+      "matched_title": "Time Traders/Galactic Derelict (Books 1-2)"
+    },
+    {
+      "entry_key": "the red first light|linda nagata",
+      "imported_author": "Linda Nagata",
+      "imported_title": "The Red: First Light",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Linda Nagata"
+      ],
+      "matched_book_id": 18541,
+      "matched_book_ids": [
+        18541
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Linda Nagata"
+          ],
+          "matched_book_id": 18541,
+          "matched_title": "First Light"
+        }
+      ],
+      "matched_title": "First Light"
+    },
+    {
+      "entry_key": "swordspoint|ellen kushner",
+      "imported_author": "Ellen Kushner",
+      "imported_title": "Swordspoint",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Ellen Kushner"
+      ],
+      "matched_book_id": 18555,
+      "matched_book_ids": [
+        18555
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Ellen Kushner"
+          ],
+          "matched_book_id": 18555,
+          "matched_title": "Complete Riverside"
+        }
+      ],
+      "matched_title": "Complete Riverside"
+    },
+    {
+      "entry_key": "a natural history of dragons a memoir by lady trent|marie brennan",
+      "imported_author": "Marie Brennan",
+      "imported_title": "A Natural History of Dragons: A Memoir by Lady Trent",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Marie Brennan"
+      ],
+      "matched_book_id": 18674,
+      "matched_book_ids": [
+        18674
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Marie Brennan"
+          ],
+          "matched_book_id": 18674,
+          "matched_title": "A Natural History of Dragons"
+        }
+      ],
+      "matched_title": "A Natural History of Dragons"
+    },
+    {
+      "entry_key": "riddle master|patricia a mckillip",
+      "imported_author": "Patricia A. McKillip",
+      "imported_title": "Riddle-Master",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Patricia A. McKillip"
+      ],
+      "matched_book_id": 18699,
+      "matched_book_ids": [
+        18699
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Patricia A. McKillip"
+          ],
+          "matched_book_id": 18699,
+          "matched_title": "The Riddle-Master of Hed"
+        }
+      ],
+      "matched_title": "The Riddle-Master of Hed"
+    },
+    {
+      "entry_key": "elric of melnibon|michael moorcock",
+      "imported_author": "Michael Moorcock",
+      "imported_title": "Elric of Melnibon\u00e9",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Michael Moorcock"
+      ],
+      "matched_book_id": 18858,
+      "matched_book_ids": [
+        18858
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Michael Moorcock"
+          ],
+          "matched_book_id": 18858,
+          "matched_title": "Elric Saga Part One (Books 1, 8, 2, 3)"
+        }
+      ],
+      "matched_title": "Elric Saga Part One (Books 1, 8, 2, 3)"
+    },
+    {
+      "entry_key": "the angel of the revolution a tale of the coming terror|george chetwynd griffith",
+      "imported_author": "George Chetwynd Griffith",
+      "imported_title": "The Angel of the Revolution: A Tale of the Coming Terror",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "George Griffith"
+      ],
+      "matched_book_id": 19650,
+      "matched_book_ids": [
+        19650
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "George Griffith"
+          ],
+          "matched_book_id": 19650,
+          "matched_title": "The Angel of the Revolution"
+        }
+      ],
+      "matched_title": "The Angel of the Revolution"
+    },
+    {
+      "entry_key": "theft of swords|michael j sullivan",
+      "imported_author": "Michael J. Sullivan",
+      "imported_title": "Theft of Swords",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Michael J. Sullivan"
+      ],
+      "matched_book_id": 19814,
+      "matched_book_ids": [
+        19814
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Michael J. Sullivan"
+          ],
+          "matched_book_id": 19814,
+          "matched_title": "Theft of Swords (Books 1-2)"
+        }
+      ],
+      "matched_title": "Theft of Swords (Books 1-2)"
+    },
+    {
+      "entry_key": "rivers of london|ben aaronovitch",
+      "imported_author": "Ben Aaronovitch",
+      "imported_title": "Rivers of London",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Ben Aaronovitch"
+      ],
+      "matched_book_id": 19862,
+      "matched_book_ids": [
+        19862
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Ben Aaronovitch"
+          ],
+          "matched_book_id": 19862,
+          "matched_title": "Rivers of London: 10th Anniversary Edition"
+        }
+      ],
+      "matched_title": "Rivers of London: 10th Anniversary Edition"
+    },
+    {
+      "entry_key": "the bloodprint|alix e harrow",
+      "imported_author": "Alix E. Harrow",
+      "imported_title": "The Bloodprint",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Ausma Zehanat Khan"
+      ],
+      "matched_book_id": 19900,
+      "matched_book_ids": [
+        19900
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Ausma Zehanat Khan"
+          ],
+          "matched_book_id": 19900,
+          "matched_title": "The Bloodprint"
+        }
+      ],
+      "matched_title": "The Bloodprint"
+    },
+    {
+      "entry_key": "the 13 1 2 lives of captain blue bear|walter moers",
+      "imported_author": "Walter Moers",
+      "imported_title": "The 13 1/2 Lives of Captain Blue Bear",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Harvnotes",
+        "Walter Moers"
+      ],
+      "matched_book_id": 19950,
+      "matched_book_ids": [
+        19950
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Harvnotes",
+            "Walter Moers"
+          ],
+          "matched_book_id": 19950,
+          "matched_title": "The 13\u00bd Lives of Captain Bluebear"
+        }
+      ],
+      "matched_title": "The 13\u00bd Lives of Captain Bluebear"
+    },
+    {
+      "entry_key": "chung kuo the middle kingdom|david wingrove",
+      "imported_author": "David Wingrove",
+      "imported_title": "Chung Kuo: The Middle Kingdom",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "David Wingrove"
+      ],
+      "matched_book_id": 20408,
+      "matched_book_ids": [
+        20408
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "David Wingrove"
+          ],
+          "matched_book_id": 20408,
+          "matched_title": "The Middle Kingdom"
+        }
+      ],
+      "matched_title": "The Middle Kingdom"
+    },
+    {
+      "entry_key": "the black company|glen cook",
+      "imported_author": "Glen Cook",
+      "imported_title": "The Black Company",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Glen Cook"
+      ],
+      "matched_book_id": 20610,
+      "matched_book_ids": [
+        20610
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Glen Cook"
+          ],
+          "matched_book_id": 20610,
+          "matched_title": "Chronicles of the Black Company"
+        }
+      ],
+      "matched_title": "Chronicles of the Black Company"
+    },
+    {
+      "entry_key": "talion revanant|michael a stackpole",
+      "imported_author": "Michael A. Stackpole",
+      "imported_title": "Talion: Revanant",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Michael A. Stackpole"
+      ],
+      "matched_book_id": 23629,
+      "matched_book_ids": [
+        23629
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Michael A. Stackpole"
+          ],
+          "matched_book_id": 23629,
+          "matched_title": "Talion: Revenant"
+        }
+      ],
+      "matched_title": "Talion: Revenant"
+    },
+    {
+      "entry_key": "jonathan strange and mr norrell|susanna clarke",
+      "imported_author": "Susanna Clarke",
+      "imported_title": "Jonathan Strange and Mr Norrell",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Susanna Clarke"
+      ],
+      "matched_book_id": 23630,
+      "matched_book_ids": [
+        23630
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Susanna Clarke"
+          ],
+          "matched_book_id": 23630,
+          "matched_title": "Jonathan Strange & Mr Norrell"
+        }
+      ],
+      "matched_title": "Jonathan Strange & Mr Norrell"
+    },
+    {
+      "entry_key": "ironside a modern faery s tale|holly black",
+      "imported_author": "Holly Black",
+      "imported_title": "Ironside:A Modern Faery's Tale",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Holly Black"
+      ],
+      "matched_book_id": 23636,
+      "matched_book_ids": [
+        23636
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Holly Black"
+          ],
+          "matched_book_id": 23636,
+          "matched_title": "Ironside"
+        }
+      ],
+      "matched_title": "Ironside"
+    },
+    {
+      "entry_key": "nine princes in amber|roger zelazny",
+      "imported_author": "Roger Zelazny",
+      "imported_title": "Nine Princes in Amber",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Roger Zelazny"
+      ],
+      "matched_book_id": 23667,
+      "matched_book_ids": [
+        23667
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Roger Zelazny"
+          ],
+          "matched_book_id": 23667,
+          "matched_title": "The Great Book of Amber"
+        }
+      ],
+      "matched_title": "The Great Book of Amber"
+    },
+    {
+      "entry_key": "we are legion we are bob|dennis e taylor",
+      "imported_author": "Dennis E. Taylor",
+      "imported_title": "We are Legion We are Bob",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Dennis E. Taylor"
+      ],
+      "matched_book_id": 23696,
+      "matched_book_ids": [
+        23696
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Dennis E. Taylor"
+          ],
+          "matched_book_id": 23696,
+          "matched_title": "We Are Legion"
+        }
+      ],
+      "matched_title": "We Are Legion"
+    },
+    {
+      "entry_key": "enchanted|enchanted",
+      "imported_author": "Enchanted",
+      "imported_title": "Enchanted",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Alethea Kontis"
+      ],
+      "matched_book_id": 23809,
+      "matched_book_ids": [
+        23809
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Alethea Kontis"
+          ],
+          "matched_book_id": 23809,
+          "matched_title": "Enchanted"
+        }
+      ],
+      "matched_title": "Enchanted"
+    },
+    {
+      "entry_key": "the girl who could move shit with her mind|jackson ford",
+      "imported_author": "Jackson Ford",
+      "imported_title": "The Girl Who Could Move Shit With Her Mind",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Jackson Ford"
+      ],
+      "matched_book_id": 23840,
+      "matched_book_ids": [
+        23840
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Jackson Ford"
+          ],
+          "matched_book_id": 23840,
+          "matched_title": "The Girl Who Could Move Sh*t With Her Mind"
+        }
+      ],
+      "matched_title": "The Girl Who Could Move Sh*t With Her Mind"
+    },
+    {
+      "entry_key": "twelve kings|bradley p beaulieu",
+      "imported_author": "Bradley P. Beaulieu",
+      "imported_title": "Twelve Kings",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Bradley P. Beaulieu"
+      ],
+      "matched_book_id": 27909,
+      "matched_book_ids": [
+        27909
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Bradley P. Beaulieu"
+          ],
+          "matched_book_id": 27909,
+          "matched_title": "Twelve Kings in Sharakhai"
+        }
+      ],
+      "matched_title": "Twelve Kings in Sharakhai"
+    },
+    {
+      "entry_key": "blackout all clear|connie willis",
+      "imported_author": "Connie Willis",
+      "imported_title": "Blackout/All Clear",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Connie Willis"
+      ],
+      "matched_book_id": 31349,
+      "matched_book_ids": [
+        31349,
+        31350
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Connie Willis"
+          ],
+          "matched_book_id": 31349,
+          "matched_title": "All Clear"
+        },
+        {
+          "matched_authors": [
+            "Connie Willis"
+          ],
+          "matched_book_id": 31350,
+          "matched_title": "Blackout"
+        }
+      ],
+      "matched_title": "All Clear"
+    },
+    {
+      "entry_key": "hounded|kevin hearne",
+      "imported_author": "Kevin Hearne",
+      "imported_title": "Hounded",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Kevin Hearne"
+      ],
+      "matched_book_id": 32074,
+      "matched_book_ids": [
+        32074
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Kevin Hearne"
+          ],
+          "matched_book_id": 32074,
+          "matched_title": "Hounded (Books 0.6,1)"
+        }
+      ],
+      "matched_title": "Hounded (Books 0.6,1)"
+    },
+    {
+      "entry_key": "he who fights with monsters|shirtaloon",
+      "imported_author": "Shirtaloon",
+      "imported_title": "He Who Fights With Monsters",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Shirtaloon"
+      ],
+      "matched_book_id": 38181,
+      "matched_book_ids": [
+        38181
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Shirtaloon"
+          ],
+          "matched_book_id": 38181,
+          "matched_title": "He Who Fights With Monsters 1: Outworlder"
+        }
+      ],
+      "matched_title": "He Who Fights With Monsters 1: Outworlder"
+    },
+    {
+      "entry_key": "the book of records|madeleine thien",
+      "imported_author": "Madeleine Thien",
+      "imported_title": "The Book of Records",
+      "matched_at": "2026-05-12T06:49:10Z",
+      "matched_authors": [
+        "Madeleine Thien"
+      ],
+      "matched_book_id": 38194,
+      "matched_book_ids": [
+        38194
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Madeleine Thien"
+          ],
+          "matched_book_id": 38194,
+          "matched_title": "The Book of Records: A Novel"
+        }
+      ],
+      "matched_title": "The Book of Records: A Novel"
+    }
+  ],
+  "saved_at": "2026-05-12T06:49:10Z",
+  "schema_version": 1
+}

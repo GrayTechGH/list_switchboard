@@ -19,11 +19,16 @@ import re
 from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
+from bs4.element import NavigableString, Tag
 
 try:
+  from calibre_plugins.list_switchboard.parser.award_base import (
+    split_title_author,
+  )
   from calibre_plugins.list_switchboard.parser.base import ListParserBase
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
 except ImportError:
+  from .award_base import split_title_author
   from .base import ListParserBase
   from .generic import position_sort_key
 
@@ -73,7 +78,7 @@ class LocusAnnualAwardsParser(ListParserBase):
         notes.append(f'Locus Awards {year} could not be fetched: {err}')
         _log(log, 'fetch-failed', {'year': year, 'url': url, 'error': str(err)})
         continue
-      year_entries = self.parse_year(html, url, year, category, category_aliases)
+      year_entries = self.parse_year(html, url, year, category, category_aliases, log=log)
       if year_entries:
         entries.extend(year_entries)
         _log(log, 'year-parsed', {'year': year, 'url': url, 'entries': len(year_entries)})
@@ -87,8 +92,9 @@ class LocusAnnualAwardsParser(ListParserBase):
       'match_series': False,
     }
 
-  def parse_year(self, html, source_url, year, category, category_aliases):
-    return _parse_annual_year(html, source_url, year, category, category_aliases)
+  def parse_year(self, html, source_url, year, category, category_aliases, log=None):
+    return _parse_annual_year(
+      html, source_url, year, category, category_aliases, log=log)
 
 
 class LocusAllTimeAwardsParser(ListParserBase):
@@ -98,8 +104,9 @@ class LocusAllTimeAwardsParser(ListParserBase):
   Invariants:
   - All entries receive numeric rank positions directly from the page ('1', '2'...).
   - All-time rows are 'Author, Title (publisher)' — author before title, opposite
-    of annual rows and every other SFADB parser. rsplit on the last comma after
-    stripping publication notes gives author on the left, title on the right.
+    of annual rows and every other SFADB parser. SFADB's HTML separates the
+    author link text from the following comma, so the parser prefers that
+    structural separator to avoid splitting title commas into the author field.
   - All entries carry result='ranked'; there is no winner/nominee distinction.
   """
 
@@ -153,15 +160,15 @@ def _locus_year_links(soup, base_url):
   return sorted(links, key=lambda item: item['year'])
 
 
-def _parse_annual_year(html, source_url, year, category, category_aliases):
+def _parse_annual_year(html, source_url, year, category, category_aliases, log=None):
   soup = BeautifulSoup(html, 'html.parser')
   lines = _locus_text_lines(soup)
+  category_lines = _annual_category_lines(lines, category_aliases)
   rows = []
-  for line in _annual_category_lines(lines, category_aliases):
+  for line in category_lines:
     match = RANKED_LINE.match(line)
-    if match is None:
-      continue
-    parsed = _parse_annual_item(match.group(2))
+    item_text = match.group(2) if match is not None else line
+    parsed = _parse_annual_item(item_text)
     if parsed is None:
       continue
     rows.append(parsed)
@@ -240,16 +247,13 @@ def _parse_all_time_item(text):
   Parse one ranked all-time line.
 
   All-time lines are 'Author, Title (publisher)' — author before title,
-  opposite of annual rows. rsplit on the last comma after stripping publication
-  notes gives author on the left and title on the right.
+  opposite of annual rows. Prefer the spaced comma produced by
+  _ordered_list_item_line() so title commas stay in the title while author
+  suffix commas, such as 'Jr.', stay in the author.
   """
   text = _strip_tie_marker(_normalize_line(text))
   work_text = _strip_publication_notes(text)
-  if ',' not in work_text:
-    return None
-  author, title = work_text.rsplit(',', 1)
-  author = author.strip()
-  title = title.strip()
+  author, title = _split_all_time_author_title(work_text)
   if not title or not author:
     return None
   return {
@@ -258,12 +262,16 @@ def _parse_all_time_item(text):
   }
 
 
-def _split_title_author(text):
-  work_text = _strip_publication_notes(text)
-  if ',' not in work_text:
+def _split_all_time_author_title(text):
+  if ' , ' in text:
+    return [part.strip() for part in text.split(' , ', 1)]
+  if ',' not in text:
     return '', ''
-  title, author = work_text.rsplit(',', 1)
-  return title.strip(), author.strip()
+  return [part.strip() for part in text.split(',', 1)]
+
+
+def _split_title_author(text):
+  return split_title_author(text)
 
 
 def _locus_text_lines(soup):
@@ -276,21 +284,59 @@ def _locus_text_lines(soup):
   """
   block_lines = []
   for node in soup.find_all(['h1', 'h2', 'h3', 'h4', 'p', 'li']):
-    line = _normalize_line(node.get_text(' ', strip=True))
-    if node.name == 'li' and line and node.parent is not None and node.parent.name == 'ol':
-      index = sum(
-        1 for sibling in node.find_previous_siblings('li')
-        if sibling.parent is node.parent)
-      line = f'{index + 1}. {line}'
+    if node.name == 'li' and node.find_parent('ol') is not None:
+      line = _ordered_list_item_line(node)
+    else:
+      line = _normalize_line(node.get_text(' ', strip=True))
     block_lines.append(line)
   block_lines = [line for line in block_lines if line]
   if any(RANKED_LINE.match(line) for line in block_lines):
+    full_text_lines = _full_text_lines(soup)
+    if _has_annual_category_heading(full_text_lines) and not _has_annual_category_heading(block_lines):
+      return full_text_lines
     return block_lines
+  return _full_text_lines(soup)
+
+
+def _has_annual_category_heading(lines):
+  return any(_normalize_heading(line) in ANNUAL_BOUNDARY for line in lines)
+
+
+def _full_text_lines(soup):
   for br in soup.find_all('br'):
     br.replace_with('\n')
   text = soup.get_text(' ')
   text = re.sub(r'\s*\n\s*', '\n', text)
   return [_normalize_line(line) for line in text.splitlines() if _normalize_line(line)]
+
+
+def _ordered_list_item_line(node):
+  """
+  Return one ranked line from SFADB's malformed citation-page lists.
+
+  SFADB all-time citation pages omit closing </li> tags, so BeautifulSoup's
+  html.parser nests the rest of the ordered list inside the first item. Reading
+  only direct content before a nested li/br keeps each rank separate.
+  """
+  parts = []
+  for child in node.contents:
+    if isinstance(child, NavigableString):
+      parts.append(str(child))
+      continue
+    if not isinstance(child, Tag):
+      continue
+    if child.name in ('br', 'li'):
+      break
+    parts.append(child.get_text(' ', strip=True))
+  line = _normalize_line(' '.join(parts))
+  if not line:
+    return ''
+  rank = _normalize_line(node.get('value') or '')
+  if not rank:
+    rank = str(sum(
+      1 for sibling in node.find_previous_siblings('li')
+      if sibling.parent is node.parent) + 1)
+  return f'{rank}. {line}'
 
 
 def _strip_publication_notes(value):

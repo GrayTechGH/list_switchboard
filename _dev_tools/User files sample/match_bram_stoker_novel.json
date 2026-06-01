@@ -1,0 +1,30 @@
+{
+  "list_id": "bram_stoker_novel",
+  "matches": [
+    {
+      "entry_key": "creepers|david morrell",
+      "imported_author": "David Morrell",
+      "imported_title": "Creepers",
+      "matched_at": "2026-05-18T13:47:50Z",
+      "matched_authors": [
+        "David Nickle"
+      ],
+      "matched_book_id": 38872,
+      "matched_book_ids": [
+        38872
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "David Nickle"
+          ],
+          "matched_book_id": 38872,
+          "matched_title": "Volk: A Novel of Radiant Abomination"
+        }
+      ],
+      "matched_title": "Volk: A Novel of Radiant Abomination"
+    }
+  ],
+  "saved_at": "2026-05-18T13:47:50Z",
+  "schema_version": 1
+}

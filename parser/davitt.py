@@ -42,7 +42,7 @@ class DavittWikipediaParser(WikipediaAwardTableParserBase):
   def table_rows(
       self, table, header_map, base_url, category, category_aliases,
       allowed_results):
-    rows = super().table_rows(
+    rows = self._table_rows_standard(
       table, header_map, base_url, category, category_aliases, allowed_results)
     if rows:
       for row in rows:

@@ -44,16 +44,9 @@ class NedKellyWikipediaParser(WikipediaAwardTableParserBase):
   def parse(self, html, base_url, name, category, category_aliases=()):
     soup = BeautifulSoup(html, 'html.parser')
     detailed_rows = []
-    accepted = {
-      normalize_heading(value) for value in (category, *category_aliases) if value
-    }
-    for heading in soup.find_all(['h2', 'h3', 'h4']):
-      if normalize_heading(heading.get_text(' ', strip=True)) not in accepted:
-        continue
-      table = heading.find_next('table')
-      if table is None:
-        continue
-      detailed_rows.extend(super().table_rows(
+    for _heading, table in self.tables_under_category_headings(
+        soup, category, category_aliases, match='exact'):
+      detailed_rows.extend(self._table_rows_standard(
         table,
         self.header_map(table),
         base_url,

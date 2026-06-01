@@ -1,0 +1,2398 @@
+{
+  "append_state": {
+    "entry_count": 238,
+    "last_entry_key": "the salt oracle|lorraine wilson",
+    "last_position": "2026.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "author": "Philip K. Dick",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1979",
+      "category": "Novel",
+      "position": "1979",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1979",
+      "title": "A Scanner Darkly"
+    },
+    {
+      "author": "J. G. Ballard",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1980",
+      "category": "Novel",
+      "position": "1980",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1980",
+      "title": "The Unlimited Dream Company"
+    },
+    {
+      "author": "Rob Swigart",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1980",
+      "category": "Novel",
+      "position": "1980.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1980",
+      "title": "A.K.A.: A Cosmic Fable"
+    },
+    {
+      "author": "Tom Reamy",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1980",
+      "category": "Novel",
+      "position": "1980.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1980",
+      "title": "Blind Voices"
+    },
+    {
+      "author": "Arthur C. Clarke",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1980",
+      "category": "Novel",
+      "position": "1980.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1980",
+      "title": "The Fountains of Paradise"
+    },
+    {
+      "author": "Thomas M. Disch",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1980",
+      "category": "Novel",
+      "position": "1980.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1980",
+      "title": "On Wings of Song"
+    },
+    {
+      "author": "Gregory Benford",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1981",
+      "category": "Novel",
+      "position": "1981",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1981",
+      "title": "Timescape"
+    },
+    {
+      "author": "Frederik Pohl",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1981",
+      "category": "Novel",
+      "position": "1981.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1981",
+      "title": "Beyond the Blue Event Horizon"
+    },
+    {
+      "author": "John Crowley",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1981",
+      "category": "Novel",
+      "position": "1981.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1981",
+      "title": "Engine Summer"
+    },
+    {
+      "author": "Keith Roberts",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1981",
+      "category": "Novel",
+      "position": "1981.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1981",
+      "title": "Molly Zero"
+    },
+    {
+      "author": "Michael Bishop",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1981",
+      "category": "Novel",
+      "position": "1981.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1981",
+      "title": "Transfigurations"
+    },
+    {
+      "author": "Norman Spinrad",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1981",
+      "category": "Novel",
+      "position": "1981.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1981",
+      "title": "A World Between"
+    },
+    {
+      "author": "Gene Wolfe",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1982",
+      "category": "Novel",
+      "position": "1982",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1982",
+      "title": "The Shadow of the Torturer"
+    },
+    {
+      "author": "Christopher Priest",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1982",
+      "category": "Novel",
+      "position": "1982.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1982",
+      "title": "The Affirmation"
+    },
+    {
+      "author": "J. G. Ballard",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1982",
+      "category": "Novel",
+      "position": "1982.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1982",
+      "title": "Hello America"
+    },
+    {
+      "author": "Robert Holdstock",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1982",
+      "category": "Novel",
+      "position": "1982.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1982",
+      "title": "Where Time Winds Blow"
+    },
+    {
+      "author": "Brian W. Aldiss",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1983",
+      "title": "Helliconia Spring"
+    },
+    {
+      "author": "Philip K. Dick",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1983",
+      "title": "The Divine Invasion"
+    },
+    {
+      "author": "John Crowley",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1983",
+      "title": "Little, Big"
+    },
+    {
+      "author": "Michael Bishop",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1983",
+      "title": "No Enemy But Time"
+    },
+    {
+      "author": "Gene Wolfe",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1983",
+      "title": "The Sword of the Lictor"
+    },
+    {
+      "author": "John Sladek",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1984",
+      "category": "Novel",
+      "position": "1984",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1984",
+      "title": "Tik-Tok"
+    },
+    {
+      "author": "Michael G. Coney",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1984",
+      "category": "Novel",
+      "position": "1984.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1984",
+      "title": "Cat Karina"
+    },
+    {
+      "author": "Gene Wolfe",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1984",
+      "category": "Novel",
+      "position": "1984.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1984",
+      "title": "The Citadel of the Autarch"
+    },
+    {
+      "author": "Mary Gentle",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1984",
+      "category": "Novel",
+      "position": "1984.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1984",
+      "title": "Golden Witchbreed"
+    },
+    {
+      "author": "Brian W. Aldiss",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1984",
+      "category": "Novel",
+      "position": "1984.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1984",
+      "title": "Helliconia Summer"
+    },
+    {
+      "author": "Robert Holdstock",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1985",
+      "category": "Novel",
+      "position": "1985",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1985",
+      "title": "Mythago Wood"
+    },
+    {
+      "author": "J. G. Ballard",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1985",
+      "category": "Novel",
+      "position": "1985.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1985",
+      "title": "Empire of the Sun"
+    },
+    {
+      "author": "Christopher Priest",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1985",
+      "category": "Novel",
+      "position": "1985.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1985",
+      "title": "The Glamour"
+    },
+    {
+      "author": "William Gibson",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1985",
+      "category": "Novel",
+      "position": "1985.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1985",
+      "title": "Neuromancer"
+    },
+    {
+      "author": "Angela Carter",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1985",
+      "category": "Novel",
+      "position": "1985.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1985",
+      "title": "Nights at the Circus"
+    },
+    {
+      "author": "Brian W. Aldiss",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1986",
+      "title": "Helliconia Winter"
+    },
+    {
+      "author": "Tim Powers",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1986",
+      "title": "The Anubis Gates"
+    },
+    {
+      "author": "Gene Wolfe",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1986",
+      "title": "Free Live Free"
+    },
+    {
+      "author": "Keith Roberts",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1986",
+      "title": "Kiteworld"
+    },
+    {
+      "author": "Geoff Ryman",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1986",
+      "title": "The Warrior Who Carried Life"
+    },
+    {
+      "author": "Bob Shaw",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1987",
+      "title": "The Ragged Astronauts"
+    },
+    {
+      "author": "Greg Bear",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1987",
+      "title": "Blood Music"
+    },
+    {
+      "author": "William Gibson",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1987",
+      "title": "Count Zero"
+    },
+    {
+      "author": "Josephine Saxton",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1987",
+      "title": "Queen of the States"
+    },
+    {
+      "author": "Bruce Sterling",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1987",
+      "title": "Schismatrix"
+    },
+    {
+      "author": "Keith Roberts",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1988",
+      "title": "Gr\u00e1inne"
+    },
+    {
+      "author": "Robert Holdstock",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1989",
+      "title": "Lavondyss"
+    },
+    {
+      "author": "Terry Pratchett",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1990",
+      "title": "Pyramids"
+    },
+    {
+      "author": "Jonathan Carroll",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1990",
+      "title": "A Child Across the Sky"
+    },
+    {
+      "author": "Geoff Ryman",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1990",
+      "title": "The Child Garden"
+    },
+    {
+      "author": "C. J. Cherryh",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1990",
+      "title": "Cyteen"
+    },
+    {
+      "author": "Kim Stanley Robinson",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1990",
+      "title": "The Gold Coast"
+    },
+    {
+      "author": "Colin Greenland",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1991",
+      "title": "Take Back Plenty"
+    },
+    {
+      "author": "William Gibson & Bruce Sterling",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1991",
+      "title": "The Difference Engine"
+    },
+    {
+      "author": "Dan Simmons",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1991",
+      "title": "Hyperion"
+    },
+    {
+      "author": "Mary Gentle",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1991",
+      "title": "Rats and Gargoyles"
+    },
+    {
+      "author": "Iain M. Banks",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1991",
+      "title": "Use of Weapons"
+    },
+    {
+      "author": "Dan Simmons",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1992",
+      "title": "The Fall of Hyperion"
+    },
+    {
+      "author": "Mary Gentle",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1992",
+      "title": "The Architecture of Desire"
+    },
+    {
+      "author": "Paul J. McAuley",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1992",
+      "title": "Eternal Light"
+    },
+    {
+      "author": "Kim Stanley Robinson",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1993",
+      "title": "Red Mars"
+    },
+    {
+      "author": "Connie Willis",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1993",
+      "title": "Doomsday Book"
+    },
+    {
+      "author": "Ian McDonald",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1993",
+      "title": "Hearts, Hands and Voices"
+    },
+    {
+      "author": "Simon Ings",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1993",
+      "title": "Hot Head"
+    },
+    {
+      "author": "Lisa Tuttle",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1993",
+      "title": "Lost Futures"
+    },
+    {
+      "author": "Christopher Evans",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1994",
+      "title": "Aztec Century"
+    },
+    {
+      "author": "Nicola Griffith",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1994",
+      "title": "Ammonite"
+    },
+    {
+      "author": "Kim Stanley Robinson",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1994",
+      "title": "Green Mars"
+    },
+    {
+      "author": "Colin Greenland",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1994",
+      "title": "Harm's Way"
+    },
+    {
+      "author": "Neal Stephenson",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1994",
+      "title": "Snow Crash"
+    },
+    {
+      "author": "Iain M. Banks",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1995",
+      "title": "Feersum Endjinn"
+    },
+    {
+      "author": "Eric Brown",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1995",
+      "title": "Engineman"
+    },
+    {
+      "author": "Ian McDonald",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1995",
+      "title": "Necroville"
+    },
+    {
+      "author": "Gwyneth Jones",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1995",
+      "title": "North Wind"
+    },
+    {
+      "author": "Greg Egan",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1995",
+      "title": "Permutation City"
+    },
+    {
+      "author": "Stephen Baxter",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1996",
+      "title": "The Time Ships"
+    },
+    {
+      "author": "Michael Moorcock",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1996",
+      "title": "Blood"
+    },
+    {
+      "author": "Ian McDonald",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1996",
+      "title": "Chaga"
+    },
+    {
+      "author": "Paul J. McAuley",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1996",
+      "title": "Fairyland"
+    },
+    {
+      "author": "Peter F. Hamilton",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1996",
+      "title": "The Nano Flower"
+    },
+    {
+      "author": "Christopher Priest",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1996",
+      "title": "The Prestige"
+    },
+    {
+      "author": "Iain M. Banks",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1997",
+      "title": "Excession"
+    },
+    {
+      "author": "Kim Stanley Robinson",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1997",
+      "title": "Blue Mars"
+    },
+    {
+      "author": "Bruce Sterling",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1997",
+      "title": "Holy Fire"
+    },
+    {
+      "author": "Stephen Bury",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1997",
+      "title": "Interface"
+    },
+    {
+      "author": "Gill Alderman",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1997",
+      "title": "The Memory Palace"
+    },
+    {
+      "author": "Ken MacLeod",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1997",
+      "title": "The Stone Canal"
+    },
+    {
+      "author": "Mary Doria Russell",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1998",
+      "title": "The Sparrow"
+    },
+    {
+      "author": "Tim Powers",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1998",
+      "title": "Earthquake Weather"
+    },
+    {
+      "author": "Michael Swanwick",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1998",
+      "title": "Jack Faust"
+    },
+    {
+      "author": "M. John Harrison",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1998",
+      "title": "Signs of Life"
+    },
+    {
+      "author": "Jack Deighton",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1998",
+      "title": "A Son of the Rock"
+    },
+    {
+      "author": "Christopher Priest",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1999",
+      "title": "The Extremes"
+    },
+    {
+      "author": "Ken MacLeod",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1999",
+      "title": "The Cassini Division"
+    },
+    {
+      "author": "Iain M. Banks",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1999",
+      "title": "Inversions"
+    },
+    {
+      "author": "Kathleen Ann Goonan",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1999",
+      "title": "Queen City Jazz"
+    },
+    {
+      "author": "John Meaney",
+      "award": "British Science Fiction Association Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_1999",
+      "title": "To Hold Infinity"
+    },
+    {
+      "author": "Ken MacLeod",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2000",
+      "title": "The Sky Road"
+    },
+    {
+      "author": "Mary Doria Russell",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2000",
+      "title": "Children of God"
+    },
+    {
+      "author": "Simon Ings",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2000",
+      "title": "Headlong"
+    },
+    {
+      "author": "Justina Robson",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2000",
+      "title": "Silver Screen"
+    },
+    {
+      "author": "Eugene Byrne",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2000",
+      "title": "ThigMOO"
+    },
+    {
+      "author": "Mary Gentle",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2001",
+      "title": "Ash: A Secret History"
+    },
+    {
+      "author": "John Meaney",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2001",
+      "title": "Paradox"
+    },
+    {
+      "author": "China Mi\u00e9ville",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2001",
+      "title": "Perdido Street Station"
+    },
+    {
+      "author": "Jon Courtenay Grimwood",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2001",
+      "title": "redRobe"
+    },
+    {
+      "author": "Alastair Reynolds",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2001",
+      "title": "Revelation Space"
+    },
+    {
+      "author": "Alastair Reynolds",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2002",
+      "title": "Chasm City"
+    },
+    {
+      "author": "Neil Gaiman",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2002",
+      "title": "American Gods"
+    },
+    {
+      "author": "Gwyneth Jones",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2002",
+      "title": "Bold as Love"
+    },
+    {
+      "author": "Geoff Ryman",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2002",
+      "title": "Lust"
+    },
+    {
+      "author": "Jon Courtenay Grimwood",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2002",
+      "title": "Pashazade: The First Arabesk"
+    },
+    {
+      "author": "Paul McAuley",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2002",
+      "title": "The Secret of Life"
+    },
+    {
+      "author": "Christopher Priest",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2003",
+      "title": "The Separation"
+    },
+    {
+      "author": "Gwyneth Jones",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2003",
+      "title": "Castles Made of Sand"
+    },
+    {
+      "author": "Jon Courtenay Grimwood",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2003",
+      "title": "Effendi: The Second Arabesk"
+    },
+    {
+      "author": "M. John Harrison",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2003",
+      "title": "Light"
+    },
+    {
+      "author": "China Mi\u00e9ville",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2003",
+      "title": "The Scar"
+    },
+    {
+      "author": "Kim Stanley Robinson",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2003",
+      "title": "The Years of Rice and Salt"
+    },
+    {
+      "author": "Jon Courtenay Grimwood",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2004",
+      "title": "Felaheen: The Third Arabesk"
+    },
+    {
+      "author": "Alastair Reynolds",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2004",
+      "title": "Absolution Gap"
+    },
+    {
+      "author": "Tricia Sullivan",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2004",
+      "title": "Maul"
+    },
+    {
+      "author": "Gwyneth Jones",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2004",
+      "title": "Midnight Lamp"
+    },
+    {
+      "author": "Justina Robson",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2004",
+      "title": "Natural History"
+    },
+    {
+      "author": "William Gibson",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2004",
+      "title": "Pattern Recognition"
+    },
+    {
+      "author": "Ian McDonald",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2005",
+      "title": "River of Gods"
+    },
+    {
+      "author": "Alastair Reynolds",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2005",
+      "title": "Century Rain"
+    },
+    {
+      "author": "Kim Stanley Robinson",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2005",
+      "title": "Forty Signs of Rain"
+    },
+    {
+      "author": "Susanna Clarke",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2005",
+      "title": "Jonathan Strange & Mr Norrell"
+    },
+    {
+      "author": "Ken MacLeod",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2005",
+      "title": "Newton's Wake"
+    },
+    {
+      "author": "Jon Courtenay Grimwood",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2005",
+      "title": "Stamping Butterflies"
+    },
+    {
+      "author": "Geoff Ryman",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2006",
+      "title": "Air"
+    },
+    {
+      "author": "Jon Courtenay Grimwood",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2006",
+      "title": "9Tail Fox"
+    },
+    {
+      "author": "Charles Stross",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2006",
+      "title": "Accelerando"
+    },
+    {
+      "author": "Ken MacLeod",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2006",
+      "title": "Learning the World"
+    },
+    {
+      "author": "Justina Robson",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2006",
+      "title": "Living Next Door to the God of Love"
+    },
+    {
+      "author": "Jon Courtenay Grimwood",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2007",
+      "title": "End of the World Blues"
+    },
+    {
+      "author": "Liz Williams",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2007",
+      "title": "Darkland"
+    },
+    {
+      "author": "Roger Levy",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2007",
+      "title": "Icarus"
+    },
+    {
+      "author": "James Morrow",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2007",
+      "title": "The Last Witchfinder"
+    },
+    {
+      "author": "M. John Harrison",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2007",
+      "title": "Nova Swing"
+    },
+    {
+      "author": "Ian McDonald",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2008",
+      "title": "Brasyl"
+    },
+    {
+      "author": "Bryan Talbot",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2008",
+      "title": "Alice in Sunderland"
+    },
+    {
+      "author": "Richard Morgan",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2008",
+      "title": "Black Man"
+    },
+    {
+      "author": "Ken MacLeod",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2008",
+      "title": "The Execution Channel"
+    },
+    {
+      "author": "Alastair Reynolds",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2008",
+      "title": "The Prefect"
+    },
+    {
+      "author": "Michael Chabon",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2008",
+      "title": "The Yiddish Policemen's Union"
+    },
+    {
+      "author": "Ken MacLeod",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2009",
+      "title": "The Night Sessions"
+    },
+    {
+      "author": "Neal Stephenson",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2009",
+      "title": "Anathem"
+    },
+    {
+      "author": "Stephen Baxter",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2009",
+      "title": "Flood"
+    },
+    {
+      "author": "Nick Harkaway",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2009",
+      "title": "The Gone-Away World"
+    },
+    {
+      "author": "China Mi\u00e9ville",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2010",
+      "title": "The City & the City"
+    },
+    {
+      "author": "Stephen Baxter",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2010",
+      "title": "Ark"
+    },
+    {
+      "author": "Ursula K. Le Guin",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2010",
+      "title": "Lavinia"
+    },
+    {
+      "author": "Adam Roberts",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2010",
+      "title": "Yellow Blue Tibia"
+    },
+    {
+      "author": "Ian McDonald",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2011",
+      "title": "The Dervish House"
+    },
+    {
+      "author": "Tricia Sullivan",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2011",
+      "title": "Lightborn"
+    },
+    {
+      "author": "Ken MacLeod",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2011",
+      "title": "The Restoration Game"
+    },
+    {
+      "author": "Paolo Bacigalupi",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2011",
+      "title": "The Windup Girl"
+    },
+    {
+      "author": "Lauren Beukes",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2011",
+      "title": "Zoo City"
+    },
+    {
+      "author": "Christopher Priest",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2012",
+      "title": "The Islanders"
+    },
+    {
+      "author": "Adam Roberts",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2012",
+      "title": "By Light Alone"
+    },
+    {
+      "author": "Kim Lakin-Smith",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2012",
+      "title": "Cyber Circus"
+    },
+    {
+      "author": "China Mi\u00e9ville",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2012",
+      "title": "Embassytown"
+    },
+    {
+      "author": "Lavie Tidhar",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2012",
+      "title": "Osama"
+    },
+    {
+      "author": "Adam Roberts",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2013",
+      "title": "Jack Glass"
+    },
+    {
+      "author": "Kim Stanley Robinson",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2013",
+      "title": "2312"
+    },
+    {
+      "author": "Chris Beckett",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2013",
+      "title": "Dark Eden"
+    },
+    {
+      "author": "M. John Harrison",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2013",
+      "title": "Empty Space"
+    },
+    {
+      "author": "Ken MacLeod",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2013",
+      "title": "Intrusion"
+    },
+    {
+      "author": "Gareth L. Powell",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2014",
+      "title": "Ack-Ack Macaque"
+    },
+    {
+      "author": "Ann Leckie",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2014",
+      "title": "Ancillary Justice"
+    },
+    {
+      "author": "Christopher Priest",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2014",
+      "title": "The Adjacent"
+    },
+    {
+      "author": "Paul McAuley",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2014",
+      "title": "Evening's Empires"
+    },
+    {
+      "author": "Kameron Hurley",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2014",
+      "title": "God's War"
+    },
+    {
+      "author": "Ann Leckie",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2015",
+      "title": "Ancillary Sword"
+    },
+    {
+      "author": "Frances Hardinge",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2015",
+      "title": "Cuckoo Song"
+    },
+    {
+      "author": "Dave Hutchinson",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2015",
+      "title": "Europe in Autumn"
+    },
+    {
+      "author": "Claire North",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2015",
+      "title": "The First Fifteen Lives of Harry August"
+    },
+    {
+      "author": "Nnedi Okorafor",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2015",
+      "title": "Lagoon"
+    },
+    {
+      "author": "Neil Williamson",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2015",
+      "title": "The Moon King"
+    },
+    {
+      "author": "Nina Allan",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.06",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2015",
+      "title": "The Race"
+    },
+    {
+      "author": "Simon Ings",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.07",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2015",
+      "title": "Wolves"
+    },
+    {
+      "author": "Aliette de Bodard",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2016",
+      "title": "The House of Shattered Wings"
+    },
+    {
+      "author": "Dave Hutchinson",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2016",
+      "title": "Europe at Midnight"
+    },
+    {
+      "author": "Justina Robson",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2016",
+      "title": "Glorious Angels"
+    },
+    {
+      "author": "Ian McDonald",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2016",
+      "title": "Luna: New Moon"
+    },
+    {
+      "author": "Chris Beckett",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2016",
+      "title": "Mother of Eden"
+    },
+    {
+      "author": "Dave Hutchinson",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2017",
+      "title": "Europe in Winter"
+    },
+    {
+      "author": "Nick Wood",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2017",
+      "title": "Azanian Bridges"
+    },
+    {
+      "author": "Becky Chambers",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2017",
+      "title": "A Closed and Common Orbit"
+    },
+    {
+      "author": "Chris Beckett",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2017",
+      "title": "Daughter of Eden"
+    },
+    {
+      "author": "Tricia Sullivan",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2017",
+      "title": "Occupy Me"
+    },
+    {
+      "author": "Nina Allan",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2018",
+      "title": "The Rift"
+    },
+    {
+      "author": "Anne Charnock",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2018",
+      "title": "Dreams Before the Start of Time"
+    },
+    {
+      "author": "Mohsin Hamid",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2018",
+      "title": "Exit West"
+    },
+    {
+      "author": "Ann Leckie",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2018",
+      "title": "Provenance"
+    },
+    {
+      "author": "Gareth L. Powell",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2019",
+      "title": "Embers of War"
+    },
+    {
+      "author": "Emma Newman",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2019",
+      "title": "Before Mars"
+    },
+    {
+      "author": "Dave Hutchinson",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2019",
+      "title": "Europe at Dawn"
+    },
+    {
+      "author": "Yoon Ha Lee",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2019",
+      "title": "Revenant Gun"
+    },
+    {
+      "author": "Tade Thompson",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2019",
+      "title": "Rosewater"
+    },
+    {
+      "author": "Adrian Tchaikovsky",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2020",
+      "title": "Children of Ruin"
+    },
+    {
+      "author": "Emma Newman",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2020",
+      "title": "Atlas Alone"
+    },
+    {
+      "author": "Gareth L. Powell",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2020",
+      "title": "Fleet of Knives"
+    },
+    {
+      "author": "Juliet E. McKenna",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2020",
+      "title": "The Green Man's Foe"
+    },
+    {
+      "author": "Tade Thompson",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2020",
+      "title": "The Rosewater Insurrection"
+    },
+    {
+      "author": "N. K. Jemisin",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2021",
+      "title": "The City We Became"
+    },
+    {
+      "author": "Nikhil Singh",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2021",
+      "title": "Club Ded"
+    },
+    {
+      "author": "Liz Williams",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2021",
+      "title": "Comet Weather"
+    },
+    {
+      "author": "Adrian Tchaikovsky",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2021",
+      "title": "The Doors of Eden"
+    },
+    {
+      "author": "Gareth L. Powell",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2021",
+      "title": "Light of Impossible Stars"
+    },
+    {
+      "author": "Kim Stanley Robinson",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2021",
+      "title": "The Ministry for the Future"
+    },
+    {
+      "author": "Susanna Clarke",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.06",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2021",
+      "title": "Piranesi"
+    },
+    {
+      "author": "M. John Harrison",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.07",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2021",
+      "title": "The Sunken Land Begins to Rise Again"
+    },
+    {
+      "author": "Tiffani Angus",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.08",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2021",
+      "title": "Threading the Labyrinth"
+    },
+    {
+      "author": "Nick Wood",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.09",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2021",
+      "title": "Water Must Fall"
+    },
+    {
+      "author": "Adrian Tchaikovsky",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2022",
+      "title": "Shards of Earth"
+    },
+    {
+      "author": "Liz Williams",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2022",
+      "title": "Blackthorn Winter"
+    },
+    {
+      "author": "Arkady Martine",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2022",
+      "title": "A Desolation Called Peace"
+    },
+    {
+      "author": "Juliet E. McKenna",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2022",
+      "title": "Green Man's Challenge"
+    },
+    {
+      "author": "Adam Roberts",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2022",
+      "title": "Purgatory Mount"
+    },
+    {
+      "author": "Aliya Whiteley",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2022",
+      "title": "Skyward Inn"
+    },
+    {
+      "author": "Adrian Tchaikovsky",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2023",
+      "title": "City of Last Chances"
+    },
+    {
+      "author": "E. J. Swift",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2023",
+      "title": "The Coral Bones"
+    },
+    {
+      "author": "Aliette de Bodard",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2023",
+      "title": "The Red Scholar's Wake"
+    },
+    {
+      "author": "Gareth L. Powell",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2023",
+      "title": "Stars and Bones"
+    },
+    {
+      "author": "Adam Roberts",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2023",
+      "title": "The This"
+    },
+    {
+      "author": "Juliet E. McKenna",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2024",
+      "title": "The Green Man's Quarry"
+    },
+    {
+      "author": "Christopher Priest",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2024",
+      "title": "Airside"
+    },
+    {
+      "author": "Gareth L. Powell",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2024",
+      "title": "Descendant Machine"
+    },
+    {
+      "author": "Geoff Ryman",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2024",
+      "title": "HIM"
+    },
+    {
+      "author": "Wole Talabi",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2024",
+      "title": "Shigidi and the Brass Head of Obalufon"
+    },
+    {
+      "author": "Aliya Whiteley",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2025",
+      "title": "Three Eight One"
+    },
+    {
+      "author": "Oliver K. Langmead",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2025",
+      "title": "Calypso"
+    },
+    {
+      "author": "Fiona Moore",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2025",
+      "title": "Rabbit in the Moon"
+    },
+    {
+      "author": "Adrian Tchaikovsky",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2025",
+      "title": "Alien Clay"
+    },
+    {
+      "author": "E. J. Swift",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2026",
+      "category": "Novel",
+      "position": "2026",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2026",
+      "title": "When There Are Wolves Again"
+    },
+    {
+      "author": "Kirk Weddell",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2026",
+      "category": "Novel",
+      "position": "2026.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2026",
+      "title": "Edge of Oblivion"
+    },
+    {
+      "author": "Nina Allan",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2026",
+      "category": "Novel",
+      "position": "2026.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2026",
+      "title": "A Granite Silence"
+    },
+    {
+      "author": "Stewart Hotston",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2026",
+      "category": "Novel",
+      "position": "2026.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2026",
+      "title": "Project Hanuman"
+    },
+    {
+      "author": "Lorraine Wilson",
+      "award": "British Science Fiction Association Award",
+      "award_year": "2026",
+      "category": "Novel",
+      "position": "2026.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/British_SF_Association_Awards_2026",
+      "title": "The Salt Oracle"
+    }
+  ],
+  "fetched_at": "2026-05-24T14:12:27Z",
+  "list_id": "bsfa_novel",
+  "list_name": "BSFA - Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "bsfa_novel",
+  "schema_version": 1,
+  "source_url": "https://www.sfadb.com/British_SF_Association_Awards"
+}

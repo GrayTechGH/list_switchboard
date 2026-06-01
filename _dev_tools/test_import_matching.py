@@ -66,11 +66,15 @@ sys.modules.setdefault('calibre_plugins.list_switchboard.config', config_module)
 
 import main
 import list_state
+import dialogs.import_find as import_find_module
+import dialogs.import_report as import_report_module
+from dialogs.import_find import MatchReviewDialog
 from parser.reddit import parse_reddit_results
 from parser.sword_and_laser import (
   parse_sword_and_laser_book_list,
   parse_sword_and_laser_march_page,
 )
+from dialogs.import_report import ImportReportDialog
 from url_fetcher.r_fantasy_top_novels_2025 import UrlFetcherRFantasyTopNovels2025
 from url_fetcher.r_fantasy_top_self_published_novels_2024 import (
   UrlFetcherRFantasyTopSelfPublishedNovels2024,
@@ -386,6 +390,35 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertEqual(1, len(logged))
     self.assertEqual('https://swordandlaser.fandom.com/wiki/Book_List', logged[0][0])
     self.assertEqual(urls, logged[0][1])
+
+  def test_fetch_headers_accept_optional_user_agent(self):
+    core = object.__new__(main.ListSwitchboardCore)
+
+    self.assertEqual(main.DEFAULT_USER_AGENT, core.fetch_headers()['User-Agent'])
+    self.assertEqual(
+      'Custom Agent',
+      core.fetch_headers(user_agent='Custom Agent')['User-Agent'])
+
+  def test_isfdb_fallback_attempt_passes_user_agent_to_fetch_url(self):
+    from url_fetcher.isfdb_fallback import ISFDB_USER_AGENT
+    from url_fetcher.locus import UrlFetcherLocusAnnualSFNovel
+
+    fetcher = UrlFetcherLocusAnnualSFNovel()
+    attempt = [
+      item for item in fetcher.source_attempts()
+      if item.label == 'ISFDB'
+    ][0]
+    calls = []
+
+    def fetch_url(url, user_agent=None):
+      calls.append((url, user_agent))
+      return ''
+
+    attempt.fetch_url(fetch_url)('https://www.isfdb.org/cgi-bin/awardtype.cgi?28')
+
+    self.assertEqual([
+      ('https://www.isfdb.org/cgi-bin/awardtype.cgi?28', ISFDB_USER_AGENT)
+    ], calls)
 
   def test_sword_and_laser_parser_accepts_raw_wikitext_table(self):
     recipe = parser_source(UrlFetcherSwordAndLaser(), include_march_madness=False)
@@ -968,8 +1001,1236 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertEqual({1: '1'}, matched)
     self.assertEqual([], missing)
 
+  def test_find_match_author_ignore_title_indexes_each_calibre_author(self):
+    core = object.__new__(main.ListSwitchboardCore)
+
+    class FakeApi:
+      def all_field_for(self, field, ids, default_value=''):
+        if field == 'title':
+          return {
+            1: 'The Knight',
+            2: 'Orbit 10',
+            3: 'Not Wolfe',
+          }
+        if field == 'authors':
+          return {
+            1: ['Gene Wolfe'],
+            2: ['Damon Knight', 'Gene Wolfe', 'Edward Bryant'],
+            3: ['Bob Shaw'],
+          }
+        return {book_id: default_value for book_id in ids}
+
+    class FakeDb:
+      new_api = FakeApi()
+
+    core.db = FakeDb()
+    core.all_book_ids = lambda: [1, 2, 3]
+    core.all_local_series_values = lambda _ids: {
+      1: ['The Book of the New Sun'],
+      2: ['Orbit'],
+      3: [],
+    }
+
+    index = core.find_match_library_index(
+      title_mode=main.FIND_MODE_IGNORE,
+      author_mode=main.FIND_MODE_SIMILAR)
+    candidates = core.find_import_match_candidates_from_index(
+      {'title': 'The Shadow of the Torturer', 'author': 'Gene Wolfe'},
+      index)
+
+    self.assertEqual([2, 1], [candidate['book_id'] for candidate in candidates])
+    self.assertEqual([['Orbit'], ['The Book of the New Sun']], [
+      candidate['series'] for candidate in candidates
+    ])
+
+  def test_saved_ignored_directive_suppresses_automatic_match(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    core.update_import_match_progress = lambda *args, **kwargs: None
+    core.update_import_match_step_progress = lambda *args, **kwargs: None
+    core.import_entry_keys = main.ListSwitchboardCore.import_entry_keys.__get__(core)
+    core.debug_import_match_entry = lambda *_args: None
+    core.debug_import_match_entry_detail = lambda *_args: None
+    core.debug_import_empty_entry = lambda *_args: None
+    core.debug_import_goodreads_candidates = lambda *_args: None
+    core.debug_import_matched_book = lambda *_args: None
+    core.debug_import_match_start = lambda *_args: None
+    core.debug_import_saved_override_lookup = lambda *_args: None
+    core.debug_import_candidate_rejected = lambda *_args: None
+    core.goodreads_source_recovery_candidates = lambda *_args: []
+    core.saved_unmatched_overrides = lambda _list_id: {
+      'american gods|neil gaiman': {
+        'ignored': True,
+        'unmatched': True,
+        'previous_matched_book_ids': [1],
+        'previous_match_source': 'automatic',
+      }
+    }
+    core.saved_match_overrides = lambda _list_id: {}
+
+    class FakeApi:
+      def all_field_for(self, field, ids, default_value=''):
+        if field == 'title':
+          return {1: 'American Gods'}
+        if field == 'authors':
+          return {1: ['Neil Gaiman']}
+        return {book_id: default_value for book_id in ids}
+
+    class FakeDb:
+      new_api = FakeApi()
+
+    core.db = FakeDb()
+    core.all_book_ids = lambda: [1]
+    core.all_local_series_values = lambda _ids: {1: []}
+
+    matched, missing, review_rows = core.match_imported_entries(
+      [{'position': '1', 'title': 'American Gods', 'author': 'Neil Gaiman'}],
+      list_id='example_list',
+      allow_goodreads_recovery=False,
+      return_details=True)
+
+    self.assertEqual({}, matched)
+    self.assertEqual(['American Gods'], [entry['title'] for entry in missing])
+    self.assertEqual(True, review_rows[0]['ignored'])
+    self.assertEqual([1], review_rows[0]['previous_book_ids'])
+    self.assertEqual('ignored', review_rows[0]['match_source'])
+
+  def build_active_reconciliation_core(self, active_ids=None, active_positions=None):
+    core = object.__new__(main.ListSwitchboardCore)
+    main.prefs['active_list_field'] = '#reading_series'
+    core.active_book_ids_for_list = lambda _list_name: list(active_ids or [])
+    core.active_series_index_field = lambda: '#reading_series_index'
+    core.read_field = lambda _field, _book_id: 'Example List'
+    core.read_position_display = lambda _index_field, book_id, _fallback: (
+      str((active_positions or {}).get(book_id, '')), None)
+
+    class FakeApi:
+      def all_field_for(self, field, ids, default_value=''):
+        if field == 'title':
+          return {
+            1: 'First Book',
+            2: 'Second Book',
+            7: 'Moved Book',
+            8: 'Unknown Position Book',
+            11: 'Dune',
+            12: 'Citizen of the Galaxy',
+          }
+        if field == 'authors':
+          return {
+            1: ['Author One'],
+            2: ['Author Two'],
+            7: ['Move Author'],
+            8: ['Unknown Author'],
+            11: ['Frank Herbert'],
+            12: ['Robert A. Heinlein'],
+          }
+        return {book_id: default_value for book_id in ids}
+
+    class FakeDb:
+      new_api = FakeApi()
+
+    core.db = FakeDb()
+    return core
+
+  def test_active_reconciliation_deleted_manual_match_becomes_none(self):
+    core = self.build_active_reconciliation_core(active_ids=[])
+    row = core.import_review_row(
+      {'position': '1', 'title': 'First Book', 'author': 'Author One'},
+      matched=True,
+      book_ids=[1],
+      matched_books=[{
+        'matched_book_id': 1,
+        'matched_title': 'First Book',
+        'matched_authors': 'Author One',
+      }],
+      match_source='saved/manual override')
+
+    rows, notes = core.reconcile_review_rows_with_active_list(
+      'Example List', [row], active_name='Example List')
+
+    self.assertEqual([], notes)
+    self.assertEqual(rows, [row])
+    self.assertEqual(False, row['matched'])
+    self.assertEqual(False, row['ignored'])
+    self.assertEqual([], row['book_ids'])
+    self.assertEqual('never matched', row['match_source'])
+    self.assertEqual([1], row['previous_book_ids'])
+    self.assertEqual('saved/manual override', row['previous_match_source'])
+
+  def test_active_reconciliation_deleted_automatic_match_is_reinstated(self):
+    core = self.build_active_reconciliation_core(active_ids=[])
+    row = core.import_review_row(
+      {'position': '1', 'title': 'First Book', 'author': 'Author One'},
+      matched=True,
+      book_ids=[1],
+      matched_books=[{
+        'matched_book_id': 1,
+        'matched_title': 'First Book',
+        'matched_authors': 'Author One',
+      }],
+      match_source='automatic')
+
+    rows, notes = core.reconcile_review_rows_with_active_list(
+      'Example List', [row], active_name='Example List')
+
+    self.assertEqual([], notes)
+    self.assertEqual(rows, [row])
+    self.assertEqual(True, row['matched'])
+    self.assertEqual([1], row['book_ids'])
+    self.assertEqual('automatic', row['match_source'])
+    self.assertEqual([], row['previous_book_ids'])
+
+  def test_active_reconciliation_changed_index_remaps_book(self):
+    core = self.build_active_reconciliation_core(active_ids=[7], active_positions={7: '2'})
+    first = core.import_review_row(
+      {'position': '1', 'title': 'Moved Book', 'author': 'Move Author'},
+      matched=True,
+      book_ids=[7],
+      matched_books=[{
+        'matched_book_id': 7,
+        'matched_title': 'Moved Book',
+        'matched_authors': 'Move Author',
+      }],
+      match_source='automatic')
+    second = core.import_review_row({
+      'position': '2',
+      'title': 'Second Book',
+      'author': 'Author Two',
+    })
+
+    rows, notes = core.reconcile_review_rows_with_active_list(
+      'Example List', [first, second], active_name='Example List')
+
+    self.assertEqual([], notes)
+    self.assertEqual([first, second], rows)
+    self.assertEqual(False, first['matched'])
+    self.assertEqual([], first['book_ids'])
+    self.assertEqual([7], first['previous_book_ids'])
+    self.assertEqual(True, second['matched'])
+    self.assertEqual([7], second['book_ids'])
+    self.assertEqual('active list/manual edit', second['match_source'])
+
+  def test_active_reconciliation_keeps_ignored_without_active_remap(self):
+    core = self.build_active_reconciliation_core(active_ids=[])
+    row = core.import_review_row(
+      {'position': '1', 'title': 'First Book', 'author': 'Author One'},
+      match_source='ignored',
+      directive={
+        'ignored': True,
+        'previous_matched_book_ids': [1],
+        'previous_match_source': 'automatic',
+      })
+
+    core.reconcile_review_rows_with_active_list(
+      'Example List', [row], active_name='Example List')
+
+    self.assertEqual(True, row['ignored'])
+    self.assertEqual(False, row['matched'])
+    self.assertEqual('ignored', row['match_source'])
+
+  def test_active_reconciliation_active_position_does_not_override_ignored_directive(self):
+    core = self.build_active_reconciliation_core(active_ids=[1], active_positions={1: '1'})
+    row = core.import_review_row(
+      {'position': '1', 'title': 'First Book', 'author': 'Author One'},
+      match_source='ignored',
+      directive={
+        'ignored': True,
+        'previous_matched_book_ids': [1],
+        'previous_match_source': 'automatic',
+      })
+
+    core.reconcile_review_rows_with_active_list(
+      'Example List', [row], active_name='Example List')
+
+    self.assertEqual(True, row['ignored'])
+    self.assertEqual(False, row['matched'])
+    self.assertEqual([], row['book_ids'])
+    self.assertEqual('ignored', row['match_source'])
+
+  def test_active_reconciliation_stale_active_position_does_not_override_automatic_match(self):
+    core = self.build_active_reconciliation_core(active_ids=[12], active_positions={12: '1'})
+    dune = core.import_review_row(
+      {'position': '1', 'title': 'Dune', 'author': 'Frank Herbert'},
+      matched=True,
+      book_ids=[11],
+      matched_books=[{
+        'matched_book_id': 11,
+        'matched_title': 'Dune',
+        'matched_authors': 'Frank Herbert',
+      }],
+      match_source='automatic')
+    citizen = core.import_review_row(
+      {'position': '75', 'title': 'Citizen of the Galaxy', 'author': 'Robert A. Heinlein'},
+      matched=True,
+      book_ids=[12],
+      matched_books=[{
+        'matched_book_id': 12,
+        'matched_title': 'Citizen of the Galaxy',
+        'matched_authors': 'Robert A. Heinlein',
+      }],
+      match_source='automatic')
+
+    rows, notes = core.reconcile_review_rows_with_active_list(
+      'Example List', [dune, citizen], active_name='Example List')
+
+    self.assertEqual([], notes)
+    self.assertEqual([dune, citizen], rows)
+    self.assertEqual(True, dune['matched'])
+    self.assertEqual([11], dune['book_ids'])
+    self.assertEqual('automatic', dune['match_source'])
+    self.assertEqual(True, citizen['matched'])
+    self.assertEqual([12], citizen['book_ids'])
+    self.assertEqual('automatic', citizen['match_source'])
+
+  def test_active_reconciliation_reports_active_positions_missing_from_recipe(self):
+    core = self.build_active_reconciliation_core(active_ids=[8], active_positions={8: '9'})
+    row = core.import_review_row({
+      'position': '1',
+      'title': 'First Book',
+      'author': 'Author One',
+    })
+
+    _rows, notes = core.reconcile_review_rows_with_active_list(
+      'Example List', [row], active_name='Example List')
+
+    self.assertEqual(
+      ['1 current Active List book(s) use positions not found in the imported recipe.'],
+      notes)
+
+
+class ImportReportDialogStateTest(unittest.TestCase):
+
+  class FakeMatchTable:
+    def __init__(self, row=0):
+      self._row = row
+      self.selected = []
+
+    def currentRow(self):
+      return self._row
+
+    def setCurrentCell(self, row, _column):
+      self._row = row
+      self.selected.append(row)
+
+    def setRowCount(self, _count):
+      pass
+
+    def setItem(self, _row, _column, _item):
+      pass
+
+    def fontMetrics(self):
+      class Metrics:
+        def horizontalAdvance(self, text):
+          return len(str(text))
+      return Metrics()
+
+    def setColumnWidth(self, _column, _width):
+      pass
+
+  def build_dialog(self, row):
+    dialog = object.__new__(ImportReportDialog)
+    dialog.match_table = self.FakeMatchTable()
+    dialog.visible_rows = [row]
+    dialog.review_rows = [row]
+    dialog.current_view_mode = lambda: 'All'
+    dialog.rows_for_current_view = lambda: list(dialog.review_rows)
+    dialog.apply_stable_fixed_column_widths = lambda: None
+    dialog.update_toggle_button = lambda *_args: None
+    dialog.select_review_row = ImportReportDialog.select_review_row.__get__(dialog)
+    dialog.selected_review_row = ImportReportDialog.selected_review_row.__get__(dialog)
+    dialog.update_table_for_row = ImportReportDialog.update_table_for_row.__get__(dialog)
+    return dialog
+
+  def test_toggle_selected_match_cycles_matched_to_none_ignored_and_back(self):
+    row = {
+      'matched': True,
+      'ignored': False,
+      'book_ids': [7],
+      'matched_books': [{'matched_book_id': 7, 'matched_title': 'Book', 'matched_authors': 'Author'}],
+      'previous_book_ids': [],
+      'previous_matched_books': [],
+      'previous_match_source': '',
+      'match_source': 'manual find',
+      'can_toggle_on': True,
+    }
+    dialog = self.build_dialog(row)
+
+    dialog.toggle_selected_match()
+
+    self.assertEqual(False, row['matched'])
+    self.assertEqual(False, row['ignored'])
+    self.assertEqual([], row['book_ids'])
+    self.assertEqual([7], row['previous_book_ids'])
+    self.assertEqual('never matched', row['match_source'])
+
+    dialog.toggle_selected_match()
+
+    self.assertEqual(False, row['matched'])
+    self.assertEqual(True, row['ignored'])
+    self.assertEqual([], row['book_ids'])
+    self.assertEqual([7], row['previous_book_ids'])
+    self.assertEqual('ignored', row['match_source'])
+
+    dialog.toggle_selected_match()
+
+    self.assertEqual(True, row['matched'])
+    self.assertEqual(False, row['ignored'])
+    self.assertEqual([7], row['book_ids'])
+    self.assertEqual('manual find', row['match_source'])
+
+  def test_toggle_selected_match_cycles_unmatched_to_ignored_and_back(self):
+    row = {
+      'matched': False,
+      'ignored': False,
+      'book_ids': [],
+      'matched_books': [],
+      'previous_book_ids': [],
+      'previous_matched_books': [],
+      'previous_match_source': '',
+      'match_source': 'never matched',
+      'can_toggle_on': True,
+    }
+    dialog = self.build_dialog(row)
+
+    dialog.toggle_selected_match()
+    self.assertEqual(True, row['ignored'])
+    self.assertEqual('ignored', row['match_source'])
+
+    dialog.toggle_selected_match()
+    self.assertEqual(False, row['ignored'])
+    self.assertEqual(False, row['matched'])
+    self.assertEqual('never matched', row['match_source'])
+
+  def test_update_table_preserves_selected_row_in_all_view(self):
+    first = {'matched': True, 'ignored': False, 'book_ids': [1], 'possible_matches': [], 'imported_position': '1', 'imported_title': 'A', 'imported_author': 'A', 'match_source': 'automatic'}
+    second = {'matched': False, 'ignored': False, 'book_ids': [], 'possible_matches': [], 'imported_position': '2', 'imported_title': 'B', 'imported_author': 'B', 'match_source': 'never matched'}
+    dialog = object.__new__(ImportReportDialog)
+    dialog.match_table = self.FakeMatchTable(row=1)
+    dialog.visible_rows = [first, second]
+    dialog.review_rows = [first, second]
+    dialog.current_view_mode = lambda: 'All'
+    dialog.rows_for_current_view = lambda: list(dialog.review_rows)
+    dialog.apply_stable_fixed_column_widths = lambda: None
+    dialog.update_toggle_button = lambda *_args: None
+    dialog.select_review_row = ImportReportDialog.select_review_row.__get__(dialog)
+    dialog.selected_review_row = ImportReportDialog.selected_review_row.__get__(dialog)
+    dialog.update_table_for_row = ImportReportDialog.update_table_for_row.__get__(dialog)
+    dialog.csv_values_for_row = ImportReportDialog.csv_values_for_row.__get__(dialog)
+
+    dialog.update_table_for_row(second)
+
+    self.assertEqual(1, dialog.match_table.currentRow())
+
+  def test_award_filter_winners_only_includes_only_winners(self):
+    winner = {'entry': {'result': 'winner'}, 'matched': True}
+    nominee = {'entry': {'result': 'nominee'}, 'matched': True}
+    no_result = {'entry': {}, 'matched': True}
+    dialog = object.__new__(ImportReportDialog)
+    dialog.review_rows = [winner, nominee, no_result]
+    dialog.current_view_mode = lambda: 'All'
+    dialog.current_award_filter_mode = lambda: 'Winners only'
+
+    self.assertEqual([winner], dialog.rows_for_current_view())
+
+  def test_award_filter_nominees_only_includes_non_winners_and_no_result(self):
+    winner = {'entry': {'result': 'winner'}, 'matched': True}
+    nominee = {'entry': {'result': 'nominee'}, 'matched': True}
+    shortlisted = {'entry': {'result': 'shortlisted'}, 'matched': True}
+    finalist = {'entry': {'result': 'finalist'}, 'matched': True}
+    ranked = {'entry': {'result': 'ranked'}, 'matched': True}
+    no_result = {'entry': {}, 'matched': True}
+    dialog = object.__new__(ImportReportDialog)
+    dialog.review_rows = [winner, nominee, shortlisted, finalist, ranked, no_result]
+    dialog.current_view_mode = lambda: 'All'
+    dialog.current_award_filter_mode = lambda: 'Nominees only'
+
+    self.assertEqual(
+      [nominee, shortlisted, finalist, ranked, no_result],
+      dialog.rows_for_current_view())
+
+  def test_award_filter_combines_with_match_view_filter(self):
+    matched_winner = {'entry': {'result': 'winner'}, 'matched': True}
+    unmatched_winner = {'entry': {'result': 'winner'}, 'matched': False}
+    unmatched_nominee = {'entry': {'result': 'nominee'}, 'matched': False}
+    dialog = object.__new__(ImportReportDialog)
+    dialog.review_rows = [matched_winner, unmatched_winner, unmatched_nominee]
+    dialog.current_view_mode = lambda: 'Unmatched'
+    dialog.current_award_filter_mode = lambda: 'Winners only'
+
+    self.assertEqual([unmatched_winner], dialog.rows_for_current_view())
+
+  def test_current_view_csv_uses_award_filter(self):
+    winner = {
+      'entry': {'result': 'winner'},
+      'imported_position': '1',
+      'imported_title': 'Winner',
+      'imported_author': 'Author',
+      'book_ids': [7],
+      'matched': True,
+      'ignored': False,
+      'possible_matches': [],
+      'match_source': 'automatic',
+    }
+    nominee = {
+      'entry': {'result': 'nominee'},
+      'imported_position': '2',
+      'imported_title': 'Nominee',
+      'imported_author': 'Author',
+      'book_ids': [],
+      'matched': False,
+      'ignored': False,
+      'possible_matches': [],
+      'match_source': 'never matched',
+    }
+    dialog = object.__new__(ImportReportDialog)
+    dialog.review_rows = [winner, nominee]
+    dialog.current_view_mode = lambda: 'All'
+    dialog.current_award_filter_mode = lambda: 'Winners only'
+    dialog.rows_for_current_view = ImportReportDialog.rows_for_current_view.__get__(dialog)
+    dialog.csv_values_for_row = ImportReportDialog.csv_values_for_row.__get__(dialog)
+
+    csv_text = dialog.current_view_csv()
+
+    self.assertIn('Winner', csv_text)
+    self.assertNotIn('Nominee', csv_text)
+
+  def test_update_table_preserves_selected_row_with_award_filter(self):
+    winner = {
+      'entry': {'result': 'winner'},
+      'matched': True,
+      'ignored': False,
+      'book_ids': [1],
+      'possible_matches': [],
+      'imported_position': '1',
+      'imported_title': 'Winner',
+      'imported_author': 'A',
+      'match_source': 'automatic',
+    }
+    nominee = {
+      'entry': {'result': 'nominee'},
+      'matched': False,
+      'ignored': False,
+      'book_ids': [],
+      'possible_matches': [],
+      'imported_position': '2',
+      'imported_title': 'Nominee',
+      'imported_author': 'B',
+      'match_source': 'never matched',
+    }
+    dialog = object.__new__(ImportReportDialog)
+    dialog.match_table = self.FakeMatchTable(row=1)
+    dialog.visible_rows = [winner, nominee]
+    dialog.review_rows = [winner, nominee]
+    dialog.current_view_mode = lambda: 'All'
+    dialog.current_award_filter_mode = lambda: 'Nominees only'
+    dialog.apply_stable_fixed_column_widths = lambda: None
+    dialog.update_toggle_button = lambda *_args: None
+    dialog.select_review_row = ImportReportDialog.select_review_row.__get__(dialog)
+    dialog.selected_review_row = ImportReportDialog.selected_review_row.__get__(dialog)
+    dialog.rows_for_current_view = ImportReportDialog.rows_for_current_view.__get__(dialog)
+    dialog.update_table_for_row = ImportReportDialog.update_table_for_row.__get__(dialog)
+    dialog.csv_values_for_row = ImportReportDialog.csv_values_for_row.__get__(dialog)
+
+    dialog.update_table_for_row(nominee)
+
+    self.assertEqual(0, dialog.match_table.currentRow())
+
+  def test_csv_values_show_ignored_in_match_column(self):
+    dialog = object.__new__(ImportReportDialog)
+
+    values = dialog.csv_values_for_row({
+      'imported_position': '1',
+      'imported_title': 'Book',
+      'imported_author': 'Author',
+      'book_ids': [],
+      'matched': False,
+      'ignored': True,
+      'possible_matches': [],
+      'match_source': 'ignored',
+    })
+
+    self.assertEqual('Ignored', values[4])
+    self.assertEqual('Ignored', values[5])
+
+  def test_apply_manual_find_match_uses_callback_source(self):
+    row = {
+      'matched': False,
+      'ignored': False,
+      'book_ids': [],
+      'matched_books': [],
+      'previous_book_ids': [],
+      'previous_matched_books': [],
+      'previous_match_source': '',
+      'match_source': 'never matched',
+      'can_toggle_on': True,
+    }
+    dialog = object.__new__(ImportReportDialog)
+    dialog.selected_match_source_callback = lambda _row, _candidate: 'automatic'
+
+    dialog.apply_manual_find_match(row, {
+      'book_id': 7,
+      'title': 'Book',
+      'authors': 'Author',
+    })
+
+    self.assertEqual('automatic', row['match_source'])
+    self.assertEqual('automatic', row['previous_match_source'])
+
+  def test_apply_manual_find_match_keeps_multiple_selected_books_on_same_position(self):
+    row = {
+      'matched': False,
+      'ignored': False,
+      'book_ids': [],
+      'matched_books': [],
+      'previous_book_ids': [],
+      'previous_matched_books': [],
+      'previous_match_source': '',
+      'match_source': 'never matched',
+      'can_toggle_on': True,
+    }
+    dialog = object.__new__(ImportReportDialog)
+    dialog.selected_match_source_callback = lambda _row, _candidate: self.fail(
+      'multi-selection should stay a manual find override')
+
+    dialog.apply_manual_find_match(row, [
+      {
+        'book_id': 7,
+        'title': 'Book volume 1',
+        'authors': 'Author',
+      },
+      {
+        'matched_book_id': 8,
+        'matched_title': 'Book volume 2',
+        'matched_authors': 'Author',
+      },
+    ])
+
+    self.assertEqual(True, row['matched'])
+    self.assertEqual([7, 8], row['book_ids'])
+    self.assertEqual([7, 8], row['previous_book_ids'])
+    self.assertEqual(
+      [(7, 'Book volume 1'), (8, 'Book volume 2')],
+      [(book['matched_book_id'], book['matched_title'])
+       for book in row['matched_books']])
+    self.assertEqual('manual find', row['match_source'])
+
+  def test_apply_ignore_match_marks_row_ignored(self):
+    row = {
+      'matched': False,
+      'ignored': False,
+      'book_ids': [],
+      'matched_books': [],
+      'previous_book_ids': [],
+      'previous_matched_books': [],
+      'previous_match_source': '',
+      'match_source': 'never matched',
+      'can_toggle_on': True,
+    }
+    dialog = object.__new__(ImportReportDialog)
+
+    dialog.apply_ignore_match(row)
+
+    self.assertEqual(False, row['matched'])
+    self.assertEqual(True, row['ignored'])
+    self.assertEqual([], row['book_ids'])
+    self.assertEqual([], row['matched_books'])
+    self.assertEqual('ignored', row['match_source'])
+
+  def test_guided_candidate_review_reuses_one_dialog_for_next_row(self):
+    first = {
+      'imported_position': '1',
+      'imported_title': 'First',
+      'imported_author': 'Author',
+      'matched': False,
+      'possible_matches': [{'book_id': 1, 'title': 'First match'}],
+    }
+    second = {
+      'imported_position': '2',
+      'imported_title': 'Second',
+      'imported_author': 'Author',
+      'matched': False,
+      'possible_matches': [{'book_id': 2, 'title': 'Second match'}],
+    }
+    parent = object.__new__(ImportReportDialog)
+    parent.review_rows = [first, second]
+    parent.visible_rows = [first, second]
+    parent.select_review_row = lambda row: None
+    parent.update_table_for_row = lambda row: None
+    parent.show_find_notice = lambda _message: None
+    parent.apply_manual_find_match = ImportReportDialog.apply_manual_find_match.__get__(parent)
+    parent.candidate_row_from = ImportReportDialog.candidate_row_from.__get__(parent)
+    parent.selected_match_source_callback = None
+    parent.view_book_callback = None
+    dialogs = []
+
+    class FakeGuidedDialog:
+      def __init__(
+          self, _parent, review_row, view_book_callback=None,
+          match_callback=None, ignore_callback=None, previous_callback=None,
+          next_callback=None):
+        self.review_rows = [review_row]
+        self.match_callback = match_callback
+        self.ignore_callback = ignore_callback
+        self.previous_callback = previous_callback
+        self.next_callback = next_callback
+        self.closed = False
+        dialogs.append(self)
+
+      def set_review_row(self, review_row):
+        self.review_rows.append(review_row)
+
+      def exec(self):
+        self.match_callback(self.review_rows[-1]['possible_matches'][0])
+        return 1
+
+      def accept_dialog(self):
+        self.closed = True
+
+    original = import_report_module.MatchReviewDialog
+    import_report_module.MatchReviewDialog = FakeGuidedDialog
+    try:
+      parent.review_candidate_rows(first)
+    finally:
+      import_report_module.MatchReviewDialog = original
+
+    self.assertEqual(1, len(dialogs))
+    self.assertEqual([first, second], dialogs[0].review_rows)
+    self.assertEqual(True, first['matched'])
+    self.assertEqual(False, second['matched'])
+
+  def test_guided_candidate_review_ignore_advances_to_next_row(self):
+    first = {
+      'imported_position': '1',
+      'imported_title': 'First',
+      'imported_author': 'Author',
+      'matched': False,
+      'ignored': False,
+      'book_ids': [],
+      'matched_books': [],
+      'possible_matches': [{'book_id': 1, 'title': 'First match'}],
+      'match_source': 'never matched',
+    }
+    second = {
+      'imported_position': '2',
+      'imported_title': 'Second',
+      'imported_author': 'Author',
+      'matched': False,
+      'ignored': False,
+      'possible_matches': [{'book_id': 2, 'title': 'Second match'}],
+    }
+    parent = object.__new__(ImportReportDialog)
+    parent.review_rows = [first, second]
+    parent.visible_rows = [first, second]
+    parent.select_review_row = lambda row: None
+    parent.update_table_for_row = lambda row: None
+    parent.show_find_notice = lambda _message: None
+    parent.apply_ignore_match = ImportReportDialog.apply_ignore_match.__get__(parent)
+    parent.candidate_row_from = ImportReportDialog.candidate_row_from.__get__(parent)
+    parent.view_book_callback = None
+    dialogs = []
+
+    class FakeGuidedDialog:
+      def __init__(
+          self, _parent, review_row, view_book_callback=None,
+          match_callback=None, ignore_callback=None, previous_callback=None,
+          next_callback=None):
+        self.review_rows = [review_row]
+        self.ignore_callback = ignore_callback
+        self.closed = False
+        dialogs.append(self)
+
+      def set_review_row(self, review_row):
+        self.review_rows.append(review_row)
+
+      def exec(self):
+        self.ignore_callback()
+        return 1
+
+      def accept_dialog(self):
+        self.closed = True
+
+    original = import_report_module.MatchReviewDialog
+    import_report_module.MatchReviewDialog = FakeGuidedDialog
+    try:
+      parent.review_candidate_rows(first)
+    finally:
+      import_report_module.MatchReviewDialog = original
+
+    self.assertEqual(1, len(dialogs))
+    self.assertEqual([first, second], dialogs[0].review_rows)
+    self.assertEqual(True, first['ignored'])
+    self.assertEqual('ignored', first['match_source'])
+
+
+class MatchReviewDialogStateTest(unittest.TestCase):
+
+  class FakeLabel:
+    def __init__(self):
+      self.text = ''
+
+    def setText(self, text):
+      self.text = text
+
+  class FakeTable:
+    def __init__(self, selected_rows=None):
+      self._row = 0
+      self.items = {}
+      self.widths = [10, 20, 30, 40, 50]
+      self.selected_rows = list(selected_rows or [])
+
+    def columnCount(self):
+      return len(self.widths)
+
+    def columnWidth(self, column):
+      return self.widths[column]
+
+    def setColumnWidth(self, column, width):
+      self.widths[column] = width
+
+    def setRowCount(self, count):
+      self.row_count = count
+      self.widths = [1 for _width in self.widths]
+
+    def setItem(self, row, column, item):
+      self.items[(row, column)] = item
+
+    def setCurrentCell(self, row, _column):
+      self._row = row
+
+    def currentRow(self):
+      return self._row
+
+    def selectionModel(self):
+      selected_rows = list(self.selected_rows)
+
+      class Selection:
+        def selectedRows(self):
+          class Index:
+            def __init__(self, row):
+              self._row = row
+
+            def row(self):
+              return self._row
+
+          return [Index(row) for row in selected_rows]
+
+      return Selection()
+
+  class FakeButton:
+    def __init__(self):
+      self.enabled = None
+
+    def setEnabled(self, enabled):
+      self.enabled = enabled
+
+  def build_dialog(self):
+    dialog = object.__new__(MatchReviewDialog)
+    dialog.review_label = self.FakeLabel()
+    dialog.match_table = self.FakeTable()
+    dialog.match_button = self.FakeButton()
+    dialog.ignore_button = self.FakeButton()
+    dialog.view_book_button = self.FakeButton()
+    dialog.view_book_callback = None
+    dialog.selected_candidate = None
+    dialog.navigation_action = None
+    dialog.match_callback = None
+    dialog.ignore_callback = None
+    dialog.previous_callback = None
+    dialog.next_callback = None
+    return dialog
+
+  def test_set_review_row_updates_label_and_candidates_on_same_dialog(self):
+    dialog = self.build_dialog()
+    dialog.set_review_row({
+      'imported_title': 'First',
+      'imported_author': 'Author One',
+      'possible_matches': [{'book_id': 1}],
+    }, preserve_column_widths=False)
+    original_id = id(dialog)
+
+    dialog.set_review_row({
+      'imported_title': 'Second',
+      'imported_author': 'Author Two',
+      'possible_matches': [{'book_id': 2}],
+    }, preserve_column_widths=False)
+
+    self.assertEqual(original_id, id(dialog))
+    self.assertEqual('Second\nAuthor Two', dialog.review_label.text)
+    self.assertEqual([{'book_id': 2}], dialog.candidates)
+
+  def test_set_review_row_preserves_column_widths(self):
+    dialog = self.build_dialog()
+    dialog.match_table.widths = [44, 55, 66, 77, 88]
+
+    dialog.set_review_row({
+      'imported_title': 'Next',
+      'possible_matches': [{'book_id': 1}],
+    })
+
+    self.assertEqual([44, 55, 66, 77, 88], dialog.match_table.widths)
+
+  def test_match_review_table_places_series_before_reason(self):
+    original_item = import_find_module.QTableWidgetItem
+
+    class FakeItem:
+      def __init__(self, text):
+        self.text = text
+
+    import_find_module.QTableWidgetItem = FakeItem
+    try:
+      dialog = self.build_dialog()
+      dialog.set_review_row({
+        'imported_title': 'Entry',
+        'possible_matches': [{
+          'book_id': 9,
+          'title': 'Candidate',
+          'authors': 'Writer',
+          'series': ['Series A', 'Series B'],
+          'reason': 'title similar',
+        }],
+      }, preserve_column_widths=False)
+    finally:
+      import_find_module.QTableWidgetItem = original_item
+
+    self.assertEqual('Series A, Series B', dialog.match_table.items[(0, 3)].text)
+    self.assertEqual('title similar', dialog.match_table.items[(0, 4)].text)
+
+  def test_match_selected_one_shot_still_accepts_dialog(self):
+    dialog = self.build_dialog()
+    accepted = []
+    dialog.candidates = [{'book_id': 7}]
+    dialog.accept_dialog = lambda: accepted.append(True)
+
+    dialog.accept()
+
+    self.assertEqual([True], accepted)
+    self.assertEqual('match', dialog.navigation_action)
+    self.assertEqual({'book_id': 7}, dialog.selected_candidate)
+
+  def test_match_selected_callback_does_not_close_dialog(self):
+    dialog = self.build_dialog()
+    accepted = []
+    matched = []
+    dialog.candidates = [{'book_id': 7}]
+    dialog.match_callback = lambda candidate: matched.append(candidate)
+    dialog.accept_dialog = lambda: accepted.append(True)
+
+    dialog.accept()
+
+    self.assertEqual([], accepted)
+    self.assertEqual([{'book_id': 7}], matched)
+
+  def test_match_selected_callback_receives_all_selected_rows(self):
+    dialog = self.build_dialog()
+    matched = []
+    dialog.match_table = self.FakeTable(selected_rows=[0, 2])
+    dialog.candidates = [{'book_id': 7}, {'book_id': 8}, {'book_id': 9}]
+    dialog.match_callback = lambda candidate: matched.append(candidate)
+
+    dialog.accept()
+
+    self.assertEqual([[{'book_id': 7}, {'book_id': 9}]], matched)
+    self.assertEqual([{'book_id': 7}, {'book_id': 9}], dialog.selected_candidate)
+
+  def test_ignore_one_shot_accepts_dialog(self):
+    dialog = self.build_dialog()
+    accepted = []
+    dialog.accept_dialog = lambda: accepted.append(True)
+
+    dialog.ignore_current()
+
+    self.assertEqual([True], accepted)
+    self.assertEqual('ignore', dialog.navigation_action)
+    self.assertIsNone(dialog.selected_candidate)
+
+  def test_ignore_callback_does_not_close_dialog(self):
+    dialog = self.build_dialog()
+    accepted = []
+    ignored = []
+    dialog.ignore_callback = lambda: ignored.append(True)
+    dialog.accept_dialog = lambda: accepted.append(True)
+
+    dialog.ignore_current()
+
+    self.assertEqual([], accepted)
+    self.assertEqual([True], ignored)
+
+  def test_view_selected_book_passes_candidate_id_and_dialog_parent(self):
+    dialog = self.build_dialog()
+    viewed = []
+    dialog.candidates = [{'book_id': 7}]
+    dialog.view_book_callback = lambda book_id, parent=None: viewed.append((book_id, parent))
+
+    dialog.view_selected_book()
+
+    self.assertEqual([(7, dialog)], viewed)
+
+  def test_view_selected_book_supports_legacy_one_argument_callback(self):
+    dialog = self.build_dialog()
+    viewed = []
+    dialog.candidates = [{'matched_book_id': 8}]
+    dialog.view_book_callback = lambda book_id: viewed.append(book_id)
+
+    dialog.view_selected_book()
+
+    self.assertEqual([8], viewed)
+
+
+class ImportFlowViewBookTest(unittest.TestCase):
+
+  class FakeFocusParent:
+    def __init__(self):
+      self.calls = []
+
+    def raise_(self):
+      self.calls.append('raise')
+
+    def activateWindow(self):
+      self.calls.append('activate')
+
+    def setFocus(self):
+      self.calls.append('focus')
+
+  def test_open_book_detail_window_uses_modal_book_info_for_candidate(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    focus_parent = self.FakeFocusParent()
+    captured = {}
+
+    class FakeSignal:
+      def connect(self, target):
+        captured['connected_cover_signal'] = target
+
+    class FakeBookInfo:
+      def __init__(self, *args, **kwargs):
+        captured['book_info_args'] = args
+        captured['book_info_kwargs'] = kwargs
+        self.open_cover_with = FakeSignal()
+
+      def exec(self):
+        captured['exec_called'] = True
+
+    class FakeDialogNumbers:
+      Locked = 'locked'
+
+    book_info_module = types.ModuleType('calibre.gui2.dialogs.book_info')
+    book_info_module.BookInfo = FakeBookInfo
+    book_info_module.DialogNumbers = FakeDialogNumbers
+    dialogs_module = types.ModuleType('calibre.gui2.dialogs')
+    old_dialogs = sys.modules.get('calibre.gui2.dialogs')
+    old_book_info = sys.modules.get('calibre.gui2.dialogs.book_info')
+    sys.modules['calibre.gui2.dialogs'] = dialogs_module
+    sys.modules['calibre.gui2.dialogs.book_info'] = book_info_module
+
+    class FakeLibraryView:
+      pass
+
+    class FakeBookDetails:
+      handle_click_from_popup = object()
+
+    class FakeGui:
+      library_view = FakeLibraryView()
+      book_details = FakeBookDetails()
+      bd_open_cover_with = object()
+
+    core.gui = FakeGui()
+    core.library_index_for_book_id = lambda book_id: f'index-{book_id}'
+    try:
+      result = core.open_book_detail_window(42, parent=focus_parent)
+    finally:
+      if old_dialogs is None:
+        sys.modules.pop('calibre.gui2.dialogs', None)
+      else:
+        sys.modules['calibre.gui2.dialogs'] = old_dialogs
+      if old_book_info is None:
+        sys.modules.pop('calibre.gui2.dialogs.book_info', None)
+      else:
+        sys.modules['calibre.gui2.dialogs.book_info'] = old_book_info
+
+    self.assertEqual(True, result)
+    self.assertEqual(core.gui, captured['book_info_args'][0])
+    self.assertEqual(core.gui.library_view, captured['book_info_args'][1])
+    self.assertEqual('index-42', captured['book_info_args'][2])
+    self.assertEqual(42, captured['book_info_kwargs']['book_id'])
+    self.assertEqual('locked', captured['book_info_kwargs']['dialog_number'])
+    self.assertEqual(True, captured['exec_called'])
+    self.assertEqual(core.gui.bd_open_cover_with, captured['connected_cover_signal'])
+    self.assertEqual(['raise', 'activate', 'focus'], focus_parent.calls)
+
+  def test_open_book_detail_window_fallback_uses_keyword_book_id(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    calls = []
+
+    class FakeAction:
+      def show_book_info(self, **kwargs):
+        calls.append(kwargs)
+
+    class FakeGui:
+      iactions = {'Show Book Details': FakeAction()}
+
+    core.gui = FakeGui()
+    core.open_modal_book_info = lambda _book_id, focus_parent=None: False
+
+    self.assertEqual(True, core.open_book_detail_window(42))
+    self.assertEqual([{'book_id': 42}], calls)
+
+  def test_open_book_detail_window_does_not_call_view_action_as_book_id_api(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    viewed = []
+    selected = []
+
+    class FakeViewAction:
+      def view_book(self, book_id):
+        viewed.append(book_id)
+
+    class FakeLibraryView:
+      def select_rows(self, book_ids):
+        selected.append(book_ids)
+
+    class FakeGui:
+      iactions = {'View': FakeViewAction()}
+      library_view = FakeLibraryView()
+
+    core.gui = FakeGui()
+    core.open_modal_book_info = lambda _book_id, focus_parent=None: False
+
+    self.assertEqual(False, core.open_book_detail_window(42))
+    self.assertEqual([], viewed)
+    self.assertEqual([[42]], selected)
+
 
 class AwardParserSmokeTest(unittest.TestCase):
+
+  def test_locus_annual_parser_uses_full_text_when_ranked_blocks_omit_category_headings(self):
+    from parser.locus import LocusAnnualAwardsParser
+
+    html = '''
+      <div>Sf Novel</div><br>
+      <p>Winner: The Man Who Saw Seconds, Alexander Boldizar (Clash)</p>
+      <p>Rakesfall, Vajra Chandrasekera (Tordotcom)</p>
+      <div>Fantasy Novel</div><br>
+      <p>1. Winner: A Sorceress Comes to Call, T. Kingfisher (Tor)</p>
+    '''
+
+    overview = '<a href="/Locus_Awards_2024">2024</a>'
+
+    parsed = LocusAnnualAwardsParser().parse(
+      overview,
+      'https://www.sfadb.com/Locus_Awards',
+      'Locus - Annual SF Novel',
+      'SF Novel',
+      ('novel', 'sf novel'),
+      fetch_url=lambda _url: html)
+
+    self.assertEqual(['The Man Who Saw Seconds', 'Rakesfall'], [
+      entry['title'] for entry in parsed['entries']
+    ])
+    self.assertEqual(['2024', '2024.01'], [
+      entry['position'] for entry in parsed['entries']
+    ])
+
+  def test_locus_annual_parser_keeps_ranked_rows_supported(self):
+    from parser.locus import LocusAnnualAwardsParser
+
+    html = '''
+      Sf Novel
+      1. Winner: System Collapse, Martha Wells (Tordotcom)
+      2. Starter Villain, John Scalzi (Tor)
+      Fantasy Novel
+      1. Winner: Witch King, Martha Wells (Tordotcom)
+    '''
+    overview = '<a href="/Locus_Awards_2024">2024</a>'
+
+    parsed = LocusAnnualAwardsParser().parse(
+      overview,
+      'https://www.sfadb.com/Locus_Awards',
+      'Locus - Annual SF Novel',
+      'SF Novel',
+      ('novel', 'sf novel'),
+      fetch_url=lambda _url: html)
+
+    self.assertEqual(['System Collapse', 'Starter Villain'], [
+      entry['title'] for entry in parsed['entries']
+    ])
+    self.assertEqual(['winner', 'nominee'], [
+      entry['result'] for entry in parsed['entries']
+    ])
+
+  def test_locus_annual_parser_preserves_author_suffixes(self):
+    from parser.locus import LocusAnnualAwardsParser
+
+    html = '''
+      Sf Novel
+      Dawn's Uncertain Light, Neal Barrett, Jr. (NAL Signet)
+    '''
+    overview = '<a href="/Locus_Awards_1988">1988</a>'
+
+    parsed = LocusAnnualAwardsParser().parse(
+      overview,
+      'https://www.sfadb.com/Locus_Awards',
+      'Locus - Annual SF Novel',
+      'SF Novel',
+      ('novel', 'sf novel'),
+      fetch_url=lambda _url: html)
+
+    self.assertEqual("Dawn's Uncertain Light", parsed['entries'][0]['title'])
+    self.assertEqual('Neal Barrett, Jr.', parsed['entries'][0]['author'])
+
+  def test_locus_all_time_parser_keeps_malformed_ol_items_separate(self):
+    from parser.locus import LocusAllTimeAwardsParser
+
+    html = '''
+      <ol>
+      <li value="1">
+      <a href="Frank_Herbert_Citations">Frank Herbert</a>, <b>Dune</b>
+      (Chilton, 1965)
+      <br>
+      <li value="2">
+      <a href="Orson_Scott_Card_Citations">Orson Scott Card</a>, <b>Ender's Game</b>
+      (Tor, 1985)
+      <br>
+      <li value="7">
+      <a href="C_S_Lewis_Citations">C. S. Lewis</a>,
+      <b>The Lion, the Witch and the Wardrobe</b>
+      (Geoffrey Bles, 1950)
+      <br>
+      <li value="19">
+      <a href="Walter_M_Miller_Jr_Citations">Walter M. Miller, Jr.</a>,
+      <b>A Canticle for Leibowitz</b>
+      (Lippincott, 1959)
+      <br>
+      <li value="50">
+      <a href="Samuel_R_Delany_Citations">Samuel R. Delany</a>, <b>Dhalgren</b>
+      (Bantam, 1975)
+      <br>
+      <li value="50">
+      <a href="Daniel_Keyes_Citations">Daniel Keyes</a>, <b>Flowers for Algernon</b>
+      (Harcourt, Brace and World, 1966)
+      <br>
+      <li value="75">
+      <a href="Robert_A_Heinlein_Citations">Robert A. Heinlein</a>,
+      <b>Citizen of the Galaxy</b>
+      (Scribners, 1957)
+      <br>
+      </ol>
+    '''
+
+    parsed = LocusAllTimeAwardsParser().parse(
+      html,
+      'https://www.sfadb.com/Locus_2012_SF20th',
+      'Locus - All-Time 2012 20th Century SF Novel',
+      '2012',
+      'All-Time 20th Century SF Novel')
+
+    self.assertEqual(7, len(parsed['entries']))
+    self.assertEqual(
+      [('1', 'Dune', 'Frank Herbert'),
+       ('2', "Ender's Game", 'Orson Scott Card'),
+       ('7', 'The Lion, the Witch and the Wardrobe', 'C. S. Lewis'),
+       ('19', 'A Canticle for Leibowitz', 'Walter M. Miller, Jr.'),
+       ('50', 'Dhalgren', 'Samuel R. Delany'),
+       ('50', 'Flowers for Algernon', 'Daniel Keyes'),
+       ('75', 'Citizen of the Galaxy', 'Robert A. Heinlein')],
+      [(entry['position'], entry['title'], entry['author'])
+       for entry in parsed['entries']])
 
   def test_wikipedia_award_table_parser_base_smoke(self):
     from parser.wikipedia_base import WikipediaAwardTableParserBase
@@ -1109,6 +2370,28 @@ class AwardParserSmokeTest(unittest.TestCase):
       entry['title'] for entry in parsed['entries']
     ])
     self.assertEqual(['winner'], [entry['result'] for entry in parsed['entries']])
+
+  def test_crime_writers_of_canada_aliases_cover_current_wikipedia_headings(self):
+    from parser.crime_writers_canada import CrimeWritersOfCanadaWikipediaParser
+    from url_fetcher.crime_writers_canada import (
+      UrlFetcherCrimeWritersOfCanadaFrenchCrimeBook,
+      UrlFetcherCrimeWritersOfCanadaJuvenileYA,
+      UrlFetcherCrimeWritersOfCanadaNonfiction,
+    )
+
+    parser = CrimeWritersOfCanadaWikipediaParser()
+    self.assertTrue(parser.category_matches(
+      'Best Crime Nonfiction',
+      UrlFetcherCrimeWritersOfCanadaNonfiction.CATEGORY,
+      UrlFetcherCrimeWritersOfCanadaNonfiction.CATEGORY_ALIASES))
+    self.assertTrue(parser.category_matches(
+      'Best Juvenile or Young Adult Crime Book',
+      UrlFetcherCrimeWritersOfCanadaJuvenileYA.CATEGORY,
+      UrlFetcherCrimeWritersOfCanadaJuvenileYA.CATEGORY_ALIASES))
+    self.assertTrue(parser.category_matches(
+      'Best Crime Book in French',
+      UrlFetcherCrimeWritersOfCanadaFrenchCrimeBook.CATEGORY,
+      UrlFetcherCrimeWritersOfCanadaFrenchCrimeBook.CATEGORY_ALIASES))
 
   def test_davitt_wikipedia_parser_smoke(self):
     from parser.davitt import DavittWikipediaParser

@@ -225,17 +225,32 @@ class StorageMixinTest(unittest.TestCase):
 
     self.assertEqual(['book2|author2'], sorted(overrides))
 
+  def test_saved_unmatched_overrides_include_ignored_rows(self):
+    self.mixin.write_match_cache('Example List', [
+      {'entry_key': 'book|author', 'matched_book_id': 7, 'ignored': True},
+      {'entry_key': 'book2|author2', 'matched_book_id': 8},
+    ])
+
+    overrides = self.mixin.saved_unmatched_overrides('Example List')
+
+    self.assertEqual(['book|author'], sorted(overrides))
+
   def test_apply_import_review_match_changes_saves_explicit_unmatched(self):
     rows = [{
       'entry': {'title': 'Book', 'author': 'Author', 'position': '1'},
       'entry_key': 'book|author',
       'matched': False,
+      'ignored': True,
       'original_matched': True,
+      'original_ignored': False,
       'book_ids': [],
       'original_book_ids': [7],
       'matched_books': [],
       'original_matched_books': [],
-      'match_source': 'automatic',
+      'previous_book_ids': [7],
+      'previous_matched_books': [],
+      'previous_match_source': 'automatic',
+      'match_source': 'ignored',
       'original_match_source': 'automatic',
     }]
 
@@ -243,11 +258,140 @@ class StorageMixinTest(unittest.TestCase):
     loaded = self.mixin.read_match_cache('Example List')
 
     self.assertEqual(1, result['saved_unmatched'])
+    self.assertEqual(True, loaded['matches'][0]['ignored'])
     self.assertEqual(True, loaded['matches'][0]['unmatched'])
+
+  def test_apply_import_review_match_changes_does_not_save_none_state(self):
+    rows = [{
+      'entry': {'title': 'Book', 'author': 'Author', 'position': '1'},
+      'entry_key': 'book|author',
+      'matched': False,
+      'ignored': False,
+      'original_matched': True,
+      'original_ignored': False,
+      'book_ids': [],
+      'original_book_ids': [7],
+      'matched_books': [],
+      'original_matched_books': [],
+      'previous_book_ids': [7],
+      'previous_matched_books': [],
+      'previous_match_source': 'automatic',
+      'match_source': 'never matched',
+      'original_match_source': 'automatic',
+    }]
+
+    result = self.mixin.apply_import_review_match_changes('Example List', rows)
+    loaded = self.mixin.read_match_cache('Example List')
+
+    self.assertEqual(0, result['saved_unmatched'])
+    self.assertEqual([], loaded['matches'])
+
+  def test_apply_import_review_match_changes_removes_saved_match_when_set_to_none(self):
+    self.mixin.write_match_cache('Example List', [{
+      'entry_key': 'book|author',
+      'matched_book_id': 7,
+    }])
+    rows = [{
+      'entry': {'title': 'Book', 'author': 'Author', 'position': '1'},
+      'entry_key': 'book|author',
+      'matched': False,
+      'ignored': False,
+      'original_matched': True,
+      'original_ignored': False,
+      'book_ids': [],
+      'original_book_ids': [7],
+      'matched_books': [],
+      'original_matched_books': [],
+      'previous_book_ids': [7],
+      'previous_matched_books': [],
+      'previous_match_source': 'saved/manual override',
+      'match_source': 'never matched',
+      'original_match_source': 'saved/manual override',
+    }]
+
+    result = self.mixin.apply_import_review_match_changes('Example List', rows)
+    loaded = self.mixin.read_match_cache('Example List')
+
+    self.assertEqual(1, result['removed'])
+    self.assertEqual([], loaded['matches'])
+
+  def test_apply_import_review_match_changes_saves_active_manual_edit(self):
+    class FakeApi:
+      def field_for(self, field, book_id, default_value=''):
+        if field == 'title':
+          return {7: 'Book'}.get(book_id, default_value)
+        if field == 'authors':
+          return {7: ['Author']}.get(book_id, default_value)
+        return default_value
+
+    class FakeDb:
+      new_api = FakeApi()
+
+    self.mixin.db = FakeDb()
+    rows = [{
+      'entry': {'title': 'Book', 'author': 'Author', 'position': '2'},
+      'entry_key': 'book|author',
+      'matched': True,
+      'ignored': False,
+      'original_matched': False,
+      'original_ignored': False,
+      'book_ids': [7],
+      'original_book_ids': [],
+      'matched_books': [{
+        'matched_book_id': 7,
+        'matched_title': 'Book',
+        'matched_authors': 'Author',
+      }],
+      'original_matched_books': [],
+      'previous_book_ids': [],
+      'previous_matched_books': [],
+      'previous_match_source': '',
+      'match_source': 'active list/manual edit',
+      'original_match_source': 'never matched',
+    }]
+
+    result = self.mixin.apply_import_review_match_changes('Example List', rows)
+    loaded = self.mixin.read_match_cache('Example List')
+
+    self.assertEqual(0, result['removed'])
+    self.assertEqual(7, loaded['matches'][0]['matched_book_id'])
+    self.assertEqual([7], loaded['matches'][0]['matched_book_ids'])
+
+  def test_apply_import_review_match_changes_removes_ignored_when_set_to_none(self):
+    self.mixin.write_match_cache('Example List', [{
+      'entry_key': 'book|author',
+      'ignored': True,
+      'unmatched': True,
+      'previous_matched_book_id': 7,
+    }])
+    rows = [{
+      'entry': {'title': 'Book', 'author': 'Author', 'position': '1'},
+      'entry_key': 'book|author',
+      'matched': False,
+      'ignored': False,
+      'original_matched': False,
+      'original_ignored': True,
+      'book_ids': [],
+      'original_book_ids': [],
+      'matched_books': [],
+      'original_matched_books': [],
+      'previous_book_ids': [7],
+      'previous_matched_books': [],
+      'previous_match_source': 'automatic',
+      'match_source': 'never matched',
+      'original_match_source': 'ignored',
+    }]
+
+    result = self.mixin.apply_import_review_match_changes('Example List', rows)
+    loaded = self.mixin.read_match_cache('Example List')
+
+    self.assertEqual(1, result['removed'])
+    self.assertEqual([], loaded['matches'])
 
   def test_apply_import_review_match_changes_removes_explicit_unmatched_when_reenabled(self):
     self.mixin.write_match_cache('Example List', [{
       'entry_key': 'book|author',
+      'ignored': True,
       'unmatched': True,
       'previous_matched_book_id': 7,
     }])
@@ -255,13 +399,18 @@ class StorageMixinTest(unittest.TestCase):
       'entry': {'title': 'Book', 'author': 'Author', 'position': '1'},
       'entry_key': 'book|author',
       'matched': True,
+      'ignored': False,
       'original_matched': False,
+      'original_ignored': True,
       'book_ids': [7],
       'original_book_ids': [],
       'matched_books': [],
       'original_matched_books': [],
-      'match_source': 'explicit unmatched',
-      'original_match_source': 'explicit unmatched',
+      'previous_book_ids': [7],
+      'previous_matched_books': [],
+      'previous_match_source': 'automatic',
+      'match_source': 'automatic',
+      'original_match_source': 'ignored',
     }]
 
     result = self.mixin.apply_import_review_match_changes('Example List', rows)

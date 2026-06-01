@@ -75,6 +75,12 @@ def entry_title_matches_book(entry, title):
   return imported_title in book_title or book_title in imported_title
 
 
+def item_is_ignored_directive(item):
+  if not isinstance(item, dict):
+    return False
+  return bool(item.get('ignored') or item.get('unmatched'))
+
+
 def append_unique_book_id(values, book_id):
   try:
     book_id = int(book_id)
@@ -340,7 +346,7 @@ class StorageMixin:
     for item in self.read_match_cache(list_id).get('matches', []):
       key = item.get('entry_key')
       book_id = item.get('matched_book_id')
-      if key and book_id is not None and not item.get('unmatched'):
+      if key and book_id is not None and not item_is_ignored_directive(item):
         overrides[key] = item
     self.debug_storage_match_cache(safe_list_id(list_id), 'overrides loaded', matches=len(overrides))
     return overrides
@@ -349,7 +355,7 @@ class StorageMixin:
     overrides = {}
     for item in self.read_match_cache(list_id).get('matches', []):
       key = item.get('entry_key') if isinstance(item, dict) else None
-      if key and item.get('unmatched'):
+      if key and item_is_ignored_directive(item):
         overrides[key] = item
     self.debug_storage_match_cache(
       safe_list_id(list_id), 'unmatched directives loaded', matches=len(overrides))
@@ -377,6 +383,7 @@ class StorageMixin:
         'matched_at': utc_now_text(),
       }
     else:
+      item.pop('ignored', None)
       item.pop('unmatched', None)
       item.pop('previous_matched_book_id', None)
       item.pop('previous_matched_book_ids', None)
@@ -465,11 +472,16 @@ class StorageMixin:
       'entry_key': key,
       'imported_title': entry.get('title', row.get('imported_title', '')),
       'imported_author': entry.get('author', row.get('imported_author', '')),
+      'ignored': True,
       'unmatched': True,
       'previous_matched_book_id': matched_book_ids[0] if matched_book_ids else None,
       'previous_matched_book_ids': matched_book_ids,
       'previous_matched_books': matched_books,
-      'previous_match_source': row.get('original_match_source') or row.get('match_source', ''),
+      'previous_match_source': (
+        row.get('previous_match_source')
+        or row.get('original_match_source')
+        or row.get('match_source', '')
+      ),
       'unmatched_at': utc_now_text(),
     }
 
@@ -494,30 +506,38 @@ class StorageMixin:
       if not key:
         continue
       original_matched = bool(row.get('original_matched'))
+      original_ignored = bool(row.get('original_ignored'))
       matched = bool(row.get('matched'))
+      ignored = bool(row.get('ignored'))
       source = row.get('original_match_source') or row.get('match_source', '')
       current_source = row.get('match_source', '')
-      if original_matched and not matched:
+      existing_item = by_key.get(key)
+      if ignored:
+        item = self.unmatched_match_item_for_review_row(row)
+        if item is not None and existing_item != item:
+          by_key[key] = item
+          if not item_is_ignored_directive(existing_item):
+            saved_unmatched += 1
+          changed = True
+      elif not matched:
         if source == 'saved/manual override':
           if key in by_key:
             by_key.pop(key, None)
             removed += 1
             changed = True
-        else:
-          item = self.unmatched_match_item_for_review_row(row)
-          if item is not None:
-            by_key[key] = item
-            saved_unmatched += 1
-            changed = True
-      elif not original_matched and matched and source == 'explicit unmatched':
-        if key in by_key:
+        elif original_ignored and key in by_key and item_is_ignored_directive(by_key[key]):
           by_key.pop(key, None)
           removed += 1
           changed = True
-      elif matched and current_source == 'manual find':
+      elif matched and current_source in ('manual find', 'active list/manual edit'):
         for book_id in row.get('book_ids') or []:
           by_key[key] = self.saved_match_item_for_book(
             by_key.get(key), row.get('entry') or {}, book_id, self.db.new_api)
+          changed = True
+      elif matched and (original_ignored or source == 'explicit unmatched' or source == 'ignored'):
+        if key in by_key and item_is_ignored_directive(by_key[key]):
+          by_key.pop(key, None)
+          removed += 1
           changed = True
 
     if changed:

@@ -9,6 +9,13 @@ Maintenance notes:
   with explicit year, title/work, author, and result/stage columns.
 - Award-specific parsers or fetchers should document every production use in
   `_docs/PARSER_FETCHER_GUIDE.md` before relying on this base.
+- Current production users:
+  `CrimeWritersOfCanadaWikipediaParser`, `DavittWikipediaParser`,
+  `DilysWikipediaParser`, `GumshoeWikipediaParser`,
+  `NedKellyWikipediaParser`, and `TheakstonWikipediaParser`.
+- Shared parser-family bases should keep this user list in their module
+  maintenance notes so later refactors can quickly see the real dependency
+  surface before changing shared behavior.
 """
 
 import re
@@ -17,11 +24,11 @@ from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 
 try:
-  from calibre_plugins.list_switchboard.parser.award_base import (
+  from calibre_plugins.list_switchboard.parser.award_base import ( # type: ignore
     AwardParserBase, assign_positions, normalize_heading, normalize_line,
     strip_publication_notes,
   )
-  from calibre_plugins.list_switchboard.parser.generic import position_sort_key
+  from calibre_plugins.list_switchboard.parser.generic import position_sort_key # pyright: ignore[reportMissingImports]
 except ImportError:
   from .award_base import (
     AwardParserBase, assign_positions, normalize_heading, normalize_line,
@@ -124,7 +131,37 @@ class WikipediaAwardTableParserBase(AwardParserBase):
   def has_required_columns(self, header_map):
     return all(key in header_map for key in ('year', 'title', 'author'))
 
+  def tables_under_category_headings(
+      self, soup, category, category_aliases, match='exact'):
+    """
+    Yield (heading, table) pairs for headings that match the target category.
+
+    Maintenance note:
+    This intentionally preserves the current loose `heading.find_next('table')`
+    lookup used by subclasses. It does not enforce section boundaries.
+    """
+    accepted = {
+      normalize_heading(value) for value in (category, *category_aliases) if value
+    }
+    for heading in soup.find_all(['h2', 'h3', 'h4']):
+      text = normalize_heading(heading.get_text(' ', strip=True))
+      hit = (
+        text in accepted if match == 'exact'
+        else any(alias and alias in text for alias in accepted)
+      )
+      if not hit:
+        continue
+      table = heading.find_next('table')
+      if table is not None:
+        yield heading, table
+
   def table_rows(
+      self, table, header_map, base_url, category, category_aliases,
+      allowed_results):
+    return self._table_rows_standard(
+      table, header_map, base_url, category, category_aliases, allowed_results)
+
+  def _table_rows_standard(
       self, table, header_map, base_url, category, category_aliases,
       allowed_results):
     rows = []

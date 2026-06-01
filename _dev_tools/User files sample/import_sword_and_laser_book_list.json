@@ -1,0 +1,2656 @@
+{
+  "append_state": {
+    "entry_count": 407,
+    "last_entry_key": "slow gods|claire north",
+    "last_position": "203",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "author": "Philip Pullman",
+      "position": "01",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Golden_Compass",
+      "title": "The Golden Compass"
+    },
+    {
+      "author": "Orson Scott Card",
+      "position": "02",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Ender%27s_Game",
+      "title": "Ender's Game"
+    },
+    {
+      "author": "Philip K. Dick",
+      "percent": "0%",
+      "position": "2.03",
+      "title": "Radio Free Albemuth",
+      "votes": "0"
+    },
+    {
+      "author": "Isaac Asimov",
+      "percent": "0%",
+      "position": "2.04",
+      "title": "I, Robot",
+      "votes": "0"
+    },
+    {
+      "author": "Neil Gaiman",
+      "position": "03",
+      "source_url": "https://swordandlaser.fandom.com/wiki/American_Gods",
+      "title": "American Gods"
+    },
+    {
+      "author": "William Gibson",
+      "position": "04",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Neuromancer",
+      "title": "Neuromancer"
+    },
+    {
+      "author": "Neal Stephenson",
+      "percent": "0%",
+      "position": "4.03",
+      "title": "Cryptonomicon",
+      "votes": "0"
+    },
+    {
+      "author": "George Alec Effinger",
+      "percent": "0%",
+      "position": "4.05",
+      "title": "When Gravity Fails",
+      "votes": "0"
+    },
+    {
+      "author": "Arthur C. Clarke",
+      "position": "05",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Childhood%27s_End",
+      "title": "Childhood's End"
+    },
+    {
+      "author": "Arthur C. Clarke",
+      "percent": "0%",
+      "position": "5.01",
+      "title": "Rendezvous with Rama",
+      "votes": "0"
+    },
+    {
+      "author": "Arthur C. Clarke",
+      "percent": "0%",
+      "position": "5.02",
+      "title": "2001: A Space Odyssey",
+      "votes": "0"
+    },
+    {
+      "author": "Arthur C. Clarke",
+      "percent": "0%",
+      "position": "5.03",
+      "title": "The Songs of Distant Earth",
+      "votes": "0"
+    },
+    {
+      "author": "Mark Del Franco",
+      "position": "06",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Unshapely_Things",
+      "title": "Unshapely Things"
+    },
+    {
+      "author": "Melissa Marr",
+      "percent": "0%",
+      "position": "6.01",
+      "title": "Wicked Lovely",
+      "votes": "0"
+    },
+    {
+      "author": "Brandon Mull",
+      "percent": "0%",
+      "position": "6.02",
+      "title": "Fablehaven",
+      "votes": "0"
+    },
+    {
+      "author": "Emma Bull",
+      "percent": "0%",
+      "position": "6.03",
+      "title": "War for the Oaks",
+      "votes": "0"
+    },
+    {
+      "author": "Holly Black",
+      "percent": "0%",
+      "position": "6.04",
+      "title": "Ironside:A Modern Faery's Tale",
+      "votes": "0"
+    },
+    {
+      "author": "Richard Adams",
+      "position": "07",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Watership_Down",
+      "title": "Watership Down"
+    },
+    {
+      "author": "Neal Stephenson",
+      "position": "08",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Anathem",
+      "title": "Anathem"
+    },
+    {
+      "author": "Stanislaw Lem",
+      "position": "09",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Memoirs_Found_in_a_Bathtub",
+      "title": "Memoirs Found in a Bathtub"
+    },
+    {
+      "author": "Robert Jordan",
+      "position": "10",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Eye_of_the_World",
+      "title": "The Eye of the World"
+    },
+    {
+      "author": "Frank Herbert",
+      "position": "11",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Dune",
+      "title": "Dune"
+    },
+    {
+      "author": "Daniel Suarez",
+      "position": "12",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Daemon",
+      "title": "Daemon"
+    },
+    {
+      "author": "George R. R. Martin",
+      "position": "13",
+      "source_url": "https://swordandlaser.fandom.com/wiki/A_Game_of_Thrones",
+      "title": "A Game of Thrones"
+    },
+    {
+      "author": "Joe Haldeman",
+      "position": "14",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Forever_War",
+      "title": "The Forever War"
+    },
+    {
+      "author": "Marion Zimmer Bradley",
+      "position": "15",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Mists_of_Avalon",
+      "title": "Mists of Avalon"
+    },
+    {
+      "author": "Cory Doctorow",
+      "position": "16",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Down_and_out_in_the_Magic_Kingdom",
+      "title": "Down and out in the Magic Kingdom"
+    },
+    {
+      "author": "Paolo Bacigalupi",
+      "position": "17",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Windup_Girl",
+      "title": "The Windup Girl"
+    },
+    {
+      "author": "Ian Tregillis",
+      "position": "18",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Bitter_Seeds",
+      "title": "Bitter Seeds"
+    },
+    {
+      "author": "Max Brooks",
+      "position": "19",
+      "source_url": "https://swordandlaser.fandom.com/wiki/World_War_Z:_An_Oral_History_of_the_Zombie_War",
+      "title": "World War Z: An Oral History of the Zombie War"
+    },
+    {
+      "author": "A. Lee Martinez",
+      "percent": "19.3%",
+      "position": "19.04",
+      "title": "Divine Misfortune",
+      "votes": "70"
+    },
+    {
+      "author": "Joe Abercrombie",
+      "position": "19.5",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Blade_Itself",
+      "title": "The Blade Itself"
+    },
+    {
+      "author": "Robert A. Heinlein",
+      "position": "20",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Moon_is_a_Harsh_Mistress",
+      "title": "The Moon is a Harsh Mistress"
+    },
+    {
+      "author": "David Weber",
+      "percent": "21.7%",
+      "position": "20.02",
+      "title": "On Basilisk Station",
+      "votes": "70"
+    },
+    {
+      "author": "Iain M. Banks",
+      "percent": "21.1%",
+      "position": "20.03",
+      "title": "Look to Windward",
+      "votes": "68"
+    },
+    {
+      "author": "John Wyndham",
+      "percent": "18%",
+      "position": "20.04",
+      "title": "The Day of the Triffids",
+      "votes": "58"
+    },
+    {
+      "author": "T. H. White",
+      "position": "21",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Once_and_Future_King",
+      "title": "The Once and Future King"
+    },
+    {
+      "author": "William Goldman",
+      "position": "22",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Princess_Bride",
+      "title": "The Princess Bride"
+    },
+    {
+      "author": "Stephen R. Donaldson",
+      "percent": "15.3%",
+      "position": "22.03",
+      "title": "Lord Foul's Bane",
+      "votes": "48"
+    },
+    {
+      "author": "Robert E. Howard",
+      "percent": "9.9%",
+      "position": "22.06",
+      "title": "The Coming of Conan the Cimmerian",
+      "votes": "31"
+    },
+    {
+      "author": "Patricia A. McKillip",
+      "percent": "7.6%",
+      "position": "22.07",
+      "title": "Riddle-Master",
+      "votes": "24"
+    },
+    {
+      "author": "Charles Yu",
+      "position": "23",
+      "source_url": "https://swordandlaser.fandom.com/wiki/How_to_Live_Safely_in_a_Science_Fictional_Universe",
+      "title": "How to Live Safely in a Science Fictional Universe"
+    },
+    {
+      "author": "Neil Gaiman & Terry Pratchett",
+      "position": "24",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Good_Omens",
+      "title": "Good Omens"
+    },
+    {
+      "author": "Terry Pratchett & Neil Gaiman",
+      "percent": "40.3%",
+      "position": "24.01",
+      "title": "Good Omens",
+      "votes": "58"
+    },
+    {
+      "author": "Alastair Reynolds",
+      "percent": "13.2%",
+      "position": "24.04",
+      "title": "Revelation Space",
+      "votes": "19"
+    },
+    {
+      "author": "Gene Wolfe",
+      "position": "25",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Shadow_and_Claw",
+      "title": "Shadow and Claw"
+    },
+    {
+      "author": "Peter Watts",
+      "position": "26",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Blindsight",
+      "title": "Blindsight"
+    },
+    {
+      "author": "N. K. Jemisin",
+      "position": "27",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Hundred_Thousand_Kingdoms",
+      "title": "The Hundred Thousand Kingdoms"
+    },
+    {
+      "author": "Suzanne Collins",
+      "position": "28",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Hunger_Games",
+      "title": "The Hunger Games"
+    },
+    {
+      "author": "Andre Norton",
+      "percent": "3.3%",
+      "position": "28.05",
+      "title": "Voodoo Planet",
+      "votes": "3"
+    },
+    {
+      "author": "George R. R. Martin",
+      "position": "29",
+      "source_url": "https://swordandlaser.fandom.com/wiki/A_Dance_With_Dragons",
+      "title": "A Dance With Dragons"
+    },
+    {
+      "author": "John Scalzi",
+      "position": "29.5",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Fuzzy_Nation",
+      "title": "Fuzzy Nation"
+    },
+    {
+      "author": "Robert J. Sawyer",
+      "position": "30",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Flashforward",
+      "title": "Flashforward"
+    },
+    {
+      "author": "Ernest Cline",
+      "position": "31",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Ready_Player_One",
+      "title": "Ready Player One"
+    },
+    {
+      "author": "Neal Stephenson",
+      "position": "31.5",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Reamde",
+      "title": "Reamde"
+    },
+    {
+      "author": "Brandon Sanderson",
+      "position": "32",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Elantris",
+      "title": "Elantris"
+    },
+    {
+      "author": "Michael A. Stackpole",
+      "percent": "23.2%",
+      "position": "32.02",
+      "title": "Talion: Revanant",
+      "votes": "43"
+    },
+    {
+      "author": "Susanna Clarke",
+      "percent": "21.1%",
+      "position": "32.03",
+      "title": "Jonathan Strange and Mr Norrell",
+      "votes": "39"
+    },
+    {
+      "author": "Tad Williams",
+      "percent": "13%",
+      "position": "32.04",
+      "title": "The War of the Flowers",
+      "votes": "26"
+    },
+    {
+      "author": "Haruki Murakami",
+      "position": "32.5",
+      "source_url": "https://swordandlaser.fandom.com/wiki/1Q84",
+      "title": "1Q84"
+    },
+    {
+      "author": "Charles Stross",
+      "position": "33",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Rule_34",
+      "title": "Rule 34"
+    },
+    {
+      "author": "Adam Christopher",
+      "position": "33.5",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Empire_State",
+      "title": "Empire State"
+    },
+    {
+      "author": "Scott Lynch",
+      "position": "34",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Lies_of_Locke_Lamora",
+      "title": "The Lies of Locke Lamora"
+    },
+    {
+      "author": "Saladin Ahmed",
+      "percent": "4.3%",
+      "position": "34.05",
+      "title": "Throne of the Crescent Moon",
+      "votes": "8"
+    },
+    {
+      "author": "Lev Grossman",
+      "position": "35",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Magicians",
+      "title": "The Magicians"
+    },
+    {
+      "author": "Dan Simmons",
+      "position": "36",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Hyperion",
+      "title": "Hyperion"
+    },
+    {
+      "author": "Iain M. Banks",
+      "percent": "19.1%",
+      "position": "36.04",
+      "title": "The Player of Games",
+      "votes": "76"
+    },
+    {
+      "author": "Arthur C. Clarke",
+      "percent": "9.5%",
+      "position": "36.05",
+      "title": "The City and the Stars",
+      "votes": "38"
+    },
+    {
+      "author": "Guy Gavriel Kay",
+      "position": "37",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Tigana",
+      "title": "Tigana"
+    },
+    {
+      "author": "David & Leigh Eddings",
+      "percent": "22.3%",
+      "position": "37.03",
+      "title": "The Redemption of Althalus",
+      "votes": "126"
+    },
+    {
+      "author": "James S.A. Corey",
+      "position": "38",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Leviathan_Wakes",
+      "title": "Leviathan Wakes"
+    },
+    {
+      "author": "David Wingrove",
+      "percent": "4%",
+      "position": "38.03",
+      "title": "Chung Kuo: The Middle Kingdom",
+      "votes": "37"
+    },
+    {
+      "author": "Robin Hobb",
+      "position": "39",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Assassin%27s_Apprentice",
+      "title": "Assassin's Apprentice"
+    },
+    {
+      "author": "Isaac Asimov",
+      "position": "40",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Foundation",
+      "title": "Foundation"
+    },
+    {
+      "author": "David Mitchell",
+      "position": "41",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Cloud_Atlas",
+      "title": "Cloud Atlas"
+    },
+    {
+      "author": "Tad Williams",
+      "position": "42",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Dirty_Streets_of_Heaven",
+      "title": "The Dirty Streets of Heaven"
+    },
+    {
+      "author": "J.R.R.Tolkien",
+      "position": "43",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Hobbit",
+      "title": "The Hobbit"
+    },
+    {
+      "author": "John Scalzi",
+      "position": "44",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Old_Man%27s_War",
+      "title": "Old Man's War"
+    },
+    {
+      "author": "Barry Hughart",
+      "position": "45",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Bridge_of_Birds",
+      "title": "Bridge of Birds"
+    },
+    {
+      "author": "C.J. Cherryh",
+      "position": "46",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Downbelow_Station",
+      "title": "Downbelow Station"
+    },
+    {
+      "author": "Anne McCaffrey",
+      "position": "47",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Dragonflight",
+      "title": "Dragonflight"
+    },
+    {
+      "author": "Hugh Howey",
+      "position": "48",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Wool",
+      "title": "Wool"
+    },
+    {
+      "author": "Jo Walton",
+      "position": "49",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Among_Others",
+      "title": "Among Others"
+    },
+    {
+      "author": "John Scalzi",
+      "position": "49.5",
+      "source_url": "https://swordandlaser.fandom.com/wiki/RedShirts",
+      "title": "RedShirts"
+    },
+    {
+      "author": "Larry Niven",
+      "position": "50",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Ringworld",
+      "title": "Ringworld"
+    },
+    {
+      "author": "Alistair Reynolds",
+      "percent": "6.4%",
+      "position": "50.07",
+      "title": "Doctor Who: Harvest of Time",
+      "votes": "67"
+    },
+    {
+      "author": "Lois McMaster Bujold",
+      "position": "51",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Curse_of_Chalion",
+      "title": "The Curse of Chalion"
+    },
+    {
+      "author": "Alfred Bester",
+      "position": "52",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Demolished_Man",
+      "title": "The Demolished Man"
+    },
+    {
+      "author": "Cherie Priest",
+      "position": "53",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Boneshaker",
+      "title": "Boneshaker"
+    },
+    {
+      "author": "Ann Leckie",
+      "position": "54",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Ancillary_Justice",
+      "title": "Ancillary Justice"
+    },
+    {
+      "author": "Marie Brennan",
+      "position": "55",
+      "source_url": "https://swordandlaser.fandom.com/wiki/A_Natural_History_of_Dragons:_A_Memoir_by_Lady_Trent",
+      "title": "A Natural History of Dragons: A Memoir by Lady Trent"
+    },
+    {
+      "author": "Naomi Novik",
+      "position": "55.5",
+      "source_url": "https://swordandlaser.fandom.com/wiki/His_Majesty%27s_Dragon",
+      "title": "His Majesty's Dragon"
+    },
+    {
+      "author": "Samuel R. Delaney",
+      "position": "56",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Einstein_Intersection",
+      "title": "The Einstein Intersection"
+    },
+    {
+      "author": "Ursula K. Le Guin",
+      "position": "57",
+      "source_url": "https://swordandlaser.fandom.com/wiki/A_Wizard_of_Earthsea",
+      "title": "A Wizard of Earthsea"
+    },
+    {
+      "author": "Richard K. Morgan",
+      "position": "58",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Altered_Carbon",
+      "title": "Altered Carbon"
+    },
+    {
+      "author": "Terry Pratchett and Stephen Baxter",
+      "percent": "18.4%",
+      "position": "58.02",
+      "title": "The Long Earth",
+      "votes": "92"
+    },
+    {
+      "author": "Alistair Reynolds",
+      "percent": "4.4%",
+      "position": "58.06",
+      "title": "House of Suns",
+      "votes": "22"
+    },
+    {
+      "author": "Arkady and Boris Strugatsky",
+      "percent": "2.4%",
+      "position": "58.08",
+      "title": "Roadside Picnic",
+      "votes": "12"
+    },
+    {
+      "author": "George R. R. Martin",
+      "percent": "1%",
+      "position": "58.09",
+      "title": "Tuf Voyaging",
+      "votes": "5"
+    },
+    {
+      "author": "Alastair Reynolds",
+      "percent": "0.8%",
+      "position": "58.1",
+      "title": "The Prefect",
+      "votes": "4"
+    },
+    {
+      "author": "John Joseph Adams",
+      "percent": "0.6%",
+      "position": "58.11",
+      "title": "Armored",
+      "votes": "3"
+    },
+    {
+      "author": "John Steakley",
+      "percent": "0.6%",
+      "position": "58.12",
+      "title": "Armor",
+      "votes": "3"
+    },
+    {
+      "author": "Glen Cook",
+      "percent": "0.6%",
+      "position": "58.13",
+      "title": "The Dragon Never Sleeps",
+      "votes": "3"
+    },
+    {
+      "author": "Taylor Anderson",
+      "percent": "0.2%",
+      "position": "58.14",
+      "title": "Into the Storm",
+      "votes": "1"
+    },
+    {
+      "author": "David Dalglish",
+      "position": "59",
+      "source_url": "https://swordandlaser.fandom.com/wiki/A_Dance_of_Cloaks",
+      "title": "A Dance of Cloaks"
+    },
+    {
+      "author": "Bryan Alexander Benson",
+      "position": "59.5",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Brand",
+      "title": "The Brand"
+    },
+    {
+      "author": "Andy Weir",
+      "position": "60",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Martian",
+      "title": "The Martian"
+    },
+    {
+      "author": "Brian McClellan",
+      "position": "61",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Promise_of_Blood",
+      "title": "Promise of Blood"
+    },
+    {
+      "author": "Kevin Hearne",
+      "percent": "28.6%",
+      "position": "61.02",
+      "title": "Hounded",
+      "votes": "122"
+    },
+    {
+      "author": "Chuck Wendig",
+      "percent": "15%",
+      "position": "61.04",
+      "title": "Blackbirds",
+      "votes": "64"
+    },
+    {
+      "author": "Anne Leonard",
+      "percent": "8.7%",
+      "position": "61.05",
+      "title": "Moth and Spark",
+      "votes": "37"
+    },
+    {
+      "author": "Octavia E. Butler",
+      "position": "62",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Dawn",
+      "title": "Dawn"
+    },
+    {
+      "author": "Octavia E. Butler",
+      "percent": "21%",
+      "position": "62.02",
+      "title": "Kindred",
+      "votes": "50"
+    },
+    {
+      "author": "Octavia E. Butler",
+      "percent": "17.6%",
+      "position": "62.04",
+      "title": "Wild Seed",
+      "votes": "42"
+    },
+    {
+      "author": "Octavia E. Butler",
+      "percent": "12.2%",
+      "position": "62.05",
+      "title": "Fledgling",
+      "votes": "29"
+    },
+    {
+      "author": "Patrick\u00a0Rothfuss",
+      "position": "63",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Name_of_the_Wind",
+      "title": "The Name of the Wind"
+    },
+    {
+      "author": "Ted Chiang",
+      "position": "64",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Stories_of_Your_Life_and_Others",
+      "title": "Stories of Your Life and Others"
+    },
+    {
+      "author": "G. Willow Wilson",
+      "position": "65",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Alif_the_Unseen",
+      "title": "Alif the Unseen"
+    },
+    {
+      "author": "Philip K. Dick",
+      "position": "66",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Do_Androids_Dream_of_Electric_Sheep",
+      "title": "Do Androids Dream of Electric Sheep"
+    },
+    {
+      "author": "Erin Morgenstern",
+      "position": "67",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Night_Circus",
+      "title": "The Night Circus"
+    },
+    {
+      "author": "Mary Doria Russell",
+      "position": "68",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Sparrow",
+      "title": "The Sparrow"
+    },
+    {
+      "author": "Koushun Takami",
+      "percent": "19.5%",
+      "position": "68.03",
+      "title": "Battle Royale",
+      "votes": "46"
+    },
+    {
+      "author": "Jeff VanderMeer",
+      "position": "69",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Annihilation",
+      "title": "Annihilation"
+    },
+    {
+      "author": "Katherine Addison",
+      "position": "70",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Goblin_Emperor",
+      "title": "The Goblin Emperor"
+    },
+    {
+      "author": "Terry Pratchett",
+      "position": "71",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Wyrd_Sisters",
+      "title": "Wyrd Sisters"
+    },
+    {
+      "author": "Leigh Brackett",
+      "position": "72",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Sword_of_Rhiannon",
+      "title": "The Sword of Rhiannon"
+    },
+    {
+      "author": "Robert Jackson Bennett",
+      "position": "73",
+      "source_url": "https://swordandlaser.fandom.com/wiki/City_of_Stairs",
+      "title": "City of Stairs"
+    },
+    {
+      "author": "Emily St. John Mandel",
+      "position": "74",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Station_Eleven",
+      "title": "Station Eleven"
+    },
+    {
+      "author": "Judith Tarr",
+      "percent": "12.6%",
+      "position": "74.03",
+      "title": "Forgotten Suns",
+      "votes": "13"
+    },
+    {
+      "author": "Emmi It\u00e4ranta",
+      "percent": "7.8%",
+      "position": "74.05",
+      "title": "Memory of Water",
+      "votes": "8"
+    },
+    {
+      "author": "Naomi Novik",
+      "position": "75",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Uprooted",
+      "title": "Uprooted"
+    },
+    {
+      "author": "Walter M. Miller Jr",
+      "position": "76",
+      "source_url": "https://swordandlaser.fandom.com/wiki/A_Canticle_for_Leibowitz",
+      "title": "A Canticle for Leibowitz"
+    },
+    {
+      "author": "Larry Niven & Jerry Pournelle",
+      "percent": "25.7%",
+      "position": "76.02",
+      "title": "The Mote in God's Eye",
+      "votes": "39"
+    },
+    {
+      "author": "Pat Cadigan",
+      "percent": "13.8%",
+      "position": "76.03",
+      "title": "Synners",
+      "votes": "21"
+    },
+    {
+      "author": "Joanna Russ",
+      "percent": "11.8%",
+      "position": "76.04",
+      "title": "Picnic on Paradise",
+      "votes": "18"
+    },
+    {
+      "author": "George Chetwynd Griffith",
+      "percent": "8.6%",
+      "position": "76.05",
+      "title": "The Angel of the Revolution: A Tale of the Coming Terror",
+      "votes": "13"
+    },
+    {
+      "author": "Doris Lessing",
+      "percent": "3.9%",
+      "position": "76.06",
+      "title": "Re: Colonised Planet 5, Shikasta",
+      "votes": "6"
+    },
+    {
+      "author": "Seth Dickinson",
+      "position": "77",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Traitor_Baru_Cormorant",
+      "title": "The Traitor Baru Cormorant"
+    },
+    {
+      "author": "Zen Cho",
+      "percent": "28.7%",
+      "position": "77.02",
+      "title": "Sorcerer to the Crown",
+      "votes": "27"
+    },
+    {
+      "author": "Jack Finney",
+      "position": "78",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Time_and_Again",
+      "title": "Time and Again"
+    },
+    {
+      "author": "Vonda McIntyre",
+      "percent": "31.8%",
+      "position": "78.02",
+      "title": "Dreamsnake",
+      "votes": "54"
+    },
+    {
+      "author": "Kate Wilhelm",
+      "percent": "22.9%",
+      "position": "78.03",
+      "title": "Where Late the Sweet Birds Sang",
+      "votes": "39"
+    },
+    {
+      "author": "Mercedes Lackey",
+      "position": "79",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Arrows_of_the_Queen",
+      "title": "Arrows of the Queen"
+    },
+    {
+      "author": "Catherynne M.Valente",
+      "position": "80",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Radiance",
+      "title": "Radiance"
+    },
+    {
+      "author": "Terry Brooks",
+      "position": "81",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Sword_of_Shannara",
+      "title": "The Sword of Shannara"
+    },
+    {
+      "author": "Charlie Jane Anders",
+      "position": "82",
+      "source_url": "https://swordandlaser.fandom.com/wiki/All_the_Birds_in_the_Sky",
+      "title": "All the Birds in the Sky"
+    },
+    {
+      "author": "V.E.Schwab",
+      "position": "83",
+      "source_url": "https://swordandlaser.fandom.com/wiki/A_Darker_Shade_of_Magic",
+      "title": "A Darker Shade of Magic"
+    },
+    {
+      "author": "Neil Gaiman",
+      "percent": "48.5%",
+      "position": "83.02",
+      "title": "Neverwhere",
+      "votes": "100"
+    },
+    {
+      "author": "Mark Lawrence",
+      "percent": "53.8%",
+      "position": "83.03",
+      "title": "Prince of Fools",
+      "votes": "100"
+    },
+    {
+      "author": "Jay Kristoff",
+      "percent": "46.2%",
+      "position": "83.04",
+      "title": "Stormdancer",
+      "votes": "86"
+    },
+    {
+      "author": "Steven Erikson",
+      "percent": "41.5%",
+      "position": "83.06",
+      "title": "Gardens of the Moon",
+      "votes": "80"
+    },
+    {
+      "author": "Jacqueline Carey",
+      "percent": "54.2%",
+      "position": "83.07",
+      "title": "Kushiel's Dart",
+      "votes": "104"
+    },
+    {
+      "author": "Ellen Kushner",
+      "percent": "45.8%",
+      "position": "83.08",
+      "title": "Swordspoint",
+      "votes": "88"
+    },
+    {
+      "author": "Jim Butcher",
+      "percent": "49.0%",
+      "position": "83.1",
+      "title": "The Aeronaut's Windlass",
+      "votes": "95"
+    },
+    {
+      "author": "Kameron Hurley",
+      "percent": "60.4%",
+      "position": "83.11",
+      "title": "The Mirror Empire",
+      "votes": "110"
+    },
+    {
+      "author": "Juliet Marillier",
+      "percent": "39.6%",
+      "position": "83.12",
+      "title": "Dreamer's Pool",
+      "votes": "72"
+    },
+    {
+      "author": "Peter V. Brett",
+      "percent": "55.0%",
+      "position": "83.13",
+      "title": "The Warded Man",
+      "votes": "110"
+    },
+    {
+      "author": "Max Gladstone",
+      "percent": "39.4%",
+      "position": "83.16",
+      "title": "Three Parts Dead",
+      "votes": "74"
+    },
+    {
+      "author": "N.K.Jemisin",
+      "position": "83.5",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Fifth_Season",
+      "title": "The Fifth Season"
+    },
+    {
+      "author": "Kim Stanley Robinson",
+      "position": "84",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Aurora",
+      "title": "Aurora"
+    },
+    {
+      "author": "Ian McDonald",
+      "percent": "23.9%",
+      "position": "84.03",
+      "title": "New Moon",
+      "votes": "59"
+    },
+    {
+      "author": "Linda Nagata",
+      "percent": "13.4%",
+      "position": "84.04",
+      "title": "The Red: First Light",
+      "votes": "33"
+    },
+    {
+      "author": "Fran Wilde",
+      "position": "85",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Updraft",
+      "title": "Updraft"
+    },
+    {
+      "author": "Andre Norton",
+      "position": "86",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Time_Traders",
+      "title": "The Time Traders"
+    },
+    {
+      "author": "Andrzej Sapkowski",
+      "position": "87",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Last_Wish",
+      "title": "The Last Wish"
+    },
+    {
+      "author": "Vernor Vinge",
+      "position": "88",
+      "source_url": "https://swordandlaser.fandom.com/wiki/A_Fire_Upon_The_Deep",
+      "title": "A Fire Upon The Deep"
+    },
+    {
+      "author": "Helene Wecker",
+      "position": "89",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Golem_and_the_Jinni",
+      "title": "The Golem and the Jinni"
+    },
+    {
+      "author": "David Wong (AKA Jason Pargin)",
+      "position": "90",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Futuristic_Violence_and_Fancy_Suits",
+      "title": "Futuristic Violence and Fancy Suits"
+    },
+    {
+      "author": "Daniel O'Malley",
+      "position": "91",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Rook",
+      "title": "The Rook"
+    },
+    {
+      "author": "Liu Cixin",
+      "position": "92",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Three-Body_Problem",
+      "title": "The Three-Body Problem"
+    },
+    {
+      "author": "Nalo Hopkinson",
+      "position": "93",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Salt_Roads",
+      "title": "The Salt Roads"
+    },
+    {
+      "author": "Frederik Pohl",
+      "position": "94",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Gateway",
+      "title": "Gateway"
+    },
+    {
+      "author": "Genevieve Cogman",
+      "position": "95",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Invisible_Library",
+      "title": "The Invisible Library"
+    },
+    {
+      "author": "John Gwynne",
+      "percent": "46.3%",
+      "position": "95.03",
+      "title": "Malice",
+      "votes": "138"
+    },
+    {
+      "author": "Myke Cole",
+      "percent": "53.7%",
+      "position": "95.04",
+      "title": "Control Point",
+      "votes": "160"
+    },
+    {
+      "author": "John Connolly",
+      "percent": "57.7%",
+      "position": "95.06",
+      "title": "The Book of Lost Things",
+      "votes": "176"
+    },
+    {
+      "author": "Mary Robinette Kowal",
+      "percent": "60.6%",
+      "position": "95.09",
+      "title": "Ghost Talkers",
+      "votes": "188"
+    },
+    {
+      "author": "Fritz Leiber",
+      "percent": "39.4%",
+      "position": "95.1",
+      "title": "Swords and Deviltry",
+      "votes": "122"
+    },
+    {
+      "author": "Garth Nix",
+      "percent": "53.6%",
+      "position": "95.11",
+      "title": "Sabriel",
+      "votes": "162"
+    },
+    {
+      "author": "Mark Lawrence",
+      "percent": "46.4%",
+      "position": "95.12",
+      "title": "Prince of Thorns",
+      "votes": "140"
+    },
+    {
+      "author": "Roger Zelazny",
+      "percent": "57.7%",
+      "position": "95.13",
+      "title": "Nine Princes in Amber",
+      "votes": "173"
+    },
+    {
+      "author": "Richard Kadrey",
+      "percent": "42.3%",
+      "position": "95.14",
+      "title": "The Everything Box",
+      "votes": "127"
+    },
+    {
+      "author": "Kameron Hurley",
+      "percent": "37.2%",
+      "position": "95.16",
+      "title": "God's War",
+      "votes": "115"
+    },
+    {
+      "author": "Becky Chambers",
+      "position": "96",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Long_Way_to_a_Small,_Angry_Planet",
+      "title": "The Long Way to a Small, Angry Planet"
+    },
+    {
+      "author": "Alex Bledsoe",
+      "position": "97",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Hum_and_the_Shiver",
+      "title": "The Hum and the Shiver"
+    },
+    {
+      "author": "Ursula K. Le Guin",
+      "position": "98",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Left_Hand_of_Darkness",
+      "title": "The Left Hand of Darkness"
+    },
+    {
+      "author": "Neal Stephenson",
+      "percent": "28.3%",
+      "position": "98.02",
+      "title": "Snow Crash",
+      "votes": "56"
+    },
+    {
+      "author": "Mira Grant",
+      "percent": "25.7%",
+      "position": "98.03",
+      "title": "Feed",
+      "votes": "51"
+    },
+    {
+      "author": "Stephen King",
+      "position": "99",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Gunslinger",
+      "title": "The Gunslinger"
+    },
+    {
+      "author": "Brian Aldiss",
+      "position": "100",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Helliconia_Spring",
+      "title": "Helliconia Spring"
+    },
+    {
+      "author": "Theodora Goss",
+      "position": "101",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Strange_Case_of_the_Alchemist%27s_Daughter",
+      "title": "The Strange Case of the Alchemist's Daughter"
+    },
+    {
+      "author": "Connie Willis",
+      "position": "102",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Doomsday_Book",
+      "title": "Doomsday Book"
+    },
+    {
+      "author": "Connie Willis",
+      "percent": "37%",
+      "position": "102.02",
+      "title": "To Say Nothing of the Dog",
+      "votes": "50"
+    },
+    {
+      "author": "Connie Willis",
+      "percent": "10.4%",
+      "position": "102.03",
+      "title": "Blackout/All Clear",
+      "votes": "14"
+    },
+    {
+      "author": "Connie Willis",
+      "percent": "8.9%",
+      "position": "102.04",
+      "title": "Fire Watch",
+      "votes": "12"
+    },
+    {
+      "author": "Greg van Eekhout",
+      "position": "103",
+      "source_url": "https://swordandlaser.fandom.com/wiki/California_Bones",
+      "title": "California Bones"
+    },
+    {
+      "author": "Mary Wollstonecraft Shelley",
+      "position": "104",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Frankenstein,_or_the_Modern_Prometheus",
+      "title": "Frankenstein, or the Modern Prometheus"
+    },
+    {
+      "author": "Madeleine L'Engle",
+      "position": "105",
+      "source_url": "https://swordandlaser.fandom.com/wiki/A_Wrinkle_in_Time",
+      "title": "A Wrinkle in Time"
+    },
+    {
+      "author": "Rivers Solomon",
+      "position": "106",
+      "source_url": "https://swordandlaser.fandom.com/wiki/An_Unkindness_of_Ghosts",
+      "title": "An Unkindness of Ghosts"
+    },
+    {
+      "author": "Dennis E. Taylor",
+      "position": "107",
+      "source_url": "https://swordandlaser.fandom.com/wiki/We_are_Legion_We_are_Bob",
+      "title": "We are Legion We are Bob"
+    },
+    {
+      "author": "Brandon Sanderson",
+      "percent": "63.2",
+      "position": "107.01",
+      "title": "The Way of Kings",
+      "votes": "222"
+    },
+    {
+      "author": "Maggie Stiefvater",
+      "percent": "36.8",
+      "position": "107.02",
+      "title": "All the Crooked Saints",
+      "votes": "129"
+    },
+    {
+      "author": "Gail Carrier",
+      "percent": "53.2",
+      "position": "107.06",
+      "title": "Soulless",
+      "votes": "183"
+    },
+    {
+      "author": "Ben Aaronovitch",
+      "percent": "49.6",
+      "position": "107.07",
+      "title": "Midnight Riot",
+      "votes": "168"
+    },
+    {
+      "author": "Mary Robinette Kowal",
+      "percent": "50.4",
+      "position": "107.08",
+      "title": "Shades of Milk and Honey",
+      "votes": "171"
+    },
+    {
+      "author": "Vandana Singh",
+      "percent": "35.3",
+      "position": "107.1",
+      "title": "The Woman Who Thought She Was a Planet",
+      "votes": "121"
+    },
+    {
+      "author": "Annalee Newitz",
+      "percent": "54.0",
+      "position": "107.11",
+      "title": "Autonomous",
+      "votes": "184"
+    },
+    {
+      "author": "Alastair Reynolds",
+      "percent": "46.0",
+      "position": "107.12",
+      "title": "House of Suns",
+      "votes": "157"
+    },
+    {
+      "author": "Margaret Atwood",
+      "percent": "52.2",
+      "position": "107.15",
+      "title": "Oryx and Crake",
+      "votes": "179"
+    },
+    {
+      "author": "Kurt Vonnegut",
+      "percent": "47.8",
+      "position": "107.16",
+      "title": "The Sirens of Titan",
+      "votes": "164"
+    },
+    {
+      "author": "Gail Carriger",
+      "position": "107.5",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Soulless",
+      "title": "Soulless"
+    },
+    {
+      "author": "Tanith Lee",
+      "position": "108",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Night%27s_Master",
+      "title": "Night's Master"
+    },
+    {
+      "author": "Madeline Miller",
+      "position": "109",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Circe",
+      "title": "Circe"
+    },
+    {
+      "author": "Myke Cole",
+      "percent": "19.8",
+      "position": "109.02",
+      "title": "The Armored Saint",
+      "votes": "206"
+    },
+    {
+      "author": "R.A.Salvatore",
+      "percent": "14.9%",
+      "position": "109.04",
+      "title": "Child of a Mad God",
+      "votes": "155"
+    },
+    {
+      "author": "Philip Reeve",
+      "position": "110",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Mortal_Engines",
+      "title": "Mortal Engines"
+    },
+    {
+      "author": "Fonda Lee",
+      "position": "111",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Jade_City",
+      "title": "Jade City"
+    },
+    {
+      "author": "A.E. van Vogt",
+      "position": "112",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Slan",
+      "title": "Slan"
+    },
+    {
+      "author": "Matt Ruff",
+      "position": "113",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Lovecraft_Country",
+      "title": "Lovecraft Country"
+    },
+    {
+      "author": "Chuck Wendig",
+      "position": "114",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Zeroes",
+      "title": "Zeroes"
+    },
+    {
+      "author": "John Crowley",
+      "position": "115",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Ka:_Dar_Oakley_in_the_Ruin_of_Ymr",
+      "title": "Ka: Dar Oakley in the Ruin of Ymr"
+    },
+    {
+      "author": "Yoon Ha Lee",
+      "position": "116",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Ninefox_Gambit",
+      "title": "Ninefox Gambit"
+    },
+    {
+      "author": "Mary Robinette Kowal",
+      "position": "117",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Calculating_Stars",
+      "title": "The Calculating Stars"
+    },
+    {
+      "author": "J.K.Rowling",
+      "position": "118",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Harry_Potter_and_the_Philosopher%27s_Stone",
+      "title": "Harry Potter and the Philosopher's Stone"
+    },
+    {
+      "author": "Michael J. Sullivan",
+      "position": "119",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Theft_of_Swords",
+      "title": "Theft of Swords"
+    },
+    {
+      "author": "K.T. Davies",
+      "percent": "30.4",
+      "position": "119.02",
+      "title": "Dangerous to Know",
+      "votes": "91"
+    },
+    {
+      "author": "R.F.Kuang",
+      "percent": "56.1",
+      "position": "119.03",
+      "title": "The Poppy Wars",
+      "votes": "171"
+    },
+    {
+      "author": "Drew Hayes",
+      "percent": "46.4",
+      "position": "119.06",
+      "title": "NPCs",
+      "votes": "137"
+    },
+    {
+      "author": "Mark Lawrence",
+      "percent": "59.3",
+      "position": "119.07",
+      "title": "Red Sister",
+      "votes": "172"
+    },
+    {
+      "author": "Jenn Lyons",
+      "percent": "40.7",
+      "position": "119.08",
+      "title": "The Ruin of Kings",
+      "votes": "118"
+    },
+    {
+      "author": "Claire North",
+      "percent": "52.2",
+      "position": "119.09",
+      "title": "The First Fifteen Lives of Harry August",
+      "votes": "155"
+    },
+    {
+      "author": "Hannu Rajaniemi",
+      "percent": "47.8",
+      "position": "119.1",
+      "title": "The Quantum Thief",
+      "votes": "142"
+    },
+    {
+      "author": "Ramez Naam",
+      "percent": "50.5",
+      "position": "119.11",
+      "title": "Nexus",
+      "votes": "145"
+    },
+    {
+      "author": "Nora Roberts",
+      "percent": "49.5",
+      "position": "119.12",
+      "title": "Year One",
+      "votes": "142"
+    },
+    {
+      "author": "Malka Ann Older",
+      "percent": "42.6",
+      "position": "119.13",
+      "title": "Infomocracy",
+      "votes": "130"
+    },
+    {
+      "author": "Emma Newman",
+      "percent": "58.1",
+      "position": "119.14",
+      "title": "After Atlas",
+      "votes": "169"
+    },
+    {
+      "author": "Harry Harrison",
+      "percent": "41.9",
+      "position": "119.15",
+      "title": "The Stainless Steel Rat",
+      "votes": "122"
+    },
+    {
+      "author": "R.F.Kuang",
+      "percent": "49.2",
+      "position": "119.24",
+      "title": "Trail of Lightning",
+      "votes": "175"
+    },
+    {
+      "author": "Peter S. Beagle",
+      "position": "121",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Last_Unicorn",
+      "title": "The Last Unicorn"
+    },
+    {
+      "author": "Lisa A. Nichols",
+      "position": "122",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Vessel",
+      "title": "Vessel"
+    },
+    {
+      "author": "R.F.Kuang",
+      "position": "123",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Poppy_War",
+      "title": "The Poppy War"
+    },
+    {
+      "author": "Rebecca Roanhorse",
+      "position": "124",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Trail_of_Lightning",
+      "title": "Trail of Lightning"
+    },
+    {
+      "author": "Sam Sykes",
+      "position": "125",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Seven_Blades_in_Black",
+      "title": "Seven Blades in Black"
+    },
+    {
+      "author": "Joan D. Vinge",
+      "position": "126",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Snow_Queen",
+      "title": "The Snow Queen"
+    },
+    {
+      "author": "Terry Pratchett",
+      "position": "127",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Hogfather",
+      "title": "Hogfather"
+    },
+    {
+      "author": "Julie E. Czerneda",
+      "position": "128",
+      "source_url": "https://swordandlaser.fandom.com/wiki/In_the_Company_of_Others",
+      "title": "In the Company of Others"
+    },
+    {
+      "author": "Tamsyn Muir",
+      "position": "129",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Gideon_the_Ninth",
+      "title": "Gideon the Ninth"
+    },
+    {
+      "author": "Kameron Hurley",
+      "position": "130",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Light_Brigade",
+      "title": "The Light Brigade"
+    },
+    {
+      "author": "Amal El-Mohtar Max Gladstone",
+      "position": "131",
+      "source_url": "https://swordandlaser.fandom.com/wiki/This_is_How_You_Lose_the_Time_War",
+      "title": "This is How You Lose the Time War"
+    },
+    {
+      "author": "Michael Ende",
+      "percent": "41.9",
+      "position": "131.01",
+      "title": "The Neverending Story",
+      "votes": "137"
+    },
+    {
+      "author": "Katherine Arden",
+      "percent": "58.1",
+      "position": "131.02",
+      "title": "The Bear and the Nightingale",
+      "votes": "190"
+    },
+    {
+      "author": "Aleron Kong",
+      "percent": "25.7",
+      "position": "131.03",
+      "title": "The Land: Founding",
+      "votes": "82"
+    },
+    {
+      "author": "Ben Aaronovitch",
+      "percent": "74.3",
+      "position": "131.04",
+      "title": "Rivers of London/Midnight Riot",
+      "votes": "237"
+    },
+    {
+      "author": "Alix E. Harrow",
+      "percent": "17.7",
+      "position": "131.06",
+      "title": "The Bloodprint",
+      "votes": "55"
+    },
+    {
+      "author": "Evan Winter",
+      "percent": "41.3",
+      "position": "131.07",
+      "title": "The Rage of Dragons",
+      "votes": "129"
+    },
+    {
+      "author": "Asuma Zehanat Khan",
+      "percent": "58.7",
+      "position": "131.08",
+      "title": "The Ten Thousand Doors of January",
+      "votes": "183"
+    },
+    {
+      "author": "Nnedi Okorafor",
+      "percent": "35.7",
+      "position": "131.09",
+      "title": "Lagoon",
+      "votes": "112"
+    },
+    {
+      "author": "Spider Robinson",
+      "percent": "31.8",
+      "position": "131.11",
+      "title": "Callahan's Crosstime Saloon",
+      "votes": "102"
+    },
+    {
+      "author": "Analee Newitz",
+      "percent": "34.4",
+      "position": "131.13",
+      "title": "The Future of Another Timeline",
+      "votes": "106"
+    },
+    {
+      "author": "Martha Wells",
+      "percent": "76.1",
+      "position": "131.15",
+      "title": "All Systems Red",
+      "votes": "245"
+    },
+    {
+      "author": "Joanna Russ",
+      "percent": "23.9",
+      "position": "131.16",
+      "title": "The Female Man",
+      "votes": "77"
+    },
+    {
+      "author": "Raymond E. Feist",
+      "position": "132",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Magician:_Apprentice",
+      "title": "Magician: Apprentice"
+    },
+    {
+      "author": "Arkady Martine",
+      "position": "133",
+      "source_url": "https://swordandlaser.fandom.com/wiki/A_Memory_Called_Empire",
+      "title": "A Memory Called Empire"
+    },
+    {
+      "author": "Marlon James",
+      "position": "134",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Black_Leopard,_Red_Wolf",
+      "title": "Black Leopard, Red Wolf"
+    },
+    {
+      "author": "Jennifer Marie Brissett",
+      "position": "135",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Elysium",
+      "title": "Elysium"
+    },
+    {
+      "author": "Alix E. Harrow",
+      "position": "136",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Ten_Thousand_Doors_of_January",
+      "title": "The Ten Thousand Doors of January"
+    },
+    {
+      "author": "Suzanne Palmer",
+      "position": "137",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Finder",
+      "title": "Finder"
+    },
+    {
+      "author": "Diana Wynne Jones",
+      "position": "138",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Howl%27s_Moving_Castle",
+      "title": "Howl's Moving Castle"
+    },
+    {
+      "author": "Octavia E. Butler",
+      "position": "139",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Parable_of_the_Sower",
+      "title": "Parable of the Sower"
+    },
+    {
+      "author": "Jane Yolen",
+      "position": "139.5",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Finding_Baba_Yaga",
+      "title": "Finding Baba Yaga"
+    },
+    {
+      "author": "Cherie Dimaline",
+      "position": "140",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Marrow_Thieves",
+      "title": "The Marrow Thieves"
+    },
+    {
+      "author": "Peter Clines",
+      "position": "141",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Fold",
+      "title": "The Fold"
+    },
+    {
+      "author": "Darcie Little Badger",
+      "position": "142",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Elatsoe",
+      "title": "Elatsoe"
+    },
+    {
+      "author": "T.J.Klune",
+      "position": "143",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_House_in_the_Cerulean_Sea",
+      "title": "The House in the Cerulean Sea"
+    },
+    {
+      "author": "Silvia Moreno-Garcia",
+      "percent": "64.1",
+      "position": "143.01",
+      "title": "Gods of Jade and Shadow",
+      "votes": "134"
+    },
+    {
+      "author": "Martha Wells",
+      "percent": "35.9",
+      "position": "143.02",
+      "title": "The Cloud Roads",
+      "votes": "75"
+    },
+    {
+      "author": "Stephen King",
+      "percent": "40.2",
+      "position": "143.04",
+      "title": "The Eyes of the Dragon",
+      "votes": "84"
+    },
+    {
+      "author": "Enchanted",
+      "percent": "26.0",
+      "position": "143.06",
+      "title": "Enchanted",
+      "votes": "56"
+    },
+    {
+      "author": "Kristen Britain",
+      "percent": "56.3",
+      "position": "143.07",
+      "title": "Green Rider",
+      "votes": "108"
+    },
+    {
+      "author": "Walter Moers",
+      "percent": "33.2",
+      "position": "143.1",
+      "title": "The 13 1/2 Lives of Captain Blue Bear",
+      "votes": "64"
+    },
+    {
+      "author": "Eiko Kadono",
+      "percent": "52.5",
+      "position": "143.11",
+      "title": "Kiki\u2019s Delivery Service",
+      "votes": "104"
+    },
+    {
+      "author": "Tracy Deonn",
+      "percent": "47.5",
+      "position": "143.12",
+      "title": "Legendborn",
+      "votes": "94"
+    },
+    {
+      "author": "Samantha Shannon",
+      "percent": "61.6",
+      "position": "143.13",
+      "title": "The Priory of the Orange Tree",
+      "votes": "122"
+    },
+    {
+      "author": "Cadwell Turnbull",
+      "percent": "38.4",
+      "position": "143.14",
+      "title": "The Lesson",
+      "votes": "76"
+    },
+    {
+      "author": "Hope Mirrlees",
+      "percent": "17.6",
+      "position": "143.16",
+      "title": "Lud-in-the-Mist",
+      "votes": "36"
+    },
+    {
+      "author": "Martha Wells",
+      "position": "144",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Network_Effect",
+      "title": "Network Effect"
+    },
+    {
+      "author": "Susanna Clarke",
+      "position": "145",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Piranesi",
+      "title": "Piranesi"
+    },
+    {
+      "author": "Iain M. Banks",
+      "position": "146",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Consider_Phlebas",
+      "title": "Consider Phlebas"
+    },
+    {
+      "author": "C.M.Waggoner",
+      "position": "147",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Ruthless_Lady%27s_Guide_to_Wizardry",
+      "title": "The Ruthless Lady's Guide to Wizardry"
+    },
+    {
+      "author": "Claire G. Coleman",
+      "position": "148",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Terra_Nullius",
+      "title": "Terra Nullius"
+    },
+    {
+      "author": "Joe Hill",
+      "position": "149",
+      "source_url": "https://swordandlaser.fandom.com/wiki/NOS4A2",
+      "title": "NOS4A2"
+    },
+    {
+      "author": "Alastair Reynolds",
+      "position": "150",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Aurora_Rising",
+      "title": "Aurora Rising"
+    },
+    {
+      "author": "Zoraida C\u00f3rdova",
+      "position": "151",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Inheritance_of_Orqu%C3%ADdea_Divina",
+      "title": "The Inheritance of Orqu\u00eddea Divina"
+    },
+    {
+      "author": "Ryka Aoki",
+      "position": "152",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Light_from_Uncommon_Stars",
+      "title": "Light from Uncommon Stars"
+    },
+    {
+      "author": "Nghi Vo",
+      "position": "153",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Empress_of_Salt_and_Fortune",
+      "title": "The Empress of Salt and Fortune"
+    },
+    {
+      "author": "Peter F. Hamilton",
+      "position": "154",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Pandora%27s_Star",
+      "title": "Pandora's Star"
+    },
+    {
+      "author": "P. Dj\u00e8l\u00ed Clark",
+      "position": "155",
+      "source_url": "https://swordandlaser.fandom.com/wiki/A_Master_of_Djinn",
+      "title": "A Master of Djinn"
+    },
+    {
+      "author": "M.R.Carey",
+      "percent": "37",
+      "position": "155.02",
+      "title": "The Girl With All the Gifts",
+      "votes": "105"
+    },
+    {
+      "author": "Stephen Donaldson",
+      "percent": "27.2",
+      "position": "155.03",
+      "title": "Lord Foul\u2019s Bane",
+      "votes": "73"
+    },
+    {
+      "author": "Naomi Novik",
+      "percent": "41.9",
+      "position": "155.08",
+      "title": "A Deadly Education",
+      "votes": "116"
+    },
+    {
+      "author": "Becky Chambers",
+      "percent": "59.6",
+      "position": "155.09",
+      "title": "A Psalm for the Wild-Bilt",
+      "votes": "155"
+    },
+    {
+      "author": "Andreas Eschbach",
+      "percent": "34.3",
+      "position": "155.11",
+      "title": "The Carpet Makers",
+      "votes": "91"
+    },
+    {
+      "author": "Andy Weir",
+      "percent": "65.7",
+      "position": "155.12",
+      "title": "Project Hail Mary",
+      "votes": "174"
+    },
+    {
+      "author": "Clifford D. Simak",
+      "percent": "50.8",
+      "position": "155.13",
+      "title": "Way Station",
+      "votes": "129"
+    },
+    {
+      "author": "Kazuo Ishiguro",
+      "percent": "49.2",
+      "position": "155.14",
+      "title": "Klara and the Sun",
+      "votes": "125"
+    },
+    {
+      "author": "Lindsay Ellis",
+      "percent": "35.1",
+      "position": "155.16",
+      "title": "Axiom\u2019s End",
+      "votes": "93"
+    },
+    {
+      "author": "S.B.Divya",
+      "position": "156",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Machinehood",
+      "title": "Machinehood"
+    },
+    {
+      "author": "Jessie Mihalik",
+      "position": "157",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Hunt_the_Stars",
+      "title": "Hunt the Stars"
+    },
+    {
+      "author": "Ben Aaronovitch",
+      "position": "158",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Rivers_of_London",
+      "title": "Rivers of London"
+    },
+    {
+      "author": "Sequoia Nagamatsu",
+      "position": "159",
+      "source_url": "https://swordandlaser.fandom.com/wiki/How_High_We_Go_in_the_Dark",
+      "title": "How High We Go in the Dark"
+    },
+    {
+      "author": "Tasha Suri",
+      "position": "160",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Jasmine_Throne",
+      "title": "The Jasmine Throne"
+    },
+    {
+      "author": "Mur Lafferty",
+      "position": "161",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Six_Wakes",
+      "title": "Six Wakes"
+    },
+    {
+      "author": "Michael Moorcock",
+      "position": "162",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Elric_of_Melnibon%C3%A9",
+      "title": "Elric of Melnibon\u00e9"
+    },
+    {
+      "author": "James Tiptree Jr.",
+      "position": "163",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Brightness_Falls_from_the_Air",
+      "title": "Brightness Falls from the Air"
+    },
+    {
+      "author": "T. Kingfisher",
+      "position": "164",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Nettle_%26_Bone",
+      "title": "Nettle & Bone"
+    },
+    {
+      "author": "Ren Hutchings",
+      "position": "165",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Under_Fortunate_Stars",
+      "title": "Under Fortunate Stars"
+    },
+    {
+      "author": "Travis Baldree",
+      "position": "166",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Legends_%26_Lattes",
+      "title": "Legends & Lattes"
+    },
+    {
+      "author": "Travis Baldree",
+      "percent": "55.7",
+      "position": "166.01",
+      "title": "Legend & Lattes",
+      "votes": "136"
+    },
+    {
+      "author": "Rachel Aaron",
+      "percent": "44.3",
+      "position": "166.02",
+      "title": "Minimum Wage Magic",
+      "votes": "108"
+    },
+    {
+      "author": "Ken Liu",
+      "percent": "68.3",
+      "position": "166.03",
+      "title": "The Grace of Kings",
+      "votes": "153"
+    },
+    {
+      "author": "Michael Ende",
+      "percent": "31.7",
+      "position": "166.04",
+      "title": "Momo",
+      "votes": "71"
+    },
+    {
+      "author": "S.A.Chakraborty",
+      "percent": "63.4",
+      "position": "166.07",
+      "title": "The City of Brass",
+      "votes": "147"
+    },
+    {
+      "author": "Salman Rushdie",
+      "percent": "36.6",
+      "position": "166.08",
+      "title": "Victory City",
+      "votes": "85"
+    },
+    {
+      "author": "Pierce Brown",
+      "percent": "51.5",
+      "position": "166.11",
+      "title": "Red Rising",
+      "votes": "119"
+    },
+    {
+      "author": "David Brin",
+      "percent": "48.5",
+      "position": "166.12",
+      "title": "Startide Rising",
+      "votes": "112"
+    },
+    {
+      "author": "Annalee Newitz",
+      "percent": "62.7",
+      "position": "166.13",
+      "title": "The Terraformers",
+      "votes": "138"
+    },
+    {
+      "author": "Claire North",
+      "percent": "37.3",
+      "position": "166.14",
+      "title": "Notes from the Burning Age",
+      "votes": "82"
+    },
+    {
+      "author": "Mary Robinette Kowal",
+      "percent": "54",
+      "position": "166.15",
+      "title": "The Spare Man",
+      "votes": "127"
+    },
+    {
+      "author": "Jackson Ford",
+      "percent": "46",
+      "position": "166.16",
+      "title": "The Girl Who Could Move Shit With Her Mind",
+      "votes": "108"
+    },
+    {
+      "author": "Adrian Tchaikovsky",
+      "position": "167",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Children_of_Time",
+      "title": "Children of Time"
+    },
+    {
+      "author": "Rebecca Yarros",
+      "position": "168",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Fourth_Wing",
+      "title": "Fourth Wing"
+    },
+    {
+      "author": "Emma Newman",
+      "position": "169",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Planetfall",
+      "title": "Planetfall"
+    },
+    {
+      "author": "Leigh Bardugo",
+      "position": "170",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Ninth_House",
+      "title": "Ninth House"
+    },
+    {
+      "author": "Maureen F. McHugh",
+      "position": "171",
+      "source_url": "https://swordandlaser.fandom.com/wiki/China_Mountain_Zhang",
+      "title": "China Mountain Zhang"
+    },
+    {
+      "author": "Scott Hawkins",
+      "position": "172",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Library_at_Mount_Char",
+      "title": "The Library at Mount Char"
+    },
+    {
+      "author": "Malka Ann Older",
+      "position": "173",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Mimicking_of_Known_Successes",
+      "title": "The Mimicking of Known Successes"
+    },
+    {
+      "author": "Nicholas Eames",
+      "position": "174",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Kings_of_the_Wyld",
+      "title": "Kings of the Wyld"
+    },
+    {
+      "author": "Lauren Beukes",
+      "position": "175",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Shining_Girls",
+      "title": "The Shining Girls"
+    },
+    {
+      "author": "John Gwynne",
+      "position": "176",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Shadow_of_the_Gods",
+      "title": "The Shadow of the Gods"
+    },
+    {
+      "author": "Xiran Jay Zhao",
+      "position": "177",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Iron_Widow",
+      "title": "Iron Widow"
+    },
+    {
+      "author": "Lois McMaster Bujold",
+      "position": "178",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Cordelia%27s_Honour",
+      "title": "Cordelia's Honour"
+    },
+    {
+      "author": "Glen Cook",
+      "percent": "45.7",
+      "position": "178.01",
+      "title": "The Black Company",
+      "votes": "127"
+    },
+    {
+      "author": "Rosemary Kirstein",
+      "percent": "54.3",
+      "position": "178.02",
+      "title": "The Steerswoman",
+      "votes": "151"
+    },
+    {
+      "author": "Heather Fawcett",
+      "percent": "56.1",
+      "position": "178.03",
+      "title": "Emily Wilde\u2019s Encyclopedia of Faeries",
+      "votes": "151"
+    },
+    {
+      "author": "Walter Moers",
+      "percent": "43.9",
+      "position": "178.04",
+      "title": "The City of Dreaming Books",
+      "votes": "118"
+    },
+    {
+      "author": "Jill Bearup",
+      "percent": "43.6",
+      "position": "178.05",
+      "title": "Just Stab Me Now",
+      "votes": "112"
+    },
+    {
+      "author": "Robin McKinley",
+      "percent": "44.3",
+      "position": "178.08",
+      "title": "The Blue Sword",
+      "votes": "116"
+    },
+    {
+      "author": "Kim Stanley Robinson",
+      "percent": "52.8",
+      "position": "178.09",
+      "title": "The Ministry for the Future",
+      "votes": "141"
+    },
+    {
+      "author": "Marina Dyachenko",
+      "percent": "47.2",
+      "position": "178.1",
+      "title": "Vita Nostra",
+      "votes": "126"
+    },
+    {
+      "author": "Jasper Fforde",
+      "percent": "44.4",
+      "position": "178.12",
+      "title": "Shades of Grey",
+      "votes": "116"
+    },
+    {
+      "author": "Lois McMaster Bujold",
+      "percent": "58.6",
+      "position": "178.13",
+      "title": "Cordelia\u2019s Honor",
+      "votes": "153"
+    },
+    {
+      "author": "Christopher Ruocchio",
+      "percent": "41.4",
+      "position": "178.14",
+      "title": "Empire of Silence",
+      "votes": "108"
+    },
+    {
+      "author": "Lilith Saintcrow",
+      "percent": "43.8",
+      "position": "178.16",
+      "title": "She Wolf and Cub",
+      "votes": "121"
+    },
+    {
+      "author": "Heather Fawcett",
+      "position": "179",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Emily_Wilde%27s_Encyclopaedia_of_Faeries",
+      "title": "Emily Wilde's Encyclopaedia of Faeries"
+    },
+    {
+      "author": "M.L.Wang",
+      "position": "180",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Sword_of_Kaigen",
+      "title": "The Sword of Kaigen"
+    },
+    {
+      "author": "Bora Chung",
+      "position": "181",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Cursed_Bunny",
+      "title": "Cursed Bunny"
+    },
+    {
+      "author": "Simon Jimenez",
+      "position": "182",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Spear_Cuts_Through_Water",
+      "title": "The Spear Cuts Through Water"
+    },
+    {
+      "author": "Emily Tesh",
+      "position": "183",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Some_Desperate_Glory",
+      "title": "Some Desperate Glory"
+    },
+    {
+      "author": "Roger Zelazny",
+      "position": "184",
+      "source_url": "https://swordandlaser.fandom.com/wiki/A_Night_in_the_Lonesome_October",
+      "title": "A Night in the Lonesome October"
+    },
+    {
+      "author": "Douglas Adams",
+      "position": "185",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy",
+      "title": "The Hitchhiker's Guide to the Galaxy"
+    },
+    {
+      "author": "Nnedi Okorafor",
+      "position": "186",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Akata_Witch",
+      "title": "Akata Witch"
+    },
+    {
+      "author": "Kaliane Bradley",
+      "position": "187",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Ministry_of_Time",
+      "title": "The Ministry of Time"
+    },
+    {
+      "author": "James Islington",
+      "position": "188",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Will_of_the_Many",
+      "title": "The Will of the Many"
+    },
+    {
+      "author": "China Mi\u00e9ville",
+      "position": "189",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_City_%26_the_City",
+      "title": "The City & the City"
+    },
+    {
+      "author": "Matt Dinniman",
+      "position": "190",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Dungeon_Crawler_Carl",
+      "title": "Dungeon Crawler Carl"
+    },
+    {
+      "author": "Matt Dinnaman",
+      "percent": "65.8",
+      "position": "190.01",
+      "title": "Dungeon Crawler Carl",
+      "votes": "150"
+    },
+    {
+      "author": "Delilah S. Dawson & Kevin Hearne",
+      "percent": "34.2",
+      "position": "190.02",
+      "title": "Kill the Farm Boy",
+      "votes": "78"
+    },
+    {
+      "author": "Shelley Parker-Chan",
+      "percent": "40",
+      "position": "190.03",
+      "title": "She Who Became the Sun",
+      "votes": "86"
+    },
+    {
+      "author": "Shannon Chakraborty",
+      "percent": "60",
+      "position": "190.04",
+      "title": "The Adventures of Amina-al-Sirafi",
+      "votes": "129"
+    },
+    {
+      "author": "Tansy Rayner Roberts",
+      "percent": "45.8",
+      "position": "190.05",
+      "title": "Time of the Cat",
+      "votes": "98"
+    },
+    {
+      "author": "Seanan McGuire",
+      "percent": "54.2",
+      "position": "190.06",
+      "title": "Middlegame",
+      "votes": "116"
+    },
+    {
+      "author": "Wesley Chu",
+      "percent": "65.3",
+      "position": "190.07",
+      "title": "The Art of Prophecy",
+      "votes": "130"
+    },
+    {
+      "author": "Bradley P. Beaulieu",
+      "percent": "34.7",
+      "position": "190.08",
+      "title": "Twelve Kings",
+      "votes": "69"
+    },
+    {
+      "author": "David Weber",
+      "percent": "38.7",
+      "position": "190.1",
+      "title": "In Fury Born",
+      "votes": "77"
+    },
+    {
+      "author": "Octavia E. Butler",
+      "percent": "41.8",
+      "position": "190.11",
+      "title": "Parable of the Talents",
+      "votes": "87"
+    },
+    {
+      "author": "Gareth L. Powell",
+      "percent": "58.2",
+      "position": "190.12",
+      "title": "Embers of War",
+      "votes": "121"
+    },
+    {
+      "author": "Tlotlo Tsamaase",
+      "percent": "36.2",
+      "position": "190.13",
+      "title": "Womb City",
+      "votes": "71"
+    },
+    {
+      "author": "Elizabeth Moon",
+      "percent": "63.8",
+      "position": "190.14",
+      "title": "The Speed of Dark",
+      "votes": "125"
+    },
+    {
+      "author": "K.Eason",
+      "percent": "35.9",
+      "position": "190.16",
+      "title": "How Rory Thorne Destroyed the Multiverse",
+      "votes": "74"
+    },
+    {
+      "author": "Edward Ashton",
+      "position": "191",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Mickey_7",
+      "title": "Mickey 7"
+    },
+    {
+      "author": "Wesley Chu",
+      "position": "192",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Lives_of_Tao",
+      "title": "The Lives of Tao"
+    },
+    {
+      "author": "Joe Abercrombie",
+      "position": "193",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Devils",
+      "title": "The Devils"
+    },
+    {
+      "author": "Shelly Parker-Chan",
+      "position": "194",
+      "source_url": "https://swordandlaser.fandom.com/wiki/She_Who_Became_the_Sun",
+      "title": "She Who Became the Sun"
+    },
+    {
+      "author": "Josiah Bancroft",
+      "position": "195",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Hexologists",
+      "title": "The Hexologists"
+    },
+    {
+      "author": "Anne Rice",
+      "position": "196",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Interview_With_the_Vampire",
+      "title": "Interview With the Vampire"
+    },
+    {
+      "author": "Grace Curtis",
+      "position": "197",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Floating_Hotel",
+      "title": "Floating Hotel"
+    },
+    {
+      "author": "Mark Lawrence",
+      "position": "198",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Book_That_Wouldn%22t_Burn",
+      "title": "The Book That Wouldn't Burn"
+    },
+    {
+      "author": "Jason Pargin",
+      "position": "199",
+      "source_url": "https://swordandlaser.fandom.com/wiki/I%27m_Starting_to_Worry_About_This_Black_Box_of_Doom",
+      "title": "I'm Starting to Worry About This Black Box of Doom"
+    },
+    {
+      "author": "Charles de Lint",
+      "position": "200",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Someplace_To_Be_Flying",
+      "title": "Someplace To Be Flying"
+    },
+    {
+      "author": "Annalee Newitz",
+      "position": "201",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Automatic_Noodle",
+      "title": "Automatic Noodle"
+    },
+    {
+      "author": "Antonia Hodgson",
+      "position": "202",
+      "source_url": "https://swordandlaser.fandom.com/wiki/The_Raven_Scholar",
+      "title": "The Raven Scholar"
+    },
+    {
+      "author": "qntm",
+      "percent": "64.3",
+      "position": "202.01",
+      "title": "There is No Antimemetics Division",
+      "votes": "108"
+    },
+    {
+      "author": "April C. Griffith",
+      "percent": "35.7",
+      "position": "202.02",
+      "title": "Electra Rex",
+      "votes": "60"
+    },
+    {
+      "author": "Jasper Fforde",
+      "percent": "63",
+      "position": "202.03",
+      "title": "The Eyre Affair",
+      "votes": "109"
+    },
+    {
+      "author": "E.E. \u201cDoc\u201d Smith",
+      "percent": "37",
+      "position": "202.04",
+      "title": "Galactic Patrol",
+      "votes": "64"
+    },
+    {
+      "author": "Madeleine Thien",
+      "percent": "28.6",
+      "position": "202.06",
+      "title": "The Book of Records",
+      "votes": "48"
+    },
+    {
+      "author": "Roger Zelazny",
+      "percent": "39.2",
+      "position": "202.07",
+      "title": "Lord of Light",
+      "votes": "67"
+    },
+    {
+      "author": "Elizabeth Moon",
+      "percent": "60.8",
+      "position": "202.08",
+      "title": "Remnant Population",
+      "votes": "104"
+    },
+    {
+      "author": "M.A. Carrick",
+      "percent": "43.4",
+      "position": "202.09",
+      "title": "The Mask of Mirrors",
+      "votes": "75"
+    },
+    {
+      "author": "Samantha Sotto Yambao",
+      "percent": "56.6",
+      "position": "202.1",
+      "title": "Water Moon",
+      "votes": "98"
+    },
+    {
+      "author": "Shirtaloon",
+      "percent": "54.3",
+      "position": "202.11",
+      "title": "He Who Fights With Monsters",
+      "votes": "89"
+    },
+    {
+      "author": "Will Wright",
+      "percent": "45.7",
+      "position": "202.12",
+      "title": "Unsouled",
+      "votes": "75"
+    },
+    {
+      "author": "Antonio Hodgson",
+      "percent": "59.2",
+      "position": "202.13",
+      "title": "The Raven Scholar",
+      "votes": "100"
+    },
+    {
+      "author": "Moniquill Blackgoose",
+      "percent": "40.8",
+      "position": "202.14",
+      "title": "To Shape a Dragon\u2019s Breath",
+      "votes": "69"
+    },
+    {
+      "author": "Christopher Buehlman",
+      "percent": "40.9",
+      "position": "202.15",
+      "title": "The Blacktongue Thief",
+      "votes": "70"
+    },
+    {
+      "author": "Barbara Truelove",
+      "percent": "59.1",
+      "position": "202.16",
+      "title": "Of Monsters and Mainframes",
+      "votes": "101"
+    },
+    {
+      "author": "Claire North",
+      "position": "203",
+      "source_url": "https://swordandlaser.fandom.com/wiki/Slow_Gods",
+      "title": "Slow Gods"
+    }
+  ],
+  "fetched_at": "2026-05-11T09:44:59Z",
+  "list_id": "sword_and_laser_book_list",
+  "list_name": "Sword and Laser",
+  "match_series": false,
+  "notes": [
+    "March Madness checked 213 of 213 linked pages; found 453 nomination entries; added 194 new recipe entries; skipped 259 duplicate entries."
+  ],
+  "parser": "sword_and_laser_book_list",
+  "schema_version": 1,
+  "source_url": "https://swordandlaser.fandom.com/api.php?action=parse&page=Book_List&prop=text&format=json"
+}

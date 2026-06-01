@@ -432,10 +432,19 @@ class ImportFlowMixin:
     self.debug_import_summary(matched, missing_entries, entries)
 
     self.update_import_progress(IMPORT_MATCH_PROGRESS_MAX, 'Preparing import review...')
+    review_rows, reconciliation_notes = self.reconcile_review_rows_with_active_list(
+      list_name, review_rows, active_name=active)
+    if reconciliation_notes:
+      notes = list(parsed.get('notes') or [])
+      notes.extend(reconciliation_notes)
+      parsed = dict(parsed)
+      parsed['notes'] = notes
+    matched, missing_entries, review_rows = self.accepted_import_review_rows(review_rows)
     self.close_import_progress()
     review = self.review_import_matches(
       list_name, parsed.get('list_id'), len(matched), len(entries),
-      missing_entries, review_rows, notes=parsed.get('notes'))
+      missing_entries, review_rows, notes=parsed.get('notes'),
+      match_series=match_series, allow_goodreads_recovery=allow_goodreads_recovery)
     if review is None:
       raise ImportCancelledError('Import cancelled. No Active List metadata was changed.')
     matched, missing_entries, review_rows = review
@@ -531,9 +540,182 @@ class ImportFlowMixin:
       })
     return rows
 
+  def reconcile_review_rows_with_active_list(self, list_name, review_rows, active_name=None):
+    rows = list(review_rows or [])
+    if not rows:
+      return rows, []
+    if active_name is None:
+      active_name = self.current_active()
+    if not active_name or normalize_key(active_name) != normalize_key(list_name):
+      return rows, []
+
+    try:
+      active_book_ids = set(self.active_book_ids_for_list(list_name))
+    except AttributeError:
+      return rows, []
+    rows_by_position = {}
+    for row in rows:
+      position = self.normalized_position_text(
+        row.get('imported_position', '') or (row.get('entry') or {}).get('position', ''))
+      if position:
+        rows_by_position.setdefault(position, []).append(row)
+
+    book_to_row = {}
+    for row in rows:
+      for book_id in row.get('book_ids') or []:
+        book_to_row[book_id] = row
+
+    for row in rows:
+      if row.get('ignored') or not row.get('matched'):
+        continue
+      if self.review_row_match_is_automatic(row):
+        continue
+      missing_book_ids = [
+        book_id for book_id in (row.get('book_ids') or [])
+        if book_id not in active_book_ids
+      ]
+      if not missing_book_ids:
+        continue
+      self.remember_review_row_previous_match(row)
+      remaining = [
+        book_id for book_id in (row.get('book_ids') or [])
+        if book_id in active_book_ids
+      ]
+      if remaining:
+        row['book_ids'] = remaining
+        row['matched_books'] = [
+          book for book in (row.get('matched_books') or [])
+          if book.get('matched_book_id') in set(remaining)
+        ]
+        continue
+      self.clear_review_row_match(row)
+
+    notes = []
+    unknown_position_count = 0
+    active_positions = self.active_review_positions_by_book(active_book_ids)
+    book_details = self.review_book_details(active_book_ids)
+    for book_id, position in active_positions.items():
+      target_rows = rows_by_position.get(position, [])
+      if not target_rows:
+        unknown_position_count += 1
+        continue
+      target_row = self.active_position_target_row(book_id, target_rows, book_details)
+      if target_row.get('ignored'):
+        continue
+      current_row = book_to_row.get(book_id)
+      if current_row is target_row and book_id in (target_row.get('book_ids') or []):
+        continue
+      if (
+          current_row is not None
+          and self.review_row_match_is_automatic(current_row)
+          and current_row is not target_row
+          and self.review_row_match_is_automatic(target_row)):
+        continue
+      if current_row is not None and current_row is not target_row:
+        self.remove_book_from_review_row(current_row, book_id)
+      self.add_active_manual_match_to_review_row(target_row, book_id, book_details)
+      book_to_row[book_id] = target_row
+
+    if unknown_position_count:
+      notes.append(
+        f'{unknown_position_count} current Active List book(s) use positions not found in the imported recipe.')
+    return rows, notes
+
+  def review_row_match_is_automatic(self, row):
+    return row.get('matched') and row.get('match_source') == 'automatic'
+
+  def active_review_positions_by_book(self, active_book_ids):
+    positions = {}
+    index_field = self.active_series_index_field()
+    for book_id in active_book_ids:
+      position, _numeric_position = self.read_position_display(
+        index_field, book_id, self.read_field(prefs['active_list_field'], book_id))
+      position = self.normalized_position_text(position)
+      if position:
+        positions[book_id] = position
+    return positions
+
+  def review_book_details(self, book_ids):
+    db = self.db.new_api
+    book_ids = list(book_ids or [])
+    titles = db.all_field_for('title', book_ids, default_value='')
+    authors = db.all_field_for('authors', book_ids, default_value='')
+    return {
+      detail.get('matched_book_id'): detail
+      for detail in self.matched_book_details(book_ids, titles, authors)
+    }
+
+  def active_position_target_row(self, book_id, rows, book_details):
+    for row in rows:
+      if book_id in (row.get('book_ids') or []):
+        return row
+    detail = book_details.get(book_id) or {}
+    for row in rows:
+      entry = row.get('entry') or {}
+      if entry.get('title') and detail.get('matched_title'):
+        if normalize_key(entry.get('title')) != normalize_key(detail.get('matched_title')):
+          continue
+      if entry.get('author') and detail.get('matched_authors'):
+        if not self.author_matches(detail.get('matched_authors'), entry.get('author')):
+          continue
+      return row
+    return rows[0]
+
+  def remember_review_row_previous_match(self, row):
+    row['previous_book_ids'] = list(
+      row.get('previous_book_ids') or row.get('book_ids') or row.get('original_book_ids') or [])
+    row['previous_matched_books'] = list(
+      row.get('previous_matched_books')
+      or row.get('matched_books') or row.get('original_matched_books') or [])
+    row['previous_match_source'] = (
+      row.get('previous_match_source')
+      or row.get('match_source')
+      or row.get('original_match_source')
+      or '')
+    row['can_toggle_on'] = True
+
+  def clear_review_row_match(self, row):
+    row['matched'] = False
+    row['ignored'] = False
+    row['book_ids'] = []
+    row['matched_books'] = []
+    row['match_source'] = 'never matched'
+    row['can_toggle_on'] = True
+
+  def remove_book_from_review_row(self, row, book_id):
+    if book_id not in (row.get('book_ids') or []):
+      return
+    self.remember_review_row_previous_match(row)
+    row['book_ids'] = [
+      existing_id for existing_id in (row.get('book_ids') or [])
+      if existing_id != book_id
+    ]
+    row['matched_books'] = [
+      book for book in (row.get('matched_books') or [])
+      if book.get('matched_book_id') != book_id
+    ]
+    if not row['book_ids']:
+      self.clear_review_row_match(row)
+
+  def add_active_manual_match_to_review_row(self, row, book_id, book_details):
+    if book_id not in (row.get('book_ids') or []):
+      row.setdefault('book_ids', []).append(book_id)
+    detail = book_details.get(book_id)
+    if detail:
+      matched_books = [
+        book for book in (row.get('matched_books') or [])
+        if book.get('matched_book_id') != book_id
+      ]
+      matched_books.append(detail)
+      row['matched_books'] = matched_books
+    row['matched'] = True
+    row['ignored'] = False
+    row['match_source'] = 'active list/manual edit'
+    row['can_toggle_on'] = True
+
   def review_import_matches(
       self, list_name, list_id, matched_count, entries_count, missing_entries,
-      review_rows, notes=None):
+      review_rows, notes=None, match_series=True, allow_goodreads_recovery=True):
     self.debug_import_missing_entries(missing_entries)
     try:
       gui = self.gui
@@ -547,7 +729,11 @@ class ImportFlowMixin:
         save_find_match_settings=self.save_find_match_settings,
         find_match_index_callback=self.find_match_library_index,
         find_match_callback=self.find_matches_for_review_rows,
-        view_book_callback=self.open_book_detail_window)
+        view_book_callback=self.open_book_detail_window,
+        selected_match_source_callback=lambda row, candidate: self.review_match_source_for_candidate(
+          row.get('entry') or {}, candidate.get('book_id', candidate.get('matched_book_id')),
+          list_id=list_id, match_series=match_series,
+          allow_goodreads_recovery=allow_goodreads_recovery))
     except TypeError as err:
       if (
           'find_match_settings' not in str(err)
@@ -576,32 +762,107 @@ class ImportFlowMixin:
     prefs['find_match_title_soundex_length'] = int(settings.get('title_soundex_length', 6))
     prefs['find_match_author_soundex_length'] = int(settings.get('author_soundex_length', 8))
 
-  def open_book_detail_window(self, book_id):
+  def open_book_detail_window(self, book_id, parent=None):
     gui = getattr(self, 'gui', None)
     if gui is None or book_id is None:
       return False
+    if self.open_modal_book_info(book_id, focus_parent=parent):
+      return True
     for method_name in ('show_book_info', 'show_book_details', 'show_book_details_window'):
       method = getattr(gui, method_name, None)
-      if callable(method):
-        method(book_id)
+      if self.call_book_detail_method(method, book_id):
         return True
     iactions = getattr(gui, 'iactions', {}) or {}
-    for key in ('Show Book Details', 'Book Details', 'View'):
+    for key in ('Show Book Details', 'Book Details'):
       action = iactions.get(key) if hasattr(iactions, 'get') else None
       if action is None:
         continue
-      for method_name in (
-          'show_book_info', 'show_book_details', 'show_book_details_window',
-          'view_book'):
+      for method_name in ('show_book_info', 'show_book_details', 'show_book_details_window'):
         method = getattr(action, method_name, None)
-        if callable(method):
-          method(book_id)
+        if self.call_book_detail_method(method, book_id):
           return True
     library_view = getattr(gui, 'library_view', None)
     select_rows = getattr(library_view, 'select_rows', None)
     if callable(select_rows):
       select_rows([book_id])
     return False
+
+  def call_book_detail_method(self, method, book_id):
+    if not callable(method):
+      return False
+    try:
+      method(book_id=book_id)
+      return True
+    except TypeError as err:
+      if 'book_id' not in str(err) and 'keyword' not in str(err):
+        raise
+    return False
+
+  def open_modal_book_info(self, book_id, focus_parent=None):
+    gui = getattr(self, 'gui', None)
+    try:
+      from calibre.gui2.dialogs.book_info import BookInfo, DialogNumbers
+    except Exception:
+      return False
+    library_view = getattr(gui, 'library_view', None)
+    if library_view is None:
+      return False
+    book_details = getattr(gui, 'book_details', None)
+    link_delegate = getattr(book_details, 'handle_click_from_popup', None)
+    if link_delegate is None:
+      link_delegate = lambda *_args, **_kwargs: None
+    index = self.library_index_for_book_id(book_id)
+    try:
+      dialog = BookInfo(
+        gui, library_view, index, link_delegate,
+        dialog_number=DialogNumbers.Locked, book_id=book_id)
+    except Exception:
+      return False
+    open_cover_with = getattr(dialog, 'open_cover_with', None)
+    bd_open_cover_with = getattr(gui, 'bd_open_cover_with', None)
+    connect = getattr(open_cover_with, 'connect', None)
+    if callable(connect) and bd_open_cover_with is not None:
+      try:
+        connect(bd_open_cover_with)
+      except Exception:
+        pass
+    try:
+      dialog.exec()
+    finally:
+      self.refocus_dialog_parent(focus_parent)
+    return True
+
+  def library_index_for_book_id(self, book_id):
+    gui = getattr(self, 'gui', None)
+    library_view = getattr(gui, 'library_view', None)
+    model = library_view.model() if library_view is not None else None
+    current_index = None
+    try:
+      current_index = library_view.currentIndex()
+      if current_index is not None and current_index.isValid():
+        if model.id(current_index) == book_id:
+          return current_index
+    except Exception:
+      pass
+    try:
+      for row in range(model.rowCount()):
+        index = model.index(row, 0)
+        if model.id(index) == book_id:
+          return index
+    except Exception:
+      pass
+    return current_index
+
+  def refocus_dialog_parent(self, focus_parent):
+    if focus_parent is None:
+      return
+    for method_name in ('raise_', 'activateWindow', 'setFocus'):
+      method = getattr(focus_parent, method_name, None)
+      if callable(method):
+        try:
+          method()
+        except Exception:
+          pass
 
   def find_matches_for_review_rows(self, review_rows, settings, index=None):
     matched_book_ids = set()

@@ -22,6 +22,9 @@ except ImportError:
 VIEW_ALL = 'All'
 VIEW_MATCHED = 'Matched'
 VIEW_UNMATCHED = 'Unmatched'
+AWARD_FILTER_ALL = 'All'
+AWARD_FILTER_WINNERS = 'Winners only'
+AWARD_FILTER_NOMINEES = 'Nominees only'
 
 IMPORT_REVIEW_HEADERS = [
   'Position', 'Title', 'Author', 'ID', 'Match', 'Source',
@@ -44,7 +47,8 @@ class ImportReportDialog(QDialog):
       self, parent, list_name, matched_count=0, entries_count=0,
       missing_entries=None, allow_deep_recovery=False, notes=None,
       review_rows=None, find_match_settings=None, save_find_match_settings=None,
-      find_match_index_callback=None, find_match_callback=None, view_book_callback=None):
+      find_match_index_callback=None, find_match_callback=None, view_book_callback=None,
+      selected_match_source_callback=None):
     QDialog.__init__(self, parent)
     self.list_name = list_name
     self.review_rows = [
@@ -63,6 +67,7 @@ class ImportReportDialog(QDialog):
     self.find_match_index = None
     self.find_match_index_settings = None
     self.view_book_callback = view_book_callback
+    self.selected_match_source_callback = selected_match_source_callback
     self.deep_recovery_requested = False
     self.setWindowTitle('Import List Review')
     notes = [note for note in (notes or []) if note]
@@ -85,10 +90,17 @@ class ImportReportDialog(QDialog):
     self.view_combo.addItems([VIEW_ALL, VIEW_MATCHED, VIEW_UNMATCHED])
     self.view_combo.setCurrentText(VIEW_UNMATCHED)
     view_layout.addWidget(self.view_combo)
+    view_layout.addSpacing(12)
+    view_layout.addWidget(QLabel('Award:', self))
+    self.award_filter_combo = QComboBox(self)
+    self.award_filter_combo.addItems([
+      AWARD_FILTER_ALL, AWARD_FILTER_WINNERS, AWARD_FILTER_NOMINEES,
+    ])
+    view_layout.addWidget(self.award_filter_combo)
     view_layout.addStretch(1)
     layout.addLayout(view_layout)
 
-    self.toggle_button = QPushButton('Toggle matched', self)
+    self.toggle_button = QPushButton('Toggle match', self)
     self.find_button = QPushButton('Find match', self)
     self.match_mode_button = QPushButton('Match mode', self)
 
@@ -120,6 +132,7 @@ class ImportReportDialog(QDialog):
     layout.addWidget(buttons)
 
     self.view_combo.currentTextChanged.connect(self.update_table)
+    self.award_filter_combo.currentTextChanged.connect(self.update_table)
     self.match_table.currentCellChanged.connect(self.update_toggle_button)
     self.toggle_button.clicked.connect(self.toggle_selected_match)
     self.find_button.clicked.connect(self.open_find_matches)
@@ -137,15 +150,20 @@ class ImportReportDialog(QDialog):
     row.setdefault('imported_author', entry.get('author', ''))
     row.setdefault('matched', False)
     row.setdefault('original_matched', bool(row.get('matched')))
+    row.setdefault('ignored', False)
+    row.setdefault('original_ignored', bool(row.get('ignored')))
     row.setdefault('book_ids', [])
     row.setdefault('original_book_ids', list(row.get('book_ids') or []))
     row.setdefault('matched_books', [])
     row.setdefault('original_matched_books', list(row.get('matched_books') or []))
     row.setdefault('previous_book_ids', [])
     row.setdefault('previous_matched_books', [])
+    row.setdefault('previous_match_source', row.get('original_match_source', ''))
     row.setdefault('match_source', 'never matched')
     row.setdefault('original_match_source', row.get('match_source', 'never matched'))
-    row.setdefault('can_toggle_on', bool(row.get('matched') or row.get('previous_book_ids')))
+    row.setdefault(
+      'can_toggle_on',
+      bool(row.get('matched') or row.get('previous_book_ids') or row.get('ignored')))
     row.setdefault('possible_matches', [])
     return row
 
@@ -174,20 +192,50 @@ class ImportReportDialog(QDialog):
       return VIEW_UNMATCHED
 
   def rows_for_current_view(self):
+    return [
+      row for row in self.review_rows
+      if self.row_matches_view_filter(row) and self.row_matches_award_filter(row)
+    ]
+
+  def current_award_filter_mode(self):
+    try:
+      return self.award_filter_combo.currentText()
+    except Exception:
+      return AWARD_FILTER_ALL
+
+  def row_matches_view_filter(self, row):
     mode = self.current_view_mode()
     if mode == VIEW_MATCHED:
-      return [row for row in self.review_rows if row.get('matched')]
+      return bool(row.get('matched'))
     if mode == VIEW_UNMATCHED:
-      return [row for row in self.review_rows if not row.get('matched')]
-    return list(self.review_rows)
+      return not row.get('matched')
+    return True
+
+  def row_award_result(self, row):
+    entry = row.get('entry') or {}
+    return str(entry.get('result', '') or '').casefold()
+
+  def row_matches_award_filter(self, row):
+    mode = self.current_award_filter_mode()
+    if mode == AWARD_FILTER_WINNERS:
+      return self.row_award_result(row) == 'winner'
+    if mode == AWARD_FILTER_NOMINEES:
+      return self.row_award_result(row) != 'winner'
+    return True
 
   def update_table(self, *_args):
+    selected_row = self.selected_review_row()
+    self.update_table_for_row(selected_row)
+
+  def update_table_for_row(self, selected_row=None):
     self.visible_rows = self.rows_for_current_view()
     self.match_table.setRowCount(len(self.visible_rows))
     for row_index, row in enumerate(self.visible_rows):
       for column, value in enumerate(self.csv_values_for_row(row)):
         self.match_table.setItem(row_index, column, QTableWidgetItem(value))
-    if self.visible_rows:
+    if selected_row in self.visible_rows:
+      self.select_review_row(selected_row)
+    elif self.visible_rows:
       self.match_table.setCurrentCell(0, 0)
     self.apply_stable_fixed_column_widths()
     self.update_toggle_button()
@@ -249,26 +297,43 @@ class ImportReportDialog(QDialog):
     if row is None:
       self.toggle_button.setEnabled(False)
       return
-    if row.get('matched'):
-      self.toggle_button.setEnabled(True)
-      return
-    self.toggle_button.setEnabled(bool(row.get('can_toggle_on')))
+    self.toggle_button.setEnabled(True)
 
   def toggle_selected_match(self):
     row = self.selected_review_row()
     if row is None:
       return
     if row.get('matched'):
+      row['previous_book_ids'] = list(row.get('book_ids') or [])
+      row['previous_matched_books'] = list(row.get('matched_books') or [])
+      row['previous_match_source'] = row.get('match_source', '')
       row['matched'] = False
+      row['ignored'] = False
       row['book_ids'] = []
       row['matched_books'] = []
-    elif row.get('can_toggle_on'):
-      row['matched'] = True
-      if not row.get('book_ids'):
+      row['match_source'] = 'never matched'
+      row['can_toggle_on'] = True
+    elif row.get('ignored'):
+      if row.get('previous_book_ids'):
+        row['matched'] = True
+        row['ignored'] = False
         row['book_ids'] = list(row.get('previous_book_ids') or [])
-      if not row.get('matched_books'):
         row['matched_books'] = list(row.get('previous_matched_books') or [])
-    self.update_table()
+        row['match_source'] = row.get('previous_match_source') or 'automatic'
+        row['can_toggle_on'] = True
+      else:
+        row['matched'] = False
+        row['ignored'] = False
+        row['match_source'] = 'never matched'
+        row['can_toggle_on'] = True
+    else:
+      row['matched'] = False
+      row['ignored'] = True
+      row['book_ids'] = []
+      row['matched_books'] = []
+      row['match_source'] = 'ignored'
+      row['can_toggle_on'] = True
+    self.update_table_for_row(row)
 
   def matched_books_text(self, row, field):
     values = []
@@ -282,11 +347,15 @@ class ImportReportDialog(QDialog):
 
   def csv_values_for_row(self, row):
     match = 'Yes' if row.get('matched') else 'No'
-    if not row.get('matched') and row.get('possible_matches'):
+    if row.get('ignored'):
+      match = 'Ignored'
+    elif not row.get('matched') and row.get('possible_matches'):
       match = f'Possible ({len(row.get("possible_matches") or [])})'
     source = str(row.get('match_source', '') or '')
     if source == 'never matched':
       source = 'None'
+    elif source == 'ignored':
+      source = 'Ignored'
     return [
       str(row.get('imported_position', '') or ''),
       str(row.get('imported_title', '') or ''),
@@ -313,7 +382,7 @@ class ImportReportDialog(QDialog):
         self.view_combo.setCurrentText(VIEW_UNMATCHED)
       except Exception:
         pass
-      self.update_table()
+      self.update_table_for_row(target_row)
     for row_index, row in enumerate(self.visible_rows):
       if row is target_row:
         self.match_table.setCurrentCell(row_index, 0)
@@ -371,7 +440,7 @@ class ImportReportDialog(QDialog):
         'There are no possible matches left. Change Match mode to find more candidates.')
       return
     self.review_candidate_rows(row)
-    self.update_table()
+    self.update_table_for_row(self.selected_review_row())
 
   def run_find_matches(self, rows):
     if self.find_match_callback is None:
@@ -400,47 +469,118 @@ class ImportReportDialog(QDialog):
     return self.find_match_index
 
   def review_candidate_rows(self, start_row):
-    row = start_row
-    while row is not None:
+    current = {'row': start_row}
+    dialog = {'value': None}
+
+    def set_current_row(row):
+      current['row'] = row
       self.select_review_row(row)
-      dialog = MatchReviewDialog(
-        self, row, view_book_callback=self.view_book_callback)
-      result = dialog.exec()
-      if result != QDialog.Accepted or dialog.navigation_action == 'cancel':
+      dialog['value'].set_review_row(row)
+
+    def close_when_done():
+      try:
+        dialog['value'].accept_dialog()
+      except Exception:
+        pass
+      self.show_find_notice(
+        'There are no possible matches left. Change Match mode to find more candidates.')
+
+    def match_selected(candidate):
+      row = current.get('row')
+      if row is None:
         return
-      if dialog.navigation_action == 'previous':
-        row = self.candidate_row_from(row, direction=-1, include_start=False)
-        continue
-      if dialog.navigation_action == 'next':
-        row = self.candidate_row_from(row, direction=1, include_start=False)
-        continue
-      if dialog.selected_candidate is not None:
-        self.apply_manual_find_match(row, dialog.selected_candidate)
-        self.update_table()
-        row = self.candidate_row_from(row, direction=1, include_start=False)
-        if row is None:
-          self.show_find_notice(
-            'There are no possible matches left. Change Match mode to find more candidates.')
-          return
-        continue
+      self.apply_manual_find_match(row, candidate)
+      self.update_table_for_row(row)
+      move_after_choice(row)
+
+    def ignore_current():
+      row = current.get('row')
+      if row is None:
+        return
+      self.apply_ignore_match(row)
+      self.update_table_for_row(row)
+      move_after_choice(row)
+
+    def move_after_choice(row):
+      next_row = self.candidate_row_from(row, direction=1, include_start=False)
+      if next_row is None:
+        close_when_done()
+        return
+      set_current_row(next_row)
+
+    def move(direction):
+      row = current.get('row')
+      next_row = self.candidate_row_from(row, direction=direction, include_start=False)
+      if next_row is not None:
+        set_current_row(next_row)
+
+    self.select_review_row(start_row)
+    dialog['value'] = MatchReviewDialog(
+      self, start_row, view_book_callback=self.view_book_callback,
+      match_callback=match_selected,
+      ignore_callback=ignore_current,
+      previous_callback=lambda: move(-1),
+      next_callback=lambda: move(1))
+    dialog['value'].exec()
+
+  def apply_ignore_match(self, row):
+    if row is None:
       return
+    if row.get('matched'):
+      row['previous_book_ids'] = list(row.get('book_ids') or [])
+      row['previous_matched_books'] = list(row.get('matched_books') or [])
+      row['previous_match_source'] = row.get('match_source', '')
+    row['matched'] = False
+    row['ignored'] = True
+    row['book_ids'] = []
+    row['matched_books'] = []
+    row['match_source'] = 'ignored'
+    row['can_toggle_on'] = True
 
   def apply_manual_find_match(self, row, candidate):
     if row is None or candidate is None:
       return
-    book_id = candidate.get('book_id', candidate.get('matched_book_id'))
-    if book_id is None:
+    candidates = self.selected_candidate_list(candidate)
+    book_ids = []
+    matched_books = []
+    for item in candidates:
+      book_id = item.get('book_id', item.get('matched_book_id'))
+      if book_id is None or book_id in book_ids:
+        continue
+      authors = item.get('authors', item.get('matched_authors', ''))
+      book_ids.append(book_id)
+      matched_books.append({
+        'matched_book_id': book_id,
+        'matched_title': item.get('title', item.get('matched_title', '')),
+        'matched_authors': authors,
+      })
+    if not book_ids:
       return
-    authors = candidate.get('authors', candidate.get('matched_authors', ''))
     row['matched'] = True
-    row['book_ids'] = [book_id]
-    row['matched_books'] = [{
-      'matched_book_id': book_id,
-      'matched_title': candidate.get('title', candidate.get('matched_title', '')),
-      'matched_authors': authors,
-    }]
-    row['match_source'] = 'manual find'
+    row['ignored'] = False
+    row['book_ids'] = book_ids
+    row['matched_books'] = matched_books
+    row['previous_book_ids'] = list(book_ids)
+    row['previous_matched_books'] = list(row['matched_books'])
+    match_source = self.manual_find_match_source(row, candidates)
+    row['previous_match_source'] = match_source
+    row['match_source'] = match_source
     row['can_toggle_on'] = True
+
+  def selected_candidate_list(self, candidate):
+    if isinstance(candidate, (list, tuple)):
+      return [item for item in candidate if isinstance(item, dict)]
+    if isinstance(candidate, dict):
+      return [candidate]
+    return []
+
+  def manual_find_match_source(self, row, candidates):
+    if len(candidates) != 1 or self.selected_match_source_callback is None:
+      return 'manual find'
+    try:
+      return self.selected_match_source_callback(row, candidates[0]) or 'manual find'
+    except Exception:
+      return 'manual find'
 
   def current_view_csv(self):
     output = StringIO()

@@ -1,0 +1,1538 @@
+{
+  "append_state": {
+    "entry_count": 152,
+    "last_entry_key": "volatile memory|seth haddon",
+    "last_position": "2026.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "author": "Greg Egan",
+      "award": "Aurealis Award",
+      "award_year": "1996",
+      "category": "SF Novel",
+      "position": "1996",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_1996",
+      "title": "Distress"
+    },
+    {
+      "author": "Sean McMullen",
+      "award": "Aurealis Award",
+      "award_year": "1996",
+      "category": "SF Novel",
+      "position": "1996.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_1996",
+      "title": "Mirrorsun Rising"
+    },
+    {
+      "author": "Kate Orman",
+      "award": "Aurealis Award",
+      "award_year": "1996",
+      "category": "SF Novel",
+      "position": "1996.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_1996",
+      "title": "Set Piece"
+    },
+    {
+      "author": "Sean Williams & Shane Dix",
+      "award": "Aurealis Award",
+      "award_year": "1996",
+      "category": "SF Novel",
+      "position": "1996.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_1996",
+      "title": "The Unknown Soldier"
+    },
+    {
+      "author": "Sean Williams",
+      "award": "Aurealis Award",
+      "award_year": "1997",
+      "category": "SF Novel",
+      "position": "1997",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_1997",
+      "title": "Metal Fatigue"
+    },
+    {
+      "author": "Tess Williams",
+      "award": "Aurealis Award",
+      "award_year": "1997",
+      "category": "SF Novel",
+      "position": "1997.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_1997",
+      "title": "Map of Power"
+    },
+    {
+      "author": "Simon Brown",
+      "award": "Aurealis Award",
+      "award_year": "1997",
+      "category": "SF Novel",
+      "position": "1997.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_1997",
+      "title": "Privateer"
+    },
+    {
+      "author": "Damien Broderick",
+      "award": "Aurealis Award",
+      "award_year": "1998",
+      "category": "SF Novel",
+      "position": "1998",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_1998",
+      "title": "The White Abacus"
+    },
+    {
+      "author": "Richard Harland",
+      "award": "Aurealis Award",
+      "award_year": "1998",
+      "category": "SF Novel",
+      "position": "1998.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_1998",
+      "title": "The Dark Edge"
+    },
+    {
+      "author": "Greg Egan",
+      "award": "Aurealis Award",
+      "award_year": "1998",
+      "category": "SF Novel",
+      "position": "1998.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_1998",
+      "title": "Diaspora"
+    },
+    {
+      "author": "Simon Brown",
+      "award": "Aurealis Award",
+      "award_year": "1998",
+      "category": "SF Novel",
+      "position": "1998.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_1998",
+      "title": "Winter"
+    },
+    {
+      "author": "Damien Broderick & Rory Barnes",
+      "award": "Aurealis Award",
+      "award_year": "1998",
+      "category": "SF Novel",
+      "position": "1998.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_1998",
+      "title": "Zones"
+    },
+    {
+      "author": "Sean McMullen",
+      "award": "Aurealis Award",
+      "award_year": "1999",
+      "category": "SF Novel",
+      "position": "1999",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_1999",
+      "title": "The Centurion's Empire"
+    },
+    {
+      "author": "Kate Orman",
+      "award": "Aurealis Award",
+      "award_year": "1999",
+      "category": "SF Novel",
+      "position": "1999.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_1999",
+      "title": "The New Adventures: Walking to Babylon"
+    },
+    {
+      "author": "John Marsden",
+      "award": "Aurealis Award",
+      "award_year": "1999",
+      "category": "SF Novel",
+      "position": "1999.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_1999",
+      "title": "The Night Is for Hunting"
+    },
+    {
+      "author": "Sean Williams",
+      "award": "Aurealis Award",
+      "award_year": "1999",
+      "category": "SF Novel",
+      "position": "1999.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_1999",
+      "title": "The Resurrected Man"
+    },
+    {
+      "author": "Alison Goodman",
+      "award": "Aurealis Award",
+      "award_year": "1999",
+      "category": "SF Novel",
+      "position": "1999.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_1999",
+      "title": "Singing the Dogstar Blues"
+    },
+    {
+      "author": "Greg Egan",
+      "award": "Aurealis Award",
+      "award_year": "2000",
+      "category": "SF Novel",
+      "position": "2000",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2000",
+      "title": "Teranesia"
+    },
+    {
+      "author": "Damien Broderick & Rory Barnes",
+      "award": "Aurealis Award",
+      "award_year": "2000",
+      "category": "SF Novel",
+      "position": "2000.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2000",
+      "title": "The Book of Revelation"
+    },
+    {
+      "author": "Jonathan Blum & Kate Orman",
+      "award": "Aurealis Award",
+      "award_year": "2000",
+      "category": "SF Novel",
+      "position": "2000.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2000",
+      "title": "Doctor Who: Unnatural History"
+    },
+    {
+      "author": "Andrew Masterton",
+      "award": "Aurealis Award",
+      "award_year": "2000",
+      "category": "SF Novel",
+      "position": "2000.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2000",
+      "title": "The Letter Girl"
+    },
+    {
+      "author": "Sally Rogers-Davidson",
+      "award": "Aurealis Award",
+      "award_year": "2000",
+      "category": "SF Novel",
+      "position": "2000.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2000",
+      "title": "Spare Parts"
+    },
+    {
+      "author": "Sean McMullen",
+      "award": "Aurealis Award",
+      "award_year": "2001",
+      "category": "SF Novel",
+      "position": "2001",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2001",
+      "title": "The Miocene Arrow"
+    },
+    {
+      "author": "James Bradley",
+      "award": "Aurealis Award",
+      "award_year": "2001",
+      "category": "SF Novel",
+      "position": "2001.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2001",
+      "title": "The Deep Field"
+    },
+    {
+      "author": "Sean Williams & Shane Dix",
+      "award": "Aurealis Award",
+      "award_year": "2001",
+      "category": "SF Novel",
+      "position": "2001.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2001",
+      "title": "Evergence 2: The Dying Light"
+    },
+    {
+      "author": "Tess Williams",
+      "award": "Aurealis Award",
+      "award_year": "2001",
+      "category": "SF Novel",
+      "position": "2001.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2001",
+      "title": "Sea as Mirror"
+    },
+    {
+      "author": "Sean Williams & Shane Dix",
+      "award": "Aurealis Award",
+      "award_year": "2002",
+      "category": "SF Novel",
+      "position": "2002",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2002",
+      "title": "The Dark Imbalance"
+    },
+    {
+      "author": "Peter McAllister",
+      "award": "Aurealis Award",
+      "award_year": "2002",
+      "category": "SF Novel",
+      "position": "2002.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2002",
+      "title": "Cosmonaut"
+    },
+    {
+      "author": "Joel Shepherd",
+      "award": "Aurealis Award",
+      "award_year": "2002",
+      "category": "SF Novel",
+      "position": "2002.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2002",
+      "title": "Crossover"
+    },
+    {
+      "author": "Sean McMullen",
+      "award": "Aurealis Award",
+      "award_year": "2002",
+      "category": "SF Novel",
+      "position": "2002.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2002",
+      "title": "Eyes of the Calculor"
+    },
+    {
+      "author": "Damien Broderick",
+      "award": "Aurealis Award",
+      "award_year": "2003",
+      "category": "SF Novel",
+      "position": "2003",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2003",
+      "title": "Transcension"
+    },
+    {
+      "author": "Michelle Marquardt",
+      "award": "Aurealis Award",
+      "award_year": "2003",
+      "category": "SF Novel",
+      "position": "2003.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2003",
+      "title": "Blue Silence"
+    },
+    {
+      "author": "Sean Williams & Shane Dix",
+      "award": "Aurealis Award",
+      "award_year": "2003",
+      "category": "SF Novel",
+      "position": "2003.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2003",
+      "title": "Echoes of Earth"
+    },
+    {
+      "author": "Jonathan Blum & Kate Orman",
+      "award": "Aurealis Award",
+      "award_year": "2004",
+      "category": "SF Novel",
+      "position": "2004",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2004",
+      "title": "Fallen Gods"
+    },
+    {
+      "author": "Kate Orman",
+      "award": "Aurealis Award",
+      "award_year": "2004",
+      "category": "SF Novel",
+      "position": "2004.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2004",
+      "title": "Blue Box"
+    },
+    {
+      "author": "Sean Williams & Shane Dix",
+      "award": "Aurealis Award",
+      "award_year": "2004",
+      "category": "SF Novel",
+      "position": "2004.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2004",
+      "title": "Orphans of Earth"
+    },
+    {
+      "author": "Ian Irvine",
+      "award": "Aurealis Award",
+      "award_year": "2004",
+      "category": "SF Novel",
+      "position": "2004.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2004",
+      "title": "Terminator Gene"
+    },
+    {
+      "author": "Jay Caselberg",
+      "award": "Aurealis Award",
+      "award_year": "2004",
+      "category": "SF Novel",
+      "position": "2004.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2004",
+      "title": "Wyrmhole"
+    },
+    {
+      "author": "Maxine McArthur",
+      "award": "Aurealis Award",
+      "award_year": "2005",
+      "category": "SF Novel",
+      "position": "2005",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2005",
+      "title": "Less Than Human"
+    },
+    {
+      "author": "Sean Williams & Shane Dix",
+      "award": "Aurealis Award",
+      "award_year": "2005",
+      "category": "SF Novel",
+      "position": "2005.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2005",
+      "title": "Heirs of Earth"
+    },
+    {
+      "author": "Marianne de Pierres",
+      "award": "Aurealis Award",
+      "award_year": "2005",
+      "category": "SF Novel",
+      "position": "2005.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2005",
+      "title": "Nylon Angel"
+    },
+    {
+      "author": "K. A. Bedford",
+      "award": "Aurealis Award",
+      "award_year": "2005",
+      "category": "SF Novel",
+      "position": "2005.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2005",
+      "title": "Orbital Burn"
+    },
+    {
+      "author": "Jack Dann",
+      "award": "Aurealis Award",
+      "award_year": "2005",
+      "category": "SF Novel",
+      "position": "2005.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2005",
+      "title": "The Rebel"
+    },
+    {
+      "author": "K. A. Bedford",
+      "award": "Aurealis Award",
+      "award_year": "2006",
+      "category": "SF Novel",
+      "position": "2006",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2006",
+      "title": "Eclipse"
+    },
+    {
+      "author": "Marianne de Pierres",
+      "award": "Aurealis Award",
+      "award_year": "2006",
+      "category": "SF Novel",
+      "position": "2006.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2006",
+      "title": "Crash Deluxe"
+    },
+    {
+      "author": "John Birmingham",
+      "award": "Aurealis Award",
+      "award_year": "2006",
+      "category": "SF Novel",
+      "position": "2006.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2006",
+      "title": "Designated Targets"
+    },
+    {
+      "author": "Sean Williams & Shane Dix",
+      "award": "Aurealis Award",
+      "award_year": "2006",
+      "category": "SF Novel",
+      "position": "2006.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2006",
+      "title": "Geodesica: Ascent"
+    },
+    {
+      "author": "Damien Broderick",
+      "award": "Aurealis Award",
+      "award_year": "2007",
+      "category": "SF Novel",
+      "position": "2007",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2007",
+      "title": "K-Machines"
+    },
+    {
+      "author": "Sean Williams & Shane Dix",
+      "award": "Aurealis Award",
+      "award_year": "2007",
+      "category": "SF Novel",
+      "position": "2007.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2007",
+      "title": "Geodesica: Descent"
+    },
+    {
+      "author": "K. A. Bedford",
+      "award": "Aurealis Award",
+      "award_year": "2007",
+      "category": "SF Novel",
+      "position": "2007.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2007",
+      "title": "Hydrogen Steel"
+    },
+    {
+      "author": "Andrew McGahan",
+      "award": "Aurealis Award",
+      "award_year": "2007",
+      "category": "SF Novel",
+      "position": "2007.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2007",
+      "title": "Underground"
+    },
+    {
+      "author": "David Kowalski",
+      "award": "Aurealis Award",
+      "award_year": "2008",
+      "category": "SF Novel",
+      "position": "2008",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2008",
+      "title": "The Company of the Dead"
+    },
+    {
+      "author": "Marianne De Pierres",
+      "award": "Aurealis Award",
+      "award_year": "2008",
+      "category": "SF Novel",
+      "position": "2008.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2008",
+      "title": "Dark Space"
+    },
+    {
+      "author": "Jack Heath",
+      "award": "Aurealis Award",
+      "award_year": "2008",
+      "category": "SF Novel",
+      "position": "2008.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2008",
+      "title": "Remote Control"
+    },
+    {
+      "author": "Sean Williams",
+      "award": "Aurealis Award",
+      "award_year": "2008",
+      "category": "SF Novel",
+      "position": "2008.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2008",
+      "title": "Saturn Returns"
+    },
+    {
+      "author": "K. A. Bedford",
+      "award": "Aurealis Award",
+      "award_year": "2009",
+      "category": "SF Novel",
+      "position": "2009",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2009",
+      "title": "Time Machines Repaired While-U-Wait"
+    },
+    {
+      "author": "Marianne de Pierres",
+      "award": "Aurealis Award",
+      "award_year": "2009",
+      "category": "SF Novel",
+      "position": "2009.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2009",
+      "title": "Chaos Space"
+    },
+    {
+      "author": "Kim Westwood",
+      "award": "Aurealis Award",
+      "award_year": "2009",
+      "category": "SF Novel",
+      "position": "2009.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2009",
+      "title": "The Daughters of Moab"
+    },
+    {
+      "author": "Sean Williams",
+      "award": "Aurealis Award",
+      "award_year": "2009",
+      "category": "SF Novel",
+      "position": "2009.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2009",
+      "title": "Earth Ascendant"
+    },
+    {
+      "author": "Simon Haynes",
+      "award": "Aurealis Award",
+      "award_year": "2009",
+      "category": "SF Novel",
+      "position": "2009.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2009",
+      "title": "Hal Spacejock: No Free Lunch"
+    },
+    {
+      "author": "Andrew McGahan",
+      "award": "Aurealis Award",
+      "award_year": "2010",
+      "category": "SF Novel",
+      "position": "2010",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2010",
+      "title": "Wonders of a Godless World"
+    },
+    {
+      "author": "Sean Williams",
+      "award": "Aurealis Award",
+      "award_year": "2010",
+      "category": "SF Novel",
+      "position": "2010.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2010",
+      "title": "The Astropolis: The Grand Conjunction"
+    },
+    {
+      "author": "Marianne de Pierres",
+      "award": "Aurealis Award",
+      "award_year": "2011",
+      "category": "SF Novel",
+      "position": "2011",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2011",
+      "title": "Transformation Space"
+    },
+    {
+      "author": "Marianne de Pierres",
+      "award": "Aurealis Award",
+      "award_year": "2011",
+      "category": "SF Novel",
+      "position": "2011.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2011",
+      "title": "Mirror Space"
+    },
+    {
+      "author": "Sara Creasy",
+      "award": "Aurealis Award",
+      "award_year": "2011",
+      "category": "SF Novel",
+      "position": "2011.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2011",
+      "title": "Song of Scarabaeus"
+    },
+    {
+      "author": "Kim Westwood",
+      "award": "Aurealis Award",
+      "award_year": "2012",
+      "category": "SF Novel",
+      "position": "2012",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2012",
+      "title": "The Courier's New Bicycle"
+    },
+    {
+      "author": "Meg Mundell",
+      "award": "Aurealis Award",
+      "award_year": "2012",
+      "category": "SF Novel",
+      "position": "2012.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2012",
+      "title": "Black Glass"
+    },
+    {
+      "author": "Sara Creasy",
+      "award": "Aurealis Award",
+      "award_year": "2012",
+      "category": "SF Novel",
+      "position": "2012.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2012",
+      "title": "Children of Scarabaeus"
+    },
+    {
+      "author": "Max Barry",
+      "award": "Aurealis Award",
+      "award_year": "2012",
+      "category": "SF Novel",
+      "position": "2012.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2012",
+      "title": "Machine Man"
+    },
+    {
+      "author": "Peter Docker",
+      "award": "Aurealis Award",
+      "award_year": "2012",
+      "category": "SF Novel",
+      "position": "2012.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2012",
+      "title": "The Waterboys"
+    },
+    {
+      "author": "Daniel O'Malley",
+      "award": "Aurealis Award",
+      "award_year": "2013",
+      "category": "SF Novel",
+      "position": "2013",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2013",
+      "title": "The Rook"
+    },
+    {
+      "author": "Andrea K. H\u00f6st",
+      "award": "Aurealis Award",
+      "award_year": "2013",
+      "category": "SF Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2013",
+      "title": "And All the Stars"
+    },
+    {
+      "author": "Garth Nix",
+      "award": "Aurealis Award",
+      "award_year": "2013",
+      "category": "SF Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2013",
+      "title": "A Confusion of Princes"
+    },
+    {
+      "author": "Ambelin Kwaymullina",
+      "award": "Aurealis Award",
+      "award_year": "2013",
+      "category": "SF Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2013",
+      "title": "The Interrogation of Ashala Wolf"
+    },
+    {
+      "author": "Nina D'Aleo",
+      "award": "Aurealis Award",
+      "award_year": "2013",
+      "category": "SF Novel",
+      "position": "2013.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2013",
+      "title": "The Last City"
+    },
+    {
+      "author": "Jo Anderton",
+      "award": "Aurealis Award",
+      "award_year": "2013",
+      "category": "SF Novel",
+      "position": "2013.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2013",
+      "title": "Suited"
+    },
+    {
+      "author": "Max Barry",
+      "award": "Aurealis Award",
+      "award_year": "2014",
+      "category": "SF Novel",
+      "position": "2014",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2014",
+      "title": "Lexicon"
+    },
+    {
+      "author": "N. A. Sulway",
+      "award": "Aurealis Award",
+      "award_year": "2014",
+      "category": "SF Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2014",
+      "title": "Rupetta"
+    },
+    {
+      "author": "Andrew Macrae",
+      "award": "Aurealis Award",
+      "award_year": "2014",
+      "category": "SF Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2014",
+      "title": "Trucksong"
+    },
+    {
+      "author": "Graham Storrs",
+      "award": "Aurealis Award",
+      "award_year": "2014",
+      "category": "SF Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2014",
+      "title": "True Path"
+    },
+    {
+      "author": "Jane Rawson",
+      "award": "Aurealis Award",
+      "award_year": "2014",
+      "category": "SF Novel",
+      "position": "2014.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2014",
+      "title": "A Wrong Turn at the Office of Unmade Lists"
+    },
+    {
+      "author": "Marianne de Pierres",
+      "award": "Aurealis Award",
+      "award_year": "2015",
+      "category": "SF Novel",
+      "position": "2015",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2015",
+      "title": "Peacemaker"
+    },
+    {
+      "author": "Amanda Bridgeman",
+      "award": "Aurealis Award",
+      "award_year": "2015",
+      "category": "SF Novel",
+      "position": "2015.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2015",
+      "title": "Aurora: Meridian"
+    },
+    {
+      "author": "Graham Storrs",
+      "award": "Aurealis Award",
+      "award_year": "2015",
+      "category": "SF Novel",
+      "position": "2015.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2015",
+      "title": "Foresight"
+    },
+    {
+      "author": "LynC",
+      "award": "Aurealis Award",
+      "award_year": "2015",
+      "category": "SF Novel",
+      "position": "2015.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2015",
+      "title": "Nil by Mouth"
+    },
+    {
+      "author": "Amie Kaufman & Meagan Spooner",
+      "award": "Aurealis Award",
+      "award_year": "2015",
+      "category": "SF Novel",
+      "position": "2015.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2015",
+      "title": "This Shattered World"
+    },
+    {
+      "author": "Nina D'Aleo",
+      "award": "Aurealis Award",
+      "award_year": "2015",
+      "category": "SF Novel",
+      "position": "2015.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2015",
+      "title": "The White List"
+    },
+    {
+      "author": "Amie Kaufman & Jay Kristoff",
+      "award": "Aurealis Award",
+      "award_year": "2016",
+      "category": "SF Novel",
+      "position": "2016",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2016",
+      "title": "Illuminae"
+    },
+    {
+      "author": "James Bradley",
+      "award": "Aurealis Award",
+      "award_year": "2016",
+      "category": "SF Novel",
+      "position": "2016.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2016",
+      "title": "Clade"
+    },
+    {
+      "author": "Evelyn Blackwell",
+      "award": "Aurealis Award",
+      "award_year": "2016",
+      "category": "SF Novel",
+      "position": "2016.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2016",
+      "title": "Crossed"
+    },
+    {
+      "author": "Joel Shepherd",
+      "award": "Aurealis Award",
+      "award_year": "2016",
+      "category": "SF Novel",
+      "position": "2016.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2016",
+      "title": "Renegade"
+    },
+    {
+      "author": "Amie Kaufman & Jay Kristoff",
+      "award": "Aurealis Award",
+      "award_year": "2016",
+      "category": "SF Novel",
+      "position": "2016.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2016",
+      "title": "Their Fractured Light"
+    },
+    {
+      "author": "Sean Williams",
+      "award": "Aurealis Award",
+      "award_year": "2016",
+      "category": "SF Novel",
+      "position": "2016.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2016",
+      "title": "Twinmaker: Fall"
+    },
+    {
+      "author": "Amie Kaufman & Jay Kristoff",
+      "award": "Aurealis Award",
+      "award_year": "2017",
+      "category": "SF Novel",
+      "position": "2017",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2017",
+      "title": "Gemima: Illuminae Files 2"
+    },
+    {
+      "author": "S. K. Dunstall",
+      "award": "Aurealis Award",
+      "award_year": "2017",
+      "category": "SF Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2017",
+      "title": "Confluence"
+    },
+    {
+      "author": "D. K. Mok",
+      "award": "Aurealis Award",
+      "award_year": "2017",
+      "category": "SF Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2017",
+      "title": "Squid's Grief"
+    },
+    {
+      "author": "Daniel O'Malley",
+      "award": "Aurealis Award",
+      "award_year": "2017",
+      "category": "SF Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2017",
+      "title": "Stiletto"
+    },
+    {
+      "author": "Rebekah Turner",
+      "award": "Aurealis Award",
+      "award_year": "2017",
+      "category": "SF Novel",
+      "position": "2017.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2017",
+      "title": "Threader"
+    },
+    {
+      "author": "Jane Abbott",
+      "award": "Aurealis Award",
+      "award_year": "2017",
+      "category": "SF Novel",
+      "position": "2017.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2017",
+      "title": "Watershed"
+    },
+    {
+      "author": "Jane Rawson",
+      "award": "Aurealis Award",
+      "award_year": "2018",
+      "category": "SF Novel",
+      "position": "2018",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2018",
+      "title": "From the Wreck"
+    },
+    {
+      "author": "Sally Abbott",
+      "award": "Aurealis Award",
+      "award_year": "2018",
+      "category": "SF Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2018",
+      "title": "Closing Down"
+    },
+    {
+      "author": "Cat Sparks",
+      "award": "Aurealis Award",
+      "award_year": "2018",
+      "category": "SF Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2018",
+      "title": "Lotus Blue"
+    },
+    {
+      "author": "Claire G. Coleman",
+      "award": "Aurealis Award",
+      "award_year": "2018",
+      "category": "SF Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2018",
+      "title": "Terra Nullius"
+    },
+    {
+      "author": "Krissy Kneen",
+      "award": "Aurealis Award",
+      "award_year": "2018",
+      "category": "SF Novel",
+      "position": "2018.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2018",
+      "title": "An Uncertain Grace"
+    },
+    {
+      "author": "Daniel Findlay",
+      "award": "Aurealis Award",
+      "award_year": "2018",
+      "category": "SF Novel",
+      "position": "2018.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2018",
+      "title": "Year of the Orphan"
+    },
+    {
+      "author": "Jay Kristoff",
+      "award": "Aurealis Award",
+      "award_year": "2019",
+      "category": "SF Novel",
+      "position": "2019",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2019",
+      "title": "Lifel1k3"
+    },
+    {
+      "author": "Jennifer Mills",
+      "award": "Aurealis Award",
+      "award_year": "2019",
+      "category": "SF Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2019",
+      "title": "Dyschornia"
+    },
+    {
+      "author": "Amie Kaufman & Jay Kristoff",
+      "award": "Aurealis Award",
+      "award_year": "2019",
+      "category": "SF Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2019",
+      "title": "Obsidio"
+    },
+    {
+      "author": "Kylie Chan",
+      "award": "Aurealis Award",
+      "award_year": "2019",
+      "category": "SF Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2019",
+      "title": "Scales of Empire"
+    },
+    {
+      "author": "Margaret Morgan",
+      "award": "Aurealis Award",
+      "award_year": "2019",
+      "category": "SF Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2019",
+      "title": "The Second Cure"
+    },
+    {
+      "author": "Angela Meyer",
+      "award": "Aurealis Award",
+      "award_year": "2019",
+      "category": "SF Novel",
+      "position": "2019.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2019",
+      "title": "A Superior Spectre"
+    },
+    {
+      "author": "Amie Kaufman & Jay Kristoff",
+      "award": "Aurealis Award",
+      "award_year": "2020",
+      "category": "SF Novel",
+      "position": "2020",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2020",
+      "title": "Aurora Rising"
+    },
+    {
+      "author": "Rohan Wilson",
+      "award": "Aurealis Award",
+      "award_year": "2020",
+      "category": "SF Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2020",
+      "title": "Daughter of Bad Times"
+    },
+    {
+      "author": "Alice Robinson",
+      "award": "Aurealis Award",
+      "award_year": "2020",
+      "category": "SF Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2020",
+      "title": "The Glad Shout"
+    },
+    {
+      "author": "Sarah Hopkins",
+      "award": "Aurealis Award",
+      "award_year": "2020",
+      "category": "SF Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2020",
+      "title": "The Subjects"
+    },
+    {
+      "author": "Meg Mundell",
+      "award": "Aurealis Award",
+      "award_year": "2020",
+      "category": "SF Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2020",
+      "title": "The Trespassers"
+    },
+    {
+      "author": "Gillian Polack",
+      "award": "Aurealis Award",
+      "award_year": "2020",
+      "category": "SF Novel",
+      "position": "2020.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2020",
+      "title": "The Year of the Fruit Cake"
+    },
+    {
+      "author": "Laura Jean McKay",
+      "award": "Aurealis Award",
+      "award_year": "2021",
+      "category": "SF Novel",
+      "position": "2021",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2021",
+      "title": "The Animals in that Country"
+    },
+    {
+      "author": "Corey J. White",
+      "award": "Aurealis Award",
+      "award_year": "2021",
+      "category": "SF Novel",
+      "position": "2021.01",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2021",
+      "title": "Repo Virtual"
+    },
+    {
+      "author": "Amie Kaufman & Jay Kristoff",
+      "award": "Aurealis Award",
+      "award_year": "2021",
+      "category": "SF Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2021",
+      "title": "Aurora Burning"
+    },
+    {
+      "author": "Donna Mazza",
+      "award": "Aurealis Award",
+      "award_year": "2021",
+      "category": "SF Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2021",
+      "title": "Fauna"
+    },
+    {
+      "author": "James Bradley",
+      "award": "Aurealis Award",
+      "award_year": "2021",
+      "category": "SF Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2021",
+      "title": "Ghost Species"
+    },
+    {
+      "author": "Kate Mildenhall",
+      "award": "Aurealis Award",
+      "award_year": "2021",
+      "category": "SF Novel",
+      "position": "2021.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2021",
+      "title": "The Mother Fault"
+    },
+    {
+      "author": "Kathryn Barker",
+      "award": "Aurealis Award",
+      "award_year": "2022",
+      "category": "SF Novel",
+      "position": "2022",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2022",
+      "title": "Walking Romeo"
+    },
+    {
+      "author": "Max Barry",
+      "award": "Aurealis Award",
+      "award_year": "2022",
+      "category": "SF Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2022",
+      "title": "The 22 Murders of Madison May"
+    },
+    {
+      "author": "Amie Kaufman & Jay Kristoff",
+      "award": "Aurealis Award",
+      "award_year": "2022",
+      "category": "SF Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2022",
+      "title": "Aurora's End"
+    },
+    {
+      "author": "Claire McKenna",
+      "award": "Aurealis Award",
+      "award_year": "2022",
+      "category": "SF Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2022",
+      "title": "Deepwater King"
+    },
+    {
+      "author": "Jason Fischer",
+      "award": "Aurealis Award",
+      "award_year": "2022",
+      "category": "SF Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2022",
+      "title": "Papa Lucy & The Boneman"
+    },
+    {
+      "author": "Rebecca Bowyer",
+      "award": "Aurealis Award",
+      "award_year": "2022",
+      "category": "SF Novel",
+      "position": "2022.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2022",
+      "title": "Stealing Time"
+    },
+    {
+      "author": "T. R. Napper",
+      "award": "Aurealis Award",
+      "award_year": "2023",
+      "category": "SF Novel",
+      "position": "2023",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2023",
+      "title": "36 Streets"
+    },
+    {
+      "author": "Georgina Young",
+      "award": "Aurealis Award",
+      "award_year": "2023",
+      "category": "SF Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2023",
+      "title": "Bootstrap"
+    },
+    {
+      "author": "Steve Toltz",
+      "award": "Aurealis Award",
+      "award_year": "2023",
+      "category": "SF Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2023",
+      "title": "Here Goes Nothing"
+    },
+    {
+      "author": "Rhett Davis",
+      "award": "Aurealis Award",
+      "award_year": "2023",
+      "category": "SF Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2023",
+      "title": "Hovering"
+    },
+    {
+      "author": "Kathryn Hore",
+      "award": "Aurealis Award",
+      "award_year": "2023",
+      "category": "SF Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2023",
+      "title": "The Stranger"
+    },
+    {
+      "author": "Tansy Rayner Roberts",
+      "award": "Aurealis Award",
+      "award_year": "2024",
+      "category": "SF Novel",
+      "position": "2024",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2024",
+      "title": "Time of the Cat"
+    },
+    {
+      "author": "T. R. Napper",
+      "award": "Aurealis Award",
+      "award_year": "2024",
+      "category": "SF Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2024",
+      "title": "Aliens: Bishop"
+    },
+    {
+      "author": "Roanna McClelland",
+      "award": "Aurealis Award",
+      "award_year": "2024",
+      "category": "SF Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2024",
+      "title": "The Comforting Weight of Water"
+    },
+    {
+      "author": "Marko Newman",
+      "award": "Aurealis Award",
+      "award_year": "2024",
+      "category": "SF Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2024",
+      "title": "Dronikus"
+    },
+    {
+      "author": "Kylie Chan",
+      "award": "Aurealis Award",
+      "award_year": "2024",
+      "category": "SF Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2024",
+      "title": "Minds of Sand and Light"
+    },
+    {
+      "author": "Keith Stevenson",
+      "award": "Aurealis Award",
+      "award_year": "2024",
+      "category": "SF Novel",
+      "position": "2024.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2024",
+      "title": "Traitor's Run"
+    },
+    {
+      "author": "J. M. Voss",
+      "award": "Aurealis Award",
+      "award_year": "2025",
+      "category": "SF Novel",
+      "position": "2025",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2025",
+      "title": "Temporal Bloom"
+    },
+    {
+      "author": "Jordan Prosser",
+      "award": "Aurealis Award",
+      "award_year": "2025",
+      "category": "SF Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2025",
+      "title": "Big Time"
+    },
+    {
+      "author": "Genevieve Gannon",
+      "award": "Aurealis Award",
+      "award_year": "2025",
+      "category": "SF Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2025",
+      "title": "Inheritance"
+    },
+    {
+      "author": "Tim Winton",
+      "award": "Aurealis Award",
+      "award_year": "2025",
+      "category": "SF Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2025",
+      "title": "Juice"
+    },
+    {
+      "author": "Martin Livings",
+      "award": "Aurealis Award",
+      "award_year": "2025",
+      "category": "SF Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2025",
+      "title": "The Temp"
+    },
+    {
+      "author": "Kate Fitzpatrick",
+      "award": "Aurealis Award",
+      "award_year": "2025",
+      "category": "SF Novel",
+      "position": "2025.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2025",
+      "title": "Transported"
+    },
+    {
+      "author": "Samira Lloyd",
+      "award": "Aurealis Award",
+      "award_year": "2026",
+      "category": "SF Novel",
+      "position": "2026",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2026",
+      "title": "Wastelands"
+    },
+    {
+      "author": "Tony Shillitoe",
+      "award": "Aurealis Award",
+      "award_year": "2026",
+      "category": "SF Novel",
+      "position": "2026.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2026",
+      "title": "All We Have"
+    },
+    {
+      "author": "Rhett Davis",
+      "award": "Aurealis Award",
+      "award_year": "2026",
+      "category": "SF Novel",
+      "position": "2026.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2026",
+      "title": "Arborescence"
+    },
+    {
+      "author": "J. S. Harman",
+      "award": "Aurealis Award",
+      "award_year": "2026",
+      "category": "SF Novel",
+      "position": "2026.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2026",
+      "title": "Dark Sands"
+    },
+    {
+      "author": "Cadance Bell",
+      "award": "Aurealis Award",
+      "award_year": "2026",
+      "category": "SF Novel",
+      "position": "2026.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2026",
+      "title": "Letters to Our Robot Son"
+    },
+    {
+      "author": "Seth Haddon",
+      "award": "Aurealis Award",
+      "award_year": "2026",
+      "category": "SF Novel",
+      "position": "2026.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Aurealis_Awards_2026",
+      "title": "Volatile Memory"
+    }
+  ],
+  "fetched_at": "2026-05-15T15:43:56Z",
+  "list_id": "aurealis_sf_novel",
+  "list_name": "Aurealis - SF Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "aurealis_sf_novel",
+  "schema_version": 1,
+  "source_url": "https://www.sfadb.com/Aurealis_Awards"
+}

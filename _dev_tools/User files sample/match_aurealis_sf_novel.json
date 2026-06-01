@@ -1,0 +1,30 @@
+{
+  "list_id": "aurealis_sf_novel",
+  "matches": [
+    {
+      "entry_key": "letters to our robot son|cadance bell",
+      "imported_author": "Cadance Bell",
+      "imported_title": "Letters to Our Robot Son",
+      "matched_at": "2026-05-15T19:28:01Z",
+      "matched_authors": [
+        "Cadance Bell"
+      ],
+      "matched_book_id": 38794,
+      "matched_book_ids": [
+        38794
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Cadance Bell"
+          ],
+          "matched_book_id": 38794,
+          "matched_title": "Letters to Our Robot Son: SHORTLISTED FOR BEST SCIENCE FICTION NOVEL IN THE AUREALIS AWARDS"
+        }
+      ],
+      "matched_title": "Letters to Our Robot Son: SHORTLISTED FOR BEST SCIENCE FICTION NOVEL IN THE AUREALIS AWARDS"
+    }
+  ],
+  "saved_at": "2026-05-15T19:28:01Z",
+  "schema_version": 1
+}

@@ -1,0 +1,117 @@
+{
+  "list_id": "r_fantasy_top_standalone_novels_2024",
+  "matches": [
+    {
+      "entry_key": "tress of the emerald sea|brandon sanderson",
+      "imported_author": "Brandon Sanderson",
+      "imported_title": "Tress of the Emerald Sea",
+      "matched_at": "2026-05-06T04:37:46Z",
+      "matched_authors": [
+        "Brandon Sanderson"
+      ],
+      "matched_book_id": 17817,
+      "matched_book_ids": [
+        17817
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Brandon Sanderson"
+          ],
+          "matched_book_id": 17817,
+          "matched_title": "Tress of the Emerald Sea: A Cosmere Novel"
+        }
+      ],
+      "matched_title": "Tress of the Emerald Sea: A Cosmere Novel"
+    },
+    {
+      "entry_key": "babel|r f kuang",
+      "imported_author": "R.F. Kuang",
+      "imported_title": "Babel",
+      "matched_at": "2026-05-06T04:38:12Z",
+      "matched_authors": [
+        "R. F. Kuang"
+      ],
+      "matched_book_id": 30618,
+      "matched_book_ids": [
+        30618
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "R. F. Kuang"
+          ],
+          "matched_book_id": 30618,
+          "matched_title": "Babel: An Arcane History"
+        }
+      ],
+      "matched_title": "Babel: An Arcane History"
+    },
+    {
+      "entry_key": "1984|george orwell",
+      "imported_author": "George Orwell",
+      "imported_title": "1984",
+      "matched_at": "2026-05-06T04:38:24Z",
+      "matched_authors": [
+        "George Orwell",
+        "Christopher Hitchens"
+      ],
+      "matched_book_id": 33819,
+      "matched_book_ids": [
+        33819
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "George Orwell",
+            "Christopher Hitchens"
+          ],
+          "matched_book_id": 33819,
+          "matched_title": "Animal Farm and 1984"
+        }
+      ],
+      "matched_title": "Animal Farm and 1984"
+    },
+    {
+      "entry_key": "the lord of the rings|j r r tolkien",
+      "imported_author": "J.R.R. Tolkien",
+      "imported_title": "The Lord of the Rings",
+      "matched_at": "2026-05-06T04:41:15Z",
+      "matched_authors": [
+        "J. R. R. Tolkien"
+      ],
+      "matched_book_id": 37968,
+      "matched_book_ids": [
+        37968,
+        38004,
+        38019
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "J. R. R. Tolkien"
+          ],
+          "matched_book_id": 37968,
+          "matched_title": "The Fellowship of the Ring"
+        },
+        {
+          "matched_authors": [
+            "J. R. R. Tolkien"
+          ],
+          "matched_book_id": 38004,
+          "matched_title": "The Two Towers"
+        },
+        {
+          "matched_authors": [
+            "J. R. R. Tolkien"
+          ],
+          "matched_book_id": 38019,
+          "matched_title": "The Return of the King"
+        }
+      ],
+      "matched_title": "The Fellowship of the Ring"
+    }
+  ],
+  "saved_at": "2026-05-06T04:41:21Z",
+  "schema_version": 1
+}

@@ -1,0 +1,30 @@
+{
+  "list_id": "spsfc_novel_finalists",
+  "matches": [
+    {
+      "entry_key": "aerstus book 1 the city|s z attwell",
+      "imported_author": "S. Z. Attwell",
+      "imported_title": "Aerstus, Book 1: The City",
+      "matched_at": "2026-05-13T05:21:09Z",
+      "matched_authors": [
+        "S. Z. Attwell"
+      ],
+      "matched_book_id": 38471,
+      "matched_book_ids": [
+        38471
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "S. Z. Attwell"
+          ],
+          "matched_book_id": 38471,
+          "matched_title": "Aestus: The City"
+        }
+      ],
+      "matched_title": "Aestus: The City"
+    }
+  ],
+  "saved_at": "2026-05-13T05:21:09Z",
+  "schema_version": 1
+}

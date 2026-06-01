@@ -17,7 +17,7 @@ from calibre_plugins.list_switchboard.main import ListSwitchboardCore
 class ListSwitchboardAction(InterfaceAction):
   name = 'List Switchboard'
   action_spec = (
-    'List Switchboard',
+    'List SB',
     None,
     'Add selected books to Active List',
     None

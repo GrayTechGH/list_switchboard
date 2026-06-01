@@ -8,13 +8,13 @@ Gumshoe Award parsers.
 from bs4 import BeautifulSoup
 
 try:
-  from calibre_plugins.list_switchboard.parser.librarything_base import (
+  from calibre_plugins.list_switchboard.parser.librarything_base import ( # type: ignore
     LibraryThingAwardParserBase,
   )
-  from calibre_plugins.list_switchboard.parser.wikipedia_base import (
+  from calibre_plugins.list_switchboard.parser.wikipedia_base import ( # type: ignore
     WikipediaAwardTableParserBase,
   )
-  from calibre_plugins.list_switchboard.parser.award_base import normalize_heading
+  from calibre_plugins.list_switchboard.parser.award_base import normalize_heading # type: ignore
 except ImportError:
   from .librarything_base import LibraryThingAwardParserBase
   from .wikipedia_base import WikipediaAwardTableParserBase
@@ -34,17 +34,9 @@ class GumshoeWikipediaParser(WikipediaAwardTableParserBase):
 
   def parse(self, html, base_url, name, category, category_aliases=()):
     soup = BeautifulSoup(html, 'html.parser')
-    accepted = [
-      normalize_heading(value) for value in (category, *category_aliases) if value
-    ]
     rows = []
-    for heading in soup.find_all(['h2', 'h3', 'h4']):
-      text = normalize_heading(heading.get_text(' ', strip=True))
-      if not any(alias and alias in text for alias in accepted):
-        continue
-      table = heading.find_next('table')
-      if table is None:
-        continue
+    for _heading, table in self.tables_under_category_headings(
+        soup, category, category_aliases, match='contains'):
       header_map = self.header_map(table)
       rows.extend(self._winner_rows(table, header_map, base_url, category))
       break

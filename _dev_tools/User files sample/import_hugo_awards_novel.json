@@ -1,0 +1,3578 @@
+{
+  "append_state": {
+    "entry_count": 356,
+    "last_entry_key": "a sorceress comes to call|t kingfisher",
+    "last_position": "2025.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "author": "Alfred Bester",
+      "award": "Hugo Award",
+      "award_year": "1953",
+      "category": "Best Novel",
+      "position": "1953",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1953-hugo-awards/",
+      "title": "The Demolished Man"
+    },
+    {
+      "author": "Mark Clifton and Frank Riley",
+      "award": "Hugo Award",
+      "award_year": "1955",
+      "category": "Best Novel",
+      "position": "1955",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1955-hugo-awards/",
+      "title": "They\u2019d Rather Be Right"
+    },
+    {
+      "author": "Robert A. Heinlein",
+      "award": "Hugo Award",
+      "award_year": "1956",
+      "category": "Best Novel",
+      "position": "1956",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1956-hugo-awards/",
+      "title": "Double Star"
+    },
+    {
+      "author": "Eric Frank Russell",
+      "award": "Hugo Award",
+      "award_year": "1956",
+      "category": "Best Novel",
+      "position": "1956.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1956-hugo-awards/",
+      "title": "Call Him Dead"
+    },
+    {
+      "author": "Isaac Asimov",
+      "award": "Hugo Award",
+      "award_year": "1956",
+      "category": "Best Novel",
+      "position": "1956.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1956-hugo-awards/",
+      "title": "The End of Eternity"
+    },
+    {
+      "author": "Cyril Kornbluth",
+      "award": "Hugo Award",
+      "award_year": "1956",
+      "category": "Best Novel",
+      "position": "1956.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1956-hugo-awards/",
+      "title": "Not this August"
+    },
+    {
+      "author": "Leigh Brackett",
+      "award": "Hugo Award",
+      "award_year": "1956",
+      "category": "Best Novel",
+      "position": "1956.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1956-hugo-awards/",
+      "title": "The Long Tomorrow"
+    },
+    {
+      "author": "James Blish",
+      "award": "Hugo Award",
+      "award_year": "1959",
+      "category": "Best Novel",
+      "position": "1959",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1959-hugo-awards/",
+      "title": "A Case of Conscience"
+    },
+    {
+      "author": "Poul Anderson",
+      "award": "Hugo Award",
+      "award_year": "1959",
+      "category": "Best Novel",
+      "position": "1959.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1959-hugo-awards/",
+      "title": "We Have Fed Our Seas"
+    },
+    {
+      "author": "Algis Budrys",
+      "award": "Hugo Award",
+      "award_year": "1959",
+      "category": "Best Novel",
+      "position": "1959.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1959-hugo-awards/",
+      "title": "Who?"
+    },
+    {
+      "author": "Robert A. Heinlein",
+      "award": "Hugo Award",
+      "award_year": "1959",
+      "category": "Best Novel",
+      "position": "1959.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1959-hugo-awards/",
+      "title": "Have Spacesuit \u2013 Will Travel"
+    },
+    {
+      "author": "Robert Sheckley",
+      "award": "Hugo Award",
+      "award_year": "1959",
+      "category": "Best Novel",
+      "position": "1959.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1959-hugo-awards/",
+      "title": "Time Killer"
+    },
+    {
+      "author": "Robert A. Heinlein",
+      "award": "Hugo Award",
+      "award_year": "1960",
+      "category": "Best Novel",
+      "position": "1960",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1960-hugo-awards/",
+      "title": "Starship Troopers"
+    },
+    {
+      "author": "Gordon R. Dickson",
+      "award": "Hugo Award",
+      "award_year": "1960",
+      "category": "Best Novel",
+      "position": "1960.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1960-hugo-awards/",
+      "title": "Dorsai!"
+    },
+    {
+      "author": "Murray Leinster",
+      "award": "Hugo Award",
+      "award_year": "1960",
+      "category": "Best Novel",
+      "position": "1960.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1960-hugo-awards/",
+      "title": "The Pirates of Ersatz"
+    },
+    {
+      "author": "Mark Phillips",
+      "award": "Hugo Award",
+      "award_year": "1960",
+      "category": "Best Novel",
+      "position": "1960.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1960-hugo-awards/",
+      "title": "That Sweet Little Old Lady"
+    },
+    {
+      "author": "Kurt Vonnegut, Jr.",
+      "award": "Hugo Award",
+      "award_year": "1960",
+      "category": "Best Novel",
+      "position": "1960.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1960-hugo-awards/",
+      "title": "The Sirens of Titan"
+    },
+    {
+      "author": "Walter M. Miller, Jr.",
+      "award": "Hugo Award",
+      "award_year": "1961",
+      "category": "Best Novel",
+      "position": "1961",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1961-hugo-awards/",
+      "title": "A Canticle for Leibowitz"
+    },
+    {
+      "author": "Poul Anderson",
+      "award": "Hugo Award",
+      "award_year": "1961",
+      "category": "Best Novel",
+      "position": "1961.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1961-hugo-awards/",
+      "title": "The High Crusade"
+    },
+    {
+      "author": "Algis Budrys",
+      "award": "Hugo Award",
+      "award_year": "1961",
+      "category": "Best Novel",
+      "position": "1961.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1961-hugo-awards/",
+      "title": "Rogue Moon"
+    },
+    {
+      "author": "Harry Harrison",
+      "award": "Hugo Award",
+      "award_year": "1961",
+      "category": "Best Novel",
+      "position": "1961.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1961-hugo-awards/",
+      "title": "Deathworld"
+    },
+    {
+      "author": "Theodore Sturgeon",
+      "award": "Hugo Award",
+      "award_year": "1961",
+      "category": "Best Novel",
+      "position": "1961.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1961-hugo-awards/",
+      "title": "Venus Plus X"
+    },
+    {
+      "author": "Robert A. Heinlein",
+      "award": "Hugo Award",
+      "award_year": "1962",
+      "category": "Best Novel",
+      "position": "1962",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1962-hugo-awards/",
+      "title": "Stranger in a Strange Land"
+    },
+    {
+      "author": "Daniel F. Galouye",
+      "award": "Hugo Award",
+      "award_year": "1962",
+      "category": "Best Novel",
+      "position": "1962.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1962-hugo-awards/",
+      "title": "Dark Universe"
+    },
+    {
+      "author": "Harry Harrison",
+      "award": "Hugo Award",
+      "award_year": "1962",
+      "category": "Best Novel",
+      "position": "1962.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1962-hugo-awards/",
+      "title": "Sense of Obligation"
+    },
+    {
+      "author": "Clifford D. Simak",
+      "award": "Hugo Award",
+      "award_year": "1962",
+      "category": "Best Novel",
+      "position": "1962.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1962-hugo-awards/",
+      "title": "The Fisherman"
+    },
+    {
+      "author": "James White",
+      "award": "Hugo Award",
+      "award_year": "1962",
+      "category": "Best Novel",
+      "position": "1962.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1962-hugo-awards/",
+      "title": "Second Ending"
+    },
+    {
+      "author": "Philip K. Dick",
+      "award": "Hugo Award",
+      "award_year": "1963",
+      "category": "Best Novel",
+      "position": "1963",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1963-hugo-awards/",
+      "title": "The Man in the High Castle"
+    },
+    {
+      "author": "Marion Zimmer Bradley",
+      "award": "Hugo Award",
+      "award_year": "1963",
+      "category": "Best Novel",
+      "position": "1963.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1963-hugo-awards/",
+      "title": "Sword of Aldones"
+    },
+    {
+      "author": "Arthur C. Clarke",
+      "award": "Hugo Award",
+      "award_year": "1963",
+      "category": "Best Novel",
+      "position": "1963.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1963-hugo-awards/",
+      "title": "A Fall of Moondust"
+    },
+    {
+      "author": "H. Beam Piper",
+      "award": "Hugo Award",
+      "award_year": "1963",
+      "category": "Best Novel",
+      "position": "1963.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1963-hugo-awards/",
+      "title": "Little Fuzzy"
+    },
+    {
+      "author": "Vercors",
+      "award": "Hugo Award",
+      "award_year": "1963",
+      "category": "Best Novel",
+      "position": "1963.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1963-hugo-awards/",
+      "title": "Sylva"
+    },
+    {
+      "author": "Clifford D. Simak",
+      "award": "Hugo Award",
+      "award_year": "1964",
+      "category": "Best Novel",
+      "position": "1964",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1964-hugo-awards/",
+      "title": "Here Gather the Stars"
+    },
+    {
+      "author": "Robert A. Heinlein",
+      "award": "Hugo Award",
+      "award_year": "1964",
+      "category": "Best Novel",
+      "position": "1964.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1964-hugo-awards/",
+      "title": "Glory Road"
+    },
+    {
+      "author": "Andre Norton",
+      "award": "Hugo Award",
+      "award_year": "1964",
+      "category": "Best Novel",
+      "position": "1964.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1964-hugo-awards/",
+      "title": "Witch World"
+    },
+    {
+      "author": "Frank Herbert",
+      "award": "Hugo Award",
+      "award_year": "1964",
+      "category": "Best Novel",
+      "position": "1964.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1964-hugo-awards/",
+      "title": "Dune World"
+    },
+    {
+      "author": "Kurt Vonnegut, Jr.",
+      "award": "Hugo Award",
+      "award_year": "1964",
+      "category": "Best Novel",
+      "position": "1964.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1964-hugo-awards/",
+      "title": "Cat\u2019s Cradle"
+    },
+    {
+      "author": "Fritz Leiber",
+      "award": "Hugo Award",
+      "award_year": "1965",
+      "category": "Best Novel",
+      "position": "1965",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1965-hugo-awards/",
+      "title": "The Wanderer"
+    },
+    {
+      "author": "John Brunner",
+      "award": "Hugo Award",
+      "award_year": "1965",
+      "category": "Best Novel",
+      "position": "1965.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1965-hugo-awards/",
+      "title": "The Whole Man"
+    },
+    {
+      "author": "Edgar Pangborn",
+      "award": "Hugo Award",
+      "award_year": "1965",
+      "category": "Best Novel",
+      "position": "1965.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1965-hugo-awards/",
+      "title": "Davy"
+    },
+    {
+      "author": "Cordwainer Smith",
+      "award": "Hugo Award",
+      "award_year": "1965",
+      "category": "Best Novel",
+      "position": "1965.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1965-hugo-awards/",
+      "title": "The Planet Buyer"
+    },
+    {
+      "author": "Frank Herbert",
+      "award": "Hugo Award",
+      "award_year": "1966",
+      "category": "Best Novel",
+      "position": "1966",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1966-hugo-awards/",
+      "title": "Dune"
+    },
+    {
+      "author": "Roger Zelazny",
+      "award": "Hugo Award",
+      "award_year": "1966",
+      "category": "Best Novel",
+      "position": "1966.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1966-hugo-awards/",
+      "title": "\u2026And Call Me Conrad"
+    },
+    {
+      "author": "John Brunner",
+      "award": "Hugo Award",
+      "award_year": "1966",
+      "category": "Best Novel",
+      "position": "1966.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1966-hugo-awards/",
+      "title": "The Squares of the City"
+    },
+    {
+      "author": "Robert A. Heinlein",
+      "award": "Hugo Award",
+      "award_year": "1966",
+      "category": "Best Novel",
+      "position": "1966.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1966-hugo-awards/",
+      "title": "The Moon is a Harsh Mistress"
+    },
+    {
+      "author": "Edward E. Smith",
+      "award": "Hugo Award",
+      "award_year": "1966",
+      "category": "Best Novel",
+      "position": "1966.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1966-hugo-awards/",
+      "title": "Skylark DuQuesne"
+    },
+    {
+      "author": "Robert A. Heinlein",
+      "award": "Hugo Award",
+      "award_year": "1967",
+      "category": "Best Novel",
+      "position": "1967",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1967-hugo-awards/",
+      "title": "The Moon is a Harsh Mistress"
+    },
+    {
+      "author": "Samuel R. Delany",
+      "award": "Hugo Award",
+      "award_year": "1967",
+      "category": "Best Novel",
+      "position": "1967.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1967-hugo-awards/",
+      "title": "Babel-17"
+    },
+    {
+      "author": "Randall Garrett",
+      "award": "Hugo Award",
+      "award_year": "1967",
+      "category": "Best Novel",
+      "position": "1967.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1967-hugo-awards/",
+      "title": "Too Many Magicians"
+    },
+    {
+      "author": "Daniel Keyes",
+      "award": "Hugo Award",
+      "award_year": "1967",
+      "category": "Best Novel",
+      "position": "1967.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1967-hugo-awards/",
+      "title": "Flowers for Algernon"
+    },
+    {
+      "author": "James H. Schmitz",
+      "award": "Hugo Award",
+      "award_year": "1967",
+      "category": "Best Novel",
+      "position": "1967.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1967-hugo-awards/",
+      "title": "The Witches of Karres"
+    },
+    {
+      "author": "Thomas Burnett Swann",
+      "award": "Hugo Award",
+      "award_year": "1967",
+      "category": "Best Novel",
+      "position": "1967.05",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1967-hugo-awards/",
+      "title": "Day of the Minotaur"
+    },
+    {
+      "author": "Roger Zelazny",
+      "award": "Hugo Award",
+      "award_year": "1968",
+      "category": "Best Novel",
+      "position": "1968",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1968-hugo-awards/",
+      "title": "Lord of Light"
+    },
+    {
+      "author": "Samuel R. Delany",
+      "award": "Hugo Award",
+      "award_year": "1968",
+      "category": "Best Novel",
+      "position": "1968.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1968-hugo-awards/",
+      "title": "The Einstein Intersection"
+    },
+    {
+      "author": "Piers Anthony",
+      "award": "Hugo Award",
+      "award_year": "1968",
+      "category": "Best Novel",
+      "position": "1968.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1968-hugo-awards/",
+      "title": "Chthon"
+    },
+    {
+      "author": "Chester Anderson",
+      "award": "Hugo Award",
+      "award_year": "1968",
+      "category": "Best Novel",
+      "position": "1968.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1968-hugo-awards/",
+      "title": "The Butterfly Kid"
+    },
+    {
+      "author": "Robert Silverberg",
+      "award": "Hugo Award",
+      "award_year": "1968",
+      "category": "Best Novel",
+      "position": "1968.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1968-hugo-awards/",
+      "title": "Thorns"
+    },
+    {
+      "author": "John Brunner",
+      "award": "Hugo Award",
+      "award_year": "1969",
+      "category": "Best Novel",
+      "position": "1969",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1969-hugo-awards/",
+      "title": "Stand on Zanzibar"
+    },
+    {
+      "author": "Alexei Panshin",
+      "award": "Hugo Award",
+      "award_year": "1969",
+      "category": "Best Novel",
+      "position": "1969.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1969-hugo-awards/",
+      "title": "Rite of Passage"
+    },
+    {
+      "author": "Samuel R. Delany",
+      "award": "Hugo Award",
+      "award_year": "1969",
+      "category": "Best Novel",
+      "position": "1969.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1969-hugo-awards/",
+      "title": "Nova"
+    },
+    {
+      "author": "R. A. Lafferty",
+      "award": "Hugo Award",
+      "award_year": "1969",
+      "category": "Best Novel",
+      "position": "1969.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1969-hugo-awards/",
+      "title": "Past Master"
+    },
+    {
+      "author": "Clifford D. Simak",
+      "award": "Hugo Award",
+      "award_year": "1969",
+      "category": "Best Novel",
+      "position": "1969.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1969-hugo-awards/",
+      "title": "The Goblin Reservation"
+    },
+    {
+      "author": "Ursula K. Le Guin",
+      "award": "Hugo Award",
+      "award_year": "1970",
+      "category": "Best Novel",
+      "position": "1970",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1970-hugo-awards/",
+      "title": "The Left Hand of Darkness"
+    },
+    {
+      "author": "Robert Silverberg",
+      "award": "Hugo Award",
+      "award_year": "1970",
+      "category": "Best Novel",
+      "position": "1970.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1970-hugo-awards/",
+      "title": "Up the Line"
+    },
+    {
+      "author": "Piers Anthony",
+      "award": "Hugo Award",
+      "award_year": "1970",
+      "category": "Best Novel",
+      "position": "1970.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1970-hugo-awards/",
+      "title": "Macroscope"
+    },
+    {
+      "author": "Kurt Vonnegut, Jr.",
+      "award": "Hugo Award",
+      "award_year": "1970",
+      "category": "Best Novel",
+      "position": "1970.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1970-hugo-awards/",
+      "title": "Slaughterhouse-Five"
+    },
+    {
+      "author": "Norman Spinrad",
+      "award": "Hugo Award",
+      "award_year": "1970",
+      "category": "Best Novel",
+      "position": "1970.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1970-hugo-awards/",
+      "title": "Bug Jack Barron"
+    },
+    {
+      "author": "Larry Niven",
+      "award": "Hugo Award",
+      "award_year": "1971",
+      "category": "Best Novel",
+      "position": "1971",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1971-hugo-awards/",
+      "title": "Ringworld"
+    },
+    {
+      "author": "Poul Anderson",
+      "award": "Hugo Award",
+      "award_year": "1971",
+      "category": "Best Novel",
+      "position": "1971.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1971-hugo-awards/",
+      "title": "Tau Zero"
+    },
+    {
+      "author": "Robert Silverberg",
+      "award": "Hugo Award",
+      "award_year": "1971",
+      "category": "Best Novel",
+      "position": "1971.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1971-hugo-awards/",
+      "title": "Tower of Glass"
+    },
+    {
+      "author": "Wilson Tucker",
+      "award": "Hugo Award",
+      "award_year": "1971",
+      "category": "Best Novel",
+      "position": "1971.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1971-hugo-awards/",
+      "title": "The Year of the Quiet Sun"
+    },
+    {
+      "author": "Hal Clement",
+      "award": "Hugo Award",
+      "award_year": "1971",
+      "category": "Best Novel",
+      "position": "1971.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1971-hugo-awards/",
+      "title": "Star Light"
+    },
+    {
+      "author": "Philip Jos\u00e9 Farmer",
+      "award": "Hugo Award",
+      "award_year": "1972",
+      "category": "Best Novel",
+      "position": "1972",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1972-hugo-awards/",
+      "title": "To Your Scattered Bodies Go"
+    },
+    {
+      "author": "Ursula K. Le Guin",
+      "award": "Hugo Award",
+      "award_year": "1972",
+      "category": "Best Novel",
+      "position": "1972.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1972-hugo-awards/",
+      "title": "The Lathe of Heaven"
+    },
+    {
+      "author": "Anne McCaffrey",
+      "award": "Hugo Award",
+      "award_year": "1972",
+      "category": "Best Novel",
+      "position": "1972.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1972-hugo-awards/",
+      "title": "Dragonquest"
+    },
+    {
+      "author": "Roger Zelazny",
+      "award": "Hugo Award",
+      "award_year": "1972",
+      "category": "Best Novel",
+      "position": "1972.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1972-hugo-awards/",
+      "title": "Jack of Shadows"
+    },
+    {
+      "author": "Robert Silverberg",
+      "award": "Hugo Award",
+      "award_year": "1972",
+      "category": "Best Novel",
+      "position": "1972.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1972-hugo-awards/",
+      "title": "A Time of Changes"
+    },
+    {
+      "author": "Isaac Asimov",
+      "award": "Hugo Award",
+      "award_year": "1973",
+      "category": "Best Novel",
+      "position": "1973",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1973-hugo-awards/",
+      "title": "The Gods Themselves"
+    },
+    {
+      "author": "David Gerrold",
+      "award": "Hugo Award",
+      "award_year": "1973",
+      "category": "Best Novel",
+      "position": "1973.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1973-hugo-awards/",
+      "title": "When Harlie Was One"
+    },
+    {
+      "author": "Poul Anderson",
+      "award": "Hugo Award",
+      "award_year": "1973",
+      "category": "Best Novel",
+      "position": "1973.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1973-hugo-awards/",
+      "title": "There Will Be Time"
+    },
+    {
+      "author": "Robert Silverberg",
+      "award": "Hugo Award",
+      "award_year": "1973",
+      "category": "Best Novel",
+      "position": "1973.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1973-hugo-awards/",
+      "title": "The Book of Skulls"
+    },
+    {
+      "author": "Robert Silverberg",
+      "award": "Hugo Award",
+      "award_year": "1973",
+      "category": "Best Novel",
+      "position": "1973.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1973-hugo-awards/",
+      "title": "Dying Inside"
+    },
+    {
+      "author": "Clifford D. Simak",
+      "award": "Hugo Award",
+      "award_year": "1973",
+      "category": "Best Novel",
+      "position": "1973.05",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1973-hugo-awards/",
+      "title": "A Choice of Gods"
+    },
+    {
+      "author": "Arthur C. Clarke",
+      "award": "Hugo Award",
+      "award_year": "1974",
+      "category": "Best Novel",
+      "position": "1974",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1974-hugo-awards/",
+      "title": "Rendezvous With Rama"
+    },
+    {
+      "author": "Robert A. Heinlein",
+      "award": "Hugo Award",
+      "award_year": "1974",
+      "category": "Best Novel",
+      "position": "1974.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1974-hugo-awards/",
+      "title": "Time Enough for Love"
+    },
+    {
+      "author": "Larry Niven",
+      "award": "Hugo Award",
+      "award_year": "1974",
+      "category": "Best Novel",
+      "position": "1974.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1974-hugo-awards/",
+      "title": "Protector"
+    },
+    {
+      "author": "Poul Anderson",
+      "award": "Hugo Award",
+      "award_year": "1974",
+      "category": "Best Novel",
+      "position": "1974.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1974-hugo-awards/",
+      "title": "The People of the Wind"
+    },
+    {
+      "author": "David Gerrold",
+      "award": "Hugo Award",
+      "award_year": "1974",
+      "category": "Best Novel",
+      "position": "1974.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1974-hugo-awards/",
+      "title": "The Man Who Folded Himself"
+    },
+    {
+      "author": "Ursula K. Le Guin",
+      "award": "Hugo Award",
+      "award_year": "1975",
+      "category": "Best Novel",
+      "position": "1975",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1975-hugo-awards/",
+      "title": "The Dispossessed"
+    },
+    {
+      "author": "Poul Anderson",
+      "award": "Hugo Award",
+      "award_year": "1975",
+      "category": "Best Novel",
+      "position": "1975.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1975-hugo-awards/",
+      "title": "Fire Time"
+    },
+    {
+      "author": "Philip K. Dick",
+      "award": "Hugo Award",
+      "award_year": "1975",
+      "category": "Best Novel",
+      "position": "1975.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1975-hugo-awards/",
+      "title": "Flow My Tears, the Policeman Said"
+    },
+    {
+      "author": "Larry Niven and Jerry Pournelle",
+      "award": "Hugo Award",
+      "award_year": "1975",
+      "category": "Best Novel",
+      "position": "1975.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1975-hugo-awards/",
+      "title": "The Mote in God\u2019s Eye"
+    },
+    {
+      "author": "Christopher Priest",
+      "award": "Hugo Award",
+      "award_year": "1975",
+      "category": "Best Novel",
+      "position": "1975.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1975-hugo-awards/",
+      "title": "Inverted World"
+    },
+    {
+      "author": "Joe Haldeman",
+      "award": "Hugo Award",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1976-hugo-awards/",
+      "title": "The Forever War"
+    },
+    {
+      "author": "Roger Zelazny",
+      "award": "Hugo Award",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1976-hugo-awards/",
+      "title": "Doorways in the Sand"
+    },
+    {
+      "author": "Larry Niven and Jerry Pournelle",
+      "award": "Hugo Award",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1976-hugo-awards/",
+      "title": "Inferno"
+    },
+    {
+      "author": "Alfred Bester",
+      "award": "Hugo Award",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1976-hugo-awards/",
+      "title": "The Computer Connection"
+    },
+    {
+      "author": "Robert Silverberg",
+      "award": "Hugo Award",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1976-hugo-awards/",
+      "title": "The Stochastic Man"
+    },
+    {
+      "author": "Kate Wilhelm",
+      "award": "Hugo Award",
+      "award_year": "1977",
+      "category": "Best Novel",
+      "position": "1977",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1977-hugo-awards/",
+      "title": "Where Late the Sweet Birds Sang"
+    },
+    {
+      "author": "Joe Haldeman",
+      "award": "Hugo Award",
+      "award_year": "1977",
+      "category": "Best Novel",
+      "position": "1977.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1977-hugo-awards/",
+      "title": "Mindbridge"
+    },
+    {
+      "author": "Frank Herbert",
+      "award": "Hugo Award",
+      "award_year": "1977",
+      "category": "Best Novel",
+      "position": "1977.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1977-hugo-awards/",
+      "title": "Children of Dune"
+    },
+    {
+      "author": "Frederik Pohl",
+      "award": "Hugo Award",
+      "award_year": "1977",
+      "category": "Best Novel",
+      "position": "1977.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1977-hugo-awards/",
+      "title": "Man Plus"
+    },
+    {
+      "author": "Robert Silverberg",
+      "award": "Hugo Award",
+      "award_year": "1977",
+      "category": "Best Novel",
+      "position": "1977.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1977-hugo-awards/",
+      "title": "Shadrach in the Furnace"
+    },
+    {
+      "author": "Frederik Pohl",
+      "award": "Hugo Award",
+      "award_year": "1978",
+      "category": "Best Novel",
+      "position": "1978",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1978-hugo-awards/",
+      "title": "Gateway"
+    },
+    {
+      "author": "Marion Zimmer Bradley",
+      "award": "Hugo Award",
+      "award_year": "1978",
+      "category": "Best Novel",
+      "position": "1978.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1978-hugo-awards/",
+      "title": "The Forbidden Tower"
+    },
+    {
+      "author": "Larry Niven and Jerry Pournelle",
+      "award": "Hugo Award",
+      "award_year": "1978",
+      "category": "Best Novel",
+      "position": "1978.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1978-hugo-awards/",
+      "title": "Lucifer\u2019s Hammer"
+    },
+    {
+      "author": "Gordon R. Dickson",
+      "award": "Hugo Award",
+      "award_year": "1978",
+      "category": "Best Novel",
+      "position": "1978.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1978-hugo-awards/",
+      "title": "Time Storm"
+    },
+    {
+      "author": "George R. R. Martin",
+      "award": "Hugo Award",
+      "award_year": "1978",
+      "category": "Best Novel",
+      "position": "1978.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1978-hugo-awards/",
+      "title": "Dying of the Light"
+    },
+    {
+      "author": "Vonda N. McIntyre",
+      "award": "Hugo Award",
+      "award_year": "1979",
+      "category": "Best Novel",
+      "position": "1979",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1979-hugo-awards/",
+      "title": "Dreamsnake"
+    },
+    {
+      "author": "Anne McCaffrey",
+      "award": "Hugo Award",
+      "award_year": "1979",
+      "category": "Best Novel",
+      "position": "1979.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1979-hugo-awards/",
+      "title": "The White Dragon"
+    },
+    {
+      "author": "C. J. Cherryh",
+      "award": "Hugo Award",
+      "award_year": "1979",
+      "category": "Best Novel",
+      "position": "1979.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1979-hugo-awards/",
+      "title": "The Faded Sun: Kesrith"
+    },
+    {
+      "author": "Tom Reamy",
+      "award": "Hugo Award",
+      "award_year": "1979",
+      "category": "Best Novel",
+      "position": "1979.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1979-hugo-awards/",
+      "title": "Blind Voices"
+    },
+    {
+      "author": "James Tiptree, Jr.",
+      "award": "Hugo Award",
+      "award_year": "1979",
+      "category": "Best Novel",
+      "position": "1979.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1979-hugo-awards/",
+      "title": "Up to the Walls of the World"
+    },
+    {
+      "author": "Arthur C. Clarke",
+      "award": "Hugo Award",
+      "award_year": "1980",
+      "category": "Best Novel",
+      "position": "1980",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1980-hugo-awards/",
+      "title": "The Fountains of Paradise"
+    },
+    {
+      "author": "John Varley",
+      "award": "Hugo Award",
+      "award_year": "1980",
+      "category": "Best Novel",
+      "position": "1980.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1980-hugo-awards/",
+      "title": "Titan"
+    },
+    {
+      "author": "Frederik Pohl",
+      "award": "Hugo Award",
+      "award_year": "1980",
+      "category": "Best Novel",
+      "position": "1980.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1980-hugo-awards/",
+      "title": "Jem"
+    },
+    {
+      "author": "Patricia A. McKillip",
+      "award": "Hugo Award",
+      "award_year": "1980",
+      "category": "Best Novel",
+      "position": "1980.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1980-hugo-awards/",
+      "title": "Harpist in the Wind"
+    },
+    {
+      "author": "Thomas M. Disch",
+      "award": "Hugo Award",
+      "award_year": "1980",
+      "category": "Best Novel",
+      "position": "1980.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1980-hugo-awards/",
+      "title": "On Wings of Song"
+    },
+    {
+      "author": "Joan D. Vinge",
+      "award": "Hugo Award",
+      "award_year": "1981",
+      "category": "Best Novel",
+      "position": "1981",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1981-hugo-awards/",
+      "title": "The Snow Queen"
+    },
+    {
+      "author": "Robert Silverberg",
+      "award": "Hugo Award",
+      "award_year": "1981",
+      "category": "Best Novel",
+      "position": "1981.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1981-hugo-awards/",
+      "title": "Lord Valentine\u2019s Castle"
+    },
+    {
+      "author": "Larry Niven",
+      "award": "Hugo Award",
+      "award_year": "1981",
+      "category": "Best Novel",
+      "position": "1981.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1981-hugo-awards/",
+      "title": "The Ringworld Engineers"
+    },
+    {
+      "author": "Frederik Pohl",
+      "award": "Hugo Award",
+      "award_year": "1981",
+      "category": "Best Novel",
+      "position": "1981.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1981-hugo-awards/",
+      "title": "Beyond the Blue Event Horizon"
+    },
+    {
+      "author": "John Varley",
+      "award": "Hugo Award",
+      "award_year": "1981",
+      "category": "Best Novel",
+      "position": "1981.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1981-hugo-awards/",
+      "title": "Wizard"
+    },
+    {
+      "author": "C. J. Cherryh",
+      "award": "Hugo Award",
+      "award_year": "1982",
+      "category": "Best Novel",
+      "position": "1982",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1982-hugo-awards/",
+      "title": "Downbelow Station"
+    },
+    {
+      "author": "Gene Wolfe",
+      "award": "Hugo Award",
+      "award_year": "1982",
+      "category": "Best Novel",
+      "position": "1982.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1982-hugo-awards/",
+      "title": "The Claw of the Conciliator"
+    },
+    {
+      "author": "Julian May",
+      "award": "Hugo Award",
+      "award_year": "1982",
+      "category": "Best Novel",
+      "position": "1982.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1982-hugo-awards/",
+      "title": "The Many-Colored Land"
+    },
+    {
+      "author": "Clifford D. Simak",
+      "award": "Hugo Award",
+      "award_year": "1982",
+      "category": "Best Novel",
+      "position": "1982.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1982-hugo-awards/",
+      "title": "Project Pope"
+    },
+    {
+      "author": "John Crowley",
+      "award": "Hugo Award",
+      "award_year": "1982",
+      "category": "Best Novel",
+      "position": "1982.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1982-hugo-awards/",
+      "title": "Little, Big"
+    },
+    {
+      "author": "Isaac Asimov",
+      "award": "Hugo Award",
+      "award_year": "1983",
+      "category": "Best Novel",
+      "position": "1983",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1983-hugo-awards/",
+      "title": "Foundation\u2019s Edge"
+    },
+    {
+      "author": "C. J. Cherryh",
+      "award": "Hugo Award",
+      "award_year": "1983",
+      "category": "Best Novel",
+      "position": "1983.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1983-hugo-awards/",
+      "title": "The Pride of Chanur"
+    },
+    {
+      "author": "Arthur C. Clarke",
+      "award": "Hugo Award",
+      "award_year": "1983",
+      "category": "Best Novel",
+      "position": "1983.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1983-hugo-awards/",
+      "title": "2010: Odyssey Two"
+    },
+    {
+      "author": "Robert A. Heinlein",
+      "award": "Hugo Award",
+      "award_year": "1983",
+      "category": "Best Novel",
+      "position": "1983.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1983-hugo-awards/",
+      "title": "Friday"
+    },
+    {
+      "author": "Donald Kingsbury",
+      "award": "Hugo Award",
+      "award_year": "1983",
+      "category": "Best Novel",
+      "position": "1983.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1983-hugo-awards/",
+      "title": "Courtship Rite"
+    },
+    {
+      "author": "Gene Wolfe",
+      "award": "Hugo Award",
+      "award_year": "1983",
+      "category": "Best Novel",
+      "position": "1983.05",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1983-hugo-awards/",
+      "title": "The Sword of the Lictor"
+    },
+    {
+      "author": "David Brin",
+      "award": "Hugo Award",
+      "award_year": "1984",
+      "category": "Best Novel",
+      "position": "1984",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1984-hugo-awards/",
+      "title": "Startide Rising"
+    },
+    {
+      "author": "R. A. MacAvoy",
+      "award": "Hugo Award",
+      "award_year": "1984",
+      "category": "Best Novel",
+      "position": "1984.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1984-hugo-awards/",
+      "title": "Tea with the Black Dragon"
+    },
+    {
+      "author": "John Varley",
+      "award": "Hugo Award",
+      "award_year": "1984",
+      "category": "Best Novel",
+      "position": "1984.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1984-hugo-awards/",
+      "title": "Millennium"
+    },
+    {
+      "author": "Anne McCaffrey",
+      "award": "Hugo Award",
+      "award_year": "1984",
+      "category": "Best Novel",
+      "position": "1984.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1984-hugo-awards/",
+      "title": "Moreta: Dragonlady of Pern"
+    },
+    {
+      "author": "Isaac Asimov",
+      "award": "Hugo Award",
+      "award_year": "1984",
+      "category": "Best Novel",
+      "position": "1984.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1984-hugo-awards/",
+      "title": "The Robots of Dawn"
+    },
+    {
+      "author": "William Gibson",
+      "award": "Hugo Award",
+      "award_year": "1985",
+      "category": "Best Novel",
+      "position": "1985",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1995-hugo-awards-2/",
+      "title": "Neuromancer"
+    },
+    {
+      "author": "David R. Palmer",
+      "award": "Hugo Award",
+      "award_year": "1985",
+      "category": "Best Novel",
+      "position": "1985.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1995-hugo-awards-2/",
+      "title": "Emergence"
+    },
+    {
+      "author": "Vernor Vinge",
+      "award": "Hugo Award",
+      "award_year": "1985",
+      "category": "Best Novel",
+      "position": "1985.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1995-hugo-awards-2/",
+      "title": "The Peace War"
+    },
+    {
+      "author": "Robert A. Heinlein",
+      "award": "Hugo Award",
+      "award_year": "1985",
+      "category": "Best Novel",
+      "position": "1985.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1995-hugo-awards-2/",
+      "title": "Job: A Comedy of Justice"
+    },
+    {
+      "author": "Larry Niven",
+      "award": "Hugo Award",
+      "award_year": "1985",
+      "category": "Best Novel",
+      "position": "1985.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1995-hugo-awards-2/",
+      "title": "The Integral Trees"
+    },
+    {
+      "author": "Orson Scott Card",
+      "award": "Hugo Award",
+      "award_year": "1986",
+      "category": "Best Novel",
+      "position": "1986",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1986-hugo-awards/",
+      "title": "Ender\u2019s Game"
+    },
+    {
+      "author": "C. J. Cherryh",
+      "award": "Hugo Award",
+      "award_year": "1986",
+      "category": "Best Novel",
+      "position": "1986.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1986-hugo-awards/",
+      "title": "Cuckoo\u2019s Egg"
+    },
+    {
+      "author": "David Brin",
+      "award": "Hugo Award",
+      "award_year": "1986",
+      "category": "Best Novel",
+      "position": "1986.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1986-hugo-awards/",
+      "title": "The Postman"
+    },
+    {
+      "author": "Larry Niven and Jerry Pournelle",
+      "award": "Hugo Award",
+      "award_year": "1986",
+      "category": "Best Novel",
+      "position": "1986.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1986-hugo-awards/",
+      "title": "Footfall"
+    },
+    {
+      "author": "Greg Bear",
+      "award": "Hugo Award",
+      "award_year": "1986",
+      "category": "Best Novel",
+      "position": "1986.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1986-hugo-awards/",
+      "title": "Blood Music"
+    },
+    {
+      "author": "Orson Scott Card",
+      "award": "Hugo Award",
+      "award_year": "1987",
+      "category": "Best Novel",
+      "position": "1987",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1987-hugo-awards/",
+      "title": "Speaker for the Dead"
+    },
+    {
+      "author": "Bob Shaw",
+      "award": "Hugo Award",
+      "award_year": "1987",
+      "category": "Best Novel",
+      "position": "1987.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1987-hugo-awards/",
+      "title": "The Ragged Astronauts"
+    },
+    {
+      "author": "William Gibson",
+      "award": "Hugo Award",
+      "award_year": "1987",
+      "category": "Best Novel",
+      "position": "1987.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1987-hugo-awards/",
+      "title": "Count Zero"
+    },
+    {
+      "author": "Vernor Vinge",
+      "award": "Hugo Award",
+      "award_year": "1987",
+      "category": "Best Novel",
+      "position": "1987.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1987-hugo-awards/",
+      "title": "Marooned in Realtime"
+    },
+    {
+      "author": "L. Ron Hubbard",
+      "award": "Hugo Award",
+      "award_year": "1987",
+      "category": "Best Novel",
+      "position": "1987.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1987-hugo-awards/",
+      "title": "Black Genesis"
+    },
+    {
+      "author": "David Brin",
+      "award": "Hugo Award",
+      "award_year": "1988",
+      "category": "Best Novel",
+      "position": "1988",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1988-hugo-awards/",
+      "title": "The Uplift War"
+    },
+    {
+      "author": "George Alec Effinger",
+      "award": "Hugo Award",
+      "award_year": "1988",
+      "category": "Best Novel",
+      "position": "1988.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1988-hugo-awards/",
+      "title": "When Gravity Fails"
+    },
+    {
+      "author": "Orson Scott Card",
+      "award": "Hugo Award",
+      "award_year": "1988",
+      "category": "Best Novel",
+      "position": "1988.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1988-hugo-awards/",
+      "title": "Seventh Son"
+    },
+    {
+      "author": "Greg Bear",
+      "award": "Hugo Award",
+      "award_year": "1988",
+      "category": "Best Novel",
+      "position": "1988.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1988-hugo-awards/",
+      "title": "The Forge of God"
+    },
+    {
+      "author": "Gene Wolfe",
+      "award": "Hugo Award",
+      "award_year": "1988",
+      "category": "Best Novel",
+      "position": "1988.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1988-hugo-awards/",
+      "title": "The Urth of the New Sun"
+    },
+    {
+      "author": "C. J. Cherryh",
+      "award": "Hugo Award",
+      "award_year": "1989",
+      "category": "Best Novel",
+      "position": "1989",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1989-hugo-awards/",
+      "title": "Cyteen"
+    },
+    {
+      "author": "Orson Scott Card",
+      "award": "Hugo Award",
+      "award_year": "1989",
+      "category": "Best Novel",
+      "position": "1989.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1989-hugo-awards/",
+      "title": "Red Prophet"
+    },
+    {
+      "author": "Lois McMaster Bujold",
+      "award": "Hugo Award",
+      "award_year": "1989",
+      "category": "Best Novel",
+      "position": "1989.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1989-hugo-awards/",
+      "title": "Falling Free"
+    },
+    {
+      "author": "Bruce Sterling",
+      "award": "Hugo Award",
+      "award_year": "1989",
+      "category": "Best Novel",
+      "position": "1989.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1989-hugo-awards/",
+      "title": "Islands in the Net"
+    },
+    {
+      "author": "William Gibson",
+      "award": "Hugo Award",
+      "award_year": "1989",
+      "category": "Best Novel",
+      "position": "1989.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1989-hugo-awards/",
+      "title": "Mona Lisa Overdrive"
+    },
+    {
+      "author": "Dan Simmons",
+      "award": "Hugo Award",
+      "award_year": "1990",
+      "category": "Best Novel",
+      "position": "1990",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1990-hugo-awards/",
+      "title": "Hyperion"
+    },
+    {
+      "author": "George Alec Effinger",
+      "award": "Hugo Award",
+      "award_year": "1990",
+      "category": "Best Novel",
+      "position": "1990.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1990-hugo-awards/",
+      "title": "A Fire in the Sun"
+    },
+    {
+      "author": "Orson Scott Card",
+      "award": "Hugo Award",
+      "award_year": "1990",
+      "category": "Best Novel",
+      "position": "1990.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1990-hugo-awards/",
+      "title": "Prentice Alvin"
+    },
+    {
+      "author": "Poul Anderson",
+      "award": "Hugo Award",
+      "award_year": "1990",
+      "category": "Best Novel",
+      "position": "1990.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1990-hugo-awards/",
+      "title": "The Boat of a Million Years"
+    },
+    {
+      "author": "Sheri S. Tepper",
+      "award": "Hugo Award",
+      "award_year": "1990",
+      "category": "Best Novel",
+      "position": "1990.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1990-hugo-awards/",
+      "title": "Grass"
+    },
+    {
+      "author": "Lois McMaster Bujold",
+      "award": "Hugo Award",
+      "award_year": "1991",
+      "category": "Best Novel",
+      "position": "1991",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1991-hugo-awards/",
+      "title": "The Vor Game"
+    },
+    {
+      "author": "David Brin",
+      "award": "Hugo Award",
+      "award_year": "1991",
+      "category": "Best Novel",
+      "position": "1991.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1991-hugo-awards/",
+      "title": "Earth"
+    },
+    {
+      "author": "Dan Simmons",
+      "award": "Hugo Award",
+      "award_year": "1991",
+      "category": "Best Novel",
+      "position": "1991.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1991-hugo-awards/",
+      "title": "The Fall of Hyperion"
+    },
+    {
+      "author": "Michael P. Kube-McDowell",
+      "award": "Hugo Award",
+      "award_year": "1991",
+      "category": "Best Novel",
+      "position": "1991.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1991-hugo-awards/",
+      "title": "The Quiet Pools"
+    },
+    {
+      "author": "Greg Bear",
+      "award": "Hugo Award",
+      "award_year": "1991",
+      "category": "Best Novel",
+      "position": "1991.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1991-hugo-awards/",
+      "title": "Queen of Angels"
+    },
+    {
+      "author": "Lois McMaster Bujold",
+      "award": "Hugo Award",
+      "award_year": "1992",
+      "category": "Best Novel",
+      "position": "1992",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1992-hugo-awards/",
+      "title": "Barrayar"
+    },
+    {
+      "author": "Emma Bull",
+      "award": "Hugo Award",
+      "award_year": "1992",
+      "category": "Best Novel",
+      "position": "1992.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1992-hugo-awards/",
+      "title": "Bone Dance"
+    },
+    {
+      "author": "Anne McCaffrey",
+      "award": "Hugo Award",
+      "award_year": "1992",
+      "category": "Best Novel",
+      "position": "1992.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1992-hugo-awards/",
+      "title": "All the Weyrs of Pern"
+    },
+    {
+      "author": "Joan D. Vinge",
+      "award": "Hugo Award",
+      "award_year": "1992",
+      "category": "Best Novel",
+      "position": "1992.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1992-hugo-awards/",
+      "title": "The Summer Queen"
+    },
+    {
+      "author": "Orson Scott Card",
+      "award": "Hugo Award",
+      "award_year": "1992",
+      "category": "Best Novel",
+      "position": "1992.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1992-hugo-awards/",
+      "title": "Xenocide"
+    },
+    {
+      "author": "Michael Swanwick",
+      "award": "Hugo Award",
+      "award_year": "1992",
+      "category": "Best Novel",
+      "position": "1992.05",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1992-hugo-awards/",
+      "title": "Stations of the Tide"
+    },
+    {
+      "author": "Vernor Vinge",
+      "award": "Hugo Award",
+      "award_year": "1993",
+      "category": "Best Novel",
+      "position": "1993",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1993-hugo-awards/",
+      "title": "A Fire Upon the Deep"
+    },
+    {
+      "author": "Connie Willis",
+      "award": "Hugo Award",
+      "award_year": "1993",
+      "category": "Best Novel",
+      "position": "1993.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1993-hugo-awards/",
+      "title": "Doomsday Book"
+    },
+    {
+      "author": "Kim Stanley Robinson",
+      "award": "Hugo Award",
+      "award_year": "1993",
+      "category": "Best Novel",
+      "position": "1993.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1993-hugo-awards/",
+      "title": "Red Mars"
+    },
+    {
+      "author": "Maureen F. McHugh",
+      "award": "Hugo Award",
+      "award_year": "1993",
+      "category": "Best Novel",
+      "position": "1993.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1993-hugo-awards/",
+      "title": "China Mountain Zhang"
+    },
+    {
+      "author": "John Varley",
+      "award": "Hugo Award",
+      "award_year": "1993",
+      "category": "Best Novel",
+      "position": "1993.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1993-hugo-awards/",
+      "title": "Steel Beach"
+    },
+    {
+      "author": "Kim Stanley Robinson",
+      "award": "Hugo Award",
+      "award_year": "1994",
+      "category": "Best Novel",
+      "position": "1994",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1994-hugo-awards/",
+      "title": "Green Mars"
+    },
+    {
+      "author": "Greg Bear",
+      "award": "Hugo Award",
+      "award_year": "1994",
+      "category": "Best Novel",
+      "position": "1994.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1994-hugo-awards/",
+      "title": "Moving Mars"
+    },
+    {
+      "author": "Nancy Kress",
+      "award": "Hugo Award",
+      "award_year": "1994",
+      "category": "Best Novel",
+      "position": "1994.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1994-hugo-awards/",
+      "title": "Beggars in Spain"
+    },
+    {
+      "author": "David Brin",
+      "award": "Hugo Award",
+      "award_year": "1994",
+      "category": "Best Novel",
+      "position": "1994.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1994-hugo-awards/",
+      "title": "Glory Season"
+    },
+    {
+      "author": "William Gibson",
+      "award": "Hugo Award",
+      "award_year": "1994",
+      "category": "Best Novel",
+      "position": "1994.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1994-hugo-awards/",
+      "title": "Virtual Light"
+    },
+    {
+      "author": "Lois McMaster Bujold",
+      "award": "Hugo Award",
+      "award_year": "1995",
+      "category": "Best Novel",
+      "position": "1995",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1995-hugo-awards/",
+      "title": "Mirror Dance"
+    },
+    {
+      "author": "John Barnes",
+      "award": "Hugo Award",
+      "award_year": "1995",
+      "category": "Best Novel",
+      "position": "1995.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1995-hugo-awards/",
+      "title": "Mother of Storms"
+    },
+    {
+      "author": "Nancy Kress",
+      "award": "Hugo Award",
+      "award_year": "1995",
+      "category": "Best Novel",
+      "position": "1995.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1995-hugo-awards/",
+      "title": "Beggars and Choosers"
+    },
+    {
+      "author": "Michael Bishop",
+      "award": "Hugo Award",
+      "award_year": "1995",
+      "category": "Best Novel",
+      "position": "1995.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1995-hugo-awards/",
+      "title": "Brittle Innings"
+    },
+    {
+      "author": "James Morrow",
+      "award": "Hugo Award",
+      "award_year": "1995",
+      "category": "Best Novel",
+      "position": "1995.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1995-hugo-awards/",
+      "title": "Towing Jehovah"
+    },
+    {
+      "author": "Neal Stephenson",
+      "award": "Hugo Award",
+      "award_year": "1996",
+      "category": "Best Novel",
+      "position": "1996",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1996-hugo-awards/",
+      "title": "The Diamond Age"
+    },
+    {
+      "author": "Stephen Baxter",
+      "award": "Hugo Award",
+      "award_year": "1996",
+      "category": "Best Novel",
+      "position": "1996.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1996-hugo-awards/",
+      "title": "The Time Ships"
+    },
+    {
+      "author": "David Brin",
+      "award": "Hugo Award",
+      "award_year": "1996",
+      "category": "Best Novel",
+      "position": "1996.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1996-hugo-awards/",
+      "title": "Brightness Reef"
+    },
+    {
+      "author": "Robert J. Sawyer",
+      "award": "Hugo Award",
+      "award_year": "1996",
+      "category": "Best Novel",
+      "position": "1996.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1996-hugo-awards/",
+      "title": "The Terminal Experiment"
+    },
+    {
+      "author": "Connie Willis",
+      "award": "Hugo Award",
+      "award_year": "1996",
+      "category": "Best Novel",
+      "position": "1996.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1996-hugo-awards/",
+      "title": "Remake"
+    },
+    {
+      "author": "Kim Stanley Robinson",
+      "award": "Hugo Award",
+      "award_year": "1997",
+      "category": "Best Novel",
+      "position": "1997",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1997-hugo-awards/",
+      "title": "Blue Mars"
+    },
+    {
+      "author": "Lois McMaster Bujold",
+      "award": "Hugo Award",
+      "award_year": "1997",
+      "category": "Best Novel",
+      "position": "1997.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1997-hugo-awards/",
+      "title": "Memory"
+    },
+    {
+      "author": "Elizabeth Moon",
+      "award": "Hugo Award",
+      "award_year": "1997",
+      "category": "Best Novel",
+      "position": "1997.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1997-hugo-awards/",
+      "title": "Remnant Population"
+    },
+    {
+      "author": "Robert J. Sawyer",
+      "award": "Hugo Award",
+      "award_year": "1997",
+      "category": "Best Novel",
+      "position": "1997.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1997-hugo-awards/",
+      "title": "Starplex"
+    },
+    {
+      "author": "Bruce Sterling",
+      "award": "Hugo Award",
+      "award_year": "1997",
+      "category": "Best Novel",
+      "position": "1997.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1997-hugo-awards/",
+      "title": "Holy Fire"
+    },
+    {
+      "author": "Joe Haldeman",
+      "award": "Hugo Award",
+      "award_year": "1998",
+      "category": "Best Novel",
+      "position": "1998",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1998-hugo-awards/",
+      "title": "Forever Peace"
+    },
+    {
+      "author": "Walter Jon Williams",
+      "award": "Hugo Award",
+      "award_year": "1998",
+      "category": "Best Novel",
+      "position": "1998.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1998-hugo-awards/",
+      "title": "City on Fire"
+    },
+    {
+      "author": "Dan Simmons",
+      "award": "Hugo Award",
+      "award_year": "1998",
+      "category": "Best Novel",
+      "position": "1998.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1998-hugo-awards/",
+      "title": "The Rise of Endymion"
+    },
+    {
+      "author": "Robert J. Sawyer",
+      "award": "Hugo Award",
+      "award_year": "1998",
+      "category": "Best Novel",
+      "position": "1998.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1998-hugo-awards/",
+      "title": "Frameshift"
+    },
+    {
+      "author": "Michael Swanwick",
+      "award": "Hugo Award",
+      "award_year": "1998",
+      "category": "Best Novel",
+      "position": "1998.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1998-hugo-awards/",
+      "title": "Jack Faust"
+    },
+    {
+      "author": "Connie Willis",
+      "award": "Hugo Award",
+      "award_year": "1999",
+      "category": "Best Novel",
+      "position": "1999",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1999-hugo-awards/",
+      "title": "To Say Nothing of the Dog"
+    },
+    {
+      "author": "Mary Doria Russell",
+      "award": "Hugo Award",
+      "award_year": "1999",
+      "category": "Best Novel",
+      "position": "1999.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1999-hugo-awards/",
+      "title": "Children of God"
+    },
+    {
+      "author": "Robert Charles Wilson",
+      "award": "Hugo Award",
+      "award_year": "1999",
+      "category": "Best Novel",
+      "position": "1999.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1999-hugo-awards/",
+      "title": "Darwinia"
+    },
+    {
+      "author": "Bruce Sterling",
+      "award": "Hugo Award",
+      "award_year": "1999",
+      "category": "Best Novel",
+      "position": "1999.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1999-hugo-awards/",
+      "title": "Distraction"
+    },
+    {
+      "author": "Robert J. Sawyer",
+      "award": "Hugo Award",
+      "award_year": "1999",
+      "category": "Best Novel",
+      "position": "1999.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/1999-hugo-awards/",
+      "title": "Factoring Humanity"
+    },
+    {
+      "author": "Vernor Vinge",
+      "award": "Hugo Award",
+      "award_year": "2000",
+      "category": "Best Novel",
+      "position": "2000",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2000-hugo-awards/",
+      "title": "A Deepness in the Sky"
+    },
+    {
+      "author": "Lois McMaster Bujold",
+      "award": "Hugo Award",
+      "award_year": "2000",
+      "category": "Best Novel",
+      "position": "2000.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2000-hugo-awards/",
+      "title": "A Civil Campaign"
+    },
+    {
+      "author": "Neal Stephenson",
+      "award": "Hugo Award",
+      "award_year": "2000",
+      "category": "Best Novel",
+      "position": "2000.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2000-hugo-awards/",
+      "title": "Cryptonomicon"
+    },
+    {
+      "author": "Greg Bear",
+      "award": "Hugo Award",
+      "award_year": "2000",
+      "category": "Best Novel",
+      "position": "2000.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2000-hugo-awards/",
+      "title": "Darwin\u2019s Radio"
+    },
+    {
+      "author": "J. K. Rowling",
+      "award": "Hugo Award",
+      "award_year": "2000",
+      "category": "Best Novel",
+      "position": "2000.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2000-hugo-awards/",
+      "title": "Harry Potter and the Prisoner of Azkaban"
+    },
+    {
+      "author": "J. K. Rowling",
+      "award": "Hugo Award",
+      "award_year": "2001",
+      "category": "Best Novel",
+      "position": "2001",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2001-hugo-awards/",
+      "title": "Harry Potter and the Goblet of Fire"
+    },
+    {
+      "author": "George R. R. Martin",
+      "award": "Hugo Award",
+      "award_year": "2001",
+      "category": "Best Novel",
+      "position": "2001.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2001-hugo-awards/",
+      "title": "A Storm of Swords"
+    },
+    {
+      "author": "Robert J. Sawyer",
+      "award": "Hugo Award",
+      "award_year": "2001",
+      "category": "Best Novel",
+      "position": "2001.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2001-hugo-awards/",
+      "title": "Calculating God"
+    },
+    {
+      "author": "Ken MacLeod",
+      "award": "Hugo Award",
+      "award_year": "2001",
+      "category": "Best Novel",
+      "position": "2001.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2001-hugo-awards/",
+      "title": "The Sky Road"
+    },
+    {
+      "author": "Nalo Hopkinson",
+      "award": "Hugo Award",
+      "award_year": "2001",
+      "category": "Best Novel",
+      "position": "2001.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2001-hugo-awards/",
+      "title": "Midnight Robber"
+    },
+    {
+      "author": "Neil Gaiman",
+      "award": "Hugo Award",
+      "award_year": "2002",
+      "category": "Best Novel",
+      "position": "2002",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2002-hugo-awards/",
+      "title": "American Gods"
+    },
+    {
+      "author": "Lois McMaster Bujold",
+      "award": "Hugo Award",
+      "award_year": "2002",
+      "category": "Best Novel",
+      "position": "2002.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2002-hugo-awards/",
+      "title": "The Curse of Chalion"
+    },
+    {
+      "author": "Connie Willis",
+      "award": "Hugo Award",
+      "award_year": "2002",
+      "category": "Best Novel",
+      "position": "2002.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2002-hugo-awards/",
+      "title": "Passage"
+    },
+    {
+      "author": "China Mi\u00e9ville",
+      "award": "Hugo Award",
+      "award_year": "2002",
+      "category": "Best Novel",
+      "position": "2002.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2002-hugo-awards/",
+      "title": "Perdido Street Station"
+    },
+    {
+      "author": "Robert Charles Wilson",
+      "award": "Hugo Award",
+      "award_year": "2002",
+      "category": "Best Novel",
+      "position": "2002.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2002-hugo-awards/",
+      "title": "The Chronoliths"
+    },
+    {
+      "author": "Ken MacLeod",
+      "award": "Hugo Award",
+      "award_year": "2002",
+      "category": "Best Novel",
+      "position": "2002.05",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2002-hugo-awards/",
+      "title": "Cosmonaut Keep"
+    },
+    {
+      "author": "Robert J. Sawyer",
+      "award": "Hugo Award",
+      "award_year": "2003",
+      "category": "Best Novel",
+      "position": "2003",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2003-hugo-awards/",
+      "title": "Hominids"
+    },
+    {
+      "author": "David Brin",
+      "award": "Hugo Award",
+      "award_year": "2003",
+      "category": "Best Novel",
+      "position": "2003.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2003-hugo-awards/",
+      "title": "Kiln People"
+    },
+    {
+      "author": "Michael Swanwick",
+      "award": "Hugo Award",
+      "award_year": "2003",
+      "category": "Best Novel",
+      "position": "2003.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2003-hugo-awards/",
+      "title": "Bones of the Earth"
+    },
+    {
+      "author": "China Mi\u00e9ville",
+      "award": "Hugo Award",
+      "award_year": "2003",
+      "category": "Best Novel",
+      "position": "2003.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2003-hugo-awards/",
+      "title": "The Scar"
+    },
+    {
+      "author": "Kim Stanley Robinson",
+      "award": "Hugo Award",
+      "award_year": "2003",
+      "category": "Best Novel",
+      "position": "2003.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2003-hugo-awards/",
+      "title": "The Years of Rice and Salt"
+    },
+    {
+      "author": "Lois McMaster Bujold",
+      "award": "Hugo Award",
+      "award_year": "2004",
+      "category": "Best Novel",
+      "position": "2004",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2004-hugo-awards/",
+      "title": "Paladin of Souls"
+    },
+    {
+      "author": "Dan Simmons",
+      "award": "Hugo Award",
+      "award_year": "2004",
+      "category": "Best Novel",
+      "position": "2004.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2004-hugo-awards/",
+      "title": "Ilium"
+    },
+    {
+      "author": "Charles Stross",
+      "award": "Hugo Award",
+      "award_year": "2004",
+      "category": "Best Novel",
+      "position": "2004.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2004-hugo-awards/",
+      "title": "Singularity Sky"
+    },
+    {
+      "author": "Robert Charles Wilson",
+      "award": "Hugo Award",
+      "award_year": "2004",
+      "category": "Best Novel",
+      "position": "2004.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2004-hugo-awards/",
+      "title": "Blind Lake"
+    },
+    {
+      "author": "Robert J. Sawyer",
+      "award": "Hugo Award",
+      "award_year": "2004",
+      "category": "Best Novel",
+      "position": "2004.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2004-hugo-awards/",
+      "title": "Humans"
+    },
+    {
+      "author": "Susanna Clarke",
+      "award": "Hugo Award",
+      "award_year": "2005",
+      "category": "Best Novel",
+      "position": "2005",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2005-hugo-awards/",
+      "title": "Jonathan Strange & Mr. Norrell"
+    },
+    {
+      "author": "Ian McDonald",
+      "award": "Hugo Award",
+      "award_year": "2005",
+      "category": "Best Novel",
+      "position": "2005.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2005-hugo-awards/",
+      "title": "River of Gods"
+    },
+    {
+      "author": "Iain M. Banks",
+      "award": "Hugo Award",
+      "award_year": "2005",
+      "category": "Best Novel",
+      "position": "2005.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2005-hugo-awards/",
+      "title": "The Algebraist"
+    },
+    {
+      "author": "Charles Stross",
+      "award": "Hugo Award",
+      "award_year": "2005",
+      "category": "Best Novel",
+      "position": "2005.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2005-hugo-awards/",
+      "title": "Iron Sunrise"
+    },
+    {
+      "author": "China Mi\u00e9ville",
+      "award": "Hugo Award",
+      "award_year": "2005",
+      "category": "Best Novel",
+      "position": "2005.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2005-hugo-awards/",
+      "title": "Iron Council"
+    },
+    {
+      "author": "Robert Charles Wilson",
+      "award": "Hugo Award",
+      "award_year": "2006",
+      "category": "Best Novel",
+      "position": "2006",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2006-hugo-awards/",
+      "title": "Spin"
+    },
+    {
+      "author": "Ken MacLeod",
+      "award": "Hugo Award",
+      "award_year": "2006",
+      "category": "Best Novel",
+      "position": "2006.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2006-hugo-awards/",
+      "title": "Learning the World"
+    },
+    {
+      "author": "George R. R. Martin",
+      "award": "Hugo Award",
+      "award_year": "2006",
+      "category": "Best Novel",
+      "position": "2006.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2006-hugo-awards/",
+      "title": "A Feast for Crows"
+    },
+    {
+      "author": "John Scalzi",
+      "award": "Hugo Award",
+      "award_year": "2006",
+      "category": "Best Novel",
+      "position": "2006.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2006-hugo-awards/",
+      "title": "Old Man\u2019s War"
+    },
+    {
+      "author": "Charles Stross",
+      "award": "Hugo Award",
+      "award_year": "2006",
+      "category": "Best Novel",
+      "position": "2006.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2006-hugo-awards/",
+      "title": "Accelerando"
+    },
+    {
+      "author": "Vernor Vinge",
+      "award": "Hugo Award",
+      "award_year": "2007",
+      "category": "Best Novel",
+      "position": "2007",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2007-hugo-awards/",
+      "title": "Rainbows End"
+    },
+    {
+      "author": "Charles Stross",
+      "award": "Hugo Award",
+      "award_year": "2007",
+      "category": "Best Novel",
+      "position": "2007.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2007-hugo-awards/",
+      "title": "Glasshouse"
+    },
+    {
+      "author": "Naomi Novik",
+      "award": "Hugo Award",
+      "award_year": "2007",
+      "category": "Best Novel",
+      "position": "2007.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2007-hugo-awards/",
+      "title": "His Majesty\u2019s Dragon"
+    },
+    {
+      "author": "Michael Flynn",
+      "award": "Hugo Award",
+      "award_year": "2007",
+      "category": "Best Novel",
+      "position": "2007.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2007-hugo-awards/",
+      "title": "Eifelheim"
+    },
+    {
+      "author": "Peter Watts",
+      "award": "Hugo Award",
+      "award_year": "2007",
+      "category": "Best Novel",
+      "position": "2007.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2007-hugo-awards/",
+      "title": "Blindsight"
+    },
+    {
+      "author": "Michael Chabon",
+      "award": "Hugo Award",
+      "award_year": "2008",
+      "category": "Best Novel",
+      "position": "2008",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2008-hugo-awards/",
+      "title": "The Yiddish Policemen\u2019s Union"
+    },
+    {
+      "author": "John Scalzi",
+      "award": "Hugo Award",
+      "award_year": "2008",
+      "category": "Best Novel",
+      "position": "2008.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2008-hugo-awards/",
+      "title": "The Last Colony"
+    },
+    {
+      "author": "Charles Stross",
+      "award": "Hugo Award",
+      "award_year": "2008",
+      "category": "Best Novel",
+      "position": "2008.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2008-hugo-awards/",
+      "title": "Halting State"
+    },
+    {
+      "author": "Robert J. Sawyer",
+      "award": "Hugo Award",
+      "award_year": "2008",
+      "category": "Best Novel",
+      "position": "2008.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2008-hugo-awards/",
+      "title": "Rollback"
+    },
+    {
+      "author": "Ian McDonald",
+      "award": "Hugo Award",
+      "award_year": "2008",
+      "category": "Best Novel",
+      "position": "2008.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2008-hugo-awards/",
+      "title": "Brasyl"
+    },
+    {
+      "author": "Neil Gaiman",
+      "award": "Hugo Award",
+      "award_year": "2009",
+      "category": "Best Novel",
+      "position": "2009",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2009-hugo-awards/",
+      "title": "The Graveyard Book"
+    },
+    {
+      "author": "Cory Doctorow",
+      "award": "Hugo Award",
+      "award_year": "2009",
+      "category": "Best Novel",
+      "position": "2009.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2009-hugo-awards/",
+      "title": "Little Brother"
+    },
+    {
+      "author": "Neal Stephenson",
+      "award": "Hugo Award",
+      "award_year": "2009",
+      "category": "Best Novel",
+      "position": "2009.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2009-hugo-awards/",
+      "title": "Anathem"
+    },
+    {
+      "author": "Charles Stross",
+      "award": "Hugo Award",
+      "award_year": "2009",
+      "category": "Best Novel",
+      "position": "2009.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2009-hugo-awards/",
+      "title": "Saturn\u2019s Children"
+    },
+    {
+      "author": "John Scalzi",
+      "award": "Hugo Award",
+      "award_year": "2009",
+      "category": "Best Novel",
+      "position": "2009.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2009-hugo-awards/",
+      "title": "Zoe\u2019s Tale"
+    },
+    {
+      "author": "China Mi\u00e9ville",
+      "award": "Hugo Award",
+      "award_year": "2010",
+      "category": "Best Novel",
+      "position": "2010",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2010-hugo-awards/",
+      "title": "The City & The City"
+    },
+    {
+      "author": "Paolo Bacigalupi",
+      "award": "Hugo Award",
+      "award_year": "2010",
+      "category": "Best Novel",
+      "position": "2010.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2010-hugo-awards/",
+      "title": "The Windup Girl"
+    },
+    {
+      "author": "Cherie Priest",
+      "award": "Hugo Award",
+      "award_year": "2010",
+      "category": "Best Novel",
+      "position": "2010.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2010-hugo-awards/",
+      "title": "Boneshaker"
+    },
+    {
+      "author": "Robert J. Sawyer",
+      "award": "Hugo Award",
+      "award_year": "2010",
+      "category": "Best Novel",
+      "position": "2010.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2010-hugo-awards/",
+      "title": "Wake"
+    },
+    {
+      "author": "Robert Charles Wilson",
+      "award": "Hugo Award",
+      "award_year": "2010",
+      "category": "Best Novel",
+      "position": "2010.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2010-hugo-awards/",
+      "title": "Julian Comstock: A Story of 22nd-Century America"
+    },
+    {
+      "author": "Catherynne M. Valente",
+      "award": "Hugo Award",
+      "award_year": "2010",
+      "category": "Best Novel",
+      "position": "2010.05",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2010-hugo-awards/",
+      "title": "Palimpsest"
+    },
+    {
+      "author": "Connie Willis",
+      "award": "Hugo Award",
+      "award_year": "2011",
+      "category": "Best Novel",
+      "position": "2011",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2011-hugo-awards/",
+      "title": "Blackout/All Clear"
+    },
+    {
+      "author": "Mira Grant",
+      "award": "Hugo Award",
+      "award_year": "2011",
+      "category": "Best Novel",
+      "position": "2011.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2011-hugo-awards/",
+      "title": "Feed"
+    },
+    {
+      "author": "Lois McMaster Bujold",
+      "award": "Hugo Award",
+      "award_year": "2011",
+      "category": "Best Novel",
+      "position": "2011.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2011-hugo-awards/",
+      "title": "Cryoburn"
+    },
+    {
+      "author": "N.K. Jemisin",
+      "award": "Hugo Award",
+      "award_year": "2011",
+      "category": "Best Novel",
+      "position": "2011.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2011-hugo-awards/",
+      "title": "The Hundred Thousand Kingdoms"
+    },
+    {
+      "author": "Ian McDonald",
+      "award": "Hugo Award",
+      "award_year": "2011",
+      "category": "Best Novel",
+      "position": "2011.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2011-hugo-awards/",
+      "title": "The Dervish House"
+    },
+    {
+      "author": "Jo Walton",
+      "award": "Hugo Award",
+      "award_year": "2012",
+      "category": "Best Novel",
+      "position": "2012",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2012-hugo-awards/",
+      "title": "Among Others"
+    },
+    {
+      "author": "China Mi\u00e9ville",
+      "award": "Hugo Award",
+      "award_year": "2012",
+      "category": "Best Novel",
+      "position": "2012.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2012-hugo-awards/",
+      "title": "Embassytown"
+    },
+    {
+      "author": "James S. A. Corey",
+      "award": "Hugo Award",
+      "award_year": "2012",
+      "category": "Best Novel",
+      "position": "2012.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2012-hugo-awards/",
+      "title": "Leviathan Wakes"
+    },
+    {
+      "author": "Mira Grant",
+      "award": "Hugo Award",
+      "award_year": "2012",
+      "category": "Best Novel",
+      "position": "2012.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2012-hugo-awards/",
+      "title": "Deadline"
+    },
+    {
+      "author": "George R. R. Martin",
+      "award": "Hugo Award",
+      "award_year": "2012",
+      "category": "Best Novel",
+      "position": "2012.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2012-hugo-awards/",
+      "title": "A Dance With Dragons"
+    },
+    {
+      "author": "John Scalzi",
+      "award": "Hugo Award",
+      "award_year": "2013",
+      "category": "Best Novel",
+      "position": "2013",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2013-hugo-awards/",
+      "title": "Redshirts: A Novel with Three Codas"
+    },
+    {
+      "author": "Lois McMaster Bujold",
+      "award": "Hugo Award",
+      "award_year": "2013",
+      "category": "Best Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2013-hugo-awards/",
+      "title": "Captain Vorpatril\u2019s Alliance"
+    },
+    {
+      "author": "Kim Stanley Robinson",
+      "award": "Hugo Award",
+      "award_year": "2013",
+      "category": "Best Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2013-hugo-awards/",
+      "title": "2312"
+    },
+    {
+      "author": "Saladin Ahmed",
+      "award": "Hugo Award",
+      "award_year": "2013",
+      "category": "Best Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2013-hugo-awards/",
+      "title": "Throne of the Crescent Moon"
+    },
+    {
+      "author": "Mira Grant",
+      "award": "Hugo Award",
+      "award_year": "2013",
+      "category": "Best Novel",
+      "position": "2013.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2013-hugo-awards/",
+      "title": "Blackout"
+    },
+    {
+      "author": "Ann Leckie",
+      "award": "Hugo Award",
+      "award_year": "2014",
+      "category": "Best Novel",
+      "position": "2014",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2014-hugo-awards/",
+      "title": "Ancillary Justice"
+    },
+    {
+      "author": "Charles Stross",
+      "award": "Hugo Award",
+      "award_year": "2014",
+      "category": "Best Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2014-hugo-awards/",
+      "title": "Neptune\u2019s Brood"
+    },
+    {
+      "author": "Mira Grant",
+      "award": "Hugo Award",
+      "award_year": "2014",
+      "category": "Best Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2014-hugo-awards/",
+      "title": "Parasite"
+    },
+    {
+      "author": "Robert Jordan and Brandon Sanderson",
+      "award": "Hugo Award",
+      "award_year": "2014",
+      "category": "Best Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2014-hugo-awards/",
+      "title": "The Wheel of Time"
+    },
+    {
+      "author": "Larry Correia",
+      "award": "Hugo Award",
+      "award_year": "2014",
+      "category": "Best Novel",
+      "position": "2014.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2014-hugo-awards/",
+      "title": "Warbound, Book III of the Grimnoir Chronicle s"
+    },
+    {
+      "author": "Cixin Liu",
+      "award": "Hugo Award",
+      "award_year": "2015",
+      "category": "Best Novel",
+      "position": "2015",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2015-hugo-awards/",
+      "title": "The Three Body Problem"
+    },
+    {
+      "author": "Katherine Addison",
+      "award": "Hugo Award",
+      "award_year": "2015",
+      "category": "Best Novel",
+      "position": "2015.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2015-hugo-awards/",
+      "title": "The Goblin Emperor"
+    },
+    {
+      "author": "Ann Leckie",
+      "award": "Hugo Award",
+      "award_year": "2015",
+      "category": "Best Novel",
+      "position": "2015.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2015-hugo-awards/",
+      "title": "Ancillary Sword"
+    },
+    {
+      "author": "Jim Butcher",
+      "award": "Hugo Award",
+      "award_year": "2015",
+      "category": "Best Novel",
+      "position": "2015.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2015-hugo-awards/",
+      "title": "Skin Game"
+    },
+    {
+      "author": "Kevin J. Anderson",
+      "award": "Hugo Award",
+      "award_year": "2015",
+      "category": "Best Novel",
+      "position": "2015.05",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2015-hugo-awards/",
+      "title": "The Dark Between the Stars"
+    },
+    {
+      "author": "N.K. Jemisin",
+      "award": "Hugo Award",
+      "award_year": "2016",
+      "category": "Best Novel",
+      "position": "2016",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2016-hugo-awards/",
+      "title": "The Fifth Season"
+    },
+    {
+      "author": "Naomi Novik",
+      "award": "Hugo Award",
+      "award_year": "2016",
+      "category": "Best Novel",
+      "position": "2016.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2016-hugo-awards/",
+      "title": "Uprooted"
+    },
+    {
+      "author": "Ann Leckie",
+      "award": "Hugo Award",
+      "award_year": "2016",
+      "category": "Best Novel",
+      "position": "2016.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2016-hugo-awards/",
+      "title": "Ancillary Mercy"
+    },
+    {
+      "author": "Neal Stephenson",
+      "award": "Hugo Award",
+      "award_year": "2016",
+      "category": "Best Novel",
+      "position": "2016.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2016-hugo-awards/",
+      "title": "Seveneves: A Novel"
+    },
+    {
+      "author": "Jim Butcher",
+      "award": "Hugo Award",
+      "award_year": "2016",
+      "category": "Best Novel",
+      "position": "2016.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2016-hugo-awards/",
+      "title": "The Cinder Spires: The Aeronaut\u2019s Windlass"
+    },
+    {
+      "author": "N. K. Jemisin",
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Novel",
+      "position": "2017",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/",
+      "title": "The Obelisk Gate"
+    },
+    {
+      "author": "Charlie Jane Anders",
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/",
+      "title": "All the Birds in the Sky"
+    },
+    {
+      "author": "Yoon Ha Lee",
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/",
+      "title": "Ninefox Gambit"
+    },
+    {
+      "author": "Becky Chambers",
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/",
+      "title": "A Closed and Common Orbit"
+    },
+    {
+      "author": "Ada Palmer",
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Novel",
+      "position": "2017.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/",
+      "title": "Too Like the Lightning"
+    },
+    {
+      "author": "Cixin Liu",
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Novel",
+      "position": "2017.05",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/",
+      "title": "Death\u2019s End"
+    },
+    {
+      "author": "N.K. Jemisin",
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Novel",
+      "position": "2018",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/",
+      "title": "The Stone Sky"
+    },
+    {
+      "author": "John Scalzi",
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/",
+      "title": "The Collapsing Empire"
+    },
+    {
+      "author": "Ann Leckie",
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/",
+      "title": "Provenance"
+    },
+    {
+      "author": "Mur Lafferty",
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/",
+      "title": "Six Wakes"
+    },
+    {
+      "author": "Yoon Ha Lee",
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Novel",
+      "position": "2018.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/",
+      "title": "Raven Stratagem"
+    },
+    {
+      "author": "Kim Stanley Robinson",
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Novel",
+      "position": "2018.05",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/",
+      "title": "New York 2140"
+    },
+    {
+      "author": "Mary Robinette Kowal",
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Novel",
+      "position": "2019",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/",
+      "title": "The Calculating Stars"
+    },
+    {
+      "author": "Naomi Novik",
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/",
+      "title": "Spinning Silver"
+    },
+    {
+      "author": "Becky Chambers",
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/",
+      "title": "Record of a Spaceborn Few"
+    },
+    {
+      "author": "Rebecca Roanhorse",
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/",
+      "title": "Trail of Lightning"
+    },
+    {
+      "author": "Yoon Ha Lee",
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/",
+      "title": "Revenant Gun"
+    },
+    {
+      "author": "Catherynne M. Valente",
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Novel",
+      "position": "2019.05",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/",
+      "title": "Space Opera"
+    },
+    {
+      "author": "Arkady Martine",
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Novel",
+      "position": "2020",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/",
+      "title": "A Memory Called Empire"
+    },
+    {
+      "author": "Seanan McGuire",
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/",
+      "title": "Middlegame"
+    },
+    {
+      "author": "Tamsyn Muir",
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/",
+      "title": "Gideon the Ninth"
+    },
+    {
+      "author": "Kameron Hurley",
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/",
+      "title": "The Light Brigade"
+    },
+    {
+      "author": "Charlie Jane Anders",
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/",
+      "title": "The City in the Middle of the Night"
+    },
+    {
+      "author": "Alix E. Harrow",
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Novel",
+      "position": "2020.05",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/",
+      "title": "The Ten Thousand Doors of January"
+    },
+    {
+      "author": "Martha Wells",
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Novel",
+      "position": "2021",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/",
+      "title": "Network Effect"
+    },
+    {
+      "author": "N.K. Jemisin",
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/",
+      "title": "The City We Became"
+    },
+    {
+      "author": "Susanna Clarke",
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/",
+      "title": "Piranesi"
+    },
+    {
+      "author": "Rebecca Roanhorse",
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/",
+      "title": "Black Sun"
+    },
+    {
+      "author": "Mary Robinette Kowal",
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/",
+      "title": "The Relentless Moon"
+    },
+    {
+      "author": "Tamsyn Muir",
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Novel",
+      "position": "2021.05",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/",
+      "title": "Harrow The Ninth"
+    },
+    {
+      "author": "Arkady Martine",
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Novel",
+      "position": "2022",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/",
+      "title": "A Desolation Called Peace"
+    },
+    {
+      "author": "Becky Chambers",
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/",
+      "title": "The Galaxy, and the Ground Within"
+    },
+    {
+      "author": "Ryka Aoki",
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/",
+      "title": "Light From Uncommon Stars"
+    },
+    {
+      "author": "P. Dj\u00e8l\u00ed Clark",
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/",
+      "title": "A Master of Djinn"
+    },
+    {
+      "author": "Andy Weir",
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/",
+      "title": "Project Hail Mary"
+    },
+    {
+      "author": "Shelley Parker-Chan",
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Novel",
+      "position": "2022.05",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/",
+      "title": "She Who Became the Sun"
+    },
+    {
+      "author": "T. Kingfisher",
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Novel",
+      "position": "2023",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/",
+      "title": "Nettle & Bone"
+    },
+    {
+      "author": "Silvia Moreno-Garcia",
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/",
+      "title": "The Daughter of Doctor Moreau"
+    },
+    {
+      "author": "John Scalzi",
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/",
+      "title": "The Kaiju Preservation Society"
+    },
+    {
+      "author": "Travis Baldree",
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/",
+      "title": "Legends & Lattes"
+    },
+    {
+      "author": "Tamsyn Muir",
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/",
+      "title": "Nona the Ninth"
+    },
+    {
+      "author": "Mary Robinette Kowal",
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Novel",
+      "position": "2023.05",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/",
+      "title": "The Spare Man"
+    },
+    {
+      "author": "Emily Tesh",
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Novel",
+      "position": "2024",
+      "result": "winner",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/",
+      "title": "Some Desperate Glory"
+    },
+    {
+      "author": "Shannon Chakraborty",
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/",
+      "title": "The Adventures of Amina al-Sirafi"
+    },
+    {
+      "author": "Vajra Chandrasekera",
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/",
+      "title": "The Saint of Bright Doors"
+    },
+    {
+      "author": "John Scalzi",
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/",
+      "title": "Starter Villain"
+    },
+    {
+      "author": "Ann Leckie",
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/",
+      "title": "Translation State"
+    },
+    {
+      "author": "Martha Wells",
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Novel",
+      "position": "2024.05",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/",
+      "title": "Witch King"
+    },
+    {
+      "author": "Robert Jackson Bennett",
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Novel",
+      "position": "2025",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Hugo_Awards_2025",
+      "title": "The Tainted Cup"
+    },
+    {
+      "author": "Adrian Tchaikovsky",
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/",
+      "title": "Alien Clay"
+    },
+    {
+      "author": "Kaliane Bradley",
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/",
+      "title": "The Ministry of Time"
+    },
+    {
+      "author": "Adrian Tchaikovsky",
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/",
+      "title": "Service Model"
+    },
+    {
+      "author": "John Wiswell",
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/",
+      "title": "Someone You Can Build a Nest In"
+    },
+    {
+      "author": "T. Kingfisher",
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Novel",
+      "position": "2025.05",
+      "result": "nominee",
+      "source_url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/",
+      "title": "A Sorceress Comes to Call"
+    }
+  ],
+  "fetched_at": "2026-05-10T21:19:41Z",
+  "list_id": "hugo_awards_novel",
+  "list_name": "Hugo Awards - Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "hugo_awards_novel",
+  "schema_version": 1,
+  "source_url": "https://www.thehugoawards.org/hugo-history/"
+}

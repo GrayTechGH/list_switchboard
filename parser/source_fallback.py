@@ -22,20 +22,38 @@ class SourceAttempt:
     result is good enough to stop trying fallback sources.
   """
 
-  def __init__(self, label, url, parser, source_rank=0, usability_check=None):
+  def __init__(
+      self, label, url, parser, source_rank=0, usability_check=None,
+      user_agent=None):
     self.label = label
     self.url = url
     self.parser = parser
     self.source_rank = source_rank
     self.usability_check = usability_check
+    self.user_agent = user_agent
 
   def parse(self, html, fetch_url=None, log=None, progress=None):
     parser = self.parser
+    fetch_url = self.fetch_url(fetch_url)
     if hasattr(parser, 'parse'):
       return parser.parse(
         html, self.url, fetch_url=fetch_url, log=log, progress=progress)
     return parser(
       html, self.url, fetch_url=fetch_url, log=log, progress=progress)
+
+  def fetch_url(self, fetch_url):
+    if fetch_url is None or not self.user_agent:
+      return fetch_url
+
+    def wrapped(url):
+      try:
+        return fetch_url(url, user_agent=self.user_agent)
+      except TypeError as err:
+        if 'user_agent' not in str(err) and 'keyword' not in str(err):
+          raise
+        return fetch_url(url)
+
+    return wrapped
 
   def is_usable(self, parsed):
     if self.usability_check is not None:
@@ -110,7 +128,7 @@ class SourceFallbackRunner:
       try:
         if before_fetch is not None:
           before_fetch(attempt.url)
-        html = fetch_url(attempt.url)
+        html = attempt.fetch_url(fetch_url)(attempt.url)
         if after_fetch is not None:
           after_fetch(attempt.url, html)
         if before_parse is not None:

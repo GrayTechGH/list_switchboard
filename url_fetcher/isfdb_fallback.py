@@ -32,6 +32,10 @@ except ImportError:
 
 
 ISFDB_AWARD_TYPE_URL = 'https://www.isfdb.org/cgi-bin/awardtype.cgi?{}'
+ISFDB_USER_AGENT = (
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
+  'AppleWebKit/537.36 Chrome/125 Safari/537.36'
+)
 
 
 class SFADBISFDYAwardFallbackMixin:
@@ -69,7 +73,8 @@ class SFADBISFDYAwardFallbackMixin:
         isfdb_url,
         lambda html, url, **kwargs: self.parse_isfdb_award_type(
           html, url, **kwargs),
-        source_rank=1))
+        source_rank=1,
+        user_agent=ISFDB_USER_AGENT))
     return tuple(attempts)
 
   def source_choices(self):

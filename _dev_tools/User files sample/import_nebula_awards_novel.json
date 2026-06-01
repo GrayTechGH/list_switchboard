@@ -1,0 +1,3860 @@
+{
+  "append_state": {
+    "entry_count": 384,
+    "last_entry_key": "when we were real|daryl gregory",
+    "last_position": "2026.07",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "author": "Frank Herbert",
+      "award": "Best Novel",
+      "award_year": "1966",
+      "category": "Best Novel",
+      "position": "1966",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1966",
+      "title": "Dune"
+    },
+    {
+      "author": "Clifford D. Simak",
+      "award": "Best Novel",
+      "award_year": "1966",
+      "category": "Best Novel",
+      "position": "1966.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1966",
+      "title": "All Flesh Is Grass"
+    },
+    {
+      "author": "Ted Thomas & Kate Wilhelm",
+      "award": "Best Novel",
+      "award_year": "1966",
+      "category": "Best Novel",
+      "position": "1966.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1966",
+      "title": "The Clone"
+    },
+    {
+      "author": "Philip K. Dick",
+      "award": "Best Novel",
+      "award_year": "1966",
+      "category": "Best Novel",
+      "position": "1966.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1966",
+      "title": "Dr. Bloodmoney"
+    },
+    {
+      "author": "James White",
+      "award": "Best Novel",
+      "award_year": "1966",
+      "category": "Best Novel",
+      "position": "1966.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1966",
+      "title": "The Escape Orbit"
+    },
+    {
+      "author": "Thomas M. Disch",
+      "award": "Best Novel",
+      "award_year": "1966",
+      "category": "Best Novel",
+      "position": "1966.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1966",
+      "title": "The Genocides"
+    },
+    {
+      "author": "William S. Burroughs",
+      "award": "Best Novel",
+      "award_year": "1966",
+      "category": "Best Novel",
+      "position": "1966.06",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1966",
+      "title": "Nova Express"
+    },
+    {
+      "author": "Keith Laumer",
+      "award": "Best Novel",
+      "award_year": "1966",
+      "category": "Best Novel",
+      "position": "1966.07",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1966",
+      "title": "A Plague of Demons"
+    },
+    {
+      "author": "Avram Davidson",
+      "award": "Best Novel",
+      "award_year": "1966",
+      "category": "Best Novel",
+      "position": "1966.08",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1966",
+      "title": "Rogue Dragon"
+    },
+    {
+      "author": "G. C. Edmondson",
+      "award": "Best Novel",
+      "award_year": "1966",
+      "category": "Best Novel",
+      "position": "1966.09",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1966",
+      "title": "The Ship That Sailed the Time Stream"
+    },
+    {
+      "author": "Poul Anderson",
+      "award": "Best Novel",
+      "award_year": "1966",
+      "category": "Best Novel",
+      "position": "1966.10",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1966",
+      "title": "The Star Fox"
+    },
+    {
+      "author": "Philip K. Dick",
+      "award": "Best Novel",
+      "award_year": "1966",
+      "category": "Best Novel",
+      "position": "1966.11",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1966",
+      "title": "The Three Stigmata of Palmer Eldritch"
+    },
+    {
+      "author": "Samuel R. Delany",
+      "award": "Best Novel",
+      "award_year": "1967",
+      "category": "Best Novel",
+      "position": "1967",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1967",
+      "title": "Babel-17"
+    },
+    {
+      "author": "Daniel Keyes",
+      "award": "Best Novel",
+      "award_year": "1967",
+      "category": "Best Novel",
+      "position": "1967",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1967",
+      "title": "Flowers for Algernon"
+    },
+    {
+      "author": "Robert A. Heinlein",
+      "award": "Best Novel",
+      "award_year": "1967",
+      "category": "Best Novel",
+      "position": "1967.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1967",
+      "title": "The Moon Is a Harsh Mistress"
+    },
+    {
+      "author": "Samuel R. Delany",
+      "award": "Best Novel",
+      "award_year": "1968",
+      "category": "Best Novel",
+      "position": "1968",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1968",
+      "title": "The Einstein Intersection"
+    },
+    {
+      "author": "Piers Anthony",
+      "award": "Best Novel",
+      "award_year": "1968",
+      "category": "Best Novel",
+      "position": "1968.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1968",
+      "title": "Chthon"
+    },
+    {
+      "author": "Hayden Howard",
+      "award": "Best Novel",
+      "award_year": "1968",
+      "category": "Best Novel",
+      "position": "1968.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1968",
+      "title": "The Eskimo Invasion"
+    },
+    {
+      "author": "Roger Zelazny",
+      "award": "Best Novel",
+      "award_year": "1968",
+      "category": "Best Novel",
+      "position": "1968.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1968",
+      "title": "Lord of Light"
+    },
+    {
+      "author": "Robert Silverberg",
+      "award": "Best Novel",
+      "award_year": "1968",
+      "category": "Best Novel",
+      "position": "1968.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1968",
+      "title": "Thorns"
+    },
+    {
+      "author": "Alexei Panshin",
+      "award": "Best Novel",
+      "award_year": "1969",
+      "category": "Best Novel",
+      "position": "1969",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1969",
+      "title": "Rite of Passage"
+    },
+    {
+      "author": "James Blish",
+      "award": "Best Novel",
+      "award_year": "1969",
+      "category": "Best Novel",
+      "position": "1969.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1969",
+      "title": "Black Easter"
+    },
+    {
+      "author": "Philip K. Dick",
+      "award": "Best Novel",
+      "award_year": "1969",
+      "category": "Best Novel",
+      "position": "1969.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1969",
+      "title": "Do Androids Dream of Electric Sheep?"
+    },
+    {
+      "author": "Robert Silverberg",
+      "award": "Best Novel",
+      "award_year": "1969",
+      "category": "Best Novel",
+      "position": "1969.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1969",
+      "title": "The Masks of Time"
+    },
+    {
+      "author": "R. A. Lafferty",
+      "award": "Best Novel",
+      "award_year": "1969",
+      "category": "Best Novel",
+      "position": "1969.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1969",
+      "title": "Past Master"
+    },
+    {
+      "author": "Joanna Russ",
+      "award": "Best Novel",
+      "award_year": "1969",
+      "category": "Best Novel",
+      "position": "1969.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1969",
+      "title": "Picnic on Paradise"
+    },
+    {
+      "author": "John Brunner",
+      "award": "Best Novel",
+      "award_year": "1969",
+      "category": "Best Novel",
+      "position": "1969.06",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1969",
+      "title": "Stand on Zanzibar"
+    },
+    {
+      "author": "Ursula K. Le Guin",
+      "award": "Best Novel",
+      "award_year": "1970",
+      "category": "Best Novel",
+      "position": "1970",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1970",
+      "title": "The Left Hand of Darkness"
+    },
+    {
+      "author": "Norman Spinrad",
+      "award": "Best Novel",
+      "award_year": "1970",
+      "category": "Best Novel",
+      "position": "1970.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1970",
+      "title": "Bug Jack Barron"
+    },
+    {
+      "author": "Roger Zelazny",
+      "award": "Best Novel",
+      "award_year": "1970",
+      "category": "Best Novel",
+      "position": "1970.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1970",
+      "title": "Isle of the Dead"
+    },
+    {
+      "author": "John Brunner",
+      "award": "Best Novel",
+      "award_year": "1970",
+      "category": "Best Novel",
+      "position": "1970.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1970",
+      "title": "The Jagged Orbit"
+    },
+    {
+      "author": "Kurt Vonnegut, Jr.",
+      "award": "Best Novel",
+      "award_year": "1970",
+      "category": "Best Novel",
+      "position": "1970.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1970",
+      "title": "Slaughterhouse-Five"
+    },
+    {
+      "author": "Robert Silverberg",
+      "award": "Best Novel",
+      "award_year": "1970",
+      "category": "Best Novel",
+      "position": "1970.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1970",
+      "title": "Up the Line"
+    },
+    {
+      "author": "Larry Niven",
+      "award": "Best Novel",
+      "award_year": "1971",
+      "category": "Best Novel",
+      "position": "1971",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1971",
+      "title": "Ringworld"
+    },
+    {
+      "author": "Joanna Russ",
+      "award": "Best Novel",
+      "award_year": "1971",
+      "category": "Best Novel",
+      "position": "1971.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1971",
+      "title": "And Chaos Died"
+    },
+    {
+      "author": "R. A. Lafferty",
+      "award": "Best Novel",
+      "award_year": "1971",
+      "category": "Best Novel",
+      "position": "1971.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1971",
+      "title": "Fourth Mansions"
+    },
+    {
+      "author": "D. G. Compton",
+      "award": "Best Novel",
+      "award_year": "1971",
+      "category": "Best Novel",
+      "position": "1971.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1971",
+      "title": "The Steel Crocodile"
+    },
+    {
+      "author": "Robert Silverberg",
+      "award": "Best Novel",
+      "award_year": "1971",
+      "category": "Best Novel",
+      "position": "1971.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1971",
+      "title": "Tower of Glass"
+    },
+    {
+      "author": "Wilson Tucker",
+      "award": "Best Novel",
+      "award_year": "1971",
+      "category": "Best Novel",
+      "position": "1971.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1971",
+      "title": "The Year of the Quiet Sun"
+    },
+    {
+      "author": "Robert Silverberg",
+      "award": "Best Novel",
+      "award_year": "1972",
+      "category": "Best Novel",
+      "position": "1972",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1972",
+      "title": "A Time of Changes"
+    },
+    {
+      "author": "Poul Anderson",
+      "award": "Best Novel",
+      "award_year": "1972",
+      "category": "Best Novel",
+      "position": "1972.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1972",
+      "title": "The Byworlder"
+    },
+    {
+      "author": "R. A. Lafferty",
+      "award": "Best Novel",
+      "award_year": "1972",
+      "category": "Best Novel",
+      "position": "1972.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1972",
+      "title": "The Devil Is Dead"
+    },
+    {
+      "author": "T. J. Bass",
+      "award": "Best Novel",
+      "award_year": "1972",
+      "category": "Best Novel",
+      "position": "1972.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1972",
+      "title": "Half Past Human"
+    },
+    {
+      "author": "Ursula K. Le Guin",
+      "award": "Best Novel",
+      "award_year": "1972",
+      "category": "Best Novel",
+      "position": "1972.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1972",
+      "title": "The Lathe of Heaven"
+    },
+    {
+      "author": "Kate Wilhelm",
+      "award": "Best Novel",
+      "award_year": "1972",
+      "category": "Best Novel",
+      "position": "1972.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1972",
+      "title": "Margaret and I"
+    },
+    {
+      "author": "Isaac Asimov",
+      "award": "Best Novel",
+      "award_year": "1973",
+      "category": "Best Novel",
+      "position": "1973",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1973",
+      "title": "The Gods Themselves"
+    },
+    {
+      "author": "Robert Silverberg",
+      "award": "Best Novel",
+      "award_year": "1973",
+      "category": "Best Novel",
+      "position": "1973.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1973",
+      "title": "The Book of Skulls"
+    },
+    {
+      "author": "Robert Silverberg",
+      "award": "Best Novel",
+      "award_year": "1973",
+      "category": "Best Novel",
+      "position": "1973.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1973",
+      "title": "Dying Inside"
+    },
+    {
+      "author": "Norman Spinrad",
+      "award": "Best Novel",
+      "award_year": "1973",
+      "category": "Best Novel",
+      "position": "1973.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1973",
+      "title": "The Iron Dream"
+    },
+    {
+      "author": "John Brunner",
+      "award": "Best Novel",
+      "award_year": "1973",
+      "category": "Best Novel",
+      "position": "1973.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1973",
+      "title": "The Sheep Look Up"
+    },
+    {
+      "author": "George Alec Effinger",
+      "award": "Best Novel",
+      "award_year": "1973",
+      "category": "Best Novel",
+      "position": "1973.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1973",
+      "title": "What Entropy Means to Me"
+    },
+    {
+      "author": "David Gerrold",
+      "award": "Best Novel",
+      "award_year": "1973",
+      "category": "Best Novel",
+      "position": "1973.06",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1973",
+      "title": "When Harlie Was One"
+    },
+    {
+      "author": "Arthur C. Clarke",
+      "award": "Best Novel",
+      "award_year": "1974",
+      "category": "Best Novel",
+      "position": "1974",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1974",
+      "title": "Rendezvous with Rama"
+    },
+    {
+      "author": "Thomas Pynchon",
+      "award": "Best Novel",
+      "award_year": "1974",
+      "category": "Best Novel",
+      "position": "1974.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1974",
+      "title": "Gravity's Rainbow"
+    },
+    {
+      "author": "David Gerrold",
+      "award": "Best Novel",
+      "award_year": "1974",
+      "category": "Best Novel",
+      "position": "1974.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1974",
+      "title": "The Man Who Folded Himself"
+    },
+    {
+      "author": "Poul Anderson",
+      "award": "Best Novel",
+      "award_year": "1974",
+      "category": "Best Novel",
+      "position": "1974.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1974",
+      "title": "The People of the Wind"
+    },
+    {
+      "author": "Robert A. Heinlein",
+      "award": "Best Novel",
+      "award_year": "1974",
+      "category": "Best Novel",
+      "position": "1974.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1974",
+      "title": "Time Enough for Love"
+    },
+    {
+      "author": "Ursula K. Le Guin",
+      "award": "Best Novel",
+      "award_year": "1975",
+      "category": "Best Novel",
+      "position": "1975",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1975",
+      "title": "The Dispossessed"
+    },
+    {
+      "author": "Thomas M. Disch",
+      "award": "Best Novel",
+      "award_year": "1975",
+      "category": "Best Novel",
+      "position": "1975.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1975",
+      "title": "334"
+    },
+    {
+      "author": "Philip K. Dick",
+      "award": "Best Novel",
+      "award_year": "1975",
+      "category": "Best Novel",
+      "position": "1975.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1975",
+      "title": "Flow My Tears, the Policeman Said"
+    },
+    {
+      "author": "T. J. Bass",
+      "award": "Best Novel",
+      "award_year": "1975",
+      "category": "Best Novel",
+      "position": "1975.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1975",
+      "title": "The Godwhale"
+    },
+    {
+      "author": "Joe Haldeman",
+      "award": "Best Novel",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1976",
+      "title": "The Forever War"
+    },
+    {
+      "author": "Arthur Byron Cover",
+      "award": "Best Novel",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1976",
+      "title": "Autumn Angels"
+    },
+    {
+      "author": "Tanith Lee",
+      "award": "Best Novel",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1976",
+      "title": "The Birthgrave"
+    },
+    {
+      "author": "Alfred Bester",
+      "award": "Best Novel",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1976",
+      "title": "The Computer Connection"
+    },
+    {
+      "author": "Samuel R. Delany",
+      "award": "Best Novel",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1976",
+      "title": "Dhalgren"
+    },
+    {
+      "author": "Roger Zelazny",
+      "award": "Best Novel",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1976",
+      "title": "Doorways in the Sand"
+    },
+    {
+      "author": "Ian Watson",
+      "award": "Best Novel",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.06",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1976",
+      "title": "The Embedding"
+    },
+    {
+      "author": "Vonda N. McIntyre",
+      "award": "Best Novel",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.07",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1976",
+      "title": "The Exile Waiting"
+    },
+    {
+      "author": "Joanna Russ",
+      "award": "Best Novel",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.08",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1976",
+      "title": "The Female Man"
+    },
+    {
+      "author": "Michael Bishop",
+      "award": "Best Novel",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.09",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1976",
+      "title": "A Funeral for the Eyes of Fire"
+    },
+    {
+      "author": "Barry N. Malzberg",
+      "award": "Best Novel",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.10",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1976",
+      "title": "Guernica Night"
+    },
+    {
+      "author": "Marion Zimmer Bradley",
+      "award": "Best Novel",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.11",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1976",
+      "title": "The Heritage of Hastur"
+    },
+    {
+      "author": "Italo Calvino",
+      "award": "Best Novel",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.12",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1976",
+      "title": "Invisible Cities"
+    },
+    {
+      "author": "Poul Anderson",
+      "award": "Best Novel",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.13",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1976",
+      "title": "A Midsummer Tempest"
+    },
+    {
+      "author": "Katherine MacLean",
+      "award": "Best Novel",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.14",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1976",
+      "title": "Missing Man"
+    },
+    {
+      "author": "Larry Niven & Jerry Pournelle",
+      "award": "Best Novel",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.15",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1976",
+      "title": "The Mote in God's Eye"
+    },
+    {
+      "author": "E. L. Doctorow",
+      "award": "Best Novel",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.16",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1976",
+      "title": "Ragtime"
+    },
+    {
+      "author": "Robert Silverberg",
+      "award": "Best Novel",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.17",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1976",
+      "title": "The Stochastic Man"
+    },
+    {
+      "author": "Frederik Pohl",
+      "award": "Best Novel",
+      "award_year": "1977",
+      "category": "Best Novel",
+      "position": "1977",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1977",
+      "title": "Man Plus"
+    },
+    {
+      "author": "Larry Niven & Jerry Pournelle",
+      "award": "Best Novel",
+      "award_year": "1977",
+      "category": "Best Novel",
+      "position": "1977.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1977",
+      "title": "Inferno"
+    },
+    {
+      "author": "Marta Randall",
+      "award": "Best Novel",
+      "award_year": "1977",
+      "category": "Best Novel",
+      "position": "1977.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1977",
+      "title": "Islands"
+    },
+    {
+      "author": "Robert Silverberg",
+      "award": "Best Novel",
+      "award_year": "1977",
+      "category": "Best Novel",
+      "position": "1977.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1977",
+      "title": "Shadrach in the Furnace"
+    },
+    {
+      "author": "Samuel R. Delany",
+      "award": "Best Novel",
+      "award_year": "1977",
+      "category": "Best Novel",
+      "position": "1977.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1977",
+      "title": "Triton"
+    },
+    {
+      "author": "Kate Wilhelm",
+      "award": "Best Novel",
+      "award_year": "1977",
+      "category": "Best Novel",
+      "position": "1977.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1977",
+      "title": "Where Late the Sweet Birds Sang"
+    },
+    {
+      "author": "Frederik Pohl",
+      "award": "Best Novel",
+      "award_year": "1978",
+      "category": "Best Novel",
+      "position": "1978",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1978",
+      "title": "Gateway"
+    },
+    {
+      "author": "Terry Carr",
+      "award": "Best Novel",
+      "award_year": "1978",
+      "category": "Best Novel",
+      "position": "1978.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1978",
+      "title": "Cirque"
+    },
+    {
+      "author": "Gregory Benford",
+      "award": "Best Novel",
+      "award_year": "1978",
+      "category": "Best Novel",
+      "position": "1978.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1978",
+      "title": "In the Ocean of Night"
+    },
+    {
+      "author": "David Gerrold",
+      "award": "Best Novel",
+      "award_year": "1978",
+      "category": "Best Novel",
+      "position": "1978.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1978",
+      "title": "Moonstar Odyssey"
+    },
+    {
+      "author": "Richard A. Lupoff",
+      "award": "Best Novel",
+      "award_year": "1978",
+      "category": "Best Novel",
+      "position": "1978.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1978",
+      "title": "Sword of the Demon"
+    },
+    {
+      "author": "Vonda N. McIntyre",
+      "award": "Best Novel",
+      "award_year": "1979",
+      "category": "Best Novel",
+      "position": "1979",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1979",
+      "title": "Dreamsnake"
+    },
+    {
+      "author": "Tom Reamy",
+      "award": "Best Novel",
+      "award_year": "1979",
+      "category": "Best Novel",
+      "position": "1979.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1979",
+      "title": "Blind Voices"
+    },
+    {
+      "author": "C. J. Cherryh",
+      "award": "Best Novel",
+      "award_year": "1979",
+      "category": "Best Novel",
+      "position": "1979.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1979",
+      "title": "The Faded Sun: Kesrith"
+    },
+    {
+      "author": "Gore Vidal",
+      "award": "Best Novel",
+      "award_year": "1979",
+      "category": "Best Novel",
+      "position": "1979.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1979",
+      "title": "Kalki"
+    },
+    {
+      "author": "Gardner Dozois",
+      "award": "Best Novel",
+      "award_year": "1979",
+      "category": "Best Novel",
+      "position": "1979.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1979",
+      "title": "Strangers"
+    },
+    {
+      "author": "Arthur C. Clarke",
+      "award": "Best Novel",
+      "award_year": "1980",
+      "category": "Best Novel",
+      "position": "1980",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1980",
+      "title": "The Fountains of Paradise"
+    },
+    {
+      "author": "Frederik Pohl",
+      "award": "Best Novel",
+      "award_year": "1980",
+      "category": "Best Novel",
+      "position": "1980.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1980",
+      "title": "Jem"
+    },
+    {
+      "author": "Kate Wilhelm",
+      "award": "Best Novel",
+      "award_year": "1980",
+      "category": "Best Novel",
+      "position": "1980.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1980",
+      "title": "Juniper Time"
+    },
+    {
+      "author": "Thomas M. Disch",
+      "award": "Best Novel",
+      "award_year": "1980",
+      "category": "Best Novel",
+      "position": "1980.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1980",
+      "title": "On Wings of Song"
+    },
+    {
+      "author": "Richard Cowper",
+      "award": "Best Novel",
+      "award_year": "1980",
+      "category": "Best Novel",
+      "position": "1980.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1980",
+      "title": "The Road to Corlay"
+    },
+    {
+      "author": "John Varley",
+      "award": "Best Novel",
+      "award_year": "1980",
+      "category": "Best Novel",
+      "position": "1980.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1980",
+      "title": "Titan"
+    },
+    {
+      "author": "Gregory Benford",
+      "award": "Best Novel",
+      "award_year": "1981",
+      "category": "Best Novel",
+      "position": "1981",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1981",
+      "title": "Timescape"
+    },
+    {
+      "author": "Frederik Pohl",
+      "award": "Best Novel",
+      "award_year": "1981",
+      "category": "Best Novel",
+      "position": "1981.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1981",
+      "title": "Beyond the Blue Event Horizon"
+    },
+    {
+      "author": "Walter S. Tevis",
+      "award": "Best Novel",
+      "award_year": "1981",
+      "category": "Best Novel",
+      "position": "1981.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1981",
+      "title": "Mockingbird"
+    },
+    {
+      "author": "Robert Stallman",
+      "award": "Best Novel",
+      "award_year": "1981",
+      "category": "Best Novel",
+      "position": "1981.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1981",
+      "title": "The Orphan"
+    },
+    {
+      "author": "Gene Wolfe",
+      "award": "Best Novel",
+      "award_year": "1981",
+      "category": "Best Novel",
+      "position": "1981.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1981",
+      "title": "The Shadow of the Torturer"
+    },
+    {
+      "author": "Joan D. Vinge",
+      "award": "Best Novel",
+      "award_year": "1981",
+      "category": "Best Novel",
+      "position": "1981.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1981",
+      "title": "The Snow Queen"
+    },
+    {
+      "author": "Gene Wolfe",
+      "award": "Best Novel",
+      "award_year": "1982",
+      "category": "Best Novel",
+      "position": "1982",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1982",
+      "title": "The Claw of the Conciliator"
+    },
+    {
+      "author": "John Crowley",
+      "award": "Best Novel",
+      "award_year": "1982",
+      "category": "Best Novel",
+      "position": "1982.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1982",
+      "title": "Little, Big"
+    },
+    {
+      "author": "Julian May",
+      "award": "Best Novel",
+      "award_year": "1982",
+      "category": "Best Novel",
+      "position": "1982.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1982",
+      "title": "The Many-Colored Land"
+    },
+    {
+      "author": "A. A. Attanasio",
+      "award": "Best Novel",
+      "award_year": "1982",
+      "category": "Best Novel",
+      "position": "1982.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1982",
+      "title": "Radix"
+    },
+    {
+      "author": "Russell Hoban",
+      "award": "Best Novel",
+      "award_year": "1982",
+      "category": "Best Novel",
+      "position": "1982.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1982",
+      "title": "Riddley Walker"
+    },
+    {
+      "author": "Suzy McKee Charnas",
+      "award": "Best Novel",
+      "award_year": "1982",
+      "category": "Best Novel",
+      "position": "1982.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1982",
+      "title": "The Vampire Tapestry"
+    },
+    {
+      "author": "Michael Bishop",
+      "award": "Best Novel",
+      "award_year": "1983",
+      "category": "Best Novel",
+      "position": "1983",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1983",
+      "title": "No Enemy But Time"
+    },
+    {
+      "author": "Isaac Asimov",
+      "award": "Best Novel",
+      "award_year": "1983",
+      "category": "Best Novel",
+      "position": "1983.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1983",
+      "title": "Foundation's Edge"
+    },
+    {
+      "author": "Robert A. Heinlein",
+      "award": "Best Novel",
+      "award_year": "1983",
+      "category": "Best Novel",
+      "position": "1983.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1983",
+      "title": "Friday"
+    },
+    {
+      "author": "Brian W. Aldiss",
+      "award": "Best Novel",
+      "award_year": "1983",
+      "category": "Best Novel",
+      "position": "1983.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1983",
+      "title": "Helliconia Spring"
+    },
+    {
+      "author": "Gene Wolfe",
+      "award": "Best Novel",
+      "award_year": "1983",
+      "category": "Best Novel",
+      "position": "1983.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1983",
+      "title": "The Sword of the Lictor"
+    },
+    {
+      "author": "Philip K. Dick",
+      "award": "Best Novel",
+      "award_year": "1983",
+      "category": "Best Novel",
+      "position": "1983.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1983",
+      "title": "The Transmigration of Timothy Archer"
+    },
+    {
+      "author": "David Brin",
+      "award": "Best Novel",
+      "award_year": "1984",
+      "category": "Best Novel",
+      "position": "1984",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1984",
+      "title": "Startide Rising"
+    },
+    {
+      "author": "Gregory Benford",
+      "award": "Best Novel",
+      "award_year": "1984",
+      "category": "Best Novel",
+      "position": "1984.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1984",
+      "title": "Against Infinity"
+    },
+    {
+      "author": "Gene Wolfe",
+      "award": "Best Novel",
+      "award_year": "1984",
+      "category": "Best Novel",
+      "position": "1984.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1984",
+      "title": "The Citadel of the Autarch"
+    },
+    {
+      "author": "Jack Vance",
+      "award": "Best Novel",
+      "award_year": "1984",
+      "category": "Best Novel",
+      "position": "1984.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1984",
+      "title": "Lyonesse"
+    },
+    {
+      "author": "R. A. MacAvoy",
+      "award": "Best Novel",
+      "award_year": "1984",
+      "category": "Best Novel",
+      "position": "1984.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1984",
+      "title": "Tea with the Black Dragon"
+    },
+    {
+      "author": "Norman Spinrad",
+      "award": "Best Novel",
+      "award_year": "1984",
+      "category": "Best Novel",
+      "position": "1984.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1984",
+      "title": "The Void Captain's Tale"
+    },
+    {
+      "author": "William Gibson",
+      "award": "Best Novel",
+      "award_year": "1985",
+      "category": "Best Novel",
+      "position": "1985",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1985",
+      "title": "Neuromancer"
+    },
+    {
+      "author": "Lewis Shiner",
+      "award": "Best Novel",
+      "award_year": "1985",
+      "category": "Best Novel",
+      "position": "1985.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1985",
+      "title": "Frontera"
+    },
+    {
+      "author": "Larry Niven",
+      "award": "Best Novel",
+      "award_year": "1985",
+      "category": "Best Novel",
+      "position": "1985.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1985",
+      "title": "The Integral Trees"
+    },
+    {
+      "author": "Robert A. Heinlein",
+      "award": "Best Novel",
+      "award_year": "1985",
+      "category": "Best Novel",
+      "position": "1985.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1985",
+      "title": "Job: A Comedy of Justice"
+    },
+    {
+      "author": "Jack Dann",
+      "award": "Best Novel",
+      "award_year": "1985",
+      "category": "Best Novel",
+      "position": "1985.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1985",
+      "title": "The Man Who Melted"
+    },
+    {
+      "author": "Kim Stanley Robinson",
+      "award": "Best Novel",
+      "award_year": "1985",
+      "category": "Best Novel",
+      "position": "1985.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1985",
+      "title": "The Wild Shore"
+    },
+    {
+      "author": "Orson Scott Card",
+      "award": "Best Novel",
+      "award_year": "1986",
+      "category": "Best Novel",
+      "position": "1986",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1986",
+      "title": "Ender's Game"
+    },
+    {
+      "author": "Greg Bear",
+      "award": "Best Novel",
+      "award_year": "1986",
+      "category": "Best Novel",
+      "position": "1986.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1986",
+      "title": "Blood Music"
+    },
+    {
+      "author": "Tim Powers",
+      "award": "Best Novel",
+      "award_year": "1986",
+      "category": "Best Novel",
+      "position": "1986.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1986",
+      "title": "Dinner at Deviant's Palace"
+    },
+    {
+      "author": "Brian W. Aldiss",
+      "award": "Best Novel",
+      "award_year": "1986",
+      "category": "Best Novel",
+      "position": "1986.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1986",
+      "title": "Helliconia Winter"
+    },
+    {
+      "author": "David Brin",
+      "award": "Best Novel",
+      "award_year": "1986",
+      "category": "Best Novel",
+      "position": "1986.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1986",
+      "title": "The Postman"
+    },
+    {
+      "author": "Barry N. Malzberg",
+      "award": "Best Novel",
+      "award_year": "1986",
+      "category": "Best Novel",
+      "position": "1986.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1986",
+      "title": "The Remaking of Sigmund Freud"
+    },
+    {
+      "author": "Bruce Sterling",
+      "award": "Best Novel",
+      "award_year": "1986",
+      "category": "Best Novel",
+      "position": "1986.06",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1986",
+      "title": "Schismatrix"
+    },
+    {
+      "author": "Orson Scott Card",
+      "award": "Best Novel",
+      "award_year": "1987",
+      "category": "Best Novel",
+      "position": "1987",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1987",
+      "title": "Speaker for the Dead"
+    },
+    {
+      "author": "William Gibson",
+      "award": "Best Novel",
+      "award_year": "1987",
+      "category": "Best Novel",
+      "position": "1987.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1987",
+      "title": "Count Zero"
+    },
+    {
+      "author": "Gene Wolfe",
+      "award": "Best Novel",
+      "award_year": "1987",
+      "category": "Best Novel",
+      "position": "1987.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1987",
+      "title": "Free Live Free"
+    },
+    {
+      "author": "Margaret Atwood",
+      "award": "Best Novel",
+      "award_year": "1987",
+      "category": "Best Novel",
+      "position": "1987.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1987",
+      "title": "The Handmaid's Tale"
+    },
+    {
+      "author": "Leigh Kennedy",
+      "award": "Best Novel",
+      "award_year": "1987",
+      "category": "Best Novel",
+      "position": "1987.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1987",
+      "title": "The Journal of Nicholas the American"
+    },
+    {
+      "author": "James Morrow",
+      "award": "Best Novel",
+      "award_year": "1987",
+      "category": "Best Novel",
+      "position": "1987.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1987",
+      "title": "This Is the Way the World Ends"
+    },
+    {
+      "author": "Pat Murphy",
+      "award": "Best Novel",
+      "award_year": "1988",
+      "category": "Best Novel",
+      "position": "1988",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1988",
+      "title": "The Falling Woman"
+    },
+    {
+      "author": "Greg Bear",
+      "award": "Best Novel",
+      "award_year": "1988",
+      "category": "Best Novel",
+      "position": "1988.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1988",
+      "title": "The Forge of God"
+    },
+    {
+      "author": "Gene Wolfe",
+      "award": "Best Novel",
+      "award_year": "1988",
+      "category": "Best Novel",
+      "position": "1988.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1988",
+      "title": "Soldier of the Mist"
+    },
+    {
+      "author": "David Brin",
+      "award": "Best Novel",
+      "award_year": "1988",
+      "category": "Best Novel",
+      "position": "1988.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1988",
+      "title": "The Uplift War"
+    },
+    {
+      "author": "Avram Davidson",
+      "award": "Best Novel",
+      "award_year": "1988",
+      "category": "Best Novel",
+      "position": "1988.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1988",
+      "title": "Vergil in Averno"
+    },
+    {
+      "author": "George Alec Effinger",
+      "award": "Best Novel",
+      "award_year": "1988",
+      "category": "Best Novel",
+      "position": "1988.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1988",
+      "title": "When Gravity Fails"
+    },
+    {
+      "author": "Lois McMaster Bujold",
+      "award": "Best Novel",
+      "award_year": "1989",
+      "category": "Best Novel",
+      "position": "1989",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1989",
+      "title": "Falling Free"
+    },
+    {
+      "author": "Lewis Shiner",
+      "award": "Best Novel",
+      "award_year": "1989",
+      "category": "Best Novel",
+      "position": "1989.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1989",
+      "title": "Deserted Cities of the Heart"
+    },
+    {
+      "author": "George Turner",
+      "award": "Best Novel",
+      "award_year": "1989",
+      "category": "Best Novel",
+      "position": "1989.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1989",
+      "title": "Drowning Towers"
+    },
+    {
+      "author": "Gregory Benford",
+      "award": "Best Novel",
+      "award_year": "1989",
+      "category": "Best Novel",
+      "position": "1989.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1989",
+      "title": "Great Sky River"
+    },
+    {
+      "author": "William Gibson",
+      "award": "Best Novel",
+      "award_year": "1989",
+      "category": "Best Novel",
+      "position": "1989.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1989",
+      "title": "Mona Lisa Overdrive"
+    },
+    {
+      "author": "Orson Scott Card",
+      "award": "Best Novel",
+      "award_year": "1989",
+      "category": "Best Novel",
+      "position": "1989.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1989",
+      "title": "Red Prophet"
+    },
+    {
+      "author": "Gene Wolfe",
+      "award": "Best Novel",
+      "award_year": "1989",
+      "category": "Best Novel",
+      "position": "1989.06",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1989",
+      "title": "The Urth of the New Sun"
+    },
+    {
+      "author": "Elizabeth Ann Scarborough",
+      "award": "Best Novel",
+      "award_year": "1990",
+      "category": "Best Novel",
+      "position": "1990",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1990",
+      "title": "The Healer's War"
+    },
+    {
+      "author": "Poul Anderson",
+      "award": "Best Novel",
+      "award_year": "1990",
+      "category": "Best Novel",
+      "position": "1990.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1990",
+      "title": "The Boat of a Million Years"
+    },
+    {
+      "author": "John Kessel",
+      "award": "Best Novel",
+      "award_year": "1990",
+      "category": "Best Novel",
+      "position": "1990.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1990",
+      "title": "Good News from Outer Space"
+    },
+    {
+      "author": "Mike Resnick",
+      "award": "Best Novel",
+      "award_year": "1990",
+      "category": "Best Novel",
+      "position": "1990.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1990",
+      "title": "Ivory"
+    },
+    {
+      "author": "Orson Scott Card",
+      "award": "Best Novel",
+      "award_year": "1990",
+      "category": "Best Novel",
+      "position": "1990.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1990",
+      "title": "Prentice Alvin"
+    },
+    {
+      "author": "Jane Yolen",
+      "award": "Best Novel",
+      "award_year": "1990",
+      "category": "Best Novel",
+      "position": "1990.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1990",
+      "title": "Sister Light, Sister Dark"
+    },
+    {
+      "author": "Ursula K. Le Guin",
+      "award": "Best Novel",
+      "award_year": "1991",
+      "category": "Best Novel",
+      "position": "1991",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1991",
+      "title": "Tehanu: The Last Book of Earthsea"
+    },
+    {
+      "author": "Dan Simmons",
+      "award": "Best Novel",
+      "award_year": "1991",
+      "category": "Best Novel",
+      "position": "1991.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1991",
+      "title": "The Fall of Hyperion"
+    },
+    {
+      "author": "Valerie Martin",
+      "award": "Best Novel",
+      "award_year": "1991",
+      "category": "Best Novel",
+      "position": "1991.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1991",
+      "title": "Mary Reilly"
+    },
+    {
+      "author": "James Morrow",
+      "award": "Best Novel",
+      "award_year": "1991",
+      "category": "Best Novel",
+      "position": "1991.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1991",
+      "title": "Only Begotten Daughter"
+    },
+    {
+      "author": "John E. Stith",
+      "award": "Best Novel",
+      "award_year": "1991",
+      "category": "Best Novel",
+      "position": "1991.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1991",
+      "title": "Redshift Rendezvous"
+    },
+    {
+      "author": "Jane Yolen",
+      "award": "Best Novel",
+      "award_year": "1991",
+      "category": "Best Novel",
+      "position": "1991.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1991",
+      "title": "White Jenna"
+    },
+    {
+      "author": "Michael Swanwick",
+      "award": "Best Novel",
+      "award_year": "1992",
+      "category": "Best Novel",
+      "position": "1992",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1992",
+      "title": "Stations of the Tide"
+    },
+    {
+      "author": "Lois McMaster Bujold",
+      "award": "Best Novel",
+      "award_year": "1992",
+      "category": "Best Novel",
+      "position": "1992.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1992",
+      "title": "Barrayar"
+    },
+    {
+      "author": "Emma Bull",
+      "award": "Best Novel",
+      "award_year": "1992",
+      "category": "Best Novel",
+      "position": "1992.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1992",
+      "title": "Bone Dance"
+    },
+    {
+      "author": "William Gibson & Bruce Sterling",
+      "award": "Best Novel",
+      "award_year": "1992",
+      "category": "Best Novel",
+      "position": "1992.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1992",
+      "title": "The Difference Engine"
+    },
+    {
+      "author": "John Barnes",
+      "award": "Best Novel",
+      "award_year": "1992",
+      "category": "Best Novel",
+      "position": "1992.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1992",
+      "title": "Orbital Resonance"
+    },
+    {
+      "author": "Pat Cadigan",
+      "award": "Best Novel",
+      "award_year": "1992",
+      "category": "Best Novel",
+      "position": "1992.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1992",
+      "title": "Synners"
+    },
+    {
+      "author": "Connie Willis",
+      "award": "Best Novel",
+      "award_year": "1993",
+      "category": "Best Novel",
+      "position": "1993",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1993",
+      "title": "Doomsday Book"
+    },
+    {
+      "author": "Jane Yolen",
+      "award": "Best Novel",
+      "award_year": "1993",
+      "category": "Best Novel",
+      "position": "1993.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1993",
+      "title": "Briar Rose"
+    },
+    {
+      "author": "Maureen F. McHugh",
+      "award": "Best Novel",
+      "award_year": "1993",
+      "category": "Best Novel",
+      "position": "1993.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1993",
+      "title": "China Mountain Zhang"
+    },
+    {
+      "author": "Vernor Vinge",
+      "award": "Best Novel",
+      "award_year": "1993",
+      "category": "Best Novel",
+      "position": "1993.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1993",
+      "title": "A Fire Upon the Deep"
+    },
+    {
+      "author": "John Barnes",
+      "award": "Best Novel",
+      "award_year": "1993",
+      "category": "Best Novel",
+      "position": "1993.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1993",
+      "title": "A Million Open Doors"
+    },
+    {
+      "author": "Karen Joy Fowler",
+      "award": "Best Novel",
+      "award_year": "1993",
+      "category": "Best Novel",
+      "position": "1993.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1993",
+      "title": "Sarah Canary"
+    },
+    {
+      "author": "Kim Stanley Robinson",
+      "award": "Best Novel",
+      "award_year": "1994",
+      "category": "Best Novel",
+      "position": "1994",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1994",
+      "title": "Red Mars"
+    },
+    {
+      "author": "Kevin J. Anderson & Doug Beason",
+      "award": "Best Novel",
+      "award_year": "1994",
+      "category": "Best Novel",
+      "position": "1994.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1994",
+      "title": "Assemblers of Infinity"
+    },
+    {
+      "author": "Nancy Kress",
+      "award": "Best Novel",
+      "award_year": "1994",
+      "category": "Best Novel",
+      "position": "1994.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1994",
+      "title": "Beggars In Spain"
+    },
+    {
+      "author": "Algis Budrys",
+      "award": "Best Novel",
+      "award_year": "1994",
+      "category": "Best Novel",
+      "position": "1994.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1994",
+      "title": "Hard Landing"
+    },
+    {
+      "author": "Gene Wolfe",
+      "award": "Best Novel",
+      "award_year": "1994",
+      "category": "Best Novel",
+      "position": "1994.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1994",
+      "title": "Nightside the Long Sun"
+    },
+    {
+      "author": "Greg Bear",
+      "award": "Best Novel",
+      "award_year": "1995",
+      "category": "Best Novel",
+      "position": "1995",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1995",
+      "title": "Moving Mars"
+    },
+    {
+      "author": "Kim Stanley Robinson",
+      "award": "Best Novel",
+      "award_year": "1995",
+      "category": "Best Novel",
+      "position": "1995.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1995",
+      "title": "Green Mars"
+    },
+    {
+      "author": "Jonathan Lethem",
+      "award": "Best Novel",
+      "award_year": "1995",
+      "category": "Best Novel",
+      "position": "1995.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1995",
+      "title": "Gun, With Occasional Music"
+    },
+    {
+      "author": "Roger Zelazny",
+      "award": "Best Novel",
+      "award_year": "1995",
+      "category": "Best Novel",
+      "position": "1995.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1995",
+      "title": "A Night in the Lonesome October"
+    },
+    {
+      "author": "Octavia E. Butler",
+      "award": "Best Novel",
+      "award_year": "1995",
+      "category": "Best Novel",
+      "position": "1995.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1995",
+      "title": "Parable of the Sower"
+    },
+    {
+      "author": "Rachel Pollack",
+      "award": "Best Novel",
+      "award_year": "1995",
+      "category": "Best Novel",
+      "position": "1995.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1995",
+      "title": "Temporary Agency"
+    },
+    {
+      "author": "James Morrow",
+      "award": "Best Novel",
+      "award_year": "1995",
+      "category": "Best Novel",
+      "position": "1995.06",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1995",
+      "title": "Towing Jehovah"
+    },
+    {
+      "author": "Robert J. Sawyer",
+      "award": "Best Novel",
+      "award_year": "1996",
+      "category": "Best Novel",
+      "position": "1996",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1996",
+      "title": "The Terminal Experiment"
+    },
+    {
+      "author": "Nancy Kress",
+      "award": "Best Novel",
+      "award_year": "1996",
+      "category": "Best Novel",
+      "position": "1996.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1996",
+      "title": "Beggars and Choosers"
+    },
+    {
+      "author": "Gene Wolfe",
+      "award": "Best Novel",
+      "award_year": "1996",
+      "category": "Best Novel",
+      "position": "1996.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1996",
+      "title": "Cald\u00e9 of the Long Sun"
+    },
+    {
+      "author": "Paul Park",
+      "award": "Best Novel",
+      "award_year": "1996",
+      "category": "Best Novel",
+      "position": "1996.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1996",
+      "title": "Celestis"
+    },
+    {
+      "author": "Walter Jon Williams",
+      "award": "Best Novel",
+      "award_year": "1996",
+      "category": "Best Novel",
+      "position": "1996.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1996",
+      "title": "Metropolitan"
+    },
+    {
+      "author": "John Barnes",
+      "award": "Best Novel",
+      "award_year": "1996",
+      "category": "Best Novel",
+      "position": "1996.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1996",
+      "title": "Mother of Storms"
+    },
+    {
+      "author": "Nicola Griffith",
+      "award": "Best Novel",
+      "award_year": "1997",
+      "category": "Best Novel",
+      "position": "1997",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1997",
+      "title": "Slow River"
+    },
+    {
+      "author": "Neal Stephenson",
+      "award": "Best Novel",
+      "award_year": "1997",
+      "category": "Best Novel",
+      "position": "1997.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1997",
+      "title": "The Diamond Age"
+    },
+    {
+      "author": "Tim Powers",
+      "award": "Best Novel",
+      "award_year": "1997",
+      "category": "Best Novel",
+      "position": "1997.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1997",
+      "title": "Expiration Date"
+    },
+    {
+      "author": "Nina Kiriki Hoffman",
+      "award": "Best Novel",
+      "award_year": "1997",
+      "category": "Best Novel",
+      "position": "1997.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1997",
+      "title": "The Silent Strength of Stones"
+    },
+    {
+      "author": "Robert J. Sawyer",
+      "award": "Best Novel",
+      "award_year": "1997",
+      "category": "Best Novel",
+      "position": "1997.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1997",
+      "title": "Starplex"
+    },
+    {
+      "author": "Patricia A. McKillip",
+      "award": "Best Novel",
+      "award_year": "1997",
+      "category": "Best Novel",
+      "position": "1997.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1997",
+      "title": "Winter Rose"
+    },
+    {
+      "author": "Vonda N. McIntyre",
+      "award": "Best Novel",
+      "award_year": "1998",
+      "category": "Best Novel",
+      "position": "1998",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1998",
+      "title": "The Moon and the Sun"
+    },
+    {
+      "author": "Jack McDevitt",
+      "award": "Best Novel",
+      "award_year": "1998",
+      "category": "Best Novel",
+      "position": "1998.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1998",
+      "title": "Ancient Shores"
+    },
+    {
+      "author": "Connie Willis",
+      "award": "Best Novel",
+      "award_year": "1998",
+      "category": "Best Novel",
+      "position": "1998.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1998",
+      "title": "Bellwether"
+    },
+    {
+      "author": "Walter Jon Williams",
+      "award": "Best Novel",
+      "award_year": "1998",
+      "category": "Best Novel",
+      "position": "1998.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1998",
+      "title": "City on Fire"
+    },
+    {
+      "author": "George R. R. Martin",
+      "award": "Best Novel",
+      "award_year": "1998",
+      "category": "Best Novel",
+      "position": "1998.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1998",
+      "title": "A Game of Thrones"
+    },
+    {
+      "author": "Kate Elliott",
+      "award": "Best Novel",
+      "award_year": "1998",
+      "category": "Best Novel",
+      "position": "1998.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1998",
+      "title": "King's Dragon"
+    },
+    {
+      "author": "Lois McMaster Bujold",
+      "award": "Best Novel",
+      "award_year": "1998",
+      "category": "Best Novel",
+      "position": "1998.06",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1998",
+      "title": "Memory"
+    },
+    {
+      "author": "Joe Haldeman",
+      "award": "Best Novel",
+      "award_year": "1999",
+      "category": "Best Novel",
+      "position": "1999",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1999",
+      "title": "Forever Peace"
+    },
+    {
+      "author": "Martha Wells",
+      "award": "Best Novel",
+      "award_year": "1999",
+      "category": "Best Novel",
+      "position": "1999.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1999",
+      "title": "The Death of the Necromancer"
+    },
+    {
+      "author": "Harry Turtledove",
+      "award": "Best Novel",
+      "award_year": "1999",
+      "category": "Best Novel",
+      "position": "1999.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1999",
+      "title": "How Few Remain"
+    },
+    {
+      "author": "Catherine Asaro",
+      "award": "Best Novel",
+      "award_year": "1999",
+      "category": "Best Novel",
+      "position": "1999.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1999",
+      "title": "The Last Hawk"
+    },
+    {
+      "author": "Jack McDevitt",
+      "award": "Best Novel",
+      "award_year": "1999",
+      "category": "Best Novel",
+      "position": "1999.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1999",
+      "title": "Moonfall"
+    },
+    {
+      "author": "Connie Willis",
+      "award": "Best Novel",
+      "award_year": "1999",
+      "category": "Best Novel",
+      "position": "1999.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_1999",
+      "title": "To Say Nothing of the Dog"
+    },
+    {
+      "author": "Octavia E. Butler",
+      "award": "Best Novel",
+      "award_year": "2000",
+      "category": "Best Novel",
+      "position": "2000",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2000",
+      "title": "Parable of the Talents"
+    },
+    {
+      "author": "Ken MacLeod",
+      "award": "Best Novel",
+      "award_year": "2000",
+      "category": "Best Novel",
+      "position": "2000.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2000",
+      "title": "The Cassini Division"
+    },
+    {
+      "author": "George R. R. Martin",
+      "award": "Best Novel",
+      "award_year": "2000",
+      "category": "Best Novel",
+      "position": "2000.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2000",
+      "title": "A Clash of Kings"
+    },
+    {
+      "author": "Vernor Vinge",
+      "award": "Best Novel",
+      "award_year": "2000",
+      "category": "Best Novel",
+      "position": "2000.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2000",
+      "title": "A Deepness in the Sky"
+    },
+    {
+      "author": "Maureen F. McHugh",
+      "award": "Best Novel",
+      "award_year": "2000",
+      "category": "Best Novel",
+      "position": "2000.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2000",
+      "title": "Mission Child"
+    },
+    {
+      "author": "Sean Stewart",
+      "award": "Best Novel",
+      "award_year": "2000",
+      "category": "Best Novel",
+      "position": "2000.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2000",
+      "title": "Mockingbird"
+    },
+    {
+      "author": "Greg Bear",
+      "award": "Best Novel",
+      "award_year": "2001",
+      "category": "Best Novel",
+      "position": "2001",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2001",
+      "title": "Darwin's Radio"
+    },
+    {
+      "author": "Lois McMaster Bujold",
+      "award": "Best Novel",
+      "award_year": "2001",
+      "category": "Best Novel",
+      "position": "2001.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2001",
+      "title": "A Civil Campaign"
+    },
+    {
+      "author": "Kathleen Ann Goonan",
+      "award": "Best Novel",
+      "award_year": "2001",
+      "category": "Best Novel",
+      "position": "2001.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2001",
+      "title": "Crescent City Rhapsody"
+    },
+    {
+      "author": "Charles de Lint",
+      "award": "Best Novel",
+      "award_year": "2001",
+      "category": "Best Novel",
+      "position": "2001.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2001",
+      "title": "Forests of the Heart"
+    },
+    {
+      "author": "Jack McDevitt",
+      "award": "Best Novel",
+      "award_year": "2001",
+      "category": "Best Novel",
+      "position": "2001.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2001",
+      "title": "Infinity Beach"
+    },
+    {
+      "author": "Nalo Hopkinson",
+      "award": "Best Novel",
+      "award_year": "2001",
+      "category": "Best Novel",
+      "position": "2001.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2001",
+      "title": "Midnight Robber"
+    },
+    {
+      "author": "Catherine Asaro",
+      "award": "Best Novel",
+      "award_year": "2002",
+      "category": "Best Novel",
+      "position": "2002",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2002",
+      "title": "The Quantum Rose"
+    },
+    {
+      "author": "Wil McCarthy",
+      "award": "Best Novel",
+      "award_year": "2002",
+      "category": "Best Novel",
+      "position": "2002.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2002",
+      "title": "The Collapsium"
+    },
+    {
+      "author": "Tim Powers",
+      "award": "Best Novel",
+      "award_year": "2002",
+      "category": "Best Novel",
+      "position": "2002.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2002",
+      "title": "Declare"
+    },
+    {
+      "author": "Jeffrey A. Carver",
+      "award": "Best Novel",
+      "award_year": "2002",
+      "category": "Best Novel",
+      "position": "2002.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2002",
+      "title": "Eternity's End"
+    },
+    {
+      "author": "Geoffrey A. Landis",
+      "award": "Best Novel",
+      "award_year": "2002",
+      "category": "Best Novel",
+      "position": "2002.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2002",
+      "title": "Mars Crossing"
+    },
+    {
+      "author": "Connie Willis",
+      "award": "Best Novel",
+      "award_year": "2002",
+      "category": "Best Novel",
+      "position": "2002.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2002",
+      "title": "Passage"
+    },
+    {
+      "author": "George R. R. Martin",
+      "award": "Best Novel",
+      "award_year": "2002",
+      "category": "Best Novel",
+      "position": "2002.06",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2002",
+      "title": "A Storm of Swords"
+    },
+    {
+      "author": "Patricia A. McKillip",
+      "award": "Best Novel",
+      "award_year": "2002",
+      "category": "Best Novel",
+      "position": "2002.07",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2002",
+      "title": "The Tower at Stony Wood"
+    },
+    {
+      "author": "Neil Gaiman",
+      "award": "Best Novel",
+      "award_year": "2003",
+      "category": "Best Novel",
+      "position": "2003",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2003",
+      "title": "American Gods"
+    },
+    {
+      "author": "Michael Swanwick",
+      "award": "Best Novel",
+      "award_year": "2003",
+      "category": "Best Novel",
+      "position": "2003.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2003",
+      "title": "Bones of the Earth"
+    },
+    {
+      "author": "Ursula K. Le Guin",
+      "award": "Best Novel",
+      "award_year": "2003",
+      "category": "Best Novel",
+      "position": "2003.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2003",
+      "title": "The Other Wind"
+    },
+    {
+      "author": "China Mi\u00e9ville",
+      "award": "Best Novel",
+      "award_year": "2003",
+      "category": "Best Novel",
+      "position": "2003.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2003",
+      "title": "Perdido Street Station"
+    },
+    {
+      "author": "Robert A. Metzger",
+      "award": "Best Novel",
+      "award_year": "2003",
+      "category": "Best Novel",
+      "position": "2003.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2003",
+      "title": "Picoverse"
+    },
+    {
+      "author": "Kelley Eskridge",
+      "award": "Best Novel",
+      "award_year": "2003",
+      "category": "Best Novel",
+      "position": "2003.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2003",
+      "title": "Solitaire"
+    },
+    {
+      "author": "Elizabeth Moon",
+      "award": "Best Novel",
+      "award_year": "2004",
+      "category": "Best Novel",
+      "position": "2004",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2004",
+      "title": "The Speed of Dark"
+    },
+    {
+      "author": "Jack McDevitt",
+      "award": "Best Novel",
+      "award_year": "2004",
+      "category": "Best Novel",
+      "position": "2004.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2004",
+      "title": "Chindi"
+    },
+    {
+      "author": "Lois McMaster Bujold",
+      "award": "Best Novel",
+      "award_year": "2004",
+      "category": "Best Novel",
+      "position": "2004.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2004",
+      "title": "Diplomatic Immunity"
+    },
+    {
+      "author": "Kathleen Ann Goonan",
+      "award": "Best Novel",
+      "award_year": "2004",
+      "category": "Best Novel",
+      "position": "2004.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2004",
+      "title": "Light Music"
+    },
+    {
+      "author": "Carol Emshwiller",
+      "award": "Best Novel",
+      "award_year": "2004",
+      "category": "Best Novel",
+      "position": "2004.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2004",
+      "title": "The Mount"
+    },
+    {
+      "author": "Nalo Hopkinson",
+      "award": "Best Novel",
+      "award_year": "2004",
+      "category": "Best Novel",
+      "position": "2004.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2004",
+      "title": "The Salt Roads"
+    },
+    {
+      "author": "Lois McMaster Bujold",
+      "award": "Best Novel",
+      "award_year": "2005",
+      "category": "Best Novel",
+      "position": "2005",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2005",
+      "title": "Paladin of Souls"
+    },
+    {
+      "author": "David Mitchell",
+      "award": "Best Novel",
+      "award_year": "2005",
+      "category": "Best Novel",
+      "position": "2005.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2005",
+      "title": "Cloud Atlas"
+    },
+    {
+      "author": "Cory Doctorow",
+      "award": "Best Novel",
+      "award_year": "2005",
+      "category": "Best Novel",
+      "position": "2005.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2005",
+      "title": "Down and Out in the Magic Kingdom"
+    },
+    {
+      "author": "Gene Wolfe",
+      "award": "Best Novel",
+      "award_year": "2005",
+      "category": "Best Novel",
+      "position": "2005.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2005",
+      "title": "The Knight"
+    },
+    {
+      "author": "Jack McDevitt",
+      "award": "Best Novel",
+      "award_year": "2005",
+      "category": "Best Novel",
+      "position": "2005.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2005",
+      "title": "Omega"
+    },
+    {
+      "author": "Sean Stewart",
+      "award": "Best Novel",
+      "award_year": "2005",
+      "category": "Best Novel",
+      "position": "2005.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2005",
+      "title": "Perfect Circle"
+    },
+    {
+      "author": "Joe Haldeman",
+      "award": "Best Novel",
+      "award_year": "2006",
+      "category": "Best Novel",
+      "position": "2006",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2006",
+      "title": "Camouflage"
+    },
+    {
+      "author": "Geoff Ryman",
+      "award": "Best Novel",
+      "award_year": "2006",
+      "category": "Best Novel",
+      "position": "2006.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2006",
+      "title": "Air"
+    },
+    {
+      "author": "Terry Pratchett",
+      "award": "Best Novel",
+      "award_year": "2006",
+      "category": "Best Novel",
+      "position": "2006.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2006",
+      "title": "Going Postal"
+    },
+    {
+      "author": "Susanna Clarke",
+      "award": "Best Novel",
+      "award_year": "2006",
+      "category": "Best Novel",
+      "position": "2006.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2006",
+      "title": "Jonathan Strange & Mr Norrell"
+    },
+    {
+      "author": "John C. Wright",
+      "award": "Best Novel",
+      "award_year": "2006",
+      "category": "Best Novel",
+      "position": "2006.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2006",
+      "title": "Orphans of Chaos"
+    },
+    {
+      "author": "Jack McDevitt",
+      "award": "Best Novel",
+      "award_year": "2006",
+      "category": "Best Novel",
+      "position": "2006.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2006",
+      "title": "Polaris"
+    },
+    {
+      "author": "Jack McDevitt",
+      "award": "Best Novel",
+      "award_year": "2007",
+      "category": "Best Novel",
+      "position": "2007",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2007",
+      "title": "Seeker"
+    },
+    {
+      "author": "Jo Walton",
+      "award": "Best Novel",
+      "award_year": "2007",
+      "category": "Best Novel",
+      "position": "2007.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2007",
+      "title": "Farthing"
+    },
+    {
+      "author": "Richard Bowes",
+      "award": "Best Novel",
+      "award_year": "2007",
+      "category": "Best Novel",
+      "position": "2007.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2007",
+      "title": "From the Files of the Time Rangers"
+    },
+    {
+      "author": "Jeffrey Ford",
+      "award": "Best Novel",
+      "award_year": "2007",
+      "category": "Best Novel",
+      "position": "2007.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2007",
+      "title": "The Girl in the Glass"
+    },
+    {
+      "author": "Ellen Kushner",
+      "award": "Best Novel",
+      "award_year": "2007",
+      "category": "Best Novel",
+      "position": "2007.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2007",
+      "title": "The Privilege of the Sword"
+    },
+    {
+      "author": "Wil McCarthy",
+      "award": "Best Novel",
+      "award_year": "2007",
+      "category": "Best Novel",
+      "position": "2007.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2007",
+      "title": "To Crush the Moon"
+    },
+    {
+      "author": "Michael Chabon",
+      "award": "Best Novel",
+      "award_year": "2008",
+      "category": "Best Novel",
+      "position": "2008",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2008",
+      "title": "The Yiddish Policemen's Union"
+    },
+    {
+      "author": "Joe Haldeman",
+      "award": "Best Novel",
+      "award_year": "2008",
+      "category": "Best Novel",
+      "position": "2008.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2008",
+      "title": "The Accidental Time Machine"
+    },
+    {
+      "author": "Nalo Hopkinson",
+      "award": "Best Novel",
+      "award_year": "2008",
+      "category": "Best Novel",
+      "position": "2008.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2008",
+      "title": "The New Moon's Arms"
+    },
+    {
+      "author": "Jack McDevitt",
+      "award": "Best Novel",
+      "award_year": "2008",
+      "category": "Best Novel",
+      "position": "2008.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2008",
+      "title": "Odyssey"
+    },
+    {
+      "author": "Tobias S. Buckell",
+      "award": "Best Novel",
+      "award_year": "2008",
+      "category": "Best Novel",
+      "position": "2008.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2008",
+      "title": "Ragamuffin"
+    },
+    {
+      "author": "Ursula K. Le Guin",
+      "award": "Best Novel",
+      "award_year": "2009",
+      "category": "Best Novel",
+      "position": "2009",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2009",
+      "title": "Powers"
+    },
+    {
+      "author": "Ian McDonald",
+      "award": "Best Novel",
+      "award_year": "2009",
+      "category": "Best Novel",
+      "position": "2009.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2009",
+      "title": "Brasyl"
+    },
+    {
+      "author": "Jack McDevitt",
+      "award": "Best Novel",
+      "award_year": "2009",
+      "category": "Best Novel",
+      "position": "2009.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2009",
+      "title": "Cauldron"
+    },
+    {
+      "author": "Cory Doctorow",
+      "award": "Best Novel",
+      "award_year": "2009",
+      "category": "Best Novel",
+      "position": "2009.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2009",
+      "title": "Little Brother"
+    },
+    {
+      "author": "Terry Pratchett",
+      "award": "Best Novel",
+      "award_year": "2009",
+      "category": "Best Novel",
+      "position": "2009.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2009",
+      "title": "Making Money"
+    },
+    {
+      "author": "David J. Schwartz",
+      "award": "Best Novel",
+      "award_year": "2009",
+      "category": "Best Novel",
+      "position": "2009.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2009",
+      "title": "Superpowers"
+    },
+    {
+      "author": "Paolo Bacigalupi",
+      "award": "Best Novel",
+      "award_year": "2010",
+      "category": "Best Novel",
+      "position": "2010",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2010",
+      "title": "The Windup Girl"
+    },
+    {
+      "author": "Cherie Priest",
+      "award": "Best Novel",
+      "award_year": "2010",
+      "category": "Best Novel",
+      "position": "2010.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2010",
+      "title": "Boneshaker"
+    },
+    {
+      "author": "China Mi\u00e9ville",
+      "award": "Best Novel",
+      "award_year": "2010",
+      "category": "Best Novel",
+      "position": "2010.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2010",
+      "title": "The City & the City"
+    },
+    {
+      "author": "Jeff VanderMeer",
+      "award": "Best Novel",
+      "award_year": "2010",
+      "category": "Best Novel",
+      "position": "2010.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2010",
+      "title": "Finch"
+    },
+    {
+      "author": "Laura Anne Gilman",
+      "award": "Best Novel",
+      "award_year": "2010",
+      "category": "Best Novel",
+      "position": "2010.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2010",
+      "title": "Flesh and Fire"
+    },
+    {
+      "author": "Christopher Barzak",
+      "award": "Best Novel",
+      "award_year": "2010",
+      "category": "Best Novel",
+      "position": "2010.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2010",
+      "title": "The Love We Share Without Knowing"
+    },
+    {
+      "author": "Connie Willis",
+      "award": "Best Novel",
+      "award_year": "2011",
+      "category": "Best Novel",
+      "position": "2011",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2011",
+      "title": "Blackout/All Clear"
+    },
+    {
+      "author": "Jack McDevitt",
+      "award": "Best Novel",
+      "award_year": "2011",
+      "category": "Best Novel",
+      "position": "2011.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2011",
+      "title": "Echo"
+    },
+    {
+      "author": "N. K. Jemisin",
+      "award": "Best Novel",
+      "award_year": "2011",
+      "category": "Best Novel",
+      "position": "2011.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2011",
+      "title": "The Hundred Thousand Kingdoms"
+    },
+    {
+      "author": "M. K. Hobson",
+      "award": "Best Novel",
+      "award_year": "2011",
+      "category": "Best Novel",
+      "position": "2011.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2011",
+      "title": "The Native Star"
+    },
+    {
+      "author": "Mary Robinette Kowal",
+      "award": "Best Novel",
+      "award_year": "2011",
+      "category": "Best Novel",
+      "position": "2011.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2011",
+      "title": "Shades of Milk and Honey"
+    },
+    {
+      "author": "Nnedi Okorafor",
+      "award": "Best Novel",
+      "award_year": "2011",
+      "category": "Best Novel",
+      "position": "2011.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2011",
+      "title": "Who Fears Death"
+    },
+    {
+      "author": "Jo Walton",
+      "award": "Best Novel",
+      "award_year": "2012",
+      "category": "Best Novel",
+      "position": "2012",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2012",
+      "title": "Among Others"
+    },
+    {
+      "author": "China Mi\u00e9ville",
+      "award": "Best Novel",
+      "award_year": "2012",
+      "category": "Best Novel",
+      "position": "2012.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2012",
+      "title": "Embassytown"
+    },
+    {
+      "author": "Jack McDevitt",
+      "award": "Best Novel",
+      "award_year": "2012",
+      "category": "Best Novel",
+      "position": "2012.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2012",
+      "title": "Firebird"
+    },
+    {
+      "author": "Kameron Hurley",
+      "award": "Best Novel",
+      "award_year": "2012",
+      "category": "Best Novel",
+      "position": "2012.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2012",
+      "title": "God's War"
+    },
+    {
+      "author": "N. K. Jemisin",
+      "award": "Best Novel",
+      "award_year": "2012",
+      "category": "Best Novel",
+      "position": "2012.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2012",
+      "title": "The Kingdom of Gods"
+    },
+    {
+      "author": "Genevieve Valentine",
+      "award": "Best Novel",
+      "award_year": "2012",
+      "category": "Best Novel",
+      "position": "2012.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2012",
+      "title": "Mechanique: A Tale of the Circus Tresaulti"
+    },
+    {
+      "author": "Kim Stanley Robinson",
+      "award": "Best Novel",
+      "award_year": "2013",
+      "category": "Best Novel",
+      "position": "2013",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2013",
+      "title": "2312"
+    },
+    {
+      "author": "Caitl\u00edn R. Kiernan",
+      "award": "Best Novel",
+      "award_year": "2013",
+      "category": "Best Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2013",
+      "title": "The Drowning Girl"
+    },
+    {
+      "author": "Mary Robinette Kowal",
+      "award": "Best Novel",
+      "award_year": "2013",
+      "category": "Best Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2013",
+      "title": "Glamour in Glass"
+    },
+    {
+      "author": "Tina Connolly",
+      "award": "Best Novel",
+      "award_year": "2013",
+      "category": "Best Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2013",
+      "title": "Ironskin"
+    },
+    {
+      "author": "N. K. Jemisin",
+      "award": "Best Novel",
+      "award_year": "2013",
+      "category": "Best Novel",
+      "position": "2013.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2013",
+      "title": "The Killing Moon"
+    },
+    {
+      "author": "Saladin Ahm",
+      "award": "Best Novel",
+      "award_year": "2013",
+      "category": "Best Novel",
+      "position": "2013.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2013",
+      "title": "Throne of the Crescent Moon"
+    },
+    {
+      "author": "Ann Leckie",
+      "award": "Best Novel",
+      "award_year": "2014",
+      "category": "Best Novel",
+      "position": "2014",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2014",
+      "title": "Ancillary Justice"
+    },
+    {
+      "author": "Charles E. Gannon",
+      "award": "Best Novel",
+      "award_year": "2014",
+      "category": "Best Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2014",
+      "title": "Fire with Fire"
+    },
+    {
+      "author": "Helene Wecker",
+      "award": "Best Novel",
+      "award_year": "2014",
+      "category": "Best Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2014",
+      "title": "The Golem and the Jinni"
+    },
+    {
+      "author": "Nicola Griffith",
+      "award": "Best Novel",
+      "award_year": "2014",
+      "category": "Best Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2014",
+      "title": "Hild"
+    },
+    {
+      "author": "Neil Gaiman",
+      "award": "Best Novel",
+      "award_year": "2014",
+      "category": "Best Novel",
+      "position": "2014.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2014",
+      "title": "The Ocean at the End of the Lane"
+    },
+    {
+      "author": "Linda Nagata",
+      "award": "Best Novel",
+      "award_year": "2014",
+      "category": "Best Novel",
+      "position": "2014.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2014",
+      "title": "The Red: First Light"
+    },
+    {
+      "author": "Sofia Samatar",
+      "award": "Best Novel",
+      "award_year": "2014",
+      "category": "Best Novel",
+      "position": "2014.06",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2014",
+      "title": "A Stranger in Olondria"
+    },
+    {
+      "author": "Karen Joy Fowler",
+      "award": "Best Novel",
+      "award_year": "2014",
+      "category": "Best Novel",
+      "position": "2014.07",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2014",
+      "title": "We Are All Completely Beside Ourselves"
+    },
+    {
+      "author": "Jeff VanderMeer",
+      "award": "Best Novel",
+      "award_year": "2015",
+      "category": "Best Novel",
+      "position": "2015",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2015",
+      "title": "Annihilation"
+    },
+    {
+      "author": "Ann Leckie",
+      "award": "Best Novel",
+      "award_year": "2015",
+      "category": "Best Novel",
+      "position": "2015.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2015",
+      "title": "Ancillary Sword"
+    },
+    {
+      "author": "Jack McDevitt",
+      "award": "Best Novel",
+      "award_year": "2015",
+      "category": "Best Novel",
+      "position": "2015.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2015",
+      "title": "Coming Home"
+    },
+    {
+      "author": "Katherine Addison",
+      "award": "Best Novel",
+      "award_year": "2015",
+      "category": "Best Novel",
+      "position": "2015.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2015",
+      "title": "The Goblin Emperor"
+    },
+    {
+      "author": "Cixin Liu",
+      "award": "Best Novel",
+      "award_year": "2015",
+      "category": "Best Novel",
+      "position": "2015.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2015",
+      "title": "The Three-Body Problem"
+    },
+    {
+      "author": "Charles E. Gannon",
+      "award": "Best Novel",
+      "award_year": "2015",
+      "category": "Best Novel",
+      "position": "2015.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2015",
+      "title": "Trial by Fire"
+    },
+    {
+      "author": "Naomi Novik",
+      "award": "Best Novel",
+      "award_year": "2016",
+      "category": "Best Novel",
+      "position": "2016",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2016",
+      "title": "Uprooted"
+    },
+    {
+      "author": "Ann Leckie",
+      "award": "Best Novel",
+      "award_year": "2016",
+      "category": "Best Novel",
+      "position": "2016.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2016",
+      "title": "Ancillary Mercy"
+    },
+    {
+      "author": "Lawrence M. Schoen",
+      "award": "Best Novel",
+      "award_year": "2016",
+      "category": "Best Novel",
+      "position": "2016.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2016",
+      "title": "Barsk: The Elephants' Graveyard"
+    },
+    {
+      "author": "N. K. Jemisin",
+      "award": "Best Novel",
+      "award_year": "2016",
+      "category": "Best Novel",
+      "position": "2016.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2016",
+      "title": "The Fifth Season"
+    },
+    {
+      "author": "Ken Liu",
+      "award": "Best Novel",
+      "award_year": "2016",
+      "category": "Best Novel",
+      "position": "2016.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2016",
+      "title": "The Grace of Kings"
+    },
+    {
+      "author": "Charles E. Gannon",
+      "award": "Best Novel",
+      "award_year": "2016",
+      "category": "Best Novel",
+      "position": "2016.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2016",
+      "title": "Raising Caine"
+    },
+    {
+      "author": "Fran Wilde",
+      "award": "Best Novel",
+      "award_year": "2016",
+      "category": "Best Novel",
+      "position": "2016.06",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2016",
+      "title": "Updraft"
+    },
+    {
+      "author": "Charlie Jane Anders",
+      "award": "Best Novel",
+      "award_year": "2017",
+      "category": "Best Novel",
+      "position": "2017",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2017",
+      "title": "All the Birds in the Sky"
+    },
+    {
+      "author": "Mishell Baker",
+      "award": "Best Novel",
+      "award_year": "2017",
+      "category": "Best Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2017",
+      "title": "Borderline"
+    },
+    {
+      "author": "Nisi Shawl",
+      "award": "Best Novel",
+      "award_year": "2017",
+      "category": "Best Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2017",
+      "title": "Everfair"
+    },
+    {
+      "author": "Yoon Ha Lee",
+      "award": "Best Novel",
+      "award_year": "2017",
+      "category": "Best Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2017",
+      "title": "Ninefox Gambit"
+    },
+    {
+      "author": "N. K. Jemisin",
+      "award": "Best Novel",
+      "award_year": "2017",
+      "category": "Best Novel",
+      "position": "2017.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2017",
+      "title": "The Obelisk Gate"
+    },
+    {
+      "author": "N. K. Jemisin",
+      "award": "Best Novel",
+      "award_year": "2018",
+      "category": "Best Novel",
+      "position": "2018",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2018",
+      "title": "The Stone Sky"
+    },
+    {
+      "author": "Lara Elena Donnelly",
+      "award": "Best Novel",
+      "award_year": "2018",
+      "category": "Best Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2018",
+      "title": "Amberlough"
+    },
+    {
+      "author": "Annalee Newitz",
+      "award": "Best Novel",
+      "award_year": "2018",
+      "category": "Best Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2018",
+      "title": "Autonomous"
+    },
+    {
+      "author": "Fonda Lee",
+      "award": "Best Novel",
+      "award_year": "2018",
+      "category": "Best Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2018",
+      "title": "Jade City"
+    },
+    {
+      "author": "Mur Lafferty",
+      "award": "Best Novel",
+      "award_year": "2018",
+      "category": "Best Novel",
+      "position": "2018.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2018",
+      "title": "Six Wakes"
+    },
+    {
+      "author": "Daryl Gregory",
+      "award": "Best Novel",
+      "award_year": "2018",
+      "category": "Best Novel",
+      "position": "2018.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2018",
+      "title": "Spoonbenders"
+    },
+    {
+      "author": "Theodora Goss",
+      "award": "Best Novel",
+      "award_year": "2018",
+      "category": "Best Novel",
+      "position": "2018.06",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2018",
+      "title": "The Strange Case of the Alchemist's Daughter"
+    },
+    {
+      "author": "Mary Robinette Kowal",
+      "award": "Best Novel",
+      "award_year": "2019",
+      "category": "Best Novel",
+      "position": "2019",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2019",
+      "title": "The Calculating Stars"
+    },
+    {
+      "author": "Sam J. Miller",
+      "award": "Best Novel",
+      "award_year": "2019",
+      "category": "Best Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2019",
+      "title": "Blackfish City"
+    },
+    {
+      "author": "R. F. Kuang",
+      "award": "Best Novel",
+      "award_year": "2019",
+      "category": "Best Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2019",
+      "title": "The Poppy War"
+    },
+    {
+      "author": "Naomi Novik",
+      "award": "Best Novel",
+      "award_year": "2019",
+      "category": "Best Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2019",
+      "title": "Spinning Silver"
+    },
+    {
+      "author": "Rebecca Roanhorse",
+      "award": "Best Novel",
+      "award_year": "2019",
+      "category": "Best Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2019",
+      "title": "Trail of Lightning"
+    },
+    {
+      "author": "C. L. Polk",
+      "award": "Best Novel",
+      "award_year": "2019",
+      "category": "Best Novel",
+      "position": "2019.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2019",
+      "title": "Witchmark"
+    },
+    {
+      "author": "Sarah Pinsker",
+      "award": "Best Novel",
+      "award_year": "2020",
+      "category": "Best Novel",
+      "position": "2020",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2020",
+      "title": "A Song for a New Day"
+    },
+    {
+      "author": "Tamsyn Muir",
+      "award": "Best Novel",
+      "award_year": "2020",
+      "category": "Best Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2020",
+      "title": "Gideon the Ninth"
+    },
+    {
+      "author": "Silvia Moreno-Garcia",
+      "award": "Best Novel",
+      "award_year": "2020",
+      "category": "Best Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2020",
+      "title": "Gods of Jade and Shadow"
+    },
+    {
+      "author": "Charles E. Gannon",
+      "award": "Best Novel",
+      "award_year": "2020",
+      "category": "Best Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2020",
+      "title": "Marque of Caine"
+    },
+    {
+      "author": "Arkady Martine",
+      "award": "Best Novel",
+      "award_year": "2020",
+      "category": "Best Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2020",
+      "title": "A Memory Called Empire"
+    },
+    {
+      "author": "Alix E. Harrow",
+      "award": "Best Novel",
+      "award_year": "2020",
+      "category": "Best Novel",
+      "position": "2020.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2020",
+      "title": "The Ten Thousand Doors of January"
+    },
+    {
+      "author": "Martha Wells",
+      "award": "Best Novel",
+      "award_year": "2021",
+      "category": "Best Novel",
+      "position": "2021",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2021",
+      "title": "Network Effect"
+    },
+    {
+      "author": "Rebecca Roanhorse",
+      "award": "Best Novel",
+      "award_year": "2021",
+      "category": "Best Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2021",
+      "title": "Black Sun"
+    },
+    {
+      "author": "N. K. Jemisin",
+      "award": "Best Novel",
+      "award_year": "2021",
+      "category": "Best Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2021",
+      "title": "The City We Became"
+    },
+    {
+      "author": "Silvia Moreno-Garcia",
+      "award": "Best Novel",
+      "award_year": "2021",
+      "category": "Best Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2021",
+      "title": "Mexican Gothic"
+    },
+    {
+      "author": "C. L. Polk",
+      "award": "Best Novel",
+      "award_year": "2021",
+      "category": "Best Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2021",
+      "title": "The Midnight Bargain"
+    },
+    {
+      "author": "Susanna Clarke",
+      "award": "Best Novel",
+      "award_year": "2021",
+      "category": "Best Novel",
+      "position": "2021.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2021",
+      "title": "Piranesi"
+    },
+    {
+      "author": "P. Dj\u00e8l\u00ed Clark",
+      "award": "Best Novel",
+      "award_year": "2022",
+      "category": "Best Novel",
+      "position": "2022",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2022",
+      "title": "A Master of Djinn"
+    },
+    {
+      "author": "Arkady Martine",
+      "award": "Best Novel",
+      "award_year": "2022",
+      "category": "Best Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2022",
+      "title": "A Desolation Called Peace"
+    },
+    {
+      "author": "S. B. Divya",
+      "award": "Best Novel",
+      "award_year": "2022",
+      "category": "Best Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2022",
+      "title": "Machinehood"
+    },
+    {
+      "author": "Jason Sanford",
+      "award": "Best Novel",
+      "award_year": "2022",
+      "category": "Best Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2022",
+      "title": "Plague Birds"
+    },
+    {
+      "author": "C. L. Clark",
+      "award": "Best Novel",
+      "award_year": "2022",
+      "category": "Best Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2022",
+      "title": "The Unbroken"
+    },
+    {
+      "author": "R. F. Kuang",
+      "award": "Best Novel",
+      "award_year": "2023",
+      "category": "Best Novel",
+      "position": "2023",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2023",
+      "title": "Babel"
+    },
+    {
+      "author": "Travis Baldree",
+      "award": "Best Novel",
+      "award_year": "2023",
+      "category": "Best Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2023",
+      "title": "Legends & Lattes"
+    },
+    {
+      "author": "Ray Nayler",
+      "award": "Best Novel",
+      "award_year": "2023",
+      "category": "Best Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2023",
+      "title": "The Mountain in the Sea"
+    },
+    {
+      "author": "T. Kingfisher",
+      "award": "Best Novel",
+      "award_year": "2023",
+      "category": "Best Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2023",
+      "title": "Nettle & Bone"
+    },
+    {
+      "author": "Tamsyn Muir",
+      "award": "Best Novel",
+      "award_year": "2023",
+      "category": "Best Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2023",
+      "title": "Nona the Ninth"
+    },
+    {
+      "author": "Nicola Griffith",
+      "award": "Best Novel",
+      "award_year": "2023",
+      "category": "Best Novel",
+      "position": "2023.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2023",
+      "title": "Spear"
+    },
+    {
+      "author": "Vajra Chandrasekera",
+      "award": "Best Novel",
+      "award_year": "2024",
+      "category": "Best Novel",
+      "position": "2024",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2024",
+      "title": "The Saint of Bright Doors"
+    },
+    {
+      "author": "Wole Talabi",
+      "award": "Best Novel",
+      "award_year": "2024",
+      "category": "Best Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2024",
+      "title": "Shigidi and the Brass Head of Obalufon"
+    },
+    {
+      "author": "Annalee Newitz",
+      "award": "Best Novel",
+      "award_year": "2024",
+      "category": "Best Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2024",
+      "title": "The Terraformers"
+    },
+    {
+      "author": "Ann Leckie",
+      "award": "Best Novel",
+      "award_year": "2024",
+      "category": "Best Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2024",
+      "title": "Translation State"
+    },
+    {
+      "author": "S. L. Huang",
+      "award": "Best Novel",
+      "award_year": "2024",
+      "category": "Best Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2024",
+      "title": "The Water Outlaws"
+    },
+    {
+      "author": "Martha Wells",
+      "award": "Best Novel",
+      "award_year": "2024",
+      "category": "Best Novel",
+      "position": "2024.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2024",
+      "title": "Witch King"
+    },
+    {
+      "author": "John Wiswell",
+      "award": "Best Novel",
+      "award_year": "2025",
+      "category": "Best Novel",
+      "position": "2025",
+      "result": "winner",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2025",
+      "title": "Someone You Can Build a Nest In"
+    },
+    {
+      "author": "Kerstin Hall",
+      "award": "Best Novel",
+      "award_year": "2025",
+      "category": "Best Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2025",
+      "title": "Asunder"
+    },
+    {
+      "author": "Kelly Link",
+      "award": "Best Novel",
+      "award_year": "2025",
+      "category": "Best Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2025",
+      "title": "The Book of Love"
+    },
+    {
+      "author": "Vajra Chandrasekera",
+      "award": "Best Novel",
+      "award_year": "2025",
+      "category": "Best Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2025",
+      "title": "Rakesfall"
+    },
+    {
+      "author": "Yaroslav Barsukov",
+      "award": "Best Novel",
+      "award_year": "2025",
+      "category": "Best Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2025",
+      "title": "Sleeping Worlds Have No Memory"
+    },
+    {
+      "author": "T. Kingfisher",
+      "award": "Best Novel",
+      "award_year": "2025",
+      "category": "Best Novel",
+      "position": "2025.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2025",
+      "title": "A Sorceress Comes to Call"
+    },
+    {
+      "author": "Stephen Graham Jones",
+      "award": "Best Novel",
+      "award_year": "2026",
+      "category": "Best Novel",
+      "position": "2026.01",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2026",
+      "title": "The Buffalo Hunter Hunter"
+    },
+    {
+      "author": "Nnedi Okorafor",
+      "award": "Best Novel",
+      "award_year": "2026",
+      "category": "Best Novel",
+      "position": "2026.02",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2026",
+      "title": "Death of the Author"
+    },
+    {
+      "author": "Emily Tesh",
+      "award": "Best Novel",
+      "award_year": "2026",
+      "category": "Best Novel",
+      "position": "2026.03",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2026",
+      "title": "The Incandescent"
+    },
+    {
+      "author": "R. F. Kuang",
+      "award": "Best Novel",
+      "award_year": "2026",
+      "category": "Best Novel",
+      "position": "2026.04",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2026",
+      "title": "Katabasis"
+    },
+    {
+      "author": "Natalia Theodoridou",
+      "award": "Best Novel",
+      "award_year": "2026",
+      "category": "Best Novel",
+      "position": "2026.05",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2026",
+      "title": "Sour Cherry"
+    },
+    {
+      "author": "John Wiswell",
+      "award": "Best Novel",
+      "award_year": "2026",
+      "category": "Best Novel",
+      "position": "2026.06",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2026",
+      "title": "Wearing the Lion"
+    },
+    {
+      "author": "Daryl Gregory",
+      "award": "Best Novel",
+      "award_year": "2026",
+      "category": "Best Novel",
+      "position": "2026.07",
+      "result": "nominee",
+      "source_url": "https://www.sfadb.com/Nebula_Awards_2026",
+      "title": "When We Were Real"
+    }
+  ],
+  "fetched_at": "2026-05-13T20:57:11Z",
+  "list_id": "nebula_awards_novel",
+  "list_name": "Nebula Awards - Novel",
+  "match_series": false,
+  "notes": [
+    "Official SFWA failed: <urlopen error [Errno 11001] getaddrinfo failed>"
+  ],
+  "parser": "nebula_awards_novel",
+  "schema_version": 1,
+  "source_url": "https://www.sfadb.com/Nebula_Awards"
+}

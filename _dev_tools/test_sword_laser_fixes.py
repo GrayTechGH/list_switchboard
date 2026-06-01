@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 # Add the project root to the path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+SWORD_LASER_SCRAPS = ROOT / '_dev_tools' / 'Scraps Cache' / 'sword and laser'
 
 # Mock the missing modules
 class Dummy:
@@ -131,7 +132,7 @@ def test_march_madness_parsing():
     print("\nTesting March Madness parsing...")
 
     # Load the saved Invisible Library JSON
-    json_path = ROOT / '_dev_tools' / 'sword and laser samples' / 'mm.The Invisible Library.json'
+    json_path = SWORD_LASER_SCRAPS / 'mm.The Invisible Library.json'
     with open(json_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
@@ -159,7 +160,7 @@ def test_march_madness_aurora_page():
     """Test March Madness parsing for Aurora-style table rows with bare numeric percentages."""
     print("\nTesting Aurora March Madness table parsing...")
 
-    json_path = ROOT / '_dev_tools' / 'sword and laser samples' / 'mm.Aurora.json'
+    json_path = SWORD_LASER_SCRAPS / 'mm.Aurora.json'
     with open(json_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
@@ -181,7 +182,7 @@ def test_march_madness_childhoods_end():
     """Test March Madness parsing for Childhood's End poll page"""
     print("\nTesting Childhood's End March Madness poll parsing...")
 
-    json_path = ROOT / '_dev_tools' / 'sword and laser samples' / "mm.Childhood's End.json"
+    json_path = SWORD_LASER_SCRAPS / "mm.Childhood's End.json"
     with open(json_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
@@ -211,7 +212,7 @@ def test_march_madness_the_fifth_season_reassembly():
     """Regression test for The Fifth Season vote line reassembly"""
     print("\nTesting The Fifth Season March Madness reassembly...")
 
-    json_path = ROOT / '_dev_tools' / 'sword and laser samples' / 'mm.The Fifth Season.json'
+    json_path = SWORD_LASER_SCRAPS / 'mm.The Fifth Season.json'
     with open(json_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
@@ -240,7 +241,7 @@ def test_march_madness_enders_game_poll_text():
     """Regression test for Ender's Game poll text parsing to avoid false positives"""
     print("\nTesting Ender's Game March Madness poll text parsing...")
 
-    json_path = ROOT / '_dev_tools' / 'sword and laser samples' / 'mm.Ender\'s Game.json'
+    json_path = SWORD_LASER_SCRAPS / 'mm.Ender\'s Game.json'
     with open(json_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
@@ -274,7 +275,7 @@ def test_march_madness_unshapely_things():
     """Test March Madness parsing for Unshapely Things poll page"""
     print("\nTesting Unshapely Things March Madness parsing...")
 
-    json_path = ROOT / '_dev_tools' / 'sword and laser samples' / 'mm.Unshapely Things.json'
+    json_path = SWORD_LASER_SCRAPS / 'mm.Unshapely Things.json'
     with open(json_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
@@ -304,7 +305,7 @@ def test_march_madness_doomsday_book():
     """Test March Madness parsing for Doomsday Book with quoted author placeholders"""
     print("\nTesting Doomsday Book March Madness parsing...")
 
-    json_path = ROOT / '_dev_tools' / 'sword and laser samples' / 'mm.Doomsday Book.json'
+    json_path = SWORD_LASER_SCRAPS / 'mm.Doomsday Book.json'
     with open(json_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
@@ -334,7 +335,7 @@ def test_march_madness_dawn():
     """Test March Madness parsing for Dawn with quoted author placeholders"""
     print("\nTesting Dawn March Madness parsing...")
 
-    json_path = ROOT / '_dev_tools' / 'sword and laser samples' / 'mm.Dawn.json'
+    json_path = SWORD_LASER_SCRAPS / 'mm.Dawn.json'
     with open(json_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
