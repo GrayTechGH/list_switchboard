@@ -1,0 +1,485 @@
+{
+  "list_id": "locus_all_time_2012_fh_20th_novel",
+  "matches": [
+    {
+      "entry_key": "the lord of the rings|j r r tolkien",
+      "imported_author": "J. R. R. Tolkien",
+      "imported_title": "The Lord of the Rings",
+      "matched_at": "2026-05-27T10:01:02Z",
+      "matched_authors": [
+        "J. R. R. Tolkien"
+      ],
+      "matched_book_id": 37968,
+      "matched_book_ids": [
+        37968,
+        38019,
+        38004
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "J. R. R. Tolkien"
+          ],
+          "matched_book_id": 37968,
+          "matched_title": "The Fellowship of the Ring"
+        },
+        {
+          "matched_authors": [
+            "J. R. R. Tolkien"
+          ],
+          "matched_book_id": 38019,
+          "matched_title": "The Return of the King"
+        },
+        {
+          "matched_authors": [
+            "J. R. R. Tolkien"
+          ],
+          "matched_book_id": 38004,
+          "matched_title": "The Two Towers"
+        }
+      ],
+      "matched_title": "The Two Towers"
+    },
+    {
+      "entry_key": "nine princes in amber|roger zelazny",
+      "imported_author": "Roger Zelazny",
+      "imported_title": "Nine Princes in Amber",
+      "matched_at": "2026-05-27T10:01:02Z",
+      "matched_authors": [
+        "Roger Zelazny"
+      ],
+      "matched_book_id": 23667,
+      "matched_book_ids": [
+        23667
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Roger Zelazny"
+          ],
+          "matched_book_id": 23667,
+          "matched_title": "The Great Book of Amber"
+        }
+      ],
+      "matched_title": "The Great Book of Amber"
+    },
+    {
+      "entry_key": "the lion the witch and the wardrobe|c s lewis",
+      "imported_author": "C. S. Lewis",
+      "imported_title": "The Lion, the Witch and the Wardrobe",
+      "matched_at": "2026-05-27T10:01:02Z",
+      "matched_authors": [
+        "C. S. Lewis"
+      ],
+      "matched_book_id": 8849,
+      "matched_book_ids": [
+        8849
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "C. S. Lewis"
+          ],
+          "matched_book_id": 8849,
+          "matched_title": "The Lion, the Witch and the Wardrobe (The Chronicles of Narnia, #2)"
+        }
+      ],
+      "matched_title": "The Lion, the Witch and the Wardrobe (The Chronicles of Narnia, #2)"
+    },
+    {
+      "entry_key": "a storm of swords|george r r martin",
+      "imported_author": "George R. R. Martin",
+      "imported_title": "A Storm of Swords",
+      "matched_at": "2026-05-27T10:01:02Z",
+      "matched_authors": [
+        "George R. R. Martin"
+      ],
+      "matched_book_id": 20064,
+      "matched_book_ids": [
+        20064
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "George R. R. Martin"
+          ],
+          "matched_book_id": 20064,
+          "matched_title": "A Storm of Swords: The Illustrated Edition"
+        }
+      ],
+      "matched_title": "A Storm of Swords: The Illustrated Edition"
+    },
+    {
+      "entry_key": "the book of the new sun|gene wolfe",
+      "imported_author": "Gene Wolfe",
+      "imported_title": "The Book of the New Sun",
+      "matched_at": "2026-05-27T10:01:02Z",
+      "matched_authors": [
+        "Gene Wolfe"
+      ],
+      "matched_book_id": 15513,
+      "matched_book_ids": [
+        15513,
+        18694
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Gene Wolfe"
+          ],
+          "matched_book_id": 15513,
+          "matched_title": "Shadow & Claw (Books 1-2)"
+        },
+        {
+          "matched_authors": [
+            "Gene Wolfe"
+          ],
+          "matched_book_id": 18694,
+          "matched_title": "Sword & Citadel (Books 3-4)"
+        }
+      ],
+      "matched_title": "Sword & Citadel (Books 3-4)"
+    },
+    {
+      "entry_key": "the swords of lankhmar|fritz leiber",
+      "imported_author": "Fritz Leiber",
+      "imported_title": "The Swords of Lankhmar",
+      "matched_at": "2026-05-27T10:01:02Z",
+      "matched_authors": [
+        "Fritz Leiber",
+        "Jonathan Davis"
+      ],
+      "matched_book_id": 18348,
+      "matched_book_ids": [
+        18348
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Fritz Leiber",
+            "Jonathan Davis"
+          ],
+          "matched_book_id": 18348,
+          "matched_title": "Swords and Deviltry: Lankhmar Book 1 (Books 1-4)"
+        }
+      ],
+      "matched_title": "Swords and Deviltry: Lankhmar Book 1 (Books 1-4)"
+    },
+    {
+      "entry_key": "gormenghast|mervyn peake",
+      "imported_author": "Mervyn Peake",
+      "imported_title": "Gormenghast",
+      "matched_at": "2026-05-27T10:01:02Z",
+      "matched_authors": [
+        "Mervyn Peake"
+      ],
+      "matched_book_id": 36318,
+      "matched_book_ids": [
+        36318
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Mervyn Peake"
+          ],
+          "matched_book_id": 36318,
+          "matched_title": "The Gormenghast Trilogy"
+        }
+      ],
+      "matched_title": "The Gormenghast Trilogy"
+    },
+    {
+      "entry_key": "the colour of magic|terry pratchett",
+      "imported_author": "Terry Pratchett",
+      "imported_title": "The Colour of Magic",
+      "matched_at": "2026-05-27T10:01:02Z",
+      "matched_authors": [
+        "Terry Pratchett"
+      ],
+      "matched_book_id": 20485,
+      "matched_book_ids": [
+        20485
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Terry Pratchett"
+          ],
+          "matched_book_id": 20485,
+          "matched_title": "The Color of Magic"
+        }
+      ],
+      "matched_title": "The Color of Magic"
+    },
+    {
+      "entry_key": "conan the barbarian|robert e howard",
+      "imported_author": "Robert E. Howard",
+      "imported_title": "Conan the Barbarian",
+      "matched_at": "2026-05-27T10:01:02Z",
+      "matched_authors": [
+        "Robert E. Howard"
+      ],
+      "matched_book_id": 12947,
+      "matched_book_ids": [
+        12947
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Robert E. Howard"
+          ],
+          "matched_book_id": 12947,
+          "matched_title": "Conan the Barbarian: The Stories That Inspired the Movie"
+        }
+      ],
+      "matched_title": "Conan the Barbarian: The Stories That Inspired the Movie"
+    },
+    {
+      "entry_key": "magician|raymond e feist",
+      "imported_author": "Raymond E. Feist",
+      "imported_title": "Magician",
+      "matched_at": "2026-05-27T10:01:02Z",
+      "matched_authors": [
+        "Raymond E. Feist"
+      ],
+      "matched_book_id": 31302,
+      "matched_book_ids": [
+        31302,
+        31301
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Raymond E. Feist"
+          ],
+          "matched_book_id": 31302,
+          "matched_title": "Magician: Apprentice"
+        },
+        {
+          "matched_authors": [
+            "Raymond E. Feist"
+          ],
+          "matched_book_id": 31301,
+          "matched_title": "Magician: Master"
+        }
+      ],
+      "matched_title": "Magician: Master"
+    },
+    {
+      "entry_key": "animal farm|george orwell",
+      "imported_author": "George Orwell",
+      "imported_title": "Animal Farm",
+      "matched_at": "2026-05-27T10:01:02Z",
+      "matched_authors": [
+        "George Orwell",
+        "Christopher Hitchens"
+      ],
+      "matched_book_id": 33819,
+      "matched_book_ids": [
+        33819
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "George Orwell",
+            "Christopher Hitchens"
+          ],
+          "matched_book_id": 33819,
+          "matched_title": "Animal Farm and 1984"
+        }
+      ],
+      "matched_title": "Animal Farm and 1984"
+    },
+    {
+      "entry_key": "lud in the mist|hope mirrlees",
+      "imported_author": "Hope Mirrlees",
+      "imported_title": "Lud-in-the-Mist",
+      "matched_at": "2026-05-27T10:01:02Z",
+      "matched_authors": [
+        "Hope Mirrlees"
+      ],
+      "matched_book_id": 18395,
+      "matched_book_ids": [
+        18395
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Hope Mirrlees"
+          ],
+          "matched_book_id": 18395,
+          "matched_title": "Lud-In-The-Mist by Hope Mirrlees, Fiction, Epic Poetry, Classics"
+        }
+      ],
+      "matched_title": "Lud-In-The-Mist by Hope Mirrlees, Fiction, Epic Poetry, Classics"
+    },
+    {
+      "entry_key": "the dying earth|jack vance",
+      "imported_author": "Jack Vance",
+      "imported_title": "The Dying Earth",
+      "matched_at": "2026-05-27T10:21:38Z",
+      "matched_authors": [
+        "Jack Vance"
+      ],
+      "matched_book_id": 17999,
+      "matched_book_ids": [
+        17999
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Jack Vance"
+          ],
+          "matched_book_id": 17999,
+          "matched_title": "Tales of the Dying Earth"
+        }
+      ],
+      "matched_title": "Tales of the Dying Earth"
+    },
+    {
+      "entry_key": "it|stephen king",
+      "imported_author": "Stephen King",
+      "imported_title": "It",
+      "matched_at": "2026-05-27T10:38:57Z",
+      "matched_authors": [
+        "Conor Grennan"
+      ],
+      "matched_book_id": 10053,
+      "matched_book_ids": [
+        10053
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Conor Grennan"
+          ],
+          "matched_book_id": 10053,
+          "matched_title": "Little Princes: One Man's Promise to Bring Home the Lost Children of Nepal"
+        }
+      ],
+      "matched_title": "Little Princes: One Man's Promise to Bring Home the Lost Children of Nepal"
+    },
+    {
+      "entry_key": "the little prince|antoine de saint exupery",
+      "imported_author": "Antoine de Saint-Exupery",
+      "imported_title": "The Little Prince",
+      "matched_at": "2026-05-27T10:58:51Z",
+      "matched_authors": [
+        "Antoine de Saint-Exup\u00e9ry"
+      ],
+      "matched_book_id": 39103,
+      "matched_book_ids": [
+        39103
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Antoine de Saint-Exup\u00e9ry"
+          ],
+          "matched_book_id": 39103,
+          "matched_title": "The Little Prince"
+        }
+      ],
+      "matched_title": "The Little Prince"
+    },
+    {
+      "entry_key": "the crystal cave|mary stewart",
+      "imported_author": "Mary Stewart",
+      "imported_title": "The Crystal Cave",
+      "matched_at": "2026-05-27T11:14:32Z",
+      "matched_authors": [
+        "Mary Stewart"
+      ],
+      "matched_book_id": 39104,
+      "matched_book_ids": [
+        39104
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Mary Stewart"
+          ],
+          "matched_book_id": 39104,
+          "matched_title": "The Crystal Cave: The Spellbinding Story of Merlin"
+        }
+      ],
+      "matched_title": "The Crystal Cave: The Spellbinding Story of Merlin"
+    },
+    {
+      "entry_key": "the chronicles of thomas covenant the unbeliever|stephen r donaldson",
+      "imported_author": "Stephen R. Donaldson",
+      "imported_title": "The Chronicles of Thomas Covenant the Unbeliever",
+      "matched_at": "2026-05-27T12:34:05Z",
+      "matched_authors": [
+        "Stephen R. Donaldson"
+      ],
+      "matched_book_id": 20070,
+      "matched_book_ids": [
+        20070,
+        20071
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Stephen R. Donaldson"
+          ],
+          "matched_book_id": 20070,
+          "matched_title": "The Illearth War"
+        },
+        {
+          "matched_authors": [
+            "Stephen R. Donaldson"
+          ],
+          "matched_book_id": 20071,
+          "matched_title": "Power That Preserves"
+        }
+      ],
+      "matched_title": "Power That Preserves"
+    },
+    {
+      "entry_key": "earthsea|ursula k le guin",
+      "imported_author": "Ursula K. Le Guin",
+      "imported_title": "Earthsea",
+      "matched_at": "2026-05-27T12:35:07Z",
+      "matched_authors": [
+        "Ursula K. le Guin"
+      ],
+      "matched_book_id": 32305,
+      "matched_book_ids": [
+        32305,
+        32303
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Ursula K. le Guin"
+          ],
+          "matched_book_id": 32305,
+          "matched_title": "The Tombs of Atuan"
+        },
+        {
+          "matched_authors": [
+            "Ursula K. le Guin"
+          ],
+          "matched_book_id": 32303,
+          "matched_title": "The Farthest Shore"
+        }
+      ],
+      "matched_title": "The Farthest Shore"
+    },
+    {
+      "entry_key": "titus groan|mervyn peake",
+      "ignored": true,
+      "imported_author": "Mervyn Peake",
+      "imported_title": "Titus Groan",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-05-27T13:18:39Z"
+    }
+  ],
+  "saved_at": "2026-05-27T13:18:39Z",
+  "schema_version": 1
+}

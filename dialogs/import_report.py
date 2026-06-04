@@ -31,6 +31,97 @@ IMPORT_REVIEW_HEADERS = [
 ]
 IMPORT_REVIEW_FIXED_COLUMNS = (0, 3, 4, 5)
 IMPORT_REVIEW_STRETCH_COLUMNS = (1, 2)
+POSITION_PROBLEM_HEADERS = ['Position', 'ID', 'Title', 'Author']
+
+
+class ActiveListPositionProblemsDialog(QDialog):
+
+  def __init__(self, parent, list_name, rows, view_book_callback=None):
+    QDialog.__init__(self, parent)
+    self.list_name = list_name
+    self.rows = list(rows or [])
+    self.view_book_callback = view_book_callback
+    self.setWindowTitle('Active List position problems')
+
+    layout = QVBoxLayout()
+    self.setLayout(layout)
+    label = QLabel(
+      f'Current Active List books in "{list_name}" use positions not found in the imported recipe.',
+      self)
+    label.setWordWrap(True)
+    layout.addWidget(label)
+
+    self.problem_table = QTableWidget(self)
+    self.problem_table.setColumnCount(4)
+    self.problem_table.setHorizontalHeaderLabels(POSITION_PROBLEM_HEADERS)
+    self.problem_table.setSelectionBehavior(QTableWidget.SelectionBehavior.SelectRows)
+    self.problem_table.setEditTriggers(QTableWidget.EditTrigger.NoEditTriggers)
+    self.configure_table_columns()
+    layout.addWidget(self.problem_table)
+
+    buttons = QDialogButtonBox(QDialogButtonBox.Close, self)
+    self.view_book_button = None
+    if self.view_book_callback is not None:
+      self.view_book_button = QPushButton('View book', self)
+      buttons.addButton(self.view_book_button, QDialogButtonBox.ActionRole)
+      self.view_book_button.clicked.connect(self.view_selected_book)
+      self.problem_table.currentCellChanged.connect(self.update_view_book_button)
+    buttons.rejected.connect(self.reject)
+    layout.addWidget(buttons)
+
+    self.update_table()
+    self.resize(780, 420)
+
+  def configure_table_columns(self):
+    header = self.problem_table.horizontalHeader()
+    header.setSectionResizeMode(0, self.header_resize_mode('ResizeToContents'))
+    header.setSectionResizeMode(1, self.header_resize_mode('ResizeToContents'))
+    header.setSectionResizeMode(2, self.header_resize_mode('Stretch'))
+    header.setSectionResizeMode(3, self.header_resize_mode('Stretch'))
+
+  def header_resize_mode(self, mode_name):
+    try:
+      return getattr(QHeaderView.ResizeMode, mode_name)
+    except AttributeError:
+      return getattr(QHeaderView, mode_name)
+
+  def row_values(self, row):
+    return [
+      row.get('position', ''),
+      row.get('book_id', ''),
+      row.get('title', ''),
+      row.get('author', ''),
+    ]
+
+  def update_table(self):
+    self.problem_table.setRowCount(len(self.rows))
+    for row_index, row in enumerate(self.rows):
+      for column, value in enumerate(self.row_values(row)):
+        self.problem_table.setItem(row_index, column, QTableWidgetItem(str(value or '')))
+    if self.rows:
+      self.problem_table.setCurrentCell(0, 0)
+    self.update_view_book_button()
+
+  def selected_row(self):
+    row = self.problem_table.currentRow()
+    if row < 0 or row >= len(self.rows):
+      return None
+    return self.rows[row]
+
+  def update_view_book_button(self, *_args):
+    if self.view_book_button is not None:
+      self.view_book_button.setEnabled(self.selected_row() is not None)
+
+  def view_selected_book(self):
+    row = self.selected_row()
+    if row is None or self.view_book_callback is None:
+      return
+    try:
+      self.view_book_callback(row.get('book_id'), parent=self)
+    except TypeError as err:
+      if 'parent' not in str(err) and 'keyword' not in str(err):
+        raise
+      self.view_book_callback(row.get('book_id'))
 
 
 class ImportReportDialog(QDialog):
@@ -48,9 +139,10 @@ class ImportReportDialog(QDialog):
       missing_entries=None, allow_deep_recovery=False, notes=None,
       review_rows=None, find_match_settings=None, save_find_match_settings=None,
       find_match_index_callback=None, find_match_callback=None, view_book_callback=None,
-      selected_match_source_callback=None):
+      selected_match_source_callback=None, position_problem_rows=None):
     QDialog.__init__(self, parent)
     self.list_name = list_name
+    self.position_problem_rows = list(position_problem_rows or [])
     self.review_rows = [
       self.normalized_review_row(row) for row in (review_rows or [])
     ]
@@ -69,7 +161,7 @@ class ImportReportDialog(QDialog):
     self.view_book_callback = view_book_callback
     self.selected_match_source_callback = selected_match_source_callback
     self.deep_recovery_requested = False
-    self.setWindowTitle('Import List Review')
+    self.setWindowTitle('Active List Review')
     notes = [note for note in (notes or []) if note]
     note_text = '\n' + '\n'.join(notes) if notes else ''
 
@@ -118,6 +210,10 @@ class ImportReportDialog(QDialog):
     action_layout.addWidget(self.find_button)
     action_layout.addWidget(self.match_mode_button)
     action_layout.addSpacing(12)
+    self.position_problems_button = None
+    if self.position_problem_rows:
+      self.position_problems_button = QPushButton('Show position problems', self)
+      action_layout.addWidget(self.position_problems_button)
     self.copy_button = QPushButton('Copy view', self)
     action_layout.addWidget(self.copy_button)
     if allow_deep_recovery and missing_entries:
@@ -137,6 +233,8 @@ class ImportReportDialog(QDialog):
     self.toggle_button.clicked.connect(self.toggle_selected_match)
     self.find_button.clicked.connect(self.open_find_matches)
     self.match_mode_button.clicked.connect(self.open_match_mode)
+    if self.position_problems_button is not None:
+      self.position_problems_button.clicked.connect(self.open_position_problems)
     self.copy_button.clicked.connect(self.copy_current_view)
     self.update_table()
     self.resize(*self.initial_report_size())
@@ -592,6 +690,12 @@ class ImportReportDialog(QDialog):
 
   def copy_current_view(self):
     QApplication.clipboard().setText(self.current_view_csv())
+
+  def open_position_problems(self):
+    d = ActiveListPositionProblemsDialog(
+      self, self.list_name, self.position_problem_rows,
+      view_book_callback=self.view_book_callback)
+    d.exec()
 
   def accepted_matched(self):
     matched = {}

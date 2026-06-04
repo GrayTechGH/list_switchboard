@@ -50,6 +50,7 @@ calibre_ebooks_metadata.title_sort = lambda value: (
   value[4:] + ', The' if value.startswith('The ') else value)
 calibre_gui2 = types.ModuleType('calibre.gui2')
 calibre_gui2.error_dialog = Dummy()
+calibre_gui2.info_dialog = Dummy()
 calibre_gui2.question_dialog = Dummy()
 sys.modules.setdefault('calibre', calibre)
 sys.modules.setdefault('calibre.ebooks', calibre_ebooks)
@@ -65,6 +66,7 @@ sys.modules.setdefault('calibre_plugins.list_switchboard', list_switchboard_pack
 sys.modules.setdefault('calibre_plugins.list_switchboard.config', config_module)
 
 import main
+import import_flow
 import list_state
 import dialogs.import_find as import_find_module
 import dialogs.import_report as import_report_module
@@ -646,6 +648,178 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertEqual({102: 'r/Fantasy Top Novels 2025'}, captured.get('active_updates'))
     self.assertEqual({102: 2.0}, captured.get('active_index_updates'))
 
+  def test_manage_active_list_reviews_cached_import_and_applies_changes(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    core.ensure_configured = lambda: True
+    core.current_active = lambda: 'Example List'
+    core.import_cache_for_active_list = lambda _active: {
+      'list_id': 'example_list',
+      'list_name': 'Example List',
+      'entries': [{'position': '1', 'title': 'Book', 'author': 'Author'}],
+      'match_series': True,
+      'notes': ['cached note'],
+    }
+    row = core.import_review_row(
+      {'position': '1', 'title': 'Book', 'author': 'Author'},
+      matched=True,
+      book_ids=[7],
+      match_source='automatic')
+    core.match_imported_entries = lambda entries, **kwargs: ({7: '1'}, [], [row])
+    core.reconcile_review_rows_with_active_list = (
+      lambda list_name, rows, active_name=None, position_problem_rows=None:
+        (rows, ['active note']))
+    position_problem_rows = [{
+      'position': '9',
+      'book_id': 12,
+      'title': 'Off Recipe',
+      'author': 'Author',
+    }]
+    core.active_list_position_problem_rows_for_entries = (
+      lambda _list_name, _entries: position_problem_rows)
+    review_calls = []
+    changed_row = core.import_review_row(
+      {'position': '1', 'title': 'Book', 'author': 'Author'},
+      matched=True,
+      book_ids=[8],
+      matched_books=[{
+        'matched_book_id': 8,
+        'matched_title': 'Book',
+        'matched_authors': ['Author'],
+      }],
+      match_source='manual find')
+
+    def review_import_matches(*args, **kwargs):
+      review_calls.append((args, kwargs))
+      return {8: '1'}, [], [changed_row]
+
+    applied = []
+    core.review_import_matches = review_import_matches
+    core.apply_managed_active_list_review = (
+      lambda list_name, rows: applied.append((list_name, rows)) or 2)
+    messages = []
+    core.status_message = messages.append
+
+    core.manage_active_list()
+
+    self.assertEqual(1, len(review_calls))
+    args, kwargs = review_calls[0]
+    self.assertEqual('Example List', args[0])
+    self.assertEqual('example_list', args[1])
+    self.assertEqual(1, args[2])
+    self.assertEqual(1, args[3])
+    self.assertEqual(['cached note', 'active note'], kwargs['notes'])
+    self.assertEqual(True, kwargs['match_series'])
+    self.assertEqual(False, kwargs['allow_goodreads_recovery'])
+    self.assertEqual(position_problem_rows, kwargs['position_problem_rows'])
+    self.assertEqual([('Example List', [changed_row])], applied)
+    self.assertEqual(
+      'Managed "Example List". Matched 1 book(s); 0 unmatched; updated 2 Active List book(s).',
+      messages[-1])
+
+  def test_show_active_list_position_problems_requires_active_list(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    core.current_active = lambda: None
+
+    with self.assertRaises(main.ListSwitchboardError):
+      core.show_active_list_position_problems_for_current_active_list()
+
+  def test_show_active_list_position_problems_requires_cached_import(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    core.current_active = lambda: 'Example List'
+    core.import_cache_for_active_list = lambda _active: None
+
+    with self.assertRaises(main.ListSwitchboardError):
+      core.show_active_list_position_problems_for_current_active_list()
+
+  def test_show_active_list_position_problems_reports_none_found(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    core.gui = None
+    core.current_active = lambda: 'Example List'
+    core.import_cache_for_active_list = lambda _active: {
+      'list_id': 'example_list',
+      'list_name': 'Example List',
+      'entries': [{'position': '1', 'title': 'Book', 'author': 'Author'}],
+    }
+    core.active_list_position_problem_rows_for_entries = lambda _list_name, _entries: []
+    dialogs = []
+    original_info_dialog = import_flow.info_dialog
+    import_flow.info_dialog = (
+      lambda parent, title, message, show=False:
+        dialogs.append((parent, title, message, show)))
+
+    try:
+      core.show_active_list_position_problems_for_current_active_list()
+    finally:
+      import_flow.info_dialog = original_info_dialog
+
+    self.assertEqual([
+      (None, 'Show position problems', 'No position problems found for "Example List".', True),
+    ], dialogs)
+
+  def test_show_active_list_position_problems_opens_problem_rows(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    core.current_active = lambda: 'Example List'
+    core.import_cache_for_active_list = lambda _active: {
+      'list_id': 'example_list',
+      'list_name': 'Example List',
+      'entries': [{'position': '1', 'title': 'Book', 'author': 'Author'}],
+    }
+    rows = [{
+      'position': '9',
+      'book_id': 8,
+      'title': 'Unknown Position Book',
+      'author': 'Unknown Author',
+    }]
+    core.active_list_position_problem_rows_for_entries = lambda _list_name, _entries: rows
+    viewed = []
+    core.show_active_list_position_problem_rows = (
+      lambda list_name, problem_rows: viewed.append((list_name, problem_rows)))
+
+    core.show_active_list_position_problems_for_current_active_list()
+
+    self.assertEqual([('Example List', rows)], viewed)
+
+  def test_apply_managed_active_list_review_updates_visible_active_matches_only(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    core.active_book_ids_for_list = lambda _list_name: [7, 9, 10]
+    core.active_list_value_matches = lambda book_id, _list_name, _position: book_id == 7
+    captured = {}
+    core.write_fields_with_progress = lambda *args, **kwargs: captured.update({
+      'args': args,
+      'kwargs': kwargs,
+    })
+    rows = [
+      {
+        'entry': {'position': '1', 'title': 'Book', 'author': 'Author'},
+        'imported_position': '1',
+        'matched': True,
+        'book_ids': [8],
+        'original_book_ids': [7],
+        'previous_book_ids': [7],
+      },
+      {
+        'entry': {'position': '2', 'title': 'Other', 'author': 'Author'},
+        'imported_position': '2',
+        'matched': False,
+        'book_ids': [],
+        'original_book_ids': [9],
+        'previous_book_ids': [9],
+      },
+    ]
+
+    updated = core.apply_managed_active_list_review('Example List', rows)
+
+    self.assertEqual(3, updated)
+    self.assertEqual('Manage Active List', captured['args'][0])
+    self.assertEqual({
+      7: '',
+      8: 'Example List',
+      9: '',
+    }, captured['kwargs']['active_updates'])
+    self.assertEqual({8: 1.0}, captured['kwargs']['active_index_updates'])
+    self.assertEqual(True, captured['kwargs']['assign_series_indexes'])
+    self.assertNotIn(10, captured['kwargs']['active_updates'])
+
   def test_import_progress_splits_matching_and_writes(self):
     core = object.__new__(main.ListSwitchboardCore)
     values = []
@@ -739,6 +913,112 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertEqual([], set_field_calls)
     self.assertEqual([set()], refreshed)
 
+  def test_write_fields_bulk_writes_active_series_indexes_for_multiple_books(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    set_field_calls = []
+    set_custom_calls = []
+    progress = []
+    refreshed = []
+    main.prefs['active_list_field'] = '#reading_series'
+    core.active_list_value_matches = lambda _book_id, _value, _position: False
+    core.active_field_is_series = lambda: True
+    core.refresh_books = lambda ids: refreshed.append(ids)
+    core.debug_writes_active_series_field = lambda *_args: None
+    core.debug_writes_finished = lambda *_args: None
+
+    class FakeApi:
+
+      def set_field(self, field, updates, allow_case_change=True):
+        set_field_calls.append((field, updates, allow_case_change))
+
+    class FakeDb:
+      new_api = FakeApi()
+
+      def set_custom(self, *args, **kwargs):
+        set_custom_calls.append((args, kwargs))
+
+    core.db = FakeDb()
+
+    core.write_fields(
+      active_updates={7: 'The Wheel of Time', 8: 'The Wheel of Time'},
+      active_index_updates={7: 1.0, 8: 2.5},
+      progress_callback=lambda count, message: progress.append((count, message)))
+
+    self.assertEqual([
+      ('#reading_series', {7: 'The Wheel of Time [1]', 8: 'The Wheel of Time [2.5]'}, True),
+    ], set_field_calls)
+    self.assertEqual([], set_custom_calls)
+    self.assertEqual([(2, 'Finished Active List metadata updates...')], progress)
+    self.assertEqual([{7, 8}], refreshed)
+
+  def test_write_fields_bulk_clears_active_series_for_multiple_books(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    set_field_calls = []
+    set_custom_calls = []
+    main.prefs['active_list_field'] = '#reading_series'
+    core.active_list_value_matches = lambda _book_id, _value, _position: False
+    core.active_field_is_series = lambda: True
+    core.refresh_books = lambda _ids: None
+    core.debug_writes_active_series_field = lambda *_args: None
+    core.debug_writes_finished = lambda *_args: None
+
+    class FakeApi:
+
+      def set_field(self, field, updates, allow_case_change=True):
+        set_field_calls.append((field, updates, allow_case_change))
+
+    class FakeDb:
+      new_api = FakeApi()
+
+      def set_custom(self, *args, **kwargs):
+        set_custom_calls.append((args, kwargs))
+
+    core.db = FakeDb()
+
+    core.write_fields(active_updates={7: '', 8: ''}, active_index_updates={})
+
+    self.assertEqual([('#reading_series', {7: '', 8: ''}, True)], set_field_calls)
+    self.assertEqual([], set_custom_calls)
+
+  def test_write_fields_keeps_single_active_series_write_on_set_custom(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    set_field_calls = []
+    set_custom_calls = []
+    refreshed = []
+    main.prefs['active_list_field'] = '#reading_series'
+    core.active_list_value_matches = lambda _book_id, _value, _position: False
+    core.active_field_is_series = lambda: True
+    core.refresh_books = lambda ids: refreshed.append(ids)
+    core.debug_writes_active_series_field = lambda *_args: None
+    core.debug_writes_finished = lambda *_args: None
+
+    class FakeApi:
+
+      def set_field(self, field, updates, allow_case_change=True):
+        set_field_calls.append((field, updates, allow_case_change))
+
+    class FakeDb:
+      new_api = FakeApi()
+
+      def set_custom(self, *args, **kwargs):
+        set_custom_calls.append((args, kwargs))
+
+    core.db = FakeDb()
+
+    core.write_fields(
+      active_updates={7: 'The Wheel of Time'},
+      active_index_updates={7: 1.5})
+
+    self.assertEqual([], set_field_calls)
+    self.assertEqual([
+      ((7, 'The Wheel of Time'), {
+        'label': 'reading_series',
+        'extra': 1.5,
+        'allow_case_change': True,
+      }),
+    ], set_custom_calls)
+    self.assertEqual([{7}], refreshed)
+
   def test_add_selected_index_updates_use_next_whole_number_after_current_max(self):
     core = object.__new__(main.ListSwitchboardCore)
     main.prefs['active_list_field'] = '#reading_series'
@@ -762,6 +1042,91 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertEqual(
       {4: 34.0, 5: 35.0},
       core.added_active_index_updates('Current List', {4: 'Current List', 5: 'Current List'}))
+
+  def test_shift_add_reviews_saved_cached_override(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    core.debug_storage_cached_active_add_decision = lambda *_args, **_kwargs: None
+    entry = {
+      'position': '1994.22',
+      'title': 'Nightside the Long Sun',
+      'author': 'Gene Wolfe',
+    }
+    other_entry = {
+      'position': '1994.23',
+      'title': 'Timelike Infinity',
+      'author': 'Stephen Baxter',
+    }
+    calls = []
+
+    def chooser(book_id, entries, candidates, default_index, db, **kwargs):
+      calls.append((book_id, entries, candidates, default_index, db, kwargs))
+      return entry, 1994.22, True
+
+    core._active_add_match_chooser = chooser
+    db = object()
+    result = core.cached_active_match_for_book(
+      38627,
+      {
+        'entries': [entry, other_entry],
+        'override_entries_by_book': {38627: entry},
+      },
+      12.0,
+      db,
+      force_match_review=True,
+      active_list_name='Locus annual SF novel')
+
+    self.assertEqual((entry, 1994.22, False), result)
+    self.assertEqual(1, len(calls))
+    self.assertEqual(38627, calls[0][0])
+    self.assertEqual([entry, other_entry], calls[0][1])
+    self.assertEqual([(0, entry)], calls[0][2])
+    self.assertEqual(12.0, calls[0][3])
+    self.assertIs(db, calls[0][4])
+    self.assertEqual(True, calls[0][5]['initial_show_all'])
+    self.assertIs(entry, calls[0][5]['preferred_entry'])
+    self.assertIs(entry, calls[0][5]['automatic_entry'])
+    self.assertEqual('Locus annual SF novel', calls[0][5]['active_list_name'])
+
+  def test_shift_add_reviews_unique_nonexact_cached_candidate(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    core.debug_storage_cached_active_add_decision = lambda *_args, **_kwargs: None
+    core.debug_storage_cached_active_add_candidates = lambda *_args, **_kwargs: None
+    candidate = {
+      'position': '1994.22',
+      'title': 'Nightside the Long Sun',
+      'author': 'Gene Wolfe',
+    }
+    core.cached_entry_candidates_for_book = (
+      lambda *_args, **_kwargs: [(3, candidate)])
+    calls = []
+
+    def chooser(book_id, entries, candidates, default_index, db, **kwargs):
+      calls.append((book_id, entries, candidates, default_index, db, kwargs))
+      return candidate, 1994.22, True
+
+    core._active_add_match_chooser = chooser
+    db = object()
+    result = core.cached_active_match_for_book(
+      38627,
+      {
+        'entries': [candidate],
+        'exact_entries_by_key': {},
+        'override_entries_by_book': {},
+        'titles': {38627: 'Epiphany of the Long Sun'},
+        'authors': {38627: ['Gene Wolfe']},
+      },
+      12.0,
+      db,
+      force_match_review=True,
+      active_list_name='Locus annual SF novel')
+
+    self.assertEqual((candidate, 1994.22, True), result)
+    self.assertEqual(1, len(calls))
+    self.assertEqual([(3, candidate)], calls[0][2])
+    self.assertEqual(True, calls[0][5]['initial_show_all'])
+    self.assertIs(candidate, calls[0][5]['preferred_entry'])
+    self.assertIsNone(calls[0][5]['automatic_entry'])
+    self.assertEqual('Locus annual SF novel', calls[0][5]['active_list_name'])
 
   def test_match_keys_include_calibre_article_normalized_title(self):
     self.assertIn('hobbit', main.match_keys('The Hobbit'))
@@ -1295,6 +1660,41 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertEqual(
       ['1 current Active List book(s) use positions not found in the imported recipe.'],
       notes)
+
+  def test_active_reconciliation_uses_recipe_positions_for_problem_note(self):
+    core = self.build_active_reconciliation_core(active_ids=[8], active_positions={8: '9'})
+    row = core.import_review_row({
+      'position': '1',
+      'title': 'First Book',
+      'author': 'Author One',
+    })
+    position_problem_rows = core.active_list_position_problem_rows_for_entries(
+      'Example List',
+      [
+        {'position': '1', 'title': 'First Book', 'author': 'Author One'},
+        {'position': '9', 'title': 'Unknown Position Book', 'author': 'Unknown Author'},
+      ])
+
+    _rows, notes = core.reconcile_review_rows_with_active_list(
+      'Example List', [row], active_name='Example List',
+      position_problem_rows=position_problem_rows)
+
+    self.assertEqual([], position_problem_rows)
+    self.assertEqual([], notes)
+
+  def test_active_list_position_problem_rows_include_book_details(self):
+    core = self.build_active_reconciliation_core(active_ids=[8], active_positions={8: '9'})
+
+    rows = core.active_list_position_problem_rows_for_entries(
+      'Example List',
+      [{'position': '1', 'title': 'First Book', 'author': 'Author One'}])
+
+    self.assertEqual([{
+      'position': '9',
+      'book_id': 8,
+      'title': 'Unknown Position Book',
+      'author': 'Unknown Author',
+    }], rows)
 
 
 class ImportReportDialogStateTest(unittest.TestCase):

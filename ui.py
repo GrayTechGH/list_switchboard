@@ -75,6 +75,10 @@ class ListSwitchboardAction(InterfaceAction):
     menu.addSeparator()
 
     active_menu = menu.addMenu('Active List')
+    self.add_menu_action(active_menu, 'Manage Active List...',
+      lambda: self.core().manage_active_list())
+    self.add_menu_action(active_menu, 'Show Position Problems...',
+      lambda: self.core().show_active_list_position_problems())
     self.add_menu_action(active_menu, 'Save Matches',
       lambda: self.core().save_active_matches_for_current_active_list())
     active_menu.addSeparator()
