@@ -5,8 +5,6 @@
 Gumshoe Award parsers.
 """
 
-from bs4 import BeautifulSoup
-
 try:
   from calibre_plugins.list_switchboard.parser.librarything_base import ( # type: ignore
     LibraryThingAwardParserBase,
@@ -33,10 +31,10 @@ class GumshoeWikipediaParser(WikipediaAwardTableParserBase):
   AWARD_NAME = AWARD_NAME
 
   def parse(self, html, base_url, name, category, category_aliases=()):
-    soup = BeautifulSoup(html, 'html.parser')
+    root = self.html_root(html)
     rows = []
     for _heading, table in self.tables_under_category_headings(
-        soup, category, category_aliases, match='contains'):
+        root, category, category_aliases, match='contains'):
       header_map = self.header_map(table)
       rows.extend(self._winner_rows(table, header_map, base_url, category))
       break
@@ -46,11 +44,11 @@ class GumshoeWikipediaParser(WikipediaAwardTableParserBase):
   def _winner_rows(self, table, header_map, base_url, category):
     rows = []
     current_year = None
-    for index, tr in enumerate(table.find_all('tr')):
-      cells = tr.find_all(['td', 'th'], recursive=False)
+    for index, tr in enumerate(self.all_rows(table)):
+      cells = self.direct_cells(tr, include_headers=True)
       if not cells:
         continue
-      if index == 0 and all(cell.name == 'th' for cell in cells):
+      if index == 0 and all(cell.tag == 'th' for cell in cells):
         continue
       year = self.year_from_text(self.clean_cell_text(cells[0])) or current_year
       current_year = year

@@ -16,7 +16,7 @@ Maintenance notes:
 import re
 from urllib.parse import urljoin
 
-from bs4 import BeautifulSoup
+from lxml import html as lxml_html
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import (
@@ -57,9 +57,9 @@ class WWEndAwardParserBase(AwardParserBase):
       sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))))
 
   def parse_rows(self, html, base_url, category, _category_aliases=()):
-    soup = BeautifulSoup(html, 'html.parser')
+    root = lxml_html.fromstring(html or '<html></html>')
     rows = []
-    links = soup.find_all('a', href=True)
+    links = root.xpath('//a[@href]')
     for index, link in enumerate(links):
       year = self.year_from_link(link)
       if year is None:
@@ -96,8 +96,8 @@ class WWEndAwardParserBase(AwardParserBase):
     return rows
 
   def row_from_links(self, title_link, author_link, base_url, year, category, rows):
-    title = self.clean_title(title_link.get_text(' ', strip=True))
-    author = self.clean_author(author_link.get_text(' ', strip=True))
+    title = self.clean_title(self.node_text(title_link))
+    author = self.clean_author(self.node_text(author_link))
     if not title or not author:
       return None
     row = {
@@ -105,7 +105,7 @@ class WWEndAwardParserBase(AwardParserBase):
       'title': title,
       'author': author,
       'result': 'winner' if not rows else 'nominee',
-      'source_url': urljoin(base_url, title_link['href']),
+      'source_url': urljoin(base_url, self.link_href(title_link)),
       'category': category,
       'award': self.AWARD_NAME,
     }
@@ -123,16 +123,23 @@ class WWEndAwardParserBase(AwardParserBase):
     return None, len(links)
 
   def year_from_link(self, link):
-    text = normalize_line(link.get_text(' ', strip=True))
+    text = self.node_text(link)
     if not YEAR_TEXT.match(text):
       return None
     return int(text)
 
   def is_title_link(self, link):
-    return bool(NOVEL_URL.search(link.get('href', '')))
+    return bool(NOVEL_URL.search(self.link_href(link)))
 
   def is_author_link(self, link):
-    return bool(AUTHOR_URL.search(link.get('href', '')))
+    return bool(AUTHOR_URL.search(self.link_href(link)))
+
+  def link_href(self, link):
+    return link.get('href') or ''
+
+  def node_text(self, node):
+    return normalize_line(' '.join(
+      text.strip() for text in node.xpath('.//text()') if text.strip()))
 
   def clean_title(self, value):
     return strip_publication_notes(normalize_line(value)).strip(' "\u201c\u201d,')

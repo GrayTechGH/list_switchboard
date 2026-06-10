@@ -21,7 +21,7 @@ Maintenance notes:
 import re
 from urllib.parse import urljoin
 
-from bs4 import BeautifulSoup
+from lxml import html as lxml_html
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import ( # type: ignore
@@ -104,9 +104,9 @@ class WikipediaAwardTableParserBase(AwardParserBase):
 
   def parse_rows(
       self, html, base_url, category, category_aliases, allowed_results):
-    soup = BeautifulSoup(html, 'html.parser')
+    root = self.html_root(html)
     rows = []
-    for table in soup.find_all('table'):
+    for table in self.all_tables(root):
       header_map = self.header_map(table)
       if not self.has_required_columns(header_map):
         continue
@@ -116,8 +116,8 @@ class WikipediaAwardTableParserBase(AwardParserBase):
     return rows
 
   def header_map(self, table):
-    for tr in table.find_all('tr'):
-      headers = tr.find_all(['th', 'td'], recursive=False)
+    for tr in self.all_rows(table):
+      headers = self.direct_cells(tr, include_headers=True)
       mapped = {}
       for index, header in enumerate(headers):
         key = HEADER_ALIASES.get(
@@ -132,28 +132,29 @@ class WikipediaAwardTableParserBase(AwardParserBase):
     return all(key in header_map for key in ('year', 'title', 'author'))
 
   def tables_under_category_headings(
-      self, soup, category, category_aliases, match='exact'):
+      self, root, category, category_aliases, match='exact'):
     """
     Yield (heading, table) pairs for headings that match the target category.
 
     Maintenance note:
-    This intentionally preserves the current loose `heading.find_next('table')`
-    lookup used by subclasses. It does not enforce section boundaries.
+    This intentionally preserves the loose "first following table" lookup used
+    by subclasses. It does not enforce section boundaries.
     """
     accepted = {
       normalize_heading(value) for value in (category, *category_aliases) if value
     }
-    for heading in soup.find_all(['h2', 'h3', 'h4']):
-      text = normalize_heading(heading.get_text(' ', strip=True))
+    headings = root.xpath('//h2|//h3|//h4')
+    for heading in headings:
+      text = normalize_heading(self.node_text(heading))
       hit = (
         text in accepted if match == 'exact'
         else any(alias and alias in text for alias in accepted)
       )
       if not hit:
         continue
-      table = heading.find_next('table')
-      if table is not None:
-        yield heading, table
+      tables = heading.xpath('following::table[1]')
+      if tables:
+        yield heading, tables[0]
 
   def table_rows(
       self, table, header_map, base_url, category, category_aliases,
@@ -170,14 +171,14 @@ class WikipediaAwardTableParserBase(AwardParserBase):
     header_row_seen = False
     header_indexes = set(header_map.values())
 
-    for tr in table.find_all('tr'):
-      cells = tr.find_all(['td', 'th'], recursive=False)
+    for tr in self.all_rows(table):
+      cells = self.direct_cells(tr, include_headers=True)
       if not cells:
         continue
       if not header_row_seen and self.row_matches_header(cells, header_map):
         header_row_seen = True
         continue
-      if all(index < len(cells) and cells[index].name == 'th'
+      if all(index < len(cells) and cells[index].tag == 'th'
              for index in header_indexes):
         continue
 
@@ -266,10 +267,11 @@ class WikipediaAwardTableParserBase(AwardParserBase):
     return None
 
   def clean_cell_text(self, cell):
-    cell = BeautifulSoup(str(cell), 'html.parser')
-    for node in cell.find_all(['sup', 'style', 'script']):
-      node.decompose()
-    text = normalize_line(cell.get_text(' ', strip=True))
+    text = normalize_line(' '.join(
+      text.strip()
+      for text in cell.xpath(
+        './/text()[not(ancestor::sup or ancestor::style or ancestor::script)]')
+      if text.strip()))
     text = re.sub(r'\s*\[\s*\d+\s*\]\s*', ' ', text)
     return normalize_line(text)
 
@@ -280,8 +282,25 @@ class WikipediaAwardTableParserBase(AwardParserBase):
     return strip_publication_notes(normalize_line(value)).strip(' "\u201c\u201d,')
 
   def first_link_url(self, cell, base_url):
-    link = cell.find('a', href=True)
-    return urljoin(base_url, link['href']) if link is not None else ''
+    hrefs = cell.xpath('(.//a[@href])[1]/@href')
+    return urljoin(base_url, hrefs[0]) if hrefs else ''
+
+  def html_root(self, html):
+    return lxml_html.fromstring(html or '<html></html>')
+
+  def all_tables(self, root):
+    return root.xpath('//table')
+
+  def all_rows(self, table):
+    return table.xpath('.//tr')
+
+  def direct_cells(self, row, include_headers=False):
+    selector = './td|./th' if include_headers else './td'
+    return row.xpath(selector)
+
+  def node_text(self, node):
+    return normalize_line(' '.join(
+      text.strip() for text in node.xpath('.//text()') if text.strip()))
 
   def year_from_text(self, value):
     match = re.search(r'(19|20)\d{2}', value or '')

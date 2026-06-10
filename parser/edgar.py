@@ -14,7 +14,7 @@ Maintenance notes:
 import re
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
-from bs4 import BeautifulSoup
+from lxml import html as lxml_html
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import (
@@ -85,9 +85,9 @@ class EdgarAwardsParser(AwardParserBase):
       notes)
 
   def parse_page(self, html, source_url, default_category):
-    soup = BeautifulSoup(html, 'html.parser')
+    root = lxml_html.fromstring(html or '<html></html>')
     rows = []
-    for table in soup.find_all('table'):
+    for table in root.xpath('//table'):
       headers = self.table_headers(table)
       if not self.has_award_headers(headers):
         continue
@@ -95,11 +95,11 @@ class EdgarAwardsParser(AwardParserBase):
     return rows
 
   def table_headers(self, table):
-    first_row = table.find('tr')
-    if first_row is None:
+    first_rows = table.xpath('.//tr')
+    if not first_rows:
       return []
-    cells = first_row.find_all(['th', 'td'])
-    return [normalize_heading(cell.get_text(' ', strip=True)) for cell in cells]
+    cells = self.direct_cells(first_rows[0], include_headers=True)
+    return [normalize_heading(self.node_text(cell)) for cell in cells]
 
   def has_award_headers(self, headers):
     required = {'award year', 'award category', 'title', 'author s name'}
@@ -107,12 +107,12 @@ class EdgarAwardsParser(AwardParserBase):
 
   def table_rows(self, table, headers, source_url, default_category):
     rows = []
-    for tr in table.find_all('tr')[1:]:
-      cells = tr.find_all(['td', 'th'])
+    for tr in table.xpath('.//tr')[1:]:
+      cells = self.direct_cells(tr, include_headers=True)
       if len(cells) < len(headers):
         continue
       values = {
-        headers[index]: normalize_line(cells[index].get_text(' ', strip=True))
+        headers[index]: self.node_text(cells[index])
         for index in range(min(len(headers), len(cells)))
       }
       year = self.year_from_text(values.get('award year'))
@@ -168,7 +168,15 @@ class EdgarAwardsParser(AwardParserBase):
     ))
 
   def row_is_winner(self, row):
-    return row.find(['strong', 'b']) is not None
+    return bool(row.xpath('.//strong|.//b'))
+
+  def direct_cells(self, row, include_headers=False):
+    selector = './td|./th' if include_headers else './td'
+    return row.xpath(selector)
+
+  def node_text(self, node):
+    return normalize_line(' '.join(
+      text.strip() for text in node.xpath('.//text()') if text.strip()))
 
   def year_from_text(self, value):
     match = re.search(r'(19|20)\d{2}', value or '')

@@ -16,7 +16,7 @@ Maintenance notes:
 import re
 from urllib.parse import urljoin
 
-from bs4 import BeautifulSoup
+from lxml import html as lxml_html
 
 try:
   from calibre_plugins.list_switchboard.parser.base import (
@@ -60,8 +60,8 @@ class BookBrowseBookClubParserBase(ListParserBase):
   )
 
   def parse(self, html, base_url, name, category='BookBrowse Online Book Club'):
-    soup = BeautifulSoup(html, 'html.parser')
-    entries = self.parse_entries(soup, base_url, category)
+    root = lxml_html.fromstring(html or '<html></html>')
+    entries = self.parse_entries(root, base_url, category)
     return {
       'name': name,
       'url': base_url,
@@ -72,8 +72,8 @@ class BookBrowseBookClubParserBase(ListParserBase):
   def parse_entries(self, soup, base_url, category):
     entries = []
     current_year = None
-    for heading in soup.find_all(['h1', 'h2', 'h3']):
-      text = normalize_line(heading.get_text(' ', strip=True))
+    for heading in soup.xpath('//h1|//h2|//h3'):
+      text = self.node_text(heading)
       year = self.year_from_heading(text)
       if year is not None:
         current_year = year
@@ -90,7 +90,7 @@ class BookBrowseBookClubParserBase(ListParserBase):
     return match.group(1) if match is not None else None
 
   def entry_from_heading(self, heading, base_url, year, category, position):
-    title, author = self.title_author_from_text(heading.get_text(' ', strip=True))
+    title, author = self.title_author_from_text(self.node_text(heading))
     if not title or not author:
       return None
     entry = {
@@ -126,8 +126,12 @@ class BookBrowseBookClubParserBase(ListParserBase):
     return value.strip()
 
   def source_url_from_heading(self, heading, base_url):
-    link = heading.find('a', href=True)
-    return urljoin(base_url, link['href']) if link is not None else ''
+    hrefs = heading.xpath('(.//a[@href])[1]/@href')
+    return urljoin(base_url, hrefs[0]) if hrefs else ''
+
+  def node_text(self, node):
+    return normalize_line(' '.join(
+      text.strip() for text in node.xpath('.//text()') if text.strip()))
 
   def include_entry(self, _entry, _heading):
     return True

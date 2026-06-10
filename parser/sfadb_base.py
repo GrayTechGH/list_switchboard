@@ -22,14 +22,14 @@ Maintenance notes:
 import re
 from urllib.parse import urljoin
 
-from bs4 import BeautifulSoup
+from lxml import html as lxml_html
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import (
     AwardParserBase, assign_positions, is_author_suffix, normalize_heading,
     normalize_line, parse_winner_prefix, split_title_author,
     strip_editor_marker, strip_publication_notes, strip_square_notes,
-    strip_tie_marker, text_lines,
+    strip_tie_marker,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
 except ImportError:
@@ -37,7 +37,7 @@ except ImportError:
     AwardParserBase, assign_positions, is_author_suffix, normalize_heading,
     normalize_line, parse_winner_prefix, split_title_author,
     strip_editor_marker, strip_publication_notes, strip_square_notes,
-    strip_tie_marker, text_lines,
+    strip_tie_marker,
   )
   from .generic import position_sort_key
 
@@ -78,8 +78,8 @@ class SFADBParser(AwardParserBase):
 
   def parse(self, overview_html, base_url, name, category, category_aliases,
             fetch_url=None, log=None, progress=None):
-    soup = BeautifulSoup(overview_html, 'html.parser')
-    year_links = self.year_links(soup, base_url)
+    root = html_root(overview_html)
+    year_links = self.year_links(root, base_url)
     entries = []
     notes = []
     self._progress(progress, 0, len(year_links), f'Preparing {name} year pages...')
@@ -108,14 +108,14 @@ class SFADBParser(AwardParserBase):
       sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
       notes)
 
-  def year_links(self, soup, base_url):
+  def year_links(self, root, base_url):
     links = []
     seen = set()
-    for link in soup.find_all('a', href=True):
-      text = link.get_text(' ', strip=True)
+    for link in root.xpath('//a[@href]'):
+      text = node_text(link)
       if not YEAR_LINK.match(text):
         continue
-      url = urljoin(base_url, link['href'])
+      url = urljoin(base_url, link.get('href') or '')
       match = self.YEAR_PAGE_URL.search(url)
       if match is None:
         continue
@@ -127,8 +127,8 @@ class SFADBParser(AwardParserBase):
     return sorted(links, key=lambda item: item['year'])
 
   def parse_year(self, html, source_url, year, category, category_aliases):
-    soup = BeautifulSoup(html, 'html.parser')
-    category_rows = self.category_block_lines(soup, category_aliases)
+    root = html_root(html)
+    category_rows = self.category_block_lines(root, category_aliases)
     if category_rows is not None:
       rows = []
       for line in category_rows:
@@ -138,13 +138,13 @@ class SFADBParser(AwardParserBase):
       return assign_positions(rows, year, tied_winners_share_position=True)
 
     rows = []
-    for line in self.category_lines(text_lines(soup), category_aliases):
+    for line in self.category_lines(xpath_text_lines(root), category_aliases):
       parsed = self.parse_item(line)
       if parsed is not None:
         rows.append(self.build_award_entry(parsed, source_url, year, category))
     return assign_positions(rows, year, tied_winners_share_position=True)
 
-  def category_block_lines(self, soup, aliases):
+  def category_block_lines(self, root, aliases):
     """
     Return item rows from SFADB's div.categoryblock layout when present.
 
@@ -153,18 +153,20 @@ class SFADBParser(AwardParserBase):
     paragraph headings, so callers fall back to text_lines() when no structural
     category blocks are found.
     """
-    blocks = soup.find_all('div', class_='categoryblock')
+    blocks = root.xpath(
+      '//div[contains(concat(" ", normalize-space(@class), " "), " categoryblock ")]')
     if not blocks:
       return None
     normalized_aliases = {normalize_heading(alias) for alias in aliases}
     selected = []
     for block in blocks:
-      heading_node = block.find('div', class_='category')
-      heading = normalize_heading(heading_node.get_text(' ', strip=True) if heading_node else '')
+      heading_nodes = block.xpath(
+        './/div[contains(concat(" ", normalize-space(@class), " "), " category ")]')
+      heading = normalize_heading(node_text(heading_nodes[0]) if heading_nodes else '')
       if heading not in normalized_aliases:
         continue
-      for item in block.find_all('li'):
-        line = normalize_line(item.get_text(' ', strip=True))
+      for item in block.xpath('.//li'):
+        line = node_text(item)
         if line:
           selected.append(line)
     return selected
@@ -206,6 +208,37 @@ class SFADBParser(AwardParserBase):
   def _progress(self, progress, done, total, message):
     if progress is not None:
       progress(done, total, message)
+
+
+def html_root(html):
+  return lxml_html.fromstring(html or '<html></html>')
+
+
+def node_text(node):
+  return normalize_line(' '.join(
+    text.strip() for text in node.xpath('.//text()') if text.strip()))
+
+
+def xpath_text_lines(root):
+  """
+  Extract SFADB text rows after HTML has already been parsed with lxml.
+
+  This is the text-shape path for older SFADB pages that do not expose
+  div.categoryblock containers. It does not duplicate the categoryblock XPath
+  path; it handles a different source shape.
+  """
+  block_lines = [
+    node_text(node)
+    for node in root.xpath('//h1|//h2|//h3|//h4|//p|//li')
+  ]
+  block_lines = [line for line in block_lines if line]
+  if block_lines:
+    return block_lines
+  for br in root.xpath('//br'):
+    br.tail = f'\n{br.tail or ""}'
+  text = root.text_content()
+  text = re.sub(r'\s*\n\s*', '\n', text)
+  return [normalize_line(line) for line in text.splitlines() if normalize_line(line)]
 
 
 # ---------------------------------------------------------------------------

@@ -18,7 +18,7 @@ Maintenance notes:
 import re
 from urllib.parse import urljoin
 
-from bs4 import BeautifulSoup
+from lxml import html as lxml_html
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import (
@@ -59,6 +59,7 @@ class ISFDBAwardParserBase(AwardParserBase):
   - AWARD_NAME: str, used when rows do not expose an award-name column.
   - parse() receives an ISFDB award category/all-records HTML page and returns
     the normal parsed-result dict used by import review and matching.
+  - include_row() receives an lxml row element.
 
   Invariants:
   - Category filtering is applied only when a row exposes a category cell; pages
@@ -95,14 +96,15 @@ class ISFDBAwardParserBase(AwardParserBase):
       sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))))
 
   def parse_rows(self, html, base_url, category, category_aliases):
-    soup = BeautifulSoup(html, 'html.parser')
+    root = lxml_html.fromstring(html or '<html></html>')
     rows = []
+    title_nodes = root.xpath('//title')
     award_year = self.year_from_text(
-      soup.title.get_text(' ', strip=True) if soup.title is not None else '')
-    for table in soup.find_all('table'):
+      self.node_text(title_nodes[0]) if title_nodes else '')
+    for table in root.xpath('//table'):
       header_map = self.header_map(table)
       if self.has_required_columns(header_map):
-        for tr in table.find_all('tr'):
+        for tr in table.xpath('.//tr'):
           parsed = self.parse_table_row(
             tr, header_map, base_url, category, category_aliases)
           if parsed is not None:
@@ -123,19 +125,19 @@ class ISFDBAwardParserBase(AwardParserBase):
     """
     rows = []
     current_year = None
-    for tr in table.find_all('tr'):
-      cells = tr.find_all(['td', 'th'], recursive=False)
+    for tr in table.xpath('.//tr'):
+      cells = self.direct_cells(tr, include_headers=True)
       if not cells:
         continue
       if len(cells) == 1:
-        year = self.year_from_text(cells[0].get_text(' ', strip=True))
+        year = self.year_from_text(self.node_text(cells[0]))
         if year is not None:
           current_year = year
         continue
       if current_year is None or len(cells) < 3:
         continue
       level_cell, title_cell, author_cell = cells[:3]
-      result = self.result_from_level(level_cell.get_text(' ', strip=True))
+      result = self.result_from_level(self.node_text(level_cell))
       title = self.clean_title(self.title_from_cell(title_cell))
       author = self.clean_author(self.author_from_cell(author_cell))
       if not title or not author or result is None:
@@ -164,19 +166,19 @@ class ISFDBAwardParserBase(AwardParserBase):
     """
     rows = []
     current_category = None
-    for tr in table.find_all('tr', recursive=False):
-      cells = tr.find_all('td', recursive=False)
+    for tr in table.xpath('./tr|./tbody/tr'):
+      cells = self.direct_cells(tr)
       if not cells:
         continue
       if len(cells) == 1:
-        heading_text = normalize_line(cells[0].get_text(' ', strip=True))
-        if cells[0].find('a', href=re.compile(r'/award_category\.cgi\?')) is not None:
+        heading_text = self.node_text(cells[0])
+        if cells[0].xpath('.//a[contains(@href, "/award_category.cgi?")]'):
           current_category = heading_text
         continue
       if current_category is None or len(cells) < 3:
         continue
       level_cell, title_cell, author_cell = cells[:3]
-      result = self.result_from_level(level_cell.get_text(' ', strip=True))
+      result = self.result_from_level(self.node_text(level_cell))
       if result is None:
         continue
       if not self.category_matches(current_category, category, category_aliases):
@@ -199,16 +201,16 @@ class ISFDBAwardParserBase(AwardParserBase):
     return rows
 
   def header_map(self, table):
-    first_row = table.find('tr')
-    if first_row is None:
+    first_rows = table.xpath('.//tr')
+    if not first_rows:
       return {}
-    headers = first_row.find_all(['th', 'td'])
+    headers = self.direct_cells(first_rows[0], include_headers=True)
     if not headers:
       return {}
     mapped = {}
     for index, header in enumerate(headers):
       key = self.HEADER_ALIASES.get(
-        normalize_heading(header.get_text(' ', strip=True)))
+        normalize_heading(self.node_text(header)))
       if key is not None and key not in mapped:
         mapped[key] = index
     return mapped
@@ -217,7 +219,7 @@ class ISFDBAwardParserBase(AwardParserBase):
     return all(key in header_map for key in ('title', 'author', 'year', 'level'))
 
   def parse_table_row(self, tr, header_map, base_url, category, category_aliases):
-    cells = tr.find_all(['td', 'th'])
+    cells = tr.xpath('./th|./td')
     if not cells or len(cells) <= max(header_map.values()):
       return None
     title_cell = cells[header_map['title']]
@@ -252,20 +254,28 @@ class ISFDBAwardParserBase(AwardParserBase):
   def cell_text(self, cells, index):
     if index is None or index >= len(cells):
       return ''
-    return normalize_line(cells[index].get_text(' ', strip=True))
+    return self.node_text(cells[index])
 
   def title_from_cell(self, cell):
-    link = cell.find('a', href=re.compile(r'/title\.cgi\?'))
-    if link is None:
-      link = cell.find('a')
-    return link.get_text(' ', strip=True) if link is not None else cell.get_text(' ', strip=True)
+    links = cell.xpath('.//a[contains(@href, "/title.cgi?")]')
+    if not links:
+      links = cell.xpath('.//a')
+    return self.node_text(links[0]) if links else self.node_text(cell)
 
   def author_from_cell(self, cell):
-    return cell.get_text(' ', strip=True)
+    return self.node_text(cell)
 
   def first_record_url(self, cell, base_url):
-    link = cell.find('a', href=True)
-    return urljoin(base_url, link['href']) if link is not None else ''
+    hrefs = cell.xpath('(.//a[@href])[1]/@href')
+    return urljoin(base_url, hrefs[0]) if hrefs else ''
+
+  def direct_cells(self, row, include_headers=False):
+    selector = './td|./th' if include_headers else './td'
+    return row.xpath(selector)
+
+  def node_text(self, node):
+    return normalize_line(' '.join(
+      text.strip() for text in node.xpath('.//text()') if text.strip()))
 
   def year_from_text(self, value):
     match = re.search(r'(19|20)\d{2}', value or '')

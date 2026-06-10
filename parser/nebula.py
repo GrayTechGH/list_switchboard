@@ -14,7 +14,7 @@ Maintenance notes:
 import re
 from urllib.parse import urljoin
 
-from bs4 import BeautifulSoup
+from lxml import html as lxml_html
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import (
@@ -24,7 +24,7 @@ try:
   from calibre_plugins.list_switchboard.parser.base import ListParserBase
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
   from calibre_plugins.list_switchboard.parser.sfadb_base import (
-    SFADBParser, StandardItemMixin, normalize_line, normalize_heading, YEAR_LINK,
+    SFADBParser, StandardItemMixin, normalize_line,
   )
 except ImportError:
   from .award_base import (
@@ -34,7 +34,7 @@ except ImportError:
   from .base import ListParserBase
   from .generic import position_sort_key
   from .sfadb_base import (
-    SFADBParser, StandardItemMixin, normalize_line, normalize_heading, YEAR_LINK,
+    SFADBParser, StandardItemMixin, normalize_line,
   )
 
 
@@ -116,7 +116,9 @@ class NebulaAwardsNovelParser(ListParserBase):
     }
 
   def parse_sfadb(self, html, base_url, fetch_url, log=None, progress=None):
-    return self._parse_sfadb(html, base_url, fetch_url, log, progress)
+    return NebulaSFADBCategoryParser().parse(
+      html, base_url, 'Nebula Awards - Novel', CATEGORY_NAME, ('best novel', 'novel'),
+      fetch_url=fetch_url, log=log, progress=progress)
 
   def parse_item(self, line):
     """
@@ -145,112 +147,29 @@ class NebulaAwardsNovelParser(ListParserBase):
       'result': result,
     }
 
-  def _parse_sfadb(self, html, base_url, fetch_url, log=None, progress=None):
-    from bs4 import BeautifulSoup
-    soup = BeautifulSoup(html, 'html.parser')
-    entries = []
-    notes = []
-    sfadb_base = 'https://www.sfadb.com/' if 'sfadb' in html.lower() else base_url
-    for a in soup.find_all('a'):
-      year_text = a.get_text(strip=True)
-      if not YEAR_LINK.match(year_text) or not a.has_attr('href'):
-        continue
-      year = int(year_text)
-      year_url = urljoin(sfadb_base, a['href'])
-      _progress(progress, year, 0, f'Parsing {self.AWARD_NAME} {year}...')
-      try:
-        year_html = fetch_url(year_url)
-        year_entries = self._parse_year_page(year_html, year_url, year)
-        entries.extend(year_entries)
-        _log(log, 'year-parsed', {'year': year, 'entries': len(year_entries)})
-      except Exception as err:
-        notes.append(f'{self.AWARD_NAME} {year} page could not be fetched: {year_url}: {err}')
-        _log(log, 'fetch-failed', {'url': year_url, 'error': str(err)})
-    return {
-      'name': 'Nebula Awards - Novel',
-      'url': base_url,
-      'entries': sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
-      'notes': notes,
-      'match_series': False,
-    }
-
-  def _parse_year_page(self, html, page_url, year):
-    soup = BeautifulSoup(html, 'html.parser')
-    entries = []
-    category_tags = soup.find_all(['h1', 'h2', 'h3', 'h4', 'p', 'div', 'span', 'td'])
-    for heading in category_tags:
-      heading_text = normalize_heading(heading.get_text())
-      if heading_text not in self.CATEGORY_BOUNDARIES:
-        continue
-      sibling = heading
-      while True:
-        sibling = sibling.find_next_sibling()
-        if sibling is None:
-          break
-        if sibling.name in ('h1', 'h2', 'h3', 'h4', 'p', 'div', 'span', 'td'):
-          next_heading = normalize_heading(sibling.get_text())
-          if next_heading in self.CATEGORY_BOUNDARIES:
-            break
-        if sibling.name in ('ul', 'ol'):
-          for li in sibling.find_all('li'):
-            self._add_sfadb_line(li.get_text(), page_url, year, entries)
-        else:
-          text = sibling.get_text(separator='\n').strip()
-          if '•' in text or text.startswith('-') or text.startswith('*'):
-            for line in text.splitlines():
-              self._add_sfadb_line(line, page_url, year, entries)
-    return entries
-
-  def _add_sfadb_line(self, line, page_url, year, entries):
-    line = normalize_line(re.sub(r'^[•\-\*]\s*', '', line or ''))
-    if not line or ',' not in line:
-      return
-    item = self.parse_item(line)
-    if not item:
-      return
-    position = self._make_position(year, item['result'], entries)
-    entries.append({
-      'title': item['title'],
-      'author': item['author'],
-      'position': position,
-      'source_url': page_url,
-      'award_year': str(year),
-      'award': 'Best Novel',
-      'category': 'Best Novel',
-      'result': item['result'],
-    })
-
-  def _make_position(self, year, result, entries):
-    if result == 'winner':
-      return str(year)
-    suffix_count = sum(1 for e in entries if e['position'] != str(year))
-    return f'{year}.{suffix_count + 1:02d}'
-
 
 def _parse_nebula_page(html, page_url):
-  soup = BeautifulSoup(html, 'html.parser')
+  root = lxml_html.fromstring(html or '<html></html>')
   entries = []
-  for heading in soup.find_all(['h2', 'h3']):
-    year_text = heading.get_text(' ', strip=True)
+  for heading in root.xpath('//h2|//h3'):
+    year_text = _node_text(heading)
     if not YEAR_HEADING.match(year_text):
       continue
     entries.extend(_parse_nebula_year_entries(int(year_text), heading, page_url))
-  return entries, _next_page_url(soup, page_url)
+  return entries, _next_page_url(root, page_url)
 
 
 def _parse_nebula_year_entries(year, heading, page_url):
   rows = []
-  for node in heading.find_all_next():
-    if node is heading:
-      continue
-    if node.name in ('h2', 'h3') and YEAR_HEADING.match(node.get_text(' ', strip=True)):
+  for node in heading.xpath('following::*'):
+    if node.tag in ('h2', 'h3') and YEAR_HEADING.match(_node_text(node)):
       break
-    if node.name == 'li':
-      parsed = _parse_nebula_novel_item(node.get_text(' ', strip=True), year)
+    if node.tag == 'li':
+      parsed = _parse_nebula_novel_item(_node_text(node), year)
       if parsed is None:
         continue
-      link = node.find('a', href=True)
-      parsed['source_url'] = urljoin(page_url, link['href']) if link is not None else page_url
+      hrefs = node.xpath('(.//a[@href])[1]/@href')
+      parsed['source_url'] = urljoin(page_url, hrefs[0]) if hrefs else page_url
       rows.append(parsed)
 
   entries = []
@@ -328,10 +247,17 @@ def _split_nebula_title_author(text):
   return '', ''
 
 
-def _next_page_url(soup, page_url):
-  for link in soup.find_all('a', href=True):
-    if 'Next' in link.get_text(' ', strip=True):
-      return urljoin(page_url, link['href'])
+def _node_text(node):
+  return normalize_line(' '.join(
+    text.strip()
+    for text in node.xpath('.//text()[not(ancestor::script) and not(ancestor::style)]')
+    if text.strip()))
+
+
+def _next_page_url(root, page_url):
+  for link in root.xpath('//a[@href]'):
+    if 'Next' in _node_text(link):
+      return urljoin(page_url, link.get('href') or '')
   return None
 
 

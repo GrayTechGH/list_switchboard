@@ -52,6 +52,12 @@ from .lefty import (
   UrlFetcherLeftyHumorousMysteryNovel,
   UrlFetcherLeftyMysteryNovel,
 )
+from .hammett import UrlFetcherHammettPrize
+from .nero import UrlFetcherNeroAward
+from .strand import (
+  UrlFetcherStrandDebutMystery,
+  UrlFetcherStrandMysteryNovel,
+)
 from .crime_writers_canada import (
   UrlFetcherCrimeWritersOfCanadaFirstNovel,
   UrlFetcherCrimeWritersOfCanadaFrenchCrimeBook,
@@ -93,6 +99,55 @@ from .seiun import (
   UrlFetcherSeiunNonfiction,
 )
 from .sword_and_laser import UrlFetcherSwordAndLaser
+from .pulitzer import (
+  UrlFetcherPulitzerFiction,
+  UrlFetcherPulitzerGeneralNonfiction,
+)
+from .national_book_award import (
+  UrlFetcherNationalBookAwardFiction,
+  UrlFetcherNationalBookAwardNonfiction,
+  UrlFetcherNationalBookAwardYoungPeoplesLiterature,
+)
+from .baillie_gifford import UrlFetcherBaillieGiffordPrize
+from .nbcc import (
+  UrlFetcherNBCCCriticism,
+  UrlFetcherNBCCNonfiction,
+)
+from .pen_america import (
+  UrlFetcherPENDiamonsteinSpielvogelAward,
+  UrlFetcherPENGalbraithAward,
+  UrlFetcherPENJeanSteinBookAward,
+  UrlFetcherPENOpenBookAward,
+)
+from .pen_faulkner_foundation import (
+  UrlFetcherPENFaulknerAward,
+  UrlFetcherPENHemingwayAward,
+)
+from .lukas import (
+  UrlFetcherJAnthonyLukasBookPrize,
+  UrlFetcherMarkLyntonHistoryPrize,
+)
+from .orwell import UrlFetcherOrwellPrizePoliticalWriting
+from .andrew_carnegie import UrlFetcherAndrewCarnegieNonfiction
+from .kirkus import (
+  UrlFetcherKirkusPrizeFiction,
+  UrlFetcherKirkusPrizeNonfiction,
+  UrlFetcherKirkusPrizeYoungReadersLiterature,
+)
+from .womens_prize import (
+  UrlFetcherWomensPrizeFiction,
+  UrlFetcherWomensPrizeNonFiction,
+)
+from .royal_society import UrlFetcherRoyalSocietyScienceBookPrize
+from .booker import (
+  UrlFetcherBookerPrize,
+  UrlFetcherInternationalBookerPrize,
+)
+from .governor_general import (
+  UrlFetcherGovernorGeneralEnglishFiction,
+  UrlFetcherGovernorGeneralEnglishNonfiction,
+  UrlFetcherGovernorGeneralEnglishYoungPeoplesText,
+)
 from .aurora import (
   UrlFetcherAuroraGraphicNovel,
   UrlFetcherAuroraNoveletteNovella,
@@ -249,6 +304,35 @@ URL_FETCHER_CLASSES = (
   UrlFetcherRFantasyTopStandaloneNovels2024,
   UrlFetcherRFantasyTopSelfPublishedNovels2024,
   UrlFetcherSwordAndLaser,
+  UrlFetcherPulitzerFiction,
+  UrlFetcherPulitzerGeneralNonfiction,
+  UrlFetcherNationalBookAwardFiction,
+  UrlFetcherNationalBookAwardNonfiction,
+  UrlFetcherNationalBookAwardYoungPeoplesLiterature,
+  UrlFetcherBaillieGiffordPrize,
+  UrlFetcherNBCCNonfiction,
+  UrlFetcherNBCCCriticism,
+  UrlFetcherPENGalbraithAward,
+  UrlFetcherPENDiamonsteinSpielvogelAward,
+  UrlFetcherPENJeanSteinBookAward,
+  UrlFetcherPENOpenBookAward,
+  UrlFetcherPENFaulknerAward,
+  UrlFetcherPENHemingwayAward,
+  UrlFetcherJAnthonyLukasBookPrize,
+  UrlFetcherMarkLyntonHistoryPrize,
+  UrlFetcherOrwellPrizePoliticalWriting,
+  UrlFetcherAndrewCarnegieNonfiction,
+  UrlFetcherKirkusPrizeFiction,
+  UrlFetcherKirkusPrizeNonfiction,
+  UrlFetcherKirkusPrizeYoungReadersLiterature,
+  UrlFetcherWomensPrizeNonFiction,
+  UrlFetcherWomensPrizeFiction,
+  UrlFetcherRoyalSocietyScienceBookPrize,
+  UrlFetcherBookerPrize,
+  UrlFetcherInternationalBookerPrize,
+  UrlFetcherGovernorGeneralEnglishFiction,
+  UrlFetcherGovernorGeneralEnglishNonfiction,
+  UrlFetcherGovernorGeneralEnglishYoungPeoplesText,
   UrlFetcherHugoAwardsNovel,
   UrlFetcherHugoAwardsNovella,
   UrlFetcherHugoAwardsSeries,
@@ -388,6 +472,10 @@ URL_FETCHER_CLASSES = (
   UrlFetcherBarryPaperbackOriginal,
   UrlFetcherBarryThriller,
   UrlFetcherBarryBritishCrimeNovel,
+  UrlFetcherHammettPrize,
+  UrlFetcherNeroAward,
+  UrlFetcherStrandMysteryNovel,
+  UrlFetcherStrandDebutMystery,
   UrlFetcherCrimeWritersOfCanadaNovel,
   UrlFetcherCrimeWritersOfCanadaFirstNovel,
   UrlFetcherCrimeWritersOfCanadaNonfiction,
