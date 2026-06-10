@@ -6,6 +6,9 @@ Dilys Award parsers.
 """
 
 try:
+  from calibre_plugins.list_switchboard.parser.booknotification_base import (
+    BookNotificationAwardParserBase,
+  )
   from calibre_plugins.list_switchboard.parser.librarything_base import (
     LibraryThingAwardParserBase,
   )
@@ -13,6 +16,7 @@ try:
     WikipediaAwardTableParserBase,
   )
 except ImportError:
+  from .booknotification_base import BookNotificationAwardParserBase
   from .librarything_base import LibraryThingAwardParserBase
   from .wikipedia_base import WikipediaAwardTableParserBase
 
@@ -25,6 +29,10 @@ class DilysLibraryThingParser(LibraryThingAwardParserBase):
 
 
 class DilysWikipediaParser(WikipediaAwardTableParserBase):
+  AWARD_NAME = AWARD_NAME
+
+
+class DilysBookNotificationParser(BookNotificationAwardParserBase):
   AWARD_NAME = AWARD_NAME
 
 
@@ -41,3 +49,8 @@ def parse_dilys_wikipedia(html, base_url, name, category, category_aliases=()):
     category,
     category_aliases,
     allowed_results=('winner', 'shortlisted'))
+
+
+def parse_dilys_booknotification(html, base_url, name, category, category_aliases=()):
+  return DilysBookNotificationParser().parse(
+    html, base_url, name, category, category_aliases)

@@ -19,7 +19,7 @@ Maintenance notes:
 
 import re
 
-from bs4 import BeautifulSoup
+from lxml import html as lxml_html
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import AwardParserBase
@@ -27,7 +27,7 @@ try:
   from calibre_plugins.list_switchboard.parser.sfadb_base import (
     SFADBParser,
     normalize_heading, normalize_line, strip_publication_notes,
-    text_lines, assign_positions,
+    html_root, xpath_text_lines, assign_positions,
   )
 except ImportError:
   from .award_base import AwardParserBase
@@ -35,7 +35,7 @@ except ImportError:
   from .sfadb_base import (
     SFADBParser,
     normalize_heading, normalize_line, strip_publication_notes,
-    text_lines, assign_positions,
+    html_root, xpath_text_lines, assign_positions,
   )
 
 
@@ -92,9 +92,9 @@ def _split_official_row(text):
   return text[:match.start()].strip(), text[match.end():].strip()
 
 
-def _official_tokens(soup):
+def _official_tokens(root):
   started = False
-  for token in soup.stripped_strings:
+  for token in root.xpath('//text()[normalize-space()]'):
     text = normalize_line(token)
     if not text:
       continue
@@ -133,10 +133,10 @@ class OfficialClarkeParser(AwardParserBase):
 
   def parse(self, html, base_url, name=None, category=None,
             category_aliases=None, fetch_url=None, log=None, progress=None):
-    soup = BeautifulSoup(html, 'html.parser')
+    root = lxml_html.fromstring(html or '<html></html>')
     rows_by_year = {}
     current_year = None
-    for token in _official_tokens(soup):
+    for token in _official_tokens(root):
       token_parts = self.year_token_parts(token)
       for year, row_text in token_parts:
         if year is not None:
@@ -214,10 +214,9 @@ class ClarkeParser(SFADBParser):
       fetch_url=fetch_url, log=log, progress=progress)
 
   def parse_year(self, html, source_url, year, category, category_aliases):
-    soup_lines = text_lines(BeautifulSoup(html, 'html.parser'))
     rows = []
     result = None
-    for line in soup_lines:
+    for line in xpath_text_lines(html_root(html)):
       heading = normalize_heading(line)
       if heading in SECTION_RESULTS:
         result = SECTION_RESULTS[heading]

@@ -19,7 +19,7 @@ import re
 import datetime
 from urllib.parse import urljoin
 
-from bs4 import BeautifulSoup
+from lxml import html as lxml_html
 
 try:
   from calibre_plugins.list_switchboard.parser.base import ListParserBase
@@ -69,8 +69,8 @@ class HugoAwardsCategoryParser(ListParserBase):
   APPLY_SFADB_WINNER_FALLBACK = False
 
   def parse(self, history_html, base_url, fetch_url=None, log=None, progress=None):
-    soup = BeautifulSoup(history_html, 'html.parser')
-    year_links = _hugo_year_links(soup, base_url)
+    root = _html_root(history_html)
+    year_links = _hugo_year_links(root, base_url)
     entries = []
     notes = []
     _progress(progress, 0, len(year_links), f'Preparing {self.NAME} year pages...')
@@ -157,18 +157,18 @@ class LodestarAwardParser(HugoAwardsCategoryParser):
   )
 
 
-def _hugo_year_links(soup, base_url):
+def _hugo_year_links(root, base_url):
   links = []
   seen = set()
-  for link in soup.find_all('a', href=True):
-    text = link.get_text(' ', strip=True)
+  for link in root.xpath('//a[@href]'):
+    text = _node_text(link)
     if 'Retro' in text:
       continue
     match = YEAR_LINK.match(text)
     if not match:
       continue
     year = int(match.group(1))
-    url = urljoin(base_url, link['href'])
+    url = urljoin(base_url, link.get('href') or '')
     if year in seen:
       continue
     seen.add(year)
@@ -177,10 +177,10 @@ def _hugo_year_links(soup, base_url):
 
 
 def _parse_hugo_year_category_entries(year, source_url, html, award_name, category, aliases):
-  soup = BeautifulSoup(html, 'html.parser')
-  if not _completed_hugo_year_page(soup, aliases):
+  root = _html_root(html)
+  if not _completed_hugo_year_page(root, aliases):
     return []
-  items = _category_items(soup, aliases)
+  items = _category_items(root, aliases)
   all_nominees = 'finalists were announced' in html.casefold()
   entries = []
   for index, item in enumerate(items):
@@ -235,10 +235,10 @@ def _apply_sfadb_winner_fallback(entries, year, fetch_url, log, notes):
 
 
 def _parse_sfadb_hugo_novel_winner_title(html):
-  soup = BeautifulSoup(html, 'html.parser')
+  root = _html_root(html)
   in_novel = False
   first_winner_title = ''
-  for raw_line in _sfadb_hugo_text_lines(soup):
+  for raw_line in _sfadb_hugo_text_lines(root):
     normalized = _normalize_hugo_text(raw_line)
     if normalized in ('novel', 'best novel'):
       in_novel = True
@@ -257,17 +257,28 @@ def _parse_sfadb_hugo_novel_winner_title(html):
   return first_winner_title
 
 
-def _sfadb_hugo_text_lines(soup):
+def _html_root(html):
+  return lxml_html.fromstring(html or '<html></html>')
+
+
+def _node_text(node):
+  return re.sub(r'\s+', ' ', ' '.join(
+    text.strip()
+    for text in node.xpath('.//text()[not(ancestor::script) and not(ancestor::style)]')
+    if text.strip())).strip()
+
+
+def _sfadb_hugo_text_lines(root):
   lines = []
-  for node in soup.find_all(['h1', 'h2', 'h3', 'h4', 'p', 'li']):
-    line = re.sub(r'\s+', ' ', node.get_text(' ', strip=True)).strip()
+  for node in root.xpath('//h1|//h2|//h3|//h4|//p|//li'):
+    line = _node_text(node)
     if line:
       lines.append(line)
   if lines:
     return lines
   return [
     re.sub(r'\s+', ' ', line).strip()
-    for line in soup.get_text('\n', strip=True).splitlines()
+    for line in root.text_content().splitlines()
     if re.sub(r'\s+', ' ', line).strip()
   ]
 
@@ -280,49 +291,50 @@ def _sfadb_hugo_category_boundary(normalized):
   return bool(re.match(r'^[a-z][a-z /:-]+$', normalized))
 
 
-def _completed_hugo_year_page(soup, aliases):
-  text = soup.get_text(' ', strip=True).casefold()
+def _completed_hugo_year_page(root, aliases):
+  text = _node_text(root).casefold()
   first_alias = aliases[0]
   intro, _, _ = text.partition(first_alias.casefold())
   if any(marker in intro for marker in INCOMPLETE_PAGE_TEXT):
     return False
-  return bool(_category_items(soup, aliases))
+  return bool(_category_items(root, aliases))
 
 
-def _category_items(soup, aliases):
-  heading = _find_category_heading(soup, aliases)
+def _category_items(root, aliases):
+  heading = _find_category_heading(root, aliases)
   if heading is None:
     return []
   items = []
-  for sibling in heading.find_all_next():
-    if sibling is heading:
-      continue
-    if _is_category_boundary(sibling):
+  for node in heading.xpath('following::*'):
+    if _is_category_boundary(node):
       break
-    if sibling.name == 'li':
-      text = sibling.get_text(' ', strip=True)
+    if node.tag == 'li':
+      text = _node_text(node)
       if text:
         items.append(text)
   return items
 
 
-def _find_category_heading(soup, aliases):
+def _find_category_heading(root, aliases):
   normalized_aliases = {_normalize_hugo_text(alias) for alias in aliases}
-  for node in soup.find_all(string=True):
-    if _normalize_hugo_text(str(node)) not in normalized_aliases:
+  for heading in root.xpath('//h1|//h2|//h3|//h4|//h5|//h6|//p|//div'):
+    if _normalize_hugo_text(_node_text(heading)) in normalized_aliases:
+      return heading
+  for text_node in root.xpath('//text()[normalize-space()]'):
+    if _normalize_hugo_text(str(text_node)) not in normalized_aliases:
       continue
-    parent = node.parent
-    while parent is not None and parent.name not in (
+    parent = text_node.getparent()
+    while parent is not None and parent.tag not in (
         'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'div'):
-      parent = parent.parent
-    return parent or node.parent
+      parent = parent.getparent()
+    return parent or text_node.getparent()
   return None
 
 
 def _is_category_boundary(node):
-  if node.name not in ('h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'div'):
+  if node.tag not in ('h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'div'):
     return False
-  text = _normalize_hugo_text(node.get_text(' ', strip=True))
+  text = _normalize_hugo_text(_node_text(node))
   if not text:
     return False
   if bool(CATEGORY_TEXT.match(text)):

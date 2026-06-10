@@ -1,0 +1,215 @@
+{
+  "list_id": "locus_all_time_2012_sf_20th_novel",
+  "matches": [
+    {
+      "entry_key": "dune|frank herbert",
+      "imported_author": "Frank Herbert",
+      "imported_title": "Dune",
+      "matched_at": "2026-05-26T21:06:34Z",
+      "matched_authors": [
+        "Robert A. Heinlein"
+      ],
+      "matched_book_id": 34084,
+      "matched_book_ids": [
+        34084
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Robert A. Heinlein"
+          ],
+          "matched_book_id": 34084,
+          "matched_title": "Citizen of the Galaxy"
+        }
+      ],
+      "matched_title": "Citizen of the Galaxy"
+    },
+    {
+      "entry_key": "the foundation trilogy|isaac asimov",
+      "imported_author": "Isaac Asimov",
+      "imported_title": "The Foundation Trilogy",
+      "matched_at": "2026-05-26T22:08:46Z",
+      "matched_authors": [
+        "Isaac Asimov"
+      ],
+      "matched_book_id": 20813,
+      "matched_book_ids": [
+        20813,
+        20814
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Isaac Asimov"
+          ],
+          "matched_book_id": 20813,
+          "matched_title": "Second Foundation"
+        },
+        {
+          "matched_authors": [
+            "Isaac Asimov"
+          ],
+          "matched_book_id": 20814,
+          "matched_title": "Foundation and Empire"
+        }
+      ],
+      "matched_title": "Second Foundation"
+    },
+    {
+      "entry_key": "nineteen eighty four|george orwell",
+      "imported_author": "George Orwell",
+      "imported_title": "Nineteen Eighty-Four",
+      "matched_at": "2026-05-26T21:34:50Z",
+      "matched_authors": [
+        "George Orwell",
+        "Christopher Hitchens"
+      ],
+      "matched_book_id": 33819,
+      "matched_book_ids": [
+        33819
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "George Orwell",
+            "Christopher Hitchens"
+          ],
+          "matched_book_id": 33819,
+          "matched_title": "Animal Farm and 1984"
+        }
+      ],
+      "matched_title": "Animal Farm and 1984"
+    },
+    {
+      "entry_key": "the book of the new sun|gene wolfe",
+      "imported_author": "Gene Wolfe",
+      "imported_title": "The Book of the New Sun",
+      "matched_at": "2026-05-26T22:11:27Z",
+      "matched_authors": [
+        "Gene Wolfe"
+      ],
+      "matched_book_id": 18694,
+      "matched_book_ids": [
+        18694,
+        15513
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Gene Wolfe"
+          ],
+          "matched_book_id": 18694,
+          "matched_title": "Sword & Citadel (Books 3-4)"
+        },
+        {
+          "matched_authors": [
+            "Gene Wolfe"
+          ],
+          "matched_book_id": 15513,
+          "matched_title": "Shadow & Claw (Books 1-2)"
+        }
+      ],
+      "matched_title": "Shadow & Claw (Books 1-2)"
+    },
+    {
+      "entry_key": "way station|clifford d simak",
+      "imported_author": "Clifford D. Simak",
+      "imported_title": "Way Station",
+      "matched_at": "2026-05-26T21:34:50Z",
+      "matched_authors": [
+        "Clifford D. Simak"
+      ],
+      "matched_book_id": 16958,
+      "matched_book_ids": [
+        16958
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Clifford D. Simak"
+          ],
+          "matched_book_id": 16958,
+          "matched_title": "The Waystation"
+        }
+      ],
+      "matched_title": "The Waystation"
+    },
+    {
+      "entry_key": "the diamond age|neal stephenson",
+      "imported_author": "Neal Stephenson",
+      "imported_title": "The Diamond Age",
+      "matched_at": "2026-05-26T21:34:50Z",
+      "matched_authors": [
+        "Neal Stephenson"
+      ],
+      "matched_book_id": 34902,
+      "matched_book_ids": [
+        34902
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Neal Stephenson"
+          ],
+          "matched_book_id": 34902,
+          "matched_title": "The Diamond Age: Or, a Young Lady's Illustrated Primer"
+        }
+      ],
+      "matched_title": "The Diamond Age: Or, a Young Lady's Illustrated Primer"
+    },
+    {
+      "entry_key": "barrayar|lois mcmaster bujold",
+      "imported_author": "Lois McMaster Bujold",
+      "imported_title": "Barrayar",
+      "matched_at": "2026-05-26T21:34:50Z",
+      "matched_authors": [
+        "Lois McMaster Bujold"
+      ],
+      "matched_book_id": 117,
+      "matched_book_ids": [
+        117
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Lois McMaster Bujold"
+          ],
+          "matched_book_id": 117,
+          "matched_title": "Cordelia's Honor (Books 2-3)"
+        }
+      ],
+      "matched_title": "Cordelia's Honor (Books 2-3)"
+    },
+    {
+      "entry_key": "hard to be a god|arkady boris strugatsky",
+      "imported_author": "Arkady & Boris Strugatsky",
+      "imported_title": "Hard to Be a God",
+      "matched_at": "2026-05-26T22:24:24Z",
+      "matched_authors": [
+        "Arkady Strugatsky",
+        "Boris Strugatsky",
+        "Hari Kunzru",
+        "Olena Bormashenko"
+      ],
+      "matched_book_id": 39098,
+      "matched_book_ids": [
+        39098
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Arkady Strugatsky",
+            "Boris Strugatsky",
+            "Hari Kunzru",
+            "Olena Bormashenko"
+          ],
+          "matched_book_id": 39098,
+          "matched_title": "Hard to Be a God"
+        }
+      ],
+      "matched_title": "Hard to Be a God"
+    }
+  ],
+  "saved_at": "2026-05-26T22:24:24Z",
+  "schema_version": 1
+}

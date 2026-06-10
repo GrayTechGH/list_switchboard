@@ -14,7 +14,7 @@ Maintenance notes:
 import re
 from urllib.parse import urljoin
 
-from bs4 import BeautifulSoup
+from lxml import html as lxml_html
 
 try:
   from calibre_plugins.list_switchboard.parser.base import ListParserBase
@@ -81,23 +81,23 @@ class NommoAwardsParser(ListParserBase):
 
 
 def _parse_nommo_wikipedia_rows(html, base_url, category):
-  soup = BeautifulSoup(html, 'html.parser')
+  root = _html_root(html)
   rows = []
-  for heading in soup.find_all(['h2', 'h3', 'h4']):
-    if _normalize_nommo_heading(heading.get_text(' ', strip=True)) not in _normalized_aliases(category):
+  for heading in root.xpath('//h2|//h3|//h4'):
+    if _normalize_nommo_heading(_node_text(heading)) not in _normalized_aliases(category):
       continue
-    table = heading.find_next('table')
-    if table is None:
+    tables = heading.xpath('following::table[1]')
+    if not tables:
       continue
-    rows.extend(_parse_nommo_table(table, base_url, category))
+    rows.extend(_parse_nommo_table(tables[0], base_url, category))
   return rows
 
 
 def _parse_nommo_table(table, base_url, category):
   rows = []
   current_year = None
-  for tr in table.find_all('tr'):
-    cells = tr.find_all(['td', 'th'])
+  for tr in table.xpath('.//tr'):
+    cells = tr.xpath('./th|./td')
     if len(cells) < 2:
       continue
     cell_texts = [_clean_cell_text(cell) for cell in cells]
@@ -131,7 +131,7 @@ def _parse_nommo_table(table, base_url, category):
 
 
 def _parse_nommo_official_rows(html, source_url, category):
-  lines = _nommo_text_lines(BeautifulSoup(html, 'html.parser'))
+  lines = _nommo_text_lines(_html_root(html))
   rows = []
   current_year = _first_year(lines, source_url)
   in_category = False
@@ -231,13 +231,15 @@ def _merge_rows(rows, fallback_rows):
 
 
 def _clean_cell_text(cell):
-  for sup in cell.find_all('sup'):
-    sup.decompose()
-  return _normalize_nommo_line(cell.get_text(' ', strip=True))
+  return _normalize_nommo_line(' '.join(
+    text.strip()
+    for text in cell.xpath(
+      './/text()[not(ancestor::sup) and not(ancestor::script) and not(ancestor::style)]')
+    if text.strip()))
 
 
 def _cell_has_winner_marker(cell):
-  return '*' in cell.get_text(' ', strip=True)
+  return '*' in _node_text(cell)
 
 
 def _strip_winner_marker(value):
@@ -245,8 +247,8 @@ def _strip_winner_marker(value):
 
 
 def _first_link_url(cell, base_url):
-  link = cell.find('a', href=True)
-  return urljoin(base_url, link['href']) if link is not None else ''
+  hrefs = cell.xpath('(.//a[@href])[1]/@href')
+  return urljoin(base_url, hrefs[0]) if hrefs else ''
 
 
 def _first_year(lines, source_url):
@@ -272,10 +274,21 @@ def _strip_publication_notes(value):
     value = stripped
 
 
-def _nommo_text_lines(soup):
+def _html_root(html):
+  return lxml_html.fromstring(html or '<html></html>')
+
+
+def _node_text(node):
+  return _normalize_nommo_line(' '.join(
+    text.strip()
+    for text in node.xpath('.//text()[not(ancestor::script) and not(ancestor::style)]')
+    if text.strip()))
+
+
+def _nommo_text_lines(root):
   block_lines = [
-    _normalize_nommo_line(node.get_text(' ', strip=True))
-    for node in soup.find_all(['h1', 'h2', 'h3', 'h4', 'p', 'li'])
+    _node_text(node)
+    for node in root.xpath('//h1|//h2|//h3|//h4|//p|//li')
   ]
   return [line for line in block_lines if line]
 

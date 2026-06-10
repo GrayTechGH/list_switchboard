@@ -1,0 +1,768 @@
+{
+  "append_state": {
+    "entry_count": 75,
+    "last_entry_key": "citizen of the galaxy|robert a heinlein",
+    "last_position": "75",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "author": "Frank Herbert",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "1",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Dune"
+    },
+    {
+      "author": "Orson Scott Card",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "2",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Ender's Game"
+    },
+    {
+      "author": "Isaac Asimov",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "3",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "The Foundation Trilogy"
+    },
+    {
+      "author": "Dan Simmons",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "4",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Hyperion"
+    },
+    {
+      "author": "Ursula K. Le Guin",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "5",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "The Left Hand of Darkness"
+    },
+    {
+      "author": "Douglas Adams",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "6",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "The Hitchhiker's Guide to the Galaxy"
+    },
+    {
+      "author": "George Orwell",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "7",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Nineteen Eighty-Four"
+    },
+    {
+      "author": "William Gibson",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "8",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Neuromancer"
+    },
+    {
+      "author": "Alfred Bester",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "9",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "The Stars My Destination"
+    },
+    {
+      "author": "Ray Bradbury",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "10",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Fahrenheit 451"
+    },
+    {
+      "author": "Robert A. Heinlein",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "11",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Stranger in a Strange Land"
+    },
+    {
+      "author": "Robert A. Heinlein",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "12",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "The Moon Is a Harsh Mistress"
+    },
+    {
+      "author": "Joe Haldeman",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "13",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "The Forever War"
+    },
+    {
+      "author": "Arthur C. Clarke",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "14",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Childhood's End"
+    },
+    {
+      "author": "Larry Niven",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "15",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Ringworld"
+    },
+    {
+      "author": "Ursula K. Le Guin",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "16",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "The Dispossessed"
+    },
+    {
+      "author": "Ray Bradbury",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "17",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "The Martian Chronicles"
+    },
+    {
+      "author": "Neal Stephenson",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "18",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Snow Crash"
+    },
+    {
+      "author": "Walter M. Miller, Jr.",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "19",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "A Canticle for Leibowitz"
+    },
+    {
+      "author": "Frederik Pohl",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "20",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Gateway"
+    },
+    {
+      "author": "Robert A. Heinlein",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "21",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Starship Troopers"
+    },
+    {
+      "author": "Philip K. Dick",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "22",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "The Man in the High Castle"
+    },
+    {
+      "author": "Roger Zelazny",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "23",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Lord of Light"
+    },
+    {
+      "author": "Gene Wolfe",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "24",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "The Book of the New Sun"
+    },
+    {
+      "author": "Stanislaw Lem",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "25",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Solaris"
+    },
+    {
+      "author": "Philip K. Dick",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "26",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Do Androids Dream of Electric Sheep?"
+    },
+    {
+      "author": "Vernor Vinge",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "27",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "A Fire Upon The Deep"
+    },
+    {
+      "author": "Arthur C. Clarke",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "28",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Rendezvous with Rama"
+    },
+    {
+      "author": "Aldous Huxley",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "29",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Brave New World"
+    },
+    {
+      "author": "Arthur C. Clarke",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "30",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "2001: A Space Odyssey"
+    },
+    {
+      "author": "Kurt Vonnegut, Jr.",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "31",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Slaughterhouse-Five"
+    },
+    {
+      "author": "Arkady & Boris Strugatsky",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "32",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Roadside Picnic"
+    },
+    {
+      "author": "Orson Scott Card",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "33",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Speaker for the Dead"
+    },
+    {
+      "author": "John Brunner",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "34",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Stand on Zanzibar"
+    },
+    {
+      "author": "Kim Stanley Robinson",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "35",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Red Mars"
+    },
+    {
+      "author": "Larry Niven & Jerry Pournelle",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "36",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "The Mote in God's Eye"
+    },
+    {
+      "author": "Connie Willis",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "37",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Doomsday Book"
+    },
+    {
+      "author": "Margaret Atwood",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "38",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "The Handmaid's Tale"
+    },
+    {
+      "author": "Theodore Sturgeon",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "39",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "More Than Human"
+    },
+    {
+      "author": "Clifford D. Simak",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "40",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "City"
+    },
+    {
+      "author": "David Brin",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "41",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Startide Rising"
+    },
+    {
+      "author": "Isaac Asimov",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "42",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Foundation"
+    },
+    {
+      "author": "Philip Jos\u00e9 Farmer",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "43",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "To Your Scattered Bodies Go"
+    },
+    {
+      "author": "Philip K. Dick",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "44",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Ubik"
+    },
+    {
+      "author": "Kurt Vonnegut, Jr.",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "45",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Cat's Cradle"
+    },
+    {
+      "author": "Vernor Vinge",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "46",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "A Deepness in the Sky"
+    },
+    {
+      "author": "Clifford D. Simak",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "47",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Way Station"
+    },
+    {
+      "author": "John Wyndham",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "48",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "The Day of the Triffids"
+    },
+    {
+      "author": "Neal Stephenson",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "49",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Cryptonomicon"
+    },
+    {
+      "author": "Samuel R. Delany",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "50",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Dhalgren"
+    },
+    {
+      "author": "Daniel Keyes",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "50",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Flowers for Algernon"
+    },
+    {
+      "author": "Alfred Bester",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "52",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "The Demolished Man"
+    },
+    {
+      "author": "Neal Stephenson",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "53",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "The Diamond Age"
+    },
+    {
+      "author": "Mary Doria Russell",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "54",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "The Sparrow"
+    },
+    {
+      "author": "Philip K. Dick",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "55",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "A Scanner Darkly"
+    },
+    {
+      "author": "Isaac Asimov",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "56",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "The Caves of Steel"
+    },
+    {
+      "author": "Iain M. Banks",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "56",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Use of Weapons"
+    },
+    {
+      "author": "Arkady & Boris Strugatsky",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "58",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Hard to Be a God"
+    },
+    {
+      "author": "Samuel R. Delany",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "59",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Nova"
+    },
+    {
+      "author": "Michael Crichton",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "60",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Jurassic Park"
+    },
+    {
+      "author": "Robert A. Heinlein",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "61",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "The Door Into Summer"
+    },
+    {
+      "author": "Madeleine L'Engle",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "62",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "A Wrinkle in Time"
+    },
+    {
+      "author": "Iain M. Banks",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "63",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "The Player of Games"
+    },
+    {
+      "author": "Arthur C. Clarke",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "63",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "The City and the Stars"
+    },
+    {
+      "author": "Lois McMaster Bujold",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "65",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Memory"
+    },
+    {
+      "author": "Isaac Asimov",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "66",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "The End of Eternity"
+    },
+    {
+      "author": "George R. Stewart",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "67",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Earth Abides"
+    },
+    {
+      "author": "Anthony Burgess",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "68",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "A Clockwork Orange"
+    },
+    {
+      "author": "Robert A. Heinlein",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "68",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Double Star"
+    },
+    {
+      "author": "Lois McMaster Bujold",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "70",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Barrayar"
+    },
+    {
+      "author": "Maureen F. McHugh",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "71",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "China Mountain Zhang"
+    },
+    {
+      "author": "Olaf Stapledon",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "71",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Last and First Men"
+    },
+    {
+      "author": "C. J. Cherryh",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "73",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Cyteen"
+    },
+    {
+      "author": "Anne McCaffrey",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "74",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Dragonflight"
+    },
+    {
+      "author": "Robert A. Heinlein",
+      "award": "Locus Poll",
+      "category": "All-Time 20th Century SF Novel",
+      "poll_year": "2012",
+      "position": "75",
+      "result": "ranked",
+      "source_url": "https://www.sfadb.com/Locus_2012_SF20th",
+      "title": "Citizen of the Galaxy"
+    }
+  ],
+  "fetched_at": "2026-05-26T21:21:25Z",
+  "list_id": "locus_all_time_2012_sf_20th_novel",
+  "list_name": "Locus - All-Time 2012 20th Century SF Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "locus_all_time_2012_sf_20th_novel",
+  "schema_version": 1,
+  "source_url": "https://www.sfadb.com/Locus_2012_SF20th"
+}

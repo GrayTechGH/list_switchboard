@@ -11,9 +11,9 @@ Maintenance notes:
 - Active List fields are expected to be Calibre series fields. Series index
   lookup is deliberately defensive because Calibre exposes custom series index
   columns differently across versions and field types.
-- Do not replace set_custom() in write_active_series_values() with new_api
-  set_field() for series fields; set_custom() is what writes the series value
-  and its index together.
+- Multi-book Active List series writes use new_api.set_field() with values
+  formatted as "List Name [index]"; Calibre parses those paired indexes and
+  writes the series index field in the same series-field operation.
 """
 
 import math
@@ -87,7 +87,7 @@ class MetadataMixin:
 
   Type constraints:
   - self.db must be a Calibre database-like object with new_api, field_metadata,
-    prefs, and set_custom.
+    prefs, and set_custom for one-book Active List writes.
   - prefs['active_list_field'] must refer to a series field before writes that
     assign positions are attempted.
 
@@ -432,6 +432,9 @@ class MetadataMixin:
     field = prefs['active_list_field']
     label = field[1:] if field.startswith('#') else field
     self.debug_writes_active_series_field(field, label, active_updates, index_updates)
+    if len(active_updates) > 1:
+      self.write_active_series_values_bulk(field, active_updates, index_updates, progress_callback)
+      return
     total = len(active_updates)
     for index, (book_id, value) in enumerate(active_updates.items(), start=1):
       extra = index_updates.get(book_id) if index_updates else None
@@ -445,6 +448,29 @@ class MetadataMixin:
         raise ListSwitchboardError(
           f'Could not write "{clean_name(value)}" to the Active List Field for '
           f'{self.book_summary(book_id)}: {err}')
+
+  def write_active_series_values_bulk(self, field, active_updates, index_updates, progress_callback=None):
+    bulk_updates = {
+      book_id: self.active_series_bulk_value(book_id, value, index_updates)
+      for book_id, value in active_updates.items()
+    }
+    try:
+      self.db.new_api.set_field(field, bulk_updates, allow_case_change=True)
+      if progress_callback is not None:
+        progress_callback(len(active_updates), 'Finished Active List metadata updates...')
+    except Exception as err:
+      raise ListSwitchboardError(
+        f'Could not write {len(active_updates)} Active List metadata updates '
+        f'to the Active List Field "{field}": {err}')
+
+  def active_series_bulk_value(self, book_id, value, index_updates):
+    value = clean_name(value)
+    if not value:
+      return ''
+    if not index_updates or book_id not in index_updates:
+      return value
+    position = self.normalized_position_text(index_updates.get(book_id))
+    return format_list_entry(value, position)
 
   def repair_missing_stored_positions(self):
     index_field = self.active_series_index_field()

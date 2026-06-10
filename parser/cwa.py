@@ -14,7 +14,7 @@ Maintenance notes:
 import re
 from urllib.parse import urljoin
 
-from bs4 import BeautifulSoup
+from lxml import html as lxml_html
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import (
@@ -83,27 +83,27 @@ class CWADaggerParser(AwardParserBase):
       notes)
 
   def parse_page(self, html, source_url, category):
-    soup = BeautifulSoup(html, 'html.parser')
+    root = lxml_html.fromstring(html or '<html></html>')
     rows = []
-    for card in self.result_cards(soup, category):
+    for card in self.result_cards(root, category):
       row = self.parse_card(card, source_url, category)
       if row is not None:
         rows.append(row)
     return rows
 
-  def result_cards(self, soup, category):
+  def result_cards(self, root, category):
     seen = set()
-    for link in soup.find_all('a', href=True):
-      text = normalize_line(link.get_text(' ', strip=True))
+    for link in root.xpath('//a[@href]'):
+      text = self.node_text(link)
       if self.looks_like_result_text(text, category):
         ident = id(link)
         if ident not in seen:
           seen.add(ident)
           yield link
-    for node in soup.find_all(['article', 'div', 'li']):
-      text = normalize_line(node.get_text(' ', strip=True))
+    for node in root.xpath('//article|//div|//li'):
+      text = self.node_text(node)
       if self.looks_like_result_text(text, category):
-        if node.find('a', href=True) is not None:
+        if node.xpath('.//a[@href]'):
           continue
         ident = id(node)
         if ident not in seen:
@@ -139,12 +139,13 @@ class CWADaggerParser(AwardParserBase):
     }
 
   def card_lines(self, card):
-    lines = []
-    for text in card.stripped_strings:
-      line = normalize_line(text)
-      if line:
-        lines.append(line)
-    return lines
+    return [
+      line for line in (
+        normalize_line(text)
+        for text in card.xpath('.//text()')
+      )
+      if line
+    ]
 
   def year_result_match(self, text):
     labels = '|'.join(
@@ -189,11 +190,11 @@ class CWADaggerParser(AwardParserBase):
     return '', ''
 
   def text_by_class(self, card, class_names):
-    for node in card.find_all(True):
-      classes = ' '.join(node.get('class', ()))
+    for node in card.xpath('.//*'):
+      classes = node.get('class') or ''
       normalized_classes = normalize_heading(classes)
       if any(normalize_heading(name) in normalized_classes for name in class_names):
-        return normalize_line(node.get_text(' ', strip=True))
+        return self.node_text(node)
     return ''
 
   def line_is_metadata(self, line, category):
@@ -205,22 +206,27 @@ class CWADaggerParser(AwardParserBase):
     )
 
   def card_url(self, card, source_url):
-    href = card.get('href') if getattr(card, 'name', None) == 'a' else None
+    href = card.get('href') if card.tag == 'a' else None
     if not href:
-      link = card.find('a', href=True)
-      href = link['href'] if link is not None else ''
+      hrefs = card.xpath('(.//a[@href])[1]/@href')
+      href = hrefs[0] if hrefs else ''
     return urljoin(source_url, href) if href else source_url
 
   def next_page_url(self, html, source_url):
-    soup = BeautifulSoup(html, 'html.parser')
-    rel_next = soup.find('a', rel=lambda value: value and 'next' in value)
-    if rel_next is not None and rel_next.get('href'):
-      return urljoin(source_url, rel_next['href'])
-    for link in soup.find_all('a', href=True):
-      text = normalize_line(link.get_text(' ', strip=True)).casefold()
+    root = lxml_html.fromstring(html or '<html></html>')
+    rel_hrefs = root.xpath(
+      '//a[@href and contains(concat(" ", normalize-space(@rel), " "), " next ")]/@href')
+    if rel_hrefs:
+      return urljoin(source_url, rel_hrefs[0])
+    for link in root.xpath('//a[@href]'):
+      text = self.node_text(link).casefold()
       if text in {'next', 'next »', '»'}:
-        return urljoin(source_url, link['href'])
+        return urljoin(source_url, link.get('href'))
     return ''
+
+  def node_text(self, node):
+    return normalize_line(' '.join(
+      text.strip() for text in node.xpath('.//text()') if text.strip()))
 
   def clean_title(self, value):
     return strip_publication_notes(normalize_line(value)).strip(' "\u201c\u201d,')
