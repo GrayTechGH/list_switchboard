@@ -11,9 +11,10 @@ Maintenance notes:
 - Active List fields are expected to be Calibre series fields. Series index
   lookup is deliberately defensive because Calibre exposes custom series index
   columns differently across versions and field types.
-- Do not replace set_custom() in write_active_series_values() with new_api
-  set_field() for series fields; set_custom() is what writes the series value
-  and its index together.
+- Multi-book Active List series writes use new_api.set_field() with formatted
+  "List Name [index]" values so imports can update the series values in bulk.
+  Single-book writes keep set_custom(), which is the safest Calibre API for a
+  one-off series value/index pair.
 """
 
 import math
@@ -432,6 +433,18 @@ class MetadataMixin:
     field = prefs['active_list_field']
     label = field[1:] if field.startswith('#') else field
     self.debug_writes_active_series_field(field, label, active_updates, index_updates)
+    if len(active_updates) > 1:
+      try:
+        self.db.new_api.set_field(
+          field,
+          self.formatted_active_series_updates(active_updates, index_updates))
+        if progress_callback is not None:
+          progress_callback(len(active_updates), 'Finished Active List metadata updates...')
+        return
+      except Exception as err:
+        raise ListSwitchboardError(
+          f'Could not write the Active List Field "{prefs["active_list_field"]}": {err}')
+
     total = len(active_updates)
     for index, (book_id, value) in enumerate(active_updates.items(), start=1):
       extra = index_updates.get(book_id) if index_updates else None
@@ -445,6 +458,18 @@ class MetadataMixin:
         raise ListSwitchboardError(
           f'Could not write "{clean_name(value)}" to the Active List Field for '
           f'{self.book_summary(book_id)}: {err}')
+
+  def formatted_active_series_updates(self, active_updates, index_updates=None):
+    index_updates = index_updates or {}
+    formatted = {}
+    for book_id, value in active_updates.items():
+      name = clean_name(value)
+      if not name:
+        formatted[book_id] = ''
+        continue
+      position = self.normalized_position_text(index_updates.get(book_id))
+      formatted[book_id] = format_list_entry(name, position)
+    return formatted
 
   def repair_missing_stored_positions(self):
     index_field = self.active_series_index_field()

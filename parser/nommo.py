@@ -96,23 +96,33 @@ def _parse_nommo_wikipedia_rows(html, base_url, category):
 def _parse_nommo_table(table, base_url, category):
   rows = []
   current_year = None
+  columns = _default_nommo_table_columns()
   for tr in table.find_all('tr'):
     cells = tr.find_all(['td', 'th'])
     if len(cells) < 2:
       continue
     cell_texts = [_clean_cell_text(cell) for cell in cells]
-    if _normalize_nommo_heading(cell_texts[0]) == 'year':
+    detected_columns = _nommo_table_columns(cell_texts, category)
+    if detected_columns is not None:
+      columns = detected_columns
       continue
     year = _year_from_text(cell_texts[0])
+    offset = 0
     if year is None:
       year = current_year
-      title_index = 0
-      author_index = 1
+      if (
+          columns.get('year') is not None
+          and len(cell_texts) == columns.get('count', 0) - 1):
+        offset = -1
     else:
       current_year = year
-      title_index = 1
-      author_index = 2
-    if year is None or len(cell_texts) <= author_index:
+    title_index = columns['title'] + offset
+    author_index = columns['author'] + offset
+    if (
+        year is None
+        or title_index < 0
+        or author_index < 0
+        or len(cell_texts) <= max(title_index, author_index)):
       continue
     title = _strip_publication_notes(cell_texts[title_index]).strip(' \"\u201c\u201d,')
     author = _strip_winner_marker(_strip_publication_notes(cell_texts[author_index])).strip()
@@ -128,6 +138,35 @@ def _parse_nommo_table(table, base_url, category):
       'category': category,
     })
   return rows
+
+
+def _default_nommo_table_columns():
+  return {'year': 0, 'author': 1, 'title': 2, 'count': 4}
+
+
+def _nommo_table_columns(cell_texts, category):
+  normalized = [_normalize_nommo_heading(text) for text in cell_texts]
+  if not normalized or 'year' not in normalized:
+    return None
+  author_index = None
+  title_index = None
+  title_aliases = _normalized_aliases(category)
+  for index, heading in enumerate(normalized):
+    if heading == 'year':
+      continue
+    if author_index is None and ('author' in heading or 'artist' in heading):
+      author_index = index
+      continue
+    if title_index is None and (heading in title_aliases or heading == 'work'):
+      title_index = index
+  if author_index is None or title_index is None:
+    return None
+  return {
+    'year': normalized.index('year'),
+    'author': author_index,
+    'title': title_index,
+    'count': len(cell_texts),
+  }
 
 
 def _parse_nommo_official_rows(html, source_url, category):

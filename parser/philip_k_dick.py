@@ -16,19 +16,21 @@ Maintenance notes:
 
 import re
 
+from bs4 import BeautifulSoup
+
 try:
   from calibre_plugins.list_switchboard.parser.sfadb_base import (
     SFADBParser,
     normalize_heading, normalize_line,
     strip_publication_notes, strip_square_notes, strip_tie_marker,
-    is_author_suffix, text_lines,
+    split_title_author as award_split_title_author, text_lines,
   )
 except ImportError:
   from .sfadb_base import (
     SFADBParser,
     normalize_heading, normalize_line,
     strip_publication_notes, strip_square_notes, strip_tie_marker,
-    is_author_suffix, text_lines,
+    split_title_author as award_split_title_author, text_lines,
   )
 
 
@@ -60,15 +62,27 @@ def _special_citation_position(year, index):
   return f'{year}.5{index}'
 
 
+def _category_block_rows(soup):
+  rows = []
+  for block in soup.find_all('div', class_='categoryblock'):
+    heading_node = block.find('div', class_='category')
+    heading = normalize_heading(
+      heading_node.get_text(' ', strip=True) if heading_node else '')
+    result = SECTION_RESULTS.get(heading)
+    if result is None:
+      continue
+    for item in block.find_all('li'):
+      line = normalize_line(item.get_text(' ', strip=True))
+      if line:
+        rows.append((line, result))
+  return rows
+
+
 def _split_title_author(text):
   work_text = strip_publication_notes(text)
-  if ',' not in work_text:
-    return '', ''
-  title, author = work_text.rsplit(',', 1)
-  if is_author_suffix(author):
-    title, author_base = title.rsplit(',', 1) if ',' in title else ('', title)
-    author = f'{author_base.strip()}, {author.strip()}'
-  return title.strip(), author.strip()
+  work_text = re.sub(
+    r'\s*,\s*translated\s+by\s+.+$', '', work_text, flags=re.I).strip()
+  return award_split_title_author(work_text)
 
 
 class PhilipKDickParser(SFADBParser):
@@ -87,24 +101,33 @@ class PhilipKDickParser(SFADBParser):
       fetch_url=fetch_url, log=log, progress=progress)
 
   def parse_year(self, html, source_url, year, category, category_aliases):
-    soup_lines = text_lines(__import__('bs4').BeautifulSoup(html, 'html.parser'))
+    soup = BeautifulSoup(html, 'html.parser')
     rows = []
-    result = None
-    for line in soup_lines:
-      heading = normalize_heading(line)
-      if heading in SECTION_RESULTS:
-        result = SECTION_RESULTS[heading]
-        continue
-      if result is None:
-        continue
-      if _is_boundary(line):
-        result = None
-        continue
-      parsed = self.parse_item(line)
-      if parsed is None:
-        continue
-      parsed['result'] = result
-      rows.append(parsed)
+    block_rows = _category_block_rows(soup)
+    if block_rows:
+      for line, result in block_rows:
+        parsed = self.parse_item(line)
+        if parsed is None:
+          continue
+        parsed['result'] = result
+        rows.append(parsed)
+    else:
+      result = None
+      for line in text_lines(soup):
+        heading = normalize_heading(line)
+        if heading in SECTION_RESULTS:
+          result = SECTION_RESULTS[heading]
+          continue
+        if result is None:
+          continue
+        if _is_boundary(line):
+          result = None
+          continue
+        parsed = self.parse_item(line)
+        if parsed is None:
+          continue
+        parsed['result'] = result
+        rows.append(parsed)
 
     entries = []
     suffix_index = 0

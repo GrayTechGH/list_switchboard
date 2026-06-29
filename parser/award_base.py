@@ -65,6 +65,16 @@ def is_author_suffix(value):
   return normalize_line(value).casefold().rstrip('.') in {'jr', 'sr', 'ii', 'iii', 'iv', 'v'}
 
 
+def _split_suffix_coauthor(value):
+  match = re.match(
+    r'^\s*(jr\.?|sr\.?|ii|iii|iv|v)\s*,?\s*(?:&|and|with)\s+(.+)$',
+    value,
+    re.I)
+  if match is None:
+    return None
+  return match.group(1).strip(), match.group(2).strip()
+
+
 def split_title_author(text):
   """
   Split 'Title, Author (publisher)' rows into title and author.
@@ -72,6 +82,7 @@ def split_title_author(text):
   Handles:
   - 'Title, Author, ed.' / 'Title, Author, eds.' editor patterns.
   - Author suffixes like 'Jr.' that should stay attached to the author.
+  - Coauthors after suffixes, such as 'Author, Jr., with Coauthor'.
   """
   work_text = strip_publication_notes(text)
   editor_match = re.match(r'^(.*),\s*(.+?),\s*eds?\.?$', work_text, re.I)
@@ -83,6 +94,18 @@ def split_title_author(text):
   if is_author_suffix(author):
     title, author_base = title.rsplit(',', 1) if ',' in title else ('', title)
     author = f'{author_base.strip()}, {author.strip()}'
+  else:
+    suffix_coauthor = _split_suffix_coauthor(author)
+    if suffix_coauthor is not None and ',' in title:
+      title, author_base = title.rsplit(',', 1)
+      suffix, coauthor = suffix_coauthor
+      author = f'{author_base.strip()}, {suffix} & {coauthor}'
+    elif re.match(r'^\s*(?:&|and|with)\s+', author, re.I) and ',' in title:
+      previous_title, author_suffix = title.rsplit(',', 1)
+      if is_author_suffix(author_suffix) and ',' in previous_title:
+        title, author_base = previous_title.rsplit(',', 1)
+        coauthor = re.sub(r'^\s*(?:&|and|with)\s+', '', author, flags=re.I).strip()
+        author = f'{author_base.strip()}, {author_suffix.strip()} & {coauthor}'
   return title.strip(), author.strip()
 
 

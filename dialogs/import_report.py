@@ -29,8 +29,11 @@ AWARD_FILTER_NOMINEES = 'Nominees only'
 IMPORT_REVIEW_HEADERS = [
   'Position', 'Title', 'Author', 'ID', 'Match', 'Source',
 ]
+IMPORT_REVIEW_ID_COLUMN = 3
 IMPORT_REVIEW_FIXED_COLUMNS = (0, 3, 4, 5)
 IMPORT_REVIEW_STRETCH_COLUMNS = (1, 2)
+IMPORT_REVIEW_FIXED_COLUMN_PADDING = 28
+IMPORT_REVIEW_ID_WIDTH_FACTOR = 1.75
 
 
 class ImportReportDialog(QDialog):
@@ -231,8 +234,13 @@ class ImportReportDialog(QDialog):
     self.visible_rows = self.rows_for_current_view()
     self.match_table.setRowCount(len(self.visible_rows))
     for row_index, row in enumerate(self.visible_rows):
-      for column, value in enumerate(self.csv_values_for_row(row)):
-        self.match_table.setItem(row_index, column, QTableWidgetItem(value))
+      display_values = self.display_values_for_row(row)
+      for column, value in enumerate(display_values):
+        item = QTableWidgetItem(value)
+        tooltip = self.tooltip_for_table_cell(row, column)
+        if tooltip:
+          item.setToolTip(tooltip)
+        self.match_table.setItem(row_index, column, item)
     if selected_row in self.visible_rows:
       self.select_review_row(selected_row)
     elif self.visible_rows:
@@ -266,7 +274,7 @@ class ImportReportDialog(QDialog):
   def fixed_column_width_values(self, column):
     values = [IMPORT_REVIEW_HEADERS[column]]
     values.extend(
-      self.csv_values_for_row(row)[column] for row in self.stable_width_rows()
+      self.display_values_for_row(row)[column] for row in self.stable_width_rows()
     )
     return values
 
@@ -277,7 +285,18 @@ class ImportReportDialog(QDialog):
         self.text_width(metrics, value)
         for value in self.fixed_column_width_values(column)
       )
-      self.match_table.setColumnWidth(column, width + 28)
+      if column == IMPORT_REVIEW_ID_COLUMN:
+        width = min(width, self.max_id_column_content_width(metrics))
+      self.match_table.setColumnWidth(column, width + IMPORT_REVIEW_FIXED_COLUMN_PADDING)
+
+  def max_id_column_content_width(self, metrics):
+    single_id_widths = [self.text_width(metrics, IMPORT_REVIEW_HEADERS[IMPORT_REVIEW_ID_COLUMN])]
+    for row in self.stable_width_rows():
+      single_id_widths.extend(
+        self.text_width(metrics, book_id)
+        for book_id in self.book_id_text_values(row)
+      )
+    return int(max(single_id_widths) * IMPORT_REVIEW_ID_WIDTH_FACTOR)
 
   def text_width(self, metrics, value):
     text = str(value or '')
@@ -345,6 +364,30 @@ class ImportReportDialog(QDialog):
         values.append(str(value))
     return '; '.join(values)
 
+  def book_id_text_values(self, row):
+    return [str(book_id) for book_id in (row.get('book_ids') or [])]
+
+  def book_ids_full_text(self, row):
+    return '; '.join(self.book_id_text_values(row))
+
+  def book_ids_display_text(self, row):
+    book_ids = self.book_id_text_values(row)
+    if len(book_ids) <= 1:
+      return self.book_ids_full_text(row)
+    return f'{book_ids[0]}; +{len(book_ids) - 1} more'
+
+  def display_values_for_row(self, row):
+    values = list(self.csv_values_for_row(row))
+    values[IMPORT_REVIEW_ID_COLUMN] = self.book_ids_display_text(row)
+    return values
+
+  def tooltip_for_table_cell(self, row, column):
+    if column != IMPORT_REVIEW_ID_COLUMN:
+      return ''
+    full_text = self.book_ids_full_text(row)
+    display_text = self.book_ids_display_text(row)
+    return full_text if full_text != display_text else ''
+
   def csv_values_for_row(self, row):
     match = 'Yes' if row.get('matched') else 'No'
     if row.get('ignored'):
@@ -360,7 +403,7 @@ class ImportReportDialog(QDialog):
       str(row.get('imported_position', '') or ''),
       str(row.get('imported_title', '') or ''),
       str(row.get('imported_author', '') or ''),
-      '; '.join(str(book_id) for book_id in (row.get('book_ids') or [])),
+      self.book_ids_full_text(row),
       match,
       source,
     ]

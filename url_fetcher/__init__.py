@@ -86,6 +86,89 @@ from .ngaio_marsh import (
   UrlFetcherNgaioMarshYoungerReaders,
 )
 from .theakston import UrlFetcherTheakstonOldPeculierCrimeNovelOfTheYear
+from .costa_whitbread import (
+  UrlFetcherCostaWhitbreadBiography,
+  UrlFetcherCostaWhitbreadBookOfTheYear,
+  UrlFetcherCostaWhitbreadChildrensBook,
+  UrlFetcherCostaWhitbreadFirstNovel,
+  UrlFetcherCostaWhitbreadNovel,
+)
+from .giller import UrlFetcherGillerPrize
+from .folio_writers_prize import (
+  UrlFetcherFolioWritersPrizeBookOfTheYear,
+  UrlFetcherFolioWritersPrizeFiction,
+  UrlFetcherFolioWritersPrizeNonfiction,
+)
+from .goldsmiths import UrlFetcherGoldsmithsPrize
+from .walter_scott import UrlFetcherWalterScottPrize
+from .james_tait_black import (
+  UrlFetcherJamesTaitBlackBiography,
+  UrlFetcherJamesTaitBlackFiction,
+)
+from .miles_franklin import UrlFetcherMilesFranklinLiteraryAward
+from .nero_book_awards import (
+  UrlFetcherNeroBookAwardsChildrensFiction,
+  UrlFetcherNeroBookAwardsDebutFiction,
+  UrlFetcherNeroBookAwardsFiction,
+  UrlFetcherNeroBookAwardsGoldPrize,
+  UrlFetcherNeroBookAwardsNonfiction,
+)
+from .nsw_premiers_literary_awards import (
+  UrlFetcherNSWPremiersLiteraryAwardsBookOfTheYear,
+  UrlFetcherNSWPremiersLiteraryAwardsChristinaSteadFiction,
+  UrlFetcherNSWPremiersLiteraryAwardsDouglasStewartNonfiction,
+  UrlFetcherNSWPremiersLiteraryAwardsEthelTurnerYoungPeople,
+  UrlFetcherNSWPremiersLiteraryAwardsGlendaAdamsNewWriting,
+  UrlFetcherNSWPremiersLiteraryAwardsIndigenousWriters,
+  UrlFetcherNSWPremiersLiteraryAwardsMulticulturalNSW,
+  UrlFetcherNSWPremiersLiteraryAwardsPatriciaWrightsonChildrens,
+  UrlFetcherNSWPremiersLiteraryAwardsPeoplesChoice,
+)
+from .queensland_literary_awards import (
+  UrlFetcherQueenslandLiteraryAwardsChildrens,
+  UrlFetcherQueenslandLiteraryAwardsFiction,
+  UrlFetcherQueenslandLiteraryAwardsNonfiction,
+  UrlFetcherQueenslandLiteraryAwardsPeoplesChoice,
+  UrlFetcherQueenslandLiteraryAwardsStateSignificance,
+  UrlFetcherQueenslandLiteraryAwardsYoungAdult,
+)
+from .western_australian_premiers_book_awards import (
+  UrlFetcherWesternAustralianPremiersBookAwardsBookOfTheYear,
+  UrlFetcherWesternAustralianPremiersBookAwardsChildrens,
+  UrlFetcherWesternAustralianPremiersBookAwardsEmergingWriter,
+  UrlFetcherWesternAustralianPremiersBookAwardsFiction,
+  UrlFetcherWesternAustralianPremiersBookAwardsNonfiction,
+  UrlFetcherWesternAustralianPremiersBookAwardsYoungAdult,
+)
+from .south_australian_literary_awards import (
+  UrlFetcherSouthAustralianLiteraryAwardsChildrens,
+  UrlFetcherSouthAustralianLiteraryAwardsFiction,
+  UrlFetcherSouthAustralianLiteraryAwardsNonfiction,
+  UrlFetcherSouthAustralianLiteraryAwardsPremiersAward,
+  UrlFetcherSouthAustralianLiteraryAwardsYoungAdult,
+)
+from .act_book_of_the_year import UrlFetcherACTBookOfTheYearAward
+from .prime_ministers_literary_awards import (
+  UrlFetcherPrimeMinistersLiteraryAwardsAustralianHistory,
+  UrlFetcherPrimeMinistersLiteraryAwardsChildrensLiterature,
+  UrlFetcherPrimeMinistersLiteraryAwardsFiction,
+  UrlFetcherPrimeMinistersLiteraryAwardsNonfiction,
+  UrlFetcherPrimeMinistersLiteraryAwardsYoungAdultLiterature,
+)
+from .stella import UrlFetcherStellaPrize
+from .victorian_premiers_literary_awards import (
+  UrlFetcherVictorianPremiersLiteraryAwardsChildrensLiterature,
+  UrlFetcherVictorianPremiersLiteraryAwardsFiction,
+  UrlFetcherVictorianPremiersLiteraryAwardsIndigenousWriting,
+  UrlFetcherVictorianPremiersLiteraryAwardsNonfiction,
+  UrlFetcherVictorianPremiersLiteraryAwardsWritingForYoungAdults,
+)
+from .writers_trust import (
+  UrlFetcherWritersTrustAtwoodGibsonFiction,
+  UrlFetcherWritersTrustBalsilliePublicPolicy,
+  UrlFetcherWritersTrustHilaryWestonNonfiction,
+  UrlFetcherWritersTrustShaughnessyCohenPoliticalWriting,
+)
 from .seiun import UrlFetcherSeiunTranslatedNovel
 from .seiun import (
   UrlFetcherSeiunComic,
@@ -416,6 +499,67 @@ URL_FETCHER_CLASSES = (
   UrlFetcherNgaioMarshNonFiction,
   UrlFetcherNgaioMarshYoungerReaders,
   UrlFetcherTheakstonOldPeculierCrimeNovelOfTheYear,
+  UrlFetcherCostaWhitbreadNovel,
+  UrlFetcherCostaWhitbreadFirstNovel,
+  UrlFetcherCostaWhitbreadBiography,
+  UrlFetcherCostaWhitbreadChildrensBook,
+  UrlFetcherCostaWhitbreadBookOfTheYear,
+  UrlFetcherGillerPrize,
+  UrlFetcherFolioWritersPrizeBookOfTheYear,
+  UrlFetcherFolioWritersPrizeFiction,
+  UrlFetcherFolioWritersPrizeNonfiction,
+  UrlFetcherGoldsmithsPrize,
+  UrlFetcherWalterScottPrize,
+  UrlFetcherJamesTaitBlackFiction,
+  UrlFetcherJamesTaitBlackBiography,
+  UrlFetcherMilesFranklinLiteraryAward,
+  UrlFetcherNeroBookAwardsFiction,
+  UrlFetcherNeroBookAwardsDebutFiction,
+  UrlFetcherNeroBookAwardsNonfiction,
+  UrlFetcherNeroBookAwardsChildrensFiction,
+  UrlFetcherNeroBookAwardsGoldPrize,
+  UrlFetcherStellaPrize,
+  UrlFetcherPrimeMinistersLiteraryAwardsFiction,
+  UrlFetcherPrimeMinistersLiteraryAwardsNonfiction,
+  UrlFetcherPrimeMinistersLiteraryAwardsAustralianHistory,
+  UrlFetcherPrimeMinistersLiteraryAwardsYoungAdultLiterature,
+  UrlFetcherPrimeMinistersLiteraryAwardsChildrensLiterature,
+  UrlFetcherVictorianPremiersLiteraryAwardsFiction,
+  UrlFetcherVictorianPremiersLiteraryAwardsNonfiction,
+  UrlFetcherVictorianPremiersLiteraryAwardsWritingForYoungAdults,
+  UrlFetcherVictorianPremiersLiteraryAwardsChildrensLiterature,
+  UrlFetcherVictorianPremiersLiteraryAwardsIndigenousWriting,
+  UrlFetcherNSWPremiersLiteraryAwardsChristinaSteadFiction,
+  UrlFetcherNSWPremiersLiteraryAwardsDouglasStewartNonfiction,
+  UrlFetcherNSWPremiersLiteraryAwardsPatriciaWrightsonChildrens,
+  UrlFetcherNSWPremiersLiteraryAwardsEthelTurnerYoungPeople,
+  UrlFetcherNSWPremiersLiteraryAwardsIndigenousWriters,
+  UrlFetcherNSWPremiersLiteraryAwardsGlendaAdamsNewWriting,
+  UrlFetcherNSWPremiersLiteraryAwardsMulticulturalNSW,
+  UrlFetcherNSWPremiersLiteraryAwardsBookOfTheYear,
+  UrlFetcherNSWPremiersLiteraryAwardsPeoplesChoice,
+  UrlFetcherQueenslandLiteraryAwardsStateSignificance,
+  UrlFetcherQueenslandLiteraryAwardsFiction,
+  UrlFetcherQueenslandLiteraryAwardsNonfiction,
+  UrlFetcherQueenslandLiteraryAwardsChildrens,
+  UrlFetcherQueenslandLiteraryAwardsYoungAdult,
+  UrlFetcherQueenslandLiteraryAwardsPeoplesChoice,
+  UrlFetcherWesternAustralianPremiersBookAwardsBookOfTheYear,
+  UrlFetcherWesternAustralianPremiersBookAwardsFiction,
+  UrlFetcherWesternAustralianPremiersBookAwardsNonfiction,
+  UrlFetcherWesternAustralianPremiersBookAwardsEmergingWriter,
+  UrlFetcherWesternAustralianPremiersBookAwardsChildrens,
+  UrlFetcherWesternAustralianPremiersBookAwardsYoungAdult,
+  UrlFetcherSouthAustralianLiteraryAwardsPremiersAward,
+  UrlFetcherSouthAustralianLiteraryAwardsFiction,
+  UrlFetcherSouthAustralianLiteraryAwardsNonfiction,
+  UrlFetcherSouthAustralianLiteraryAwardsChildrens,
+  UrlFetcherSouthAustralianLiteraryAwardsYoungAdult,
+  UrlFetcherACTBookOfTheYearAward,
+  UrlFetcherWritersTrustAtwoodGibsonFiction,
+  UrlFetcherWritersTrustHilaryWestonNonfiction,
+  UrlFetcherWritersTrustBalsilliePublicPolicy,
+  UrlFetcherWritersTrustShaughnessyCohenPoliticalWriting,
   UrlFetcherAnthonyChildrensYA,
   UrlFetcherAnthonyCozyHumorousMystery,
   UrlFetcherAnthonyCriticalNonfictionWork,
