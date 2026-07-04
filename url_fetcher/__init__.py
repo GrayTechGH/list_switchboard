@@ -100,6 +100,18 @@ from .folio_writers_prize import (
   UrlFetcherFolioWritersPrizeNonfiction,
 )
 from .goldsmiths import UrlFetcherGoldsmithsPrize
+from .national_book_critics_circle import (
+  UrlFetcherNationalBookCriticsCircleBiography,
+  UrlFetcherNationalBookCriticsCircleCriticism,
+  UrlFetcherNationalBookCriticsCircleFiction,
+  UrlFetcherNationalBookCriticsCircleGreggBarriosTranslation,
+  UrlFetcherNationalBookCriticsCircleJohnLeonard,
+  UrlFetcherNationalBookCriticsCircleMemoirAutobiography,
+  UrlFetcherNationalBookCriticsCircleNonfiction,
+  UrlFetcherNationalBookCriticsCirclePoetry,
+)
+from .dublin_literary_award import UrlFetcherDublinLiteraryAward
+from .center_for_fiction import UrlFetcherCenterForFictionFirstNovelPrize
 from .walter_scott import UrlFetcherWalterScottPrize
 from .james_tait_black import (
   UrlFetcherJamesTaitBlackBiography,
@@ -148,6 +160,46 @@ from .south_australian_literary_awards import (
   UrlFetcherSouthAustralianLiteraryAwardsYoungAdult,
 )
 from .act_book_of_the_year import UrlFetcherACTBookOfTheYearAward
+from .rwa_awards import UrlFetcherRWARITAAwards, UrlFetcherRWAVivianAwards
+from .rna_awards import UrlFetcherRNAJoanHessayonAward, UrlFetcherRNARomanticNovelAwards
+from .ripped_bodice_awards import UrlFetcherRippedBodiceAwards
+from .romantic_times_awards import UrlFetcherRomanticTimesReviewersChoiceRomance
+from .lambda_literary_awards import UrlFetcherLambdaLiteraryAwardsRomance
+from .romance_writers_australia import UrlFetcherRomanceWritersAustraliaRubyAwards
+from .australian_romance_readers import UrlFetcherAustralianRomanceReadersAwards
+from .holt_medallion import UrlFetcherHOLTMedallion
+from .booksellers_best import UrlFetcherBooksellersBestAward
+from .goodreads_choice_awards import (
+  UrlFetcherGoodreadsChoiceAwardsAudiobook,
+  UrlFetcherGoodreadsChoiceAwardsBestBook,
+  UrlFetcherGoodreadsChoiceAwardsBestOfTheBest,
+  UrlFetcherGoodreadsChoiceAwardsBusiness,
+  UrlFetcherGoodreadsChoiceAwardsChickLit,
+  UrlFetcherGoodreadsChoiceAwardsChildrensMiddleGrade,
+  UrlFetcherGoodreadsChoiceAwardsDebutNovel,
+  UrlFetcherGoodreadsChoiceAwardsFantasy,
+  UrlFetcherGoodreadsChoiceAwardsFiction,
+  UrlFetcherGoodreadsChoiceAwardsFoodCooking,
+  UrlFetcherGoodreadsChoiceAwardsGraphicNovelsComics,
+  UrlFetcherGoodreadsChoiceAwardsHistoricalFiction,
+  UrlFetcherGoodreadsChoiceAwardsHistoryBiography,
+  UrlFetcherGoodreadsChoiceAwardsHorror,
+  UrlFetcherGoodreadsChoiceAwardsHumor,
+  UrlFetcherGoodreadsChoiceAwardsMemoir,
+  UrlFetcherGoodreadsChoiceAwardsMysteryThriller,
+  UrlFetcherGoodreadsChoiceAwardsNonfiction,
+  UrlFetcherGoodreadsChoiceAwardsParanormalFantasy,
+  UrlFetcherGoodreadsChoiceAwardsPictureBook,
+  UrlFetcherGoodreadsChoiceAwardsPoetry,
+  UrlFetcherGoodreadsChoiceAwardsRomance,
+  UrlFetcherGoodreadsChoiceAwardsRomantasy,
+  UrlFetcherGoodreadsChoiceAwardsScienceFiction,
+  UrlFetcherGoodreadsChoiceAwardsScienceTechnology,
+  UrlFetcherGoodreadsChoiceAwardsTravelOutdoors,
+  UrlFetcherGoodreadsChoiceAwardsYoungAdultFantasyScienceFiction,
+  UrlFetcherGoodreadsChoiceAwardsYoungAdultFiction,
+  UrlFetcherGoodreadsChoiceAwardsYoungAdultSeries,
+)
 from .prime_ministers_literary_awards import (
   UrlFetcherPrimeMinistersLiteraryAwardsAustralianHistory,
   UrlFetcherPrimeMinistersLiteraryAwardsChildrensLiterature,
@@ -509,6 +561,16 @@ URL_FETCHER_CLASSES = (
   UrlFetcherFolioWritersPrizeFiction,
   UrlFetcherFolioWritersPrizeNonfiction,
   UrlFetcherGoldsmithsPrize,
+  UrlFetcherNationalBookCriticsCircleFiction,
+  UrlFetcherNationalBookCriticsCircleNonfiction,
+  UrlFetcherNationalBookCriticsCircleBiography,
+  UrlFetcherNationalBookCriticsCircleMemoirAutobiography,
+  UrlFetcherNationalBookCriticsCirclePoetry,
+  UrlFetcherNationalBookCriticsCircleCriticism,
+  UrlFetcherNationalBookCriticsCircleJohnLeonard,
+  UrlFetcherNationalBookCriticsCircleGreggBarriosTranslation,
+  UrlFetcherDublinLiteraryAward,
+  UrlFetcherCenterForFictionFirstNovelPrize,
   UrlFetcherWalterScottPrize,
   UrlFetcherJamesTaitBlackFiction,
   UrlFetcherJamesTaitBlackBiography,
@@ -556,6 +618,46 @@ URL_FETCHER_CLASSES = (
   UrlFetcherSouthAustralianLiteraryAwardsChildrens,
   UrlFetcherSouthAustralianLiteraryAwardsYoungAdult,
   UrlFetcherACTBookOfTheYearAward,
+  UrlFetcherRWARITAAwards,
+  UrlFetcherRWAVivianAwards,
+  UrlFetcherRNARomanticNovelAwards,
+  UrlFetcherRNAJoanHessayonAward,
+  UrlFetcherRippedBodiceAwards,
+  UrlFetcherRomanticTimesReviewersChoiceRomance,
+  UrlFetcherLambdaLiteraryAwardsRomance,
+  UrlFetcherRomanceWritersAustraliaRubyAwards,
+  UrlFetcherAustralianRomanceReadersAwards,
+  UrlFetcherHOLTMedallion,
+  UrlFetcherBooksellersBestAward,
+  UrlFetcherGoodreadsChoiceAwardsFiction,
+  UrlFetcherGoodreadsChoiceAwardsHistoricalFiction,
+  UrlFetcherGoodreadsChoiceAwardsMysteryThriller,
+  UrlFetcherGoodreadsChoiceAwardsRomance,
+  UrlFetcherGoodreadsChoiceAwardsRomantasy,
+  UrlFetcherGoodreadsChoiceAwardsFantasy,
+  UrlFetcherGoodreadsChoiceAwardsScienceFiction,
+  UrlFetcherGoodreadsChoiceAwardsHorror,
+  UrlFetcherGoodreadsChoiceAwardsDebutNovel,
+  UrlFetcherGoodreadsChoiceAwardsAudiobook,
+  UrlFetcherGoodreadsChoiceAwardsYoungAdultFiction,
+  UrlFetcherGoodreadsChoiceAwardsYoungAdultFantasyScienceFiction,
+  UrlFetcherGoodreadsChoiceAwardsNonfiction,
+  UrlFetcherGoodreadsChoiceAwardsMemoir,
+  UrlFetcherGoodreadsChoiceAwardsHistoryBiography,
+  UrlFetcherGoodreadsChoiceAwardsYoungAdultSeries,
+  UrlFetcherGoodreadsChoiceAwardsChildrensMiddleGrade,
+  UrlFetcherGoodreadsChoiceAwardsPictureBook,
+  UrlFetcherGoodreadsChoiceAwardsScienceTechnology,
+  UrlFetcherGoodreadsChoiceAwardsBusiness,
+  UrlFetcherGoodreadsChoiceAwardsFoodCooking,
+  UrlFetcherGoodreadsChoiceAwardsTravelOutdoors,
+  UrlFetcherGoodreadsChoiceAwardsGraphicNovelsComics,
+  UrlFetcherGoodreadsChoiceAwardsPoetry,
+  UrlFetcherGoodreadsChoiceAwardsHumor,
+  UrlFetcherGoodreadsChoiceAwardsParanormalFantasy,
+  UrlFetcherGoodreadsChoiceAwardsChickLit,
+  UrlFetcherGoodreadsChoiceAwardsBestBook,
+  UrlFetcherGoodreadsChoiceAwardsBestOfTheBest,
   UrlFetcherWritersTrustAtwoodGibsonFiction,
   UrlFetcherWritersTrustHilaryWestonNonfiction,
   UrlFetcherWritersTrustBalsilliePublicPolicy,
