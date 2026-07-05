@@ -241,6 +241,10 @@ def xpath_text_lines(root):
   return [normalize_line(line) for line in text.splitlines() if normalize_line(line)]
 
 
+def text_lines(root):
+  return xpath_text_lines(root)
+
+
 # ---------------------------------------------------------------------------
 # Mixin for the common Winner:/comma-split item shape
 # ---------------------------------------------------------------------------

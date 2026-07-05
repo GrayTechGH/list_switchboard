@@ -14,12 +14,13 @@ Maintenance notes:
 import re
 from urllib.parse import urljoin
 
+from bs4 import BeautifulSoup
 from lxml import html as lxml_html
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import (
-    is_author_suffix, parse_winner_prefix, strip_editor_marker,
-    strip_publication_notes,
+    AwardParserBase, assign_positions, is_author_suffix, parse_winner_prefix,
+    strip_editor_marker, strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.base import ListParserBase
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
@@ -28,8 +29,8 @@ try:
   )
 except ImportError:
   from .award_base import (
-    is_author_suffix, parse_winner_prefix, strip_editor_marker,
-    strip_publication_notes,
+    AwardParserBase, assign_positions, is_author_suffix, parse_winner_prefix,
+    strip_editor_marker, strip_publication_notes,
   )
   from .base import ListParserBase
   from .generic import position_sort_key
@@ -41,6 +42,20 @@ except ImportError:
 YEAR_HEADING = re.compile(r'^\d{4}$')
 AWARD_NAME = 'Nebula Award'
 CATEGORY_NAME = 'Best Novel'
+ANDRE_NORTON_NAME = 'Nebula Awards - Andre Norton Middle Grade/YA'
+ANDRE_NORTON_AWARD_NAME = 'Andre Norton Nebula Award for Middle Grade and Young Adult Fiction'
+ANDRE_NORTON_CATEGORY_NAME = 'Andre Norton Middle Grade and Young Adult Fiction'
+ANDRE_NORTON_CATEGORY_ALIASES = (
+  'andre norton award',
+  'andre norton',
+  'andre norton middle grade and young adult fiction',
+  'middle grade and young adult fiction',
+  'best middle grade and young adult fiction',
+)
+ANDRE_NORTON_SHORTLIST_NOTE = (
+  'SFWA exposes Andre Norton final-ballot rows as nominated entries; '
+  'no separate public shortlist or longlist is imported.'
+)
 SFADB_YEAR_PAGE_URL = re.compile(r'/Nebula_Awards_(\d{4})$')
 SFADB_CATEGORY_BOUNDARIES = frozenset({
   'novel', 'best novel', 'novella', 'best novella',
@@ -56,6 +71,79 @@ class NebulaSFADBCategoryParser(StandardItemMixin, SFADBParser):
   AWARD_NAME = AWARD_NAME
   YEAR_PAGE_URL = SFADB_YEAR_PAGE_URL
   CATEGORY_BOUNDARIES = SFADB_CATEGORY_BOUNDARIES
+
+
+class NebulaAndreNortonParser(AwardParserBase):
+  """
+  Parses the official SFWA Andre Norton category pages, with SFADB fallback.
+
+  Maintenance notes:
+  - SFWA's category page is paginated and may split a year across pages. Collect
+    raw rows across all pages before assigning positions.
+  - SFWA calls non-winning final-ballot rows "Nominated"; do not relabel them
+    as shortlists in parsed metadata.
+  """
+
+  AWARD_NAME = ANDRE_NORTON_AWARD_NAME
+  NAME = ANDRE_NORTON_NAME
+  CATEGORY = ANDRE_NORTON_CATEGORY_NAME
+  CATEGORY_ALIASES = ANDRE_NORTON_CATEGORY_ALIASES
+
+  def parse(self, first_page_html, base_url, fetch_url=None, log=None, progress=None):
+    if 'sfadb' in first_page_html.lower() or 'sfadb.com' in base_url.lower():
+      return self.parse_sfadb(first_page_html, base_url, fetch_url, log, progress)
+    return self.parse_official(first_page_html, base_url, fetch_url, log, progress)
+
+  def parse_official(self, first_page_html, base_url, fetch_url=None, log=None, progress=None):
+    rows = []
+    notes = [ANDRE_NORTON_SHORTLIST_NOTE]
+    seen_urls = set()
+    url = base_url
+    html = first_page_html
+    page_index = 0
+    while url and url not in seen_urls:
+      seen_urls.add(url)
+      page_index += 1
+      _progress(progress, page_index, 0, f'Parsing Andre Norton page {page_index}...')
+      page_rows, next_url = _parse_andre_norton_page(html, url)
+      rows.extend(page_rows)
+      _log(log, 'andre-norton-page-parsed', {
+        'url': url, 'entries': len(page_rows), 'next_url': next_url,
+      })
+      if not next_url or fetch_url is None:
+        break
+      try:
+        html = fetch_url(next_url)
+      except Exception as err:
+        notes.append(f'Andre Norton page could not be fetched: {next_url}: {err}')
+        _log(log, 'andre-norton-fetch-failed', {'url': next_url, 'error': str(err)})
+        break
+      url = next_url
+
+    if not rows:
+      raise ValueError('No Andre Norton entries found on official SFWA pages.')
+    entries = _assign_year_positions(rows, self.AWARD_NAME, self.CATEGORY)
+    return self.parsed_result(
+      self.NAME,
+      base_url,
+      sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
+      notes)
+
+  def parse_sfadb(self, html, base_url, fetch_url=None, log=None, progress=None):
+    parsed = NebulaSFADBCategoryParser().parse(
+      html,
+      base_url,
+      self.NAME,
+      self.CATEGORY,
+      self.CATEGORY_ALIASES,
+      fetch_url=fetch_url,
+      log=log,
+      progress=progress)
+    parsed['notes'] = [ANDRE_NORTON_SHORTLIST_NOTE] + list(parsed.get('notes', ()))
+    for entry in parsed.get('entries', ()):
+      entry['award'] = self.AWARD_NAME
+      entry['category'] = self.CATEGORY
+    return parsed
 
 
 class NebulaAwardsNovelParser(ListParserBase):
@@ -159,6 +247,81 @@ def _parse_nebula_page(html, page_url):
   return entries, _next_page_url(root, page_url)
 
 
+def _parse_andre_norton_page(html, page_url):
+  soup = BeautifulSoup(html, 'html.parser')
+  rows = []
+  for heading in soup.find_all(['h2', 'h3']):
+    year_text = heading.get_text(' ', strip=True)
+    if not YEAR_HEADING.match(year_text):
+      continue
+    year = int(year_text)
+    for node in heading.find_all_next():
+      if node is heading:
+        continue
+      if node.name in ('h2', 'h3') and YEAR_HEADING.match(node.get_text(' ', strip=True)):
+        break
+      if node.name != 'li':
+        continue
+      parsed = _parse_andre_norton_item(node, year, page_url)
+      if parsed is not None:
+        rows.append(parsed)
+  return rows, _next_page_url(soup, page_url)
+
+
+def _parse_andre_norton_item(item, year, page_url):
+  text = normalize_line(item.get_text(' ', strip=True))
+  result = _andre_norton_result_for_text(text)
+  if result is None:
+    return None
+  work_text = re.split(r'\s*\.\s*(?:Nominated\s+for|Winner,)', text, 1, flags=re.I)[0]
+  work_text = _strip_nebula_publication_notes(work_text)
+  title, author = _split_nebula_title_author(work_text)
+  title = _strip_nebula_publication_notes(title).strip(' "\u201c\u201d,')
+  author = _strip_nebula_publication_notes(author)
+  author = _strip_nebula_translator_credit(author)
+  if not title or not author:
+    return None
+  link = item.find('a', href=True)
+  return {
+    'year': year,
+    'title': title,
+    'author': author,
+    'source_url': urljoin(page_url, link['href']) if link is not None else page_url,
+    'result': result,
+  }
+
+
+def _andre_norton_result_for_text(text):
+  if re.search(r'\bWinner,\s*(?:the\s+)?(?:Andre Norton|Nebula Awards?)', text, re.I):
+    return 'winner'
+  if re.search(r'\bWinner,\s*Andre Norton Award\b', text, re.I):
+    return 'winner'
+  if re.search(r'\bNominated\s+for\b.*\bAndre Norton\b', text, re.I):
+    return 'nominee'
+  return None
+
+
+def _assign_year_positions(rows, award_name, category):
+  entries = []
+  years = sorted({row['year'] for row in rows})
+  for year in years:
+    year_rows = []
+    for row in rows:
+      if row['year'] != year:
+        continue
+      year_rows.append({
+        'title': row['title'],
+        'author': row['author'],
+        'source_url': row['source_url'],
+        'award_year': str(year),
+        'award': award_name,
+        'category': category,
+        'result': row['result'],
+      })
+    entries.extend(assign_positions(year_rows, year, tied_winners_share_position=True))
+  return entries
+
+
 def _parse_nebula_year_entries(year, heading, page_url):
   rows = []
   for node in heading.xpath('following::*'):
@@ -255,8 +418,14 @@ def _node_text(node):
 
 
 def _next_page_url(root, page_url):
-  for link in root.xpath('//a[@href]'):
-    if 'Next' in _node_text(link):
+  xpath = getattr(root, 'xpath', None)
+  if callable(xpath):
+    for link in root.xpath('//a[@href]'):
+      if 'Next' in _node_text(link):
+        return urljoin(page_url, link.get('href') or '')
+    return None
+  for link in root.find_all('a', href=True):
+    if 'Next' in link.get_text(' ', strip=True):
       return urljoin(page_url, link.get('href') or '')
   return None
 

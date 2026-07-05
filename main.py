@@ -20,7 +20,9 @@ Maintenance notes:
 """
 
 import os
+import ssl
 import time
+from urllib.error import URLError
 from urllib.request import Request, urlopen
 
 from bs4 import UnicodeDammit
@@ -115,8 +117,11 @@ except ImportError:
 
 try:
   from calibre.utils.browser import Browser as CalibreBrowser
-except Exception:
+except Exception as err:
   CalibreBrowser = None
+  CalibreBrowserImportError = err
+else:
+  CalibreBrowserImportError = None
 
 
 ABOUT_TEXT = '''List Switchboard
@@ -135,6 +140,10 @@ DEFAULT_USER_AGENT = (
 def decode_url_response(response):
   data = response.read()
   charset = response.headers.get_content_charset() if response.headers else None
+  return decode_response_data(data, charset=charset)
+
+
+def decode_response_data(data, charset=None):
   known_encodings = (charset,) if charset else ()
   decoded = UnicodeDammit(
     data,
@@ -153,6 +162,59 @@ def decode_url_response(response):
     except (LookupError, UnicodeDecodeError):
       pass
   return data.decode(charset or 'utf-8', 'replace')
+
+
+def ssl_error_reason(err):
+  reason = getattr(err, 'reason', err)
+  if isinstance(reason, ssl.SSLError):
+    return reason
+  if isinstance(err, ssl.SSLError):
+    return err
+  return None
+
+
+def is_ssl_certificate_error(err):
+  reason = ssl_error_reason(err)
+  if isinstance(reason, ssl.SSLCertVerificationError):
+    return True
+  return 'CERTIFICATE_VERIFY_FAILED' in str(err)
+
+
+def ssl_fetch_diagnostics(url, transport, err):
+  verify_paths = ssl.get_default_verify_paths()
+  reason = ssl_error_reason(err)
+  details = [
+    f'url={url}',
+    f'transport={transport}',
+    f'exception={err.__class__.__name__}: {err}',
+    f'openssl={getattr(ssl, "OPENSSL_VERSION", "")}',
+    f'default cafile={verify_paths.cafile}',
+    f'default capath={verify_paths.capath}',
+    f'openssl cafile={verify_paths.openssl_cafile}',
+    f'openssl capath={verify_paths.openssl_capath}',
+    f'SSL_CERT_FILE={os.environ.get("SSL_CERT_FILE", "")}',
+    f'SSL_CERT_DIR={os.environ.get("SSL_CERT_DIR", "")}',
+    f'calibre browser available={CalibreBrowser is not None}',
+  ]
+  if CalibreBrowserImportError is not None:
+    details.append(
+      f'calibre browser import error={CalibreBrowserImportError.__class__.__name__}: '
+      f'{CalibreBrowserImportError}')
+  if reason is not None:
+    details.append(f'ssl reason={reason.__class__.__name__}: {reason}')
+    verify_code = getattr(reason, 'verify_code', None)
+    verify_message = getattr(reason, 'verify_message', None)
+    if verify_code is not None:
+      details.append(f'verify code={verify_code}')
+    if verify_message:
+      details.append(f'verify message={verify_message}')
+  return '; '.join(details)
+
+
+def certificate_fetch_error(url, transport, err):
+  return RuntimeError(
+    f'{err}\nSSL fetch diagnostics: {ssl_fetch_diagnostics(url, transport, err)}')
+
 
 class ListSwitchboardCore(
     DebugMixin,
@@ -256,13 +318,27 @@ class ListSwitchboardCore(
   def fetch_url(self, url, user_agent=None):
     headers = self.fetch_headers(user_agent=user_agent)
     if CalibreBrowser is not None:
-      browser = self.calibre_browser(headers)
-      response = browser.open(url, timeout=30)
-      return decode_url_response(response)
+      try:
+        browser = self.calibre_browser(headers)
+        response = browser.open(url, timeout=30)
+        return decode_url_response(response)
+      except Exception as err:
+        if is_ssl_certificate_error(err):
+          diagnostics = ssl_fetch_diagnostics(url, 'calibre browser', err)
+          self.debug_log(f'SSL fetch diagnostics: {diagnostics}', section='fallback')
+          raise certificate_fetch_error(url, 'calibre browser', err)
+        raise
     self.debug_fallback_urllib_fetch(url)
     request = Request(url, headers=headers)
-    with urlopen(request, timeout=30) as response:
-      return decode_url_response(response)
+    try:
+      with urlopen(request, timeout=30) as response:
+        return decode_url_response(response)
+    except (URLError, ssl.SSLError) as err:
+      if is_ssl_certificate_error(err):
+        diagnostics = ssl_fetch_diagnostics(url, 'urllib', err)
+        self.debug_log(f'SSL fetch diagnostics: {diagnostics}', section='fallback')
+        raise certificate_fetch_error(url, 'urllib', err)
+      raise
 
   def calibre_browser(self, headers):
     if self.browser is None:

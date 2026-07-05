@@ -127,6 +127,69 @@ def test_sword_and_laser_match_series():
 
     print("PASS: Sword & Laser parsing test passed!")
 
+
+def test_incremental_sword_and_laser_pages_include_new_and_pending():
+    """Saved imports should revisit only new and explicitly unfinished linked pages."""
+    cached = [
+        {
+            'position': '1',
+            'title': 'Old Pick',
+            'author': 'Old Author',
+            'source_url': 'https://swordandlaser.fandom.com/wiki/Old_Pick',
+        },
+        {'position': '1.01', 'title': 'Old Nominee', 'author': 'Old Author'},
+    ]
+    main_entries = [
+        dict(cached[0]),
+        {
+            'position': '2',
+            'title': 'New Pick',
+            'author': 'New Author',
+            'source_url': 'https://swordandlaser.fandom.com/wiki/New_Pick',
+        },
+    ]
+
+    merged, pages = sword_parser.merge_incremental_sword_and_laser_entries(
+        main_entries, cached, {
+            'incremental_state': {
+                'pending_page_urls': [cached[0]['source_url']],
+            },
+        })
+
+    assert [entry['title'] for entry in merged] == ['Old Pick', 'Old Nominee', 'New Pick']
+    assert [entry['title'] for entry in pages] == ['Old Pick', 'New Pick']
+
+    print("PASS: Sword & Laser incremental page selection test passed!")
+
+
+def test_sword_and_laser_fetcher_passes_incremental_cache_to_parser():
+    """The shared fetcher contract must carry the selected cache mode to Sword & Laser."""
+    recipe = UrlFetcherSwordAndLaser()
+    recipe.options = {**recipe.options, 'include_march_madness': False}
+    cached = {
+        'entries': [{
+            'position': '1',
+            'title': 'Old Pick',
+            'author': 'Old Author',
+            'source_url': 'https://swordandlaser.fandom.com/wiki/Old_Pick',
+        }],
+    }
+    html = '''
+    <table>
+      <tr><th>Title</th><th>Author(s)</th><th>Publisher</th><th>Month Read</th><th>Seq</th></tr>
+      <tr><td><a href="/wiki/Old_Pick">Old Pick</a></td><td>Old Author</td><td>Pub</td><td>Jan 2025</td><td>1</td></tr>
+      <tr><td><a href="/wiki/New_Pick">New Pick</a></td><td>New Author</td><td>Pub</td><td>Feb 2025</td><td>2</td></tr>
+    </table>
+    '''
+
+    parsed = recipe.fetch_and_parse(
+        lambda _url: html,
+        cached_parsed=cached,
+        incremental_update=True)
+
+    assert [entry['title'] for entry in parsed['entries']] == ['Old Pick', 'New Pick']
+    print("PASS: Sword & Laser fetcher incremental-cache forwarding test passed!")
+
 def test_march_madness_parsing():
     """Test March Madness parsing with the Invisible Library page"""
     print("\nTesting March Madness parsing...")
@@ -367,6 +430,8 @@ if __name__ == '__main__':
         sys.exit(1)
 
     test_sword_and_laser_match_series()
+    test_incremental_sword_and_laser_pages_include_new_and_pending()
+    test_sword_and_laser_fetcher_passes_incremental_cache_to_parser()
     test_march_madness_parsing()
     test_march_madness_aurora_page()
     test_march_madness_childhoods_end()

@@ -54,18 +54,24 @@ class SwordAndLaserParser(ListParserBase):
   )
 
   def parse(self, recipe, html, fetch_url=None, sleep=None, fetch_error=None,
-            log=None, progress=None):
+            log=None, progress=None, cached_parsed=None, incremental_update=False):
     html = fandom_api_html(html)
     if looks_like_wikitext(html):
       html = fandom_wikitext_table_to_html(html)
     soup = BeautifulSoup(html, 'html.parser')
     entries = self.parse_main_entries(recipe, soup)
+    cached_entries = list((cached_parsed or {}).get('entries') or [])
+    incremental_pages = []
+    if incremental_update and cached_entries:
+      entries, incremental_pages = merge_incremental_sword_and_laser_entries(
+        entries, cached_entries, cached_parsed)
     unavailable_march_pages = []
     march_summary = None
     notes = []
     if recipe.options.get('include_march_madness', False):
       entries, unavailable_march_pages, march_summary = self.add_march_entries(
-        recipe, entries, fetch_url, sleep, fetch_error, log, progress)
+        recipe, entries, fetch_url, sleep, fetch_error, log, progress,
+        linked_entries=incremental_pages if incremental_update else None)
       if fetch_url is not None and entries and not any(entry.get('source_url') for entry in entries):
         notes.append(
           'March Madness details were not fetched because the imported table did not include linked page URLs.')
@@ -83,15 +89,18 @@ class SwordAndLaserParser(ListParserBase):
       notes.append(march_madness_unavailable_note(unavailable_march_pages))
     if notes:
       parsed['notes'] = notes
+    if incremental_update:
+      parsed['incremental_update'] = True
     return parsed
 
   def parse_main_entries(self, recipe, soup):
     return parse_sword_and_laser_main_entries(recipe, soup)
 
   def add_march_entries(self, recipe, entries, fetch_url, sleep, fetch_error=None,
-                        log=None, progress=None):
+                        log=None, progress=None, linked_entries=None):
     return add_sword_and_laser_march_entries(
-      recipe, entries, fetch_url, sleep, fetch_error, log, progress)
+      recipe, entries, fetch_url, sleep, fetch_error, log, progress,
+      linked_entries=linked_entries)
 
   def parse_march_page(self, soup, official_entry):
     return parse_sword_and_laser_march_page(soup, official_entry)
@@ -130,6 +139,40 @@ def parse_sword_and_laser_main_entries(recipe, soup):
 
   text = soup.get_text('\n', strip=True)
   return parse_sword_and_laser_text_entries(recipe, text)
+
+
+def merge_incremental_sword_and_laser_entries(main_entries, cached_entries, cache):
+  """
+  Retain saved results and return just the linked pages that need refreshing.
+
+  The main Book List table is still fetched every run so a new monthly pick is
+  discovered.  Its linked page is fetched only when that page is new or the
+  cache explicitly marks it unfinished.  This keeps the cache useful without
+  treating raw page content as persistent data.
+  """
+  cached_urls = {
+    entry.get('source_url') for entry in cached_entries
+    if entry.get('source_url')
+  }
+  pending_urls = set(
+    ((cache or {}).get('incremental_state') or {}).get('pending_page_urls') or ())
+  pages_to_fetch = [
+    entry for entry in main_entries
+    if entry.get('source_url')
+    and (entry.get('source_url') not in cached_urls or entry.get('source_url') in pending_urls)
+  ]
+  cached_by_position = {
+    str(entry.get('position', '')): entry
+    for entry in cached_entries
+    if entry.get('source_url')
+  }
+  merged = list(cached_entries)
+  known_main_positions = set(cached_by_position)
+  for entry in main_entries:
+    position = str(entry.get('position', ''))
+    if position not in known_main_positions:
+      merged.append(entry)
+  return merged, pages_to_fetch
 
 
 def parse_sword_and_laser_text_entries(recipe, text):
@@ -263,7 +306,8 @@ def fetch_sword_and_laser_page(url, fetch_url):
 
 
 def add_sword_and_laser_march_entries(
-    recipe, entries, fetch_url, sleep, fetch_error=None, log=None, progress=None):
+    recipe, entries, fetch_url, sleep, fetch_error=None, log=None, progress=None,
+    linked_entries=None):
   """
   Add first-round March Madness nominations from linked book pages.
 
@@ -272,9 +316,10 @@ def add_sword_and_laser_march_entries(
   - Network/page failures are collected and reported without discarding the main
     Sword & Laser list.
   """
+  linked_entries = list(linked_entries) if linked_entries is not None else list(entries)
   summary = {
     'main_entries': len(entries),
-    'linked_entries': len([entry for entry in entries if entry.get('source_url')]),
+    'linked_entries': len([entry for entry in linked_entries if entry.get('source_url')]),
     'fetched_pages': 0,
     'failed_pages': 0,
     'pages_with_nominations': 0,
@@ -294,7 +339,7 @@ def add_sword_and_laser_march_entries(
   unavailable_pages = []
   delay = float(recipe.options.get('fetch_delay_seconds', 1.5))
   linked_index = 0
-  for entry in list(entries):
+  for entry in linked_entries:
     url = entry.get('source_url')
     if not url:
       log_march(log, 'skip-no-link', {

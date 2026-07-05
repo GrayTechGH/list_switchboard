@@ -17,14 +17,13 @@ Maintenance notes:
 
 from qt.core import QApplication, QDialog, QProgressDialog
 
-from calibre.gui2 import error_dialog, info_dialog, question_dialog
+from calibre.gui2 import error_dialog, question_dialog
 
 try:
   from calibre_plugins.list_switchboard.dialogs import (
-    ActiveListPositionProblemsDialog, ImportRecipeDialog, ImportReportDialog,
-  )
+    ImportCacheChoiceDialog, ImportRecipeDialog, ImportReportDialog)
 except ImportError:
-  from dialogs import ActiveListPositionProblemsDialog, ImportRecipeDialog, ImportReportDialog
+  from dialogs import ImportCacheChoiceDialog, ImportRecipeDialog, ImportReportDialog
 
 try:
   from calibre_plugins.list_switchboard.errors import ImportCancelledError, ListSwitchboardError
@@ -175,53 +174,32 @@ class ImportFlowMixin:
     except Exception as err:
       self.show_exception('Save Active List Matches', err)
 
-  def manage_active_list(self):
-    if not self.ensure_configured():
-      return
+  def manage_current_active_list(self):
     try:
-      self.manage_active_list_from_import_cache()
-    except ImportCancelledError as err:
-      self.status_message(str(err))
+      self.manage_active_list_review()
     except Exception as err:
       self.show_exception('Manage Active List', err)
 
-  def show_active_list_position_problems(self):
-    if not self.ensure_configured():
-      return
+  def show_current_active_list_position_problems(self):
     try:
-      self.show_active_list_position_problems_for_current_active_list()
-    except Exception as err:
-      self.show_exception('Show Position Problems', err)
-
-  def show_active_list_position_problems_for_current_active_list(self):
-    active = self.current_active()
-    if not active:
-      raise ListSwitchboardError('Create an Active List before showing position problems.')
-    cache = self.import_cache_for_active_list(active)
-    if not cache:
-      raise ListSwitchboardError(
-        f'No cached imported list was found for the current Active List "{active}". '
-        'Import that list before showing position problems.')
-    parsed = self.cached_import_to_parsed(cache)
-    list_name = validate_list_name(parsed.get('name') or active)
-    rows = self.active_list_position_problem_rows_for_entries(
-      list_name, parsed.get('entries') or [])
-    if not rows:
-      info_dialog(
+      problems = self.current_active_list_position_problems()
+      active = self.current_active() or 'Active List'
+      if not problems:
+        self.status_message(f'No position problems found for "{active}".')
+        return
+      details = '\n'.join(
+        f'- {row["position"]}: {row["title"]} by {row["author"]} (book id {row["book_id"]})'
+        for row in problems[:20])
+      if len(problems) > 20:
+        details = f'{details}\n- ...and {len(problems) - 20} more'
+      error_dialog(
         self.gui,
-        'Show position problems',
-        f'No position problems found for "{list_name}".',
+        'Active List Position Problems',
+        f'{len(problems)} current Active List book(s) use positions not found in the imported recipe.\n\n'
+        f'{details}',
         show=True)
-      return
-    self.show_active_list_position_problem_rows(list_name, rows)
-
-  def show_active_list_position_problem_rows(self, list_name, rows):
-    viewer = getattr(self, '_active_list_position_problem_viewer', None)
-    if viewer is not None:
-      return viewer(list_name, rows)
-    d = ActiveListPositionProblemsDialog(
-      self.gui, list_name, rows, view_book_callback=self.open_book_detail_window)
-    return d.exec()
+    except Exception as err:
+      self.show_exception('Active List Position Problems', err)
 
   def import_recipe(self, recipe, import_options=None):
     if not self.ensure_configured():
@@ -257,16 +235,27 @@ class ImportFlowMixin:
     return safe_list_id(value)
 
   def load_or_fetch_recipe(self, recipe, import_options=None):
+    import_options = dict(import_options or {})
     list_id = self.recipe_list_id(recipe)
     cache = self.read_import_cache(list_id)
-    if cache and self.should_use_cached_import(recipe, cache):
+    cache_choice = 'refresh'
+    if cache:
+      cache_choice = self.choose_cached_import_action(recipe, cache)
+    if cache_choice == 'cancel':
+      raise ImportCancelledError('Import cancelled. No Active List metadata was changed.')
+    if cache_choice == 'saved':
       parsed = self.cached_import_to_parsed(cache)
       parsed['list_id'] = list_id
       self.update_import_progress(0, f'Using saved "{recipe.NAME}" list...')
       return parsed
+    can_incrementally_update = cache_choice == 'incremental'
     try:
-      self.update_import_progress(0, f'Fetching "{recipe.NAME}"...')
-      parsed = self.fetch_and_parse_recipe(recipe, import_options=import_options)
+      action = 'Updating saved pages for' if can_incrementally_update else 'Fetching'
+      self.update_import_progress(0, f'{action} "{recipe.NAME}"...')
+      parsed = self.fetch_and_parse_recipe(
+        recipe,
+        import_options=import_options,
+        cache=cache if can_incrementally_update else None)
     except Exception:
       if cache and self.should_fallback_to_cached_import(recipe, cache):
         parsed = self.cached_import_to_parsed(cache)
@@ -281,14 +270,16 @@ class ImportFlowMixin:
       self.write_import_cache(list_id, parsed, recipe=recipe)
     return parsed
 
-  def should_use_cached_import(self, recipe, cache):
-    fetched_at = cache.get('fetched_at') or 'unknown time'
-    entries = len(cache.get('entries') or [])
-    return question_dialog(
+  def choose_cached_import_action(self, recipe, cache):
+    dialog = ImportCacheChoiceDialog(
       self.gui,
-      'Import List',
-      f'A saved "{recipe.NAME}" list is available from {fetched_at} with {entries} entries.\n\n'
-      'Use the saved list instead of importing from the web?')
+      recipe,
+      cache,
+      supports_incremental_update=bool(
+        getattr(recipe, 'SUPPORTS_INCREMENTAL_UPDATE', False)))
+    if dialog.exec() != QDialog.Accepted:
+      return 'cancel'
+    return getattr(dialog, 'choice', 'cancel')
 
   def should_fallback_to_cached_import(self, recipe, cache):
     fetched_at = cache.get('fetched_at') or 'unknown time'
@@ -412,26 +403,34 @@ class ImportFlowMixin:
     finally:
       self.close_import_progress()
 
-  def fetch_and_parse_recipe(self, recipe, import_options=None):
+  def fetch_and_parse_recipe(self, recipe, import_options=None, cache=None):
     import_options = import_options or {}
     source_choice = import_options.get('source_choice', 'automatic')
     if bool(import_options.get('disable_fallbacks', False)):
       source_choice = 0
     try:
-      return recipe.fetch_and_parse(
-        self.fetch_url,
-        sleep=lambda seconds, message: self.sleep_with_events(seconds, message),
-        fetch_error=lambda url, err, entry: self.debug_recipe_linked_page_failed(url, err, entry),
-        log=lambda message: self.debug_parser_message(message),
-        progress=lambda done, total, message: self.update_import_fetch_progress(done, total, message),
-        force_fallback_level=int(prefs.get('debug_force_fallback_level', 0) or 0),
-        disable_fallbacks=bool(import_options.get('disable_fallbacks', False)),
-        source_choice=source_choice,
-        before_fetch=lambda url: (
+      fetch_kwargs = {
+        'sleep': lambda seconds, message: self.sleep_with_events(seconds, message),
+        'fetch_error': lambda url, err, entry: self.debug_recipe_linked_page_failed(url, err, entry),
+        'log': lambda message: self.debug_parser_message(message),
+        'progress': lambda done, total, message: self.update_import_fetch_progress(done, total, message),
+        'force_fallback_level': int(prefs.get('debug_force_fallback_level', 0) or 0),
+        'disable_fallbacks': bool(import_options.get('disable_fallbacks', False)),
+        'source_choice': source_choice,
+        'before_fetch': lambda url: (
           self.debug_recipe_fetch_url(url),
           self.update_import_progress(message=f'Fetching "{recipe.NAME}"...')),
-        after_fetch=lambda url, html: self.debug_recipe_fetched(url, html),
-        before_parse=lambda _url: self.update_import_progress(message=f'Parsing "{recipe.NAME}"...'))
+        'after_fetch': lambda url, html: self.debug_recipe_fetched(url, html),
+        'before_parse': lambda _url: self.update_import_progress(message=f'Parsing "{recipe.NAME}"...'),
+      }
+      if cache is not None:
+        # Only opt-in incremental recipes receive the expanded parser contract;
+        # older custom fetchers retain their existing fetch_and_parse signature.
+        fetch_kwargs['cached_parsed'] = cache
+        fetch_kwargs['incremental_update'] = True
+      return recipe.fetch_and_parse(
+        self.fetch_url,
+        **fetch_kwargs)
     except Exception as err:
       raise ListSwitchboardError(str(err))
 
@@ -482,11 +481,8 @@ class ImportFlowMixin:
     self.debug_import_summary(matched, missing_entries, entries)
 
     self.update_import_progress(IMPORT_MATCH_PROGRESS_MAX, 'Preparing import review...')
-    position_problem_rows = self.active_list_position_problem_rows_for_current_review(
-      list_name, entries, active_name=active)
     review_rows, reconciliation_notes = self.reconcile_review_rows_with_active_list(
-      list_name, review_rows, active_name=active,
-      position_problem_rows=position_problem_rows)
+      list_name, review_rows, active_name=active)
     if reconciliation_notes:
       notes = list(parsed.get('notes') or [])
       notes.extend(reconciliation_notes)
@@ -497,8 +493,7 @@ class ImportFlowMixin:
     review = self.review_import_matches(
       list_name, parsed.get('list_id'), len(matched), len(entries),
       missing_entries, review_rows, notes=parsed.get('notes'),
-      match_series=match_series, allow_goodreads_recovery=allow_goodreads_recovery,
-      position_problem_rows=position_problem_rows)
+      match_series=match_series, allow_goodreads_recovery=allow_goodreads_recovery)
     if review is None:
       raise ImportCancelledError('Import cancelled. No Active List metadata was changed.')
     matched, missing_entries, review_rows = review
@@ -548,141 +543,118 @@ class ImportFlowMixin:
       f'{len(missing_entries)} missing.')
     self.close_import_progress()
 
-  def manage_active_list_from_import_cache(self):
+  def manage_active_list_review(self):
+    if not self.ensure_configured():
+      return
     active = self.current_active()
     if not active:
-      raise ListSwitchboardError('Create an Active List before managing matches.')
+      raise ListSwitchboardError('Create an Active List before managing imported-list matches.')
     cache = self.import_cache_for_active_list(active)
     if not cache:
       raise ListSwitchboardError(
         f'No cached imported list was found for the current Active List "{active}". '
         'Import that list before managing matches.')
+
     parsed = self.cached_import_to_parsed(cache)
     list_name = validate_list_name(parsed.get('name') or active)
     entries = parsed.get('entries') or []
     if not entries:
       raise ListSwitchboardError('The cached imported list did not contain any entries.')
-
-    match_series = parsed.get('match_series', True)
     list_id = parsed.get('list_id') or cache.get('list_id') or self.safe_list_id(list_name)
+    match_series = parsed.get('match_series', True)
     matched, missing_entries, review_rows = self.match_imported_entries(
       entries,
       match_series=match_series,
       list_id=list_id,
       allow_goodreads_recovery=False,
       return_details=True)
-    position_problem_rows = self.active_list_position_problem_rows_for_current_review(
-      list_name, entries, active_name=active)
     review_rows, reconciliation_notes = self.reconcile_review_rows_with_active_list(
-      list_name, review_rows, active_name=active,
-      position_problem_rows=position_problem_rows)
-    matched, missing_entries, review_rows = self.accepted_import_review_rows(review_rows)
+      list_name, review_rows, active_name=active)
     notes = list(parsed.get('notes') or [])
     notes.extend(reconciliation_notes)
+    matched, missing_entries, review_rows = self.accepted_import_review_rows(review_rows)
     review = self.review_import_matches(
       list_name, list_id, len(matched), len(entries), missing_entries,
       review_rows, notes=notes, match_series=match_series,
-      allow_goodreads_recovery=False, position_problem_rows=position_problem_rows)
+      allow_goodreads_recovery=False)
     if review is None:
-      raise ImportCancelledError('Manage Active List cancelled. No Active List metadata was changed.')
+      return
+    matched, _missing_entries, _review_rows = review
+    self.write_active_review_matches(list_name, entries, matched)
 
-    _matched, missing_entries, review_rows = review
-    updated = self.apply_managed_active_list_review(list_name, review_rows)
-    matched, missing_entries, _review_rows = self.accepted_import_review_rows(review_rows)
-    self.status_message(
-      f'Managed "{list_name}". Matched {len(matched)} book(s); '
-      f'{len(missing_entries)} unmatched; updated {updated} Active List book(s).')
-
-  def active_list_position_problem_rows_for_entries(self, list_name, entries):
-    imported_positions = {
+  def write_active_review_matches(self, list_name, entries, matched):
+    reviewed_positions = {
       self.normalized_position_text(entry.get('position', ''))
       for entry in entries or []
+      if self.normalized_position_text(entry.get('position', ''))
     }
-    imported_positions.discard('')
-    return self.active_list_position_problem_rows(list_name, imported_positions)
-
-  def active_list_position_problem_rows_for_current_review(
-      self, list_name, entries, active_name=None):
-    if active_name is None:
-      active_name = self.current_active()
-    if not active_name or normalize_key(active_name) != normalize_key(list_name):
-      return []
-    try:
-      return self.active_list_position_problem_rows_for_entries(list_name, entries)
-    except AttributeError:
-      return []
-
-  def active_list_position_problem_rows(
-      self, list_name, imported_positions, active_book_ids=None,
-      active_positions=None, book_details=None):
-    if active_book_ids is None:
-      active_book_ids = set(self.active_book_ids_for_list(list_name))
-    else:
-      active_book_ids = set(active_book_ids)
-    imported_positions = set(imported_positions or [])
-    active_positions = active_positions or self.active_review_positions_by_book(active_book_ids)
-    book_details = book_details or self.review_book_details(active_book_ids)
-    rows = []
-    for book_id, position in active_positions.items():
-      position = self.normalized_position_text(position)
-      if not position or position in imported_positions:
-        continue
-      detail = book_details.get(book_id) or {}
-      rows.append({
-        'position': position,
-        'book_id': book_id,
-        'title': detail.get('matched_title', ''),
-        'author': detail.get('matched_authors', ''),
-      })
-    rows.sort(key=self.active_list_position_problem_sort_key)
-    return rows
-
-  def active_list_position_problem_sort_key(self, row):
-    position = row.get('position', '')
-    try:
-      position_key = (0, float(position))
-    except Exception:
-      position_key = (1, str(position))
-    return (
-      position_key,
-      normalize_key(row.get('title', '')),
-      row.get('book_id') or 0,
-    )
-
-  def apply_managed_active_list_review(self, list_name, review_rows):
-    matched, _missing_entries, review_rows = self.accepted_import_review_rows(review_rows)
-    current_ids = set(self.active_book_ids_for_list(list_name))
-    reviewed_ids = set()
-    for row in review_rows or []:
-      reviewed_ids.update(row.get('book_ids') or [])
-      reviewed_ids.update(row.get('original_book_ids') or [])
-      reviewed_ids.update(row.get('previous_book_ids') or [])
-
+    active_book_ids = set(self.active_book_ids_for_list(list_name))
+    active_positions = self.active_review_positions_by_book(active_book_ids)
     active_updates = {}
     index_updates = {}
-    matched_ids = set(matched)
-    for book_id in sorted(current_ids & reviewed_ids):
-      if book_id not in matched_ids:
+    matched = matched or {}
+    matched_book_ids = set(matched)
+    for book_id, position in active_positions.items():
+      if position in reviewed_positions and book_id not in matched_book_ids:
         active_updates[book_id] = ''
     for book_id, position in matched.items():
-      if self.active_list_value_matches(book_id, list_name, position):
-        continue
       active_updates[book_id] = list_name
       try:
         index_updates[book_id] = float(position)
       except Exception:
         pass
-
     if not active_updates:
-      return 0
+      self.status_message(f'No Active List changes needed for "{list_name}".')
+      return
     self.write_fields_with_progress(
       'Manage Active List',
       f'Updating Active List "{list_name}"...',
       active_updates=active_updates,
-      assign_series_indexes=True,
       active_index_updates=index_updates,
       finishing_message=f'Updated Active List "{list_name}".')
-    return len(active_updates)
+    self.status_message(f'Updated Active List "{list_name}".')
+
+  def current_active_list_position_problems(self):
+    if not self.ensure_configured():
+      return []
+    active = self.current_active()
+    if not active:
+      raise ListSwitchboardError('Create an Active List before showing position problems.')
+    cache = self.import_cache_for_active_list(active)
+    if not cache:
+      raise ListSwitchboardError(
+        f'No cached imported list was found for the current Active List "{active}". '
+        'Import that list before showing position problems.')
+    parsed = self.cached_import_to_parsed(cache)
+    recipe_positions = {
+      self.normalized_position_text(entry.get('position', ''))
+      for entry in parsed.get('entries') or []
+      if self.normalized_position_text(entry.get('position', ''))
+    }
+    active_book_ids = set(self.active_book_ids_for_list(active))
+    active_positions = self.active_review_positions_by_book(active_book_ids)
+    details = self.review_book_details(active_book_ids)
+    problems = []
+    for book_id, position in sorted(
+        active_positions.items(),
+        key=lambda item: self.position_problem_sort_key(item[1], item[0])):
+      if position in recipe_positions:
+        continue
+      detail = details.get(book_id) or {}
+      problems.append({
+        'book_id': book_id,
+        'position': position,
+        'title': detail.get('matched_title') or '',
+        'author': detail.get('matched_authors') or '',
+      })
+    return problems
+
+  def position_problem_sort_key(self, position, book_id):
+    try:
+      position_key = float(position)
+    except Exception:
+      position_key = float('inf')
+    return position_key, str(position), book_id
 
   def import_review_rows_from_legacy_match(self, entries, matched, missing_entries):
     matched_positions = {}
@@ -730,8 +702,7 @@ class ImportFlowMixin:
       })
     return rows
 
-  def reconcile_review_rows_with_active_list(
-      self, list_name, review_rows, active_name=None, position_problem_rows=None):
+  def reconcile_review_rows_with_active_list(self, list_name, review_rows, active_name=None):
     rows = list(review_rows or [])
     if not rows:
       return rows, []
@@ -782,18 +753,13 @@ class ImportFlowMixin:
       self.clear_review_row_match(row)
 
     notes = []
+    unknown_position_count = 0
     active_positions = self.active_review_positions_by_book(active_book_ids)
     book_details = self.review_book_details(active_book_ids)
-    if position_problem_rows is None:
-      position_problem_rows = self.active_list_position_problem_rows(
-        list_name,
-        set(rows_by_position),
-        active_book_ids=active_book_ids,
-        active_positions=active_positions,
-        book_details=book_details)
     for book_id, position in active_positions.items():
       target_rows = rows_by_position.get(position, [])
       if not target_rows:
+        unknown_position_count += 1
         continue
       target_row = self.active_position_target_row(book_id, target_rows, book_details)
       if target_row.get('ignored'):
@@ -812,9 +778,9 @@ class ImportFlowMixin:
       self.add_active_manual_match_to_review_row(target_row, book_id, book_details)
       book_to_row[book_id] = target_row
 
-    if position_problem_rows:
+    if unknown_position_count:
       notes.append(
-        f'{len(position_problem_rows)} current Active List book(s) use positions not found in the imported recipe.')
+        f'{unknown_position_count} current Active List book(s) use positions not found in the imported recipe.')
     return rows, notes
 
   def review_row_match_is_automatic(self, row):
@@ -911,8 +877,7 @@ class ImportFlowMixin:
 
   def review_import_matches(
       self, list_name, list_id, matched_count, entries_count, missing_entries,
-      review_rows, notes=None, match_series=True, allow_goodreads_recovery=True,
-      position_problem_rows=None):
+      review_rows, notes=None, match_series=True, allow_goodreads_recovery=True):
     self.debug_import_missing_entries(missing_entries)
     try:
       gui = self.gui
@@ -930,19 +895,16 @@ class ImportFlowMixin:
         selected_match_source_callback=lambda row, candidate: self.review_match_source_for_candidate(
           row.get('entry') or {}, candidate.get('book_id', candidate.get('matched_book_id')),
           list_id=list_id, match_series=match_series,
-          allow_goodreads_recovery=allow_goodreads_recovery),
-        position_problem_rows=position_problem_rows)
+          allow_goodreads_recovery=allow_goodreads_recovery))
     except TypeError as err:
       if (
           'find_match_settings' not in str(err)
           and 'find_match_index_callback' not in str(err)
-          and 'view_book_callback' not in str(err)
-          and 'position_problem_rows' not in str(err)):
+          and 'view_book_callback' not in str(err)):
         raise
       d = ImportReportDialog(
         gui, list_name, matched_count, entries_count, missing_entries,
-        allow_deep_recovery=False, notes=notes, review_rows=review_rows,
-        position_problem_rows=position_problem_rows)
+        allow_deep_recovery=False, notes=notes, review_rows=review_rows)
     if d.exec() != QDialog.Accepted:
       return None
     self.apply_import_review_match_changes(list_id, d.review_rows)

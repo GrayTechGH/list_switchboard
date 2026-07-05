@@ -105,7 +105,7 @@ def parsed_append_state(parsed):
 def build_import_cache_data(list_id, parsed, recipe=None):
   list_id = safe_list_id(list_id)
   entries = parsed.get('entries') or []
-  return {
+  data = {
     'schema_version': STORAGE_SCHEMA_VERSION,
     'list_id': list_id,
     'list_name': parsed.get('name') or getattr(recipe, 'NAME', '') or list_id,
@@ -117,6 +117,10 @@ def build_import_cache_data(list_id, parsed, recipe=None):
     'match_series': parsed.get('match_series', True),
     'append_state': parsed_append_state(parsed),
   }
+  incremental_state = parsed.get('incremental_state')
+  if isinstance(incremental_state, dict):
+    data['incremental_state'] = incremental_state
+  return data
 
 
 def repaired_translator_credit_entry(entry):

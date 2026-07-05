@@ -218,3 +218,52 @@ class UrlFetcherGovernorGeneralEnglishYoungPeoplesText(UrlFetcherGovernorGeneral
     CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
     CATEGORY_REGIONAL_NATIONAL_AWARDS,
   )
+
+
+class UrlFetcherGovernorGeneralEnglishYoungPeoplesIllustratedBooks(
+    UrlFetcherGovernorGeneralAwards):
+  source_id = (
+    'governor_general_literary_award_english_young_peoples_illustrated_books'
+  )
+  NAME = (
+    "Governor General's Literary Award - English Young People's Literature - "
+    'Illustrated Books'
+  )
+  CATEGORY = "English Young People's Literature - Illustrated Books"
+  CATEGORY_KEYS = ('youngPeoplesLiteratureIllustratedBooks',)
+  FILTER_CATEGORIES = (
+    CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+    CATEGORY_REGIONAL_NATIONAL_AWARDS,
+  )
+
+
+class UrlFetcherGovernorGeneralFrenchYoungPeoplesText(UrlFetcherGovernorGeneralAwards):
+  source_id = 'governor_general_literary_award_french_young_peoples_text'
+  NAME = (
+    "Governor General's Literary Award - French Young People's Literature - Text"
+  )
+  CATEGORY = "French Young People's Literature - Text"
+  CATEGORY_KEYS = ('youngPeoplesLiteratureText',)
+  LANGUAGE = 'fr'
+  FILTER_CATEGORIES = (
+    CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+    CATEGORY_REGIONAL_NATIONAL_AWARDS,
+  )
+
+
+class UrlFetcherGovernorGeneralFrenchYoungPeoplesIllustratedBooks(
+    UrlFetcherGovernorGeneralAwards):
+  source_id = (
+    'governor_general_literary_award_french_young_peoples_illustrated_books'
+  )
+  NAME = (
+    "Governor General's Literary Award - French Young People's Literature - "
+    'Illustrated Books'
+  )
+  CATEGORY = "French Young People's Literature - Illustrated Books"
+  CATEGORY_KEYS = ('youngPeoplesLiteratureIllustratedBooks',)
+  LANGUAGE = 'fr'
+  FILTER_CATEGORIES = (
+    CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+    CATEGORY_REGIONAL_NATIONAL_AWARDS,
+  )

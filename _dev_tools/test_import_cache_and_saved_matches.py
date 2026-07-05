@@ -105,6 +105,18 @@ class StorageHelpersTest(unittest.TestCase):
     self.assertEqual(False, data['match_series'])
     self.assertEqual('rev-1', data['append_state']['source_revision'])
 
+  def test_build_import_cache_data_preserves_incremental_page_state(self):
+    data = storage.build_import_cache_data('Example List', {
+      'entries': [],
+      'incremental_state': {
+        'pending_page_urls': ['https://example.com/current-year'],
+      },
+    })
+
+    self.assertEqual(
+      ['https://example.com/current-year'],
+      data['incremental_state']['pending_page_urls'])
+
   def test_repaired_translator_credit_entry_repairs_stale_cache_shape(self):
     repaired = storage.repaired_translator_credit_entry({
       'title': 'Solaris, Stanislaw Lem',

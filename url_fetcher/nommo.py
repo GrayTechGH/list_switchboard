@@ -10,6 +10,9 @@ from .generic import (
 
 
 NOMMO_AWARDS_URL = 'https://en.wikipedia.org/wiki/Nommo_Awards'
+NOMMO_WIKIMEDIA_HTML_URL = (
+  'https://api.wikimedia.org/core/v1/wikipedia/en/page/Nommo_Awards/html'
+)
 NOMMO_CATEGORIES = (
   CATEGORY_SCIENCE_FICTION,
   CATEGORY_FANTASY,
@@ -27,6 +30,11 @@ class UrlFetcherNommo(UrlFetcherGeneric):
     'match_series': False,
   }
   CATEGORY = ''
+
+  def fallback_urls(self, url):
+    if url == NOMMO_AWARDS_URL:
+      return (NOMMO_WIKIMEDIA_HTML_URL,)
+    return ()
 
   def create_parser(self):
     try:

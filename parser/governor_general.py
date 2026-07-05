@@ -7,9 +7,8 @@ Governor General's Literary Awards official JSON parser.
 Maintenance notes:
 - GGBooks renders the visible archive from a versioned static JSON file named
   by the archive component JavaScript. The HTML page itself is only the shell.
-- V1 recipes are English core book categories only; the parser is configurable
-  so French, translation, poetry, drama, and illustration recipes can be added
-  later without changing the source traversal.
+- V1 recipes cover fiction, nonfiction, and young people's literature book
+  categories; translation, poetry, and drama remain out of scope.
 """
 
 import json
@@ -49,12 +48,20 @@ SUPPLEMENT_RESULT_ALIASES = {
 HEADER_ALIASES = {
   'author': 'author',
   'authors': 'author',
+  'category': 'category',
   'recipient': 'author',
   'recipients': 'author',
   'writer': 'author',
   'title': 'title',
   'book': 'title',
   'work': 'title',
+  'winner': 'winner',
+  'won': 'winner',
+  'nominated': 'nominated',
+  'nominees': 'nominated',
+  'shortlist': 'nominated',
+  'shortlisted': 'nominated',
+  'finalists': 'nominated',
   'result': 'result',
   'status': 'result',
   'outcome': 'result',
@@ -198,13 +205,124 @@ class GovernorGeneralSupplementParser(GovernorGeneralAwardsParser):
 
   def parse_wikipedia_rows(self, html, base_url, category, year):
     root = self.html_root(html)
-    rows = []
+    rows = self.rows_from_annual_language_tables(root, base_url, category, year)
     for heading, table in self.category_tables(root, category):
       header_map = self.header_map(table)
       if not self.has_required_columns(header_map):
         continue
       rows.extend(self.rows_from_table(table, header_map, base_url, category, year))
     return rows
+
+  def rows_from_annual_language_tables(self, root, base_url, category, year):
+    rows = []
+    for table in self.language_tables(root):
+      header_map = self.header_map(table)
+      if not self.has_annual_columns(header_map):
+        continue
+      for tr in table.xpath('.//tr'):
+        cells = tr.xpath('./td|./th')
+        if not cells or self.row_matches_header(cells, header_map):
+          continue
+        category_cell = self.cell_for_key(cells, header_map, 'category')
+        if category_cell is None or not self.matches_supplement_category(
+            self.clean_cell_text(category_cell), category):
+          continue
+        rows.extend(self.rows_from_candidate_cell(
+          self.cell_for_key(cells, header_map, 'winner'),
+          base_url,
+          category,
+          year,
+          RESULT_WINNER))
+        rows.extend(self.rows_from_candidate_cell(
+          self.cell_for_key(cells, header_map, 'nominated'),
+          base_url,
+          category,
+          year,
+          RESULT_SHORTLISTED))
+    return rows
+
+  def language_tables(self, root):
+    language_heading = 'french' if self.language == 'fr' else 'english'
+    for heading in root.xpath('//h2|//h3'):
+      if normalize_heading(self.node_text(heading)) != language_heading:
+        continue
+      for table in heading.xpath('following::table[1]'):
+        yield table
+
+  def matches_supplement_category(self, label, category):
+    text = normalize_heading(label)
+    target = normalize_heading(category)
+    aliases = {target}
+    if 'illustrated' in target or 'illustration' in target:
+      aliases.update((
+        'children s illustration',
+        'childrens illustration',
+        'children s illustrated books',
+        'childrens illustrated books',
+      ))
+    elif 'young people' in target and 'text' in target:
+      aliases.update((
+        'children s literature',
+        'childrens literature',
+        'children s writing',
+        'childrens writing',
+      ))
+    return text in aliases or any(alias in text for alias in aliases)
+
+  def rows_from_candidate_cell(self, cell, base_url, category, year, result):
+    if cell is None:
+      return []
+    rows = []
+    for text in self.cell_candidate_lines(cell):
+      author, title = self.split_candidate_text(text)
+      title = self.clean_title(title)
+      author = self.clean_author(author)
+      if not title or not author:
+        continue
+      rows.append({
+        'award_year': str(year),
+        'title': title,
+        'author': author,
+        'result': result,
+        'source_url': base_url,
+        'category': category,
+      })
+    return rows
+
+  def split_candidate_text(self, text):
+    text = normalize_line(text)
+    if ',' not in text:
+      return '', text
+    author, title = text.split(',', 1)
+    return author, title
+
+  def cell_candidate_lines(self, cell):
+    lines = []
+    current = []
+
+    def add_text(text):
+      text = normalize_line(text or '')
+      if text:
+        current.append(text)
+
+    def flush():
+      text = normalize_line(' '.join(current))
+      if text:
+        lines.append(text)
+      current[:] = []
+
+    def visit(node):
+      add_text(node.text)
+      for child in node:
+        if child.tag.lower() == 'br':
+          flush()
+        else:
+          visit(child)
+        add_text(child.tail)
+
+    visit(cell)
+    flush()
+    return lines
 
   def category_tables(self, root, category):
     target = normalize_heading(category)
@@ -263,12 +381,15 @@ class GovernorGeneralSupplementParser(GovernorGeneralAwardsParser):
         key = HEADER_ALIASES.get(normalize_heading(self.clean_cell_text(cell)))
         if key is not None and key not in mapped:
           mapped[key] = index
-      if self.has_required_columns(mapped):
+      if self.has_required_columns(mapped) or self.has_annual_columns(mapped):
         return mapped
     return {}
 
   def has_required_columns(self, header_map):
     return all(key in header_map for key in ('title', 'author'))
+
+  def has_annual_columns(self, header_map):
+    return all(key in header_map for key in ('category', 'winner', 'nominated'))
 
   def row_matches_header(self, cells, header_map):
     for key, index in header_map.items():

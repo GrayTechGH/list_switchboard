@@ -50,7 +50,6 @@ calibre_ebooks_metadata.title_sort = lambda value: (
   value[4:] + ', The' if value.startswith('The ') else value)
 calibre_gui2 = types.ModuleType('calibre.gui2')
 calibre_gui2.error_dialog = Dummy()
-calibre_gui2.info_dialog = Dummy()
 calibre_gui2.question_dialog = Dummy()
 sys.modules.setdefault('calibre', calibre)
 sys.modules.setdefault('calibre.ebooks', calibre_ebooks)
@@ -66,7 +65,6 @@ sys.modules.setdefault('calibre_plugins.list_switchboard', list_switchboard_pack
 sys.modules.setdefault('calibre_plugins.list_switchboard.config', config_module)
 
 import main
-import import_flow
 import list_state
 import dialogs.import_find as import_find_module
 import dialogs.import_report as import_report_module
@@ -401,6 +399,33 @@ class ImportMatchingTest(unittest.TestCase):
       'Custom Agent',
       core.fetch_headers(user_agent='Custom Agent')['User-Agent'])
 
+  def test_fetch_url_adds_ssl_diagnostics_for_certificate_failures(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    logged = []
+    core.debug_log = lambda message, section='general': logged.append((section, message))
+    original_urlopen = main.urlopen
+
+    def fail_urlopen(_request, timeout=30):
+      raise main.URLError(main.ssl.SSLCertVerificationError(
+        1,
+        '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: '
+        'certificate has expired (_ssl.c:1081)'))
+
+    main.urlopen = fail_urlopen
+    try:
+      with self.assertRaises(RuntimeError) as caught:
+        core.fetch_url('https://en.wikipedia.org/wiki/Nommo_Awards')
+    finally:
+      main.urlopen = original_urlopen
+
+    message = str(caught.exception)
+    self.assertIn('SSL fetch diagnostics:', message)
+    self.assertIn('transport=urllib', message)
+    self.assertIn('openssl=', message)
+    self.assertIn('default cafile=', message)
+    self.assertIn('calibre browser available=', message)
+    self.assertTrue(any('SSL fetch diagnostics:' in item[1] for item in logged))
+
   def test_isfdb_fallback_attempt_passes_user_agent_to_fetch_url(self):
     from url_fetcher.isfdb_fallback import ISFDB_USER_AGENT
     from url_fetcher.locus import UrlFetcherLocusAnnualSFNovel
@@ -478,17 +503,22 @@ class ImportMatchingTest(unittest.TestCase):
       'r/Fantasy Top Self-Published Novels 2024',
       'Sword and Laser',
     ], names[:4])
-    self.assertEqual(212, len(names))
+    self.assertEqual(336, len(names))
+    self.assertIn('Theakston Old Peculier Crime Novel of the Year', names)
+    self.assertIn('Hammett Prize', names)
+    self.assertIn('Nero Award', names)
+    self.assertIn('Strand Critics Award - Mystery Novel', names)
+    self.assertIn('Strand Critics Award - Debut Mystery', names)
     self.assertIn('Pulitzer Prize - Fiction', names)
     self.assertIn('Pulitzer Prize - General Nonfiction', names)
     self.assertIn('National Book Award - Fiction', names)
     self.assertIn('National Book Award - Nonfiction', names)
     self.assertIn("National Book Award - Young People's Literature", names)
     self.assertIn('Baillie Gifford Prize', names)
-    self.assertIn('National Book Critics Circle Award - Nonfiction', names)
-    self.assertIn('National Book Critics Circle Award - Criticism', names)
     self.assertIn('PEN/John Kenneth Galbraith Award for Nonfiction', names)
-    self.assertIn('PEN/Diamonstein-Spielvogel Award for the Art of the Essay', names)
+    self.assertIn(
+      'PEN/Diamonstein-Spielvogel Award for the Art of the Essay',
+      names)
     self.assertIn('PEN/Jean Stein Book Award', names)
     self.assertIn('PEN Open Book Award', names)
     self.assertIn('PEN/Faulkner Award for Fiction', names)
@@ -506,15 +536,94 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertIn('Booker Prize', names)
     self.assertIn('International Booker Prize', names)
     self.assertIn("Governor General's Literary Award - English Fiction", names)
-    self.assertIn("Governor General's Literary Award - English Non-fiction", names)
+    self.assertIn(
+      "Governor General's Literary Award - English Non-fiction",
+      names)
     self.assertIn(
       "Governor General's Literary Award - English Young People's Literature - Text",
       names)
-    self.assertIn('Theakston Old Peculier Crime Novel of the Year', names)
-    self.assertIn('Hammett Prize', names)
-    self.assertIn('Nero Award', names)
-    self.assertIn('Strand Critics Award - Mystery Novel', names)
-    self.assertIn('Strand Critics Award - Debut Mystery', names)
+    self.assertIn(
+      "Governor General's Literary Award - English Young People's Literature - Illustrated Books",
+      names)
+    self.assertIn(
+      "Governor General's Literary Award - French Young People's Literature - Text",
+      names)
+    self.assertIn(
+      "Governor General's Literary Award - French Young People's Literature - Illustrated Books",
+      names)
+    self.assertIn('Costa/Whitbread Book Award - Novel', names)
+    self.assertIn('Costa/Whitbread Book Award - First Novel', names)
+    self.assertIn('Costa/Whitbread Book Award - Biography', names)
+    self.assertIn("Costa/Whitbread Book Award - Children's Book", names)
+    self.assertIn('Costa/Whitbread Book of the Year', names)
+    self.assertIn('Giller Prize', names)
+    self.assertIn("Folio/Writers' Prize - Book of the Year", names)
+    self.assertIn("Folio/Writers' Prize - Fiction", names)
+    self.assertIn("Folio/Writers' Prize - Non-Fiction", names)
+    self.assertIn('Goldsmiths Prize', names)
+    self.assertIn('National Book Critics Circle Award - Fiction', names)
+    self.assertIn('National Book Critics Circle Award - Nonfiction', names)
+    self.assertIn('National Book Critics Circle Award - Biography', names)
+    self.assertIn('National Book Critics Circle Award - Memoir/Autobiography', names)
+    self.assertIn('National Book Critics Circle Award - Poetry', names)
+    self.assertIn('National Book Critics Circle Award - Criticism', names)
+    self.assertIn('National Book Critics Circle Award - John Leonard Prize', names)
+    self.assertIn(
+      'National Book Critics Circle Award - Gregg Barrios Book in Translation Prize',
+      names)
+    self.assertIn('Dublin Literary Award', names)
+    self.assertIn('Center for Fiction First Novel Prize', names)
+    self.assertIn('Walter Scott Prize', names)
+    self.assertIn('James Tait Black Prize - Fiction', names)
+    self.assertIn('James Tait Black Prize - Biography', names)
+    self.assertIn('Miles Franklin Literary Award', names)
+    self.assertIn('Nero Book Awards - Fiction', names)
+    self.assertIn('Nero Book Awards - Debut Fiction', names)
+    self.assertIn('Nero Book Awards - Non-Fiction', names)
+    self.assertIn("Nero Book Awards - Children's Fiction", names)
+    self.assertIn('Nero Gold Prize / Book of the Year', names)
+    self.assertIn('Stella Prize', names)
+    self.assertIn("Prime Minister's Literary Awards - Fiction", names)
+    self.assertIn("Prime Minister's Literary Awards - Australian History", names)
+    self.assertIn("Victorian Premier's Literary Awards - Fiction", names)
+    self.assertIn("Victorian Premier's Literary Awards - Indigenous Writing", names)
+    self.assertIn("NSW Premier's Literary Awards - Christina Stead Prize for Fiction", names)
+    self.assertIn("NSW Premier's Literary Awards - Book of the Year", names)
+    self.assertIn("NSW Premier's Literary Awards - People's Choice Award", names)
+    self.assertIn("South Australian Literary Awards - Premier's Award", names)
+    self.assertIn("South Australian Literary Awards - Fiction", names)
+    self.assertIn("South Australian Literary Awards - Non-Fiction", names)
+    self.assertIn("South Australian Literary Awards - Children's Literature", names)
+    self.assertIn("South Australian Literary Awards - Young Adult Fiction", names)
+    self.assertIn('ACT Book of the Year Award', names)
+    self.assertIn('RWA RITA Awards', names)
+    self.assertIn('RWA Vivian Awards', names)
+    self.assertIn('RNA Joan Hessayon Award for New Writers', names)
+    self.assertIn('Ripped Bodice Awards for Excellence in Romance Fiction', names)
+    self.assertIn("Romantic Times Reviewers' Choice Awards - Romance Categories", names)
+    self.assertIn('Lambda Literary Awards - Romance Categories', names)
+    self.assertIn('Romance Writers of Australia RUBY Awards', names)
+    self.assertIn('Australian Romance Readers Awards', names)
+    self.assertIn('HOLT Medallion', names)
+    self.assertIn("Booksellers' Best Award", names)
+    self.assertIn('Goodreads Choice Awards - Romance', names)
+    self.assertIn('Goodreads Choice Awards - Romantasy', names)
+    self.assertIn('Goodreads Choice Awards - Horror', names)
+    self.assertIn('Goodreads Choice Awards - Graphic Novels & Comics (discontinued)', names)
+    self.assertIn('William C. Morris YA Debut Award', names)
+    self.assertIn('YALSA Award for Excellence in Nonfiction for Young Adults', names)
+    self.assertIn('Michael L. Printz Award', names)
+    self.assertIn('Carnegie Medal for Writing', names)
+    self.assertIn('John Newbery Medal', names)
+    self.assertIn('CBCA Book of the Year - Older Readers', names)
+    self.assertIn('CBCA Book of the Year - Younger Readers', names)
+    self.assertIn('CBCA Book of the Year - Middle Readers', names)
+    self.assertIn('CBCA Book of the Year - Early Childhood', names)
+    self.assertIn('CBCA Book of the Year - Picture Book', names)
+    self.assertIn('CBCA Book of the Year - Eve Pownall', names)
+    self.assertIn('CBCA Book of the Year - New Illustrator', names)
+    self.assertIn("Writers' Trust - Atwood Gibson Fiction Prize", names)
+    self.assertIn("Writers' Trust - Hilary Weston Nonfiction Prize", names)
 
   def test_core_can_discover_recipes_before_gui_current_db_exists(self):
     class StartupGui:
@@ -538,15 +647,25 @@ class ImportMatchingTest(unittest.TestCase):
       'r_fantasy_top_self_published_novels_2024',
       'sword_and_laser_book_list',
     ], source_ids[:4])
-    self.assertEqual(212, len(source_ids))
+    self.assertEqual(336, len(source_ids))
+    self.assertIn('hammett_prize', source_ids)
+    self.assertIn('nero_award', source_ids)
+    self.assertIn('strand_critics_award_mystery_novel', source_ids)
+    self.assertIn('strand_critics_award_debut_mystery', source_ids)
     self.assertIn('pulitzer_prize_fiction', source_ids)
     self.assertIn('pulitzer_prize_general_nonfiction', source_ids)
     self.assertIn('national_book_award_fiction', source_ids)
     self.assertIn('national_book_award_nonfiction', source_ids)
     self.assertIn('national_book_award_young_peoples_literature', source_ids)
+    self.assertIn('william_c_morris_award', source_ids)
+    self.assertIn('yalsa_excellence_nonfiction_young_adults', source_ids)
     self.assertIn('baillie_gifford_prize', source_ids)
-    self.assertIn('nbcc_award_nonfiction', source_ids)
-    self.assertIn('nbcc_award_criticism', source_ids)
+    self.assertIn('pen_galbraith_award_nonfiction', source_ids)
+    self.assertIn('pen_diamonstein_spielvogel_award_essay', source_ids)
+    self.assertIn('pen_jean_stein_book_award', source_ids)
+    self.assertIn('pen_open_book_award', source_ids)
+    self.assertIn('pen_faulkner_award_fiction', source_ids)
+    self.assertIn('pen_hemingway_award_debut_novel', source_ids)
     self.assertIn('j_anthony_lukas_book_prize', source_ids)
     self.assertIn('mark_lynton_history_prize', source_ids)
     self.assertIn('orwell_prize_political_writing', source_ids)
@@ -564,11 +683,1808 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertIn(
       'governor_general_literary_award_english_young_peoples_text',
       source_ids)
+    self.assertIn(
+      'governor_general_literary_award_english_young_peoples_illustrated_books',
+      source_ids)
+    self.assertIn(
+      'governor_general_literary_award_french_young_peoples_text',
+      source_ids)
+    self.assertIn(
+      'governor_general_literary_award_french_young_peoples_illustrated_books',
+      source_ids)
+    self.assertIn('costa_whitbread_novel', source_ids)
+    self.assertIn('walter_scott_prize', source_ids)
+    self.assertIn('costa_whitbread_first_novel', source_ids)
+    self.assertIn('costa_whitbread_biography', source_ids)
+    self.assertIn('costa_whitbread_childrens_book', source_ids)
+    self.assertIn('costa_whitbread_book_of_the_year', source_ids)
+    self.assertIn('james_tait_black_fiction', source_ids)
+    self.assertIn('james_tait_black_biography', source_ids)
     self.assertIn('theakston_old_peculier_crime_novel_of_the_year', source_ids)
-    self.assertIn('hammett_prize', source_ids)
-    self.assertIn('nero_award', source_ids)
-    self.assertIn('strand_critics_award_mystery_novel', source_ids)
-    self.assertIn('strand_critics_award_debut_mystery', source_ids)
+    self.assertIn('giller_prize', source_ids)
+    self.assertIn('folio_writers_prize_book_of_the_year', source_ids)
+    self.assertIn('folio_writers_prize_fiction', source_ids)
+    self.assertIn('folio_writers_prize_nonfiction', source_ids)
+    self.assertIn('nero_book_awards_fiction', source_ids)
+    self.assertIn('nero_book_awards_debut_fiction', source_ids)
+    self.assertIn('nero_book_awards_nonfiction', source_ids)
+    self.assertIn('nero_book_awards_childrens_fiction', source_ids)
+    self.assertIn('nero_book_awards_gold_prize', source_ids)
+    self.assertIn('goldsmiths_prize', source_ids)
+    self.assertIn('national_book_critics_circle_fiction', source_ids)
+    self.assertIn('national_book_critics_circle_nonfiction', source_ids)
+    self.assertIn('national_book_critics_circle_biography', source_ids)
+    self.assertIn('national_book_critics_circle_memoir_autobiography', source_ids)
+    self.assertIn('national_book_critics_circle_poetry', source_ids)
+    self.assertIn('national_book_critics_circle_criticism', source_ids)
+    self.assertIn('national_book_critics_circle_john_leonard', source_ids)
+    self.assertIn('national_book_critics_circle_gregg_barrios_translation', source_ids)
+    self.assertIn('dublin_literary_award', source_ids)
+    self.assertIn('center_for_fiction_first_novel_prize', source_ids)
+    self.assertIn('miles_franklin_literary_award', source_ids)
+    self.assertIn('stella_prize', source_ids)
+    self.assertIn('prime_ministers_literary_awards_fiction', source_ids)
+    self.assertIn('prime_ministers_literary_awards_childrens_literature', source_ids)
+    self.assertIn('victorian_premiers_literary_awards_fiction', source_ids)
+    self.assertIn('victorian_premiers_literary_awards_nonfiction', source_ids)
+    self.assertIn('victorian_premiers_literary_awards_writing_for_young_adults', source_ids)
+    self.assertIn('victorian_premiers_literary_awards_childrens_literature', source_ids)
+    self.assertIn('victorian_premiers_literary_awards_indigenous_writing', source_ids)
+    self.assertIn('south_australian_literary_awards_premiers_award', source_ids)
+    self.assertIn('south_australian_literary_awards_fiction', source_ids)
+    self.assertIn('south_australian_literary_awards_nonfiction', source_ids)
+    self.assertIn('south_australian_literary_awards_childrens', source_ids)
+    self.assertIn('south_australian_literary_awards_young_adult', source_ids)
+    self.assertIn('act_book_of_the_year_award', source_ids)
+    self.assertIn('rwa_rita_awards', source_ids)
+    self.assertIn('rwa_vivian_awards', source_ids)
+    self.assertIn('rna_joan_hessayon_award', source_ids)
+    self.assertIn('ripped_bodice_awards', source_ids)
+    self.assertIn('romantic_times_reviewers_choice_romance', source_ids)
+    self.assertIn('lambda_literary_awards_romance', source_ids)
+    self.assertIn('romance_writers_australia_ruby_awards', source_ids)
+    self.assertIn('holt_medallion', source_ids)
+    self.assertIn('booksellers_best_award', source_ids)
+    self.assertIn('goodreads_choice_awards_romance', source_ids)
+    self.assertIn('goodreads_choice_awards_romantasy', source_ids)
+    self.assertIn('goodreads_choice_awards_horror', source_ids)
+    self.assertIn('goodreads_choice_awards_graphic_novels_comics', source_ids)
+    self.assertIn('michael_l_printz_award', source_ids)
+    self.assertIn('john_newbery_medal', source_ids)
+    self.assertIn('writers_trust_atwood_gibson_fiction', source_ids)
+    self.assertIn('writers_trust_hilary_weston_nonfiction', source_ids)
+    self.assertIn('writers_trust_balsillie_public_policy', source_ids)
+    self.assertIn('writers_trust_shaughnessy_cohen_political_writing', source_ids)
+
+  def test_goodreads_choice_awards_discovers_category_urls(self):
+    from parser.goodreads_choice_awards import GoodreadsChoiceAwardsParser
+
+    html = '''
+      <main>
+        <a href="/choiceawards/readers-favorite-fiction-books-2025">
+          Fiction  ✓ view results →
+        </a>
+        <a href="/choiceawards/readers-favorite-romance-books-2025">
+          Romance  ✓ view results →
+        </a>
+        <a href="/choiceawards/best-books-2024">2024 Awards</a>
+      </main>
+    '''
+
+    links = GoodreadsChoiceAwardsParser(
+      'Romance', ('Romance',)).discover_category_links(
+        html, 'https://www.goodreads.com/choiceawards/best-books-2025')
+
+    self.assertEqual([{
+      'year': 2025,
+      'category': 'Romance',
+      'url': 'https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2025',
+    }], list(links))
+
+  def test_goodreads_choice_awards_category_page_parses_cards_and_roles(self):
+    from parser.goodreads_choice_awards import GoodreadsChoiceAwardsParser
+
+    html = '''
+      <main>
+        <h1>Readers' Favorite Fiction</h1>
+        <section>
+          <span>WINNER  167,509 votes</span>
+          <a href="/book/show/1.My_Friends">
+            <img alt="My Friends by Fallback Writer" />
+          </a>
+          <a href="/book/show/1.My_Friends">My Friends</a>
+          <p>by
+            <a href="/author/show/1.Fredrik_Backman">Fredrik Backman</a>
+            (Goodreads Author),
+            <a href="/author/show/2.Neil_Smith">Neil Smith</a> (Translator)
+          </p>
+        </section>
+        <h2>All Nominees •</h2>
+        <div>
+          <span>167,509 votes</span>
+          <a href="/book/show/1.My_Friends">
+            <img alt="My Friends by Fredrik Backman" />
+          </a>
+        </div>
+        <div>
+          <span>107,486 votes</span>
+          <a href="/book/show/2.Wild_Dark_Shore">
+            <img alt="Wild Dark Shore by Charlotte McConaghy" />
+          </a>
+        </div>
+        <div>
+          <span>41,827 votes</span>
+          <img alt="The Correspondent by Virginia Evans" />
+        </div>
+      </main>
+    '''
+
+    parsed = GoodreadsChoiceAwardsParser('Fiction').parse(
+      '',
+      'https://www.goodreads.com/choiceawards/best-books-2025',
+      'Goodreads Choice Awards - Fiction',
+      category_pages=(
+        ('https://www.goodreads.com/choiceawards/readers-favorite-fiction-books-2025', html),
+      ))
+
+    self.assertEqual([
+      ('2025', 'My Friends', 'Fredrik Backman', 'winner'),
+      ('2025.01', 'Wild Dark Shore', 'Charlotte McConaghy', 'nominee'),
+      ('2025.02', 'The Correspondent', 'Virginia Evans', 'nominee'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertEqual(
+      'https://www.goodreads.com/book/show/1.My_Friends',
+      parsed['entries'][0]['source_url'])
+    self.assertEqual('167509', parsed['entries'][0]['votes'])
+    self.assertTrue(all(entry['award'] == 'Goodreads Choice Awards' for entry in parsed['entries']))
+    self.assertTrue(all(entry['category'] == 'Fiction' for entry in parsed['entries']))
+    self.assertFalse(parsed['match_series'])
+
+  def test_goodreads_choice_awards_parser_accepts_legacy_category_aliases(self):
+    from parser.goodreads_choice_awards import GoodreadsChoiceAwardsParser
+
+    overview_2023 = '''
+      <a href="/choiceawards/readers-favorite-memoir-autobiography-books-2023">
+        Memoir & Autobiography  ✓ view results →
+      </a>
+    '''
+    overview_2025 = '''
+      <a href="/choiceawards/readers-favorite-memoir-books-2025">
+        Memoir  ✓ view results →
+      </a>
+    '''
+    pages = {
+      'https://www.goodreads.com/choiceawards/readers-favorite-memoir-autobiography-books-2023': '''
+        <main>
+          <h1>Readers' Favorite Memoir & Autobiography</h1>
+          <p>WINNER  80,000 votes</p>
+          <a href="/book/show/2023.Memoir">
+            <img alt="Legacy Memoir by Older Writer" />
+          </a>
+          <h2>All Nominees</h2>
+        </main>
+      ''',
+      'https://www.goodreads.com/choiceawards/readers-favorite-memoir-books-2025': '''
+        <main>
+          <h1>Readers' Favorite Memoir</h1>
+          <p>WINNER  90,000 votes</p>
+          <a href="/book/show/2025.Memoir">
+            <img alt="Current Memoir by New Writer" />
+          </a>
+          <h2>All Nominees</h2>
+        </main>
+      ''',
+    }
+
+    parsed = GoodreadsChoiceAwardsParser(
+      'Memoir',
+      ('Memoir', 'Memoir & Autobiography')).parse(
+        '',
+        'https://www.goodreads.com/choiceawards/best-books-2025',
+        'Goodreads Choice Awards - Memoir',
+        fetch_url=lambda url: pages[url],
+        overview_pages=(
+          ('https://www.goodreads.com/choiceawards/best-books-2023', overview_2023),
+          ('https://www.goodreads.com/choiceawards/best-books-2025', overview_2025),
+        ))
+
+    self.assertEqual([
+      ('2023', 'Legacy Memoir', 'Memoir & Autobiography'),
+      ('2025', 'Current Memoir', 'Memoir'),
+    ], [
+      (entry['position'], entry['title'], entry['category'])
+      for entry in parsed['entries']
+    ])
+
+  def test_goodreads_choice_awards_fetchers_metadata_and_registry(self):
+    from datetime import date
+
+    from parser.base import (
+      CATEGORY_FANTASY,
+      CATEGORY_HORROR_DARK_FICTION,
+      CATEGORY_LITERARY_GENERAL_FICTION,
+      CATEGORY_ROMANCE,
+      CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+    )
+    from parser.goodreads_choice_awards import (
+      goodreads_choice_candidate_years,
+      goodreads_choice_overview_url,
+    )
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.goodreads_choice_awards import (
+      UrlFetcherGoodreadsChoiceAwardsGraphicNovelsComics,
+      UrlFetcherGoodreadsChoiceAwardsRomance,
+      UrlFetcherGoodreadsChoiceAwardsRomantasy,
+      UrlFetcherGoodreadsChoiceAwardsYoungAdultFantasyScienceFiction,
+    )
+
+    current = UrlFetcherGoodreadsChoiceAwardsRomance()
+    discontinued = UrlFetcherGoodreadsChoiceAwardsGraphicNovelsComics()
+    romantasy = UrlFetcherGoodreadsChoiceAwardsRomantasy()
+    ya_speculative = UrlFetcherGoodreadsChoiceAwardsYoungAdultFantasyScienceFiction()
+
+    self.assertEqual('Goodreads Choice Awards - Romance', current.NAME)
+    self.assertEqual(
+      'Goodreads Choice Awards - Graphic Novels & Comics (discontinued)',
+      discontinued.NAME)
+    self.assertFalse(current.options['match_series'])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), current.source_choices())
+    self.assertEqual(
+      [2009, 2010, 2011],
+      list(goodreads_choice_candidate_years(date(2011, 7, 1))))
+    self.assertIn(CATEGORY_ROMANCE, [item['label'] for item in current.get_filter_list()])
+    self.assertIn(CATEGORY_LITERARY_GENERAL_FICTION, [
+      item['label'] for item in discontinued.get_filter_list()
+    ])
+    self.assertIn(CATEGORY_FANTASY, [item['label'] for item in romantasy.get_filter_list()])
+    self.assertIn(CATEGORY_ROMANCE, [item['label'] for item in romantasy.get_filter_list()])
+    self.assertIn(CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE, [
+      item['label'] for item in ya_speculative.get_filter_list()
+    ])
+
+    overview = '''
+      <a href="/choiceawards/readers-favorite-romance-books-2025">
+        Romance ✓ view results →
+      </a>
+    '''
+    category = '''
+      <main>
+        <h1>Readers' Favorite Romance</h1>
+        <p>WINNER  10,000 votes</p>
+        <a href="/book/show/1.Winning_Romance">
+          <img alt="Winning Romance by Romance Writer" />
+        </a>
+        <h2>All Nominees</h2>
+      </main>
+    '''
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == current.URL:
+        return overview
+      if url.endswith('/readers-favorite-romance-books-2025'):
+        return category
+      if url.startswith('https://www.goodreads.com/choiceawards/best-books-'):
+        return '<main></main>'
+      self.fail(url)
+
+    parsed = current.fetch_and_parse(fetch_url)
+
+    self.assertEqual('Goodreads Choice Awards - Romance', parsed['name'])
+    self.assertEqual(['Winning Romance'], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual('winner', parsed['entries'][0]['result'])
+    self.assertEqual('Romance', parsed['entries'][0]['category'])
+    self.assertFalse(parsed['match_series'])
+    self.assertIn(goodreads_choice_overview_url(2009), fetched)
+    self.assertIn(
+      'https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2025',
+      fetched)
+
+    registry_ids = [fetcher.source_id for fetcher in available_url_fetchers()]
+    expected_ids = {
+      'goodreads_choice_awards_romance',
+      'goodreads_choice_awards_romantasy',
+      'goodreads_choice_awards_horror',
+      'goodreads_choice_awards_graphic_novels_comics',
+      'goodreads_choice_awards_young_adult_fantasy_science_fiction',
+    }
+    self.assertTrue(expected_ids.issubset(set(registry_ids)))
+    self.assertLess(
+      registry_ids.index('booksellers_best_award'),
+      registry_ids.index('goodreads_choice_awards_fiction'))
+    self.assertLess(
+      registry_ids.index('goodreads_choice_awards_best_of_the_best'),
+      registry_ids.index('michael_l_printz_award'))
+    self.assertLess(
+      registry_ids.index('michael_l_printz_award'),
+      registry_ids.index('writers_trust_atwood_gibson_fiction'))
+    self.assertIn(CATEGORY_HORROR_DARK_FICTION, [
+      item['label']
+      for item in [
+        fetcher for fetcher in available_url_fetchers()
+        if fetcher.source_id == 'goodreads_choice_awards_horror'
+      ][0].get_filter_list()
+    ])
+
+  def test_lodestar_parser_accepts_2018_young_adult_heading(self):
+    from parser.hugo import LodestarAwardParser
+
+    history = '''
+      <a href="/hugo-history/2018-hugo-awards/">2018 Hugo Awards</a>
+    '''
+    page = '''
+      <main>
+        <p>There are two other Awards administered by Worldcon 76 that are not Hugo Awards:</p>
+        <p>Award for Best Young Adult Book</p>
+        <ul>
+          <li>Akata Warrior, by Nnedi Okorafor (Viking)</li>
+          <li>The Book of Dust: La Belle Sauvage, by Philip Pullman (Knopf)</li>
+        </ul>
+        <p>John W. Campbell Award for Best New Writer</p>
+        <ul>
+          <li>Rebecca Roanhorse</li>
+        </ul>
+      </main>
+    '''
+
+    parsed = LodestarAwardParser().parse(
+      history,
+      'https://www.thehugoawards.org/hugo-history/',
+      fetch_url=lambda url: page)
+
+    self.assertEqual([
+      ('2018', 'Akata Warrior', 'Nnedi Okorafor', 'winner'),
+      ('2018.01', 'The Book of Dust: La Belle Sauvage', 'Philip Pullman', 'nominee'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(entry['award'] == 'Lodestar Award' for entry in parsed['entries']))
+    self.assertTrue(all(entry['category'] == 'Best Young Adult Book' for entry in parsed['entries']))
+    self.assertFalse(parsed['match_series'])
+    self.assertNotIn('Rebecca Roanhorse', [entry['title'] for entry in parsed['entries']])
+
+  def test_lodestar_parser_imports_current_shortlist_without_winner(self):
+    from parser.hugo import LodestarAwardParser
+
+    history = '''
+      <a href="/hugo-history/2025-hugo-awards/">2025 Hugo Awards</a>
+      <a href="/hugo-history/2026-hugo-awards/">2026 Hugo Awards</a>
+    '''
+    pages = {
+      'https://www.thehugoawards.org/hugo-history/2025-hugo-awards/': '''
+        <main>
+          <p>Presented at: Seattle Worldcon 2025, Seattle, Washington, USA, August 16, 2025</p>
+          <p>Lodestar Award for Best Young Adult Book</p>
+          <ul>
+            <li>Sheine Lende by Darcie Little Badger (Levine Querido)</li>
+            <li>Heavenly Tyrant by Xiran Jay Zhao (Tundra Books)</li>
+            <li>Moonstorm by Yoon Ha Lee (Delacorte Press)</li>
+          </ul>
+          <p>268 ballots cast for 175 nominees, finalists range 18 to 52.</p>
+          <p>Yoon Ha Lee withdrew Moonstorm from consideration after the finalists were announced.</p>
+          <p>Astounding Award for Best New Writer</p>
+          <ul>
+            <li>Moniquill Blackgoose (2nd year of eligibility)</li>
+          </ul>
+          <p>Disqualifications and Withdrawals</p>
+          <ul>
+            <li>Declined nomination row outside the Lodestar finalist list</li>
+          </ul>
+        </main>
+      ''',
+      'https://www.thehugoawards.org/hugo-history/2026-hugo-awards/': '''
+        <main>
+          <p>The 2026 Hugo Awards, the Lodestar Award, and the Astounding Award will be presented on August 30, 2026.</p>
+          <p>Voting on the final ballot will open in early May 2026.</p>
+          <p>Lodestar Award for Best YA Book</p>
+          <ul>
+            <li>Among Ghosts by Rachel Hartman (Random House Books for Young Readers)</li>
+            <li>Coffeeshop in an Alternate Universe by C.B. Lee (Feiwel &amp; Friends)</li>
+            <li>Holy Terrors by Margaret Owen (Henry Holt; Hodderscape UK)</li>
+            <li>Oathbound by Tracy Deonn (Simon &amp; Schuster Books for Young Readers)</li>
+            <li>Sunrise on the Reaping by Suzanne Collins (Scholastic Press)</li>
+            <li>They Bloom at Night by Trang Thanh Tran (Bloomsbury US; Bloomsbury UK)</li>
+          </ul>
+          <p>244 ballots cast for 169 nominees. Finalists range 12-48.</p>
+          <p>Astounding Award for Best New Writer</p>
+          <ul>
+            <li>Sophie Burnham (2nd year of eligibility)</li>
+          </ul>
+        </main>
+      ''',
+    }
+
+    parsed = LodestarAwardParser().parse(
+      history,
+      'https://www.thehugoawards.org/hugo-history/',
+      fetch_url=lambda url: pages[url])
+
+    self.assertEqual([
+      ('2025', 'Sheine Lende', 'Darcie Little Badger', 'winner'),
+      ('2025.01', 'Heavenly Tyrant', 'Xiran Jay Zhao', 'nominee'),
+      ('2025.02', 'Moonstorm', 'Yoon Ha Lee', 'nominee'),
+      ('2026.01', 'Among Ghosts', 'Rachel Hartman', 'nominee'),
+      ('2026.02', 'Coffeeshop in an Alternate Universe', 'C.B. Lee', 'nominee'),
+      ('2026.03', 'Holy Terrors', 'Margaret Owen', 'nominee'),
+      ('2026.04', 'Oathbound', 'Tracy Deonn', 'nominee'),
+      ('2026.05', 'Sunrise on the Reaping', 'Suzanne Collins', 'nominee'),
+      ('2026.06', 'They Bloom at Night', 'Trang Thanh Tran', 'nominee'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertFalse(any(entry['position'] == '2026' for entry in parsed['entries']))
+    self.assertNotIn('Moniquill Blackgoose', [entry['title'] for entry in parsed['entries']])
+    self.assertNotIn('Declined nomination row outside the Lodestar finalist list', [
+      entry['title'] for entry in parsed['entries']
+    ])
+    self.assertTrue(any('no separate public longlist' in note for note in parsed['notes']))
+    self.assertTrue(any('Moonstorm' in note and 'withdrawal' in note for note in parsed['notes']))
+
+  def test_lodestar_fetcher_metadata_and_registry(self):
+    from parser.base import (
+      CATEGORY_FANTASY,
+      CATEGORY_SCIENCE_FICTION,
+      CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+    )
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.hugo import UrlFetcherLodestarAward
+
+    fetcher = UrlFetcherLodestarAward()
+
+    self.assertEqual('lodestar_award_young_adult_book', fetcher.source_id)
+    self.assertEqual('Lodestar Award - Young Adult Book', fetcher.NAME)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+    filter_labels = [item['label'] for item in fetcher.get_filter_list()]
+    self.assertIn(CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE, filter_labels)
+    self.assertIn(CATEGORY_SCIENCE_FICTION, filter_labels)
+    self.assertIn(CATEGORY_FANTASY, filter_labels)
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('lodestar_award_young_adult_book', registry_ids)
+    self.assertLess(
+      registry_ids.index('hugo_awards_related_work'),
+      registry_ids.index('lodestar_award_young_adult_book'))
+    self.assertLess(
+      registry_ids.index('lodestar_award_young_adult_book'),
+      registry_ids.index('nebula_awards_novel'))
+
+  def test_andre_norton_official_parser_follows_pagination_and_keeps_nominees(self):
+    from parser.nebula import NebulaAndreNortonParser
+
+    page_1 = '''
+      <main>
+        <h2>2025</h2>
+        <ul>
+          <li><a href="/work/the-tower">The Tower, by David Anaxagoras (Recorded Books)</a>.
+            Nominated for <a>Andre Norton Nebula Award for Middle Grade and Young Adult Fiction</a>
+            in <a>2025</a></li>
+          <li><a href="/work/into-the-wild-magic">Into the Wild Magic, by Michelle Knudsen (Candlewick)</a>.
+            Winner, <a>Andre Norton Nebula Award for Middle Grade and Young Adult Fiction</a>
+            in <a>2025</a></li>
+        </ul>
+        <h2>2012</h2>
+        <ul>
+          <li><a href="/work/fair-coin">Fair Coin</a> by <a>E.C. Myers</a>,
+            published by <a>Pyr</a>. Winner,
+            <a>Andre Norton Nebula Award for Middle Grade and Young Adult Fiction</a>
+            in <a>2012</a></li>
+          <li><a href="/work/iron-hearted-violet">Iron Hearted Violet</a> by <a>Kelly Barnhill</a>,
+            published by <a>Little, Brown</a>. Nominated for
+            <a>Andre Norton Nebula Award for Middle Grade and Young Adult Fiction</a>
+            in <a>2012</a></li>
+        </ul>
+        <a href="/award/andre-norton-award/page/2/">Next &raquo;</a>
+      </main>
+    '''
+    page_2 = '''
+      <main>
+        <h2>2012</h2>
+        <ul>
+          <li><a href="/work/black-heart">Black Heart</a> by <a>Holly Black</a>,
+            published by <a>Victor Gollancz Ltd</a>. Nominated for
+            <a>Andre Norton Nebula Award for Middle Grade and Young Adult Fiction</a>
+            in <a>2012</a></li>
+          <li><a href="/work/seraphina">Seraphina</a> by <a>Rachel Hartman</a>,
+            published by <a>Random House</a>. Nominated for
+            <a>Andre Norton Nebula Award for Middle Grade and Young Adult Fiction</a>
+            in <a>2012</a></li>
+        </ul>
+      </main>
+    '''
+
+    parsed = NebulaAndreNortonParser().parse(
+      page_1,
+      'https://nebulas.sfwa.org/award/andre-norton-award/',
+      fetch_url=lambda url: page_2)
+
+    self.assertEqual([
+      ('2012', 'Fair Coin', 'E.C. Myers', 'winner'),
+      ('2012.01', 'Iron Hearted Violet', 'Kelly Barnhill', 'nominee'),
+      ('2012.02', 'Black Heart', 'Holly Black', 'nominee'),
+      ('2012.03', 'Seraphina', 'Rachel Hartman', 'nominee'),
+      ('2025', 'Into the Wild Magic', 'Michelle Knudsen', 'winner'),
+      ('2025.01', 'The Tower', 'David Anaxagoras', 'nominee'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(
+      entry['award'] == 'Andre Norton Nebula Award for Middle Grade and Young Adult Fiction'
+      for entry in parsed['entries']))
+    self.assertIn('no separate public shortlist or longlist', parsed['notes'][0])
+    self.assertEqual(
+      'https://nebulas.sfwa.org/work/into-the-wild-magic',
+      [entry for entry in parsed['entries'] if entry['title'] == 'Into the Wild Magic'][0]['source_url'])
+    self.assertFalse(parsed['match_series'])
+
+  def test_andre_norton_fetcher_metadata_source_choices_and_sfadb_fallback(self):
+    from parser.base import CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.nebula import UrlFetcherNebulaAndreNorton
+
+    fetcher = UrlFetcherNebulaAndreNorton()
+
+    self.assertEqual('nebula_andre_norton_middle_grade_young_adult', fetcher.source_id)
+    self.assertEqual('Nebula Awards - Andre Norton Middle Grade/YA', fetcher.NAME)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertIn(CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE, [
+      item['label'] for item in fetcher.get_filter_list()
+    ])
+    self.assertEqual((
+      {'label': 'Automatic', 'value': 'automatic'},
+      {'label': 'Official SFWA', 'value': 0},
+      {'label': 'SFADB', 'value': 1},
+    ), fetcher.source_choices())
+
+    sfadb_overview = '''
+      <a href="/Nebula_Awards_2025">2025</a>
+    '''
+    sfadb_year = '''
+      <div class="categoryblock">
+        <div class="category">Andre Norton Middle Grade and Young Adult Fiction</div>
+        <ul>
+          <li>Winner: Into the Wild Magic, Michelle Knudsen (Candlewick)</li>
+          <li>The Tower, David Anaxagoras (Recorded Books)</li>
+        </ul>
+      </div>
+    '''
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == fetcher.URL:
+        raise RuntimeError('official unavailable')
+      if url == fetcher.SFADB_URL:
+        return sfadb_overview
+      if url == 'https://www.sfadb.com/Nebula_Awards_2025':
+        return sfadb_year
+      self.fail(url)
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+
+    self.assertEqual([
+      ('2025', 'Into the Wild Magic', 'Michelle Knudsen', 'winner'),
+      ('2025.01', 'The Tower', 'David Anaxagoras', 'nominee'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertIn('Official SFWA failed: official unavailable', parsed['notes'])
+    self.assertTrue(any('no separate public shortlist or longlist' in note for note in parsed['notes']))
+    self.assertEqual([fetcher.URL, fetcher.SFADB_URL, 'https://www.sfadb.com/Nebula_Awards_2025'], fetched)
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('nebula_andre_norton_middle_grade_young_adult', registry_ids)
+    self.assertLess(
+      registry_ids.index('lodestar_award_young_adult_book'),
+      registry_ids.index('nebula_andre_norton_middle_grade_young_adult'))
+    self.assertLess(
+      registry_ids.index('nebula_andre_norton_middle_grade_young_adult'),
+      registry_ids.index('nebula_awards_comics'))
+
+  def test_morris_history_parser_imports_official_finalists(self):
+    from parser.morris import MorrisAwardParser
+
+    html = '''
+      <main>
+        <h2>2022</h2>
+        <p>Winner: Firekeeper's Daughter written by Angeline Boulley and published by Henry Holt Books for Young Readers, 13-978-1250766564.</p>
+        <p>Finalists: Ace of Spades written by Faridah Abike-Iyimide, Vampires, Hearts, &amp; Other Dead Things written by Margie Fuston, Me (Moth) written by Amber McBride, What Beauty There Is written by Cory Anderson</p>
+        <h2>2009</h2>
+        <p>Winner: A Curse Dark As Gold by Elizabeth C. Bunce</p>
+        <p>Finalists: Graceling by Kristin Cashore, Absolute Brightness by James Lecesne, Madapple by Christina Meldrum, and Me, the Missing, and the Dead by Jenny Valentine.</p>
+      </main>
+    '''
+
+    parsed = MorrisAwardParser().parse(html)
+
+    self.assertEqual([
+      ('2009', 'A Curse Dark As Gold', 'Elizabeth C. Bunce', 'winner'),
+      ('2009.01', 'Graceling', 'Kristin Cashore', 'shortlisted'),
+      ('2009.02', 'Absolute Brightness', 'James Lecesne', 'shortlisted'),
+      ('2009.03', 'Madapple', 'Christina Meldrum', 'shortlisted'),
+      ('2009.04', 'Me, the Missing, and the Dead', 'Jenny Valentine', 'shortlisted'),
+      ('2022', "Firekeeper's Daughter", 'Angeline Boulley', 'winner'),
+      ('2022.01', 'Ace of Spades', 'Faridah Abike-Iyimide', 'shortlisted'),
+      ('2022.02', 'Vampires, Hearts, & Other Dead Things', 'Margie Fuston', 'shortlisted'),
+      ('2022.03', 'Me (Moth)', 'Amber McBride', 'shortlisted'),
+      ('2022.04', 'What Beauty There Is', 'Cory Anderson', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(entry['award'] == 'William C. Morris YA Debut Award' for entry in parsed['entries']))
+    self.assertTrue(all(entry['category'] == 'Young Adult Literature' for entry in parsed['entries']))
+    self.assertFalse(parsed['match_series'])
+    self.assertIn('official public shortlists', parsed['notes'][0])
+
+  def test_morris_annual_and_yma_supplements_recent_years(self):
+    from parser.morris import MorrisAwardParser, yma_awards_url
+
+    history_html = '''
+      <main>
+        <h2>2022</h2>
+        <p>Winner: Firekeeper's Daughter written by Angeline Boulley.</p>
+      </main>
+    '''
+    annual_2023 = '''
+      <main>
+        <h2>2023 Winner</h2>
+        <p>The Life and Crimes of Hoodie Rosen written by Isaac Blum and published by Philomel Books.</p>
+        <h2>2023 Finalists</h2>
+        <p>The Summer of Bitter and Sweet written by Jen Ferguson and published by Heartdrum.</p>
+        <p>Wake the Bones written by Elizabeth Kilcoyne and published by Wednesday Books.</p>
+        <p>The Lesbiana's Guide to Catholic School written by Sonora Reyes and published by Balzer + Bray.</p>
+        <p>Hell Followed With Us written by Andrew Joseph White and published by Peachtree Teen.</p>
+      </main>
+    '''
+    yma_2026 = '''
+      <main>
+        <h2>William C. Morris Award</h2>
+        <p>William C. Morris Award for a debut book published by a first-time author writing for teens: "All the Noise at Once," written by DeAndra Davis and published by Atheneum Books for Young Readers.</p>
+        <h3>William C. Morris Award Finalists</h3>
+        <p>"First Love Language," written by Stefany Valentine and published by Penguin Workshop; "Love, Misha," written and illustrated by Askel Aden and published by First Second; "Red Flags and Butterflies," written by Sheryl Azzam and published by DCB Young Readers; and "You and Me on Repeat," written and illustrated by Mary Shyne and published by Henry Holt Books for Young Readers.</p>
+        <h2>Award for Excellence in Nonfiction for Young Adults</h2>
+      </main>
+    '''
+    current_page = '''
+      <main>
+        <h2>2026 Morris Award Winner</h2>
+        <p>"All the Noise at Once," written by DeAndra Davis, was named the 2026 winner of the William C. Morris YA Debut Award. The book is published by Atheneum Books for Young Readers.</p>
+      </main>
+    '''
+
+    parsed = MorrisAwardParser().parse(
+      history_html,
+      current_year=2026,
+      current_page=current_page,
+      supplement_pages=(
+        ('https://www.ala.org/yalsa/2023-morris-award-0', annual_2023),
+        (yma_awards_url(2026), yma_2026),
+      ))
+
+    by_year = {}
+    for entry in parsed['entries']:
+      by_year.setdefault(entry['award_year'], []).append(entry)
+
+    self.assertEqual([
+      ('2023', 'The Life and Crimes of Hoodie Rosen', 'Isaac Blum', 'winner'),
+      ('2023.01', 'The Summer of Bitter and Sweet', 'Jen Ferguson', 'shortlisted'),
+      ('2023.02', 'Wake the Bones', 'Elizabeth Kilcoyne', 'shortlisted'),
+      ('2023.03', "The Lesbiana's Guide to Catholic School", 'Sonora Reyes', 'shortlisted'),
+      ('2023.04', 'Hell Followed With Us', 'Andrew Joseph White', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in by_year['2023']
+    ])
+    self.assertEqual([
+      ('2026', 'All the Noise at Once', 'DeAndra Davis', 'winner'),
+      ('2026.01', 'First Love Language', 'Stefany Valentine', 'shortlisted'),
+      ('2026.02', 'Love, Misha', 'Askel Aden', 'shortlisted'),
+      ('2026.03', 'Red Flags and Butterflies', 'Sheryl Azzam', 'shortlisted'),
+      ('2026.04', 'You and Me on Repeat', 'Mary Shyne', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in by_year['2026']
+    ])
+    self.assertEqual({'winner', 'shortlisted'}, {
+      entry['result'] for entry in parsed['entries']
+    })
+
+  def test_morris_fetcher_metadata_registry_and_missing_supplement_notes(self):
+    from parser.base import CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE
+    from parser.morris import CURRENT_URL, yma_awards_url
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.morris import UrlFetcherWilliamCMorrisAward
+
+    fetcher = UrlFetcherWilliamCMorrisAward()
+
+    self.assertEqual('william_c_morris_award', fetcher.source_id)
+    self.assertEqual('William C. Morris YA Debut Award', fetcher.NAME)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual(
+      [CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE],
+      [item['label'] for item in fetcher.get_filter_list()])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+
+    history_html = '''
+      <main>
+        <h2>2024</h2>
+        <p>Winner: Rez Ball written by Byron Graves.</p>
+      </main>
+    '''
+    current_html = '''
+      <main>
+        <a href="/news/2025/01/not-other-girls-wins-2025-william-c-morris-award">2025 Morris Award</a>
+      </main>
+    '''
+    annual_2025 = '''
+      <main>
+        <h1>Not Like Other Girls wins 2025 William C. Morris Award</h1>
+        <p>"Not Like Other Girls," written by Meredith Adamo, has been named the 2025 winner of the William C. Morris YA Debut Award. The book is published by Bloomsbury YA.</p>
+        <p>The 2025 Morris Award finalists, announced in December, include:</p>
+        <p>"Aisle Nine," written by Ian X. Cho, published by HarperCollins Children's Books.</p>
+      </main>
+    '''
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == fetcher.URL:
+        return history_html
+      if url == CURRENT_URL:
+        return current_html
+      if url.endswith('/news/2025/01/not-other-girls-wins-2025-william-c-morris-award'):
+        return annual_2025
+      if url == yma_awards_url(2026):
+        raise RuntimeError('not posted')
+      self.fail(url)
+
+    parsed = fetcher.parse(
+      history_html,
+      fetch_url=fetch_url,
+      current_year=2026)
+
+    self.assertEqual(['Rez Ball', 'Not Like Other Girls', 'Aisle Nine'], [
+      entry['title'] for entry in parsed['entries']
+    ])
+    self.assertEqual([
+      CURRENT_URL,
+      'https://www.ala.org/news/2025/01/not-other-girls-wins-2025-william-c-morris-award',
+      yma_awards_url(2026),
+    ], fetched)
+    self.assertIn('could not be fetched', parsed['notes'][0])
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('william_c_morris_award', registry_ids)
+    self.assertLess(
+      registry_ids.index('goodreads_choice_awards_best_of_the_best'),
+      registry_ids.index('william_c_morris_award'))
+    self.assertLess(
+      registry_ids.index('william_c_morris_award'),
+      registry_ids.index('michael_l_printz_award'))
+
+  def test_yalsa_nonfiction_history_parser_imports_official_finalists(self):
+    from parser.yalsa_nonfiction import YALSANonfictionAwardParser
+
+    html = '''
+      <main>
+        <h2>2022</h2>
+        <p>Winner: "Ambushed!: The Assassination Plot Against President Garfield" written by Gail Jarrow and published by Calkins Creek, 978-1684378142.</p>
+        <p>Finalists:</p>
+        <p>"The 1619 Project: Born on the Water," written by Nikole Hannah-Jones and Renee Watson, illustrated by Nikkolas Smith, and published by Kokila.</p>
+        <p>In the Shadow of the Fallen Towers: The Seconds, Minutes, Hours, Days, Weeks, Months, and Years after the 9/11 Attacks written and illustrated by Don Brown.</p>
+        <h2>2010</h2>
+        <p>Winner: Charles and Emma: The Darwins' Leap of Faith by Deborah Heiligman</p>
+        <p>Finalists: Almost Astronauts: 13 Women Who Dared to Dream by Tanya Lee Stone, Claudette Colvin: Twice Toward Justice by Phillip Hoose, The Great and Only Barnum: The Tremendous, Stupendous Life of Showman P. T. Barnum by Candace Fleming, and Written in Bone: Buried Lives of Jamestown and Colonial Maryland by Sally M. Walker.</p>
+      </main>
+    '''
+
+    parsed = YALSANonfictionAwardParser().parse(html)
+
+    self.assertEqual([
+      ('2010', "Charles and Emma: The Darwins' Leap of Faith", 'Deborah Heiligman', 'winner'),
+      ('2010.01', 'Almost Astronauts: 13 Women Who Dared to Dream', 'Tanya Lee Stone', 'shortlisted'),
+      ('2010.02', 'Claudette Colvin: Twice Toward Justice', 'Phillip Hoose', 'shortlisted'),
+      ('2010.03', 'The Great and Only Barnum: The Tremendous, Stupendous Life of Showman P. T. Barnum', 'Candace Fleming', 'shortlisted'),
+      ('2010.04', 'Written in Bone: Buried Lives of Jamestown and Colonial Maryland', 'Sally M. Walker', 'shortlisted'),
+      ('2022', 'Ambushed!: The Assassination Plot Against President Garfield', 'Gail Jarrow', 'winner'),
+      ('2022.01', 'The 1619 Project: Born on the Water', 'Nikole Hannah-Jones and Renee Watson, illustrated by Nikkolas Smith', 'shortlisted'),
+      ('2022.02', 'In the Shadow of the Fallen Towers: The Seconds, Minutes, Hours, Days, Weeks, Months, and Years after the 9/11 Attacks', 'Don Brown', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(
+      entry['award'] == 'YALSA Award for Excellence in Nonfiction for Young Adults'
+      for entry in parsed['entries']))
+    self.assertTrue(all(entry['category'] == 'Young Adult Nonfiction' for entry in parsed['entries']))
+    self.assertFalse(parsed['match_series'])
+    self.assertIn('official public shortlists', parsed['notes'][0])
+    self.assertIn('nomination lists are excluded', parsed['notes'][0])
+
+  def test_yalsa_nonfiction_annual_and_yma_supplements_recent_years(self):
+    from parser.yalsa_nonfiction import YALSANonfictionAwardParser, yma_awards_url
+
+    history_html = '''
+      <main>
+        <h2>2022</h2>
+        <p>Winner: Ambushed!: The Assassination Plot Against President Garfield written by Gail Jarrow.</p>
+      </main>
+    '''
+    annual_2023 = '''
+      <main>
+        <h2>2023 Winner</h2>
+        <p>Victory. Stand!: Raising My Fist for Justice, by Tommie Smith, Derrick Barnes, and illustrated by Dawud Anyabwile, published by Norton Young Readers.</p>
+        <h2>2023 Finalists</h2>
+        <p>Abuela, Don't Forget Me by Rex Ogle.</p>
+        <p>American Murderer: The Parasite That Haunted the South by Gail Jarrow.</p>
+      </main>
+    '''
+    annual_2025 = '''
+      <main>
+        <h1>Rising from the Ashes wins 2025 YALSA Excellence in Nonfiction Award</h1>
+        <p>"Rising from the Ashes: Los Angeles, 1992. Edward Jae Song Lee, Latasha Harlins, Rodney King, and a City on Fire," written by Paula Yoo, has been named the 2025 winner of the YALSA Award for Excellence in Nonfiction for Young Adults.</p>
+        <p>The 2025 Nonfiction finalists, announced in December, include:</p>
+        <ul>
+          <li>"A Greater Goal: The Epic Battle for Equal Pay in Women's Soccer - and Beyond," written by Elizabeth Rusch and published by Greenwillow Books.</li>
+        </ul>
+      </main>
+    '''
+    yma_2026 = '''
+      <main>
+        <h2>Award for Excellence in Nonfiction for Young Adults</h2>
+        <p>Award for Excellence in Nonfiction for Young Adults: "Death in the Jungle: Murder, Betrayal, and the Lost Dream of Jonestown," written by Candace Fleming and published by Anne Schwartz Books.</p>
+        <h3>Award for Excellence in Nonfiction for Young Adults Finalists</h3>
+        <p>"American Spirits: The Famous Fox Sisters and the Mysterious Fad That Haunted a Nation," written by Barb Rosenstock and published by Calkins Creek; "White House Secrets: True Stories from the World's Most Famous Residence," written by Gail Jarrow and published by Calkins Creek; "A World Without Summer: A Volcano Erupts, a Creature Awakens, and the Sun Goes Out," written by Nicholas Day, illustrated by Yas Imamura and published by Random House Studio.</p>
+        <h2>American Indian Youth Literature Awards</h2>
+        <p>Not Imported by Someone Else.</p>
+      </main>
+    '''
+
+    parsed = YALSANonfictionAwardParser().parse(
+      history_html,
+      current_year=2026,
+      supplement_pages=(
+        ('https://www.ala.org/yalsa/2023-nonfiction-award', annual_2023),
+        ('https://www.ala.org/news/2025/01/rising-ashes-los-angeles-1992', annual_2025),
+        (yma_awards_url(2026), yma_2026),
+      ))
+
+    by_year = {}
+    for entry in parsed['entries']:
+      by_year.setdefault(entry['award_year'], []).append(entry)
+
+    self.assertEqual([
+      ('2023', 'Victory. Stand!: Raising My Fist for Justice', 'Tommie Smith, Derrick Barnes, and illustrated by Dawud Anyabwile', 'winner'),
+      ('2023.01', "Abuela, Don't Forget Me", 'Rex Ogle', 'shortlisted'),
+      ('2023.02', 'American Murderer: The Parasite That Haunted the South', 'Gail Jarrow', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in by_year['2023']
+    ])
+    self.assertEqual([
+      ('2025', 'Rising from the Ashes: Los Angeles, 1992. Edward Jae Song Lee, Latasha Harlins, Rodney King, and a City on Fire', 'Paula Yoo', 'winner'),
+      ('2025.01', "A Greater Goal: The Epic Battle for Equal Pay in Women's Soccer - and Beyond", 'Elizabeth Rusch', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in by_year['2025']
+    ])
+    self.assertEqual([
+      ('2026', 'Death in the Jungle: Murder, Betrayal, and the Lost Dream of Jonestown', 'Candace Fleming', 'winner'),
+      ('2026.01', 'American Spirits: The Famous Fox Sisters and the Mysterious Fad That Haunted a Nation', 'Barb Rosenstock', 'shortlisted'),
+      ('2026.02', "White House Secrets: True Stories from the World's Most Famous Residence", 'Gail Jarrow', 'shortlisted'),
+      ('2026.03', 'A World Without Summer: A Volcano Erupts, a Creature Awakens, and the Sun Goes Out', 'Nicholas Day, illustrated by Yas Imamura', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in by_year['2026']
+    ])
+    self.assertNotIn('Not Imported', [entry['title'] for entry in parsed['entries']])
+
+  def test_yalsa_nonfiction_fetcher_metadata_registry_and_missing_supplement_notes(self):
+    from parser.base import CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE
+    from parser.yalsa_nonfiction import CURRENT_URL, yma_awards_url
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.yalsa_nonfiction import UrlFetcherYALSAExcellenceNonfictionYoungAdults
+
+    fetcher = UrlFetcherYALSAExcellenceNonfictionYoungAdults()
+
+    self.assertEqual('yalsa_excellence_nonfiction_young_adults', fetcher.source_id)
+    self.assertEqual('YALSA Award for Excellence in Nonfiction for Young Adults', fetcher.NAME)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual(
+      [CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE],
+      [item['label'] for item in fetcher.get_filter_list()])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+
+    history_html = '''
+      <main>
+        <h2>2024</h2>
+        <p>Winner: Accountable: The True Story of a Racist Social Media Account and the Teenagers Whose Lives It Changed written by Dashka Slater.</p>
+      </main>
+    '''
+    current_html = '''
+      <main>
+        <a href="/news/2025/01/rising-ashes-los-angeles-1992">2025 Nonfiction Award</a>
+      </main>
+    '''
+    annual_2025 = '''
+      <main>
+        <h1>Rising from the Ashes wins 2025 YALSA Nonfiction Award</h1>
+        <p>"Rising from the Ashes: Los Angeles, 1992," written by Paula Yoo, has been named the 2025 winner of the YALSA Award for Excellence in Nonfiction for Young Adults.</p>
+        <p>The 2025 Nonfiction finalists, announced in December, include:</p>
+        <p>"Homebody," written and illustrated by Theo Parish and published by HarperAlley.</p>
+      </main>
+    '''
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == fetcher.URL:
+        return history_html
+      if url == CURRENT_URL:
+        return current_html
+      if url.endswith('/news/2025/01/rising-ashes-los-angeles-1992'):
+        return annual_2025
+      if url == yma_awards_url(2026):
+        raise RuntimeError('not posted')
+      self.fail(url)
+
+    parsed = fetcher.parse(
+      history_html,
+      fetch_url=fetch_url,
+      current_year=2026)
+
+    self.assertEqual([
+      'Accountable: The True Story of a Racist Social Media Account and the Teenagers Whose Lives It Changed',
+      'Rising from the Ashes: Los Angeles, 1992',
+      'Homebody',
+    ], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual([
+      CURRENT_URL,
+      'https://www.ala.org/news/2025/01/rising-ashes-los-angeles-1992',
+      yma_awards_url(2026),
+    ], fetched)
+    self.assertIn('could not be fetched', parsed['notes'][0])
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('yalsa_excellence_nonfiction_young_adults', registry_ids)
+    self.assertLess(
+      registry_ids.index('william_c_morris_award'),
+      registry_ids.index('yalsa_excellence_nonfiction_young_adults'))
+    self.assertLess(
+      registry_ids.index('yalsa_excellence_nonfiction_young_adults'),
+      registry_ids.index('michael_l_printz_award'))
+
+  def test_printz_history_parser_maps_honor_books_to_shortlisted(self):
+    from parser.printz import PrintzAwardParser
+
+    html = '''
+      <main>
+        <h2>2000</h2>
+        <p>Winner:</p>
+        <p>Monster, by Walter Dean Myers</p>
+        <p>Honor Books:</p>
+        <p>Skellig, by David Almond</p>
+        <p>Speak, by Laurie Halse Anderson</p>
+        <p>Hard Love, by Ellen Wittlinger</p>
+      </main>
+    '''
+
+    parsed = PrintzAwardParser().parse(html)
+
+    self.assertEqual([
+      ('2000', 'Monster', 'Walter Dean Myers', 'winner'),
+      ('2000.01', 'Skellig', 'David Almond', 'shortlisted'),
+      ('2000.02', 'Speak', 'Laurie Halse Anderson', 'shortlisted'),
+      ('2000.03', 'Hard Love', 'Ellen Wittlinger', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(entry['award'] == 'Michael L. Printz Award' for entry in parsed['entries']))
+    self.assertTrue(all(entry['category'] == 'Young Adult Literature' for entry in parsed['entries']))
+    self.assertFalse(parsed['match_series'])
+    self.assertIn('Honor Books are imported as shortlisted', parsed['notes'][0])
+
+  def test_printz_history_parser_preserves_creator_credit_shapes(self):
+    from parser.printz import PrintzAwardParser
+
+    html = '''
+      <main>
+        <h2>2024</h2>
+        <p>Winner: The Collectors: Stories, edited by A.S. King. Written by King and others.</p>
+        <p>Honor Books: Fire from the Sky, by Moa Backe Astot, translated by Eva Apelqvist; Gather by Kenneth M. Cadow; Salt the Water by Candice Iloh</p>
+      </main>
+    '''
+
+    parsed = PrintzAwardParser().parse(html)
+
+    self.assertEqual([
+      ('2024', 'The Collectors: Stories', 'A.S. King', 'winner'),
+      ('2024.01', 'Fire from the Sky', 'Moa Backe Astot, translated by Eva Apelqvist', 'shortlisted'),
+      ('2024.02', 'Gather', 'Kenneth M. Cadow', 'shortlisted'),
+      ('2024.03', 'Salt the Water', 'Candice Iloh', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+
+  def test_printz_youth_media_awards_supplements_recent_years(self):
+    from parser.printz import PrintzAwardParser, yma_awards_url
+
+    history_html = '''
+      <main>
+        <h2>2024</h2>
+        <p>Winner: The Collectors: Stories, edited by A.S. King.</p>
+      </main>
+    '''
+    yma_2025 = '''
+      <main>
+        <h2>Michael L. Printz Award for Excellence in Young Adult Literature</h2>
+        <p>"Brownstone," written by Samuel Teer, illustrated by Mar Julia and co-published by Versify and HarperAlley.</p>
+        <h3>Four Printz Honor Books</h3>
+        <p>"Bright Red Fruit," written by Safia Elhillo and published by Make Me a World; "Compound Fracture," written by Andrew Joseph White and published by Peachtree Teen; "The Deep Dark," written by Molly Knox Ostertag and published by Graphix; and "Road Home," written by Rex Ogle and published by Norton Young Readers.</p>
+        <h2>Schneider Family Book Award</h2>
+      </main>
+    '''
+    yma_2026 = '''
+      <main>
+        <h2>Michael L. Printz Award for Excellence in Young Adult Literature</h2>
+        <p>The Michael L. Printz Award honoring the best book written for teens, based entirely on its literary merit: "Legendary Frybread Drive-In: Intertribal Stories," edited by Cynthia Leitich Smith, and published by Heartdrum.</p>
+        <h3>Printz Honor Books</h3>
+        <p>"Cope Field," written by T.L. Simpson and published by Flux; "The House No One Sees," written by Adina King and published by Feiwel and Friends; "Sisters in the Wind," written by Angeline Boulley and published by Henry Holt Books for Young Readers; and "Song of a Blackbird," written and illustrated by Maria van Lieshout and published by First Second.</p>
+        <h2>Schneider Family Book Award</h2>
+      </main>
+    '''
+    current_page = '''
+      <main>
+        <h2>2026 Michael L. Printz Award Winner: LEGENDARY FRYBREAD DRIVE-IN</h2>
+        <p>"Legendary Frybread Drive-In: Intertribal Stories," edited by Cynthia Leitich Smith and published by Heartdrum.</p>
+      </main>
+    '''
+
+    parsed = PrintzAwardParser().parse(
+      history_html,
+      current_year=2026,
+      current_page=current_page,
+      supplement_pages=(
+        (yma_awards_url(2025), yma_2025),
+        (yma_awards_url(2026), yma_2026),
+      ))
+
+    by_year = {}
+    for entry in parsed['entries']:
+      by_year.setdefault(entry['award_year'], []).append(entry)
+
+    self.assertEqual([
+      ('2025', 'Brownstone', 'Samuel Teer, illustrated by Mar Julia', 'winner'),
+      ('2025.01', 'Bright Red Fruit', 'Safia Elhillo', 'shortlisted'),
+      ('2025.02', 'Compound Fracture', 'Andrew Joseph White', 'shortlisted'),
+      ('2025.03', 'The Deep Dark', 'Molly Knox Ostertag', 'shortlisted'),
+      ('2025.04', 'Road Home', 'Rex Ogle', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in by_year['2025']
+    ])
+    self.assertEqual([
+      ('2026', 'Legendary Frybread Drive-In: Intertribal Stories', 'Cynthia Leitich Smith', 'winner'),
+      ('2026.01', 'Cope Field', 'T.L. Simpson', 'shortlisted'),
+      ('2026.02', 'The House No One Sees', 'Adina King', 'shortlisted'),
+      ('2026.03', 'Sisters in the Wind', 'Angeline Boulley', 'shortlisted'),
+      ('2026.04', 'Song of a Blackbird', 'Maria van Lieshout', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in by_year['2026']
+    ])
+    self.assertEqual({'winner', 'shortlisted'}, {
+      entry['result'] for entry in parsed['entries']
+    })
+
+  def test_printz_fetcher_metadata_registry_and_missing_supplement_notes(self):
+    from parser.base import CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE
+    from parser.printz import CURRENT_URL, yma_awards_url
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.printz import UrlFetcherMichaelLPrintzAward
+
+    fetcher = UrlFetcherMichaelLPrintzAward()
+
+    self.assertEqual('michael_l_printz_award', fetcher.source_id)
+    self.assertEqual('Michael L. Printz Award', fetcher.NAME)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual(
+      [CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE],
+      [item['label'] for item in fetcher.get_filter_list()])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+
+    history_html = '''
+      <main>
+        <h2>2024</h2>
+        <p>Winner: The Collectors: Stories, edited by A.S. King.</p>
+      </main>
+    '''
+    yma_2025 = '''
+      <main>
+        <h2>Michael L. Printz Award for Excellence in Young Adult Literature</h2>
+        <p>"Brownstone," written by Samuel Teer, illustrated by Mar Julia and co-published by Versify and HarperAlley.</p>
+        <h3>Four Printz Honor Books</h3>
+        <p>"Bright Red Fruit," written by Safia Elhillo and published by Make Me a World.</p>
+        <h2>Schneider Family Book Award</h2>
+      </main>
+    '''
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == fetcher.URL:
+        return history_html
+      if url == CURRENT_URL:
+        return '<main></main>'
+      if url == yma_awards_url(2025):
+        return yma_2025
+      if url == yma_awards_url(2026):
+        raise RuntimeError('not posted')
+      self.fail(url)
+
+    parsed = fetcher.parse(
+      history_html,
+      fetch_url=fetch_url,
+      current_year=2026)
+
+    self.assertEqual(['The Collectors: Stories', 'Brownstone', 'Bright Red Fruit'], [
+      entry['title'] for entry in parsed['entries']
+    ])
+    self.assertEqual([CURRENT_URL, yma_awards_url(2025), yma_awards_url(2026)], fetched)
+    self.assertIn('could not be fetched', parsed['notes'][0])
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('michael_l_printz_award', registry_ids)
+    self.assertLess(
+      registry_ids.index('goodreads_choice_awards_best_of_the_best'),
+      registry_ids.index('michael_l_printz_award'))
+    self.assertLess(
+      registry_ids.index('michael_l_printz_award'),
+      registry_ids.index('writers_trust_atwood_gibson_fiction'))
+
+  def test_carnegie_medal_winner_archive_skips_withheld_years(self):
+    from parser.carnegie_medal import CarnegieMedalParser
+
+    html = '''
+      <main>
+        <h1>Medal for Writing Winners</h1>
+        <p>Before 2007, the year refers to the publication year.</p>
+        <p>1936: Pigeon Post by Arthur Ransome</p>
+        <p>1943: No award</p>
+        <p>1945: Award withheld</p>
+        <p>1966: No award was made</p>
+        <p>1967: The Owl Service, Alan Garner</p>
+      </main>
+    '''
+
+    parsed = CarnegieMedalParser().parse(html)
+
+    self.assertEqual([
+      ('1936', 'Pigeon Post', 'Arthur Ransome', 'winner'),
+      ('1967', 'The Owl Service', 'Alan Garner', 'winner'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertEqual({'1936', '1967'}, {entry['award_year'] for entry in parsed['entries']})
+    self.assertTrue(all(entry['award'] == 'Carnegie Medal for Writing' for entry in parsed['entries']))
+    self.assertTrue(all(entry['category'] == 'Writing' for entry in parsed['entries']))
+    self.assertFalse(parsed['match_series'])
+    self.assertTrue(any('1943' in note and 'withheld' in note for note in parsed['notes']))
+    self.assertTrue(any('pre-2010 history is winner-only' in note for note in parsed['notes']))
+
+  def test_carnegie_medal_aggregate_shortlists_stop_before_greenaway(self):
+    from parser.carnegie_medal import (
+      SHORTLIST_ARCHIVE_2010_2015_URL, CarnegieMedalParser,
+    )
+
+    html = '''
+      <main>
+        <h2>2010</h2>
+        <h3>CILIP Carnegie Medal</h3>
+        <ul>
+          <li>Chains by Laurie Halse Anderson (Bloomsbury)</li>
+          <li>Fever Crumb by Philip Reeve</li>
+        </ul>
+        <h3>CILIP Kate Greenaway Medal</h3>
+        <ul><li>Illustration Title by Artist Name</li></ul>
+        <h2>2015</h2>
+        <h3>CILIP Carnegie Medal</h3>
+        <p>Buffalo Soldier by Tanya Landman</p>
+        <h3>Kate Greenaway Medal</h3>
+        <p>Another Illustration by Artist Two</p>
+      </main>
+    '''
+
+    parsed = CarnegieMedalParser().parse(
+      '<p>2015: Buffalo Soldier by Tanya Landman</p>',
+      shortlist_pages=((SHORTLIST_ARCHIVE_2010_2015_URL, html),))
+
+    self.assertEqual([
+      ('2010.01', 'Chains', 'Laurie Halse Anderson', 'shortlisted'),
+      ('2010.02', 'Fever Crumb', 'Philip Reeve', 'shortlisted'),
+      ('2015', 'Buffalo Soldier', 'Tanya Landman', 'winner'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertNotIn('Illustration Title', [entry['title'] for entry in parsed['entries']])
+
+  def test_carnegie_medal_yearly_shortlist_page_shapes(self):
+    from parser.carnegie_medal import CarnegieMedalParser, shortlist_archive_url
+
+    shortlist_2016 = '''
+      <main>
+        <h2>CILIP Carnegie Medal</h2>
+        <ul>
+          <li>One by Sarah Crossan</li>
+          <li>The Lie Tree by Frances Hardinge</li>
+        </ul>
+        <h2>CILIP Kate Greenaway Medal</h2>
+        <p>Illustration Row by Artist</p>
+      </main>
+    '''
+    shortlist_2025 = '''
+      <main>
+        <p>The 2025 Carnegie Medal for Writing shortlist is:</p>
+        <ul>
+          <li>Chronicles of a Lizard Nobody by Patrick Ness, illustrated by Tim Miller (Walker Books)</li>
+          <li>Steady for This by Nathanael Lessore, published by Hot Key Books</li>
+        </ul>
+        <h2>The Carnegie Medal for Illustration shortlist is:</h2>
+        <p>Wrong Row by Artist</p>
+      </main>
+    '''
+
+    parsed = CarnegieMedalParser().parse(
+      '<p>2025: Steady for This by Nathanael Lessore</p>',
+      shortlist_pages=(
+        (shortlist_archive_url(2016), shortlist_2016),
+        (shortlist_archive_url(2025), shortlist_2025),
+      ))
+
+    by_title = {entry['title']: entry for entry in parsed['entries']}
+    self.assertEqual(('2016.01', 'Sarah Crossan', 'shortlisted'), (
+      by_title['One']['position'], by_title['One']['author'], by_title['One']['result']))
+    self.assertEqual(
+      'Patrick Ness, illustrated by Tim Miller',
+      by_title['Chronicles of a Lizard Nobody']['author'])
+    self.assertEqual('winner', by_title['Steady for This']['result'])
+    self.assertNotIn('Wrong Row', by_title)
+
+  def test_carnegie_medal_2026_shortlist_winner_and_excluded_public_stages(self):
+    from parser.carnegie_medal import (
+      CarnegieMedalParser, current_shortlist_url, winner_news_url,
+    )
+
+    shortlist_html = '''
+      <main>
+        <h1>The 2026 Carnegie Medal for Writing shortlist is:</h1>
+        <ul>
+          <li>Ghostlines by Katya Balen</li>
+          <li>Not Going to Plan by Tia Fisher</li>
+          <li>Popcorn by Rob Harrell</li>
+          <li>The Boy I Love by William Hussey</li>
+          <li>Chronicles of a Lizard Nobody by Patrick Ness, illustrated by Tim Miller</li>
+          <li>Wolf Siren by Beth O'Brien</li>
+          <li>Twenty-Four Seconds from Now by Jason Reynolds</li>
+          <li>Birdie by J. P. Rose</li>
+        </ul>
+        <h2>Carnegie Medal for Illustration</h2>
+        <p>Illustration Book by Artist</p>
+      </main>
+    '''
+    winner_html = '''
+      <article>
+        <h1>2026 winners announced</h1>
+        <p>Beth O'Brien won both the Carnegie Medal for Writing and Shadowers' Choice Award for Writing for Wolf Siren (HarperCollins Children's Books).</p>
+        <p>Kate Rolfe won the Carnegie Medal for Illustration for Varmints.</p>
+      </article>
+    '''
+    longlist_html = '<main><h1>Writing Longlist 2026</h1><p>Longlist Book by Writer</p></main>'
+    nominated_html = '<main><h1>Writing Nominated Titles 2026</h1><p>Nominee Book by Writer</p></main>'
+
+    parsed = CarnegieMedalParser().parse(
+      '<p>2025: Steady for This by Nathanael Lessore</p>',
+      supplement_pages=(
+        (current_shortlist_url(2026), shortlist_html),
+        (winner_news_url(2026), winner_html),
+        ('https://carnegies.co.uk/writing-longlist-2026/', longlist_html),
+        ('https://carnegies.co.uk/writing-nominated-titles-2026/', nominated_html),
+      ))
+
+    entries_2026 = [entry for entry in parsed['entries'] if entry['award_year'] == '2026']
+    by_title = {entry['title']: entry for entry in entries_2026}
+
+    self.assertEqual(8, len(entries_2026))
+    self.assertEqual(('2026', 'winner'), (
+      by_title['Wolf Siren']['position'], by_title['Wolf Siren']['result']))
+    self.assertEqual({'winner', 'shortlisted'}, {entry['result'] for entry in entries_2026})
+    self.assertNotIn('Longlist Book', by_title)
+    self.assertNotIn('Nominee Book', by_title)
+    self.assertTrue(any('nominated-title and longlist pages are public but excluded' in note for note in parsed['notes']))
+
+  def test_carnegie_medal_fetcher_metadata_fetch_flow_and_registry(self):
+    from parser.base import CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE
+    from parser.carnegie_medal import (
+      SHORTLIST_ARCHIVE_2010_2015_URL, current_shortlist_url,
+      current_winners_url, shortlist_archive_url, shortlist_news_url,
+      winner_news_url,
+    )
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.carnegie_medal import UrlFetcherCarnegieMedalForWriting
+
+    fetcher = UrlFetcherCarnegieMedalForWriting()
+
+    self.assertEqual('carnegie_medal_for_writing', fetcher.source_id)
+    self.assertEqual('Carnegie Medal for Writing', fetcher.NAME)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual(
+      [CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE],
+      [item['label'] for item in fetcher.get_filter_list()])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+
+    history_html = '<main><p>2015: Buffalo Soldier by Tanya Landman</p></main>'
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == SHORTLIST_ARCHIVE_2010_2015_URL:
+        return '''
+          <main>
+            <h2>2015</h2>
+            <h3>CILIP Carnegie Medal</h3>
+            <p>Five Children on the Western Front by Kate Saunders</p>
+            <h3>Kate Greenaway Medal</h3>
+          </main>
+        '''
+      if url == shortlist_archive_url(2016):
+        return '<main><h2>CILIP Carnegie Medal</h2><p>One by Sarah Crossan</p></main>'
+      if url == winner_news_url(2016):
+        return '<article><p>Sarah Crossan won the Carnegie Medal for Writing for One.</p></article>'
+      if url in {current_shortlist_url(2016), shortlist_news_url(2016), current_winners_url(2016)}:
+        raise RuntimeError('not available')
+      self.fail(url)
+
+    parsed = fetcher.parse(history_html, fetch_url=fetch_url, current_year=2016)
+
+    self.assertEqual('Carnegie Medal for Writing', parsed['name'])
+    self.assertFalse(parsed['match_series'])
+    self.assertEqual([
+      'Buffalo Soldier',
+      'Five Children on the Western Front',
+      'One',
+    ], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual([
+      SHORTLIST_ARCHIVE_2010_2015_URL,
+      shortlist_archive_url(2016),
+      current_shortlist_url(2016),
+      shortlist_news_url(2016),
+      winner_news_url(2016),
+      current_winners_url(2016),
+    ], fetched)
+    self.assertTrue(any('could not be fetched' in note for note in parsed['notes']))
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('carnegie_medal_for_writing', registry_ids)
+    self.assertLess(
+      registry_ids.index('michael_l_printz_award'),
+      registry_ids.index('carnegie_medal_for_writing'))
+    self.assertLess(
+      registry_ids.index('carnegie_medal_for_writing'),
+      registry_ids.index('writers_trust_atwood_gibson_fiction'))
+
+  def test_newbery_pdf_parser_maps_honor_books_to_shortlisted(self):
+    from parser.newbery import NewberyMedalParser
+
+    text = '''
+      John Newbery Medal and Honor Books
+      1922 Medal Winner
+      The Story of Mankind, by Hendrik Willem van Loon (Liveright)
+      1922 Honor Books
+      The Great Quest, by Charles Boardman Hawes (Little, Brown)
+      Cedric the Forester, by Bernard Marshall (Appleton)
+      The Old Tobacco Shop: A True Account of What Befell a Little Boy in Search of Adventure,
+      by William Bowen (Macmillan)
+    '''
+
+    parsed = NewberyMedalParser().parse(text)
+
+    self.assertEqual([
+      ('1922', 'The Story of Mankind', 'Hendrik Willem van Loon', 'winner'),
+      ('1922.01', 'Cedric the Forester', 'Bernard Marshall', 'shortlisted'),
+      ('1922.02', 'The Great Quest', 'Charles Boardman Hawes', 'shortlisted'),
+      ('1922.03', 'The Old Tobacco Shop: A True Account of What Befell a Little Boy in Search of Adventure', 'William Bowen', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(entry['award'] == 'John Newbery Medal' for entry in parsed['entries']))
+    self.assertTrue(all(entry['category'] == "Children's Literature" for entry in parsed['entries']))
+    self.assertFalse(parsed['match_series'])
+    self.assertTrue(any('Honor Books are imported as shortlisted' in note for note in parsed['notes']))
+
+  def test_newbery_pdf_parser_skips_none_recorded_honors_and_wraps_rows(self):
+    from parser.newbery import NewberyMedalParser
+
+    text = '''
+      1923 Medal Winner
+      The Voyages of Doctor Dolittle, by Hugh Lofting (Stokes)
+      1923 Honor Books
+      [None recorded]
+      2024 Medal Winner
+      The Eyes and the Impossible,
+      by Dave Eggers (Knopf)
+      2024 Honor Book
+      Eagle Drums, written and illustrated by Nasugraq Rainey Hopson
+      (Roaring Brook Press)
+    '''
+
+    parsed = NewberyMedalParser().parse(text)
+
+    self.assertEqual([
+      ('1923', 'The Voyages of Doctor Dolittle', 'Hugh Lofting', 'winner'),
+      ('2024', 'The Eyes and the Impossible', 'Dave Eggers', 'winner'),
+      ('2024.01', 'Eagle Drums', 'Nasugraq Rainey Hopson', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertEqual({'winner', 'shortlisted'}, {entry['result'] for entry in parsed['entries']})
+
+  def test_newbery_youth_media_awards_supplement_stops_before_caldecott(self):
+    from parser.newbery import NewberyMedalParser, yma_awards_url
+
+    pdf_text = '''
+      2025 Medal Winner
+      The First State of Being, by Erin Entrada Kelly (Greenwillow Books)
+    '''
+    yma_2026 = '''
+      <main>
+        <h2>John Newbery Medal</h2>
+        <p>The John Newbery Medal for the most outstanding contribution to children's literature: "The Last Dragon on Mars," written by Scott Reintgen and published by Aladdin.</p>
+        <h3>Newbery Honor Books</h3>
+        <p>"Across So Many Seas," written by Ruth Behar and published by Nancy Paulsen Books; "Magnolia Wu Unfolds It All," written by Chanel Miller and published by Philomel Books; "One Big Open Sky," written by Lesa Cline-Ransome and published by Holiday House; and "The Wrong Way Home," written by Kate O'Shaughnessy and published by Knopf Books for Young Readers.</p>
+        <h2>Randolph Caldecott Medal</h2>
+        <p>"A Caldecott Book," illustrated by Artist Name.</p>
+      </main>
+    '''
+
+    parsed = NewberyMedalParser().parse(
+      pdf_text,
+      supplement_pages=((yma_awards_url(2026), yma_2026),))
+
+    by_year = {}
+    for entry in parsed['entries']:
+      by_year.setdefault(entry['award_year'], []).append(entry)
+
+    self.assertEqual([
+      ('2026', 'The Last Dragon on Mars', 'Scott Reintgen', 'winner'),
+      ('2026.01', 'Across So Many Seas', 'Ruth Behar', 'shortlisted'),
+      ('2026.02', 'Magnolia Wu Unfolds It All', 'Chanel Miller', 'shortlisted'),
+      ('2026.03', 'One Big Open Sky', 'Lesa Cline-Ransome', 'shortlisted'),
+      ('2026.04', 'The Wrong Way Home', "Kate O'Shaughnessy", 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in by_year['2026']
+    ])
+    self.assertNotIn('A Caldecott Book', [entry['title'] for entry in parsed['entries']])
+    self.assertEqual({'winner', 'shortlisted'}, {entry['result'] for entry in parsed['entries']})
+
+  def test_newbery_fetcher_discovers_pdf_supplements_lag_and_registry(self):
+    from parser.base import CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE
+    from parser.newbery import PDF_URL, yma_awards_url
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.newbery import UrlFetcherJohnNewberyMedal
+
+    fetcher = UrlFetcherJohnNewberyMedal()
+
+    self.assertEqual('john_newbery_medal', fetcher.source_id)
+    self.assertEqual('John Newbery Medal', fetcher.NAME)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual(
+      [CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE],
+      [item['label'] for item in fetcher.get_filter_list()])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+
+    landing_html = f'''
+      <main>
+        <a href="{PDF_URL}">Newbery Medal and Honor Books, 1922-present PDF</a>
+      </main>
+    '''
+    pdf_text = '''
+      2025 Medal Winner
+      The First State of Being, by Erin Entrada Kelly (Greenwillow Books)
+    '''
+    yma_2026 = '''
+      <main>
+        <h2>John Newbery Medal</h2>
+        <p>"The Last Dragon on Mars," written by Scott Reintgen and published by Aladdin.</p>
+        <h3>Newbery Honor Books</h3>
+        <p>"Across So Many Seas," written by Ruth Behar and published by Nancy Paulsen Books.</p>
+        <h2>Randolph Caldecott Medal</h2>
+      </main>
+    '''
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == PDF_URL:
+        return pdf_text
+      if url == yma_awards_url(2026):
+        return yma_2026
+      self.fail(url)
+
+    parsed = fetcher.parse(landing_html, fetch_url=fetch_url, current_year=2026)
+
+    self.assertEqual([
+      'The First State of Being',
+      'The Last Dragon on Mars',
+      'Across So Many Seas',
+    ], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual([PDF_URL, yma_awards_url(2026)], fetched)
+    self.assertFalse(parsed['match_series'])
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('john_newbery_medal', registry_ids)
+    self.assertLess(
+      registry_ids.index('carnegie_medal_for_writing'),
+      registry_ids.index('john_newbery_medal'))
+    self.assertLess(
+      registry_ids.index('john_newbery_medal'),
+      registry_ids.index('writers_trust_atwood_gibson_fiction'))
+
+  def test_cbca_archive_parser_imports_winner_honour_and_shortlist_rows(self):
+    from parser.cbca_book_of_the_year import (
+      CATEGORY_OLDER_READERS, CBCABookOfTheYearParser,
+    )
+
+    html = '''
+      <main>
+        <h1>CBCA Book of the Year Award through history</h1>
+        <p>2025</p>
+        <h3>Book of the Year Award for Older Readers</h3>
+        <p>Winner | I’m Not Really Here, Gary Lonesborough (Allen &amp; Unwin)</p>
+        <p>Honour | Into the Mouth of the Wolf, Erin Gough (Hardie Grant Children’s Publishing)</p>
+        <p>Honour | Birdy, Sharon Kernot (Text)</p>
+        <p>Shortlist | Comes the Night, Isobelle Carmody (Allen &amp; Unwin)</p>
+        <p>Shortlist | A Wreck of Seabirds, Karleah Olson (Fremantle)</p>
+      </main>
+    '''
+
+    parsed = CBCABookOfTheYearParser(CATEGORY_OLDER_READERS).parse(
+      html, current_year=2025)
+
+    self.assertEqual([
+      ('2025', 'I’m Not Really Here', 'Gary Lonesborough', 'winner'),
+      ('2025.01', 'A Wreck of Seabirds', 'Karleah Olson', 'shortlisted'),
+      ('2025.02', 'Birdy', 'Sharon Kernot', 'shortlisted'),
+      ('2025.03', 'Comes the Night', 'Isobelle Carmody', 'shortlisted'),
+      ('2025.04', 'Into the Mouth of the Wolf', 'Erin Gough', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(entry['award'] == 'CBCA Book of the Year' for entry in parsed['entries']))
+    self.assertTrue(all(entry['category'] == CATEGORY_OLDER_READERS for entry in parsed['entries']))
+    self.assertFalse(parsed['match_series'])
+    self.assertTrue(any('Honour Books and official shortlists' in note for note in parsed['notes']))
+
+  def test_cbca_2026_shortlist_page_imports_shortlist_only(self):
+    from parser.cbca_book_of_the_year import (
+      CATEGORY_YOUNGER_READERS, CBCABookOfTheYearParser, shortlist_url,
+    )
+
+    html = '''
+      <main>
+        <h1>2026 Book of the Year Awards - Shortlist</h1>
+        <h2>Older Readers</h2>
+        <p>Of Flame and Fury, Mikayla Bridge (Macmillan Australia)</p>
+        <h2>Younger Readers</h2>
+        <p>Run, Sarah Armstrong (Hardie Grant Children’s Publishing)</p>
+        <p>Something Terrible: Tim Tie-Your-Shoelaces, Sally Barton, illustrated by Christopher Nielsen (Walker Books Australia)</p>
+        <p>Little Bones, Sandy Bigna (University of Queensland Press)</p>
+      </main>
+    '''
+
+    parsed = CBCABookOfTheYearParser(CATEGORY_YOUNGER_READERS).parse(
+      html, shortlist_url(2026), current_year=2026)
+
+    self.assertEqual([
+      ('2026.01', 'Little Bones', 'Sandy Bigna', 'shortlisted'),
+      ('2026.02', 'Run', 'Sarah Armstrong', 'shortlisted'),
+      ('2026.03', 'Something Terrible: Tim Tie-Your-Shoelaces',
+       'Sally Barton, illustrated by Christopher Nielsen', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertEqual({'shortlisted'}, {entry['result'] for entry in parsed['entries']})
+    self.assertTrue(any('shortlist rows only' in note for note in parsed['notes']))
+
+  def test_cbca_pdf_parser_imports_historical_and_recent_rows(self):
+    from parser.cbca_book_of_the_year import (
+      CATEGORY_EARLY_CHILDHOOD, CATEGORY_OLDER_READERS,
+      CBCABookOfTheYearParser,
+    )
+
+    text = '''
+      THE CHILDREN'S BOOK COUNCIL OF AUSTRALIA
+      BOOK OF THE YEAR AWARD 1946 - 1981
+      1946 - WINNER REES, Leslie Karrawingi the Emu John Sands
+      SHORT LIST BARNETT, Gillian The Inside Hedge Story Oxford University Press
+      BOOK OF THE YEAR AWARD: EARLY CHILDHOOD
+      2021 - WINNER FREEMAN, Pamela Dry to Dry: The Seasons of Kakadu Walker
+    '''
+
+    older = CBCABookOfTheYearParser(CATEGORY_OLDER_READERS).parse(text)
+    early = CBCABookOfTheYearParser(CATEGORY_EARLY_CHILDHOOD).parse(text)
+
+    self.assertEqual([
+      ('1946', 'Karrawingi the Emu', 'Leslie Rees', 'winner'),
+      ('1946.01', 'The Inside Hedge Story', 'Gillian Barnett', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in older['entries']
+    ])
+    self.assertEqual([
+      ('2021', 'Dry to Dry: The Seasons of Kakadu', 'Pamela Freeman', 'winner'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in early['entries']
+    ])
+    self.assertTrue(any('Historical CBCA non-winner labels' in note for note in older['notes']))
+
+  def test_cbca_fetchers_filter_each_configured_category(self):
+    from parser.base import (
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+      CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+    )
+    from url_fetcher.cbca_book_of_the_year import (
+      UrlFetcherCBCABookOfTheYearEarlyChildhood,
+      UrlFetcherCBCABookOfTheYearEvePownall,
+      UrlFetcherCBCABookOfTheYearMiddleReaders,
+      UrlFetcherCBCABookOfTheYearNewIllustrator,
+      UrlFetcherCBCABookOfTheYearOlderReaders,
+      UrlFetcherCBCABookOfTheYearPictureBook,
+      UrlFetcherCBCABookOfTheYearYoungerReaders,
+    )
+
+    html = '''
+      <main>
+        <p>2027</p>
+        <h2>Older Readers</h2><p>Winner | Older Book, Older Author (Publisher)</p>
+        <h2>Younger Readers</h2><p>Winner | Younger Book, Younger Author (Publisher)</p>
+        <h2>Middle Readers</h2><p>Winner | Middle Book, Middle Author (Publisher)</p>
+        <h2>Early Childhood</h2><p>Winner | Early Book, Early Author (Publisher)</p>
+        <h2>Picture Book of the Year</h2><p>Winner | Picture Book, Picture Author (Publisher)</p>
+        <h2>Eve Pownall Award</h2><p>Winner | Eve Book, Eve Author (Publisher)</p>
+        <h2>New Illustrator</h2><p>Winner | Illustrator Book, Illustrator Author (Publisher)</p>
+      </main>
+    '''
+    fetchers = (
+      UrlFetcherCBCABookOfTheYearOlderReaders(),
+      UrlFetcherCBCABookOfTheYearYoungerReaders(),
+      UrlFetcherCBCABookOfTheYearMiddleReaders(),
+      UrlFetcherCBCABookOfTheYearEarlyChildhood(),
+      UrlFetcherCBCABookOfTheYearPictureBook(),
+      UrlFetcherCBCABookOfTheYearEvePownall(),
+      UrlFetcherCBCABookOfTheYearNewIllustrator(),
+    )
+
+    for fetcher in fetchers:
+      with self.subTest(fetcher=fetcher.source_id):
+        parsed = fetcher.parse(html, current_year=2027)
+        self.assertEqual([fetcher.CATEGORY], [
+          entry['category'] for entry in parsed['entries']
+        ])
+        filters = [item['label'] for item in fetcher.get_filter_list()]
+        self.assertIn(CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE, filters)
+        self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+        self.assertFalse(fetcher.options['match_series'])
+        self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+
+  def test_cbca_future_year_fetch_flow_tolerates_missing_winner_page(self):
+    from parser.cbca_book_of_the_year import (
+      AWARDS_URL, PDF_URL, shortlist_url, winners_url,
+    )
+    from url_fetcher.cbca_book_of_the_year import (
+      UrlFetcherCBCABookOfTheYearMiddleReaders,
+    )
+
+    fetcher = UrlFetcherCBCABookOfTheYearMiddleReaders()
+    archive_html = f'''
+      <main>
+        <a href="{PDF_URL}">Download a PDF of all prior winners</a>
+      </main>
+    '''
+    awards_html = '<main><a href="/2027-shortlist/">2027 Book of the Year Awards - Shortlist</a></main>'
+    shortlist_html = '''
+      <main>
+        <h1>2027 Book of the Year Awards - Shortlist</h1>
+        <h2>Middle Readers</h2>
+        <p>Future Middle Book, Future Author (Example Press)</p>
+      </main>
+    '''
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == PDF_URL:
+        return 'THE CHILDREN’S BOOK COUNCIL OF AUSTRALIA'
+      if url == AWARDS_URL:
+        return awards_html
+      if url == shortlist_url(2027):
+        return shortlist_html
+      if url == winners_url(2027):
+        raise RuntimeError('winner page not posted yet')
+      self.fail(url)
+
+    parsed = fetcher.parse(archive_html, fetch_url=fetch_url, current_year=2027)
+
+    self.assertEqual([
+      ('2027.01', 'Future Middle Book', 'Future Author', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertEqual([PDF_URL, AWARDS_URL, shortlist_url(2027), winners_url(2027)], fetched)
+    self.assertTrue(any('winner page not posted yet' in note for note in parsed['notes']))
+    self.assertTrue(any('shortlist rows only' in note for note in parsed['notes']))
+
+  def test_cbca_fetcher_metadata_and_registry_order(self):
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.cbca_book_of_the_year import (
+      UrlFetcherCBCABookOfTheYearEarlyChildhood,
+      UrlFetcherCBCABookOfTheYearEvePownall,
+      UrlFetcherCBCABookOfTheYearMiddleReaders,
+      UrlFetcherCBCABookOfTheYearNewIllustrator,
+      UrlFetcherCBCABookOfTheYearOlderReaders,
+      UrlFetcherCBCABookOfTheYearPictureBook,
+      UrlFetcherCBCABookOfTheYearYoungerReaders,
+    )
+
+    fetchers = (
+      UrlFetcherCBCABookOfTheYearOlderReaders(),
+      UrlFetcherCBCABookOfTheYearYoungerReaders(),
+      UrlFetcherCBCABookOfTheYearMiddleReaders(),
+      UrlFetcherCBCABookOfTheYearEarlyChildhood(),
+      UrlFetcherCBCABookOfTheYearPictureBook(),
+      UrlFetcherCBCABookOfTheYearEvePownall(),
+      UrlFetcherCBCABookOfTheYearNewIllustrator(),
+    )
+
+    self.assertEqual([
+      'cbca_book_of_the_year_older_readers',
+      'cbca_book_of_the_year_younger_readers',
+      'cbca_book_of_the_year_middle_readers',
+      'cbca_book_of_the_year_early_childhood',
+      'cbca_book_of_the_year_picture_book',
+      'cbca_book_of_the_year_eve_pownall',
+      'cbca_book_of_the_year_new_illustrator',
+    ], [fetcher.source_id for fetcher in fetchers])
+    self.assertEqual(list(range(264, 271)), [fetcher.order for fetcher in fetchers])
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    for fetcher in fetchers:
+      self.assertIn(fetcher.source_id, registry_ids)
+    self.assertLess(
+      registry_ids.index('john_newbery_medal'),
+      registry_ids.index('cbca_book_of_the_year_older_readers'))
+    self.assertLess(
+      registry_ids.index('cbca_book_of_the_year_new_illustrator'),
+      registry_ids.index('writers_trust_atwood_gibson_fiction'))
 
   def test_goodreads_series_source_matches_relaxed_local_series_name(self):
     core = object.__new__(main.ListSwitchboardCore)
@@ -712,178 +2628,6 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertEqual({102: 'r/Fantasy Top Novels 2025'}, captured.get('active_updates'))
     self.assertEqual({102: 2.0}, captured.get('active_index_updates'))
 
-  def test_manage_active_list_reviews_cached_import_and_applies_changes(self):
-    core = object.__new__(main.ListSwitchboardCore)
-    core.ensure_configured = lambda: True
-    core.current_active = lambda: 'Example List'
-    core.import_cache_for_active_list = lambda _active: {
-      'list_id': 'example_list',
-      'list_name': 'Example List',
-      'entries': [{'position': '1', 'title': 'Book', 'author': 'Author'}],
-      'match_series': True,
-      'notes': ['cached note'],
-    }
-    row = core.import_review_row(
-      {'position': '1', 'title': 'Book', 'author': 'Author'},
-      matched=True,
-      book_ids=[7],
-      match_source='automatic')
-    core.match_imported_entries = lambda entries, **kwargs: ({7: '1'}, [], [row])
-    core.reconcile_review_rows_with_active_list = (
-      lambda list_name, rows, active_name=None, position_problem_rows=None:
-        (rows, ['active note']))
-    position_problem_rows = [{
-      'position': '9',
-      'book_id': 12,
-      'title': 'Off Recipe',
-      'author': 'Author',
-    }]
-    core.active_list_position_problem_rows_for_entries = (
-      lambda _list_name, _entries: position_problem_rows)
-    review_calls = []
-    changed_row = core.import_review_row(
-      {'position': '1', 'title': 'Book', 'author': 'Author'},
-      matched=True,
-      book_ids=[8],
-      matched_books=[{
-        'matched_book_id': 8,
-        'matched_title': 'Book',
-        'matched_authors': ['Author'],
-      }],
-      match_source='manual find')
-
-    def review_import_matches(*args, **kwargs):
-      review_calls.append((args, kwargs))
-      return {8: '1'}, [], [changed_row]
-
-    applied = []
-    core.review_import_matches = review_import_matches
-    core.apply_managed_active_list_review = (
-      lambda list_name, rows: applied.append((list_name, rows)) or 2)
-    messages = []
-    core.status_message = messages.append
-
-    core.manage_active_list()
-
-    self.assertEqual(1, len(review_calls))
-    args, kwargs = review_calls[0]
-    self.assertEqual('Example List', args[0])
-    self.assertEqual('example_list', args[1])
-    self.assertEqual(1, args[2])
-    self.assertEqual(1, args[3])
-    self.assertEqual(['cached note', 'active note'], kwargs['notes'])
-    self.assertEqual(True, kwargs['match_series'])
-    self.assertEqual(False, kwargs['allow_goodreads_recovery'])
-    self.assertEqual(position_problem_rows, kwargs['position_problem_rows'])
-    self.assertEqual([('Example List', [changed_row])], applied)
-    self.assertEqual(
-      'Managed "Example List". Matched 1 book(s); 0 unmatched; updated 2 Active List book(s).',
-      messages[-1])
-
-  def test_show_active_list_position_problems_requires_active_list(self):
-    core = object.__new__(main.ListSwitchboardCore)
-    core.current_active = lambda: None
-
-    with self.assertRaises(main.ListSwitchboardError):
-      core.show_active_list_position_problems_for_current_active_list()
-
-  def test_show_active_list_position_problems_requires_cached_import(self):
-    core = object.__new__(main.ListSwitchboardCore)
-    core.current_active = lambda: 'Example List'
-    core.import_cache_for_active_list = lambda _active: None
-
-    with self.assertRaises(main.ListSwitchboardError):
-      core.show_active_list_position_problems_for_current_active_list()
-
-  def test_show_active_list_position_problems_reports_none_found(self):
-    core = object.__new__(main.ListSwitchboardCore)
-    core.gui = None
-    core.current_active = lambda: 'Example List'
-    core.import_cache_for_active_list = lambda _active: {
-      'list_id': 'example_list',
-      'list_name': 'Example List',
-      'entries': [{'position': '1', 'title': 'Book', 'author': 'Author'}],
-    }
-    core.active_list_position_problem_rows_for_entries = lambda _list_name, _entries: []
-    dialogs = []
-    original_info_dialog = import_flow.info_dialog
-    import_flow.info_dialog = (
-      lambda parent, title, message, show=False:
-        dialogs.append((parent, title, message, show)))
-
-    try:
-      core.show_active_list_position_problems_for_current_active_list()
-    finally:
-      import_flow.info_dialog = original_info_dialog
-
-    self.assertEqual([
-      (None, 'Show position problems', 'No position problems found for "Example List".', True),
-    ], dialogs)
-
-  def test_show_active_list_position_problems_opens_problem_rows(self):
-    core = object.__new__(main.ListSwitchboardCore)
-    core.current_active = lambda: 'Example List'
-    core.import_cache_for_active_list = lambda _active: {
-      'list_id': 'example_list',
-      'list_name': 'Example List',
-      'entries': [{'position': '1', 'title': 'Book', 'author': 'Author'}],
-    }
-    rows = [{
-      'position': '9',
-      'book_id': 8,
-      'title': 'Unknown Position Book',
-      'author': 'Unknown Author',
-    }]
-    core.active_list_position_problem_rows_for_entries = lambda _list_name, _entries: rows
-    viewed = []
-    core.show_active_list_position_problem_rows = (
-      lambda list_name, problem_rows: viewed.append((list_name, problem_rows)))
-
-    core.show_active_list_position_problems_for_current_active_list()
-
-    self.assertEqual([('Example List', rows)], viewed)
-
-  def test_apply_managed_active_list_review_updates_visible_active_matches_only(self):
-    core = object.__new__(main.ListSwitchboardCore)
-    core.active_book_ids_for_list = lambda _list_name: [7, 9, 10]
-    core.active_list_value_matches = lambda book_id, _list_name, _position: book_id == 7
-    captured = {}
-    core.write_fields_with_progress = lambda *args, **kwargs: captured.update({
-      'args': args,
-      'kwargs': kwargs,
-    })
-    rows = [
-      {
-        'entry': {'position': '1', 'title': 'Book', 'author': 'Author'},
-        'imported_position': '1',
-        'matched': True,
-        'book_ids': [8],
-        'original_book_ids': [7],
-        'previous_book_ids': [7],
-      },
-      {
-        'entry': {'position': '2', 'title': 'Other', 'author': 'Author'},
-        'imported_position': '2',
-        'matched': False,
-        'book_ids': [],
-        'original_book_ids': [9],
-        'previous_book_ids': [9],
-      },
-    ]
-
-    updated = core.apply_managed_active_list_review('Example List', rows)
-
-    self.assertEqual(3, updated)
-    self.assertEqual('Manage Active List', captured['args'][0])
-    self.assertEqual({
-      7: '',
-      8: 'Example List',
-      9: '',
-    }, captured['kwargs']['active_updates'])
-    self.assertEqual({8: 1.0}, captured['kwargs']['active_index_updates'])
-    self.assertEqual(True, captured['kwargs']['assign_series_indexes'])
-    self.assertNotIn(10, captured['kwargs']['active_updates'])
-
   def test_import_progress_splits_matching_and_writes(self):
     core = object.__new__(main.ListSwitchboardCore)
     values = []
@@ -977,7 +2721,7 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertEqual([], set_field_calls)
     self.assertEqual([set()], refreshed)
 
-  def test_write_fields_bulk_writes_active_series_indexes_for_multiple_books(self):
+  def test_write_fields_bulk_writes_multi_book_active_series_values(self):
     core = object.__new__(main.ListSwitchboardCore)
     set_field_calls = []
     set_custom_calls = []
@@ -992,8 +2736,8 @@ class ImportMatchingTest(unittest.TestCase):
 
     class FakeApi:
 
-      def set_field(self, field, updates, allow_case_change=True):
-        set_field_calls.append((field, updates, allow_case_change))
+      def set_field(self, field, updates):
+        set_field_calls.append((field, updates))
 
     class FakeDb:
       new_api = FakeApi()
@@ -1004,84 +2748,19 @@ class ImportMatchingTest(unittest.TestCase):
     core.db = FakeDb()
 
     core.write_fields(
-      active_updates={7: 'The Wheel of Time', 8: 'The Wheel of Time'},
-      active_index_updates={7: 1.0, 8: 2.5},
+      active_updates={7: 'Philip K. Dick Award - Novel', 8: 'Philip K. Dick Award - Novel'},
+      active_index_updates={7: 1983.03, 8: 2011.5},
       progress_callback=lambda count, message: progress.append((count, message)))
 
     self.assertEqual([
-      ('#reading_series', {7: 'The Wheel of Time [1]', 8: 'The Wheel of Time [2.5]'}, True),
+      ('#reading_series', {
+        7: 'Philip K. Dick Award - Novel [1983.03]',
+        8: 'Philip K. Dick Award - Novel [2011.5]',
+      })
     ], set_field_calls)
     self.assertEqual([], set_custom_calls)
     self.assertEqual([(2, 'Finished Active List metadata updates...')], progress)
     self.assertEqual([{7, 8}], refreshed)
-
-  def test_write_fields_bulk_clears_active_series_for_multiple_books(self):
-    core = object.__new__(main.ListSwitchboardCore)
-    set_field_calls = []
-    set_custom_calls = []
-    main.prefs['active_list_field'] = '#reading_series'
-    core.active_list_value_matches = lambda _book_id, _value, _position: False
-    core.active_field_is_series = lambda: True
-    core.refresh_books = lambda _ids: None
-    core.debug_writes_active_series_field = lambda *_args: None
-    core.debug_writes_finished = lambda *_args: None
-
-    class FakeApi:
-
-      def set_field(self, field, updates, allow_case_change=True):
-        set_field_calls.append((field, updates, allow_case_change))
-
-    class FakeDb:
-      new_api = FakeApi()
-
-      def set_custom(self, *args, **kwargs):
-        set_custom_calls.append((args, kwargs))
-
-    core.db = FakeDb()
-
-    core.write_fields(active_updates={7: '', 8: ''}, active_index_updates={})
-
-    self.assertEqual([('#reading_series', {7: '', 8: ''}, True)], set_field_calls)
-    self.assertEqual([], set_custom_calls)
-
-  def test_write_fields_keeps_single_active_series_write_on_set_custom(self):
-    core = object.__new__(main.ListSwitchboardCore)
-    set_field_calls = []
-    set_custom_calls = []
-    refreshed = []
-    main.prefs['active_list_field'] = '#reading_series'
-    core.active_list_value_matches = lambda _book_id, _value, _position: False
-    core.active_field_is_series = lambda: True
-    core.refresh_books = lambda ids: refreshed.append(ids)
-    core.debug_writes_active_series_field = lambda *_args: None
-    core.debug_writes_finished = lambda *_args: None
-
-    class FakeApi:
-
-      def set_field(self, field, updates, allow_case_change=True):
-        set_field_calls.append((field, updates, allow_case_change))
-
-    class FakeDb:
-      new_api = FakeApi()
-
-      def set_custom(self, *args, **kwargs):
-        set_custom_calls.append((args, kwargs))
-
-    core.db = FakeDb()
-
-    core.write_fields(
-      active_updates={7: 'The Wheel of Time'},
-      active_index_updates={7: 1.5})
-
-    self.assertEqual([], set_field_calls)
-    self.assertEqual([
-      ((7, 'The Wheel of Time'), {
-        'label': 'reading_series',
-        'extra': 1.5,
-        'allow_case_change': True,
-      }),
-    ], set_custom_calls)
-    self.assertEqual([{7}], refreshed)
 
   def test_add_selected_index_updates_use_next_whole_number_after_current_max(self):
     core = object.__new__(main.ListSwitchboardCore)
@@ -1106,91 +2785,6 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertEqual(
       {4: 34.0, 5: 35.0},
       core.added_active_index_updates('Current List', {4: 'Current List', 5: 'Current List'}))
-
-  def test_shift_add_reviews_saved_cached_override(self):
-    core = object.__new__(main.ListSwitchboardCore)
-    core.debug_storage_cached_active_add_decision = lambda *_args, **_kwargs: None
-    entry = {
-      'position': '1994.22',
-      'title': 'Nightside the Long Sun',
-      'author': 'Gene Wolfe',
-    }
-    other_entry = {
-      'position': '1994.23',
-      'title': 'Timelike Infinity',
-      'author': 'Stephen Baxter',
-    }
-    calls = []
-
-    def chooser(book_id, entries, candidates, default_index, db, **kwargs):
-      calls.append((book_id, entries, candidates, default_index, db, kwargs))
-      return entry, 1994.22, True
-
-    core._active_add_match_chooser = chooser
-    db = object()
-    result = core.cached_active_match_for_book(
-      38627,
-      {
-        'entries': [entry, other_entry],
-        'override_entries_by_book': {38627: entry},
-      },
-      12.0,
-      db,
-      force_match_review=True,
-      active_list_name='Locus annual SF novel')
-
-    self.assertEqual((entry, 1994.22, False), result)
-    self.assertEqual(1, len(calls))
-    self.assertEqual(38627, calls[0][0])
-    self.assertEqual([entry, other_entry], calls[0][1])
-    self.assertEqual([(0, entry)], calls[0][2])
-    self.assertEqual(12.0, calls[0][3])
-    self.assertIs(db, calls[0][4])
-    self.assertEqual(True, calls[0][5]['initial_show_all'])
-    self.assertIs(entry, calls[0][5]['preferred_entry'])
-    self.assertIs(entry, calls[0][5]['automatic_entry'])
-    self.assertEqual('Locus annual SF novel', calls[0][5]['active_list_name'])
-
-  def test_shift_add_reviews_unique_nonexact_cached_candidate(self):
-    core = object.__new__(main.ListSwitchboardCore)
-    core.debug_storage_cached_active_add_decision = lambda *_args, **_kwargs: None
-    core.debug_storage_cached_active_add_candidates = lambda *_args, **_kwargs: None
-    candidate = {
-      'position': '1994.22',
-      'title': 'Nightside the Long Sun',
-      'author': 'Gene Wolfe',
-    }
-    core.cached_entry_candidates_for_book = (
-      lambda *_args, **_kwargs: [(3, candidate)])
-    calls = []
-
-    def chooser(book_id, entries, candidates, default_index, db, **kwargs):
-      calls.append((book_id, entries, candidates, default_index, db, kwargs))
-      return candidate, 1994.22, True
-
-    core._active_add_match_chooser = chooser
-    db = object()
-    result = core.cached_active_match_for_book(
-      38627,
-      {
-        'entries': [candidate],
-        'exact_entries_by_key': {},
-        'override_entries_by_book': {},
-        'titles': {38627: 'Epiphany of the Long Sun'},
-        'authors': {38627: ['Gene Wolfe']},
-      },
-      12.0,
-      db,
-      force_match_review=True,
-      active_list_name='Locus annual SF novel')
-
-    self.assertEqual((candidate, 1994.22, True), result)
-    self.assertEqual(1, len(calls))
-    self.assertEqual([(3, candidate)], calls[0][2])
-    self.assertEqual(True, calls[0][5]['initial_show_all'])
-    self.assertIs(candidate, calls[0][5]['preferred_entry'])
-    self.assertIsNone(calls[0][5]['automatic_entry'])
-    self.assertEqual('Locus annual SF novel', calls[0][5]['active_list_name'])
 
   def test_match_keys_include_calibre_article_normalized_title(self):
     self.assertIn('hobbit', main.match_keys('The Hobbit'))
@@ -1725,40 +3319,67 @@ class ImportMatchingTest(unittest.TestCase):
       ['1 current Active List book(s) use positions not found in the imported recipe.'],
       notes)
 
-  def test_active_reconciliation_uses_recipe_positions_for_problem_note(self):
-    core = self.build_active_reconciliation_core(active_ids=[8], active_positions={8: '9'})
-    row = core.import_review_row({
-      'position': '1',
-      'title': 'First Book',
-      'author': 'Author One',
-    })
-    position_problem_rows = core.active_list_position_problem_rows_for_entries(
-      'Example List',
-      [
-        {'position': '1', 'title': 'First Book', 'author': 'Author One'},
-        {'position': '9', 'title': 'Unknown Position Book', 'author': 'Unknown Author'},
-      ])
+  def test_manage_active_list_review_writes_accepted_cached_review_changes(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    writes = []
+    statuses = []
+    entries = [
+      {'position': '1', 'title': 'First Book', 'author': 'Author One'},
+      {'position': '2', 'title': 'Second Book', 'author': 'Author Two'},
+    ]
+    review_rows = [core.import_review_row(entry) for entry in entries]
+    core.ensure_configured = lambda: True
+    core.current_active = lambda: 'Example List'
+    core.import_cache_for_active_list = lambda _active: {
+      'list_name': 'Example List',
+      'list_id': 'example_list',
+      'entries': entries,
+      'match_series': False,
+      'notes': [],
+      'source_url': 'https://example.invalid/list',
+    }
+    core.match_imported_entries = lambda *_args, **_kwargs: ({1: '1'}, [], review_rows)
+    core.reconcile_review_rows_with_active_list = lambda _name, rows, active_name=None: (rows, [])
+    core.accepted_import_review_rows = lambda rows: ({1: '1'}, [entries[1]], rows)
+    core.review_import_matches = lambda *_args, **_kwargs: ({2: '2'}, [entries[0]], review_rows)
+    core.active_book_ids_for_list = lambda _name: [1, 99]
+    core.active_review_positions_by_book = lambda _ids: {1: '1', 99: '99'}
+    core.write_fields_with_progress = lambda *args, **kwargs: writes.append((args, kwargs))
+    core.status_message = lambda message: statuses.append(message)
 
-    _rows, notes = core.reconcile_review_rows_with_active_list(
-      'Example List', [row], active_name='Example List',
-      position_problem_rows=position_problem_rows)
+    core.manage_active_list_review()
 
-    self.assertEqual([], position_problem_rows)
-    self.assertEqual([], notes)
+    self.assertEqual(1, len(writes))
+    _args, kwargs = writes[0]
+    self.assertEqual({1: '', 2: 'Example List'}, kwargs['active_updates'])
+    self.assertEqual({2: 2.0}, kwargs['active_index_updates'])
+    self.assertIn('Updated Active List "Example List".', statuses)
 
-  def test_active_list_position_problem_rows_include_book_details(self):
-    core = self.build_active_reconciliation_core(active_ids=[8], active_positions={8: '9'})
-
-    rows = core.active_list_position_problem_rows_for_entries(
-      'Example List',
-      [{'position': '1', 'title': 'First Book', 'author': 'Author One'}])
+  def test_current_active_list_position_problems_reports_cache_missing_positions(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    entries = [{'position': '1', 'title': 'First Book', 'author': 'Author One'}]
+    core.ensure_configured = lambda: True
+    core.current_active = lambda: 'Example List'
+    core.import_cache_for_active_list = lambda _active: {
+      'list_name': 'Example List',
+      'list_id': 'example_list',
+      'entries': entries,
+    }
+    core.active_book_ids_for_list = lambda _name: [1, 8]
+    core.active_review_positions_by_book = lambda _ids: {1: '1', 8: '9'}
+    core.review_book_details = lambda _ids: {
+      8: {
+        'matched_title': 'Unknown Position Book',
+        'matched_authors': 'Unknown Author',
+      },
+    }
 
     self.assertEqual([{
-      'position': '9',
       'book_id': 8,
+      'position': '9',
       'title': 'Unknown Position Book',
       'author': 'Unknown Author',
-    }], rows)
+    }], core.current_active_list_position_problems())
 
 
 class ImportReportDialogStateTest(unittest.TestCase):
@@ -1767,6 +3388,8 @@ class ImportReportDialogStateTest(unittest.TestCase):
     def __init__(self, row=0):
       self._row = row
       self.selected = []
+      self.items = {}
+      self.widths = {}
 
     def currentRow(self):
       return self._row
@@ -1778,8 +3401,8 @@ class ImportReportDialogStateTest(unittest.TestCase):
     def setRowCount(self, _count):
       pass
 
-    def setItem(self, _row, _column, _item):
-      pass
+    def setItem(self, row, column, item):
+      self.items[(row, column)] = item
 
     def fontMetrics(self):
       class Metrics:
@@ -1787,8 +3410,8 @@ class ImportReportDialogStateTest(unittest.TestCase):
           return len(str(text))
       return Metrics()
 
-    def setColumnWidth(self, _column, _width):
-      pass
+    def setColumnWidth(self, column, width):
+      self.widths[column] = width
 
   def build_dialog(self, row):
     dialog = object.__new__(ImportReportDialog)
@@ -2014,6 +3637,80 @@ class ImportReportDialogStateTest(unittest.TestCase):
 
     self.assertEqual('Ignored', values[4])
     self.assertEqual('Ignored', values[5])
+
+  def test_table_display_compacts_multiple_ids_with_full_tooltip(self):
+    original_item = import_report_module.QTableWidgetItem
+
+    class FakeItem:
+      def __init__(self, text):
+        self.text = text
+        self.tooltip = ''
+
+      def setToolTip(self, text):
+        self.tooltip = text
+
+    row = {
+      'matched': True,
+      'ignored': False,
+      'book_ids': [30890, 31244, 31245, 31248],
+      'possible_matches': [],
+      'imported_position': '2014.03',
+      'imported_title': 'The Wheel of Time',
+      'imported_author': 'Robert Jordan and Brandon Sanderson',
+      'match_source': 'saved/manual override',
+    }
+    dialog = self.build_dialog(row)
+    dialog.csv_values_for_row = ImportReportDialog.csv_values_for_row.__get__(dialog)
+    dialog.display_values_for_row = ImportReportDialog.display_values_for_row.__get__(dialog)
+    dialog.tooltip_for_table_cell = ImportReportDialog.tooltip_for_table_cell.__get__(dialog)
+    dialog.book_id_text_values = ImportReportDialog.book_id_text_values.__get__(dialog)
+    dialog.book_ids_full_text = ImportReportDialog.book_ids_full_text.__get__(dialog)
+    dialog.book_ids_display_text = ImportReportDialog.book_ids_display_text.__get__(dialog)
+
+    import_report_module.QTableWidgetItem = FakeItem
+    try:
+      dialog.update_table_for_row(row)
+    finally:
+      import_report_module.QTableWidgetItem = original_item
+
+    self.assertEqual('30890; +3 more', dialog.match_table.items[(0, 3)].text)
+    self.assertEqual(
+      '30890; 31244; 31245; 31248',
+      dialog.match_table.items[(0, 3)].tooltip)
+    self.assertEqual(
+      '30890; 31244; 31245; 31248',
+      dialog.csv_values_for_row(row)[3])
+
+  def test_id_column_width_is_capped_to_single_id_hint_width(self):
+    row = {
+      'matched': True,
+      'ignored': False,
+      'book_ids': [30890, 31244, 31245, 31248],
+      'possible_matches': [],
+      'imported_position': '2014.03',
+      'imported_title': 'The Wheel of Time',
+      'imported_author': 'Robert Jordan and Brandon Sanderson',
+      'match_source': 'saved/manual override',
+    }
+    dialog = object.__new__(ImportReportDialog)
+    dialog.match_table = self.FakeMatchTable()
+    dialog.review_rows = [row]
+    dialog.display_values_for_row = ImportReportDialog.display_values_for_row.__get__(dialog)
+    dialog.csv_values_for_row = ImportReportDialog.csv_values_for_row.__get__(dialog)
+    dialog.book_id_text_values = ImportReportDialog.book_id_text_values.__get__(dialog)
+    dialog.book_ids_full_text = ImportReportDialog.book_ids_full_text.__get__(dialog)
+    dialog.book_ids_display_text = ImportReportDialog.book_ids_display_text.__get__(dialog)
+    dialog.stable_width_rows = ImportReportDialog.stable_width_rows.__get__(dialog)
+    dialog.fixed_column_width_values = ImportReportDialog.fixed_column_width_values.__get__(dialog)
+    dialog.apply_stable_fixed_column_widths = ImportReportDialog.apply_stable_fixed_column_widths.__get__(dialog)
+    dialog.max_id_column_content_width = ImportReportDialog.max_id_column_content_width.__get__(dialog)
+    dialog.text_width = ImportReportDialog.text_width.__get__(dialog)
+
+    dialog.apply_stable_fixed_column_widths()
+
+    full_width = len('30890; +3 more') + 28
+    self.assertLess(dialog.match_table.widths[3], full_width)
+    self.assertEqual(int(len('30890') * 1.75) + 28, dialog.match_table.widths[3])
 
   def test_apply_manual_find_match_uses_callback_source(self):
     row = {
@@ -2638,6 +4335,39 @@ class AwardParserSmokeTest(unittest.TestCase):
     self.assertEqual("Dawn's Uncertain Light", parsed['entries'][0]['title'])
     self.assertEqual('Neal Barrett, Jr.', parsed['entries'][0]['author'])
 
+  def test_locus_annual_parser_preserves_suffix_before_coauthor(self):
+    from parser.locus import LocusAnnualAwardsParser
+
+    html = '''
+      Sf Novel
+      1. Winner: Forever Peace, Joe Haldeman (Ace)
+      2. Jack Faust, Michael Swanwick (Avon)
+      3. The Cassini Division, Ken MacLeod (Legend)
+      4. Saint Leibowitz and the Wild Horse Woman, Walter M. Miller, Jr., with Terry Bisson (Bantam Spectra)
+      5. Example Continuation, Example Author, Sr. & Second Author (Example)
+    '''
+    overview = '<a href="/Locus_Awards_1998">1998</a>'
+
+    parsed = LocusAnnualAwardsParser().parse(
+      overview,
+      'https://www.sfadb.com/Locus_Awards',
+      'Locus - Annual SF Novel',
+      'SF Novel',
+      ('novel', 'sf novel'),
+      fetch_url=lambda _url: html)
+
+    self.assertEqual('1998.03', parsed['entries'][3]['position'])
+    self.assertEqual(
+      'Saint Leibowitz and the Wild Horse Woman',
+      parsed['entries'][3]['title'])
+    self.assertEqual(
+      'Walter M. Miller, Jr. & Terry Bisson',
+      parsed['entries'][3]['author'])
+    self.assertEqual('Example Continuation', parsed['entries'][4]['title'])
+    self.assertEqual(
+      'Example Author, Sr. & Second Author',
+      parsed['entries'][4]['author'])
+
   def test_locus_all_time_parser_keeps_malformed_ol_items_separate(self):
     from parser.locus import LocusAllTimeAwardsParser
 
@@ -2696,152 +4426,181 @@ class AwardParserSmokeTest(unittest.TestCase):
       [(entry['position'], entry['title'], entry['author'])
        for entry in parsed['entries']])
 
-  def test_sfadb_parser_base_handles_categoryblock_xpath_dom_variation(self):
-    import re
-    from parser.sfadb_base import SFADBParser, StandardItemMixin
+  def test_philip_k_dick_parser_reads_sfadb_category_blocks(self):
+    from parser.philip_k_dick import PhilipKDickParser
 
-    class SmokeSFADBParser(StandardItemMixin, SFADBParser):
-      AWARD_NAME = 'Smoke SFADB Award'
-      YEAR_PAGE_URL = re.compile(r'/Smoke_Awards_(\d{4})$')
-      CATEGORY_BOUNDARIES = frozenset({'novella'})
+    overview = '<a href="Philip_K_Dick_Award_2026">2026</a>'
+    html = '''
+      <div class="AwYrTimePlace">
+        <b>Where and When</b>: Norwescon 48
+      </div>
+      <div class="categoryblock">
+        <div class="category"><span class="winner">Winner</span></div>
+        <ul>
+          <li><b>Outlaw Planet</b>, <a href="M_R_Carey">M. R. Carey</a> (Orbit UK; Orbit US)</li>
+        </ul>
+      </div>
+      <div class="categoryblock">
+        <div class="category"><span class="winner">Special Citation</span></div>
+        <ul>
+          <li><b>Uncertain Sons and Other Stories</b>, <a href="Thomas_Ha">Thomas Ha</a> (Undertow)</li>
+        </ul>
+      </div>
+      <div class="categoryblock">
+        <div class="category">Finalists</div>
+        <ul>
+          <li><b>Casual</b>, <a href="Koji_A_Dae">Koji A. Dae</a> (Tenebrous)</li>
+          <li><b>City of All Seasons</b>, <a href="Oliver_K_Langmead">Oliver K. Langmead</a> & <a href="Aliya_Whiteley">Aliya Whiteley</a> (Titan)</li>
+        </ul>
+      </div>
+    '''
+
+    parsed = PhilipKDickParser().parse(
+      overview,
+      'https://www.sfadb.com/Philip_K_Dick_Award',
+      fetch_url=lambda _url: html)
+
+    self.assertEqual([
+      ('2026', 'Outlaw Planet', 'M. R. Carey', 'winner'),
+      ('2026.01', 'Casual', 'Koji A. Dae', 'nominee'),
+      ('2026.02', 'City of All Seasons',
+       'Oliver K. Langmead & Aliya Whiteley', 'nominee'),
+      ('2026.5', 'Uncertain Sons and Other Stories', 'Thomas Ha',
+       'special-citation'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+
+  def test_philip_k_dick_parser_strips_editor_and_translator_credits(self):
+    from parser.philip_k_dick import PhilipKDickParser
 
     overview = '''
-      <nav>
-        <a data-extra="x" href="/Smoke_Awards_2025">
-          <span>2025</span>
-        </a>
-      </nav>
+      <a href="Philip_K_Dick_Award_1983">1983</a>
+      <a href="Philip_K_Dick_Award_2011">2011</a>
+      <a href="Philip_K_Dick_Award_2022">2022</a>
+      <a href="Philip_K_Dick_Award_2025">2025</a>
     '''
-    year_page = '''
-      <section>
-        <div class="extra categoryblock">
-          <div class="category">Best <span>Novel</span></div>
+    pages = {
+      '1983': '''
+        <div class="categoryblock">
+          <div class="category">Finalists</div>
           <ul>
-            <li><strong>Winner:</strong> The <span>Nested <em>Book</em></span>,
-                Ada Writer (Press)</li>
-            <li>Second <span>Book</span>, Ben Writer (Press)</li>
+            <li><b>Aurelia</b>, <a>R. A. Lafferty</a> (Starblaze)</li>
+            <li><b>Roderick</b>, <a>John Sladek</a> (Timescape)</li>
+            <li><b>The Umbral Anthology of Science Fiction Poetry</b>, <a>Steve Rasnic Tem</a>, ed. (Umbral)</li>
           </ul>
         </div>
+      ''',
+      '2011': '''
         <div class="categoryblock">
-          <div class="category">Novella</div>
-          <ul><li>Wrong Length, Wrong Writer</li></ul>
+          <div class="category">Special Citation</div>
+          <ul>
+            <li><b>Harmony</b>, <a>Project Itoh</a>, translated by <a>Alexander O. Smith</a> (Haikasoru)</li>
+          </ul>
         </div>
-      </section>
-    '''
+      ''',
+      '2022': '''
+        <div class="categoryblock">
+          <div class="category">Finalists</div>
+          <ul>
+            <li><b>Bug</b>, <a>Giacomo Sartori</a>, translated by <a>Frederika Randall</a> (Restless)</li>
+          </ul>
+        </div>
+      ''',
+      '2025': '''
+        <div class="categoryblock">
+          <div class="category">Finalists</div>
+          <ul>
+            <li><b>Alien Clay</b>, <a>Adrian Tchaikovsky</a> (Orbit)</li>
+            <li><b>The Practice, the Horizon, and the Chain</b>, <a>Sofia Samatar</a> (Tordotcom)</li>
+            <li><b>Triangulum</b>, <a>Subodhana Wijeyeratne</a> (Rosarium)</li>
+            <li><b>Your Utopia: Stories</b>, <a>Bora Chung</a>, translated by <a>Anton Hur</a> (Algonquin)</li>
+          </ul>
+        </div>
+      ''',
+    }
 
-    parsed = SmokeSFADBParser().parse(
+    def fetch_url(url):
+      year = url.rsplit('_', 1)[-1]
+      return pages[year]
+
+    parsed = PhilipKDickParser().parse(
       overview,
-      'https://www.sfadb.com/Smoke_Awards',
-      'Smoke SFADB Award - Novel',
-      'Best Novel',
-      ('best novel',),
-      fetch_url=lambda url: year_page if url.endswith('/Smoke_Awards_2025') else self.fail(url))
+      'https://www.sfadb.com/Philip_K_Dick_Award',
+      fetch_url=fetch_url)
+    entries = {entry['title']: entry for entry in parsed['entries']}
 
-    self.assertEqual(['The Nested Book', 'Second Book'], [
-      entry['title'] for entry in parsed['entries']
-    ])
-    self.assertEqual(['2025', '2025.01'], [
-      entry['position'] for entry in parsed['entries']
-    ])
+    self.assertEqual(
+      ('1983.03', 'Steve Rasnic Tem'),
+      (entries['The Umbral Anthology of Science Fiction Poetry']['position'],
+       entries['The Umbral Anthology of Science Fiction Poetry']['author']))
+    self.assertEqual(
+      ('2011.5', 'Project Itoh'),
+      (entries['Harmony']['position'], entries['Harmony']['author']))
+    self.assertEqual(
+      ('2022.01', 'Giacomo Sartori'),
+      (entries['Bug']['position'], entries['Bug']['author']))
+    self.assertEqual(
+      ('2025.04', 'Bora Chung'),
+      (entries['Your Utopia: Stories']['position'],
+       entries['Your Utopia: Stories']['author']))
 
-  def test_hugo_parser_stops_xpath_category_at_next_award_heading(self):
-    from parser.hugo import HugoAwardsNovelParser
-
-    history = '''
-      <a href="/2024-hugo-awards/">2024 Hugo Awards</a>
-      <a href="/1945-retro-hugo-awards/">1945 Retro Hugo Awards</a>
-    '''
-    year_page = '''
-      <article>
-        <h2>Best <span>Novel</span></h2>
-        <div><ul>
-          <li>The <em>Winning</em> Book by Ada Writer</li>
-          <li>Second Book, Ben Writer</li>
-        </ul></div>
-        <h2>Best Novella</h2>
-        <ul><li>Wrong Category by Wrong Writer</li></ul>
-      </article>
-    '''
-
-    parsed = HugoAwardsNovelParser().parse(
-      history,
-      'https://www.thehugoawards.org/hugo-history/',
-      fetch_url=lambda url: year_page if url.endswith('/2024-hugo-awards/') else self.fail(url))
-
-    self.assertEqual(['The Winning Book', 'Second Book'], [
-      entry['title'] for entry in parsed['entries']
-    ])
-    self.assertEqual(['winner', 'nominee'], [
-      entry['result'] for entry in parsed['entries']
-    ])
-
-  def test_nommo_wikipedia_parser_handles_table_xpath_dom_variation(self):
-    from parser.nommo import parse_nommo_awards
+  def test_nommo_parser_uses_wikipedia_table_headers_for_title_author(self):
+    from parser.nommo import NommoAwardsParser
 
     html = '''
-      <h2>Novel</h2>
-      <table class="wikitable">
-        <tr><th>Year</th><th>Title</th><th>Author</th></tr>
-        <tr>
-          <td>2024</td>
-          <td>
-            <a data-id="book" href="/wiki/Nested_Book">The
-              <span>Nested <em>Book</em></span></a><sup>[1]</sup>
-          </td>
-          <td><span>Ada Writer</span> *</td>
-        </tr>
-        <tr>
-          <td><a href="/wiki/Second_Book">Second <strong>Book</strong></a></td>
-          <td>Ben Writer</td>
-        </tr>
+      <h3>Novel</h3>
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Novel</th><th>Publisher</th></tr>
+        <tr><td>2017</td><td>Tade Thompson*</td><td>Rosewater</td><td>Orbit</td></tr>
+        <tr><td>A. Igoni Barrett</td><td>Blackass</td><td>Graywolf Press</td></tr>
       </table>
     '''
 
-    parsed = parse_nommo_awards(
+    parsed = NommoAwardsParser().parse(
       html,
       'https://en.wikipedia.org/wiki/Nommo_Awards',
-      'Nommo Award - Novel',
-      'Novel')
+      'Nommo - Novel',
+      'Novel',
+      fetch_url=None)
 
-    self.assertEqual(['The Nested Book', 'Second Book'], [
-      entry['title'] for entry in parsed['entries']
+    self.assertEqual([
+      ('2017', 'Rosewater', 'Tade Thompson', 'winner'),
+      ('2017.01', 'Blackass', 'A. Igoni Barrett', 'nominee'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
     ])
-    self.assertEqual(['winner', 'nominee'], [
-      entry['result'] for entry in parsed['entries']
-    ])
-    self.assertEqual(
-      'https://en.wikipedia.org/wiki/Nested_Book',
-      parsed['entries'][0]['source_url'])
 
-  def test_spsfc_finalist_parser_ignores_excluded_xpath_contexts(self):
-    from parser.spsfc import OFFICIAL_FINALISTS, SPSFCAwardsParser
+  def test_nommo_fetcher_falls_back_to_wikimedia_page_html(self):
+    from url_fetcher.nommo import (
+      NOMMO_AWARDS_URL, NOMMO_WIKIMEDIA_HTML_URL, UrlFetcherNommoNovel,
+    )
 
-    page = {
-      'url': 'https://spsfc.space/finalists/',
-      'competition': 'SPSFC X',
-      'award_year': 2030,
-      'kind': OFFICIAL_FINALISTS,
-    }
+    fetcher = UrlFetcherNommoNovel()
+    calls = []
     html = '''
-      <main>
-        <article class="entry-content">
-          <ul>
-            <li><a href="https://www.goodreads.com/book/show/1">Deep Sky</a>
-                by Ada Writer</li>
-            <li><span>Bright</span> Engines by Ben Writer</li>
-          </ul>
-          <div class="comments"><ul><li>Comment Book by Wrong Writer</li></ul></div>
-        </article>
-        <aside class="sidebar"><ul><li>Sidebar Book by Wrong Writer</li></ul></aside>
-      </main>
+      <h3>Novel</h3>
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Novel</th><th>Publisher</th></tr>
+        <tr><td>2017</td><td>Tade Thompson*</td><td>Rosewater</td><td>Orbit</td></tr>
+      </table>
     '''
 
-    rows = SPSFCAwardsParser().parse_finalist_page(html, page)
+    def fetch_url(url):
+      calls.append(url)
+      if url == NOMMO_AWARDS_URL:
+        raise RuntimeError('certificate verify failed: certificate has expired')
+      if url == NOMMO_WIKIMEDIA_HTML_URL:
+        return html
+      return '<html></html>'
 
-    self.assertEqual(['Deep Sky', 'Bright Engines'], [row['title'] for row in rows])
-    self.assertEqual(
-      'https://www.goodreads.com/book/show/1',
-      rows[0]['source_url'])
+    parsed = fetcher.fetch_and_parse(fetch_url)
+
+    self.assertEqual([NOMMO_AWARDS_URL, NOMMO_WIKIMEDIA_HTML_URL], calls[:2])
+    self.assertEqual(['Rosewater'], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual(['Tade Thompson'], [entry['author'] for entry in parsed['entries']])
 
   def test_wikipedia_award_table_parser_base_smoke(self):
     from parser.wikipedia_base import WikipediaAwardTableParserBase
@@ -2881,4236 +4640,6 @@ class AwardParserSmokeTest(unittest.TestCase):
       entry['result'] for entry in parsed['entries']
     ])
 
-  def test_wikipedia_award_table_parser_base_handles_dom_variation(self):
-    from parser.wikipedia_base import WikipediaAwardTableParserBase
-
-    parser = WikipediaAwardTableParserBase()
-    parser.AWARD_NAME = 'Smoke Award'
-    html = '''
-      <table class="wikitable">
-        <tr>
-          <th><span>Award year</span></th>
-          <th>Book</th>
-          <th>Writer</th>
-          <th>Status</th>
-          <th>Award category</th>
-        </tr>
-        <tr>
-          <td>2025</td>
-          <td>
-            <div>
-              <a data-sort-value="nested" href="/wiki/Nested_Book">
-                The <span>Nested <em>Book</em></span>
-              </a>
-              <sup>[12]</sup>
-              <script>ignored()</script>
-            </div>
-          </td>
-          <td><span>Nested <strong>Writer</strong></span><style>.x{}</style></td>
-          <td>Winner</td>
-          <td>Novel</td>
-        </tr>
-      </table>
-    '''
-
-    parsed = parser.parse(
-      html, 'https://example.com/wiki_award', 'Smoke Award - Novel', 'Novel')
-
-    self.assertEqual(['The Nested Book'], [
-      entry['title'] for entry in parsed['entries']
-    ])
-    self.assertEqual(['Nested Writer'], [
-      entry['author'] for entry in parsed['entries']
-    ])
-    self.assertEqual(
-      'https://example.com/wiki/Nested_Book',
-      parsed['entries'][0]['source_url'])
-
-  def test_booknotification_award_parser_base_smoke(self):
-    from parser.booknotification_base import BookNotificationAwardParserBase
-
-    parser = BookNotificationAwardParserBase()
-    parser.AWARD_NAME = 'Smoke BookNotification Award'
-    html = '''
-      <table>
-        <tr>
-          <th>Year</th><th>Read</th><th>Category</th>
-          <th>Author</th><th>Title</th><th>Result</th>
-        </tr>
-        <tr>
-          <td>2024</td>
-          <td><input checked></td>
-          <td>Best Mystery Novel</td>
-          <td>Winner Writer</td>
-          <td><a href="/books/winning-book">Winning Book</a></td>
-          <td>Won</td>
-        </tr>
-        <tr>
-          <td>2024</td>
-          <td><input></td>
-          <td>Best Mystery Novel</td>
-          <td>Nominee Writer</td>
-          <td><a href="/books/nominee-book">Nominee Book</a></td>
-          <td>Nominated</td>
-        </tr>
-        <tr>
-          <td>2024</td>
-          <td><input></td>
-          <td>Best Short Story</td>
-          <td>Wrong Writer</td>
-          <td>Wrong Story</td>
-          <td>Won</td>
-        </tr>
-      </table>
-    '''
-
-    parsed = parser.parse(
-      html,
-      'https://www.booknotification.com/awards/smoke-award/',
-      'Smoke BookNotification Award - Mystery',
-      'Best Mystery Novel')
-
-    self.assertEqual(['Winning Book', 'Nominee Book'], [
-      entry['title'] for entry in parsed['entries']
-    ])
-    self.assertEqual(['winner', 'nominee'], [
-      entry['result'] for entry in parsed['entries']
-    ])
-    self.assertEqual(['2024', '2024.01'], [
-      entry['position'] for entry in parsed['entries']
-    ])
-    self.assertEqual(
-      'https://www.booknotification.com/books/winning-book',
-      parsed['entries'][0]['source_url'])
-
-  def test_booknotification_award_parser_base_handles_dom_variation(self):
-    from parser.booknotification_base import BookNotificationAwardParserBase
-
-    parser = BookNotificationAwardParserBase()
-    parser.AWARD_NAME = 'Smoke BookNotification Award'
-    html = '''
-      <table data-source="booknotification">
-        <tr>
-          <th><span>Year</span></th>
-          <th>Read</th>
-          <th><span>Award Category</span></th>
-          <th><span>Writer</span></th>
-          <th><span>Book</span></th>
-          <th><span>Status</span></th>
-        </tr>
-        <tr>
-          <td>2025</td>
-          <td><span><input></span></td>
-          <td><div>Best Mystery Novel</div></td>
-          <td>
-            <span>Nested <strong>Writer</strong></span>
-            <script>ignored()</script>
-          </td>
-          <td>
-            <div>
-              <a data-book-id="1" href="/books/nested-book">
-                The <span>Nested <em>Book</em></span>
-              </a>
-              <style>.ignored { display: none; }</style>
-            </div>
-          </td>
-          <td><span>Won</span></td>
-        </tr>
-      </table>
-    '''
-
-    parsed = parser.parse(
-      html,
-      'https://www.booknotification.com/awards/smoke-award/',
-      'Smoke BookNotification Award - Mystery',
-      'Best Mystery Novel')
-
-    self.assertEqual(['The Nested Book'], [
-      entry['title'] for entry in parsed['entries']
-    ])
-    self.assertEqual(['Nested Writer'], [
-      entry['author'] for entry in parsed['entries']
-    ])
-    self.assertEqual(
-      'https://www.booknotification.com/books/nested-book',
-      parsed['entries'][0]['source_url'])
-
-  def test_booknotification_award_parser_base_filters_blank_title_rows(self):
-    from parser.booknotification_base import BookNotificationAwardParserBase
-
-    parser = BookNotificationAwardParserBase()
-    parser.AWARD_NAME = 'Smoke BookNotification Award'
-    html = '''
-      <table>
-        <tr>
-          <th>Year</th><th>Read</th><th>Category</th>
-          <th>Author</th><th>Title</th><th>Result</th>
-        </tr>
-        <tr>
-          <td>1995</td><td></td><td>Grand Master</td>
-          <td>Helen McCloy</td><td></td><td>Won</td>
-        </tr>
-      </table>
-    '''
-
-    parsed = parser.parse(
-      html,
-      'https://www.booknotification.com/awards/smoke-award/',
-      'Smoke BookNotification Award - Grand Master',
-      'Grand Master')
-
-    self.assertEqual([], parsed['entries'])
-
-    parsed_person_award = parser.parse(
-      html,
-      'https://www.booknotification.com/awards/smoke-award/',
-      'Smoke BookNotification Award - Grand Master',
-      'Grand Master',
-      require_title=False)
-
-    self.assertEqual(['Helen McCloy'], [
-      entry['author'] for entry in parsed_person_award['entries']
-    ])
-    self.assertEqual([''], [
-      entry['title'] for entry in parsed_person_award['entries']
-    ])
-
-  def test_booknotification_award_parser_base_handles_known_tie(self):
-    from parser.booknotification_base import BookNotificationAwardParserBase
-
-    parser = BookNotificationAwardParserBase()
-    parser.AWARD_NAME = 'International Horror Guild Award'
-    html = '''
-      <table>
-        <tr>
-          <th>Year</th><th>Read</th><th>Category</th>
-          <th>Author</th><th>Title</th><th>Result</th>
-        </tr>
-        <tr>
-          <td>2006</td><td><input></td><td>Best Collection</td>
-          <td>Terry Dowling</td>
-          <td><a href="/books/basic-black">Basic Black</a></td>
-          <td>Won</td>
-        </tr>
-        <tr>
-          <td>2006</td><td><input></td><td>Best Collection</td>
-          <td>Glen Hirshberg</td>
-          <td><a href="/books/american-morons">American Morons</a></td>
-          <td>Won</td>
-        </tr>
-        <tr>
-          <td>2006</td><td><input></td><td>Best Collection</td>
-          <td>Wrong Writer</td>
-          <td>Other Collection</td>
-          <td>Nominated</td>
-        </tr>
-      </table>
-    '''
-
-    parsed = parser.parse(
-      html,
-      'https://www.booknotification.com/awards/international-horror-guild-awards/',
-      'International Horror Guild Award - Collection',
-      'Best Collection',
-      tied_winners_share_position=True)
-
-    self.assertEqual(
-      ['Basic Black', 'American Morons', 'Other Collection'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(['2006', '2006', '2006.01'], [
-      entry['position'] for entry in parsed['entries']
-    ])
-
-  def test_dilys_booknotification_parser_smoke(self):
-    from parser.dilys import DilysBookNotificationParser
-
-    html = '''
-      <table>
-        <tr>
-          <th>Year</th><th>Read</th><th>Category</th>
-          <th>Author</th><th>Title</th><th>Result</th>
-        </tr>
-        <tr>
-          <td>2014</td><td><input></td><td>Best Mystery Novel</td>
-          <td>William Kent Krueger</td>
-          <td><a href="/books/ordinary-grace">Ordinary Grace</a></td>
-          <td>Won</td>
-        </tr>
-        <tr>
-          <td>2014</td><td><input></td><td>Best Mystery Novel</td>
-          <td>Lyndsay Faye</td>
-          <td>Seven for a Secret</td>
-          <td>Nominated</td>
-        </tr>
-      </table>
-    '''
-
-    parsed = DilysBookNotificationParser().parse(
-      html,
-      'https://www.booknotification.com/awards/dilys-awards/',
-      'Dilys Award',
-      'Best Mystery Novel',
-      ('Dilys Award',))
-
-    self.assertEqual(['Ordinary Grace', 'Seven for a Secret'], [
-      entry['title'] for entry in parsed['entries']
-    ])
-    self.assertEqual(['winner', 'nominee'], [
-      entry['result'] for entry in parsed['entries']
-    ])
-
-  def test_hammett_official_parser_smoke(self):
-    from parser.hammett import HammettPrizeParser
-
-    html = '''
-      <h2>2024</h2>
-      <h5>Winner: <a href="/books/god-of-the-woods">God of the Woods</a> by Liz Moore (Riverhead)</h5>
-      <p>Nominees:</p>
-      <p><a href="/books/the-long-shot-trial">The Long-Shot Trial</a> by William Deverell (ECW Press)</p>
-      <p>Broiler by Eli Cranor (Soho)</p>
-      <p>Judges:</p>
-    '''
-
-    parsed = HammettPrizeParser().parse(
-      html,
-      'https://www.crimewritersna.org/hammett-prize-past-winners-nominees-j',
-      'Hammett Prize',
-      'Hammett Prize',
-      ('Best Crime Book',))
-
-    self.assertEqual(
-      ['God of the Woods', 'The Long-Shot Trial', 'Broiler'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['winner', 'nominee', 'nominee'],
-      [entry['result'] for entry in parsed['entries']])
-    self.assertEqual(
-      'https://www.crimewritersna.org/books/god-of-the-woods',
-      parsed['entries'][0]['source_url'])
-
-  def test_hammett_official_parser_handles_collapsed_heading_text(self):
-    from parser.hammett import HammettPrizeParser
-
-    html = '''
-      <h2>2018</h2>
-      <h5>
-        Winner: November Road, by Lou Berney (William Morrow)
-        Nominees: Paris in the Dark, by Robert Olen Butler (Mysterious Press)
-        The Lonely Witness, by William Boyle (Pegasus)
-        Under My Skin, by Lisa Unger (Park Row)
-        Judges: Gary Giddins
-      </h5>
-    '''
-
-    parsed = HammettPrizeParser().parse(
-      html,
-      'https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2',
-      'Hammett Prize',
-      'Hammett Prize',
-      ('Best Crime Book',))
-
-    self.assertEqual(
-      ['November Road', 'Paris in the Dark', 'The Lonely Witness', 'Under My Skin'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['winner', 'nominee', 'nominee', 'nominee'],
-      [entry['result'] for entry in parsed['entries']])
-
-  def test_hammett_official_parser_handles_older_rows_and_ignores_special_mention(self):
-    from parser.hammett import HammettPrizeParser
-
-    html = '''
-      <h2>1992</h2>
-      <h5>Winner: Turtle Moon by Alice Hoffman (Putnam)</h5>
-      <p>Special Mention: The Ones You Do by Daniel Woodrell (Holt)</p>
-      <p>Nominees:</p>
-      <p>Trick of the Eye by Jane Stanton Hitchcock (Dutton)</p>
-      <p>White Butterfly by Walter Mosley (Norton)</p>
-      <p>Judges:</p>
-    '''
-
-    parsed = HammettPrizeParser().parse(
-      html,
-      'https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n',
-      'Hammett Prize',
-      'Hammett Prize',
-      ('Best Crime Book',))
-
-    self.assertEqual(
-      ['Turtle Moon', 'Trick of the Eye', 'White Butterfly'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertNotIn('The Ones You Do', [
-      entry['title'] for entry in parsed['entries']
-    ])
-
-  def test_hammett_fetcher_parses_overview_and_year_pages(self):
-    from url_fetcher.hammett import UrlFetcherHammettPrize
-
-    overview = '''
-      <nav>
-        <a href="/hammett-prize-past-winners-nominees-j">Hammett 2021 - Present</a>
-        <a href="/copy-of-hammett-prize-past-winners-n-2">Hammett 2011 - 2020</a>
-      </nav>
-    '''
-    current = '''
-      <h2>2024</h2>
-      <h5>Winner: God of the Woods by Liz Moore (Riverhead)</h5>
-      <p>Nominees:</p>
-      <p>The Long-Shot Trial by William Deverell (ECW Press)</p>
-      <p>Judges:</p>
-    '''
-    previous = '''
-      <h2>2018</h2>
-      <h5>Winner: November Road, by Lou Berney (William Morrow) Nominees: Paris in the Dark, by Robert Olen Butler (Mysterious Press) Judges: Gary Giddins</h5>
-    '''
-
-    def fetch_url(url):
-      if url == 'https://www.crimewritersna.org/hammett-prize':
-        return overview
-      if url.endswith('/hammett-prize-past-winners-nominees-j'):
-        return current
-      if url.endswith('/copy-of-hammett-prize-past-winners-n-2'):
-        return previous
-      self.fail(url)
-
-    parsed = UrlFetcherHammettPrize().fetch_and_parse(fetch_url)
-
-    self.assertEqual('Hammett Prize', parsed['name'])
-    self.assertEqual(
-      ['November Road', 'Paris in the Dark', 'God of the Woods', 'The Long-Shot Trial'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertFalse(parsed['match_series'])
-
-  def test_hammett_librarything_fallback_parser_smoke(self):
-    from url_fetcher.hammett import UrlFetcherHammettPrize
-
-    html = '''
-      <h2>Winner 1</h2>
-      <table>
-        <tr><th>Work</th><th>Year</th></tr>
-        <tr><td><a href="/work/1">Prince of Thieves</a> by <a href="/author/1">Chuck Hogan</a></td><td>2004</td></tr>
-      </table>
-      <h2>Nominee 1</h2>
-      <table>
-        <tr><th>Work</th><th>Year</th></tr>
-        <tr><td><a href="/work/2">The Madman's Tale</a> by <a href="/author/2">John Katzenbach</a></td><td>2004</td></tr>
-      </table>
-    '''
-
-    parser = UrlFetcherHammettPrize().create_librarything_parser()
-    parsed = parser.parse(
-      html,
-      'https://www.librarything.com/award/1253/Hammett-Prize',
-      'Hammett Prize',
-      'Hammett Prize',
-      ('Best Crime Book',))
-
-    self.assertEqual(
-      ['Prince of Thieves', "The Madman's Tale"],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['winner', 'nominee'],
-      [entry['result'] for entry in parsed['entries']])
-
-  def test_hammett_fetcher_falls_back_to_librarything_when_official_is_unusable(self):
-    from url_fetcher.hammett import UrlFetcherHammettPrize
-
-    librarything = '''
-      <h2>Winner 1</h2>
-      <table>
-        <tr><th>Work</th><th>Year</th></tr>
-        <tr><td><a href="/work/1">Prince of Thieves</a> by <a href="/author/1">Chuck Hogan</a></td><td>2004</td></tr>
-      </table>
-      <h2>Nominee 1</h2>
-      <table>
-        <tr><th>Work</th><th>Year</th></tr>
-        <tr><td><a href="/work/2">The Madman's Tale</a> by <a href="/author/2">John Katzenbach</a></td><td>2004</td></tr>
-      </table>
-    '''
-
-    def fetch_url(url):
-      if url == 'https://www.crimewritersna.org/hammett-prize':
-        return '<html><body><p>No archive links here.</p></body></html>'
-      if url == 'https://www.librarything.com/award/1253/Hammett-Prize':
-        return librarything
-      self.fail(url)
-
-    parsed = UrlFetcherHammettPrize().fetch_and_parse(fetch_url)
-
-    self.assertEqual(
-      ['Prince of Thieves', "The Madman's Tale"],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertTrue(any(
-      'Official IACW failed:' in note for note in parsed.get('notes', ())
-    ))
-
-  def test_hammett_fetcher_source_choices_and_filter_category(self):
-    from url_fetcher.hammett import UrlFetcherHammettPrize
-
-    fetcher = UrlFetcherHammettPrize()
-
-    self.assertEqual(
-      ('Automatic', 'Official IACW', 'LibraryThing'),
-      tuple(choice['label'] for choice in fetcher.source_choices()))
-    self.assertTrue(any(
-      item['label'] == 'Crime, Mystery & Thriller'
-      for item in fetcher.get_filter_list()))
-
-  def test_hammett_fetcher_registration_order(self):
-    from url_fetcher import available_url_fetchers
-
-    source_ids = [fetcher.source_id for fetcher in available_url_fetchers()]
-
-    self.assertLess(
-      source_ids.index('barry_award_british_crime_novel'),
-      source_ids.index('hammett_prize'))
-    self.assertLess(
-      source_ids.index('hammett_prize'),
-      source_ids.index('crime_writers_of_canada_award_novel'))
-
-  def test_nero_official_parser_marks_bold_winner_and_ignores_black_orchid_text(self):
-    from parser.nero import NeroAwardOfficialParser
-
-    html = '''
-      <h1>The Nero Award Finalists</h1>
-      <h3>Winners are listed in bold typeface</h3>
-      <h3 align="center">2018</h3>
-      <ul>
-        <li><em>Blood for Wine</em> by Warren C. Easley (Poisoned Pen Press)</li>
-        <li><em><strong>August Snow</strong></em><strong> by Stephen Mack Jones (Soho)</strong></li>
-      </ul>
-      <h3>Black Orchid Novella Award</h3>
-      <ul><li><em>Wrong Award</em> by Wrong Writer</li></ul>
-      <h4>(Sorry, we did not keep a record of finalists until 2007.)</h4>
-    '''
-
-    parsed = NeroAwardOfficialParser().parse(
-      html,
-      'https://wp.nerowolfe.org/htm/literary_awards/nero_award/Nero_Award_Finalists.htm',
-      'Nero Award',
-      'Nero Award')
-
-    self.assertEqual(
-      ['Blood for Wine', 'August Snow'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['nominee', 'winner'],
-      [entry['result'] for entry in parsed['entries']])
-    self.assertNotIn('Wrong Award', [
-      entry['title'] for entry in parsed['entries']
-    ])
-
-  def test_nero_official_parser_adds_pre_2007_winner_only_rows(self):
-    from parser.nero import NeroAwardOfficialParser
-
-    finalists = '''
-      <h1>The Nero Award Finalists</h1>
-      <h3 align="center">2007</h3>
-      <ul>
-        <li><strong><em>All Mortal Flesh</em> &#8212; Julia Spencer-Fleming</strong></li>
-        <li><em>Kidnapped</em> &#8212; Jan Burke</li>
-      </ul>
-      <h4>(Sorry, we did not keep a record of finalists until 2007.)</h4>
-    '''
-    winners = '''
-      <h1>Wolfe Pack Nero Award Recipients Chronological</h1>
-      <table>
-        <tr><th>Year</th><th>Winner</th></tr>
-        <tr><td>2007</td><td><em>All Mortal Flesh</em> by Julia Spencer-Fleming</td></tr>
-        <tr><td>2006</td><td><em>Vanish</em> by Tess Gerritsen</td></tr>
-        <tr><td>2005</td><td><em>The Enemy</em> by Lee Child</td></tr>
-      </table>
-    '''
-
-    parsed = NeroAwardOfficialParser().parse(
-      finalists,
-      'https://wp.nerowolfe.org/htm/literary_awards/nero_award/Nero_Award_Finalists.htm',
-      'Nero Award',
-      'Nero Award',
-      fetch_url=lambda url: winners)
-
-    self.assertEqual(
-      ['The Enemy', 'Vanish', 'All Mortal Flesh', 'Kidnapped'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(['2005', '2006', '2007', '2007.01'], [
-      entry['position'] for entry in parsed['entries']
-    ])
-
-  def test_nero_official_parser_dedupes_winner_present_in_finalist_and_winner_pages(self):
-    from parser.nero import NeroAwardOfficialParser
-
-    finalists = '''
-      <h1>The Nero Award Finalists</h1>
-      <h3 align="center">2018</h3>
-      <ul>
-        <li><em>Blood for Wine</em> by Warren C. Easley</li>
-        <li><strong><em>August Snow</em> by Stephen Mack Jones</strong></li>
-      </ul>
-    '''
-    winners = '''
-      <h1>Wolfe Pack Nero Award Recipients Chronological</h1>
-      <table>
-        <tr><th>Year</th><th>Winner</th></tr>
-        <tr><td>2018</td><td><em>August Snow</em> by Stephen Mack Jones</td></tr>
-      </table>
-    '''
-
-    parsed = NeroAwardOfficialParser().parse(
-      finalists,
-      'https://wp.nerowolfe.org/htm/literary_awards/nero_award/Nero_Award_Finalists.htm',
-      'Nero Award',
-      'Nero Award',
-      fetch_url=lambda url: winners)
-
-    self.assertEqual(
-      ['Blood for Wine', 'August Snow'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(1, sum(
-      1 for entry in parsed['entries']
-      if entry['title'] == 'August Snow'))
-
-  def test_nero_official_parser_notes_winner_supplement_failure(self):
-    from parser.nero import NeroAwardOfficialParser
-
-    finalists = '''
-      <h1>The Nero Award Finalists</h1>
-      <h3 align="center">2018</h3>
-      <ul>
-        <li><em>Blood for Wine</em> by Warren C. Easley</li>
-        <li><strong><em>August Snow</em> by Stephen Mack Jones</strong></li>
-      </ul>
-    '''
-
-    def fetch_url(_url):
-      raise RuntimeError('boom')
-
-    parsed = NeroAwardOfficialParser().parse(
-      finalists,
-      'https://wp.nerowolfe.org/htm/literary_awards/nero_award/Nero_Award_Finalists.htm',
-      'Nero Award',
-      'Nero Award',
-      fetch_url=fetch_url)
-
-    self.assertEqual(
-      ['Blood for Wine', 'August Snow'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertTrue(any(
-      'Official Wolfe Pack winners supplement failed: boom' in note
-      for note in parsed.get('notes', ())))
-
-  def test_nero_librarything_fallback_parser_smoke(self):
-    from parser.nero import NeroAwardLibraryThingParser
-
-    html = '''
-      <h2>Winner 1</h2>
-      <table>
-        <tr><th>Work</th><th>Year</th></tr>
-        <tr><td><a href="/work/1">Vanish</a> by <a href="/author/1">Tess Gerritsen</a></td><td>2006</td></tr>
-      </table>
-      <h2>Finalist 1</h2>
-      <table>
-        <tr><th>Work</th><th>Year</th></tr>
-        <tr><td><a href="/work/2">Kidnapped</a> by <a href="/author/2">Jan Burke</a></td><td>2007</td></tr>
-      </table>
-    '''
-
-    parsed = NeroAwardLibraryThingParser().parse(
-      html,
-      'https://www.librarything.com/bookaward/Nero%2BAward',
-      'Nero Award',
-      'Nero Award')
-
-    self.assertEqual(
-      ['Vanish', 'Kidnapped'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['winner', 'nominee'],
-      [entry['result'] for entry in parsed['entries']])
-
-  def test_nero_wikipedia_fallback_parser_smoke(self):
-    from parser.nero import NeroAwardWikipediaParser
-
-    html = '''
-      <h2><span id="Winners">Winners</span></h2>
-      <table class="wikitable">
-        <tr><th>Year</th><th>Title</th><th>Author</th><th>Reference</th></tr>
-        <tr>
-          <th>2006</th>
-          <td><i><a href="/wiki/Vanish_(novel)">Vanish</a></i></td>
-          <td><a href="/wiki/Tess_Gerritsen">Tess Gerritsen</a></td>
-          <td>[1]</td>
-        </tr>
-        <tr>
-          <th>1988<br>1989<br>1990</th>
-          <td colspan="2">no award presented</td>
-          <td>[2]</td>
-        </tr>
-      </table>
-    '''
-
-    parsed = NeroAwardWikipediaParser().parse(
-      html,
-      'https://en.wikipedia.org/wiki/Nero_Award',
-      'Nero Award',
-      'Nero Award')
-
-    self.assertEqual(['Vanish'], [
-      entry['title'] for entry in parsed['entries']
-    ])
-    self.assertEqual(['winner'], [
-      entry['result'] for entry in parsed['entries']
-    ])
-    self.assertEqual(
-      'https://en.wikipedia.org/wiki/Vanish_(novel)',
-      parsed['entries'][0]['source_url'])
-
-  def test_nero_fetcher_falls_back_to_librarything_when_official_is_unusable(self):
-    from url_fetcher.nero import UrlFetcherNeroAward
-
-    librarything = '''
-      <h2>Winner 1</h2>
-      <table>
-        <tr><th>Work</th><th>Year</th></tr>
-        <tr><td><a href="/work/1">Vanish</a> by <a href="/author/1">Tess Gerritsen</a></td><td>2006</td></tr>
-      </table>
-    '''
-
-    def fetch_url(url):
-      if url == 'https://wp.nerowolfe.org/htm/literary_awards/nero_award/Nero_Award_Finalists.htm':
-        return '<html><body><p>No finalist sections here.</p></body></html>'
-      if url == 'https://www.librarything.com/bookaward/Nero%2BAward':
-        return librarything
-      self.fail(url)
-
-    parsed = UrlFetcherNeroAward().fetch_and_parse(fetch_url)
-
-    self.assertEqual(['Vanish'], [
-      entry['title'] for entry in parsed['entries']
-    ])
-    self.assertTrue(any(
-      'Official Wolfe Pack failed:' in note for note in parsed.get('notes', ())
-    ))
-
-  def test_nero_fetcher_falls_through_to_wikipedia_when_official_and_librarything_are_unusable(self):
-    from url_fetcher.nero import UrlFetcherNeroAward
-
-    wikipedia = '''
-      <h2><span id="Winners">Winners</span></h2>
-      <table class="wikitable">
-        <tr><th>Year</th><th>Title</th><th>Author</th><th>Reference</th></tr>
-        <tr>
-          <th>2006</th>
-          <td><i><a href="/wiki/Vanish_(novel)">Vanish</a></i></td>
-          <td><a href="/wiki/Tess_Gerritsen">Tess Gerritsen</a></td>
-          <td>[1]</td>
-        </tr>
-      </table>
-    '''
-
-    def fetch_url(url):
-      if url == 'https://wp.nerowolfe.org/htm/literary_awards/nero_award/Nero_Award_Finalists.htm':
-        return '<html><body><p>No finalist sections here.</p></body></html>'
-      if url == 'https://www.librarything.com/bookaward/Nero%2BAward':
-        return '<html><body><p>Blocked</p></body></html>'
-      if url == 'https://en.wikipedia.org/wiki/Nero_Award':
-        return wikipedia
-      self.fail(url)
-
-    parsed = UrlFetcherNeroAward().fetch_and_parse(fetch_url)
-
-    self.assertEqual(['Vanish'], [
-      entry['title'] for entry in parsed['entries']
-    ])
-    self.assertTrue(any(
-      'Official Wolfe Pack failed:' in note for note in parsed.get('notes', ())
-    ))
-    self.assertTrue(any(
-      'LibraryThing failed:' in note for note in parsed.get('notes', ())
-    ))
-
-  def test_nero_fetcher_source_choices_and_filter_category(self):
-    from url_fetcher.nero import UrlFetcherNeroAward
-
-    fetcher = UrlFetcherNeroAward()
-
-    self.assertEqual(
-      ('Automatic', 'Official Wolfe Pack', 'LibraryThing', 'Wikipedia'),
-      tuple(choice['label'] for choice in fetcher.source_choices()))
-    self.assertTrue(any(
-      item['label'] == 'Crime, Mystery & Thriller'
-      for item in fetcher.get_filter_list()))
-
-  def test_nero_fetcher_registration_order(self):
-    from url_fetcher import available_url_fetchers
-
-    source_ids = [fetcher.source_id for fetcher in available_url_fetchers()]
-
-    self.assertLess(
-      source_ids.index('hammett_prize'),
-      source_ids.index('nero_award'))
-    self.assertLess(
-      source_ids.index('nero_award'),
-      source_ids.index('crime_writers_of_canada_award_novel'))
-
-  def test_strand_librarything_parser_extracts_mystery_novel_rows(self):
-    from parser.strand import StrandLibraryThingParser
-
-    html = '''
-    <html><body>
-      <h2>Winner</h2>
-      <table>
-        <tr><th>Work</th><th>Category</th><th>Year</th></tr>
-        <tr>
-          <td>
-            <div class="work">
-              <span><a href="/work/chaos-kind">The Chaos Kind</a></span>
-              <span>by</span>
-              <em><a href="/author/barry-eisler">Barry Eisler</a></em>
-            </div>
-          </td>
-          <td><div><span>Best Mystery Novel</span></div></td>
-          <td><span>2023</span></td>
-        </tr>
-        <tr>
-          <td><a href="/work/audio">The Audiobook Pick</a> by <a href="/author/audio">A. Narrator</a></td>
-          <td>Best Mystery Audiobook</td>
-          <td>2023</td>
-        </tr>
-      </table>
-      <h2>Nominees</h2>
-      <table>
-        <tr><th>Work</th><th>Category</th><th>Year</th></tr>
-        <tr>
-          <td>
-            <span class="outer"><a data-role="title" href="/work/zero-days">Zero Days</a></span>
-            by
-            <span class="author"><a href="/author/ruth-ware">Ruth Ware</a></span>
-          </td>
-          <td><span>Best Novel</span></td>
-          <td><span>2023</span></td>
-        </tr>
-        <tr>
-          <td><a href="/work/all-the-sinners">All the Sinners Bleed</a> by <a href="/author/s-a-cosby">S. A. Cosby</a></td>
-          <td>Mystery Novel</td>
-          <td>2023</td>
-        </tr>
-      </table>
-    </body></html>
-    '''
-
-    parsed = StrandLibraryThingParser().parse(
-      html,
-      'https://www.librarything.com/award/1380/The-Strand-Critics-Award',
-      'Strand Critics Award - Mystery Novel',
-      'Best Mystery Novel',
-      ('Mystery Novel', 'Best Novel'))
-
-    self.assertEqual(
-      ['The Chaos Kind', 'Zero Days', 'All the Sinners Bleed'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['winner', 'nominee', 'nominee'],
-      [entry['result'] for entry in parsed['entries']])
-    self.assertEqual(
-      'https://www.librarything.com/work/chaos-kind',
-      parsed['entries'][0]['source_url'])
-    self.assertFalse(any(
-      entry['title'] == 'The Audiobook Pick' for entry in parsed['entries']))
-
-  def test_strand_librarything_parser_extracts_debut_mystery_rows(self):
-    from parser.strand import StrandLibraryThingParser
-
-    html = '''
-    <html><body>
-      <h2>Winner</h2>
-      <table>
-        <tr><th>Work</th><th>Category</th><th>Year</th></tr>
-        <tr>
-          <td>
-            <div>
-              <a href="/work/sympathy">Sympathy for the Devil</a>
-              <span>by</span>
-              <a href="/author/michael-m-befeler">Michael M. Befeler</a>
-            </div>
-          </td>
-          <td><span>Best Debut Novel</span><script>ignored()</script></td>
-          <td><span>2009</span></td>
-        </tr>
-      </table>
-      <h2>Nominee</h2>
-      <table>
-        <tr><th>Work</th><th>Category</th><th>Year</th></tr>
-        <tr>
-          <td><a href="/work/in-the-shadow">In the Shadow of Gotham</a> by <a href="/author/stefanie-pintoff">Stefanie Pintoff</a></td>
-          <td><div><span>Best Debut Mystery</span></div></td>
-          <td>2009</td>
-        </tr>
-        <tr>
-          <td><a href="/work/child-44">Child 44</a> by <a href="/author/tom-rob-smith">Tom Rob Smith</a></td>
-          <td><div><span>Best First Novel</span></div><style>.ignore{}</style></td>
-          <td>2009</td>
-        </tr>
-      </table>
-    </body></html>
-    '''
-
-    parsed = StrandLibraryThingParser().parse(
-      html,
-      'https://www.librarything.com/award/1380/The-Strand-Critics-Award',
-      'Strand Critics Award - Debut Mystery',
-      'Best Debut Mystery',
-      ('Best Debut Novel', 'Debut Mystery', 'Debut Novel', 'Best First Novel'))
-
-    self.assertEqual(
-      ['Sympathy for the Devil', 'In the Shadow of Gotham', 'Child 44'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['2009', '2009.01', '2009.02'],
-      [entry['position'] for entry in parsed['entries']])
-
-  def test_strand_fetchers_use_single_librarything_source_and_crime_filter(self):
-    from url_fetcher.strand import (
-      UrlFetcherStrandDebutMystery,
-      UrlFetcherStrandMysteryNovel,
-    )
-
-    mystery_fetcher = UrlFetcherStrandMysteryNovel()
-    debut_fetcher = UrlFetcherStrandDebutMystery()
-
-    self.assertEqual(
-      ({'label': 'Automatic', 'value': 'automatic'},),
-      mystery_fetcher.source_choices())
-    self.assertEqual(
-      ({'label': 'Automatic', 'value': 'automatic'},),
-      debut_fetcher.source_choices())
-    self.assertTrue(any(
-      item['label'] == 'Crime, Mystery & Thriller'
-      for item in mystery_fetcher.get_filter_list()))
-    self.assertTrue(any(
-      item['label'] == 'Crime, Mystery & Thriller'
-      for item in debut_fetcher.get_filter_list()))
-
-  def test_strand_fetcher_parse_returns_match_series_false(self):
-    from url_fetcher.strand import UrlFetcherStrandMysteryNovel
-
-    html = '''
-    <html><body>
-      <h2>Winner</h2>
-      <table>
-        <tr><th>Work</th><th>Category</th><th>Year</th></tr>
-        <tr>
-          <td><a href="/work/every-cloak">Every Cloak Rolled in Blood</a> by <a href="/author/james-lee-burke">James Lee Burke</a></td>
-          <td>Best Mystery Novel</td>
-          <td>2022</td>
-        </tr>
-      </table>
-      <h2>Nominee</h2>
-      <table>
-        <tr><th>Work</th><th>Category</th><th>Year</th></tr>
-        <tr>
-          <td><a href="/work/the-fervor">The Fervor</a> by <a href="/author/alma-katsu">Alma Katsu</a></td>
-          <td>Best Mystery Novel</td>
-          <td>2022</td>
-        </tr>
-      </table>
-    </body></html>
-    '''
-
-    parsed = UrlFetcherStrandMysteryNovel().fetch_and_parse(lambda _url: html)
-
-    self.assertFalse(parsed['match_series'])
-    self.assertEqual(
-      ['Every Cloak Rolled in Blood', 'The Fervor'],
-      [entry['title'] for entry in parsed['entries']])
-
-  def test_strand_fetcher_registration_order(self):
-    from url_fetcher import available_url_fetchers
-
-    source_ids = [fetcher.source_id for fetcher in available_url_fetchers()]
-
-    self.assertLess(
-      source_ids.index('nero_award'),
-      source_ids.index('strand_critics_award_mystery_novel'))
-    self.assertLess(
-      source_ids.index('strand_critics_award_mystery_novel'),
-      source_ids.index('strand_critics_award_debut_mystery'))
-    self.assertLess(
-      source_ids.index('strand_critics_award_debut_mystery'),
-      source_ids.index('crime_writers_of_canada_award_novel'))
-
-  def test_pulitzer_parser_extracts_fiction_winners_and_finalists(self):
-    from parser.pulitzer import PulitzerAwardParser
-
-    html = '''
-    <html><body><main>
-      <h1>Fiction</h1>
-      <div>2026</div>
-      <a href="/winners/2026-fiction">2026</a>
-      <h2><a href="/winners/daniel-kraus">Angel Down, by Daniel Kraus (Atria Books)</a></h2>
-      <p>A description that should not parse.</p>
-      <div>Finalists:</div>
-      <a href="/finalists/katie-kitamura">Audition, by Katie Kitamura (Riverhead Books)</a>
-      <a href="/finalists/torrey-peters">Stag Dance: A Quartet, by Torrey Peters (Random House)</a>
-      <a href="/finalists/katie-kitamura">Audition, by Katie Kitamura (Riverhead Books)</a>
-    </main></body></html>
-    '''
-
-    parsed = PulitzerAwardParser().parse(
-      html,
-      'https://www.pulitzer.org/prize-winners-by-category/219',
-      'Pulitzer Prize - Fiction',
-      'Fiction')
-
-    self.assertEqual(
-      ['Angel Down', 'Audition', 'Stag Dance: A Quartet'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['winner', 'nominee', 'nominee'],
-      [entry['result'] for entry in parsed['entries']])
-    self.assertEqual(
-      'https://www.pulitzer.org/winners/daniel-kraus',
-      parsed['entries'][0]['source_url'])
-
-  def test_pulitzer_parser_extracts_general_nonfiction_rows(self):
-    from parser.pulitzer import PulitzerAwardParser
-
-    html = '''
-    <html><body><main>
-      <section>
-        <span>2026</span>
-        <h2>
-          <a href="/winners/brian-goldstone">
-            There Is No Place for Us: Working and Homeless in America, by Brian Goldstone (Crown)
-          </a>
-        </h2>
-        <p>Finalists:</p>
-        <a href="/finalists/haley-cohen-gilliland">
-          A Flower Traveled in My Blood: The Incredible True Story of the Grandmothers Who Fought to Find a Stolen Generation of Children, by Haley Cohen Gilliland (Avid Reader Press/Simon &amp; Schuster)
-        </a>
-        <a href="/finalists/kevin-sack">
-          Mother Emanuel: Two Centuries of Race, Resistance, and Forgiveness in One Charleston Church, by Kevin Sack (Crown)
-        </a>
-      </section>
-    </main></body></html>
-    '''
-
-    parsed = PulitzerAwardParser().parse(
-      html,
-      'https://www.pulitzer.org/prize-winners-by-category/223',
-      'Pulitzer Prize - General Nonfiction',
-      'General Nonfiction')
-
-    self.assertEqual(
-      [
-        'There Is No Place for Us: Working and Homeless in America',
-        'A Flower Traveled in My Blood: The Incredible True Story of the Grandmothers Who Fought to Find a Stolen Generation of Children',
-        'Mother Emanuel: Two Centuries of Race, Resistance, and Forgiveness in One Charleston Church',
-      ],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['Brian Goldstone', 'Haley Cohen Gilliland', 'Kevin Sack'],
-      [entry['author'] for entry in parsed['entries']])
-
-  def test_pulitzer_parser_handles_tied_winners_and_no_award_finalists(self):
-    from parser.pulitzer import PulitzerAwardParser
-
-    html = '''
-    <html><body><main>
-      <div>2023</div>
-      <h2><a href="/winners/hernan-diaz">Trust, by Hernan Diaz (Riverhead Books)</a></h2>
-      <h2><a href="/winners/barbara-kingsolver">Demon Copperhead, by Barbara Kingsolver (Harper)</a></h2>
-      <p>Finalists:</p>
-      <a href="/finalists/vauhini-vara">The Immortal King Rao, by Vauhini Vara (W. W. Norton &amp; Company)</a>
-      <div>2012</div>
-      <h2>No award</h2>
-      <p>Finalists:</p>
-      <a href="/finalists/denis-johnson">Train Dreams, by Denis Johnson (Farrar, Straus and Giroux)</a>
-      <a href="/finalists/karen-russell">Swamplandia!, by Karen Russell (Alfred A. Knopf)</a>
-    </main></body></html>
-    '''
-
-    parsed = PulitzerAwardParser().parse(
-      html,
-      'https://www.pulitzer.org/prize-winners-by-category/219',
-      'Pulitzer Prize - Fiction',
-      'Fiction')
-
-    by_title = {entry['title']: entry for entry in parsed['entries']}
-    self.assertEqual('2023', by_title['Trust']['position'])
-    self.assertEqual('2023', by_title['Demon Copperhead']['position'])
-    self.assertNotIn('No award', by_title)
-    self.assertEqual('nominee', by_title['Train Dreams']['result'])
-    self.assertEqual('2012.01', by_title['Train Dreams']['position'])
-
-  def test_pulitzer_wikipedia_parser_handles_ties_no_award_and_links(self):
-    from parser.pulitzer import PulitzerWikipediaParser
-
-    html = '''
-    <html><body>
-      <table class="wikitable">
-        <tr><th>Year</th><th>Author(s)</th><th>Work</th></tr>
-        <tr>
-          <td rowspan="3">2023</td>
-          <td>Barbara Kingsolver</td>
-          <td><a href="/wiki/Demon_Copperhead">Demon Copperhead</a></td>
-        </tr>
-        <tr><td>Hernan Diaz</td><td>Trust</td></tr>
-        <tr><td>Vauhini Vara</td><td>The Immortal King Rao</td></tr>
-        <tr><td>2012</td><td></td><td>Not awarded</td></tr>
-        <tr><td>Denis Johnson</td><td>Train Dreams</td></tr>
-      </table>
-    </body></html>
-    '''
-
-    parsed = PulitzerWikipediaParser().parse(
-      html,
-      'https://en.wikipedia.org/wiki/Pulitzer_Prize_for_Fiction',
-      'Pulitzer Prize - Fiction',
-      'Fiction',
-      tied_winner_years={2023: 2})
-
-    by_title = {entry['title']: entry for entry in parsed['entries']}
-    self.assertEqual('winner', by_title['Demon Copperhead']['result'])
-    self.assertEqual('winner', by_title['Trust']['result'])
-    self.assertEqual('2023', by_title['Demon Copperhead']['position'])
-    self.assertEqual('2023', by_title['Trust']['position'])
-    self.assertEqual('nominee', by_title['The Immortal King Rao']['result'])
-    self.assertEqual('nominee', by_title['Train Dreams']['result'])
-    self.assertEqual('2012.01', by_title['Train Dreams']['position'])
-    self.assertEqual(
-      'https://en.wikipedia.org/wiki/Demon_Copperhead',
-      by_title['Demon Copperhead']['source_url'])
-
-  def test_pulitzer_britannica_parser_selects_heading_table_winner_only(self):
-    from parser.pulitzer import PulitzerBritannicaParser
-
-    html = '''
-    <html><body>
-      <h2>Poetry</h2>
-      <table>
-        <tr><th>Year</th><th>Title</th><th>Author</th></tr>
-        <tr><td>2020</td><td>Wrong Table</td><td>Wrong Author</td></tr>
-      </table>
-      <h2>General Nonfiction</h2>
-      <table>
-        <tr><th>Year</th><th>Title</th><th>Author</th></tr>
-        <tr>
-          <td rowspan="2">2020</td>
-          <td><a href="/biography/Anne-Boyer">The Undying</a></td>
-          <td>Anne Boyer</td>
-        </tr>
-        <tr><td>The End of the Myth</td><td>Greg Grandin</td></tr>
-        <tr><td>2012</td><td>No award</td><td></td></tr>
-      </table>
-    </body></html>
-    '''
-
-    parsed = PulitzerBritannicaParser().parse(
-      html,
-      'https://www.britannica.com/topic/Pulitzer-Prize',
-      'Pulitzer Prize - General Nonfiction',
-      'General Nonfiction',
-      table_heading='General Nonfiction')
-
-    self.assertEqual(
-      ['The Undying', 'The End of the Myth'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['winner', 'winner'],
-      [entry['result'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['2020', '2020'],
-      [entry['position'] for entry in parsed['entries']])
-    self.assertIn('winner-only', parsed['notes'][0])
-    self.assertEqual(
-      'https://www.britannica.com/biography/Anne-Boyer',
-      parsed['entries'][0]['source_url'])
-
-  def test_pulitzer_fetchers_metadata_and_source_choices(self):
-    from url_fetcher.pulitzer import (
-      UrlFetcherPulitzerFiction,
-      UrlFetcherPulitzerGeneralNonfiction,
-    )
-
-    fiction = UrlFetcherPulitzerFiction()
-    nonfiction = UrlFetcherPulitzerGeneralNonfiction()
-
-    self.assertEqual(
-      (
-        {'label': 'Automatic', 'value': 'automatic'},
-        {'label': 'Official Pulitzer', 'value': 0},
-        {'label': 'Wikipedia', 'value': 1},
-        {'label': 'Britannica', 'value': 2},
-      ),
-      fiction.source_choices())
-    self.assertEqual(
-      (
-        {'label': 'Automatic', 'value': 'automatic'},
-        {'label': 'Official Pulitzer', 'value': 0},
-        {'label': 'Wikipedia', 'value': 1},
-        {'label': 'Britannica', 'value': 2},
-      ),
-      nonfiction.source_choices())
-    self.assertEqual(
-      {'Literary & General Fiction', 'Regional & National Awards'},
-      {item['label'] for item in fiction.get_filter_list()})
-    self.assertEqual(
-      {'Nonfiction', 'Regional & National Awards'},
-      {item['label'] for item in nonfiction.get_filter_list()})
-
-  def test_pulitzer_fetcher_parse_returns_match_series_false(self):
-    from url_fetcher.pulitzer import UrlFetcherPulitzerFiction
-
-    html = '''
-    <html><body><main>
-      <div>2025</div>
-      <h2><a href="/winners/percival-everett">James, by Percival Everett (Doubleday)</a></h2>
-      <p>Finalists:</p>
-      <a href="/finalists/gayl-jones">The Unicorn Woman, by Gayl Jones (Beacon Press)</a>
-    </main></body></html>
-    '''
-
-    parsed = UrlFetcherPulitzerFiction().fetch_and_parse(lambda _url: html)
-
-    self.assertFalse(parsed['match_series'])
-    self.assertEqual(
-      ['James', 'The Unicorn Woman'],
-      [entry['title'] for entry in parsed['entries']])
-
-  def test_pulitzer_fetcher_falls_back_to_wikipedia_on_cloudflare(self):
-    from url_fetcher.pulitzer import (
-      PULITZER_FICTION_URL,
-      PULITZER_FICTION_WIKIPEDIA_URL,
-      UrlFetcherPulitzerFiction,
-    )
-
-    cloudflare_html = '''
-    <html>
-      <head><title>Just a moment...</title></head>
-      <body><p>Cloudflare</p></body>
-    </html>
-    '''
-    wikipedia_html = '''
-    <html><body>
-      <table>
-        <tr><th>Year</th><th>Author</th><th>Work</th></tr>
-        <tr>
-          <td>2025</td>
-          <td>Percival Everett</td>
-          <td><a href="/wiki/James_(novel)">James</a></td>
-        </tr>
-      </table>
-    </body></html>
-    '''
-
-    def fetch_url(url):
-      if url == PULITZER_FICTION_URL:
-        return cloudflare_html
-      if url == PULITZER_FICTION_WIKIPEDIA_URL:
-        return wikipedia_html
-      self.fail('Britannica should not be fetched after usable Wikipedia data')
-
-    parsed = UrlFetcherPulitzerFiction().fetch_and_parse(fetch_url)
-
-    self.assertEqual(['James'], [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(PULITZER_FICTION_WIKIPEDIA_URL, parsed['source_url'])
-    self.assertIn('Official Pulitzer failed', parsed['notes'][0])
-    self.assertFalse(parsed['match_series'])
-
-  def test_pulitzer_fetcher_falls_back_to_britannica_after_unusable_wikipedia(self):
-    from url_fetcher.pulitzer import (
-      PULITZER_BRITANNICA_URL,
-      PULITZER_GENERAL_NONFICTION_URL,
-      PULITZER_GENERAL_NONFICTION_WIKIPEDIA_URL,
-      UrlFetcherPulitzerGeneralNonfiction,
-    )
-
-    cloudflare_html = '''
-    <html>
-      <head><title>Just a moment...</title></head>
-      <body><p>Cloudflare</p></body>
-    </html>
-    '''
-    britannica_html = '''
-    <html><body>
-      <h2>General Nonfiction</h2>
-      <table>
-        <tr><th>Year</th><th>Title</th><th>Author</th></tr>
-        <tr><td>2026</td><td><a href="/biography/Brian-Goldstone">There Is No Place for Us</a></td><td>Brian Goldstone</td></tr>
-      </table>
-    </body></html>
-    '''
-
-    def fetch_url(url):
-      if url == PULITZER_GENERAL_NONFICTION_URL:
-        return cloudflare_html
-      if url == PULITZER_GENERAL_NONFICTION_WIKIPEDIA_URL:
-        return '<html><body><p>No usable table</p></body></html>'
-      if url == PULITZER_BRITANNICA_URL:
-        return britannica_html
-      self.fail('Unexpected Pulitzer fallback URL: %s' % url)
-
-    parsed = UrlFetcherPulitzerGeneralNonfiction().fetch_and_parse(fetch_url)
-
-    self.assertEqual(
-      ['There Is No Place for Us'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(PULITZER_BRITANNICA_URL, parsed['source_url'])
-    self.assertTrue(any(note.startswith('Official Pulitzer failed') for note in parsed['notes']))
-    self.assertTrue(any(note.startswith('Wikipedia failed') for note in parsed['notes']))
-    self.assertTrue(any('winner-only' in note for note in parsed['notes']))
-
-  def test_pulitzer_parser_rejects_cloudflare_challenge_page(self):
-    from parser.pulitzer import PulitzerAwardParser
-
-    html = '''
-    <html>
-      <head><title>Just a moment...</title></head>
-      <body>
-        <script src="/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1"></script>
-        <p>Cloudflare</p>
-      </body>
-    </html>
-    '''
-
-    with self.assertRaisesRegex(ValueError, 'Cloudflare challenge'):
-      PulitzerAwardParser().parse(
-        html,
-        'https://www.pulitzer.org/prize-winners-by-category/219',
-        'Pulitzer Prize - Fiction',
-        'Fiction')
-
-  def test_pulitzer_fetcher_registration_order(self):
-    from url_fetcher import available_url_fetchers
-
-    source_ids = [fetcher.source_id for fetcher in available_url_fetchers()]
-
-    self.assertLess(
-      source_ids.index('sword_and_laser_book_list'),
-      source_ids.index('pulitzer_prize_fiction'))
-    self.assertLess(
-      source_ids.index('pulitzer_prize_fiction'),
-      source_ids.index('pulitzer_prize_general_nonfiction'))
-    self.assertLess(
-      source_ids.index('pulitzer_prize_general_nonfiction'),
-      source_ids.index('hugo_awards_novel'))
-
-  def test_national_book_award_parser_extracts_winners_and_finalists_only(self):
-    from parser.national_book_award import NationalBookAwardParser
-
-    html = '''
-    <html><body>
-      <div class="category-winners">
-        <div class="winner-book">
-          <article class="winner-book-item">
-            <div class="book-data">
-              <h1><a href="/books/james/">James</a></h1>
-              <h2>by Percival Everett</h2>
-            </div>
-          </article>
-        </div>
-        <div class="finalists-wrapper">
-          <div class="finalist-books">
-            <figure class="winner-list">
-              <figcaption>
-                <h1><a href="/books/headshot/">Headshot</a></h1>
-                <p class="author">by Rita Bullwinkel</p>
-              </figcaption>
-            </figure>
-            <figure class="winner-list">
-              <figcaption>
-                <h1><a href="/books/finalists-not-announced/">Finalists Not Announced</a></h1>
-                <p class="author"></p>
-              </figcaption>
-            </figure>
-            <figure class="winner-list">
-              <figcaption>
-                <h1><a href="/books/blank-author/">Blank Author</a></h1>
-                <p class="author"></p>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-        <div class="blue long-list">
-          <figure>
-            <figcaption>
-              <a href="/books/longlist/">A Longlisted Book</a>
-              <p class="author">by Someone Else</p>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </body></html>
-    '''
-
-    parsed = NationalBookAwardParser().parse(
-      html,
-      'https://www.nationalbook.org/awards-prizes/national-book-awards-2024/?cat=fiction',
-      'National Book Award - Fiction',
-      'Fiction')
-
-    self.assertEqual(
-      ['James', 'Headshot'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['winner', 'nominee'],
-      [entry['result'] for entry in parsed['entries']])
-    self.assertEqual(
-      'https://www.nationalbook.org/books/james/',
-      parsed['entries'][0]['source_url'])
-
-  def test_national_book_award_wikipedia_parser_tables_and_nonfiction_filter(self):
-    from parser.national_book_award import NationalBookAwardWikipediaParser
-
-    html = '''
-    <html><body>
-      <h2>Recipients</h2>
-      <table class="wikitable">
-        <tr><th>Year</th><th>Author</th><th>Book</th><th>Status</th></tr>
-        <tr>
-          <td rowspan="2">2025</td>
-          <td>Omar El Akkad</td>
-          <td><a href="/wiki/One_Day,_Everyone_Will_Have_Always_Been_Against_This">One Day, Everyone Will Have Always Been Against This</a></td>
-          <td>Winner</td>
-        </tr>
-        <tr>
-          <td>Julia Ioffe</td>
-          <td>Motherland</td>
-          <td>Finalist</td>
-        </tr>
-      </table>
-      <h3>National Book Award for Nonfiction: History and Biography, winners and finalists</h3>
-      <table class="wikitable">
-        <tr><th>Year</th><th>Author</th><th>Book</th></tr>
-        <tr><td>1975</td><td>Wrong Author</td><td>Wrong Subcategory</td></tr>
-      </table>
-    </body></html>
-    '''
-
-    parsed = NationalBookAwardWikipediaParser().parse(
-      html,
-      'https://en.wikipedia.org/wiki/National_Book_Award_for_Nonfiction',
-      'National Book Award - Nonfiction',
-      'Nonfiction')
-
-    self.assertEqual(
-      ['One Day, Everyone Will Have Always Been Against This', 'Motherland'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['winner', 'nominee'],
-      [entry['result'] for entry in parsed['entries']])
-    self.assertFalse(any(
-      entry['title'] == 'Wrong Subcategory' for entry in parsed['entries']))
-
-  def test_national_book_award_fetchers_metadata_source_choices_and_ypl(self):
-    from url_fetcher.national_book_award import (
-      UrlFetcherNationalBookAwardFiction,
-      UrlFetcherNationalBookAwardNonfiction,
-      UrlFetcherNationalBookAwardYoungPeoplesLiterature,
-    )
-
-    fiction = UrlFetcherNationalBookAwardFiction()
-    nonfiction = UrlFetcherNationalBookAwardNonfiction()
-    ypl = UrlFetcherNationalBookAwardYoungPeoplesLiterature()
-
-    self.assertEqual(
-      (
-        {'label': 'Automatic', 'value': 'automatic'},
-        {'label': 'Official National Book Foundation', 'value': 0},
-        {'label': 'Wikipedia', 'value': 1},
-      ),
-      fiction.source_choices())
-    self.assertEqual(
-      {'Literary & General Fiction', 'Regional & National Awards'},
-      {item['label'] for item in fiction.get_filter_list()})
-    self.assertEqual(
-      {'Nonfiction', 'Regional & National Awards'},
-      {item['label'] for item in nonfiction.get_filter_list()})
-    self.assertEqual(
-      {"Young Adult & Children's Literature", 'Regional & National Awards'},
-      {item['label'] for item in ypl.get_filter_list()})
-
-  def test_national_book_award_fetcher_discovers_years_and_falls_back(self):
-    from url_fetcher.national_book_award import (
-      NATIONAL_BOOK_AWARD_FICTION_WIKIPEDIA_URL,
-      NATIONAL_BOOK_AWARD_YEARS_URL,
-      UrlFetcherNationalBookAwardFiction,
-    )
-
-    years_html = '''
-    <html><body>
-      <a href="https://www.nationalbook.org/awards-prizes/national-book-awards-2024/">2024</a>
-      <option value="https://www.nationalbook.org/awards-prizes/national-book-awards-2024/">2024</option>
-      <a href="https://www.nationalbook.org/awards-prizes/national-book-awards-2025/">2025</a>
-    </body></html>
-    '''
-    year_html = '''
-    <html><body>
-      <div class="winner-book">
-        <article class="winner-book-item">
-          <div class="book-data">
-            <h1><a href="/books/the-true-true-story/">The True True Story of Raja the Gullible (and His Mother)</a></h1>
-            <h2>by Rabih Alameddine</h2>
-          </div>
-        </article>
-      </div>
-    </body></html>
-    '''
-    wikipedia_html = '''
-    <html><body>
-      <table>
-        <tr><th>Year</th><th>Author</th><th>Book</th></tr>
-        <tr><td>2025</td><td>Rabih Alameddine</td><td>The True True Story of Raja the Gullible (and His Mother)</td></tr>
-      </table>
-    </body></html>
-    '''
-    calls = []
-
-    def fetch_url(url):
-      calls.append(url)
-      if url == NATIONAL_BOOK_AWARD_YEARS_URL:
-        return years_html
-      if url.endswith('/national-book-awards-2024/?cat=fiction'):
-        return '<html><body><p>No entries here</p></body></html>'
-      if url.endswith('/national-book-awards-2025/?cat=fiction'):
-        return year_html
-      if url == NATIONAL_BOOK_AWARD_FICTION_WIKIPEDIA_URL:
-        return wikipedia_html
-      self.fail('Unexpected National Book Award URL: %s' % url)
-
-    parsed = UrlFetcherNationalBookAwardFiction().fetch_and_parse(fetch_url)
-
-    self.assertFalse(parsed['match_series'])
-    self.assertEqual(
-      ['The True True Story of Raja the Gullible (and His Mother)'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(1, calls.count(
-      'https://www.nationalbook.org/awards-prizes/national-book-awards-2024/?cat=fiction'))
-
-    def fallback_fetch(url):
-      if url == NATIONAL_BOOK_AWARD_YEARS_URL:
-        return '<html><body>No year links</body></html>'
-      if url == NATIONAL_BOOK_AWARD_FICTION_WIKIPEDIA_URL:
-        return wikipedia_html
-      self.fail('Unexpected fallback URL: %s' % url)
-
-    fallback = UrlFetcherNationalBookAwardFiction().fetch_and_parse(fallback_fetch)
-
-    self.assertEqual(NATIONAL_BOOK_AWARD_FICTION_WIKIPEDIA_URL, fallback['source_url'])
-    self.assertTrue(any(
-      note.startswith('Official National Book Foundation failed')
-      for note in fallback['notes']))
-
-  def test_national_book_award_fetcher_registration_order(self):
-    from url_fetcher import available_url_fetchers
-
-    source_ids = [fetcher.source_id for fetcher in available_url_fetchers()]
-
-    self.assertLess(
-      source_ids.index('pulitzer_prize_general_nonfiction'),
-      source_ids.index('national_book_award_fiction'))
-    self.assertLess(
-      source_ids.index('national_book_award_fiction'),
-      source_ids.index('national_book_award_nonfiction'))
-    self.assertLess(
-      source_ids.index('national_book_award_nonfiction'),
-      source_ids.index('national_book_award_young_peoples_literature'))
-    self.assertLess(
-      source_ids.index('national_book_award_young_peoples_literature'),
-      source_ids.index('hugo_awards_novel'))
-
-  def test_baillie_gifford_parser_extracts_winners_and_shortlist_only(self):
-    from parser.baillie_gifford import BaillieGiffordPrizeParser
-
-    html = '''
-    <html><body>
-      <main>
-        <section>
-          <h2>The winner</h2>
-          <a class="winner-box" href="/books-and-authors/how-to-end-a-story-by">
-            <h3 class="winner-box__title">
-              <p>How to End a Story</p>
-              <p>Collected Diaries</p>
-            </h3>
-            <p class="winner-box__author">Helen Garner</p>
-          </a>
-        </section>
-        <section>
-          <h2>The shortlist</h2>
-          <article class="listing">
-            <a href="/books-and-authors/electric-spark-by-frances-wilson">
-              <p class="listing__meta">2025</p>
-              <h2 class="listing__title">Electric Spark</h2>
-              <p class="listing__sub">Frances Wilson</p>
-            </a>
-          </article>
-        </section>
-        <section>
-          <h2>The longlist</h2>
-          <article class="listing">
-            <a href="/books-and-authors/longlisted-book-by">
-              <h2 class="listing__title">Longlisted Book</h2>
-              <p class="listing__sub">List Author</p>
-            </a>
-          </article>
-        </section>
-      </main>
-    </body></html>
-    '''
-    detail_html = '''
-    <html><body>
-      <main>
-        <header>
-          <span class="h-3">
-            <h1>How to End a Story</h1>
-            <p>Collected Diaries</p>
-          </span>
-          <p class="step-4">Helen Garner</p>
-        </header>
-      </main>
-    </body></html>
-    '''
-    calls = []
-
-    def fetch_url(url):
-      calls.append(url)
-      if url.endswith('/how-to-end-a-story-by'):
-        return detail_html
-      raise RuntimeError('detail unavailable')
-
-    parsed = BaillieGiffordPrizeParser().parse(
-      html,
-      'https://www.thebailliegiffordprize.co.uk/year-by-year/2025',
-      'Baillie Gifford Prize',
-      'Non-Fiction',
-      fetch_url=fetch_url)
-
-    self.assertEqual(
-      ['How to End a Story: Collected Diaries', 'Electric Spark'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['winner', 'shortlisted'],
-      [entry['result'] for entry in parsed['entries']])
-    self.assertEqual(['2025', '2025.01'], [entry['position'] for entry in parsed['entries']])
-    self.assertFalse(any(entry['title'] == 'Longlisted Book' for entry in parsed['entries']))
-    self.assertIn('/books-and-authors/electric-spark-by-frances-wilson', parsed['entries'][1]['source_url'])
-    self.assertTrue(any(note.startswith('Baillie Gifford detail page failed') for note in parsed['notes']))
-
-  def test_baillie_gifford_wikipedia_parser_handles_winner_and_shortlist(self):
-    from parser.baillie_gifford import BaillieGiffordWikipediaParser
-
-    html = '''
-    <html><body>
-      <table class="wikitable">
-        <tr><th>Year</th><th>Author</th><th>Book</th><th>Result</th></tr>
-        <tr>
-          <td rowspan="2">1999</td>
-          <td>Antony Beevor</td>
-          <td><a href="/wiki/Stalingrad_(Beevor_book)">Stalingrad</a></td>
-          <td>Winner</td>
-        </tr>
-        <tr>
-          <td>John Diamond</td>
-          <td>Because Cowards Get Cancer Too</td>
-          <td>Shortlist</td>
-        </tr>
-      </table>
-    </body></html>
-    '''
-
-    parsed = BaillieGiffordWikipediaParser().parse(
-      html,
-      'https://en.wikipedia.org/wiki/Baillie_Gifford_Prize',
-      'Baillie Gifford Prize',
-      'Non-Fiction')
-
-    self.assertEqual(['Stalingrad', 'Because Cowards Get Cancer Too'], [
-      entry['title'] for entry in parsed['entries']])
-    self.assertEqual(['winner', 'shortlisted'], [
-      entry['result'] for entry in parsed['entries']])
-    self.assertEqual(
-      'https://en.wikipedia.org/wiki/Stalingrad_(Beevor_book)',
-      parsed['entries'][0]['source_url'])
-
-  def test_baillie_gifford_fetcher_discovers_years_and_falls_back(self):
-    from url_fetcher.baillie_gifford import (
-      BAILLIE_GIFFORD_WIKIPEDIA_URL,
-      BAILLIE_GIFFORD_YEARS_URL,
-      UrlFetcherBaillieGiffordPrize,
-    )
-
-    years_html = '''
-    <html><body>
-      <a href="/year-by-year/2025">2025</a>
-      <a href="/year-by-year/25">Winner of Winners</a>
-      <a href="/year-by-year/1999">1999</a>
-    </body></html>
-    '''
-    year_html = '''
-    <html><body>
-      <section>
-        <h2>The winner</h2>
-        <a class="winner-box" href="/books-and-authors/stalingrad-by-antony-beevor">
-          <h3 class="winner-box__title">Stalingrad</h3>
-          <p class="winner-box__author">Antony Beevor</p>
-        </a>
-      </section>
-    </body></html>
-    '''
-    detail_html = '''
-    <html><body>
-      <main><header>
-        <span class="h-3"><h1>Stalingrad</h1></span>
-        <p class="step-4">Antony Beevor</p>
-      </header></main>
-    </body></html>
-    '''
-    wikipedia_html = '''
-    <html><body>
-      <table><tr><th>Year</th><th>Author</th><th>Book</th></tr>
-      <tr><td>1999</td><td>Antony Beevor</td><td>Stalingrad</td></tr></table>
-    </body></html>
-    '''
-
-    def fetch_url(url):
-      if url == BAILLIE_GIFFORD_YEARS_URL:
-        return years_html
-      if url.endswith('/year-by-year/2025'):
-        return '<html><body>No entries yet</body></html>'
-      if url.endswith('/year-by-year/1999'):
-        return year_html
-      if url.endswith('/books-and-authors/stalingrad-by-antony-beevor'):
-        return detail_html
-      if url == BAILLIE_GIFFORD_WIKIPEDIA_URL:
-        return wikipedia_html
-      self.fail('Unexpected Baillie Gifford URL: %s' % url)
-
-    parsed = UrlFetcherBaillieGiffordPrize().fetch_and_parse(fetch_url)
-
-    self.assertFalse(parsed['match_series'])
-    self.assertEqual(['Stalingrad'], [entry['title'] for entry in parsed['entries']])
-    self.assertEqual('Non-Fiction', parsed['entries'][0]['category'])
-
-    def fallback_fetch(url):
-      if url == BAILLIE_GIFFORD_YEARS_URL:
-        return '<html><body>No year links</body></html>'
-      if url == BAILLIE_GIFFORD_WIKIPEDIA_URL:
-        return wikipedia_html
-      self.fail('Unexpected fallback URL: %s' % url)
-
-    fallback = UrlFetcherBaillieGiffordPrize().fetch_and_parse(fallback_fetch)
-
-    self.assertEqual(BAILLIE_GIFFORD_WIKIPEDIA_URL, fallback['source_url'])
-    self.assertTrue(any(
-      note.startswith('Official Baillie Gifford failed')
-      for note in fallback['notes']))
-
-  def test_baillie_gifford_fetcher_metadata_and_registration_order(self):
-    from url_fetcher import available_url_fetchers
-    from url_fetcher.baillie_gifford import UrlFetcherBaillieGiffordPrize
-
-    fetcher = UrlFetcherBaillieGiffordPrize()
-
-    self.assertEqual(
-      (
-        {'label': 'Automatic', 'value': 'automatic'},
-        {'label': 'Official Baillie Gifford', 'value': 0},
-        {'label': 'Wikipedia', 'value': 1},
-      ),
-      fetcher.source_choices())
-    self.assertEqual(
-      {'Nonfiction', 'Regional & National Awards'},
-      {item['label'] for item in fetcher.get_filter_list()})
-
-    source_ids = [recipe.source_id for recipe in available_url_fetchers()]
-    self.assertLess(
-      source_ids.index('national_book_award_young_peoples_literature'),
-      source_ids.index('baillie_gifford_prize'))
-    self.assertLess(
-      source_ids.index('baillie_gifford_prize'),
-      source_ids.index('hugo_awards_novel'))
-
-  def test_nbcc_official_parser_handles_legacy_general_nonfiction_page(self):
-    from parser.nbcc import NBCCAwardParser
-
-    html = '''
-    <html><body>
-      <div class="content-regular">
-        <h3>Fiction Winner</h3>
-        <ul><li>Wrong Writer, <em>Wrong Book</em> (Wrong Press)</li></ul>
-        <h3>General Nonfiction Winner</h3>
-        <ul>
-          <li>Maxine Hong Kingston, <em>The Woman Warrior: Memoirs of a Girlhood Among Ghosts</em> (Knopf)</li>
-        </ul>
-        <h3>General Nonfiction Finalists</h3>
-        <ul>
-          <li>George Dangerfield, <em>The Damnable Question: A Study in Anglo-Irish Relations</em> (Atlantic-Little, Brown)</li>
-          <li>Irving Howe with Kenneth Libo, <em>World of Our Fathers</em> (Harcourt)</li>
-        </ul>
-        <h3>Criticism Winner</h3>
-        <ul><li>Wrong Critic, <em>Wrong Critical Book</em> (Press)</li></ul>
-      </div>
-    </body></html>
-    '''
-
-    parsed = NBCCAwardParser().parse(
-      html,
-      'https://www.bookcritics.org/past-awards/1976/',
-      'National Book Critics Circle Award - Nonfiction',
-      'Nonfiction',
-      ('General Nonfiction',))
-
-    self.assertEqual(
-      ['The Woman Warrior: Memoirs of a Girlhood Among Ghosts',
-       'The Damnable Question: A Study in Anglo-Irish Relations',
-       'World of Our Fathers'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['winner', 'nominee', 'nominee'],
-      [entry['result'] for entry in parsed['entries']])
-    self.assertEqual(['1976', '1976.01', '1976.02'], [
-      entry['position'] for entry in parsed['entries']])
-
-  def test_nbcc_official_parser_handles_modern_sections_and_ignores_longlists(self):
-    from parser.nbcc import NBCCAwardParser
-
-    html = '''
-    <html><body>
-      <ul class="award-year-list">
-        <h3>Nonfiction</h3>
-        <li class="Longlist">Ignored Writer, <em>Ignored Longlist Book</em> (Press)</li>
-        <li class="Finalist">Barbara Demick, <em>Daughters of the Bamboo Grove: From China to America, a True Story</em> (Random House)</li>
-        <li class="Winner">Greg Grandin, <em>America, América: A New History of the New World</em> (Penguin Press)</li>
-      </ul>
-      <ul class="award-year-list">
-        <h3>Criticism</h3>
-        <li class="Finalist">Yoko Tawada, translated from the Japanese by Lisa Hofmann-Kuroda, <em>Exophony: Voyages Outside the Mother Tongue</em> (New Directions)</li>
-        <li class="Winner">Quinn Slobodian, <em>Hayek's Bastards: Race, Gold, IQ, and the Capitalism of the Far Right</em> (Zone Books)</li>
-        <li class="Longlist">Long Writer, <em>Long Critical Book</em> (Press)</li>
-      </ul>
-      <ul class="award-year-list">
-        <h3>Nona Balakian Citation for Excellence in Reviewing</h3>
-        <li class="Winner">Wrong Person</li>
-      </ul>
-    </body></html>
-    '''
-
-    nonfiction = NBCCAwardParser().parse(
-      html,
-      'https://www.bookcritics.org/past-awards/2025/',
-      'National Book Critics Circle Award - Nonfiction',
-      'Nonfiction',
-      ('General Nonfiction',))
-    criticism = NBCCAwardParser().parse(
-      html,
-      'https://www.bookcritics.org/past-awards/2025/',
-      'National Book Critics Circle Award - Criticism',
-      'Criticism')
-
-    self.assertEqual(
-      ['America, América: A New History of the New World',
-       'Daughters of the Bamboo Grove: From China to America, a True Story'],
-      [entry['title'] for entry in nonfiction['entries']])
-    self.assertEqual(['winner', 'nominee'], [
-      entry['result'] for entry in nonfiction['entries']])
-    self.assertFalse(any(entry['title'] == 'Ignored Longlist Book'
-                         for entry in nonfiction['entries']))
-    self.assertEqual(
-      ['Hayek\'s Bastards: Race, Gold, IQ, and the Capitalism of the Far Right',
-       'Exophony: Voyages Outside the Mother Tongue'],
-      [entry['title'] for entry in criticism['entries']])
-    self.assertEqual(['Quinn Slobodian', 'Yoko Tawada'], [
-      entry['author'] for entry in criticism['entries']])
-
-  def test_nbcc_wikipedia_parser_handles_rowspans_and_links(self):
-    from parser.nbcc import NBCCWikipediaParser
-
-    html = '''
-    <html><body>
-      <table class="wikitable">
-        <tr><th>Year</th><th>Author</th><th>Book</th><th>Result</th></tr>
-        <tr>
-          <td rowspan="2">2025</td>
-          <td>Greg Grandin</td>
-          <td><a href="/wiki/America,_Am%C3%A9rica">America, América</a></td>
-          <td>Winner</td>
-        </tr>
-        <tr>
-          <td>Barbara Demick</td>
-          <td>Daughters of the Bamboo Grove</td>
-          <td>Finalist</td>
-        </tr>
-      </table>
-    </body></html>
-    '''
-
-    parsed = NBCCWikipediaParser().parse(
-      html,
-      'https://en.wikipedia.org/wiki/National_Book_Critics_Circle_Award_for_Nonfiction',
-      'National Book Critics Circle Award - Nonfiction',
-      'Nonfiction')
-
-    self.assertEqual(['America, América', 'Daughters of the Bamboo Grove'], [
-      entry['title'] for entry in parsed['entries']])
-    self.assertEqual(['winner', 'nominee'], [
-      entry['result'] for entry in parsed['entries']])
-    self.assertEqual(
-      'https://en.wikipedia.org/wiki/America,_Am%C3%A9rica',
-      parsed['entries'][0]['source_url'])
-
-  def test_nbcc_fetcher_discovers_years_next_links_and_falls_back(self):
-    from url_fetcher.nbcc import (
-      NBCC_NONFICTION_WIKIPEDIA_URL,
-      NBCC_PAST_AWARDS_URL,
-      UrlFetcherNBCCNonfiction,
-    )
-
-    archive_html = '''
-    <html><body>
-      <select>
-        <option value="https://www.bookcritics.org/past-awards/2024/">2024</option>
-      </select>
-    </body></html>
-    '''
-    year_2024 = '''
-    <html><body>
-      <ul class="award-year-list">
-        <h3>Nonfiction</h3>
-        <li class="Winner">Alexei Navalny, <em>Patriot: A Memoir</em> (Knopf)</li>
-      </ul>
-      <nav><a rel="next" href="https://www.bookcritics.org/past-awards/2025/">2025</a></nav>
-    </body></html>
-    '''
-    year_2025 = '''
-    <html><body>
-      <ul class="award-year-list">
-        <h3>Nonfiction</h3>
-        <li class="Winner">Greg Grandin, <em>America, América</em> (Penguin)</li>
-        <li class="Longlist">Wrong Writer, <em>Wrong Longlist</em> (Press)</li>
-      </ul>
-    </body></html>
-    '''
-    wikipedia_html = '''
-    <html><body>
-      <table><tr><th>Year</th><th>Author</th><th>Book</th></tr>
-      <tr><td>2025</td><td>Greg Grandin</td><td>America, América</td></tr></table>
-    </body></html>
-    '''
-    calls = []
-
-    def fetch_url(url):
-      calls.append(url)
-      if url == NBCC_PAST_AWARDS_URL:
-        return archive_html
-      if url == 'https://www.bookcritics.org/past-awards/2024/':
-        return year_2024
-      if url == 'https://www.bookcritics.org/past-awards/2025/':
-        return year_2025
-      if url == NBCC_NONFICTION_WIKIPEDIA_URL:
-        return wikipedia_html
-      self.fail('Unexpected NBCC URL: %s' % url)
-
-    parsed = UrlFetcherNBCCNonfiction().fetch_and_parse(fetch_url)
-
-    self.assertFalse(parsed['match_series'])
-    self.assertEqual(['Patriot: A Memoir', 'America, América'], [
-      entry['title'] for entry in parsed['entries']])
-    self.assertIn('https://www.bookcritics.org/past-awards/2025/', calls)
-    self.assertFalse(any(entry['title'] == 'Wrong Longlist'
-                         for entry in parsed['entries']))
-
-    def fallback_fetch(url):
-      if url == NBCC_PAST_AWARDS_URL:
-        return '<html><body>No years</body></html>'
-      if url == NBCC_NONFICTION_WIKIPEDIA_URL:
-        return wikipedia_html
-      self.fail('Unexpected fallback URL: %s' % url)
-
-    fallback = UrlFetcherNBCCNonfiction().fetch_and_parse(fallback_fetch)
-
-    self.assertEqual(NBCC_NONFICTION_WIKIPEDIA_URL, fallback['source_url'])
-    self.assertTrue(any(
-      note.startswith('Official NBCC failed') for note in fallback['notes']))
-
-  def test_nbcc_fetcher_metadata_and_registration_order(self):
-    from url_fetcher import available_url_fetchers
-    from url_fetcher.nbcc import UrlFetcherNBCCCriticism, UrlFetcherNBCCNonfiction
-
-    nonfiction = UrlFetcherNBCCNonfiction()
-    criticism = UrlFetcherNBCCCriticism()
-
-    self.assertEqual(
-      (
-        {'label': 'Automatic', 'value': 'automatic'},
-        {'label': 'Official NBCC', 'value': 0},
-        {'label': 'Wikipedia', 'value': 1},
-      ),
-      nonfiction.source_choices())
-    self.assertEqual(
-      {'Nonfiction', 'Regional & National Awards'},
-      {item['label'] for item in nonfiction.get_filter_list()})
-    self.assertEqual(
-      {'Nonfiction', 'Regional & National Awards'},
-      {item['label'] for item in criticism.get_filter_list()})
-
-    source_ids = [recipe.source_id for recipe in available_url_fetchers()]
-    self.assertLess(
-      source_ids.index('baillie_gifford_prize'),
-      source_ids.index('nbcc_award_nonfiction'))
-    self.assertLess(
-      source_ids.index('nbcc_award_nonfiction'),
-      source_ids.index('nbcc_award_criticism'))
-    self.assertLess(
-      source_ids.index('nbcc_award_criticism'),
-      source_ids.index('hugo_awards_novel'))
-
-  def test_pen_america_parser_handles_landing_and_annual_sections(self):
-    from parser.pen_america import PENAwardConfig, PENAmericaAwardParser
-
-    config = PENAwardConfig(
-      'PEN/John Kenneth Galbraith Award for Nonfiction',
-      'Nonfiction',
-      ('PEN/John Kenneth Galbraith Award for Nonfiction',),
-      'title_author')
-    landing_html = '''
-    <html><body>
-      <h1>PEN/John Kenneth Galbraith Award for Nonfiction</h1>
-      <h2>Current Winner</h2>
-      <p><a href="/book/current">2026, The Current History, Ada Writer (Press)</a></p>
-      <h2>Previous Winners</h2>
-      <table>
-        <tr><th>Year</th><th>Title</th><th>Author</th></tr>
-        <tr><td>2024</td><td><a href="/book/past">Past Book</a></td><td>Past Author</td></tr>
-      </table>
-    </body></html>
-    '''
-    annual_html = '''
-    <html><body>
-      <h2>PEN/John Kenneth Galbraith Award for Nonfiction</h2>
-      <h3>Finalists</h3>
-      <ul>
-        <li><a href="/book/finalist">Finalist Book, Finalist Author (Press)</a></li>
-        <li>Withdrawn Book, Withdrawn Author (withdrawn)</li>
-      </ul>
-      <h3>Longlist</h3>
-      <ul><li>Longlisted Book, Long Author</li></ul>
-    </body></html>
-    '''
-
-    parsed = PENAmericaAwardParser().parse(
-      (
-        ('https://pen.org/literary-awards/pen-galbraith-award-for-nonfiction/', landing_html, 'landing'),
-        ('https://pen.org/2026-pen-america-literary-awards-finalists/', annual_html, 'annual'),
-      ),
-      'https://pen.org/literary-awards/pen-galbraith-award-for-nonfiction/',
-      'PEN/John Kenneth Galbraith Award for Nonfiction',
-      config)
-
-    self.assertEqual(
-      ['Past Book', 'The Current History', 'Finalist Book'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(['winner', 'winner', 'nominee'], [
-      entry['result'] for entry in parsed['entries']])
-    self.assertEqual(['2024', '2026', '2026.01'], [
-      entry['position'] for entry in parsed['entries']])
-    self.assertIn('/book/finalist', parsed['entries'][2]['source_url'])
-    self.assertFalse(any(entry['title'] == 'Longlisted Book'
-                         for entry in parsed['entries']))
-    self.assertTrue(any('Skipped withdrawn PEN America' in note
-                        for note in parsed['notes']))
-
-  def test_pen_america_parser_handles_author_title_history_and_tied_winners(self):
-    from parser.pen_america import PENAwardConfig, PENAmericaAwardParser
-
-    config = PENAwardConfig(
-      'PEN Open Book Award',
-      'Book',
-      ('PEN Open Book Award',),
-      'author_title')
-    html = '''
-    <html><body>
-      <h1>PEN Open Book Award</h1>
-      <p>2025, First Author, Shared Winner One (Press)</p>
-      <p>2025, Second Author, Shared Winner Two (Press)</p>
-    </body></html>
-    '''
-
-    parsed = PENAmericaAwardParser().parse(
-      html,
-      'https://pen.org/literary-awards/pen-open-book-award/',
-      'PEN Open Book Award',
-      config)
-
-    self.assertEqual(['Shared Winner One', 'Shared Winner Two'], [
-      entry['title'] for entry in parsed['entries']])
-    self.assertEqual(['First Author', 'Second Author'], [
-      entry['author'] for entry in parsed['entries']])
-    self.assertEqual(['2025', '2025'], [
-      entry['position'] for entry in parsed['entries']])
-
-  def test_pen_america_annual_parser_supports_configured_awards(self):
-    from parser.pen_america import PENAwardConfig, PENAmericaAwardParser
-
-    cases = (
-      ('PEN/Diamonstein-Spielvogel Award for the Art of the Essay', 'Essay'),
-      ('PEN/Jean Stein Book Award', 'Book'),
-      ('PEN Open Book Award', 'Book'),
-    )
-    for award_name, category in cases:
-      config = PENAwardConfig(award_name, category, (award_name,), 'title_author')
-      html = '''
-      <html><body>
-        <h2>%s</h2>
-        <h3>Finalists</h3>
-        <ul><li>Fixture Title, Fixture Author (Press)</li></ul>
-      </body></html>
-      ''' % award_name
-
-      parsed = PENAmericaAwardParser().parse(
-        (('https://pen.org/2025-pen-america-literary-awards-finalists/', html, 'annual'),),
-        'https://pen.org/example/',
-        award_name,
-        config)
-
-      self.assertEqual(['Fixture Title'], [
-        entry['title'] for entry in parsed['entries']])
-      self.assertEqual([category], [
-        entry['category'] for entry in parsed['entries']])
-      self.assertEqual(['nominee'], [
-        entry['result'] for entry in parsed['entries']])
-
-  def test_pen_faulkner_parser_handles_history_and_current_posts(self):
-    from parser.pen_faulkner_foundation import PENFaulknerAwardParser
-
-    history_html = '''
-    <html><body>
-      <h2>2024</h2>
-      <p>WINNER: Historical Winner by History Author</p>
-      <p>FINALISTS: First Finalist by First Author; Second Finalist by Second Author</p>
-    </body></html>
-    '''
-    finalist_html = '''
-    <html><body>
-      <h1>2026 PEN/Faulkner Award Finalists</h1>
-      <h2>Finalists</h2>
-      <ul><li><a href="/books/current-finalist">Current Finalist by Current Author (Press)</a></li></ul>
-    </body></html>
-    '''
-    winner_html = '''
-    <html><body>
-      <h1>2026 PEN/Faulkner Award Winner</h1>
-      <p><a href="/books/current-winner">Current Winner by Winner Author</a> has won the award.</p>
-      <h2>Finalists</h2>
-      <ul>
-        <li>Current Winner by Winner Author</li>
-        <li>Other Finalist by Other Author</li>
-      </ul>
-    </body></html>
-    '''
-
-    parsed = PENFaulknerAwardParser().parse(
-      (
-        ('https://www.penfaulkner.org/our-awards/pen-faulkner-award/', history_html, 'history'),
-        ('https://www.penfaulkner.org/2026-pen-faulkner-award-finalists/', finalist_html, 'finalist_post'),
-        ('https://www.penfaulkner.org/2026-pen-faulkner-award-winner/', winner_html, 'winner_post'),
-      ),
-      'https://www.penfaulkner.org/our-awards/pen-faulkner-award/',
-      'PEN/Faulkner Award for Fiction')
-
-    self.assertEqual(
-      ['Historical Winner', 'First Finalist', 'Second Finalist',
-       'Current Winner', 'Current Finalist', 'Other Finalist'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['winner', 'nominee', 'nominee', 'winner', 'nominee', 'nominee'],
-      [entry['result'] for entry in parsed['entries']])
-    self.assertEqual(['2024', '2024.01', '2024.02', '2026', '2026.01', '2026.02'], [
-      entry['position'] for entry in parsed['entries']])
-    self.assertEqual(1, len([
-      entry for entry in parsed['entries']
-      if entry['title'] == 'Current Winner'
-    ]))
-
-  def test_pen_hemingway_parser_handles_current_and_history_rows(self):
-    from parser.pen_faulkner_foundation import PENHemingwayAwardParser
-
-    current_html = '''
-    <html><body>
-      <h1>2026 PEN/Hemingway Award</h1>
-      <h2>Winner</h2>
-      <p><a href="/books/debut-winner">Debut Winner by Debut Author</a></p>
-      <h2>Semi-Finalists</h2>
-      <ul><li>Semi Book by Semi Author</li></ul>
-    </body></html>
-    '''
-    history_html = '''
-    <html><body>
-      <h2>2024</h2>
-      <p>Winner: Earlier Winner by Earlier Author</p>
-      <p>Finalists: Earlier Finalist by Earlier Finalist Author</p>
-    </body></html>
-    '''
-
-    parsed = PENHemingwayAwardParser().parse(
-      (
-        ('https://www.penfaulkner.org/pen-hemingway-award-current-winner/', current_html, 'current'),
-        ('https://www.penfaulkner.org/our-awards/pen-hemingway-award/', history_html, 'history'),
-      ),
-      'https://www.penfaulkner.org/our-awards/pen-hemingway-award/',
-      'PEN/Hemingway Award for Debut Novel')
-
-    self.assertEqual(
-      ['Earlier Winner', 'Earlier Finalist', 'Debut Winner', 'Semi Book'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(['winner', 'nominee', 'winner', 'nominee'], [
-      entry['result'] for entry in parsed['entries']])
-    self.assertEqual('Debut Novel', parsed['entries'][0]['category'])
-
-  def test_lukas_official_parser_keeps_book_prize_section_and_result_precedence(self):
-    from parser.lukas import LukasOfficialParser
-
-    shortlist_html = '''
-    <html><body>
-      <h1>2026 Lukas Prize Project Shortlists</h1>
-      <h2>J. Anthony Lukas Book Prize</h2>
-      <ul>
-        <li><a href="/book/seeking">Jeff Hobbs, <em>Seeking Shelter</em> (Random House)</a></li>
-        <li>Rich Benjamin, <em>Talk to Me</em> (Crown)</li>
-        <li>Another Writer, <em>Another Book</em> (Press)</li>
-      </ul>
-      <h2>Mark Lynton History Prize</h2>
-      <ul><li>Wrong Writer, <em>Wrong History Book</em> (Press)</li></ul>
-    </body></html>
-    '''
-    winners_html = '''
-    <html><body>
-      <h1>2026 J. Anthony Lukas Prize Project Winners</h1>
-      <h2>J. Anthony Lukas Book Prize</h2>
-      <p>Winner: Jeff Hobbs, <em>Seeking Shelter</em> (Random House)</p>
-      <p>Finalist: Rich Benjamin, <em>Talk to Me</em> (Crown)</p>
-      <h2>J. Anthony Lukas Work-in-Progress Award</h2>
-      <p>Winner: Wrong Person, <em>Wrong Project</em></p>
-    </body></html>
-    '''
-
-    parsed = LukasOfficialParser().parse(
-      (
-        ('https://journalism.columbia.edu/news/lukas-shortlists-2026', shortlist_html),
-        ('https://journalism.columbia.edu/news/lukas-prize-winners-2026', winners_html),
-      ),
-      'https://journalism.columbia.edu/lukas',
-      'J. Anthony Lukas Book Prize')
-
-    self.assertEqual(
-      ['Seeking Shelter', 'Talk to Me', 'Another Book'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['winner', 'finalist', 'shortlisted'],
-      [entry['result'] for entry in parsed['entries']])
-    self.assertEqual(['2026', '2026.01', '2026.02'], [
-      entry['position'] for entry in parsed['entries']])
-    self.assertFalse(any(entry['title'] == 'Wrong History Book'
-                         for entry in parsed['entries']))
-    self.assertFalse(any(entry['title'] == 'Wrong Project'
-                         for entry in parsed['entries']))
-
-  def test_lukas_wikipedia_parser_preserves_finalist_and_shortlist_results(self):
-    from parser.lukas import LukasWikipediaParser
-
-    html = '''
-    <html><body>
-      <table class="wikitable">
-        <tr><th>Year</th><th>Author</th><th>Title</th><th>Publisher</th><th>Result</th></tr>
-        <tr>
-          <td rowspan="3">2026</td>
-          <td>Jeff Hobbs</td>
-          <td><a href="/wiki/Seeking_Shelter">Seeking Shelter</a></td>
-          <td>Random House</td>
-          <td>Winner</td>
-        </tr>
-        <tr><td>Rich Benjamin</td><td>Talk to Me</td><td>Crown</td><td>Finalist</td></tr>
-        <tr><td>Another Writer</td><td>Another Book</td><td>Press</td><td>Shortlist</td></tr>
-      </table>
-    </body></html>
-    '''
-
-    parsed = LukasWikipediaParser().parse(
-      html,
-      'https://en.wikipedia.org/wiki/J._Anthony_Lukas_Book_Prize',
-      'J. Anthony Lukas Book Prize')
-
-    self.assertEqual(
-      ['Seeking Shelter', 'Talk to Me', 'Another Book'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['winner', 'finalist', 'shortlisted'],
-      [entry['result'] for entry in parsed['entries']])
-    self.assertEqual(
-      'https://en.wikipedia.org/wiki/Seeking_Shelter',
-      parsed['entries'][0]['source_url'])
-
-  def test_mark_lynton_official_parser_keeps_history_prize_section(self):
-    from parser.lukas import MarkLyntonHistoryPrizeParser
-
-    shortlist_html = '''
-    <html><body>
-      <h1>2026 Lukas Prize Project Shortlists</h1>
-      <h2>J. Anthony Lukas Book Prize Shortlist</h2>
-      <ul><li>Wrong Writer, <em>Wrong Book Prize Book</em> (Press)</li></ul>
-      <h2>Mark Lynton History Prize Shortlist</h2>
-      <ul>
-        <li>Sven Beckert, <em>Capitalism: A Global History</em> (Penguin Press)</li>
-        <li>Nicholas Boggs, <em>Baldwin: A Love Story</em> (FSG)</li>
-        <li>William Dalrymple, <em>The Golden Road: How Ancient India Transformed the World</em> (Bloomsbury)</li>
-        <li>Siddharth Kara, <em>The Zorg: A Tale of Greed and Murder That Inspired the Abolition of Slavery</em> (St. Martin's Press)</li>
-      </ul>
-      <h2>J. Anthony Lukas Work-in-Progress Prizes Shortlist</h2>
-      <ul><li>Wrong Person, <em>Wrong Manuscript</em></li></ul>
-    </body></html>
-    '''
-    winners_html = '''
-    <html><body>
-      <h1>2026 J. Anthony Lukas Prize Project Winners</h1>
-      <h2>J. Anthony Lukas Book Prize</h2>
-      <p>Winner: Wrong Writer, <em>Wrong Book Prize Book</em> (Press)</p>
-      <h2>Mark Lynton History Prize</h2>
-      <p>Winner: William Dalrymple, <em>The Golden Road: How Ancient India Transformed the World</em> (Bloomsbury)</p>
-      <p>Finalist: Siddharth Kara, <em>The Zorg: A Tale of Greed and Murder That Inspired the Abolition of Slavery</em> (St. Martin's Press)</p>
-      <h2>J. Anthony Lukas Work-in-Progress Award Winners</h2>
-      <p>Winner: Wrong Person, <em>Wrong Project</em></p>
-    </body></html>
-    '''
-
-    parsed = MarkLyntonHistoryPrizeParser().parse(
-      (
-        ('https://journalism.columbia.edu/news/lukas-shortlists-2026', shortlist_html),
-        ('https://journalism.columbia.edu/news/lukas-prize-winners-2026', winners_html),
-      ),
-      'https://journalism.columbia.edu/lukas',
-      'Mark Lynton History Prize')
-
-    self.assertEqual(
-      ['The Golden Road: How Ancient India Transformed the World',
-       'The Zorg: A Tale of Greed and Murder That Inspired the Abolition of Slavery',
-       'Capitalism: A Global History',
-       'Baldwin: A Love Story'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['winner', 'finalist', 'shortlisted', 'shortlisted'],
-      [entry['result'] for entry in parsed['entries']])
-    self.assertEqual(['2026', '2026.01', '2026.02', '2026.03'], [
-      entry['position'] for entry in parsed['entries']])
-    self.assertEqual('History Prize', parsed['entries'][0]['category'])
-    self.assertFalse(any(entry['title'] == 'Wrong Book Prize Book'
-                         for entry in parsed['entries']))
-    self.assertFalse(any(entry['title'] == 'Wrong Manuscript'
-                         for entry in parsed['entries']))
-    self.assertFalse(any(entry['title'] == 'Wrong Project'
-                         for entry in parsed['entries']))
-
-  def test_mark_lynton_wikipedia_parser_preserves_history_results(self):
-    from parser.lukas import MarkLyntonHistoryPrizeWikipediaParser
-
-    html = '''
-    <html><body>
-      <table class="wikitable">
-        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
-        <tr>
-          <td rowspan="3">1999</td>
-          <td>Adam Hochschild</td>
-          <td><a href="/wiki/King_Leopold%27s_Ghost">King Leopold's Ghost</a></td>
-          <td>Winner</td>
-        </tr>
-        <tr><td>Finalist Writer</td><td>Finalist History</td><td>Finalist</td></tr>
-        <tr><td>Shortlist Writer</td><td>Shortlist History</td><td></td></tr>
-      </table>
-    </body></html>
-    '''
-
-    parsed = MarkLyntonHistoryPrizeWikipediaParser().parse(
-      html,
-      'https://en.wikipedia.org/wiki/Mark_Lynton_History_Prize',
-      'Mark Lynton History Prize')
-
-    self.assertEqual(
-      ["King Leopold's Ghost", 'Finalist History', 'Shortlist History'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['winner', 'finalist', 'shortlisted'],
-      [entry['result'] for entry in parsed['entries']])
-    self.assertEqual(['1999', '1999.01', '1999.02'], [
-      entry['position'] for entry in parsed['entries']])
-    self.assertEqual('Mark Lynton History Prize', parsed['entries'][0]['award'])
-    self.assertEqual(
-      'https://en.wikipedia.org/wiki/King_Leopold%27s_Ghost',
-      parsed['entries'][0]['source_url'])
-
-  def test_lukas_librarything_parser_preserves_source_result_headings(self):
-    from url_fetcher.lukas import UrlFetcherJAnthonyLukasBookPrize
-
-    html = '''
-    <html><body>
-      <h2>Winner</h2>
-      <table>
-        <tr><th>Work</th><th>Year</th></tr>
-        <tr>
-          <td><a href="/work/seeking">Seeking Shelter</a> by <a href="/author/hobbs">Jeff Hobbs</a></td>
-          <td>2026</td>
-        </tr>
-      </table>
-      <h2>Finalist</h2>
-      <table>
-        <tr><th>Work</th><th>Year</th></tr>
-        <tr><td><a href="/work/talk">Talk to Me</a> by <a href="/author/benjamin">Rich Benjamin</a></td><td>2026</td></tr>
-      </table>
-      <h2>Shortlist</h2>
-      <table>
-        <tr><th>Work</th><th>Year</th></tr>
-        <tr><td><a href="/work/another">Another Book</a> by <a href="/author/another">Another Writer</a></td><td>2026</td></tr>
-      </table>
-    </body></html>
-    '''
-
-    fetcher = UrlFetcherJAnthonyLukasBookPrize()
-    parsed = fetcher.create_librarything_parser().parse(
-      html,
-      fetcher.LIBRARYTHING_URL,
-      fetcher.NAME,
-      fetcher.CATEGORY,
-      fetcher.CATEGORY_ALIASES)
-
-    self.assertEqual(
-      ['winner', 'finalist', 'shortlisted'],
-      [entry['result'] for entry in parsed['entries']])
-    self.assertEqual(
-      'https://www.librarything.com/work/seeking',
-      parsed['entries'][0]['source_url'])
-
-  def test_lukas_fetcher_fallbacks_and_metadata(self):
-    from url_fetcher import available_url_fetchers
-    from url_fetcher.lukas import (
-      LUKAS_LIBRARYTHING_URL,
-      LUKAS_OFFICIAL_EXTRA_URLS,
-      LUKAS_URL,
-      LUKAS_WIKIPEDIA_URL,
-      UrlFetcherJAnthonyLukasBookPrize,
-    )
-
-    fetcher = UrlFetcherJAnthonyLukasBookPrize()
-    official_root = '<html><body><h1>Lukas Prize Project</h1></body></html>'
-    official_winner = '''
-    <html><body>
-      <h2>J. Anthony Lukas Book Prize</h2>
-      <p>Winner: Jeff Hobbs, <em>Seeking Shelter</em> (Random House)</p>
-    </body></html>
-    '''
-    official_shortlist = '''
-    <html><body>
-      <h2>J. Anthony Lukas Book Prize</h2>
-      <ul><li>Jeff Hobbs, <em>Seeking Shelter</em> (Random House)</li></ul>
-    </body></html>
-    '''
-    librarything_html = '''
-    <html><body>
-      <h2>Winner</h2>
-      <table><tr><th>Work</th><th>Year</th></tr>
-      <tr><td><a href="/work/fallback">Fallback Book</a> by <a href="/author/fallback">Fallback Author</a></td><td>2025</td></tr></table>
-    </body></html>
-    '''
-    wikipedia_html = '''
-    <html><body>
-      <table><tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
-      <tr><td>2024</td><td>Wiki Author</td><td>Wiki Book</td><td>Winner</td></tr></table>
-    </body></html>
-    '''
-
-    def fetch_url(url):
-      if url == LUKAS_URL:
-        return official_root
-      if url == LUKAS_OFFICIAL_EXTRA_URLS[0]:
-        return official_winner
-      if url == LUKAS_OFFICIAL_EXTRA_URLS[1]:
-        return official_shortlist
-      if url == LUKAS_LIBRARYTHING_URL:
-        return librarything_html
-      if url == LUKAS_WIKIPEDIA_URL:
-        return wikipedia_html
-      self.fail(url)
-
-    parsed = fetcher.fetch_and_parse(fetch_url)
-
-    self.assertEqual(['Seeking Shelter'], [
-      entry['title'] for entry in parsed['entries']])
-    self.assertEqual(['winner'], [
-      entry['result'] for entry in parsed['entries']])
-    self.assertFalse(parsed['match_series'])
-
-    def librarything_fetch(url):
-      if url == LUKAS_URL or url in LUKAS_OFFICIAL_EXTRA_URLS:
-        return '<html><body>No usable official rows</body></html>'
-      if url == LUKAS_LIBRARYTHING_URL:
-        return librarything_html
-      self.fail(url)
-
-    fallback = fetcher.fetch_and_parse(librarything_fetch)
-
-    self.assertEqual(LUKAS_LIBRARYTHING_URL, fallback['source_url'])
-    self.assertEqual(['Fallback Book'], [
-      entry['title'] for entry in fallback['entries']])
-    self.assertTrue(any(note.startswith('Official Columbia failed')
-                        for note in fallback['notes']))
-
-    def wikipedia_fetch(url):
-      if url == LUKAS_URL or url in LUKAS_OFFICIAL_EXTRA_URLS:
-        return '<html><body>No usable official rows</body></html>'
-      if url == LUKAS_LIBRARYTHING_URL:
-        raise RuntimeError('librarything unavailable')
-      if url == LUKAS_WIKIPEDIA_URL:
-        return wikipedia_html
-      self.fail(url)
-
-    wiki_fallback = fetcher.fetch_and_parse(wikipedia_fetch)
-
-    self.assertEqual(LUKAS_WIKIPEDIA_URL, wiki_fallback['source_url'])
-    self.assertEqual(['Wiki Book'], [
-      entry['title'] for entry in wiki_fallback['entries']])
-    self.assertEqual(
-      (
-        {'label': 'Automatic', 'value': 'automatic'},
-        {'label': 'Official Columbia', 'value': 0},
-        {'label': 'LibraryThing', 'value': 1},
-        {'label': 'Wikipedia', 'value': 2},
-      ),
-      fetcher.source_choices())
-    self.assertEqual(
-      {'Nonfiction', 'Regional & National Awards'},
-      {item['label'] for item in fetcher.get_filter_list()})
-
-    source_ids = [recipe.source_id for recipe in available_url_fetchers()]
-    self.assertLess(
-      source_ids.index('pen_hemingway_award_debut_novel'),
-      source_ids.index('j_anthony_lukas_book_prize'))
-    self.assertLess(
-      source_ids.index('j_anthony_lukas_book_prize'),
-      source_ids.index('hugo_awards_novel'))
-
-  def test_mark_lynton_fetcher_uses_official_then_wikipedia(self):
-    from url_fetcher import available_url_fetchers
-    from url_fetcher.lukas import (
-      LUKAS_OFFICIAL_EXTRA_URLS,
-      LUKAS_URL,
-      MARK_LYNTON_WIKIPEDIA_URL,
-      UrlFetcherMarkLyntonHistoryPrize,
-    )
-
-    fetcher = UrlFetcherMarkLyntonHistoryPrize()
-    official_root = '<html><body><h1>Lukas Prize Project</h1></body></html>'
-    official_winner = '''
-    <html><body>
-      <h2>Mark Lynton History Prize</h2>
-      <p>Winner: William Dalrymple, <em>The Golden Road</em> (Bloomsbury)</p>
-    </body></html>
-    '''
-    official_shortlist = '''
-    <html><body>
-      <h2>Mark Lynton History Prize Shortlist</h2>
-      <ul><li>William Dalrymple, <em>The Golden Road</em> (Bloomsbury)</li></ul>
-    </body></html>
-    '''
-    wikipedia_html = '''
-    <html><body>
-      <table><tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
-      <tr><td>1999</td><td>Adam Hochschild</td><td>King Leopold's Ghost</td><td>Winner</td></tr></table>
-    </body></html>
-    '''
-
-    def fetch_url(url):
-      if url == LUKAS_URL:
-        return official_root
-      if url == LUKAS_OFFICIAL_EXTRA_URLS[0]:
-        return official_winner
-      if url == LUKAS_OFFICIAL_EXTRA_URLS[1]:
-        return official_shortlist
-      if url == MARK_LYNTON_WIKIPEDIA_URL:
-        return wikipedia_html
-      self.fail(url)
-
-    parsed = fetcher.fetch_and_parse(fetch_url)
-
-    self.assertEqual(['The Golden Road'], [
-      entry['title'] for entry in parsed['entries']])
-    self.assertEqual(['winner'], [
-      entry['result'] for entry in parsed['entries']])
-    self.assertFalse(parsed['match_series'])
-
-    fallback = fetcher.fetch_and_parse(fetch_url, force_fallback_level=1)
-
-    self.assertEqual(MARK_LYNTON_WIKIPEDIA_URL, fallback['source_url'])
-    self.assertEqual(["King Leopold's Ghost"], [
-      entry['title'] for entry in fallback['entries']])
-    self.assertEqual(
-      (
-        {'label': 'Automatic', 'value': 'automatic'},
-        {'label': 'Official Columbia', 'value': 0},
-        {'label': 'Wikipedia', 'value': 1},
-      ),
-      fetcher.source_choices())
-    self.assertEqual(
-      {'Nonfiction', 'Regional & National Awards'},
-      {item['label'] for item in fetcher.get_filter_list()})
-
-    def failed_official_fetch(url):
-      if url == LUKAS_URL or url in LUKAS_OFFICIAL_EXTRA_URLS:
-        return '<html><body>No usable Mark Lynton rows</body></html>'
-      if url == MARK_LYNTON_WIKIPEDIA_URL:
-        return wikipedia_html
-      self.fail(url)
-
-    with self.assertRaises(Exception):
-      fetcher.fetch_and_parse(failed_official_fetch, disable_fallbacks=True)
-
-    source_ids = [recipe.source_id for recipe in available_url_fetchers()]
-    expected = ['j_anthony_lukas_book_prize', 'mark_lynton_history_prize']
-    self.assertLess(
-      source_ids.index('pen_hemingway_award_debut_novel'),
-      source_ids.index(expected[0]))
-    self.assertLess(
-      source_ids.index(expected[-1]),
-      source_ids.index('orwell_prize_political_writing'))
-    self.assertEqual(expected, source_ids[
-      source_ids.index(expected[0]):source_ids.index(expected[-1]) + 1])
-
-  def test_orwell_official_parser_keeps_political_writing_section(self):
-    from parser.orwell import OrwellOfficialParser
-
-    finalists_html = '''
-    <html><body>
-      <h1>Finalists announced for the Orwell Prizes in Political Writing and Political Fiction</h1>
-      <h2>2026 Political Writing book prize Finalists</h2>
-      <ul>
-        <li>The Escape from Kabul | Karen Bartlett, Duckworth Books</li>
-        <li>For the Sun After Long Nights | Nilo Tabrizy &amp; Fatemeh Jamalpour, Atlantic Books</li>
-        <li>The Wall Dancers | Yi-Ling Liu, Bonnier Books</li>
-      </ul>
-      <h2>2026 Political Fiction book prize Finalists</h2>
-      <ul><li>Wrong Novel | Fiction Writer, Fiction Press</li></ul>
-    </body></html>
-    '''
-    winners_html = '''
-    <html><body>
-      <h1>2026 Political Writing Book prize winner</h1>
-      <h2>The Escape from Kabul</h2>
-      <p>Author: Karen Bartlett</p>
-      <p>Publisher: Duckworth Books</p>
-    </body></html>
-    '''
-
-    parsed = OrwellOfficialParser().parse(
-      (
-        ('https://www.orwellfoundation.com/news/finalists-2026/', finalists_html),
-        ('https://www.orwellfoundation.com/book/the-escape-from-kabul/', winners_html),
-      ),
-      'https://www.orwellfoundation.com/the-orwell-prizes/previous-winners/',
-      'Orwell Prize for Political Writing')
-
-    self.assertEqual(
-      ['The Escape from Kabul', 'For the Sun After Long Nights', 'The Wall Dancers'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['winner', 'finalist', 'finalist'],
-      [entry['result'] for entry in parsed['entries']])
-    self.assertEqual(['2026', '2026.01', '2026.02'], [
-      entry['position'] for entry in parsed['entries']])
-    self.assertFalse(any(entry['title'] == 'Wrong Novel'
-                         for entry in parsed['entries']))
-
-  def test_orwell_official_parser_handles_recent_finalist_row_shapes(self):
-    from parser.orwell import OrwellOfficialParser
-
-    html = '''
-    <html><body>
-      <h2>The Orwell Prize for Political Writing 2025 Finalists</h2>
-      <p>Looking at Women, Looking at War - Victoria Amelina (William Collins)</p>
-      <p>Autocracy Inc \u2013 Anne Applebaum (Allen Lane)</p>
-      <p>The Coming Storm by Gabriel Gatehouse (BBC Books)</p>
-      <h2>The Orwell Prize for Political Writing 2024 Shortlist</h2>
-      <ul><li>Shortlisted Book | Shortlisted Author, Publisher</li></ul>
-    </body></html>
-    '''
-
-    parsed = OrwellOfficialParser().parse(
-      html,
-      'https://www.orwellfoundation.com/news/the-orwell-prizes-2025-finalists-announced/',
-      'Orwell Prize for Political Writing')
-
-    self.assertEqual(
-      ['Shortlisted Book', 'Looking at Women, Looking at War', 'Autocracy Inc', 'The Coming Storm'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['shortlisted', 'finalist', 'finalist', 'finalist'],
-      [entry['result'] for entry in parsed['entries']])
-    self.assertEqual('Anne Applebaum', parsed['entries'][2]['author'])
-
-  def test_orwell_wikipedia_parser_uses_only_political_writing_2019_table(self):
-    from parser.orwell import OrwellWikipediaParser
-
-    html = '''
-    <html><body>
-      <h2>The Orwell Prize for Political Writing (2019-present)</h2>
-      <table class="wikitable">
-        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
-        <tr>
-          <td rowspan="3">2026</td>
-          <td>Karen Bartlett</td>
-          <td><a href="/wiki/The_Escape_from_Kabul">The Escape from Kabul</a></td>
-          <td>Shortlist</td>
-        </tr>
-        <tr><td>Omer Bartov</td><td>Israel: What Went Wrong?</td><td></td></tr>
-        <tr><td>Yi-Ling Liu</td><td>The Wall Dancers</td><td></td></tr>
-        <tr><td>2025</td><td>Victoria Amelina</td><td>Looking at Women, Looking at War</td><td>Winner</td></tr>
-      </table>
-      <h2>The Orwell Prize for Political Fiction (2019-present)</h2>
-      <table><tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
-      <tr><td>2026</td><td>Wrong Writer</td><td>Wrong Novel</td><td>Shortlist</td></tr></table>
-      <h2>The Orwell Prize for Books</h2>
-      <table><tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
-      <tr><td>2018</td><td>Wrong Author</td><td>Wrong Combined Book</td><td>Winner</td></tr></table>
-    </body></html>
-    '''
-
-    parsed = OrwellWikipediaParser().parse(
-      html,
-      'https://en.wikipedia.org/wiki/Orwell_Prize',
-      'Orwell Prize for Political Writing')
-
-    self.assertEqual(
-      ['Looking at Women, Looking at War', 'The Escape from Kabul', 'Israel: What Went Wrong?', 'The Wall Dancers'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['winner', 'shortlisted', 'shortlisted', 'shortlisted'],
-      [entry['result'] for entry in parsed['entries']])
-    self.assertEqual(
-      'https://en.wikipedia.org/wiki/The_Escape_from_Kabul',
-      parsed['entries'][1]['source_url'])
-    self.assertFalse(any(entry['title'] == 'Wrong Novel'
-                         for entry in parsed['entries']))
-    self.assertFalse(any(entry['title'] == 'Wrong Combined Book'
-                         for entry in parsed['entries']))
-
-  def test_orwell_fetcher_uses_wikipedia_as_only_fallback(self):
-    from url_fetcher import available_url_fetchers
-    from url_fetcher.orwell import (
-      ORWELL_OFFICIAL_EXTRA_URLS,
-      ORWELL_URL,
-      ORWELL_WIKIPEDIA_URL,
-      UrlFetcherOrwellPrizePoliticalWriting,
-    )
-
-    fetcher = UrlFetcherOrwellPrizePoliticalWriting()
-    official_root = '<html><body><h1>Previous winners</h1></body></html>'
-    official_finalists = '''
-    <html><body>
-      <h2>2026 Political Writing book prize Finalists</h2>
-      <ul><li>The Escape from Kabul | Karen Bartlett, Duckworth Books</li></ul>
-    </body></html>
-    '''
-    wikipedia_html = '''
-    <html><body>
-      <h2>The Orwell Prize for Political Writing (2019-present)</h2>
-      <table><tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
-      <tr><td>2025</td><td>Victoria Amelina</td><td>Looking at Women, Looking at War</td><td>Winner</td></tr></table>
-    </body></html>
-    '''
-
-    def fetch_url(url):
-      if url == ORWELL_URL:
-        return official_root
-      if url == ORWELL_OFFICIAL_EXTRA_URLS[0]:
-        return official_finalists
-      if url in ORWELL_OFFICIAL_EXTRA_URLS[1:]:
-        return '<html><body>No usable extra rows</body></html>'
-      if url == ORWELL_WIKIPEDIA_URL:
-        return wikipedia_html
-      self.fail(url)
-
-    parsed = fetcher.fetch_and_parse(fetch_url)
-
-    self.assertEqual(['The Escape from Kabul'], [
-      entry['title'] for entry in parsed['entries']])
-    self.assertEqual(['finalist'], [
-      entry['result'] for entry in parsed['entries']])
-    self.assertFalse(parsed['match_series'])
-
-    def wikipedia_fetch(url):
-      if url == ORWELL_URL or url in ORWELL_OFFICIAL_EXTRA_URLS:
-        return '<html><body>No usable official rows</body></html>'
-      if url == ORWELL_WIKIPEDIA_URL:
-        return wikipedia_html
-      self.fail(url)
-
-    fallback = fetcher.fetch_and_parse(wikipedia_fetch)
-
-    self.assertEqual(ORWELL_WIKIPEDIA_URL, fallback['source_url'])
-    self.assertEqual(['Looking at Women, Looking at War'], [
-      entry['title'] for entry in fallback['entries']])
-    self.assertTrue(any(note.startswith('Official Orwell failed')
-                        for note in fallback['notes']))
-    self.assertEqual(
-      (
-        {'label': 'Automatic', 'value': 'automatic'},
-        {'label': 'Official Orwell', 'value': 0},
-        {'label': 'Wikipedia', 'value': 1},
-      ),
-      fetcher.source_choices())
-    self.assertEqual(
-      {'Nonfiction', 'Regional & National Awards'},
-      {item['label'] for item in fetcher.get_filter_list()})
-
-    source_ids = [recipe.source_id for recipe in available_url_fetchers()]
-    self.assertLess(
-      source_ids.index('j_anthony_lukas_book_prize'),
-      source_ids.index('orwell_prize_political_writing'))
-    self.assertLess(
-      source_ids.index('orwell_prize_political_writing'),
-      source_ids.index('hugo_awards_novel'))
-
-  def test_andrew_carnegie_parser_keeps_nonfiction_winners_and_finalists(self):
-    from parser.andrew_carnegie import AndrewCarnegieOfficialParser
-
-    html = '''
-    <html><body>
-      <h1>2026 Winners</h1>
-      <h2>Nonfiction Winner</h2>
-      <article>
-        <h3><a href="/carnegie-medals/2026-winner-nf">Things in Nature Merely Grow</a></h3>
-        <p>By Yiyun Li</p>
-        <p>Farrar, Straus and Giroux</p>
-      </article>
-      <h2>Nonfiction Finalists</h2>
-      <ul>
-        <li><a href="/carnegie-medals/barn">The Barn</a> by Wright Thompson</li>
-        <li><em>The Message</em>, Ta-Nehisi Coates (One World)</li>
-        <li>Challenger by Adam Higginbotham (Avid Reader Press)</li>
-      </ul>
-      <h2>Fiction Finalists</h2>
-      <ul><li><a href="/wrong">Wrong Novel</a> by Fiction Writer</li></ul>
-      <h2>Nonfiction Longlist</h2>
-      <ul><li><a href="/long">Longlisted Book</a> by Long Writer</li></ul>
-    </body></html>
-    '''
-
-    parsed = AndrewCarnegieOfficialParser().parse(
-      html,
-      'https://www.ala.org/carnegie-medals/2026-winners',
-      'Andrew Carnegie Medal for Excellence in Nonfiction')
-
-    self.assertEqual(
-      ['Things in Nature Merely Grow', 'The Barn', 'The Message', 'Challenger'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['winner', 'finalist', 'finalist', 'finalist'],
-      [entry['result'] for entry in parsed['entries']])
-    self.assertEqual(['2026', '2026.01', '2026.02', '2026.03'], [
-      entry['position'] for entry in parsed['entries']])
-    self.assertFalse(any(entry['title'] == 'Wrong Novel'
-                         for entry in parsed['entries']))
-    self.assertFalse(any(entry['title'] == 'Longlisted Book'
-                         for entry in parsed['entries']))
-    self.assertEqual(
-      'https://www.ala.org/carnegie-medals/2026-winner-nf',
-      parsed['entries'][0]['source_url'])
-
-  def test_andrew_carnegie_parser_handles_no_medal_year_and_old_blocks(self):
-    from parser.andrew_carnegie import AndrewCarnegieOfficialParser
-
-    html = '''
-    <html><body>
-      <h2>NONFICTION WINNER</h2>
-      <p>No medal was awarded.</p>
-      <h2>NONFICTION FINALISTS</h2>
-      <div>
-        <p>Author: Sarah Smarsh</p>
-        <p>Heartland: A Memoir of Working Hard and Being Broke in the Richest Country on Earth</p>
-      </div>
-      <div>
-        <p>Dopesick: Dealers, Doctors, and the Drug Company that Addicted America</p>
-        <p>By Beth Macy</p>
-      </div>
-      <h2>FICTION WINNER</h2>
-      <p>Wrong Book by Wrong Author</p>
-    </body></html>
-    '''
-
-    parsed = AndrewCarnegieOfficialParser().parse(
-      html,
-      'https://www.ala.org/carnegie-medals/2018-winners',
-      'Andrew Carnegie Medal for Excellence in Nonfiction')
-
-    self.assertEqual(
-      [
-        'Heartland: A Memoir of Working Hard and Being Broke in the Richest Country on Earth',
-        'Dopesick: Dealers, Doctors, and the Drug Company that Addicted America',
-      ],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(['finalist', 'finalist'], [
-      entry['result'] for entry in parsed['entries']])
-    self.assertEqual(['2018.01', '2018.02'], [
-      entry['position'] for entry in parsed['entries']])
-
-  def test_andrew_carnegie_fetcher_metadata_and_partial_year_failures(self):
-    from url_fetcher import available_url_fetchers
-    from url_fetcher.andrew_carnegie import (
-      ANDREW_CARNEGIE_YEAR_URLS,
-      UrlFetcherAndrewCarnegieNonfiction,
-    )
-
-    fetcher = UrlFetcherAndrewCarnegieNonfiction()
-    pages = {
-      'https://www.ala.org/carnegie-medals/2026-winners': '''
-        <html><body>
-          <h2>Nonfiction Winner</h2>
-          <p><a href="/carnegie-medals/winner">Things in Nature Merely Grow</a> by Yiyun Li</p>
-        </body></html>
-      ''',
-      'https://www.ala.org/carnegie-medals/2025-winners': '''
-        <html><body>
-          <h2>Nonfiction Finalists</h2>
-          <ul><li><a href="/carnegie-medals/finalist">The Wide Wide Sea</a> by Hampton Sides</li></ul>
-        </body></html>
-      ''',
-    }
-
-    def fetch_url(url):
-      if url == 'https://www.ala.org/carnegie-medals/2024-winners':
-        raise RuntimeError('temporary ALA failure')
-      return pages.get(url, '<html><body>No usable Carnegie rows</body></html>')
-
-    parsed = fetcher.fetch_and_parse(fetch_url)
-
-    self.assertEqual(
-      ['The Wide Wide Sea', 'Things in Nature Merely Grow'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertTrue(any(
-      note.startswith('Official ALA Carnegie page failed')
-      for note in parsed['notes']))
-    self.assertFalse(parsed['match_series'])
-    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},),
-                     fetcher.source_choices())
-    self.assertEqual(
-      {'Nonfiction', 'Regional & National Awards'},
-      {item['label'] for item in fetcher.get_filter_list()})
-    self.assertEqual(
-      'https://www.ala.org/carnegie-medals/2026-winners',
-      ANDREW_CARNEGIE_YEAR_URLS[0])
-
-    source_ids = [recipe.source_id for recipe in available_url_fetchers()]
-    self.assertLess(
-      source_ids.index('orwell_prize_political_writing'),
-      source_ids.index('andrew_carnegie_medal_nonfiction'))
-    self.assertLess(
-      source_ids.index('andrew_carnegie_medal_nonfiction'),
-      source_ids.index('hugo_awards_novel'))
-
-  def test_kirkus_parser_keeps_configured_category_sections(self):
-    from parser.kirkus import KirkusPrizeParser
-
-    html = '''
-    <html><body>
-      <h2>2025 Winners</h2>
-      <section>
-        <h3>Fiction</h3>
-        <article><a href="/book/fiction-winner/">Fiction Winner</a><p>BY Fiction Writer</p></article>
-        <h3>Nonfiction</h3>
-        <article><a href="/book/nonfiction-winner/">Nonfiction Winner</a><p>BY Nonfiction Writer</p></article>
-        <h3>Young Readers' Literature</h3>
-        <article><a href="/book/young-winner/">Young Winner</a><p>BY Young Writer</p></article>
-      </section>
-      <h2>2025 Finalists</h2>
-      <section>
-        <h3>Fiction</h3>
-        <div><a href="/book/fiction-finalist/">Fiction Finalist</a><p>By Other Fiction Writer</p></div>
-        <h3>Nonfiction</h3>
-        <div><a href="/book/nonfiction-finalist-one/">Nonfiction Finalist One</a><p>By First Nonfiction Writer</p></div>
-        <div><a href="/book/nonfiction-finalist-two/">Nonfiction Finalist Two</a><p>By Second Nonfiction Writer</p></div>
-        <h3>Young Readers' Literature</h3>
-        <div><a href="/book/young-finalist/">Young Finalist</a><p>By Other Young Writer</p></div>
-      </section>
-    </body></html>
-    '''
-
-    parsed = KirkusPrizeParser().parse(
-      html,
-      'https://www.kirkusreviews.com/prize/2025/',
-      'Kirkus Prize - Nonfiction',
-      'Nonfiction',
-      ('Nonfiction',))
-
-    self.assertEqual(
-      ['Nonfiction Winner', 'Nonfiction Finalist One', 'Nonfiction Finalist Two'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(['winner', 'finalist', 'finalist'], [
-      entry['result'] for entry in parsed['entries']])
-    self.assertEqual(['2025', '2025.01', '2025.02'], [
-      entry['position'] for entry in parsed['entries']])
-    self.assertEqual(
-      'https://www.kirkusreviews.com/book/nonfiction-winner/',
-      parsed['entries'][0]['source_url'])
-    self.assertFalse(any(entry['title'] == 'Fiction Winner'
-                         for entry in parsed['entries']))
-    self.assertFalse(any(entry['title'] == 'Young Winner'
-                         for entry in parsed['entries']))
-
-  def test_kirkus_parser_handles_old_and_young_reader_category_labels(self):
-    from parser.kirkus import KirkusPrizeParser
-
-    html = '''
-    <html><body>
-      <h2>2014 Winners</h2>
-      <section>
-        <h3>Children's</h3>
-        <p><a href="/book/brown-girl-dreaming/">Brown Girl Dreaming</a> by Jacqueline Woodson</p>
-      </section>
-      <h2>2014 Finalists</h2>
-      <section>
-        <h3>Teen</h3>
-        <p><a href="/book/young-finalist/">Young Finalist</a> by Teen Writer</p>
-        <h3>Fiction</h3>
-        <p><a href="/book/wrong/">Wrong Adult Book</a> by Wrong Writer</p>
-      </section>
-    </body></html>
-    '''
-
-    parsed = KirkusPrizeParser().parse(
-      html,
-      'https://www.kirkusreviews.com/prize/2014/',
-      "Kirkus Prize - Young Readers' Literature",
-      "Young Readers' Literature",
-      ("Young Readers' Literature", "Children's", 'Teen'))
-
-    self.assertEqual(['Brown Girl Dreaming', 'Young Finalist'], [
-      entry['title'] for entry in parsed['entries']])
-    self.assertEqual(['winner', 'finalist'], [
-      entry['result'] for entry in parsed['entries']])
-    self.assertEqual(['2014', '2014.01'], [
-      entry['position'] for entry in parsed['entries']])
-
-  def test_kirkus_fetcher_metadata_and_partial_year_failures(self):
-    from url_fetcher import available_url_fetchers
-    from url_fetcher.kirkus import (
-      KIRKUS_PRIZE_URL,
-      UrlFetcherKirkusPrizeFiction,
-      UrlFetcherKirkusPrizeNonfiction,
-      UrlFetcherKirkusPrizeYoungReadersLiterature,
-    )
-
-    fetcher = UrlFetcherKirkusPrizeNonfiction()
-    landing_html = '''
-      <a href="/prize/2025/">2025 Kirkus Prize</a>
-      <a href="/prize/2024/">2024 Kirkus Prize</a>
-    '''
-    pages = {
-      'https://www.kirkusreviews.com/prize/2025/': '''
-        <html><body>
-          <h2>2025 Winners</h2>
-          <section><h3>Nonfiction</h3>
-          <p><a href="/book/nonfiction-winner/">Nonfiction Winner</a> by Nonfiction Writer</p></section>
-        </body></html>
-      ''',
-      'https://www.kirkusreviews.com/prize/2024/': '''
-        <html><body>
-          <h2>2024 Finalists</h2>
-          <section><h3>Nonfiction</h3>
-          <p><a href="/book/nonfiction-finalist/">Nonfiction Finalist</a> by Finalist Writer</p></section>
-        </body></html>
-      ''',
-    }
-
-    def fetch_url(url):
-      if url == KIRKUS_PRIZE_URL:
-        return landing_html
-      if url == 'https://www.kirkusreviews.com/prize/2023/':
-        raise RuntimeError('temporary Kirkus failure')
-      return pages.get(url, '<html><body>No usable Kirkus rows</body></html>')
-
-    parsed = fetcher.fetch_and_parse(fetch_url)
-
-    self.assertEqual(['Nonfiction Finalist', 'Nonfiction Winner'], [
-      entry['title'] for entry in parsed['entries']])
-    self.assertTrue(any(
-      note.startswith('Official Kirkus page failed')
-      for note in parsed['notes']))
-    self.assertFalse(parsed['match_series'])
-    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},),
-                     fetcher.source_choices())
-    self.assertEqual(
-      {'Nonfiction', 'Regional & National Awards'},
-      {item['label'] for item in fetcher.get_filter_list()})
-    self.assertEqual(
-      {'Literary & General Fiction', 'Regional & National Awards'},
-      {item['label'] for item in UrlFetcherKirkusPrizeFiction().get_filter_list()})
-    self.assertEqual(
-      {"Young Adult & Children's Literature", 'Regional & National Awards'},
-      {item['label'] for item in UrlFetcherKirkusPrizeYoungReadersLiterature().get_filter_list()})
-
-    source_ids = [recipe.source_id for recipe in available_url_fetchers()]
-    expected = [
-      'kirkus_prize_fiction',
-      'kirkus_prize_nonfiction',
-      'kirkus_prize_young_readers_literature',
-    ]
-    self.assertLess(
-      source_ids.index('andrew_carnegie_medal_nonfiction'),
-      source_ids.index(expected[0]))
-    self.assertLess(
-      source_ids.index(expected[-1]),
-      source_ids.index('hugo_awards_novel'))
-    self.assertEqual(expected, source_ids[
-      source_ids.index(expected[0]):source_ids.index(expected[-1]) + 1])
-
-  def test_womens_prize_official_parser_uses_detail_pages_and_boundaries(self):
-    from parser.womens_prize import WomensPrizeOfficialParser
-
-    landing_html = '''
-    <html><body>
-      <section>
-        <h2>2025 Winner</h2>
-        <article><a href="/library/the-story-of-a-heart/">
-          <h3>The Story of a Heart</h3><p>By Rachel Clarke</p>
-        </a></article>
-      </section>
-      <section>
-        <h2>2025 Shortlist</h2>
-        <article><a href="/library/raising-hare/">
-          <h3>Raising Hare</h3><p>By Chloe Dalton</p>
-        </a></article>
-        <article><a href="/library/private-revolutions/">
-          <h3>Private Revolutions</h3><p>By Yuan Yang</p>
-        </a></article>
-      </section>
-      <section>
-        <h2>2026 Shortlist</h2>
-        <article><a href="/library/the-finest-hotel-in-kabul/">
-          <h3>The Finest Hotel in Kabul</h3><p>By Lyse Doucet</p>
-        </a></article>
-      </section>
-      <section>
-        <h2>2025 Winner</h2>
-        <article><a href="/library/the-safekeep/">
-          <h3>The Safekeep</h3><p>By Yael van der Wouden</p>
-        </a></article>
-      </section>
-      <section>
-        <h2>2026 Longlist</h2>
-        <article><a href="/library/longlisted-book/">
-          <h3>Longlisted Book</h3><p>By Long Writer</p>
-        </a></article>
-      </section>
-    </body></html>
-    '''
-    pages = {
-      'https://womensprize.com/library/the-story-of-a-heart/': '''
-        <html><body><main><h1>The Story of a Heart</h1>
-        <p>By Rachel Clarke</p>
-        <p>Winner of the 2025 Women's Prize for Non-Fiction</p></main></body></html>
-      ''',
-      'https://womensprize.com/library/raising-hare/': '''
-        <html><body><main><h1>Raising Hare</h1>
-        <p>By Chloe Dalton</p>
-        <p>Shortlisted for the 2025 Women's Prize for Non-Fiction</p></main></body></html>
-      ''',
-      'https://womensprize.com/library/private-revolutions/': '''
-        <html><body><main><h1>Private Revolutions</h1>
-        <p>By Yuan Yang</p>
-        <p>Shortlisted for the 2025 Women's Prize for Non-Fiction</p></main></body></html>
-      ''',
-      'https://womensprize.com/library/the-finest-hotel-in-kabul/': '''
-        <html><body><main><h1>The Finest Hotel in Kabul</h1>
-        <p>By Lyse Doucet</p>
-        <p>Shortlisted for the 2026 Women's Prize for Non-Fiction</p></main></body></html>
-      ''',
-      'https://womensprize.com/library/the-safekeep/': '''
-        <html><body><main><h1>The Safekeep</h1>
-        <p>By Yael van der Wouden</p>
-        <p>Winner of the 2025 Women's Prize for Fiction</p></main></body></html>
-      ''',
-    }
-
-    parsed = WomensPrizeOfficialParser(
-      "Women's Prize for Non-Fiction",
-      'Non-Fiction',
-      ("Women's Prize for Non-Fiction", "Women's Prize for Non Fiction"),
-    ).parse(
-      landing_html,
-      'https://womensprize.com/prizes/womens-prize-for-non-fiction/',
-      "Women's Prize for Non-Fiction",
-      'Non-Fiction',
-      fetch_url=lambda url: pages[url])
-
-    self.assertEqual(
-      ['The Story of a Heart', 'Raising Hare', 'Private Revolutions',
-       'The Finest Hotel in Kabul'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['winner', 'shortlisted', 'shortlisted', 'shortlisted'],
-      [entry['result'] for entry in parsed['entries']])
-    self.assertEqual(['2025', '2025.01', '2025.02', '2026.01'], [
-      entry['position'] for entry in parsed['entries']])
-    self.assertFalse(any(entry['title'] == 'The Safekeep'
-                         for entry in parsed['entries']))
-    self.assertFalse(any(entry['title'] == 'Longlisted Book'
-                         for entry in parsed['entries']))
-
-  def test_womens_prize_official_parser_keeps_landing_fallback_with_note(self):
-    from parser.womens_prize import WomensPrizeOfficialParser
-
-    html = '''
-    <html><body>
-      <section>
-        <h2>2026 Shortlist</h2>
-        <article><a href="/library/the-mercy-step/">
-          <h3>The Mercy Step</h3><p>By Marcia Hutchinson</p>
-        </a></article>
-      </section>
-    </body></html>
-    '''
-
-    parsed = WomensPrizeOfficialParser(
-      "Women's Prize for Fiction",
-      'Fiction',
-      ("Women's Prize for Fiction",),
-    ).parse(
-      html,
-      'https://womensprize.com/prizes/womens-prize-for-fiction/',
-      "Women's Prize for Fiction",
-      'Fiction',
-      fetch_url=lambda _url: (_ for _ in ()).throw(RuntimeError('moved page')))
-
-    self.assertEqual(['The Mercy Step'], [
-      entry['title'] for entry in parsed['entries']])
-    self.assertEqual(['Marcia Hutchinson'], [
-      entry['author'] for entry in parsed['entries']])
-    self.assertEqual(['shortlisted'], [
-      entry['result'] for entry in parsed['entries']])
-    self.assertEqual(['2026.01'], [
-      entry['position'] for entry in parsed['entries']])
-    self.assertTrue(any(note.startswith('Official Women\'s Prize detail page failed')
-                        for note in parsed['notes']))
-
-  def test_womens_prize_wikipedia_parser_handles_repeated_years(self):
-    from parser.womens_prize import WomensPrizeWikipediaParser
-
-    html = '''
-    <html><body>
-      <table class="wikitable">
-        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
-        <tr>
-          <td rowspan="3">2025</td>
-          <td>Rachel Clarke</td>
-          <td><a href="/wiki/The_Story_of_a_Heart">The Story of a Heart</a></td>
-          <td>Winner</td>
-        </tr>
-        <tr><td>Chloe Dalton</td><td>Raising Hare</td><td>Shortlist</td></tr>
-        <tr><td>Yuan Yang</td><td>Private Revolutions</td><td></td></tr>
-      </table>
-    </body></html>
-    '''
-
-    parsed = WomensPrizeWikipediaParser(
-      "Women's Prize for Non-Fiction",
-      'Non-Fiction',
-      ("Women's Prize for Non-Fiction",),
-    ).parse(
-      html,
-      'https://en.wikipedia.org/wiki/Women%27s_Prize_for_Non-Fiction',
-      "Women's Prize for Non-Fiction",
-      'Non-Fiction')
-
-    self.assertEqual(
-      ['The Story of a Heart', 'Raising Hare', 'Private Revolutions'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['winner', 'shortlisted', 'shortlisted'],
-      [entry['result'] for entry in parsed['entries']])
-    self.assertEqual(['2025', '2025.01', '2025.02'], [
-      entry['position'] for entry in parsed['entries']])
-    self.assertEqual(
-      'https://en.wikipedia.org/wiki/The_Story_of_a_Heart',
-      parsed['entries'][0]['source_url'])
-
-  def test_womens_prize_fetchers_use_official_then_wikipedia(self):
-    from url_fetcher import available_url_fetchers
-    from url_fetcher.womens_prize import (
-      WOMENS_PRIZE_FICTION_URL,
-      WOMENS_PRIZE_NONFICTION_URL,
-      WOMENS_PRIZE_NONFICTION_WIKIPEDIA_URL,
-      UrlFetcherWomensPrizeFiction,
-      UrlFetcherWomensPrizeNonFiction,
-    )
-
-    nonfiction = UrlFetcherWomensPrizeNonFiction()
-    fiction = UrlFetcherWomensPrizeFiction()
-    official_html = '''
-    <html><body>
-      <section><h2>2025 Winner</h2>
-      <article><a href="/library/the-story-of-a-heart/">
-      <h3>The Story of a Heart</h3><p>By Rachel Clarke</p></a></article>
-      </section>
-    </body></html>
-    '''
-    detail_html = '''
-    <html><body><main><h1>The Story of a Heart</h1>
-    <p>By Rachel Clarke</p>
-    <p>Winner of the 2025 Women's Prize for Non-Fiction</p></main></body></html>
-    '''
-    wikipedia_html = '''
-    <html><body><table>
-      <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
-      <tr><td>2025</td><td>Rachel Clarke</td><td>The Story of a Heart</td><td>Winner</td></tr>
-    </table></body></html>
-    '''
-
-    def fetch_url(url):
-      if url == WOMENS_PRIZE_NONFICTION_URL:
-        return official_html
-      if url == 'https://womensprize.com/library/the-story-of-a-heart/':
-        return detail_html
-      if url == WOMENS_PRIZE_NONFICTION_WIKIPEDIA_URL:
-        return wikipedia_html
-      self.fail(url)
-
-    parsed = nonfiction.fetch_and_parse(fetch_url)
-
-    self.assertEqual(['The Story of a Heart'], [
-      entry['title'] for entry in parsed['entries']])
-    self.assertFalse(parsed['match_series'])
-    self.assertEqual(
-      (
-        {'label': 'Automatic', 'value': 'automatic'},
-        {'label': 'Official Women\'s Prize', 'value': 0},
-        {'label': 'Wikipedia', 'value': 1},
-      ),
-      nonfiction.source_choices())
-    self.assertEqual(
-      {'Nonfiction', 'Regional & National Awards'},
-      {item['label'] for item in nonfiction.get_filter_list()})
-    self.assertEqual(
-      {'Literary & General Fiction', 'Regional & National Awards'},
-      {item['label'] for item in fiction.get_filter_list()})
-
-    fallback = nonfiction.fetch_and_parse(
-      fetch_url,
-      force_fallback_level=1)
-
-    self.assertEqual(WOMENS_PRIZE_NONFICTION_WIKIPEDIA_URL, fallback['source_url'])
-    self.assertEqual(['The Story of a Heart'], [
-      entry['title'] for entry in fallback['entries']])
-
-    def failed_official_fetch(url):
-      if url == WOMENS_PRIZE_NONFICTION_URL:
-        return '<html><body>No usable official rows</body></html>'
-      if url == WOMENS_PRIZE_NONFICTION_WIKIPEDIA_URL:
-        return wikipedia_html
-      self.fail(url)
-
-    with self.assertRaises(Exception):
-      nonfiction.fetch_and_parse(failed_official_fetch, disable_fallbacks=True)
-
-    source_ids = [recipe.source_id for recipe in available_url_fetchers()]
-    expected = ['womens_prize_nonfiction', 'womens_prize_fiction']
-    self.assertLess(
-      source_ids.index('kirkus_prize_young_readers_literature'),
-      source_ids.index(expected[0]))
-    self.assertLess(
-      source_ids.index(expected[-1]),
-      source_ids.index('royal_society_science_book_prize'))
-    self.assertEqual(expected, source_ids[
-      source_ids.index(expected[0]):source_ids.index(expected[-1]) + 1])
-    self.assertNotEqual(WOMENS_PRIZE_FICTION_URL, WOMENS_PRIZE_NONFICTION_URL)
-
-  def test_royal_society_official_parser_uses_detail_pages_for_winners(self):
-    from parser.royal_society import RoyalSocietyScienceBookPrizeParser
-
-    landing_html = '''
-    <html><body>
-      <section>
-        <article><a href="/medals-and-prizes/science-book-prize/books/2025/our-brains-our-selves/">
-          <h3>Our Brains, Our Selves</h3>
-          <p>Author: Masud Husain</p>
-          <p>Shortlist: 2025</p>
-        </a></article>
-        <article><a href="/medals-and-prizes/science-book-prize/books/2025/adventures-in-volcanoland/">
-          <h3>Adventures in Volcanoland</h3>
-          <p>Author: Tamsin Mather</p>
-          <p>Shortlist: 2025</p>
-        </a></article>
-        <article><a href="/medals-and-prizes/science-book-prize/books/2024/a-city-on-mars/">
-          <h3>A City on Mars</h3>
-          <p>Author: Kelly and Zach Weinersmith</p>
-          <p>Shortlist: 2024</p>
-        </a></article>
-        <article><a href="/medals-and-prizes/young-peoples-book-prize/books/2025/not-this-one/">
-          <h3>Wrong Prize</h3><p>Author: Wrong Writer</p>
-        </a></article>
-      </section>
-    </body></html>
-    '''
-    pages = {
-      'https://www.royalsociety.org/medals-and-prizes/science-book-prize/books/2025/our-brains-our-selves/': '''
-        <html><body><main>
-          <h1>Our Brains, Our Selves</h1>
-          <p>Author: Masud Husain</p>
-          <h2>Winner: 2025</h2>
-          <section><h2>Other shortlisted books</h2>
-            <a href="/medals-and-prizes/science-book-prize/books/2025/other/">Other Book</a>
-          </section>
-        </main></body></html>
-      ''',
-      'https://www.royalsociety.org/medals-and-prizes/science-book-prize/books/2025/adventures-in-volcanoland/': '''
-        <html><body><main>
-          <h1>Adventures in Volcanoland</h1>
-          <p>Author: Tamsin Mather</p>
-          <h2>Shortlist: 2025</h2>
-        </main></body></html>
-      ''',
-      'https://www.royalsociety.org/medals-and-prizes/science-book-prize/books/2024/a-city-on-mars/': '''
-        <html><body><main>
-          <h1>A City on Mars</h1>
-          <p>Author: Kelly and Zach Weinersmith</p>
-          <h2>Winner: 2024</h2>
-        </main></body></html>
-      ''',
-    }
-
-    parsed = RoyalSocietyScienceBookPrizeParser().parse(
-      landing_html,
-      'https://www.royalsociety.org/medals-and-prizes/science-book-prize/',
-      'Royal Society Trivedi Science Book Prize',
-      'Science Book Prize',
-      fetch_url=lambda url: pages[url])
-
-    self.assertEqual(
-      ['A City on Mars', 'Our Brains, Our Selves', 'Adventures in Volcanoland'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(['winner', 'winner', 'shortlisted'], [
-      entry['result'] for entry in parsed['entries']])
-    self.assertEqual(['2024', '2025', '2025.01'], [
-      entry['position'] for entry in parsed['entries']])
-    self.assertEqual('Kelly and Zach Weinersmith', parsed['entries'][0]['author'])
-    self.assertFalse(any(entry['title'] == 'Other Book'
-                         for entry in parsed['entries']))
-    self.assertFalse(any(entry['title'] == 'Wrong Prize'
-                         for entry in parsed['entries']))
-
-  def test_royal_society_official_parser_keeps_landing_fallback_with_note(self):
-    from parser.royal_society import RoyalSocietyScienceBookPrizeParser
-
-    html = '''
-    <html><body>
-      <article><a href="/medals-and-prizes/science-book-prize/books/2025/adventures-in-volcanoland/">
-        <h3>Adventures in Volcanoland</h3>
-        <p>Author: Tamsin Mather</p>
-        <p>Shortlist: 2025</p>
-      </a></article>
-    </body></html>
-    '''
-
-    parsed = RoyalSocietyScienceBookPrizeParser().parse(
-      html,
-      'https://www.royalsociety.org/medals-and-prizes/science-book-prize/',
-      'Royal Society Trivedi Science Book Prize',
-      'Science Book Prize',
-      fetch_url=lambda _url: (_ for _ in ()).throw(RuntimeError('moved page')))
-
-    self.assertEqual(['Adventures in Volcanoland'], [
-      entry['title'] for entry in parsed['entries']])
-    self.assertEqual(['Tamsin Mather'], [
-      entry['author'] for entry in parsed['entries']])
-    self.assertEqual(['shortlisted'], [
-      entry['result'] for entry in parsed['entries']])
-    self.assertEqual(['2025.01'], [
-      entry['position'] for entry in parsed['entries']])
-    self.assertTrue(any(note.startswith('Official Royal Society detail page failed')
-                        for note in parsed['notes']))
-
-  def test_royal_society_wikipedia_parser_handles_historical_tables(self):
-    from parser.royal_society import RoyalSocietyScienceBookPrizeWikipediaParser
-
-    html = '''
-    <html><body>
-      <h2>Rhône-Poulenc Prize for Science Books</h2>
-      <table class="wikitable">
-        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
-        <tr>
-          <td rowspan="2">1988</td>
-          <td>Stephen Hawking</td>
-          <td><a href="/wiki/A_Brief_History_of_Time">A Brief History of Time</a></td>
-          <td>Winner</td>
-        </tr>
-        <tr><td>James Gleick</td><td>Chaos</td><td>Finalist</td></tr>
-      </table>
-      <h2>Royal Society Winton Prize for Science Books</h2>
-      <table class="wikitable">
-        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
-        <tr>
-          <td rowspan="3">2015</td>
-          <td>Gaia Vince</td>
-          <td>Adventures in the Anthropocene</td>
-          <td>Winner</td>
-        </tr>
-        <tr><td>Helen Macdonald</td><td>H is for Hawk</td><td>Finalist</td></tr>
-        <tr><td>Henry Marsh</td><td>Do No Harm</td><td></td></tr>
-      </table>
-    </body></html>
-    '''
-
-    parsed = RoyalSocietyScienceBookPrizeWikipediaParser().parse(
-      html,
-      'https://en.wikipedia.org/wiki/Royal_Society_Science_Book_Prize',
-      'Royal Society Trivedi Science Book Prize',
-      'Science Book Prize')
-
-    self.assertEqual(
-      ['A Brief History of Time', 'Chaos',
-       'Adventures in the Anthropocene', 'H is for Hawk', 'Do No Harm'],
-      [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(
-      ['winner', 'shortlisted', 'winner', 'shortlisted', 'shortlisted'],
-      [entry['result'] for entry in parsed['entries']])
-    self.assertEqual(['1988', '1988.01', '2015', '2015.01', '2015.02'], [
-      entry['position'] for entry in parsed['entries']])
-    self.assertEqual(
-      'Royal Society Trivedi Science Book Prize',
-      parsed['entries'][0]['award'])
-    self.assertEqual(
-      'https://en.wikipedia.org/wiki/A_Brief_History_of_Time',
-      parsed['entries'][0]['source_url'])
-
-  def test_royal_society_fetcher_uses_official_then_wikipedia(self):
-    from url_fetcher import available_url_fetchers
-    from url_fetcher.royal_society import (
-      ROYAL_SOCIETY_SCIENCE_BOOK_PRIZE_URL,
-      ROYAL_SOCIETY_SCIENCE_BOOK_PRIZE_WIKIPEDIA_URL,
-      UrlFetcherRoyalSocietyScienceBookPrize,
-    )
-
-    fetcher = UrlFetcherRoyalSocietyScienceBookPrize()
-    official_html = '''
-    <html><body>
-      <article><a href="/medals-and-prizes/science-book-prize/books/2025/our-brains-our-selves/">
-        <h3>Our Brains, Our Selves</h3>
-        <p>Author: Masud Husain</p><p>Shortlist: 2025</p>
-      </a></article>
-    </body></html>
-    '''
-    detail_html = '''
-    <html><body><main><h1>Our Brains, Our Selves</h1>
-    <p>Author: Masud Husain</p><h2>Winner: 2025</h2></main></body></html>
-    '''
-    wikipedia_html = '''
-    <html><body><table>
-      <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
-      <tr><td>1988</td><td>Stephen Hawking</td><td>A Brief History of Time</td><td>Winner</td></tr>
-    </table></body></html>
-    '''
-
-    def fetch_url(url):
-      if url == ROYAL_SOCIETY_SCIENCE_BOOK_PRIZE_URL:
-        return official_html
-      if url == 'https://www.royalsociety.org/medals-and-prizes/science-book-prize/books/2025/our-brains-our-selves/':
-        return detail_html
-      if url == ROYAL_SOCIETY_SCIENCE_BOOK_PRIZE_WIKIPEDIA_URL:
-        return wikipedia_html
-      self.fail(url)
-
-    parsed = fetcher.fetch_and_parse(fetch_url)
-
-    self.assertEqual(['Our Brains, Our Selves'], [
-      entry['title'] for entry in parsed['entries']])
-    self.assertEqual(['winner'], [entry['result'] for entry in parsed['entries']])
-    self.assertFalse(parsed['match_series'])
-    self.assertEqual(
-      (
-        {'label': 'Automatic', 'value': 'automatic'},
-        {'label': 'Official Royal Society', 'value': 0},
-        {'label': 'Wikipedia', 'value': 1},
-      ),
-      fetcher.source_choices())
-    self.assertEqual(
-      {'Nonfiction', 'Regional & National Awards'},
-      {item['label'] for item in fetcher.get_filter_list()})
-
-    fallback = fetcher.fetch_and_parse(fetch_url, force_fallback_level=1)
-
-    self.assertEqual(
-      ROYAL_SOCIETY_SCIENCE_BOOK_PRIZE_WIKIPEDIA_URL,
-      fallback['source_url'])
-    self.assertEqual(['A Brief History of Time'], [
-      entry['title'] for entry in fallback['entries']])
-
-    def failed_official_fetch(url):
-      if url == ROYAL_SOCIETY_SCIENCE_BOOK_PRIZE_URL:
-        return '<html><body>No usable Royal Society rows</body></html>'
-      if url == ROYAL_SOCIETY_SCIENCE_BOOK_PRIZE_WIKIPEDIA_URL:
-        return wikipedia_html
-      self.fail(url)
-
-    with self.assertRaises(Exception):
-      fetcher.fetch_and_parse(failed_official_fetch, disable_fallbacks=True)
-
-    source_ids = [recipe.source_id for recipe in available_url_fetchers()]
-    expected = [
-      'womens_prize_nonfiction',
-      'womens_prize_fiction',
-      'royal_society_science_book_prize',
-      'booker_prize',
-      'international_booker_prize',
-    ]
-    self.assertLess(
-      source_ids.index('kirkus_prize_young_readers_literature'),
-      source_ids.index(expected[0]))
-    self.assertLess(
-      source_ids.index(expected[-1]),
-      source_ids.index('hugo_awards_novel'))
-    self.assertEqual(expected, source_ids[
-      source_ids.index(expected[0]):source_ids.index(expected[-1]) + 1])
-
-  def test_booker_official_parser_extracts_winners_shortlist_and_skips_longlist(self):
-    from parser.booker import BookerPrizeOfficialParser
-
-    html = '''
-    <html><body>
-      <main>
-        <h2>Winner</h2>
-        <article><a href="/the-booker-library/books/orbital">
-          <h3>Orbital</h3><p>By Samantha Harvey</p></a></article>
-        <h2>Shortlist</h2>
-        <article><a href="/the-booker-library/books/orbital">
-          <h3>Orbital</h3><p>By Samantha Harvey</p></a></article>
-        <article><a href="/the-booker-library/books/james">
-          <h3>James</h3><p>By Percival Everett</p></a></article>
-        <h2>Longlist</h2>
-        <article><a href="/the-booker-library/books/wandering-stars">
-          <h3>Wandering Stars</h3><p>By Tommy Orange</p></a></article>
-      </main>
-    </body></html>
-    '''
-    pages = {
-      'https://thebookerprizes.com/the-booker-library/books/orbital': '''
-        <html><body><main><h1>Orbital</h1><p>By Samantha Harvey</p></main></body></html>
-      ''',
-      'https://thebookerprizes.com/the-booker-library/books/james': '''
-        <html><body><main><h1>James</h1><p>By Percival Everett</p></main></body></html>
-      ''',
-    }
-
-    parsed = BookerPrizeOfficialParser('Booker Prize', 'Fiction').parse(
-      html,
-      'https://thebookerprizes.com/the-booker-library/prize-years/2024',
-      'Booker Prize',
-      'Fiction',
-      fetch_url=lambda url: pages[url])
-
-    self.assertEqual(['Orbital', 'James'], [
-      entry['title'] for entry in parsed['entries']])
-    self.assertEqual(['winner', 'shortlisted'], [
-      entry['result'] for entry in parsed['entries']])
-    self.assertEqual(['2024', '2024.01'], [
-      entry['position'] for entry in parsed['entries']])
-    self.assertNotIn('Wandering Stars', [
-      entry['title'] for entry in parsed['entries']])
-    self.assertFalse(parsed['match_series'])
-
-  def test_international_booker_official_parser_strips_translator_credits(self):
-    from parser.booker import BookerPrizeOfficialParser
-
-    html = '''
-    <html><body>
-      <h2>Winner</h2>
-      <article><a href="/the-booker-library/books/heart-lamp">
-        <h3>Heart Lamp</h3><p>By Banu Mushtaq translated by Deepa Bhasthi</p>
-      </a></article>
-      <h2>Shortlist</h2>
-      <article><a href="/the-booker-library/books/the-book-of-disquiet">
-        <h3>The Book of Disquiet</h3><p>Author: Fernando Pessoa | Translated by Margaret Jull Costa</p>
-      </a></article>
-    </body></html>
-    '''
-
-    parsed = BookerPrizeOfficialParser(
-      'International Booker Prize',
-      'Translated Fiction').parse(
-        html,
-        'https://thebookerprizes.com/the-booker-library/prize-years/international/2025',
-        'International Booker Prize',
-        'Translated Fiction')
-
-    self.assertEqual(['Banu Mushtaq', 'Fernando Pessoa'], [
-      entry['author'] for entry in parsed['entries']])
-    self.assertEqual(['winner', 'shortlisted'], [
-      entry['result'] for entry in parsed['entries']])
-
-  def test_booker_wikipedia_parser_maps_shortlists_and_ignores_longlists(self):
-    from parser.booker import BookerPrizeWikipediaParser
-
-    html = '''
-    <html><body>
-      <table class="wikitable">
-        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
-        <tr><td rowspan="3">2024</td><td>Samantha Harvey</td><td><a href="/wiki/Orbital">Orbital</a></td><td>Winner</td></tr>
-        <tr><td>Percival Everett</td><td>James</td><td>Shortlisted</td></tr>
-        <tr><td>Tommy Orange</td><td>Wandering Stars</td><td>Longlisted</td></tr>
-      </table>
-    </body></html>
-    '''
-
-    parsed = BookerPrizeWikipediaParser('Booker Prize', 'Fiction').parse(
-      html,
-      'https://en.wikipedia.org/wiki/List_of_winners_and_nominated_authors_of_the_Booker_Prize',
-      'Booker Prize',
-      'Fiction')
-
-    self.assertEqual(['Orbital', 'James'], [
-      entry['title'] for entry in parsed['entries']])
-    self.assertEqual(['winner', 'shortlisted'], [
-      entry['result'] for entry in parsed['entries']])
-    self.assertEqual(
-      'https://en.wikipedia.org/wiki/Orbital',
-      parsed['entries'][0]['source_url'])
-
-  def test_booker_fetchers_discover_years_and_fall_back(self):
-    from url_fetcher import available_url_fetchers
-    from url_fetcher.booker import (
-      BOOKER_PRIZE_WIKIPEDIA_URL,
-      BOOKER_PRIZE_YEARS_URL,
-      INTERNATIONAL_BOOKER_PRIZE_WIKIPEDIA_URL,
-      UrlFetcherBookerPrize,
-      UrlFetcherInternationalBookerPrize,
-    )
-
-    booker = UrlFetcherBookerPrize()
-    international = UrlFetcherInternationalBookerPrize()
-    index_html = '''
-    <html><body>
-      <a href="/the-booker-library/prize-years/2024">2024 Booker</a>
-      <a href="/the-booker-library/prize-years/international/2025">2025 International</a>
-    </body></html>
-    '''
-    booker_year_html = '''
-    <html><body><h2>Winner</h2>
-      <article><a href="/the-booker-library/books/orbital">
-      <h3>Orbital</h3><p>By Samantha Harvey</p></a></article>
-    </body></html>
-    '''
-    international_year_html = '''
-    <html><body><h2>Winner</h2>
-      <article><a href="/the-booker-library/books/heart-lamp">
-      <h3>Heart Lamp</h3><p>By Banu Mushtaq translated by Deepa Bhasthi</p></a></article>
-    </body></html>
-    '''
-    wikipedia_html = '''
-    <html><body><table>
-      <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
-      <tr><td>2024</td><td>Samantha Harvey</td><td>Orbital</td><td>Winner</td></tr>
-    </table></body></html>
-    '''
-    international_wikipedia_html = '''
-    <html><body><table>
-      <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
-      <tr><td>2025</td><td>Banu Mushtaq</td><td>Heart Lamp</td><td>Winner</td></tr>
-    </table></body></html>
-    '''
-
-    def fetch_url(url):
-      if url == BOOKER_PRIZE_YEARS_URL:
-        return index_html
-      if url == 'https://thebookerprizes.com/the-booker-library/prize-years/2024':
-        return booker_year_html
-      if url == 'https://thebookerprizes.com/the-booker-library/prize-years/international/2025':
-        return international_year_html
-      if url == 'https://thebookerprizes.com/the-booker-library/books/orbital':
-        return '<html><body><main><h1>Orbital</h1><p>By Samantha Harvey</p></main></body></html>'
-      if url == 'https://thebookerprizes.com/the-booker-library/books/heart-lamp':
-        return '<html><body><main><h1>Heart Lamp</h1><p>By Banu Mushtaq translated by Deepa Bhasthi</p></main></body></html>'
-      if url == BOOKER_PRIZE_WIKIPEDIA_URL:
-        return wikipedia_html
-      if url == INTERNATIONAL_BOOKER_PRIZE_WIKIPEDIA_URL:
-        return international_wikipedia_html
-      self.fail(url)
-
-    parsed = booker.fetch_and_parse(fetch_url)
-    self.assertEqual(['Orbital'], [entry['title'] for entry in parsed['entries']])
-    self.assertFalse(parsed['match_series'])
-    self.assertEqual(
-      (
-        {'label': 'Automatic', 'value': 'automatic'},
-        {'label': 'Official Booker', 'value': 0},
-        {'label': 'Wikipedia', 'value': 1},
-      ),
-      booker.source_choices())
-    self.assertEqual(
-      {'Literary & General Fiction', 'Regional & National Awards'},
-      {item['label'] for item in booker.get_filter_list()})
-    self.assertEqual(
-      ['https://thebookerprizes.com/the-booker-library/prize-years/2024'],
-      booker.year_urls(index_html, BOOKER_PRIZE_YEARS_URL))
-    self.assertEqual(
-      ['https://thebookerprizes.com/the-booker-library/prize-years/international/2025'],
-      international.year_urls(index_html, BOOKER_PRIZE_YEARS_URL))
-
-    fallback = international.fetch_and_parse(fetch_url, force_fallback_level=1)
-    self.assertEqual(INTERNATIONAL_BOOKER_PRIZE_WIKIPEDIA_URL, fallback['source_url'])
-    self.assertEqual(['Heart Lamp'], [
-      entry['title'] for entry in fallback['entries']])
-
-    source_ids = [recipe.source_id for recipe in available_url_fetchers()]
-    expected = [
-      'royal_society_science_book_prize',
-      'booker_prize',
-      'international_booker_prize',
-    ]
-    self.assertEqual(expected, source_ids[
-      source_ids.index(expected[0]):source_ids.index(expected[-1]) + 1])
-
-  def test_governor_general_official_json_parser_handles_core_categories(self):
-    from parser.governor_general import GovernorGeneralAwardsParser
-
-    payload = json.dumps({
-      '1942': {
-        'nonFiction': {
-          'en': {
-            'finalists': [
-              {
-                'title': 'The Unknown Country',
-                'author': 'Bruce Hutchison',
-                'publisher': 'Coward-McCann',
-                'winner': True,
-              },
-              {
-                'title': 'The Unguarded Frontier',
-                'author': 'Edgar McInnis',
-                'publisher': 'Doubleday',
-                'winner': True,
-              },
-            ],
-          },
-        },
-      },
-      '1956': {
-        'juvenile': {
-          'en': {
-            'finalists': [
-              {
-                'title': 'Lost in the Barrens',
-                'author': 'Farley Mowat',
-                'publisher': 'Little, Brown & Co.',
-                'winner': True,
-              },
-            ],
-          },
-        },
-      },
-      '2024': {
-        'fiction': {
-          'en': {
-            'finalists': [
-              {
-                'title': 'Code Noir',
-                'author': 'Canisia Lubrin (Whitby, Ontario)',
-                'publisher': 'Knopf Canada',
-                'winner': False,
-              },
-              {
-                'title': 'Empty Spaces',
-                'author': 'Jordan Abel (Edmonton, Alberta)',
-                'publisher': 'McClelland & Stewart',
-                'winner': True,
-              },
-            ],
-          },
-          'fr': {
-            'finalists': [
-              {
-                'title': 'Lait cru',
-                'author': 'Steve Poutré',
-                'publisher': 'Éditions Alto',
-                'winner': True,
-              },
-            ],
-          },
-        },
-      },
-    })
-
-    fiction = GovernorGeneralAwardsParser('English Fiction', ('fiction',)).parse(
-      payload,
-      'https://ggbooks.ca/Areas/GGBooks/json/ggbooks-data-compressed.json',
-      "Governor General's Literary Award - English Fiction")
-    nonfiction = GovernorGeneralAwardsParser(
-      'English Non-fiction',
-      ('nonFiction',)).parse(
-        payload,
-        'https://ggbooks.ca/Areas/GGBooks/json/ggbooks-data-compressed.json',
-        "Governor General's Literary Award - English Non-fiction")
-    juvenile = GovernorGeneralAwardsParser(
-      "English Young People's Literature - Text",
-      ('youngPeoplesLiteratureText', 'juvenile')).parse(
-        payload,
-        'https://ggbooks.ca/Areas/GGBooks/json/ggbooks-data-compressed.json',
-        "Governor General's Literary Award - English Young People's Literature - Text")
-
-    self.assertEqual(['Empty Spaces', 'Code Noir'], [
-      entry['title'] for entry in fiction['entries']])
-    self.assertEqual(['Jordan Abel', 'Canisia Lubrin'], [
-      entry['author'] for entry in fiction['entries']])
-    self.assertEqual(['winner', 'shortlisted'], [
-      entry['result'] for entry in fiction['entries']])
-    self.assertEqual(['2024', '2024.01'], [
-      entry['position'] for entry in fiction['entries']])
-    self.assertEqual(['1942', '1942'], [
-      entry['position'] for entry in nonfiction['entries']])
-    self.assertEqual(['Lost in the Barrens'], [
-      entry['title'] for entry in juvenile['entries']])
-
-  def test_governor_general_fetchers_discover_json_and_supplement_current_year(self):
-    from url_fetcher import available_url_fetchers
-    from url_fetcher.governor_general import (
-      DEFAULT_JSON_URL,
-      GOVERNOR_GENERAL_2025_PRESS_URL,
-      GOVERNOR_GENERAL_2025_WIKIPEDIA_URL,
-      GOVERNOR_GENERAL_ARCHIVE_URL,
-      UrlFetcherGovernorGeneralEnglishFiction,
-      UrlFetcherGovernorGeneralEnglishNonfiction,
-      UrlFetcherGovernorGeneralEnglishYoungPeoplesText,
-    )
-
-    archive_html = '''
-      <html><body>
-        <div data-ux-module="Components/Archives20250923"></div>
-      </body></html>
-    '''
-    component_js = '''
-      define(["jquery"], function ($) {
-        $.getJSON("/Areas/GGBooks/json/ggbooks-data-compressed-2025-09-18.json", function () {});
-      });
-    '''
-    official_json = json.dumps({
-      '2024': {
-        'fiction': {
-          'en': {
-            'finalists': [
-              {
-                'title': 'Empty Spaces',
-                'author': 'Jordan Abel (Edmonton, Alberta)',
-                'publisher': 'McClelland & Stewart',
-                'winner': True,
-              },
-            ],
-          },
-        },
-      },
-    })
-    supplement_html = '''
-      <html><body>
-        <h2>English Fiction</h2>
-        <table>
-          <tr><th>Author</th><th>Title</th><th>Result</th></tr>
-          <tr><td>Kyle Edwards</td><td>Small Ceremonies</td><td>Winner</td></tr>
-          <tr><td>Claire Cameron</td><td>How to Survive a Bear Attack</td><td>Finalist</td></tr>
-        </table>
-      </body></html>
-    '''
-    press_html = '<html><body><h1>2025 GGBooks winners revealed</h1></body></html>'
-
-    def fetch_url(url):
-      if url == GOVERNOR_GENERAL_ARCHIVE_URL:
-        return archive_html
-      if url == 'https://ggbooks.ca/Areas/GGBooks/js/Components/Archives20250923.js':
-        return component_js
-      if url == 'https://ggbooks.ca/Areas/GGBooks/json/ggbooks-data-compressed-2025-09-18.json':
-        return official_json
-      if url == DEFAULT_JSON_URL:
-        return official_json
-      if url == GOVERNOR_GENERAL_2025_WIKIPEDIA_URL:
-        return supplement_html
-      if url == GOVERNOR_GENERAL_2025_PRESS_URL:
-        return press_html
-      self.fail(url)
-
-    fiction = UrlFetcherGovernorGeneralEnglishFiction()
-    parsed = fiction.fetch_and_parse(fetch_url)
-
-    self.assertEqual([
-      'Empty Spaces',
-      'Small Ceremonies',
-      'How to Survive a Bear Attack',
-    ], [entry['title'] for entry in parsed['entries']])
-    self.assertEqual(['2024', '2025', '2025.01'], [
-      entry['position'] for entry in parsed['entries']])
-    self.assertEqual(
-      'https://ggbooks.ca/Areas/GGBooks/json/ggbooks-data-compressed-2025-09-18.json',
-      parsed['source_url'])
-    self.assertFalse(parsed['match_series'])
-    self.assertTrue(any('official GGBooks JSON lacked 2025' in note
-                        for note in parsed['notes']))
-    self.assertEqual(
-      ({'label': 'Automatic', 'value': 'automatic'},),
-      fiction.source_choices())
-
-    nonfiction = UrlFetcherGovernorGeneralEnglishNonfiction()
-    ypl = UrlFetcherGovernorGeneralEnglishYoungPeoplesText()
-    self.assertEqual(
-      {'Literary & General Fiction', 'Regional & National Awards'},
-      {item['label'] for item in fiction.get_filter_list()})
-    self.assertEqual(
-      {'Nonfiction', 'Regional & National Awards'},
-      {item['label'] for item in nonfiction.get_filter_list()})
-    self.assertEqual(
-      {"Young Adult & Children's Literature", 'Regional & National Awards'},
-      {item['label'] for item in ypl.get_filter_list()})
-
-    source_ids = [recipe.source_id for recipe in available_url_fetchers()]
-    expected = [
-      'booker_prize',
-      'international_booker_prize',
-      'governor_general_literary_award_english_fiction',
-      'governor_general_literary_award_english_nonfiction',
-      'governor_general_literary_award_english_young_peoples_text',
-    ]
-    self.assertEqual(expected, source_ids[
-      source_ids.index(expected[0]):source_ids.index(expected[-1]) + 1])
-
-  def test_pen_fetcher_metadata_and_registration_order(self):
-    from url_fetcher import available_url_fetchers
-    from url_fetcher.pen_america import (
-      UrlFetcherPENDiamonsteinSpielvogelAward,
-      UrlFetcherPENGalbraithAward,
-      UrlFetcherPENJeanSteinBookAward,
-      UrlFetcherPENOpenBookAward,
-    )
-    from url_fetcher.pen_faulkner_foundation import (
-      UrlFetcherPENFaulknerAward,
-      UrlFetcherPENHemingwayAward,
-    )
-
-    fetchers = (
-      UrlFetcherPENGalbraithAward(),
-      UrlFetcherPENDiamonsteinSpielvogelAward(),
-      UrlFetcherPENJeanSteinBookAward(),
-      UrlFetcherPENOpenBookAward(),
-      UrlFetcherPENFaulknerAward(),
-      UrlFetcherPENHemingwayAward(),
-    )
-
-    for fetcher in fetchers:
-      self.assertFalse(fetcher.options['match_series'])
-      self.assertEqual(
-        ({'label': 'Automatic', 'value': 'automatic'},),
-        fetcher.source_choices())
-
-    self.assertEqual(
-      {'Nonfiction', 'Regional & National Awards'},
-      {item['label'] for item in fetchers[0].get_filter_list()})
-    self.assertEqual(
-      {'Nonfiction', 'Regional & National Awards'},
-      {item['label'] for item in fetchers[1].get_filter_list()})
-    self.assertEqual(
-      {'Nonfiction', 'Literary & General Fiction', 'Regional & National Awards'},
-      {item['label'] for item in fetchers[2].get_filter_list()})
-    self.assertEqual(
-      {'Nonfiction', 'Literary & General Fiction', 'Regional & National Awards'},
-      {item['label'] for item in fetchers[3].get_filter_list()})
-    self.assertEqual(
-      {'Literary & General Fiction', 'Regional & National Awards'},
-      {item['label'] for item in fetchers[4].get_filter_list()})
-
-    source_ids = [recipe.source_id for recipe in available_url_fetchers()]
-    expected = [
-      'pen_galbraith_award_nonfiction',
-      'pen_diamonstein_spielvogel_award_essay',
-      'pen_jean_stein_book_award',
-      'pen_open_book_award',
-      'pen_faulkner_award_fiction',
-      'pen_hemingway_award_debut_novel',
-    ]
-    self.assertLess(
-      source_ids.index('nbcc_award_criticism'),
-      source_ids.index(expected[0]))
-    self.assertLess(
-      source_ids.index(expected[-1]),
-      source_ids.index('hugo_awards_novel'))
-    self.assertEqual(expected, source_ids[
-      source_ids.index(expected[0]):source_ids.index(expected[-1]) + 1])
-
-  def test_wwend_award_parser_base_handles_link_stream_dom_variation(self):
-    from parser.wwend_base import WWEndAwardParserBase
-
-    parser = WWEndAwardParserBase()
-    parser.AWARD_NAME = 'Smoke WWEnd Award'
-    html = '''
-      <nav>
-        <a href="#2025">2025</a>
-        <a href="#2024">2024</a>
-      </nav>
-      <section>
-        <h2><a href="#year-2025">2025</a></h2>
-        <div class="winner">
-          <a data-id="title" href="/books/novel.asp?id=100">
-            The <span>Nested <em>Winner</em></span>
-          </a>
-          <span class="wrapper">
-            <a href="/authors/author.asp?id=10">Nested <strong>Author</strong></a>
-          </span>
-        </div>
-        <div class="nominee">
-          <a href="/books/novel.asp?id=101">Second Book</a>
-          <a href="/authors/author.asp?id=11">Second Author</a>
-        </div>
-      </section>
-      <section><a href="#year-2024">2024</a></section>
-    '''
-
-    parsed = parser.parse(
-      html, 'https://www.worldswithoutend.com/awards.asp',
-      'Smoke WWEnd - Novel', 'Novel')
-
-    self.assertEqual(['The Nested Winner', 'Second Book'], [
-      entry['title'] for entry in parsed['entries']
-    ])
-    self.assertEqual(['winner', 'nominee'], [
-      entry['result'] for entry in parsed['entries']
-    ])
-    self.assertEqual(
-      'https://www.worldswithoutend.com/books/novel.asp?id=100',
-      parsed['entries'][0]['source_url'])
-
-  def test_bookbrowse_book_club_parser_base_handles_heading_dom_variation(self):
-    from parser.bookbrowse_base import BookBrowseBookClubParserBase
-
-    parser = BookBrowseBookClubParserBase()
-    html = '''
-      <main>
-        <h2>More 2025 Book Club Discussions</h2>
-        <div class="wrapper">
-          <h3>
-            <a data-kind="discussion" href="/bookclubs/discuss-the-nested-book">
-              The <span>Nested <em>Novel</em></span>
-              by
-              <strong>Nested Writer</strong>
-            </a>
-            : BookBrowse Book Club
-          </h3>
-        </div>
-        <h3>Forum Guidelines</h3>
-        <h2>2024 Book Discussions</h2>
-        <h3>
-          A Title by Somebody by Second Writer Discussion
-        </h3>
-      </main>
-    '''
-
-    parsed = parser.parse(
-      html, 'https://www.bookbrowse.com/bookclubs/',
-      'BookBrowse Online Book Club')
-
-    self.assertEqual(['The Nested Novel', 'A Title by Somebody'], [
-      entry['title'] for entry in parsed['entries']
-    ])
-    self.assertEqual(['Nested Writer', 'Second Writer'], [
-      entry['author'] for entry in parsed['entries']
-    ])
-    self.assertEqual(['2025', '2024'], [
-      entry['discussion_year'] for entry in parsed['entries']
-    ])
-    self.assertEqual(
-      'https://www.bookbrowse.com/bookclubs/discuss-the-nested-book',
-      parsed['entries'][0]['source_url'])
-    self.assertNotIn('source_url', parsed['entries'][1])
-
-  def test_edgar_awards_parser_handles_table_dom_variation(self):
-    from parser.edgar import EdgarAwardsParser
-
-    parser = EdgarAwardsParser()
-    html = '''
-      <p>Total Records Found: 2</p>
-      <table class="awards">
-        <tr>
-          <th><span>Award Year</span></th>
-          <th>Award Category</th>
-          <th>Title</th>
-          <th>Author's Name</th>
-        </tr>
-        <tr>
-          <td>2025</td>
-          <td>Best Novel</td>
-          <td>
-            <strong>
-              <span>The <em>Nested</em> Mystery</span>
-            </strong>
-          </td>
-          <td><span>Winner <strong>Writer</strong></span></td>
-        </tr>
-        <tr>
-          <td>2025</td>
-          <td>Best Novel</td>
-          <td><span>Finalist <em>Book</em></span></td>
-          <td>Finalist Writer</td>
-        </tr>
-      </table>
-    '''
-
-    parsed = parser.parse(
-      html,
-      'https://edgarawards.com/category-list-best-novel/',
-      'Edgar Award - Novel',
-      'Best Novel')
-
-    self.assertEqual(['The Nested Mystery', 'Finalist Book'], [
-      entry['title'] for entry in parsed['entries']
-    ])
-    self.assertEqual(['winner', 'nominee'], [
-      entry['result'] for entry in parsed['entries']
-    ])
-    self.assertEqual(['2025', '2025.01'], [
-      entry['position'] for entry in parsed['entries']
-    ])
-
-  def test_cwa_dagger_parser_handles_card_dom_variation(self):
-    from parser.cwa import CWADaggerParser
-
-    parser = CWADaggerParser()
-    html = '''
-      <article>
-        <a data-award="gold" href="/past-winners/nested-mystery">
-          <span class="book-title">The <em>Nested</em> Mystery</span>
-          <span class="book-author">Winner Writer tr. Translator Name</span>
-          <span>2025 | Winner Gold Dagger</span>
-        </a>
-      </article>
-      <nav><a rel="nofollow next" href="/past-winners/page/2/">Next</a></nav>
-    '''
-
-    parsed = parser.parse(
-      html,
-      'https://thecwa.co.uk/past-winners/?past_winners_awards[]=gold',
-      'CWA Dagger - Gold Dagger',
-      'Gold Dagger')
-
-    self.assertEqual(['The Nested Mystery'], [
-      entry['title'] for entry in parsed['entries']
-    ])
-    self.assertEqual(['Winner Writer'], [
-      entry['author'] for entry in parsed['entries']
-    ])
-    self.assertEqual(['winner'], [
-      entry['result'] for entry in parsed['entries']
-    ])
-    self.assertEqual(
-      'https://thecwa.co.uk/past-winners/nested-mystery',
-      parsed['entries'][0]['source_url'])
-    self.assertEqual(
-      'https://thecwa.co.uk/past-winners/page/2/',
-      parser.next_page_url(html, 'https://thecwa.co.uk/past-winners/'))
-
   def test_isfdb_award_parser_base_smoke(self):
     from parser.isfdb_base import ISFDBAwardParserBase
 
@@ -7147,51 +4676,6 @@ class AwardParserSmokeTest(unittest.TestCase):
     self.assertTrue(all(
       entry['source_url'].startswith('https://www.isfdb.org/cgi-bin/title.cgi?')
       for entry in parsed['entries']))
-
-  def test_isfdb_award_parser_base_handles_dom_variation(self):
-    from parser.isfdb_base import ISFDBAwardParserBase
-
-    parser = ISFDBAwardParserBase()
-    parser.AWARD_NAME = 'Smoke ISFDB Award'
-    html = '''
-      <table>
-        <tr>
-          <th>Level</th>
-          <th><span>Title</span></th>
-          <th>Author's Name</th>
-          <th>Award Year</th>
-        </tr>
-        <tr>
-          <td>Winner</td>
-          <td>
-            <div class="record">
-              <a data-extra="kept-out-of-title" href="/cgi-bin/title.cgi?99">
-                The <span>Nested <em>Book</em></span>
-              </a>
-              <span class="note">Award Record # 123</span>
-            </div>
-          </td>
-          <td><span>Nested <strong>Writer</strong></span></td>
-          <td>2025</td>
-        </tr>
-      </table>
-    '''
-
-    parsed = parser.parse(
-      html,
-      'https://www.isfdb.org/cgi-bin/awardtype.cgi?1',
-      'Smoke ISFDB - Novel',
-      'Novel')
-
-    self.assertEqual(['The Nested Book'], [
-      entry['title'] for entry in parsed['entries']
-    ])
-    self.assertEqual(['Nested Writer'], [
-      entry['author'] for entry in parsed['entries']
-    ])
-    self.assertEqual(
-      'https://www.isfdb.org/cgi-bin/title.cgi?99',
-      parsed['entries'][0]['source_url'])
 
   def test_isfdb_fallback_smoke_uses_saved_scraps(self):
     from url_fetcher.prometheus import UrlFetcherPrometheusNovel
@@ -7469,6 +4953,6331 @@ class AwardParserSmokeTest(unittest.TestCase):
     self.assertEqual(['The Last Word', 'Everybody Knows'], [
       entry['title'] for entry in parsed['entries']
     ])
+
+  def test_governor_general_young_peoples_fetchers_parse_language_buckets(self):
+    from parser.base import (
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+      CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+    )
+    from url_fetcher.governor_general import (
+      UrlFetcherGovernorGeneralEnglishYoungPeoplesIllustratedBooks,
+      UrlFetcherGovernorGeneralFrenchYoungPeoplesText,
+    )
+
+    data = json.dumps({
+      '2024': {
+        'youngPeoplesLiteratureText': {
+          'en': {'finalists': [{
+            'title': 'Crash Landing',
+            'author': 'Li Charmaine Anne',
+            'winner': True,
+          }]},
+          'fr': {'finalists': [{
+            'title': 'Une bulle en dehors du temps',
+            'author': 'Stefani Meunier',
+            'winner': True,
+          }, {
+            'title': 'Carreaute Kid',
+            'author': 'Marc-Andre Dufour-Labbe',
+            'winner': False,
+          }]},
+        },
+        'youngPeoplesLiteratureIllustratedBooks': {
+          'en': {'finalists': [{
+            'title': 'This Land Is a Lullaby',
+            'author': 'Tonya Simpson, Delree Dumont',
+            'winner': True,
+          }]},
+          'fr': {'finalists': [{
+            'title': 'Le premier arbre de Noel',
+            'author': 'Ovila Fontaine, Charlotte Parent',
+            'winner': True,
+          }]},
+        },
+      },
+    })
+
+    french_text = UrlFetcherGovernorGeneralFrenchYoungPeoplesText()
+    english_illustrated = UrlFetcherGovernorGeneralEnglishYoungPeoplesIllustratedBooks()
+
+    parsed_text = french_text.parse(data)
+    parsed_illustrated = english_illustrated.parse(data)
+    filters = [item['label'] for item in french_text.get_filter_list()]
+
+    self.assertEqual([
+      ('2024', 'Une bulle en dehors du temps', 'Stefani Meunier', 'winner'),
+      ('2024.01', 'Carreaute Kid', 'Marc-Andre Dufour-Labbe', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed_text['entries']
+    ])
+    self.assertEqual(['This Land Is a Lullaby'], [
+      entry['title'] for entry in parsed_illustrated['entries']
+    ])
+    self.assertTrue(all(
+      entry['category'] == "French Young People's Literature - Text"
+      for entry in parsed_text['entries']))
+    self.assertIn(CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE, filters)
+    self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+    self.assertFalse(french_text.options['match_series'])
+
+  def test_governor_general_supplement_parses_annual_language_tables(self):
+    from parser.governor_general import GovernorGeneralSupplementParser
+
+    html = '''
+      <h2>English</h2>
+      <table>
+        <tr><th>Category</th><th>Winner</th><th>Nominated</th></tr>
+        <tr>
+          <td>Children's illustration</td>
+          <td>Tonya Simpson and Delree Dumont, This Land Is a Lullaby</td>
+          <td>Guojing, Oasis<br />Sid Sharp, Bog Myrtle</td>
+        </tr>
+      </table>
+      <h2>French</h2>
+      <table>
+        <tr><th>Category</th><th>Winner</th><th>Nominated</th></tr>
+        <tr>
+          <td>Children's illustration</td>
+          <td>Stephane Laporte and Jacques Goldstyn, Un cadeau de Noel en novembre</td>
+          <td>Jocelyn Boisvert and Enzo, Le livre aspirateur<br />Charlotte Parent, Murielle et le mystere</td>
+        </tr>
+      </table>
+    '''
+
+    parsed = GovernorGeneralSupplementParser(
+      "French Young People's Literature - Illustrated Books",
+      ('youngPeoplesLiteratureIllustratedBooks',),
+      'fr').parse(
+        html,
+        'https://en.wikipedia.org/wiki/2025_Governor_General%27s_Awards',
+        "Governor General's Literary Award - French Young People's Literature - Illustrated Books",
+        year='2025')
+
+    self.assertEqual([
+      ('2025', 'Un cadeau de Noel en novembre', 'Stephane Laporte and Jacques Goldstyn', 'winner'),
+      ('2025.01', 'Le livre aspirateur', 'Jocelyn Boisvert and Enzo', 'shortlisted'),
+      ('2025.02', 'Murielle et le mystere', 'Charlotte Parent', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(
+      entry['category'] == "French Young People's Literature - Illustrated Books"
+      for entry in parsed['entries']))
+
+  def test_giller_wikipedia_parser_imports_winners_and_shortlists_only(self):
+    from parser.giller import GillerWikipediaParser
+
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Jury</th><th>Author</th><th>Book</th><th>Result</th><th>Ref.</th></tr>
+        <tr>
+          <td rowspan="8">2024</td>
+          <td rowspan="8">Juror One<br />Juror Two</td>
+          <td><a href="/wiki/Anne_Michaels">Anne Michaels</a></td>
+          <td><a href="/wiki/Held">Held</a></td>
+          <td>Winner</td>
+          <td>[1]</td>
+        </tr>
+        <tr>
+          <td>Conor Kerr</td>
+          <td>Prairie Edge</td>
+          <td rowspan="2">Shortlist</td>
+          <td>[2]</td>
+        </tr>
+        <tr>
+          <td>Anne Fleming</td>
+          <td>Curiosities</td>
+          <td>[2]</td>
+        </tr>
+        <tr>
+          <td>Author Long</td>
+          <td>Longlisted Book</td>
+          <td>Longlist</td>
+          <td>[3]</td>
+        </tr>
+        <tr>
+          <td>Author Also Long</td>
+          <td>Another Longlisted Book</td>
+          <td>[3]</td>
+        </tr>
+      </table>
+    '''
+
+    parsed = GillerWikipediaParser().parse(
+      html, 'https://en.wikipedia.org/wiki/Giller_Prize')
+
+    self.assertEqual(['Held', 'Prairie Edge', 'Curiosities'], [
+      entry['title'] for entry in parsed['entries']
+    ])
+    self.assertEqual(['winner', 'shortlisted', 'shortlisted'], [
+      entry['result'] for entry in parsed['entries']
+    ])
+    self.assertEqual(['2024', '2024.01', '2024.02'], [
+      entry['position'] for entry in parsed['entries']
+    ])
+    self.assertTrue(all(entry['category'] == 'Fiction' for entry in parsed['entries']))
+
+  def test_giller_wikipedia_parser_preserves_tied_winner_positions(self):
+    from parser.giller import GillerWikipediaParser
+
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Jury</th><th>Author</th><th>Book</th><th>Result</th><th>Ref.</th></tr>
+        <tr>
+          <td rowspan="3">2000</td>
+          <td rowspan="3">Juror One</td>
+          <td>Michael Ondaatje</td>
+          <td>Anil's Ghost</td>
+          <td rowspan="2">Winner</td>
+          <td>[1]</td>
+        </tr>
+        <tr>
+          <td>David Adams Richards</td>
+          <td>Mercy Among the Children</td>
+          <td>[1]</td>
+        </tr>
+        <tr>
+          <td>Alan Cumyn</td>
+          <td>Burridge Unbound</td>
+          <td>Shortlist</td>
+          <td>[2]</td>
+        </tr>
+      </table>
+    '''
+
+    parsed = GillerWikipediaParser().parse(
+      html, 'https://en.wikipedia.org/wiki/Giller_Prize')
+
+    self.assertEqual(
+      ['Anil\'s Ghost', 'Mercy Among the Children', 'Burridge Unbound'],
+      [entry['title'] for entry in parsed['entries']])
+    self.assertEqual(['2000', '2000', '2000.01'], [
+      entry['position'] for entry in parsed['entries']
+    ])
+
+  def test_giller_fetcher_metadata_and_parse_smoke(self):
+    from parser.base import (
+      CATEGORY_LITERARY_GENERAL_FICTION,
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+    )
+    from url_fetcher.giller import UrlFetcherGillerPrize
+
+    fetcher = UrlFetcherGillerPrize()
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Jury</th><th>Author</th><th>Book</th><th>Result</th><th>Ref.</th></tr>
+        <tr>
+          <td>2024</td>
+          <td>Juror One</td>
+          <td>Anne Michaels</td>
+          <td>Held</td>
+          <td>Winner</td>
+          <td>[1]</td>
+        </tr>
+      </table>
+    '''
+
+    parsed = fetcher.fetch_and_parse(lambda url: html)
+    filters = [item['label'] for item in fetcher.get_filter_list()]
+
+    self.assertEqual('Giller Prize', parsed['name'])
+    self.assertEqual(['Held'], [entry['title'] for entry in parsed['entries']])
+    self.assertFalse(parsed['match_series'])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+    self.assertIn(CATEGORY_LITERARY_GENERAL_FICTION, filters)
+    self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+
+  def test_goldsmiths_official_parser_discovers_modern_and_legacy_archive_pages(self):
+    from parser.goldsmiths import OFFICIAL_URL, GoldsmithsOfficialParser
+
+    index_html = '''
+      <h2>2025 winner: We Live Here Now by C.D. Rose</h2>
+      <p><a href="/goldsmiths-prize/archive/prize-2025/">More about 2025</a></p>
+      <h2>2013 winner: A Girl is a Half-formed Thing by Eimear McBride</h2>
+      <p><a href="/goldsmiths-prize/prize2013/">More about 2013</a></p>
+    '''
+    modern_url = 'https://www.gold.ac.uk/goldsmiths-prize/archive/prize-2025/'
+    legacy_url = 'https://www.gold.ac.uk/goldsmiths-prize/prize2013/'
+    pages = {
+      modern_url: '''
+        <article class="prize-teaser media">
+          <a href="/goldsmiths-prize/archive/prize-2025/we-live-here-now/">
+            <h3 class="book_name teaser-title"><span>We Live Here Now</span></h3>
+            <div class="book_author"><p>C. D. Rose</p></div>
+            <div class="book_publisher"><p>Melville House</p></div>
+          </a>
+        </article>
+        <article class="prize-teaser media">
+          <h3 class="book_name teaser-title"><span>We Pretty Pieces of Flesh</span></h3>
+          <div class="book_author"><p>Colwill Brown</p></div>
+          <div class="book_publisher"><p>Chatto &amp; Windus</p></div>
+        </article>
+      ''',
+      legacy_url: '''
+        <html><head><title>The Goldsmiths Prize 2013</title></head><body>
+          <article class="prize-teaser media">
+            <h3 class="book_name teaser-title">A Girl is a Half-formed Thing</h3>
+            <div class="book_author"><p>Eimear McBride</p></div>
+            <div class="book_publisher"><p>Galley Beggar Press</p></div>
+          </article>
+          <article class="prize-teaser media">
+            <h3 class="book_name teaser-title">Harvest</h3>
+            <div class="book_author"><p>Jim Crace</p></div>
+            <div class="book_publisher"><p>Picador</p></div>
+          </article>
+        </body></html>
+      ''',
+    }
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      return pages[url]
+
+    parsed = GoldsmithsOfficialParser().parse(
+      index_html, OFFICIAL_URL, fetch_url=fetch_url)
+
+    self.assertEqual([legacy_url, modern_url], fetched)
+    self.assertEqual([
+      ('2013', 'A Girl is a Half-formed Thing', 'Eimear McBride', 'winner'),
+      ('2013.01', 'Harvest', 'Jim Crace', 'shortlisted'),
+      ('2025', 'We Live Here Now', 'C. D. Rose', 'winner'),
+      ('2025.01', 'We Pretty Pieces of Flesh', 'Colwill Brown', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(entry['category'] == 'Novel' for entry in parsed['entries']))
+    self.assertTrue(all('publisher' not in entry for entry in parsed['entries']))
+
+  def test_goldsmiths_official_parser_notes_individual_year_page_failures(self):
+    from parser.goldsmiths import GoldsmithsOfficialParser
+
+    index_html = '''
+      <h2>2025 winner: We Live Here Now by C.D. Rose</h2>
+      <p><a href="/goldsmiths-prize/archive/prize-2025/">More about 2025</a></p>
+      <h2>2024 winner: The Vulnerables by Sigrid Nunez</h2>
+      <p><a href="/goldsmiths-prize/archive/prize-2024/">More about 2024</a></p>
+    '''
+    ok_url = 'https://www.gold.ac.uk/goldsmiths-prize/archive/prize-2025/'
+
+    def fetch_url(url):
+      if url == ok_url:
+        return '''
+          <article class="prize-teaser media">
+            <h3 class="book_name teaser-title">We Live Here Now</h3>
+            <div class="book_author"><p>C.D. Rose</p></div>
+          </article>
+        '''
+      raise RuntimeError('HTTP 500')
+
+    parsed = GoldsmithsOfficialParser().parse(
+      index_html,
+      'https://www.gold.ac.uk/goldsmiths-prize/archive/',
+      fetch_url=fetch_url)
+
+    self.assertIn('We Live Here Now', [entry['title'] for entry in parsed['entries']])
+    self.assertTrue(any(
+      'archive page could not be fetched' in note and 'prize-2024' in note
+      for note in parsed['notes']))
+
+  def test_goldsmiths_wikipedia_parser_reads_rowspanned_highlighted_winners(self):
+    from parser.goldsmiths import GoldsmithsWikipediaParser
+
+    html = '''
+      <table>
+        <caption>Shortlisted and winning books (2013-2025)</caption>
+        <tr><th>Year</th><th>Author</th><th>Novel</th><th>Publisher</th><th>Notes</th></tr>
+        <tr>
+          <th rowspan="2">2025</th>
+          <td style="background:lightyellow">CD Rose</td>
+          <td style="background:lightyellow"><i><a href="/wiki/We_Live_Here_Now">We Live Here Now</a></i></td>
+          <td style="background:lightyellow">Melville House</td>
+          <td rowspan="2">Winner marked with ribbon.</td>
+        </tr>
+        <tr>
+          <td>Colwill Brown</td>
+          <td><i>We Pretty Pieces of Flesh</i></td>
+          <td>Chatto &amp; Windus</td>
+        </tr>
+      </table>
+    '''
+
+    parsed = GoldsmithsWikipediaParser().parse(
+      html, 'https://en.wikipedia.org/wiki/Goldsmiths_Prize')
+
+    self.assertEqual([
+      ('2025', 'We Live Here Now', 'CD Rose', 'winner'),
+      ('2025.01', 'We Pretty Pieces of Flesh', 'Colwill Brown', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+
+  def test_goldsmiths_fetcher_metadata_and_fallback(self):
+    from parser.base import (
+      CATEGORY_LITERARY_GENERAL_FICTION,
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+    )
+    from url_fetcher.goldsmiths import UrlFetcherGoldsmithsPrize
+
+    fetcher = UrlFetcherGoldsmithsPrize()
+    official_html = '<html><title>Goldsmiths Prize archive</title></html>'
+    wiki_html = '''
+      <table>
+        <caption>Shortlisted and winning books</caption>
+        <tr><th>Year</th><th>Author</th><th>Novel</th><th>Publisher</th><th>Notes</th></tr>
+        <tr style="background:lightyellow">
+          <td>2025</td><td>CD Rose</td><td>We Live Here Now</td><td>Melville House</td><td></td>
+        </tr>
+      </table>
+    '''
+    calls = []
+
+    def fetch_url(url):
+      calls.append(url)
+      if url == fetcher.URL:
+        return official_html
+      if url == fetcher.WIKIPEDIA_URL:
+        return wiki_html
+      self.fail(url)
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+    filters = [item['label'] for item in fetcher.get_filter_list()]
+
+    self.assertEqual('Goldsmiths Prize', fetcher.NAME)
+    self.assertEqual('goldsmiths_prize', fetcher.source_id)
+    self.assertEqual(242, fetcher.order)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual((
+      {'label': 'Automatic', 'value': 'automatic'},
+      {'label': 'Goldsmiths', 'value': 0},
+      {'label': 'Wikipedia', 'value': 1},
+    ), fetcher.source_choices())
+    self.assertIn(CATEGORY_LITERARY_GENERAL_FICTION, filters)
+    self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+    self.assertEqual(['We Live Here Now'], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual([fetcher.URL, fetcher.WIKIPEDIA_URL], calls)
+    self.assertFalse(parsed['match_series'])
+    with self.assertRaises(Exception):
+      fetcher.fetch_and_parse(fetch_url, disable_fallbacks=True)
+
+  def test_national_book_critics_circle_official_parser_categories_and_scope(self):
+    from parser.national_book_critics_circle import (
+      NationalBookCriticsCircleOfficialParser,
+    )
+
+    html = '''
+      <main>
+        <h1>2025 NBCC Awards</h1>
+        <h2>Fiction</h2>
+        <h3>Winner</h3>
+        <p>Percival Everett <a href="/books/james">James</a></p>
+        <h3>Finalists</h3>
+        <p>Rachel Kushner <a href="/books/creation-lake">Creation Lake</a></p>
+        <h3>Longlist</h3>
+        <p>Long Writer <a href="/books/long-fiction">Long Fiction</a></p>
+        <h2>Nonfiction</h2>
+        <h3>Winner</h3>
+        <p>Adam Higginbotham <a href="/books/challenger">Challenger</a></p>
+        <h2>Biography</h2>
+        <h3>Winner</h3>
+        <p>Jonathan Eig <a href="/books/king">King: A Life</a></p>
+        <h2>Memoir/Autobiography</h2>
+        <h3>Winner</h3>
+        <p>Safiya Sinclair <a href="/books/how-to-say-babylon">How to Say Babylon</a></p>
+        <h2>Poetry</h2>
+        <h3>Winner</h3>
+        <p>Craig Santos Perez <a href="/books/from-unincorporated-territory">from unincorporated territory [åmot]</a></p>
+        <h2>Criticism</h2>
+        <h3>Winner</h3>
+        <p>Lauren Michele Jackson <a href="/books/white-negroes">White Negroes</a></p>
+        <h2>John Leonard Prize</h2>
+        <h3>Winner</h3>
+        <p>Isabella Hammad <a href="/books/the-parisian">The Parisian</a></p>
+        <h2>Gregg Barrios Book in Translation Prize</h2>
+        <h3>Winner</h3>
+        <p>Jon Fosse <a href="/books/a-new-name">A New Name</a></p>
+        <h2>Lifetime Achievement Award</h2>
+        <p>Person Only <a href="/people/person-only">Person Only Honor</a></p>
+      </main>
+    '''
+    configs = {
+      'Fiction': ('Fiction', ('Fiction',)),
+      'Nonfiction': ('Nonfiction', ('Nonfiction', 'Non-fiction')),
+      'Biography': ('Biography', ('Biography',)),
+      'Memoir/Autobiography': (
+        'Memoir/Autobiography',
+        ('Memoir/Autobiography', 'Memoir and Autobiography', 'Autobiography', 'Memoir')),
+      'Poetry': ('Poetry', ('Poetry',)),
+      'Criticism': ('Criticism', ('Criticism',)),
+      'John Leonard Prize': ('John Leonard Prize', ('John Leonard Prize', 'Best First Book')),
+      'Gregg Barrios Book in Translation Prize': (
+        'Gregg Barrios Book in Translation Prize',
+        ('Gregg Barrios Book in Translation Prize', 'Book in Translation')),
+    }
+    expected = {
+      'Fiction': [
+        ('2025', 'James', 'Percival Everett', 'winner'),
+        ('2025.01', 'Creation Lake', 'Rachel Kushner', 'shortlisted'),
+      ],
+      'Nonfiction': [('2025', 'Challenger', 'Adam Higginbotham', 'winner')],
+      'Biography': [('2025', 'King: A Life', 'Jonathan Eig', 'winner')],
+      'Memoir/Autobiography': [('2025', 'How to Say Babylon', 'Safiya Sinclair', 'winner')],
+      'Poetry': [('2025', 'from unincorporated territory', 'Craig Santos Perez', 'winner')],
+      'Criticism': [('2025', 'White Negroes', 'Lauren Michele Jackson', 'winner')],
+      'John Leonard Prize': [('2025', 'The Parisian', 'Isabella Hammad', 'winner')],
+      'Gregg Barrios Book in Translation Prize': [('2025', 'A New Name', 'Jon Fosse', 'winner')],
+    }
+
+    for label, (category, aliases) in configs.items():
+      with self.subTest(category=label):
+        parsed = NationalBookCriticsCircleOfficialParser(category, aliases).parse(
+          html, 'https://www.bookcritics.org/past-awards/2025/')
+        self.assertEqual(expected[label], [
+          (entry['position'], entry['title'], entry['author'], entry['result'])
+          for entry in parsed['entries']
+        ])
+        self.assertTrue(all(entry['category'] == category for entry in parsed['entries']))
+        self.assertNotIn('Long Fiction', [entry['title'] for entry in parsed['entries']])
+        self.assertNotIn('Person Only Honor', [entry['title'] for entry in parsed['entries']])
+
+  def test_national_book_critics_circle_official_parser_discovers_year_links(self):
+    from parser.national_book_critics_circle import (
+      NationalBookCriticsCircleOfficialParser,
+    )
+
+    index_html = '''
+      <main>
+        <a href="/past-awards/2024/">2024 Awards</a>
+        <a href="https://www.bookcritics.org/past-awards/2025/">2025 Awards</a>
+      </main>
+    '''
+    pages = {
+      'https://www.bookcritics.org/past-awards/2024/': '''
+        <main>
+          <h1>2024 Awards</h1>
+          <h2>Fiction</h2>
+          <h3>Winner</h3>
+          <p>Fiction Author <a href="/book/fiction-winner">Fiction Winner</a></p>
+        </main>
+      ''',
+      'https://www.bookcritics.org/past-awards/2025/': '''
+        <main>
+          <h1>2025 Awards</h1>
+          <h2>Fiction</h2>
+          <h3>Finalists</h3>
+          <p>Another Author <a href="/book/border-book">Border Book</a></p>
+        </main>
+      ''',
+    }
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      return pages[url]
+
+    parsed = NationalBookCriticsCircleOfficialParser('Fiction', ('Fiction',)).parse(
+      index_html, 'https://www.bookcritics.org/past-awards/', fetch_url=fetch_url)
+
+    self.assertEqual([
+      'https://www.bookcritics.org/past-awards/2024/',
+      'https://www.bookcritics.org/past-awards/2025/',
+    ], fetched)
+    self.assertEqual([
+      ('2024', 'Fiction Winner', 'winner'),
+      ('2025.01', 'Border Book', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['result'])
+      for entry in parsed['entries']
+    ])
+
+  def test_national_book_critics_circle_wikipedia_parser_rowspans_and_gregg_barrios(self):
+    from parser.national_book_critics_circle import (
+      NationalBookCriticsCircleWikipediaParser,
+    )
+
+    fiction_html = '''
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td rowspan="4">2024</td><td>Percival Everett</td><td><a href="/wiki/James">James</a></td><td>Winner</td></tr>
+        <tr><td>Rachel Kushner</td><td>Creation Lake</td><td>Finalist</td></tr>
+        <tr><td>Miranda July</td><td>All Fours</td><td></td></tr>
+        <tr><td>Long Writer</td><td>Longlisted Novel</td><td>Longlist</td></tr>
+      </table>
+    '''
+    fiction = NationalBookCriticsCircleWikipediaParser('Fiction', ('Fiction',)).parse(
+      fiction_html,
+      'https://en.wikipedia.org/wiki/National_Book_Critics_Circle_Award_for_Fiction')
+
+    self.assertEqual([
+      ('2024', 'James', 'Percival Everett', 'winner'),
+      ('2024.01', 'Creation Lake', 'Rachel Kushner', 'shortlisted'),
+      ('2024.02', 'All Fours', 'Miranda July', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in fiction['entries']
+    ])
+    self.assertNotIn('Longlisted Novel', [entry['title'] for entry in fiction['entries']])
+
+    translation_html = '''
+      <table>
+        <tr>
+          <th>Year</th><th>Title</th><th>Author</th>
+          <th>Translator</th><th>Language</th><th>Result</th>
+        </tr>
+        <tr>
+          <td>2025</td><td>Absolution</td><td>Alice McDermott</td>
+          <td>Not Imported</td><td>French</td><td>Winner</td>
+        </tr>
+      </table>
+    '''
+    translation = NationalBookCriticsCircleWikipediaParser(
+      'Gregg Barrios Book in Translation Prize',
+      ('Gregg Barrios Book in Translation Prize', 'Book in Translation')).parse(
+        translation_html,
+        'https://en.wikipedia.org/wiki/Gregg_Barrios_Book_in_Translation_Prize')
+
+    self.assertEqual([
+      ('2025', 'Absolution', 'Alice McDermott', 'winner'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in translation['entries']
+    ])
+
+  def test_national_book_critics_circle_fetchers_metadata_fallback_and_registry(self):
+    from parser.base import (
+      CATEGORY_LITERARY_GENERAL_FICTION,
+      CATEGORY_NONFICTION,
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+    )
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.national_book_critics_circle import (
+      UrlFetcherNationalBookCriticsCircleBiography,
+      UrlFetcherNationalBookCriticsCircleCriticism,
+      UrlFetcherNationalBookCriticsCircleFiction,
+      UrlFetcherNationalBookCriticsCircleGreggBarriosTranslation,
+      UrlFetcherNationalBookCriticsCircleJohnLeonard,
+      UrlFetcherNationalBookCriticsCircleMemoirAutobiography,
+      UrlFetcherNationalBookCriticsCircleNonfiction,
+      UrlFetcherNationalBookCriticsCirclePoetry,
+    )
+
+    fetchers = (
+      (UrlFetcherNationalBookCriticsCircleFiction(), CATEGORY_LITERARY_GENERAL_FICTION),
+      (UrlFetcherNationalBookCriticsCircleNonfiction(), CATEGORY_NONFICTION),
+      (UrlFetcherNationalBookCriticsCircleBiography(), CATEGORY_NONFICTION),
+      (UrlFetcherNationalBookCriticsCircleMemoirAutobiography(), CATEGORY_NONFICTION),
+      (UrlFetcherNationalBookCriticsCirclePoetry(), None),
+      (UrlFetcherNationalBookCriticsCircleCriticism(), CATEGORY_NONFICTION),
+      (UrlFetcherNationalBookCriticsCircleJohnLeonard(), None),
+      (UrlFetcherNationalBookCriticsCircleGreggBarriosTranslation(), None),
+    )
+    expected_ids = {
+      'national_book_critics_circle_fiction',
+      'national_book_critics_circle_nonfiction',
+      'national_book_critics_circle_biography',
+      'national_book_critics_circle_memoir_autobiography',
+      'national_book_critics_circle_poetry',
+      'national_book_critics_circle_criticism',
+      'national_book_critics_circle_john_leonard',
+      'national_book_critics_circle_gregg_barrios_translation',
+    }
+
+    self.assertEqual(expected_ids, {fetcher.source_id for fetcher, _filter in fetchers})
+    for fetcher, expected_filter in fetchers:
+      with self.subTest(fetcher=fetcher.source_id):
+        filters = [item['label'] for item in fetcher.get_filter_list()]
+        self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+        if expected_filter is not None:
+          self.assertIn(expected_filter, filters)
+        self.assertFalse(fetcher.options['match_series'])
+        self.assertEqual((
+          {'label': 'Automatic', 'value': 'automatic'},
+          {'label': 'NBCC', 'value': 0},
+          {'label': 'Wikipedia', 'value': 1},
+        ), fetcher.source_choices())
+
+    fetcher = UrlFetcherNationalBookCriticsCircleFiction()
+    official_html = '<main><h1>NBCC Awards</h1></main>'
+    wikipedia_html = '''
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td>2024</td><td>Percival Everett</td><td>James</td><td>Winner</td></tr>
+      </table>
+    '''
+    calls = []
+
+    def fetch_url(url):
+      calls.append(url)
+      if url == fetcher.URL:
+        return official_html
+      if url == fetcher.WIKIPEDIA_URL:
+        return wikipedia_html
+      self.fail(url)
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+
+    self.assertEqual(['James'], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual([fetcher.URL, fetcher.WIKIPEDIA_URL], calls)
+    self.assertIn('NBCC failed', parsed['notes'][0])
+    self.assertFalse(parsed['match_series'])
+    with self.assertRaises(Exception):
+      fetcher.fetch_and_parse(fetch_url, disable_fallbacks=True)
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    for source_id in expected_ids:
+      self.assertIn(source_id, registry_ids)
+    self.assertLess(
+      registry_ids.index('goldsmiths_prize'),
+      registry_ids.index('national_book_critics_circle_fiction'))
+    self.assertLess(
+      registry_ids.index('national_book_critics_circle_gregg_barrios_translation'),
+      registry_ids.index('walter_scott_prize'))
+
+  def test_dublin_literary_award_official_parser_winners_shortlist_and_scope(self):
+    from parser.dublin_literary_award import DublinLiteraryAwardOfficialParser
+
+    html = '''
+      <main>
+        <h1>2026 Dublin Literary Award</h1>
+        <h2>2026 Winner</h2>
+        <h3><a href="/books/gliff">Gliff</a></h3>
+        <h4>Ali Smith</h4>
+        <h2>SHORTLIST</h2>
+        <h3><a href="/books/gliff">Gliff</a></h3>
+        <h4>Ali Smith</h4>
+        <h3>Perspective(s)</h3>
+        <h4>Laurent Binet</h4>
+        <p>Translated by Sam Taylor</p>
+        <h3>In Late Summer</h3>
+        <h4>Luigi Garlando</h4>
+        <h3>Live Fast</h3>
+        <h4>Brigitte Giraud</h4>
+        <h3>The Emperor of Gladness</h3>
+        <h4>Ocean Vuong</h4>
+        <h3>What I Know About You</h3>
+        <h4>Éric Chacour</h4>
+        <h2>LONGLIST</h2>
+        <h3>Creation Lake</h3>
+        <h4>Rachel Kushner</h4>
+        <h2>NOMINATED</h2>
+        <h3>1985: A Novel</h3>
+        <h4>Anthony Burgess</h4>
+      </main>
+    '''
+
+    parsed = DublinLiteraryAwardOfficialParser().parse(
+      html, 'https://dublinliteraryaward.ie/the-library/prize-years/2026/')
+
+    self.assertEqual([
+      ('2026', 'Gliff', 'Ali Smith', 'winner'),
+      ('2026.01', 'Perspective(s)', 'Laurent Binet', 'shortlisted'),
+      ('2026.02', 'In Late Summer', 'Luigi Garlando', 'shortlisted'),
+      ('2026.03', 'Live Fast', 'Brigitte Giraud', 'shortlisted'),
+      ('2026.04', 'The Emperor of Gladness', 'Ocean Vuong', 'shortlisted'),
+      ('2026.05', 'What I Know About You', 'Éric Chacour', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertNotIn('Creation Lake', [entry['title'] for entry in parsed['entries']])
+    self.assertNotIn('1985: A Novel', [entry['title'] for entry in parsed['entries']])
+    self.assertTrue(all(entry['award'] == 'Dublin Literary Award' for entry in parsed['entries']))
+    self.assertTrue(all(entry['category'] == 'Novel' for entry in parsed['entries']))
+    self.assertFalse(parsed['match_series'])
+
+  def test_dublin_literary_award_official_parser_handles_translation_lines(self):
+    from parser.dublin_literary_award import DublinLiteraryAwardOfficialParser
+
+    html = '''
+      <main>
+        <h1>2024 Dublin Literary Award</h1>
+        <h2>Winner</h2>
+        <h3>Solenoid</h3>
+        <h4>Mircea Cărtărescu</h4>
+        <p>Translated by Sean Cotter</p>
+        <h2>SHORTLIST</h2>
+        <p><a href="/books/the-birthday-party">The Birthday Party</a> by Laurent Mauvignier</p>
+      </main>
+    '''
+
+    parsed = DublinLiteraryAwardOfficialParser().parse(
+      html, 'https://dublinliteraryaward.ie/the-library/prize-years/2024/')
+
+    self.assertEqual([
+      ('2024', 'Solenoid', 'Mircea Cărtărescu', 'winner'),
+      ('2024.01', 'The Birthday Party', 'Laurent Mauvignier', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+
+  def test_dublin_literary_award_official_parser_discovers_year_links(self):
+    from parser.dublin_literary_award import DublinLiteraryAwardOfficialParser
+
+    index_html = '''
+      <main>
+        <a href="/the-library/prize-years/2025/">2025 Prize Year</a>
+        <a href="https://dublinliteraryaward.ie/the-library/prize-years/2026/">2026 Prize Year</a>
+      </main>
+    '''
+    pages = {
+      'https://dublinliteraryaward.ie/the-library/prize-years/2025/': '''
+        <main>
+          <h1>2025 Dublin Literary Award</h1>
+          <h2>Winner</h2>
+          <h3>The Coast Road</h3>
+          <h4>Alan Murrin</h4>
+        </main>
+      ''',
+      'https://dublinliteraryaward.ie/the-library/prize-years/2026/': '''
+        <main>
+          <h1>2026 Dublin Literary Award</h1>
+          <h2>SHORTLIST</h2>
+          <h3>Gliff</h3>
+          <h4>Ali Smith</h4>
+        </main>
+      ''',
+    }
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      return pages[url]
+
+    parsed = DublinLiteraryAwardOfficialParser().parse(
+      index_html,
+      'https://dublinliteraryaward.ie/the-library/prize-years/',
+      fetch_url=fetch_url)
+
+    self.assertEqual([
+      'https://dublinliteraryaward.ie/the-library/prize-years/2025/',
+      'https://dublinliteraryaward.ie/the-library/prize-years/2026/',
+    ], fetched)
+    self.assertEqual([
+      ('2025', 'The Coast Road', 'winner'),
+      ('2026.01', 'Gliff', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['result'])
+      for entry in parsed['entries']
+    ])
+
+  def test_dublin_literary_award_wikipedia_parser_handles_rowspans_and_results(self):
+    from parser.dublin_literary_award import DublinLiteraryAwardWikipediaParser
+
+    html = '''
+      <table>
+        <tr>
+          <th>Year</th><th>Author</th><th>Title</th>
+          <th>Translator</th><th>Language</th><th>Result</th><th>Ref.</th>
+        </tr>
+        <tr>
+          <td rowspan="3">1996</td><td>David Malouf</td>
+          <td><a href="/wiki/Remembering_Babylon">Remembering Babylon</a></td>
+          <td></td><td>English</td><td>Winner</td><td>[1]</td>
+        </tr>
+        <tr>
+          <td>John Banville</td><td>Ghosts</td>
+          <td></td><td>English</td><td>Shortlist</td><td>[1]</td>
+        </tr>
+        <tr>
+          <td>Jane Urquhart</td><td>Away</td>
+          <td></td><td>English</td><td></td><td>[1]</td>
+        </tr>
+        <tr>
+          <td>2024</td><td>Mircea Cărtărescu</td><td>Solenoid</td>
+          <td>Sean Cotter</td><td>Romanian</td><td>Winner</td><td>[2]</td>
+        </tr>
+      </table>
+    '''
+
+    parsed = DublinLiteraryAwardWikipediaParser().parse(html)
+
+    self.assertEqual([
+      ('1996', 'Remembering Babylon', 'David Malouf', 'winner'),
+      ('1996.01', 'Ghosts', 'John Banville', 'shortlisted'),
+      ('1996.02', 'Away', 'Jane Urquhart', 'shortlisted'),
+      ('2024', 'Solenoid', 'Mircea Cărtărescu', 'winner'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+
+  def test_dublin_literary_award_fetcher_metadata_fallback_and_registry(self):
+    from parser.base import (
+      CATEGORY_LITERARY_GENERAL_FICTION,
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+    )
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.dublin_literary_award import UrlFetcherDublinLiteraryAward
+
+    fetcher = UrlFetcherDublinLiteraryAward()
+    official_html = '<main><h1>Prize Years</h1></main>'
+    wiki_html = '''
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td>2026</td><td>Ali Smith</td><td>Gliff</td><td>Winner</td></tr>
+      </table>
+    '''
+    calls = []
+
+    def fetch_url(url):
+      calls.append(url)
+      if url == fetcher.URL:
+        return official_html
+      if url == fetcher.WIKIPEDIA_URL:
+        return wiki_html
+      self.fail(url)
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+    filters = [item['label'] for item in fetcher.get_filter_list()]
+
+    self.assertEqual('dublin_literary_award', fetcher.source_id)
+    self.assertEqual('Dublin Literary Award', fetcher.NAME)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertIn(CATEGORY_LITERARY_GENERAL_FICTION, filters)
+    self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+    self.assertEqual((
+      {'label': 'Automatic', 'value': 'automatic'},
+      {'label': 'Dublin Literary Award', 'value': 0},
+      {'label': 'Wikipedia', 'value': 1},
+    ), fetcher.source_choices())
+    self.assertEqual(['Gliff'], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual([fetcher.URL, fetcher.WIKIPEDIA_URL], calls)
+    self.assertFalse(parsed['match_series'])
+    with self.assertRaises(Exception):
+      fetcher.fetch_and_parse(fetch_url, disable_fallbacks=True)
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('dublin_literary_award', registry_ids)
+    self.assertLess(
+      registry_ids.index('national_book_critics_circle_gregg_barrios_translation'),
+      registry_ids.index('dublin_literary_award'))
+    self.assertLess(
+      registry_ids.index('dublin_literary_award'),
+      registry_ids.index('walter_scott_prize'))
+
+  def test_center_for_fiction_official_parser_discovers_and_parses_year_pages(self):
+    from parser.center_for_fiction import CenterForFictionFirstNovelOfficialParser
+
+    index_html = '''
+      <main>
+        <h2>Browse All Winners &amp; Finalists</h2>
+        <a href="/book-recs/2025-first-novel-prize/">2025 First Novel Prize</a>
+        <a href="/book-recs/2024-first-novel-prize/">2024 First Novel Prize</a>
+        <a href="/book-recs/2006-first-novel-prize/">2006 First Novel Prize</a>
+      </main>
+    '''
+    pages = {
+      'https://centerforfiction.org/book-recs/2025-first-novel-prize/': '''
+        <main>
+          <h1>2025 First Novel Prize</h1>
+          <h3><a href="/book-recs/natch/">Natch</a></h3>
+          <p>By Darrell Kinsey</p>
+          <p>Published by Tin House</p>
+          <p>Winner</p>
+          <h3>We Pretty Pieces of Flesh</h3><p>By Colwill Brown</p><p>Shortlisted</p>
+          <h3>The Devil Three Times</h3><p>By Rickey Fayne</p><p>Shortlisted</p>
+          <h3>Ibis</h3><p>By Justin Haynes</p><p>Shortlisted</p>
+          <h3>Loca</h3><p>By Alejandro Heredia</p><p>Shortlisted</p>
+          <h3>Liquid</h3><p>By Mariam Rahmani</p><p>Shortlisted</p>
+          <h3>Optional Practical Training</h3><p>By Shubha Sunder</p><p>Shortlisted</p>
+          <h3>Good Girl</h3><p>By Aria Aber</p><p>Longlisted</p>
+          <h3>Crown</h3><p>By Natasha Brown</p><p>Longlisted</p>
+          <h3>Dominion</h3><p>By Addie E. Citchens</p><p>Longlisted</p>
+        </main>
+      ''',
+      'https://centerforfiction.org/book-recs/2024-first-novel-prize/': '''
+        <main>
+          <h1>2024 First Novel Prize</h1>
+          <h3>God Bless You, Otis Spunkmeyer</h3>
+          <p>By Joseph Earl Thomas</p>
+          <p>Winner</p>
+          <h3>Headshot</h3>
+          <p>By Rita Bullwinkel</p>
+          <p>Shortlisted</p>
+        </main>
+      ''',
+      'https://centerforfiction.org/book-recs/2006-first-novel-prize/': '''
+        <main>
+          <h1>2006 First Novel Prize</h1>
+          <h2>Winner</h2>
+          <ul><li>Special Topics in Calamity Physics by Marisha Pessl (Viking)</li></ul>
+          <h2>Shortlist</h2>
+          <ul>
+            <li>Cellophane by Marie Arana (Dial Press)</li>
+            <li>Send Me by Patrick Ryan (Dial Press)</li>
+          </ul>
+        </main>
+      ''',
+    }
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      return pages[url]
+
+    parsed = CenterForFictionFirstNovelOfficialParser().parse(
+      index_html,
+      'https://centerforfiction.org/grants-awards/the-first-novel-prize/',
+      fetch_url=fetch_url)
+
+    self.assertEqual([
+      'https://centerforfiction.org/book-recs/2006-first-novel-prize/',
+      'https://centerforfiction.org/book-recs/2024-first-novel-prize/',
+      'https://centerforfiction.org/book-recs/2025-first-novel-prize/',
+    ], fetched)
+    self.assertEqual([
+      ('2006', 'Special Topics in Calamity Physics', 'Marisha Pessl', 'winner'),
+      ('2006.01', 'Cellophane', 'Marie Arana', 'shortlisted'),
+      ('2006.02', 'Send Me', 'Patrick Ryan', 'shortlisted'),
+      ('2024', 'God Bless You, Otis Spunkmeyer', 'Joseph Earl Thomas', 'winner'),
+      ('2024.01', 'Headshot', 'Rita Bullwinkel', 'shortlisted'),
+      ('2025', 'Natch', 'Darrell Kinsey', 'winner'),
+      ('2025.01', 'We Pretty Pieces of Flesh', 'Colwill Brown', 'shortlisted'),
+      ('2025.02', 'The Devil Three Times', 'Rickey Fayne', 'shortlisted'),
+      ('2025.03', 'Ibis', 'Justin Haynes', 'shortlisted'),
+      ('2025.04', 'Loca', 'Alejandro Heredia', 'shortlisted'),
+      ('2025.05', 'Liquid', 'Mariam Rahmani', 'shortlisted'),
+      ('2025.06', 'Optional Practical Training', 'Shubha Sunder', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertNotIn('Good Girl', [entry['title'] for entry in parsed['entries']])
+    self.assertNotIn('Crown', [entry['title'] for entry in parsed['entries']])
+    self.assertNotIn('Dominion', [entry['title'] for entry in parsed['entries']])
+    self.assertTrue(all(
+      entry['award'] == 'Center for Fiction First Novel Prize'
+      for entry in parsed['entries']))
+    self.assertTrue(all(entry['category'] == 'First Novel' for entry in parsed['entries']))
+    self.assertFalse(parsed['match_series'])
+
+  def test_center_for_fiction_wikipedia_parser_handles_rowspans_and_longlists(self):
+    from parser.center_for_fiction import CenterForFictionFirstNovelWikipediaParser
+
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th><th>Ref.</th></tr>
+        <tr><td rowspan="4">2025</td><td>Darrell Kinsey</td><td><a href="/wiki/Natch">Natch</a></td><td>Winner</td><td>[1]</td></tr>
+        <tr><td>Colwill Brown</td><td>We Pretty Pieces of Flesh</td><td>Shortlisted</td><td>[1]</td></tr>
+        <tr><td>Rickey Fayne</td><td>The Devil Three Times</td><td></td><td>[1]</td></tr>
+        <tr><td>Aria Aber</td><td>Good Girl</td><td>Longlisted</td><td>[1]</td></tr>
+        <tr><td>2024</td><td>Joseph Earl Thomas</td><td>God Bless You, Otis Spunkmeyer</td><td></td><td>[2]</td></tr>
+      </table>
+    '''
+
+    parsed = CenterForFictionFirstNovelWikipediaParser().parse(html)
+
+    self.assertEqual([
+      ('2024', 'God Bless You, Otis Spunkmeyer', 'Joseph Earl Thomas', 'winner'),
+      ('2025', 'Natch', 'Darrell Kinsey', 'winner'),
+      ('2025.01', 'We Pretty Pieces of Flesh', 'Colwill Brown', 'shortlisted'),
+      ('2025.02', 'The Devil Three Times', 'Rickey Fayne', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+
+  def test_center_for_fiction_fetcher_metadata_fallback_and_registry(self):
+    from parser.base import (
+      CATEGORY_LITERARY_GENERAL_FICTION,
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+    )
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.center_for_fiction import UrlFetcherCenterForFictionFirstNovelPrize
+    from url_fetcher.generic import UrlFetcherError
+
+    fetcher = UrlFetcherCenterForFictionFirstNovelPrize()
+
+    self.assertEqual('center_for_fiction_first_novel_prize', fetcher.source_id)
+    self.assertEqual('Center for Fiction First Novel Prize', fetcher.NAME)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual([
+      CATEGORY_LITERARY_GENERAL_FICTION,
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+    ], [item['label'] for item in fetcher.get_filter_list()])
+    self.assertEqual((
+      {'label': 'Automatic', 'value': 'automatic'},
+      {'label': 'Center for Fiction', 'value': 0},
+      {'label': 'Wikipedia', 'value': 1},
+    ), fetcher.source_choices())
+
+    official_html = '<main><h1>The First Novel Prize</h1></main>'
+    wiki_html = '''
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td>2025</td><td>Darrell Kinsey</td><td>Natch</td><td>Winner</td></tr>
+      </table>
+    '''
+    calls = []
+
+    def fetch_url(url):
+      calls.append(url)
+      if url == fetcher.URL:
+        return official_html
+      if url == fetcher.WIKIPEDIA_URL:
+        return wiki_html
+      self.fail(url)
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+    self.assertEqual(['Natch'], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual([fetcher.URL, fetcher.WIKIPEDIA_URL], calls)
+    self.assertIn('Center for Fiction failed', parsed['notes'][0])
+    self.assertFalse(parsed['match_series'])
+
+    calls.clear()
+    parsed_wiki = fetcher.fetch_and_parse(fetch_url, source_choice=1)
+    self.assertEqual(['Natch'], [entry['title'] for entry in parsed_wiki['entries']])
+    self.assertEqual([fetcher.WIKIPEDIA_URL], calls)
+
+    calls.clear()
+    with self.assertRaises(UrlFetcherError):
+      fetcher.fetch_and_parse(fetch_url, disable_fallbacks=True)
+    self.assertEqual([fetcher.URL], calls)
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('center_for_fiction_first_novel_prize', registry_ids)
+    self.assertLess(
+      registry_ids.index('dublin_literary_award'),
+      registry_ids.index('center_for_fiction_first_novel_prize'))
+    self.assertLess(
+      registry_ids.index('center_for_fiction_first_novel_prize'),
+      registry_ids.index('walter_scott_prize'))
+
+  def test_costa_whitbread_novel_parser_reads_rowspanned_results(self):
+    from parser.costa_whitbread import CostaWhitbreadCategoryParser
+
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th><th>Ref.</th></tr>
+        <tr style="background:lightyellow">
+          <th rowspan="3">1995</th>
+          <td>Salman Rushdie</td>
+          <td><i><a href="/wiki/The_Moor%27s_Last_Sigh">The Moor's Last Sigh</a></i></td>
+          <td>Winner</td><td></td>
+        </tr>
+        <tr>
+          <td>Martin Amis</td><td><i>The Information</i></td>
+          <td rowspan="2">Shortlist</td><td></td>
+        </tr>
+        <tr><td>Pat Barker</td><td><i>The Ghost Road</i></td><td></td></tr>
+        <tr style="background:lightyellow">
+          <th>2000</th><td>Matthew Kneale</td>
+          <td><i>English Passengers</i> <img alt="Blue ribbon" /></td>
+          <td>Winner</td><td></td>
+        </tr>
+      </table>
+    '''
+
+    parsed = CostaWhitbreadCategoryParser(
+      'Costa/Whitbread Book Award - Novel',
+      'Novel').parse(html, 'https://en.wikipedia.org/wiki/Costa_Book_Award_for_Novel')
+
+    self.assertEqual([
+      ('1995', "The Moor's Last Sigh", 'Salman Rushdie', 'winner'),
+      ('1995.01', 'The Information', 'Martin Amis', 'shortlisted'),
+      ('1995.02', 'The Ghost Road', 'Pat Barker', 'shortlisted'),
+      ('2000', 'English Passengers', 'Matthew Kneale', 'winner'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(entry['category'] == 'Novel' for entry in parsed['entries']))
+
+  def test_costa_whitbread_first_novel_parser_reads_split_eras_and_skips_no_award(self):
+    from parser.costa_whitbread import CostaWhitbreadCategoryParser
+
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th></th><th>Ref.</th></tr>
+        <tr style="background:#cddeff">
+          <th>1975</th><td>Ruth Spalding</td>
+          <td><i>The Improbable Puritan</i></td><td>Winner</td><td></td>
+        </tr>
+        <tr><td colspan="3"><i>No award presented 1976-1980</i></td><td></td><td></td></tr>
+      </table>
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th><th>Ref.</th></tr>
+        <tr style="background:#cddeff">
+          <th rowspan="4">2021</th><td>Caleb Azumah Nelson</td>
+          <td><i>Open Water</i></td><td>Winner</td><td></td>
+        </tr>
+        <tr><td>A. K. Blakemore</td><td><i>The Manningtree Witches</i></td><td rowspan="3">Shortlist</td><td></td></tr>
+        <tr><td>Emily Itami</td><td><i>Fault Lines</i></td><td></td></tr>
+        <tr><td>Kate Sawyer</td><td><i>The Stranding</i></td><td></td></tr>
+      </table>
+    '''
+
+    parsed = CostaWhitbreadCategoryParser(
+      'Costa/Whitbread Book Award - First Novel',
+      'First Novel').parse(
+        html, 'https://en.wikipedia.org/wiki/Costa_Book_Award_for_First_Novel')
+
+    self.assertEqual([
+      ('1975', 'The Improbable Puritan', 'Ruth Spalding', 'winner'),
+      ('2021', 'Open Water', 'Caleb Azumah Nelson', 'winner'),
+      ('2021.01', 'The Manningtree Witches', 'A. K. Blakemore', 'shortlisted'),
+      ('2021.02', 'Fault Lines', 'Emily Itami', 'shortlisted'),
+      ('2021.03', 'The Stranding', 'Kate Sawyer', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertNotIn('No award presented 1976-1980', [
+      entry['title'] for entry in parsed['entries']
+    ])
+
+  def test_costa_whitbread_biography_parser_handles_subject_column_and_blank_shortlists(self):
+    from parser.costa_whitbread import CostaWhitbreadCategoryParser
+
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Subject</th><th>Result</th><th>Ref.</th></tr>
+        <tr style="background:lightyellow">
+          <th rowspan="3">1995</th><td>Roy Jenkins</td><td><i>Gladstone</i></td>
+          <td>William Gladstone</td><td>Winner</td><td></td>
+        </tr>
+        <tr><td>Paul Berry and Mark Bostridge</td><td><i>Vera Brittain - A Life</i></td><td>Vera Brittain</td><td></td><td></td></tr>
+        <tr><td>Gitta Sereny</td><td><i>Albert Speer: His Battle with Truth</i></td><td>Albert Speer</td><td></td><td></td></tr>
+        <tr style="background:lightyellow">
+          <th rowspan="2">2011</th><td>Matthew Hollis</td>
+          <td><i>Now All Roads Lead to France</i></td><td>Edward Thomas</td><td>Winner</td><td></td>
+        </tr>
+        <tr><td>Julia Blackburn</td><td><i>Thin Paths</i></td><td></td><td>Shortlist</td><td></td></tr>
+      </table>
+    '''
+
+    parsed = CostaWhitbreadCategoryParser(
+      'Costa/Whitbread Book Award - Biography',
+      'Biography').parse(
+        html, 'https://en.wikipedia.org/wiki/Costa_Book_Award_for_Biography')
+
+    self.assertEqual([
+      ('1995', 'Gladstone', 'Roy Jenkins', 'winner'),
+      ('1995.01', 'Vera Brittain - A Life', 'Paul Berry and Mark Bostridge', 'shortlisted'),
+      ('1995.02', 'Albert Speer: His Battle with Truth', 'Gitta Sereny', 'shortlisted'),
+      ('2011', 'Now All Roads Lead to France', 'Matthew Hollis', 'winner'),
+      ('2011.01', 'Thin Paths', 'Julia Blackburn', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+
+  def test_costa_whitbread_childrens_book_parser_preserves_multiple_winners(self):
+    from parser.costa_whitbread import CostaWhitbreadCategoryParser
+
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th><th>Ref.</th></tr>
+        <tr style="background:lightyellow">
+          <th rowspan="2">1974</th>
+          <td>Russell Hoban and Quentin Blake</td>
+          <td><i>How Tom Beat Captain Najork and His Hired Sportsmen</i></td>
+          <td>Winner</td><td></td>
+        </tr>
+        <tr style="background:lightyellow">
+          <td>Jill Paton Walsh</td><td><i>The Emperor's Winding Sheet</i></td>
+          <td>Winner</td><td></td>
+        </tr>
+        <tr><th rowspan="2">1995</th><td>Michael Morpurgo</td><td><i>The Wreck of the Zanzibar</i></td><td>Winner</td><td></td></tr>
+        <tr><td>Elizabeth Arnold</td><td><i>The Parsley Parcel</i></td><td>Shortlist</td><td></td></tr>
+      </table>
+    '''
+
+    parsed = CostaWhitbreadCategoryParser(
+      "Costa/Whitbread Book Award - Children's Book",
+      "Children's Book").parse(
+        html, 'https://en.wikipedia.org/wiki/Costa_Book_Award_for_Children%27s_Book')
+
+    self.assertEqual([
+      ('1974', 'How Tom Beat Captain Najork and His Hired Sportsmen',
+       'Russell Hoban and Quentin Blake', 'winner'),
+      ('1974', "The Emperor's Winding Sheet", 'Jill Paton Walsh', 'winner'),
+      ('1995', 'The Wreck of the Zanzibar', 'Michael Morpurgo', 'winner'),
+      ('1995.01', 'The Parsley Parcel', 'Elizabeth Arnold', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+
+  def test_costa_whitbread_book_of_the_year_parser_reads_main_table(self):
+    from parser.costa_whitbread import CostaWhitbreadBookOfTheYearParser
+
+    html = '''
+      <table>
+        <tr>
+          <th>Year</th><th>Novel</th><th>First novel</th>
+          <th>Children's book</th><th>Poetry</th><th>Biography</th><th>Short story</th>
+        </tr>
+        <tr>
+          <td>1980</td>
+          <td><b>David Lodge<br /><i><a href="/wiki/How_Far_Can_You_Go">How Far Can You Go?</a></i></b> <img alt="Blue ribbon" /></td>
+          <td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>1987</td><td></td><td></td><td></td><td></td>
+          <td><b>Christopher Nolan<br /><i>Under the Eye of the Clock</i></b></td><td></td>
+        </tr>
+        <tr>
+          <td>2001</td><td></td><td></td>
+          <td><b>Philip Pullman<br /><i>The Amber Spyglass</i></b></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>2013</td><td></td>
+          <td><b>Nathan Filer, <i>The Shock of the Fall</i></b></td>
+          <td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>2021</td><td></td><td></td><td></td>
+          <td><b>Hannah Lowe<br /><i>The Kids</i></b></td><td></td><td></td>
+        </tr>
+      </table>
+    '''
+
+    parsed = CostaWhitbreadBookOfTheYearParser().parse(
+      html, 'https://en.wikipedia.org/wiki/Costa_Book_Awards')
+
+    self.assertEqual([
+      ('1980', 'How Far Can You Go?', 'David Lodge', 'Novel'),
+      ('1987', 'Under the Eye of the Clock', 'Christopher Nolan', 'Biography'),
+      ('2001', 'The Amber Spyglass', 'Philip Pullman', "Children's Book"),
+      ('2013', 'The Shock of the Fall', 'Nathan Filer', 'First Novel'),
+      ('2021', 'The Kids', 'Hannah Lowe', 'Poetry'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['category'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(entry['result'] == 'winner' for entry in parsed['entries']))
+
+  def test_costa_whitbread_fetcher_metadata_and_parse_smoke(self):
+    from parser.base import (
+      CATEGORY_LITERARY_GENERAL_FICTION,
+      CATEGORY_NONFICTION,
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+      CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+    )
+    from url_fetcher.costa_whitbread import (
+      UrlFetcherCostaWhitbreadBiography,
+      UrlFetcherCostaWhitbreadBookOfTheYear,
+      UrlFetcherCostaWhitbreadChildrensBook,
+      UrlFetcherCostaWhitbreadFirstNovel,
+      UrlFetcherCostaWhitbreadNovel,
+    )
+
+    fetchers = (
+      (
+        UrlFetcherCostaWhitbreadNovel(),
+        'costa_whitbread_novel',
+        CATEGORY_LITERARY_GENERAL_FICTION,
+      ),
+      (
+        UrlFetcherCostaWhitbreadFirstNovel(),
+        'costa_whitbread_first_novel',
+        CATEGORY_LITERARY_GENERAL_FICTION,
+      ),
+      (
+        UrlFetcherCostaWhitbreadBiography(),
+        'costa_whitbread_biography',
+        CATEGORY_NONFICTION,
+      ),
+      (
+        UrlFetcherCostaWhitbreadChildrensBook(),
+        'costa_whitbread_childrens_book',
+        CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+      ),
+      (
+        UrlFetcherCostaWhitbreadBookOfTheYear(),
+        'costa_whitbread_book_of_the_year',
+        CATEGORY_LITERARY_GENERAL_FICTION,
+      ),
+    )
+    for fetcher, source_id, expected_filter in fetchers:
+      with self.subTest(fetcher=source_id):
+        filters = [item['label'] for item in fetcher.get_filter_list()]
+        self.assertEqual(source_id, fetcher.source_id)
+        self.assertEqual(243, fetcher.order)
+        self.assertFalse(fetcher.options['match_series'])
+        self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+        self.assertIn(expected_filter, filters)
+        self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+
+    overall_filters = [
+      item['label']
+      for item in UrlFetcherCostaWhitbreadBookOfTheYear().get_filter_list()
+    ]
+    self.assertIn(CATEGORY_NONFICTION, overall_filters)
+    self.assertIn(CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE, overall_filters)
+
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th><th>Ref.</th></tr>
+        <tr><th>2021</th><td>Claire Fuller</td><td><i>Unsettled Ground</i></td><td>Winner</td><td></td></tr>
+      </table>
+    '''
+    parsed = UrlFetcherCostaWhitbreadNovel().fetch_and_parse(lambda _url: html)
+
+    self.assertEqual('Costa/Whitbread Book Award - Novel', parsed['name'])
+    self.assertEqual(['Unsettled Ground'], [entry['title'] for entry in parsed['entries']])
+    self.assertFalse(parsed['match_series'])
+
+  def test_rwa_rita_awards_parser_reads_winner_table_and_ignores_vivian(self):
+    from parser.rwa_awards import RWARITAAwardsParser
+
+    html = '''
+      <h2><span>RITA Award winners</span><span>[edit]</span></h2>
+      <table>
+        <tr>
+          <th>Year</th><th>Category</th><th>Sorting Category</th>
+          <th>Title</th><th>Author</th>
+        </tr>
+        <tr>
+          <td>1982</td><td>Category Contemporary Romance</td>
+          <td>Contemporary Romance</td>
+          <td><i><a href="/wiki/Winner_Take_All">Winner Take All</a></i></td>
+          <td>Brooke Hastings</td>
+        </tr>
+        <tr>
+          <td>1982</td><td>Mainstream Contemporary Romance</td>
+          <td>Contemporary Romance</td>
+          <td><i>The Sun Dancers</i></td><td>Barbara Faith</td>
+        </tr>
+        <tr>
+          <td>2014</td><td>Romantic Suspense</td><td></td>
+          <td><i>Off the Edge</i></td>
+          <td>Carolyn Crane (first self-published winner)<sup>[1]</sup></td>
+        </tr>
+      </table>
+      <h2>Vivian Award winners</h2>
+      <h3>Best First Book</h3>
+      <ul><li>2021: Love Me Like a Love Song by Annmarie Boyle</li></ul>
+    '''
+
+    parsed = RWARITAAwardsParser().parse(
+      html, 'https://en.wikipedia.org/wiki/RITA_Award')
+
+    self.assertEqual('RWA RITA Awards', parsed['name'])
+    self.assertFalse(parsed['match_series'])
+    self.assertEqual([
+      ('1982', 'Winner Take All', 'Brooke Hastings',
+       'Category Contemporary Romance', 'winner'),
+      ('1982.01', 'The Sun Dancers', 'Barbara Faith',
+       'Mainstream Contemporary Romance', 'winner'),
+      ('2014', 'Off the Edge', 'Carolyn Crane', 'Romantic Suspense', 'winner'),
+    ], [
+      (
+        entry['position'],
+        entry['title'],
+        entry['author'],
+        entry['category'],
+        entry['result'],
+      )
+      for entry in parsed['entries']
+    ])
+    self.assertEqual(
+      'https://en.wikipedia.org/wiki/Winner_Take_All',
+      parsed['entries'][0]['source_url'])
+    self.assertNotIn('Love Me Like a Love Song', [
+      entry['title'] for entry in parsed['entries']
+    ])
+
+  def test_rwa_rita_awards_fetcher_metadata_parse_and_registry(self):
+    from parser.base import CATEGORY_REGIONAL_NATIONAL_AWARDS, CATEGORY_ROMANCE
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.rwa_awards import UrlFetcherRWARITAAwards, UrlFetcherRWAVivianAwards
+
+    fetcher = UrlFetcherRWARITAAwards()
+    vivian = UrlFetcherRWAVivianAwards()
+    filters = [item['label'] for item in fetcher.get_filter_list()]
+    vivian_filters = [item['label'] for item in vivian.get_filter_list()]
+
+    self.assertEqual('rwa_rita_awards', fetcher.source_id)
+    self.assertEqual('RWA RITA Awards', fetcher.NAME)
+    self.assertEqual('https://en.wikipedia.org/wiki/RITA_Award', fetcher.URL)
+    self.assertEqual(247, fetcher.order)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+    self.assertIn(CATEGORY_ROMANCE, filters)
+    self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+    self.assertEqual('rwa_vivian_awards', vivian.source_id)
+    self.assertEqual('RWA Vivian Awards', vivian.NAME)
+    self.assertEqual('https://en.wikipedia.org/wiki/RITA_Award', vivian.URL)
+    self.assertEqual(248, vivian.order)
+    self.assertFalse(vivian.options['match_series'])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), vivian.source_choices())
+    self.assertIn(CATEGORY_ROMANCE, vivian_filters)
+    self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, vivian_filters)
+
+    html = '''
+      <table>
+        <tr>
+          <th>Year</th><th>Category</th><th>Sorting Category</th>
+          <th>Title</th><th>Author</th>
+        </tr>
+        <tr>
+          <td>2019</td><td>Best First Book</td><td></td>
+          <td><i>Lady in Waiting</i></td><td>Marie Tremayne</td>
+        </tr>
+      </table>
+    '''
+    parsed = fetcher.fetch_and_parse(lambda _url: html)
+
+    self.assertEqual('RWA RITA Awards', parsed['name'])
+    self.assertEqual(['Lady in Waiting'], [
+      entry['title'] for entry in parsed['entries']
+    ])
+    self.assertFalse(parsed['match_series'])
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('rwa_rita_awards', registry_ids)
+    self.assertLess(
+      registry_ids.index('act_book_of_the_year_award'),
+      registry_ids.index('rwa_rita_awards'))
+    self.assertLess(
+      registry_ids.index('rwa_rita_awards'),
+      registry_ids.index('rwa_vivian_awards'))
+    self.assertLess(
+      registry_ids.index('rwa_vivian_awards'),
+      registry_ids.index('writers_trust_atwood_gibson_fiction'))
+
+  def test_rwa_vivian_awards_parser_reads_winner_section_only(self):
+    from parser.rwa_awards import RWAVivianAwardsParser
+
+    html = '''
+      <h2>RITA Award winners</h2>
+      <table>
+        <tr><th>Year</th><th>Category</th><th>Title</th><th>Author</th></tr>
+        <tr><td>2019</td><td>Best First Book</td><td>Lady in Waiting</td><td>Marie Tremayne</td></tr>
+      </table>
+      <h2><span>Vivian Award winners</span><span class="mw-editsection">[edit]</span></h2>
+      <h3>Best First Book</h3>
+      <p>2021: <a href="/wiki/Love_Me_Like_a_Love_Song">Love Me Like a Love Song</a>
+        by <a href="/wiki/Annmarie_Boyle">Annmarie Boyle</a><sup>[1]</sup></p>
+      <h3>Contemporary Romance</h3>
+      <ul>
+        <li>Long Contemporary Romance: 2021: The Intimacy Experiment by Rosie Danan</li>
+        <li>Mid-Length Contemporary Romance: 2021: Take a Hint, Dani Brown by Talia Hibbert</li>
+      </ul>
+      <h3>Inspirational Romance</h3>
+      <ul>
+        <li>Romance with Religious or Spiritual Elements: 2021:
+          At Love's Command by Karen Witemeyer (award rescinded)</li>
+      </ul>
+      <h2>References</h2>
+    '''
+
+    parsed = RWAVivianAwardsParser().parse(
+      html, 'https://en.wikipedia.org/wiki/RITA_Award')
+
+    self.assertEqual('RWA Vivian Awards', parsed['name'])
+    self.assertFalse(parsed['match_series'])
+    self.assertEqual([
+      ('2021', 'Love Me Like a Love Song', 'Annmarie Boyle',
+       'Best First Book', 'winner'),
+      ('2021.01', 'The Intimacy Experiment', 'Rosie Danan',
+       'Long Contemporary Romance', 'winner'),
+      ('2021.02', 'Take a Hint, Dani Brown', 'Talia Hibbert',
+       'Mid-Length Contemporary Romance', 'winner'),
+      ('2021.03', "At Love's Command", 'Karen Witemeyer',
+       'Romance with Religious or Spiritual Elements', 'winner'),
+    ], [
+      (
+        entry['position'],
+        entry['title'],
+        entry['author'],
+        entry['category'],
+        entry['result'],
+      )
+      for entry in parsed['entries']
+    ])
+    self.assertEqual(
+      'https://en.wikipedia.org/wiki/Love_Me_Like_a_Love_Song',
+      parsed['entries'][0]['source_url'])
+    self.assertNotIn('Lady in Waiting', [
+      entry['title'] for entry in parsed['entries']
+    ])
+    self.assertIn('winner-only', parsed['notes'][0])
+    self.assertTrue(any('rescinded' in note for note in parsed['notes']))
+
+  def test_rna_romantic_novel_awards_parser_reads_archive_and_shortlists(self):
+    from parser.rna_awards import RNARomanticNovelAwardsParser
+
+    archive_html = '''
+      <h1>Past winners</h1>
+      <h2><a href="/winners/love-me">Love Me Till Wednesday</a></h2>
+      <h2>Suzanne Lissaman</h2>
+      <ul>
+        <li>Self-published</li>
+        <li><a href="/award/romantic-novel-of-the-year">Romantic Novel of the Year</a></li>
+        <li><a href="/award-category/romantic-comedy">Romantic Comedy</a></li>
+        <li><a href="/year/2025">2025</a></li>
+      </ul>
+      <h2><a href="/winners/jha-book">Things We Do for Love and Science</a></h2>
+      <h2>Ruth Kramer</h2>
+      <ul>
+        <li>Champagne Book Group</li>
+        <li><a href="/award/joan-hessayon">Joan Hessayon</a></li>
+        <li><a href="/award-category/joan-hessayon">Joan Hessayon</a></li>
+        <li><a href="/year/2025">2025</a></li>
+      </ul>
+      <h2><a href="/winners/industry-person">Jane Agent</a></h2>
+      <ul>
+        <li><a href="/award/industry">RNA Industry</a></li>
+        <li><a href="/award-category/agent">Agent of the Year</a></li>
+        <li><a href="/year/2025">2025</a></li>
+      </ul>
+    '''
+    shortlist_json = json.dumps({
+      'link': 'https://romanticnovelistsassociation.org/news/shortlists-2025',
+      'title': {
+        'rendered': 'PRESS RELEASE: The Romantic Novelists Association reveals shortlists for Romantic Novel of the Year Awards 2025',
+      },
+      'content': {'rendered': '''
+        <p><strong><u>The Joan Hessayon Award for New Writers</u></strong></p>
+        <p><em>Things We Do for Love and Science</em> by Ruth Kramer (Champagne Book Group)</p>
+        <p><strong><u>The Romantic Comedy Award</u></strong></p>
+        <p><em>Exposure!</em> by Julia Boggio (Self Published)</p>
+        <p><em>Love Me Till Wednesday</em> by Suzanne Lissaman (Self Published)</p>
+        <p><strong><u>The Popular Romantic Fiction Novel Award</u></strong></p>
+        <p><em>All the Painted Stars</em> by Emma Denny (HQ)</p>
+      '''},
+    })
+
+    parsed = RNARomanticNovelAwardsParser().parse(
+      archive_html,
+      'https://romanticnovelistsassociation.org/past-winners',
+      shortlist_pages=(('https://romanticnovelistsassociation.org/wp-json/wp/v2/news/1',
+                        shortlist_json),))
+
+    self.assertEqual('RNA Romantic Novel of the Year Awards', parsed['name'])
+    self.assertFalse(parsed['match_series'])
+    self.assertEqual([
+      ('2025', 'Love Me Till Wednesday', 'Suzanne Lissaman', 'Romantic Comedy', 'winner'),
+      ('2025.01', 'Exposure!', 'Julia Boggio', 'Romantic Comedy', 'shortlisted'),
+      ('2025.02', 'All the Painted Stars', 'Emma Denny',
+       'Popular Romantic Fiction Novel', 'shortlisted'),
+    ], [
+      (
+        entry['position'],
+        entry['title'],
+        entry['author'],
+        entry['category'],
+        entry['result'],
+      )
+      for entry in parsed['entries']
+    ])
+    self.assertNotIn('Things We Do for Love and Science', [
+      entry['title'] for entry in parsed['entries']
+    ])
+
+  def test_rna_romantic_novel_awards_fetcher_discovers_pages_and_shortlists(self):
+    from parser.base import CATEGORY_REGIONAL_NATIONAL_AWARDS, CATEGORY_ROMANCE
+    from parser.rna_awards import RNA_SHORTLIST_SEARCH_URLS
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.rna_awards import UrlFetcherRNARomanticNovelAwards
+
+    fetcher = UrlFetcherRNARomanticNovelAwards()
+    filters = [item['label'] for item in fetcher.get_filter_list()]
+
+    self.assertEqual('rna_romantic_novel_awards', fetcher.source_id)
+    self.assertEqual('RNA Romantic Novel of the Year Awards', fetcher.NAME)
+    self.assertEqual('https://romanticnovelistsassociation.org/past-winners', fetcher.URL)
+    self.assertEqual(248, fetcher.order)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+    self.assertIn(CATEGORY_ROMANCE, filters)
+    self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+
+    archive_html = '''
+      <h1>Past winners</h1>
+      <h2><a href="/winners/cover-story">Cover Story</a></h2>
+      <h2>Mhairi McFarlane</h2>
+      <ul>
+        <li>HarperCollins</li>
+        <li><a href="/award/romantic-novel-of-the-year">Romantic Novel of the Year</a></li>
+        <li><a href="/award-category/romantic-comedy">Romantic Comedy</a></li>
+        <li><a href="/year/2026">2026</a></li>
+      </ul>
+      <a href="https://romanticnovelistsassociation.org/past-winners/page/2/">2</a>
+    '''
+    page_two_html = '''
+      <h2><a href="/winners/all-painted">All the Painted Stars</a></h2>
+      <h2>Emma Denny</h2>
+      <ul>
+        <li>HQ</li>
+        <li><a href="/award/romantic-novel-of-the-year">Romantic Novel of the Year</a></li>
+        <li><a href="/award-category/popular">Popular Romantic Fiction</a></li>
+        <li><a href="/year/2025">2025</a></li>
+      </ul>
+    '''
+    search_json = json.dumps([{
+      'title': {
+        'rendered': 'The RNA announces the 2026 shortlists for the Romantic Novel of the Year Awards',
+      },
+      '_links': {'self': [{'href': 'https://romanticnovelistsassociation.org/wp-json/wp/v2/news/101382'}]},
+    }, {
+      'title': {'rendered': 'ROMANTIC NOVELISTS ASSOCIATION ROMANCE INDUSTRY AWARDS 2025 SHORTLISTS ANNOUNCED'},
+      '_links': {'self': [{'href': 'https://romanticnovelistsassociation.org/wp-json/wp/v2/news/industry'}]},
+    }])
+    shortlist_json = json.dumps({
+      'link': 'https://romanticnovelistsassociation.org/news/ronas2026-finalists',
+      'title': {'rendered': 'The RNA announces the 2026 shortlists for the Romantic Novel of the Year Awards'},
+      'content': {'rendered': '''
+        <section class="accordion">
+          <h2>Debut Romance Novel Award</h2>
+          <div class="panel">
+            <h3>Any Trope But You by Victoria Lavine</h3>
+            <ul><li>Publisher: Zaffre</li></ul>
+          </div>
+          <h2>The Joan Hessayon Award for New Writers (JHA)</h2>
+          <div class="panel">
+            <h3>Love &amp; Other Liabilities by Fiona McCann</h3>
+          </div>
+        </section>
+      '''},
+    })
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == fetcher.URL:
+        return archive_html
+      if url == 'https://romanticnovelistsassociation.org/past-winners/page/2/':
+        return page_two_html
+      if url in RNA_SHORTLIST_SEARCH_URLS:
+        return search_json
+      if url == 'https://romanticnovelistsassociation.org/wp-json/wp/v2/news/101382':
+        return shortlist_json
+      self.fail(url)
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+
+    self.assertEqual([
+      ('2025', 'All the Painted Stars', 'winner'),
+      ('2026', 'Cover Story', 'winner'),
+      ('2026.01', 'Any Trope But You', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertNotIn('Love & Other Liabilities', [
+      entry['title'] for entry in parsed['entries']
+    ])
+    self.assertIn('https://romanticnovelistsassociation.org/past-winners/page/2/', fetched)
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('rna_romantic_novel_awards', registry_ids)
+    self.assertLess(
+      registry_ids.index('rwa_rita_awards'),
+      registry_ids.index('rna_romantic_novel_awards'))
+    self.assertLess(
+      registry_ids.index('rna_romantic_novel_awards'),
+      registry_ids.index('writers_trust_atwood_gibson_fiction'))
+
+  def test_rna_joan_hessayon_parser_reads_archive_and_available_contenders(self):
+    from parser.rna_awards import RNAJoanHessayonAwardParser
+
+    archive_html = '''
+      <h1>Past winners</h1>
+      <h2><a href="/winners/love-liabilities">Love &amp; Other Liabilities</a></h2>
+      <h2>Fiona McCann</h2>
+      <ul>
+        <li>Poolbeg Press</li>
+        <li><a href="/award/joan-hessayon">Joan Hessayon</a></li>
+        <li><a href="/award-category/joan-hessayon">Joan Hessayon</a></li>
+        <li><a href="/year/2026">2026</a></li>
+      </ul>
+      <h2><a href="/winners/love-rebooted">Love Rebooted</a></h2>
+      <h2>Katy Summers</h2>
+      <ul>
+        <li>Audible Originals</li>
+        <li><a href="/award/joan-hessayon">Joan Hessayon</a></li>
+        <li><a href="/award-category/joan-hessayon">Joan Hessayon</a></li>
+        <li><a href="/year/2025">2025</a></li>
+      </ul>
+      <h2><a href="/winners/wedding-hitch">The Wedding Hitch</a></h2>
+      <h2>Claire McCauley</h2>
+      <ul>
+        <li>Joffe Books</li>
+        <li><a href="/award/joan-hessayon">Joan Hessayon</a></li>
+        <li><a href="/award-category/joan-hessayon">Joan Hessayon</a></li>
+        <li><a href="/year/2024">2024</a></li>
+      </ul>
+      <h2><a href="/winners/rona-book">Cover Story</a></h2>
+      <h2>Mhairi McFarlane</h2>
+      <ul>
+        <li>HarperCollins</li>
+        <li><a href="/award/romantic-novel-of-the-year">Romantic Novel of the Year</a></li>
+        <li><a href="/award-category/romantic-comedy">Romantic Comedy</a></li>
+        <li><a href="/year/2026">2026</a></li>
+      </ul>
+      <h2><a href="/winners/industry-person">Jane Agent</a></h2>
+      <ul>
+        <li><a href="/award/industry">RNA Industry</a></li>
+        <li><a href="/award-category/agent">Agent of the Year</a></li>
+        <li><a href="/year/2025">2025</a></li>
+      </ul>
+      <a href="https://romanticnovelistsassociation.org/past-winners/page/2/">2</a>
+    '''
+    page_two_html = '''
+      <h2><a href="/winners/foreign-land">In This Foreign Land</a></h2>
+      <h2>Suzie Hull</h2>
+      <ul>
+        <li>Orion Dash</li>
+        <li><a href="/award/joan-hessayon">Joan Hessayon</a></li>
+        <li><a href="/award-category/joan-hessayon">Joan Hessayon</a></li>
+        <li><a href="/year/2022">2022</a></li>
+      </ul>
+    '''
+    combined_2026 = json.dumps({
+      'link': 'https://romanticnovelistsassociation.org/news/ronas2026-finalists',
+      'title': {'rendered': 'The RNA announces the 2026 shortlists for the Romantic Novel of the Year Awards and the contenders JHA'},
+      'content': {'rendered': '''
+        <section class="accordion">
+          <h2>Debut Romance Novel Award</h2>
+          <div class="panel">
+            <h3>Any Trope But You by Victoria Lavine</h3>
+          </div>
+          <h2>The Joan Hessayon Award for New Writers (JHA)</h2>
+          <div class="panel">
+            <h3>A New Hope in the Highlands by Rachel Debrave</h3>
+            <h3>Love &amp; Other Liabilities by Fiona McCann</h3>
+          </div>
+        </section>
+      '''},
+    })
+    finalist_2025 = json.dumps({
+      'link': 'https://romanticnovelistsassociation.org/news/finalists-the-joan-hessayon-award-for-new-writers-2025',
+      'title': {'rendered': 'Finalists: The Joan Hessayon Award for New Writers 2025'},
+      'content': {'rendered': '''
+        <section class="text-block">
+          <p><strong><em>The Beat of Our Hearts</em> by Amanda Giles (D C Thompson):</strong></p>
+          <p>Delighted to be a contender.</p>
+        </section>
+        <section class="text-block">
+          <p><strong><em>Love Rebooted</em> by Katy Summers (Audible)</strong></p>
+        </section>
+      '''},
+    })
+    contenders_2024 = json.dumps({
+      'link': 'https://romanticnovelistsassociation.org/news/rna-joan-hessayon-award-for-new-writers-2024-six-contenders-announced',
+      'title': {'rendered': 'RNA Joan Hessayon Award for New Writers 2024 - Six Contenders Announced'},
+      'content': {'rendered': '''
+        <p>The contenders for 2024 are as follows:</p>
+        <ul>
+          <li>Helen Hawkins, <em>A Concert for Christmas</em>, Allison &amp; Busby</li>
+          <li>Claire McCauley, <em>The Wedding Hitch</em>, Joffe Books</li>
+        </ul>
+      '''},
+    })
+    contenders_2022 = json.dumps({
+      'link': 'https://romanticnovelistsassociation.org/news/contenders-announced-romantic-novelists-association-joan-hessayon-award-2022',
+      'title': {'rendered': 'Contenders Announced: Romantic Novelists Association Joan Hessayon Award 2022'},
+      'content': {'rendered': '''
+        <p><strong>The contenders for 2022 are as follows:</strong></p>
+        <p>Jennifer Bibby, <em>The Cornish Hideaway</em>, Simon &amp; Schuster UK</p>
+        <p>Suzie Hull, <em>In This Foreign Land</em>, Orion Dash</p>
+      '''},
+    })
+
+    parsed = RNAJoanHessayonAwardParser().parse(
+      archive_html,
+      'https://romanticnovelistsassociation.org/past-winners',
+      fetch_url=lambda url: page_two_html,
+      shortlist_pages=(
+        ('https://romanticnovelistsassociation.org/wp-json/wp/v2/news/101382', combined_2026),
+        ('https://romanticnovelistsassociation.org/wp-json/wp/v2/news/90777', finalist_2025),
+        ('https://romanticnovelistsassociation.org/wp-json/wp/v2/news/82583', contenders_2024),
+        ('https://romanticnovelistsassociation.org/wp-json/wp/v2/news/48477', contenders_2022),
+      ))
+
+    self.assertEqual('RNA Joan Hessayon Award for New Writers', parsed['name'])
+    self.assertFalse(parsed['match_series'])
+    self.assertEqual([
+      ('2022', 'In This Foreign Land', 'Suzie Hull', 'winner'),
+      ('2022.01', 'The Cornish Hideaway', 'Jennifer Bibby', 'shortlisted'),
+      ('2024', 'The Wedding Hitch', 'Claire McCauley', 'winner'),
+      ('2024.01', 'A Concert for Christmas', 'Helen Hawkins', 'shortlisted'),
+      ('2025', 'Love Rebooted', 'Katy Summers', 'winner'),
+      ('2025.01', 'The Beat of Our Hearts', 'Amanda Giles', 'shortlisted'),
+      ('2026', 'Love & Other Liabilities', 'Fiona McCann', 'winner'),
+      ('2026.01', 'A New Hope in the Highlands', 'Rachel Debrave', 'shortlisted'),
+    ], [
+      (
+        entry['position'],
+        entry['title'],
+        entry['author'],
+        entry['result'],
+      )
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(entry['category'] == 'Joan Hessayon' for entry in parsed['entries']))
+    self.assertNotIn('Cover Story', [entry['title'] for entry in parsed['entries']])
+    self.assertIn('official-news dependent', parsed['notes'][0])
+
+  def test_rna_joan_hessayon_fetcher_discovers_aggregate_contender_posts(self):
+    from parser.base import CATEGORY_REGIONAL_NATIONAL_AWARDS, CATEGORY_ROMANCE
+    from parser.rna_awards import RNA_JOAN_HESSAYON_SEARCH_URLS
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.rna_awards import (
+      UrlFetcherRNAJoanHessayonAward,
+      UrlFetcherRNARomanticNovelAwards,
+    )
+
+    fetcher = UrlFetcherRNAJoanHessayonAward()
+    rona = UrlFetcherRNARomanticNovelAwards()
+    filters = [item['label'] for item in fetcher.get_filter_list()]
+
+    self.assertEqual('rna_joan_hessayon_award', fetcher.source_id)
+    self.assertEqual('RNA Joan Hessayon Award for New Writers', fetcher.NAME)
+    self.assertEqual('https://romanticnovelistsassociation.org/past-winners', fetcher.URL)
+    self.assertEqual(248, fetcher.order)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+    self.assertIn(CATEGORY_ROMANCE, filters)
+    self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+
+    archive_html = '''
+      <h1>Past winners</h1>
+      <h2><a href="/winners/love-liabilities">Love &amp; Other Liabilities</a></h2>
+      <h2>Fiona McCann</h2>
+      <ul>
+        <li>Poolbeg Press</li>
+        <li><a href="/award/joan-hessayon">Joan Hessayon</a></li>
+        <li><a href="/award-category/joan-hessayon">Joan Hessayon</a></li>
+        <li><a href="/year/2026">2026</a></li>
+      </ul>
+      <a href="https://romanticnovelistsassociation.org/past-winners/page/2/">2</a>
+    '''
+    page_two_html = '''
+      <h2><a href="/winners/love-rebooted">Love Rebooted</a></h2>
+      <h2>Katy Summers</h2>
+      <ul>
+        <li>Audible Originals</li>
+        <li><a href="/award/joan-hessayon">Joan Hessayon</a></li>
+        <li><a href="/award-category/joan-hessayon">Joan Hessayon</a></li>
+        <li><a href="/year/2025">2025</a></li>
+      </ul>
+    '''
+    search_json = json.dumps([{
+      'title': {'rendered': 'Finalists: The Joan Hessayon Award for New Writers 2025'},
+      '_links': {'self': [{'href': 'https://romanticnovelistsassociation.org/wp-json/wp/v2/news/90777'}]},
+    }, {
+      'title': {'rendered': 'RNA Joan Hessayon Award Contender: Person - Book'},
+      '_links': {'self': [{'href': 'https://romanticnovelistsassociation.org/wp-json/wp/v2/news/profile'}]},
+    }, {
+      'title': {'rendered': 'The Historical Romantic Novel Award - Finalists'},
+      '_links': {'self': [{'href': 'https://romanticnovelistsassociation.org/wp-json/wp/v2/news/rona'}]},
+    }, {
+      'title': {'rendered': 'RNA Industry Awards 2025 Shortlists Announced'},
+      '_links': {'self': [{'href': 'https://romanticnovelistsassociation.org/wp-json/wp/v2/news/industry'}]},
+    }, {
+      'title': {'rendered': 'Joan Hessayon Award Members log in to request submission'},
+      '_links': {'self': [{'href': 'https://romanticnovelistsassociation.org/wp-json/wp/v2/pages/member'}]},
+    }])
+    finalist_json = json.dumps({
+      'link': 'https://romanticnovelistsassociation.org/news/finalists-the-joan-hessayon-award-for-new-writers-2025',
+      'title': {'rendered': 'Finalists: The Joan Hessayon Award for New Writers 2025'},
+      'content': {'rendered': '''
+        <p><strong><em>The Beat of Our Hearts</em> by Amanda Giles (D C Thompson):</strong></p>
+      '''},
+    })
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == fetcher.URL:
+        return archive_html
+      if url == 'https://romanticnovelistsassociation.org/past-winners/page/2/':
+        return page_two_html
+      if url in RNA_JOAN_HESSAYON_SEARCH_URLS:
+        return search_json
+      if url == 'https://romanticnovelistsassociation.org/wp-json/wp/v2/news/90777':
+        return finalist_json
+      self.fail(url)
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+
+    self.assertEqual([
+      ('2025', 'Love Rebooted', 'winner'),
+      ('2025.01', 'The Beat of Our Hearts', 'shortlisted'),
+      ('2026', 'Love & Other Liabilities', 'winner'),
+    ], [
+      (entry['position'], entry['title'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertIn('https://romanticnovelistsassociation.org/past-winners/page/2/', fetched)
+    self.assertIn('https://romanticnovelistsassociation.org/wp-json/wp/v2/news/90777', fetched)
+    self.assertNotIn('https://romanticnovelistsassociation.org/wp-json/wp/v2/news/profile', fetched)
+    self.assertNotIn('https://romanticnovelistsassociation.org/wp-json/wp/v2/news/industry', fetched)
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('rna_joan_hessayon_award', registry_ids)
+    self.assertLess(
+      registry_ids.index(rona.source_id),
+      registry_ids.index('rna_joan_hessayon_award'))
+    self.assertLess(
+      registry_ids.index('rna_joan_hessayon_award'),
+      registry_ids.index('ripped_bodice_awards'))
+
+  def test_ripped_bodice_awards_parser_reads_wikitext_json_and_grouped_titles(self):
+    from parser.ripped_bodice_awards import RippedBodiceAwardsParser
+
+    wikitext = """
+== Description ==
+This section should not be imported. ''[[Not a Romance Award]]'' by Someone.
+
+== Romance Awards ==
+In February 2020, the Ripped Bodice announced the first winners of their newly
+established awards for romance. The contest is titled The Ripped Bodice's
+Awards for Excellence in Romance Fiction and acknowledges the chosen best
+romance titles for 2019.<ref name="bookriot2019" /> The winners included
+''[[Xeni]]'' by [[Rebekah Weatherspoon]], ''[[Mrs. Martin's Incomparable Adventure]]''
+by [[Courtney Milan]], ''[[Get a Life, Chloe Brown]]'' by [[Talia Hibbert]],
+''[[A Prince on Paper]]''; ''[[One Ghosted, Twice Shy]]''; and
+''[[An Unconditional Freedom]]'' by [[Alyssa Cole]], ''[[American Love Story]]''
+by [[Adriana Herrera]], ''[[Trashed]]'' by [[Mia Hopkins]], and
+''[[The Austen Playbook]]'' by [[Lucy Parker]]. The 2020 winners were
+''[[Go Deep]]'' by [[Rilzy Adams]], ''[[Harbor]]'' by [[Rebekah Weatherspoon]],
+''[[Spoiler Alert]]'' by [[Olivia Dade]], ''[[Take a Hint, Dani Brown]]'' by
+[[Talia Hibbert]], ''[[The Care and Feeding of Waspish Widows]]'' by
+[[Olivia Waite]], ''[[The Duke Who Didn't]]'' by [[Courtney Milan]],
+''[[The Rakess]]'' by [[Scarlett Peckham]], ''[[The Roommate]]'' by
+[[Rosie Danan]], ''[[The Worst Best Man]]'' by [[Mia Sosa]],
+''[[You Had Me at Hola]]'' by [[Alexis Daria]], ''[[You Should See Me in a Crown]]''
+by [[Leah Johnson]], and ''[[Written in the Stars]]'' by [[Alexandria Bellefleur]].
+
+== References ==
+"""
+    source_json = json.dumps({'parse': {'wikitext': wikitext}})
+
+    parsed = RippedBodiceAwardsParser().parse(source_json)
+
+    self.assertEqual(
+      'Ripped Bodice Awards for Excellence in Romance Fiction',
+      parsed['name'])
+    self.assertFalse(parsed['match_series'])
+    self.assertEqual(21, len(parsed['entries']))
+    self.assertEqual([
+      ('2019', 'Xeni', 'Rebekah Weatherspoon', 'Romance Fiction', 'winner'),
+      ('2019.01', "Mrs. Martin's Incomparable Adventure", 'Courtney Milan',
+       'Romance Fiction', 'winner'),
+      ('2019.02', 'Get a Life, Chloe Brown', 'Talia Hibbert',
+       'Romance Fiction', 'winner'),
+      ('2019.03', 'A Prince on Paper', 'Alyssa Cole', 'Romance Fiction', 'winner'),
+      ('2019.04', 'One Ghosted, Twice Shy', 'Alyssa Cole',
+       'Romance Fiction', 'winner'),
+      ('2019.05', 'An Unconditional Freedom', 'Alyssa Cole',
+       'Romance Fiction', 'winner'),
+      ('2019.06', 'American Love Story', 'Adriana Herrera',
+       'Romance Fiction', 'winner'),
+      ('2019.07', 'Trashed', 'Mia Hopkins', 'Romance Fiction', 'winner'),
+      ('2019.08', 'The Austen Playbook', 'Lucy Parker',
+       'Romance Fiction', 'winner'),
+      ('2020', 'Go Deep', 'Rilzy Adams', 'Romance Fiction', 'winner'),
+      ('2020.01', 'Harbor', 'Rebekah Weatherspoon', 'Romance Fiction', 'winner'),
+      ('2020.02', 'Spoiler Alert', 'Olivia Dade', 'Romance Fiction', 'winner'),
+      ('2020.03', 'Take a Hint, Dani Brown', 'Talia Hibbert',
+       'Romance Fiction', 'winner'),
+      ('2020.04', 'The Care and Feeding of Waspish Widows', 'Olivia Waite',
+       'Romance Fiction', 'winner'),
+      ('2020.05', "The Duke Who Didn't", 'Courtney Milan',
+       'Romance Fiction', 'winner'),
+      ('2020.06', 'The Rakess', 'Scarlett Peckham', 'Romance Fiction', 'winner'),
+      ('2020.07', 'The Roommate', 'Rosie Danan', 'Romance Fiction', 'winner'),
+      ('2020.08', 'The Worst Best Man', 'Mia Sosa', 'Romance Fiction', 'winner'),
+      ('2020.09', 'You Had Me at Hola', 'Alexis Daria',
+       'Romance Fiction', 'winner'),
+      ('2020.10', 'You Should See Me in a Crown', 'Leah Johnson',
+       'Romance Fiction', 'winner'),
+      ('2020.11', 'Written in the Stars', 'Alexandria Bellefleur',
+       'Romance Fiction', 'winner'),
+    ], [
+      (
+        entry['position'],
+        entry['title'],
+        entry['author'],
+        entry['category'],
+        entry['result'],
+      )
+      for entry in parsed['entries']
+    ])
+    self.assertEqual(
+      'https://en.wikipedia.org/wiki/Xeni',
+      parsed['entries'][0]['source_url'])
+    self.assertNotIn('Not a Romance Award', [
+      entry['title'] for entry in parsed['entries']
+    ])
+
+  def test_ripped_bodice_awards_parser_accepts_raw_wikitext_and_fails_empty(self):
+    from parser.ripped_bodice_awards import RippedBodiceAwardsParser
+
+    raw_wikitext = """
+== Romance Awards ==
+The winners included ''Sample Title'' by Sample Author. The 2020 winners were
+''Other Title'' by Other Author.
+"""
+
+    parsed = RippedBodiceAwardsParser().parse(raw_wikitext)
+
+    self.assertEqual(['Sample Title', 'Other Title'], [
+      entry['title'] for entry in parsed['entries']
+    ])
+    with self.assertRaises(ValueError):
+      RippedBodiceAwardsParser().parse('== Description ==\nNo awards here.')
+
+  def test_ripped_bodice_awards_fetcher_metadata_parse_and_registry(self):
+    from parser.base import CATEGORY_REGIONAL_NATIONAL_AWARDS, CATEGORY_ROMANCE
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.ripped_bodice_awards import UrlFetcherRippedBodiceAwards
+
+    fetcher = UrlFetcherRippedBodiceAwards()
+    filters = [item['label'] for item in fetcher.get_filter_list()]
+
+    self.assertEqual('ripped_bodice_awards', fetcher.source_id)
+    self.assertEqual(
+      'Ripped Bodice Awards for Excellence in Romance Fiction',
+      fetcher.NAME)
+    self.assertEqual(
+      'https://en.wikipedia.org/wiki/The_Ripped_Bodice',
+      fetcher.display_url)
+    self.assertEqual(249, fetcher.order)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+    self.assertIn(CATEGORY_ROMANCE, filters)
+    self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+
+    source_json = json.dumps({
+      'parse': {
+        'wikitext': """
+== Romance Awards ==
+The winners included ''[[Xeni]]'' by [[Rebekah Weatherspoon]]. The 2020 winners
+were ''[[Go Deep]]'' by [[Rilzy Adams]].
+"""
+      }
+    })
+    parsed = fetcher.fetch_and_parse(lambda _url: source_json)
+
+    self.assertEqual(['Xeni', 'Go Deep'], [
+      entry['title'] for entry in parsed['entries']
+    ])
+    self.assertFalse(parsed['match_series'])
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('ripped_bodice_awards', registry_ids)
+    self.assertLess(
+      registry_ids.index('rna_romantic_novel_awards'),
+      registry_ids.index('ripped_bodice_awards'))
+    self.assertLess(
+      registry_ids.index('ripped_bodice_awards'),
+      registry_ids.index('writers_trust_atwood_gibson_fiction'))
+
+  def test_romantic_times_awards_parser_reads_archived_winner_and_nominee_pages(self):
+    from parser.romantic_times_awards import RomanticTimesReviewersChoiceParser
+
+    winner_url = (
+      'https://web.archive.org/web/20160301010101id_/'
+      'http://www.rtbookreviews.com/blog/90001/2015-rt-reviewers-choice-award-winners-historical-romance')
+    winner_html = '''
+      <article>
+        <h1 class="title">2015 RT Reviewers' Choice Award Winners — Historical Romance</h1>
+        <div class="field field-name-body">
+          <div class="field-item even">
+            <p><strong>Historical Romance</strong></p>
+            <p><em>The Rogue Not Taken</em> by Sarah MacLean</p>
+            <p><strong>Fantasy Novel</strong></p>
+            <p><em>Uprooted</em> by Naomi Novik</p>
+          </div>
+        </div>
+      </article>
+    '''
+    nominee_url = (
+      'https://web.archive.org/web/20160105213619id_/'
+      'http://www.rtbookreviews.com/blog/86296/2015-rt-reviewers-choice-award-nominees-series-romance')
+    nominee_html = '''
+      <article>
+        <h1 class="title">2015 RT Reviewers' Choice Award Nominees — Series Romance</h1>
+        <div class="field field-name-body">
+          <div class="field-item even">
+            <p><strong>Harlequin American</strong></p>
+            <table>
+              <tr>
+                <td>
+                  <a href="http://www.rtbookreviews.com/book-review/mistletoe-rodeo">
+                    <img alt="Amanda Renee, Mistletoe Rodeo" />
+                  </a>
+                </td>
+                <td><img alt="Marin Thomas: A Cowboy's Redemption" /></td>
+              </tr>
+            </table>
+            <p><strong>Mystery Novel</strong></p>
+            <table><tr><td><img alt="Naomi Novik, Uprooted" /></td></tr></table>
+          </div>
+        </div>
+      </article>
+    '''
+
+    winner_parsed = RomanticTimesReviewersChoiceParser().parse(winner_html, winner_url)
+    nominee_parsed = RomanticTimesReviewersChoiceParser().parse(nominee_html, nominee_url)
+
+    self.assertEqual(
+      [('2015', 'The Rogue Not Taken', 'Sarah MacLean', 'Historical Romance', 'winner')],
+      [
+        (
+          entry['position'],
+          entry['title'],
+          entry['author'],
+          entry['category'],
+          entry['result'],
+        )
+        for entry in winner_parsed['entries']
+      ])
+    self.assertEqual(winner_url, winner_parsed['entries'][0]['source_url'])
+    self.assertNotIn('Uprooted', [entry['title'] for entry in winner_parsed['entries']])
+
+    self.assertEqual([
+      ('2015.01', 'Mistletoe Rodeo', 'Amanda Renee', 'Harlequin American', 'nominee'),
+      ('2015.02', "A Cowboy's Redemption", 'Marin Thomas', 'Harlequin American', 'nominee'),
+    ], [
+      (
+        entry['position'],
+        entry['title'],
+        entry['author'],
+        entry['category'],
+        entry['result'],
+      )
+      for entry in nominee_parsed['entries']
+    ])
+    self.assertEqual(nominee_url, nominee_parsed['entries'][0]['source_url'])
+    with self.assertRaises(ValueError):
+      RomanticTimesReviewersChoiceParser().parse(
+        '<h1>2015 RT Reviewers Choice Award Nominees — Fantasy Novel</h1>'
+        '<div class="field-name-body"><div class="field-item">'
+        '<p><strong>Fantasy Novel</strong></p><p>Uprooted by Naomi Novik</p>'
+        '</div></div>',
+        nominee_url)
+
+  def test_romantic_times_awards_fetcher_uses_wayback_and_registry_order(self):
+    from parser.base import CATEGORY_REGIONAL_NATIONAL_AWARDS, CATEGORY_ROMANCE
+    from parser.romantic_times_awards import RT_CDX_DISCOVERY_URLS
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.romantic_times_awards import (
+      UrlFetcherRomanticTimesReviewersChoiceRomance,
+    )
+
+    fetcher = UrlFetcherRomanticTimesReviewersChoiceRomance()
+    filters = [item['label'] for item in fetcher.get_filter_list()]
+    snapshot_url = (
+      'https://web.archive.org/web/20160105213619id_/'
+      'http://www.rtbookreviews.com/blog/86296/2015-rt-reviewers-choice-award-nominees-series-romance')
+    cdx_json = json.dumps([
+      ['timestamp', 'original', 'statuscode', 'mimetype', 'digest'],
+      [
+        '20160105213619',
+        'http://www.rtbookreviews.com/blog/86296/2015-rt-reviewers-choice-award-nominees-series-romance',
+        '200',
+        'text/html',
+        'abc',
+      ],
+    ])
+    article_html = '''
+      <article>
+        <h1 class="title">2015 RT Reviewers' Choice Award Nominees — Series Romance</h1>
+        <div class="field field-name-body">
+          <div class="field-item even">
+            <p><strong>Kimani Romance</strong></p>
+            <table><tr><td><img alt="Sherelle Green, Beautiful Surrender" /></td></tr></table>
+          </div>
+        </div>
+      </article>
+    '''
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if 'librarything.com' in url.lower():
+        self.fail('LibraryThing should not be fetched for Romantic Times')
+      if url == fetcher.URL:
+        return cdx_json
+      if url in RT_CDX_DISCOVERY_URLS:
+        return '[]'
+      if url == snapshot_url:
+        return article_html
+      self.fail(url)
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+
+    self.assertEqual('romantic_times_reviewers_choice_romance', fetcher.source_id)
+    self.assertEqual(
+      "Romantic Times Reviewers' Choice Awards - Romance Categories",
+      fetcher.NAME)
+    self.assertEqual(250, fetcher.order)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+    self.assertIn(CATEGORY_ROMANCE, filters)
+    self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+    self.assertEqual(['Beautiful Surrender'], [
+      entry['title'] for entry in parsed['entries']
+    ])
+    self.assertEqual(snapshot_url, parsed['entries'][0]['source_url'])
+    self.assertFalse(parsed['match_series'])
+    self.assertFalse(any('librarything.com' in url.lower() for url in fetched))
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('romantic_times_reviewers_choice_romance', registry_ids)
+    self.assertLess(
+      registry_ids.index('ripped_bodice_awards'),
+      registry_ids.index('romantic_times_reviewers_choice_romance'))
+    self.assertLess(
+      registry_ids.index('romantic_times_reviewers_choice_romance'),
+      registry_ids.index('writers_trust_atwood_gibson_fiction'))
+    self.assertEqual(336, len(registry_ids))
+
+  def test_lambda_literary_awards_parser_reads_directory_and_current_shortlists(self):
+    from parser.lambda_literary_awards import (
+      LAMBDA_CURRENT_FINALISTS_URL,
+      LAMBDA_CURRENT_WINNERS_URL,
+      LambdaLiteraryAwardsRomanceParser,
+    )
+
+    directory_json = json.dumps({
+      'records': [{
+        'fields': {
+          'Year': 2024,
+          'Category': 'Gay Romance',
+          'Title': 'A Novel Love',
+          'Author': 'Casey Author',
+          'Status': 'Winner',
+        },
+      }, {
+        'fields': {
+          'Year': 2024,
+          'Category': 'Lesbian Romance',
+          'Title': 'Last Call at the Moonlight',
+          'Author': 'Riley Writer',
+          'Status': 'Finalist',
+        },
+      }, {
+        'fields': {
+          'Year': 2024,
+          'Category': 'Gay Erotica',
+          'Title': 'Not Imported',
+          'Author': 'Erotica Author',
+          'Status': 'Winner',
+        },
+      }],
+    })
+    finalist_html = '''
+      <main>
+        <h1>2026 Lammy Award finalist titles</h1>
+        <h2>LGBTQ+ Romance and Erotica</h2>
+        <ul>
+          <li><a href="/books/shore">A Shore Thing</a> // Joanna Lowell. Publisher</li>
+          <li>Under the Same Stars // Anita Kelly. Publisher</li>
+        </ul>
+        <h2>LGBTQ+ Erotica</h2>
+        <ul><li>Not a Romance Row // Other Writer. Publisher</li></ul>
+      </main>
+    '''
+    winner_html = '''
+      <html>
+        <head><title>2025 Lambda Literary Award Winners</title></head>
+        <body>
+          <main>
+            <h2>LGBTQ+ Romance and Erotica</h2>
+            <h2><a href="/books/shore">A Shore Thing</a></h2>
+            <h4>Joanna Lowell</h4>
+            <h2>LGBTQ+ Erotica</h2>
+            <h2>Not a Romance Row</h2>
+            <h4>Other Writer</h4>
+          </main>
+        </body>
+      </html>
+    '''
+
+    parsed = LambdaLiteraryAwardsRomanceParser().parse(
+      directory_json,
+      current_pages=(
+        (LAMBDA_CURRENT_FINALISTS_URL, finalist_html),
+        (LAMBDA_CURRENT_WINNERS_URL, winner_html),
+      ))
+
+    self.assertEqual('Lambda Literary Awards - Romance Categories', parsed['name'])
+    self.assertFalse(parsed['match_series'])
+    self.assertEqual([
+      ('2024', 'A Novel Love', 'Casey Author', 'Gay Romance', 'winner'),
+      ('2024.01', 'Last Call at the Moonlight', 'Riley Writer',
+       'Lesbian Romance', 'shortlisted'),
+      ('2025', 'A Shore Thing', 'Joanna Lowell', 'LGBTQ+ Romance and Erotica',
+       'winner'),
+      ('2025.01', 'Under the Same Stars', 'Anita Kelly',
+       'LGBTQ+ Romance and Erotica', 'shortlisted'),
+    ], [
+      (
+        entry['position'],
+        entry['title'],
+        entry['author'],
+        entry['category'],
+        entry['result'],
+      )
+      for entry in parsed['entries']
+    ])
+    self.assertNotIn('Not Imported', [
+      entry['title'] for entry in parsed['entries']
+    ])
+    self.assertNotIn('Not a Romance Row', [
+      entry['title'] for entry in parsed['entries']
+    ])
+    self.assertEqual(
+      'https://lambdaliterary.org/books/shore',
+      parsed['entries'][2]['source_url'])
+
+  def test_lambda_literary_awards_fetcher_metadata_parse_and_registry(self):
+    from parser.base import (
+      CATEGORY_LITERARY_GENERAL_FICTION,
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+      CATEGORY_ROMANCE,
+    )
+    from parser.lambda_literary_awards import (
+      LAMBDA_CURRENT_FINALISTS_URL,
+      LAMBDA_CURRENT_WINNERS_URL,
+    )
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.lambda_literary_awards import UrlFetcherLambdaLiteraryAwardsRomance
+
+    fetcher = UrlFetcherLambdaLiteraryAwardsRomance()
+    filters = [item['label'] for item in fetcher.get_filter_list()]
+    directory_html = '''
+      <iframe src="https://airtable.com/embed/appu8PIf1Vu0s7g1E/shrMKDUyEN6S80ndL"></iframe>
+    '''
+    finalist_html = '''
+      <main>
+        <h1>2026 Lammy Award finalist titles</h1>
+        <h2>Lesbian Romance</h2>
+        <p>The First Bright Thing // J. R. Dawson. Tor Books</p>
+      </main>
+    '''
+    winner_html = '''
+      <main>
+        <h2>Lesbian Romance</h2>
+        <h2>The First Bright Thing</h2>
+        <h4>J. R. Dawson</h4>
+      </main>
+    '''
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == fetcher.URL:
+        return directory_html
+      if url == LAMBDA_CURRENT_FINALISTS_URL:
+        return finalist_html
+      if url == LAMBDA_CURRENT_WINNERS_URL:
+        return winner_html
+      self.fail(url)
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+
+    self.assertEqual('lambda_literary_awards_romance', fetcher.source_id)
+    self.assertEqual('Lambda Literary Awards - Romance Categories', fetcher.NAME)
+    self.assertEqual(251, fetcher.order)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+    self.assertIn(CATEGORY_ROMANCE, filters)
+    self.assertIn(CATEGORY_LITERARY_GENERAL_FICTION, filters)
+    self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+    self.assertEqual([
+      (fetcher.URL),
+      (LAMBDA_CURRENT_FINALISTS_URL),
+      (LAMBDA_CURRENT_WINNERS_URL),
+    ], fetched)
+    self.assertEqual([
+      ('2025', 'The First Bright Thing', 'winner'),
+    ], [
+      (entry['position'], entry['title'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertIn('Airtable data', parsed['notes'][0])
+    self.assertFalse(parsed['match_series'])
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('lambda_literary_awards_romance', registry_ids)
+    self.assertLess(
+      registry_ids.index('romantic_times_reviewers_choice_romance'),
+      registry_ids.index('lambda_literary_awards_romance'))
+    self.assertLess(
+      registry_ids.index('lambda_literary_awards_romance'),
+      registry_ids.index('romance_writers_australia_ruby_awards'))
+
+  def test_romance_writers_australia_ruby_parser_reads_shopify_finalists(self):
+    from parser.romance_writers_australia import RomanceWritersAustraliaRubyParser
+
+    source_json = json.dumps({
+      'resources': {'results': {'articles': [{
+        'title': 'Ruby Finalists Announced!',
+        'handle': 'ruby-finalists-announced',
+        'published_at': '2020-07-17T04:00:00.000Z',
+        'tags': ['Ruby', 'Contests'],
+        'url': '/blogs/blog/ruby-finalists-announced',
+        'body': '''
+          <h3>And the finalists are...</h3>
+          <h4>Romantic Suspense</h4>
+          <p><strong>Leah Ashton</strong> - Out Run the Night (previously 'Defiant')</p>
+          <p><strong>Claire Boston</strong> - Nothing to Lose</p>
+          <h4>Contemporary</h4>
+          <p><strong>Amy Andrews</strong> - Nothing But Trouble</p>
+        ''',
+      }]}}
+    })
+
+    parsed = RomanceWritersAustraliaRubyParser().parse(
+      source_json,
+      'https://romanceaustralia.com/search/suggest.json?q=RUBY')
+
+    self.assertEqual('Romance Writers of Australia RUBY Awards', parsed['name'])
+    self.assertFalse(parsed['match_series'])
+    self.assertEqual([
+      ('2020.01', 'Out Run the Night', 'Leah Ashton', 'Romantic Suspense', 'shortlisted'),
+      ('2020.02', 'Nothing to Lose', 'Claire Boston', 'Romantic Suspense', 'shortlisted'),
+      ('2020.03', 'Nothing But Trouble', 'Amy Andrews', 'Contemporary', 'shortlisted'),
+    ], [
+      (
+        entry['position'],
+        entry['title'],
+        entry['author'],
+        entry['category'],
+        entry['result'],
+      )
+      for entry in parsed['entries']
+    ])
+    self.assertIn('Official migrated RWAus finalist/nominee posts', parsed['notes'][0])
+
+  def test_romance_writers_australia_ruby_parser_reads_2023_dash_rows(self):
+    from parser.romance_writers_australia import RomanceWritersAustraliaRubyParser
+
+    source_json = json.dumps({
+      'resources': {'results': {'articles': [{
+        'title': 'Romantic Book of the Year 2023',
+        'handle': 'romantic-book-of-the-year-2023',
+        'published_at': '2023-07-11T04:00:00.000Z',
+        'tags': ['Category_RWA News'],
+        'url': '/blogs/blog/romantic-book-of-the-year-2023',
+        'body': '''
+          <p>Please put your hands together for the Romance Writers of Australia
+          Romantic Book of the Year finalists for 2023!</p>
+          <h3>And the finalists are...</h3>
+          <h4>Contemporary – LONG</h4>
+          <p><strong>Francis Cowie </strong>– Hampton Lane</p>
+          <h4>Contemporary – SHORT</h4>
+          <p><strong>Amy Andrews </strong>– Nurse's Outback Temptation</p>
+        ''',
+      }]}}
+    })
+
+    parsed = RomanceWritersAustraliaRubyParser().parse(source_json)
+
+    self.assertEqual([
+      ('2023.01', 'Hampton Lane', 'Francis Cowie', 'Contemporary - LONG'),
+      ('2023.02', "Nurse's Outback Temptation", 'Amy Andrews', 'Contemporary - SHORT'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['category'])
+      for entry in parsed['entries']
+    ])
+
+  def test_romance_writers_australia_ruby_parser_normalizes_nominees(self):
+    from parser.romance_writers_australia import RomanceWritersAustraliaRubyParser
+
+    source_json = json.dumps({
+      'resources': {'results': {'articles': [{
+        'title': 'Shout Out to the Ruby Nominees!',
+        'handle': 'shout-out-to-the-ruby-nominees',
+        'published_at': '2022-08-07T04:00:00.000Z',
+        'tags': ['Ruby'],
+        'url': '/blogs/blog/shout-out-to-the-ruby-nominees',
+        'body': '''
+          <p>Please put your hands together for the Romance Writers of Australia
+          Romantic Book of the Year finalists for 2022!</p>
+          <h4>Romantic Elements</h4>
+          <p><strong>Lee Christine</strong> - Crackenback</p>
+        ''',
+      }]}}
+    })
+
+    parsed = RomanceWritersAustraliaRubyParser().parse(source_json)
+
+    self.assertEqual([
+      ('2022.01', 'Crackenback', 'Lee Christine', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+
+  def test_romance_writers_australia_ruby_parser_fetches_archived_winners(self):
+    from parser.romance_writers_australia import (
+      RWAUS_RUBY_CDX_URL,
+      RomanceWritersAustraliaRubyParser,
+    )
+
+    cdx_json = json.dumps([
+      ['timestamp', 'original', 'statuscode', 'mimetype', 'digest'],
+      [
+        '20181107042249',
+        'http://romanceaustralia.com:80/awards/romantic-book-of-the-year-ruby-2/',
+        '200',
+        'text/html',
+        'abc',
+      ],
+    ])
+    snapshot_url = (
+      'https://web.archive.org/web/20181107042249id_/'
+      'http://romanceaustralia.com:80/awards/romantic-book-of-the-year-ruby-2/')
+    archive_html = '''
+      <table>
+        <tr><th>Year</th><th>Category</th><th>Title</th><th>Author</th></tr>
+        <tr><td>2014</td><td>Short Category</td><td>Her Favourite Rival</td><td>Sarah Mayberry</td></tr>
+        <tr><td>2020</td><td>Romantic Suspense</td><td>Out Run the Night</td><td>Leah Ashton</td></tr>
+      </table>
+    '''
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == RWAUS_RUBY_CDX_URL:
+        return cdx_json
+      if url == snapshot_url:
+        return archive_html
+      self.fail(url)
+
+    parsed = RomanceWritersAustraliaRubyParser().parse('{}', fetch_url=fetch_url)
+
+    self.assertEqual([RWAUS_RUBY_CDX_URL, snapshot_url], fetched)
+    self.assertEqual([
+      ('2014', 'Her Favourite Rival', 'Sarah Mayberry', 'Short Category', 'winner'),
+      ('2020', 'Out Run the Night', 'Leah Ashton', 'Romantic Suspense', 'winner'),
+    ], [
+      (
+        entry['position'],
+        entry['title'],
+        entry['author'],
+        entry['category'],
+        entry['result'],
+      )
+      for entry in parsed['entries']
+    ])
+
+  def test_romance_writers_australia_ruby_parser_promotes_explicit_winner(self):
+    from parser.romance_writers_australia import RomanceWritersAustraliaRubyParser
+
+    source_json = json.dumps({
+      'resources': {'results': {'articles': [{
+        'title': 'Ruby Finalists Announced!',
+        'handle': 'ruby-finalists-announced',
+        'published_at': '2020-07-17T04:00:00.000Z',
+        'tags': ['Ruby'],
+        'url': '/blogs/blog/ruby-finalists-announced',
+        'body': '''
+          <h4>Romantic Suspense</h4>
+          <p><strong>Leah Ashton</strong> - Out Run the Night</p>
+          <p><strong>Claire Boston</strong> - Shelter</p>
+        ''',
+      }]}}
+    })
+    archive_html = '''
+      <table>
+        <tr><th>Year</th><th>Category</th><th>Title</th><th>Author</th></tr>
+        <tr><td>2020</td><td>Romantic Suspense</td><td>Out Run the Night</td><td>Leah Ashton</td></tr>
+      </table>
+    '''
+
+    parsed = RomanceWritersAustraliaRubyParser().parse(
+      source_json,
+      archived_pages=(('https://web.archive.org/web/2020id_/ruby', archive_html),))
+
+    self.assertEqual([
+      ('2020', 'Out Run the Night', 'winner'),
+      ('2020.01', 'Shelter', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['result'])
+      for entry in parsed['entries']
+    ])
+
+  def test_romance_writers_australia_ruby_fetcher_metadata_and_registry(self):
+    from parser.base import CATEGORY_REGIONAL_NATIONAL_AWARDS, CATEGORY_ROMANCE
+    from parser.romance_writers_australia import RWAUS_RUBY_CDX_URL
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.romance_writers_australia import (
+      UrlFetcherRomanceWritersAustraliaRubyAwards,
+    )
+
+    fetcher = UrlFetcherRomanceWritersAustraliaRubyAwards()
+    filters = [item['label'] for item in fetcher.get_filter_list()]
+    cdx_json = json.dumps([
+      ['timestamp', 'original', 'statuscode', 'mimetype', 'digest'],
+      ['20181107042249', 'http://romanceaustralia.com/ruby', '200', 'text/html', 'abc'],
+    ])
+    snapshot_url = 'https://web.archive.org/web/20181107042249id_/http://romanceaustralia.com/ruby'
+    search_json = json.dumps({
+      'resources': {'results': {'articles': [{
+        'title': 'Ruby Finalists Announced!',
+        'handle': 'ruby-finalists-announced',
+        'published_at': '2021-07-01T04:00:00.000Z',
+        'tags': ['Ruby'],
+        'url': '/blogs/blog/ruby-finalists-announced-2',
+        'body': '<h4>Historical</h4><p><strong>Amy Rose Bennett</strong> - How to Catch a Sinful Marquess</p>',
+      }]}}
+    })
+    archive_html = '''
+      <table>
+        <tr><th>Year</th><th>Category</th><th>Title</th><th>Author</th></tr>
+        <tr><td>2014</td><td>Short Category</td><td>Her Favourite Rival</td><td>Sarah Mayberry</td></tr>
+      </table>
+    '''
+
+    def fetch_url(url):
+      if url == fetcher.URL:
+        return search_json
+      if url == RWAUS_RUBY_CDX_URL:
+        return cdx_json
+      if url == snapshot_url:
+        return archive_html
+      self.fail(url)
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+
+    self.assertEqual('romance_writers_australia_ruby_awards', fetcher.source_id)
+    self.assertEqual('Romance Writers of Australia RUBY Awards', fetcher.NAME)
+    self.assertEqual(252, fetcher.order)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+    self.assertIn(CATEGORY_ROMANCE, filters)
+    self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+    self.assertEqual([
+      ('2014', 'Her Favourite Rival', 'winner'),
+      ('2021.01', 'How to Catch a Sinful Marquess', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertFalse(parsed['match_series'])
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('romance_writers_australia_ruby_awards', registry_ids)
+    self.assertLess(
+      registry_ids.index('lambda_literary_awards_romance'),
+      registry_ids.index('romance_writers_australia_ruby_awards'))
+    self.assertLess(
+      registry_ids.index('romance_writers_australia_ruby_awards'),
+      registry_ids.index('writers_trust_atwood_gibson_fiction'))
+
+  def test_australian_romance_readers_parser_reads_2025_official_lists(self):
+    from parser.australian_romance_readers import AustralianRomanceReadersAwardsParser
+
+    page_html = '''
+      <p>The winners for the 2025 awards were announced. They are highlighted
+      below in pink bold, with runners-up in pink.</p>
+      <table><tr><td>
+        <p><span style="color: #000000;"><strong>Favourite Paranormal Romance 2025</strong></span></p>
+        <ul>
+          <li><strong><span style="color: #ff00ff;"><em>Atonement Sky</em> by Nalini Singh</span></strong></li>
+          <li><em>Because the Night</em> by Kylie Scott</li>
+          <li><span style="color: #ff00ff;"><em>Poison Ivy</em> by Shannon Curtis</span></li>
+        </ul>
+        <p><span style="color: #000000;"><strong>Favourite Continuing Romance Series 2025</strong></span></p>
+        <ul><li><strong><span style="color: #ff00ff;">Hope Creek series by Alyssa J Montgomery</span></strong></li></ul>
+      </td><td>
+        <p><strong><span style="color: #000000;">Favourite Australian-set romance 2025</span></strong></p>
+        <ul>
+          <li><em>An Academic Affair</em> by Jodi McAlister</li>
+          <li><span style="color: #ff00ff;"><strong><em>In the Long Run</em> by Emma Mugglestone</strong></span></li>
+        </ul>
+        <p><strong><span style="color: #000000;">Favourite romance couple 2025</span></strong></p>
+        <ul><li><strong><span style="color: #ff00ff;"><em>Sharing Forever in Hope Creek</em> by Alyssa J Montgomery (Callie and Jack)</span></strong></li></ul>
+      </td></tr></table>
+    '''
+
+    parsed = AustralianRomanceReadersAwardsParser().parse(
+      '',
+      year_pages=(('https://australianromancereaders.com.au/awards/2025-2/', page_html),))
+
+    self.assertEqual('Australian Romance Readers Awards', parsed['name'])
+    self.assertFalse(parsed['match_series'])
+    self.assertEqual([
+      ('2025', 'Atonement Sky', 'Nalini Singh', 'Favourite Paranormal Romance', 'winner'),
+      ('2025.01', 'In the Long Run', 'Emma Mugglestone', 'Favourite Australian-set romance', 'winner'),
+      ('2025.02', 'Because the Night', 'Kylie Scott', 'Favourite Paranormal Romance', 'shortlisted'),
+      ('2025.03', 'Poison Ivy', 'Shannon Curtis', 'Favourite Paranormal Romance', 'shortlisted'),
+      ('2025.04', 'An Academic Affair', 'Jodi McAlister', 'Favourite Australian-set romance', 'shortlisted'),
+    ], [
+      (
+        entry['position'],
+        entry['title'],
+        entry['author'],
+        entry['category'],
+        entry['result'],
+      )
+      for entry in parsed['entries']
+    ])
+    self.assertIn('Official ARRA nominee/shortlist-style category lists', parsed['notes'][0])
+    self.assertIn('reference-only', parsed['notes'][-1])
+
+  def test_australian_romance_readers_parser_reads_legacy_br_rows(self):
+    from parser.australian_romance_readers import AustralianRomanceReadersAwardsParser
+
+    page_html = '''
+      <h2><span style="color: #666699;"><strong>2015 award winners</strong></span></h2>
+      <p><span style="color: #666699;"><strong>Favourite Sci Fi, Fantasy or Futuristic Romance</strong></span><br/>
+      1916-ish by Ebony McKenna<br/>
+      <span style="color: #ff00ff;"><strong>Base by Cathleen Ross</strong></span><br/>
+      Chaos Broken by Rebekah Turner</p>
+      <p><span style="color: #666699;"><strong>Favourite New Romance Author for 2015</strong></span><br/>
+      Abbie Jackson<br/>
+      <span style="color: #ff00ff;"><strong>Kerrie Paterson</strong></span></p>
+      <p><span style="color: #666699;"><strong>Favourite Cover from a romance published in 2015</strong></span><br/>
+      Northern Heat by Helene Young (Penguin)<br/>
+      <strong><span style="color: #ff00ff;">The Horse Thief by Tea Cooper (Escape)</span></strong></p>
+    '''
+
+    parsed = AustralianRomanceReadersAwardsParser().parse(
+      '',
+      year_pages=(('https://australianromancereaders.com.au/awards/2015-2/', page_html),))
+
+    self.assertEqual([
+      ('2015', 'Base', 'Cathleen Ross', 'Favourite Sci Fi, Fantasy or Futuristic Romance', 'winner'),
+      ('2015.01', 'The Horse Thief', 'Tea Cooper', 'Favourite Cover from a romance published in 2015', 'winner'),
+      ('2015.02', '1916-ish', 'Ebony McKenna', 'Favourite Sci Fi, Fantasy or Futuristic Romance', 'shortlisted'),
+      ('2015.03', 'Chaos Broken', 'Rebekah Turner', 'Favourite Sci Fi, Fantasy or Futuristic Romance', 'shortlisted'),
+      ('2015.04', 'Northern Heat', 'Helene Young', 'Favourite Cover from a romance published in 2015', 'shortlisted'),
+    ], [
+      (
+        entry['position'],
+        entry['title'],
+        entry['author'],
+        entry['category'],
+        entry['result'],
+      )
+      for entry in parsed['entries']
+    ])
+
+  def test_australian_romance_readers_parser_marks_winner_only_pages(self):
+    from parser.australian_romance_readers import AustralianRomanceReadersAwardsParser
+
+    page_html = '''
+      <p>Winners for 2008, presented at ARRC09 in February 2009, were:</p>
+      <p><span style="color: #666699;"><b>Favourite Paranormal Romance for 2008</b></span></p>
+      <ul><li><em>Acheron</em> by Sherrilyn Kenyon</li></ul>
+      <div><span style="color: #666699;"><b>Favourite Category/Series Romance for 2008</b></span></div>
+      <ul><li><em>The Marciano Love-Child</em> by Melanie Milburne</li></ul>
+      <div><span style="color: #666699;"><b>Favourite Australian Romance Author for 2008</b></span></div>
+      <ul><li>Stephanie Laurens</li></ul>
+    '''
+
+    parsed = AustralianRomanceReadersAwardsParser().parse(
+      '',
+      year_pages=(('https://australianromancereaders.com.au/awards/2008-2/', page_html),))
+
+    self.assertEqual([
+      ('2008', 'Acheron', 'Sherrilyn Kenyon', 'Favourite Paranormal Romance', 'winner'),
+      ('2008.01', 'The Marciano Love-Child', 'Melanie Milburne', 'Favourite Category/Series Romance', 'winner'),
+    ], [
+      (
+        entry['position'],
+        entry['title'],
+        entry['author'],
+        entry['category'],
+        entry['result'],
+      )
+      for entry in parsed['entries']
+    ])
+    self.assertIn('winner-only pages were parsed for: 2008', parsed['notes'][0])
+
+  def test_australian_romance_readers_fetcher_metadata_and_registry(self):
+    from parser.base import CATEGORY_REGIONAL_NATIONAL_AWARDS, CATEGORY_ROMANCE
+    from parser.australian_romance_readers import ARRA_REST_PAGE_URL
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.australian_romance_readers import (
+      UrlFetcherAustralianRomanceReadersAwards,
+    )
+
+    fetcher = UrlFetcherAustralianRomanceReadersAwards()
+    index_html = '<a href="https://australianromancereaders.com.au/awards/2025-2/">2025</a>'
+    page_html = '''
+      <p><strong>Favourite Historical Romance 2025</strong></p>
+      <ul>
+        <li><strong><span style="color: #ff00ff;"><em>The Nanny's Handbook</em> by Amy Rose Bennett</span></strong></li>
+        <li><em>Sir Hugo Seeks a Wife</em> by Anna Campbell</li>
+      </ul>
+    '''
+    rest_json = json.dumps([{
+      'link': 'https://australianromancereaders.com.au/awards/2025-2/',
+      'content': {'rendered': page_html},
+    }])
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == fetcher.URL:
+        return index_html
+      if url == ARRA_REST_PAGE_URL.format(slug='2025-2'):
+        return rest_json
+      self.fail(url)
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+    filters = [item['label'] for item in fetcher.get_filter_list()]
+
+    self.assertEqual('australian_romance_readers_awards', fetcher.source_id)
+    self.assertEqual('Australian Romance Readers Awards', fetcher.NAME)
+    self.assertEqual(253, fetcher.order)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+    self.assertIn(CATEGORY_ROMANCE, filters)
+    self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+    self.assertEqual([
+      fetcher.URL,
+      ARRA_REST_PAGE_URL.format(slug='2025-2'),
+    ], fetched)
+    self.assertEqual([
+      ('2025', "The Nanny's Handbook", 'Amy Rose Bennett', 'winner'),
+      ('2025.01', 'Sir Hugo Seeks a Wife', 'Anna Campbell', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('australian_romance_readers_awards', registry_ids)
+    self.assertLess(
+      registry_ids.index('romance_writers_australia_ruby_awards'),
+      registry_ids.index('australian_romance_readers_awards'))
+    self.assertLess(
+      registry_ids.index('australian_romance_readers_awards'),
+      registry_ids.index('writers_trust_atwood_gibson_fiction'))
+
+  def test_holt_medallion_parser_reads_modern_finalist_lists(self):
+    from parser.holt_medallion import HOLTMedallionParser
+
+    page_html = '''
+      <h3><strong>Congratulations to all of the finalists!</strong></h3>
+      <p>Winners will be announced in June.</p>
+      <h4>Short Contemporary</h4>
+      <ul>
+        <li><em><strong>No Excuses</strong></em> &#8211; Andrea Jenelle</li>
+        <li><em><strong>The Maverick's Christmas Countdown</strong></em> &#8211; Heatherly Bell</li>
+      </ul>
+      <h4>Best Book By a Virginia Author</h4>
+      <ul>
+        <li><strong><em>A Great and Terrible Darkness</em></strong> -Linda J. White</li>
+      </ul>
+    '''
+
+    parsed = HOLTMedallionParser().parse(
+      '',
+      pages=(('https://virginiaromancewriters.com/2025-holt-medallion-finalists/', page_html),))
+
+    self.assertEqual('HOLT Medallion', parsed['name'])
+    self.assertFalse(parsed['match_series'])
+    self.assertEqual([
+      ('2025.01', 'No Excuses', 'Andrea Jenelle', 'Short Contemporary', 'shortlisted'),
+      (
+        '2025.02',
+        "The Maverick's Christmas Countdown",
+        'Heatherly Bell',
+        'Short Contemporary',
+        'shortlisted',
+      ),
+      (
+        '2025.03',
+        'A Great and Terrible Darkness',
+        'Linda J. White',
+        'Best Book By a Virginia Author',
+        'shortlisted',
+      ),
+    ], [
+      (
+        entry['position'],
+        entry['title'],
+        entry['author'],
+        entry['category'],
+        entry['result'],
+      )
+      for entry in parsed['entries']
+    ])
+    self.assertIn('finalist/shortlist-style rows were parsed for: 2025', parsed['notes'][0])
+    self.assertIn('reference-only', parsed['notes'][-1])
+
+  def test_holt_medallion_parser_reads_legacy_heading_and_table_shapes(self):
+    from parser.holt_medallion import HOLTMedallionParser
+
+    heading_html = '''
+      <h1>CONGRATULATIONS 2018 FINALISTS</h1>
+      <h2><strong><em>Best First Book</em></strong></h2>
+      <h5><em>Under Her Skin</em> &#8211; Adriana Anders*</h5>
+      <h5><em>Snapdragon</em> &#8211; Kilby Blades</h5>
+    '''
+    table_html = '''
+      <h1>CONGRATULATIONS FINALISTS!</h1>
+      <table>
+        <tr><td><h5><strong>Short Contemporary</strong></h5></td><td><h5><strong>Author</strong></h5></td></tr>
+        <tr><td><strong>T</strong>hree Day Fiancee</td><td>Marissa Clarke</td></tr>
+        <tr><td>The Marine's Secret Daughter</td><td>Carrie Nichols</td></tr>
+      </table>
+    '''
+
+    parsed = HOLTMedallionParser().parse('', pages=(
+      ('https://virginiaromancewriters.com/holt-medallion/2018-holt-medallion-finalists-wi/', heading_html),
+      ('https://virginiaromancewriters.com/holt-medallion/2019-holt-medallion-for-excellence-in-writing/', table_html),
+    ))
+
+    self.assertEqual([
+      ('2018.01', 'Under Her Skin', 'Adriana Anders', 'Best First Book'),
+      ('2018.02', 'Snapdragon', 'Kilby Blades', 'Best First Book'),
+      ('2019.01', 'Three Day Fiancee', 'Marissa Clarke', 'Short Contemporary'),
+      ('2019.02', "The Marine's Secret Daughter", 'Carrie Nichols', 'Short Contemporary'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['category'])
+      for entry in parsed['entries']
+    ])
+
+  def test_holt_medallion_parser_reads_past_winners_and_award_of_merit_finalists(self):
+    from parser.holt_medallion import HOLTMedallionParser
+
+    page_html = '''
+      <div>
+        <strong>2017 HOLT Medallion Winners &amp; Award of Merit Finalists<br></strong>
+        <table>
+          <tbody>
+            <tr><th>Best First Book</th></tr>
+            <tr><td><strong>Winner<br><em>Highland Deception&nbsp;</em>&#8211; Lori Ann Bailey</strong><br>
+              <strong>Award of Merit Finalists</strong>
+              <ul>
+                <li><em>To Steal a Heart &#8211;</em>&nbsp;K. C. Bateman</li>
+                <li><em>A Family for the Farmer &#8211;&nbsp;</em>Laurel Blount</li>
+              </ul>
+            </td></tr>
+          </tbody>
+        </table>
+        <hr>
+        <h4 id="2016">2016 Winners and Award of Merit Finalists</h4>
+        <strong>Short Contemporary<br>Winner<br></strong>
+        <em>Three Nights Before Christmas &#8211;&nbsp;</em>Kat Latham
+        <p><strong>Award of Merit Finalists</strong></p>
+        <ul>
+          <li><em>One Night Before Christmas &#8211; </em>Susan Carlisle</li>
+        </ul>
+      </div>
+    '''
+
+    parsed = HOLTMedallionParser().parse(
+      '',
+      pages=(('https://virginiaromancewriters.com/holt-medallion/holt-medallion-past-winners/', page_html),))
+
+    self.assertEqual([
+      ('2016', 'Three Nights Before Christmas', 'Kat Latham', 'Short Contemporary', 'winner'),
+      ('2016.01', 'One Night Before Christmas', 'Susan Carlisle', 'Short Contemporary', 'shortlisted'),
+      ('2017', 'Highland Deception', 'Lori Ann Bailey', 'Best First Book', 'winner'),
+      ('2017.01', 'To Steal a Heart', 'K. C. Bateman', 'Best First Book', 'shortlisted'),
+      ('2017.02', 'A Family for the Farmer', 'Laurel Blount', 'Best First Book', 'shortlisted'),
+    ], [
+      (
+        entry['position'],
+        entry['title'],
+        entry['author'],
+        entry['category'],
+        entry['result'],
+      )
+      for entry in parsed['entries']
+    ])
+    self.assertIn('winner rows were parsed for: 2016, 2017', parsed['notes'][1])
+
+  def test_holt_medallion_parser_reads_awards_pages_and_notes_video_only_winners(self):
+    from parser.holt_medallion import HOLTMedallionParser
+
+    search_json = json.dumps([
+      {
+        'title': '2025 HOLT Medallion Awards',
+        'url': 'https://virginiaromancewriters.com/2025-holt-medallion-awards/',
+        '_links': {'self': [{'href': 'https://virginiaromancewriters.com/wp-json/wp/v2/pages/2809'}]},
+      },
+      {
+        'title': '2026 HOLT Medallion Awards',
+        'url': 'https://virginiaromancewriters.com/2026-holt-medallion-awards/',
+        '_links': {'self': [{'href': 'https://virginiaromancewriters.com/wp-json/wp/v2/pages/2937'}]},
+      },
+    ])
+    winner_html = '''
+      <h3>Romantic Suspense</h3>
+      <figure><img src="cover.jpg" /></figure>
+      <p><strong><em>Hunting Justice</em></strong> by Sami A. Abrams</p>
+    '''
+    video_html = '''
+      <div><video><source src="https://example.com/HOLT-Video-2026.mp4" /></video></div>
+    '''
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url.endswith('search?search=HOLT&per_page=100'):
+        return search_json
+      if url.endswith('/pages/2809'):
+        return json.dumps({
+          'link': 'https://virginiaromancewriters.com/2025-holt-medallion-awards/',
+          'title': {'rendered': '2025 HOLT Medallion Awards'},
+          'content': {'rendered': winner_html},
+        })
+      if url.endswith('/pages/2937'):
+        return json.dumps({
+          'link': 'https://virginiaromancewriters.com/2026-holt-medallion-awards/',
+          'title': {'rendered': '2026 HOLT Medallion Awards'},
+          'content': {'rendered': video_html},
+        })
+      self.fail(url)
+
+    parsed = HOLTMedallionParser().parse(
+      '<a href="https://virginiaromancewriters.com/2025-holt-medallion-awards/">Awards</a>',
+      fetch_url=fetch_url)
+
+    self.assertEqual([
+      'https://virginiaromancewriters.com/wp-json/wp/v2/search?search=HOLT&per_page=100',
+      'https://virginiaromancewriters.com/wp-json/wp/v2/pages/2809',
+      'https://virginiaromancewriters.com/wp-json/wp/v2/pages/2937',
+    ], fetched)
+    self.assertEqual([
+      ('2025', 'Hunting Justice', 'Sami A. Abrams', 'Romantic Suspense', 'winner'),
+    ], [
+      (
+        entry['position'],
+        entry['title'],
+        entry['author'],
+        entry['category'],
+        entry['result'],
+      )
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(any('2026 awards page did not expose text winner rows' in note
+                        for note in parsed['notes']))
+
+  def test_holt_medallion_fetcher_metadata_and_registry(self):
+    from parser.base import CATEGORY_REGIONAL_NATIONAL_AWARDS, CATEGORY_ROMANCE
+    from parser.holt_medallion import HOLT_SEARCH_URL
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.holt_medallion import UrlFetcherHOLTMedallion
+
+    fetcher = UrlFetcherHOLTMedallion()
+    landing_html = '''
+      <a href="https://virginiaromancewriters.com/2025-holt-medallion-finalists/">
+        2025 HOLT Medallion Finalists
+      </a>
+      <a href="https://virginiaromancewriters.com/holt-medallion/holt-payment/">Payment</a>
+    '''
+    search_json = json.dumps([{
+      'title': '2025 HOLT Medallion Finalists',
+      'url': 'https://virginiaromancewriters.com/2025-holt-medallion-finalists/',
+      '_links': {'self': [{'href': 'https://virginiaromancewriters.com/wp-json/wp/v2/pages/2793'}]},
+    }])
+    finalist_html = '''
+      <h4>Historical</h4>
+      <ul><li><em><strong>Snowbound with the Scoundrel</strong></em> &#8211; Courtney McCaskill</li></ul>
+    '''
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == fetcher.URL:
+        return landing_html
+      if url == HOLT_SEARCH_URL:
+        return search_json
+      if url.endswith('/pages/2793'):
+        return json.dumps({
+          'link': 'https://virginiaromancewriters.com/2025-holt-medallion-finalists/',
+          'title': {'rendered': '2025 HOLT Medallion Finalists'},
+          'content': {'rendered': finalist_html},
+        })
+      self.fail(url)
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+    filters = [item['label'] for item in fetcher.get_filter_list()]
+
+    self.assertEqual('holt_medallion', fetcher.source_id)
+    self.assertEqual('HOLT Medallion', fetcher.NAME)
+    self.assertEqual(254, fetcher.order)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+    self.assertIn(CATEGORY_ROMANCE, filters)
+    self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+    self.assertEqual([
+      fetcher.URL,
+      HOLT_SEARCH_URL,
+      'https://virginiaromancewriters.com/wp-json/wp/v2/pages/2793',
+    ], fetched)
+    self.assertEqual([
+      ('2025.01', 'Snowbound with the Scoundrel', 'Courtney McCaskill', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertFalse(parsed['match_series'])
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('holt_medallion', registry_ids)
+    self.assertLess(
+      registry_ids.index('australian_romance_readers_awards'),
+      registry_ids.index('holt_medallion'))
+    self.assertLess(
+      registry_ids.index('holt_medallion'),
+      registry_ids.index('writers_trust_atwood_gibson_fiction'))
+
+  def test_booksellers_best_parser_reads_2012_archived_finalist_page(self):
+    from parser.booksellers_best import BooksellersBestAwardParser
+
+    page_html = '''
+      <html><head><title>2012 Booksellers' Best Award</title></head><body>
+      <h3>2012 Booksellers' Best Award</h3>
+      <h1>FINALISTS</h1>
+      <p>The Greater Detroit RWA is pleased to announce the finalists.</p>
+      <h4>SINGLE TITLE</h4>
+      <p class="newsdate">Whisper Falls - Toni Blake<br/>
+        The Strangers on Montagu Street - Karen White</p>
+      <h4>ROMANTIC SUSPENSE</h4>
+      <p class="newsdate">Riptide - Cherry Adair<br/>
+        If You Hear Her - Shiloh Walker</p>
+      <h4>BEST FIRST BOOK</h4>
+      <p class="newsdate">Forever Freed - Laura Kaye<br/>
+        Beach Rental - Grace Greene</p>
+      </body></html>
+    '''
+
+    parsed = BooksellersBestAwardParser().parse(
+      '',
+      pages=((
+        'https://web.archive.org/web/20120627055544id_/http://www.gdrwa.org/contests.html',
+        page_html,
+      ),))
+
+    self.assertEqual("Booksellers' Best Award", parsed['name'])
+    self.assertFalse(parsed['match_series'])
+    self.assertEqual([
+      ('2012.01', 'Whisper Falls', 'Toni Blake', 'Single Title', 'shortlisted'),
+      (
+        '2012.02',
+        'The Strangers on Montagu Street',
+        'Karen White',
+        'Single Title',
+        'shortlisted',
+      ),
+      ('2012.03', 'Riptide', 'Cherry Adair', 'Romantic Suspense', 'shortlisted'),
+      ('2012.04', 'If You Hear Her', 'Shiloh Walker', 'Romantic Suspense', 'shortlisted'),
+      ('2012.05', 'Forever Freed', 'Laura Kaye', 'Best First Book', 'shortlisted'),
+      ('2012.06', 'Beach Rental', 'Grace Greene', 'Best First Book', 'shortlisted'),
+    ], [
+      (
+        entry['position'],
+        entry['title'],
+        entry['author'],
+        entry['category'],
+        entry['result'],
+      )
+      for entry in parsed['entries']
+    ])
+    self.assertIn('finalist/shortlist-style rows were parsed for: 2012', parsed['notes'][0])
+    self.assertIn('reference-only', parsed['notes'][-1])
+
+  def test_booksellers_best_parser_reads_2004_legacy_finalist_paragraphs(self):
+    from parser.booksellers_best import BooksellersBestAwardParser
+
+    page_html = '''
+      <html><head><title>Bookseller's Best Award Finalists</title></head><body>
+      <h2>A Published Authors' Contest for Books Published in 2003</h2>
+      <p><font color="#FF0000" size="+3">Finalists</font></p>
+      <p align="center"><font color="#FF0000" size="5"><i><strong>Traditional</strong></i></font><br/>
+        <strong>THE ITALIAN MILLIONAIRES MARRIAGE</strong> - <em>LUCY GORDON</em><br/>
+        <strong>THE VIRGIN'S PROPOSAL</strong> - <em>SHIRLEY JUMP</em></p>
+      <p align="center"><font color="#FF0000" size="5"><i><strong>Paranormal/TT/Futuristic</strong></i></font><br/>
+        <strong>DANCE WITH THE DEVIL</strong> - <em>SHERRILYN KENYON</em></p>
+      </body></html>
+    '''
+
+    parsed = BooksellersBestAwardParser().parse(
+      '',
+      pages=((
+        'https://web.archive.org/web/20041021163620id_/http://www.gdrwa.org/bbafinals04.html',
+        page_html,
+      ),))
+
+    self.assertEqual([
+      ('2004.01', 'THE ITALIAN MILLIONAIRES MARRIAGE', 'LUCY GORDON', 'Traditional'),
+      ('2004.02', "THE VIRGIN'S PROPOSAL", 'SHIRLEY JUMP', 'Traditional'),
+      (
+        '2004.03',
+        'DANCE WITH THE DEVIL',
+        'SHERRILYN KENYON',
+        'Paranormal/Time Travel/Futuristic',
+      ),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['category'])
+      for entry in parsed['entries']
+    ])
+
+  def test_booksellers_best_parser_reads_archived_winner_pages(self):
+    from parser.booksellers_best import BooksellersBestAwardParser
+
+    page_2016 = '''
+      <html><head><title>2016 BOOKSELLERS' BEST AWARD</title></head><body>
+      <h1>2016 BOOKSELLERS' BEST AWARD</h1>
+      <p><img alt="Latest News" src="images/title_winners.gif" /></p>
+      <h4>HISTORICAL ROMANCE</h4>
+      <p class="newsdate"><em>At His Command</em>-Historical Romance Version, Ruth Kaufman and
+        <em>A Pirate's Command</em>, Meg Hennessy</p>
+      <h4>SINGLE TITLE</h4>
+      <p class="newsdate"><em>Ransom Canyon</em>, Jodi Thomas</p>
+      <h4>THE PATTI SHENBERGER AWARD FOR BEST BOOK</h4>
+      <p class="newsdate"><em>At His Command</em>-Historical Romance Version, Ruth Kaufman</p>
+      </body></html>
+    '''
+    page_2017 = '''
+      <html><head><title>2017 BOOKSELLERS' BEST AWARD</title></head><body>
+      <h1>2017 BOOKSELLERS' BEST AWARD</h1>
+      <h4>EROTIC ROMANCE</h4>
+      <p class="newsdate"><em>Breaking His Rules</em> by R.C. Matthews</p>
+      <h4>PARNORMAL ROMANCE</h4>
+      <p class="newsdate"><em>Viking Warrior Rebel</em> by Asa Maria Bradley</p>
+      <h4>ROMANIC SUSPENSE</h4>
+      <p><span class="newsdate"><em>Finding Lyla</em> by Cate Beauman</span></p>
+      </body></html>
+    '''
+
+    parsed = BooksellersBestAwardParser().parse('', pages=(
+      (
+        'https://web.archive.org/web/20170607135748id_/http://www.gdrwa.org/winners2016.html',
+        page_2016,
+      ),
+      (
+        'https://web.archive.org/web/20171211023748id_/http://www.gdrwa.org/winners2017.html',
+        page_2017,
+      ),
+    ))
+
+    self.assertEqual([
+      ('2016', 'At His Command', 'Ruth Kaufman', 'Historical Romance', 'winner'),
+      ('2016.01', "A Pirate's Command", 'Meg Hennessy', 'Historical Romance', 'winner'),
+      ('2016.02', 'Ransom Canyon', 'Jodi Thomas', 'Single Title', 'winner'),
+      (
+        '2016.03',
+        'At His Command',
+        'Ruth Kaufman',
+        'The Patti Shenberger Award for Best Book',
+        'winner',
+      ),
+      ('2017', 'Breaking His Rules', 'R.C. Matthews', 'Erotic Romance', 'winner'),
+      ('2017.01', 'Viking Warrior Rebel', 'Asa Maria Bradley', 'Paranormal Romance', 'winner'),
+      ('2017.02', 'Finding Lyla', 'Cate Beauman', 'Romantic Suspense', 'winner'),
+    ], [
+      (
+        entry['position'],
+        entry['title'],
+        entry['author'],
+        entry['category'],
+        entry['result'],
+      )
+      for entry in parsed['entries']
+    ])
+    self.assertIn('winner-only years were parsed for: 2016, 2017', parsed['notes'][1])
+
+  def test_booksellers_best_parser_skips_entry_rules_and_non_book_content(self):
+    from parser.booksellers_best import BooksellersBestAwardParser
+
+    page_html = '''
+      <html><head><title>2018 BOOKSELLERS' BEST AWARD</title></head><body>
+      <h1>2018 BOOKSELLERS' BEST AWARD</h1>
+      <p>A Published Authors' Contest for Books Published in 2017</p>
+      <h2>TO ENTER THE 2018 BOOKSELLERS' BEST AWARD:</h2>
+      <p><strong>SHORT CONTEMPORARY ROMANCE</strong> category description.</p>
+      <h2>2018 BBA Category Coordinators:</h2>
+      <p><em>Short Contemporary Romance Coordinator</em><br/>Coordinator Name</p>
+      <p>The Greater Detroit RWA is pleased to announce the winners of the
+      2011 Between the Sheets Contest.</p>
+      <p>1st Place - <em>Breeders</em> by Lisa Nicole Fenley</p>
+      </body></html>
+    '''
+
+    parsed = BooksellersBestAwardParser().parse(
+      '',
+      pages=((
+        'https://web.archive.org/web/20171009105938id_/http://www.gdrwa.org/contests.html',
+        page_html,
+      ),))
+
+    self.assertEqual([], parsed['entries'])
+    self.assertTrue(any('entry/rules text' in note for note in parsed['notes']))
+    self.assertIn('No Booksellers', parsed['notes'][-2])
+
+  def test_booksellers_best_fetcher_metadata_delegation_and_registry(self):
+    from parser.base import CATEGORY_REGIONAL_NATIONAL_AWARDS, CATEGORY_ROMANCE
+    from parser.booksellers_best import BOOKSELLERS_BEST_CDX_URLS
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.booksellers_best import UrlFetcherBooksellersBestAward
+
+    fetcher = UrlFetcherBooksellersBestAward()
+    snapshot_url = 'https://web.archive.org/web/20120627055544id_/http://www.gdrwa.org/contests.html'
+    cdx_json = json.dumps([
+      ['timestamp', 'original', 'statuscode', 'mimetype', 'digest'],
+      ['20120627055544', 'http://www.gdrwa.org/contests.html', '200', 'text/html', 'abc'],
+    ])
+    empty_cdx_json = json.dumps([
+      ['timestamp', 'original', 'statuscode', 'mimetype', 'digest'],
+    ])
+    page_html = '''
+      <html><head><title>2012 Booksellers' Best Award</title></head><body>
+      <h3>2012 Booksellers' Best Award</h3>
+      <h1>FINALISTS</h1>
+      <h4>TRADITIONAL</h4>
+      <p>How A Cowboy Stole Her Heart - Donna Alward</p>
+      </body></html>
+    '''
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == fetcher.URL:
+        return cdx_json
+      if url in BOOKSELLERS_BEST_CDX_URLS[1:]:
+        return empty_cdx_json
+      if url == snapshot_url:
+        return page_html
+      self.fail(url)
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+    filters = [item['label'] for item in fetcher.get_filter_list()]
+
+    self.assertEqual('booksellers_best_award', fetcher.source_id)
+    self.assertEqual("Booksellers' Best Award", fetcher.NAME)
+    self.assertEqual(255, fetcher.order)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+    self.assertEqual(
+      'https://web.archive.org/web/*/http://www.gdrwa.org/contests.html',
+      fetcher.display_url)
+    self.assertIn(CATEGORY_ROMANCE, filters)
+    self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+    self.assertEqual([
+      fetcher.URL,
+      BOOKSELLERS_BEST_CDX_URLS[1],
+      BOOKSELLERS_BEST_CDX_URLS[2],
+      snapshot_url,
+    ], fetched)
+    self.assertEqual([
+      ('2012.01', 'How A Cowboy Stole Her Heart', 'Donna Alward', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertFalse(parsed['match_series'])
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('booksellers_best_award', registry_ids)
+    self.assertLess(
+      registry_ids.index('holt_medallion'),
+      registry_ids.index('booksellers_best_award'))
+    self.assertLess(
+      registry_ids.index('booksellers_best_award'),
+      registry_ids.index('writers_trust_atwood_gibson_fiction'))
+
+  def test_miles_franklin_wikipedia_parser_reads_winner_tables(self):
+    from parser.miles_franklin import MilesFranklinWikipediaParser
+
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Publisher</th><th>Ref</th></tr>
+        <tr><td>1973</td><td colspan="4">Award withheld after the judges decided that none of the novels entered was good enough</td></tr>
+        <tr><td>1987</td><td>Glenda Adams</td><td>Dancing on Coral</td><td>Viking Press</td><td>[1]</td></tr>
+      </table>
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Publisher</th><th>Ref</th></tr>
+        <tr><td>1989</td><td>Peter Carey</td><td>Oscar and Lucinda</td><td>University of Queensland Press</td><td>[2]</td></tr>
+      </table>
+    '''
+
+    parsed = MilesFranklinWikipediaParser().parse(
+      html, 'https://en.wikipedia.org/wiki/Miles_Franklin_Award')
+
+    self.assertEqual(['Dancing on Coral', 'Oscar and Lucinda'], [
+      entry['title'] for entry in parsed['entries']
+    ])
+    self.assertEqual(['1987', '1989'], [
+      entry['position'] for entry in parsed['entries']
+    ])
+    self.assertNotIn('1988', [entry['award_year'] for entry in parsed['entries']])
+
+  def test_miles_franklin_wikipedia_parser_preserves_tied_winner_positions(self):
+    from parser.miles_franklin import MilesFranklinWikipediaParser
+
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Publisher</th><th>Ref</th></tr>
+        <tr><td rowspan="2">2000</td><td>Thea Astley</td><td>Drylands</td><td>Penguin Books</td><td>[1]</td></tr>
+        <tr><td>Kim Scott</td><td>Benang</td><td>Fremantle Press</td><td>[1]</td></tr>
+      </table>
+    '''
+
+    parsed = MilesFranklinWikipediaParser().parse(
+      html, 'https://en.wikipedia.org/wiki/Miles_Franklin_Award')
+
+    self.assertEqual(['Drylands', 'Benang'], [
+      entry['title'] for entry in parsed['entries']
+    ])
+    self.assertEqual(['2000', '2000'], [
+      entry['position'] for entry in parsed['entries']
+    ])
+
+  def test_miles_franklin_wikipedia_parser_dedupes_winner_from_shortlist(self):
+    from parser.miles_franklin import MilesFranklinWikipediaParser
+
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Publisher</th><th>Ref</th></tr>
+        <tr><td>2025</td><td>Siang Lu</td><td>Ghost Cities</td><td>University of Queensland Press</td><td>[1]</td></tr>
+      </table>
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td rowspan="4">2025</td><td>Siang Lu</td><td>Ghost Cities</td><td>Winner</td></tr>
+        <tr><td>Jason Chong</td><td>Chinese Postman</td><td rowspan="3">Shortlist</td></tr>
+        <tr><td>Michelle de Kretser</td><td>Theory &amp; Practice</td></tr>
+        <tr><td>Sam Elkin</td><td>Detachable Penis</td></tr>
+      </table>
+    '''
+
+    parsed = MilesFranklinWikipediaParser().parse(
+      html, 'https://en.wikipedia.org/wiki/Miles_Franklin_Award')
+
+    self.assertEqual([
+      ('2025', 'Ghost Cities', 'winner'),
+      ('2025.01', 'Chinese Postman', 'shortlisted'),
+      ('2025.02', 'Theory & Practice', 'shortlisted'),
+      ('2025.03', 'Detachable Penis', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['result'])
+      for entry in parsed['entries']
+    ])
+
+  def test_miles_franklin_wikipedia_parser_accepts_current_shortlist_only(self):
+    from parser.miles_franklin import MilesFranklinWikipediaParser
+
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td rowspan="3">2026</td><td>Steve MinOn</td><td>First Name Second Name</td><td rowspan="3">Shortlist</td></tr>
+        <tr><td>Omar Musa</td><td>Fierceland</td></tr>
+        <tr><td>Josephine Rowe</td><td>Little World</td></tr>
+      </table>
+    '''
+
+    parsed = MilesFranklinWikipediaParser().parse(
+      html, 'https://en.wikipedia.org/wiki/Miles_Franklin_Award')
+
+    self.assertEqual(['2026.01', '2026.02', '2026.03'], [
+      entry['position'] for entry in parsed['entries']
+    ])
+    self.assertTrue(all(
+      entry['result'] == 'shortlisted' for entry in parsed['entries']))
+
+  def test_miles_franklin_wikipedia_parser_ignores_longlisted_rows(self):
+    from parser.miles_franklin import MilesFranklinWikipediaParser
+
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td>2024</td><td>Alexis Wright</td><td>Praiseworthy</td><td>Winner</td></tr>
+        <tr><td>2024</td><td>Long Listed</td><td>Long Book</td><td>Longlist</td></tr>
+      </table>
+      <h2>Longlisted works</h2>
+      <ul><li>Another Long Book, Another Author</li></ul>
+    '''
+
+    parsed = MilesFranklinWikipediaParser().parse(
+      html, 'https://en.wikipedia.org/wiki/Miles_Franklin_Award')
+
+    self.assertEqual(['Praiseworthy'], [
+      entry['title'] for entry in parsed['entries']
+    ])
+
+  def test_miles_franklin_fetcher_metadata_and_parse_smoke(self):
+    from parser.base import (
+      CATEGORY_LITERARY_GENERAL_FICTION,
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+    )
+    from url_fetcher.miles_franklin import UrlFetcherMilesFranklinLiteraryAward
+
+    fetcher = UrlFetcherMilesFranklinLiteraryAward()
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Publisher</th><th>Ref</th></tr>
+        <tr><td>2025</td><td>Siang Lu</td><td>Ghost Cities</td><td>University of Queensland Press</td><td>[1]</td></tr>
+      </table>
+    '''
+
+    parsed = fetcher.fetch_and_parse(lambda url: html)
+    filters = [item['label'] for item in fetcher.get_filter_list()]
+
+    self.assertEqual('Miles Franklin Literary Award', parsed['name'])
+    self.assertEqual(['Ghost Cities'], [entry['title'] for entry in parsed['entries']])
+    self.assertFalse(parsed['match_series'])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+    self.assertIn(CATEGORY_LITERARY_GENERAL_FICTION, filters)
+    self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+
+  def test_stella_official_parser_reads_winners_shortlists_and_skips_longlists(self):
+    from parser.stella import StellaOfficialParser
+
+    html = '''
+      <article class="prize-card">
+        <p>The 2024 Stella Prize Winner</p>
+        <h3 class="book-title"><a href="/books/praiseworthy">Praiseworthy</a></h3>
+        <p class="book-author">Alexis Wright</p>
+        <p>Fiction</p>
+      </article>
+      <article class="prize-card">
+        <p>The 2024 Stella Prize Shortlist</p>
+        <h3 class="book-title">Hospital</h3>
+        <p class="book-author">Sanya Rushdi</p>
+        <p>Non-Fiction</p>
+      </article>
+      <article class="prize-card">
+        <p>The 2024 Stella Prize Longlist</p>
+        <h3 class="book-title">Long Book</h3>
+        <p class="book-author">Long Author</p>
+      </article>
+    '''
+
+    parsed = StellaOfficialParser().parse(
+      html, 'https://stella.org.au/past-prize-winners/')
+
+    self.assertEqual([
+      ('2024', 'Praiseworthy', 'Alexis Wright', 'winner'),
+      ('2024.01', 'Hospital', 'Sanya Rushdi', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(entry['award'] == 'Stella Prize' for entry in parsed['entries']))
+    self.assertTrue(all(entry['category'] == 'All genres' for entry in parsed['entries']))
+
+  def test_stella_official_parser_rejects_advertised_partial_card_stream(self):
+    from parser.stella import StellaOfficialParser
+
+    html = '''
+      <p>1 Winner</p>
+      <p>2 Shortlisted</p>
+      <article>
+        <p>The 2025 Stella Prize Winner</p>
+        <h3 class="book-title">Stone Yard Devotional</h3>
+        <p class="book-author">Charlotte Wood</p>
+      </article>
+      <article>
+        <p>The 2025 Stella Prize Shortlist</p>
+        <h3 class="book-title">Theory &amp; Practice</h3>
+        <p class="book-author">Michelle de Kretser</p>
+      </article>
+    '''
+
+    with self.assertRaises(ValueError) as caught:
+      StellaOfficialParser().parse(html)
+
+    self.assertIn('official archive appears incomplete', str(caught.exception))
+    self.assertIn('shortlisted: expected 2, parsed 1', str(caught.exception))
+
+  def test_stella_wikipedia_parser_handles_rowspans_and_skips_longlists(self):
+    from parser.stella import StellaWikipediaParser
+
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr>
+          <td rowspan="5">2024</td>
+          <td>Alexis Wright</td>
+          <td><i><a href="/wiki/Praiseworthy">Praiseworthy</a></i></td>
+          <td>Winner</td>
+        </tr>
+        <tr>
+          <td>Sanya Rushdi</td>
+          <td>Hospital</td>
+          <td rowspan="2">Shortlist</td>
+        </tr>
+        <tr>
+          <td>Shankari Chandran</td>
+          <td>Chai Time at Cinnamon Gardens</td>
+        </tr>
+        <tr>
+          <td>Long Author</td>
+          <td>Long Book</td>
+          <td rowspan="2">Longlist</td>
+        </tr>
+        <tr>
+          <td>Another Long Author</td>
+          <td>Another Long Book</td>
+        </tr>
+      </table>
+    '''
+
+    parsed = StellaWikipediaParser().parse(
+      html, 'https://en.wikipedia.org/wiki/Stella_Prize')
+
+    self.assertEqual([
+      ('2024', 'Praiseworthy', 'winner'),
+      ('2024.01', 'Hospital', 'shortlisted'),
+      ('2024.02', 'Chai Time at Cinnamon Gardens', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertNotIn('Long Book', [entry['title'] for entry in parsed['entries']])
+
+  def test_stella_fetcher_metadata_and_fallback(self):
+    from parser.base import (
+      CATEGORY_LITERARY_GENERAL_FICTION,
+      CATEGORY_NONFICTION,
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+    )
+    from url_fetcher.stella import UrlFetcherStellaPrize
+
+    fetcher = UrlFetcherStellaPrize()
+    official_html = '<html><p>1 Winner</p><p>1 Shortlisted</p></html>'
+    wiki_html = '''
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td>2024</td><td>Alexis Wright</td><td>Praiseworthy</td><td>Winner</td></tr>
+      </table>
+    '''
+    calls = []
+
+    def fetch_url(url):
+      calls.append(url)
+      if url == fetcher.URL:
+        return official_html
+      if url == fetcher.WIKIPEDIA_URL:
+        return wiki_html
+      self.fail(url)
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+    filters = [item['label'] for item in fetcher.get_filter_list()]
+
+    self.assertEqual('Stella Prize', fetcher.NAME)
+    self.assertEqual('stella_prize', fetcher.source_id)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual((
+      {'label': 'Automatic', 'value': 'automatic'},
+      {'label': 'Stella', 'value': 0},
+      {'label': 'Wikipedia', 'value': 1},
+    ), fetcher.source_choices())
+    self.assertIn(CATEGORY_LITERARY_GENERAL_FICTION, filters)
+    self.assertIn(CATEGORY_NONFICTION, filters)
+    self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+    self.assertEqual(['Praiseworthy'], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual([fetcher.URL, fetcher.WIKIPEDIA_URL], calls)
+    self.assertFalse(parsed['match_series'])
+    with self.assertRaises(Exception):
+      fetcher.fetch_and_parse(fetch_url, disable_fallbacks=True)
+
+  def test_prime_ministers_literary_awards_official_discovers_archive_pages(self):
+    from parser.prime_ministers_literary_awards import (
+      PrimeMinistersLiteraryAwardsOfficialParser,
+    )
+
+    index_html = '''
+      <html><head><title>Prime Minister's Literary Awards 2025</title></head>
+      <body>
+        <h2>Fiction</h2>
+        <p class="card-portrait--content-title">WINNER: Theory &amp; Practice by Michelle de Kretser</p>
+        <p class="card-portrait--content-title">Translations by Jumaana Abdu</p>
+        <h3>Previous shortlist &amp; recipients: 2008 to 2024</h3>
+        <h3>2024</h3>
+        <a href="/2024-pmla-winners-shortlist-and-judges">Find the 2024 winners, shortlistees and judges here</a>
+      </body></html>
+    '''
+    year_html = '''
+      <h2>Fiction</h2>
+      <p class="card-portrait--content-title">WINNER: 'Anam', André Dao</p>
+      <h3>Anam</h3>
+      <p><strong>André Dao</strong></p>
+      <p><strong>Shortlist year:</strong> 2024</p>
+      <p><strong>Shortlist category:</strong> Fiction</p>
+      <h3>Restless Dolly Maunder</h3>
+      <p><strong>Kate Grenville</strong></p>
+      <p><strong>Shortlist year:</strong> 2024</p>
+      <p><strong>Shortlist category:</strong> Fiction</p>
+    '''
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      return year_html
+
+    parsed = PrimeMinistersLiteraryAwardsOfficialParser(
+      'Fiction', ('Fiction',)).parse(
+        index_html,
+        'https://creative.gov.au/news-events/events/prime-ministers-literary-awards',
+        fetch_url=fetch_url)
+
+    self.assertEqual([
+      'https://creative.gov.au/2024-pmla-winners-shortlist-and-judges',
+    ], fetched)
+    self.assertEqual([
+      ('2024', 'Anam', 'winner'),
+      ('2024.01', 'Restless Dolly Maunder', 'shortlisted'),
+      ('2025', 'Theory & Practice', 'winner'),
+      ('2025.01', 'Translations', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['result'])
+      for entry in parsed['entries']
+    ])
+
+  def test_prime_ministers_literary_awards_official_category_start_years(self):
+    from parser.prime_ministers_literary_awards import (
+      PrimeMinistersLiteraryAwardsOfficialParser,
+    )
+
+    html = '''
+      <html><head><title>2008 PMLA winners, shortlist and judges</title></head>
+      <body>
+        <h2>Non-fiction</h2>
+        <p class="card-portrait--content-title">WINNER: Ochre and Rust: Artefacts and Encounters on Australian Frontiers – Philip Jones</p>
+        <h2>Fiction</h2>
+        <p class="card-portrait--content-title">WINNER: The Zoo Keeper's War – Steven Conte</p>
+      </body></html>
+    '''
+
+    nonfiction = PrimeMinistersLiteraryAwardsOfficialParser(
+      'Non-fiction', ('Non-fiction', 'Nonfiction')).parse(html)
+    young_adult = PrimeMinistersLiteraryAwardsOfficialParser(
+      'Young Adult Literature',
+      ('Young Adult Literature', 'Young adult fiction')).parse(html)
+
+    self.assertEqual(['Ochre and Rust: Artefacts and Encounters on Australian Frontiers'], [
+      entry['title'] for entry in nonfiction['entries']
+    ])
+    self.assertEqual([], young_adult['entries'])
+
+  def test_prime_ministers_literary_awards_official_handles_core_categories(self):
+    from parser.prime_ministers_literary_awards import (
+      PrimeMinistersLiteraryAwardsOfficialParser,
+    )
+
+    html = '''
+      <html><head><title>2024 PMLA winners, shortlist and judges</title></head>
+      <body>
+        <h2>Children's literature</h2>
+        <p class="card-portrait--content-title">WINNER: Tamarra: A Story of Termites on Gurindji Country by Violet Wadrill</p>
+        <h2>Young adult literature</h2>
+        <p class="card-portrait--content-title">WINNER: We Could Be Something by Will Kostakis</p>
+        <h2>Australian history</h2>
+        <p class="card-portrait--content-title">WINNER: Donald Horne: A Life in the Lucky Country by Ryan Cropp</p>
+        <p class="card-portrait--content-title">Bee Miles by Rose Ellis</p>
+        <h2>Poetry</h2>
+        <p class="card-portrait--content-title">WINNER: The Cyprian by Amy Crutchfield</p>
+      </body></html>
+    '''
+
+    history = PrimeMinistersLiteraryAwardsOfficialParser(
+      'Australian History', ('Australian History',)).parse(html)
+    children = PrimeMinistersLiteraryAwardsOfficialParser(
+      "Children's Literature",
+      ("Children's Literature", "Children's literature")).parse(html)
+    young_adult = PrimeMinistersLiteraryAwardsOfficialParser(
+      'Young Adult Literature',
+      ('Young Adult Literature', 'Young adult literature')).parse(html)
+
+    self.assertEqual([
+      ('Donald Horne: A Life in the Lucky Country', 'winner'),
+      ('Bee Miles', 'shortlisted'),
+    ], [(entry['title'], entry['result']) for entry in history['entries']])
+    self.assertEqual(['Tamarra: A Story of Termites on Gurindji Country'], [
+      entry['title'] for entry in children['entries']
+    ])
+    self.assertEqual(['We Could Be Something'], [
+      entry['title'] for entry in young_adult['entries']
+    ])
+    self.assertNotIn('The Cyprian', [
+      entry['title'] for entry in history['entries'] + children['entries'] + young_adult['entries']
+    ])
+
+  def test_prime_ministers_literary_awards_official_preserves_tied_winners(self):
+    from parser.prime_ministers_literary_awards import (
+      PrimeMinistersLiteraryAwardsOfficialParser,
+    )
+
+    html = '''
+      <html><head><title>2016 PMLA winners, shortlist and judges</title></head>
+      <body><h2>Fiction</h2>
+      <p class="card-portrait--content-title">WINNER: The Natural Way of Things – Charlotte Wood</p>
+      <p class="card-portrait--content-title">WINNER: The Life of Houses – Lisa Gorton</p>
+      <p class="card-portrait--content-title">Forever Young – Steven Carroll</p>
+      <h3>The Natural Way of Things</h3>
+      <p>WINNER</p>
+      <p><strong>Shortlist year:</strong> 2016</p>
+      <p><strong>Shortlist category:</strong> Fiction</p>
+      <h3>The Life of Houses</h3>
+      <p>WINNER</p>
+      <p><strong>Shortlist year:</strong> 2016</p>
+      <p><strong>Shortlist category:</strong> Fiction</p>
+      <h3>Forever Young</h3>
+      <p>Steven Carroll</p>
+      <p><strong>Shortlist year:</strong> 2016</p>
+      <p><strong>Shortlist category:</strong> Fiction</p>
+      </body></html>
+    '''
+
+    parsed = PrimeMinistersLiteraryAwardsOfficialParser(
+      'Fiction', ('Fiction',)).parse(html)
+
+    self.assertEqual(['2016', '2016', '2016.01'], [
+      entry['position'] for entry in parsed['entries']
+    ])
+
+  def test_prime_ministers_literary_awards_wikipedia_parser(self):
+    from parser.prime_ministers_literary_awards import (
+      PrimeMinistersLiteraryAwardsWikipediaParser,
+    )
+
+    html = '''
+      <h3>Fiction</h3>
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td rowspan="3">2024</td><td>André Dao</td><td>Anam</td><td>Winner</td></tr>
+        <tr><td>Kate Grenville</td><td>Restless Dolly Maunder</td><td rowspan="2">Finalist</td></tr>
+        <tr><td>Charlotte Wood</td><td>Stone Yard Devotional</td></tr>
+      </table>
+      <h3>Poetry</h3>
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td>2024</td><td>Amy Crutchfield</td><td>The Cyprian</td><td>Winner</td></tr>
+      </table>
+    '''
+
+    parsed = PrimeMinistersLiteraryAwardsWikipediaParser(
+      'Fiction', ('Fiction',)).parse(html)
+
+    self.assertEqual([
+      ('2024', 'Anam', 'winner'),
+      ('2024.01', 'Restless Dolly Maunder', 'shortlisted'),
+      ('2024.02', 'Stone Yard Devotional', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertNotIn('The Cyprian', [entry['title'] for entry in parsed['entries']])
+
+  def test_prime_ministers_literary_awards_fetchers_metadata_and_fallback(self):
+    from parser.base import (
+      CATEGORY_LITERARY_GENERAL_FICTION,
+      CATEGORY_NONFICTION,
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+      CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+    )
+    from url_fetcher.prime_ministers_literary_awards import (
+      UrlFetcherPrimeMinistersLiteraryAwardsAustralianHistory,
+      UrlFetcherPrimeMinistersLiteraryAwardsChildrensLiterature,
+      UrlFetcherPrimeMinistersLiteraryAwardsFiction,
+      UrlFetcherPrimeMinistersLiteraryAwardsNonfiction,
+      UrlFetcherPrimeMinistersLiteraryAwardsYoungAdultLiterature,
+    )
+
+    fetchers = (
+      (UrlFetcherPrimeMinistersLiteraryAwardsFiction(), CATEGORY_LITERARY_GENERAL_FICTION),
+      (UrlFetcherPrimeMinistersLiteraryAwardsNonfiction(), CATEGORY_NONFICTION),
+      (UrlFetcherPrimeMinistersLiteraryAwardsAustralianHistory(), CATEGORY_NONFICTION),
+      (
+        UrlFetcherPrimeMinistersLiteraryAwardsYoungAdultLiterature(),
+        CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+      ),
+      (
+        UrlFetcherPrimeMinistersLiteraryAwardsChildrensLiterature(),
+        CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+      ),
+    )
+
+    for fetcher, expected_filter in fetchers:
+      with self.subTest(fetcher=fetcher.source_id):
+        filters = [item['label'] for item in fetcher.get_filter_list()]
+        self.assertIn(expected_filter, filters)
+        self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+        self.assertFalse(fetcher.options['match_series'])
+        self.assertEqual((
+          {'label': 'Automatic', 'value': 'automatic'},
+          {'label': 'Creative Australia', 'value': 0},
+          {'label': 'Wikipedia', 'value': 1},
+        ), fetcher.source_choices())
+
+    fetcher = UrlFetcherPrimeMinistersLiteraryAwardsFiction()
+    official_html = '<html><title>Prime Minister Literary Awards 2024</title><h2>Poetry</h2></html>'
+    wiki_html = '''
+      <h3>Fiction</h3>
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td>2024</td><td>André Dao</td><td>Anam</td><td>Winner</td></tr>
+      </table>
+    '''
+    calls = []
+
+    def fetch_url(url):
+      calls.append(url)
+      if url == fetcher.URL:
+        return official_html
+      if url == fetcher.WIKIPEDIA_URL:
+        return wiki_html
+      self.fail(url)
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+
+    self.assertEqual(['Anam'], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual([fetcher.URL, fetcher.WIKIPEDIA_URL], calls)
+    self.assertFalse(parsed['match_series'])
+    with self.assertRaises(Exception):
+      fetcher.fetch_and_parse(fetch_url, disable_fallbacks=True)
+
+  def test_victorian_premiers_literary_awards_discovers_archive_pages(self):
+    from parser.victorian_premiers_literary_awards import (
+      VictorianPremiersLiteraryAwardsOfficialParser,
+    )
+
+    html = '''
+      <a href="/victorian-premier-s-literary-awards/past-awards/2025-victorian-premier-s-literary-awards">
+        2025 Victorian Premier's Literary Awards
+      </a>
+      <a href="/victorian-premier-s-literary-awards/2026-victorian-premier-s-literary-awards">
+        2026 Victorian Premier's Literary Awards
+      </a>
+      <a href="/victorian-premier-s-literary-awards/past-awards/2010-victorian-premier-s-literary-awards">
+        2010 Victorian Premier's Literary Awards
+      </a>
+      <a href="/victorian-premier-s-literary-awards/about-the-awards">About the Awards</a>
+    '''
+
+    links = VictorianPremiersLiteraryAwardsOfficialParser(
+      'Fiction',
+      ('Prize for Fiction', 'Fiction')).archive_links(
+        html,
+        'https://www.wheelercentre.com/victorian-premier-s-literary-awards/past-awards')
+
+    self.assertEqual((
+      'https://www.wheelercentre.com/victorian-premier-s-literary-awards/past-awards/2025-victorian-premier-s-literary-awards',
+      'https://www.wheelercentre.com/victorian-premier-s-literary-awards/2026-victorian-premier-s-literary-awards',
+    ), links)
+
+  def test_victorian_premiers_literary_awards_reads_winners_shortlists_and_skips_other_sections(self):
+    from parser.victorian_premiers_literary_awards import (
+      VictorianPremiersLiteraryAwardsOfficialParser,
+    )
+
+    html = '''
+      <html><head><title>2025 Victorian Premier's Literary Awards</title></head>
+      <body><main>
+        <h2>WINNERS</h2>
+        <h3>Victorian Prize for Literature</h3>
+        <article><h4>Overall Winner</h4><p>Overall Author</p></article>
+        <h3>Prize for Fiction</h3>
+        <article>
+          <h4><a href="/books/orbital">Orbital</a></h4>
+          <p>Samantha Harvey</p>
+          <p>Vintage</p>
+          <a href="/books/orbital">Learn More</a>
+        </article>
+        <h3>Prize for Poetry</h3>
+        <article><h4>The Cyprian</h4><p>Amy Crutchfield</p></article>
+        <h2>HIGHLY COMMENDED</h2>
+        <h3>Prize for Fiction</h3>
+        <article><h4>Highly Regarded</h4><p>Hidden Author</p></article>
+        <h2>SHORTLIST</h2>
+        <h3>Prize for Fiction</h3>
+        <article><h4>Restless Dolly Maunder</h4><p>Kate Grenville</p></article>
+        <article><h4>Stone Yard Devotional by Charlotte Wood</h4></article>
+        <h3>Prize for an Unpublished Manuscript</h3>
+        <article><h4>Draft Work</h4><p>Emerging Writer</p></article>
+        <h3>Prize for Drama</h3>
+        <article><h4>Stage Work</h4><p>Playwright</p></article>
+        <h3>Prize for Humour Writing</h3>
+        <article><h4>Funny Book</h4><p>Comic Writer</p></article>
+      </main></body></html>
+    '''
+
+    parsed = VictorianPremiersLiteraryAwardsOfficialParser(
+      'Fiction',
+      ('Prize for Fiction', 'Fiction')).parse(
+        html,
+        'https://www.wheelercentre.com/victorian-premier-s-literary-awards/past-awards/2025-victorian-premier-s-literary-awards')
+
+    self.assertEqual([
+      ('2025', 'Orbital', 'Samantha Harvey', 'winner'),
+      ('2025.01', 'Restless Dolly Maunder', 'Kate Grenville', 'shortlisted'),
+      ('2025.02', 'Stone Yard Devotional', 'Charlotte Wood', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(
+      entry['award'] == "Victorian Premier's Literary Awards"
+      for entry in parsed['entries']))
+    self.assertTrue(all(entry['category'] == 'Fiction' for entry in parsed['entries']))
+    self.assertFalse(parsed['match_series'])
+    skipped_titles = {entry['title'] for entry in parsed['entries']}
+    self.assertNotIn('Highly Regarded', skipped_titles)
+    self.assertNotIn('Overall Winner', skipped_titles)
+    self.assertNotIn('Draft Work', skipped_titles)
+    self.assertNotIn('Stage Work', skipped_titles)
+    self.assertNotIn('Funny Book', skipped_titles)
+
+  def test_victorian_premiers_literary_awards_category_aliases(self):
+    from parser.victorian_premiers_literary_awards import (
+      VictorianPremiersLiteraryAwardsOfficialParser,
+    )
+
+    html = '''
+      <html><head><title>2026 Victorian Premier's Literary Awards</title></head>
+      <body><main>
+        <h2>WINNERS</h2>
+        <h3>Prize for Nonfiction</h3>
+        <article><h4>Nonfiction Winner</h4><p>Essay Writer</p></article>
+        <h3>John Marsden Prize for Writing for Young Adults</h3>
+        <article><h4>YA Winner</h4><p>YA Writer</p></article>
+        <h3>Prize for Children's Literature</h3>
+        <article><h4>Children's Winner</h4><p>Children's Writer</p></article>
+        <h3>Prize for Indigenous Writing</h3>
+        <article><h4>Indigenous Winner</h4><p>Indigenous Writer</p></article>
+      </main></body></html>
+    '''
+
+    cases = (
+      (
+        'Non-fiction',
+        ('Prize for Non-fiction', 'Prize for Nonfiction', 'Non-fiction', 'Nonfiction'),
+        'Nonfiction Winner',
+      ),
+      (
+        'Writing for Young Adults',
+        ('Prize for Writing for Young Adults', 'John Marsden Prize for Writing for Young Adults'),
+        'YA Winner',
+      ),
+      (
+        "Children's Literature",
+        ("Prize for Children's Literature", "Children's Literature"),
+        "Children's Winner",
+      ),
+      (
+        'Indigenous Writing',
+        ('Prize for Indigenous Writing', 'Indigenous Writing'),
+        'Indigenous Winner',
+      ),
+    )
+
+    for category, aliases, title in cases:
+      with self.subTest(category=category):
+        parsed = VictorianPremiersLiteraryAwardsOfficialParser(
+          category,
+          aliases).parse(html)
+        self.assertEqual([title], [entry['title'] for entry in parsed['entries']])
+        self.assertEqual(category, parsed['entries'][0]['category'])
+
+  def test_victorian_premiers_literary_awards_fetchers_metadata_and_parse_flow(self):
+    from parser.base import (
+      CATEGORY_LITERARY_GENERAL_FICTION,
+      CATEGORY_NONFICTION,
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+      CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+    )
+    from url_fetcher.victorian_premiers_literary_awards import (
+      UrlFetcherVictorianPremiersLiteraryAwardsChildrensLiterature,
+      UrlFetcherVictorianPremiersLiteraryAwardsFiction,
+      UrlFetcherVictorianPremiersLiteraryAwardsIndigenousWriting,
+      UrlFetcherVictorianPremiersLiteraryAwardsNonfiction,
+      UrlFetcherVictorianPremiersLiteraryAwardsWritingForYoungAdults,
+    )
+
+    fetchers = (
+      (UrlFetcherVictorianPremiersLiteraryAwardsFiction(), CATEGORY_LITERARY_GENERAL_FICTION),
+      (UrlFetcherVictorianPremiersLiteraryAwardsNonfiction(), CATEGORY_NONFICTION),
+      (
+        UrlFetcherVictorianPremiersLiteraryAwardsWritingForYoungAdults(),
+        CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+      ),
+      (
+        UrlFetcherVictorianPremiersLiteraryAwardsChildrensLiterature(),
+        CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+      ),
+      (UrlFetcherVictorianPremiersLiteraryAwardsIndigenousWriting(), None),
+    )
+
+    expected_ids = {
+      'victorian_premiers_literary_awards_fiction',
+      'victorian_premiers_literary_awards_nonfiction',
+      'victorian_premiers_literary_awards_writing_for_young_adults',
+      'victorian_premiers_literary_awards_childrens_literature',
+      'victorian_premiers_literary_awards_indigenous_writing',
+    }
+    self.assertEqual(expected_ids, {fetcher.source_id for fetcher, _filter in fetchers})
+
+    for fetcher, expected_filter in fetchers:
+      with self.subTest(fetcher=fetcher.source_id):
+        filters = [item['label'] for item in fetcher.get_filter_list()]
+        if expected_filter is not None:
+          self.assertIn(expected_filter, filters)
+        self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+        self.assertFalse(fetcher.options['match_series'])
+        self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+
+    fetcher = UrlFetcherVictorianPremiersLiteraryAwardsFiction()
+    year_url = (
+      'https://www.wheelercentre.com/victorian-premier-s-literary-awards/'
+      'past-awards/2025-victorian-premier-s-literary-awards')
+    index_html = f'<a href="{year_url}">2025 Victorian Premier\'s Literary Awards</a>'
+    year_html = '''
+      <html><head><title>2025 Victorian Premier's Literary Awards</title></head>
+      <body><main>
+        <h2>WINNERS</h2>
+        <h3>Prize for Fiction</h3>
+        <article><h4>Orbital</h4><p>Samantha Harvey</p></article>
+      </main></body></html>
+    '''
+    calls = []
+
+    def fetch_url(url):
+      calls.append(url)
+      if url == fetcher.URL:
+        return index_html
+      if url == year_url:
+        return year_html
+      self.fail(url)
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+
+    self.assertEqual(['Orbital'], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual([fetcher.URL, year_url], calls)
+    self.assertEqual("Victorian Premier's Literary Awards - Fiction", fetcher.NAME)
+    self.assertFalse(parsed['match_series'])
+
+  def test_folio_writers_prize_official_archive_and_category_pages(self):
+    from parser.folio_writers_prize import FolioWritersPrizeOfficialParser
+
+    root_html = '''
+      <main>
+        <a href="/2024-prize/">2024</a>
+        <a href="/2024-fiction-shortlist/">The Fiction Shortlist</a>
+        <a href="/2024-nonfiction-shortlist/">The Non-Fiction Shortlist</a>
+        <a href="/2023-prize/">2023 Prize</a>
+        <a href="/2016-prize/">2016 Prize</a>
+        <a href="/2024-judges/">2024 Judges</a>
+        <a href="https://uk.bookshop.org/lists/writers-prize-shortlist-2024">Bookshop list</a>
+      </main>
+    '''
+    fiction_2024 = '''
+      <main>
+        <h1>The 2024 Fiction Shortlist</h1>
+        <h2>CATEGORY WINNER</h2>
+        <h2>The Wren, The Wren</h2>
+        <h3>Anne Enright</h3>
+        <p>Read more</p>
+        <h2>The Bee Sting</h2>
+        <h3>Paul Murray</h3>
+        <h2>The Fraud</h2>
+        <h3>Zadie Smith</h3>
+      </main>
+    '''
+    main_2024 = '''
+      <main>
+        <h2>Fiction</h2>
+        <p>CATEGORY WINNER: The Wren, The Wren by Anne Enright</p>
+        <h2>Non-Fiction</h2>
+        <p>CATEGORY WINNER: Thunderclap by Laura Cumming</p>
+        <h2>Poetry</h2>
+        <p>CATEGORY WINNER / BOOK OF THE YEAR: The Home Child by Liz Berry</p>
+      </main>
+    '''
+    page_2023 = '''
+      <main>
+        <h2>Non-Fiction</h2>
+        <p>The Passengers by Will Ashon</p>
+        <p>Constructing a Nervous System by Margo Jefferson - WINNER, NON-FICTION CATEGORY & BOOK OF THE YEAR</p>
+        <h2>Fiction</h2>
+        <p>Scary Monsters by Michelle de Kretser - WINNER, FICTION CATEGORY</p>
+        <p>Maps of Our Spectacular Bodies by Maddie Mortimer</p>
+        <h2>Poetry</h2>
+        <p>Quiet by Victoria Adukwei Bulley - WINNER, POETRY CATEGORY</p>
+      </main>
+    '''
+    calls = []
+
+    def fetch_url(url):
+      calls.append(url)
+      if url == 'https://thewritersprize.com/2024-fiction-shortlist/':
+        return fiction_2024
+      if url == 'https://thewritersprize.com/2024-prize/':
+        return main_2024
+      if url == 'https://thewritersprize.com/2023-prize/':
+        return page_2023
+      self.fail(url)
+
+    parsed = FolioWritersPrizeOfficialParser('Fiction').parse(
+      root_html,
+      'https://thewritersprize.com/',
+      "Folio/Writers' Prize - Fiction",
+      fetch_url=fetch_url)
+
+    self.assertEqual([
+      ('2023', 'Scary Monsters', 'Michelle de Kretser', 'winner'),
+      ('2023.01', 'Maps of Our Spectacular Bodies', 'Maddie Mortimer', 'shortlisted'),
+      ('2024', 'The Wren, The Wren', 'Anne Enright', 'winner'),
+      ('2024.01', 'The Bee Sting', 'Paul Murray', 'shortlisted'),
+      ('2024.02', 'The Fraud', 'Zadie Smith', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertNotIn('Thunderclap', [entry['title'] for entry in parsed['entries']])
+    self.assertNotIn('Quiet', [entry['title'] for entry in parsed['entries']])
+    self.assertEqual([
+      'https://thewritersprize.com/2023-prize/',
+      'https://thewritersprize.com/2024-fiction-shortlist/',
+      'https://thewritersprize.com/2024-prize/',
+    ], calls)
+    self.assertFalse(parsed['match_series'])
+
+  def test_folio_writers_prize_book_of_year_includes_overall_poetry_winner(self):
+    from parser.folio_writers_prize import FolioWritersPrizeOfficialParser
+
+    root_html = '''
+      <main>
+        <a href="/2024-prize/">2024</a>
+        <a href="/2023-prize/">2023 Prize</a>
+        <a href="/12692-2-2/">2014</a>
+      </main>
+    '''
+    page_2024 = '''
+      <main>
+        <h2>Fiction</h2>
+        <p>CATEGORY WINNER: The Wren, The Wren by Anne Enright</p>
+        <h2>Poetry</h2>
+        <p>CATEGORY WINNER / BOOK OF THE YEAR: The Home Child by Liz Berry</p>
+      </main>
+    '''
+    page_2023 = '''
+      <main>
+        <h2>Non-Fiction</h2>
+        <p>The Passengers by Will Ashon</p>
+        <p>Constructing a Nervous System by Margo Jefferson - WINNER, NON-FICTION CATEGORY & BOOK OF THE YEAR</p>
+        <h2>Fiction</h2>
+        <p>Scary Monsters by Michelle de Kretser - WINNER, FICTION CATEGORY</p>
+      </main>
+    '''
+    page_2014 = '''
+      <main>
+        <p>The 2014 winner was George Saunders, for Tenth of December.</p>
+        <h2>Rathbones Folio Prize 2014 Shortlist</h2>
+        <h1>Red Doc</h1><h2>Anne Carson</h2>
+        <h1>Tenth of December</h1><h2>George Saunders</h2>
+        <h1>How to Get Filthy Rich in Rising Asia</h1><h2>Mohsin Hamid</h2>
+      </main>
+    '''
+
+    def fetch_url(url):
+      if url == 'https://thewritersprize.com/2024-prize/':
+        return page_2024
+      if url == 'https://thewritersprize.com/2023-prize/':
+        return page_2023
+      if url == 'https://thewritersprize.com/12692-2-2/':
+        return page_2014
+      self.fail(url)
+
+    parsed = FolioWritersPrizeOfficialParser('Book of the Year').parse(
+      root_html,
+      'https://thewritersprize.com/',
+      "Folio/Writers' Prize - Book of the Year",
+      fetch_url=fetch_url)
+
+    self.assertEqual([
+      ('2014', 'Tenth of December', 'George Saunders', 'winner'),
+      ('2014.01', 'Red Doc', 'Anne Carson', 'shortlisted'),
+      ('2014.02', 'How to Get Filthy Rich in Rising Asia', 'Mohsin Hamid', 'shortlisted'),
+      ('2023', 'Constructing a Nervous System', 'Margo Jefferson', 'winner'),
+      ('2023.01', 'The Passengers', 'Will Ashon', 'shortlisted'),
+      ('2023.02', 'Scary Monsters', 'Michelle de Kretser', 'shortlisted'),
+      ('2024', 'The Home Child', 'Liz Berry', 'winner'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(entry['category'] == 'Book of the Year' for entry in parsed['entries']))
+
+  def test_folio_writers_prize_older_shortlist_marker_handling(self):
+    from parser.folio_writers_prize import FolioWritersPrizeOfficialParser
+
+    html = '''
+      <main>
+        <p>The 2022 winner is Colm Toibin, for his novel The Magician.</p>
+        <h2>The Rathbones Folio Prize 2022 Longlist</h2>
+        <h4>A Little Devil in America - Hanif Abdurraqib (Allen Lane, Non-fiction)</h4>
+        <h4>Checkout 19 - Claire-Louise Bennett (Cape, Fiction)</h4>
+        <h4>***SHORTLISTED***</h4>
+        <h4>The Magician - Colm Toibin (Viking, Fiction)</h4>
+        <h4>***SHORTLISTED***</h4>
+        <h2>Judges</h2>
+        <p>News prose mentions another title by another writer.</p>
+      </main>
+    '''
+
+    parsed = FolioWritersPrizeOfficialParser('Book of the Year').parse(
+      html,
+      'https://thewritersprize.com/2022-2/',
+      "Folio/Writers' Prize - Book of the Year")
+
+    self.assertEqual([
+      ('2022', 'The Magician', 'Colm Toibin', 'winner'),
+      ('2022.01', 'Checkout 19', 'Claire-Louise Bennett', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertNotIn('A Little Devil in America', [entry['title'] for entry in parsed['entries']])
+
+  def test_folio_writers_prize_wikipedia_fallback_table(self):
+    from parser.folio_writers_prize import FolioWritersPrizeWikipediaParser
+
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr>
+          <td rowspan="5">2024</td>
+          <td>Liz Berry</td><td>The Home Child (Chatto & Windus)</td>
+          <td>Book of the Year winner</td>
+        </tr>
+        <tr><td>Anne Enright</td><td>The Wren, The Wren</td><td>Fiction winner</td></tr>
+        <tr><td>Paul Murray</td><td>The Bee Sting</td><td>Fiction shortlist</td></tr>
+        <tr><td>Laura Cumming</td><td>Thunderclap</td><td>Non-Fiction winner</td></tr>
+        <tr><td>Poet Name</td><td>Poetry Book</td><td>Poetry winner</td></tr>
+        <tr><td>2023</td><td>Margo Jefferson</td><td>Constructing a Nervous System</td><td>Winner</td></tr>
+        <tr><td></td><td>Will Ashon</td><td>The Passengers</td><td>Shortlist</td></tr>
+        <tr><td></td><td>Another Writer</td><td>Another Shortlisted Book</td><td></td></tr>
+      </table>
+    '''
+
+    fiction = FolioWritersPrizeWikipediaParser('Fiction').parse(html)
+    nonfiction = FolioWritersPrizeWikipediaParser('Non-Fiction').parse(html)
+    overall = FolioWritersPrizeWikipediaParser('Book of the Year').parse(html)
+
+    self.assertEqual([
+      ('2024', 'The Wren, The Wren', 'Anne Enright', 'winner'),
+      ('2024.01', 'The Bee Sting', 'Paul Murray', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in fiction['entries']
+    ])
+    self.assertEqual(
+      [('Thunderclap', 'Laura Cumming')],
+      [(entry['title'], entry['author']) for entry in nonfiction['entries']])
+    self.assertEqual(
+      [('Constructing a Nervous System', 'Margo Jefferson'),
+       ('The Passengers', 'Will Ashon'),
+       ('Another Shortlisted Book', 'Another Writer'),
+       ('The Home Child', 'Liz Berry')],
+      [(entry['title'], entry['author']) for entry in overall['entries']])
+    self.assertNotIn('Poetry Book', [entry['title'] for entry in fiction['entries']])
+
+  def test_folio_writers_prize_fetchers_metadata_and_fallback(self):
+    from parser.base import (
+      CATEGORY_LITERARY_GENERAL_FICTION,
+      CATEGORY_NONFICTION,
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+    )
+    from url_fetcher.folio_writers_prize import (
+      UrlFetcherFolioWritersPrizeBookOfTheYear,
+      UrlFetcherFolioWritersPrizeFiction,
+      UrlFetcherFolioWritersPrizeNonfiction,
+    )
+
+    fetchers = (
+      (UrlFetcherFolioWritersPrizeBookOfTheYear(), None),
+      (UrlFetcherFolioWritersPrizeFiction(), CATEGORY_LITERARY_GENERAL_FICTION),
+      (UrlFetcherFolioWritersPrizeNonfiction(), CATEGORY_NONFICTION),
+    )
+    expected_ids = {
+      'folio_writers_prize_book_of_the_year',
+      'folio_writers_prize_fiction',
+      'folio_writers_prize_nonfiction',
+    }
+    self.assertEqual(expected_ids, {fetcher.source_id for fetcher, _filter in fetchers})
+
+    for fetcher, expected_filter in fetchers:
+      with self.subTest(fetcher=fetcher.source_id):
+        filters = [item['label'] for item in fetcher.get_filter_list()]
+        if expected_filter is not None:
+          self.assertIn(expected_filter, filters)
+        self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+        self.assertFalse(fetcher.options['match_series'])
+        self.assertEqual((
+          {'label': 'Automatic', 'value': 'automatic'},
+          {'label': "The Writers' Prize", 'value': 0},
+          {'label': 'Wikipedia', 'value': 1},
+        ), fetcher.source_choices())
+
+    fetcher = UrlFetcherFolioWritersPrizeFiction()
+    wiki_html = '''
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td>2024</td><td>Anne Enright</td><td>The Wren, The Wren</td><td>Fiction winner</td></tr>
+      </table>
+    '''
+    calls = []
+
+    def fetch_url(url):
+      calls.append(url)
+      if url == fetcher.URL:
+        return '<main><p>2025 key dates only.</p></main>'
+      if url == fetcher.WIKIPEDIA_URL:
+        return wiki_html
+      self.fail(url)
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+
+    self.assertEqual(['The Wren, The Wren'], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual([fetcher.URL, fetcher.WIKIPEDIA_URL], calls)
+    self.assertFalse(parsed['match_series'])
+    with self.assertRaises(Exception):
+      fetcher.fetch_and_parse(fetch_url, disable_fallbacks=True)
+
+  def test_nero_book_awards_official_archive_discovery_and_winner_promotion(self):
+    from parser.nero_book_awards import NeroBookAwardsOfficialParser
+
+    root_html = '''
+      <main>
+        <a href="/a-family-matter-claire-lynch/">NERO GOLD PRIZE - 2025</a>
+        <a href="/2025-category-winners/">2025 CATEGORY WINNERS</a>
+        <a href="/2025-shortlist/">2025 SHORTLIST</a>
+        <a href="/2025-category-judges/">2025 CATEGORY JUDGES</a>
+        <a href="/new-writers-prize/">NEW WRITERS PRIZE</a>
+      </main>
+    '''
+    shortlist_html = '''
+      <main>
+        <h3>CHILDREN'S FICTION</h3>
+        <p>Dragonborn by Struan Murray</p>
+        <h3>FICTION</h3>
+        <p><a href="/cursed">Cursed Daughters by Oyinkan Braithwaite</a></p>
+        <p><a href="/sea">We Came by Sea by Horatio Clare</a></p>
+        <h3>NON-FICTION</h3>
+        <p>Craftland by James Fox</p>
+      </main>
+    '''
+    winners_html = '''
+      <main>
+        <p>We Came by Sea by Horatio Clare</p>
+        <p>Craftland by James Fox</p>
+        <p>Dragonborn by Struan Murray</p>
+      </main>
+    '''
+    calls = []
+
+    def fetch_url(url):
+      calls.append(url)
+      if url == 'https://nerobookawards.com/2025-shortlist/':
+        return shortlist_html
+      if url == 'https://nerobookawards.com/2025-category-winners/':
+        return winners_html
+      self.fail(url)
+
+    parsed = NeroBookAwardsOfficialParser('Fiction').parse(
+      root_html,
+      'https://nerobookawards.com/key-dates/',
+      'Nero Book Awards - Fiction',
+      fetch_url=fetch_url)
+
+    self.assertEqual([
+      ('2025', 'We Came by Sea', 'Horatio Clare', 'winner'),
+      ('2025.01', 'Cursed Daughters', 'Oyinkan Braithwaite', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertEqual([
+      'https://nerobookawards.com/2025-category-winners/',
+      'https://nerobookawards.com/2025-shortlist/',
+    ], calls)
+    self.assertNotIn('Craftland', [entry['title'] for entry in parsed['entries']])
+    self.assertFalse(parsed['match_series'])
+
+  def test_nero_book_awards_gold_prize_official_detail_page(self):
+    from parser.nero_book_awards import NeroBookAwardsOfficialParser
+
+    root_html = '''
+      <main>
+        <a href="/a-family-matter-claire-lynch/">NERO GOLD PRIZE - 2025</a>
+        <a href="/2025-shortlist/">2025 SHORTLIST</a>
+      </main>
+    '''
+    gold_html = '''
+      <main>
+        <h5>A Family Matter by Claire Lynch</h5>
+        <p>Judges praised the book.</p>
+        <h5>Claire Lynch</h5>
+        <h5>Other books shortlisted in this category :</h5>
+        <p>The Expansion Project by Ben Pester</p>
+      </main>
+    '''
+
+    parsed = NeroBookAwardsOfficialParser('Nero Gold Prize').parse(
+      root_html,
+      'https://nerobookawards.com/key-dates/',
+      'Nero Gold Prize / Book of the Year',
+      fetch_url=lambda url: gold_html)
+
+    self.assertEqual([
+      ('2025', 'A Family Matter', 'Claire Lynch', 'winner'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertEqual('Nero Gold Prize', parsed['entries'][0]['category'])
+
+  def test_nero_book_awards_wikipedia_category_and_gold_rows(self):
+    from parser.nero_book_awards import NeroBookAwardsWikipediaParser
+
+    html = '''
+      <table>
+        <tr>
+          <th>Year</th><th>Title</th><th>Author</th>
+          <th>Publisher</th><th>Result</th>
+        </tr>
+        <tr>
+          <td rowspan="5">2025</td>
+          <td>A Family Matter</td><td>Claire Lynch</td>
+          <td>Hutchinson Heinemann</td><td>Overall winner</td>
+        </tr>
+        <tr>
+          <td>Seascraper</td><td>Benjamin Wood</td>
+          <td>Viking</td><td>Fiction winner</td>
+        </tr>
+        <tr>
+          <td>The Two Roberts</td><td>Damian Barr</td>
+          <td>Canongate</td><td>Fiction shortlist</td>
+        </tr>
+        <tr>
+          <td>The Twelve (Pushkin Children's Books)</td>
+          <td>Liz Hyder (illustrated by Tom De Freston)</td>
+          <td>Pushkin</td><td>Children's Fiction winner</td>
+        </tr>
+        <tr>
+          <td>Poetry Book</td><td>Poet Name</td>
+          <td>Small Press</td><td>Poetry winner</td>
+        </tr>
+      </table>
+    '''
+
+    fiction = NeroBookAwardsWikipediaParser('Fiction').parse(html)
+    gold = NeroBookAwardsWikipediaParser('Nero Gold Prize').parse(html)
+    childrens = NeroBookAwardsWikipediaParser("Children's Fiction").parse(html)
+
+    self.assertEqual([
+      ('2025', 'Seascraper', 'Benjamin Wood', 'winner'),
+      ('2025.01', 'The Two Roberts', 'Damian Barr', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in fiction['entries']
+    ])
+    self.assertEqual(
+      [('A Family Matter', 'Claire Lynch')],
+      [(entry['title'], entry['author']) for entry in gold['entries']])
+    self.assertEqual(
+      [('The Twelve', 'Liz Hyder')],
+      [(entry['title'], entry['author']) for entry in childrens['entries']])
+    self.assertNotIn('Poetry Book', [entry['title'] for entry in fiction['entries']])
+
+  def test_nero_book_awards_fetchers_metadata_and_fallback(self):
+    from parser.base import (
+      CATEGORY_LITERARY_GENERAL_FICTION,
+      CATEGORY_NONFICTION,
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+      CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+    )
+    from url_fetcher.nero_book_awards import (
+      UrlFetcherNeroBookAwardsChildrensFiction,
+      UrlFetcherNeroBookAwardsDebutFiction,
+      UrlFetcherNeroBookAwardsFiction,
+      UrlFetcherNeroBookAwardsGoldPrize,
+      UrlFetcherNeroBookAwardsNonfiction,
+    )
+
+    fetchers = (
+      (UrlFetcherNeroBookAwardsFiction(), CATEGORY_LITERARY_GENERAL_FICTION),
+      (UrlFetcherNeroBookAwardsDebutFiction(), CATEGORY_LITERARY_GENERAL_FICTION),
+      (UrlFetcherNeroBookAwardsNonfiction(), CATEGORY_NONFICTION),
+      (
+        UrlFetcherNeroBookAwardsChildrensFiction(),
+        CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+      ),
+      (UrlFetcherNeroBookAwardsGoldPrize(), None),
+    )
+    expected_ids = {
+      'nero_book_awards_fiction',
+      'nero_book_awards_debut_fiction',
+      'nero_book_awards_nonfiction',
+      'nero_book_awards_childrens_fiction',
+      'nero_book_awards_gold_prize',
+    }
+    self.assertEqual(expected_ids, {fetcher.source_id for fetcher, _filter in fetchers})
+
+    for fetcher, expected_filter in fetchers:
+      with self.subTest(fetcher=fetcher.source_id):
+        filters = [item['label'] for item in fetcher.get_filter_list()]
+        if expected_filter is not None:
+          self.assertIn(expected_filter, filters)
+        self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+        self.assertFalse(fetcher.options['match_series'])
+        self.assertEqual((
+          {'label': 'Automatic', 'value': 'automatic'},
+          {'label': 'Nero Book Awards', 'value': 0},
+          {'label': 'Wikipedia', 'value': 1},
+        ), fetcher.source_choices())
+
+    fetcher = UrlFetcherNeroBookAwardsFiction()
+    wiki_html = '''
+      <table>
+        <tr><th>Year</th><th>Title</th><th>Author</th><th>Result</th></tr>
+        <tr><td>2025</td><td>Seascraper</td><td>Benjamin Wood</td><td>Fiction winner</td></tr>
+      </table>
+    '''
+    calls = []
+
+    def fetch_url(url):
+      calls.append(url)
+      if url == fetcher.URL:
+        return '<main><p>2026 key dates only.</p></main>'
+      if url == fetcher.WIKIPEDIA_URL:
+        return wiki_html
+      self.fail(url)
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+
+    self.assertEqual(['Seascraper'], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual([fetcher.URL, fetcher.WIKIPEDIA_URL], calls)
+    self.assertFalse(parsed['match_series'])
+    with self.assertRaises(Exception):
+      fetcher.fetch_and_parse(fetch_url, disable_fallbacks=True)
+
+  def test_nsw_premiers_literary_awards_official_cards_and_skips_noise(self):
+    from parser.nsw_premiers_literary_awards import (
+      NSWPremiersLiteraryAwardsOfficialParser,
+    )
+
+    html = '''
+      <html><head><title>Christina Stead Prize for Fiction</title></head>
+      <body><main>
+        <h2>2026 winner and shortlist</h2>
+        <div class="slnsw-card">
+          <span class="slnsw-d10-badges__badge__text">Winner</span>
+          <h5><a href="/awards/christina-stead-prize-fiction/2026-winner-night-blue">Night Blue</a></h5>
+          <div class="award-entry-author">Angela O'Keeffe</div>
+          <div class="award-entry-publisher">UQP</div>
+        </div>
+        <div class="slnsw-card">
+          <span class="slnsw-d10-badges__badge__text">Shortlisted</span>
+          <h5><a href="/awards/christina-stead-prize-fiction/2026-shortlisted-stone">Stone Yard Devotional</a></h5>
+          <div class="award-entry-author">Charlotte Wood</div>
+          <div class="award-entry-publisher">Allen &amp; Unwin</div>
+        </div>
+        <div class="award-judges-card">
+          <h5>Judge Biography</h5>
+          <p>Includes references to several books but is not an award row.</p>
+        </div>
+        <h2>Past winners</h2>
+        <div class="slnsw-card">
+          <span class="slnsw-d10-badges__badge__text">Winner</span>
+          <h5><a href="/awards/christina-stead-prize-fiction/2025-winner-highway-13">Highway 13</a></h5>
+          <div class="award-entry-author">Fiona McFarlane</div>
+        </div>
+      </main></body></html>
+    '''
+
+    parsed = NSWPremiersLiteraryAwardsOfficialParser(
+      'Christina Stead Prize for Fiction',
+      ('Christina Stead Prize for Fiction', 'Fiction')).parse(
+        html,
+        'https://www.sl.nsw.gov.au/awards/nsw-literary-awards/christina-stead-prize-fiction')
+
+    self.assertEqual([
+      ('2025', 'Highway 13', 'Fiona McFarlane', 'winner'),
+      ('2026', 'Night Blue', "Angela O'Keeffe", 'winner'),
+      ('2026.01', 'Stone Yard Devotional', 'Charlotte Wood', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(
+      entry['award'] == "NSW Premier's Literary Awards"
+      for entry in parsed['entries']))
+    self.assertTrue(all(
+      entry['category'] == 'Christina Stead Prize for Fiction'
+      for entry in parsed['entries']))
+    self.assertNotIn('Judge Biography', [entry['title'] for entry in parsed['entries']])
+    self.assertFalse(parsed['match_series'])
+
+  def test_nsw_premiers_literary_awards_announcement_sections(self):
+    from parser.nsw_premiers_literary_awards import (
+      NSWPremiersLiteraryAwardsOfficialParser,
+    )
+
+    html = '''
+      <html><head><title>2025 NSW Literary Awards announcement</title></head>
+      <body><main>
+        <h2>Christina Stead Prize for Fiction</h2>
+        <ul>
+          <li>WINNER: Theory &amp; Practice by Michelle de Kretser</li>
+          <li>Rapture by Emily Maguire</li>
+        </ul>
+        <h2>Kenneth Slessor Prize for Poetry</h2>
+        <ul><li>WINNER: The Cyprian by Amy Crutchfield</li></ul>
+        <h2>Nick Enright Prize for Playwriting</h2>
+        <p>WINNER: Stage Work by Playwright</p>
+      </main></body></html>
+    '''
+
+    parsed = NSWPremiersLiteraryAwardsOfficialParser(
+      'Christina Stead Prize for Fiction',
+      ('Christina Stead Prize for Fiction', 'Fiction')).parse(
+        html,
+        'https://www.sl.nsw.gov.au/awards/nsw-literary-awards/2025-nsw-literary-awards-announcement')
+
+    self.assertEqual([
+      ('2025', 'Theory & Practice', 'Michelle de Kretser', 'winner'),
+      ('2025.01', 'Rapture', 'Emily Maguire', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertNotIn('The Cyprian', [entry['title'] for entry in parsed['entries']])
+    self.assertNotIn('Stage Work', [entry['title'] for entry in parsed['entries']])
+
+  def test_nsw_premiers_literary_awards_wikipedia_rollup_winners(self):
+    from parser.nsw_premiers_literary_awards import (
+      NSWPremiersLiteraryAwardsWikipediaParser,
+    )
+
+    html = '''
+      <h2>Book of the Year</h2>
+      <table>
+        <tr><th>Year</th><th>Title</th><th>Author</th><th>Result</th></tr>
+        <tr><td rowspan="2">2024</td><td>She is the Earth</td><td>Ali Cobby Eckermann</td><td>Winner</td></tr>
+        <tr><td>Another Book</td><td>Another Author</td><td>Shortlisted</td></tr>
+        <tr><td>2023</td><td>We Come With This Place</td><td>Debra Dank</td><td>Winner</td></tr>
+      </table>
+      <h2>Kenneth Slessor Prize for Poetry</h2>
+      <table>
+        <tr><th>Year</th><th>Title</th><th>Author</th><th>Result</th></tr>
+        <tr><td>2024</td><td>The Cyprian</td><td>Amy Crutchfield</td><td>Winner</td></tr>
+      </table>
+    '''
+
+    parsed = NSWPremiersLiteraryAwardsWikipediaParser(
+      'Book of the Year',
+      ('Book of the Year',)).parse(html)
+
+    self.assertEqual([
+      ('2023', 'We Come With This Place', 'Debra Dank', 'winner'),
+      ('2024', 'She is the Earth', 'Ali Cobby Eckermann', 'winner'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertNotIn('Another Book', [entry['title'] for entry in parsed['entries']])
+    self.assertNotIn('The Cyprian', [entry['title'] for entry in parsed['entries']])
+
+  def test_nsw_premiers_literary_awards_fetchers_metadata_and_fallback(self):
+    from parser.base import (
+      CATEGORY_LITERARY_GENERAL_FICTION,
+      CATEGORY_NONFICTION,
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+      CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+    )
+    from url_fetcher.nsw_premiers_literary_awards import (
+      UrlFetcherNSWPremiersLiteraryAwardsBookOfTheYear,
+      UrlFetcherNSWPremiersLiteraryAwardsChristinaSteadFiction,
+      UrlFetcherNSWPremiersLiteraryAwardsDouglasStewartNonfiction,
+      UrlFetcherNSWPremiersLiteraryAwardsEthelTurnerYoungPeople,
+      UrlFetcherNSWPremiersLiteraryAwardsGlendaAdamsNewWriting,
+      UrlFetcherNSWPremiersLiteraryAwardsIndigenousWriters,
+      UrlFetcherNSWPremiersLiteraryAwardsMulticulturalNSW,
+      UrlFetcherNSWPremiersLiteraryAwardsPatriciaWrightsonChildrens,
+      UrlFetcherNSWPremiersLiteraryAwardsPeoplesChoice,
+    )
+
+    fetchers = (
+      (UrlFetcherNSWPremiersLiteraryAwardsChristinaSteadFiction(), CATEGORY_LITERARY_GENERAL_FICTION),
+      (UrlFetcherNSWPremiersLiteraryAwardsDouglasStewartNonfiction(), CATEGORY_NONFICTION),
+      (
+        UrlFetcherNSWPremiersLiteraryAwardsPatriciaWrightsonChildrens(),
+        CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+      ),
+      (
+        UrlFetcherNSWPremiersLiteraryAwardsEthelTurnerYoungPeople(),
+        CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+      ),
+      (UrlFetcherNSWPremiersLiteraryAwardsIndigenousWriters(), None),
+      (UrlFetcherNSWPremiersLiteraryAwardsGlendaAdamsNewWriting(), CATEGORY_LITERARY_GENERAL_FICTION),
+      (UrlFetcherNSWPremiersLiteraryAwardsMulticulturalNSW(), CATEGORY_NONFICTION),
+      (UrlFetcherNSWPremiersLiteraryAwardsBookOfTheYear(), CATEGORY_NONFICTION),
+      (UrlFetcherNSWPremiersLiteraryAwardsPeoplesChoice(), None),
+    )
+    expected_ids = {
+      'nsw_premiers_literary_awards_christina_stead_fiction',
+      'nsw_premiers_literary_awards_douglas_stewart_nonfiction',
+      'nsw_premiers_literary_awards_patricia_wrightson_childrens',
+      'nsw_premiers_literary_awards_ethel_turner_young_people',
+      'nsw_premiers_literary_awards_indigenous_writers',
+      'nsw_premiers_literary_awards_glenda_adams_new_writing',
+      'nsw_premiers_literary_awards_multicultural_nsw',
+      'nsw_premiers_literary_awards_book_of_the_year',
+      'nsw_premiers_literary_awards_peoples_choice',
+    }
+    self.assertEqual(expected_ids, {fetcher.source_id for fetcher, _filter in fetchers})
+
+    for fetcher, expected_filter in fetchers:
+      with self.subTest(fetcher=fetcher.source_id):
+        filters = [item['label'] for item in fetcher.get_filter_list()]
+        if expected_filter is not None:
+          self.assertIn(expected_filter, filters)
+        self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+        self.assertFalse(fetcher.options['match_series'])
+
+    self.assertEqual(
+      ({'label': 'Automatic', 'value': 'automatic'},),
+      UrlFetcherNSWPremiersLiteraryAwardsChristinaSteadFiction().source_choices())
+    self.assertEqual((
+      {'label': 'Automatic', 'value': 'automatic'},
+      {'label': 'State Library NSW', 'value': 0},
+      {'label': 'Wikipedia', 'value': 1},
+    ), UrlFetcherNSWPremiersLiteraryAwardsBookOfTheYear().source_choices())
+
+    fetcher = UrlFetcherNSWPremiersLiteraryAwardsBookOfTheYear()
+    official_html = '<html><title>Book of the Year</title><p>No entries yet.</p></html>'
+    wiki_html = '''
+      <h2>Book of the Year</h2>
+      <table>
+        <tr><th>Year</th><th>Title</th><th>Author</th><th>Result</th></tr>
+        <tr><td>2024</td><td>She is the Earth</td><td>Ali Cobby Eckermann</td><td>Winner</td></tr>
+      </table>
+    '''
+    calls = []
+
+    def fetch_url(url):
+      calls.append(url)
+      if url == fetcher.URL:
+        return official_html
+      if url == fetcher.WIKIPEDIA_URL:
+        return wiki_html
+      self.fail(url)
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+
+    self.assertEqual(['She is the Earth'], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual([fetcher.URL, fetcher.WIKIPEDIA_URL], calls)
+    self.assertFalse(parsed['match_series'])
+    with self.assertRaises(Exception):
+      fetcher.fetch_and_parse(fetch_url, disable_fallbacks=True)
+
+  def test_queensland_literary_awards_official_largest_prizes(self):
+    from parser.queensland_literary_awards import (
+      QueenslandLiteraryAwardsOfficialParser,
+    )
+
+    html = '''
+      <main>
+        <h2>2025 Queensland Literary Awards</h2>
+        <h3>Queensland Premier's Award for a Work of State Significance</h3>
+        <h4>Winner</h4>
+        <p><a href="/qla/black-witness">Black Witness (UQP</a></p>
+        <p>written by Amy McQuire</p>
+        <h4>Finalists</h4>
+        <p>The Knowledge Gene by Lynne Kelly (Allen &amp; Unwin)</p>
+        <h3>The University of Queensland Fiction Book Award</h3>
+        <h4>Winner</h4>
+        <p>The Jaguar written by Sarah Holland-Batt (UQP)</p>
+        <h3>The University of Queensland Non-Fiction Book Award</h3>
+        <h4>Winner</h4>
+        <p>Personal Score by Ellen van Neerven</p>
+        <h3>Children's Book Award</h3>
+        <h4>Winner</h4>
+        <p>Scar Town by Tristan Bancks</p>
+        <h3>Young Adult Book Award</h3>
+        <h4>Winner</h4>
+        <p>Completely Normal (and Other Lies) by Biffy James</p>
+        <h3>People's Choice Queensland Book of the Year Award</h3>
+        <h4>Winner</h4>
+        <p>Edenglassie by Melissa Lucashenko</p>
+        <h3>Queensland Writers Fellowship</h3>
+        <h4>Winner</h4>
+        <p>Person Only by Not A Book</p>
+        <h3>David Unaipon Award</h3>
+        <h4>Winner</h4>
+        <p>Unpublished Manuscript by Future Author</p>
+        <h3>Glendower Award for an Emerging Queensland Writer</h3>
+        <h4>Winner</h4>
+        <p>Emerging Person by Person Name</p>
+      </main>
+    '''
+
+    cases = (
+      (
+        'Work of State Significance',
+        ('Queensland Premier\'s Award for a Work of State Significance',),
+        [
+          ('2025', 'Black Witness', 'Amy McQuire', 'winner'),
+          ('2025.01', 'The Knowledge Gene', 'Lynne Kelly', 'shortlisted'),
+        ],
+      ),
+      (
+        'Fiction',
+        ('The University of Queensland Fiction Book Award', 'Fiction'),
+        [('2025', 'The Jaguar', 'Sarah Holland-Batt', 'winner')],
+      ),
+      (
+        'Non-Fiction',
+        ('The University of Queensland Non-Fiction Book Award', 'Non-Fiction'),
+        [('2025', 'Personal Score', 'Ellen van Neerven', 'winner')],
+      ),
+      (
+        "Children's Book",
+        ("Children's Book Award",),
+        [('2025', 'Scar Town', 'Tristan Bancks', 'winner')],
+      ),
+      (
+        'Young Adult Book',
+        ('Young Adult Book Award',),
+        [('2025', 'Completely Normal (and Other Lies)', 'Biffy James', 'winner')],
+      ),
+      (
+        "People's Choice",
+        ("People's Choice Queensland Book of the Year Award",),
+        [('2025', 'Edenglassie', 'Melissa Lucashenko', 'winner')],
+      ),
+    )
+
+    for category, aliases, expected in cases:
+      with self.subTest(category=category):
+        parsed = QueenslandLiteraryAwardsOfficialParser(
+          category, aliases).parse(html)
+        self.assertEqual(expected, [
+          (entry['position'], entry['title'], entry['author'], entry['result'])
+          for entry in parsed['entries']
+        ])
+        self.assertTrue(all(
+          entry['award'] == 'Queensland Literary Awards'
+          for entry in parsed['entries']))
+        self.assertTrue(all(entry['category'] == category for entry in parsed['entries']))
+        self.assertNotIn('Person Only', [entry['title'] for entry in parsed['entries']])
+        self.assertFalse(parsed['match_series'])
+
+  def test_queensland_literary_awards_official_historical_aliases(self):
+    from parser.queensland_literary_awards import (
+      QueenslandLiteraryAwardsOfficialParser,
+    )
+
+    html = '''
+      <main>
+        <h2>2018 Queensland Literary Awards</h2>
+        <h3>Queensland Premier's Award for a Work of State Signiﬁcance</h3>
+        <h4>Winner</h4>
+        <p>Tracker by Alexis Wright</p>
+        <h3>Griffith University Children's Book Award</h3>
+        <h4>Winner</h4>
+        <p>Nevermoor by Jessica Townsend</p>
+        <h3>Griffith University Young Adult Book Award</h3>
+        <h4>Winner</h4>
+        <p>Changing Gear by Scot Gardner</p>
+      </main>
+    '''
+
+    state = QueenslandLiteraryAwardsOfficialParser(
+      'Work of State Significance',
+      ('Queensland Premier\'s Award for a Work of State Significance',)).parse(html)
+    children = QueenslandLiteraryAwardsOfficialParser(
+      "Children's Book",
+      ("Griffith University Children's Book Award",)).parse(html)
+    young_adult = QueenslandLiteraryAwardsOfficialParser(
+      'Young Adult Book',
+      ('Griffith University Young Adult Book Award',)).parse(html)
+
+    self.assertEqual(['Tracker'], [entry['title'] for entry in state['entries']])
+    self.assertEqual(['Nevermoor'], [entry['title'] for entry in children['entries']])
+    self.assertEqual(['Changing Gear'], [entry['title'] for entry in young_adult['entries']])
+
+  def test_queensland_literary_awards_wikipedia_and_fetcher_fallback(self):
+    from parser.queensland_literary_awards import (
+      QueenslandLiteraryAwardsWikipediaParser,
+    )
+    from url_fetcher.queensland_literary_awards import (
+      UrlFetcherQueenslandLiteraryAwardsFiction,
+    )
+
+    wiki_html = '''
+      <table>
+        <tr><th>Year</th><th>Category</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td>2024</td><td>Fiction</td><td>Sarah Holland-Batt</td><td>The Jaguar</td><td>Winner</td></tr>
+        <tr><td>2024</td><td>Fiction</td><td>Another Writer</td><td>Other Novel</td><td>Finalist</td></tr>
+        <tr><td>2024</td><td>Fiction</td><td>Third Writer</td><td>Third Novel</td><td></td></tr>
+        <tr><td>2024</td><td>Poetry</td><td>Poet Name</td><td>Poetry Book</td><td>Winner</td></tr>
+      </table>
+    '''
+
+    parsed = QueenslandLiteraryAwardsWikipediaParser(
+      'Fiction',
+      ('Fiction', 'The University of Queensland Fiction Book Award')).parse(wiki_html)
+
+    self.assertEqual([
+      ('2024', 'The Jaguar', 'Sarah Holland-Batt', 'winner'),
+      ('2024.01', 'Other Novel', 'Another Writer', 'shortlisted'),
+      ('2024.02', 'Third Novel', 'Third Writer', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertNotIn('Poetry Book', [entry['title'] for entry in parsed['entries']])
+
+    fetcher = UrlFetcherQueenslandLiteraryAwardsFiction()
+    calls = []
+
+    def fetch_url(url):
+      calls.append(url)
+      if url == fetcher.URL:
+        return '<main><h2>2025</h2><p>No entries yet.</p></main>'
+      if url == fetcher.WIKIPEDIA_URL:
+        return wiki_html
+      self.fail(url)
+
+    fallback_parsed = fetcher.fetch_and_parse(fetch_url)
+
+    self.assertEqual(['The Jaguar', 'Other Novel', 'Third Novel'], [
+      entry['title'] for entry in fallback_parsed['entries']
+    ])
+    self.assertEqual([fetcher.URL, fetcher.WIKIPEDIA_URL], calls)
+    self.assertFalse(fallback_parsed['match_series'])
+    with self.assertRaises(Exception):
+      fetcher.fetch_and_parse(fetch_url, disable_fallbacks=True)
+
+  def test_queensland_literary_awards_fetchers_metadata_and_registry(self):
+    from parser.base import (
+      CATEGORY_LITERARY_GENERAL_FICTION,
+      CATEGORY_NONFICTION,
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+      CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+    )
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.queensland_literary_awards import (
+      UrlFetcherQueenslandLiteraryAwardsChildrens,
+      UrlFetcherQueenslandLiteraryAwardsFiction,
+      UrlFetcherQueenslandLiteraryAwardsNonfiction,
+      UrlFetcherQueenslandLiteraryAwardsPeoplesChoice,
+      UrlFetcherQueenslandLiteraryAwardsStateSignificance,
+      UrlFetcherQueenslandLiteraryAwardsYoungAdult,
+    )
+
+    fetchers = (
+      (UrlFetcherQueenslandLiteraryAwardsStateSignificance(), None),
+      (UrlFetcherQueenslandLiteraryAwardsFiction(), CATEGORY_LITERARY_GENERAL_FICTION),
+      (UrlFetcherQueenslandLiteraryAwardsNonfiction(), CATEGORY_NONFICTION),
+      (
+        UrlFetcherQueenslandLiteraryAwardsChildrens(),
+        CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+      ),
+      (
+        UrlFetcherQueenslandLiteraryAwardsYoungAdult(),
+        CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+      ),
+      (UrlFetcherQueenslandLiteraryAwardsPeoplesChoice(), None),
+    )
+    expected_ids = {
+      'queensland_literary_awards_state_significance',
+      'queensland_literary_awards_fiction',
+      'queensland_literary_awards_nonfiction',
+      'queensland_literary_awards_childrens',
+      'queensland_literary_awards_young_adult',
+      'queensland_literary_awards_peoples_choice',
+    }
+    self.assertEqual(expected_ids, {fetcher.source_id for fetcher, _filter in fetchers})
+
+    for fetcher, expected_filter in fetchers:
+      with self.subTest(fetcher=fetcher.source_id):
+        filters = [item['label'] for item in fetcher.get_filter_list()]
+        if expected_filter is not None:
+          self.assertIn(expected_filter, filters)
+        self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+        self.assertFalse(fetcher.options['match_series'])
+        self.assertEqual((
+          {'label': 'Automatic', 'value': 'automatic'},
+          {'label': 'State Library of Queensland', 'value': 0},
+          {'label': 'Wikipedia', 'value': 1},
+        ), fetcher.source_choices())
+
+    registry_ids = [fetcher.source_id for fetcher in available_url_fetchers()]
+    self.assertTrue(expected_ids.issubset(set(registry_ids)))
+    self.assertLess(
+      registry_ids.index('nsw_premiers_literary_awards_peoples_choice'),
+      registry_ids.index('queensland_literary_awards_state_significance'))
+    self.assertLess(
+      registry_ids.index('queensland_literary_awards_peoples_choice'),
+      registry_ids.index('writers_trust_atwood_gibson_fiction'))
+
+  def test_western_australian_premiers_book_awards_current_tables(self):
+    from parser.western_australian_premiers_book_awards import (
+      WesternAustralianPremiersBookAwardsWikipediaParser,
+    )
+
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Category</th><th>Author</th><th>Title</th><th>Publisher</th><th>Result</th></tr>
+        <tr><td rowspan="3">2024</td><td>Book of the Year</td><td>Stephen Daisley</td><td>A Better Place</td><td>Text</td><td>Winner</td></tr>
+        <tr><td>Emerging Writer</td><td>Michael Thomas</td><td>The Map of William</td><td>Fremantle Press</td><td>Winner</td></tr>
+        <tr><td>Poetry</td><td>Poet Name</td><td>Poetry Book</td><td>Example</td><td>Winner</td></tr>
+        <tr><td rowspan="6">2025</td><td rowspan="3">Fiction Book of the Year</td><td>Fiction Winner</td><td>Fiction Winner Book</td><td>Example</td><td>Winner</td></tr>
+        <tr><td>Fiction Finalist</td><td>Fiction Finalist Book</td><td>Example</td><td>Shortlist</td></tr>
+        <tr><td>Fiction Blank</td><td>Fiction Blank Book</td><td>Example</td><td></td></tr>
+        <tr><td>Nonfiction Book of the Year</td><td>Nonfiction Writer</td><td>Nonfiction Book</td><td>Example</td><td>Winner</td></tr>
+        <tr><td>Children's Book of the Year</td><td>Children's Writer</td><td>Children's Book Title</td><td>Example</td><td>Winner</td></tr>
+        <tr><td>Young Adult Book of the Year</td><td>YA Writer</td><td>YA Book Title</td><td>Example</td><td>Winner</td></tr>
+      </table>
+    '''
+
+    cases = (
+      (
+        'Book of the Year',
+        ('Book of the Year',),
+        [('2024', 'A Better Place', 'Stephen Daisley', 'winner')],
+      ),
+      (
+        'Emerging Writer',
+        ('Emerging Writer',),
+        [('2024', 'The Map of William', 'Michael Thomas', 'winner')],
+      ),
+      (
+        'Fiction',
+        ('Fiction Book of the Year', 'Fiction'),
+        [
+          ('2025', 'Fiction Winner Book', 'Fiction Winner', 'winner'),
+          ('2025.01', 'Fiction Finalist Book', 'Fiction Finalist', 'shortlisted'),
+          ('2025.02', 'Fiction Blank Book', 'Fiction Blank', 'shortlisted'),
+        ],
+      ),
+      (
+        'Nonfiction',
+        ('Nonfiction Book of the Year', 'Nonfiction'),
+        [('2025', 'Nonfiction Book', 'Nonfiction Writer', 'winner')],
+      ),
+      (
+        "Children's Book",
+        ("Children's Book of the Year", "Children's Book"),
+        [('2025', "Children's Book Title", "Children's Writer", 'winner')],
+      ),
+      (
+        'Young Adult Book',
+        ('Young Adult Book of the Year', 'Writing for Young Adults'),
+        [('2025', 'YA Book Title', 'YA Writer', 'winner')],
+      ),
+    )
+
+    for category, aliases, expected in cases:
+      with self.subTest(category=category):
+        parsed = WesternAustralianPremiersBookAwardsWikipediaParser(
+          category, aliases).parse(html)
+        self.assertEqual(expected, [
+          (entry['position'], entry['title'], entry['author'], entry['result'])
+          for entry in parsed['entries']
+        ])
+        self.assertTrue(all(
+          entry['award'] == "Western Australian Premier's Book Awards"
+          for entry in parsed['entries']))
+        self.assertTrue(all(entry['category'] == category for entry in parsed['entries']))
+        self.assertFalse(parsed['match_series'])
+
+  def test_western_australian_premiers_book_awards_historical_aliases(self):
+    from parser.western_australian_premiers_book_awards import (
+      WesternAustralianPremiersBookAwardsWikipediaParser,
+    )
+
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Award</th><th>Writer</th><th>Work</th><th>Status</th></tr>
+        <tr><td>2010</td><td>Overall</td><td>Overall Writer</td><td>Overall Book</td><td>Winner</td></tr>
+        <tr><td>2011</td><td>Fiction</td><td>Fiction Writer</td><td>Old Fiction</td><td>Winner</td></tr>
+        <tr><td>2012</td><td>Non-fiction</td><td>Nonfiction Writer</td><td>Old Nonfiction</td><td>Winner</td></tr>
+        <tr><td>2013</td><td>Children's book</td><td>Children's Writer</td><td>Old Children's</td><td>Winner</td></tr>
+        <tr><td>2014</td><td>Writing for Young Adults</td><td>YA Writer</td><td>Old YA</td><td>Winner</td></tr>
+      </table>
+    '''
+
+    self.assertEqual(
+      ['Overall Book'],
+      [entry['title'] for entry in WesternAustralianPremiersBookAwardsWikipediaParser(
+        'Book of the Year', ('Overall', 'Premier\'s Prize')).parse(html)['entries']])
+    self.assertEqual(
+      ['Old Fiction'],
+      [entry['title'] for entry in WesternAustralianPremiersBookAwardsWikipediaParser(
+        'Fiction', ('Fiction',)).parse(html)['entries']])
+    self.assertEqual(
+      ['Old Nonfiction'],
+      [entry['title'] for entry in WesternAustralianPremiersBookAwardsWikipediaParser(
+        'Nonfiction', ('Non-fiction', 'Nonfiction')).parse(html)['entries']])
+    self.assertEqual(
+      ["Old Children's"],
+      [entry['title'] for entry in WesternAustralianPremiersBookAwardsWikipediaParser(
+        "Children's Book", ("Children's book",)).parse(html)['entries']])
+    self.assertEqual(
+      ['Old YA'],
+      [entry['title'] for entry in WesternAustralianPremiersBookAwardsWikipediaParser(
+        'Young Adult Book', ('Writing for Young Adults',)).parse(html)['entries']])
+
+  def test_western_australian_premiers_book_awards_skips_out_of_scope_categories(self):
+    from parser.western_australian_premiers_book_awards import (
+      WesternAustralianPremiersBookAwardsWikipediaParser,
+    )
+
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Category</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td>2025</td><td>WA Writer's Fellowship</td><td>Fellow Name</td><td>Fellow Work</td><td>Winner</td></tr>
+        <tr><td>2025</td><td>Daisy Utemorrah Award</td><td>Manuscript Writer</td><td>Unpublished Work</td><td>Winner</td></tr>
+        <tr><td>2025</td><td>Poetry</td><td>Poet Name</td><td>Poetry Book</td><td>Winner</td></tr>
+        <tr><td>2025</td><td>Script</td><td>Script Writer</td><td>Script Work</td><td>Winner</td></tr>
+        <tr><td>2025</td><td>Digital Narrative</td><td>Digital Writer</td><td>Digital Work</td><td>Winner</td></tr>
+        <tr><td>2025</td><td>Special Award</td><td>Person Name</td><td>Person Work</td><td>Winner</td></tr>
+        <tr><td>2025</td><td>WA History</td><td>History Writer</td><td>History Work</td><td>Winner</td></tr>
+      </table>
+    '''
+
+    parsed = WesternAustralianPremiersBookAwardsWikipediaParser(
+      'Excluded',
+      (
+        'WA Writer\'s Fellowship',
+        'Daisy Utemorrah Award',
+        'Poetry',
+        'Script',
+        'Digital Narrative',
+        'Special Award',
+        'WA History',
+      )).parse(html)
+
+    self.assertEqual([], parsed['entries'])
+
+  def test_western_australian_premiers_book_awards_fetchers_metadata_and_registry(self):
+    from parser.base import (
+      CATEGORY_LITERARY_GENERAL_FICTION,
+      CATEGORY_NONFICTION,
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+      CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+    )
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.western_australian_premiers_book_awards import (
+      UrlFetcherWesternAustralianPremiersBookAwardsBookOfTheYear,
+      UrlFetcherWesternAustralianPremiersBookAwardsChildrens,
+      UrlFetcherWesternAustralianPremiersBookAwardsEmergingWriter,
+      UrlFetcherWesternAustralianPremiersBookAwardsFiction,
+      UrlFetcherWesternAustralianPremiersBookAwardsNonfiction,
+      UrlFetcherWesternAustralianPremiersBookAwardsYoungAdult,
+    )
+
+    fetchers = (
+      (UrlFetcherWesternAustralianPremiersBookAwardsBookOfTheYear(), None),
+      (UrlFetcherWesternAustralianPremiersBookAwardsFiction(), CATEGORY_LITERARY_GENERAL_FICTION),
+      (UrlFetcherWesternAustralianPremiersBookAwardsNonfiction(), CATEGORY_NONFICTION),
+      (UrlFetcherWesternAustralianPremiersBookAwardsEmergingWriter(), None),
+      (
+        UrlFetcherWesternAustralianPremiersBookAwardsChildrens(),
+        CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+      ),
+      (
+        UrlFetcherWesternAustralianPremiersBookAwardsYoungAdult(),
+        CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+      ),
+    )
+    expected_ids = {
+      'western_australian_premiers_book_awards_book_of_the_year',
+      'western_australian_premiers_book_awards_fiction',
+      'western_australian_premiers_book_awards_nonfiction',
+      'western_australian_premiers_book_awards_emerging_writer',
+      'western_australian_premiers_book_awards_childrens',
+      'western_australian_premiers_book_awards_young_adult',
+    }
+    self.assertEqual(expected_ids, {fetcher.source_id for fetcher, _filter in fetchers})
+
+    for fetcher, expected_filter in fetchers:
+      with self.subTest(fetcher=fetcher.source_id):
+        filters = [item['label'] for item in fetcher.get_filter_list()]
+        if expected_filter is not None:
+          self.assertIn(expected_filter, filters)
+        self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+        self.assertFalse(fetcher.options['match_series'])
+        self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+
+    registry_ids = [fetcher.source_id for fetcher in available_url_fetchers()]
+    self.assertTrue(expected_ids.issubset(set(registry_ids)))
+    self.assertLess(
+      registry_ids.index('queensland_literary_awards_peoples_choice'),
+      registry_ids.index('western_australian_premiers_book_awards_book_of_the_year'))
+    self.assertLess(
+      registry_ids.index('western_australian_premiers_book_awards_young_adult'),
+      registry_ids.index('writers_trust_atwood_gibson_fiction'))
+
+  def test_south_australian_literary_awards_official_winners(self):
+    from parser.south_australian_literary_awards import (
+      SouthAustralianLiteraryAwardsOfficialParser,
+    )
+
+    html = '''
+      <main>
+        <h2>2024 winners</h2>
+        <h3>Premier's Award</h3>
+        <ul>
+          <li><a href="/premiers-award">2024 - Childhood, Shannon Burns (Text Publishing)</a></li>
+        </ul>
+        <h3>Fiction Award</h3>
+        <p>2024 - Permafrost, SJ Norman (University of Queensland Press)</p>
+        <h3>Non-Fiction Award</h3>
+        <p>2024 - Childhood, Shannon Burns (Text Publishing)</p>
+        <h3>Children's Literature Award</h3>
+        <p>2024 - Scar Town by Tristan Bancks (Puffin)</p>
+        <h3>Young Adult Fiction Award</h3>
+        <p>2024 - Completely normal (and other lies), Biffy James (Hardie Grant)</p>
+      </main>
+    '''
+    cases = (
+      (
+        "Premier's Award",
+        ("Premier's Award",),
+        [('2024', 'Childhood', 'Shannon Burns')],
+      ),
+      (
+        'Fiction',
+        ('Fiction Award', 'Fiction'),
+        [('2024', 'Permafrost', 'SJ Norman')],
+      ),
+      (
+        'Non-Fiction',
+        ('Non-Fiction Award', 'Non-Fiction'),
+        [('2024', 'Childhood', 'Shannon Burns')],
+      ),
+      (
+        "Children's Literature",
+        ("Children's Literature Award",),
+        [('2024', 'Scar Town', 'Tristan Bancks')],
+      ),
+      (
+        'Young Adult Fiction',
+        ('Young Adult Fiction Award',),
+        [('2024', 'Completely normal (and other lies)', 'Biffy James')],
+      ),
+    )
+
+    for category, aliases, expected in cases:
+      with self.subTest(category=category):
+        parsed = SouthAustralianLiteraryAwardsOfficialParser(
+          category, aliases).parse(html)
+        self.assertEqual(expected, [
+          (entry['position'], entry['title'], entry['author'])
+          for entry in parsed['entries']
+        ])
+        self.assertTrue(all(entry['result'] == 'winner' for entry in parsed['entries']))
+        self.assertTrue(all(
+          entry['award'] == 'South Australian Literary Awards'
+          for entry in parsed['entries']))
+        self.assertTrue(all(entry['category'] == category for entry in parsed['entries']))
+        self.assertFalse(parsed['match_series'])
+
+  def test_south_australian_literary_awards_official_historical_aliases(self):
+    from parser.south_australian_literary_awards import (
+      SouthAustralianLiteraryAwardsOfficialParser,
+    )
+
+    html = '''
+      <main>
+        <h3>Premier's Award for the Best Overall Published Work</h3>
+        <p>2020 - Joint winners: First Overall, A. Writer (Press); Second Overall by B. Writer</p>
+        <h3>Fiction</h3>
+        <p>2018 - Old Fiction by Fiction Writer (Publisher)</p>
+        <h3>Nonfiction Award</h3>
+        <p>2017 - Old Nonfiction, Nonfiction Writer (Publisher)</p>
+        <h3>Young Adult Award</h3>
+        <p>2016 - Old YA, YA Writer (Publisher)</p>
+      </main>
+    '''
+
+    overall = SouthAustralianLiteraryAwardsOfficialParser(
+      "Premier's Award",
+      ("Premier's Award for the Best Overall Published Work",)).parse(html)
+    fiction = SouthAustralianLiteraryAwardsOfficialParser(
+      'Fiction',
+      ('Fiction Award', 'Fiction')).parse(html)
+    nonfiction = SouthAustralianLiteraryAwardsOfficialParser(
+      'Non-Fiction',
+      ('Nonfiction Award', 'Non-Fiction')).parse(html)
+    young_adult = SouthAustralianLiteraryAwardsOfficialParser(
+      'Young Adult Fiction',
+      ('Young Adult Award', 'Young Adult Fiction')).parse(html)
+
+    self.assertEqual([
+      ('2020', 'First Overall', 'A. Writer'),
+      ('2020', 'Second Overall', 'B. Writer'),
+    ], [
+      (entry['position'], entry['title'], entry['author'])
+      for entry in overall['entries']
+    ])
+    self.assertEqual(['Old Fiction'], [entry['title'] for entry in fiction['entries']])
+    self.assertEqual(['Old Nonfiction'], [entry['title'] for entry in nonfiction['entries']])
+    self.assertEqual(['Old YA'], [entry['title'] for entry in young_adult['entries']])
+
+  def test_south_australian_literary_awards_official_skips_out_of_scope_sections(self):
+    from parser.south_australian_literary_awards import (
+      SouthAustralianLiteraryAwardsOfficialParser,
+    )
+
+    html = '''
+      <main>
+        <h3>Fiction Award</h3>
+        <p>2024 - No winner</p>
+        <h3>John Bray Poetry Award</h3>
+        <p>2024 - Poetry Book, Poet Name</p>
+        <h3>Jill Blewett Playwright's Award</h3>
+        <p>2024 - Play Script, Playwright Name</p>
+        <h3>Unpublished Manuscript Award</h3>
+        <p>2024 - Manuscript, Future Author</p>
+        <h3>Barbara Hanrahan Fellowship</h3>
+        <p>2024 - Fellow Name, Fellowship Project</p>
+        <h3>Max Fatchen Fellowship</h3>
+        <p>2024 - Fellow Name, Fellowship Project</p>
+        <h3>Tangkanungku Pintyanthi Fellowship</h3>
+        <p>2024 - Fellow Name, Fellowship Project</p>
+        <h3>Innovation Award</h3>
+        <p>2024 - Innovative Work, Innovator Name</p>
+        <h3>Multimedia Award</h3>
+        <p>2024 - Media Work, Media Maker</p>
+      </main>
+    '''
+
+    parsed = SouthAustralianLiteraryAwardsOfficialParser(
+      'Fiction',
+      ('Fiction Award', 'Fiction')).parse(html)
+
+    self.assertEqual([], parsed['entries'])
+
+  def test_south_australian_literary_awards_wikipedia_fallback(self):
+    from parser.south_australian_literary_awards import (
+      SouthAustralianLiteraryAwardsWikipediaParser,
+    )
+    from url_fetcher.south_australian_literary_awards import (
+      UrlFetcherSouthAustralianLiteraryAwardsFiction,
+    )
+
+    wiki_html = '''
+      <table>
+        <tr><th>Year</th><th>Category</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td>2024</td><td>Fiction Award</td><td>SJ Norman</td><td>Permafrost</td><td>Winner</td></tr>
+        <tr><td></td><td>Fiction Award</td><td>Shortlisted Author</td><td>Short Book</td><td>Shortlist</td></tr>
+        <tr><td>2024</td><td>John Bray Poetry Award</td><td>Poet</td><td>Poem Book</td><td>Winner</td></tr>
+      </table>
+    '''
+
+    parsed = SouthAustralianLiteraryAwardsWikipediaParser(
+      'Fiction',
+      ('Fiction Award', 'Fiction')).parse(wiki_html)
+
+    self.assertEqual([
+      ('2024', 'Permafrost', 'SJ Norman', 'winner'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+
+    fetcher = UrlFetcherSouthAustralianLiteraryAwardsFiction()
+    calls = []
+
+    def fetch_url(url):
+      calls.append(url)
+      if url == fetcher.URL:
+        return '<main><h3>Fiction Award</h3><p>No winner</p></main>'
+      if url == fetcher.WIKIPEDIA_URL:
+        return wiki_html
+      self.fail(url)
+
+    fallback = fetcher.fetch_and_parse(fetch_url)
+
+    self.assertEqual(['Permafrost'], [entry['title'] for entry in fallback['entries']])
+    self.assertEqual([fetcher.URL, fetcher.WIKIPEDIA_URL], calls)
+    self.assertFalse(fallback['match_series'])
+    with self.assertRaises(Exception):
+      fetcher.fetch_and_parse(fetch_url, disable_fallbacks=True)
+
+  def test_south_australian_literary_awards_fetchers_metadata_and_registry(self):
+    from parser.base import (
+      CATEGORY_LITERARY_GENERAL_FICTION,
+      CATEGORY_NONFICTION,
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+      CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+    )
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.south_australian_literary_awards import (
+      UrlFetcherSouthAustralianLiteraryAwardsChildrens,
+      UrlFetcherSouthAustralianLiteraryAwardsFiction,
+      UrlFetcherSouthAustralianLiteraryAwardsNonfiction,
+      UrlFetcherSouthAustralianLiteraryAwardsPremiersAward,
+      UrlFetcherSouthAustralianLiteraryAwardsYoungAdult,
+    )
+
+    fetchers = (
+      (UrlFetcherSouthAustralianLiteraryAwardsPremiersAward(), None),
+      (UrlFetcherSouthAustralianLiteraryAwardsFiction(), CATEGORY_LITERARY_GENERAL_FICTION),
+      (UrlFetcherSouthAustralianLiteraryAwardsNonfiction(), CATEGORY_NONFICTION),
+      (
+        UrlFetcherSouthAustralianLiteraryAwardsChildrens(),
+        CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+      ),
+      (
+        UrlFetcherSouthAustralianLiteraryAwardsYoungAdult(),
+        CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+      ),
+    )
+    expected_ids = {
+      'south_australian_literary_awards_premiers_award',
+      'south_australian_literary_awards_fiction',
+      'south_australian_literary_awards_nonfiction',
+      'south_australian_literary_awards_childrens',
+      'south_australian_literary_awards_young_adult',
+    }
+    self.assertEqual(expected_ids, {fetcher.source_id for fetcher, _filter in fetchers})
+
+    for fetcher, expected_filter in fetchers:
+      with self.subTest(fetcher=fetcher.source_id):
+        filters = [item['label'] for item in fetcher.get_filter_list()]
+        if expected_filter is not None:
+          self.assertIn(expected_filter, filters)
+        self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+        self.assertFalse(fetcher.options['match_series'])
+        self.assertEqual((
+          {'label': 'Automatic', 'value': 'automatic'},
+          {'label': 'State Library of South Australia', 'value': 0},
+          {'label': 'Wikipedia', 'value': 1},
+        ), fetcher.source_choices())
+
+    registry_ids = [fetcher.source_id for fetcher in available_url_fetchers()]
+    self.assertTrue(expected_ids.issubset(set(registry_ids)))
+    self.assertLess(
+      registry_ids.index('western_australian_premiers_book_awards_young_adult'),
+      registry_ids.index('south_australian_literary_awards_premiers_award'))
+    self.assertLess(
+      registry_ids.index('south_australian_literary_awards_young_adult'),
+      registry_ids.index('writers_trust_atwood_gibson_fiction'))
+
+  def test_act_book_of_the_year_official_parser_fetches_year_pages(self):
+    from parser.act_book_of_the_year import ACTBookOfTheYearOfficialParser
+
+    index_html = '''
+      <main>
+        <a href="/find/history/frequentlyaskedquestions/Events/literaryawards/book_of_the_year/2024">2024 ACT Book of the Year</a>
+        <a href="/find/history/frequentlyaskedquestions/Events/literaryawards/book_of_the_year_2001">2001 ACT Book of the Year</a>
+      </main>
+    '''
+    pages = {
+      'https://www.library.act.gov.au/find/history/frequentlyaskedquestions/Events/literaryawards/book_of_the_year/2024': '''
+        <main>
+          <h1>2024 ACT Book of the Year</h1>
+          <h2>Winner</h2>
+          <p>Chris Hammer <a href="/catalogue/the-seven">The Seven</a></p>
+          <h2>Highly Commended</h2>
+          <p>Ayesha Inoon <a href="/catalogue/untethered">Untethered</a></p>
+          <h2>Shortlist</h2>
+          <p>Jackie French <a href="/catalogue/gallipoli">The Great Gallipoli Escape</a></p>
+        </main>
+      ''',
+      'https://www.library.act.gov.au/find/history/frequentlyaskedquestions/Events/literaryawards/book_of_the_year_2001': '''
+        <main>
+          <h1>2001 ACT Book of the Year</h1>
+          <h2>Joint Winners</h2>
+          <p>Writer One <a href="/catalogue/joint-one">Joint Book One</a></p>
+          <p>Writer Two <a href="/catalogue/joint-two">Joint Book Two</a></p>
+        </main>
+      ''',
+    }
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      return pages[url]
+
+    parsed = ACTBookOfTheYearOfficialParser().parse(
+      index_html,
+      'https://www.library.act.gov.au/find/history/frequentlyaskedquestions/Events/literaryawards/book_of_the_year',
+      fetch_url=fetch_url)
+
+    self.assertEqual([
+      'https://www.library.act.gov.au/find/history/frequentlyaskedquestions/Events/literaryawards/book_of_the_year_2001',
+      'https://www.library.act.gov.au/find/history/frequentlyaskedquestions/Events/literaryawards/book_of_the_year/2024',
+    ], fetched)
+    self.assertEqual([
+      ('2001', 'Joint Book One', 'Writer One', 'winner'),
+      ('2001', 'Joint Book Two', 'Writer Two', 'winner'),
+      ('2024', 'The Seven', 'Chris Hammer', 'winner'),
+      ('2024.01', 'Untethered', 'Ayesha Inoon', 'shortlisted'),
+      ('2024.02', 'The Great Gallipoli Escape', 'Jackie French', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(entry['award'] == 'ACT Book of the Year Award' for entry in parsed['entries']))
+    self.assertTrue(all(entry['category'] == 'Book of the Year' for entry in parsed['entries']))
+    self.assertFalse(parsed['match_series'])
+
+  def test_act_book_of_the_year_wikipedia_parser_handles_rowspans_and_results(self):
+    from parser.act_book_of_the_year import ACTBookOfTheYearWikipediaParser
+
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Publisher</th><th>Result</th><th>Ref.</th></tr>
+        <tr><td rowspan="2">2025</td><td>Darren Rix &amp; Craig Cormick</td><td><a href="/wiki/Warra_Warra_Wai">Warra Warra Wai</a></td><td>Publisher</td><td>Winner</td><td>[1]</td></tr>
+        <tr><td>Sarah Ayoub</td><td>Lebanon Days</td><td>Publisher</td><td>Highly Commended</td><td>[1]</td></tr>
+        <tr><td rowspan="2">2001</td><td>Writer One</td><td>Joint Book One</td><td>Publisher</td><td rowspan="2">Joint winners</td><td>[2]</td></tr>
+        <tr><td>Writer Two</td><td>Joint Book Two</td><td>Publisher</td><td>[2]</td></tr>
+        <tr><td>1998</td><td>Older Writer</td><td>Older Book</td><td>Publisher</td><td></td><td>[3]</td></tr>
+      </table>
+    '''
+
+    parsed = ACTBookOfTheYearWikipediaParser().parse(html)
+
+    self.assertEqual([
+      ('1998', 'Older Book', 'Older Writer', 'winner'),
+      ('2001', 'Joint Book One', 'Writer One', 'winner'),
+      ('2001', 'Joint Book Two', 'Writer Two', 'winner'),
+      ('2025', 'Warra Warra Wai', 'Darren Rix & Craig Cormick', 'winner'),
+      ('2025.01', 'Lebanon Days', 'Sarah Ayoub', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+
+  def test_act_book_of_the_year_fetcher_supplements_missing_official_winner(self):
+    from url_fetcher.act_book_of_the_year import UrlFetcherACTBookOfTheYearAward
+
+    fetcher = UrlFetcherACTBookOfTheYearAward()
+    official_index = '''
+      <main>
+        <a href="/find/history/frequentlyaskedquestions/Events/literaryawards/book_of_the_year/2025">2025 ACT Book of the Year</a>
+      </main>
+    '''
+    official_2025 = '''
+      <main>
+        <h1>2025 ACT Book of the Year</h1>
+        <h2>Shortlist</h2>
+        <p>Sarah Ayoub <a href="/catalogue/lebanon-days">Lebanon Days</a></p>
+      </main>
+    '''
+    wiki_html = '''
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td>2025</td><td>Darren Rix &amp; Craig Cormick</td><td>Warra Warra Wai</td><td>Winner</td></tr>
+        <tr><td></td><td>Sarah Ayoub</td><td>Lebanon Days</td><td>Highly Commended</td></tr>
+      </table>
+    '''
+    calls = []
+
+    def fetch_url(url):
+      calls.append(url)
+      if url == fetcher.URL:
+        return official_index
+      if url.endswith('/2025'):
+        return official_2025
+      if url == fetcher.WIKIPEDIA_URL:
+        return wiki_html
+      self.fail(url)
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+
+    self.assertEqual([
+      ('2025', 'Warra Warra Wai', 'winner'),
+      ('2025.01', 'Lebanon Days', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertEqual([fetcher.URL, fetcher.URL + '/2025', fetcher.WIKIPEDIA_URL], calls)
+    self.assertFalse(parsed['match_series'])
+
+    calls.clear()
+    official_only = fetcher.fetch_and_parse(fetch_url, source_choice=0)
+    self.assertEqual(['Lebanon Days'], [entry['title'] for entry in official_only['entries']])
+    self.assertEqual([fetcher.URL, fetcher.URL + '/2025'], calls)
+
+    calls.clear()
+    disabled = fetcher.fetch_and_parse(fetch_url, disable_fallbacks=True)
+    self.assertEqual(['Lebanon Days'], [entry['title'] for entry in disabled['entries']])
+    self.assertEqual([fetcher.URL, fetcher.URL + '/2025'], calls)
+
+    calls.clear()
+    wikipedia = fetcher.fetch_and_parse(fetch_url, source_choice=1)
+    self.assertEqual(['Warra Warra Wai', 'Lebanon Days'], [
+      entry['title'] for entry in wikipedia['entries']
+    ])
+    self.assertEqual([fetcher.WIKIPEDIA_URL], calls)
+
+  def test_act_book_of_the_year_fetcher_metadata_and_registry(self):
+    from parser.base import CATEGORY_REGIONAL_NATIONAL_AWARDS
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.act_book_of_the_year import UrlFetcherACTBookOfTheYearAward
+
+    fetcher = UrlFetcherACTBookOfTheYearAward()
+
+    self.assertEqual('act_book_of_the_year_award', fetcher.source_id)
+    self.assertEqual('ACT Book of the Year Award', fetcher.NAME)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual(
+      [CATEGORY_REGIONAL_NATIONAL_AWARDS],
+      [item['label'] for item in fetcher.get_filter_list()])
+    self.assertEqual((
+      {'label': 'Automatic', 'value': 'automatic'},
+      {'label': 'Libraries ACT', 'value': 0},
+      {'label': 'Wikipedia', 'value': 1},
+    ), fetcher.source_choices())
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('act_book_of_the_year_award', registry_ids)
+    self.assertLess(
+      registry_ids.index('south_australian_literary_awards_young_adult'),
+      registry_ids.index('act_book_of_the_year_award'))
+    self.assertLess(
+      registry_ids.index('act_book_of_the_year_award'),
+      registry_ids.index('writers_trust_atwood_gibson_fiction'))
+
+  def test_james_tait_black_fiction_winner_archive(self):
+    from parser.james_tait_black import JamesTaitBlackOfficialParser
+
+    html = '''
+      <ul>
+        <li><a href="/winners/fiction/headshot">Rita Bullwinkel - Headshot (Daunt Books) - 2024</a></li>
+        <li>Jenny Erpenbeck, translated by Michael Hofmann - Kairos (Granta) - 2023</li>
+        <li>Joint Award: Graham Swift - Last Orders (Picador Macmillan) and Alice Thompson - Justine (Canongate) - 1996</li>
+      </ul>
+    '''
+
+    parsed = JamesTaitBlackOfficialParser(
+      'Fiction', ('Leading fiction', 'Fiction')).parse(
+        html,
+        'https://james-tait-black.ed.ac.uk/winners/fiction',
+        'James Tait Black Prize - Fiction')
+
+    self.assertEqual([
+      ('1996', 'Last Orders', 'Graham Swift', 'winner'),
+      ('1996', 'Justine', 'Alice Thompson', 'winner'),
+      ('2023', 'Kairos', 'Jenny Erpenbeck', 'winner'),
+      ('2024', 'Headshot', 'Rita Bullwinkel', 'winner'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(entry['category'] == 'Fiction' for entry in parsed['entries']))
+
+  def test_james_tait_black_biography_winner_archive_splits_joint_rows(self):
+    from parser.james_tait_black import JamesTaitBlackOfficialParser
+
+    html = '''
+      <ul>
+        <li>Iman Mersal, translated by Robin Moger - Traces of Enayat (And Other Stories) and Ian Penman - Fassbinder: Thousands of Mirrors (Fitzcarraldo Editions) - 2023</li>
+        <li>Andrea Wulf - Magnificent Rebels (John Murray) - 2022</li>
+      </ul>
+    '''
+
+    parsed = JamesTaitBlackOfficialParser(
+      'Biography', ('Lives reimagined', 'Biography')).parse(
+        html,
+        'https://james-tait-black.ed.ac.uk/winners/biography',
+        'James Tait Black Prize - Biography')
+
+    self.assertEqual([
+      ('2022', 'Magnificent Rebels', 'Andrea Wulf'),
+      ('2023', 'Traces of Enayat', 'Iman Mersal'),
+      ('2023', 'Fassbinder: Thousands of Mirrors', 'Ian Penman'),
+    ], [
+      (entry['position'], entry['title'], entry['author'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(entry['result'] == 'winner' for entry in parsed['entries']))
+
+  def test_james_tait_black_official_shortlist_supplement(self):
+    from parser.james_tait_black import (
+      SHORTLIST_URL_2026,
+      JamesTaitBlackOfficialParser,
+    )
+
+    winner_html = '''
+      <ul>
+        <li>Nell Stevens - The Original (Scribner) - 2025</li>
+      </ul>
+    '''
+    shortlist_html = '''
+      <html><body>
+        <p>This article was published on Wednesday 18 March 2026</p>
+        <h2>Leading fiction</h2>
+        <p>In the fiction category, Claire-Louise Bennett’s Big Kiss, Bye Bye (Fitzcarraldo Editions) follows a woman on a journey.</p>
+        <p>In Jackie Ess’s Darryl (Divided Publishing), a protagonist heads west.</p>
+        <p>An East London housing office is the setting of Shady Lewis’s On the Greenwich Line (Peirene Press), translated by Katharine Halls.</p>
+        <p>Vivek Shanbhag’s Sakina's Kiss, translated by Srinath Perur (Faber &amp; Faber), follows two families.</p>
+        <p>Nell Stevens’s The Original (Scribner) tells a story about art.</p>
+        <h2>Lives reimagined</h2>
+        <p>The Biography shortlist features Marlene Daut’s The First and Last King of Haiti (Yale University Press), a revolutionary life.</p>
+      </body></html>
+    '''
+
+    fiction = JamesTaitBlackOfficialParser(
+      'Fiction', ('Leading fiction', 'Fiction')).parse(
+        winner_html,
+        'https://james-tait-black.ed.ac.uk/winners/fiction',
+        'James Tait Black Prize - Fiction',
+        shortlist_pages=((SHORTLIST_URL_2026, shortlist_html),))
+    biography = JamesTaitBlackOfficialParser(
+      'Biography', ('Lives reimagined', 'Biography')).parse(
+        '<ul></ul>',
+        'https://james-tait-black.ed.ac.uk/winners/biography',
+        'James Tait Black Prize - Biography',
+        shortlist_pages=((SHORTLIST_URL_2026, shortlist_html),))
+
+    self.assertEqual([
+      ('2025', 'The Original', 'Nell Stevens', 'winner'),
+      ('2025.01', 'Big Kiss, Bye Bye', 'Claire-Louise Bennett', 'shortlisted'),
+      ('2025.02', 'Darryl', 'Jackie Ess', 'shortlisted'),
+      ('2025.03', 'On the Greenwich Line', 'Shady Lewis', 'shortlisted'),
+      ('2025.04', "Sakina's Kiss", 'Vivek Shanbhag', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in fiction['entries']
+    ])
+    self.assertEqual([
+      ('2025.01', 'The First and Last King of Haiti', 'Marlene Daut', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in biography['entries']
+    ])
+
+  def test_james_tait_black_fetchers_metadata_and_parse_smoke(self):
+    from parser.base import (
+      CATEGORY_LITERARY_GENERAL_FICTION,
+      CATEGORY_NONFICTION,
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+    )
+    from url_fetcher.james_tait_black import (
+      SHORTLIST_URL_2026,
+      UrlFetcherJamesTaitBlackBiography,
+      UrlFetcherJamesTaitBlackFiction,
+    )
+
+    fiction = UrlFetcherJamesTaitBlackFiction()
+    biography = UrlFetcherJamesTaitBlackBiography()
+
+    self.assertEqual('james_tait_black_fiction', fiction.source_id)
+    self.assertEqual('james_tait_black_biography', biography.source_id)
+    self.assertFalse(fiction.options['match_series'])
+    self.assertFalse(biography.options['match_series'])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fiction.source_choices())
+
+    fiction_filters = [item['label'] for item in fiction.get_filter_list()]
+    biography_filters = [item['label'] for item in biography.get_filter_list()]
+    self.assertIn(CATEGORY_LITERARY_GENERAL_FICTION, fiction_filters)
+    self.assertIn(CATEGORY_NONFICTION, biography_filters)
+    self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, fiction_filters)
+    self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, biography_filters)
+
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == fiction.URL:
+        return '<ul><li>Rita Bullwinkel - Headshot (Daunt Books) - 2024</li></ul>'
+      if url == SHORTLIST_URL_2026:
+        return '<p>This article was published on Wednesday 18 March 2026</p>'
+      self.fail(url)
+
+    parsed = fiction.fetch_and_parse(fetch_url)
+
+    self.assertEqual('James Tait Black Prize - Fiction', parsed['name'])
+    self.assertEqual(['Headshot'], [entry['title'] for entry in parsed['entries']])
+    self.assertFalse(parsed['match_series'])
+    self.assertEqual([fiction.URL, SHORTLIST_URL_2026], fetched)
+
+  def test_writers_trust_history_parser_handles_author_and_translator_shapes(self):
+    from parser.writers_trust import WritersTrustOfficialParser
+
+    html = '''
+      <main>
+        <h3>2023</h3>
+        <h4>Finalists</h4>
+        <h5><a href="/books/standing-heavy">Standing Heavy</a></h5>
+        <h6>GauZ'</h6>
+        <p>Translated by Frank Wynne</p>
+        <h3>2024</h3>
+        <h4>Winner</h4>
+        <h5><a href="/books/fire-weather">Fire Weather</a></h5>
+        <h6>John Vaillant</h6>
+        <h4>Finalists</h4>
+        <h5><a href="/books/ordinary-notes">Ordinary Notes</a></h5>
+        <h6>Christina Sharpe</h6>
+        <h5><a href="/books/rediscovery">The Rediscovery of America</a></h5>
+        <h6>Ned Blackhawk</h6>
+        <h6>Rita Wong</h6>
+        <p>Published by Example Press</p>
+      </main>
+    '''
+
+    parsed = WritersTrustOfficialParser(
+      "Hilary Weston Writers' Trust Prize for Nonfiction",
+      'Nonfiction',
+      ('Nonfiction', 'Non-fiction')).parse(
+        html,
+        'https://www.writerstrust.com/writers-books/awards/hilary-weston',
+        "Writers' Trust - Hilary Weston Nonfiction Prize")
+
+    self.assertEqual([
+      ('2023.01', 'Standing Heavy', "GauZ'", 'shortlisted'),
+      ('2024', 'Fire Weather', 'John Vaillant', 'winner'),
+      ('2024.01', 'Ordinary Notes', 'Christina Sharpe', 'shortlisted'),
+      ('2024.02', 'The Rediscovery of America', 'Ned Blackhawk & Rita Wong', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(entry['category'] == 'Nonfiction' for entry in parsed['entries']))
+    self.assertTrue(all(
+      entry['award'] == "Hilary Weston Writers' Trust Prize for Nonfiction"
+      for entry in parsed['entries']))
+
+  def test_writers_trust_current_page_ignores_future_date_sections(self):
+    from parser.writers_trust import WritersTrustOfficialParser
+
+    html = '''
+      <main>
+        <h2>2026 Important Dates</h2>
+        <p>Finalists announced on September 16, 2026.</p>
+        <h2>2025 Winner</h2>
+        <h3><a href="/books/old-school">Old School, New World</a></h3>
+        <p>Kevin Hardcastle</p>
+        <h2>2025 Finalists</h2>
+        <h3><a href="/books/black-sea">Black Sea</a></h3>
+        <p>David A. Robertson</p>
+      </main>
+    '''
+
+    parsed = WritersTrustOfficialParser(
+      "Atwood Gibson Writers' Trust Fiction Prize",
+      'Fiction',
+      ('Fiction',)).parse(
+        html,
+        'https://www.writerstrust.com/awards/atwood-gibson-writers-trust-fiction-prize',
+        "Writers' Trust - Atwood Gibson Fiction Prize")
+
+    self.assertEqual([
+      ('2025', 'Old School, New World', 'Kevin Hardcastle', 'winner'),
+      ('2025.01', 'Black Sea', 'David A. Robertson', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertEqual({'2025'}, {entry['award_year'] for entry in parsed['entries']})
+
+  def test_writers_trust_current_page_supplement_dedupes_winner(self):
+    from parser.writers_trust import WritersTrustOfficialParser
+
+    history_html = '''
+      <h3>2026</h3>
+      <h4>Finalists</h4>
+      <h5><a href="/books/a-good-war">A Good War</a></h5>
+      <h6>Seth Klein</h6>
+    '''
+    current_html = '''
+      <h2>2026 Winner</h2>
+      <h3><a href="/books/a-good-war">A Good War</a></h3>
+      <p>Seth Klein</p>
+      <h2>2026 Finalists</h2>
+      <h3><a href="/books/the-common-good">The Common Good</a></h3>
+      <p>Jane Doe &amp; John Roe</p>
+    '''
+
+    parsed = WritersTrustOfficialParser(
+      'Shaughnessy Cohen Prize for Political Writing',
+      'Political Writing',
+      ('Political Writing',),
+      current_url='https://www.writerstrust.com/awards/shaughnessy').parse(
+        history_html,
+        'https://www.writerstrust.com/writers-books/awards/shaughnessy',
+        "Writers' Trust - Shaughnessy Cohen Political Writing Prize",
+        current_pages=(('https://www.writerstrust.com/awards/shaughnessy', current_html),))
+
+    self.assertEqual([
+      ('2026', 'A Good War', 'Seth Klein', 'winner'),
+      ('2026.01', 'The Common Good', 'Jane Doe & John Roe', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+
+  def test_writers_trust_tied_winners_share_base_position(self):
+    from parser.writers_trust import WritersTrustOfficialParser
+
+    html = '''
+      <h3>2024</h3>
+      <h4>Winners</h4>
+      <h5><a href="/books/policy-one">Policy One</a></h5>
+      <h6>Alex Writer</h6>
+      <h5><a href="/books/policy-two">Policy Two</a></h5>
+      <h6>Blair Writer</h6>
+      <h4>Finalists</h4>
+      <h5><a href="/books/policy-three">Policy Three</a></h5>
+      <h6>Casey Writer</h6>
+    '''
+
+    parsed = WritersTrustOfficialParser(
+      'Balsillie Prize for Public Policy',
+      'Public Policy',
+      ('Public Policy',)).parse(
+        html,
+        'https://www.writerstrust.com/writers-books/awards/balsillie',
+        "Writers' Trust - Balsillie Prize for Public Policy")
+
+    self.assertEqual([
+      ('2024', 'Policy One', 'winner'),
+      ('2024', 'Policy Two', 'winner'),
+      ('2024.01', 'Policy Three', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['result'])
+      for entry in parsed['entries']
+    ])
+
+  def test_writers_trust_fetchers_metadata_and_parse_smoke(self):
+    from parser.base import (
+      CATEGORY_LITERARY_GENERAL_FICTION,
+      CATEGORY_NONFICTION,
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+    )
+    from url_fetcher.writers_trust import (
+      UrlFetcherWritersTrustAtwoodGibsonFiction,
+      UrlFetcherWritersTrustBalsilliePublicPolicy,
+      UrlFetcherWritersTrustHilaryWestonNonfiction,
+      UrlFetcherWritersTrustShaughnessyCohenPoliticalWriting,
+    )
+
+    fetchers = (
+      (UrlFetcherWritersTrustAtwoodGibsonFiction(), CATEGORY_LITERARY_GENERAL_FICTION),
+      (UrlFetcherWritersTrustHilaryWestonNonfiction(), CATEGORY_NONFICTION),
+      (UrlFetcherWritersTrustBalsilliePublicPolicy(), CATEGORY_NONFICTION),
+      (UrlFetcherWritersTrustShaughnessyCohenPoliticalWriting(), CATEGORY_NONFICTION),
+    )
+
+    expected_ids = {
+      'writers_trust_atwood_gibson_fiction',
+      'writers_trust_hilary_weston_nonfiction',
+      'writers_trust_balsillie_public_policy',
+      'writers_trust_shaughnessy_cohen_political_writing',
+    }
+    self.assertEqual(expected_ids, {fetcher.source_id for fetcher, _filter in fetchers})
+
+    for fetcher, expected_filter in fetchers:
+      with self.subTest(fetcher=fetcher.source_id):
+        filters = [item['label'] for item in fetcher.get_filter_list()]
+        self.assertIn(expected_filter, filters)
+        self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+        self.assertFalse(fetcher.options['match_series'])
+        self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+
+    fetcher = UrlFetcherWritersTrustAtwoodGibsonFiction()
+    history_html = '''
+      <h3>2025</h3>
+      <h4>Winner</h4>
+      <h5><a href="/books/history-winner">History Winner</a></h5>
+      <h6>A. Writer</h6>
+    '''
+    fetched = []
+
+    def fail_current(url):
+      fetched.append(url)
+      if url == fetcher.URL:
+        return history_html
+      if url == fetcher.CURRENT_URL:
+        raise RuntimeError('current page unavailable')
+      self.fail(url)
+
+    parsed = fetcher.fetch_and_parse(fail_current)
+
+    self.assertEqual("Writers' Trust - Atwood Gibson Fiction Prize", parsed['name'])
+    self.assertEqual(['History Winner'], [entry['title'] for entry in parsed['entries']])
+    self.assertFalse(parsed['match_series'])
+    self.assertEqual([fetcher.URL, fetcher.CURRENT_URL], fetched)
+    self.assertIn('current award page could not be fetched', parsed['notes'][0])
+
+  def test_walter_scott_official_pdf_text_parses_smoke_years(self):
+    from parser.walter_scott import WalterScottOfficialParser
+
+    text = '''
+      2010
+      Winner
+      Wolf Hall by Hilary Mantel (Fourth Estate)
+      Shortlist
+      The Glass Room by Simon Mawer (Little, Brown)
+
+      2021
+      Winner
+      The Mirror and the
+      Light by Hilary Mantel (Fourth Estate)
+      Shortlist
+      The Dictionary of Lost Words by Pip Williams (Chatto & Windus)
+
+      2024 Winner Hungry Ghosts by Kevin Jared Hosein (Bloomsbury)
+      Shortlist
+      Act of Oblivion by Robert Harris (Hutchinson Heinemann)
+
+      2025
+      Winner
+      The Land in Winter by Andrew Miller (Sceptre)
+      Longlist
+      This Should Not Import by Long List Author (Example Press)
+    '''
+
+    parsed = WalterScottOfficialParser().parse(text)
+
+    by_title = {entry['title']: entry for entry in parsed['entries']}
+    self.assertEqual('winner', by_title['Wolf Hall']['result'])
+    self.assertEqual('2010', by_title['Wolf Hall']['position'])
+    self.assertEqual('Hilary Mantel', by_title['Wolf Hall']['author'])
+    self.assertEqual('The Mirror and the Light', by_title['The Mirror and the Light']['title'])
+    self.assertEqual('Hilary Mantel', by_title['The Mirror and the Light']['author'])
+    self.assertEqual('Kevin Jared Hosein', by_title['Hungry Ghosts']['author'])
+    self.assertEqual('Andrew Miller', by_title['The Land in Winter']['author'])
+    self.assertNotIn('This Should Not Import', by_title)
+    self.assertTrue(all(entry['category'] == 'Historical Fiction' for entry in parsed['entries']))
+    self.assertTrue(all(entry['award'] == 'Walter Scott Prize' for entry in parsed['entries']))
+
+  def test_walter_scott_current_pages_promote_2026_winner(self):
+    from parser.walter_scott import (
+      RESULT_SHORTLISTED,
+      RESULT_WINNER,
+      SHORTLIST_URL_2026,
+      WINNER_URL_2026,
+      WalterScottOfficialParser,
+    )
+
+    shortlist_html = '''
+      <main>
+        <h1>The 2026 Shortlist</h1>
+        <p>Benbecula by Graeme Macrae Burnet (Contraband)</p>
+        <p>The Matchbox Girl by Alice Jolly (Bloomsbury)</p>
+        <p>The Pretender by Jo Harkin (Duckworth)</p>
+        <p>The Stone Door by Leonora Nattrass (Viper)</p>
+        <p>The Restless Republic by Anna Keay (William Collins)</p>
+      </main>
+    '''
+    winner_html = '''
+      <article>
+        <h1>Alice Jolly wins 2026 Walter Scott Prize</h1>
+        <p>The Matchbox Girl by Alice Jolly (Bloomsbury)</p>
+      </article>
+    '''
+
+    parsed = WalterScottOfficialParser().parse(
+      '',
+      current_pages=(
+        (SHORTLIST_URL_2026, RESULT_SHORTLISTED, shortlist_html),
+        (WINNER_URL_2026, RESULT_WINNER, winner_html),
+      ))
+
+    self.assertEqual(5, len(parsed['entries']))
+    self.assertEqual([
+      ('2026', 'The Matchbox Girl', 'Alice Jolly', 'winner'),
+      ('2026.01', 'Benbecula', 'Graeme Macrae Burnet', 'shortlisted'),
+      ('2026.02', 'The Pretender', 'Jo Harkin', 'shortlisted'),
+      ('2026.03', 'The Stone Door', 'Leonora Nattrass', 'shortlisted'),
+      ('2026.04', 'The Restless Republic', 'Anna Keay', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+
+  def test_walter_scott_wikipedia_parser_accepts_table_fixture(self):
+    from parser.walter_scott import WalterScottWikipediaParser
+
+    html = '''
+      <table>
+        <tr><th>Year</th><th>Title</th><th>Author</th><th>Result</th></tr>
+        <tr><td>2025</td><td>The Land in Winter</td><td>Andrew Miller</td><td>Winner</td></tr>
+        <tr><td></td><td>The Voyage Home</td><td>Pat Barker</td><td>Shortlist</td></tr>
+        <tr><td></td><td>Longlist Book</td><td>Other Author</td><td>Longlist</td></tr>
+      </table>
+    '''
+
+    parsed = WalterScottWikipediaParser().parse(
+      html, 'https://en.wikipedia.org/wiki/Walter_Scott_Prize')
+
+    self.assertEqual([
+      ('2025', 'The Land in Winter', 'Andrew Miller', 'winner'),
+      ('2025.01', 'The Voyage Home', 'Pat Barker', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+
+  def test_walter_scott_fetcher_metadata_source_choices_and_parse_smoke(self):
+    from parser.base import (
+      CATEGORY_LITERARY_GENERAL_FICTION,
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+    )
+    from url_fetcher.walter_scott import UrlFetcherWalterScottPrize
+
+    fetcher = UrlFetcherWalterScottPrize()
+
+    self.assertEqual('walter_scott_prize', fetcher.source_id)
+    self.assertEqual('Walter Scott Prize', fetcher.NAME)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual([
+      CATEGORY_LITERARY_GENERAL_FICTION,
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+    ], [item['label'] for item in fetcher.get_filter_list()])
+    self.assertEqual((
+      {'label': 'Automatic', 'value': 'automatic'},
+      {'label': 'Walter Scott', 'value': 0},
+      {'label': 'Wikipedia', 'value': 1},
+    ), fetcher.source_choices())
+
+    official_text = '''
+      2025
+      Winner
+      The Land in Winter by Andrew Miller (Sceptre)
+    '''
+    shortlist_html = '<p>The Matchbox Girl by Alice Jolly (Bloomsbury)</p>'
+    winner_html = '<p>The Matchbox Girl by Alice Jolly (Bloomsbury)</p>'
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == fetcher.URL:
+        return official_text
+      if url.endswith('/the-2026-shortlist/'):
+        return shortlist_html
+      if 'alice-jolly-wins-2026' in url:
+        return winner_html
+      self.fail(url)
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+
+    self.assertEqual('Walter Scott Prize', parsed['name'])
+    self.assertFalse(parsed['match_series'])
+    self.assertIn('The Land in Winter', [entry['title'] for entry in parsed['entries']])
+    self.assertIn('The Matchbox Girl', [entry['title'] for entry in parsed['entries']])
+    self.assertEqual(fetcher.URL, fetched[0])
+
+    wiki_html = '''
+      <table>
+        <tr><th>Year</th><th>Title</th><th>Author</th><th>Result</th></tr>
+        <tr><td>2024</td><td>Hungry Ghosts</td><td>Kevin Jared Hosein</td><td>Winner</td></tr>
+      </table>
+    '''
+    parsed_wiki = fetcher.fetch_and_parse(
+      lambda url: wiki_html if url == fetcher.WIKIPEDIA_URL else self.fail(url),
+      source_choice=1)
+
+    self.assertEqual(['Hungry Ghosts'], [entry['title'] for entry in parsed_wiki['entries']])
 
   def test_crime_fetcher_falls_back_to_wikipedia_smoke(self):
     from url_fetcher.crime_writers_canada import UrlFetcherCrimeWritersOfCanadaNovel

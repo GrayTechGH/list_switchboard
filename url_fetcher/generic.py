@@ -54,6 +54,9 @@ class UrlFetcherGeneric:
   FILTER_CATEGORIES = DEFAULT_FILTER_CATEGORIES
   PARSER_CLASS = ListParserBase
   REQUIRES_SERIES_MATCHING = False
+  # Recipes opt in only when they can safely merge cached parsed entries with
+  # the subset of linked pages that still need a network refresh.
+  SUPPORTS_INCREMENTAL_UPDATE = False
   USER_AGENT = None
 
   @property
@@ -138,7 +141,8 @@ class UrlFetcherGeneric:
   def fetch_and_parse(
       self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
       before_fetch=None, after_fetch=None, before_parse=None,
-      force_fallback_level=0, disable_fallbacks=False, source_choice=None):
+      force_fallback_level=0, disable_fallbacks=False, source_choice=None,
+      cached_parsed=None, incremental_update=False):
     last_error = None
     errors = []
     urls = self.fetch_urls(disable_fallbacks=disable_fallbacks)
@@ -178,7 +182,9 @@ class UrlFetcherGeneric:
           sleep=sleep,
           fetch_error=fetch_error,
           log=log,
-          progress=progress)
+          progress=progress,
+          cached_parsed=cached_parsed,
+          incremental_update=bool(incremental_update))
         parsed.setdefault('source_url', url)
         parsed.setdefault('match_series', self.options.get('match_series', True))
         return parsed
