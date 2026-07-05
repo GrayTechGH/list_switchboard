@@ -445,6 +445,15 @@ from .world_fantasy import (
   UrlFetcherWorldFantasyNovel,
   UrlFetcherWorldFantasyNovella,
 )
+from .british_fantasy import (
+  UrlFetcherBritishFantasyAnthology,
+  UrlFetcherBritishFantasyBestNovel,
+  UrlFetcherBritishFantasyCollection,
+  UrlFetcherBritishFantasyFantasyNovel,
+  UrlFetcherBritishFantasyHorrorNovel,
+  UrlFetcherBritishFantasyNonfiction,
+  UrlFetcherBritishFantasyNovella,
+)
 
 
 URL_FETCHER_CLASSES = (
@@ -487,6 +496,13 @@ URL_FETCHER_CLASSES = (
   UrlFetcherWorldFantasyAnthology,
   UrlFetcherWorldFantasyCollection,
   UrlFetcherWorldFantasyCollectionAnthology,
+  UrlFetcherBritishFantasyHorrorNovel,
+  UrlFetcherBritishFantasyFantasyNovel,
+  UrlFetcherBritishFantasyBestNovel,
+  UrlFetcherBritishFantasyNovella,
+  UrlFetcherBritishFantasyAnthology,
+  UrlFetcherBritishFantasyCollection,
+  UrlFetcherBritishFantasyNonfiction,
   UrlFetcherArthurCClarkeAwardNovel,
   UrlFetcherBSFANovel,
   UrlFetcherBSFAShorterFiction,

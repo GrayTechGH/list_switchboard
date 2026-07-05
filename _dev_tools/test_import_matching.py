@@ -503,7 +503,7 @@ class ImportMatchingTest(unittest.TestCase):
       'r/Fantasy Top Self-Published Novels 2024',
       'Sword and Laser',
     ], names[:4])
-    self.assertEqual(336, len(names))
+    self.assertEqual(343, len(names))
     self.assertIn('Theakston Old Peculier Crime Novel of the Year', names)
     self.assertIn('Hammett Prize', names)
     self.assertIn('Nero Award', names)
@@ -624,6 +624,9 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertIn('CBCA Book of the Year - New Illustrator', names)
     self.assertIn("Writers' Trust - Atwood Gibson Fiction Prize", names)
     self.assertIn("Writers' Trust - Hilary Weston Nonfiction Prize", names)
+    self.assertIn('British Fantasy - Horror Novel', names)
+    self.assertIn('British Fantasy - Fantasy Novel', names)
+    self.assertIn('British Fantasy - Best Novel (pre-2012 August Derleth)', names)
 
   def test_core_can_discover_recipes_before_gui_current_db_exists(self):
     class StartupGui:
@@ -633,6 +636,189 @@ class ImportMatchingTest(unittest.TestCase):
     names = [recipe.NAME for recipe in core.available_import_recipes()]
 
     self.assertIn('r/Fantasy Top Novels 2025', names)
+
+  def test_world_fantasy_fetchers_are_available_under_fantasy_and_horror(self):
+    from parser.base import CATEGORY_FANTASY, CATEGORY_HORROR_DARK_FICTION
+    from url_fetcher import available_url_fetchers
+
+    expected_ids = {
+      'world_fantasy_novel',
+      'world_fantasy_novella',
+      'world_fantasy_anthology',
+      'world_fantasy_collection',
+      'world_fantasy_collection_anthology',
+    }
+    fetchers = [
+      fetcher for fetcher in available_url_fetchers()
+      if fetcher.source_id in expected_ids
+    ]
+
+    self.assertEqual(expected_ids, {fetcher.source_id for fetcher in fetchers})
+    for fetcher in fetchers:
+      filters = [item['label'] for item in fetcher.get_filter_list()]
+      self.assertIn(CATEGORY_FANTASY, filters)
+      self.assertIn(CATEGORY_HORROR_DARK_FICTION, filters)
+
+  def test_british_fantasy_parser_merges_official_and_sfadb_shortlists(self):
+    from parser.british_fantasy import (
+      BFS_WINNERS_URL, BritishFantasyParser, SFADB_URL,
+    )
+
+    parser = BritishFantasyParser()
+    winners_html = '''
+      <h1>BFA Winners</h1>
+      <p>2025</p>
+      <ul>
+        <li>The August Derleth Award for Best Horror Novel:
+            My Darling Beautiful Thing by Johanna Van Veen</li>
+      </ul>
+      <p>2012</p>
+      <ul>
+        <li>Horror Novel (the August Derleth Award): The Ritual, Adam Nevill (Pan Books)</li>
+      </ul>
+    '''
+    shortlist_html = '''
+      <h1>The British Fantasy Awards 2026 Shortlists!</h1>
+      <h2>Best Horror Novel (The August Derleth Award)</h2>
+      <ul>
+        <li>Witchcraft for Wayward Girls, Grady Hendrix (Tor Nightfire)</li>
+        <li>The Buffalo Hunter Hunter, Stephen Graham Jones (Titan Books)</li>
+      </ul>
+    '''
+    sfadb_overview = '''
+      <a href="/British_Fantasy_Awards_2025">2025</a>
+      <a href="/British_Fantasy_Awards_2012">2012</a>
+    '''
+    sfadb_pages = {
+      'https://www.sfadb.com/British_Fantasy_Awards_2025': '''
+        <div class="categoryblock">
+          <div class="category">Horror Novel (august Derleth Award)</div>
+          <ul>
+            <li>Winner: My Darling Dreadful Thing, Johanna van Veen (Poisoned Pen)</li>
+            <li>Among the Living, Tim Lebbon (Titan)</li>
+            <li>Bury Your Gays, Chuck Tingle (Titan)</li>
+          </ul>
+        </div>
+      ''',
+      'https://www.sfadb.com/British_Fantasy_Awards_2012': '''
+        <div class="categoryblock">
+          <div class="category">August Derleth Award (horror Novel)</div>
+          <ul>
+            <li>Winner: The Ritual, Adam Nevill (Pan)</li>
+          </ul>
+        </div>
+      ''',
+    }
+
+    winners = parser.parse_bfs_winners(
+      winners_html,
+      BFS_WINNERS_URL,
+      'British Fantasy - Horror Novel',
+      'Horror Novel',
+      ('best horror novel', 'august derleth award horror novel'),
+      min_year=2012)
+    shortlist = parser.parse_bfs_shortlist(
+      shortlist_html,
+      'https://britishfantasysociety.org/the-british-fantasy-awards-2026-shortlists/',
+      'British Fantasy - Horror Novel',
+      'Horror Novel',
+      ('best horror novel', 'horror novel the august derleth award'),
+      min_year=2012)
+    sfadb = parser.parse_sfadb(
+      sfadb_overview,
+      SFADB_URL,
+      'British Fantasy - Horror Novel',
+      'Horror Novel',
+      ('horror novel', 'august derleth award horror novel'),
+      fetch_url=lambda url: sfadb_pages[url],
+      min_year=2012)
+
+    parsed = parser.combine_results(
+      'British Fantasy - Horror Novel',
+      BFS_WINNERS_URL,
+      winners,
+      shortlist,
+      sfadb)
+
+    rows = {
+      (entry['award_year'], entry['title']): entry
+      for entry in parsed['entries']
+    }
+    self.assertEqual('winner', rows[('2025', 'My Darling Dreadful Thing')]['result'])
+    self.assertEqual('2025', rows[('2025', 'My Darling Dreadful Thing')]['position'])
+    self.assertEqual('shortlisted', rows[('2025', 'Among the Living')]['result'])
+    self.assertEqual('shortlisted', rows[('2026', 'Witchcraft for Wayward Girls')]['result'])
+    self.assertEqual('2026.01', rows[('2026', 'Witchcraft for Wayward Girls')]['position'])
+    self.assertNotIn(('2025', 'My Darling Beautiful Thing'), rows)
+    self.assertTrue(any('current-cycle only' in note for note in parsed['notes']))
+    self.assertTrue(any('Corrected 2025' in note for note in parsed['notes']))
+
+  def test_british_fantasy_best_novel_stops_before_2012_split(self):
+    from parser.british_fantasy import BFS_WINNERS_URL, BritishFantasyParser
+
+    parser = BritishFantasyParser()
+    winners_html = '''
+      <p>2012</p>
+      <ul>
+        <li>Horror Novel (the August Derleth Award): The Ritual, Adam Nevill (Pan Books)</li>
+      </ul>
+      <p>2010</p>
+      <ul>
+        <li>Novel: One, Conrad Williams (Virgin Books)</li>
+      </ul>
+      <p>2011</p>
+      <ul>
+        <li>Novel: No award</li>
+      </ul>
+    '''
+
+    parsed = parser.parse_bfs_winners(
+      winners_html,
+      BFS_WINNERS_URL,
+      'British Fantasy - Best Novel (pre-2012 August Derleth)',
+      'Best Novel',
+      ('novel', 'best novel'),
+      max_year=2011)
+
+    self.assertEqual(['One'], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual('2010', parsed['entries'][0]['position'])
+    self.assertTrue(any('2011 Best Novel has no award row' in note for note in parsed['notes']))
+
+  def test_british_fantasy_fetchers_are_registered_with_expected_metadata(self):
+    from parser.base import (
+      CATEGORY_FANTASY, CATEGORY_HORROR_DARK_FICTION, CATEGORY_NONFICTION,
+    )
+    from url_fetcher import available_url_fetchers
+
+    expected_ids = {
+      'british_fantasy_horror_novel',
+      'british_fantasy_fantasy_novel',
+      'british_fantasy_best_novel',
+      'british_fantasy_novella',
+      'british_fantasy_anthology',
+      'british_fantasy_collection',
+      'british_fantasy_nonfiction',
+    }
+    fetchers = [
+      fetcher for fetcher in available_url_fetchers()
+      if fetcher.source_id in expected_ids
+    ]
+
+    self.assertEqual(expected_ids, {fetcher.source_id for fetcher in fetchers})
+    self.assertTrue(all(fetcher.options['match_series'] is False for fetcher in fetchers))
+    self.assertEqual(
+      ({'label': 'Automatic', 'value': 'automatic'},),
+      fetchers[0].source_choices())
+    filters_by_id = {
+      fetcher.source_id: [item['label'] for item in fetcher.get_filter_list()]
+      for fetcher in fetchers
+    }
+    self.assertEqual([CATEGORY_HORROR_DARK_FICTION],
+                     filters_by_id['british_fantasy_horror_novel'])
+    self.assertEqual([CATEGORY_FANTASY],
+                     filters_by_id['british_fantasy_fantasy_novel'])
+    self.assertIn(CATEGORY_NONFICTION,
+                  filters_by_id['british_fantasy_nonfiction'])
 
   def test_builtin_url_fetchers_load_without_plugin_resources(self):
     core = object.__new__(main.ListSwitchboardCore)
@@ -647,7 +833,7 @@ class ImportMatchingTest(unittest.TestCase):
       'r_fantasy_top_self_published_novels_2024',
       'sword_and_laser_book_list',
     ], source_ids[:4])
-    self.assertEqual(336, len(source_ids))
+    self.assertEqual(343, len(source_ids))
     self.assertIn('hammett_prize', source_ids)
     self.assertIn('nero_award', source_ids)
     self.assertIn('strand_critics_award_mystery_novel', source_ids)
@@ -658,6 +844,9 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertIn('national_book_award_nonfiction', source_ids)
     self.assertIn('national_book_award_young_peoples_literature', source_ids)
     self.assertIn('william_c_morris_award', source_ids)
+    self.assertIn('british_fantasy_horror_novel', source_ids)
+    self.assertIn('british_fantasy_fantasy_novel', source_ids)
+    self.assertIn('british_fantasy_best_novel', source_ids)
     self.assertIn('yalsa_excellence_nonfiction_young_adults', source_ids)
     self.assertIn('baillie_gifford_prize', source_ids)
     self.assertIn('pen_galbraith_award_nonfiction', source_ids)
@@ -7234,7 +7423,7 @@ were ''[[Go Deep]]'' by [[Rilzy Adams]].
     self.assertLess(
       registry_ids.index('romantic_times_reviewers_choice_romance'),
       registry_ids.index('writers_trust_atwood_gibson_fiction'))
-    self.assertEqual(336, len(registry_ids))
+    self.assertEqual(343, len(registry_ids))
 
   def test_lambda_literary_awards_parser_reads_directory_and_current_shortlists(self):
     from parser.lambda_literary_awards import (
