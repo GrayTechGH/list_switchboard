@@ -5,8 +5,6 @@
 Crime Writers of Canada award parsers.
 """
 
-from bs4 import BeautifulSoup
-
 try:
   from calibre_plugins.list_switchboard.parser.librarything_base import (
     LibraryThingAwardParserBase,
@@ -42,10 +40,10 @@ class CrimeWritersOfCanadaWikipediaParser(WikipediaAwardTableParserBase):
   AWARD_NAME = AWARD_NAME
 
   def parse(self, html, base_url, name, category, category_aliases=()):
-    soup = BeautifulSoup(html, 'html.parser')
+    root = self.html_root(html)
     rows = []
     for _heading, table in self.tables_under_category_headings(
-        soup, category, category_aliases, match='exact'):
+        root, category, category_aliases, match='exact'):
       rows.extend(self.table_rows(
         table,
         self.header_map(table),
@@ -54,7 +52,7 @@ class CrimeWritersOfCanadaWikipediaParser(WikipediaAwardTableParserBase):
         category_aliases,
         {'winner'}))
     if not rows:
-      for table in soup.find_all('table'):
+      for table in self.all_tables(root):
         header_map = self.header_map(table)
         if not self.has_required_columns(header_map):
           continue
@@ -81,8 +79,8 @@ class CrimeWritersOfCanadaWikipediaParser(WikipediaAwardTableParserBase):
       return []
     rows = []
     current_year = None
-    for tr in table.find_all('tr'):
-      cells = tr.find_all(['td', 'th'], recursive=False)
+    for tr in self.all_rows(table):
+      cells = self.direct_cells(tr, include_headers=True)
       if not cells or self.row_matches_header(cells, header_map):
         continue
       year_text = self.clean_cell_text(cells[header_map['year']])

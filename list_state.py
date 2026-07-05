@@ -403,6 +403,17 @@ class ListStateMixin:
       self.debug_storage_cached_active_add_decision(
         book_id, 'using existing saved override', override_entry,
         self.entry_position_index_value(override_entry))
+      if force_match_review:
+        return self.choose_active_add_match(
+          book_id,
+          context['entries'],
+          [(0, override_entry)],
+          default_index,
+          db,
+          initial_show_all=True,
+          preferred_entry=override_entry,
+          automatic_entry=override_entry,
+          active_list_name=active_list_name)
       return override_entry, self.entry_position_index_value(override_entry), False
 
     exact_candidates = self.exact_cached_entry_candidates_for_book(book_id, context)
@@ -430,6 +441,16 @@ class ListStateMixin:
         book_id, 'unique nonexact cached match',
         candidates[0][1],
         self.entry_position_index_value(candidates[0][1]))
+      if force_match_review:
+        return self.choose_active_add_match(
+          book_id,
+          context['entries'],
+          candidates,
+          default_index,
+          db,
+          initial_show_all=True,
+          preferred_entry=candidates[0][1],
+          active_list_name=active_list_name)
       return candidates[0][1], self.entry_position_index_value(candidates[0][1]), True
 
     self.debug_storage_cached_active_add_decision(

@@ -1,0 +1,155 @@
+{
+  "list_id": "ditmar_novel",
+  "matches": [
+    {
+      "entry_key": "the year of the fruit cake|gillian polack",
+      "imported_author": "Gillian Polack",
+      "imported_title": "The Year of the Fruit Cake",
+      "matched_at": "2026-05-24T20:53:51Z",
+      "matched_authors": [
+        "Gillian Polack"
+      ],
+      "matched_book_id": 39049,
+      "matched_book_ids": [
+        39049
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Gillian Polack"
+          ],
+          "matched_book_id": 39049,
+          "matched_title": "The Year of the Fruit Cake: Or Aliens With Irony"
+        }
+      ],
+      "matched_title": "The Year of the Fruit Cake: Or Aliens With Irony"
+    },
+    {
+      "entry_key": "crossroads of canopy|thoraiya dyer",
+      "imported_author": "Thoraiya Dyer",
+      "imported_title": "Crossroads of Canopy",
+      "matched_at": "2026-05-26T20:38:20Z",
+      "matched_authors": [
+        "Thoraiya Dyer"
+      ],
+      "matched_book_id": 39051,
+      "matched_book_ids": [
+        39051,
+        39052
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Thoraiya Dyer"
+          ],
+          "matched_book_id": 39051,
+          "matched_title": "Crossroads of Canopy"
+        },
+        {
+          "matched_authors": [
+            "Thoraiya Dyer"
+          ],
+          "matched_book_id": 39052,
+          "matched_title": "Echoes of Understorey"
+        }
+      ],
+      "matched_title": "Echoes of Understorey"
+    },
+    {
+      "entry_key": "the crooked letter|sean williams",
+      "imported_author": "Sean Williams",
+      "imported_title": "The Crooked Letter",
+      "matched_at": "2026-05-26T13:59:22Z",
+      "matched_authors": [
+        "Sean Williams"
+      ],
+      "matched_book_id": 39077,
+      "matched_book_ids": [
+        39077
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Sean Williams"
+          ],
+          "matched_book_id": 39077,
+          "matched_title": "Crooked Letter"
+        }
+      ],
+      "matched_title": "Crooked Letter"
+    },
+    {
+      "entry_key": "evergence 2 the dying light|sean williams shane dix",
+      "imported_author": "Sean Williams & Shane Dix",
+      "imported_title": "Evergence 2: The Dying Light",
+      "matched_at": "2026-05-26T14:47:55Z",
+      "matched_authors": [
+        "Sean Williams",
+        "Shane Dix"
+      ],
+      "matched_book_id": 39083,
+      "matched_book_ids": [
+        39083
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Sean Williams",
+            "Shane Dix"
+          ],
+          "matched_book_id": 39083,
+          "matched_title": "Dying Light"
+        }
+      ],
+      "matched_title": "Dying Light"
+    },
+    {
+      "entry_key": "the resurrected man|sean williams",
+      "imported_author": "Sean Williams",
+      "imported_title": "The Resurrected Man",
+      "matched_at": "2026-05-26T16:04:33Z",
+      "matched_authors": [
+        "Sean Williams"
+      ],
+      "matched_book_id": 39091,
+      "matched_book_ids": [
+        39091
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Sean Williams"
+          ],
+          "matched_book_id": 39091,
+          "matched_title": "Resurrected Man"
+        }
+      ],
+      "matched_title": "Resurrected Man"
+    },
+    {
+      "entry_key": "bard iii the wild sea|keith taylor",
+      "imported_author": "Keith Taylor",
+      "imported_title": "Bard III: The Wild Sea",
+      "matched_at": "2026-05-26T17:26:23Z",
+      "matched_authors": [
+        "Keith John Taylor"
+      ],
+      "matched_book_id": 39095,
+      "matched_book_ids": [
+        39095
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Keith John Taylor"
+          ],
+          "matched_book_id": 39095,
+          "matched_title": "Bard III: The Wild Sea"
+        }
+      ],
+      "matched_title": "Bard III: The Wild Sea"
+    }
+  ],
+  "saved_at": "2026-05-26T20:38:20Z",
+  "schema_version": 1
+}

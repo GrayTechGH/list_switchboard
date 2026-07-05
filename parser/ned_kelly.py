@@ -5,8 +5,6 @@
 Ned Kelly Award parsers.
 """
 
-from bs4 import BeautifulSoup
-
 try:
   from calibre_plugins.list_switchboard.parser.librarything_base import (
     LibraryThingAwardParserBase,
@@ -42,10 +40,10 @@ class NedKellyWikipediaParser(WikipediaAwardTableParserBase):
   AWARD_NAME = AWARD_NAME
 
   def parse(self, html, base_url, name, category, category_aliases=()):
-    soup = BeautifulSoup(html, 'html.parser')
+    root = self.html_root(html)
     detailed_rows = []
     for _heading, table in self.tables_under_category_headings(
-        soup, category, category_aliases, match='exact'):
+        root, category, category_aliases, match='exact'):
       detailed_rows.extend(self._table_rows_standard(
         table,
         self.header_map(table),
@@ -54,21 +52,22 @@ class NedKellyWikipediaParser(WikipediaAwardTableParserBase):
         category_aliases,
         {'winner', 'shortlisted'}))
       break
-    summary_rows = self._summary_rows(soup, base_url, category, category_aliases)
+    summary_rows = self._summary_rows(root, base_url, category, category_aliases)
     rows = self._merge_rows(summary_rows, detailed_rows)
     entries = self.entries_from_rows(self.dedupe_rows(rows))
     return self.parsed_result(name, base_url, entries)
 
-  def _summary_rows(self, soup, base_url, category, category_aliases):
+  def _summary_rows(self, root, base_url, category, category_aliases):
     target = normalize_heading(category)
     aliases = {normalize_heading(value) for value in category_aliases}
     rows = []
-    for table in soup.find_all('table'):
-      first_row = table.find('tr')
-      if first_row is None:
+    for table in self.all_tables(root):
+      table_rows = self.all_rows(table)
+      if not table_rows:
         continue
+      first_row = table_rows[0]
       headers = [normalize_heading(self.clean_cell_text(cell))
-                 for cell in first_row.find_all(['th', 'td'], recursive=False)]
+                 for cell in self.direct_cells(first_row, include_headers=True)]
       if not headers or headers[0] != 'year':
         continue
       column = None
@@ -79,8 +78,8 @@ class NedKellyWikipediaParser(WikipediaAwardTableParserBase):
       if column is None:
         continue
       current_year = None
-      for tr in table.find_all('tr')[1:]:
-        cells = tr.find_all(['td', 'th'], recursive=False)
+      for tr in table_rows[1:]:
+        cells = self.direct_cells(tr, include_headers=True)
         if not cells or column >= len(cells):
           continue
         year = self.year_from_text(self.clean_cell_text(cells[0])) or current_year

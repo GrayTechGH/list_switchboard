@@ -50,8 +50,8 @@ class DavittWikipediaParser(WikipediaAwardTableParserBase):
       return rows
     rows = []
     current_year = None
-    for tr in table.find_all('tr'):
-      cells = tr.find_all(['td', 'th'], recursive=False)
+    for tr in self.all_rows(table):
+      cells = self.direct_cells(tr, include_headers=True)
       if not cells or self.row_matches_header(cells, header_map):
         continue
       missing_year = self.row_omits_year(cells, header_map, current_year)

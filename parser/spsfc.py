@@ -21,7 +21,7 @@ import re
 from pathlib import Path
 from urllib.parse import urljoin
 
-from bs4 import BeautifulSoup
+from lxml import html as lxml_html
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import (
@@ -126,16 +126,16 @@ class SPSFCAwardsParser(AwardParserBase):
     return self.parse_finalist_page(html, page)
 
   def parse_official_result_page(self, html, page):
-    soup = BeautifulSoup(html, 'html.parser')
+    root = _html_root(html)
     rows = []
-    for heading in soup.find_all(['h2', 'h3']):
-      placement = PLACEMENT_HEADINGS.get(normalize_heading(heading.get_text(' ', strip=True)))
+    for heading in root.xpath('//h2|//h3'):
+      placement = PLACEMENT_HEADINGS.get(normalize_heading(_node_text(heading)))
       if placement is None:
         continue
       title_heading = self._next_title_heading(heading)
       if title_heading is None:
         continue
-      title, author = _split_title_author(title_heading.get_text(' ', strip=True))
+      title, author = _split_title_author(_node_text(title_heading))
       if not title or not author:
         continue
       goodreads_url = self._goodreads_url_between(heading, title_heading)
@@ -148,16 +148,16 @@ class SPSFCAwardsParser(AwardParserBase):
     return rows
 
   def parse_finalist_page(self, html, page):
-    soup = BeautifulSoup(html, 'html.parser')
-    root = _article_root(soup)
-    fallback_single_list = root is soup
+    page_root = _html_root(html)
+    root = _article_root(page_root)
+    fallback_single_list = root is page_root
     rows = []
-    for item_list in root.find_all(['ul', 'ol']):
+    for item_list in root.xpath('.//ul|.//ol'):
       if _excluded_context(item_list):
         continue
       list_rows = []
-      for item in item_list.find_all('li', recursive=False):
-        title, author = _split_title_author(item.get_text(' ', strip=True))
+      for item in item_list.xpath('./li'):
+        title, author = _split_title_author(_node_text(item))
         if not title or not author:
           continue
         list_rows.append(self._row(
@@ -223,23 +223,20 @@ class SPSFCAwardsParser(AwardParserBase):
     return row
 
   def _next_title_heading(self, heading):
-    for node in heading.next_siblings:
-      name = getattr(node, 'name', None)
-      if name in {'h2', 'h3'}:
+    for node in heading.xpath('following::*'):
+      if node.tag in {'h2', 'h3'}:
         return None
-      if name == 'h4':
+      if node.tag == 'h4':
         return node
-    return heading.find_next('h4')
+    return None
 
   def _goodreads_url_between(self, heading, title_heading):
-    for node in title_heading.next_siblings:
-      name = getattr(node, 'name', None)
-      if name in {'h2', 'h3'}:
+    for node in title_heading.xpath('following::*'):
+      if node.tag in {'h2', 'h3'}:
         return ''
-      if not hasattr(node, 'find_all'):
-        continue
-      for link in node.find_all('a', href=True):
-        href = link['href']
+      links = [node] if node.tag == 'a' and node.get('href') else node.xpath('.//a[@href]')
+      for link in links:
+        href = link.get('href') or ''
         if 'goodreads.com' in href.casefold():
           return urljoin('', href)
     return ''
@@ -264,28 +261,39 @@ def _split_title_author(value):
   return title, author
 
 
+def _html_root(html):
+  return lxml_html.fromstring(html or '<html></html>')
+
+
+def _node_text(node):
+  return normalize_line(' '.join(
+    text.strip()
+    for text in node.xpath('.//text()[not(ancestor::script) and not(ancestor::style)]')
+    if text.strip()))
+
+
 def _goodreads_url_in_node(node):
-  for link in node.find_all('a', href=True):
-    href = link['href']
+  for link in node.xpath('.//a[@href]'):
+    href = link.get('href') or ''
     if 'goodreads.com' in href.casefold():
       return urljoin('', href)
   return ''
 
 
-def _article_root(soup):
+def _article_root(root):
   selectors = (
-    'article',
-    '[class~="entry-content"]',
-    '[class~="post-content"]',
-    '[class~="post"]',
-    '[id~="content"]',
-    'main',
+    '//article',
+    '//*[contains(concat(" ", normalize-space(@class), " "), " entry-content ")]',
+    '//*[contains(concat(" ", normalize-space(@class), " "), " post-content ")]',
+    '//*[contains(concat(" ", normalize-space(@class), " "), " post ")]',
+    '//*[@id="content"]',
+    '//main',
   )
   for selector in selectors:
-    node = soup.select_one(selector)
-    if node is not None:
-      return node
-  return soup
+    nodes = root.xpath(selector)
+    if nodes:
+      return nodes[0]
+  return root
 
 
 def _excluded_context(node):
@@ -294,14 +302,14 @@ def _excluded_context(node):
     'pingback', 'trackback', 'sidebar', 'widget', 'navigation', 'nav',
     'menu', 'footer', 'related', 'sharedaddy',
   }
-  for parent in [node] + list(node.parents):
+  for parent in [node] + list(node.iterancestors()):
     values = []
-    node_id = parent.get('id') if hasattr(parent, 'get') else None
+    node_id = parent.get('id')
     if node_id:
       values.append(node_id)
-    classes = parent.get('class') if hasattr(parent, 'get') else None
+    classes = parent.get('class')
     if classes:
-      values.extend(classes)
+      values.extend(classes.split())
     normalized = {normalize_heading(str(value)).replace(' ', '-') for value in values}
     if any(
         value in excluded or any(value.startswith(f'{prefix}-') for prefix in excluded)
