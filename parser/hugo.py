@@ -32,6 +32,16 @@ except ImportError:
 YEAR_LINK = re.compile(r'^(\d{4})\s+Hugo Awards$', re.I)
 CATEGORY_TEXT = re.compile(r'^Best\s+.+', re.I)
 HUGO_CATEGORY_BOUNDARIES = {
+  'astounding award',
+  'astounding award for best new writer',
+  'disqualifications and withdrawals',
+  'editor long form',
+  'editor short form',
+  'fan artist',
+  'fan writer',
+  'fancast',
+  'fanzine',
+  'graphic story',
   'novella',
   'novelette',
   'short fiction',
@@ -67,12 +77,14 @@ class HugoAwardsCategoryParser(ListParserBase):
   CATEGORY = 'Best Novel'
   CATEGORY_ALIASES = ('best novel',)
   APPLY_SFADB_WINNER_FALLBACK = False
+  INCLUDE_INCOMPLETE_FINALISTS = False
+  PARSER_NOTES = ()
 
   def parse(self, history_html, base_url, fetch_url=None, log=None, progress=None):
     soup = BeautifulSoup(history_html, 'html.parser')
     year_links = _hugo_year_links(soup, base_url)
     entries = []
-    notes = []
+    notes = list(self.PARSER_NOTES)
     _progress(progress, 0, len(year_links), f'Preparing {self.NAME} year pages...')
     for index, year_link in enumerate(year_links, start=1):
       year = year_link['year']
@@ -85,10 +97,12 @@ class HugoAwardsCategoryParser(ListParserBase):
         _log(log, 'fetch-failed', {'year': year, 'url': url, 'error': str(err)})
         continue
       year_entries = _parse_hugo_year_category_entries(
-        year, url, html, self.AWARD_NAME, self.CATEGORY, self.CATEGORY_ALIASES)
+        year, url, html, self.AWARD_NAME, self.CATEGORY, self.CATEGORY_ALIASES,
+        include_incomplete_finalists=self.INCLUDE_INCOMPLETE_FINALISTS)
       if not year_entries:
         _log(log, 'year-skipped', {'year': year, 'url': url})
         continue
+      notes.extend(self.notes_for_year(year, url, html, year_entries))
       if (
           self.APPLY_SFADB_WINNER_FALLBACK
           and fetch_url is not None
@@ -103,6 +117,9 @@ class HugoAwardsCategoryParser(ListParserBase):
       'notes': notes,
       'match_series': False,
     }
+
+  def notes_for_year(self, _year, _url, _html, _entries):
+    return []
 
 
 class HugoAwardsNovelParser(HugoAwardsCategoryParser):
@@ -153,8 +170,27 @@ class LodestarAwardParser(HugoAwardsCategoryParser):
   CATEGORY = 'Best Young Adult Book'
   CATEGORY_ALIASES = (
     'lodestar award for best young adult book',
+    'lodestar award for best ya book',
+    'award for best young adult book',
     'best young adult book',
   )
+  INCLUDE_INCOMPLETE_FINALISTS = True
+  PARSER_NOTES = (
+    'Official Hugo history pages expose Lodestar finalists; finalist rows are '
+    'imported as nominees, and no separate public longlist is imported.',
+    'The Lodestar Award is administered with the Hugo process but is not itself '
+    'a Hugo Award; 2018 was presented as the WSFS Award for Best Young Adult Book.',
+  )
+
+  def notes_for_year(self, year, _url, html, entries):
+    withdrawn = _withdrawn_finalist_titles(html, entries)
+    if not withdrawn:
+      return []
+    return [
+      f'Lodestar Award {year} finalist remained in the official finalist list '
+      f'after withdrawal and was imported as nominee: {title}'
+      for title in withdrawn
+    ]
 
 
 def _hugo_year_links(soup, base_url):
@@ -176,12 +212,17 @@ def _hugo_year_links(soup, base_url):
   return sorted(links, key=lambda item: item['year'])
 
 
-def _parse_hugo_year_category_entries(year, source_url, html, award_name, category, aliases):
+def _parse_hugo_year_category_entries(
+    year, source_url, html, award_name, category, aliases,
+    include_incomplete_finalists=False):
   soup = BeautifulSoup(html, 'html.parser')
-  if not _completed_hugo_year_page(soup, aliases):
+  completed = _completed_hugo_year_page(soup, aliases)
+  if not completed and not include_incomplete_finalists:
     return []
   items = _category_items(soup, aliases)
-  all_nominees = 'finalists were announced' in html.casefold()
+  if not items:
+    return []
+  all_nominees = not completed
   entries = []
   for index, item in enumerate(items):
     parsed = _parse_hugo_novel_item(item)
@@ -282,8 +323,12 @@ def _sfadb_hugo_category_boundary(normalized):
 
 def _completed_hugo_year_page(soup, aliases):
   text = soup.get_text(' ', strip=True).casefold()
-  first_alias = aliases[0]
-  intro, _, _ = text.partition(first_alias.casefold())
+  alias_positions = [
+    position
+    for position in (text.find(alias.casefold()) for alias in aliases)
+    if position >= 0
+  ]
+  intro = text[:min(alias_positions)] if alias_positions else text
   if any(marker in intro for marker in INCOMPLETE_PAGE_TEXT):
     return False
   return bool(_category_items(soup, aliases))
@@ -293,17 +338,24 @@ def _category_items(soup, aliases):
   heading = _find_category_heading(soup, aliases)
   if heading is None:
     return []
-  items = []
   for sibling in heading.find_all_next():
     if sibling is heading:
       continue
     if _is_category_boundary(sibling):
       break
+    if sibling.name in ('ul', 'ol'):
+      return [
+        text
+        for text in (
+          item.get_text(' ', strip=True)
+          for item in sibling.find_all('li', recursive=False)
+        )
+        if text
+      ]
     if sibling.name == 'li':
       text = sibling.get_text(' ', strip=True)
-      if text:
-        items.append(text)
-  return items
+      return [text] if text else []
+  return []
 
 
 def _find_category_heading(soup, aliases):
@@ -328,6 +380,22 @@ def _is_category_boundary(node):
   if bool(CATEGORY_TEXT.match(text)):
     return True
   return text in HUGO_CATEGORY_BOUNDARIES
+
+
+def _withdrawn_finalist_titles(html, entries):
+  text = re.sub(r'\s+', ' ', BeautifulSoup(html, 'html.parser').get_text(' ', strip=True))
+  withdrawn = []
+  for entry in entries:
+    title = entry.get('title', '')
+    if not title:
+      continue
+    pattern = (
+      rf'\b{re.escape(title)}\b[^.]*\bwithdr(?:ew|awn)\b|'
+      rf'\bwithdr(?:ew|awn)\b[^.]*\b{re.escape(title)}\b'
+    )
+    if re.search(pattern, text, re.I):
+      withdrawn.append(title)
+  return withdrawn
 
 
 def _normalize_hugo_text(value):

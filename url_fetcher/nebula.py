@@ -135,6 +135,9 @@ class UrlFetcherNebulaAwardsNovella(UrlFetcherNebulaSFADBCategory):
 class UrlFetcherNebulaAndreNorton(UrlFetcherNebulaSFADBCategory):
   source_id = 'nebula_andre_norton_middle_grade_young_adult'
   NAME = 'Nebula Awards - Andre Norton Middle Grade/YA'
+  URL = 'https://nebulas.sfwa.org/award/andre-norton-award/'
+  FETCH_URLS = (URL,)
+  SFADB_URL = 'https://www.sfadb.com/Nebula_Awards'
   FILTER_CATEGORIES = (
     CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
     CATEGORY_SCIENCE_FICTION,
@@ -144,9 +147,63 @@ class UrlFetcherNebulaAndreNorton(UrlFetcherNebulaSFADBCategory):
   CATEGORY_ALIASES = (
     'andre norton award',
     'andre norton',
+    'andre norton middle grade and young adult fiction',
     'middle grade and young adult fiction',
     'best middle grade and young adult fiction',
   )
+
+  def create_parser(self):
+    try:
+      from calibre_plugins.list_switchboard.parser.nebula import NebulaAndreNortonParser
+    except ImportError:
+      from parser.nebula import NebulaAndreNortonParser
+
+    return NebulaAndreNortonParser()
+
+  def fetch_and_parse(
+      self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
+      before_fetch=None, after_fetch=None, before_parse=None,
+      force_fallback_level=0, disable_fallbacks=False, source_choice=None):
+    parsed = SourceFallbackRunner(
+      self.source_attempts(),
+      error_class=UrlFetcherError).run(
+        fetch_url,
+        log=log,
+        progress=progress,
+        before_fetch=before_fetch,
+        after_fetch=after_fetch,
+        before_parse=before_parse,
+        force_fallback_level=force_fallback_level,
+        disable_fallbacks=disable_fallbacks,
+        source_choice=source_choice)
+    parsed.setdefault('match_series', self.options.get('match_series', True))
+    return parsed
+
+  def source_attempts(self):
+    parser = self.parser()
+    return (
+      SourceAttempt(
+        'Official SFWA',
+        self.URL,
+        parser.parse_official,
+        source_rank=0),
+      SourceAttempt(
+        'SFADB',
+        self.SFADB_URL,
+        parser.parse_sfadb,
+        source_rank=1),
+    )
+
+  def source_choices(self):
+    return SourceFallbackRunner(self.source_attempts()).source_choices()
+
+  def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
+    return self.parser().parse(
+      html,
+      self.URL,
+      fetch_url=fetch_url,
+      log=log,
+      progress=progress)
 
 
 class UrlFetcherNebulaAwardsComics(UrlFetcherNebulaSFADBCategory):

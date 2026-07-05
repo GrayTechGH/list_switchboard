@@ -503,8 +503,54 @@ class ImportMatchingTest(unittest.TestCase):
       'r/Fantasy Top Self-Published Novels 2024',
       'Sword and Laser',
     ], names[:4])
-    self.assertEqual(290, len(names))
+    self.assertEqual(336, len(names))
     self.assertIn('Theakston Old Peculier Crime Novel of the Year', names)
+    self.assertIn('Hammett Prize', names)
+    self.assertIn('Nero Award', names)
+    self.assertIn('Strand Critics Award - Mystery Novel', names)
+    self.assertIn('Strand Critics Award - Debut Mystery', names)
+    self.assertIn('Pulitzer Prize - Fiction', names)
+    self.assertIn('Pulitzer Prize - General Nonfiction', names)
+    self.assertIn('National Book Award - Fiction', names)
+    self.assertIn('National Book Award - Nonfiction', names)
+    self.assertIn("National Book Award - Young People's Literature", names)
+    self.assertIn('Baillie Gifford Prize', names)
+    self.assertIn('PEN/John Kenneth Galbraith Award for Nonfiction', names)
+    self.assertIn(
+      'PEN/Diamonstein-Spielvogel Award for the Art of the Essay',
+      names)
+    self.assertIn('PEN/Jean Stein Book Award', names)
+    self.assertIn('PEN Open Book Award', names)
+    self.assertIn('PEN/Faulkner Award for Fiction', names)
+    self.assertIn('PEN/Hemingway Award for Debut Novel', names)
+    self.assertIn('J. Anthony Lukas Book Prize', names)
+    self.assertIn('Mark Lynton History Prize', names)
+    self.assertIn('Orwell Prize for Political Writing', names)
+    self.assertIn('Andrew Carnegie Medal for Excellence in Nonfiction', names)
+    self.assertIn('Kirkus Prize - Fiction', names)
+    self.assertIn('Kirkus Prize - Nonfiction', names)
+    self.assertIn("Kirkus Prize - Young Readers' Literature", names)
+    self.assertIn("Women's Prize for Non-Fiction", names)
+    self.assertIn("Women's Prize for Fiction", names)
+    self.assertIn('Royal Society Trivedi Science Book Prize', names)
+    self.assertIn('Booker Prize', names)
+    self.assertIn('International Booker Prize', names)
+    self.assertIn("Governor General's Literary Award - English Fiction", names)
+    self.assertIn(
+      "Governor General's Literary Award - English Non-fiction",
+      names)
+    self.assertIn(
+      "Governor General's Literary Award - English Young People's Literature - Text",
+      names)
+    self.assertIn(
+      "Governor General's Literary Award - English Young People's Literature - Illustrated Books",
+      names)
+    self.assertIn(
+      "Governor General's Literary Award - French Young People's Literature - Text",
+      names)
+    self.assertIn(
+      "Governor General's Literary Award - French Young People's Literature - Illustrated Books",
+      names)
     self.assertIn('Costa/Whitbread Book Award - Novel', names)
     self.assertIn('Costa/Whitbread Book Award - First Novel', names)
     self.assertIn('Costa/Whitbread Book Award - Biography', names)
@@ -564,6 +610,18 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertIn('Goodreads Choice Awards - Romantasy', names)
     self.assertIn('Goodreads Choice Awards - Horror', names)
     self.assertIn('Goodreads Choice Awards - Graphic Novels & Comics (discontinued)', names)
+    self.assertIn('William C. Morris YA Debut Award', names)
+    self.assertIn('YALSA Award for Excellence in Nonfiction for Young Adults', names)
+    self.assertIn('Michael L. Printz Award', names)
+    self.assertIn('Carnegie Medal for Writing', names)
+    self.assertIn('John Newbery Medal', names)
+    self.assertIn('CBCA Book of the Year - Older Readers', names)
+    self.assertIn('CBCA Book of the Year - Younger Readers', names)
+    self.assertIn('CBCA Book of the Year - Middle Readers', names)
+    self.assertIn('CBCA Book of the Year - Early Childhood', names)
+    self.assertIn('CBCA Book of the Year - Picture Book', names)
+    self.assertIn('CBCA Book of the Year - Eve Pownall', names)
+    self.assertIn('CBCA Book of the Year - New Illustrator', names)
     self.assertIn("Writers' Trust - Atwood Gibson Fiction Prize", names)
     self.assertIn("Writers' Trust - Hilary Weston Nonfiction Prize", names)
 
@@ -589,7 +647,51 @@ class ImportMatchingTest(unittest.TestCase):
       'r_fantasy_top_self_published_novels_2024',
       'sword_and_laser_book_list',
     ], source_ids[:4])
-    self.assertEqual(290, len(source_ids))
+    self.assertEqual(336, len(source_ids))
+    self.assertIn('hammett_prize', source_ids)
+    self.assertIn('nero_award', source_ids)
+    self.assertIn('strand_critics_award_mystery_novel', source_ids)
+    self.assertIn('strand_critics_award_debut_mystery', source_ids)
+    self.assertIn('pulitzer_prize_fiction', source_ids)
+    self.assertIn('pulitzer_prize_general_nonfiction', source_ids)
+    self.assertIn('national_book_award_fiction', source_ids)
+    self.assertIn('national_book_award_nonfiction', source_ids)
+    self.assertIn('national_book_award_young_peoples_literature', source_ids)
+    self.assertIn('william_c_morris_award', source_ids)
+    self.assertIn('yalsa_excellence_nonfiction_young_adults', source_ids)
+    self.assertIn('baillie_gifford_prize', source_ids)
+    self.assertIn('pen_galbraith_award_nonfiction', source_ids)
+    self.assertIn('pen_diamonstein_spielvogel_award_essay', source_ids)
+    self.assertIn('pen_jean_stein_book_award', source_ids)
+    self.assertIn('pen_open_book_award', source_ids)
+    self.assertIn('pen_faulkner_award_fiction', source_ids)
+    self.assertIn('pen_hemingway_award_debut_novel', source_ids)
+    self.assertIn('j_anthony_lukas_book_prize', source_ids)
+    self.assertIn('mark_lynton_history_prize', source_ids)
+    self.assertIn('orwell_prize_political_writing', source_ids)
+    self.assertIn('andrew_carnegie_medal_nonfiction', source_ids)
+    self.assertIn('kirkus_prize_fiction', source_ids)
+    self.assertIn('kirkus_prize_nonfiction', source_ids)
+    self.assertIn('kirkus_prize_young_readers_literature', source_ids)
+    self.assertIn('womens_prize_nonfiction', source_ids)
+    self.assertIn('womens_prize_fiction', source_ids)
+    self.assertIn('royal_society_science_book_prize', source_ids)
+    self.assertIn('booker_prize', source_ids)
+    self.assertIn('international_booker_prize', source_ids)
+    self.assertIn('governor_general_literary_award_english_fiction', source_ids)
+    self.assertIn('governor_general_literary_award_english_nonfiction', source_ids)
+    self.assertIn(
+      'governor_general_literary_award_english_young_peoples_text',
+      source_ids)
+    self.assertIn(
+      'governor_general_literary_award_english_young_peoples_illustrated_books',
+      source_ids)
+    self.assertIn(
+      'governor_general_literary_award_french_young_peoples_text',
+      source_ids)
+    self.assertIn(
+      'governor_general_literary_award_french_young_peoples_illustrated_books',
+      source_ids)
     self.assertIn('costa_whitbread_novel', source_ids)
     self.assertIn('walter_scott_prize', source_ids)
     self.assertIn('costa_whitbread_first_novel', source_ids)
@@ -647,6 +749,8 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertIn('goodreads_choice_awards_romantasy', source_ids)
     self.assertIn('goodreads_choice_awards_horror', source_ids)
     self.assertIn('goodreads_choice_awards_graphic_novels_comics', source_ids)
+    self.assertIn('michael_l_printz_award', source_ids)
+    self.assertIn('john_newbery_medal', source_ids)
     self.assertIn('writers_trust_atwood_gibson_fiction', source_ids)
     self.assertIn('writers_trust_hilary_weston_nonfiction', source_ids)
     self.assertIn('writers_trust_balsillie_public_policy', source_ids)
@@ -894,6 +998,9 @@ class ImportMatchingTest(unittest.TestCase):
       registry_ids.index('goodreads_choice_awards_fiction'))
     self.assertLess(
       registry_ids.index('goodreads_choice_awards_best_of_the_best'),
+      registry_ids.index('michael_l_printz_award'))
+    self.assertLess(
+      registry_ids.index('michael_l_printz_award'),
       registry_ids.index('writers_trust_atwood_gibson_fiction'))
     self.assertIn(CATEGORY_HORROR_DARK_FICTION, [
       item['label']
@@ -902,6 +1009,1482 @@ class ImportMatchingTest(unittest.TestCase):
         if fetcher.source_id == 'goodreads_choice_awards_horror'
       ][0].get_filter_list()
     ])
+
+  def test_lodestar_parser_accepts_2018_young_adult_heading(self):
+    from parser.hugo import LodestarAwardParser
+
+    history = '''
+      <a href="/hugo-history/2018-hugo-awards/">2018 Hugo Awards</a>
+    '''
+    page = '''
+      <main>
+        <p>There are two other Awards administered by Worldcon 76 that are not Hugo Awards:</p>
+        <p>Award for Best Young Adult Book</p>
+        <ul>
+          <li>Akata Warrior, by Nnedi Okorafor (Viking)</li>
+          <li>The Book of Dust: La Belle Sauvage, by Philip Pullman (Knopf)</li>
+        </ul>
+        <p>John W. Campbell Award for Best New Writer</p>
+        <ul>
+          <li>Rebecca Roanhorse</li>
+        </ul>
+      </main>
+    '''
+
+    parsed = LodestarAwardParser().parse(
+      history,
+      'https://www.thehugoawards.org/hugo-history/',
+      fetch_url=lambda url: page)
+
+    self.assertEqual([
+      ('2018', 'Akata Warrior', 'Nnedi Okorafor', 'winner'),
+      ('2018.01', 'The Book of Dust: La Belle Sauvage', 'Philip Pullman', 'nominee'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(entry['award'] == 'Lodestar Award' for entry in parsed['entries']))
+    self.assertTrue(all(entry['category'] == 'Best Young Adult Book' for entry in parsed['entries']))
+    self.assertFalse(parsed['match_series'])
+    self.assertNotIn('Rebecca Roanhorse', [entry['title'] for entry in parsed['entries']])
+
+  def test_lodestar_parser_imports_current_shortlist_without_winner(self):
+    from parser.hugo import LodestarAwardParser
+
+    history = '''
+      <a href="/hugo-history/2025-hugo-awards/">2025 Hugo Awards</a>
+      <a href="/hugo-history/2026-hugo-awards/">2026 Hugo Awards</a>
+    '''
+    pages = {
+      'https://www.thehugoawards.org/hugo-history/2025-hugo-awards/': '''
+        <main>
+          <p>Presented at: Seattle Worldcon 2025, Seattle, Washington, USA, August 16, 2025</p>
+          <p>Lodestar Award for Best Young Adult Book</p>
+          <ul>
+            <li>Sheine Lende by Darcie Little Badger (Levine Querido)</li>
+            <li>Heavenly Tyrant by Xiran Jay Zhao (Tundra Books)</li>
+            <li>Moonstorm by Yoon Ha Lee (Delacorte Press)</li>
+          </ul>
+          <p>268 ballots cast for 175 nominees, finalists range 18 to 52.</p>
+          <p>Yoon Ha Lee withdrew Moonstorm from consideration after the finalists were announced.</p>
+          <p>Astounding Award for Best New Writer</p>
+          <ul>
+            <li>Moniquill Blackgoose (2nd year of eligibility)</li>
+          </ul>
+          <p>Disqualifications and Withdrawals</p>
+          <ul>
+            <li>Declined nomination row outside the Lodestar finalist list</li>
+          </ul>
+        </main>
+      ''',
+      'https://www.thehugoawards.org/hugo-history/2026-hugo-awards/': '''
+        <main>
+          <p>The 2026 Hugo Awards, the Lodestar Award, and the Astounding Award will be presented on August 30, 2026.</p>
+          <p>Voting on the final ballot will open in early May 2026.</p>
+          <p>Lodestar Award for Best YA Book</p>
+          <ul>
+            <li>Among Ghosts by Rachel Hartman (Random House Books for Young Readers)</li>
+            <li>Coffeeshop in an Alternate Universe by C.B. Lee (Feiwel &amp; Friends)</li>
+            <li>Holy Terrors by Margaret Owen (Henry Holt; Hodderscape UK)</li>
+            <li>Oathbound by Tracy Deonn (Simon &amp; Schuster Books for Young Readers)</li>
+            <li>Sunrise on the Reaping by Suzanne Collins (Scholastic Press)</li>
+            <li>They Bloom at Night by Trang Thanh Tran (Bloomsbury US; Bloomsbury UK)</li>
+          </ul>
+          <p>244 ballots cast for 169 nominees. Finalists range 12-48.</p>
+          <p>Astounding Award for Best New Writer</p>
+          <ul>
+            <li>Sophie Burnham (2nd year of eligibility)</li>
+          </ul>
+        </main>
+      ''',
+    }
+
+    parsed = LodestarAwardParser().parse(
+      history,
+      'https://www.thehugoawards.org/hugo-history/',
+      fetch_url=lambda url: pages[url])
+
+    self.assertEqual([
+      ('2025', 'Sheine Lende', 'Darcie Little Badger', 'winner'),
+      ('2025.01', 'Heavenly Tyrant', 'Xiran Jay Zhao', 'nominee'),
+      ('2025.02', 'Moonstorm', 'Yoon Ha Lee', 'nominee'),
+      ('2026.01', 'Among Ghosts', 'Rachel Hartman', 'nominee'),
+      ('2026.02', 'Coffeeshop in an Alternate Universe', 'C.B. Lee', 'nominee'),
+      ('2026.03', 'Holy Terrors', 'Margaret Owen', 'nominee'),
+      ('2026.04', 'Oathbound', 'Tracy Deonn', 'nominee'),
+      ('2026.05', 'Sunrise on the Reaping', 'Suzanne Collins', 'nominee'),
+      ('2026.06', 'They Bloom at Night', 'Trang Thanh Tran', 'nominee'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertFalse(any(entry['position'] == '2026' for entry in parsed['entries']))
+    self.assertNotIn('Moniquill Blackgoose', [entry['title'] for entry in parsed['entries']])
+    self.assertNotIn('Declined nomination row outside the Lodestar finalist list', [
+      entry['title'] for entry in parsed['entries']
+    ])
+    self.assertTrue(any('no separate public longlist' in note for note in parsed['notes']))
+    self.assertTrue(any('Moonstorm' in note and 'withdrawal' in note for note in parsed['notes']))
+
+  def test_lodestar_fetcher_metadata_and_registry(self):
+    from parser.base import (
+      CATEGORY_FANTASY,
+      CATEGORY_SCIENCE_FICTION,
+      CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+    )
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.hugo import UrlFetcherLodestarAward
+
+    fetcher = UrlFetcherLodestarAward()
+
+    self.assertEqual('lodestar_award_young_adult_book', fetcher.source_id)
+    self.assertEqual('Lodestar Award - Young Adult Book', fetcher.NAME)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+    filter_labels = [item['label'] for item in fetcher.get_filter_list()]
+    self.assertIn(CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE, filter_labels)
+    self.assertIn(CATEGORY_SCIENCE_FICTION, filter_labels)
+    self.assertIn(CATEGORY_FANTASY, filter_labels)
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('lodestar_award_young_adult_book', registry_ids)
+    self.assertLess(
+      registry_ids.index('hugo_awards_related_work'),
+      registry_ids.index('lodestar_award_young_adult_book'))
+    self.assertLess(
+      registry_ids.index('lodestar_award_young_adult_book'),
+      registry_ids.index('nebula_awards_novel'))
+
+  def test_andre_norton_official_parser_follows_pagination_and_keeps_nominees(self):
+    from parser.nebula import NebulaAndreNortonParser
+
+    page_1 = '''
+      <main>
+        <h2>2025</h2>
+        <ul>
+          <li><a href="/work/the-tower">The Tower, by David Anaxagoras (Recorded Books)</a>.
+            Nominated for <a>Andre Norton Nebula Award for Middle Grade and Young Adult Fiction</a>
+            in <a>2025</a></li>
+          <li><a href="/work/into-the-wild-magic">Into the Wild Magic, by Michelle Knudsen (Candlewick)</a>.
+            Winner, <a>Andre Norton Nebula Award for Middle Grade and Young Adult Fiction</a>
+            in <a>2025</a></li>
+        </ul>
+        <h2>2012</h2>
+        <ul>
+          <li><a href="/work/fair-coin">Fair Coin</a> by <a>E.C. Myers</a>,
+            published by <a>Pyr</a>. Winner,
+            <a>Andre Norton Nebula Award for Middle Grade and Young Adult Fiction</a>
+            in <a>2012</a></li>
+          <li><a href="/work/iron-hearted-violet">Iron Hearted Violet</a> by <a>Kelly Barnhill</a>,
+            published by <a>Little, Brown</a>. Nominated for
+            <a>Andre Norton Nebula Award for Middle Grade and Young Adult Fiction</a>
+            in <a>2012</a></li>
+        </ul>
+        <a href="/award/andre-norton-award/page/2/">Next &raquo;</a>
+      </main>
+    '''
+    page_2 = '''
+      <main>
+        <h2>2012</h2>
+        <ul>
+          <li><a href="/work/black-heart">Black Heart</a> by <a>Holly Black</a>,
+            published by <a>Victor Gollancz Ltd</a>. Nominated for
+            <a>Andre Norton Nebula Award for Middle Grade and Young Adult Fiction</a>
+            in <a>2012</a></li>
+          <li><a href="/work/seraphina">Seraphina</a> by <a>Rachel Hartman</a>,
+            published by <a>Random House</a>. Nominated for
+            <a>Andre Norton Nebula Award for Middle Grade and Young Adult Fiction</a>
+            in <a>2012</a></li>
+        </ul>
+      </main>
+    '''
+
+    parsed = NebulaAndreNortonParser().parse(
+      page_1,
+      'https://nebulas.sfwa.org/award/andre-norton-award/',
+      fetch_url=lambda url: page_2)
+
+    self.assertEqual([
+      ('2012', 'Fair Coin', 'E.C. Myers', 'winner'),
+      ('2012.01', 'Iron Hearted Violet', 'Kelly Barnhill', 'nominee'),
+      ('2012.02', 'Black Heart', 'Holly Black', 'nominee'),
+      ('2012.03', 'Seraphina', 'Rachel Hartman', 'nominee'),
+      ('2025', 'Into the Wild Magic', 'Michelle Knudsen', 'winner'),
+      ('2025.01', 'The Tower', 'David Anaxagoras', 'nominee'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(
+      entry['award'] == 'Andre Norton Nebula Award for Middle Grade and Young Adult Fiction'
+      for entry in parsed['entries']))
+    self.assertIn('no separate public shortlist or longlist', parsed['notes'][0])
+    self.assertEqual(
+      'https://nebulas.sfwa.org/work/into-the-wild-magic',
+      [entry for entry in parsed['entries'] if entry['title'] == 'Into the Wild Magic'][0]['source_url'])
+    self.assertFalse(parsed['match_series'])
+
+  def test_andre_norton_fetcher_metadata_source_choices_and_sfadb_fallback(self):
+    from parser.base import CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.nebula import UrlFetcherNebulaAndreNorton
+
+    fetcher = UrlFetcherNebulaAndreNorton()
+
+    self.assertEqual('nebula_andre_norton_middle_grade_young_adult', fetcher.source_id)
+    self.assertEqual('Nebula Awards - Andre Norton Middle Grade/YA', fetcher.NAME)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertIn(CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE, [
+      item['label'] for item in fetcher.get_filter_list()
+    ])
+    self.assertEqual((
+      {'label': 'Automatic', 'value': 'automatic'},
+      {'label': 'Official SFWA', 'value': 0},
+      {'label': 'SFADB', 'value': 1},
+    ), fetcher.source_choices())
+
+    sfadb_overview = '''
+      <a href="/Nebula_Awards_2025">2025</a>
+    '''
+    sfadb_year = '''
+      <div class="categoryblock">
+        <div class="category">Andre Norton Middle Grade and Young Adult Fiction</div>
+        <ul>
+          <li>Winner: Into the Wild Magic, Michelle Knudsen (Candlewick)</li>
+          <li>The Tower, David Anaxagoras (Recorded Books)</li>
+        </ul>
+      </div>
+    '''
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == fetcher.URL:
+        raise RuntimeError('official unavailable')
+      if url == fetcher.SFADB_URL:
+        return sfadb_overview
+      if url == 'https://www.sfadb.com/Nebula_Awards_2025':
+        return sfadb_year
+      self.fail(url)
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+
+    self.assertEqual([
+      ('2025', 'Into the Wild Magic', 'Michelle Knudsen', 'winner'),
+      ('2025.01', 'The Tower', 'David Anaxagoras', 'nominee'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertIn('Official SFWA failed: official unavailable', parsed['notes'])
+    self.assertTrue(any('no separate public shortlist or longlist' in note for note in parsed['notes']))
+    self.assertEqual([fetcher.URL, fetcher.SFADB_URL, 'https://www.sfadb.com/Nebula_Awards_2025'], fetched)
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('nebula_andre_norton_middle_grade_young_adult', registry_ids)
+    self.assertLess(
+      registry_ids.index('lodestar_award_young_adult_book'),
+      registry_ids.index('nebula_andre_norton_middle_grade_young_adult'))
+    self.assertLess(
+      registry_ids.index('nebula_andre_norton_middle_grade_young_adult'),
+      registry_ids.index('nebula_awards_comics'))
+
+  def test_morris_history_parser_imports_official_finalists(self):
+    from parser.morris import MorrisAwardParser
+
+    html = '''
+      <main>
+        <h2>2022</h2>
+        <p>Winner: Firekeeper's Daughter written by Angeline Boulley and published by Henry Holt Books for Young Readers, 13-978-1250766564.</p>
+        <p>Finalists: Ace of Spades written by Faridah Abike-Iyimide, Vampires, Hearts, &amp; Other Dead Things written by Margie Fuston, Me (Moth) written by Amber McBride, What Beauty There Is written by Cory Anderson</p>
+        <h2>2009</h2>
+        <p>Winner: A Curse Dark As Gold by Elizabeth C. Bunce</p>
+        <p>Finalists: Graceling by Kristin Cashore, Absolute Brightness by James Lecesne, Madapple by Christina Meldrum, and Me, the Missing, and the Dead by Jenny Valentine.</p>
+      </main>
+    '''
+
+    parsed = MorrisAwardParser().parse(html)
+
+    self.assertEqual([
+      ('2009', 'A Curse Dark As Gold', 'Elizabeth C. Bunce', 'winner'),
+      ('2009.01', 'Graceling', 'Kristin Cashore', 'shortlisted'),
+      ('2009.02', 'Absolute Brightness', 'James Lecesne', 'shortlisted'),
+      ('2009.03', 'Madapple', 'Christina Meldrum', 'shortlisted'),
+      ('2009.04', 'Me, the Missing, and the Dead', 'Jenny Valentine', 'shortlisted'),
+      ('2022', "Firekeeper's Daughter", 'Angeline Boulley', 'winner'),
+      ('2022.01', 'Ace of Spades', 'Faridah Abike-Iyimide', 'shortlisted'),
+      ('2022.02', 'Vampires, Hearts, & Other Dead Things', 'Margie Fuston', 'shortlisted'),
+      ('2022.03', 'Me (Moth)', 'Amber McBride', 'shortlisted'),
+      ('2022.04', 'What Beauty There Is', 'Cory Anderson', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(entry['award'] == 'William C. Morris YA Debut Award' for entry in parsed['entries']))
+    self.assertTrue(all(entry['category'] == 'Young Adult Literature' for entry in parsed['entries']))
+    self.assertFalse(parsed['match_series'])
+    self.assertIn('official public shortlists', parsed['notes'][0])
+
+  def test_morris_annual_and_yma_supplements_recent_years(self):
+    from parser.morris import MorrisAwardParser, yma_awards_url
+
+    history_html = '''
+      <main>
+        <h2>2022</h2>
+        <p>Winner: Firekeeper's Daughter written by Angeline Boulley.</p>
+      </main>
+    '''
+    annual_2023 = '''
+      <main>
+        <h2>2023 Winner</h2>
+        <p>The Life and Crimes of Hoodie Rosen written by Isaac Blum and published by Philomel Books.</p>
+        <h2>2023 Finalists</h2>
+        <p>The Summer of Bitter and Sweet written by Jen Ferguson and published by Heartdrum.</p>
+        <p>Wake the Bones written by Elizabeth Kilcoyne and published by Wednesday Books.</p>
+        <p>The Lesbiana's Guide to Catholic School written by Sonora Reyes and published by Balzer + Bray.</p>
+        <p>Hell Followed With Us written by Andrew Joseph White and published by Peachtree Teen.</p>
+      </main>
+    '''
+    yma_2026 = '''
+      <main>
+        <h2>William C. Morris Award</h2>
+        <p>William C. Morris Award for a debut book published by a first-time author writing for teens: "All the Noise at Once," written by DeAndra Davis and published by Atheneum Books for Young Readers.</p>
+        <h3>William C. Morris Award Finalists</h3>
+        <p>"First Love Language," written by Stefany Valentine and published by Penguin Workshop; "Love, Misha," written and illustrated by Askel Aden and published by First Second; "Red Flags and Butterflies," written by Sheryl Azzam and published by DCB Young Readers; and "You and Me on Repeat," written and illustrated by Mary Shyne and published by Henry Holt Books for Young Readers.</p>
+        <h2>Award for Excellence in Nonfiction for Young Adults</h2>
+      </main>
+    '''
+    current_page = '''
+      <main>
+        <h2>2026 Morris Award Winner</h2>
+        <p>"All the Noise at Once," written by DeAndra Davis, was named the 2026 winner of the William C. Morris YA Debut Award. The book is published by Atheneum Books for Young Readers.</p>
+      </main>
+    '''
+
+    parsed = MorrisAwardParser().parse(
+      history_html,
+      current_year=2026,
+      current_page=current_page,
+      supplement_pages=(
+        ('https://www.ala.org/yalsa/2023-morris-award-0', annual_2023),
+        (yma_awards_url(2026), yma_2026),
+      ))
+
+    by_year = {}
+    for entry in parsed['entries']:
+      by_year.setdefault(entry['award_year'], []).append(entry)
+
+    self.assertEqual([
+      ('2023', 'The Life and Crimes of Hoodie Rosen', 'Isaac Blum', 'winner'),
+      ('2023.01', 'The Summer of Bitter and Sweet', 'Jen Ferguson', 'shortlisted'),
+      ('2023.02', 'Wake the Bones', 'Elizabeth Kilcoyne', 'shortlisted'),
+      ('2023.03', "The Lesbiana's Guide to Catholic School", 'Sonora Reyes', 'shortlisted'),
+      ('2023.04', 'Hell Followed With Us', 'Andrew Joseph White', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in by_year['2023']
+    ])
+    self.assertEqual([
+      ('2026', 'All the Noise at Once', 'DeAndra Davis', 'winner'),
+      ('2026.01', 'First Love Language', 'Stefany Valentine', 'shortlisted'),
+      ('2026.02', 'Love, Misha', 'Askel Aden', 'shortlisted'),
+      ('2026.03', 'Red Flags and Butterflies', 'Sheryl Azzam', 'shortlisted'),
+      ('2026.04', 'You and Me on Repeat', 'Mary Shyne', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in by_year['2026']
+    ])
+    self.assertEqual({'winner', 'shortlisted'}, {
+      entry['result'] for entry in parsed['entries']
+    })
+
+  def test_morris_fetcher_metadata_registry_and_missing_supplement_notes(self):
+    from parser.base import CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE
+    from parser.morris import CURRENT_URL, yma_awards_url
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.morris import UrlFetcherWilliamCMorrisAward
+
+    fetcher = UrlFetcherWilliamCMorrisAward()
+
+    self.assertEqual('william_c_morris_award', fetcher.source_id)
+    self.assertEqual('William C. Morris YA Debut Award', fetcher.NAME)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual(
+      [CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE],
+      [item['label'] for item in fetcher.get_filter_list()])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+
+    history_html = '''
+      <main>
+        <h2>2024</h2>
+        <p>Winner: Rez Ball written by Byron Graves.</p>
+      </main>
+    '''
+    current_html = '''
+      <main>
+        <a href="/news/2025/01/not-other-girls-wins-2025-william-c-morris-award">2025 Morris Award</a>
+      </main>
+    '''
+    annual_2025 = '''
+      <main>
+        <h1>Not Like Other Girls wins 2025 William C. Morris Award</h1>
+        <p>"Not Like Other Girls," written by Meredith Adamo, has been named the 2025 winner of the William C. Morris YA Debut Award. The book is published by Bloomsbury YA.</p>
+        <p>The 2025 Morris Award finalists, announced in December, include:</p>
+        <p>"Aisle Nine," written by Ian X. Cho, published by HarperCollins Children's Books.</p>
+      </main>
+    '''
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == fetcher.URL:
+        return history_html
+      if url == CURRENT_URL:
+        return current_html
+      if url.endswith('/news/2025/01/not-other-girls-wins-2025-william-c-morris-award'):
+        return annual_2025
+      if url == yma_awards_url(2026):
+        raise RuntimeError('not posted')
+      self.fail(url)
+
+    parsed = fetcher.parse(
+      history_html,
+      fetch_url=fetch_url,
+      current_year=2026)
+
+    self.assertEqual(['Rez Ball', 'Not Like Other Girls', 'Aisle Nine'], [
+      entry['title'] for entry in parsed['entries']
+    ])
+    self.assertEqual([
+      CURRENT_URL,
+      'https://www.ala.org/news/2025/01/not-other-girls-wins-2025-william-c-morris-award',
+      yma_awards_url(2026),
+    ], fetched)
+    self.assertIn('could not be fetched', parsed['notes'][0])
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('william_c_morris_award', registry_ids)
+    self.assertLess(
+      registry_ids.index('goodreads_choice_awards_best_of_the_best'),
+      registry_ids.index('william_c_morris_award'))
+    self.assertLess(
+      registry_ids.index('william_c_morris_award'),
+      registry_ids.index('michael_l_printz_award'))
+
+  def test_yalsa_nonfiction_history_parser_imports_official_finalists(self):
+    from parser.yalsa_nonfiction import YALSANonfictionAwardParser
+
+    html = '''
+      <main>
+        <h2>2022</h2>
+        <p>Winner: "Ambushed!: The Assassination Plot Against President Garfield" written by Gail Jarrow and published by Calkins Creek, 978-1684378142.</p>
+        <p>Finalists:</p>
+        <p>"The 1619 Project: Born on the Water," written by Nikole Hannah-Jones and Renee Watson, illustrated by Nikkolas Smith, and published by Kokila.</p>
+        <p>In the Shadow of the Fallen Towers: The Seconds, Minutes, Hours, Days, Weeks, Months, and Years after the 9/11 Attacks written and illustrated by Don Brown.</p>
+        <h2>2010</h2>
+        <p>Winner: Charles and Emma: The Darwins' Leap of Faith by Deborah Heiligman</p>
+        <p>Finalists: Almost Astronauts: 13 Women Who Dared to Dream by Tanya Lee Stone, Claudette Colvin: Twice Toward Justice by Phillip Hoose, The Great and Only Barnum: The Tremendous, Stupendous Life of Showman P. T. Barnum by Candace Fleming, and Written in Bone: Buried Lives of Jamestown and Colonial Maryland by Sally M. Walker.</p>
+      </main>
+    '''
+
+    parsed = YALSANonfictionAwardParser().parse(html)
+
+    self.assertEqual([
+      ('2010', "Charles and Emma: The Darwins' Leap of Faith", 'Deborah Heiligman', 'winner'),
+      ('2010.01', 'Almost Astronauts: 13 Women Who Dared to Dream', 'Tanya Lee Stone', 'shortlisted'),
+      ('2010.02', 'Claudette Colvin: Twice Toward Justice', 'Phillip Hoose', 'shortlisted'),
+      ('2010.03', 'The Great and Only Barnum: The Tremendous, Stupendous Life of Showman P. T. Barnum', 'Candace Fleming', 'shortlisted'),
+      ('2010.04', 'Written in Bone: Buried Lives of Jamestown and Colonial Maryland', 'Sally M. Walker', 'shortlisted'),
+      ('2022', 'Ambushed!: The Assassination Plot Against President Garfield', 'Gail Jarrow', 'winner'),
+      ('2022.01', 'The 1619 Project: Born on the Water', 'Nikole Hannah-Jones and Renee Watson, illustrated by Nikkolas Smith', 'shortlisted'),
+      ('2022.02', 'In the Shadow of the Fallen Towers: The Seconds, Minutes, Hours, Days, Weeks, Months, and Years after the 9/11 Attacks', 'Don Brown', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(
+      entry['award'] == 'YALSA Award for Excellence in Nonfiction for Young Adults'
+      for entry in parsed['entries']))
+    self.assertTrue(all(entry['category'] == 'Young Adult Nonfiction' for entry in parsed['entries']))
+    self.assertFalse(parsed['match_series'])
+    self.assertIn('official public shortlists', parsed['notes'][0])
+    self.assertIn('nomination lists are excluded', parsed['notes'][0])
+
+  def test_yalsa_nonfiction_annual_and_yma_supplements_recent_years(self):
+    from parser.yalsa_nonfiction import YALSANonfictionAwardParser, yma_awards_url
+
+    history_html = '''
+      <main>
+        <h2>2022</h2>
+        <p>Winner: Ambushed!: The Assassination Plot Against President Garfield written by Gail Jarrow.</p>
+      </main>
+    '''
+    annual_2023 = '''
+      <main>
+        <h2>2023 Winner</h2>
+        <p>Victory. Stand!: Raising My Fist for Justice, by Tommie Smith, Derrick Barnes, and illustrated by Dawud Anyabwile, published by Norton Young Readers.</p>
+        <h2>2023 Finalists</h2>
+        <p>Abuela, Don't Forget Me by Rex Ogle.</p>
+        <p>American Murderer: The Parasite That Haunted the South by Gail Jarrow.</p>
+      </main>
+    '''
+    annual_2025 = '''
+      <main>
+        <h1>Rising from the Ashes wins 2025 YALSA Excellence in Nonfiction Award</h1>
+        <p>"Rising from the Ashes: Los Angeles, 1992. Edward Jae Song Lee, Latasha Harlins, Rodney King, and a City on Fire," written by Paula Yoo, has been named the 2025 winner of the YALSA Award for Excellence in Nonfiction for Young Adults.</p>
+        <p>The 2025 Nonfiction finalists, announced in December, include:</p>
+        <ul>
+          <li>"A Greater Goal: The Epic Battle for Equal Pay in Women's Soccer - and Beyond," written by Elizabeth Rusch and published by Greenwillow Books.</li>
+        </ul>
+      </main>
+    '''
+    yma_2026 = '''
+      <main>
+        <h2>Award for Excellence in Nonfiction for Young Adults</h2>
+        <p>Award for Excellence in Nonfiction for Young Adults: "Death in the Jungle: Murder, Betrayal, and the Lost Dream of Jonestown," written by Candace Fleming and published by Anne Schwartz Books.</p>
+        <h3>Award for Excellence in Nonfiction for Young Adults Finalists</h3>
+        <p>"American Spirits: The Famous Fox Sisters and the Mysterious Fad That Haunted a Nation," written by Barb Rosenstock and published by Calkins Creek; "White House Secrets: True Stories from the World's Most Famous Residence," written by Gail Jarrow and published by Calkins Creek; "A World Without Summer: A Volcano Erupts, a Creature Awakens, and the Sun Goes Out," written by Nicholas Day, illustrated by Yas Imamura and published by Random House Studio.</p>
+        <h2>American Indian Youth Literature Awards</h2>
+        <p>Not Imported by Someone Else.</p>
+      </main>
+    '''
+
+    parsed = YALSANonfictionAwardParser().parse(
+      history_html,
+      current_year=2026,
+      supplement_pages=(
+        ('https://www.ala.org/yalsa/2023-nonfiction-award', annual_2023),
+        ('https://www.ala.org/news/2025/01/rising-ashes-los-angeles-1992', annual_2025),
+        (yma_awards_url(2026), yma_2026),
+      ))
+
+    by_year = {}
+    for entry in parsed['entries']:
+      by_year.setdefault(entry['award_year'], []).append(entry)
+
+    self.assertEqual([
+      ('2023', 'Victory. Stand!: Raising My Fist for Justice', 'Tommie Smith, Derrick Barnes, and illustrated by Dawud Anyabwile', 'winner'),
+      ('2023.01', "Abuela, Don't Forget Me", 'Rex Ogle', 'shortlisted'),
+      ('2023.02', 'American Murderer: The Parasite That Haunted the South', 'Gail Jarrow', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in by_year['2023']
+    ])
+    self.assertEqual([
+      ('2025', 'Rising from the Ashes: Los Angeles, 1992. Edward Jae Song Lee, Latasha Harlins, Rodney King, and a City on Fire', 'Paula Yoo', 'winner'),
+      ('2025.01', "A Greater Goal: The Epic Battle for Equal Pay in Women's Soccer - and Beyond", 'Elizabeth Rusch', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in by_year['2025']
+    ])
+    self.assertEqual([
+      ('2026', 'Death in the Jungle: Murder, Betrayal, and the Lost Dream of Jonestown', 'Candace Fleming', 'winner'),
+      ('2026.01', 'American Spirits: The Famous Fox Sisters and the Mysterious Fad That Haunted a Nation', 'Barb Rosenstock', 'shortlisted'),
+      ('2026.02', "White House Secrets: True Stories from the World's Most Famous Residence", 'Gail Jarrow', 'shortlisted'),
+      ('2026.03', 'A World Without Summer: A Volcano Erupts, a Creature Awakens, and the Sun Goes Out', 'Nicholas Day, illustrated by Yas Imamura', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in by_year['2026']
+    ])
+    self.assertNotIn('Not Imported', [entry['title'] for entry in parsed['entries']])
+
+  def test_yalsa_nonfiction_fetcher_metadata_registry_and_missing_supplement_notes(self):
+    from parser.base import CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE
+    from parser.yalsa_nonfiction import CURRENT_URL, yma_awards_url
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.yalsa_nonfiction import UrlFetcherYALSAExcellenceNonfictionYoungAdults
+
+    fetcher = UrlFetcherYALSAExcellenceNonfictionYoungAdults()
+
+    self.assertEqual('yalsa_excellence_nonfiction_young_adults', fetcher.source_id)
+    self.assertEqual('YALSA Award for Excellence in Nonfiction for Young Adults', fetcher.NAME)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual(
+      [CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE],
+      [item['label'] for item in fetcher.get_filter_list()])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+
+    history_html = '''
+      <main>
+        <h2>2024</h2>
+        <p>Winner: Accountable: The True Story of a Racist Social Media Account and the Teenagers Whose Lives It Changed written by Dashka Slater.</p>
+      </main>
+    '''
+    current_html = '''
+      <main>
+        <a href="/news/2025/01/rising-ashes-los-angeles-1992">2025 Nonfiction Award</a>
+      </main>
+    '''
+    annual_2025 = '''
+      <main>
+        <h1>Rising from the Ashes wins 2025 YALSA Nonfiction Award</h1>
+        <p>"Rising from the Ashes: Los Angeles, 1992," written by Paula Yoo, has been named the 2025 winner of the YALSA Award for Excellence in Nonfiction for Young Adults.</p>
+        <p>The 2025 Nonfiction finalists, announced in December, include:</p>
+        <p>"Homebody," written and illustrated by Theo Parish and published by HarperAlley.</p>
+      </main>
+    '''
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == fetcher.URL:
+        return history_html
+      if url == CURRENT_URL:
+        return current_html
+      if url.endswith('/news/2025/01/rising-ashes-los-angeles-1992'):
+        return annual_2025
+      if url == yma_awards_url(2026):
+        raise RuntimeError('not posted')
+      self.fail(url)
+
+    parsed = fetcher.parse(
+      history_html,
+      fetch_url=fetch_url,
+      current_year=2026)
+
+    self.assertEqual([
+      'Accountable: The True Story of a Racist Social Media Account and the Teenagers Whose Lives It Changed',
+      'Rising from the Ashes: Los Angeles, 1992',
+      'Homebody',
+    ], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual([
+      CURRENT_URL,
+      'https://www.ala.org/news/2025/01/rising-ashes-los-angeles-1992',
+      yma_awards_url(2026),
+    ], fetched)
+    self.assertIn('could not be fetched', parsed['notes'][0])
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('yalsa_excellence_nonfiction_young_adults', registry_ids)
+    self.assertLess(
+      registry_ids.index('william_c_morris_award'),
+      registry_ids.index('yalsa_excellence_nonfiction_young_adults'))
+    self.assertLess(
+      registry_ids.index('yalsa_excellence_nonfiction_young_adults'),
+      registry_ids.index('michael_l_printz_award'))
+
+  def test_printz_history_parser_maps_honor_books_to_shortlisted(self):
+    from parser.printz import PrintzAwardParser
+
+    html = '''
+      <main>
+        <h2>2000</h2>
+        <p>Winner:</p>
+        <p>Monster, by Walter Dean Myers</p>
+        <p>Honor Books:</p>
+        <p>Skellig, by David Almond</p>
+        <p>Speak, by Laurie Halse Anderson</p>
+        <p>Hard Love, by Ellen Wittlinger</p>
+      </main>
+    '''
+
+    parsed = PrintzAwardParser().parse(html)
+
+    self.assertEqual([
+      ('2000', 'Monster', 'Walter Dean Myers', 'winner'),
+      ('2000.01', 'Skellig', 'David Almond', 'shortlisted'),
+      ('2000.02', 'Speak', 'Laurie Halse Anderson', 'shortlisted'),
+      ('2000.03', 'Hard Love', 'Ellen Wittlinger', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(entry['award'] == 'Michael L. Printz Award' for entry in parsed['entries']))
+    self.assertTrue(all(entry['category'] == 'Young Adult Literature' for entry in parsed['entries']))
+    self.assertFalse(parsed['match_series'])
+    self.assertIn('Honor Books are imported as shortlisted', parsed['notes'][0])
+
+  def test_printz_history_parser_preserves_creator_credit_shapes(self):
+    from parser.printz import PrintzAwardParser
+
+    html = '''
+      <main>
+        <h2>2024</h2>
+        <p>Winner: The Collectors: Stories, edited by A.S. King. Written by King and others.</p>
+        <p>Honor Books: Fire from the Sky, by Moa Backe Astot, translated by Eva Apelqvist; Gather by Kenneth M. Cadow; Salt the Water by Candice Iloh</p>
+      </main>
+    '''
+
+    parsed = PrintzAwardParser().parse(html)
+
+    self.assertEqual([
+      ('2024', 'The Collectors: Stories', 'A.S. King', 'winner'),
+      ('2024.01', 'Fire from the Sky', 'Moa Backe Astot, translated by Eva Apelqvist', 'shortlisted'),
+      ('2024.02', 'Gather', 'Kenneth M. Cadow', 'shortlisted'),
+      ('2024.03', 'Salt the Water', 'Candice Iloh', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+
+  def test_printz_youth_media_awards_supplements_recent_years(self):
+    from parser.printz import PrintzAwardParser, yma_awards_url
+
+    history_html = '''
+      <main>
+        <h2>2024</h2>
+        <p>Winner: The Collectors: Stories, edited by A.S. King.</p>
+      </main>
+    '''
+    yma_2025 = '''
+      <main>
+        <h2>Michael L. Printz Award for Excellence in Young Adult Literature</h2>
+        <p>"Brownstone," written by Samuel Teer, illustrated by Mar Julia and co-published by Versify and HarperAlley.</p>
+        <h3>Four Printz Honor Books</h3>
+        <p>"Bright Red Fruit," written by Safia Elhillo and published by Make Me a World; "Compound Fracture," written by Andrew Joseph White and published by Peachtree Teen; "The Deep Dark," written by Molly Knox Ostertag and published by Graphix; and "Road Home," written by Rex Ogle and published by Norton Young Readers.</p>
+        <h2>Schneider Family Book Award</h2>
+      </main>
+    '''
+    yma_2026 = '''
+      <main>
+        <h2>Michael L. Printz Award for Excellence in Young Adult Literature</h2>
+        <p>The Michael L. Printz Award honoring the best book written for teens, based entirely on its literary merit: "Legendary Frybread Drive-In: Intertribal Stories," edited by Cynthia Leitich Smith, and published by Heartdrum.</p>
+        <h3>Printz Honor Books</h3>
+        <p>"Cope Field," written by T.L. Simpson and published by Flux; "The House No One Sees," written by Adina King and published by Feiwel and Friends; "Sisters in the Wind," written by Angeline Boulley and published by Henry Holt Books for Young Readers; and "Song of a Blackbird," written and illustrated by Maria van Lieshout and published by First Second.</p>
+        <h2>Schneider Family Book Award</h2>
+      </main>
+    '''
+    current_page = '''
+      <main>
+        <h2>2026 Michael L. Printz Award Winner: LEGENDARY FRYBREAD DRIVE-IN</h2>
+        <p>"Legendary Frybread Drive-In: Intertribal Stories," edited by Cynthia Leitich Smith and published by Heartdrum.</p>
+      </main>
+    '''
+
+    parsed = PrintzAwardParser().parse(
+      history_html,
+      current_year=2026,
+      current_page=current_page,
+      supplement_pages=(
+        (yma_awards_url(2025), yma_2025),
+        (yma_awards_url(2026), yma_2026),
+      ))
+
+    by_year = {}
+    for entry in parsed['entries']:
+      by_year.setdefault(entry['award_year'], []).append(entry)
+
+    self.assertEqual([
+      ('2025', 'Brownstone', 'Samuel Teer, illustrated by Mar Julia', 'winner'),
+      ('2025.01', 'Bright Red Fruit', 'Safia Elhillo', 'shortlisted'),
+      ('2025.02', 'Compound Fracture', 'Andrew Joseph White', 'shortlisted'),
+      ('2025.03', 'The Deep Dark', 'Molly Knox Ostertag', 'shortlisted'),
+      ('2025.04', 'Road Home', 'Rex Ogle', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in by_year['2025']
+    ])
+    self.assertEqual([
+      ('2026', 'Legendary Frybread Drive-In: Intertribal Stories', 'Cynthia Leitich Smith', 'winner'),
+      ('2026.01', 'Cope Field', 'T.L. Simpson', 'shortlisted'),
+      ('2026.02', 'The House No One Sees', 'Adina King', 'shortlisted'),
+      ('2026.03', 'Sisters in the Wind', 'Angeline Boulley', 'shortlisted'),
+      ('2026.04', 'Song of a Blackbird', 'Maria van Lieshout', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in by_year['2026']
+    ])
+    self.assertEqual({'winner', 'shortlisted'}, {
+      entry['result'] for entry in parsed['entries']
+    })
+
+  def test_printz_fetcher_metadata_registry_and_missing_supplement_notes(self):
+    from parser.base import CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE
+    from parser.printz import CURRENT_URL, yma_awards_url
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.printz import UrlFetcherMichaelLPrintzAward
+
+    fetcher = UrlFetcherMichaelLPrintzAward()
+
+    self.assertEqual('michael_l_printz_award', fetcher.source_id)
+    self.assertEqual('Michael L. Printz Award', fetcher.NAME)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual(
+      [CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE],
+      [item['label'] for item in fetcher.get_filter_list()])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+
+    history_html = '''
+      <main>
+        <h2>2024</h2>
+        <p>Winner: The Collectors: Stories, edited by A.S. King.</p>
+      </main>
+    '''
+    yma_2025 = '''
+      <main>
+        <h2>Michael L. Printz Award for Excellence in Young Adult Literature</h2>
+        <p>"Brownstone," written by Samuel Teer, illustrated by Mar Julia and co-published by Versify and HarperAlley.</p>
+        <h3>Four Printz Honor Books</h3>
+        <p>"Bright Red Fruit," written by Safia Elhillo and published by Make Me a World.</p>
+        <h2>Schneider Family Book Award</h2>
+      </main>
+    '''
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == fetcher.URL:
+        return history_html
+      if url == CURRENT_URL:
+        return '<main></main>'
+      if url == yma_awards_url(2025):
+        return yma_2025
+      if url == yma_awards_url(2026):
+        raise RuntimeError('not posted')
+      self.fail(url)
+
+    parsed = fetcher.parse(
+      history_html,
+      fetch_url=fetch_url,
+      current_year=2026)
+
+    self.assertEqual(['The Collectors: Stories', 'Brownstone', 'Bright Red Fruit'], [
+      entry['title'] for entry in parsed['entries']
+    ])
+    self.assertEqual([CURRENT_URL, yma_awards_url(2025), yma_awards_url(2026)], fetched)
+    self.assertIn('could not be fetched', parsed['notes'][0])
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('michael_l_printz_award', registry_ids)
+    self.assertLess(
+      registry_ids.index('goodreads_choice_awards_best_of_the_best'),
+      registry_ids.index('michael_l_printz_award'))
+    self.assertLess(
+      registry_ids.index('michael_l_printz_award'),
+      registry_ids.index('writers_trust_atwood_gibson_fiction'))
+
+  def test_carnegie_medal_winner_archive_skips_withheld_years(self):
+    from parser.carnegie_medal import CarnegieMedalParser
+
+    html = '''
+      <main>
+        <h1>Medal for Writing Winners</h1>
+        <p>Before 2007, the year refers to the publication year.</p>
+        <p>1936: Pigeon Post by Arthur Ransome</p>
+        <p>1943: No award</p>
+        <p>1945: Award withheld</p>
+        <p>1966: No award was made</p>
+        <p>1967: The Owl Service, Alan Garner</p>
+      </main>
+    '''
+
+    parsed = CarnegieMedalParser().parse(html)
+
+    self.assertEqual([
+      ('1936', 'Pigeon Post', 'Arthur Ransome', 'winner'),
+      ('1967', 'The Owl Service', 'Alan Garner', 'winner'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertEqual({'1936', '1967'}, {entry['award_year'] for entry in parsed['entries']})
+    self.assertTrue(all(entry['award'] == 'Carnegie Medal for Writing' for entry in parsed['entries']))
+    self.assertTrue(all(entry['category'] == 'Writing' for entry in parsed['entries']))
+    self.assertFalse(parsed['match_series'])
+    self.assertTrue(any('1943' in note and 'withheld' in note for note in parsed['notes']))
+    self.assertTrue(any('pre-2010 history is winner-only' in note for note in parsed['notes']))
+
+  def test_carnegie_medal_aggregate_shortlists_stop_before_greenaway(self):
+    from parser.carnegie_medal import (
+      SHORTLIST_ARCHIVE_2010_2015_URL, CarnegieMedalParser,
+    )
+
+    html = '''
+      <main>
+        <h2>2010</h2>
+        <h3>CILIP Carnegie Medal</h3>
+        <ul>
+          <li>Chains by Laurie Halse Anderson (Bloomsbury)</li>
+          <li>Fever Crumb by Philip Reeve</li>
+        </ul>
+        <h3>CILIP Kate Greenaway Medal</h3>
+        <ul><li>Illustration Title by Artist Name</li></ul>
+        <h2>2015</h2>
+        <h3>CILIP Carnegie Medal</h3>
+        <p>Buffalo Soldier by Tanya Landman</p>
+        <h3>Kate Greenaway Medal</h3>
+        <p>Another Illustration by Artist Two</p>
+      </main>
+    '''
+
+    parsed = CarnegieMedalParser().parse(
+      '<p>2015: Buffalo Soldier by Tanya Landman</p>',
+      shortlist_pages=((SHORTLIST_ARCHIVE_2010_2015_URL, html),))
+
+    self.assertEqual([
+      ('2010.01', 'Chains', 'Laurie Halse Anderson', 'shortlisted'),
+      ('2010.02', 'Fever Crumb', 'Philip Reeve', 'shortlisted'),
+      ('2015', 'Buffalo Soldier', 'Tanya Landman', 'winner'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertNotIn('Illustration Title', [entry['title'] for entry in parsed['entries']])
+
+  def test_carnegie_medal_yearly_shortlist_page_shapes(self):
+    from parser.carnegie_medal import CarnegieMedalParser, shortlist_archive_url
+
+    shortlist_2016 = '''
+      <main>
+        <h2>CILIP Carnegie Medal</h2>
+        <ul>
+          <li>One by Sarah Crossan</li>
+          <li>The Lie Tree by Frances Hardinge</li>
+        </ul>
+        <h2>CILIP Kate Greenaway Medal</h2>
+        <p>Illustration Row by Artist</p>
+      </main>
+    '''
+    shortlist_2025 = '''
+      <main>
+        <p>The 2025 Carnegie Medal for Writing shortlist is:</p>
+        <ul>
+          <li>Chronicles of a Lizard Nobody by Patrick Ness, illustrated by Tim Miller (Walker Books)</li>
+          <li>Steady for This by Nathanael Lessore, published by Hot Key Books</li>
+        </ul>
+        <h2>The Carnegie Medal for Illustration shortlist is:</h2>
+        <p>Wrong Row by Artist</p>
+      </main>
+    '''
+
+    parsed = CarnegieMedalParser().parse(
+      '<p>2025: Steady for This by Nathanael Lessore</p>',
+      shortlist_pages=(
+        (shortlist_archive_url(2016), shortlist_2016),
+        (shortlist_archive_url(2025), shortlist_2025),
+      ))
+
+    by_title = {entry['title']: entry for entry in parsed['entries']}
+    self.assertEqual(('2016.01', 'Sarah Crossan', 'shortlisted'), (
+      by_title['One']['position'], by_title['One']['author'], by_title['One']['result']))
+    self.assertEqual(
+      'Patrick Ness, illustrated by Tim Miller',
+      by_title['Chronicles of a Lizard Nobody']['author'])
+    self.assertEqual('winner', by_title['Steady for This']['result'])
+    self.assertNotIn('Wrong Row', by_title)
+
+  def test_carnegie_medal_2026_shortlist_winner_and_excluded_public_stages(self):
+    from parser.carnegie_medal import (
+      CarnegieMedalParser, current_shortlist_url, winner_news_url,
+    )
+
+    shortlist_html = '''
+      <main>
+        <h1>The 2026 Carnegie Medal for Writing shortlist is:</h1>
+        <ul>
+          <li>Ghostlines by Katya Balen</li>
+          <li>Not Going to Plan by Tia Fisher</li>
+          <li>Popcorn by Rob Harrell</li>
+          <li>The Boy I Love by William Hussey</li>
+          <li>Chronicles of a Lizard Nobody by Patrick Ness, illustrated by Tim Miller</li>
+          <li>Wolf Siren by Beth O'Brien</li>
+          <li>Twenty-Four Seconds from Now by Jason Reynolds</li>
+          <li>Birdie by J. P. Rose</li>
+        </ul>
+        <h2>Carnegie Medal for Illustration</h2>
+        <p>Illustration Book by Artist</p>
+      </main>
+    '''
+    winner_html = '''
+      <article>
+        <h1>2026 winners announced</h1>
+        <p>Beth O'Brien won both the Carnegie Medal for Writing and Shadowers' Choice Award for Writing for Wolf Siren (HarperCollins Children's Books).</p>
+        <p>Kate Rolfe won the Carnegie Medal for Illustration for Varmints.</p>
+      </article>
+    '''
+    longlist_html = '<main><h1>Writing Longlist 2026</h1><p>Longlist Book by Writer</p></main>'
+    nominated_html = '<main><h1>Writing Nominated Titles 2026</h1><p>Nominee Book by Writer</p></main>'
+
+    parsed = CarnegieMedalParser().parse(
+      '<p>2025: Steady for This by Nathanael Lessore</p>',
+      supplement_pages=(
+        (current_shortlist_url(2026), shortlist_html),
+        (winner_news_url(2026), winner_html),
+        ('https://carnegies.co.uk/writing-longlist-2026/', longlist_html),
+        ('https://carnegies.co.uk/writing-nominated-titles-2026/', nominated_html),
+      ))
+
+    entries_2026 = [entry for entry in parsed['entries'] if entry['award_year'] == '2026']
+    by_title = {entry['title']: entry for entry in entries_2026}
+
+    self.assertEqual(8, len(entries_2026))
+    self.assertEqual(('2026', 'winner'), (
+      by_title['Wolf Siren']['position'], by_title['Wolf Siren']['result']))
+    self.assertEqual({'winner', 'shortlisted'}, {entry['result'] for entry in entries_2026})
+    self.assertNotIn('Longlist Book', by_title)
+    self.assertNotIn('Nominee Book', by_title)
+    self.assertTrue(any('nominated-title and longlist pages are public but excluded' in note for note in parsed['notes']))
+
+  def test_carnegie_medal_fetcher_metadata_fetch_flow_and_registry(self):
+    from parser.base import CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE
+    from parser.carnegie_medal import (
+      SHORTLIST_ARCHIVE_2010_2015_URL, current_shortlist_url,
+      current_winners_url, shortlist_archive_url, shortlist_news_url,
+      winner_news_url,
+    )
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.carnegie_medal import UrlFetcherCarnegieMedalForWriting
+
+    fetcher = UrlFetcherCarnegieMedalForWriting()
+
+    self.assertEqual('carnegie_medal_for_writing', fetcher.source_id)
+    self.assertEqual('Carnegie Medal for Writing', fetcher.NAME)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual(
+      [CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE],
+      [item['label'] for item in fetcher.get_filter_list()])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+
+    history_html = '<main><p>2015: Buffalo Soldier by Tanya Landman</p></main>'
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == SHORTLIST_ARCHIVE_2010_2015_URL:
+        return '''
+          <main>
+            <h2>2015</h2>
+            <h3>CILIP Carnegie Medal</h3>
+            <p>Five Children on the Western Front by Kate Saunders</p>
+            <h3>Kate Greenaway Medal</h3>
+          </main>
+        '''
+      if url == shortlist_archive_url(2016):
+        return '<main><h2>CILIP Carnegie Medal</h2><p>One by Sarah Crossan</p></main>'
+      if url == winner_news_url(2016):
+        return '<article><p>Sarah Crossan won the Carnegie Medal for Writing for One.</p></article>'
+      if url in {current_shortlist_url(2016), shortlist_news_url(2016), current_winners_url(2016)}:
+        raise RuntimeError('not available')
+      self.fail(url)
+
+    parsed = fetcher.parse(history_html, fetch_url=fetch_url, current_year=2016)
+
+    self.assertEqual('Carnegie Medal for Writing', parsed['name'])
+    self.assertFalse(parsed['match_series'])
+    self.assertEqual([
+      'Buffalo Soldier',
+      'Five Children on the Western Front',
+      'One',
+    ], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual([
+      SHORTLIST_ARCHIVE_2010_2015_URL,
+      shortlist_archive_url(2016),
+      current_shortlist_url(2016),
+      shortlist_news_url(2016),
+      winner_news_url(2016),
+      current_winners_url(2016),
+    ], fetched)
+    self.assertTrue(any('could not be fetched' in note for note in parsed['notes']))
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('carnegie_medal_for_writing', registry_ids)
+    self.assertLess(
+      registry_ids.index('michael_l_printz_award'),
+      registry_ids.index('carnegie_medal_for_writing'))
+    self.assertLess(
+      registry_ids.index('carnegie_medal_for_writing'),
+      registry_ids.index('writers_trust_atwood_gibson_fiction'))
+
+  def test_newbery_pdf_parser_maps_honor_books_to_shortlisted(self):
+    from parser.newbery import NewberyMedalParser
+
+    text = '''
+      John Newbery Medal and Honor Books
+      1922 Medal Winner
+      The Story of Mankind, by Hendrik Willem van Loon (Liveright)
+      1922 Honor Books
+      The Great Quest, by Charles Boardman Hawes (Little, Brown)
+      Cedric the Forester, by Bernard Marshall (Appleton)
+      The Old Tobacco Shop: A True Account of What Befell a Little Boy in Search of Adventure,
+      by William Bowen (Macmillan)
+    '''
+
+    parsed = NewberyMedalParser().parse(text)
+
+    self.assertEqual([
+      ('1922', 'The Story of Mankind', 'Hendrik Willem van Loon', 'winner'),
+      ('1922.01', 'Cedric the Forester', 'Bernard Marshall', 'shortlisted'),
+      ('1922.02', 'The Great Quest', 'Charles Boardman Hawes', 'shortlisted'),
+      ('1922.03', 'The Old Tobacco Shop: A True Account of What Befell a Little Boy in Search of Adventure', 'William Bowen', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(entry['award'] == 'John Newbery Medal' for entry in parsed['entries']))
+    self.assertTrue(all(entry['category'] == "Children's Literature" for entry in parsed['entries']))
+    self.assertFalse(parsed['match_series'])
+    self.assertTrue(any('Honor Books are imported as shortlisted' in note for note in parsed['notes']))
+
+  def test_newbery_pdf_parser_skips_none_recorded_honors_and_wraps_rows(self):
+    from parser.newbery import NewberyMedalParser
+
+    text = '''
+      1923 Medal Winner
+      The Voyages of Doctor Dolittle, by Hugh Lofting (Stokes)
+      1923 Honor Books
+      [None recorded]
+      2024 Medal Winner
+      The Eyes and the Impossible,
+      by Dave Eggers (Knopf)
+      2024 Honor Book
+      Eagle Drums, written and illustrated by Nasugraq Rainey Hopson
+      (Roaring Brook Press)
+    '''
+
+    parsed = NewberyMedalParser().parse(text)
+
+    self.assertEqual([
+      ('1923', 'The Voyages of Doctor Dolittle', 'Hugh Lofting', 'winner'),
+      ('2024', 'The Eyes and the Impossible', 'Dave Eggers', 'winner'),
+      ('2024.01', 'Eagle Drums', 'Nasugraq Rainey Hopson', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertEqual({'winner', 'shortlisted'}, {entry['result'] for entry in parsed['entries']})
+
+  def test_newbery_youth_media_awards_supplement_stops_before_caldecott(self):
+    from parser.newbery import NewberyMedalParser, yma_awards_url
+
+    pdf_text = '''
+      2025 Medal Winner
+      The First State of Being, by Erin Entrada Kelly (Greenwillow Books)
+    '''
+    yma_2026 = '''
+      <main>
+        <h2>John Newbery Medal</h2>
+        <p>The John Newbery Medal for the most outstanding contribution to children's literature: "The Last Dragon on Mars," written by Scott Reintgen and published by Aladdin.</p>
+        <h3>Newbery Honor Books</h3>
+        <p>"Across So Many Seas," written by Ruth Behar and published by Nancy Paulsen Books; "Magnolia Wu Unfolds It All," written by Chanel Miller and published by Philomel Books; "One Big Open Sky," written by Lesa Cline-Ransome and published by Holiday House; and "The Wrong Way Home," written by Kate O'Shaughnessy and published by Knopf Books for Young Readers.</p>
+        <h2>Randolph Caldecott Medal</h2>
+        <p>"A Caldecott Book," illustrated by Artist Name.</p>
+      </main>
+    '''
+
+    parsed = NewberyMedalParser().parse(
+      pdf_text,
+      supplement_pages=((yma_awards_url(2026), yma_2026),))
+
+    by_year = {}
+    for entry in parsed['entries']:
+      by_year.setdefault(entry['award_year'], []).append(entry)
+
+    self.assertEqual([
+      ('2026', 'The Last Dragon on Mars', 'Scott Reintgen', 'winner'),
+      ('2026.01', 'Across So Many Seas', 'Ruth Behar', 'shortlisted'),
+      ('2026.02', 'Magnolia Wu Unfolds It All', 'Chanel Miller', 'shortlisted'),
+      ('2026.03', 'One Big Open Sky', 'Lesa Cline-Ransome', 'shortlisted'),
+      ('2026.04', 'The Wrong Way Home', "Kate O'Shaughnessy", 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in by_year['2026']
+    ])
+    self.assertNotIn('A Caldecott Book', [entry['title'] for entry in parsed['entries']])
+    self.assertEqual({'winner', 'shortlisted'}, {entry['result'] for entry in parsed['entries']})
+
+  def test_newbery_fetcher_discovers_pdf_supplements_lag_and_registry(self):
+    from parser.base import CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE
+    from parser.newbery import PDF_URL, yma_awards_url
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.newbery import UrlFetcherJohnNewberyMedal
+
+    fetcher = UrlFetcherJohnNewberyMedal()
+
+    self.assertEqual('john_newbery_medal', fetcher.source_id)
+    self.assertEqual('John Newbery Medal', fetcher.NAME)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual(
+      [CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE],
+      [item['label'] for item in fetcher.get_filter_list()])
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+
+    landing_html = f'''
+      <main>
+        <a href="{PDF_URL}">Newbery Medal and Honor Books, 1922-present PDF</a>
+      </main>
+    '''
+    pdf_text = '''
+      2025 Medal Winner
+      The First State of Being, by Erin Entrada Kelly (Greenwillow Books)
+    '''
+    yma_2026 = '''
+      <main>
+        <h2>John Newbery Medal</h2>
+        <p>"The Last Dragon on Mars," written by Scott Reintgen and published by Aladdin.</p>
+        <h3>Newbery Honor Books</h3>
+        <p>"Across So Many Seas," written by Ruth Behar and published by Nancy Paulsen Books.</p>
+        <h2>Randolph Caldecott Medal</h2>
+      </main>
+    '''
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == PDF_URL:
+        return pdf_text
+      if url == yma_awards_url(2026):
+        return yma_2026
+      self.fail(url)
+
+    parsed = fetcher.parse(landing_html, fetch_url=fetch_url, current_year=2026)
+
+    self.assertEqual([
+      'The First State of Being',
+      'The Last Dragon on Mars',
+      'Across So Many Seas',
+    ], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual([PDF_URL, yma_awards_url(2026)], fetched)
+    self.assertFalse(parsed['match_series'])
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertIn('john_newbery_medal', registry_ids)
+    self.assertLess(
+      registry_ids.index('carnegie_medal_for_writing'),
+      registry_ids.index('john_newbery_medal'))
+    self.assertLess(
+      registry_ids.index('john_newbery_medal'),
+      registry_ids.index('writers_trust_atwood_gibson_fiction'))
+
+  def test_cbca_archive_parser_imports_winner_honour_and_shortlist_rows(self):
+    from parser.cbca_book_of_the_year import (
+      CATEGORY_OLDER_READERS, CBCABookOfTheYearParser,
+    )
+
+    html = '''
+      <main>
+        <h1>CBCA Book of the Year Award through history</h1>
+        <p>2025</p>
+        <h3>Book of the Year Award for Older Readers</h3>
+        <p>Winner | I’m Not Really Here, Gary Lonesborough (Allen &amp; Unwin)</p>
+        <p>Honour | Into the Mouth of the Wolf, Erin Gough (Hardie Grant Children’s Publishing)</p>
+        <p>Honour | Birdy, Sharon Kernot (Text)</p>
+        <p>Shortlist | Comes the Night, Isobelle Carmody (Allen &amp; Unwin)</p>
+        <p>Shortlist | A Wreck of Seabirds, Karleah Olson (Fremantle)</p>
+      </main>
+    '''
+
+    parsed = CBCABookOfTheYearParser(CATEGORY_OLDER_READERS).parse(
+      html, current_year=2025)
+
+    self.assertEqual([
+      ('2025', 'I’m Not Really Here', 'Gary Lonesborough', 'winner'),
+      ('2025.01', 'A Wreck of Seabirds', 'Karleah Olson', 'shortlisted'),
+      ('2025.02', 'Birdy', 'Sharon Kernot', 'shortlisted'),
+      ('2025.03', 'Comes the Night', 'Isobelle Carmody', 'shortlisted'),
+      ('2025.04', 'Into the Mouth of the Wolf', 'Erin Gough', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(entry['award'] == 'CBCA Book of the Year' for entry in parsed['entries']))
+    self.assertTrue(all(entry['category'] == CATEGORY_OLDER_READERS for entry in parsed['entries']))
+    self.assertFalse(parsed['match_series'])
+    self.assertTrue(any('Honour Books and official shortlists' in note for note in parsed['notes']))
+
+  def test_cbca_2026_shortlist_page_imports_shortlist_only(self):
+    from parser.cbca_book_of_the_year import (
+      CATEGORY_YOUNGER_READERS, CBCABookOfTheYearParser, shortlist_url,
+    )
+
+    html = '''
+      <main>
+        <h1>2026 Book of the Year Awards - Shortlist</h1>
+        <h2>Older Readers</h2>
+        <p>Of Flame and Fury, Mikayla Bridge (Macmillan Australia)</p>
+        <h2>Younger Readers</h2>
+        <p>Run, Sarah Armstrong (Hardie Grant Children’s Publishing)</p>
+        <p>Something Terrible: Tim Tie-Your-Shoelaces, Sally Barton, illustrated by Christopher Nielsen (Walker Books Australia)</p>
+        <p>Little Bones, Sandy Bigna (University of Queensland Press)</p>
+      </main>
+    '''
+
+    parsed = CBCABookOfTheYearParser(CATEGORY_YOUNGER_READERS).parse(
+      html, shortlist_url(2026), current_year=2026)
+
+    self.assertEqual([
+      ('2026.01', 'Little Bones', 'Sandy Bigna', 'shortlisted'),
+      ('2026.02', 'Run', 'Sarah Armstrong', 'shortlisted'),
+      ('2026.03', 'Something Terrible: Tim Tie-Your-Shoelaces',
+       'Sally Barton, illustrated by Christopher Nielsen', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertEqual({'shortlisted'}, {entry['result'] for entry in parsed['entries']})
+    self.assertTrue(any('shortlist rows only' in note for note in parsed['notes']))
+
+  def test_cbca_pdf_parser_imports_historical_and_recent_rows(self):
+    from parser.cbca_book_of_the_year import (
+      CATEGORY_EARLY_CHILDHOOD, CATEGORY_OLDER_READERS,
+      CBCABookOfTheYearParser,
+    )
+
+    text = '''
+      THE CHILDREN'S BOOK COUNCIL OF AUSTRALIA
+      BOOK OF THE YEAR AWARD 1946 - 1981
+      1946 - WINNER REES, Leslie Karrawingi the Emu John Sands
+      SHORT LIST BARNETT, Gillian The Inside Hedge Story Oxford University Press
+      BOOK OF THE YEAR AWARD: EARLY CHILDHOOD
+      2021 - WINNER FREEMAN, Pamela Dry to Dry: The Seasons of Kakadu Walker
+    '''
+
+    older = CBCABookOfTheYearParser(CATEGORY_OLDER_READERS).parse(text)
+    early = CBCABookOfTheYearParser(CATEGORY_EARLY_CHILDHOOD).parse(text)
+
+    self.assertEqual([
+      ('1946', 'Karrawingi the Emu', 'Leslie Rees', 'winner'),
+      ('1946.01', 'The Inside Hedge Story', 'Gillian Barnett', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in older['entries']
+    ])
+    self.assertEqual([
+      ('2021', 'Dry to Dry: The Seasons of Kakadu', 'Pamela Freeman', 'winner'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in early['entries']
+    ])
+    self.assertTrue(any('Historical CBCA non-winner labels' in note for note in older['notes']))
+
+  def test_cbca_fetchers_filter_each_configured_category(self):
+    from parser.base import (
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+      CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+    )
+    from url_fetcher.cbca_book_of_the_year import (
+      UrlFetcherCBCABookOfTheYearEarlyChildhood,
+      UrlFetcherCBCABookOfTheYearEvePownall,
+      UrlFetcherCBCABookOfTheYearMiddleReaders,
+      UrlFetcherCBCABookOfTheYearNewIllustrator,
+      UrlFetcherCBCABookOfTheYearOlderReaders,
+      UrlFetcherCBCABookOfTheYearPictureBook,
+      UrlFetcherCBCABookOfTheYearYoungerReaders,
+    )
+
+    html = '''
+      <main>
+        <p>2027</p>
+        <h2>Older Readers</h2><p>Winner | Older Book, Older Author (Publisher)</p>
+        <h2>Younger Readers</h2><p>Winner | Younger Book, Younger Author (Publisher)</p>
+        <h2>Middle Readers</h2><p>Winner | Middle Book, Middle Author (Publisher)</p>
+        <h2>Early Childhood</h2><p>Winner | Early Book, Early Author (Publisher)</p>
+        <h2>Picture Book of the Year</h2><p>Winner | Picture Book, Picture Author (Publisher)</p>
+        <h2>Eve Pownall Award</h2><p>Winner | Eve Book, Eve Author (Publisher)</p>
+        <h2>New Illustrator</h2><p>Winner | Illustrator Book, Illustrator Author (Publisher)</p>
+      </main>
+    '''
+    fetchers = (
+      UrlFetcherCBCABookOfTheYearOlderReaders(),
+      UrlFetcherCBCABookOfTheYearYoungerReaders(),
+      UrlFetcherCBCABookOfTheYearMiddleReaders(),
+      UrlFetcherCBCABookOfTheYearEarlyChildhood(),
+      UrlFetcherCBCABookOfTheYearPictureBook(),
+      UrlFetcherCBCABookOfTheYearEvePownall(),
+      UrlFetcherCBCABookOfTheYearNewIllustrator(),
+    )
+
+    for fetcher in fetchers:
+      with self.subTest(fetcher=fetcher.source_id):
+        parsed = fetcher.parse(html, current_year=2027)
+        self.assertEqual([fetcher.CATEGORY], [
+          entry['category'] for entry in parsed['entries']
+        ])
+        filters = [item['label'] for item in fetcher.get_filter_list()]
+        self.assertIn(CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE, filters)
+        self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+        self.assertFalse(fetcher.options['match_series'])
+        self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+
+  def test_cbca_future_year_fetch_flow_tolerates_missing_winner_page(self):
+    from parser.cbca_book_of_the_year import (
+      AWARDS_URL, PDF_URL, shortlist_url, winners_url,
+    )
+    from url_fetcher.cbca_book_of_the_year import (
+      UrlFetcherCBCABookOfTheYearMiddleReaders,
+    )
+
+    fetcher = UrlFetcherCBCABookOfTheYearMiddleReaders()
+    archive_html = f'''
+      <main>
+        <a href="{PDF_URL}">Download a PDF of all prior winners</a>
+      </main>
+    '''
+    awards_html = '<main><a href="/2027-shortlist/">2027 Book of the Year Awards - Shortlist</a></main>'
+    shortlist_html = '''
+      <main>
+        <h1>2027 Book of the Year Awards - Shortlist</h1>
+        <h2>Middle Readers</h2>
+        <p>Future Middle Book, Future Author (Example Press)</p>
+      </main>
+    '''
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == PDF_URL:
+        return 'THE CHILDREN’S BOOK COUNCIL OF AUSTRALIA'
+      if url == AWARDS_URL:
+        return awards_html
+      if url == shortlist_url(2027):
+        return shortlist_html
+      if url == winners_url(2027):
+        raise RuntimeError('winner page not posted yet')
+      self.fail(url)
+
+    parsed = fetcher.parse(archive_html, fetch_url=fetch_url, current_year=2027)
+
+    self.assertEqual([
+      ('2027.01', 'Future Middle Book', 'Future Author', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertEqual([PDF_URL, AWARDS_URL, shortlist_url(2027), winners_url(2027)], fetched)
+    self.assertTrue(any('winner page not posted yet' in note for note in parsed['notes']))
+    self.assertTrue(any('shortlist rows only' in note for note in parsed['notes']))
+
+  def test_cbca_fetcher_metadata_and_registry_order(self):
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.cbca_book_of_the_year import (
+      UrlFetcherCBCABookOfTheYearEarlyChildhood,
+      UrlFetcherCBCABookOfTheYearEvePownall,
+      UrlFetcherCBCABookOfTheYearMiddleReaders,
+      UrlFetcherCBCABookOfTheYearNewIllustrator,
+      UrlFetcherCBCABookOfTheYearOlderReaders,
+      UrlFetcherCBCABookOfTheYearPictureBook,
+      UrlFetcherCBCABookOfTheYearYoungerReaders,
+    )
+
+    fetchers = (
+      UrlFetcherCBCABookOfTheYearOlderReaders(),
+      UrlFetcherCBCABookOfTheYearYoungerReaders(),
+      UrlFetcherCBCABookOfTheYearMiddleReaders(),
+      UrlFetcherCBCABookOfTheYearEarlyChildhood(),
+      UrlFetcherCBCABookOfTheYearPictureBook(),
+      UrlFetcherCBCABookOfTheYearEvePownall(),
+      UrlFetcherCBCABookOfTheYearNewIllustrator(),
+    )
+
+    self.assertEqual([
+      'cbca_book_of_the_year_older_readers',
+      'cbca_book_of_the_year_younger_readers',
+      'cbca_book_of_the_year_middle_readers',
+      'cbca_book_of_the_year_early_childhood',
+      'cbca_book_of_the_year_picture_book',
+      'cbca_book_of_the_year_eve_pownall',
+      'cbca_book_of_the_year_new_illustrator',
+    ], [fetcher.source_id for fetcher in fetchers])
+    self.assertEqual(list(range(264, 271)), [fetcher.order for fetcher in fetchers])
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    for fetcher in fetchers:
+      self.assertIn(fetcher.source_id, registry_ids)
+    self.assertLess(
+      registry_ids.index('john_newbery_medal'),
+      registry_ids.index('cbca_book_of_the_year_older_readers'))
+    self.assertLess(
+      registry_ids.index('cbca_book_of_the_year_new_illustrator'),
+      registry_ids.index('writers_trust_atwood_gibson_fiction'))
 
   def test_goodreads_series_source_matches_relaxed_local_series_name(self):
     core = object.__new__(main.ListSwitchboardCore)
@@ -3371,6 +4954,118 @@ class AwardParserSmokeTest(unittest.TestCase):
       entry['title'] for entry in parsed['entries']
     ])
 
+  def test_governor_general_young_peoples_fetchers_parse_language_buckets(self):
+    from parser.base import (
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+      CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+    )
+    from url_fetcher.governor_general import (
+      UrlFetcherGovernorGeneralEnglishYoungPeoplesIllustratedBooks,
+      UrlFetcherGovernorGeneralFrenchYoungPeoplesText,
+    )
+
+    data = json.dumps({
+      '2024': {
+        'youngPeoplesLiteratureText': {
+          'en': {'finalists': [{
+            'title': 'Crash Landing',
+            'author': 'Li Charmaine Anne',
+            'winner': True,
+          }]},
+          'fr': {'finalists': [{
+            'title': 'Une bulle en dehors du temps',
+            'author': 'Stefani Meunier',
+            'winner': True,
+          }, {
+            'title': 'Carreaute Kid',
+            'author': 'Marc-Andre Dufour-Labbe',
+            'winner': False,
+          }]},
+        },
+        'youngPeoplesLiteratureIllustratedBooks': {
+          'en': {'finalists': [{
+            'title': 'This Land Is a Lullaby',
+            'author': 'Tonya Simpson, Delree Dumont',
+            'winner': True,
+          }]},
+          'fr': {'finalists': [{
+            'title': 'Le premier arbre de Noel',
+            'author': 'Ovila Fontaine, Charlotte Parent',
+            'winner': True,
+          }]},
+        },
+      },
+    })
+
+    french_text = UrlFetcherGovernorGeneralFrenchYoungPeoplesText()
+    english_illustrated = UrlFetcherGovernorGeneralEnglishYoungPeoplesIllustratedBooks()
+
+    parsed_text = french_text.parse(data)
+    parsed_illustrated = english_illustrated.parse(data)
+    filters = [item['label'] for item in french_text.get_filter_list()]
+
+    self.assertEqual([
+      ('2024', 'Une bulle en dehors du temps', 'Stefani Meunier', 'winner'),
+      ('2024.01', 'Carreaute Kid', 'Marc-Andre Dufour-Labbe', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed_text['entries']
+    ])
+    self.assertEqual(['This Land Is a Lullaby'], [
+      entry['title'] for entry in parsed_illustrated['entries']
+    ])
+    self.assertTrue(all(
+      entry['category'] == "French Young People's Literature - Text"
+      for entry in parsed_text['entries']))
+    self.assertIn(CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE, filters)
+    self.assertIn(CATEGORY_REGIONAL_NATIONAL_AWARDS, filters)
+    self.assertFalse(french_text.options['match_series'])
+
+  def test_governor_general_supplement_parses_annual_language_tables(self):
+    from parser.governor_general import GovernorGeneralSupplementParser
+
+    html = '''
+      <h2>English</h2>
+      <table>
+        <tr><th>Category</th><th>Winner</th><th>Nominated</th></tr>
+        <tr>
+          <td>Children's illustration</td>
+          <td>Tonya Simpson and Delree Dumont, This Land Is a Lullaby</td>
+          <td>Guojing, Oasis<br />Sid Sharp, Bog Myrtle</td>
+        </tr>
+      </table>
+      <h2>French</h2>
+      <table>
+        <tr><th>Category</th><th>Winner</th><th>Nominated</th></tr>
+        <tr>
+          <td>Children's illustration</td>
+          <td>Stephane Laporte and Jacques Goldstyn, Un cadeau de Noel en novembre</td>
+          <td>Jocelyn Boisvert and Enzo, Le livre aspirateur<br />Charlotte Parent, Murielle et le mystere</td>
+        </tr>
+      </table>
+    '''
+
+    parsed = GovernorGeneralSupplementParser(
+      "French Young People's Literature - Illustrated Books",
+      ('youngPeoplesLiteratureIllustratedBooks',),
+      'fr').parse(
+        html,
+        'https://en.wikipedia.org/wiki/2025_Governor_General%27s_Awards',
+        "Governor General's Literary Award - French Young People's Literature - Illustrated Books",
+        year='2025')
+
+    self.assertEqual([
+      ('2025', 'Un cadeau de Noel en novembre', 'Stephane Laporte and Jacques Goldstyn', 'winner'),
+      ('2025.01', 'Le livre aspirateur', 'Jocelyn Boisvert and Enzo', 'shortlisted'),
+      ('2025.02', 'Murielle et le mystere', 'Charlotte Parent', 'shortlisted'),
+    ], [
+      (entry['position'], entry['title'], entry['author'], entry['result'])
+      for entry in parsed['entries']
+    ])
+    self.assertTrue(all(
+      entry['category'] == "French Young People's Literature - Illustrated Books"
+      for entry in parsed['entries']))
+
   def test_giller_wikipedia_parser_imports_winners_and_shortlists_only(self):
     from parser.giller import GillerWikipediaParser
 
@@ -5539,7 +7234,7 @@ were ''[[Go Deep]]'' by [[Rilzy Adams]].
     self.assertLess(
       registry_ids.index('romantic_times_reviewers_choice_romance'),
       registry_ids.index('writers_trust_atwood_gibson_fiction'))
-    self.assertEqual(290, len(registry_ids))
+    self.assertEqual(336, len(registry_ids))
 
   def test_lambda_literary_awards_parser_reads_directory_and_current_shortlists(self):
     from parser.lambda_literary_awards import (
