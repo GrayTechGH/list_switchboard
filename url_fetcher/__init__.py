@@ -454,6 +454,36 @@ from .british_fantasy import (
   UrlFetcherBritishFantasyNonfiction,
   UrlFetcherBritishFantasyNovella,
 )
+from .international_horror_guild import (
+  UrlFetcherInternationalHorrorGuildAnthology,
+  UrlFetcherInternationalHorrorGuildCollection,
+  UrlFetcherInternationalHorrorGuildFirstNovel,
+  UrlFetcherInternationalHorrorGuildIllustratedNarrative,
+  UrlFetcherInternationalHorrorGuildLongFiction,
+  UrlFetcherInternationalHorrorGuildMidLengthFiction,
+  UrlFetcherInternationalHorrorGuildNonfiction,
+  UrlFetcherInternationalHorrorGuildNovel,
+)
+from .australasian_shadows import (
+  UrlFetcherAustralasianShadowsCollectedWork,
+  UrlFetcherAustralasianShadowsEditedWork,
+  UrlFetcherAustralasianShadowsGraphicNovel,
+  UrlFetcherAustralasianShadowsLongFiction,
+  UrlFetcherAustralasianShadowsNonfiction,
+  UrlFetcherAustralasianShadowsNovel,
+)
+from .this_is_horror import (
+  UrlFetcherThisIsHorrorAnthology,
+  UrlFetcherThisIsHorrorNovel,
+  UrlFetcherThisIsHorrorNovella,
+  UrlFetcherThisIsHorrorShortStoryCollection,
+)
+from .splatterpunk import (
+  UrlFetcherSplatterpunkAnthology,
+  UrlFetcherSplatterpunkCollection,
+  UrlFetcherSplatterpunkNovel,
+  UrlFetcherSplatterpunkNovella,
+)
 
 
 URL_FETCHER_CLASSES = (
@@ -503,6 +533,28 @@ URL_FETCHER_CLASSES = (
   UrlFetcherBritishFantasyAnthology,
   UrlFetcherBritishFantasyCollection,
   UrlFetcherBritishFantasyNonfiction,
+  UrlFetcherInternationalHorrorGuildNovel,
+  UrlFetcherInternationalHorrorGuildFirstNovel,
+  UrlFetcherInternationalHorrorGuildLongFiction,
+  UrlFetcherInternationalHorrorGuildMidLengthFiction,
+  UrlFetcherInternationalHorrorGuildCollection,
+  UrlFetcherInternationalHorrorGuildAnthology,
+  UrlFetcherInternationalHorrorGuildNonfiction,
+  UrlFetcherInternationalHorrorGuildIllustratedNarrative,
+  UrlFetcherAustralasianShadowsNovel,
+  UrlFetcherAustralasianShadowsLongFiction,
+  UrlFetcherAustralasianShadowsCollectedWork,
+  UrlFetcherAustralasianShadowsEditedWork,
+  UrlFetcherAustralasianShadowsGraphicNovel,
+  UrlFetcherAustralasianShadowsNonfiction,
+  UrlFetcherThisIsHorrorNovel,
+  UrlFetcherThisIsHorrorNovella,
+  UrlFetcherThisIsHorrorShortStoryCollection,
+  UrlFetcherThisIsHorrorAnthology,
+  UrlFetcherSplatterpunkNovel,
+  UrlFetcherSplatterpunkNovella,
+  UrlFetcherSplatterpunkCollection,
+  UrlFetcherSplatterpunkAnthology,
   UrlFetcherArthurCClarkeAwardNovel,
   UrlFetcherBSFANovel,
   UrlFetcherBSFAShorterFiction,
