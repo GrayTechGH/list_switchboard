@@ -8,6 +8,8 @@ Maintenance notes:
 - Goodreads is the runtime source for this recipe family. The yearly overview
   pages discover category result pages, and category pages expose winners plus
   an "All Nominees" card stream.
+- The modern `best-books-YYYY` overview URL pattern starts with 2011; the 2009
+  and 2010 overview pages are not available at that path and are not fetched.
 - Wikipedia is useful as category-history reference only; it is winner-focused
   and should not be wired as a replacement fallback for nominee-complete imports.
 - Visible import labels may mark discontinued categories, but parsed award
@@ -35,7 +37,7 @@ except ImportError:
 
 
 AWARD_NAME = 'Goodreads Choice Awards'
-FIRST_AWARD_YEAR = 2009
+FIRST_OVERVIEW_YEAR = 2011
 CHOICE_AWARDS_URL = 'https://www.goodreads.com/choiceawards'
 OVERVIEW_URL_TEMPLATE = 'https://www.goodreads.com/choiceawards/best-books-{year}'
 
@@ -46,7 +48,7 @@ def goodreads_choice_overview_url(year):
 
 def goodreads_choice_candidate_years(today=None):
   today = today or date.today()
-  return range(FIRST_AWARD_YEAR, today.year + 1)
+  return range(FIRST_OVERVIEW_YEAR, today.year + 1)
 
 
 def category_key(value):
@@ -236,8 +238,9 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
       parsed = self.book_from_image(image, page_url)
       if parsed is None:
         continue
+      card = self.card_for_image(image)
       node_index = self.node_index(nodes, image)
-      result = self.result_for_node_index(node_index, winner_marker, nominee_marker, rows)
+      result = self.result_for_card(card, node_index, winner_marker, nominee_marker, rows)
       rows.append(self.row(
         year,
         parsed['title'],
@@ -262,6 +265,22 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
       return nodes.index(target)
     except ValueError:
       return len(nodes)
+
+  def result_for_card(self, card, node_index, winner_marker, nominee_marker, rows):
+    if self.card_has_winner_label(card):
+      return RESULT_WINNER
+    return self.result_for_node_index(node_index, winner_marker, nominee_marker, rows)
+
+  def card_has_winner_label(self, card):
+    if card is None:
+      return False
+    for text_node in card.find_all(string=True):
+      text = normalize_line(str(text_node))
+      if re.match(r'^WINNER\b', text) or re.search(
+          r'\bWINNER\s+\d[\d,]*(?:\s*&\s*\d{3})?\s+votes?\b',
+          text):
+        return True
+    return False
 
   def result_for_node_index(self, node_index, winner_marker, nominee_marker, rows):
     if winner_marker is None:
@@ -328,13 +347,54 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
       urljoin(page_url, title_link.get('href') or ''))
 
   def clean_author_text_from_card(self, card, author_links):
-    text = self.clean_text(card)
-    by_match = re.search(r'\bby\s+(.+?)(?:\s{2,}|$)', text, re.I)
-    if by_match is not None:
-      author = self.clean_author(by_match.group(1))
-      if author:
-        return author
-    return self.clean_author(', '.join(self.clean_text(link) for link in author_links))
+    for container in self.author_text_containers(author_links):
+      text = self.clean_text(container)
+      if not self.safe_author_line(text):
+        continue
+      by_match = re.search(r'\bby\s+(.+)$', text, re.I)
+      if by_match is not None:
+        author = self.clean_author(by_match.group(1))
+        if author:
+          return author
+    fallback_authors = []
+    seen = set()
+    for link in author_links:
+      text = self.clean_text(link)
+      key = normalize_heading(text)
+      if text and key not in seen:
+        seen.add(key)
+        fallback_authors.append(text)
+    return self.clean_author(', '.join(fallback_authors))
+
+  def author_text_containers(self, author_links):
+    seen = set()
+    for link in author_links:
+      current = link
+      for _level in range(4):
+        if current is None:
+          break
+        marker = id(current)
+        if marker not in seen:
+          seen.add(marker)
+          yield current
+        current = current.parent
+
+  def safe_author_line(self, text):
+    if not text or len(text) > 300:
+      return False
+    if not re.search(r'\bby\s+', text, re.I):
+      return False
+    key = normalize_heading(text)
+    return not any(phrase in key for phrase in (
+      'problem',
+      'return to book page',
+      'not the book you re looking for',
+      'preview',
+      'winner',
+      'votes',
+      'want to read',
+      'more',
+    ))
 
   def link_text_noise(self, value):
     key = normalize_heading(value)

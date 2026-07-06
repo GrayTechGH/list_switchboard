@@ -484,6 +484,16 @@ from .splatterpunk import (
   UrlFetcherSplatterpunkNovel,
   UrlFetcherSplatterpunkNovella,
 )
+from .ladies_of_horror_fiction import (
+  UrlFetcherLadiesOfHorrorFictionCollection,
+  UrlFetcherLadiesOfHorrorFictionDebut,
+  UrlFetcherLadiesOfHorrorFictionGraphicNovel,
+  UrlFetcherLadiesOfHorrorFictionMiddleGrade,
+  UrlFetcherLadiesOfHorrorFictionNovel,
+  UrlFetcherLadiesOfHorrorFictionNovella,
+  UrlFetcherLadiesOfHorrorFictionPoetryCollection,
+  UrlFetcherLadiesOfHorrorFictionYoungAdult,
+)
 
 
 URL_FETCHER_CLASSES = (
@@ -555,6 +565,14 @@ URL_FETCHER_CLASSES = (
   UrlFetcherSplatterpunkNovella,
   UrlFetcherSplatterpunkCollection,
   UrlFetcherSplatterpunkAnthology,
+  UrlFetcherLadiesOfHorrorFictionNovel,
+  UrlFetcherLadiesOfHorrorFictionNovella,
+  UrlFetcherLadiesOfHorrorFictionCollection,
+  UrlFetcherLadiesOfHorrorFictionDebut,
+  UrlFetcherLadiesOfHorrorFictionYoungAdult,
+  UrlFetcherLadiesOfHorrorFictionMiddleGrade,
+  UrlFetcherLadiesOfHorrorFictionPoetryCollection,
+  UrlFetcherLadiesOfHorrorFictionGraphicNovel,
   UrlFetcherArthurCClarkeAwardNovel,
   UrlFetcherBSFANovel,
   UrlFetcherBSFAShorterFiction,
