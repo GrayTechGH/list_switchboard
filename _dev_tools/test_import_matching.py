@@ -488,6 +488,246 @@ class ImportMatchingTest(unittest.TestCase):
        ('190.03', 'She Who Became the Sun'), ('190.04', 'The Adventures of Amina-al-Sirafi')],
       [(entry['position'], entry['title']) for entry in nominations])
 
+  def test_general_audience_book_club_parsers_preserve_main_scope(self):
+    from parser.oprah_book_club import OprahBookClubParser
+    from parser.reese_book_club import ReeseBookClubParser
+    from parser.read_with_jenna import ReadWithJennaParser
+    from parser.gma_book_club import GMABookClubParser
+
+    oprah = OprahBookClubParser().parse('''
+      <article class="book-card" data-title="Little Wonder" data-author="Sophie Chen Keller"
+          data-year="2026" data-month="6" data-rank="124" data-label="124">
+        Oprah's Book Club pick 124
+      </article>
+      <article class="book-card" data-title="A New Earth" data-author="Eckhart Tolle"
+          data-year="2025" data-month="1" data-rank="110">
+        reread nonfiction picked the same book twice
+      </article>
+    ''', 'https://www.oprahdaily.com/books/')
+    self.assertEqual(['A New Earth', 'Little Wonder'], [entry['title'] for entry in oprah['entries']])
+    self.assertEqual('reread_pick', oprah['entries'][0]['selection_type'])
+    self.assertEqual('starbucks_primary', oprah['entries'][1]['club_scope'])
+    self.assertFalse(oprah['match_series'])
+
+    reese = ReeseBookClubParser().parse('''
+      <article class="pick-card" data-title="A Founding Mother"
+          data-author="Stephanie Dray and Laura Kamoie" data-label="July '26 Pick"></article>
+      <article class="pick-card" data-title="Twelfth Knight"
+          data-author="Alexene Farol Follmuth" data-label="Summer '24 YA Pick"></article>
+      <article class="pick-card" data-title="Gone Before Goodbye"
+          data-author="Reese Witherspoon and Harlan Coben" data-label="October '25 Pick"></article>
+    ''', 'https://reesesbookclub.com/our-picks/')
+    self.assertEqual(['A Founding Mother'], [entry['title'] for entry in reese['entries']])
+    self.assertEqual('7', reese['entries'][0]['selection_month'])
+    self.assertEqual('2026', reese['entries'][0]['selection_year'])
+
+    jenna = ReadWithJennaParser().parse('''
+      <article class="selection-card" data-title="The Comeback" data-author="Ella Berman"
+          data-year="2020" data-month="8" data-label="August 2020 pick A"></article>
+      <article class="selection-card" data-title="Here for It" data-author="R. Eric Thomas"
+          data-year="2020" data-month="8" data-label="August 2020 pick B">essay collection</article>
+      <article class="selection-card" data-title="Kids Book" data-author="Someone"
+          data-label="Read With Jenna Jr."></article>
+    ''', 'https://www.today.com/shop/read-jenna')
+    self.assertEqual(['The Comeback', 'Here for It'], [entry['title'] for entry in jenna['entries']])
+    self.assertEqual('special_pick', jenna['entries'][1]['selection_type'])
+    self.assertEqual('essay_collection', jenna['entries'][1]['scope_flags'])
+
+    gma = GMABookClubParser().parse('''
+      <article class="book-card" data-title="Dolly All the Time"
+          data-author="Annabel Monaghan" data-label="June 2026"></article>
+      <article class="book-card" data-title="Goldenborn"
+          data-author="Ama Ofosua Lieb" data-label="June 2026 YA">YA pick</article>
+    ''', 'https://www.goodmorningamerica.com/bookclub')
+    self.assertEqual(['Dolly All the Time'], [entry['title'] for entry in gma['entries']])
+
+  def test_general_audience_book_club_parsers_handle_contest_lists_and_fragile_sources(self):
+    from parser.canada_reads import CanadaReadsParser
+    from parser.library_reads import LibraryReadsParser
+    from parser.barnes_noble_book_club import BarnesNobleBookClubParser
+    from parser.service95_book_club import Service95BookClubParser
+    from parser.richard_judy_book_club import RichardJudyBookClubParser
+
+    canada = CanadaReadsParser().parse('''
+      <article class="contender" data-title="The Cure for Drowning" data-author="Loghan Paylor"
+          data-year="2026" data-defender="Tegan Quin">2026 contender</article>
+      <article class="contender" data-title="A Minor Chorus" data-author="Billy-Ray Belcourt"
+          data-year="2026" data-defender="Elle-Maija Tailfeathers">2026 contender</article>
+      <article class="contender" data-title="The Cure for Drowning" data-author="Loghan Paylor"
+          data-year="2026" data-defender="Tegan Quin">2026 winner</article>
+    ''', 'https://www.cbc.ca/books/canadareads')
+    self.assertEqual(2, len(canada['entries']))
+    winner = [entry for entry in canada['entries'] if entry['title'] == 'The Cure for Drowning'][0]
+    self.assertEqual('winner', winner['selection_type'])
+    self.assertEqual('Tegan Quin', winner['advocate_defender_host_selector'])
+
+    library_reads = LibraryReadsParser().parse('''
+      <table>
+        <tr><th>Month</th><th>Title</th><th>Author</th><th>Type</th></tr>
+        <tr><td>February 2026</td><td>Kin</td><td>Tayari Jones</td><td>monthly list</td></tr>
+        <tr><td>February 2026</td><td>Good People</td><td>Patmeena Sabit</td><td>Bonus pick</td></tr>
+      </table>
+    ''', 'https://libraryreads.org/archive')
+    self.assertEqual(['Kin'], [entry['title'] for entry in library_reads['entries']])
+    self.assertEqual('staff_pick', library_reads['entries'][0]['selection_type'])
+
+    library_archive = LibraryReadsParser().parse('''
+      <h1>Archive</h1>
+      <h2>Click for the sortable text list of all past titles</h2>
+      <h3>2026</h3>
+      <a href="/wp-content/uploads/2026/01/February26.pdf">February</a>
+    ''', 'https://libraryreads.org/archive', fetch_url=lambda url: '''Month,"Author (Last, First)",Title,Publisher,ISBN,Pub Date,Top Pick,HoF,Debut,Bonus Pick,Book Clubs,Genre,Annotation,Nominator/Library
+2026/2,"Dinniman, Matt",Operation Bounce House,Ace,9780000000001,2/3/2026,X,,,,,Science Fiction,"",LibraryReads
+2026/2,"Jones, Tayari",Kin: A Novel,Knopf,9780000000002,2/3/2026,,,,,,General Fiction,"",LibraryReads
+2026/2,"Fawcett, Heather",Agnes Aubert's Mystical Cat Shelter,Del Rey,9780000000003,2/3/2026,,X,,,,Fantasy,Hall of Fame Author,
+2026/2,"Sabit, Patmeena",Good People: A Novel,Crown,9780000000004,2/3/2026,,,,X,,General Fiction,"",LibraryReads
+''')
+    self.assertEqual(['Operation Bounce House', 'Kin: A Novel'], [
+      entry['title'] for entry in library_archive['entries']])
+    self.assertEqual(['top_pick', 'staff_pick'], [
+      entry['selection_type'] for entry in library_archive['entries']])
+    self.assertEqual('Matt Dinniman', library_archive['entries'][0]['author'])
+    self.assertEqual('February 2026', library_archive['entries'][0]['selection_label'])
+    self.assertTrue(any('official public archive spreadsheet' in note for note in library_archive['notes']))
+
+    barnes = BarnesNobleBookClubParser().parse('''
+      <article class="post-card" data-title="Florence Adler Swims Forever"
+          data-author="Rachel Beanland" data-label="July 2020">
+        Our July B&N Book Club Pick
+      </article>
+      <article class="post-card" data-title="A General Monthly Pick" data-author="A. Writer">
+        Our monthly picks and Discover Prize news
+      </article>
+    ''', 'https://www.barnesandnoble.com/blog/')
+    self.assertEqual(['Florence Adler Swims Forever'], [entry['title'] for entry in barnes['entries']])
+    self.assertTrue(barnes['notes'])
+
+    service95 = Service95BookClubParser().parse('''
+      <article class="monthly-read" data-title="Bad Feminist" data-author="Roxane Gay"
+          data-label="March 2026">essay collection nonfiction monthly read</article>
+    ''', 'https://www.service95.com/book-club')
+    self.assertEqual('Dua Lipa', service95['entries'][0]['advocate_defender_host_selector'])
+    self.assertEqual('essay_collection, nonfiction', service95['entries'][0]['scope_flags'])
+
+    richard_judy = RichardJudyBookClubParser().parse('''
+      <article class="campaign-card" data-title="Summer Island" data-author="Kristin Hannah"
+          data-year="2026">latest pick set current campaign</article>
+      <article class="archive-card" data-title="Undated Archive Book" data-author="A. Writer">
+        archive product card
+      </article>
+    ''', 'https://www.tgjonesonline.co.uk/books/book-club')
+    self.assertEqual(['Summer Island'], [entry['title'] for entry in richard_judy['entries']])
+    self.assertEqual('seasonal_pick', richard_judy['entries'][0]['selection_type'])
+
+  def test_general_audience_book_club_parsers_handle_live_page_shapes(self):
+    from parser.oprah_book_club import OprahBookClubParser
+    from parser.reese_book_club import ReeseBookClubParser
+    from parser.read_with_jenna import ReadWithJennaParser
+    from parser.gma_book_club import GMABookClubParser
+    from parser.service95_book_club import Service95BookClubParser
+    from parser.richard_judy_book_club import RichardJudyBookClubParser
+
+    oprah = OprahBookClubParser().parse('''
+      <p>124</p>
+      <a href="/entertainment/books/a651/little-wonder/">Little Wonder, by Sophie Chen Keller</a>
+      <p>123</p>
+      <a href="/entertainment/books/a650/john-of-john/">John of John, by Douglas Stuart</a>
+    ''', 'https://www.oprahdaily.com/entertainment/books/g23067476/oprah-book-club-list/')
+    self.assertEqual(['John of John', 'Little Wonder'], [entry['title'] for entry in oprah['entries']])
+    self.assertEqual('123', oprah['entries'][0]['selection_label'])
+    self.assertEqual(
+      'https://www.oprahdaily.com/entertainment/books/a651/little-wonder/',
+      oprah['entries'][1]['source_url'])
+
+    reese = ReeseBookClubParser().parse('''
+      <p>Image: A Founding Mother</p>
+      <p>July \u201926 Pick</p>
+      <h2><a href="/picks/a-founding-mother">A Founding Mother</a></h2>
+      <p>by Stephanie Dray and Laura Kamoie</p>
+      <p>Image: Twelfth Knight</p>
+      <p>Summer \u201924 YA Pick</p>
+      <h2>Twelfth Knight</h2>
+      <p>by Alexene Farol Follmuth</p>
+    ''', 'https://reesesbookclub.com/our-picks/')
+    self.assertEqual(['A Founding Mother'], [entry['title'] for entry in reese['entries']])
+    self.assertEqual('2026', reese['entries'][0]['selection_year'])
+    self.assertEqual('7', reese['entries'][0]['selection_month'])
+    self.assertEqual('https://reesesbookclub.com/picks/a-founding-mother', reese['entries'][0]['source_url'])
+
+    jenna = ReadWithJennaParser().parse('''
+      <h2>July 2026</h2>
+      <h3><a href="/shop/shampoo-effect">"The Shampoo Effect" by Jenny Jackson</a></h3>
+      <h2>June 2026</h2>
+      <h3>"The Children" by Melissa Albert</h3>
+    ''', 'https://www.today.com/shop/read-jenna-book-club-list-today-s-jenna-bush-hager-t164652')
+    self.assertEqual(['The Children', 'The Shampoo Effect'], [entry['title'] for entry in jenna['entries']])
+    self.assertEqual('6', jenna['entries'][0]['selection_month'])
+
+    gma = GMABookClubParser().parse('''
+      <p>June 2026</p>
+      <h3><a href="/culture/story/dolly">Dolly All the Time: A GMA Book Club Pick by Annabel Monaghan</a></h3>
+      <p>May 2026</p>
+      <h3>Homebound by Portia Elan</h3>
+    ''', 'https://www.goodmorningamerica.com/culture/story/shop-gma-book-club-picks-list--81520726')
+    self.assertEqual(['Homebound', 'Dolly All the Time'], [entry['title'] for entry in gma['entries']])
+    self.assertEqual('Annabel Monaghan', gma['entries'][1]['author'])
+
+    service95 = Service95BookClubParser().parse('''
+      <img alt="Read Having Spent Life Seeking by Kae Tempest - Dua's Monthly Read for July 2026">
+    ''', 'https://www.service95.com/book-club')
+    self.assertEqual('Having Spent Life Seeking', service95['entries'][0]['title'])
+    self.assertEqual('Kae Tempest', service95['entries'][0]['author'])
+    self.assertEqual('Dua Lipa', service95['entries'][0]['advocate_defender_host_selector'])
+
+    richard_judy = RichardJudyBookClubParser().parse('''
+      <p>The latest picks include; 'The Housemaid' by Freida McFadden,
+      'The Family Upstairs' by Lisa Jewell and 'Summer Island' by Kristin Hannah.</p>
+    ''', 'https://www.tgjonesonline.co.uk/books/book-club')
+    self.assertEqual(
+      ['The Housemaid', 'The Family Upstairs', 'Summer Island'],
+      [entry['title'] for entry in richard_judy['entries']])
+
+  def test_general_audience_book_club_fetchers_metadata_and_registry(self):
+    from parser.base import CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS
+    from url_fetcher import available_url_fetchers
+
+    fetchers = available_url_fetchers()
+    by_id = {fetcher.source_id: fetcher for fetcher in fetchers}
+    expected_ids = (
+      'oprah_book_club',
+      'reese_book_club',
+      'read_with_jenna',
+      'gma_book_club',
+      'canada_reads',
+      'library_reads',
+      'barnes_noble_book_club',
+      'service95_book_club',
+      'richard_judy_book_club',
+    )
+    for source_id in expected_ids:
+      self.assertIn(source_id, by_id)
+      self.assertFalse(by_id[source_id].options['match_series'])
+      self.assertIn(
+        CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS,
+        [item['label'] for item in by_id[source_id].get_filter_list()])
+
+    registry_ids = [fetcher.source_id for fetcher in fetchers]
+    self.assertLess(
+      registry_ids.index('sword_and_laser_book_list'),
+      registry_ids.index('oprah_book_club'))
+    self.assertLess(
+      registry_ids.index('richard_judy_book_club'),
+      registry_ids.index('hugo_awards_novel'))
+
+    library_parsed = by_id['library_reads'].parse('''
+      <h1>Archive</h1>
+      <h2>Click for the sortable text list of all past titles</h2>
+    ''', fetch_url=lambda url: '''Month,"Author (Last, First)",Title,Publisher,ISBN,Pub Date,Top Pick,HoF,Debut,Bonus Pick,Book Clubs,Genre,Annotation,Nominator/Library
+2026/7,"Rimmer, Kelly",The Story Keeper,MIRA,9781525805110,7/21/2026,X,,,,X,Historical Fiction,"",LibraryReads
+''')
+    self.assertEqual(['The Story Keeper'], [entry['title'] for entry in library_parsed['entries']])
+    self.assertEqual('top_pick', library_parsed['entries'][0]['selection_type'])
+
   def test_legacy_json_recipe_folder_is_removed(self):
     self.assertFalse((ROOT / 'recipes').exists())
 
@@ -503,7 +743,7 @@ class ImportMatchingTest(unittest.TestCase):
       'r/Fantasy Top Self-Published Novels 2024',
       'Sword and Laser',
     ], names[:4])
-    self.assertEqual(373, len(names))
+    self.assertEqual(382, len(names))
     self.assertIn('Theakston Old Peculier Crime Novel of the Year', names)
     self.assertIn('Hammett Prize', names)
     self.assertIn('Nero Award', names)
@@ -1922,7 +2162,7 @@ class ImportMatchingTest(unittest.TestCase):
       'r_fantasy_top_self_published_novels_2024',
       'sword_and_laser_book_list',
     ], source_ids[:4])
-    self.assertEqual(373, len(source_ids))
+    self.assertEqual(382, len(source_ids))
     self.assertIn('hammett_prize', source_ids)
     self.assertIn('nero_award', source_ids)
     self.assertIn('strand_critics_award_mystery_novel', source_ids)
@@ -8634,7 +8874,7 @@ were ''[[Go Deep]]'' by [[Rilzy Adams]].
     self.assertLess(
       registry_ids.index('romantic_times_reviewers_choice_romance'),
       registry_ids.index('writers_trust_atwood_gibson_fiction'))
-    self.assertEqual(373, len(registry_ids))
+    self.assertEqual(382, len(registry_ids))
 
   def test_lambda_literary_awards_parser_reads_directory_and_current_shortlists(self):
     from parser.lambda_literary_awards import (

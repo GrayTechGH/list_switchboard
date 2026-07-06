@@ -296,6 +296,15 @@ from .seiun import (
   UrlFetcherSeiunNonfiction,
 )
 from .sword_and_laser import UrlFetcherSwordAndLaser
+from .oprah_book_club import UrlFetcherOprahBookClub
+from .reese_book_club import UrlFetcherReeseBookClub
+from .read_with_jenna import UrlFetcherReadWithJenna
+from .gma_book_club import UrlFetcherGMABookClub
+from .canada_reads import UrlFetcherCanadaReads
+from .library_reads import UrlFetcherLibraryReads
+from .barnes_noble_book_club import UrlFetcherBarnesNobleBookClub
+from .service95_book_club import UrlFetcherService95BookClub
+from .richard_judy_book_club import UrlFetcherRichardJudyBookClub
 from .aurora import (
   UrlFetcherAuroraGraphicNovel,
   UrlFetcherAuroraNoveletteNovella,
@@ -501,6 +510,15 @@ URL_FETCHER_CLASSES = (
   UrlFetcherRFantasyTopStandaloneNovels2024,
   UrlFetcherRFantasyTopSelfPublishedNovels2024,
   UrlFetcherSwordAndLaser,
+  UrlFetcherOprahBookClub,
+  UrlFetcherReeseBookClub,
+  UrlFetcherReadWithJenna,
+  UrlFetcherGMABookClub,
+  UrlFetcherCanadaReads,
+  UrlFetcherLibraryReads,
+  UrlFetcherBarnesNobleBookClub,
+  UrlFetcherService95BookClub,
+  UrlFetcherRichardJudyBookClub,
   UrlFetcherHugoAwardsNovel,
   UrlFetcherHugoAwardsNovella,
   UrlFetcherHugoAwardsSeries,
