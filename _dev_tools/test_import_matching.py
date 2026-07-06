@@ -503,7 +503,7 @@ class ImportMatchingTest(unittest.TestCase):
       'r/Fantasy Top Self-Published Novels 2024',
       'Sword and Laser',
     ], names[:4])
-    self.assertEqual(336, len(names))
+    self.assertEqual(373, len(names))
     self.assertIn('Theakston Old Peculier Crime Novel of the Year', names)
     self.assertIn('Hammett Prize', names)
     self.assertIn('Nero Award', names)
@@ -624,6 +624,19 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertIn('CBCA Book of the Year - New Illustrator', names)
     self.assertIn("Writers' Trust - Atwood Gibson Fiction Prize", names)
     self.assertIn("Writers' Trust - Hilary Weston Nonfiction Prize", names)
+    self.assertIn('British Fantasy - Horror Novel', names)
+    self.assertIn('British Fantasy - Fantasy Novel', names)
+    self.assertIn('British Fantasy - Best Novel (pre-2012 August Derleth)', names)
+    self.assertIn('International Horror Guild - Novel', names)
+    self.assertIn('International Horror Guild - Illustrated Narrative', names)
+    self.assertIn('Australasian Shadows - Novel', names)
+    self.assertIn('Australasian Shadows - Non-Fiction', names)
+    self.assertIn('This Is Horror - Novel', names)
+    self.assertIn('This Is Horror - Anthology', names)
+    self.assertIn('Splatterpunk - Novel', names)
+    self.assertIn('Splatterpunk - Anthology', names)
+    self.assertIn('Ladies of Horror Fiction - Novel', names)
+    self.assertIn('Ladies of Horror Fiction - Graphic Novel', names)
 
   def test_core_can_discover_recipes_before_gui_current_db_exists(self):
     class StartupGui:
@@ -633,6 +646,1268 @@ class ImportMatchingTest(unittest.TestCase):
     names = [recipe.NAME for recipe in core.available_import_recipes()]
 
     self.assertIn('r/Fantasy Top Novels 2025', names)
+
+  def test_world_fantasy_fetchers_are_available_under_fantasy_and_horror(self):
+    from parser.base import CATEGORY_FANTASY, CATEGORY_HORROR_DARK_FICTION
+    from url_fetcher import available_url_fetchers
+
+    expected_ids = {
+      'world_fantasy_novel',
+      'world_fantasy_novella',
+      'world_fantasy_anthology',
+      'world_fantasy_collection',
+      'world_fantasy_collection_anthology',
+    }
+    fetchers = [
+      fetcher for fetcher in available_url_fetchers()
+      if fetcher.source_id in expected_ids
+    ]
+
+    self.assertEqual(expected_ids, {fetcher.source_id for fetcher in fetchers})
+    for fetcher in fetchers:
+      filters = [item['label'] for item in fetcher.get_filter_list()]
+      self.assertIn(CATEGORY_FANTASY, filters)
+      self.assertIn(CATEGORY_HORROR_DARK_FICTION, filters)
+
+  def test_british_fantasy_parser_merges_official_and_sfadb_shortlists(self):
+    from parser.british_fantasy import (
+      BFS_WINNERS_URL, BritishFantasyParser, SFADB_URL,
+    )
+
+    parser = BritishFantasyParser()
+    winners_html = '''
+      <h1>BFA Winners</h1>
+      <p>2025</p>
+      <ul>
+        <li>The August Derleth Award for Best Horror Novel:
+            My Darling Beautiful Thing by Johanna Van Veen</li>
+      </ul>
+      <p>2012</p>
+      <ul>
+        <li>Horror Novel (the August Derleth Award): The Ritual, Adam Nevill (Pan Books)</li>
+      </ul>
+    '''
+    shortlist_html = '''
+      <h1>The British Fantasy Awards 2026 Shortlists!</h1>
+      <h2>Best Horror Novel (The August Derleth Award)</h2>
+      <ul>
+        <li>Witchcraft for Wayward Girls, Grady Hendrix (Tor Nightfire)</li>
+        <li>The Buffalo Hunter Hunter, Stephen Graham Jones (Titan Books)</li>
+      </ul>
+    '''
+    sfadb_overview = '''
+      <a href="/British_Fantasy_Awards_2025">2025</a>
+      <a href="/British_Fantasy_Awards_2012">2012</a>
+    '''
+    sfadb_pages = {
+      'https://www.sfadb.com/British_Fantasy_Awards_2025': '''
+        <div class="categoryblock">
+          <div class="category">Horror Novel (august Derleth Award)</div>
+          <ul>
+            <li>Winner: My Darling Dreadful Thing, Johanna van Veen (Poisoned Pen)</li>
+            <li>Among the Living, Tim Lebbon (Titan)</li>
+            <li>Bury Your Gays, Chuck Tingle (Titan)</li>
+          </ul>
+        </div>
+      ''',
+      'https://www.sfadb.com/British_Fantasy_Awards_2012': '''
+        <div class="categoryblock">
+          <div class="category">August Derleth Award (horror Novel)</div>
+          <ul>
+            <li>Winner: The Ritual, Adam Nevill (Pan)</li>
+          </ul>
+        </div>
+      ''',
+    }
+
+    winners = parser.parse_bfs_winners(
+      winners_html,
+      BFS_WINNERS_URL,
+      'British Fantasy - Horror Novel',
+      'Horror Novel',
+      ('best horror novel', 'august derleth award horror novel'),
+      min_year=2012)
+    shortlist = parser.parse_bfs_shortlist(
+      shortlist_html,
+      'https://britishfantasysociety.org/the-british-fantasy-awards-2026-shortlists/',
+      'British Fantasy - Horror Novel',
+      'Horror Novel',
+      ('best horror novel', 'horror novel the august derleth award'),
+      min_year=2012)
+    sfadb = parser.parse_sfadb(
+      sfadb_overview,
+      SFADB_URL,
+      'British Fantasy - Horror Novel',
+      'Horror Novel',
+      ('horror novel', 'august derleth award horror novel'),
+      fetch_url=lambda url: sfadb_pages[url],
+      min_year=2012)
+
+    parsed = parser.combine_results(
+      'British Fantasy - Horror Novel',
+      BFS_WINNERS_URL,
+      winners,
+      shortlist,
+      sfadb)
+
+    rows = {
+      (entry['award_year'], entry['title']): entry
+      for entry in parsed['entries']
+    }
+    self.assertEqual('winner', rows[('2025', 'My Darling Dreadful Thing')]['result'])
+    self.assertEqual('2025', rows[('2025', 'My Darling Dreadful Thing')]['position'])
+    self.assertEqual('shortlisted', rows[('2025', 'Among the Living')]['result'])
+    self.assertEqual('shortlisted', rows[('2026', 'Witchcraft for Wayward Girls')]['result'])
+    self.assertEqual('2026.01', rows[('2026', 'Witchcraft for Wayward Girls')]['position'])
+    self.assertNotIn(('2025', 'My Darling Beautiful Thing'), rows)
+    self.assertTrue(any('current-cycle only' in note for note in parsed['notes']))
+    self.assertTrue(any('Corrected 2025' in note for note in parsed['notes']))
+
+  def test_british_fantasy_best_novel_stops_before_2012_split(self):
+    from parser.british_fantasy import BFS_WINNERS_URL, BritishFantasyParser
+
+    parser = BritishFantasyParser()
+    winners_html = '''
+      <p>2012</p>
+      <ul>
+        <li>Horror Novel (the August Derleth Award): The Ritual, Adam Nevill (Pan Books)</li>
+      </ul>
+      <p>2010</p>
+      <ul>
+        <li>Novel: One, Conrad Williams (Virgin Books)</li>
+      </ul>
+      <p>2011</p>
+      <ul>
+        <li>Novel: No award</li>
+      </ul>
+    '''
+
+    parsed = parser.parse_bfs_winners(
+      winners_html,
+      BFS_WINNERS_URL,
+      'British Fantasy - Best Novel (pre-2012 August Derleth)',
+      'Best Novel',
+      ('novel', 'best novel'),
+      max_year=2011)
+
+    self.assertEqual(['One'], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual('2010', parsed['entries'][0]['position'])
+    self.assertTrue(any('2011 Best Novel has no award row' in note for note in parsed['notes']))
+
+  def test_british_fantasy_fetchers_are_registered_with_expected_metadata(self):
+    from parser.base import (
+      CATEGORY_FANTASY, CATEGORY_HORROR_DARK_FICTION, CATEGORY_NONFICTION,
+    )
+    from url_fetcher import available_url_fetchers
+
+    expected_ids = {
+      'british_fantasy_horror_novel',
+      'british_fantasy_fantasy_novel',
+      'british_fantasy_best_novel',
+      'british_fantasy_novella',
+      'british_fantasy_anthology',
+      'british_fantasy_collection',
+      'british_fantasy_nonfiction',
+    }
+    fetchers = [
+      fetcher for fetcher in available_url_fetchers()
+      if fetcher.source_id in expected_ids
+    ]
+
+    self.assertEqual(expected_ids, {fetcher.source_id for fetcher in fetchers})
+    self.assertTrue(all(fetcher.options['match_series'] is False for fetcher in fetchers))
+    self.assertEqual(
+      ({'label': 'Automatic', 'value': 'automatic'},),
+      fetchers[0].source_choices())
+    filters_by_id = {
+      fetcher.source_id: [item['label'] for item in fetcher.get_filter_list()]
+      for fetcher in fetchers
+    }
+    self.assertEqual([CATEGORY_HORROR_DARK_FICTION],
+                     filters_by_id['british_fantasy_horror_novel'])
+    self.assertEqual([CATEGORY_FANTASY],
+                     filters_by_id['british_fantasy_fantasy_novel'])
+    self.assertIn(CATEGORY_NONFICTION,
+                  filters_by_id['british_fantasy_nonfiction'])
+
+  def test_international_horror_guild_official_parser_reads_mixed_shapes(self):
+    from parser.international_horror_guild import (
+      OFFICIAL_FINAL_URL, InternationalHorrorGuildParser,
+    )
+
+    parser = InternationalHorrorGuildParser()
+    official_html = '''
+      <p>The INTERNATIONAL HORROR GUILD AWARDS for WORKS from 2007</p>
+      <font><b>NOVEL</b></font>
+      <p><font><b><i>The Terror</i>. Dan Simmons (Little, Brown)</b></font></p>
+      <p>Also nominated:</p>
+      <ul>
+        <li><i>Grin of the Dark</i>. Ramsey Campbell (PS Publishing)</li>
+      </ul>
+      <font><b>SHORT FICTION</b></font>
+      <p><font><b>"Honey in the Wound". Nancy Etchemendy</b></font></p>
+      <p>2006</p>
+      <b>NOVEL</b><br>
+      <b><font>Conrad Williams. <i>The Unblemished</i> (Earthling)</font></b>
+      <p><i>Other Nominees:</i></p>
+      <ul>
+        <li>Keith Donohue. <i>The Stolen Child</i> (Doubleday)</li>
+      </ul>
+      <p>2004</p>
+      <font><b>NOVEL: Ramsey Campbell. THE OVERNIGHT (PS Publishing)</b></font>
+      <font><b><i>Also nominated:</i></b></font>
+      <ul>
+        <li>Elizabeth Hand. MORTAL LOVE (William Morrow)</li>
+      </ul>
+      <p>1997</p>
+      <p>No nominations are listed due to the changeover in administration.</p>
+      <ul><li><b>NOVEL: Nazareth Hill by Ramsey Campbell</b></li></ul>
+      <p>1996</p>
+      <p>No nominations are available.</p>
+      <ul><li><b>NOVEL: The 37th Mandala by Marc Laidlaw</b></li></ul>
+    '''
+
+    parsed = parser.parse_official_page(
+      official_html,
+      OFFICIAL_FINAL_URL,
+      'International Horror Guild - Novel',
+      'Novel',
+      ('novel',))
+    rows = {
+      (entry['award_year'], entry['title']): entry
+      for entry in parsed['entries']
+    }
+
+    self.assertEqual('winner', rows[('2007', 'The Terror')]['result'])
+    self.assertEqual('shortlisted', rows[('2007', 'Grin of the Dark')]['result'])
+    self.assertEqual('winner', rows[('2006', 'The Unblemished')]['result'])
+    self.assertEqual('shortlisted', rows[('2006', 'The Stolen Child')]['result'])
+    self.assertEqual('THE OVERNIGHT', rows[('2004', 'THE OVERNIGHT')]['title'])
+    self.assertEqual('shortlisted', rows[('2004', 'MORTAL LOVE')]['result'])
+    self.assertEqual('winner', rows[('1997', 'Nazareth Hill')]['result'])
+    self.assertEqual('winner', rows[('1996', 'The 37th Mandala')]['result'])
+    self.assertFalse(any(entry['title'] == 'Honey in the Wound'
+                         for entry in parsed['entries']))
+    self.assertTrue(any('1997 page states nominations are not listed' in note
+                        for note in parsed['notes']))
+    self.assertTrue(any('1996 page states' in note for note in parsed['notes']))
+
+  def test_international_horror_guild_official_parser_preserves_tied_winners(self):
+    from parser.international_horror_guild import (
+      OFFICIAL_PREVIOUS_URL, InternationalHorrorGuildParser,
+    )
+
+    parser = InternationalHorrorGuildParser()
+    official_html = '''
+      <p>2006</p>
+      <b>COLLECTION (Single Author)</b> [TIE]<br>
+      <b><font>Terry Dowling. <i>Basic Black</i> (CD Publications)<br>
+      Glen Hirshberg. <i>American Morons</i> (Earthling)</font></b>
+      <p><i>Other Nominees:</i></p>
+      <ul>
+        <li>Joel Lane. <i>The Lost District and Other Stories</i> (Night Shade)</li>
+      </ul>
+    '''
+
+    parsed = parser.parse_official_page(
+      official_html,
+      OFFICIAL_PREVIOUS_URL,
+      'International Horror Guild - Collection',
+      'Collection',
+      ('collection', 'collection single author', 'fiction collection'))
+    rows = {
+      entry['title']: entry
+      for entry in parsed['entries']
+    }
+
+    self.assertEqual('winner', rows['Basic Black']['result'])
+    self.assertEqual('2006', rows['Basic Black']['position'])
+    self.assertEqual('winner', rows['American Morons']['result'])
+    self.assertEqual('2006', rows['American Morons']['position'])
+    self.assertEqual('shortlisted', rows['The Lost District and Other Stories']['result'])
+
+  def test_international_horror_guild_sfadb_uses_eligibility_year(self):
+    from parser.international_horror_guild import (
+      InternationalHorrorGuildParser, SFADB_URL,
+    )
+
+    parser = InternationalHorrorGuildParser()
+    overview = '<a href="/International_Horror_Guild_Awards_2008">2008</a>'
+    pages = {
+      'https://www.sfadb.com/International_Horror_Guild_Awards_2008': '''
+        <div class="AwYrTimePlace"><b>Eligibility Year</b>: 2007</div>
+        <div class="categoryblock">
+          <div class="category">Novel</div>
+          <ul>
+            <li><span class="winner">Winner:</span> <b>The Terror</b>, Dan Simmons (Little, Brown)</li>
+            <li><b>Generation Loss</b>, Elizabeth Hand (Small Beer Press)</li>
+          </ul>
+        </div>
+      ''',
+    }
+
+    parsed = parser.parse_sfadb(
+      overview,
+      SFADB_URL,
+      'International Horror Guild - Novel',
+      'Novel',
+      ('novel',),
+      fetch_url=lambda url: pages[url])
+    rows = {entry['title']: entry for entry in parsed['entries']}
+
+    self.assertEqual('2007', rows['The Terror']['award_year'])
+    self.assertEqual('2007', rows['The Terror']['position'])
+    self.assertEqual('shortlisted', rows['Generation Loss']['result'])
+    self.assertTrue(any('replacement fallback' in note for note in parsed['notes']))
+
+  def test_international_horror_guild_fetchers_metadata_fallback_and_registry(self):
+    from parser.base import CATEGORY_HORROR_DARK_FICTION, CATEGORY_NONFICTION
+    from parser.international_horror_guild import (
+      OFFICIAL_FINAL_URL, SFADB_URL,
+    )
+    from url_fetcher import available_url_fetchers
+
+    expected_ids = {
+      'international_horror_guild_novel',
+      'international_horror_guild_first_novel',
+      'international_horror_guild_long_fiction',
+      'international_horror_guild_mid_length_fiction',
+      'international_horror_guild_collection',
+      'international_horror_guild_anthology',
+      'international_horror_guild_nonfiction',
+      'international_horror_guild_illustrated_narrative',
+    }
+    fetchers = [
+      fetcher for fetcher in available_url_fetchers()
+      if fetcher.source_id in expected_ids
+    ]
+
+    self.assertEqual(expected_ids, {fetcher.source_id for fetcher in fetchers})
+    self.assertTrue(all(fetcher.options['match_series'] is False for fetcher in fetchers))
+    self.assertEqual([
+      {'label': 'Automatic', 'value': 'automatic'},
+      {'label': 'International Horror Guild', 'value': 0},
+      {'label': 'SFADB', 'value': 1},
+    ], list(fetchers[0].source_choices()))
+
+    filters_by_id = {
+      fetcher.source_id: [item['label'] for item in fetcher.get_filter_list()]
+      for fetcher in fetchers
+    }
+    self.assertEqual([CATEGORY_HORROR_DARK_FICTION],
+                     filters_by_id['international_horror_guild_novel'])
+    self.assertIn(CATEGORY_NONFICTION,
+                  filters_by_id['international_horror_guild_nonfiction'])
+
+    sfadb_overview = '<a href="/International_Horror_Guild_Awards_2008">2008</a>'
+    sfadb_page = '''
+      <div class="AwYrTimePlace"><b>Eligibility Year</b>: 2007</div>
+      <div class="categoryblock">
+        <div class="category">Novel</div>
+        <ul><li><span class="winner">Winner:</span> <b>The Terror</b>, Dan Simmons</li></ul>
+      </div>
+    '''
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == SFADB_URL:
+        return sfadb_overview
+      if url == 'https://www.sfadb.com/International_Horror_Guild_Awards_2008':
+        return sfadb_page
+      if url == OFFICIAL_FINAL_URL:
+        return '<html></html>'
+      raise AssertionError(url)
+
+    parsed = [
+      fetcher for fetcher in fetchers
+      if fetcher.source_id == 'international_horror_guild_novel'
+    ][0].fetch_and_parse(fetch_url, source_choice=1)
+
+    self.assertEqual('The Terror', parsed['entries'][0]['title'])
+    self.assertEqual('2007', parsed['entries'][0]['award_year'])
+    self.assertNotIn(OFFICIAL_FINAL_URL, fetched)
+
+    registry_ids = [fetcher.source_id for fetcher in available_url_fetchers()]
+    self.assertLess(
+      registry_ids.index('british_fantasy_nonfiction'),
+      registry_ids.index('international_horror_guild_novel'))
+    self.assertLess(
+      registry_ids.index('international_horror_guild_illustrated_narrative'),
+      registry_ids.index('arthur_c_clarke_award_novel'))
+
+  def test_australasian_shadows_official_current_finalists(self):
+    from parser.australasian_shadows import (
+      OFFICIAL_CURRENT_API_URL, AustralasianShadowsParser,
+    )
+
+    parser = AustralasianShadowsParser()
+    current_json = json.dumps([{
+      'title': {'rendered': 'Australasian Shadows Awards'},
+      'content': {'rendered': '''
+        <h2>2025 Australasian Shadows Awards finalists</h2>
+        <p><strong>Novel</strong></p>
+        <ul>
+          <li>A. G. Slatter - The Crimson Road</li>
+          <li>Madeleine D'Este - Black Soil White Bread</li>
+        </ul>
+        <p><strong>Edited Work</strong></p>
+        <p>No shortlist, but a winner will be announced at the presentation.</p>
+        <p><strong>Short Fiction</strong></p>
+        <ul><li>Short Story by Someone</li></ul>
+      '''},
+    }])
+
+    parsed = parser.parse_official_document(
+      current_json,
+      OFFICIAL_CURRENT_API_URL,
+      'Australasian Shadows - Novel',
+      'Novel',
+      ('novel',))
+    rows = {entry['title']: entry for entry in parsed['entries']}
+
+    self.assertEqual('shortlisted', rows['The Crimson Road']['result'])
+    self.assertEqual('A. G. Slatter', rows['The Crimson Road']['author'])
+    self.assertEqual('2025.01', rows['The Crimson Road']['position'])
+    self.assertEqual('shortlisted', rows['Black Soil White Bread']['result'])
+    self.assertNotIn('Short Story', rows)
+
+    edited = parser.parse_official_document(
+      current_json,
+      OFFICIAL_CURRENT_API_URL,
+      'Australasian Shadows - Edited Work',
+      'Edited Work',
+      ('edited work',))
+    self.assertEqual([], edited['entries'])
+    self.assertTrue(any('No shortlist' in note for note in edited['notes']))
+
+  def test_australasian_shadows_official_winners_shortlists_and_ties(self):
+    from parser.australasian_shadows import (
+      OFFICIAL_2024_WINNERS_API_URL, AustralasianShadowsParser,
+    )
+
+    parser = AustralasianShadowsParser()
+    winners_json = json.dumps([{
+      'title': {'rendered': '2024 Australasian Shadows Awards Winners'},
+      'content': {'rendered': '''
+        <h2>Novel</h2>
+        <p>Winner: The Dead Spot by Caroline Angel</p>
+        <p>Shortlist:</p>
+        <ul>
+          <li>The Briar Book of the Dead by Angela Slatter</li>
+          <li>The Underhistory by Kaaron Warren</li>
+        </ul>
+        <h2>Graphic novel or comic</h2>
+        <p>Midnight by Pat Grant / The Shadow Line by Jane Doe</p>
+        <p>No shortlist.</p>
+      '''},
+    }])
+
+    novel = parser.parse_official_document(
+      winners_json,
+      OFFICIAL_2024_WINNERS_API_URL,
+      'Australasian Shadows - Novel',
+      'Novel',
+      ('novel',))
+    novel_rows = {entry['title']: entry for entry in novel['entries']}
+    self.assertEqual('winner', novel_rows['The Dead Spot']['result'])
+    self.assertEqual('2024', novel_rows['The Dead Spot']['position'])
+    self.assertEqual('shortlisted', novel_rows['The Underhistory']['result'])
+
+    graphic = parser.parse_official_document(
+      winners_json,
+      OFFICIAL_2024_WINNERS_API_URL,
+      'Australasian Shadows - Graphic Novel/Comic',
+      'Graphic Novel/Comic',
+      ('graphic novel or comic',))
+    graphic_rows = {entry['title']: entry for entry in graphic['entries']}
+    self.assertEqual('winner', graphic_rows['Midnight']['result'])
+    self.assertEqual('2024', graphic_rows['Midnight']['position'])
+    self.assertEqual('winner', graphic_rows['The Shadow Line']['result'])
+    self.assertEqual('2024', graphic_rows['The Shadow Line']['position'])
+    self.assertTrue(any('No shortlist' in note for note in graphic['notes']))
+
+  def test_australasian_shadows_wikipedia_fallback_and_category_filtering(self):
+    from parser.australasian_shadows import (
+      WIKIPEDIA_URL, AustralasianShadowsParser,
+    )
+
+    parser = AustralasianShadowsParser()
+    wiki_html = '''
+      <h2>2024</h2>
+      <h3>Novel</h3>
+      <p>Winner: The Dead Spot by Caroline Angel</p>
+      <p>Nominees:</p>
+      <ul><li>The Underhistory by Kaaron Warren</li></ul>
+      <h3>Short Fiction</h3>
+      <p>Winner: Tiny Horror by Story Writer</p>
+      <h2>2008</h2>
+      <h3>Novels, anthologies, and short stories</h3>
+      <p>Winner: Mixed Bag by Mixed Writer</p>
+    '''
+
+    parsed = parser.parse_wikipedia(
+      wiki_html,
+      WIKIPEDIA_URL,
+      'Australasian Shadows - Novel',
+      'Novel',
+      ('novel',))
+    rows = {entry['title']: entry for entry in parsed['entries']}
+
+    self.assertEqual('winner', rows['The Dead Spot']['result'])
+    self.assertEqual('shortlisted', rows['The Underhistory']['result'])
+    self.assertNotIn('Tiny Horror', rows)
+    self.assertNotIn('Mixed Bag', rows)
+    self.assertTrue(any('replacement fallback' in note for note in parsed['notes']))
+
+  def test_australasian_shadows_fetchers_metadata_fallback_and_registry(self):
+    from parser.australasian_shadows import (
+      OFFICIAL_CURRENT_API_URL, WIKIPEDIA_URL,
+    )
+    from parser.base import (
+      CATEGORY_HORROR_DARK_FICTION, CATEGORY_NONFICTION,
+      CATEGORY_REGIONAL_NATIONAL_AWARDS,
+    )
+    from url_fetcher import available_url_fetchers
+
+    expected_ids = {
+      'australasian_shadows_novel',
+      'australasian_shadows_long_fiction',
+      'australasian_shadows_collected_work',
+      'australasian_shadows_edited_work',
+      'australasian_shadows_graphic_novel',
+      'australasian_shadows_nonfiction',
+    }
+    fetchers = [
+      fetcher for fetcher in available_url_fetchers()
+      if fetcher.source_id in expected_ids
+    ]
+
+    self.assertEqual(expected_ids, {fetcher.source_id for fetcher in fetchers})
+    self.assertTrue(all(fetcher.options['match_series'] is False for fetcher in fetchers))
+    self.assertEqual([
+      {'label': 'Automatic', 'value': 'automatic'},
+      {'label': 'Australasian Horror Writers Association', 'value': 0},
+      {'label': 'Wikipedia', 'value': 1},
+    ], list(fetchers[0].source_choices()))
+
+    filters_by_id = {
+      fetcher.source_id: [item['label'] for item in fetcher.get_filter_list()]
+      for fetcher in fetchers
+    }
+    self.assertEqual(
+      [CATEGORY_HORROR_DARK_FICTION, CATEGORY_REGIONAL_NATIONAL_AWARDS],
+      filters_by_id['australasian_shadows_novel'])
+    self.assertIn(CATEGORY_NONFICTION,
+                  filters_by_id['australasian_shadows_nonfiction'])
+
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      if url == WIKIPEDIA_URL:
+        return '''
+          <h2>2024</h2>
+          <h3>Novel</h3>
+          <p>Winner: The Dead Spot by Caroline Angel</p>
+        '''
+      raise AssertionError(url)
+
+    parsed = [
+      fetcher for fetcher in fetchers
+      if fetcher.source_id == 'australasian_shadows_novel'
+    ][0].fetch_and_parse(fetch_url, source_choice=1)
+
+    self.assertEqual('The Dead Spot', parsed['entries'][0]['title'])
+    self.assertNotIn(OFFICIAL_CURRENT_API_URL, fetched)
+
+    registry_ids = [fetcher.source_id for fetcher in available_url_fetchers()]
+    self.assertLess(
+      registry_ids.index('international_horror_guild_illustrated_narrative'),
+      registry_ids.index('australasian_shadows_novel'))
+    self.assertLess(
+      registry_ids.index('australasian_shadows_nonfiction'),
+      registry_ids.index('arthur_c_clarke_award_novel'))
+
+  def test_this_is_horror_official_current_ballot_and_filtering(self):
+    from parser.this_is_horror import (
+      OFFICIAL_AWARDS_API_URL, OFFICIAL_AWARDS_URL, ThisIsHorrorParser,
+    )
+
+    parser = ThisIsHorrorParser()
+    current_json = json.dumps([
+      {
+        'title': {'rendered': 'Awards'},
+        'link': 'https://www.thisishorror.co.uk/about/awards/',
+        'content': {'rendered': '<p>Unrelated awards page</p>'},
+      },
+      {
+        'title': {'rendered': 'Awards'},
+        'link': OFFICIAL_AWARDS_URL,
+        'content': {'rendered': '''
+          <h1>This Is Horror Awards 2024 are now open</h1>
+          <h2>Novel of the Year</h2>
+          <ol>
+            <li>All the Fiends of Hell by Adam Nevill</li>
+            <li>American Rapture by CJ Leede</li>
+          </ol>
+          <h2>Fiction Podcast of the Year</h2>
+          <ol><li>Podcast Row by Audio Host</li></ol>
+          <h2>Previous Winners</h2>
+        '''},
+      },
+    ])
+
+    parsed = parser.parse_official_current(
+      current_json,
+      OFFICIAL_AWARDS_API_URL,
+      'This Is Horror - Novel',
+      'Novel',
+      ('novel', 'novel of the year'))
+    rows = {entry['title']: entry for entry in parsed['entries']}
+
+    self.assertEqual(['All the Fiends of Hell', 'American Rapture'], list(rows))
+    self.assertEqual('2024.01', rows['All the Fiends of Hell']['position'])
+    self.assertEqual('shortlisted', rows['American Rapture']['result'])
+    self.assertEqual('Adam Nevill', rows['All the Fiends of Hell']['author'])
+    self.assertNotIn('Podcast Row', rows)
+    self.assertTrue(any('current ballot' in note for note in parsed['notes']))
+    self.assertTrue(any('no official 2025' in note for note in parsed['notes']))
+
+  def test_this_is_horror_official_winners_runner_up_and_award_year(self):
+    from parser.this_is_horror import OFFICIAL_AWARDS_URL, ThisIsHorrorParser
+
+    parser = ThisIsHorrorParser()
+    winners_json = json.dumps([{
+      'title': {'rendered': 'This Is Horror Awards 2021: The Winners'},
+      'link': 'https://www.thisishorror.co.uk/awards/this-is-horror-awards-2021-the-winners/',
+      'date': '2023-08-10T10:00:00',
+      'content': {'rendered': '''
+        <h1>This Is Horror Awards 2021: The Winners</h1>
+        <h2>Novel of the Year</h2>
+        <p><strong>Winner:</strong> My Heart Is a Chainsaw by Stephen Graham Jones
+        <strong>Runner-up:</strong> This Thing Between Us by Gus Moreno.</p>
+        <h2>Anthology of the Year</h2>
+        <p>Winner: When Things Get Dark, edited by Ellen Datlow
+        Runner-up: There Is No Death, There Are No Dead, edited by Aaron J. French and Jess Landry</p>
+        <h2>Publisher of the Year</h2>
+        <p>Winner: Example Press by Press Team</p>
+      '''},
+    }])
+
+    novel = parser.parse_official_winners(
+      winners_json,
+      OFFICIAL_AWARDS_URL,
+      'This Is Horror - Novel',
+      'Novel',
+      ('novel', 'novel of the year'))
+    anthology = parser.parse_official_winners(
+      winners_json,
+      OFFICIAL_AWARDS_URL,
+      'This Is Horror - Anthology',
+      'Anthology',
+      ('anthology', 'anthology of the year'))
+
+    novel_rows = {entry['title']: entry for entry in novel['entries']}
+    anthology_rows = {entry['title']: entry for entry in anthology['entries']}
+
+    self.assertEqual('2021', novel_rows['My Heart Is a Chainsaw']['award_year'])
+    self.assertEqual('2021', novel_rows['My Heart Is a Chainsaw']['position'])
+    self.assertEqual('winner', novel_rows['My Heart Is a Chainsaw']['result'])
+    self.assertEqual('2021.01', novel_rows['This Thing Between Us']['position'])
+    self.assertEqual('shortlisted', novel_rows['This Thing Between Us']['result'])
+    self.assertEqual('Ellen Datlow', anthology_rows['When Things Get Dark']['author'])
+    self.assertEqual(
+      'Aaron J. French and Jess Landry',
+      anthology_rows['There Is No Death, There Are No Dead']['author'])
+    self.assertTrue(any('runner-up rows' in note for note in novel['notes']))
+
+  def test_this_is_horror_goodreads_supplement_and_category_filtering(self):
+    from parser.this_is_horror import GOODREADS_URL, ThisIsHorrorParser
+
+    parser = ThisIsHorrorParser()
+    goodreads_html = '''
+      <h2>Winners</h2>
+      <div>A Head Full of Ghosts</div><div>by</div><div>Paul Tremblay</div>
+      <div>This is Horror Award for Novel (2015)</div>
+      <div>Bad Comic</div><div>by</div><div>Panel Writer</div>
+      <div>This is Horror Award for Comic (2015)</div>
+      <h2>nominees</h2>
+      <div>Lost Girl</div><div>by</div><div>Adam L.G. Nevill</div>
+      <div>This is Horror Award Nominee for Novel (Runner-Up) (2015)</div>
+      <div>Short Piece</div><div>by</div><div>Short Writer</div>
+      <div>This is Horror Award Nominee for Short Fiction (finalist) (2015)</div>
+    '''
+
+    parsed = parser.parse_goodreads(
+      goodreads_html,
+      GOODREADS_URL,
+      'This Is Horror - Novel',
+      'Novel',
+      ('novel',))
+    rows = {entry['title']: entry for entry in parsed['entries']}
+
+    self.assertEqual('winner', rows['A Head Full of Ghosts']['result'])
+    self.assertEqual('2015', rows['A Head Full of Ghosts']['position'])
+    self.assertEqual('shortlisted', rows['Lost Girl']['result'])
+    self.assertEqual('2015.01', rows['Lost Girl']['position'])
+    self.assertNotIn('Bad Comic', rows)
+    self.assertNotIn('Short Piece', rows)
+    self.assertTrue(any('historical nominee' in note for note in parsed['notes']))
+
+  def test_this_is_horror_fetchers_metadata_merge_and_registry(self):
+    from parser.base import CATEGORY_HORROR_DARK_FICTION
+    from parser.this_is_horror import (
+      GOODREADS_URL,
+      OFFICIAL_AWARDS_API_URL,
+      OFFICIAL_AWARDS_URL,
+      OFFICIAL_WINNERS_SEARCH_API_URL,
+    )
+    from url_fetcher import available_url_fetchers
+
+    expected_ids = {
+      'this_is_horror_novel',
+      'this_is_horror_novella',
+      'this_is_horror_short_story_collection',
+      'this_is_horror_anthology',
+    }
+    fetchers = [
+      fetcher for fetcher in available_url_fetchers()
+      if fetcher.source_id in expected_ids
+    ]
+
+    self.assertEqual(expected_ids, {fetcher.source_id for fetcher in fetchers})
+    self.assertTrue(all(fetcher.options['match_series'] is False for fetcher in fetchers))
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},),
+                     fetchers[0].source_choices())
+    for fetcher in fetchers:
+      filters = [item['label'] for item in fetcher.get_filter_list()]
+      self.assertIn(CATEGORY_HORROR_DARK_FICTION, filters)
+
+    winner_api_url = 'https://www.thisishorror.co.uk/wp-json/wp/v2/posts/43497'
+    by_url = {
+      OFFICIAL_AWARDS_API_URL: json.dumps([{
+        'title': {'rendered': 'Awards'},
+        'link': OFFICIAL_AWARDS_URL,
+        'content': {'rendered': '''
+          <h1>This Is Horror Awards 2024 are now open</h1>
+          <h2>Novel of the Year</h2>
+          <ol><li>Small Town Horror by Ronald Malfi</li></ol>
+          <h2>Previous Winners</h2>
+        '''},
+      }]),
+      OFFICIAL_WINNERS_SEARCH_API_URL: json.dumps([{
+        'title': 'This Is Horror Awards 2024: The Winners',
+        '_links': {'self': [{'href': winner_api_url}]},
+      }]),
+      winner_api_url: json.dumps([{
+        'title': {'rendered': 'This Is Horror Awards 2024: The Winners'},
+        'link': 'https://www.thisishorror.co.uk/this-is-horror-awards-2024-the-winners/',
+        'content': {'rendered': '''
+          <h1>This Is Horror Awards 2024: The Winners</h1>
+          <h2>Novel of the Year</h2>
+          <p>Winner: Small Town Horror by Ronald Malfi
+          Runner-up: American Rapture by CJ Leede</p>
+        '''},
+      }]),
+      GOODREADS_URL: '''
+        <div>Small Town Horror</div><div>by</div><div>Ronald Malfi</div>
+        <div>This is Horror Award for Novel (2024)</div>
+        <div>All the Fiends of Hell</div><div>by</div><div>Adam Nevill</div>
+        <div>This is Horror Award Nominee for Novel (finalist) (2024)</div>
+      ''',
+    }
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      return by_url[url]
+
+    novel = [
+      fetcher for fetcher in fetchers
+      if fetcher.source_id == 'this_is_horror_novel'
+    ][0]
+    parsed = novel.fetch_and_parse(fetch_url)
+    rows = {entry['title']: entry for entry in parsed['entries']}
+
+    self.assertEqual('winner', rows['Small Town Horror']['result'])
+    self.assertEqual('2024', rows['Small Town Horror']['position'])
+    self.assertEqual('shortlisted', rows['American Rapture']['result'])
+    self.assertEqual('shortlisted', rows['All the Fiends of Hell']['result'])
+    self.assertFalse(parsed['match_series'])
+    self.assertIn(OFFICIAL_AWARDS_API_URL, fetched)
+    self.assertIn(GOODREADS_URL, fetched)
+
+    registry_ids = [fetcher.source_id for fetcher in available_url_fetchers()]
+    self.assertLess(
+      registry_ids.index('australasian_shadows_nonfiction'),
+      registry_ids.index('this_is_horror_novel'))
+    self.assertLess(
+      registry_ids.index('this_is_horror_anthology'),
+      registry_ids.index('arthur_c_clarke_award_novel'))
+
+  def test_splatterpunk_official_current_nominees_and_filtering(self):
+    from parser.splatterpunk import (
+      OFFICIAL_AWARDS_API_URL, OFFICIAL_AWARDS_URL, SplatterpunkParser,
+    )
+
+    parser = SplatterpunkParser()
+    current_json = json.dumps([{
+      'title': {'rendered': '2026 Splatterpunk Awards'},
+      'link': OFFICIAL_AWARDS_URL,
+      'content': {'rendered': '''
+        <h1>2026 Splatterpunk Awards</h1>
+        <p>We are pleased to announce the 2026 Splatterpunk Award nominees.</p>
+        <h4>BEST NOVEL</h4>
+        <p>-- <em>At Dark, I Become Loathsome</em> by Eric LaRocca (Blackstone Publishing)</p>
+        <p>-- <em>The Home</em> by Judith Sonnet (Madness Heart Press)</p>
+        <h4>BEST SHORT STORY</h4>
+        <p>-- "Story Row" by Short Writer (from Some Book)</p>
+        <h4>BEST ANTHOLOGY</h4>
+        <p>-- <em>Full Throttle</em> edited by Candace Nola (Uncomfortably Dark)</p>
+        <p>J. F. GONZALEZ LIFETIME ACHIEVEMENT AWARD*</p>
+        <p>-- Person Only</p>
+      '''},
+    }])
+
+    novel = parser.parse_official_current(
+      current_json,
+      OFFICIAL_AWARDS_API_URL,
+      'Splatterpunk - Novel',
+      'Novel',
+      ('novel', 'best novel'))
+    anthology = parser.parse_official_current(
+      current_json,
+      OFFICIAL_AWARDS_API_URL,
+      'Splatterpunk - Anthology',
+      'Anthology',
+      ('anthology', 'best anthology'))
+
+    novel_rows = {entry['title']: entry for entry in novel['entries']}
+    anthology_rows = {entry['title']: entry for entry in anthology['entries']}
+
+    self.assertEqual('shortlisted', novel_rows['At Dark, I Become Loathsome']['result'])
+    self.assertEqual('2026.01', novel_rows['At Dark, I Become Loathsome']['position'])
+    self.assertEqual('Eric LaRocca', novel_rows['At Dark, I Become Loathsome']['author'])
+    self.assertNotIn('Story Row', novel_rows)
+    self.assertNotIn('Person Only', novel_rows)
+    self.assertEqual('Candace Nola', anthology_rows['Full Throttle']['author'])
+    self.assertTrue(any('current-cycle nominees' in note for note in novel['notes']))
+
+  def test_splatterpunk_official_winners_origin_and_tied_winners(self):
+    from parser.splatterpunk import (
+      OFFICIAL_PAST_WINNERS_API_URL, OFFICIAL_PAST_WINNERS_URL,
+      SplatterpunkParser,
+    )
+
+    parser = SplatterpunkParser()
+    winners_json = json.dumps([{
+      'title': {'rendered': 'Past Award Winners'},
+      'link': OFFICIAL_PAST_WINNERS_URL,
+      'content': {'rendered': '''
+        <p><strong>BEST NOVEL</strong></p>
+        <ul>
+          <li>2025 - <em>The Old Lady</em> by Kristopher Triana (Bad Dream Books)</li>
+          <li>2018 - White Trash Gothic by Edward Lee</li>
+        </ul>
+        <p><strong>BEST SHORT STORY</strong></p>
+        <ul><li>2024 - "My Octopus Master" by Stephen Kozeniewski</li></ul>
+        <p><strong>BEST ANTHOLOGY</strong></p>
+        <ul>
+          <li>2022 - Body Shocks edited by Ellen Datlow (Tachyon Publications)</li>
+          <li>2022 - Baker's Dozen edited by Candace Nola (Uncomfortably Dark)</li>
+        </ul>
+      '''},
+    }])
+
+    novel = parser.parse_official_winners(
+      winners_json,
+      OFFICIAL_PAST_WINNERS_API_URL,
+      'Splatterpunk - Novel',
+      'Novel',
+      ('novel', 'best novel'))
+    anthology = parser.parse_official_winners(
+      winners_json,
+      OFFICIAL_PAST_WINNERS_API_URL,
+      'Splatterpunk - Anthology',
+      'Anthology',
+      ('anthology', 'best anthology'))
+
+    novel_rows = {entry['title']: entry for entry in novel['entries']}
+    anthology_rows = {entry['title']: entry for entry in anthology['entries']}
+
+    self.assertEqual('winner', novel_rows['The Old Lady']['result'])
+    self.assertEqual('2025', novel_rows['The Old Lady']['position'])
+    self.assertEqual('2018', novel_rows['White Trash Gothic']['position'])
+    self.assertNotIn('My Octopus Master', novel_rows)
+    self.assertEqual('winner', anthology_rows['Body Shocks']['result'])
+    self.assertEqual('2022', anthology_rows['Body Shocks']['position'])
+    self.assertEqual('winner', anthology_rows["Baker's Dozen"]['result'])
+    self.assertEqual('2022', anthology_rows["Baker's Dozen"]['position'])
+    self.assertTrue(any('winner-only' in note for note in novel['notes']))
+
+  def test_splatterpunk_goodreads_pagination_and_mixed_labels(self):
+    from parser.splatterpunk import GOODREADS_URL, SplatterpunkParser
+
+    parser = SplatterpunkParser()
+    page_one = '''
+      <table>
+        <tr itemscope itemtype="http://schema.org/Book">
+          <td>
+            <a class="bookTitle" href="/book/show/1"><span>We're Here: An Anthology of LGBTQ+ Horror</span></a>
+            <a class="authorName"><span>James G. Carlson</span></a>
+            <i>Splatterpunk Award for Best Anthology (2024)</i>
+          </td>
+        </tr>
+        <tr itemscope itemtype="http://schema.org/Book">
+          <td>
+            <a class="bookTitle" href="/book/show/2"><span>Y'All Ain't Right: Southern Extreme Horror</span></a>
+            <a class="authorName"><span>Edward Lee</span></a>
+            <i>Splatterpunk Award Nominee for Best Short Story for "Genital Grinder 2.5" and Best Anthology (2025)</i>
+          </td>
+        </tr>
+        <tr itemscope itemtype="http://schema.org/Book">
+          <td>
+            <a class="bookTitle" href="/book/show/3"><span>The Home</span></a>
+            <a class="authorName"><span>Judith Sonnet</span></a>
+            <i>Splatterpunk Award Nominee for Best Novel (2025)</i>
+          </td>
+        </tr>
+      </table>
+      <a rel="next" href="/award/show/38981-splatterpunk-award?page=2">next</a>
+    '''
+    page_two = '''
+      <table>
+        <tr itemscope itemtype="http://schema.org/Book">
+          <td>
+            <a class="bookTitle" href="/book/show/4"><span>Baker's Dozen</span></a>
+            <a class="authorName"><span>Candace Nola</span></a>
+            <i>Splatterpunk Award for Best Anthology (2022)</i>
+          </td>
+        </tr>
+      </table>
+    '''
+
+    first = parser.parse_goodreads(
+      page_one,
+      GOODREADS_URL,
+      'Splatterpunk - Anthology',
+      'Anthology',
+      ('anthology', 'best anthology'))
+    second = parser.parse_goodreads(
+      page_two,
+      GOODREADS_URL + '?page=2',
+      'Splatterpunk - Anthology',
+      'Anthology',
+      ('anthology', 'best anthology'))
+    combined = parser.combine_results(
+      'Splatterpunk - Anthology',
+      GOODREADS_URL,
+      first,
+      second)
+    rows = {entry['title']: entry for entry in combined['entries']}
+
+    self.assertIn(GOODREADS_URL + '?page=2',
+                  parser.discover_goodreads_page_urls(page_one, GOODREADS_URL))
+    self.assertEqual('winner', rows["We're Here: An Anthology of LGBTQ+ Horror"]['result'])
+    self.assertEqual('shortlisted', rows["Y'All Ain't Right: Southern Extreme Horror"]['result'])
+    self.assertEqual('winner', rows["Baker's Dozen"]['result'])
+    self.assertNotIn('The Home', rows)
+    self.assertTrue(any('Goodreads coverage' in note for note in combined['notes']))
+
+  def test_splatterpunk_fetchers_metadata_merge_and_registry(self):
+    from parser.base import CATEGORY_HORROR_DARK_FICTION
+    from parser.splatterpunk import (
+      GOODREADS_URL,
+      OFFICIAL_AWARDS_API_URL,
+      OFFICIAL_AWARDS_URL,
+      OFFICIAL_PAST_WINNERS_API_URL,
+      OFFICIAL_PAST_WINNERS_URL,
+    )
+    from url_fetcher import available_url_fetchers
+
+    expected_ids = {
+      'splatterpunk_novel',
+      'splatterpunk_novella',
+      'splatterpunk_collection',
+      'splatterpunk_anthology',
+    }
+    fetchers = [
+      fetcher for fetcher in available_url_fetchers()
+      if fetcher.source_id in expected_ids
+    ]
+
+    self.assertEqual(expected_ids, {fetcher.source_id for fetcher in fetchers})
+    self.assertTrue(all(fetcher.options['match_series'] is False for fetcher in fetchers))
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},),
+                     fetchers[0].source_choices())
+    for fetcher in fetchers:
+      self.assertIn(CATEGORY_HORROR_DARK_FICTION,
+                    [item['label'] for item in fetcher.get_filter_list()])
+
+    page_two = GOODREADS_URL + '?page=2'
+    by_url = {
+      OFFICIAL_AWARDS_API_URL: json.dumps([{
+        'title': {'rendered': '2026 Splatterpunk Awards'},
+        'link': OFFICIAL_AWARDS_URL,
+        'content': {'rendered': '''
+          <h1>2026 Splatterpunk Awards</h1>
+          <p>We are pleased to announce the 2026 Splatterpunk Award nominees.</p>
+          <h4>BEST NOVEL</h4>
+          <p>-- The Buffalo Hunter Hunter by Stephen Graham Jones (Saga Press)</p>
+        '''},
+      }]),
+      OFFICIAL_PAST_WINNERS_API_URL: json.dumps([{
+        'title': {'rendered': 'Past Award Winners'},
+        'link': OFFICIAL_PAST_WINNERS_URL,
+        'content': {'rendered': '''
+          <p><strong>BEST NOVEL</strong></p>
+          <ul><li>2025 - The Old Lady by Kristopher Triana (Bad Dream Books)</li></ul>
+        '''},
+      }]),
+      GOODREADS_URL: '''
+        <table>
+          <tr itemscope itemtype="http://schema.org/Book">
+            <td>
+              <a class="bookTitle"><span>The Old Lady</span></a>
+              <a class="authorName"><span>Kristopher Triana</span></a>
+              <i>Splatterpunk Award Nominee for Best Novel (2025)</i>
+            </td>
+          </tr>
+        </table>
+        <a rel="next" href="/award/show/38981-splatterpunk-award?page=2">next</a>
+      ''',
+      page_two: '''
+        <table>
+          <tr itemscope itemtype="http://schema.org/Book">
+            <td>
+              <a class="bookTitle"><span>American Rapture</span></a>
+              <a class="authorName"><span>C.J. Leede</span></a>
+              <i>Splatterpunk Award Nominee for Best Novel (2025)</i>
+            </td>
+          </tr>
+        </table>
+      ''',
+    }
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      return by_url[url]
+
+    novel = [
+      fetcher for fetcher in fetchers
+      if fetcher.source_id == 'splatterpunk_novel'
+    ][0]
+    parsed = novel.fetch_and_parse(fetch_url)
+    rows = {entry['title']: entry for entry in parsed['entries']}
+
+    self.assertEqual('winner', rows['The Old Lady']['result'])
+    self.assertEqual('2025', rows['The Old Lady']['position'])
+    self.assertEqual('shortlisted', rows['American Rapture']['result'])
+    self.assertEqual('shortlisted', rows['The Buffalo Hunter Hunter']['result'])
+    self.assertFalse(parsed['match_series'])
+    self.assertIn(OFFICIAL_AWARDS_API_URL, fetched)
+    self.assertIn(OFFICIAL_PAST_WINNERS_API_URL, fetched)
+    self.assertIn(page_two, fetched)
+
+    registry_ids = [fetcher.source_id for fetcher in available_url_fetchers()]
+    self.assertLess(
+      registry_ids.index('this_is_horror_anthology'),
+      registry_ids.index('splatterpunk_novel'))
+    self.assertLess(
+      registry_ids.index('splatterpunk_anthology'),
+      registry_ids.index('arthur_c_clarke_award_novel'))
+
+  def test_ladies_of_horror_fiction_goodreads_and_winner_correction(self):
+    from parser.ladies_of_horror_fiction import (
+      FILE770_2021_WINNERS_URL,
+      GOODREADS_URL,
+      LadiesOfHorrorFictionParser,
+    )
+
+    parser = LadiesOfHorrorFictionParser()
+    goodreads_html = '''
+      <table>
+        <tr itemscope itemtype="http://schema.org/Book">
+          <td>
+            <a class="bookTitle" href="/book/show/1"><span>Tender Is the Flesh</span></a>
+            <a class="authorName"><span>Agustina Bazterrica</span></a>
+            <i>Ladies of Horror Fiction Award for Best Novel (2020)</i>
+          </td>
+        </tr>
+        <tr itemscope itemtype="http://schema.org/Book">
+          <td>
+            <a class="bookTitle" href="/book/show/2"><span>The Low, Low Woods</span></a>
+            <a class="authorName"><span>Carmen Maria Machado</span></a>
+            <i>Ladies of Horror Fiction Award for Best Graphic Novel (2020)</i>
+          </td>
+        </tr>
+        <tr itemscope itemtype="http://schema.org/Book">
+          <td>
+            <a class="bookTitle" href="/book/show/3"><span>Cackle</span></a>
+            <a class="authorName"><span>Rachel Harrison</span></a>
+            <i>Ladies of Horror Fiction Award Nominee for Novel (2021)</i>
+          </td>
+        </tr>
+        <tr itemscope itemtype="http://schema.org/Book">
+          <td>
+            <a class="bookTitle" href="/book/show/4"><span>Sister Glitter Blood</span></a>
+            <a class="authorName"><span>Gwendolyn Kiste</span></a>
+            <i>Ladies of Horror Fiction Award for Best Short Fiction (2021)</i>
+          </td>
+        </tr>
+      </table>
+    '''
+    file770_html = '''
+      <article>
+        <p><a href="https://www.ladiesofhorrorfiction.com/novel">LOHF Award for Best Novel</a></p>
+        <ul><li>Cackle by Rachel Harrison</li></ul>
+        <p><a href="https://www.ladiesofhorrorfiction.com/collection">LOHF Award for Best Collection</a></p>
+        <p>[TIE]</p>
+        <ul>
+          <li>Never Have I Ever by Isabel Yap</li>
+          <li>Unfortunate Elements of My Anatomy by Hailey Piper</li>
+        </ul>
+      </article>
+    '''
+
+    goodreads_novel = parser.parse_goodreads(
+      goodreads_html,
+      GOODREADS_URL,
+      'Ladies of Horror Fiction - Novel',
+      'Novel',
+      ('novel', 'best novel'))
+    file770_novel = parser.parse_file770_winners(
+      file770_html,
+      FILE770_2021_WINNERS_URL,
+      'Ladies of Horror Fiction - Novel',
+      'Novel',
+      ('novel', 'best novel'))
+    combined_novel = parser.combine_results(
+      'Ladies of Horror Fiction - Novel',
+      GOODREADS_URL,
+      goodreads_novel,
+      file770_novel)
+    graphic = parser.parse_goodreads(
+      goodreads_html,
+      GOODREADS_URL,
+      'Ladies of Horror Fiction - Graphic Novel',
+      'Graphic Novel',
+      ('graphic novel', 'best graphic novel'))
+    collection = parser.parse_file770_winners(
+      file770_html,
+      FILE770_2021_WINNERS_URL,
+      'Ladies of Horror Fiction - Collection',
+      'Collection',
+      ('collection', 'best collection'))
+
+    novel_rows = {entry['title']: entry for entry in combined_novel['entries']}
+    graphic_rows = {entry['title']: entry for entry in graphic['entries']}
+    collection_rows = {entry['title']: entry for entry in collection['entries']}
+
+    self.assertEqual('winner', novel_rows['Tender Is the Flesh']['result'])
+    self.assertEqual('2020', novel_rows['Tender Is the Flesh']['position'])
+    self.assertEqual('winner', novel_rows['Cackle']['result'])
+    self.assertEqual('2021', novel_rows['Cackle']['position'])
+    self.assertNotIn('Sister Glitter Blood', novel_rows)
+    self.assertEqual('winner', graphic_rows['The Low, Low Woods']['result'])
+    self.assertEqual('2020', graphic_rows['The Low, Low Woods']['position'])
+    self.assertEqual('winner', collection_rows['Never Have I Ever']['result'])
+    self.assertEqual('2021', collection_rows['Never Have I Ever']['position'])
+    self.assertEqual('winner', collection_rows['Unfortunate Elements of My Anatomy']['result'])
+    self.assertEqual('2021', collection_rows['Unfortunate Elements of My Anatomy']['position'])
+    self.assertTrue(any('not an official consolidated shortlist' in note
+                        for note in combined_novel['notes']))
+
+  def test_ladies_of_horror_fiction_fetchers_pagination_metadata_and_registry(self):
+    from parser.base import CATEGORY_HORROR_DARK_FICTION
+    from parser.ladies_of_horror_fiction import (
+      FILE770_2021_WINNERS_URL,
+      GOODREADS_URL,
+    )
+    from url_fetcher import available_url_fetchers
+
+    expected_ids = {
+      'ladies_of_horror_fiction_novel',
+      'ladies_of_horror_fiction_novella',
+      'ladies_of_horror_fiction_collection',
+      'ladies_of_horror_fiction_debut',
+      'ladies_of_horror_fiction_young_adult',
+      'ladies_of_horror_fiction_middle_grade',
+      'ladies_of_horror_fiction_poetry_collection',
+      'ladies_of_horror_fiction_graphic_novel',
+    }
+    fetchers = [
+      fetcher for fetcher in available_url_fetchers()
+      if fetcher.source_id in expected_ids
+    ]
+
+    self.assertEqual(expected_ids, {fetcher.source_id for fetcher in fetchers})
+    self.assertTrue(all(fetcher.options['match_series'] is False for fetcher in fetchers))
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},),
+                     fetchers[0].source_choices())
+    for fetcher in fetchers:
+      self.assertIn(CATEGORY_HORROR_DARK_FICTION,
+                    [item['label'] for item in fetcher.get_filter_list()])
+
+    page_two = GOODREADS_URL + '?page=2'
+    by_url = {
+      GOODREADS_URL: '''
+        <table>
+          <tr itemscope itemtype="http://schema.org/Book">
+            <td>
+              <a class="bookTitle"><span>Tender Is the Flesh</span></a>
+              <a class="authorName"><span>Agustina Bazterrica</span></a>
+              <i>Ladies of Horror Fiction Award for Best Novel (2020)</i>
+            </td>
+          </tr>
+        </table>
+        <a rel="next" href="/award/show/35484-ladies-of-horror-fiction-award?page=2">next</a>
+      ''',
+      page_two: '''
+        <table>
+          <tr itemscope itemtype="http://schema.org/Book">
+            <td>
+              <a class="bookTitle"><span>Cackle</span></a>
+              <a class="authorName"><span>Rachel Harrison</span></a>
+              <i>Ladies of Horror Fiction Award Nominee for Novel (2021)</i>
+            </td>
+          </tr>
+        </table>
+      ''',
+      FILE770_2021_WINNERS_URL: '''
+        <p><a href="https://www.ladiesofhorrorfiction.com/novel">LOHF Award for Best Novel</a></p>
+        <ul><li>Cackle by Rachel Harrison</li></ul>
+      ''',
+    }
+    fetched = []
+
+    def fetch_url(url):
+      fetched.append(url)
+      return by_url[url]
+
+    novel = [
+      fetcher for fetcher in fetchers
+      if fetcher.source_id == 'ladies_of_horror_fiction_novel'
+    ][0]
+    parsed = novel.fetch_and_parse(fetch_url)
+    rows = {entry['title']: entry for entry in parsed['entries']}
+
+    self.assertEqual('winner', rows['Tender Is the Flesh']['result'])
+    self.assertEqual('winner', rows['Cackle']['result'])
+    self.assertEqual('2021', rows['Cackle']['position'])
+    self.assertFalse(parsed['match_series'])
+    self.assertIn(page_two, fetched)
+    self.assertIn(FILE770_2021_WINNERS_URL, fetched)
+
+    registry_ids = [fetcher.source_id for fetcher in available_url_fetchers()]
+    self.assertLess(
+      registry_ids.index('splatterpunk_anthology'),
+      registry_ids.index('ladies_of_horror_fiction_novel'))
+    self.assertLess(
+      registry_ids.index('ladies_of_horror_fiction_graphic_novel'),
+      registry_ids.index('arthur_c_clarke_award_novel'))
 
   def test_builtin_url_fetchers_load_without_plugin_resources(self):
     core = object.__new__(main.ListSwitchboardCore)
@@ -647,7 +1922,7 @@ class ImportMatchingTest(unittest.TestCase):
       'r_fantasy_top_self_published_novels_2024',
       'sword_and_laser_book_list',
     ], source_ids[:4])
-    self.assertEqual(336, len(source_ids))
+    self.assertEqual(373, len(source_ids))
     self.assertIn('hammett_prize', source_ids)
     self.assertIn('nero_award', source_ids)
     self.assertIn('strand_critics_award_mystery_novel', source_ids)
@@ -658,6 +1933,17 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertIn('national_book_award_nonfiction', source_ids)
     self.assertIn('national_book_award_young_peoples_literature', source_ids)
     self.assertIn('william_c_morris_award', source_ids)
+    self.assertIn('british_fantasy_horror_novel', source_ids)
+    self.assertIn('british_fantasy_fantasy_novel', source_ids)
+    self.assertIn('british_fantasy_best_novel', source_ids)
+    self.assertIn('international_horror_guild_novel', source_ids)
+    self.assertIn('international_horror_guild_illustrated_narrative', source_ids)
+    self.assertIn('this_is_horror_novel', source_ids)
+    self.assertIn('this_is_horror_anthology', source_ids)
+    self.assertIn('splatterpunk_novel', source_ids)
+    self.assertIn('splatterpunk_anthology', source_ids)
+    self.assertIn('ladies_of_horror_fiction_novel', source_ids)
+    self.assertIn('ladies_of_horror_fiction_graphic_novel', source_ids)
     self.assertIn('yalsa_excellence_nonfiction_young_adults', source_ids)
     self.assertIn('baillie_gifford_prize', source_ids)
     self.assertIn('pen_galbraith_award_nonfiction', source_ids)
@@ -843,6 +2129,118 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertTrue(all(entry['category'] == 'Fiction' for entry in parsed['entries']))
     self.assertFalse(parsed['match_series'])
 
+  def test_goodreads_choice_awards_author_fallback_ignores_expanded_book_text(self):
+    from parser.goodreads_choice_awards import GoodreadsChoiceAwardsParser
+
+    html_template = '''
+      <main>
+        <h1>Readers' Favorite {category}</h1>
+        <h2>All Nominees</h2>
+        <div class="pollAnswer">
+          <span>4,429 votes</span>
+          <a href="/book/show/10644930-11-22-63">
+            <img alt="11/22/63 by Stephen King" />
+          </a>
+          <a href="/book/show/10644930-11-22-63">11/22/63</a>
+          <div>
+            by <a href="/author/show/3389.Stephen_King">Stephen King</a>
+            Problem: It's the wrong book It's the wrong edition Other Details
+            Cancel Thanks for telling us about the problem. Return to Book Page
+            Not the book you're looking for? Preview -- 11/22/63 by Stephen King
+            {first_winner_text}
+            On November 22, 1963, three shots rang out in Dallas, President
+            Kennedy died, and the world changed. What if you could change it
+            back? Stephen King's heart-stoppingly dramatic new novel is about a
+            man who travels back in time to prevent the JFK assassination.
+            Following his massively successful novel Under the Dome, King
+            sweeps readers back in time to another moment. ...more
+          </div>
+        </div>
+        <div class="pollAnswer">
+          <span>3,000 votes</span>
+          <a href="/book/show/13147230-the-long-earth">
+            <img alt="The Long Earth by Terry Pratchett &amp; Stephen Baxter" />
+          </a>
+          <a href="/book/show/13147230-the-long-earth">The Long Earth</a>
+          <div>
+            by <a href="/author/show/1654.Terry_Pratchett">Terry Pratchett</a>
+            &amp; <a href="/author/show/20296.Stephen_Baxter">Stephen Baxter</a>
+            {second_winner_text}
+            1916: the Western Front. Private Percy Blakeney wakes up. He is
+            lying on fresh spring grass. He can hear birdsong and the wind in
+            the leaves in the trees. Where have the mud, blood and blasted
+            landscape of No Man's Land gone? ...more
+          </div>
+        </div>
+      </main>
+    '''
+
+    cases = (
+      (
+        'Science Fiction',
+        'science-fiction',
+        2011,
+        'WINNER 4 & 429 votes 11/22/63 by Stephen King',
+        '',
+        [
+          ('2011', '11/22/63', 'Stephen King', 'winner'),
+          ('2011.01', 'The Long Earth', 'Terry Pratchett & Stephen Baxter', 'nominee'),
+        ],
+      ),
+      (
+        'Science Fiction',
+        'science-fiction',
+        2012,
+        '',
+        'WINNER 3,000 votes The Long Earth by Terry Pratchett & Stephen Baxter',
+        [
+          ('2012', 'The Long Earth', 'Terry Pratchett & Stephen Baxter', 'winner'),
+          ('2012.01', '11/22/63', 'Stephen King', 'nominee'),
+        ],
+      ),
+      (
+        'Romance',
+        'romance',
+        2012,
+        '',
+        'WINNER 3,000 votes The Long Earth by Terry Pratchett & Stephen Baxter',
+        [
+          ('2012', 'The Long Earth', 'Terry Pratchett & Stephen Baxter', 'winner'),
+          ('2012.01', '11/22/63', 'Stephen King', 'nominee'),
+        ],
+      ),
+      (
+        'Young Adult Fiction',
+        'young-adult-fiction',
+        2012,
+        '',
+        'WINNER 3,000 votes The Long Earth by Terry Pratchett & Stephen Baxter',
+        [
+          ('2012', 'The Long Earth', 'Terry Pratchett & Stephen Baxter', 'winner'),
+          ('2012.01', '11/22/63', 'Stephen King', 'nominee'),
+        ],
+      ),
+    )
+
+    for category, slug, year, first_winner_text, second_winner_text, expected in cases:
+      with self.subTest(category=category):
+        parsed = GoodreadsChoiceAwardsParser(category).parse(
+          '',
+          f'https://www.goodreads.com/choiceawards/readers-favorite-{slug}-books-{year}',
+          f'Goodreads Choice Awards - {category}',
+          category_pages=((
+            f'https://www.goodreads.com/choiceawards/readers-favorite-{slug}-books-{year}',
+            html_template.format(
+              category=category,
+              first_winner_text=first_winner_text,
+              second_winner_text=second_winner_text),
+          ),))
+
+        self.assertEqual(expected, [
+          (entry['position'], entry['title'], entry['author'], entry['result'])
+          for entry in parsed['entries']
+        ])
+
   def test_goodreads_choice_awards_parser_accepts_legacy_category_aliases(self):
     from parser.goodreads_choice_awards import GoodreadsChoiceAwardsParser
 
@@ -933,7 +2331,7 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertFalse(current.options['match_series'])
     self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), current.source_choices())
     self.assertEqual(
-      [2009, 2010, 2011],
+      [2011],
       list(goodreads_choice_candidate_years(date(2011, 7, 1))))
     self.assertIn(CATEGORY_ROMANCE, [item['label'] for item in current.get_filter_list()])
     self.assertIn(CATEGORY_LITERARY_GENERAL_FICTION, [
@@ -979,7 +2377,9 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertEqual('winner', parsed['entries'][0]['result'])
     self.assertEqual('Romance', parsed['entries'][0]['category'])
     self.assertFalse(parsed['match_series'])
-    self.assertIn(goodreads_choice_overview_url(2009), fetched)
+    self.assertIn(goodreads_choice_overview_url(2011), fetched)
+    self.assertNotIn(goodreads_choice_overview_url(2009), fetched)
+    self.assertNotIn(goodreads_choice_overview_url(2010), fetched)
     self.assertIn(
       'https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2025',
       fetched)
@@ -7234,7 +8634,7 @@ were ''[[Go Deep]]'' by [[Rilzy Adams]].
     self.assertLess(
       registry_ids.index('romantic_times_reviewers_choice_romance'),
       registry_ids.index('writers_trust_atwood_gibson_fiction'))
-    self.assertEqual(336, len(registry_ids))
+    self.assertEqual(373, len(registry_ids))
 
   def test_lambda_literary_awards_parser_reads_directory_and_current_shortlists(self):
     from parser.lambda_literary_awards import (

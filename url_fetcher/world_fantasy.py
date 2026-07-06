@@ -3,13 +3,14 @@
 
 from .generic import (
   CATEGORY_FANTASY,
+  CATEGORY_HORROR_DARK_FICTION,
   UrlFetcherGeneric,
 )
 from .isfdb_fallback import SFADBISFDYAwardFallbackMixin
 
 
 WORLD_FANTASY_AWARDS_URL = 'https://www.sfadb.com/World_Fantasy_Awards'
-WORLD_FANTASY_CATEGORIES = (CATEGORY_FANTASY,)
+WORLD_FANTASY_CATEGORIES = (CATEGORY_FANTASY, CATEGORY_HORROR_DARK_FICTION)
 
 
 class UrlFetcherWorldFantasy(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
