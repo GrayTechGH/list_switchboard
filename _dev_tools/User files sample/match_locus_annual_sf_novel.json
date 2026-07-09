@@ -3,9 +3,11 @@
   "matches": [
     {
       "entry_key": "nine princes in amber|roger zelazny",
-      "imported_author": "Roger Zelazny",
+      "imported_author": [
+        "Roger Zelazny"
+      ],
       "imported_title": "Nine Princes in Amber",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "Roger Zelazny"
       ],
@@ -25,10 +27,374 @@
       "matched_title": "The Great Book of Amber"
     },
     {
+      "entry_key": "the second trip|robert silverberg",
+      "imported_author": [
+        "Robert Silverberg"
+      ],
+      "imported_title": "The Second Trip",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Robert Silverberg"
+      ],
+      "matched_book_id": 39737,
+      "matched_book_ids": [
+        39737
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Robert Silverberg"
+          ],
+          "matched_book_id": 39737,
+          "matched_title": "To Live Again and The Second Trip"
+        }
+      ],
+      "matched_title": "To Live Again and The Second Trip"
+    },
+    {
+      "entry_key": "the fifth head of cerberus|gene wolfe",
+      "imported_author": [
+        "Gene Wolfe"
+      ],
+      "imported_title": "The Fifth Head of Cerberus",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Gene Wolfe"
+      ],
+      "matched_book_id": 39259,
+      "matched_book_ids": [
+        39259
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Gene Wolfe"
+          ],
+          "matched_book_id": 39259,
+          "matched_title": "The Fifth Head of Cerberus: Three Novellas"
+        }
+      ],
+      "matched_title": "The Fifth Head of Cerberus: Three Novellas"
+    },
+    {
+      "entry_key": "yesterday s children|david gerrold",
+      "imported_author": [
+        "David Gerrold"
+      ],
+      "imported_title": "Yesterday's Children",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "David Gerrold"
+      ],
+      "matched_book_id": 39211,
+      "matched_book_ids": [
+        39211
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "David Gerrold"
+          ],
+          "matched_book_id": 39211,
+          "matched_title": "Starhunt"
+        }
+      ],
+      "matched_title": "Starhunt"
+    },
+    {
+      "entry_key": "the cloud walker|edmund cooper",
+      "imported_author": [
+        "Edmund Cooper"
+      ],
+      "imported_title": "The Cloud Walker",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Edmund Cooper"
+      ],
+      "matched_book_id": 39228,
+      "matched_book_ids": [
+        39228
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Edmund Cooper"
+          ],
+          "matched_book_id": 39228,
+          "matched_title": "Edmund Cooper SF Gateway Omnibus: The Cloud Walker, All Fools' Day, a Far Sunset"
+        }
+      ],
+      "matched_title": "Edmund Cooper SF Gateway Omnibus: The Cloud Walker, All Fools' Day, a Far Sunset"
+    },
+    {
+      "entry_key": "the unsleeping eye|d g compton",
+      "imported_author": [
+        "D. G. Compton"
+      ],
+      "imported_title": "The Unsleeping Eye",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "D. G. Compton"
+      ],
+      "matched_book_id": 39204,
+      "matched_book_ids": [
+        39204
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "D. G. Compton"
+          ],
+          "matched_book_id": 39204,
+          "matched_title": "The Continuous Katherine Mortenhoe"
+        }
+      ],
+      "matched_title": "The Continuous Katherine Mortenhoe"
+    },
+    {
+      "entry_key": "the twilight of briareus|richard cowper",
+      "imported_author": [
+        "Richard Cowper"
+      ],
+      "imported_title": "The Twilight of Briareus",
+      "matched_at": "2026-07-08T05:57:54Z",
+      "matched_authors": [
+        "The Twilight of Briareus"
+      ],
+      "matched_book_id": 40117,
+      "matched_book_ids": [
+        40117,
+        39716
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Richard Cowper"
+          ],
+          "matched_book_id": 40117,
+          "matched_title": "The Twilight of Briareus"
+        },
+        {
+          "matched_authors": [
+            "The Twilight of Briareus"
+          ],
+          "matched_book_id": 39716,
+          "matched_title": "Richard Cowper"
+        }
+      ],
+      "matched_title": "Richard Cowper"
+    },
+    {
+      "entry_key": "the domains of koryphon|jack vance",
+      "imported_author": [
+        "Jack Vance"
+      ],
+      "imported_title": "The Domains of Koryphon",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Jack Vance"
+      ],
+      "matched_book_id": 39327,
+      "matched_book_ids": [
+        39327
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Jack Vance"
+          ],
+          "matched_book_id": 39327,
+          "matched_title": "The Gray Prince"
+        }
+      ],
+      "matched_title": "The Gray Prince"
+    },
+    {
+      "entry_key": "prince of annwn|evangeline walton",
+      "imported_author": [
+        "Evangeline Walton"
+      ],
+      "imported_title": "Prince of Annwn",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Evangeline Walton"
+      ],
+      "matched_book_id": 39237,
+      "matched_book_ids": [
+        39237
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Evangeline Walton"
+          ],
+          "matched_book_id": 39237,
+          "matched_title": "The Mabinogion Tetralogy: The Prince of Annwn, the Children of Llyr, the Song of Rhiannon, the Island of the Mighty"
+        }
+      ],
+      "matched_title": "The Mabinogion Tetralogy: The Prince of Annwn, the Children of Llyr, the Song of Rhiannon, the Island of the Mighty"
+    },
+    {
+      "entry_key": "showboat world|jack vance",
+      "imported_author": [
+        "Jack Vance"
+      ],
+      "imported_title": "Showboat World",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Jack Vance"
+      ],
+      "matched_book_id": 39331,
+      "matched_book_ids": [
+        39331
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Jack Vance"
+          ],
+          "matched_book_id": 39331,
+          "matched_title": "The Magnificent Showboats of the Lower Vissel River, Lune XXIII South, Big Planet"
+        }
+      ],
+      "matched_title": "The Magnificent Showboats of the Lower Vissel River, Lune XXIII South, Big Planet"
+    },
+    {
+      "entry_key": "illuminatus|robert shea robert anton wilson",
+      "imported_author": [
+        "Robert Shea & Robert Anton Wilson"
+      ],
+      "imported_title": "Illuminatus!",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Robert Shea",
+        "Robert Anton Wilson"
+      ],
+      "matched_book_id": 39727,
+      "matched_book_ids": [
+        39727
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Robert Shea",
+            "Robert Anton Wilson"
+          ],
+          "matched_book_id": 39727,
+          "matched_title": "The Illuminatus! Trilogy: The Eye in the Pyramid/The Golden Apple/Leviathan"
+        }
+      ],
+      "matched_title": "The Illuminatus! Trilogy: The Eye in the Pyramid/The Golden Apple/Leviathan"
+    },
+    {
+      "entry_key": "brothers of earth|c j cherryh",
+      "imported_author": [
+        "C. J. Cherryh"
+      ],
+      "imported_title": "Brothers of Earth",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "C. J. Cherryh"
+      ],
+      "matched_book_id": 18147,
+      "matched_book_ids": [
+        18147
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "C. J. Cherryh"
+          ],
+          "matched_book_id": 18147,
+          "matched_title": "At the Edge of Space"
+        }
+      ],
+      "matched_title": "At the Edge of Space"
+    },
+    {
+      "entry_key": "triton|samuel r delany",
+      "imported_author": [
+        "Samuel R. Delany"
+      ],
+      "imported_title": "Triton",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Samuel R. Delany",
+        "Kathy Acker"
+      ],
+      "matched_book_id": 38747,
+      "matched_book_ids": [
+        38747
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Samuel R. Delany",
+            "Kathy Acker"
+          ],
+          "matched_book_id": 38747,
+          "matched_title": "Trouble on Triton"
+        }
+      ],
+      "matched_title": "Trouble on Triton"
+    },
+    {
+      "entry_key": "the end of all songs|michael moorcock",
+      "imported_author": [
+        "Michael Moorcock"
+      ],
+      "imported_title": "The End of All Songs",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Michael Moorcock"
+      ],
+      "matched_book_id": 39624,
+      "matched_book_ids": [
+        39624
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Michael Moorcock"
+          ],
+          "matched_book_id": 39624,
+          "matched_title": "Dancers at the End of Time (Books 1-3)"
+        }
+      ],
+      "matched_title": "Dancers at the End of Time (Books 1-3)"
+    },
+    {
+      "entry_key": "moonstar odyssey|david gerrold",
+      "imported_author": [
+        "David Gerrold"
+      ],
+      "imported_title": "Moonstar Odyssey",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "David Gerrold"
+      ],
+      "matched_book_id": 38744,
+      "matched_book_ids": [
+        38744
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "David Gerrold"
+          ],
+          "matched_book_id": 38744,
+          "matched_title": "Moonstar: Jobe, Book One"
+        }
+      ],
+      "matched_title": "Moonstar: Jobe, Book One"
+    },
+    {
       "entry_key": "the faded sun kesrith|c j cherryh",
-      "imported_author": "C. J. Cherryh",
+      "imported_author": [
+        "C. J. Cherryh"
+      ],
       "imported_title": "The Faded Sun: Kesrith",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "C. J. Cherryh"
       ],
@@ -48,35 +414,62 @@
       "matched_title": "The Faded Sun Trilogy"
     },
     {
-      "entry_key": "stardance ii|spider robinson jeanne robinson",
-      "imported_author": "Spider Robinson & Jeanne Robinson",
-      "imported_title": "Stardance II",
-      "matched_at": "2026-05-27T15:56:20Z",
-      "matched_authors": [
-        "Spider Robinson",
-        "Jeanne Robinson"
+      "entry_key": "the outcasts of heaven s belt|joan d vinge",
+      "imported_author": [
+        "Joan D. Vinge"
       ],
-      "matched_book_id": 17084,
+      "imported_title": "The Outcasts of Heaven's Belt",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Joan D. Vinge"
+      ],
+      "matched_book_id": 39412,
       "matched_book_ids": [
-        17084
+        39412
       ],
       "matched_books": [
         {
           "matched_authors": [
-            "Spider Robinson",
-            "Jeanne Robinson"
+            "Joan D. Vinge"
           ],
-          "matched_book_id": 17084,
-          "matched_title": "The Stardance Trilogy (1-3)"
+          "matched_book_id": 39412,
+          "matched_title": "Heaven Chronicles"
         }
       ],
-      "matched_title": "The Stardance Trilogy (1-3)"
+      "matched_title": "Heaven Chronicles"
+    },
+    {
+      "entry_key": "hotel transylvania|chelsea quinn yarbro",
+      "imported_author": [
+        "Chelsea Quinn Yarbro"
+      ],
+      "imported_title": "Hotel Transylvania",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Chelsea Quinn Yarbro"
+      ],
+      "matched_book_id": 24672,
+      "matched_book_ids": [
+        24672
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Chelsea Quinn Yarbro"
+          ],
+          "matched_book_id": 24672,
+          "matched_title": "H\u00f4tel Transylvania"
+        }
+      ],
+      "matched_title": "H\u00f4tel Transylvania"
     },
     {
       "entry_key": "stardance|spider robinson jeanne robinson",
-      "imported_author": "Spider Robinson & Jeanne Robinson",
+      "imported_author": [
+        "Spider Robinson & Jeanne Robinson"
+      ],
       "imported_title": "Stardance",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "Spider Robinson",
         "Jeanne Robinson"
@@ -98,10 +491,37 @@
       "matched_title": "The Stardance Trilogy (1-3)"
     },
     {
+      "entry_key": "the face|jack vance",
+      "imported_author": [
+        "Jack Vance"
+      ],
+      "imported_title": "The Face",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Jack Vance"
+      ],
+      "matched_book_id": 18856,
+      "matched_book_ids": [
+        18856
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Jack Vance"
+          ],
+          "matched_book_id": 18856,
+          "matched_title": "The Demon Princes (Books 1-5)"
+        }
+      ],
+      "matched_title": "The Demon Princes (Books 1-5)"
+    },
+    {
       "entry_key": "kinsman|ben bova",
-      "imported_author": "Ben Bova",
+      "imported_author": [
+        "Ben Bova"
+      ],
       "imported_title": "Kinsman",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "Ben Bova"
       ],
@@ -121,10 +541,247 @@
       "matched_title": "The Kinsman Saga"
     },
     {
+      "entry_key": "catacomb years|michael bishop",
+      "imported_author": [
+        "Michael Bishop"
+      ],
+      "imported_title": "Catacomb Years",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Michael Bishop"
+      ],
+      "matched_book_id": 39619,
+      "matched_book_ids": [
+        39619
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Michael Bishop"
+          ],
+          "matched_book_id": 39619,
+          "matched_title": "The City and the Cygnets"
+        }
+      ],
+      "matched_title": "The City and the Cygnets"
+    },
+    {
+      "entry_key": "the two faces of tomorrow|james p hogan",
+      "imported_author": [
+        "James P. Hogan"
+      ],
+      "imported_title": "The Two Faces of Tomorrow",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "James P. Hogan"
+      ],
+      "matched_book_id": 39823,
+      "matched_book_ids": [
+        39823
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "James P. Hogan"
+          ],
+          "matched_book_id": 39823,
+          "matched_title": "Cyber Rogues"
+        }
+      ],
+      "matched_title": "Cyber Rogues"
+    },
+    {
+      "entry_key": "the day of the klesh|m a foster",
+      "imported_author": [
+        "M. A. Foster"
+      ],
+      "imported_title": "The Day of the Klesh",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "M. A. Foster"
+      ],
+      "matched_book_id": 36589,
+      "matched_book_ids": [
+        36589
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "M. A. Foster"
+          ],
+          "matched_book_id": 36589,
+          "matched_title": "The Book of the Ler"
+        }
+      ],
+      "matched_title": "The Book of the Ler"
+    },
+    {
+      "entry_key": "janissaries|jerry pournelle",
+      "imported_author": [
+        "Jerry Pournelle"
+      ],
+      "imported_title": "Janissaries",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Jerry Pournelle",
+        "Roland J. Green"
+      ],
+      "matched_book_id": 39409,
+      "matched_book_ids": [
+        39409
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Jerry Pournelle",
+            "Roland J. Green"
+          ],
+          "matched_book_id": 39409,
+          "matched_title": "Lord of Janissaries"
+        }
+      ],
+      "matched_title": "Lord of Janissaries"
+    },
+    {
+      "entry_key": "serpent s reach|c j cherryh",
+      "imported_author": [
+        "C. J. Cherryh"
+      ],
+      "imported_title": "Serpent's Reach",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "C. J. Cherryh"
+      ],
+      "matched_book_id": 18129,
+      "matched_book_ids": [
+        18129
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "C. J. Cherryh"
+          ],
+          "matched_book_id": 18129,
+          "matched_title": "The Deep Beyond"
+        }
+      ],
+      "matched_title": "The Deep Beyond"
+    },
+    {
+      "entry_key": "wild seed|octavia e butler",
+      "imported_author": [
+        "Octavia E. Butler"
+      ],
+      "imported_title": "Wild Seed",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Octavia E. Butler"
+      ],
+      "matched_book_id": 16989,
+      "matched_book_ids": [
+        16989
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Octavia E. Butler"
+          ],
+          "matched_book_id": 16989,
+          "matched_title": "Seed to Harvest: The Complete Patternist Series"
+        }
+      ],
+      "matched_title": "Seed to Harvest: The Complete Patternist Series"
+    },
+    {
+      "entry_key": "the many colored land|julian may",
+      "imported_author": [
+        "Julian May"
+      ],
+      "imported_title": "The Many-Colored Land",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Julian May"
+      ],
+      "matched_book_id": 39479,
+      "matched_book_ids": [
+        39479
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Julian May"
+          ],
+          "matched_book_id": 39479,
+          "matched_title": "The Many-Coloured Land"
+        }
+      ],
+      "matched_title": "The Many-Coloured Land"
+    },
+    {
+      "entry_key": "twelve fair kingdoms|suzette haden elgin",
+      "imported_author": [
+        "Suzette Haden Elgin"
+      ],
+      "imported_title": "Twelve Fair Kingdoms",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Suzette Haden Elgin"
+      ],
+      "matched_book_id": 39800,
+      "matched_book_ids": [
+        39800
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Suzette Haden Elgin"
+          ],
+          "matched_book_id": 39800,
+          "matched_title": "The Ozark Trilogy"
+        }
+      ],
+      "matched_title": "The Ozark Trilogy"
+    },
+    {
+      "entry_key": "giants star|james hogan",
+      "imported_author": [
+        "James Hogan"
+      ],
+      "imported_title": "Giants' Star",
+      "matched_at": "2026-07-08T05:57:54Z",
+      "matched_authors": [
+        "James P. Hogan"
+      ],
+      "matched_book_id": 39375,
+      "matched_book_ids": [
+        39375,
+        39362
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "James P. Hogan"
+          ],
+          "matched_book_id": 39375,
+          "matched_title": "Giants' Star"
+        },
+        {
+          "matched_authors": [
+            "James P. Hogan"
+          ],
+          "matched_book_id": 39362,
+          "matched_title": "The Two Worlds"
+        }
+      ],
+      "matched_title": "The Two Worlds"
+    },
+    {
       "entry_key": "valis|philip k dick",
-      "imported_author": "Philip K. Dick",
+      "imported_author": [
+        "Philip K. Dick"
+      ],
       "imported_title": "VALIS",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "Philip K. Dick"
       ],
@@ -145,9 +802,11 @@
     },
     {
       "entry_key": "lilith|jack l chalker",
-      "imported_author": "Jack L. Chalker",
+      "imported_author": [
+        "Jack L. Chalker"
+      ],
       "imported_title": "Lilith",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "Jack L. Chalker"
       ],
@@ -167,10 +826,112 @@
       "matched_title": "Lilith: A Snake in the Grass"
     },
     {
+      "entry_key": "roderick|john sladek",
+      "imported_author": [
+        "John Sladek"
+      ],
+      "imported_title": "Roderick",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "John Sladek"
+      ],
+      "matched_book_id": 39463,
+      "matched_book_ids": [
+        39463
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "John Sladek"
+          ],
+          "matched_book_id": 39463,
+          "matched_title": "The Complete Roderick"
+        }
+      ],
+      "matched_title": "The Complete Roderick"
+    },
+    {
+      "entry_key": "eye of cat|roger zelazny",
+      "imported_author": [
+        "Roger Zelazny"
+      ],
+      "imported_title": "Eye of Cat",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Roger Zelazny"
+      ],
+      "matched_book_id": 39744,
+      "matched_book_ids": [
+        39744
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Roger Zelazny"
+          ],
+          "matched_book_id": 39744,
+          "matched_title": "Isle of the Dead / Eye of Cat"
+        }
+      ],
+      "matched_title": "Isle of the Dead / Eye of Cat"
+    },
+    {
+      "entry_key": "a rose for armageddon|hilbert schenck",
+      "imported_author": [
+        "Hilbert Schenck"
+      ],
+      "imported_title": "A Rose for Armageddon",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Unknown Author"
+      ],
+      "matched_book_id": 39820,
+      "matched_book_ids": [
+        39820
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Unknown Author"
+          ],
+          "matched_book_id": 39820,
+          "matched_title": "A Rose for Armageddon"
+        }
+      ],
+      "matched_title": "A Rose for Armageddon"
+    },
+    {
+      "entry_key": "transformer|m a foster",
+      "imported_author": [
+        "M. A. Foster"
+      ],
+      "imported_title": "Transformer",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "M. A. Foster"
+      ],
+      "matched_book_id": 39593,
+      "matched_book_ids": [
+        39593
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "M. A. Foster"
+          ],
+          "matched_book_id": 39593,
+          "matched_title": "The transformer trilogy"
+        }
+      ],
+      "matched_title": "The transformer trilogy"
+    },
+    {
       "entry_key": "the integral trees|larry niven",
-      "imported_author": "Larry Niven",
+      "imported_author": [
+        "Larry Niven"
+      ],
       "imported_title": "The Integral Trees",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "Larry Niven"
       ],
@@ -190,10 +951,37 @@
       "matched_title": "The Integral Trees: A Novel (The State 2-3)"
     },
     {
+      "entry_key": "the memory of whiteness|kim stanley robinson",
+      "imported_author": [
+        "Kim Stanley Robinson"
+      ],
+      "imported_title": "The Memory of Whiteness",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Kim Stanley Robinson"
+      ],
+      "matched_book_id": 39540,
+      "matched_book_ids": [
+        39540
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Kim Stanley Robinson"
+          ],
+          "matched_book_id": 39540,
+          "matched_title": "The Memory of Whiteness: A Scientific Romance"
+        }
+      ],
+      "matched_title": "The Memory of Whiteness: A Scientific Romance"
+    },
+    {
       "entry_key": "schismatrix|bruce sterling",
-      "imported_author": "Bruce Sterling",
+      "imported_author": [
+        "Bruce Sterling"
+      ],
       "imported_title": "Schismatrix",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "Bruce Sterling"
       ],
@@ -214,9 +1002,11 @@
     },
     {
       "entry_key": "chapterhouse dune|frank herbert",
-      "imported_author": "Frank Herbert",
+      "imported_author": [
+        "Frank Herbert"
+      ],
       "imported_title": "Chapterhouse: Dune",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "Frank Herbert"
       ],
@@ -236,10 +1026,37 @@
       "matched_title": "Chapterhouse: Dune: Dune"
     },
     {
+      "entry_key": "five twelfths of heaven|melissa scott",
+      "imported_author": [
+        "Melissa Scott"
+      ],
+      "imported_title": "Five-Twelfths of Heaven",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Melissa Scott"
+      ],
+      "matched_book_id": 18011,
+      "matched_book_ids": [
+        18011
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Melissa Scott"
+          ],
+          "matched_book_id": 18011,
+          "matched_title": "The Roads of Heaven Trilogy"
+        }
+      ],
+      "matched_title": "The Roads of Heaven Trilogy"
+    },
+    {
       "entry_key": "santiago|mike resnick",
-      "imported_author": "Mike Resnick",
+      "imported_author": [
+        "Mike Resnick"
+      ],
       "imported_title": "Santiago",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "Mike Resnick"
       ],
@@ -259,10 +1076,73 @@
       "matched_title": "Santiago: A Myth of the Far Future"
     },
     {
+      "entry_key": "lear s daughters|m bradley kellogg with william rossow",
+      "imported_author": [
+        "M. Bradley Kellogg with William Rossow"
+      ],
+      "imported_title": "Lear's Daughters",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Marjorie B. Kellogg",
+        "William B. Rossow"
+      ],
+      "matched_book_id": 39595,
+      "matched_book_ids": [
+        39595,
+        39596
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Marjorie Bradley Kellogg",
+            "William B. Rossow"
+          ],
+          "matched_book_id": 39595,
+          "matched_title": "The Wave and the Flame"
+        },
+        {
+          "matched_authors": [
+            "Marjorie B. Kellogg",
+            "William B. Rossow"
+          ],
+          "matched_book_id": 39596,
+          "matched_title": "Reign of Fire"
+        }
+      ],
+      "matched_title": "Reign of Fire"
+    },
+    {
+      "entry_key": "the nimrod hunt|charles sheffield",
+      "imported_author": [
+        "Charles Sheffield"
+      ],
+      "imported_title": "The Nimrod Hunt",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Charles Sheffield"
+      ],
+      "matched_book_id": 29192,
+      "matched_book_ids": [
+        29192
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Charles Sheffield"
+          ],
+          "matched_book_id": 29192,
+          "matched_title": "The Mind Pool"
+        }
+      ],
+      "matched_title": "The Mind Pool"
+    },
+    {
       "entry_key": "the ragged astronauts|bob shaw",
-      "imported_author": "Bob Shaw",
+      "imported_author": [
+        "Bob Shaw"
+      ],
       "imported_title": "The Ragged Astronauts",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "Bob Shaw"
       ],
@@ -283,9 +1163,11 @@
     },
     {
       "entry_key": "the legacy of heorot larry niven|jerry pournelle steven barnes",
-      "imported_author": "Jerry Pournelle & Steven Barnes",
+      "imported_author": [
+        "Jerry Pournelle & Steven Barnes"
+      ],
       "imported_title": "The Legacy of Heorot , Larry Niven",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "Larry Niven",
         "Jerry Pournelle",
@@ -309,10 +1191,62 @@
       "matched_title": "The Legacy of Heorot"
     },
     {
+      "entry_key": "code blue emergency|james white",
+      "imported_author": [
+        "James White"
+      ],
+      "imported_title": "Code Blue \u2014 Emergency!",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "James White"
+      ],
+      "matched_book_id": 13487,
+      "matched_book_ids": [
+        13487
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "James White"
+          ],
+          "matched_book_id": 13487,
+          "matched_title": "General Practice (Books 7,8)"
+        }
+      ],
+      "matched_title": "General Practice (Books 7,8)"
+    },
+    {
+      "entry_key": "brothers in arms|lois mcmaster bujold",
+      "imported_author": [
+        "Lois McMaster Bujold"
+      ],
+      "imported_title": "Brothers in Arms",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Lois McMaster Bujold"
+      ],
+      "matched_book_id": 11144,
+      "matched_book_ids": [
+        11144
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Lois McMaster Bujold"
+          ],
+          "matched_book_id": 11144,
+          "matched_title": "Miles Errant (Books 7.2, 8, 9)"
+        }
+      ],
+      "matched_title": "Miles Errant (Books 7.2, 8, 9)"
+    },
+    {
       "entry_key": "ivory|mike resnick",
-      "imported_author": "Mike Resnick",
+      "imported_author": [
+        "Mike Resnick"
+      ],
       "imported_title": "Ivory",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "Mike Resnick"
       ],
@@ -332,10 +1266,112 @@
       "matched_title": "Ivory: A Legend of Past and Future"
     },
     {
+      "entry_key": "wetware|rudy rucker",
+      "imported_author": [
+        "Rudy Rucker"
+      ],
+      "imported_title": "Wetware",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Rudy Rucker"
+      ],
+      "matched_book_id": 39760,
+      "matched_book_ids": [
+        39760
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Rudy Rucker"
+          ],
+          "matched_book_id": 39760,
+          "matched_title": "The Ware Tetralogy"
+        }
+      ],
+      "matched_title": "The Ware Tetralogy"
+    },
+    {
+      "entry_key": "the vor game|lois mcmaster bujold",
+      "imported_author": [
+        "Lois McMaster Bujold"
+      ],
+      "imported_title": "The Vor Game",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Lois McMaster Bujold"
+      ],
+      "matched_book_id": 11149,
+      "matched_book_ids": [
+        11149
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Lois McMaster Bujold"
+          ],
+          "matched_book_id": 11149,
+          "matched_title": "Young Miles (Books 4, 4.1, 5)"
+        }
+      ],
+      "matched_title": "Young Miles (Books 4, 4.1, 5)"
+    },
+    {
+      "entry_key": "the ring of charon|roger macbride allen",
+      "imported_author": [
+        "Roger MacBride Allen"
+      ],
+      "imported_title": "The Ring of Charon",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Roger MacBride Allen"
+      ],
+      "matched_book_id": 39743,
+      "matched_book_ids": [
+        39743
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Roger MacBride Allen"
+          ],
+          "matched_book_id": 39743,
+          "matched_title": "Hunted Earth Omnibus"
+        }
+      ],
+      "matched_title": "Hunted Earth Omnibus"
+    },
+    {
+      "entry_key": "summertide|charles sheffield",
+      "imported_author": [
+        "Charles Sheffield"
+      ],
+      "imported_title": "Summertide",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Charles Sheffield"
+      ],
+      "matched_book_id": 11717,
+      "matched_book_ids": [
+        11717
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Charles Sheffield"
+          ],
+          "matched_book_id": 11717,
+          "matched_title": "Convergent Series (Books 1,2)"
+        }
+      ],
+      "matched_title": "Convergent Series (Books 1,2)"
+    },
+    {
       "entry_key": "the ghost from the grand banks|arthur c clarke",
-      "imported_author": "Arthur C. Clarke",
+      "imported_author": [
+        "Arthur C. Clarke"
+      ],
       "imported_title": "The Ghost from the Grand Banks",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "Arthur C. Clarke"
       ],
@@ -355,10 +1391,37 @@
       "matched_title": "The Ghost From the Grand Banks and the Deep Range"
     },
     {
+      "entry_key": "barrayar|lois mcmaster bujold",
+      "imported_author": [
+        "Lois McMaster Bujold"
+      ],
+      "imported_title": "Barrayar",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Lois McMaster Bujold"
+      ],
+      "matched_book_id": 117,
+      "matched_book_ids": [
+        117
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Lois McMaster Bujold"
+          ],
+          "matched_book_id": 117,
+          "matched_title": "Cordelia's Honor (Books 2-3)"
+        }
+      ],
+      "matched_title": "Cordelia's Honor (Books 2-3)"
+    },
+    {
       "entry_key": "bone dance|emma bull",
-      "imported_author": "Emma Bull",
+      "imported_author": [
+        "Emma Bull"
+      ],
       "imported_title": "Bone Dance",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "Emma Bull"
       ],
@@ -378,17 +1441,95 @@
       "matched_title": "Bone Dance: A Fantasy for Technophiles"
     },
     {
+      "entry_key": "death qualified a mystery of chaos|kate wilhelm",
+      "imported_author": [
+        "Kate Wilhelm"
+      ],
+      "imported_title": "Death Qualified: A Mystery of Chaos",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Kate Wilhelm"
+      ],
+      "matched_book_id": 39507,
+      "matched_book_ids": [
+        39507
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Kate Wilhelm"
+          ],
+          "matched_book_id": 39507,
+          "matched_title": "Death Qualified"
+        }
+      ],
+      "matched_title": "Death Qualified"
+    },
+    {
+      "entry_key": "hellburner|c j cherryh",
+      "imported_author": [
+        "C. J. Cherryh"
+      ],
+      "imported_title": "Hellburner",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "C. J. Cherryh"
+      ],
+      "matched_book_id": 18140,
+      "matched_book_ids": [
+        18140
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "C. J. Cherryh"
+          ],
+          "matched_book_id": 18140,
+          "matched_title": "Devil to the Belt"
+        }
+      ],
+      "matched_title": "Devil to the Belt"
+    },
+    {
+      "entry_key": "hearts hands and voices|ian mcdonald",
+      "imported_author": [
+        "Ian McDonald"
+      ],
+      "imported_title": "Hearts, Hands and Voices",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Ian McDonald"
+      ],
+      "matched_book_id": 38989,
+      "matched_book_ids": [
+        38989
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Ian McDonald"
+          ],
+          "matched_book_id": 38989,
+          "matched_title": "The Broken Land"
+        }
+      ],
+      "matched_title": "The Broken Land"
+    },
+    {
       "entry_key": "nightside the long sun|gene wolfe",
-      "imported_author": "Gene Wolfe",
+      "imported_author": [
+        "Gene Wolfe"
+      ],
       "imported_title": "Nightside the Long Sun",
-      "matched_at": "2026-06-02T02:45:05Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "Gene Wolfe"
       ],
       "matched_book_id": 20099,
       "matched_book_ids": [
         20099,
-        38627
+        38627,
+        38628
       ],
       "matched_books": [
         {
@@ -404,16 +1545,75 @@
             "Gene Wolfe"
           ],
           "matched_book_id": 38627,
-          "matched_title": "Epiphany of the Long Sun"
+          "matched_title": "Epiphany of the Long Sun (Books 8-9)"
+        },
+        {
+          "matched_authors": [
+            "Gene Wolfe"
+          ],
+          "matched_book_id": 38628,
+          "matched_title": "Litany of the Long Sun (Books 6-7)"
         }
       ],
-      "matched_title": "Epiphany of the Long Sun"
+      "matched_title": "Litany of the Long Sun (Books 6-7)"
+    },
+    {
+      "entry_key": "worldwar in the balance|harry turtledove",
+      "imported_author": [
+        "Harry Turtledove"
+      ],
+      "imported_title": "Worldwar: In the Balance",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Harry Turtledove"
+      ],
+      "matched_book_id": 39300,
+      "matched_book_ids": [
+        39300
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Harry Turtledove"
+          ],
+          "matched_book_id": 39300,
+          "matched_title": "Worldwar: In the Balance / Tilting the Balance (Books 1-2)"
+        }
+      ],
+      "matched_title": "Worldwar: In the Balance / Tilting the Balance (Books 1-2)"
+    },
+    {
+      "entry_key": "climbing olympus|kevin j anderson",
+      "imported_author": [
+        "Kevin J. Anderson"
+      ],
+      "imported_title": "Climbing Olympus",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Kevin J. Anderson"
+      ],
+      "matched_book_id": 39534,
+      "matched_book_ids": [
+        39534
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Kevin J. Anderson"
+          ],
+          "matched_book_id": 39534,
+          "matched_title": "Climbing Olympus: A Gripping Space Adventure of Medical Science and Rebellion on Mars"
+        }
+      ],
+      "matched_title": "Climbing Olympus: A Gripping Space Adventure of Medical Science and Rebellion on Mars"
     },
     {
       "entry_key": "the diamond age|neal stephenson",
-      "imported_author": "Neal Stephenson",
+      "imported_author": [
+        "Neal Stephenson"
+      ],
       "imported_title": "The Diamond Age",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "Neal Stephenson"
       ],
@@ -433,10 +1633,151 @@
       "matched_title": "The Diamond Age: Or, a Young Lady's Illustrated Primer"
     },
     {
+      "entry_key": "the golden nineties|lisa mason",
+      "imported_author": [
+        "Lisa Mason"
+      ],
+      "imported_title": "The Golden Nineties",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Mason, Lisa"
+      ],
+      "matched_book_id": 39587,
+      "matched_book_ids": [
+        39587
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Mason, Lisa"
+          ],
+          "matched_book_id": 39587,
+          "matched_title": "The Gilded Age \u00b7 A Time Travel"
+        }
+      ],
+      "matched_title": "The Gilded Age \u00b7 A Time Travel"
+    },
+    {
+      "entry_key": "cetaganda|lois mcmaster bujold",
+      "imported_author": [
+        "Lois McMaster Bujold"
+      ],
+      "imported_title": "Cetaganda",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Lois McMaster Bujold"
+      ],
+      "matched_book_id": 11147,
+      "matched_book_ids": [
+        11147
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Lois McMaster Bujold"
+          ],
+          "matched_book_id": 11147,
+          "matched_title": "Miles, Mystery & Mayhem (Books 6, 7, 7.1)"
+        }
+      ],
+      "matched_title": "Miles, Mystery & Mayhem (Books 6, 7, 7.1)"
+    },
+    {
+      "entry_key": "otherland city of golden shadow|tad williams",
+      "imported_author": [
+        "Tad Williams"
+      ],
+      "imported_title": "Otherland: City of Golden Shadow",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Tad Williams"
+      ],
+      "matched_book_id": 17107,
+      "matched_book_ids": [
+        17107
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Tad Williams"
+          ],
+          "matched_book_id": 17107,
+          "matched_title": "City of Golden Shadow"
+        }
+      ],
+      "matched_title": "City of Golden Shadow"
+    },
+    {
+      "entry_key": "otherland river of blue fire|tad williams",
+      "imported_author": [
+        "Tad Williams"
+      ],
+      "imported_title": "Otherland: River of Blue Fire",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Tad Williams"
+      ],
+      "matched_book_id": 14385,
+      "matched_book_ids": [
+        14385
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Tad Williams"
+          ],
+          "matched_book_id": 14385,
+          "matched_title": "River of Blue Fire"
+        }
+      ],
+      "matched_title": "River of Blue Fire"
+    },
+    {
+      "entry_key": "moonfall|jack mcdevitt",
+      "imported_author": [
+        "Jack McDevitt"
+      ],
+      "imported_title": "Moonfall",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Jack McDevitt"
+      ],
+      "matched_book_id": 36779,
+      "matched_book_ids": [
+        36779
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Jack McDevitt"
+          ],
+          "matched_book_id": 36779,
+          "matched_title": "Moonfall: A Spellbinding Science Fiction Thriller of Heroism, Hope, and Apocalyptic Survival"
+        }
+      ],
+      "matched_title": "Moonfall: A Spellbinding Science Fiction Thriller of Heroism, Hope, and Apocalyptic Survival"
+    },
+    {
+      "entry_key": "the cassini division|ken macleod",
+      "ignored": true,
+      "imported_author": [
+        "Ken MacLeod"
+      ],
+      "imported_title": "The Cassini Division",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-08T05:57:54Z"
+    },
+    {
       "entry_key": "time manifold 1|stephen baxter",
-      "imported_author": "Stephen Baxter",
+      "imported_author": [
+        "Stephen Baxter"
+      ],
       "imported_title": "Time: Manifold 1",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "Stephen Baxter"
       ],
@@ -457,9 +1798,11 @@
     },
     {
       "entry_key": "space manifold 2|stephen baxter",
-      "imported_author": "Stephen Baxter",
+      "imported_author": [
+        "Stephen Baxter"
+      ],
       "imported_title": "Space: Manifold 2",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "Stephen Baxter"
       ],
@@ -480,9 +1823,11 @@
     },
     {
       "entry_key": "origin manifold 3|stephen baxter",
-      "imported_author": "Stephen Baxter",
+      "imported_author": [
+        "Stephen Baxter"
+      ],
       "imported_title": "Origin: Manifold 3",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "Stephen Baxter"
       ],
@@ -503,11 +1848,12 @@
     },
     {
       "entry_key": "coyote|allen steele",
-      "imported_author": "Allen Steele",
+      "imported_author": [
+        "Allen Steele"
+      ],
       "imported_title": "Coyote",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
-        "Allen Steele",
         "Allen M. Steele"
       ],
       "matched_book_id": 36409,
@@ -517,7 +1863,6 @@
       "matched_books": [
         {
           "matched_authors": [
-            "Allen Steele",
             "Allen M. Steele"
           ],
           "matched_book_id": 36409,
@@ -527,33 +1872,78 @@
       "matched_title": "Coyote: A Novel of Interstellar Exploration"
     },
     {
-      "entry_key": "quicksilver|neal stephenson",
-      "imported_author": "Neal Stephenson",
-      "imported_title": "Quicksilver",
-      "matched_at": "2026-05-27T15:56:20Z",
-      "matched_authors": [
-        "Neal Stephenson"
+      "entry_key": "ruled britannia|harry turtledove",
+      "imported_author": [
+        "Harry Turtledove"
       ],
-      "matched_book_id": 33672,
+      "imported_title": "Ruled Britannia",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Harry Turtledove"
+      ],
+      "matched_book_id": 39306,
       "matched_book_ids": [
-        33672
+        39306
       ],
       "matched_books": [
         {
           "matched_authors": [
-            "Neal Stephenson"
+            "Harry Turtledove"
           ],
-          "matched_book_id": 33672,
-          "matched_title": "Quicksilver (Books 1-3)"
+          "matched_book_id": 39306,
+          "matched_title": "Ruled Britannia: A Novel of Alternate History"
         }
       ],
-      "matched_title": "Quicksilver (Books 1-3)"
+      "matched_title": "Ruled Britannia: A Novel of Alternate History"
+    },
+    {
+      "entry_key": "the golden age the phoenix exultant the golden transcendence|john c wright",
+      "imported_author": [
+        "John C. Wright"
+      ],
+      "imported_title": "The Golden Age: The Phoenix Exultant; The Golden Transcendence",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "John C. Wright"
+      ],
+      "matched_book_id": 16795,
+      "matched_book_ids": [
+        16795,
+        16796,
+        16797
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "John C. Wright"
+          ],
+          "matched_book_id": 16795,
+          "matched_title": "The Phoenix Exultant"
+        },
+        {
+          "matched_authors": [
+            "John C. Wright"
+          ],
+          "matched_book_id": 16796,
+          "matched_title": "The Golden Transcendence"
+        },
+        {
+          "matched_authors": [
+            "John C. Wright"
+          ],
+          "matched_book_id": 16797,
+          "matched_title": "The Golden Age"
+        }
+      ],
+      "matched_title": "The Golden Age"
     },
     {
       "entry_key": "succession the risen empire the killing of worlds|scott westerfeld",
-      "imported_author": "Scott Westerfeld",
+      "imported_author": [
+        "Scott Westerfeld"
+      ],
       "imported_title": "Succession: The Risen Empire; The Killing of Worlds",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "Scott Westerfeld"
       ],
@@ -573,10 +1963,120 @@
       "matched_title": "Succession"
     },
     {
+      "entry_key": "felaheen the third arabesk|jon courtenay grimwood",
+      "imported_author": [
+        "Jon Courtenay Grimwood"
+      ],
+      "imported_title": "Felaheen: The Third Arabesk",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Jon Courtenay Grimwood"
+      ],
+      "matched_book_id": 38939,
+      "matched_book_ids": [
+        38939
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Jon Courtenay Grimwood"
+          ],
+          "matched_book_id": 38939,
+          "matched_title": "Arabesk"
+        }
+      ],
+      "matched_title": "Arabesk"
+    },
+    {
+      "entry_key": "the baroque cycle the confusion the system of the world|neal stephenson",
+      "imported_author": [
+        "Neal Stephenson"
+      ],
+      "imported_title": "The Baroque Cycle: The Confusion; The System of the World",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Neal Stephenson"
+      ],
+      "matched_book_id": 33358,
+      "matched_book_ids": [
+        33358,
+        33708
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Neal Stephenson"
+          ],
+          "matched_book_id": 33358,
+          "matched_title": "The Confusion"
+        },
+        {
+          "matched_authors": [
+            "Neal Stephenson"
+          ],
+          "matched_book_id": 33708,
+          "matched_title": "The System of the World"
+        }
+      ],
+      "matched_title": "The System of the World"
+    },
+    {
+      "entry_key": "spondulix|paul di filippo",
+      "imported_author": [
+        "Paul Di Filippo"
+      ],
+      "imported_title": "Spondulix",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Paul Di Filippo"
+      ],
+      "matched_book_id": 39660,
+      "matched_book_ids": [
+        39660
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Paul Di Filippo"
+          ],
+          "matched_book_id": 39660,
+          "matched_title": "Spondulix: A Romance of Hoboken"
+        }
+      ],
+      "matched_title": "Spondulix: A Romance of Hoboken"
+    },
+    {
+      "entry_key": "mind s eye|paul mcauley",
+      "imported_author": [
+        "Paul McAuley"
+      ],
+      "imported_title": "Mind's Eye",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Paul J. McAuley"
+      ],
+      "matched_book_id": 39665,
+      "matched_book_ids": [
+        39665
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Paul J. McAuley"
+          ],
+          "matched_book_id": 39665,
+          "matched_title": "Minds Eye"
+        }
+      ],
+      "matched_title": "Minds Eye"
+    },
+    {
       "entry_key": "rainbows end|vernor vinge",
-      "imported_author": "Vernor Vinge",
+      "imported_author": [
+        "Vernor Vinge"
+      ],
       "imported_title": "Rainbows End",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "Vernor Vinge"
       ],
@@ -596,10 +2096,78 @@
       "matched_title": "Rainbows End: A Novel with One Foot in the Future"
     },
     {
+      "entry_key": "black man|richard morgan",
+      "imported_author": [
+        "Richard Morgan"
+      ],
+      "imported_title": "Black Man",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Richard K. Morgan"
+      ],
+      "matched_book_id": 36813,
+      "matched_book_ids": [
+        36813
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Richard K. Morgan"
+          ],
+          "matched_book_id": 36813,
+          "matched_title": "Thirteen"
+        }
+      ],
+      "matched_title": "Thirteen"
+    },
+    {
+      "entry_key": "engineer trilogy devices and desires evil for evil the escapement|k j parker",
+      "imported_author": [
+        "K. J. Parker"
+      ],
+      "imported_title": "Engineer Trilogy: Devices and Desires/Evil for Evil/The Escapement",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "K. J. Parker"
+      ],
+      "matched_book_id": 39485,
+      "matched_book_ids": [
+        39485,
+        39486,
+        39487
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "K. J. Parker"
+          ],
+          "matched_book_id": 39485,
+          "matched_title": "Devices and Desires"
+        },
+        {
+          "matched_authors": [
+            "K. J. Parker"
+          ],
+          "matched_book_id": 39486,
+          "matched_title": "The Escapement"
+        },
+        {
+          "matched_authors": [
+            "K. J. Parker"
+          ],
+          "matched_book_id": 39487,
+          "matched_title": "Evil for Evil"
+        }
+      ],
+      "matched_title": "Evil for Evil"
+    },
+    {
       "entry_key": "julian comstock a story of 22nd century america|robert charles wilson",
-      "imported_author": "Robert Charles Wilson",
+      "imported_author": [
+        "Robert Charles Wilson"
+      ],
       "imported_title": "Julian Comstock: A Story of 22nd-Century America",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "Robert Charles Wilson"
       ],
@@ -620,40 +2188,96 @@
     },
     {
       "entry_key": "blackout all clear|connie willis",
-      "imported_author": "Connie Willis",
+      "imported_author": [
+        "Connie Willis"
+      ],
       "imported_title": "Blackout/All Clear",
-      "matched_at": "2026-05-28T21:16:43Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "Connie Willis"
       ],
-      "matched_book_id": 31350,
+      "matched_book_id": 31349,
       "matched_book_ids": [
-        31350,
-        31349
+        31349,
+        31350
       ],
       "matched_books": [
         {
           "matched_authors": [
             "Connie Willis"
           ],
-          "matched_book_id": 31350,
-          "matched_title": "Blackout"
+          "matched_book_id": 31349,
+          "matched_title": "All Clear"
         },
         {
           "matched_authors": [
             "Connie Willis"
           ],
-          "matched_book_id": 31349,
-          "matched_title": "All Clear"
+          "matched_book_id": 31350,
+          "matched_title": "Blackout"
         }
       ],
-      "matched_title": "All Clear"
+      "matched_title": "Blackout"
+    },
+    {
+      "entry_key": "this shared dream|kathleen ann goonan",
+      "imported_author": [
+        "Kathleen Ann Goonan"
+      ],
+      "imported_title": "This Shared Dream",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Kathleen Ann Goonan"
+      ],
+      "matched_book_id": 39532,
+      "matched_book_ids": [
+        39532
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Kathleen Ann Goonan"
+          ],
+          "matched_book_id": 39532,
+          "matched_title": "This Shared Dream: A Novel"
+        }
+      ],
+      "matched_title": "This Shared Dream: A Novel"
+    },
+    {
+      "entry_key": "the rapture of the nerds|cory doctorow charles stross",
+      "imported_author": [
+        "Cory Doctorow & Charles Stross"
+      ],
+      "imported_title": "The Rapture of the Nerds",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Cory Doctorow",
+        "Charles Stross"
+      ],
+      "matched_book_id": 39200,
+      "matched_book_ids": [
+        39200
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Cory Doctorow",
+            "Charles Stross"
+          ],
+          "matched_book_id": 39200,
+          "matched_title": "Rapture of the Nerds: A Tale of the Singularity, Posthumanity, and Awkward Social Situations"
+        }
+      ],
+      "matched_title": "Rapture of the Nerds: A Tale of the Singularity, Posthumanity, and Awkward Social Situations"
     },
     {
       "entry_key": "empty space|m john harrison",
-      "imported_author": "M. John Harrison",
+      "imported_author": [
+        "M. John Harrison"
+      ],
       "imported_title": "Empty Space",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "M. John Harrison"
       ],
@@ -673,18 +2297,53 @@
       "matched_title": "Empty Space: A Haunting"
     },
     {
+      "entry_key": "turing burroughs|rudy rucker",
+      "imported_author": [
+        "Rudy Rucker"
+      ],
+      "imported_title": "Turing & Burroughs",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Rudy Rucker"
+      ],
+      "matched_book_id": 39758,
+      "matched_book_ids": [
+        39758
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Rudy Rucker"
+          ],
+          "matched_book_id": 39758,
+          "matched_title": "Rate this book Turing & Burroughs: A Beatnik SF Novel"
+        }
+      ],
+      "matched_title": "Rate this book Turing & Burroughs: A Beatnik SF Novel"
+    },
+    {
       "entry_key": "maddaddam|margaret atwood",
-      "imported_author": "Margaret Atwood",
+      "imported_author": [
+        "Margaret Atwood"
+      ],
       "imported_title": "MaddAddam",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T05:57:54Z",
       "matched_authors": [
         "Margaret Atwood"
       ],
-      "matched_book_id": 16921,
+      "matched_book_id": 40160,
       "matched_book_ids": [
+        40160,
         16921
       ],
       "matched_books": [
+        {
+          "matched_authors": [
+            "Margaret Atwood"
+          ],
+          "matched_book_id": 40160,
+          "matched_title": "MaddAddam"
+        },
         {
           "matched_authors": [
             "Margaret Atwood"
@@ -696,10 +2355,130 @@
       "matched_title": "The MaddAddam Trilogy: Oryx and Crake; The Year of the Flood; MaddAddam"
     },
     {
+      "entry_key": "the red first light|linda nagata",
+      "imported_author": [
+        "Linda Nagata"
+      ],
+      "imported_title": "The Red: First Light",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Linda Nagata"
+      ],
+      "matched_book_id": 18541,
+      "matched_book_ids": [
+        18541
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Linda Nagata"
+          ],
+          "matched_book_id": 18541,
+          "matched_title": "First Light"
+        }
+      ],
+      "matched_title": "First Light"
+    },
+    {
+      "entry_key": "id the second machine dynasty|madeline ashby",
+      "imported_author": [
+        "Madeline Ashby"
+      ],
+      "imported_title": "ID: The Second Machine Dynasty",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Madeline Ashby",
+        "Martin Bland"
+      ],
+      "matched_book_id": 39597,
+      "matched_book_ids": [
+        39597
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Madeline Ashby",
+            "Martin Bland"
+          ],
+          "matched_book_id": 39597,
+          "matched_title": "The Machine Dynasty Omnibus"
+        }
+      ],
+      "matched_title": "The Machine Dynasty Omnibus"
+    },
+    {
+      "entry_key": "annihilation authority acceptance|jeff vandermeer",
+      "imported_author": [
+        "Jeff VanderMeer"
+      ],
+      "imported_title": "Annihilation/Authority/Acceptance",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Jeff Vandermeer"
+      ],
+      "matched_book_id": 18642,
+      "matched_book_ids": [
+        18642,
+        18643,
+        16927
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Jeff Vandermeer"
+          ],
+          "matched_book_id": 18642,
+          "matched_title": "Annihilation"
+        },
+        {
+          "matched_authors": [
+            "Jeff Vandermeer"
+          ],
+          "matched_book_id": 18643,
+          "matched_title": "Acceptance"
+        },
+        {
+          "matched_authors": [
+            "Jeff Vandermeer"
+          ],
+          "matched_book_id": 16927,
+          "matched_title": "Authority"
+        }
+      ],
+      "matched_title": "Authority"
+    },
+    {
+      "entry_key": "b te|adam roberts",
+      "imported_author": [
+        "Adam Roberts"
+      ],
+      "imported_title": "B\u00eate",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Adam Roberts"
+      ],
+      "matched_book_id": 39136,
+      "matched_book_ids": [
+        39136
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Adam Roberts"
+          ],
+          "matched_book_id": 39136,
+          "matched_title": "Bete"
+        }
+      ],
+      "matched_title": "Bete"
+    },
+    {
       "entry_key": "raven strategem|yoon ha lee",
-      "imported_author": "Yoon Ha Lee",
+      "imported_author": [
+        "Yoon Ha Lee"
+      ],
       "imported_title": "Raven Strategem",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "Yoon Ha Lee"
       ],
@@ -719,10 +2498,37 @@
       "matched_title": "Raven Stratagem"
     },
     {
+      "entry_key": "luna wolf moon|ian mcdonald",
+      "imported_author": [
+        "Ian McDonald"
+      ],
+      "imported_title": "Luna: Wolf Moon",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Ian McDonald"
+      ],
+      "matched_book_id": 19831,
+      "matched_book_ids": [
+        19831
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Ian McDonald"
+          ],
+          "matched_book_id": 19831,
+          "matched_title": "Wolf Moon"
+        }
+      ],
+      "matched_title": "Wolf Moon"
+    },
+    {
       "entry_key": "the rosewater insurrection the rosewater redemption|tade thompson",
-      "imported_author": "Tade Thompson",
+      "imported_author": [
+        "Tade Thompson"
+      ],
       "imported_title": "The Rosewater Insurrection/The Rosewater Redemption",
-      "matched_at": "2026-05-27T15:56:20Z",
+      "matched_at": "2026-07-08T04:17:36Z",
       "matched_authors": [
         "Tade Thompson"
       ],
@@ -750,591 +2556,372 @@
       "matched_title": "The Rosewater Redemption"
     },
     {
-      "entry_key": "b te|adam roberts",
-      "imported_author": "Adam Roberts",
-      "imported_title": "B\u00eate",
-      "matched_at": "2026-05-27T18:14:11Z",
-      "matched_authors": [
-        "Adam Roberts"
+      "entry_key": "luna moon rising|ian mcdonald",
+      "imported_author": [
+        "Ian McDonald"
       ],
-      "matched_book_id": 39136,
+      "imported_title": "Luna: Moon Rising",
+      "matched_at": "2026-07-08T04:17:36Z",
+      "matched_authors": [
+        "Ian McDonald"
+      ],
+      "matched_book_id": 18546,
       "matched_book_ids": [
-        39136
+        18546
       ],
       "matched_books": [
         {
           "matched_authors": [
-            "Adam Roberts"
+            "Ian McDonald"
           ],
-          "matched_book_id": 39136,
-          "matched_title": "Bete"
+          "matched_book_id": 18546,
+          "matched_title": "Moon Rising"
         }
       ],
-      "matched_title": "Bete"
+      "matched_title": "Moon Rising"
     },
     {
-      "entry_key": "golem 100|alfred bester",
-      "imported_author": "Alfred Bester",
-      "imported_title": "Golem 100",
-      "matched_at": "2026-05-27T20:22:52Z",
-      "matched_authors": [
-        "Alfred Bester",
-        "Jack Gaughan"
+      "entry_key": "watchmen|alan moore dave gibbons",
+      "ignored": true,
+      "imported_author": [
+        "Alan Moore & Dave Gibbons"
       ],
-      "matched_book_id": 39146,
-      "matched_book_ids": [
-        39146
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "Alfred Bester",
-            "Jack Gaughan"
-          ],
-          "matched_book_id": 39146,
-          "matched_title": "Golem 100"
-        }
-      ],
-      "matched_title": "Golem 100"
+      "imported_title": "Watchmen",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-08T05:57:54Z"
     },
     {
-      "entry_key": "the jericho iteration|allen steele",
-      "imported_author": "Allen Steele",
-      "imported_title": "The Jericho Iteration",
-      "matched_at": "2026-05-27T20:33:45Z",
-      "matched_authors": [
-        "Allen M. Steele"
+      "entry_key": "millennium|ben bova",
+      "ignored": true,
+      "imported_author": [
+        "Ben Bova"
       ],
-      "matched_book_id": 39148,
-      "matched_book_ids": [
-        39148
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "Allen M. Steele"
-          ],
-          "matched_book_id": 39148,
-          "matched_title": "The Jericho Iteration"
-        }
-      ],
-      "matched_title": "The Jericho Iteration"
+      "imported_title": "Millennium",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-08T05:57:54Z"
     },
     {
-      "entry_key": "finches of mars|brian aldiss",
-      "imported_author": "Brian Aldiss",
-      "imported_title": "Finches of Mars",
-      "matched_at": "2026-05-27T21:21:42Z",
-      "matched_authors": [
-        "Brian W. Aldiss"
-      ],
-      "matched_book_id": 39159,
-      "matched_book_ids": [
-        39159
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "Brian W. Aldiss"
-          ],
-          "matched_book_id": 39159,
-          "matched_title": "Finches of Mars"
-        }
-      ],
-      "matched_title": "Finches of Mars"
-    },
-    {
-      "entry_key": "the fountains of youth|brian stableford",
-      "imported_author": "Brian Stableford",
-      "imported_title": "The Fountains of Youth",
-      "matched_at": "2026-05-28T00:39:25Z",
-      "matched_authors": [
-        "Brian M. Stableford"
-      ],
-      "matched_book_id": 39166,
-      "matched_book_ids": [
-        39166
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "Brian M. Stableford"
-          ],
-          "matched_book_id": 39166,
-          "matched_title": "The Fountains of Youth"
-        }
-      ],
-      "matched_title": "The Fountains of Youth"
-    },
-    {
-      "entry_key": "the cassandra complex|brian stableford",
-      "imported_author": "Brian Stableford",
-      "imported_title": "The Cassandra Complex",
-      "matched_at": "2026-05-28T00:39:40Z",
-      "matched_authors": [
-        "Brian M. Stableford"
-      ],
-      "matched_book_id": 39162,
-      "matched_book_ids": [
-        39162
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "Brian M. Stableford"
-          ],
-          "matched_book_id": 39162,
-          "matched_title": "The Cassandra Complex"
-        }
-      ],
-      "matched_title": "The Cassandra Complex"
-    },
-    {
-      "entry_key": "the omega expedition|brian stableford",
-      "imported_author": "Brian Stableford",
-      "imported_title": "The Omega Expedition",
-      "matched_at": "2026-05-28T00:41:58Z",
-      "matched_authors": [
-        "Brian M. Stableford"
-      ],
-      "matched_book_id": 39164,
-      "matched_book_ids": [
-        39164
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "Brian M. Stableford"
-          ],
-          "matched_book_id": 39164,
-          "matched_title": "The Omega Expedition"
-        }
-      ],
-      "matched_title": "The Omega Expedition"
-    },
-    {
-      "entry_key": "brothers of earth|c j cherryh",
-      "imported_author": "C. J. Cherryh",
-      "imported_title": "Brothers of Earth",
-      "matched_at": "2026-05-28T01:24:56Z",
-      "matched_authors": [
+      "entry_key": "hunter of worlds|c j cherryh",
+      "ignored": true,
+      "imported_author": [
         "C. J. Cherryh"
       ],
-      "matched_book_id": 18147,
-      "matched_book_ids": [
-        18147
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "C. J. Cherryh"
-          ],
-          "matched_book_id": 18147,
-          "matched_title": "At the Edge of Space"
-        }
-      ],
-      "matched_title": "At the Edge of Space"
+      "imported_title": "Hunter of Worlds",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-08T05:57:54Z"
     },
     {
-      "entry_key": "serpent s reach|c j cherryh",
-      "imported_author": "C. J. Cherryh",
-      "imported_title": "Serpent's Reach",
-      "matched_at": "2026-05-28T01:28:35Z",
-      "matched_authors": [
+      "entry_key": "the faded sun shon jir|c j cherryh",
+      "ignored": true,
+      "imported_author": [
         "C. J. Cherryh"
       ],
-      "matched_book_id": 18129,
-      "matched_book_ids": [
-        18129
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "C. J. Cherryh"
-          ],
-          "matched_book_id": 18129,
-          "matched_title": "The Deep Beyond"
-        }
-      ],
-      "matched_title": "The Deep Beyond"
+      "imported_title": "The Faded Sun: Shon'jir",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-08T05:57:54Z"
     },
     {
-      "entry_key": "hellburner|c j cherryh",
-      "imported_author": "C. J. Cherryh",
-      "imported_title": "Hellburner",
-      "matched_at": "2026-05-28T01:30:00Z",
-      "matched_authors": [
+      "entry_key": "the faded sun kutath|c j cherryh",
+      "ignored": true,
+      "imported_author": [
         "C. J. Cherryh"
       ],
-      "matched_book_id": 18140,
-      "matched_book_ids": [
-        18140
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "C. J. Cherryh"
-          ],
-          "matched_book_id": 18140,
-          "matched_title": "Devil to the Belt"
-        }
-      ],
-      "matched_title": "Devil to the Belt"
+      "imported_title": "The Faded Sun: Kutath",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-08T05:57:54Z"
     },
     {
-      "entry_key": "the web between the worlds|charles sheffield",
-      "imported_author": "Charles Sheffield",
-      "imported_title": "The Web Between the Worlds",
-      "matched_at": "2026-05-28T17:41:02Z",
-      "matched_authors": [
-        "Charles Sheffield",
-        "Arthur C. Clarke"
+      "entry_key": "cuckoo s egg|c j cherryh",
+      "ignored": true,
+      "imported_author": [
+        "C. J. Cherryh"
       ],
-      "matched_book_id": 39179,
-      "matched_book_ids": [
-        39179
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "Charles Sheffield",
-            "Arthur C. Clarke"
-          ],
-          "matched_book_id": 39179,
-          "matched_title": "The Web Between the Worlds"
-        }
-      ],
-      "matched_title": "The Web Between the Worlds"
+      "imported_title": "Cuckoo's Egg",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-08T05:57:54Z"
     },
     {
-      "entry_key": "the nimrod hunt|charles sheffield",
-      "imported_author": "Charles Sheffield",
-      "imported_title": "The Nimrod Hunt",
-      "matched_at": "2026-05-28T17:51:44Z",
-      "matched_authors": [
-        "Charles Sheffield"
+      "entry_key": "heavy time|c j cherryh",
+      "ignored": true,
+      "imported_author": [
+        "C. J. Cherryh"
       ],
-      "matched_book_id": 29192,
-      "matched_book_ids": [
-        29192
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "Charles Sheffield"
-          ],
-          "matched_book_id": 29192,
-          "matched_title": "The Mind Pool"
-        }
-      ],
-      "matched_title": "The Mind Pool"
+      "imported_title": "Heavy Time",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-08T05:57:54Z"
     },
     {
-      "entry_key": "summertide|charles sheffield",
-      "imported_author": "Charles Sheffield",
-      "imported_title": "Summertide",
-      "matched_at": "2026-05-28T17:53:18Z",
-      "matched_authors": [
-        "Charles Sheffield"
+      "entry_key": "cald of the long sun|gene wolfe",
+      "imported_author": [
+        "Gene Wolfe"
       ],
-      "matched_book_id": 11717,
+      "imported_title": "Cald\u00e9 of the Long Sun",
+      "matched_at": "2026-07-08T05:57:54Z",
+      "matched_authors": [
+        "Gene Wolfe"
+      ],
+      "matched_book_id": 38627,
       "matched_book_ids": [
-        11717
+        38627
       ],
       "matched_books": [
         {
           "matched_authors": [
-            "Charles Sheffield"
+            "Gene Wolfe"
           ],
-          "matched_book_id": 11717,
-          "matched_title": "Convergent Series (Books 1,2)"
+          "matched_book_id": 38627,
+          "matched_title": "Epiphany of the Long Sun (Books 8-9)"
         }
       ],
-      "matched_title": "Convergent Series (Books 1,2)"
+      "matched_title": "Epiphany of the Long Sun (Books 8-9)"
     },
     {
-      "entry_key": "hotel transylvania|chelsea quinn yarbro",
-      "imported_author": "Chelsea Quinn Yarbro",
-      "imported_title": "Hotel Transylvania",
-      "matched_at": "2026-05-28T19:49:52Z",
-      "matched_authors": [
-        "Chelsea Quinn Yarbro"
+      "entry_key": "exodus from the long sun|gene wolfe",
+      "ignored": true,
+      "imported_author": [
+        "Gene Wolfe"
       ],
-      "matched_book_id": 24672,
-      "matched_book_ids": [
-        24672
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "Chelsea Quinn Yarbro"
-          ],
-          "matched_book_id": 24672,
-          "matched_title": "H\u00f4tel Transylvania"
-        }
-      ],
-      "matched_title": "H\u00f4tel Transylvania"
+      "imported_title": "Exodus from the Long Sun",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-08T05:57:54Z"
     },
     {
-      "entry_key": "the rapture of the nerds|cory doctorow charles stross",
-      "imported_author": "Cory Doctorow & Charles Stross",
-      "imported_title": "The Rapture of the Nerds",
-      "matched_at": "2026-05-28T22:20:08Z",
-      "matched_authors": [
-        "Cory Doctorow",
-        "Charles Stross"
+      "entry_key": "worldwar tilting the balance|harry turtledove",
+      "ignored": true,
+      "imported_author": [
+        "Harry Turtledove"
       ],
-      "matched_book_id": 39200,
-      "matched_book_ids": [
-        39200
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "Cory Doctorow",
-            "Charles Stross"
-          ],
-          "matched_book_id": 39200,
-          "matched_title": "Rapture of the Nerds: A Tale of the Singularity, Posthumanity, and Awkward Social Situations"
-        }
-      ],
-      "matched_title": "Rapture of the Nerds: A Tale of the Singularity, Posthumanity, and Awkward Social Situations"
+      "imported_title": "Worldwar: Tilting the Balance",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-08T05:57:54Z"
     },
     {
-      "entry_key": "the unsleeping eye|d g compton",
-      "imported_author": "D. G. Compton",
-      "imported_title": "The Unsleeping Eye",
-      "matched_at": "2026-05-28T22:34:28Z",
-      "matched_authors": [
-        "D. G. Compton"
+      "entry_key": "the book of dreams|jack vance",
+      "ignored": true,
+      "imported_author": [
+        "Jack Vance"
       ],
-      "matched_book_id": 39204,
-      "matched_book_ids": [
-        39204
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "D. G. Compton"
-          ],
-          "matched_book_id": 39204,
-          "matched_title": "The Continuous Katherine Mortenhoe"
-        }
-      ],
-      "matched_title": "The Continuous Katherine Mortenhoe"
+      "imported_title": "The Book of Dreams",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-08T05:57:54Z"
     },
     {
-      "entry_key": "yesterday s children|david gerrold",
-      "imported_author": "David Gerrold",
-      "imported_title": "Yesterday's Children",
-      "matched_at": "2026-05-28T23:04:00Z",
-      "matched_authors": [
-        "David Gerrold"
+      "entry_key": "roderick at random|john sladek",
+      "ignored": true,
+      "imported_author": [
+        "John Sladek"
       ],
-      "matched_book_id": 39211,
-      "matched_book_ids": [
-        39211
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "David Gerrold"
-          ],
-          "matched_book_id": 39211,
-          "matched_title": "Starhunt"
-        }
-      ],
-      "matched_title": "Starhunt"
+      "imported_title": "Roderick at Random",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-08T05:57:54Z"
     },
     {
-      "entry_key": "moonstar odyssey|david gerrold",
-      "imported_author": "David Gerrold",
-      "imported_title": "Moonstar Odyssey",
-      "matched_at": "2026-05-28T23:43:48Z",
-      "matched_authors": [
-        "David Gerrold"
+      "entry_key": "the smoke ring|larry niven",
+      "imported_author": [
+        "Larry Niven"
       ],
-      "matched_book_id": 38744,
+      "imported_title": "The Smoke Ring",
+      "matched_at": "2026-07-08T04:59:45Z",
+      "matched_authors": [
+        "Larry Niven"
+      ],
+      "matched_book_id": 20253,
       "matched_book_ids": [
-        38744
+        20253
       ],
       "matched_books": [
         {
           "matched_authors": [
-            "David Gerrold"
+            "Larry Niven"
           ],
-          "matched_book_id": 38744,
-          "matched_title": "Moonstar: Jobe, Book One"
+          "matched_book_id": 20253,
+          "matched_title": "Known Tales: The Nearly Complete Short Fiction"
         }
       ],
-      "matched_title": "Moonstar: Jobe, Book One"
+      "matched_title": "Known Tales: The Nearly Complete Short Fiction"
     },
     {
-      "entry_key": "beastchild|dean koontz",
-      "imported_author": "Dean Koontz",
-      "imported_title": "Beastchild",
-      "matched_at": "2026-05-29T00:18:04Z",
-      "matched_authors": [
-        "Dean R. Koontz"
+      "entry_key": "the warrior s apprentice|lois mcmaster bujold",
+      "ignored": true,
+      "imported_author": [
+        "Lois McMaster Bujold"
       ],
-      "matched_book_id": 39219,
-      "matched_book_ids": [
-        39219
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "Dean R. Koontz"
-          ],
-          "matched_book_id": 39219,
-          "matched_title": "Beastchild"
-        }
-      ],
-      "matched_title": "Beastchild"
+      "imported_title": "The Warrior's Apprentice",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-08T05:57:54Z"
     },
     {
-      "entry_key": "the company of glory|edgar pangborn",
-      "imported_author": "Edgar Pangborn",
-      "imported_title": "The Company of Glory",
-      "matched_at": "2026-06-01T21:57:50Z",
-      "matched_authors": [
-        "Edgar Pangborn",
-        "Colin Hay"
+      "entry_key": "warriors of dawn|m a foster",
+      "ignored": true,
+      "imported_author": [
+        "M. A. Foster"
       ],
-      "matched_book_id": 39225,
-      "matched_book_ids": [
-        39225
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "Edgar Pangborn",
-            "Colin Hay"
-          ],
-          "matched_book_id": 39225,
-          "matched_title": "The Company of Glory"
-        }
-      ],
-      "matched_title": "The Company of Glory"
+      "imported_title": "Warriors of Dawn",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-08T05:57:54Z"
     },
     {
-      "entry_key": "the cloud walker|edmund cooper",
-      "imported_author": "Edmund Cooper",
-      "imported_title": "The Cloud Walker",
-      "matched_at": "2026-06-01T22:00:42Z",
-      "matched_authors": [
-        "Edmund Cooper"
+      "entry_key": "clay s ark|octavia e butler",
+      "ignored": true,
+      "imported_author": [
+        "Octavia E. Butler"
       ],
-      "matched_book_id": 39228,
-      "matched_book_ids": [
-        39228
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "Edmund Cooper"
-          ],
-          "matched_book_id": 39228,
-          "matched_title": "Edmund Cooper SF Gateway Omnibus: The Cloud Walker, All Fools' Day, a Far Sunset"
-        }
-      ],
-      "matched_title": "Edmund Cooper SF Gateway Omnibus: The Cloud Walker, All Fools' Day, a Far Sunset"
+      "imported_title": "Clay's Ark",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-08T05:57:54Z"
     },
     {
-      "entry_key": "prince of annwn|evangeline walton",
-      "imported_author": "Evangeline Walton",
-      "imported_title": "Prince of Annwn",
-      "matched_at": "2026-06-02T01:36:51Z",
-      "matched_authors": [
-        "Evangeline Walton"
+      "entry_key": "a planet called treason|orson scott card",
+      "imported_author": [
+        "Orson Scott Card"
       ],
-      "matched_book_id": 39237,
+      "imported_title": "A Planet Called Treason",
+      "matched_at": "2026-07-08T05:28:57Z",
+      "matched_authors": [
+        "Orson Scott Card"
+      ],
+      "matched_book_id": 34779,
       "matched_book_ids": [
-        39237
+        34779
       ],
       "matched_books": [
         {
           "matched_authors": [
-            "Evangeline Walton"
+            "Orson Scott Card"
           ],
-          "matched_book_id": 39237,
-          "matched_title": "The Mabinogion Tetralogy: The Prince of Annwn, the Children of Llyr, the Song of Rhiannon, the Island of the Mighty"
+          "matched_book_id": 34779,
+          "matched_title": "Treason"
         }
       ],
-      "matched_title": "The Mabinogion Tetralogy: The Prince of Annwn, the Children of Llyr, the Song of Rhiannon, the Island of the Mighty"
+      "matched_title": "Treason"
     },
     {
-      "entry_key": "the dosadi experiment|frank herbert",
-      "imported_author": "Frank Herbert",
-      "imported_title": "The Dosadi Experiment",
-      "matched_at": "2026-06-02T01:47:43Z",
-      "matched_authors": [
-        "Frank Patrick Herbert"
+      "entry_key": "the guns of avalon|roger zelazny",
+      "ignored": true,
+      "imported_author": [
+        "Roger Zelazny"
       ],
-      "matched_book_id": 39238,
-      "matched_book_ids": [
-        39238
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "Frank Patrick Herbert"
-          ],
-          "matched_book_id": 39238,
-          "matched_title": "The Dosadi Experiment"
-        }
-      ],
-      "matched_title": "The Dosadi Experiment"
+      "imported_title": "The Guns of Avalon",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-08T05:57:54Z"
     },
     {
-      "entry_key": "the white plague|frank herbert",
-      "imported_author": "Frank Herbert",
-      "imported_title": "The White Plague",
-      "matched_at": "2026-06-02T01:50:27Z",
-      "matched_authors": [
-        "Frank Patrick Herbert"
+      "entry_key": "sign of the unicorn|roger zelazny",
+      "ignored": true,
+      "imported_author": [
+        "Roger Zelazny"
       ],
-      "matched_book_id": 39239,
-      "matched_book_ids": [
-        39239
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "Frank Patrick Herbert"
-          ],
-          "matched_book_id": 39239,
-          "matched_title": "The White Plague"
-        }
-      ],
-      "matched_title": "The White Plague"
+      "imported_title": "Sign of the Unicorn",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-08T05:57:54Z"
     },
     {
-      "entry_key": "coils|fred saberhagen roger zelazny",
-      "imported_author": "Fred Saberhagen & Roger Zelazny",
-      "imported_title": "Coils",
-      "matched_at": "2026-06-02T02:03:32Z",
-      "matched_authors": [
-        "Roger Zelazny",
-        "Fred Saberhagen"
+      "entry_key": "the hand of oberon|roger zelazny",
+      "ignored": true,
+      "imported_author": [
+        "Roger Zelazny"
       ],
-      "matched_book_id": 39245,
-      "matched_book_ids": [
-        39245
+      "imported_title": "The Hand of Oberon",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-08T05:57:54Z"
+    },
+    {
+      "entry_key": "the courts of chaos|roger zelazny",
+      "ignored": true,
+      "imported_author": [
+        "Roger Zelazny"
       ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "Roger Zelazny",
-            "Fred Saberhagen"
-          ],
-          "matched_book_id": 39245,
-          "matched_title": "Coils"
-        }
+      "imported_title": "The Courts of Chaos",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-08T05:57:54Z"
+    },
+    {
+      "entry_key": "stardance ii|spider robinson jeanne robinson",
+      "ignored": true,
+      "imported_author": [
+        "Spider Robinson & Jeanne Robinson"
       ],
-      "matched_title": "Coils"
+      "imported_title": "Stardance II",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-08T05:57:54Z"
     }
   ],
-  "saved_at": "2026-06-02T02:45:05Z",
-  "schema_version": 1
+  "saved_at": "2026-07-08T05:57:54Z",
+  "schema_version": 2
 }

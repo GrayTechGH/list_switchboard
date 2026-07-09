@@ -1,0 +1,4124 @@
+{
+  "append_state": {
+    "entry_count": 293,
+    "last_entry_key": "inheritance trilogy|n k jemisin",
+    "last_position": "247",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "J.R.R. Tolkien"
+      ],
+      "position": "1",
+      "rank_change": "1",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/66175-middle-earth"
+      },
+      "title": "Middle-Earth Universe",
+      "votes": "404"
+    },
+    {
+      "authors": [
+        "Joe Abercrombie"
+      ],
+      "position": "2",
+      "rank_change": "1",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/150214-first-law-world"
+      },
+      "title": "First Law World",
+      "votes": "353"
+    },
+    {
+      "authors": [
+        "George R.R. Martin"
+      ],
+      "position": "3",
+      "rank_change": "1",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/43790-a-song-of-ice-and-fire"
+      },
+      "title": "A Song of Ice and Fire",
+      "votes": "336"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "position": "4",
+      "rank_change": "-3",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/49075-the-stormlight-archive"
+      },
+      "title": "The Stormlight Archive",
+      "votes": "293"
+    },
+    {
+      "authors": [
+        "Robin Hobb"
+      ],
+      "position": "5",
+      "rank_change": "2",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/54099-the-realm-of-the-elderlings"
+      },
+      "title": "Realm of the Elderlings",
+      "votes": "269"
+    },
+    {
+      "authors": [
+        "Steven Erikson and Ian C. Esslemont"
+      ],
+      "position": "6",
+      "rank_change": "3",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/49674-malazan"
+      },
+      "title": "Malazan Universe",
+      "votes": "240"
+    },
+    {
+      "authors": [
+        "Robert Jordan"
+      ],
+      "position": "7",
+      "rank_change": "-1",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/41526-the-wheel-of-time"
+      },
+      "title": "Wheel of Time",
+      "votes": "222"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "position": "8",
+      "rank_change": "0",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/40650-discworld"
+      },
+      "title": "Discworld",
+      "votes": "210"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "position": "8",
+      "rank_change": "-3",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/40910-the-mistborn-saga"
+      },
+      "title": "Mistborn",
+      "votes": "210"
+    },
+    {
+      "authors": [
+        "Fonda Lee"
+      ],
+      "position": "10",
+      "rank_change": "0",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/216281-the-green-bone-saga"
+      },
+      "title": "The Green Bone Saga",
+      "votes": "163"
+    },
+    {
+      "authors": [
+        "Pierce Brown"
+      ],
+      "position": "11",
+      "rank_change": "0",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/117100-red-rising-saga"
+      },
+      "title": "Red Rising",
+      "votes": "160"
+    },
+    {
+      "authors": [
+        "J.K. Rowling"
+      ],
+      "position": "12",
+      "rank_change": "0",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/45175-harry-potter"
+      },
+      "title": "Harry Potter",
+      "votes": "145"
+    },
+    {
+      "authors": [
+        "Scott Lynch"
+      ],
+      "position": "13",
+      "rank_change": "-2",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/43531-gentleman-bastard"
+      },
+      "title": "Gentleman Bastard",
+      "votes": "130"
+    },
+    {
+      "authors": [
+        "Susanna Clarke"
+      ],
+      "position": "14",
+      "rank_change": "9",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/50202953-piranesi"
+      },
+      "title": "Piranesi",
+      "votes": "118"
+    },
+    {
+      "authors": [
+        "Frank Herbert"
+      ],
+      "position": "15",
+      "rank_change": "0",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/45935-dune"
+      },
+      "title": "Dune",
+      "votes": "117"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "position": "16",
+      "rank_change": "4",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/40909-earthsea-cycle"
+      },
+      "title": "Earthsea Cycle",
+      "votes": "113"
+    },
+    {
+      "authors": [
+        "Matt Dinniman"
+      ],
+      "position": "17",
+      "rank_change": "103",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/309211-dungeon-crawler-carl"
+      },
+      "title": "Dungeon Crawler Carl",
+      "votes": "112"
+    },
+    {
+      "authors": [
+        "Patrick Rothfuss"
+      ],
+      "position": "18",
+      "rank_change": "-5",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/45262-the-kingkiller-chronicle"
+      },
+      "title": "The Kingkiller Chronicle",
+      "votes": "111"
+    },
+    {
+      "authors": [
+        "Tamsyn Muir"
+      ],
+      "position": "19",
+      "rank_change": "2",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/229503-the-locked-tomb"
+      },
+      "title": "The Locked Tomb",
+      "votes": "98"
+    },
+    {
+      "authors": [
+        "Will Wight"
+      ],
+      "position": "20",
+      "rank_change": "-3",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/192821-cradle"
+      },
+      "title": "Cradle",
+      "votes": "96"
+    },
+    {
+      "authors": [
+        "Martha Wells"
+      ],
+      "position": "21",
+      "rank_change": "-3",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/191900-the-murderbot-diaries"
+      },
+      "title": "The Murderbot Diaries",
+      "votes": "92"
+    },
+    {
+      "authors": [
+        "Pirateaba"
+      ],
+      "position": "22",
+      "rank_change": "79",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/265443-the-wandering-inn"
+      },
+      "title": "The Wandering Inn",
+      "votes": "85"
+    },
+    {
+      "authors": [
+        "N.K. Jemisin"
+      ],
+      "position": "23",
+      "rank_change": "-4",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/112296-the-broken-earth"
+      },
+      "title": "The Broken Earth",
+      "votes": "84"
+    },
+    {
+      "authors": [
+        "Christopher Ruocchio"
+      ],
+      "position": "24",
+      "rank_change": "57",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/231285-the-sun-eater"
+      },
+      "title": "Sun Eater",
+      "votes": "81"
+    },
+    {
+      "authors": [
+        "James S.A. Corey"
+      ],
+      "position": "25",
+      "rank_change": "0",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/56399-the-expanse"
+      },
+      "title": "The Expanse",
+      "votes": "77"
+    },
+    {
+      "authors": [
+        "Tad Williams"
+      ],
+      "position": "26",
+      "rank_change": "17",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/214148-osten-ard-saga"
+      },
+      "title": "Osten Ard Saga",
+      "votes": "74"
+    },
+    {
+      "authors": [
+        "Susanna Clarke"
+      ],
+      "position": "27",
+      "rank_change": "0",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/14201.Jonathan_Strange_Mr_Norrell"
+      },
+      "title": "Jonathan Strange & Mr Norrell",
+      "votes": "72"
+    },
+    {
+      "authors": [
+        "Jim Butcher"
+      ],
+      "position": "28",
+      "rank_change": "-12",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/40346-the-dresden-files"
+      },
+      "title": "The Dresden Files",
+      "votes": "69"
+    },
+    {
+      "authors": [
+        "James Islington"
+      ],
+      "position": "29",
+      "rank_change": "NEW",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/358080-hierarchy"
+      },
+      "title": "Hierarchy",
+      "votes": "66"
+    },
+    {
+      "authors": [
+        "Guy Gavriel Kay"
+      ],
+      "position": "29",
+      "rank_change": "60",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/49173-sarantine-mosaic"
+      },
+      "title": "Sarantine Universe",
+      "votes": "66"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "position": "31",
+      "rank_change": "8",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/49359-hainish-cycle"
+      },
+      "title": "Hainish Cycle",
+      "votes": "65"
+    },
+    {
+      "authors": [
+        "Mark Lawrence"
+      ],
+      "position": "32",
+      "rank_change": "69",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/64473-the-broken-empire"
+      },
+      "title": "The Broken Empire Universe",
+      "votes": "58"
+    },
+    {
+      "authors": [
+        "Katherine Addison"
+      ],
+      "position": "33",
+      "rank_change": "3",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/241702-the-chronicles-of-osreth"
+      },
+      "title": "The Chronicles of Osreth",
+      "votes": "57"
+    },
+    {
+      "authors": [
+        "R. Scott Bakker"
+      ],
+      "position": "34",
+      "rank_change": "27",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/83561-the-second-apocalypse"
+      },
+      "title": "The Second Apocalypse",
+      "votes": "55"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "position": "35",
+      "rank_change": "NEW",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/135117-the-cosmere"
+      },
+      "title": "Cosmere",
+      "votes": "54"
+    },
+    {
+      "authors": [
+        "Philip Pullman"
+      ],
+      "position": "36",
+      "rank_change": "-8",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/44427-his-dark-materials"
+      },
+      "title": "His Dark Materials",
+      "votes": "52"
+    },
+    {
+      "authors": [
+        "Andrzej Sapkowski"
+      ],
+      "position": "36",
+      "rank_change": "-14",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/40911-the-witcher"
+      },
+      "title": "The Witcher",
+      "votes": "52"
+    },
+    {
+      "authors": [
+        "Glen Cook"
+      ],
+      "position": "36",
+      "rank_change": "17",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/54284-the-chronicles-of-the-black-company"
+      },
+      "title": "The Chronicles of the Black Company",
+      "votes": "52"
+    },
+    {
+      "authors": [
+        "Gene Wolfe"
+      ],
+      "position": "36",
+      "rank_change": "3",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/41474-the-book-of-the-new-sun"
+      },
+      "title": "Solar Cycle",
+      "votes": "52"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "position": "40",
+      "rank_change": "-16",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/40750-the-dark-tower"
+      },
+      "title": "The Dark Tower",
+      "votes": "50"
+    },
+    {
+      "authors": [
+        "Naomi Novik"
+      ],
+      "position": "40",
+      "rank_change": "12",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/282152-the-scholomance"
+      },
+      "title": "The Scholomance",
+      "votes": "50"
+    },
+    {
+      "authors": [
+        "Dan Simmons"
+      ],
+      "position": "40",
+      "rank_change": "-14",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/40461-hyperion-cantos"
+      },
+      "title": "Hyperion Cantos",
+      "votes": "50"
+    },
+    {
+      "authors": [
+        "Andy Weir"
+      ],
+      "position": "43",
+      "rank_change": "2",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/54493401-project-hail-mary"
+      },
+      "title": "Project Hail Mary",
+      "votes": "48"
+    },
+    {
+      "authors": [
+        "Ken Liu"
+      ],
+      "position": "44",
+      "rank_change": "40",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/117103-the-dandelion-dynasty"
+      },
+      "title": "The Dandelion Dynasty",
+      "votes": "47"
+    },
+    {
+      "authors": [
+        "M.L. Wang"
+      ],
+      "position": "45",
+      "rank_change": "31",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/41886271-the-sword-of-kaigen"
+      },
+      "title": "The Sword of Kaigen",
+      "votes": "46"
+    },
+    {
+      "authors": [
+        "Lois McMaster Bujold"
+      ],
+      "position": "46",
+      "rank_change": "-1",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/43463-world-of-the-five-gods-publication"
+      },
+      "title": "World of the Five Gods",
+      "votes": "45"
+    },
+    {
+      "authors": [
+        "Simon Jimenez"
+      ],
+      "position": "47",
+      "rank_change": "188",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/55868456-the-spear-cuts-through-water"
+      },
+      "title": "The Spear Cuts Through Water",
+      "votes": "44"
+    },
+    {
+      "authors": [
+        "Becky Chambers"
+      ],
+      "position": "48",
+      "rank_change": "-16",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/170872-wayfarers"
+      },
+      "title": "Wayfarers",
+      "votes": "43"
+    },
+    {
+      "authors": [
+        "Michael J. Sullivan"
+      ],
+      "position": "49",
+      "rank_change": "-15",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/96465-the-riyria-revelations"
+      },
+      "title": "Riyria Revelations",
+      "votes": "42"
+    },
+    {
+      "authors": [
+        "Eiichiro Oda"
+      ],
+      "position": "50",
+      "rank_change": "7",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/57193-one-piece"
+      },
+      "title": "One Piece",
+      "votes": "41"
+    },
+    {
+      "authors": [
+        "John Gwynne"
+      ],
+      "position": "51",
+      "rank_change": "-15",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/shelf/show/the-banished-lands"
+      },
+      "title": "The Banished Lands",
+      "votes": "40"
+    },
+    {
+      "authors": [
+        "Lois McMaster Bujold"
+      ],
+      "position": "51",
+      "rank_change": "33",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/98254-vorkosigan-saga-chronological"
+      },
+      "title": "Vorkosigan Saga",
+      "votes": "40"
+    },
+    {
+      "authors": [
+        "M.L. Wang"
+      ],
+      "position": "53",
+      "rank_change": "NEW",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/208430658-blood-over-bright-haven"
+      },
+      "title": "Blood Over Bright Haven",
+      "votes": "35"
+    },
+    {
+      "authors": [
+        "Orson Scott Card"
+      ],
+      "position": "53",
+      "rank_change": "-5",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/43963-ender-s-saga"
+      },
+      "title": "Ender's Saga",
+      "votes": "35"
+    },
+    {
+      "authors": [
+        "Jacqueline Carey"
+      ],
+      "position": "53",
+      "rank_change": "8",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/83135-kushiel-s-universe"
+      },
+      "title": "Kushiel's Universe",
+      "votes": "35"
+    },
+    {
+      "authors": [
+        "Seth Dickinson"
+      ],
+      "position": "56",
+      "rank_change": "-3",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/199001-the-masquerade"
+      },
+      "title": "The Masquerade",
+      "votes": "34"
+    },
+    {
+      "authors": [
+        "Robert Jackson Bennett"
+      ],
+      "position": "56",
+      "rank_change": "NEW",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/362899-shadow-of-the-leviathan"
+      },
+      "title": "Shadow of the Leviathan",
+      "votes": "34"
+    },
+    {
+      "authors": [
+        "Arkady Martine"
+      ],
+      "position": "56",
+      "rank_change": "-15",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/233352-teixcalaan"
+      },
+      "title": "Teixcalaan",
+      "votes": "34"
+    },
+    {
+      "authors": [
+        "Amal El-Mohtar and Max Gladstone"
+      ],
+      "position": "59",
+      "rank_change": "22",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://goodreads.com/book/show/43352954-this-is-how-you-lose-the-time-war"
+      },
+      "title": "This Is How You Lose the Time War",
+      "votes": "33"
+    },
+    {
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "position": "60",
+      "rank_change": "-25",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/247630-children-of-time"
+      },
+      "title": "Children of Time",
+      "votes": "32"
+    },
+    {
+      "authors": [
+        "China Mi\u00e9ville"
+      ],
+      "position": "60",
+      "rank_change": "18",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/61490-new-crobuzon"
+      },
+      "title": "New Crobuzon",
+      "votes": "32"
+    },
+    {
+      "authors": [
+        "Tamora Pierce"
+      ],
+      "position": "60",
+      "rank_change": "5",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/50262-tortall"
+      },
+      "title": "Tortall",
+      "votes": "32"
+    },
+    {
+      "authors": [
+        "Cixin Liu"
+      ],
+      "position": "60",
+      "rank_change": "10",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/34569357-remembrance-of-earth-s-past"
+      },
+      "title": "Remembrance of Earth's Past",
+      "votes": "32"
+    },
+    {
+      "authors": [
+        "Douglas Adams"
+      ],
+      "position": "64",
+      "rank_change": "-33",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/40957-the-hitchhiker-s-guide-to-the-galaxy"
+      },
+      "title": "Hitchhiker's Guide to the Galaxy",
+      "votes": "31"
+    },
+    {
+      "authors": [
+        "Garth Nix"
+      ],
+      "position": "64",
+      "rank_change": "-16",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/195520-the-old-kingdom"
+      },
+      "title": "The Old Kingdom / Abhorsen",
+      "votes": "31"
+    },
+    {
+      "authors": [
+        "Scott Hawkins"
+      ],
+      "position": "66",
+      "rank_change": "-1",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/26892110-the-library-at-mount-char"
+      },
+      "title": "The Library at Mount Char",
+      "votes": "30"
+    },
+    {
+      "authors": [
+        "Christopher Buehlman"
+      ],
+      "position": "67",
+      "rank_change": "26",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/311116-blacktongue"
+      },
+      "title": "Blacktongue",
+      "votes": "29"
+    },
+    {
+      "authors": [
+        "Leigh Bardugo"
+      ],
+      "position": "67",
+      "rank_change": "-9",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/235076-grishaverse"
+      },
+      "title": "Grishaverse",
+      "votes": "29"
+    },
+    {
+      "authors": [
+        "Guy Gavriel Kay"
+      ],
+      "position": "69",
+      "rank_change": "-8",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/104089.Tigana"
+      },
+      "title": "Tigana",
+      "votes": "27"
+    },
+    {
+      "authors": [
+        "Nicholas Eames"
+      ],
+      "position": "69",
+      "rank_change": "-33",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/193556-the-band"
+      },
+      "title": "The Band",
+      "votes": "27"
+    },
+    {
+      "authors": [
+        "Brian McClellan"
+      ],
+      "position": "69",
+      "rank_change": "-26",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/99602-powder-mage"
+      },
+      "title": "Powder Mage",
+      "votes": "27"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "position": "72",
+      "rank_change": "-33",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18423.The_Left_Hand_of_Darkness"
+      },
+      "title": "The Left Hand of Darkness",
+      "votes": "26"
+    },
+    {
+      "authors": [
+        "M.A. Carrick"
+      ],
+      "position": "72",
+      "rank_change": "54",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/287237-rook-rose"
+      },
+      "title": "Rook & Rose",
+      "votes": "26"
+    },
+    {
+      "authors": [
+        "Madeline Miller"
+      ],
+      "position": "72",
+      "rank_change": "-22",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/35959740-circe"
+      },
+      "title": "Circe",
+      "votes": "26"
+    },
+    {
+      "authors": [
+        "Mervyn Peake"
+      ],
+      "position": "72",
+      "rank_change": "21",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/45757-gormenghast"
+      },
+      "title": "Gormenghast",
+      "votes": "26"
+    },
+    {
+      "authors": [
+        "Naomi Novik"
+      ],
+      "position": "76",
+      "rank_change": "17",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/36896898-spinning-silver"
+      },
+      "title": "Spinning Silver",
+      "votes": "25"
+    },
+    {
+      "authors": [
+        "Ada Palmer"
+      ],
+      "position": "76",
+      "rank_change": "25",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/166200-terra-ignota"
+      },
+      "title": "Terra Ignota",
+      "votes": "25"
+    },
+    {
+      "authors": [
+        "Wildbow"
+      ],
+      "position": "76",
+      "rank_change": "-8",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://parahumans.wordpress.com/"
+      },
+      "title": "Worm",
+      "votes": "25"
+    },
+    {
+      "authors": [
+        "Kentaro Miura"
+      ],
+      "position": "76",
+      "rank_change": "-23",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/79796-berserk"
+      },
+      "title": "Berserk",
+      "votes": "25"
+    },
+    {
+      "authors": [
+        "Raymond E. Feist"
+      ],
+      "position": "76",
+      "rank_change": "13",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/49642-riftwar-cycle"
+      },
+      "title": "Riftwar Cycle",
+      "votes": "25"
+    },
+    {
+      "authors": [
+        "C.S. Lewis"
+      ],
+      "position": "81",
+      "rank_change": "-23",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/49073-the-chronicles-of-narnia-publication-order"
+      },
+      "title": "The Chronicles of Narnia",
+      "votes": "24"
+    },
+    {
+      "authors": [
+        "Ryan Cahill"
+      ],
+      "position": "81",
+      "rank_change": "56",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/309359-the-bound-and-the-broken"
+      },
+      "title": "The Bound and the Broken",
+      "votes": "24"
+    },
+    {
+      "authors": [
+        "Ann Leckie"
+      ],
+      "position": "83",
+      "rank_change": "30",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/113751-imperial-radch"
+      },
+      "title": "Imperial Radch",
+      "votes": "23"
+    },
+    {
+      "authors": [
+        "Christopher Buehlman"
+      ],
+      "position": "83",
+      "rank_change": "100",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13543121-between-two-fires"
+      },
+      "title": "Between Two Fires",
+      "votes": "23"
+    },
+    {
+      "authors": [
+        "Diana Wynne Jones"
+      ],
+      "position": "83",
+      "rank_change": "-13",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/80111-howl-s-moving-castle"
+      },
+      "title": "Howl's Castle",
+      "votes": "23"
+    },
+    {
+      "authors": [
+        "Nobody103 / Domagoj Kurmai\u0107"
+      ],
+      "position": "83",
+      "rank_change": "6",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/336405-mother-of-learning"
+      },
+      "title": "Mother of Learning",
+      "votes": "23"
+    },
+    {
+      "authors": [
+        "James Islington"
+      ],
+      "position": "83",
+      "rank_change": "10",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/136308-the-licanius-trilogy"
+      },
+      "title": "Licanius Trilogy",
+      "votes": "23"
+    },
+    {
+      "authors": [
+        "T. Kingfisher"
+      ],
+      "position": "83",
+      "rank_change": "54",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/307546-the-world-of-the-white-rat"
+      },
+      "title": "The World of the White Rat",
+      "votes": "23"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "position": "89",
+      "rank_change": "-50",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13651.The_Dispossessed"
+      },
+      "title": "The Dispossessed",
+      "votes": "22"
+    },
+    {
+      "authors": [
+        "Victoria Goddard"
+      ],
+      "position": "89",
+      "rank_change": "58",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/331229-lays-of-the-hearth-fire"
+      },
+      "title": "Lays of the Hearth-Fire",
+      "votes": "22"
+    },
+    {
+      "authors": [
+        "Mary Shelley"
+      ],
+      "position": "89",
+      "rank_change": "78",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/35031085-frankenstein"
+      },
+      "title": "Frankenstein",
+      "votes": "22"
+    },
+    {
+      "authors": [
+        "Robert Jackson Bennett"
+      ],
+      "position": "92",
+      "rank_change": "-8",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/159695-the-divine-cities"
+      },
+      "title": "The Divine Cities",
+      "votes": "21"
+    },
+    {
+      "authors": [
+        "Daniel Abraham"
+      ],
+      "position": "92",
+      "rank_change": "-22",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/43409-long-price-quartet"
+      },
+      "title": "Long Price Quartet",
+      "votes": "21"
+    },
+    {
+      "authors": [
+        "Katherine Arden"
+      ],
+      "position": "92",
+      "rank_change": "-22",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/198489-the-winternight-trilogy"
+      },
+      "title": "The Winternight Trilogy",
+      "votes": "21"
+    },
+    {
+      "authors": [
+        "Octavia E. Butler"
+      ],
+      "position": "92",
+      "rank_change": "9",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/57804-earthseed"
+      },
+      "title": "Earthseed",
+      "votes": "21"
+    },
+    {
+      "authors": [
+        "Madeline Miller"
+      ],
+      "position": "96",
+      "rank_change": "-18",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13623848-the-song-of-achilles"
+      },
+      "title": "The Song of Achilles",
+      "votes": "20"
+    },
+    {
+      "authors": [
+        "R.J. Barker"
+      ],
+      "position": "96",
+      "rank_change": "12",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/258685-the-tide-child"
+      },
+      "title": "The Tide Child",
+      "votes": "20"
+    },
+    {
+      "authors": [
+        "Janny Wurts"
+      ],
+      "position": "98",
+      "rank_change": "28",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/49113-wars-of-light-and-shadow"
+      },
+      "title": "Wars of Light and Shadow",
+      "votes": "19"
+    },
+    {
+      "authors": [
+        "Octavia E. Butler"
+      ],
+      "position": "98",
+      "rank_change": "-5",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/60931.Kindred"
+      },
+      "title": "Kindred",
+      "votes": "19"
+    },
+    {
+      "authors": [
+        "Marie Brennan"
+      ],
+      "position": "98",
+      "rank_change": "-14",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/107373-the-memoirs-of-lady-trent"
+      },
+      "title": "The Memoirs of Lady Trent",
+      "votes": "19"
+    },
+    {
+      "authors": [
+        "Martha Wells"
+      ],
+      "position": "98",
+      "rank_change": "22",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/65591-the-books-of-the-raksura"
+      },
+      "title": "The Books of the Raksura",
+      "votes": "19"
+    },
+    {
+      "authors": [
+        "Suzanne Collins"
+      ],
+      "position": "102",
+      "rank_change": "81",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/73758-the-hunger-games"
+      },
+      "title": "The Hunger Games",
+      "votes": "18"
+    },
+    {
+      "authors": [
+        "Rick Riordan"
+      ],
+      "position": "103",
+      "rank_change": "-74",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/40736-percy-jackson-and-the-olympians"
+      },
+      "title": "Percy Jackson and the Olympians",
+      "votes": "17"
+    },
+    {
+      "authors": [
+        "Iain M. Banks"
+      ],
+      "position": "103",
+      "rank_change": "-2",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/49118-culture"
+      },
+      "title": "Culture",
+      "votes": "17"
+    },
+    {
+      "authors": [
+        "John Gwynne"
+      ],
+      "position": "105",
+      "rank_change": "-35",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/273156-bloodsworn-saga"
+      },
+      "title": "The Bloodsworn Trilogy",
+      "votes": "16"
+    },
+    {
+      "authors": [
+        "Maggie Stiefvater"
+      ],
+      "position": "105",
+      "rank_change": "53",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/73675-the-raven-cycle"
+      },
+      "title": "The Raven Cycle",
+      "votes": "16"
+    },
+    {
+      "authors": [
+        "Richard Adams"
+      ],
+      "position": "105",
+      "rank_change": "207",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/93546-watership-down"
+      },
+      "title": "Watership Down",
+      "votes": "16"
+    },
+    {
+      "authors": [
+        "Josiah Bancroft"
+      ],
+      "position": "105",
+      "rank_change": "-76",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/127130-the-books-of-babel"
+      },
+      "title": "The Books of Babel",
+      "votes": "16"
+    },
+    {
+      "authors": [
+        "Jeff VanderMeer"
+      ],
+      "position": "105",
+      "rank_change": "21",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/112239-southern-reach"
+      },
+      "title": "Southern Reach",
+      "votes": "16"
+    },
+    {
+      "authors": [
+        "Christopher Paolini"
+      ],
+      "position": "105",
+      "rank_change": "-12",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/44866-the-inheritance-cycle"
+      },
+      "title": "The Inheritance Cycle",
+      "votes": "16"
+    },
+    {
+      "authors": [
+        "R.F. Kuang"
+      ],
+      "position": "111",
+      "rank_change": "15",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/57945316-babel"
+      },
+      "title": "Babel",
+      "votes": "15"
+    },
+    {
+      "authors": [
+        "Peter S. Beagle"
+      ],
+      "position": "111",
+      "rank_change": "-18",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/108965-the-last-unicorn"
+      },
+      "title": "The Last Unicorn",
+      "votes": "15"
+    },
+    {
+      "authors": [
+        "Hiromu Arakawa"
+      ],
+      "position": "111",
+      "rank_change": "2",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/52848301-fullmetal-alchemist"
+      },
+      "title": "Fullmetal Alchemist",
+      "votes": "15"
+    },
+    {
+      "authors": [
+        "Shelley Parker-Chan"
+      ],
+      "position": "114",
+      "rank_change": "53",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/304356-the-radiant-emperor"
+      },
+      "title": "The Radiant Emperor",
+      "votes": "14"
+    },
+    {
+      "authors": [
+        "George Orwell"
+      ],
+      "position": "114",
+      "rank_change": "87",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/61439040-1984"
+      },
+      "title": "1984",
+      "votes": "14"
+    },
+    {
+      "authors": [
+        "Emily St. John Mandel"
+      ],
+      "position": "114",
+      "rank_change": "33",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/20170404-station-eleven"
+      },
+      "title": "Station Eleven",
+      "votes": "14"
+    },
+    {
+      "authors": [
+        "Jay Kristoff"
+      ],
+      "position": "114",
+      "rank_change": "44",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/254488-empire-of-the-vampire"
+      },
+      "title": "Empire of the Vampire",
+      "votes": "14"
+    },
+    {
+      "authors": [
+        "Lev Grossman"
+      ],
+      "position": "114",
+      "rank_change": "6",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/50834-the-magicians"
+      },
+      "title": "The Magicians",
+      "votes": "14"
+    },
+    {
+      "authors": [
+        "S.A. Chakraborty"
+      ],
+      "position": "114",
+      "rank_change": "-6",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/211584-the-daevabad-trilogy"
+      },
+      "title": "The Daevabad Trilogy",
+      "votes": "14"
+    },
+    {
+      "authors": [
+        "Max Gladstone"
+      ],
+      "position": "114",
+      "rank_change": "53",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/91029-craft-sequence"
+      },
+      "title": "Craft Sequence",
+      "votes": "14"
+    },
+    {
+      "authors": [
+        "Megan Whalen Turner"
+      ],
+      "position": "114",
+      "rank_change": "33",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/43514-the-queen-s-thief"
+      },
+      "title": "Queen's Thief",
+      "votes": "14"
+    },
+    {
+      "authors": [
+        "Becky Chambers"
+      ],
+      "position": "122",
+      "rank_change": "45",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/239322-monk-and-robot"
+      },
+      "title": "Monk & Robot",
+      "votes": "13"
+    },
+    {
+      "authors": [
+        "Naomi Novik"
+      ],
+      "position": "122",
+      "rank_change": "15",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/43272-temeraire"
+      },
+      "title": "Temeraire",
+      "votes": "13"
+    },
+    {
+      "authors": [
+        "ErraticErrata"
+      ],
+      "position": "122",
+      "rank_change": "113",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://practicalguidetoevil.wordpress.com/author/erraticerrata/"
+      },
+      "title": "A Practical Guide to Evil",
+      "votes": "13"
+    },
+    {
+      "authors": [
+        "Erin Morgenstern"
+      ],
+      "position": "122",
+      "rank_change": "15",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/9361589-the-night-circus"
+      },
+      "title": "The Night Circus",
+      "votes": "13"
+    },
+    {
+      "authors": [
+        "Brent Weeks"
+      ],
+      "position": "122",
+      "rank_change": "-69",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/291662-lightbringer"
+      },
+      "title": "Lightbringer",
+      "votes": "13"
+    },
+    {
+      "authors": [
+        "John Bierce"
+      ],
+      "position": "122",
+      "rank_change": "-2",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/252085-mage-errant"
+      },
+      "title": "Mage Errant",
+      "votes": "13"
+    },
+    {
+      "authors": [
+        "J. Zachary Pike"
+      ],
+      "position": "122",
+      "rank_change": "61",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/207236-the-dark-profit-saga"
+      },
+      "title": "The Dark Profit Saga",
+      "votes": "13"
+    },
+    {
+      "authors": [
+        "Naomi Novik"
+      ],
+      "position": "122",
+      "rank_change": "25",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/22544764-uprooted"
+      },
+      "title": "Uprooted",
+      "votes": "13"
+    },
+    {
+      "authors": [
+        "Bernard Cornwell"
+      ],
+      "position": "122",
+      "rank_change": "25",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/250571-the-warlord-chronicles"
+      },
+      "title": "The Warlord Chronicles",
+      "votes": "13"
+    },
+    {
+      "authors": [
+        "Nghi Vo"
+      ],
+      "position": "122",
+      "rank_change": "-14",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/288518-the-singing-hills-cycle"
+      },
+      "title": "The Singing Hills Cycle",
+      "votes": "13"
+    },
+    {
+      "authors": [
+        "Samantha Shannon"
+      ],
+      "position": "122",
+      "rank_change": "-14",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/341670-the-roots-of-chaos"
+      },
+      "title": "Roots of Chaos",
+      "votes": "13"
+    },
+    {
+      "authors": [
+        "Jim Butcher"
+      ],
+      "position": "133",
+      "rank_change": "68",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/45545-codex-alera"
+      },
+      "title": "Codex Alera",
+      "votes": "12"
+    },
+    {
+      "authors": [
+        "Mark Z. Danielewski"
+      ],
+      "position": "133",
+      "rank_change": "402",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/24800.House_of_Leaves"
+      },
+      "title": "House of Leaves",
+      "votes": "12"
+    },
+    {
+      "authors": [
+        "Tasha Suri"
+      ],
+      "position": "133",
+      "rank_change": "-7",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/290186-the-burning-kingdoms"
+      },
+      "title": "The Burning Kingdoms",
+      "votes": "12"
+    },
+    {
+      "authors": [
+        "Brian Jacques"
+      ],
+      "position": "133",
+      "rank_change": "14",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/7996.Redwall"
+      },
+      "title": "Redwall",
+      "votes": "12"
+    },
+    {
+      "authors": [
+        "Travis Baldree"
+      ],
+      "position": "133",
+      "rank_change": "-75",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/360265-legends-lattes"
+      },
+      "title": "Legends and Lattes",
+      "votes": "12"
+    },
+    {
+      "authors": [
+        "Evan Winter"
+      ],
+      "position": "133",
+      "rank_change": "-57",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/250573-the-burning"
+      },
+      "title": "The Burning",
+      "votes": "12"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "position": "139",
+      "rank_change": "-98",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/1268479.Warbreaker"
+      },
+      "title": "Warbreaker",
+      "votes": "11"
+    },
+    {
+      "authors": [
+        "David Mitchell"
+      ],
+      "position": "139",
+      "rank_change": "239",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/49628.Cloud_Atlas"
+      },
+      "title": "Cloud Atlas",
+      "votes": "11"
+    },
+    {
+      "authors": [
+        "Mary Robinette Kowal"
+      ],
+      "position": "139",
+      "rank_change": "-13",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/193730-lady-astronaut-universe"
+      },
+      "title": "Lady Astronaut",
+      "votes": "11"
+    },
+    {
+      "authors": [
+        "Robin McKinley"
+      ],
+      "position": "139",
+      "rank_change": "174",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/8087.Deerskin"
+      },
+      "title": "Deerskin",
+      "votes": "11"
+    },
+    {
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "position": "139",
+      "rank_change": "NEW",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/377488-the-tyrant-philosophers"
+      },
+      "title": "The Tyrant Philosophers",
+      "votes": "11"
+    },
+    {
+      "authors": [
+        "Richard Swan"
+      ],
+      "position": "139",
+      "rank_change": "174",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/324773-empire-of-the-wolf"
+      },
+      "title": "Empire of the Wolf",
+      "votes": "11"
+    },
+    {
+      "authors": [
+        "Marina and Sergey Dyachenko"
+      ],
+      "position": "139",
+      "rank_change": "62",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/38633526-vita-nostra"
+      },
+      "title": "Vita Nostra",
+      "votes": "11"
+    },
+    {
+      "authors": [
+        "Isaac Asimov"
+      ],
+      "position": "139",
+      "rank_change": "-26",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/59386-foundation-publication-order"
+      },
+      "title": "Foundation",
+      "votes": "11"
+    },
+    {
+      "authors": [
+        "Michael Moorcock"
+      ],
+      "position": "139",
+      "rank_change": "96",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/42326-the-elric-saga"
+      },
+      "title": "The Elric Saga",
+      "votes": "11"
+    },
+    {
+      "authors": [
+        "Raymond Feist and Janny Wurts"
+      ],
+      "position": "139",
+      "rank_change": "-50",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/44298-the-empire-trilogy"
+      },
+      "title": "The Empire Trilogy",
+      "votes": "11"
+    },
+    {
+      "authors": [
+        "Matthew Woodring Stover"
+      ],
+      "position": "139",
+      "rank_change": "62",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/53770-the-acts-of-caine"
+      },
+      "title": "Acts of Caine",
+      "votes": "11"
+    },
+    {
+      "authors": [
+        "Erin Morgenstern"
+      ],
+      "position": "150",
+      "rank_change": "17",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/43575115-the-starless-sea"
+      },
+      "title": "The Starless Sea",
+      "votes": "10"
+    },
+    {
+      "authors": [
+        "William Goldman"
+      ],
+      "position": "150",
+      "rank_change": "8",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/21787.The_Princess_Bride"
+      },
+      "title": "The Princess Bride",
+      "votes": "10"
+    },
+    {
+      "authors": [
+        "Rebecca Yarros"
+      ],
+      "position": "150",
+      "rank_change": "NEW",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/362915-the-empyrean"
+      },
+      "title": "The Empyrean",
+      "votes": "10"
+    },
+    {
+      "authors": [
+        "Heather Fawcett"
+      ],
+      "position": "150",
+      "rank_change": "NEW",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/353912-emily-wilde"
+      },
+      "title": "Emily Wilde",
+      "votes": "10"
+    },
+    {
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "position": "150",
+      "rank_change": "-30",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/2845024-anathem"
+      },
+      "title": "Anathem",
+      "votes": "10"
+    },
+    {
+      "authors": [
+        "Shannon Chakraborty"
+      ],
+      "position": "150",
+      "rank_change": "NEW",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/289717-amina-al-sirafi"
+      },
+      "title": "The Adventures of Amina Al-Sirafi",
+      "votes": "10"
+    },
+    {
+      "authors": [
+        "T.H. White"
+      ],
+      "position": "150",
+      "rank_change": "17",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/57017-the-once-and-future-king"
+      },
+      "title": "The Once and Future King",
+      "votes": "10"
+    },
+    {
+      "authors": [
+        "Alan Moore and Dave Gibbons"
+      ],
+      "position": "150",
+      "rank_change": "228",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/472331.Watchmen"
+      },
+      "title": "Watchmen",
+      "votes": "10"
+    },
+    {
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "position": "150",
+      "rank_change": "51",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/45895-shadows-of-the-apt"
+      },
+      "title": "Shadows of The Apt",
+      "votes": "10"
+    },
+    {
+      "authors": [
+        "Oscar Wilde"
+      ],
+      "position": "150",
+      "rank_change": "51",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/489732.The_Picture_of_Dorian_Gray"
+      },
+      "title": "A Picture of Dorian Gray",
+      "votes": "10"
+    },
+    {
+      "authors": [
+        "V.E. Schwab"
+      ],
+      "position": "150",
+      "rank_change": "117",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/122142-shades-of-magic"
+      },
+      "title": "Shades of Magic",
+      "votes": "10"
+    },
+    {
+      "authors": [
+        "CasualFarmer"
+      ],
+      "position": "161",
+      "rank_change": "217",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/60888209-beware-of-chicken"
+      },
+      "title": "Beware of Chicken",
+      "votes": "9"
+    },
+    {
+      "authors": [
+        "Sebastien de Castell"
+      ],
+      "position": "161",
+      "rank_change": "-3",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/121119-greatcoats"
+      },
+      "title": "Greatcoats",
+      "votes": "9"
+    },
+    {
+      "authors": [
+        "T.J. Klune"
+      ],
+      "position": "161",
+      "rank_change": "-60",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/413960-cerulean-chronicles"
+      },
+      "title": "Cerulean Chronicles",
+      "votes": "9"
+    },
+    {
+      "authors": [
+        "Kazuo Ishiguro"
+      ],
+      "position": "161",
+      "rank_change": "40",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/6334.Never_Let_Me_Go"
+      },
+      "title": "Never Let Me Go",
+      "votes": "9"
+    },
+    {
+      "authors": [
+        "Becky Chambers"
+      ],
+      "position": "161",
+      "rank_change": "106",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/43190272-to-be-taught-if-fortunate"
+      },
+      "title": "To Be Taught, If Fortunate",
+      "votes": "9"
+    },
+    {
+      "authors": [
+        "Anthony Ryan"
+      ],
+      "position": "161",
+      "rank_change": "374",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/310529-covenant-of-steel"
+      },
+      "title": "Covenant of Steel",
+      "votes": "9"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "position": "161",
+      "rank_change": "22",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/830502.It"
+      },
+      "title": "It",
+      "votes": "9"
+    },
+    {
+      "authors": [
+        "William Gibson"
+      ],
+      "position": "161",
+      "rank_change": "-48",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/43622-sprawl"
+      },
+      "title": "Neuromancer / Sprawl Trilogy",
+      "votes": "9"
+    },
+    {
+      "authors": [
+        "Margaret Weis and Tracy Hickman"
+      ],
+      "position": "161",
+      "rank_change": "40",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/41759-dragonlance-chronicles"
+      },
+      "title": "Dragonlance",
+      "votes": "9"
+    },
+    {
+      "authors": [
+        "Miles Cameron"
+      ],
+      "position": "161",
+      "rank_change": "152",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/87389-the-traitor-son-cycle"
+      },
+      "title": "The Traitor Son Cycle",
+      "votes": "9"
+    },
+    {
+      "authors": [
+        "Seanan McGuire"
+      ],
+      "position": "161",
+      "rank_change": "374",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/165484-wayward-children"
+      },
+      "title": "Wayward Children",
+      "votes": "9"
+    },
+    {
+      "authors": [
+        "Daniel Abraham"
+      ],
+      "position": "161",
+      "rank_change": "22",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/53777-the-dagger-and-the-coin"
+      },
+      "title": "The Dagger and the Coin",
+      "votes": "9"
+    },
+    {
+      "authors": [
+        "Benedict Jacka"
+      ],
+      "position": "161",
+      "rank_change": "40",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/71196-alex-verus"
+      },
+      "title": "Alex Verus",
+      "votes": "9"
+    },
+    {
+      "authors": [
+        "Walter M. Miller, Jr."
+      ],
+      "position": "161",
+      "rank_change": "217",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/117665-st-leibowitz"
+      },
+      "title": "Saint Leibowitz",
+      "votes": "9"
+    },
+    {
+      "authors": [
+        "Andy Weir"
+      ],
+      "position": "161",
+      "rank_change": "-48",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18007564-the-martian"
+      },
+      "title": "The Martian",
+      "votes": "9"
+    },
+    {
+      "authors": [
+        "Juliet Marillier"
+      ],
+      "position": "161",
+      "rank_change": "22",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/44771-sevenwaters"
+      },
+      "title": "Sevenwaters",
+      "votes": "9"
+    },
+    {
+      "authors": [
+        "R. F. Kuang"
+      ],
+      "position": "161",
+      "rank_change": "-96",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/35068705-the-poppy-war"
+      },
+      "title": "The Poppy War",
+      "votes": "9"
+    },
+    {
+      "authors": [
+        "Django Wexler"
+      ],
+      "position": "161",
+      "rank_change": "-24",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/99112-the-shadow-campaigns"
+      },
+      "title": "The Shadow Campaigns",
+      "votes": "9"
+    },
+    {
+      "authors": [
+        "Ann Leckie"
+      ],
+      "position": "161",
+      "rank_change": "40",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/39395857-the-raven-tower"
+      },
+      "title": "The Raven Tower",
+      "votes": "9"
+    },
+    {
+      "authors": [
+        "Michelle Sagara West"
+      ],
+      "position": "161",
+      "rank_change": "-3",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/130836-essalieyan"
+      },
+      "title": "Essalieyan",
+      "votes": "9"
+    },
+    {
+      "authors": [
+        "Octavia E. Butler"
+      ],
+      "position": "161",
+      "rank_change": "22",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/41747-xenogenesis"
+      },
+      "title": "Xenogenesis",
+      "votes": "9"
+    },
+    {
+      "authors": [
+        "David Gemmell"
+      ],
+      "position": "161",
+      "rank_change": "74",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/40522-the-drenai-saga"
+      },
+      "title": "The Drenai Saga",
+      "votes": "9"
+    },
+    {
+      "authors": [
+        "Anne McCaffrey"
+      ],
+      "position": "183",
+      "rank_change": "-57",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/40323-dragonriders-of-pern"
+      },
+      "title": "Pern",
+      "votes": "8"
+    },
+    {
+      "authors": [
+        "Ben Aaronovitch"
+      ],
+      "position": "183",
+      "rank_change": "-75",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/51937-rivers-of-london"
+      },
+      "title": "Rivers of London",
+      "votes": "8"
+    },
+    {
+      "authors": [
+        "Dennis E. Taylor"
+      ],
+      "position": "183",
+      "rank_change": "-57",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/192752-bobiverse"
+      },
+      "title": "Bobiverse",
+      "votes": "8"
+    },
+    {
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "position": "183",
+      "rank_change": "130",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/305076-the-final-architecture"
+      },
+      "title": "The Final Architecture",
+      "votes": "8"
+    },
+    {
+      "authors": [
+        "Steven Brust"
+      ],
+      "position": "183",
+      "rank_change": "18",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/40334-vlad-taltos"
+      },
+      "title": "Vlad Taltos",
+      "votes": "8"
+    },
+    {
+      "authors": [
+        "Mary Doria Russell"
+      ],
+      "position": "183",
+      "rank_change": "18",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/62065-the-sparrow"
+      },
+      "title": "Sparrow",
+      "votes": "8"
+    },
+    {
+      "authors": [
+        "Robin McKinley"
+      ],
+      "position": "183",
+      "rank_change": "0",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/8088.Sunshine"
+      },
+      "title": "Sunshine",
+      "votes": "8"
+    },
+    {
+      "authors": [
+        "Sarah J. Maas"
+      ],
+      "position": "183",
+      "rank_change": "352",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/104014-a-court-of-thorns-and-roses"
+      },
+      "title": "A Court of Thorns and Roses",
+      "votes": "8"
+    },
+    {
+      "authors": [
+        "Yoon Ha Lee"
+      ],
+      "position": "183",
+      "rank_change": "18",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/160439-the-machineries-of-empire"
+      },
+      "title": "The Machineries of Empire",
+      "votes": "8"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "position": "183",
+      "rank_change": "-99",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13578175-the-emperor-s-soul"
+      },
+      "title": "The Emperor's Soul",
+      "votes": "8"
+    },
+    {
+      "authors": [
+        "Joe Haldeman"
+      ],
+      "position": "183",
+      "rank_change": "52",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/54376-the-forever-war"
+      },
+      "title": "Forever War",
+      "votes": "8"
+    },
+    {
+      "authors": [
+        "Hajime Isayama"
+      ],
+      "position": "183",
+      "rank_change": "52",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/83553-shingeki-no-kyojin"
+      },
+      "title": "Attack on Titan",
+      "votes": "8"
+    },
+    {
+      "authors": [
+        "Bram Stoker"
+      ],
+      "position": "183",
+      "rank_change": "195",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/17245.Dracula"
+      },
+      "title": "Dracula",
+      "votes": "8"
+    },
+    {
+      "authors": [
+        "Stephen R. Donaldson"
+      ],
+      "position": "183",
+      "rank_change": "-46",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/42944-the-chronicles-of-thomas-covenant-the-unbeliever"
+      },
+      "title": "Thomas Covenant",
+      "votes": "8"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "position": "183",
+      "rank_change": "0",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/10644930-11-22-63"
+      },
+      "title": "11/22/63",
+      "votes": "8"
+    },
+    {
+      "authors": [
+        "Antoine de Saint-Exup\u00e9ry"
+      ],
+      "position": "198",
+      "rank_change": "NEW",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/157993.The_Little_Prince"
+      },
+      "title": "The Little Prince",
+      "votes": "7"
+    },
+    {
+      "authors": [
+        "Laini Taylor"
+      ],
+      "position": "198",
+      "rank_change": "NEW",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/168789-strange-the-dreamer"
+      },
+      "title": "The Lost City of [Weep]",
+      "votes": "7"
+    },
+    {
+      "authors": [
+        "C.S. Friedman"
+      ],
+      "position": "198",
+      "rank_change": "-51",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/40358-the-coldfire-trilogy"
+      },
+      "title": "The Coldfire Trilogy",
+      "votes": "7"
+    },
+    {
+      "authors": [
+        "Sarah J. Maas"
+      ],
+      "position": "198",
+      "rank_change": "37",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/51288-throne-of-glass"
+      },
+      "title": "Celaena / Throne of Glass",
+      "votes": "7"
+    },
+    {
+      "authors": [
+        "Drew Hayes"
+      ],
+      "position": "198",
+      "rank_change": "115",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/115317-super-powereds"
+      },
+      "title": "Super Powereds",
+      "votes": "7"
+    },
+    {
+      "authors": [
+        "Marlon James"
+      ],
+      "position": "198",
+      "rank_change": "-31",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/196986-the-dark-star-trilogy"
+      },
+      "title": "The Dark Star Trilogy",
+      "votes": "7"
+    },
+    {
+      "authors": [
+        "Kate Elliott"
+      ],
+      "position": "198",
+      "rank_change": "69",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/43697-crown-of-stars"
+      },
+      "title": "Crown of Stars",
+      "votes": "7"
+    },
+    {
+      "authors": [
+        "Patricia A. McKillip"
+      ],
+      "position": "198",
+      "rank_change": "-15",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/81069.The_Forgotten_Beasts_of_Eld"
+      },
+      "title": "The Forgotten Beasts of Eld",
+      "votes": "7"
+    },
+    {
+      "authors": [
+        "Derek Landy"
+      ],
+      "position": "198",
+      "rank_change": "-15",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/127839-skulduggery-pleasant"
+      },
+      "title": "Skulduggery Pleasant",
+      "votes": "7"
+    },
+    {
+      "authors": [
+        "Michael Crichton"
+      ],
+      "position": "198",
+      "rank_change": "69",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/71966-jurassic-park"
+      },
+      "title": "Jurassic Park",
+      "votes": "7"
+    },
+    {
+      "authors": [
+        "Hannah Kaner"
+      ],
+      "position": "198",
+      "rank_change": "337",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/356169-fallen-gods"
+      },
+      "title": "Fallen Gods / Godkiller",
+      "votes": "7"
+    },
+    {
+      "authors": [
+        "Sherwood Smith"
+      ],
+      "position": "198",
+      "rank_change": "37",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/41616-inda"
+      },
+      "title": "Inda",
+      "votes": "7"
+    },
+    {
+      "authors": [
+        "K.J. Parker"
+      ],
+      "position": "198",
+      "rank_change": "-31",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/289412-the-siege"
+      },
+      "title": "The Siege",
+      "votes": "7"
+    },
+    {
+      "authors": [
+        "Anthony Ryan"
+      ],
+      "position": "198",
+      "rank_change": "-40",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/81339-raven-s-shadow"
+      },
+      "title": "Raven's Shadow",
+      "votes": "7"
+    },
+    {
+      "authors": [
+        "Italo Calvino"
+      ],
+      "position": "212",
+      "rank_change": "101",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/9809.Invisible_Cities"
+      },
+      "title": "Invisible Cities",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Roger Zelazny"
+      ],
+      "position": "212",
+      "rank_change": "-99",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/40859-the-chronicles-of-amber"
+      },
+      "title": "Chronicles of Amber",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Elizabeth Moon"
+      ],
+      "position": "212",
+      "rank_change": "-86",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/152353-the-deed-of-paksenarrion"
+      },
+      "title": "The Deed of Paksenarrion",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Rosemary Kirstein"
+      ],
+      "position": "212",
+      "rank_change": "-65",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/43723-the-steerswoman"
+      },
+      "title": "Steerswoman",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Miya Kazuki"
+      ],
+      "position": "212",
+      "rank_change": "-29",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/220639-ascendance-of-a-bookworm-light-novel"
+      },
+      "title": "Ascendance of a Bookworm",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Richard Nell"
+      ],
+      "position": "212",
+      "rank_change": "-65",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/233409-ash-and-sand"
+      },
+      "title": "Ash and Sand",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "position": "212",
+      "rank_change": "-111",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/87591651-the-stand"
+      },
+      "title": "The Stand",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Alastair Reynolds"
+      ],
+      "position": "212",
+      "rank_change": "166",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/56392-revelation-space"
+      },
+      "title": "Revelation Space",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Mike Shackle"
+      ],
+      "position": "212",
+      "rank_change": "NEW",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/273817-the-last-war"
+      },
+      "title": "The Last War",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "position": "212",
+      "rank_change": "-167",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/30165203-american-gods"
+      },
+      "title": "American Gods",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Mary Soon Lee"
+      ],
+      "position": "212",
+      "rank_change": "323",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/223609753-the-sign-of-the-dragon"
+      },
+      "title": "The Sign of the Dragon",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "C. S. E. Cooney"
+      ],
+      "position": "212",
+      "rank_change": "101",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/330957-saint-death"
+      },
+      "title": "Saint Death",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Paul Kearney"
+      ],
+      "position": "212",
+      "rank_change": "166",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/49870-the-monarchies-of-god"
+      },
+      "title": "Monarchies of God",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Peter F. Hamilton"
+      ],
+      "position": "212",
+      "rank_change": "-11",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/40740-commonwealth-saga"
+      },
+      "title": "Commonwealth Saga",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Cormac McCarthy"
+      ],
+      "position": "212",
+      "rank_change": "55",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/6288.The_Road"
+      },
+      "title": "The Road",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Ted Chiang"
+      ],
+      "position": "212",
+      "rank_change": "101",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/223380.Stories_of_Your_Life_and_Others"
+      },
+      "title": "Stories of Your Life and Others",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Jeff VanderMeer"
+      ],
+      "position": "212",
+      "rank_change": "-29",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/68277-ambergris"
+      },
+      "title": "Ambergris",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "position": "212",
+      "rank_change": "-45",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/87970-elantris"
+      },
+      "title": "Elantris",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Moniquill Blackgoose"
+      ],
+      "position": "212",
+      "rank_change": "NEW",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/357438-nampeshiweisit"
+      },
+      "title": "Nampeshiweisit",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Paul Stewart, Chris Riddell"
+      ],
+      "position": "212",
+      "rank_change": "323",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/55393-the-edge-chronicles-rook-trilogy"
+      },
+      "title": "The Edge Chronicles",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Andrew Rowe"
+      ],
+      "position": "212",
+      "rank_change": "-75",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/201441-arcane-ascension"
+      },
+      "title": "Arcane Ascension",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Jonathan Stroud"
+      ],
+      "position": "212",
+      "rank_change": "-92",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/40838-bartimaeus"
+      },
+      "title": "Bartimaeus",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Jen Williams"
+      ],
+      "position": "212",
+      "rank_change": "101",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/193893-the-winnowing-flame-trilogy"
+      },
+      "title": "Winnowing Flame Trilogy",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Peter Watts"
+      ],
+      "position": "212",
+      "rank_change": "55",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/132463-firefall"
+      },
+      "title": "Blindsight / Firefall",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Lloyd Alexander"
+      ],
+      "position": "212",
+      "rank_change": "-29",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/40371-the-chronicles-of-prydain"
+      },
+      "title": "Chronicles of Prydain",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "J.M. Clarke"
+      ],
+      "position": "212",
+      "rank_change": "NEW",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/346305-mark-of-the-fool"
+      },
+      "title": "Mark of the Fool",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Jessica Townsend"
+      ],
+      "position": "212",
+      "rank_change": "-131",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/203989-nevermoor"
+      },
+      "title": "Nevermoor",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Ilona Andrews"
+      ],
+      "position": "212",
+      "rank_change": "-11",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/40691-kate-daniels"
+      },
+      "title": "Kate Daniels",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Gabriel Garcia Marquez"
+      ],
+      "position": "212",
+      "rank_change": "55",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/320.One_hundred_years_of_solitude"
+      },
+      "title": "One Hundred Years of Solitude",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Michael R. Fletcher"
+      ],
+      "position": "212",
+      "rank_change": "166",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/280010-the-obsidian-path"
+      },
+      "title": "The Obsidian Path",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Margaret Weis and Tracy Hickman"
+      ],
+      "position": "212",
+      "rank_change": "166",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/41764-the-death-gate-cycle"
+      },
+      "title": "The Death Gate Cycle",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Peter McLean"
+      ],
+      "position": "212",
+      "rank_change": "-11",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/223897-war-for-the-rose-throne"
+      },
+      "title": "War for the Rose Throne",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Shirtaloon"
+      ],
+      "position": "212",
+      "rank_change": "166",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/319859-he-who-fights-with-monsters"
+      },
+      "title": "He Who Fights With Monsters",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "Robert Jackson Bennett"
+      ],
+      "position": "212",
+      "rank_change": "323",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/228579-the-founders-trilogy"
+      },
+      "title": "The Founders Trilogy",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "V.E. Schwab"
+      ],
+      "position": "212",
+      "rank_change": "166",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/120477-villains"
+      },
+      "title": "Villains",
+      "votes": "6"
+    },
+    {
+      "authors": [
+        "C.J. Cherryh"
+      ],
+      "position": "247",
+      "rank_change": "288",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/40810-cyteen"
+      },
+      "title": "Cyteen",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Jacqueline Harpman"
+      ],
+      "position": "247",
+      "rank_change": "NEW",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/60811826-i-who-have-never-known-men"
+      },
+      "title": "I Who Have Never Known Men",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Ed McDonald"
+      ],
+      "position": "247",
+      "rank_change": "20",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/224241-raven-s-mark"
+      },
+      "title": "Raven's Mark",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Daniel Polansky"
+      ],
+      "position": "247",
+      "rank_change": "66",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/96136-low-town"
+      },
+      "title": "Low Town",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Yoshihiro Togashi"
+      ],
+      "position": "247",
+      "rank_change": "-12",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/64708-hunter-hunter"
+      },
+      "title": "Hunter x Hunter",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Brian Staveley"
+      ],
+      "position": "247",
+      "rank_change": "-64",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/116397-chronicle-of-the-unhewn-throne"
+      },
+      "title": "Chronicle of the Unhewn Throne",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Kazuo Ishiguro"
+      ],
+      "position": "247",
+      "rank_change": "288",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/22522805-the-buried-giant"
+      },
+      "title": "The Buried Giant",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Carol Berg"
+      ],
+      "position": "247",
+      "rank_change": "-80",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/245384-navronne-sanctuary-universe"
+      },
+      "title": "Navronne / Sanctuary Universe Series",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Larry Correia"
+      ],
+      "position": "247",
+      "rank_change": "NEW",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/150976-saga-of-the-forgotten-warrior"
+      },
+      "title": "Saga of the Forgotten Warrior",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Diana Duane"
+      ],
+      "position": "247",
+      "rank_change": "20",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/40400-young-wizards"
+      },
+      "title": "Young Wizards",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Jorge Luis Borges"
+      ],
+      "position": "247",
+      "rank_change": "288",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/426504.Ficciones"
+      },
+      "title": "Ficciones",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "P. Dj\u00e8l\u00ed Clark"
+      ],
+      "position": "247",
+      "rank_change": "-64",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/299884-dead-djinn-universe"
+      },
+      "title": "Dead Djinn Universe",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Seanan McGuire"
+      ],
+      "position": "247",
+      "rank_change": "288",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/171685-october-daye"
+      },
+      "title": "October Daye",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Helene Wecker"
+      ],
+      "position": "247",
+      "rank_change": "-46",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/164849-the-golem-and-the-jinni"
+      },
+      "title": "Chava and Ahmad",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Emily St. John Mandel"
+      ],
+      "position": "247",
+      "rank_change": "NEW",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/58446227-sea-of-tranquility"
+      },
+      "title": "Sea of Tranquility",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Claire North"
+      ],
+      "position": "247",
+      "rank_change": "-46",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/35066358-the-first-fifteen-lives-of-harry-august"
+      },
+      "title": "The First Fifteen Lives of Harry August",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "position": "247",
+      "rank_change": "66",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/23524779-guns-of-the-dawn"
+      },
+      "title": "Guns of the Dawn",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Mikhail Bulgakov"
+      ],
+      "position": "247",
+      "rank_change": "-64",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/117833.The_Master_and_Margarita"
+      },
+      "title": "The Master and Margarita",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "John Crowley"
+      ],
+      "position": "247",
+      "rank_change": "131",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/90619.Little_Big"
+      },
+      "title": "Little, Big",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "position": "247",
+      "rank_change": "NEW",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/59924.The_Lathe_of_Heaven"
+      },
+      "title": "The Lathe of Heaven",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Leigh Bardugo"
+      ],
+      "position": "247",
+      "rank_change": "-80",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/191949-alex-stern"
+      },
+      "title": "Alex Stern",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Susan Cooper"
+      ],
+      "position": "247",
+      "rank_change": "20",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/44420-the-dark-is-rising"
+      },
+      "title": "The Dark Is Rising",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Tad Williams"
+      ],
+      "position": "247",
+      "rank_change": "131",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/43762-otherland"
+      },
+      "title": "Otherland series",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Tananarive Due"
+      ],
+      "position": "247",
+      "rank_change": "NEW",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/62919847-the-reformatory"
+      },
+      "title": "The Reformatory",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Rachel Aaron"
+      ],
+      "position": "247",
+      "rank_change": "131",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/128485-heartstrikers"
+      },
+      "title": "Heartstrikers",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "John Flanagan"
+      ],
+      "position": "247",
+      "rank_change": "131",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/43436-ranger-s-apprentice"
+      },
+      "title": "Ranger's Apprentice",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "wildbow"
+      ],
+      "position": "247",
+      "rank_change": "NEW",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/53438664-pale"
+      },
+      "title": "Pale",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "David Eddings"
+      ],
+      "position": "247",
+      "rank_change": "-80",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/40739-the-belgariad"
+      },
+      "title": "Belgariad",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "V.E. Schwab"
+      ],
+      "position": "247",
+      "rank_change": "-80",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/50623864-the-invisible-life-of-addie-larue"
+      },
+      "title": "The Invisible Life of Addie LaRue",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Rachel Neumeier"
+      ],
+      "position": "247",
+      "rank_change": "NEW",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/305088-tuyo"
+      },
+      "title": "Tuyo",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Patricia Briggs"
+      ],
+      "position": "247",
+      "rank_change": "-12",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/40932-mercy-thompson"
+      },
+      "title": "Mercy Thompson",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Guy Gavriel Kay"
+      ],
+      "position": "247",
+      "rank_change": "131",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/104085.A_Song_for_Arbonne"
+      },
+      "title": "A Song for Arbonne",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Ted Chiang"
+      ],
+      "position": "247",
+      "rank_change": "66",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/41160292-exhalation"
+      },
+      "title": "Exhalation",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "position": "247",
+      "rank_change": "66",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/11590._Salem_s_Lot"
+      },
+      "title": "Salem's Lot",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Lynn Flewelling"
+      ],
+      "position": "247",
+      "rank_change": "131",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/40356-tam-r-triad"
+      },
+      "title": "Tam\u00edr Triad",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Daniel Keyes"
+      ],
+      "position": "247",
+      "rank_change": "20",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18373.Flowers_for_Algernon"
+      },
+      "title": "Flowers for Algernon",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "T. Kingfisher"
+      ],
+      "position": "247",
+      "rank_change": "-12",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/56179377-nettle-bone"
+      },
+      "title": "Nettle & Bone",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Mo Xiang Tong Xiu"
+      ],
+      "position": "247",
+      "rank_change": "66",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/324340-heaven-official-s-blessing-tian-guan-ci-fu-novel"
+      },
+      "title": "Heaven Official\u2019s Blessing",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan and Fiona Staples"
+      ],
+      "position": "247",
+      "rank_change": "-89",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/146415-saga"
+      },
+      "title": "Saga",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Bradley P. Beaulieu"
+      ],
+      "position": "247",
+      "rank_change": "288",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/122067-the-song-of-the-shattered-sands"
+      },
+      "title": "The Song of the Shattered Sands",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Kanehito Yamada"
+      ],
+      "position": "247",
+      "rank_change": "NEW",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/57147096-frieren"
+      },
+      "title": "Frieren: Beyond Journey's End",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Nana Kwame Adjei-Brenyah"
+      ],
+      "position": "247",
+      "rank_change": "NEW",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/61190770-chain-gang-all-stars"
+      },
+      "title": "Chain-Gang All-Stars",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Alix E. Harrow"
+      ],
+      "position": "247",
+      "rank_change": "-121",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/49504061-the-once-and-future-witches"
+      },
+      "title": "The Once and Future Witches",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "CS Pacat"
+      ],
+      "position": "247",
+      "rank_change": "20",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/9305362-captive-prince"
+      },
+      "title": "Captive Prince",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Jasper Fforde"
+      ],
+      "position": "247",
+      "rank_change": "-46",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/43680-thursday-next"
+      },
+      "title": "Thursday Next",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "position": "247",
+      "rank_change": "288",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/33124137-pet-sematary"
+      },
+      "title": "Pet Sematary",
+      "votes": "5"
+    },
+    {
+      "authors": [
+        "N.K. Jemisin"
+      ],
+      "position": "247",
+      "rank_change": "-46\u200b",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/46971-inheritance-trilogy"
+      },
+      "title": "Inheritance Trilogy",
+      "votes": "5"
+    }
+  ],
+  "fetched_at": "2026-07-07T14:07:47Z",
+  "list_id": "r_fantasy_top_novels_2025",
+  "list_name": "r/Fantasy Top Novels 2025",
+  "match_series": true,
+  "notes": [],
+  "parser": "r_fantasy_top_novels_2025",
+  "schema_version": 2,
+  "source": {
+    "name": "r/Fantasy Top Novels 2025",
+    "source_id": "r_fantasy_top_novels_2025",
+    "url": "https://www.reddit.com/r/Fantasy/comments/1jjif55/rfantasy_top_novels_2025_results/"
+  }
+}

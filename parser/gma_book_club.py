@@ -25,7 +25,7 @@ class GMABookClubParser(BookClubParserBase):
       title, author = split_title_author(text)
       if not title or not author or not current_label:
         continue
-      source_url = (
+      entry_url = (
         urljoin(base_url, node.get('href'))
         if getattr(node, 'name', '') == 'a' and node.get('href') else base_url)
       entry = self.build_entry({
@@ -34,14 +34,14 @@ class GMABookClubParser(BookClubParserBase):
         'selection_label': current_label,
         'selection_year': parse_year(current_label),
         'selection_month': parse_month(current_label),
-      }, f'{current_label} {text}', source_url, scope, len(entries) + 1)
+      }, f'{current_label} {text}', entry_url, scope, len(entries) + 1, base_url=base_url)
       if entry is not None:
         key = self.entry_key(entry)
         if key in seen:
-          if entry.get('source_url') != base_url:
+          if entry.get('source'):
             for existing in entries:
               if self.entry_key(existing) == key:
-                existing['source_url'] = entry.get('source_url', existing['source_url'])
+                existing['source'] = entry['source']
                 break
           continue
         seen.add(key)

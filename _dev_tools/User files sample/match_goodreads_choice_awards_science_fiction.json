@@ -1,0 +1,200 @@
+{
+  "list_id": "goodreads_choice_awards_science_fiction",
+  "matches": [
+    {
+      "entry_key": "silver shark|ilona andrews",
+      "imported_author": [
+        "Ilona Andrews"
+      ],
+      "imported_title": "Silver Shark",
+      "matched_at": "2026-07-07T13:53:21Z",
+      "matched_authors": [
+        "Ilona Andrews"
+      ],
+      "matched_book_id": 40142,
+      "matched_book_ids": [
+        40142
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Ilona Andrews"
+          ],
+          "matched_book_id": 40142,
+          "matched_title": "The Kinsmen Universe"
+        }
+      ],
+      "matched_title": "The Kinsmen Universe"
+    },
+    {
+      "entry_key": "wool omnibus|hugh howey",
+      "imported_author": [
+        "Hugh Howey"
+      ],
+      "imported_title": "Wool Omnibus",
+      "matched_at": "2026-07-07T13:53:21Z",
+      "matched_authors": [
+        "Hugh Howey"
+      ],
+      "matched_book_id": 16880,
+      "matched_book_ids": [
+        16880
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Hugh Howey"
+          ],
+          "matched_book_id": 16880,
+          "matched_title": "The Silo Saga Omnibus"
+        }
+      ],
+      "matched_title": "The Silo Saga Omnibus"
+    },
+    {
+      "entry_key": "darth plagueis|james luceno",
+      "imported_author": [
+        "James Luceno"
+      ],
+      "imported_title": "Darth Plagueis",
+      "matched_at": "2026-07-07T13:53:21Z",
+      "matched_authors": [
+        "James Luceno"
+      ],
+      "matched_book_id": 40143,
+      "matched_book_ids": [
+        40143
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "James Luceno"
+          ],
+          "matched_book_id": 40143,
+          "matched_title": "Star Wars: Darth Plagueis"
+        }
+      ],
+      "matched_title": "Star Wars: Darth Plagueis"
+    },
+    {
+      "entry_key": "dust|hugh howey",
+      "ignored": true,
+      "imported_author": [
+        "Hugh Howey"
+      ],
+      "imported_title": "Dust",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-07T13:53:21Z"
+    },
+    {
+      "entry_key": "welcome to night vale|joseph fink",
+      "imported_author": [
+        "Joseph Fink"
+      ],
+      "imported_title": "Welcome to Night Vale",
+      "matched_at": "2026-07-07T13:53:21Z",
+      "matched_authors": [
+        "Joseph Fink",
+        "Jeffrey Cranor"
+      ],
+      "matched_book_id": 36038,
+      "matched_book_ids": [
+        36038,
+        36039,
+        36040,
+        36041
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Joseph Fink",
+            "Jeffrey Cranor"
+          ],
+          "matched_book_id": 36038,
+          "matched_title": "Mostly Void, Partially Stars"
+        },
+        {
+          "matched_authors": [
+            "Joseph Fink",
+            "Jeffrey Cranor"
+          ],
+          "matched_book_id": 36039,
+          "matched_title": "Who's a Good Boy?"
+        },
+        {
+          "matched_authors": [
+            "Joseph Fink",
+            "Jeffrey Cranor"
+          ],
+          "matched_book_id": 36040,
+          "matched_title": "The Buying of Lot 37"
+        },
+        {
+          "matched_authors": [
+            "Joseph Fink",
+            "Jeffrey Cranor"
+          ],
+          "matched_book_id": 36041,
+          "matched_title": "The Great Glowing Coils of the Universe"
+        }
+      ],
+      "matched_title": "The Great Glowing Coils of the Universe"
+    },
+    {
+      "entry_key": "star wars|chuck wendig",
+      "imported_author": [
+        "Chuck Wendig"
+      ],
+      "imported_title": "Star Wars",
+      "matched_at": "2026-07-07T13:53:21Z",
+      "matched_authors": [
+        "Chuck Wendig"
+      ],
+      "matched_book_id": 40136,
+      "matched_book_ids": [
+        40136
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Chuck Wendig"
+          ],
+          "matched_book_id": 40136,
+          "matched_title": "Aftermath"
+        }
+      ],
+      "matched_title": "Aftermath"
+    },
+    {
+      "entry_key": "home|nnedi okorafor",
+      "imported_author": [
+        "Nnedi Okorafor"
+      ],
+      "imported_title": "Home",
+      "matched_at": "2026-07-07T13:53:21Z",
+      "matched_authors": [
+        "Nnedi Okorafor"
+      ],
+      "matched_book_id": 16489,
+      "matched_book_ids": [
+        16489
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Nnedi Okorafor"
+          ],
+          "matched_book_id": 16489,
+          "matched_title": "Binti: The Complete Trilogy"
+        }
+      ],
+      "matched_title": "Binti: The Complete Trilogy"
+    }
+  ],
+  "saved_at": "2026-07-07T13:53:21Z",
+  "schema_version": 2
+}

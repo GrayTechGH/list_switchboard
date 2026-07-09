@@ -3,16 +3,16 @@
 
 from qt.core import (
   QDialog, QDialogButtonBox, QHBoxLayout, QHeaderView, QLabel, QListWidget,
-  QPushButton, QTableWidget, QTableWidgetItem, QVBoxLayout
+  QListWidgetItem, QPushButton, QTableWidget, QTableWidgetItem, Qt, QVBoxLayout
 )
 
 
 class StoredListsDialog(QDialog):
 
-  def __init__(self, parent, core, stored):
+  def __init__(self, parent, core, rows):
     QDialog.__init__(self, parent)
     self.core = core
-    self.stored = stored
+    self.rows = rows
     self.setWindowTitle('Manage Stored Lists')
 
     layout = QVBoxLayout()
@@ -59,22 +59,59 @@ class StoredListsDialog(QDialog):
 
   def selected_list_name(self):
     row = self.list_widget.currentRow()
-    if row < 0 or row >= len(self.stored):
+    if row < 0 or row >= len(self.rows):
       return None
-    return self.stored[row]
+    selected = self.rows[row]
+    if selected.get('is_active'):
+      return None
+    return selected['name']
+
+  def first_selectable_row(self):
+    for row, item in enumerate(self.rows):
+      if not item.get('is_active'):
+        return row
+    return None
+
+  def set_actions_enabled(self):
+    enabled = self.selected_list_name() is not None
+    self.switch_button.setEnabled(enabled)
+    self.rename_button.setEnabled(enabled)
+    self.remove_button.setEnabled(enabled)
 
   def refresh_lists(self):
     current = self.selected_list_name()
     self.list_widget.clear()
-    self.stored = self.core.current_stored_lists()
-    for name in self.stored:
-      count = len(self.core.books_for_stored_list(name))
-      self.list_widget.addItem(f'{name} ({count})')
-    if self.stored:
-      row = self.stored.index(current) if current in self.stored else 0
-      self.list_widget.setCurrentRow(row)
+    self.rows = self.core.managed_stored_list_rows()
+    for row in self.rows:
+      name = row['name']
+      if row.get('is_active'):
+        count = len(self.core.books_for_active_list(name))
+        item = QListWidgetItem(f'{name} ({count}) - Active List')
+        try:
+          item.setFlags(
+            item.flags()
+            & ~Qt.ItemFlag.ItemIsEnabled
+            & ~Qt.ItemFlag.ItemIsSelectable)
+        except Exception:
+          pass
+      else:
+        count = len(self.core.books_for_stored_list(name))
+        item = QListWidgetItem(f'{name} ({count})')
+      self.list_widget.addItem(item)
+    if self.rows:
+      current_row = next(
+        (index for index, row in enumerate(self.rows)
+         if row['name'] == current and not row.get('is_active')),
+        None)
+      if current_row is None:
+        current_row = self.first_selectable_row()
+      if current_row is not None:
+        self.list_widget.setCurrentRow(current_row)
+      else:
+        self.update_books(-1)
     else:
       self.update_books(-1)
+    self.set_actions_enabled()
 
   def update_books(self, row):
     name = self.selected_list_name()
@@ -83,6 +120,7 @@ class StoredListsDialog(QDialog):
     for row_index, row_data in enumerate(rows):
       for column, value in enumerate(row_data):
         self.book_table.setItem(row_index, column, QTableWidgetItem(value))
+    self.set_actions_enabled()
 
   def switch_selected(self):
     name = self.selected_list_name()
@@ -113,4 +151,3 @@ class StoredListsDialog(QDialog):
       return
     self.core.remove_stored_list(name)
     self.refresh_lists()
-

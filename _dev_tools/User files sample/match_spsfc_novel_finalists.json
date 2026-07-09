@@ -2,10 +2,39 @@
   "list_id": "spsfc_novel_finalists",
   "matches": [
     {
+      "entry_key": "captain wu starship nameless 1|patrice fitzgerald and jack lyster",
+      "imported_author": [
+        "Patrice Fitzgerald and Jack Lyster"
+      ],
+      "imported_title": "Captain Wu, Starship Nameless #1",
+      "matched_at": "2026-07-09T06:59:12Z",
+      "matched_authors": [
+        "Jack Lyster",
+        "Patrice Fitzgerald"
+      ],
+      "matched_book_id": 38490,
+      "matched_book_ids": [
+        38490
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Jack Lyster",
+            "Patrice Fitzgerald"
+          ],
+          "matched_book_id": 38490,
+          "matched_title": "Captain Wu: A Space Opera Adventure"
+        }
+      ],
+      "matched_title": "Captain Wu: A Space Opera Adventure"
+    },
+    {
       "entry_key": "aerstus book 1 the city|s z attwell",
-      "imported_author": "S. Z. Attwell",
+      "imported_author": [
+        "S. Z. Attwell"
+      ],
       "imported_title": "Aerstus, Book 1: The City",
-      "matched_at": "2026-05-13T05:21:09Z",
+      "matched_at": "2026-07-09T06:59:12Z",
       "matched_authors": [
         "S. Z. Attwell"
       ],
@@ -23,8 +52,33 @@
         }
       ],
       "matched_title": "Aestus: The City"
+    },
+    {
+      "entry_key": "melody|david hoffer",
+      "imported_author": [
+        "David Hoffer"
+      ],
+      "imported_title": "Melody",
+      "matched_at": "2026-07-09T06:59:12Z",
+      "matched_authors": [
+        "David Hoffer"
+      ],
+      "matched_book_id": 38480,
+      "matched_book_ids": [
+        38480
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "David Hoffer"
+          ],
+          "matched_book_id": 38480,
+          "matched_title": "Melody: A First Contact Techno-Thriller"
+        }
+      ],
+      "matched_title": "Melody: A First Contact Techno-Thriller"
     }
   ],
-  "saved_at": "2026-05-13T05:21:09Z",
-  "schema_version": 1
+  "saved_at": "2026-07-09T06:59:25Z",
+  "schema_version": 2
 }

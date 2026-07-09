@@ -8,4 +8,5 @@ from .import_recipe import ImportRecipeDialog
 from .import_cache_choice import ImportCacheChoiceDialog
 from .import_find import FindImportMatchesDialog, FindModeDialog, MatchReviewDialog
 from .import_report import ImportReportDialog
+from .saved_match_choice import SavedMatchChoiceDialog
 from .stored_lists import StoredListsDialog

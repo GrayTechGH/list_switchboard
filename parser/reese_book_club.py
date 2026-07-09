@@ -49,7 +49,7 @@ class ReeseBookClubParser(BookClubParserBase):
       if not author:
         continue
       link = node if getattr(node, 'name', '') == 'a' and node.get('href') else None
-      source_url = urljoin(base_url, link.get('href')) if link else base_url
+      entry_url = urljoin(base_url, link.get('href')) if link else base_url
       entry = self.build_entry({
         'title': title,
         'author': author,
@@ -57,14 +57,14 @@ class ReeseBookClubParser(BookClubParserBase):
         'selection_year': parse_year(label),
         'selection_month': parse_month(label),
         'season': parse_season(label),
-      }, f'{label} {title} by {author}', source_url, scope, len(entries) + 1)
+      }, f'{label} {title} by {author}', entry_url, scope, len(entries) + 1, base_url=base_url)
       if entry is not None:
         key = self.entry_key(entry)
         if key in seen:
-          if entry.get('source_url') != base_url:
+          if entry.get('source'):
             for existing in entries:
               if self.entry_key(existing) == key:
-                existing['source_url'] = entry.get('source_url', existing['source_url'])
+                existing['source'] = entry['source']
                 break
           continue
         seen.add(key)

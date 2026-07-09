@@ -295,10 +295,11 @@ class ACTBookOfTheYearOfficialParser(ACTBookOfTheYearParserMixin):
       for wiki_row in wiki_rows:
         if wiki_row.get('award_year') == year and wiki_row.get('result') == RESULT_WINNER:
           rows.append(wiki_row)
-    return self.parsed_rows(
-      rows,
+    source = official_parsed.get('source') if isinstance(official_parsed.get('source'), dict) else {}
+    return self.parsed_result(
       official_parsed.get('name') or AWARD_NAME,
-      official_parsed.get('url') or OFFICIAL_URL,
+      source.get('url') or OFFICIAL_URL,
+      sorted(rows, key=lambda item: position_sort_key(item.get('position', ''))),
       notes=official_parsed.get('notes', ()))
 
 

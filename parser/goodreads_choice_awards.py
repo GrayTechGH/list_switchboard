@@ -247,7 +247,7 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
         parsed['author'],
         category,
         result,
-        parsed['source_url'],
+        parsed['entry_url'],
         len(rows),
         votes=self.votes_near_node(image)))
     return rows
@@ -296,20 +296,20 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
     if not alt_title or not alt_author:
       return None
     card = self.card_for_image(image)
-    title = alt_title
+    title = self.clean_title(alt_title)
     author = alt_author
-    source_url = self.link_for_node(image, page_url)
+    entry_url = self.link_for_node(image, page_url)
     explicit = self.explicit_title_author(card, page_url)
     if explicit is not None:
-      title, author, source_url = explicit
-    title = self.clean_title(title)
+      explicit_title, author, entry_url = explicit
+      title = self.preferred_title(title, explicit_title)
     author = self.clean_author(author)
     if not title or not author:
       return None
     return {
       'title': title,
       'author': author,
-      'source_url': source_url or page_url,
+      'entry_url': entry_url or page_url,
     }
 
   def card_for_image(self, image):
@@ -406,6 +406,15 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
     if match is None:
       return '', ''
     return match.group(1), match.group(2)
+
+  def preferred_title(self, alt_title, explicit_title):
+    alt_title = self.clean_title(alt_title)
+    explicit_title = self.clean_title(explicit_title)
+    alt_key = normalize_heading(alt_title)
+    explicit_key = normalize_heading(explicit_title)
+    if alt_title and explicit_title and alt_key.startswith(explicit_key):
+      return alt_title
+    return explicit_title or alt_title
 
   def link_for_node(self, node, page_url):
     current = node

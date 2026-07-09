@@ -19,6 +19,7 @@ from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 
 from .book_club_base import BookClubParserBase, MONTHS, normalize_line, parse_month
+from .base import parsed_source
 
 
 SHEET_CSV_URL = (
@@ -51,7 +52,7 @@ class LibraryReadsParser(BookClubParserBase):
     notes.extend(self.notes_for_entries(entries))
     return {
       'name': name or self.CLUB_NAME,
-      'url': base_url,
+      'source': parsed_source(name or self.CLUB_NAME, base_url),
       'entries': sorted(entries, key=self.entry_sort_key),
       'notes': notes,
       'match_series': False,
@@ -101,7 +102,7 @@ class LibraryReadsParser(BookClubParserBase):
     month_counts[month_key] = month_counts.get(month_key, 0) + 1
     data = {
       'title': title,
-      'author': author,
+      'authors': [author],
       'selection_year': year,
       'selection_month': month,
       'selection_label': self.selection_label(year, month),
@@ -112,7 +113,7 @@ class LibraryReadsParser(BookClubParserBase):
     flags = self.scope_flags(row)
     if flags:
       data['scope_flags'] = ', '.join(flags)
-    return self.build_entry(data, text, base_url, scope, month_counts[month_key])
+    return self.build_entry(data, text, base_url, scope, month_counts[month_key], base_url=base_url)
 
   def year_month_from_csv(self, value):
     match = re.match(r'^((?:19|20)\d{2})/(\d{1,2})$', normalize_line(value))

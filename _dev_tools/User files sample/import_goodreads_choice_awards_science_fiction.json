@@ -1,0 +1,4802 @@
+{
+  "append_state": {
+    "entry_count": 281,
+    "last_entry_key": "luminous|silvia park",
+    "last_position": "2025.19",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Science Fiction",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/10644930-11-22-63?from_choice=true"
+      },
+      "title": "11/22/63",
+      "votes": "4429"
+    },
+    {
+      "authors": [
+        "Ernest Cline"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Science Fiction",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/9969571-ready-player-one?from_choice=true"
+      },
+      "title": "Ready Player One",
+      "votes": "3402"
+    },
+    {
+      "authors": [
+        "Hillary Jordan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Science Fiction",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/11045709-when-she-woke?from_choice=true"
+      },
+      "title": "When She Woke",
+      "votes": "2682"
+    },
+    {
+      "authors": [
+        "Ilona Andrews"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Science Fiction",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/12620241-silver-shark?from_choice=true"
+      },
+      "title": "Silver Shark",
+      "votes": "2611"
+    },
+    {
+      "authors": [
+        "Daniel H. Wilson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Science Fiction",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/9634967-robopocalypse?from_choice=true"
+      },
+      "title": "Robopocalypse",
+      "votes": "2234"
+    },
+    {
+      "authors": [
+        "Rob Thurman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Science Fiction",
+      "position": "2011.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/9673936-basilisk?from_choice=true"
+      },
+      "title": "Basilisk",
+      "votes": "1634"
+    },
+    {
+      "authors": [
+        "China Mi\u00e9ville"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Science Fiction",
+      "position": "2011.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/9265453-embassytown?from_choice=true"
+      },
+      "title": "Embassytown",
+      "votes": "1424"
+    },
+    {
+      "authors": [
+        "Pip Ballantine"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Science Fiction",
+      "position": "2011.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/9795166-phoenix-rising?from_choice=true"
+      },
+      "title": "Phoenix Rising",
+      "votes": "1251"
+    },
+    {
+      "authors": [
+        "Ann Aguirre"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Science Fiction",
+      "position": "2011.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/10648186-aftermath?from_choice=true"
+      },
+      "title": "Aftermath",
+      "votes": "1160"
+    },
+    {
+      "authors": [
+        "James S.A. Corey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Science Fiction",
+      "position": "2011.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/8855321-leviathan-wakes?from_choice=true"
+      },
+      "title": "Leviathan Wakes",
+      "votes": "897"
+    },
+    {
+      "authors": [
+        "John Scalzi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Science Fiction",
+      "position": "2011.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/9647532-fuzzy-nation?from_choice=true"
+      },
+      "title": "Fuzzy Nation",
+      "votes": "461"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Science Fiction",
+      "position": "2011.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/8429441-wonder?from_choice=true"
+      },
+      "title": "Wonder",
+      "votes": "420"
+    },
+    {
+      "authors": [
+        "Sharon Lee"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Science Fiction",
+      "position": "2011.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/9762449-ghost-ship?from_choice=true"
+      },
+      "title": "Ghost Ship",
+      "votes": "359"
+    },
+    {
+      "authors": [
+        "Charles Stross"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Science Fiction",
+      "position": "2011.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/10138547-rule-34?from_choice=true"
+      },
+      "title": "Rule 34",
+      "votes": "302"
+    },
+    {
+      "authors": [
+        "Jack Campbell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Science Fiction",
+      "position": "2011.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/9676849-dreadnaught?from_choice=true"
+      },
+      "title": "Dreadnaught",
+      "votes": "255"
+    },
+    {
+      "authors": [
+        "Gini Koch"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Science Fiction",
+      "position": "2011.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/8714075-alien-in-the-family?from_choice=true"
+      },
+      "title": "Alien in the Family",
+      "votes": "210"
+    },
+    {
+      "authors": [
+        "Taylor Anderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Science Fiction",
+      "position": "2011.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/8701508-rising-tides?from_choice=true"
+      },
+      "title": "Rising Tides",
+      "votes": "105"
+    },
+    {
+      "authors": [
+        "Dan Simmons"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Science Fiction",
+      "position": "2011.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/9432902-flashback?from_choice=true"
+      },
+      "title": "Flashback",
+      "votes": "71"
+    },
+    {
+      "authors": [
+        "Jeff Somers"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Science Fiction",
+      "position": "2011.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/10207116-the-final-evolution?from_choice=true"
+      },
+      "title": "The Final Evolution",
+      "votes": "39"
+    },
+    {
+      "authors": [
+        "Greg Egan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Science Fiction",
+      "position": "2011.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/9756310-the-clockwork-rocket?from_choice=true"
+      },
+      "title": "The Clockwork Rocket",
+      "votes": "32"
+    },
+    {
+      "authors": [
+        "Terry Pratchett & Stephen Baxter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Science Fiction",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13147230-the-long-earth?from_choice=true"
+      },
+      "title": "The Long Earth",
+      "votes": "7670"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Science Fiction",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13147230-the-long-earth?from_choice=true"
+      },
+      "title": "The Long Earth",
+      "votes": "7670"
+    },
+    {
+      "authors": [
+        "Hugh Howey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Science Fiction",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13453029-wool-omnibus?from_choice=true"
+      },
+      "title": "Wool Omnibus",
+      "votes": "5624"
+    },
+    {
+      "authors": [
+        "John Scalzi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Science Fiction",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13055592-redshirts?from_choice=true"
+      },
+      "title": "Redshirts",
+      "votes": "4618"
+    },
+    {
+      "authors": [
+        "James Luceno"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Science Fiction",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/11099729-darth-plagueis?from_choice=true"
+      },
+      "title": "Darth Plagueis",
+      "votes": "4584"
+    },
+    {
+      "authors": [
+        "Orson Scott Card"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Science Fiction",
+      "position": "2012.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/12040447-shadows-in-flight?from_choice=true"
+      },
+      "title": "Shadows in Flight",
+      "votes": "3416"
+    },
+    {
+      "authors": [
+        "Rob Reid"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Science Fiction",
+      "position": "2012.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/12953520-year-zero?from_choice=true"
+      },
+      "title": "Year Zero",
+      "votes": "2839"
+    },
+    {
+      "authors": [
+        "Pip Ballantine"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Science Fiction",
+      "position": "2012.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13085609-the-janus-affair?from_choice=true"
+      },
+      "title": "The Janus Affair",
+      "votes": "2579"
+    },
+    {
+      "authors": [
+        "Nick Harkaway"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Science Fiction",
+      "position": "2012.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/12266560-angelmaker?from_choice=true"
+      },
+      "title": "Angelmaker",
+      "votes": "2204"
+    },
+    {
+      "authors": [
+        "Gini Koch"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Science Fiction",
+      "position": "2012.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/10772954-alien-proliferation?from_choice=true"
+      },
+      "title": "Alien Proliferation",
+      "votes": "1812"
+    },
+    {
+      "authors": [
+        "James S.A. Corey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Science Fiction",
+      "position": "2012.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/12591698-caliban-s-war?from_choice=true"
+      },
+      "title": "Caliban\u2019s War",
+      "votes": "1506"
+    },
+    {
+      "authors": [
+        "Ann Aguirre"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Science Fiction",
+      "position": "2012.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13543136-endgame?from_choice=true"
+      },
+      "title": "Endgame",
+      "votes": "759"
+    },
+    {
+      "authors": [
+        "Patrick Lee"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Science Fiction",
+      "position": "2012.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/12952546-deep-sky?from_choice=true"
+      },
+      "title": "Deep Sky",
+      "votes": "668"
+    },
+    {
+      "authors": [
+        "Daniel Suarez"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Science Fiction",
+      "position": "2012.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13542606-kill-decision?from_choice=true"
+      },
+      "title": "Kill Decision",
+      "votes": "649"
+    },
+    {
+      "authors": [
+        "Jack Campbell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Science Fiction",
+      "position": "2012.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/12398719-invincible?from_choice=true"
+      },
+      "title": "Invincible",
+      "votes": "572"
+    },
+    {
+      "authors": [
+        "David Weber"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Science Fiction",
+      "position": "2012.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/12269981-a-rising-thunder?from_choice=true"
+      },
+      "title": "A Rising Thunder",
+      "votes": "521"
+    },
+    {
+      "authors": [
+        "Alastair Reynolds"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Science Fiction",
+      "position": "2012.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/12377547-blue-remembered-earth?from_choice=true"
+      },
+      "title": "Blue Remembered Earth",
+      "votes": "430"
+    },
+    {
+      "authors": [
+        "Kim Stanley Robinson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Science Fiction",
+      "position": "2012.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/11830394-2312?from_choice=true"
+      },
+      "title": "2312",
+      "votes": "422"
+    },
+    {
+      "authors": [
+        "Lois McMaster Bujold"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Science Fiction",
+      "position": "2012.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/12998057-captain-vorpatril-s-alliance?from_choice=true"
+      },
+      "title": "Captain Vorpatril's Alliance",
+      "votes": "311"
+    },
+    {
+      "authors": [
+        "Aleksandr Voinov"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Science Fiction",
+      "position": "2012.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/15698799-incursion?from_choice=true"
+      },
+      "title": "Incursion",
+      "votes": "286"
+    },
+    {
+      "authors": [
+        "Iain M. Banks"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Science Fiction",
+      "position": "2012.20",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13528419-the-hydrogen-sonata?from_choice=true"
+      },
+      "title": "The Hydrogen Sonata",
+      "votes": "189"
+    },
+    {
+      "authors": [
+        "Margaret Atwood"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Science Fiction",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/17262203-maddaddam?from_choice=true"
+      },
+      "title": "MaddAddam",
+      "votes": "16481"
+    },
+    {
+      "authors": [
+        "Hugh Howey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Science Fiction",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/17855756-dust?from_choice=true"
+      },
+      "title": "Dust",
+      "votes": "13802"
+    },
+    {
+      "authors": [
+        "Orson Scott Card"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Science Fiction",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/16059350-earth-afire?from_choice=true"
+      },
+      "title": "Earth Afire",
+      "votes": "8159"
+    },
+    {
+      "authors": [
+        "Max Barry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Science Fiction",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/16158596-lexicon?from_choice=true"
+      },
+      "title": "Lexicon",
+      "votes": "4696"
+    },
+    {
+      "authors": [
+        "John Scalzi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Science Fiction",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/15698479-the-human-division?from_choice=true"
+      },
+      "title": "The Human Division",
+      "votes": "4301"
+    },
+    {
+      "authors": [
+        "Matt Haig"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Science Fiction",
+      "position": "2013.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/16130537-the-humans?from_choice=true"
+      },
+      "title": "The Humans",
+      "votes": "3750"
+    },
+    {
+      "authors": [
+        "Ben H. Winters"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Science Fiction",
+      "position": "2013.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/16046748-countdown-city?from_choice=true"
+      },
+      "title": "Countdown City",
+      "votes": "3482"
+    },
+    {
+      "authors": [
+        "Peter F. Hamilton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Science Fiction",
+      "position": "2013.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13573419-great-north-road?from_choice=true"
+      },
+      "title": "Great North Road",
+      "votes": "3387"
+    },
+    {
+      "authors": [
+        "James S.A. Corey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Science Fiction",
+      "position": "2013.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/16131032-abaddon-s-gate?from_choice=true"
+      },
+      "title": "Abaddon\u2019s Gate",
+      "votes": "3004"
+    },
+    {
+      "authors": [
+        "Wesley Chu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Science Fiction",
+      "position": "2013.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/15981711-the-lives-of-tao?from_choice=true"
+      },
+      "title": "The Lives of Tao",
+      "votes": "2995"
+    },
+    {
+      "authors": [
+        "Jack Campbell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Science Fiction",
+      "position": "2013.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/15984804-guardian?from_choice=true"
+      },
+      "title": "Guardian",
+      "votes": "1473"
+    },
+    {
+      "authors": [
+        "Jason M. Hough"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Science Fiction",
+      "position": "2013.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/16127235-the-darwin-elevator?from_choice=true"
+      },
+      "title": "The Darwin Elevator",
+      "votes": "1376"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Science Fiction",
+      "position": "2013.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/17167572-the-long-war?from_choice=true"
+      },
+      "title": "The Long War",
+      "votes": "1195"
+    },
+    {
+      "authors": [
+        "David Weber"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Science Fiction",
+      "position": "2013.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/15802917-shadow-of-freedom?from_choice=true"
+      },
+      "title": "Shadow of Freedom",
+      "votes": "1137"
+    },
+    {
+      "authors": [
+        "Ann Aguirre"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Science Fiction",
+      "position": "2013.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13421230-perdition?from_choice=true"
+      },
+      "title": "Perdition",
+      "votes": "1052"
+    },
+    {
+      "authors": [
+        "Karen Lord"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Science Fiction",
+      "position": "2013.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/15743440-the-best-of-all-possible-worlds?from_choice=true"
+      },
+      "title": "The Best of All Possible Worlds",
+      "votes": "1038"
+    },
+    {
+      "authors": [
+        "Marko Kloos"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Science Fiction",
+      "position": "2013.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/17619479-terms-of-enlistment?from_choice=true"
+      },
+      "title": "Terms of Enlistment",
+      "votes": "921"
+    },
+    {
+      "authors": [
+        "Marcus Sakey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Science Fiction",
+      "position": "2013.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/17171909-brilliance?from_choice=true"
+      },
+      "title": "Brilliance",
+      "votes": "921"
+    },
+    {
+      "authors": [
+        "Matthew Mather"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Science Fiction",
+      "position": "2013.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/17699389-cyberstorm?from_choice=true"
+      },
+      "title": "CyberStorm",
+      "votes": "569"
+    },
+    {
+      "authors": [
+        "Ann Leckie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Science Fiction",
+      "position": "2013.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/17333324-ancillary-justice?from_choice=true"
+      },
+      "title": "Ancillary Justice",
+      "votes": "389"
+    },
+    {
+      "authors": [
+        "Andy Weir"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Science Fiction",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18007564-the-martian?from_choice=true"
+      },
+      "title": "The Martian",
+      "votes": "30561"
+    },
+    {
+      "authors": [
+        "John Scalzi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Science Fiction",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/21418013-lock-in?from_choice=true"
+      },
+      "title": "Lock In",
+      "votes": "14953"
+    },
+    {
+      "authors": [
+        "Hugh Howey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Science Fiction",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/20509356-sand?from_choice=true"
+      },
+      "title": "Sand",
+      "votes": "14410"
+    },
+    {
+      "authors": [
+        "Claire North"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Science Fiction",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18295861-the-first-fifteen-lives-of-harry-august?from_choice=true"
+      },
+      "title": "The First Fifteen Lives of Harry August",
+      "votes": "13421"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Science Fiction",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18586487-the-long-mars?from_choice=true"
+      },
+      "title": "The Long Mars",
+      "votes": "9927"
+    },
+    {
+      "authors": [
+        "Jeff Vandermeer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Science Fiction",
+      "position": "2014.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/17934530-annihilation?from_choice=true"
+      },
+      "title": "Annihilation",
+      "votes": "9050"
+    },
+    {
+      "authors": [
+        "Jamie McGuire"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Science Fiction",
+      "position": "2014.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/23214943-apolonia?from_choice=true"
+      },
+      "title": "Apolonia",
+      "votes": "8173"
+    },
+    {
+      "authors": [
+        "Daniel Suarez"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Science Fiction",
+      "position": "2014.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18114057-influx?from_choice=true"
+      },
+      "title": "Influx",
+      "votes": "7962"
+    },
+    {
+      "authors": [
+        "Edan Lepucki"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Science Fiction",
+      "position": "2014.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18774020-california?from_choice=true"
+      },
+      "title": "California",
+      "votes": "7218"
+    },
+    {
+      "authors": [
+        "Orson Scott Card"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Science Fiction",
+      "position": "2014.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18490707-earth-awakens?from_choice=true"
+      },
+      "title": "Earth Awakens",
+      "votes": "6883"
+    },
+    {
+      "authors": [
+        "Ann Leckie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Science Fiction",
+      "position": "2014.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/20706284-ancillary-sword?from_choice=true"
+      },
+      "title": "Ancillary Sword",
+      "votes": "3005"
+    },
+    {
+      "authors": [
+        "Daniel Price"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Science Fiction",
+      "position": "2014.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18079705-the-flight-of-the-silvers?from_choice=true"
+      },
+      "title": "The Flight of the Silvers",
+      "votes": "3005"
+    },
+    {
+      "authors": [
+        "James S.A. Corey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Science Fiction",
+      "position": "2014.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18656030-cibola-burn?from_choice=true"
+      },
+      "title": "Cibola Burn",
+      "votes": "2738"
+    },
+    {
+      "authors": [
+        "Rachel Bach"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Science Fiction",
+      "position": "2014.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18295835-heaven-s-queen?from_choice=true"
+      },
+      "title": "Heaven's Queen",
+      "votes": "2727"
+    },
+    {
+      "authors": [
+        "Marcus Sakey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Science Fiction",
+      "position": "2014.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/20797535-a-better-world?from_choice=true"
+      },
+      "title": "A Better World",
+      "votes": "2395"
+    },
+    {
+      "authors": [
+        "Ben H. Winters"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Science Fiction",
+      "position": "2014.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18691070-world-of-trouble?from_choice=true"
+      },
+      "title": "World of Trouble",
+      "votes": "2269"
+    },
+    {
+      "authors": [
+        "Evan Currie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Science Fiction",
+      "position": "2014.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18692689-out-of-the-black?from_choice=true"
+      },
+      "title": "Out of the Black",
+      "votes": "1921"
+    },
+    {
+      "authors": [
+        "H. Paul Honsinger"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Science Fiction",
+      "position": "2014.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18318651-to-honor-you-call-us?from_choice=true"
+      },
+      "title": "To Honor You Call Us",
+      "votes": "1685"
+    },
+    {
+      "authors": [
+        "Michael J. Sullivan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Science Fiction",
+      "position": "2014.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/19084955-hollow-world?from_choice=true"
+      },
+      "title": "Hollow World",
+      "votes": "1234"
+    },
+    {
+      "authors": [
+        "Marko Kloos"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Science Fiction",
+      "position": "2014.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18476102-lines-of-departure?from_choice=true"
+      },
+      "title": "Lines of Departure",
+      "votes": "1181"
+    },
+    {
+      "authors": [
+        "Pierce Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science Fiction",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/20697410-golden-son?from_choice=true"
+      },
+      "title": "Golden Son",
+      "votes": "32225"
+    },
+    {
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science Fiction",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/22826126-seveneves?from_choice=true"
+      },
+      "title": "Seveneves",
+      "votes": "15710"
+    },
+    {
+      "authors": [
+        "Margaret Atwood"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science Fiction",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/24388326-the-heart-goes-last?from_choice=true"
+      },
+      "title": "The Heart Goes Last",
+      "votes": "14147"
+    },
+    {
+      "authors": [
+        "Joseph Fink"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science Fiction",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/23129410-welcome-to-night-vale?from_choice=true"
+      },
+      "title": "Welcome to Night Vale",
+      "votes": "12410"
+    },
+    {
+      "authors": [
+        "Paolo Bacigalupi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science Fiction",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/23209924-the-water-knife?from_choice=true"
+      },
+      "title": "The Water Knife",
+      "votes": "11574"
+    },
+    {
+      "authors": [
+        "Ernest Cline"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science Fiction",
+      "position": "2015.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/16278318-armada?from_choice=true"
+      },
+      "title": "Armada",
+      "votes": "10204"
+    },
+    {
+      "authors": [
+        "Chuck Wendig"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science Fiction",
+      "position": "2015.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/25134015-star-wars?from_choice=true"
+      },
+      "title": "Star Wars",
+      "votes": "9273"
+    },
+    {
+      "authors": [
+        "Ann Leckie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science Fiction",
+      "position": "2015.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/24819470-ancillary-mercy?from_choice=true"
+      },
+      "title": "Ancillary Mercy",
+      "votes": "8042"
+    },
+    {
+      "authors": [
+        "John Scalzi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science Fiction",
+      "position": "2015.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/23168809-the-end-of-all-things?from_choice=true"
+      },
+      "title": "The End of All Things",
+      "votes": "6192"
+    },
+    {
+      "authors": [
+        "Peter Clines"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science Fiction",
+      "position": "2015.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/23164927-the-fold?from_choice=true"
+      },
+      "title": "The Fold",
+      "votes": "5504"
+    },
+    {
+      "authors": [
+        "James S.A. Corey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science Fiction",
+      "position": "2015.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/25400043-nemesis-games?from_choice=true"
+      },
+      "title": "Nemesis Games",
+      "votes": "2675"
+    },
+    {
+      "authors": [
+        "Hugh Howey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science Fiction",
+      "position": "2015.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/26771521-beacon-23?from_choice=true"
+      },
+      "title": "Beacon 23",
+      "votes": "2611"
+    },
+    {
+      "authors": [
+        "Liu Cixin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science Fiction",
+      "position": "2015.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/23168817-the-dark-forest?from_choice=true"
+      },
+      "title": "The Dark Forest",
+      "votes": "2400"
+    },
+    {
+      "authors": [
+        "John Ringo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science Fiction",
+      "position": "2015.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/21412172-strands-of-sorrow?from_choice=true"
+      },
+      "title": "Strands of Sorrow",
+      "votes": "1543"
+    },
+    {
+      "authors": [
+        "Joshua Dalzelle"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science Fiction",
+      "position": "2015.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/24876178-warship?from_choice=true"
+      },
+      "title": "Warship",
+      "votes": "1477"
+    },
+    {
+      "authors": [
+        "Ramez Naam"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science Fiction",
+      "position": "2015.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/20424928-apex?from_choice=true"
+      },
+      "title": "Apex",
+      "votes": "1259"
+    },
+    {
+      "authors": [
+        "Douglas E. Richards"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science Fiction",
+      "position": "2015.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/24911173-brainweb?from_choice=true"
+      },
+      "title": "BrainWeb",
+      "votes": "1036"
+    },
+    {
+      "authors": [
+        "Marko Kloos"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science Fiction",
+      "position": "2015.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/23470865-angles-of-attack?from_choice=true"
+      },
+      "title": "Angles of Attack",
+      "votes": "938"
+    },
+    {
+      "authors": [
+        "Evan Currie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science Fiction",
+      "position": "2015.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/23431348-king-of-thieves?from_choice=true"
+      },
+      "title": "King of Thieves",
+      "votes": "912"
+    },
+    {
+      "authors": [
+        "Kim Stanley Robinson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science Fiction",
+      "position": "2015.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/23197269-aurora?from_choice=true"
+      },
+      "title": "Aurora",
+      "votes": "826"
+    },
+    {
+      "authors": [
+        "Pierce Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science Fiction",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18966806-morning-star?from_choice=true"
+      },
+      "title": "Morning Star",
+      "votes": "45353"
+    },
+    {
+      "authors": [
+        "Blake Crouch"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science Fiction",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/27833670-dark-matter?from_choice=true"
+      },
+      "title": "Dark Matter",
+      "votes": "31389"
+    },
+    {
+      "authors": [
+        "Claudia Gray"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science Fiction",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/25733885-bloodline?from_choice=true"
+      },
+      "title": "Bloodline",
+      "votes": "17405"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science Fiction",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/25859268-the-long-cosmos?from_choice=true"
+      },
+      "title": "The Long Cosmos",
+      "votes": "14139"
+    },
+    {
+      "authors": [
+        "Julie McElwain"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science Fiction",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/25790952-a-murder-in-time?from_choice=true"
+      },
+      "title": "A Murder in Time",
+      "votes": "13673"
+    },
+    {
+      "authors": [
+        "Sylvain Neuvel"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science Fiction",
+      "position": "2016.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/25733990-sleeping-giants?from_choice=true"
+      },
+      "title": "Sleeping Giants",
+      "votes": "13178"
+    },
+    {
+      "authors": [
+        "Alexandra Oliva"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science Fiction",
+      "position": "2016.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/27245997-the-last-one?from_choice=true"
+      },
+      "title": "The Last One",
+      "votes": "11353"
+    },
+    {
+      "authors": [
+        "Jodi Taylor"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science Fiction",
+      "position": "2016.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/26308512-lies-damned-lies-and-history?from_choice=true"
+      },
+      "title": "Lies, Damned Lies, and History",
+      "votes": "8216"
+    },
+    {
+      "authors": [
+        "Ben H. Winters"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science Fiction",
+      "position": "2016.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/23208397-underground-airlines?from_choice=true"
+      },
+      "title": "Underground Airlines",
+      "votes": "7098"
+    },
+    {
+      "authors": [
+        "Connie Willis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science Fiction",
+      "position": "2016.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/25430566-crosstalk?from_choice=true"
+      },
+      "title": "Crosstalk",
+      "votes": "6739"
+    },
+    {
+      "authors": [
+        "Lois McMaster Bujold"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science Fiction",
+      "position": "2016.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/25814184-gentleman-jole-and-the-red-queen?from_choice=true"
+      },
+      "title": "Gentleman Jole and the Red Queen",
+      "votes": "2905"
+    },
+    {
+      "authors": [
+        "Liu Cixin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science Fiction",
+      "position": "2016.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/25451264-death-s-end?from_choice=true"
+      },
+      "title": "Death's End",
+      "votes": "2695"
+    },
+    {
+      "authors": [
+        "Lindsay Buroker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science Fiction",
+      "position": "2016.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/31667137-star-nomad?from_choice=true"
+      },
+      "title": "Star Nomad",
+      "votes": "1659"
+    },
+    {
+      "authors": [
+        "Ada Palmer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science Fiction",
+      "position": "2016.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/26114545-too-like-the-lightning?from_choice=true"
+      },
+      "title": "Too Like the Lightning",
+      "votes": "1475"
+    },
+    {
+      "authors": [
+        "Becky Chambers"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science Fiction",
+      "position": "2016.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/29475447-a-closed-and-common-orbit?from_choice=true"
+      },
+      "title": "A Closed and Common Orbit",
+      "votes": "1391"
+    },
+    {
+      "authors": [
+        "Marcus Sakey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science Fiction",
+      "position": "2016.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/25828674-written-in-fire?from_choice=true"
+      },
+      "title": "Written in Fire",
+      "votes": "1267"
+    },
+    {
+      "authors": [
+        "Peter F. Hamilton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science Fiction",
+      "position": "2016.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/28439513-a-night-without-stars?from_choice=true"
+      },
+      "title": "A Night Without Stars",
+      "votes": "1108"
+    },
+    {
+      "authors": [
+        "Jennifer Foehner Wells"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science Fiction",
+      "position": "2016.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/25329437-remanence?from_choice=true"
+      },
+      "title": "Remanence",
+      "votes": "936"
+    },
+    {
+      "authors": [
+        "Yoon Ha Lee"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science Fiction",
+      "position": "2016.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/27276118-ninefox-gambit?from_choice=true"
+      },
+      "title": "Ninefox Gambit",
+      "votes": "552"
+    },
+    {
+      "authors": [
+        "William Hertling"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science Fiction",
+      "position": "2016.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/30806103-kill-process?from_choice=true"
+      },
+      "title": "Kill Process",
+      "votes": "400"
+    },
+    {
+      "authors": [
+        "Andy Weir"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science Fiction",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/34928122-artemis?from_choice=true"
+      },
+      "title": "Artemis",
+      "votes": "33957"
+    },
+    {
+      "authors": [
+        "Sylvain Neuvel"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science Fiction",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/30134847-waking-gods?from_choice=true"
+      },
+      "title": "Waking Gods",
+      "votes": "21920"
+    },
+    {
+      "authors": [
+        "Timothy Zahn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science Fiction",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/31140332-thrawn?from_choice=true"
+      },
+      "title": "Thrawn",
+      "votes": "20595"
+    },
+    {
+      "authors": [
+        "Omar El Akkad"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science Fiction",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/32283423-american-war?from_choice=true"
+      },
+      "title": "American War",
+      "votes": "17537"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science Fiction",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/30038988-home?from_choice=true"
+      },
+      "title": "Home",
+      "votes": "11470"
+    },
+    {
+      "authors": [
+        "Jeff Vandermeer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science Fiction",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/31451186-borne?from_choice=true"
+      },
+      "title": "Borne",
+      "votes": "11035"
+    },
+    {
+      "authors": [
+        "James S.A. Corey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science Fiction",
+      "position": "2017.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/25877663-babylon-s-ashes?from_choice=true"
+      },
+      "title": "Babylon\u2019s Ashes",
+      "votes": "10691"
+    },
+    {
+      "authors": [
+        "Elan Mastai"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science Fiction",
+      "position": "2017.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/30153293-all-our-wrong-todays?from_choice=true"
+      },
+      "title": "All Our Wrong Todays",
+      "votes": "10256"
+    },
+    {
+      "authors": [
+        "John Scalzi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science Fiction",
+      "position": "2017.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/29939160-the-collapsing-empire?from_choice=true"
+      },
+      "title": "The Collapsing Empire",
+      "votes": "9788"
+    },
+    {
+      "authors": [
+        "Jodi Taylor"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science Fiction",
+      "position": "2017.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/31213373-and-the-rest-is-history?from_choice=true"
+      },
+      "title": "And the Rest Is History",
+      "votes": "9664"
+    },
+    {
+      "authors": [
+        "Dennis E. Taylor"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science Fiction",
+      "position": "2017.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/34878094-for-we-are-many?from_choice=true"
+      },
+      "title": "For We Are Many",
+      "votes": "2989"
+    },
+    {
+      "authors": [
+        "Martha Wells"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science Fiction",
+      "position": "2017.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/33387769-all-systems-red?from_choice=true"
+      },
+      "title": "All Systems Red",
+      "votes": "2920"
+    },
+    {
+      "authors": [
+        "Ann Leckie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science Fiction",
+      "position": "2017.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/34219845-provenance?from_choice=true"
+      },
+      "title": "Provenance",
+      "votes": "2828"
+    },
+    {
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science Fiction",
+      "position": "2017.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/32075825-the-rise-and-fall-of-d-o-d-o?from_choice=true"
+      },
+      "title": "The Rise and Fall of D.O.D.O.",
+      "votes": "1892"
+    },
+    {
+      "authors": [
+        "Yoon Ha Lee"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science Fiction",
+      "position": "2017.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/32927239-raven-stratagem?from_choice=true"
+      },
+      "title": "Raven Stratagem",
+      "votes": "1536"
+    },
+    {
+      "authors": [
+        "Mur Lafferty"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science Fiction",
+      "position": "2017.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/28962996-six-wakes?from_choice=true"
+      },
+      "title": "Six Wakes",
+      "votes": "1132"
+    },
+    {
+      "authors": [
+        "Marko Kloos"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science Fiction",
+      "position": "2017.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/31340859-fields-of-fire?from_choice=true"
+      },
+      "title": "Fields of Fire",
+      "votes": "1108"
+    },
+    {
+      "authors": [
+        "Kameron Hurley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science Fiction",
+      "position": "2017.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/32922275-the-stars-are-legion?from_choice=true"
+      },
+      "title": "The Stars Are Legion",
+      "votes": "807"
+    },
+    {
+      "authors": [
+        "Tal M. Klein"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science Fiction",
+      "position": "2017.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/32446949-the-punch-escrow?from_choice=true"
+      },
+      "title": "The Punch Escrow",
+      "votes": "739"
+    },
+    {
+      "authors": [
+        "Ada Palmer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science Fiction",
+      "position": "2017.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/28220647-seven-surrenders?from_choice=true"
+      },
+      "title": "Seven Surrenders",
+      "votes": "689"
+    },
+    {
+      "authors": [
+        "Blake Crouch"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science Fiction",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/42046112-recursion?from_choice=true"
+      },
+      "title": "Recursion",
+      "votes": "41261"
+    },
+    {
+      "authors": [
+        "Pierce Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science Fiction",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/37678631-dark-age?from_choice=true"
+      },
+      "title": "Dark Age",
+      "votes": "35556"
+    },
+    {
+      "authors": [
+        "Tamsyn Muir"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science Fiction",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/42036538-gideon-the-ninth?from_choice=true"
+      },
+      "title": "Gideon the Ninth",
+      "votes": "23273"
+    },
+    {
+      "authors": [
+        "Amal El-Mohtar"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science Fiction",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/41093489-this-is-how-you-lose-the-time-war?from_choice=true"
+      },
+      "title": "This Is How You Lose the Time War",
+      "votes": "20344"
+    },
+    {
+      "authors": [
+        "Rivers Solomon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science Fiction",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/42201962-the-deep?from_choice=true"
+      },
+      "title": "The Deep",
+      "votes": "18350"
+    },
+    {
+      "authors": [
+        "James S.A. Corey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science Fiction",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/28335698-tiamat-s-wrath?from_choice=true"
+      },
+      "title": "Tiamat's Wrath",
+      "votes": "14088"
+    },
+    {
+      "authors": [
+        "Ian McEwan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science Fiction",
+      "position": "2019.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/42260978-machines-like-me?from_choice=true"
+      },
+      "title": "Machines Like Me",
+      "votes": "13508"
+    },
+    {
+      "authors": [
+        "Ted Chiang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science Fiction",
+      "position": "2019.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/52222275-exhalation?from_choice=true"
+      },
+      "title": "Exhalation",
+      "votes": "11829"
+    },
+    {
+      "authors": [
+        "Sylvain Neuvel"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science Fiction",
+      "position": "2019.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/41940388-the-test?from_choice=true"
+      },
+      "title": "The Test",
+      "votes": "9095"
+    },
+    {
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science Fiction",
+      "position": "2019.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/41824495-fall-or-dodge-in-hell?from_choice=true"
+      },
+      "title": "Fall; or, Dodge in Hell",
+      "votes": "8368"
+    },
+    {
+      "authors": [
+        "Mark Lawrence"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science Fiction",
+      "position": "2019.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/42036965-one-word-kill?from_choice=true"
+      },
+      "title": "One Word Kill",
+      "votes": "4029"
+    },
+    {
+      "authors": [
+        "Becky Chambers"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science Fiction",
+      "position": "2019.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/43190272-to-be-taught-if-fortunate?from_choice=true"
+      },
+      "title": "To Be Taught, If Fortunate",
+      "votes": "3898"
+    },
+    {
+      "authors": [
+        "Chuck Wendig"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science Fiction",
+      "position": "2019.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/34019083-wanderers?from_choice=true"
+      },
+      "title": "Wanderers",
+      "votes": "3801"
+    },
+    {
+      "authors": [
+        "Charlie Jane Anders"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science Fiction",
+      "position": "2019.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/37534907-the-city-in-the-middle-of-the-night?from_choice=true"
+      },
+      "title": "The City in the Middle of the Night",
+      "votes": "3258"
+    },
+    {
+      "authors": [
+        "Arkady Martine"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science Fiction",
+      "position": "2019.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/39863238-a-memory-called-empire?from_choice=true"
+      },
+      "title": "A Memory Called Empire",
+      "votes": "3109"
+    },
+    {
+      "authors": [
+        "Timothy Zahn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science Fiction",
+      "position": "2019.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/43160651-thrawn?from_choice=true"
+      },
+      "title": "Thrawn",
+      "votes": "2953"
+    },
+    {
+      "authors": [
+        "Annalee Newitz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science Fiction",
+      "position": "2019.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/43263237-the-future-of-another-timeline?from_choice=true"
+      },
+      "title": "The Future of Another Timeline",
+      "votes": "2945"
+    },
+    {
+      "authors": [
+        "Mike Chen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science Fiction",
+      "position": "2019.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/39217756-here-and-now-and-then?from_choice=true"
+      },
+      "title": "Here and Now and Then",
+      "votes": "1728"
+    },
+    {
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science Fiction",
+      "position": "2019.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/41716930-children-of-ruin?from_choice=true"
+      },
+      "title": "Children of Ruin",
+      "votes": "1699"
+    },
+    {
+      "authors": [
+        "Kameron Hurley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science Fiction",
+      "position": "2019.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/40523931-the-light-brigade?from_choice=true"
+      },
+      "title": "The Light Brigade",
+      "votes": "584"
+    },
+    {
+      "authors": [
+        "Christopher Paolini"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science Fiction",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/48829708-to-sleep-in-a-sea-of-stars?from_choice=true"
+      },
+      "title": "To Sleep in a Sea of Stars",
+      "votes": "45833"
+    },
+    {
+      "authors": [
+        "Tamsyn Muir"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science Fiction",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/39325105-harrow-the-ninth?from_choice=true"
+      },
+      "title": "Harrow the Ninth",
+      "votes": "32693"
+    },
+    {
+      "authors": [
+        "Martha Wells"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science Fiction",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/52381770-network-effect?from_choice=true"
+      },
+      "title": "Network Effect",
+      "votes": "22971"
+    },
+    {
+      "authors": [
+        "Micaiah Johnson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science Fiction",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/48848254-the-space-between-worlds?from_choice=true"
+      },
+      "title": "The Space Between Worlds",
+      "votes": "20667"
+    },
+    {
+      "authors": [
+        "Hank Green"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science Fiction",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/49003616-a-beautifully-foolish-endeavor?from_choice=true"
+      },
+      "title": "A Beautifully Foolish Endeavor",
+      "votes": "16786"
+    },
+    {
+      "authors": [
+        "Lindsay Ellis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science Fiction",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/51171377-axiom-s-end?from_choice=true"
+      },
+      "title": "Axiom's End",
+      "votes": "16502"
+    },
+    {
+      "authors": [
+        "Ken Liu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science Fiction",
+      "position": "2020.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/52163147-the-hidden-girl-and-other-stories?from_choice=true"
+      },
+      "title": "The Hidden Girl and Other Stories",
+      "votes": "14832"
+    },
+    {
+      "authors": [
+        "Tochi Onyebuchi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science Fiction",
+      "position": "2020.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/44804077-riot-baby?from_choice=true"
+      },
+      "title": "Riot Baby",
+      "votes": "12429"
+    },
+    {
+      "authors": [
+        "Diane Cook"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science Fiction",
+      "position": "2020.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/48836769-the-new-wilderness?from_choice=true"
+      },
+      "title": "The New Wilderness",
+      "votes": "11039"
+    },
+    {
+      "authors": [
+        "Lawrence Wright"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science Fiction",
+      "position": "2020.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/52669505-the-end-of-october?from_choice=true"
+      },
+      "title": "The End of October",
+      "votes": "10652"
+    },
+    {
+      "authors": [
+        "John Scalzi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science Fiction",
+      "position": "2020.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/45046555-the-last-emperox?from_choice=true"
+      },
+      "title": "The Last Emperox",
+      "votes": "4833"
+    },
+    {
+      "authors": [
+        "William Gibson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science Fiction",
+      "position": "2020.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/35019996-agency?from_choice=true"
+      },
+      "title": "Agency",
+      "votes": "4723"
+    },
+    {
+      "authors": [
+        "Simon Jimenez"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science Fiction",
+      "position": "2020.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/45422268-the-vanished-birds?from_choice=true"
+      },
+      "title": "The Vanished Birds",
+      "votes": "3794"
+    },
+    {
+      "authors": [
+        "M.R. Carey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science Fiction",
+      "position": "2020.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/51285749-the-book-of-koli?from_choice=true"
+      },
+      "title": "The Book of Koli",
+      "votes": "3384"
+    },
+    {
+      "authors": [
+        "Natalie Zina Walschots"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science Fiction",
+      "position": "2020.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/49867430-hench?from_choice=true"
+      },
+      "title": "Hench",
+      "votes": "2890"
+    },
+    {
+      "authors": [
+        "Carole Stivers"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science Fiction",
+      "position": "2020.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/50121213-the-mother-code?from_choice=true"
+      },
+      "title": "The Mother Code",
+      "votes": "2821"
+    },
+    {
+      "authors": [
+        "David Wong"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science Fiction",
+      "position": "2020.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/49127471-zoey-punches-the-future-in-the-dick?from_choice=true"
+      },
+      "title": "Zoey Punches the Future in the Dick",
+      "votes": "2038"
+    },
+    {
+      "authors": [
+        "T.A. White"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science Fiction",
+      "position": "2020.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/54554819-age-of-deception?from_choice=true"
+      },
+      "title": "Age of Deception",
+      "votes": "1815"
+    },
+    {
+      "authors": [
+        "Linden A. Lewis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science Fiction",
+      "position": "2020.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/52378525-the-first-sister?from_choice=true"
+      },
+      "title": "The First Sister",
+      "votes": "1773"
+    },
+    {
+      "authors": [
+        "Mary Robinette Kowal"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science Fiction",
+      "position": "2020.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/52378682-the-relentless-moon?from_choice=true"
+      },
+      "title": "The Relentless Moon",
+      "votes": "1491"
+    },
+    {
+      "authors": [
+        "Andy Weir"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Science Fiction",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/54493401-project-hail-mary?from_choice=true"
+      },
+      "title": "Project Hail Mary",
+      "votes": "92831"
+    },
+    {
+      "authors": [
+        "Kazuo Ishiguro"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Science Fiction",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/54120408-klara-and-the-sun?from_choice=true"
+      },
+      "title": "Klara and the Sun",
+      "votes": "56284"
+    },
+    {
+      "authors": [
+        "Charles Soule"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Science Fiction",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/51637946-light-of-the-jedi?from_choice=true"
+      },
+      "title": "Light of the Jedi",
+      "votes": "16980"
+    },
+    {
+      "authors": [
+        "Sarah Gailey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Science Fiction",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/52379735-the-echo-wife?from_choice=true"
+      },
+      "title": "The Echo Wife",
+      "votes": "16889"
+    },
+    {
+      "authors": [
+        "Martha Wells"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Science Fiction",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/53205854-fugitive-telemetry?from_choice=true"
+      },
+      "title": "Fugitive Telemetry",
+      "votes": "15880"
+    },
+    {
+      "authors": [
+        "Everina Maxwell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Science Fiction",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/53205912-winter-s-orbit?from_choice=true"
+      },
+      "title": "Winter's Orbit",
+      "votes": "15671"
+    },
+    {
+      "authors": [
+        "Christina Sweeney-Baird"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Science Fiction",
+      "position": "2021.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/53911860-the-end-of-men?from_choice=true"
+      },
+      "title": "The End of Men",
+      "votes": "14032"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Science Fiction",
+      "position": "2021.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/53205922-remote-control?from_choice=true"
+      },
+      "title": "Remote Control",
+      "votes": "10891"
+    },
+    {
+      "authors": [
+        "Ryka Aoki"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Science Fiction",
+      "position": "2021.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/56179360-light-from-uncommon-stars?from_choice=true"
+      },
+      "title": "Light from Uncommon Stars",
+      "votes": "10739"
+    },
+    {
+      "authors": [
+        "Becky Chambers"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Science Fiction",
+      "position": "2021.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/55077657-a-psalm-for-the-wild-built?from_choice=true"
+      },
+      "title": "A Psalm for the Wild-Built",
+      "votes": "10338"
+    },
+    {
+      "authors": [
+        "Terry Miles"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Science Fiction",
+      "position": "2021.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/55481226-rabbits?from_choice=true"
+      },
+      "title": "Rabbits",
+      "votes": "3434"
+    },
+    {
+      "authors": [
+        "Arkady Martine"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Science Fiction",
+      "position": "2021.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/45046566-a-desolation-called-peace?from_choice=true"
+      },
+      "title": "A Desolation Called Peace",
+      "votes": "3426"
+    },
+    {
+      "authors": [
+        "Sara Flannery Murphy"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Science Fiction",
+      "position": "2021.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/54785541-girl-one?from_choice=true"
+      },
+      "title": "Girl One",
+      "votes": "2512"
+    },
+    {
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Science Fiction",
+      "position": "2021.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/53019456-shards-of-earth?from_choice=true"
+      },
+      "title": "Shards of Earth",
+      "votes": "2470"
+    },
+    {
+      "authors": [
+        "Matthew FitzSimmons"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Science Fiction",
+      "position": "2021.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/56314212-constance?from_choice=true"
+      },
+      "title": "Constance",
+      "votes": "2330"
+    },
+    {
+      "authors": [
+        "J.S. Dewes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Science Fiction",
+      "position": "2021.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/53205794-the-last-watch?from_choice=true"
+      },
+      "title": "The Last Watch",
+      "votes": "2293"
+    },
+    {
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Science Fiction",
+      "position": "2021.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/57094295-termination-shock?from_choice=true"
+      },
+      "title": "Termination Shock",
+      "votes": "1475"
+    },
+    {
+      "authors": [
+        "Matt Bell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Science Fiction",
+      "position": "2021.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/55659625-appleseed?from_choice=true"
+      },
+      "title": "Appleseed",
+      "votes": "1341"
+    },
+    {
+      "authors": [
+        "Nicole Kornher-Stace"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Science Fiction",
+      "position": "2021.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/55711630-firebreak?from_choice=true"
+      },
+      "title": "Firebreak",
+      "votes": "1125"
+    },
+    {
+      "authors": [
+        "S.B. Divya"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Science Fiction",
+      "position": "2021.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/54304067-machinehood?from_choice=true"
+      },
+      "title": "Machinehood",
+      "votes": "643"
+    },
+    {
+      "authors": [
+        "Emily St. John Mandel"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Science Fiction",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/58446227-sea-of-tranquility?from_choice=true"
+      },
+      "title": "Sea of Tranquility",
+      "votes": "59920"
+    },
+    {
+      "authors": [
+        "Silvia Moreno-Garcia"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Science Fiction",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/54829360-the-daughter-of-doctor-moreau?from_choice=true"
+      },
+      "title": "The Daughter of Doctor Moreau",
+      "votes": "47544"
+    },
+    {
+      "authors": [
+        "Tamsyn Muir"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Science Fiction",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/58662507-nona-the-ninth?from_choice=true"
+      },
+      "title": "Nona the Ninth",
+      "votes": "35767"
+    },
+    {
+      "authors": [
+        "Sequoia Nagamatsu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Science Fiction",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/57850265-how-high-we-go-in-the-dark?from_choice=true"
+      },
+      "title": "How High We Go in the Dark",
+      "votes": "28152"
+    },
+    {
+      "authors": [
+        "Blake Crouch"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Science Fiction",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/59838811-upgrade?from_choice=true"
+      },
+      "title": "Upgrade",
+      "votes": "28129"
+    },
+    {
+      "authors": [
+        "Nikki Erlick"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Science Fiction",
+      "position": "2022.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/58884736-the-measure?from_choice=true"
+      },
+      "title": "The Measure",
+      "votes": "24303"
+    },
+    {
+      "authors": [
+        "James S.A. Corey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Science Fiction",
+      "position": "2022.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/28335699-leviathan-falls?from_choice=true"
+      },
+      "title": "Leviathan Falls",
+      "votes": "17491"
+    },
+    {
+      "authors": [
+        "John Scalzi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Science Fiction",
+      "position": "2022.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/57693406-the-kaiju-preservation-society?from_choice=true"
+      },
+      "title": "The Kaiju Preservation Society",
+      "votes": "15332"
+    },
+    {
+      "authors": [
+        "S.A. Barnes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Science Fiction",
+      "position": "2022.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/57693184-dead-silence?from_choice=true"
+      },
+      "title": "Dead Silence",
+      "votes": "14184"
+    },
+    {
+      "authors": [
+        "Jessie Mihalik"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Science Fiction",
+      "position": "2022.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/56754734-hunt-the-stars?from_choice=true"
+      },
+      "title": "Hunt the Stars",
+      "votes": "10708"
+    },
+    {
+      "authors": [
+        "Everina Maxwell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Science Fiction",
+      "position": "2022.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/59808117-ocean-s-echo?from_choice=true"
+      },
+      "title": "Ocean's Echo",
+      "votes": "3899"
+    },
+    {
+      "authors": [
+        "Mur Lafferty"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Science Fiction",
+      "position": "2022.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/60035241-station-eternity?from_choice=true"
+      },
+      "title": "Station Eternity",
+      "votes": "3237"
+    },
+    {
+      "authors": [
+        "Hiron Ennes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Science Fiction",
+      "position": "2022.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/59807968-leech?from_choice=true"
+      },
+      "title": "Leech",
+      "votes": "3010"
+    },
+    {
+      "authors": [
+        "Aimee Pokwatka"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Science Fiction",
+      "position": "2022.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/59807970-self-portrait-with-nothing?from_choice=true"
+      },
+      "title": "Self-Portrait with Nothing",
+      "votes": "2744"
+    },
+    {
+      "authors": [
+        "A.G. Riddle"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Science Fiction",
+      "position": "2022.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/60522318-lost-in-time?from_choice=true"
+      },
+      "title": "Lost in Time",
+      "votes": "2737"
+    },
+    {
+      "authors": [
+        "Rachel Barenbaum"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Science Fiction",
+      "position": "2022.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/58684535-atomic-anna?from_choice=true"
+      },
+      "title": "Atomic Anna",
+      "votes": "1782"
+    },
+    {
+      "authors": [
+        "Neon Yang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Science Fiction",
+      "position": "2022.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/59808142-the-genesis-of-misery?from_choice=true"
+      },
+      "title": "The Genesis of Misery",
+      "votes": "1565"
+    },
+    {
+      "authors": [
+        "Edward Ashton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Science Fiction",
+      "position": "2022.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/57693457-mickey7?from_choice=true"
+      },
+      "title": "Mickey7",
+      "votes": "1480"
+    },
+    {
+      "authors": [
+        "Dan Chaon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Science Fiction",
+      "position": "2022.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/57771216-sleepwalk?from_choice=true"
+      },
+      "title": "Sleepwalk",
+      "votes": "1185"
+    },
+    {
+      "authors": [
+        "Erich Krauss"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Science Fiction",
+      "position": "2022.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/60293362-primitives?from_choice=true"
+      },
+      "title": "Primitives",
+      "votes": "855"
+    },
+    {
+      "authors": [
+        "T.J. Klune"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Science Fiction",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/60784549-in-the-lives-of-puppets?from_choice=true"
+      },
+      "title": "In the Lives of Puppets",
+      "votes": "57535"
+    },
+    {
+      "authors": [
+        "Pierce Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Science Fiction",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/29227774-light-bringer?from_choice=true"
+      },
+      "title": "Light Bringer",
+      "votes": "46836"
+    },
+    {
+      "authors": [
+        "John Scalzi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Science Fiction",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/61885029-starter-villain?from_choice=true"
+      },
+      "title": "Starter Villain",
+      "votes": "31102"
+    },
+    {
+      "authors": [
+        "John Marrs"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Science Fiction",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/62967873-the-marriage-act?from_choice=true"
+      },
+      "title": "The Marriage Act",
+      "votes": "26052"
+    },
+    {
+      "authors": [
+        "Martha Wells"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Science Fiction",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/65211701-system-collapse?from_choice=true"
+      },
+      "title": "System Collapse",
+      "votes": "25942"
+    },
+    {
+      "authors": [
+        "Nana Kwame Adjei-Brenyah"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Science Fiction",
+      "position": "2023.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/61190770-chain-gang-all-stars?from_choice=true"
+      },
+      "title": "Chain-Gang All-Stars",
+      "votes": "25843"
+    },
+    {
+      "authors": [
+        "Lily Brooks-Dalton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Science Fiction",
+      "position": "2023.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/60468332-the-light-pirate?from_choice=true"
+      },
+      "title": "The Light Pirate",
+      "votes": "18660"
+    },
+    {
+      "authors": [
+        "Justin Cronin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Science Fiction",
+      "position": "2023.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/61282437-the-ferryman?from_choice=true"
+      },
+      "title": "The Ferryman",
+      "votes": "17140"
+    },
+    {
+      "authors": [
+        "Naomi Alderman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Science Fiction",
+      "position": "2023.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/123163147-the-future?from_choice=true"
+      },
+      "title": "The Future",
+      "votes": "15123"
+    },
+    {
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Science Fiction",
+      "position": "2023.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/61030535-children-of-memory?from_choice=true"
+      },
+      "title": "Children of Memory",
+      "votes": "13494"
+    },
+    {
+      "authors": [
+        "C Pam Zhang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Science Fiction",
+      "position": "2023.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/101673225-land-of-milk-and-honey?from_choice=true"
+      },
+      "title": "Land of Milk and Honey",
+      "votes": "5464"
+    },
+    {
+      "authors": [
+        "Marisa Crane"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Science Fiction",
+      "position": "2023.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/60679392-i-keep-my-exoskeletons-to-myself?from_choice=true"
+      },
+      "title": "I Keep My Exoskeletons to Myself",
+      "votes": "3739"
+    },
+    {
+      "authors": [
+        "Yume Kitasei"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Science Fiction",
+      "position": "2023.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/61884842-the-deep-sky?from_choice=true"
+      },
+      "title": "The Deep Sky",
+      "votes": "3520"
+    },
+    {
+      "authors": [
+        "Lauren Beukes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Science Fiction",
+      "position": "2023.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/64000639-bridge?from_choice=true"
+      },
+      "title": "Bridge",
+      "votes": "3196"
+    },
+    {
+      "authors": [
+        "Emily Tesh"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Science Fiction",
+      "position": "2023.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/58388343-some-desperate-glory?from_choice=true"
+      },
+      "title": "Some Desperate Glory",
+      "votes": "3136"
+    },
+    {
+      "authors": [
+        "Ann Leckie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Science Fiction",
+      "position": "2023.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/62873999-translation-state?from_choice=true"
+      },
+      "title": "Translation State",
+      "votes": "2652"
+    },
+    {
+      "authors": [
+        "Nicholas Binge"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Science Fiction",
+      "position": "2023.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/61813107-ascension?from_choice=true"
+      },
+      "title": "Ascension",
+      "votes": "2413"
+    },
+    {
+      "authors": [
+        "Stephen Markley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Science Fiction",
+      "position": "2023.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/60806778-the-deluge?from_choice=true"
+      },
+      "title": "The Deluge",
+      "votes": "1746"
+    },
+    {
+      "authors": [
+        "Samit Basu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Science Fiction",
+      "position": "2023.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/65211707-the-jinn-bot-of-shantiport?from_choice=true"
+      },
+      "title": "The Jinn-Bot of Shantiport",
+      "votes": "1388"
+    },
+    {
+      "authors": [
+        "Nick Fuller Googins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Science Fiction",
+      "position": "2023.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/62919387-the-great-transition?from_choice=true"
+      },
+      "title": "The Great Transition",
+      "votes": "1337"
+    },
+    {
+      "authors": [
+        "Kaliane Bradley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Science Fiction",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/199798179-the-ministry-of-time?from_choice=true"
+      },
+      "title": "The Ministry of Time",
+      "votes": "78459"
+    },
+    {
+      "authors": [
+        "John Marrs"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Science Fiction",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/197108968-the-family-experiment?from_choice=true"
+      },
+      "title": "The Family Experiment",
+      "votes": "34821"
+    },
+    {
+      "authors": [
+        "Sierra Greer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Science Fiction",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/156023123-annie-bot?from_choice=true"
+      },
+      "title": "Annie Bot",
+      "votes": "30208"
+    },
+    {
+      "authors": [
+        "James S.A. Corey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Science Fiction",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/201930181-the-mercy-of-gods?from_choice=true"
+      },
+      "title": "The Mercy of Gods",
+      "votes": "17516"
+    },
+    {
+      "authors": [
+        "Samantha Harvey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Science Fiction",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/123136728-orbital?from_choice=true"
+      },
+      "title": "Orbital",
+      "votes": "16487"
+    },
+    {
+      "authors": [
+        "Yume Kitasei"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Science Fiction",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/195791479-the-stardust-grail?from_choice=true"
+      },
+      "title": "The Stardust Grail",
+      "votes": "14098"
+    },
+    {
+      "authors": [
+        "Douglas Preston"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Science Fiction",
+      "position": "2024.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/65213662-extinction?from_choice=true"
+      },
+      "title": "Extinction",
+      "votes": "13326"
+    },
+    {
+      "authors": [
+        "Waubgeshig Rice"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Science Fiction",
+      "position": "2024.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/167067538-moon-of-the-turning-leaves?from_choice=true"
+      },
+      "title": "Moon of the Turning Leaves",
+      "votes": "12860"
+    },
+    {
+      "authors": [
+        "Leif Enger"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Science Fiction",
+      "position": "2024.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/198276006-i-cheerfully-refuse?from_choice=true"
+      },
+      "title": "I Cheerfully Refuse",
+      "votes": "11757"
+    },
+    {
+      "authors": [
+        "Scott Alexander Howard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Science Fiction",
+      "position": "2024.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/176450755-the-other-valley?from_choice=true"
+      },
+      "title": "The Other Valley",
+      "votes": "11322"
+    },
+    {
+      "authors": [
+        "Marie-Helene Bertino"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Science Fiction",
+      "position": "2024.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/127282939-beautyland?from_choice=true"
+      },
+      "title": "Beautyland",
+      "votes": "4811"
+    },
+    {
+      "authors": [
+        "Jeff Vandermeer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Science Fiction",
+      "position": "2024.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/210367505-absolution?from_choice=true"
+      },
+      "title": "Absolution",
+      "votes": "4659"
+    },
+    {
+      "authors": [
+        "Jasper Fforde"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Science Fiction",
+      "position": "2024.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/199353348-red-side-story?from_choice=true"
+      },
+      "title": "Red Side Story",
+      "votes": "4637"
+    },
+    {
+      "authors": [
+        "Jason Pargin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Science Fiction",
+      "position": "2024.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/203578812-i-m-starting-to-worry-about-this-black-box-of-doom?from_choice=true"
+      },
+      "title": "I'm Starting to Worry About This Black Box of Doom",
+      "votes": "4357"
+    },
+    {
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Science Fiction",
+      "position": "2024.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/195790861-service-model?from_choice=true"
+      },
+      "title": "Service Model",
+      "votes": "3380"
+    },
+    {
+      "authors": [
+        "Cebo Campbell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Science Fiction",
+      "position": "2024.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/207293815-sky-full-of-elephants?from_choice=true"
+      },
+      "title": "Sky Full of Elephants",
+      "votes": "3303"
+    },
+    {
+      "authors": [
+        "Kira Peikoff"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Science Fiction",
+      "position": "2024.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/173476065-baby-x?from_choice=true"
+      },
+      "title": "Baby X",
+      "votes": "3170"
+    },
+    {
+      "authors": [
+        "Rae Giana Rashad"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Science Fiction",
+      "position": "2024.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/199248447-the-blueprint?from_choice=true"
+      },
+      "title": "The Blueprint",
+      "votes": "2875"
+    },
+    {
+      "authors": [
+        "Gabrielle Korn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Science Fiction",
+      "position": "2024.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/65213204-yours-for-the-taking?from_choice=true"
+      },
+      "title": "Yours for the Taking",
+      "votes": "2769"
+    },
+    {
+      "authors": [
+        "Martin MacInnes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Science Fiction",
+      "position": "2024.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/197063361-in-ascension?from_choice=true"
+      },
+      "title": "In Ascension",
+      "votes": "2495"
+    },
+    {
+      "authors": [
+        "Aisling Rawle"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Science Fiction",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/218460337-the-compound?from_choice=true"
+      },
+      "title": "The Compound",
+      "votes": "45287"
+    },
+    {
+      "authors": [
+        "Hayley Gelfuso"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Science Fiction",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/220161572-the-book-of-lost-hours?from_choice=true"
+      },
+      "title": "The Book of Lost Hours",
+      "votes": "40446"
+    },
+    {
+      "authors": [
+        "Nikki Erlick"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Science Fiction",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/218431658-the-poppy-fields?from_choice=true"
+      },
+      "title": "The Poppy Fields",
+      "votes": "37483"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Science Fiction",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/214329001-death-of-the-author?from_choice=true"
+      },
+      "title": "Death of the Author",
+      "votes": "30919"
+    },
+    {
+      "authors": [
+        "Laila Lalami"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Science Fiction",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/218695937-the-dream-hotel?from_choice=true"
+      },
+      "title": "The Dream Hotel",
+      "votes": "21986"
+    },
+    {
+      "authors": [
+        "Barbara Truelove"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Science Fiction",
+      "position": "2025.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/216881365-of-monsters-and-mainframes?from_choice=true"
+      },
+      "title": "Of Monsters and Mainframes",
+      "votes": "20709"
+    },
+    {
+      "authors": [
+        "John Scalzi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Science Fiction",
+      "position": "2025.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/211004190-when-the-moon-hits-your-eye?from_choice=true"
+      },
+      "title": "When the Moon Hits Your Eye",
+      "votes": "17184"
+    },
+    {
+      "authors": [
+        "Annalee Newitz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Science Fiction",
+      "position": "2025.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/217388015-automatic-noodle?from_choice=true"
+      },
+      "title": "Automatic Noodle",
+      "votes": "15233"
+    },
+    {
+      "authors": [
+        "Suzy Krause"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Science Fiction",
+      "position": "2025.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/198190200-i-think-we-ve-been-here-before?from_choice=true"
+      },
+      "title": "I Think We've Been Here Before",
+      "votes": "14182"
+    },
+    {
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Science Fiction",
+      "position": "2025.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/210384823-shroud?from_choice=true"
+      },
+      "title": "Shroud",
+      "votes": "12392"
+    },
+    {
+      "authors": [
+        "Yiming Ma"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Science Fiction",
+      "position": "2025.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/221452836-these-memories-do-not-belong-to-us?from_choice=true"
+      },
+      "title": "These Memories Do Not Belong to Us",
+      "votes": "5768"
+    },
+    {
+      "authors": [
+        "Dete Meserve"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Science Fiction",
+      "position": "2025.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/217929489-the-memory-collectors?from_choice=true"
+      },
+      "title": "The Memory Collectors",
+      "votes": "4536"
+    },
+    {
+      "authors": [
+        "Grace Walker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Science Fiction",
+      "position": "2025.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/223614634-the-merge?from_choice=true"
+      },
+      "title": "The Merge",
+      "votes": "3919"
+    },
+    {
+      "authors": [
+        "Makana Yamamoto"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Science Fiction",
+      "position": "2025.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/213847219-hammajang-luck?from_choice=true"
+      },
+      "title": "Hammajang Luck",
+      "votes": "3651"
+    },
+    {
+      "authors": [
+        "K.M. Fajardo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Science Fiction",
+      "position": "2025.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/221244034-local-heavens?from_choice=true"
+      },
+      "title": "Local Heavens",
+      "votes": "3323"
+    },
+    {
+      "authors": [
+        "John Scalzi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Science Fiction",
+      "position": "2025.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/222376623-the-shattering-peace?from_choice=true"
+      },
+      "title": "The Shattering Peace",
+      "votes": "2942"
+    },
+    {
+      "authors": [
+        "Melissa Pace"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Science Fiction",
+      "position": "2025.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/217387959-the-once-and-future-me?from_choice=true"
+      },
+      "title": "The Once and Future Me",
+      "votes": "2857"
+    },
+    {
+      "authors": [
+        "Yume Kitasei"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Science Fiction",
+      "position": "2025.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/222376600-saltcrop?from_choice=true"
+      },
+      "title": "Saltcrop",
+      "votes": "2850"
+    },
+    {
+      "authors": [
+        "Nicholas Binge"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Science Fiction",
+      "position": "2025.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/215362027-dissolution?from_choice=true"
+      },
+      "title": "Dissolution",
+      "votes": "2179"
+    },
+    {
+      "authors": [
+        "Silvia Park"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Science Fiction",
+      "position": "2025.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/214151232-luminous?from_choice=true"
+      },
+      "title": "Luminous",
+      "votes": "2087"
+    }
+  ],
+  "fetched_at": "2026-07-07T13:50:43Z",
+  "list_id": "goodreads_choice_awards_science_fiction",
+  "list_name": "Goodreads Choice Awards - Science Fiction",
+  "match_series": false,
+  "notes": [
+    "Goodreads Choice Awards overview could not be fetched: https://www.goodreads.com/choiceawards/best-books-2018: <urlopen error The read operation timed out>",
+    "Goodreads Choice Awards overview could not be fetched: https://www.goodreads.com/choiceawards/best-books-2026: HTTP Error 404: Not Found"
+  ],
+  "parser": "goodreads_choice_awards_science_fiction",
+  "schema_version": 2,
+  "source": {
+    "name": "Goodreads Choice Awards - Science Fiction",
+    "source_id": "goodreads_choice_awards_science_fiction",
+    "url": "https://www.goodreads.com/choiceawards"
+  }
+}

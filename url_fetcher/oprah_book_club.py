@@ -20,5 +20,5 @@ class UrlFetcherOprahBookClub(UrlFetcherGeneric):
       from parser.oprah_book_club import OprahBookClubParser
     return OprahBookClubParser()
 
-  def parse(self, html, **_kwargs):
-    return self.parser().parse(html, self.URL, self.NAME)
+  def parse(self, html, fetch_url=None, **_kwargs):
+    return self.parser().parse(html, self.URL, self.NAME, fetch_url=fetch_url)

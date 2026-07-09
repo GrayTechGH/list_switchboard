@@ -22,6 +22,7 @@ try:
     CATEGORY_CRIME_MYSTERY_THRILLER,
     DEFAULT_FILTER_CATEGORIES,
     ListParserBase,
+    parsed_source,
   )
 except ImportError:
   from parser.base import (
@@ -39,6 +40,7 @@ except ImportError:
     CATEGORY_CRIME_MYSTERY_THRILLER,
     DEFAULT_FILTER_CATEGORIES,
     ListParserBase,
+    parsed_source,
   )
 
 
@@ -185,7 +187,7 @@ class UrlFetcherGeneric:
           progress=progress,
           cached_parsed=cached_parsed,
           incremental_update=bool(incremental_update))
-        parsed.setdefault('source_url', url)
+        parsed.setdefault('source', parsed_source(self.NAME, url, self.source_id))
         parsed.setdefault('match_series', self.options.get('match_series', True))
         return parsed
       except Exception as err:

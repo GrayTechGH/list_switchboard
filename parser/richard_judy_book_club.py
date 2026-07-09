@@ -36,7 +36,7 @@ class RichardJudyBookClubParser(BookClubParserBase):
         'title': clean_title(title),
         'author': clean_author(author),
         'selection_label': 'latest pick set',
-      }, f'latest pick set {title} by {author}', base_url, scope, len(entries) + 1)
+      }, f'latest pick set {title} by {author}', base_url, scope, len(entries) + 1, base_url=base_url)
       if entry is not None:
         entries.append(entry)
     return entries
@@ -61,14 +61,14 @@ class RichardJudyBookClubParser(BookClubParserBase):
           break
       if not author:
         continue
-      source_url = (
+      entry_url = (
         urljoin(base_url, node.get('href'))
         if getattr(node, 'name', '') == 'a' and node.get('href') else base_url)
       entry = self.build_entry({
         'title': clean_title(text),
         'author': author,
         'selection_label': 'latest pick set',
-      }, f'latest pick set {text} by {author}', source_url, scope, len(entries) + 1)
+      }, f'latest pick set {text} by {author}', entry_url, scope, len(entries) + 1, base_url=base_url)
       if entry is not None:
         entries.append(entry)
     return entries

@@ -23,6 +23,7 @@ try:
     CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS,
     CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,
     ListParserBase,
+    parsed_source,
   )
   from calibre_plugins.list_switchboard.parser.award_base import normalize_line
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
@@ -31,6 +32,7 @@ except ImportError:
     CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS,
     CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,
     ListParserBase,
+    parsed_source,
   )
   from .award_base import normalize_line
   from .generic import position_sort_key
@@ -64,7 +66,7 @@ class BookBrowseBookClubParserBase(ListParserBase):
     entries = self.parse_entries(root, base_url, category)
     return {
       'name': name,
-      'url': base_url,
+      'source': parsed_source(name, base_url),
       'entries': sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
       'match_series': False,
     }

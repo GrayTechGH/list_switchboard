@@ -1,0 +1,107 @@
+{
+  "list_id": "aurealis_fantasy_novel",
+  "matches": [
+    {
+      "entry_key": "battle axe|sara douglass",
+      "imported_author": [
+        "Sara Douglass"
+      ],
+      "imported_title": "Battle Axe",
+      "matched_at": "2026-07-08T22:50:29Z",
+      "matched_authors": [
+        "Sara Douglass"
+      ],
+      "matched_book_id": 9378,
+      "matched_book_ids": [
+        9378
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Sara Douglass"
+          ],
+          "matched_book_id": 9378,
+          "matched_title": "Battleaxe"
+        }
+      ],
+      "matched_title": "Battleaxe"
+    },
+    {
+      "entry_key": "enchanter and starman the axis trilogy|sara douglass",
+      "imported_author": [
+        "Sara Douglass"
+      ],
+      "imported_title": "Enchanter and Starman: The Axis Trilogy",
+      "matched_at": "2026-07-08T22:50:29Z",
+      "matched_authors": [
+        "Sara Douglass"
+      ],
+      "matched_book_id": 9383,
+      "matched_book_ids": [
+        9383
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Sara Douglass"
+          ],
+          "matched_book_id": 9383,
+          "matched_title": "Enchanter"
+        }
+      ],
+      "matched_title": "Enchanter"
+    },
+    {
+      "entry_key": "sinner book one of the wayfarer redemption|sara douglass",
+      "imported_author": [
+        "Sara Douglass"
+      ],
+      "imported_title": "Sinner: Book One of the Wayfarer Redemption",
+      "matched_at": "2026-07-08T22:50:29Z",
+      "matched_authors": [
+        "Sara Douglass"
+      ],
+      "matched_book_id": 9381,
+      "matched_book_ids": [
+        9381
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Sara Douglass"
+          ],
+          "matched_book_id": 9381,
+          "matched_title": "Sinner"
+        }
+      ],
+      "matched_title": "Sinner"
+    },
+    {
+      "entry_key": "a shadow on the glass|ian irvine",
+      "imported_author": [
+        "Ian Irvine"
+      ],
+      "imported_title": "A Shadow on the Glass",
+      "matched_at": "2026-07-08T22:50:29Z",
+      "matched_authors": [
+        "Sara Douglass"
+      ],
+      "matched_book_id": 9384,
+      "matched_book_ids": [
+        9384
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Sara Douglass"
+          ],
+          "matched_book_id": 9384,
+          "matched_title": "Pilgrim"
+        }
+      ],
+      "matched_title": "Pilgrim"
+    }
+  ],
+  "saved_at": "2026-07-08T22:50:29Z",
+  "schema_version": 2
+}

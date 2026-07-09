@@ -20,12 +20,23 @@ from bs4 import BeautifulSoup
 try:
   from calibre_plugins.list_switchboard.parser.base import (
     CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS,
+    author_list,
+    entry_source_object,
+    imported_entry,
     ListParserBase,
+    parsed_source,
   )
   from calibre_plugins.list_switchboard.parser.award_base import normalize_line
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
 except ImportError:
-  from .base import CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS, ListParserBase
+  from .base import (
+    CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS,
+    author_list,
+    entry_source_object,
+    imported_entry,
+    ListParserBase,
+    parsed_source,
+  )
   from .award_base import normalize_line
   from .generic import position_sort_key
 
@@ -95,10 +106,10 @@ def split_title_author(text):
   text = re.sub(r'\s+\|\s+', ' by ', text)
   text = re.sub(r'\s+\u2013\s+', ' by ', text)
   text = re.sub(r'\s+-\s+', ' by ', text)
-  match = re.search(r'^(.+?)\s+(?:by|from)\s+(.+)$', text, re.I)
+  match = re.search(r'^(.+?),\s*(?:by\s+)?([^,]+(?:\s+(?:and|&)\s+[^,]+)*)$', text, re.I)
   if match:
     return clean_title(match.group(1)), clean_author(match.group(2))
-  match = re.search(r'^(.+?),\s*(?:by\s+)?([^,]+(?:\s+(?:and|&)\s+[^,]+)*)$', text, re.I)
+  match = re.search(r'^(.+?)\s+(?:by|from)\s+(.+)$', text, re.I)
   if match:
     return clean_title(match.group(1)), clean_author(match.group(2))
   return '', ''
@@ -169,7 +180,7 @@ class BookClubParserBase(ListParserBase):
     entries = self.entries_from_soup(soup, base_url, scope or self.DEFAULT_SCOPE)
     return {
       'name': name or self.CLUB_NAME,
-      'url': base_url,
+      'source': parsed_source(name or self.CLUB_NAME, base_url),
       'entries': sorted(entries, key=self.entry_sort_key),
       'notes': self.notes_for_entries(entries),
       'match_series': False,
@@ -238,11 +249,11 @@ class BookClubParserBase(ListParserBase):
 
   def entry_from_cells(self, cells, headers, base_url, scope, index):
     values = [normalize_line(cell.get_text(' ', strip=True)) for cell in cells]
-    source_url = ''
+    entry_url = ''
     for cell in cells:
       link = cell.find('a', href=True)
       if link is not None:
-        source_url = urljoin(base_url, link['href'])
+        entry_url = urljoin(base_url, link['href'])
         break
     data = {}
     if len(headers) >= len(values):
@@ -266,7 +277,7 @@ class BookClubParserBase(ListParserBase):
       title, author = split_title_author(' '.join(values[:2]))
       data.setdefault('title', title)
       data.setdefault('author', author)
-    return self.build_entry(data, ' '.join(values), source_url, scope, index)
+    return self.build_entry(data, ' '.join(values), entry_url, scope, index, base_url=base_url)
 
   def candidate_nodes(self, soup):
     nodes = []
@@ -284,8 +295,8 @@ class BookClubParserBase(ListParserBase):
     text = normalize_line(node.get_text(' ', strip=True))
     data = self.data_from_node(node, text)
     link = node.find('a', href=True)
-    source_url = urljoin(base_url, link['href']) if link is not None else base_url
-    return self.build_entry(data, text, source_url, scope, index)
+    entry_url = urljoin(base_url, link['href']) if link is not None else base_url
+    return self.build_entry(data, text, entry_url, scope, index, base_url=base_url)
 
   def data_from_node(self, node, text):
     data = {}
@@ -329,10 +340,10 @@ class BookClubParserBase(ListParserBase):
       text = text.replace(label, ' ', 1)
     return normalize_line(text)
 
-  def build_entry(self, data, text, source_url, scope, index):
+  def build_entry(self, data, text, entry_url, scope, index, base_url=''):
     title = clean_title(data.get('title', ''))
-    author = clean_author(data.get('author', ''))
-    if not title or not author:
+    authors = data.get('authors') or clean_author(data.get('author', ''))
+    if not title or not authors:
       return None
     if not data.get('selection_year'):
       data['selection_year'] = parse_year(data.get('selection_label', '')) or parse_year(text)
@@ -341,15 +352,15 @@ class BookClubParserBase(ListParserBase):
     if not data.get('season'):
       data['season'] = parse_season(data.get('selection_label', '')) or parse_season(text)
     selection_type = data.get('selection_type') or self.DEFAULT_SELECTION_TYPE
-    entry = {
-      'position': data.get('rank_or_position') or str(index),
-      'title': title,
-      'author': author,
-      'source_url': source_url,
-      'club': self.CLUB_NAME,
-      'club_scope': scope,
-      'selection_type': selection_type,
-    }
+    list_source = parsed_source(self.CLUB_NAME, base_url)
+    entry = imported_entry(
+      data.get('rank_or_position') or str(index),
+      title,
+      authors,
+      source=entry_source_object(entry_url, list_source=list_source),
+      club=self.CLUB_NAME,
+      club_scope=scope,
+      selection_type=selection_type)
     for key in (
         'selection_year', 'selection_month', 'season', 'event_date',
         'selection_label', 'advocate_defender_host_selector', 'scope_flags'):
@@ -395,7 +406,7 @@ class BookClubParserBase(ListParserBase):
   def entry_key(self, entry):
     return (
       entry.get('title', '').casefold(),
-      entry.get('author', '').casefold(),
+      ' '.join(author.casefold() for author in author_list(entry.get('authors'))),
       entry.get('selection_year', ''),
       entry.get('selection_month', ''),
       entry.get('selection_type', ''),

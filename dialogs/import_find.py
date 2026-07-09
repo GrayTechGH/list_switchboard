@@ -3,8 +3,8 @@
 
 from qt.core import (
   QButtonGroup, QDialog, QDialogButtonBox, QGridLayout, QGroupBox, QHBoxLayout,
-  QLabel, QPushButton, QRadioButton, QSpinBox, QTableWidget, QTableWidgetItem,
-  QVBoxLayout
+  QHeaderView, QLabel, QPushButton, QRadioButton, QSpinBox, QTableWidget,
+  QTableWidgetItem, QVBoxLayout
 )
 
 try:
@@ -139,11 +139,12 @@ class FindModeDialog(QDialog):
 
 class FindImportMatchesDialog(QDialog):
 
-  def __init__(self, parent, review_rows, find_callback=None):
+  def __init__(self, parent, review_rows, find_callback=None, author_display_formatter=None):
     QDialog.__init__(self, parent)
     self.setWindowTitle('Find match')
     self.review_rows = list(review_rows or [])
     self.find_callback = find_callback
+    self.author_display_formatter = author_display_formatter
     self.selected_candidate = None
 
     layout = QVBoxLayout()
@@ -181,7 +182,7 @@ class FindImportMatchesDialog(QDialog):
       values = [
         row.get('imported_position', ''),
         row.get('imported_title', ''),
-        row.get('imported_author', ''),
+        self.display_authors(row.get('imported_author', '')),
         'Yes' if row.get('matched') else 'No',
         str(len(row.get('possible_matches') or [])),
       ]
@@ -213,9 +214,22 @@ class FindImportMatchesDialog(QDialog):
     row = self.selected_review_row()
     if not row or not row.get('possible_matches'):
       return
-    dialog = MatchReviewDialog(self, row.get('possible_matches') or [])
+    dialog = MatchReviewDialog(
+      self,
+      row,
+      author_display_formatter=self.author_display_formatter)
     if dialog.exec() == QDialog.Accepted:
       self.selected_candidate = dialog.selected_candidate
+
+  def display_authors(self, value):
+    if self.author_display_formatter is not None:
+      try:
+        return self.author_display_formatter(value)
+      except Exception:
+        pass
+    if isinstance(value, (list, tuple)):
+      return ', '.join(str(item) for item in value)
+    return str(value or '')
 
 
 class MatchReviewDialog(QDialog):
@@ -223,7 +237,7 @@ class MatchReviewDialog(QDialog):
   def __init__(
       self, parent, review_row, candidates=None, view_book_callback=None,
       match_callback=None, ignore_callback=None, previous_callback=None,
-      next_callback=None):
+      next_callback=None, author_display_formatter=None):
     QDialog.__init__(self, parent)
     self.setWindowTitle('Possible matches')
     self.view_book_callback = view_book_callback
@@ -231,6 +245,7 @@ class MatchReviewDialog(QDialog):
     self.ignore_callback = ignore_callback
     self.previous_callback = previous_callback
     self.next_callback = next_callback
+    self.author_display_formatter = author_display_formatter
     self.selected_candidate = None
     self.navigation_action = None
 
@@ -241,6 +256,7 @@ class MatchReviewDialog(QDialog):
     self.match_table = QTableWidget(self)
     self.match_table.setColumnCount(5)
     self.match_table.setHorizontalHeaderLabels(['ID', 'Title', 'Author', 'Series', 'Reason'])
+    self.configure_table_columns()
     self.match_table.setSelectionBehavior(QTableWidget.SelectionBehavior.SelectRows)
     self.match_table.setSelectionMode(self.selection_mode('ExtendedSelection'))
     self.match_table.setEditTriggers(QTableWidget.EditTrigger.NoEditTriggers)
@@ -268,6 +284,37 @@ class MatchReviewDialog(QDialog):
     self.set_review_row(review_row, candidates=candidates, preserve_column_widths=False)
     self.resize(820, 500)
 
+  def configure_table_columns(self):
+    header = self.match_table.horizontalHeader()
+    try:
+      header.setStretchLastSection(False)
+    except Exception:
+      pass
+    resize_to_contents = self.header_resize_mode('ResizeToContents')
+    stretch = self.header_resize_mode('Stretch')
+    for column, mode in (
+        (0, resize_to_contents),
+        (1, stretch),
+        (2, stretch),
+        (3, stretch),
+        (4, resize_to_contents)):
+      if mode is None:
+        continue
+      try:
+        header.setSectionResizeMode(column, mode)
+      except Exception:
+        pass
+
+  def header_resize_mode(self, mode_name):
+    for container in (getattr(QHeaderView, 'ResizeMode', None), QHeaderView):
+      if container is None:
+        continue
+      try:
+        return getattr(container, mode_name)
+      except AttributeError:
+        pass
+    return None
+
   def set_review_row(self, review_row, candidates=None, preserve_column_widths=True):
     widths = self.column_widths() if preserve_column_widths else []
     if isinstance(review_row, (list, tuple)):
@@ -287,7 +334,7 @@ class MatchReviewDialog(QDialog):
     label_lines = []
     if self.review_row:
       label_lines.append(str(self.review_row.get('imported_title', '') or 'Untitled'))
-      author = str(self.review_row.get('imported_author', '') or '')
+      author = self.display_authors(self.review_row.get('imported_author', ''))
       if author:
         label_lines.append(author)
     self.review_label.setText('\n'.join(label_lines))
@@ -311,10 +358,11 @@ class MatchReviewDialog(QDialog):
   def update_table(self):
     self.match_table.setRowCount(len(self.candidates))
     for row_index, candidate in enumerate(self.candidates):
+      authors = candidate.get('authors', candidate.get('matched_authors', ''))
       values = [
         candidate.get('book_id', candidate.get('matched_book_id', '')),
         candidate.get('title', candidate.get('matched_title', '')),
-        candidate.get('authors', candidate.get('matched_authors', '')),
+        self.display_authors(authors),
         candidate.get('series', candidate.get('matched_series', '')),
         candidate.get('reason', candidate.get('source', '')),
       ]
@@ -334,6 +382,16 @@ class MatchReviewDialog(QDialog):
       return getattr(QTableWidget.SelectionMode, mode_name)
     except AttributeError:
       return getattr(QTableWidget, mode_name)
+
+  def display_authors(self, value):
+    if self.author_display_formatter is not None:
+      try:
+        return self.author_display_formatter(value)
+      except Exception:
+        pass
+    if isinstance(value, (list, tuple)):
+      return ', '.join(str(item) for item in value)
+    return str(value or '')
 
   def selected_row_candidate(self):
     row = self.match_table.currentRow()

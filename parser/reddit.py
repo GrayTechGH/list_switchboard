@@ -68,7 +68,7 @@ class RedditResultsParser(ListParserBase):
       if entries:
         return {
           'name': name,
-          'url': url,
+          'source': {'url': url, 'name': name, 'source_id': ''},
           'entries': entries,
         }
     raise ValueError('Could not find the r/Fantasy results table in the fetched page.')

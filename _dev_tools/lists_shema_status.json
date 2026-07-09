@@ -1,0 +1,1915 @@
+{
+  "schema_version": 2,
+  "lists": [
+    {
+      "source_id": "r_fantasy_top_novels_2025",
+      "name": "r/Fantasy Top Novels 2025",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "r_fantasy_top_standalone_novels_2024",
+      "name": "r/Fantasy Top Standalone Novels 2024",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "r_fantasy_top_self_published_novels_2024",
+      "name": "r/Fantasy Top Self-Published Novels 2024",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "sword_and_laser_book_list",
+      "name": "Sword and Laser",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "oprah_book_club",
+      "name": "Oprah's Book Club",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "reese_book_club",
+      "name": "Reese's Book Club",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "read_with_jenna",
+      "name": "Read With Jenna",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "gma_book_club",
+      "name": "GMA Book Club",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "canada_reads",
+      "name": "Canada Reads",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "library_reads",
+      "name": "LibraryReads",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "barnes_noble_book_club",
+      "name": "Barnes & Noble Book Club",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "service95_book_club",
+      "name": "Service95 Book Club",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "richard_judy_book_club",
+      "name": "Richard & Judy Book Club",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "hugo_awards_novel",
+      "name": "Hugo Awards - Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "hugo_awards_novella",
+      "name": "Hugo Awards - Novella",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "hugo_awards_series",
+      "name": "Hugo Awards - Series",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "hugo_awards_graphic_story_or_comic",
+      "name": "Hugo Awards - Graphic Story or Comic",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "hugo_awards_related_work",
+      "name": "Hugo Awards - Related Work",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "lodestar_award_young_adult_book",
+      "name": "Lodestar Award - Young Adult Book",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "nebula_awards_novel",
+      "name": "Nebula Awards - Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "nebula_awards_novella",
+      "name": "Nebula Awards - Novella",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "nebula_andre_norton_middle_grade_young_adult",
+      "name": "Nebula Awards - Andre Norton Middle Grade/YA",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "nebula_awards_comics",
+      "name": "Nebula Awards - Comics",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "locus_annual_sf_novel",
+      "name": "Locus - Annual SF Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "locus_annual_fantasy_novel",
+      "name": "Locus - Annual Fantasy Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "locus_annual_horror_novel",
+      "name": "Locus - Annual Horror Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "locus_annual_young_adult_novel",
+      "name": "Locus - Annual Young Adult Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "locus_annual_first_novel",
+      "name": "Locus - Annual First Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "locus_annual_translated_novel",
+      "name": "Locus - Annual Translated Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "locus_annual_novella",
+      "name": "Locus - Annual Novella",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "locus_annual_anthology",
+      "name": "Locus - Annual Anthology",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "locus_annual_collection",
+      "name": "Locus - Annual Collection",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "locus_annual_nonfiction",
+      "name": "Locus - Annual Non-Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "locus_annual_illustrated_and_art_book",
+      "name": "Locus - Annual Illustrated and Art Book",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "locus_all_time_1975_novel",
+      "name": "Locus - All-Time 1975 Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "locus_all_time_1987_sf_novel",
+      "name": "Locus - All-Time 1987 SF Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "locus_all_time_1987_fantasy_novel",
+      "name": "Locus - All-Time 1987 Fantasy Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "locus_all_time_1998_sf_novel",
+      "name": "Locus - All-Time 1998 SF Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "locus_all_time_1998_fantasy_novel",
+      "name": "Locus - All-Time 1998 Fantasy Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "locus_all_time_2012_sf_20th_novel",
+      "name": "Locus - All-Time 2012 20th Century SF Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "locus_all_time_2012_fh_20th_novel",
+      "name": "Locus - All-Time 2012 20th Century Fantasy/Horror Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "locus_all_time_2012_sf_21st_novel",
+      "name": "Locus - All-Time 2012 21st Century SF Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "locus_all_time_2012_fh_21st_novel",
+      "name": "Locus - All-Time 2012 21st Century Fantasy/Horror Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "world_fantasy_novel",
+      "name": "World Fantasy - Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "world_fantasy_novella",
+      "name": "World Fantasy - Novella",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "world_fantasy_anthology",
+      "name": "World Fantasy - Anthology",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "world_fantasy_collection",
+      "name": "World Fantasy - Collection",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "world_fantasy_collection_anthology",
+      "name": "World Fantasy - Collection/Anthology",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "british_fantasy_horror_novel",
+      "name": "British Fantasy - Horror Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "british_fantasy_fantasy_novel",
+      "name": "British Fantasy - Fantasy Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "british_fantasy_best_novel",
+      "name": "British Fantasy - Best Novel (pre-2012 August Derleth)",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "british_fantasy_novella",
+      "name": "British Fantasy - Novella",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "british_fantasy_anthology",
+      "name": "British Fantasy - Anthology",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "british_fantasy_collection",
+      "name": "British Fantasy - Collection",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "british_fantasy_nonfiction",
+      "name": "British Fantasy - Non-Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "international_horror_guild_novel",
+      "name": "International Horror Guild - Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "international_horror_guild_first_novel",
+      "name": "International Horror Guild - First Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "international_horror_guild_long_fiction",
+      "name": "International Horror Guild - Long Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "international_horror_guild_mid_length_fiction",
+      "name": "International Horror Guild - Mid-Length Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "international_horror_guild_collection",
+      "name": "International Horror Guild - Collection",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "international_horror_guild_anthology",
+      "name": "International Horror Guild - Anthology",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "international_horror_guild_nonfiction",
+      "name": "International Horror Guild - Non-Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "international_horror_guild_illustrated_narrative",
+      "name": "International Horror Guild - Illustrated Narrative",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "australasian_shadows_novel",
+      "name": "Australasian Shadows - Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "australasian_shadows_long_fiction",
+      "name": "Australasian Shadows - Long Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "australasian_shadows_collected_work",
+      "name": "Australasian Shadows - Collected Work",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "australasian_shadows_edited_work",
+      "name": "Australasian Shadows - Edited Work",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "australasian_shadows_graphic_novel",
+      "name": "Australasian Shadows - Graphic Novel/Comic",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "australasian_shadows_nonfiction",
+      "name": "Australasian Shadows - Non-Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "this_is_horror_novel",
+      "name": "This Is Horror - Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "this_is_horror_novella",
+      "name": "This Is Horror - Novella",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "this_is_horror_short_story_collection",
+      "name": "This Is Horror - Short Story Collection",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "this_is_horror_anthology",
+      "name": "This Is Horror - Anthology",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "splatterpunk_novel",
+      "name": "Splatterpunk - Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "splatterpunk_novella",
+      "name": "Splatterpunk - Novella",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "splatterpunk_collection",
+      "name": "Splatterpunk - Collection",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "splatterpunk_anthology",
+      "name": "Splatterpunk - Anthology",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "ladies_of_horror_fiction_novel",
+      "name": "Ladies of Horror Fiction - Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "ladies_of_horror_fiction_novella",
+      "name": "Ladies of Horror Fiction - Novella",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "ladies_of_horror_fiction_collection",
+      "name": "Ladies of Horror Fiction - Collection",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "ladies_of_horror_fiction_debut",
+      "name": "Ladies of Horror Fiction - Debut",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "ladies_of_horror_fiction_young_adult",
+      "name": "Ladies of Horror Fiction - Young Adult",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "ladies_of_horror_fiction_middle_grade",
+      "name": "Ladies of Horror Fiction - Middle Grade",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "ladies_of_horror_fiction_poetry_collection",
+      "name": "Ladies of Horror Fiction - Poetry Collection",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "ladies_of_horror_fiction_graphic_novel",
+      "name": "Ladies of Horror Fiction - Graphic Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "arthur_c_clarke_award_novel",
+      "name": "Arthur C. Clarke Award - Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "bsfa_novel",
+      "name": "BSFA - Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "bsfa_shorter_fiction",
+      "name": "BSFA - Shorter Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "bsfa_collection_anthology",
+      "name": "BSFA - Collection/Anthology",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "bsfa_fiction_for_younger_readers",
+      "name": "BSFA - Fiction for Younger Readers",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "bsfa_long_nonfiction",
+      "name": "BSFA - Long Non-Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "philip_k_dick_award_novel",
+      "name": "Philip K. Dick Award - Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "mythopoeic_fantasy",
+      "name": "Mythopoeic - Fantasy",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "mythopoeic_adult_literature",
+      "name": "Mythopoeic - Adult Literature",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "mythopoeic_young_adult_literature",
+      "name": "Mythopoeic - Young Adult Literature",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "mythopoeic_childrens_literature",
+      "name": "Mythopoeic - Children's Literature",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "bram_stoker_novel",
+      "name": "Bram Stoker - Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "bram_stoker_first_novel",
+      "name": "Bram Stoker - First Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "bram_stoker_young_adult_novel",
+      "name": "Bram Stoker - Young Adult Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "bram_stoker_middle_grade_novel",
+      "name": "Bram Stoker - Middle Grade Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "bram_stoker_long_fiction",
+      "name": "Bram Stoker - Long Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "bram_stoker_fiction_collection",
+      "name": "Bram Stoker - Fiction Collection",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "bram_stoker_anthology",
+      "name": "Bram Stoker - Anthology",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "bram_stoker_poetry_collection",
+      "name": "Bram Stoker - Poetry Collection",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "bram_stoker_graphic_novel",
+      "name": "Bram Stoker - Graphic Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "bram_stoker_nonfiction",
+      "name": "Bram Stoker - Nonfiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "shirley_jackson_novel",
+      "name": "Shirley Jackson - Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "shirley_jackson_novella",
+      "name": "Shirley Jackson - Novella",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "shirley_jackson_single_author_collection",
+      "name": "Shirley Jackson - Single-Author Collection",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "shirley_jackson_edited_anthology",
+      "name": "Shirley Jackson - Edited Anthology",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "otherwise_tiptree_books_and_series",
+      "name": "Otherwise/Tiptree - Books and Series",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "prometheus_novel",
+      "name": "Prometheus - Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "prometheus_hall_of_fame",
+      "name": "Prometheus - Hall of Fame",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "prometheus_young_adult_honor_roll",
+      "name": "Prometheus - Young Adult Honor Roll",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "prometheus_special_awards",
+      "name": "Prometheus - Special Awards",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "aurora_novel",
+      "name": "Aurora - Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "aurora_ya_novel",
+      "name": "Aurora - YA Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "aurora_novelette_novella",
+      "name": "Aurora - Novelette/Novella",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "aurora_related_work",
+      "name": "Aurora - Related Work",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "aurora_graphic_novel",
+      "name": "Aurora - Graphic Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "aurealis_sf_novel",
+      "name": "Aurealis - SF Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "aurealis_golden_aurealis_novel",
+      "name": "Aurealis - Golden Aurealis Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "aurealis_fantasy_novel",
+      "name": "Aurealis - Fantasy Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "aurealis_horror_novel",
+      "name": "Aurealis - Horror Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "aurealis_sf_novella",
+      "name": "Aurealis - SF Novella",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "aurealis_fantasy_novella",
+      "name": "Aurealis - Fantasy Novella",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "aurealis_horror_novella",
+      "name": "Aurealis - Horror Novella",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "aurealis_anthology",
+      "name": "Aurealis - Anthology",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "aurealis_collection",
+      "name": "Aurealis - Collection",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "aurealis_graphic_novel_illustrated_work",
+      "name": "Aurealis - Graphic Novel/Illustrated Work",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "aurealis_young_adult_novel",
+      "name": "Aurealis - Young Adult Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "aurealis_childrens_book",
+      "name": "Aurealis - Children's Book",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "aurealis_childrens_fiction",
+      "name": "Aurealis - Children's Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "aurealis_childrens_fiction_words",
+      "name": "Aurealis - Children's Fiction (Words)",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "aurealis_childrens_fiction_pictures",
+      "name": "Aurealis - Children's Fiction (Pictures)",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "aurealis_childrens_8_12_long_fiction",
+      "name": "Aurealis - Children's 8-12 Long Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "aurealis_childrens_8_12_illustrated_work_picture_book",
+      "name": "Aurealis - Children's 8-12 Illustrated Work/Picture Book",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "aurealis_sara_douglass_book_series_award",
+      "name": "Aurealis - Sara Douglass Book Series Award",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "ditmar_novel",
+      "name": "Ditmar - Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "ditmar_novella_novelette",
+      "name": "Ditmar - Novella/Novelette",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "ditmar_collected_work",
+      "name": "Ditmar - Collected Work",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "spsfc_novel_finalists",
+      "name": "SPSFC - Novel Finalists",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "seiun_translated_novel",
+      "name": "Seiun - Translated Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "seiun_japanese_long_work",
+      "name": "Seiun - Japanese Long Work",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "seiun_comic",
+      "name": "Seiun - Comic",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "seiun_nonfiction",
+      "name": "Seiun - Nonfiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "nommo_novel",
+      "name": "Nommo - Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "nommo_novella",
+      "name": "Nommo - Novella",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "nommo_graphic_novel",
+      "name": "Nommo - Graphic Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "edgar_award_novel",
+      "name": "Edgar Award - Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "edgar_award_first_novel",
+      "name": "Edgar Award - First Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "edgar_award_paperback_original",
+      "name": "Edgar Award - Paperback Original",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "edgar_award_fact_crime",
+      "name": "Edgar Award - Fact Crime",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "edgar_award_critical_biographical_work",
+      "name": "Edgar Award - Critical/Biographical Work",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "edgar_award_juvenile",
+      "name": "Edgar Award - Juvenile",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "edgar_award_young_adult",
+      "name": "Edgar Award - Young Adult",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "edgar_award_mary_higgins_clark_award",
+      "name": "Edgar Award - Mary Higgins Clark Award",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "edgar_award_lilian_jackson_braun_award",
+      "name": "Edgar Award - Lilian Jackson Braun Award",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "cwa_dagger_gold",
+      "name": "CWA Dagger - Gold Dagger",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "cwa_dagger_ian_fleming_steel",
+      "name": "CWA Dagger - Ian Fleming Steel Dagger",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "cwa_dagger_historical",
+      "name": "CWA Dagger - Historical Dagger",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "cwa_dagger_crime_fiction_in_translation",
+      "name": "CWA Dagger - Crime Fiction in Translation",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "itw_thriller_award_standalone_thriller_novel",
+      "name": "ITW Thriller Award - Standalone Thriller Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "itw_thriller_award_standalone_mystery_novel",
+      "name": "ITW Thriller Award - Standalone Mystery Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "itw_thriller_award_series_novel",
+      "name": "ITW Thriller Award - Series Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "itw_thriller_award_first_novel",
+      "name": "ITW Thriller Award - First Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "itw_thriller_award_young_adult_novel",
+      "name": "ITW Thriller Award - Young Adult Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "itw_thriller_award_hardcover_novel",
+      "name": "ITW Thriller Award - Hardcover Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "itw_thriller_award_paperback_original_novel",
+      "name": "ITW Thriller Award - Paperback Original Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "itw_thriller_award_e_book_original_novel",
+      "name": "ITW Thriller Award - E-Book Original Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "itw_thriller_award_audiobook",
+      "name": "ITW Thriller Award - Audiobook",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "anthony_award_anthology_collection",
+      "name": "Anthony Award - Anthology/Collection",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "agatha_award_best_novel",
+      "name": "Agatha Award - Contemporary Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "agatha_award_first_novel",
+      "name": "Agatha Award - Best First Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "agatha_award_historical_novel",
+      "name": "Agatha Award - Historical Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "agatha_award_non_fiction",
+      "name": "Agatha Award - Non-Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "agatha_award_childrens_ya",
+      "name": "Agatha Award - Children's/YA",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "macavity_award_mystery_novel",
+      "name": "Macavity Award - Mystery Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "macavity_award_first_mystery",
+      "name": "Macavity Award - First Mystery",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "macavity_award_historical_mystery",
+      "name": "Macavity Award - Historical Mystery",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "macavity_award_nonfiction_critical",
+      "name": "Macavity Award - Nonfiction/Critical",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "shamus_award_pi_novel",
+      "name": "Shamus Award - P.I. Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "shamus_award_paperback_original",
+      "name": "Shamus Award - Paperback Original",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "shamus_award_first_pi_novel",
+      "name": "Shamus Award - First P.I. Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "barry_award_mystery_novel",
+      "name": "Barry Award - Mystery Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "barry_award_first_mystery_novel",
+      "name": "Barry Award - First Mystery Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "barry_award_paperback_original",
+      "name": "Barry Award - Paperback Original",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "barry_award_thriller",
+      "name": "Barry Award - Thriller",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "barry_award_british_crime_novel",
+      "name": "Barry Award - British Crime Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "hammett_prize",
+      "name": "Hammett Prize",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "nero_award",
+      "name": "Nero Award",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "strand_critics_award_mystery_novel",
+      "name": "Strand Critics Award - Mystery Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "strand_critics_award_debut_mystery",
+      "name": "Strand Critics Award - Debut Mystery",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "crime_writers_of_canada_award_novel",
+      "name": "Crime Writers of Canada Award - Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "crime_writers_of_canada_award_first_novel",
+      "name": "Crime Writers of Canada Award - First Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "crime_writers_of_canada_award_nonfiction",
+      "name": "Crime Writers of Canada Award - Nonfiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "crime_writers_of_canada_award_juvenile_young_adult",
+      "name": "Crime Writers of Canada Award - Juvenile/Young Adult",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "crime_writers_of_canada_award_french_language_crime_book",
+      "name": "Crime Writers of Canada Award - French Language Crime Book",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "davitt_award_adult_novel",
+      "name": "Davitt Award - Adult Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "davitt_award_debut_novel",
+      "name": "Davitt Award - Debut Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "davitt_award_non_fiction",
+      "name": "Davitt Award - Non-Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "davitt_award_young_adult_novel",
+      "name": "Davitt Award - Young Adult Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "davitt_award_childrens_novel",
+      "name": "Davitt Award - Children's Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "dilys_award",
+      "name": "Dilys Award",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "gumshoe_award_mystery",
+      "name": "Gumshoe Award - Mystery",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "gumshoe_award_thriller",
+      "name": "Gumshoe Award - Thriller",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "gumshoe_award_first_novel",
+      "name": "Gumshoe Award - First Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "gumshoe_award_european_crime_novel",
+      "name": "Gumshoe Award - European Crime Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "lefty_award_humorous_mystery_novel",
+      "name": "Lefty Award - Humorous Mystery Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "lefty_award_historical_mystery_novel",
+      "name": "Lefty Award - Historical Mystery Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "lefty_award_mystery_novel",
+      "name": "Lefty Award - Mystery Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "lefty_award_debut_mystery_novel",
+      "name": "Lefty Award - Debut Mystery Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "ned_kelly_award_crime_fiction",
+      "name": "Ned Kelly Award - Crime Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "ned_kelly_award_debut_crime_fiction",
+      "name": "Ned Kelly Award - Debut Crime Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "ned_kelly_award_true_crime",
+      "name": "Ned Kelly Award - True Crime",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "ned_kelly_award_international_crime_fiction",
+      "name": "Ned Kelly Award - International Crime Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "ngaio_marsh_award_crime_novel",
+      "name": "Ngaio Marsh Award - Crime Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "ngaio_marsh_award_first_novel",
+      "name": "Ngaio Marsh Award - First Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "ngaio_marsh_award_non_fiction",
+      "name": "Ngaio Marsh Award - Non-Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "ngaio_marsh_award_younger_readers",
+      "name": "Ngaio Marsh Award - Younger Readers",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "theakston_old_peculier_crime_novel_of_the_year",
+      "name": "Theakston Old Peculier Crime Novel of the Year",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "pulitzer_prize_fiction",
+      "name": "Pulitzer Prize - Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "pulitzer_prize_general_nonfiction",
+      "name": "Pulitzer Prize - General Nonfiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "national_book_award_fiction",
+      "name": "National Book Award - Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "national_book_award_nonfiction",
+      "name": "National Book Award - Nonfiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "national_book_award_young_peoples_literature",
+      "name": "National Book Award - Young People's Literature",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "baillie_gifford_prize",
+      "name": "Baillie Gifford Prize",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "pen_galbraith_award_nonfiction",
+      "name": "PEN/John Kenneth Galbraith Award for Nonfiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "pen_diamonstein_spielvogel_award_essay",
+      "name": "PEN/Diamonstein-Spielvogel Award for the Art of the Essay",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "pen_jean_stein_book_award",
+      "name": "PEN/Jean Stein Book Award",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "pen_open_book_award",
+      "name": "PEN Open Book Award",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "pen_faulkner_award_fiction",
+      "name": "PEN/Faulkner Award for Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "pen_hemingway_award_debut_novel",
+      "name": "PEN/Hemingway Award for Debut Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "j_anthony_lukas_book_prize",
+      "name": "J. Anthony Lukas Book Prize",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "mark_lynton_history_prize",
+      "name": "Mark Lynton History Prize",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "orwell_prize_political_writing",
+      "name": "Orwell Prize for Political Writing",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "andrew_carnegie_medal_nonfiction",
+      "name": "Andrew Carnegie Medal for Excellence in Nonfiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "kirkus_prize_fiction",
+      "name": "Kirkus Prize - Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "kirkus_prize_nonfiction",
+      "name": "Kirkus Prize - Nonfiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "kirkus_prize_young_readers_literature",
+      "name": "Kirkus Prize - Young Readers' Literature",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "womens_prize_nonfiction",
+      "name": "Women's Prize for Non-Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "womens_prize_fiction",
+      "name": "Women's Prize for Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "royal_society_science_book_prize",
+      "name": "Royal Society Trivedi Science Book Prize",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "booker_prize",
+      "name": "Booker Prize",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "international_booker_prize",
+      "name": "International Booker Prize",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "governor_general_literary_award_english_fiction",
+      "name": "Governor General's Literary Award - English Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "governor_general_literary_award_english_nonfiction",
+      "name": "Governor General's Literary Award - English Non-fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "governor_general_literary_award_english_young_peoples_text",
+      "name": "Governor General's Literary Award - English Young People's Literature - Text",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "governor_general_literary_award_english_young_peoples_illustrated_books",
+      "name": "Governor General's Literary Award - English Young People's Literature - Illustrated Books",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "governor_general_literary_award_french_young_peoples_text",
+      "name": "Governor General's Literary Award - French Young People's Literature - Text",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "governor_general_literary_award_french_young_peoples_illustrated_books",
+      "name": "Governor General's Literary Award - French Young People's Literature - Illustrated Books",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "costa_whitbread_novel",
+      "name": "Costa/Whitbread Book Award - Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "costa_whitbread_first_novel",
+      "name": "Costa/Whitbread Book Award - First Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "costa_whitbread_biography",
+      "name": "Costa/Whitbread Book Award - Biography",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "costa_whitbread_childrens_book",
+      "name": "Costa/Whitbread Book Award - Children's Book",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "costa_whitbread_book_of_the_year",
+      "name": "Costa/Whitbread Book of the Year",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "giller_prize",
+      "name": "Giller Prize",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "folio_writers_prize_book_of_the_year",
+      "name": "Folio/Writers' Prize - Book of the Year",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "folio_writers_prize_fiction",
+      "name": "Folio/Writers' Prize - Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "folio_writers_prize_nonfiction",
+      "name": "Folio/Writers' Prize - Non-Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goldsmiths_prize",
+      "name": "Goldsmiths Prize",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "national_book_critics_circle_fiction",
+      "name": "National Book Critics Circle Award - Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "national_book_critics_circle_nonfiction",
+      "name": "National Book Critics Circle Award - Nonfiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "national_book_critics_circle_biography",
+      "name": "National Book Critics Circle Award - Biography",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "national_book_critics_circle_memoir_autobiography",
+      "name": "National Book Critics Circle Award - Memoir/Autobiography",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "national_book_critics_circle_poetry",
+      "name": "National Book Critics Circle Award - Poetry",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "national_book_critics_circle_criticism",
+      "name": "National Book Critics Circle Award - Criticism",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "national_book_critics_circle_john_leonard",
+      "name": "National Book Critics Circle Award - John Leonard Prize",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "national_book_critics_circle_gregg_barrios_translation",
+      "name": "National Book Critics Circle Award - Gregg Barrios Book in Translation Prize",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "dublin_literary_award",
+      "name": "Dublin Literary Award",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "center_for_fiction_first_novel_prize",
+      "name": "Center for Fiction First Novel Prize",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "walter_scott_prize",
+      "name": "Walter Scott Prize",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "james_tait_black_fiction",
+      "name": "James Tait Black Prize - Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "james_tait_black_biography",
+      "name": "James Tait Black Prize - Biography",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "miles_franklin_literary_award",
+      "name": "Miles Franklin Literary Award",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "nero_book_awards_fiction",
+      "name": "Nero Book Awards - Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "nero_book_awards_debut_fiction",
+      "name": "Nero Book Awards - Debut Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "nero_book_awards_nonfiction",
+      "name": "Nero Book Awards - Non-Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "nero_book_awards_childrens_fiction",
+      "name": "Nero Book Awards - Children's Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "nero_book_awards_gold_prize",
+      "name": "Nero Gold Prize / Book of the Year",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "stella_prize",
+      "name": "Stella Prize",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "prime_ministers_literary_awards_fiction",
+      "name": "Prime Minister's Literary Awards - Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "prime_ministers_literary_awards_nonfiction",
+      "name": "Prime Minister's Literary Awards - Non-fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "prime_ministers_literary_awards_australian_history",
+      "name": "Prime Minister's Literary Awards - Australian History",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "prime_ministers_literary_awards_young_adult_literature",
+      "name": "Prime Minister's Literary Awards - Young Adult Literature",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "prime_ministers_literary_awards_childrens_literature",
+      "name": "Prime Minister's Literary Awards - Children's Literature",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "victorian_premiers_literary_awards_fiction",
+      "name": "Victorian Premier's Literary Awards - Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "victorian_premiers_literary_awards_nonfiction",
+      "name": "Victorian Premier's Literary Awards - Non-fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "victorian_premiers_literary_awards_writing_for_young_adults",
+      "name": "Victorian Premier's Literary Awards - Writing for Young Adults",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "victorian_premiers_literary_awards_childrens_literature",
+      "name": "Victorian Premier's Literary Awards - Children's Literature",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "victorian_premiers_literary_awards_indigenous_writing",
+      "name": "Victorian Premier's Literary Awards - Indigenous Writing",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "nsw_premiers_literary_awards_christina_stead_fiction",
+      "name": "NSW Premier's Literary Awards - Christina Stead Prize for Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "nsw_premiers_literary_awards_douglas_stewart_nonfiction",
+      "name": "NSW Premier's Literary Awards - Douglas Stewart Prize for Non-Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "nsw_premiers_literary_awards_patricia_wrightson_childrens",
+      "name": "NSW Premier's Literary Awards - Patricia Wrightson Prize for Children's Literature",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "nsw_premiers_literary_awards_ethel_turner_young_people",
+      "name": "NSW Premier's Literary Awards - Ethel Turner Prize for Young People's Literature",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "nsw_premiers_literary_awards_indigenous_writers",
+      "name": "NSW Premier's Literary Awards - Indigenous Writers' Prize",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "nsw_premiers_literary_awards_glenda_adams_new_writing",
+      "name": "NSW Premier's Literary Awards - UTS Glenda Adams Award for New Writing",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "nsw_premiers_literary_awards_multicultural_nsw",
+      "name": "NSW Premier's Literary Awards - Multicultural NSW Award",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "nsw_premiers_literary_awards_book_of_the_year",
+      "name": "NSW Premier's Literary Awards - Book of the Year",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "nsw_premiers_literary_awards_peoples_choice",
+      "name": "NSW Premier's Literary Awards - People's Choice Award",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "queensland_literary_awards_state_significance",
+      "name": "Queensland Literary Awards - Work of State Significance",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "queensland_literary_awards_fiction",
+      "name": "Queensland Literary Awards - Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "queensland_literary_awards_nonfiction",
+      "name": "Queensland Literary Awards - Non-Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "queensland_literary_awards_childrens",
+      "name": "Queensland Literary Awards - Children's Book",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "queensland_literary_awards_young_adult",
+      "name": "Queensland Literary Awards - Young Adult Book",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "queensland_literary_awards_peoples_choice",
+      "name": "Queensland Literary Awards - People's Choice",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "western_australian_premiers_book_awards_book_of_the_year",
+      "name": "Western Australian Premier's Book Awards - Book of the Year",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "western_australian_premiers_book_awards_fiction",
+      "name": "Western Australian Premier's Book Awards - Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "western_australian_premiers_book_awards_nonfiction",
+      "name": "Western Australian Premier's Book Awards - Nonfiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "western_australian_premiers_book_awards_emerging_writer",
+      "name": "Western Australian Premier's Book Awards - Emerging Writer",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "western_australian_premiers_book_awards_childrens",
+      "name": "Western Australian Premier's Book Awards - Children's Book",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "western_australian_premiers_book_awards_young_adult",
+      "name": "Western Australian Premier's Book Awards - Young Adult Book",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "south_australian_literary_awards_premiers_award",
+      "name": "South Australian Literary Awards - Premier's Award",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "south_australian_literary_awards_fiction",
+      "name": "South Australian Literary Awards - Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "south_australian_literary_awards_nonfiction",
+      "name": "South Australian Literary Awards - Non-Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "south_australian_literary_awards_childrens",
+      "name": "South Australian Literary Awards - Children's Literature",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "south_australian_literary_awards_young_adult",
+      "name": "South Australian Literary Awards - Young Adult Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "act_book_of_the_year_award",
+      "name": "ACT Book of the Year Award",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "rwa_rita_awards",
+      "name": "RWA RITA Awards",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "rwa_vivian_awards",
+      "name": "RWA Vivian Awards",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "rna_romantic_novel_awards",
+      "name": "RNA Romantic Novel of the Year Awards",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "rna_joan_hessayon_award",
+      "name": "RNA Joan Hessayon Award for New Writers",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "ripped_bodice_awards",
+      "name": "Ripped Bodice Awards for Excellence in Romance Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "romantic_times_reviewers_choice_romance",
+      "name": "Romantic Times Reviewers' Choice Awards - Romance Categories",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "lambda_literary_awards_romance",
+      "name": "Lambda Literary Awards - Romance Categories",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "romance_writers_australia_ruby_awards",
+      "name": "Romance Writers of Australia RUBY Awards",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "australian_romance_readers_awards",
+      "name": "Australian Romance Readers Awards",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "holt_medallion",
+      "name": "HOLT Medallion",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "booksellers_best_award",
+      "name": "Booksellers' Best Award",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_fiction",
+      "name": "Goodreads Choice Awards - Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_historical_fiction",
+      "name": "Goodreads Choice Awards - Historical Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_mystery_thriller",
+      "name": "Goodreads Choice Awards - Mystery & Thriller",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_romance",
+      "name": "Goodreads Choice Awards - Romance",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_romantasy",
+      "name": "Goodreads Choice Awards - Romantasy",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_fantasy",
+      "name": "Goodreads Choice Awards - Fantasy",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_science_fiction",
+      "name": "Goodreads Choice Awards - Science Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_horror",
+      "name": "Goodreads Choice Awards - Horror",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_debut_novel",
+      "name": "Goodreads Choice Awards - Debut Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_audiobook",
+      "name": "Goodreads Choice Awards - Audiobook",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_young_adult_fiction",
+      "name": "Goodreads Choice Awards - Young Adult Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_young_adult_fantasy_science_fiction",
+      "name": "Goodreads Choice Awards - Young Adult Fantasy & Science Fiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_nonfiction",
+      "name": "Goodreads Choice Awards - Nonfiction",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_memoir",
+      "name": "Goodreads Choice Awards - Memoir",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_history_biography",
+      "name": "Goodreads Choice Awards - History & Biography",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_young_adult_series",
+      "name": "Goodreads Choice Awards - Young Adult Series (discontinued)",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_childrens_middle_grade",
+      "name": "Goodreads Choice Awards - Children's & Middle Grade (discontinued)",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_picture_book",
+      "name": "Goodreads Choice Awards - Picture Book (discontinued)",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_science_technology",
+      "name": "Goodreads Choice Awards - Science & Technology (discontinued)",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_business",
+      "name": "Goodreads Choice Awards - Business (discontinued)",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_food_cooking",
+      "name": "Goodreads Choice Awards - Food & Cooking (discontinued)",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_travel_outdoors",
+      "name": "Goodreads Choice Awards - Travel & Outdoors (discontinued)",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_graphic_novels_comics",
+      "name": "Goodreads Choice Awards - Graphic Novels & Comics (discontinued)",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_poetry",
+      "name": "Goodreads Choice Awards - Poetry (discontinued)",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_humor",
+      "name": "Goodreads Choice Awards - Humor (discontinued)",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_paranormal_fantasy",
+      "name": "Goodreads Choice Awards - Paranormal Fantasy (discontinued)",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_chick_lit",
+      "name": "Goodreads Choice Awards - Chick Lit (discontinued)",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_best_book",
+      "name": "Goodreads Choice Awards - Best Book (discontinued)",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "goodreads_choice_awards_best_of_the_best",
+      "name": "Goodreads Choice Awards - Best of the Best (discontinued)",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "william_c_morris_award",
+      "name": "William C. Morris YA Debut Award",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "yalsa_excellence_nonfiction_young_adults",
+      "name": "YALSA Award for Excellence in Nonfiction for Young Adults",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "michael_l_printz_award",
+      "name": "Michael L. Printz Award",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "carnegie_medal_for_writing",
+      "name": "Carnegie Medal for Writing",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "john_newbery_medal",
+      "name": "John Newbery Medal",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "cbca_book_of_the_year_older_readers",
+      "name": "CBCA Book of the Year - Older Readers",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "cbca_book_of_the_year_younger_readers",
+      "name": "CBCA Book of the Year - Younger Readers",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "cbca_book_of_the_year_middle_readers",
+      "name": "CBCA Book of the Year - Middle Readers",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "cbca_book_of_the_year_early_childhood",
+      "name": "CBCA Book of the Year - Early Childhood",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "cbca_book_of_the_year_picture_book",
+      "name": "CBCA Book of the Year - Picture Book",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "cbca_book_of_the_year_eve_pownall",
+      "name": "CBCA Book of the Year - Eve Pownall",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "cbca_book_of_the_year_new_illustrator",
+      "name": "CBCA Book of the Year - New Illustrator",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "writers_trust_atwood_gibson_fiction",
+      "name": "Writers' Trust - Atwood Gibson Fiction Prize",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "writers_trust_hilary_weston_nonfiction",
+      "name": "Writers' Trust - Hilary Weston Nonfiction Prize",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "writers_trust_balsillie_public_policy",
+      "name": "Writers' Trust - Balsillie Prize for Public Policy",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "writers_trust_shaughnessy_cohen_political_writing",
+      "name": "Writers' Trust - Shaughnessy Cohen Political Writing Prize",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "anthony_award_childrens_ya",
+      "name": "Anthony Award - Children's/YA",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "anthony_award_cozy_humorous_mystery",
+      "name": "Anthony Award - Cozy/Humorous Mystery",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "anthony_award_critical_nonfiction_work",
+      "name": "Anthony Award - Critical/Nonfiction Work",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "anthony_award_first_mystery",
+      "name": "Anthony Award - First Mystery",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "anthony_award_historical_mystery",
+      "name": "Anthony Award - Historical Mystery",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "anthony_award_mystery_novel",
+      "name": "Anthony Award - Mystery Novel",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "anthony_award_paperback_e_book_audiobook",
+      "name": "Anthony Award - Paperback/E-book/Audiobook",
+      "list_schema_version": 2
+    },
+    {
+      "source_id": "anthony_award_paranormal_mystery",
+      "name": "Anthony Award - Paranormal Mystery",
+      "list_schema_version": 2
+    }
+  ]
+}

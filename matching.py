@@ -39,6 +39,7 @@ AUTHOR_SUFFIX_WORDS = frozenset(['jr', 'sr', 'ii', 'iii', 'iv', 'v'])
 ALT_TITLE_JOIN_RE = re.compile(r'\s+(and|or|aka|also known as)\s+.*$', re.I)
 PARENTHETICAL_RE = re.compile(r'[\(\[\{].*?[\)\]\}]')
 SUBTITLE_RE = re.compile(r'\s*[:;]\s+.*$')
+ENTRY_AUTHOR_KEY_SEPARATOR = '\x1f'
 
 
 def normalize_key(name):
@@ -71,6 +72,52 @@ def normalize_match_text(value):
     value = str(value)
   value = clean_name(value).casefold()
   return re.sub(r'[^a-z0-9]+', ' ', value).strip()
+
+
+def imported_author_list(entry):
+  if not isinstance(entry, dict):
+    return []
+  authors = entry.get('authors', [])
+  if authors is None:
+    authors = []
+  elif isinstance(authors, str):
+    authors = [authors] if authors.strip() else []
+  elif isinstance(authors, (list, tuple, set)):
+    authors = list(authors)
+  else:
+    authors = [authors]
+  cleaned = []
+  for author in authors:
+    text = str(author or '').strip()
+    if text and text not in cleaned:
+      cleaned.append(text)
+  return cleaned
+
+
+def imported_author_search_text(entry):
+  return ' '.join(imported_author_list(entry))
+
+
+def imported_author_display_value(entry):
+  if not isinstance(entry, dict):
+    return ''
+  return imported_author_list(entry)
+
+
+def imported_author_key(entry):
+  return ENTRY_AUTHOR_KEY_SEPARATOR.join(
+    normalize_match_text(author)
+    for author in imported_author_list(entry)
+  )
+
+
+def imported_entry_source_url(entry):
+  if not isinstance(entry, dict):
+    return ''
+  source = entry.get('source')
+  if isinstance(source, dict):
+    return str(source.get('url') or '')
+  return ''
 
 
 def strip_accents(value):
@@ -241,12 +288,12 @@ def match_keys(value):
 def entry_key_for_saved_match(entry):
   return '|'.join([
     normalize_match_text(entry.get('title', '')),
-    normalize_match_text(entry.get('author', '')),
+    imported_author_key(entry),
   ])
 
 
 def import_entry_priority(entry):
-  if entry.get('source_url') and not (entry.get('votes') or entry.get('percent')):
+  if imported_entry_source_url(entry) and not (entry.get('votes') or entry.get('percent')):
     return 2
   return 1
 
@@ -348,9 +395,10 @@ class MatchingMixin:
       series_candidates.extend(by_series.get(entry_key, []))
     candidates = title_candidates + (series_candidates if match_series else [])
     candidates = list(OrderedDict((book_id, None) for book_id in candidates).keys())
+    imported_author = imported_author_search_text(entry)
     return [
       book_id for book_id in candidates
-      if self.author_matches(authors.get(book_id, ''), entry.get('author', ''))
+      if self.author_matches(authors.get(book_id, ''), imported_author)
     ]
 
   def review_match_source_for_candidate(
@@ -402,8 +450,6 @@ class MatchingMixin:
     details = []
     for book_id in book_ids or []:
       book_authors = authors.get(book_id, '')
-      if isinstance(book_authors, (list, tuple)):
-        book_authors = ', '.join(str(author) for author in book_authors)
       details.append({
         'matched_book_id': book_id,
         'matched_title': titles.get(book_id, '') or '',
@@ -415,20 +461,22 @@ class MatchingMixin:
       self, entry, title_mode=FIND_MODE_SIMILAR, author_mode=FIND_MODE_SIMILAR,
       title_soundex_length=FIND_MATCH_TITLE_SOUNDEX_LENGTH_DEFAULT,
       author_soundex_length=FIND_MATCH_AUTHOR_SOUNDEX_LENGTH_DEFAULT,
-      excluded_book_ids=None):
+      excluded_book_ids=None, match_series=False):
     validate_find_match_modes(title_mode, author_mode)
     index = self.find_match_library_index(
       title_mode=title_mode,
       author_mode=author_mode,
       title_soundex_length=title_soundex_length,
-      author_soundex_length=author_soundex_length)
+      author_soundex_length=author_soundex_length,
+      match_series=match_series)
     return self.find_import_match_candidates_from_index(
       entry, index, excluded_book_ids=excluded_book_ids)
 
   def find_match_library_index(
       self, title_mode=FIND_MODE_SIMILAR, author_mode=FIND_MODE_SIMILAR,
       title_soundex_length=FIND_MATCH_TITLE_SOUNDEX_LENGTH_DEFAULT,
-      author_soundex_length=FIND_MATCH_AUTHOR_SOUNDEX_LENGTH_DEFAULT):
+      author_soundex_length=FIND_MATCH_AUTHOR_SOUNDEX_LENGTH_DEFAULT,
+      match_series=False):
     validate_find_match_modes(title_mode, author_mode)
     db = self.db.new_api
     ids = self.all_book_ids()
@@ -441,6 +489,8 @@ class MatchingMixin:
     by_title = {}
     by_author = {}
     by_title_author = {}
+    by_series_title = {}
+    by_series_title_author = {}
     for book_id in ids:
       title_key = title_find_key(titles.get(book_id, ''), title_mode, title_soundex_length)
       author_keys = author_find_keys(authors.get(book_id, ''), author_mode, author_soundex_length)
@@ -454,11 +504,19 @@ class MatchingMixin:
           and title_key):
         for author_key in author_keys:
           by_title_author.setdefault((title_key, author_key), []).append(book_id)
+      if match_series and title_mode != FIND_MODE_IGNORE:
+        for series_key in self.find_series_title_keys(
+            series.get(book_id, []), title_mode, title_soundex_length):
+          by_series_title.setdefault(series_key, []).append(book_id)
+          if author_mode != FIND_MODE_IGNORE:
+            for author_key in author_keys:
+              by_series_title_author.setdefault((series_key, author_key), []).append(book_id)
     return {
       'title_mode': title_mode,
       'author_mode': author_mode,
       'title_soundex_length': title_soundex_length,
       'author_soundex_length': author_soundex_length,
+      'match_series': bool(match_series),
       'ids': ids,
       'titles': titles,
       'authors': authors,
@@ -466,7 +524,25 @@ class MatchingMixin:
       'by_title': by_title,
       'by_author': by_author,
       'by_title_author': by_title_author,
+      'by_series_title': by_series_title,
+      'by_series_title_author': by_series_title_author,
     }
+
+  def find_series_title_keys(self, value, mode, soundex_length):
+    if isinstance(value, str):
+      values = [value] if value else []
+    else:
+      values = list(value or [])
+    keys = []
+    for series_value in values:
+      candidates = [series_value]
+      if mode != FIND_MODE_IDENTICAL:
+        candidates.extend(series_match_keys(series_value))
+      for candidate in candidates:
+        key = title_find_key(candidate, mode, soundex_length)
+        if key and key not in keys:
+          keys.append(key)
+    return keys
 
   def find_import_match_candidates_from_index(self, entry, index, excluded_book_ids=None):
     excluded_book_ids = set(excluded_book_ids or [])
@@ -480,9 +556,10 @@ class MatchingMixin:
     titles = index.get('titles') or {}
     authors = index.get('authors') or {}
     series = index.get('series') or {}
+    match_series = bool(index.get('match_series'))
     entry_title_key = title_find_key(entry.get('title', ''), title_mode, title_soundex_length)
     entry_author_keys = author_find_keys(
-      entry.get('author', ''), author_mode, author_soundex_length)
+      imported_author_list(entry), author_mode, author_soundex_length)
     if title_mode != FIND_MODE_IGNORE and not entry_title_key:
       return []
     if author_mode != FIND_MODE_IGNORE and not entry_author_keys:
@@ -493,21 +570,35 @@ class MatchingMixin:
       for entry_author_key in entry_author_keys:
         ids.extend(index.get('by_author', {}).get(entry_author_key, []))
     elif author_mode == FIND_MODE_IGNORE:
-      ids = index.get('by_title', {}).get(entry_title_key, [])
+      title_ids = index.get('by_title', {}).get(entry_title_key, [])
+      series_ids = (
+        index.get('by_series_title', {}).get(entry_title_key, [])
+        if match_series else [])
+      ids = title_ids + series_ids
     else:
-      ids = []
+      title_ids = []
+      series_ids = []
       for entry_author_key in entry_author_keys:
-        ids.extend(index.get('by_title_author', {}).get((entry_title_key, entry_author_key), []))
+        title_ids.extend(
+          index.get('by_title_author', {}).get((entry_title_key, entry_author_key), []))
+        if match_series:
+          series_ids.extend(
+            index.get('by_series_title_author', {}).get(
+              (entry_title_key, entry_author_key), []))
+      ids = title_ids + series_ids
+    title_id_set = set(index.get('by_title', {}).get(entry_title_key, []))
+    series_id_set = set(
+      index.get('by_series_title', {}).get(entry_title_key, [])
+    ) if match_series else set()
 
     candidates = []
     for book_id in ids:
       if book_id in excluded_book_ids:
         continue
-      title_matched = title_mode != FIND_MODE_IGNORE
+      title_matched = title_mode != FIND_MODE_IGNORE and book_id in title_id_set
+      series_matched = title_mode != FIND_MODE_IGNORE and book_id in series_id_set
       author_matched = author_mode != FIND_MODE_IGNORE
       book_authors = authors.get(book_id, '')
-      if isinstance(book_authors, (list, tuple)):
-        book_authors = ', '.join(str(author) for author in book_authors)
       book_series = series.get(book_id, [])
       if isinstance(book_series, str):
         book_series = [book_series] if book_series else []
@@ -521,16 +612,23 @@ class MatchingMixin:
         'series': list(book_series or []),
         'matched_series': list(book_series or []),
         'source': 'manual find',
-        'reason': self.find_match_reason(title_mode, author_mode, title_matched, author_matched),
+        'reason': self.find_match_reason(
+          title_mode, author_mode, title_matched, author_matched,
+          series_matched=series_matched),
         'title_matched': bool(title_matched and title_mode != FIND_MODE_IGNORE),
+        'series_matched': bool(series_matched and title_mode != FIND_MODE_IGNORE),
         'author_matched': bool(author_matched and author_mode != FIND_MODE_IGNORE),
       })
     return self.sorted_find_candidates(candidates)
 
-  def find_match_reason(self, title_mode, author_mode, title_matched, author_matched):
+  def find_match_reason(
+      self, title_mode, author_mode, title_matched, author_matched,
+      series_matched=False):
     parts = []
     if title_matched and title_mode != FIND_MODE_IGNORE:
       parts.append(f'title {title_mode}')
+    if series_matched and title_mode != FIND_MODE_IGNORE:
+      parts.append(f'series {title_mode}')
     if author_matched and author_mode != FIND_MODE_IGNORE:
       parts.append(f'author {author_mode}')
     return ', '.join(parts)
@@ -548,7 +646,10 @@ class MatchingMixin:
     return sorted(
       by_id.values(),
       key=lambda item: (
-        0 if item.get('title_matched') and item.get('author_matched') else 1,
+        0 if (
+          (item.get('title_matched') or item.get('series_matched'))
+          and item.get('author_matched')
+        ) else 1,
         normalize_match_text(item.get('title') or item.get('matched_title') or ''),
         item.get('book_id'),
       ))
@@ -563,7 +664,7 @@ class MatchingMixin:
     previous_match_source = ''
     ignored = False
     if directive:
-      ignored = bool(directive.get('ignored') or directive.get('unmatched'))
+      ignored = bool(directive.get('ignored'))
       previous_book_ids = list(directive.get('previous_matched_book_ids') or [])
       if not previous_book_ids and directive.get('previous_matched_book_id') is not None:
         previous_book_ids = [directive.get('previous_matched_book_id')]
@@ -574,7 +675,7 @@ class MatchingMixin:
       'entry_key': entry_key or entry_key_for_saved_match(entry),
       'imported_position': entry.get('position', ''),
       'imported_title': entry.get('title', ''),
-      'imported_author': entry.get('author', ''),
+      'imported_author': imported_author_display_value(entry),
       'matched': bool(matched),
       'original_matched': bool(matched),
       'ignored': ignored,
@@ -649,8 +750,9 @@ class MatchingMixin:
       saved_entry_key = entry_key_for_saved_match(entry)
       unmatched_override = unmatched_overrides.get(saved_entry_key)
       if unmatched_override:
+        override_source = 'ignored' if unmatched_override.get('ignored') else 'explicit unmatched'
         row.update(self.import_review_row(
-          entry, entry_key=saved_entry_key, match_source='ignored',
+          entry, entry_key=saved_entry_key, match_source=override_source,
           directive=unmatched_override))
         missing_entries.append(entry)
         self.update_import_match_progress(
@@ -665,9 +767,10 @@ class MatchingMixin:
         series_candidates.extend(by_series.get(entry_key, []))
       candidates = title_candidates + (series_candidates if match_series else [])
       candidates = list(OrderedDict((book_id, None) for book_id in candidates).keys())
+      imported_author = imported_author_search_text(entry)
       author_candidates = [
         book_id for book_id in candidates
-        if self.author_matches(authors.get(book_id, ''), entry.get('author', ''))
+        if self.author_matches(authors.get(book_id, ''), imported_author)
       ]
       already_matched = [book_id for book_id in candidates if book_id in matched]
       self.debug_import_match_entry_detail(
@@ -714,11 +817,11 @@ class MatchingMixin:
               matched[book_id] = entry.get('position', '')
               remember_match(book_id, 'automatic')
               matched_entries[book_id] = entry
+              entry_matched = True
               self.debug_import_matched_book('replaced duplicate match', book_id, entry, titles, series)
-            entry_matched = True
             self.debug_import_candidate_rejected('already matched', book_id, entry, titles, authors)
             continue
-          if self.author_matches(authors.get(book_id, ''), entry.get('author', '')):
+          if self.author_matches(authors.get(book_id, ''), imported_author):
             matched[book_id] = entry.get('position', '')
             matched_entries[book_id] = entry
             remember_match(book_id, 'automatic')
@@ -735,11 +838,11 @@ class MatchingMixin:
               matched[book_id] = entry.get('position', '')
               remember_match(book_id, 'automatic')
               matched_entries[book_id] = entry
+              entry_matched = True
               self.debug_import_matched_book('replaced duplicate match', book_id, entry, titles, series)
-            entry_matched = True
             self.debug_import_candidate_rejected('already matched', book_id, entry, titles, authors)
             continue
-          if self.author_matches(authors.get(book_id, ''), entry.get('author', '')):
+          if self.author_matches(authors.get(book_id, ''), imported_author):
             matched[book_id] = entry.get('position', '')
             matched_entries[book_id] = entry
             remember_match(book_id, 'automatic')
@@ -757,7 +860,7 @@ class MatchingMixin:
               remember_match(book_id, 'saved/manual override')
               matched_entries[book_id] = entry
               self.debug_import_matched_book('replaced duplicate saved override match', book_id, entry, titles, series)
-            entry_matched = True
+              entry_matched = True
             self.debug_import_candidate_rejected('saved override already matched', book_id, entry, titles, authors)
             continue
           matched[book_id] = entry.get('position', '')
@@ -784,8 +887,8 @@ class MatchingMixin:
               matched[book_id] = entry.get('position', '')
               remember_match(book_id, 'Goodreads/deep recovery')
               matched_entries[book_id] = entry
+              entry_matched = True
               self.debug_import_matched_book('replaced duplicate Goodreads match', book_id, entry, titles, series)
-            entry_matched = True
             continue
           matched[book_id] = entry.get('position', '')
           matched_entries[book_id] = entry
@@ -886,7 +989,7 @@ class MatchingMixin:
     for book_id in ids:
       if book_id in excluded_book_ids:
         continue
-      if not self.author_matches(authors.get(book_id, ''), entry.get('author', '')):
+      if not self.author_matches(authors.get(book_id, ''), imported_author_search_text(entry)):
         continue
       goodreads_id = self.goodreads_id_for_book(book_id)
       if not goodreads_id:
@@ -924,8 +1027,9 @@ class MatchingMixin:
 
   def goodreads_source_recovery_candidates(
       self, entry, titles, series, authors, by_title, by_series, match_series=True):
-    data = self.fetch_goodreads_source_data(entry.get('source_url', ''))
-    source_goodreads_id = goodreads_book_id_from_url(entry.get('source_url', ''))
+    entry_source_url = imported_entry_source_url(entry)
+    data = self.fetch_goodreads_source_data(entry_source_url)
+    source_goodreads_id = goodreads_book_id_from_url(entry_source_url)
     if source_goodreads_id:
       exact_ids = [
         book_id for book_id in titles
@@ -946,7 +1050,7 @@ class MatchingMixin:
         continue
       for title_key in match_keys(source_book.get('title', '')):
         for book_id in by_title.get(title_key, []):
-          source_author = source_book.get('author', '') or entry.get('author', '')
+          source_author = source_book.get('author', '') or imported_author_search_text(entry)
           if self.author_matches(authors.get(book_id, ''), source_author):
             candidates.append(book_id)
 

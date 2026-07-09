@@ -1,0 +1,536 @@
+{
+  "list_id": "philip_k_dick_award_novel",
+  "matches": [
+    {
+      "entry_key": "software|rudy rucker",
+      "imported_author": [
+        "Rudy Rucker"
+      ],
+      "imported_title": "Software",
+      "matched_at": "2026-07-08T16:24:54Z",
+      "matched_authors": [
+        "Rudy Rucker"
+      ],
+      "matched_book_id": 39760,
+      "matched_book_ids": [
+        39760
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Rudy Rucker"
+          ],
+          "matched_book_id": 39760,
+          "matched_title": "The Ware Tetralogy"
+        }
+      ],
+      "matched_title": "The Ware Tetralogy"
+    },
+    {
+      "entry_key": "roderick|john sladek",
+      "imported_author": [
+        "John Sladek"
+      ],
+      "imported_title": "Roderick",
+      "matched_at": "2026-07-08T16:24:54Z",
+      "matched_authors": [
+        "John Sladek"
+      ],
+      "matched_book_id": 39463,
+      "matched_book_ids": [
+        39463
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "John Sladek"
+          ],
+          "matched_book_id": 39463,
+          "matched_title": "The Complete Roderick"
+        }
+      ],
+      "matched_title": "The Complete Roderick"
+    },
+    {
+      "entry_key": "the floating gods|m john harrison",
+      "imported_author": [
+        "M. John Harrison"
+      ],
+      "imported_title": "The Floating Gods",
+      "matched_at": "2026-07-08T16:24:54Z",
+      "matched_authors": [
+        "M. John Harrison"
+      ],
+      "matched_book_id": 14244,
+      "matched_book_ids": [
+        14244
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "M. John Harrison"
+          ],
+          "matched_book_id": 14244,
+          "matched_title": "Viriconium"
+        }
+      ],
+      "matched_title": "Viriconium"
+    },
+    {
+      "entry_key": "voyager in night|c j cherryh",
+      "imported_author": [
+        "C. J. Cherryh"
+      ],
+      "imported_title": "Voyager in Night",
+      "matched_at": "2026-07-08T16:24:54Z",
+      "matched_authors": [
+        "C. J. Cherryh"
+      ],
+      "matched_book_id": 18127,
+      "matched_book_ids": [
+        18127
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "C. J. Cherryh"
+          ],
+          "matched_book_id": 18127,
+          "matched_title": "Alternate Realities"
+        }
+      ],
+      "matched_title": "Alternate Realities"
+    },
+    {
+      "entry_key": "strange toys|patricia geary",
+      "imported_author": [
+        "Patricia Geary"
+      ],
+      "imported_title": "Strange Toys",
+      "matched_at": "2026-07-08T16:24:54Z",
+      "matched_authors": [
+        "First Last"
+      ],
+      "matched_book_id": 39978,
+      "matched_book_ids": [
+        39978
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "First Last"
+          ],
+          "matched_book_id": 39978,
+          "matched_title": "Strange Toys"
+        }
+      ],
+      "matched_title": "Strange Toys"
+    },
+    {
+      "entry_key": "bone dance|emma bull",
+      "imported_author": [
+        "Emma Bull"
+      ],
+      "imported_title": "Bone Dance",
+      "matched_at": "2026-07-08T16:24:54Z",
+      "matched_authors": [
+        "Emma Bull"
+      ],
+      "matched_book_id": 38256,
+      "matched_book_ids": [
+        38256
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Emma Bull"
+          ],
+          "matched_book_id": 38256,
+          "matched_title": "Bone Dance: A Fantasy for Technophiles"
+        }
+      ],
+      "matched_title": "Bone Dance: A Fantasy for Technophiles"
+    },
+    {
+      "entry_key": "rim a novel of virtual reality|alexander besher",
+      "imported_author": [
+        "Alexander Besher"
+      ],
+      "imported_title": "RIM: A Novel of Virtual Reality",
+      "matched_at": "2026-07-08T16:24:54Z",
+      "matched_authors": [
+        "Alexander Besher"
+      ],
+      "matched_book_id": 39861,
+      "matched_book_ids": [
+        39861
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Alexander Besher"
+          ],
+          "matched_book_id": 39861,
+          "matched_title": "Rim"
+        }
+      ],
+      "matched_title": "Rim"
+    },
+    {
+      "entry_key": "carlucci s heart|richard paul russo",
+      "imported_author": [
+        "Richard Paul Russo"
+      ],
+      "imported_title": "Carlucci's Heart",
+      "matched_at": "2026-07-08T16:24:54Z",
+      "matched_authors": [
+        "Richard Paul Russo"
+      ],
+      "matched_book_id": 39997,
+      "matched_book_ids": [
+        39997
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Richard Paul Russo"
+          ],
+          "matched_book_id": 39997,
+          "matched_title": "Carlucci 3-In-1"
+        }
+      ],
+      "matched_title": "Carlucci 3-In-1"
+    },
+    {
+      "entry_key": "253 the print remix|geoff ryman",
+      "imported_author": [
+        "Geoff Ryman"
+      ],
+      "imported_title": "253: The Print Remix",
+      "matched_at": "2026-07-08T16:24:54Z",
+      "matched_authors": [
+        "Geoff Ryman"
+      ],
+      "matched_book_id": 39904,
+      "matched_book_ids": [
+        39904
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Geoff Ryman"
+          ],
+          "matched_book_id": 39904,
+          "matched_title": "253"
+        }
+      ],
+      "matched_title": "253"
+    },
+    {
+      "entry_key": "meet me in the moon room|ray vukcevich",
+      "imported_author": [
+        "Ray Vukcevich"
+      ],
+      "imported_title": "Meet Me in the Moon Room",
+      "matched_at": "2026-07-08T16:24:54Z",
+      "matched_authors": [
+        "Ray Vukcevich"
+      ],
+      "matched_book_id": 39985,
+      "matched_book_ids": [
+        39985
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Ray Vukcevich"
+          ],
+          "matched_book_id": 39985,
+          "matched_title": "Meet Me in the Moon Room: Stories"
+        }
+      ],
+      "matched_title": "Meet Me in the Moon Room: Stories"
+    },
+    {
+      "entry_key": "the samuel petrovich trilogy|simon morden",
+      "imported_author": [
+        "Simon Morden"
+      ],
+      "imported_title": "The Samuel Petrovich Trilogy",
+      "matched_at": "2026-07-08T16:24:54Z",
+      "matched_authors": [
+        "Simon Morden"
+      ],
+      "matched_book_id": 24651,
+      "matched_book_ids": [
+        24651
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Simon Morden"
+          ],
+          "matched_book_id": 24651,
+          "matched_title": "The Petrovitch Trilogy"
+        }
+      ],
+      "matched_title": "The Petrovitch Trilogy"
+    },
+    {
+      "entry_key": "after the apocalypse stories|maureen f mchugh",
+      "imported_author": [
+        "Maureen F. McHugh"
+      ],
+      "imported_title": "After the Apocalypse: Stories",
+      "matched_at": "2026-07-08T16:24:54Z",
+      "matched_authors": [
+        "Maureen F. McHugh"
+      ],
+      "matched_book_id": 39956,
+      "matched_book_ids": [
+        39956
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Maureen F. McHugh"
+          ],
+          "matched_book_id": 39956,
+          "matched_title": "After the Apocalypse"
+        }
+      ],
+      "matched_title": "After the Apocalypse"
+    },
+    {
+      "entry_key": "fountain of age|nancy kress",
+      "imported_author": [
+        "Nancy Kress"
+      ],
+      "imported_title": "Fountain of Age",
+      "matched_at": "2026-07-08T16:24:54Z",
+      "matched_authors": [
+        "Nancy Kress"
+      ],
+      "matched_book_id": 39971,
+      "matched_book_ids": [
+        39971
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Nancy Kress"
+          ],
+          "matched_book_id": 39971,
+          "matched_title": "Fountain of Age: Stories"
+        }
+      ],
+      "matched_title": "Fountain of Age: Stories"
+    },
+    {
+      "entry_key": "solaris rising 2|ian whates",
+      "imported_author": [
+        "Ian Whates"
+      ],
+      "imported_title": "Solaris Rising 2",
+      "matched_at": "2026-07-08T16:24:54Z",
+      "matched_authors": [
+        "Ian Whates",
+        "Paul Cornell",
+        "Nancy Kress",
+        "James Lovegrove",
+        "Adrian Tchaikovsky",
+        "Eugie Foster",
+        "Neil Williamson",
+        "Nick Harkaway",
+        "Kristine Kathryn Rusch",
+        "Robert Reed",
+        "Kim Lakin-Smith",
+        "Kay Kenyon",
+        "Mercurio D. Rivera",
+        "Martin Sketchley",
+        "Norman Spinrad",
+        "Liz Williams",
+        "Martin McGrath",
+        "Mike Allen",
+        "Vandana Singh",
+        "Allen M. Steele"
+      ],
+      "matched_book_id": 16141,
+      "matched_book_ids": [
+        16141
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Ian Whates",
+            "Paul Cornell",
+            "Nancy Kress",
+            "James Lovegrove",
+            "Adrian Tchaikovsky",
+            "Eugie Foster",
+            "Neil Williamson",
+            "Nick Harkaway",
+            "Kristine Kathryn Rusch",
+            "Robert Reed",
+            "Kim Lakin-Smith",
+            "Kay Kenyon",
+            "Mercurio D. Rivera",
+            "Martin Sketchley",
+            "Norman Spinrad",
+            "Liz Williams",
+            "Martin McGrath",
+            "Mike Allen",
+            "Vandana Singh",
+            "Allen M. Steele"
+          ],
+          "matched_book_id": 16141,
+          "matched_title": "Solaris Rising 2: The New Solaris Book of Science Fiction"
+        }
+      ],
+      "matched_title": "Solaris Rising 2: The New Solaris Book of Science Fiction"
+    },
+    {
+      "entry_key": "maplecroft the borden dispatches|cherie priest",
+      "imported_author": [
+        "Cherie Priest"
+      ],
+      "imported_title": "Maplecroft: The Borden Dispatches",
+      "matched_at": "2026-07-08T16:24:54Z",
+      "matched_authors": [
+        "Cherie Priest"
+      ],
+      "matched_book_id": 39885,
+      "matched_book_ids": [
+        39885
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Cherie Priest"
+          ],
+          "matched_book_id": 39885,
+          "matched_title": "Maplecroft"
+        }
+      ],
+      "matched_title": "Maplecroft"
+    },
+    {
+      "entry_key": "r evolution|pj manney",
+      "imported_author": [
+        "PJ Manney"
+      ],
+      "imported_title": "(R)evolution",
+      "matched_at": "2026-07-08T16:24:54Z",
+      "matched_authors": [
+        "Gary Numan"
+      ],
+      "matched_book_id": 39980,
+      "matched_book_ids": [
+        39980
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Gary Numan"
+          ],
+          "matched_book_id": 39980,
+          "matched_title": "(R)evolution: The Autobiography"
+        }
+      ],
+      "matched_title": "(R)evolution: The Autobiography"
+    },
+    {
+      "entry_key": "all worlds are real|susan palwick",
+      "imported_author": [
+        "Susan Palwick"
+      ],
+      "imported_title": "All Worlds Are Real",
+      "matched_at": "2026-07-08T16:24:54Z",
+      "matched_authors": [
+        "Susan Palwick"
+      ],
+      "matched_book_id": 40021,
+      "matched_book_ids": [
+        40021
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Susan Palwick"
+          ],
+          "matched_book_id": 40021,
+          "matched_title": "All Worlds Are Real: Short Fictions"
+        }
+      ],
+      "matched_title": "All Worlds Are Real: Short Fictions"
+    },
+    {
+      "entry_key": "dance on saturday|elwin cotman",
+      "imported_author": [
+        "Elwin Cotman"
+      ],
+      "imported_title": "Dance on Saturday",
+      "matched_at": "2026-07-08T16:24:54Z",
+      "matched_authors": [
+        "Elwin Cotman"
+      ],
+      "matched_book_id": 39900,
+      "matched_book_ids": [
+        39900
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Elwin Cotman"
+          ],
+          "matched_book_id": 39900,
+          "matched_title": "Dance on Saturday: Stories"
+        }
+      ],
+      "matched_title": "Dance on Saturday: Stories"
+    },
+    {
+      "entry_key": "your utopia stories|bora chung",
+      "imported_author": [
+        "Bora Chung"
+      ],
+      "imported_title": "Your Utopia: Stories",
+      "matched_at": "2026-07-08T16:24:54Z",
+      "matched_authors": [
+        "Bora Chung",
+        "Anton Hur"
+      ],
+      "matched_book_id": 39871,
+      "matched_book_ids": [
+        39871
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Bora Chung",
+            "Anton Hur"
+          ],
+          "matched_book_id": 39871,
+          "matched_title": "Your Utopia"
+        }
+      ],
+      "matched_title": "Your Utopia"
+    },
+    {
+      "entry_key": "wetware|rudy rucker",
+      "ignored": true,
+      "imported_author": [
+        "Rudy Rucker"
+      ],
+      "imported_title": "Wetware",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-08T17:47:36Z"
+    }
+  ],
+  "saved_at": "2026-07-08T17:47:36Z",
+  "schema_version": 2
+}

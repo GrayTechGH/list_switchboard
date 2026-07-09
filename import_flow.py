@@ -31,9 +31,11 @@ except ImportError:
   from errors import ImportCancelledError, ListSwitchboardError
 
 try:
-  from calibre_plugins.list_switchboard.matching import normalize_key
+  from calibre_plugins.list_switchboard.matching import (
+    imported_author_search_text, normalize_key,
+  )
 except ImportError:
-  from matching import normalize_key
+  from matching import imported_author_search_text, normalize_key
 
 try:
   from calibre_plugins.list_switchboard.config import prefs
@@ -86,6 +88,11 @@ def constrain_import_progress_dialog(progress):
     progress.setFixedWidth(IMPORT_PROGRESS_DIALOG_WIDTH)
   except Exception:
     pass
+
+
+def parsed_list_source_url(parsed):
+  source = parsed.get('source') if isinstance(parsed.get('source'), dict) else {}
+  return str(source.get('url') or '')
 
 
 class ImportFlowMixin:
@@ -344,7 +351,21 @@ class ImportFlowMixin:
     progress = self.import_progress
     self.import_progress = None
     if progress is not None:
-      progress.close()
+      for method_name in ('close', 'reset', 'deleteLater'):
+        method = getattr(progress, method_name, None)
+        if method is None:
+          continue
+        try:
+          method()
+        except Exception as err:
+          debug_log = getattr(self, 'debug_log', None)
+          if debug_log is not None:
+            try:
+              debug_log(
+                f'progress dialog cleanup failed during {method_name}: {err}',
+                section='errors')
+            except Exception:
+              pass
     try:
       QApplication.processEvents()
     except Exception:
@@ -456,28 +477,13 @@ class ImportFlowMixin:
     match_series = self.effective_import_match_series(parsed, recipe, import_options)
     award_winners_only = bool((import_options or {}).get('award_winners_only', False))
     allow_goodreads_recovery = not parsed.get('from_cache')
-    try:
-      match_result = self.match_imported_entries(
-        entries,
-        match_series=match_series,
-        list_id=parsed.get('list_id'),
-        allow_goodreads_recovery=allow_goodreads_recovery,
-        award_winners_only=award_winners_only,
-        return_details=True)
-      if len(match_result) == 3:
-        matched, missing_entries, review_rows = match_result
-      else:
-        matched, missing_entries = match_result
-        review_rows = self.import_review_rows_from_legacy_match(entries, matched, missing_entries)
-    except TypeError as err:
-      if (
-          'match_series' not in str(err)
-          and 'allow_goodreads_recovery' not in str(err)
-          and 'award_winners_only' not in str(err)
-          and 'return_details' not in str(err)):
-        raise
-      matched, missing_entries = self.match_imported_entries(entries)
-      review_rows = self.import_review_rows_from_legacy_match(entries, matched, missing_entries)
+    matched, missing_entries, review_rows = self.match_imported_entries(
+      entries,
+      match_series=match_series,
+      list_id=parsed.get('list_id'),
+      allow_goodreads_recovery=allow_goodreads_recovery,
+      award_winners_only=award_winners_only,
+      return_details=True)
     self.debug_import_summary(matched, missing_entries, entries)
 
     self.update_import_progress(IMPORT_MATCH_PROGRESS_MAX, 'Preparing import review...')
@@ -488,12 +494,14 @@ class ImportFlowMixin:
       notes.extend(reconciliation_notes)
       parsed = dict(parsed)
       parsed['notes'] = notes
+    matched_entry_count = self.import_review_matched_entry_count(review_rows)
     matched, missing_entries, review_rows = self.accepted_import_review_rows(review_rows)
     self.close_import_progress()
     review = self.review_import_matches(
-      list_name, parsed.get('list_id'), len(matched), len(entries),
+      list_name, parsed.get('list_id'), matched_entry_count, len(entries),
       missing_entries, review_rows, notes=parsed.get('notes'),
-      match_series=match_series, allow_goodreads_recovery=allow_goodreads_recovery)
+      match_series=match_series, allow_goodreads_recovery=allow_goodreads_recovery,
+      list_source_url=parsed_list_source_url(parsed))
     if review is None:
       raise ImportCancelledError('Import cancelled. No Active List metadata was changed.')
     matched, missing_entries, review_rows = review
@@ -572,11 +580,13 @@ class ImportFlowMixin:
       list_name, review_rows, active_name=active)
     notes = list(parsed.get('notes') or [])
     notes.extend(reconciliation_notes)
+    matched_entry_count = self.import_review_matched_entry_count(review_rows)
     matched, missing_entries, review_rows = self.accepted_import_review_rows(review_rows)
     review = self.review_import_matches(
-      list_name, list_id, len(matched), len(entries), missing_entries,
+      list_name, list_id, matched_entry_count, len(entries), missing_entries,
       review_rows, notes=notes, match_series=match_series,
-      allow_goodreads_recovery=False)
+      allow_goodreads_recovery=False,
+      list_source_url=parsed_list_source_url(parsed))
     if review is None:
       return
     matched, _missing_entries, _review_rows = review
@@ -655,52 +665,6 @@ class ImportFlowMixin:
     except Exception:
       position_key = float('inf')
     return position_key, str(position), book_id
-
-  def import_review_rows_from_legacy_match(self, entries, matched, missing_entries):
-    matched_positions = {}
-    for book_id, position in (matched or {}).items():
-      matched_positions.setdefault(str(position or ''), []).append(book_id)
-    missing = set(id(entry) for entry in (missing_entries or []))
-    rows = []
-    consumed_book_ids = set()
-    for entry in entries:
-      position = str(entry.get('position', '') or '')
-      book_ids = matched_positions.get(position, []) if id(entry) not in missing else []
-      consumed_book_ids.update(book_ids)
-      rows.append({
-        'entry': entry,
-        'imported_position': position,
-        'imported_title': entry.get('title', ''),
-        'imported_author': entry.get('author', ''),
-        'matched': bool(book_ids),
-        'original_matched': bool(book_ids),
-        'book_ids': book_ids,
-        'original_book_ids': list(book_ids),
-        'matched_books': [],
-        'original_matched_books': [],
-        'match_source': 'automatic' if book_ids else 'never matched',
-        'original_match_source': 'automatic' if book_ids else 'never matched',
-        'can_toggle_on': bool(book_ids),
-      })
-    for book_id, position in (matched or {}).items():
-      if book_id in consumed_book_ids:
-        continue
-      rows.append({
-        'entry': {'position': position, 'title': '', 'author': ''},
-        'imported_position': position,
-        'imported_title': '',
-        'imported_author': '',
-        'matched': True,
-        'original_matched': True,
-        'book_ids': [book_id],
-        'original_book_ids': [book_id],
-        'matched_books': [],
-        'original_matched_books': [],
-        'match_source': 'automatic',
-        'original_match_source': 'automatic',
-        'can_toggle_on': True,
-      })
-    return rows
 
   def reconcile_review_rows_with_active_list(self, list_name, review_rows, active_name=None):
     rows = list(review_rows or [])
@@ -817,8 +781,9 @@ class ImportFlowMixin:
       if entry.get('title') and detail.get('matched_title'):
         if normalize_key(entry.get('title')) != normalize_key(detail.get('matched_title')):
           continue
-      if entry.get('author') and detail.get('matched_authors'):
-        if not self.author_matches(detail.get('matched_authors'), entry.get('author')):
+      imported_author = imported_author_search_text(entry)
+      if imported_author and detail.get('matched_authors'):
+        if not self.author_matches(detail.get('matched_authors'), imported_author):
           continue
       return row
     return rows[0]
@@ -877,7 +842,8 @@ class ImportFlowMixin:
 
   def review_import_matches(
       self, list_name, list_id, matched_count, entries_count, missing_entries,
-      review_rows, notes=None, match_series=True, allow_goodreads_recovery=True):
+      review_rows, notes=None, match_series=True, allow_goodreads_recovery=True,
+      list_source_url=''):
     self.debug_import_missing_entries(missing_entries)
     try:
       gui = self.gui
@@ -889,9 +855,13 @@ class ImportFlowMixin:
         allow_deep_recovery=False, notes=notes, review_rows=review_rows,
         find_match_settings=self.find_match_settings(),
         save_find_match_settings=self.save_find_match_settings,
-        find_match_index_callback=self.find_match_library_index,
-        find_match_callback=self.find_matches_for_review_rows,
+        find_match_index_callback=lambda **kwargs: self.find_match_library_index(
+          match_series=match_series, **kwargs),
+        find_match_callback=lambda review_rows, settings, index=None: self.find_matches_for_review_rows(
+          review_rows, settings, index=index, match_series=match_series),
         view_book_callback=self.open_book_detail_window,
+        author_display_formatter=self.display_authors,
+        list_source_url=list_source_url,
         selected_match_source_callback=lambda row, candidate: self.review_match_source_for_candidate(
           row.get('entry') or {}, candidate.get('book_id', candidate.get('matched_book_id')),
           list_id=list_id, match_series=match_series,
@@ -900,7 +870,9 @@ class ImportFlowMixin:
       if (
           'find_match_settings' not in str(err)
           and 'find_match_index_callback' not in str(err)
-          and 'view_book_callback' not in str(err)):
+          and 'view_book_callback' not in str(err)
+          and 'author_display_formatter' not in str(err)
+          and 'list_source_url' not in str(err)):
         raise
       d = ImportReportDialog(
         gui, list_name, matched_count, entries_count, missing_entries,
@@ -1026,7 +998,7 @@ class ImportFlowMixin:
         except Exception:
           pass
 
-  def find_matches_for_review_rows(self, review_rows, settings, index=None):
+  def find_matches_for_review_rows(self, review_rows, settings, index=None, match_series=False):
     matched_book_ids = set()
     for row in review_rows or []:
       if row.get('matched'):
@@ -1036,7 +1008,8 @@ class ImportFlowMixin:
         title_mode=settings.get('title_mode', 'similar'),
         author_mode=settings.get('author_mode', 'similar'),
         title_soundex_length=settings.get('title_soundex_length', 6),
-        author_soundex_length=settings.get('author_soundex_length', 8))
+        author_soundex_length=settings.get('author_soundex_length', 8),
+        match_series=match_series)
     for row in review_rows or []:
       if row.get('matched'):
         continue
@@ -1044,7 +1017,7 @@ class ImportFlowMixin:
       row['possible_matches'] = self.find_import_match_candidates_from_index(
         row.get('entry') or {
           'title': row.get('imported_title', ''),
-          'author': row.get('imported_author', ''),
+          'authors': row.get('imported_author', []),
         },
         index,
         excluded_book_ids=excluded)
@@ -1061,14 +1034,19 @@ class ImportFlowMixin:
         missing_entries.append(row.get('entry') or {})
     return matched, missing_entries, review_rows
 
+  def import_review_matched_entry_count(self, review_rows):
+    return sum(1 for row in (review_rows or []) if row.get('matched'))
+
   def show_import_report(
       self, list_name, matched_count, entries_count, missing_entries,
       allow_deep_recovery=True, matched_book_ids=None, notes=None,
-      match_series=True):
+      match_series=True, list_source_url=''):
     self.debug_import_missing_entries(missing_entries)
     d = ImportReportDialog(
       self.gui, list_name, matched_count, entries_count, missing_entries,
-      allow_deep_recovery=allow_deep_recovery, notes=notes)
+      allow_deep_recovery=allow_deep_recovery, notes=notes,
+      author_display_formatter=self.display_authors,
+      list_source_url=list_source_url)
     if d.exec() == QDialog.Accepted and d.deep_recovery_requested:
       self.close_import_progress()
       self.run_deep_recovery(

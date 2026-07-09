@@ -8,7 +8,7 @@ class UrlFetcherBarnesNobleBookClub(UrlFetcherGeneric):
 
   source_id = 'barnes_noble_book_club'
   NAME = 'Barnes & Noble Book Club'
-  URL = 'https://www.barnesandnoble.com/blog/'
+  URL = 'https://www.booknotification.com/book-clubs/barnes-noble-book-club/'
   order = 47
   FILTER_CATEGORIES = (CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS,)
   options = {'match_series': False}

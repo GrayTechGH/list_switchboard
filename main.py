@@ -70,9 +70,11 @@ try:
     FIND_MODE_SIMILAR, FIND_MODE_SOUNDEX, MatchingMixin, author_find_key,
     clean_name, find_fuzzy_author_key, find_fuzzy_title_key,
     find_identical_author_key, find_identical_title_key,
-    find_similar_author_key, find_similar_title_key, match_keys, normalize_key,
-    normalize_match_text, series_match_keys, split_position_suffix,
-    title_find_key, title_sort_without_article, validate_find_match_modes,
+    find_similar_author_key, find_similar_title_key, imported_author_display_value,
+    imported_author_key, imported_author_list, imported_author_search_text,
+    imported_entry_source_url, match_keys, normalize_key, normalize_match_text,
+    series_match_keys, split_position_suffix, title_find_key,
+    title_sort_without_article, validate_find_match_modes,
   )
 except ImportError:
   from matching import (
@@ -82,9 +84,11 @@ except ImportError:
     FIND_MODE_SIMILAR, FIND_MODE_SOUNDEX, MatchingMixin, author_find_key,
     clean_name, find_fuzzy_author_key, find_fuzzy_title_key,
     find_identical_author_key, find_identical_title_key,
-    find_similar_author_key, find_similar_title_key, match_keys, normalize_key,
-    normalize_match_text, series_match_keys, split_position_suffix,
-    title_find_key, title_sort_without_article, validate_find_match_modes,
+    find_similar_author_key, find_similar_title_key, imported_author_display_value,
+    imported_author_key, imported_author_list, imported_author_search_text,
+    imported_entry_source_url, match_keys, normalize_key, normalize_match_text,
+    series_match_keys, split_position_suffix, title_find_key,
+    title_sort_without_article, validate_find_match_modes,
   )
 
 try:
@@ -303,6 +307,18 @@ class ListSwitchboardCore(
   def display_authors(self, authors):
     if authors is None:
       return ''
+    try:
+      from calibre.ebooks.metadata import authors_to_string, string_to_authors
+    except Exception:
+      authors_to_string = string_to_authors = None
+    if authors_to_string is not None:
+      try:
+        if isinstance(authors, (list, tuple)):
+          return authors_to_string([str(author) for author in authors])
+        text = str(authors or '')
+        return authors_to_string(string_to_authors(text)) if text else ''
+      except Exception:
+        pass
     if isinstance(authors, (list, tuple)):
       return ', '.join(str(author) for author in authors)
     return str(authors)

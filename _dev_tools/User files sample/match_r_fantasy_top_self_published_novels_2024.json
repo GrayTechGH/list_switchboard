@@ -1,0 +1,495 @@
+{
+  "list_id": "r_fantasy_top_self_published_novels_2024",
+  "matches": [
+    {
+      "entry_key": "mushroom blues|adrian m gibson",
+      "imported_author": [
+        "Adrian M. Gibson"
+      ],
+      "imported_title": "Mushroom Blues",
+      "matched_at": "2026-07-09T06:56:56Z",
+      "matched_authors": [
+        "Michael Michel"
+      ],
+      "matched_book_id": 23846,
+      "matched_book_ids": [
+        23846,
+        38212,
+        38213,
+        38214,
+        38208
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Nicholas Eames"
+          ],
+          "matched_book_id": 23846,
+          "matched_title": "Kings of the Wyld"
+        },
+        {
+          "matched_authors": [
+            "Zack Argyle"
+          ],
+          "matched_book_id": 38212,
+          "matched_title": "Stones of Light"
+        },
+        {
+          "matched_authors": [
+            "Zack Argyle"
+          ],
+          "matched_book_id": 38213,
+          "matched_title": "Bonds of Chaos"
+        },
+        {
+          "matched_authors": [
+            "Zack Argyle"
+          ],
+          "matched_book_id": 38214,
+          "matched_title": "Voice of War"
+        },
+        {
+          "matched_authors": [
+            "Michael Michel"
+          ],
+          "matched_book_id": 38208,
+          "matched_title": "A Graveyard for Heroes"
+        }
+      ],
+      "matched_title": "A Graveyard for Heroes"
+    },
+    {
+      "entry_key": "malitu series|james lloyd dulin",
+      "imported_author": [
+        "James Lloyd Dulin"
+      ],
+      "imported_title": "Malitu series",
+      "previous_match_source": "saved/manual override",
+      "previous_matched_book_id": 22859,
+      "previous_matched_book_ids": [
+        22859,
+        22861,
+        22866,
+        22949,
+        22951,
+        22952,
+        31598
+      ],
+      "previous_matched_books": [
+        {
+          "matched_authors": [
+            "Mercedes Lackey",
+            "James Mallory"
+          ],
+          "matched_book_id": 22859,
+          "matched_title": "The Phoenix Endangered"
+        },
+        {
+          "matched_authors": [
+            "Mercedes Lackey",
+            "James Mallory"
+          ],
+          "matched_book_id": 22861,
+          "matched_title": "The Obsidian Mountain Trilogy (Books 1-3)"
+        },
+        {
+          "matched_authors": [
+            "Mercedes Lackey",
+            "James Mallory"
+          ],
+          "matched_book_id": 22866,
+          "matched_title": "The Phoenix Unchained"
+        },
+        {
+          "matched_authors": [
+            "Mercedes Lackey",
+            "James Mallory"
+          ],
+          "matched_book_id": 22949,
+          "matched_title": "The Outstretched Shadow"
+        },
+        {
+          "matched_authors": [
+            "Mercedes Lackey",
+            "James Mallory"
+          ],
+          "matched_book_id": 22951,
+          "matched_title": "Crown of Vengeance"
+        },
+        {
+          "matched_authors": [
+            "Mercedes Lackey",
+            "James Mallory"
+          ],
+          "matched_book_id": 22952,
+          "matched_title": "Blade of Empire: Book Two of the Dragon Prophecy"
+        },
+        {
+          "matched_authors": [
+            "Mercedes Lackey",
+            "James Mallory"
+          ],
+          "matched_book_id": 31598,
+          "matched_title": "When Darkness Falls"
+        }
+      ],
+      "unmatched": true,
+      "unmatched_at": "2026-07-09T06:56:56Z"
+    },
+    {
+      "entry_key": "the bound and the broken series|ryan cahill",
+      "imported_author": [
+        "Ryan Cahill"
+      ],
+      "imported_title": "The Bound and the Broken Series",
+      "matched_at": "2026-07-09T01:29:44Z",
+      "matched_authors": [
+        "Ryan Cahill"
+      ],
+      "matched_book_id": 30447,
+      "matched_book_ids": [
+        30447,
+        30448,
+        30449,
+        30450,
+        30538
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Ryan Cahill"
+          ],
+          "matched_book_id": 30447,
+          "matched_title": "The Exile"
+        },
+        {
+          "matched_authors": [
+            "Ryan Cahill"
+          ],
+          "matched_book_id": 30448,
+          "matched_title": "Of Blood and Fire"
+        },
+        {
+          "matched_authors": [
+            "Ryan Cahill"
+          ],
+          "matched_book_id": 30449,
+          "matched_title": "Of War and Ruin"
+        },
+        {
+          "matched_authors": [
+            "Ryan Cahill"
+          ],
+          "matched_book_id": 30450,
+          "matched_title": "Of Darkness and Light"
+        },
+        {
+          "matched_authors": [
+            "Ryan Cahill"
+          ],
+          "matched_book_id": 30538,
+          "matched_title": "Of Empires and Dust"
+        }
+      ],
+      "matched_title": "Of Empires and Dust"
+    },
+    {
+      "entry_key": "the nine worlds|victoria goddard",
+      "imported_author": [
+        "Victoria Goddard"
+      ],
+      "imported_title": "The Nine Worlds",
+      "matched_at": "2026-07-09T01:49:39Z",
+      "matched_authors": [
+        "Victoria Goddard"
+      ],
+      "matched_book_id": 38137,
+      "matched_book_ids": [
+        38137,
+        38144,
+        38139,
+        38141,
+        38138,
+        38140,
+        38142,
+        38143
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Victoria Goddard"
+          ],
+          "matched_book_id": 38137,
+          "matched_title": "F\u00e9onie and the Islander Regalia"
+        },
+        {
+          "matched_authors": [
+            "Victoria Goddard"
+          ],
+          "matched_book_id": 38144,
+          "matched_title": "Traditional Culture Days at Uni"
+        },
+        {
+          "matched_authors": [
+            "Victoria Goddard"
+          ],
+          "matched_book_id": 38139,
+          "matched_title": "The Game of Courts"
+        },
+        {
+          "matched_authors": [
+            "Victoria Goddard"
+          ],
+          "matched_book_id": 38141,
+          "matched_title": "The Hands of the Emperor"
+        },
+        {
+          "matched_authors": [
+            "Victoria Goddard"
+          ],
+          "matched_book_id": 38138,
+          "matched_title": "At the Feet of the Sun"
+        },
+        {
+          "matched_authors": [
+            "Victoria Goddard"
+          ],
+          "matched_book_id": 38140,
+          "matched_title": "Portrait of a Wide Seas Islander"
+        },
+        {
+          "matched_authors": [
+            "Victoria Goddard"
+          ],
+          "matched_book_id": 38142,
+          "matched_title": "Those Who Hold the Fire"
+        },
+        {
+          "matched_authors": [
+            "Victoria Goddard"
+          ],
+          "matched_book_id": 38143,
+          "matched_title": "Petty Treasons"
+        }
+      ],
+      "matched_title": "Petty Treasons"
+    },
+    {
+      "entry_key": "tainted dominion series|krystle matar",
+      "imported_author": [
+        "Krystle Matar"
+      ],
+      "imported_title": "Tainted Dominion Series",
+      "matched_at": "2026-07-09T01:49:39Z",
+      "matched_authors": [
+        "Krystle Matar"
+      ],
+      "matched_book_id": 38204,
+      "matched_book_ids": [
+        38204,
+        38205
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Krystle Matar"
+          ],
+          "matched_book_id": 38204,
+          "matched_title": "Legacy of the Brightwash"
+        },
+        {
+          "matched_authors": [
+            "Krystle Matar"
+          ],
+          "matched_book_id": 38205,
+          "matched_title": "Legacy of Brick & Bone"
+        }
+      ],
+      "matched_title": "Legacy of Brick & Bone"
+    },
+    {
+      "entry_key": "songs of chaos series|michael r miller",
+      "imported_author": [
+        "Michael R. Miller"
+      ],
+      "imported_title": "Songs of Chaos Series",
+      "matched_at": "2026-07-09T04:16:17Z",
+      "matched_authors": [
+        "Michael R. Miller"
+      ],
+      "matched_book_id": 38199,
+      "matched_book_ids": [
+        38199,
+        38202,
+        38200,
+        38201,
+        38203
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Michael R. Miller"
+          ],
+          "matched_book_id": 38199,
+          "matched_title": "Unbound"
+        },
+        {
+          "matched_authors": [
+            "Michael R. Miller"
+          ],
+          "matched_book_id": 38202,
+          "matched_title": "Ascendant"
+        },
+        {
+          "matched_authors": [
+            "Michael R. Miller"
+          ],
+          "matched_book_id": 38200,
+          "matched_title": "Defiant"
+        },
+        {
+          "matched_authors": [
+            "Michael R. Miller"
+          ],
+          "matched_book_id": 38201,
+          "matched_title": "Last Stand of the Stone Fist"
+        },
+        {
+          "matched_authors": [
+            "Michael R. Miller"
+          ],
+          "matched_book_id": 38203,
+          "matched_title": "Reckoning"
+        }
+      ],
+      "matched_title": "Reckoning"
+    },
+    {
+      "entry_key": "threadlight series|zack argyle",
+      "imported_author": [
+        "Zack Argyle"
+      ],
+      "imported_title": "Threadlight Series",
+      "matched_at": "2026-07-09T01:49:39Z",
+      "matched_authors": [
+        "Zack Argyle"
+      ],
+      "matched_book_id": 38215,
+      "matched_book_ids": [
+        38215
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Zack Argyle"
+          ],
+          "matched_book_id": 38215,
+          "matched_title": "Threadlight: The Complete Trilogy Omnibus"
+        }
+      ],
+      "matched_title": "Threadlight: The Complete Trilogy Omnibus"
+    },
+    {
+      "entry_key": "mistland|kian n ardalan",
+      "imported_author": [
+        "Kian N. Ardalan"
+      ],
+      "imported_title": "Mistland",
+      "matched_at": "2026-07-09T02:29:08Z",
+      "matched_authors": [
+        "Kian N. Ardalan"
+      ],
+      "matched_book_id": 30459,
+      "matched_book_ids": [
+        30459
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Kian N. Ardalan"
+          ],
+          "matched_book_id": 30459,
+          "matched_title": "Eleventh Cycle"
+        }
+      ],
+      "matched_title": "Eleventh Cycle"
+    },
+    {
+      "entry_key": "the price of power|michael michel",
+      "imported_author": [
+        "Michael Michel"
+      ],
+      "imported_title": "The Price of Power",
+      "matched_at": "2026-07-09T05:03:46Z",
+      "matched_authors": [
+        "Michael Michel"
+      ],
+      "matched_book_id": 38208,
+      "matched_book_ids": [
+        38208
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Michael Michel"
+          ],
+          "matched_book_id": 38208,
+          "matched_title": "A Graveyard for Heroes"
+        }
+      ],
+      "matched_title": "A Graveyard for Heroes"
+    },
+    {
+      "entry_key": "iconoclasts|mike shel",
+      "imported_author": [
+        "Mike Shel"
+      ],
+      "imported_title": "Iconoclasts",
+      "matched_at": "2026-07-09T06:35:10Z",
+      "matched_authors": [
+        "Francine Rivers"
+      ],
+      "matched_book_id": 40217,
+      "matched_book_ids": [
+        40217
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Francine Rivers"
+          ],
+          "matched_book_id": 40217,
+          "matched_title": "The Last Sin Eater"
+        }
+      ],
+      "matched_title": "The Last Sin Eater"
+    },
+    {
+      "entry_key": "hybrid helix|j c m berne",
+      "imported_author": [
+        "J.C.M. Berne"
+      ],
+      "imported_title": "Hybrid Helix",
+      "matched_at": "2026-07-09T06:56:56Z",
+      "matched_authors": [
+        "Francine Rivers"
+      ],
+      "matched_book_id": 40217,
+      "matched_book_ids": [
+        40217
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Francine Rivers"
+          ],
+          "matched_book_id": 40217,
+          "matched_title": "The Last Sin Eater"
+        }
+      ],
+      "matched_title": "The Last Sin Eater"
+    }
+  ],
+  "saved_at": "2026-07-09T06:56:56Z",
+  "schema_version": 2
+}

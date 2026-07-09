@@ -34,14 +34,26 @@ except ImportError:
   from errors import ListSwitchboardError
 
 try:
-  from calibre_plugins.list_switchboard.matching import match_keys, normalize_match_text
+  from calibre_plugins.list_switchboard.matching import (
+    imported_author_display_value, imported_author_key,
+    imported_author_search_text, match_keys, normalize_match_text,
+    series_match_keys,
+  )
 except ImportError:
-  from matching import match_keys, normalize_match_text
+  from matching import (
+    imported_author_display_value, imported_author_key,
+    imported_author_search_text, match_keys, normalize_match_text,
+    series_match_keys,
+  )
 
 
-STORAGE_SCHEMA_VERSION = 1
+STORAGE_SCHEMA_VERSION = 2
 STORAGE_PARENT_FOLDER = 'plugins'
 STORAGE_FOLDER = 'list_switchboard'
+
+
+class SaveActiveMatchesCancelled(Exception):
+  pass
 
 
 def utc_now_text():
@@ -57,7 +69,7 @@ def safe_list_id(value):
 def entry_key(entry):
   return '|'.join([
     normalize_match_text(entry.get('title', '')),
-    normalize_match_text(entry.get('author', '')),
+    imported_author_key(entry),
   ])
 
 
@@ -81,6 +93,20 @@ def item_is_ignored_directive(item):
   return bool(item.get('ignored') or item.get('unmatched'))
 
 
+def matched_book_ids_for_match_item(item):
+  if not isinstance(item, dict):
+    return []
+  raw_book_ids = item.get('matched_book_ids')
+  if raw_book_ids is None:
+    raw_book_ids = [item.get('matched_book_id')]
+  if not isinstance(raw_book_ids, (list, tuple)):
+    raw_book_ids = [raw_book_ids]
+  book_ids = []
+  for raw_book_id in raw_book_ids:
+    append_unique_book_id(book_ids, raw_book_id)
+  return book_ids
+
+
 def append_unique_book_id(values, book_id):
   try:
     book_id = int(book_id)
@@ -102,46 +128,97 @@ def parsed_append_state(parsed):
   }
 
 
+def source_object(url='', name='', source_id=''):
+  return {
+    'url': str(url or ''),
+    'name': str(name or ''),
+    'source_id': str(source_id or ''),
+  }
+
+
+def parsed_source_object(list_id, parsed, recipe=None):
+  existing = parsed.get('source') if isinstance(parsed.get('source'), dict) else {}
+  source_id = (
+    existing.get('source_id')
+    or getattr(recipe, 'source_id', '')
+    or parsed.get('source_id', '')
+    or parsed.get('parser', '')
+    or list_id
+  )
+  return source_object(
+    existing.get('url') or getattr(recipe, 'URL', ''),
+    existing.get('name') or parsed.get('source_name') or getattr(recipe, 'SOURCE_NAME', '') or getattr(recipe, 'NAME', ''),
+    source_id)
+
+
+def cache_source_object(cache):
+  source = cache.get('source') if isinstance(cache.get('source'), dict) else {}
+  return source_object(
+    source.get('url', ''),
+    source.get('name', ''),
+    source.get('source_id', ''))
+
+
+def entry_source_object(entry, list_source):
+  source = entry.get('source') if isinstance(entry.get('source'), dict) else {}
+  url = source.get('url', '')
+  name = source.get('name', '')
+  source_id = source.get('source_id', '')
+  if not url and not name and not source_id:
+    return None
+  candidate = source_object(url, name, source_id)
+  if (
+      candidate.get('url') == list_source.get('url')
+      and candidate.get('name') in ('', list_source.get('name'))
+      and candidate.get('source_id') in ('', list_source.get('source_id'))):
+    return None
+  return candidate
+
+
+def normalize_cache_entry_for_write(entry, list_source):
+  legacy_keys = [key for key in ('author', 'source_url') if key in entry]
+  if legacy_keys:
+    raise ListSwitchboardError(
+      'Imported entries must use schema 2 fields; found legacy field(s): '
+      + ', '.join(legacy_keys))
+  normalized = {
+    'position': str(entry.get('position', '') or ''),
+    'title': str(entry.get('title', '') or ''),
+    'authors': [str(author or '').strip() for author in (entry.get('authors') or []) if str(author or '').strip()],
+  }
+  for key, value in entry.items():
+    if key in ('position', 'title', 'authors', 'source'):
+      continue
+    normalized[key] = value
+  source = entry_source_object(entry, list_source)
+  if source is not None:
+    normalized['source'] = source
+  return normalized
+
+
 def build_import_cache_data(list_id, parsed, recipe=None):
   list_id = safe_list_id(list_id)
-  entries = parsed.get('entries') or []
+  list_source = parsed_source_object(list_id, parsed, recipe=recipe)
+  entries = [
+    normalize_cache_entry_for_write(entry, list_source)
+    for entry in (parsed.get('entries') or [])
+  ]
   data = {
     'schema_version': STORAGE_SCHEMA_VERSION,
     'list_id': list_id,
     'list_name': parsed.get('name') or getattr(recipe, 'NAME', '') or list_id,
-    'source_url': parsed.get('source_url') or getattr(recipe, 'URL', ''),
+    'source': list_source,
     'fetched_at': utc_now_text(),
     'parser': safe_list_id(getattr(recipe, 'source_id', '') or parsed.get('parser', '') or list_id),
     'entries': entries,
     'notes': parsed.get('notes') or [],
     'match_series': parsed.get('match_series', True),
-    'append_state': parsed_append_state(parsed),
+    'append_state': parsed_append_state({'entries': entries, 'source_revision': parsed.get('source_revision')}),
   }
   incremental_state = parsed.get('incremental_state')
   if isinstance(incremental_state, dict):
     data['incremental_state'] = incremental_state
   return data
-
-
-def repaired_translator_credit_entry(entry):
-  """
-  Repair stale cached rows where a parser split `Title, Author, translated by X`
-  at the final comma and cached the translator as the author.
-  """
-  entry = dict(entry or {})
-  title = entry.get('title', '')
-  author = entry.get('author', '')
-  if not isinstance(title, str) or not isinstance(author, str):
-    return entry
-  if ',' not in title:
-    return entry
-  if not re.match(r'^(translated\s+by\s+.+|.+\s+translator)$', author.strip(), re.I):
-    return entry
-  repaired_title, repaired_author = [part.strip() for part in title.rsplit(',', 1)]
-  if repaired_title and repaired_author:
-    entry['title'] = repaired_title
-    entry['author'] = repaired_author
-  return entry
 
 
 class StorageMixin:
@@ -252,7 +329,9 @@ class StorageMixin:
     list_key = normalize_match_text(list_name)
     for path in self.import_cache_paths():
       data = self.read_json_file(path)
-      if not data or data.get('schema_version') != STORAGE_SCHEMA_VERSION:
+      if not data:
+        continue
+      if data.get('schema_version') != STORAGE_SCHEMA_VERSION:
         continue
       if normalize_match_text(data.get('list_name', '')) == list_key:
         if not isinstance(data.get('entries'), list):
@@ -279,13 +358,11 @@ class StorageMixin:
     return data
 
   def cached_import_to_parsed(self, cache):
+    source = cache_source_object(cache)
     return {
       'name': cache.get('list_name') or cache.get('list_id') or '',
-      'source_url': cache.get('source_url', ''),
-      'entries': [
-        repaired_translator_credit_entry(entry)
-        for entry in (cache.get('entries') or [])
-      ],
+      'source': source,
+      'entries': [dict(entry) for entry in (cache.get('entries') or [])],
       'notes': cache.get('notes') or [],
       'match_series': cache.get('match_series', True),
       'list_id': cache.get('list_id') or '',
@@ -378,7 +455,7 @@ class StorageMixin:
       item = {
         'entry_key': key,
         'imported_title': entry.get('title', ''),
-        'imported_author': entry.get('author', ''),
+        'imported_author': imported_author_display_value(entry),
         'matched_book_id': book_id,
         'matched_book_ids': [],
         'matched_title': matched_title,
@@ -396,7 +473,7 @@ class StorageMixin:
       item.pop('unmatched_at', None)
 
     item['imported_title'] = entry.get('title', item.get('imported_title', ''))
-    item['imported_author'] = entry.get('author', item.get('imported_author', ''))
+    item['imported_author'] = imported_author_display_value(entry) or item.get('imported_author', '')
     matched_book_ids = item.get('matched_book_ids')
     if not isinstance(matched_book_ids, list):
       matched_book_ids = []
@@ -465,18 +542,25 @@ class StorageMixin:
       self.write_match_cache(list_id, kept)
     return removed
 
-  def unmatched_match_item_for_review_row(self, row):
+  def unmatched_match_item_for_review_row(self, row, ignored=False):
     entry = row.get('entry') or {}
     key = row.get('entry_key') or entry_key(entry)
     if not key:
       return None
-    matched_book_ids = list(row.get('original_book_ids') or row.get('book_ids') or [])
-    matched_books = list(row.get('original_matched_books') or row.get('matched_books') or [])
-    return {
+    matched_book_ids = list(
+      row.get('original_book_ids')
+      or row.get('book_ids')
+      or row.get('previous_book_ids')
+      or [])
+    matched_books = list(
+      row.get('original_matched_books')
+      or row.get('matched_books')
+      or row.get('previous_matched_books')
+      or [])
+    item = {
       'entry_key': key,
       'imported_title': entry.get('title', row.get('imported_title', '')),
-      'imported_author': entry.get('author', row.get('imported_author', '')),
-      'ignored': True,
+      'imported_author': imported_author_display_value(entry) or row.get('imported_author', ''),
       'unmatched': True,
       'previous_matched_book_id': matched_book_ids[0] if matched_book_ids else None,
       'previous_matched_book_ids': matched_book_ids,
@@ -488,6 +572,9 @@ class StorageMixin:
       ),
       'unmatched_at': utc_now_text(),
     }
+    if ignored:
+      item['ignored'] = True
+    return item
 
   def apply_import_review_match_changes(self, list_id, rows):
     if not list_id:
@@ -517,17 +604,24 @@ class StorageMixin:
       current_source = row.get('match_source', '')
       existing_item = by_key.get(key)
       if ignored:
-        item = self.unmatched_match_item_for_review_row(row)
+        item = self.unmatched_match_item_for_review_row(row, ignored=True)
         if item is not None and existing_item != item:
           by_key[key] = item
           if not item_is_ignored_directive(existing_item):
             saved_unmatched += 1
           changed = True
       elif not matched:
-        if source == 'saved/manual override':
-          if key in by_key:
-            by_key.pop(key, None)
-            removed += 1
+        save_unmatched = bool(
+          original_matched
+          or row.get('original_book_ids')
+          or row.get('previous_book_ids')
+          or source == 'saved/manual override')
+        if save_unmatched:
+          item = self.unmatched_match_item_for_review_row(row)
+          if item is not None and existing_item != item:
+            by_key[key] = item
+            if not item_is_ignored_directive(existing_item):
+              saved_unmatched += 1
             changed = True
         elif original_ignored and key in by_key and item_is_ignored_directive(by_key[key]):
           by_key.pop(key, None)
@@ -556,7 +650,35 @@ class StorageMixin:
         by_position.setdefault(position, []).append(entry)
     return by_position
 
-  def saved_match_entry_for_book(self, book_id, position, entries, db):
+  def cached_entries_by_key(self, entries):
+    by_key = {}
+    for entry in entries or []:
+      key = entry_key(entry)
+      if key and key not in by_key:
+        by_key[key] = entry
+    return by_key
+
+  def saved_match_entries_by_active_book(self, existing_matches, entries_by_key, active_book_ids):
+    active_book_ids = set(active_book_ids or [])
+    entries_by_book = {}
+    used_entry_keys = set()
+    for item in existing_matches or []:
+      if not isinstance(item, dict) or item_is_ignored_directive(item):
+        continue
+      key = item.get('entry_key')
+      entry = entries_by_key.get(key)
+      if not key or entry is None:
+        continue
+      for book_id in matched_book_ids_for_match_item(item):
+        if book_id in active_book_ids:
+          entries_by_book.setdefault(book_id, [])
+          if entry not in entries_by_book[book_id]:
+            entries_by_book[book_id].append(entry)
+          used_entry_keys.add(key)
+    return entries_by_book, used_entry_keys
+
+  def saved_match_entry_for_book(
+      self, book_id, position, entries, db, match_series=True, book_series=None):
     if not entries:
       self.debug_storage_save_match_skipped(book_id, 'no cached entry at active position', position)
       return None
@@ -568,45 +690,71 @@ class StorageMixin:
     matches = [
       entry for entry in entries
       if entry_title_matches_book(entry, title)
-      and self.author_matches(authors, entry.get('author', ''))
+      and self.author_matches(authors, imported_author_search_text(entry))
     ]
     if len(matches) == 1:
       return matches[0]
-    candidates = matches or entries
-    return self.choose_saved_match_entry(book_id, position, candidates, db)
+    series_matches = []
+    if match_series:
+      series_matches = [
+        entry for entry in entries
+        if self.entry_matches_book_series(entry, book_series)
+        and self.author_matches(authors, imported_author_search_text(entry))
+      ]
+      if len(series_matches) == 1:
+        return series_matches[0]
+    author_matches = [
+      entry for entry in entries
+      if self.author_matches(authors, imported_author_search_text(entry))
+    ]
+    if len(author_matches) == 1:
+      return author_matches[0]
+    candidates = matches or series_matches or author_matches or entries
+    return self.choose_saved_match_entry(
+      book_id, position, candidates, db, book_series=book_series)
 
-  def saved_match_choice_label(self, entry):
-    title = entry.get('title', '') or 'Untitled'
-    author = entry.get('author', '') or 'Unknown author'
-    return f'{title} - {author}'
+  def entry_matches_book_series(self, entry, book_series):
+    entry_keys = set(match_keys(entry.get('title', '')))
+    if not entry_keys:
+      return False
+    if isinstance(book_series, str):
+      series_values = [book_series] if book_series else []
+    else:
+      series_values = list(book_series or [])
+    for series_value in series_values:
+      if entry_keys & set(series_match_keys(series_value)):
+        return True
+    return False
 
-  def choose_saved_match_entry(self, book_id, position, entries, db):
+  def choose_saved_match_entry(self, book_id, position, entries, db, book_series=None):
     chooser = getattr(self, '_saved_match_entry_chooser', None)
     if chooser is not None:
       return chooser(book_id, position, entries, db)
     try:
-      from calibre_plugins.list_switchboard.dialogs import ChoiceDialog
+      from calibre_plugins.list_switchboard.dialogs import SavedMatchChoiceDialog
     except ImportError:
-      from dialogs import ChoiceDialog
+      from dialogs import SavedMatchChoiceDialog
     title = db.field_for('title', book_id, default_value='') or ''
     authors = db.field_for('authors', book_id, default_value=[]) or []
     if not isinstance(authors, (list, tuple)):
       authors = [str(authors)]
-    choices = [self.saved_match_choice_label(entry) for entry in entries]
-    by_label = dict(zip(choices, entries))
-    d = ChoiceDialog(
+    d = SavedMatchChoiceDialog(
       self.gui,
-      'Save Active List Matches',
-      'Multiple imported entries have the same position.\n\n'
-      f'Calibre book:\n{title}\n{", ".join(authors)}\n\n'
-      f'Position {position}:',
-      choices,
-      'Save Selected Match')
+      title,
+      authors,
+      book_series,
+      position,
+      entries)
     accepted = QDialog.Accepted if QDialog is not None else 1
-    if d.exec() != accepted:
-      self.debug_storage_save_match_skipped(book_id, 'duplicate position disambiguation cancelled', position)
+    result = d.exec()
+    if result == accepted:
+      return d.selected_entry
+    if result == getattr(d, 'SKIPPED', 2):
+      self.debug_storage_save_match_skipped(book_id, 'duplicate position disambiguation skipped', position)
       return None
-    return by_label.get(d.choice)
+    else:
+      self.debug_storage_save_match_skipped(book_id, 'duplicate position disambiguation cancelled', position)
+      raise SaveActiveMatchesCancelled()
 
   def save_active_matches_for_recipe(self, recipe):
     if not self.ensure_configured():
@@ -620,7 +768,16 @@ class StorageMixin:
     list_name = cache.get('list_name') or recipe.NAME
     cached_entries = cache.get('entries') or []
     entries_by_position = self.cached_entries_by_position(cached_entries)
+    entries_by_key = self.cached_entries_by_key(cached_entries)
+    existing_matches = self.read_match_cache(list_id).get('matches', [])
+    unkeyed = []
     by_key = {}
+    for item in existing_matches:
+      key = item.get('entry_key') if isinstance(item, dict) else None
+      if key:
+        by_key[key] = item
+      else:
+        unkeyed.append(item)
     db = self.db.new_api
     all_ids = self.all_book_ids()
     titles = db.all_field_for('title', all_ids, default_value='')
@@ -630,9 +787,13 @@ class StorageMixin:
     active_index_field = self.active_series_index_field()
     saved = 0
     active_book_ids = self.active_book_ids_for_list(list_name)
+    existing_entries_by_book, used_entry_keys = self.saved_match_entries_by_active_book(
+      existing_matches, entries_by_key, active_book_ids)
     self.debug_storage_save_matches_start(
       list_id, list_name, len(active_book_ids), len(cached_entries), 0)
     active_positions = set()
+    active_positions_by_book = {}
+    active_book_ids_by_position = {}
     for book_id in active_book_ids:
       position, _numeric_position = self.read_position_display(
         active_index_field, book_id,
@@ -640,38 +801,134 @@ class StorageMixin:
       normalized_position = self.normalized_position_text(position)
       if normalized_position:
         active_positions.add(normalized_position)
+        active_positions_by_book[book_id] = normalized_position
+        active_book_ids_by_position.setdefault(normalized_position, set()).add(book_id)
+    saved_unmatched = 0
+    for key, item in list(by_key.items()):
+      if not isinstance(item, dict) or item_is_ignored_directive(item):
+        continue
+      entry = entries_by_key.get(key)
+      if entry is None:
+        continue
+      entry_position = self.normalized_position_text(entry.get('position', ''))
+      matched_book_ids = matched_book_ids_for_match_item(item)
+      if not matched_book_ids:
+        continue
+      if any(active_positions_by_book.get(book_id) == entry_position for book_id in matched_book_ids):
+        continue
+      by_key[key] = self.unmatched_match_item_for_review_row({
+        'entry': entry,
+        'entry_key': key,
+        'original_book_ids': matched_book_ids,
+        'original_matched_books': item.get('matched_books') or [],
+        'previous_match_source': 'saved/manual override',
+        'original_match_source': 'saved/manual override',
+      })
+      saved_unmatched += 1
+    existing_entry_keys_by_position = {}
+    for book_id, entries in existing_entries_by_book.items():
+      position = active_positions_by_book.get(book_id)
+      if not position:
+        continue
+      for entry in entries:
+        if self.normalized_position_text(entry.get('position', '')) == position:
+          existing_entry_keys_by_position.setdefault(position, set()).add(entry_key(entry))
+    direct_entry_keys_by_position = {}
+    for position, position_entries in entries_by_position.items():
+      if len(position_entries) < 2:
+        continue
+      active_ids_at_position = active_book_ids_by_position.get(position, set())
+      if not active_ids_at_position:
+        continue
+      for entry in position_entries:
+        direct_candidates = self.direct_match_candidates_for_entry(
+          entry, by_title=by_title, by_series=by_series, authors=authors,
+          match_series=cache.get('match_series', True))
+        if active_ids_at_position & set(direct_candidates):
+          direct_entry_keys_by_position.setdefault(position, set()).add(entry_key(entry))
     missing_position_entries = [
       entry for entry in cached_entries
       if self.normalized_position_text(entry.get('position', '')) not in active_positions
     ]
     self.debug_storage_save_matches_missing_positions(list_id, missing_position_entries)
-    for book_id in active_book_ids:
-      position, _numeric_position = self.read_position_display(
-        active_index_field, book_id,
-        self.read_field(self.active_list_field_key(), book_id))
-      position_entries = entries_by_position.get(self.normalized_position_text(position), [])
-      entry = self.saved_match_entry_for_book(book_id, position, position_entries, db)
-      if not entry:
-        continue
-      direct_candidates = self.direct_match_candidates_for_entry(
-        entry, by_title=by_title, by_series=by_series, authors=authors,
-        match_series=cache.get('match_series', True))
-      self.debug_storage_save_match_direct_candidates(
-        book_id, position, entry, direct_candidates)
-      if book_id in direct_candidates:
-        self.debug_storage_save_match_skipped(book_id, 'direct match recomputed automatically', position)
-        continue
-      key = entry_key(entry)
-      item = self.saved_match_item_for_book(by_key.get(key), entry, book_id, db)
-      if item is None:
-        continue
-      by_key[key] = item
-      self.debug_storage_save_match(book_id, key, position)
-      saved += 1
-    self.write_match_cache(list_id, list(by_key.values()))
+    prompted_tied_positions = set()
+    explicit_entry_keys = set()
+    try:
+      for book_id in active_book_ids:
+        position, _numeric_position = self.read_position_display(
+          active_index_field, book_id,
+          self.read_field(self.active_list_field_key(), book_id))
+        normalized_position = self.normalized_position_text(position)
+        position_entries = entries_by_position.get(normalized_position, [])
+        existing_entries = [
+          entry for entry in existing_entries_by_book.get(book_id, [])
+          if (
+            self.normalized_position_text(entry.get('position', ''))
+            == normalized_position
+          )
+        ]
+        if existing_entries:
+          continue
+        saved_entry_keys_at_position = existing_entry_keys_by_position.get(normalized_position, set())
+        direct_entry_keys_at_position = direct_entry_keys_by_position.get(normalized_position, set())
+        resolved_entry_keys_at_position = saved_entry_keys_at_position | direct_entry_keys_at_position
+        position_entry_keys = {entry_key(entry) for entry in position_entries}
+        if len(position_entries) > 1 and position_entry_keys <= resolved_entry_keys_at_position:
+          continue
+        if normalized_position in prompted_tied_positions:
+          continue
+        if len(position_entries) > 1 and saved_entry_keys_at_position:
+          prompted_tied_positions.add(normalized_position)
+          entry = self.choose_saved_match_entry(
+            book_id, position, position_entries, db,
+            book_series=series.get(book_id, []))
+          if not entry:
+            continue
+          explicit_entry_keys.add(entry_key(entry))
+          selected_entries = [entry]
+        else:
+          available_position_entries = [
+            candidate for candidate in position_entries
+            if entry_key(candidate) not in used_entry_keys
+          ]
+          candidate_entries = position_entries if len(position_entries) > 1 else available_position_entries
+          entry = self.saved_match_entry_for_book(
+            book_id, position, candidate_entries, db,
+            match_series=cache.get('match_series', True),
+            book_series=series.get(book_id, []))
+          selected_entries = [entry] if entry else []
+        if not selected_entries:
+          continue
+        for entry in selected_entries:
+          used_entry_keys.add(entry_key(entry))
+          direct_candidates = self.direct_match_candidates_for_entry(
+            entry, by_title=by_title, by_series=by_series, authors=authors,
+            match_series=cache.get('match_series', True))
+          self.debug_storage_save_match_direct_candidates(
+            book_id, position, entry, direct_candidates)
+          key = entry_key(entry)
+          if book_id in direct_candidates and key not in explicit_entry_keys:
+            self.debug_storage_save_match_skipped(book_id, 'direct match recomputed automatically', position)
+            continue
+          item = self.saved_match_item_for_book(by_key.get(key), entry, book_id, db)
+          if item is None:
+            continue
+          by_key[key] = item
+          self.debug_storage_save_match(book_id, key, position)
+          saved += 1
+    except SaveActiveMatchesCancelled:
+      self.status_message(f'Save Active List Matches cancelled for "{list_name}".')
+      return
+    self.write_match_cache(list_id, unkeyed + list(by_key.values()))
     self.debug_storage_save_matches_finished(list_id, saved, len(by_key))
-    if saved:
+    if saved and saved_unmatched:
+      self.status_message(
+        f'Saved {saved} manual match override(s) and {saved_unmatched} unmatched directive(s) '
+        f'for "{list_name}".')
+    elif saved:
       self.status_message(f'Saved {saved} manual match override(s) for "{list_name}".')
+    elif saved_unmatched:
+      self.status_message(f'Saved {saved_unmatched} unmatched directive(s) for "{list_name}".')
     else:
       self.status_message(
         f'No manual match overrides needed for "{list_name}". Direct matches will be recomputed.')
@@ -690,7 +947,7 @@ class StorageMixin:
 
     class CachedActiveRecipe:
       NAME = cache.get('list_name') or active
-      URL = cache.get('source_url', '')
+      URL = cache_source_object(cache).get('url', '')
       source_id = cache.get('list_id') or safe_list_id(active)
 
     self.save_active_matches_for_recipe(CachedActiveRecipe)

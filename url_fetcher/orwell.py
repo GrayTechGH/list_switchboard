@@ -6,6 +6,7 @@ from .generic import (
   CATEGORY_REGIONAL_NATIONAL_AWARDS,
   UrlFetcherError,
   UrlFetcherGeneric,
+  parsed_source,
 )
 
 try:
@@ -114,7 +115,7 @@ class UrlFetcherOrwellPrizePoliticalWriting(UrlFetcherGeneric):
     parsed = parser.parse(pages, base_url, self.NAME, self.CATEGORY)
     if not parsed.get('entries'):
       raise UrlFetcherError('Official Orwell produced no entries')
-    parsed.setdefault('source_url', base_url)
+    parsed.setdefault('source', parsed_source(self.NAME, base_url, self.source_id))
     parsed.setdefault('match_series', False)
     return parsed
 

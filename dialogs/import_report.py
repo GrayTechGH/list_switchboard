@@ -5,11 +5,12 @@ import csv
 from io import StringIO
 
 from qt.core import (
-  QApplication, QComboBox, QDialog, QDialogButtonBox, QHBoxLayout, QHeaderView,
-  QLabel, QPushButton, QSizePolicy, QTableWidget, QTableWidgetItem, QVBoxLayout
+  QApplication, QComboBox, QDialog, QDialogButtonBox, QGridLayout, QHBoxLayout,
+  QHeaderView, QLabel, QPushButton, QSizePolicy, QTableWidget,
+  QTableWidgetItem, QUrl, QVBoxLayout
 )
 
-from calibre.gui2 import error_dialog
+from calibre.gui2 import error_dialog, safe_open_url
 
 try:
   from calibre_plugins.list_switchboard.dialogs.import_find import (
@@ -18,10 +19,21 @@ try:
 except ImportError:
   from dialogs.import_find import FindModeDialog, MatchReviewDialog
 
+try:
+  from calibre_plugins.list_switchboard.matching import imported_author_display_value
+except ImportError:
+  from matching import imported_author_display_value
+
+try:
+  from calibre_plugins.list_switchboard.matching import imported_entry_source_url
+except ImportError:
+  from matching import imported_entry_source_url
+
 
 VIEW_ALL = 'All'
 VIEW_MATCHED = 'Matched'
 VIEW_UNMATCHED = 'Unmatched'
+VIEW_IGNORED = 'Ignored'
 AWARD_FILTER_ALL = 'All'
 AWARD_FILTER_WINNERS = 'Winners only'
 AWARD_FILTER_NOMINEES = 'Nominees only'
@@ -51,9 +63,12 @@ class ImportReportDialog(QDialog):
       missing_entries=None, allow_deep_recovery=False, notes=None,
       review_rows=None, find_match_settings=None, save_find_match_settings=None,
       find_match_index_callback=None, find_match_callback=None, view_book_callback=None,
-      selected_match_source_callback=None):
+      selected_match_source_callback=None, author_display_formatter=None,
+      list_source_url=''):
     QDialog.__init__(self, parent)
     self.list_name = list_name
+    self.author_display_formatter = author_display_formatter
+    self.list_source_url = str(list_source_url or '').strip()
     self.review_rows = [
       self.normalized_review_row(row) for row in (review_rows or [])
     ]
@@ -90,7 +105,7 @@ class ImportReportDialog(QDialog):
     view_layout = QHBoxLayout()
     view_layout.addWidget(QLabel('View:', self))
     self.view_combo = QComboBox(self)
-    self.view_combo.addItems([VIEW_ALL, VIEW_MATCHED, VIEW_UNMATCHED])
+    self.view_combo.addItems([VIEW_ALL, VIEW_MATCHED, VIEW_UNMATCHED, VIEW_IGNORED])
     self.view_combo.setCurrentText(VIEW_UNMATCHED)
     view_layout.addWidget(self.view_combo)
     view_layout.addSpacing(12)
@@ -104,6 +119,7 @@ class ImportReportDialog(QDialog):
     layout.addLayout(view_layout)
 
     self.toggle_button = QPushButton('Toggle match', self)
+    self.view_source_button = QPushButton('View source', self)
     self.find_button = QPushButton('Find match', self)
     self.match_mode_button = QPushButton('Match mode', self)
 
@@ -115,18 +131,17 @@ class ImportReportDialog(QDialog):
     self.configure_table_column_resizing()
     layout.addWidget(self.match_table)
 
-    action_layout = QHBoxLayout()
-    action_layout.addWidget(self.toggle_button)
-    action_layout.addSpacing(12)
-    action_layout.addWidget(self.find_button)
-    action_layout.addWidget(self.match_mode_button)
-    action_layout.addSpacing(12)
+    action_layout = QGridLayout()
+    action_layout.addWidget(self.toggle_button, 0, 0)
+    action_layout.addWidget(self.view_source_button, 1, 0)
+    action_layout.addWidget(self.find_button, 0, 1)
+    action_layout.addWidget(self.match_mode_button, 0, 2)
     self.copy_button = QPushButton('Copy view', self)
-    action_layout.addWidget(self.copy_button)
+    action_layout.addWidget(self.copy_button, 0, 3)
     if allow_deep_recovery and missing_entries:
       self.deep_recovery_button = QPushButton('Try Deep Recovery', self)
       self.deep_recovery_button.setEnabled(False)
-      action_layout.addWidget(self.deep_recovery_button)
+      action_layout.addWidget(self.deep_recovery_button, 0, 4)
     layout.addLayout(action_layout)
 
     buttons = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel, self)
@@ -137,7 +152,9 @@ class ImportReportDialog(QDialog):
     self.view_combo.currentTextChanged.connect(self.update_table)
     self.award_filter_combo.currentTextChanged.connect(self.update_table)
     self.match_table.currentCellChanged.connect(self.update_toggle_button)
+    self.match_table.itemSelectionChanged.connect(self.update_toggle_button)
     self.toggle_button.clicked.connect(self.toggle_selected_match)
+    self.view_source_button.clicked.connect(self.open_selected_source)
     self.find_button.clicked.connect(self.open_find_matches)
     self.match_mode_button.clicked.connect(self.open_match_mode)
     self.copy_button.clicked.connect(self.copy_current_view)
@@ -150,7 +167,7 @@ class ImportReportDialog(QDialog):
     row['entry'] = entry
     row.setdefault('imported_position', entry.get('position', ''))
     row.setdefault('imported_title', entry.get('title', ''))
-    row.setdefault('imported_author', entry.get('author', ''))
+    row.setdefault('imported_author', imported_author_display_value(entry))
     row.setdefault('matched', False)
     row.setdefault('original_matched', bool(row.get('matched')))
     row.setdefault('ignored', False)
@@ -211,8 +228,19 @@ class ImportReportDialog(QDialog):
     if mode == VIEW_MATCHED:
       return bool(row.get('matched'))
     if mode == VIEW_UNMATCHED:
-      return not row.get('matched')
+      return not row.get('matched') and not row.get('ignored')
+    if mode == VIEW_IGNORED:
+      return bool(row.get('ignored'))
     return True
+
+  def view_mode_for_row(self, row):
+    if row is None:
+      return VIEW_UNMATCHED
+    if row.get('ignored'):
+      return VIEW_IGNORED
+    if row.get('matched'):
+      return VIEW_MATCHED
+    return VIEW_UNMATCHED
 
   def row_award_result(self, row):
     entry = row.get('entry') or {}
@@ -306,17 +334,47 @@ class ImportReportDialog(QDialog):
       return metrics.boundingRect(text).width()
 
   def selected_review_row(self):
+    if not self.table_has_selection():
+      return None
     row = self.match_table.currentRow()
     if row < 0 or row >= len(self.visible_rows):
       return None
     return self.visible_rows[row]
 
+  def table_has_selection(self):
+    selection_model = getattr(self.match_table, 'selectionModel', None)
+    if not callable(selection_model):
+      return True
+    selection_model = selection_model()
+    has_selection = getattr(selection_model, 'hasSelection', None)
+    if not callable(has_selection):
+      return True
+    return bool(has_selection())
+
   def update_toggle_button(self, *_args):
     row = self.selected_review_row()
+    view_source_button = getattr(self, 'view_source_button', None)
     if row is None:
       self.toggle_button.setEnabled(False)
+      if view_source_button is not None:
+        view_source_button.setEnabled(bool(self.list_source_url))
       return
     self.toggle_button.setEnabled(True)
+    if view_source_button is not None:
+      view_source_button.setEnabled(bool(self.source_url_for_row(row)))
+
+  def source_url_for_row(self, row):
+    entry = (row or {}).get('entry') or {}
+    return (
+      str(imported_entry_source_url(entry) or '').strip()
+      or self.list_source_url
+    )
+
+  def open_selected_source(self):
+    url = self.source_url_for_row(self.selected_review_row())
+    if not url:
+      return
+    safe_open_url(QUrl(url))
 
   def toggle_selected_match(self):
     row = self.selected_review_row()
@@ -358,11 +416,23 @@ class ImportReportDialog(QDialog):
     values = []
     for book in row.get('matched_books') or []:
       value = book.get(field, '')
-      if isinstance(value, (list, tuple)):
+      if field in ('matched_authors', 'authors'):
+        value = self.display_authors(value)
+      elif isinstance(value, (list, tuple)):
         value = ', '.join(str(item) for item in value)
       if value:
         values.append(str(value))
     return '; '.join(values)
+
+  def display_authors(self, value):
+    if self.author_display_formatter is not None:
+      try:
+        return self.author_display_formatter(value)
+      except Exception:
+        pass
+    if isinstance(value, (list, tuple)):
+      return ', '.join(str(item) for item in value)
+    return str(value or '')
 
   def book_id_text_values(self, row):
     return [str(book_id) for book_id in (row.get('book_ids') or [])]
@@ -395,14 +465,14 @@ class ImportReportDialog(QDialog):
     elif not row.get('matched') and row.get('possible_matches'):
       match = f'Possible ({len(row.get("possible_matches") or [])})'
     source = str(row.get('match_source', '') or '')
-    if source == 'never matched':
+    if source in ('never matched', 'explicit unmatched'):
       source = 'None'
     elif source == 'ignored':
       source = 'Ignored'
     return [
       str(row.get('imported_position', '') or ''),
       str(row.get('imported_title', '') or ''),
-      str(row.get('imported_author', '') or ''),
+      self.display_authors(row.get('imported_author', '')),
       self.book_ids_full_text(row),
       match,
       source,
@@ -422,7 +492,7 @@ class ImportReportDialog(QDialog):
       return
     if target_row not in self.rows_for_current_view():
       try:
-        self.view_combo.setCurrentText(VIEW_UNMATCHED)
+        self.view_combo.setCurrentText(self.view_mode_for_row(target_row))
       except Exception:
         pass
       self.update_table_for_row(target_row)
@@ -563,7 +633,8 @@ class ImportReportDialog(QDialog):
       match_callback=match_selected,
       ignore_callback=ignore_current,
       previous_callback=lambda: move(-1),
-      next_callback=lambda: move(1))
+      next_callback=lambda: move(1),
+      author_display_formatter=self.author_display_formatter)
     dialog['value'].exec()
 
   def apply_ignore_match(self, row):

@@ -8,7 +8,7 @@ Maintenance notes:
 - This module is award-generic. Source-shape parsers such as SFADB, official
   history pages, and table/archive pages should still own their page traversal.
 - Helpers here preserve the shared award entry contract used by import recipes:
-  title, author, position, source_url, award_year, award, category, and result.
+  title, authors, position, source, award_year, award, category, and result.
 - Non-award sources such as book clubs and community lists should inherit from
   ListParserBase directly.
 """
@@ -16,9 +16,10 @@ Maintenance notes:
 import re
 
 try:
-  from calibre_plugins.list_switchboard.parser.base import ListParserBase
+  from calibre_plugins.list_switchboard.parser.base import (
+    entry_source_object, imported_entry, parsed_source, ListParserBase)
 except ImportError:
-  from .base import ListParserBase
+  from .base import entry_source_object, imported_entry, parsed_source, ListParserBase
 
 
 RESULT_WINNER = 'winner'
@@ -189,19 +190,25 @@ class AwardParserBase(ListParserBase):
   MATCH_SERIES = False
 
   def build_award_entry(self, row, source_url, year, category, award=None):
-    entry = dict(row)
-    entry.update({
-      'source_url': source_url,
+    metadata = dict(row)
+    title = metadata.pop('title', '')
+    authors = metadata.pop('authors', metadata.pop('author', ''))
+    position = metadata.pop('position', '')
+    metadata.pop('source_url', None)
+    metadata.update({
       'award_year': str(year),
       'award': award or self.AWARD_NAME,
       'category': category,
     })
-    return entry
+    return imported_entry(
+      position, title, authors,
+      source=entry_source_object(source_url),
+      **metadata)
 
   def parsed_result(self, name, url, entries, notes=None):
     return {
       'name': name,
-      'url': url,
+      'source': parsed_source(name, url),
       'entries': entries,
       'notes': notes or [],
       'match_series': self.MATCH_SERIES,

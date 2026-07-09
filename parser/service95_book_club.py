@@ -39,7 +39,7 @@ class Service95BookClubParser(BookClubParserBase):
         'selection_label': normalized,
         'selection_year': parse_year(normalized),
         'selection_month': parse_month(normalized),
-      }, normalized, base_url, scope, len(entries) + 1)
+      }, normalized, base_url, scope, len(entries) + 1, base_url=base_url)
       if entry is not None:
         entries.append(entry)
     return entries or super().entries_from_soup(soup, base_url, scope)

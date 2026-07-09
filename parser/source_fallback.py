@@ -12,6 +12,12 @@ Maintenance notes:
 """
 
 
+try:
+  from calibre_plugins.list_switchboard.parser.base import parsed_source
+except ImportError:
+  from parser.base import parsed_source
+
+
 class SourceAttempt:
   """
   One parseable source in a fallback chain.
@@ -137,8 +143,7 @@ class SourceFallbackRunner:
           html, fetch_url=fetch_url, log=log, progress=progress)
         if not attempt.is_usable(parsed):
           raise ValueError('parsed result did not contain usable entries')
-        parsed.setdefault('url', attempt.url)
-        parsed.setdefault('source_url', attempt.url)
+        parsed.setdefault('source', parsed_source(parsed.get('name', ''), attempt.url))
         parsed['notes'] = failures + list(parsed.get('notes', ()))
         return parsed
       except Exception as err:
