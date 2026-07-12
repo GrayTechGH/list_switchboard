@@ -5,9 +5,9 @@
 Import recipe orchestration and progress accounting.
 
 Maintenance notes:
-- Progress ranges are split for imports: matching/fetching uses 0..500 and
-  metadata writes use 500..1000. Operation-only writes use the full 0..1000
-  range.
+- Import progress is phase-aware. Web paths use fetch/parse, match/review, and
+  apply phases; direct saved-cache paths omit fetch/parse. Every phase uses the
+  full 0..1000 range. Operation-only writes also use the full range.
 - write_fields_with_progress() assumes update dictionaries contain real writes,
   not every book in the library. Inflated denominators make progress bars appear
   stuck.
@@ -48,7 +48,7 @@ except ImportError:
   from metadata import validate_list_name
 
 
-IMPORT_MATCH_PROGRESS_MAX = 500
+IMPORT_MATCH_PROGRESS_MAX = 1000
 IMPORT_WRITE_PROGRESS_MAX = 1000
 IMPORT_PROGRESS_MESSAGE_MAX = 220
 IMPORT_PROGRESS_TOKEN_MAX = 80
@@ -116,12 +116,6 @@ class ImportFlowMixin:
     That layer reports write counts; this module maps counts to UI ranges.
   """
 
-  def load_default_recipe(self):
-    recipes = self.available_import_recipes()
-    if not recipes:
-      raise ListSwitchboardError('No import recipes were found.')
-    return recipes[0]
-
   def available_import_recipes(self):
     try:
       fetchers = self.builtin_url_fetchers()
@@ -140,9 +134,6 @@ class ImportFlowMixin:
   def recipe_discovery_summary(self):
     return f'Could not load built-in URL fetchers from {URL_FETCHER_PACKAGE}.'
 
-  def import_default_recipe(self):
-    self.import_recipe(self.load_default_recipe())
-
   def choose_and_import_recipe(self):
     if not self.ensure_configured():
       return
@@ -157,13 +148,6 @@ class ImportFlowMixin:
     import_options = getattr(d, 'selected_options', {}) or {}
     if recipe is not None:
       self.import_recipe(recipe, import_options=import_options)
-
-  def import_recipe_by_name(self, recipe_name):
-    for recipe in self.available_import_recipes():
-      if recipe.NAME == recipe_name:
-        self.import_recipe(recipe)
-        return
-    error_dialog(self.gui, 'Import List', f'Could not find import recipe "{recipe_name}".', show=True)
 
   def save_active_matches_by_recipe_name(self, recipe_name):
     for recipe in self.available_import_recipes():
@@ -212,11 +196,10 @@ class ImportFlowMixin:
     if not self.ensure_configured():
       return
     import_options = dict(import_options or {})
-    progress = None
+    self.clear_import_progress_phase()
     try:
       self.debug_recipe_start(recipe)
-      progress = self.create_import_progress(recipe.NAME)
-      self.import_progress = progress
+      self.import_progress = self.create_import_progress(recipe.NAME)
       parsed = self.load_or_fetch_recipe(recipe, import_options=import_options)
       self.show_import_progress_start(parsed)
       self.log_recipe_output(parsed)
@@ -226,9 +209,8 @@ class ImportFlowMixin:
     except Exception as err:
       self.show_exception('Import List', err)
     finally:
-      self.import_progress = None
-      if progress is not None:
-        progress.close()
+      self.close_import_progress()
+      self.clear_import_progress_phase()
 
   def recipe_list_id(self, recipe):
     source_id = getattr(recipe, 'source_id', '') or recipe.NAME
@@ -251,10 +233,15 @@ class ImportFlowMixin:
     if cache_choice == 'cancel':
       raise ImportCancelledError('Import cancelled. No Active List metadata was changed.')
     if cache_choice == 'saved':
+      self.import_progress_total_phases = 2
       parsed = self.cached_import_to_parsed(cache)
       parsed['list_id'] = list_id
       self.update_import_progress(0, f'Using saved "{recipe.NAME}" list...')
       return parsed
+    self.import_progress_total_phases = 3
+    self.begin_import_progress_phase(
+      1, 3, 'Fetch, parse, and cache',
+      f'Fetching "{recipe.NAME}"...')
     can_incrementally_update = cache_choice == 'incremental'
     try:
       action = 'Updating saved pages for' if can_incrementally_update else 'Fetching'
@@ -263,11 +250,14 @@ class ImportFlowMixin:
         recipe,
         import_options=import_options,
         cache=cache if can_incrementally_update else None)
+    except ImportCancelledError:
+      raise
     except Exception:
       if cache and self.should_fallback_to_cached_import(recipe, cache):
         parsed = self.cached_import_to_parsed(cache)
         parsed['list_id'] = list_id
-        self.update_import_progress(0, f'Using saved "{recipe.NAME}" list...')
+        self.complete_import_progress_phase(
+          f'Using saved "{recipe.NAME}" list after the web import failed...')
         return parsed
       raise
     parsed['list_id'] = list_id
@@ -275,6 +265,8 @@ class ImportFlowMixin:
       self.merge_append_import_cache(list_id, cache, parsed, recipe=recipe)
     else:
       self.write_import_cache(list_id, parsed, recipe=recipe)
+    self.complete_import_progress_phase(
+      f'Finished fetching and caching "{recipe.NAME}"...')
     return parsed
 
   def choose_cached_import_action(self, recipe, cache):
@@ -298,7 +290,9 @@ class ImportFlowMixin:
       f'Use the saved list from {fetched_at} with {entries} entries instead?')
 
   def create_import_progress(self, list_name):
-    progress = QProgressDialog('Preparing import...', 'Cancel', 0, IMPORT_WRITE_PROGRESS_MAX, self.gui)
+    progress = QProgressDialog(
+      self.import_progress_label('Preparing import...'),
+      'Cancel', 0, IMPORT_WRITE_PROGRESS_MAX, self.gui)
     progress.setWindowTitle(f'Import List: {list_name}')
     progress.setMinimumDuration(0)
     progress.setAutoClose(False)
@@ -310,8 +304,14 @@ class ImportFlowMixin:
 
   def show_import_progress_start(self, parsed):
     entries = parsed.get('entries') or []
-    self.update_import_progress(
-      0,
+    total_phases = int(getattr(self, 'import_progress_total_phases', 0) or 0)
+    if total_phases not in (2, 3):
+      total_phases = 2 if parsed.get('from_cache') else 3
+      self.import_progress_total_phases = total_phases
+    self.begin_import_progress_phase(
+      total_phases - 1,
+      total_phases,
+      'Match and prepare review',
       f'Matching 0 of {len(entries)} recipe entries...')
     try:
       QApplication.processEvents()
@@ -319,6 +319,7 @@ class ImportFlowMixin:
       pass
 
   def create_operation_progress(self, title, message):
+    self.clear_import_progress_phase()
     progress = QProgressDialog(message, '', 0, IMPORT_WRITE_PROGRESS_MAX, self.gui)
     progress.setWindowTitle(title)
     progress.setMinimumDuration(0)
@@ -330,13 +331,48 @@ class ImportFlowMixin:
     QApplication.processEvents()
     return progress
 
+  def clear_import_progress_phase(self):
+    self.import_progress_phase_number = 0
+    self.import_progress_total_phases = 0
+    self.import_progress_phase_name = ''
+    self.import_progress_phase_value = 0
+
+  def import_progress_label(self, message):
+    detail = compact_import_progress_message(message)
+    phase_number = int(getattr(self, 'import_progress_phase_number', 0) or 0)
+    total_phases = int(getattr(self, 'import_progress_total_phases', 0) or 0)
+    phase_name = str(getattr(self, 'import_progress_phase_name', '') or '')
+    if not phase_number or not total_phases:
+      return detail
+    header = f'Phase {phase_number} of {total_phases}'
+    if phase_name:
+      header = f'{header} — {phase_name}'
+    return f'{header}\n{detail}' if detail else header
+
+  def begin_import_progress_phase(self, phase_number, total_phases, phase_name, message):
+    self.import_progress_phase_number = int(phase_number)
+    self.import_progress_total_phases = int(total_phases)
+    self.import_progress_phase_name = str(phase_name or '')
+    self.import_progress_phase_value = 0
+    self.update_import_progress(0, message)
+
+  def complete_import_progress_phase(self, message):
+    self.update_import_progress(IMPORT_WRITE_PROGRESS_MAX, message)
+
   def update_import_progress(self, value=None, message=None):
+    if value is not None:
+      value = min(max(int(value), 0), IMPORT_WRITE_PROGRESS_MAX)
+      if int(getattr(self, 'import_progress_phase_number', 0) or 0):
+        value = max(
+          int(getattr(self, 'import_progress_phase_value', 0) or 0),
+          value)
+        self.import_progress_phase_value = value
     progress = self.import_progress
     if progress is None:
       QApplication.processEvents()
       return
     if message is not None:
-      progress.setLabelText(compact_import_progress_message(message))
+      progress.setLabelText(self.import_progress_label(message))
       constrain_import_progress_dialog(progress)
     if value is not None:
       progress.setValue(value)
@@ -373,25 +409,24 @@ class ImportFlowMixin:
 
   def update_import_match_progress(self, done, total, message):
     total = max(total, 1)
-    value = int(round((float(done) / total) * IMPORT_MATCH_PROGRESS_MAX))
+    value = int(round((float(done) / total) * IMPORT_WRITE_PROGRESS_MAX))
     self.update_import_progress(value, message)
 
   def update_import_match_step_progress(self, entry_index, total, fraction, message):
     total = max(total, 1)
     fraction = min(max(float(fraction), 0.0), 1.0)
     done = (entry_index - 1) + fraction
-    value = int(round((done / total) * IMPORT_MATCH_PROGRESS_MAX))
+    value = int(round((done / total) * IMPORT_WRITE_PROGRESS_MAX))
     self.update_import_progress(value, message)
 
   def update_import_write_progress(self, done, total, message):
     total = max(total, 1)
-    span = IMPORT_WRITE_PROGRESS_MAX - IMPORT_MATCH_PROGRESS_MAX
-    value = IMPORT_MATCH_PROGRESS_MAX + int(round((float(done) / total) * span))
+    value = int(round((float(done) / total) * IMPORT_WRITE_PROGRESS_MAX))
     self.update_import_progress(value, message)
 
   def update_import_fetch_progress(self, done, total, message):
     total = max(total, 1)
-    value = int(round((float(done) / total) * IMPORT_MATCH_PROGRESS_MAX))
+    value = int(round((float(done) / total) * IMPORT_WRITE_PROGRESS_MAX))
     self.update_import_progress(value, message)
 
   def update_operation_write_progress(self, done, total, message):
@@ -402,6 +437,7 @@ class ImportFlowMixin:
   def write_fields_with_progress(
       self, title, initial_message, active_updates=None, stored_updates=None,
       assign_series_indexes=False, active_index_updates=None, finishing_message=None):
+    stored_updates = self.filter_unchanged_stored_updates(stored_updates)
     progress = self.create_operation_progress(title, initial_message)
     self.import_progress = progress
     total_write_units = len(active_updates or {}) + len(stored_updates or {})
@@ -452,6 +488,8 @@ class ImportFlowMixin:
       return recipe.fetch_and_parse(
         self.fetch_url,
         **fetch_kwargs)
+    except ImportCancelledError:
+      raise
     except Exception as err:
       raise ListSwitchboardError(str(err))
 
@@ -486,7 +524,6 @@ class ImportFlowMixin:
       return_details=True)
     self.debug_import_summary(matched, missing_entries, entries)
 
-    self.update_import_progress(IMPORT_MATCH_PROGRESS_MAX, 'Preparing import review...')
     review_rows, reconciliation_notes = self.reconcile_review_rows_with_active_list(
       list_name, review_rows, active_name=active)
     if reconciliation_notes:
@@ -496,6 +533,7 @@ class ImportFlowMixin:
       parsed['notes'] = notes
     matched_entry_count = self.import_review_matched_entry_count(review_rows)
     matched, missing_entries, review_rows = self.accepted_import_review_rows(review_rows)
+    self.complete_import_progress_phase('Prepared import review.')
     self.close_import_progress()
     review = self.review_import_matches(
       list_name, parsed.get('list_id'), matched_entry_count, len(entries),
@@ -508,6 +546,13 @@ class ImportFlowMixin:
     if not matched:
       raise ListSwitchboardError('No matched entries were selected for import.')
 
+    total_phases = int(getattr(self, 'import_progress_total_phases', 0) or 0)
+    if total_phases not in (2, 3):
+      total_phases = 2 if parsed.get('from_cache') else 3
+    self.import_progress_total_phases = total_phases
+    self.import_progress_phase_number = total_phases
+    self.import_progress_phase_name = 'Apply accepted metadata writes'
+    self.import_progress_phase_value = 0
     try:
       self.import_progress = self.create_import_progress(list_name)
     except AttributeError:
@@ -522,7 +567,7 @@ class ImportFlowMixin:
       self.update_import_progress(message=f'Storing previous Active List "{active}"...')
       active_updates, stored_updates = self.active_to_stored_updates(active)
 
-    self.update_import_progress(IMPORT_MATCH_PROGRESS_MAX, f'Writing "{list_name}" to matched books...')
+    self.update_import_progress(0, f'Writing "{list_name}" to matched books...')
     for book_id, position in matched.items():
       if self.active_list_value_matches(book_id, list_name, position):
         self.debug_import_matched_book_write_skipped(book_id, list_name, position)
@@ -545,7 +590,7 @@ class ImportFlowMixin:
       assign_series_indexes=True,
       active_index_updates=index_updates,
       progress_callback=import_write_progress)
-    self.update_import_progress(IMPORT_WRITE_PROGRESS_MAX, 'Preparing import report...')
+    self.complete_import_progress_phase('Preparing import report...')
     self.status_message(
       f'Imported "{list_name}" as Active List. Placed {len(matched)} books; '
       f'{len(missing_entries)} missing.')
@@ -728,6 +773,8 @@ class ImportFlowMixin:
       target_row = self.active_position_target_row(book_id, target_rows, book_details)
       if target_row.get('ignored'):
         continue
+      if self.review_row_excludes_active_book(target_row, book_id):
+        continue
       current_row = book_to_row.get(book_id)
       if current_row is target_row and book_id in (target_row.get('book_ids') or []):
         continue
@@ -749,6 +796,15 @@ class ImportFlowMixin:
 
   def review_row_match_is_automatic(self, row):
     return row.get('matched') and row.get('match_source') == 'automatic'
+
+  def review_row_excludes_active_book(self, row, book_id):
+    """Keep a saved explicit-unmatched directive attached to its prior book."""
+    return (
+      not row.get('matched')
+      and not row.get('ignored')
+      and row.get('match_source') == 'explicit unmatched'
+      and book_id in (row.get('previous_book_ids') or [])
+    )
 
   def active_review_positions_by_book(self, active_book_ids):
     positions = {}
@@ -1036,81 +1092,3 @@ class ImportFlowMixin:
 
   def import_review_matched_entry_count(self, review_rows):
     return sum(1 for row in (review_rows or []) if row.get('matched'))
-
-  def show_import_report(
-      self, list_name, matched_count, entries_count, missing_entries,
-      allow_deep_recovery=True, matched_book_ids=None, notes=None,
-      match_series=True, list_source_url=''):
-    self.debug_import_missing_entries(missing_entries)
-    d = ImportReportDialog(
-      self.gui, list_name, matched_count, entries_count, missing_entries,
-      allow_deep_recovery=allow_deep_recovery, notes=notes,
-      author_display_formatter=self.display_authors,
-      list_source_url=list_source_url)
-    if d.exec() == QDialog.Accepted and d.deep_recovery_requested:
-      self.close_import_progress()
-      self.run_deep_recovery(
-        list_name, matched_count, entries_count, missing_entries,
-        excluded_book_ids=matched_book_ids,
-        match_series=match_series)
-
-  def run_deep_recovery(
-      self, list_name, matched_count, entries_count, missing_entries,
-      excluded_book_ids=None, match_series=True):
-    if not missing_entries:
-      return
-    excluded_book_ids = set(excluded_book_ids or [])
-    progress = QProgressDialog(
-      'Preparing deep recovery...', 'Cancel', 0, IMPORT_WRITE_PROGRESS_MAX, self.gui)
-    progress.setWindowTitle('Deep Recovery')
-    progress.setMinimumDuration(0)
-    progress.setAutoClose(False)
-    progress.setAutoReset(False)
-    progress.setValue(0)
-    constrain_import_progress_dialog(progress)
-    self.import_progress = progress
-    QApplication.processEvents()
-    try:
-      matched, still_missing = self.match_deep_recovery_entries(
-        missing_entries, excluded_book_ids=excluded_book_ids,
-        match_series=match_series)
-      if matched:
-        progress.setCancelButton(None)
-        index_updates = {}
-        for book_id, position in matched.items():
-          try:
-            index_updates[book_id] = float(position)
-          except Exception:
-            pass
-        written = [0]
-
-        def write_progress(count, message):
-          written[0] += count
-          self.update_import_write_progress(written[0], len(matched), message)
-
-        self.write_fields(
-          active_updates={
-            book_id: list_name for book_id, position in matched.items()
-            if not self.active_list_value_matches(book_id, list_name, position)
-          },
-          assign_series_indexes=True,
-          active_index_updates=index_updates,
-          progress_callback=write_progress)
-      self.update_import_progress(IMPORT_WRITE_PROGRESS_MAX, 'Preparing deep recovery report...')
-      total_matched = matched_count + len(matched)
-      self.status_message(
-        f'Deep Recovery placed {len(matched)} more books in "{list_name}". '
-        f'{len(still_missing)} missing.')
-      self.close_import_progress()
-      self.show_import_report(
-        list_name, total_matched, entries_count, still_missing,
-        allow_deep_recovery=False,
-        matched_book_ids=excluded_book_ids | set(matched),
-        match_series=match_series)
-    except ImportCancelledError as err:
-      self.status_message(str(err))
-    except Exception as err:
-      self.show_exception('Deep Recovery', err)
-    finally:
-      self.import_progress = None
-      progress.close()

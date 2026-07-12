@@ -35,6 +35,7 @@ DEFAULT_JSON_URL = (
 class UrlFetcherGovernorGeneralAwards(UrlFetcherGeneric):
 
   URL = GOVERNOR_GENERAL_ARCHIVE_URL
+  MAX_RESPONSE_BYTES = 32 * 1024 * 1024
   FETCH_URLS = (GOVERNOR_GENERAL_ARCHIVE_URL,)
   order = 183
   options = {'match_series': False}

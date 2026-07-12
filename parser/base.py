@@ -43,8 +43,17 @@ def author_list(value):
   authors = []
   for author in values:
     text = str(author or '').strip()
-    if text and text not in authors:
-      authors.append(text)
+    if not text:
+      continue
+    # Match Calibre's author-string convention: a spaced single ampersand is
+    # an author separator, while a doubled ampersand is one literal character.
+    escaped_ampersand = '\x00'
+    text = text.replace('&&', escaped_ampersand)
+    parts = re.split(r'\s+&\s+', text)
+    for part in parts:
+      part = part.replace(escaped_ampersand, '&').strip()
+      if part and part not in authors:
+        authors.append(part)
   return authors
 
 

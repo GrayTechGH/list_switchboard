@@ -6,8 +6,9 @@ Field access, normalization, and metadata writes.
 
 Maintenance notes:
 - Stored Lists may be a comments field or a multiple-value text field. Keep
-  parse_stored_lists(), format_stored_lists(), and stored_write_updates()
-  aligned so reads and writes round-trip through Calibre correctly.
+  parse_stored_lists(), rebuild_stored_lists(), format_stored_lists(), and
+  stored_write_updates() aligned so reads and writes round-trip through
+  Calibre correctly.
 - Active List fields are expected to be Calibre series fields. Series index
   lookup is deliberately defensive because Calibre exposes custom series index
   columns differently across versions and field types.
@@ -45,12 +46,31 @@ def format_stored_lists(names):
   return ', '.join(sort_names(names))
 
 
+def rebuild_stored_lists(value, transform=None):
+  """Apply a Stored List edit, then return its canonical field value.
+
+  ``value`` may be the raw Calibre value or a parsed entry sequence.  The
+  optional transform receives nonempty entries before one shared
+  case-insensitive dedupe and formatting pass.
+  """
+  entries = [entry for entry in parse_stored_lists(value) if entry]
+  if transform is not None:
+    entries = transform(entries)
+  return format_stored_lists(unique_case_insensitive(
+    entry for entry in entries if entry))
+
+
 def sort_names(names):
   return sorted(names, key=lambda item: item.strip().casefold())
 
 
 def validate_list_name(name):
-  name = clean_name(name)
+  raw_name = '' if name is None else str(name).strip()
+  _base_name, position = split_position_suffix(raw_name)
+  if position is not None:
+    raise ListSwitchboardError(
+      'Reading list names cannot end in a numeric position such as "[1]" because that syntax is reserved.')
+  name = clean_name(raw_name)
   if not name:
     raise ListSwitchboardError('Reading list names cannot be empty.')
   if ',' in name:
@@ -179,6 +199,18 @@ class MetadataMixin:
       book_id: tuple(entry for entry in parse_stored_lists(value) if entry)
       for book_id, value in stored_updates.items()
     }
+
+  def canonical_stored_value(self, value):
+    return format_stored_lists(parse_stored_lists(value))
+
+  def filter_unchanged_stored_updates(self, stored_updates):
+    filtered = OrderedDict()
+    for book_id, value in (stored_updates or {}).items():
+      formatted = self.canonical_stored_value(value)
+      current = self.read_field(prefs['stored_lists_field'], book_id)
+      if current != formatted:
+        filtered[book_id] = formatted
+    return filtered
 
   def active_series_index_field(self):
     metadata = self.active_field_metadata()
@@ -393,31 +425,104 @@ class MetadataMixin:
         book_id: position for book_id, position in index_updates.items()
         if book_id in active_updates
       }
-    if active_updates:
-      if self.active_field_is_series():
-        self.write_active_series_values(active_updates, index_updates, progress_callback)
-      else:
+    stored_updates = self.filter_unchanged_stored_updates(stored_updates)
+    snapshots = self.field_write_snapshots(active_updates, stored_updates)
+    affected = set(active_updates or ()) | set(stored_updates or ())
+    try:
+      if active_updates:
+        if self.active_field_is_series():
+          self.write_active_series_values(active_updates, index_updates, progress_callback)
+        else:
+          try:
+            self.debug_writes_active_field(len(active_updates))
+            db.set_field(prefs['active_list_field'], active_updates)
+            if progress_callback is not None:
+              progress_callback(len(active_updates), 'Finished Active List metadata updates...')
+          except Exception as err:
+            raise ListSwitchboardError(
+              f'Could not write the Active List Field "{prefs["active_list_field"]}": {err}')
+        changed.update(active_updates)
+      if stored_updates:
         try:
-          self.debug_writes_active_field(len(active_updates))
-          db.set_field(prefs['active_list_field'], active_updates)
+          self.debug_writes_stored_field(len(stored_updates))
+          db.set_field(prefs['stored_lists_field'], self.stored_write_updates(stored_updates))
           if progress_callback is not None:
-            progress_callback(len(active_updates), 'Finished Active List metadata updates...')
+            progress_callback(len(stored_updates), 'Finished Stored Lists metadata updates...')
         except Exception as err:
           raise ListSwitchboardError(
-            f'Could not write the Active List Field "{prefs["active_list_field"]}": {err}')
-      changed.update(active_updates)
-    if stored_updates:
+            f'Could not write the Stored Lists Field "{prefs["stored_lists_field"]}": {err}')
+        changed.update(stored_updates)
+    except Exception as err:
+      recovery_failures = self.restore_field_write_snapshots(snapshots)
       try:
-        self.debug_writes_stored_field(len(stored_updates))
-        db.set_field(prefs['stored_lists_field'], self.stored_write_updates(stored_updates))
-        if progress_callback is not None:
-          progress_callback(len(stored_updates), 'Finished Stored Lists metadata updates...')
-      except Exception as err:
+        self.refresh_books(affected)
+      except Exception as refresh_err:
+        recovery_failures.append(f'Could not refresh affected books: {refresh_err}')
+      if recovery_failures:
         raise ListSwitchboardError(
-          f'Could not write the Stored Lists Field "{prefs["stored_lists_field"]}": {err}')
-      changed.update(stored_updates)
+          f'{err}\n\nThe failed metadata update may be partially applied. '
+          f'Rollback also failed: {"; ".join(recovery_failures)}')
+      raise ListSwitchboardError(
+        f'{err}\n\nList Switchboard restored the previous Active List and Stored Lists values.')
+
     self.refresh_books(changed)
     self.debug_writes_finished(active_updates, stored_updates, changed)
+
+  def field_write_snapshots(self, active_updates, stored_updates):
+    """Capture every field value touched by one logical metadata transition."""
+    db = self.db.new_api
+    snapshots = {}
+    if active_updates:
+      active_field = prefs['active_list_field']
+      active_values = {
+        book_id: db.field_for(active_field, book_id, default_value='')
+        for book_id in active_updates
+      }
+      active_snapshot = {
+        'field': active_field,
+        'values': active_values,
+        'is_series': self.active_field_is_series(),
+      }
+      if active_snapshot['is_series']:
+        index_field = self.active_series_index_field()
+        active_snapshot['index_values'] = {
+          book_id: db.field_for(index_field, book_id, default_value=None)
+          for book_id in active_updates
+        } if index_field else {}
+      snapshots['active'] = active_snapshot
+    if stored_updates:
+      stored_field = prefs['stored_lists_field']
+      snapshots['stored'] = {
+        'field': stored_field,
+        'values': {
+          book_id: db.field_for(stored_field, book_id, default_value='')
+          for book_id in stored_updates
+        },
+      }
+    return snapshots
+
+  def restore_field_write_snapshots(self, snapshots):
+    """Best-effort rollback after either half of a paired field update fails."""
+    failures = []
+    active = snapshots.get('active')
+    if active and active.get('values'):
+      try:
+        if active.get('is_series'):
+          self.write_active_series_values(
+            active['values'], active.get('index_values') or {})
+        else:
+          self.debug_writes_active_field(len(active['values']))
+          self.db.new_api.set_field(active['field'], active['values'])
+      except Exception as err:
+        failures.append(f'could not restore Active List values: {err}')
+    stored = snapshots.get('stored')
+    if stored and stored.get('values'):
+      try:
+        self.db.new_api.set_field(
+          stored['field'], self.stored_write_updates(stored['values']))
+      except Exception as err:
+        failures.append(f'could not restore Stored Lists values: {err}')
+    return failures
 
   def filter_unchanged_active_updates(self, active_updates, index_updates=None):
     filtered = OrderedDict()
@@ -490,7 +595,7 @@ class MetadataMixin:
       entry_index = missing[0]
       name, _old_position = split_position_suffix(entries[entry_index])
       entries[entry_index] = format_list_entry(name, position)
-      stored_updates[book_id] = format_stored_lists(unique_case_insensitive(entries))
+      stored_updates[book_id] = rebuild_stored_lists(entries)
       repaired += 1
       self.debug_metadata_repaired_position(book_id, name, position)
     if stored_updates:

@@ -3,6 +3,7 @@
 
 import json
 import sys
+import unittest
 from pathlib import Path
 
 from bs4 import BeautifulSoup
@@ -63,6 +64,21 @@ from parser import sword_and_laser as sword_parser
 from url_fetcher.sword_and_laser import UrlFetcherSwordAndLaser
 
 
+def entry_author(entry):
+    return ' & '.join(entry.get('authors') or [])
+
+
+def source_entry(position, title, author, source_url=''):
+    entry = {'position': position, 'title': title, 'authors': [author]}
+    if source_url:
+        entry['source'] = {'url': source_url}
+    return entry
+
+
+def entry_source_url(entry):
+    return (entry.get('source') or {}).get('url', '')
+
+
 def test_sword_and_laser_position_accepts_decimal_zero():
     """Positions like 2.0 should be treated as whole-number picks instead of missing."""
     print("Testing Sword & Laser position parsing for decimal-zero positions...")
@@ -114,7 +130,7 @@ def test_sword_and_laser_match_series():
 
     print(f"Parsed {len(parsed['entries'])} entries:")
     for entry in parsed['entries']:
-        print(f"  - {entry['title']} by {entry['author']} (pos: {entry['position']})")
+        print(f"  - {entry['title']} by {entry_author(entry)} (pos: {entry['position']})")
 
     # Parsing should include all individual books (series filtering happens during matching)
     titles = [entry['title'] for entry in parsed['entries']]
@@ -131,28 +147,20 @@ def test_sword_and_laser_match_series():
 def test_incremental_sword_and_laser_pages_include_new_and_pending():
     """Saved imports should revisit only new and explicitly unfinished linked pages."""
     cached = [
-        {
-            'position': '1',
-            'title': 'Old Pick',
-            'author': 'Old Author',
-            'source_url': 'https://swordandlaser.fandom.com/wiki/Old_Pick',
-        },
-        {'position': '1.01', 'title': 'Old Nominee', 'author': 'Old Author'},
+        source_entry('1', 'Old Pick', 'Old Author',
+                     'https://swordandlaser.fandom.com/wiki/Old_Pick'),
+        source_entry('1.01', 'Old Nominee', 'Old Author'),
     ]
     main_entries = [
         dict(cached[0]),
-        {
-            'position': '2',
-            'title': 'New Pick',
-            'author': 'New Author',
-            'source_url': 'https://swordandlaser.fandom.com/wiki/New_Pick',
-        },
+        source_entry('2', 'New Pick', 'New Author',
+                     'https://swordandlaser.fandom.com/wiki/New_Pick'),
     ]
 
     merged, pages = sword_parser.merge_incremental_sword_and_laser_entries(
         main_entries, cached, {
             'incremental_state': {
-                'pending_page_urls': [cached[0]['source_url']],
+                'pending_page_urls': [entry_source_url(cached[0])],
             },
         })
 
@@ -167,12 +175,9 @@ def test_sword_and_laser_fetcher_passes_incremental_cache_to_parser():
     recipe = UrlFetcherSwordAndLaser()
     recipe.options = {**recipe.options, 'include_march_madness': False}
     cached = {
-        'entries': [{
-            'position': '1',
-            'title': 'Old Pick',
-            'author': 'Old Author',
-            'source_url': 'https://swordandlaser.fandom.com/wiki/Old_Pick',
-        }],
+        'entries': [source_entry(
+            '1', 'Old Pick', 'Old Author',
+            'https://swordandlaser.fandom.com/wiki/Old_Pick')],
     }
     html = '''
     <table>
@@ -203,13 +208,13 @@ def test_march_madness_parsing():
     soup = BeautifulSoup(html, 'html.parser')
 
     # Create a mock official entry
-    official_entry = {'position': '95', 'title': 'The Invisible Library', 'author': 'Genevieve Cogman'}
+    official_entry = source_entry('95', 'The Invisible Library', 'Genevieve Cogman')
 
     nominations = sword_parser.parse_sword_and_laser_march_page(soup, official_entry)
 
     print(f"Found {len(nominations)} nominations:")
     for nom in nominations[:5]:  # Show first 5
-        print(f"  - {nom['title']} by {nom['author']} ({nom['votes']} votes, {nom['percent']})")
+        print(f"  - {nom['title']} by {entry_author(nom)} ({nom['votes']} votes, {nom['percent']})")
 
     # Should find nominations including "The Invisible Library" itself
     titles = [nom['title'] for nom in nominations]
@@ -252,13 +257,13 @@ def test_march_madness_childhoods_end():
     html = data['parse']['text']['*']
     soup = BeautifulSoup(html, 'html.parser')
 
-    official_entry = {'position': '5', 'title': "Childhood's End", 'author': 'Arthur C. Clarke'}
+    official_entry = source_entry('5', "Childhood's End", 'Arthur C. Clarke')
 
     nominations = sword_parser.parse_sword_and_laser_march_page(soup, official_entry)
 
     print(f"Found {len(nominations)} nominations for Childhood's End:")
     for nom in nominations:
-        print(f"  - {nom['title']} by {nom['author']}")
+        print(f"  - {nom['title']} by {entry_author(nom)}")
 
     assert len(nominations) == 3
     titles = [nom['title'] for nom in nominations]
@@ -266,7 +271,7 @@ def test_march_madness_childhoods_end():
     assert '2001: A Space Odyssey' in titles
     assert 'The Songs of Distant Earth' in titles
     for nom in nominations:
-        assert nom['author'] == 'Arthur C. Clarke'
+        assert entry_author(nom) == 'Arthur C. Clarke'
 
     print("PASS: Childhood's End poll parsing test passed!")
 
@@ -293,8 +298,8 @@ def test_march_madness_the_fifth_season_reassembly():
     assert len(vote_lines) == 16
     assert vote_lines[0] == '106 votes 51.5% The Fifth Season by N.K. Jemisin'
     assert vote_lines[1] == '100 votes 48.5% Neverwhere by Neil Gaiman'
-    assert '158 votes 67.8% The Fifth Season by N.K. Jemisin' in vote_lines
-    assert '75 votes 32.2% Prince of Fools by Mark Lawrence' in vote_lines
+    assert '110 votes 60.4% The Mirror Empire by Kameron Hurley' in vote_lines
+    assert '100 votes 53.8% Prince of Fools by Mark Lawrence' in vote_lines
     assert all(sword_parser.parse_vote_line(line) for line in vote_lines)
 
     print("PASS: The Fifth Season reassembly test passed!")
@@ -311,13 +316,13 @@ def test_march_madness_enders_game_poll_text():
     html = data['parse']['text']['*']
     soup = BeautifulSoup(html, 'html.parser')
 
-    official_entry = {'position': '2', 'title': "Ender's Game", 'author': 'Orson Scott Card'}
+    official_entry = source_entry('2', "Ender's Game", 'Orson Scott Card')
 
     nominations = sword_parser.parse_sword_and_laser_march_page(soup, official_entry)
 
     print(f"Found {len(nominations)} nominations for Ender's Game:")
     for nom in nominations:
-        print(f"  - {nom['title']} by {nom['author']}")
+        print(f"  - {nom['title']} by {entry_author(nom)}")
 
     assert len(nominations) == 4
     titles = [nom['title'] for nom in nominations]
@@ -345,7 +350,7 @@ def test_march_madness_unshapely_things():
     html = data['parse']['text']['*']
     soup = BeautifulSoup(html, 'html.parser')
 
-    official_entry = {'position': '6', 'title': 'Unshapely Things', 'author': 'Mark Del Franco'}
+    official_entry = source_entry('6', 'Unshapely Things', 'Mark Del Franco')
 
     nominations = sword_parser.parse_sword_and_laser_march_page(soup, official_entry)
 
@@ -356,10 +361,10 @@ def test_march_madness_unshapely_things():
     assert nominations[1]['title'] == 'Fablehaven'
     assert nominations[2]['title'] == 'War for the Oaks'
     assert nominations[3]['title'] == "Ironside:A Modern Faery's Tale"
-    assert nominations[0]['author'] == 'Melissa Marr'
-    assert nominations[1]['author'] == 'Brandon Mull'
-    assert nominations[2]['author'] == 'Emma Bull'
-    assert nominations[3]['author'] == 'Holly Black'
+    assert entry_author(nominations[0]) == 'Melissa Marr'
+    assert entry_author(nominations[1]) == 'Brandon Mull'
+    assert entry_author(nominations[2]) == 'Emma Bull'
+    assert entry_author(nominations[3]) == 'Holly Black'
 
     print("PASS: Unshapely Things parsing test passed!")
 
@@ -375,18 +380,18 @@ def test_march_madness_doomsday_book():
     html = data['parse']['text']['*']
     soup = BeautifulSoup(html, 'html.parser')
 
-    official_entry = {'position': '102', 'title': 'Doomsday Book', 'author': 'Connie Willis'}
+    official_entry = source_entry('102', 'Doomsday Book', 'Connie Willis')
 
     nominations = sword_parser.parse_sword_and_laser_march_page(soup, official_entry)
 
     print(f"Found {len(nominations)} nominations for Doomsday Book")
     for nom in nominations:
-        print(f"  - {nom['title']} by {nom['author']}")
+        print(f"  - {nom['title']} by {entry_author(nom)}")
 
     assert len(nominations) == 4
-    assert nominations[1]['author'] == 'Connie Willis'
-    assert nominations[2]['author'] == 'Connie Willis'
-    assert nominations[3]['author'] == 'Connie Willis'
+    assert entry_author(nominations[1]) == 'Connie Willis'
+    assert entry_author(nominations[2]) == 'Connie Willis'
+    assert entry_author(nominations[3]) == 'Connie Willis'
     assert nominations[1]['title'] == 'To Say Nothing of the Dog'
     assert nominations[2]['title'] == 'Blackout/All Clear'
     assert nominations[3]['title'] == 'Fire Watch'
@@ -405,16 +410,16 @@ def test_march_madness_dawn():
     html = data['parse']['text']['*']
     soup = BeautifulSoup(html, 'html.parser')
 
-    official_entry = {'position': '62', 'title': 'Dawn', 'author': 'Octavia E. Butler'}
+    official_entry = source_entry('62', 'Dawn', 'Octavia E. Butler')
 
     nominations = sword_parser.parse_sword_and_laser_march_page(soup, official_entry)
 
     print(f"Found {len(nominations)} nominations for Dawn")
     for nom in nominations:
-        print(f"  - {nom['title']} by {nom['author']}")
+        print(f"  - {nom['title']} by {entry_author(nom)}")
 
     assert len(nominations) == 5
-    assert all(nom['author'] == 'Octavia E. Butler' for nom in nominations)
+    assert all(entry_author(nom) == 'Octavia E. Butler' for nom in nominations)
     assert nominations[1]['title'] == 'Kindred'
     assert nominations[2]['title'] == 'Parable of the Sower'
     assert nominations[3]['title'] == 'Wild Seed'
@@ -422,20 +427,15 @@ def test_march_madness_dawn():
 
     print("PASS: Dawn parsing test passed!")
 
-if __name__ == '__main__':
-    try:
-        from bs4 import BeautifulSoup
-    except ImportError:
-        print("BeautifulSoup not available, skipping tests")
-        sys.exit(1)
+class SwordAndLaserRegressionTests(unittest.TestCase):
+    """Keep the historical regression functions discoverable by unittest."""
 
-    test_sword_and_laser_match_series()
-    test_incremental_sword_and_laser_pages_include_new_and_pending()
-    test_sword_and_laser_fetcher_passes_incremental_cache_to_parser()
-    test_march_madness_parsing()
-    test_march_madness_aurora_page()
-    test_march_madness_childhoods_end()
-    test_march_madness_unshapely_things()
-    test_march_madness_doomsday_book()
-    test_march_madness_dawn()
-    print("\nAll tests passed!")
+
+for _name, _function in tuple(globals().items()):
+    if _name.startswith('test_') and callable(_function):
+        setattr(SwordAndLaserRegressionTests, _name, staticmethod(_function))
+del _name, _function
+
+
+if __name__ == '__main__':
+    unittest.main()

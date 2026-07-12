@@ -230,6 +230,55 @@ class StorageMixinTest(unittest.TestCase):
     self.assertNotIn('author', written['entries'][0])
     self.assertEqual(['example_list'], self.mixin.invalidated)
 
+  def test_atomic_cache_writes_preserve_previous_import_and_match_data(self):
+    self.mixin.write_import_cache('Example List', {
+      'name': 'Example List',
+      'entries': [{'position': '1', 'title': 'Original import', 'authors': ['Author']}],
+    })
+    self.mixin.write_match_cache('Example List', [{
+      'entry_key': 'original import|author', 'matched_book_id': 7,
+    }])
+    original_replace = storage.os.replace
+
+    def fail_replace(_source, _destination):
+      raise OSError('simulated interrupted replace')
+
+    storage.os.replace = fail_replace
+    try:
+      with self.assertRaises(storage.ListSwitchboardError):
+        self.mixin.write_import_cache('Example List', {
+          'name': 'Example List',
+          'entries': [{'position': '1', 'title': 'Replacement import', 'authors': ['Author']}],
+        })
+      with self.assertRaises(storage.ListSwitchboardError):
+        self.mixin.write_match_cache('Example List', [{
+          'entry_key': 'replacement import|author', 'matched_book_id': 8,
+        }])
+    finally:
+      storage.os.replace = original_replace
+
+    self.assertEqual('Original import', self.mixin.read_import_cache('Example List')['entries'][0]['title'])
+    self.assertEqual(7, self.mixin.read_match_cache('Example List')['matches'][0]['matched_book_id'])
+    self.assertEqual([], list(Path(self.temp_dir).glob('*.tmp')))
+
+  def test_invalid_cache_files_are_preserved_and_warned_once(self):
+    import_path = Path(self.temp_dir) / 'import_example_list.json'
+    match_path = Path(self.temp_dir) / 'match_example_list.json'
+    import_path.write_text('{not valid json', encoding='utf-8')
+    match_path.write_text('[not an object]', encoding='utf-8')
+
+    self.assertIsNone(self.mixin.read_import_cache('Example List'))
+    self.assertIsNone(self.mixin.read_import_cache('Example List'))
+    self.assertEqual([], self.mixin.read_match_cache('Example List')['matches'])
+    self.assertEqual([], self.mixin.read_match_cache('Example List')['matches'])
+
+    self.assertTrue(import_path.exists())
+    self.assertTrue(match_path.exists())
+    self.assertEqual(2, len(self.mixin.status_messages))
+    self.assertTrue(any('import cache "example_list"' in message for message in self.mixin.status_messages))
+    self.assertTrue(any('saved matches "example_list"' in message for message in self.mixin.status_messages))
+    self.assertTrue(all(self.temp_dir not in message for message in self.mixin.status_messages))
+
   def test_read_import_cache_rejects_v1_author_cache(self):
     path = Path(self.temp_dir) / 'import_example_list.json'
     path.write_text(json.dumps({
@@ -306,6 +355,41 @@ class StorageMixinTest(unittest.TestCase):
     })
 
     self.assertEqual('New', merged['entries'][0]['title'])
+
+  def test_merge_append_import_cache_replaces_changed_prefix_metadata(self):
+    old_cache = self.mixin.write_import_cache('Example Award', {
+      'name': 'Example Award',
+      'entries': [{
+        'position': '2026.01',
+        'title': 'Book',
+        'authors': ['Author'],
+        'result': 'shortlisted',
+        'source': {'url': 'https://example.com/shortlist'},
+        'aliases': ['Book: A Novel'],
+      }],
+    })
+    refreshed = self.mixin.merge_append_import_cache('Example Award', old_cache, {
+      'name': 'Example Award',
+      'entries': [
+        {
+          'position': '2026',
+          'title': 'Book',
+          'authors': ['Author'],
+          'result': 'winner',
+          'source': {'url': 'https://example.com/winner'},
+          'aliases': ['Book: The Winner'],
+        },
+        {'position': '2025', 'title': 'Older Book', 'authors': ['Another Author']},
+      ],
+    })
+
+    self.assertEqual(2, len(refreshed['entries']))
+    self.assertEqual('2026', refreshed['entries'][0]['position'])
+    self.assertEqual('winner', refreshed['entries'][0]['result'])
+    self.assertEqual(['Book: The Winner'], refreshed['entries'][0]['aliases'])
+    self.assertEqual(
+      {'url': 'https://example.com/winner', 'name': '', 'source_id': ''},
+      refreshed['entries'][0]['source'])
 
   def test_write_and_read_match_cache_round_trip(self):
     self.mixin.write_match_cache('Example List', [{
@@ -478,6 +562,54 @@ class StorageMixinTest(unittest.TestCase):
     self.assertEqual(0, result['removed'])
     self.assertEqual(7, loaded['matches'][0]['matched_book_id'])
     self.assertEqual([7], loaded['matches'][0]['matched_book_ids'])
+
+  def test_apply_import_review_match_changes_replaces_manual_selection_exactly(self):
+    class FakeApi:
+      def field_for(self, field, book_id, default_value=''):
+        if field == 'title':
+          return {7: 'Volume One', 8: 'Volume Two'}.get(book_id, default_value)
+        if field == 'authors':
+          return {7: ['Author'], 8: ['Author']}.get(book_id, default_value)
+        return default_value
+
+    class FakeDb:
+      new_api = FakeApi()
+
+    self.mixin.db = FakeDb()
+    self.mixin.write_match_cache('Example List', [{
+      'entry_key': 'shared saga|author',
+      'matched_book_id': 7,
+      'matched_book_ids': [7, 8, 9],
+      'matched_books': [
+        {'matched_book_id': 7},
+        {'matched_book_id': 8},
+        {'matched_book_id': 9},
+      ],
+    }])
+    rows = [{
+      'entry': {'title': 'Shared Saga', 'authors': ['Author'], 'position': '2'},
+      'entry_key': 'shared saga|author',
+      'matched': True,
+      'ignored': False,
+      'original_matched': False,
+      'original_ignored': False,
+      'book_ids': [7, 8],
+      'original_book_ids': [],
+      'matched_books': [],
+      'original_matched_books': [],
+      'previous_book_ids': [7, 8, 9],
+      'previous_matched_books': [],
+      'previous_match_source': 'saved/manual override',
+      'match_source': 'manual find',
+      'original_match_source': 'explicit unmatched',
+    }]
+
+    self.mixin.apply_import_review_match_changes('Example List', rows)
+    item = self.mixin.read_match_cache('Example List')['matches'][0]
+
+    self.assertEqual([7, 8], item['matched_book_ids'])
+    self.assertEqual([7, 8], [book['matched_book_id'] for book in item['matched_books']])
+    self.assertNotIn(9, item['matched_book_ids'])
 
   def test_apply_import_review_match_changes_converts_ignored_to_none(self):
     self.mixin.write_match_cache('Example List', [{

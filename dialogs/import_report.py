@@ -689,12 +689,9 @@ class ImportReportDialog(QDialog):
     return []
 
   def manual_find_match_source(self, row, candidates):
-    if len(candidates) != 1 or self.selected_match_source_callback is None:
-      return 'manual find'
-    try:
-      return self.selected_match_source_callback(row, candidates[0]) or 'manual find'
-    except Exception:
-      return 'manual find'
+    # Choosing candidates is an authoritative manual decision even when a
+    # selected book also satisfies the automatic title/series rules.
+    return 'manual find'
 
   def current_view_csv(self):
     output = StringIO()

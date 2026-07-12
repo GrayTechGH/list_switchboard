@@ -44,13 +44,13 @@ except ImportError:
 
 try:
   from calibre_plugins.list_switchboard.metadata import (
-    format_list_entry, format_stored_lists, next_whole_index_after, parse_stored_lists,
-    sort_names, unique_case_insensitive, validate_list_name,
+    format_list_entry, next_whole_index_after, parse_stored_lists,
+    rebuild_stored_lists, sort_names, validate_list_name,
   )
 except ImportError:
   from metadata import (
-    format_list_entry, format_stored_lists, next_whole_index_after, parse_stored_lists,
-    sort_names, unique_case_insensitive, validate_list_name,
+    format_list_entry, next_whole_index_after, parse_stored_lists,
+    rebuild_stored_lists, sort_names, validate_list_name,
   )
 
 try:
@@ -117,7 +117,7 @@ class ListStateMixin:
         cleaned_entries.append(name)
         stored_names.setdefault(key, clean_name(name))
 
-      formatted = format_stored_lists(cleaned_entries)
+      formatted = rebuild_stored_lists(cleaned_entries)
       if active != raw_active:
         active_updates[book_id] = active
       if formatted != (raw_stored or ''):
@@ -145,9 +145,22 @@ class ListStateMixin:
       return next(iter(grouped.values()))[0]
     return self.resolve_active_conflict(grouped)
 
+  def run_configured_list_action(self, title, action):
+    """Run a public list action with one configuration and error boundary."""
+    try:
+      if not self.ensure_configured():
+        return None
+      return action()
+    except Exception as err:
+      self.show_exception(title, err)
+      return None
+
   def add_selected_to_active(self, force_match_review=False):
-    if not self.ensure_configured():
-      return
+    return self.run_configured_list_action(
+      'Add selected books to Active List',
+      lambda: self._add_selected_to_active(force_match_review=force_match_review))
+
+  def _add_selected_to_active(self, force_match_review=False):
     ids = self.selected_ids_with_series() if prefs.get('include_calibre_series', False) else self.selected_book_ids()
     self.debug_selection_ids(ids)
     if not ids:
@@ -661,8 +674,10 @@ class ListStateMixin:
     return index_updates
 
   def select_active_list_books(self):
-    if not self.ensure_configured():
-      return
+    return self.run_configured_list_action(
+      'Select books in Active List', self._select_active_list_books)
+
+  def _select_active_list_books(self):
     active = self.current_active()
     if active is None:
       self.status_message('Create an Active List first.')
@@ -739,8 +754,10 @@ class ListStateMixin:
     return [(position, title, authors) for _sort_key, position, title, authors in rows]
 
   def switch_active_list(self):
-    if not self.ensure_configured():
-      return
+    return self.run_configured_list_action(
+      'Switch Active List', self._switch_active_list)
+
+  def _switch_active_list(self):
     active = self.current_active()
     if active is None:
       self.create_new_active_list(selected_ids=self.selected_book_ids())
@@ -764,34 +781,34 @@ class ListStateMixin:
     self.ensure_active_list_can_be_stored(old_active)
     active_updates = {}
     active_index_updates = {}
-    index_field = self.active_series_index_field()
     stored_updates = {}
     for book_id in self.all_book_ids():
       active = clean_name(self.read_field(prefs['active_list_field'], book_id))
-      stored = unique_case_insensitive([entry for entry in parse_stored_lists(
-        self.read_field(prefs['stored_lists_field'], book_id)) if entry])
-      stored_by_key = OrderedDict((normalize_key(name), name) for name in stored)
 
-      if normalize_key(active) == normalize_key(old_active):
-        active_updates[book_id] = ''
-        stored_by_key[normalize_key(old_active)] = self.stored_entry_for_active(
-          book_id, old_active, require_position=True)
-      if normalize_key(new_active) in stored_by_key:
-        stored_entry = stored_by_key[normalize_key(new_active)]
-        active_name, position = split_position_suffix(stored_entry)
-        index_field = self.require_series_position_field('switch to', new_active)
-        self.require_stored_series_position(new_active, book_id, position)
-        active_updates[book_id] = active_name
-        if index_field and position:
-          try:
-            active_index_updates[book_id] = float(position)
-          except Exception:
-            pass
-        del stored_by_key[normalize_key(new_active)]
-      if active and normalize_key(active) != normalize_key(old_active):
-        active_updates[book_id] = active
+      def switch_entries(entries):
+        stored_by_key = OrderedDict((normalize_key(name), name) for name in entries)
+        if normalize_key(active) == normalize_key(old_active):
+          active_updates[book_id] = ''
+          stored_by_key[normalize_key(old_active)] = self.stored_entry_for_active(
+            book_id, old_active, require_position=True)
+        if normalize_key(new_active) in stored_by_key:
+          stored_entry = stored_by_key[normalize_key(new_active)]
+          active_name, position = split_position_suffix(stored_entry)
+          required_index_field = self.require_series_position_field('switch to', new_active)
+          self.require_stored_series_position(new_active, book_id, position)
+          active_updates[book_id] = active_name
+          if required_index_field and position:
+            try:
+              active_index_updates[book_id] = float(position)
+            except Exception:
+              pass
+          del stored_by_key[normalize_key(new_active)]
+        if active and normalize_key(active) != normalize_key(old_active):
+          active_updates[book_id] = active
+        return stored_by_key.values()
 
-      stored_updates[book_id] = format_stored_lists(stored_by_key.values())
+      stored_updates[book_id] = rebuild_stored_lists(
+        self.read_field(prefs['stored_lists_field'], book_id), switch_entries)
     if show_progress:
       self.write_fields_with_progress(
         'Switch Active List',
@@ -808,8 +825,11 @@ class ListStateMixin:
     self.invalidate_cached_active_add_import_map()
 
   def create_new_active_list(self, selected_ids=None):
-    if not self.ensure_configured():
-      return None
+    return self.run_configured_list_action(
+      'Create New Active List',
+      lambda: self._create_new_active_list(selected_ids=selected_ids))
+
+  def _create_new_active_list(self, selected_ids=None):
     selected_ids = selected_ids if selected_ids is not None else self.selected_book_ids()
     name, ok = QInputDialog.getText(self.gui, 'Create New Active List', 'New Active List name:')
     if not ok:
@@ -864,13 +884,16 @@ class ListStateMixin:
     for book_id in self.all_book_ids():
       current = clean_name(self.read_field(prefs['active_list_field'], book_id))
       raw_stored = self.read_field(prefs['stored_lists_field'], book_id)
-      stored = unique_case_insensitive([entry for entry in parse_stored_lists(
-        raw_stored) if entry])
-      stored_by_key = OrderedDict((normalize_key(name), name) for name in stored)
+      def store_active(entries):
+        stored_by_key = OrderedDict((normalize_key(name), name) for name in entries)
+        if normalize_key(current) == key:
+          stored_by_key[key] = self.stored_entry_for_active(
+            book_id, active, require_position=True)
+        return stored_by_key.values()
+
       if normalize_key(current) == key:
         active_updates[book_id] = ''
-        stored_by_key[key] = self.stored_entry_for_active(book_id, active, require_position=True)
-      formatted = format_stored_lists(stored_by_key.values())
+      formatted = rebuild_stored_lists(raw_stored, store_active)
       if formatted != (raw_stored or ''):
         stored_updates[book_id] = formatted
     return active_updates, stored_updates
@@ -879,12 +902,17 @@ class ListStateMixin:
     stored_updates = {}
     key = normalize_key(active)
     for book_id in self.all_book_ids():
-      stored = [entry for entry in parse_stored_lists(
-        self.read_field(prefs['stored_lists_field'], book_id)) if normalize_key(entry) != key]
-      stored_updates[book_id] = format_stored_lists(unique_case_insensitive(stored))
+      raw_stored = self.read_field(prefs['stored_lists_field'], book_id)
+      formatted = rebuild_stored_lists(
+        raw_stored, lambda entries: (entry for entry in entries if normalize_key(entry) != key))
+      if formatted != (raw_stored or ''):
+        stored_updates[book_id] = formatted
     self.write_fields(stored_updates=stored_updates)
 
   def rename_active_list(self):
+    return self.run_configured_list_action('Rename Active List', self._rename_active_list)
+
+  def _rename_active_list(self):
     active = self.current_active()
     if not active:
       error_dialog(self.gui, 'List Switchboard', 'Create an Active List first.', show=True)
@@ -914,6 +942,9 @@ class ListStateMixin:
       self.show_exception('Rename Active List', err)
 
   def remove_active_list(self):
+    return self.run_configured_list_action('Remove Active List', self._remove_active_list)
+
+  def _remove_active_list(self):
     active = self.current_active()
     if not active:
       error_dialog(self.gui, 'List Switchboard', 'There is no Active List to remove.', show=True)
@@ -931,9 +962,8 @@ class ListStateMixin:
       if normalize_key(self.read_field(prefs['active_list_field'], book_id)) == key:
         active_updates[book_id] = ''
       raw_stored = self.read_field(prefs['stored_lists_field'], book_id)
-      stored = [entry for entry in parse_stored_lists(
-        raw_stored) if normalize_key(entry) != key]
-      formatted = format_stored_lists(unique_case_insensitive(stored))
+      formatted = rebuild_stored_lists(
+        raw_stored, lambda entries: (entry for entry in entries if normalize_key(entry) != key))
       if formatted != (raw_stored or ''):
         stored_updates[book_id] = formatted
     self.write_fields_with_progress(
@@ -946,8 +976,9 @@ class ListStateMixin:
     self.status_message(f'Removed Active List "{active}".')
 
   def manage_stored_lists(self):
-    if not self.ensure_configured():
-      return
+    return self.run_configured_list_action('Manage Stored Lists', self._manage_stored_lists)
+
+  def _manage_stored_lists(self):
     rows = self.managed_stored_list_rows()
     if not rows:
       self.status_message('There are no Stored Lists to manage.')
@@ -956,6 +987,10 @@ class ListStateMixin:
     d.exec()
 
   def rename_stored_list(self, old_name):
+    return self.run_configured_list_action(
+      'Rename Stored List', lambda: self._rename_stored_list(old_name))
+
+  def _rename_stored_list(self, old_name):
     new_name, ok = QInputDialog.getText(self.gui, 'Rename Stored List', 'New Stored List name:', text=old_name)
     if not ok:
       return
@@ -970,16 +1005,18 @@ class ListStateMixin:
         raise ListSwitchboardError('A list with that name already exists. Choose a unique name.')
       stored_updates = {}
       for book_id in self.all_book_ids():
-        updated = []
-        for entry in parse_stored_lists(self.read_field(prefs['stored_lists_field'], book_id)):
-          if not entry:
-            continue
-          if normalize_key(entry) == normalize_key(old_name):
-            _old_entry_name, position = split_position_suffix(entry)
-            updated.append(format_list_entry(new_name, position))
-          else:
-            updated.append(entry)
-        stored_updates[book_id] = format_stored_lists(unique_case_insensitive(updated))
+        def rename_entries(entries):
+          updated = []
+          for entry in entries:
+            if normalize_key(entry) == normalize_key(old_name):
+              _old_entry_name, position = split_position_suffix(entry)
+              updated.append(format_list_entry(new_name, position))
+            else:
+              updated.append(entry)
+          return updated
+
+        stored_updates[book_id] = rebuild_stored_lists(
+          self.read_field(prefs['stored_lists_field'], book_id), rename_entries)
       self.write_fields_with_progress(
         'Rename Stored List',
         f'Renaming Stored List to "{new_name}"...',
@@ -990,6 +1027,10 @@ class ListStateMixin:
       self.show_exception('Rename Stored List', err)
 
   def remove_stored_list(self, name=None):
+    return self.run_configured_list_action(
+      'Remove Stored List', lambda: self._remove_stored_list(name=name))
+
+  def _remove_stored_list(self, name=None):
     if name is None:
       _counts, stored = self.library_state()
       d = ChoiceDialog(self.gui, 'Remove Stored List', 'Stored Lists:', stored, 'Remove Selected List')
@@ -1005,9 +1046,9 @@ class ListStateMixin:
     key = normalize_key(name)
     stored_updates = {}
     for book_id in self.all_book_ids():
-      stored = [entry for entry in parse_stored_lists(
-        self.read_field(prefs['stored_lists_field'], book_id)) if normalize_key(entry) != key]
-      stored_updates[book_id] = format_stored_lists(unique_case_insensitive(stored))
+      raw_stored = self.read_field(prefs['stored_lists_field'], book_id)
+      stored_updates[book_id] = rebuild_stored_lists(
+        raw_stored, lambda entries: (entry for entry in entries if normalize_key(entry) != key))
     self.write_fields_with_progress(
       'Remove Stored List',
       f'Removing Stored List "{name}"...',
@@ -1039,17 +1080,20 @@ class ListStateMixin:
       self.ensure_active_list_can_be_stored(active)
     for book_id in self.all_book_ids():
       active = clean_name(self.read_field(prefs['active_list_field'], book_id))
-      stored = unique_case_insensitive([entry for entry in parse_stored_lists(
-        self.read_field(prefs['stored_lists_field'], book_id)) if entry])
-      stored_by_key = OrderedDict((normalize_key(name), name) for name in stored)
+      def resolve_entries(entries):
+        stored_by_key = OrderedDict((normalize_key(name), name) for name in entries)
+        if active and normalize_key(active) != chosen_key:
+          stored_by_key[normalize_key(active)] = self.stored_entry_for_active(
+            book_id, active, require_position=True)
+        stored_by_key.pop(chosen_key, None)
+        return stored_by_key.values()
+
       if active and normalize_key(active) != chosen_key:
         active_updates[book_id] = ''
-        stored_by_key[normalize_key(active)] = self.stored_entry_for_active(
-          book_id, active, require_position=True)
       elif active:
         active_updates[book_id] = chosen
-      stored_by_key.pop(chosen_key, None)
-      stored_updates[book_id] = format_stored_lists(stored_by_key.values())
+      stored_updates[book_id] = rebuild_stored_lists(
+        self.read_field(prefs['stored_lists_field'], book_id), resolve_entries)
     self.write_fields(active_updates, stored_updates)
     return chosen
 
@@ -1060,8 +1104,7 @@ class ListStateMixin:
       return False
     stored_updates = {}
     for book_id in self.all_book_ids():
-      entries = [entry for entry in parse_stored_lists(self.read_field(
-        prefs['stored_lists_field'], book_id)) if entry]
-      stored_updates[book_id] = format_stored_lists(unique_case_insensitive(entries))
+      stored_updates[book_id] = rebuild_stored_lists(
+        self.read_field(prefs['stored_lists_field'], book_id))
     self.write_fields(stored_updates=stored_updates)
     return True

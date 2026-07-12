@@ -27,6 +27,10 @@ class Dummy:
   def __call__(self, *args, **kwargs):
     return Dummy()
 
+  @staticmethod
+  def processEvents():
+    pass
+
 
 class FakeQUrl:
 
@@ -380,41 +384,122 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertEqual('Dungeon Crawler Carl', parsed['entries'][0]['title'])
     self.assertEqual('190', parsed['entries'][0]['position'])
 
-  def test_fandom_fallback_fetch_urls_use_api_and_export(self):
-    core = object.__new__(main.ListSwitchboardCore)
-    core.debug_fallback_urls = lambda _url, _urls: None
-
-    urls = core.fallback_fetch_urls('https://swordandlaser.fandom.com/wiki/Book_List')
-
-    self.assertEqual(
-      'https://swordandlaser.fandom.com/api.php?action=parse&page=Book_List&prop=text&format=json',
-      urls[0])
-    self.assertEqual(
-      'https://swordandlaser.fandom.com/wiki/Book_List',
-      urls[1])
-    self.assertEqual(
-      'https://swordandlaser.fandom.com/wiki/Book_List?action=raw',
-      urls[2])
-    self.assertEqual(
-      'https://swordandlaser.fandom.com/wiki/Special:Export/Book_List',
-      urls[3])
-
   def test_fallback_debug_section_can_be_enabled_alone(self):
     self.assertIn(('fallback', 'Fallback activity only'), main.DEBUG_SECTIONS)
 
-  def test_fallback_fetch_urls_logs_only_when_fallback_urls_exist(self):
+  def test_generic_fetcher_cancellation_stops_url_fallbacks(self):
+    from url_fetcher.generic import UrlFetcherGeneric
+
+    class Fetcher(UrlFetcherGeneric):
+      NAME = 'Cancellation test'
+      URL = 'https://example.com/first'
+      FETCH_URLS = (URL, 'https://example.com/second')
+
+      def parse(self, _html, **_kwargs):
+        return {'name': self.NAME, 'entries': [{'title': 'Book'}]}
+
+    calls = []
+
+    def fetch_url(url):
+      calls.append(url)
+      raise main.ImportCancelledError('Import cancelled')
+
+    with self.assertRaises(main.ImportCancelledError):
+      Fetcher().fetch_and_parse(fetch_url)
+
+    self.assertEqual(['https://example.com/first'], calls)
+
+  def test_generic_fetcher_cancellation_before_fetch_stops_url_fallbacks(self):
+    from url_fetcher.generic import UrlFetcherGeneric
+
+    class Fetcher(UrlFetcherGeneric):
+      NAME = 'Cancellation test'
+      URL = 'https://example.com/first'
+      FETCH_URLS = (URL, 'https://example.com/second')
+
+      def parse(self, _html, **_kwargs):
+        return {'name': self.NAME, 'entries': [{'title': 'Book'}]}
+
+    fetched = []
+
+    with self.assertRaises(main.ImportCancelledError):
+      Fetcher().fetch_and_parse(
+        lambda url: fetched.append(url),
+        before_fetch=lambda _url: (_ for _ in ()).throw(
+          main.ImportCancelledError('Import cancelled')))
+
+    self.assertEqual([], fetched)
+
+  def test_generic_fetcher_cancellation_from_progress_or_sleep_stops_fallbacks(self):
+    from url_fetcher.generic import UrlFetcherGeneric
+
+    class Fetcher(UrlFetcherGeneric):
+      NAME = 'Cancellation test'
+      URL = 'https://example.com/first'
+      FETCH_URLS = (URL, 'https://example.com/second')
+
+      def parse(self, _html, **kwargs):
+        callback = kwargs['progress'] if self.mode == 'progress' else kwargs['sleep']
+        callback(1, 1, 'Parsing') if self.mode == 'progress' else callback(1, 'Waiting')
+        return {'name': self.NAME, 'entries': [{'title': 'Book'}]}
+
+    for mode in ('progress', 'sleep'):
+      with self.subTest(mode=mode):
+        fetcher = Fetcher()
+        fetcher.mode = mode
+        calls = []
+
+        def fetch_url(url):
+          calls.append(url)
+          return '<html></html>'
+
+        def cancel(*_args):
+          raise main.ImportCancelledError('Import cancelled')
+
+        with self.assertRaises(main.ImportCancelledError):
+          fetcher.fetch_and_parse(fetch_url, progress=cancel, sleep=cancel)
+
+        self.assertEqual(['https://example.com/first'], calls)
+
+  def test_source_fallback_runner_cancellation_stops_later_attempts(self):
+    from parser.source_fallback import SourceAttempt, SourceFallbackRunner
+
+    calls = []
+
+    def fetch_url(url):
+      calls.append(url)
+      raise main.ImportCancelledError('Import cancelled')
+
+    runner = SourceFallbackRunner((
+      SourceAttempt('First', 'https://example.com/first', lambda *_args, **_kwargs: {}),
+      SourceAttempt('Second', 'https://example.com/second', lambda *_args, **_kwargs: {}),
+    ))
+
+    with self.assertRaises(main.ImportCancelledError):
+      runner.run(fetch_url)
+
+    self.assertEqual(['https://example.com/first'], calls)
+
+  def test_import_cancellation_does_not_offer_cached_fallback_or_wrap_error(self):
     core = object.__new__(main.ListSwitchboardCore)
-    logged = []
-    core.debug_fallback_urls = lambda url, urls: logged.append((url, urls))
+    recipe = types.SimpleNamespace(NAME='Cancellation test', source_id='cancellation_test')
+    cache = {'entries': [{'title': 'Saved Book'}]}
+    core.recipe_list_id = lambda _recipe: 'cancellation_test'
+    core.read_import_cache = lambda _list_id: cache
+    core.choose_cached_import_action = lambda _recipe, _cache: 'refresh'
+    core.update_import_progress = lambda *_args, **_kwargs: None
+    core.should_fallback_to_cached_import = lambda *_args: self.fail(
+      'Cancellation must not offer a saved-cache fallback')
+    core.fetch_and_parse_recipe = lambda *_args, **_kwargs: (_ for _ in ()).throw(
+      main.ImportCancelledError('Import cancelled'))
 
-    self.assertEqual((), core.fallback_fetch_urls('https://example.com/books'))
-    self.assertEqual([], logged)
+    with self.assertRaises(main.ImportCancelledError):
+      core.load_or_fetch_recipe(recipe)
 
-    urls = core.fallback_fetch_urls('https://swordandlaser.fandom.com/wiki/Book_List')
-
-    self.assertEqual(1, len(logged))
-    self.assertEqual('https://swordandlaser.fandom.com/wiki/Book_List', logged[0][0])
-    self.assertEqual(urls, logged[0][1])
+    recipe.fetch_and_parse = lambda *_args, **_kwargs: (_ for _ in ()).throw(
+      main.ImportCancelledError('Import cancelled'))
+    with self.assertRaises(main.ImportCancelledError):
+      core.fetch_and_parse_recipe(recipe)
 
   def test_fetch_headers_accept_optional_user_agent(self):
     core = object.__new__(main.ListSwitchboardCore)
@@ -423,6 +508,150 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertEqual(
       'Custom Agent',
       core.fetch_headers(user_agent='Custom Agent')['User-Agent'])
+
+  def test_barnes_noble_fetcher_uses_supported_browser_identity(self):
+    from url_fetcher.barnes_noble_book_club import UrlFetcherBarnesNobleBookClub
+    from url_fetcher.generic import UrlFetcherError
+
+    rejected = '''
+        <html><head><title>Browser Update Required - Book Notification</title></head>
+        <body><h1>Browser Update Required</h1></body></html>
+    '''
+    accepted = '<table><tr><td></td><td>May 2018 Pick</td><td>Meg Wolitzer</td>' \
+      '<td>The Female Persuasion</td><td>8</td></tr></table>'
+    calls = []
+    generated = iter(('Generated Agent 1', 'Generated Agent 2'))
+
+    def fetch_url(url, user_agent=None):
+      calls.append((url, user_agent))
+      return accepted if user_agent == 'Generated Agent 2' else rejected
+
+    UrlFetcherBarnesNobleBookClub._session_user_agent = ''
+    try:
+      fetcher = UrlFetcherBarnesNobleBookClub()
+      fetcher.random_user_agent = lambda: next(generated)
+      self.assertEqual(accepted, fetcher.fetch_url(fetch_url, fetcher.URL))
+
+      self.assertEqual(fetcher.URL, calls[0][0])
+      self.assertIn('Chrome/150.', calls[0][1])
+      self.assertEqual(
+        ['Generated Agent 1', 'Generated Agent 2'],
+        [user_agent for _url, user_agent in calls[1:]])
+      self.assertEqual(
+        'Generated Agent 2', UrlFetcherBarnesNobleBookClub._session_user_agent)
+
+      session_calls = []
+      session_fetcher = UrlFetcherBarnesNobleBookClub()
+      session_fetcher.fetch_url(
+        lambda url, user_agent=None: session_calls.append((url, user_agent)) or accepted,
+        session_fetcher.URL)
+      self.assertEqual('Generated Agent 2', session_calls[0][1])
+
+      with self.assertRaises(UrlFetcherError) as caught:
+        fetcher.parse(rejected)
+      self.assertIn('User-Agent version needs to be updated', str(caught.exception))
+      self.assertIn('Calibre-generated browser identities', str(caught.exception))
+    finally:
+      UrlFetcherBarnesNobleBookClub._session_user_agent = ''
+
+  def test_decode_url_response_rejects_oversized_declared_length_without_reading(self):
+    class Headers:
+
+      def get(self, name):
+        return '5' if name == 'Content-Length' else None
+
+      def get_content_charset(self):
+        return None
+
+    class Response:
+      headers = Headers()
+
+      def read(self, _size):
+        self.fail('declared oversized responses must not be read')
+
+      def fail(self, message):
+        raise AssertionError(message)
+
+    with self.assertRaises(main.ResponseTooLargeError):
+      main.decode_url_response(Response(), max_bytes=4)
+
+  def test_fetch_url_caps_browser_and_urllib_streams(self):
+    class Headers:
+
+      def get(self, _name):
+        return None
+
+      def get_content_charset(self):
+        return None
+
+    class Response:
+
+      headers = Headers()
+
+      def __init__(self):
+        self.read_sizes = []
+
+      def read(self, size):
+        self.read_sizes.append(size)
+        return b'12345'
+
+      def __enter__(self):
+        return self
+
+      def __exit__(self, *_args):
+        return False
+
+    original_browser = main.CalibreBrowser
+    original_urlopen = main.urlopen
+    original_limit = main.DEFAULT_RESPONSE_MAX_BYTES
+    main.DEFAULT_RESPONSE_MAX_BYTES = 4
+    try:
+      browser_response = Response()
+      browser = types.SimpleNamespace(open=lambda _url, timeout=30: browser_response)
+      core = object.__new__(main.ListSwitchboardCore)
+      core.calibre_browser = lambda _headers: browser
+      core.debug_log = lambda *_args, **_kwargs: None
+      main.CalibreBrowser = object
+      with self.assertRaises(main.ResponseTooLargeError):
+        core.fetch_url('https://example.com/browser')
+      self.assertEqual([5], browser_response.read_sizes)
+
+      urllib_response = Response()
+      main.CalibreBrowser = None
+      main.urlopen = lambda _request, timeout=30: urllib_response
+      core.debug_fallback_urllib_fetch = lambda _url: None
+      with self.assertRaises(main.ResponseTooLargeError):
+        core.fetch_url('https://example.com/urllib')
+      self.assertEqual([5], urllib_response.read_sizes)
+    finally:
+      main.CalibreBrowser = original_browser
+      main.urlopen = original_urlopen
+      main.DEFAULT_RESPONSE_MAX_BYTES = original_limit
+
+  def test_known_large_pdf_and_data_fetchers_request_expanded_limit(self):
+    from url_fetcher.cbca_book_of_the_year import UrlFetcherCBCABookOfTheYearOlderReaders
+    from url_fetcher.governor_general import UrlFetcherGovernorGeneralEnglishFiction
+    from url_fetcher.newbery import UrlFetcherJohnNewberyMedal
+    from url_fetcher.walter_scott import UrlFetcherWalterScottPrize
+
+    fetchers = (
+      UrlFetcherCBCABookOfTheYearOlderReaders(),
+      UrlFetcherGovernorGeneralEnglishFiction(),
+      UrlFetcherJohnNewberyMedal(),
+    )
+    calls = []
+
+    def fetch_url(url, max_bytes=None):
+      calls.append((url, max_bytes))
+      return ''
+
+    for fetcher in fetchers:
+      fetcher.fetch_url(fetch_url, fetcher.URL)
+    attempt = UrlFetcherWalterScottPrize().source_attempts()[0]
+    attempt.fetch_url(fetch_url)(attempt.url)
+
+    self.assertTrue(calls)
+    self.assertTrue(all(max_bytes == main.LARGE_RESPONSE_MAX_BYTES for _url, max_bytes in calls))
 
   def test_fetch_url_adds_ssl_diagnostics_for_certificate_failures(self):
     core = object.__new__(main.ListSwitchboardCore)
@@ -506,7 +735,7 @@ class ImportMatchingTest(unittest.TestCase):
     ''', 'html.parser')
 
     nominations = parse_sword_and_laser_march_page(
-      soup, {'position': '190', 'title': 'Dungeon Crawler Carl', 'author': 'Matt Dinniman'})
+      soup, {'position': '190', 'title': 'Dungeon Crawler Carl', 'authors': ['Matt Dinniman']})
 
     self.assertEqual(
       [('190.01', 'Dungeon Crawler Carl'), ('190.02', 'Kill the Farm Boy'),
@@ -586,6 +815,42 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertEqual('winner', winner['selection_type'])
     self.assertEqual('Tegan Quin', winner['advocate_defender_host_selector'])
 
+    canada_archive = CanadaReadsParser().parse('''
+      <div class="story">
+        <p><em>The Cure for Drowning</em> by Loghan Paylor won Canada Reads 2026.
+          It was championed by Tegan Quin.</p>
+        <p>The other 2026 contenders were:</p>
+        <ul>
+          <li><a href="/books/a-minor-chorus"><em>A Minor Chorus</em></a>
+            by Billy-Ray Belcourt, championed by Elle-Maija Tailfeathers</li>
+          <li><a href="/books/foe"><em>Foe</em></a>
+            by Iain Reid, championed by Josh Dela Cruz</li>
+          <li>BookTok star Morgann Book champions
+            <a href="/books/its-different-this-time"><em>It's Different This Time</em></a>
+            by Joss Richard</li>
+        </ul>
+        <p><em>A Two-Spirit Journey</em> by Ma-Nee Chacaby, with Mary Louisa Plummer
+          won Canada Reads 2025. It was championed by Shayla Stonechild.</p>
+        <p>The other 2025 contenders were:</p>
+        <ul>
+          <li><em>Watch Out for Her</em> by Samantha M. Bailey,
+            championed by Maggie Mac Neil</li>
+        </ul>
+      </div>
+      <div class="card" data-title="Quick Links" data-author="CBC footer">
+        Canada Reads 2026 news
+      </div>
+    ''', 'https://www.cbc.ca/books/canadareads/past-canada-reads-contenders-and-winners-1.4034451')
+    self.assertEqual([
+      'A Two-Spirit Journey', 'Watch Out for Her',
+      'The Cure for Drowning', 'A Minor Chorus', 'Foe', "It's Different This Time",
+    ], [entry['title'] for entry in canada_archive['entries']])
+    self.assertEqual(
+      ['Ma-Nee Chacaby', 'Mary Louisa Plummer'],
+      canada_archive['entries'][0]['authors'])
+    self.assertEqual('winner', canada_archive['entries'][0]['selection_type'])
+    self.assertNotIn('Quick Links', [entry['title'] for entry in canada_archive['entries']])
+
     library_reads = LibraryReadsParser().parse('''
       <table>
         <tr><th>Month</th><th>Title</th><th>Author</th><th>Type</th></tr>
@@ -604,16 +869,50 @@ class ImportMatchingTest(unittest.TestCase):
     ''', 'https://libraryreads.org/archive', fetch_url=lambda url: '''Month,"Author (Last, First)",Title,Publisher,ISBN,Pub Date,Top Pick,HoF,Debut,Bonus Pick,Book Clubs,Genre,Annotation,Nominator/Library
 2026/2,"Dinniman, Matt",Operation Bounce House,Ace,9780000000001,2/3/2026,X,,,,,Science Fiction,"",LibraryReads
 2026/2,"Jones, Tayari",Kin: A Novel,Knopf,9780000000002,2/3/2026,,,,,,General Fiction,"",LibraryReads
+2026/2,"Benedict, Marie and Victoria Christopher Murray",A Pair of Aces,Berkley,9780000000005,2/3/2026,,,,,,Historical Fiction,"",LibraryReads
+2026/2,"Flowers, Ashley with Alex Kiester",The Missing Half,Bantam,9780000000006,2/3/2026,,,,,,Mystery/Thriller,"",LibraryReads
+2026/2,"Williams, Beatriz; Willig, Lauren and White, Karen",The Author's Guide to Murder,William Morrow,9780000000007,2/3/2026,,,,,,Mystery/Thriller,"",LibraryReads
+2026/2,"Sparks, Nicholas, and M. Night Shyamalan",Remain,Random House,9780000000008,2/3/2026,,,,,,Mystery/Thriller,"",LibraryReads
 2026/2,"Fawcett, Heather",Agnes Aubert's Mystical Cat Shelter,Del Rey,9780000000003,2/3/2026,,X,,,,Fantasy,Hall of Fame Author,
 2026/2,"Sabit, Patmeena",Good People: A Novel,Crown,9780000000004,2/3/2026,,,,X,,General Fiction,"",LibraryReads
 ''')
-    self.assertEqual(['Operation Bounce House', 'Kin: A Novel'], [
+    self.assertEqual([
+      'Operation Bounce House', 'Kin: A Novel', 'A Pair of Aces',
+      'The Missing Half', "The Author's Guide to Murder", 'Remain'], [
       entry['title'] for entry in library_archive['entries']])
-    self.assertEqual(['top_pick', 'staff_pick'], [
+    self.assertEqual([
+      'top_pick', 'staff_pick', 'staff_pick', 'staff_pick', 'staff_pick', 'staff_pick'], [
       entry['selection_type'] for entry in library_archive['entries']])
+    by_title = {entry['title']: entry for entry in library_archive['entries']}
+    self.assertEqual(
+      ['Marie Benedict', 'Victoria Christopher Murray'],
+      by_title['A Pair of Aces']['authors'])
+    self.assertEqual(
+      ['Ashley Flowers', 'Alex Kiester'],
+      by_title['The Missing Half']['authors'])
+    self.assertEqual(
+      ['Beatriz Williams', 'Lauren Willig', 'Karen White'],
+      by_title["The Author's Guide to Murder"]['authors'])
+    self.assertEqual(
+      ['Nicholas Sparks', 'M. Night Shyamalan'],
+      by_title['Remain']['authors'])
     self.assertEqual('Matt Dinniman', entry_author(library_archive['entries'][0]))
     self.assertEqual('February 2026', library_archive['entries'][0]['selection_label'])
     self.assertTrue(any('official public archive spreadsheet' in note for note in library_archive['notes']))
+
+    positioned_library_reads = LibraryReadsParser().parse('''Month,"Author (Last, First)",Title,Top Pick,HoF,Bonus Pick
+2013/11,"Setterfield, Diane",Bellman & Black,,,
+2013/9,"Rowell, Rainbow",Fangirl: A Novel,X,,
+2013/9,"Pessl, Marisha",Night Film: A Novel,,,
+2013/10,"Simsion, Graeme",The Rosie Project: A Novel,,,
+''', 'https://docs.google.com/spreadsheets/libraryreads')
+    self.assertEqual([
+      'Fangirl: A Novel', 'Night Film: A Novel',
+      'The Rosie Project: A Novel', 'Bellman & Black'], [
+        entry['title'] for entry in positioned_library_reads['entries']])
+    self.assertEqual(
+      ['1', '2', '3', '4'],
+      [entry['position'] for entry in positioned_library_reads['entries']])
 
     barnes = BarnesNobleBookClubParser().parse('''
       <article class="post-card" data-title="Florence Adler Swims Forever"
@@ -719,6 +1018,84 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertEqual(['Summer Island'], [entry['title'] for entry in richard_judy['entries']])
     self.assertEqual('seasonal_pick', richard_judy['entries'][0]['selection_type'])
 
+    book_notification = RichardJudyBookClubParser().parse('''
+      <h1>Richard &amp; Judy Book Club Picks</h1>
+      <article class="book" data-title="Search Result Noise" data-author="Not a Pick"
+          data-year="2026">Book search navigation</article>
+      <table>
+        <tr><th>Read</th><th>Category</th><th>Author</th><th>Title</th><th>Avg.</th></tr>
+        <tr><td></td><td>2004 Pick</td><td>Monica Ali</td>
+          <td>Brick Lane</td><td>8</td></tr>
+        <tr><td></td><td>2004 Summer Pick</td><td>Cecelia Ahern</td>
+          <td>PS, I Love You</td><td>8.3</td></tr>
+        <tr><td></td><td>2026 Summer Pick</td><td>Kristin Hannah</td>
+          <td><a href="https://example.com/summer-island">Summer Island</a></td><td>7.5</td></tr>
+        <tr><td></td><td>2026 Summer Pick</td><td>David Baldacci</td>
+          <td><a href="https://example.com/nash-falls">Nash Falls</a></td><td>8.3</td></tr>
+      </table>
+    ''', 'https://www.booknotification.com/book-clubs/richard-judy-book-club/')
+    self.assertEqual(
+      ['Brick Lane', 'PS, I Love You', 'Summer Island', 'Nash Falls'],
+      [entry['title'] for entry in book_notification['entries']])
+    self.assertEqual(
+      ['2004', '2004', '2026', '2026'],
+      [entry['selection_year'] for entry in book_notification['entries']])
+
+  def test_library_reads_bonus_categories_classify_shared_csv_rows(self):
+    from parser.library_reads import (
+      LibraryReadsBonusPicksParser,
+      LibraryReadsNotableNonfictionParser,
+      LibraryReadsParser,
+    )
+
+    csv_text = '''Month,"Author (Last, First)",Title,Top Pick,HoF,Bonus Pick,Genre,Annotation
+2026/1,"Main, Mary",Main Selection,,, ,General Fiction,Past Hall of Fame author
+2/2026,"Top, Terry",February Top Pick,X,,,Science Fiction,
+2026/1,"Hall, Harriet",Hall Only,,X,,Fantasy,
+2026/1,"Bonus, Bea and Coauthor, Chris",January Bonus,,,X,Fantasy,
+2/2026,"Second, Sam",February Bonus,,,X,Mystery/Thriller,
+2026/1,"Facts, Fiona",January Notable,,,X,Nonfiction,
+2/2026,"History, Hannah",February Notable,,X,X,History / Nonfiction,
+'''
+    parsers = (
+      LibraryReadsParser(),
+      LibraryReadsBonusPicksParser(),
+      LibraryReadsNotableNonfictionParser(),
+    )
+    main_list, bonus, notable = [
+      parser.parse(csv_text, 'https://docs.google.com/spreadsheets/libraryreads')
+      for parser in parsers
+    ]
+
+    self.assertEqual(
+      ['Main Selection', 'February Top Pick'],
+      [entry['title'] for entry in main_list['entries']])
+    self.assertEqual(
+      ['January Bonus', 'February Bonus'],
+      [entry['title'] for entry in bonus['entries']])
+    self.assertEqual(
+      ['January Notable', 'February Notable'],
+      [entry['title'] for entry in notable['entries']])
+    self.assertNotIn('Hall Only', [
+      entry['title'] for parsed in (main_list, bonus, notable)
+      for entry in parsed['entries']
+    ])
+    self.assertEqual(
+      ['Bea Bonus', 'Chris Coauthor'], bonus['entries'][0]['authors'])
+    self.assertEqual(['1', '2'], [entry['position'] for entry in bonus['entries']])
+    self.assertEqual(['1', '2'], [entry['position'] for entry in notable['entries']])
+    self.assertEqual('2', bonus['entries'][1]['selection_month'])
+    self.assertEqual('February 2026', bonus['entries'][1]['selection_label'])
+    self.assertTrue(all(
+      entry['club_scope'] == 'bonus_picks' and
+      entry['selection_type'] == 'bonus_pick'
+      for entry in bonus['entries']))
+    self.assertTrue(all(
+      entry['club_scope'] == 'notable_nonfiction' and
+      entry['selection_type'] == 'notable_nonfiction' and
+      'nonfiction' in entry.get('scope_flags', '')
+      for entry in notable['entries']))
+
   def test_general_audience_book_club_parsers_handle_live_page_shapes(self):
     from parser.oprah_book_club import OprahBookClubParser
     from parser.reese_book_club import ReeseBookClubParser
@@ -811,8 +1188,12 @@ class ImportMatchingTest(unittest.TestCase):
       <h3><a href="/culture/story/dolly">Dolly All the Time: A GMA Book Club Pick by Annabel Monaghan</a></h3>
       <p>May 2026</p>
       <h3>Homebound by Portia Elan</h3>
+      <p><em>Editor's note: This was originally published on Aug. 2, 2022.</em></p>
+      <p>July 10, 2026</p>
+      <h3>Taylor Swift paid New York City more than $160k for wedding permit, mayor says</h3>
     ''', 'https://www.goodmorningamerica.com/culture/story/shop-gma-book-club-picks-list--81520726')
     self.assertEqual(['Homebound', 'Dolly All the Time'], [entry['title'] for entry in gma['entries']])
+    self.assertEqual(['1', '2'], [entry['position'] for entry in gma['entries']])
     self.assertEqual('Annabel Monaghan', entry_author(gma['entries'][1]))
 
     service95 = Service95BookClubParser().parse('''
@@ -830,8 +1211,685 @@ class ImportMatchingTest(unittest.TestCase):
       ['The Housemaid', 'The Family Upstairs', 'Summer Island'],
       [entry['title'] for entry in richard_judy['entries']])
 
+  def test_richard_judy_fetcher_falls_back_after_tgjones_failure(self):
+    from url_fetcher.richard_judy_book_club import UrlFetcherRichardJudyBookClub
+
+    fetcher = UrlFetcherRichardJudyBookClub()
+    fallback_html = '''
+      <h1>Richard &amp; Judy Book Club Picks</h1>
+      <table>
+        <tr><th>Read</th><th>Category</th><th>Author</th><th>Title</th><th>Avg.</th></tr>
+        <tr><td></td><td>2026 Summer Pick</td><td>Kristin Hannah</td>
+          <td>Summer Island</td><td>7.5</td></tr>
+      </table>
+    '''
+    attempts = []
+
+    def fetch_url(url, user_agent=None, **_kwargs):
+      attempts.append((url, user_agent))
+      if url == fetcher.URL:
+        raise RuntimeError('HTTP Error 403: Forbidden')
+      return fallback_html
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+    self.assertEqual(
+      [fetcher.URL, fetcher.BOOK_NOTIFICATION_URL],
+      [url for url, _user_agent in attempts])
+    self.assertIsNone(attempts[0][1])
+    self.assertIn('Chrome/150.', attempts[1][1])
+    self.assertEqual(['Summer Island'], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual(fetcher.BOOK_NOTIFICATION_URL, parsed['source']['url'])
+
+  def test_richard_judy_fetcher_retries_booknotification_browser_interstitial(self):
+    from url_fetcher.richard_judy_book_club import UrlFetcherRichardJudyBookClub
+
+    rejected = '<html><title>Browser Update Required - Book Notification</title></html>'
+    accepted = '''
+      <h1>Richard &amp; Judy Book Club Picks</h1>
+      <table>
+        <tr><th>Read</th><th>Category</th><th>Author</th><th>Title</th><th>Avg.</th></tr>
+        <tr><td></td><td>2026 Summer Pick</td><td>Kristin Hannah</td>
+          <td>Summer Island</td><td>7.5</td></tr>
+      </table>
+    '''
+    fetcher = UrlFetcherRichardJudyBookClub()
+    generated = iter(('Generated Agent 1', 'Generated Agent 2'))
+    fetcher.random_user_agent = lambda: next(generated)
+    calls = []
+
+    def fetch_url(url, user_agent=None):
+      calls.append((url, user_agent))
+      if url == fetcher.URL:
+        return '<html><h1>Richard and Judy Book Club</h1></html>'
+      return accepted if user_agent == 'Generated Agent 2' else rejected
+
+    UrlFetcherRichardJudyBookClub._session_book_notification_user_agent = ''
+    try:
+      parsed = fetcher.fetch_and_parse(fetch_url)
+      self.assertEqual(['Summer Island'], [entry['title'] for entry in parsed['entries']])
+      self.assertEqual(
+        [fetcher.BOOK_NOTIFICATION_USER_AGENT, 'Generated Agent 1', 'Generated Agent 2'],
+        [user_agent for url, user_agent in calls if url == fetcher.BOOK_NOTIFICATION_URL])
+      self.assertEqual(
+        'Generated Agent 2',
+        UrlFetcherRichardJudyBookClub._session_book_notification_user_agent)
+    finally:
+      UrlFetcherRichardJudyBookClub._session_book_notification_user_agent = ''
+
+  def test_service95_fetcher_follows_monthly_book_detail_links(self):
+    from url_fetcher.service95_book_club import UrlFetcherService95BookClub
+
+    landing = '''
+      <a href="books/free-lea-ypi" title="Dua’s Monthly Read for July: Free by Lea Ypi">
+        Explore Dua's Monthly Read
+      </a>
+      <h2>Previous Monthly Reads</h2>
+      <div class="swiper-slide">
+        <a href="/books/the-son-of-man-jean-baptiste-del-amo">
+          <img alt="2026 February">
+        </a>
+        <h3>2026 February</h3>
+      </div>
+      <div class="swiper-slide">
+        <a href="/books/brightly-shining-ingvild-rishoi">
+          <img alt="2025 December">
+        </a>
+        <h3>2025 December</h3>
+      </div>
+      <div class="swiper-slide">
+        <a href="/books/trust-2"><img alt="2024 March"></a>
+        <h3>2024 March</h3>
+      </div>
+      <img alt="Dua's Monthly Reads - Service95 Book Club">
+      <img alt="Service95 Book Club June Team Reads">
+    '''
+    pages = {
+      'https://www.service95.com/books/free-lea-ypi': '''
+        <meta property="og:title" content="Dua's Monthly Read: Free by Lea Ypi">
+        <section><h1>Free</h1><p><strong>Dua's Monthly Read for July 2026</strong></p></section>
+      ''',
+      'https://www.service95.com/books/the-son-of-man-jean-baptiste-del-amo': '''
+        <meta property="og:title" content="Dua's Monthly Read: The Son Of Man by Jean-Baptiste Del Amo">
+        <section><h1>The Son Of Man</h1><p><strong>Dua's Monthly Read for February 2026</strong></p></section>
+      ''',
+      'https://www.service95.com/books/brightly-shining-ingvild-rishoi': '''
+        <meta property="og:title" content="Dua's Monthly Read: Brightly Shining by Ingvild Rishøi, for Service95 Book Club and buy the book">
+        <section><h1>Brightly Shining</h1><p><strong>Dua's Monthly Read for December 2025</strong></p></section>
+      ''',
+      'https://www.service95.com/books/trust-2': '''
+        <section><h1>Trust</h1><p><strong>Dua's Monthly Read for March 2024</strong></p></section>
+      ''',
+    }
+    calls = []
+
+    def fetch_url(url):
+      calls.append(url)
+      return pages[url]
+
+    parsed = UrlFetcherService95BookClub().parse(landing, fetch_url=fetch_url)
+
+    self.assertEqual(list(pages), calls)
+    self.assertEqual(
+      ['Trust', 'Brightly Shining', 'The Son Of Man', 'Free'],
+      [entry['title'] for entry in parsed['entries']])
+    self.assertEqual(
+      ['Hernan Diaz', 'Ingvild Rishøi', 'Jean-Baptiste Del Amo', 'Lea Ypi'],
+      [entry_author(entry) for entry in parsed['entries']])
+    self.assertEqual(['1', '2', '3', '4'], [
+      entry['position'] for entry in parsed['entries']])
+    self.assertEqual(['2024', '2025', '2026', '2026'], [
+      entry['selection_year'] for entry in parsed['entries']])
+    self.assertEqual(['3', '12', '2', '7'], [
+      entry['selection_month'] for entry in parsed['entries']])
+    self.assertEqual(
+      'https://www.service95.com/books/trust-2',
+      entry_source_url(parsed['entries'][0]))
+
+  def test_reese_book_club_joins_wordpress_cards_paginates_and_reads_featured_label(self):
+    from url_fetcher.reese_book_club import UrlFetcherReeseBookClub
+
+    fetcher = UrlFetcherReeseBookClub()
+    page_two_url = fetcher.URL + '?query-2-page=2'
+    featured_url = 'https://reesesbookclub.com/book/a-founding-mother/'
+    page_one = f'''
+      <ul class="wp-block-post-template">
+        <li class="wp-block-post post-3 book">
+          <figure><a href="{featured_url}"><img alt="A Founding Mother"></a></figure>
+        </li>
+        <li class="wp-block-post post-2 book book_category-june-26-pick">
+          <figure><a href="/book/a-pair-of-aces/"><img alt="A Pair of Aces"></a></figure>
+          <div class="taxonomy-book_category">June ‘26 Pick</div>
+        </li>
+        <li class="wp-block-post post-1 book">
+          <figure><a href="/book/twelfth-knight/"><img alt="Twelfth Knight"></a></figure>
+          <div class="taxonomy-book_category">Summer ‘24 YA Pick</div>
+        </li>
+      </ul>
+      <a class="page-numbers" href="?query-2-page=2">2</a>
+      <div class="popup-details" id="post-3"><div class="popup-content">
+        <h3>A Founding Mother</h3><h4>by Stephanie Dray and Laura Kamoie</h4>
+      </div></div>
+      <div class="popup-details" id="post-2"><div class="popup-content">
+        <h3>A Pair of Aces</h3><h4>by Marie Benedict and Victoria Christopher Murray</h4>
+      </div></div>
+      <div class="popup-details" id="post-1"><div class="popup-content">
+        <h3>Twelfth Knight</h3><h4>by Alexene Farol Follmuth</h4>
+      </div></div>
+    '''
+    page_two = '''
+      <ul class="wp-block-post-template">
+        <li class="wp-block-post post-2 book">
+          <figure><a href="/book/a-pair-of-aces/"><img alt="A Pair of Aces"></a></figure>
+          <div class="taxonomy-book_category">June '26 Pick</div>
+        </li>
+        <li class="wp-block-post post-4 book">
+          <figure><a href="/book/eleanor-oliphant/"><img alt="Eleanor Oliphant is Completely Fine"></a></figure>
+          <div class="taxonomy-book_category">May '17 Pick</div>
+        </li>
+      </ul>
+      <div class="popup-details" id="post-4"><div class="popup-content">
+        <h3>Eleanor Oliphant is Completely Fine</h3><h4>by Gail Honeyman</h4>
+      </div></div>
+    '''
+    featured = '''
+      <h4>July '26 Pick</h4>
+      <h1>A Founding Mother</h1>
+      <h3 class="mt-0">Stephanie Dray and Laura Kamoie</h3>
+    '''
+    pages = {
+      fetcher.URL: page_one,
+      page_two_url: page_two,
+      featured_url: featured,
+    }
+    calls = []
+
+    parsed = fetcher.fetch_and_parse(
+      lambda url: calls.append(url) or pages[url])
+    entries = parsed['entries']
+
+    self.assertEqual([
+      'Eleanor Oliphant is Completely Fine', 'A Pair of Aces',
+      'A Founding Mother'], [entry['title'] for entry in entries])
+    self.assertEqual(['1', '2', '3'], [entry['position'] for entry in entries])
+    self.assertEqual(
+      ['Marie Benedict', 'Victoria Christopher Murray'], entries[1]['authors'])
+    self.assertEqual(
+      ['Stephanie Dray', 'Laura Kamoie'], entries[2]['authors'])
+    self.assertEqual(
+      [fetcher.URL, page_two_url, featured_url], calls)
+    self.assertEqual(featured_url, entry_source_url(entries[2]))
+
+  def test_reese_book_club_ya_recipe_separates_seasonal_and_early_ya_picks(self):
+    from parser.reese_book_club import ReeseBookClubParser
+    from url_fetcher.reese_book_club import UrlFetcherReeseBookClubYA
+
+    html = '''
+      <ul class="wp-block-post-template">
+        <li class="wp-block-post post-3 book">
+          <figure><a href="/book/twelfth-knight/"><img alt="Twelfth Knight"></a></figure>
+          <div class="taxonomy-book_category">Summer '24 YA Pick</div>
+        </li>
+        <li class="wp-block-post post-2 book">
+          <figure><a href="/book/everything-inside/"><img alt="Everything Inside"></a></figure>
+          <div class="taxonomy-book_category">August '20 Pick</div>
+        </li>
+        <li class="wp-block-post post-1 book">
+          <figure><a href="/book/you-should-see-me/"><img alt="You Should See Me in a Crown"></a></figure>
+          <div class="taxonomy-book_category">August '20 Pick</div>
+        </li>
+      </ul>
+      <div class="popup-details" id="post-3"><div class="popup-content">
+        <h3>Twelfth Knight</h3><h4>by Alexene Farol Follmuth</h4>
+      </div></div>
+      <div class="popup-details" id="post-2"><div class="popup-content">
+        <h3>Everything Inside</h3><h4>by Edwidge Danticat</h4>
+      </div></div>
+      <div class="popup-details" id="post-1"><div class="popup-content">
+        <h3>You Should See Me in a Crown</h3><h4>by Leah Johnson</h4>
+      </div></div>
+    '''
+
+    main_entries = ReeseBookClubParser().parse(
+      html, 'https://reesesbookclub.com/our-picks/')['entries']
+    ya_entries = UrlFetcherReeseBookClubYA().parse(html)['entries']
+
+    self.assertEqual(['Everything Inside'], [entry['title'] for entry in main_entries])
+    self.assertEqual(
+      ['You Should See Me in a Crown', 'Twelfth Knight'],
+      [entry['title'] for entry in ya_entries])
+    self.assertEqual(['1', '2'], [entry['position'] for entry in ya_entries])
+    self.assertTrue(all(
+      entry['selection_type'] == 'ya_pick' for entry in ya_entries))
+    self.assertTrue(all(
+      entry['scope_flags'] == 'young_adult' for entry in ya_entries))
+
+  def test_read_with_jenna_rejects_page_text_and_merges_legacy_product_duplicates(self):
+    from parser.read_with_jenna import ReadWithJennaParser
+
+    parsed = ReadWithJennaParser().parse('''
+      <h2>July 2026</h2>
+      <h2 class="styles_product-title">"The Shampoo Effect" by Jenny Jackson</h2>
+      <p>A juicy novel about a tight-knit friend group shaken up by an unexpected pregnancy.</p>
+      <h2>June 2020</h2>
+      <h3 class="body-heading">"Late Migrations," by Margret Renkl</h3>
+      <h2 class="styles_product-title">"Late Migrations," by Margaret Renkl</h2>
+      <h2>May 2020</h2>
+      <h3 class="body-heading">"All Adults Here" by Emma Straub</h3>
+      <h2 class="styles_product-title">"All Adults Here" by Emma Staub</h2>
+      <h2>April 2020</h2>
+      <h3 class="body-heading">"Here For It" by R. Eric Thomas</h3>
+      <h2 class="styles_product-title">"Here for It" by R. Eric Thomas</h2>
+      <h2>March 2019</h2>
+      <h3 class="body-heading">"The Unwinding of the Miracle," by Julie Yip-Williams</h3>
+      <h2 class="styles_product-title">"The Unwinding of the Miracle: A Memoir of Life, Death, and Everything That Comes After," by Julie Yip-Williams</h2>
+      <h2>February 2019</h2>
+      <h3 class="body-heading">"The Last Romantics," by Tara Conklin</h3>
+      <h2 class="styles_product-title">"The Last Romantics: a Novel," by Tara Conklin</h2>
+      <p>© 2026 NBCUniversal Media, LLC Apple®, Apple logo® and App Store® are registered trademarks of Apple Inc.</p>
+    ''', 'https://www.today.com/shop/read-jenna')
+
+    self.assertEqual([
+      'The Last Romantics', 'The Unwinding of the Miracle', 'Here for It',
+      'All Adults Here', 'Late Migrations', 'The Shampoo Effect'], [
+        entry['title'] for entry in parsed['entries']])
+    by_title = {entry['title']: entry for entry in parsed['entries']}
+    self.assertEqual(['Margaret Renkl'], by_title['Late Migrations']['authors'])
+    self.assertEqual(['Emma Straub'], by_title['All Adults Here']['authors'])
+    self.assertEqual('special_pick', by_title['Here for It']['selection_type'])
+
+  def test_read_with_jenna_jr_discovers_archive_categories_and_creators(self):
+    from url_fetcher.read_with_jenna import UrlFetcherReadWithJennaJr
+
+    fetcher = UrlFetcherReadWithJennaJr()
+    current_url = fetcher.BOOTSTRAP_URL
+    year_2025_url = (
+      'https://www.today.com/popculture/books/'
+      'read-with-jenna-junior-book-list-2025-rcna203839')
+    year_2025_alias_url = (
+      'https://www.today.com/popculture/books/'
+      'read-jenna-junior-book-list-2025-alias')
+    year_2024_url = (
+      'https://www.today.com/popculture/books/'
+      'read-jenna-junior-book-list-2024-rcna152467')
+    missing_2023_url = (
+      'https://www.today.com/popculture/'
+      'read-jenna-junior-book-list-2023-t286510')
+    pages = {
+      fetcher.URL: f'<a href="{current_url}">Read with Jenna Jr.</a>',
+      current_url: f'''
+        <h1>Read With Jenna Jr. 2026: See All 3 Books</h1>
+        <link rel="canonical" href="{current_url}">
+        <a href="{year_2025_url}">2025 Read With Jenna Jr. list</a>
+        <a href="{year_2025_url}#picture-books">2025 duplicate link</a>
+        <a href="{year_2025_alias_url}">2025 alias link</a>
+        <h2>Picture Books (Ages 4-8)</h2>
+        <h2>"Better Pets" by Leigh Bardugo</h2>
+        <h2>Middle Grade (Ages 8-12)</h2>
+        <h2>"A Fishboy Named . . . Sashimi" by Dan Santat</h2>
+        <h2>Young Adult (Ages 13 and Up)</h2>
+        <h2>"Soundtrack" by Jason Reynolds</h2>
+      ''',
+      year_2025_url: f'''
+        <h1>Read With Jenna Jr. 2025: See All 2 Books</h1>
+        <a href="{year_2024_url}">2024 Read With Jenna Jr. list</a>
+        <a href="{missing_2023_url}">2023 Read With Jenna Jr. list</a>
+        <h2>Picture books (ages 4 to 8)</h2>
+        <h3>"Very Good Hats" by Emma Straub and illustrated by Blanca Gomez</h3>
+        <h2>Middle grade (ages 8 to 12)</h2>
+        <h3>"J vs. K" by Kwame Alexander and Jerry Craft</h3>
+        <h2>Young Adult (ages 13 and up)</h2>
+        <h3>"Once a Queen" by Sarah Arthur</h3>
+      ''',
+      year_2024_url: '''
+        <h1>Read With Jenna Jr. 2024: See All 2 Books</h1>
+        <h2>Picture books</h2>
+        <h3>"A Crown of Stories: The Life and Language of Beloved Writer Toni Morrison"
+          by Carole Boston Weatherford</h3>
+        <h2>"A Crown of Stories" by Carole Boston Weatherford</h2>
+        <h2>Read with Jenna Jr. Young Adults Picks</h2>
+        <h3>"Blood at the Root" by LaDarrion Williams</h3>
+      ''',
+    }
+    calls = []
+
+    def fetch_url(url):
+      calls.append(url)
+      if url == missing_2023_url:
+        raise OSError('historical page unavailable')
+      return pages[url]
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+    entries = parsed['entries']
+
+    self.assertEqual([
+      'A Crown of Stories: The Life and Language of Beloved Writer Toni Morrison',
+      'Blood at the Root', 'Very Good Hats', 'J vs. K', 'Once a Queen',
+      'Better Pets', 'A Fishboy Named . . . Sashimi', 'Soundtrack'], [
+        entry['title'] for entry in entries])
+    self.assertEqual(
+      [str(position) for position in range(1, 9)],
+      [entry['position'] for entry in entries])
+    self.assertEqual(['Emma Straub'], entries[2]['authors'])
+    self.assertEqual(['Kwame Alexander', 'Jerry Craft'], entries[3]['authors'])
+    self.assertEqual('junior_annual', entries[0]['club_scope'])
+    self.assertEqual('annual_pick', entries[0]['selection_type'])
+    self.assertEqual('picture_book', entries[0]['scope_flags'])
+    self.assertEqual('2024 Picture Books', entries[0]['selection_label'])
+    self.assertEqual(year_2024_url, entry_source_url(entries[0]))
+    self.assertEqual(1, calls.count(year_2025_url))
+    self.assertNotIn(year_2025_alias_url, calls)
+    self.assertEqual(1, calls.count(missing_2023_url))
+    self.assertTrue(any(
+      '2023 page could not be fetched' in note for note in parsed['notes']))
+    self.assertTrue(any(
+      '2025 headline declares 2 books; 3 structured book headings were imported'
+      in note for note in parsed['notes']))
+
+  def test_read_with_jenna_jr_suppresses_only_known_2025_count_mismatch(self):
+    from parser.read_with_jenna import ReadWithJennaJuniorParser
+
+    html = (
+      '<h1>Read With Jenna Jr. 2025: See All 22 Books</h1>'
+      '<h2>Picture books (ages 4 to 8)</h2>'
+      + ''.join(
+        f'<h3>"Book {number}" by Author {number}</h3>'
+        for number in range(1, 24))
+    )
+    entries, notes = ReadWithJennaJuniorParser().entries_from_annual_page(
+      html,
+      'https://www.today.com/popculture/books/read-with-jenna-junior-book-list-2025-test',
+      '2025',
+      'junior_annual',
+      'https://www.today.com/shop/read-with-jenna',
+    )
+
+    self.assertEqual(23, len(entries))
+    self.assertFalse(any('headline declares' in note for note in notes))
+
+  def test_read_with_jenna_jr_uses_annual_bootstrap_when_hub_has_no_link(self):
+    from url_fetcher.read_with_jenna import UrlFetcherReadWithJennaJr
+
+    fetcher = UrlFetcherReadWithJennaJr()
+    calls = []
+    pages = {
+      fetcher.URL: '<h1>Read With Jenna</h1>',
+      fetcher.BOOTSTRAP_URL: '''
+        <h1>Read With Jenna Jr. 2026: See All 1 Book</h1>
+        <h2>Picture Books (Ages 4-8)</h2>
+        <h2>"Better Pets" by Leigh Bardugo</h2>
+      ''',
+    }
+
+    parsed = fetcher.fetch_and_parse(
+      lambda url: calls.append(url) or pages[url])
+
+    self.assertEqual([fetcher.URL, fetcher.BOOTSTRAP_URL], calls)
+    self.assertEqual(['Better Pets'], [entry['title'] for entry in parsed['entries']])
+
+  def test_gma_book_club_uses_article_server_state_and_preserves_comma_titles(self):
+    from parser.gma_book_club import GMABookClubParser
+
+    body = [[
+      {'type': 'h3', 'content': ['May 2021']},
+      {'type': 'inline', 'content': {
+        'name': 'CommercePromo',
+        'props': {'headline': "'Olympus, Texas' by Stacey Swann"},
+      }},
+      {'type': 'h3', 'content': ['October 2022']},
+      {'type': 'inline', 'content': {
+        'name': 'CommercePromo',
+        'props': {'headline': "'Mad Honey' by Jodi Picoult and Jennifer Finney Boylan"},
+      }},
+      {'type': 'h3', 'content': ['November 2022']},
+      {'type': 'inline', 'content': {
+        'name': 'CommercePromo',
+        'props': {'headline': "'Someday, Maybe' by Onyi Nwabineli"},
+      }},
+      {'type': 'h3', 'content': ['November 2023']},
+      {'type': 'inline', 'content': {
+        'name': 'CommercePromo',
+        'props': {'headline': 'Class: A Memoir of Motherhood, Hunger, and Higher Education by Stephanie Land'},
+      }},
+      {'type': 'h3', 'content': ['June 2025']},
+      {'type': 'inline', 'content': {
+        'name': 'CommercePromo',
+        'props': {'headline': 'Atmosphere: A Love Story'},
+      }},
+      {'type': 'h3', 'content': ['September 2025']},
+      {'type': 'inline', 'content': {
+        'name': 'CommercePromo',
+        'props': {'headline': 'The Book of Lost Hours by Hayley Gelfuso'},
+      }},
+      {'type': 'h3', 'content': ['April 2025']},
+      {'type': 'inline', 'content': {
+        'name': 'CommercePromo',
+        'props': {'headline': 'The Sirens: A Novel'},
+      }},
+    ]]
+    state = {
+      'page': {'content': {'article': {'mainComponents': [
+        {'name': 'Body', 'props': {'body': body}},
+      ]}}},
+    }
+    html = (
+      '<html><body><script>window[\'__gma__\']=' + json.dumps(state) + ';</script>'
+      '<h3>July 2026</h3><p>Sponsored Content by Taboola</p>'
+      '<h3>Taylor Swift paid New York City more than $160k by the mayor</h3>'
+      '</body></html>')
+
+    entries = GMABookClubParser().parse(
+      html,
+      'https://www.goodmorningamerica.com/culture/story/shop-gma-book-club-picks-list--81520726',
+    )['entries']
+
+    self.assertEqual(
+      ['Olympus, Texas', 'Mad Honey', 'Someday, Maybe',
+       'Class: A Memoir of Motherhood, Hunger, and Higher Education',
+       'The Sirens', 'Atmosphere: A Love Story', 'The Book of Lost Hours'],
+      [entry['title'] for entry in entries])
+    self.assertEqual(
+      ['Jodi Picoult', 'Jennifer Finney Boylan'],
+      entries[1]['authors'])
+    self.assertEqual(['Emilia Hart'], entries[-3]['authors'])
+    self.assertEqual(['Taylor Jenkins Reid'], entries[-2]['authors'])
+    self.assertEqual(['Hayley Gelfuso'], entries[-1]['authors'])
+    self.assertEqual(
+      [str(position) for position in range(1, len(entries) + 1)],
+      [entry['position'] for entry in entries])
+
+  def test_gma_ya_book_club_parses_monthly_archive_and_repairs_missing_authors(self):
+    from parser.gma_book_club import GMAYABookClubParser
+
+    body = [[
+      {'type': 'h3', 'content': ['October 2024']},
+      {'type': 'inline', 'content': {
+        'name': 'CommercePromo', 'props': {'headline': 'Heir'}}},
+      {'type': 'h3', 'content': ['March 2025']},
+      {'type': 'inline', 'content': {
+        'name': 'CommercePromo', 'props': {'headline': 'The Otherwhere Post'}}},
+      {'type': 'h3', 'content': ['August 2025']},
+      {'type': 'inline', 'content': {
+        'name': 'CommercePromo',
+        'props': {'headline': (
+          'Immortal Consequences: A Good Morning America YA Book Club Pick by I. V. Marie')}}},
+      {'type': 'h3', 'content': ['June 2026']},
+      {'type': 'inline', 'content': {
+        'name': 'CommercePromo', 'props': {'headline': 'Goldenborn by Ama Ofosua Lieb'}}},
+    ]]
+    state = {'page': {'content': {'article': {'mainComponents': [
+      {'name': 'Body', 'props': {'body': body}},
+    ]}}}}
+    parsed = GMAYABookClubParser().parse(
+      "<script>window['__gma__']=" + json.dumps(state) + '</script>',
+      'https://www.goodmorningamerica.com/shop/story/shop-gma-book-club-ya-picks-114243858')
+
+    self.assertEqual(
+      ['Heir', 'The Otherwhere Post', 'Immortal Consequences', 'Goldenborn'],
+      [entry['title'] for entry in parsed['entries']])
+    self.assertEqual(
+      ['Sabaa Tahir', 'Emily J. Taylor', 'I. V. Marie', 'Ama Ofosua Lieb'],
+      [entry_author(entry) for entry in parsed['entries']])
+    self.assertEqual(['1', '2', '3', '4'], [entry['position'] for entry in parsed['entries']])
+    self.assertTrue(all(
+      entry['club_scope'] == 'young_adult_monthly' for entry in parsed['entries']))
+
+  def test_r_bookclub_parser_handles_chronology_tracks_and_multi_work_rows(self):
+    from parser.r_bookclub import RBookclubParser
+
+    markdown = r'''# Previous Selections
+
+# 2026
+
+# June 2026
+
+Author Profile - George Eliot: [*George Eliot: The Last Victorian*](https://www.reddit.com/r/bookclub/comments/abc123/schedule/) by Kathryn Hughes + [*The Mill on the Floss*](https://www.reddit.com/r/bookclub/comments/abc123/schedule/) by George Eliot
+
+Read the World - Wales (bonus country): [*The Mabinogion*](https://www.reddit.com/r/bookclub/comments/wales1/schedule/) translated by Sioned Davies + [*The Blue Book of Nebo*](https://www.reddit.com/r/bookclub/comments/wales1/schedule/) by Manon Steffan Ros
+
+Bonus Read: [*Leviathan Falls (+ The Sins of Our Fathers)*](https://www.reddit.com/r/bookclub/comments/lev1/schedule/) by James S. A. Corey
+
+# May 2026
+
+Discovery Read: [*Black Leopard, Red Wolf*](https://www.reddit.com/r/bookclub/comments/black1/schedule/) Marlon James
+
+# 2017
+
+# Feb-Apr 2017 Big Read
+
+Big Read: [The Big Book](https://en.wikipedia.org/wiki/The_Big_Book_(novel)) by Range Writer
+
+# 2010
+
+# August 2010
+
+Modern Book of the Month: [Neverwhere (novel)](https://en.wikipedia.org/wiki/Neverwhere) by Neil Gaiman
+
+Project Gutenberg Book of the Month: [The Call of the Wild](https://www.gutenberg.org/ebooks/215) by Jack London
+'''
+    parsed = RBookclubParser().parse(
+      json.dumps({'kind': 'wikipage', 'data': {'content_md': markdown}}),
+      'https://www.reddit.com/r/bookclub/wiki/previous/',
+      'r/bookclub Previous Selections')
+
+    self.assertEqual([
+      'Neverwhere (novel)', 'The Call of the Wild',
+      'The Big Book', 'Black Leopard, Red Wolf', 'George Eliot: The Last Victorian',
+      'The Mill on the Floss', 'The Mabinogion', 'The Blue Book of Nebo',
+      'Leviathan Falls (+ The Sins of Our Fathers)',
+    ], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual(
+      [str(index) for index in range(1, 10)],
+      [entry['position'] for entry in parsed['entries']])
+    self.assertEqual('2', parsed['entries'][2]['selection_month'])
+    self.assertEqual('4', parsed['entries'][2]['selection_month_end'])
+    self.assertEqual(
+      ['Kathryn Hughes'], parsed['entries'][4]['authors'])
+    self.assertEqual(
+      parsed['entries'][4]['event_group_id'],
+      parsed['entries'][5]['event_group_id'])
+    self.assertEqual('reddit:abc123:1', parsed['entries'][4]['source_record_id'])
+    self.assertEqual('translator', parsed['entries'][6]['credit_role'])
+    self.assertEqual('global_read', parsed['entries'][6]['selection_type'])
+    self.assertNotIn('event_group_id', parsed['entries'][-1])
+    self.assertFalse(parsed['match_series'])
+
+  def test_r_bookclub_parser_handles_rendered_html_notes_and_author_credits(self):
+    from parser.r_bookclub import RBookclubParser
+
+    html = '''
+      <html><body><main>
+        <h1>Previous Selections</h1>
+        <h1>2025</h1>
+        <h1>February 2025</h1>
+        <p>BIPOC Author: <a href="/r/bookclub/comments/james1/schedule/"><em>James</em></a>
+          by Percival Everett + Bonus Pre-Read
+          <a href="/r/bookclub/comments/james1/schedule/"><em>Huckleberry Finn</em></a>
+          by Mark Twain</p>
+        <p>Graphic Novel: <a href="/r/bookclub/comments/graphic1/schedule/"><em>The Many Deaths of Laila Starr</em></a>
+          by Ram V, Filipe Andrade, et al.</p>
+        <h1>May 2011</h1>
+        <p>Inactive</p>
+        <h1>September 2014</h1>
+        <p>Gutenberg: <em>Oliver Twist</em> by Charles Dickens (undiscussed)</p>
+        <p>Malformed historical row</p>
+        <h1>Page title</h1>
+        <p>Footer: <em>Not a selection</em> by Footer Author</p>
+      </main></body></html>
+    '''
+    parsed = RBookclubParser().parse(
+      html, 'https://www.reddit.com/r/bookclub/wiki/previous/')
+
+    self.assertEqual([
+      'Oliver Twist', 'James', 'Huckleberry Finn',
+      'The Many Deaths of Laila Starr'], [
+        entry['title'] for entry in parsed['entries']])
+    self.assertTrue(parsed['entries'][0]['undiscussed'])
+    self.assertEqual(
+      'Bonus Pre-Read', parsed['entries'][2]['component_label'])
+    self.assertEqual(
+      ['Ram V', 'Filipe Andrade'], parsed['entries'][3]['authors'])
+    self.assertTrue(parsed['entries'][3]['authors_incomplete'])
+    self.assertTrue(any('Inactive' in note for note in parsed['notes']))
+    self.assertTrue(any('Malformed historical row' in note for note in parsed['notes']))
+
+    source_view = RBookclubParser().parse('''
+      <html><body><pre># Previous Selections
+
+# 2010
+
+# August 2010
+
+Modern: The Call of the Wild by Jack London
+      </pre></body></html>
+    ''', 'https://www.reddit.com/r/bookclub/wiki/previous/')
+    self.assertEqual(
+      ['The Call of the Wild'],
+      [entry['title'] for entry in source_view['entries']])
+
+  def test_r_bookclub_fetcher_falls_through_interstitials_and_exposes_metadata(self):
+    from parser.base import CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.r_bookclub import UrlFetcherRBookclub
+
+    fetcher = UrlFetcherRBookclub()
+    calls = []
+    markdown = '''# Previous Selections
+
+# 2010
+
+# August 2010
+
+Modern Book of the Month: Neverwhere by Neil Gaiman
+'''
+
+    def fetch_url(url, **_kwargs):
+      calls.append(url)
+      if len(calls) == 1:
+        return '<title>Reddit - Please wait for verification</title>'
+      return json.dumps({'kind': 'wikipage', 'data': {'content_md': markdown}})
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+
+    self.assertEqual(list(fetcher.FETCH_URLS[:2]), calls)
+    self.assertEqual(['Neverwhere'], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual(
+      [{'label': 'Automatic', 'value': 'automatic'}],
+      list(fetcher.source_choices()))
+    self.assertEqual(
+      [CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS],
+      [item['label'] for item in fetcher.get_filter_list()])
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertFalse(fetcher.SUPPORTS_INCREMENTAL_UPDATE)
+    self.assertNotIn(
+      fetcher.source_id,
+      [registered.source_id for registered in available_url_fetchers()])
+
   def test_general_audience_book_club_fetchers_metadata_and_registry(self):
-    from parser.base import CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS
+    from parser.base import (
+      CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS,
+      CATEGORY_NONFICTION,
+      CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+    )
     from url_fetcher import available_url_fetchers
 
     fetchers = available_url_fetchers()
@@ -839,10 +1897,14 @@ class ImportMatchingTest(unittest.TestCase):
     expected_ids = (
       'oprah_book_club',
       'reese_book_club',
+      'reese_book_club_ya',
       'read_with_jenna',
       'gma_book_club',
+      'gma_book_club_ya',
       'canada_reads',
       'library_reads',
+      'library_reads_bonus_picks',
+      'library_reads_notable_nonfiction',
       'barnes_noble_book_club',
       'service95_book_club',
       'richard_judy_book_club',
@@ -854,10 +1916,76 @@ class ImportMatchingTest(unittest.TestCase):
         CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS,
         [item['label'] for item in by_id[source_id].get_filter_list()])
 
+    junior = by_id['read_with_jenna_jr']
+    self.assertFalse(junior.options['match_series'])
+    self.assertEqual(
+      [
+        CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS,
+        CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+      ],
+      [item['label'] for item in junior.get_filter_list()])
+
+    reese_ya = by_id['reese_book_club_ya']
+    self.assertEqual(
+      [
+        CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS,
+        CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+      ],
+      [item['label'] for item in reese_ya.get_filter_list()])
+
+    gma_ya = by_id['gma_book_club_ya']
+    self.assertEqual(
+      [
+        CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS,
+        CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+      ],
+      [item['label'] for item in gma_ya.get_filter_list()])
+
+    self.assertEqual(
+      [CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS],
+      [item['label'] for item in by_id['library_reads_bonus_picks'].get_filter_list()])
+    self.assertEqual(
+      'LibraryReads - Bonus Picks', by_id['library_reads_bonus_picks'].NAME)
+    self.assertEqual(49, by_id['library_reads_bonus_picks'].order)
+    self.assertEqual(
+      [CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS, CATEGORY_NONFICTION],
+      [item['label'] for item in by_id['library_reads_notable_nonfiction'].get_filter_list()])
+    self.assertEqual(
+      'LibraryReads - Notable Nonfiction',
+      by_id['library_reads_notable_nonfiction'].NAME)
+    self.assertEqual(50, by_id['library_reads_notable_nonfiction'].order)
+    self.assertEqual(51, by_id['barnes_noble_book_club'].order)
+    self.assertEqual(52, by_id['service95_book_club'].order)
+    self.assertEqual(53, by_id['richard_judy_book_club'].order)
+
     registry_ids = [fetcher.source_id for fetcher in fetchers]
     self.assertLess(
       registry_ids.index('sword_and_laser_book_list'),
       registry_ids.index('oprah_book_club'))
+    self.assertLess(
+      registry_ids.index('reese_book_club'),
+      registry_ids.index('reese_book_club_ya'))
+    self.assertLess(
+      registry_ids.index('reese_book_club_ya'),
+      registry_ids.index('read_with_jenna'))
+    self.assertLess(
+      registry_ids.index('read_with_jenna'),
+      registry_ids.index('read_with_jenna_jr'))
+    self.assertLess(
+      registry_ids.index('read_with_jenna_jr'),
+      registry_ids.index('gma_book_club'))
+    self.assertLess(
+      registry_ids.index('gma_book_club'),
+      registry_ids.index('gma_book_club_ya'))
+    self.assertLess(
+      registry_ids.index('library_reads'),
+      registry_ids.index('library_reads_bonus_picks'))
+    self.assertLess(
+      registry_ids.index('library_reads_bonus_picks'),
+      registry_ids.index('library_reads_notable_nonfiction'))
+    self.assertLess(
+      registry_ids.index('library_reads_notable_nonfiction'),
+      registry_ids.index('barnes_noble_book_club'))
     self.assertLess(
       registry_ids.index('richard_judy_book_club'),
       registry_ids.index('hugo_awards_novel'))
@@ -886,7 +2014,7 @@ class ImportMatchingTest(unittest.TestCase):
       'r/Fantasy Top Self-Published Novels 2024',
       'Sword and Laser',
     ], names[:4])
-    self.assertEqual(382, len(names))
+    self.assertEqual(387, len(names))
     self.assertIn('Theakston Old Peculier Crime Novel of the Year', names)
     self.assertIn('Hammett Prize', names)
     self.assertIn('Nero Award', names)
@@ -2305,7 +3433,7 @@ class ImportMatchingTest(unittest.TestCase):
       'r_fantasy_top_self_published_novels_2024',
       'sword_and_laser_book_list',
     ], source_ids[:4])
-    self.assertEqual(382, len(source_ids))
+    self.assertEqual(387, len(source_ids))
     self.assertIn('hammett_prize', source_ids)
     self.assertIn('nero_award', source_ids)
     self.assertIn('strand_critics_award_mystery_novel', source_ids)
@@ -2425,18 +3553,36 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertIn('writers_trust_balsillie_public_policy', source_ids)
     self.assertIn('writers_trust_shaughnessy_cohen_political_writing', source_ids)
 
-  def test_list_schema_status_covers_every_registered_fetcher_once(self):
+  def test_import_progress_status_covers_every_registered_fetcher_once(self):
     from url_fetcher import available_url_fetchers
 
-    fetcher_ids = [fetcher.source_id for fetcher in available_url_fetchers()]
-    status = json.loads((ROOT / '_dev_tools' / 'lists_shema_status.json').read_text(encoding='utf-8'))
-    status_ids = [item.get('source_id') for item in status.get('lists', [])]
+    fetchers = available_url_fetchers()
+    expected = {fetcher.source_id: fetcher.NAME for fetcher in fetchers}
+    status = json.loads(
+      (ROOT / '_dev_tools' / 'import_progress_status.json').read_text(encoding='utf-8'))
+    rows = status.get('recipes') or []
+    status_ids = [row.get('source_id') for row in rows]
 
-    self.assertEqual(2, status.get('schema_version'))
-    self.assertEqual(sorted(fetcher_ids), sorted(status_ids))
-    self.assertEqual(len(fetcher_ids), len(status_ids))
+    self.assertEqual(1, status.get('schema_version'))
+    self.assertEqual([0, 1000], status['progress_model']['range'])
+    self.assertEqual(3, len(status['progress_model']['web_phases']))
+    self.assertEqual(2, len(status['progress_model']['saved_cache_phases']))
+    self.assertEqual(expected, {
+      row.get('source_id'): row.get('name') for row in rows
+    })
+    self.assertEqual(len(expected), len(rows))
     self.assertEqual(len(status_ids), len(set(status_ids)))
-    self.assertEqual({2}, {item.get('list_schema_version') for item in status.get('lists', [])})
+    self.assertEqual({'passed'}, {row.get('automated_status') for row in rows})
+    self.assertTrue({row.get('manual_status') for row in rows} <= {
+      'not_checked', 'passed', 'failed',
+    })
+    self.assertEqual({
+      'registered_recipes': len(rows),
+      'automated_passed': sum(
+        row.get('automated_status') == 'passed' for row in rows),
+      'manual_verified': sum(
+        row.get('manual_status') == 'passed' for row in rows),
+    }, status.get('summary'))
 
   def test_goodreads_choice_awards_discovers_category_urls(self):
     from parser.goodreads_choice_awards import GoodreadsChoiceAwardsParser
@@ -2637,6 +3783,10 @@ class ImportMatchingTest(unittest.TestCase):
           (entry['position'], entry['title'], entry_author(entry), entry['result'])
           for entry in parsed['entries']
         ])
+        long_earth = next(
+          entry for entry in parsed['entries'] if entry['title'] == 'The Long Earth')
+        self.assertEqual(
+          ['Terry Pratchett', 'Stephen Baxter'], long_earth['authors'])
 
   def test_goodreads_choice_awards_keeps_subtitle_when_link_text_is_shorter(self):
     from parser.goodreads_choice_awards import GoodreadsChoiceAwardsParser
@@ -4449,6 +5599,7 @@ class ImportMatchingTest(unittest.TestCase):
     main.prefs['stored_lists_field'] = '#stored_lists'
     captured = {}
     core.gui = None
+    core.ensure_configured = lambda: True
     core.current_active = lambda: 'Current List'
     core.all_book_ids = lambda: [1, 2, 3]
     active_values = {
@@ -4479,6 +5630,90 @@ class ImportMatchingTest(unittest.TestCase):
       1: 'Other List [3]',
       3: '',
     }, captured.get('stored_updates'))
+
+  def test_public_list_actions_stop_when_not_configured(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    checks = []
+    core.ensure_configured = lambda: checks.append(True) or False
+    core.show_exception = lambda *_args: self.fail('Unconfigured actions must not raise an error dialog')
+
+    actions = (
+      lambda: core.add_selected_to_active(),
+      lambda: core.select_active_list_books(),
+      lambda: core.switch_active_list(),
+      lambda: core.create_new_active_list(),
+      lambda: core.rename_active_list(),
+      lambda: core.remove_active_list(),
+      lambda: core.manage_stored_lists(),
+      lambda: core.rename_stored_list('Stored List'),
+      lambda: core.remove_stored_list('Stored List'),
+    )
+    for action in actions:
+      self.assertIsNone(action())
+
+    self.assertEqual(9, len(checks))
+
+  def test_public_list_actions_show_write_failures(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    errors = []
+    core.ensure_configured = lambda: True
+    core.show_exception = lambda title, err: errors.append((title, str(err)))
+
+    def fail(*_args, **_kwargs):
+      raise main.ListSwitchboardError('injected write failure')
+
+    actions = (
+      ('_add_selected_to_active', lambda: core.add_selected_to_active()),
+      ('_select_active_list_books', lambda: core.select_active_list_books()),
+      ('_switch_active_list', lambda: core.switch_active_list()),
+      ('_create_new_active_list', lambda: core.create_new_active_list()),
+      ('_rename_active_list', lambda: core.rename_active_list()),
+      ('_remove_active_list', lambda: core.remove_active_list()),
+      ('_manage_stored_lists', lambda: core.manage_stored_lists()),
+      ('_rename_stored_list', lambda: core.rename_stored_list('Stored List')),
+      ('_remove_stored_list', lambda: core.remove_stored_list('Stored List')),
+    )
+    for helper_name, action in actions:
+      setattr(core, helper_name, fail)
+      self.assertIsNone(action())
+
+    self.assertEqual(9, len(errors))
+    self.assertTrue(all('injected write failure' in message for _title, message in errors))
+
+  def test_validate_list_name_rejects_reserved_suffix_and_keeps_valid_text(self):
+    self.assertEqual('Café club', main.validate_list_name('  Café club  '))
+    for name in ('Book Club [1]', 'Book Club [2026]', 'Book Club [1.5]'):
+      with self.subTest(name=name):
+        with self.assertRaises(main.ListSwitchboardError) as caught:
+          main.validate_list_name(name)
+        self.assertIn('reserved', str(caught.exception))
+    for name, expected in (('', 'empty'), ('Book, Club', 'commas')):
+      with self.subTest(name=name):
+        with self.assertRaises(main.ListSwitchboardError) as caught:
+          main.validate_list_name(name)
+        self.assertIn(expected, str(caught.exception))
+
+  def test_rename_stored_list_rejects_case_only_conflict(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    errors = []
+    core.gui = None
+    core.ensure_configured = lambda: True
+    core.current_active = lambda: 'Active List'
+    core.library_state = lambda: ({}, ['Old List'])
+    core.show_exception = lambda title, err: errors.append((title, str(err)))
+
+    original_get_text = getattr(list_state.QInputDialog, 'getText', None)
+    try:
+      list_state.QInputDialog.getText = lambda *_args, **_kwargs: ('active list', True)
+      core.rename_stored_list('Old List')
+    finally:
+      if original_get_text is None:
+        delattr(list_state.QInputDialog, 'getText')
+      else:
+        list_state.QInputDialog.getText = original_get_text
+
+    self.assertEqual('Rename Stored List', errors[0][0])
+    self.assertIn('already exists', errors[0][1])
 
   def test_current_stored_lists_are_alphabetical(self):
     core = object.__new__(main.ListSwitchboardCore)
@@ -4661,16 +5896,17 @@ class ImportMatchingTest(unittest.TestCase):
       30413: 'r/Fantasy Top Self-Published Novels 2024',
     }, captured.get('active_updates'))
 
-  def test_import_progress_splits_matching_and_writes(self):
+  def test_import_progress_uses_full_range_for_each_phase(self):
     core = object.__new__(main.ListSwitchboardCore)
     values = []
     core.update_import_progress = lambda value=None, message=None: values.append(value)
 
     core.update_import_match_progress(1, 2, 'Matching')
+    core.update_import_match_progress(2, 2, 'Matching')
     core.update_import_write_progress(1, 2, 'Writing')
     core.update_import_write_progress(2, 2, 'Writing')
 
-    self.assertEqual([250, 750, 1000], values)
+    self.assertEqual([500, 1000, 500, 1000], values)
 
   def test_import_progress_start_shows_matching_at_zero(self):
     core = object.__new__(main.ListSwitchboardCore)
@@ -4698,7 +5934,203 @@ class ImportMatchingTest(unittest.TestCase):
 
     core.update_import_match_step_progress(2, 4, 0.5, 'Checking Goodreads')
 
-    self.assertEqual([188], values)
+    self.assertEqual([375], values)
+
+  def test_import_fetch_progress_uses_full_progress_range(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    values = []
+    core.update_import_progress = lambda value=None, message=None: values.append(value)
+
+    core.update_import_fetch_progress(1, 2, 'Fetching')
+    core.update_import_fetch_progress(2, 2, 'Fetching')
+
+    self.assertEqual([500, 1000], values)
+
+  def test_import_progress_phase_label_and_monotonic_values(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    labels = []
+    values = []
+
+    class FakeProgress:
+
+      def setLabelText(self, value):
+        labels.append(value)
+
+      def setValue(self, value):
+        values.append(value)
+
+      def setFixedWidth(self, _value):
+        pass
+
+      def wasCanceled(self):
+        return False
+
+    core.import_progress = FakeProgress()
+    core.begin_import_progress_phase(1, 3, 'Fetch, parse, and cache', 'Fetching books...')
+    core.update_import_progress(800, 'Parsing books...')
+    core.update_import_progress(400, 'Late fetch callback...')
+    core.begin_import_progress_phase(2, 3, 'Match and prepare review', 'Matching books...')
+
+    self.assertEqual(
+      'Phase 1 of 3 — Fetch, parse, and cache\nFetching books...', labels[0])
+    self.assertEqual(
+      'Phase 2 of 3 — Match and prepare review\nMatching books...', labels[-1])
+    self.assertEqual([0, 800, 800, 0], values)
+
+  def test_import_progress_dynamic_phase_numbers(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    phases = []
+    core.import_progress = None
+    original_begin = core.begin_import_progress_phase
+
+    def capture_begin(number, total, name, message):
+      phases.append((number, total, name, message))
+      original_begin(number, total, name, message)
+
+    core.begin_import_progress_phase = capture_begin
+    core.import_progress_total_phases = 2
+    core.show_import_progress_start({'from_cache': True, 'entries': [{}, {}]})
+    core.import_progress_total_phases = 3
+    core.show_import_progress_start({'entries': [{}, {}, {}]})
+
+    self.assertEqual((1, 2, 'Match and prepare review'), phases[0][:3])
+    self.assertEqual((2, 3, 'Match and prepare review'), phases[1][:3])
+
+  def test_load_or_fetch_recipe_selects_dynamic_phase_count(self):
+    recipe = types.SimpleNamespace(NAME='Example Import', source_id='example_import')
+    cache = {'entries': [{'title': 'Saved Book'}], 'list_id': 'example_import'}
+
+    def run_case(choice, fetch_error=False, has_cache=True):
+      core = object.__new__(main.ListSwitchboardCore)
+      core.import_progress = None
+      core.import_progress_phase_number = 0
+      core.import_progress_total_phases = 0
+      core.import_progress_phase_name = ''
+      core.import_progress_phase_value = 0
+      core.recipe_list_id = lambda _recipe: 'example_import'
+      core.read_import_cache = lambda _list_id: cache if has_cache else None
+      core.choose_cached_import_action = lambda _recipe, _cache: choice
+      core.cached_import_to_parsed = lambda _cache: {
+        'name': 'Example Import', 'entries': [{'title': 'Saved Book'}],
+        'from_cache': True,
+      }
+      core.should_fallback_to_cached_import = lambda *_args: True
+      received = {}
+
+      def fetch_recipe(_recipe, import_options=None, cache=None):
+        received['cache'] = cache
+        if fetch_error:
+          raise RuntimeError('injected fetch failure')
+        return {'name': 'Example Import', 'entries': [{'title': 'Web Book'}]}
+
+      core.fetch_and_parse_recipe = fetch_recipe
+      core.write_import_cache = lambda *_args, **_kwargs: None
+      core.merge_append_import_cache = lambda *_args, **_kwargs: None
+      parsed = core.load_or_fetch_recipe(recipe)
+      return core, parsed, received
+
+    saved_core, saved, _received = run_case('saved')
+    self.assertEqual(2, saved_core.import_progress_total_phases)
+    self.assertTrue(saved['from_cache'])
+
+    web_core, _web, _received = run_case('refresh', has_cache=False)
+    self.assertEqual((1, 3, 1000), (
+      web_core.import_progress_phase_number,
+      web_core.import_progress_total_phases,
+      web_core.import_progress_phase_value))
+
+    incremental_core, _incremental, received = run_case('incremental')
+    self.assertEqual(3, incremental_core.import_progress_total_phases)
+    self.assertIs(cache, received['cache'])
+
+    fallback_core, fallback, _received = run_case('refresh', fetch_error=True)
+    self.assertEqual((1, 3, 1000), (
+      fallback_core.import_progress_phase_number,
+      fallback_core.import_progress_total_phases,
+      fallback_core.import_progress_phase_value))
+    self.assertTrue(fallback['from_cache'])
+
+  def test_import_progress_reaches_100_before_review_and_after_zero_writes(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    entry = {'position': '1', 'title': 'Example Book', 'authors': ['Example Author']}
+    row = {
+      'entry': entry,
+      'imported_position': '1',
+      'imported_title': 'Example Book',
+      'imported_author': ['Example Author'],
+      'matched': True,
+      'original_matched': True,
+      'book_ids': [7],
+      'original_book_ids': [7],
+      'matched_books': [],
+      'original_matched_books': [],
+      'match_source': 'automatic',
+      'original_match_source': 'automatic',
+      'can_toggle_on': True,
+    }
+
+    class FakeProgress:
+
+      def __init__(self):
+        self.values = []
+        self.labels = []
+        self.cancel_buttons = []
+        self.closed = False
+
+      def setLabelText(self, value):
+        self.labels.append(value)
+
+      def setValue(self, value):
+        self.values.append(value)
+
+      def setFixedWidth(self, _value):
+        pass
+
+      def setCancelButton(self, value):
+        self.cancel_buttons.append(value)
+
+      def wasCanceled(self):
+        return False
+
+      def close(self):
+        self.closed = True
+
+      def reset(self):
+        pass
+
+      def deleteLater(self):
+        pass
+
+    pre_review = FakeProgress()
+    apply_writes = FakeProgress()
+    core.import_progress = pre_review
+    core.import_progress_total_phases = 2
+    core.import_progress_phase_number = 0
+    core.import_progress_phase_name = ''
+    core.import_progress_phase_value = 0
+    core.current_active = lambda: 'Example Import'
+    core.debug_import_target = lambda *_args: None
+    core.debug_import_summary = lambda *_args: None
+    core.match_imported_entries = lambda *_args, **_kwargs: ({7: '1'}, [], [row])
+    core.reconcile_review_rows_with_active_list = lambda *_args, **_kwargs: ([row], [])
+    core.import_review_matched_entry_count = lambda _rows: 1
+    core.accepted_import_review_rows = lambda _rows: ({7: '1'}, [], [row])
+    core.review_import_matches = lambda *_args, **_kwargs: (
+      self.assertEqual(1000, pre_review.values[-1]) or ({7: '1'}, [], [row]))
+    core.create_import_progress = lambda _list_name: apply_writes
+    core.active_list_value_matches = lambda *_args: True
+    core.write_fields = lambda **_kwargs: None
+    core.status_message = lambda _message: None
+
+    parsed = {'name': 'Example Import', 'entries': [entry], 'from_cache': True}
+    core.show_import_progress_start(parsed)
+    core.import_recipe_result(parsed)
+
+    self.assertTrue(pre_review.closed)
+    self.assertEqual([], pre_review.cancel_buttons)
+    self.assertEqual([0, 1000], apply_writes.values)
+    self.assertEqual([None], apply_writes.cancel_buttons)
+    self.assertTrue(apply_writes.closed)
 
   def test_close_import_progress_closes_active_progress_dialog(self):
     core = object.__new__(main.ListSwitchboardCore)
@@ -4752,6 +6184,13 @@ class ImportMatchingTest(unittest.TestCase):
       ['Sword and Laser [24]', 'r/Fantasy Top Novels 2025 [1]'],
       main.parse_stored_lists((' Sword and Laser [24] ', 'r/Fantasy Top Novels 2025 [1]')))
 
+  def test_rebuild_stored_lists_applies_edits_and_canonicalizes_once(self):
+    value = main.rebuild_stored_lists(
+      (' Beta [1] ', 'beta [2]', 'Alpha [3]', ''),
+      lambda entries: entries + ['Gamma [4]', 'gamma [5]'])
+
+    self.assertEqual('Alpha [3], Beta [1], Gamma [4]', value)
+
   def test_stored_write_updates_converts_to_multiple_values(self):
     core = object.__new__(main.ListSwitchboardCore)
     core.stored_field_is_multiple = lambda: True
@@ -4759,6 +6198,72 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertEqual(
       {42: ('Sword and Laser [24]', 'Discworld [8]')},
       core.stored_write_updates({42: 'Sword and Laser [24], Discworld [8]'}))
+
+  def test_write_fields_filters_unchanged_stored_updates_before_writing(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    main.prefs['stored_lists_field'] = '#stored_lists'
+    values = {
+      1: 'Current List [1]',
+      2: 'Other List [2]',
+      3: 'Another List [3]',
+    }
+    set_field_calls = []
+    progress = []
+    refreshed = []
+
+    class FakeApi:
+
+      def field_for(self, field, book_id, default_value=''):
+        return values.get(book_id, default_value) if field == '#stored_lists' else default_value
+
+      def set_field(self, field, updates):
+        set_field_calls.append((field, updates))
+        values.update(updates)
+
+    class FakeDb:
+      new_api = FakeApi()
+
+    core.db = FakeDb()
+    core.stored_field_is_multiple = lambda: False
+    core.refresh_books = lambda ids: refreshed.append(ids)
+    core.debug_writes_stored_field = lambda *_args: None
+    core.debug_writes_finished = lambda *_args: None
+
+    core.write_fields(
+      stored_updates={
+        1: 'Current List [1]',
+        2: 'Updated List [2]',
+        3: 'Another List [3]',
+      },
+      progress_callback=lambda count, message: progress.append((count, message)))
+
+    self.assertEqual([('#stored_lists', {2: 'Updated List [2]'})], set_field_calls)
+    self.assertEqual([(1, 'Finished Stored Lists metadata updates...')], progress)
+    self.assertEqual([{2}], refreshed)
+
+  def test_write_fields_with_progress_uses_filtered_stored_denominator(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    progress_updates = []
+    captured = {}
+    core.filter_unchanged_stored_updates = lambda updates: {2: updates[2]}
+    core.create_operation_progress = lambda *_args: object()
+    core.close_import_progress = lambda: None
+    core.update_operation_write_progress = lambda done, total, message: progress_updates.append(
+      (done, total, message))
+
+    def write_fields(**kwargs):
+      captured.update(kwargs)
+      kwargs['progress_callback'](1, 'Finished Stored Lists metadata updates...')
+
+    core.write_fields = write_fields
+    core.update_import_progress = lambda *_args, **_kwargs: None
+
+    core.write_fields_with_progress(
+      'Remove Stored List', 'Removing...',
+      stored_updates={1: 'Unchanged', 2: 'Changed'})
+
+    self.assertEqual({2: 'Changed'}, captured['stored_updates'])
+    self.assertEqual([(1, 1, 'Finished Stored Lists metadata updates...')], progress_updates)
 
   def test_write_fields_skips_unchanged_active_values(self):
     core = object.__new__(main.ListSwitchboardCore)
@@ -4794,6 +6299,7 @@ class ImportMatchingTest(unittest.TestCase):
     main.prefs['active_list_field'] = '#reading_series'
     core.active_list_value_matches = lambda _book_id, _value, _position: False
     core.active_field_is_series = lambda: True
+    core.active_series_index_field = lambda: None
     core.refresh_books = lambda ids: refreshed.append(ids)
     core.debug_writes_active_series_field = lambda *_args: None
     core.debug_writes_finished = lambda *_args: None
@@ -4802,6 +6308,9 @@ class ImportMatchingTest(unittest.TestCase):
 
       def set_field(self, field, updates):
         set_field_calls.append((field, updates))
+
+      def field_for(self, _field, _book_id, default_value=''):
+        return default_value
 
     class FakeDb:
       new_api = FakeApi()
@@ -4825,6 +6334,134 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertEqual([], set_custom_calls)
     self.assertEqual([(2, 'Finished Active List metadata updates...')], progress)
     self.assertEqual([{7, 8}], refreshed)
+
+  def test_write_fields_rolls_back_active_write_failure(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    main.prefs['active_list_field'] = '#active'
+    main.prefs['stored_lists_field'] = '#stored'
+    values = {
+      '#active': {7: 'Previous Active'},
+      '#stored': {7: 'Previous Stored'},
+    }
+    refreshed = []
+
+    class FakeApi:
+
+      def field_for(self, field, book_id, default_value=''):
+        return values.get(field, {}).get(book_id, default_value)
+
+      def set_field(self, field, updates):
+        if field == '#active' and updates.get(7) == 'New Active':
+          values[field].update(updates)
+          raise RuntimeError('active write failed after applying a row')
+        values[field].update(updates)
+
+    class FakeDb:
+      new_api = FakeApi()
+
+    core.db = FakeDb()
+    core.active_field_is_series = lambda: False
+    core.active_list_value_matches = lambda *_args: False
+    core.stored_write_updates = lambda updates: updates
+    core.refresh_books = lambda ids: refreshed.append(ids)
+    core.debug_writes_active_field = lambda *_args: None
+    core.debug_writes_finished = lambda *_args: None
+
+    with self.assertRaises(main.ListSwitchboardError) as caught:
+      core.write_fields(
+        active_updates={7: 'New Active'}, stored_updates={7: 'New Stored'})
+
+    self.assertIn('restored the previous', str(caught.exception))
+    self.assertEqual('Previous Active', values['#active'][7])
+    self.assertEqual('Previous Stored', values['#stored'][7])
+    self.assertEqual([{7}], refreshed)
+
+  def test_write_fields_rolls_back_stored_failure_after_active_success(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    main.prefs['active_list_field'] = '#active'
+    main.prefs['stored_lists_field'] = '#stored'
+    values = {
+      '#active': {7: 'Previous Active'},
+      '#stored': {7: 'Previous Stored'},
+    }
+    refreshed = []
+
+    class FakeApi:
+
+      def field_for(self, field, book_id, default_value=''):
+        return values.get(field, {}).get(book_id, default_value)
+
+      def set_field(self, field, updates):
+        values[field].update(updates)
+        if field == '#stored' and updates.get(7) == 'New Stored':
+          raise RuntimeError('stored write failed after active success')
+
+    class FakeDb:
+      new_api = FakeApi()
+
+    core.db = FakeDb()
+    core.active_field_is_series = lambda: False
+    core.active_list_value_matches = lambda *_args: False
+    core.stored_write_updates = lambda updates: updates
+    core.refresh_books = lambda ids: refreshed.append(ids)
+    core.debug_writes_active_field = lambda *_args: None
+    core.debug_writes_stored_field = lambda *_args: None
+    core.debug_writes_finished = lambda *_args: None
+
+    with self.assertRaises(main.ListSwitchboardError) as caught:
+      core.write_fields(
+        active_updates={7: 'New Active'}, stored_updates={7: 'New Stored'})
+
+    self.assertIn('restored the previous', str(caught.exception))
+    self.assertEqual('Previous Active', values['#active'][7])
+    self.assertEqual('Previous Stored', values['#stored'][7])
+    self.assertEqual([{7}], refreshed)
+
+  def test_write_fields_reports_rollback_failure_and_refreshes_affected_books(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    main.prefs['active_list_field'] = '#active'
+    main.prefs['stored_lists_field'] = '#stored'
+    values = {
+      '#active': {7: 'Previous Active'},
+      '#stored': {7: 'Previous Stored'},
+    }
+    call_counts = {'#active': 0, '#stored': 0}
+    refreshed = []
+
+    class FakeApi:
+
+      def field_for(self, field, book_id, default_value=''):
+        return values.get(field, {}).get(book_id, default_value)
+
+      def set_field(self, field, updates):
+        call_counts[field] += 1
+        if field == '#active' and call_counts[field] == 2:
+          raise RuntimeError('active rollback failed')
+        values[field].update(updates)
+        if field == '#stored' and call_counts[field] == 1:
+          raise RuntimeError('stored write failed')
+
+    class FakeDb:
+      new_api = FakeApi()
+
+    core.db = FakeDb()
+    core.active_field_is_series = lambda: False
+    core.active_list_value_matches = lambda *_args: False
+    core.stored_write_updates = lambda updates: updates
+    core.refresh_books = lambda ids: refreshed.append(ids)
+    core.debug_writes_active_field = lambda *_args: None
+    core.debug_writes_stored_field = lambda *_args: None
+    core.debug_writes_finished = lambda *_args: None
+
+    with self.assertRaises(main.ListSwitchboardError) as caught:
+      core.write_fields(
+        active_updates={7: 'New Active'}, stored_updates={7: 'New Stored'})
+
+    self.assertIn('Rollback also failed', str(caught.exception))
+    self.assertIn('active rollback failed', str(caught.exception))
+    self.assertEqual('New Active', values['#active'][7])
+    self.assertEqual('Previous Stored', values['#stored'][7])
+    self.assertEqual([{7}], refreshed)
 
   def test_add_selected_index_updates_use_next_whole_number_after_current_max(self):
     core = object.__new__(main.ListSwitchboardCore)
@@ -4913,7 +6550,7 @@ class ImportMatchingTest(unittest.TestCase):
     core.all_book_ids = lambda: [7, 8, 9]
 
     matched, missing = core.match_imported_entries([
-      {'position': '7', 'title': 'Wheel of Time', 'author': 'Robert Jordan'},
+      {'position': '7', 'title': 'Wheel of Time', 'authors': ['Robert Jordan']},
     ])
 
     self.assertEqual({7: '7', 8: '7', 9: '7'}, matched)
@@ -4930,8 +6567,8 @@ class ImportMatchingTest(unittest.TestCase):
     candidates = core.goodreads_source_recovery_candidates(
       {
         'title': 'Wheel of Time',
-        'author': 'Robert Jordan',
-        'source_url': 'https://www.goodreads.com/series/41526-the-wheel-of-time',
+        'authors': ['Robert Jordan'],
+        'source': {'url': 'https://www.goodreads.com/series/41526-the-wheel-of-time'},
       },
       {7: 'The Eye of the World'},
       {7: ['The Wheel of Time']},
@@ -4976,9 +6613,6 @@ class ImportMatchingTest(unittest.TestCase):
     core.debug_import_goodreads_candidates = lambda *_args: None
     core.debug_import_matched_book = lambda *_args: None
     core.goodreads_source_recovery_candidates = lambda *_args: []
-    core.goodreads_recovery_candidates = lambda *_args, **_kwargs: self.fail(
-      'normal import should not run deep Goodreads fallback')
-
     class FakeApi:
 
       def all_field_for(self, field, ids, default_value=''):
@@ -4991,7 +6625,7 @@ class ImportMatchingTest(unittest.TestCase):
     core.all_book_ids = lambda: [1, 2]
 
     matched, missing = core.match_imported_entries([
-      {'position': '1', 'title': 'Missing Series', 'author': 'Nobody'},
+      {'position': '1', 'title': 'Missing Series', 'authors': ['Nobody']},
     ])
 
     self.assertEqual({}, matched)
@@ -5090,9 +6724,209 @@ class ImportMatchingTest(unittest.TestCase):
       row['imported_title'] for row in review_rows
     ])
     self.assertEqual([True, False], [row['matched'] for row in review_rows])
-    self.assertEqual(['saved/manual override', 'never matched'], [
+    self.assertEqual(['saved/manual override', 'saved/manual override'], [
       row['match_source'] for row in review_rows
     ])
+
+  def test_saved_manual_override_is_authoritative_over_automatic_series_matches(self):
+    def run(saved_book_ids):
+      core = object.__new__(main.ListSwitchboardCore)
+      core.update_import_match_progress = lambda *args, **kwargs: None
+      core.update_import_match_step_progress = lambda *args, **kwargs: None
+      core.import_entry_keys = main.ListSwitchboardCore.import_entry_keys.__get__(core)
+      core.debug_import_match_entry = lambda *_args: None
+      core.debug_import_match_entry_detail = lambda *_args: None
+      core.debug_import_empty_entry = lambda *_args: None
+      core.debug_import_goodreads_candidates = lambda *_args: None
+      core.debug_import_matched_book = lambda *_args: None
+      core.debug_import_match_start = lambda *_args: None
+      core.debug_import_saved_override_lookup = lambda *_args: None
+      core.debug_import_candidate_rejected = lambda *_args: None
+      core.goodreads_source_recovery_candidates = lambda *_args: []
+      core.saved_unmatched_overrides = lambda _list_id: {}
+      core.saved_match_overrides = lambda _list_id: {
+        'shared saga|author': {'matched_book_ids': saved_book_ids},
+      }
+
+      class FakeApi:
+        def all_field_for(self, field, ids, default_value=''):
+          if field == 'title':
+            return {1: 'Volume One', 2: 'Volume Two', 3: 'Volume Three'}
+          if field == 'authors':
+            return {1: ['Author'], 2: ['Author'], 3: ['Author']}
+          return {book_id: default_value for book_id in ids}
+
+      class FakeDb:
+        new_api = FakeApi()
+
+      core.db = FakeDb()
+      core.all_book_ids = lambda: [1, 2, 3]
+      core.all_local_series_values = lambda _ids: {
+        1: ['Shared Saga'], 2: ['Shared Saga'], 3: ['Shared Saga'],
+      }
+      return core.match_imported_entries(
+        [{'position': '1', 'title': 'Shared Saga', 'authors': ['Author']}],
+        list_id='example_list', allow_goodreads_recovery=False, return_details=True)
+
+    for saved_book_ids in ([2], [1, 2]):
+      with self.subTest(saved_book_ids=saved_book_ids):
+        matched, missing, review_rows = run(saved_book_ids)
+        self.assertEqual(
+          {book_id: '1' for book_id in saved_book_ids}, matched)
+        self.assertEqual([], missing)
+        self.assertEqual(saved_book_ids, review_rows[0]['book_ids'])
+        self.assertEqual('saved/manual override', review_rows[0]['match_source'])
+
+  def test_saved_manual_override_precedes_exact_title_match(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    core.update_import_match_progress = lambda *args, **kwargs: None
+    core.update_import_match_step_progress = lambda *args, **kwargs: None
+    core.import_entry_keys = main.ListSwitchboardCore.import_entry_keys.__get__(core)
+    core.debug_import_match_entry = lambda *_args: None
+    core.debug_import_match_entry_detail = lambda *_args: None
+    core.debug_import_empty_entry = lambda *_args: None
+    core.debug_import_goodreads_candidates = lambda *_args: None
+    core.debug_import_matched_book = lambda *_args: None
+    core.debug_import_match_start = lambda *_args: None
+    core.debug_import_saved_override_lookup = lambda *_args: None
+    core.debug_import_candidate_rejected = lambda *_args: None
+    core.goodreads_source_recovery_candidates = lambda *_args: []
+    core.saved_unmatched_overrides = lambda _list_id: {}
+    core.saved_match_overrides = lambda _list_id: {
+      'exact book|author': {'matched_book_ids': [2]},
+    }
+
+    class FakeApi:
+      def all_field_for(self, field, ids, default_value=''):
+        if field == 'title':
+          return {1: 'Exact Book', 2: 'Preferred omnibus'}
+        if field == 'authors':
+          return {1: ['Author'], 2: ['Author']}
+        return {book_id: default_value for book_id in ids}
+
+    class FakeDb:
+      new_api = FakeApi()
+
+    core.db = FakeDb()
+    core.all_book_ids = lambda: [1, 2]
+    core.all_local_series_values = lambda _ids: {1: [], 2: []}
+
+    matched, missing, review_rows = core.match_imported_entries(
+      [{'position': '1', 'title': 'Exact Book', 'authors': ['Author']}],
+      list_id='example_list', match_series=False,
+      allow_goodreads_recovery=False, return_details=True)
+
+    self.assertEqual({2: '1'}, matched)
+    self.assertEqual([], missing)
+    self.assertEqual([2], review_rows[0]['book_ids'])
+    self.assertEqual('saved/manual override', review_rows[0]['match_source'])
+
+  def test_saved_manual_override_outranks_automatic_matches_across_entries(self):
+    def run(entries):
+      core = object.__new__(main.ListSwitchboardCore)
+      core.update_import_match_progress = lambda *args, **kwargs: None
+      core.update_import_match_step_progress = lambda *args, **kwargs: None
+      core.import_entry_keys = main.ListSwitchboardCore.import_entry_keys.__get__(core)
+      core.debug_import_match_entry = lambda *_args: None
+      core.debug_import_match_entry_detail = lambda *_args: None
+      core.debug_import_empty_entry = lambda *_args: None
+      core.debug_import_goodreads_candidates = lambda *_args: None
+      core.debug_import_matched_book = lambda *_args: None
+      core.debug_import_match_start = lambda *_args: None
+      core.debug_import_saved_override_lookup = lambda *_args: None
+      core.debug_import_candidate_rejected = lambda *_args: None
+      core.goodreads_source_recovery_candidates = lambda *_args: []
+      core.saved_unmatched_overrides = lambda _list_id: {}
+      core.saved_match_overrides = lambda _list_id: {
+        'manual row|author': {'matched_book_ids': [1]},
+      }
+
+      class FakeApi:
+        def all_field_for(self, field, ids, default_value=''):
+          if field == 'title':
+            return {1: 'Automatic Row'}
+          if field == 'authors':
+            return {1: ['Author']}
+          return {book_id: default_value for book_id in ids}
+
+      class FakeDb:
+        new_api = FakeApi()
+
+      core.db = FakeDb()
+      core.all_book_ids = lambda: [1]
+      core.all_local_series_values = lambda _ids: {1: []}
+      return core.match_imported_entries(
+        entries, list_id='example_list', match_series=False,
+        allow_goodreads_recovery=False, return_details=True)
+
+    manual = {'position': '2', 'title': 'Manual Row', 'authors': ['Author']}
+    automatic = {
+      'position': '1', 'title': 'Automatic Row', 'authors': ['Author'],
+      'source': {'url': 'https://example.com/preferred'},
+    }
+    for entries in ([automatic, manual], [manual, automatic]):
+      with self.subTest(order=[entry['title'] for entry in entries]):
+        matched, missing, review_rows = run(entries)
+        self.assertEqual({1: '2'}, matched)
+        self.assertEqual(['Automatic Row'], [entry['title'] for entry in missing])
+        rows = {row['imported_title']: row for row in review_rows}
+        self.assertTrue(rows['Manual Row']['matched'])
+        self.assertEqual('saved/manual override', rows['Manual Row']['match_source'])
+        self.assertFalse(rows['Automatic Row']['matched'])
+
+  def test_saved_manual_override_with_deleted_books_suppresses_all_fallbacks(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    core.update_import_match_progress = lambda *args, **kwargs: None
+    core.update_import_match_step_progress = lambda *args, **kwargs: None
+    core.import_entry_keys = main.ListSwitchboardCore.import_entry_keys.__get__(core)
+    core.debug_import_match_entry = lambda *_args: None
+    core.debug_import_match_entry_detail = lambda *_args: None
+    core.debug_import_empty_entry = lambda *_args: None
+    core.debug_import_goodreads_candidates = lambda *_args: None
+    core.debug_import_matched_book = lambda *_args: None
+    core.debug_import_match_start = lambda *_args: None
+    core.debug_import_saved_override_lookup = lambda *_args: None
+    core.debug_import_candidate_rejected = lambda *_args: None
+    recovery_calls = []
+    core.goodreads_source_recovery_candidates = lambda *_args: recovery_calls.append(True) or [1]
+    core.saved_unmatched_overrides = lambda _list_id: {}
+    core.saved_match_overrides = lambda _list_id: {
+      'exact book|author': {
+        'matched_book_id': 99,
+        'matched_book_ids': [99],
+        'matched_books': [{
+          'matched_book_id': 99,
+          'matched_title': 'Deleted edition',
+          'matched_authors': ['Author'],
+        }],
+      },
+    }
+
+    class FakeApi:
+      def all_field_for(self, field, ids, default_value=''):
+        if field == 'title':
+          return {1: 'Exact Book'}
+        if field == 'authors':
+          return {1: ['Author']}
+        return {book_id: default_value for book_id in ids}
+
+    class FakeDb:
+      new_api = FakeApi()
+
+    core.db = FakeDb()
+    core.all_book_ids = lambda: [1]
+    core.all_local_series_values = lambda _ids: {1: []}
+
+    matched, missing, review_rows = core.match_imported_entries(
+      [{'position': '1', 'title': 'Exact Book', 'authors': ['Author']}],
+      list_id='example_list', allow_goodreads_recovery=True, return_details=True)
+
+    self.assertEqual({}, matched)
+    self.assertEqual(['Exact Book'], [entry['title'] for entry in missing])
+    self.assertEqual([], recovery_calls)
+    self.assertEqual('saved/manual override', review_rows[0]['match_source'])
+    self.assertEqual([99], review_rows[0]['previous_book_ids'])
+    self.assertFalse(review_rows[0]['can_toggle_on'])
 
   def test_duplicate_automatic_candidate_remains_visible_when_already_matched(self):
     core = object.__new__(main.ListSwitchboardCore)
@@ -5155,63 +6989,16 @@ class ImportMatchingTest(unittest.TestCase):
       'book|author one\x1fauthor two',
       main.entry_key({'title': 'Book', 'authors': ['Author One', 'Author Two']}))
 
-  def test_deep_recovery_uses_goodreads_fallback(self):
-    core = object.__new__(main.ListSwitchboardCore)
-    core.update_import_match_progress = lambda *args, **kwargs: None
-    core.update_import_match_step_progress = lambda *args, **kwargs: None
-    core.debug_import_goodreads_candidates = lambda *_args: None
-    core.debug_import_matched_book = lambda *_args: None
-    core.goodreads_recovery_candidates = lambda *_args, **_kwargs: [2]
+  def test_parser_author_list_uses_calibre_ampersand_convention(self):
+    from parser.base import author_list
 
-    class FakeApi:
+    self.assertEqual(
+      ['Terry Pratchett', 'Stephen Baxter'],
+      author_list(['Terry Pratchett & Stephen Baxter']))
+    self.assertEqual(
+      ['Research & Development'],
+      author_list('Research && Development'))
 
-      def all_field_for(self, field, ids, default_value=''):
-        if field == 'title':
-          return {2: 'Matched Book'}
-        if field == 'series':
-          return {2: ''}
-        if field == 'authors':
-          return {2: ['Nobody']}
-        return {}
-
-    class FakeDb:
-      new_api = FakeApi()
-
-    core.db = FakeDb()
-    core.all_book_ids = lambda: [2]
-
-    matched, missing = core.match_deep_recovery_entries([
-      {'position': '7', 'title': 'Missing Series', 'author': 'Nobody'},
-    ])
-
-    self.assertEqual({2: '7'}, matched)
-    self.assertEqual([], missing)
-
-  def test_deep_recovery_skips_books_matched_by_shallow_search(self):
-    core = object.__new__(main.ListSwitchboardCore)
-    looked_up = []
-    core.goodreads_source_recovery_candidates = lambda *_args: []
-    core.author_matches = main.ListSwitchboardCore.author_matches.__get__(core)
-
-    def goodreads_id_for_book(book_id):
-      looked_up.append(book_id)
-      return str(book_id)
-
-    core.goodreads_id_for_book = goodreads_id_for_book
-    core.fetch_goodreads_series_names = lambda _goodreads_id: ['Missing Series']
-
-    candidates = core.goodreads_recovery_candidates(
-      {'position': '1', 'title': 'Missing Series', 'author': 'Same Author'},
-      [1, 2],
-      {1: 'Already Matched', 2: 'Recovery Candidate'},
-      {1: ['Already Matched Series'], 2: ['Other Series']},
-      {1: ['Same Author'], 2: ['Same Author']},
-      {},
-      {},
-      excluded_book_ids={1})
-
-    self.assertEqual([2], looked_up)
-    self.assertEqual([2], candidates)
   def test_import_matching_prefers_exact_title_over_series_match(self):
     core = object.__new__(main.ListSwitchboardCore)
     core.update_import_match_progress = lambda *args, **kwargs: None
@@ -5614,6 +7401,43 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertEqual(False, row['matched'])
     self.assertEqual([], row['book_ids'])
     self.assertEqual('ignored', row['match_source'])
+
+  def test_active_reconciliation_keeps_explicitly_unmatched_prior_book_blank(self):
+    core = self.build_active_reconciliation_core(active_ids=[1], active_positions={1: '1'})
+    row = core.import_review_row(
+      {'position': '1', 'title': 'First Book', 'authors': ['Author One']},
+      match_source='explicit unmatched',
+      directive={
+        'unmatched': True,
+        'previous_matched_book_ids': [1],
+        'previous_match_source': 'automatic',
+      })
+
+    core.reconcile_review_rows_with_active_list(
+      'Example List', [row], active_name='Example List')
+
+    self.assertFalse(row['matched'])
+    self.assertEqual([], row['book_ids'])
+    self.assertEqual('explicit unmatched', row['match_source'])
+
+  def test_active_reconciliation_allows_other_active_book_for_blank_row(self):
+    core = self.build_active_reconciliation_core(
+      active_ids=[1, 2], active_positions={1: '1', 2: '1'})
+    row = core.import_review_row(
+      {'position': '1', 'title': 'First Book', 'authors': ['Author One']},
+      match_source='explicit unmatched',
+      directive={
+        'unmatched': True,
+        'previous_matched_book_ids': [1],
+        'previous_match_source': 'automatic',
+      })
+
+    core.reconcile_review_rows_with_active_list(
+      'Example List', [row], active_name='Example List')
+
+    self.assertTrue(row['matched'])
+    self.assertEqual([2], row['book_ids'])
+    self.assertEqual('active list/manual edit', row['match_source'])
 
   def test_active_reconciliation_stale_active_position_does_not_override_automatic_match(self):
     core = self.build_active_reconciliation_core(active_ids=[12], active_positions={12: '1'})
@@ -6275,7 +8099,7 @@ class ImportReportDialogStateTest(unittest.TestCase):
     self.assertLess(dialog.match_table.widths[3], full_width)
     self.assertEqual(int(len('30890') * 1.75) + 28, dialog.match_table.widths[3])
 
-  def test_apply_manual_find_match_uses_callback_source(self):
+  def test_apply_manual_find_match_is_authoritative_even_for_automatic_candidate(self):
     row = {
       'matched': False,
       'ignored': False,
@@ -6288,7 +8112,8 @@ class ImportReportDialogStateTest(unittest.TestCase):
       'can_toggle_on': True,
     }
     dialog = object.__new__(ImportReportDialog)
-    dialog.selected_match_source_callback = lambda _row, _candidate: 'automatic'
+    dialog.selected_match_source_callback = lambda _row, _candidate: self.fail(
+      'guided candidate selections must not be reclassified as automatic')
 
     dialog.apply_manual_find_match(row, {
       'book_id': 7,
@@ -6296,8 +8121,8 @@ class ImportReportDialogStateTest(unittest.TestCase):
       'authors': 'Author',
     })
 
-    self.assertEqual('automatic', row['match_source'])
-    self.assertEqual('automatic', row['previous_match_source'])
+    self.assertEqual('manual find', row['match_source'])
+    self.assertEqual('manual find', row['previous_match_source'])
 
   def test_apply_manual_find_match_keeps_multiple_selected_books_on_same_position(self):
     row = {
@@ -9867,7 +11692,7 @@ were ''[[Go Deep]]'' by [[Rilzy Adams]].
     self.assertLess(
       registry_ids.index('romantic_times_reviewers_choice_romance'),
       registry_ids.index('writers_trust_atwood_gibson_fiction'))
-    self.assertEqual(382, len(registry_ids))
+    self.assertEqual(387, len(registry_ids))
 
   def test_lambda_literary_awards_parser_reads_directory_and_current_shortlists(self):
     from parser.lambda_literary_awards import (

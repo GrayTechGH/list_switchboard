@@ -7,6 +7,7 @@ import re
 from urllib.parse import urljoin
 
 from .book_club_base import BookClubParserBase, clean_author, clean_title, normalize_line, text_blocks
+from .generic import position_sort_key
 
 
 class RichardJudyBookClubParser(BookClubParserBase):
@@ -15,7 +16,21 @@ class RichardJudyBookClubParser(BookClubParserBase):
   DEFAULT_SCOPE = 'campaign_picks'
   DEFAULT_SELECTION_TYPE = 'seasonal_pick'
 
+  def entry_sort_key(self, entry):
+    try:
+      year = int(entry.get('selection_year') or 9999)
+    except (TypeError, ValueError):
+      year = 9999
+    # BookNotification's table is already chronological inside each year.
+    # Preserve that order so annual picks remain before later Summer picks.
+    return year, position_sort_key(entry.get('position', ''))
+
   def entries_from_soup(self, soup, base_url, scope):
+    if 'booknotification.com' in (base_url or '').casefold():
+      # The complete-history page has one stable five-column table, while its
+      # surrounding search/navigation cards resemble generic book cards and
+      # can otherwise become false selections.
+      return self.finalize_entries(self.table_entries(soup, base_url, scope))
     entries = self.entries_from_latest_bundle_text(soup, base_url, scope)
     return entries or self.entries_from_latest_section(soup, base_url, scope) or super().entries_from_soup(soup, base_url, scope)
 

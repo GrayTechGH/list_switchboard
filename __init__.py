@@ -14,7 +14,9 @@ class ListSwitchboardPlugin(InterfaceActionBase):
   supported_platforms = ['windows', 'osx', 'linux']
   author = 'GrayTechGH'
   version = (1, 8, 0)
-  minimum_calibre_version = (0, 7, 53)
+  # The plugin imports Qt through calibre.qt.core and relies on Calibre's
+  # Python-3 database API.  Calibre 6 is the first supported Qt-6 generation.
+  minimum_calibre_version = (6, 0, 0)
   actual_plugin = 'calibre_plugins.list_switchboard.ui:ListSwitchboardAction'
 
   def is_customizable(self):

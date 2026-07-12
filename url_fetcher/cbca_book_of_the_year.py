@@ -34,6 +34,7 @@ except ImportError:
 class UrlFetcherCBCABookOfTheYear(UrlFetcherGeneric):
 
   URL = ARCHIVE_URL
+  MAX_RESPONSE_BYTES = 32 * 1024 * 1024
   FETCH_URLS = (ARCHIVE_URL,)
   order = 264
   options = {'match_series': False}

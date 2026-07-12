@@ -244,7 +244,7 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
       rows.append(self.row(
         year,
         parsed['title'],
-        parsed['author'],
+        parsed['authors'],
         category,
         result,
         parsed['entry_url'],
@@ -303,12 +303,12 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
     if explicit is not None:
       explicit_title, author, entry_url = explicit
       title = self.preferred_title(title, explicit_title)
-    author = self.clean_author(author)
-    if not title or not author:
+    authors = self.clean_authors(author)
+    if not title or not authors:
       return None
     return {
       'title': title,
-      'author': author,
+      'authors': authors,
       'entry_url': entry_url or page_url,
     }
 
@@ -473,11 +473,20 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
     value = re.sub(r'\s*\([^)]*\)\s*', ' ', value)
     return strip_publication_notes(normalize_line(value)).strip(' "\'\u2018\u2019\u201c\u201d,:')
 
-  def row(self, year, title, author, category, result, source_url, source_order, votes=''):
+  def clean_authors(self, value):
+    """Preserve Goodreads multi-author credits as schema author lists."""
+    value = self.clean_author(value)
+    return [
+      author.strip()
+      for author in re.split(r'\s+&\s+', value)
+      if author.strip()
+    ]
+
+  def row(self, year, title, authors, category, result, source_url, source_order, votes=''):
     row = {
       'award_year': str(year),
       'title': title,
-      'author': author,
+      'authors': list(authors or []),
       'result': result,
       'source_url': source_url,
       'category': clean_category_text(category) or self.category,
@@ -491,11 +500,14 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
     deduped = []
     index_by_key = {}
     for row in rows:
+      authors = row.get('authors', row.get('author', ''))
+      if isinstance(authors, (list, tuple)):
+        authors = ' '.join(str(author) for author in authors)
       key = (
         row.get('award_year'),
         category_key(row.get('category', '')),
         normalize_heading(row.get('title', '')),
-        normalize_heading(row.get('author', '')),
+        normalize_heading(authors),
       )
       if not key[2] or not key[3]:
         continue

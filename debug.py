@@ -17,6 +17,14 @@ import traceback
 
 from calibre_plugins.list_switchboard.config import prefs
 
+try:
+  from calibre_plugins.list_switchboard.matching import (
+    imported_author_display_value,
+    imported_entry_source_url,
+  )
+except ImportError:
+  from matching import imported_author_display_value, imported_entry_source_url
+
 
 DEBUG_SECTIONS = (
   ('general', 'General'),
@@ -30,6 +38,11 @@ DEBUG_SECTIONS = (
   ('goodreads', 'Goodreads lookups'),
   ('errors', 'Exceptions and tracebacks'),
 )
+
+
+def debug_entry_author(entry):
+  """Return the canonical schema-2 author list in a readable debug form."""
+  return ' & '.join(imported_author_display_value(entry))
 
 
 class DebugMixin:
@@ -193,7 +206,7 @@ class DebugMixin:
       self.debug_log(
         f'save active matches cached entry without active book {index} list_id={list_id} '
         f'position={entry.get("position", "")} title={entry.get("title", "")} '
-        f'author={entry.get("author", "")}',
+        f'author={debug_entry_author(entry)}',
         section='storage')
     if len(missing_entries) > 80:
       self.debug_log(
@@ -209,7 +222,7 @@ class DebugMixin:
   def debug_storage_save_match_direct_candidates(self, book_id, position, entry, direct_candidates):
     self.debug_log(
       f'save match direct candidates book_id={book_id} position={position} '
-      f'entry_title={entry.get("title", "")} entry_author={entry.get("author", "")} '
+      f'entry_title={entry.get("title", "")} entry_author={debug_entry_author(entry)} '
       f'direct_candidates={direct_candidates}',
       section='storage')
 
@@ -264,7 +277,7 @@ class DebugMixin:
         'score': score,
         'position': entry.get('position', ''),
         'title': entry.get('title', ''),
-        'author': entry.get('author', ''),
+        'authors': imported_author_display_value(entry),
       })
     self.debug_log(
       f'cached active add candidates book_id={book_id} count={len(candidates)} '
@@ -276,7 +289,7 @@ class DebugMixin:
     if entry is not None:
       detail = (
         f' position={entry.get("position", "")} title={entry.get("title", "")} '
-        f'author={entry.get("author", "")}')
+        f'author={debug_entry_author(entry)}')
     self.debug_log(
       f'cached active add decision book_id={book_id} decision={decision} '
       f'index_value={index_value}{detail}',
@@ -356,7 +369,7 @@ class DebugMixin:
   def debug_import_match_entry(self, entry, candidates):
     self.debug_log(
       f'import match entry position={entry.get("position", "")} title={entry.get("title", "")} '
-      f'aliases={entry.get("aliases", [])} author={entry.get("author", "")} candidates={candidates}',
+      f'aliases={entry.get("aliases", [])} author={debug_entry_author(entry)} candidates={candidates}',
       section='import')
 
   def debug_import_match_entry_detail(
@@ -364,7 +377,7 @@ class DebugMixin:
       series_candidates, candidates, author_candidates, already_matched):
     self.debug_log(
       f'import match detail {entry_index}/{total_entries} position={entry.get("position", "")} '
-      f'title={entry.get("title", "")} author={entry.get("author", "")} keys={entry_keys} '
+      f'title={entry.get("title", "")} author={debug_entry_author(entry)} keys={entry_keys} '
       f'title_candidates={title_candidates} series_candidates={series_candidates} '
       f'all_candidates={candidates} author_candidates={author_candidates} '
       f'already_matched={already_matched}',
@@ -373,7 +386,7 @@ class DebugMixin:
   def debug_import_saved_override_lookup(self, entry, list_id, saved_book_ids):
     self.debug_log(
       f'import saved override lookup list_id={list_id} position={entry.get("position", "")} '
-      f'title={entry.get("title", "")} author={entry.get("author", "")} '
+      f'title={entry.get("title", "")} author={debug_entry_author(entry)} '
       f'saved_book_ids={saved_book_ids}',
       section='import')
 
@@ -381,15 +394,15 @@ class DebugMixin:
     self.debug_log(
       f'import candidate rejected reason={reason} book_id={book_id} '
       f'entry_position={entry.get("position", "")} entry_title={entry.get("title", "")} '
-      f'entry_author={entry.get("author", "")} book_title={titles.get(book_id, "")} '
+      f'entry_author={debug_entry_author(entry)} book_title={titles.get(book_id, "")} '
       f'book_authors={authors.get(book_id, "")}',
       section='import')
 
   def debug_import_matched_book(self, label, book_id, entry, titles, series):
     self.debug_log(
       f'import {label} book_id={book_id} position={entry.get("position", "")} '
-      f'entry_title={entry.get("title", "")} entry_author={entry.get("author", "")} '
-      f'entry_source_url={entry.get("source_url", "")} '
+      f'entry_title={entry.get("title", "")} entry_author={debug_entry_author(entry)} '
+      f'entry_source_url={imported_entry_source_url(entry)} '
       f'book_title={titles.get(book_id, "")} series={series.get(book_id, "")}',
       section='import')
 

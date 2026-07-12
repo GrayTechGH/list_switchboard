@@ -11,9 +11,9 @@ Calibre-facing facade for List Switchboard.
 Maintenance notes:
 - ListSwitchboardCore is intentionally a thin composition layer. Behavior lives
   in mixins by subsystem, while Calibre still imports one facade class.
-- Mixin order matters when helpers call across subsystems. Keep DebugMixin early
-  so every subsystem can log, and keep Metadata/ListState before workflows that
-  write fields.
+- Mixin order matters only when mixins provide the same method. Keep DebugMixin
+  early so every subsystem can log; workflow helpers use normal facade
+  attribute lookup rather than cooperative `super()` calls.
 - Module-level imports re-export helper names used by tests and older local
   scripts. Do not remove those compatibility imports just because main.py no
   longer defines the helpers directly.
@@ -94,12 +94,14 @@ except ImportError:
 try:
   from calibre_plugins.list_switchboard.metadata import (
     MetadataMixin, format_list_entry, format_stored_lists, next_whole_index_after,
-    parse_stored_lists, sort_names, unique_case_insensitive, validate_list_name,
+    parse_stored_lists, rebuild_stored_lists, sort_names, unique_case_insensitive,
+    validate_list_name,
   )
 except ImportError:
   from metadata import (
     MetadataMixin, format_list_entry, format_stored_lists, next_whole_index_after,
-    parse_stored_lists, sort_names, unique_case_insensitive, validate_list_name,
+    parse_stored_lists, rebuild_stored_lists, sort_names, unique_case_insensitive,
+    validate_list_name,
   )
 
 try:
@@ -139,10 +141,43 @@ DEFAULT_USER_AGENT = (
   'AppleWebKit/537.36 (KHTML, like Gecko) '
   'Chrome/124.0.0.0 Safari/537.36'
 )
+DEFAULT_RESPONSE_MAX_BYTES = 10 * 1024 * 1024
+LARGE_RESPONSE_MAX_BYTES = 32 * 1024 * 1024
 
 
-def decode_url_response(response):
-  data = response.read()
+class ResponseTooLargeError(RuntimeError):
+  pass
+
+
+def response_content_length(response):
+  headers = getattr(response, 'headers', None)
+  if headers is None:
+    return None
+  try:
+    value = headers.get('Content-Length')
+  except Exception:
+    return None
+  try:
+    return int(value) if value is not None else None
+  except (TypeError, ValueError):
+    return None
+
+
+def read_limited_response(response, max_bytes=DEFAULT_RESPONSE_MAX_BYTES):
+  max_bytes = int(max_bytes or DEFAULT_RESPONSE_MAX_BYTES)
+  content_length = response_content_length(response)
+  if content_length is not None and content_length > max_bytes:
+    raise ResponseTooLargeError(
+      f'Remote response is {content_length} bytes, exceeding the {max_bytes}-byte limit.')
+  data = response.read(max_bytes + 1)
+  if len(data) > max_bytes:
+    raise ResponseTooLargeError(
+      f'Remote response exceeds the {max_bytes}-byte limit.')
+  return data
+
+
+def decode_url_response(response, max_bytes=DEFAULT_RESPONSE_MAX_BYTES):
+  data = read_limited_response(response, max_bytes=max_bytes)
   charset = response.headers.get_content_charset() if response.headers else None
   return decode_response_data(data, charset=charset)
 
@@ -258,6 +293,10 @@ class ListSwitchboardCore(
     self._cached_active_add_import_map = None
     self.last_goodreads_lookup_time = 0
     self.import_progress = None
+    self.import_progress_phase_number = 0
+    self.import_progress_total_phases = 0
+    self.import_progress_phase_name = ''
+    self.import_progress_phase_value = 0
     self.browser = None
 
   def configured(self):
@@ -331,13 +370,14 @@ class ListSwitchboardCore(
       'Connection': 'close',
     }
 
-  def fetch_url(self, url, user_agent=None):
+  def fetch_url(self, url, user_agent=None, max_bytes=None):
+    max_bytes = max_bytes or DEFAULT_RESPONSE_MAX_BYTES
     headers = self.fetch_headers(user_agent=user_agent)
     if CalibreBrowser is not None:
       try:
         browser = self.calibre_browser(headers)
         response = browser.open(url, timeout=30)
-        return decode_url_response(response)
+        return decode_url_response(response, max_bytes=max_bytes)
       except Exception as err:
         if is_ssl_certificate_error(err):
           diagnostics = ssl_fetch_diagnostics(url, 'calibre browser', err)
@@ -348,7 +388,7 @@ class ListSwitchboardCore(
     request = Request(url, headers=headers)
     try:
       with urlopen(request, timeout=30) as response:
-        return decode_url_response(response)
+        return decode_url_response(response, max_bytes=max_bytes)
     except (URLError, ssl.SSLError) as err:
       if is_ssl_certificate_error(err):
         diagnostics = ssl_fetch_diagnostics(url, 'urllib', err)
@@ -365,14 +405,6 @@ class ListSwitchboardCore(
         pass
     self.browser.addheaders = list(headers.items())
     return self.browser
-
-  def fallback_fetch_urls(self, url):
-    for fetcher in self.available_import_recipes():
-      urls = fetcher.fallback_urls(url) if hasattr(fetcher, 'fallback_urls') else ()
-      if urls:
-        self.debug_fallback_urls(url, urls)
-        return urls
-    return ()
 
   def sleep_with_events(self, seconds, message):
     end_time = time.time() + max(0, seconds)

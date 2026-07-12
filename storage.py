@@ -16,6 +16,7 @@ Maintenance notes:
 import json
 import os
 import re
+import tempfile
 from datetime import datetime, timezone
 
 try:
@@ -292,22 +293,61 @@ class StorageMixin:
       return None
     except Exception as err:
       self.debug_storage_read_failed(path, err)
+      self.warn_invalid_storage_file(path)
       return None
     if not isinstance(data, dict):
       self.debug_storage_read_invalid(path, 'top-level value is not a JSON object')
+      self.warn_invalid_storage_file(path)
       return None
     self.debug_storage_read_ok(path, sorted(data.keys()))
     return data
 
   def write_json_file(self, path, data):
+    temporary_path = None
     try:
       self.ensure_storage_root()
-      with open(path, 'w', encoding='utf-8') as handle:
+      folder = os.path.dirname(path) or self.storage_root()
+      descriptor, temporary_path = tempfile.mkstemp(
+        prefix=f'.{os.path.basename(path)}.', suffix='.tmp', dir=folder)
+      with os.fdopen(descriptor, 'w', encoding='utf-8') as handle:
         json.dump(data, handle, indent=2, sort_keys=True)
         handle.write('\n')
+        handle.flush()
+        os.fsync(handle.fileno())
+      os.replace(temporary_path, path)
+      temporary_path = None
       self.debug_storage_write_ok(path, os.path.getsize(path))
     except Exception as err:
       raise ListSwitchboardError(f'Could not write List Switchboard data file "{path}": {err}')
+    finally:
+      if temporary_path is not None:
+        try:
+          os.remove(temporary_path)
+        except FileNotFoundError:
+          pass
+        except Exception as err:
+          self.debug_storage_write_cleanup_failed(temporary_path, err)
+
+  def warn_invalid_storage_file(self, path):
+    """Warn once per malformed cache file without exposing its local path."""
+    warned = getattr(self, '_invalid_storage_file_warnings', set())
+    if path in warned:
+      return
+    warned.add(path)
+    self._invalid_storage_file_warnings = warned
+    filename = os.path.basename(path)
+    if filename.startswith('import_') and filename.endswith('.json'):
+      label = f'import cache "{filename[7:-5]}"'
+    elif filename.startswith('match_') and filename.endswith('.json'):
+      label = f'saved matches "{filename[6:-5]}"'
+    else:
+      label = 'saved List Switchboard data'
+    message = (
+      f'List Switchboard could not read the {label}. '
+      'The file was left unchanged; refresh or recreate it when convenient.')
+    status_message = getattr(self, 'status_message', None)
+    if callable(status_message):
+      status_message(message)
 
   def read_import_cache(self, list_id):
     safe_id = safe_list_id(list_id)
@@ -371,26 +411,27 @@ class StorageMixin:
 
   def merge_append_import_cache(self, list_id, old_cache, parsed, recipe=None):
     list_id = safe_list_id(list_id)
-    old_entries = old_cache.get('entries') or []
-    new_entries = parsed.get('entries') or []
+    old_source = cache_source_object(old_cache)
+    old_entries = [
+      normalize_cache_entry_for_write(entry, old_source)
+      for entry in (old_cache.get('entries') or [])
+    ]
+    fresh_cache = build_import_cache_data(list_id, parsed, recipe=recipe)
+    new_entries = fresh_cache.get('entries') or []
     if not old_entries or not new_entries:
       self.debug_storage_append_cache(
         list_id, len(old_entries), len(new_entries), 'replace',
         reason='old or new cache has no entries')
       return self.write_import_cache(list_id, parsed, recipe=recipe)
-    old_keys = [entry_key(entry) for entry in old_entries]
-    new_keys = [entry_key(entry) for entry in new_entries]
-    if not old_keys or new_keys[:len(old_keys)] != old_keys:
+    if new_entries[:len(old_entries)] != old_entries:
       self.debug_storage_append_cache(
         list_id, len(old_entries), len(new_entries), 'replace',
-        reason='new entries do not preserve old prefix')
+        reason='new entries do not preserve the normalized old prefix')
       return self.write_import_cache(list_id, parsed, recipe=recipe)
-    merged = dict(parsed)
-    merged['entries'] = old_entries + new_entries[len(old_entries):]
     self.debug_storage_append_cache(
       list_id, len(old_entries), len(new_entries), 'append',
-      reason=f'added={len(merged["entries"]) - len(old_entries)}')
-    return self.write_import_cache(list_id, merged, recipe=recipe)
+      reason=f'added={len(new_entries) - len(old_entries)}')
+    return self.write_import_cache(list_id, parsed, recipe=recipe)
 
   def read_match_cache(self, list_id):
     safe_id = safe_list_id(list_id)
@@ -504,6 +545,13 @@ class StorageMixin:
     item['matched_at'] = utc_now_text()
     item['matched_title'] = matched_title
     item['matched_authors'] = list(matched_authors)
+    return item
+
+  def saved_match_item_for_books(self, entry, book_ids, db):
+    """Build an exact manual selection without retaining omitted older IDs."""
+    item = None
+    for book_id in book_ids or []:
+      item = self.saved_match_item_for_book(item, entry, book_id, db)
     return item
 
   def upsert_saved_match_override_for_book(self, list_id, entry, book_id, db=None):
@@ -628,9 +676,10 @@ class StorageMixin:
           removed += 1
           changed = True
       elif matched and current_source in ('manual find', 'active list/manual edit'):
-        for book_id in row.get('book_ids') or []:
-          by_key[key] = self.saved_match_item_for_book(
-            by_key.get(key), row.get('entry') or {}, book_id, self.db.new_api)
+        item = self.saved_match_item_for_books(
+          row.get('entry') or {}, row.get('book_ids') or [], self.db.new_api)
+        if item is not None:
+          by_key[key] = item
           changed = True
       elif matched and (original_ignored or source == 'explicit unmatched' or source == 'ignored'):
         if key in by_key and item_is_ignored_directive(by_key[key]):

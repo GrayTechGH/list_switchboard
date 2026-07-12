@@ -412,12 +412,12 @@ class MatchingMixin:
     authors = db.all_field_for('authors', ids, default_value='')
     by_title, by_series = self.import_match_indexes(ids, titles, series)
 
+    if book_id in self.saved_override_candidates_for_entry(entry, list_id, ids):
+      return 'saved/manual override'
     if book_id in self.direct_match_candidates_for_entry(
         entry, by_title=by_title, by_series=by_series, authors=authors,
         match_series=match_series):
       return 'automatic'
-    if book_id in self.saved_override_candidates_for_entry(entry, list_id, ids):
-      return 'saved/manual override'
     if allow_goodreads_recovery and book_id in self.goodreads_source_recovery_candidates_for_match(
         entry, titles, series, authors, by_title, by_series, match_series=match_series):
       return 'Goodreads/deep recovery'
@@ -430,19 +430,24 @@ class MatchingMixin:
     override = overrides.get(entry_key_for_saved_match(entry))
     if not override:
       return []
+    return self.saved_override_book_ids(override, available_ids=ids)
+
+  def saved_override_book_ids(self, override, available_ids=None):
     raw_book_ids = override.get('matched_book_ids')
     if raw_book_ids is None:
       raw_book_ids = [override.get('matched_book_id')]
     if not isinstance(raw_book_ids, (list, tuple)):
       raw_book_ids = [raw_book_ids]
-    available_ids = set(ids)
+    available_ids = set(available_ids) if available_ids is not None else None
     book_ids = []
     for raw_book_id in raw_book_ids:
       try:
         book_id = int(raw_book_id)
       except Exception:
         continue
-      if book_id in available_ids and book_id not in book_ids:
+      if (
+          (available_ids is None or book_id in available_ids)
+          and book_id not in book_ids):
         book_ids.append(book_id)
     return book_ids
 
@@ -713,6 +718,7 @@ class MatchingMixin:
     authors = db.all_field_for('authors', ids, default_value='')
     by_title, by_series = self.import_match_indexes(ids, titles, series)
     unmatched_overrides = self.saved_unmatched_overrides(list_id) if list_id else {}
+    saved_overrides = self.saved_match_overrides(list_id) if list_id else {}
     self.debug_import_match_start(
       list_id, match_series, len(ids), len(entries), len(by_title), len(by_series))
 
@@ -760,6 +766,8 @@ class MatchingMixin:
           total_entries,
           f'Matched {entry_index} of {total_entries} recipe entries...')
         continue
+      saved_override = saved_overrides.get(saved_entry_key)
+      authoritative_override = saved_override is not None
       title_candidates = []
       series_candidates = []
       for entry_key in entry_keys:
@@ -796,6 +804,8 @@ class MatchingMixin:
             ]
             previous_row['matched'] = bool(previous_row.get('book_ids'))
             previous_row['original_matched'] = bool(previous_row.get('book_ids'))
+            if not previous_row['matched'] and previous_entry not in missing_entries:
+              missing_entries.append(previous_entry)
         if book_id not in row['book_ids']:
           row['book_ids'].append(book_id)
           row['matched_books'] = self.matched_book_details(row['book_ids'], titles, authors)
@@ -808,11 +818,55 @@ class MatchingMixin:
         row['can_toggle_on'] = True
         matched_sources[book_id] = source
 
-      if match_series:
+      if authoritative_override:
+        saved_book_ids = self.saved_override_book_ids(saved_override, available_ids=ids)
+        previous_book_ids = self.saved_override_book_ids(saved_override)
+        previous_matched_books = list(saved_override.get('matched_books') or [])
+        if not previous_matched_books and saved_override.get('matched_book_id') is not None:
+          previous_matched_books = [{
+            'matched_book_id': saved_override.get('matched_book_id'),
+            'matched_title': saved_override.get('matched_title', ''),
+            'matched_authors': saved_override.get('matched_authors', []),
+          }]
+        row['previous_book_ids'] = previous_book_ids
+        row['previous_matched_books'] = previous_matched_books
+        row['previous_match_source'] = 'saved/manual override'
+        row['match_source'] = 'saved/manual override'
+        row['original_match_source'] = 'saved/manual override'
+        row['can_toggle_on'] = bool(saved_book_ids)
+        self.debug_import_saved_override_lookup(entry, list_id, saved_book_ids)
+        for book_id in saved_book_ids:
+          if book_id in matched:
+            previous_source = matched_sources.get(book_id)
+            if (
+                previous_source != 'saved/manual override'
+                or imported_entry_preferred(entry, matched_entries.get(book_id))):
+              matched[book_id] = entry.get('position', '')
+              remember_match(book_id, 'saved/manual override')
+              matched_entries[book_id] = entry
+              self.debug_import_matched_book(
+                'replaced duplicate saved override match', book_id, entry, titles, series)
+              entry_matched = True
+            self.debug_import_candidate_rejected(
+              'saved override already matched', book_id, entry, titles, authors)
+            continue
+          matched[book_id] = entry.get('position', '')
+          matched_entries[book_id] = entry
+          remember_match(book_id, 'saved/manual override')
+          entry_matched = True
+          self.debug_import_matched_book(
+            'saved override matched', book_id, entry, titles, series)
+
+      if not authoritative_override and match_series:
         series_candidates = list(OrderedDict(
           (book_id, None) for book_id in series_candidates).keys())
         for book_id in series_candidates:
           if book_id in matched:
+            if matched_sources.get(book_id) == 'saved/manual override':
+              self.debug_import_candidate_rejected(
+                'authoritative saved override already matched',
+                book_id, entry, titles, authors)
+              continue
             if imported_entry_preferred(entry, matched_entries.get(book_id)):
               matched[book_id] = entry.get('position', '')
               remember_match(book_id, 'automatic')
@@ -829,11 +883,16 @@ class MatchingMixin:
             self.debug_import_matched_book('matched', book_id, entry, titles, series)
           else:
             self.debug_import_candidate_rejected('author mismatch', book_id, entry, titles, authors)
-      if not entry_matched:
+      if not authoritative_override and not entry_matched:
         title_candidates = list(OrderedDict(
           (book_id, None) for book_id in title_candidates).keys())
         for book_id in title_candidates:
           if book_id in matched:
+            if matched_sources.get(book_id) == 'saved/manual override':
+              self.debug_import_candidate_rejected(
+                'authoritative saved override already matched',
+                book_id, entry, titles, authors)
+              continue
             if imported_entry_preferred(entry, matched_entries.get(book_id)):
               matched[book_id] = entry.get('position', '')
               remember_match(book_id, 'automatic')
@@ -850,25 +909,7 @@ class MatchingMixin:
             self.debug_import_matched_book('matched', book_id, entry, titles, series)
             break
           self.debug_import_candidate_rejected('author mismatch', book_id, entry, titles, authors)
-      if not entry_matched:
-        saved_book_ids = self.saved_override_candidates_for_entry(entry, list_id, ids)
-        self.debug_import_saved_override_lookup(entry, list_id, saved_book_ids)
-        for book_id in saved_book_ids:
-          if book_id in matched:
-            if imported_entry_preferred(entry, matched_entries.get(book_id)):
-              matched[book_id] = entry.get('position', '')
-              remember_match(book_id, 'saved/manual override')
-              matched_entries[book_id] = entry
-              self.debug_import_matched_book('replaced duplicate saved override match', book_id, entry, titles, series)
-              entry_matched = True
-            self.debug_import_candidate_rejected('saved override already matched', book_id, entry, titles, authors)
-            continue
-          matched[book_id] = entry.get('position', '')
-          matched_entries[book_id] = entry
-          remember_match(book_id, 'saved/manual override')
-          entry_matched = True
-          self.debug_import_matched_book('saved override matched', book_id, entry, titles, series)
-      if not entry_matched and allow_goodreads_recovery:
+      if not authoritative_override and not entry_matched and allow_goodreads_recovery:
         self.update_import_match_step_progress(
           entry_index,
           total_entries,
@@ -883,6 +924,11 @@ class MatchingMixin:
         self.debug_import_goodreads_candidates(entry, goodreads_candidates)
         for book_id in goodreads_candidates:
           if book_id in matched:
+            if matched_sources.get(book_id) == 'saved/manual override':
+              self.debug_import_candidate_rejected(
+                'authoritative saved override already matched',
+                book_id, entry, titles, authors)
+              continue
             if imported_entry_preferred(entry, matched_entries.get(book_id)):
               matched[book_id] = entry.get('position', '')
               remember_match(book_id, 'Goodreads/deep recovery')
@@ -909,109 +955,6 @@ class MatchingMixin:
     if return_details:
       return matched, missing_entries, review_rows
     return matched, missing_entries
-
-  def match_deep_recovery_entries(self, entries, excluded_book_ids=None, match_series=True):
-    excluded_book_ids = set(excluded_book_ids or [])
-    db = self.db.new_api
-    ids = self.all_book_ids()
-    titles = db.all_field_for('title', ids, default_value='')
-    series = self.all_local_series_values(ids)
-    authors = db.all_field_for('authors', ids, default_value='')
-
-    by_title = {}
-    by_series = {}
-    for book_id in ids:
-      for title_key in match_keys(titles.get(book_id, '')):
-        by_title.setdefault(title_key, []).append(book_id)
-      for series_value in series.get(book_id, []):
-        for series_key in series_match_keys(series_value):
-          by_series.setdefault(series_key, []).append(book_id)
-
-    matched = OrderedDict()
-    missing_entries = []
-    total_entries = len(entries)
-    for entry_index, entry in enumerate(entries, start=1):
-      self.update_import_match_step_progress(
-        entry_index,
-        total_entries,
-        0.2,
-        f'Deep Recovery {entry_index} of {total_entries}: {entry.get("title", "")}')
-      progress = lambda fraction, message: self.update_import_match_step_progress(
-        entry_index, total_entries, fraction, message)
-      candidates = self.goodreads_recovery_candidates(
-        entry, ids, titles, series, authors, by_title, by_series, progress,
-        excluded_book_ids=excluded_book_ids,
-        match_series=match_series)
-      self.debug_import_goodreads_candidates(entry, candidates)
-      entry_matched = False
-      for book_id in candidates:
-        if book_id in matched or book_id in excluded_book_ids:
-          continue
-        matched[book_id] = entry.get('position', '')
-        entry_matched = True
-        self.debug_import_matched_book('Deep Recovery matched', book_id, entry, titles, series)
-      if not entry_matched:
-        missing_entries.append(entry)
-      self.update_import_match_progress(
-        entry_index,
-        total_entries,
-        f'Deep Recovery checked {entry_index} of {total_entries} recipe entries...')
-    return matched, missing_entries
-
-  def goodreads_recovery_candidates(
-      self, entry, ids, titles, series, authors, by_title, by_series, progress=None,
-      excluded_book_ids=None, match_series=True):
-    excluded_book_ids = set(excluded_book_ids or [])
-    source_candidates = self.goodreads_source_recovery_candidates_for_match(
-      entry, titles, series, authors, by_title, by_series,
-      match_series=match_series)
-    source_candidates = [
-      book_id for book_id in source_candidates
-      if book_id not in excluded_book_ids
-    ]
-    if progress is not None:
-      progress(0.6, f'Checked Goodreads source for: {entry.get("title", "")}')
-    if source_candidates:
-      return source_candidates
-
-    if not match_series:
-      return []
-
-    entry_keys = self.import_entry_keys(entry)
-    relaxed_entry_keys = set()
-    for key in entry_keys:
-      relaxed_entry_keys.update(series_match_keys(key))
-    relaxed_entry_keys.discard('')
-    if not relaxed_entry_keys:
-      return []
-    candidates = []
-    candidate_ids = []
-    for book_id in ids:
-      if book_id in excluded_book_ids:
-        continue
-      if not self.author_matches(authors.get(book_id, ''), imported_author_search_text(entry)):
-        continue
-      goodreads_id = self.goodreads_id_for_book(book_id)
-      if not goodreads_id:
-        continue
-      candidate_ids.append((book_id, goodreads_id))
-
-    total_candidates = max(len(candidate_ids), 1)
-    for lookup_index, (book_id, goodreads_id) in enumerate(candidate_ids, start=1):
-      if progress is not None:
-        fraction = 0.6 + (0.35 * (float(lookup_index - 1) / total_candidates))
-        progress(
-          fraction,
-          f'Checking Goodreads book {lookup_index} of {total_candidates}: {entry.get("title", "")}')
-      series_names = self.fetch_goodreads_series_names(goodreads_id)
-      for series_name in series_names:
-        keys = set(series_match_keys(series_name))
-        if keys & relaxed_entry_keys:
-          candidates.append(book_id)
-          break
-    if progress is not None:
-      progress(0.95, f'Finished Goodreads checks for: {entry.get("title", "")}')
-    return candidates
 
   def goodreads_source_recovery_candidates_for_match(
       self, entry, titles, series, authors, by_title, by_series, match_series=True):

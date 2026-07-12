@@ -17,6 +17,11 @@ try:
 except ImportError:
   from parser.base import parsed_source
 
+try:
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError
+except ImportError:
+  from errors import ImportCancelledError
+
 
 class SourceAttempt:
   """
@@ -30,13 +35,14 @@ class SourceAttempt:
 
   def __init__(
       self, label, url, parser, source_rank=0, usability_check=None,
-      user_agent=None):
+      user_agent=None, max_response_bytes=None):
     self.label = label
     self.url = url
     self.parser = parser
     self.source_rank = source_rank
     self.usability_check = usability_check
     self.user_agent = user_agent
+    self.max_response_bytes = max_response_bytes
 
   def parse(self, html, fetch_url=None, log=None, progress=None):
     parser = self.parser
@@ -48,16 +54,33 @@ class SourceAttempt:
       html, self.url, fetch_url=fetch_url, log=log, progress=progress)
 
   def fetch_url(self, fetch_url):
-    if fetch_url is None or not self.user_agent:
+    if fetch_url is None or (not self.user_agent and not self.max_response_bytes):
       return fetch_url
 
     def wrapped(url):
+      keyword_options = {}
+      if self.user_agent:
+        keyword_options['user_agent'] = self.user_agent
+      if self.max_response_bytes:
+        keyword_options['max_bytes'] = self.max_response_bytes
       try:
-        return fetch_url(url, user_agent=self.user_agent)
+        return fetch_url(url, **keyword_options)
       except TypeError as err:
-        if 'user_agent' not in str(err) and 'keyword' not in str(err):
+        if 'keyword' not in str(err):
           raise
-        return fetch_url(url)
+      if self.max_response_bytes:
+        try:
+          return fetch_url(url, max_bytes=self.max_response_bytes)
+        except TypeError as err:
+          if 'max_bytes' not in str(err) and 'keyword' not in str(err):
+            raise
+      if self.user_agent:
+        try:
+          return fetch_url(url, user_agent=self.user_agent)
+        except TypeError as err:
+          if 'user_agent' not in str(err) and 'keyword' not in str(err):
+            raise
+      return fetch_url(url)
 
     return wrapped
 
@@ -146,6 +169,8 @@ class SourceFallbackRunner:
         parsed.setdefault('source', parsed_source(parsed.get('name', ''), attempt.url))
         parsed['notes'] = failures + list(parsed.get('notes', ()))
         return parsed
+      except ImportCancelledError:
+        raise
       except Exception as err:
         reason = str(err) or err.__class__.__name__
         note = f'{attempt.label} failed: {reason}'

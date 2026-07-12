@@ -297,11 +297,15 @@ from .seiun import (
 )
 from .sword_and_laser import UrlFetcherSwordAndLaser
 from .oprah_book_club import UrlFetcherOprahBookClub
-from .reese_book_club import UrlFetcherReeseBookClub
-from .read_with_jenna import UrlFetcherReadWithJenna
-from .gma_book_club import UrlFetcherGMABookClub
+from .reese_book_club import UrlFetcherReeseBookClub, UrlFetcherReeseBookClubYA
+from .read_with_jenna import UrlFetcherReadWithJenna, UrlFetcherReadWithJennaJr
+from .gma_book_club import UrlFetcherGMABookClub, UrlFetcherGMABookClubYA
 from .canada_reads import UrlFetcherCanadaReads
-from .library_reads import UrlFetcherLibraryReads
+from .library_reads import (
+  UrlFetcherLibraryReads,
+  UrlFetcherLibraryReadsBonusPicks,
+  UrlFetcherLibraryReadsNotableNonfiction,
+)
 from .barnes_noble_book_club import UrlFetcherBarnesNobleBookClub
 from .service95_book_club import UrlFetcherService95BookClub
 from .richard_judy_book_club import UrlFetcherRichardJudyBookClub
@@ -512,10 +516,15 @@ URL_FETCHER_CLASSES = (
   UrlFetcherSwordAndLaser,
   UrlFetcherOprahBookClub,
   UrlFetcherReeseBookClub,
+  UrlFetcherReeseBookClubYA,
   UrlFetcherReadWithJenna,
+  UrlFetcherReadWithJennaJr,
   UrlFetcherGMABookClub,
+  UrlFetcherGMABookClubYA,
   UrlFetcherCanadaReads,
   UrlFetcherLibraryReads,
+  UrlFetcherLibraryReadsBonusPicks,
+  UrlFetcherLibraryReadsNotableNonfiction,
   UrlFetcherBarnesNobleBookClub,
   UrlFetcherService95BookClub,
   UrlFetcherRichardJudyBookClub,
