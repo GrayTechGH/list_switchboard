@@ -254,6 +254,51 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertEqual('139.5', sword_laser['entries'][0]['position'])
     self.assertEqual('Finding Baba Yaga', sword_laser['entries'][0]['title'])
 
+  def test_r_fantasy_fetchers_use_verified_wayback_fallbacks_with_provenance(self):
+    from url_fetcher.r_fantasy_top_novels_2025 import UrlFetcherRFantasyTopNovels2025
+    from url_fetcher.r_fantasy_top_self_published_novels_2024 import (
+      UrlFetcherRFantasyTopSelfPublishedNovels2024,
+    )
+    from url_fetcher.r_fantasy_top_standalone_novels_2024 import (
+      UrlFetcherRFantasyTopStandaloneNovels2024,
+    )
+
+    fetchers = (
+      UrlFetcherRFantasyTopNovels2025(),
+      UrlFetcherRFantasyTopStandaloneNovels2024(),
+      UrlFetcherRFantasyTopSelfPublishedNovels2024(),
+    )
+    for fetcher in fetchers:
+      self.assertEqual(fetcher.WAYBACK_URL, fetcher.FETCH_URLS[1])
+      self.assertIn('old.reddit.com', fetcher.FETCH_URLS[0])
+      self.assertEqual(fetcher.URL, fetcher.FETCH_URLS[2])
+
+    fetcher = fetchers[0]
+    attempts = []
+    archived_html = '''
+      <table>
+        <tr><th>Rank</th><th>Series</th><th>Votes</th><th>Author</th><th>Rank Change</th></tr>
+        <tr><td>1</td><td>Middle-Earth Universe</td><td>917</td><td>J.R.R. Tolkien</td><td>-</td></tr>
+      </table>
+    '''
+
+    def fetch_url(url, **_kwargs):
+      attempts.append(url)
+      if url == fetcher.FETCH_URLS[0]:
+        return '<title>Reddit - Please wait for verification</title>'
+      self.assertEqual(fetcher.WAYBACK_URL, url)
+      return archived_html
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+
+    self.assertEqual(list(fetcher.FETCH_URLS[:2]), attempts)
+    self.assertEqual(['Middle-Earth Universe'], [
+      entry['title'] for entry in parsed['entries']])
+    self.assertEqual(fetcher.WAYBACK_URL, parsed['source']['url'])
+    self.assertTrue(any(
+      'Internet Archive snapshot captured 2026-01-23' in note
+      for note in parsed['notes']))
+
   def test_sword_and_laser_march_madness_flag_controls_sublist_fetching(self):
     recipe = parser_source(UrlFetcherSwordAndLaser(), include_march_madness=False)
     html = '''
@@ -1829,7 +1874,7 @@ Project Gutenberg Book of the Month: [The Call of the Wild](https://www.gutenber
     self.assertEqual(
       ['Ram V', 'Filipe Andrade'], parsed['entries'][3]['authors'])
     self.assertTrue(parsed['entries'][3]['authors_incomplete'])
-    self.assertTrue(any('Inactive' in note for note in parsed['notes']))
+    self.assertFalse(any('Inactive' in note for note in parsed['notes']))
     self.assertTrue(any('Malformed historical row' in note for note in parsed['notes']))
 
     source_view = RBookclubParser().parse('''
@@ -1845,6 +1890,99 @@ Modern: The Call of the Wild by Jack London
     self.assertEqual(
       ['The Call of the Wild'],
       [entry['title'] for entry in source_view['entries']])
+
+  def test_r_bookclub_parser_recovers_historical_rows_and_skips_empty_periods(self):
+    from parser.r_bookclub import RBookclubParser
+
+    markdown = r'''# Previous Selections
+
+# 2017
+
+# August - November 2017
+
+His Dark Materials
+
+# February 2017
+
+Portrait of the Artist (Evergreen) [posts](https://redd.it/portrait) \+ [marginalia](https://redd.it/marginalia)
+
+# 2016
+
+# May 2016
+
+Short Story: none
+
+# 2013
+
+# October 2013
+
+Modern Book of the Month: [The Short Stories of Ernest Hemingway](https://en.wikipedia.org/wiki/The_Short_Stories_of_Ernest_Hemingway)
+
+# 2011
+
+# May 2011
+
+Inactive
+'''
+    parsed = RBookclubParser().parse(
+      json.dumps({'kind': 'wikipage', 'data': {'content_md': markdown}}),
+      'https://www.reddit.com/r/bookclub/wiki/previous/')
+
+    self.assertEqual([
+      'The Short Stories of Ernest Hemingway',
+      'A Portrait of the Artist as a Young Man',
+      'His Dark Materials',
+    ], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual([
+      ['Ernest Hemingway'], ['James Joyce'], ['Philip Pullman'],
+    ], [entry['authors'] for entry in parsed['entries']])
+    self.assertEqual(['1', '2', '3'], [entry['position'] for entry in parsed['entries']])
+    self.assertEqual('Evergreen', parsed['entries'][1]['theme_or_track'])
+    self.assertEqual('8', parsed['entries'][2]['selection_month'])
+    self.assertEqual('11', parsed['entries'][2]['selection_month_end'])
+    self.assertEqual([], parsed['notes'])
+
+  def test_r_bookclub_parser_cleans_resource_annotations_without_losing_credits(self):
+    from parser.r_bookclub import RBookclubParser
+
+    markdown = r'''# Previous Selections
+
+# 2018
+
+# April 2018
+
+Classic: The Turn of the Screw by Henry James (Gutenberg link)
+
+Modern: Midnight's Children by Salman Rushdie [posts](https://redd.it/posts)
+
+Classic: Madame Bovary by Gustave Flaubert [posts](https://redd.it/posts) \+ [marginalia](https://redd.it/marginalia) ParallelText Librivox audiobook
+
+Big Read: Finnegans Wake by James Joyce (converted to a Big Read)
+
+Big Read: War and Peace by Leo Tolstoy (big read through April 2018)
+
+Modern: A Canticle for Leibowitz by Walter M. Miller Jr.
+
+Modern: Good Omens by Neil Gaiman and Terry Pratchett
+
+Translation: The Mabinogion translated by Sioned Davies
+
+Modern: S. (aka The Ship of Theseus) by Doug Dorst
+'''
+    parsed = RBookclubParser().parse(
+      json.dumps({'kind': 'wikipage', 'data': {'content_md': markdown}}),
+      'https://www.reddit.com/r/bookclub/wiki/previous/')
+
+    self.assertEqual([
+      ['Henry James'], ['Salman Rushdie'], ['Gustave Flaubert'],
+      ['James Joyce'], ['Leo Tolstoy'], ['Walter M. Miller Jr.'],
+      ['Neil Gaiman', 'Terry Pratchett'], ['Sioned Davies'], ['Doug Dorst'],
+    ], [entry['authors'] for entry in parsed['entries']])
+    self.assertEqual(
+      'translator', parsed['entries'][7]['credit_role'])
+    self.assertEqual(
+      'S. (aka The Ship of Theseus)', parsed['entries'][8]['title'])
+    self.assertEqual([], parsed['notes'])
 
   def test_r_bookclub_fetcher_falls_through_interstitials_and_exposes_metadata(self):
     from parser.base import CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS
@@ -1871,6 +2009,8 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
     parsed = fetcher.fetch_and_parse(fetch_url)
 
     self.assertEqual(list(fetcher.FETCH_URLS[:2]), calls)
+    self.assertEqual(
+      'https://old.reddit.com/r/bookclub/wiki/previous/', calls[0])
     self.assertEqual(['Neverwhere'], [entry['title'] for entry in parsed['entries']])
     self.assertEqual(
       [{'label': 'Automatic', 'value': 'automatic'}],
@@ -1880,9 +2020,49 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
       [item['label'] for item in fetcher.get_filter_list()])
     self.assertFalse(fetcher.options['match_series'])
     self.assertFalse(fetcher.SUPPORTS_INCREMENTAL_UPDATE)
-    self.assertNotIn(
+    self.assertIn(
       fetcher.source_id,
       [registered.source_id for registered in available_url_fetchers()])
+    registry_ids = [registered.source_id for registered in available_url_fetchers()]
+    self.assertLess(
+      registry_ids.index('richard_judy_book_club'),
+      registry_ids.index(fetcher.source_id))
+    self.assertLess(
+      registry_ids.index(fetcher.source_id),
+      registry_ids.index('hugo_awards_novel'))
+
+  def test_r_bookclub_marks_wayback_fallback_as_archived_and_incomplete(self):
+    from url_fetcher.r_bookclub import UrlFetcherRBookclub
+
+    fetcher = UrlFetcherRBookclub()
+    attempts = []
+
+    def fetch_url(url, **_kwargs):
+      attempts.append(url)
+      if url == fetcher.OLD_REDDIT_URL:
+        return '<title>Reddit - Please wait for verification</title>'
+      self.assertEqual(fetcher.WAYBACK_URL, url)
+      return '''
+        <h1>Previous Selections</h1>
+        <h1>2010</h1>
+        <h1>August 2010</h1>
+        <p>Modern Book of the Month:
+          <a href="https://en.wikipedia.org/wiki/Neverwhere"><em>Neverwhere (novel)</em></a>)
+          by Neil Gaiman</p>
+        <li><div><h2>PAGE SECTIONS</h2><p>Navigation by Noise Author</p></div></li>
+      '''
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+
+    self.assertEqual(
+      [fetcher.OLD_REDDIT_URL, fetcher.WAYBACK_URL], attempts)
+    self.assertEqual(['Neverwhere (novel)'], [
+      entry['title'] for entry in parsed['entries']])
+    self.assertEqual(fetcher.WAYBACK_URL, parsed['source']['url'])
+    self.assertTrue(any(
+      'Internet Archive snapshot captured 2025-04-05' in note
+      for note in parsed['notes']))
+    self.assertFalse(any('Navigation' in note for note in parsed['notes']))
 
   def test_general_audience_book_club_fetchers_metadata_and_registry(self):
     from parser.base import (
@@ -2014,7 +2194,8 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
       'r/Fantasy Top Self-Published Novels 2024',
       'Sword and Laser',
     ], names[:4])
-    self.assertEqual(387, len(names))
+    self.assertEqual(388, len(names))
+    self.assertIn('r/bookclub Previous Selections', names)
     self.assertIn('Theakston Old Peculier Crime Novel of the Year', names)
     self.assertIn('Hammett Prize', names)
     self.assertIn('Nero Award', names)
@@ -3433,7 +3614,7 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
       'r_fantasy_top_self_published_novels_2024',
       'sword_and_laser_book_list',
     ], source_ids[:4])
-    self.assertEqual(387, len(source_ids))
+    self.assertEqual(388, len(source_ids))
     self.assertIn('hammett_prize', source_ids)
     self.assertIn('nero_award', source_ids)
     self.assertIn('strand_critics_award_mystery_novel', source_ids)
@@ -11692,7 +11873,7 @@ were ''[[Go Deep]]'' by [[Rilzy Adams]].
     self.assertLess(
       registry_ids.index('romantic_times_reviewers_choice_romance'),
       registry_ids.index('writers_trust_atwood_gibson_fiction'))
-    self.assertEqual(387, len(registry_ids))
+    self.assertEqual(388, len(registry_ids))
 
   def test_lambda_literary_awards_parser_reads_directory_and_current_shortlists(self):
     from parser.lambda_literary_awards import (

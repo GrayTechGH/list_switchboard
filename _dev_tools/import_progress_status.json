@@ -16,8 +16,8 @@
     ]
   },
   "summary": {
-    "registered_recipes": 387,
-    "automated_passed": 387,
+    "registered_recipes": 388,
+    "automated_passed": 388,
     "manual_verified": 0
   },
   "recipes": [
@@ -143,6 +143,13 @@
     {
       "source_id": "richard_judy_book_club",
       "name": "Richard & Judy Book Club",
+      "automated_status": "passed",
+      "manual_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "source_id": "r_bookclub_previous_selections",
+      "name": "r/bookclub Previous Selections",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""

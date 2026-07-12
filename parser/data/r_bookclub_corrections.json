@@ -1,0 +1,27 @@
+{
+  "rows": [
+    {
+      "year": "2013",
+      "month": "10",
+      "raw_text": "Modern Book of the Month: The Short Stories of Ernest Hemingway",
+      "title": "The Short Stories of Ernest Hemingway",
+      "author": "Ernest Hemingway"
+    },
+    {
+      "year": "2017",
+      "month": "2",
+      "raw_text": "Portrait of the Artist (Evergreen) posts + marginalia",
+      "title": "A Portrait of the Artist as a Young Man",
+      "author": "James Joyce",
+      "label": "Evergreen"
+    },
+    {
+      "year": "2017",
+      "month": "8",
+      "month_end": "11",
+      "raw_text": "His Dark Materials",
+      "title": "His Dark Materials",
+      "author": "Philip Pullman"
+    }
+  ]
+}

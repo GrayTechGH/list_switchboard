@@ -10,8 +10,15 @@ class UrlFetcherRFantasyTopNovels2025(UrlFetcherReddit):
   NAME = 'r/Fantasy Top Novels 2025'
   REQUIRES_SERIES_MATCHING = True
   URL = 'https://www.reddit.com/r/Fantasy/comments/1jjif55/rfantasy_top_novels_2025_results/'
+  WAYBACK_URL = (
+    'https://web.archive.org/web/20260123203622id_/'
+    'https://www.reddit.com/r/Fantasy/comments/1jjif55/'
+    'rfantasy_top_novels_2025_results/'
+  )
+  WAYBACK_CAPTURE_DATE = '2026-01-23'
   FETCH_URLS = (
     'https://old.reddit.com/r/Fantasy/comments/1jjif55/rfantasy_top_novels_2025_results/',
+    WAYBACK_URL,
     URL,
   )
   order = 10

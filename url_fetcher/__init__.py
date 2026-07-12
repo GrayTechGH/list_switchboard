@@ -309,6 +309,7 @@ from .library_reads import (
 from .barnes_noble_book_club import UrlFetcherBarnesNobleBookClub
 from .service95_book_club import UrlFetcherService95BookClub
 from .richard_judy_book_club import UrlFetcherRichardJudyBookClub
+from .r_bookclub import UrlFetcherRBookclub
 from .aurora import (
   UrlFetcherAuroraGraphicNovel,
   UrlFetcherAuroraNoveletteNovella,
@@ -528,6 +529,7 @@ URL_FETCHER_CLASSES = (
   UrlFetcherBarnesNobleBookClub,
   UrlFetcherService95BookClub,
   UrlFetcherRichardJudyBookClub,
+  UrlFetcherRBookclub,
   UrlFetcherHugoAwardsNovel,
   UrlFetcherHugoAwardsNovella,
   UrlFetcherHugoAwardsSeries,

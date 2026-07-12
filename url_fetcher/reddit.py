@@ -14,6 +14,9 @@ class UrlFetcherReddit(UrlFetcherGeneric):
     CATEGORY_FANTASY,
     CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,
   )
+  WAYBACK_URL = ''
+  WAYBACK_CAPTURE_DATE = ''
+  WAYBACK_MARKER = '<!-- list-switchboard-r-fantasy-wayback -->'
 
   def create_parser(self):
     try:
@@ -23,5 +26,19 @@ class UrlFetcherReddit(UrlFetcherGeneric):
 
     return RedditResultsParser()
 
+  def fetch_url(self, fetch_url, url):
+    payload = super().fetch_url(fetch_url, url)
+    if url == self.WAYBACK_URL and str(payload or '').lstrip().startswith('<'):
+      return self.WAYBACK_MARKER + str(payload)
+    return payload
+
   def parse(self, html, **_kwargs):
-    return self.parser().parse(html, self.NAME, self.URL, self.schemas)
+    archived = self.WAYBACK_MARKER in str(html or '')
+    parsed = self.parser().parse(
+      html, self.NAME, self.WAYBACK_URL if archived else self.URL, self.schemas)
+    if archived:
+      captured = self.WAYBACK_CAPTURE_DATE or 'an unknown date'
+      parsed.setdefault('notes', []).append(
+        f'Internet Archive snapshot captured {captured}; imported results use '
+        'archived Reddit content.')
+    return parsed

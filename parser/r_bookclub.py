@@ -16,6 +16,7 @@ Maintenance notes:
 
 import json
 import re
+from pathlib import Path
 from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup, NavigableString, Tag
@@ -74,6 +75,7 @@ MONTH_PATTERN = '|'.join(MONTHS)
 MARKDOWN_LINK_RE = re.compile(
   r'\[([^\]]+)\]\(([^()]*(?:\([^()]*\)[^()]*)*)\)')
 REDDIT_POST_RE = re.compile(r'/comments/([^/]+)/', re.I)
+HISTORICAL_CORRECTIONS_FILE = 'r_bookclub_corrections.json'
 
 
 def normalize_text(value):
@@ -120,14 +122,28 @@ def reddit_post_id(url):
 
 
 def clean_title(value):
-  return markdown_text(value).strip(' \"\'\u2018\u2019\u201c\u201d,.;')
+  value = markdown_text(value).strip(' \"\'\u2018\u2019\u201c\u201d,.;')
+  while value.endswith(')') and value.count(')') > value.count('('):
+    value = value[:-1].rstrip()
+  return value
 
 
 def clean_credit(value):
   value = markdown_text(value)
+  value = value.replace('\\', '')
+  # These are navigation/resource labels attached to the selection, not credits.
+  value = re.split(
+    r'\s+(?:\+\s*)?(?:posts?|marginalia|gutenberg(?:\s+link)?|'
+    r'parallel\s*text|librivox|audiobook)(?:\b|\s*\[)',
+    value, maxsplit=1, flags=re.I)[0]
   value = re.sub(r'\s+-\s+(?:two\s+)?posts?\b.*$', '', value, flags=re.I)
-  value = re.sub(r'\s*\((?:continued|undiscussed)\b[^)]*\)\s*$', '', value, flags=re.I)
-  return value.strip(' \"\'\u2018\u2019\u201c\u201d,.;')
+  value = re.sub(
+    r'\s*\((?:continued|undiscussed|gutenberg(?:\s+link)?|'
+    r'converted\s+to\s+a\s+big\s+read|big\s+read\s+through\b[^)]*)\)\s*$',
+    '', value, flags=re.I)
+  preserve_suffix_period = bool(re.search(r'\b(?:Jr|Sr)\.\s*$', value, re.I))
+  value = value.strip(' \"\'\u2018\u2019\u201c\u201d,.;')
+  return value + '.' if preserve_suffix_period else value
 
 
 def split_authors(value):
@@ -270,6 +286,10 @@ class RBookclubParser(ListParserBase):
       text = normalize_text(node.get_text(' ', strip=True))
       if not text:
         continue
+      boundary = node.find(['h1', 'h2', 'h3']) if node.name == 'li' else None
+      if started and boundary and normalize_text(
+          boundary.get_text(' ', strip=True)).casefold() in ('page title', 'page sections'):
+        break
       if node.name in ('h1', 'h2', 'h3'):
         if text.casefold() == 'previous selections':
           started = True
@@ -306,8 +326,7 @@ class RBookclubParser(ListParserBase):
       text = markdown_text(value)
       if not current_section or not text:
         continue
-      if text.casefold() == 'inactive':
-        notes.append(self.section_note(current_section, 'Inactive; no selections listed.'))
+      if self.is_intentional_empty_row(text):
         continue
       current_section['rows'].append(value)
 
@@ -323,6 +342,10 @@ class RBookclubParser(ListParserBase):
       entry['position'] = str(index)
     return entries, notes
 
+  def is_intentional_empty_row(self, row):
+    text = normalize_text(row).casefold().strip(' .')
+    return text == 'inactive' or bool(re.fullmatch(r'short\s+story\s*:\s*none', text))
+
   def section_note(self, section, message):
     context = ' '.join(filter(None, (section.get('label'), section.get('year'))))
     return f'{context}: {message}' if context else message
@@ -334,6 +357,11 @@ class RBookclubParser(ListParserBase):
     if not components:
       component = self.plain_component(body)
       components = [component] if component else []
+    if not components:
+      correction = self.historical_correction(raw, section)
+      if correction:
+        label = correction.get('label') or label
+        components = [correction['component']]
     if not components:
       return []
 
@@ -388,6 +416,26 @@ class RBookclubParser(ListParserBase):
           source_url, self.CLUB_NAME, self.SOURCE_ID, list_source=list_source),
         **metadata))
     return entries
+
+  def historical_correction(self, row, section):
+    """Recover three source rows whose historical wiki records omit credits."""
+    text = markdown_text(row).replace('\\', '').casefold()
+    for correction in load_historical_corrections():
+      if any(str(correction.get(field) or '') != str(section.get(field) or '')
+             for field in ('year', 'month', 'month_end')):
+        continue
+      if normalize_text(correction.get('raw_text')).casefold() != text:
+        continue
+      return {
+        'label': correction.get('label') or '',
+        'component': {
+          'title': correction.get('title') or '',
+          'credit': correction.get('author') or '',
+          'role': correction.get('role') or 'author',
+          'url': '',
+        },
+      }
+    return None
 
   def split_label(self, row, section):
     first_link = row.find('[')
@@ -469,3 +517,15 @@ class RBookclubParser(ListParserBase):
 
 def parse_r_bookclub(payload, base_url, name=None):
   return RBookclubParser().parse(payload, base_url, name=name)
+
+
+def load_historical_corrections():
+  try:
+    from importlib import resources
+    package = 'calibre_plugins.list_switchboard.parser.data'
+    text = resources.files(package).joinpath(
+      HISTORICAL_CORRECTIONS_FILE).read_text(encoding='utf-8')
+  except Exception:
+    path = Path(__file__).with_name('data') / HISTORICAL_CORRECTIONS_FILE
+    text = path.read_text(encoding='utf-8')
+  return tuple(json.loads(text).get('rows') or ())
