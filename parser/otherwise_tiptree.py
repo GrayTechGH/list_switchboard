@@ -18,10 +18,10 @@ import re
 from bs4 import BeautifulSoup
 
 try:
-  from calibre_plugins.list_switchboard.parser.base import ListParserBase
+  from calibre_plugins.list_switchboard.parser.base import ListParserBase, parsed_source
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
 except ImportError:
-  from .base import ListParserBase
+  from .base import ListParserBase, parsed_source
   from .generic import position_sort_key
 
 
@@ -83,7 +83,7 @@ class OtherwiseTiptreeAwardsParser(ListParserBase):
     entries = _otherwise_entries(rows)
     return {
       'name': 'Otherwise/Tiptree - Books and Series',
-      'url': OTHERWISE_URL,
+      'source': parsed_source('Otherwise/Tiptree - Books and Series', OTHERWISE_URL),
       'entries': sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
       'notes': notes,
       'match_series': False,

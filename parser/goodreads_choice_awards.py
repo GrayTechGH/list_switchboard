@@ -244,10 +244,10 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
       rows.append(self.row(
         year,
         parsed['title'],
-        parsed['author'],
+        parsed['authors'],
         category,
         result,
-        parsed['source_url'],
+        parsed['entry_url'],
         len(rows),
         votes=self.votes_near_node(image)))
     return rows
@@ -296,20 +296,20 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
     if not alt_title or not alt_author:
       return None
     card = self.card_for_image(image)
-    title = alt_title
+    title = self.clean_title(alt_title)
     author = alt_author
-    source_url = self.link_for_node(image, page_url)
+    entry_url = self.link_for_node(image, page_url)
     explicit = self.explicit_title_author(card, page_url)
     if explicit is not None:
-      title, author, source_url = explicit
-    title = self.clean_title(title)
-    author = self.clean_author(author)
-    if not title or not author:
+      explicit_title, author, entry_url = explicit
+      title = self.preferred_title(title, explicit_title)
+    authors = self.clean_authors(author)
+    if not title or not authors:
       return None
     return {
       'title': title,
-      'author': author,
-      'source_url': source_url or page_url,
+      'authors': authors,
+      'entry_url': entry_url or page_url,
     }
 
   def card_for_image(self, image):
@@ -407,6 +407,15 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
       return '', ''
     return match.group(1), match.group(2)
 
+  def preferred_title(self, alt_title, explicit_title):
+    alt_title = self.clean_title(alt_title)
+    explicit_title = self.clean_title(explicit_title)
+    alt_key = normalize_heading(alt_title)
+    explicit_key = normalize_heading(explicit_title)
+    if alt_title and explicit_title and alt_key.startswith(explicit_key):
+      return alt_title
+    return explicit_title or alt_title
+
   def link_for_node(self, node, page_url):
     current = node
     while current is not None:
@@ -464,11 +473,20 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
     value = re.sub(r'\s*\([^)]*\)\s*', ' ', value)
     return strip_publication_notes(normalize_line(value)).strip(' "\'\u2018\u2019\u201c\u201d,:')
 
-  def row(self, year, title, author, category, result, source_url, source_order, votes=''):
+  def clean_authors(self, value):
+    """Preserve Goodreads multi-author credits as schema author lists."""
+    value = self.clean_author(value)
+    return [
+      author.strip()
+      for author in re.split(r'\s+&\s+', value)
+      if author.strip()
+    ]
+
+  def row(self, year, title, authors, category, result, source_url, source_order, votes=''):
     row = {
       'award_year': str(year),
       'title': title,
-      'author': author,
+      'authors': list(authors or []),
       'result': result,
       'source_url': source_url,
       'category': clean_category_text(category) or self.category,
@@ -482,11 +500,14 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
     deduped = []
     index_by_key = {}
     for row in rows:
+      authors = row.get('authors', row.get('author', ''))
+      if isinstance(authors, (list, tuple)):
+        authors = ' '.join(str(author) for author in authors)
       key = (
         row.get('award_year'),
         category_key(row.get('category', '')),
         normalize_heading(row.get('title', '')),
-        normalize_heading(row.get('author', '')),
+        normalize_heading(authors),
       )
       if not key[2] or not key[3]:
         continue

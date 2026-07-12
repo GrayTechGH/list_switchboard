@@ -7,557 +7,927 @@
   },
   "entries": [
     {
-      "author": "M.L. Wang",
+      "authors": [
+        "M.L. Wang"
+      ],
       "position": "1",
       "ratings": "42 359",
-      "source_url": "https://www.goodreads.com/book/show/41886271-the-sword-of-kaigen",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/41886271-the-sword-of-kaigen"
+      },
       "title": "The Sword of Kaigen",
       "votes": "43"
     },
     {
-      "author": "Ryan Cahill",
+      "authors": [
+        "Ryan Cahill"
+      ],
       "position": "2",
       "ratings": "13 447",
-      "source_url": "https://www.goodreads.com/series/309359-the-bound-and-the-broken",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/309359-the-bound-and-the-broken"
+      },
       "title": "The Bound and the Broken Series",
       "votes": "30"
     },
     {
-      "author": "Will Wight",
+      "authors": [
+        "Will Wight"
+      ],
       "position": "2",
       "rank_change": "+1",
       "ratings": "47 367",
-      "source_url": "https://www.goodreads.com/series/192821-cradle",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/192821-cradle"
+      },
       "title": "Cradle",
       "votes": "30"
     },
     {
-      "author": "Michael R. Miller",
+      "authors": [
+        "Michael R. Miller"
+      ],
       "position": "3",
       "rank_change": "+4",
       "ratings": "8 082",
-      "source_url": "https://www.goodreads.com/series/300106-songs-of-chaos",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/300106-songs-of-chaos"
+      },
       "title": "Songs of Chaos Series",
       "votes": "20"
     },
     {
-      "author": "Krystle Matar",
+      "authors": [
+        "Krystle Matar"
+      ],
       "position": "4",
       "rank_change": "+1",
       "ratings": "493",
-      "source_url": "https://www.goodreads.com/series/309298-tainted-dominion",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/309298-tainted-dominion"
+      },
       "title": "Tainted Dominion Series",
       "votes": "19"
     },
     {
-      "author": "Zamil Akhtar",
+      "authors": [
+        "Zamil Akhtar"
+      ],
       "position": "5",
       "rank_change": "+9",
       "ratings": "2 825",
-      "source_url": "https://www.goodreads.com/series/318921-gunmetal-gods",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/318921-gunmetal-gods"
+      },
       "title": "Gunmetal Gods",
       "votes": "18"
     },
     {
-      "author": "Morgan Stang",
+      "authors": [
+        "Morgan Stang"
+      ],
       "position": "5",
       "rank_change": "+14",
       "ratings": "1 421",
-      "source_url": "https://www.goodreads.com/series/373698-the-lamplight-murder-mysteries",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/373698-the-lamplight-murder-mysteries"
+      },
       "title": "The Lamplight Murder Mysteries",
       "votes": "18"
     },
     {
-      "author": "Rob J. Hayes",
+      "authors": [
+        "Rob J. Hayes"
+      ],
       "position": "6",
       "ratings": "4 111",
-      "source_url": "https://www.goodreads.com/series/281543-mortal-techniques",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/281543-mortal-techniques"
+      },
       "title": "Mortal Techniques Series",
       "votes": "16"
     },
     {
-      "author": "J. Zachary Pike",
+      "authors": [
+        "J. Zachary Pike"
+      ],
       "position": "6",
       "rank_change": "-2",
       "ratings": "8 250",
-      "source_url": "https://www.goodreads.com/series/207236-the-dark-profit-saga",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/207236-the-dark-profit-saga"
+      },
       "title": "The Dark Profit Saga",
       "votes": "16"
     },
     {
-      "author": "Richard Nell",
+      "authors": [
+        "Richard Nell"
+      ],
       "position": "7",
       "rank_change": "+6",
       "ratings": "3 768",
-      "source_url": "https://www.goodreads.com/series/233409-ash-and-sand",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/233409-ash-and-sand"
+      },
       "title": "Ash and Sand",
       "votes": "15"
     },
     {
-      "author": "Victoria Goddard",
+      "authors": [
+        "Victoria Goddard"
+      ],
       "position": "8",
       "rank_change": "+7",
       "ratings": "3 109",
-      "source_url": "https://www.goodreads.com/series/320640-the-nine-worlds-recommended-reading-order",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/320640-the-nine-worlds-recommended-reading-order"
+      },
       "title": "The Nine Worlds",
       "votes": "14"
     },
     {
-      "author": "John Bierce",
+      "authors": [
+        "John Bierce"
+      ],
       "position": "9",
       "rank_change": "-1",
       "ratings": "11 297",
-      "source_url": "https://www.goodreads.com/series/252085-mage-errant",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/252085-mage-errant"
+      },
       "title": "Mage Errant Series",
       "votes": "13"
     },
     {
-      "author": "Quenby Olson",
+      "authors": [
+        "Quenby Olson"
+      ],
       "position": "9",
       "rank_change": "-1",
       "ratings": "3 031",
-      "source_url": "https://www.goodreads.com/series/328851-miss-percy-guide",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/328851-miss-percy-guide"
+      },
       "title": "Miss Percy Guide",
       "votes": "13"
     },
     {
-      "author": "Adrian M. Gibson",
+      "authors": [
+        "Adrian M. Gibson"
+      ],
       "position": "10",
       "rank_change": "NEW",
       "ratings": "177",
-      "source_url": "https://www.goodreads.com/book/show/205981469",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/205981469"
+      },
       "title": "Mushroom Blues",
       "votes": "12"
     },
     {
-      "author": "Michael Michel",
+      "authors": [
+        "Michael Michel"
+      ],
       "position": "10",
       "rank_change": "+1",
       "ratings": "270",
-      "source_url": "https://www.goodreads.com/series/369470-the-price-of-power",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/369470-the-price-of-power"
+      },
       "title": "The Price of Power",
       "votes": "12"
     },
     {
-      "author": "Zack Argyle",
+      "authors": [
+        "Zack Argyle"
+      ],
       "position": "10",
       "rank_change": "-5",
       "ratings": "1 213",
-      "source_url": "https://www.goodreads.com/series/293326-threadlight",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/293326-threadlight"
+      },
       "title": "Threadlight Series",
       "votes": "12"
     },
     {
-      "author": "Rachel Aaron",
+      "authors": [
+        "Rachel Aaron"
+      ],
       "position": "11",
       "rank_change": "+2",
       "ratings": "13 746",
-      "source_url": "https://www.goodreads.com/series/128485-heartstrikers",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/128485-heartstrikers"
+      },
       "title": "Heartstrikers",
       "votes": "11"
     },
     {
-      "author": "M.L. Spencer",
+      "authors": [
+        "M.L. Spencer"
+      ],
       "position": "11",
       "rank_change": "-3",
       "ratings": "23 728",
-      "source_url": "https://www.goodreads.com/series/308162-rivenworld",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/308162-rivenworld"
+      },
       "title": "Rivenworld",
       "votes": "11"
     },
     {
-      "author": "Jo\u00e3o F. Silva",
+      "authors": [
+        "Jo\u00e3o F. Silva"
+      ],
       "position": "11",
       "rank_change": "+7",
       "ratings": "370",
-      "source_url": "https://www.goodreads.com/series/375551-the-smokesmiths",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/375551-the-smokesmiths"
+      },
       "title": "The Smokesmiths Series",
       "votes": "11"
     },
     {
-      "author": "Andrew Rowe",
+      "authors": [
+        "Andrew Rowe"
+      ],
       "position": "12",
       "rank_change": "-3",
       "ratings": "23 732",
-      "source_url": "https://www.goodreads.com/series/201441-arcane-ascension",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/201441-arcane-ascension"
+      },
       "title": "Arcane Ascension",
       "votes": "10"
     },
     {
-      "author": "Olivia Atwater",
+      "authors": [
+        "Olivia Atwater"
+      ],
       "position": "12",
       "rank_change": "NEW",
       "ratings": "1 663",
-      "source_url": "https://www.goodreads.com/book/show/123245772",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/123245772"
+      },
       "title": "Small Miracles",
       "votes": "10"
     },
     {
-      "author": "Louise Holland",
+      "authors": [
+        "Louise Holland"
+      ],
       "position": "12",
       "rank_change": "NEW",
       "ratings": "54",
-      "source_url": "https://www.goodreads.com/series/399327-the-kalaraak-chronicles",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/399327-the-kalaraak-chronicles"
+      },
       "title": "The Kalaraak Chronicles",
       "votes": "10"
     },
     {
-      "author": "Sarah Chorn",
+      "authors": [
+        "Sarah Chorn"
+      ],
       "position": "12",
       "ratings": "106",
-      "source_url": "https://www.goodreads.com/book/show/58158847-the-necessity-of-rain",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/58158847-the-necessity-of-rain"
+      },
       "title": "The Necessity of Rain",
       "votes": "10"
     },
     {
-      "author": "Michael R. Fletcher",
+      "authors": [
+        "Michael R. Fletcher"
+      ],
       "position": "12",
       "rank_change": "+3",
       "ratings": "2 476",
-      "source_url": "https://www.goodreads.com/series/280010-the-obsidian-path",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/280010-the-obsidian-path"
+      },
       "title": "The Obsidian Pat h",
       "votes": "10"
     },
     {
-      "author": "Joshua Walker",
+      "authors": [
+        "Joshua Walker"
+      ],
       "position": "12",
       "rank_change": "NEW",
       "ratings": "63",
-      "source_url": "https://www.goodreads.com/series/385874-the-song-of-the-sleepers",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/385874-the-song-of-the-sleepers"
+      },
       "title": "The Song of the Sleepers",
       "votes": "10"
     },
     {
-      "author": "J.C.M. Berne",
+      "authors": [
+        "J.C.M. Berne"
+      ],
       "position": "13",
       "rank_change": "-1",
       "ratings": "432",
-      "source_url": "https://www.goodreads.com/series/349380-hybrid-helix",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/349380-hybrid-helix"
+      },
       "title": "Hybrid Helix",
       "votes": "9"
     },
     {
-      "author": "Mike Shel",
+      "authors": [
+        "Mike Shel"
+      ],
       "position": "13",
       "rank_change": "+5",
       "ratings": "3 448",
-      "source_url": "https://www.goodreads.com/series/253805-iconoclasts",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/253805-iconoclasts"
+      },
       "title": "Iconoclasts",
       "votes": "9"
     },
     {
-      "author": "J.D. Evans",
+      "authors": [
+        "J.D. Evans"
+      ],
       "position": "13",
       "rank_change": "+5",
       "ratings": "5 085",
-      "source_url": "https://www.goodreads.com/series/280845-mages-of-the-wheel",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/280845-mages-of-the-wheel"
+      },
       "title": "Mages of the Wheel",
       "votes": "9"
     },
     {
-      "author": "Z.S. Diamanti",
+      "authors": [
+        "Z.S. Diamanti"
+      ],
       "position": "13",
       "rank_change": "NEW",
       "ratings": "238",
-      "source_url": "https://www.goodreads.com/series/397180-stone-sky",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/397180-stone-sky"
+      },
       "title": "Stone & Sky series",
       "votes": "9"
     },
     {
-      "author": "L.L. MacRae",
+      "authors": [
+        "L.L. MacRae"
+      ],
       "position": "14",
       "rank_change": "-6",
       "ratings": "186",
-      "source_url": "https://www.goodreads.com/series/318282-dragon-spirits",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/318282-dragon-spirits"
+      },
       "title": "Dragon Spirits",
       "votes": "8"
     },
     {
-      "author": "A.J. Lancaster",
+      "authors": [
+        "A.J. Lancaster"
+      ],
       "position": "14",
       "rank_change": "+2",
       "ratings": "8 877",
-      "source_url": "https://www.goodreads.com/series/252712-stariel",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/252712-stariel"
+      },
       "title": "Stariel",
       "votes": "8"
     },
     {
-      "author": "Trudie Skies",
+      "authors": [
+        "Trudie Skies"
+      ],
       "position": "14",
       "rank_change": "-5",
       "ratings": "447",
-      "source_url": "https://www.goodreads.com/series/334434-the-cruel-gods",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/334434-the-cruel-gods"
+      },
       "title": "The Cruel Gods",
       "votes": "8"
     },
     {
-      "author": "Scott Palmer",
+      "authors": [
+        "Scott Palmer"
+      ],
       "position": "14",
       "rank_change": "NEW",
       "ratings": "93",
-      "source_url": "https://www.goodreads.com/book/show/206149628-a-memory-of-song",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/206149628-a-memory-of-song"
+      },
       "title": "The Last Ballad",
       "votes": "8"
     },
     {
-      "author": "Michael Roberti",
+      "authors": [
+        "Michael Roberti"
+      ],
       "position": "15",
       "rank_change": "+4",
       "ratings": "68",
-      "source_url": "https://www.goodreads.com/series/338827-crown-and-tide",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/338827-crown-and-tide"
+      },
       "title": "Crown and Tide",
       "votes": "7"
     },
     {
-      "author": "Kaden Love",
+      "authors": [
+        "Kaden Love"
+      ],
       "position": "15",
       "rank_change": "NEW",
       "ratings": "54",
-      "source_url": "https://www.goodreads.com/series/383072-paladins-of-the-harvest",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/383072-paladins-of-the-harvest"
+      },
       "title": "Paladins of the Harvest",
       "votes": "7"
     },
     {
-      "author": "Craig Schaefer",
+      "authors": [
+        "Craig Schaefer"
+      ],
       "position": "15",
       "rank_change": "NEW",
       "ratings": "6 149",
-      "source_url": "https://www.goodreads.com/series/131794-daniel-faust",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/131794-daniel-faust"
+      },
       "title": "The First Story Saga",
       "votes": "7"
     },
     {
-      "author": "Sadir S. Samir",
+      "authors": [
+        "Sadir S. Samir"
+      ],
       "position": "15",
       "rank_change": "+1",
       "ratings": "301",
-      "source_url": "https://www.goodreads.com/book/show/62672715",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/62672715"
+      },
       "title": "The God Dust Saga",
       "votes": "7"
     },
     {
-      "author": "Rob J. Hayes",
+      "authors": [
+        "Rob J. Hayes"
+      ],
       "position": "15",
       "rank_change": "NEW",
       "ratings": "307",
-      "source_url": "https://www.goodreads.com/series/402251-the-god-eater-saga",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/402251-the-god-eater-saga"
+      },
       "title": "The God Eater Saga",
       "votes": "7"
     },
     {
-      "author": "Benedict patrick",
+      "authors": [
+        "Benedict patrick"
+      ],
       "position": "15",
       "rank_change": "+2",
       "ratings": "2 075",
-      "source_url": "https://www.goodreads.com/series/193808-yarnsworld",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/193808-yarnsworld"
+      },
       "title": "Yarnsworld",
       "votes": "7"
     },
     {
-      "author": "Michael R. Fletcher",
+      "authors": [
+        "Michael R. Fletcher"
+      ],
       "position": "16",
       "rank_change": "NEW",
       "ratings": "86",
-      "source_url": "https://www.goodreads.com/series/391815-children-of-corruption",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/391815-children-of-corruption"
+      },
       "title": "Children of Corruption",
       "votes": "6"
     },
     {
-      "author": "Clayton Snyder",
+      "authors": [
+        "Clayton Snyder"
+      ],
       "position": "16",
       "rank_change": "NEW",
       "ratings": "291",
-      "source_url": "https://www.goodreads.com/book/show/52089338",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/52089338"
+      },
       "title": "Cold West",
       "votes": "6"
     },
     {
-      "author": "Angela Boord",
+      "authors": [
+        "Angela Boord"
+      ],
       "position": "16",
       "rank_change": "NEW",
       "ratings": "321",
-      "source_url": "https://www.goodreads.com/series/264250-eterean-empire",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/264250-eterean-empire"
+      },
       "title": "Eterean Empir e",
       "votes": "6"
     },
     {
-      "author": "Cal Black",
+      "authors": [
+        "Cal Black"
+      ],
       "position": "16",
       "rank_change": "NEW",
       "ratings": "84",
-      "source_url": "https://www.goodreads.com/series/351042-legends-legacies",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/351042-legends-legacies"
+      },
       "title": "Legends & Legacies",
       "votes": "6"
     },
     {
-      "author": "Tim Hardie",
+      "authors": [
+        "Tim Hardie"
+      ],
       "position": "16",
       "rank_change": "NEW",
       "ratings": "161",
-      "source_url": "https://www.goodreads.com/series/326685-the-brotherhood-of-the-eagle",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/326685-the-brotherhood-of-the-eagle"
+      },
       "title": "The Brotherhood of the Eagle Series",
       "votes": "6"
     },
     {
-      "author": "Bill Adams",
+      "authors": [
+        "Bill Adams"
+      ],
       "position": "16",
       "rank_change": "NEW",
       "ratings": "15",
-      "source_url": "https://www.goodreads.com/series/398086-the-divine-godsqueen-coda",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/398086-the-divine-godsqueen-coda"
+      },
       "title": "The Divine Godsqueen Coda",
       "votes": "6"
     },
     {
-      "author": "Philip C. Quaintrell",
+      "authors": [
+        "Philip C. Quaintrell"
+      ],
       "position": "16",
       "rank_change": "-1",
       "ratings": "9 025",
-      "source_url": "https://www.goodreads.com/series/277263-the-echoes-saga",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/277263-the-echoes-saga"
+      },
       "title": "The Echoes Saga",
       "votes": "6"
     },
     {
-      "author": "Sam Paisley",
+      "authors": [
+        "Sam Paisley"
+      ],
       "position": "16",
       "rank_change": "NEW",
       "ratings": "55",
-      "source_url": "https://www.goodreads.com/series/383612-the-elements-of-time",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/383612-the-elements-of-time"
+      },
       "title": "The Elements of Time Series",
       "votes": "6"
     },
     {
-      "author": "Daniel T. Jackson",
+      "authors": [
+        "Daniel T. Jackson"
+      ],
       "position": "16",
       "rank_change": "+3",
       "ratings": "2 478",
-      "source_url": "https://www.goodreads.com/series/326019-the-illborn-saga",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/326019-the-illborn-saga"
+      },
       "title": "The Illborn Saga",
       "votes": "6"
     },
     {
-      "author": "Calum Lott",
+      "authors": [
+        "Calum Lott"
+      ],
       "position": "17",
       "rank_change": "NEW",
       "ratings": "33",
-      "source_url": "https://www.goodreads.com/series/402028-a-dirge-for-cascius",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/402028-a-dirge-for-cascius"
+      },
       "title": "A Dirge For Cascius",
       "votes": "5"
     },
     {
-      "author": "Nathan Hall",
+      "authors": [
+        "Nathan Hall"
+      ],
       "position": "17",
       "rank_change": "NEW",
       "ratings": "239",
-      "source_url": "https://www.goodreads.com/book/show/58035382-an-altar-on-the-village-green",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/58035382-an-altar-on-the-village-green"
+      },
       "title": "An Altar of the Village Green",
       "votes": "5"
     },
     {
-      "author": "K.E. Andrews",
+      "authors": [
+        "K.E. Andrews"
+      ],
       "position": "17",
       "rank_change": "NEW",
       "ratings": "175",
-      "source_url": "https://www.goodreads.com/book/show/61405963-hills-of-heather-and-bone?ref=nav_sb_ss_1_16",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/61405963-hills-of-heather-and-bone?ref=nav_sb_ss_1_16"
+      },
       "title": "Hills of Heather and Bone",
       "votes": "5"
     },
     {
-      "author": "James Lloyd Dulin",
+      "authors": [
+        "James Lloyd Dulin"
+      ],
       "position": "17",
       "rank_change": "-1",
       "ratings": "254",
-      "source_url": "https://www.goodreads.com/series/376010-malitu",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/376010-malitu"
+      },
       "title": "Malitu series",
       "votes": "5"
     },
     {
-      "author": "Kian N. Ardalan",
+      "authors": [
+        "Kian N. Ardalan"
+      ],
       "position": "17",
       "rank_change": "-1",
       "ratings": "832",
-      "source_url": "https://www.goodreads.com/series/353404-mistland",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/353404-mistland"
+      },
       "title": "Mistland",
       "votes": "5"
     },
     {
-      "author": "Sienna Frost",
+      "authors": [
+        "Sienna Frost"
+      ],
       "position": "17",
       "rank_change": "NEW",
       "ratings": "204",
-      "source_url": "https://www.goodreads.com/series/359002-obsidian",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/359002-obsidian"
+      },
       "title": "Obsidian",
       "votes": "5"
     },
     {
-      "author": "Bryan Wilson",
+      "authors": [
+        "Bryan Wilson"
+      ],
       "position": "17",
       "rank_change": "NEW",
       "ratings": "105",
-      "source_url": "https://www.goodreads.com/series/386356-power-of-the-stars",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/386356-power-of-the-stars"
+      },
       "title": "Power of the Stars Series",
       "votes": "5"
     },
     {
-      "author": "Jacquelyn Hagen",
+      "authors": [
+        "Jacquelyn Hagen"
+      ],
       "position": "17",
       "rank_change": "NEW",
       "ratings": "500",
-      "source_url": "https://www.goodreads.com/series/374763-the-riverfall-chronicles",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/374763-the-riverfall-chronicles"
+      },
       "title": "The Riverfall Chronicles",
       "votes": "5"
     },
     {
-      "author": "Andrew Watson",
+      "authors": [
+        "Andrew Watson"
+      ],
       "position": "17",
       "rank_change": "NEW",
       "ratings": "64",
-      "source_url": "https://www.goodreads.com/series/369461-shadowbinders",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/369461-shadowbinders"
+      },
       "title": "Shadowbinde rs",
       "votes": "5"
     },
     {
-      "author": "Will Wight",
+      "authors": [
+        "Will Wight"
+      ],
       "position": "17",
       "rank_change": "NEW",
       "ratings": "8027",
-      "source_url": "https://www.goodreads.com/series/364813-the-last-horizon",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/364813-the-last-horizon"
+      },
       "title": "The Last Horizon Series",
       "votes": "5"
     },
     {
-      "author": "Timothy Wolff",
+      "authors": [
+        "Timothy Wolff"
+      ],
       "position": "17",
       "rank_change": "NEW",
       "ratings": "80",
-      "source_url": "https://www.goodreads.com/series/358912-the-legacy-of-boulom",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/358912-the-legacy-of-boulom"
+      },
       "title": "The Legacy of Bulom",
       "votes": "5"
     },
     {
-      "author": "H.L. Tinsley",
+      "authors": [
+        "H.L. Tinsley"
+      ],
       "position": "17",
       "rank_change": "+4",
       "ratings": "429",
-      "source_url": "https://www.goodreads.com/series/297774-the-vanguard-chronicles",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/series/297774-the-vanguard-chronicles"
+      },
       "title": "The Vanguard Chronicles",
       "votes": "5"
     },
     {
-      "author": "Amber Toro",
+      "authors": [
+        "Amber Toro"
+      ],
       "position": "17",
       "rank_change": "NEW",
       "ratings": "136",
-      "source_url": "https://www.goodreads.com/book/show/206755811",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/206755811"
+      },
       "title": "Umbra",
       "votes": "5"
     }
   ],
-  "fetched_at": "2026-05-06T04:13:15Z",
+  "fetched_at": "2026-07-09T01:26:38Z",
   "list_id": "r_fantasy_top_self_published_novels_2024",
   "list_name": "r/Fantasy Top Self-Published Novels 2024",
   "match_series": true,
   "notes": [],
   "parser": "r_fantasy_top_self_published_novels_2024",
-  "schema_version": 1,
-  "source_url": "https://old.reddit.com/r/Fantasy/comments/1g3lo7l/big_list_rfantasys_top_selfpublished_novels_2024/"
+  "schema_version": 2,
+  "source": {
+    "name": "r/Fantasy Top Self-Published Novels 2024",
+    "source_id": "r_fantasy_top_self_published_novels_2024",
+    "url": "https://www.reddit.com/r/Fantasy/comments/1g3lo7l/big_list_rfantasys_top_selfpublished_novels_2024/"
+  }
 }

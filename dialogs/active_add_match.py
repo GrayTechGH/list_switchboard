@@ -6,6 +6,11 @@ from qt.core import (
   QSizePolicy, QTableWidget, QTableWidgetItem, Qt, QVBoxLayout
 )
 
+try:
+  from calibre_plugins.list_switchboard.matching import imported_author_search_text
+except ImportError:
+  from matching import imported_author_search_text
+
 
 ADD_MATCH_HEADERS = ['Index', 'Title', 'Author']
 EXPAND_TO_ALL_TEXT = 'Expand to all'
@@ -134,7 +139,7 @@ class ActiveAddMatchDialog(QDialog):
     return [
       str(entry.get('position', '') or '').strip(),
       entry.get('title', '') or 'Untitled',
-      entry.get('author', '') or 'Unknown author',
+      imported_author_search_text(entry) or 'Unknown author',
     ]
 
   def populate(self, entries, preferred_entry=None):

@@ -13,8 +13,10 @@ class ListSwitchboardPlugin(InterfaceActionBase):
   description = 'Manage active and stored reading lists in configured metadata fields'
   supported_platforms = ['windows', 'osx', 'linux']
   author = 'GrayTechGH'
-  version = (1, 7, 0)
-  minimum_calibre_version = (0, 7, 53)
+  version = (1, 8, 0)
+  # The plugin imports Qt through calibre.qt.core and relies on Calibre's
+  # Python-3 database API.  Calibre 6 is the first supported Qt-6 generation.
+  minimum_calibre_version = (6, 0, 0)
   actual_plugin = 'calibre_plugins.list_switchboard.ui:ListSwitchboardAction'
 
   def is_customizable(self):

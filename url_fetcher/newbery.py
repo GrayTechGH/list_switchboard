@@ -12,6 +12,7 @@ except ImportError:
 class UrlFetcherJohnNewberyMedal(UrlFetcherGeneric):
 
   source_id = 'john_newbery_medal'
+  MAX_RESPONSE_BYTES = 32 * 1024 * 1024
   NAME = 'John Newbery Medal'
   URL = ALSC_URL
   order = 263

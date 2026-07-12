@@ -2,29 +2,58 @@
   "list_id": "aurealis_sf_novel",
   "matches": [
     {
-      "entry_key": "letters to our robot son|cadance bell",
-      "imported_author": "Cadance Bell",
-      "imported_title": "Letters to Our Robot Son",
-      "matched_at": "2026-05-15T19:28:01Z",
-      "matched_authors": [
-        "Cadance Bell"
+      "entry_key": "the year of the fruit cake|gillian polack",
+      "imported_author": [
+        "Gillian Polack"
       ],
-      "matched_book_id": 38794,
+      "imported_title": "The Year of the Fruit Cake",
+      "matched_at": "2026-07-08T23:30:16Z",
+      "matched_authors": [
+        "Gillian Polack"
+      ],
+      "matched_book_id": 39049,
       "matched_book_ids": [
-        38794
+        39049
       ],
       "matched_books": [
         {
           "matched_authors": [
-            "Cadance Bell"
+            "Gillian Polack"
           ],
-          "matched_book_id": 38794,
-          "matched_title": "Letters to Our Robot Son: SHORTLISTED FOR BEST SCIENCE FICTION NOVEL IN THE AUREALIS AWARDS"
+          "matched_book_id": 39049,
+          "matched_title": "The Year of the Fruit Cake: Or Aliens With Irony"
         }
       ],
-      "matched_title": "Letters to Our Robot Son: SHORTLISTED FOR BEST SCIENCE FICTION NOVEL IN THE AUREALIS AWARDS"
+      "matched_title": "The Year of the Fruit Cake: Or Aliens With Irony"
+    },
+    {
+      "entry_key": "gemima illuminae files 2|amie kaufman jay kristoff",
+      "imported_author": [
+        "Amie Kaufman & Jay Kristoff"
+      ],
+      "imported_title": "Gemima: Illuminae Files 2",
+      "matched_at": "2026-07-08T23:31:53Z",
+      "matched_authors": [
+        "Amie Kaufman",
+        "Jay Kristoff"
+      ],
+      "matched_book_id": 17182,
+      "matched_book_ids": [
+        17182
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Amie Kaufman",
+            "Jay Kristoff"
+          ],
+          "matched_book_id": 17182,
+          "matched_title": "Gemina"
+        }
+      ],
+      "matched_title": "Gemina"
     }
   ],
-  "saved_at": "2026-05-15T19:28:01Z",
-  "schema_version": 1
+  "saved_at": "2026-07-08T23:31:53Z",
+  "schema_version": 2
 }

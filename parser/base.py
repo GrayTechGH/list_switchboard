@@ -31,6 +31,71 @@ CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS = 'Online Community Book Clubs'
 DEFAULT_FILTER_CATEGORIES = (CATEGORY_UNKNOWN,)
 
 
+def author_list(value):
+  if value is None:
+    values = []
+  elif isinstance(value, str):
+    values = [value] if value.strip() else []
+  elif isinstance(value, (list, tuple, set)):
+    values = list(value)
+  else:
+    values = [value]
+  authors = []
+  for author in values:
+    text = str(author or '').strip()
+    if not text:
+      continue
+    # Match Calibre's author-string convention: a spaced single ampersand is
+    # an author separator, while a doubled ampersand is one literal character.
+    escaped_ampersand = '\x00'
+    text = text.replace('&&', escaped_ampersand)
+    parts = re.split(r'\s+&\s+', text)
+    for part in parts:
+      part = part.replace(escaped_ampersand, '&').strip()
+      if part and part not in authors:
+        authors.append(part)
+  return authors
+
+
+def source_object(url='', name='', source_id=''):
+  return {
+    'url': str(url or ''),
+    'name': str(name or ''),
+    'source_id': str(source_id or ''),
+  }
+
+
+def entry_source_object(url='', name='', source_id='', list_source=None):
+  source = source_object(url, name, source_id)
+  if not source.get('url') and not source.get('name') and not source.get('source_id'):
+    return None
+  if list_source is not None:
+    if (
+        source.get('url') == list_source.get('url')
+        and source.get('name') in ('', list_source.get('name'))
+        and source.get('source_id') in ('', list_source.get('source_id'))):
+      return None
+  return source
+
+
+def imported_entry(position, title, authors, source=None, **metadata):
+  entry = {
+    'position': str(position or ''),
+    'title': str(title or ''),
+    'authors': author_list(authors),
+  }
+  if source is not None:
+    entry['source'] = source
+  for key, value in metadata.items():
+    if value is not None:
+      entry[key] = value
+  return entry
+
+
+def parsed_source(name='', url='', source_id=''):
+  return source_object(url, name, source_id)
+
+
 def filter_id(value):
   value = re.sub(r'&', ' and ', value or '')
   value = re.sub(r'[^a-z0-9]+', '_', value.casefold())

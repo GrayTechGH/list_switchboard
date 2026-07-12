@@ -57,7 +57,8 @@ class UrlFetcherWalterScottPrize(UrlFetcherGeneric):
         lambda html, url, fetch_url=None, log=None, progress=None: (
           self.create_official_parser().parse(
             html, url, self.NAME, fetch_url=fetch_url, log=log, progress=progress)),
-        source_rank=0),
+        source_rank=0,
+        max_response_bytes=32 * 1024 * 1024),
       SourceAttempt(
         'Wikipedia',
         self.WIKIPEDIA_URL,

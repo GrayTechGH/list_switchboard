@@ -11,6 +11,7 @@ from .generic import (
   CATEGORY_REGIONAL_NATIONAL_AWARDS,
   UrlFetcherError,
   UrlFetcherGeneric,
+  parsed_source,
 )
 
 try:
@@ -137,8 +138,7 @@ class UrlFetcherBookerPrizeBase(UrlFetcherGeneric):
       raise UrlFetcherError('Official Booker Library produced no entries')
     return {
       'name': self.NAME,
-      'url': base_url,
-      'source_url': base_url,
+      'source': parsed_source(self.NAME, base_url, self.source_id),
       'entries': sorted(
         entries, key=lambda item: position_sort_key(item.get('position', ''))),
       'notes': notes,

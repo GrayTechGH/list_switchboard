@@ -8,8 +8,11 @@ class UrlFetcherCanadaReads(UrlFetcherGeneric):
 
   source_id = 'canada_reads'
   NAME = 'Canada Reads'
-  URL = 'https://www.cbc.ca/books/canadareads'
-  order = 45
+  URL = (
+    'https://www.cbc.ca/books/canadareads/'
+    'past-canada-reads-contenders-and-winners-1.4034451'
+  )
+  order = 47
   FILTER_CATEGORIES = (CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS,)
   options = {'match_series': False}
 

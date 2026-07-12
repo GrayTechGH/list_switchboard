@@ -12,6 +12,7 @@ from .generic import (
   CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
   UrlFetcherError,
   UrlFetcherGeneric,
+  parsed_source,
 )
 
 try:
@@ -135,8 +136,7 @@ class UrlFetcherNationalBookAward(UrlFetcherGeneric):
       raise UrlFetcherError('Official National Book Foundation produced no entries')
     return {
       'name': self.NAME,
-      'url': base_url,
-      'source_url': base_url,
+      'source': parsed_source(self.NAME, base_url, self.source_id),
       'entries': sorted(
         entries, key=lambda item: position_sort_key(item.get('position', ''))),
       'notes': [],

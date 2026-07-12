@@ -1,14 +1,17 @@
 #!/usr/bin/env python
 # vim:fileencoding=UTF-8:ts=2:sw=2:sta:et:sts=2:ai
 
-"""Parser for LibraryReads monthly list entries.
+"""Parsers for LibraryReads monthly and bonus-category entries.
 
 Maintenance notes:
 - The official archive page links month PDFs plus a public Google Sheet. The
   sheet is the preferred V1 source because it exposes the monthly-list rows and
   explicit Top Pick / Hall of Fame / Bonus Pick flags as structured data.
-- Hall of Fame and Bonus Pick rows are intentionally excluded from this main
-  monthly-list recipe; those can become separate follow-up fetchers.
+- The sheet uses one Bonus Pick flag for both Bonus Picks and Notable
+  Nonfiction. Genre text distinguishes those two book-selection scopes.
+- Hall of Fame is not a standalone list because it represents repeat-author
+  status. A Notable Nonfiction selection remains eligible when it also carries
+  the Hall of Fame flag.
 """
 
 import csv
@@ -19,6 +22,7 @@ from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 
 from .book_club_base import BookClubParserBase, MONTHS, normalize_line, parse_month
+from .base import parsed_source
 
 
 SHEET_CSV_URL = (
@@ -32,6 +36,8 @@ class LibraryReadsParser(BookClubParserBase):
   CLUB_NAME = 'LibraryReads'
   DEFAULT_SCOPE = 'monthly_list'
   DEFAULT_SELECTION_TYPE = 'staff_pick'
+  ROW_SCOPE = 'main'
+  CSV_ROW_MARKER = '__libraryreads_classified_csv_row__'
 
   def parse(self, html, base_url, name=None, scope=None, fetch_url=None, **_kwargs):
     scope = scope or self.DEFAULT_SCOPE
@@ -49,13 +55,21 @@ class LibraryReadsParser(BookClubParserBase):
       notes.append(
         'LibraryReads archive page exposes month/document links; no monthly rows were available in the fetched source.')
     notes.extend(self.notes_for_entries(entries))
+    entries = self.positioned_entries(entries)
     return {
       'name': name or self.CLUB_NAME,
-      'url': base_url,
-      'entries': sorted(entries, key=self.entry_sort_key),
+      'source': parsed_source(name or self.CLUB_NAME, base_url),
+      'entries': entries,
       'notes': notes,
       'match_series': False,
     }
+
+  def positioned_entries(self, entries):
+    """Sort chronologically, then assign unique positions across all months."""
+    entries = sorted(entries, key=self.entry_sort_key)
+    for position, entry in enumerate(entries, 1):
+      entry['position'] = str(position)
+    return entries
 
   def entries_from_source(self, source, base_url, scope):
     if self.looks_like_csv(source):
@@ -87,38 +101,73 @@ class LibraryReadsParser(BookClubParserBase):
 
   def entry_from_csv_row(self, row, base_url, scope, month_counts):
     title = normalize_line(row.get('Title', ''))
-    author = self.display_author(row.get('Author (Last, First)', ''))
+    authors = self.display_authors(row.get('Author (Last, First)', ''))
     month_value = normalize_line(row.get('Month', ''))
     year, month = self.year_month_from_csv(month_value)
-    if not title or not author or not year or not month:
+    if not title or not authors or not year or not month:
       return None
-    if normalize_line(row.get('HoF', '')) or normalize_line(row.get('Bonus Pick', '')):
+    if not self.accept_csv_row(row):
       return None
     text = ' '.join(normalize_line(str(value)) for value in row.values())
+    if self.ROW_SCOPE == 'bonus_picks':
+      text = f'{text} Bonus Pick'
+    elif self.ROW_SCOPE == 'notable_nonfiction':
+      text = f'{text} Notable Nonfiction'
+    text = f'{text} {self.CSV_ROW_MARKER}'
     if not self.accept_entry({}, text):
       return None
     month_key = f'{year}-{month}'
     month_counts[month_key] = month_counts.get(month_key, 0) + 1
     data = {
       'title': title,
-      'author': author,
+      'authors': authors,
       'selection_year': year,
       'selection_month': month,
       'selection_label': self.selection_label(year, month),
       'rank_or_position': str(month_counts[month_key]),
-      'selection_type': 'top_pick' if normalize_line(row.get('Top Pick', '')) else 'staff_pick',
+      'selection_type': self.csv_selection_type(row),
       'advocate_defender_host_selector': 'library staff voters',
     }
     flags = self.scope_flags(row)
     if flags:
       data['scope_flags'] = ', '.join(flags)
-    return self.build_entry(data, text, base_url, scope, month_counts[month_key])
+    return self.build_entry(data, text, base_url, scope, month_counts[month_key], base_url=base_url)
 
   def year_month_from_csv(self, value):
-    match = re.match(r'^((?:19|20)\d{2})/(\d{1,2})$', normalize_line(value))
-    if not match:
+    value = normalize_line(value)
+    match = re.match(r'^((?:19|20)\d{2})/(\d{1,2})$', value)
+    if match:
+      year, month = match.groups()
+    else:
+      # February 2026 is stored as M/YYYY while the rest of the public sheet
+      # uses YYYY/M. Normalize both source shapes at the CSV boundary.
+      match = re.match(r'^(\d{1,2})/((?:19|20)\d{2})$', value)
+      if not match:
+        return '', ''
+      month, year = match.groups()
+    month_number = int(month)
+    if not 1 <= month_number <= 12:
       return '', ''
-    return match.group(1), str(int(match.group(2)))
+    return year, str(month_number)
+
+  def accept_csv_row(self, row):
+    has_hall_of_fame = bool(normalize_line(row.get('HoF', '')))
+    has_bonus_pick = bool(normalize_line(row.get('Bonus Pick', '')))
+    if self.ROW_SCOPE == 'bonus_picks':
+      return has_bonus_pick and not self.is_notable_nonfiction(row)
+    if self.ROW_SCOPE == 'notable_nonfiction':
+      return has_bonus_pick and self.is_notable_nonfiction(row)
+    return not has_hall_of_fame and not has_bonus_pick
+
+  def is_notable_nonfiction(self, row):
+    return 'nonfiction' in normalize_line(row.get('Genre', '')).casefold()
+
+  def csv_selection_type(self, row):
+    if self.ROW_SCOPE == 'bonus_picks':
+      return 'bonus_pick'
+    if self.ROW_SCOPE == 'notable_nonfiction':
+      return 'notable_nonfiction'
+    return 'top_pick' if normalize_line(row.get('Top Pick', '')) else 'staff_pick'
 
   def selection_label(self, year, month):
     for name, value in MONTHS.items():
@@ -132,6 +181,17 @@ class LibraryReadsParser(BookClubParserBase):
       return value
     last, rest = [part.strip() for part in value.split(',', 1)]
     return normalize_line(f'{rest} {last}')
+
+  def display_authors(self, value):
+    """Split the sheet's mixed inverted/natural coauthor formats."""
+    authors = []
+    parts = re.split(
+      r'\s*;\s*|\s*,?\s+(?:and|with)\s+', normalize_line(value), flags=re.I)
+    for part in parts:
+      author = self.display_author(part.strip(' ,;'))
+      if author and author not in authors:
+        authors.append(author)
+    return authors
 
   def scope_flags(self, row):
     flags = []
@@ -164,12 +224,38 @@ class LibraryReadsParser(BookClubParserBase):
 
   def accept_entry(self, _entry, text):
     normalized = text.casefold()
+    if self.CSV_ROW_MARKER in normalized:
+      return True
+    if self.ROW_SCOPE == 'bonus_picks':
+      return 'bonus pick' in normalized and 'notable nonfiction' not in normalized
+    if self.ROW_SCOPE == 'notable_nonfiction':
+      return 'notable nonfiction' in normalized
     blocked = ('bonus pick', 'notable nonfiction', 'hall of fame')
     return not any(value in normalized for value in blocked)
 
   def complete_entry(self, entry, _text):
-    if entry.get('selection_type') != 'top_pick':
+    if self.ROW_SCOPE == 'bonus_picks':
+      entry['selection_type'] = 'bonus_pick'
+    elif self.ROW_SCOPE == 'notable_nonfiction':
+      entry['selection_type'] = 'notable_nonfiction'
+    elif entry.get('selection_type') != 'top_pick':
       entry['selection_type'] = 'staff_pick'
     entry['advocate_defender_host_selector'] = (
       entry.get('advocate_defender_host_selector') or 'library staff voters')
     return entry
+
+
+class LibraryReadsBonusPicksParser(LibraryReadsParser):
+
+  CLUB_NAME = 'LibraryReads - Bonus Picks'
+  DEFAULT_SCOPE = 'bonus_picks'
+  DEFAULT_SELECTION_TYPE = 'bonus_pick'
+  ROW_SCOPE = 'bonus_picks'
+
+
+class LibraryReadsNotableNonfictionParser(LibraryReadsParser):
+
+  CLUB_NAME = 'LibraryReads - Notable Nonfiction'
+  DEFAULT_SCOPE = 'notable_nonfiction'
+  DEFAULT_SELECTION_TYPE = 'notable_nonfiction'
+  ROW_SCOPE = 'notable_nonfiction'

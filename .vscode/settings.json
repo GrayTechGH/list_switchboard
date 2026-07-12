@@ -1,0 +1,5 @@
+{
+    "chat.utilityModel": "gemini/models/gemini-2.5-pro",
+    "chat.byokUtilityModelDefault": "copilot",
+    "chat.utilitySmallModel": "gemini/models/gemini-2.5-pro"
+}

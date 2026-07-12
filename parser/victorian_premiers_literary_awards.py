@@ -385,10 +385,17 @@ class VictorianPremiersLiteraryAwardsOfficialParser(AwardParserBase):
 
     entries = []
     for year in sorted(by_year):
-      entries.extend(assign_positions(
+      positioned = assign_positions(
         by_year[year],
         year,
-        tied_winners_share_position=True))
+        tied_winners_share_position=True)
+      for row in positioned:
+        entries.append(self.build_award_entry(
+          row,
+          row.get('source_url') or OFFICIAL_URL,
+          year,
+          row.get('category') or self.category,
+          award=row.get('award') or self.AWARD_NAME))
     return entries
 
 

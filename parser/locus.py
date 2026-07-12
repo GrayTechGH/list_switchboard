@@ -25,11 +25,12 @@ try:
   from calibre_plugins.list_switchboard.parser.award_base import (
     split_title_author,
   )
-  from calibre_plugins.list_switchboard.parser.base import ListParserBase
+  from calibre_plugins.list_switchboard.parser.base import (
+    entry_source_object, imported_entry, parsed_source, ListParserBase)
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
 except ImportError:
   from .award_base import split_title_author
-  from .base import ListParserBase
+  from .base import entry_source_object, imported_entry, parsed_source, ListParserBase
   from .generic import position_sort_key
 
 
@@ -86,7 +87,7 @@ class LocusAnnualAwardsParser(ListParserBase):
         _log(log, 'year-skipped', {'year': year, 'url': url, 'category': category})
     return {
       'name': name,
-      'url': base_url,
+      'source': parsed_source(name, base_url),
       'entries': sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
       'notes': notes,
       'match_series': False,
@@ -121,20 +122,19 @@ class LocusAllTimeAwardsParser(ListParserBase):
       parsed = _parse_all_time_item(match.group(2))
       if parsed is None:
         continue
-      entries.append({
-        'position': match.group(1),
-        'title': parsed['title'],
-        'author': parsed['author'],
-        'source_url': url,
-        'poll_year': str(poll_year),
-        'award': LOCUS_POLL,
-        'category': category,
-        'result': 'ranked',
-      })
+      entries.append(imported_entry(
+        match.group(1),
+        parsed['title'],
+        parsed['author'],
+        source=entry_source_object(url),
+        poll_year=str(poll_year),
+        award=LOCUS_POLL,
+        category=category,
+        result='ranked'))
     _log(log, 'all-time-parsed', {'url': url, 'entries': len(entries)})
     return {
       'name': name,
-      'url': url,
+      'source': parsed_source(name, url),
       'entries': sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
       'notes': [],
       'match_series': False,
@@ -183,16 +183,15 @@ def _parse_annual_year(html, source_url, year, category, category_aliases, log=N
     else:
       suffix_index += 1
       position = f'{year}.{suffix_index:02d}'
-    entries.append({
-      'position': position,
-      'title': row['title'],
-      'author': row['author'],
-      'source_url': source_url,
-      'award_year': str(year),
-      'award': LOCUS_AWARD,
-      'category': category,
-      'result': row['result'],
-    })
+    entries.append(imported_entry(
+      position,
+      row['title'],
+      row['author'],
+      source=entry_source_object(source_url),
+      award_year=str(year),
+      award=LOCUS_AWARD,
+      category=category,
+      result=row['result']))
   return entries
 
 

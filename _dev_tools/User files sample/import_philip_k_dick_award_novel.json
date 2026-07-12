@@ -1,0 +1,4342 @@
+{
+  "append_state": {
+    "entry_count": 270,
+    "last_entry_key": "uncertain sons and other stories|thomas ha",
+    "last_position": "2026.5",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Rudy Rucker"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1983"
+      },
+      "title": "Software"
+    },
+    {
+      "authors": [
+        "R. A. Lafferty"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1983"
+      },
+      "title": "Aurelia"
+    },
+    {
+      "authors": [
+        "John Sladek"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1983"
+      },
+      "title": "Roderick"
+    },
+    {
+      "authors": [
+        "Steve Rasnic Tem"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1983"
+      },
+      "title": "The Umbral Anthology of Science Fiction Poetry"
+    },
+    {
+      "authors": [
+        "J. M. Coetzee"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1983"
+      },
+      "title": "Waiting for the Barbarians"
+    },
+    {
+      "authors": [
+        "Ray Faraday Nelson"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1983"
+      },
+      "title": "The Prometheus Man"
+    },
+    {
+      "authors": [
+        "Tim Powers"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1984",
+      "category": "Novel",
+      "position": "1984",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1984"
+      },
+      "title": "The Anubis Gates"
+    },
+    {
+      "authors": [
+        "Zoe Fairbairns"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1984",
+      "category": "Novel",
+      "position": "1984.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1984"
+      },
+      "title": "Benefits"
+    },
+    {
+      "authors": [
+        "M. John Harrison"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1984",
+      "category": "Novel",
+      "position": "1984.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1984"
+      },
+      "title": "The Floating Gods"
+    },
+    {
+      "authors": [
+        "John Varley"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1984",
+      "category": "Novel",
+      "position": "1984.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1984"
+      },
+      "title": "Millennium"
+    },
+    {
+      "authors": [
+        "Barrington J. Bayley"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1984",
+      "category": "Novel",
+      "position": "1984.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1984"
+      },
+      "title": "The Zen Gun"
+    },
+    {
+      "authors": [
+        "R. A. MacAvoy"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1984",
+      "category": "Novel",
+      "position": "1984.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1984"
+      },
+      "title": "Tea with the Black Dragon"
+    },
+    {
+      "authors": [
+        "William Gibson"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1985",
+      "category": "Novel",
+      "position": "1985",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1985"
+      },
+      "title": "Neuromancer"
+    },
+    {
+      "authors": [
+        "Geary Gravel"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1985",
+      "category": "Novel",
+      "position": "1985.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1985"
+      },
+      "title": "The Alchemists"
+    },
+    {
+      "authors": [
+        "David R. Palmer"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1985",
+      "category": "Novel",
+      "position": "1985.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1985"
+      },
+      "title": "Emergence"
+    },
+    {
+      "authors": [
+        "Lewis Shiner"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1985",
+      "category": "Novel",
+      "position": "1985.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1985"
+      },
+      "title": "Frontera"
+    },
+    {
+      "authors": [
+        "Lucius Shepard"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1985",
+      "category": "Novel",
+      "position": "1985.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1985"
+      },
+      "title": "Green Eyes"
+    },
+    {
+      "authors": [
+        "Howard Waldrop"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1985",
+      "category": "Novel",
+      "position": "1985.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1985"
+      },
+      "title": "Them Bones"
+    },
+    {
+      "authors": [
+        "C. J. Cherryh"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1985",
+      "category": "Novel",
+      "position": "1985.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1985"
+      },
+      "title": "Voyager in Night"
+    },
+    {
+      "authors": [
+        "Kim Stanley Robinson"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1985",
+      "category": "Novel",
+      "position": "1985.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1985"
+      },
+      "title": "The Wild Shore"
+    },
+    {
+      "authors": [
+        "Tim Powers"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1986"
+      },
+      "title": "Dinner at Deviant's Palace"
+    },
+    {
+      "authors": [
+        "Michael P. Kube-McDowell"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1986"
+      },
+      "title": "Emprise"
+    },
+    {
+      "authors": [
+        "Walter Jon Williams"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1986"
+      },
+      "title": "Knight Moves"
+    },
+    {
+      "authors": [
+        "Barry N. Malzberg"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1986"
+      },
+      "title": "The Remaking of Sigmund Freud"
+    },
+    {
+      "authors": [
+        "Scott Russell Sanders"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1986"
+      },
+      "title": "Terrarium"
+    },
+    {
+      "authors": [
+        "Russell Griffin"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1986"
+      },
+      "title": "The Timeservers"
+    },
+    {
+      "authors": [
+        "Richard Grant"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1986"
+      },
+      "title": "Saraband of Lost Time"
+    },
+    {
+      "authors": [
+        "James P. Blaylock"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1987"
+      },
+      "title": "Homunculus"
+    },
+    {
+      "authors": [
+        "Karen Joy Fowler"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1987"
+      },
+      "title": "Artificial Things"
+    },
+    {
+      "authors": [
+        "Robert Charles Wilson"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1987"
+      },
+      "title": "A Hidden Place"
+    },
+    {
+      "authors": [
+        "Jack McDevitt"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1987"
+      },
+      "title": "The Hercules Text"
+    },
+    {
+      "authors": [
+        "Patricia Geary"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1988"
+      },
+      "title": "Strange Toys"
+    },
+    {
+      "authors": [
+        "K. W. Jeter"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1988"
+      },
+      "title": "Dark Seeker"
+    },
+    {
+      "authors": [
+        "Richard Bowker"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1988"
+      },
+      "title": "Dover Beach"
+    },
+    {
+      "authors": [
+        "Lucius Shepard"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1988"
+      },
+      "title": "Life During Wartime"
+    },
+    {
+      "authors": [
+        "Pat Cadigan"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1988"
+      },
+      "title": "Mindplayers"
+    },
+    {
+      "authors": [
+        "Mike McQuay"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1988"
+      },
+      "title": "Memories"
+    },
+    {
+      "authors": [
+        "Paul J. McAuley"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1989"
+      },
+      "title": "Four Hundred Billion Stars"
+    },
+    {
+      "authors": [
+        "Rudy Rucker"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989.01",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1989"
+      },
+      "title": "Wetware"
+    },
+    {
+      "authors": [
+        "Rebecca Ore"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1989"
+      },
+      "title": "Becoming Alien"
+    },
+    {
+      "authors": [
+        "Marc Laidlaw"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1989"
+      },
+      "title": "Neon Lotus"
+    },
+    {
+      "authors": [
+        "Roger MacBride Allen"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1989"
+      },
+      "title": "Orphan of Creation"
+    },
+    {
+      "authors": [
+        "D. Alexander Smith"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1989"
+      },
+      "title": "Rendezvous"
+    },
+    {
+      "authors": [
+        "Richard Paul Russo"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1990"
+      },
+      "title": "Subterranean Gallery"
+    },
+    {
+      "authors": [
+        "Rebecca Ore"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1990"
+      },
+      "title": "Being Alien"
+    },
+    {
+      "authors": [
+        "James Luceno"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1990"
+      },
+      "title": "A Fearful Symmetry"
+    },
+    {
+      "authors": [
+        "Susan M. Shwartz"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1990"
+      },
+      "title": "Heritage of Flight"
+    },
+    {
+      "authors": [
+        "Barry B. Longyear"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1990"
+      },
+      "title": "Infinity Hold"
+    },
+    {
+      "authors": [
+        "Dave Wolverton"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1990"
+      },
+      "title": "On My Way to Paradise"
+    },
+    {
+      "authors": [
+        "Pat Murphy"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1991"
+      },
+      "title": "Points of Departure"
+    },
+    {
+      "authors": [
+        "Allen Steele"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1991"
+      },
+      "title": "Clarke County, Space"
+    },
+    {
+      "authors": [
+        "Gregory Feeley"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1991"
+      },
+      "title": "The Oxygen Barons"
+    },
+    {
+      "authors": [
+        "Elizabeth Hand"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1991"
+      },
+      "title": "Winterlong"
+    },
+    {
+      "authors": [
+        "Raymond Harris"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1991"
+      },
+      "title": "The Schizogenic Man"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1992"
+      },
+      "title": "King of Morning, Queen of Day"
+    },
+    {
+      "authors": [
+        "Robert Charles Wilson"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1992"
+      },
+      "title": "Bridge of Years"
+    },
+    {
+      "authors": [
+        "Kathe Koja"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1992"
+      },
+      "title": "The Cipher"
+    },
+    {
+      "authors": [
+        "Douglas Bell"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1992"
+      },
+      "title": "Mojo and the Pickle Jar"
+    },
+    {
+      "authors": [
+        "Emma Bull"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1992"
+      },
+      "title": "Bone Dance"
+    },
+    {
+      "authors": [
+        "Richard Grant"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1993"
+      },
+      "title": "Through the Heart"
+    },
+    {
+      "authors": [
+        "Elizabeth Hand"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1993"
+      },
+      "title": "\u00c6stival Tide"
+    },
+    {
+      "authors": [
+        "R. A. Lafferty"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1993"
+      },
+      "title": "Iron Tears"
+    },
+    {
+      "authors": [
+        "Colin Greenland"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1993"
+      },
+      "title": "Take Back Plenty"
+    },
+    {
+      "authors": [
+        "\u00c9lisabeth Vonarburg"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1993"
+      },
+      "title": "In the Mothers' Land"
+    },
+    {
+      "authors": [
+        "Jack Womack"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1994"
+      },
+      "title": "Elvissey"
+    },
+    {
+      "authors": [
+        "John M. Ford"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.01",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1994"
+      },
+      "title": "Growing Up Weightless"
+    },
+    {
+      "authors": [
+        "David R. Bunch"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1994"
+      },
+      "title": "Bunch!"
+    },
+    {
+      "authors": [
+        "Wilhelmina Baird"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1994"
+      },
+      "title": "CrashCourse"
+    },
+    {
+      "authors": [
+        "Elizabeth Hand"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1994"
+      },
+      "title": "Icarus Descending"
+    },
+    {
+      "authors": [
+        "Robert Charles Wilson"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1995"
+      },
+      "title": "Mysterium"
+    },
+    {
+      "authors": [
+        "Alexander Besher"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1995"
+      },
+      "title": "RIM: A Novel of Virtual Reality"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1995"
+      },
+      "title": "Scissors Cut Paper Wrap Stone"
+    },
+    {
+      "authors": [
+        "Lisa Mason"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1995"
+      },
+      "title": "Summer of Love"
+    },
+    {
+      "authors": [
+        "Lance Olsen"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1995"
+      },
+      "title": "Tonguing the Zeitgeist"
+    },
+    {
+      "authors": [
+        "Jack Cady"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1995"
+      },
+      "title": "Inagehi"
+    },
+    {
+      "authors": [
+        "Bruce Bethke"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1996"
+      },
+      "title": "Headcrash"
+    },
+    {
+      "authors": [
+        "Amy Thomson"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1996"
+      },
+      "title": "The Color of Distance"
+    },
+    {
+      "authors": [
+        "Greg Egan"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1996"
+      },
+      "title": "Permutation City"
+    },
+    {
+      "authors": [
+        "\u00c9lisabeth Vonarburg"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1996"
+      },
+      "title": "Reluctant Voyagers"
+    },
+    {
+      "authors": [
+        "Shale Aaron"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1996"
+      },
+      "title": "Virtual Death"
+    },
+    {
+      "authors": [
+        "Richard Paul Russo"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1996"
+      },
+      "title": "Carlucci's Edge"
+    },
+    {
+      "authors": [
+        "Stephen Baxter"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1997"
+      },
+      "title": "The Time Ships"
+    },
+    {
+      "authors": [
+        "Sarah Zettel"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1997"
+      },
+      "title": "Reclamation"
+    },
+    {
+      "authors": [
+        "George Foy"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1997"
+      },
+      "title": "The Shift"
+    },
+    {
+      "authors": [
+        "William Barton"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1997"
+      },
+      "title": "The Transmigration of Souls"
+    },
+    {
+      "authors": [
+        "Michael Bishop"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1997"
+      },
+      "title": "At the City Limits of Fate"
+    },
+    {
+      "authors": [
+        "Stepan Chapman"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1998"
+      },
+      "title": "The Troika"
+    },
+    {
+      "authors": [
+        "Richard Paul Russo"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1998"
+      },
+      "title": "Carlucci's Heart"
+    },
+    {
+      "authors": [
+        "Susan R. Matthews"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1998"
+      },
+      "title": "An Exchange of Hostages"
+    },
+    {
+      "authors": [
+        "Catherine Wells"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1998"
+      },
+      "title": "Mother Grimm"
+    },
+    {
+      "authors": [
+        "Denise Vitola"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1998"
+      },
+      "title": "Opalite Moon"
+    },
+    {
+      "authors": [
+        "William Barton"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1998"
+      },
+      "title": "Acts of Conscience"
+    },
+    {
+      "authors": [
+        "Geoff Ryman"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1999"
+      },
+      "title": "253: The Print Remix"
+    },
+    {
+      "authors": [
+        "Nalo Hopkinson"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1999"
+      },
+      "title": "Brown Girl in the Ring"
+    },
+    {
+      "authors": [
+        "Paul J. McAuley"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1999"
+      },
+      "title": "The Invisible Country"
+    },
+    {
+      "authors": [
+        "Steve Aylett"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1999"
+      },
+      "title": "Slaughtermatic"
+    },
+    {
+      "authors": [
+        "Paul Di Filippo"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_1999"
+      },
+      "title": "Lost Pages"
+    },
+    {
+      "authors": [
+        "Stephen Baxter"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2000"
+      },
+      "title": "Vacuum Diagrams"
+    },
+    {
+      "authors": [
+        "Kristine Smith"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2000"
+      },
+      "title": "Code of Conduct"
+    },
+    {
+      "authors": [
+        "Constance Ash"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2000"
+      },
+      "title": "Not of Woman Born"
+    },
+    {
+      "authors": [
+        "Tony Anzetti"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2000"
+      },
+      "title": "Typhon's Children"
+    },
+    {
+      "authors": [
+        "William Barton"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2000"
+      },
+      "title": "When We Were Real"
+    },
+    {
+      "authors": [
+        "Jamil Nasir"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2000"
+      },
+      "title": "Tower of Dreams"
+    },
+    {
+      "authors": [
+        "Michael Marshall Smith"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2001"
+      },
+      "title": "Only Forward"
+    },
+    {
+      "authors": [
+        "Janine Ellen Young"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2001"
+      },
+      "title": "The Bridge"
+    },
+    {
+      "authors": [
+        "Maggie Thomas"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2001"
+      },
+      "title": "Broken Time"
+    },
+    {
+      "authors": [
+        "Stephen L. Burns"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2001"
+      },
+      "title": "Call From a Distant Shore"
+    },
+    {
+      "authors": [
+        "Nalo Hopkinson"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2001"
+      },
+      "title": "Midnight Robber"
+    },
+    {
+      "authors": [
+        "Scott Westerfeld"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2001"
+      },
+      "title": "Evolution's Darling"
+    },
+    {
+      "authors": [
+        "Richard Paul Russo"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2002"
+      },
+      "title": "Ship of Fools"
+    },
+    {
+      "authors": [
+        "Mark W. Tiedemann"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2002"
+      },
+      "title": "Compass Reach"
+    },
+    {
+      "authors": [
+        "Liz Williams"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2002"
+      },
+      "title": "The Ghost Sister"
+    },
+    {
+      "authors": [
+        "Julie E. Czerneda"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2002"
+      },
+      "title": "In the Company of Others"
+    },
+    {
+      "authors": [
+        "Ray Vukcevich"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2002"
+      },
+      "title": "Meet Me in the Moon Room"
+    },
+    {
+      "authors": [
+        "Ken Wharton"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2002"
+      },
+      "title": "Divine Intervention"
+    },
+    {
+      "authors": [
+        "Carol Emshwiller"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2003"
+      },
+      "title": "The Mount"
+    },
+    {
+      "authors": [
+        "Liz Williams"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2003"
+      },
+      "title": "Empire of Bones"
+    },
+    {
+      "authors": [
+        "Jeff VanderMeer & Forrest Aguirre"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2003"
+      },
+      "title": "Leviathan, Volume Three"
+    },
+    {
+      "authors": [
+        "Kay Kenyon"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2003"
+      },
+      "title": "Maximum Ice"
+    },
+    {
+      "authors": [
+        "Carol Emshwiller"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2003"
+      },
+      "title": "Report to the Men's Club and Other Stories"
+    },
+    {
+      "authors": [
+        "Karin Lowachee"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2003"
+      },
+      "title": "Warchild"
+    },
+    {
+      "authors": [
+        "China Mi\u00e9ville"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2003"
+      },
+      "title": "The Scar"
+    },
+    {
+      "authors": [
+        "Richard K. Morgan"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2004"
+      },
+      "title": "Altered Carbon"
+    },
+    {
+      "authors": [
+        "Mark Budz"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2004"
+      },
+      "title": "Clade"
+    },
+    {
+      "authors": [
+        "M. M. Buckner"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2004"
+      },
+      "title": "Hyperthought"
+    },
+    {
+      "authors": [
+        "Chris Moriarty"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2004"
+      },
+      "title": "Spin State"
+    },
+    {
+      "authors": [
+        "Ann Tonsor Zeddies"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2004"
+      },
+      "title": "Steel Helix"
+    },
+    {
+      "authors": [
+        "Jane Jensen"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2004"
+      },
+      "title": "Dante's Equation"
+    },
+    {
+      "authors": [
+        "Gwyneth Jones"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2005"
+      },
+      "title": "Life"
+    },
+    {
+      "authors": [
+        "Geoff Ryman"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2005"
+      },
+      "title": "Air"
+    },
+    {
+      "authors": [
+        "Liz Williams"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2005"
+      },
+      "title": "Banner of Souls"
+    },
+    {
+      "authors": [
+        "Karen Traviss"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2005"
+      },
+      "title": "City of Pearl"
+    },
+    {
+      "authors": [
+        "Minister Faust"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2005"
+      },
+      "title": "The Coyote Kings of the Space-Age Bachelor Pad"
+    },
+    {
+      "authors": [
+        "Eileen Gunn"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2005"
+      },
+      "title": "Stable Strategies and Others"
+    },
+    {
+      "authors": [
+        "Lyda Morehouse"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2005"
+      },
+      "title": "Apocalypse Array"
+    },
+    {
+      "authors": [
+        "M. M. Buckner"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2006"
+      },
+      "title": "War Surf"
+    },
+    {
+      "authors": [
+        "Karin Lowachee"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2006"
+      },
+      "title": "Cagebird"
+    },
+    {
+      "authors": [
+        "Neal Asher"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2006"
+      },
+      "title": "Cowl"
+    },
+    {
+      "authors": [
+        "Justina Robson"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2006"
+      },
+      "title": "Silver Screen"
+    },
+    {
+      "authors": [
+        "Wil McCarthy"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2006"
+      },
+      "title": "To Crush the Moon"
+    },
+    {
+      "authors": [
+        "Justina Robson"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2006"
+      },
+      "title": "Natural History"
+    },
+    {
+      "authors": [
+        "Chris Moriarty"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2007"
+      },
+      "title": "Spin Control"
+    },
+    {
+      "authors": [
+        "Nina Kiriki Hoffman"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2007"
+      },
+      "title": "Catalyst"
+    },
+    {
+      "authors": [
+        "Mark Budz"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2007"
+      },
+      "title": "Idolon"
+    },
+    {
+      "authors": [
+        "Justina Robson"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2007"
+      },
+      "title": "Living Next Door to the God of Love"
+    },
+    {
+      "authors": [
+        "Andrea Hairston"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2007"
+      },
+      "title": "Mindscape"
+    },
+    {
+      "authors": [
+        "Tony Ballantyne"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2007"
+      },
+      "title": "Recursion"
+    },
+    {
+      "authors": [
+        "Elizabeth Bear"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2007"
+      },
+      "title": "Carnival"
+    },
+    {
+      "authors": [
+        "M. John Harrison"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2008"
+      },
+      "title": "Nova Swing"
+    },
+    {
+      "authors": [
+        "Karen Traviss"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2008"
+      },
+      "title": "Ally"
+    },
+    {
+      "authors": [
+        "Adam Roberts"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2008"
+      },
+      "title": "Gradisil"
+    },
+    {
+      "authors": [
+        "Jon Armstrong"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2008"
+      },
+      "title": "Grey"
+    },
+    {
+      "authors": [
+        "Sean Williams"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2008"
+      },
+      "title": "Saturn Returns"
+    },
+    {
+      "authors": [
+        "Elizabeth Bear"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2008"
+      },
+      "title": "Undertow"
+    },
+    {
+      "authors": [
+        "Minister Faust"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2008"
+      },
+      "title": "From the Notebooks of Dr. Brain"
+    },
+    {
+      "authors": [
+        "Adam-Troy Castro"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2009"
+      },
+      "title": "Emissaries from the Dead"
+    },
+    {
+      "authors": [
+        "David Walton"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009.01",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2009"
+      },
+      "title": "Terminal Mind"
+    },
+    {
+      "authors": [
+        "Lou Anders"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2009"
+      },
+      "title": "Fast Forward 2"
+    },
+    {
+      "authors": [
+        "Karen Traviss"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2009"
+      },
+      "title": "Judge"
+    },
+    {
+      "authors": [
+        "Jeff Carlson"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2009"
+      },
+      "title": "Plague War"
+    },
+    {
+      "authors": [
+        "K. A. Bedford"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2009"
+      },
+      "title": "Time Machines Repaired While-U-Wait"
+    },
+    {
+      "authors": [
+        "C. L. Anderson"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2010"
+      },
+      "title": "Bitter Angels"
+    },
+    {
+      "authors": [
+        "Rebecca Ore"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2010"
+      },
+      "title": "Centuries Ago and Very Fast"
+    },
+    {
+      "authors": [
+        "Daryl Gregory"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2010"
+      },
+      "title": "The Devil's Alphabet"
+    },
+    {
+      "authors": [
+        "Carlos J. Cortes"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2010"
+      },
+      "title": "The Prisoner"
+    },
+    {
+      "authors": [
+        "S. Andrew Swann"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2010"
+      },
+      "title": "Prophets"
+    },
+    {
+      "authors": [
+        "Eric Garcia"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2010"
+      },
+      "title": "The Repossession Mambo"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2010"
+      },
+      "title": "Cyberabad Days"
+    },
+    {
+      "authors": [
+        "Mark Hodder"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2011"
+      },
+      "title": "The Strange Affair of Spring Heeled Jack"
+    },
+    {
+      "authors": [
+        "Elizabeth Bear"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2011"
+      },
+      "title": "Chill"
+    },
+    {
+      "authors": [
+        "Alden Bell"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2011"
+      },
+      "title": "The Reapers Are the Angels"
+    },
+    {
+      "authors": [
+        "Sara Creasy"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2011"
+      },
+      "title": "Song of Scarabaeus"
+    },
+    {
+      "authors": [
+        "James Knapp"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2011"
+      },
+      "title": "State of Decay"
+    },
+    {
+      "authors": [
+        "Jon Armstrong"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2011"
+      },
+      "title": "Yarn"
+    },
+    {
+      "authors": [
+        "Project Itoh"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2011"
+      },
+      "title": "Harmony"
+    },
+    {
+      "authors": [
+        "Simon Morden"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2012"
+      },
+      "title": "The Samuel Petrovich Trilogy"
+    },
+    {
+      "authors": [
+        "Maureen F. McHugh"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2012"
+      },
+      "title": "After the Apocalypse: Stories"
+    },
+    {
+      "authors": [
+        "Mira Grant"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2012"
+      },
+      "title": "Deadline"
+    },
+    {
+      "authors": [
+        "Matthew Hughes"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2012"
+      },
+      "title": "The Other"
+    },
+    {
+      "authors": [
+        "Drew Magary"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2012"
+      },
+      "title": "The Postmortal"
+    },
+    {
+      "authors": [
+        "Jean Johnson"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2012"
+      },
+      "title": "A Soldier's Duty"
+    },
+    {
+      "authors": [
+        "Robert Jackson Bennett"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2012"
+      },
+      "title": "The Company Man"
+    },
+    {
+      "authors": [
+        "Brian Francis Slattery"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2013"
+      },
+      "title": "Lost Everything"
+    },
+    {
+      "authors": [
+        "Ryan Boudinot"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2013"
+      },
+      "title": "Blueprints of the Afterlife"
+    },
+    {
+      "authors": [
+        "Nancy Kress"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2013"
+      },
+      "title": "Fountain of Age"
+    },
+    {
+      "authors": [
+        "Keith Brooke"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2013"
+      },
+      "title": "Harmony"
+    },
+    {
+      "authors": [
+        "Eric Brown"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2013"
+      },
+      "title": "Helix Wars"
+    },
+    {
+      "authors": [
+        "Moira Crone"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2013"
+      },
+      "title": "The Not Yet"
+    },
+    {
+      "authors": [
+        "Andri Sn\u00e6r Magnason"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2013"
+      },
+      "title": "Lovestar"
+    },
+    {
+      "authors": [
+        "Ben H. Winters"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2014"
+      },
+      "title": "Countdown City"
+    },
+    {
+      "authors": [
+        "Ann Leckie"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2014"
+      },
+      "title": "Ancillary Justice"
+    },
+    {
+      "authors": [
+        "Anne Charnock"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2014"
+      },
+      "title": "A Calculated Life"
+    },
+    {
+      "authors": [
+        "Jack Skillingstead"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2014"
+      },
+      "title": "Life on the Preservation"
+    },
+    {
+      "authors": [
+        "Cassandra Rose"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2014"
+      },
+      "title": "The Mad Scientist's Daughter"
+    },
+    {
+      "authors": [
+        "Ian Whates"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2014"
+      },
+      "title": "Solaris Rising 2"
+    },
+    {
+      "authors": [
+        "Toh EnJoe"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2014"
+      },
+      "title": "Self-Reference Engine"
+    },
+    {
+      "authors": [
+        "Meg Elison"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2015"
+      },
+      "title": "The Book of the Unnamed Midwife"
+    },
+    {
+      "authors": [
+        "Rod Duncan"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2015"
+      },
+      "title": "The Bullet-Catcher's Daughter"
+    },
+    {
+      "authors": [
+        "Cherie Priest"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2015"
+      },
+      "title": "Maplecroft: The Borden Dispatches"
+    },
+    {
+      "authors": [
+        "Emmi It\u00e4ranta"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2015"
+      },
+      "title": "Memory of Water"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2015"
+      },
+      "title": "Reach for Infinity"
+    },
+    {
+      "authors": [
+        "Jennifer Marie Brissett"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2015"
+      },
+      "title": "Elysium"
+    },
+    {
+      "authors": [
+        "Ramez Naam"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2016"
+      },
+      "title": "Apex"
+    },
+    {
+      "authors": [
+        "Douglas Lain"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2016"
+      },
+      "title": "After the Saucers Landed"
+    },
+    {
+      "authors": [
+        "Brenda Cooper"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2016"
+      },
+      "title": "Edge of Dark"
+    },
+    {
+      "authors": [
+        "PJ Manney"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2016"
+      },
+      "title": "(R)evolution"
+    },
+    {
+      "authors": [
+        "Adam Rakunas"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2016"
+      },
+      "title": "Windswept"
+    },
+    {
+      "authors": [
+        "Marguerite Reed"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2016"
+      },
+      "title": "Archangel"
+    },
+    {
+      "authors": [
+        "Claudia Casper"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2017"
+      },
+      "title": "The Mercy Journals"
+    },
+    {
+      "authors": [
+        "Kristy Acevedo"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2017"
+      },
+      "title": "Consider"
+    },
+    {
+      "authors": [
+        "Matt Hill"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2017"
+      },
+      "title": "Graft"
+    },
+    {
+      "authors": [
+        "Eleanor Arnason"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2017"
+      },
+      "title": "Hwarhath Stories: Transgressive Tales by Aliens"
+    },
+    {
+      "authors": [
+        "Yoss"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2017"
+      },
+      "title": "Super Extra Grande"
+    },
+    {
+      "authors": [
+        "Susan diRende"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2017"
+      },
+      "title": "Unpronounceable"
+    },
+    {
+      "authors": [
+        "Carrie Vaughn"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2018"
+      },
+      "title": "Bannerless"
+    },
+    {
+      "authors": [
+        "Martha Wells"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2018"
+      },
+      "title": "All Systems Red"
+    },
+    {
+      "authors": [
+        "Meg Elison"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2018"
+      },
+      "title": "The Book of Etta"
+    },
+    {
+      "authors": [
+        "Alastair Reynolds"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2018"
+      },
+      "title": "Revenger"
+    },
+    {
+      "authors": [
+        "Mur Lafferty"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2018"
+      },
+      "title": "Six Wakes"
+    },
+    {
+      "authors": [
+        "Tim Pratt"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2018"
+      },
+      "title": "The Wrong Stars"
+    },
+    {
+      "authors": [
+        "Deji Bryce Olukotun"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2018"
+      },
+      "title": "After the Flare"
+    },
+    {
+      "authors": [
+        "Audrey Schulman"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2019"
+      },
+      "title": "Theory of Bastards"
+    },
+    {
+      "authors": [
+        "Abbey Mei Otis"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2019"
+      },
+      "title": "Alien Virus Love Disaster"
+    },
+    {
+      "authors": [
+        "Vandana Singh"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2019"
+      },
+      "title": "Ambiguity Machines and Other Stories"
+    },
+    {
+      "authors": [
+        "Jeff Noon"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2019"
+      },
+      "title": "The Body Library"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2019"
+      },
+      "title": "Time Was"
+    },
+    {
+      "authors": [
+        "Claire North"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2019"
+      },
+      "title": "84K"
+    },
+    {
+      "authors": [
+        "Sarah Pinsker"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2020"
+      },
+      "title": "Sooner or Later Everything Falls into the Sea"
+    },
+    {
+      "authors": [
+        "Susan Palwick"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2020"
+      },
+      "title": "All Worlds Are Real"
+    },
+    {
+      "authors": [
+        "Ada Hoffmann"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2020"
+      },
+      "title": "The Outside"
+    },
+    {
+      "authors": [
+        "Tade Thompson"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2020"
+      },
+      "title": "The Rosewater Redemption"
+    },
+    {
+      "authors": [
+        "Megan E. O'Keefe"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2020"
+      },
+      "title": "Velocity Weapon"
+    },
+    {
+      "authors": [
+        "Sarah Tolmie"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2020"
+      },
+      "title": "The Little Animals"
+    },
+    {
+      "authors": [
+        "Alison Stine"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2021"
+      },
+      "title": "Road Out of Winter"
+    },
+    {
+      "authors": [
+        "Alastair Reynolds"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2021"
+      },
+      "title": "Bone Silence"
+    },
+    {
+      "authors": [
+        "Elwin Cotman"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2021"
+      },
+      "title": "Dance on Saturday"
+    },
+    {
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2021"
+      },
+      "title": "The Doors of Eden"
+    },
+    {
+      "authors": [
+        "Christopher Brown"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2021"
+      },
+      "title": "Failed State"
+    },
+    {
+      "authors": [
+        "M. R. Carey"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2021"
+      },
+      "title": "The Book of Koli"
+    },
+    {
+      "authors": [
+        "Kali Wallace"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2022"
+      },
+      "title": "Dead Space"
+    },
+    {
+      "authors": [
+        "Giacomo Sartori"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2022"
+      },
+      "title": "Bug"
+    },
+    {
+      "authors": [
+        "Nino Cipri"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2022"
+      },
+      "title": "Defekt"
+    },
+    {
+      "authors": [
+        "Tade Thompson"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2022"
+      },
+      "title": "Far from the Light of Heaven"
+    },
+    {
+      "authors": [
+        "Jason Sanford"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2022"
+      },
+      "title": "Plague Birds"
+    },
+    {
+      "authors": [
+        "Lavie Tidhar"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2022"
+      },
+      "title": "The Escapement"
+    },
+    {
+      "authors": [
+        "Kimberly Unger"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2023"
+      },
+      "title": "The Extractionist"
+    },
+    {
+      "authors": [
+        "Rebecca Campbell"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2023"
+      },
+      "title": "Arboreality"
+    },
+    {
+      "authors": [
+        "Rachel Swirsky"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2023"
+      },
+      "title": "January Fifteenth"
+    },
+    {
+      "authors": [
+        "C. J. Carey"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2023"
+      },
+      "title": "Widowland"
+    },
+    {
+      "authors": [
+        "Rich Larson"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2023"
+      },
+      "title": "Ymir"
+    },
+    {
+      "authors": [
+        "Tade Thompson"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2023"
+      },
+      "title": "The Legacy of Molly Southbourne"
+    },
+    {
+      "authors": [
+        "Bethany Jacobs"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2024"
+      },
+      "title": "These Burning Stars"
+    },
+    {
+      "authors": [
+        "Eugen Bacon"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2024"
+      },
+      "title": "Danged Black Thing"
+    },
+    {
+      "authors": [
+        "M. R. Carey"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2024"
+      },
+      "title": "Infinity Gate"
+    },
+    {
+      "authors": [
+        "Dilman Dila"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2024"
+      },
+      "title": "Where Rivers Go to Die"
+    },
+    {
+      "authors": [
+        "S. L. Coney"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2024"
+      },
+      "title": "Wild Spaces"
+    },
+    {
+      "authors": [
+        "Rebekah Bergman"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2024"
+      },
+      "title": "The Museum of Human History"
+    },
+    {
+      "authors": [
+        "Brenda Peynado"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2025"
+      },
+      "title": "Time's Agent"
+    },
+    {
+      "authors": [
+        "Tara Campbell"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2025"
+      },
+      "title": "City of Dancing Gargoyles"
+    },
+    {
+      "authors": [
+        "Sofia Samatar"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2025"
+      },
+      "title": "The Practice, the Horizon, and the Chain"
+    },
+    {
+      "authors": [
+        "Subodhana Wijeyeratne"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2025"
+      },
+      "title": "Triangulum"
+    },
+    {
+      "authors": [
+        "Bora Chung"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2025"
+      },
+      "title": "Your Utopia: Stories"
+    },
+    {
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2025"
+      },
+      "title": "Alien Clay"
+    },
+    {
+      "authors": [
+        "M. R. Carey"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2026",
+      "category": "Novel",
+      "position": "2026",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2026"
+      },
+      "title": "Outlaw Planet"
+    },
+    {
+      "authors": [
+        "Koji A. Dae"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2026",
+      "category": "Novel",
+      "position": "2026.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2026"
+      },
+      "title": "Casual"
+    },
+    {
+      "authors": [
+        "Oliver K. Langmead & Aliya Whiteley"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2026",
+      "category": "Novel",
+      "position": "2026.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2026"
+      },
+      "title": "City of All Seasons"
+    },
+    {
+      "authors": [
+        "Caspar Geon"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2026",
+      "category": "Novel",
+      "position": "2026.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2026"
+      },
+      "title": "The Immeasurable Heaven"
+    },
+    {
+      "authors": [
+        "Christopher Hinz"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2026",
+      "category": "Novel",
+      "position": "2026.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2026"
+      },
+      "title": "Scales"
+    },
+    {
+      "authors": [
+        "William Alexander"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2026",
+      "category": "Novel",
+      "position": "2026.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2026"
+      },
+      "title": "Sunward"
+    },
+    {
+      "authors": [
+        "Thomas Ha"
+      ],
+      "award": "Philip K. Dick Award",
+      "award_year": "2026",
+      "category": "Novel",
+      "position": "2026.5",
+      "result": "special-citation",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Philip_K_Dick_Award_2026"
+      },
+      "title": "Uncertain Sons and Other Stories"
+    }
+  ],
+  "fetched_at": "2026-07-08T16:24:16Z",
+  "list_id": "philip_k_dick_award_novel",
+  "list_name": "Philip K. Dick Award - Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "philip_k_dick_award_novel",
+  "schema_version": 2,
+  "source": {
+    "name": "Philip K. Dick Award - Novel",
+    "source_id": "philip_k_dick_award_novel",
+    "url": "https://www.sfadb.com/Philip_K_Dick_Award"
+  }
+}

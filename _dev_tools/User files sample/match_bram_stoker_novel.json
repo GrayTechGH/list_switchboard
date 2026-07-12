@@ -2,10 +2,37 @@
   "list_id": "bram_stoker_novel",
   "matches": [
     {
+      "entry_key": "the green mile|stephen king",
+      "imported_author": [
+        "Stephen King"
+      ],
+      "imported_title": "The Green Mile",
+      "matched_at": "2026-07-08T23:51:37Z",
+      "matched_authors": [
+        "Stephen King"
+      ],
+      "matched_book_id": 33997,
+      "matched_book_ids": [
+        33997
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Stephen King"
+          ],
+          "matched_book_id": 33997,
+          "matched_title": "The Green Mile: The Complete Serial Novel"
+        }
+      ],
+      "matched_title": "The Green Mile: The Complete Serial Novel"
+    },
+    {
       "entry_key": "creepers|david morrell",
-      "imported_author": "David Morrell",
+      "imported_author": [
+        "David Morrell"
+      ],
       "imported_title": "Creepers",
-      "matched_at": "2026-05-18T13:47:50Z",
+      "matched_at": "2026-07-08T23:51:37Z",
       "matched_authors": [
         "David Nickle"
       ],
@@ -23,8 +50,58 @@
         }
       ],
       "matched_title": "Volk: A Novel of Radiant Abomination"
+    },
+    {
+      "entry_key": "girl in the creek|wendy n wagner",
+      "imported_author": [
+        "Wendy N. Wagner"
+      ],
+      "imported_title": "Girl in the Creek",
+      "matched_at": "2026-07-08T23:53:52Z",
+      "matched_authors": [
+        "Stephen Graham Jones"
+      ],
+      "matched_book_id": 38498,
+      "matched_book_ids": [
+        38498
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Stephen Graham Jones"
+          ],
+          "matched_book_id": 38498,
+          "matched_title": "The Buffalo Hunter Hunter"
+        }
+      ],
+      "matched_title": "The Buffalo Hunter Hunter"
+    },
+    {
+      "entry_key": "witchcraft for wayward girls|grady hendrix",
+      "imported_author": [
+        "Grady Hendrix"
+      ],
+      "imported_title": "Witchcraft for Wayward Girls",
+      "matched_at": "2026-07-08T23:53:52Z",
+      "matched_authors": [
+        "Joe Hill"
+      ],
+      "matched_book_id": 35610,
+      "matched_book_ids": [
+        35610
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Joe Hill"
+          ],
+          "matched_book_id": 35610,
+          "matched_title": "King Sorrow"
+        }
+      ],
+      "matched_title": "King Sorrow"
     }
   ],
-  "saved_at": "2026-05-18T13:47:50Z",
-  "schema_version": 1
+  "saved_at": "2026-07-08T23:53:52Z",
+  "schema_version": 2
 }

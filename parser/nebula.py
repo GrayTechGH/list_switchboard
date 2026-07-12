@@ -22,7 +22,8 @@ try:
     AwardParserBase, assign_positions, is_author_suffix, parse_winner_prefix,
     strip_editor_marker, strip_publication_notes,
   )
-  from calibre_plugins.list_switchboard.parser.base import ListParserBase
+  from calibre_plugins.list_switchboard.parser.base import (
+    entry_source_object, imported_entry, ListParserBase, parsed_source)
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
   from calibre_plugins.list_switchboard.parser.sfadb_base import (
     SFADBParser, StandardItemMixin, normalize_line,
@@ -32,7 +33,7 @@ except ImportError:
     AwardParserBase, assign_positions, is_author_suffix, parse_winner_prefix,
     strip_editor_marker, strip_publication_notes,
   )
-  from .base import ListParserBase
+  from .base import entry_source_object, imported_entry, ListParserBase, parsed_source
   from .generic import position_sort_key
   from .sfadb_base import (
     SFADBParser, StandardItemMixin, normalize_line,
@@ -197,7 +198,7 @@ class NebulaAwardsNovelParser(ListParserBase):
       url = next_url
     return {
       'name': 'Nebula Awards - Novel',
-      'url': base_url,
+      'source': parsed_source('Nebula Awards - Novel', base_url),
       'entries': sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
       'notes': notes,
       'match_series': False,
@@ -311,8 +312,8 @@ def _assign_year_positions(rows, award_name, category):
         continue
       year_rows.append({
         'title': row['title'],
-        'author': row['author'],
-        'source_url': row['source_url'],
+        'authors': [row['author']],
+        'source': entry_source_object(row['source_url']),
         'award_year': str(year),
         'award': award_name,
         'category': category,
@@ -332,7 +333,7 @@ def _parse_nebula_year_entries(year, heading, page_url):
       if parsed is None:
         continue
       hrefs = node.xpath('(.//a[@href])[1]/@href')
-      parsed['source_url'] = urljoin(page_url, hrefs[0]) if hrefs else page_url
+      parsed['entry_url'] = urljoin(page_url, hrefs[0]) if hrefs else page_url
       rows.append(parsed)
 
   entries = []
@@ -343,16 +344,15 @@ def _parse_nebula_year_entries(year, heading, page_url):
     else:
       nominee_index += 1
       position = f'{year}.{nominee_index:02d}'
-    entries.append({
-      'position': position,
-      'title': row['title'],
-      'author': row['author'],
-      'source_url': row['source_url'],
-      'award_year': str(year),
-      'award': AWARD_NAME,
-      'category': CATEGORY_NAME,
-      'result': row['result'],
-    })
+    entries.append(imported_entry(
+      position,
+      row['title'],
+      row['author'],
+      source=entry_source_object(row['entry_url']),
+      award_year=str(year),
+      award=AWARD_NAME,
+      category=CATEGORY_NAME,
+      result=row['result']))
   return entries
 
 
@@ -401,9 +401,9 @@ def _strip_nebula_translator_credit(value):
 
 
 def _split_nebula_title_author(text):
-  match = re.match(r'^(.*?)\s*,?\s+by\s+(.+)$', text, re.I)
-  if match is not None:
-    return match.groups()
+  parts = [part.strip() for part in re.split(r'\s*,?\s+by\s+', text, flags=re.I)]
+  if len(parts) > 1 and all(parts):
+    return ' by '.join(parts[:-1]), parts[-1]
   parts = [part.strip() for part in text.rsplit(',', 1)]
   if len(parts) == 2 and all(parts):
     return parts[0], parts[1]

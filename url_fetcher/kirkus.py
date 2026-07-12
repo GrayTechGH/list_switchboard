@@ -10,6 +10,7 @@ from .generic import (
   CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
   UrlFetcherError,
   UrlFetcherGeneric,
+  parsed_source,
 )
 
 
@@ -102,7 +103,7 @@ class UrlFetcherKirkusPrize(UrlFetcherGeneric):
     parsed['notes'] = notes + parsed['notes']
     if not parsed.get('entries'):
       raise UrlFetcherError('Official Kirkus produced no entries')
-    parsed.setdefault('source_url', self.URL)
+    parsed.setdefault('source', parsed_source(self.NAME, self.URL, self.source_id))
     parsed.setdefault('match_series', False)
     return parsed
 

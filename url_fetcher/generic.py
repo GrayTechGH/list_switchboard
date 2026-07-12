@@ -7,6 +7,11 @@ except ImportError:
   urlparse = None
 
 try:
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError
+except ImportError:
+  from errors import ImportCancelledError
+
+try:
   from calibre_plugins.list_switchboard.parser.base import (
     CATEGORY_FANTASY,
     CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS,
@@ -22,6 +27,7 @@ try:
     CATEGORY_CRIME_MYSTERY_THRILLER,
     DEFAULT_FILTER_CATEGORIES,
     ListParserBase,
+    parsed_source,
   )
 except ImportError:
   from parser.base import (
@@ -39,6 +45,7 @@ except ImportError:
     CATEGORY_CRIME_MYSTERY_THRILLER,
     DEFAULT_FILTER_CATEGORIES,
     ListParserBase,
+    parsed_source,
   )
 
 
@@ -58,6 +65,7 @@ class UrlFetcherGeneric:
   # the subset of linked pages that still need a network refresh.
   SUPPORTS_INCREMENTAL_UPDATE = False
   USER_AGENT = None
+  MAX_RESPONSE_BYTES = None
 
   @property
   def name(self):
@@ -130,6 +138,24 @@ class UrlFetcherGeneric:
 
   def fetch_url(self, fetch_url, url):
     user_agent = getattr(self, 'USER_AGENT', None)
+    max_bytes = getattr(self, 'MAX_RESPONSE_BYTES', None)
+    keyword_options = {}
+    if user_agent:
+      keyword_options['user_agent'] = user_agent
+    if max_bytes:
+      keyword_options['max_bytes'] = max_bytes
+    if keyword_options:
+      try:
+        return fetch_url(url, **keyword_options)
+      except TypeError as err:
+        if 'keyword' not in str(err):
+          raise
+    if max_bytes:
+      try:
+        return fetch_url(url, max_bytes=max_bytes)
+      except TypeError as err:
+        if 'max_bytes' not in str(err) and 'keyword' not in str(err):
+          raise
     if user_agent:
       try:
         return fetch_url(url, user_agent=user_agent)
@@ -185,9 +211,11 @@ class UrlFetcherGeneric:
           progress=progress,
           cached_parsed=cached_parsed,
           incremental_update=bool(incremental_update))
-        parsed.setdefault('source_url', url)
+        parsed.setdefault('source', parsed_source(self.NAME, url, self.source_id))
         parsed.setdefault('match_series', self.options.get('match_series', True))
         return parsed
+      except ImportCancelledError:
+        raise
       except Exception as err:
         last_error = err
         errors.append(f'{url}: {err}')

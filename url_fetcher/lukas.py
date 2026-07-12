@@ -6,6 +6,7 @@ from .generic import (
   CATEGORY_REGIONAL_NATIONAL_AWARDS,
   UrlFetcherError,
   UrlFetcherGeneric,
+  parsed_source,
 )
 
 try:
@@ -133,7 +134,7 @@ class UrlFetcherJAnthonyLukasBookPrize(
     parsed = parser.parse(pages, base_url, self.NAME, self.CATEGORY)
     if not parsed.get('entries'):
       raise UrlFetcherError('Official Columbia produced no entries')
-    parsed.setdefault('source_url', base_url)
+    parsed.setdefault('source', parsed_source(self.NAME, base_url, self.source_id))
     parsed.setdefault('match_series', False)
     return parsed
 
@@ -230,7 +231,7 @@ class UrlFetcherMarkLyntonHistoryPrize(UrlFetcherGeneric):
     parsed = parser.parse(pages, base_url, self.NAME, self.CATEGORY)
     if not parsed.get('entries'):
       raise UrlFetcherError('Official Columbia produced no entries')
-    parsed.setdefault('source_url', base_url)
+    parsed.setdefault('source', parsed_source(self.NAME, base_url, self.source_id))
     parsed.setdefault('match_series', False)
     return parsed
 

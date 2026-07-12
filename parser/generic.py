@@ -7,7 +7,7 @@ Shared parser helpers for schema-driven list tables.
 Schema contract:
 - A schema is a dict with `headers` and `fields` in the same column order.
 - `headers` are human-facing table labels and are normalized before matching.
-- `fields` are canonical output keys such as position, title, author, votes,
+- `fields` are source-column keys such as position, title, author, votes,
   rank_change, and ratings.
 
 Maintenance notes:
@@ -20,6 +20,12 @@ Maintenance notes:
 """
 
 import re
+
+try:
+  from calibre_plugins.list_switchboard.parser.base import (
+    entry_source_object, imported_entry)
+except ImportError:
+  from .base import entry_source_object, imported_entry
 
 
 def token_header_start(strings, headers):
@@ -77,16 +83,14 @@ def row_entry(values, schema, source_url=''):
     data['rank_change'] = rank_change
   if not valid_entry(data):
     return None
-  result = {
-    'position': data.get('position', ''),
-    'title': data.get('title', ''),
-    'author': data.get('author', ''),
-  }
+  result = imported_entry(
+    data.get('position', ''),
+    data.get('title', ''),
+    data.get('author', ''),
+    source=entry_source_object(source_url))
   for key in ('votes', 'rank_change', 'ratings'):
     if data.get(key):
       result[key] = data[key]
-  if source_url:
-    result['source_url'] = source_url
   return result
 
 

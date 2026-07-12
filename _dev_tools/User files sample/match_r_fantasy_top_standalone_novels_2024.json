@@ -3,9 +3,11 @@
   "matches": [
     {
       "entry_key": "tress of the emerald sea|brandon sanderson",
-      "imported_author": "Brandon Sanderson",
+      "imported_author": [
+        "Brandon Sanderson"
+      ],
       "imported_title": "Tress of the Emerald Sea",
-      "matched_at": "2026-05-06T04:37:46Z",
+      "matched_at": "2026-07-08T04:00:50Z",
       "matched_authors": [
         "Brandon Sanderson"
       ],
@@ -25,33 +27,94 @@
       "matched_title": "Tress of the Emerald Sea: A Cosmere Novel"
     },
     {
-      "entry_key": "babel|r f kuang",
-      "imported_author": "R.F. Kuang",
-      "imported_title": "Babel",
-      "matched_at": "2026-05-06T04:38:12Z",
-      "matched_authors": [
-        "R. F. Kuang"
+      "entry_key": "american gods|neil gaiman",
+      "imported_author": [
+        "Neil Gaiman"
       ],
-      "matched_book_id": 30618,
+      "imported_title": "American Gods",
+      "matched_at": "2026-07-08T04:00:50Z",
+      "matched_authors": [
+        "Neil Gaiman"
+      ],
+      "matched_book_id": 32562,
       "matched_book_ids": [
-        30618
+        32562,
+        32557,
+        32558,
+        32560
       ],
       "matched_books": [
         {
           "matched_authors": [
-            "R. F. Kuang"
+            "Neil Gaiman"
           ],
-          "matched_book_id": 30618,
-          "matched_title": "Babel: An Arcane History"
+          "matched_book_id": 32562,
+          "matched_title": "American Gods"
+        },
+        {
+          "matched_authors": [
+            "Neil Gaiman"
+          ],
+          "matched_book_id": 32557,
+          "matched_title": "The Monarch of the Glen"
+        },
+        {
+          "matched_authors": [
+            "Neil Gaiman"
+          ],
+          "matched_book_id": 32558,
+          "matched_title": "Anansi Boys"
+        },
+        {
+          "matched_authors": [
+            "Neil Gaiman"
+          ],
+          "matched_book_id": 32560,
+          "matched_title": "Black Dog"
         }
       ],
-      "matched_title": "Babel: An Arcane History"
+      "matched_title": "Black Dog"
+    },
+    {
+      "entry_key": "elantris|brandon sanderson",
+      "imported_author": [
+        "Brandon Sanderson"
+      ],
+      "imported_title": "Elantris",
+      "matched_at": "2026-07-08T04:00:50Z",
+      "matched_authors": [
+        "Brandon Sanderson"
+      ],
+      "matched_book_id": 23627,
+      "matched_book_ids": [
+        23627,
+        36191
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Brandon Sanderson"
+          ],
+          "matched_book_id": 23627,
+          "matched_title": "Elantris"
+        },
+        {
+          "matched_authors": [
+            "Brandon Sanderson"
+          ],
+          "matched_book_id": 36191,
+          "matched_title": "The Hope of Elantris"
+        }
+      ],
+      "matched_title": "The Hope of Elantris"
     },
     {
       "entry_key": "1984|george orwell",
-      "imported_author": "George Orwell",
+      "imported_author": [
+        "George Orwell"
+      ],
       "imported_title": "1984",
-      "matched_at": "2026-05-06T04:38:24Z",
+      "matched_at": "2026-07-08T04:00:50Z",
       "matched_authors": [
         "George Orwell",
         "Christopher Hitchens"
@@ -73,20 +136,62 @@
       "matched_title": "Animal Farm and 1984"
     },
     {
-      "entry_key": "the lord of the rings|j r r tolkien",
-      "imported_author": "J.R.R. Tolkien",
-      "imported_title": "The Lord of the Rings",
-      "matched_at": "2026-05-06T04:41:15Z",
+      "entry_key": "babel|r f kuang",
+      "imported_author": [
+        "R.F. Kuang"
+      ],
+      "imported_title": "Babel",
+      "matched_at": "2026-07-08T04:00:50Z",
+      "matched_authors": [
+        "R. F. Kuang"
+      ],
+      "matched_book_id": 30618,
+      "matched_book_ids": [
+        30618
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "R. F. Kuang"
+          ],
+          "matched_book_id": 30618,
+          "matched_title": "Babel. An Arcane History"
+        }
+      ],
+      "matched_title": "Babel. An Arcane History"
+    },
+    {
+      "entry_key": "11 22 63|stephen king",
+      "imported_author": [
+        "Stephen King"
+      ],
+      "imported_title": "11-22-63",
+      "matched_at": "2026-07-08T04:01:43Z",
       "matched_authors": [
         "J. R. R. Tolkien"
       ],
-      "matched_book_id": 37968,
+      "matched_book_id": 14827,
       "matched_book_ids": [
+        14827,
+        38019,
         37968,
-        38004,
-        38019
+        38004
       ],
       "matched_books": [
+        {
+          "matched_authors": [
+            "Stephen King"
+          ],
+          "matched_book_id": 14827,
+          "matched_title": "11/22/63"
+        },
+        {
+          "matched_authors": [
+            "J. R. R. Tolkien"
+          ],
+          "matched_book_id": 38019,
+          "matched_title": "The Return of the King"
+        },
         {
           "matched_authors": [
             "J. R. R. Tolkien"
@@ -100,6 +205,41 @@
           ],
           "matched_book_id": 38004,
           "matched_title": "The Two Towers"
+        }
+      ],
+      "matched_title": "The Two Towers"
+    },
+    {
+      "entry_key": "the lord of the rings|j r r tolkien",
+      "imported_author": [
+        "J.R.R. Tolkien"
+      ],
+      "imported_title": "The Lord of the Rings",
+      "matched_at": "2026-07-08T04:05:29Z",
+      "matched_authors": [
+        "J. R. R. Tolkien"
+      ],
+      "matched_book_id": 16155,
+      "matched_book_ids": [
+        16155,
+        37968,
+        38019,
+        38004
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Adrian Tchaikovsky"
+          ],
+          "matched_book_id": 16155,
+          "matched_title": "Guns of the Dawn"
+        },
+        {
+          "matched_authors": [
+            "J. R. R. Tolkien"
+          ],
+          "matched_book_id": 37968,
+          "matched_title": "The Fellowship of the Ring"
         },
         {
           "matched_authors": [
@@ -107,11 +247,18 @@
           ],
           "matched_book_id": 38019,
           "matched_title": "The Return of the King"
+        },
+        {
+          "matched_authors": [
+            "J. R. R. Tolkien"
+          ],
+          "matched_book_id": 38004,
+          "matched_title": "The Two Towers"
         }
       ],
-      "matched_title": "The Fellowship of the Ring"
+      "matched_title": "The Two Towers"
     }
   ],
-  "saved_at": "2026-05-06T04:41:21Z",
-  "schema_version": 1
+  "saved_at": "2026-07-08T04:05:29Z",
+  "schema_version": 2
 }

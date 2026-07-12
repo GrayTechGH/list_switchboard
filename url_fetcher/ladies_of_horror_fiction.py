@@ -16,6 +16,7 @@ from .generic import (
   CATEGORY_HORROR_DARK_FICTION,
   UrlFetcherError,
   UrlFetcherGeneric,
+  parsed_source,
 )
 
 
@@ -82,7 +83,7 @@ class UrlFetcherLadiesOfHorrorFiction(UrlFetcherGeneric):
     if not combined.get('entries'):
       raise UrlFetcherError('Could not fetch or parse the imported list.')
     combined['match_series'] = self.options.get('match_series', True)
-    combined.setdefault('source_url', self.URL)
+    combined.setdefault('source', parsed_source(self.NAME, self.URL, self.source_id))
     return combined
 
   def fetch_parse_goodreads_pages(

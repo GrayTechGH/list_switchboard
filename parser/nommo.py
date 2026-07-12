@@ -17,10 +17,11 @@ from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 
 try:
-  from calibre_plugins.list_switchboard.parser.base import ListParserBase
+  from calibre_plugins.list_switchboard.parser.base import (
+    entry_source_object, imported_entry, parsed_source, ListParserBase)
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
 except ImportError:
-  from .base import ListParserBase
+  from .base import entry_source_object, imported_entry, parsed_source, ListParserBase
   from .generic import position_sort_key
 
 
@@ -73,7 +74,7 @@ class NommoAwardsParser(ListParserBase):
     entries = _nommo_entries(rows)
     return {
       'name': name,
-      'url': base_url,
+      'source': parsed_source(name, base_url),
       'entries': sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
       'notes': notes,
       'match_series': False,
@@ -232,16 +233,15 @@ def _nommo_entries(rows):
       else:
         suffix_index += 1
         position = f'{year}.{suffix_index:02d}'
-      entries.append({
-        'position': position,
-        'title': row['title'],
-        'author': row['author'],
-        'source_url': row['source_url'],
-        'award_year': str(year),
-        'award': AWARD_NAME,
-        'category': row['category'],
-        'result': row['result'],
-      })
+      entries.append(imported_entry(
+        position,
+        row['title'],
+        row['author'],
+        source=entry_source_object(row['source_url']),
+        award_year=str(year),
+        award=AWARD_NAME,
+        category=row['category'],
+        result=row['result']))
   return entries
 
 

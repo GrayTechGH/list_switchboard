@@ -1,0 +1,3830 @@
+{
+  "append_state": {
+    "entry_count": 238,
+    "last_entry_key": "war by other means|karl k gallagher",
+    "last_position": "2026.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "F. Paul Wilson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1979",
+      "category": "Novel",
+      "position": "1979",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1979"
+      },
+      "title": "Wheels Within Wheels"
+    },
+    {
+      "authors": [
+        "Poul Anderson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1979",
+      "category": "Novel",
+      "position": "1979.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1979"
+      },
+      "title": "The Avatar"
+    },
+    {
+      "authors": [
+        "James P. Hogan"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1979",
+      "category": "Novel",
+      "position": "1979.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1979"
+      },
+      "title": "The Genesis Machine"
+    },
+    {
+      "authors": [
+        "L. Neil Smith"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1982",
+      "category": "Novel",
+      "position": "1982",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1982"
+      },
+      "title": "The Probability Broach"
+    },
+    {
+      "authors": [
+        "J. Neil Schulman"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1982",
+      "category": "Novel",
+      "position": "1982.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1982"
+      },
+      "title": "Alongside Night"
+    },
+    {
+      "authors": [
+        "F. Paul Wilson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1982",
+      "category": "Novel",
+      "position": "1982.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1982"
+      },
+      "title": "An Enemy of the State"
+    },
+    {
+      "authors": [
+        "Norman Spinrad"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1982",
+      "category": "Novel",
+      "position": "1982.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1982"
+      },
+      "title": "Songs from the Stars"
+    },
+    {
+      "authors": [
+        "Samuel R. Delany"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1982",
+      "category": "Novel",
+      "position": "1982.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1982"
+      },
+      "title": "Tales of Nev\u00e8r\u00ffon"
+    },
+    {
+      "authors": [
+        "Kay Nolte Smith"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1982",
+      "category": "Novel",
+      "position": "1982.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1982"
+      },
+      "title": "The Watcher"
+    },
+    {
+      "authors": [
+        "James P. Hogan"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1983"
+      },
+      "title": "Voyage from Yesteryear"
+    },
+    {
+      "authors": [
+        "Ann Maxwell"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1983"
+      },
+      "title": "Fire Dancer"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1983"
+      },
+      "title": "Friday"
+    },
+    {
+      "authors": [
+        "Julian May"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1983"
+      },
+      "title": "The Many-Colored Land"
+    },
+    {
+      "authors": [
+        "Larry Niven & Jerry Pournelle"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1983"
+      },
+      "title": "Oath of Fealty"
+    },
+    {
+      "authors": [
+        "J. Neil Schulman"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1984",
+      "category": "Novel",
+      "position": "1984",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1984"
+      },
+      "title": "The Rainbow Cadenza"
+    },
+    {
+      "authors": [
+        "Erika Holzer"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1984",
+      "category": "Novel",
+      "position": "1984.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1984"
+      },
+      "title": "Double Crossing"
+    },
+    {
+      "authors": [
+        "L. Neil Smith"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1984",
+      "category": "Novel",
+      "position": "1984.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1984"
+      },
+      "title": "The Nagasaki Vector"
+    },
+    {
+      "authors": [
+        "Poul Anderson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1984",
+      "category": "Novel",
+      "position": "1984.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1984"
+      },
+      "title": "Orion Shall Rise"
+    },
+    {
+      "authors": [
+        "Marion Zimmer Bradley"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1984",
+      "category": "Novel",
+      "position": "1984.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1984"
+      },
+      "title": "Thendara House"
+    },
+    {
+      "authors": [
+        "Gordon R. Dickson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1985",
+      "category": "Novel",
+      "position": "1985.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1985"
+      },
+      "title": "The Final Encyclopedia"
+    },
+    {
+      "authors": [
+        "Lee Correy"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1985",
+      "category": "Novel",
+      "position": "1985.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1985"
+      },
+      "title": "Manna"
+    },
+    {
+      "authors": [
+        "Vernor Vinge"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1985",
+      "category": "Novel",
+      "position": "1985.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1985"
+      },
+      "title": "The Peace War"
+    },
+    {
+      "authors": [
+        "L. Neil Smith"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1985",
+      "category": "Novel",
+      "position": "1985.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1985"
+      },
+      "title": "Tom Paine Maru"
+    },
+    {
+      "authors": [
+        "F. Paul Wilson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1985",
+      "category": "Novel",
+      "position": "1985.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1985"
+      },
+      "title": "The Tomb"
+    },
+    {
+      "authors": [
+        "Victor Mil\u00e1n"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1986"
+      },
+      "title": "The Cybernetic Samurai"
+    },
+    {
+      "authors": [
+        "Kay Nolte Smith"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1986"
+      },
+      "title": "Elegy for a Soprano"
+    },
+    {
+      "authors": [
+        "L. Neil Smith"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1986"
+      },
+      "title": "The Gallatin Divergence"
+    },
+    {
+      "authors": [
+        "Glen Cook"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1986"
+      },
+      "title": "A Matter of Time"
+    },
+    {
+      "authors": [
+        "Philip K. Dick"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1986"
+      },
+      "title": "Radio Free Albemuth"
+    },
+    {
+      "authors": [
+        "Vernor Vinge"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1987"
+      },
+      "title": "Marooned in Realtime"
+    },
+    {
+      "authors": [
+        "Melinda Snodgrass"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1987"
+      },
+      "title": "Circuit"
+    },
+    {
+      "authors": [
+        "L. Neil Smith"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1987"
+      },
+      "title": "The Crystal Empire"
+    },
+    {
+      "authors": [
+        "Joan Slonczewski"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1987"
+      },
+      "title": "A Door into Ocean"
+    },
+    {
+      "authors": [
+        "Margaret Atwood"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1987"
+      },
+      "title": "The Handmaid's Tale"
+    },
+    {
+      "authors": [
+        "Victor Koman"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1988"
+      },
+      "title": "The Jehovah Contract"
+    },
+    {
+      "authors": [
+        "Melinda Snodgrass"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1988"
+      },
+      "title": "Circuit Breaker"
+    },
+    {
+      "authors": [
+        "Thomas T. Thomas"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1988"
+      },
+      "title": "First Citizen"
+    },
+    {
+      "authors": [
+        "David Brin"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1988"
+      },
+      "title": "The Uplift War"
+    },
+    {
+      "authors": [
+        "Gordon R. Dickson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1988"
+      },
+      "title": "Way of the Pilgrim"
+    },
+    {
+      "authors": [
+        "Brad Linaweaver"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1989"
+      },
+      "title": "Moon of Ice"
+    },
+    {
+      "authors": [
+        "L. Neil Smith"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1989"
+      },
+      "title": "Brightsuit MacBear"
+    },
+    {
+      "authors": [
+        "Marc Stiegler"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1989"
+      },
+      "title": "David's Sling"
+    },
+    {
+      "authors": [
+        "Lois McMaster Bujold"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1989"
+      },
+      "title": "Falling Free"
+    },
+    {
+      "authors": [
+        "Melinda Snodgrass"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1989"
+      },
+      "title": "Final Circuit"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1989"
+      },
+      "title": "To Sail Beyond the Sunset"
+    },
+    {
+      "authors": [
+        "Victor Koman"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1990"
+      },
+      "title": "Solomon's Knife"
+    },
+    {
+      "authors": [
+        "Poul Anderson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1990"
+      },
+      "title": "The Boat of a Million Years"
+    },
+    {
+      "authors": [
+        "L. Neil Smith"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1990"
+      },
+      "title": "Henry Martyn"
+    },
+    {
+      "authors": [
+        "Barry B. Longyear"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1990"
+      },
+      "title": "Infinity Hold"
+    },
+    {
+      "authors": [
+        "James P. Hogan"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1990"
+      },
+      "title": "The Mirror Maze"
+    },
+    {
+      "authors": [
+        "Michael F. Flynn"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1991"
+      },
+      "title": "In the Country of the Blind"
+    },
+    {
+      "authors": [
+        "Victor Mil\u00e1n"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1991"
+      },
+      "title": "The Cybernetic Shogun"
+    },
+    {
+      "authors": [
+        "F. Paul Wilson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1991"
+      },
+      "title": "The Tery"
+    },
+    {
+      "authors": [
+        "S. M. Stirling"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1991"
+      },
+      "title": "Under the Yoke"
+    },
+    {
+      "authors": [
+        "Alan Moore"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1991"
+      },
+      "title": "V for Vendetta"
+    },
+    {
+      "authors": [
+        "Jerry Pournelle & Michael Flynn"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1992"
+      },
+      "title": "Fallen Angels , Larry Niven"
+    },
+    {
+      "authors": [
+        "D. L. Carey"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1992"
+      },
+      "title": "Distant Drums"
+    },
+    {
+      "authors": [
+        "Joel Rosenberg"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1992"
+      },
+      "title": "D'Shai"
+    },
+    {
+      "authors": [
+        "James P. Hogan"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1992"
+      },
+      "title": "The Infinity Gambit"
+    },
+    {
+      "authors": [
+        "Thomas T. Thomas"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1992"
+      },
+      "title": "Me: A Novel of Self-Discovery"
+    },
+    {
+      "authors": [
+        "Charles Platt"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1992"
+      },
+      "title": "The Silicon Man"
+    },
+    {
+      "authors": [
+        "Peter David"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1992"
+      },
+      "title": "Star Trek #57: The Rift"
+    },
+    {
+      "authors": [
+        "Kay Nolte Smith"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1992"
+      },
+      "title": "A Tale of the Wind"
+    },
+    {
+      "authors": [
+        "James P. Hogan"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1993"
+      },
+      "title": "The Multiplex Man"
+    },
+    {
+      "authors": [
+        "Orson Scott Card"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1993"
+      },
+      "title": "The Memory of Earth"
+    },
+    {
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1993"
+      },
+      "title": "Snow Crash"
+    },
+    {
+      "authors": [
+        "John Varley"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1993"
+      },
+      "title": "Steel Beach"
+    },
+    {
+      "authors": [
+        "Robert L. Forward"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1993"
+      },
+      "title": "Timemaster"
+    },
+    {
+      "authors": [
+        "Rex Denver Borough"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1993"
+      },
+      "title": "A Woman's Place"
+    },
+    {
+      "authors": [
+        "L. Neil Smith"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1994"
+      },
+      "title": "Pallas"
+    },
+    {
+      "authors": [
+        "Nancy Kress"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1994"
+      },
+      "title": "Beggars in Spain"
+    },
+    {
+      "authors": [
+        "M. J. Engh"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1994"
+      },
+      "title": "Rainbow Man"
+    },
+    {
+      "authors": [
+        "Charles Platt"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1994"
+      },
+      "title": "The Silicon Man"
+    },
+    {
+      "authors": [
+        "Amy Thomson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1994"
+      },
+      "title": "Virtual Girl"
+    },
+    {
+      "authors": [
+        "Poul Anderson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1995"
+      },
+      "title": "The Stars Are Also Fire"
+    },
+    {
+      "authors": [
+        "Dean Koontz"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1995"
+      },
+      "title": "Dark Rivers of the Heart"
+    },
+    {
+      "authors": [
+        "Richard Fulmer"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1995"
+      },
+      "title": "Deadly Care"
+    },
+    {
+      "authors": [
+        "Orson Scott Card & Kathryn H. Kidd"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1995"
+      },
+      "title": "Lovelock"
+    },
+    {
+      "authors": [
+        "F. Paul Wilson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1995"
+      },
+      "title": "The Select"
+    },
+    {
+      "authors": [
+        "A. A. Attanasio"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1995"
+      },
+      "title": "Solis"
+    },
+    {
+      "authors": [
+        "Ken MacLeod"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1996"
+      },
+      "title": "The Star Fraction"
+    },
+    {
+      "authors": [
+        "Victor Mil\u00e1n"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1996"
+      },
+      "title": "CLD"
+    },
+    {
+      "authors": [
+        "Alan Dean Foster & Eric Frank Russell"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1996"
+      },
+      "title": "Design for Great-Day"
+    },
+    {
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1996"
+      },
+      "title": "The Diamond Age"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1996"
+      },
+      "title": "Four Ways to Forgiveness"
+    },
+    {
+      "authors": [
+        "Victor Koman"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1997"
+      },
+      "title": "Kings of the High Frontier"
+    },
+    {
+      "authors": [
+        "Michael Flynn"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1997"
+      },
+      "title": "Firestar"
+    },
+    {
+      "authors": [
+        "James P. Hogan"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1997"
+      },
+      "title": "Paths to Otherwhere"
+    },
+    {
+      "authors": [
+        "Brad Linaweaver"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1997"
+      },
+      "title": "Sliders"
+    },
+    {
+      "authors": [
+        "Steven Gould"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1997"
+      },
+      "title": "Wildside"
+    },
+    {
+      "authors": [
+        "Ken MacLeod"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1998"
+      },
+      "title": "The Stone Canal"
+    },
+    {
+      "authors": [
+        "L. Neil Smith"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1998"
+      },
+      "title": "Bretta Martyn"
+    },
+    {
+      "authors": [
+        "C. J. Cherryh"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1998"
+      },
+      "title": "Finity's End"
+    },
+    {
+      "authors": [
+        "Poul Anderson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1998"
+      },
+      "title": "The Fleet of Stars"
+    },
+    {
+      "authors": [
+        "Bart Kosko"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1998"
+      },
+      "title": "Nanotime"
+    },
+    {
+      "authors": [
+        "John Varley"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1999"
+      },
+      "title": "The Golden Globe"
+    },
+    {
+      "authors": [
+        "F. Paul Wilson & Matthew Costello"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1999"
+      },
+      "title": "Masque"
+    },
+    {
+      "authors": [
+        "Ben Bova"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1999"
+      },
+      "title": "Moonwar"
+    },
+    {
+      "authors": [
+        "Michael Flynn"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1999"
+      },
+      "title": "Rogue Star"
+    },
+    {
+      "authors": [
+        "Don L. Tiggre"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1999"
+      },
+      "title": "Y2K: The Millennium Bug"
+    },
+    {
+      "authors": [
+        "Vernor Vinge"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2000"
+      },
+      "title": "A Deepness in the Sky"
+    },
+    {
+      "authors": [
+        "Ken MacLeod"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2000"
+      },
+      "title": "The Cassini Division"
+    },
+    {
+      "authors": [
+        "James P. Hogan"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2000"
+      },
+      "title": "Cradle of Saturn"
+    },
+    {
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2000"
+      },
+      "title": "Cryptonomicon"
+    },
+    {
+      "authors": [
+        "Gregory Benford"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2000"
+      },
+      "title": "The Martian Race"
+    },
+    {
+      "authors": [
+        "L. Neil Smith"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2001"
+      },
+      "title": "Forge of the Elders"
+    },
+    {
+      "authors": [
+        "Steve White"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2001"
+      },
+      "title": "Eagle Against the Stars"
+    },
+    {
+      "authors": [
+        "Michael Flynn"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2001"
+      },
+      "title": "Lodestar"
+    },
+    {
+      "authors": [
+        "Ken MacLeod"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2001"
+      },
+      "title": "The Sky Road"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2001"
+      },
+      "title": "The Truth"
+    },
+    {
+      "authors": [
+        "Donald Kingsbury"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2002"
+      },
+      "title": "Psychohistorical Crisis"
+    },
+    {
+      "authors": [
+        "L. Neil Smith"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2002"
+      },
+      "title": "The American Zone"
+    },
+    {
+      "authors": [
+        "Karen Michalson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2002"
+      },
+      "title": "Enemy Glory"
+    },
+    {
+      "authors": [
+        "Michael Flynn"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2002"
+      },
+      "title": "Falling Stars"
+    },
+    {
+      "authors": [
+        "F. Paul Wilson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2002"
+      },
+      "title": "Hosts"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2003"
+      },
+      "title": "Night Watch"
+    },
+    {
+      "authors": [
+        "Ken MacLeod"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2003"
+      },
+      "title": "Dark Light"
+    },
+    {
+      "authors": [
+        "J. Neil Schulman"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2003"
+      },
+      "title": "Escape from Heaven"
+    },
+    {
+      "authors": [
+        "F. Paul Wilson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2003"
+      },
+      "title": "The Haunted Air"
+    },
+    {
+      "authors": [
+        "Greg Egan"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2003"
+      },
+      "title": "Schild's Ladder"
+    },
+    {
+      "authors": [
+        "F. Paul Wilson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2004"
+      },
+      "title": "Sims"
+    },
+    {
+      "authors": [
+        "J. K. Rowling"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2004"
+      },
+      "title": "Harry Potter and the Order of the Phoenix"
+    },
+    {
+      "authors": [
+        "Terry Goodkind"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2004"
+      },
+      "title": "Naked Empire"
+    },
+    {
+      "authors": [
+        "Paul Levinson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2004"
+      },
+      "title": "The Pixel Eye"
+    },
+    {
+      "authors": [
+        "Chris Moriarty"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2004"
+      },
+      "title": "Spin State"
+    },
+    {
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2005"
+      },
+      "title": "The System of the World"
+    },
+    {
+      "authors": [
+        "Brad Linaweaver & Kent J. Hastings"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2005"
+      },
+      "title": "Anarquia"
+    },
+    {
+      "authors": [
+        "Elizabeth Moon"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2005"
+      },
+      "title": "Marque and Reprisal"
+    },
+    {
+      "authors": [
+        "Ken MacLeod"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2005"
+      },
+      "title": "Newton's Wake"
+    },
+    {
+      "authors": [
+        "Michael Crichton"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2005"
+      },
+      "title": "State of Fear"
+    },
+    {
+      "authors": [
+        "Ken MacLeod"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2006"
+      },
+      "title": "Learning the World"
+    },
+    {
+      "authors": [
+        "Walter Mosley"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2006"
+      },
+      "title": "47"
+    },
+    {
+      "authors": [
+        "Vin Suprynowicz"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2006"
+      },
+      "title": "The Black Arrow"
+    },
+    {
+      "authors": [
+        "Terry Goodkind"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2006"
+      },
+      "title": "Chainfire"
+    },
+    {
+      "authors": [
+        "Charles Stross"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2006"
+      },
+      "title": "The Hidden Family"
+    },
+    {
+      "authors": [
+        "Claire Wolfe & Aaron Zelman"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2006"
+      },
+      "title": "RebelFire: Out of the Gray Zone"
+    },
+    {
+      "authors": [
+        "Charles Stross"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2007"
+      },
+      "title": "Glasshouse"
+    },
+    {
+      "authors": [
+        "Orson Scott Card"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2007"
+      },
+      "title": "Empire"
+    },
+    {
+      "authors": [
+        "John Scalzi"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2007"
+      },
+      "title": "The Ghost Brigades"
+    },
+    {
+      "authors": [
+        "F. Paul Wilson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2007"
+      },
+      "title": "Harbingers"
+    },
+    {
+      "authors": [
+        "Vernor Vinge"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2007"
+      },
+      "title": "Rainbows End"
+    },
+    {
+      "authors": [
+        "Harry Turtledove"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2008"
+      },
+      "title": "The Gladiator"
+    },
+    {
+      "authors": [
+        "Jo Walton"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2008"
+      },
+      "title": "Ha'Penny"
+    },
+    {
+      "authors": [
+        "Ken MacLeod"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2008"
+      },
+      "title": "The Execution Channel"
+    },
+    {
+      "authors": [
+        "Larry Niven & Edward M. Lerner"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2008"
+      },
+      "title": "Fleet of Worlds"
+    },
+    {
+      "authors": [
+        "Tobias S. Buckell"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2008"
+      },
+      "title": "Ragamuffin"
+    },
+    {
+      "authors": [
+        "Cory Doctorow"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2009"
+      },
+      "title": "Little Brother"
+    },
+    {
+      "authors": [
+        "Jo Walton"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2009"
+      },
+      "title": "Half a Crown"
+    },
+    {
+      "authors": [
+        "Michael Flynn"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2009"
+      },
+      "title": "The January Dancer"
+    },
+    {
+      "authors": [
+        "Iain M. Banks"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2009"
+      },
+      "title": "Matter"
+    },
+    {
+      "authors": [
+        "Harry Turtledove"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2009"
+      },
+      "title": "Opening Atlantis"
+    },
+    {
+      "authors": [
+        "Charles Stross"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2009"
+      },
+      "title": "Saturn's Children"
+    },
+    {
+      "authors": [
+        "Dani Kollin & Eytan Kollin"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2010"
+      },
+      "title": "The Unincorporated Man"
+    },
+    {
+      "authors": [
+        "Orson Scott Card"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2010"
+      },
+      "title": "Hidden Empire"
+    },
+    {
+      "authors": [
+        "Harry Turtledove"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2010"
+      },
+      "title": "Liberating Atlantis"
+    },
+    {
+      "authors": [
+        "Cory Doctorow"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2010"
+      },
+      "title": "Makers"
+    },
+    {
+      "authors": [
+        "Harry Turtledove"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2010"
+      },
+      "title": "The United States of Atlantis"
+    },
+    {
+      "authors": [
+        "Sarah A. Hoyt"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2011"
+      },
+      "title": "Darkship Thieves"
+    },
+    {
+      "authors": [
+        "L. Neil Smith"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2011"
+      },
+      "title": "Ceres"
+    },
+    {
+      "authors": [
+        "Cory Doctorow"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2011"
+      },
+      "title": "For the Win"
+    },
+    {
+      "authors": [
+        "Kevin MacArdry"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2011"
+      },
+      "title": "The Last Trumpet Project"
+    },
+    {
+      "authors": [
+        "John Ringo"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2011"
+      },
+      "title": "Live Free or Die"
+    },
+    {
+      "authors": [
+        "Delia Sherman"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2012"
+      },
+      "title": "The Freedom Maze"
+    },
+    {
+      "authors": [
+        "Ernest Cline"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2012"
+      },
+      "title": "Ready Player One"
+    },
+    {
+      "authors": [
+        "Vernor Vinge"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2012"
+      },
+      "title": "The Children of the Sky"
+    },
+    {
+      "authors": [
+        "Thomas L. James & Carl C. Carlsson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2012"
+      },
+      "title": "In the Shadow of Ares"
+    },
+    {
+      "authors": [
+        "Ken MacLeod"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2012"
+      },
+      "title": "The Restoration Game"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2012"
+      },
+      "title": "Snuff"
+    },
+    {
+      "authors": [
+        "Cory Doctorow"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2013"
+      },
+      "title": "Pirate Cinema"
+    },
+    {
+      "authors": [
+        "Tobias S. Buckell"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2013"
+      },
+      "title": "Arctic Rising"
+    },
+    {
+      "authors": [
+        "Sarah A. Hoyt"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2013"
+      },
+      "title": "Darkship Renegades"
+    },
+    {
+      "authors": [
+        "Daniel Suarez"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2013"
+      },
+      "title": "Kill Decision"
+    },
+    {
+      "authors": [
+        "Dani Kollin & Eytan Kollin"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2013"
+      },
+      "title": "The Unincorporated Future"
+    },
+    {
+      "authors": [
+        "Cory Doctorow"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2014"
+      },
+      "title": "Homeland"
+    },
+    {
+      "authors": [
+        "Ramez Naam"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2014"
+      },
+      "title": "Nexus"
+    },
+    {
+      "authors": [
+        "Marcus Sakey"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2014"
+      },
+      "title": "Brilliance"
+    },
+    {
+      "authors": [
+        "Ramez Naam"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2014"
+      },
+      "title": "Crux"
+    },
+    {
+      "authors": [
+        "Sarah A. Hoyt"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2014"
+      },
+      "title": "A Few Good Men"
+    },
+    {
+      "authors": [
+        "Daniel Suarez"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2015"
+      },
+      "title": "Influx"
+    },
+    {
+      "authors": [
+        "Marcus Sakey"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2015"
+      },
+      "title": "A Better World"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2015"
+      },
+      "title": "Raising Steam"
+    },
+    {
+      "authors": [
+        "Cixin Liu"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2015"
+      },
+      "title": "The Three-Body Problem"
+    },
+    {
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2016"
+      },
+      "title": "Seveneves"
+    },
+    {
+      "authors": [
+        "Ramez Naam"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2016"
+      },
+      "title": "Apex"
+    },
+    {
+      "authors": [
+        "Gene Wolfe"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2016"
+      },
+      "title": "A Borrowed Man"
+    },
+    {
+      "authors": [
+        "Pierce Brown"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2016"
+      },
+      "title": "Golden Son"
+    },
+    {
+      "authors": [
+        "Jo Walton"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2016"
+      },
+      "title": "The Just City"
+    },
+    {
+      "authors": [
+        "Johanna Sinisalo"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2017"
+      },
+      "title": "The Core of the Sun"
+    },
+    {
+      "authors": [
+        "L. Neil Smith"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2017"
+      },
+      "title": "Blade of p'Na"
+    },
+    {
+      "authors": [
+        "Ken MacLeod"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2017"
+      },
+      "title": "The Corporation Wars: Dissidence"
+    },
+    {
+      "authors": [
+        "Ken MacLeod"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2017"
+      },
+      "title": "The Corporation Wars: Insurgence"
+    },
+    {
+      "authors": [
+        "Lionel Shriver"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2017"
+      },
+      "title": "The Mandibles: A Family, 2029-2047"
+    },
+    {
+      "authors": [
+        "Travis J I Corcoran"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2018"
+      },
+      "title": "The Powers of the Earth"
+    },
+    {
+      "authors": [
+        "Andy Weir"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2018"
+      },
+      "title": "Artemis"
+    },
+    {
+      "authors": [
+        "Ken MacLeod"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2018"
+      },
+      "title": "The Corporation Wars: Emergence"
+    },
+    {
+      "authors": [
+        "Sarah A. Hoyt"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2018"
+      },
+      "title": "Darkship Revenge"
+    },
+    {
+      "authors": [
+        "Doug Casey & John Hunt"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2018"
+      },
+      "title": "Drug Lord: High Ground"
+    },
+    {
+      "authors": [
+        "Karl K. Gallagher"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2018"
+      },
+      "title": "Torchship, Torchship Pilot, Torchship Captain"
+    },
+    {
+      "authors": [
+        "Travis Corcoran"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2019"
+      },
+      "title": "Causes of Separation"
+    },
+    {
+      "authors": [
+        "J. Neil Schulman"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2019"
+      },
+      "title": "The Fractal Man"
+    },
+    {
+      "authors": [
+        "Helen Dale"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2019"
+      },
+      "title": "Kingdom of the Wicked"
+    },
+    {
+      "authors": [
+        "Martha Wells"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2019"
+      },
+      "title": "The Murderbot Diaries"
+    },
+    {
+      "authors": [
+        "Malka Older"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2019"
+      },
+      "title": "State Tectonics"
+    },
+    {
+      "authors": [
+        "C. J. Cherryh & Jane S. Fancher"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2020"
+      },
+      "title": "Alliance Rising"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2020"
+      },
+      "title": "Luna: Moon Rising"
+    },
+    {
+      "authors": [
+        "Marc Stiegler"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2020"
+      },
+      "title": "Ode to Defiance"
+    },
+    {
+      "authors": [
+        "Patrick Edwards"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2020"
+      },
+      "title": "Ruin's Wake"
+    },
+    {
+      "authors": [
+        "Margaret Atwood"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2020"
+      },
+      "title": "The Testaments"
+    },
+    {
+      "authors": [
+        "Barry B. Longyear"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2021"
+      },
+      "title": "The War Whisperer, Book 5: The Hook"
+    },
+    {
+      "authors": [
+        "Marc Stiegler"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2021"
+      },
+      "title": "Braintrust: Requiem"
+    },
+    {
+      "authors": [
+        "Dennis E. Taylor"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2021"
+      },
+      "title": "Heaven's River"
+    },
+    {
+      "authors": [
+        "Karl K. Gallagher"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2021"
+      },
+      "title": "Storm Between the Stars"
+    },
+    {
+      "authors": [
+        "Mackey Chandler"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2021"
+      },
+      "title": "Who Can Own the Stars?"
+    },
+    {
+      "authors": [
+        "Wil McCarthy"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2022"
+      },
+      "title": "Rich Man's Sky"
+    },
+    {
+      "authors": [
+        "Karl K. Gallagher"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2022"
+      },
+      "title": "Between Home and Ruin"
+    },
+    {
+      "authors": [
+        "Kazuo Ishiguro"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2022"
+      },
+      "title": "Klara and the Sun"
+    },
+    {
+      "authors": [
+        "Karl K. Gallagher"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2022"
+      },
+      "title": "Seize What's Held Dear"
+    },
+    {
+      "authors": [
+        "Lionel Shriver"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2022"
+      },
+      "title": "Should We Stay or Should We Go"
+    },
+    {
+      "authors": [
+        "Dave Freer"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2023"
+      },
+      "title": "Cloud-Castles"
+    },
+    {
+      "authors": [
+        "Gordon Hanka"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2023"
+      },
+      "title": "A Beast Cannot Feign"
+    },
+    {
+      "authors": [
+        "Karl K. Gallagher"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2023"
+      },
+      "title": "Captain Trader Helmsman Spy"
+    },
+    {
+      "authors": [
+        "John Van Stry"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2023"
+      },
+      "title": "Summer's End"
+    },
+    {
+      "authors": [
+        "C. J. Carey"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2023"
+      },
+      "title": "Widowland"
+    },
+    {
+      "authors": [
+        "Daniel Suarez"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2024"
+      },
+      "title": "Critical Mass"
+    },
+    {
+      "authors": [
+        "Dr. Insensitive Jerk"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2024"
+      },
+      "title": "God's Girlfriend"
+    },
+    {
+      "authors": [
+        "Howard Andrew Jones"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2024"
+      },
+      "title": "Lord of a Shattered Land"
+    },
+    {
+      "authors": [
+        "Karl K. Gallagher"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2024"
+      },
+      "title": "Swim Among the People"
+    },
+    {
+      "authors": [
+        "Devon Eriksen"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2024"
+      },
+      "title": "Theft of Fire"
+    },
+    {
+      "authors": [
+        "Michael Flynn"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2025"
+      },
+      "title": "In the Belly of the Whale"
+    },
+    {
+      "authors": [
+        "C. J. Cherryh & Jane S. Fancher"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2025"
+      },
+      "title": "Alliance Unbound"
+    },
+    {
+      "authors": [
+        "Wil McCarthy"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2025"
+      },
+      "title": "Beggar's Sky"
+    },
+    {
+      "authors": [
+        "Danny King"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2025"
+      },
+      "title": "Cancelled: The Shape of Things to Come"
+    },
+    {
+      "authors": [
+        "Lionel Shriver"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2025"
+      },
+      "title": "Mania"
+    },
+    {
+      "authors": [
+        "J. Kenton Pierce"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2026",
+      "category": "Novel",
+      "position": "2026.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2026"
+      },
+      "title": "A Kiss for Damocles"
+    },
+    {
+      "authors": [
+        "Sarah A. Hoyt"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2026",
+      "category": "Novel",
+      "position": "2026.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2026"
+      },
+      "title": "No Man's Land"
+    },
+    {
+      "authors": [
+        "Harry Turtledove"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2026",
+      "category": "Novel",
+      "position": "2026.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2026"
+      },
+      "title": "Powerless"
+    },
+    {
+      "authors": [
+        "Dave Freer"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2026",
+      "category": "Novel",
+      "position": "2026.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2026"
+      },
+      "title": "Storm-Dragon"
+    },
+    {
+      "authors": [
+        "Karl K. Gallagher"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2026",
+      "category": "Novel",
+      "position": "2026.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2026"
+      },
+      "title": "War By Other Means"
+    }
+  ],
+  "fetched_at": "2026-07-09T00:46:38Z",
+  "list_id": "prometheus_novel",
+  "list_name": "Prometheus - Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "prometheus_novel",
+  "schema_version": 2,
+  "source": {
+    "name": "Prometheus - Novel",
+    "source_id": "prometheus_novel",
+    "url": "https://www.sfadb.com/Prometheus_Awards"
+  }
+}

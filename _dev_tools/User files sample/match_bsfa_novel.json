@@ -2,33 +2,12 @@
   "list_id": "bsfa_novel",
   "matches": [
     {
-      "entry_key": "the stone canal|ken macleod",
-      "imported_author": "Ken MacLeod",
-      "imported_title": "The Stone Canal",
-      "matched_at": "2026-05-24T18:18:33Z",
-      "matched_authors": [
-        "Ken MacLeod"
-      ],
-      "matched_book_id": 14288,
-      "matched_book_ids": [
-        14288
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "Ken MacLeod"
-          ],
-          "matched_book_id": 14288,
-          "matched_title": "Fractions"
-        }
-      ],
-      "matched_title": "Fractions"
-    },
-    {
       "entry_key": "the shadow of the torturer|gene wolfe",
-      "imported_author": "Gene Wolfe",
+      "imported_author": [
+        "Gene Wolfe"
+      ],
       "imported_title": "The Shadow of the Torturer",
-      "matched_at": "2026-05-24T18:18:33Z",
+      "matched_at": "2026-07-08T21:17:37Z",
       "matched_authors": [
         "Gene Wolfe"
       ],
@@ -48,64 +27,12 @@
       "matched_title": "Shadow & Claw (Books 1-2)"
     },
     {
-      "entry_key": "the ragged astronauts|bob shaw",
-      "imported_author": "Bob Shaw",
-      "imported_title": "The Ragged Astronauts",
-      "matched_at": "2026-05-24T18:18:33Z",
-      "matched_authors": [
-        "Bob Shaw"
-      ],
-      "matched_book_id": 17341,
-      "matched_book_ids": [
-        17341,
-        39000
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "Bob Shaw"
-          ],
-          "matched_book_id": 17341,
-          "matched_title": "Bob Shaw SF Gateway Omnibus: Orbitsville, the Ragged Astronauts, a Wreath of Stars"
-        },
-        {
-          "matched_authors": [
-            "Bob Shaw"
-          ],
-          "matched_book_id": 39000,
-          "matched_title": "The Ragged Astronauts: Land and Overland Book 1"
-        }
-      ],
-      "matched_title": "The Ragged Astronauts: Land and Overland Book 1"
-    },
-    {
-      "entry_key": "cyteen|c j cherryh",
-      "imported_author": "C. J. Cherryh",
-      "imported_title": "Cyteen",
-      "matched_at": "2026-05-24T18:18:33Z",
-      "matched_authors": [
-        "C. J. Cherryh"
-      ],
-      "matched_book_id": 18143,
-      "matched_book_ids": [
-        18143
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "C. J. Cherryh"
-          ],
-          "matched_book_id": 18143,
-          "matched_title": "Cyteen (Books 1-3)"
-        }
-      ],
-      "matched_title": "Cyteen (Books 1-3)"
-    },
-    {
       "entry_key": "the sword of the lictor|gene wolfe",
-      "imported_author": "Gene Wolfe",
+      "imported_author": [
+        "Gene Wolfe"
+      ],
       "imported_title": "The Sword of the Lictor",
-      "matched_at": "2026-05-24T18:18:33Z",
+      "matched_at": "2026-07-08T21:18:11Z",
       "matched_authors": [
         "Gene Wolfe"
       ],
@@ -125,56 +52,37 @@
       "matched_title": "Sword & Citadel (Books 3-4)"
     },
     {
-      "entry_key": "black man|richard morgan",
-      "imported_author": "Richard Morgan",
-      "imported_title": "Black Man",
-      "matched_at": "2026-05-24T18:18:33Z",
-      "matched_authors": [
-        "Richard K. Morgan"
+      "entry_key": "the ragged astronauts|bob shaw",
+      "imported_author": [
+        "Bob Shaw"
       ],
-      "matched_book_id": 36813,
+      "imported_title": "The Ragged Astronauts",
+      "matched_at": "2026-07-08T21:18:55Z",
+      "matched_authors": [
+        "Bob Shaw"
+      ],
+      "matched_book_id": 39000,
       "matched_book_ids": [
-        36813
+        39000
       ],
       "matched_books": [
         {
           "matched_authors": [
-            "Richard K. Morgan"
+            "Bob Shaw"
           ],
-          "matched_book_id": 36813,
-          "matched_title": "Thirteen"
+          "matched_book_id": 39000,
+          "matched_title": "The Ragged Astronauts: Land and Overland Book 1"
         }
       ],
-      "matched_title": "Thirteen"
-    },
-    {
-      "entry_key": "the cassini division|ken macleod",
-      "imported_author": "Ken MacLeod",
-      "imported_title": "The Cassini Division",
-      "matched_at": "2026-05-24T18:18:33Z",
-      "matched_authors": [
-        "Ken MacLeod"
-      ],
-      "matched_book_id": 38601,
-      "matched_book_ids": [
-        38601
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "Ken MacLeod"
-          ],
-          "matched_book_id": 38601,
-          "matched_title": "Divisions"
-        }
-      ],
-      "matched_title": "Divisions"
+      "matched_title": "The Ragged Astronauts: Land and Overland Book 1"
     },
     {
       "entry_key": "schismatrix|bruce sterling",
-      "imported_author": "Bruce Sterling",
+      "imported_author": [
+        "Bruce Sterling"
+      ],
       "imported_title": "Schismatrix",
-      "matched_at": "2026-05-24T18:18:33Z",
+      "matched_at": "2026-07-08T21:19:55Z",
       "matched_authors": [
         "Bruce Sterling"
       ],
@@ -194,102 +102,37 @@
       "matched_title": "Schismatrix Plus"
     },
     {
-      "entry_key": "empty space|m john harrison",
-      "imported_author": "M. John Harrison",
-      "imported_title": "Empty Space",
-      "matched_at": "2026-05-24T18:18:33Z",
-      "matched_authors": [
-        "M. John Harrison"
+      "entry_key": "gr inne|keith roberts",
+      "imported_author": [
+        "Keith Roberts"
       ],
-      "matched_book_id": 38926,
+      "imported_title": "Gr\u00e1inne",
+      "matched_at": "2026-07-08T21:20:23Z",
+      "matched_authors": [
+        "Keith Roberts"
+      ],
+      "matched_book_id": 38999,
       "matched_book_ids": [
-        38926
+        38999
       ],
       "matched_books": [
         {
           "matched_authors": [
-            "M. John Harrison"
+            "Keith Roberts"
           ],
-          "matched_book_id": 38926,
-          "matched_title": "Empty Space: A Haunting"
+          "matched_book_id": 38999,
+          "matched_title": "Grainne"
         }
       ],
-      "matched_title": "Empty Space: A Haunting"
-    },
-    {
-      "entry_key": "felaheen the third arabesk|jon courtenay grimwood",
-      "imported_author": "Jon Courtenay Grimwood",
-      "imported_title": "Felaheen: The Third Arabesk",
-      "matched_at": "2026-05-24T18:18:33Z",
-      "matched_authors": [
-        "Jon Courtenay Grimwood"
-      ],
-      "matched_book_id": 38939,
-      "matched_book_ids": [
-        38939
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "Jon Courtenay Grimwood"
-          ],
-          "matched_book_id": 38939,
-          "matched_title": "Arabesk"
-        }
-      ],
-      "matched_title": "Arabesk"
-    },
-    {
-      "entry_key": "lust|geoff ryman",
-      "imported_author": "Geoff Ryman",
-      "imported_title": "Lust",
-      "matched_at": "2026-05-24T18:18:33Z",
-      "matched_authors": [
-        "Geoff Ryman"
-      ],
-      "matched_book_id": 38958,
-      "matched_book_ids": [
-        38958
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "Geoff Ryman"
-          ],
-          "matched_book_id": 38958,
-          "matched_title": "Lust: Or No Harm Done"
-        }
-      ],
-      "matched_title": "Lust: Or No Harm Done"
-    },
-    {
-      "entry_key": "blood|michael moorcock",
-      "imported_author": "Michael Moorcock",
-      "imported_title": "Blood",
-      "matched_at": "2026-05-24T18:18:33Z",
-      "matched_authors": [
-        "Michael Moorcock"
-      ],
-      "matched_book_id": 38977,
-      "matched_book_ids": [
-        38977
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "Michael Moorcock"
-          ],
-          "matched_book_id": 38977,
-          "matched_title": "Blood: A Southern Fantasy"
-        }
-      ],
-      "matched_title": "Blood: A Southern Fantasy"
+      "matched_title": "Grainne"
     },
     {
       "entry_key": "hearts hands and voices|ian mcdonald",
-      "imported_author": "Ian McDonald",
+      "imported_author": [
+        "Ian McDonald"
+      ],
       "imported_title": "Hearts, Hands and Voices",
-      "matched_at": "2026-05-24T18:18:33Z",
+      "matched_at": "2026-07-08T21:26:27Z",
       "matched_authors": [
         "Ian McDonald"
       ],
@@ -309,29 +152,259 @@
       "matched_title": "The Broken Land"
     },
     {
-      "entry_key": "gr inne|keith roberts",
-      "imported_author": "Keith Roberts",
-      "imported_title": "Gr\u00e1inne",
-      "matched_at": "2026-05-24T18:18:33Z",
-      "matched_authors": [
-        "Keith Roberts"
+      "entry_key": "blood|michael moorcock",
+      "imported_author": [
+        "Michael Moorcock"
       ],
-      "matched_book_id": 38999,
+      "imported_title": "Blood",
+      "matched_at": "2026-07-08T21:42:11Z",
+      "matched_authors": [
+        "Michael Moorcock"
+      ],
+      "matched_book_id": 38981,
       "matched_book_ids": [
-        38999
+        38981
       ],
       "matched_books": [
         {
           "matched_authors": [
-            "Keith Roberts"
+            "Michael Moorcock"
           ],
-          "matched_book_id": 38999,
-          "matched_title": "Grainne"
+          "matched_book_id": 38981,
+          "matched_title": "The War Amongst the Angels"
         }
       ],
-      "matched_title": "Grainne"
+      "matched_title": "The War Amongst the Angels"
+    },
+    {
+      "entry_key": "the stone canal|ken macleod",
+      "imported_author": [
+        "Ken MacLeod"
+      ],
+      "imported_title": "The Stone Canal",
+      "matched_at": "2026-07-08T21:43:30Z",
+      "matched_authors": [
+        "Ken MacLeod"
+      ],
+      "matched_book_id": 14288,
+      "matched_book_ids": [
+        14288
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Ken MacLeod"
+          ],
+          "matched_book_id": 14288,
+          "matched_title": "Fractions"
+        }
+      ],
+      "matched_title": "Fractions"
+    },
+    {
+      "entry_key": "the cassini division|ken macleod",
+      "imported_author": [
+        "Ken MacLeod"
+      ],
+      "imported_title": "The Cassini Division",
+      "matched_at": "2026-07-08T21:45:38Z",
+      "matched_authors": [
+        "Ken MacLeod"
+      ],
+      "matched_book_id": 38601,
+      "matched_book_ids": [
+        38601
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Ken MacLeod"
+          ],
+          "matched_book_id": 38601,
+          "matched_title": "Divisions"
+        }
+      ],
+      "matched_title": "Divisions"
+    },
+    {
+      "entry_key": "paradox|john meaney",
+      "imported_author": [
+        "John Meaney"
+      ],
+      "imported_title": "Paradox",
+      "matched_at": "2026-07-08T21:55:09Z",
+      "matched_authors": [
+        "John Meaney"
+      ],
+      "matched_book_id": 38960,
+      "matched_book_ids": [
+        38960
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "John Meaney"
+          ],
+          "matched_book_id": 38960,
+          "matched_title": "Paradox: Book I of the Nulapeiron Sequence"
+        }
+      ],
+      "matched_title": "Paradox: Book I of the Nulapeiron Sequence"
+    },
+    {
+      "entry_key": "lust|geoff ryman",
+      "imported_author": [
+        "Geoff Ryman"
+      ],
+      "imported_title": "Lust",
+      "matched_at": "2026-07-08T21:59:43Z",
+      "matched_authors": [
+        "Geoff Ryman"
+      ],
+      "matched_book_id": 38958,
+      "matched_book_ids": [
+        38958
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Geoff Ryman"
+          ],
+          "matched_book_id": 38958,
+          "matched_title": "Lust: Or No Harm Done"
+        }
+      ],
+      "matched_title": "Lust: Or No Harm Done"
+    },
+    {
+      "entry_key": "pashazade the first arabesk|jon courtenay grimwood",
+      "imported_author": [
+        "Jon Courtenay Grimwood"
+      ],
+      "imported_title": "Pashazade: The First Arabesk",
+      "matched_at": "2026-07-08T22:00:19Z",
+      "matched_authors": [
+        "Jon Courtenay Grimwood"
+      ],
+      "matched_book_id": 38939,
+      "matched_book_ids": [
+        38939
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Jon Courtenay Grimwood"
+          ],
+          "matched_book_id": 38939,
+          "matched_title": "Arabesk"
+        }
+      ],
+      "matched_title": "Arabesk"
+    },
+    {
+      "entry_key": "effendi the second arabesk|jon courtenay grimwood",
+      "ignored": true,
+      "imported_author": [
+        "Jon Courtenay Grimwood"
+      ],
+      "imported_title": "Effendi: The Second Arabesk",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-08T22:01:27Z"
+    },
+    {
+      "entry_key": "felaheen the third arabesk|jon courtenay grimwood",
+      "ignored": true,
+      "imported_author": [
+        "Jon Courtenay Grimwood"
+      ],
+      "imported_title": "Felaheen: The Third Arabesk",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-08T22:01:27Z"
+    },
+    {
+      "entry_key": "black man|richard morgan",
+      "imported_author": [
+        "Richard Morgan"
+      ],
+      "imported_title": "Black Man",
+      "matched_at": "2026-07-08T22:22:47Z",
+      "matched_authors": [
+        "Richard K. Morgan"
+      ],
+      "matched_book_id": 36813,
+      "matched_book_ids": [
+        36813
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Richard K. Morgan"
+          ],
+          "matched_book_id": 36813,
+          "matched_title": "Thirteen"
+        }
+      ],
+      "matched_title": "Thirteen"
+    },
+    {
+      "entry_key": "empty space|m john harrison",
+      "imported_author": [
+        "M. John Harrison"
+      ],
+      "imported_title": "Empty Space",
+      "matched_at": "2026-07-08T22:25:07Z",
+      "matched_authors": [
+        "M. John Harrison"
+      ],
+      "matched_book_id": 38926,
+      "matched_book_ids": [
+        38926
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "M. John Harrison"
+          ],
+          "matched_book_id": 38926,
+          "matched_title": "Empty Space: A Haunting"
+        }
+      ],
+      "matched_title": "Empty Space: A Haunting"
+    },
+    {
+      "entry_key": "luna new moon|ian mcdonald",
+      "imported_author": [
+        "Ian McDonald"
+      ],
+      "imported_title": "Luna: New Moon",
+      "matched_at": "2026-07-08T22:27:22Z",
+      "matched_authors": [
+        "Ian McDonald"
+      ],
+      "matched_book_id": 18543,
+      "matched_book_ids": [
+        18543
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Ian McDonald"
+          ],
+          "matched_book_id": 18543,
+          "matched_title": "New Moon"
+        }
+      ],
+      "matched_title": "New Moon"
     }
   ],
-  "saved_at": "2026-05-24T18:18:33Z",
-  "schema_version": 1
+  "saved_at": "2026-07-08T22:27:22Z",
+  "schema_version": 2
 }

@@ -19,6 +19,8 @@ import re
 from bs4 import BeautifulSoup
 
 try:
+  from calibre_plugins.list_switchboard.parser.base import (
+    entry_source_object, imported_entry)
   from calibre_plugins.list_switchboard.parser.sfadb_base import (
     SFADBParser,
     normalize_heading, normalize_line,
@@ -26,6 +28,7 @@ try:
     split_title_author as award_split_title_author, text_lines,
   )
 except ImportError:
+  from .base import entry_source_object, imported_entry
   from .sfadb_base import (
     SFADBParser,
     normalize_heading, normalize_line,
@@ -144,16 +147,15 @@ class PhilipKDickParser(SFADBParser):
       else:
         suffix_index += 1
         position = f'{year}.{suffix_index:02d}'
-      entries.append({
-        'position': position,
-        'title': row['title'],
-        'author': row['author'],
-        'source_url': source_url,
-        'award_year': str(year),
-        'award': self.AWARD_NAME,
-        'category': CATEGORY_NAME,
-        'result': result,
-      })
+      entries.append(imported_entry(
+        position,
+        row['title'],
+        row['author'],
+        source=entry_source_object(source_url),
+        award_year=str(year),
+        award=self.AWARD_NAME,
+        category=CATEGORY_NAME,
+        result=result))
     return entries
 
   def parse_item(self, text):

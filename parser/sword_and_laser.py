@@ -24,14 +24,20 @@ try:
     CATEGORY_FANTASY,
     CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,
     CATEGORY_SCIENCE_FICTION,
+    entry_source_object,
+    imported_entry,
     ListParserBase,
+    parsed_source,
   )
 except ImportError:
   from .base import (
     CATEGORY_FANTASY,
     CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,
     CATEGORY_SCIENCE_FICTION,
+    entry_source_object,
+    imported_entry,
     ListParserBase,
+    parsed_source,
   )
 
 from .fandom import fandom_api_html, fandom_wikitext_table_to_html, looks_like_wikitext
@@ -72,14 +78,14 @@ class SwordAndLaserParser(ListParserBase):
       entries, unavailable_march_pages, march_summary = self.add_march_entries(
         recipe, entries, fetch_url, sleep, fetch_error, log, progress,
         linked_entries=incremental_pages if incremental_update else None)
-      if fetch_url is not None and entries and not any(entry.get('source_url') for entry in entries):
+      if fetch_url is not None and entries and not any(entry_source_url(entry) for entry in entries):
         notes.append(
           'March Madness details were not fetched because the imported table did not include linked page URLs.')
       elif march_summary is not None:
         notes.append(march_madness_summary_note(march_summary))
     parsed = {
       'name': recipe.NAME,
-      'url': recipe.URL,
+      'source': parsed_source(recipe.NAME, recipe.URL, getattr(recipe, 'source_id', '')),
       'entries': sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
     }
     if march_summary is not None:
@@ -118,6 +124,15 @@ def parse_sword_and_laser_book_list(
     progress=progress)
 
 
+def entry_author_text(entry):
+  return ' '.join(str(author) for author in (entry.get('authors') or []))
+
+
+def entry_source_url(entry):
+  source = entry.get('source') if isinstance(entry.get('source'), dict) else {}
+  return source.get('url', '')
+
+
 def parse_sword_and_laser_main_entries(recipe, soup):
   """Parse the official book-list table, with flattened text as a fallback."""
   entries = []
@@ -151,20 +166,20 @@ def merge_incremental_sword_and_laser_entries(main_entries, cached_entries, cach
   treating raw page content as persistent data.
   """
   cached_urls = {
-    entry.get('source_url') for entry in cached_entries
-    if entry.get('source_url')
+    entry_source_url(entry) for entry in cached_entries
+    if entry_source_url(entry)
   }
   pending_urls = set(
     ((cache or {}).get('incremental_state') or {}).get('pending_page_urls') or ())
   pages_to_fetch = [
     entry for entry in main_entries
-    if entry.get('source_url')
-    and (entry.get('source_url') not in cached_urls or entry.get('source_url') in pending_urls)
+    if entry_source_url(entry)
+    and (entry_source_url(entry) not in cached_urls or entry_source_url(entry) in pending_urls)
   ]
   cached_by_position = {
     str(entry.get('position', '')): entry
     for entry in cached_entries
-    if entry.get('source_url')
+    if entry_source_url(entry)
   }
   merged = list(cached_entries)
   known_main_positions = set(cached_by_position)
@@ -217,14 +232,11 @@ def sword_and_laser_entry(values, schema, url, cells=None):
     link = cells[title_index].find('a', href=True)
     if link is not None:
       source_url = urljoin(url, link['href'])
-  result = {
-    'position': position,
-    'title': title,
-    'author': author,
-  }
-  if source_url:
-    result['source_url'] = source_url
-  return result
+  return imported_entry(
+    position,
+    title,
+    author,
+    source=entry_source_object(source_url))
 
 
 def sword_and_laser_position(seq):
@@ -319,7 +331,7 @@ def add_sword_and_laser_march_entries(
   linked_entries = list(linked_entries) if linked_entries is not None else list(entries)
   summary = {
     'main_entries': len(entries),
-    'linked_entries': len([entry for entry in linked_entries if entry.get('source_url')]),
+    'linked_entries': len([entry for entry in linked_entries if entry_source_url(entry)]),
     'fetched_pages': 0,
     'failed_pages': 0,
     'pages_with_nominations': 0,
@@ -333,14 +345,14 @@ def add_sword_and_laser_march_entries(
     log_march(log, 'no-fetch-callback', summary)
     return entries, [], summary
   by_key = {
-    (normalize_match_title(entry.get('title', '')), normalize_match_title(entry.get('author', ''))): entry
+    (normalize_match_title(entry.get('title', '')), normalize_match_title(entry_author_text(entry))): entry
     for entry in entries
   }
   unavailable_pages = []
   delay = float(recipe.options.get('fetch_delay_seconds', 1.5))
   linked_index = 0
   for entry in linked_entries:
-    url = entry.get('source_url')
+    url = entry_source_url(entry)
     if not url:
       log_march(log, 'skip-no-link', {
         'title': entry.get('title', ''),
@@ -385,7 +397,7 @@ def add_sword_and_laser_march_entries(
     for nomination in nominations:
       key = (
         normalize_match_title(nomination.get('title', '')),
-        normalize_match_title(nomination.get('author', '')),
+        normalize_match_title(entry_author_text(nomination)),
       )
       if key not in by_key:
         by_key[key] = nomination
@@ -457,13 +469,12 @@ def parse_sword_and_laser_march_page(soup, official_entry):
   if rows:
     nominations = []
     for index, (votes, percent, title, author) in enumerate(rows, start=1):
-      nominations.append({
-        'position': f'{base + (index / 100.0):g}',
-        'title': title,
-        'author': author,
-        'votes': votes,
-        'percent': percent,
-      })
+      nominations.append(imported_entry(
+        f'{base + (index / 100.0):g}',
+        title,
+        author,
+        votes=votes,
+        percent=percent))
     return nominations
 
   text = soup.get_text('\n', strip=True)
@@ -490,16 +501,15 @@ def parse_sword_and_laser_march_page(soup, official_entry):
       if line.startswith(official_entry.get('title', '')):
         break
       title = line
-      author = official_entry.get('author', '')
+      author = entry_author_text(official_entry)
       if ' by ' in line:
         title, author = line.rsplit(' by ', 1)
-      nominations.append({
-        'position': f'{base + ((len(nominations) + 1) / 100.0):g}',
-        'title': title.strip(),
-        'author': author.strip(),
-        'votes': '0',
-        'percent': '0%',
-      })
+      nominations.append(imported_entry(
+        f'{base + ((len(nominations) + 1) / 100.0):g}',
+        title.strip(),
+        author.strip(),
+        votes='0',
+        percent='0%'))
     return nominations
 
   lines = [line.strip() for line in text.splitlines() if line.strip()]
@@ -510,13 +520,12 @@ def parse_sword_and_laser_march_page(soup, official_entry):
     if not parsed:
       continue
     votes, percent, title, author = parsed
-    nominations.append({
-      'position': f'{base + (index / 100.0):g}',
-      'title': title,
-      'author': author,
-      'votes': votes,
-      'percent': percent,
-    })
+    nominations.append(imported_entry(
+      f'{base + (index / 100.0):g}',
+      title,
+      author,
+      votes=votes,
+      percent=percent))
   return nominations
 
 

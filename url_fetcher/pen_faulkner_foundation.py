@@ -6,6 +6,7 @@ from .generic import (
   CATEGORY_REGIONAL_NATIONAL_AWARDS,
   UrlFetcherError,
   UrlFetcherGeneric,
+  parsed_source,
 )
 
 try:
@@ -55,7 +56,7 @@ class UrlFetcherPENFaulknerFoundationAward(UrlFetcherGeneric):
     parsed = self.parser().parse(pages, self.URL, self.NAME)
     if not parsed.get('entries'):
       raise UrlFetcherError('%s produced no entries' % self.NAME)
-    parsed.setdefault('source_url', self.URL)
+    parsed.setdefault('source', parsed_source(self.NAME, self.URL, self.source_id))
     parsed.setdefault('match_series', False)
     return parsed
 

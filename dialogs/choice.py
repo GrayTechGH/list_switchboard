@@ -6,7 +6,9 @@ from qt.core import QDialog, QDialogButtonBox, QLabel, QListWidget, QPushButton,
 
 class ChoiceDialog(QDialog):
 
-  def __init__(self, parent, title, intro, choices, button_text):
+  SKIPPED = 2
+
+  def __init__(self, parent, title, intro, choices, button_text, skip_button_text=None):
     QDialog.__init__(self, parent)
     self.setWindowTitle(title)
     self.choice = None
@@ -25,6 +27,10 @@ class ChoiceDialog(QDialog):
     buttons = QDialogButtonBox(QDialogButtonBox.Cancel, self)
     accept_button = QPushButton(button_text, self)
     buttons.addButton(accept_button, QDialogButtonBox.AcceptRole)
+    if skip_button_text:
+      skip_button = QPushButton(skip_button_text, self)
+      buttons.addButton(skip_button, QDialogButtonBox.ActionRole)
+      skip_button.clicked.connect(self.skip)
     buttons.accepted.connect(self.accept)
     buttons.rejected.connect(self.reject)
     layout.addWidget(buttons)
@@ -36,3 +42,6 @@ class ChoiceDialog(QDialog):
     self.choice = item.text()
     QDialog.accept(self)
 
+  def skip(self):
+    self.choice = None
+    self.done(self.SKIPPED)

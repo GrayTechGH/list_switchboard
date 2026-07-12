@@ -11,6 +11,7 @@ from .generic import (
   CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
   UrlFetcherError,
   UrlFetcherGeneric,
+  parsed_source,
 )
 
 try:
@@ -34,6 +35,7 @@ DEFAULT_JSON_URL = (
 class UrlFetcherGovernorGeneralAwards(UrlFetcherGeneric):
 
   URL = GOVERNOR_GENERAL_ARCHIVE_URL
+  MAX_RESPONSE_BYTES = 32 * 1024 * 1024
   FETCH_URLS = (GOVERNOR_GENERAL_ARCHIVE_URL,)
   order = 183
   options = {'match_series': False}
@@ -109,8 +111,7 @@ class UrlFetcherGovernorGeneralAwards(UrlFetcherGeneric):
           'Added %s Governor General supplement entries because official GGBooks JSON lacked %s.'
           % (len(supplement['entries']), self.SUPPLEMENT_YEAR))
     parsed['notes'] = notes
-    parsed['url'] = self.URL
-    parsed['source_url'] = json_url
+    parsed['source'] = parsed_source(self.NAME, json_url, self.source_id)
     parsed.setdefault('match_series', self.options.get('match_series', True))
     return parsed
 
@@ -177,7 +178,7 @@ class UrlFetcherGovernorGeneralAwards(UrlFetcherGeneric):
         entry.get('award_year'),
         entry.get('category', '').casefold(),
         entry.get('title', '').casefold(),
-        entry.get('author', '').casefold(),
+        tuple(str(author or '').casefold() for author in (entry.get('authors') or ())),
       )
       by_key[key] = entry
     return sorted(

@@ -22,10 +22,11 @@ from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 
 try:
-  from calibre_plugins.list_switchboard.parser.base import ListParserBase
+  from calibre_plugins.list_switchboard.parser.base import (
+    entry_source_object, imported_entry, ListParserBase, parsed_source)
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
 except ImportError:
-  from .base import ListParserBase
+  from .base import entry_source_object, imported_entry, ListParserBase, parsed_source
   from .generic import position_sort_key
 
 
@@ -112,7 +113,7 @@ class HugoAwardsCategoryParser(ListParserBase):
       _log(log, 'year-parsed', {'year': year, 'url': url, 'entries': len(year_entries)})
     return {
       'name': self.NAME,
-      'url': base_url,
+      'source': parsed_source(self.NAME, base_url),
       'entries': sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
       'notes': notes,
       'match_series': False,
@@ -234,16 +235,15 @@ def _parse_hugo_year_category_entries(
     else:
       position = str(year) if index == 0 else f'{year}.{index:02d}'
       result = 'winner' if index == 0 else 'nominee'
-    entries.append({
-      'position': position,
-      'title': parsed['title'],
-      'author': parsed['author'],
-      'source_url': source_url,
-      'award_year': str(year),
-      'award': award_name,
-      'category': category,
-      'result': result,
-    })
+    entries.append(imported_entry(
+      position,
+      parsed['title'],
+      parsed['author'],
+      source=entry_source_object(source_url),
+      award_year=str(year),
+      award=award_name,
+      category=category,
+      result=result))
   return entries
 
 
@@ -266,7 +266,7 @@ def _apply_sfadb_winner_fallback(entries, year, fetch_url, log, notes):
       if _same_hugo_title(winner_title, entry.get('title', '')):
         entry['result'] = 'winner'
         entry['position'] = str(year)
-        entry['source_url'] = sfadb_url
+        entry['source'] = entry_source_object(sfadb_url)
         _log_fallback(log, f'marked winner year={year} title={entry["title"]!r}')
         return
     _log_fallback(log, f'winner title did not match parsed official entries for {year}')
