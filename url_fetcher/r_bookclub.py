@@ -9,7 +9,7 @@ from .generic import CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS, UrlFetcherGeneric
 class UrlFetcherRBookclub(UrlFetcherGeneric):
 
   source_id = 'r_bookclub_previous_selections'
-  NAME = 'r/bookclub Previous Selections'
+  NAME = 'r/bookclub'
   URL = 'https://www.reddit.com/r/bookclub/wiki/previous/'
   OLD_REDDIT_URL = 'https://old.reddit.com/r/bookclub/wiki/previous/'
   WAYBACK_URL = (

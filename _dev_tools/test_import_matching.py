@@ -6,6 +6,7 @@ import sys
 import types
 import unittest
 from copy import deepcopy
+from datetime import date
 from pathlib import Path
 
 
@@ -1814,7 +1815,7 @@ Project Gutenberg Book of the Month: [The Call of the Wild](https://www.gutenber
     parsed = RBookclubParser().parse(
       json.dumps({'kind': 'wikipage', 'data': {'content_md': markdown}}),
       'https://www.reddit.com/r/bookclub/wiki/previous/',
-      'r/bookclub Previous Selections')
+      'r/bookclub')
 
     self.assertEqual([
       'Neverwhere (novel)', 'The Call of the Wild',
@@ -1983,6 +1984,457 @@ Modern: S. (aka The Ship of Theseus) by Doug Dorst
     self.assertEqual(
       'S. (aka The Ship of Theseus)', parsed['entries'][8]['title'])
     self.assertEqual([], parsed['notes'])
+
+  def test_r_bookclub_parser_cleans_continuation_and_bracketed_resource_credits(self):
+    from parser.r_bookclub import RBookclubParser
+
+    markdown = r'''# Previous Selections
+
+# 2012
+
+# March 2012
+
+Classic: Moby Dick by Herman Melville (continued to March)
+
+Modern: The Unbearable Lightness of Being by Milan Kundera - two [posts]
+
+Classic: Crime and Punishment by Fyodor Dostoevsky [posts] + [marginalia]
+
+Graphic Novel: Watchmen by Alan Moore, Dave Gibbons & John Higgins
+'''
+    parsed = RBookclubParser().parse(
+      json.dumps({'kind': 'wikipage', 'data': {'content_md': markdown}}),
+      'https://www.reddit.com/r/bookclub/wiki/previous/')
+
+    self.assertEqual([
+      ['Herman Melville'], ['Milan Kundera'], ['Fyodor Dostoevsky'],
+      ['Alan Moore', 'Dave Gibbons', 'John Higgins'],
+    ], [entry['authors'] for entry in parsed['entries']])
+    self.assertTrue(parsed['entries'][0]['continued'])
+    self.assertEqual([], parsed['notes'])
+
+  def test_big_library_read_remote_complete_and_packaged_fallback_are_replacements(self):
+    from calendar import month_name
+    from datetime import date
+    from parser.big_library_read import (
+      BIG_LIBRARY_READ_LAUNCH_SPECS,
+      BIG_LIBRARY_READ_WAYBACK_SPECS,
+      BigLibraryReadParser,
+      load_history_ledger,
+    )
+    from url_fetcher.big_library_read import UrlFetcherBigLibraryRead
+
+    rows = load_history_ledger()['collections']['big_library_read']
+
+    def date_label(row):
+      start = date.fromisoformat(row['start_date'])
+      end = date.fromisoformat(row['end_date'])
+      end_label = (
+        str(end.day) if start.month == end.month
+        else f'{month_name[end.month]} {end.day}')
+      return f'{month_name[start.month]} {start.day} - {end_label}, {start.year}'
+
+    cards = []
+    details = {}
+    for row in rows:
+      archive_url = (
+        'https://www.biglibraryread.com/past-titles/'
+        + row['source_record_id'].split('-', 4)[-1] + '/')
+      cards.append(
+        f'<a href="{archive_url}"><h2>{row["title"]}</h2>'
+        f'<h3>by {" & ".join(row["authors"])}</h3>'
+        f'<p>{date_label(row)}</p></a>')
+      details[archive_url] = f'<html><h1>{row["title"]}</h1></html>'
+    complete_html = '<html><h1>Past Titles</h1>' + ''.join(cards) + '</html>'
+
+    remote = BigLibraryReadParser().parse(
+      complete_html,
+      'https://www.biglibraryread.com/past-titles/',
+      fetch_url=lambda url: details[url])
+
+    self.assertEqual(36, len(remote['entries']))
+    self.assertEqual('The Four Corners of the Sky', remote['entries'][0]['title'])
+    self.assertEqual("The Storyteller's Death", remote['entries'][-1]['title'])
+    tied = [
+      entry for entry in remote['entries']
+      if entry['discussion_start_date'] == '2015-10-07']
+    self.assertEqual(2, len(tied))
+    self.assertEqual(1, len({entry['event_group_id'] for entry in tied}))
+    self.assertEqual([], remote['notes'])
+
+    partial_html = '''<html><h1>Past Titles</h1>
+      <a href="/past-titles/partial/"><h2>Partial Remote Row</h2>
+      <h3>by Remote Author</h3><p>July 1 - 15, 2025</p></a></html>'''
+    archived_pages = {}
+    for source_url, first_date, last_date in BIG_LIBRARY_READ_WAYBACK_SPECS:
+      archived_cards = []
+      for row in rows:
+        if not first_date <= row['start_date'] <= last_date:
+          continue
+        archived_cards.append(
+          '<div class="col-md-3 col-sm-6 over-auto">'
+          f'<a href="/past-titles/{row["source_record_id"]}/"></a>'
+          f'<h6>{row["title"]}</h6>'
+          f'<p>by {" & ".join(row["authors"])}</p>'
+          f'<p>{date_label(row)}</p></div>')
+      archived_pages[source_url] = (
+        '<html><h1>Past Titles</h1>' + ''.join(archived_cards) + '</html>')
+    for spec in BIG_LIBRARY_READ_LAUNCH_SPECS:
+      archived_pages[spec['source_url']] = (
+        f'<html><h1>{spec["title"]}</h1>'
+        f'<p>by {" & ".join(spec["authors"])}</p></html>')
+
+    fetcher = UrlFetcherBigLibraryRead()
+
+    def archived_fetch(url):
+      if url == fetcher.URL:
+        return partial_html
+      return archived_pages[url]
+
+    archived = fetcher.fetch_and_parse(archived_fetch)
+    self.assertEqual(36, len(archived['entries']))
+    self.assertIn('Internet Archive snapshots', archived['notes'][0])
+    self.assertNotIn(
+      'Packaged history used', ' '.join(archived['notes']))
+    corrected_dates = {
+      entry['title']: (
+        entry['discussion_start_date'], entry['discussion_end_date'])
+      for entry in archived['entries']
+      if entry['title'] in (
+        'A Pedigree to Die For', 'Anatomy of a Misfit',
+        'A Dangerous Act of Kindness')
+    }
+    self.assertEqual({
+      'A Pedigree to Die For': ('2014-06-03', '2014-06-18'),
+      'Anatomy of a Misfit': ('2014-10-13', '2014-10-28'),
+      'A Dangerous Act of Kindness': ('2019-06-17', '2019-07-01'),
+    }, corrected_dates)
+
+    def live_request_failed_fetch(url):
+      if url == fetcher.URL:
+        raise OSError('live archive unavailable')
+      return archived_pages[url]
+
+    recovered = fetcher.fetch_and_parse(live_request_failed_fetch)
+    self.assertEqual(36, len(recovered['entries']))
+    self.assertIn('Internet Archive snapshots', recovered['notes'][0])
+
+    fallback = UrlFetcherBigLibraryRead().fetch_and_parse(
+      lambda _url: partial_html)
+
+    self.assertEqual(36, len(fallback['entries']))
+    self.assertNotIn('Partial Remote Row', [entry['title'] for entry in fallback['entries']])
+    self.assertIn('Packaged history used', fallback['notes'][0])
+    self.assertEqual(set(remote['entries'][0]), set(fallback['entries'][0]))
+
+    challenge = UrlFetcherBigLibraryRead().fetch_and_parse(
+      lambda _url: '<html><body>Please wait for verification</body></html>')
+    self.assertEqual(36, len(challenge['entries']))
+    self.assertIn('Packaged history used', challenge['notes'][0])
+
+    def unavailable(_url):
+      raise OSError('source unavailable')
+
+    unavailable_result = UrlFetcherBigLibraryRead().fetch_and_parse(unavailable)
+    self.assertEqual(36, len(unavailable_result['entries']))
+    self.assertIn('Packaged history used', unavailable_result['notes'][0])
+
+  def test_libby_reads_global_remote_filters_regions_and_falls_back_on_detail_failure(self):
+    from parser.big_library_read import LIBBY_ARCHIVE_SPECS, LibbyReadsGlobalParser
+    from url_fetcher.big_library_read import UrlFetcherLibbyReadsGlobal
+
+    landing = '''<html><h1>Libby Reads</h1><ul>
+      <li><a href="/events/libby-reads-i-see-youve-called-in-dead">
+        I See You've Called in Dead - Libby Reads GLOBAL</a></li>
+      <li><a href="/events/libby-reads-familia">
+        Familia - Libby Reads US</a></li>
+      <li><a href="/events/libby-reads-resurrection-bay">
+        Resurrection Bay - Libby Reads AU/NZ</a></li>
+    </ul></html>'''
+    detail_specs = {
+      LIBBY_ARCHIVE_SPECS[0][0]: (
+        'The Village Beyond the Mist', 'Sachiko Kashiwaba',
+        'November 18 - December 2', 'Libby & Sora Reads is a global ebook club'),
+      LIBBY_ARCHIVE_SPECS[1][0]: (
+        'Meet the Neighbors', 'Brandon Keim',
+        'March 26 - April 9, 2026', 'LIBBY READS GLOBAL'),
+      LIBBY_ARCHIVE_SPECS[2][0]: (
+        "I See You've Called in Dead", 'John Kenney',
+        'July 9 - 23, 2026', 'LIBBY READS GLOBAL'),
+      LIBBY_ARCHIVE_SPECS[3][0]: (
+        'Secrets of the Broken House', 'Taryn Souders',
+        'November 26 - December 10, 2026', 'LIBBY READS (GLOBAL)'),
+    }
+
+    def detail_html(spec):
+      title, author, dates, region = spec
+      return (
+        f'<html><h1>"{title}"</h1><p>Written by {author}</p>'
+        f'<p>{region}</p><p>{dates}</p></html>')
+
+    calls = []
+
+    def fetch_detail(url):
+      calls.append(url)
+      return detail_html(detail_specs[url])
+
+    remote = LibbyReadsGlobalParser().parse(
+      landing, 'https://www.libbylife.com/libby-reads', fetch_url=fetch_detail)
+
+    self.assertEqual([
+      'The Village Beyond the Mist', 'Meet the Neighbors',
+      "I See You've Called in Dead", 'Secrets of the Broken House',
+    ], [entry['title'] for entry in remote['entries']])
+    self.assertEqual('2025-11-18', remote['entries'][0]['event_date'])
+    self.assertFalse(any('familia' in url or 'resurrection' in url for url in calls))
+    self.assertEqual([], remote['notes'])
+
+    fetcher = UrlFetcherLibbyReadsGlobal()
+
+    def failing_fetch(url):
+      if url == fetcher.URL:
+        return landing
+      raise OSError('detail unavailable')
+
+    fallback = fetcher.fetch_and_parse(failing_fetch)
+    self.assertEqual(4, len(fallback['entries']))
+    self.assertIn('Packaged history used', fallback['notes'][0])
+    self.assertEqual(set(remote['entries'][0]), set(fallback['entries'][0]))
+
+  def test_community_read_ledger_schema_and_fetcher_registry(self):
+    from parser.base import CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS
+    from parser.big_library_read import load_history_ledger
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.big_library_read import (
+      UrlFetcherBigLibraryRead,
+      UrlFetcherLibbyReadsGlobal,
+    )
+
+    ledger = load_history_ledger()
+    self.assertEqual(1, ledger['schema_version'])
+    self.assertEqual(36, len(ledger['collections']['big_library_read']))
+    self.assertEqual(4, len(ledger['collections']['libby_reads_global']))
+    self.assertTrue(all(
+      row['source_url'].startswith('https://')
+      for rows in ledger['collections'].values() for row in rows))
+
+    fetchers = (UrlFetcherBigLibraryRead(), UrlFetcherLibbyReadsGlobal())
+    for fetcher in fetchers:
+      self.assertFalse(fetcher.options['match_series'])
+      self.assertFalse(fetcher.SUPPORTS_INCREMENTAL_UPDATE)
+      self.assertEqual(
+        [CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS],
+        [item['label'] for item in fetcher.get_filter_list()])
+      self.assertEqual(
+        ({'label': 'Automatic', 'value': 'automatic'},),
+        fetcher.source_choices())
+
+    registry_ids = [fetcher.source_id for fetcher in available_url_fetchers()]
+    self.assertLess(
+      registry_ids.index('r_bookclub_previous_selections'),
+      registry_ids.index('big_library_read'))
+    self.assertLess(
+      registry_ids.index('big_library_read'),
+      registry_ids.index('libby_reads_global'))
+    self.assertLess(
+      registry_ids.index('libby_reads_global'),
+      registry_ids.index('hugo_awards_novel'))
+
+  def test_bookbrowse_merges_legacy_current_and_upcoming_sources(self):
+    from parser.bookbrowse import (
+      CATEGORIES_URL,
+      COMMUNITY_URL,
+      LEGACY_URL,
+      BookBrowseOnlineBookClubParser,
+    )
+
+    landing = '''
+      <h1>The BookBrowse Book Club</h1>
+      <h3>Discussions Coming Soon</h3>
+      <ul><li>
+        <a href="/bb_briefs/detail/index.cfm/ezine_preview_number/99/Future Book">Future Book</a>
+        <p>Opens 16 July</p>
+      </li></ul>
+    '''
+    legacy = '''
+      <h1>More 2024 Book Discussions</h1>
+      <div class="clear_row"><h2><a href="threads.cfm?forumid=LEGACY24&amp;discussion=made-by-history">
+        Made by History by Alice Writer</a></h2></div>
+      <div class="clear_row"><h2><a href="threads.cfm?forumid=LEGACY24B&amp;discussion=made-by-history-reread">
+        Made by History by Alice Writer</a></h2></div>
+      <h1>2011 Book Club Discussions</h1>
+      <div class="clear_row"><h2><a href="threads.cfm?forumid=LEGACY11&amp;discussion=a-secret-kept">
+        A Secret Kept Book Club Discussion</a></h2>
+        <div class="forumDesc">From Tatiana de Rosnay, author of Sarah's Key, A Secret Kept explores a family.</div>
+      </div>
+      <div class="clear_row"><h2><a href="threads.cfm?forumid=BRIDGE11&amp;discussion=bridge">
+        Bridge Of Scarlet Leaves Book Club Discussion</a></h2>
+        <div class="forumDesc">Discuss The Bridge Of Scarlet Leaves by Kristina McMorris</div>
+      </div>
+    '''
+    categories = {'categories': [
+      {
+        'id': 20,
+        'parent_category_id': 5,
+        'name': 'Future Book Discussion',
+        'slug': 'future-book-by-bob-author',
+        'description_text': 'Please join BookBrowse for a discussion of Future Book by Bob Author.',
+        'topic_url': '/t/about-future-book/200',
+      },
+      {
+        'id': 21,
+        'parent_category_id': 5,
+        'name': 'A Pair of Aces Discussion',
+        'slug': 'a-pair-of-aces',
+        'description_text': 'Please join us in our book club discussion of A Pair of Aces by Marie Benedict and Victoria Christopher Murray.',
+        'topic_url': '/t/about-a-pair-of-aces/201',
+      },
+      {
+        'id': 22,
+        'parent_category_id': 5,
+        'name': 'Side Read: A Thousand Books',
+        'slug': 'side-read',
+        'description_text': 'This category is for a monthly buddy read.',
+      },
+    ]}
+    pages = {
+      LEGACY_URL: legacy,
+      CATEGORIES_URL: json.dumps(categories),
+      f'{COMMUNITY_URL}/t/about-future-book/200.json': json.dumps({
+        'post_stream': {'posts': [{'created_at': '2026-07-16T14:00:00.000Z'}]},
+      }),
+      'https://www.bookbrowse.com/bb_briefs/detail/index.cfm/ezine_preview_number/99/Future%20Book': (
+        '<h1>Future Book</h1><p>by Bob Author</p>'),
+    }
+
+    def fetch_url(url):
+      if url == f'{COMMUNITY_URL}/t/about-a-pair-of-aces/201.json':
+        raise OSError('date unavailable')
+      return pages[url]
+
+    parsed = BookBrowseOnlineBookClubParser().parse(
+      landing,
+      'https://www.bookbrowse.com/onlinebookclub/',
+      fetch_url=fetch_url,
+      current_date='2026-07-12')
+
+    self.assertEqual(
+      [
+        'A Secret Kept', 'The Bridge Of Scarlet Leaves',
+        'Made by History', 'Made by History', 'Future Book', 'A Pair of Aces',
+      ],
+      [entry['title'] for entry in parsed['entries']])
+    self.assertEqual(
+      ['Marie Benedict', 'Victoria Christopher Murray'],
+      parsed['entries'][5]['authors'])
+    self.assertEqual('2026-07-16', parsed['entries'][4]['event_date'])
+    self.assertEqual('bookbrowse-discourse-category:20', parsed['entries'][4]['source_record_id'])
+    self.assertEqual(
+      ['1', '2', '3', '4', '5', '6'],
+      [entry['position'] for entry in parsed['entries']])
+    self.assertTrue(any('date was unavailable for A Pair of Aces' in note for note in parsed['notes']))
+    self.assertFalse(any('Side Read' == entry['title'] for entry in parsed['entries']))
+
+  def test_bookbrowse_upcoming_year_rollover_and_challenge_detection(self):
+    from parser.bookbrowse import BookBrowseOnlineBookClubParser
+
+    parser = BookBrowseOnlineBookClubParser()
+    landing = '''
+      <h1>The BookBrowse Book Club</h1>
+      <h3>Discussions Coming Soon</h3>
+      <ul><li><a href="/ezine_preview_number/101/January-Book">January Book</a>
+        <p>Opens 8 January</p></li></ul>
+    '''
+    entries, notes = parser.parse_upcoming(
+      landing,
+      'https://www.bookbrowse.com/onlinebookclub/',
+      lambda _url: '<h1>January Book</h1><p>by New Author</p>',
+      'BookBrowse Online Book Club',
+      date(2026, 12, 20))
+    self.assertEqual([], notes)
+    self.assertEqual('2027-01-08', entries[0]['event_date'])
+    with self.assertRaisesRegex(ValueError, 'challenge or empty'):
+      parser.require_real_page(
+        '<title>Just a moment...</title><p>Cloudflare</p>', 'BookBrowse archive')
+
+  def test_bookbrowse_fetcher_metadata_and_registry(self):
+    from parser.base import (
+      CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS,
+      CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,
+    )
+    from url_fetcher import available_url_fetchers
+
+    by_id = {fetcher.source_id: fetcher for fetcher in available_url_fetchers()}
+    fetcher = by_id['bookbrowse_online_book_club']
+    self.assertEqual('BookBrowse Online Book Club', fetcher.NAME)
+    self.assertEqual(57, fetcher.order)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertEqual(
+      [CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS, CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS],
+      [item['label'] for item in fetcher.get_filter_list()])
+    self.assertEqual(
+      ({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+    registry_ids = list(by_id)
+    self.assertLess(
+      registry_ids.index('libby_reads_global'),
+      registry_ids.index('bookbrowse_online_book_club'))
+    self.assertLess(
+      registry_ids.index('bookbrowse_online_book_club'),
+      registry_ids.index('hugo_awards_novel'))
+
+  def test_bookbrowse_fetcher_uses_calibre_https_after_mechanize_rejection(self):
+    import url_fetcher.bookbrowse as bookbrowse_fetcher
+
+    fetcher = bookbrowse_fetcher.UrlFetcherBookBrowseOnlineBookClub()
+    calls = []
+    original = bookbrowse_fetcher.calibre_https_fetch
+
+    def secure_fetch(url, **kwargs):
+      calls.append((url, kwargs))
+      return b'<html><h1>The BookBrowse Book Club</h1></html>'
+
+    def rejected(_url, **_kwargs):
+      raise OSError('HTTP Error 403: Forbidden')
+
+    bookbrowse_fetcher.calibre_https_fetch = secure_fetch
+    try:
+      payload = fetcher.fetch_url(rejected, fetcher.URL)
+    finally:
+      bookbrowse_fetcher.calibre_https_fetch = original
+
+    self.assertIn('BookBrowse Book Club', payload)
+    self.assertEqual(fetcher.URL, calls[0][0])
+    self.assertIsNone(calls[0][1]['cacerts'])
+    self.assertEqual(fetcher.USER_AGENT, calls[0][1]['headers']['User-Agent'])
+
+  def test_bookbrowse_calibre_https_retries_rejected_official_redirect_directly(self):
+    import url_fetcher.bookbrowse as bookbrowse_fetcher
+
+    class RedirectRejected(Exception):
+      code = 403
+      url = 'https://www.bookbrowse.com/reviews/index.cfm/book_number/1/final-book'
+
+    fetcher = bookbrowse_fetcher.UrlFetcherBookBrowseOnlineBookClub()
+    calls = []
+    original = bookbrowse_fetcher.calibre_https_fetch
+
+    def secure_fetch(url, **_kwargs):
+      calls.append(url)
+      if len(calls) == 1:
+        raise RedirectRejected('redirect rejected')
+      return b'<h1>Final Book</h1><p>by Final Author</p>'
+
+    bookbrowse_fetcher.calibre_https_fetch = secure_fetch
+    try:
+      payload = fetcher.fetch_url(
+        lambda _url, **_kwargs: (_ for _ in ()).throw(OSError('blocked')),
+        'https://www.bookbrowse.com/bb_briefs/detail/index.cfm/ezine_preview_number/1/Final%20Book')
+    finally:
+      bookbrowse_fetcher.calibre_https_fetch = original
+
+    self.assertEqual(2, len(calls))
+    self.assertEqual(RedirectRejected.url, calls[1])
+    self.assertIn('Final Author', payload)
 
   def test_r_bookclub_fetcher_falls_through_interstitials_and_exposes_metadata(self):
     from parser.base import CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS
@@ -2194,8 +2646,9 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
       'r/Fantasy Top Self-Published Novels 2024',
       'Sword and Laser',
     ], names[:4])
-    self.assertEqual(388, len(names))
-    self.assertIn('r/bookclub Previous Selections', names)
+    self.assertEqual(391, len(names))
+    self.assertIn('r/bookclub', names)
+    self.assertIn('BookBrowse Online Book Club', names)
     self.assertIn('Theakston Old Peculier Crime Novel of the Year', names)
     self.assertIn('Hammett Prize', names)
     self.assertIn('Nero Award', names)
@@ -3614,7 +4067,7 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
       'r_fantasy_top_self_published_novels_2024',
       'sword_and_laser_book_list',
     ], source_ids[:4])
-    self.assertEqual(388, len(source_ids))
+    self.assertEqual(391, len(source_ids))
     self.assertIn('hammett_prize', source_ids)
     self.assertIn('nero_award', source_ids)
     self.assertIn('strand_critics_award_mystery_novel', source_ids)
@@ -11873,7 +12326,7 @@ were ''[[Go Deep]]'' by [[Rilzy Adams]].
     self.assertLess(
       registry_ids.index('romantic_times_reviewers_choice_romance'),
       registry_ids.index('writers_trust_atwood_gibson_fiction'))
-    self.assertEqual(388, len(registry_ids))
+    self.assertEqual(391, len(registry_ids))
 
   def test_lambda_literary_awards_parser_reads_directory_and_current_shortlists(self):
     from parser.lambda_literary_awards import (

@@ -133,12 +133,13 @@ def clean_credit(value):
   value = value.replace('\\', '')
   # These are navigation/resource labels attached to the selection, not credits.
   value = re.split(
-    r'\s+(?:\+\s*)?(?:posts?|marginalia|gutenberg(?:\s+link)?|'
+    r'\s+(?:\+\s*)?\[?(?:posts?|marginalia|gutenberg(?:\s+link)?|'
     r'parallel\s*text|librivox|audiobook)(?:\b|\s*\[)',
     value, maxsplit=1, flags=re.I)[0]
   value = re.sub(r'\s+-\s+(?:two\s+)?posts?\b.*$', '', value, flags=re.I)
+  value = re.sub(r'\s+-\s+two\s*$', '', value, flags=re.I)
   value = re.sub(
-    r'\s*\((?:continued|undiscussed|gutenberg(?:\s+link)?|'
+    r'\s*\((?:continued\b[^)]*|undiscussed\b[^)]*|gutenberg(?:\s+link)?|'
     r'converted\s+to\s+a\s+big\s+read|big\s+read\s+through\b[^)]*)\)\s*$',
     '', value, flags=re.I)
   preserve_suffix_period = bool(re.search(r'\b(?:Jr|Sr)\.\s*$', value, re.I))
@@ -152,6 +153,8 @@ def split_authors(value):
   credit = re.sub(r'(?:,?\s*)\bet\s+al\.?,?', '', credit, flags=re.I).strip(' ,;')
   parts = re.split(
     r'(?:,\s*)?\s+(?:and|with|&)\s+|\s*;\s*', credit, flags=re.I)
+  if len(parts) > 1 and ',' in credit:
+    parts = [item for part in parts for item in re.split(r'\s*,\s*', part)]
   if incomplete and len(parts) == 1 and ',' in credit:
     parts = re.split(r'\s*,\s*', credit)
   authors = []
@@ -224,7 +227,7 @@ class RBookclubParser(ListParserBase):
     entries, notes = self.entries_from_blocks(blocks, base_url)
     if not entries:
       raise ValueError('Could not find r/bookclub selection rows in the fetched wiki page.')
-    list_name = name or 'r/bookclub Previous Selections'
+    list_name = name or 'r/bookclub'
     return {
       'name': list_name,
       'source': parsed_source(list_name, base_url, self.SOURCE_ID),

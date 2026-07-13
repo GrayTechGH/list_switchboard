@@ -8,6 +8,7 @@ from .r_fantasy_top_self_published_novels_2024 import (
 from .r_fantasy_top_standalone_novels_2024 import (
   UrlFetcherRFantasyTopStandaloneNovels2024,
 )
+from .bookbrowse import UrlFetcherBookBrowseOnlineBookClub
 from .anthony import (
   UrlFetcherAnthonyAnthologyCollection,
   UrlFetcherAnthonyChildrensYA,
@@ -310,6 +311,7 @@ from .barnes_noble_book_club import UrlFetcherBarnesNobleBookClub
 from .service95_book_club import UrlFetcherService95BookClub
 from .richard_judy_book_club import UrlFetcherRichardJudyBookClub
 from .r_bookclub import UrlFetcherRBookclub
+from .big_library_read import UrlFetcherBigLibraryRead, UrlFetcherLibbyReadsGlobal
 from .aurora import (
   UrlFetcherAuroraGraphicNovel,
   UrlFetcherAuroraNoveletteNovella,
@@ -530,6 +532,9 @@ URL_FETCHER_CLASSES = (
   UrlFetcherService95BookClub,
   UrlFetcherRichardJudyBookClub,
   UrlFetcherRBookclub,
+  UrlFetcherBigLibraryRead,
+  UrlFetcherLibbyReadsGlobal,
+  UrlFetcherBookBrowseOnlineBookClub,
   UrlFetcherHugoAwardsNovel,
   UrlFetcherHugoAwardsNovella,
   UrlFetcherHugoAwardsSeries,
