@@ -2640,6 +2640,8 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
 
     names = [recipe.NAME for recipe in core.available_import_recipes()]
 
+    self.assertIn('Big Library Read (discontinued)', names)
+
     self.assertEqual([
       'r/Fantasy Top Novels 2025',
       'r/Fantasy Top Standalone Novels 2024',
@@ -2696,11 +2698,12 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
     self.assertIn(
       "Governor General's Literary Award - French Young People's Literature - Illustrated Books",
       names)
-    self.assertIn('Costa/Whitbread Book Award - Novel', names)
-    self.assertIn('Costa/Whitbread Book Award - First Novel', names)
-    self.assertIn('Costa/Whitbread Book Award - Biography', names)
-    self.assertIn("Costa/Whitbread Book Award - Children's Book", names)
-    self.assertIn('Costa/Whitbread Book of the Year', names)
+    self.assertIn('Costa/Whitbread Book Award - Novel (discontinued)', names)
+    self.assertIn('Costa/Whitbread Book Award - First Novel (discontinued)', names)
+    self.assertIn('Costa/Whitbread Book Award - Biography (discontinued)', names)
+    self.assertIn(
+      "Costa/Whitbread Book Award - Children's Book (discontinued)", names)
+    self.assertIn('Costa/Whitbread Book of the Year (discontinued)', names)
     self.assertIn('Giller Prize', names)
     self.assertIn("Folio/Writers' Prize - Book of the Year", names)
     self.assertIn("Folio/Writers' Prize - Fiction", names)
@@ -2741,11 +2744,13 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
     self.assertIn("South Australian Literary Awards - Children's Literature", names)
     self.assertIn("South Australian Literary Awards - Young Adult Fiction", names)
     self.assertIn('ACT Book of the Year Award', names)
-    self.assertIn('RWA RITA Awards', names)
+    self.assertIn('RWA RITA Awards (discontinued)', names)
     self.assertIn('RWA Vivian Awards', names)
     self.assertIn('RNA Joan Hessayon Award for New Writers', names)
     self.assertIn('Ripped Bodice Awards for Excellence in Romance Fiction', names)
-    self.assertIn("Romantic Times Reviewers' Choice Awards - Romance Categories", names)
+    self.assertIn(
+      "Romantic Times Reviewers' Choice Awards - Romance Categories "
+      '(discontinued)', names)
     self.assertIn('Lambda Literary Awards - Romance Categories', names)
     self.assertIn('Romance Writers of Australia RUBY Awards', names)
     self.assertIn('Australian Romance Readers Awards', names)
@@ -2771,9 +2776,11 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
     self.assertIn("Writers' Trust - Hilary Weston Nonfiction Prize", names)
     self.assertIn('British Fantasy - Horror Novel', names)
     self.assertIn('British Fantasy - Fantasy Novel', names)
-    self.assertIn('British Fantasy - Best Novel (pre-2012 August Derleth)', names)
-    self.assertIn('International Horror Guild - Novel', names)
-    self.assertIn('International Horror Guild - Illustrated Narrative', names)
+    self.assertIn(
+      'British Fantasy - Best Novel (discontinued)', names)
+    self.assertIn('International Horror Guild - Novel (discontinued)', names)
+    self.assertIn(
+      'International Horror Guild - Illustrated Narrative (discontinued)', names)
     self.assertIn('Australasian Shadows - Novel', names)
     self.assertIn('Australasian Shadows - Non-Fiction', names)
     self.assertIn('This Is Horror - Novel', names)
@@ -2782,6 +2789,39 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
     self.assertIn('Splatterpunk - Anthology', names)
     self.assertIn('Ladies of Horror Fiction - Novel', names)
     self.assertIn('Ladies of Horror Fiction - Graphic Novel', names)
+    expected_discontinued = {
+      "Aurealis - Children's 8-12 Illustrated Work/Picture Book "
+      '(discontinued)',
+      "Aurealis - Children's 8-12 Long Fiction (discontinued)",
+      "Aurealis - Children's Book (discontinued)",
+      "Aurealis - Children's Fiction (Pictures) (discontinued)",
+      "Aurealis - Children's Fiction (Words) (discontinued)",
+      'Aurealis - Golden Aurealis Novel (discontinued)',
+      'Big Library Read (discontinued)',
+      'British Fantasy - Best Novel (discontinued)',
+      'Costa/Whitbread Book Award - Biography (discontinued)',
+      "Costa/Whitbread Book Award - Children's Book (discontinued)",
+      'Costa/Whitbread Book Award - First Novel (discontinued)',
+      'Costa/Whitbread Book Award - Novel (discontinued)',
+      'Costa/Whitbread Book of the Year (discontinued)',
+      'Dilys Award (discontinued)',
+      'Gumshoe Award - European Crime Novel (discontinued)',
+      'Gumshoe Award - First Novel (discontinued)',
+      'Gumshoe Award - Mystery (discontinued)',
+      'Gumshoe Award - Thriller (discontinued)',
+      'International Horror Guild - Anthology (discontinued)',
+      'International Horror Guild - Collection (discontinued)',
+      'International Horror Guild - First Novel (discontinued)',
+      'International Horror Guild - Illustrated Narrative (discontinued)',
+      'International Horror Guild - Long Fiction (discontinued)',
+      'International Horror Guild - Mid-Length Fiction (discontinued)',
+      'International Horror Guild - Non-Fiction (discontinued)',
+      'International Horror Guild - Novel (discontinued)',
+      'RWA RITA Awards (discontinued)',
+      "Romantic Times Reviewers' Choice Awards - Romance Categories "
+      '(discontinued)',
+    }
+    self.assertTrue(expected_discontinued.issubset(set(names)))
 
   def test_core_can_discover_recipes_before_gui_current_db_exists(self):
     class StartupGui:
@@ -2930,7 +2970,7 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
     parsed = parser.parse_bfs_winners(
       winners_html,
       BFS_WINNERS_URL,
-      'British Fantasy - Best Novel (pre-2012 August Derleth)',
+      'British Fantasy - Best Novel (discontinued)',
       'Best Novel',
       ('novel', 'best novel'),
       max_year=2011)
@@ -3015,7 +3055,7 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
     parsed = parser.parse_official_page(
       official_html,
       OFFICIAL_FINAL_URL,
-      'International Horror Guild - Novel',
+      'International Horror Guild - Novel (discontinued)',
       'Novel',
       ('novel',))
     rows = {
@@ -3057,7 +3097,7 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
     parsed = parser.parse_official_page(
       official_html,
       OFFICIAL_PREVIOUS_URL,
-      'International Horror Guild - Collection',
+      'International Horror Guild - Collection (discontinued)',
       'Collection',
       ('collection', 'collection single author', 'fiction collection'))
     rows = {
@@ -3094,7 +3134,7 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
     parsed = parser.parse_sfadb(
       overview,
       SFADB_URL,
-      'International Horror Guild - Novel',
+      'International Horror Guild - Novel (discontinued)',
       'Novel',
       ('novel',),
       fetch_url=lambda url: pages[url])
@@ -9911,8 +9951,8 @@ class AwardParserSmokeTest(unittest.TestCase):
     parsed = DilysWikipediaParser().parse(
       html,
       'https://en.wikipedia.org/wiki/Dilys_Award',
-      'Dilys Award',
-      'Dilys Award',
+      'Dilys Award (discontinued)',
+      'Dilys Award (discontinued)',
       (),
       allowed_results=('winner', 'shortlisted'))
 
@@ -9938,7 +9978,7 @@ class AwardParserSmokeTest(unittest.TestCase):
     parsed = GumshoeWikipediaParser().parse(
       html,
       'https://en.wikipedia.org/wiki/Gumshoe_Awards',
-      'Gumshoe Award - Mystery',
+      'Gumshoe Award - Mystery (discontinued)',
       'Mystery',
       ('Best Mystery', 'Best Novel'))
 
@@ -11166,7 +11206,7 @@ class AwardParserSmokeTest(unittest.TestCase):
     '''
 
     parsed = CostaWhitbreadCategoryParser(
-      'Costa/Whitbread Book Award - Novel',
+      'Costa/Whitbread Book Award - Novel (discontinued)',
       'Novel').parse(html, 'https://en.wikipedia.org/wiki/Costa_Book_Award_for_Novel')
 
     self.assertEqual([
@@ -11205,7 +11245,7 @@ class AwardParserSmokeTest(unittest.TestCase):
     '''
 
     parsed = CostaWhitbreadCategoryParser(
-      'Costa/Whitbread Book Award - First Novel',
+      'Costa/Whitbread Book Award - First Novel (discontinued)',
       'First Novel').parse(
         html, 'https://en.wikipedia.org/wiki/Costa_Book_Award_for_First_Novel')
 
@@ -11244,7 +11284,7 @@ class AwardParserSmokeTest(unittest.TestCase):
     '''
 
     parsed = CostaWhitbreadCategoryParser(
-      'Costa/Whitbread Book Award - Biography',
+      'Costa/Whitbread Book Award - Biography (discontinued)',
       'Biography').parse(
         html, 'https://en.wikipedia.org/wiki/Costa_Book_Award_for_Biography')
 
@@ -11281,7 +11321,7 @@ class AwardParserSmokeTest(unittest.TestCase):
     '''
 
     parsed = CostaWhitbreadCategoryParser(
-      "Costa/Whitbread Book Award - Children's Book",
+      "Costa/Whitbread Book Award - Children's Book (discontinued)",
       "Children's Book").parse(
         html, 'https://en.wikipedia.org/wiki/Costa_Book_Award_for_Children%27s_Book')
 
@@ -11412,7 +11452,8 @@ class AwardParserSmokeTest(unittest.TestCase):
     '''
     parsed = UrlFetcherCostaWhitbreadNovel().fetch_and_parse(lambda _url: html)
 
-    self.assertEqual('Costa/Whitbread Book Award - Novel', parsed['name'])
+    self.assertEqual(
+      'Costa/Whitbread Book Award - Novel (discontinued)', parsed['name'])
     self.assertEqual(['Unsettled Ground'], [entry['title'] for entry in parsed['entries']])
     self.assertFalse(parsed['match_series'])
 
@@ -11487,7 +11528,7 @@ class AwardParserSmokeTest(unittest.TestCase):
     vivian_filters = [item['label'] for item in vivian.get_filter_list()]
 
     self.assertEqual('rwa_rita_awards', fetcher.source_id)
-    self.assertEqual('RWA RITA Awards', fetcher.NAME)
+    self.assertEqual('RWA RITA Awards (discontinued)', fetcher.NAME)
     self.assertEqual('https://en.wikipedia.org/wiki/RITA_Award', fetcher.URL)
     self.assertEqual(247, fetcher.order)
     self.assertFalse(fetcher.options['match_series'])
@@ -11517,7 +11558,7 @@ class AwardParserSmokeTest(unittest.TestCase):
     '''
     parsed = fetcher.fetch_and_parse(lambda _url: html)
 
-    self.assertEqual('RWA RITA Awards', parsed['name'])
+    self.assertEqual('RWA RITA Awards (discontinued)', parsed['name'])
     self.assertEqual(['Lady in Waiting'], [
       entry['title'] for entry in parsed['entries']
     ])
@@ -12304,7 +12345,8 @@ were ''[[Go Deep]]'' by [[Rilzy Adams]].
 
     self.assertEqual('romantic_times_reviewers_choice_romance', fetcher.source_id)
     self.assertEqual(
-      "Romantic Times Reviewers' Choice Awards - Romance Categories",
+      "Romantic Times Reviewers' Choice Awards - Romance Categories "
+      '(discontinued)',
       fetcher.NAME)
     self.assertEqual(250, fetcher.order)
     self.assertFalse(fetcher.options['match_series'])

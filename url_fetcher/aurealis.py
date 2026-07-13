@@ -193,7 +193,7 @@ class UrlFetcherAurealisSFNovel(UrlFetcherAurealis):
 
 class UrlFetcherAurealisGoldenAurealisNovel(UrlFetcherAurealis):
   source_id = 'aurealis_golden_aurealis_novel'
-  NAME = 'Aurealis - Golden Aurealis Novel'
+  NAME = 'Aurealis - Golden Aurealis Novel (discontinued)'
   FILTER_CATEGORIES = YOUNG_READER_SPECULATIVE_REGIONAL_CATEGORIES
   CATEGORY = 'Golden Aurealis - Novel'
   CATEGORY_ALIASES = ('golden aurealis novel',)
@@ -301,7 +301,7 @@ class UrlFetcherAurealisChildrensFiction(UrlFetcherAurealis):
 
 class UrlFetcherAurealisChildrensBook(UrlFetcherAurealis):
   source_id = 'aurealis_childrens_book'
-  NAME = "Aurealis - Children's Book"
+  NAME = "Aurealis - Children's Book (discontinued)"
   FILTER_CATEGORIES = YOUNG_READER_SPECULATIVE_REGIONAL_CATEGORIES
   CATEGORY = "Children's Book"
   CATEGORY_ALIASES = ("children's book", 'childrens book')
@@ -310,7 +310,7 @@ class UrlFetcherAurealisChildrensBook(UrlFetcherAurealis):
 
 class UrlFetcherAurealisChildrensFictionWords(UrlFetcherAurealis):
   source_id = 'aurealis_childrens_fiction_words'
-  NAME = "Aurealis - Children's Fiction (Words)"
+  NAME = "Aurealis - Children's Fiction (Words) (discontinued)"
   FILTER_CATEGORIES = YOUNG_READER_SPECULATIVE_REGIONAL_CATEGORIES
   CATEGORY = "Children's Fiction (told primarily through words)"
   CATEGORY_ALIASES = (
@@ -324,7 +324,7 @@ class UrlFetcherAurealisChildrensFictionWords(UrlFetcherAurealis):
 
 class UrlFetcherAurealisChildrensFictionPictures(UrlFetcherAurealis):
   source_id = 'aurealis_childrens_fiction_pictures'
-  NAME = "Aurealis - Children's Fiction (Pictures)"
+  NAME = "Aurealis - Children's Fiction (Pictures) (discontinued)"
   FILTER_CATEGORIES = YOUNG_READER_SPECULATIVE_REGIONAL_CATEGORIES
   CATEGORY = "Children's Fiction (told primarily through pictures)"
   CATEGORY_ALIASES = (
@@ -338,7 +338,7 @@ class UrlFetcherAurealisChildrensFictionPictures(UrlFetcherAurealis):
 
 class UrlFetcherAurealisChildrens812LongFiction(UrlFetcherAurealis):
   source_id = 'aurealis_childrens_8_12_long_fiction'
-  NAME = "Aurealis - Children's 8-12 Long Fiction"
+  NAME = "Aurealis - Children's 8-12 Long Fiction (discontinued)"
   FILTER_CATEGORIES = YOUNG_READER_SPECULATIVE_REGIONAL_CATEGORIES
   CATEGORY = "Children's (8-12 years) Long Fiction"
   CATEGORY_ALIASES = (
@@ -351,7 +351,9 @@ class UrlFetcherAurealisChildrens812LongFiction(UrlFetcherAurealis):
 
 class UrlFetcherAurealisChildrens812IllustratedWorkPictureBook(UrlFetcherAurealis):
   source_id = 'aurealis_childrens_8_12_illustrated_work_picture_book'
-  NAME = "Aurealis - Children's 8-12 Illustrated Work/Picture Book"
+  NAME = (
+    "Aurealis - Children's 8-12 Illustrated Work/Picture Book "
+    '(discontinued)')
   FILTER_CATEGORIES = YOUNG_READER_SPECULATIVE_REGIONAL_CATEGORIES
   CATEGORY = "Children's (8-12 years) Illustrated Work/Picture Book"
   CATEGORY_ALIASES = (

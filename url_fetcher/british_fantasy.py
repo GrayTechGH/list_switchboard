@@ -209,7 +209,7 @@ class UrlFetcherBritishFantasyFantasyNovel(UrlFetcherBritishFantasy):
 
 class UrlFetcherBritishFantasyBestNovel(UrlFetcherBritishFantasy):
   source_id = 'british_fantasy_best_novel'
-  NAME = 'British Fantasy - Best Novel (pre-2012 August Derleth)'
+  NAME = 'British Fantasy - Best Novel (discontinued)'
   CATEGORY = 'Best Novel'
   CATEGORY_ALIASES = (
     'novel',

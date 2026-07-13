@@ -156,7 +156,7 @@
     },
     {
       "source_id": "big_library_read",
-      "name": "Big Library Read",
+      "name": "Big Library Read (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
@@ -436,7 +436,7 @@
     },
     {
       "source_id": "british_fantasy_best_novel",
-      "name": "British Fantasy - Best Novel (pre-2012 August Derleth)",
+      "name": "British Fantasy - Best Novel (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
@@ -471,56 +471,56 @@
     },
     {
       "source_id": "international_horror_guild_novel",
-      "name": "International Horror Guild - Novel",
+      "name": "International Horror Guild - Novel (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
     },
     {
       "source_id": "international_horror_guild_first_novel",
-      "name": "International Horror Guild - First Novel",
+      "name": "International Horror Guild - First Novel (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
     },
     {
       "source_id": "international_horror_guild_long_fiction",
-      "name": "International Horror Guild - Long Fiction",
+      "name": "International Horror Guild - Long Fiction (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
     },
     {
       "source_id": "international_horror_guild_mid_length_fiction",
-      "name": "International Horror Guild - Mid-Length Fiction",
+      "name": "International Horror Guild - Mid-Length Fiction (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
     },
     {
       "source_id": "international_horror_guild_collection",
-      "name": "International Horror Guild - Collection",
+      "name": "International Horror Guild - Collection (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
     },
     {
       "source_id": "international_horror_guild_anthology",
-      "name": "International Horror Guild - Anthology",
+      "name": "International Horror Guild - Anthology (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
     },
     {
       "source_id": "international_horror_guild_nonfiction",
-      "name": "International Horror Guild - Non-Fiction",
+      "name": "International Horror Guild - Non-Fiction (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
     },
     {
       "source_id": "international_horror_guild_illustrated_narrative",
-      "name": "International Horror Guild - Illustrated Narrative",
+      "name": "International Horror Guild - Illustrated Narrative (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
@@ -933,7 +933,7 @@
     },
     {
       "source_id": "aurealis_golden_aurealis_novel",
-      "name": "Aurealis - Golden Aurealis Novel",
+      "name": "Aurealis - Golden Aurealis Novel (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
@@ -1003,7 +1003,7 @@
     },
     {
       "source_id": "aurealis_childrens_book",
-      "name": "Aurealis - Children's Book",
+      "name": "Aurealis - Children's Book (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
@@ -1017,28 +1017,28 @@
     },
     {
       "source_id": "aurealis_childrens_fiction_words",
-      "name": "Aurealis - Children's Fiction (Words)",
+      "name": "Aurealis - Children's Fiction (Words) (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
     },
     {
       "source_id": "aurealis_childrens_fiction_pictures",
-      "name": "Aurealis - Children's Fiction (Pictures)",
+      "name": "Aurealis - Children's Fiction (Pictures) (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
     },
     {
       "source_id": "aurealis_childrens_8_12_long_fiction",
-      "name": "Aurealis - Children's 8-12 Long Fiction",
+      "name": "Aurealis - Children's 8-12 Long Fiction (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
     },
     {
       "source_id": "aurealis_childrens_8_12_illustrated_work_picture_book",
-      "name": "Aurealis - Children's 8-12 Illustrated Work/Picture Book",
+      "name": "Aurealis - Children's 8-12 Illustrated Work/Picture Book (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
@@ -1507,35 +1507,35 @@
     },
     {
       "source_id": "dilys_award",
-      "name": "Dilys Award",
+      "name": "Dilys Award (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
     },
     {
       "source_id": "gumshoe_award_mystery",
-      "name": "Gumshoe Award - Mystery",
+      "name": "Gumshoe Award - Mystery (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
     },
     {
       "source_id": "gumshoe_award_thriller",
-      "name": "Gumshoe Award - Thriller",
+      "name": "Gumshoe Award - Thriller (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
     },
     {
       "source_id": "gumshoe_award_first_novel",
-      "name": "Gumshoe Award - First Novel",
+      "name": "Gumshoe Award - First Novel (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
     },
     {
       "source_id": "gumshoe_award_european_crime_novel",
-      "name": "Gumshoe Award - European Crime Novel",
+      "name": "Gumshoe Award - European Crime Novel (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
@@ -1843,35 +1843,35 @@
     },
     {
       "source_id": "costa_whitbread_novel",
-      "name": "Costa/Whitbread Book Award - Novel",
+      "name": "Costa/Whitbread Book Award - Novel (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
     },
     {
       "source_id": "costa_whitbread_first_novel",
-      "name": "Costa/Whitbread Book Award - First Novel",
+      "name": "Costa/Whitbread Book Award - First Novel (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
     },
     {
       "source_id": "costa_whitbread_biography",
-      "name": "Costa/Whitbread Book Award - Biography",
+      "name": "Costa/Whitbread Book Award - Biography (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
     },
     {
       "source_id": "costa_whitbread_childrens_book",
-      "name": "Costa/Whitbread Book Award - Children's Book",
+      "name": "Costa/Whitbread Book Award - Children's Book (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
     },
     {
       "source_id": "costa_whitbread_book_of_the_year",
-      "name": "Costa/Whitbread Book of the Year",
+      "name": "Costa/Whitbread Book of the Year (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
@@ -2312,7 +2312,7 @@
     },
     {
       "source_id": "rwa_rita_awards",
-      "name": "RWA RITA Awards",
+      "name": "RWA RITA Awards (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
@@ -2347,7 +2347,7 @@
     },
     {
       "source_id": "romantic_times_reviewers_choice_romance",
-      "name": "Romantic Times Reviewers' Choice Awards - Romance Categories",
+      "name": "Romantic Times Reviewers' Choice Awards - Romance Categories (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""

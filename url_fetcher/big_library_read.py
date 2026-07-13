@@ -37,7 +37,7 @@ class PackagedHistoryFallbackMixin:
 class UrlFetcherBigLibraryRead(PackagedHistoryFallbackMixin, UrlFetcherGeneric):
 
   source_id = 'big_library_read'
-  NAME = 'Big Library Read'
+  NAME = 'Big Library Read (discontinued)'
   URL = 'https://www.biglibraryread.com/past-titles/'
   order = 55
   FILTER_CATEGORIES = (CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,)

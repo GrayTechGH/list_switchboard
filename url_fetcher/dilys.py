@@ -20,7 +20,7 @@ class UrlFetcherDilysAward(UrlFetcherGeneric):
   URL = 'https://www.librarything.com/award/593/Dilys-Award'
   WIKIPEDIA_URL = 'https://en.wikipedia.org/wiki/Dilys_Award'
   source_id = 'dilys_award'
-  NAME = 'Dilys Award'
+  NAME = 'Dilys Award (discontinued)'
   CATEGORY = 'Dilys Award'
   CATEGORY_ALIASES = ()
 

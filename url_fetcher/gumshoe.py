@@ -71,27 +71,27 @@ class UrlFetcherGumshoeAward(UrlFetcherGeneric):
 
 class UrlFetcherGumshoeMystery(UrlFetcherGumshoeAward):
   source_id = 'gumshoe_award_mystery'
-  NAME = 'Gumshoe Award - Mystery'
+  NAME = 'Gumshoe Award - Mystery (discontinued)'
   CATEGORY = 'Mystery'
   CATEGORY_ALIASES = ('Best Mystery', 'Best Novel', 'Novel')
 
 
 class UrlFetcherGumshoeThriller(UrlFetcherGumshoeAward):
   source_id = 'gumshoe_award_thriller'
-  NAME = 'Gumshoe Award - Thriller'
+  NAME = 'Gumshoe Award - Thriller (discontinued)'
   CATEGORY = 'Thriller'
   CATEGORY_ALIASES = ('Best Thriller',)
 
 
 class UrlFetcherGumshoeFirstNovel(UrlFetcherGumshoeAward):
   source_id = 'gumshoe_award_first_novel'
-  NAME = 'Gumshoe Award - First Novel'
+  NAME = 'Gumshoe Award - First Novel (discontinued)'
   CATEGORY = 'First Novel'
   CATEGORY_ALIASES = ('Best First Novel',)
 
 
 class UrlFetcherGumshoeEuropeanCrimeNovel(UrlFetcherGumshoeAward):
   source_id = 'gumshoe_award_european_crime_novel'
-  NAME = 'Gumshoe Award - European Crime Novel'
+  NAME = 'Gumshoe Award - European Crime Novel (discontinued)'
   CATEGORY = 'European Crime Novel'
   CATEGORY_ALIASES = ('Best European Crime Novel',)

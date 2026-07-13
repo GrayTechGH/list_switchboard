@@ -114,35 +114,35 @@ class UrlFetcherInternationalHorrorGuild(UrlFetcherGeneric):
 
 class UrlFetcherInternationalHorrorGuildNovel(UrlFetcherInternationalHorrorGuild):
   source_id = 'international_horror_guild_novel'
-  NAME = 'International Horror Guild - Novel'
+  NAME = 'International Horror Guild - Novel (discontinued)'
   CATEGORY = 'Novel'
   CATEGORY_ALIASES = ('novel',)
 
 
 class UrlFetcherInternationalHorrorGuildFirstNovel(UrlFetcherInternationalHorrorGuild):
   source_id = 'international_horror_guild_first_novel'
-  NAME = 'International Horror Guild - First Novel'
+  NAME = 'International Horror Guild - First Novel (discontinued)'
   CATEGORY = 'First Novel'
   CATEGORY_ALIASES = ('first novel',)
 
 
 class UrlFetcherInternationalHorrorGuildLongFiction(UrlFetcherInternationalHorrorGuild):
   source_id = 'international_horror_guild_long_fiction'
-  NAME = 'International Horror Guild - Long Fiction'
+  NAME = 'International Horror Guild - Long Fiction (discontinued)'
   CATEGORY = 'Long Fiction'
   CATEGORY_ALIASES = ('long fiction',)
 
 
 class UrlFetcherInternationalHorrorGuildMidLengthFiction(UrlFetcherInternationalHorrorGuild):
   source_id = 'international_horror_guild_mid_length_fiction'
-  NAME = 'International Horror Guild - Mid-Length Fiction'
+  NAME = 'International Horror Guild - Mid-Length Fiction (discontinued)'
   CATEGORY = 'Mid-Length Fiction'
   CATEGORY_ALIASES = ('mid-length fiction', 'mid length fiction')
 
 
 class UrlFetcherInternationalHorrorGuildCollection(UrlFetcherInternationalHorrorGuild):
   source_id = 'international_horror_guild_collection'
-  NAME = 'International Horror Guild - Collection'
+  NAME = 'International Horror Guild - Collection (discontinued)'
   CATEGORY = 'Collection'
   CATEGORY_ALIASES = (
     'collection',
@@ -153,14 +153,14 @@ class UrlFetcherInternationalHorrorGuildCollection(UrlFetcherInternationalHorror
 
 class UrlFetcherInternationalHorrorGuildAnthology(UrlFetcherInternationalHorrorGuild):
   source_id = 'international_horror_guild_anthology'
-  NAME = 'International Horror Guild - Anthology'
+  NAME = 'International Horror Guild - Anthology (discontinued)'
   CATEGORY = 'Anthology'
   CATEGORY_ALIASES = ('anthology',)
 
 
 class UrlFetcherInternationalHorrorGuildNonfiction(UrlFetcherInternationalHorrorGuild):
   source_id = 'international_horror_guild_nonfiction'
-  NAME = 'International Horror Guild - Non-Fiction'
+  NAME = 'International Horror Guild - Non-Fiction (discontinued)'
   FILTER_CATEGORIES = IHG_NONFICTION_CATEGORIES
   CATEGORY = 'Non-Fiction'
   CATEGORY_ALIASES = ('non-fiction', 'non fiction', 'nonfiction')
@@ -168,7 +168,7 @@ class UrlFetcherInternationalHorrorGuildNonfiction(UrlFetcherInternationalHorror
 
 class UrlFetcherInternationalHorrorGuildIllustratedNarrative(UrlFetcherInternationalHorrorGuild):
   source_id = 'international_horror_guild_illustrated_narrative'
-  NAME = 'International Horror Guild - Illustrated Narrative'
+  NAME = 'International Horror Guild - Illustrated Narrative (discontinued)'
   CATEGORY = 'Illustrated Narrative'
   CATEGORY_ALIASES = (
     'illustrated narrative',
