@@ -16,37 +16,37 @@
     ]
   },
   "summary": {
-    "registered_recipes": 391,
-    "automated_passed": 391,
-    "manual_verified": 0
+    "registered_recipes": 396,
+    "automated_passed": 396,
+    "manual_verified": 13
   },
   "recipes": [
     {
       "source_id": "r_fantasy_top_novels_2025",
       "name": "r/Fantasy Top Novels 2025",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "r_fantasy_top_standalone_novels_2024",
       "name": "r/Fantasy Top Standalone Novels 2024",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "r_fantasy_top_self_published_novels_2024",
       "name": "r/Fantasy Top Self-Published Novels 2024",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "sword_and_laser_book_list",
       "name": "Sword and Laser",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
@@ -151,28 +151,63 @@
       "source_id": "r_bookclub_previous_selections",
       "name": "r/bookclub",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "big_library_read",
       "name": "Big Library Read (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "libby_reads_global",
       "name": "Libby Reads Global",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "bookbrowse_online_book_club",
       "name": "BookBrowse Online Book Club",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
+      "notes": ""
+    },
+    {
+      "source_id": "dragons_and_jetpacks",
+      "name": "Dragons & Jetpacks",
+      "automated_status": "passed",
+      "manual_status": "passed",
+      "notes": ""
+    },
+    {
+      "source_id": "spectology",
+      "name": "Spectology (discontinued)",
+      "automated_status": "passed",
+      "manual_status": "passed",
+      "notes": ""
+    },
+    {
+      "source_id": "hugo_girl",
+      "name": "Hugo, Girl!",
+      "automated_status": "passed",
+      "manual_status": "passed",
+      "notes": ""
+    },
+    {
+      "source_id": "between_two_books_numbered_archive",
+      "name": "Between Two Books - Official Book List",
+      "automated_status": "passed",
+      "manual_status": "passed",
+      "notes": ""
+    },
+    {
+      "source_id": "between_two_books_isolation_reading_lists",
+      "name": "Between Two Books - Isolation & Themed Lists",
+      "automated_status": "passed",
+      "manual_status": "passed",
       "notes": ""
     },
     {

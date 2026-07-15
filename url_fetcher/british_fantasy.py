@@ -214,6 +214,10 @@ class UrlFetcherBritishFantasyBestNovel(UrlFetcherBritishFantasy):
   CATEGORY_ALIASES = (
     'novel',
     'best novel',
+    'novel the august derleth fantasy award',
+    'novel the august derleth award',
+    'august derleth fantasy award novel',
+    'august derleth award novel',
     'august derleth fantasy award best novel',
     'august derleth award best novel',
   )

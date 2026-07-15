@@ -9,6 +9,13 @@ from .r_fantasy_top_standalone_novels_2024 import (
   UrlFetcherRFantasyTopStandaloneNovels2024,
 )
 from .bookbrowse import UrlFetcherBookBrowseOnlineBookClub
+from .dragons_and_jetpacks import UrlFetcherDragonsJetpacks
+from .spectology import UrlFetcherSpectology
+from .hugo_girl import UrlFetcherHugoGirl
+from .between_two_books import (
+  UrlFetcherBetweenTwoBooksIsolation,
+  UrlFetcherBetweenTwoBooksNumbered,
+)
 from .anthony import (
   UrlFetcherAnthonyAnthologyCollection,
   UrlFetcherAnthonyChildrensYA,
@@ -535,6 +542,11 @@ URL_FETCHER_CLASSES = (
   UrlFetcherBigLibraryRead,
   UrlFetcherLibbyReadsGlobal,
   UrlFetcherBookBrowseOnlineBookClub,
+  UrlFetcherDragonsJetpacks,
+  UrlFetcherSpectology,
+  UrlFetcherHugoGirl,
+  UrlFetcherBetweenTwoBooksNumbered,
+  UrlFetcherBetweenTwoBooksIsolation,
   UrlFetcherHugoAwardsNovel,
   UrlFetcherHugoAwardsNovella,
   UrlFetcherHugoAwardsSeries,

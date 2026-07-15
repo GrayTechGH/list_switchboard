@@ -11,9 +11,15 @@ Maintenance notes:
   The JSON ledger is used only if both remote paths fail validation.
 - Big Library Read ended in July 2025. Libby Reads Global starts with the
   November 2025 Libby & Sora Reads event; regional Libby Reads cards are out of
-  scope.
-- The packaged ledger is a source-unavailable fallback, not an enrichment
-  layer. Its per-entry URLs retain the official provenance used to verify it.
+  scope. The Libby recipe includes the fixed Big Library Read ledger as its
+  predecessor era so users get one continuous global-program history.
+- For the retired Big Library Read recipe, the packaged ledger is only a
+  source-unavailable fallback. For the successor Libby recipe, those fixed
+  historical rows are the continuity baseline and complete remote Libby rows
+  replace only the current era. Per-entry URLs retain official provenance.
+- The retired November 2025 launch microsite is a fixed ledger row because it
+  returns HTTP 403 through both Calibre transports. Current event pages remain
+  live, and their date parser accepts full or abbreviated English month names.
 """
 
 import json
@@ -88,11 +94,20 @@ BLOCKED_MARKERS = (
   'you have been blocked',
 )
 MONTHS = {
-  'january': 1, 'february': 2, 'march': 3, 'april': 4,
-  'may': 5, 'june': 6, 'july': 7, 'august': 8,
-  'september': 9, 'october': 10, 'november': 11, 'december': 12,
+  'jan': 1, 'january': 1,
+  'feb': 2, 'february': 2,
+  'mar': 3, 'march': 3,
+  'apr': 4, 'april': 4,
+  'may': 5,
+  'jun': 6, 'june': 6,
+  'jul': 7, 'july': 7,
+  'aug': 8, 'august': 8,
+  'sep': 9, 'sept': 9, 'september': 9,
+  'oct': 10, 'october': 10,
+  'nov': 11, 'november': 11,
+  'dec': 12, 'december': 12,
 }
-MONTH_PATTERN = '|'.join(MONTHS)
+MONTH_PATTERN = '|'.join(sorted(MONTHS, key=len, reverse=True))
 DATE_RANGE_RE = re.compile(
   rf'\b(?P<start_month>{MONTH_PATTERN})\s+(?P<start_day>\d{{1,2}})'
   r'(?:st|nd|rd|th)?\s*[-\u2013\u2014]\s*'
@@ -106,6 +121,7 @@ LIBBY_ARCHIVE_SPECS = (
   ('https://www.libbylife.com/events/libby-reads-i-see-youve-called-in-dead', None),
   ('https://www.libbylife.com/events/libby-reads-secrets-of-the-broken-house', None),
 )
+LIBBY_FIXED_COMPLETED_URLS = frozenset((LIBBY_ARCHIVE_SPECS[0][0],))
 LIBBY_REQUIRED_TITLES = frozenset((
   'the village beyond the mist',
   'meet the neighbors',
@@ -442,12 +458,38 @@ class BigLibraryReadParser(CommunityReadParserBase):
 
 
 class LibbyReadsGlobalParser(CommunityReadParserBase):
-  """Parse global-only Libby Reads landing, archive, and event pages."""
+  """Parse the continuous global program across both official brand eras."""
 
   COLLECTION = 'libby_reads_global'
   CLUB_NAME = 'Libby Reads Global'
   SOURCE_ID = 'libby_reads_global'
   PROGRAM_ERA = 'Libby Reads'
+
+  def predecessor_rows(self):
+    return [
+      dict(row) for row in
+      load_history_ledger()['collections']['big_library_read']]
+
+  def ledger_rows(self):
+    return self.predecessor_rows() + super().ledger_rows()
+
+  def continuity_rows(self, current_rows):
+    rows = self.predecessor_rows()
+    seen = {
+      (row['start_date'], normalize_identity(row['title'])) for row in rows}
+    for row in current_rows:
+      key = (row['start_date'], normalize_identity(row['title']))
+      if key not in seen:
+        seen.add(key)
+        rows.append(row)
+    return rows
+
+  def fixed_completed_row(self, source_url):
+    rows = load_history_ledger()['collections']['libby_reads_global']
+    matches = [dict(row) for row in rows if row['source_url'] == source_url]
+    if len(matches) != 1:
+      raise ValueError('The fixed Libby Reads event is missing from the ledger.')
+    return matches[0]
 
   def parse(self, html, base_url=LIBBY_READS_URL, name=None, fetch_url=None):
     soup = reject_interstitial(html, self.CLUB_NAME)
@@ -469,13 +511,20 @@ class LibbyReadsGlobalParser(CommunityReadParserBase):
     rows = []
     seen = set()
     for source_url, fallback_year in specs:
-      detail = reject_interstitial(fetch_url(source_url), 'Libby Reads event page')
-      row = self.detail_row(detail, source_url, fallback_year=fallback_year)
+      if source_url in LIBBY_FIXED_COMPLETED_URLS:
+        # The retired launch microsite now returns HTTP 403 through both of
+        # Calibre's transports. Its completed, immutable event stays anchored
+        # to the verified ledger row while current event pages remain live.
+        row = self.fixed_completed_row(source_url)
+      else:
+        detail = reject_interstitial(fetch_url(source_url), 'Libby Reads event page')
+        row = self.detail_row(detail, source_url, fallback_year=fallback_year)
       key = (row['start_date'], normalize_identity(row['title']))
       if key not in seen:
         seen.add(key)
         rows.append(row)
     self.validate_complete(rows)
+    rows = self.continuity_rows(rows)
     return self.result_from_rows(rows, name or self.CLUB_NAME, base_url)
 
   def detail_row(self, soup, source_url, fallback_year=None):

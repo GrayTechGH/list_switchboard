@@ -7,6 +7,7 @@ import types
 import unittest
 from copy import deepcopy
 from datetime import date
+from html import escape
 from pathlib import Path
 
 
@@ -149,6 +150,301 @@ def entry_source_url(entry):
 def entry_source_url_optional(entry):
   source = entry.get('source') or {}
   return source.get('url', '')
+
+
+def dragons_jetpacks_row(
+    record_id, title, authors, shelves, start='', end='',
+    include_activity=True):
+  book_url = f'/book/show/{record_id}-fixture-book'
+  author_links = ''.join(
+    f'<a href="/author/show/{record_id}{index}.Fixture">{escape(author)}</a>'
+    for index, author in enumerate(authors, 1))
+  shelf_links = ', '.join(
+    f'<a class="actionLinkLite" href="/group/bookshelf/'
+    f'106876-dragons-jetpacks?shelf={escape(shelf)}">{escape(shelf)}</a>'
+    for shelf in shelves)
+  activity = (
+    f'<a class="actionLink" href="/group/show_book/106876-dragons-jetpacks'
+    f'?group_book_id={record_id}">view activity</a>'
+    if include_activity else '')
+  return f'''
+    <tr id="groupBook{record_id}">
+      <td><a href="{book_url}"><img alt="cover"></a></td>
+      <td><a href="{book_url}">{escape(title)}</a></td>
+      <td>{author_links}</td>
+      <td></td>
+      <td>{shelf_links}</td>
+      <td>{escape(start)}</td>
+      <td>{escape(end)}</td>
+      <td>Moderator</td>
+      <td>2026/01/01</td>
+      <td>{activity}</td>
+    </tr>
+  '''
+
+
+def dragons_jetpacks_page(rows, next_href='', title_suffix='Showing fixture rows'):
+  next_link = (
+    f'<a class="next_page" rel="next" href="{escape(next_href)}">next</a>'
+    if next_href else '')
+  return f'''
+    <html>
+      <head><title>group-read shelf for Dragons &amp; Jetpacks {escape(title_suffix)}</title></head>
+      <body>
+        <table id="groupBooks">
+          <tr>
+            <th></th><th>title</th><th>author</th><th>my rating</th>
+            <th>shelves</th><th>date started</th><th>date finished</th>
+            <th>added by</th><th>date added</th><th></th>
+          </tr>
+          {''.join(rows)}
+        </table>
+        {next_link}
+      </body>
+    </html>
+  '''
+
+
+def spectology_feed(overrides=None, omit=(), duplicate=(), extra_items=()):
+  overrides = overrides or {}
+  items = []
+  dates = {
+    1: 'Tue, 03 Apr 2018 01:00:00 -0300',
+    27: 'Tue, 04 Aug 2020 01:15:20 -0300',
+    28: 'Tue, 08 Sep 2020 21:02:31 -0300',
+  }
+  for cycle in range(1, 29):
+    if cycle in omit:
+      continue
+    data = {
+      'title': f'{cycle}.1: Fixture Book {cycle} pre-read',
+      'description': f'<p>Fixture Book {cycle} by Author Name.</p>',
+      'date': dates.get(cycle, 'Tue, 01 Jan 2019 01:00:00 -0400'),
+    }
+    data.update(overrides.get(cycle) or {})
+    count = 2 if cycle in duplicate else 1
+    for copy_index in range(count):
+      items.append(f'''
+        <item>
+          <title>{escape(data['title'])}</title>
+          <link>https://www.spectology.com/e/cycle-{cycle}-{copy_index}/</link>
+          <guid>spectology-fixture-{cycle}-{copy_index}</guid>
+          <pubDate>{data['date']}</pubDate>
+          <description><![CDATA[{data['description']}]]></description>
+        </item>
+      ''')
+  items.extend(extra_items)
+  return f'''<?xml version="1.0" encoding="UTF-8"?>
+    <rss version="2.0"><channel>
+      <title>Spectology: The Science Fiction Book Club Podcast</title>
+      <link>https://www.spectology.com</link>
+      {''.join(items)}
+    </channel></rss>
+  '''
+
+
+def hugo_girl_fixture_records(include_episode_94=True, overrides=None):
+  from parser.hugo_girl import SOURCE_EXCLUSIONS
+
+  overrides = overrides or {}
+  records = {}
+  final_episode = 94 if include_episode_94 else 93
+  for episode_number in range(1, final_episode + 1):
+    title = f'Episode {episode_number} - Fixture Book {episode_number}: Discussion'
+    description = f'We read Fixture Book {episode_number} by Alice Author.'
+    if episode_number in SOURCE_EXCLUSIONS:
+      title = SOURCE_EXCLUSIONS[episode_number]
+      if episode_number in (13, 70, 74):
+        description = 'We read this Hugo-winning short story for the episode.'
+      elif episode_number == 79:
+        description = 'We attended an opera, with no book discussion.'
+      else:
+        description = 'We watched and discussed this movie.'
+    records[episode_number] = {
+      'title': title,
+      'description': description,
+      'url': f'https://hugogirl.libsyn.com/episode-{episode_number}-fixture',
+      'date': f'Wed, {((episode_number - 1) % 28) + 1:02d} Jun 2026 12:00:00 +0000',
+    }
+  records.update({
+    1: {
+      **records[1],
+      'title': "Episode 1 - Ender's Game: In the Bunner Tuggles",
+      'description': "Book: Ender's Game by Orson Scott Card.",
+    },
+    2: {
+      **records[2],
+      'title': 'Episode 2: Binti - Those Malevolent Jellyfish',
+      'description': 'We read Binti by Nnedi Okorafor.',
+    },
+    7: {
+      **records[7],
+      'title': (
+        'Episode 7: Harry Potter & the Goblet of Fire — Snake milk, or, '
+        'non-dairy snake beverage'),
+      'description': (
+        "Your favorite space crones read J.K. Rowling's Harry Potter & the "
+        'Goblet of Fire.'),
+    },
+    22: {
+      **records[22],
+      'title': 'Episode 22 - The Fifth Season: Orogenous Zones',
+      'description': 'We discussed The Fifth Season by N.K. Jemisin.',
+    },
+    42: {
+      **records[42],
+      'title': 'Episode 42 - 2001: A Space Odyssey: Friends of Hal',
+      'description': 'This month we read and watched 2001: A Space Odyssey. The film won a Hugo.',
+    },
+    57: {
+      **records[57],
+      'title': 'Episode 57 - The Sword in the Stone: Cheeky Fantasy',
+      'description': (
+        "This month we read T.H. White's retro Hugo winner for best novel, "
+        'The Sword in the Stone.'),
+    },
+    62: {
+      **records[62],
+      'title': 'Episode 62 - Blood of the Dragon: Dugs Talk',
+      'description': (
+        'We discussed Blood of the Dragon, which won the Hugo for best novella. '
+        'It consists of the Daenerys chapters from Game of Thrones.'),
+    },
+    71: {
+      **records[71],
+      'title': (
+        "Episode 71 - This is How You Lose the Time War: Blue & Red's "
+        'Excellent Adventure'),
+      'description': 'Being gay and doing crime, all across space and time!',
+    },
+    84: {
+      **records[84],
+      'title': 'Episode 84 - Redshirts: All I Got Was This Stupid T-shirt',
+      'description': 'Thanks to the guys for reading Redshirts. Book: Redshirts by John Scalzi.',
+    },
+    89: {
+      **records[89],
+      'title': 'Episode 89 - Endurance: Rotten Ice',
+      'description': (
+        "We read Endurance: Shackleton's Incredible Voyage, by Alfred Lansing."),
+    },
+    92: {
+      **records[92],
+      'title': 'Episode 92 - Paladin of Souls: H4H',
+      'description': (
+        "We read Lois McMaster Bujold's 2004 Hugo winner, Paladin of Souls."),
+    },
+    93: {
+      **records[93],
+      'title': "Episode 93 - Downbelow Station: Chekov's Hisa",
+      'description': 'We read Downbelow Station by CJ Cherryh.',
+    },
+  })
+  for episode_number, values in overrides.items():
+    records[episode_number].update(values)
+  return records
+
+
+def hugo_girl_feed(omit=(), duplicate=(), channel='Hugo, Girl!', overrides=None):
+  records = hugo_girl_fixture_records(overrides=overrides)
+  items = []
+  for episode_number, record in sorted(records.items(), reverse=True):
+    if episode_number in omit:
+      continue
+    count = 2 if episode_number in duplicate else 1
+    for copy_index in range(count):
+      items.append(f'''
+        <item>
+          <title>{escape(record['title'])}</title>
+          <link>{escape(record['url'])}</link>
+          <guid>hugo-girl-{episode_number}-{copy_index}</guid>
+          <pubDate>{record['date']}</pubDate>
+          <description><![CDATA[<p>{record['description']}</p>]]></description>
+        </item>
+      ''')
+  items.append('''
+    <item><title>Happy Hour</title><description>Unnumbered chat.</description></item>
+    <item><title>Interview with an Author</title><description>Unnumbered interview.</description></item>
+    <item><title>Worldcon Report</title><description>Unnumbered convention report.</description></item>
+    <item><title>Cookbook Minisode</title><description>Unnumbered cookbook special.</description></item>
+    <item><title>Hugo Announcement</title><description>Unnumbered announcement.</description></item>
+  ''')
+  return f'''<?xml version="1.0" encoding="UTF-8"?>
+    <rss version="2.0"><channel>
+      <title>{escape(channel)}</title>
+      <link>https://hugogirl.libsyn.com</link>
+      {''.join(items)}
+    </channel></rss>
+  '''
+
+
+def hugo_girl_html(overrides=None):
+  records = hugo_girl_fixture_records(
+    include_episode_94=False, overrides=overrides)
+  items = []
+  for record in reversed(list(records.values())):
+    items.append(f'''
+      <li class="list-item">
+        <h2 class="list-item-content__title">{escape(record['title'])}</h2>
+        <div class="list-item-content__description">
+          <p>{escape(record['description'])}</p>
+          <p><a href="{escape(record['url'])}">Listen</a></p>
+        </div>
+      </li>
+    ''')
+  return f'''<!DOCTYPE html><html>
+    <head><title>All Episodes — Hugo, Girl! the Podcast</title></head>
+    <body><main><ul>{''.join(items)}</ul></main></body>
+  </html>'''
+
+
+def between_two_books_html(numbered_rows=None, isolation_rows=None):
+  from parser.between_two_books import load_history_ledger
+
+  ledger = load_history_ledger()['collections']
+  numbered_rows = list(numbered_rows or ledger['numbered'])
+  isolation_rows = list(isolation_rows or ledger['isolation'])
+  numbered_html = []
+  source_overrides = {
+    4: '‘Why Not Say What Happened? By Ivana Lowell (Emma Forrest recommendation)',
+    16: '‘Just Kids’, by Patti Smith (Florence recommendation)',
+    20: '‘salt.’ by Nayyirah Waheed (Florence recommendation)',
+    25: "'In Praise of Shadows’ by Jun’ichiro Tanizaki "
+        '(guest recommendation from Grayson Perry)',
+    53: "'The Year of Magical Thinking' by Joan Didion "
+        '(guest recommendation by Arlo Parks',
+  }
+  for position, row in enumerate(numbered_rows, 1):
+    title, authors, _selection_type, _selector, label, _year = row
+    raw = source_overrides.get(position)
+    if raw is None:
+      raw = f"'{title}' by {' & '.join(authors)}"
+      if label:
+        raw += f' {label}'
+    numbered_html.append(f'<li>{escape(raw)}</li>')
+
+  themed_html = []
+  current_theme = 'Isolation reading list'
+  current_rows = []
+
+  def flush_theme():
+    if current_rows:
+      themed_html.append('<p>' + '<br />'.join(current_rows) + '</p>')
+
+  for theme, title, _authors, raw_credit, _role, _credential in isolation_rows:
+    if theme != current_theme:
+      flush_theme()
+      current_rows = []
+      current_theme = theme
+      themed_html.append(f'<h2>{escape(theme.upper())}</h2>')
+    raw = title if not raw_credit else f'{title}, {raw_credit}'
+    current_rows.append(escape(raw))
+  flush_theme()
+  return f'''<!DOCTYPE html><html><head><title>Between Two Books</title></head>
+    <body><section id="book-list"><h2>Book list</h2>
+      <div class="book-list-section"><ol>{''.join(numbered_html)}</ol></div>
+      <div class="isolation-reading-list-section">{''.join(themed_html)}</div>
+    </section></body></html>'''
 
 
 class ImportMatchingTest(unittest.TestCase):
@@ -2140,6 +2436,7 @@ Graphic Novel: Watchmen by Alan Moore, Dave Gibbons & John Higgins
     self.assertIn('Packaged history used', unavailable_result['notes'][0])
 
   def test_libby_reads_global_remote_filters_regions_and_falls_back_on_detail_failure(self):
+    import url_fetcher.big_library_read as fetcher_module
     from parser.big_library_read import LIBBY_ARCHIVE_SPECS, LibbyReadsGlobalParser
     from url_fetcher.big_library_read import UrlFetcherLibbyReadsGlobal
 
@@ -2163,7 +2460,7 @@ Graphic Novel: Watchmen by Alan Moore, Dave Gibbons & John Higgins
         'July 9 - 23, 2026', 'LIBBY READS GLOBAL'),
       LIBBY_ARCHIVE_SPECS[3][0]: (
         'Secrets of the Broken House', 'Taryn Souders',
-        'November 26 - December 10, 2026', 'LIBBY READS (GLOBAL)'),
+        'Nov 26 - Dec 10, 2026', 'LIBBY READS (GLOBAL)'),
     }
 
     def detail_html(spec):
@@ -2181,15 +2478,56 @@ Graphic Novel: Watchmen by Alan Moore, Dave Gibbons & John Higgins
     remote = LibbyReadsGlobalParser().parse(
       landing, 'https://www.libbylife.com/libby-reads', fetch_url=fetch_detail)
 
+    self.assertEqual(40, len(remote['entries']))
     self.assertEqual([
+      'The Four Corners of the Sky', "The Storyteller's Death",
       'The Village Beyond the Mist', 'Meet the Neighbors',
       "I See You've Called in Dead", 'Secrets of the Broken House',
-    ], [entry['title'] for entry in remote['entries']])
-    self.assertEqual('2025-11-18', remote['entries'][0]['event_date'])
+    ], [entry['title'] for entry in (
+      remote['entries'][0], remote['entries'][35],
+      *remote['entries'][36:])])
+    self.assertEqual('Big Library Read', remote['entries'][0]['program_era'])
+    self.assertEqual('Libby Reads', remote['entries'][36]['program_era'])
+    self.assertEqual('2025-11-18', remote['entries'][36]['event_date'])
     self.assertFalse(any('familia' in url or 'resurrection' in url for url in calls))
     self.assertEqual([], remote['notes'])
 
     fetcher = UrlFetcherLibbyReadsGlobal()
+    user_agents = []
+
+    def browser_identity_fetch(url, user_agent=None):
+      user_agents.append(user_agent)
+      if url == fetcher.URL:
+        return landing
+      return detail_html(detail_specs[url])
+
+    fetched = fetcher.fetch_and_parse(browser_identity_fetch)
+    self.assertEqual(40, len(fetched['entries']))
+    self.assertTrue(user_agents)
+    self.assertEqual(
+      {fetcher.USER_AGENT}, set(user_agents))
+
+    secure_calls = []
+
+    def blocked_mechanize(_url, user_agent=None):
+      raise OSError(f'mechanize rejected {user_agent}')
+
+    def secure_fetch(url, cacerts=None, timeout=None, headers=None):
+      secure_calls.append((url, cacerts, timeout, headers))
+      if url == fetcher.URL:
+        return landing.encode('utf-8')
+      return detail_html(detail_specs[url]).encode('utf-8')
+
+    original_secure_fetch = fetcher_module.calibre_https_fetch
+    fetcher_module.calibre_https_fetch = secure_fetch
+    try:
+      secure_result = fetcher.fetch_and_parse(blocked_mechanize)
+    finally:
+      fetcher_module.calibre_https_fetch = original_secure_fetch
+    self.assertEqual(40, len(secure_result['entries']))
+    self.assertEqual(4, len(secure_calls))
+    self.assertTrue(all(
+      call[3]['User-Agent'] == fetcher.USER_AGENT for call in secure_calls))
 
     def failing_fetch(url):
       if url == fetcher.URL:
@@ -2197,9 +2535,12 @@ Graphic Novel: Watchmen by Alan Moore, Dave Gibbons & John Higgins
       raise OSError('detail unavailable')
 
     fallback = fetcher.fetch_and_parse(failing_fetch)
-    self.assertEqual(4, len(fallback['entries']))
+    self.assertEqual(40, len(fallback['entries']))
     self.assertIn('Packaged history used', fallback['notes'][0])
     self.assertEqual(set(remote['entries'][0]), set(fallback['entries'][0]))
+    self.assertEqual(
+      [str(position) for position in range(1, 41)],
+      [entry['position'] for entry in fallback['entries']])
 
   def test_community_read_ledger_schema_and_fetcher_registry(self):
     from parser.base import CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS
@@ -2228,6 +2569,7 @@ Graphic Novel: Watchmen by Alan Moore, Dave Gibbons & John Higgins
       self.assertEqual(
         ({'label': 'Automatic', 'value': 'automatic'},),
         fetcher.source_choices())
+    self.assertIn('Chrome/', UrlFetcherLibbyReadsGlobal.USER_AGENT)
 
     registry_ids = [fetcher.source_id for fetcher in available_url_fetchers()]
     self.assertLess(
@@ -2238,6 +2580,759 @@ Graphic Novel: Watchmen by Alan Moore, Dave Gibbons & John Higgins
       registry_ids.index('libby_reads_global'))
     self.assertLess(
       registry_ids.index('libby_reads_global'),
+      registry_ids.index('hugo_awards_novel'))
+
+  def test_dragons_and_jetpacks_paginates_and_preserves_metadata(self):
+    from parser.dragons_and_jetpacks import DragonsJetpacksParser, SHELF_URL
+
+    page_2_url = (
+      'https://www.goodreads.com/group/bookshelf/106876-dragons-jetpacks'
+      '?page=2&per_page=100&shelf=group-read')
+    page_3_url = (
+      'https://www.goodreads.com/group/bookshelf/106876-dragons-jetpacks'
+      '?page=3&per_page=100&shelf=group-read')
+    mod_row = dragons_jetpacks_row(
+      40,
+      'Moonward (The Long Saga, #2)',
+      ['Doe, Jane Q., Jr.'],
+      ['currently-reading', '2026', 'group-read', 'mod-special', 'sci-fi'],
+      '2026/07/01',
+      '2026/08/31')
+    buddy_row = dragons_jetpacks_row(
+      30,
+      'A Book (A Parenthetical Subtitle)',
+      ['Smith, Alex', 'Jones, B.'],
+      ['read', '2025', 'fantasy', 'group-read', 'buddy-read'],
+      '2025/09/01',
+      '2025/09/30')
+    dated_2021 = dragons_jetpacks_row(
+      20, 'Dated Book', ['Wells, Martha'],
+      ['read', '2020', 'group-read', 'sci-fi'],
+      '2021/02/01', '2021/02/28')
+    undated_2021 = dragons_jetpacks_row(
+      10, 'Undated Book', ['Chambers, Becky'],
+      ['read', '2021', 'group-read', 'sci-fi'])
+    first = dragons_jetpacks_page(
+      [mod_row, buddy_row],
+      '/group/bookshelf/106876-dragons-jetpacks?page=2&per_page=100&shelf=group-read',
+      'Showing 1-2 of 99')
+    pages = {
+      page_2_url: dragons_jetpacks_page(
+        [buddy_row, dated_2021],
+        '/group/bookshelf/106876-dragons-jetpacks?page=3&per_page=100&shelf=group-read',
+        'Showing 3-4 of 101'),
+      page_3_url: dragons_jetpacks_page(
+        [undated_2021], title_suffix='Showing 5-5 of 100'),
+    }
+    calls = []
+
+    def fetch(url):
+      calls.append(url)
+      return pages[url]
+
+    progress_updates = []
+
+    def progress(done, total, message):
+      # Mirrors ImportFlowMixin.update_import_fetch_progress's numeric contract.
+      max(total, 1)
+      progress_updates.append((done, total, message))
+
+    parsed = DragonsJetpacksParser().parse(
+      first, SHELF_URL, fetch_url=fetch, progress=progress)
+    entries = parsed['entries']
+    by_title = {entry['title']: entry for entry in entries}
+
+    self.assertEqual([page_2_url, page_3_url], calls)
+    self.assertEqual([(1, 2), (2, 3), (3, 3)], [
+      (done, total) for done, total, _message in progress_updates])
+    self.assertEqual(['1', '2', '3', '4'], [entry['position'] for entry in entries])
+    self.assertEqual(
+      ['Dated Book', 'Undated Book', 'A Book (A Parenthetical Subtitle)', 'Moonward'],
+      [entry['title'] for entry in entries])
+    self.assertEqual(['Jane Q. Doe, Jr.'], by_title['Moonward']['authors'])
+    self.assertEqual('Moonward (The Long Saga, #2)', by_title['Moonward']['raw_title'])
+    self.assertEqual(['mod-special', 'sci-fi'], by_title['Moonward']['shelf_labels'])
+    self.assertEqual('mod-special', by_title['Moonward']['theme_or_track'])
+    self.assertEqual('mod_pick', by_title['Moonward']['selection_type'])
+    self.assertEqual('2026-07-01', by_title['Moonward']['event_date'])
+    self.assertEqual('2026-08-31', by_title['Moonward']['discussion_end_date'])
+    self.assertEqual('7', by_title['Moonward']['selection_month'])
+    self.assertEqual(
+      'dragons-jetpacks:2026-07-01:mod-special',
+      by_title['Moonward']['event_group_id'])
+    self.assertEqual(
+      'goodreads-group-book:40', by_title['Moonward']['source_record_id'])
+    self.assertEqual(
+      'https://www.goodreads.com/group/show_book/106876-dragons-jetpacks'
+      '?group_book_id=40', entry_source_url(by_title['Moonward']))
+    self.assertEqual(
+      ['Alex Smith', 'B. Jones'],
+      by_title['A Book (A Parenthetical Subtitle)']['authors'])
+    self.assertEqual('buddy-read', by_title['A Book (A Parenthetical Subtitle)']['theme_or_track'])
+    self.assertEqual('buddy_read', by_title['A Book (A Parenthetical Subtitle)']['selection_type'])
+    self.assertEqual('2021', by_title['Undated Book']['selection_year'])
+    self.assertNotIn('selection_month', by_title['Undated Book'])
+    self.assertNotIn('event_date', by_title['Undated Book'])
+    self.assertNotIn('notes', parsed)
+    self.assertFalse(parsed['match_series'])
+
+  def test_dragons_and_jetpacks_rejects_invalid_pages_and_pagination(self):
+    import parser.dragons_and_jetpacks as module
+    from parser.dragons_and_jetpacks import DragonsJetpacksParser, SHELF_URL
+
+    parser = DragonsJetpacksParser()
+    with self.assertRaisesRegex(ValueError, 'login, challenge, empty'):
+      parser.parse('<html><title>Sign in</title><p>Welcome back</p></html>', SHELF_URL)
+
+    missing_headers = '''
+      <html><head><title>group-read shelf for Dragons &amp; Jetpacks</title></head>
+      <table id="groupBooks"><tr><th>title</th></tr>
+      <tr id="groupBook1"><td>Book</td></tr></table></html>
+    '''
+    with self.assertRaisesRegex(ValueError, 'missing required columns'):
+      parser.parse(missing_headers, SHELF_URL)
+
+    row = dragons_jetpacks_row(
+      1, 'Book', ['Author, Alice'], ['2026', 'group-read', 'fantasy'],
+      '2026/01/01', '2026/01/31')
+    wrong_host = dragons_jetpacks_page(
+      [row],
+      'https://example.com/group/bookshelf/106876-dragons-jetpacks'
+      '?page=2&per_page=100&shelf=group-read')
+    with self.assertRaisesRegex(ValueError, 'left the official group-read shelf'):
+      parser.parse(wrong_host, SHELF_URL, fetch_url=lambda _url: '')
+
+    linked_failure = dragons_jetpacks_page(
+      [row],
+      '/group/bookshelf/106876-dragons-jetpacks'
+      '?page=2&per_page=100&shelf=group-read')
+    fetch_failures = []
+
+    def fail_fetch(url):
+      raise OSError(f'could not fetch {url}')
+
+    with self.assertRaisesRegex(OSError, 'could not fetch'):
+      parser.parse(
+        linked_failure,
+        SHELF_URL,
+        fetch_url=fail_fetch,
+        fetch_error=lambda url, err, entry: fetch_failures.append(
+          (url, str(err), entry['position'])))
+    self.assertEqual(1, len(fetch_failures))
+    self.assertEqual('2', fetch_failures[0][2])
+
+    looping = dragons_jetpacks_page(
+      [row],
+      '/group/bookshelf/106876-dragons-jetpacks?per_page=100&shelf=group-read')
+    with self.assertRaisesRegex(ValueError, 'pagination looped'):
+      parser.parse(looping, SHELF_URL, fetch_url=lambda _url: looping)
+
+    old_limit = module.MAX_PAGES
+    module.MAX_PAGES = 1
+    try:
+      with self.assertRaisesRegex(ValueError, 'safety limit'):
+        parser.parse(
+          dragons_jetpacks_page(
+            [row],
+            '/group/bookshelf/106876-dragons-jetpacks'
+            '?page=2&per_page=100&shelf=group-read'),
+          SHELF_URL,
+          fetch_url=lambda _url: '')
+    finally:
+      module.MAX_PAGES = old_limit
+
+  def test_dragons_and_jetpacks_uses_bounded_official_discussion_month(self):
+    from parser.dragons_and_jetpacks import DragonsJetpacksParser, SHELF_URL
+
+    september = dragons_jetpacks_row(
+      1, 'September Book', ['Author, Alice'],
+      ['read', '2021', 'group-read', 'fantasy'],
+      '2021/09/01', '2021/09/30')
+    game_of_thrones = dragons_jetpacks_row(
+      2916139, 'A Game of Thrones (A Song of Ice and Fire, #1)',
+      ['Martin, George R.R.'], ['read', '2021', 'fantasy', 'group-read'])
+    to_be_taught = dragons_jetpacks_row(
+      2916140, 'To Be Taught, If Fortunate', ['Chambers, Becky'],
+      ['read', '2021', 'group-read', 'sci-fi'])
+    november = dragons_jetpacks_row(
+      2, 'November Book', ['Author, Bob'],
+      ['read', '2021', 'group-read', 'sci-fi'],
+      '2021/11/01', '2021/11/30')
+
+    parsed = DragonsJetpacksParser().parse(
+      dragons_jetpacks_page(
+        [november, to_be_taught, game_of_thrones, september]), SHELF_URL)
+    entries = parsed['entries']
+    corrected = entries[1]
+    second_corrected = entries[2]
+
+    self.assertEqual(
+      [
+        'September Book', 'A Game of Thrones',
+        'To Be Taught, If Fortunate', 'November Book',
+      ],
+      [entry['title'] for entry in entries])
+    self.assertEqual(['1', '2', '3', '4'], [entry['position'] for entry in entries])
+    self.assertEqual('2021', corrected['selection_year'])
+    self.assertEqual('10', corrected['selection_month'])
+    self.assertEqual(
+      'https://www.goodreads.com/topic/show/'
+      '22097499-a-game-of-thrones-oct-2021-spoilers',
+      corrected['discussion_url'])
+    self.assertNotIn('discussion_start_date', corrected)
+    self.assertNotIn('event_date', corrected)
+    self.assertEqual('2021', second_corrected['selection_year'])
+    self.assertEqual('10', second_corrected['selection_month'])
+    self.assertEqual(
+      'https://www.goodreads.com/topic/show/'
+      '22102303-to-be-taught-if-fortunate-overall-discussion-oct-2021-spoilers',
+      second_corrected['discussion_url'])
+    self.assertNotIn('discussion_start_date', second_corrected)
+    self.assertNotIn('event_date', second_corrected)
+
+    live_dated = dragons_jetpacks_row(
+      2916139, 'A Game of Thrones (A Song of Ice and Fire, #1)',
+      ['Martin, George R.R.'], ['read', '2021', 'fantasy', 'group-read'],
+      '2021/11/01', '2021/11/30')
+    live_entry = DragonsJetpacksParser().parse(
+      dragons_jetpacks_page([live_dated]), SHELF_URL)['entries'][0]
+    self.assertEqual('11', live_entry['selection_month'])
+    self.assertEqual('2021-11-01', live_entry['discussion_start_date'])
+
+  def test_dragons_and_jetpacks_notes_malformed_rows_without_broadening_scope(self):
+    from parser.dragons_and_jetpacks import DragonsJetpacksParser, SHELF_URL
+
+    valid = dragons_jetpacks_row(
+      1, 'Valid Book', ['Author, Alice'],
+      ['read', '2024', 'group-read', 'horror'],
+      '2024/10/01', '2024/10/31')
+    no_activity = dragons_jetpacks_row(
+      2, 'Missing Activity', ['Author, Bob'],
+      ['read', '2024', 'group-read', 'fantasy'],
+      '2024/09/01', '2024/09/30', include_activity=False)
+    challenge_only = dragons_jetpacks_row(
+      3, 'Challenge Only', ['Author, Carol'],
+      ['read', '2024', 'ultimate-challenge'],
+      '2024/08/01', '2024/08/31')
+    bad_date = dragons_jetpacks_row(
+      4, 'Bad Date', ['Author, Dan'],
+      ['read', '2024', 'group-read', 'sci-fi'],
+      'August sometime', '2024/08/31')
+
+    parsed = DragonsJetpacksParser().parse(
+      dragons_jetpacks_page([valid, no_activity, challenge_only, bad_date]),
+      SHELF_URL)
+
+    self.assertEqual(['Valid Book'], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual('horror', parsed['entries'][0]['theme_or_track'])
+    self.assertEqual(3, len(parsed['notes']))
+    self.assertTrue(any('missing a book, author, or activity link' in note for note in parsed['notes']))
+    self.assertTrue(any('not explicitly on the group-read shelf' in note for note in parsed['notes']))
+    self.assertTrue(any('invalid start date' in note for note in parsed['notes']))
+
+  def test_dragons_and_jetpacks_fetcher_metadata_and_registration(self):
+    from parser.base import (
+      CATEGORY_FANTASY,
+      CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,
+      CATEGORY_SCIENCE_FICTION,
+    )
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.dragons_and_jetpacks import UrlFetcherDragonsJetpacks
+
+    fetcher = UrlFetcherDragonsJetpacks()
+    self.assertEqual('dragons_and_jetpacks', fetcher.source_id)
+    self.assertEqual('Dragons & Jetpacks', fetcher.NAME)
+    self.assertEqual(58, fetcher.order)
+    self.assertIn('per_page=100', fetcher.URL)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertFalse(fetcher.SUPPORTS_INCREMENTAL_UPDATE)
+    self.assertEqual(
+      [
+        CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,
+        CATEGORY_SCIENCE_FICTION,
+        CATEGORY_FANTASY,
+      ],
+      [item['label'] for item in fetcher.get_filter_list()])
+    self.assertEqual(
+      ({'label': 'Automatic', 'value': 'automatic'},),
+      fetcher.source_choices())
+
+    registry = available_url_fetchers()
+    registry_ids = [item.source_id for item in registry]
+    self.assertEqual(396, len(registry))
+    self.assertEqual(
+      registry_ids.index('bookbrowse_online_book_club') + 1,
+      registry_ids.index('dragons_and_jetpacks'))
+    self.assertLess(
+      registry_ids.index('dragons_and_jetpacks'),
+      registry_ids.index('hugo_awards_novel'))
+
+  def test_spectology_parser_reads_complete_archive_and_multi_work_cycles(self):
+    from parser.spectology import SOURCE_OVERRIDES, SpectologyParser
+
+    overrides = {
+      cycle: {
+        'title': data['episode_title'],
+        'description': '<p>Official bounded fixture description.</p>',
+      }
+      for cycle, data in SOURCE_OVERRIDES.items()
+    }
+    overrides[1] = {
+      'title': '1.1: Use of Weapons Pre-Read',
+      'description': '<p>This month we are reading Use of Weapons by Iain M Banks.</p>',
+    }
+    overrides[27] = {
+      'title': (
+        '27.1: The Lesson by Cadwell Turnbull pre-read w/ Lydia: Alien invasion and a history '
+        'of capitalism & colonialism.'),
+      'description': '<p>The Lesson by Cadwell Turnbull.</p>',
+    }
+    overrides[28] = {
+      'title': (
+        '28.1: Do You Dream of Terra-Two pre-read w/ Bee & Estelle: Alternate History, '
+        'Destiny, and Space Travel'),
+      'description': (
+        '<p>Do You Dream of Terra-Two by new British author Temi Oh.</p>'),
+    }
+    noise = '''
+      <item><title>28.2: Do You Dream of Terra-Two post-read</title>
+        <pubDate>Fri, 16 Oct 2020 00:01:00 -0300</pubDate></item>
+      <item><title>Digital Book Tour: A promoted book</title></item>
+      <item><title>Announcement: Spectology series finale</title></item>
+      <item><title>29.1: A malformed future cycle</title></item>
+    '''
+
+    parsed = SpectologyParser().parse(
+      spectology_feed(overrides=overrides, extra_items=(noise,)))
+    entries = parsed['entries']
+    by_sequence = {}
+    for entry in entries:
+      by_sequence.setdefault(entry['official_sequence'], []).append(entry)
+
+    self.assertEqual(32, len(entries))
+    self.assertEqual([str(index) for index in range(1, 33)], [
+      entry['position'] for entry in entries])
+    self.assertEqual(['Binti', 'Binti: Home', 'Binti: The Night Masquerade'], [
+      entry['title'] for entry in by_sequence[3]])
+    self.assertEqual([
+      "Childhood's End", 'Ice', 'Stars in My Pocket Like Grains of Sand'], [
+        entry['title'] for entry in by_sequence[21]])
+    self.assertEqual(
+      {'spectology:3.1'}, {entry['event_group_id'] for entry in by_sequence[3]})
+    self.assertEqual('2018-04-03', entries[0]['event_date'])
+    self.assertEqual(['Iain M. Banks'], entries[0]['authors'])
+    self.assertEqual('2020-08-04', by_sequence[27][0]['event_date'])
+    self.assertEqual('2020-09-08', entries[-1]['event_date'])
+    self.assertEqual(['Temi Oh'], entries[-1]['authors'])
+    self.assertEqual('https://www.spectology.com/feed.xml', parsed['source']['url'])
+    self.assertEqual(
+      'https://www.spectology.com/e/cycle-28-0/', entries[-1]['source']['url'])
+    self.assertEqual('Ken Liu', by_sequence[18][0]['translator_credit'])
+    self.assertTrue(any('cycle 29.1' in note for note in parsed['notes']))
+    self.assertTrue(any('finite archive' in note for note in parsed['notes']))
+    self.assertFalse(parsed['match_series'])
+
+  def test_spectology_live_heading_change_disables_bounded_override(self):
+    from parser.spectology import SOURCE_OVERRIDES, SpectologyParser
+
+    overrides = {
+      21: {
+        'title': SOURCE_OVERRIDES[21]['episode_title'],
+        'description': '<p>Official bounded fixture description.</p>',
+      },
+      3: {
+        'title': '3.1: The Binti Trilogy pre-read (updated)',
+        'description': '<p>The Binti Trilogy by Nnedi Okorafor.</p>',
+      },
+    }
+    parsed = SpectologyParser().parse(spectology_feed(overrides=overrides))
+    cycle_three = [
+      entry for entry in parsed['entries'] if entry['official_sequence'] == 3]
+
+    self.assertEqual(1, len(cycle_three))
+    self.assertEqual('The Binti Trilogy', cycle_three[0]['title'])
+    self.assertEqual(['Nnedi Okorafor'], cycle_three[0]['authors'])
+
+  def test_spectology_rejects_non_feed_incomplete_and_duplicate_sources(self):
+    from parser.spectology import SpectologyParser
+
+    parser = SpectologyParser()
+    with self.assertRaisesRegex(ValueError, 'HTML instead'):
+      parser.parse(b'<html><title>Just a moment...</title></html>')
+    with self.assertRaisesRegex(ValueError, 'malformed RSS'):
+      parser.parse('<rss><channel><title>Spectology</title>')
+    with self.assertRaisesRegex(ValueError, 'channel identity'):
+      parser.parse(spectology_feed().replace(
+        'Spectology: The Science Fiction Book Club Podcast', 'Unrelated Podcast'))
+    with self.assertRaisesRegex(ValueError, 'missing baseline.*12'):
+      parser.parse(spectology_feed(omit=(12,)))
+    with self.assertRaisesRegex(ValueError, 'duplicate cycle 5'):
+      parser.parse(spectology_feed(duplicate=(5,)))
+
+  def test_spectology_fetcher_metadata_transport_and_registration(self):
+    from parser.base import (
+      CATEGORY_FANTASY,
+      CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,
+      CATEGORY_SCIENCE_FICTION,
+    )
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.spectology import UrlFetcherSpectology
+
+    fetcher = UrlFetcherSpectology()
+    calls = []
+
+    def fetch_url(url, **kwargs):
+      calls.append((url, kwargs))
+      return spectology_feed()
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+    filters = [item['label'] for item in fetcher.get_filter_list()]
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+
+    self.assertEqual('spectology', fetcher.source_id)
+    self.assertEqual('Spectology (discontinued)', fetcher.NAME)
+    self.assertEqual(59, fetcher.order)
+    self.assertEqual('https://www.spectology.com/feed.xml', fetcher.URL)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertFalse(fetcher.SUPPORTS_INCREMENTAL_UPDATE)
+    self.assertEqual(({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+    self.assertEqual([
+      CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,
+      CATEGORY_SCIENCE_FICTION,
+      CATEGORY_FANTASY,
+    ], filters)
+    self.assertEqual([(fetcher.URL, {'user_agent': fetcher.USER_AGENT})], calls)
+    self.assertEqual(28, len(parsed['entries']))
+    self.assertFalse(parsed['match_series'])
+    self.assertEqual(
+      registry_ids.index('dragons_and_jetpacks') + 1,
+      registry_ids.index('spectology'))
+    self.assertLess(
+      registry_ids.index('spectology'), registry_ids.index('hugo_awards_novel'))
+
+  def test_hugo_girl_rss_parses_book_form_scope_and_metadata(self):
+    from metadata import validate_list_name
+    from parser.hugo_girl import HugoGirlParser, RSS_URL
+
+    parsed = HugoGirlParser().parse(hugo_girl_feed())
+    entries = parsed['entries']
+    by_episode = {entry['official_sequence']: entry for entry in entries}
+
+    self.assertEqual('Hugo Girl!', parsed['name'])
+    self.assertEqual('Hugo Girl!', validate_list_name(parsed['name']))
+    self.assertEqual('Hugo, Girl!', parsed['source']['name'])
+    self.assertEqual(84, len(entries))
+    self.assertEqual(
+      [str(position) for position in range(1, 85)],
+      [entry['position'] for entry in entries])
+    self.assertEqual(set(range(1, 95)) - {13, 44, 46, 67, 70, 74, 79, 85, 91, 94}, set(by_episode))
+    self.assertEqual("Ender's Game", by_episode[1]['title'])
+    self.assertEqual(['Orson Scott Card'], by_episode[1]['authors'])
+    self.assertEqual('Binti', by_episode[2]['title'])
+    self.assertEqual(['Nnedi Okorafor'], by_episode[2]['authors'])
+    self.assertEqual(['J.K. Rowling'], by_episode[7]['authors'])
+    self.assertEqual(['N.K. Jemisin'], by_episode[22]['authors'])
+    self.assertEqual('2001: A Space Odyssey', by_episode[42]['title'])
+    self.assertEqual(['Arthur C. Clarke'], by_episode[42]['authors'])
+    self.assertEqual(['T.H. White'], by_episode[57]['authors'])
+    self.assertEqual('Blood of the Dragon', by_episode[62]['title'])
+    self.assertEqual(['George R. R. Martin'], by_episode[62]['authors'])
+    self.assertEqual('This Is How You Lose the Time War', by_episode[71]['title'])
+    self.assertEqual(
+      ['Amal El-Mohtar', 'Max Gladstone'], by_episode[71]['authors'])
+    self.assertEqual('Redshirts', by_episode[84]['title'])
+    self.assertEqual(['John Scalzi'], by_episode[84]['authors'])
+    self.assertEqual(
+      "Endurance: Shackleton's Incredible Voyage", by_episode[89]['title'])
+    self.assertEqual(['Alfred Lansing'], by_episode[89]['authors'])
+    self.assertEqual('Paladin of Souls', by_episode[92]['title'])
+    self.assertEqual(['Lois McMaster Bujold'], by_episode[92]['authors'])
+    self.assertEqual('Downbelow Station', by_episode[93]['title'])
+    self.assertEqual(['CJ Cherryh'], by_episode[93]['authors'])
+    self.assertEqual('2026-06-09', by_episode[93]['event_date'])
+    self.assertEqual('2026', by_episode[93]['selection_year'])
+    self.assertEqual('6', by_episode[93]['selection_month'])
+    self.assertEqual('hugogirl:93', by_episode[93]['source_record_id'])
+    self.assertEqual('Hugo, Girl!', by_episode[93]['club_name'])
+    self.assertEqual('episode_selection', by_episode[93]['selection_type'])
+    self.assertEqual(
+      'https://hugogirl.libsyn.com/episode-93-fixture',
+      entry_source_url(by_episode[93]))
+    self.assertEqual(RSS_URL, parsed['source']['url'])
+    self.assertNotIn('notes', parsed)
+    self.assertFalse(parsed['match_series'])
+
+  def test_hugo_girl_html_fallback_has_no_inferred_dates_and_live_text_wins(self):
+    from parser.hugo_girl import ARCHIVE_URL, HugoGirlParser
+
+    parsed = HugoGirlParser().parse(hugo_girl_html(overrides={
+      84: {
+        'title': 'Episode 84 - Redshirts Revised: New Live Heading',
+        'description': 'Book: Redshirts by John Scalzi.',
+      },
+    }))
+    entries = parsed['entries']
+    by_episode = {entry['official_sequence']: entry for entry in entries}
+
+    self.assertEqual(84, len(entries))
+    self.assertEqual('Redshirts', by_episode[84]['title'])
+    self.assertEqual(['John Scalzi'], by_episode[84]['authors'])
+    self.assertEqual(
+      'Episode 84 - Redshirts Revised: New Live Heading',
+      by_episode[84]['raw_episode_title'])
+    self.assertTrue(all('event_date' not in entry for entry in entries))
+    self.assertTrue(all('selection_year' not in entry for entry in entries))
+    self.assertTrue(any('can lag the feed' in note for note in parsed['notes']))
+    self.assertEqual(ARCHIVE_URL, parsed['source']['url'])
+
+  def test_hugo_girl_rejects_malformed_wrong_identity_and_incomplete_sources(self):
+    from parser.hugo_girl import HugoGirlParser
+
+    parser = HugoGirlParser()
+    with self.assertRaisesRegex(ValueError, 'malformed RSS'):
+      parser.parse('<rss><channel><title>Hugo, Girl!</title>')
+    with self.assertRaisesRegex(ValueError, 'channel identity'):
+      parser.parse(hugo_girl_feed(channel='Unrelated Podcast'))
+    with self.assertRaisesRegex(ValueError, 'duplicate Episode 22'):
+      parser.parse(hugo_girl_feed(duplicate=(22,)))
+    with self.assertRaisesRegex(ValueError, 'missing baseline Episode.*12'):
+      parser.parse(hugo_girl_feed(omit=(12,)))
+    with self.assertRaisesRegex(ValueError, 'challenge, empty, or unrecognized'):
+      parser.parse(
+        '<!DOCTYPE html><html><head><title>Just a moment...</title></head>'
+        '<body>Cloudflare</body></html>')
+    incomplete_html = hugo_girl_html().replace(
+      '<h2 class="list-item-content__title">Episode 12 - Fixture Book 12: Discussion</h2>',
+      '<h2 class="list-item-content__title">Missing Episode 12</h2>')
+    with self.assertRaisesRegex(ValueError, 'missing baseline Episode.*12'):
+      parser.parse(incomplete_html)
+
+  def test_hugo_girl_fetcher_fallback_metadata_and_registration(self):
+    from parser.base import (
+      CATEGORY_FANTASY,
+      CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,
+      CATEGORY_SCIENCE_FICTION,
+    )
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.generic import UrlFetcherError
+    from url_fetcher.hugo_girl import UrlFetcherHugoGirl
+
+    fetcher = UrlFetcherHugoGirl()
+    calls = []
+
+    def fetch_url(url):
+      calls.append(url)
+      return '<rss><broken>' if url == fetcher.URL else hugo_girl_html()
+
+    parsed = fetcher.fetch_and_parse(fetch_url)
+    self.assertEqual([fetcher.URL, fetcher.ARCHIVE_URL], calls)
+    self.assertEqual(84, len(parsed['entries']))
+    self.assertEqual(fetcher.ARCHIVE_URL, parsed['source']['url'])
+
+    calls.clear()
+    with self.assertRaises(UrlFetcherError):
+      fetcher.fetch_and_parse(fetch_url, disable_fallbacks=True)
+    self.assertEqual([fetcher.URL], calls)
+
+    self.assertEqual('hugo_girl', fetcher.source_id)
+    self.assertEqual('Hugo, Girl!', fetcher.NAME)
+    self.assertEqual('Hugo Girl!', fetcher.LIST_NAME)
+    self.assertEqual('Hugo Girl!', parsed['name'])
+    self.assertEqual('Hugo, Girl!', parsed['source']['name'])
+    self.assertEqual(60, fetcher.order)
+    self.assertEqual(fetcher.ARCHIVE_URL, fetcher.display_url)
+    self.assertFalse(fetcher.options['match_series'])
+    self.assertFalse(fetcher.SUPPORTS_INCREMENTAL_UPDATE)
+    self.assertEqual([
+      {'label': 'Automatic', 'value': 'automatic'},
+      {'label': 'Libsyn RSS', 'value': 0},
+      {'label': 'All Episodes archive', 'value': 1},
+    ], list(fetcher.source_choices()))
+    self.assertEqual([
+      CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,
+      CATEGORY_SCIENCE_FICTION,
+      CATEGORY_FANTASY,
+    ], [item['label'] for item in fetcher.get_filter_list()])
+
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertEqual(396, len(registry_ids))
+    self.assertEqual(
+      registry_ids.index('spectology') + 1,
+      registry_ids.index('hugo_girl'))
+    self.assertLess(
+      registry_ids.index('hugo_girl'),
+      registry_ids.index('hugo_awards_novel'))
+
+  def test_between_two_books_numbered_parser_scope_metadata_and_live_precedence(self):
+    from parser.between_two_books import BetweenTwoBooksNumberedParser, SOURCE_URL
+
+    parser = BetweenTwoBooksNumberedParser()
+    parsed = parser.parse(between_two_books_html().encode('utf-8'))
+    entries = parsed['entries']
+
+    self.assertEqual(54, len(entries))
+    self.assertEqual([str(position) for position in range(1, 55)], [
+      entry['position'] for entry in entries])
+    self.assertEqual('Opposed Positions', entries[0]['title'])
+    self.assertEqual(['Ivana Lowell'], entries[3]['authors'])
+    self.assertEqual('guest_pick', entries[5]['selection_type'])
+    self.assertEqual("Jeremy O'Harris", entries[5]['advocate_defender_host_selector'])
+    self.assertEqual(
+      ['Martin McIntosh', 'Gemma Jones'], entries[16]['authors'])
+    self.assertEqual('2017', entries[27]['selection_year'])
+    self.assertEqual('Between Two Books', entries[27]['advocate_defender_host_selector'])
+    self.assertEqual('2019', entries[39]['selection_year'])
+    self.assertEqual('Arlo Parks', entries[52]['advocate_defender_host_selector'])
+    self.assertEqual('If I Had Your Face', entries[-1]['title'])
+    self.assertEqual(SOURCE_URL, parsed['source']['url'])
+    self.assertFalse(parsed['match_series'])
+    self.assertTrue(any('Historical/incomplete' in note for note in parsed['notes']))
+
+    from parser.between_two_books import load_history_ledger
+    changed_rows = list(load_history_ledger()['collections']['numbered'])
+    changed_rows[0] = [
+      'Repaired Live Title', ['Repaired Author'], 'community_pick',
+      'Florence', '(Florence recommendation)', None]
+    changed = between_two_books_html(numbered_rows=changed_rows)
+    repaired = parser.parse(changed)['entries'][0]
+    self.assertEqual('Repaired Live Title', repaired['title'])
+    self.assertEqual(['Repaired Author'], repaired['authors'])
+    changed_rows.append([
+      'New Official Appendix', ['New Author'], 'community_pick',
+      None, None, None])
+    appended = parser.parse(
+      between_two_books_html(numbered_rows=changed_rows))['entries']
+    self.assertEqual(55, len(appended))
+    self.assertEqual('New Official Appendix', appended[-1]['title'])
+
+  def test_between_two_books_isolation_parser_tracks_themes_and_missing_credits(self):
+    from parser.between_two_books import BetweenTwoBooksIsolationParser
+
+    parsed = BetweenTwoBooksIsolationParser().parse(between_two_books_html())
+    entries = parsed['entries']
+    by_title = {entry['title']: entry for entry in entries}
+
+    self.assertEqual(55, len(entries))
+    self.assertEqual([str(position) for position in range(1, 56)], [
+      entry['position'] for entry in entries])
+    self.assertEqual('Isolation reading list', entries[0]['theme_or_track'])
+    self.assertEqual('Compassion', entries[5]['theme_or_track'])
+    self.assertEqual(
+      ['Alain de Botton', 'John Armstrong'], by_title['Art As Therapy']['authors'])
+    self.assertEqual([], by_title["Frida Kahlo’s diary"]['authors'])
+    self.assertEqual('editor', by_title['Nasty Women']['contributor_role'])
+    self.assertEqual(
+      ['Laura Jones', 'Heather McDaid'], by_title['Nasty Women']['authors'])
+    self.assertEqual('Wow, No Thank You', by_title['Wow, No Thank You']['title'])
+    self.assertEqual(['Laura Thomas'], by_title['Just Eat It']['authors'])
+    self.assertEqual('PhD', by_title['Just Eat It']['author_credential'])
+    self.assertEqual([], by_title['Cornucopia']['authors'])
+    self.assertEqual(
+      'from Cornucopia restaurant', by_title['Cornucopia']['raw_author_credit'])
+    self.assertEqual(['Samin Nosrat'], by_title['Salt, Fat, Acid, Heat']['authors'])
+    self.assertEqual('Love', entries[-1]['theme_or_track'])
+    self.assertFalse(parsed['match_series'])
+
+    from parser.between_two_books import load_history_ledger
+    appended_rows = list(load_history_ledger()['collections']['isolation'])
+    appended_rows.append([
+      'New Theme', 'New Themed Work', ['New Author'], 'New Author', None, None])
+    appended = BetweenTwoBooksIsolationParser().parse(
+      between_two_books_html(isolation_rows=appended_rows))['entries']
+    self.assertEqual(56, len(appended))
+    self.assertEqual('NEW THEME', appended[-1]['theme_or_track'])
+
+  def test_between_two_books_rejects_partial_live_results_and_uses_whole_ledger(self):
+    from parser.between_two_books import (
+      BetweenTwoBooksIsolationParser,
+      BetweenTwoBooksNumberedParser,
+      load_history_ledger,
+    )
+    from url_fetcher.between_two_books import (
+      UrlFetcherBetweenTwoBooksIsolation,
+      UrlFetcherBetweenTwoBooksNumbered,
+    )
+
+    ledger = load_history_ledger()
+    self.assertEqual(54, len(ledger['collections']['numbered']))
+    self.assertEqual(55, len(ledger['collections']['isolation']))
+    partial_numbered = between_two_books_html(
+      numbered_rows=ledger['collections']['numbered'][:-1])
+    partial_isolation = between_two_books_html(
+      isolation_rows=ledger['collections']['isolation'][:-1])
+    with self.assertRaisesRegex(ValueError, 'numbered Book list was incomplete'):
+      BetweenTwoBooksNumberedParser().parse(partial_numbered)
+    with self.assertRaisesRegex(ValueError, 'Isolation reading list was incomplete'):
+      BetweenTwoBooksIsolationParser().parse(partial_isolation)
+    with self.assertRaisesRegex(ValueError, 'verification or blocking'):
+      BetweenTwoBooksNumberedParser().parse(
+        '<html><title>Just a moment</title><body>Cloudflare</body></html>')
+
+    def failed_fetch(_url):
+      raise OSError('offline fixture')
+
+    numbered = UrlFetcherBetweenTwoBooksNumbered().fetch_and_parse(failed_fetch)
+    isolation = UrlFetcherBetweenTwoBooksIsolation().fetch_and_parse(failed_fetch)
+    partial_numbered_fallback = UrlFetcherBetweenTwoBooksNumbered().fetch_and_parse(
+      lambda _url: partial_numbered)
+    partial_isolation_fallback = UrlFetcherBetweenTwoBooksIsolation().fetch_and_parse(
+      lambda _url: partial_isolation)
+    self.assertEqual(54, len(numbered['entries']))
+    self.assertEqual(55, len(isolation['entries']))
+    self.assertEqual(54, len(partial_numbered_fallback['entries']))
+    self.assertEqual(55, len(partial_isolation_fallback['entries']))
+    self.assertEqual(
+      BetweenTwoBooksNumberedParser().parse(between_two_books_html())['entries'],
+      numbered['entries'])
+    self.assertEqual(
+      BetweenTwoBooksIsolationParser().parse(between_two_books_html())['entries'],
+      isolation['entries'])
+    self.assertTrue(numbered['notes'][0].startswith('Packaged history used'))
+    self.assertTrue(isolation['notes'][0].startswith('Packaged history used'))
+    self.assertEqual('If I Had Your Face', numbered['entries'][-1]['title'])
+    self.assertEqual(
+      'Zami: A New Spelling of my Name', isolation['entries'][-1]['title'])
+
+  def test_between_two_books_fetcher_metadata_and_registration(self):
+    from parser.base import CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.between_two_books import (
+      UrlFetcherBetweenTwoBooksIsolation,
+      UrlFetcherBetweenTwoBooksNumbered,
+    )
+
+    numbered = UrlFetcherBetweenTwoBooksNumbered()
+    isolation = UrlFetcherBetweenTwoBooksIsolation()
+    fetchers = (numbered, isolation)
+    for fetcher, expected_order in zip(fetchers, (61, 62)):
+      self.assertEqual(expected_order, fetcher.order)
+      self.assertFalse(fetcher.options['match_series'])
+      self.assertFalse(fetcher.SUPPORTS_INCREMENTAL_UPDATE)
+      self.assertEqual(
+        ({'label': 'Automatic', 'value': 'automatic'},), fetcher.source_choices())
+      self.assertEqual(
+        [CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS],
+        [item['label'] for item in fetcher.get_filter_list()])
+      parsed = fetcher.fetch_and_parse(lambda _url: between_two_books_html())
+      self.assertFalse(parsed['notes'][0].startswith('Packaged history used'))
+
+    self.assertEqual(
+      'between_two_books_numbered_archive', numbered.source_id)
+    self.assertEqual(
+      'between_two_books_isolation_reading_lists', isolation.source_id)
+    self.assertEqual('Between Two Books - Official Book List', numbered.NAME)
+    self.assertEqual(
+      'Between Two Books - Isolation & Themed Lists', isolation.NAME)
+    registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertEqual(396, len(registry_ids))
+    self.assertEqual(
+      registry_ids.index('hugo_girl') + 1,
+      registry_ids.index(numbered.source_id))
+    self.assertEqual(
+      registry_ids.index(numbered.source_id) + 1,
+      registry_ids.index(isolation.source_id))
+    self.assertEqual(
+      registry_ids.index(isolation.source_id) + 1,
       registry_ids.index('hugo_awards_novel'))
 
   def test_bookbrowse_merges_legacy_current_and_upcoming_sources(self):
@@ -2648,7 +3743,7 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
       'r/Fantasy Top Self-Published Novels 2024',
       'Sword and Laser',
     ], names[:4])
-    self.assertEqual(391, len(names))
+    self.assertEqual(396, len(names))
     self.assertIn('r/bookclub', names)
     self.assertIn('BookBrowse Online Book Club', names)
     self.assertIn('Theakston Old Peculier Crime Novel of the Year', names)
@@ -2949,9 +4044,13 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
     self.assertTrue(any('Corrected 2025' in note for note in parsed['notes']))
 
   def test_british_fantasy_best_novel_stops_before_2012_split(self):
-    from parser.british_fantasy import BFS_WINNERS_URL, BritishFantasyParser
+    from parser.british_fantasy import (
+      BFS_WINNERS_URL, BritishFantasyParser, SFADB_URL,
+    )
+    from url_fetcher.british_fantasy import UrlFetcherBritishFantasyBestNovel
 
     parser = BritishFantasyParser()
+    aliases = UrlFetcherBritishFantasyBestNovel.CATEGORY_ALIASES
     winners_html = '''
       <p>2012</p>
       <ul>
@@ -2959,24 +4058,63 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
       </ul>
       <p>2010</p>
       <ul>
-        <li>Novel: One, Conrad Williams (Virgin Books)</li>
+        <li>Novel (the August Derleth Award): Full Dark, No Stars, Stephen King (Hodder)</li>
+      </ul>
+      <p>2009</p>
+      <ul>
+        <li>Novel (the August Derleth Fantasy Award): Memoirs of a Master Forger, William Heaney (Gollancz)</li>
+      </ul>
+      <p>1972</p>
+      <ul>
+        <li>Novel: The Knight of the Swords, Michael Moorcock</li>
       </ul>
       <p>2011</p>
       <ul>
         <li>Novel: No award</li>
       </ul>
     '''
+    sfadb_overview = '<a href="/British_Fantasy_Awards_2010">2010</a>'
+    sfadb_pages = {
+      'https://www.sfadb.com/British_Fantasy_Awards_2010': '''
+        <div class="categoryblock">
+          <div class="category">August Derleth Award (novel)</div>
+          <ul>
+            <li>Winner: Full Dark, No Stars, Stephen King (Hodder)</li>
+            <li>Apartment 16, Adam Nevill (Pan)</li>
+          </ul>
+        </div>
+      ''',
+    }
 
-    parsed = parser.parse_bfs_winners(
+    winners = parser.parse_bfs_winners(
       winners_html,
       BFS_WINNERS_URL,
       'British Fantasy - Best Novel (discontinued)',
       'Best Novel',
-      ('novel', 'best novel'),
+      aliases,
       max_year=2011)
+    sfadb = parser.parse_sfadb(
+      sfadb_overview,
+      SFADB_URL,
+      'British Fantasy - Best Novel (discontinued)',
+      'Best Novel',
+      aliases,
+      fetch_url=lambda url: sfadb_pages[url],
+      max_year=2011)
+    parsed = parser.combine_results(
+      'British Fantasy - Best Novel (discontinued)',
+      BFS_WINNERS_URL,
+      winners,
+      sfadb)
 
-    self.assertEqual(['One'], [entry['title'] for entry in parsed['entries']])
-    self.assertEqual('2010', parsed['entries'][0]['position'])
+    rows = {entry['title']: entry for entry in parsed['entries']}
+    self.assertEqual(
+      {'The Knight of the Swords', 'Memoirs of a Master Forger',
+       'Full Dark, No Stars', 'Apartment 16'},
+      set(rows))
+    self.assertEqual('winner', rows['Full Dark, No Stars']['result'])
+    self.assertEqual('shortlisted', rows['Apartment 16']['result'])
+    self.assertEqual('2010.01', rows['Apartment 16']['position'])
     self.assertTrue(any('2011 Best Novel has no award row' in note for note in parsed['notes']))
 
   def test_british_fantasy_fetchers_are_registered_with_expected_metadata(self):
@@ -4107,7 +5245,7 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
       'r_fantasy_top_self_published_novels_2024',
       'sword_and_laser_book_list',
     ], source_ids[:4])
-    self.assertEqual(391, len(source_ids))
+    self.assertEqual(396, len(source_ids))
     self.assertIn('hammett_prize', source_ids)
     self.assertIn('nero_award', source_ids)
     self.assertIn('strand_critics_award_mystery_novel', source_ids)
@@ -12368,7 +13506,7 @@ were ''[[Go Deep]]'' by [[Rilzy Adams]].
     self.assertLess(
       registry_ids.index('romantic_times_reviewers_choice_romance'),
       registry_ids.index('writers_trust_atwood_gibson_fiction'))
-    self.assertEqual(391, len(registry_ids))
+    self.assertEqual(396, len(registry_ids))
 
   def test_lambda_literary_awards_parser_reads_directory_and_current_shortlists(self):
     from parser.lambda_literary_awards import (

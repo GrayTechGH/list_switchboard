@@ -396,6 +396,10 @@ class BritishFantasyParser(AwardParserBase):
       aliases.extend((
         'novel',
         'best novel',
+        'novel the august derleth fantasy award',
+        'novel the august derleth award',
+        'august derleth fantasy award novel',
+        'august derleth award novel',
         'august derleth fantasy award best novel',
       ))
     return tuple(dict.fromkeys(alias for alias in aliases if alias))

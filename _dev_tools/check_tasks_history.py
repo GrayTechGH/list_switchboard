@@ -31,12 +31,28 @@ def find_version_headings(tasks_text: str) -> list[tuple[int, int, int]]:
 def retained_counted_keys(
     versions: list[tuple[int, int, int]],
 ) -> list[tuple[int, int]]:
-    distinct_keys: list[tuple[int, int]] = []
-    for version in versions:
-        key = _counted_key(version)
-        if key not in distinct_keys:
-            distinct_keys.append(key)
-    return distinct_keys[-MAX_COUNTED_VERSIONS:]
+    distinct_keys = {_counted_key(version) for version in versions}
+    return sorted(distinct_keys, reverse=True)[:MAX_COUNTED_VERSIONS]
+
+
+def section_order_error(tasks_text: str) -> str:
+    versions = find_version_headings(tasks_text)
+    if versions != sorted(versions, reverse=True):
+        return "completed version headings must be newest-first"
+
+    next_tasks = tasks_text.find("Likely next tasks:")
+    reminders = tasks_text.find("Reminders:")
+    if next_tasks < 0 or reminders < 0:
+        return "expected Likely next tasks and Reminders sections"
+    if next_tasks >= reminders:
+        return "Likely next tasks must appear before Reminders"
+
+    last_version = max(
+        (tasks_text.find(_version_label(version) + ":") for version in versions),
+        default=-1)
+    if last_version > next_tasks:
+        return "completed version headings must appear before Likely next tasks"
+    return ""
 
 
 def main() -> int:
@@ -44,6 +60,11 @@ def main() -> int:
     tasks_path = repo_root / "_docs" / "TASKS.md"
     tasks_text = tasks_path.read_text(encoding="utf-8")
     versions = find_version_headings(tasks_text)
+    order_error = section_order_error(tasks_text)
+    if order_error:
+        print("TASKS.md section order invalid: {}.".format(order_error), file=sys.stderr)
+        return 1
+
     allowed_keys = retained_counted_keys(versions)
     stale_versions = [
         version for version in versions if _counted_key(version) not in allowed_keys
