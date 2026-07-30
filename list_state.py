@@ -14,6 +14,7 @@ Maintenance notes:
   Progress dialogs use update counts as their denominator.
 """
 
+import re
 from collections import Counter, OrderedDict
 
 from qt.core import QDialog, QInputDialog
@@ -35,12 +36,12 @@ except ImportError:
 
 try:
   from calibre_plugins.list_switchboard.matching import (
-    clean_name, imported_author_search_text, match_keys, normalize_key,
-    normalize_match_text, series_match_keys, split_position_suffix,
+    clean_name, imported_author_list, imported_author_search_text, match_keys,
+    normalize_key, normalize_match_text, series_match_keys, split_position_suffix,
   )
 except ImportError:
   from matching import clean_name, match_keys, normalize_key, normalize_match_text, split_position_suffix
-  from matching import imported_author_search_text, series_match_keys
+  from matching import imported_author_list, imported_author_search_text, series_match_keys
 
 try:
   from calibre_plugins.list_switchboard.metadata import (
@@ -54,9 +55,236 @@ except ImportError:
   )
 
 try:
-  from calibre_plugins.list_switchboard.storage import entry_key, entry_title_matches_book
+  from calibre_plugins.list_switchboard.storage import entry_key
 except ImportError:
-  from storage import entry_key, entry_title_matches_book
+  from storage import entry_key
+
+
+CACHED_ACTIVE_ADD_BUTTON_MATCH_EXACT = 'exact'
+CACHED_ACTIVE_ADD_BUTTON_MATCH_PARTIAL = 'partial'
+CACHED_ACTIVE_ADD_BUTTON_MATCH_NONE = 'none'
+CACHED_ACTIVE_ADD_BUTTON_AUTHOR_SUFFIXES = frozenset([
+  'jr', 'sr', 'ii', 'iii', 'iv', 'v',
+])
+CACHED_ACTIVE_ADD_BUTTON_TITLE_BOUNDARY_RE = re.compile(r'\s+(?:–|—)\s+|[:;]')
+CACHED_ACTIVE_ADD_BUTTON_QUOTED_TITLE_RES = (
+  re.compile(r'"([^"\r\n]+)"'),
+  re.compile(r'“([^”\r\n]+)”'),
+  re.compile(r'‘([^’\r\n]+)’'),
+  re.compile(r"(?<!\w)'([^'\r\n]+)'(?!\w)"),
+)
+CACHED_ACTIVE_ADD_BUTTON_TRAILING_QUALIFIER_RES = (
+  re.compile(r'^(.*?)\s*\([^()]+\)\s*$'),
+  re.compile(r'^(.*?)\s*\[[^\[\]]+\]\s*$'),
+  re.compile(r'^(.*?)\s*\{[^{}]+\}\s*$'),
+)
+
+
+def cached_active_add_button_title_components(value):
+  """Return structural title components for the cached Active Add GUI button only.
+
+  This boundary is intentionally separate from import matching, Find Match,
+  and saved-match reconciliation. Do not merge these rules into their generic
+  title helpers or reuse this function outside the button workflow.
+  """
+  raw = clean_name(str(value or '')).strip()
+  components = []
+
+  def append_component(component):
+    key = normalize_match_text(component)
+    if key and key not in components:
+      components.append(key)
+    without_article = re.sub(r'^(?:a|an|the)\s+', '', key).strip()
+    if without_article and without_article not in components:
+      components.append(without_article)
+
+  append_component(raw)
+  for component in CACHED_ACTIVE_ADD_BUTTON_TITLE_BOUNDARY_RE.split(raw):
+    append_component(component)
+  for quoted_re in CACHED_ACTIVE_ADD_BUTTON_QUOTED_TITLE_RES:
+    for match in quoted_re.finditer(raw):
+      append_component(match.group(1))
+  for qualifier_re in CACHED_ACTIVE_ADD_BUTTON_TRAILING_QUALIFIER_RES:
+    match = qualifier_re.match(raw)
+    if match is not None:
+      append_component(match.group(1))
+  return tuple(components)
+
+
+def cached_active_add_button_title_match_kind(book_title, imported_title):
+  """Classify title evidence only for the cached Active Add GUI button."""
+  book_key = normalize_match_text(book_title)
+  imported_key = normalize_match_text(imported_title)
+  if not book_key or not imported_key:
+    return CACHED_ACTIVE_ADD_BUTTON_MATCH_NONE
+  if book_key == imported_key:
+    return CACHED_ACTIVE_ADD_BUTTON_MATCH_EXACT
+  book_components = set(cached_active_add_button_title_components(book_title))
+  imported_components = set(cached_active_add_button_title_components(imported_title))
+  if book_components & imported_components:
+    return CACHED_ACTIVE_ADD_BUTTON_MATCH_PARTIAL
+  return CACHED_ACTIVE_ADD_BUTTON_MATCH_NONE
+
+
+def cached_active_add_button_author_name_parts(value):
+  """Parse one author name only for the cached Active Add GUI button."""
+  raw = str(value or '').strip()
+  if not raw:
+    return {
+      'canonical': '', 'surname': '', 'single_name': '',
+      'given_full': (), 'given_initials': (),
+    }
+  comma_parts = [part.strip() for part in raw.split(',') if part.strip()]
+  if len(comma_parts) > 1:
+    surname_tokens = normalize_match_text(comma_parts[0]).split()
+    given_tokens = normalize_match_text(' '.join(comma_parts[1:])).split()
+    tokens = given_tokens + surname_tokens
+  else:
+    tokens = normalize_match_text(raw).split()
+    surname_tokens = []
+    given_tokens = []
+
+  suffixes = []
+  while tokens and tokens[-1] in CACHED_ACTIVE_ADD_BUTTON_AUTHOR_SUFFIXES:
+    suffixes.insert(0, tokens.pop())
+  if len(comma_parts) > 1:
+    while given_tokens and given_tokens[-1] in CACHED_ACTIVE_ADD_BUTTON_AUTHOR_SUFFIXES:
+      suffixes.insert(0, given_tokens.pop())
+    surname = surname_tokens[-1] if surname_tokens else ''
+    given = list(given_tokens)
+  elif tokens and all(len(token) == 1 for token in tokens):
+    surname = ''
+    single_name = ''
+    given = list(tokens)
+  elif len(tokens) == 1:
+    surname = ''
+    single_name = tokens[0]
+    given = []
+  elif tokens:
+    surname = tokens[-1]
+    single_name = ''
+    given = list(tokens[:-1])
+  else:
+    surname = ''
+    single_name = ''
+    given = []
+
+  if len(comma_parts) > 1:
+    single_name = ''
+
+  given_full = tuple(token for token in given if len(token) > 1)
+  given_initials = tuple(dict.fromkeys(token[0] for token in given if token))
+  canonical_parts = (
+    list(given) + ([surname or single_name] if surname or single_name else [])
+    + suffixes)
+  return {
+    'canonical': ' '.join(canonical_parts),
+    'surname': surname,
+    'single_name': single_name,
+    'given_full': given_full,
+    'given_initials': given_initials,
+  }
+
+
+def cached_active_add_button_author_parts_are_partial_match(left, right):
+  """Compare parsed names only for the cached Active Add GUI button."""
+  left_surname = left['surname']
+  right_surname = right['surname']
+  if left_surname and right_surname:
+    if left_surname != right_surname:
+      return False
+    left_initials = set(left['given_initials'])
+    right_initials = set(right['given_initials'])
+    if left_initials and right_initials:
+      return bool(left_initials & right_initials)
+    return True
+
+  left_single = left['single_name']
+  right_single = right['single_name']
+  if left_single and right_surname and left_single == right_surname:
+    return True
+  if right_single and left_surname and right_single == left_surname:
+    return True
+
+  left_full = set(left['given_full'])
+  right_full = set(right['given_full'])
+  if left_single:
+    left_full.add(left_single)
+  if right_single:
+    right_full.add(right_single)
+  if left_full and right_full:
+    return bool(left_full & right_full)
+  left_initials = set(left['given_initials'])
+  right_initials = set(right['given_initials'])
+  if left_full and right_initials:
+    return bool({name[0] for name in left_full} & right_initials)
+  if right_full and left_initials:
+    return bool({name[0] for name in right_full} & left_initials)
+  return bool(left_initials and right_initials and left_initials & right_initials)
+
+
+def cached_active_add_button_author_match_kind(book_authors, imported_authors):
+  """Classify author evidence only for the cached Active Add GUI button."""
+  if isinstance(book_authors, str):
+    book_authors = [book_authors]
+  if isinstance(imported_authors, str):
+    imported_authors = [imported_authors]
+  book_parts = [
+    cached_active_add_button_author_name_parts(author)
+    for author in (book_authors or [])
+  ]
+  imported_parts = [
+    cached_active_add_button_author_name_parts(author)
+    for author in (imported_authors or [])
+  ]
+  book_parts = [parts for parts in book_parts if parts['canonical']]
+  imported_parts = [parts for parts in imported_parts if parts['canonical']]
+  if not book_parts or not imported_parts:
+    return CACHED_ACTIVE_ADD_BUTTON_MATCH_NONE
+  if any(
+      left['canonical'] == right['canonical']
+      for left in book_parts for right in imported_parts):
+    return CACHED_ACTIVE_ADD_BUTTON_MATCH_EXACT
+  if any(
+      cached_active_add_button_author_parts_are_partial_match(left, right)
+      for left in book_parts for right in imported_parts):
+    return CACHED_ACTIVE_ADD_BUTTON_MATCH_PARTIAL
+  return CACHED_ACTIVE_ADD_BUTTON_MATCH_NONE
+
+
+def cached_active_add_button_candidate_evidence(
+    entry, book_title, book_authors, series_match=False):
+  """Build evidence only for the cached Active Add GUI button."""
+  title_kind = cached_active_add_button_title_match_kind(
+    book_title, entry.get('title', ''))
+  author_kind = cached_active_add_button_author_match_kind(
+    book_authors, imported_author_list(entry))
+  return {
+    'title': title_kind,
+    'author': author_kind,
+    'series': bool(series_match),
+    'auto_eligible': (
+      title_kind != CACHED_ACTIVE_ADD_BUTTON_MATCH_NONE
+      and author_kind != CACHED_ACTIVE_ADD_BUTTON_MATCH_NONE),
+  }
+
+
+def cached_active_add_button_candidate_sort_key(item, normalized_position):
+  """Sort evidence only for the cached Active Add GUI button."""
+  evidence, entry = item
+  strength = {
+    CACHED_ACTIVE_ADD_BUTTON_MATCH_EXACT: 0,
+    CACHED_ACTIVE_ADD_BUTTON_MATCH_PARTIAL: 1,
+    CACHED_ACTIVE_ADD_BUTTON_MATCH_NONE: 2,
+  }
+  return (
+    strength[evidence['title']],
+    strength[evidence['author']],
+    0 if evidence['series'] else 1,
+    normalized_position(entry.get('position', '')),
+    normalize_match_text(entry.get('title', '')),
+    normalize_match_text(imported_author_search_text(entry)),
+  )
 
 
 class ListStateMixin:
@@ -307,23 +535,16 @@ class ListStateMixin:
       len(import_map['entries']),
       len(import_map['unique_entries']),
       len(overrides),
-      len(override_entries_by_book),
-      0,
-      0,
-      len(import_map['entries_by_title_key']),
-      len(import_map['exact_entries_by_key']))
+      len(override_entries_by_book))
 
     # This context is deliberately per-click so imports cannot leave stale
     # title/series or cache-entry maps behind.
     return {
       'authors': authors,
-      'author_tokens_by_key': import_map['author_tokens_by_key'],
       'all_ids': all_ids,
       'cache': cache,
       'db': db,
       'entries': import_map['entries'],
-      'entries_by_title_key': import_map['entries_by_title_key'],
-      'exact_entries_by_key': import_map['exact_entries_by_key'],
       'match_series': match_series,
       'override_entries_by_book': override_entries_by_book,
       'selected_ids': selected_ids,
@@ -340,25 +561,20 @@ class ListStateMixin:
         and cached.get('list_id') == list_id
         and cached.get('entries') is entries):
       self.debug_storage_cached_active_add_import_map(
-        list_id, 'reused', len(cached['entries']), len(cached['unique_entries']),
-        len(cached['entries_by_title_key']), len(cached['exact_entries_by_key']))
+        list_id, 'reused', len(cached['entries']), len(cached['unique_entries']))
       return cached
 
     import_map = self.build_cached_active_add_import_map(entries)
     import_map['list_id'] = list_id
     self._cached_active_add_import_map = import_map
     self.debug_storage_cached_active_add_import_map(
-      list_id, 'built', len(import_map['entries']), len(import_map['unique_entries']),
-      len(import_map['entries_by_title_key']), len(import_map['exact_entries_by_key']))
+      list_id, 'built', len(import_map['entries']), len(import_map['unique_entries']))
     return import_map
 
   def build_cached_active_add_import_map(self, entries):
     unique_entries = []
     seen = set()
     entries_by_key = {}
-    exact_entries_by_key = {}
-    entries_by_title_key = {}
-    author_tokens_by_key = {}
     for entry in entries:
       key = entry_key(entry)
       if key in seen:
@@ -366,20 +582,9 @@ class ListStateMixin:
       seen.add(key)
       unique_entries.append(entry)
       entries_by_key[key] = entry
-      exact_entries_by_key.setdefault(key, []).append(entry)
-      author_key = normalize_match_text(imported_author_search_text(entry))
-      author_tokens_by_key[key] = {
-        token for token in author_key.split()
-        if len(token) > 1
-      }
-      for title_key in match_keys(entry.get('title', '')):
-        entries_by_title_key.setdefault(title_key, []).append(entry)
     return {
-      'author_tokens_by_key': author_tokens_by_key,
       'entries': entries,
       'entries_by_key': entries_by_key,
-      'entries_by_title_key': entries_by_title_key,
-      'exact_entries_by_key': exact_entries_by_key,
       'unique_entries': unique_entries,
     }
 
@@ -435,31 +640,17 @@ class ListStateMixin:
           active_list_name=active_list_name)
       return override_entry, self.entry_position_index_value(override_entry), False
 
-    exact_candidates = self.exact_cached_entry_candidates_for_book(book_id, context)
-    if len(exact_candidates) == 1:
-      self.debug_storage_cached_active_add_decision(
-        book_id, 'unique exact cached title/author match', exact_candidates[0][1],
-        self.entry_position_index_value(exact_candidates[0][1]))
-      if force_match_review:
-        return self.choose_active_add_match(
-          book_id,
-          context['entries'],
-          exact_candidates,
-          default_index,
-          db,
-          initial_show_all=True,
-          preferred_entry=exact_candidates[0][1],
-          automatic_entry=exact_candidates[0][1],
-          active_list_name=active_list_name)
-      return exact_candidates[0][1], self.entry_position_index_value(exact_candidates[0][1]), False
-
     candidates = self.cached_entry_candidates_for_book(book_id, context, default_index)
     self.debug_storage_cached_active_add_candidates(book_id, candidates)
-    if len(candidates) == 1:
+    automatic_candidates = [
+      (evidence, entry) for evidence, entry in candidates
+      if evidence['auto_eligible']
+    ]
+    if len(automatic_candidates) == 1:
+      automatic_entry = automatic_candidates[0][1]
       self.debug_storage_cached_active_add_decision(
-        book_id, 'unique nonexact cached match',
-        candidates[0][1],
-        self.entry_position_index_value(candidates[0][1]))
+        book_id, 'unique cached button title/author match', automatic_entry,
+        self.entry_position_index_value(automatic_entry))
       if force_match_review:
         return self.choose_active_add_match(
           book_id,
@@ -468,9 +659,10 @@ class ListStateMixin:
           default_index,
           db,
           initial_show_all=True,
-          preferred_entry=candidates[0][1],
+          preferred_entry=automatic_entry,
+          automatic_entry=automatic_entry,
           active_list_name=active_list_name)
-      return candidates[0][1], self.entry_position_index_value(candidates[0][1]), True
+      return automatic_entry, self.entry_position_index_value(automatic_entry), False
 
     self.debug_storage_cached_active_add_decision(
       book_id, 'needs chooser or manual index', index_value=default_index)
@@ -481,88 +673,26 @@ class ListStateMixin:
   def saved_cached_entry_for_book(self, book_id, context):
     return context['override_entries_by_book'].get(book_id)
 
-  def exact_cached_entry_candidates_for_book(self, book_id, context):
-    title_key = normalize_match_text(context['titles'].get(book_id, ''))
-    author_key = normalize_match_text(context['authors'].get(book_id, ''))
-    if not title_key or not author_key:
-      return []
-    candidates = []
-    seen = set()
-
-    def append_entry(entry):
-      key = entry_key(entry)
-      if key in seen:
-        return
-      seen.add(key)
-      candidates.append((0, entry))
-
-    for entry in context['exact_entries_by_key'].get(f'{title_key}|{author_key}', []):
-      append_entry(entry)
-    if context.get('match_series'):
-      authors = context['authors'].get(book_id, []) or []
-      for series_value in context.get('series', {}).get(book_id, []):
-        for series_key in series_match_keys(series_value):
-          for entry in context['entries_by_title_key'].get(series_key, []):
-            if self.author_matches(authors, imported_author_search_text(entry)):
-              append_entry(entry)
-    candidates.sort(key=lambda item: self.cached_entry_candidate_sort_key(item))
-    return candidates
-
   def cached_entry_candidates_for_book(self, book_id, context, default_index=None):
     title = context['titles'].get(book_id, '') or ''
     authors = context['authors'].get(book_id, []) or []
     book_series = context.get('series', {}).get(book_id, []) if context.get('match_series') else []
     self.debug_storage_cached_active_add_book(book_id, title, authors, default_index)
-    title_key = normalize_match_text(title)
-    author_key = normalize_match_text(authors)
     ranked = []
-    seen = set()
-    entries = []
-    for key in match_keys(title):
-      for entry in context['entries_by_title_key'].get(key, []):
-        entry_lookup_key = entry_key(entry)
-        if entry_lookup_key not in seen:
-          seen.add(entry_lookup_key)
-          entries.append(entry)
-    for series_value in book_series:
-      for key in series_match_keys(series_value):
-        for entry in context['entries_by_title_key'].get(key, []):
-          entry_lookup_key = entry_key(entry)
-          if entry_lookup_key not in seen:
-            seen.add(entry_lookup_key)
-            entries.append(entry)
     for entry in context['unique_entries']:
-      entry_lookup_key = entry_key(entry)
-      if entry_lookup_key not in seen:
-        seen.add(entry_lookup_key)
-        entries.append(entry)
-
-    ranked_seen = set()
-    for entry in entries:
-      key = entry_key(entry)
-      if key in ranked_seen:
+      evidence = cached_active_add_button_candidate_evidence(
+        entry,
+        title,
+        authors,
+        series_match=self.cached_entry_title_matches_book_series(entry, book_series))
+      if (
+          evidence['title'] == CACHED_ACTIVE_ADD_BUTTON_MATCH_NONE
+          and evidence['author'] == CACHED_ACTIVE_ADD_BUTTON_MATCH_NONE
+          and not evidence['series']):
         continue
-      ranked_seen.add(key)
-      entry_title_key = normalize_match_text(entry.get('title', ''))
-      entry_author = imported_author_search_text(entry)
-      entry_author_key = normalize_match_text(entry_author)
-      title_match = entry_title_matches_book(entry, title)
-      series_match = self.cached_entry_title_matches_book_series(entry, book_series)
-      author_match = self.author_matches(authors, entry_author)
-      if title_key and entry_title_key == title_key and author_match:
-        score = 0 if author_key and entry_author_key == author_key else 1
-      elif series_match and author_match:
-        score = 1
-      elif title_match and author_match:
-        score = 1
-      elif title_match or series_match:
-        score = 2
-      elif author_match and entry_author_key:
-        score = 3
-      else:
-        continue
-      ranked.append((score, entry))
-    ranked.sort(key=self.cached_entry_candidate_sort_key)
+      ranked.append((evidence, entry))
+    ranked.sort(key=lambda item: cached_active_add_button_candidate_sort_key(
+      item, self.normalized_position_text))
     return ranked
 
   def cached_entry_title_matches_book_series(self, entry, book_series):
@@ -575,13 +705,6 @@ class ListStateMixin:
       if entry_keys & set(series_match_keys(series_value)):
         return True
     return False
-
-  def cached_entry_candidate_sort_key(self, item):
-    return (
-      item[0],
-      self.normalized_position_text(item[1].get('position', '')),
-      normalize_match_text(item[1].get('title', '')),
-      normalize_match_text(imported_author_search_text(item[1])))
 
   def entry_position_index_value(self, entry):
     position = entry.get('position', '') if entry else ''

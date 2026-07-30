@@ -14,13 +14,15 @@ except ImportError:
 
 from .generic import (
   CATEGORY_HORROR_DARK_FICTION,
+  GoodreadsFetchPolicyMixin,
   UrlFetcherError,
   UrlFetcherGeneric,
   parsed_source,
 )
 
 
-class UrlFetcherLadiesOfHorrorFiction(UrlFetcherGeneric):
+class UrlFetcherLadiesOfHorrorFiction(
+    GoodreadsFetchPolicyMixin, UrlFetcherGeneric):
 
   URL = GOODREADS_URL
   FETCH_URLS = ()
@@ -80,8 +82,17 @@ class UrlFetcherLadiesOfHorrorFiction(UrlFetcherGeneric):
       self.URL,
       *parsed_results,
       {'entries': (), 'notes': notes})
-    if not combined.get('entries'):
-      raise UrlFetcherError('Could not fetch or parse the imported list.')
+    try:
+      try:
+        from calibre_plugins.list_switchboard.parser.ladies_of_horror_fiction import (
+          require_complete_lohf_result,
+        )
+      except ImportError:
+        from parser.ladies_of_horror_fiction import require_complete_lohf_result
+      combined = require_complete_lohf_result(
+        combined, self.CATEGORY, 'Ladies of Horror Fiction sources')
+    except ValueError as err:
+      raise UrlFetcherError(str(err)) from err
     combined['match_series'] = self.options.get('match_series', True)
     combined.setdefault('source', parsed_source(self.NAME, self.URL, self.source_id))
     return combined
@@ -151,42 +162,42 @@ class UrlFetcherLadiesOfHorrorFiction(UrlFetcherGeneric):
 
 class UrlFetcherLadiesOfHorrorFictionNovel(UrlFetcherLadiesOfHorrorFiction):
   source_id = 'ladies_of_horror_fiction_novel'
-  NAME = 'Ladies of Horror Fiction - Novel'
+  NAME = 'Ladies of Horror Fiction - Novel (discontinued)'
   CATEGORY = 'Novel'
   CATEGORY_ALIASES = ('novel', 'best novel')
 
 
 class UrlFetcherLadiesOfHorrorFictionNovella(UrlFetcherLadiesOfHorrorFiction):
   source_id = 'ladies_of_horror_fiction_novella'
-  NAME = 'Ladies of Horror Fiction - Novella'
+  NAME = 'Ladies of Horror Fiction - Novella (discontinued)'
   CATEGORY = 'Novella'
   CATEGORY_ALIASES = ('novella', 'best novella')
 
 
 class UrlFetcherLadiesOfHorrorFictionCollection(UrlFetcherLadiesOfHorrorFiction):
   source_id = 'ladies_of_horror_fiction_collection'
-  NAME = 'Ladies of Horror Fiction - Collection'
+  NAME = 'Ladies of Horror Fiction - Collection (discontinued)'
   CATEGORY = 'Collection'
   CATEGORY_ALIASES = ('collection', 'best collection')
 
 
 class UrlFetcherLadiesOfHorrorFictionDebut(UrlFetcherLadiesOfHorrorFiction):
   source_id = 'ladies_of_horror_fiction_debut'
-  NAME = 'Ladies of Horror Fiction - Debut'
+  NAME = 'Ladies of Horror Fiction - Debut (discontinued)'
   CATEGORY = 'Debut'
   CATEGORY_ALIASES = ('debut', 'best debut')
 
 
 class UrlFetcherLadiesOfHorrorFictionYoungAdult(UrlFetcherLadiesOfHorrorFiction):
   source_id = 'ladies_of_horror_fiction_young_adult'
-  NAME = 'Ladies of Horror Fiction - Young Adult'
+  NAME = 'Ladies of Horror Fiction - Young Adult (discontinued)'
   CATEGORY = 'Young Adult'
   CATEGORY_ALIASES = ('young adult', 'best young adult')
 
 
 class UrlFetcherLadiesOfHorrorFictionMiddleGrade(UrlFetcherLadiesOfHorrorFiction):
   source_id = 'ladies_of_horror_fiction_middle_grade'
-  NAME = 'Ladies of Horror Fiction - Middle Grade'
+  NAME = 'Ladies of Horror Fiction - Middle Grade (discontinued)'
   CATEGORY = 'Middle Grade'
   CATEGORY_ALIASES = ('middle grade', 'best middle grade')
 
@@ -194,7 +205,7 @@ class UrlFetcherLadiesOfHorrorFictionMiddleGrade(UrlFetcherLadiesOfHorrorFiction
 class UrlFetcherLadiesOfHorrorFictionPoetryCollection(
     UrlFetcherLadiesOfHorrorFiction):
   source_id = 'ladies_of_horror_fiction_poetry_collection'
-  NAME = 'Ladies of Horror Fiction - Poetry Collection'
+  NAME = 'Ladies of Horror Fiction - Poetry Collection (discontinued)'
   CATEGORY = 'Poetry Collection'
   CATEGORY_ALIASES = (
     'poetry',
@@ -206,6 +217,6 @@ class UrlFetcherLadiesOfHorrorFictionPoetryCollection(
 
 class UrlFetcherLadiesOfHorrorFictionGraphicNovel(UrlFetcherLadiesOfHorrorFiction):
   source_id = 'ladies_of_horror_fiction_graphic_novel'
-  NAME = 'Ladies of Horror Fiction - Graphic Novel'
+  NAME = 'Ladies of Horror Fiction - Graphic Novel (discontinued)'
   CATEGORY = 'Graphic Novel'
   CATEGORY_ALIASES = ('graphic novel', 'best graphic novel')

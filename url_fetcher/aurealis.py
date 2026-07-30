@@ -54,6 +54,8 @@ class UrlFetcherAurealis(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
   LIBRARYTHING_URL = LIBRARYTHING_AUREALIS_URL
   CATEGORY = ''
   CATEGORY_ALIASES = ()
+  SFADB_CATEGORY_ALIASES = ()
+  SFADB_YEARS = ()
   SKIP_QUOTED = False
   ISFDB_CATEGORY_IDS = ()
   LIBRARYTHING_CATEGORY_ALIASES = ()
@@ -65,7 +67,9 @@ class UrlFetcherAurealis(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
     except ImportError:
       from parser.aurealis import AurealisParser
 
-    return AurealisParser(skip_quoted=self.SKIP_QUOTED)
+    return AurealisParser(
+      skip_quoted=self.SKIP_QUOTED,
+      allowed_years=self.SFADB_YEARS)
 
   def create_isfdb_parser(self):
     try:
@@ -86,6 +90,9 @@ class UrlFetcherAurealis(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
 
   def librarything_aliases(self):
     return self.CATEGORY_ALIASES + self.LIBRARYTHING_CATEGORY_ALIASES
+
+  def sfadb_aliases(self):
+    return self.CATEGORY_ALIASES + self.SFADB_CATEGORY_ALIASES
 
   def librarything_attempt(self, source_rank=2):
     parser = self.create_librarything_parser()
@@ -176,7 +183,7 @@ class UrlFetcherAurealis(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
       self.URL,
       self.NAME,
       self.CATEGORY,
-      self.CATEGORY_ALIASES,
+      self.sfadb_aliases(),
       fetch_url=fetch_url,
       log=log,
       progress=progress)
@@ -226,7 +233,6 @@ class UrlFetcherAurealisSFNovella(UrlFetcherAurealis):
   CATEGORY = 'SF Novella'
   CATEGORY_ALIASES = ('sf novella', 'science fiction novella')
   ISFDB_CATEGORY_IDS = (640,)
-  SKIP_QUOTED = True
 
 
 class UrlFetcherAurealisFantasyNovella(UrlFetcherAurealis):
@@ -236,7 +242,6 @@ class UrlFetcherAurealisFantasyNovella(UrlFetcherAurealis):
   CATEGORY = 'Fantasy Novella'
   CATEGORY_ALIASES = ('fantasy novella',)
   ISFDB_CATEGORY_IDS = (641,)
-  SKIP_QUOTED = True
 
 
 class UrlFetcherAurealisHorrorNovella(UrlFetcherAurealis):
@@ -246,7 +251,6 @@ class UrlFetcherAurealisHorrorNovella(UrlFetcherAurealis):
   CATEGORY = 'Horror Novella'
   CATEGORY_ALIASES = ('horror novella',)
   ISFDB_CATEGORY_IDS = (642,)
-  SKIP_QUOTED = True
 
 
 class UrlFetcherAurealisAnthology(UrlFetcherAurealis):
@@ -305,6 +309,11 @@ class UrlFetcherAurealisChildrensBook(UrlFetcherAurealis):
   FILTER_CATEGORIES = YOUNG_READER_SPECULATIVE_REGIONAL_CATEGORIES
   CATEGORY = "Children's Book"
   CATEGORY_ALIASES = ("children's book", 'childrens book')
+  # SFADB calls this one-cycle category Children's Fiction. Constrain the alias
+  # to its 2014 award page so the continuing category is not folded into this
+  # discontinued recipe.
+  SFADB_CATEGORY_ALIASES = ("children's fiction", 'childrens fiction')
+  SFADB_YEARS = (2014,)
   ISFDB_CATEGORY_IDS = (34,)
 
 
@@ -318,6 +327,12 @@ class UrlFetcherAurealisChildrensFictionWords(UrlFetcherAurealis):
     'childrens fiction told primarily through words',
     "children's fiction words",
     "children's fiction (words)",
+  )
+  # SFADB misspells "primarily" as "primary" on all three pages in this
+  # retired lineage. Keep the typo out of the other source parsers.
+  SFADB_CATEGORY_ALIASES = (
+    "children's fiction told primary through words",
+    'childrens fiction told primary through words',
   )
   ISFDB_CATEGORY_IDS = (36,)
 

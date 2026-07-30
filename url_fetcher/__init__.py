@@ -236,7 +236,6 @@ from .goodreads_choice_awards import (
   UrlFetcherGoodreadsChoiceAwardsBestBook,
   UrlFetcherGoodreadsChoiceAwardsBestOfTheBest,
   UrlFetcherGoodreadsChoiceAwardsBusiness,
-  UrlFetcherGoodreadsChoiceAwardsChickLit,
   UrlFetcherGoodreadsChoiceAwardsChildrensMiddleGrade,
   UrlFetcherGoodreadsChoiceAwardsDebutNovel,
   UrlFetcherGoodreadsChoiceAwardsFantasy,
@@ -260,7 +259,6 @@ from .goodreads_choice_awards import (
   UrlFetcherGoodreadsChoiceAwardsTravelOutdoors,
   UrlFetcherGoodreadsChoiceAwardsYoungAdultFantasyScienceFiction,
   UrlFetcherGoodreadsChoiceAwardsYoungAdultFiction,
-  UrlFetcherGoodreadsChoiceAwardsYoungAdultSeries,
 )
 from .morris import UrlFetcherWilliamCMorrisAward
 from .yalsa_nonfiction import UrlFetcherYALSAExcellenceNonfictionYoungAdults
@@ -470,6 +468,7 @@ from .world_fantasy import (
 )
 from .british_fantasy import (
   UrlFetcherBritishFantasyAnthology,
+  UrlFetcherBritishFantasyAnthologyCollection,
   UrlFetcherBritishFantasyBestNovel,
   UrlFetcherBritishFantasyCollection,
   UrlFetcherBritishFantasyFantasyNovel,
@@ -586,6 +585,7 @@ URL_FETCHER_CLASSES = (
   UrlFetcherBritishFantasyFantasyNovel,
   UrlFetcherBritishFantasyBestNovel,
   UrlFetcherBritishFantasyNovella,
+  UrlFetcherBritishFantasyAnthologyCollection,
   UrlFetcherBritishFantasyAnthology,
   UrlFetcherBritishFantasyCollection,
   UrlFetcherBritishFantasyNonfiction,
@@ -878,7 +878,6 @@ URL_FETCHER_CLASSES = (
   UrlFetcherGoodreadsChoiceAwardsNonfiction,
   UrlFetcherGoodreadsChoiceAwardsMemoir,
   UrlFetcherGoodreadsChoiceAwardsHistoryBiography,
-  UrlFetcherGoodreadsChoiceAwardsYoungAdultSeries,
   UrlFetcherGoodreadsChoiceAwardsChildrensMiddleGrade,
   UrlFetcherGoodreadsChoiceAwardsPictureBook,
   UrlFetcherGoodreadsChoiceAwardsScienceTechnology,
@@ -889,7 +888,6 @@ URL_FETCHER_CLASSES = (
   UrlFetcherGoodreadsChoiceAwardsPoetry,
   UrlFetcherGoodreadsChoiceAwardsHumor,
   UrlFetcherGoodreadsChoiceAwardsParanormalFantasy,
-  UrlFetcherGoodreadsChoiceAwardsChickLit,
   UrlFetcherGoodreadsChoiceAwardsBestBook,
   UrlFetcherGoodreadsChoiceAwardsBestOfTheBest,
   UrlFetcherWilliamCMorrisAward,

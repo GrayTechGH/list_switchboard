@@ -513,6 +513,9 @@ class ImportFlowMixin:
     self.debug_import_target(list_name, active)
     self.update_import_match_progress(0, len(entries), f'Matching 0 of {len(entries)} recipe entries...')
     match_series = self.effective_import_match_series(parsed, recipe, import_options)
+    requires_series_matching = bool(parsed.get(
+      'requires_series_matching',
+      getattr(recipe, 'REQUIRES_SERIES_MATCHING', False)))
     award_winners_only = bool((import_options or {}).get('award_winners_only', False))
     allow_goodreads_recovery = not parsed.get('from_cache')
     matched, missing_entries, review_rows = self.match_imported_entries(
@@ -521,7 +524,8 @@ class ImportFlowMixin:
       list_id=parsed.get('list_id'),
       allow_goodreads_recovery=allow_goodreads_recovery,
       award_winners_only=award_winners_only,
-      return_details=True)
+      return_details=True,
+      requires_series_matching=requires_series_matching)
     self.debug_import_summary(matched, missing_entries, entries)
 
     review_rows, reconciliation_notes = self.reconcile_review_rows_with_active_list(
@@ -539,6 +543,7 @@ class ImportFlowMixin:
       list_name, parsed.get('list_id'), matched_entry_count, len(entries),
       missing_entries, review_rows, notes=parsed.get('notes'),
       match_series=match_series, allow_goodreads_recovery=allow_goodreads_recovery,
+      requires_series_matching=requires_series_matching,
       list_source_url=parsed_list_source_url(parsed))
     if review is None:
       raise ImportCancelledError('Import cancelled. No Active List metadata was changed.')
@@ -615,12 +620,14 @@ class ImportFlowMixin:
       raise ListSwitchboardError('The cached imported list did not contain any entries.')
     list_id = parsed.get('list_id') or cache.get('list_id') or self.safe_list_id(list_name)
     match_series = parsed.get('match_series', True)
+    requires_series_matching = bool(parsed.get('requires_series_matching', False))
     matched, missing_entries, review_rows = self.match_imported_entries(
       entries,
       match_series=match_series,
       list_id=list_id,
       allow_goodreads_recovery=False,
-      return_details=True)
+      return_details=True,
+      requires_series_matching=requires_series_matching)
     review_rows, reconciliation_notes = self.reconcile_review_rows_with_active_list(
       list_name, review_rows, active_name=active)
     notes = list(parsed.get('notes') or [])
@@ -631,6 +638,7 @@ class ImportFlowMixin:
       list_name, list_id, matched_entry_count, len(entries), missing_entries,
       review_rows, notes=notes, match_series=match_series,
       allow_goodreads_recovery=False,
+      requires_series_matching=requires_series_matching,
       list_source_url=parsed_list_source_url(parsed))
     if review is None:
       return
@@ -899,8 +907,9 @@ class ImportFlowMixin:
   def review_import_matches(
       self, list_name, list_id, matched_count, entries_count, missing_entries,
       review_rows, notes=None, match_series=True, allow_goodreads_recovery=True,
-      list_source_url=''):
+      list_source_url='', requires_series_matching=False):
     self.debug_import_missing_entries(missing_entries)
+    match_index = getattr(self, '_import_list_review_auto_match_index', None)
     try:
       gui = self.gui
     except AttributeError:
@@ -918,10 +927,11 @@ class ImportFlowMixin:
         view_book_callback=self.open_book_detail_window,
         author_display_formatter=self.display_authors,
         list_source_url=list_source_url,
-        selected_match_source_callback=lambda row, candidate: self.review_match_source_for_candidate(
+        selected_match_source_callback=lambda row, candidate: self.import_list_review_auto_match_source_for_candidate(
           row.get('entry') or {}, candidate.get('book_id', candidate.get('matched_book_id')),
-          list_id=list_id, match_series=match_series,
-          allow_goodreads_recovery=allow_goodreads_recovery))
+          list_id=list_id, requires_series_matching=requires_series_matching,
+          allow_goodreads_recovery=False, match_index=match_index,
+          entry_key=row.get('entry_key', '')))
     except TypeError as err:
       if (
           'find_match_settings' not in str(err)
@@ -1067,7 +1077,7 @@ class ImportFlowMixin:
         author_soundex_length=settings.get('author_soundex_length', 8),
         match_series=match_series)
     for row in review_rows or []:
-      if row.get('matched'):
+      if row.get('matched') or row.get('ignored'):
         continue
       excluded = matched_book_ids | set(row.get('book_ids') or [])
       row['possible_matches'] = self.find_import_match_candidates_from_index(

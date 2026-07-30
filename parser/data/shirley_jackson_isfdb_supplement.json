@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "verified_through": 2026,
+  "coverage": {
+    "novel": {
+      "2008": {"rows": 5, "winners": 1},
+      "2009": {"rows": 6, "winners": 1},
+      "2010": {"rows": 6, "winners": 1},
+      "2011": {"rows": 6, "winners": 1},
+      "2012": {"rows": 6, "winners": 1},
+      "2013": {"rows": 5, "winners": 1},
+      "2014": {"rows": 6, "winners": 1},
+      "2015": {"rows": 6, "winners": 1},
+      "2016": {"rows": 5, "winners": 1},
+      "2017": {"rows": 6, "winners": 1},
+      "2018": {"rows": 5, "winners": 1},
+      "2019": {"rows": 5, "winners": 1},
+      "2020": {"rows": 6, "winners": 1},
+      "2021": {"rows": 6, "winners": 1},
+      "2022": {"rows": 5, "winners": 1},
+      "2023": {"rows": 6, "winners": 2},
+      "2024": {"rows": 6, "winners": 1},
+      "2025": {"rows": 6, "winners": 1},
+      "2026": {"rows": 6, "winners": 1}
+    },
+    "novella": {
+      "2008": {"rows": 6, "winners": 1},
+      "2009": {"rows": 5, "winners": 1},
+      "2010": {"rows": 6, "winners": 1},
+      "2011": {"rows": 6, "winners": 1},
+      "2012": {"rows": 6, "winners": 1},
+      "2013": {"rows": 5, "winners": 1},
+      "2014": {"rows": 7, "winners": 1},
+      "2015": {"rows": 5, "winners": 1},
+      "2016": {"rows": 5, "winners": 1},
+      "2017": {"rows": 6, "winners": 1},
+      "2018": {"rows": 6, "winners": 2},
+      "2019": {"rows": 5, "winners": 1},
+      "2020": {"rows": 5, "winners": 1},
+      "2021": {"rows": 6, "winners": 1},
+      "2022": {"rows": 5, "winners": 1},
+      "2023": {"rows": 6, "winners": 1},
+      "2024": {"rows": 6, "winners": 1},
+      "2025": {"rows": 5, "winners": 1},
+      "2026": {"rows": 5, "winners": 1}
+    },
+    "single_author_collection": {
+      "2008": {"rows": 5, "winners": 1},
+      "2009": {"rows": 6, "winners": 1},
+      "2010": {"rows": 6, "winners": 2},
+      "2011": {"rows": 5, "winners": 1},
+      "2012": {"rows": 6, "winners": 1},
+      "2013": {"rows": 6, "winners": 1},
+      "2014": {"rows": 5, "winners": 2},
+      "2015": {"rows": 5, "winners": 1},
+      "2016": {"rows": 6, "winners": 1},
+      "2017": {"rows": 5, "winners": 1},
+      "2018": {"rows": 5, "winners": 1},
+      "2019": {"rows": 5, "winners": 1},
+      "2020": {"rows": 6, "winners": 1},
+      "2021": {"rows": 6, "winners": 1},
+      "2022": {"rows": 5, "winners": 1},
+      "2023": {"rows": 6, "winners": 1},
+      "2024": {"rows": 5, "winners": 1},
+      "2025": {"rows": 5, "winners": 1},
+      "2026": {"rows": 5, "winners": 1}
+    },
+    "edited_anthology": {
+      "2008": {"rows": 5, "winners": 1},
+      "2009": {"rows": 5, "winners": 1},
+      "2010": {"rows": 5, "winners": 1},
+      "2011": {"rows": 5, "winners": 1},
+      "2012": {"rows": 6, "winners": 1},
+      "2013": {"rows": 5, "winners": 1},
+      "2014": {"rows": 5, "winners": 1},
+      "2015": {"rows": 5, "winners": 1},
+      "2016": {"rows": 5, "winners": 1},
+      "2017": {"rows": 5, "winners": 1},
+      "2018": {"rows": 5, "winners": 1},
+      "2019": {"rows": 5, "winners": 1},
+      "2020": {"rows": 5, "winners": 1},
+      "2021": {"rows": 7, "winners": 1},
+      "2022": {"rows": 5, "winners": 2},
+      "2023": {"rows": 5, "winners": 1},
+      "2024": {"rows": 5, "winners": 1},
+      "2025": {"rows": 5, "winners": 1},
+      "2026": {"rows": 5, "winners": 2}
+    }
+  },
+  "replacement_years": {
+    "novel": {
+      "2012": [
+        {"title": "Witches on the Road Tonight", "authors": ["Sheri Holman"], "result": "winner", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2011-shirley-jackson-awards-winners/"},
+        {"title": "The Devil All the Time", "authors": ["Donald Ray Pollock"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2011-shirley-jackson-awards-winners/"},
+        {"title": "The Dracula Papers", "authors": ["Reggie Oliver"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2011-shirley-jackson-awards-winners/"},
+        {"title": "The Great Lover", "authors": ["Michael Cisco"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2011-shirley-jackson-awards-winners/"},
+        {"title": "Knock Knock", "authors": ["S. P. Miskowski"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2011-shirley-jackson-awards-winners/"},
+        {"title": "The Last Werewolf", "authors": ["Glen Duncan"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2011-shirley-jackson-awards-winners/"}
+      ],
+      "2026": [
+        {"title": "Bat Eater and Other Names for Cora Zeng", "authors": ["Kylie Lee Baker"], "result": "winner", "source_url": "https://www.shirleyjacksonawards.org/2026/07/12/winners-announced-for-the-2025-shirley-jackson-awards/"},
+        {"title": "How to Fake a Haunting", "authors": ["Christa Carmen"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/2026/05/28/nominees-announced-for-the-2025-shirley-jackson-awards/"},
+        {"title": "The Lamb", "authors": ["Lucy Rose"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/2026/05/28/nominees-announced-for-the-2025-shirley-jackson-awards/"},
+        {"title": "Moonflow", "authors": ["Bitter Karella"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/2026/05/28/nominees-announced-for-the-2025-shirley-jackson-awards/"},
+        {"title": "Old Soul", "authors": ["Susan Barker"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/2026/05/28/nominees-announced-for-the-2025-shirley-jackson-awards/"},
+        {"title": "Witchcraft for Wayward Girls", "authors": ["Grady Hendrix"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/2026/05/28/nominees-announced-for-the-2025-shirley-jackson-awards/"}
+      ]
+    },
+    "novella": {
+      "2026": [
+        {"title": "The Death of Mountains", "authors": ["Jordan Kurella"], "result": "winner", "source_url": "https://www.shirleyjacksonawards.org/2026/07/12/winners-announced-for-the-2025-shirley-jackson-awards/"},
+        {"title": "The Cold House", "authors": ["A. G. Slatter"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/2026/05/28/nominees-announced-for-the-2025-shirley-jackson-awards/"},
+        {"title": "DuMort", "authors": ["Michelle Tang"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/2026/05/28/nominees-announced-for-the-2025-shirley-jackson-awards/"},
+        {"title": "The Glass Garden", "authors": ["Jessica Lévai"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/2026/05/28/nominees-announced-for-the-2025-shirley-jackson-awards/"},
+        {"title": "Psychopomp & Circumstance", "authors": ["Eden Royce"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/2026/05/28/nominees-announced-for-the-2025-shirley-jackson-awards/"}
+      ]
+    },
+    "single_author_collection": {
+      "2012": [
+        {"title": "After the Apocalypse: Stories", "authors": ["Maureen F. McHugh"], "result": "winner", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2011-shirley-jackson-awards-winners/"},
+        {"title": "The Corn Maiden and Other Nightmares", "authors": ["Joyce Carol Oates"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2011-shirley-jackson-awards-winners/"},
+        {"title": "Engines of Desire: Tales of Love & Other Horrors", "authors": ["Livia Llewellyn"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2011-shirley-jackson-awards-winners/"},
+        {"title": "The Janus Tree and Other Stories", "authors": ["Glen Hirshberg"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2011-shirley-jackson-awards-winners/"},
+        {"title": "Red Gloves: The London Horrors", "authors": ["Christopher Fowler"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2011-shirley-jackson-awards-winners/"},
+        {"title": "What Wolves Know", "authors": ["Kit Reed"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2011-shirley-jackson-awards-winners/"}
+      ],
+      "2021": [
+        {"title": "Velocities: Stories", "authors": ["Kathe Koja"], "result": "winner", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2020-shirley-jackson-award-winners/"},
+        {"title": "Aftermath of an Industrial Accident: Stories", "authors": ["Mike Allen"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2020-shirley-jackson-award-winners/"},
+        {"title": "Mannequin and Wife", "authors": ["Jen Fawkes"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2020-shirley-jackson-award-winners/"},
+        {"title": "Moonflower, Nightshade, All the Hours of the Day", "authors": ["JD Scott"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2020-shirley-jackson-award-winners/"},
+        {"title": "Settling the World: Selected Stories", "authors": ["M. John Harrison"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2020-shirley-jackson-award-winners/"},
+        {"title": "Thin Places", "authors": ["Kay Chronister"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2020-shirley-jackson-award-winners/"}
+      ],
+      "2022": [
+        {"title": "Folk Songs for Trauma Surgeons: Stories", "authors": ["Keith Rosson"], "result": "winner", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2021-shirley-jackson-award-winners/"},
+        {"title": "People from My Neighborhood", "authors": ["Hiromi Kawakami"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2021-shirley-jackson-award-winners/"},
+        {"title": "Sometimes We're Cruel", "authors": ["J. A. W. McCarthy"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2021-shirley-jackson-award-winners/"},
+        {"title": "We are Happy, We are Doomed", "authors": ["Kurt Fawver"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2021-shirley-jackson-award-winners/"},
+        {"title": "Where All is Night, and Starless", "authors": ["John Linwood Grant"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2021-shirley-jackson-award-winners/"}
+      ],
+      "2026": [
+        {"title": "Issues with Authority", "authors": ["Nadia Bulkin"], "result": "winner", "source_url": "https://www.shirleyjacksonawards.org/2026/07/12/winners-announced-for-the-2025-shirley-jackson-awards/"},
+        {"title": "Clairviolence: Tales of Tarot and Torment", "authors": ["Mo Moshaty"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/2026/05/28/nominees-announced-for-the-2025-shirley-jackson-awards/"},
+        {"title": "Good and Evil and Other Stories", "authors": ["Samanta Schweblin"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/2026/05/28/nominees-announced-for-the-2025-shirley-jackson-awards/"},
+        {"title": "Moon Songs: The Selected Stories of Carol Emshwiller", "authors": ["Carol Emshwiller"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/2026/05/28/nominees-announced-for-the-2025-shirley-jackson-awards/"},
+        {"title": "Portalmania: Stories", "authors": ["Debbie Urbanski"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/2026/05/28/nominees-announced-for-the-2025-shirley-jackson-awards/"}
+      ]
+    },
+    "edited_anthology": {
+      "2022": [
+        {"title": "Professor Charlatan Bardot's Travel Anthology to the Most (Fictional) Haunted Buildings in the Weird, Wild World", "authors": ["Eric J. Guignard"], "result": "winner", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2021-shirley-jackson-award-winners/"},
+        {"title": "Unfettered Hexes: Queer Tales of Insatiable Darkness", "authors": ["dave ring"], "result": "winner", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2021-shirley-jackson-award-winners/"},
+        {"title": "Giving the Devil His Due: A Charity Anthology", "authors": ["Rebecca Brewer"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2021-shirley-jackson-award-winners/"},
+        {"title": "Stitched Lips: An Anthology of Horror from Silenced Voices", "authors": ["Ken MacGregor"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2021-shirley-jackson-award-winners/"},
+        {"title": "There Is No Death, There Are No Dead", "authors": ["Jess Landry", "Aaron J. French"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/award-winners/2021-shirley-jackson-award-winners/"}
+      ],
+      "2023": [
+        {"title": "The Hideous Book of Hidden Horrors", "authors": ["Doug Murano"], "result": "winner", "source_url": "https://www.shirleyjacksonawards.org/2022-shirley-jackson-awards-winners/"},
+        {"title": "Chiral Mad 5", "authors": ["Michael Bailey"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/2022-shirley-jackson-awards-winners/"},
+        {"title": "Other Terrors", "authors": ["Vince A. Liaguno", "Rena Mason"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/2022-shirley-jackson-awards-winners/"},
+        {"title": "Screams From the Dark: 29 Tales of Monsters and the Monstrous", "authors": ["Ellen Datlow"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/2022-shirley-jackson-awards-winners/"},
+        {"title": "Your Body is Not Your Body", "authors": ["Alex Woodroe", "Matt Blairstone"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/2022-shirley-jackson-awards-winners/"}
+      ],
+      "2026": [
+        {"title": "Night & Day", "authors": ["Ellen Datlow"], "result": "winner", "source_url": "https://www.shirleyjacksonawards.org/2026/07/12/winners-announced-for-the-2025-shirley-jackson-awards/"},
+        {"title": "Unquiet Guests", "authors": ["Dan Coxon"], "result": "winner", "source_url": "https://www.shirleyjacksonawards.org/2026/07/12/winners-announced-for-the-2025-shirley-jackson-awards/"},
+        {"title": "Roots of My Fears", "authors": ["Gemma Amor"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/2026/05/28/nominees-announced-for-the-2025-shirley-jackson-awards/"},
+        {"title": "Silk and Sinew: A Collection of Folk Horror from the Asian Diaspora", "authors": ["Kristy Park Kulski"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/2026/05/28/nominees-announced-for-the-2025-shirley-jackson-awards/"},
+        {"title": "Were Wolf Short Stories", "authors": ["Gillian Whitaker", "Catherine Taylor", "Nick Wells"], "result": "nominee", "source_url": "https://www.shirleyjacksonawards.org/2026/05/28/nominees-announced-for-the-2025-shirley-jackson-awards/"}
+      ]
+    }
+  }
+}

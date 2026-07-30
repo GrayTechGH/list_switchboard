@@ -85,7 +85,8 @@
     },
     {
       "authors": [
-        "Terry Pratchett & Neil Gaiman"
+        "Terry Pratchett",
+        "Neil Gaiman"
       ],
       "award": "Locus Poll",
       "category": "All-Time 20th Century Fantasy/Horror Novel",
@@ -832,7 +833,7 @@
       "title": "The Prestige"
     }
   ],
-  "fetched_at": "2026-07-08T18:24:23Z",
+  "fetched_at": "2026-07-11T00:41:47Z",
   "list_id": "locus_all_time_2012_fh_20th_novel",
   "list_name": "Locus - All-Time 2012 20th Century Fantasy/Horror Novel",
   "match_series": false,

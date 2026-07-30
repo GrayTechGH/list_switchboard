@@ -203,6 +203,18 @@ class StorageHelpersTest(unittest.TestCase):
       ['https://example.com/current-year'],
       data['incremental_state']['pending_page_urls'])
 
+  def test_import_list_review_auto_cache_write_uses_required_series_recipe_flag(self):
+    recipe = types.SimpleNamespace(
+      NAME='Required Series', URL='https://example.com/series',
+      source_id='required_series', REQUIRES_SERIES_MATCHING=True)
+
+    data = storage.build_import_cache_data('Required Series', {
+      'name': 'Required Series', 'entries': [],
+    }, recipe=recipe)
+
+    self.assertEqual(2, data['schema_version'])
+    self.assertIs(True, data['requires_series_matching'])
+
 class StorageMixinTest(unittest.TestCase):
 
   def setUp(self):
@@ -328,6 +340,19 @@ class StorageMixinTest(unittest.TestCase):
     self.assertNotIn('source_url', parsed)
     self.assertEqual(True, parsed['from_cache'])
 
+  def test_import_list_review_auto_cache_read_preserves_flag_and_old_cache_defaults_false(self):
+    cache = self.mixin.write_import_cache('Required Series', {
+      'name': 'Required Series', 'entries': [],
+      'requires_series_matching': True,
+    })
+    self.assertTrue(
+      self.mixin.cached_import_to_parsed(cache)['requires_series_matching'])
+
+    old_cache = dict(cache)
+    old_cache.pop('requires_series_matching')
+    self.assertFalse(
+      self.mixin.cached_import_to_parsed(old_cache)['requires_series_matching'])
+
   def test_merge_append_import_cache_appends_when_prefix_matches(self):
     old_cache = self.mixin.write_import_cache('Example List', {
       'name': 'Example List',
@@ -343,6 +368,25 @@ class StorageMixinTest(unittest.TestCase):
 
     self.assertEqual(2, len(merged['entries']))
     self.assertEqual('Book 2', merged['entries'][1]['title'])
+
+  def test_import_list_review_auto_append_cache_preserves_required_series_flag(self):
+    recipe = types.SimpleNamespace(
+      NAME='Required Series', URL='https://example.com/series',
+      source_id='required_series', REQUIRES_SERIES_MATCHING=True)
+    old_cache = self.mixin.write_import_cache('Required Series', {
+      'name': 'Required Series',
+      'entries': [{'position': '1', 'title': 'Saga', 'authors': ['Author']}],
+    }, recipe=recipe)
+
+    merged = self.mixin.merge_append_import_cache('Required Series', old_cache, {
+      'name': 'Required Series',
+      'entries': [
+        {'position': '1', 'title': 'Saga', 'authors': ['Author']},
+        {'position': '2', 'title': 'Another Saga', 'authors': ['Author']},
+      ],
+    }, recipe=recipe)
+
+    self.assertTrue(merged['requires_series_matching'])
 
   def test_merge_append_import_cache_replaces_when_prefix_changes(self):
     old_cache = self.mixin.write_import_cache('Example List', {
@@ -521,6 +565,35 @@ class StorageMixinTest(unittest.TestCase):
     self.assertEqual([7], loaded['matches'][0]['previous_matched_book_ids'])
     self.assertEqual('saved/manual override', loaded['matches'][0]['previous_match_source'])
 
+  def test_apply_import_review_match_changes_removes_saved_override_reclassified_automatic(self):
+    self.mixin.write_match_cache('Example List', [{
+      'entry_key': 'book|author',
+      'matched_book_id': 7,
+    }])
+    rows = [{
+      'entry': {'title': 'Book', 'authors': ['Author'], 'position': '1'},
+      'entry_key': 'book|author',
+      'matched': True,
+      'ignored': False,
+      'original_matched': True,
+      'original_ignored': False,
+      'book_ids': [7],
+      'original_book_ids': [7],
+      'matched_books': [],
+      'original_matched_books': [],
+      'previous_book_ids': [7],
+      'previous_matched_books': [],
+      'previous_match_source': 'saved/manual override',
+      'match_source': 'automatic',
+      'original_match_source': 'saved/manual override',
+    }]
+
+    result = self.mixin.apply_import_review_match_changes('Example List', rows)
+    loaded = self.mixin.read_match_cache('Example List')
+
+    self.assertEqual(1, result['removed'])
+    self.assertEqual([], loaded['matches'])
+
   def test_apply_import_review_match_changes_saves_active_manual_edit(self):
     class FakeApi:
       def field_for(self, field, book_id, default_value=''):
@@ -562,6 +635,79 @@ class StorageMixinTest(unittest.TestCase):
     self.assertEqual(0, result['removed'])
     self.assertEqual(7, loaded['matches'][0]['matched_book_id'])
     self.assertEqual([7], loaded['matches'][0]['matched_book_ids'])
+
+  def test_duplicate_import_review_positions_persist_ignored_and_matched_rows_independently(self):
+    class FakeApi:
+      def field_for(self, field, book_id, default_value=''):
+        if field == 'title':
+          return {7: 'The Moon Is a Harsh Mistress'}.get(book_id, default_value)
+        if field == 'authors':
+          return {7: ['Robert A. Heinlein']}.get(book_id, default_value)
+        return default_value
+
+    class FakeDb:
+      new_api = FakeApi()
+
+    self.mixin.db = FakeDb()
+    nominee = {
+      'position': '1966.03', 'title': 'The Moon is a Harsh Mistress',
+      'authors': ['Robert A. Heinlein'],
+    }
+    winner = dict(nominee, position='1967')
+    base_key = storage.entry_key(nominee)
+    nominee_key = storage.entry_key_for_saved_match(
+      nominee, position_scoped=True)
+    winner_key = storage.entry_key_for_saved_match(
+      winner, position_scoped=True)
+    self.mixin.write_match_cache('Hugo Awards Novel', [{
+      'entry_key': base_key,
+      'matched_book_id': 7,
+      'matched_book_ids': [7],
+    }])
+    rows = [{
+      'entry': nominee,
+      'entry_key': nominee_key,
+      'matched': False,
+      'ignored': True,
+      'original_matched': False,
+      'original_ignored': False,
+      'book_ids': [],
+      'original_book_ids': [],
+      'matched_books': [],
+      'original_matched_books': [],
+      'previous_book_ids': [7],
+      'previous_matched_books': [],
+      'previous_match_source': 'saved/manual override',
+      'match_source': 'ignored',
+      'original_match_source': 'never matched',
+    }, {
+      'entry': winner,
+      'entry_key': winner_key,
+      'matched': True,
+      'ignored': False,
+      'original_matched': False,
+      'original_ignored': False,
+      'book_ids': [7],
+      'original_book_ids': [],
+      'matched_books': [],
+      'original_matched_books': [],
+      'previous_book_ids': [],
+      'previous_matched_books': [],
+      'previous_match_source': '',
+      'match_source': 'active list/manual edit',
+      'original_match_source': 'never matched',
+    }]
+
+    self.mixin.apply_import_review_match_changes('Hugo Awards Novel', rows)
+    by_key = {
+      item['entry_key']: item
+      for item in self.mixin.read_match_cache('Hugo Awards Novel')['matches']
+    }
+
+    self.assertIn(base_key, by_key)
+    self.assertTrue(by_key[nominee_key]['ignored'])
+    self.assertTrue(by_key[nominee_key]['unmatched'])
+    self.assertEqual([7], by_key[winner_key]['matched_book_ids'])
 
   def test_apply_import_review_match_changes_replaces_manual_selection_exactly(self):
     class FakeApi:

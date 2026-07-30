@@ -11,6 +11,7 @@ from .generic import (
   CATEGORY_SCIENCE_FICTION,
   CATEGORY_UNKNOWN,
   CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
+  GoodreadsFetchPolicyMixin,
   UrlFetcherGeneric,
 )
 
@@ -22,7 +23,7 @@ except ImportError:
   from parser.goodreads_choice_awards import CHOICE_AWARDS_URL
 
 
-class UrlFetcherGoodreadsChoiceAwards(UrlFetcherGeneric):
+class UrlFetcherGoodreadsChoiceAwards(GoodreadsFetchPolicyMixin, UrlFetcherGeneric):
 
   URL = CHOICE_AWARDS_URL
   order = 260
@@ -40,14 +41,17 @@ class UrlFetcherGoodreadsChoiceAwards(UrlFetcherGeneric):
       from parser.goodreads_choice_awards import GoodreadsChoiceAwardsParser
     return GoodreadsChoiceAwardsParser(self.CATEGORY, self.CATEGORY_ALIASES)
 
-  def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
+  def parse(
+      self, html, fetch_url=None, log=None, progress=None, sleep=None,
+      **_kwargs):
     return self.parser().parse(
       html,
       self.URL,
       self.NAME,
       fetch_url=fetch_url,
       log=log,
-      progress=progress)
+      progress=progress,
+      sleep=sleep)
 
 
 class UrlFetcherGoodreadsChoiceAwardsFiction(UrlFetcherGoodreadsChoiceAwards):
@@ -127,7 +131,11 @@ class UrlFetcherGoodreadsChoiceAwardsDebutNovel(UrlFetcherGoodreadsChoiceAwards)
   source_id = 'goodreads_choice_awards_debut_novel'
   NAME = 'Goodreads Choice Awards - Debut Novel'
   CATEGORY = 'Debut Novel'
-  CATEGORY_ALIASES = ('Debut Novel',)
+  CATEGORY_ALIASES = (
+    'Debut Novel',
+    'Debut Author',
+    'Debut Goodreads Author',
+  )
   FILTER_CATEGORIES = (CATEGORY_LITERARY_GENERAL_FICTION,)
 
 
@@ -196,15 +204,6 @@ class UrlFetcherGoodreadsChoiceAwardsHistoryBiography(UrlFetcherGoodreadsChoiceA
   FILTER_CATEGORIES = (CATEGORY_NONFICTION,)
 
 
-class UrlFetcherGoodreadsChoiceAwardsYoungAdultSeries(UrlFetcherGoodreadsChoiceAwards):
-
-  source_id = 'goodreads_choice_awards_young_adult_series'
-  NAME = 'Goodreads Choice Awards - Young Adult Series (discontinued)'
-  CATEGORY = 'Young Adult Series'
-  CATEGORY_ALIASES = ('Young Adult Series',)
-  FILTER_CATEGORIES = (CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,)
-
-
 class UrlFetcherGoodreadsChoiceAwardsChildrensMiddleGrade(UrlFetcherGoodreadsChoiceAwards):
 
   source_id = 'goodreads_choice_awards_childrens_middle_grade'
@@ -213,9 +212,13 @@ class UrlFetcherGoodreadsChoiceAwardsChildrensMiddleGrade(UrlFetcherGoodreadsCho
   CATEGORY_ALIASES = (
     "Children's & Middle Grade",
     "Children's and Middle Grade",
+    "Middle Grade & Children's",
+    "Middle Grade and Children's",
     "Children's",
     'Childrens & Middle Grade',
     'Childrens and Middle Grade',
+    'Middle Grade & Childrens',
+    'Middle Grade and Childrens',
     'Children',
   )
   FILTER_CATEGORIES = (CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,)
@@ -226,7 +229,7 @@ class UrlFetcherGoodreadsChoiceAwardsPictureBook(UrlFetcherGoodreadsChoiceAwards
   source_id = 'goodreads_choice_awards_picture_book'
   NAME = 'Goodreads Choice Awards - Picture Book (discontinued)'
   CATEGORY = 'Picture Book'
-  CATEGORY_ALIASES = ('Picture Book',)
+  CATEGORY_ALIASES = ('Picture Book', 'Picture Books', 'Picture')
   FILTER_CATEGORIES = (CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,)
 
 
@@ -244,7 +247,7 @@ class UrlFetcherGoodreadsChoiceAwardsBusiness(UrlFetcherGoodreadsChoiceAwards):
   source_id = 'goodreads_choice_awards_business'
   NAME = 'Goodreads Choice Awards - Business (discontinued)'
   CATEGORY = 'Business'
-  CATEGORY_ALIASES = ('Business',)
+  CATEGORY_ALIASES = ('Business', 'Business Books')
   FILTER_CATEGORIES = (CATEGORY_NONFICTION,)
 
 
@@ -253,7 +256,12 @@ class UrlFetcherGoodreadsChoiceAwardsFoodCooking(UrlFetcherGoodreadsChoiceAwards
   source_id = 'goodreads_choice_awards_food_cooking'
   NAME = 'Goodreads Choice Awards - Food & Cooking (discontinued)'
   CATEGORY = 'Food & Cooking'
-  CATEGORY_ALIASES = ('Food & Cooking', 'Food and Cooking')
+  CATEGORY_ALIASES = (
+    'Food & Cooking',
+    'Food and Cooking',
+    'Food & Cookbooks',
+    'Food and Cookbooks',
+  )
   FILTER_CATEGORIES = (CATEGORY_NONFICTION,)
 
 
@@ -307,28 +315,19 @@ class UrlFetcherGoodreadsChoiceAwardsParanormalFantasy(UrlFetcherGoodreadsChoice
   FILTER_CATEGORIES = (CATEGORY_FANTASY,)
 
 
-class UrlFetcherGoodreadsChoiceAwardsChickLit(UrlFetcherGoodreadsChoiceAwards):
-
-  source_id = 'goodreads_choice_awards_chick_lit'
-  NAME = 'Goodreads Choice Awards - Chick Lit (discontinued)'
-  CATEGORY = 'Chick Lit'
-  CATEGORY_ALIASES = ('Chick Lit',)
-  FILTER_CATEGORIES = (CATEGORY_LITERARY_GENERAL_FICTION, CATEGORY_ROMANCE)
-
-
 class UrlFetcherGoodreadsChoiceAwardsBestBook(UrlFetcherGoodreadsChoiceAwards):
 
   source_id = 'goodreads_choice_awards_best_book'
   NAME = 'Goodreads Choice Awards - Best Book (discontinued)'
   CATEGORY = 'Best Book'
-  CATEGORY_ALIASES = ('Best Book',)
+  CATEGORY_ALIASES = ('Best Book', 'Favorite Book of 2011')
   FILTER_CATEGORIES = (CATEGORY_LITERARY_GENERAL_FICTION,)
 
 
 class UrlFetcherGoodreadsChoiceAwardsBestOfTheBest(UrlFetcherGoodreadsChoiceAwards):
 
   source_id = 'goodreads_choice_awards_best_of_the_best'
-  NAME = 'Goodreads Choice Awards - Best of the Best (discontinued)'
+  NAME = 'Goodreads Choice Awards - Best of the Best'
   CATEGORY = 'Best of the Best'
   CATEGORY_ALIASES = ('Best of the Best',)
   FILTER_CATEGORIES = (CATEGORY_LITERARY_GENERAL_FICTION,)

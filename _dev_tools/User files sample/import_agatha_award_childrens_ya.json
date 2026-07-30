@@ -1,0 +1,847 @@
+{
+  "append_state": {
+    "entry_count": 75,
+    "last_entry_key": "risky pursuit|nancy g west",
+    "last_position": "2025.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Chris Grabenstein"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2009",
+      "category": "Best Children's/YA",
+      "position": "2009",
+      "result": "winner",
+      "title": "The Hanging Hill"
+    },
+    {
+      "authors": [
+        "John C. Ford"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2009",
+      "category": "Best Children's/YA",
+      "position": "2009.01",
+      "result": "nominee",
+      "title": "The Morgue and Me"
+    },
+    {
+      "authors": [
+        "Lewis B. Montgomery"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2009",
+      "category": "Best Children's/YA",
+      "position": "2009.02",
+      "result": "nominee",
+      "title": "The Case of the Poisoned Pig"
+    },
+    {
+      "authors": [
+        "Valerie O. Patterson"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2009",
+      "category": "Best Children's/YA",
+      "position": "2009.03",
+      "result": "nominee",
+      "title": "The Other Side of Blue"
+    },
+    {
+      "authors": [
+        "Nancy Springer"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2009",
+      "category": "Best Children's/YA",
+      "position": "2009.04",
+      "result": "nominee",
+      "title": "The Case of the Cryptic Crinoline"
+    },
+    {
+      "authors": [
+        "Sarah Smith"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2010",
+      "category": "Best Children's/YA",
+      "position": "2010",
+      "result": "winner",
+      "title": "The Other Side of Dark"
+    },
+    {
+      "authors": [
+        "John Grisham"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2010",
+      "category": "Best Children's/YA",
+      "position": "2010.01",
+      "result": "nominee",
+      "title": "Theodore Boone: Kid Lawyer"
+    },
+    {
+      "authors": [
+        "R.L. LaFevers"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2010",
+      "category": "Best Children's/YA",
+      "position": "2010.02",
+      "result": "nominee",
+      "title": "Theodosia and the Eyes of Horus"
+    },
+    {
+      "authors": [
+        "Y.S. Lee"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2010",
+      "category": "Best Children's/YA",
+      "position": "2010.03",
+      "result": "nominee",
+      "title": "The Agency: A Spy in the House"
+    },
+    {
+      "authors": [
+        "Kathy Reichs"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2010",
+      "category": "Best Children's/YA",
+      "position": "2010.04",
+      "result": "nominee",
+      "title": "Virals"
+    },
+    {
+      "authors": [
+        "Chris Grabenstein"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2011",
+      "category": "Best Children's/YA",
+      "position": "2011",
+      "result": "winner",
+      "title": "The Black Heart Crypt"
+    },
+    {
+      "authors": [
+        "Harlan Coben"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2011",
+      "category": "Best Children's/YA",
+      "position": "2011.01",
+      "result": "nominee",
+      "title": "Shelter"
+    },
+    {
+      "authors": [
+        "Matthew J. Kirby"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2011",
+      "category": "Best Children's/YA",
+      "position": "2011.02",
+      "result": "nominee",
+      "title": "Icefall"
+    },
+    {
+      "authors": [
+        "Shawn Thomas Odyssey"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2011",
+      "category": "Best Children's/YA",
+      "position": "2011.03",
+      "result": "nominee",
+      "title": "The Wizard of Dark Street"
+    },
+    {
+      "authors": [
+        "Penny Warner"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2011",
+      "category": "Best Children's/YA",
+      "position": "2011.04",
+      "result": "nominee",
+      "title": "The Code Busters Club, Case #1: The Secret of the Skeleton Key"
+    },
+    {
+      "authors": [
+        "Penny Warner"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2012",
+      "category": "Best Children's/YA",
+      "position": "2012",
+      "result": "winner",
+      "title": "The Code Busters Club, Case #2: The Haunted Lighthouse"
+    },
+    {
+      "authors": [
+        "Harlan Coben"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2012",
+      "category": "Best Children's/YA",
+      "position": "2012.01",
+      "result": "nominee",
+      "title": "Seconds Away"
+    },
+    {
+      "authors": [
+        "Elizabeth George"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2012",
+      "category": "Best Children's/YA",
+      "position": "2012.02",
+      "result": "nominee",
+      "title": "The Edge of Nowhere"
+    },
+    {
+      "authors": [
+        "Rebecca Stead"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2012",
+      "category": "Best Children's/YA",
+      "position": "2012.03",
+      "result": "nominee",
+      "title": "Liar & Spy"
+    },
+    {
+      "authors": [
+        "Elizabeth Wein"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2012",
+      "category": "Best Children's/YA",
+      "position": "2012.04",
+      "result": "nominee",
+      "title": "Code Name Verity"
+    },
+    {
+      "authors": [
+        "Chris Grabenstein"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2013",
+      "category": "Best Children's/YA",
+      "position": "2013",
+      "result": "winner",
+      "title": "Escape from Mr. Lemoncello\u2019s Library"
+    },
+    {
+      "authors": [
+        "Joelle Charbonneau"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2013",
+      "category": "Best Children's/YA",
+      "position": "2013.01",
+      "result": "nominee",
+      "title": "The Testing"
+    },
+    {
+      "authors": [
+        "Kathleen Ernst"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2013",
+      "category": "Best Children's/YA",
+      "position": "2013.02",
+      "result": "nominee",
+      "title": "Traitor in the Shipyard: A Caroline Myster y"
+    },
+    {
+      "authors": [
+        "Amanda Flower"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2013",
+      "category": "Best Children's/YA",
+      "position": "2013.03",
+      "result": "nominee",
+      "title": "Andi Unexpected"
+    },
+    {
+      "authors": [
+        "Penny Warner"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2013",
+      "category": "Best Children's/YA",
+      "position": "2013.04",
+      "result": "nominee",
+      "title": "The Code Busters Club, Case #3: The Mystery of the Pirate\u2019s Treasure"
+    },
+    {
+      "authors": [
+        "Penny Warner"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2014",
+      "category": "Best Children's/YA",
+      "position": "2014",
+      "result": "winner",
+      "title": "The Code Busters Club, Case #4: The Mummy\u2019s Curse"
+    },
+    {
+      "authors": [
+        "Harlan Coben"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2014",
+      "category": "Best Children's/YA",
+      "position": "2014.01",
+      "result": "nominee",
+      "title": "Found"
+    },
+    {
+      "authors": [
+        "Amanda Flower"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2014",
+      "category": "Best Children's/YA",
+      "position": "2014.02",
+      "result": "nominee",
+      "title": "Andi Under Pressure"
+    },
+    {
+      "authors": [
+        "Kate Milford"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2014",
+      "category": "Best Children's/YA",
+      "position": "2014.03",
+      "result": "nominee",
+      "title": "Greenglass House"
+    },
+    {
+      "authors": [
+        "Lea Wait"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2014",
+      "category": "Best Children's/YA",
+      "position": "2014.04",
+      "result": "nominee",
+      "title": "Uncertain Glory"
+    },
+    {
+      "authors": [
+        "Amanda Flower"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2015",
+      "category": "Best Children's/YA",
+      "position": "2015",
+      "result": "winner",
+      "title": "Andi Unstoppable"
+    },
+    {
+      "authors": [
+        "Blue Balliett"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2015",
+      "category": "Best Children's/YA",
+      "position": "2015.01",
+      "result": "nominee",
+      "title": "Pieces and Players"
+    },
+    {
+      "authors": [
+        "Joelle Charbonneau"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2015",
+      "category": "Best Children's/YA",
+      "position": "2015.02",
+      "result": "nominee",
+      "title": "Need"
+    },
+    {
+      "authors": [
+        "Spencer Quinn"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2015",
+      "category": "Best Children's/YA",
+      "position": "2015.03",
+      "result": "nominee",
+      "title": "Woof"
+    },
+    {
+      "authors": [
+        "B.K. Stevens"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2015",
+      "category": "Best Children's/YA",
+      "position": "2015.04",
+      "result": "nominee",
+      "title": "Fighting Chance"
+    },
+    {
+      "authors": [
+        "Penny Warner"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2016",
+      "category": "Best Children's/YA",
+      "position": "2016",
+      "result": "winner",
+      "title": "The Code Busters Club, Case #6: The Secret of the Puzzle Box"
+    },
+    {
+      "authors": [
+        "P.A. DeVoe"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2016",
+      "category": "Best Children's/YA",
+      "position": "2016.01",
+      "result": "nominee",
+      "title": "Trapped: A Mei-hua Adventure"
+    },
+    {
+      "authors": [
+        "Stuart Gibbs"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2016",
+      "category": "Best Children's/YA",
+      "position": "2016.02",
+      "result": "nominee",
+      "title": "Spy Ski School"
+    },
+    {
+      "authors": [
+        "J.C. Lane"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2016",
+      "category": "Best Children's/YA",
+      "position": "2016.03",
+      "result": "nominee",
+      "title": "Tag, You\u2019re Dead"
+    },
+    {
+      "authors": [
+        "Rebecca Podos"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2016",
+      "category": "Best Children's/YA",
+      "position": "2016.04",
+      "result": "nominee",
+      "title": "The Mystery of Hollow Places"
+    },
+    {
+      "authors": [
+        "Cindy Callaghan"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2017",
+      "category": "Best Children's/YA",
+      "position": "2017",
+      "result": "winner",
+      "title": "Sydney Mackenzie Knocks \u2019Em Dead"
+    },
+    {
+      "authors": [
+        "Kristi Belcamino"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2017",
+      "category": "Best Children's/YA",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "City of Angels"
+    },
+    {
+      "authors": [
+        "Caroline Carlson"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2017",
+      "category": "Best Children's/YA",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "The World\u2019s Greatest Detective"
+    },
+    {
+      "authors": [
+        "Kirby Larson"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2017",
+      "category": "Best Children's/YA",
+      "position": "2017.03",
+      "result": "nominee",
+      "title": "Audacity Jones Steals the Show"
+    },
+    {
+      "authors": [
+        "Natasha Tarpley"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2017",
+      "category": "Best Children's/YA",
+      "position": "2017.04",
+      "result": "nominee",
+      "title": "The Harlem Charade"
+    },
+    {
+      "authors": [
+        "Frances Schoonmaker"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2019",
+      "category": "Best Children's/YA",
+      "position": "2019",
+      "result": "winner",
+      "title": "The Last Crystal"
+    },
+    {
+      "authors": [
+        "Shauna Holyoak"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2019",
+      "category": "Best Children's/YA",
+      "position": "2019.01",
+      "result": "nominee",
+      "title": "Kazu Jones and the Denver Dognappers"
+    },
+    {
+      "authors": [
+        "Karen MacManus"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2019",
+      "category": "Best Children's/YA",
+      "position": "2019.02",
+      "result": "nominee",
+      "title": "Two Can Keep a Secret"
+    },
+    {
+      "authors": [
+        "Robin Stevens"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2019",
+      "category": "Best Children's/YA",
+      "position": "2019.03",
+      "result": "nominee",
+      "title": "Top Marks for Murder"
+    },
+    {
+      "authors": [
+        "Sherri Winston"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2019",
+      "category": "Best Children's/YA",
+      "position": "2019.04",
+      "result": "nominee",
+      "title": "Jada Sly, Artist and Spy"
+    },
+    {
+      "authors": [
+        "Alan Orloff"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2021",
+      "category": "Best Children's/YA",
+      "position": "2021",
+      "result": "winner",
+      "title": "I Play One on TV"
+    },
+    {
+      "authors": [
+        "Elizabeth C. Bunce"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2021",
+      "category": "Best Children's/YA",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "Cold-Blooded Myrtle"
+    },
+    {
+      "authors": [
+        "June Hur"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2021",
+      "category": "Best Children's/YA",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "The Forest of Stolen Girls"
+    },
+    {
+      "authors": [
+        "Lynn Slaughter"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2021",
+      "category": "Best Children's/YA",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "Leisha\u2019s Song"
+    },
+    {
+      "authors": [
+        "Nancy Springer"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2021",
+      "category": "Best Children's/YA",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "Enola Holmes and the Black Barouche"
+    },
+    {
+      "authors": [
+        "Nancy Springer"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2022",
+      "category": "Best Children's/YA",
+      "position": "2022",
+      "result": "winner",
+      "title": "Enola Holmes and the Elegant Escapade"
+    },
+    {
+      "authors": [
+        "Fleur Bradley"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2022",
+      "category": "Best Children's/YA",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "Daybreak on Raven Island"
+    },
+    {
+      "authors": [
+        "Elizabeth C. Bunce"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2022",
+      "category": "Best Children's/YA",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "In Myrtle Peril"
+    },
+    {
+      "authors": [
+        "Greg Herren"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2022",
+      "category": "Best Children's/YA",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "#shedeservedit"
+    },
+    {
+      "authors": [
+        "Frances Schoonmaker"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2022",
+      "category": "Best Children's/YA",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "Sid Johnson and the Phantom Slave Stealer"
+    },
+    {
+      "authors": [
+        "K.B. Jackson"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2023",
+      "category": "Best Children's/YA",
+      "position": "2023",
+      "result": "winner",
+      "title": "The Sasquatch of Hawthorne Elementary"
+    },
+    {
+      "authors": [
+        "Elizabeth C. Bunce"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2023",
+      "category": "Best Children's/YA",
+      "position": "2023.01",
+      "result": "nominee",
+      "title": "Myrtle, Means, and Opportunity"
+    },
+    {
+      "authors": [
+        "Alex Segura"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2023",
+      "category": "Best Children's/YA",
+      "position": "2023.02",
+      "result": "nominee",
+      "title": "Ara\u00f1a and Spiderman"
+    },
+    {
+      "authors": [
+        "Taryn Sounders"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2023",
+      "category": "Best Children's/YA",
+      "position": "2023.03",
+      "result": "nominee",
+      "title": "The Mystery of the Radcliffe Riddle"
+    },
+    {
+      "authors": [
+        "Nancy Springer"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2023",
+      "category": "Best Children's/YA",
+      "position": "2023.04",
+      "result": "nominee",
+      "title": "Enola Holmes and the Mark of the Mongoose"
+    },
+    {
+      "authors": [
+        "K.B. Jackson"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2024",
+      "category": "Best Children's/YA",
+      "position": "2024",
+      "result": "winner",
+      "title": "Sasquatch of Harriman Lake"
+    },
+    {
+      "authors": [
+        "K.B. Jackson"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2024",
+      "category": "Best Children's/YA",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "The Big Grey Man of Ben Macdhui"
+    },
+    {
+      "authors": [
+        "Josh Pachter"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2024",
+      "category": "Best Children's/YA",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "First Week Free at the Roomy Toilet: A June Knight Mystery"
+    },
+    {
+      "authors": [
+        "James Ponti"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2024",
+      "category": "Best Children's/YA",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "The Sherlock Society"
+    },
+    {
+      "authors": [
+        "Frances Schoonmaker"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2024",
+      "category": "Best Children's/YA",
+      "position": "2024.04",
+      "result": "nominee",
+      "title": "Sid Johnson & the Well-Intended Conspiracy"
+    },
+    {
+      "authors": [
+        "Mia P. Manansala"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2025",
+      "category": "Best Children's/YA",
+      "position": "2025",
+      "result": "winner",
+      "title": "Death in the Cards"
+    },
+    {
+      "authors": [
+        "Marilyn Levinson"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2025",
+      "category": "Best Children's/YA",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "Rufus and the Dark Side of Magic"
+    },
+    {
+      "authors": [
+        "James Ponti"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2025",
+      "category": "Best Children's/YA",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "Hurricane Heist"
+    },
+    {
+      "authors": [
+        "Lynn Slaughter"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2025",
+      "category": "Best Children's/YA",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "Missing Mom"
+    },
+    {
+      "authors": [
+        "Nancy G. West"
+      ],
+      "award": "Agatha Award",
+      "award_year": "2025",
+      "category": "Best Children's/YA",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "Risky Pursuit"
+    }
+  ],
+  "fetched_at": "2026-07-18T02:41:00Z",
+  "list_id": "agatha_award_childrens_ya",
+  "list_name": "Agatha Award - Children's/YA",
+  "match_series": false,
+  "notes": [],
+  "parser": "agatha_award_childrens_ya",
+  "schema_version": 2,
+  "source": {
+    "name": "Agatha Award - Children's/YA",
+    "source_id": "agatha_award_childrens_ya",
+    "url": "https://www.stopyourekillingme.com/Awards/Agatha_Awards.html"
+  }
+}

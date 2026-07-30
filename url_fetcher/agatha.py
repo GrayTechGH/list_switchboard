@@ -166,4 +166,6 @@ class UrlFetcherAgathaChildrensYA(UrlFetcherAgathaAward):
     'Children’s / YA',
     'Children\'s/YA',
     'Children’s/YA',
+    'Children\'s / Young-Adult',
+    'Children’s / Young-Adult',
   )

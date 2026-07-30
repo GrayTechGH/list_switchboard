@@ -209,7 +209,7 @@ class UrlFetcherBritishFantasyFantasyNovel(UrlFetcherBritishFantasy):
 
 class UrlFetcherBritishFantasyBestNovel(UrlFetcherBritishFantasy):
   source_id = 'british_fantasy_best_novel'
-  NAME = 'British Fantasy - Best Novel (discontinued)'
+  NAME = 'British Fantasy - Horror/Fantasy Novel (discontinued)'
   CATEGORY = 'Best Novel'
   CATEGORY_ALIASES = (
     'novel',
@@ -231,11 +231,25 @@ class UrlFetcherBritishFantasyNovella(UrlFetcherBritishFantasy):
   CATEGORY_ALIASES = ('novella', 'best novella')
 
 
+class UrlFetcherBritishFantasyAnthologyCollection(UrlFetcherBritishFantasy):
+  source_id = 'british_fantasy_anthology_collection'
+  NAME = 'British Fantasy - Anthology/Collection (discontinued)'
+  CATEGORY = 'Anthology/Collection'
+  CATEGORY_ALIASES = (
+    'anthology/collection',
+    'anthology collection',
+    'collection',
+  )
+  MIN_AWARD_YEAR = 1991
+  MAX_AWARD_YEAR = 1998
+
+
 class UrlFetcherBritishFantasyAnthology(UrlFetcherBritishFantasy):
   source_id = 'british_fantasy_anthology'
   NAME = 'British Fantasy - Anthology'
   CATEGORY = 'Anthology'
   CATEGORY_ALIASES = ('anthology', 'best anthology')
+  MIN_AWARD_YEAR = 1999
 
 
 class UrlFetcherBritishFantasyCollection(UrlFetcherBritishFantasy):
@@ -243,6 +257,7 @@ class UrlFetcherBritishFantasyCollection(UrlFetcherBritishFantasy):
   NAME = 'British Fantasy - Collection'
   CATEGORY = 'Collection'
   CATEGORY_ALIASES = ('collection', 'best collection')
+  MIN_AWARD_YEAR = 1999
 
 
 class UrlFetcherBritishFantasyNonfiction(UrlFetcherBritishFantasy):

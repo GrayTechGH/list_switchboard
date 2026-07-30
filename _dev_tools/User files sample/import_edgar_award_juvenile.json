@@ -1,0 +1,4446 @@
+{
+  "append_state": {
+    "entry_count": 307,
+    "last_entry_key": "mystery james digs her own grave|ally russell",
+    "last_position": "2026.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Phyllis A. Whitney"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1961",
+      "category": "Best Juvenile",
+      "position": "1961",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=4"
+      },
+      "title": "The Mystery of the Haunted Pool"
+    },
+    {
+      "authors": [
+        "Edward Fenton"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1962",
+      "category": "Best Juvenile",
+      "position": "1962",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=4"
+      },
+      "title": "The Phantom of Walkaway Hill"
+    },
+    {
+      "authors": [
+        "Phyllis A. Whitney"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1962",
+      "category": "Best Juvenile",
+      "position": "1962.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=4"
+      },
+      "title": "The Secret of the Tiger's Eye"
+    },
+    {
+      "authors": [
+        "Scott Corbett"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1963",
+      "category": "Best Juvenile",
+      "position": "1963",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=4"
+      },
+      "title": "Cutlass Island"
+    },
+    {
+      "authors": [
+        "Jane Langton"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1963",
+      "category": "Best Juvenile",
+      "position": "1963.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=4"
+      },
+      "title": "The Diamond in the Window"
+    },
+    {
+      "authors": [
+        "Dola de Jong"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1963",
+      "category": "Best Juvenile",
+      "position": "1963.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=4"
+      },
+      "title": "The House on Charlton Street"
+    },
+    {
+      "authors": [
+        "Harriett Carr"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1963",
+      "category": "Best Juvenile",
+      "position": "1963.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=4"
+      },
+      "title": "The Mystery of Ghost Valley"
+    },
+    {
+      "authors": [
+        "Phyllis A. Whitney"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1964",
+      "category": "Best Juvenile",
+      "position": "1964",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Mystery of the Hidden Hand"
+    },
+    {
+      "authors": [
+        "Frank Bonham"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1964",
+      "category": "Best Juvenile",
+      "position": "1964.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Honor Bound"
+    },
+    {
+      "authors": [
+        "Margaret Scherf"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1964",
+      "category": "Best Juvenile",
+      "position": "1964.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Mystery of the Velvet Box"
+    },
+    {
+      "authors": [
+        "Marcella Thum"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1965",
+      "category": "Best Juvenile",
+      "position": "1965",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Mystery at Crane's Landing"
+    },
+    {
+      "authors": [
+        "Eleanor Cameron"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1965",
+      "category": "Best Juvenile",
+      "position": "1965.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "A Spell is Cast"
+    },
+    {
+      "authors": [
+        "Leo Kingman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1965",
+      "category": "Best Juvenile",
+      "position": "1965.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Private Eyes"
+    },
+    {
+      "authors": [
+        "Hal G. Evarts"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1965",
+      "category": "Best Juvenile",
+      "position": "1965.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Treasure River"
+    },
+    {
+      "authors": [
+        "Leon Ware"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1966",
+      "category": "Best Juvenile",
+      "position": "1966",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Mystery of 22 East"
+    },
+    {
+      "authors": [
+        "Lawrence J. Hunt"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1966",
+      "category": "Best Juvenile",
+      "position": "1966.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Secret of the Haunted Crags"
+    },
+    {
+      "authors": [
+        "Eileen Thompson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1966",
+      "category": "Best Juvenile",
+      "position": "1966.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Apache Gold Mystery"
+    },
+    {
+      "authors": [
+        "Nancy Faulkner"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1966",
+      "category": "Best Juvenile",
+      "position": "1966.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Secret of the Simple Code"
+    },
+    {
+      "authors": [
+        "Kin Platt"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1967",
+      "category": "Best Juvenile",
+      "position": "1967",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Sinbad and Me"
+    },
+    {
+      "authors": [
+        "Arnold Madison"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1967",
+      "category": "Best Juvenile",
+      "position": "1967.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Danger Beats the Drum"
+    },
+    {
+      "authors": [
+        "Frank Bonham"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1967",
+      "category": "Best Juvenile",
+      "position": "1967.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Mystery of the Red Tide"
+    },
+    {
+      "authors": [
+        "Lois Duncan"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1967",
+      "category": "Best Juvenile",
+      "position": "1967.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Ransom"
+    },
+    {
+      "authors": [
+        "Gretchen Sprague"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1968",
+      "category": "Best Juvenile",
+      "position": "1968",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Signpost to Terror"
+    },
+    {
+      "authors": [
+        "Paul Berna"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1968",
+      "category": "Best Juvenile",
+      "position": "1968.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Secret of the Missing Boat"
+    },
+    {
+      "authors": [
+        "Barbee Oliver Carleton"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1968",
+      "category": "Best Juvenile",
+      "position": "1968.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Witches' Bridge"
+    },
+    {
+      "authors": [
+        "Virginia Hamilton"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1969",
+      "category": "Best Juvenile",
+      "position": "1969",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The House of Dies Drear"
+    },
+    {
+      "authors": [
+        "Phyllis Bentley"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1969",
+      "category": "Best Juvenile",
+      "position": "1969.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Forgery!"
+    },
+    {
+      "authors": [
+        "Frank Bonham"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1969",
+      "category": "Best Juvenile",
+      "position": "1969.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Mystery of the Fat Cat"
+    },
+    {
+      "authors": [
+        "Hal G. Evarts"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1969",
+      "category": "Best Juvenile",
+      "position": "1969.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Smugglers' Road"
+    },
+    {
+      "authors": [
+        "Winfred Finlay"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1970",
+      "category": "Best Juvenile",
+      "position": "1970",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Danger at Black Dyke"
+    },
+    {
+      "authors": [
+        "Kin Platt"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1970",
+      "category": "Best Juvenile",
+      "position": "1970.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Mystery of the Witch Who Wouldn't"
+    },
+    {
+      "authors": [
+        "Betty Cavanna"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1970",
+      "category": "Best Juvenile",
+      "position": "1970.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Spice Island Mystery"
+    },
+    {
+      "authors": [
+        "Lois Duncan"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1970",
+      "category": "Best Juvenile",
+      "position": "1970.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "They Never Came Home"
+    },
+    {
+      "authors": [
+        "John Rowe Townsend"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1971",
+      "category": "Best Juvenile",
+      "position": "1971",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Intruder"
+    },
+    {
+      "authors": [
+        "Scott Corbett"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1971",
+      "category": "Best Juvenile",
+      "position": "1971.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Mystery Man"
+    },
+    {
+      "authors": [
+        "Phyllis A. Whitney"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1971",
+      "category": "Best Juvenile",
+      "position": "1971.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Secret of the Misiing Footprint"
+    },
+    {
+      "authors": [
+        "Joan Aiken"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1972",
+      "category": "Best Juvenile",
+      "position": "1972",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Nightfall"
+    },
+    {
+      "authors": [
+        "Natalie Babbitt"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1972",
+      "category": "Best Juvenile",
+      "position": "1972.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Goody Hall"
+    },
+    {
+      "authors": [
+        "Mabel Esther Allan"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1972",
+      "category": "Best Juvenile",
+      "position": "1972.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Mystery in Wales"
+    },
+    {
+      "authors": [
+        "Betty Cavanna"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1972",
+      "category": "Best Juvenile",
+      "position": "1972.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Ghost of Ballyhooly"
+    },
+    {
+      "authors": [
+        "Robb White"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1973",
+      "category": "Best Juvenile",
+      "position": "1973",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Deathwatch"
+    },
+    {
+      "authors": [
+        "George A. Woods"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1973",
+      "category": "Best Juvenile",
+      "position": "1973.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Catch a Killer"
+    },
+    {
+      "authors": [
+        "A.C. Stewart"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1973",
+      "category": "Best Juvenile",
+      "position": "1973.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Elizabeth's Tower"
+    },
+    {
+      "authors": [
+        "Wylly Folk St. John"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1973",
+      "category": "Best Juvenile",
+      "position": "1973.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Uncle Robert's Secret"
+    },
+    {
+      "authors": [
+        "Jay Bennett"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1974",
+      "category": "Best Juvenile",
+      "position": "1974",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Long Black Coat"
+    },
+    {
+      "authors": [
+        "Richard Peck"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1974",
+      "category": "Best Juvenile",
+      "position": "1974.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Dreamland Lake"
+    },
+    {
+      "authors": [
+        "Phyllis A. Whitney"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1974",
+      "category": "Best Juvenile",
+      "position": "1974.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Mystery of the Scowling Boy"
+    },
+    {
+      "authors": [
+        "Wylly Folk St. John"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1974",
+      "category": "Best Juvenile",
+      "position": "1974.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Secret of the Seven Crows"
+    },
+    {
+      "authors": [
+        "Jay Bennett"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1975",
+      "category": "Best Juvenile",
+      "position": "1975",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Dangling Witness"
+    },
+    {
+      "authors": [
+        "Colin Thiele"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1975",
+      "category": "Best Juvenile",
+      "position": "1975.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Fire in the Stone"
+    },
+    {
+      "authors": [
+        "Scott Corbett"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1975",
+      "category": "Best Juvenile",
+      "position": "1975.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Here Lies the Body"
+    },
+    {
+      "authors": [
+        "David Severn"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1975",
+      "category": "Best Juvenile",
+      "position": "1975.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Girl in the Grove"
+    },
+    {
+      "authors": [
+        "Joan Lowery Nixon"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1975",
+      "category": "Best Juvenile",
+      "position": "1975.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Mysterious Red Tape Gang"
+    },
+    {
+      "authors": [
+        "Robert C. O'Brien"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1976",
+      "category": "Best Juvenile",
+      "position": "1976",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Z for Zachariah"
+    },
+    {
+      "authors": [
+        "Richard Scarry"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1976",
+      "category": "Best Juvenile",
+      "position": "1976.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Great Steamboat Mystery"
+    },
+    {
+      "authors": [
+        "Avi"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1976",
+      "category": "Best Juvenile",
+      "position": "1976.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "No More Magic"
+    },
+    {
+      "authors": [
+        "Ellen Raskin"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1976",
+      "category": "Best Juvenile",
+      "position": "1976.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Tattooed Potato and Other Clues"
+    },
+    {
+      "authors": [
+        "Richard Peck"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1977",
+      "category": "Best Juvenile",
+      "position": "1977",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Are You in the House Alone?"
+    },
+    {
+      "authors": [
+        "Brian Patten"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1977",
+      "category": "Best Juvenile",
+      "position": "1977.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Mr. Moon's Last Case"
+    },
+    {
+      "authors": [
+        "Berthe Amoss"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1977",
+      "category": "Best Juvenile",
+      "position": "1977.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Chalk Cross"
+    },
+    {
+      "authors": [
+        "Katherine Peterson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1977",
+      "category": "Best Juvenile",
+      "position": "1977.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Master Puppeteer"
+    },
+    {
+      "authors": [
+        "Molly Garrett Bang"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1977",
+      "category": "Best Juvenile",
+      "position": "1977.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Wiley and the Hairy Man"
+    },
+    {
+      "authors": [
+        "Eloise Jarvis McGraw"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1978",
+      "category": "Best Juvenile",
+      "position": "1978",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "A Really Weird Summer"
+    },
+    {
+      "authors": [
+        "Harry Allard",
+        "James Marshall"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1978",
+      "category": "Best Juvenile",
+      "position": "1978.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Miss Nelson Is Missing!"
+    },
+    {
+      "authors": [
+        "Robert Newman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1978",
+      "category": "Best Juvenile",
+      "position": "1978.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Night Spell"
+    },
+    {
+      "authors": [
+        "Jean Louise Curry"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1978",
+      "category": "Best Juvenile",
+      "position": "1978.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Poor Tom's Ghost"
+    },
+    {
+      "authors": [
+        "Dana Brookins"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1979",
+      "category": "Best Juvenile",
+      "position": "1979",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Alone in Wolf Hollow"
+    },
+    {
+      "authors": [
+        "Avi"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1979",
+      "category": "Best Juvenile",
+      "position": "1979.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Emily Upham's Revenge"
+    },
+    {
+      "authors": [
+        "Jean Louise Curry"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1979",
+      "category": "Best Juvenile",
+      "position": "1979.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Bassumtyte Treasure"
+    },
+    {
+      "authors": [
+        "E.W. Hildick"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1979",
+      "category": "Best Juvenile",
+      "position": "1979.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Case of the Secret Scribbler"
+    },
+    {
+      "authors": [
+        "Judith St. George"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1979",
+      "category": "Best Juvenile",
+      "position": "1979.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Halloween Pumpkin Smasher"
+    },
+    {
+      "authors": [
+        "Joan Lowery Nixon"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1980",
+      "category": "Best Juvenile",
+      "position": "1980",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Kidnapping of Christina Lattimore"
+    },
+    {
+      "authors": [
+        "Diane Redfield Massie"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1980",
+      "category": "Best Juvenile",
+      "position": "1980.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Chameleon Was a Spy"
+    },
+    {
+      "authors": [
+        "Remus F. Caroselli"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1980",
+      "category": "Best Juvenile",
+      "position": "1980.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Mystery Cottage in Left Field"
+    },
+    {
+      "authors": [
+        "Frances Wosmek"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1980",
+      "category": "Best Juvenile",
+      "position": "1980.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Mystery of the Eagle's Claw"
+    },
+    {
+      "authors": [
+        "Lynn Hall"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1980",
+      "category": "Best Juvenile",
+      "position": "1980.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Whispered Horse"
+    },
+    {
+      "authors": [
+        "Joan Lowery Nixon"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1981",
+      "category": "Best Juvenile",
+      "position": "1981",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Seance"
+    },
+    {
+      "authors": [
+        "Willo Davis Roberts"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1981",
+      "category": "Best Juvenile",
+      "position": "1981.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "More Minden Curses"
+    },
+    {
+      "authors": [
+        "Mary Blount Christian"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1981",
+      "category": "Best Juvenile",
+      "position": "1981.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Doggone Mystery"
+    },
+    {
+      "authors": [
+        "Charlotte MacLeod"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1981",
+      "category": "Best Juvenile",
+      "position": "1981.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "We Dare Not Go A-Hunting"
+    },
+    {
+      "authors": [
+        "Rosemary Wells"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1981",
+      "category": "Best Juvenile",
+      "position": "1981.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "When No One Was Looking"
+    },
+    {
+      "authors": [
+        "Norma Fox Mazer"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1982",
+      "category": "Best Juvenile",
+      "position": "1982",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Taking Terri Mueller"
+    },
+    {
+      "authors": [
+        "Robert Quackenbush"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1982",
+      "category": "Best Juvenile",
+      "position": "1982.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Detective Mole and the Halloween Mystery"
+    },
+    {
+      "authors": [
+        "Eva-Lis Wuorio"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1982",
+      "category": "Best Juvenile",
+      "position": "1982.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Detour to Danger"
+    },
+    {
+      "authors": [
+        "Walter Dean Myers"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1982",
+      "category": "Best Juvenile",
+      "position": "1982.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Hoops"
+    },
+    {
+      "authors": [
+        "Lensey Namioka"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1982",
+      "category": "Best Juvenile",
+      "position": "1982.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Village of the Vampire Cat"
+    },
+    {
+      "authors": [
+        "Robbie Branscum"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1983",
+      "category": "Best Juvenile",
+      "position": "1983",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Murder of Hound Dog Bates"
+    },
+    {
+      "authors": [
+        "Glendon Swarthout",
+        "Kathryn Swarthout"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1983",
+      "category": "Best Juvenile",
+      "position": "1983.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Cadbury's Coffin"
+    },
+    {
+      "authors": [
+        "Alfred Slote"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1983",
+      "category": "Best Juvenile",
+      "position": "1983.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Clone Catcher"
+    },
+    {
+      "authors": [
+        "Nina Bawden"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1983",
+      "category": "Best Juvenile",
+      "position": "1983.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Kept in the Dark"
+    },
+    {
+      "authors": [
+        "Terrance Dicks"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1983",
+      "category": "Best Juvenile",
+      "position": "1983.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Case of the Cop Catchers"
+    },
+    {
+      "authors": [
+        "Cynthia Voigt"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1984",
+      "category": "Best Juvenile",
+      "position": "1984",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Callender Papers"
+    },
+    {
+      "authors": [
+        "Avi"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1984",
+      "category": "Best Juvenile",
+      "position": "1984.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Shadrach's Crossing"
+    },
+    {
+      "authors": [
+        "Betty Ren Wright"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1984",
+      "category": "Best Juvenile",
+      "position": "1984.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Dollhouse Murders"
+    },
+    {
+      "authors": [
+        "Jan O'Donnell Klaveness"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1984",
+      "category": "Best Juvenile",
+      "position": "1984.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Griffin Legacy"
+    },
+    {
+      "authors": [
+        "Eileen Dunlop"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1984",
+      "category": "Best Juvenile",
+      "position": "1984.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Maze Stone"
+    },
+    {
+      "authors": [
+        "Phyllis Reynolds Naylor"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1985",
+      "category": "Best Juvenile",
+      "position": "1985",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Night Cry"
+    },
+    {
+      "authors": [
+        "Diane Redfield Massie"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1985",
+      "category": "Best Juvenile",
+      "position": "1985.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Chameleon the Spy and the Case of the Vanishing Jewels"
+    },
+    {
+      "authors": [
+        "Joan Lowery Nixon"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1985",
+      "category": "Best Juvenile",
+      "position": "1985.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Ghosts of Now"
+    },
+    {
+      "authors": [
+        "Uri Orlev"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1985",
+      "category": "Best Juvenile",
+      "position": "1985.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Island on Bird Street"
+    },
+    {
+      "authors": [
+        "Lois Duncan"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1985",
+      "category": "Best Juvenile",
+      "position": "1985.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Third Eye"
+    },
+    {
+      "authors": [
+        "Patricia Windsor"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1986",
+      "category": "Best Juvenile",
+      "position": "1986",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Sandman's Eyes"
+    },
+    {
+      "authors": [
+        "Lois Duncan"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1986",
+      "category": "Best Juvenile",
+      "position": "1986.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Locked in Time"
+    },
+    {
+      "authors": [
+        "Gillian Cross"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1986",
+      "category": "Best Juvenile",
+      "position": "1986.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "On the Edge"
+    },
+    {
+      "authors": [
+        "Sandra Scoppettone"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1986",
+      "category": "Best Juvenile",
+      "position": "1986.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Playing Murder"
+    },
+    {
+      "authors": [
+        "David Line"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1986",
+      "category": "Best Juvenile",
+      "position": "1986.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "Screaming High"
+    },
+    {
+      "authors": [
+        "Joan Lowery Nixon"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1987",
+      "category": "Best Juvenile",
+      "position": "1987",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Other Side of Dark"
+    },
+    {
+      "authors": [
+        "Chelsea Quinn Yarbro"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1987",
+      "category": "Best Juvenile",
+      "position": "1987.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Floating Illusions"
+    },
+    {
+      "authors": [
+        "Phyllis Reynolds Naylor"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1987",
+      "category": "Best Juvenile",
+      "position": "1987.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Bodies in the Bessledorf Hotel"
+    },
+    {
+      "authors": [
+        "Dorothy Haas"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1987",
+      "category": "Best Juvenile",
+      "position": "1987.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Secret Life of Dilly McBean"
+    },
+    {
+      "authors": [
+        "Jay Bennett"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1987",
+      "category": "Best Juvenile",
+      "position": "1987.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=3"
+      },
+      "title": "The Skeleton Man"
+    },
+    {
+      "authors": [
+        "Susan Shreve"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1988",
+      "category": "Best Juvenile",
+      "position": "1988",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Lucy Forever and Miss Rosetree, Shrinks"
+    },
+    {
+      "authors": [
+        "Peter Carter"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1988",
+      "category": "Best Juvenile",
+      "position": "1988.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Bury the Dead"
+    },
+    {
+      "authors": [
+        "Eileen Dunlop"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1988",
+      "category": "Best Juvenile",
+      "position": "1988.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The House on the Hill"
+    },
+    {
+      "authors": [
+        "Lois Duncan"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1988",
+      "category": "Best Juvenile",
+      "position": "1988.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Twisted Windows"
+    },
+    {
+      "authors": [
+        "Rosemary Wells"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1988",
+      "category": "Best Juvenile",
+      "position": "1988.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Through the Hidden Door"
+    },
+    {
+      "authors": [
+        "Willo Davis Roberts"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1989",
+      "category": "Best Juvenile",
+      "position": "1989",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Megan's Island"
+    },
+    {
+      "authors": [
+        "Mary Downing Hahn"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1989",
+      "category": "Best Juvenile",
+      "position": "1989.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Following the Mystery Man"
+    },
+    {
+      "authors": [
+        "Eve Bunting"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1989",
+      "category": "Best Juvenile",
+      "position": "1989.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Is There Anybody There?"
+    },
+    {
+      "authors": [
+        "Avi"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1989",
+      "category": "Best Juvenile",
+      "position": "1989.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Something Upstairs"
+    },
+    {
+      "authors": [
+        "John Bellairs"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1989",
+      "category": "Best Juvenile",
+      "position": "1989.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Lamp from the Warlock's Tomb"
+    },
+    {
+      "authors": [
+        "Pam Conrad"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1991",
+      "category": "Best Juvenile",
+      "position": "1991",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Stonewords"
+    },
+    {
+      "authors": [
+        "Barbara Steiner"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1991",
+      "category": "Best Juvenile",
+      "position": "1991.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Cave Ghost"
+    },
+    {
+      "authors": [
+        "Sid Fleischman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1991",
+      "category": "Best Juvenile",
+      "position": "1991.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Midnight Horse"
+    },
+    {
+      "authors": [
+        "Lynn Hall"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1991",
+      "category": "Best Juvenile",
+      "position": "1991.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Tormentors"
+    },
+    {
+      "authors": [
+        "Willo Davis Roberts"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1991",
+      "category": "Best Juvenile",
+      "position": "1991.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "To Grandmother's House We Go"
+    },
+    {
+      "authors": [
+        "Betsy Byars"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1992",
+      "category": "Best Juvenile",
+      "position": "1992",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Wanted...Mud Blossom"
+    },
+    {
+      "authors": [
+        "Kathryn Lasky"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1992",
+      "category": "Best Juvenile",
+      "position": "1992.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Double Trouble Squared"
+    },
+    {
+      "authors": [
+        "Alfred Slote"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1992",
+      "category": "Best Juvenile",
+      "position": "1992.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Finding Buck McHenry"
+    },
+    {
+      "authors": [
+        "Alison Cragin Herzig",
+        "Jane Lawrence Mali"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1992",
+      "category": "Best Juvenile",
+      "position": "1992.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Mystery on October Road"
+    },
+    {
+      "authors": [
+        "Phyllis Reynolds Naylor"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1992",
+      "category": "Best Juvenile",
+      "position": "1992.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Witch Weed"
+    },
+    {
+      "authors": [
+        "Eve Bunting"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1993",
+      "category": "Best Juvenile",
+      "position": "1993",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Coffin on a Case!"
+    },
+    {
+      "authors": [
+        "Ray Prather"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1993",
+      "category": "Best Juvenile",
+      "position": "1993.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Fish and Bones"
+    },
+    {
+      "authors": [
+        "Patricia Elmore"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1993",
+      "category": "Best Juvenile",
+      "position": "1993.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Susannah and the Purple Mongoose"
+    },
+    {
+      "authors": [
+        "Peni R. Griffin"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1993",
+      "category": "Best Juvenile",
+      "position": "1993.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Treasure Bird"
+    },
+    {
+      "authors": [
+        "Chris Van Allsburg"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1993",
+      "category": "Best Juvenile",
+      "position": "1993.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Widow's Broom"
+    },
+    {
+      "authors": [
+        "Barbara Brooks Wallace"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1994",
+      "category": "Best Juvenile",
+      "position": "1994",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Twin in the Tavern"
+    },
+    {
+      "authors": [
+        "Linda Stewart"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1994",
+      "category": "Best Juvenile",
+      "position": "1994.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Sam the Cat, Detective"
+    },
+    {
+      "authors": [
+        "Mary Pope Osborne"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1994",
+      "category": "Best Juvenile",
+      "position": "1994.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Spider Kane and the Mystery at Jumbo Nightcrawler's"
+    },
+    {
+      "authors": [
+        "Eloise Jarvis McGraw"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1994",
+      "category": "Best Juvenile",
+      "position": "1994.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Tangled Web"
+    },
+    {
+      "authors": [
+        "Phyllis Reynolds Naylor"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1994",
+      "category": "Best Juvenile",
+      "position": "1994.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Face in the Bessledorf Funeral Parlor"
+    },
+    {
+      "authors": [
+        "Willo Davis Roberts"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1995",
+      "category": "Best Juvenile",
+      "position": "1995",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Absolutely True Story..How I Visited Yellowstone Park with the Terrible Rubes"
+    },
+    {
+      "authors": [
+        "Willo Davis Roberts"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1995",
+      "category": "Best Juvenile",
+      "position": "1995.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Caught"
+    },
+    {
+      "authors": [
+        "Eth Clifford"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1995",
+      "category": "Best Juvenile",
+      "position": "1995.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Harvey's Mystifying Racoon Mix Up"
+    },
+    {
+      "authors": [
+        "E.W. Hildick"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1995",
+      "category": "Best Juvenile",
+      "position": "1995.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Hester Bidgood Investigatrix of Eveil Deeds"
+    },
+    {
+      "authors": [
+        "Joan M. Lexau"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1995",
+      "category": "Best Juvenile",
+      "position": "1995.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Trouble Will Find You"
+    },
+    {
+      "authors": [
+        "Nancy Springer"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1996",
+      "category": "Best Juvenile",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Looking for Jamie Bridger"
+    },
+    {
+      "authors": [
+        "Bonnie Pryor"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1996",
+      "category": "Best Juvenile",
+      "position": "1996.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Marvelous Marvin and the Pioneer Ghost"
+    },
+    {
+      "authors": [
+        "Margaret Peterson Haddix"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1996",
+      "category": "Best Juvenile",
+      "position": "1996.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Running Out of Time"
+    },
+    {
+      "authors": [
+        "Sid Fleischman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1996",
+      "category": "Best Juvenile",
+      "position": "1996.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The 13th Floor"
+    },
+    {
+      "authors": [
+        "James Stevenson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1996",
+      "category": "Best Juvenile",
+      "position": "1996.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Bones in the Cliff"
+    },
+    {
+      "authors": [
+        "Dorothy Reynolds Miller"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1997",
+      "category": "Best Juvenile",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Clearing"
+    },
+    {
+      "authors": [
+        "Barbara Brooks Wallace"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1997",
+      "category": "Best Juvenile",
+      "position": "1997.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Cousins in the Castle"
+    },
+    {
+      "authors": [
+        "John Neufield"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1997",
+      "category": "Best Juvenile",
+      "position": "1997.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Gaps in Stone Walls"
+    },
+    {
+      "authors": [
+        "E.W. Hildick"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1997",
+      "category": "Best Juvenile",
+      "position": "1997.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Case of the Wiggling Wig"
+    },
+    {
+      "authors": [
+        "Helen Cavanagh"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1997",
+      "category": "Best Juvenile",
+      "position": "1997.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Last Piper"
+    },
+    {
+      "authors": [
+        "Barbara Brooks Wallace"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1998",
+      "category": "Best Juvenile",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Sparrows in the Scullery"
+    },
+    {
+      "authors": [
+        "Katherine Hall Page"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1998",
+      "category": "Best Juvenile",
+      "position": "1998.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Christie & Company Down East"
+    },
+    {
+      "authors": [
+        "Willo Davis Roberts"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1998",
+      "category": "Best Juvenile",
+      "position": "1998.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Secrets at Hidden Valley"
+    },
+    {
+      "authors": [
+        "Barbara Mariconda"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1998",
+      "category": "Best Juvenile",
+      "position": "1998.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Turn the Cup Around"
+    },
+    {
+      "authors": [
+        "Alane Ferguson",
+        "Gloria Skurzynski"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1998",
+      "category": "Best Juvenile",
+      "position": "1998.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Wolf Stalker"
+    },
+    {
+      "authors": [
+        "Wendelin Van Draanen"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1999",
+      "category": "Best Juvenile",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Sammy Keyes and the Hotel Thief"
+    },
+    {
+      "authors": [
+        "Kathryn Lasky"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1999",
+      "category": "Best Juvenile",
+      "position": "1999.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Alice Rose & Sam"
+    },
+    {
+      "authors": [
+        "Louis Sachar"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1999",
+      "category": "Best Juvenile",
+      "position": "1999.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Holes"
+    },
+    {
+      "authors": [
+        "Willo Davis Roberts"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1999",
+      "category": "Best Juvenile",
+      "position": "1999.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Kidnappers"
+    },
+    {
+      "authors": [
+        "Iain Lawrence"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1999",
+      "category": "Best Juvenile",
+      "position": "1999.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Wreckers"
+    },
+    {
+      "authors": [
+        "Elizabeth McDavid Jones"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2000",
+      "category": "Best Juvenile",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Night Flyers"
+    },
+    {
+      "authors": [
+        "Hilary McKay"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2000",
+      "category": "Best Juvenile",
+      "position": "2000.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Dolphin Luck"
+    },
+    {
+      "authors": [
+        "Rob Thomas"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2000",
+      "category": "Best Juvenile",
+      "position": "2000.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Green Thumb"
+    },
+    {
+      "authors": [
+        "Kate Banks"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2000",
+      "category": "Best Juvenile",
+      "position": "2000.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Howie Bowles, Secret Agent"
+    },
+    {
+      "authors": [
+        "Alison Hart"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2000",
+      "category": "Best Juvenile",
+      "position": "2000.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Shadow Horse"
+    },
+    {
+      "authors": [
+        "Frances O'Roark Dowell"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2001",
+      "category": "Best Juvenile",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Dovey Coe"
+    },
+    {
+      "authors": [
+        "Barbara Brooks Wallace"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2001",
+      "category": "Best Juvenile",
+      "position": "2001.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Ghosts in the Gallery"
+    },
+    {
+      "authors": [
+        "Wendelin Van Draanen"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2001",
+      "category": "Best Juvenile",
+      "position": "2001.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Sammy Keyes and the Curse of Mustache Mary"
+    },
+    {
+      "authors": [
+        "Kathleen Ernst"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2001",
+      "category": "Best Juvenile",
+      "position": "2001.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Trouble at Fort La Pointe"
+    },
+    {
+      "authors": [
+        "Harriette Gillem Robinet"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2001",
+      "category": "Best Juvenile",
+      "position": "2001.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Walking to the Bus Rider Blues"
+    },
+    {
+      "authors": [
+        "Lillian Eige"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2002",
+      "category": "Best Juvenile",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Dangling"
+    },
+    {
+      "authors": [
+        "Paul Shipton"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2002",
+      "category": "Best Juvenile",
+      "position": "2002.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Bug Muldoon"
+    },
+    {
+      "authors": [
+        "Barbara Ware Holmes"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2002",
+      "category": "Best Juvenile",
+      "position": "2002.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Following Fake Man"
+    },
+    {
+      "authors": [
+        "Peni R. Griffin"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2002",
+      "category": "Best Juvenile",
+      "position": "2002.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Ghost Sitter"
+    },
+    {
+      "authors": [
+        "Elaine Marie Alphin"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2002",
+      "category": "Best Juvenile",
+      "position": "2002.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Ghost Soldier"
+    },
+    {
+      "authors": [
+        "Helen Ericson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2003",
+      "category": "Best Juvenile",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Harriet Spies Again"
+    },
+    {
+      "authors": [
+        "Eileen Heyes"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2003",
+      "category": "Best Juvenile",
+      "position": "2003.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "O'Dwyer & Grady: Starring in Acting Innocent"
+    },
+    {
+      "authors": [
+        "Patricia Curtis Pfitsch"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2003",
+      "category": "Best Juvenile",
+      "position": "2003.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Riding the Flume"
+    },
+    {
+      "authors": [
+        "Wendelin Van Draanen"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2003",
+      "category": "Best Juvenile",
+      "position": "2003.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Sammy Keyes and the Search for Snake Eye"
+    },
+    {
+      "authors": [
+        "George McClements"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2003",
+      "category": "Best Juvenile",
+      "position": "2003.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Case of the Greedy Granny: Jake Gander, Storyville Detective"
+    },
+    {
+      "authors": [
+        "Phyllis Reynolds Naylor"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2004",
+      "category": "Best Juvenile",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Bernie Magruder & the Bats in the Belfry"
+    },
+    {
+      "authors": [
+        "Arthur Slade"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2004",
+      "category": "Best Juvenile",
+      "position": "2004.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Dust"
+    },
+    {
+      "authors": [
+        "Laura Ruby"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2004",
+      "category": "Best Juvenile",
+      "position": "2004.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Lily's Ghosts"
+    },
+    {
+      "authors": [
+        "Wendelin Van Draanen"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2004",
+      "category": "Best Juvenile",
+      "position": "2004.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Sammy Keyes and the Art of Deception"
+    },
+    {
+      "authors": [
+        "Bruce Hale"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2004",
+      "category": "Best Juvenile",
+      "position": "2004.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Malted Falcon"
+    },
+    {
+      "authors": [
+        "Blue Balliett"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2005",
+      "category": "Best Juvenile",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Chasing Vermeer"
+    },
+    {
+      "authors": [
+        "Peg Kehret"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2005",
+      "category": "Best Juvenile",
+      "position": "2005.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Abduction!"
+    },
+    {
+      "authors": [
+        "Patricia Finney"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2005",
+      "category": "Best Juvenile",
+      "position": "2005.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Assassin"
+    },
+    {
+      "authors": [
+        "Daniel Pinkwater"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2005",
+      "category": "Best Juvenile",
+      "position": "2005.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Looking for Bobowicz"
+    },
+    {
+      "authors": [
+        "Zilpha Keatley Snyder"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2005",
+      "category": "Best Juvenile",
+      "position": "2005.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Unseen"
+    },
+    {
+      "authors": [
+        "D. James Smith"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2006",
+      "category": "Best Juvenile",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Boys of San Joaquin"
+    },
+    {
+      "authors": [
+        "Carl Hiaasen"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2006",
+      "category": "Best Juvenile",
+      "position": "2006.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Flush"
+    },
+    {
+      "authors": [
+        "Elise Broach"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2006",
+      "category": "Best Juvenile",
+      "position": "2006.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Shakespeare's Secret"
+    },
+    {
+      "authors": [
+        "Cynthia DeFelice"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2006",
+      "category": "Best Juvenile",
+      "position": "2006.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Missing Manatee"
+    },
+    {
+      "authors": [
+        "Laura J. Burns",
+        "Melinda Metz"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2006",
+      "category": "Best Juvenile",
+      "position": "2006.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Wright & Wong: The Case of the Nana-Napper"
+    },
+    {
+      "authors": [
+        "Andrew Clements"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2007",
+      "category": "Best Juvenile",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Room One: A Mystery or Two"
+    },
+    {
+      "authors": [
+        "Jennifer Allison"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2007",
+      "category": "Best Juvenile",
+      "position": "2007.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "Gilda Joyce: The Ladies of the Lake"
+    },
+    {
+      "authors": [
+        "Peter Hautman",
+        "Mary Logue"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2007",
+      "category": "Best Juvenile",
+      "position": "2007.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Bloodwater Mysteries: Snatched"
+    },
+    {
+      "authors": [
+        "Nancy Springer"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2007",
+      "category": "Best Juvenile",
+      "position": "2007.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Case of the Missing Marquess: An Enola Holmes Mystery"
+    },
+    {
+      "authors": [
+        "Sarah Masters Buckey"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2007",
+      "category": "Best Juvenile",
+      "position": "2007.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Stolen Sapphire: A Samantha Mystery"
+    },
+    {
+      "authors": [
+        "Katherine Marsh"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2008",
+      "category": "Best Juvenile",
+      "position": "2008",
+      "result": "winner",
+      "title": "The Night Tourist"
+    },
+    {
+      "authors": [
+        "Mary Downing Hahn"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2008",
+      "category": "Best Juvenile",
+      "position": "2008.01",
+      "result": "nominee",
+      "title": "Deep and Dark and Dangerous"
+    },
+    {
+      "authors": [
+        "Wendelin Van Draanen"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2008",
+      "category": "Best Juvenile",
+      "position": "2008.02",
+      "result": "nominee",
+      "title": "Sammy Keyes and the Wild Things"
+    },
+    {
+      "authors": [
+        "Evelyn Coleman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2008",
+      "category": "Best Juvenile",
+      "position": "2008.03",
+      "result": "nominee",
+      "title": "Shadows on Society Hill"
+    },
+    {
+      "authors": [
+        "Pseudonymous Bosch"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2008",
+      "category": "Best Juvenile",
+      "position": "2008.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-juvenile/?instance=1&listpage=2"
+      },
+      "title": "The Name of This Book is Secret"
+    },
+    {
+      "authors": [
+        "Tony Abbott"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2009",
+      "category": "Best Juvenile",
+      "position": "2009",
+      "result": "winner",
+      "title": "The Postcard"
+    },
+    {
+      "authors": [
+        "Brenda Seabrooke"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2009",
+      "category": "Best Juvenile",
+      "position": "2009.01",
+      "result": "nominee",
+      "title": "Cemetery Street"
+    },
+    {
+      "authors": [
+        "Patricia Reilly Giff"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2009",
+      "category": "Best Juvenile",
+      "position": "2009.02",
+      "result": "nominee",
+      "title": "Eleven"
+    },
+    {
+      "authors": [
+        "Graeme Base"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2009",
+      "category": "Best Juvenile",
+      "position": "2009.03",
+      "result": "nominee",
+      "title": "Enigma: A Magical Mystery"
+    },
+    {
+      "authors": [
+        "Riford McKenzie"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2009",
+      "category": "Best Juvenile",
+      "position": "2009.04",
+      "result": "nominee",
+      "title": "The Witches of Dredmoore Hollow"
+    },
+    {
+      "authors": [
+        "Mary Downing Hahn"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2010",
+      "category": "Best Juvenile",
+      "position": "2010",
+      "result": "winner",
+      "title": "Closed for the Season"
+    },
+    {
+      "authors": [
+        "Aaron Reynolds"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2010",
+      "category": "Best Juvenile",
+      "position": "2010.01",
+      "result": "nominee",
+      "title": "Creepy Crawly Crime"
+    },
+    {
+      "authors": [
+        "Mac Barnett"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2010",
+      "category": "Best Juvenile",
+      "position": "2010.02",
+      "result": "nominee",
+      "title": "The Case of the Case of Mistaken Identity"
+    },
+    {
+      "authors": [
+        "Nancy Springer"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2010",
+      "category": "Best Juvenile",
+      "position": "2010.03",
+      "result": "nominee",
+      "title": "The Case of the Cryptic Crinoline"
+    },
+    {
+      "authors": [
+        "Michael D. Beil"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2010",
+      "category": "Best Juvenile",
+      "position": "2010.04",
+      "result": "nominee",
+      "title": "The Red Blazer Girls: The Ring of Rocamadour"
+    },
+    {
+      "authors": [
+        "Dori Hillestad Butler"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2011",
+      "category": "Best Juvenile",
+      "position": "2011",
+      "result": "winner",
+      "title": "The Buddy Files: The Case of the Lost Boy"
+    },
+    {
+      "authors": [
+        "Jim Krieg"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2011",
+      "category": "Best Juvenile",
+      "position": "2011.01",
+      "result": "nominee",
+      "title": "Griff Carver: Hallway Patrol"
+    },
+    {
+      "authors": [
+        "Lewis Buzbee"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2011",
+      "category": "Best Juvenile",
+      "position": "2011.02",
+      "result": "nominee",
+      "title": "The Haunting of Charles Dickens"
+    },
+    {
+      "authors": [
+        "Ben H. Winters"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2011",
+      "category": "Best Juvenile",
+      "position": "2011.03",
+      "result": "nominee",
+      "title": "The Secret Life of Ms. Finkleman"
+    },
+    {
+      "authors": [
+        "Victoria Bond",
+        "T.R. Simon"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2011",
+      "category": "Best Juvenile",
+      "position": "2011.04",
+      "result": "nominee",
+      "title": "Zora and Me"
+    },
+    {
+      "authors": [
+        "Matthew J. Kirby"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2012",
+      "category": "Best Juvenile",
+      "position": "2012",
+      "result": "winner",
+      "title": "Icefall"
+    },
+    {
+      "authors": [
+        "Tom Angleberger"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2012",
+      "category": "Best Juvenile",
+      "position": "2012.01",
+      "result": "nominee",
+      "title": "Horton Halfpott"
+    },
+    {
+      "authors": [
+        "Mac Barnett"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2012",
+      "category": "Best Juvenile",
+      "position": "2012.02",
+      "result": "nominee",
+      "title": "It Happened on a Train"
+    },
+    {
+      "authors": [
+        "Shawn Thomas Odyssey"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2012",
+      "category": "Best Juvenile",
+      "position": "2012.03",
+      "result": "nominee",
+      "title": "The Wizard of Dark Street"
+    },
+    {
+      "authors": [
+        "Sheela Chari"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2012",
+      "category": "Best Juvenile",
+      "position": "2012.04",
+      "result": "nominee",
+      "title": "Vanished"
+    },
+    {
+      "authors": [
+        "Jack D. Ferraiolo"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2013",
+      "category": "Best Juvenile",
+      "position": "2013",
+      "result": "winner",
+      "title": "The Quick Fix"
+    },
+    {
+      "authors": [
+        "Art Corriveau"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2013",
+      "category": "Best Juvenile",
+      "position": "2013.01",
+      "result": "nominee",
+      "title": "13 Hangmen"
+    },
+    {
+      "authors": [
+        "Tom Angleberger"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2013",
+      "category": "Best Juvenile",
+      "position": "2013.02",
+      "result": "nominee",
+      "title": "Fake Mustache: Or, How Jodie O'Rodeo and Her Wonder Horse (and Some Nerdy Kid) Saved the U.S. Presidential Election from a Mad Genius Criminal Mastermind"
+    },
+    {
+      "authors": [
+        "Stuart Gibbs"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2013",
+      "category": "Best Juvenile",
+      "position": "2013.03",
+      "result": "nominee",
+      "title": "Spy School"
+    },
+    {
+      "authors": [
+        "Sheila Turnage"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2013",
+      "category": "Best Juvenile",
+      "position": "2013.04",
+      "result": "nominee",
+      "title": "Three Times Lucky"
+    },
+    {
+      "authors": [
+        "Amy Timberlake"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2014",
+      "category": "Best Juvenile",
+      "position": "2014",
+      "result": "winner",
+      "title": "One Came Home"
+    },
+    {
+      "authors": [
+        "Jonathan Stroud"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2014",
+      "category": "Best Juvenile",
+      "position": "2014.01",
+      "result": "nominee",
+      "title": "Lockwood and Co.: The Screaming Staircase"
+    },
+    {
+      "authors": [
+        "Erin Dionne"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2014",
+      "category": "Best Juvenile",
+      "position": "2014.02",
+      "result": "nominee",
+      "title": "Moxie and the Art of Rule Breaking"
+    },
+    {
+      "authors": [
+        "Caroline Lawrence"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2014",
+      "category": "Best Juvenile",
+      "position": "2014.03",
+      "result": "nominee",
+      "title": "P.K. Pinkerton and the Petrified Man"
+    },
+    {
+      "authors": [
+        "Josh Berk"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2014",
+      "category": "Best Juvenile",
+      "position": "2014.04",
+      "result": "nominee",
+      "title": "Strike Three, You're Dead"
+    },
+    {
+      "authors": [
+        "Kate Milford"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2015",
+      "category": "Best Juvenile",
+      "position": "2015",
+      "result": "winner",
+      "title": "Greenglass House"
+    },
+    {
+      "authors": [
+        "Heather Vogel Frederick"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2015",
+      "category": "Best Juvenile",
+      "position": "2015.01",
+      "result": "nominee",
+      "title": "Absolutely Truly"
+    },
+    {
+      "authors": [
+        "Stuart Gibbs"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2015",
+      "category": "Best Juvenile",
+      "position": "2015.02",
+      "result": "nominee",
+      "title": "Space Case"
+    },
+    {
+      "authors": [
+        "\"Science Bob\" Pflugfelder",
+        "Steve Hockensmith"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2015",
+      "category": "Best Juvenile",
+      "position": "2015.03",
+      "result": "nominee",
+      "title": "Nick and Tesla's Super-Cyborg Gadget Glove"
+    },
+    {
+      "authors": [
+        "N.H. Senzai"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2015",
+      "category": "Best Juvenile",
+      "position": "2015.04",
+      "result": "nominee",
+      "title": "Saving Kabul Corner"
+    },
+    {
+      "authors": [
+        "Marcia Wells"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2015",
+      "category": "Best Juvenile",
+      "position": "2015.05",
+      "result": "nominee",
+      "title": "Eddie Red, Undercover: Mystery on Museum Mile"
+    },
+    {
+      "authors": [
+        "Susan Vaught"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2016",
+      "category": "Best Juvenile",
+      "position": "2016",
+      "result": "winner",
+      "title": "Footer Davis Probably is Crazy"
+    },
+    {
+      "authors": [
+        "Avi"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2016",
+      "category": "Best Juvenile",
+      "position": "2016.01",
+      "result": "nominee",
+      "title": "Catch You Later, Traitor"
+    },
+    {
+      "authors": [
+        "Matthew Baker"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2016",
+      "category": "Best Juvenile",
+      "position": "2016.02",
+      "result": "nominee",
+      "title": "If You Find This"
+    },
+    {
+      "authors": [
+        "Lauren Oliver",
+        "H.C. Chester"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2016",
+      "category": "Best Juvenile",
+      "position": "2016.03",
+      "result": "nominee",
+      "title": "Curiosity House: The Shrunken Head"
+    },
+    {
+      "authors": [
+        "Kevin Sands"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2016",
+      "category": "Best Juvenile",
+      "position": "2016.04",
+      "result": "nominee",
+      "title": "Blackthorn Key"
+    },
+    {
+      "authors": [
+        "Wesley King"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2017",
+      "category": "Best Juvenile",
+      "position": "2017",
+      "result": "winner",
+      "title": "OCDaniel"
+    },
+    {
+      "authors": [
+        "Ally Condie"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2017",
+      "category": "Best Juvenile",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "Summerlost"
+    },
+    {
+      "authors": [
+        "Sarah Lariviere"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2017",
+      "category": "Best Juvenile",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "The Bad Kid"
+    },
+    {
+      "authors": [
+        "Clare Legrand"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2017",
+      "category": "Best Juvenile",
+      "position": "2017.03",
+      "result": "nominee",
+      "title": "Some Kind of Happiness"
+    },
+    {
+      "authors": [
+        "James Ponti"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2017",
+      "category": "Best Juvenile",
+      "position": "2017.04",
+      "result": "nominee",
+      "title": "Framed!"
+    },
+    {
+      "authors": [
+        "Susan Vaught"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2017",
+      "category": "Best Juvenile",
+      "position": "2017.05",
+      "result": "nominee",
+      "title": "Things Too Huge to Fix by Saying Sorry"
+    },
+    {
+      "authors": [
+        "James Ponti"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2018",
+      "category": "Best Juvenile",
+      "position": "2018",
+      "result": "winner",
+      "title": "Vanished!"
+    },
+    {
+      "authors": [
+        "Kirby Larson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2018",
+      "category": "Best Juvenile",
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "Audacity Jones Steals the Show"
+    },
+    {
+      "authors": [
+        "Kevin Sands"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2018",
+      "category": "Best Juvenile",
+      "position": "2018.02",
+      "result": "nominee",
+      "title": "The Assassin's Curse"
+    },
+    {
+      "authors": [
+        "Robin Stevens"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2018",
+      "category": "Best Juvenile",
+      "position": "2018.03",
+      "result": "nominee",
+      "title": "First Class Murder"
+    },
+    {
+      "authors": [
+        "Ru Xu"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2018",
+      "category": "Best Juvenile",
+      "position": "2018.04",
+      "result": "nominee",
+      "title": "NewsPrints"
+    },
+    {
+      "authors": [
+        "Pete Hautman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2019",
+      "category": "Best Juvenile",
+      "position": "2019",
+      "result": "winner",
+      "title": "Otherwood"
+    },
+    {
+      "authors": [
+        "Tony Abbott"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2019",
+      "category": "Best Juvenile",
+      "position": "2019.01",
+      "result": "nominee",
+      "title": "Denis Ever After"
+    },
+    {
+      "authors": [
+        "Martha Freeman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2019",
+      "category": "Best Juvenile",
+      "position": "2019.02",
+      "result": "nominee",
+      "title": "Zap!"
+    },
+    {
+      "authors": [
+        "A.B. Greenfield"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2019",
+      "category": "Best Juvenile",
+      "position": "2019.03",
+      "result": "nominee",
+      "title": "Ra the Mighty: Cat Detective"
+    },
+    {
+      "authors": [
+        "Ben Guterson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2019",
+      "category": "Best Juvenile",
+      "position": "2019.04",
+      "result": "nominee",
+      "title": "Winterhouse"
+    },
+    {
+      "authors": [
+        "Karen Kane"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2019",
+      "category": "Best Juvenile",
+      "position": "2019.05",
+      "result": "nominee",
+      "title": "Charlie & Frog: A Mystery"
+    },
+    {
+      "authors": [
+        "T.R. Simon"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2019",
+      "category": "Best Juvenile",
+      "position": "2019.06",
+      "result": "nominee",
+      "title": "Zora & Me: The Cursed Ground"
+    },
+    {
+      "authors": [
+        "Susan Vaught"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2020",
+      "category": "Best Juvenile",
+      "position": "2020",
+      "result": "winner",
+      "title": "Me and Sam-Sam Handle the Apocalypse"
+    },
+    {
+      "authors": [
+        "Cary Fagan"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2020",
+      "category": "Best Juvenile",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "The Collected Works of Gretchen Oyster"
+    },
+    {
+      "authors": [
+        "Corey Ann Haydu"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2020",
+      "category": "Best Juvenile",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "Eventown"
+    },
+    {
+      "authors": [
+        "Greg Howard"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2020",
+      "category": "Best Juvenile",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "The Whispers"
+    },
+    {
+      "authors": [
+        "Laura Tucker"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2020",
+      "category": "Best Juvenile",
+      "position": "2020.04",
+      "result": "nominee",
+      "title": "All the Greys on Greene Street"
+    },
+    {
+      "authors": [
+        "Elizabeth C. Bunce"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2021",
+      "category": "Best Juvenile",
+      "position": "2021",
+      "result": "winner",
+      "title": "Premeditated Myrtle"
+    },
+    {
+      "authors": [
+        "Tanya Lloyd Kyi"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2021",
+      "category": "Best Juvenile",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "Me and Banksy"
+    },
+    {
+      "authors": [
+        "Janae Marks"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2021",
+      "category": "Best Juvenile",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "From the Desk of Zoe Washington"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2021",
+      "category": "Best Juvenile",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "Ikenga"
+    },
+    {
+      "authors": [
+        "Melissa Savage"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2021",
+      "category": "Best Juvenile",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "Nessie Quest"
+    },
+    {
+      "authors": [
+        "Taryn Souders"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2021",
+      "category": "Best Juvenile",
+      "position": "2021.05",
+      "result": "nominee",
+      "title": "Coop Knows the Scoop"
+    },
+    {
+      "authors": [
+        "Christina Diaz Gonzalez"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2022",
+      "category": "Best Juvenile",
+      "position": "2022",
+      "result": "winner",
+      "title": "Concealed"
+    },
+    {
+      "authors": [
+        "Elizabeth C. Bunce"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2022",
+      "category": "Best Juvenile",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "Cold-Blooded Myrtle"
+    },
+    {
+      "authors": [
+        "Marthe Jocelyn"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2022",
+      "category": "Best Juvenile",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "Aggie Morton Mystery Queen: The Dead Man in the Garden"
+    },
+    {
+      "authors": [
+        "M.G. Leonard",
+        "Sam Sedgman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2022",
+      "category": "Best Juvenile",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "Kidnap on the California Comet: Adventures on Trains #2"
+    },
+    {
+      "authors": [
+        "Jennifer A. Nielsen"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2022",
+      "category": "Best Juvenile",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "Rescue"
+    },
+    {
+      "authors": [
+        "Marthe Jocelyn"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2023",
+      "category": "Best Juvenile",
+      "position": "2023",
+      "result": "winner",
+      "title": "Aggie Morton, Mystery Queen: The Seaside Corpse"
+    },
+    {
+      "authors": [
+        "Michael D. Beil"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2023",
+      "category": "Best Juvenile",
+      "position": "2023.01",
+      "result": "nominee",
+      "title": "The Swallowtail Legacy: Wreck at Ada's Reef"
+    },
+    {
+      "authors": [
+        "Julie Buxbaum"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2023",
+      "category": "Best Juvenile",
+      "position": "2023.02",
+      "result": "nominee",
+      "title": "The Area 51 Files"
+    },
+    {
+      "authors": [
+        "M.G. Leonard",
+        "Sam Sedgman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2023",
+      "category": "Best Juvenile",
+      "position": "2023.03",
+      "result": "nominee",
+      "title": "Adventures on Trains: Murder on the Safari Star"
+    },
+    {
+      "authors": [
+        "Kekla Magoon"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2023",
+      "category": "Best Juvenile",
+      "position": "2023.04",
+      "result": "nominee",
+      "title": "Chester Keene Cracks the Code"
+    },
+    {
+      "authors": [
+        "Adrianna Cuevas"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2024",
+      "category": "Best Juvenile",
+      "position": "2024",
+      "result": "winner",
+      "title": "The Ghosts of Rancho Espanto"
+    },
+    {
+      "authors": [
+        "Elizabeth C. Bunce"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2024",
+      "category": "Best Juvenile",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "Myrtle, Means, and Opportunity"
+    },
+    {
+      "authors": [
+        "Lamar Giles"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2024",
+      "category": "Best Juvenile",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "Epic Ellison: Cosmos Camp"
+    },
+    {
+      "authors": [
+        "Larry Schwarz",
+        "Iva-Marie Palmer"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2024",
+      "category": "Best Juvenile",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "The Jules Verne Prophecy"
+    },
+    {
+      "authors": [
+        "Claire Swinarski"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2024",
+      "category": "Best Juvenile",
+      "position": "2024.04",
+      "result": "nominee",
+      "title": "What Happened to Rachel Riley?"
+    },
+    {
+      "authors": [
+        "Margaret Peterson Haddix"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2025",
+      "category": "Best Juvenile",
+      "position": "2025",
+      "result": "winner",
+      "title": "Mysteries of Trash and Treasure: The Stolen Key"
+    },
+    {
+      "authors": [
+        "P.G. Bell"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2025",
+      "category": "Best Juvenile",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "The Beanstalk Murder"
+    },
+    {
+      "authors": [
+        "Janet Fox"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2025",
+      "category": "Best Juvenile",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "Mystery of Mystic Mountain"
+    },
+    {
+      "authors": [
+        "Aimee Lim"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2025",
+      "category": "Best Juvenile",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "The Spindle of Fate"
+    },
+    {
+      "authors": [
+        "Ginger Reno"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2025",
+      "category": "Best Juvenile",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "Find Her"
+    },
+    {
+      "authors": [
+        "Tiffany D. Jackson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2026",
+      "category": "Best Juvenile",
+      "position": "2026",
+      "result": "winner",
+      "title": "Blood in the Water"
+    },
+    {
+      "authors": [
+        "Alasdair Beckett-King"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2026",
+      "category": "Best Juvenile",
+      "position": "2026.01",
+      "result": "nominee",
+      "title": "Montgomery Bonbon: Murder at the Museum"
+    },
+    {
+      "authors": [
+        "Erin Soderberg Downing"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2026",
+      "category": "Best Juvenile",
+      "position": "2026.02",
+      "result": "nominee",
+      "title": "What Happened Then"
+    },
+    {
+      "authors": [
+        "Debbi Michiko Florence"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2026",
+      "category": "Best Juvenile",
+      "position": "2026.03",
+      "result": "nominee",
+      "title": "A Study in Secrets"
+    },
+    {
+      "authors": [
+        "Judith Rossell"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2026",
+      "category": "Best Juvenile",
+      "position": "2026.04",
+      "result": "nominee",
+      "title": "The Midwatch Institute for Wayward Girls"
+    },
+    {
+      "authors": [
+        "Ally Russell"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2026",
+      "category": "Best Juvenile",
+      "position": "2026.05",
+      "result": "nominee",
+      "title": "Mystery James Digs Her Own Grave"
+    }
+  ],
+  "fetched_at": "2026-07-16T23:36:05Z",
+  "list_id": "edgar_award_juvenile",
+  "list_name": "Edgar Award - Juvenile",
+  "match_series": false,
+  "notes": [],
+  "parser": "edgar_award_juvenile",
+  "schema_version": 2,
+  "source": {
+    "name": "Edgar Award - Juvenile",
+    "source_id": "edgar_award_juvenile",
+    "url": "https://edgarawards.com/category-list-best-juvenile/"
+  }
+}

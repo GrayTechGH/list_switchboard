@@ -56,6 +56,84 @@ EXCLUDED_CATEGORY_KEYS = {
   'best short fiction',
 }
 
+EXPECTED_COVERAGE = {
+  'collection': {
+    2019: (4, 1), 2020: (4, 1), 2021: (6, 2),
+  },
+  'debut': {
+    2019: (4, 1), 2020: (6, 1), 2021: (5, 1),
+  },
+  'graphic novel': {
+    2020: (4, 1),
+  },
+  'middle grade': {
+    2020: (6, 1), 2021: (5, 1),
+  },
+  'novel': {
+    2019: (5, 2), 2020: (6, 1), 2021: (5, 1),
+  },
+  'novella': {
+    2019: (5, 1), 2020: (6, 1), 2021: (5, 1),
+  },
+  'poetry collection': {
+    2019: (3, 1), 2020: (5, 1), 2021: (5, 1),
+  },
+  'young adult': {
+    2019: (4, 1), 2020: (5, 1), 2021: (5, 1),
+  },
+}
+
+# Goodreads exposes only the first contributor and sometimes a shortened or
+# retail-expanded title. These reviewed exceptions are deliberately guarded by
+# both stable book ID and the parsed title so reused or malformed IDs do not
+# broaden the correction.
+GOODREADS_BOOK_CORRECTIONS = {
+  '43120911': {
+    'expected_title': 'Little Paranoias',
+    'title': 'Little Paranoias: Stories',
+  },
+  '41945987': {
+    'expected_title': 'Collision',
+    'title': 'Collision: Stories',
+  },
+  '53208061': {
+    'expected_title': 'Never Have I Ever',
+    'title': 'Never Have I Ever: Stories',
+  },
+  '53175322': {
+    'expected_title': (
+      'Root Magic: An Award-Winning Story of Family, Magic, and Courage in '
+      '1963 South Carolina for Kids'),
+    'title': 'Root Magic',
+  },
+  '59065359': {
+    'expected_title': 'Tortured Willows: Bent. Bowed. Unbroken',
+    'title': 'Tortured Willows: Bent. Bowed. Unbroken.',
+    'authors': (
+      'Angela Yuriko Smith',
+      'Lee Murray',
+      'Christina Sng',
+      'Geneve Flynn',
+    ),
+  },
+  '51116307': {
+    'expected_title': 'The Low, Low Woods',
+    'authors': ('Carmen Maria Machado', 'DaNi'),
+  },
+  '52637764': {
+    'expected_title': 'Monstress, Volume 5: Warchild',
+    'authors': ('Marjorie M. Liu', 'Sana Takeda'),
+  },
+  '53236911': {
+    'expected_title': 'Dracula, Motherf**ker!',
+    'authors': ('Alex de Campi', 'Erica Henderson'),
+  },
+  '49772071': {
+    'expected_title': 'Devil Within',
+    'authors': ('Stephanie Phillips', 'Maan House'),
+  },
+}
+
 
 def category_key(value):
   return normalize_heading(value).replace('non fiction', 'nonfiction')
@@ -77,6 +155,39 @@ def clean_source_text(value):
   return normalize_line(value)
 
 
+def expected_coverage(category):
+  return EXPECTED_COVERAGE.get(category_key(category), {})
+
+
+def require_complete_lohf_result(parsed, category, source_label):
+  expected = expected_coverage(category)
+  if not expected:
+    return parsed
+  actual = {}
+  for entry in parsed.get('entries', ()):
+    year = int(entry.get('award_year', 0) or 0)
+    total, winners = actual.get(year, (0, 0))
+    actual[year] = (
+      total + 1,
+      winners + int(entry.get('result') == RESULT_WINNER),
+    )
+  if actual != expected:
+    missing = sorted(set(expected) - set(actual))
+    unexpected = sorted(set(actual) - set(expected))
+    mismatched = {
+      year: {'expected': expected[year], 'actual': actual.get(year)}
+      for year in sorted(set(expected) & set(actual))
+      if actual[year] != expected[year]
+    }
+    raise ValueError(
+      f'{source_label} returned incomplete {category} coverage '
+      f'(expected {sum(total for total, _winners in expected.values())} rows; '
+      f'got {sum(total for total, _winners in actual.values())}; '
+      f'missing years={missing}; unexpected years={unexpected}; '
+      f'mismatched years={mismatched})')
+  return parsed
+
+
 class LadiesOfHorrorFictionParser(AwardParserBase):
 
   AWARD_NAME = AWARD_NAME
@@ -86,14 +197,15 @@ class LadiesOfHorrorFictionParser(AwardParserBase):
       'Goodreads is the V1 primary source for LOHF winners and nominees.',
       'Goodreads nominee rows are imported as shortlisted rows; this is not an '
       'official consolidated shortlist archive.',
-      'Public parseable coverage is source-limited, with strongest coverage '
-      'for 2019-2021; no 2022+ rows are invented.',
+      'The 2021 awards were the final LOHF award cycle and were announced in '
+      '2022; no later award rows are expected.',
     ]
     soup = BeautifulSoup(self.decode_source(html), 'html.parser')
-    rows = []
-    rows.extend(self.goodreads_table_rows(soup, base_url, category, category_aliases))
-    rows.extend(self.goodreads_line_rows(
-      soup, base_url, category, category_aliases, start_order=len(rows)))
+    rows = self.goodreads_table_rows(
+      soup, base_url, category, category_aliases)
+    if not rows:
+      rows = self.goodreads_line_rows(
+        soup, base_url, category, category_aliases)
     if not rows:
       notes.append(f'No Goodreads LOHF rows were parsed for {category}.')
     return self.parsed_from_rows(name, base_url, rows, notes)
@@ -105,17 +217,20 @@ class LadiesOfHorrorFictionParser(AwardParserBase):
       'winner rows; it is not a shortlist source.',
     ]
     soup = BeautifulSoup(self.decode_source(html), 'html.parser')
+    article = soup.find('article')
+    if article is None:
+      notes.append('No File 770 article body was found.')
+      return self.parsed_from_rows(name, base_url, (), notes)
     rows = []
     current_category = ''
-    current_source_url = base_url
-    for node in soup.find_all(['h1', 'h2', 'h3', 'h4', 'p', 'li', 'a']):
+    for node in article.find_all(['h1', 'h2', 'h3', 'h4', 'p', 'li']):
       text = self.node_text(node)
       if not text:
         continue
-      heading_category = self.category_from_official_heading(text)
-      if heading_category:
-        current_category = heading_category
-        current_source_url = self.first_link_url(node, base_url) or base_url
+      if self.is_official_category_heading(text):
+        current_category = self.category_from_official_heading(text)
+        continue
+      if node.name == 'p':
         continue
       if not current_category or not self.category_matches(
           current_category, category, category_aliases):
@@ -132,7 +247,7 @@ class LadiesOfHorrorFictionParser(AwardParserBase):
           'result': RESULT_WINNER,
           '_source_order': len(rows),
         },
-        current_source_url,
+        base_url,
         2021,
         category))
     return self.parsed_from_rows(name, base_url, rows, notes)
@@ -180,6 +295,9 @@ class LadiesOfHorrorFictionParser(AwardParserBase):
       author = self.clean_author(author_node.get_text(' ', strip=True))
       if not title or not author:
         continue
+      book_url = self.first_link_url(title_node, base_url)
+      title, authors = self.correct_goodreads_work(
+        book_url, title, (author,))
       labels = self.goodreads_label_texts(book_row)
       for label in labels:
         parsed_label = self.parse_goodreads_label(label, category, category_aliases)
@@ -189,11 +307,11 @@ class LadiesOfHorrorFictionParser(AwardParserBase):
         rows.append(self.build_award_entry(
           {
             'title': title,
-            'author': author,
+            'authors': authors,
             'result': result,
             '_source_order': len(rows),
           },
-          self.first_link_url(title_node, base_url) or base_url,
+          base_url,
           year,
           category))
     return rows
@@ -224,10 +342,14 @@ class LadiesOfHorrorFictionParser(AwardParserBase):
       previous_label_index = index
       if work is None:
         continue
+      title = self.clean_title(work[0])
+      author = self.clean_author(work[1])
+      if not title or not author:
+        continue
       rows.append(self.build_award_entry(
         {
-          'title': self.clean_title(work[0]),
-          'author': self.clean_author(work[1]),
+          'title': title,
+          'author': author,
           'result': result,
           '_source_order': start_order + len(rows),
         },
@@ -267,6 +389,24 @@ class LadiesOfHorrorFictionParser(AwardParserBase):
       if re.search(rf'\b{re.escape(alias_key)}\b', key):
         return canonical
     return ''
+
+  def is_official_category_heading(self, text):
+    key = category_key(text)
+    return bool(re.search(
+      r'\b(?:lohf|ladies of horror fiction)\s+award\s+for\b', key))
+
+  def correct_goodreads_work(self, book_url, title, authors):
+    match = re.search(r'/book/show/(\d+)', book_url or '')
+    correction = GOODREADS_BOOK_CORRECTIONS.get(
+      match.group(1) if match else '')
+    if (
+        correction is None or
+        title != correction.get('expected_title')):
+      return title, list(authors)
+    return (
+      correction.get('title', title),
+      list(correction.get('authors', authors)),
+    )
 
   def category_matches(self, label, category, category_aliases):
     label_category = self.clean_category_label(label)
@@ -434,15 +574,24 @@ class LadiesOfHorrorFictionParser(AwardParserBase):
         ordered.append(row)
         continue
       if existing.get('result') != RESULT_WINNER and row.get('result') == RESULT_WINNER:
+        preserved = {
+          'title': existing.get('title'),
+          'authors': existing.get('authors'),
+        }
         existing.update(row)
+        existing.update(preserved)
     return ordered
 
   def row_key(self, row):
+    title = row.get('title', '')
+    for correction in GOODREADS_BOOK_CORRECTIONS.values():
+      if title == correction.get('title'):
+        title = correction['expected_title']
+        break
     return (
       str(row.get('award_year', '')),
       category_key(row.get('category', '')),
-      category_key(row.get('title', '')),
-      category_key(row.get('author', '')),
+      category_key(title),
     )
 
   def unique_notes(self, notes):

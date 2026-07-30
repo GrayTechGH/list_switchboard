@@ -1,0 +1,1947 @@
+{
+  "append_state": {
+    "entry_count": 175,
+    "last_entry_key": "presumed guilty|scott turow",
+    "last_position": "2026.06",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Peter Lovesey"
+      ],
+      "award": "Barry Award",
+      "award_year": "1997",
+      "category": "Best Mystery Novel",
+      "position": "1997",
+      "result": "winner",
+      "title": "Bloodhounds"
+    },
+    {
+      "authors": [
+        "Thomas H. Cook"
+      ],
+      "award": "Barry Award",
+      "award_year": "1997",
+      "category": "Best Mystery Novel",
+      "position": "1997.01",
+      "result": "nominee",
+      "title": "The Chatham School Affair"
+    },
+    {
+      "authors": [
+        "Reginald Hill"
+      ],
+      "award": "Barry Award",
+      "award_year": "1997",
+      "category": "Best Mystery Novel",
+      "position": "1997.02",
+      "result": "nominee",
+      "title": "The Wood Beyond"
+    },
+    {
+      "authors": [
+        "Rochelle Krich"
+      ],
+      "award": "Barry Award",
+      "award_year": "1997",
+      "category": "Best Mystery Novel",
+      "position": "1997.03",
+      "result": "nominee",
+      "title": "Speak No Evil"
+    },
+    {
+      "authors": [
+        "Margaret Lawrence"
+      ],
+      "award": "Barry Award",
+      "award_year": "1997",
+      "category": "Best Mystery Novel",
+      "position": "1997.04",
+      "result": "nominee",
+      "title": "Hearts and Bones"
+    },
+    {
+      "authors": [
+        "Thomas Perry"
+      ],
+      "award": "Barry Award",
+      "award_year": "1997",
+      "category": "Best Mystery Novel",
+      "position": "1997.05",
+      "result": "nominee",
+      "title": "Dance for the Dead"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Barry Award",
+      "award_year": "1998",
+      "category": "Best Mystery Novel",
+      "position": "1998",
+      "result": "winner",
+      "title": "Trunk Music"
+    },
+    {
+      "authors": [
+        "James Lee Burke"
+      ],
+      "award": "Barry Award",
+      "award_year": "1998",
+      "category": "Best Mystery Novel",
+      "position": "1998.01",
+      "result": "nominee",
+      "title": "Cimarron Rose"
+    },
+    {
+      "authors": [
+        "Jan Burke"
+      ],
+      "award": "Barry Award",
+      "award_year": "1998",
+      "category": "Best Mystery Novel",
+      "position": "1998.02",
+      "result": "nominee",
+      "title": "Hocus"
+    },
+    {
+      "authors": [
+        "Deborah Crombie"
+      ],
+      "award": "Barry Award",
+      "award_year": "1998",
+      "category": "Best Mystery Novel",
+      "position": "1998.03",
+      "result": "nominee",
+      "title": "Dreaming of the Bones"
+    },
+    {
+      "authors": [
+        "Bill Pronzini"
+      ],
+      "award": "Barry Award",
+      "award_year": "1998",
+      "category": "Best Mystery Novel",
+      "position": "1998.04",
+      "result": "nominee",
+      "title": "A Wasteland of Strangers"
+    },
+    {
+      "authors": [
+        "S.J. Rozan"
+      ],
+      "award": "Barry Award",
+      "award_year": "1998",
+      "category": "Best Mystery Novel",
+      "position": "1998.05",
+      "result": "nominee",
+      "title": "No Colder Place"
+    },
+    {
+      "authors": [
+        "Don Winslow"
+      ],
+      "award": "Barry Award",
+      "award_year": "1998",
+      "category": "Best Mystery Novel",
+      "position": "1998.06",
+      "result": "nominee",
+      "title": "The Death and Life of Bobby Z"
+    },
+    {
+      "authors": [
+        "Peter Robinson"
+      ],
+      "award": "Barry Award",
+      "award_year": "2000",
+      "category": "Best Mystery Novel",
+      "position": "2000",
+      "result": "winner",
+      "title": "In a Dry Season"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Barry Award",
+      "award_year": "2000",
+      "category": "Best Mystery Novel",
+      "position": "2000.01",
+      "result": "nominee",
+      "title": "Angels Flight"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "Barry Award",
+      "award_year": "2000",
+      "category": "Best Mystery Novel",
+      "position": "2000.02",
+      "result": "nominee",
+      "title": "L.A. Requiem"
+    },
+    {
+      "authors": [
+        "Janet Evanovich"
+      ],
+      "award": "Barry Award",
+      "award_year": "2000",
+      "category": "Best Mystery Novel",
+      "position": "2000.03",
+      "result": "nominee",
+      "title": "High Five"
+    },
+    {
+      "authors": [
+        "John Katzenbach"
+      ],
+      "award": "Barry Award",
+      "award_year": "2000",
+      "category": "Best Mystery Novel",
+      "position": "2000.04",
+      "result": "nominee",
+      "title": "Hart\u2019s War"
+    },
+    {
+      "authors": [
+        "Dennis Lehane"
+      ],
+      "award": "Barry Award",
+      "award_year": "2000",
+      "category": "Best Mystery Novel",
+      "position": "2000.05",
+      "result": "nominee",
+      "title": "Prayers for Rain"
+    },
+    {
+      "authors": [
+        "Nevada Barr"
+      ],
+      "award": "Barry Award",
+      "award_year": "2001",
+      "category": "Best Mystery Novel",
+      "position": "2001",
+      "result": "winner",
+      "title": "Deep South"
+    },
+    {
+      "authors": [
+        "Lee Child"
+      ],
+      "award": "Barry Award",
+      "award_year": "2001",
+      "category": "Best Mystery Novel",
+      "position": "2001.01",
+      "result": "nominee",
+      "title": "Running Blind"
+    },
+    {
+      "authors": [
+        "Thomas H. Cook"
+      ],
+      "award": "Barry Award",
+      "award_year": "2001",
+      "category": "Best Mystery Novel",
+      "position": "2001.02",
+      "result": "nominee",
+      "title": "Places in the Dark"
+    },
+    {
+      "authors": [
+        "Bill Fitzhugh"
+      ],
+      "award": "Barry Award",
+      "award_year": "2001",
+      "category": "Best Mystery Novel",
+      "position": "2001.03",
+      "result": "nominee",
+      "title": "Cross Dressing"
+    },
+    {
+      "authors": [
+        "Steve Hamilton"
+      ],
+      "award": "Barry Award",
+      "award_year": "2001",
+      "category": "Best Mystery Novel",
+      "position": "2001.04",
+      "result": "nominee",
+      "title": "Winter of the Wolf Moon"
+    },
+    {
+      "authors": [
+        "Barbara Seranella"
+      ],
+      "award": "Barry Award",
+      "award_year": "2001",
+      "category": "Best Mystery Novel",
+      "position": "2001.05",
+      "result": "nominee",
+      "title": "Unwanted Company"
+    },
+    {
+      "authors": [
+        "Dennis Lehane"
+      ],
+      "award": "Barry Award",
+      "award_year": "2002",
+      "category": "Best Mystery Novel",
+      "position": "2002",
+      "result": "winner",
+      "title": "Mystic River"
+    },
+    {
+      "authors": [
+        "Harlan Coben"
+      ],
+      "award": "Barry Award",
+      "award_year": "2002",
+      "category": "Best Mystery Novel",
+      "position": "2002.01",
+      "result": "nominee",
+      "title": "Tell No One"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Barry Award",
+      "award_year": "2002",
+      "category": "Best Mystery Novel",
+      "position": "2002.02",
+      "result": "nominee",
+      "title": "A Darkness More Than Night"
+    },
+    {
+      "authors": [
+        "William Kent Krueger"
+      ],
+      "award": "Barry Award",
+      "award_year": "2002",
+      "category": "Best Mystery Novel",
+      "position": "2002.03",
+      "result": "nominee",
+      "title": "Purgatory Ridge"
+    },
+    {
+      "authors": [
+        "T. Jefferson Parker"
+      ],
+      "award": "Barry Award",
+      "award_year": "2002",
+      "category": "Best Mystery Novel",
+      "position": "2002.04",
+      "result": "nominee",
+      "title": "Silent Joe"
+    },
+    {
+      "authors": [
+        "George P. Pelecanos"
+      ],
+      "award": "Barry Award",
+      "award_year": "2002",
+      "category": "Best Mystery Novel",
+      "position": "2002.05",
+      "result": "nominee",
+      "title": "Right as Rain"
+    },
+    {
+      "authors": [
+        "Donald E. Westlake"
+      ],
+      "award": "Barry Award",
+      "award_year": "2002",
+      "category": "Best Mystery Novel",
+      "position": "2002.06",
+      "result": "nominee",
+      "title": "Bad News"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Barry Award",
+      "award_year": "2003",
+      "category": "Best Mystery Novel",
+      "position": "2003",
+      "result": "winner",
+      "title": "City of Bones"
+    },
+    {
+      "authors": [
+        "Lee Child"
+      ],
+      "award": "Barry Award",
+      "award_year": "2003",
+      "category": "Best Mystery Novel",
+      "position": "2003.01",
+      "result": "nominee",
+      "title": "Without Fail"
+    },
+    {
+      "authors": [
+        "Tim Cockey"
+      ],
+      "award": "Barry Award",
+      "award_year": "2003",
+      "category": "Best Mystery Novel",
+      "position": "2003.02",
+      "result": "nominee",
+      "title": "The Hearse Case Scenario"
+    },
+    {
+      "authors": [
+        "Steve Hamilton"
+      ],
+      "award": "Barry Award",
+      "award_year": "2003",
+      "category": "Best Mystery Novel",
+      "position": "2003.03",
+      "result": "nominee",
+      "title": "North of Nowhere"
+    },
+    {
+      "authors": [
+        "George P. Pelecanos"
+      ],
+      "award": "Barry Award",
+      "award_year": "2003",
+      "category": "Best Mystery Novel",
+      "position": "2003.04",
+      "result": "nominee",
+      "title": "Hell to Pay"
+    },
+    {
+      "authors": [
+        "S.J. Rozan"
+      ],
+      "award": "Barry Award",
+      "award_year": "2003",
+      "category": "Best Mystery Novel",
+      "position": "2003.05",
+      "result": "nominee",
+      "title": "Winter and Night"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "Barry Award",
+      "award_year": "2004",
+      "category": "Best Mystery Novel",
+      "position": "2004",
+      "result": "winner",
+      "title": "Every Secret Thing"
+    },
+    {
+      "authors": [
+        "Ken Bruen"
+      ],
+      "award": "Barry Award",
+      "award_year": "2004",
+      "category": "Best Mystery Novel",
+      "position": "2004.01",
+      "result": "nominee",
+      "title": "The Guards"
+    },
+    {
+      "authors": [
+        "Dan Fesperman"
+      ],
+      "award": "Barry Award",
+      "award_year": "2004",
+      "category": "Best Mystery Novel",
+      "position": "2004.02",
+      "result": "nominee",
+      "title": "The Small Boat of Great Sorrows"
+    },
+    {
+      "authors": [
+        "Laurie R. King"
+      ],
+      "award": "Barry Award",
+      "award_year": "2004",
+      "category": "Best Mystery Novel",
+      "position": "2004.03",
+      "result": "nominee",
+      "title": "Keeping Watch"
+    },
+    {
+      "authors": [
+        "Dennis Lehane"
+      ],
+      "award": "Barry Award",
+      "award_year": "2004",
+      "category": "Best Mystery Novel",
+      "position": "2004.04",
+      "result": "nominee",
+      "title": "Shutter Island"
+    },
+    {
+      "authors": [
+        "Julia Spencer-Fleming"
+      ],
+      "award": "Barry Award",
+      "award_year": "2004",
+      "category": "Best Mystery Novel",
+      "position": "2004.05",
+      "result": "nominee",
+      "title": "A Fountain Filled with Blood"
+    },
+    {
+      "authors": [
+        "Lee Child"
+      ],
+      "award": "Barry Award",
+      "award_year": "2005",
+      "category": "Best Mystery Novel",
+      "position": "2005",
+      "result": "winner",
+      "title": "The Enemy"
+    },
+    {
+      "authors": [
+        "K.J. Erickson"
+      ],
+      "award": "Barry Award",
+      "award_year": "2005",
+      "category": "Best Mystery Novel",
+      "position": "2005.01",
+      "result": "nominee",
+      "title": "Alone at Night"
+    },
+    {
+      "authors": [
+        "Jeff Lindsay"
+      ],
+      "award": "Barry Award",
+      "award_year": "2005",
+      "category": "Best Mystery Novel",
+      "position": "2005.02",
+      "result": "nominee",
+      "title": "Darkly Dreaming Dexter"
+    },
+    {
+      "authors": [
+        "Chris Mooney"
+      ],
+      "award": "Barry Award",
+      "award_year": "2005",
+      "category": "Best Mystery Novel",
+      "position": "2005.03",
+      "result": "nominee",
+      "title": "Remembering Sarah"
+    },
+    {
+      "authors": [
+        "Walter Mosley"
+      ],
+      "award": "Barry Award",
+      "award_year": "2005",
+      "category": "Best Mystery Novel",
+      "position": "2005.04",
+      "result": "nominee",
+      "title": "Little Scarlet"
+    },
+    {
+      "authors": [
+        "George P. Pelecanos"
+      ],
+      "award": "Barry Award",
+      "award_year": "2005",
+      "category": "Best Mystery Novel",
+      "position": "2005.05",
+      "result": "nominee",
+      "title": "Hard Revolution"
+    },
+    {
+      "authors": [
+        "Thomas H. Cook"
+      ],
+      "award": "Barry Award",
+      "award_year": "2006",
+      "category": "Best Mystery Novel",
+      "position": "2006",
+      "result": "winner",
+      "title": "Red Leaves"
+    },
+    {
+      "authors": [
+        "Jan Burke"
+      ],
+      "award": "Barry Award",
+      "award_year": "2006",
+      "category": "Best Mystery Novel",
+      "position": "2006.01",
+      "result": "nominee",
+      "title": "Bloodlines"
+    },
+    {
+      "authors": [
+        "William Kent Krueger"
+      ],
+      "award": "Barry Award",
+      "award_year": "2006",
+      "category": "Best Mystery Novel",
+      "position": "2006.02",
+      "result": "nominee",
+      "title": "Mercy Falls"
+    },
+    {
+      "authors": [
+        "David Rosenfelt"
+      ],
+      "award": "Barry Award",
+      "award_year": "2006",
+      "category": "Best Mystery Novel",
+      "position": "2006.03",
+      "result": "nominee",
+      "title": "Sudden Death"
+    },
+    {
+      "authors": [
+        "James Swain"
+      ],
+      "award": "Barry Award",
+      "award_year": "2006",
+      "category": "Best Mystery Novel",
+      "position": "2006.04",
+      "result": "nominee",
+      "title": "Mr. Lucky"
+    },
+    {
+      "authors": [
+        "Don Winslow"
+      ],
+      "award": "Barry Award",
+      "award_year": "2006",
+      "category": "Best Mystery Novel",
+      "position": "2006.05",
+      "result": "nominee",
+      "title": "The Power of the Dog"
+    },
+    {
+      "authors": [
+        "George Pelecanos"
+      ],
+      "award": "Barry Award",
+      "award_year": "2007",
+      "category": "Best Mystery Novel",
+      "position": "2007",
+      "result": "winner",
+      "title": "The Night Gardener"
+    },
+    {
+      "authors": [
+        "Ace Atkins"
+      ],
+      "award": "Barry Award",
+      "award_year": "2007",
+      "category": "Best Mystery Novel",
+      "position": "2007.01",
+      "result": "nominee",
+      "title": "White Shadow"
+    },
+    {
+      "authors": [
+        "Rhys Bowen"
+      ],
+      "award": "Barry Award",
+      "award_year": "2007",
+      "category": "Best Mystery Novel",
+      "position": "2007.02",
+      "result": "nominee",
+      "title": "Oh Danny Boy"
+    },
+    {
+      "authors": [
+        "Dan Fesperman"
+      ],
+      "award": "Barry Award",
+      "award_year": "2007",
+      "category": "Best Mystery Novel",
+      "position": "2007.03",
+      "result": "nominee",
+      "title": "The Prisoner of Guantanamo"
+    },
+    {
+      "authors": [
+        "Ariana Franklin"
+      ],
+      "award": "Barry Award",
+      "award_year": "2007",
+      "category": "Best Mystery Novel",
+      "position": "2007.04",
+      "result": "nominee",
+      "title": "City of Shadows"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "Barry Award",
+      "award_year": "2008",
+      "category": "Best Mystery Novel",
+      "position": "2008",
+      "result": "winner",
+      "title": "What the Dead Know"
+    },
+    {
+      "authors": [
+        "Reed Farrel Coleman"
+      ],
+      "award": "Barry Award",
+      "award_year": "2008",
+      "category": "Best Mystery Novel",
+      "position": "2008.01",
+      "result": "nominee",
+      "title": "Soul Patch"
+    },
+    {
+      "authors": [
+        "John Connolly"
+      ],
+      "award": "Barry Award",
+      "award_year": "2008",
+      "category": "Best Mystery Novel",
+      "position": "2008.02",
+      "result": "nominee",
+      "title": "The Unquiet"
+    },
+    {
+      "authors": [
+        "John Hart"
+      ],
+      "award": "Barry Award",
+      "award_year": "2008",
+      "category": "Best Mystery Novel",
+      "position": "2008.03",
+      "result": "nominee",
+      "title": "Down River"
+    },
+    {
+      "authors": [
+        "J.A. Konrath"
+      ],
+      "award": "Barry Award",
+      "award_year": "2008",
+      "category": "Best Mystery Novel",
+      "position": "2008.04",
+      "result": "nominee",
+      "title": "Dirty Martini"
+    },
+    {
+      "authors": [
+        "Peter Spiegelman"
+      ],
+      "award": "Barry Award",
+      "award_year": "2008",
+      "category": "Best Mystery Novel",
+      "position": "2008.05",
+      "result": "nominee",
+      "title": "Red Cat"
+    },
+    {
+      "authors": [
+        "Arnaldur Indri\u00f0ason"
+      ],
+      "award": "Barry Award",
+      "award_year": "2009",
+      "category": "Best Mystery Novel",
+      "position": "2009",
+      "result": "winner",
+      "title": "The Draining Lake"
+    },
+    {
+      "authors": [
+        "Sean Chercover"
+      ],
+      "award": "Barry Award",
+      "award_year": "2009",
+      "category": "Best Mystery Novel",
+      "position": "2009.01",
+      "result": "nominee",
+      "title": "Trigger City"
+    },
+    {
+      "authors": [
+        "Michael Koryta"
+      ],
+      "award": "Barry Award",
+      "award_year": "2009",
+      "category": "Best Mystery Novel",
+      "position": "2009.02",
+      "result": "nominee",
+      "title": "Envy the Night"
+    },
+    {
+      "authors": [
+        "William Kent Krueger"
+      ],
+      "award": "Barry Award",
+      "award_year": "2009",
+      "category": "Best Mystery Novel",
+      "position": "2009.03",
+      "result": "nominee",
+      "title": "Red Knife"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Barry Award",
+      "award_year": "2009",
+      "category": "Best Mystery Novel",
+      "position": "2009.04",
+      "result": "nominee",
+      "title": "The Cruelest Month"
+    },
+    {
+      "authors": [
+        "Don Winslow"
+      ],
+      "award": "Barry Award",
+      "award_year": "2009",
+      "category": "Best Mystery Novel",
+      "position": "2009.05",
+      "result": "nominee",
+      "title": "The Dawn Patrol"
+    },
+    {
+      "authors": [
+        "John Hart"
+      ],
+      "award": "Barry Award",
+      "award_year": "2010",
+      "category": "Best Mystery Novel",
+      "position": "2010",
+      "result": "winner",
+      "title": "The Last Child"
+    },
+    {
+      "authors": [
+        "John Connolly"
+      ],
+      "award": "Barry Award",
+      "award_year": "2010",
+      "category": "Best Mystery Novel",
+      "position": "2010.01",
+      "result": "nominee",
+      "title": "The Gates"
+    },
+    {
+      "authors": [
+        "David Ellis"
+      ],
+      "award": "Barry Award",
+      "award_year": "2010",
+      "category": "Best Mystery Novel",
+      "position": "2010.02",
+      "result": "nominee",
+      "title": "The Hidden Man"
+    },
+    {
+      "authors": [
+        "Joe Gores"
+      ],
+      "award": "Barry Award",
+      "award_year": "2010",
+      "category": "Best Mystery Novel",
+      "position": "2010.03",
+      "result": "nominee",
+      "title": "Spade & Archer"
+    },
+    {
+      "authors": [
+        "Marcia Muller"
+      ],
+      "award": "Barry Award",
+      "award_year": "2010",
+      "category": "Best Mystery Novel",
+      "position": "2010.04",
+      "result": "nominee",
+      "title": "Locked In"
+    },
+    {
+      "authors": [
+        "S.J. Rozan"
+      ],
+      "award": "Barry Award",
+      "award_year": "2010",
+      "category": "Best Mystery Novel",
+      "position": "2010.05",
+      "result": "nominee",
+      "title": "The Shanghai Moon"
+    },
+    {
+      "authors": [
+        "Steve Hamilton"
+      ],
+      "award": "Barry Award",
+      "award_year": "2011",
+      "category": "Best Mystery Novel",
+      "position": "2011",
+      "result": "winner",
+      "title": "The Lock Artist"
+    },
+    {
+      "authors": [
+        "C.J. Box"
+      ],
+      "award": "Barry Award",
+      "award_year": "2011",
+      "category": "Best Mystery Novel",
+      "position": "2011.01",
+      "result": "nominee",
+      "title": "Nowhere To Run"
+    },
+    {
+      "authors": [
+        "Tom Franklin"
+      ],
+      "award": "Barry Award",
+      "award_year": "2011",
+      "category": "Best Mystery Novel",
+      "position": "2011.02",
+      "result": "nominee",
+      "title": "Crooked Letter, Crooked Letter"
+    },
+    {
+      "authors": [
+        "Dennis Lehane"
+      ],
+      "award": "Barry Award",
+      "award_year": "2011",
+      "category": "Best Mystery Novel",
+      "position": "2011.03",
+      "result": "nominee",
+      "title": "Moonlight Mile"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Barry Award",
+      "award_year": "2011",
+      "category": "Best Mystery Novel",
+      "position": "2011.04",
+      "result": "nominee",
+      "title": "Bury Your Dead"
+    },
+    {
+      "authors": [
+        "Don Winslow"
+      ],
+      "award": "Barry Award",
+      "award_year": "2011",
+      "category": "Best Mystery Novel",
+      "position": "2011.05",
+      "result": "nominee",
+      "title": "Savages"
+    },
+    {
+      "authors": [
+        "Jussi Adler-Olsen"
+      ],
+      "award": "Barry Award",
+      "award_year": "2012",
+      "category": "Best Mystery Novel",
+      "position": "2012",
+      "result": "winner",
+      "title": "The Keeper of Lost Causes"
+    },
+    {
+      "authors": [
+        "Linwood Barclay"
+      ],
+      "award": "Barry Award",
+      "award_year": "2012",
+      "category": "Best Mystery Novel",
+      "position": "2012.01",
+      "result": "nominee",
+      "title": "The Accident"
+    },
+    {
+      "authors": [
+        "Reed Farrel Coleman"
+      ],
+      "award": "Barry Award",
+      "award_year": "2012",
+      "category": "Best Mystery Novel",
+      "position": "2012.02",
+      "result": "nominee",
+      "title": "Hurt Machine"
+    },
+    {
+      "authors": [
+        "John Hart"
+      ],
+      "award": "Barry Award",
+      "award_year": "2012",
+      "category": "Best Mystery Novel",
+      "position": "2012.03",
+      "result": "nominee",
+      "title": "Iron House"
+    },
+    {
+      "authors": [
+        "Craig Johnson"
+      ],
+      "award": "Barry Award",
+      "award_year": "2012",
+      "category": "Best Mystery Novel",
+      "position": "2012.04",
+      "result": "nominee",
+      "title": "Hell Is Empty"
+    },
+    {
+      "authors": [
+        "Henning Mankell"
+      ],
+      "award": "Barry Award",
+      "award_year": "2012",
+      "category": "Best Mystery Novel",
+      "position": "2012.05",
+      "result": "nominee",
+      "title": "The Troubled Man"
+    },
+    {
+      "authors": [
+        "Peter May"
+      ],
+      "award": "Barry Award",
+      "award_year": "2013",
+      "category": "Best Mystery Novel",
+      "position": "2013",
+      "result": "winner",
+      "title": "The Blackhouse"
+    },
+    {
+      "authors": [
+        "Linwood Barclay"
+      ],
+      "award": "Barry Award",
+      "award_year": "2013",
+      "category": "Best Mystery Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "title": "Trust Your Eyes"
+    },
+    {
+      "authors": [
+        "S.J. Bolton"
+      ],
+      "award": "Barry Award",
+      "award_year": "2013",
+      "category": "Best Mystery Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "title": "Dead Scared"
+    },
+    {
+      "authors": [
+        "Gillian Flynn"
+      ],
+      "award": "Barry Award",
+      "award_year": "2013",
+      "category": "Best Mystery Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "title": "Gone Girl"
+    },
+    {
+      "authors": [
+        "William Landay"
+      ],
+      "award": "Barry Award",
+      "award_year": "2013",
+      "category": "Best Mystery Novel",
+      "position": "2013.04",
+      "result": "nominee",
+      "title": "Defending Jacob"
+    },
+    {
+      "authors": [
+        "Dennis Lehane"
+      ],
+      "award": "Barry Award",
+      "award_year": "2013",
+      "category": "Best Mystery Novel",
+      "position": "2013.05",
+      "result": "nominee",
+      "title": "Live by Night"
+    },
+    {
+      "authors": [
+        "William Kent Krueger"
+      ],
+      "award": "Barry Award",
+      "award_year": "2014",
+      "category": "Best Mystery Novel",
+      "position": "2014",
+      "result": "winner",
+      "title": "Ordinary Grace"
+    },
+    {
+      "authors": [
+        "Jussi Adler-Olsen"
+      ],
+      "award": "Barry Award",
+      "award_year": "2014",
+      "category": "Best Mystery Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "title": "A Conspiracy of Faith"
+    },
+    {
+      "authors": [
+        "Linwood Barclay"
+      ],
+      "award": "Barry Award",
+      "award_year": "2014",
+      "category": "Best Mystery Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "title": "A Tap on the Window"
+    },
+    {
+      "authors": [
+        "Thomas H. Cook"
+      ],
+      "award": "Barry Award",
+      "award_year": "2014",
+      "category": "Best Mystery Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "title": "Sandrine\u2019s Case"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "Barry Award",
+      "award_year": "2014",
+      "category": "Best Mystery Novel",
+      "position": "2014.04",
+      "result": "nominee",
+      "title": "Suspect"
+    },
+    {
+      "authors": [
+        "Ian Rankin"
+      ],
+      "award": "Barry Award",
+      "award_year": "2014",
+      "category": "Best Mystery Novel",
+      "position": "2014.05",
+      "result": "nominee",
+      "title": "Standing in Another Man\u2019s Grave"
+    },
+    {
+      "authors": [
+        "Greg Iles"
+      ],
+      "award": "Barry Award",
+      "award_year": "2015",
+      "category": "Best Mystery Novel",
+      "position": "2015",
+      "result": "winner",
+      "title": "Natchez Burning"
+    },
+    {
+      "authors": [
+        "Jussi Adler-Olsen"
+      ],
+      "award": "Barry Award",
+      "award_year": "2015",
+      "category": "Best Mystery Novel",
+      "position": "2015.01",
+      "result": "nominee",
+      "title": "The Marco Effect"
+    },
+    {
+      "authors": [
+        "Arnaldur Indridason"
+      ],
+      "award": "Barry Award",
+      "award_year": "2015",
+      "category": "Best Mystery Novel",
+      "position": "2015.02",
+      "result": "nominee",
+      "title": "Strange Shores"
+    },
+    {
+      "authors": [
+        "James R. Benn"
+      ],
+      "award": "Barry Award",
+      "award_year": "2015",
+      "category": "Best Mystery Novel",
+      "position": "2015.03",
+      "result": "nominee",
+      "title": "The Rest Is Silence"
+    },
+    {
+      "authors": [
+        "Reed Farrel Coleman"
+      ],
+      "award": "Barry Award",
+      "award_year": "2015",
+      "category": "Best Mystery Novel",
+      "position": "2015.04",
+      "result": "nominee",
+      "title": "The Hollow Girl"
+    },
+    {
+      "authors": [
+        "Bruce DeSilva"
+      ],
+      "award": "Barry Award",
+      "award_year": "2015",
+      "category": "Best Mystery Novel",
+      "position": "2015.05",
+      "result": "nominee",
+      "title": "Providence Rag"
+    },
+    {
+      "authors": [
+        "C.J. Box"
+      ],
+      "award": "Barry Award",
+      "award_year": "2016",
+      "category": "Best Mystery Novel",
+      "position": "2016",
+      "result": "winner",
+      "title": "Badlands"
+    },
+    {
+      "authors": [
+        "John Connolly"
+      ],
+      "award": "Barry Award",
+      "award_year": "2016",
+      "category": "Best Mystery Novel",
+      "position": "2016.01",
+      "result": "nominee",
+      "title": "A Song of Shadows"
+    },
+    {
+      "authors": [
+        "Owen Laukkanen"
+      ],
+      "award": "Barry Award",
+      "award_year": "2016",
+      "category": "Best Mystery Novel",
+      "position": "2016.02",
+      "result": "nominee",
+      "title": "The Stolen Ones"
+    },
+    {
+      "authors": [
+        "Michael Robotham"
+      ],
+      "award": "Barry Award",
+      "award_year": "2016",
+      "category": "Best Mystery Novel",
+      "position": "2016.03",
+      "result": "nominee",
+      "title": "Life or Death"
+    },
+    {
+      "authors": [
+        "Jeffrey Siger"
+      ],
+      "award": "Barry Award",
+      "award_year": "2016",
+      "category": "Best Mystery Novel",
+      "position": "2016.04",
+      "result": "nominee",
+      "title": "Devil of Delphi"
+    },
+    {
+      "authors": [
+        "Don Winslow"
+      ],
+      "award": "Barry Award",
+      "award_year": "2016",
+      "category": "Best Mystery Novel",
+      "position": "2016.05",
+      "result": "nominee",
+      "title": "The Cartel"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Barry Award",
+      "award_year": "2017",
+      "category": "Best Mystery Novel",
+      "position": "2017",
+      "result": "winner",
+      "title": "A Great Reckoning"
+    },
+    {
+      "authors": [
+        "Reed Farrel Coleman"
+      ],
+      "award": "Barry Award",
+      "award_year": "2017",
+      "category": "Best Mystery Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "Where It Hurts"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Barry Award",
+      "award_year": "2017",
+      "category": "Best Mystery Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "The Wrong Side of Goodbye"
+    },
+    {
+      "authors": [
+        "Steve Hamilton"
+      ],
+      "award": "Barry Award",
+      "award_year": "2017",
+      "category": "Best Mystery Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "title": "The Second Life of Nick Mason"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "Barry Award",
+      "award_year": "2017",
+      "category": "Best Mystery Novel",
+      "position": "2017.04",
+      "result": "nominee",
+      "title": "Wilde Lake"
+    },
+    {
+      "authors": [
+        "David Swinson"
+      ],
+      "award": "Barry Award",
+      "award_year": "2017",
+      "category": "Best Mystery Novel",
+      "position": "2017.05",
+      "result": "nominee",
+      "title": "The Second Girl"
+    },
+    {
+      "authors": [
+        "Karen Dionne"
+      ],
+      "award": "Barry Award",
+      "award_year": "2018",
+      "category": "Best Mystery Novel",
+      "position": "2018",
+      "result": "winner",
+      "title": "The Marsh King\u2019s Daughter"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Barry Award",
+      "award_year": "2018",
+      "category": "Best Mystery Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "The Late Show"
+    },
+    {
+      "authors": [
+        "Steve Hamilton"
+      ],
+      "award": "Barry Award",
+      "award_year": "2018",
+      "category": "Best Mystery Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "title": "Exit Strategy"
+    },
+    {
+      "authors": [
+        "Anthony Horowitz"
+      ],
+      "award": "Barry Award",
+      "award_year": "2018",
+      "category": "Best Mystery Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "title": "Magpie Murders"
+    },
+    {
+      "authors": [
+        "Philip Kerr"
+      ],
+      "award": "Barry Award",
+      "award_year": "2018",
+      "category": "Best Mystery Novel",
+      "position": "2018.04",
+      "result": "nominee",
+      "title": "Prussian Blue"
+    },
+    {
+      "authors": [
+        "Don Winslow"
+      ],
+      "award": "Barry Award",
+      "award_year": "2018",
+      "category": "Best Mystery Novel",
+      "position": "2018.05",
+      "result": "nominee",
+      "title": "The Force"
+    },
+    {
+      "authors": [
+        "Lou Berney"
+      ],
+      "award": "Barry Award",
+      "award_year": "2019",
+      "category": "Best Mystery Novel",
+      "position": "2019",
+      "result": "winner",
+      "title": "November Road"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Barry Award",
+      "award_year": "2019",
+      "category": "Best Mystery Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "title": "Dark Sacred Night"
+    },
+    {
+      "authors": [
+        "Allen Eskens"
+      ],
+      "award": "Barry Award",
+      "award_year": "2019",
+      "category": "Best Mystery Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "title": "The Shadows We Hide"
+    },
+    {
+      "authors": [
+        "Craig Johnson"
+      ],
+      "award": "Barry Award",
+      "award_year": "2019",
+      "category": "Best Mystery Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "title": "Depth of Winter"
+    },
+    {
+      "authors": [
+        "Mindy Mejia"
+      ],
+      "award": "Barry Award",
+      "award_year": "2019",
+      "category": "Best Mystery Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "title": "Leave No Trace"
+    },
+    {
+      "authors": [
+        "Abir Mukherjee"
+      ],
+      "award": "Barry Award",
+      "award_year": "2019",
+      "category": "Best Mystery Novel",
+      "position": "2019.05",
+      "result": "nominee",
+      "title": "A Necessary Evil"
+    },
+    {
+      "authors": [
+        "Jane Harper"
+      ],
+      "award": "Barry Award",
+      "award_year": "2020",
+      "category": "Best Mystery Novel",
+      "position": "2020",
+      "result": "winner",
+      "title": "The Lost Man"
+    },
+    {
+      "authors": [
+        "Steve Cavanagh"
+      ],
+      "award": "Barry Award",
+      "award_year": "2020",
+      "category": "Best Mystery Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "Th1rt3en"
+    },
+    {
+      "authors": [
+        "Steph Cha"
+      ],
+      "award": "Barry Award",
+      "award_year": "2020",
+      "category": "Best Mystery Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "Your House Will Pay"
+    },
+    {
+      "authors": [
+        "Philip Kerr"
+      ],
+      "award": "Barry Award",
+      "award_year": "2020",
+      "category": "Best Mystery Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "Metropolis"
+    },
+    {
+      "authors": [
+        "Michael Koryta"
+      ],
+      "award": "Barry Award",
+      "award_year": "2020",
+      "category": "Best Mystery Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "title": "If She Wakes"
+    },
+    {
+      "authors": [
+        "Don Winslow"
+      ],
+      "award": "Barry Award",
+      "award_year": "2020",
+      "category": "Best Mystery Novel",
+      "position": "2020.05",
+      "result": "nominee",
+      "title": "The Border"
+    },
+    {
+      "authors": [
+        "S.A. Cosby"
+      ],
+      "award": "Barry Award",
+      "award_year": "2021",
+      "category": "Best Mystery Novel",
+      "position": "2021",
+      "result": "winner",
+      "title": "Blacktop Wasteland"
+    },
+    {
+      "authors": [
+        "Harlan Coben"
+      ],
+      "award": "Barry Award",
+      "award_year": "2021",
+      "category": "Best Mystery Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "The Boy from the Woods"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Barry Award",
+      "award_year": "2021",
+      "category": "Best Mystery Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "The Law of Innocence"
+    },
+    {
+      "authors": [
+        "Rachel Howzell Hall"
+      ],
+      "award": "Barry Award",
+      "award_year": "2021",
+      "category": "Best Mystery Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "And Now She\u2019s Gone"
+    },
+    {
+      "authors": [
+        "Anthony Horowitz"
+      ],
+      "award": "Barry Award",
+      "award_year": "2021",
+      "category": "Best Mystery Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "Moonflower Murders"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Barry Award",
+      "award_year": "2021",
+      "category": "Best Mystery Novel",
+      "position": "2021.05",
+      "result": "nominee",
+      "title": "All the Devils Are Here"
+    },
+    {
+      "authors": [
+        "S.A. Cosby"
+      ],
+      "award": "Barry Award",
+      "award_year": "2022",
+      "category": "Best Mystery Novel",
+      "position": "2022",
+      "result": "winner",
+      "title": "Razorblade Tears"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Barry Award",
+      "award_year": "2022",
+      "category": "Best Mystery Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "The Dark Hours"
+    },
+    {
+      "authors": [
+        "Matt Coyle"
+      ],
+      "award": "Barry Award",
+      "award_year": "2022",
+      "category": "Best Mystery Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "Last Redemption"
+    },
+    {
+      "authors": [
+        "Naomi Hirahara"
+      ],
+      "award": "Barry Award",
+      "award_year": "2022",
+      "category": "Best Mystery Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "Clark and Division"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Barry Award",
+      "award_year": "2022",
+      "category": "Best Mystery Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "Billy Summers"
+    },
+    {
+      "authors": [
+        "Chris Whitaker"
+      ],
+      "award": "Barry Award",
+      "award_year": "2022",
+      "category": "Best Mystery Novel",
+      "position": "2022.05",
+      "result": "nominee",
+      "title": "We Begin at the End"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Barry Award",
+      "award_year": "2023",
+      "category": "Best Mystery Novel",
+      "position": "2023",
+      "result": "winner",
+      "title": "Desert Star"
+    },
+    {
+      "authors": [
+        "Steve Cavanag h"
+      ],
+      "award": "Barry Award",
+      "award_year": "2023",
+      "category": "Best Mystery Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "title": "The Accomplice"
+    },
+    {
+      "authors": [
+        "Deon Meyer"
+      ],
+      "award": "Barry Award",
+      "award_year": "2023",
+      "category": "Best Mystery Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "title": "The Dark Flood"
+    },
+    {
+      "authors": [
+        "Chris Offutt"
+      ],
+      "award": "Barry Award",
+      "award_year": "2023",
+      "category": "Best Mystery Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "title": "Shifty\u2019s Boys"
+    },
+    {
+      "authors": [
+        "Alex Segura"
+      ],
+      "award": "Barry Award",
+      "award_year": "2023",
+      "category": "Best Mystery Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "title": "Secret Identity"
+    },
+    {
+      "authors": [
+        "Don Winslow"
+      ],
+      "award": "Barry Award",
+      "award_year": "2023",
+      "category": "Best Mystery Novel",
+      "position": "2023.05",
+      "result": "nominee",
+      "title": "City on Fire"
+    },
+    {
+      "authors": [
+        "Dennis Lehane"
+      ],
+      "award": "Barry Award",
+      "award_year": "2024",
+      "category": "Best Mystery Novel",
+      "position": "2024",
+      "result": "winner",
+      "title": "Small Mercies"
+    },
+    {
+      "authors": [
+        "Lou Berney"
+      ],
+      "award": "Barry Award",
+      "award_year": "2024",
+      "category": "Best Mystery Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "Dark Ride"
+    },
+    {
+      "authors": [
+        "S.A. Cosby"
+      ],
+      "award": "Barry Award",
+      "award_year": "2024",
+      "category": "Best Mystery Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "All the Sinners Bleed"
+    },
+    {
+      "authors": [
+        "Eli Cranor"
+      ],
+      "award": "Barry Award",
+      "award_year": "2024",
+      "category": "Best Mystery Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "Ozark Dogs"
+    },
+    {
+      "authors": [
+        "Jordan Harper"
+      ],
+      "award": "Barry Award",
+      "award_year": "2024",
+      "category": "Best Mystery Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "title": "Everybody Knows"
+    },
+    {
+      "authors": [
+        "Adrian McKinty"
+      ],
+      "award": "Barry Award",
+      "award_year": "2024",
+      "category": "Best Mystery Novel",
+      "position": "2024.05",
+      "result": "nominee",
+      "title": "The Detective Up Late"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Barry Award",
+      "award_year": "2025",
+      "category": "Best Mystery Novel",
+      "position": "2025",
+      "result": "winner",
+      "title": "The Waiting"
+    },
+    {
+      "authors": [
+        "William Kent Krueger"
+      ],
+      "award": "Barry Award",
+      "award_year": "2025",
+      "category": "Best Mystery Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "Spirit Crossing"
+    },
+    {
+      "authors": [
+        "Liz Moore"
+      ],
+      "award": "Barry Award",
+      "award_year": "2025",
+      "category": "Best Mystery Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "The God of the Woods"
+    },
+    {
+      "authors": [
+        "Ian Rankin"
+      ],
+      "award": "Barry Award",
+      "award_year": "2025",
+      "category": "Best Mystery Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "Midnight and Blue"
+    },
+    {
+      "authors": [
+        "Duane Swierczynski"
+      ],
+      "award": "Barry Award",
+      "award_year": "2025",
+      "category": "Best Mystery Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "California Bear"
+    },
+    {
+      "authors": [
+        "Chris Whitaker"
+      ],
+      "award": "Barry Award",
+      "award_year": "2025",
+      "category": "Best Mystery Novel",
+      "position": "2025.05",
+      "result": "nominee",
+      "title": "All the Colors of the Dark"
+    },
+    {
+      "authors": [
+        "Belinda Bauer"
+      ],
+      "award": "Barry Award",
+      "award_year": "2026",
+      "category": "Best Mystery Novel",
+      "position": "2026.01",
+      "result": "nominee",
+      "title": "The Impossible Thing"
+    },
+    {
+      "authors": [
+        "Lou Berney"
+      ],
+      "award": "Barry Award",
+      "award_year": "2026",
+      "category": "Best Mystery Novel",
+      "position": "2026.02",
+      "result": "nominee",
+      "title": "Crooks"
+    },
+    {
+      "authors": [
+        "S.A. Cosby"
+      ],
+      "award": "Barry Award",
+      "award_year": "2026",
+      "category": "Best Mystery Novel",
+      "position": "2026.03",
+      "result": "nominee",
+      "title": "King of Ashes"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Barry Award",
+      "award_year": "2026",
+      "category": "Best Mystery Novel",
+      "position": "2026.04",
+      "result": "nominee",
+      "title": "The Black Wolf"
+    },
+    {
+      "authors": [
+        "Michael Robotham"
+      ],
+      "award": "Barry Award",
+      "award_year": "2026",
+      "category": "Best Mystery Novel",
+      "position": "2026.05",
+      "result": "nominee",
+      "title": "The White Crow"
+    },
+    {
+      "authors": [
+        "Scott Turow"
+      ],
+      "award": "Barry Award",
+      "award_year": "2026",
+      "category": "Best Mystery Novel",
+      "position": "2026.06",
+      "result": "nominee",
+      "title": "Presumed Guilty"
+    }
+  ],
+  "fetched_at": "2026-07-18T02:36:54Z",
+  "list_id": "barry_award_mystery_novel",
+  "list_name": "Barry Award - Mystery Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "barry_award_mystery_novel",
+  "schema_version": 2,
+  "source": {
+    "name": "Barry Award - Mystery Novel",
+    "source_id": "barry_award_mystery_novel",
+    "url": "https://www.stopyourekillingme.com/Awards/Barry_Awards.html"
+  }
+}

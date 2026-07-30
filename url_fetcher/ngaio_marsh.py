@@ -17,7 +17,7 @@ except ImportError:
   from parser.source_fallback import SourceAttempt, SourceFallbackRunner
 
 
-NGAIO_URL = 'https://www.librarything.com/award/5348.0.2427/Ngaio-Marsh-Award-First-Novel'
+NGAIO_URL = 'https://www.librarything.com/award/5348/Ngaio-Marsh-Award'
 NGAIO_WIKI_URL = 'https://en.wikipedia.org/wiki/Ngaio_Marsh_Awards'
 
 
@@ -27,7 +27,8 @@ class UrlFetcherNgaioMarshAward(UrlFetcherGeneric):
   FETCH_URLS = ()
   order = 236
   options = {'match_series': False}
-  URL = NGAIO_URL
+  URL = NGAIO_WIKI_URL
+  LIBRARYTHING_URL = NGAIO_URL
   WIKIPEDIA_URL = NGAIO_WIKI_URL
   CATEGORY = ''
   CATEGORY_ALIASES = ()
@@ -42,15 +43,15 @@ class UrlFetcherNgaioMarshAward(UrlFetcherGeneric):
       from parser.ngaio_marsh import NgaioMarshLibraryThingParser, NgaioMarshWikipediaParser
     return (
       SourceAttempt(
-        'LibraryThing',
+        'Wikipedia',
         self.URL,
-        lambda html, url, **_kwargs: NgaioMarshLibraryThingParser().parse(
+        lambda html, url, **_kwargs: NgaioMarshWikipediaParser().parse(
           html, url, self.NAME, self.CATEGORY, self.CATEGORY_ALIASES),
         source_rank=0),
       SourceAttempt(
-        'Wikipedia',
-        self.WIKIPEDIA_URL,
-        lambda html, url, **_kwargs: NgaioMarshWikipediaParser().parse(
+        'LibraryThing',
+        self.LIBRARYTHING_URL,
+        lambda html, url, **_kwargs: NgaioMarshLibraryThingParser().parse(
           html, url, self.NAME, self.CATEGORY, self.CATEGORY_ALIASES),
         source_rank=1),
     )
@@ -105,4 +106,4 @@ class UrlFetcherNgaioMarshYoungerReaders(UrlFetcherNgaioMarshAward):
     CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
   )
   CATEGORY = 'Younger Readers'
-  CATEGORY_ALIASES = ('Kids / YA',)
+  CATEGORY_ALIASES = ('Kids / YA', 'Younger Readers Novel')

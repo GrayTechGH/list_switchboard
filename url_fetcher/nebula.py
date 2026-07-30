@@ -206,8 +206,20 @@ class UrlFetcherNebulaAndreNorton(UrlFetcherNebulaSFADBCategory):
       progress=progress)
 
 
-class UrlFetcherNebulaAwardsComics(UrlFetcherNebulaSFADBCategory):
+class UrlFetcherNebulaAwardsComics(UrlFetcherNebulaAwardsNovel):
   source_id = 'nebula_awards_comics'
   NAME = 'Nebula Awards - Comics'
-  CATEGORY = 'Best Comics'
-  CATEGORY_ALIASES = ('best comics', 'comics')
+  URL = 'https://nebulas.sfwa.org/award/best-comic/'
+  FETCH_URLS = (URL,)
+  SFADB_URL = 'https://www.sfadb.com/Nebula_Awards'
+  order = 61
+
+  def create_parser(self):
+    try:
+      from calibre_plugins.list_switchboard.parser.nebula import (
+        NebulaAwardsComicsParser,
+      )
+    except ImportError:
+      from parser.nebula import NebulaAwardsComicsParser
+
+    return NebulaAwardsComicsParser()

@@ -20,13 +20,15 @@ from bs4 import BeautifulSoup
 try:
   from calibre_plugins.list_switchboard.parser.award_base import ( # type: ignore
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
-    normalize_heading, normalize_line, strip_publication_notes,
+    is_author_suffix, normalize_heading, normalize_line,
+    strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key # pyright: ignore[reportMissingImports]
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
-    normalize_heading, normalize_line, strip_publication_notes,
+    is_author_suffix, normalize_heading, normalize_line,
+    strip_publication_notes,
   )
   from .generic import position_sort_key
 
@@ -114,7 +116,10 @@ class AustralianRomanceReadersAwardsParser(AwardParserBase):
 
   def parse_year_page(self, html, source_url):
     soup = BeautifulSoup(html or '', 'html.parser')
-    year = self.page_year(html) or self.year_from_text(source_url)
+    # REST-rendered pages begin with a persistent 2016 image URL. The yearly
+    # page URL is the authoritative award year; text is only a direct-page
+    # fallback for callers without a dated URL.
+    year = self.year_from_text(source_url) or self.page_year(html)
     if year is None:
       return []
     rows = []
@@ -278,16 +283,20 @@ class AustralianRomanceReadersAwardsParser(AwardParserBase):
       re.I)
     if story_match is not None:
       title = self.clean_title(story_match.group(1))
-      author = self.clean_author(story_match.group(2))
-      return (title, author) if title and author else None
-    match = re.match(r'^(.+?)\s+by\s+(.+)$', value, re.I)
+      authors = self.clean_authors(story_match.group(2))
+      return (title, authors) if title and authors else None
+    match = re.match(r'^(.+)\s+[\u2013\u2014]\s+(.+)$', value)
+    if match is None:
+      # Some legitimate titles contain "by". A greedy title capture makes the
+      # final credit marker authoritative instead of splitting at the first.
+      match = re.match(r'^(.+)\s+by\s+(.+)$', value, re.I)
     if match is None:
       return None
     title = self.clean_title(match.group(1))
-    author = self.clean_author(match.group(2))
-    if not title or not author:
+    authors = self.clean_authors(match.group(2))
+    if not title or not authors:
       return None
-    return title, author
+    return title, authors
 
   def clean_row_text(self, value):
     value = normalize_line(value)
@@ -345,11 +354,11 @@ class AustralianRomanceReadersAwardsParser(AwardParserBase):
       for row in rows:
         row['result'] = RESULT_WINNER
 
-  def row(self, year, title, author, category, result, source_url, source_order):
+  def row(self, year, title, authors, category, result, source_url, source_order):
     return {
       'award_year': str(year),
       'title': title,
-      'author': author,
+      'authors': authors,
       'result': result,
       'source_url': source_url,
       'category': self.clean_category(category),
@@ -373,6 +382,32 @@ class AustralianRomanceReadersAwardsParser(AwardParserBase):
     value = re.sub(r'\s+in\s+.+$', '', value, flags=re.I)
     return value.strip(' "\'\u2018\u2019\u201c\u201d,:')
 
+  def clean_authors(self, value):
+    """
+    Split only the structurally bounded ARRA author credit.
+
+    Commas and explicit connectors separate contributors on these yearly
+    pages. Suffixes stay attached, while ``et al.`` is discarded because the
+    source does not identify the additional contributors.
+    """
+    credit = re.sub(
+      r'(?:,\s*|\s+)et\s+al\.?$',
+      '',
+      self.clean_author(value),
+      flags=re.I).strip()
+    parts = [
+      part.strip()
+      for part in re.split(r'\s*,\s*|\s+(?:and|with|&)\s+', credit, flags=re.I)
+      if part.strip()
+    ]
+    authors = []
+    for part in parts:
+      if authors and is_author_suffix(part):
+        authors[-1] = f'{authors[-1]}, {part}'
+      elif part not in authors:
+        authors.append(part)
+    return authors
+
   def page_year(self, value):
     return self.year_from_text(value)
 
@@ -388,7 +423,7 @@ class AustralianRomanceReadersAwardsParser(AwardParserBase):
         row['award_year'],
         normalize_heading(row['category']),
         normalize_heading(row['title']),
-        normalize_heading(row['author']),
+        tuple(normalize_heading(author) for author in row['authors']),
       )
       existing_index = index_by_key.get(key)
       if existing_index is None:

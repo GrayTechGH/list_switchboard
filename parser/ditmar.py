@@ -9,8 +9,9 @@ Maintenance notes:
 - The import recipes intentionally keep to bookish categories: Novel,
   Novella/Novelette, and Collected Work.
 - Older Ditmar category labels varied heavily, so fetchers own conservative
-  aliases for book-shaped historical labels instead of treating every early
-  "Australian SF" category as a novel.
+  aliases for book-shaped historical labels. The mixed-length `Australian SF`
+  category before 1979 and `Australian Fiction` through 1979 are year-bounded
+  to the Novella/Novelette recipe rather than treated as Novel aliases.
 """
 
 import re
@@ -29,6 +30,7 @@ CATEGORY_BOUNDARIES = frozenset({
   'novel', 'best novel', 'australian novel', 'australian sf novel',
   'australian sf or fantasy novel', 'australian long fiction',
   'australian long sf or fantasy', 'long fiction',
+  'australian fiction', 'australian sf',
   'novella', 'novelette', 'novella or novelette',
   'short story', 'short fiction', 'australian short fiction',
   'collected work', 'australian collected work', 'collection', 'anthology',
@@ -69,6 +71,15 @@ class DitmarParser(StandardItemMixin, SFADBParser):
   AWARD_NAME = AWARD_NAME
   YEAR_PAGE_URL = YEAR_PAGE_URL
   CATEGORY_BOUNDARIES = CATEGORY_BOUNDARIES
+
+  def parse_year(self, html, source_url, year, category, category_aliases):
+    aliases = tuple(category_aliases)
+    if category == 'Novella Or Novelette':
+      if year <= 1979:
+        aliases += ('australian fiction',)
+      if year < 1979:
+        aliases += ('australian sf',)
+    return super().parse_year(html, source_url, year, category, aliases)
 
 
 def parse_ditmar_awards(

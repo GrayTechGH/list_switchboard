@@ -1,0 +1,5268 @@
+{
+  "append_state": {
+    "entry_count": 359,
+    "last_entry_key": "history lessons|zoe b wallbrook",
+    "last_position": "2026.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Julius Fast"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1946",
+      "category": "Best First Novel",
+      "position": "1946",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Watchful at Night"
+    },
+    {
+      "authors": [
+        "Helen Eustis"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1947",
+      "category": "Best First Novel",
+      "position": "1947",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The Horizontal Man"
+    },
+    {
+      "authors": [
+        "Fredric Brown"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1948",
+      "category": "Best First Novel",
+      "position": "1948",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The Fabulous Clipjoint"
+    },
+    {
+      "authors": [
+        "Mildred Davis"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1949",
+      "category": "Best First Novel",
+      "position": "1949",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The Room Upstairs"
+    },
+    {
+      "authors": [
+        "Richard Ellington"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1949",
+      "category": "Best First Novel",
+      "position": "1949.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Shoot the Works"
+    },
+    {
+      "authors": [
+        "Herbert Brean"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1949",
+      "category": "Best First Novel",
+      "position": "1949.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Wilders Walk Away"
+    },
+    {
+      "authors": [
+        "Alan Green"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1950",
+      "category": "Best First Novel",
+      "position": "1950",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "What A Body"
+    },
+    {
+      "authors": [
+        "Bart Spicer"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1950",
+      "category": "Best First Novel",
+      "position": "1950.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The Dark Light"
+    },
+    {
+      "authors": [
+        "Geoffrey Holiday Hall"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1950",
+      "category": "Best First Novel",
+      "position": "1950.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The End is Known"
+    },
+    {
+      "authors": [
+        "Evelyn Piper"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1950",
+      "category": "Best First Novel",
+      "position": "1950.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The Innocent"
+    },
+    {
+      "authors": [
+        "G.G. Lobell",
+        "N.D. Lobell"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1950",
+      "category": "Best First Novel",
+      "position": "1950.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The Shadow and the Blot"
+    },
+    {
+      "authors": [
+        "William Krasner"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1950",
+      "category": "Best First Novel",
+      "position": "1950.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Walk the Dark Streets"
+    },
+    {
+      "authors": [
+        "Thomas Walsh"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1951",
+      "category": "Best First Novel",
+      "position": "1951",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Nightmare in Manhattan"
+    },
+    {
+      "authors": [
+        "Thaddeus O'Finn"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1951",
+      "category": "Best First Novel",
+      "position": "1951.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Happy Holiday!"
+    },
+    {
+      "authors": [
+        "Patricia Highsmith"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1951",
+      "category": "Best First Novel",
+      "position": "1951.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Strangers on a Train"
+    },
+    {
+      "authors": [
+        "Thomas Sterling"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1951",
+      "category": "Best First Novel",
+      "position": "1951.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The House Without a Door"
+    },
+    {
+      "authors": [
+        "Mary McMullen"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1952",
+      "category": "Best First Novel",
+      "position": "1952",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Strangle Hold"
+    },
+    {
+      "authors": [
+        "Lee Herrington"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1952",
+      "category": "Best First Novel",
+      "position": "1952.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Carry My Coffin Slowly"
+    },
+    {
+      "authors": [
+        "Thurston Scott"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1952",
+      "category": "Best First Novel",
+      "position": "1952.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Cure it with Honey"
+    },
+    {
+      "authors": [
+        "David William Meredith"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1952",
+      "category": "Best First Novel",
+      "position": "1952.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The Christmas Card Murders"
+    },
+    {
+      "authors": [
+        "Robert B. Sinclair"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1952",
+      "category": "Best First Novel",
+      "position": "1952.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The Eleventh Hour"
+    },
+    {
+      "authors": [
+        "William Campbell Gault"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1953",
+      "category": "Best First Novel",
+      "position": "1953",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Don't Cry for Me"
+    },
+    {
+      "authors": [
+        "Peggy Bacon"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1953",
+      "category": "Best First Novel",
+      "position": "1953.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The Inward Eye"
+    },
+    {
+      "authors": [
+        "Ira Levin"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1954",
+      "category": "Best First Novel",
+      "position": "1954",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "A Kiss Before Dying"
+    },
+    {
+      "authors": [
+        "Jean Potts"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1955",
+      "category": "Best First Novel",
+      "position": "1955",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Go, Lovely Rose"
+    },
+    {
+      "authors": [
+        "Lane Kauffman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1956",
+      "category": "Best First Novel",
+      "position": "1956",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The Perfectionist"
+    },
+    {
+      "authors": [
+        "Harold R. Daniels"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1956",
+      "category": "Best First Novel",
+      "position": "1956.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "In His Blood"
+    },
+    {
+      "authors": [
+        "Fred Levon"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1956",
+      "category": "Best First Novel",
+      "position": "1956.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Much Ado About Murder"
+    },
+    {
+      "authors": [
+        "Donald McNutt Douglass"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1957",
+      "category": "Best First Novel",
+      "position": "1957",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Rebecca's Pride"
+    },
+    {
+      "authors": [
+        "William Rawle Weeks"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1958",
+      "category": "Best First Novel",
+      "position": "1958",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Knock and Wait a While"
+    },
+    {
+      "authors": [
+        "James Cross"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1958",
+      "category": "Best First Novel",
+      "position": "1958.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Root of Evil"
+    },
+    {
+      "authors": [
+        "Warren Carrier"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1958",
+      "category": "Best First Novel",
+      "position": "1958.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Bay of the Damned"
+    },
+    {
+      "authors": [
+        "Richard Martin Stern"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1959",
+      "category": "Best First Novel",
+      "position": "1959",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The Bright Road to Fear"
+    },
+    {
+      "authors": [
+        "Frances Duncombe"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1959",
+      "category": "Best First Novel",
+      "position": "1959.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Death of a Spinster"
+    },
+    {
+      "authors": [
+        "Harry Olesker"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1959",
+      "category": "Best First Novel",
+      "position": "1959.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Now Will You Try for Murder?"
+    },
+    {
+      "authors": [
+        "Edgar J. Bohle"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1959",
+      "category": "Best First Novel",
+      "position": "1959.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The Man Who Disappeared"
+    },
+    {
+      "authors": [
+        "Henry Slesar"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1960",
+      "category": "Best First Novel",
+      "position": "1960",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The Grey Flannel Shroud"
+    },
+    {
+      "authors": [
+        "Mary O. Rank"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1960",
+      "category": "Best First Novel",
+      "position": "1960.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "A Dream of Falling"
+    },
+    {
+      "authors": [
+        "John Holbrooke Vance"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1961",
+      "category": "Best First Novel",
+      "position": "1961",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The Man in the Cage"
+    },
+    {
+      "authors": [
+        "Dell Shannon"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1961",
+      "category": "Best First Novel",
+      "position": "1961.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Case Pending"
+    },
+    {
+      "authors": [
+        "David McCarthy"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1961",
+      "category": "Best First Novel",
+      "position": "1961.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The Killing at Big Tree"
+    },
+    {
+      "authors": [
+        "William Johnston"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1961",
+      "category": "Best First Novel",
+      "position": "1961.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The Marriage Cage"
+    },
+    {
+      "authors": [
+        "Donald E. Westlake"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1961",
+      "category": "Best First Novel",
+      "position": "1961.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The Mercenaries"
+    },
+    {
+      "authors": [
+        "Suzanne Blanc"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1962",
+      "category": "Best First Novel",
+      "position": "1962",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The Green Stone"
+    },
+    {
+      "authors": [
+        "Olivia Dwight"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1962",
+      "category": "Best First Novel",
+      "position": "1962.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Close His Eyes"
+    },
+    {
+      "authors": [
+        "Malcolm Braly"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1962",
+      "category": "Best First Novel",
+      "position": "1962.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Felony Tank"
+    },
+    {
+      "authors": [
+        "Breni James"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1962",
+      "category": "Best First Novel",
+      "position": "1962.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Night of the Kill"
+    },
+    {
+      "authors": [
+        "Winfred Van Atta"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1962",
+      "category": "Best First Novel",
+      "position": "1962.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Shock Treatment"
+    },
+    {
+      "authors": [
+        "Alex Gordons"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1962",
+      "category": "Best First Novel",
+      "position": "1962.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The Cipher"
+    },
+    {
+      "authors": [
+        "Robert L. Fish"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1963",
+      "category": "Best First Novel",
+      "position": "1963",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The Fugitive"
+    },
+    {
+      "authors": [
+        "Daniel Broun"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1963",
+      "category": "Best First Novel",
+      "position": "1963.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Counterweight"
+    },
+    {
+      "authors": [
+        "Richard Unekis"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1963",
+      "category": "Best First Novel",
+      "position": "1963.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The Chase"
+    },
+    {
+      "authors": [
+        "Cornelius Hirschberg"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1964",
+      "category": "Best First Novel",
+      "position": "1964",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Florentine Finish"
+    },
+    {
+      "authors": [
+        "H. Fagyas"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1964",
+      "category": "Best First Novel",
+      "position": "1964.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The Fifth Woman"
+    },
+    {
+      "authors": [
+        "James M. Ullman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1964",
+      "category": "Best First Novel",
+      "position": "1964.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The Neon Haystack"
+    },
+    {
+      "authors": [
+        "Frances Rickett"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1964",
+      "category": "Best First Novel",
+      "position": "1964.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The Prowler"
+    },
+    {
+      "authors": [
+        "Harry Kemelman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1965",
+      "category": "Best First Novel",
+      "position": "1965",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "Friday the Rabbi Slept Late"
+    },
+    {
+      "authors": [
+        "Amanda Cross"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1965",
+      "category": "Best First Novel",
+      "position": "1965.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "In the Last Analysis"
+    },
+    {
+      "authors": [
+        "Rubin Weber"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1965",
+      "category": "Best First Novel",
+      "position": "1965.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=4"
+      },
+      "title": "The Gravemaker's House"
+    },
+    {
+      "authors": [
+        "John Ball"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1966",
+      "category": "Best First Novel",
+      "position": "1966",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "In The Heat of the Night"
+    },
+    {
+      "authors": [
+        "Alexandra Roudybush"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1966",
+      "category": "Best First Novel",
+      "position": "1966.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Before the Ball Was Over"
+    },
+    {
+      "authors": [
+        "Jack D. Hunter"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1966",
+      "category": "Best First Novel",
+      "position": "1966.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Expendable Spy"
+    },
+    {
+      "authors": [
+        "Vincent McConner"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1966",
+      "category": "Best First Novel",
+      "position": "1966.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The French Doll"
+    },
+    {
+      "authors": [
+        "Ross Thomas"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1967",
+      "category": "Best First Novel",
+      "position": "1967",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Cold War Swap"
+    },
+    {
+      "authors": [
+        "Robert S. Elegant"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1967",
+      "category": "Best First Novel",
+      "position": "1967.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "A Kind of Treason"
+    },
+    {
+      "authors": [
+        "Babs Deal"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1967",
+      "category": "Best First Novel",
+      "position": "1967.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Fancy's Knell"
+    },
+    {
+      "authors": [
+        "George Lanning"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1967",
+      "category": "Best First Novel",
+      "position": "1967.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Pedestal"
+    },
+    {
+      "authors": [
+        "Michael Collins"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1968",
+      "category": "Best First Novel",
+      "position": "1968",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Act of Fear"
+    },
+    {
+      "authors": [
+        "James Dawson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1968",
+      "category": "Best First Novel",
+      "position": "1968.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Hell Gate"
+    },
+    {
+      "authors": [
+        "P.E.H. Dunston"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1968",
+      "category": "Best First Novel",
+      "position": "1968.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Mortissimo"
+    },
+    {
+      "authors": [
+        "John Redgate"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1968",
+      "category": "Best First Novel",
+      "position": "1968.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Killing Season"
+    },
+    {
+      "authors": [
+        "Charles Early"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1968",
+      "category": "Best First Novel",
+      "position": "1968.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Tigers Are Hungry"
+    },
+    {
+      "authors": [
+        "Dorothy Uhnak"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1969",
+      "category": "Best First Novel",
+      "position": "1969",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Bait"
+    },
+    {
+      "authors": [
+        "E. Richard Johnson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1969",
+      "category": "Best First Novel",
+      "position": "1969.01",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Silver Street"
+    },
+    {
+      "authors": [
+        "Lawrence Kamarck"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1969",
+      "category": "Best First Novel",
+      "position": "1969.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Dinosaur"
+    },
+    {
+      "authors": [
+        "Joe Gores"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1970",
+      "category": "Best First Novel",
+      "position": "1970",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "A Time for Predators"
+    },
+    {
+      "authors": [
+        "Myrick Land"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1970",
+      "category": "Best First Novel",
+      "position": "1970.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Quicksand"
+    },
+    {
+      "authors": [
+        "Naomi Hintze"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1970",
+      "category": "Best First Novel",
+      "position": "1970.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "You'll Like My Mother"
+    },
+    {
+      "authors": [
+        "Lawrence Sanders"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1971",
+      "category": "Best First Novel",
+      "position": "1971",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Anderson Tapes"
+    },
+    {
+      "authors": [
+        "J.E. Brown"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1971",
+      "category": "Best First Novel",
+      "position": "1971.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Incident at 125th Street"
+    },
+    {
+      "authors": [
+        "Stanley Cohen"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1971",
+      "category": "Best First Novel",
+      "position": "1971.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Taking Gary Feldman"
+    },
+    {
+      "authors": [
+        "Tony Hillerman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1971",
+      "category": "Best First Novel",
+      "position": "1971.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Blessing Way"
+    },
+    {
+      "authors": [
+        "Sidney Sheldon"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1971",
+      "category": "Best First Novel",
+      "position": "1971.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Naked Face"
+    },
+    {
+      "authors": [
+        "A.H.Z. Carr"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1972",
+      "category": "Best First Novel",
+      "position": "1972",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Finding Maubee"
+    },
+    {
+      "authors": [
+        "Michael Lewin"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1972",
+      "category": "Best First Novel",
+      "position": "1972.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Ask the Right Question"
+    },
+    {
+      "authors": [
+        "Martin Cruz Smith"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1972",
+      "category": "Best First Novel",
+      "position": "1972.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Gypsy in Amber"
+    },
+    {
+      "authors": [
+        "Bill Pronzini"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1972",
+      "category": "Best First Novel",
+      "position": "1972.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Stalker"
+    },
+    {
+      "authors": [
+        "Hildegarde Dolson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1972",
+      "category": "Best First Novel",
+      "position": "1972.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "To Spite Her Face"
+    },
+    {
+      "authors": [
+        "R.H. Shimer"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1973",
+      "category": "Best First Novel",
+      "position": "1973",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Squaw Point"
+    },
+    {
+      "authors": [
+        "Arthur Goldstein"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1973",
+      "category": "Best First Novel",
+      "position": "1973.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "A Person Shouldn't Die Like That"
+    },
+    {
+      "authors": [
+        "Frank Leonard"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1973",
+      "category": "Best First Novel",
+      "position": "1973.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Box 100"
+    },
+    {
+      "authors": [
+        "William H. Hallahan"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1973",
+      "category": "Best First Novel",
+      "position": "1973.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Dead of Winter"
+    },
+    {
+      "authors": [
+        "Thomas A. Roberts"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1973",
+      "category": "Best First Novel",
+      "position": "1973.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Heart of the Dog"
+    },
+    {
+      "authors": [
+        "Paul E. Erdman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1974",
+      "category": "Best First Novel",
+      "position": "1974",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Billion Dollar Sure Thing"
+    },
+    {
+      "authors": [
+        "Clarence Jackson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1974",
+      "category": "Best First Novel",
+      "position": "1974.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Kicked to Death by a Camel"
+    },
+    {
+      "authors": [
+        "Michael Wolfe"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1974",
+      "category": "Best First Novel",
+      "position": "1974.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Man on a String"
+    },
+    {
+      "authors": [
+        "Justin Scott"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1974",
+      "category": "Best First Novel",
+      "position": "1974.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Many Happy Returns"
+    },
+    {
+      "authors": [
+        "Charles Larson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1974",
+      "category": "Best First Novel",
+      "position": "1974.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Someone's Death"
+    },
+    {
+      "authors": [
+        "Gregory McDonald"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1975",
+      "category": "Best First Novel",
+      "position": "1975",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Fletch"
+    },
+    {
+      "authors": [
+        "Brown Meggs"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1975",
+      "category": "Best First Novel",
+      "position": "1975.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Saturday Games"
+    },
+    {
+      "authors": [
+        "Nicholas Meyer"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1975",
+      "category": "Best First Novel",
+      "position": "1975.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Target Practice"
+    },
+    {
+      "authors": [
+        "Vern E. Smith"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1975",
+      "category": "Best First Novel",
+      "position": "1975.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Jones Men"
+    },
+    {
+      "authors": [
+        "Dominic Koski",
+        "Virgil Scott"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1975",
+      "category": "Best First Novel",
+      "position": "1975.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Kreutzman Formula"
+    },
+    {
+      "authors": [
+        "Rex Burns"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1976",
+      "category": "Best First Novel",
+      "position": "1976",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Alvarez Journal"
+    },
+    {
+      "authors": [
+        "Thomas Klop"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1976",
+      "category": "Best First Novel",
+      "position": "1976.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Harmattan"
+    },
+    {
+      "authors": [
+        "Lynn Meyer"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1976",
+      "category": "Best First Novel",
+      "position": "1976.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Paperback Thriller"
+    },
+    {
+      "authors": [
+        "A.J. Russell"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1976",
+      "category": "Best First Novel",
+      "position": "1976.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Devalino Caper"
+    },
+    {
+      "authors": [
+        "Max Crawford"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1976",
+      "category": "Best First Novel",
+      "position": "1976.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Waltz Across Texas"
+    },
+    {
+      "authors": [
+        "James Patterson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1977",
+      "category": "Best First Novel",
+      "position": "1977",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Thomas Berryman Number"
+    },
+    {
+      "authors": [
+        "Marie R. Reno"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1977",
+      "category": "Best First Novel",
+      "position": "1977.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Final Proof"
+    },
+    {
+      "authors": [
+        "Steve Knickmeyer"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1977",
+      "category": "Best First Novel",
+      "position": "1977.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Straight"
+    },
+    {
+      "authors": [
+        "Janice Law"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1977",
+      "category": "Best First Novel",
+      "position": "1977.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Big Pay-Off"
+    },
+    {
+      "authors": [
+        "Alan Furst"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1977",
+      "category": "Best First Novel",
+      "position": "1977.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Your Day in the Barrel"
+    },
+    {
+      "authors": [
+        "Robert Ross"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1978",
+      "category": "Best First Novel",
+      "position": "1978",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "A French Finish"
+    },
+    {
+      "authors": [
+        "Charles A. Goodrum"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1978",
+      "category": "Best First Novel",
+      "position": "1978.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Dewey Decimated"
+    },
+    {
+      "authors": [
+        "Bob Randall"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1978",
+      "category": "Best First Novel",
+      "position": "1978.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Fan"
+    },
+    {
+      "authors": [
+        "William L. DeAndrea"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1979",
+      "category": "Best First Novel",
+      "position": "1979",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Killed in the Ratings"
+    },
+    {
+      "authors": [
+        "Craig Jones"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1979",
+      "category": "Best First Novel",
+      "position": "1979.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Blood Secrets"
+    },
+    {
+      "authors": [
+        "William Hjortsberg"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1979",
+      "category": "Best First Novel",
+      "position": "1979.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Falling Angel"
+    },
+    {
+      "authors": [
+        "Donald A. Stanwood"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1979",
+      "category": "Best First Novel",
+      "position": "1979.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Memory of Eva Ryker"
+    },
+    {
+      "authors": [
+        "Thomas L. Dunne"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1979",
+      "category": "Best First Novel",
+      "position": "1979.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Scourge"
+    },
+    {
+      "authors": [
+        "Richard North Patterson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1980",
+      "category": "Best First Novel",
+      "position": "1980",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Lasko Tangent"
+    },
+    {
+      "authors": [
+        "John Logue"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1980",
+      "category": "Best First Novel",
+      "position": "1980.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Follow the Leader"
+    },
+    {
+      "authors": [
+        "Peter Heath Fine"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1980",
+      "category": "Best First Novel",
+      "position": "1980.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Night Trains"
+    },
+    {
+      "authors": [
+        "K. Nolte Smith"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1981",
+      "category": "Best First Novel",
+      "position": "1981",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Watcher"
+    },
+    {
+      "authors": [
+        "David Carkeet"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1981",
+      "category": "Best First Novel",
+      "position": "1981.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Double Negative"
+    },
+    {
+      "authors": [
+        "Susanne Jaffe"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1981",
+      "category": "Best First Novel",
+      "position": "1981.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Other Ann Fletcher"
+    },
+    {
+      "authors": [
+        "Oliver Banks"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1981",
+      "category": "Best First Novel",
+      "position": "1981.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Rembrandt Panel"
+    },
+    {
+      "authors": [
+        "Betsy Aswald"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1981",
+      "category": "Best First Novel",
+      "position": "1981.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Winds of the Old Days"
+    },
+    {
+      "authors": [
+        "Stuart Woods"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1982",
+      "category": "Best First Novel",
+      "position": "1982",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Chiefs"
+    },
+    {
+      "authors": [
+        "Vernon Tom Hyman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1982",
+      "category": "Best First Novel",
+      "position": "1982.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Giant Killer"
+    },
+    {
+      "authors": [
+        "Anthony Olcott"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1982",
+      "category": "Best First Novel",
+      "position": "1982.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Murder at the Red October"
+    },
+    {
+      "authors": [
+        "Ernest Larsen"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1982",
+      "category": "Best First Novel",
+      "position": "1982.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Not A Through Street"
+    },
+    {
+      "authors": [
+        "Geoffrey Miller"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1982",
+      "category": "Best First Novel",
+      "position": "1982.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Black Glove"
+    },
+    {
+      "authors": [
+        "Thomas Perry"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1983",
+      "category": "Best First Novel",
+      "position": "1983",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Butcher'sBoy"
+    },
+    {
+      "authors": [
+        "S.F.X. Dean"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1983",
+      "category": "Best First Novel",
+      "position": "1983.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "By Frequent Anguish"
+    },
+    {
+      "authors": [
+        "John Katzenbach"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1983",
+      "category": "Best First Novel",
+      "position": "1983.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "In the Heat of the Summer"
+    },
+    {
+      "authors": [
+        "Ernest Savage"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1983",
+      "category": "Best First Novel",
+      "position": "1983.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Two If By Sea"
+    },
+    {
+      "authors": [
+        "Richard Hughes"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1983",
+      "category": "Best First Novel",
+      "position": "1983.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Unholy Communion"
+    },
+    {
+      "authors": [
+        "Will Harriss"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1984",
+      "category": "Best First Novel",
+      "position": "1984",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Bay Psalm Book Murder"
+    },
+    {
+      "authors": [
+        "Andrew Taylor"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1984",
+      "category": "Best First Novel",
+      "position": "1984.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Caroline Minuscule"
+    },
+    {
+      "authors": [
+        "Carolyn Wheat"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1984",
+      "category": "Best First Novel",
+      "position": "1984.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Dead Man's Thoughts"
+    },
+    {
+      "authors": [
+        "Mark Schorr"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1984",
+      "category": "Best First Novel",
+      "position": "1984.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Red Diamond, Private Eye"
+    },
+    {
+      "authors": [
+        "Herbert Resnicow"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1984",
+      "category": "Best First Novel",
+      "position": "1984.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Gold Solution"
+    },
+    {
+      "authors": [
+        "R.D. Rosen"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1985",
+      "category": "Best First Novel",
+      "position": "1985",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Strike Three, You're Dead"
+    },
+    {
+      "authors": [
+        "Jack Early"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1985",
+      "category": "Best First Novel",
+      "position": "1985.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "A Creative Kind of Killer"
+    },
+    {
+      "authors": [
+        "Doug Hornig"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1985",
+      "category": "Best First Novel",
+      "position": "1985.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Foul Shot"
+    },
+    {
+      "authors": [
+        "Alison Smith"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1985",
+      "category": "Best First Novel",
+      "position": "1985.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Someone Else's Grave"
+    },
+    {
+      "authors": [
+        "Orania Papazoglou"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1985",
+      "category": "Best First Novel",
+      "position": "1985.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Sweet, Savage Death"
+    },
+    {
+      "authors": [
+        "Jonathan Kellerman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1986",
+      "category": "Best First Novel",
+      "position": "1986",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "When the Bough Breaks"
+    },
+    {
+      "authors": [
+        "Dick Lochte"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1986",
+      "category": "Best First Novel",
+      "position": "1986.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Sleeping Dog"
+    },
+    {
+      "authors": [
+        "Daniel Stashower"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1986",
+      "category": "Best First Novel",
+      "position": "1986.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Adventure of the Ectoplasmic Man"
+    },
+    {
+      "authors": [
+        "Tony Fennelly"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1986",
+      "category": "Best First Novel",
+      "position": "1986.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Glory Hole Murders"
+    },
+    {
+      "authors": [
+        "Larry Beinhart"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1987",
+      "category": "Best First Novel",
+      "position": "1987",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "No One Rides for Free"
+    },
+    {
+      "authors": [
+        "Mike Lupica"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1987",
+      "category": "Best First Novel",
+      "position": "1987.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Dead Air"
+    },
+    {
+      "authors": [
+        "Joseph Koenig"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1987",
+      "category": "Best First Novel",
+      "position": "1987.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Floater"
+    },
+    {
+      "authors": [
+        "Gary Devon"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1987",
+      "category": "Best First Novel",
+      "position": "1987.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Lost"
+    },
+    {
+      "authors": [
+        "Richard Hyer"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1987",
+      "category": "Best First Novel",
+      "position": "1987.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "Riceburner"
+    },
+    {
+      "authors": [
+        "Deidre S. Laiken"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1988",
+      "category": "Best First Novel",
+      "position": "1988",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Death Among Strangers"
+    },
+    {
+      "authors": [
+        "Parnell Hall"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1988",
+      "category": "Best First Novel",
+      "position": "1988.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Detective"
+    },
+    {
+      "authors": [
+        "John Lantigua"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1988",
+      "category": "Best First Novel",
+      "position": "1988.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Heat Lightning"
+    },
+    {
+      "authors": [
+        "Dallas Murphy"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1988",
+      "category": "Best First Novel",
+      "position": "1988.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Lover Man"
+    },
+    {
+      "authors": [
+        "Domenic Stansberry"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1988",
+      "category": "Best First Novel",
+      "position": "1988.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=3"
+      },
+      "title": "The Spoiler"
+    },
+    {
+      "authors": [
+        "David Stout"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1989",
+      "category": "Best First Novel",
+      "position": "1989",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Carolina Skeletons"
+    },
+    {
+      "authors": [
+        "Elizabeth George"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1989",
+      "category": "Best First Novel",
+      "position": "1989.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "A Great Deliverance"
+    },
+    {
+      "authors": [
+        "Shelley Reuben"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1989",
+      "category": "Best First Novel",
+      "position": "1989.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Julian Solo"
+    },
+    {
+      "authors": [
+        "Mary Lou Bennett"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1989",
+      "category": "Best First Novel",
+      "position": "1989.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Murder Once Done"
+    },
+    {
+      "authors": [
+        "J. Madison Davis"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1989",
+      "category": "Best First Novel",
+      "position": "1989.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "The Murder of Frau Schutz"
+    },
+    {
+      "authors": [
+        "Susan Wolfe"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1990",
+      "category": "Best First Novel",
+      "position": "1990",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "The Last Billable Hour"
+    },
+    {
+      "authors": [
+        "Bruce Zimmerman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1990",
+      "category": "Best First Novel",
+      "position": "1990.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Blood Under the Bridge"
+    },
+    {
+      "authors": [
+        "Barry Berg"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1990",
+      "category": "Best First Novel",
+      "position": "1990.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Hide and Seek"
+    },
+    {
+      "authors": [
+        "Melodie Johnson Howe"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1990",
+      "category": "Best First Novel",
+      "position": "1990.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "The Mother Shadow"
+    },
+    {
+      "authors": [
+        "Susan Taylor Chehak"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1990",
+      "category": "Best First Novel",
+      "position": "1990.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "The Story of Annie D."
+    },
+    {
+      "authors": [
+        "Patricia D. Cornwell"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1991",
+      "category": "Best First Novel",
+      "position": "1991",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Postmortem"
+    },
+    {
+      "authors": [
+        "Gary Amo"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1991",
+      "category": "Best First Novel",
+      "position": "1991.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Come Nightfall"
+    },
+    {
+      "authors": [
+        "Walter Mosley"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1991",
+      "category": "Best First Novel",
+      "position": "1991.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Devil in a Blue Dress"
+    },
+    {
+      "authors": [
+        "Edna Buchanan"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1991",
+      "category": "Best First Novel",
+      "position": "1991.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Nobody Lives Forever"
+    },
+    {
+      "authors": [
+        "W. Edward Blain"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1991",
+      "category": "Best First Novel",
+      "position": "1991.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Passion Play"
+    },
+    {
+      "authors": [
+        "Peter Blauner"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1992",
+      "category": "Best First Novel",
+      "position": "1992",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Slow Motion Riot"
+    },
+    {
+      "authors": [
+        "Don Winslow"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1992",
+      "category": "Best First Novel",
+      "position": "1992.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "A Cool Breeze in the Underground"
+    },
+    {
+      "authors": [
+        "Marcy Heidish"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1992",
+      "category": "Best First Novel",
+      "position": "1992.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Deadline"
+    },
+    {
+      "authors": [
+        "Terence Faherty"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1992",
+      "category": "Best First Novel",
+      "position": "1992.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Deadstick"
+    },
+    {
+      "authors": [
+        "Mary Willis Walker"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1992",
+      "category": "Best First Novel",
+      "position": "1992.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Zero at the Bone"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1993",
+      "category": "Best First Novel",
+      "position": "1993",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "The Black Echo"
+    },
+    {
+      "authors": [
+        "Craig Smith"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1993",
+      "category": "Best First Novel",
+      "position": "1993.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Ladystinger"
+    },
+    {
+      "authors": [
+        "Christine Andreae"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1993",
+      "category": "Best First Novel",
+      "position": "1993.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Trail of Murder"
+    },
+    {
+      "authors": [
+        "Jane Stanton Hitchcock"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1993",
+      "category": "Best First Novel",
+      "position": "1993.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Trick of the Eye"
+    },
+    {
+      "authors": [
+        "Laurie R. King"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1994",
+      "category": "Best First Novel",
+      "position": "1994",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "A Grave Talent"
+    },
+    {
+      "authors": [
+        "Darian North"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1994",
+      "category": "Best First Novel",
+      "position": "1994.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Criminal Seduction"
+    },
+    {
+      "authors": [
+        "Manuel Ramos"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1994",
+      "category": "Best First Novel",
+      "position": "1994.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "The Ballad of Rocky Ruiz"
+    },
+    {
+      "authors": [
+        "Mark Frost"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1994",
+      "category": "Best First Novel",
+      "position": "1994.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "The List of 7"
+    },
+    {
+      "authors": [
+        "David Rosenbaum"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1994",
+      "category": "Best First Novel",
+      "position": "1994.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Zaddik"
+    },
+    {
+      "authors": [
+        "George Dawes Green"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1995",
+      "category": "Best First Novel",
+      "position": "1995",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "The Caveman's Valentine"
+    },
+    {
+      "authors": [
+        "Doug J. Swanson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1995",
+      "category": "Best First Novel",
+      "position": "1995.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Big Town"
+    },
+    {
+      "authors": [
+        "Carol O'Connell"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1995",
+      "category": "Best First Novel",
+      "position": "1995.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Mallory's Oracle"
+    },
+    {
+      "authors": [
+        "Janet Evanovich"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1995",
+      "category": "Best First Novel",
+      "position": "1995.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "One For the Money"
+    },
+    {
+      "authors": [
+        "Barbara Parker"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1995",
+      "category": "Best First Novel",
+      "position": "1995.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Suspicion of Innocence"
+    },
+    {
+      "authors": [
+        "David Housewright"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1996",
+      "category": "Best First Novel",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Penance"
+    },
+    {
+      "authors": [
+        "David J. Walker"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1996",
+      "category": "Best First Novel",
+      "position": "1996.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Fixed in His Folly"
+    },
+    {
+      "authors": [
+        "Martha C. Lawrence"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1996",
+      "category": "Best First Novel",
+      "position": "1996.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Murder in Scorpio"
+    },
+    {
+      "authors": [
+        "Allan Pedrazas"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1996",
+      "category": "Best First Novel",
+      "position": "1996.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "The Harry Chronicles"
+    },
+    {
+      "authors": [
+        "Kevin Allman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1996",
+      "category": "Best First Novel",
+      "position": "1996.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Tight Shot"
+    },
+    {
+      "authors": [
+        "John Morgan Wilson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1997",
+      "category": "Best First Novel",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Simple Justice"
+    },
+    {
+      "authors": [
+        "Michael White"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1997",
+      "category": "Best First Novel",
+      "position": "1997.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "A Brother's Blood"
+    },
+    {
+      "authors": [
+        "Charles Todd"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1997",
+      "category": "Best First Novel",
+      "position": "1997.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "A Test of Wills"
+    },
+    {
+      "authors": [
+        "Margaret Moseley"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1997",
+      "category": "Best First Novel",
+      "position": "1997.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Bonita Faye"
+    },
+    {
+      "authors": [
+        "Sharon Kay Penman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1997",
+      "category": "Best First Novel",
+      "position": "1997.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "The Queen's Man"
+    },
+    {
+      "authors": [
+        "Joseph Kanon"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1998",
+      "category": "Best First Novel",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Los Alamos"
+    },
+    {
+      "authors": [
+        "K.j.a. Wishnia"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1998",
+      "category": "Best First Novel",
+      "position": "1998.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "23 Shades of Black"
+    },
+    {
+      "authors": [
+        "Suzanne Berne"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1998",
+      "category": "Best First Novel",
+      "position": "1998.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "A Crime in the Neighborhood"
+    },
+    {
+      "authors": [
+        "Philip Reed"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1998",
+      "category": "Best First Novel",
+      "position": "1998.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Bird Dog"
+    },
+    {
+      "authors": [
+        "Lisa See"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1998",
+      "category": "Best First Novel",
+      "position": "1998.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Flower Net"
+    },
+    {
+      "authors": [
+        "Steve Hamilton"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1999",
+      "category": "Best First Novel",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "A Cold Day in Paradise"
+    },
+    {
+      "authors": [
+        "D.R. Schanker"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1999",
+      "category": "Best First Novel",
+      "position": "1999.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "A Criminal Appeal"
+    },
+    {
+      "authors": [
+        "Jen Sacks"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1999",
+      "category": "Best First Novel",
+      "position": "1999.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Nice"
+    },
+    {
+      "authors": [
+        "Christopher Reich"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1999",
+      "category": "Best First Novel",
+      "position": "1999.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Numbered Account"
+    },
+    {
+      "authors": [
+        "Ira Genberg"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1999",
+      "category": "Best First Novel",
+      "position": "1999.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Reckless Homicide"
+    },
+    {
+      "authors": [
+        "Eliot Pattison"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2000",
+      "category": "Best First Novel",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "The Skull Mantra"
+    },
+    {
+      "authors": [
+        "Dave Barry"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2000",
+      "category": "Best First Novel",
+      "position": "2000.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Big Trouble"
+    },
+    {
+      "authors": [
+        "Arthur W. Bahr"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2000",
+      "category": "Best First Novel",
+      "position": "2000.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Certifiably Insane"
+    },
+    {
+      "authors": [
+        "Boston Teran"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2000",
+      "category": "Best First Novel",
+      "position": "2000.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "God Is A Bullet"
+    },
+    {
+      "authors": [
+        "Paula L. Woods"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2000",
+      "category": "Best First Novel",
+      "position": "2000.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Inner City Blues"
+    },
+    {
+      "authors": [
+        "David Liss"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2001",
+      "category": "Best First Novel",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Conspiracy of Paper"
+    },
+    {
+      "authors": [
+        "Marcia Simpson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2001",
+      "category": "Best First Novel",
+      "position": "2001.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Crow in Stolen Colors"
+    },
+    {
+      "authors": [
+        "Qiu Xiaolong"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2001",
+      "category": "Best First Novel",
+      "position": "2001.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Death of a Red Heroine"
+    },
+    {
+      "authors": [
+        "Peter Moore Smith"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2001",
+      "category": "Best First Novel",
+      "position": "2001.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Raveling"
+    },
+    {
+      "authors": [
+        "Scott Phillips"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2001",
+      "category": "Best First Novel",
+      "position": "2001.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "The Ice Harvest"
+    },
+    {
+      "authors": [
+        "David Ellis"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2002",
+      "category": "Best First Novel",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Line of Vision"
+    },
+    {
+      "authors": [
+        "Victor Gischler"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2002",
+      "category": "Best First Novel",
+      "position": "2002.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Gun Monkeys"
+    },
+    {
+      "authors": [
+        "C.J. Box"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2002",
+      "category": "Best First Novel",
+      "position": "2002.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Open Season"
+    },
+    {
+      "authors": [
+        "Gabriel Cohen"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2002",
+      "category": "Best First Novel",
+      "position": "2002.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Red Hook"
+    },
+    {
+      "authors": [
+        "Denise Hamilton"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2002",
+      "category": "Best First Novel",
+      "position": "2002.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "The Jasmine Trade"
+    },
+    {
+      "authors": [
+        "Jonathon King"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2003",
+      "category": "Best First Novel",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "The Blue Edge of Midnight"
+    },
+    {
+      "authors": [
+        "Ben Rehder"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2003",
+      "category": "Best First Novel",
+      "position": "2003.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Buck Fever"
+    },
+    {
+      "authors": [
+        "Kam Majd"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2003",
+      "category": "Best First Novel",
+      "position": "2003.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "High Wire"
+    },
+    {
+      "authors": [
+        "David Rosenfelt"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2003",
+      "category": "Best First Novel",
+      "position": "2003.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Open and Shut"
+    },
+    {
+      "authors": [
+        "Stephen J. Clark"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2003",
+      "category": "Best First Novel",
+      "position": "2003.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Southern Latitudes"
+    },
+    {
+      "authors": [
+        "Rebecca Pawel"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2004",
+      "category": "Best First Novel",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Death of a Nationalist"
+    },
+    {
+      "authors": [
+        "Martha Conway"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2004",
+      "category": "Best First Novel",
+      "position": "2004.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "12 Bliss Street"
+    },
+    {
+      "authors": [
+        "James Hime"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2004",
+      "category": "Best First Novel",
+      "position": "2004.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Night of the Dance"
+    },
+    {
+      "authors": [
+        "Robert Heilbrun"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2004",
+      "category": "Best First Novel",
+      "position": "2004.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Offer of Proof"
+    },
+    {
+      "authors": [
+        "Olen Steinhauer"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2004",
+      "category": "Best First Novel",
+      "position": "2004.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "The Bridge of Sighs"
+    },
+    {
+      "authors": [
+        "Don Lee"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2005",
+      "category": "Best First Novel",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Country of Origin"
+    },
+    {
+      "authors": [
+        "Bob Morris"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2005",
+      "category": "Best First Novel",
+      "position": "2005.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Bahamarama"
+    },
+    {
+      "authors": [
+        "Liam Callanan"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2005",
+      "category": "Best First Novel",
+      "position": "2005.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Cloud Atlas"
+    },
+    {
+      "authors": [
+        "Richard Aleas"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2005",
+      "category": "Best First Novel",
+      "position": "2005.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Little Girl Lost"
+    },
+    {
+      "authors": [
+        "Charles Benoit"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2005",
+      "category": "Best First Novel",
+      "position": "2005.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Relative Danger"
+    },
+    {
+      "authors": [
+        "Michael Koryta"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2005",
+      "category": "Best First Novel",
+      "position": "2005.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Tonight I Said Goodbye"
+    },
+    {
+      "authors": [
+        "Theresa Schwegel"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2006",
+      "category": "Best First Novel",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Officer Down"
+    },
+    {
+      "authors": [
+        "Megan Abbott"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2006",
+      "category": "Best First Novel",
+      "position": "2006.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Die A Little"
+    },
+    {
+      "authors": [
+        "Alison Gaylin"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2006",
+      "category": "Best First Novel",
+      "position": "2006.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Hide Your Eyes"
+    },
+    {
+      "authors": [
+        "Brian Freeman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2006",
+      "category": "Best First Novel",
+      "position": "2006.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Immoral"
+    },
+    {
+      "authors": [
+        "Scott Frost"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2006",
+      "category": "Best First Novel",
+      "position": "2006.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Run the Risk"
+    },
+    {
+      "authors": [
+        "Alex Berenson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2007",
+      "category": "Best First Novel",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "The Faithful Spy"
+    },
+    {
+      "authors": [
+        "Cornelia Read"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2007",
+      "category": "Best First Novel",
+      "position": "2007.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "A Field of Darkness"
+    },
+    {
+      "authors": [
+        "Steve Hockensmith"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2007",
+      "category": "Best First Novel",
+      "position": "2007.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Holmes on the Range"
+    },
+    {
+      "authors": [
+        "John Hart"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2007",
+      "category": "Best First Novel",
+      "position": "2007.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "King of Lies"
+    },
+    {
+      "authors": [
+        "Gillian Flynn"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2007",
+      "category": "Best First Novel",
+      "position": "2007.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Sharp Objects"
+    },
+    {
+      "authors": [
+        "Tana French"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2008",
+      "category": "Best First Novel",
+      "position": "2008",
+      "result": "winner",
+      "title": "In the Woods"
+    },
+    {
+      "authors": [
+        "Craig McDonald"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2008",
+      "category": "Best First Novel",
+      "position": "2008.01",
+      "result": "nominee",
+      "title": "Head Games"
+    },
+    {
+      "authors": [
+        "Gordon Campbell"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2008",
+      "category": "Best First Novel",
+      "position": "2008.02",
+      "result": "nominee",
+      "title": "Missing Witness"
+    },
+    {
+      "authors": [
+        "Derek Nikitas"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2008",
+      "category": "Best First Novel",
+      "position": "2008.03",
+      "result": "nominee",
+      "title": "Pyres"
+    },
+    {
+      "authors": [
+        "Christopher Goffard"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2008",
+      "category": "Best First Novel",
+      "position": "2008.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-first-novel/?instance=1&listpage=2"
+      },
+      "title": "Snitch Jacket"
+    },
+    {
+      "authors": [
+        "Francie Lin"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2009",
+      "category": "Best First Novel",
+      "position": "2009",
+      "result": "winner",
+      "title": "The Foreigner"
+    },
+    {
+      "authors": [
+        "Justin Peacock"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2009",
+      "category": "Best First Novel",
+      "position": "2009.01",
+      "result": "nominee",
+      "title": "A Cure for Night"
+    },
+    {
+      "authors": [
+        "Charlie Newton"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2009",
+      "category": "Best First Novel",
+      "position": "2009.02",
+      "result": "nominee",
+      "title": "Calumet City"
+    },
+    {
+      "authors": [
+        "David Fuller"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2009",
+      "category": "Best First Novel",
+      "position": "2009.03",
+      "result": "nominee",
+      "title": "Sweetsmoke"
+    },
+    {
+      "authors": [
+        "Tom Epperson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2009",
+      "category": "Best First Novel",
+      "position": "2009.04",
+      "result": "nominee",
+      "title": "The Kind One"
+    },
+    {
+      "authors": [
+        "Stefanie Pintoff"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2010",
+      "category": "Best First Novel",
+      "position": "2010",
+      "result": "winner",
+      "title": "In the Shadow of Gotham"
+    },
+    {
+      "authors": [
+        "Sophie Littlefield"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2010",
+      "category": "Best First Novel",
+      "position": "2010.01",
+      "result": "nominee",
+      "title": "A Bad Day for Sorry"
+    },
+    {
+      "authors": [
+        "Attica Locke"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2010",
+      "category": "Best First Novel",
+      "position": "2010.02",
+      "result": "nominee",
+      "title": "Black Water Rising"
+    },
+    {
+      "authors": [
+        "Bryan Gruley"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2010",
+      "category": "Best First Novel",
+      "position": "2010.03",
+      "result": "nominee",
+      "title": "Starvation Lake"
+    },
+    {
+      "authors": [
+        "David Cristofano"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2010",
+      "category": "Best First Novel",
+      "position": "2010.04",
+      "result": "nominee",
+      "title": "The Girl She Used to Be"
+    },
+    {
+      "authors": [
+        "Heather Gudenkauf"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2010",
+      "category": "Best First Novel",
+      "position": "2010.05",
+      "result": "nominee",
+      "title": "The Weight of Silence"
+    },
+    {
+      "authors": [
+        "Bruce DeSilva"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2011",
+      "category": "Best First Novel",
+      "position": "2011",
+      "result": "winner",
+      "title": "Rogue Island"
+    },
+    {
+      "authors": [
+        "Nic Pizzolatto"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2011",
+      "category": "Best First Novel",
+      "position": "2011.01",
+      "result": "nominee",
+      "title": "Galveston"
+    },
+    {
+      "authors": [
+        "James Thompson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2011",
+      "category": "Best First Novel",
+      "position": "2011.02",
+      "result": "nominee",
+      "title": "Snow Angels"
+    },
+    {
+      "authors": [
+        "Paul Doiron"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2011",
+      "category": "Best First Novel",
+      "position": "2011.03",
+      "result": "nominee",
+      "title": "The Poacher's Son"
+    },
+    {
+      "authors": [
+        "David Gordon"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2011",
+      "category": "Best First Novel",
+      "position": "2011.04",
+      "result": "nominee",
+      "title": "The Serialist: A Novel"
+    },
+    {
+      "authors": [
+        "Lori Roy"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2012",
+      "category": "Best First Novel",
+      "position": "2012",
+      "result": "winner",
+      "title": "Bent Road"
+    },
+    {
+      "authors": [
+        "Leonard Rosen"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2012",
+      "category": "Best First Novel",
+      "position": "2012.01",
+      "result": "nominee",
+      "title": "All Cry Chaos"
+    },
+    {
+      "authors": [
+        "David Duffy"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2012",
+      "category": "Best First Novel",
+      "position": "2012.02",
+      "result": "nominee",
+      "title": "Last to Fold"
+    },
+    {
+      "authors": [
+        "Steve Ulfelder"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2012",
+      "category": "Best First Novel",
+      "position": "2012.03",
+      "result": "nominee",
+      "title": "Purgatory Chasm"
+    },
+    {
+      "authors": [
+        "Edward Conlon"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2012",
+      "category": "Best First Novel",
+      "position": "2012.04",
+      "result": "nominee",
+      "title": "Red on Red"
+    },
+    {
+      "authors": [
+        "Matthew Quirk"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2012",
+      "category": "Best First Novel",
+      "position": "2012.05",
+      "result": "nominee",
+      "title": "The 500"
+    },
+    {
+      "authors": [
+        "Chris Pavone"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2013",
+      "category": "Best First Novel",
+      "position": "2013",
+      "result": "winner",
+      "title": "The Expats"
+    },
+    {
+      "authors": [
+        "Michael Sears"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2013",
+      "category": "Best First Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "title": "Black Fridays"
+    },
+    {
+      "authors": [
+        "Daniel Friedman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2013",
+      "category": "Best First Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "title": "Don't Ever Get Old"
+    },
+    {
+      "authors": [
+        "Susan Elia MacNeal"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2013",
+      "category": "Best First Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "title": "Mr. Churchill's Secretary"
+    },
+    {
+      "authors": [
+        "Kim Fay"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2013",
+      "category": "Best First Novel",
+      "position": "2013.04",
+      "result": "nominee",
+      "title": "The Map of Lost Memories"
+    },
+    {
+      "authors": [
+        "Jason Matthews"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2014",
+      "category": "Best First Novel",
+      "position": "2014",
+      "result": "winner",
+      "title": "Red Sparrow"
+    },
+    {
+      "authors": [
+        "Roger Hobbs"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2014",
+      "category": "Best First Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "title": "Ghostman"
+    },
+    {
+      "authors": [
+        "Becky Masterman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2014",
+      "category": "Best First Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "title": "Rage Against the Dying"
+    },
+    {
+      "authors": [
+        "Kimberly McCreight"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2014",
+      "category": "Best First Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "title": "Reconstructing Amelia"
+    },
+    {
+      "authors": [
+        "Matthew Guinn"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2014",
+      "category": "Best First Novel",
+      "position": "2014.04",
+      "result": "nominee",
+      "title": "The Resurrectionist"
+    },
+    {
+      "authors": [
+        "Tom Bouman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2015",
+      "category": "Best First Novel",
+      "position": "2015",
+      "result": "winner",
+      "title": "Dry Bones in the Valley"
+    },
+    {
+      "authors": [
+        "Julia Dahl"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2015",
+      "category": "Best First Novel",
+      "position": "2015.01",
+      "result": "nominee",
+      "title": "Invisible City"
+    },
+    {
+      "authors": [
+        "Allen Eskens"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2015",
+      "category": "Best First Novel",
+      "position": "2015.02",
+      "result": "nominee",
+      "title": "The Life We Bury"
+    },
+    {
+      "authors": [
+        "C.B. McKenzie"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2015",
+      "category": "Best First Novel",
+      "position": "2015.03",
+      "result": "nominee",
+      "title": "Bad Country"
+    },
+    {
+      "authors": [
+        "Adam Sternbergh"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2015",
+      "category": "Best First Novel",
+      "position": "2015.04",
+      "result": "nominee",
+      "title": "Shovel Ready"
+    },
+    {
+      "authors": [
+        "Ashley Weaver"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2015",
+      "category": "Best First Novel",
+      "position": "2015.05",
+      "result": "nominee",
+      "title": "Murder at the Brightwell"
+    },
+    {
+      "authors": [
+        "Viet Thanh Nguyen"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2016",
+      "category": "Best First Novel",
+      "position": "2016",
+      "result": "winner",
+      "title": "The Sympathizer"
+    },
+    {
+      "authors": [
+        "Glen Erik Hamilton"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2016",
+      "category": "Best First Novel",
+      "position": "2016.01",
+      "result": "nominee",
+      "title": "Past Crimes"
+    },
+    {
+      "authors": [
+        "David Joy"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2016",
+      "category": "Best First Novel",
+      "position": "2016.02",
+      "result": "nominee",
+      "title": "Where All Light Tends to Go"
+    },
+    {
+      "authors": [
+        "Jessica Knoll"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2016",
+      "category": "Best First Novel",
+      "position": "2016.03",
+      "result": "nominee",
+      "title": "Luckiest Girl Alive"
+    },
+    {
+      "authors": [
+        "Rebecca Scherm"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2016",
+      "category": "Best First Novel",
+      "position": "2016.04",
+      "result": "nominee",
+      "title": "Unbecoming"
+    },
+    {
+      "authors": [
+        "Flynn Berry"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2017",
+      "category": "Best First Novel",
+      "position": "2017",
+      "result": "winner",
+      "title": "Under the Harrow"
+    },
+    {
+      "authors": [
+        "Bill Beverly"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2017",
+      "category": "Best First Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "Dodgers"
+    },
+    {
+      "authors": [
+        "Joe Ide"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2017",
+      "category": "Best First Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "IQ"
+    },
+    {
+      "authors": [
+        "Nicholas Petrie"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2017",
+      "category": "Best First Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "title": "The Drifter"
+    },
+    {
+      "authors": [
+        "Lili Wright"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2017",
+      "category": "Best First Novel",
+      "position": "2017.04",
+      "result": "nominee",
+      "title": "Dancing with the Tiger"
+    },
+    {
+      "authors": [
+        "Heather Young"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2017",
+      "category": "Best First Novel",
+      "position": "2017.05",
+      "result": "nominee",
+      "title": "The Lost Girls"
+    },
+    {
+      "authors": [
+        "Jordan Harper"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2018",
+      "category": "Best First Novel",
+      "position": "2018",
+      "result": "winner",
+      "title": "She Rides Shotgun"
+    },
+    {
+      "authors": [
+        "Winnie M. Li"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2018",
+      "category": "Best First Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "Dark Chapter"
+    },
+    {
+      "authors": [
+        "Melissa Schrivner Love"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2018",
+      "category": "Best First Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "title": "Lola"
+    },
+    {
+      "authors": [
+        "Emily Ruskovich"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2018",
+      "category": "Best First Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "title": "Idaho"
+    },
+    {
+      "authors": [
+        "Deborah E. Kennedy"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2018",
+      "category": "Best First Novel",
+      "position": "2018.04",
+      "result": "nominee",
+      "title": "Tornado Weather"
+    },
+    {
+      "authors": [
+        "James A. McLaughlin"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2019",
+      "category": "Best First Novel",
+      "position": "2019",
+      "result": "winner",
+      "title": "Bearskin"
+    },
+    {
+      "authors": [
+        "Bradley Harper"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2019",
+      "category": "Best First Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "title": "A Knife in the Fog"
+    },
+    {
+      "authors": [
+        "Debra Jo Immergut"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2019",
+      "category": "Best First Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "title": "The Captives"
+    },
+    {
+      "authors": [
+        "Nova Jacobs"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2019",
+      "category": "Best First Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "title": "The Last Equation of Isaac Severy"
+    },
+    {
+      "authors": [
+        "Delia Owens"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2019",
+      "category": "Best First Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "title": "Where the Crawdads Sing"
+    },
+    {
+      "authors": [
+        "Angie Kim"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2020",
+      "category": "Best First Novel",
+      "position": "2020",
+      "result": "winner",
+      "title": "Miracle Creek"
+    },
+    {
+      "authors": [
+        "Samantha Downing"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2020",
+      "category": "Best First Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "My Lovely Wife"
+    },
+    {
+      "authors": [
+        "John McMahon"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2020",
+      "category": "Best First Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "The Good Detective"
+    },
+    {
+      "authors": [
+        "Lara Prescott"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2020",
+      "category": "Best First Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "The Secrets We Kept"
+    },
+    {
+      "authors": [
+        "John Vercher"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2020",
+      "category": "Best First Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "title": "Three-Fifths"
+    },
+    {
+      "authors": [
+        "Lauren Wilkinson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2020",
+      "category": "Best First Novel",
+      "position": "2020.05",
+      "result": "nominee",
+      "title": "American Spy"
+    },
+    {
+      "authors": [
+        "Caitlin Mullen"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2021",
+      "category": "Best First Novel",
+      "position": "2021",
+      "result": "winner",
+      "title": "Please See Us"
+    },
+    {
+      "authors": [
+        "Nev March"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2021",
+      "category": "Best First Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "Murder in Old Bombay"
+    },
+    {
+      "authors": [
+        "Elisabeth Thomas"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2021",
+      "category": "Best First Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "Catherine House"
+    },
+    {
+      "authors": [
+        "David Heska Wanbli Weiden"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2021",
+      "category": "Best First Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "Winter Counts"
+    },
+    {
+      "authors": [
+        "Stephanie Wrobel"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2021",
+      "category": "Best First Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "Darling Rose Gold"
+    },
+    {
+      "authors": [
+        "Erin Flanagan"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2022",
+      "category": "Best First Novel",
+      "position": "2022",
+      "result": "winner",
+      "title": "Deer Season"
+    },
+    {
+      "authors": [
+        "Vera Kurian"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2022",
+      "category": "Best First Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "Never Saw Me Coming"
+    },
+    {
+      "authors": [
+        "Fabian Nicieza"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2022",
+      "category": "Best First Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "Suburban Dicks"
+    },
+    {
+      "authors": [
+        "JoAnne Tompkins"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2022",
+      "category": "Best First Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "What Comes After"
+    },
+    {
+      "authors": [
+        "Caitlin Wahrer"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2022",
+      "category": "Best First Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "The Damage"
+    },
+    {
+      "authors": [
+        "Eli Cranor"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2023",
+      "category": "Best First Novel",
+      "position": "2023",
+      "result": "winner",
+      "title": "Don't Know Tough"
+    },
+    {
+      "authors": [
+        "Erin E. Adams"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2023",
+      "category": "Best First Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "title": "Jackal"
+    },
+    {
+      "authors": [
+        "Ramona Emerson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2023",
+      "category": "Best First Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "title": "Shutter"
+    },
+    {
+      "authors": [
+        "Katie Gutierrez"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2023",
+      "category": "Best First Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "title": "More Than You'll Ever Know"
+    },
+    {
+      "authors": [
+        "Grace D. Li"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2023",
+      "category": "Best First Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "title": "Portrait of a Thief"
+    },
+    {
+      "authors": [
+        "I.S. Berry"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2024",
+      "category": "Best First Novel",
+      "position": "2024",
+      "result": "winner",
+      "title": "The Peacock and the Sparrow"
+    },
+    {
+      "authors": [
+        "Amy Chua"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2024",
+      "category": "Best First Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "The Golden Gate"
+    },
+    {
+      "authors": [
+        "Ken Jaworowski"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2024",
+      "category": "Best First Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "Small Town Sins"
+    },
+    {
+      "authors": [
+        "Kristen Loesch"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2024",
+      "category": "Best First Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "The Last Russian Doll"
+    },
+    {
+      "authors": [
+        "Ritu Mukerji"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2024",
+      "category": "Best First Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "title": "Murder by Degrees"
+    },
+    {
+      "authors": [
+        "Henry Wise"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2025",
+      "category": "Best First Novel",
+      "position": "2025",
+      "result": "winner",
+      "title": "Holy City"
+    },
+    {
+      "authors": [
+        "Ash Clifton"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2025",
+      "category": "Best First Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "Twice the Trouble"
+    },
+    {
+      "authors": [
+        "Kerri Hakoda"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2025",
+      "category": "Best First Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "Cold to the Touch"
+    },
+    {
+      "authors": [
+        "Audrey Lee"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2025",
+      "category": "Best First Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "The Mechanics of Memory"
+    },
+    {
+      "authors": [
+        "David Lewis"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2025",
+      "category": "Best First Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "A Jewel in the Crown"
+    },
+    {
+      "authors": [
+        "Lawrence Robbins"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2025",
+      "category": "Best First Novel",
+      "position": "2025.05",
+      "result": "nominee",
+      "title": "The President's Lawyer"
+    },
+    {
+      "authors": [
+        "Jakob Kerr"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2026",
+      "category": "Best First Novel",
+      "position": "2026",
+      "result": "winner",
+      "title": "Dead Money"
+    },
+    {
+      "authors": [
+        "Hannah Deitch"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2026",
+      "category": "Best First Novel",
+      "position": "2026.01",
+      "result": "nominee",
+      "title": "Killer Potential"
+    },
+    {
+      "authors": [
+        "Sarah Harman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2026",
+      "category": "Best First Novel",
+      "position": "2026.02",
+      "result": "nominee",
+      "title": "All the Other Mothers Hate Me"
+    },
+    {
+      "authors": [
+        "Kevin Wade"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2026",
+      "category": "Best First Novel",
+      "position": "2026.03",
+      "result": "nominee",
+      "title": "Johnny Careless"
+    },
+    {
+      "authors": [
+        "Zoe B. Wallbrook"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2026",
+      "category": "Best First Novel",
+      "position": "2026.04",
+      "result": "nominee",
+      "title": "History Lessons"
+    }
+  ],
+  "fetched_at": "2026-07-18T00:45:04Z",
+  "list_id": "edgar_award_first_novel",
+  "list_name": "Edgar Award - First Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "edgar_award_first_novel",
+  "schema_version": 2,
+  "source": {
+    "name": "Edgar Award - First Novel",
+    "source_id": "edgar_award_first_novel",
+    "url": "https://edgarawards.com/category-list-best-first-novel/"
+  }
+}

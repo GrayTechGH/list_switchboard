@@ -222,7 +222,7 @@ class WikipediaAwardTableParserBase(AwardParserBase):
         'title': title,
         'author': author,
         'result': result,
-        'source_url': self.first_link_url(title_cell, base_url) or base_url,
+        'source_url': base_url,
         'category': category,
       })
     return rows

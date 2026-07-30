@@ -98,6 +98,9 @@ class UrlFetcherLeftyHumorousMysteryNovel(UrlFetcherLeftyAward):
   CATEGORY = 'Best Humorous Mystery Novel'
   CATEGORY_ALIASES = (
     'Lefty for Best Humorous Mystery Novel',
+    'Best Humorous Mystery',
+    'Lefty Award for Most Humorous Mystery',
+    'Most Humorous Mystery',
     'Humorous Mystery Novel',
   )
 
@@ -108,6 +111,8 @@ class UrlFetcherLeftyHistoricalMysteryNovel(UrlFetcherLeftyAward):
   CATEGORY = 'Best Historical Mystery Novel'
   CATEGORY_ALIASES = (
     'Lefty for Best Historical Mystery Novel',
+    'Best Historical Mystery',
+    'Bruce Alexander Memorial Mystery Award',
     'Historical Mystery Novel',
   )
 

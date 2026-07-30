@@ -34,6 +34,28 @@ class RichardJudyBookClubParser(BookClubParserBase):
     entries = self.entries_from_latest_bundle_text(soup, base_url, scope)
     return entries or self.entries_from_latest_section(soup, base_url, scope) or super().entries_from_soup(soup, base_url, scope)
 
+  def entry_from_cells(self, cells, headers, base_url, scope, index):
+    entry = super().entry_from_cells(
+      cells, headers, base_url, scope, index)
+    if (
+        entry is None
+        or 'booknotification.com' not in (base_url or '').casefold()):
+      return entry
+    for header, cell in zip(headers, cells):
+      if 'author' not in header:
+        continue
+      # BookNotification links the matchable authors but can append unlinked
+      # edition contributors, such as translators, in the same table cell.
+      linked_authors = []
+      for link in cell.find_all('a'):
+        author = clean_author(link.get_text(' ', strip=True))
+        if author and author not in linked_authors:
+          linked_authors.append(author)
+      if linked_authors:
+        entry['authors'] = linked_authors
+      break
+    return entry
+
   def entries_from_latest_bundle_text(self, soup, base_url, scope):
     text = normalize_line(soup.get_text(' ', strip=True))
     match = re.search(r'latest picks include;?\s*(.+?)(?:\.|RRP|Add to basket)', text, re.I)

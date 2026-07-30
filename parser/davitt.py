@@ -3,7 +3,13 @@
 
 """
 Davitt Award parsers.
+
+Maintenance notes:
+- Both fallback sources can expose coauthors as one explicit ``and`` credit;
+  normalize that boundary before the entry builder creates the author list.
 """
+
+import re
 
 try:
   from calibre_plugins.list_switchboard.parser.librarything_base import (
@@ -22,7 +28,14 @@ except ImportError:
 AWARD_NAME = 'Davitt Award'
 
 
-class DavittLibraryThingParser(LibraryThingAwardParserBase):
+class DavittAuthorMixin:
+
+  def clean_author(self, value):
+    author = super().clean_author(value)
+    return re.sub(r'\s+and\s+', ' & ', author, flags=re.I)
+
+
+class DavittLibraryThingParser(DavittAuthorMixin, LibraryThingAwardParserBase):
 
   AWARD_NAME = AWARD_NAME
 
@@ -35,9 +48,57 @@ class DavittLibraryThingParser(LibraryThingAwardParserBase):
     return None
 
 
-class DavittWikipediaParser(WikipediaAwardTableParserBase):
+class DavittWikipediaParser(DavittAuthorMixin, WikipediaAwardTableParserBase):
 
   AWARD_NAME = AWARD_NAME
+
+  def parse_rows(
+      self, html, base_url, category, category_aliases, allowed_results):
+    """Parse summary tables and only the matching category history table.
+
+    The Davitt article combines category-bearing decade tables with an Adult
+    Novel history table that has no Category column.  Treating every
+    category-less table as the configured recipe leaks Adult Novel winners
+    into other Davitt recipes.
+    """
+    root = self.html_root(html)
+    rows = []
+    for table in self.all_tables(root):
+      header_map = self.header_map(table)
+      if not self.has_required_columns(header_map):
+        continue
+      if 'category' not in header_map:
+        headings = table.xpath('preceding::h2|preceding::h3|preceding::h4')
+        table_category = self.node_text(headings[-1]) if headings else ''
+        if not self.category_matches(
+            table_category, category, category_aliases):
+          continue
+      rows.extend(self.table_rows(
+        table, header_map, base_url, category, category_aliases,
+        set(allowed_results)))
+    return rows
+
+  def dedupe_rows(self, rows):
+    """Collapse winners repeated across Wikipedia's category/history tables.
+
+    Wikipedia lists the same Davitt winners in more than one table.  Author
+    typos can differ between those tables, so author cannot be part of the
+    identity key here.  Document order is significant: the main
+    winners-by-category table appears first and is retained.
+    """
+    deduped = []
+    seen = set()
+    for row in rows:
+      key = (
+        row['award_year'],
+        normalize_heading(row['category']),
+        normalize_heading(row['title']),
+      )
+      if key in seen:
+        continue
+      seen.add(key)
+      deduped.append(row)
+    return deduped
 
   def table_rows(
       self, table, header_map, base_url, category, category_aliases,

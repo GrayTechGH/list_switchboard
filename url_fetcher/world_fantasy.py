@@ -85,7 +85,7 @@ class UrlFetcherWorldFantasyCollection(UrlFetcherWorldFantasy):
 
 class UrlFetcherWorldFantasyCollectionAnthology(UrlFetcherWorldFantasy):
   source_id = 'world_fantasy_collection_anthology'
-  NAME = 'World Fantasy - Collection/Anthology'
+  NAME = 'World Fantasy - Collection/Anthology (discontinued)'
   CATEGORY = 'Collection/Anthology'
   CATEGORY_ALIASES = ('collection/anthology',)
   ISFDB_CATEGORY_ALIASES = ('Best Anthology/Collection (old)',)

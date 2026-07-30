@@ -1,0 +1,5124 @@
+{
+  "append_state": {
+    "entry_count": 300,
+    "last_entry_key": "the widow|john grisham",
+    "last_position": "2025.19",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Janet Evanovich"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Mystery & Thriller",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/9583508-smokin-seventeen?from_choice=true"
+      },
+      "title": "Smokin' Seventeen",
+      "votes": "3996"
+    },
+    {
+      "authors": [
+        "J.D. Robb"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Mystery & Thriller",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/10402992-new-york-to-dallas?from_choice=true"
+      },
+      "title": "New York to Dallas",
+      "votes": "3251"
+    },
+    {
+      "authors": [
+        "S.J. Watson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Mystery & Thriller",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/9736930-before-i-go-to-sleep?from_choice=true"
+      },
+      "title": "Before I Go to Sleep",
+      "votes": "3114"
+    },
+    {
+      "authors": [
+        "Alan Bradley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Mystery & Thriller",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/8517008-a-red-herring-without-mustard?from_choice=true"
+      },
+      "title": "A Red Herring Without Mustard",
+      "votes": "2827"
+    },
+    {
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Mystery & Thriller",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/10552338-reamde?from_choice=true"
+      },
+      "title": "Reamde",
+      "votes": "2531"
+    },
+    {
+      "authors": [
+        "Heather Gudenkauf"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Mystery & Thriller",
+      "position": "2011.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/9166559-these-things-hidden?from_choice=true"
+      },
+      "title": "These Things Hidden",
+      "votes": "1989"
+    },
+    {
+      "authors": [
+        "Chevy Stevens"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Mystery & Thriller",
+      "position": "2011.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/10169662-never-knowing?from_choice=true"
+      },
+      "title": "Never Knowing",
+      "votes": "1903"
+    },
+    {
+      "authors": [
+        "James Patterson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Mystery & Thriller",
+      "position": "2011.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/7926569-now-you-see-her?from_choice=true"
+      },
+      "title": "Now You See Her",
+      "votes": "1821"
+    },
+    {
+      "authors": [
+        "Lisa Gardner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Mystery & Thriller",
+      "position": "2011.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/8701129-love-you-more?from_choice=true"
+      },
+      "title": "Love You More",
+      "votes": "1645"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Mystery & Thriller",
+      "position": "2011.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/9681098-the-fifth-witness?from_choice=true"
+      },
+      "title": "The Fifth Witness",
+      "votes": "1467"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Mystery & Thriller",
+      "position": "2011.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/10680329-a-trick-of-the-light?from_choice=true"
+      },
+      "title": "A Trick of the Light",
+      "votes": "718"
+    },
+    {
+      "authors": [
+        "Karin Slaughter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Mystery & Thriller",
+      "position": "2011.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/9635495-fallen?from_choice=true"
+      },
+      "title": "Fallen",
+      "votes": "672"
+    },
+    {
+      "authors": [
+        "Harlan Coben"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Mystery & Thriller",
+      "position": "2011.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/8437667-live-wire?from_choice=true"
+      },
+      "title": "Live Wire",
+      "votes": "578"
+    },
+    {
+      "authors": [
+        "Richard Castle"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Mystery & Thriller",
+      "position": "2011.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/10532477-heat-rises?from_choice=true"
+      },
+      "title": "Heat Rises",
+      "votes": "527"
+    },
+    {
+      "authors": [
+        "John Sandford"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Mystery & Thriller",
+      "position": "2011.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/9440448-buried-prey?from_choice=true"
+      },
+      "title": "Buried Prey",
+      "votes": "485"
+    },
+    {
+      "authors": [
+        "John Hart"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Mystery & Thriller",
+      "position": "2011.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/10024937-iron-house?from_choice=true"
+      },
+      "title": "Iron House",
+      "votes": "384"
+    },
+    {
+      "authors": [
+        "Laurie R. King"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Mystery & Thriller",
+      "position": "2011.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/9970915-pirate-king?from_choice=true"
+      },
+      "title": "Pirate King",
+      "votes": "261"
+    },
+    {
+      "authors": [
+        "Tess Gerritsen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Mystery & Thriller",
+      "position": "2011.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/9578677-the-silent-girl?from_choice=true"
+      },
+      "title": "The Silent Girl",
+      "votes": "222"
+    },
+    {
+      "authors": [
+        "Lee Child"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Mystery & Thriller",
+      "position": "2011.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/10627168-the-affair?from_choice=true"
+      },
+      "title": "The Affair",
+      "votes": "216"
+    },
+    {
+      "authors": [
+        "Sara Gran"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Mystery & Thriller",
+      "position": "2011.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/9231999-claire-dewitt-and-the-city-of-the-dead?from_choice=true"
+      },
+      "title": "Claire DeWitt and the City of the Dead",
+      "votes": "88"
+    },
+    {
+      "authors": [
+        "Gillian Flynn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Mystery & Thriller",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/12837725-gone-girl?from_choice=true"
+      },
+      "title": "Gone Girl",
+      "votes": "27502"
+    },
+    {
+      "authors": [
+        "J.D. Robb"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Mystery & Thriller",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/11890813-celebrity-in-death?from_choice=true"
+      },
+      "title": "Celebrity in Death",
+      "votes": "6364"
+    },
+    {
+      "authors": [
+        "James Patterson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Mystery & Thriller",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/12870486-11th-hour?from_choice=true"
+      },
+      "title": "11th Hour",
+      "votes": "5243"
+    },
+    {
+      "authors": [
+        "William Landay"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Mystery & Thriller",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/11367726-defending-jacob?from_choice=true"
+      },
+      "title": "Defending Jacob",
+      "votes": "5196"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Mystery & Thriller",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13513646-the-beautiful-mystery?from_choice=true"
+      },
+      "title": "The Beautiful Mystery",
+      "votes": "4242"
+    },
+    {
+      "authors": [
+        "Daniel Silva"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Mystery & Thriller",
+      "position": "2012.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13390528-the-fallen-angel?from_choice=true"
+      },
+      "title": "The Fallen Angel",
+      "votes": "3734"
+    },
+    {
+      "authors": [
+        "Heather Gudenkauf"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Mystery & Thriller",
+      "position": "2012.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13112023-one-breath-away?from_choice=true"
+      },
+      "title": "One Breath Away",
+      "votes": "3475"
+    },
+    {
+      "authors": [
+        "James Rollins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Mystery & Thriller",
+      "position": "2012.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13148921-bloodline?from_choice=true"
+      },
+      "title": "Bloodline",
+      "votes": "3371"
+    },
+    {
+      "authors": [
+        "Tana French"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Mystery & Thriller",
+      "position": "2012.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13123877-broken-harbor?from_choice=true"
+      },
+      "title": "Broken Harbor",
+      "votes": "3362"
+    },
+    {
+      "authors": [
+        "Alexander McCall Smith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Mystery & Thriller",
+      "position": "2012.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/12405126-the-limpopo-academy-of-private-detection?from_choice=true"
+      },
+      "title": "The Limpopo Academy of Private Detection",
+      "votes": "2904"
+    },
+    {
+      "authors": [
+        "David Baldacci"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Mystery & Thriller",
+      "position": "2012.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/12849385-the-innocent?from_choice=true"
+      },
+      "title": "The Innocent",
+      "votes": "2024"
+    },
+    {
+      "authors": [
+        "Karin Slaughter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Mystery & Thriller",
+      "position": "2012.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/12922320-criminal?from_choice=true"
+      },
+      "title": "Criminal",
+      "votes": "1948"
+    },
+    {
+      "authors": [
+        "James Patterson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Mystery & Thriller",
+      "position": "2012.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/11165711-guilty-wives?from_choice=true"
+      },
+      "title": "Guilty Wives",
+      "votes": "1705"
+    },
+    {
+      "authors": [
+        "Harlan Coben"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Mystery & Thriller",
+      "position": "2012.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/11737271-stay-close?from_choice=true"
+      },
+      "title": "Stay Close",
+      "votes": "1670"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Mystery & Thriller",
+      "position": "2012.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/11889938-taken?from_choice=true"
+      },
+      "title": "Taken",
+      "votes": "1161"
+    },
+    {
+      "authors": [
+        "Richard Castle"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Mystery & Thriller",
+      "position": "2012.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13482355-frozen-heat?from_choice=true"
+      },
+      "title": "Frozen Heat",
+      "votes": "909"
+    },
+    {
+      "authors": [
+        "Brad Thor"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Mystery & Thriller",
+      "position": "2012.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13117308-black-list?from_choice=true"
+      },
+      "title": "Black List",
+      "votes": "674"
+    },
+    {
+      "authors": [
+        "Lee Child"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Mystery & Thriller",
+      "position": "2012.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13359069-a-wanted-man?from_choice=true"
+      },
+      "title": "A Wanted Man",
+      "votes": "454"
+    },
+    {
+      "authors": [
+        "Laurie R. King"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Mystery & Thriller",
+      "position": "2012.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13330537-garment-of-shadows?from_choice=true"
+      },
+      "title": "Garment of Shadows",
+      "votes": "454"
+    },
+    {
+      "authors": [
+        "Jo Nesb\u00f8"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Mystery & Thriller",
+      "position": "2012.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13256064-phantom?from_choice=true"
+      },
+      "title": "Phantom",
+      "votes": "404"
+    },
+    {
+      "authors": [
+        "Dan Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Mystery & Thriller",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/17212231-inferno?from_choice=true"
+      },
+      "title": "Inferno",
+      "votes": "29132"
+    },
+    {
+      "authors": [
+        "Robert Galbraith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Mystery & Thriller",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/16160797-the-cuckoo-s-calling?from_choice=true"
+      },
+      "title": "The Cuckoo's Calling",
+      "votes": "28836"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Mystery & Thriller",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13596166-joyland?from_choice=true"
+      },
+      "title": "Joyland",
+      "votes": "16723"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Mystery & Thriller",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/17167084-how-the-light-gets-in?from_choice=true"
+      },
+      "title": "How the Light Gets In",
+      "votes": "10247"
+    },
+    {
+      "authors": [
+        "J.D. Robb"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Mystery & Thriller",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/15806231-calculated-in-death?from_choice=true"
+      },
+      "title": "Calculated in Death",
+      "votes": "10037"
+    },
+    {
+      "authors": [
+        "Marisha Pessl"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Mystery & Thriller",
+      "position": "2013.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/10112885-night-film?from_choice=true"
+      },
+      "title": "Night Film",
+      "votes": "7893"
+    },
+    {
+      "authors": [
+        "Alan Bradley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Mystery & Thriller",
+      "position": "2013.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/13642963-speaking-from-among-the-bones?from_choice=true"
+      },
+      "title": "Speaking from Among the Bones",
+      "votes": "7091"
+    },
+    {
+      "authors": [
+        "Kimberly McCreight"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Mystery & Thriller",
+      "position": "2013.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/15776309-reconstructing-amelia?from_choice=true"
+      },
+      "title": "Reconstructing Amelia",
+      "votes": "6887"
+    },
+    {
+      "authors": [
+        "Jo Nesb\u00f8"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Mystery & Thriller",
+      "position": "2013.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18142329-police?from_choice=true"
+      },
+      "title": "Police",
+      "votes": "6281"
+    },
+    {
+      "authors": [
+        "Harlan Coben"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Mystery & Thriller",
+      "position": "2013.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/15811568-six-years?from_choice=true"
+      },
+      "title": "Six Years",
+      "votes": "6173"
+    },
+    {
+      "authors": [
+        "Karin Slaughter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Mystery & Thriller",
+      "position": "2013.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/16071767-unseen?from_choice=true"
+      },
+      "title": "Unseen",
+      "votes": "2866"
+    },
+    {
+      "authors": [
+        "Lisa Gardner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Mystery & Thriller",
+      "position": "2013.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/15811495-touch-go?from_choice=true"
+      },
+      "title": "Touch & Go",
+      "votes": "2754"
+    },
+    {
+      "authors": [
+        "Aleatha Romig"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Mystery & Thriller",
+      "position": "2013.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/16150996-convicted?from_choice=true"
+      },
+      "title": "Convicted",
+      "votes": "2583"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Mystery & Thriller",
+      "position": "2013.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/15755201-suspect?from_choice=true"
+      },
+      "title": "Suspect",
+      "votes": "2094"
+    },
+    {
+      "authors": [
+        "William Kent Krueger"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Mystery & Thriller",
+      "position": "2013.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/15803059-ordinary-grace?from_choice=true"
+      },
+      "title": "Ordinary Grace",
+      "votes": "2026"
+    },
+    {
+      "authors": [
+        "Tom Clancy"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Mystery & Thriller",
+      "position": "2013.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/15985392-threat-vector?from_choice=true"
+      },
+      "title": "Threat Vector",
+      "votes": "2020"
+    },
+    {
+      "authors": [
+        "Sue Grafton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Mystery & Thriller",
+      "position": "2013.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/17707605-w-is-for-wasted?from_choice=true"
+      },
+      "title": "W is for Wasted",
+      "votes": "1007"
+    },
+    {
+      "authors": [
+        "Lauren Beukes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Mystery & Thriller",
+      "position": "2013.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/16131077-the-shining-girls?from_choice=true"
+      },
+      "title": "The Shining Girls",
+      "votes": "811"
+    },
+    {
+      "authors": [
+        "Lee Child"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Mystery & Thriller",
+      "position": "2013.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/17262159-never-go-back?from_choice=true"
+      },
+      "title": "Never Go Back",
+      "votes": "717"
+    },
+    {
+      "authors": [
+        "A.S.A. Harrison"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Mystery & Thriller",
+      "position": "2013.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/16171291-the-silent-wife?from_choice=true"
+      },
+      "title": "The Silent Wife",
+      "votes": "690"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Mystery & Thriller",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18775247-mr-mercedes?from_choice=true"
+      },
+      "title": "Mr. Mercedes",
+      "votes": "41453"
+    },
+    {
+      "authors": [
+        "Robert Galbraith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Mystery & Thriller",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18214414-the-silkworm?from_choice=true"
+      },
+      "title": "The Silkworm",
+      "votes": "41034"
+    },
+    {
+      "authors": [
+        "Rob Thomas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Mystery & Thriller",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18209454-the-thousand-dollar-tan-line?from_choice=true"
+      },
+      "title": "The Thousand-Dollar Tan Line",
+      "votes": "23255"
+    },
+    {
+      "authors": [
+        "J.D. Robb"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Mystery & Thriller",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/20821249-festive-in-death?from_choice=true"
+      },
+      "title": "Festive in Death",
+      "votes": "17646"
+    },
+    {
+      "authors": [
+        "Janet Evanovich"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Mystery & Thriller",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/19004663-top-secret-twenty-one?from_choice=true"
+      },
+      "title": "Top Secret Twenty-One",
+      "votes": "16896"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Mystery & Thriller",
+      "position": "2014.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/19561922-the-long-way-home?from_choice=true"
+      },
+      "title": "The Long Way Home",
+      "votes": "16890"
+    },
+    {
+      "authors": [
+        "Tana French"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Mystery & Thriller",
+      "position": "2014.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/20821043-the-secret-place?from_choice=true"
+      },
+      "title": "The Secret Place",
+      "votes": "14297"
+    },
+    {
+      "authors": [
+        "Jo Nesb\u00f8"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Mystery & Thriller",
+      "position": "2014.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/19101283-the-son?from_choice=true"
+      },
+      "title": "The Son",
+      "votes": "12496"
+    },
+    {
+      "authors": [
+        "Terry Hayes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Mystery & Thriller",
+      "position": "2014.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18144124-i-am-pilgrim?from_choice=true"
+      },
+      "title": "I Am Pilgrim",
+      "votes": "12270"
+    },
+    {
+      "authors": [
+        "Alan Bradley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Mystery & Thriller",
+      "position": "2014.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/17834904-the-dead-in-their-vaulted-arches?from_choice=true"
+      },
+      "title": "The Dead in Their Vaulted Arches",
+      "votes": "11237"
+    },
+    {
+      "authors": [
+        "Harlan Coben"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Mystery & Thriller",
+      "position": "2014.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18114060-missing-you?from_choice=true"
+      },
+      "title": "Missing You",
+      "votes": "6631"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Mystery & Thriller",
+      "position": "2014.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/17333227-the-gods-of-guilt?from_choice=true"
+      },
+      "title": "The Gods of Guilt",
+      "votes": "6333"
+    },
+    {
+      "authors": [
+        "Greg Iles"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Mystery & Thriller",
+      "position": "2014.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18505832-natchez-burning?from_choice=true"
+      },
+      "title": "Natchez Burning",
+      "votes": "5992"
+    },
+    {
+      "authors": [
+        "Mary Kubica"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Mystery & Thriller",
+      "position": "2014.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18812405-the-good-girl?from_choice=true"
+      },
+      "title": "The Good Girl",
+      "votes": "4955"
+    },
+    {
+      "authors": [
+        "Lisa Unger"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Mystery & Thriller",
+      "position": "2014.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/20736539-in-the-blood?from_choice=true"
+      },
+      "title": "In the Blood",
+      "votes": "3312"
+    },
+    {
+      "authors": [
+        "Lee Child"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Mystery & Thriller",
+      "position": "2014.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/20263040-personal?from_choice=true"
+      },
+      "title": "Personal",
+      "votes": "2842"
+    },
+    {
+      "authors": [
+        "David Baldacci"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Mystery & Thriller",
+      "position": "2014.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18353714-the-target?from_choice=true"
+      },
+      "title": "The Target",
+      "votes": "2598"
+    },
+    {
+      "authors": [
+        "Sandra Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Mystery & Thriller",
+      "position": "2014.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/20454672-mean-streak?from_choice=true"
+      },
+      "title": "Mean Streak",
+      "votes": "2244"
+    },
+    {
+      "authors": [
+        "Laura McHugh"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Mystery & Thriller",
+      "position": "2014.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/18209468-the-weight-of-blood?from_choice=true"
+      },
+      "title": "The Weight of Blood",
+      "votes": "1714"
+    },
+    {
+      "authors": [
+        "Patrick Lee"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Mystery & Thriller",
+      "position": "2014.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/17934463-runner?from_choice=true"
+      },
+      "title": "Runner",
+      "votes": "1480"
+    },
+    {
+      "authors": [
+        "Paula Hawkins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Mystery & Thriller",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/22557272-the-girl-on-the-train?from_choice=true"
+      },
+      "title": "The Girl on the Train",
+      "votes": "106149"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Mystery & Thriller",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/23492589-finders-keepers?from_choice=true"
+      },
+      "title": "Finders Keepers",
+      "votes": "32451"
+    },
+    {
+      "authors": [
+        "Robert Galbraith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Mystery & Thriller",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/25735012-career-of-evil?from_choice=true"
+      },
+      "title": "Career of Evil",
+      "votes": "28526"
+    },
+    {
+      "authors": [
+        "J.D. Robb"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Mystery & Thriller",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/22571696-obsession-in-death?from_choice=true"
+      },
+      "title": "Obsession in Death",
+      "votes": "14586"
+    },
+    {
+      "authors": [
+        "Karin Slaughter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Mystery & Thriller",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/25465056-pretty-girls?from_choice=true"
+      },
+      "title": "Pretty Girls",
+      "votes": "12214"
+    },
+    {
+      "authors": [
+        "Tarryn Fisher"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Mystery & Thriller",
+      "position": "2015.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/25379213-marrow?from_choice=true"
+      },
+      "title": "Marrow",
+      "votes": "9871"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Mystery & Thriller",
+      "position": "2015.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/24586590-the-nature-of-the-beast?from_choice=true"
+      },
+      "title": "The Nature of the Beast",
+      "votes": "9415"
+    },
+    {
+      "authors": [
+        "Daniel Silva"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Mystery & Thriller",
+      "position": "2015.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/23460947-the-english-spy?from_choice=true"
+      },
+      "title": "The English Spy",
+      "votes": "8814"
+    },
+    {
+      "authors": [
+        "Tess Gerritsen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Mystery & Thriller",
+      "position": "2015.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/21489683-die-again?from_choice=true"
+      },
+      "title": "Die Again",
+      "votes": "8003"
+    },
+    {
+      "authors": [
+        "Harlan Coben"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Mystery & Thriller",
+      "position": "2015.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/22571540-the-stranger?from_choice=true"
+      },
+      "title": "The Stranger",
+      "votes": "7744"
+    },
+    {
+      "authors": [
+        "Rob Thomas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Mystery & Thriller",
+      "position": "2015.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/21437200-mr-kiss-and-tell?from_choice=true"
+      },
+      "title": "Mr. Kiss and Tell",
+      "votes": "3393"
+    },
+    {
+      "authors": [
+        "David Baldacci"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Mystery & Thriller",
+      "position": "2015.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/23153154-memory-man?from_choice=true"
+      },
+      "title": "Memory Man",
+      "votes": "3098"
+    },
+    {
+      "authors": [
+        "C.J. Sansom"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Mystery & Thriller",
+      "position": "2015.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/20892558-lamentation?from_choice=true"
+      },
+      "title": "Lamentation",
+      "votes": "3056"
+    },
+    {
+      "authors": [
+        "David Lagercrantz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Mystery & Thriller",
+      "position": "2015.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/25074850-the-girl-in-the-spider-s-web?from_choice=true"
+      },
+      "title": "The Girl in the Spider's Web",
+      "votes": "2963"
+    },
+    {
+      "authors": [
+        "David Baldacci"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Mystery & Thriller",
+      "position": "2015.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/20767918-the-escape?from_choice=true"
+      },
+      "title": "The Escape",
+      "votes": "2906"
+    },
+    {
+      "authors": [
+        "Peter Swanson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Mystery & Thriller",
+      "position": "2015.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/21936809-the-kind-worth-killing?from_choice=true"
+      },
+      "title": "The Kind Worth Killing",
+      "votes": "2875"
+    },
+    {
+      "authors": [
+        "John Sandford"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Mystery & Thriller",
+      "position": "2015.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/23281640-gathering-prey?from_choice=true"
+      },
+      "title": "Gathering Prey",
+      "votes": "2872"
+    },
+    {
+      "authors": [
+        "Don Winslow"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Mystery & Thriller",
+      "position": "2015.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/23602561-the-cartel?from_choice=true"
+      },
+      "title": "The Cartel",
+      "votes": "2699"
+    },
+    {
+      "authors": [
+        "Alan Bradley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Mystery & Thriller",
+      "position": "2015.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/21874813-as-chimney-sweepers-come-to-dust?from_choice=true"
+      },
+      "title": "As Chimney Sweepers Come to Dust",
+      "votes": "2450"
+    },
+    {
+      "authors": [
+        "Jessica Knoll"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Mystery & Thriller",
+      "position": "2015.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/22609317-luckiest-girl-alive?from_choice=true"
+      },
+      "title": "Luckiest Girl Alive",
+      "votes": "2015"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Mystery & Thriller",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/25526965-end-of-watch?from_choice=true"
+      },
+      "title": "End of Watch",
+      "votes": "42382"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Mystery & Thriller",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/28220985-a-great-reckoning?from_choice=true"
+      },
+      "title": "A Great Reckoning",
+      "votes": "23038"
+    },
+    {
+      "authors": [
+        "Ruth Ware"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Mystery & Thriller",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/28187230-the-woman-in-cabin-10?from_choice=true"
+      },
+      "title": "The Woman in Cabin 10",
+      "votes": "21621"
+    },
+    {
+      "authors": [
+        "J.D. Robb"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Mystery & Thriller",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/25337081-brotherhood-in-death?from_choice=true"
+      },
+      "title": "Brotherhood in Death",
+      "votes": "20475"
+    },
+    {
+      "authors": [
+        "B.A. Paris"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Mystery & Thriller",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/29437949-behind-closed-doors?from_choice=true"
+      },
+      "title": "Behind Closed Doors",
+      "votes": "18764"
+    },
+    {
+      "authors": [
+        "Noah Hawley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Mystery & Thriller",
+      "position": "2016.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/26245850-before-the-fall?from_choice=true"
+      },
+      "title": "Before the Fall",
+      "votes": "17496"
+    },
+    {
+      "authors": [
+        "Tana French"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Mystery & Thriller",
+      "position": "2016.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/29430013-the-trespasser?from_choice=true"
+      },
+      "title": "The Trespasser",
+      "votes": "17201"
+    },
+    {
+      "authors": [
+        "Megan Miranda"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Mystery & Thriller",
+      "position": "2016.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/27276324-all-the-missing-girls?from_choice=true"
+      },
+      "title": "All the Missing Girls",
+      "votes": "16683"
+    },
+    {
+      "authors": [
+        "Harlan Coben"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Mystery & Thriller",
+      "position": "2016.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/26109394-fool-me-once?from_choice=true"
+      },
+      "title": "Fool Me Once",
+      "votes": "15308"
+    },
+    {
+      "authors": [
+        "Shari Lapena"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Mystery & Thriller",
+      "position": "2016.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/28815474-the-couple-next-door?from_choice=true"
+      },
+      "title": "The Couple Next Door",
+      "votes": "13620"
+    },
+    {
+      "authors": [
+        "David Baldacci"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Mystery & Thriller",
+      "position": "2016.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/26245853-the-last-mile?from_choice=true"
+      },
+      "title": "The Last Mile",
+      "votes": "5801"
+    },
+    {
+      "authors": [
+        "Daniel Silva"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Mystery & Thriller",
+      "position": "2016.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/27213121-the-black-widow?from_choice=true"
+      },
+      "title": "The Black Widow",
+      "votes": "5477"
+    },
+    {
+      "authors": [
+        "Fiona Barton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Mystery & Thriller",
+      "position": "2016.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/25734248-the-widow?from_choice=true"
+      },
+      "title": "The Widow",
+      "votes": "4706"
+    },
+    {
+      "authors": [
+        "Kate Moretti"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Mystery & Thriller",
+      "position": "2016.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/27276292-the-vanishing-year?from_choice=true"
+      },
+      "title": "The Vanishing Year",
+      "votes": "2938"
+    },
+    {
+      "authors": [
+        "Robert Bryndza"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Mystery & Thriller",
+      "position": "2016.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/28721136-the-girl-in-the-ice?from_choice=true"
+      },
+      "title": "The Girl In The Ice",
+      "votes": "2846"
+    },
+    {
+      "authors": [
+        "Karin Slaughter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Mystery & Thriller",
+      "position": "2016.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/28374062-the-kept-woman?from_choice=true"
+      },
+      "title": "The Kept Woman",
+      "votes": "2191"
+    },
+    {
+      "authors": [
+        "Aleatha Romig"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Mystery & Thriller",
+      "position": "2016.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/28090846-into-the-light?from_choice=true"
+      },
+      "title": "Into the Light",
+      "votes": "1930"
+    },
+    {
+      "authors": [
+        "Angela Marsons"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Mystery & Thriller",
+      "position": "2016.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/30221492-play-dead?from_choice=true"
+      },
+      "title": "Play Dead",
+      "votes": "1911"
+    },
+    {
+      "authors": [
+        "Susan Elia MacNeal"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Mystery & Thriller",
+      "position": "2016.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/28503798-the-queen-s-accomplice?from_choice=true"
+      },
+      "title": "The Queen's Accomplice",
+      "votes": "1261"
+    },
+    {
+      "authors": [
+        "John Hart"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Mystery & Thriller",
+      "position": "2016.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/26883206-redemption-road?from_choice=true"
+      },
+      "title": "Redemption Road",
+      "votes": "941"
+    },
+    {
+      "authors": [
+        "Paula Hawkins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Mystery & Thriller",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/33151805-into-the-water?from_choice=true"
+      },
+      "title": "Into the Water",
+      "votes": "48247"
+    },
+    {
+      "authors": [
+        "Dan Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Mystery & Thriller",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/32283133-origin?from_choice=true"
+      },
+      "title": "Origin",
+      "votes": "48070"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Mystery & Thriller",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/33602101-glass-houses?from_choice=true"
+      },
+      "title": "Glass Houses",
+      "votes": "29772"
+    },
+    {
+      "authors": [
+        "Karin Slaughter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Mystery & Thriller",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/33199875-the-good-daughter?from_choice=true"
+      },
+      "title": "The Good Daughter",
+      "votes": "27125"
+    },
+    {
+      "authors": [
+        "Jane Harper"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Mystery & Thriller",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/28220971-the-dry?from_choice=true"
+      },
+      "title": "The Dry",
+      "votes": "18296"
+    },
+    {
+      "authors": [
+        "J.D. Robb"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Mystery & Thriller",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/32835140-secrets-in-death?from_choice=true"
+      },
+      "title": "Secrets in Death",
+      "votes": "16233"
+    },
+    {
+      "authors": [
+        "J.P. Delaney"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Mystery & Thriller",
+      "position": "2017.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/28016509-the-girl-before?from_choice=true"
+      },
+      "title": "The Girl Before",
+      "votes": "15931"
+    },
+    {
+      "authors": [
+        "Rachel Caine"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Mystery & Thriller",
+      "position": "2017.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/33398243-stillhouse-lake?from_choice=true"
+      },
+      "title": "Stillhouse Lake",
+      "votes": "13098"
+    },
+    {
+      "authors": [
+        "Greg Iles"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Mystery & Thriller",
+      "position": "2017.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/30653828-mississippi-blood?from_choice=true"
+      },
+      "title": "Mississippi Blood",
+      "votes": "11868"
+    },
+    {
+      "authors": [
+        "B.A. Paris"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Mystery & Thriller",
+      "position": "2017.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/31450633-the-breakdown?from_choice=true"
+      },
+      "title": "The Breakdown",
+      "votes": "11109"
+    },
+    {
+      "authors": [
+        "Chevy Stevens"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Mystery & Thriller",
+      "position": "2017.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/29939148-never-let-you-go?from_choice=true"
+      },
+      "title": "Never Let You Go",
+      "votes": "4067"
+    },
+    {
+      "authors": [
+        "Sarah A. Denzil"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Mystery & Thriller",
+      "position": "2017.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/34061743-silent-child?from_choice=true"
+      },
+      "title": "Silent Child",
+      "votes": "3645"
+    },
+    {
+      "authors": [
+        "John Sandford"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Mystery & Thriller",
+      "position": "2017.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/31379212-golden-prey?from_choice=true"
+      },
+      "title": "Golden Prey",
+      "votes": "3629"
+    },
+    {
+      "authors": [
+        "Kimberly Belle"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Mystery & Thriller",
+      "position": "2017.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/29095401-the-marriage-lie?from_choice=true"
+      },
+      "title": "The Marriage Lie",
+      "votes": "3463"
+    },
+    {
+      "authors": [
+        "A.R. Torre"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Mystery & Thriller",
+      "position": "2017.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/30962267-the-ghostwriter?from_choice=true"
+      },
+      "title": "The Ghostwriter",
+      "votes": "3314"
+    },
+    {
+      "authors": [
+        "Sarah Pinborough"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Mystery & Thriller",
+      "position": "2017.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/28965131-behind-her-eyes?from_choice=true"
+      },
+      "title": "Behind Her Eyes",
+      "votes": "2374"
+    },
+    {
+      "authors": [
+        "Brian Freeman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Mystery & Thriller",
+      "position": "2017.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/31184479-the-night-bird?from_choice=true"
+      },
+      "title": "The Night Bird",
+      "votes": "2163"
+    },
+    {
+      "authors": [
+        "Joe Ide"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Mystery & Thriller",
+      "position": "2017.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/34219801-righteous?from_choice=true"
+      },
+      "title": "Righteous",
+      "votes": "1374"
+    },
+    {
+      "authors": [
+        "Robert Bryndza"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Mystery & Thriller",
+      "position": "2017.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/34685945-last-breath?from_choice=true"
+      },
+      "title": "Last Breath",
+      "votes": "1319"
+    },
+    {
+      "authors": [
+        "J.D. Barker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Mystery & Thriller",
+      "position": "2017.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/31125554-the-fourth-monkey?from_choice=true"
+      },
+      "title": "The Fourth Monkey",
+      "votes": "860"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Mystery & Thriller",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/36124936-the-outsider?from_choice=true"
+      },
+      "title": "The Outsider",
+      "votes": "62170"
+    },
+    {
+      "authors": [
+        "A.J. Finn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Mystery & Thriller",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/34848682-the-woman-in-the-window?from_choice=true"
+      },
+      "title": "The Woman in the Window",
+      "votes": "55003"
+    },
+    {
+      "authors": [
+        "Robert Galbraith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Mystery & Thriller",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/40696964-lethal-white?from_choice=true"
+      },
+      "title": "Lethal White",
+      "votes": "39287"
+    },
+    {
+      "authors": [
+        "Greer Hendricks"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Mystery & Thriller",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/34189556-the-wife-between-us?from_choice=true"
+      },
+      "title": "The Wife Between Us",
+      "votes": "26711"
+    },
+    {
+      "authors": [
+        "Lisa Jewell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Mystery & Thriller",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/35297426-then-she-was-gone?from_choice=true"
+      },
+      "title": "Then She Was Gone",
+      "votes": "21868"
+    },
+    {
+      "authors": [
+        "Bill Clinton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Mystery & Thriller",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/35085389-the-president-is-missing?from_choice=true"
+      },
+      "title": "The President Is Missing",
+      "votes": "21436"
+    },
+    {
+      "authors": [
+        "Ruth Ware"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Mystery & Thriller",
+      "position": "2018.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/36373481-the-death-of-mrs-westaway?from_choice=true"
+      },
+      "title": "The Death of Mrs. Westaway",
+      "votes": "20231"
+    },
+    {
+      "authors": [
+        "Tana French"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Mystery & Thriller",
+      "position": "2018.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/39723581-the-witch-elm?from_choice=true"
+      },
+      "title": "The Witch Elm",
+      "votes": "18802"
+    },
+    {
+      "authors": [
+        "Jane Harper"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Mystery & Thriller",
+      "position": "2018.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/34275222-force-of-nature?from_choice=true"
+      },
+      "title": "Force of Nature",
+      "votes": "13347"
+    },
+    {
+      "authors": [
+        "Alice Feeney"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Mystery & Thriller",
+      "position": "2018.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/34275231-sometimes-i-lie?from_choice=true"
+      },
+      "title": "Sometimes I Lie",
+      "votes": "11895"
+    },
+    {
+      "authors": [
+        "Stuart Turton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Mystery & Thriller",
+      "position": "2018.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/36337550-the-7-deaths-of-evelyn-hardcastle?from_choice=true"
+      },
+      "title": "The 7\u00bd Deaths of Evelyn Hardcastle",
+      "votes": "5979"
+    },
+    {
+      "authors": [
+        "Catherine Steadman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Mystery & Thriller",
+      "position": "2018.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/36388243-something-in-the-water?from_choice=true"
+      },
+      "title": "Something in the Water",
+      "votes": "5864"
+    },
+    {
+      "authors": [
+        "C.J. Tudor"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Mystery & Thriller",
+      "position": "2018.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/35356382-the-chalk-man?from_choice=true"
+      },
+      "title": "The Chalk Man",
+      "votes": "4837"
+    },
+    {
+      "authors": [
+        "Sujata Massey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Mystery & Thriller",
+      "position": "2018.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/35133064-the-widows-of-malabar-hill?from_choice=true"
+      },
+      "title": "The Widows of Malabar Hill",
+      "votes": "4391"
+    },
+    {
+      "authors": [
+        "J.D. Robb"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Mystery & Thriller",
+      "position": "2018.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/37638161-leverage-in-death?from_choice=true"
+      },
+      "title": "Leverage in Death",
+      "votes": "3858"
+    },
+    {
+      "authors": [
+        "B.A. Paris"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Mystery & Thriller",
+      "position": "2018.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/36448554-bring-me-back?from_choice=true"
+      },
+      "title": "Bring Me Back",
+      "votes": "3494"
+    },
+    {
+      "authors": [
+        "Simone St. James"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Mystery & Thriller",
+      "position": "2018.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/35305625-the-broken-girls?from_choice=true"
+      },
+      "title": "The Broken Girls",
+      "votes": "2447"
+    },
+    {
+      "authors": [
+        "Riley Sager"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Mystery & Thriller",
+      "position": "2018.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/36750068-the-last-time-i-lied?from_choice=true"
+      },
+      "title": "The Last Time I Lied",
+      "votes": "2277"
+    },
+    {
+      "authors": [
+        "Victoria Helen Stone"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Mystery & Thriller",
+      "position": "2018.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/36604959-jane-doe?from_choice=true"
+      },
+      "title": "Jane Doe",
+      "votes": "1346"
+    },
+    {
+      "authors": [
+        "Joe Ide"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Mystery & Thriller",
+      "position": "2018.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/38496758-wrecked?from_choice=true"
+      },
+      "title": "Wrecked",
+      "votes": "1164"
+    },
+    {
+      "authors": [
+        "Alex Michaelides"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Mystery & Thriller",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/40097951-the-silent-patient?from_choice=true"
+      },
+      "title": "The Silent Patient",
+      "votes": "68821"
+    },
+    {
+      "authors": [
+        "Oyinkan Braithwaite"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Mystery & Thriller",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/38819868-my-sister-the-serial-killer?from_choice=true"
+      },
+      "title": "My Sister, the Serial Killer",
+      "votes": "52097"
+    },
+    {
+      "authors": [
+        "Ruth Ware"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Mystery & Thriller",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/42080142-the-turn-of-the-key?from_choice=true"
+      },
+      "title": "The Turn of the Key",
+      "votes": "31822"
+    },
+    {
+      "authors": [
+        "Jane Harper"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Mystery & Thriller",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/39863488-the-lost-man?from_choice=true"
+      },
+      "title": "The Lost Man",
+      "votes": "23526"
+    },
+    {
+      "authors": [
+        "Greer Hendricks"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Mystery & Thriller",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/39863515-an-anonymous-girl?from_choice=true"
+      },
+      "title": "An Anonymous Girl",
+      "votes": "19692"
+    },
+    {
+      "authors": [
+        "Alex North"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Mystery & Thriller",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/41940236-the-whisper-man?from_choice=true"
+      },
+      "title": "The Whisper Man",
+      "votes": "19627"
+    },
+    {
+      "authors": [
+        "Harlan Coben"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Mystery & Thriller",
+      "position": "2019.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/40697540-run-away?from_choice=true"
+      },
+      "title": "Run Away",
+      "votes": "18561"
+    },
+    {
+      "authors": [
+        "Riley Sager"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Mystery & Thriller",
+      "position": "2019.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/42368604-lock-every-door?from_choice=true"
+      },
+      "title": "Lock Every Door",
+      "votes": "17079"
+    },
+    {
+      "authors": [
+        "Angie Kim"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Mystery & Thriller",
+      "position": "2019.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/40121959-miracle-creek?from_choice=true"
+      },
+      "title": "Miracle Creek",
+      "votes": "14859"
+    },
+    {
+      "authors": [
+        "Sally Hepworth"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Mystery & Thriller",
+      "position": "2019.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/39863405-the-mother-in-law?from_choice=true"
+      },
+      "title": "The Mother-in-Law",
+      "votes": "13804"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Mystery & Thriller",
+      "position": "2019.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/44034500-a-better-man?from_choice=true"
+      },
+      "title": "A Better Man",
+      "votes": "7245"
+    },
+    {
+      "authors": [
+        "Lisa Jewell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Mystery & Thriller",
+      "position": "2019.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/43822820-the-family-upstairs?from_choice=true"
+      },
+      "title": "The Family Upstairs",
+      "votes": "6743"
+    },
+    {
+      "authors": [
+        "Adrian McKinty"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Mystery & Thriller",
+      "position": "2019.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/42779092-the-chain?from_choice=true"
+      },
+      "title": "The Chain",
+      "votes": "6275"
+    },
+    {
+      "authors": [
+        "Julia Phillips"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Mystery & Thriller",
+      "position": "2019.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/34563821-disappearing-earth?from_choice=true"
+      },
+      "title": "Disappearing Earth",
+      "votes": "4940"
+    },
+    {
+      "authors": [
+        "Jean Kwok"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Mystery & Thriller",
+      "position": "2019.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/41716679-searching-for-sylvie-lee?from_choice=true"
+      },
+      "title": "Searching for Sylvie Lee",
+      "votes": "3582"
+    },
+    {
+      "authors": [
+        "Catherine McKenzie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Mystery & Thriller",
+      "position": "2019.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/41081925-i-ll-never-tell?from_choice=true"
+      },
+      "title": "I'll Never Tell",
+      "votes": "3412"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Mystery & Thriller",
+      "position": "2019.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/43885041-the-night-fire?from_choice=true"
+      },
+      "title": "The Night Fire",
+      "votes": "2806"
+    },
+    {
+      "authors": [
+        "Karin Slaughter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Mystery & Thriller",
+      "position": "2019.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/42599605-the-last-widow?from_choice=true"
+      },
+      "title": "The Last Widow",
+      "votes": "2736"
+    },
+    {
+      "authors": [
+        "Samantha Downing"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Mystery & Thriller",
+      "position": "2019.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/39796904-my-lovely-wife?from_choice=true"
+      },
+      "title": "My Lovely Wife",
+      "votes": "2697"
+    },
+    {
+      "authors": [
+        "Tosca Lee"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Mystery & Thriller",
+      "position": "2019.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/38355304-the-line-between?from_choice=true"
+      },
+      "title": "The Line Between",
+      "votes": "1772"
+    },
+    {
+      "authors": [
+        "Lucy Foley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Mystery & Thriller",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/54911607-the-guest-list?from_choice=true"
+      },
+      "title": "The Guest List",
+      "votes": "73605"
+    },
+    {
+      "authors": [
+        "Riley Sager"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Mystery & Thriller",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/50833559-home-before-dark?from_choice=true"
+      },
+      "title": "Home Before Dark",
+      "votes": "35356"
+    },
+    {
+      "authors": [
+        "Simone St. James"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Mystery & Thriller",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/45885644-the-sun-down-motel?from_choice=true"
+      },
+      "title": "The Sun Down Motel",
+      "votes": "35340"
+    },
+    {
+      "authors": [
+        "Alyssa Cole"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Mystery & Thriller",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/49398072-when-no-one-is-watching?from_choice=true"
+      },
+      "title": "When No One Is Watching",
+      "votes": "33068"
+    },
+    {
+      "authors": [
+        "Tarryn Fisher"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Mystery & Thriller",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/44510385-the-wives?from_choice=true"
+      },
+      "title": "The Wives",
+      "votes": "31924"
+    },
+    {
+      "authors": [
+        "Tana French"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Mystery & Thriller",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/52661162-the-searcher?from_choice=true"
+      },
+      "title": "The Searcher",
+      "votes": "25428"
+    },
+    {
+      "authors": [
+        "Harlan Coben"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Mystery & Thriller",
+      "position": "2020.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/51204046-the-boy-from-the-woods?from_choice=true"
+      },
+      "title": "The Boy from the Woods",
+      "votes": "23717"
+    },
+    {
+      "authors": [
+        "One by Ruth Ware"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Mystery & Thriller",
+      "position": "2020.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/50892433-one-by-one?from_choice=true"
+      },
+      "title": "One",
+      "votes": "23019"
+    },
+    {
+      "authors": [
+        "Stuart Turton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Mystery & Thriller",
+      "position": "2020.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/51854625-the-devil-and-the-dark-water?from_choice=true"
+      },
+      "title": "The Devil and the Dark Water",
+      "votes": "22852"
+    },
+    {
+      "authors": [
+        "Liz Moore"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Mystery & Thriller",
+      "position": "2020.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/43834909-long-bright-river?from_choice=true"
+      },
+      "title": "Long Bright River",
+      "votes": "21436"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Mystery & Thriller",
+      "position": "2020.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/49127539-all-the-devils-are-here?from_choice=true"
+      },
+      "title": "All the Devils Are Here",
+      "votes": "7734"
+    },
+    {
+      "authors": [
+        "Greer Hendricks"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Mystery & Thriller",
+      "position": "2020.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/45046742-you-are-not-alone?from_choice=true"
+      },
+      "title": "You Are Not Alone",
+      "votes": "6549"
+    },
+    {
+      "authors": [
+        "Robert Galbraith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Mystery & Thriller",
+      "position": "2020.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/51807232-troubled-blood?from_choice=true"
+      },
+      "title": "Troubled Blood",
+      "votes": "6375"
+    },
+    {
+      "authors": [
+        "Jess Lourey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Mystery & Thriller",
+      "position": "2020.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/44303982-unspeakable-things?from_choice=true"
+      },
+      "title": "Unspeakable Things",
+      "votes": "5222"
+    },
+    {
+      "authors": [
+        "David Heska Wanbli Weiden"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Mystery & Thriller",
+      "position": "2020.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/48678117-winter-counts?from_choice=true"
+      },
+      "title": "Winter Counts",
+      "votes": "3925"
+    },
+    {
+      "authors": [
+        "S.A. Cosby"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Mystery & Thriller",
+      "position": "2020.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/51182571-blacktop-wasteland?from_choice=true"
+      },
+      "title": "Blacktop Wasteland",
+      "votes": "3606"
+    },
+    {
+      "authors": [
+        "Megan Goldin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Mystery & Thriller",
+      "position": "2020.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/51169341-the-night-swim?from_choice=true"
+      },
+      "title": "The Night Swim",
+      "votes": "3186"
+    },
+    {
+      "authors": [
+        "Rachel Howzell Hall"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Mystery & Thriller",
+      "position": "2020.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/49247317-and-now-she-s-gone?from_choice=true"
+      },
+      "title": "And Now She's Gone",
+      "votes": "2387"
+    },
+    {
+      "authors": [
+        "Lisa Unger"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Mystery & Thriller",
+      "position": "2020.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/49374505-confessions-on-the-7?from_choice=true"
+      },
+      "title": "Confessions on the 7",
+      "votes": "1622"
+    },
+    {
+      "authors": [
+        "L.T. Vargus"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Mystery & Thriller",
+      "position": "2020.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/54442955-first-girl-gone?from_choice=true"
+      },
+      "title": "First Girl Gone",
+      "votes": "855"
+    },
+    {
+      "authors": [
+        "Laura Dave"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Mystery & Thriller",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/58744977-the-last-thing-he-told-me?from_choice=true"
+      },
+      "title": "The Last Thing He Told Me",
+      "votes": "58406"
+    },
+    {
+      "authors": [
+        "Alex Michaelides"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Mystery & Thriller",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/45300567-the-maidens?from_choice=true"
+      },
+      "title": "The Maidens",
+      "votes": "49829"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Mystery & Thriller",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/56852407-billy-summers?from_choice=true"
+      },
+      "title": "Billy Summers",
+      "votes": "47847"
+    },
+    {
+      "authors": [
+        "Ashley Audrain"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Mystery & Thriller",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/52476830-the-push?from_choice=true"
+      },
+      "title": "The Push",
+      "votes": "39069"
+    },
+    {
+      "authors": [
+        "Mia P. Manansala"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Mystery & Thriller",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/54886959-arsenic-and-adobo?from_choice=true"
+      },
+      "title": "Arsenic and Adobo",
+      "votes": "28263"
+    },
+    {
+      "authors": [
+        "Colson Whitehead"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Mystery & Thriller",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/54626223-harlem-shuffle?from_choice=true"
+      },
+      "title": "Harlem Shuffle",
+      "votes": "26200"
+    },
+    {
+      "authors": [
+        "Liane Moriarty"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Mystery & Thriller",
+      "position": "2021.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/56143578-apples-never-fall?from_choice=true"
+      },
+      "title": "Apples Never Fall",
+      "votes": "24584"
+    },
+    {
+      "authors": [
+        "Rachel Hawkins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Mystery & Thriller",
+      "position": "2021.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/53137893-the-wife-upstairs?from_choice=true"
+      },
+      "title": "The Wife Upstairs",
+      "votes": "22922"
+    },
+    {
+      "authors": [
+        "Alice Feeney"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Mystery & Thriller",
+      "position": "2021.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/56269064-rock-paper-scissors?from_choice=true"
+      },
+      "title": "Rock Paper Scissors",
+      "votes": "21201"
+    },
+    {
+      "authors": [
+        "S.A. Cosby"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Mystery & Thriller",
+      "position": "2021.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/57660923-razorblade-tears?from_choice=true"
+      },
+      "title": "Razorblade Tears",
+      "votes": "17636"
+    },
+    {
+      "authors": [
+        "Mary Kubica"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Mystery & Thriller",
+      "position": "2021.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/54737068-local-woman-missing?from_choice=true"
+      },
+      "title": "Local Woman Missing",
+      "votes": "7273"
+    },
+    {
+      "authors": [
+        "Jane Harper"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Mystery & Thriller",
+      "position": "2021.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/53317496-the-survivors?from_choice=true"
+      },
+      "title": "The Survivors",
+      "votes": "6955"
+    },
+    {
+      "authors": [
+        "Sally Hepworth"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Mystery & Thriller",
+      "position": "2021.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/53137974-the-good-sister?from_choice=true"
+      },
+      "title": "The Good Sister",
+      "votes": "6844"
+    },
+    {
+      "authors": [
+        "Lisa Jewell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Mystery & Thriller",
+      "position": "2021.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/55922299-the-night-she-disappeared?from_choice=true"
+      },
+      "title": "The Night She Disappeared",
+      "votes": "6828"
+    },
+    {
+      "authors": [
+        "Chris Whitaker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Mystery & Thriller",
+      "position": "2021.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/50279680-we-begin-at-the-end?from_choice=true"
+      },
+      "title": "We Begin at the End",
+      "votes": "6706"
+    },
+    {
+      "authors": [
+        "Jean Hanff Korelitz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Mystery & Thriller",
+      "position": "2021.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/55315487-the-plot?from_choice=true"
+      },
+      "title": "The Plot",
+      "votes": "5340"
+    },
+    {
+      "authors": [
+        "Shari Lapena"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Mystery & Thriller",
+      "position": "2021.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/56366617-not-a-happy-family?from_choice=true"
+      },
+      "title": "Not a Happy Family",
+      "votes": "4807"
+    },
+    {
+      "authors": [
+        "Paula Hawkins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Mystery & Thriller",
+      "position": "2021.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/56213354-a-slow-fire-burning?from_choice=true"
+      },
+      "title": "A Slow Fire Burning",
+      "votes": "4702"
+    },
+    {
+      "authors": [
+        "A.R. Torre"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Mystery & Thriller",
+      "position": "2021.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/50516731-every-last-secret?from_choice=true"
+      },
+      "title": "Every Last Secret",
+      "votes": "3004"
+    },
+    {
+      "authors": [
+        "Wanda M. Morris"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Mystery & Thriller",
+      "position": "2021.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/57505278-all-her-little-secrets?from_choice=true"
+      },
+      "title": "All Her Little Secrets",
+      "votes": "1883"
+    },
+    {
+      "authors": [
+        "Nita Prose"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Mystery & Thriller",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/55196813-the-maid?from_choice=true"
+      },
+      "title": "The Maid",
+      "votes": "78403"
+    },
+    {
+      "authors": [
+        "Lucy Foley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Mystery & Thriller",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/58468990-the-paris-apartment?from_choice=true"
+      },
+      "title": "The Paris Apartment",
+      "votes": "70346"
+    },
+    {
+      "authors": [
+        "Richard Osman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Mystery & Thriller",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/58957615-the-bullet-that-missed?from_choice=true"
+      },
+      "title": "The Bullet That Missed",
+      "votes": "45969"
+    },
+    {
+      "authors": [
+        "Stacy Willingham"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Mystery & Thriller",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/57693172-a-flicker-in-the-dark?from_choice=true"
+      },
+      "title": "A Flicker in the Dark",
+      "votes": "36199"
+    },
+    {
+      "authors": [
+        "Simone St. James"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Mystery & Thriller",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/58371432-the-book-of-cold-cases?from_choice=true"
+      },
+      "title": "The Book of Cold Cases",
+      "votes": "29557"
+    },
+    {
+      "authors": [
+        "Gillian McAllister"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Mystery & Thriller",
+      "position": "2022.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/59947696-wrong-place-wrong-time?from_choice=true"
+      },
+      "title": "Wrong Place Wrong Time",
+      "votes": "27574"
+    },
+    {
+      "authors": [
+        "Deanna Raybourn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Mystery & Thriller",
+      "position": "2022.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/60149532-killers-of-a-certain-age?from_choice=true"
+      },
+      "title": "Killers of a Certain Age",
+      "votes": "27321"
+    },
+    {
+      "authors": [
+        "Ruth Ware"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Mystery & Thriller",
+      "position": "2022.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/59345249-the-it-girl?from_choice=true"
+      },
+      "title": "The It Girl",
+      "votes": "25406"
+    },
+    {
+      "authors": [
+        "Ashley Flowers"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Mystery & Thriller",
+      "position": "2022.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/60142750-all-good-people-here?from_choice=true"
+      },
+      "title": "All Good People Here",
+      "votes": "25174"
+    },
+    {
+      "authors": [
+        "Alice Feeney"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Mystery & Thriller",
+      "position": "2022.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/59808050-daisy-darker?from_choice=true"
+      },
+      "title": "Daisy Darker",
+      "votes": "24227"
+    },
+    {
+      "authors": [
+        "Freida McFadden"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Mystery & Thriller",
+      "position": "2022.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/61991328-the-housemaid?from_choice=true"
+      },
+      "title": "The Housemaid",
+      "votes": "9762"
+    },
+    {
+      "authors": [
+        "Greer Hendricks"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Mystery & Thriller",
+      "position": "2022.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/57693416-the-golden-couple?from_choice=true"
+      },
+      "title": "The Golden Couple",
+      "votes": "7441"
+    },
+    {
+      "authors": [
+        "Jennifer Hillier"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Mystery & Thriller",
+      "position": "2022.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/58724802-things-we-do-in-the-dark?from_choice=true"
+      },
+      "title": "Things We Do in the Dark",
+      "votes": "7219"
+    },
+    {
+      "authors": [
+        "Brendan Slocumb"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Mystery & Thriller",
+      "position": "2022.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/58386733-the-violin-conspiracy?from_choice=true"
+      },
+      "title": "The Violin Conspiracy",
+      "votes": "6208"
+    },
+    {
+      "authors": [
+        "Lisa Jewell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Mystery & Thriller",
+      "position": "2022.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/58855185-the-family-remains?from_choice=true"
+      },
+      "title": "The Family Remains",
+      "votes": "6070"
+    },
+    {
+      "authors": [
+        "Alex Finlay"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Mystery & Thriller",
+      "position": "2022.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/57693427-the-night-shift?from_choice=true"
+      },
+      "title": "The Night Shift",
+      "votes": "5840"
+    },
+    {
+      "authors": [
+        "Erin E. Adams"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Mystery & Thriller",
+      "position": "2022.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/58756502-jackal?from_choice=true"
+      },
+      "title": "Jackal",
+      "votes": "5193"
+    },
+    {
+      "authors": [
+        "Heather Gudenkauf"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Mystery & Thriller",
+      "position": "2022.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/57649351-the-overnight-guest?from_choice=true"
+      },
+      "title": "The Overnight Guest",
+      "votes": "4546"
+    },
+    {
+      "authors": [
+        "Catherine Steadman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Mystery & Thriller",
+      "position": "2022.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/60417443-the-family-game?from_choice=true"
+      },
+      "title": "The Family Game",
+      "votes": "3122"
+    },
+    {
+      "authors": [
+        "Katie Gutierrez"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Mystery & Thriller",
+      "position": "2022.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/58984701-more-than-you-ll-ever-know?from_choice=true"
+      },
+      "title": "More Than You'll Ever Know",
+      "votes": "2739"
+    },
+    {
+      "authors": [
+        "Freida McFadden"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Mystery & Thriller",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/62848145-the-housemaid-s-secret?from_choice=true"
+      },
+      "title": "The Housemaid's Secret",
+      "votes": "86468"
+    },
+    {
+      "authors": [
+        "Lisa Jewell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Mystery & Thriller",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/62334530-none-of-this-is-true?from_choice=true"
+      },
+      "title": "None of This Is True",
+      "votes": "73187"
+    },
+    {
+      "authors": [
+        "Riley Sager"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Mystery & Thriller",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/62703226-the-only-one-left?from_choice=true"
+      },
+      "title": "The Only One Left",
+      "votes": "63021"
+    },
+    {
+      "authors": [
+        "Richard Osman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Mystery & Thriller",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/62226126-the-last-devil-to-die?from_choice=true"
+      },
+      "title": "The Last Devil to Die",
+      "votes": "58583"
+    },
+    {
+      "authors": [
+        "Jesse Q. Sutanto"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Mystery & Thriller",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/61327512-vera-wong-s-unsolicited-advice-for-murderers?from_choice=true"
+      },
+      "title": "Vera Wong's Unsolicited Advice for Murderers",
+      "votes": "39966"
+    },
+    {
+      "authors": [
+        "Jessica Knoll"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Mystery & Thriller",
+      "position": "2023.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/101124639-bright-young-women?from_choice=true"
+      },
+      "title": "Bright Young Women",
+      "votes": "34352"
+    },
+    {
+      "authors": [
+        "Stacy Willingham"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Mystery & Thriller",
+      "position": "2023.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/60784636-all-the-dangerous-things?from_choice=true"
+      },
+      "title": "All the Dangerous Things",
+      "votes": "31428"
+    },
+    {
+      "authors": [
+        "Kate Morton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Mystery & Thriller",
+      "position": "2023.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/61683285-homecoming?from_choice=true"
+      },
+      "title": "Homecoming",
+      "votes": "27135"
+    },
+    {
+      "authors": [
+        "Rebecca Makkai"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Mystery & Thriller",
+      "position": "2023.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/61053829-i-have-some-questions-for-you?from_choice=true"
+      },
+      "title": "I Have Some Questions for You",
+      "votes": "24636"
+    },
+    {
+      "authors": [
+        "S.A. Cosby"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Mystery & Thriller",
+      "position": "2023.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/61884832-all-the-sinners-bleed?from_choice=true"
+      },
+      "title": "All the Sinners Bleed",
+      "votes": "20704"
+    },
+    {
+      "authors": [
+        "William Kent Krueger"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Mystery & Thriller",
+      "position": "2023.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/101160844-the-river-we-remember?from_choice=true"
+      },
+      "title": "The River We Remember",
+      "votes": "9182"
+    },
+    {
+      "authors": [
+        "Kate Alice Marshall"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Mystery & Thriller",
+      "position": "2023.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/60784373-what-lies-in-the-woods?from_choice=true"
+      },
+      "title": "What Lies in the Woods",
+      "votes": "8928"
+    },
+    {
+      "authors": [
+        "Rachel Hawkins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Mystery & Thriller",
+      "position": "2023.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/60784641-the-villa?from_choice=true"
+      },
+      "title": "The Villa",
+      "votes": "7788"
+    },
+    {
+      "authors": [
+        "Karin Slaughter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Mystery & Thriller",
+      "position": "2023.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/63833664-after-that-night?from_choice=true"
+      },
+      "title": "After That Night",
+      "votes": "6741"
+    },
+    {
+      "authors": [
+        "Freida McFadden"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Mystery & Thriller",
+      "position": "2023.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/123423832-the-coworker?from_choice=true"
+      },
+      "title": "The Coworker",
+      "votes": "6373"
+    },
+    {
+      "authors": [
+        "Angie Kim"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Mystery & Thriller",
+      "position": "2023.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/75495002-happiness-falls?from_choice=true"
+      },
+      "title": "Happiness Falls",
+      "votes": "5471"
+    },
+    {
+      "authors": [
+        "Alice Feeney"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Mystery & Thriller",
+      "position": "2023.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/83668030-good-bad-girl?from_choice=true"
+      },
+      "title": "Good Bad Girl",
+      "votes": "5323"
+    },
+    {
+      "authors": [
+        "Nicola Sanders"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Mystery & Thriller",
+      "position": "2023.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/80830635-don-t-let-her-stay?from_choice=true"
+      },
+      "title": "Don't Let Her Stay",
+      "votes": "4099"
+    },
+    {
+      "authors": [
+        "Jean Kwok"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Mystery & Thriller",
+      "position": "2023.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/78296909-the-leftover-woman?from_choice=true"
+      },
+      "title": "The Leftover Woman",
+      "votes": "3378"
+    },
+    {
+      "authors": [
+        "Loreth Anne White"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Mystery & Thriller",
+      "position": "2023.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/60588456-the-maid-s-diary?from_choice=true"
+      },
+      "title": "The Maid's Diary",
+      "votes": "2982"
+    },
+    {
+      "authors": [
+        "Liz Moore"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Mystery & Thriller",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/199700434-the-god-of-the-woods?from_choice=true"
+      },
+      "title": "The God of the Woods",
+      "votes": "82603"
+    },
+    {
+      "authors": [
+        "Ashley Elston"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Mystery & Thriller",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/164444179-first-lie-wins?from_choice=true"
+      },
+      "title": "First Lie Wins",
+      "votes": "74753"
+    },
+    {
+      "authors": [
+        "Freida McFadden"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Mystery & Thriller",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/208503244-the-boyfriend?from_choice=true"
+      },
+      "title": "The Boyfriend",
+      "votes": "57069"
+    },
+    {
+      "authors": [
+        "Freida McFadden"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Mystery & Thriller",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/195967140-the-teacher?from_choice=true"
+      },
+      "title": "The Teacher",
+      "votes": "56944"
+    },
+    {
+      "authors": [
+        "Chris Whitaker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Mystery & Thriller",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/203019740-all-the-colors-of-the-dark?from_choice=true"
+      },
+      "title": "All the Colors of the Dark",
+      "votes": "50047"
+    },
+    {
+      "authors": [
+        "Amy Tintera"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Mystery & Thriller",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/127279000-listen-for-the-lie?from_choice=true"
+      },
+      "title": "Listen for the Lie",
+      "votes": "47313"
+    },
+    {
+      "authors": [
+        "Richard Osman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Mystery & Thriller",
+      "position": "2024.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/219449299-we-solve-murders?from_choice=true"
+      },
+      "title": "We Solve Murders",
+      "votes": "43327"
+    },
+    {
+      "authors": [
+        "Jeneva Rose"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Mystery & Thriller",
+      "position": "2024.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/194020321-home-is-where-the-bodies-are?from_choice=true"
+      },
+      "title": "Home Is Where the Bodies Are",
+      "votes": "34554"
+    },
+    {
+      "authors": [
+        "Lucy Foley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Mystery & Thriller",
+      "position": "2024.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/199743738-the-midnight-feast?from_choice=true"
+      },
+      "title": "The Midnight Feast",
+      "votes": "30672"
+    },
+    {
+      "authors": [
+        "Kristen Perrin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Mystery & Thriller",
+      "position": "2024.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/181350367-how-to-solve-your-own-murder?from_choice=true"
+      },
+      "title": "How to Solve Your Own Murder",
+      "votes": "29969"
+    },
+    {
+      "authors": [
+        "Riley Sager"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Mystery & Thriller",
+      "position": "2024.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/199026522-middle-of-the-night?from_choice=true"
+      },
+      "title": "Middle of the Night",
+      "votes": "11836"
+    },
+    {
+      "authors": [
+        "Nita Prose"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Mystery & Thriller",
+      "position": "2024.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/157062582-the-mystery-guest?from_choice=true"
+      },
+      "title": "The Mystery Guest",
+      "votes": "11798"
+    },
+    {
+      "authors": [
+        "Sally Hepworth"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Mystery & Thriller",
+      "position": "2024.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/127280429-darling-girls?from_choice=true"
+      },
+      "title": "Darling Girls",
+      "votes": "9509"
+    },
+    {
+      "authors": [
+        "Rachel Hawkins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Mystery & Thriller",
+      "position": "2024.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/126919284-the-heiress?from_choice=true"
+      },
+      "title": "The Heiress",
+      "votes": "7778"
+    },
+    {
+      "authors": [
+        "Jason Rekulak"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Mystery & Thriller",
+      "position": "2024.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/203579177-the-last-one-at-the-wedding?from_choice=true"
+      },
+      "title": "The Last One at the Wedding",
+      "votes": "5189"
+    },
+    {
+      "authors": [
+        "Laura Dave"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Mystery & Thriller",
+      "position": "2024.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/207299448-the-night-we-lost-him?from_choice=true"
+      },
+      "title": "The Night We Lost Him",
+      "votes": "4889"
+    },
+    {
+      "authors": [
+        "Emiko Jean"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Mystery & Thriller",
+      "position": "2024.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/199798460-the-return-of-ellie-black?from_choice=true"
+      },
+      "title": "The Return of Ellie Black",
+      "votes": "4770"
+    },
+    {
+      "authors": [
+        "Lauren Ling Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Mystery & Thriller",
+      "position": "2024.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/202102003-society-of-lies?from_choice=true"
+      },
+      "title": "Society of Lies",
+      "votes": "3691"
+    },
+    {
+      "authors": [
+        "Sarah Pekkanen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Mystery & Thriller",
+      "position": "2024.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/195790531-house-of-glass?from_choice=true"
+      },
+      "title": "House of Glass",
+      "votes": "3505"
+    },
+    {
+      "authors": [
+        "Yasmin Angoe"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Mystery & Thriller",
+      "position": "2024.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/203687982-not-what-she-seems?from_choice=true"
+      },
+      "title": "Not What She Seems",
+      "votes": "1531"
+    },
+    {
+      "authors": [
+        "Holly Jackson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Mystery & Thriller",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/220223963-not-quite-dead-yet?from_choice=true"
+      },
+      "title": "Not Quite Dead Yet",
+      "votes": "77149"
+    },
+    {
+      "authors": [
+        "Freida McFadden"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Mystery & Thriller",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/221733727-the-tenant?from_choice=true"
+      },
+      "title": "The Tenant",
+      "votes": "70021"
+    },
+    {
+      "authors": [
+        "Richard Osman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Mystery & Thriller",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/222292420-the-impossible-fortune?from_choice=true"
+      },
+      "title": "The Impossible Fortune",
+      "votes": "65953"
+    },
+    {
+      "authors": [
+        "Alice Feeney"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Mystery & Thriller",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/211004123-beautiful-ugly?from_choice=true"
+      },
+      "title": "Beautiful Ugly",
+      "votes": "50948"
+    },
+    {
+      "authors": [
+        "Jeneva Rose"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Mystery & Thriller",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/219240806-the-perfect-divorce?from_choice=true"
+      },
+      "title": "The Perfect Divorce",
+      "votes": "48024"
+    },
+    {
+      "authors": [
+        "Jesse Q. Sutanto"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Mystery & Thriller",
+      "position": "2025.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/215805853-vera-wong-s-guide-to-snooping-on-a-dead-man?from_choice=true"
+      },
+      "title": "Vera Wong's Guide to Snooping",
+      "votes": "43105"
+    },
+    {
+      "authors": [
+        "S.A. Cosby"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Mystery & Thriller",
+      "position": "2025.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/219833252-king-of-ashes?from_choice=true"
+      },
+      "title": "King of Ashes",
+      "votes": "42115"
+    },
+    {
+      "authors": [
+        "Dan Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Mystery & Thriller",
+      "position": "2025.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/223889699-the-secret-of-secrets?from_choice=true"
+      },
+      "title": "The Secret of Secrets",
+      "votes": "40002"
+    },
+    {
+      "authors": [
+        "Lisa Jewell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Mystery & Thriller",
+      "position": "2025.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/220160814-don-t-let-him-in?from_choice=true"
+      },
+      "title": "Don't Let Him In",
+      "votes": "37975"
+    },
+    {
+      "authors": [
+        "Karin Slaughter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Mystery & Thriller",
+      "position": "2025.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/221544394-we-are-all-guilty-here?from_choice=true"
+      },
+      "title": "We Are All Guilty Here",
+      "votes": "34658"
+    },
+    {
+      "authors": [
+        "Freida McFadden"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Mystery & Thriller",
+      "position": "2025.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/216223604-the-crash?from_choice=true"
+      },
+      "title": "The Crash",
+      "votes": "16868"
+    },
+    {
+      "authors": [
+        "Ashley Flowers"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Mystery & Thriller",
+      "position": "2025.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/217213002-the-missing-half?from_choice=true"
+      },
+      "title": "The Missing Half",
+      "votes": "16504"
+    },
+    {
+      "authors": [
+        "Freida McFadden"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Mystery & Thriller",
+      "position": "2025.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/231819058-the-intruder?from_choice=true"
+      },
+      "title": "The Intruder",
+      "votes": "14537"
+    },
+    {
+      "authors": [
+        "Amity Gaige"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Mystery & Thriller",
+      "position": "2025.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/220259184-heartwood?from_choice=true"
+      },
+      "title": "Heartwood",
+      "votes": "13673"
+    },
+    {
+      "authors": [
+        "Julie Clark"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Mystery & Thriller",
+      "position": "2025.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/218644981-the-ghostwriter?from_choice=true"
+      },
+      "title": "The Ghostwriter",
+      "votes": "13101"
+    },
+    {
+      "authors": [
+        "Gillian McAllister"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Mystery & Thriller",
+      "position": "2025.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/212421066-famous-last-words?from_choice=true"
+      },
+      "title": "Famous Last Words",
+      "votes": "11258"
+    },
+    {
+      "authors": [
+        "John Marrs"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Mystery & Thriller",
+      "position": "2025.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/212375021-you-killed-me-first?from_choice=true"
+      },
+      "title": "You Killed Me First",
+      "votes": "9594"
+    },
+    {
+      "authors": [
+        "Stacy Willingham"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Mystery & Thriller",
+      "position": "2025.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/217387937-forget-me-not?from_choice=true"
+      },
+      "title": "Forget Me Not",
+      "votes": "8845"
+    },
+    {
+      "authors": [
+        "Reese Witherspoon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Mystery & Thriller",
+      "position": "2025.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/219385951-gone-before-goodbye?from_choice=true"
+      },
+      "title": "Gone Before Goodbye",
+      "votes": "7280"
+    },
+    {
+      "authors": [
+        "John Grisham"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Mystery & Thriller",
+      "position": "2025.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/229004506-the-widow?from_choice=true"
+      },
+      "title": "The Widow",
+      "votes": "6586"
+    }
+  ],
+  "fetched_at": "2026-07-16T23:45:43Z",
+  "list_id": "goodreads_choice_awards_mystery_thriller",
+  "list_name": "Goodreads Choice Awards - Mystery & Thriller",
+  "match_series": false,
+  "notes": [
+    "Goodreads Choice Awards overview could not be fetched: https://www.goodreads.com/choiceawards/best-books-2026: HTTP Error 404: Not Found"
+  ],
+  "parser": "goodreads_choice_awards_mystery_thriller",
+  "schema_version": 2,
+  "source": {
+    "name": "Goodreads Choice Awards - Mystery & Thriller",
+    "source_id": "goodreads_choice_awards_mystery_thriller",
+    "url": "https://www.goodreads.com/choiceawards"
+  }
+}

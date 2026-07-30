@@ -1,0 +1,1987 @@
+{
+  "append_state": {
+    "entry_count": 178,
+    "last_entry_key": "this violent heart|heather levy",
+    "last_position": "2026.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Nancy Pickard"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1986",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1986",
+      "result": "winner",
+      "title": "Say No to Murder"
+    },
+    {
+      "authors": [
+        "P.M. Carlson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1986",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1986.01",
+      "result": "nominee",
+      "title": "Murder Is Academic"
+    },
+    {
+      "authors": [
+        "Earl Emerson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1986",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1986.02",
+      "result": "nominee",
+      "title": "Poverty Bay"
+    },
+    {
+      "authors": [
+        "Kate Green"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1986",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1986.03",
+      "result": "nominee",
+      "title": "Shattered Moon"
+    },
+    {
+      "authors": [
+        "Patrick A. Kelley"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1986",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1986.04",
+      "result": "nominee",
+      "title": "Sleightly Murder"
+    },
+    {
+      "authors": [
+        "Robert Campbell"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1987",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1987",
+      "result": "winner",
+      "title": "The Junkyard Dog"
+    },
+    {
+      "authors": [
+        "Lilian Jackson Braun"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1987",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1987.01",
+      "result": "nominee",
+      "title": "The Cat Who Saw Red"
+    },
+    {
+      "authors": [
+        "J.A. Jance"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1987",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1987.02",
+      "result": "nominee",
+      "title": "Trial by Fury"
+    },
+    {
+      "authors": [
+        "Rob Kantner"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1987",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1987.03",
+      "result": "nominee",
+      "title": "The Back-Door Man"
+    },
+    {
+      "authors": [
+        "Warren Murphy"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1987",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1987.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.stopyourekillingme.com/M_Authors/Murphy_Warren.html"
+      },
+      "title": "Too Old a Cat"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1988",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1988",
+      "result": "winner",
+      "title": "The Monkey\u2019s Raincoat"
+    },
+    {
+      "authors": [
+        "Lilian Jackson Braun"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1988",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1988.01",
+      "result": "nominee",
+      "title": "The Cat Who Played Brahms"
+    },
+    {
+      "authors": [
+        "Carolyn G. Hart"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1988",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1988.02",
+      "result": "nominee",
+      "title": "Death on Demand"
+    },
+    {
+      "authors": [
+        "Conrad Haynes"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1988",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1988.03",
+      "result": "nominee",
+      "title": "Bishop\u2019s Gambit, Declined"
+    },
+    {
+      "authors": [
+        "Lia Matera"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1988",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1988.04",
+      "result": "nominee",
+      "title": "Where Lawyers Fear To Tread"
+    },
+    {
+      "authors": [
+        "Sharyn McCrumb"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1988",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1988.05",
+      "result": "nominee",
+      "title": "Bimbos of the Death Sun"
+    },
+    {
+      "authors": [
+        "Carolin G. Hart"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1989",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1989",
+      "result": "winner",
+      "title": "Something Wicked"
+    },
+    {
+      "authors": [
+        "Michael Avallone"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1989",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1989.01",
+      "result": "nominee",
+      "title": "High Noon at Midnight"
+    },
+    {
+      "authors": [
+        "P.M. Carlson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1989",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1989.02",
+      "result": "nominee",
+      "title": "Murder Unrenovated"
+    },
+    {
+      "authors": [
+        "David Handler"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1989",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1989.03",
+      "result": "nominee",
+      "title": "The Man Who Died Laughing"
+    },
+    {
+      "authors": [
+        "Lia Matera"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1989",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1989.04",
+      "result": "nominee",
+      "title": "A Radical Departure"
+    },
+    {
+      "authors": [
+        "Sharyn McCrumb"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1989",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1989.05",
+      "result": "nominee",
+      "title": "Paying the Piper"
+    },
+    {
+      "authors": [
+        "D.R. Meredith"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1989",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1989.06",
+      "result": "nominee",
+      "title": "Murder by Impulse"
+    },
+    {
+      "authors": [
+        "Marilyn Wallace"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1989",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1989.07",
+      "result": "nominee",
+      "title": "Primary Target"
+    },
+    {
+      "authors": [
+        "Carolyn G. Hart"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1990",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1990",
+      "result": "winner",
+      "title": "Honeymoon with Murder"
+    },
+    {
+      "authors": [
+        "Malacai Black"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1990",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1990.01",
+      "result": "nominee",
+      "title": "On My Honor"
+    },
+    {
+      "authors": [
+        "D.R. Meredith"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1990",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1990.02",
+      "result": "nominee",
+      "title": "Murder by Deception"
+    },
+    {
+      "authors": [
+        "Keith Peterson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1990",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1990.03",
+      "result": "nominee",
+      "title": "Rough Justice"
+    },
+    {
+      "authors": [
+        "Deborah Valentine"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1990",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1990.04",
+      "result": "nominee",
+      "title": "A Collector of Photographs"
+    },
+    {
+      "authors": [
+        "Harlan Coben"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1996",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1996",
+      "result": "winner",
+      "title": "Deal Breaker"
+    },
+    {
+      "authors": [
+        "Eileen Dreyer"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1996",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1996.01",
+      "result": "nominee",
+      "title": "Bad Medicine"
+    },
+    {
+      "authors": [
+        "Teri Holbrook"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1996",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1996.02",
+      "result": "nominee",
+      "title": "A Far and Deadly Cry"
+    },
+    {
+      "authors": [
+        "Gloria White"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1996",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1996.03",
+      "result": "nominee",
+      "title": "Charged with Guilt"
+    },
+    {
+      "authors": [
+        "R.D. Zimmerman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1996",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1996.04",
+      "result": "nominee",
+      "title": "Closet"
+    },
+    {
+      "authors": [
+        "Terris McMahan Grimes"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1997",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1997",
+      "result": "winner",
+      "title": "Somebody Else\u2019s Child"
+    },
+    {
+      "authors": [
+        "Harlan Coben"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1997",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1997.01",
+      "result": "nominee",
+      "title": "Fade Away"
+    },
+    {
+      "authors": [
+        "Teri Holbrook"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1997",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1997.02",
+      "result": "nominee",
+      "title": "The Grass Widow"
+    },
+    {
+      "authors": [
+        "Susan Wade"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1997",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1997.03",
+      "result": "nominee",
+      "title": "Walking Rain"
+    },
+    {
+      "authors": [
+        "Steven Womack"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1997",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1997.04",
+      "result": "nominee",
+      "title": "Chain of Fools"
+    },
+    {
+      "authors": [
+        "Rick Riordan"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1998",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1998",
+      "result": "winner",
+      "title": "Big Red Tequila"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1998",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1998.01",
+      "result": "nominee",
+      "title": "Charm City"
+    },
+    {
+      "authors": [
+        "Sujata Massey"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1998",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1998.02",
+      "result": "nominee",
+      "title": "The Salaryman\u2019s Wife"
+    },
+    {
+      "authors": [
+        "Martin J. Smith"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1998",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1998.03",
+      "result": "nominee",
+      "title": "Time Release"
+    },
+    {
+      "authors": [
+        "K.J.A. Wishnia"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1998",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1998.04",
+      "result": "nominee",
+      "title": "23 Shades of Black"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1999",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1999",
+      "result": "winner",
+      "title": "Butchers Hill"
+    },
+    {
+      "authors": [
+        "Sujata Massey"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1999",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1999.01",
+      "result": "nominee",
+      "title": "Zen Attitude"
+    },
+    {
+      "authors": [
+        "Rick Riordan"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1999",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1999.02",
+      "result": "nominee",
+      "title": "The Widower\u2019s Two Step"
+    },
+    {
+      "authors": [
+        "Caroline Roe"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1999",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1999.03",
+      "result": "nominee",
+      "title": "Remedy for Treason"
+    },
+    {
+      "authors": [
+        "Steven Womack"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1999",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "1999.04",
+      "result": "nominee",
+      "title": "Murder Manual"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2000",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2000",
+      "result": "winner",
+      "title": "In Big Trouble"
+    },
+    {
+      "authors": [
+        "Robin Burcell"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2000",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2000.01",
+      "result": "nominee",
+      "title": "Every Move She Makes"
+    },
+    {
+      "authors": [
+        "Anthony P. Dunbar"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2000",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2000.02",
+      "result": "nominee",
+      "title": "Lucky Man"
+    },
+    {
+      "authors": [
+        "Jos\u00e9 Latour"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2000",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2000.03",
+      "result": "nominee",
+      "title": "Outcast"
+    },
+    {
+      "authors": [
+        "Caroline Roe"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2000",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2000.04",
+      "result": "nominee",
+      "title": "Antidote for Avarice"
+    },
+    {
+      "authors": [
+        "Kate Grilley"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2001",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2001",
+      "result": "winner",
+      "title": "Death Dances to a Reggae Beat"
+    },
+    {
+      "authors": [
+        "Katy Munger"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2001",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2001.01",
+      "result": "nominee",
+      "title": "Bad to the Bone"
+    },
+    {
+      "authors": [
+        "Daniel Stashower"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2001",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2001.02",
+      "result": "nominee",
+      "title": "The Floating Lady Murder"
+    },
+    {
+      "authors": [
+        "Chassie West"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2001",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2001.03",
+      "result": "nominee",
+      "title": "Killing Kin"
+    },
+    {
+      "authors": [
+        "Laura Wilson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2001",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2001.04",
+      "result": "nominee",
+      "title": "A Little Death"
+    },
+    {
+      "authors": [
+        "Eric Wright"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2001",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2001.05",
+      "result": "nominee",
+      "title": "The Kidnapping of Rosie Dawn"
+    },
+    {
+      "authors": [
+        "Charlaine Harris"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2002",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2002",
+      "result": "winner",
+      "title": "Dead Until Dark"
+    },
+    {
+      "authors": [
+        "Jeff Abbott"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2002",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2002.01",
+      "result": "nominee",
+      "title": "A Kiss Gone Bad"
+    },
+    {
+      "authors": [
+        "Jerrilyn Farmer"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2002",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2002.02",
+      "result": "nominee",
+      "title": "Dim Sum Dead"
+    },
+    {
+      "authors": [
+        "P.J. Parrish"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2002",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2002.03",
+      "result": "nominee",
+      "title": "Dead of Winter"
+    },
+    {
+      "authors": [
+        "Daniel Stashower"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2002",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2002.04",
+      "result": "nominee",
+      "title": "The Houdini Specter"
+    },
+    {
+      "authors": [
+        "Robin Burcell"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2003",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2003",
+      "result": "winner",
+      "title": "Fatal Truth"
+    },
+    {
+      "authors": [
+        "Jeff Abbott"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2003",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2003.01",
+      "result": "nominee",
+      "title": "Black Jack Point"
+    },
+    {
+      "authors": [
+        "Roberta Isleib"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2003",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2003.02",
+      "result": "nominee",
+      "title": "Six Strokes Under"
+    },
+    {
+      "authors": [
+        "P.J. Parrish"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2003",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2003.03",
+      "result": "nominee",
+      "title": "Paint It Black"
+    },
+    {
+      "authors": [
+        "Andy Straka"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2003",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2003.04",
+      "result": "nominee",
+      "title": "A Killing Sky"
+    },
+    {
+      "authors": [
+        "Robin Burcell"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2004",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2004",
+      "result": "winner",
+      "title": "Deadly Legacy"
+    },
+    {
+      "authors": [
+        "Elaine Flinn"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2004",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2004.01",
+      "result": "nominee",
+      "title": "Dealing in Murder"
+    },
+    {
+      "authors": [
+        "P.J. Parrish"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2004",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2004.02",
+      "result": "nominee",
+      "title": "Thicker Than Water"
+    },
+    {
+      "authors": [
+        "Jason Starr"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2004",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2004.03",
+      "result": "nominee",
+      "title": "Tough Luck"
+    },
+    {
+      "authors": [
+        "Sylvia Maultash Warsh"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2004",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2004.04",
+      "result": "nominee",
+      "title": "Find Me Again"
+    },
+    {
+      "authors": [
+        "Jason Starr"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2005",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2005",
+      "result": "winner",
+      "title": "Twisted City"
+    },
+    {
+      "authors": [
+        "Robin Burcell"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2005",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2005.01",
+      "result": "nominee",
+      "title": "Cold Case"
+    },
+    {
+      "authors": [
+        "Roberta Isleib"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2005",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2005.02",
+      "result": "nominee",
+      "title": "Putt to Death"
+    },
+    {
+      "authors": [
+        "Susan McBride"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2005",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2005.03",
+      "result": "nominee",
+      "title": "Blue Blood"
+    },
+    {
+      "authors": [
+        "M.J. Rose"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2005",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2005.04",
+      "result": "nominee",
+      "title": "The Halo Effect"
+    },
+    {
+      "authors": [
+        "Reed Farrell Coleman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2006",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2006",
+      "result": "winner",
+      "title": "The James Deans"
+    },
+    {
+      "authors": [
+        "Allan Guthrie"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2006",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2006.01",
+      "result": "nominee",
+      "title": "Kiss Her Goodbye"
+    },
+    {
+      "authors": [
+        "Charlie Huston"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2006",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2006.02",
+      "result": "nominee",
+      "title": "Six Bad Things"
+    },
+    {
+      "authors": [
+        "Susan McBride"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2006",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2006.03",
+      "result": "nominee",
+      "title": "The Good Girl\u2019s Guide to Murder"
+    },
+    {
+      "authors": [
+        "P.J. Parrish"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2006",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2006.04",
+      "result": "nominee",
+      "title": "A Killing Rain"
+    },
+    {
+      "authors": [
+        "Dana Cameron"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2007",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2007",
+      "result": "winner",
+      "title": "Ashes and Bones"
+    },
+    {
+      "authors": [
+        "Troy Cook"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2007",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2007.01",
+      "result": "nominee",
+      "title": "47 Rules of Highly Effective Bank Robbers"
+    },
+    {
+      "authors": [
+        "Sean Doolittle"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2007",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2007.02",
+      "result": "nominee",
+      "title": "The Cleanup"
+    },
+    {
+      "authors": [
+        "Robert Fate"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2007",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2007.03",
+      "result": "nominee",
+      "title": "Baby Shark"
+    },
+    {
+      "authors": [
+        "Victor Gischler"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2007",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2007.04",
+      "result": "nominee",
+      "title": "Shotgun Opera"
+    },
+    {
+      "authors": [
+        "Naomi Hirahara"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2007",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2007.05",
+      "result": "nominee",
+      "title": "Snakeskin Shamisen"
+    },
+    {
+      "authors": [
+        "Charlie Huston"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2007",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2007.06",
+      "result": "nominee",
+      "title": "A Dangerous Man"
+    },
+    {
+      "authors": [
+        "P.J. Parrish"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2008",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2008",
+      "result": "winner",
+      "title": "A Thousand Bones"
+    },
+    {
+      "authors": [
+        "Megan Abbott"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2008",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2008.01",
+      "result": "nominee",
+      "title": "Queenpin"
+    },
+    {
+      "authors": [
+        "Ken Bruen",
+        "Jason Starr"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2008",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2008.02",
+      "result": "nominee",
+      "title": "Slide"
+    },
+    {
+      "authors": [
+        "David Corbett"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2008",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2008.03",
+      "result": "nominee",
+      "title": "Blood of Paradise"
+    },
+    {
+      "authors": [
+        "Robert Fate"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2008",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2008.04",
+      "result": "nominee",
+      "title": "Baby Shark\u2019s Beaumont Blues"
+    },
+    {
+      "authors": [
+        "Julie Hyzy"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2009",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2009",
+      "result": "winner",
+      "title": "State of the Onion"
+    },
+    {
+      "authors": [
+        "Max Allan Collins"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2009",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2009.01",
+      "result": "nominee",
+      "title": "The First Quarry"
+    },
+    {
+      "authors": [
+        "Christa Faust"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2009",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2009.02",
+      "result": "nominee",
+      "title": "Money Shot"
+    },
+    {
+      "authors": [
+        "Vicki Lane"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2009",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2009.03",
+      "result": "nominee",
+      "title": "In a Dark Season"
+    },
+    {
+      "authors": [
+        "P.J. Parrish"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2009",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2009.04",
+      "result": "nominee",
+      "title": "South of Hell"
+    },
+    {
+      "authors": [
+        "Bryan Gruley"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2010",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2010",
+      "result": "winner",
+      "title": "Starvation Lake"
+    },
+    {
+      "authors": [
+        "Megan Abbott"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2010",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2010.01",
+      "result": "nominee",
+      "title": "Bury Me Deep"
+    },
+    {
+      "authors": [
+        "Ken Bruen",
+        "Reed Farrel Coleman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2010",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2010.02",
+      "result": "nominee",
+      "title": "Tower"
+    },
+    {
+      "authors": [
+        "Max Allan Collins"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2010",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2010.03",
+      "result": "nominee",
+      "title": "Quarry in the Middle"
+    },
+    {
+      "authors": [
+        "G.M. Malliet"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2010",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2010.04",
+      "result": "nominee",
+      "title": "Death and the Lit Chick"
+    },
+    {
+      "authors": [
+        "Hank Phillippi Ryan"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2010",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2010.05",
+      "result": "nominee",
+      "title": "Air Time"
+    },
+    {
+      "authors": [
+        "Duane Swierczynski"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2011",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2011",
+      "result": "winner",
+      "title": "Expiration Date"
+    },
+    {
+      "authors": [
+        "Robert Goddard"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2011",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2011.01",
+      "result": "nominee",
+      "title": "Long Time Coming"
+    },
+    {
+      "authors": [
+        "Bryan Gruley"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2011",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2011.02",
+      "result": "nominee",
+      "title": "The Hanging Tree"
+    },
+    {
+      "authors": [
+        "Hank Phillippi Ryan"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2011",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2011.03",
+      "result": "nominee",
+      "title": "Drive Time"
+    },
+    {
+      "authors": [
+        "Frank Tallis"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2011",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2011.04",
+      "result": "nominee",
+      "title": "Vienna Secrets"
+    },
+    {
+      "authors": [
+        "Julie Hyzy"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2012",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2012",
+      "result": "winner",
+      "title": "Buffalo West Wing"
+    },
+    {
+      "authors": [
+        "Robert Jackson Bennett"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2012",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2012.01",
+      "result": "nominee",
+      "title": "The Company Man"
+    },
+    {
+      "authors": [
+        "Christa Faust"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2012",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2012.02",
+      "result": "nominee",
+      "title": "Choke Hold"
+    },
+    {
+      "authors": [
+        "Michael Stanley"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2012",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2012.03",
+      "result": "nominee",
+      "title": "The Death of the Mantis"
+    },
+    {
+      "authors": [
+        "Duane Swierczynski"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2012",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2012.04",
+      "result": "nominee",
+      "title": "Fun & Games"
+    },
+    {
+      "authors": [
+        "Frank Tallis"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2012",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2012.05",
+      "result": "nominee",
+      "title": "Vienna Twilight"
+    },
+    {
+      "authors": [
+        "Johnny Shaw"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2013",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2013",
+      "result": "winner",
+      "title": "Big Maria"
+    },
+    {
+      "authors": [
+        "Lou Berney"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2013",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2013.01",
+      "result": "nominee",
+      "title": "Whiplash River"
+    },
+    {
+      "authors": [
+        "Joelle Charbonneau"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2013",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2013.02",
+      "result": "nominee",
+      "title": "Murder for Choir"
+    },
+    {
+      "authors": [
+        "Alison Gaylin"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2013",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2013.03",
+      "result": "nominee",
+      "title": "And She Was"
+    },
+    {
+      "authors": [
+        "Malla Nunn"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2013",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2013.04",
+      "result": "nominee",
+      "title": "Blessed Are the Dead"
+    },
+    {
+      "authors": [
+        "Catriona McPherson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2014",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2014",
+      "result": "winner",
+      "title": "As She Left It"
+    },
+    {
+      "authors": [
+        "Chris F. Holm"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2014",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2014.01",
+      "result": "nominee",
+      "title": "The Big Reap"
+    },
+    {
+      "authors": [
+        "Darrell James"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2014",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2014.02",
+      "result": "nominee",
+      "title": "Purgatory Key"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2014",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2014.03",
+      "result": "nominee",
+      "title": "Joyland"
+    },
+    {
+      "authors": [
+        "Alex Marwood"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2014",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2014.04",
+      "result": "nominee",
+      "title": "The Wicked Girls"
+    },
+    {
+      "authors": [
+        "Catriona McPherson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2015",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2015",
+      "result": "winner",
+      "title": "The Day She Died"
+    },
+    {
+      "authors": [
+        "Alison Gaylin"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2015",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2015.01",
+      "result": "nominee",
+      "title": "Stay With Me"
+    },
+    {
+      "authors": [
+        "Alex Marwood"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2015",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2015.02",
+      "result": "nominee",
+      "title": "The Killer Next Door"
+    },
+    {
+      "authors": [
+        "Ben H. Winters"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2015",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2015.03",
+      "result": "nominee",
+      "title": "World of Trouble"
+    },
+    {
+      "authors": [
+        "James W. Ziskin"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2015",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2015.04",
+      "result": "nominee",
+      "title": "No Stone Unturned"
+    },
+    {
+      "authors": [
+        "Lou Berney"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2016",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2016",
+      "result": "winner",
+      "title": "The Long and Faraway Gone"
+    },
+    {
+      "authors": [
+        "Adrian McKinty"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2016",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2016.01",
+      "result": "nominee",
+      "title": "Gun Street Girl"
+    },
+    {
+      "authors": [
+        "Lori Rader-Day"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2016",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2016.02",
+      "result": "nominee",
+      "title": "Little Pretty Things"
+    },
+    {
+      "authors": [
+        "Josh Stallings"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2016",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2016.03",
+      "result": "nominee",
+      "title": "Young Americans"
+    },
+    {
+      "authors": [
+        "James W. Ziskin"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2016",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2016.04",
+      "result": "nominee",
+      "title": "Stone Cold Dead"
+    },
+    {
+      "authors": [
+        "James W. Ziskin"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2017",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2017",
+      "result": "winner",
+      "title": "Heart of Stone"
+    },
+    {
+      "authors": [
+        "Patricia Abbott"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2017",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "Shot in Detroit"
+    },
+    {
+      "authors": [
+        "Eric Beetner"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2017",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "Leadfoot"
+    },
+    {
+      "authors": [
+        "Jess Lourey"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2017",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2017.03",
+      "result": "nominee",
+      "title": "Salem\u2019s Cipher"
+    },
+    {
+      "authors": [
+        "Adrian McKinty"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2017",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2017.04",
+      "result": "nominee",
+      "title": "Rain Dogs"
+    },
+    {
+      "authors": [
+        "Jay Stringer"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2017",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2017.05",
+      "result": "nominee",
+      "title": "How To Kill Friends and Implicate People"
+    },
+    {
+      "authors": [
+        "Lori Rader-Day"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2018",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2018",
+      "result": "winner",
+      "title": "The Day I Died"
+    },
+    {
+      "authors": [
+        "Nadine Nettmann"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2018",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "Uncorking a Lie"
+    },
+    {
+      "authors": [
+        "Thomas Pluck"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2018",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2018.02",
+      "result": "nominee",
+      "title": "Bad Boy Boogie"
+    },
+    {
+      "authors": [
+        "Eryk Pruitt"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2018",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2018.03",
+      "result": "nominee",
+      "title": "What We Reckon"
+    },
+    {
+      "authors": [
+        "James W. Ziskin"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2018",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2018.04",
+      "result": "nominee",
+      "title": "Cast the First Stone"
+    },
+    {
+      "authors": [
+        "Lori Rader-Day"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2019",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2019",
+      "result": "winner",
+      "title": "Under a Dark Sky"
+    },
+    {
+      "authors": [
+        "Kellye Garrett"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2019",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2019.01",
+      "result": "nominee",
+      "title": "Hollywood Ending"
+    },
+    {
+      "authors": [
+        "Alison Gaylin"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2019",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2019.02",
+      "result": "nominee",
+      "title": "If I Die Tonight"
+    },
+    {
+      "authors": [
+        "Naomi Hirahara"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2019",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2019.03",
+      "result": "nominee",
+      "title": "Hiroshima Boy"
+    },
+    {
+      "authors": [
+        "James W. Ziskin"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2019",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2019.04",
+      "result": "nominee",
+      "title": "A Stone\u2019s Throw"
+    },
+    {
+      "authors": [
+        "Gigi Pandian"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2020",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2020",
+      "result": "winner",
+      "title": "The Alchemist\u2019s Illusion"
+    },
+    {
+      "authors": [
+        "E.A. Aymar"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2020",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "The Unrepentant"
+    },
+    {
+      "authors": [
+        "Susanna Calkins"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2020",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "Murder Knocks Twice"
+    },
+    {
+      "authors": [
+        "L.A. Chandlar"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2020",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "The Pearl Dagger"
+    },
+    {
+      "authors": [
+        "Catriona McPherson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2020",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2020.04",
+      "result": "nominee",
+      "title": "Scot & Soda"
+    },
+    {
+      "authors": [
+        "Wendall Thomas"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2020",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2020.05",
+      "result": "nominee",
+      "title": "Drowned Under"
+    },
+    {
+      "authors": [
+        "Gabriel Valjan"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2020",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2020.06",
+      "result": "nominee",
+      "title": "The Company Files: 2. The Naming Game"
+    },
+    {
+      "authors": [
+        "Tracy Clark"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2024",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2024",
+      "result": "winner",
+      "title": "Hide"
+    },
+    {
+      "authors": [
+        "E.A. Aymar"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2024",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "No Home for Killers"
+    },
+    {
+      "authors": [
+        "James D.F. Hannah"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2024",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "Because the Night"
+    },
+    {
+      "authors": [
+        "Jess Lourey"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2024",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "The Taken Ones"
+    },
+    {
+      "authors": [
+        "Bobby Matthews"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2024",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2024.04",
+      "result": "nominee",
+      "title": "Magic City Blues"
+    },
+    {
+      "authors": [
+        "Scott Von Doviak"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2024",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2024.05",
+      "result": "nominee",
+      "title": "Lowdown Road"
+    },
+    {
+      "authors": [
+        "Tracy Clark"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2025",
+      "result": "winner",
+      "title": "Echo"
+    },
+    {
+      "authors": [
+        "Eric Beetner"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "The Last Few Miles of Road"
+    },
+    {
+      "authors": [
+        "James L\u2019Etoile"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "Served Cold"
+    },
+    {
+      "authors": [
+        "Alan Orloff"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "Late Checkout"
+    },
+    {
+      "authors": [
+        "Gabriel Valjan"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "The Big Lie"
+    },
+    {
+      "authors": [
+        "Lina Chern"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2026",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2026.01",
+      "result": "nominee",
+      "title": "Tricks of Fortune"
+    },
+    {
+      "authors": [
+        "Tracy Clark"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2026",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2026.02",
+      "result": "nominee",
+      "title": "Edge"
+    },
+    {
+      "authors": [
+        "Bruce Robert Coffin"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2026",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2026.03",
+      "result": "nominee",
+      "title": "Crimson Thaw"
+    },
+    {
+      "authors": [
+        "James L\u2019Etoile"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2026",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2026.04",
+      "result": "nominee",
+      "title": "River of Lies"
+    },
+    {
+      "authors": [
+        "Heather Levy"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2026",
+      "category": "Best Paperback/E-book/Audiobook",
+      "position": "2026.05",
+      "result": "nominee",
+      "title": "This Violent Heart"
+    }
+  ],
+  "fetched_at": "2026-07-18T02:40:00Z",
+  "list_id": "anthony_award_paperback_e_book_audiobook",
+  "list_name": "Anthony Award - Paperback/E-book/Audiobook",
+  "match_series": false,
+  "notes": [],
+  "parser": "anthony_award_paperback_e_book_audiobook",
+  "schema_version": 2,
+  "source": {
+    "name": "Anthony Award - Paperback/E-book/Audiobook",
+    "source_id": "anthony_award_paperback_e_book_audiobook",
+    "url": "https://www.stopyourekillingme.com/Awards/Anthony_Awards.html"
+  }
+}

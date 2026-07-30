@@ -1,0 +1,36 @@
+{
+  "append_state": {
+    "entry_count": 1,
+    "last_entry_key": "the knight of the swords|michael moorcock",
+    "last_position": "1972",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Michael Moorcock"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1972",
+      "category": "Best Novel",
+      "position": "1972",
+      "result": "winner",
+      "title": "The Knight of the Swords"
+    }
+  ],
+  "fetched_at": "2026-07-14T06:42:02Z",
+  "list_id": "british_fantasy_best_novel",
+  "list_name": "British Fantasy - Best Novel (discontinued)",
+  "match_series": false,
+  "notes": [
+    "Official BFS winners archive is winner-only.",
+    "Official BFS shortlist coverage is current-cycle only; historical shortlist rows come from SFADB year pages."
+  ],
+  "parser": "british_fantasy_best_novel",
+  "schema_version": 2,
+  "source": {
+    "name": "British Fantasy - Best Novel (discontinued)",
+    "source_id": "british_fantasy_best_novel",
+    "url": "https://britishfantasysociety.org/about-the-bfs/the-british-fantasy-awards/bfa-winners/"
+  }
+}

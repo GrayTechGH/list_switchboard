@@ -33,6 +33,23 @@ class UrlFetcherShirleyJackson(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
 
     return ShirleyJacksonParser()
 
+  def create_isfdb_parser(self):
+    try:
+      from calibre_plugins.list_switchboard.parser.shirley_jackson import (
+        ShirleyJacksonISFDBParser,
+      )
+    except ImportError:
+      from parser.shirley_jackson import ShirleyJacksonISFDBParser
+
+    return ShirleyJacksonISFDBParser()
+
+  def source_attempts(self):
+    attempts = list(super().source_attempts())
+    for attempt in attempts:
+      if attempt.source_rank == 1:
+        attempt.label = 'ISFDB + packaged supplement'
+    return tuple(attempts)
+
   def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
     return self.parser().parse(
       html,
@@ -43,6 +60,26 @@ class UrlFetcherShirleyJackson(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
       fetch_url=fetch_url,
       log=log,
       progress=progress)
+
+  def parse_isfdb_award_type(
+      self, html, base_url, fetch_url=None, log=None, progress=None):
+    try:
+      from calibre_plugins.list_switchboard.parser.shirley_jackson import (
+        apply_shirley_jackson_isfdb_supplement,
+      )
+    except ImportError:
+      from parser.shirley_jackson import (
+        apply_shirley_jackson_isfdb_supplement,
+      )
+
+    parsed = super().parse_isfdb_award_type(
+      html,
+      base_url,
+      fetch_url=fetch_url,
+      log=log,
+      progress=progress)
+    return apply_shirley_jackson_isfdb_supplement(
+      parsed, self.CATEGORY, self.NAME)
 
 
 class UrlFetcherShirleyJacksonNovel(UrlFetcherShirleyJackson):

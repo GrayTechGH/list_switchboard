@@ -17,6 +17,10 @@ except ImportError:
 
 
 OFFICIAL_URL = 'https://dublinliteraryaward.ie/the-library/prize-years/'
+OFFICIAL_API_URL = (
+  'https://dublinliteraryaward.ie/wp-json/wp/v2/prize_years_type'
+  '?per_page=100&orderby=date&order=desc&_fields=link,slug,title,content'
+)
 WIKIPEDIA_URL = 'https://en.wikipedia.org/wiki/Dublin_Literary_Award'
 
 
@@ -29,6 +33,7 @@ class UrlFetcherDublinLiteraryAward(UrlFetcherGeneric):
   source_id = 'dublin_literary_award'
   NAME = 'Dublin Literary Award'
   URL = OFFICIAL_URL
+  API_URL = OFFICIAL_API_URL
   WIKIPEDIA_URL = WIKIPEDIA_URL
   order = 242
   options = {'match_series': False}
@@ -55,10 +60,11 @@ class UrlFetcherDublinLiteraryAward(UrlFetcherGeneric):
     return (
       SourceAttempt(
         'Dublin Literary Award',
-        self.URL,
-        lambda html, url, fetch_url=None, log=None, progress=None: (
+        self.API_URL,
+        lambda html, _url, fetch_url=None, log=None, progress=None: (
           self.create_official_parser().parse(
-            html, url, self.NAME, fetch_url=fetch_url, log=log, progress=progress)),
+            html, self.URL, self.NAME,
+            fetch_url=fetch_url, log=log, progress=progress)),
         source_rank=0),
       SourceAttempt(
         'Wikipedia',

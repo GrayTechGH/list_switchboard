@@ -64,6 +64,31 @@ class ImportListCatalogTests(unittest.TestCase):
     self.assertEqual('true', series_recipe['match_series'])
     self.assertEqual('true', series_recipe['requires_series_matching'])
 
+  def test_ladies_of_horror_fiction_catalog_rows_stay_manually_passed(self):
+    expected_ids = (
+      'ladies_of_horror_fiction_novel',
+      'ladies_of_horror_fiction_novella',
+      'ladies_of_horror_fiction_collection',
+      'ladies_of_horror_fiction_debut',
+      'ladies_of_horror_fiction_young_adult',
+      'ladies_of_horror_fiction_middle_grade',
+      'ladies_of_horror_fiction_poetry_collection',
+      'ladies_of_horror_fiction_graphic_novel',
+    )
+    with tempfile.TemporaryDirectory() as folder:
+      output_path, _count = write_catalog(Path(folder) / 'lists.csv')
+      with output_path.open(encoding='utf-8-sig', newline='') as source:
+        rows = [
+          row for row in csv.DictReader(source)
+          if row['source_id'] in expected_ids
+        ]
+
+    self.assertEqual(expected_ids, tuple(row['source_id'] for row in rows))
+    self.assertTrue(all(
+      row['name'].endswith(' (discontinued)') for row in rows))
+    self.assertTrue(all(row['discontinued'] == 'true' for row in rows))
+    self.assertTrue(all(row['Manual Test'] == 'passed' for row in rows))
+
 
 if __name__ == '__main__':
   unittest.main()

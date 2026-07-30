@@ -32,7 +32,18 @@ class BarnesNobleBookClubParser(BookClubParserBase):
       entries = self.recommended_more_entries(soup, base_url)
     if not entries:
       entries = self.product_highlight_entries(soup, base_url)
-    return entries or super().entries_from_soup(soup, base_url, scope)
+    if entries:
+      return self.finalize_entries(entries)
+    return super().entries_from_soup(soup, base_url, scope)
+
+  def finalize_entries(self, entries):
+    if not entries or any(
+        entry.get('club_scope') != self.DEFAULT_SCOPE for entry in entries):
+      return entries
+    entries = sorted(entries, key=self.entry_sort_key)
+    for position, entry in enumerate(entries, start=1):
+      entry['position'] = str(position)
+    return entries
 
   def booknotification_entries(self, soup, base_url):
     entries = []

@@ -143,6 +143,7 @@ DEFAULT_USER_AGENT = (
 )
 DEFAULT_RESPONSE_MAX_BYTES = 10 * 1024 * 1024
 LARGE_RESPONSE_MAX_BYTES = 32 * 1024 * 1024
+DEFAULT_REQUEST_TIMEOUT = 30
 
 
 class ResponseTooLargeError(RuntimeError):
@@ -370,13 +371,14 @@ class ListSwitchboardCore(
       'Connection': 'close',
     }
 
-  def fetch_url(self, url, user_agent=None, max_bytes=None):
+  def fetch_url(self, url, user_agent=None, max_bytes=None, timeout=None):
     max_bytes = max_bytes or DEFAULT_RESPONSE_MAX_BYTES
+    timeout = timeout or DEFAULT_REQUEST_TIMEOUT
     headers = self.fetch_headers(user_agent=user_agent)
     if CalibreBrowser is not None:
       try:
         browser = self.calibre_browser(headers)
-        response = browser.open(url, timeout=30)
+        response = browser.open(url, timeout=timeout)
         return decode_url_response(response, max_bytes=max_bytes)
       except Exception as err:
         if is_ssl_certificate_error(err):
@@ -387,7 +389,7 @@ class ListSwitchboardCore(
     self.debug_fallback_urllib_fetch(url)
     request = Request(url, headers=headers)
     try:
-      with urlopen(request, timeout=30) as response:
+      with urlopen(request, timeout=timeout) as response:
         return decode_url_response(response, max_bytes=max_bytes)
     except (URLError, ssl.SSLError) as err:
       if is_ssl_certificate_error(err):

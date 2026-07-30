@@ -1,0 +1,2420 @@
+{
+  "append_state": {
+    "entry_count": 218,
+    "last_entry_key": "all this could be yours|hank phillippi ryan",
+    "last_position": "2026.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Sue Grafton"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1986",
+      "category": "Best Mystery Novel",
+      "position": "1986",
+      "result": "winner",
+      "title": "B Is for Burglar"
+    },
+    {
+      "authors": [
+        "Sarah Caudwell"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1986",
+      "category": "Best Mystery Novel",
+      "position": "1986.01",
+      "result": "nominee",
+      "title": "The Shortest Way to Hades"
+    },
+    {
+      "authors": [
+        "John D. MacDonald"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1986",
+      "category": "Best Mystery Novel",
+      "position": "1986.02",
+      "result": "nominee",
+      "title": "The Lonely Silver Rain"
+    },
+    {
+      "authors": [
+        "Charlotte MacLeod"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1986",
+      "category": "Best Mystery Novel",
+      "position": "1986.03",
+      "result": "nominee",
+      "title": "The Plain Old Man"
+    },
+    {
+      "authors": [
+        "Sara Paretsky"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1986",
+      "category": "Best Mystery Novel",
+      "position": "1986.04",
+      "result": "nominee",
+      "title": "Killing Orders"
+    },
+    {
+      "authors": [
+        "Sue Grafton"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1987",
+      "category": "Best Mystery Novel",
+      "position": "1987",
+      "result": "winner",
+      "title": "C Is for Corpse"
+    },
+    {
+      "authors": [
+        "Lawrence Block"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1987",
+      "category": "Best Mystery Novel",
+      "position": "1987.01",
+      "result": "nominee",
+      "title": "When the Sacred Ginmill Closes"
+    },
+    {
+      "authors": [
+        "John Lutz"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1987",
+      "category": "Best Mystery Novel",
+      "position": "1987.02",
+      "result": "nominee",
+      "title": "Tropical Heat"
+    },
+    {
+      "authors": [
+        "Nancy Pickard"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1987",
+      "category": "Best Mystery Novel",
+      "position": "1987.03",
+      "result": "nominee",
+      "title": "No Body"
+    },
+    {
+      "authors": [
+        "Jonathan Valin"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1987",
+      "category": "Best Mystery Novel",
+      "position": "1987.04",
+      "result": "nominee",
+      "title": "Life\u2019s Work"
+    },
+    {
+      "authors": [
+        "Tony Hillerman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1988",
+      "category": "Best Mystery Novel",
+      "position": "1988",
+      "result": "winner",
+      "title": "Skinwalkers"
+    },
+    {
+      "authors": [
+        "Linda Barnes"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1988",
+      "category": "Best Mystery Novel",
+      "position": "1988.01",
+      "result": "nominee",
+      "title": "A Trouble of Fools"
+    },
+    {
+      "authors": [
+        "Aaron Elkins"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1988",
+      "category": "Best Mystery Novel",
+      "position": "1988.02",
+      "result": "nominee",
+      "title": "Old Bones"
+    },
+    {
+      "authors": [
+        "Elizabeth Peters"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1988",
+      "category": "Best Mystery Novel",
+      "position": "1988.03",
+      "result": "nominee",
+      "title": "Trojan Gold"
+    },
+    {
+      "authors": [
+        "Nancy Pickard"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1988",
+      "category": "Best Mystery Novel",
+      "position": "1988.04",
+      "result": "nominee",
+      "title": "Marriage is Murder"
+    },
+    {
+      "authors": [
+        "Thomas Harris"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1989",
+      "category": "Best Mystery Novel",
+      "position": "1989",
+      "result": "winner",
+      "title": "The Silence of the Lambs"
+    },
+    {
+      "authors": [
+        "Dorothy Cannell"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1989",
+      "category": "Best Mystery Novel",
+      "position": "1989.01",
+      "result": "nominee",
+      "title": "The Widow\u2019s Club"
+    },
+    {
+      "authors": [
+        "Sue Grafton"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1989",
+      "category": "Best Mystery Novel",
+      "position": "1989.02",
+      "result": "nominee",
+      "title": "E Is for Evidence"
+    },
+    {
+      "authors": [
+        "Tony Hillerman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1989",
+      "category": "Best Mystery Novel",
+      "position": "1989.03",
+      "result": "nominee",
+      "title": "Thief of Time"
+    },
+    {
+      "authors": [
+        "Sara Paretsky"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1989",
+      "category": "Best Mystery Novel",
+      "position": "1989.04",
+      "result": "nominee",
+      "title": "Blood Shot"
+    },
+    {
+      "authors": [
+        "Nancy Pickard"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1989",
+      "category": "Best Mystery Novel",
+      "position": "1989.05",
+      "result": "nominee",
+      "title": "Dead Crazy"
+    },
+    {
+      "authors": [
+        "Bill Pronzini"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1989",
+      "category": "Best Mystery Novel",
+      "position": "1989.06",
+      "result": "nominee",
+      "title": "Shackles"
+    },
+    {
+      "authors": [
+        "Les Roberts"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1989",
+      "category": "Best Mystery Novel",
+      "position": "1989.07",
+      "result": "nominee",
+      "title": "Pepper Pike"
+    },
+    {
+      "authors": [
+        "Sarah Caudwell"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1990",
+      "category": "Best Mystery Novel",
+      "position": "1990",
+      "result": "winner",
+      "title": "The Sirens Sang of Murder"
+    },
+    {
+      "authors": [
+        "Susan Dunlap"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1990",
+      "category": "Best Mystery Novel",
+      "position": "1990.01",
+      "result": "nominee",
+      "title": "Pious Deception"
+    },
+    {
+      "authors": [
+        "Carolyn G. Hart"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1990",
+      "category": "Best Mystery Novel",
+      "position": "1990.02",
+      "result": "nominee",
+      "title": "A Little Class on Murder"
+    },
+    {
+      "authors": [
+        "Margaret Maron"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1990",
+      "category": "Best Mystery Novel",
+      "position": "1990.03",
+      "result": "nominee",
+      "title": "Corpus Christmas"
+    },
+    {
+      "authors": [
+        "Sue Grafton"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1991",
+      "category": "Best Mystery Novel",
+      "position": "1991",
+      "result": "winner",
+      "title": "G Is for Gumshoe"
+    },
+    {
+      "authors": [
+        "Lawrence Block"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1991",
+      "category": "Best Mystery Novel",
+      "position": "1991.01",
+      "result": "nominee",
+      "title": "A Ticket to the Boneyard"
+    },
+    {
+      "authors": [
+        "Lia Matera"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1991",
+      "category": "Best Mystery Novel",
+      "position": "1991.02",
+      "result": "nominee",
+      "title": "The Good Fight"
+    },
+    {
+      "authors": [
+        "Sharyn McCrumb"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1991",
+      "category": "Best Mystery Novel",
+      "position": "1991.03",
+      "result": "nominee",
+      "title": "If Ever I Return, Pretty Peggy-O"
+    },
+    {
+      "authors": [
+        "Julie Smith"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1991",
+      "category": "Best Mystery Novel",
+      "position": "1991.04",
+      "result": "nominee",
+      "title": "New Orleans Mourning"
+    },
+    {
+      "authors": [
+        "Peter Lovesey"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1992",
+      "category": "Best Mystery Novel",
+      "position": "1992",
+      "result": "winner",
+      "title": "The Last Detective"
+    },
+    {
+      "authors": [
+        "Susan Dunlap"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1992",
+      "category": "Best Mystery Novel",
+      "position": "1992.01",
+      "result": "nominee",
+      "title": "Rogue Wave"
+    },
+    {
+      "authors": [
+        "Linda Grant"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1992",
+      "category": "Best Mystery Novel",
+      "position": "1992.02",
+      "result": "nominee",
+      "title": "Love Nor Money"
+    },
+    {
+      "authors": [
+        "J.A. Jance"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1992",
+      "category": "Best Mystery Novel",
+      "position": "1992.03",
+      "result": "nominee",
+      "title": "Hour of the Hunter"
+    },
+    {
+      "authors": [
+        "Nancy Pickard"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1992",
+      "category": "Best Mystery Novel",
+      "position": "1992.04",
+      "result": "nominee",
+      "title": "I.O.U."
+    },
+    {
+      "authors": [
+        "Marilyn Wallace"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1992",
+      "category": "Best Mystery Novel",
+      "position": "1992.05",
+      "result": "nominee",
+      "title": "A Single Stone"
+    },
+    {
+      "authors": [
+        "Margaret Maron"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1993",
+      "category": "Best Mystery Novel",
+      "position": "1993",
+      "result": "winner",
+      "title": "Bootlegger\u2019s Daughter"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1993",
+      "category": "Best Mystery Novel",
+      "position": "1993.01",
+      "result": "nominee",
+      "title": "Lullaby Town"
+    },
+    {
+      "authors": [
+        "John Dunning"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1993",
+      "category": "Best Mystery Novel",
+      "position": "1993.02",
+      "result": "nominee",
+      "title": "Booked To Die"
+    },
+    {
+      "authors": [
+        "Carloyn G. Hart"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1993",
+      "category": "Best Mystery Novel",
+      "position": "1993.03",
+      "result": "nominee",
+      "title": "Southern Ghost"
+    },
+    {
+      "authors": [
+        "Sharyn McCrumb"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1993",
+      "category": "Best Mystery Novel",
+      "position": "1993.04",
+      "result": "nominee",
+      "title": "The Hangman\u2019s Beautiful Daughter"
+    },
+    {
+      "authors": [
+        "Marcia Muller"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1994",
+      "category": "Best Mystery Novel",
+      "position": "1994",
+      "result": "winner",
+      "title": "Wolf in the Shadows"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1994",
+      "category": "Best Mystery Novel",
+      "position": "1994.01",
+      "result": "nominee",
+      "title": "The Black Ice"
+    },
+    {
+      "authors": [
+        "Earl Emerson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1994",
+      "category": "Best Mystery Novel",
+      "position": "1994.02",
+      "result": "nominee",
+      "title": "Morons and Madmen"
+    },
+    {
+      "authors": [
+        "Joan Hess"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1994",
+      "category": "Best Mystery Novel",
+      "position": "1994.03",
+      "result": "nominee",
+      "title": "O Little Town of Maggody"
+    },
+    {
+      "authors": [
+        "Tony Hillerman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1994",
+      "category": "Best Mystery Novel",
+      "position": "1994.04",
+      "result": "nominee",
+      "title": "Sacred Clowns"
+    },
+    {
+      "authors": [
+        "Janet LaPierre"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1994",
+      "category": "Best Mystery Novel",
+      "position": "1994.05",
+      "result": "nominee",
+      "title": "Old Enemies"
+    },
+    {
+      "authors": [
+        "Margaret Maron"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1994",
+      "category": "Best Mystery Novel",
+      "position": "1994.06",
+      "result": "nominee",
+      "title": "Southern Discomfort"
+    },
+    {
+      "authors": [
+        "Kathy Hogan Trocheck"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1994",
+      "category": "Best Mystery Novel",
+      "position": "1994.07",
+      "result": "nominee",
+      "title": "To Live and Die in Dixie"
+    },
+    {
+      "authors": [
+        "Minette Walters"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1994",
+      "category": "Best Mystery Novel",
+      "position": "1994.08",
+      "result": "nominee",
+      "title": "The Sculptress"
+    },
+    {
+      "authors": [
+        "Charlene Weir"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1994",
+      "category": "Best Mystery Novel",
+      "position": "1994.09",
+      "result": "nominee",
+      "title": "Consider the Crows"
+    },
+    {
+      "authors": [
+        "Sharon McCrumb"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1995",
+      "category": "Best Mystery Novel",
+      "position": "1995",
+      "result": "winner",
+      "title": "She Walks These Hills"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1995",
+      "category": "Best Mystery Novel",
+      "position": "1995.01",
+      "result": "nominee",
+      "title": "The Concrete Blonde"
+    },
+    {
+      "authors": [
+        "Lionel Davidson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1995",
+      "category": "Best Mystery Novel",
+      "position": "1995.02",
+      "result": "nominee",
+      "title": "Kolymsky Heights"
+    },
+    {
+      "authors": [
+        "Janet Evanovich"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1995",
+      "category": "Best Mystery Novel",
+      "position": "1995.03",
+      "result": "nominee",
+      "title": "One for the Money"
+    },
+    {
+      "authors": [
+        "Sue Grafton"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1995",
+      "category": "Best Mystery Novel",
+      "position": "1995.04",
+      "result": "nominee",
+      "title": "K Is for Killer"
+    },
+    {
+      "authors": [
+        "Bayta Gur"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1995",
+      "category": "Best Mystery Novel",
+      "position": "1995.05",
+      "result": "nominee",
+      "title": "Murder on the Kibbutz"
+    },
+    {
+      "authors": [
+        "Reginald Hill"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1995",
+      "category": "Best Mystery Novel",
+      "position": "1995.06",
+      "result": "nominee",
+      "title": "Pictures of Perfection"
+    },
+    {
+      "authors": [
+        "Lynda La Plante"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1995",
+      "category": "Best Mystery Novel",
+      "position": "1995.07",
+      "result": "nominee",
+      "title": "Cold Shoulder"
+    },
+    {
+      "authors": [
+        "John Lescroart"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1995",
+      "category": "Best Mystery Novel",
+      "position": "1995.08",
+      "result": "nominee",
+      "title": "The 13th Juror"
+    },
+    {
+      "authors": [
+        "Val McDermid"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1995",
+      "category": "Best Mystery Novel",
+      "position": "1995.09",
+      "result": "nominee",
+      "title": "Crack Down"
+    },
+    {
+      "authors": [
+        "Walter Mosley"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1995",
+      "category": "Best Mystery Novel",
+      "position": "1995.10",
+      "result": "nominee",
+      "title": "Black Betty"
+    },
+    {
+      "authors": [
+        "Derek Raymond"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1995",
+      "category": "Best Mystery Novel",
+      "position": "1995.11",
+      "result": "nominee",
+      "title": "Not Till the Red Fog Rises"
+    },
+    {
+      "authors": [
+        "Janwillem van de Wetering"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1995",
+      "category": "Best Mystery Novel",
+      "position": "1995.12",
+      "result": "nominee",
+      "title": "Just a Corpse at Twilight"
+    },
+    {
+      "authors": [
+        "Mary Willis Walker"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1996",
+      "category": "Best Mystery Novel",
+      "position": "1996",
+      "result": "winner",
+      "title": "Under the Beetle\u2019s Cellar"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1996",
+      "category": "Best Mystery Novel",
+      "position": "1996.01",
+      "result": "nominee",
+      "title": "The Last Coyote"
+    },
+    {
+      "authors": [
+        "Barbara D\u2019Amato"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1996",
+      "category": "Best Mystery Novel",
+      "position": "1996.02",
+      "result": "nominee",
+      "title": "Hard Christmas"
+    },
+    {
+      "authors": [
+        "Andrew Klavan"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1996",
+      "category": "Best Mystery Novel",
+      "position": "1996.03",
+      "result": "nominee",
+      "title": "True Crime"
+    },
+    {
+      "authors": [
+        "Bill Pronzini"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1996",
+      "category": "Best Mystery Novel",
+      "position": "1996.04",
+      "result": "nominee",
+      "title": "Blue Lonesome"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1997",
+      "category": "Best Mystery Novel",
+      "position": "1997",
+      "result": "winner",
+      "title": "The Poet"
+    },
+    {
+      "authors": [
+        "Nevada Barr"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1997",
+      "category": "Best Mystery Novel",
+      "position": "1997.01",
+      "result": "nominee",
+      "title": "Firestorm"
+    },
+    {
+      "authors": [
+        "Linda Grant"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1997",
+      "category": "Best Mystery Novel",
+      "position": "1997.02",
+      "result": "nominee",
+      "title": "Lethal Genes"
+    },
+    {
+      "authors": [
+        "Margaret Lawrence"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1997",
+      "category": "Best Mystery Novel",
+      "position": "1997.03",
+      "result": "nominee",
+      "title": "Hearts and Bones"
+    },
+    {
+      "authors": [
+        "Alan Russell"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1997",
+      "category": "Best Mystery Novel",
+      "position": "1997.04",
+      "result": "nominee",
+      "title": "Multiple Wounds"
+    },
+    {
+      "authors": [
+        "S.J. Rozan"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1998",
+      "category": "Best Mystery Novel",
+      "position": "1998",
+      "result": "winner",
+      "title": "No Colder Place"
+    },
+    {
+      "authors": [
+        "Anthony Bruno"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1998",
+      "category": "Best Mystery Novel",
+      "position": "1998.01",
+      "result": "nominee",
+      "title": "Devil\u2019s Food"
+    },
+    {
+      "authors": [
+        "Earl Emerson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1998",
+      "category": "Best Mystery Novel",
+      "position": "1998.02",
+      "result": "nominee",
+      "title": "Deception Pass"
+    },
+    {
+      "authors": [
+        "Arturo Perez-Reverte"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1998",
+      "category": "Best Mystery Novel",
+      "position": "1998.03",
+      "result": "nominee",
+      "title": "The Club Dumas"
+    },
+    {
+      "authors": [
+        "James Sallis"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1998",
+      "category": "Best Mystery Novel",
+      "position": "1998.04",
+      "result": "nominee",
+      "title": "Eye of the Cricket"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1999",
+      "category": "Best Mystery Novel",
+      "position": "1999",
+      "result": "winner",
+      "title": "Blood Work"
+    },
+    {
+      "authors": [
+        "Nevada Barr"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1999",
+      "category": "Best Mystery Novel",
+      "position": "1999.01",
+      "result": "nominee",
+      "title": "Blind Descent"
+    },
+    {
+      "authors": [
+        "Reginald Hill"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1999",
+      "category": "Best Mystery Novel",
+      "position": "1999.02",
+      "result": "nominee",
+      "title": "On Beulah Height"
+    },
+    {
+      "authors": [
+        "Dennis Lehane"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1999",
+      "category": "Best Mystery Novel",
+      "position": "1999.03",
+      "result": "nominee",
+      "title": "Gone, Baby, Gone"
+    },
+    {
+      "authors": [
+        "Aileen Schumacher"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1999",
+      "category": "Best Mystery Novel",
+      "position": "1999.04",
+      "result": "nominee",
+      "title": "Framework for Death"
+    },
+    {
+      "authors": [
+        "Peter Robinson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2000",
+      "category": "Best Mystery Novel",
+      "position": "2000",
+      "result": "winner",
+      "title": "In a Dry Season"
+    },
+    {
+      "authors": [
+        "Rennie Airth"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2000",
+      "category": "Best Mystery Novel",
+      "position": "2000.01",
+      "result": "nominee",
+      "title": "River of Darkness"
+    },
+    {
+      "authors": [
+        "Jan Burke"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2000",
+      "category": "Best Mystery Novel",
+      "position": "2000.02",
+      "result": "nominee",
+      "title": "Bones"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2000",
+      "category": "Best Mystery Novel",
+      "position": "2000.03",
+      "result": "nominee",
+      "title": "L.A. Requiem"
+    },
+    {
+      "authors": [
+        "Janet Evanovich"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2000",
+      "category": "Best Mystery Novel",
+      "position": "2000.04",
+      "result": "nominee",
+      "title": "High Five"
+    },
+    {
+      "authors": [
+        "Val McDermid"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2001",
+      "category": "Best Mystery Novel",
+      "position": "2001",
+      "result": "winner",
+      "title": "A Place of Execution"
+    },
+    {
+      "authors": [
+        "Nevada Barr"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2001",
+      "category": "Best Mystery Novel",
+      "position": "2001.01",
+      "result": "nominee",
+      "title": "Deep South"
+    },
+    {
+      "authors": [
+        "Joe R. Lansdale"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2001",
+      "category": "Best Mystery Novel",
+      "position": "2001.02",
+      "result": "nominee",
+      "title": "The Bottoms"
+    },
+    {
+      "authors": [
+        "Marcia Muller"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2001",
+      "category": "Best Mystery Novel",
+      "position": "2001.03",
+      "result": "nominee",
+      "title": "Listen to the Silence"
+    },
+    {
+      "authors": [
+        "Elizabeth Peters"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2001",
+      "category": "Best Mystery Novel",
+      "position": "2001.04",
+      "result": "nominee",
+      "title": "He Shall Thunder in the Sky"
+    },
+    {
+      "authors": [
+        "Charles Todd"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2001",
+      "category": "Best Mystery Novel",
+      "position": "2001.05",
+      "result": "nominee",
+      "title": "Legacy of the Dead"
+    },
+    {
+      "authors": [
+        "Dennis Lehane"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2002",
+      "category": "Best Mystery Novel",
+      "position": "2002",
+      "result": "winner",
+      "title": "Mystic River"
+    },
+    {
+      "authors": [
+        "Jan Burke"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2002",
+      "category": "Best Mystery Novel",
+      "position": "2002.01",
+      "result": "nominee",
+      "title": "Flight"
+    },
+    {
+      "authors": [
+        "Harlan Coben"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2002",
+      "category": "Best Mystery Novel",
+      "position": "2002.02",
+      "result": "nominee",
+      "title": "Tell No One"
+    },
+    {
+      "authors": [
+        "Rick Riordan"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2002",
+      "category": "Best Mystery Novel",
+      "position": "2002.03",
+      "result": "nominee",
+      "title": "The Devil Went Down to Austin"
+    },
+    {
+      "authors": [
+        "S.J. Rozan"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2002",
+      "category": "Best Mystery Novel",
+      "position": "2002.04",
+      "result": "nominee",
+      "title": "Reflecting the Sky"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2003",
+      "category": "Best Mystery Novel",
+      "position": "2003",
+      "result": "winner",
+      "title": "City of Bones"
+    },
+    {
+      "authors": [
+        "Cara Black"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2003",
+      "category": "Best Mystery Novel",
+      "position": "2003.01",
+      "result": "nominee",
+      "title": "Murder in the Sentier"
+    },
+    {
+      "authors": [
+        "Steve Hamilton"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2003",
+      "category": "Best Mystery Novel",
+      "position": "2003.02",
+      "result": "nominee",
+      "title": "North of Nowhere"
+    },
+    {
+      "authors": [
+        "George Pelecanos"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2003",
+      "category": "Best Mystery Novel",
+      "position": "2003.03",
+      "result": "nominee",
+      "title": "Hell to Pay"
+    },
+    {
+      "authors": [
+        "S.J. Rozan"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2003",
+      "category": "Best Mystery Novel",
+      "position": "2003.04",
+      "result": "nominee",
+      "title": "Winter and Night"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2004",
+      "category": "Best Mystery Novel",
+      "position": "2004",
+      "result": "winner",
+      "title": "Every Secret Thing"
+    },
+    {
+      "authors": [
+        "Giles Blunt"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2004",
+      "category": "Best Mystery Novel",
+      "position": "2004.01",
+      "result": "nominee",
+      "title": "The Delicate Storm"
+    },
+    {
+      "authors": [
+        "Steve Hamilton"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2004",
+      "category": "Best Mystery Novel",
+      "position": "2004.02",
+      "result": "nominee",
+      "title": "Blood Is the Sky"
+    },
+    {
+      "authors": [
+        "Dennis Lehane"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2004",
+      "category": "Best Mystery Novel",
+      "position": "2004.03",
+      "result": "nominee",
+      "title": "Shutter Island"
+    },
+    {
+      "authors": [
+        "Peter Robinson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2004",
+      "category": "Best Mystery Novel",
+      "position": "2004.04",
+      "result": "nominee",
+      "title": "Close to Home"
+    },
+    {
+      "authors": [
+        "William Kent Krueger"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2005",
+      "category": "Best Mystery Novel",
+      "position": "2005",
+      "result": "winner",
+      "title": "Blood Hollow"
+    },
+    {
+      "authors": [
+        "Ken Bruen"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2005",
+      "category": "Best Mystery Novel",
+      "position": "2005.01",
+      "result": "nominee",
+      "title": "The Killing of the Tinkers"
+    },
+    {
+      "authors": [
+        "John Katzenbach"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2005",
+      "category": "Best Mystery Novel",
+      "position": "2005.02",
+      "result": "nominee",
+      "title": "The Madman\u2019s Tale"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2005",
+      "category": "Best Mystery Novel",
+      "position": "2005.03",
+      "result": "nominee",
+      "title": "By a Spider\u2019s Thread"
+    },
+    {
+      "authors": [
+        "T. Jefferson Parker"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2005",
+      "category": "Best Mystery Novel",
+      "position": "2005.04",
+      "result": "nominee",
+      "title": "California Girl"
+    },
+    {
+      "authors": [
+        "Julia Spencer-Fleming"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2005",
+      "category": "Best Mystery Novel",
+      "position": "2005.05",
+      "result": "nominee",
+      "title": "Out of the Deep I Cry"
+    },
+    {
+      "authors": [
+        "William Kent Krueger"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2006",
+      "category": "Best Mystery Novel",
+      "position": "2006",
+      "result": "winner",
+      "title": "Mercy Falls"
+    },
+    {
+      "authors": [
+        "Jan Burke"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2006",
+      "category": "Best Mystery Novel",
+      "position": "2006.01",
+      "result": "nominee",
+      "title": "Bloodlines"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2006",
+      "category": "Best Mystery Novel",
+      "position": "2006.02",
+      "result": "nominee",
+      "title": "The Lincoln Lawyer"
+    },
+    {
+      "authors": [
+        "Thomas H. Cook"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2006",
+      "category": "Best Mystery Novel",
+      "position": "2006.03",
+      "result": "nominee",
+      "title": "Red Leaves"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2006",
+      "category": "Best Mystery Novel",
+      "position": "2006.04",
+      "result": "nominee",
+      "title": "To the Power of Three"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2007",
+      "category": "Best Mystery Novel",
+      "position": "2007",
+      "result": "winner",
+      "title": "No Good Deeds"
+    },
+    {
+      "authors": [
+        "Jan Burke"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2007",
+      "category": "Best Mystery Novel",
+      "position": "2007.01",
+      "result": "nominee",
+      "title": "Kidnapped"
+    },
+    {
+      "authors": [
+        "Denise Mina"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2007",
+      "category": "Best Mystery Novel",
+      "position": "2007.02",
+      "result": "nominee",
+      "title": "The Dead Hour"
+    },
+    {
+      "authors": [
+        "Nancy Pickard"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2007",
+      "category": "Best Mystery Novel",
+      "position": "2007.03",
+      "result": "nominee",
+      "title": "The Virgin of Small Plains"
+    },
+    {
+      "authors": [
+        "Julia Spencer-Fleming"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2007",
+      "category": "Best Mystery Novel",
+      "position": "2007.04",
+      "result": "nominee",
+      "title": "All Mortal Flesh"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2008",
+      "category": "Best Mystery Novel",
+      "position": "2008",
+      "result": "winner",
+      "title": "What the Dead Know"
+    },
+    {
+      "authors": [
+        "James Lee Burke"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2008",
+      "category": "Best Mystery Novel",
+      "position": "2008.01",
+      "result": "nominee",
+      "title": "The Tin Roof Blowdown"
+    },
+    {
+      "authors": [
+        "Lee Child"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2008",
+      "category": "Best Mystery Novel",
+      "position": "2008.02",
+      "result": "nominee",
+      "title": "Bad Luck and Trouble"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2008",
+      "category": "Best Mystery Novel",
+      "position": "2008.03",
+      "result": "nominee",
+      "title": "The Watchman"
+    },
+    {
+      "authors": [
+        "William Kent Krueger"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2008",
+      "category": "Best Mystery Novel",
+      "position": "2008.04",
+      "result": "nominee",
+      "title": "Thunder Bay"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2009",
+      "category": "Best Mystery Novel",
+      "position": "2009",
+      "result": "winner",
+      "title": "The Brass Verdict"
+    },
+    {
+      "authors": [
+        "Sean Chercover"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2009",
+      "category": "Best Mystery Novel",
+      "position": "2009.01",
+      "result": "nominee",
+      "title": "Trigger City"
+    },
+    {
+      "authors": [
+        "William Kent Krueger"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2009",
+      "category": "Best Mystery Novel",
+      "position": "2009.02",
+      "result": "nominee",
+      "title": "Red Knife"
+    },
+    {
+      "authors": [
+        "Stieg Larsson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2009",
+      "category": "Best Mystery Novel",
+      "position": "2009.03",
+      "result": "nominee",
+      "title": "The Girl with the Dragon Tattoo"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2009",
+      "category": "Best Mystery Novel",
+      "position": "2009.04",
+      "result": "nominee",
+      "title": "The Cruelest Month"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2010",
+      "category": "Best Mystery Novel",
+      "position": "2010",
+      "result": "winner",
+      "title": "The Brutal Telling"
+    },
+    {
+      "authors": [
+        "John Hart"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2010",
+      "category": "Best Mystery Novel",
+      "position": "2010.01",
+      "result": "nominee",
+      "title": "The Last Child"
+    },
+    {
+      "authors": [
+        "Charlie Huston"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2010",
+      "category": "Best Mystery Novel",
+      "position": "2010.02",
+      "result": "nominee",
+      "title": "The Mystic Arts of Erasing All Signs of Death"
+    },
+    {
+      "authors": [
+        "Stieg Larsson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2010",
+      "category": "Best Mystery Novel",
+      "position": "2010.03",
+      "result": "nominee",
+      "title": "The Girl Who Played with Fire"
+    },
+    {
+      "authors": [
+        "S.J. Rozan"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2010",
+      "category": "Best Mystery Novel",
+      "position": "2010.04",
+      "result": "nominee",
+      "title": "The Shanghai Moon"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2011",
+      "category": "Best Mystery Novel",
+      "position": "2011",
+      "result": "winner",
+      "title": "Bury Your Dead"
+    },
+    {
+      "authors": [
+        "Tom Franklin"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2011",
+      "category": "Best Mystery Novel",
+      "position": "2011.01",
+      "result": "nominee",
+      "title": "Crooked Letter, Crooked Letter"
+    },
+    {
+      "authors": [
+        "Tana French"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2011",
+      "category": "Best Mystery Novel",
+      "position": "2011.02",
+      "result": "nominee",
+      "title": "Faithful Place"
+    },
+    {
+      "authors": [
+        "Steve Hamilton"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2011",
+      "category": "Best Mystery Novel",
+      "position": "2011.03",
+      "result": "nominee",
+      "title": "The Lock Artist"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2011",
+      "category": "Best Mystery Novel",
+      "position": "2011.04",
+      "result": "nominee",
+      "title": "I\u2019d Know You Anywhere"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2012",
+      "category": "Best Mystery Novel",
+      "position": "2012",
+      "result": "winner",
+      "title": "A Trick of the Light"
+    },
+    {
+      "authors": [
+        "Megan Abbott"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2012",
+      "category": "Best Mystery Novel",
+      "position": "2012.01",
+      "result": "nominee",
+      "title": "The End of Everything"
+    },
+    {
+      "authors": [
+        "Reed Farrel Coleman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2012",
+      "category": "Best Mystery Novel",
+      "position": "2012.02",
+      "result": "nominee",
+      "title": "Hurt Machine"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2012",
+      "category": "Best Mystery Novel",
+      "position": "2012.03",
+      "result": "nominee",
+      "title": "The Drop"
+    },
+    {
+      "authors": [
+        "Julia Spencer-Fleming"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2012",
+      "category": "Best Mystery Novel",
+      "position": "2012.04",
+      "result": "nominee",
+      "title": "One Was a Soldier"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2013",
+      "category": "Best Mystery Novel",
+      "position": "2013",
+      "result": "winner",
+      "title": "The Beautiful Mystery"
+    },
+    {
+      "authors": [
+        "Megan Abbott"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2013",
+      "category": "Best Mystery Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "title": "Dare Me"
+    },
+    {
+      "authors": [
+        "Sean Chercover"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2013",
+      "category": "Best Mystery Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "title": "Trinity Game"
+    },
+    {
+      "authors": [
+        "Gillian Flynn"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2013",
+      "category": "Best Mystery Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "title": "Gone Girl"
+    },
+    {
+      "authors": [
+        "Hank Phillippi Ryan"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2013",
+      "category": "Best Mystery Novel",
+      "position": "2013.04",
+      "result": "nominee",
+      "title": "The Other Woman"
+    },
+    {
+      "authors": [
+        "William Kent Krueger"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2014",
+      "category": "Best Mystery Novel",
+      "position": "2014",
+      "result": "winner",
+      "title": "Ordinary Grace"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2014",
+      "category": "Best Mystery Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "title": "Suspect"
+    },
+    {
+      "authors": [
+        "Sara J. Henry"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2014",
+      "category": "Best Mystery Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "title": "A Cold and Lonely Place"
+    },
+    {
+      "authors": [
+        "Hank Phillippi Ryan"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2014",
+      "category": "Best Mystery Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "title": "The Wrong Girl"
+    },
+    {
+      "authors": [
+        "Julia Spencer-Fleming"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2014",
+      "category": "Best Mystery Novel",
+      "position": "2014.04",
+      "result": "nominee",
+      "title": "Through the Evil Days"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2015",
+      "category": "Best Mystery Novel",
+      "position": "2015",
+      "result": "winner",
+      "title": "After I\u2019m Gone"
+    },
+    {
+      "authors": [
+        "Joe Clifford"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2015",
+      "category": "Best Mystery Novel",
+      "position": "2015.01",
+      "result": "nominee",
+      "title": "Lamentation"
+    },
+    {
+      "authors": [
+        "Tana French"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2015",
+      "category": "Best Mystery Novel",
+      "position": "2015.02",
+      "result": "nominee",
+      "title": "The Secret Place"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2015",
+      "category": "Best Mystery Novel",
+      "position": "2015.03",
+      "result": "nominee",
+      "title": "The Long Way Home"
+    },
+    {
+      "authors": [
+        "Hank Phillippi Ryan"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2015",
+      "category": "Best Mystery Novel",
+      "position": "2015.04",
+      "result": "nominee",
+      "title": "Truth Be Told"
+    },
+    {
+      "authors": [
+        "Chris Holm"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2016",
+      "category": "Best Mystery Novel",
+      "position": "2016",
+      "result": "winner",
+      "title": "The Killing Kind"
+    },
+    {
+      "authors": [
+        "Matt Coyle"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2016",
+      "category": "Best Mystery Novel",
+      "position": "2016.01",
+      "result": "nominee",
+      "title": "Night Tremors"
+    },
+    {
+      "authors": [
+        "Catriona McPherson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2016",
+      "category": "Best Mystery Novel",
+      "position": "2016.02",
+      "result": "nominee",
+      "title": "The Child Garden"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2016",
+      "category": "Best Mystery Novel",
+      "position": "2016.03",
+      "result": "nominee",
+      "title": "The Nature of the Beast"
+    },
+    {
+      "authors": [
+        "Hank Phillippi Ryan"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2016",
+      "category": "Best Mystery Novel",
+      "position": "2016.04",
+      "result": "nominee",
+      "title": "What You See"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2017",
+      "category": "Best Mystery Novel",
+      "position": "2017",
+      "result": "winner",
+      "title": "A Great Reckoning"
+    },
+    {
+      "authors": [
+        "Megan Abbott"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2017",
+      "category": "Best Mystery Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "You Will Know Me"
+    },
+    {
+      "authors": [
+        "Reed Farrel Coleman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2017",
+      "category": "Best Mystery Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "Where It Hurts"
+    },
+    {
+      "authors": [
+        "Chris Holm"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2017",
+      "category": "Best Mystery Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "title": "Red Right Hand"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2017",
+      "category": "Best Mystery Novel",
+      "position": "2017.04",
+      "result": "nominee",
+      "title": "Wilde Lake"
+    },
+    {
+      "authors": [
+        "Attica Locke"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2018",
+      "category": "Best Mystery Novel",
+      "position": "2018",
+      "result": "winner",
+      "title": "Bluebird, Bluebird"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2018",
+      "category": "Best Mystery Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "The Late Show"
+    },
+    {
+      "authors": [
+        "Anthony Horowitz"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2018",
+      "category": "Best Mystery Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "title": "Magpie Murders"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2018",
+      "category": "Best Mystery Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "title": "Glass Houses"
+    },
+    {
+      "authors": [
+        "Don Winslow"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2018",
+      "category": "Best Mystery Novel",
+      "position": "2018.04",
+      "result": "nominee",
+      "title": "The Force"
+    },
+    {
+      "authors": [
+        "Lou Berney"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2019",
+      "category": "Best Mystery Novel",
+      "position": "2019",
+      "result": "winner",
+      "title": "November Road"
+    },
+    {
+      "authors": [
+        "Megan Abbott"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2019",
+      "category": "Best Mystery Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "title": "Give Me Your Hand"
+    },
+    {
+      "authors": [
+        "Jennifer Hillier"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2019",
+      "category": "Best Mystery Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "title": "Jar of Hearts"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2019",
+      "category": "Best Mystery Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "title": "Sunburn"
+    },
+    {
+      "authors": [
+        "Alex Segura"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2019",
+      "category": "Best Mystery Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "title": "Blackout"
+    },
+    {
+      "authors": [
+        "Hank Phillippi Ryan"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2020",
+      "category": "Best Mystery Novel",
+      "position": "2020",
+      "result": "winner",
+      "title": "The Murder List"
+    },
+    {
+      "authors": [
+        "Steph Cha"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2020",
+      "category": "Best Mystery Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "Your House Will Pay"
+    },
+    {
+      "authors": [
+        "Rachel Howzell Hall"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2020",
+      "category": "Best Mystery Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "They All Fall Down"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2020",
+      "category": "Best Mystery Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "Lady in the Lake"
+    },
+    {
+      "authors": [
+        "Alex Segura"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2020",
+      "category": "Best Mystery Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "title": "Miami Midnight"
+    },
+    {
+      "authors": [
+        "S.A. Cosby"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2021",
+      "category": "Best Mystery Novel",
+      "position": "2021",
+      "result": "winner",
+      "title": "Blacktop Wasteland"
+    },
+    {
+      "authors": [
+        "Tracy Clark"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2021",
+      "category": "Best Mystery Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "What You Don\u2019t See"
+    },
+    {
+      "authors": [
+        "Jennifer Hillier"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2021",
+      "category": "Best Mystery Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "Little Secrets"
+    },
+    {
+      "authors": [
+        "Rachel Howzell Hall"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2021",
+      "category": "Best Mystery Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "And Now She\u2019s Gone"
+    },
+    {
+      "authors": [
+        "Hank Phillippi Ryan"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2021",
+      "category": "Best Mystery Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "The First To Lie"
+    },
+    {
+      "authors": [
+        "S.A. Cosby"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2022",
+      "category": "Best Mystery Novel",
+      "position": "2022",
+      "result": "winner",
+      "title": "Razorblade Tears"
+    },
+    {
+      "authors": [
+        "Tracy Clark"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2022",
+      "category": "Best Mystery Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "Runner"
+    },
+    {
+      "authors": [
+        "Alison Gaylin"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2022",
+      "category": "Best Mystery Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "The Collective"
+    },
+    {
+      "authors": [
+        "Naomi Hirahara"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2022",
+      "category": "Best Mystery Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "Clark and Division"
+    },
+    {
+      "authors": [
+        "Rachel Howzell Hall"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2022",
+      "category": "Best Mystery Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "These Toxic Things"
+    },
+    {
+      "authors": [
+        "S.A. Cosby"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2024",
+      "category": "Best Mystery Novel",
+      "position": "2024",
+      "result": "winner",
+      "title": "All the Sinners Bleed"
+    },
+    {
+      "authors": [
+        "Jordan Harper"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2024",
+      "category": "Best Mystery Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "Everybody Knows"
+    },
+    {
+      "authors": [
+        "Cheryl A. Head"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2024",
+      "category": "Best Mystery Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "Time\u2019s Undoing"
+    },
+    {
+      "authors": [
+        "James L\u2019Etoile"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2024",
+      "category": "Best Mystery Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "Face of Greed"
+    },
+    {
+      "authors": [
+        "Richard Osman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2024",
+      "category": "Best Mystery Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "title": "The Last Devil To Die"
+    },
+    {
+      "authors": [
+        "Liz Moore"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Mystery Novel",
+      "position": "2025",
+      "result": "winner",
+      "title": "The God of the Woods"
+    },
+    {
+      "authors": [
+        "Kellye Garrett"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Mystery Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "Missing White Woman"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Mystery Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "The Grey Wolf"
+    },
+    {
+      "authors": [
+        "Alex Segura"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Mystery Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "Alter Ego"
+    },
+    {
+      "authors": [
+        "Duane Swierczynski"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Mystery Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "California Bear"
+    },
+    {
+      "authors": [
+        "Lou Berney"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2026",
+      "category": "Best Mystery Novel",
+      "position": "2026.01",
+      "result": "nominee",
+      "title": "Crooks"
+    },
+    {
+      "authors": [
+        "S.A. Cosby"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2026",
+      "category": "Best Mystery Novel",
+      "position": "2026.02",
+      "result": "nominee",
+      "title": "King of Ashes"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2026",
+      "category": "Best Mystery Novel",
+      "position": "2026.03",
+      "result": "nominee",
+      "title": "The Black Wolf"
+    },
+    {
+      "authors": [
+        "Delia Pitts"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2026",
+      "category": "Best Mystery Novel",
+      "position": "2026.04",
+      "result": "nominee",
+      "title": "Death of an Ex"
+    },
+    {
+      "authors": [
+        "Hank Phillippi Ryan"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2026",
+      "category": "Best Mystery Novel",
+      "position": "2026.05",
+      "result": "nominee",
+      "title": "All This Could Be Yours"
+    }
+  ],
+  "fetched_at": "2026-07-18T02:39:43Z",
+  "list_id": "anthony_award_mystery_novel",
+  "list_name": "Anthony Award - Mystery Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "anthony_award_mystery_novel",
+  "schema_version": 2,
+  "source": {
+    "name": "Anthony Award - Mystery Novel",
+    "source_id": "anthony_award_mystery_novel",
+    "url": "https://www.stopyourekillingme.com/Awards/Anthony_Awards.html"
+  }
+}

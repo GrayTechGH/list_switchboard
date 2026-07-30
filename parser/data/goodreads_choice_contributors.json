@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "corrections": [
+    {
+      "book_id": "6945530",
+      "title": "The Night Eternal",
+      "authors": ["Guillermo del Toro", "Chuck Hogan"],
+      "categories": ["Horror"]
+    },
+    {
+      "book_id": "15818164",
+      "title": "The Blood Gospel",
+      "authors": ["James Rollins", "Rebecca Cantrell"],
+      "categories": ["Horror"]
+    },
+    {
+      "book_id": "32593030",
+      "title": "Wicked Little Words",
+      "authors": ["Stevie J. Cole", "B.T. Urruela"],
+      "categories": ["Horror"]
+    },
+    {
+      "book_id": "39217966",
+      "title": "Flight or Fright",
+      "authors": ["Stephen King", "Bev Vincent"],
+      "categories": ["Horror"]
+    },
+    {
+      "book_id": "44034616",
+      "title": "The Lost Causes of Bleak Creek",
+      "authors": ["Rhett McLaughlin", "Link Neal"],
+      "categories": ["Horror"]
+    },
+    {
+      "book_id": "52594581",
+      "title": "The Hollow Ones",
+      "authors": ["Guillermo del Toro", "Chuck Hogan"],
+      "categories": ["Horror"]
+    },
+    {
+      "book_id": "59366265",
+      "title": "Gwendy's Final Task",
+      "authors": ["Stephen King", "Richard Chizmar"],
+      "categories": ["Horror"]
+    },
+    {
+      "book_id": "34189556",
+      "title": "The Wife Between Us",
+      "authors": ["Greer Hendricks", "Sarah Pekkanen"],
+      "categories": ["Mystery & Thriller"]
+    },
+    {
+      "book_id": "35085389",
+      "title": "The President Is Missing",
+      "authors": ["Bill Clinton", "James Patterson"],
+      "categories": ["Mystery & Thriller"]
+    },
+    {
+      "book_id": "32075825",
+      "title": "The Rise and Fall of D.O.D.O.",
+      "authors": ["Neal Stephenson", "Nicole Galland"],
+      "categories": ["Science Fiction"]
+    },
+    {
+      "book_id": "41093489",
+      "title": "This Is How You Lose the Time War",
+      "authors": ["Amal El-Mohtar", "Max Gladstone"],
+      "categories": ["Science Fiction"]
+    },
+    {
+      "book_id": "8643220",
+      "title": "Vampire Academy",
+      "authors": ["Richelle Mead", "Emma Vieceli"],
+      "categories": ["Graphic Novels & Comics"]
+    }
+  ]
+}

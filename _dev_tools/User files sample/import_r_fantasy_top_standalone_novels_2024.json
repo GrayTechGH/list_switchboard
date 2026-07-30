@@ -26,7 +26,8 @@
     },
     {
       "authors": [
-        "Terry Pratchett & Neil Gaiman"
+        "Terry Pratchett",
+        "Neil Gaiman"
       ],
       "position": "3",
       "rank_change": "+2",
@@ -161,7 +162,8 @@
     },
     {
       "authors": [
-        "Amal El-Mohtar & Max Gladstone"
+        "Amal El-Mohtar",
+        "Max Gladstone"
       ],
       "position": "17",
       "rank_change": "-2",
@@ -565,7 +567,7 @@
       "votes": "10"
     }
   ],
-  "fetched_at": "2026-07-08T03:59:18Z",
+  "fetched_at": "2026-07-11T00:49:37Z",
   "list_id": "r_fantasy_top_standalone_novels_2024",
   "list_name": "r/Fantasy Top Standalone Novels 2024",
   "match_series": true,

@@ -1,0 +1,793 @@
+{
+  "append_state": {
+    "entry_count": 70,
+    "last_entry_key": "fourth day|zo sharp",
+    "last_position": "2011.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Val McDermid"
+      ],
+      "award": "Barry Award",
+      "award_year": "2000",
+      "category": "Best British Crime Novel",
+      "position": "2000",
+      "result": "winner",
+      "title": "A Place of Execution"
+    },
+    {
+      "authors": [
+        "Rennie Airth"
+      ],
+      "award": "Barry Award",
+      "award_year": "2000",
+      "category": "Best British Crime Novel",
+      "position": "2000.01",
+      "result": "nominee",
+      "title": "River of Darkness"
+    },
+    {
+      "authors": [
+        "John Connolly"
+      ],
+      "award": "Barry Award",
+      "award_year": "2000",
+      "category": "Best British Crime Novel",
+      "position": "2000.02",
+      "result": "nominee",
+      "title": "Every Dead Thing"
+    },
+    {
+      "authors": [
+        "Colin Falconer"
+      ],
+      "award": "Barry Award",
+      "award_year": "2000",
+      "category": "Best British Crime Novel",
+      "position": "2000.03",
+      "result": "nominee",
+      "title": "Rough Justice"
+    },
+    {
+      "authors": [
+        "Barry Maitland"
+      ],
+      "award": "Barry Award",
+      "award_year": "2000",
+      "category": "Best British Crime Novel",
+      "position": "2000.04",
+      "result": "nominee",
+      "title": "The Chalon Heads"
+    },
+    {
+      "authors": [
+        "Stephen Booth"
+      ],
+      "award": "Barry Award",
+      "award_year": "2001",
+      "category": "Best British Crime Novel",
+      "position": "2001",
+      "result": "winner",
+      "title": "Black Dog"
+    },
+    {
+      "authors": [
+        "John Connolly"
+      ],
+      "award": "Barry Award",
+      "award_year": "2001",
+      "category": "Best British Crime Novel",
+      "position": "2001.01",
+      "result": "nominee",
+      "title": "Dark Hollow"
+    },
+    {
+      "authors": [
+        "Sarah Diamond"
+      ],
+      "award": "Barry Award",
+      "award_year": "2001",
+      "category": "Best British Crime Novel",
+      "position": "2001.02",
+      "result": "nominee",
+      "title": "The Beach Road"
+    },
+    {
+      "authors": [
+        "Colin Falconer"
+      ],
+      "award": "Barry Award",
+      "award_year": "2001",
+      "category": "Best British Crime Novel",
+      "position": "2001.03",
+      "result": "nominee",
+      "title": "The Certainty of Doing Evil"
+    },
+    {
+      "authors": [
+        "Peter Lovesey"
+      ],
+      "award": "Barry Award",
+      "award_year": "2001",
+      "category": "Best British Crime Novel",
+      "position": "2001.04",
+      "result": "nominee",
+      "title": "The Reaper"
+    },
+    {
+      "authors": [
+        "Stephen Booth"
+      ],
+      "award": "Barry Award",
+      "award_year": "2002",
+      "category": "Best British Crime Novel",
+      "position": "2002",
+      "result": "winner",
+      "title": "Dancing with the Virgins"
+    },
+    {
+      "authors": [
+        "Caroline Carver"
+      ],
+      "award": "Barry Award",
+      "award_year": "2002",
+      "category": "Best British Crime Novel",
+      "position": "2002.01",
+      "result": "nominee",
+      "title": "Blood Junction"
+    },
+    {
+      "authors": [
+        "John Connolly"
+      ],
+      "award": "Barry Award",
+      "award_year": "2002",
+      "category": "Best British Crime Novel",
+      "position": "2002.02",
+      "result": "nominee",
+      "title": "The Killing Kind"
+    },
+    {
+      "authors": [
+        "Reginald Hill"
+      ],
+      "award": "Barry Award",
+      "award_year": "2002",
+      "category": "Best British Crime Novel",
+      "position": "2002.03",
+      "result": "nominee",
+      "title": "Dialogues of the Dead"
+    },
+    {
+      "authors": [
+        "P.D. James"
+      ],
+      "award": "Barry Award",
+      "award_year": "2002",
+      "category": "Best British Crime Novel",
+      "position": "2002.04",
+      "result": "nominee",
+      "title": "Death in Holy Orders"
+    },
+    {
+      "authors": [
+        "Val McDermid"
+      ],
+      "award": "Barry Award",
+      "award_year": "2002",
+      "category": "Best British Crime Novel",
+      "position": "2002.05",
+      "result": "nominee",
+      "title": "Killing the Shadows"
+    },
+    {
+      "authors": [
+        "Ian Rankin"
+      ],
+      "award": "Barry Award",
+      "award_year": "2002",
+      "category": "Best British Crime Novel",
+      "position": "2002.06",
+      "result": "nominee",
+      "title": "The Falls"
+    },
+    {
+      "authors": [
+        "John Connolly"
+      ],
+      "award": "Barry Award",
+      "award_year": "2003",
+      "category": "Best British Crime Novel",
+      "position": "2003",
+      "result": "winner",
+      "title": "The White Road"
+    },
+    {
+      "authors": [
+        "Mark Billingham"
+      ],
+      "award": "Barry Award",
+      "award_year": "2003",
+      "category": "Best British Crime Novel",
+      "position": "2003.01",
+      "result": "nominee",
+      "title": "Scaredy Cat"
+    },
+    {
+      "authors": [
+        "Tom Bradby"
+      ],
+      "award": "Barry Award",
+      "award_year": "2003",
+      "category": "Best British Crime Novel",
+      "position": "2003.02",
+      "result": "nominee",
+      "title": "The Master of Rain"
+    },
+    {
+      "authors": [
+        "Simon Kernick"
+      ],
+      "award": "Barry Award",
+      "award_year": "2003",
+      "category": "Best British Crime Novel",
+      "position": "2003.03",
+      "result": "nominee",
+      "title": "The Business of Dying"
+    },
+    {
+      "authors": [
+        "Peter Lovesey"
+      ],
+      "award": "Barry Award",
+      "award_year": "2003",
+      "category": "Best British Crime Novel",
+      "position": "2003.04",
+      "result": "nominee",
+      "title": "Diamond Dust"
+    },
+    {
+      "authors": [
+        "Ed O\u2019Connor"
+      ],
+      "award": "Barry Award",
+      "award_year": "2003",
+      "category": "Best British Crime Novel",
+      "position": "2003.05",
+      "result": "nominee",
+      "title": "The Yeare\u2019s Midnight"
+    },
+    {
+      "authors": [
+        "Val McDermid"
+      ],
+      "award": "Barry Award",
+      "award_year": "2004",
+      "category": "Best British Crime Novel",
+      "position": "2004",
+      "result": "winner",
+      "title": "The Distant Echo"
+    },
+    {
+      "authors": [
+        "Mark Billingham"
+      ],
+      "award": "Barry Award",
+      "award_year": "2004",
+      "category": "Best British Crime Novel",
+      "position": "2004.01",
+      "result": "nominee",
+      "title": "Lazybones"
+    },
+    {
+      "authors": [
+        "Christopher Fowler"
+      ],
+      "award": "Barry Award",
+      "award_year": "2004",
+      "category": "Best British Crime Novel",
+      "position": "2004.02",
+      "result": "nominee",
+      "title": "Full Dark House"
+    },
+    {
+      "authors": [
+        "Simon Kernick"
+      ],
+      "award": "Barry Award",
+      "award_year": "2004",
+      "category": "Best British Crime Novel",
+      "position": "2004.03",
+      "result": "nominee",
+      "title": "The Murder Exchange"
+    },
+    {
+      "authors": [
+        "Peter Lovesey"
+      ],
+      "award": "Barry Award",
+      "award_year": "2004",
+      "category": "Best British Crime Novel",
+      "position": "2004.04",
+      "result": "nominee",
+      "title": "The House Sitter"
+    },
+    {
+      "authors": [
+        "Andrew Taylor"
+      ],
+      "award": "Barry Award",
+      "award_year": "2004",
+      "category": "Best British Crime Novel",
+      "position": "2004.05",
+      "result": "nominee",
+      "title": "The American Boy"
+    },
+    {
+      "authors": [
+        "John Harvey"
+      ],
+      "award": "Barry Award",
+      "award_year": "2005",
+      "category": "Best British Crime Novel",
+      "position": "2005",
+      "result": "winner",
+      "title": "Flesh & Blood"
+    },
+    {
+      "authors": [
+        "Mark Billingham"
+      ],
+      "award": "Barry Award",
+      "award_year": "2005",
+      "category": "Best British Crime Novel",
+      "position": "2005.01",
+      "result": "nominee",
+      "title": "The Burning Girl"
+    },
+    {
+      "authors": [
+        "Ken Bruen"
+      ],
+      "award": "Barry Award",
+      "award_year": "2005",
+      "category": "Best British Crime Novel",
+      "position": "2005.02",
+      "result": "nominee",
+      "title": "The Dramatist"
+    },
+    {
+      "authors": [
+        "Mo Hayder"
+      ],
+      "award": "Barry Award",
+      "award_year": "2005",
+      "category": "Best British Crime Novel",
+      "position": "2005.03",
+      "result": "nominee",
+      "title": "Tokyo"
+    },
+    {
+      "authors": [
+        "Simon Kernick"
+      ],
+      "award": "Barry Award",
+      "award_year": "2005",
+      "category": "Best British Crime Novel",
+      "position": "2005.04",
+      "result": "nominee",
+      "title": "The Crime Trade"
+    },
+    {
+      "authors": [
+        "Zo\u00eb Sharp"
+      ],
+      "award": "Barry Award",
+      "award_year": "2005",
+      "category": "Best British Crime Novel",
+      "position": "2005.05",
+      "result": "nominee",
+      "title": "First Drop"
+    },
+    {
+      "authors": [
+        "Denise Mina"
+      ],
+      "award": "Barry Award",
+      "award_year": "2006",
+      "category": "Best British Crime Novel",
+      "position": "2006",
+      "result": "winner",
+      "title": "Field of Blood"
+    },
+    {
+      "authors": [
+        "Rennie Airth"
+      ],
+      "award": "Barry Award",
+      "award_year": "2006",
+      "category": "Best British Crime Novel",
+      "position": "2006.01",
+      "result": "nominee",
+      "title": "The Blood-Dimmed Tide"
+    },
+    {
+      "authors": [
+        "Mark Billingham"
+      ],
+      "award": "Barry Award",
+      "award_year": "2006",
+      "category": "Best British Crime Novel",
+      "position": "2006.02",
+      "result": "nominee",
+      "title": "Lifeless"
+    },
+    {
+      "authors": [
+        "Arnaldur Indridason"
+      ],
+      "award": "Barry Award",
+      "award_year": "2006",
+      "category": "Best British Crime Novel",
+      "position": "2006.03",
+      "result": "nominee",
+      "title": "Silence of the Grave"
+    },
+    {
+      "authors": [
+        "Simon Kernick"
+      ],
+      "award": "Barry Award",
+      "award_year": "2006",
+      "category": "Best British Crime Novel",
+      "position": "2006.04",
+      "result": "nominee",
+      "title": "A Good Day to Die"
+    },
+    {
+      "authors": [
+        "Michael Robotham"
+      ],
+      "award": "Barry Award",
+      "award_year": "2006",
+      "category": "Best British Crime Novel",
+      "position": "2006.05",
+      "result": "nominee",
+      "title": "Lost"
+    },
+    {
+      "authors": [
+        "Ken Bruen"
+      ],
+      "award": "Barry Award",
+      "award_year": "2007",
+      "category": "Best British Crime Novel",
+      "position": "2007",
+      "result": "winner",
+      "title": "Priest"
+    },
+    {
+      "authors": [
+        "Stuart MacBride"
+      ],
+      "award": "Barry Award",
+      "award_year": "2007",
+      "category": "Best British Crime Novel",
+      "position": "2007.01",
+      "result": "nominee",
+      "title": "Dying Light"
+    },
+    {
+      "authors": [
+        "C.J. Sansom"
+      ],
+      "award": "Barry Award",
+      "award_year": "2007",
+      "category": "Best British Crime Novel",
+      "position": "2007.02",
+      "result": "nominee",
+      "title": "Sovereign"
+    },
+    {
+      "authors": [
+        "Nick Stone"
+      ],
+      "award": "Barry Award",
+      "award_year": "2007",
+      "category": "Best British Crime Novel",
+      "position": "2007.03",
+      "result": "nominee",
+      "title": "Mr. Clarinet"
+    },
+    {
+      "authors": [
+        "Edward Wright"
+      ],
+      "award": "Barry Award",
+      "award_year": "2007",
+      "category": "Best British Crime Novel",
+      "position": "2007.04",
+      "result": "nominee",
+      "title": "Red Sky Lament"
+    },
+    {
+      "authors": [
+        "Edward Wright"
+      ],
+      "award": "Barry Award",
+      "award_year": "2008",
+      "category": "Best British Crime Novel",
+      "position": "2008",
+      "result": "winner",
+      "title": "Damnation Falls"
+    },
+    {
+      "authors": [
+        "R.J. Ellory"
+      ],
+      "award": "Barry Award",
+      "award_year": "2008",
+      "category": "Best British Crime Novel",
+      "position": "2008.01",
+      "result": "nominee",
+      "title": "A Quiet Belief In Angels"
+    },
+    {
+      "authors": [
+        "Mo Hayder"
+      ],
+      "award": "Barry Award",
+      "award_year": "2008",
+      "category": "Best British Crime Novel",
+      "position": "2008.02",
+      "result": "nominee",
+      "title": "Pig Island"
+    },
+    {
+      "authors": [
+        "Graham Hurley"
+      ],
+      "award": "Barry Award",
+      "award_year": "2008",
+      "category": "Best British Crime Novel",
+      "position": "2008.03",
+      "result": "nominee",
+      "title": "One Under"
+    },
+    {
+      "authors": [
+        "Paul Johnston"
+      ],
+      "award": "Barry Award",
+      "award_year": "2008",
+      "category": "Best British Crime Novel",
+      "position": "2008.04",
+      "result": "nominee",
+      "title": "The Death List"
+    },
+    {
+      "authors": [
+        "Steve Mosby"
+      ],
+      "award": "Barry Award",
+      "award_year": "2008",
+      "category": "Best British Crime Novel",
+      "position": "2008.05",
+      "result": "nominee",
+      "title": "The 50/50 Killer"
+    },
+    {
+      "authors": [
+        "Stieg Larsson"
+      ],
+      "award": "Barry Award",
+      "award_year": "2009",
+      "category": "Best British Crime Novel",
+      "position": "2009",
+      "result": "winner",
+      "title": "The Girl with the Dragon Tattoo"
+    },
+    {
+      "authors": [
+        "R.J. Ellroy"
+      ],
+      "award": "Barry Award",
+      "award_year": "2009",
+      "category": "Best British Crime Novel",
+      "position": "2009.01",
+      "result": "nominee",
+      "title": "A Simple Act of Violence"
+    },
+    {
+      "authors": [
+        "Mo Hayder"
+      ],
+      "award": "Barry Award",
+      "award_year": "2009",
+      "category": "Best British Crime Novel",
+      "position": "2009.02",
+      "result": "nominee",
+      "title": "Ritual"
+    },
+    {
+      "authors": [
+        "Michael Robotham"
+      ],
+      "award": "Barry Award",
+      "award_year": "2009",
+      "category": "Best British Crime Novel",
+      "position": "2009.03",
+      "result": "nominee",
+      "title": "Shatter"
+    },
+    {
+      "authors": [
+        "Andrew Taylor"
+      ],
+      "award": "Barry Award",
+      "award_year": "2009",
+      "category": "Best British Crime Novel",
+      "position": "2009.04",
+      "result": "nominee",
+      "title": "Bleeding Heart Square"
+    },
+    {
+      "authors": [
+        "Martin Walker"
+      ],
+      "award": "Barry Award",
+      "award_year": "2009",
+      "category": "Best British Crime Novel",
+      "position": "2009.05",
+      "result": "nominee",
+      "title": "Bruno, Chief of Police"
+    },
+    {
+      "authors": [
+        "Philip Kerr"
+      ],
+      "award": "Barry Award",
+      "award_year": "2010",
+      "category": "Best British Crime Novel",
+      "position": "2010",
+      "result": "winner",
+      "title": "If the Dead Rise Not"
+    },
+    {
+      "authors": [
+        "S.J. Bolton"
+      ],
+      "award": "Barry Award",
+      "award_year": "2010",
+      "category": "Best British Crime Novel",
+      "position": "2010.01",
+      "result": "nominee",
+      "title": "Awakening"
+    },
+    {
+      "authors": [
+        "John Connolly"
+      ],
+      "award": "Barry Award",
+      "award_year": "2010",
+      "category": "Best British Crime Novel",
+      "position": "2010.02",
+      "result": "nominee",
+      "title": "The Lovers"
+    },
+    {
+      "authors": [
+        "Reginald Hill"
+      ],
+      "award": "Barry Award",
+      "award_year": "2010",
+      "category": "Best British Crime Novel",
+      "position": "2010.03",
+      "result": "nominee",
+      "title": "Midnight Fugue"
+    },
+    {
+      "authors": [
+        "Denise Mina"
+      ],
+      "award": "Barry Award",
+      "award_year": "2010",
+      "category": "Best British Crime Novel",
+      "position": "2010.04",
+      "result": "nominee",
+      "title": "Still Midnight"
+    },
+    {
+      "authors": [
+        "Robert Wilson"
+      ],
+      "award": "Barry Award",
+      "award_year": "2010",
+      "category": "Best British Crime Novel",
+      "position": "2010.05",
+      "result": "nominee",
+      "title": "The Ignorance of Blood"
+    },
+    {
+      "authors": [
+        "Reginald Hill"
+      ],
+      "award": "Barry Award",
+      "award_year": "2011",
+      "category": "Best British Crime Novel",
+      "position": "2011",
+      "result": "winner",
+      "title": "The Woodcutter"
+    },
+    {
+      "authors": [
+        "Kate Atkinson"
+      ],
+      "award": "Barry Award",
+      "award_year": "2011",
+      "category": "Best British Crime Novel",
+      "position": "2011.01",
+      "result": "nominee",
+      "title": "Started Early, Took My Dog"
+    },
+    {
+      "authors": [
+        "S.J. Bolton"
+      ],
+      "award": "Barry Award",
+      "award_year": "2011",
+      "category": "Best British Crime Novel",
+      "position": "2011.02",
+      "result": "nominee",
+      "title": "Blood Harvest"
+    },
+    {
+      "authors": [
+        "John Connolly"
+      ],
+      "award": "Barry Award",
+      "award_year": "2011",
+      "category": "Best British Crime Novel",
+      "position": "2011.03",
+      "result": "nominee",
+      "title": "The Whisperers"
+    },
+    {
+      "authors": [
+        "Roslund",
+        "Hellstr\u00f6m"
+      ],
+      "award": "Barry Award",
+      "award_year": "2011",
+      "category": "Best British Crime Novel",
+      "position": "2011.04",
+      "result": "nominee",
+      "title": "Three Seconds"
+    },
+    {
+      "authors": [
+        "Zo\u00eb Sharp"
+      ],
+      "award": "Barry Award",
+      "award_year": "2011",
+      "category": "Best British Crime Novel",
+      "position": "2011.05",
+      "result": "nominee",
+      "title": "Fourth Day"
+    }
+  ],
+  "fetched_at": "2026-07-18T02:35:51Z",
+  "list_id": "barry_award_british_crime_novel",
+  "list_name": "Barry Award - British Crime Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "barry_award_british_crime_novel",
+  "schema_version": 2,
+  "source": {
+    "name": "Barry Award - British Crime Novel",
+    "source_id": "barry_award_british_crime_novel",
+    "url": "https://www.stopyourekillingme.com/Awards/Barry_Awards.html"
+  }
+}

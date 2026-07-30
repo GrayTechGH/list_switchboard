@@ -2,15 +2,17 @@
 # vim:fileencoding=UTF-8:ts=2:sw=2:sta:et:sts=2:ai
 
 """
-This Is Horror Awards parser for official WordPress pages plus Goodreads.
+This Is Horror Awards parser for official WordPress ballots and results.
 
 Maintenance notes:
-- Official This Is Horror pages expose the current ballot and winner posts, but
-  historical winner posts usually include winners plus runner-up rows rather
-  than complete shortlists.
-- Goodreads is intentionally a live historical nominee supplement for V1.
-- Award years must come from award titles/content, not WordPress publication
-  dates, because winner posts can lag the award year.
+- The fixed official ballot manifest is the historical shortlist spine.
+- The 2011-2013 ballots store numbered nominees in one paragraph; later
+  ballots use list items. Parsing first isolates a category section, then
+  splits the legacy numbered fragment.
+- Result pages only promote ballot rows to winner or runner-up. They never
+  replace an official ballot or introduce a second title variant.
+- Goodreads is a paginated diagnostic supplement. Its rows are ignored when
+  the corresponding official ballot is present.
 """
 
 import json
@@ -37,15 +39,89 @@ except ImportError:
 
 AWARD_NAME = 'This Is Horror Award'
 OFFICIAL_AWARDS_URL = 'https://www.thisishorror.co.uk/awards/'
-OFFICIAL_AWARDS_API_URL = (
-  'https://www.thisishorror.co.uk/wp-json/wp/v2/pages?slug=awards')
-OFFICIAL_WINNERS_SEARCH_API_URL = (
-  'https://www.thisishorror.co.uk/wp-json/wp/v2/search?'
-  'search=This%20Is%20Horror%20Awards%20Winners&per_page=20')
 GOODREADS_URL = 'https://www.goodreads.com/award/show/23539-this-is-horror-award'
 
+OFFICIAL_BALLOTS = (
+  (2011, 800, 'https://www.thisishorror.co.uk/this-is-horror-awards-2011/'),
+  (2012, 6752, 'https://www.thisishorror.co.uk/this-is-horror-awards-2012/'),
+  (2013, 11039, 'https://www.thisishorror.co.uk/horror-awards-2013/'),
+  (2014, 13519,
+   'https://www.thisishorror.co.uk/this-is-horror-awards-2014-vote-now/'),
+  (2015, 16159,
+   'https://www.thisishorror.co.uk/this-is-horror-awards-2015-vote-now/'),
+  (2016, 21034,
+   'https://www.thisishorror.co.uk/this-is-horror-awards-2016-vote-now/'),
+  (2017, 24612,
+   'https://www.thisishorror.co.uk/this-is-horror-awards-2017-vote-now/'),
+  (2018, 27788,
+   'https://www.thisishorror.co.uk/this-is-horror-awards-2018-vote-now/'),
+  (2019, 30813,
+   'https://www.thisishorror.co.uk/this-is-horror-awards-2019-vote-now/'),
+  (2020, 33558,
+   'https://www.thisishorror.co.uk/this-is-horror-awards-2020-vote-now/'),
+  (2021, 37316,
+   'https://www.thisishorror.co.uk/this-is-horror-awards-2021-vote-now/'),
+  (2024, 42416,
+   'https://www.thisishorror.co.uk/this-is-horror-awards-2024-vote-now/'),
+)
+OFFICIAL_RESULTS = (
+  (2011, 'pages', 1209,
+   'https://www.thisishorror.co.uk/features/'
+   'this-is-horror-awards-2011-the-winners/'),
+  (2012, 'posts', 7550,
+   'https://www.thisishorror.co.uk/horror-awards-2012-winners/'),
+  (2013, 'posts', 11416,
+   'https://www.thisishorror.co.uk/horror-awards-2013-winners/'),
+  (2014, 'posts', 13851,
+   'https://www.thisishorror.co.uk/this-is-horror-awards-2014-winners/'),
+  (2015, 'posts', 16464,
+   'https://www.thisishorror.co.uk/this-is-horror-awards-2015-the-winners/'),
+  (2016, 'posts', 21702,
+   'https://www.thisishorror.co.uk/this-is-horror-awards-2016-the-winners/'),
+  (2017, 'posts', 25087,
+   'https://www.thisishorror.co.uk/this-is-horror-awards-2017-the-winners/'),
+  (2018, 'posts', 27948,
+   'https://www.thisishorror.co.uk/this-is-horror-awards-2018-the-winners/'),
+  (2019, 'pages', 31694,
+   'https://www.thisishorror.co.uk/awards/'
+   'this-is-horror-awards-2019-the-winners/'),
+  (2020, 'pages', 34408,
+   'https://www.thisishorror.co.uk/awards/'
+   'this-is-horror-awards-2020-the-winners/'),
+  (2021, 'pages', 39003,
+   'https://www.thisishorror.co.uk/awards/'
+   'this-is-horror-awards-2021-the-winners/'),
+  (2024, 'posts', 43497,
+   'https://www.thisishorror.co.uk/this-is-horror-awards-2024-the-winners/'),
+)
+
+
+def wordpress_include_url(kind, ids):
+  joined = ','.join(str(value) for value in ids)
+  return (
+    f'https://www.thisishorror.co.uk/wp-json/wp/v2/{kind}'
+    f'?include={joined}&orderby=include&per_page=100')
+
+
+OFFICIAL_BALLOTS_API_URL = wordpress_include_url(
+  'posts', [item[1] for item in OFFICIAL_BALLOTS])
+# Compatibility alias retained for callers that used the former current-page
+# constant. It now intentionally resolves to the complete official history.
+OFFICIAL_AWARDS_API_URL = OFFICIAL_BALLOTS_API_URL
+OFFICIAL_RESULT_POSTS_API_URL = wordpress_include_url(
+  'posts', [item[2] for item in OFFICIAL_RESULTS if item[1] == 'posts'])
+OFFICIAL_RESULT_PAGES_API_URL = wordpress_include_url(
+  'pages', [item[2] for item in OFFICIAL_RESULTS if item[1] == 'pages'])
+OFFICIAL_RESULTS_API_URLS = (
+  OFFICIAL_RESULT_POSTS_API_URL,
+  OFFICIAL_RESULT_PAGES_API_URL,
+)
+# Retained as a public import alias while fetchers migrate from search to the
+# deterministic result manifest.
+OFFICIAL_WINNERS_SEARCH_API_URL = OFFICIAL_RESULT_POSTS_API_URL
+
 YEAR_RE = re.compile(r'(?:19|20)\d{2}')
-SEMANTIC_TAGS = ('h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'li')
+HEADING_TAGS = ('h1', 'h2', 'h3', 'h4', 'h5', 'h6')
 
 CATEGORY_BOUNDARIES = frozenset({
   'anthology',
@@ -97,6 +173,57 @@ EXCLUDED_CATEGORY_FRAGMENTS = (
   'video game',
 )
 
+EXPECTED_BALLOT_COUNTS = {
+  'novel': {
+    2011: 9, 2012: 5, 2013: 5, 2014: 5, 2015: 6, 2016: 6,
+    2017: 5, 2018: 5, 2019: 5, 2020: 5, 2021: 5, 2024: 5,
+  },
+  'novella': {
+    2015: 6, 2016: 6, 2017: 5, 2018: 5, 2019: 5, 2020: 5,
+    2021: 5, 2024: 5,
+  },
+  'short story collection': {
+    2011: 6, 2012: 5, 2013: 5, 2014: 5, 2015: 6, 2016: 6,
+    2017: 5, 2018: 5, 2019: 5, 2020: 5, 2021: 5, 2024: 5,
+  },
+  'anthology': {
+    2011: 9, 2012: 5, 2013: 5, 2014: 5, 2015: 6, 2016: 6,
+    2017: 5, 2018: 5, 2019: 5, 2020: 5, 2021: 5,
+  },
+}
+
+# The 2011 ballot supplied publisher names rather than editor credits for
+# several anthologies. These narrow corrections keep all official nominees
+# matchable without treating publishers or individual contributors as editors.
+CREDIT_CORRECTIONS = {
+  (2011, 'anthology', 'holiday of the dead'): (
+    'Holiday of the Dead', ('David Dunwoody',)),
+  (2011, 'anthology', 'undead tales'): (
+    'Undead Tales', ('Armand Rosamilia',)),
+  (2011, 'anthology', 'alt dead the alternative dead anthology'): (
+    'Alt-Dead: The Alternative Dead Anthology', ('Peter Mark May',)),
+  (2011, 'anthology', 'fogbound from 5'): (
+    'Fogbound From 5', ('Peter Mark May',)),
+  (2011, 'anthology', '13 tales of dark fiction'): (
+    '13: Tales of Dark Fiction', ('Adam Bradley',)),
+  (2011, 'anthology', 'the spectrum collection'): (
+    'The Spectrum Collection', ('John Prescott',)),
+  (2012, 'anthology',
+   'the weird a compendium of strange and dark stories'): (
+    'The Weird: A Compendium of Strange and Dark Stories',
+    ('Ann VanderMeer', 'Jeff VanderMeer')),
+  (2013, 'anthology', 'the booked anthology'): (
+    'The Booked. Anthology', ('Pela Via', 'Robb Olson', 'Livius Nedin')),
+  (2020, 'novella', 'ring shout'): (
+    'Ring Shout', ('P. Djèlí Clark',)),
+}
+
+TITLE_IDENTITY_ALIASES = {
+  'the nameless dark a collection': 'the nameless dark',
+  'burnt tongues': (
+    'burnt tongues an anthology of transgressive short stories'),
+}
+
 
 def category_key(value):
   return normalize_heading(value).replace('non fiction', 'nonfiction')
@@ -122,141 +249,236 @@ class ThisIsHorrorParser(AwardParserBase):
 
   AWARD_NAME = AWARD_NAME
 
-  def parse_official_current(
+  def parse_official_ballots(
       self, source, base_url, name, category, category_aliases=()):
     rows = []
     notes = [
-      'Official This Is Horror awards page exposes the current ballot as '
-      'shortlisted rows.',
-      'As of July 5, 2026, the official awards page still exposes the 2024 '
-      'ballot and no official 2025 ballot or winners page was found.',
+      'Official This Is Horror ballot pages provide the complete historical '
+      'nominee set for each available award cycle.',
     ]
-    for html, title, link in self.official_current_documents(source):
-      year = self.award_year(html, title)
-      current_category = None
-      target_category = False
-      for node in self.semantic_nodes(html):
-        text = self.node_text(node)
-        if not text:
-          continue
-        if node.name in ('h1', 'h2', 'h3', 'h4', 'h5', 'h6'):
-          if category_key(text).startswith('previous winners'):
-            current_category = None
-            target_category = False
-            continue
-          current_category = self.clean_category_label(text)
-          target_category = self.category_matches(
-            current_category, category, category_aliases)
-          continue
-        if node.name != 'li' or not target_category or year is None:
-          continue
-        parsed = self.parse_work_text(text, RESULT_SHORTLISTED)
-        if parsed is None:
-          notes.append(
-            f'Official current ballot {year} {category} row could not be '
-            f'parsed: {text}')
-          continue
-        rows.append(self.build_award_entry(
-          parsed,
-          self.first_link_url(node, link or base_url) or link or base_url,
-          year,
-          category))
-      if year is None:
-        notes.append('Official current ballot award year could not be determined.')
-    return self.parsed_from_rows(name, base_url, rows, notes)
-
-  def parse_official_winners(
-      self, source, base_url, name, category, category_aliases=()):
-    rows = []
-    notes = [
-      'Official This Is Horror winner posts usually expose winners and '
-      'runner-ups, not complete historical shortlists.',
-    ]
-    runner_up_found = False
     for html, title, link in self.source_documents(source):
       year = self.award_year(html, title)
-      current_category = None
-      target_category = False
-      for node in self.semantic_nodes(html):
-        text = self.node_text(node)
-        if not text:
+      if year is None:
+        notes.append(f'Official ballot has no parseable award year: {title}')
+        continue
+      soup = self.soup(html)
+      source_order = 0
+      matched_heading = False
+      for heading in soup.find_all(HEADING_TAGS):
+        if not self.category_matches(
+            self.node_text(heading), category, category_aliases):
           continue
-        if node.name in ('h1', 'h2', 'h3', 'h4', 'h5', 'h6'):
-          current_category = self.clean_category_label(text)
-          target_category = self.category_matches(
-            current_category, category, category_aliases)
-          continue
-        if not target_category or year is None:
-          continue
-        for result_label, work_text in self.result_segments(text):
-          result = (
-            RESULT_WINNER if result_label == 'winner' else RESULT_SHORTLISTED)
-          runner_up_found = runner_up_found or result_label == 'runner-up'
-          parsed = self.parse_work_text(work_text, result)
+        matched_heading = True
+        for text in self.category_work_texts(heading):
+          parsed = self.parse_work_text(
+            text, RESULT_SHORTLISTED, year=year, category=category)
           if parsed is None:
-            notes.append(
-              f'Official winners post {year} {category} row could not be '
-              f'parsed: {work_text}')
+            if text:
+              notes.append(
+                f'Official ballot {year} {category} row could not be parsed: '
+                f'{text}')
             continue
+          parsed.update({
+            '_source_kind': 'ballot',
+            '_source_order': source_order,
+          })
           rows.append(self.build_award_entry(
-            parsed,
-            self.first_link_url(node, link or base_url) or link or base_url,
-            year,
-            category))
-      if year is None and self.looks_like_awards_document(title, html):
-        notes.append(f'Official winners page has no parseable award year: {title}')
-    if runner_up_found:
-      notes.append(
-        'Official This Is Horror runner-up rows are imported as shortlisted '
-        'rows; they are not full historical shortlists.')
+            parsed, link or base_url, year, category))
+          source_order += 1
+      if not matched_heading and self.category_expected_in_year(category, year):
+        notes.append(
+          f'Official ballot {year} did not expose the {category} heading.')
+    return self.parsed_from_rows(name, base_url, rows, notes)
+
+  def parse_official_current(
+      self, source, base_url, name, category, category_aliases=()):
+    """Compatibility wrapper; the source may contain one or all ballots."""
+    return self.parse_official_ballots(
+      source, base_url, name, category, category_aliases)
+
+  def parse_official_winners(
+      self, source, base_url, name, category, category_aliases=(),
+      award_year=None):
+    rows = []
+    notes = [
+      'Official This Is Horror result pages identify the winner and runner-up '
+      'within each complete official ballot.',
+    ]
+    for html, title, link in self.source_documents(source):
+      year = award_year or self.award_year(html, title)
+      if year is None:
+        continue
+      soup = self.soup(html)
+      for heading in soup.find_all(HEADING_TAGS):
+        if not self.category_matches(
+            self.node_text(heading), category, category_aliases):
+          continue
+        for node in heading.find_all_next():
+          if node is not heading and node.name in HEADING_TAGS:
+            break
+          if node.name not in ('p', 'li'):
+            continue
+          for result_label, work_text in self.result_segments(
+              self.node_text(node)):
+            parsed = self.parse_work_text(
+              work_text,
+              RESULT_WINNER if result_label == 'winner'
+              else RESULT_SHORTLISTED,
+              year=year,
+              category=category)
+            if parsed is None:
+              notes.append(
+                f'Official results {year} {category} row could not be parsed: '
+                f'{work_text}')
+              continue
+            parsed.update({
+              '_source_kind': 'result',
+              '_runner_up': result_label == 'runner-up',
+            })
+            rows.append(self.build_award_entry(
+              parsed, link or base_url, year, category))
     return self.parsed_from_rows(name, base_url, rows, notes)
 
   def parse_goodreads(self, html, base_url, name, category, category_aliases=()):
     rows = []
     notes = [
-      'Goodreads is used as the V1 historical nominee/finalist supplement; '
-      'official This Is Horror winner rows are preferred when they overlap.',
+      'Goodreads is checked as a paginated diagnostic supplement; official '
+      'This Is Horror ballots remain authoritative.',
     ]
-    lines = self.goodreads_lines(html)
+    soup = self.soup(html)
+    for book_row in soup.find_all('tr', itemtype='http://schema.org/Book'):
+      title_node = book_row.find(class_='bookTitle')
+      author_node = book_row.find(class_='authorName')
+      if title_node is None or author_node is None:
+        continue
+      title = self.clean_title(self.node_text(title_node))
+      authors = self.split_contributors(self.node_text(author_node))
+      for label_node in book_row.find_all('i'):
+        parsed_label = self.parse_goodreads_label(
+          self.node_text(label_node), category, category_aliases)
+        if parsed_label is None:
+          continue
+        year, result = parsed_label
+        rows.append(self.build_award_entry(
+          {
+            'title': title,
+            'authors': authors,
+            'result': result,
+            '_source_kind': 'goodreads',
+          },
+          base_url,
+          year,
+          category))
+    if not rows:
+      rows.extend(self.parse_goodreads_lines(
+        soup, base_url, category, category_aliases))
+    return self.parsed_from_rows(name, base_url, rows, notes)
+
+  def parse_goodreads_lines(
+      self, soup, base_url, category, category_aliases):
+    rows = []
+    lines = self.goodreads_lines(soup)
     previous_label_index = -1
     for index, line in enumerate(lines):
-      parsed_label = self.parse_goodreads_label(line, category, category_aliases)
+      parsed_label = self.parse_goodreads_label(
+        line, category, category_aliases)
       if parsed_label is None:
         continue
       year, result = parsed_label
-      work = self.goodreads_work_from_buffer(lines[previous_label_index + 1:index])
+      work = self.goodreads_work_from_buffer(
+        lines[previous_label_index + 1:index])
       previous_label_index = index
       if work is None:
-        notes.append(f'Goodreads {year} {category} row could not be parsed.')
         continue
       title, author = work
       rows.append(self.build_award_entry(
         {
           'title': self.clean_title(title),
-          'author': self.clean_author(author),
+          'authors': self.split_contributors(author),
           'result': result,
+          '_source_kind': 'goodreads',
         },
         base_url,
         year,
         category))
-    return self.parsed_from_rows(name, base_url, rows, notes)
+    return rows
 
   def combine_results(self, name, base_url, *parsed_results):
-    rows = []
     notes = [
-      'This Is Horror official sources provide current ballot rows and winner '
-      'posts; Goodreads supplies historical nominee supplementation.',
-      'If neither official nor Goodreads sources expose a category/year '
-      'shortlist, no shortlist rows are invented.',
+      'Official ballot order is retained after winner and runner-up '
+      'promotion.',
+      'The 2022 and 2023 cycles are explicit empty gaps pending official '
+      'Legacy Awards shortlists or results.',
+      'No completed official 2025 ballot or result page is available.',
     ]
+    rows = []
     for parsed in parsed_results:
       if not parsed:
         continue
       notes.extend(parsed.get('notes', ()))
       rows.extend(dict(entry) for entry in parsed.get('entries', ()))
-    return self.parsed_from_rows(name, base_url, rows, notes)
+
+    ballots = [row for row in rows if row.get('_source_kind') == 'ballot']
+    results = [row for row in rows if row.get('_source_kind') == 'result']
+    goodreads = [row for row in rows if row.get('_source_kind') == 'goodreads']
+    if ballots:
+      rows = self.reconcile_official_results(ballots, results, notes)
+      covered_years = {row.get('award_year') for row in rows}
+      ignored = sum(
+        1 for row in goodreads if row.get('award_year') in covered_years)
+      if ignored:
+        notes.append(
+          'Goodreads overlaps were excluded in favor of official ballot rows.')
+    else:
+      rows = results + goodreads
+
+    if self.category_name(rows) == 'anthology':
+      notes.append(
+        'This Is Horror - Anthology is discontinued after the 2021 cycle; '
+        'the resumed 2024 awards did not include an anthology category.')
+    parsed = self.parsed_from_rows(name, base_url, rows, notes)
+    for entry in parsed.get('entries', ()):
+      entry.pop('_source_kind', None)
+      entry.pop('_source_order', None)
+      entry.pop('_runner_up', None)
+    return parsed
+
+  def reconcile_official_results(self, ballots, results, notes):
+    rows = self.dedupe_rows(ballots)
+    by_key = {self.row_key(row): row for row in rows}
+    for result in results:
+      existing = by_key.get(self.row_key(result))
+      if existing is None:
+        notes.append(
+          'Official result did not match its ballot row and was not added: '
+          f"{result.get('award_year')} {result.get('title')}")
+        continue
+      existing['result'] = result.get('result', existing.get('result'))
+      existing['_runner_up'] = bool(result.get('_runner_up'))
+      if result.get('source'):
+        existing['source'] = result['source']
+    return rows
+
+  def discover_result_detail_urls(
+      self, source, category, category_aliases=()):
+    urls = []
+    for html, title, link in self.source_documents(source):
+      year = self.award_year(html, title)
+      if year not in (2011, 2012, 2013):
+        continue
+      soup = self.soup(html)
+      for anchor in soup.find_all('a', href=True):
+        if not self.category_matches(
+            self.node_text(anchor), category, category_aliases):
+          continue
+        url = urljoin(link or OFFICIAL_AWARDS_URL, anchor.get('href') or '')
+        item = (year, url)
+        if url and item not in urls:
+          urls.append(item)
+    return tuple(urls)
 
   def discover_winner_api_urls(self, source):
+    """Compatibility helper for older callers of winner-search results."""
     urls = []
     text = self.decode_source(source)
     parsed = self.parse_json_source(text)
@@ -273,57 +495,172 @@ class ThisIsHorrorParser(AwardParserBase):
         urls.append(href)
     return tuple(urls)
 
-  def parse_work_text(self, text, result):
+  def validate_official_ballot_result(self, parsed, category):
+    expected = self.expected_counts(category)
+    actual = {}
+    for entry in (parsed or {}).get('entries', ()):
+      year = int(entry.get('award_year', 0) or 0)
+      actual[year] = actual.get(year, 0) + 1
+    if actual != expected:
+      details = ', '.join(
+        f'{year}: expected {count}, got {actual.get(year, 0)}'
+        for year, count in expected.items()
+        if actual.get(year) != count)
+      extras = sorted(set(actual) - set(expected))
+      if extras:
+        details += f'; unexpected years: {extras}'
+      raise ValueError(
+        f'This Is Horror official {category} ballot coverage is incomplete: '
+        f'{details}')
+
+  def validate_combined_result(self, parsed, category):
+    expected_years = set(self.expected_counts(category))
+    winners = {}
+    runners_up = {}
+    for entry in (parsed or {}).get('entries', ()):
+      year = int(entry.get('award_year', 0) or 0)
+      if entry.get('result') == RESULT_WINNER:
+        winners[year] = winners.get(year, 0) + 1
+      if (
+          entry.get('_runner_up') or
+          entry.get('position') == f'{year}.01'):
+        runners_up[year] = runners_up.get(year, 0) + 1
+    bad_winners = {
+      year: winners.get(year, 0)
+      for year in expected_years
+      if winners.get(year, 0) != 1
+    }
+    bad_runners = {
+      year: runners_up.get(year, 0)
+      for year in expected_years
+      if runners_up.get(year, 0) != 1
+    }
+    if bad_winners or bad_runners:
+      raise ValueError(
+        'This Is Horror official result coverage is incomplete: '
+        f'winners={bad_winners}, runner-ups={bad_runners}')
+
+  def validate_goodreads_page(self, html):
+    soup = self.soup(html)
+    structural = soup.find_all('tr', itemtype='http://schema.org/Book')
+    has_label = any(
+      'This is Horror Award' in self.node_text(label)
+      for row in structural
+      for label in row.find_all('i'))
+    if not has_label and 'This is Horror Award' not in self.html_text(html):
+      raise ValueError(
+        'This Is Horror Goodreads source did not contain award book rows.')
+
+  def discover_goodreads_page_urls(self, html, base_url=GOODREADS_URL):
+    soup = self.soup(html)
+    urls = [GOODREADS_URL]
+    for link in soup.find_all('a', href=True):
+      href = link.get('href') or ''
+      text = self.node_text(link)
+      if 'award/show/23539-this-is-horror-award' not in href:
+        continue
+      if 'page=' not in href and not text.isdigit():
+        continue
+      url = urljoin(base_url, href)
+      if re.search(r'[?&]page=1(?:&|$)', url):
+        url = GOODREADS_URL
+      if url not in urls:
+        urls.append(url)
+    return tuple(urls)
+
+  def parse_work_text(self, text, result, year=None, category=None):
     text = self.clean_work_text(text)
     if not text:
       return None
-    parsed = self.parse_edited_by(text)
+    parsed = self.parse_parenthetical_editor(text)
+    if parsed is None:
+      parsed = self.parse_edited_by(text)
     if parsed is None:
       parsed = self.parse_by(text)
     if parsed is None:
       parsed = self.parse_dash(text)
     if parsed is None:
       parsed = self.parse_comma(text)
+
     if parsed is None:
+      title = self.clean_title(text)
+      authors = []
+    else:
+      title, credit = parsed
+      title = self.clean_title(title)
+      authors = self.split_contributors(credit)
+
+    correction = self.credit_correction(year, category, title)
+    if correction is not None:
+      title, corrected_authors = correction
+      authors = list(corrected_authors)
+    if not title or not authors:
       return None
-    title, author = parsed
-    title = self.clean_title(title)
-    author = self.clean_author(author)
-    if not title or not author:
-      return None
-    return {'title': title, 'author': author, 'result': result}
+    return {'title': title, 'authors': authors, 'result': result}
+
+  def parse_parenthetical_editor(self, text):
+    match = re.match(
+      r'^(.*?)\s*\(\s*(?:co-)?edited\s+by\s+(.+?)\s*\)\s*$',
+      text,
+      re.I)
+    return (match.group(1), match.group(2)) if match is not None else None
 
   def parse_edited_by(self, text):
-    match = re.match(r'^(.*?)\s*,?\s+edited\s+by\s+(.+)$', text, re.I)
-    if match is None:
-      return None
-    return match.group(1), match.group(2)
+    match = re.match(
+      r'^(.*?)\s*,?\s+(?:co-)?edited\s+by\s+(.+)$', text, re.I)
+    return (match.group(1), match.group(2)) if match is not None else None
 
   def parse_by(self, text):
-    match = re.match(r'^(.*?)\s*,?\s+by\s+(.+)$', text, re.I)
-    if match is None:
-      return None
-    return match.group(1), match.group(2)
+    # Greedy title capture intentionally selects the final byline delimiter;
+    # "by" may occur inside a title or an editor parenthetical.
+    match = re.match(r'^(.*)\s*,?\s+by\s+(.+)$', text, re.I)
+    return (match.group(1), match.group(2)) if match is not None else None
 
   def parse_dash(self, text):
     match = re.match(r'^(.*?)\s+[-]\s+(.+)$', text)
-    if match is None:
-      return None
-    return match.group(1), match.group(2)
+    return (match.group(1), match.group(2)) if match is not None else None
 
   def parse_comma(self, text):
     title, author = split_title_author(text)
-    if title and author:
-      return title, author
-    return None
+    return (title, author) if title and author else None
+
+  def split_contributors(self, value):
+    value = self.clean_author(value)
+    parts = [
+      part.strip(' "\'.,;')
+      for part in re.split(r'\s*(?:,|&|\band\b)\s*', value, flags=re.I)
+      if part.strip(' "\'.,;')
+    ]
+    authors = []
+    for part in parts:
+      if authors and re.fullmatch(r'(?:Jr|Sr|II|III|IV|V)\.?', part, re.I):
+        authors[-1] = f'{authors[-1]}, {part}'
+      elif part not in authors:
+        authors.append(part)
+    return authors
+
+  def credit_correction(self, year, category, title):
+    if year is None or not category or not title:
+      return None
+    return CREDIT_CORRECTIONS.get((
+      int(year),
+      self.canonical_category(category),
+      category_key(title),
+    ))
 
   def clean_work_text(self, text):
     text = strip_square_notes(clean_source_text(text))
-    text = re.sub(r'^\s*(?:winner|runner-up|runner up|nominee|finalist)s?\s*:\s*',
-                  '', text, flags=re.I)
+    text = re.sub(
+      r'^\s*(?:winner|runner-up|runner up|nominee|finalist)s?\s*:\s*',
+      '',
+      text,
+      flags=re.I)
     text = re.sub(r'^\s*(?:[-*]|\u2022)\s*', '', text)
-    text = re.sub(r'\s*\((?:winner|runner-up|runner up|finalist)\)\s*$',
-                  '', text, flags=re.I)
+    text = re.sub(
+      r'\s*\((?:winner|runner-up|runner up|finalist)\)\s*$',
+      '',
+      text,
+      flags=re.I)
     return normalize_line(text.strip(' "\'.,;'))
 
   def clean_title(self, value):
@@ -333,16 +670,21 @@ class ThisIsHorrorParser(AwardParserBase):
 
   def clean_author(self, value):
     value = clean_source_text(value)
-    value = re.sub(r'^\s*(?:by|edited\s+by)\s+', '', value, flags=re.I)
-    value = re.sub(r'\s*\((?:Goodreads Author|Author|Editor|Editors?)\)\s*',
-                   ' ', value, flags=re.I)
-    value = re.sub(r'\s*,?\s*(?:eds?|editors?)\.?$', '', value, flags=re.I)
-    return strip_editor_marker(strip_publication_notes(value)).strip(' "\'.,;')
+    value = re.sub(
+      r'^\s*(?:by|(?:co-)?edited\s+by)\s+', '', value, flags=re.I)
+    value = re.sub(
+      r'\s*\((?:Goodreads Author|Author|Editor|Editors?)\)\s*',
+      ' ',
+      value,
+      flags=re.I)
+    value = re.sub(
+      r'\s*,?\s*(?:eds?|editors?)\.?$', '', value, flags=re.I)
+    return strip_editor_marker(
+      strip_publication_notes(value)).strip(' "\'.,;')
 
   def result_segments(self, text):
-    matches = list(re.finditer(r'\b(Winner|Runner-?up)\s*:\s*', text, re.I))
-    if not matches:
-      return []
+    matches = list(re.finditer(
+      r'\b(Winner|Runner(?:-|\s)?up)\s*:\s*', text, re.I))
     segments = []
     for index, match in enumerate(matches):
       end = matches[index + 1].start() if index + 1 < len(matches) else len(text)
@@ -355,15 +697,17 @@ class ThisIsHorrorParser(AwardParserBase):
   def parse_goodreads_label(self, line, category, category_aliases):
     match = re.match(
       r'^This\s+is\s+Horror\s+Award\s+(Nominee\s+)?for\s+(.+?)\s*'
-      r'(?:\((?:finalist|runner-up|runner up|nominee)\))?\s*\(((?:19|20)\d{2})\)$',
+      r'(?:\((?:finalist|runner-up|runner up|nominee)\))?\s*'
+      r'\(((?:19|20)\d{2})\)$',
       line,
       re.I)
-    if match is None:
+    if match is None or not self.category_matches(
+        match.group(2), category, category_aliases):
       return None
-    if not self.category_matches(match.group(2), category, category_aliases):
-      return None
-    result = RESULT_SHORTLISTED if match.group(1) else RESULT_WINNER
-    return int(match.group(3)), result
+    return (
+      int(match.group(3)),
+      RESULT_SHORTLISTED if match.group(1) else RESULT_WINNER,
+    )
 
   def goodreads_work_from_buffer(self, lines):
     lines = [line for line in lines if not self.is_goodreads_noise(line)]
@@ -397,9 +741,8 @@ class ThisIsHorrorParser(AwardParserBase):
 
   def is_goodreads_noise(self, line):
     key = category_key(line)
-    if not key:
-      return True
     return (
+      not key or
       key in {'winners', 'nominees', 'winner', 'nominee', 'finalist'} or
       key.startswith('score ') or
       key.startswith('rating ') or
@@ -408,12 +751,38 @@ class ThisIsHorrorParser(AwardParserBase):
       'want to read' in key or
       'rate this book' in key)
 
-  def official_current_documents(self, source):
-    documents = []
-    for html, title, link in self.source_documents(source):
-      if self.is_official_awards_page(title, link, html):
-        documents.append((html, title, link))
-    return tuple(documents)
+  def category_work_texts(self, heading):
+    list_rows = []
+    paragraphs = []
+    for node in heading.find_all_next():
+      if node is not heading and node.name in HEADING_TAGS:
+        break
+      if node.name == 'li':
+        text = self.node_text(node)
+        if text:
+          list_rows.append(text)
+      elif node.name == 'p':
+        text = self.node_text(node)
+        if text:
+          paragraphs.append(text)
+    if list_rows:
+      return tuple(list_rows)
+    rows = []
+    for paragraph in paragraphs:
+      rows.extend(self.split_numbered_rows(paragraph))
+    return tuple(rows)
+
+  def split_numbered_rows(self, text):
+    matches = list(re.finditer(r'(?<!\S)\d{1,2}\.\s+', text))
+    if not matches:
+      return (text,)
+    rows = []
+    for index, match in enumerate(matches):
+      end = matches[index + 1].start() if index + 1 < len(matches) else len(text)
+      row = clean_source_text(text[match.end():end])
+      if row:
+        rows.append(row)
+    return tuple(rows)
 
   def source_documents(self, source):
     text = self.decode_source(source)
@@ -450,18 +819,15 @@ class ThisIsHorrorParser(AwardParserBase):
       return UnicodeDammit(source).unicode_markup
     return source or ''
 
-  def semantic_nodes(self, html):
+  def soup(self, html):
     soup = BeautifulSoup(self.decode_source(html), 'html.parser')
     for removable in soup.find_all(['script', 'style', 'sup']):
       removable.decompose()
     for br in soup.find_all('br'):
       br.replace_with('\n')
-    return soup.find_all(SEMANTIC_TAGS)
+    return soup
 
-  def goodreads_lines(self, html):
-    soup = BeautifulSoup(self.decode_source(html), 'html.parser')
-    for removable in soup.find_all(['script', 'style']):
-      removable.decompose()
+  def goodreads_lines(self, soup):
     text = soup.get_text('\n')
     return [
       clean_source_text(line)
@@ -474,12 +840,15 @@ class ThisIsHorrorParser(AwardParserBase):
 
   def html_text(self, html):
     return clean_source_text(
-      BeautifulSoup(self.decode_source(html), 'html.parser').get_text(' ', strip=True))
+      BeautifulSoup(
+        self.decode_source(html), 'html.parser').get_text(' ', strip=True))
 
   def award_year(self, html, title=''):
     for value in (title, self.html_text(html)):
-      match = re.search(r'This\s+Is\s+Horror\s+Awards?\s+((?:19|20)\d{2})',
-                        value, re.I)
+      match = re.search(
+        r'This\s+Is\s+Horror\s+Awards?\s+((?:19|20)\d{2})',
+        value,
+        re.I)
       if match is not None:
         return int(match.group(1))
     match = YEAR_RE.search(title or '')
@@ -494,27 +863,9 @@ class ThisIsHorrorParser(AwardParserBase):
         return href
     return item.get('url') or item.get('link') or ''
 
-  def first_link_url(self, node, base_url):
-    link = node.find('a', href=True)
-    return urljoin(base_url, link['href']) if link is not None else ''
-
-  def is_official_awards_page(self, title, link, html):
-    normalized_link = (link or '').rstrip('/') + '/' if link else ''
-    if normalized_link == OFFICIAL_AWARDS_URL:
-      return True
-    text = f'{title} {self.html_text(html)}'
-    return (
-      'This Is Horror Awards' in text and
-      'Previous Winners' in text and
-      'ballot' in text.casefold())
-
   def looks_like_winners_title(self, title):
     key = category_key(title)
     return 'this is horror awards' in key and 'winner' in key
-
-  def looks_like_awards_document(self, title, html):
-    text = f'{title} {self.html_text(html)}'
-    return 'This Is Horror Awards' in text
 
   def clean_category_label(self, label):
     label = clean_source_text(label)
@@ -529,8 +880,31 @@ class ThisIsHorrorParser(AwardParserBase):
     alias_keys = {category_key(alias) for alias in aliases if alias}
     if label_key in alias_keys:
       return True
-    normalized = label_key.replace(' of the year', '')
-    return normalized in alias_keys
+    return label_key.replace(' of the year', '') in alias_keys
+
+  def canonical_category(self, category):
+    key = category_key(category).replace(' of the year', '')
+    if key == 'collection':
+      return 'short story collection'
+    return key
+
+  def expected_counts(self, category):
+    key = self.canonical_category(category)
+    return dict(EXPECTED_BALLOT_COUNTS.get(key, {}))
+
+  def category_expected_in_year(self, category, year):
+    return year in self.expected_counts(category)
+
+  def canonical_title_key(self, title):
+    key = category_key(title)
+    return TITLE_IDENTITY_ALIASES.get(key, key)
+
+  def category_name(self, rows):
+    for row in rows:
+      category = row.get('category')
+      if category:
+        return self.canonical_category(category)
+    return ''
 
   def parsed_from_rows(self, name, base_url, rows, notes):
     rows = self.dedupe_rows(rows)
@@ -546,13 +920,18 @@ class ThisIsHorrorParser(AwardParserBase):
     for year in sorted(by_year, key=lambda value: int(value)):
       year_rows = sorted(
         by_year[year],
-        key=lambda row: 0 if row.get('result') == RESULT_WINNER else 1)
+        key=lambda row: (
+          0 if row.get('result') == RESULT_WINNER else
+          1 if row.get('_runner_up') else 2,
+          row.get('_source_order', 0)))
       entries.extend(assign_positions(
         year_rows, int(year), tied_winners_share_position=True))
     return self.parsed_result(
       name,
       base_url,
-      sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
+      sorted(
+        entries,
+        key=lambda item: position_sort_key(item.get('position', ''))),
       notes=self.unique_notes(notes))
 
   def dedupe_rows(self, rows):
@@ -562,19 +941,21 @@ class ThisIsHorrorParser(AwardParserBase):
       key = self.row_key(row)
       existing = by_key.get(key)
       if existing is None:
-        by_key[key] = row
-        ordered.append(row)
+        existing = dict(row)
+        by_key[key] = existing
+        ordered.append(existing)
         continue
-      if existing.get('result') != RESULT_WINNER and row.get('result') == RESULT_WINNER:
+      if (
+          existing.get('result') != RESULT_WINNER and
+          row.get('result') == RESULT_WINNER):
         existing.update(row)
     return ordered
 
   def row_key(self, row):
     return (
       str(row.get('award_year', '')),
-      category_key(row.get('category', '')),
-      category_key(row.get('title', '')),
-      category_key(row.get('author', '')),
+      self.canonical_category(row.get('category', '')),
+      self.canonical_title_key(row.get('title', '')),
     )
 
   def unique_notes(self, notes):

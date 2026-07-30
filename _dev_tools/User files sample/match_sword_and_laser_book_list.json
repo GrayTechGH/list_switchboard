@@ -2,12 +2,37 @@
   "list_id": "sword_and_laser_book_list",
   "matches": [
     {
+      "entry_key": "the golden compass|philip pullman",
+      "imported_author": [
+        "Philip Pullman"
+      ],
+      "imported_title": "The Golden Compass",
+      "matched_at": "2026-07-10T19:54:18Z",
+      "matched_authors": [
+        "Philip Pullman"
+      ],
+      "matched_book_id": 29829,
+      "matched_book_ids": [
+        29829
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Philip Pullman"
+          ],
+          "matched_book_id": 29829,
+          "matched_title": "Northern Lights"
+        }
+      ],
+      "matched_title": "Northern Lights"
+    },
+    {
       "entry_key": "ironside a modern faery s tale|holly black",
       "imported_author": [
         "Holly Black"
       ],
       "imported_title": "Ironside:A Modern Faery's Tale",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Holly Black"
       ],
@@ -32,7 +57,7 @@
         "Patricia A. McKillip"
       ],
       "imported_title": "Riddle-Master",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Patricia A. McKillip"
       ],
@@ -52,12 +77,26 @@
       "matched_title": "The Riddle-Master of Hed"
     },
     {
+      "entry_key": "good omens|terry pratchett neil gaiman",
+      "ignored": true,
+      "imported_author": [
+        "Terry Pratchett & Neil Gaiman"
+      ],
+      "imported_title": "Good Omens",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-10T20:02:45Z"
+    },
+    {
       "entry_key": "shadow and claw|gene wolfe",
       "imported_author": [
         "Gene Wolfe"
       ],
       "imported_title": "Shadow and Claw",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Gene Wolfe"
       ],
@@ -82,7 +121,7 @@
         "Suzanne Collins"
       ],
       "imported_title": "The Hunger Games",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Suzanne Collins"
       ],
@@ -107,7 +146,7 @@
         "Michael A. Stackpole"
       ],
       "imported_title": "Talion: Revanant",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Michael A. Stackpole"
       ],
@@ -132,7 +171,7 @@
         "Susanna Clarke"
       ],
       "imported_title": "Jonathan Strange and Mr Norrell",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Susanna Clarke"
       ],
@@ -157,7 +196,7 @@
         "Haruki Murakami"
       ],
       "imported_title": "1Q84",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Haruki Murakami"
       ],
@@ -182,7 +221,7 @@
         "David Wingrove"
       ],
       "imported_title": "Chung Kuo: The Middle Kingdom",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "David Wingrove"
       ],
@@ -207,7 +246,7 @@
         "Hugh Howey"
       ],
       "imported_title": "Wool",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Hugh Howey"
       ],
@@ -232,7 +271,7 @@
         "Marie Brennan"
       ],
       "imported_title": "A Natural History of Dragons: A Memoir by Lady Trent",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Marie Brennan"
       ],
@@ -257,7 +296,7 @@
         "Kevin Hearne"
       ],
       "imported_title": "Hounded",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Kevin Hearne"
       ],
@@ -282,7 +321,7 @@
         "Octavia E. Butler"
       ],
       "imported_title": "Wild Seed",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Octavia E. Butler"
       ],
@@ -307,7 +346,7 @@
         "George Chetwynd Griffith"
       ],
       "imported_title": "The Angel of the Revolution: A Tale of the Coming Terror",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "George Griffith"
       ],
@@ -332,7 +371,7 @@
         "Ellen Kushner"
       ],
       "imported_title": "Swordspoint",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Ellen Kushner"
       ],
@@ -357,7 +396,7 @@
         "Linda Nagata"
       ],
       "imported_title": "The Red: First Light",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Linda Nagata"
       ],
@@ -382,7 +421,7 @@
         "Andre Norton"
       ],
       "imported_title": "The Time Traders",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Andre Norton"
       ],
@@ -407,7 +446,7 @@
         "Andrzej Sapkowski"
       ],
       "imported_title": "The Last Wish",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Andrzej Sapkowski"
       ],
@@ -432,7 +471,7 @@
         "Roger Zelazny"
       ],
       "imported_title": "Nine Princes in Amber",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Roger Zelazny"
       ],
@@ -457,7 +496,7 @@
         "Connie Willis"
       ],
       "imported_title": "Blackout/All Clear",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Connie Willis"
       ],
@@ -490,7 +529,7 @@
         "Dennis E. Taylor"
       ],
       "imported_title": "We are Legion We are Bob",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Dennis E. Taylor"
       ],
@@ -510,37 +549,29 @@
       "matched_title": "We Are Legion"
     },
     {
-      "entry_key": "oryx and crake|margaret atwood",
+      "entry_key": "midnight riot|ben aaronovitch",
       "imported_author": [
-        "Margaret Atwood"
+        "Ben Aaronovitch"
       ],
-      "imported_title": "Oryx and Crake",
-      "matched_at": "2026-07-08T03:27:28Z",
+      "imported_title": "Midnight Riot",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
-        "Margaret Atwood"
+        "Ben Aaronovitch"
       ],
-      "matched_book_id": 40162,
+      "matched_book_id": 19862,
       "matched_book_ids": [
-        40162,
-        16921
+        19862
       ],
       "matched_books": [
         {
           "matched_authors": [
-            "Margaret Atwood"
+            "Ben Aaronovitch"
           ],
-          "matched_book_id": 40162,
-          "matched_title": "Oryx and Crake"
-        },
-        {
-          "matched_authors": [
-            "Margaret Atwood"
-          ],
-          "matched_book_id": 16921,
-          "matched_title": "The MaddAddam Trilogy: Oryx and Crake; The Year of the Flood; MaddAddam"
+          "matched_book_id": 19862,
+          "matched_title": "Rivers of London: 10th Anniversary Edition"
         }
       ],
-      "matched_title": "The MaddAddam Trilogy: Oryx and Crake; The Year of the Flood; MaddAddam"
+      "matched_title": "Rivers of London: 10th Anniversary Edition"
     },
     {
       "entry_key": "dangerous to know|k t davies",
@@ -548,7 +579,7 @@
         "K.T. Davies"
       ],
       "imported_title": "Dangerous to Know",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "K. T. Davies"
       ],
@@ -568,12 +599,40 @@
       "matched_title": "Dangerous to Know: The Chronicles of Breed: Book 1"
     },
     {
+      "entry_key": "the poppy wars|r f kuang",
+      "ignored": true,
+      "imported_author": [
+        "R.F.Kuang"
+      ],
+      "imported_title": "The Poppy Wars",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-11T01:00:43Z"
+    },
+    {
+      "entry_key": "rivers of london midnight riot|ben aaronovitch",
+      "ignored": true,
+      "imported_author": [
+        "Ben Aaronovitch"
+      ],
+      "imported_title": "Rivers of London/Midnight Riot",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-11T01:00:43Z"
+    },
+    {
       "entry_key": "the bloodprint|alix e harrow",
       "imported_author": [
         "Alix E. Harrow"
       ],
       "imported_title": "The Bloodprint",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Ausma Zehanat Khan"
       ],
@@ -598,7 +657,7 @@
         "Enchanted"
       ],
       "imported_title": "Enchanted",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Alethea Kontis"
       ],
@@ -623,7 +682,7 @@
         "Walter Moers"
       ],
       "imported_title": "The 13 1/2 Lives of Captain Blue Bear",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Walter Moers"
       ],
@@ -648,7 +707,7 @@
         "Hope Mirrlees"
       ],
       "imported_title": "Lud-in-the-Mist",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Hope Mirrlees"
       ],
@@ -673,7 +732,7 @@
         "Becky Chambers"
       ],
       "imported_title": "A Psalm for the Wild-Bilt",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Becky Chambers"
       ],
@@ -698,7 +757,7 @@
         "Clifford D. Simak"
       ],
       "imported_title": "Way Station",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Clifford D. Simak"
       ],
@@ -719,28 +778,17 @@
     },
     {
       "entry_key": "rivers of london|ben aaronovitch",
+      "ignored": true,
       "imported_author": [
         "Ben Aaronovitch"
       ],
       "imported_title": "Rivers of London",
-      "matched_at": "2026-07-08T03:12:33Z",
-      "matched_authors": [
-        "Ben Aaronovitch"
-      ],
-      "matched_book_id": 19862,
-      "matched_book_ids": [
-        19862
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "Ben Aaronovitch"
-          ],
-          "matched_book_id": 19862,
-          "matched_title": "Rivers of London: 10th Anniversary Edition"
-        }
-      ],
-      "matched_title": "Rivers of London: 10th Anniversary Edition"
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-11T01:00:43Z"
     },
     {
       "entry_key": "elric of melnibon|michael moorcock",
@@ -748,7 +796,7 @@
         "Michael Moorcock"
       ],
       "imported_title": "Elric of Melnibon\u00e9",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Michael Moorcock"
       ],
@@ -768,12 +816,26 @@
       "matched_title": "Elric Saga Part One: Elric of Melnibone / the Sailor on the Seas of Fate / The"
     },
     {
+      "entry_key": "legend lattes|travis baldree",
+      "ignored": true,
+      "imported_author": [
+        "Travis Baldree"
+      ],
+      "imported_title": "Legend & Lattes",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-11T01:00:43Z"
+    },
+    {
       "entry_key": "the girl who could move shit with her mind|jackson ford",
       "imported_author": [
         "Jackson Ford"
       ],
       "imported_title": "The Girl Who Could Move Shit With Her Mind",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Jackson Ford"
       ],
@@ -798,7 +860,7 @@
         "Lois McMaster Bujold"
       ],
       "imported_title": "Cordelia's Honour",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Lois McMaster Bujold"
       ],
@@ -823,7 +885,7 @@
         "Glen Cook"
       ],
       "imported_title": "The Black Company",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Glen Cook"
       ],
@@ -848,7 +910,7 @@
         "Bradley P. Beaulieu"
       ],
       "imported_title": "Twelve Kings",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Bradley P. Beaulieu"
       ],
@@ -873,7 +935,7 @@
         "Edward Ashton"
       ],
       "imported_title": "Mickey 7",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Edward Ashton"
       ],
@@ -898,7 +960,7 @@
         "Madeleine Thien"
       ],
       "imported_title": "The Book of Records",
-      "matched_at": "2026-07-08T03:12:33Z",
+      "matched_at": "2026-07-10T19:54:18Z",
       "matched_authors": [
         "Madeleine Thien"
       ],
@@ -918,90 +980,18 @@
       "matched_title": "The Book of Records: A Novel"
     },
     {
-      "entry_key": "he who fights with monsters|shirtaloon",
-      "imported_author": [
-        "Shirtaloon"
-      ],
-      "imported_title": "He Who Fights With Monsters",
-      "matched_at": "2026-07-08T03:27:28Z",
-      "matched_authors": [
-        "Shirtaloon"
-      ],
-      "matched_book_id": 38177,
-      "matched_book_ids": [
-        38177,
-        38181
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "Shirtaloon"
-          ],
-          "matched_book_id": 38177,
-          "matched_title": "He Who Fights With Monsters 4"
-        },
-        {
-          "matched_authors": [
-            "Shirtaloon"
-          ],
-          "matched_book_id": 38181,
-          "matched_title": "He Who Fights With Monsters, Book 1: Outworlder"
-        }
-      ],
-      "matched_title": "He Who Fights With Monsters, Book 1: Outworlder"
-    },
-    {
-      "entry_key": "the golden compass|philip pullman",
-      "imported_author": [
-        "Philip Pullman"
-      ],
-      "imported_title": "The Golden Compass",
-      "matched_at": "2026-07-08T03:19:35Z",
-      "matched_authors": [
-        "Philip Pullman"
-      ],
-      "matched_book_id": 29829,
-      "matched_book_ids": [
-        29829
-      ],
-      "matched_books": [
-        {
-          "matched_authors": [
-            "Philip Pullman"
-          ],
-          "matched_book_id": 29829,
-          "matched_title": "Northern Lights"
-        }
-      ],
-      "matched_title": "Northern Lights"
-    },
-    {
-      "entry_key": "midnight riot|ben aaronovitch",
+      "entry_key": "house of suns|alastair reynolds",
       "ignored": true,
       "imported_author": [
-        "Ben Aaronovitch"
+        "Alastair Reynolds"
       ],
-      "imported_title": "Midnight Riot",
+      "imported_title": "House of Suns",
       "previous_match_source": "never matched",
       "previous_matched_book_id": null,
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-08T03:27:28Z"
-    },
-    {
-      "entry_key": "the poppy wars|r f kuang",
-      "ignored": true,
-      "imported_author": [
-        "R.F.Kuang"
-      ],
-      "imported_title": "The Poppy Wars",
-      "previous_match_source": "never matched",
-      "previous_matched_book_id": null,
-      "previous_matched_book_ids": [],
-      "previous_matched_books": [],
-      "unmatched": true,
-      "unmatched_at": "2026-07-08T03:27:28Z"
+      "unmatched_at": "2026-07-11T01:00:43Z"
     },
     {
       "entry_key": "trail of lightning|r f kuang",
@@ -1015,21 +1005,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-08T03:27:28Z"
-    },
-    {
-      "entry_key": "rivers of london midnight riot|ben aaronovitch",
-      "ignored": true,
-      "imported_author": [
-        "Ben Aaronovitch"
-      ],
-      "imported_title": "Rivers of London/Midnight Riot",
-      "previous_match_source": "never matched",
-      "previous_matched_book_id": null,
-      "previous_matched_book_ids": [],
-      "previous_matched_books": [],
-      "unmatched": true,
-      "unmatched_at": "2026-07-08T03:27:28Z"
+      "unmatched_at": "2026-07-11T01:00:43Z"
     },
     {
       "entry_key": "the ten thousand doors of january|asuma zehanat khan",
@@ -1043,21 +1019,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-08T03:27:28Z"
-    },
-    {
-      "entry_key": "legend lattes|travis baldree",
-      "ignored": true,
-      "imported_author": [
-        "Travis Baldree"
-      ],
-      "imported_title": "Legend & Lattes",
-      "previous_match_source": "never matched",
-      "previous_matched_book_id": null,
-      "previous_matched_book_ids": [],
-      "previous_matched_books": [],
-      "unmatched": true,
-      "unmatched_at": "2026-07-08T03:27:28Z"
+      "unmatched_at": "2026-07-11T01:00:43Z"
     },
     {
       "entry_key": "emily wilde s encyclopedia of faeries|heather fawcett",
@@ -1071,7 +1033,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-08T03:27:28Z"
+      "unmatched_at": "2026-07-11T01:00:43Z"
     },
     {
       "entry_key": "cordelia s honor|lois mcmaster bujold",
@@ -1085,9 +1047,51 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-08T03:27:28Z"
+      "unmatched_at": "2026-07-11T01:00:43Z"
+    },
+    {
+      "entry_key": "dungeon crawler carl|matt dinnaman",
+      "ignored": true,
+      "imported_author": [
+        "Matt Dinnaman"
+      ],
+      "imported_title": "Dungeon Crawler Carl",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-11T01:00:43Z"
+    },
+    {
+      "entry_key": "the raven scholar|antonio hodgson",
+      "ignored": true,
+      "imported_author": [
+        "Antonio Hodgson"
+      ],
+      "imported_title": "The Raven Scholar",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-11T01:00:43Z"
+    },
+    {
+      "entry_key": "lord foul s bane|stephen donaldson",
+      "ignored": true,
+      "imported_author": [
+        "Stephen Donaldson"
+      ],
+      "imported_title": "Lord Foul\u2019s Bane",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-07-11T01:00:43Z"
     }
   ],
-  "saved_at": "2026-07-08T03:27:28Z",
+  "saved_at": "2026-07-11T01:00:43Z",
   "schema_version": 2
 }

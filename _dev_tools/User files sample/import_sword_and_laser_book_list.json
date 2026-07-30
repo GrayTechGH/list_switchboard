@@ -458,7 +458,8 @@
     },
     {
       "authors": [
-        "Neil Gaiman & Terry Pratchett"
+        "Neil Gaiman",
+        "Terry Pratchett"
       ],
       "position": "24",
       "source": {
@@ -470,7 +471,8 @@
     },
     {
       "authors": [
-        "Terry Pratchett & Neil Gaiman"
+        "Terry Pratchett",
+        "Neil Gaiman"
       ],
       "percent": "40.3%",
       "position": "24.01",
@@ -755,7 +757,8 @@
     },
     {
       "authors": [
-        "David & Leigh Eddings"
+        "David",
+        "Leigh Eddings"
       ],
       "percent": "22.3%",
       "position": "37.03",
@@ -1448,7 +1451,8 @@
     },
     {
       "authors": [
-        "Larry Niven & Jerry Pournelle"
+        "Larry Niven",
+        "Jerry Pournelle"
       ],
       "percent": "25.7%",
       "position": "76.02",
@@ -3893,7 +3897,8 @@
     },
     {
       "authors": [
-        "Delilah S. Dawson & Kevin Hearne"
+        "Delilah S. Dawson",
+        "Kevin Hearne"
       ],
       "percent": "34.2",
       "position": "190.02",
@@ -4324,7 +4329,7 @@
       "title": "A Midnight Pastry Shop Called Hwawoldang"
     }
   ],
-  "fetched_at": "2026-07-08T03:12:20Z",
+  "fetched_at": "2026-07-15T05:17:42Z",
   "list_id": "sword_and_laser_book_list",
   "list_name": "Sword and Laser",
   "match_series": false,

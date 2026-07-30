@@ -16,6 +16,12 @@ except ImportError:
 class AnthonyAwardsParser(StopYoureKillingMeAwardParserBase):
 
   AWARD_NAME = 'Anthony Award'
+  AUTHOR_CREDIT_CORRECTIONS = {
+    # The SYKM 2020 winner row omits the delimiter between its first two
+    # editors; Bouchercon's award history identifies all three explicitly.
+    'verena rose rita owen and shawn reilly simmons': (
+      'Verena Rose', 'Rita Owen', 'Shawn Reilly Simmons'),
+  }
 
 
 def parse_anthony_awards(

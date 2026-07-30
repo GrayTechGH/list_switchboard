@@ -24,14 +24,14 @@ from bs4 import BeautifulSoup, UnicodeDammit
 try:
   from calibre_plugins.list_switchboard.parser.award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
-    normalize_heading, normalize_line, split_title_author, strip_editor_marker,
+    normalize_heading, normalize_line, split_title_author,
     strip_publication_notes, strip_square_notes, strip_tie_marker,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
-    normalize_heading, normalize_line, split_title_author, strip_editor_marker,
+    normalize_heading, normalize_line, split_title_author,
     strip_publication_notes, strip_square_notes, strip_tie_marker,
   )
   from .generic import position_sort_key
@@ -55,16 +55,34 @@ WIKIPEDIA_URL = 'https://en.wikipedia.org/wiki/Australasian_Shadows_Awards'
 
 YEAR_RE = re.compile(r'(?:19|20)\d{2}')
 SEMANTIC_TAGS = ('h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'li')
+BR_BOUNDARY = '\u241e'
+
+TITLE_CORRECTIONS = {
+  'collision storie s': 'Collision: Stories',
+}
 
 CATEGORY_BOUNDARIES = frozenset({
-  'artwork', 'collection', 'collected work', 'comic', 'comics',
-  'edited publication', 'edited work', 'graphic novel',
+  'artwork', 'collection', 'collections', 'collected work', 'collected works',
+  'comic', 'comics', 'comic graphic novel', 'comic/graphic novel',
+  'comics graphic novels', 'comics/graphic novels',
+  'edited publication', 'edited work', 'edited works', 'graphic novel',
   'graphic novel comic', 'graphic novel comics', 'graphic novel or comic',
-  'graphic novels comic', 'graphic novels comics', 'long fiction', 'novel',
+  'graphic novels and comics', 'graphic novels comic', 'graphic novels comics',
+  'long fiction', 'novel',
+  'nonfiction',
   'novels anthologies and short stories',
-  'paul haines award for long fiction', 'poetry',
+  'paul haines award for long fiction', 'paul haines awards for long fiction',
+  'the paul haines award for long fiction',
+  'the paul haines awards for long fiction',
+  'poetry',
   'rocky wood award for non fiction and criticism',
-  'rocky wood award for nonfiction and criticism', 'short fiction',
+  'rocky wood award for nonfiction and criticism',
+  'the rocky wood award for non fiction and criticism',
+  'the rocky wood award for nonfiction and criticism',
+  'short fiction', 'short stories', 'short story',
+  'written work in a comic graphic novel',
+  'written work in a comic/graphic novel',
+  'written work in comic graphic novel',
 })
 
 EXCLUDED_CATEGORY_KEYS = frozenset({
@@ -72,6 +90,8 @@ EXCLUDED_CATEGORY_KEYS = frozenset({
   'novels anthologies and short stories',
   'poetry',
   'short fiction',
+  'short stories',
+  'short story',
 })
 
 NO_SHORTLIST_RE = re.compile(r'\bno\s+shortlist\b', re.I)
@@ -232,11 +252,11 @@ class AustralasianShadowsParser(AwardParserBase):
 
   def rows_from_work_text(
       self, text, source_url, year, category, result, notes, source_label):
-    if year is None:
+    if year is None or self.is_category_definition(text):
       return []
     rows = []
-    for work_text in self.split_work_text(text):
-      parsed = self.parse_work_text(work_text, result)
+    for work_text in self.split_work_text(text, category):
+      parsed = self.parse_work_text(work_text, result, category)
       if parsed is None:
         if self.is_parseable_noise(work_text):
           continue
@@ -246,31 +266,222 @@ class AustralasianShadowsParser(AwardParserBase):
       rows.append(self.build_award_entry(parsed, source_url, year, category))
     return rows
 
-  def parse_work_text(self, text, result):
+  def parse_work_text(self, text, result, category=''):
     text = self.clean_work_text(text)
-    if not text or self.is_no_shortlist_or_award(text):
+    if (
+        not text or self.is_no_shortlist_or_award(text) or
+        self.is_category_definition(text) or self.is_production_credit(text)):
       return None
-    parsed = self.parse_by(text)
-    if parsed is None:
-      parsed = self.parse_parenthetical_author(text)
+    parsed = None
+    if self.is_edited_category(category):
+      parsed = self.parse_edited_work_text(text)
+      if parsed is None:
+        return None
+    elif self.is_long_fiction_category(category):
+      parsed = self.parse_long_fiction_work_text(text)
+    elif self.is_nonfiction_category(category):
+      parsed = self.parse_nonfiction_work_text(text)
+    elif self.is_novel_category(category):
+      parsed = self.parse_novel_work_text(text)
+    elif self.is_graphic_category(category):
+      parsed = self.parse_graphic_work_text(text)
     if parsed is None:
       parsed = self.parse_dash_author_title(text)
+    prefer_comma = self.comma_credit_follows_title(text)
+    if parsed is None and prefer_comma:
+      parsed = self.parse_comma(text)
+    if parsed is None:
+      parsed = self.parse_by(text)
     if parsed is None:
       parsed = self.parse_comma(text)
+    if parsed is None:
+      parsed = self.parse_parenthetical_author(text)
     if parsed is None:
       return None
     title, author = parsed
     title = self.clean_title(title)
+    if (
+        self.is_novel_category(category) and isinstance(author, str) and
+        re.search(r'\s+(?:&|and)\s+', author, re.I)):
+      author = self.split_contributor_authors(author)
+    if isinstance(author, (list, tuple)):
+      authors = [
+        cleaned for cleaned in (self.clean_author(value) for value in author)
+        if cleaned
+      ]
+      if not title or not authors:
+        return None
+      return {'title': title, 'authors': authors, 'result': result}
     author = self.clean_author(author)
     if not title or not author:
       return None
     return {'title': title, 'author': author, 'result': result}
 
   def parse_by(self, text):
-    match = re.match(r'^(.*?)\s+(?:edited\s+)?by\s+(.+)$', text, re.I)
+    match = re.match(r'^(.*)\s+(?:edited\s+)?by\s+(.+)$', text, re.I)
     if match is None:
       return None
     return match.group(1), match.group(2)
+
+  def parse_graphic_work_text(self, text):
+    text = re.sub(
+      r'\s*,?\s*\((?:adapted|art|artist|illustrated|illustration)\b[^()]*\)'
+      r'\s*,?',
+      ' ',
+      text,
+      flags=re.I)
+    text = strip_publication_notes(normalize_line(text).strip(' ,'))
+    match = re.match(
+      r'^(.*?)\s+(?:written\s+)?by\s*:?\s*(.+)$',
+      text,
+      re.I)
+    if match is None:
+      return None
+    return match.group(1), self.split_contributor_authors(match.group(2))
+
+  def parse_long_fiction_work_text(self, text):
+    match = re.match(r'^"?(.+?)"\s*,\s*([^,()]+)(?:,.*)?$', text)
+    if match is not None:
+      return match.group(1), match.group(2)
+    if ' - ' in text:
+      title, author = text.rsplit(' - ', 1)
+      if self.looks_like_person_credit(author):
+        return title, author
+    return None
+
+  def parse_nonfiction_work_text(self, text):
+    text = self.strip_final_publication_note(text)
+    match = re.match(r'^(.*?)\s+(?:edited\s+)?by\s+(.+)$', text, re.I)
+    if match is not None:
+      return match.group(1), match.group(2)
+    if ' - ' not in text:
+      return None
+    title, author = text.rsplit(' - ', 1)
+    if self.looks_like_person_credit(author):
+      return title, author
+    return None
+
+  def parse_novel_work_text(self, text):
+    text = self.strip_final_publication_note(text)
+    match = re.match(r'^(.*?)\s+by\s+(.+)$', text, re.I)
+    if match is not None:
+      return match.group(1), match.group(2)
+    return None
+
+  def parse_edited_work_text(self, text):
+    """
+    Parse the official page's editor-credit forms.
+
+    Edited Work rows use first-comma credits, explicit ``edited by``/``ed.``
+    markers, and title-final dash credits. Establish that boundary before
+    splitting ``and``, ``&``, or comma-separated editors.
+    """
+    text = self.strip_final_publication_note(text)
+
+    match = re.match(
+      r'^(.*?)\s*,?\s*\((?:eds?\.?|edited\s+by)\s+(.+)\)$',
+      text,
+      re.I)
+    if match is not None:
+      return match.group(1), self.split_contributor_authors(
+        self.editor_credit_without_publication(match.group(2)))
+
+    match = re.match(
+      r'^(.*?),\s*(.+?)\s*\((?:eds?|editors?)\.?\)$',
+      text,
+      re.I)
+    if match is not None:
+      return match.group(1), self.split_contributor_authors(match.group(2))
+
+    match = re.match(r'^(.*?)\s*,?\s+edited\s+by\s*:?\s*(.+)$', text, re.I)
+    if match is not None:
+      return match.group(1), self.split_contributor_authors(match.group(2))
+
+    match = re.match(r'^(.*?),\s*(?:eds?\.?|edited\s+by)\s+(.+)$', text, re.I)
+    if match is not None:
+      return match.group(1), self.split_contributor_authors(
+        self.editor_credit_without_publication(match.group(2)))
+
+    match = re.match(r'^(.*)\s+by\s+(.+)$', text, re.I)
+    if match is not None:
+      return match.group(1), self.split_contributor_authors(match.group(2))
+
+    if ',' in text:
+      title, credit = text.split(',', 1)
+      authors = self.split_contributor_authors(credit)
+      if authors:
+        return title, authors
+
+    if ' - ' in text:
+      title, credit = text.rsplit(' - ', 1)
+      authors = self.split_contributor_authors(credit)
+      if authors and all(self.looks_like_person_credit(author) for author in authors):
+        return title, authors
+    return None
+
+  def strip_final_publication_note(self, text):
+    text = normalize_line(text)
+    if not text.endswith(')'):
+      return text
+    depth = 0
+    start = None
+    for index in range(len(text) - 1, -1, -1):
+      if text[index] == ')':
+        depth += 1
+      elif text[index] == '(':
+        depth -= 1
+        if depth == 0:
+          start = index
+          break
+    if start is None or re.match(
+        r'\s*(?:eds?\.?|editors?|edited\s+by)\b',
+        text[start + 1:-1],
+        re.I):
+      return text
+    return normalize_line(text[:start])
+
+  def editor_credit_without_publication(self, value):
+    parts = [part.strip() for part in value.rsplit(',', 1)]
+    if len(parts) == 2:
+      return parts[0]
+    return value
+
+  def split_contributor_authors(self, value):
+    value = clean_source_text(value)
+    value = re.sub(
+      r'^\s*(?:by|eds?\.?|editors?|edited\s+by)\s*:?\s*',
+      '',
+      value,
+      flags=re.I)
+    value = self.strip_editor_credit(strip_publication_notes(value))
+    parts = [
+      part.strip(' "\'.,;')
+      for part in re.split(r'\s*(?:,|&|\band\b)\s*', value, flags=re.I)
+      if part.strip(' "\'.,;')
+    ]
+    authors = []
+    for part in parts:
+      if authors and re.fullmatch(r'(?:Jr|Sr|II|III|IV|V)\.?', part, re.I):
+        authors[-1] = f'{authors[-1]}, {part}'
+      else:
+        authors.append(part)
+    return authors
+
+  def comma_credit_follows_title(self, text):
+    """
+    Prefer the final comma for ``Title, Author (Publisher)`` source rows.
+
+    A literal "by" can occur inside a title. It is only the author delimiter
+    when it follows the title's final comma, as in ``Title, Subtitle by Author``.
+    """
+    work_text = strip_publication_notes(clean_source_text(text))
+    comma_at = work_text.rfind(',')
+    if comma_at < 0:
+      return False
+    by_matches = tuple(re.finditer(r'\s+(?:edited\s+)?by\s+', work_text, re.I))
+    if by_matches:
+      return comma_at > by_matches[-1].start()
+    return work_text != clean_source_text(text)
 
   def parse_parenthetical_author(self, text):
     match = re.match(r'^(.*?)\s+\((?:by\s+)?([^()]+)\)$', text, re.I)
@@ -283,8 +494,18 @@ class AustralasianShadowsParser(AwardParserBase):
     if match is None:
       return None
     first, second = match.group(1), match.group(2)
-    if self.looks_like_title(first) and not self.looks_like_title(second):
+    first_is_title = self.looks_like_title(first)
+    second_is_title = self.looks_like_title(second)
+    if first_is_title and not second_is_title:
       return first, second
+    if second_is_title and not first_is_title:
+      return second, first
+    first_is_person = self.looks_like_person_credit(first)
+    second_is_person = self.looks_like_person_credit(second)
+    if second_is_person and not first_is_person:
+      return first, second
+    if first_is_person and not second_is_person:
+      return second, first
     return second, first
 
   def parse_comma(self, text):
@@ -303,13 +524,22 @@ class AustralasianShadowsParser(AwardParserBase):
 
   def clean_title(self, value):
     value = strip_publication_notes(clean_source_text(value))
-    return value.strip(' "\'.,;')
+    value = re.sub(r'\s+\bwritten\s*$', '', value, flags=re.I)
+    value = value.strip(' "\'.,;')
+    return TITLE_CORRECTIONS.get(category_key(value), value)
 
   def clean_author(self, value):
     value = clean_source_text(value)
     value = re.sub(r'^\s*(?:by|edited\s+by)\s+', '', value, flags=re.I)
-    value = re.sub(r'\s*,?\s*(?:eds?|editors?)\.?$', '', value, flags=re.I)
-    return strip_editor_marker(strip_publication_notes(value)).strip(' "\'.,;')
+    value = self.strip_editor_credit(value)
+    return strip_publication_notes(value).strip(' "\'.,;')
+
+  def strip_editor_credit(self, value):
+    return re.sub(
+      r'(?:\s*,\s*|\s+)(?:eds?|editors?)\.?$',
+      '',
+      value,
+      flags=re.I).strip()
 
   def source_documents(self, source):
     text = self.decode_source(source)
@@ -350,7 +580,7 @@ class AustralasianShadowsParser(AwardParserBase):
     for removable in soup.find_all(['script', 'style', 'sup']):
       removable.decompose()
     for br in soup.find_all('br'):
-      br.replace_with('\n')
+      br.replace_with(BR_BOUNDARY)
     lines = []
     for node in soup.find_all(SEMANTIC_TAGS):
       text = self.node_text(node)
@@ -365,7 +595,7 @@ class AustralasianShadowsParser(AwardParserBase):
 
   def split_embedded_lines(self, text):
     parts = []
-    for part in re.split(r'\s*(?:\n|\u2022)\s*', text or ''):
+    for part in re.split(rf'\s*(?:\n|\u2022|{BR_BOUNDARY})\s*', text or ''):
       part = clean_source_text(part)
       if part:
         parts.append(part)
@@ -452,6 +682,10 @@ class AustralasianShadowsParser(AwardParserBase):
       left, right = text.split(':', 1)
       if self.is_category_boundary(left):
         return left, normalize_line(right)
+    if ' - ' in text:
+      left, right = text.split(' - ', 1)
+      if self.is_category_boundary(left):
+        return left, normalize_line(right)
     if self.is_category_boundary(text):
       return text, ''
     return None, ''
@@ -473,30 +707,140 @@ class AustralasianShadowsParser(AwardParserBase):
   def is_no_shortlist_or_award(self, text):
     return bool(NO_SHORTLIST_RE.search(text) or NO_AWARD_RE.search(text))
 
+  def is_category_definition(self, text):
+    return bool(re.match(
+      r'^(?:'
+      r'a collection of (?:three(?: \(3\))?|\(?3\)?) or more short stories by '
+      r'(?:a single|two \(\d+\) or more) authors?\b|'
+      r'edited by one or more editors?\b|'
+      r'no minimum or maximum word count\b|'
+      r'includes? anthologies and individual magazine issues\b|'
+      r'can include a single issue\b|'
+      r'work must be written by an australasian\b|'
+      r'work will be judged as an overall medium\b|'
+      r'with an emphasis on the script or story elements\b|'
+      r'a piece of non[- ]?fiction or work of criticism\b|'
+      r'works? of at least \d{1,3}(?:,\d{3})* words\b|'
+      r'works? between \d{1,3}(?:,\d{3})* to '
+      r'\d{1,3}(?:,\d{3})* words\b'
+      r')',
+      clean_source_text(text),
+      re.I))
+
+  def is_production_credit(self, text):
+    return bool(re.match(
+      r'^(?:art|artists?|illustrated by|illustrators?)\s*:',
+      clean_source_text(text),
+      re.I))
+
+  def is_graphic_category(self, category):
+    key = category_key(category)
+    return 'graphic' in key or 'comic' in key
+
+  def is_edited_category(self, category):
+    key = category_key(category)
+    return 'edited' in key or key == 'edited publication'
+
+  def is_long_fiction_category(self, category):
+    key = category_key(category)
+    return 'long fiction' in key
+
+  def is_nonfiction_category(self, category):
+    return 'nonfiction' in category_key(category)
+
+  def is_novel_category(self, category):
+    return category_key(category) == 'novel'
+
   def is_parseable_noise(self, text):
     key = category_key(text)
     return (
       not key or key in CATEGORY_BOUNDARIES or self.is_result_marker(text) or
+      self.is_production_credit(text) or
       key.startswith('the australasian shadows awards') or
       key.startswith('australasian shadows awards'))
 
-  def split_work_text(self, text):
+  def split_work_text(self, text, category=''):
     text = self.clean_work_text(text)
     if not text:
       return []
-    return [
+    parts = [
       normalize_line(part)
       for part in re.split(r'\s*(?:;|\s+/\s+)\s*', text)
       if normalize_line(part)
     ]
+    if (
+        self.is_long_fiction_category(category) or
+        self.is_nonfiction_category(category)):
+      dash_credit_parts = []
+      for part in parts:
+        if part.count(' - ') < 2:
+          dash_credit_parts.append(part)
+          continue
+        dash_credit_parts.extend(
+          normalize_line(item)
+          for item in re.split(r',\s+(?=[^,]+\s+-\s+)', part)
+          if normalize_line(item)
+        )
+      return dash_credit_parts
+    if self.is_novel_category(category):
+      novel_parts = []
+      for part in parts:
+        if part.count(' - ') < 2:
+          novel_parts.append(part)
+          continue
+        for item in re.split(r',\s+(?=[^,]+\s+-\s+)', part):
+          item = normalize_line(item)
+          if not item:
+            continue
+          title, author = item.rsplit(' - ', 1)
+          novel_parts.append(f'{title} by {author}')
+      return novel_parts
+    if not self.is_edited_category(category):
+      return parts
+    edited_parts = []
+    for part in parts:
+      split_at = None
+      for match in re.finditer(r',\s+(?=[A-Z])', part):
+        first = normalize_line(part[:match.start()])
+        if ' - ' not in first:
+          continue
+        editor_credit = first.rsplit(' - ', 1)[1]
+        editors = self.split_contributor_authors(editor_credit)
+        if editors and all(self.looks_like_person_credit(editor) for editor in editors):
+          split_at = match
+          break
+      if split_at is None:
+        edited_parts.append(part)
+      else:
+        edited_parts.extend((
+          normalize_line(part[:split_at.start()]),
+          normalize_line(part[split_at.end():]),
+        ))
+    return edited_parts
 
   def looks_like_title(self, value):
     key = category_key(value)
     return (
-      key.startswith(('the ', 'a ', 'an ')) or
+      bool(re.match(r'^(?:the|a|an)\s+', clean_source_text(value), re.I)) or
       any(word in key.split() for word in {
         'book', 'dead', 'death', 'horror', 'house', 'night', 'road', 'shadow'})
     )
+
+  def looks_like_person_credit(self, value):
+    value = self.strip_editor_credit(clean_source_text(value))
+    if ':' in value:
+      return False
+    words = value.replace('&', ' and ').split()
+    if not 2 <= len(words) <= 6:
+      return False
+    if words[0].casefold() in {
+        'a', 'an', 'behind', 'beneath', 'the', 'through'}:
+      return False
+    particles = {'and', 'da', 'de', 'del', 'di', 'la', 'le', 'van', 'von', 'with'}
+    return all(
+      word.casefold().strip('.,') in particles or
+      bool(re.match(r"^[A-ZÀ-ÖØ-Þ][\wÀ-ÖØ-öø-ÿ'.-]*$", word))
+      for word in words)
 
   def parsed_from_rows(self, name, base_url, rows, notes):
     rows = self.dedupe_rows(rows)
@@ -536,11 +880,14 @@ class AustralasianShadowsParser(AwardParserBase):
     return ordered
 
   def row_key(self, row):
+    authors = row.get('authors', row.get('author', ''))
+    if isinstance(authors, (list, tuple)):
+      authors = ' & '.join(str(author) for author in authors)
     return (
       str(row.get('award_year', '')),
       category_key(row.get('category', '')),
       category_key(row.get('title', '')),
-      category_key(row.get('author', '')),
+      category_key(authors),
     )
 
   def unique_notes(self, notes):

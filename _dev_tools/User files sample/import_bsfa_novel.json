@@ -792,7 +792,8 @@
     },
     {
       "authors": [
-        "William Gibson & Bruce Sterling"
+        "William Gibson",
+        "Bruce Sterling"
       ],
       "award": "British Science Fiction Association Award",
       "award_year": "1991",
@@ -3815,7 +3816,7 @@
       "title": "The Salt Oracle"
     }
   ],
-  "fetched_at": "2026-07-08T21:03:08Z",
+  "fetched_at": "2026-07-11T00:36:42Z",
   "list_id": "bsfa_novel",
   "list_name": "BSFA - Novel",
   "match_series": false,

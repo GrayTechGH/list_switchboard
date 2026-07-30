@@ -35,6 +35,9 @@ class UrlFetcherCWADagger(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
   CATEGORY = ''
   CATEGORY_ALIASES = ()
   LIBRARYTHING_URL = ''
+  START_YEAR = None
+  OFFICIAL_CATEGORY_ALIASES = ()
+  ARCHIVE_BY_ACCOLADE = False
 
   def create_parser(self):
     try:
@@ -70,7 +73,11 @@ class UrlFetcherCWADagger(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
         'Official CWA',
         self.URL,
         lambda html, url, **kwargs: official_parser.parse(
-          html, url, self.NAME, self.CATEGORY, **kwargs),
+          html, url, self.NAME, self.CATEGORY,
+          start_year=self.START_YEAR,
+          category_aliases=self.OFFICIAL_CATEGORY_ALIASES,
+          archive_by_accolade=self.ARCHIVE_BY_ACCOLADE,
+          **kwargs),
         source_rank=0),
       self.librarything_attempt(source_rank=1),
     )
@@ -86,15 +93,24 @@ class UrlFetcherCWADagger(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
       self.CATEGORY,
       fetch_url=fetch_url,
       log=log,
-      progress=progress)
+      progress=progress,
+      start_year=self.START_YEAR,
+      category_aliases=self.OFFICIAL_CATEGORY_ALIASES,
+      archive_by_accolade=self.ARCHIVE_BY_ACCOLADE)
 
 
 class UrlFetcherCWAGoldDagger(UrlFetcherCWADagger):
   source_id = 'cwa_dagger_gold'
   NAME = 'CWA Dagger - Gold Dagger'
-  URL = 'https://thecwa.co.uk/past-winners/?past_winners_awards[]=gold'
+  URL = (
+    'https://thecwa.co.uk/past-winners/?past_winners_awards[]=gold&'
+    'past_winners_awards[]=gold-crossed-herrings')
   CATEGORY = 'Gold Dagger'
-  CATEGORY_ALIASES = ('gold dagger', 'kaa gold dagger')
+  START_YEAR = 1955
+  ARCHIVE_BY_ACCOLADE = True
+  OFFICIAL_CATEGORY_ALIASES = ('Crossed Herrings Dagger',)
+  CATEGORY_ALIASES = (
+    'gold dagger', 'kaa gold dagger', 'crossed herrings dagger')
   LIBRARYTHING_URL = (
     'https://www.librarything.com/award/668.0.4774/'
     'Crime-Writers-Association-Awards-Gold-Dagger')
@@ -105,6 +121,8 @@ class UrlFetcherCWAIanFlemingSteelDagger(UrlFetcherCWADagger):
   NAME = 'CWA Dagger - Ian Fleming Steel Dagger'
   URL = 'https://thecwa.co.uk/past-winners/?past_winners_awards[]=ian-fleming-steel'
   CATEGORY = 'Ian Fleming Steel Dagger'
+  START_YEAR = 2002
+  ARCHIVE_BY_ACCOLADE = True
   CATEGORY_ALIASES = ('ian fleming steel dagger', 'steel dagger')
   LIBRARYTHING_URL = (
     'https://www.librarything.com/award/668.0.4784/'
@@ -116,6 +134,7 @@ class UrlFetcherCWAHistoricalDagger(UrlFetcherCWADagger):
   NAME = 'CWA Dagger - Historical Dagger'
   URL = 'https://thecwa.co.uk/past-winners/?past_winners_awards[]=historical'
   CATEGORY = 'Historical Dagger'
+  START_YEAR = 1999
   CATEGORY_ALIASES = (
     'historical dagger',
     'endeavour historical dagger',
@@ -131,6 +150,7 @@ class UrlFetcherCWACrimeFictionInTranslationDagger(UrlFetcherCWADagger):
   NAME = 'CWA Dagger - Crime Fiction in Translation'
   URL = 'https://thecwa.co.uk/past-winners/?past_winners_awards[]=international'
   CATEGORY = 'Crime Fiction in Translation Dagger'
+  START_YEAR = 2006
   CATEGORY_ALIASES = (
     'crime fiction in translation dagger',
     'international dagger',

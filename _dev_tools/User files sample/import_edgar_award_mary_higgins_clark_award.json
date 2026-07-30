@@ -1,0 +1,1458 @@
+{
+  "append_state": {
+    "entry_count": 121,
+    "last_entry_key": "last dance before dawn|katharine schellman",
+    "last_position": "2026.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Barbara D'Amato"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2001",
+      "category": "Mary Higgins Clark Award",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-mary-higgins-clark-award/?instance=1&listpage=2"
+      },
+      "title": "Authorized Personnel Only"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2001",
+      "category": "Mary Higgins Clark Award",
+      "position": "2001.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-mary-higgins-clark-award/?instance=1&listpage=2"
+      },
+      "title": "Demolition Angel"
+    },
+    {
+      "authors": [
+        "Lelia Kelly"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2001",
+      "category": "Mary Higgins Clark Award",
+      "position": "2001.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-mary-higgins-clark-award/?instance=1&listpage=2"
+      },
+      "title": "False Witness"
+    },
+    {
+      "authors": [
+        "Jodi Picoult"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2001",
+      "category": "Mary Higgins Clark Award",
+      "position": "2001.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-mary-higgins-clark-award/?instance=1&listpage=2"
+      },
+      "title": "Plain Truth"
+    },
+    {
+      "authors": [
+        "Lynn Hightower"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2001",
+      "category": "Mary Higgins Clark Award",
+      "position": "2001.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-mary-higgins-clark-award/?instance=1&listpage=2"
+      },
+      "title": "The Debt Collector"
+    },
+    {
+      "authors": [
+        "Judith Kelman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2002",
+      "category": "Mary Higgins Clark Award",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-mary-higgins-clark-award/?instance=1&listpage=2"
+      },
+      "title": "Summer of Storms"
+    },
+    {
+      "authors": [
+        "Denise Swanson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2002",
+      "category": "Mary Higgins Clark Award",
+      "position": "2002.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-mary-higgins-clark-award/?instance=1&listpage=2"
+      },
+      "title": "Murder of a Sweet Old Lady"
+    },
+    {
+      "authors": [
+        "Rhys Bowen"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2002",
+      "category": "Mary Higgins Clark Award",
+      "position": "2002.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-mary-higgins-clark-award/?instance=1&listpage=2"
+      },
+      "title": "Murphy's Law"
+    },
+    {
+      "authors": [
+        "M.K. Preston"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2002",
+      "category": "Mary Higgins Clark Award",
+      "position": "2002.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-mary-higgins-clark-award/?instance=1&listpage=2"
+      },
+      "title": "Perhaps She'll Die"
+    },
+    {
+      "authors": [
+        "Rose Conners"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2003",
+      "category": "Mary Higgins Clark Award",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-mary-higgins-clark-award/?instance=1&listpage=2"
+      },
+      "title": "Absolute Certainty"
+    },
+    {
+      "authors": [
+        "Laura Van Wormer"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2003",
+      "category": "Mary Higgins Clark Award",
+      "position": "2003.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-mary-higgins-clark-award/?instance=1&listpage=2"
+      },
+      "title": "The Bad Witness"
+    },
+    {
+      "authors": [
+        "Karen Harper"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2003",
+      "category": "Mary Higgins Clark Award",
+      "position": "2003.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-mary-higgins-clark-award/?instance=1&listpage=2"
+      },
+      "title": "The Stone Forest"
+    },
+    {
+      "authors": [
+        "Nancy Pickard"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2003",
+      "category": "Mary Higgins Clark Award",
+      "position": "2003.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-mary-higgins-clark-award/?instance=1&listpage=2"
+      },
+      "title": "The Truth Hurts"
+    },
+    {
+      "authors": [
+        "M.K. Preston"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2004",
+      "category": "Mary Higgins Clark Award",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-mary-higgins-clark-award/?instance=1&listpage=2"
+      },
+      "title": "Song of the Bones"
+    },
+    {
+      "authors": [
+        "Virginia Lanier"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2004",
+      "category": "Mary Higgins Clark Award",
+      "position": "2004.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-mary-higgins-clark-award/?instance=1&listpage=2"
+      },
+      "title": "A Bloodhound to Die For"
+    },
+    {
+      "authors": [
+        "Nancy Baker Jacobs"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2004",
+      "category": "Mary Higgins Clark Award",
+      "position": "2004.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-mary-higgins-clark-award/?instance=1&listpage=2"
+      },
+      "title": "Ricochet"
+    },
+    {
+      "authors": [
+        "Sujata Massey"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2004",
+      "category": "Mary Higgins Clark Award",
+      "position": "2004.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-mary-higgins-clark-award/?instance=1&listpage=2"
+      },
+      "title": "Samurai's Daughter"
+    },
+    {
+      "authors": [
+        "Katherine Hall Page"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2004",
+      "category": "Mary Higgins Clark Award",
+      "position": "2004.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-mary-higgins-clark-award/?instance=1&listpage=2"
+      },
+      "title": "The Body in the Lighthouse"
+    },
+    {
+      "authors": [
+        "Rochelle Krich"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2005",
+      "category": "Mary Higgins Clark Award",
+      "position": "2005",
+      "result": "winner",
+      "title": "Grave Endings"
+    },
+    {
+      "authors": [
+        "P.B. Ryan"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2005",
+      "category": "Mary Higgins Clark Award",
+      "position": "2005.01",
+      "result": "nominee",
+      "title": "Murder in a Mill Town"
+    },
+    {
+      "authors": [
+        "Jerrilyn Farmer"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2005",
+      "category": "Mary Higgins Clark Award",
+      "position": "2005.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-mary-higgins-clark-award/?instance=1&listpage=2"
+      },
+      "title": "Perfect Sax"
+    },
+    {
+      "authors": [
+        "Christiane Heggan"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2005",
+      "category": "Mary Higgins Clark Award",
+      "position": "2005.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-mary-higgins-clark-award/?instance=1&listpage=2"
+      },
+      "title": "Scent of a Killer"
+    },
+    {
+      "authors": [
+        "Carol Goodman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2005",
+      "category": "Mary Higgins Clark Award",
+      "position": "2005.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-mary-higgins-clark-award/?instance=1&listpage=2"
+      },
+      "title": "The Drowning Tree"
+    },
+    {
+      "authors": [
+        "Karen Harper"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2006",
+      "category": "Mary Higgins Clark Award",
+      "position": "2006",
+      "result": "winner",
+      "title": "Dark Angel"
+    },
+    {
+      "authors": [
+        "Jo Bannister"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2006",
+      "category": "Mary Higgins Clark Award",
+      "position": "2006.01",
+      "result": "nominee",
+      "title": "Breaking Faith"
+    },
+    {
+      "authors": [
+        "Gwen Hunter"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2006",
+      "category": "Mary Higgins Clark Award",
+      "position": "2006.02",
+      "result": "nominee",
+      "title": "Shadow Valley"
+    },
+    {
+      "authors": [
+        "Fiona Mountain"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2007",
+      "category": "Mary Higgins Clark Award",
+      "position": "2007",
+      "result": "winner",
+      "title": "Bloodline"
+    },
+    {
+      "authors": [
+        "Sandi Ault"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2008",
+      "category": "Mary Higgins Clark Award",
+      "position": "2008",
+      "result": "winner",
+      "title": "Wild Indigo"
+    },
+    {
+      "authors": [
+        "Sarah Andrews"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2008",
+      "category": "Mary Higgins Clark Award",
+      "position": "2008.01",
+      "result": "nominee",
+      "title": "In Cold Pursuit"
+    },
+    {
+      "authors": [
+        "Karen Harper"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2008",
+      "category": "Mary Higgins Clark Award",
+      "position": "2008.02",
+      "result": "nominee",
+      "title": "Inferno"
+    },
+    {
+      "authors": [
+        "Judith Kelman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2008",
+      "category": "Mary Higgins Clark Award",
+      "position": "2008.03",
+      "result": "nominee",
+      "title": "The First Stone"
+    },
+    {
+      "authors": [
+        "Bill Floyd"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2009",
+      "category": "Mary Higgins Clark Award",
+      "position": "2009",
+      "result": "winner",
+      "title": "The Killer's Wife"
+    },
+    {
+      "authors": [
+        "Betsy Thornton"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2009",
+      "category": "Mary Higgins Clark Award",
+      "position": "2009.01",
+      "result": "nominee",
+      "title": "A Song for You"
+    },
+    {
+      "authors": [
+        "S.J. Bolton"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2009",
+      "category": "Mary Higgins Clark Award",
+      "position": "2009.02",
+      "result": "nominee",
+      "title": "Sacrifice"
+    },
+    {
+      "authors": [
+        "Julie Kramer"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2009",
+      "category": "Mary Higgins Clark Award",
+      "position": "2009.03",
+      "result": "nominee",
+      "title": "Stalking Susan"
+    },
+    {
+      "authors": [
+        "Louise Ure"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2009",
+      "category": "Mary Higgins Clark Award",
+      "position": "2009.04",
+      "result": "nominee",
+      "title": "The Fault Tree"
+    },
+    {
+      "authors": [
+        "S.J. Bolton"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2010",
+      "category": "Mary Higgins Clark Award",
+      "position": "2010",
+      "result": "winner",
+      "title": "Awakening"
+    },
+    {
+      "authors": [
+        "Blaize Clement"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2010",
+      "category": "Mary Higgins Clark Award",
+      "position": "2010.01",
+      "result": "nominee",
+      "title": "Cat Sitter on a Hot Tin Roof"
+    },
+    {
+      "authors": [
+        "Susan Kandel"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2010",
+      "category": "Mary Higgins Clark Award",
+      "position": "2010.02",
+      "result": "nominee",
+      "title": "Dial H for Hitchcock"
+    },
+    {
+      "authors": [
+        "Nadia Gordon"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2010",
+      "category": "Mary Higgins Clark Award",
+      "position": "2010.03",
+      "result": "nominee",
+      "title": "Lethal Vintage"
+    },
+    {
+      "authors": [
+        "Hallie Ephron"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2010",
+      "category": "Mary Higgins Clark Award",
+      "position": "2010.04",
+      "result": "nominee",
+      "title": "Never Tell a Lie"
+    },
+    {
+      "authors": [
+        "Elly Griffiths"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2011",
+      "category": "Mary Higgins Clark Award",
+      "position": "2011",
+      "result": "winner",
+      "title": "The Crossing Places"
+    },
+    {
+      "authors": [
+        "S.J. Bolton"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2011",
+      "category": "Mary Higgins Clark Award",
+      "position": "2011.01",
+      "result": "nominee",
+      "title": "Blood Harvest"
+    },
+    {
+      "authors": [
+        "Karen Harper"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2011",
+      "category": "Mary Higgins Clark Award",
+      "position": "2011.02",
+      "result": "nominee",
+      "title": "Down River"
+    },
+    {
+      "authors": [
+        "Wendy Corsi Staub"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2011",
+      "category": "Mary Higgins Clark Award",
+      "position": "2011.03",
+      "result": "nominee",
+      "title": "Live to Tell"
+    },
+    {
+      "authors": [
+        "Sandi Ault"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2011",
+      "category": "Mary Higgins Clark Award",
+      "position": "2011.04",
+      "result": "nominee",
+      "title": "Wild Penance"
+    },
+    {
+      "authors": [
+        "Sara J. Henry"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2012",
+      "category": "Mary Higgins Clark Award",
+      "position": "2012",
+      "result": "winner",
+      "title": "Learning to Swim"
+    },
+    {
+      "authors": [
+        "Hallie Ephron"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2012",
+      "category": "Mary Higgins Clark Award",
+      "position": "2012.01",
+      "result": "nominee",
+      "title": "Come and Find Me"
+    },
+    {
+      "authors": [
+        "Janice Hamrick"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2012",
+      "category": "Mary Higgins Clark Award",
+      "position": "2012.02",
+      "result": "nominee",
+      "title": "Death on Tour"
+    },
+    {
+      "authors": [
+        "Tracy Kiely"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2012",
+      "category": "Mary Higgins Clark Award",
+      "position": "2012.03",
+      "result": "nominee",
+      "title": "Murder Most Persuasive"
+    },
+    {
+      "authors": [
+        "S.J. Bolton"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2012",
+      "category": "Mary Higgins Clark Award",
+      "position": "2012.04",
+      "result": "nominee",
+      "title": "Now You See Me"
+    },
+    {
+      "authors": [
+        "Hank Phillippi Ryan"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2013",
+      "category": "Mary Higgins Clark Award",
+      "position": "2013",
+      "result": "winner",
+      "title": "The Other Woman"
+    },
+    {
+      "authors": [
+        "Rebecca Cantrell"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2013",
+      "category": "Mary Higgins Clark Award",
+      "position": "2013.01",
+      "result": "nominee",
+      "title": "A City of Broken Glass"
+    },
+    {
+      "authors": [
+        "S.J. Bolton"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2013",
+      "category": "Mary Higgins Clark Award",
+      "position": "2013.02",
+      "result": "nominee",
+      "title": "Dead Scared"
+    },
+    {
+      "authors": [
+        "Wendy Corsi Staub"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2013",
+      "category": "Mary Higgins Clark Award",
+      "position": "2013.03",
+      "result": "nominee",
+      "title": "Sleepwalker"
+    },
+    {
+      "authors": [
+        "Jane Casey"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2013",
+      "category": "Mary Higgins Clark Award",
+      "position": "2013.04",
+      "result": "nominee",
+      "title": "The Reckoning"
+    },
+    {
+      "authors": [
+        "Jenny Milchman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2014",
+      "category": "Mary Higgins Clark Award",
+      "position": "2014",
+      "result": "winner",
+      "title": "Cover of Snow"
+    },
+    {
+      "authors": [
+        "Susan Froetschel"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2014",
+      "category": "Mary Higgins Clark Award",
+      "position": "2014.01",
+      "result": "nominee",
+      "title": "Fear of Beauty"
+    },
+    {
+      "authors": [
+        "Katia Lief"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2014",
+      "category": "Mary Higgins Clark Award",
+      "position": "2014.02",
+      "result": "nominee",
+      "title": "The Money Kill"
+    },
+    {
+      "authors": [
+        "Linda Stasi"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2014",
+      "category": "Mary Higgins Clark Award",
+      "position": "2014.03",
+      "result": "nominee",
+      "title": "The Sixth Station"
+    },
+    {
+      "authors": [
+        "Hallie Ephron"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2014",
+      "category": "Mary Higgins Clark Award",
+      "position": "2014.04",
+      "result": "nominee",
+      "title": "There Was an Old Woman"
+    },
+    {
+      "authors": [
+        "Jane Casey"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2015",
+      "category": "Mary Higgins Clark Award",
+      "position": "2015",
+      "result": "winner",
+      "title": "The Stranger You Know"
+    },
+    {
+      "authors": [
+        "Sharon Bolton"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2015",
+      "category": "Mary Higgins Clark Award",
+      "position": "2015.01",
+      "result": "nominee",
+      "title": "A Dark and Twisted Tide"
+    },
+    {
+      "authors": [
+        "Julia Dahl"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2015",
+      "category": "Mary Higgins Clark Award",
+      "position": "2015.02",
+      "result": "nominee",
+      "title": "Invisible City"
+    },
+    {
+      "authors": [
+        "Julia Keller"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2015",
+      "category": "Mary Higgins Clark Award",
+      "position": "2015.03",
+      "result": "nominee",
+      "title": "Summer of the Dead"
+    },
+    {
+      "authors": [
+        "Lori Rader-Day"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2015",
+      "category": "Mary Higgins Clark Award",
+      "position": "2015.04",
+      "result": "nominee",
+      "title": "The Black Hour"
+    },
+    {
+      "authors": [
+        "Lori Rader-Day"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2016",
+      "category": "Mary Higgins Clark Award",
+      "position": "2016",
+      "result": "winner",
+      "title": "Little Pretty Things"
+    },
+    {
+      "authors": [
+        "Frances Brody"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2016",
+      "category": "Mary Higgins Clark Award",
+      "position": "2016.01",
+      "result": "nominee",
+      "title": "A Woman Unknown"
+    },
+    {
+      "authors": [
+        "Susanna Calkins"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2016",
+      "category": "Mary Higgins Clark Award",
+      "position": "2016.02",
+      "result": "nominee",
+      "title": "The Masque of a Murderer"
+    },
+    {
+      "authors": [
+        "Hallie Ephron"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2016",
+      "category": "Mary Higgins Clark Award",
+      "position": "2016.03",
+      "result": "nominee",
+      "title": "Night Night, Sleep Tight"
+    },
+    {
+      "authors": [
+        "Catriona McPherson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2016",
+      "category": "Mary Higgins Clark Award",
+      "position": "2016.04",
+      "result": "nominee",
+      "title": "The Child Garden"
+    },
+    {
+      "authors": [
+        "Charles Todd"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2017",
+      "category": "Mary Higgins Clark Award",
+      "position": "2017",
+      "result": "winner",
+      "title": "The Shattered Tree"
+    },
+    {
+      "authors": [
+        "Dianne Dixon"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2017",
+      "category": "Mary Higgins Clark Award",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "The Other Sister"
+    },
+    {
+      "authors": [
+        "Catriona McPherson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2017",
+      "category": "Mary Higgins Clark Award",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "Quiet Neighbors"
+    },
+    {
+      "authors": [
+        "Hank Phillippi Ryan"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2017",
+      "category": "Mary Higgins Clark Award",
+      "position": "2017.03",
+      "result": "nominee",
+      "title": "Say No More"
+    },
+    {
+      "authors": [
+        "Wendy Corsi Staub"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2017",
+      "category": "Mary Higgins Clark Award",
+      "position": "2017.04",
+      "result": "nominee",
+      "title": "Blue Moon"
+    },
+    {
+      "authors": [
+        "Carol Goodman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2018",
+      "category": "Mary Higgins Clark Award",
+      "position": "2018",
+      "result": "winner",
+      "title": "The Widow's House"
+    },
+    {
+      "authors": [
+        "Ellen Crosby"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2018",
+      "category": "Mary Higgins Clark Award",
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "The Vineyard Victims"
+    },
+    {
+      "authors": [
+        "Hallie Ephron"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2018",
+      "category": "Mary Higgins Clark Award",
+      "position": "2018.02",
+      "result": "nominee",
+      "title": "You'll Never Know Dear"
+    },
+    {
+      "authors": [
+        "Nadine Nettmann"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2018",
+      "category": "Mary Higgins Clark Award",
+      "position": "2018.03",
+      "result": "nominee",
+      "title": "Uncorking a Lie"
+    },
+    {
+      "authors": [
+        "Lori Rader-Day"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2018",
+      "category": "Mary Higgins Clark Award",
+      "position": "2018.04",
+      "result": "nominee",
+      "title": "The Day I Died"
+    },
+    {
+      "authors": [
+        "Sujata Massey"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2019",
+      "category": "Mary Higgins Clark Award",
+      "position": "2019",
+      "result": "winner",
+      "title": "The Widows of Malabar"
+    },
+    {
+      "authors": [
+        "Mariah Fredericks"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2019",
+      "category": "Mary Higgins Clark Award",
+      "position": "2019.01",
+      "result": "nominee",
+      "title": "A Death of No Importance"
+    },
+    {
+      "authors": [
+        "Dianne Freeman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2019",
+      "category": "Mary Higgins Clark Award",
+      "position": "2019.02",
+      "result": "nominee",
+      "title": "A Lady's Guide to Etiquette and Murder"
+    },
+    {
+      "authors": [
+        "Julia Keller"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2019",
+      "category": "Mary Higgins Clark Award",
+      "position": "2019.03",
+      "result": "nominee",
+      "title": "Bone on Bone"
+    },
+    {
+      "authors": [
+        "Paula Munier"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2019",
+      "category": "Mary Higgins Clark Award",
+      "position": "2019.04",
+      "result": "nominee",
+      "title": "A Borrowing of Bones"
+    },
+    {
+      "authors": [
+        "Carol Goodman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2020",
+      "category": "Mary Higgins Clark Award",
+      "position": "2020",
+      "result": "winner",
+      "title": "The Night Visitors"
+    },
+    {
+      "authors": [
+        "Tara Laskowski"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2020",
+      "category": "Mary Higgins Clark Award",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "One Night Gone"
+    },
+    {
+      "authors": [
+        "Catriona McPherson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2020",
+      "category": "Mary Higgins Clark Award",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "Strangers at the Gate"
+    },
+    {
+      "authors": [
+        "Emma Rowley"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2020",
+      "category": "Mary Higgins Clark Award",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "Where the Missing Go"
+    },
+    {
+      "authors": [
+        "Hank Phillippi Ryan"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2020",
+      "category": "Mary Higgins Clark Award",
+      "position": "2020.04",
+      "result": "nominee",
+      "title": "The Murder List"
+    },
+    {
+      "authors": [
+        "Elsa Hart"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2021",
+      "category": "Mary Higgins Clark Award",
+      "position": "2021",
+      "result": "winner",
+      "title": "The Cabinets of Barnaby Mayne"
+    },
+    {
+      "authors": [
+        "Mariah Fredericks"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2021",
+      "category": "Mary Higgins Clark Award",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "Death of an American Beauty"
+    },
+    {
+      "authors": [
+        "Lori Rader-Day"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2021",
+      "category": "Mary Higgins Clark Award",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "The Lucky One"
+    },
+    {
+      "authors": [
+        "Hank Phillippi Ryan"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2021",
+      "category": "Mary Higgins Clark Award",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "The First to Lie"
+    },
+    {
+      "authors": [
+        "Paige Shelton"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2021",
+      "category": "Mary Higgins Clark Award",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "Cold Wind"
+    },
+    {
+      "authors": [
+        "Naomi Hirahara"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2022",
+      "category": "Mary Higgins Clark Award",
+      "position": "2022",
+      "result": "winner",
+      "title": "Clark and Division"
+    },
+    {
+      "authors": [
+        "Katherine Cowley"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2022",
+      "category": "Mary Higgins Clark Award",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "The Secret Life of Miss Mary Bennet"
+    },
+    {
+      "authors": [
+        "Tracy Gardner"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2022",
+      "category": "Mary Higgins Clark Award",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "Ruby Red Herring"
+    },
+    {
+      "authors": [
+        "Callie Hutton"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2022",
+      "category": "Mary Higgins Clark Award",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "The Sign of Death"
+    },
+    {
+      "authors": [
+        "Elizabeth Penney"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2022",
+      "category": "Mary Higgins Clark Award",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "Chapter and Curse"
+    },
+    {
+      "authors": [
+        "B.R. Myers"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2023",
+      "category": "Mary Higgins Clark Award",
+      "position": "2023",
+      "result": "winner",
+      "title": "A Dreadful Splendor"
+    },
+    {
+      "authors": [
+        "Amanda Flower"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2023",
+      "category": "Mary Higgins Clark Award",
+      "position": "2023.01",
+      "result": "nominee",
+      "title": "Because I Could Not Stop for Death"
+    },
+    {
+      "authors": [
+        "Sulari Gentill"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2023",
+      "category": "Mary Higgins Clark Award",
+      "position": "2023.02",
+      "result": "nominee",
+      "title": "The Woman in the Library"
+    },
+    {
+      "authors": [
+        "Carol Goodman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2023",
+      "category": "Mary Higgins Clark Award",
+      "position": "2023.03",
+      "result": "nominee",
+      "title": "The Disinvited Guest"
+    },
+    {
+      "authors": [
+        "D.M. Rowell"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2023",
+      "category": "Mary Higgins Clark Award",
+      "position": "2023.04",
+      "result": "nominee",
+      "title": "Never Name the Dead"
+    },
+    {
+      "authors": [
+        "Lina Chern"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2024",
+      "category": "Mary Higgins Clark Award",
+      "position": "2024",
+      "result": "winner",
+      "title": "Play the Fool"
+    },
+    {
+      "authors": [
+        "Carol Goodman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2024",
+      "category": "Mary Higgins Clark Award",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "The Bones of the Story"
+    },
+    {
+      "authors": [
+        "Anastasia Hastings"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2024",
+      "category": "Mary Higgins Clark Award",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "Of Manners and Murder"
+    },
+    {
+      "authors": [
+        "Kate Robards"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2024",
+      "category": "Mary Higgins Clark Award",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "The Three Deaths of Willa Stannard"
+    },
+    {
+      "authors": [
+        "Mary Winters"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2024",
+      "category": "Mary Higgins Clark Award",
+      "position": "2024.04",
+      "result": "nominee",
+      "title": "Murder in Postscript"
+    },
+    {
+      "authors": [
+        "Sulari Gentill"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2025",
+      "category": "Mary Higgins Clark Award",
+      "position": "2025",
+      "result": "winner",
+      "title": "The Mystery Writers"
+    },
+    {
+      "authors": [
+        "Rhys Bowen"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2025",
+      "category": "Mary Higgins Clark Award",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "The Rose Arbor"
+    },
+    {
+      "authors": [
+        "Michelle Chouinard"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2025",
+      "category": "Mary Higgins Clark Award",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "The Serial Killer Guide to San Francisco"
+    },
+    {
+      "authors": [
+        "Carol Goodman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2025",
+      "category": "Mary Higgins Clark Award",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "Return to Wyldcliffe Heights"
+    },
+    {
+      "authors": [
+        "KatieTietjen"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2025",
+      "category": "Mary Higgins Clark Award",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "Death in the Details"
+    },
+    {
+      "authors": [
+        "Hank Phillippi Ryan"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2026",
+      "category": "Mary Higgins Clark Award",
+      "position": "2026",
+      "result": "winner",
+      "title": "All This Could Be Yours"
+    },
+    {
+      "authors": [
+        "Sulari Gentill"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2026",
+      "category": "Mary Higgins Clark Award",
+      "position": "2026.01",
+      "result": "nominee",
+      "title": "Five Found Dead"
+    },
+    {
+      "authors": [
+        "Sandra Jackson-Opoku"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2026",
+      "category": "Mary Higgins Clark Award",
+      "position": "2026.02",
+      "result": "nominee",
+      "title": "Savvy Summers and the Sweet Potato"
+    },
+    {
+      "authors": [
+        "R.P. O'Donnell"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2026",
+      "category": "Mary Higgins Clark Award",
+      "position": "2026.03",
+      "result": "nominee",
+      "title": "No Comfort for the Dead"
+    },
+    {
+      "authors": [
+        "Katharine Schellman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2026",
+      "category": "Mary Higgins Clark Award",
+      "position": "2026.04",
+      "result": "nominee",
+      "title": "Last Dance Before Dawn"
+    }
+  ],
+  "fetched_at": "2026-07-16T23:41:26Z",
+  "list_id": "edgar_award_mary_higgins_clark_award",
+  "list_name": "Edgar Award - Mary Higgins Clark Award",
+  "match_series": false,
+  "notes": [],
+  "parser": "edgar_award_mary_higgins_clark_award",
+  "schema_version": 2,
+  "source": {
+    "name": "Edgar Award - Mary Higgins Clark Award",
+    "source_id": "edgar_award_mary_higgins_clark_award",
+    "url": "https://edgarawards.com/category-list-mary-higgins-clark-award/"
+  }
+}

@@ -239,23 +239,19 @@ class DebugMixin:
 
   def debug_storage_cached_active_add_context(
       self, list_id, selected_count, library_count, entry_count, unique_entry_count,
-      override_count, override_book_count, title_key_count, series_key_count,
-      cached_title_key_count, exact_key_count):
+      override_count, override_book_count):
     self.debug_log(
       f'cached active add context built list_id={list_id} '
       f'selected_books={selected_count} library_books={library_count} '
       f'cached_entries={entry_count} unique_cached_entries={unique_entry_count} '
-      f'saved_overrides={override_count} override_books={override_book_count} '
-      f'library_title_keys={title_key_count} library_series_keys={series_key_count} '
-      f'cached_title_keys={cached_title_key_count} exact_cached_keys={exact_key_count}',
+      f'saved_overrides={override_count} override_books={override_book_count}',
       section='storage')
 
   def debug_storage_cached_active_add_import_map(self, list_id, state, entry_count,
-      unique_entry_count, cached_title_key_count, exact_key_count):
+      unique_entry_count):
     self.debug_log(
       f'cached active add import map {state} list_id={list_id} '
-      f'cached_entries={entry_count} unique_cached_entries={unique_entry_count} '
-      f'cached_title_keys={cached_title_key_count} exact_cached_keys={exact_key_count}',
+      f'cached_entries={entry_count} unique_cached_entries={unique_entry_count}',
       section='storage')
 
   def debug_storage_cached_active_add_import_map_invalidated(self, list_id, cleared_count=0):
@@ -272,9 +268,9 @@ class DebugMixin:
 
   def debug_storage_cached_active_add_candidates(self, book_id, candidates):
     preview = []
-    for score, entry in candidates[:12]:
+    for evidence, entry in candidates[:12]:
       preview.append({
-        'score': score,
+        'button_evidence': evidence,
         'position': entry.get('position', ''),
         'title': entry.get('title', ''),
         'authors': imported_author_display_value(entry),

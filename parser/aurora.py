@@ -29,9 +29,14 @@ except ImportError:
 AWARD_NAME = 'Aurora Award'
 YEAR_PAGE_URL = re.compile(r'/Aurora_Awards_(\d{4})$')
 CATEGORY_BOUNDARIES = frozenset({
-  'hall of fame', 'novel', 'ya novel', 'young adult novel', 'short story',
+  'hall of fame', 'novel', 'novel in english', 'long form english',
+  'long form work in english',
+  'ya novel', 'young adult novel', 'ya novel in english',
+  'young adult novel in english', 'short story', 'short fiction in english',
+  'short form english', 'short form work in english',
   'novelette/novella', 'novelette', 'novella', 'related work', 'graphic novel',
-  'poem/song', 'poem', 'song', 'artistic achievement',
+  'related work in english', 'graphic novel in english', 'graphic novel/comic',
+  'poem/song', 'poem/song in english', 'poem', 'song', 'artistic achievement',
   'cover art/interior illustration', 'cover art', 'interior illustration',
   'nonfiction', 'non fiction', 'non-fiction', 'visual presentation',
   'fan achievement', 'fan publication', 'fan organizational', 'fan music/filk',

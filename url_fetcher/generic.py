@@ -49,6 +49,29 @@ except ImportError:
   )
 
 
+class GoodreadsFetchPolicyMixin:
+  """Extend and retry Goodreads requests without changing sibling sources."""
+
+  GOODREADS_REQUEST_TIMEOUT = 60
+  GOODREADS_TIMEOUT_RETRIES = 3
+
+  def is_goodreads_request(self, url):
+    if urlparse is None:
+      return 'goodreads.com/' in str(url or '').casefold()
+    host = (urlparse(url or '').hostname or '').casefold()
+    return host == 'goodreads.com' or host.endswith('.goodreads.com')
+
+  def request_timeout(self, url):
+    if self.is_goodreads_request(url):
+      return self.GOODREADS_REQUEST_TIMEOUT
+    return super().request_timeout(url)
+
+  def timeout_retries(self, url):
+    if self.is_goodreads_request(url):
+      return self.GOODREADS_TIMEOUT_RETRIES
+    return super().timeout_retries(url)
+
+
 class UrlFetcherGeneric:
 
   source_id = ''
@@ -66,6 +89,8 @@ class UrlFetcherGeneric:
   SUPPORTS_INCREMENTAL_UPDATE = False
   USER_AGENT = None
   MAX_RESPONSE_BYTES = None
+  REQUEST_TIMEOUT = None
+  TIMEOUT_RETRIES = 0
 
   @property
   def name(self):
@@ -137,13 +162,25 @@ class UrlFetcherGeneric:
     return self.parser().get_filter_list()
 
   def fetch_url(self, fetch_url, url):
+    retries = self.timeout_retries(url)
+    for retry in range(retries + 1):
+      try:
+        return self.fetch_url_once(fetch_url, url)
+      except Exception as err:
+        if retry >= retries or not self.is_timeout_error(err):
+          raise
+
+  def fetch_url_once(self, fetch_url, url):
     user_agent = getattr(self, 'USER_AGENT', None)
     max_bytes = getattr(self, 'MAX_RESPONSE_BYTES', None)
+    timeout = self.request_timeout(url)
     keyword_options = {}
     if user_agent:
       keyword_options['user_agent'] = user_agent
     if max_bytes:
       keyword_options['max_bytes'] = max_bytes
+    if timeout:
+      keyword_options['timeout'] = timeout
     if keyword_options:
       try:
         return fetch_url(url, **keyword_options)
@@ -162,7 +199,42 @@ class UrlFetcherGeneric:
       except TypeError as err:
         if 'user_agent' not in str(err) and 'keyword' not in str(err):
           raise
+    if timeout:
+      try:
+        return fetch_url(url, timeout=timeout)
+      except TypeError as err:
+        if 'timeout' not in str(err) and 'keyword' not in str(err):
+          raise
     return fetch_url(url)
+
+  def request_timeout(self, _url):
+    return getattr(self, 'REQUEST_TIMEOUT', None)
+
+  def timeout_retries(self, _url):
+    return max(0, int(getattr(self, 'TIMEOUT_RETRIES', 0) or 0))
+
+  def is_timeout_error(self, err):
+    pending = [err]
+    seen = set()
+    while pending:
+      current = pending.pop()
+      marker = id(current)
+      if marker in seen:
+        continue
+      seen.add(marker)
+      if isinstance(current, TimeoutError):
+        return True
+      message = str(current).lower()
+      if 'timed out' in message or 'timeout' in message:
+        return True
+      for attribute in ('reason', '__cause__', '__context__'):
+        nested = getattr(current, attribute, None)
+        if isinstance(nested, BaseException):
+          pending.append(nested)
+    return False
+
+  def initial_fetch_progress(self, _progress, _url):
+    pass
 
   def fetch_and_parse(
       self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
@@ -196,6 +268,7 @@ class UrlFetcherGeneric:
       try:
         if before_fetch is not None:
           before_fetch(url)
+        self.initial_fetch_progress(progress, url)
         fetcher_fetch_url = lambda target_url: self.fetch_url(fetch_url, target_url)
         html = fetcher_fetch_url(url)
         if after_fetch is not None:

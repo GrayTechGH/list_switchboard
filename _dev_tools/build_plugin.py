@@ -33,6 +33,8 @@ REQUIRED_MEMBERS = frozenset((
   'parser/data/spsfc_results.json',
   'parser/data/r_bookclub_corrections.json',
   'parser/data/big_library_read_history.json',
+  'parser/data/costa_whitbread_corrections.py',
+  'parser/data/shirley_jackson_isfdb_supplement.json',
   'url_fetcher/__init__.py',
 ))
 PROHIBITED_PARTS = frozenset(('.git', '__pycache__', '_dev_tools', '_docs'))

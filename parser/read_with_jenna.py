@@ -19,7 +19,8 @@ from urllib.parse import urljoin, urlparse
 from bs4 import BeautifulSoup
 
 from .book_club_base import (
-  BookClubParserBase, parse_month, parse_year, split_title_author, text_blocks,
+  BookClubParserBase, clean_author, parse_month, parse_year, split_title_author,
+  text_blocks,
 )
 from .base import parsed_source
 
@@ -44,6 +45,23 @@ JUNIOR_CATEGORY_LABELS = {
 }
 JUNIOR_CATEGORY_ORDER = tuple(JUNIOR_CATEGORY_LABELS)
 JUNIOR_KNOWN_COUNT_MISMATCHES = {('2025', 22, 23)}
+JENNA_AUTHOR_SPLIT_RE = re.compile(
+  r'\s+(?:and|&|with)\s+|\s*;\s*|'
+  r'\s*,\s*(?!(?:Jr|Sr|II|III|IV)\.?(?:\s|$))',
+  re.I)
+
+
+def split_jenna_authors(values):
+  """Split structurally bounded TODAY author credits without losing suffixes."""
+  if not isinstance(values, (list, tuple, set)):
+    values = [values]
+  authors = []
+  for value in values:
+    for author in JENNA_AUTHOR_SPLIT_RE.split(clean_author(value)):
+      author = author.strip(' ,;')
+      if author and author not in authors:
+        authors.append(author)
+  return authors
 
 
 class ReadWithJennaParser(BookClubParserBase):
@@ -110,6 +128,7 @@ class ReadWithJennaParser(BookClubParserBase):
     return 'jenna jr' not in normalized and 'read with jenna jr' not in normalized
 
   def complete_entry(self, entry, text):
+    entry['authors'] = split_jenna_authors(entry.get('authors', []))
     lowered = text.casefold()
     if 'classic' in lowered or entry.get('title') == 'Pride and Prejudice':
       entry['selection_type'] = 'classic_pick'
@@ -302,12 +321,7 @@ class ReadWithJennaJuniorParser(BookClubParserBase):
       title, author_text = split_title_author(text)
     author_text = re.sub(
       r'\s+(?:and\s+)?illustrated\s+by\s+.+$', '', author_text, flags=re.I)
-    authors = [
-      author.strip(' ,;')
-      for author in re.split(r'\s*,\s*|\s+(?:and|&)\s+', author_text, flags=re.I)
-      if author.strip(' ,;')
-    ]
-    return title.strip(' "“”\ufffd,;'), list(dict.fromkeys(authors))
+    return title.strip(' "“”\ufffd,;'), split_jenna_authors(author_text)
 
   def title_key(self, title):
     title = title.split(':', 1)[0]

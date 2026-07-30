@@ -1,0 +1,143 @@
+{
+  "append_state": {
+    "entry_count": 11,
+    "last_entry_key": "dominoes danz n and death|raquel v reyes",
+    "last_position": "2025.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Catriona McPherson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2023",
+      "category": "Best Cozy/Humorous Mystery",
+      "position": "2023",
+      "result": "winner",
+      "title": "Scot in a Trap"
+    },
+    {
+      "authors": [
+        "Ellen Byron"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2023",
+      "category": "Best Cozy/Humorous Mystery",
+      "position": "2023.01",
+      "result": "nominee",
+      "title": "Bayou Book Thief"
+    },
+    {
+      "authors": [
+        "Jennifer J. Chow"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2023",
+      "category": "Best Cozy/Humorous Mystery",
+      "position": "2023.02",
+      "result": "nominee",
+      "title": "Death by Bubble Tea"
+    },
+    {
+      "authors": [
+        "T.G. Herren"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2023",
+      "category": "Best Cozy/Humorous Mystery",
+      "position": "2023.03",
+      "result": "nominee",
+      "title": "A Streetcar Named Murder"
+    },
+    {
+      "authors": [
+        "Raquel V. Reyes"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2023",
+      "category": "Best Cozy/Humorous Mystery",
+      "position": "2023.04",
+      "result": "nominee",
+      "title": "Calypso, Corpses, and Cooking"
+    },
+    {
+      "authors": [
+        "Rob Osler"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Cozy/Humorous Mystery",
+      "position": "2025",
+      "result": "winner",
+      "title": "Cirque du Slay"
+    },
+    {
+      "authors": [
+        "Valerie Burns"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Cozy/Humorous Mystery",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "A Cup of Flour, a Pinch of Death"
+    },
+    {
+      "authors": [
+        "Ellen Byron"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Cozy/Humorous Mystery",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "A Very Woodsy Murder"
+    },
+    {
+      "authors": [
+        "Jennifer J. Chow"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Cozy/Humorous Mystery",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "ll-Fated Fortune"
+    },
+    {
+      "authors": [
+        "Catriona McPherson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Cozy/Humorous Mystery",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "Scotzilla"
+    },
+    {
+      "authors": [
+        "Raquel V. Reyes"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Cozy/Humorous Mystery",
+      "position": "2025.05",
+      "result": "nominee",
+      "title": "Dominoes, Danz\u00f3n, and Death"
+    }
+  ],
+  "fetched_at": "2026-07-18T02:38:47Z",
+  "list_id": "anthony_award_cozy_humorous_mystery",
+  "list_name": "Anthony Award - Cozy/Humorous Mystery",
+  "match_series": false,
+  "notes": [],
+  "parser": "anthony_award_cozy_humorous_mystery",
+  "schema_version": 2,
+  "source": {
+    "name": "Anthony Award - Cozy/Humorous Mystery",
+    "source_id": "anthony_award_cozy_humorous_mystery",
+    "url": "https://www.stopyourekillingme.com/Awards/Anthony_Awards.html"
+  }
+}

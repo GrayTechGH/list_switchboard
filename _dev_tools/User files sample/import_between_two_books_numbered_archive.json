@@ -1,0 +1,989 @@
+{
+  "append_state": {
+    "entry_count": 54,
+    "last_entry_key": "if i had your face|frances cha",
+    "last_position": "54",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "advocate_defender_host_selector": "Florence",
+      "authors": [
+        "Gwendoline Riley"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 1,
+      "position": "1",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Florence recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:1",
+      "title": "Opposed Positions"
+    },
+    {
+      "advocate_defender_host_selector": "Florence",
+      "authors": [
+        "Kirsten Reed"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 2,
+      "position": "2",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Florence recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:2",
+      "title": "The Ice Age"
+    },
+    {
+      "advocate_defender_host_selector": "Florence",
+      "authors": [
+        "Emma Forrest"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 3,
+      "position": "3",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Florence recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:3",
+      "title": "Your Voice In My Head"
+    },
+    {
+      "advocate_defender_host_selector": "Emma Forrest",
+      "authors": [
+        "Ivana Lowell"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 4,
+      "position": "4",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Emma Forrest recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:4",
+      "title": "Why Not Say What Happened?"
+    },
+    {
+      "advocate_defender_host_selector": "Florence",
+      "authors": [
+        "Zora Neale Hurston"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 5,
+      "position": "5",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Florence recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:5",
+      "title": "Their Eyes Were Watching God"
+    },
+    {
+      "advocate_defender_host_selector": "Jeremy O'Harris",
+      "authors": [
+        "Young Jean Lee"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 6,
+      "position": "6",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(guest recommendation from Jeremy O'Harris)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "guest_pick",
+      "source_record_id": "between-two-books:numbered:6",
+      "title": "Songs of the Dragons Flying To Heaven and Other Plays"
+    },
+    {
+      "advocate_defender_host_selector": "Florence",
+      "authors": [
+        "John Kennedy Toole"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 7,
+      "position": "7",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Florence recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:7",
+      "title": "A Confederacy Of Dunces"
+    },
+    {
+      "advocate_defender_host_selector": "Florence",
+      "authors": [
+        "F. Scott Fitzgerald"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 8,
+      "position": "8",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Florence recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:8",
+      "title": "The Great Gatsby"
+    },
+    {
+      "advocate_defender_host_selector": "Florence",
+      "authors": [
+        "Jeffrey Eugenides"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 9,
+      "position": "9",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Florence recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:9",
+      "title": "The Marriage Plot"
+    },
+    {
+      "advocate_defender_host_selector": "Isabella Summers",
+      "authors": [
+        "John Wyndham"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 10,
+      "position": "10",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(guest recommendation from Isabella Summers)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "guest_pick",
+      "source_record_id": "between-two-books:numbered:10",
+      "title": "The Day Of The Triffids"
+    },
+    {
+      "advocate_defender_host_selector": "Florence",
+      "authors": [
+        "Donna Tartt"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 11,
+      "position": "11",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Florence recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:11",
+      "title": "The Goldfinch"
+    },
+    {
+      "advocate_defender_host_selector": "Florence",
+      "authors": [
+        "Lena Dunham"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 12,
+      "position": "12",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Florence recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:12",
+      "title": "Not That Kind of Girl"
+    },
+    {
+      "advocate_defender_host_selector": "Florence",
+      "authors": [
+        "Nora Ephron"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 13,
+      "position": "13",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Florence recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:13",
+      "title": "Heartburn"
+    },
+    {
+      "advocate_defender_host_selector": "Florence",
+      "authors": [
+        "Mira Gonzalez"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 14,
+      "position": "14",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Florence recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:14",
+      "title": "I Will Never Be Beautiful Enough To Make Us Beautiful Together"
+    },
+    {
+      "advocate_defender_host_selector": "Florence",
+      "authors": [
+        "Ted Hughes"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 15,
+      "position": "15",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Florence recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:15",
+      "title": "Birthday Letters"
+    },
+    {
+      "advocate_defender_host_selector": "Florence",
+      "authors": [
+        "Patti Smith"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 16,
+      "position": "16",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Florence recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:16",
+      "title": "Just Kids"
+    },
+    {
+      "advocate_defender_host_selector": "Florence",
+      "authors": [
+        "Martin McIntosh",
+        "Gemma Jones"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 17,
+      "position": "17",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Florence recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:17",
+      "title": "Night Flower: The Life and Art of Vali Myers"
+    },
+    {
+      "advocate_defender_host_selector": "The Maccabees",
+      "authors": [
+        "Haruki Murakami"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 18,
+      "position": "18",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(guest recommendation from The Maccabees)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "guest_pick",
+      "source_record_id": "between-two-books:numbered:18",
+      "title": "The Wind-Up Bird Chronicle"
+    },
+    {
+      "advocate_defender_host_selector": "Florence",
+      "authors": [
+        "Lauren Groff"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 19,
+      "position": "19",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Florence recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:19",
+      "title": "Fates & Furies"
+    },
+    {
+      "advocate_defender_host_selector": "Florence",
+      "authors": [
+        "Nayyirah Waheed"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 20,
+      "position": "20",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Florence recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:20",
+      "title": "salt."
+    },
+    {
+      "advocate_defender_host_selector": "Nayyirah Waheed",
+      "authors": [
+        "Yrsa Daley-Ward"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 21,
+      "position": "21",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(guest recommendation from Nayyirah Waheed)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "guest_pick",
+      "source_record_id": "between-two-books:numbered:21",
+      "title": "Bone"
+    },
+    {
+      "advocate_defender_host_selector": "Adwoa Aboah",
+      "authors": [
+        "Katherine Dunn"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 22,
+      "position": "22",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(guest recommendation from Adwoa Aboah)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "guest_pick",
+      "source_record_id": "between-two-books:numbered:22",
+      "title": "Geek Love"
+    },
+    {
+      "advocate_defender_host_selector": "Adwoa Aboah",
+      "authors": [
+        "Tupac Shakur"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 23,
+      "position": "23",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(guest recommendation from Adwoa Aboah)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "guest_pick",
+      "source_record_id": "between-two-books:numbered:23",
+      "title": "The Rose That Grew From Concrete"
+    },
+    {
+      "advocate_defender_host_selector": "Florence",
+      "authors": [
+        "Grayson Perry"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 24,
+      "position": "24",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Florence recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:24",
+      "title": "The Descent of Man"
+    },
+    {
+      "advocate_defender_host_selector": "Grayson Perry",
+      "authors": [
+        "Jun\u2019ichiro Tanizaki"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 25,
+      "position": "25",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(guest recommendation from Grayson Perry)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "guest_pick",
+      "source_record_id": "between-two-books:numbered:25",
+      "title": "In Praise of Shadows"
+    },
+    {
+      "advocate_defender_host_selector": "Natasha Khan of Bat for Lashes",
+      "authors": [
+        "Hubert Selby Jr"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 26,
+      "position": "26",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(guest recommendation from Natasha Khan of Bat for Lashes)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "guest_pick",
+      "source_record_id": "between-two-books:numbered:26",
+      "title": "Last Exit to Brooklyn"
+    },
+    {
+      "advocate_defender_host_selector": "Nick Cave",
+      "authors": [
+        "Jonathan Safran- Foer"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 27,
+      "position": "27",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(guest recommendation from Nick Cave)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "guest_pick",
+      "source_record_id": "between-two-books:numbered:27",
+      "title": "Here I Am"
+    },
+    {
+      "advocate_defender_host_selector": "Between Two Books",
+      "authors": [
+        "Eimear McBride"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 28,
+      "position": "28",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Between Two Books) selected for Borris House Festival of Writing and Ideas, 2017.",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "selection_year": "2017",
+      "source_record_id": "between-two-books:numbered:28",
+      "title": "The Lesser Bohemians"
+    },
+    {
+      "advocate_defender_host_selector": "Tavi Gevinson",
+      "authors": [
+        "Durga Chew-Bose"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 29,
+      "position": "29",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(guest recommendation from Tavi Gevinson)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "guest_pick",
+      "source_record_id": "between-two-books:numbered:29",
+      "title": "Too Much and Not the Mood"
+    },
+    {
+      "advocate_defender_host_selector": "Florence",
+      "authors": [
+        "Amy Liptrot"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 30,
+      "position": "30",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Florence recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:30",
+      "title": "The Outrun"
+    },
+    {
+      "advocate_defender_host_selector": "Greta Gerwig",
+      "authors": [
+        "Maggie Nelson"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 31,
+      "position": "31",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(guest recommendation by Greta Gerwig)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "guest_pick",
+      "source_record_id": "between-two-books:numbered:31",
+      "title": "The Argonauts"
+    },
+    {
+      "advocate_defender_host_selector": "Kate Litman & Leah Moloney",
+      "authors": [
+        "Leslie Jamison"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 32,
+      "position": "32",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(recommendation by Kate Litman & Leah Moloney \u2013 who run the book club)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:32",
+      "title": "The Empathy Exams"
+    },
+    {
+      "advocate_defender_host_selector": "Fiona Apple",
+      "authors": [
+        "Joyce Carol-Oates"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 33,
+      "position": "33",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(recommendation by Fiona Apple)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:33",
+      "title": "On Boxing"
+    },
+    {
+      "advocate_defender_host_selector": "Florence",
+      "authors": [
+        "Olivia Laing"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 34,
+      "position": "34",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(recommended by Florence)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:34",
+      "title": "The Lonely City"
+    },
+    {
+      "advocate_defender_host_selector": "Between Two Books",
+      "authors": [
+        "Sally Rooney"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 35,
+      "position": "35",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(B2B recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:35",
+      "title": "Normal People"
+    },
+    {
+      "advocate_defender_host_selector": "Sally Rooney",
+      "authors": [
+        "George Eliot"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 36,
+      "position": "36",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(guest recommendation by Sally Rooney)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "guest_pick",
+      "source_record_id": "between-two-books:numbered:36",
+      "title": "Daniel Deronda"
+    },
+    {
+      "advocate_defender_host_selector": "Florence",
+      "authors": [
+        "Hera Lindsay Bird"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 37,
+      "position": "37",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Florence recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:37",
+      "title": "Hera Lindsay Bird"
+    },
+    {
+      "advocate_defender_host_selector": "Florence",
+      "authors": [
+        "Hera Lindsay Bird"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 38,
+      "position": "38",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Florence recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:38",
+      "title": "Pamper Me to Hell & Back"
+    },
+    {
+      "advocate_defender_host_selector": "Hera Lindsay Bird",
+      "authors": [
+        "Tove Jansson"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 39,
+      "position": "39",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(guest recommendation by Hera Lindsay Bird)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "guest_pick",
+      "source_record_id": "between-two-books:numbered:39",
+      "title": "The Summer Book"
+    },
+    {
+      "advocate_defender_host_selector": "Florence",
+      "authors": [
+        "Yrsa Daley-Ward"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 40,
+      "position": "40",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Florence recommendation for FORM Arcosanti, Arizona 2019)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "selection_year": "2019",
+      "source_record_id": "between-two-books:numbered:40",
+      "title": "The Terrible"
+    },
+    {
+      "advocate_defender_host_selector": "Florence",
+      "authors": [
+        "Aja Monet"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 41,
+      "position": "41",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Florence recommendation for FORM Arcosanti, Arizona 2019)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "selection_year": "2019",
+      "source_record_id": "between-two-books:numbered:41",
+      "title": "My Mother Was A Freedom Fighter"
+    },
+    {
+      "advocate_defender_host_selector": "Florence",
+      "authors": [
+        "Nadya Tolokonnikova"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 42,
+      "position": "42",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Florence recommendatio for FORM Arcosanti, Arizona 2019)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "selection_year": "2019",
+      "source_record_id": "between-two-books:numbered:42",
+      "title": "Read and Riot: A Pussy Riot Guide to Activism"
+    },
+    {
+      "advocate_defender_host_selector": "Florence",
+      "authors": [
+        "Lavinia Greenlaw"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 43,
+      "position": "43",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Florence recommendation for Hyde Park 2019 book club tent)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "selection_year": "2019",
+      "source_record_id": "between-two-books:numbered:43",
+      "title": "The Importance of Music to Girls"
+    },
+    {
+      "authors": [
+        "Emma Glass"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 44,
+      "position": "44",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Lockdown recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:44",
+      "title": "Rest and be Thankful"
+    },
+    {
+      "authors": [
+        "Cathy Park Hong"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 45,
+      "position": "45",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Lockdown recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:45",
+      "title": "Minor Feelings"
+    },
+    {
+      "authors": [
+        "Ottessa Moshfegh"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 46,
+      "position": "46",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Lockdown recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:46",
+      "title": "My Year of Rest and Relaxation"
+    },
+    {
+      "authors": [
+        "Jia Tolentino"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 47,
+      "position": "47",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Lockdown recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:47",
+      "title": "Trick Mirror"
+    },
+    {
+      "authors": [
+        "Anne Boyer"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 48,
+      "position": "48",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(Lockdown recommendation)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:48",
+      "title": "The Undying"
+    },
+    {
+      "authors": [
+        "C Pam Zhang"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 49,
+      "position": "49",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:49",
+      "title": "How Much of These Hills is Gold"
+    },
+    {
+      "authors": [
+        "Patti Smith"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 50,
+      "position": "50",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:50",
+      "title": "Year of the Monkey"
+    },
+    {
+      "advocate_defender_host_selector": "Patti Smith",
+      "authors": [
+        "Marguerite Duras"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 51,
+      "position": "51",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(guest recommendation by Patti Smith)",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "guest_pick",
+      "source_record_id": "between-two-books:numbered:51",
+      "title": "Writing"
+    },
+    {
+      "authors": [
+        "Luiza Sauma"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 52,
+      "position": "52",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:52",
+      "title": "Everything You Ever Wanted"
+    },
+    {
+      "advocate_defender_host_selector": "Arlo Parks",
+      "authors": [
+        "Joan Didion"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 53,
+      "position": "53",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "raw_selection_label": "(guest recommendation by Arlo Parks",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "guest_pick",
+      "source_record_id": "between-two-books:numbered:53",
+      "title": "The Year of Magical Thinking"
+    },
+    {
+      "authors": [
+        "Frances Cha"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "official_sequence": 54,
+      "position": "54",
+      "priority_group": "A",
+      "program_era": "official numbered archive",
+      "recipe_scope": "historical/incomplete numbered list",
+      "region": "Global",
+      "selection_type": "community_pick",
+      "source_record_id": "between-two-books:numbered:54",
+      "title": "If I Had Your Face"
+    }
+  ],
+  "fetched_at": "2026-07-14T21:44:29Z",
+  "list_id": "between_two_books_numbered_archive",
+  "list_name": "Between Two Books - Official Book List",
+  "match_series": false,
+  "notes": [
+    "Historical/incomplete archive: the official page does not establish a complete dated Between Two Books chronology."
+  ],
+  "parser": "between_two_books_numbered_archive",
+  "schema_version": 2,
+  "source": {
+    "name": "Between Two Books - Official Book List",
+    "source_id": "between_two_books_numbered_archive",
+    "url": "https://betweentwobooks.co.uk/"
+  }
+}

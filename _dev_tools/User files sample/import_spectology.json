@@ -1,0 +1,901 @@
+{
+  "append_state": {
+    "entry_count": 32,
+    "last_entry_key": "do you dream of terra two|temi oh",
+    "last_position": "32",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Iain M. Banks"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2018-04-03",
+      "is_reread": false,
+      "official_sequence": 1,
+      "position": "1",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "1.1: Use of Weapons Pre-Read",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "4",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/11-use-of-weapons-pre-read/",
+      "selection_year": "2018",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/11-use-of-weapons-pre-read/"
+      },
+      "source_record_id": "spectology:1.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "Use of Weapons"
+    },
+    {
+      "authors": [
+        "Mary Doria Russell"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2018-05-01",
+      "is_reread": false,
+      "official_sequence": 2,
+      "position": "2",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "2.1: The Sparrow Pre-Read",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "5",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/21-the-sparrow-pre-read/",
+      "selection_year": "2018",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/21-the-sparrow-pre-read/"
+      },
+      "source_record_id": "spectology:2.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "The Sparrow"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor"
+      ],
+      "club_name": "Spectology",
+      "component_index": 1,
+      "event_date": "2018-06-05",
+      "event_group_id": "spectology:3.1",
+      "is_reread": false,
+      "official_sequence": 3,
+      "position": "3",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "3.1: The Binti Trilogy pre-read",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "6",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/31-the-binti-trilogy-pre-read/",
+      "selection_year": "2018",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/31-the-binti-trilogy-pre-read/"
+      },
+      "source_record_id": "spectology:3.1:1",
+      "theme_or_track": "pre-read cycle",
+      "title": "Binti"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor"
+      ],
+      "club_name": "Spectology",
+      "component_index": 2,
+      "event_date": "2018-06-05",
+      "event_group_id": "spectology:3.1",
+      "is_reread": false,
+      "official_sequence": 3,
+      "position": "4",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "3.1: The Binti Trilogy pre-read",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "6",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/31-the-binti-trilogy-pre-read/",
+      "selection_year": "2018",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/31-the-binti-trilogy-pre-read/"
+      },
+      "source_record_id": "spectology:3.1:2",
+      "theme_or_track": "pre-read cycle",
+      "title": "Binti: Home"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor"
+      ],
+      "club_name": "Spectology",
+      "component_index": 3,
+      "event_date": "2018-06-05",
+      "event_group_id": "spectology:3.1",
+      "is_reread": false,
+      "official_sequence": 3,
+      "position": "5",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "3.1: The Binti Trilogy pre-read",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "6",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/31-the-binti-trilogy-pre-read/",
+      "selection_year": "2018",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/31-the-binti-trilogy-pre-read/"
+      },
+      "source_record_id": "spectology:3.1:3",
+      "theme_or_track": "pre-read cycle",
+      "title": "Binti: The Night Masquerade"
+    },
+    {
+      "authors": [
+        "Julia Elliott"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2018-07-10",
+      "is_reread": false,
+      "official_sequence": 4,
+      "position": "6",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "4.1: The New & Improved Romie Futch pre-read",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "7",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/41-the-new-improved-romie-futch-pre-read/",
+      "selection_year": "2018",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/41-the-new-improved-romie-futch-pre-read/"
+      },
+      "source_record_id": "spectology:4.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "The New and Improved Romie Futch"
+    },
+    {
+      "authors": [
+        "Nick Harkaway"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2018-08-07",
+      "is_reread": false,
+      "official_sequence": 5,
+      "position": "7",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "5.1: Pre-read for Gnomon, by Nick Harkaway, with guest Max Gladstone",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "8",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/51-pre-read-for-gnomon-by-nick-harkaway-with-guest-max-gladstone/",
+      "selection_year": "2018",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/51-pre-read-for-gnomon-by-nick-harkaway-with-guest-max-gladstone/"
+      },
+      "source_record_id": "spectology:5.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "Gnomon"
+    },
+    {
+      "authors": [
+        "Yoon Ha Lee"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2018-08-30",
+      "is_reread": false,
+      "official_sequence": 6,
+      "position": "8",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "6.1: Ninefox Gambit pre-read w/ Ellie Bartels: Strategy War Games in Science Fiction",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "8",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/61-ninefox-gambit-pre-read-w-ellie-bartels-strategy-war-games-in-science-fiction/",
+      "selection_year": "2018",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/61-ninefox-gambit-pre-read-w-ellie-bartels-strategy-war-games-in-science-fiction/"
+      },
+      "source_record_id": "spectology:6.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "Ninefox Gambit"
+    },
+    {
+      "authors": [
+        "Victor LaValle"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2018-10-02",
+      "is_reread": false,
+      "official_sequence": 7,
+      "position": "9",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "7.1: The Ballad of Black Tom pre-read: Race & the History of Horror Fiction",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "10",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/71-the-ballad-of-black-tom-pre-read-race-the-history-of-horror-fiction/",
+      "selection_year": "2018",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/71-the-ballad-of-black-tom-pre-read-race-the-history-of-horror-fiction/"
+      },
+      "source_record_id": "spectology:7.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "The Ballad of Black Tom"
+    },
+    {
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2018-11-13",
+      "is_reread": false,
+      "official_sequence": 8,
+      "position": "10",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "8.1: The Children of Time pre-read: What is \"Hard\" Science Fiction?",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "11",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/81-the-children-of-time-pre-read-what-is-hard-science-fiction/",
+      "selection_year": "2018",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/81-the-children-of-time-pre-read-what-is-hard-science-fiction/"
+      },
+      "source_record_id": "spectology:8.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "Children of Time"
+    },
+    {
+      "authors": [
+        "N.A. Sulway"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2018-12-04",
+      "is_reread": false,
+      "official_sequence": 9,
+      "position": "11",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "9.1: Rupetta pre-read w/ Charlotte Geater: Folk tales & feminist histories.",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "12",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/91-rupetta-pre-read-w-charlotte-geater-folk-tales-feminist-histories/",
+      "selection_year": "2018",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/91-rupetta-pre-read-w-charlotte-geater-folk-tales-feminist-histories/"
+      },
+      "source_record_id": "spectology:9.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "Rupetta"
+    },
+    {
+      "authors": [
+        "Ryu Mitsuse"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2019-01-08",
+      "is_reread": false,
+      "official_sequence": 10,
+      "position": "12",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "10.1: Ten Billion Days & 100 Billion Nights pre-read: Disaster communities & transmission of ideas between cultures.",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "1",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/101-ten-billion-days-100-billion-nights-pre-read-disaster-communities-transmission-of-ideas-between-cultures/",
+      "selection_year": "2019",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/101-ten-billion-days-100-billion-nights-pre-read-disaster-communities-transmission-of-ideas-between-cultures/"
+      },
+      "source_record_id": "spectology:10.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "Ten Billion Days & 100 Billion Nights"
+    },
+    {
+      "authors": [
+        "Nalo Hopkinson"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2019-02-05",
+      "is_reread": false,
+      "official_sequence": 11,
+      "position": "13",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "11.1: Brown Girl in the Ring pre-read w/ Mendez Hodes: The History of African Religion in Diaspora",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "2",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/111-brown-girl-in-the-ring-pre-read-w-mendez-hodes-the-history-of-african-religion-in-diaspora/",
+      "selection_year": "2019",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/111-brown-girl-in-the-ring-pre-read-w-mendez-hodes-the-history-of-african-religion-in-diaspora/"
+      },
+      "source_record_id": "spectology:11.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "Brown Girl in the Ring"
+    },
+    {
+      "authors": [
+        "Sue Burke"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2019-03-05",
+      "is_reread": false,
+      "official_sequence": 12,
+      "position": "14",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "12.1: Semiosis pre-read w/ Nate Spence: Alaska, Survivalism, and Ecology in Science Fiction",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "3",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/121-semiosis-pre-read-w-nate-spence-alaska-survivalism-and-ecology-in-science-fiction/",
+      "selection_year": "2019",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/121-semiosis-pre-read-w-nate-spence-alaska-survivalism-and-ecology-in-science-fiction/"
+      },
+      "source_record_id": "spectology:12.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "Semiosis"
+    },
+    {
+      "authors": [
+        "Chris Beckett"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2019-04-02",
+      "is_reread": false,
+      "official_sequence": 13,
+      "position": "15",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "13.1: Dark Eden pre-read w/ Kevin Kelsey: Linguistic drift, creating myths, and rogue planets.",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "4",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/131-dark-eden-pre-read-w-kevin-kelsey-linguistic-drift-creating-myths-and-rogue-planets/",
+      "selection_year": "2019",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/131-dark-eden-pre-read-w-kevin-kelsey-linguistic-drift-creating-myths-and-rogue-planets/"
+      },
+      "source_record_id": "spectology:13.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "Dark Eden"
+    },
+    {
+      "authors": [
+        "Ann Leckie"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2019-05-07",
+      "is_reread": false,
+      "official_sequence": 14,
+      "position": "16",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "14.1: The Raven Tower pre-read w/ Reading the End: Fantasy, Genre, & Gender!",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "5",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/141-the-raven-tower-pre-read-w-reading-the-end-fantasy-genre-gender/",
+      "selection_year": "2019",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/141-the-raven-tower-pre-read-w-reading-the-end-fantasy-genre-gender/"
+      },
+      "source_record_id": "spectology:14.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "The Raven Tower"
+    },
+    {
+      "authors": [
+        "Ted Chiang"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2019-06-04",
+      "is_reread": false,
+      "official_sequence": 15,
+      "position": "17",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "15.1: Exhalation by Ted Chiang, pre-read: Philosophical thought experiments & short stories",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "6",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/151-exhalation-by-ted-chiang-pre-read-philosophical-thought-experiments-short-stories/",
+      "selection_year": "2019",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/151-exhalation-by-ted-chiang-pre-read-philosophical-thought-experiments-short-stories/"
+      },
+      "source_record_id": "spectology:15.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "Exhalation"
+    },
+    {
+      "authors": [
+        "Max Gladstone"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2019-07-09",
+      "is_reread": false,
+      "official_sequence": 16,
+      "position": "18",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "16.1: Empress of Forever pre-read: Space Opera, Epics, & Journey to the West",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "7",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/161-empress-of-forever-pre-read-space-opera-epics-journey-to-the-west/",
+      "selection_year": "2019",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/161-empress-of-forever-pre-read-space-opera-epics-journey-to-the-west/"
+      },
+      "source_record_id": "spectology:16.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "Empress of Forever"
+    },
+    {
+      "authors": [
+        "NK Jemisin"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2019-08-13",
+      "is_reread": false,
+      "official_sequence": 17,
+      "position": "19",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "17.1: The Killing Moon pre-read: Worldbuilding techniques in SF & Fantasy",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "8",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/171-the-killing-moon-pre-read-worldbuilding-techniques-in-sf-fantasy/",
+      "selection_year": "2019",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/171-the-killing-moon-pre-read-worldbuilding-techniques-in-sf-fantasy/"
+      },
+      "source_record_id": "spectology:17.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "The Killing Moon"
+    },
+    {
+      "authors": [
+        "Chen Qiufan"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2019-09-10",
+      "is_reread": false,
+      "official_sequence": 18,
+      "position": "20",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "18.1: Waste Tide pre-read: Chinese Language, Literary History, and Science Fiction",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "9",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/181-waste-tide-pre-read-chinese-language-literary-history-and-science-fiction/",
+      "selection_year": "2019",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/181-waste-tide-pre-read-chinese-language-literary-history-and-science-fiction/"
+      },
+      "source_record_id": "spectology:18.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "Waste Tide",
+      "translator_credit": "Ken Liu"
+    },
+    {
+      "authors": [
+        "Colson Whitehead"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2019-10-09",
+      "is_reread": false,
+      "official_sequence": 19,
+      "position": "21",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "19.1: Zone One pre-read: Zombies, Horror, and LitFic",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "10",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/191-zone-one-pre-read-zombies-horror-and-litfic/",
+      "selection_year": "2019",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/191-zone-one-pre-read-zombies-horror-and-litfic/"
+      },
+      "source_record_id": "spectology:19.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "Zone One"
+    },
+    {
+      "authors": [
+        "Rivers Solomon"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2019-11-11",
+      "is_reread": false,
+      "official_sequence": 20,
+      "position": "22",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "20.1: An Unkindness of Ghosts pre-read: Reading with privilege, using genre conventions, and truth in fiction",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "11",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/201-an-unkindness-of-ghosts-pre-read-reading-with-privilege-using-genre-conventions-and-truth-in-fiction/",
+      "selection_year": "2019",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/201-an-unkindness-of-ghosts-pre-read-reading-with-privilege-using-genre-conventions-and-truth-in-fiction/"
+      },
+      "source_record_id": "spectology:20.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "An Unkindness of Ghosts"
+    },
+    {
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "club_name": "Spectology",
+      "component_index": 1,
+      "event_date": "2019-12-03",
+      "event_group_id": "spectology:21.1",
+      "is_reread": false,
+      "official_sequence": 21,
+      "position": "23",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "21.1: Classic SF pre-read: On creating cannons, and how to read problematic fiction & authors.",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "12",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/211-classic-sf-pre-read-on-creating-cannons-and-how-to-read-problematic-fiction-authors/",
+      "selection_year": "2019",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/211-classic-sf-pre-read-on-creating-cannons-and-how-to-read-problematic-fiction-authors/"
+      },
+      "source_record_id": "spectology:21.1:1",
+      "theme_or_track": "pre-read cycle",
+      "title": "Childhood's End"
+    },
+    {
+      "authors": [
+        "Anna Kavan"
+      ],
+      "club_name": "Spectology",
+      "component_index": 2,
+      "event_date": "2019-12-03",
+      "event_group_id": "spectology:21.1",
+      "is_reread": false,
+      "official_sequence": 21,
+      "position": "24",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "21.1: Classic SF pre-read: On creating cannons, and how to read problematic fiction & authors.",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "12",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/211-classic-sf-pre-read-on-creating-cannons-and-how-to-read-problematic-fiction-authors/",
+      "selection_year": "2019",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/211-classic-sf-pre-read-on-creating-cannons-and-how-to-read-problematic-fiction-authors/"
+      },
+      "source_record_id": "spectology:21.1:2",
+      "theme_or_track": "pre-read cycle",
+      "title": "Ice"
+    },
+    {
+      "authors": [
+        "Samuel R. Delany"
+      ],
+      "club_name": "Spectology",
+      "component_index": 3,
+      "event_date": "2019-12-03",
+      "event_group_id": "spectology:21.1",
+      "is_reread": false,
+      "official_sequence": 21,
+      "position": "25",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "21.1: Classic SF pre-read: On creating cannons, and how to read problematic fiction & authors.",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "12",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/211-classic-sf-pre-read-on-creating-cannons-and-how-to-read-problematic-fiction-authors/",
+      "selection_year": "2019",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/211-classic-sf-pre-read-on-creating-cannons-and-how-to-read-problematic-fiction-authors/"
+      },
+      "source_record_id": "spectology:21.1:3",
+      "theme_or_track": "pre-read cycle",
+      "title": "Stars in My Pocket Like Grains of Sand"
+    },
+    {
+      "authors": [
+        "Arkady Martine"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2020-01-14",
+      "is_reread": false,
+      "official_sequence": 22,
+      "position": "26",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "22.1: A Memory Called Empire pre-read: Martine's academic work, historical ambassadors, and what it means to be a member of an empire",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "1",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/221-a-memory-called-empire-pre-read-martines-academic-work-historical-ambassadors-and-what-it-means-to-be-a-member-of-an-empire/",
+      "selection_year": "2020",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/221-a-memory-called-empire-pre-read-martines-academic-work-historical-ambassadors-and-what-it-means-to-be-a-member-of-an-empire/"
+      },
+      "source_record_id": "spectology:22.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "A Memory Called Empire"
+    },
+    {
+      "authors": [
+        "Catie Disabato"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2020-02-04",
+      "is_reread": false,
+      "official_sequence": 23,
+      "position": "27",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "23.1: The Ghost Network pre-read w/ Ben Roswell: Experimental Narratives, Storytelling Games, and Postmodern Literature",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "2",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/231-the-ghost-network-pre-read-w-ben-roswell-experimental-narratives-storytelling-games-and-postmodern-literature/",
+      "selection_year": "2020",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/231-the-ghost-network-pre-read-w-ben-roswell-experimental-narratives-storytelling-games-and-postmodern-literature/"
+      },
+      "source_record_id": "spectology:23.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "The Ghost Network"
+    },
+    {
+      "authors": [
+        "David Markson"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2020-03-03",
+      "is_reread": false,
+      "official_sequence": 24,
+      "position": "28",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "24.1: Wittgenstein's Mistress pre-read: Philosophical Science Fiction & being lonely at the end of the world",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "3",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/241-wittgensteins-mistress-pre-read-philosophical-science-fiction-being-lonely-at-the-end-of-the-world/",
+      "selection_year": "2020",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/241-wittgensteins-mistress-pre-read-philosophical-science-fiction-being-lonely-at-the-end-of-the-world/"
+      },
+      "source_record_id": "spectology:24.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "Wittgenstein's Mistress"
+    },
+    {
+      "authors": [
+        "Aliette de Bodard"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2020-03-31",
+      "is_reread": false,
+      "official_sequence": 25,
+      "position": "29",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "25.1: The Tea Master & the Detective pre-read w/ Julia Rios: Domestic Cozy Detective Fiction, in Space!",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "3",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/251-the-tea-master-the-detective-pre-read-w-julia-rios-domestic-cozy-detective-fiction-in-space/",
+      "selection_year": "2020",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/251-the-tea-master-the-detective-pre-read-w-julia-rios-domestic-cozy-detective-fiction-in-space/"
+      },
+      "source_record_id": "spectology:25.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "The Tea Master and the Detective"
+    },
+    {
+      "authors": [
+        "Zen Cho"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2020-05-05",
+      "is_reread": false,
+      "official_sequence": 26,
+      "position": "30",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "26.1: The True Queen pre-read w/ Reading the End: Historical Fantasy, Trash Birds, and Chaotic Quarantine Brain",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "5",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/261-the-true-queen-pre-read-w-reading-the-end-historical-fantasy/",
+      "selection_year": "2020",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/261-the-true-queen-pre-read-w-reading-the-end-historical-fantasy/"
+      },
+      "source_record_id": "spectology:26.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "The True Queen"
+    },
+    {
+      "authors": [
+        "Cadwell Turnbull"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2020-08-04",
+      "is_reread": false,
+      "official_sequence": 27,
+      "position": "31",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "27.1: The Lesson by Cadwell Turnbull pre-read w/ Lydia: Alien invasion and a history of capitalism & colonialism.",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "8",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/271-the-lesson-by-cadwell-turnbull-pre-read-w-lydia-alien-invasion-and-a-history-of-capitalism-colonialism/",
+      "selection_year": "2020",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/271-the-lesson-by-cadwell-turnbull-pre-read-w-lydia-alien-invasion-and-a-history-of-capitalism-colonialism/"
+      },
+      "source_record_id": "spectology:27.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "The Lesson"
+    },
+    {
+      "authors": [
+        "Temi Oh"
+      ],
+      "club_name": "Spectology",
+      "event_date": "2020-09-08",
+      "is_reread": false,
+      "official_sequence": 28,
+      "position": "32",
+      "priority_group": "A",
+      "program_era": "numbered book-club cycles",
+      "raw_episode_title": "28.1: Do You Dream of Terra-Two pre-read w/ Bee & Estelle: Alternate History, Destiny, and Space Travel",
+      "recipe_scope": "finite numbered pre-read cycles",
+      "region": "Global",
+      "selection_month": "9",
+      "selection_type": "episode_selection",
+      "selection_url": "https://www.spectology.com/e/281-do-you-dream-of-terra-two-pre-read-w-bee-estelle-alternate-history-destiny-and-space-travel/",
+      "selection_year": "2020",
+      "source": {
+        "name": "Spectology",
+        "source_id": "spectology",
+        "url": "https://www.spectology.com/e/281-do-you-dream-of-terra-two-pre-read-w-bee-estelle-alternate-history-destiny-and-space-travel/"
+      },
+      "source_record_id": "spectology:28.1",
+      "theme_or_track": "pre-read cycle",
+      "title": "Do You Dream of Terra-Two"
+    }
+  ],
+  "fetched_at": "2026-07-15T05:10:09Z",
+  "list_id": "spectology",
+  "list_name": "Spectology (discontinued)",
+  "match_series": false,
+  "notes": [
+    "Spectology is a finite archive: the official site announced its series finale in October 2020, so append updates are not expected."
+  ],
+  "parser": "spectology",
+  "schema_version": 2,
+  "source": {
+    "name": "Spectology (discontinued)",
+    "source_id": "spectology",
+    "url": "https://www.spectology.com/feed.xml"
+  }
+}

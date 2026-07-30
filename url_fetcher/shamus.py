@@ -101,6 +101,7 @@ class UrlFetcherShamusPINovel(UrlFetcherShamusAward):
     'Best Hardcover P.I. Novel',
     'Best Hardcover PI Novel',
     'Best Hardcover Novel',
+    'PI Hardcover',
     'P.I. Novel',
     'PI Novel',
   )
@@ -115,6 +116,7 @@ class UrlFetcherShamusPaperbackOriginal(UrlFetcherShamusAward):
     'Best Paperback Original P.I. Novel',
     'Best Paperback Original PI Novel',
     'Best Paperback Original',
+    'PI Paperback Original',
     'Paperback Original',
   )
 

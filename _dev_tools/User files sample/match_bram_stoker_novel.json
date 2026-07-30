@@ -57,15 +57,12 @@
         "Wendy N. Wagner"
       ],
       "imported_title": "Girl in the Creek",
-      "matched_at": "2026-07-08T23:53:52Z",
-      "matched_authors": [
-        "Stephen Graham Jones"
-      ],
-      "matched_book_id": 38498,
-      "matched_book_ids": [
+      "previous_match_source": "saved/manual override",
+      "previous_matched_book_id": 38498,
+      "previous_matched_book_ids": [
         38498
       ],
-      "matched_books": [
+      "previous_matched_books": [
         {
           "matched_authors": [
             "Stephen Graham Jones"
@@ -74,7 +71,8 @@
           "matched_title": "The Buffalo Hunter Hunter"
         }
       ],
-      "matched_title": "The Buffalo Hunter Hunter"
+      "unmatched": true,
+      "unmatched_at": "2026-07-11T00:34:08Z"
     },
     {
       "entry_key": "witchcraft for wayward girls|grady hendrix",
@@ -82,15 +80,12 @@
         "Grady Hendrix"
       ],
       "imported_title": "Witchcraft for Wayward Girls",
-      "matched_at": "2026-07-08T23:53:52Z",
-      "matched_authors": [
-        "Joe Hill"
-      ],
-      "matched_book_id": 35610,
-      "matched_book_ids": [
+      "previous_match_source": "saved/manual override",
+      "previous_matched_book_id": 35610,
+      "previous_matched_book_ids": [
         35610
       ],
-      "matched_books": [
+      "previous_matched_books": [
         {
           "matched_authors": [
             "Joe Hill"
@@ -99,9 +94,10 @@
           "matched_title": "King Sorrow"
         }
       ],
-      "matched_title": "King Sorrow"
+      "unmatched": true,
+      "unmatched_at": "2026-07-11T00:34:08Z"
     }
   ],
-  "saved_at": "2026-07-08T23:53:52Z",
+  "saved_at": "2026-07-11T00:34:08Z",
   "schema_version": 2
 }

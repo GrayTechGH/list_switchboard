@@ -17,12 +17,12 @@ import re
 try:
   from calibre_plugins.list_switchboard.parser.sfadb_base import (
     SFADBParser, StandardItemMixin,
-    normalize_heading, strip_tie_marker,
+    node_text, normalize_heading, parse_winner_prefix, strip_tie_marker,
   )
 except ImportError:
   from .sfadb_base import (
     SFADBParser, StandardItemMixin,
-    normalize_heading, strip_tie_marker,
+    node_text, normalize_heading, parse_winner_prefix, strip_tie_marker,
   )
 
 
@@ -59,6 +59,35 @@ class WorldFantasyParser(StandardItemMixin, SFADBParser):
     # parse_winner_prefix(). The tie marker must be stripped before splitting.
     text = strip_tie_marker(text)
     return super().parse_item(text)
+
+  def parse_item_node(self, node):
+    """
+    Parse live SFADB rows using their bold-title and linked-person boundaries.
+
+    Anthology rows can credit several comma-separated editors before a trailing
+    ``eds.`` marker. Flattening that markup to text makes the first editor look
+    like part of the title to the shared single-editor comma splitter.
+    """
+    text = node_text(node)
+    cleaned, result = parse_winner_prefix(text)
+    if normalize_heading(cleaned) == 'no award':
+      return None
+    title_nodes = node.xpath('(./b | ./strong)[1]')
+    if not title_nodes:
+      return self.parse_item(text)
+    title = node_text(title_nodes[0]).strip(' "\u201c\u201d,')
+    authors = list(dict.fromkeys(
+      author for author in (
+        node_text(link) for link in node.xpath('./a[@href]')
+      ) if author
+    ))
+    if not title or not authors:
+      return self.parse_item(text)
+    return {
+      'title': title,
+      'authors': authors,
+      'result': result,
+    }
 
 
 def parse_world_fantasy_awards(

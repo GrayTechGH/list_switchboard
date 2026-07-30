@@ -11,6 +11,8 @@ Maintenance notes:
   implement parse_item().
 - parse_item() receives a normalized line and returns a dict with 'title',
   'author', and 'result', or None to skip the row.
+- Source-specific subclasses may override parse_item_node() when SFADB markup
+  provides load-bearing title/person boundaries that plain text loses.
 - The position-assignment contract: winner rows in a year get str(year),
   preserving tied winners; nominees get year.NN with a two-digit suffix. If a
   year has no winner, all rows get year.NN suffixes.
@@ -128,11 +130,11 @@ class SFADBParser(AwardParserBase):
 
   def parse_year(self, html, source_url, year, category, category_aliases):
     root = html_root(html)
-    category_rows = self.category_block_lines(root, category_aliases)
-    if category_rows is not None:
+    category_items = self.category_block_items(root, category_aliases)
+    if category_items is not None:
       rows = []
-      for line in category_rows:
-        parsed = self.parse_item(line)
+      for item in category_items:
+        parsed = self.parse_item_node(item)
         if parsed is not None:
           rows.append(self.build_award_entry(parsed, source_url, year, category))
       return assign_positions(rows, year, tied_winners_share_position=True)
@@ -153,6 +155,12 @@ class SFADBParser(AwardParserBase):
     paragraph headings, so callers fall back to text_lines() when no structural
     category blocks are found.
     """
+    items = self.category_block_items(root, aliases)
+    if items is None:
+      return None
+    return [line for line in (node_text(item) for item in items) if line]
+
+  def category_block_items(self, root, aliases):
     blocks = root.xpath(
       '//div[contains(concat(" ", normalize-space(@class), " "), " categoryblock ")]')
     if not blocks:
@@ -165,10 +173,7 @@ class SFADBParser(AwardParserBase):
       heading = normalize_heading(node_text(heading_nodes[0]) if heading_nodes else '')
       if heading not in normalized_aliases:
         continue
-      for item in block.xpath('.//li'):
-        line = node_text(item)
-        if line:
-          selected.append(line)
+      selected.extend(block.xpath('.//li'))
     return selected
 
   def category_lines(self, lines, aliases):
@@ -200,6 +205,10 @@ class SFADBParser(AwardParserBase):
     should check instance attributes here rather than changing the signature.
     """
     raise NotImplementedError
+
+  def parse_item_node(self, node):
+    """Parse one structural category item, defaulting to normalized text."""
+    return self.parse_item(node_text(node))
 
   def _log(self, log, label, data):
     if log is not None:

@@ -1,0 +1,700 @@
+{
+  "append_state": {
+    "entry_count": 35,
+    "last_entry_key": "free|lea ypi",
+    "last_position": "35",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Douglas Stuart"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "1",
+      "selection_label": "June 2023",
+      "selection_month": "6",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/shuggie-bain-3"
+      },
+      "title": "Shuggie Bain"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Min Jin Lee"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "2",
+      "selection_label": "July 2023",
+      "selection_month": "7",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/pachinko-2"
+      },
+      "title": "Pachinko"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Chimamanda Ngozi Adichie"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "3",
+      "selection_label": "August 2023",
+      "selection_month": "8",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/half-of-a-yellow-sun-2"
+      },
+      "title": "Half Of A Yellow Sun"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Patti Smith"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "4",
+      "scope_flags": "memoir",
+      "selection_label": "September 2023",
+      "selection_month": "9",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/just-kids-3"
+      },
+      "title": "Just Kids"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Gabriel Garc\u00eda M\u00e1rquez"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "5",
+      "selection_label": "October 2023",
+      "selection_month": "10",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/100-years-of-solitude-2"
+      },
+      "title": "One Hundred Years Of Solitude"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Brit Bennett"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "6",
+      "selection_label": "November 2023",
+      "selection_month": "11",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/the-vanishing-half-2"
+      },
+      "title": "The Vanishing Half"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Emma Cline"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "7",
+      "selection_label": "January 2024",
+      "selection_month": "1",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/the-guest-2"
+      },
+      "title": "The Guest"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Khaled Hosseini"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "8",
+      "selection_label": "February 2024",
+      "selection_month": "2",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/a-thousand-splendid-suns"
+      },
+      "title": "A Thousand Splendid Suns"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Hernan Diaz"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "9",
+      "scope_flags": "memoir",
+      "selection_label": "March 2024",
+      "selection_month": "3",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/trust-2"
+      },
+      "title": "Trust"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Michelle Zauner"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "10",
+      "scope_flags": "memoir",
+      "selection_label": "April 2024",
+      "selection_month": "4",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/crying-in-h-mart-2"
+      },
+      "title": "Crying In H Mart"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Tomasz Jedrowski"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "11",
+      "season": "summer",
+      "selection_label": "May 2024",
+      "selection_month": "5",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/swimming-in-the-dark-2"
+      },
+      "title": "Swimming In The Dark"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Patrick Radden Keefe"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "12",
+      "selection_label": "June 2024",
+      "selection_month": "6",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/say-nothing-2"
+      },
+      "title": "Say Nothing"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Malorie Blackman"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "13",
+      "selection_label": "July 2024",
+      "selection_month": "7",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/noughts-and-crosses-2"
+      },
+      "title": "Noughts & Crosses"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Alana S. Portero"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "14",
+      "selection_label": "September 2024",
+      "selection_month": "9",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/bad-habit-2"
+      },
+      "title": "Bad Habit"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "George Saunders"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "15",
+      "scope_flags": "play",
+      "selection_label": "October 2024",
+      "selection_month": "10",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/lincoln-in-the-bardo"
+      },
+      "title": "Lincoln In The Bardo"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Ocean Vuong"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "16",
+      "selection_label": "November 2024",
+      "selection_month": "11",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/on-earth-we-are-briefly-gorgeous-2"
+      },
+      "title": "On Earth We\u2019re Briefly Gorgeous"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Olga Tokarczuk"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "17",
+      "season": "winter",
+      "selection_label": "January 2025",
+      "selection_month": "1",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/drive-your-plow-through-the-bones-of-the-dead"
+      },
+      "title": "Drive Your Plow Over The Bones Of The Dead"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Paul Murray"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "18",
+      "selection_label": "February 2025",
+      "selection_month": "2",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/the-bee-sting-paul-murray"
+      },
+      "title": "The Bee Sting"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Tommy Orange"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "19",
+      "selection_label": "March 2025",
+      "selection_month": "3",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/there-there"
+      },
+      "title": "There There"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Max Porter"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "20",
+      "selection_label": "April 2025",
+      "selection_month": "4",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/grief-is-the-thing-with-feathers-max-porter"
+      },
+      "title": "Grief Is The Thing With Feathers"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Guadalupe Nettel"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "21",
+      "selection_label": "May 2025",
+      "selection_month": "5",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/still-born-guadalupe-nettel"
+      },
+      "title": "Still Born"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Jennifer Clement"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "22",
+      "selection_label": "June 2025",
+      "selection_month": "6",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/widow-basquiat-jennifer-clement"
+      },
+      "title": "Widow Basquiat"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Vincent Delecroix"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "23",
+      "selection_label": "July 2025",
+      "selection_month": "7",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/small-boat-vincent-delecroix"
+      },
+      "title": "Small Boat"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Helen Garner"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "24",
+      "selection_label": "August 2025",
+      "selection_month": "8",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/this-house-of-grief-helen-garner"
+      },
+      "title": "This House Of Grief"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Percival Everett"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "25",
+      "scope_flags": "classic",
+      "selection_label": "September 2025",
+      "selection_month": "9",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/the-trees-percival-everett"
+      },
+      "title": "The Trees"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "David Szalay"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "26",
+      "selection_label": "October 2025",
+      "selection_month": "10",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/flesh-david-szalay"
+      },
+      "title": "Flesh"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Margaret Atwood"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "27",
+      "scope_flags": "memoir",
+      "selection_label": "November 2025",
+      "selection_month": "11",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/the-handmaids-tale-margaret-atwood"
+      },
+      "title": "The Handmaid\u2019s Tale"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Ingvild Rish\u00f8i"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "28",
+      "season": "winter",
+      "selection_label": "December 2025",
+      "selection_month": "12",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/brightly-shining-ingvild-rishoi"
+      },
+      "title": "Brightly Shining"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Mark Ronson"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "29",
+      "scope_flags": "memoir, play",
+      "selection_label": "January 2026",
+      "selection_month": "1",
+      "selection_type": "monthly_pick",
+      "selection_year": "2026",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/night-people-mark-ronson"
+      },
+      "title": "Night People"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Jean-Baptiste Del Amo"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "30",
+      "selection_label": "February 2026",
+      "selection_month": "2",
+      "selection_type": "monthly_pick",
+      "selection_year": "2026",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/the-son-of-man-jean-baptiste-del-amo"
+      },
+      "title": "The Son Of Man"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Roxane Gay"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "31",
+      "scope_flags": "essay_collection",
+      "selection_label": "March 2026",
+      "selection_month": "3",
+      "selection_type": "monthly_pick",
+      "selection_year": "2026",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/bad-feminist-2"
+      },
+      "title": "Bad Feminist"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Jez Butterworth"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "32",
+      "scope_flags": "play",
+      "selection_label": "April 2026",
+      "selection_month": "4",
+      "selection_type": "monthly_pick",
+      "selection_year": "2026",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/jerusalem-2"
+      },
+      "title": "Jerusalem"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Claire Keegan"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "33",
+      "selection_label": "May 2026",
+      "selection_month": "5",
+      "selection_type": "monthly_pick",
+      "selection_year": "2026",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/so-late-in-the-day"
+      },
+      "title": "So Late In The Day"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Kae Tempest"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "34",
+      "scope_flags": "essay_collection, play",
+      "selection_label": "June 2026",
+      "selection_month": "6",
+      "selection_type": "monthly_pick",
+      "selection_year": "2026",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/having-spent-life-seeking-kae-tempest"
+      },
+      "title": "Having Spent Life Seeking"
+    },
+    {
+      "advocate_defender_host_selector": "Dua Lipa",
+      "authors": [
+        "Lea Ypi"
+      ],
+      "club": "Service95 Book Club",
+      "club_scope": "full_monthly_list",
+      "position": "35",
+      "selection_label": "July 2026",
+      "selection_month": "7",
+      "selection_type": "monthly_pick",
+      "selection_year": "2026",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.service95.com/books/free-lea-ypi"
+      },
+      "title": "Free"
+    }
+  ],
+  "fetched_at": "2026-07-15T17:13:55Z",
+  "list_id": "service95_book_club",
+  "list_name": "Service95 Book Club",
+  "match_series": false,
+  "notes": [],
+  "parser": "service95_book_club",
+  "schema_version": 2,
+  "source": {
+    "name": "Service95 Book Club",
+    "source_id": "service95_book_club",
+    "url": "https://www.service95.com/book-club"
+  }
+}

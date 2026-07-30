@@ -82,15 +82,12 @@
         "Ian Irvine"
       ],
       "imported_title": "A Shadow on the Glass",
-      "matched_at": "2026-07-08T22:50:29Z",
-      "matched_authors": [
-        "Sara Douglass"
-      ],
-      "matched_book_id": 9384,
-      "matched_book_ids": [
+      "previous_match_source": "saved/manual override",
+      "previous_matched_book_id": 9384,
+      "previous_matched_book_ids": [
         9384
       ],
-      "matched_books": [
+      "previous_matched_books": [
         {
           "matched_authors": [
             "Sara Douglass"
@@ -99,9 +96,10 @@
           "matched_title": "Pilgrim"
         }
       ],
-      "matched_title": "Pilgrim"
+      "unmatched": true,
+      "unmatched_at": "2026-07-11T00:33:03Z"
     }
   ],
-  "saved_at": "2026-07-08T22:50:29Z",
+  "saved_at": "2026-07-11T00:33:03Z",
   "schema_version": 2
 }

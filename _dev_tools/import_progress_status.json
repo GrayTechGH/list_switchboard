@@ -16,9 +16,9 @@
     ]
   },
   "summary": {
-    "registered_recipes": 396,
-    "automated_passed": 396,
-    "manual_verified": 13
+    "registered_recipes": 395,
+    "automated_passed": 395,
+    "manual_verified": 261
   },
   "recipes": [
     {
@@ -53,98 +53,98 @@
       "source_id": "oprah_book_club",
       "name": "Oprah's Book Club",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "reese_book_club",
       "name": "Reese's Book Club",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "reese_book_club_ya",
       "name": "Reese's Book Club - YA Picks",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "read_with_jenna",
       "name": "Read With Jenna",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "read_with_jenna_jr",
       "name": "Read With Jenna Jr.",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "gma_book_club",
       "name": "GMA Book Club",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "gma_book_club_ya",
       "name": "GMA Book Club YA",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "canada_reads",
       "name": "Canada Reads",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "library_reads",
       "name": "LibraryReads",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "library_reads_bonus_picks",
       "name": "LibraryReads - Bonus Picks",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "library_reads_notable_nonfiction",
       "name": "LibraryReads - Notable Nonfiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "barnes_noble_book_club",
       "name": "Barnes & Noble Book Club",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "service95_book_club",
       "name": "Service95 Book Club",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "richard_judy_book_club",
       "name": "Richard & Judy Book Club",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
@@ -214,504 +214,511 @@
       "source_id": "hugo_awards_novel",
       "name": "Hugo Awards - Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "hugo_awards_novella",
       "name": "Hugo Awards - Novella",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "hugo_awards_series",
       "name": "Hugo Awards - Series",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "hugo_awards_graphic_story_or_comic",
       "name": "Hugo Awards - Graphic Story or Comic",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "hugo_awards_related_work",
       "name": "Hugo Awards - Related Work",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "lodestar_award_young_adult_book",
       "name": "Lodestar Award - Young Adult Book",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "nebula_awards_novel",
       "name": "Nebula Awards - Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "nebula_awards_novella",
       "name": "Nebula Awards - Novella",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "nebula_andre_norton_middle_grade_young_adult",
       "name": "Nebula Awards - Andre Norton Middle Grade/YA",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "nebula_awards_comics",
       "name": "Nebula Awards - Comics",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "locus_annual_sf_novel",
       "name": "Locus - Annual SF Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "locus_annual_fantasy_novel",
       "name": "Locus - Annual Fantasy Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "locus_annual_horror_novel",
       "name": "Locus - Annual Horror Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "locus_annual_young_adult_novel",
       "name": "Locus - Annual Young Adult Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "locus_annual_first_novel",
       "name": "Locus - Annual First Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "locus_annual_translated_novel",
       "name": "Locus - Annual Translated Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "locus_annual_novella",
       "name": "Locus - Annual Novella",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "locus_annual_anthology",
       "name": "Locus - Annual Anthology",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "locus_annual_collection",
       "name": "Locus - Annual Collection",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "locus_annual_nonfiction",
       "name": "Locus - Annual Non-Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "locus_annual_illustrated_and_art_book",
       "name": "Locus - Annual Illustrated and Art Book",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "locus_all_time_1975_novel",
       "name": "Locus - All-Time 1975 Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "locus_all_time_1987_sf_novel",
       "name": "Locus - All-Time 1987 SF Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "locus_all_time_1987_fantasy_novel",
       "name": "Locus - All-Time 1987 Fantasy Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "locus_all_time_1998_sf_novel",
       "name": "Locus - All-Time 1998 SF Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "locus_all_time_1998_fantasy_novel",
       "name": "Locus - All-Time 1998 Fantasy Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "locus_all_time_2012_sf_20th_novel",
       "name": "Locus - All-Time 2012 20th Century SF Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "locus_all_time_2012_fh_20th_novel",
       "name": "Locus - All-Time 2012 20th Century Fantasy/Horror Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "locus_all_time_2012_sf_21st_novel",
       "name": "Locus - All-Time 2012 21st Century SF Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "locus_all_time_2012_fh_21st_novel",
       "name": "Locus - All-Time 2012 21st Century Fantasy/Horror Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "world_fantasy_novel",
       "name": "World Fantasy - Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "world_fantasy_novella",
       "name": "World Fantasy - Novella",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "world_fantasy_anthology",
       "name": "World Fantasy - Anthology",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "world_fantasy_collection",
       "name": "World Fantasy - Collection",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "world_fantasy_collection_anthology",
-      "name": "World Fantasy - Collection/Anthology",
+      "name": "World Fantasy - Collection/Anthology (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "british_fantasy_horror_novel",
       "name": "British Fantasy - Horror Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "british_fantasy_fantasy_novel",
       "name": "British Fantasy - Fantasy Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "british_fantasy_best_novel",
-      "name": "British Fantasy - Best Novel (discontinued)",
+      "name": "British Fantasy - Horror/Fantasy Novel (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "british_fantasy_novella",
       "name": "British Fantasy - Novella",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
+      "notes": ""
+    },
+    {
+      "source_id": "british_fantasy_anthology_collection",
+      "name": "British Fantasy - Anthology/Collection (discontinued)",
+      "automated_status": "passed",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "british_fantasy_anthology",
       "name": "British Fantasy - Anthology",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "british_fantasy_collection",
       "name": "British Fantasy - Collection",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "british_fantasy_nonfiction",
       "name": "British Fantasy - Non-Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "international_horror_guild_novel",
       "name": "International Horror Guild - Novel (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "international_horror_guild_first_novel",
       "name": "International Horror Guild - First Novel (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "international_horror_guild_long_fiction",
       "name": "International Horror Guild - Long Fiction (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "international_horror_guild_mid_length_fiction",
       "name": "International Horror Guild - Mid-Length Fiction (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "international_horror_guild_collection",
       "name": "International Horror Guild - Collection (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "international_horror_guild_anthology",
       "name": "International Horror Guild - Anthology (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "international_horror_guild_nonfiction",
       "name": "International Horror Guild - Non-Fiction (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "international_horror_guild_illustrated_narrative",
       "name": "International Horror Guild - Illustrated Narrative (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "australasian_shadows_novel",
       "name": "Australasian Shadows - Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "australasian_shadows_long_fiction",
       "name": "Australasian Shadows - Long Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "australasian_shadows_collected_work",
       "name": "Australasian Shadows - Collected Work",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "australasian_shadows_edited_work",
       "name": "Australasian Shadows - Edited Work",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "australasian_shadows_graphic_novel",
       "name": "Australasian Shadows - Graphic Novel/Comic",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "australasian_shadows_nonfiction",
       "name": "Australasian Shadows - Non-Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "this_is_horror_novel",
       "name": "This Is Horror - Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "this_is_horror_novella",
       "name": "This Is Horror - Novella",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "this_is_horror_short_story_collection",
       "name": "This Is Horror - Short Story Collection",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "this_is_horror_anthology",
-      "name": "This Is Horror - Anthology",
+      "name": "This Is Horror - Anthology (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "splatterpunk_novel",
       "name": "Splatterpunk - Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "splatterpunk_novella",
       "name": "Splatterpunk - Novella",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "splatterpunk_collection",
       "name": "Splatterpunk - Collection",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "splatterpunk_anthology",
       "name": "Splatterpunk - Anthology",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "ladies_of_horror_fiction_novel",
-      "name": "Ladies of Horror Fiction - Novel",
+      "name": "Ladies of Horror Fiction - Novel (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "ladies_of_horror_fiction_novella",
-      "name": "Ladies of Horror Fiction - Novella",
+      "name": "Ladies of Horror Fiction - Novella (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "ladies_of_horror_fiction_collection",
-      "name": "Ladies of Horror Fiction - Collection",
+      "name": "Ladies of Horror Fiction - Collection (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "ladies_of_horror_fiction_debut",
-      "name": "Ladies of Horror Fiction - Debut",
+      "name": "Ladies of Horror Fiction - Debut (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "ladies_of_horror_fiction_young_adult",
-      "name": "Ladies of Horror Fiction - Young Adult",
+      "name": "Ladies of Horror Fiction - Young Adult (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "ladies_of_horror_fiction_middle_grade",
-      "name": "Ladies of Horror Fiction - Middle Grade",
+      "name": "Ladies of Horror Fiction - Middle Grade (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "ladies_of_horror_fiction_poetry_collection",
-      "name": "Ladies of Horror Fiction - Poetry Collection",
+      "name": "Ladies of Horror Fiction - Poetry Collection (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "ladies_of_horror_fiction_graphic_novel",
-      "name": "Ladies of Horror Fiction - Graphic Novel",
+      "name": "Ladies of Horror Fiction - Graphic Novel (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
@@ -725,35 +732,35 @@
       "source_id": "bsfa_novel",
       "name": "BSFA - Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "bsfa_shorter_fiction",
       "name": "BSFA - Shorter Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "bsfa_collection_anthology",
       "name": "BSFA - Collection/Anthology",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "bsfa_fiction_for_younger_readers",
       "name": "BSFA - Fiction for Younger Readers",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "bsfa_long_nonfiction",
       "name": "BSFA - Long Non-Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
@@ -767,343 +774,343 @@
       "source_id": "mythopoeic_fantasy",
       "name": "Mythopoeic - Fantasy",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "mythopoeic_adult_literature",
       "name": "Mythopoeic - Adult Literature",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "mythopoeic_young_adult_literature",
       "name": "Mythopoeic - Young Adult Literature",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "mythopoeic_childrens_literature",
       "name": "Mythopoeic - Children's Literature",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "bram_stoker_novel",
       "name": "Bram Stoker - Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "bram_stoker_first_novel",
       "name": "Bram Stoker - First Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "bram_stoker_young_adult_novel",
       "name": "Bram Stoker - Young Adult Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "bram_stoker_middle_grade_novel",
       "name": "Bram Stoker - Middle Grade Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "bram_stoker_long_fiction",
       "name": "Bram Stoker - Long Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "bram_stoker_fiction_collection",
       "name": "Bram Stoker - Fiction Collection",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "bram_stoker_anthology",
       "name": "Bram Stoker - Anthology",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "bram_stoker_poetry_collection",
       "name": "Bram Stoker - Poetry Collection",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "bram_stoker_graphic_novel",
       "name": "Bram Stoker - Graphic Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "bram_stoker_nonfiction",
       "name": "Bram Stoker - Nonfiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "shirley_jackson_novel",
       "name": "Shirley Jackson - Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "shirley_jackson_novella",
       "name": "Shirley Jackson - Novella",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "shirley_jackson_single_author_collection",
       "name": "Shirley Jackson - Single-Author Collection",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "shirley_jackson_edited_anthology",
       "name": "Shirley Jackson - Edited Anthology",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "otherwise_tiptree_books_and_series",
       "name": "Otherwise/Tiptree - Books and Series",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "prometheus_novel",
       "name": "Prometheus - Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "prometheus_hall_of_fame",
       "name": "Prometheus - Hall of Fame",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "prometheus_young_adult_honor_roll",
       "name": "Prometheus - Young Adult Honor Roll",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "prometheus_special_awards",
       "name": "Prometheus - Special Awards",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "aurora_novel",
       "name": "Aurora - Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "aurora_ya_novel",
       "name": "Aurora - YA Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "aurora_novelette_novella",
       "name": "Aurora - Novelette/Novella",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "aurora_related_work",
       "name": "Aurora - Related Work",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "aurora_graphic_novel",
       "name": "Aurora - Graphic Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "aurealis_sf_novel",
       "name": "Aurealis - SF Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "aurealis_golden_aurealis_novel",
       "name": "Aurealis - Golden Aurealis Novel (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "aurealis_fantasy_novel",
       "name": "Aurealis - Fantasy Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "aurealis_horror_novel",
       "name": "Aurealis - Horror Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "aurealis_sf_novella",
       "name": "Aurealis - SF Novella",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "aurealis_fantasy_novella",
       "name": "Aurealis - Fantasy Novella",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "aurealis_horror_novella",
       "name": "Aurealis - Horror Novella",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "aurealis_anthology",
       "name": "Aurealis - Anthology",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "aurealis_collection",
       "name": "Aurealis - Collection",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "aurealis_graphic_novel_illustrated_work",
       "name": "Aurealis - Graphic Novel/Illustrated Work",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "aurealis_young_adult_novel",
       "name": "Aurealis - Young Adult Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "aurealis_childrens_book",
       "name": "Aurealis - Children's Book (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "aurealis_childrens_fiction",
       "name": "Aurealis - Children's Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "aurealis_childrens_fiction_words",
       "name": "Aurealis - Children's Fiction (Words) (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "aurealis_childrens_fiction_pictures",
       "name": "Aurealis - Children's Fiction (Pictures) (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "aurealis_childrens_8_12_long_fiction",
       "name": "Aurealis - Children's 8-12 Long Fiction (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "aurealis_childrens_8_12_illustrated_work_picture_book",
       "name": "Aurealis - Children's 8-12 Illustrated Work/Picture Book (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "aurealis_sara_douglass_book_series_award",
       "name": "Aurealis - Sara Douglass Book Series Award",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "ditmar_novel",
       "name": "Ditmar - Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "ditmar_novella_novelette",
       "name": "Ditmar - Novella/Novelette",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "ditmar_collected_work",
       "name": "Ditmar - Collected Work",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
@@ -1145,203 +1152,203 @@
       "source_id": "nommo_novel",
       "name": "Nommo - Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "nommo_novella",
       "name": "Nommo - Novella",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "nommo_graphic_novel",
       "name": "Nommo - Graphic Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "edgar_award_novel",
       "name": "Edgar Award - Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "edgar_award_first_novel",
       "name": "Edgar Award - First Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "edgar_award_paperback_original",
       "name": "Edgar Award - Paperback Original",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "edgar_award_fact_crime",
       "name": "Edgar Award - Fact Crime",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "edgar_award_critical_biographical_work",
       "name": "Edgar Award - Critical/Biographical Work",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "edgar_award_juvenile",
       "name": "Edgar Award - Juvenile",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "edgar_award_young_adult",
       "name": "Edgar Award - Young Adult",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "edgar_award_mary_higgins_clark_award",
       "name": "Edgar Award - Mary Higgins Clark Award",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "edgar_award_lilian_jackson_braun_award",
       "name": "Edgar Award - Lilian Jackson Braun Award",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "cwa_dagger_gold",
       "name": "CWA Dagger - Gold Dagger",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "cwa_dagger_ian_fleming_steel",
       "name": "CWA Dagger - Ian Fleming Steel Dagger",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "cwa_dagger_historical",
       "name": "CWA Dagger - Historical Dagger",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "cwa_dagger_crime_fiction_in_translation",
       "name": "CWA Dagger - Crime Fiction in Translation",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "itw_thriller_award_standalone_thriller_novel",
       "name": "ITW Thriller Award - Standalone Thriller Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "itw_thriller_award_standalone_mystery_novel",
       "name": "ITW Thriller Award - Standalone Mystery Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "itw_thriller_award_series_novel",
       "name": "ITW Thriller Award - Series Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "itw_thriller_award_first_novel",
       "name": "ITW Thriller Award - First Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "itw_thriller_award_young_adult_novel",
       "name": "ITW Thriller Award - Young Adult Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "itw_thriller_award_hardcover_novel",
       "name": "ITW Thriller Award - Hardcover Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "itw_thriller_award_paperback_original_novel",
       "name": "ITW Thriller Award - Paperback Original Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "itw_thriller_award_e_book_original_novel",
       "name": "ITW Thriller Award - E-Book Original Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "itw_thriller_award_audiobook",
       "name": "ITW Thriller Award - Audiobook",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "anthony_award_anthology_collection",
       "name": "Anthony Award - Anthology/Collection",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "agatha_award_best_novel",
       "name": "Agatha Award - Contemporary Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "agatha_award_first_novel",
       "name": "Agatha Award - Best First Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "agatha_award_historical_novel",
       "name": "Agatha Award - Historical Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
@@ -1355,105 +1362,105 @@
       "source_id": "agatha_award_childrens_ya",
       "name": "Agatha Award - Children's/YA",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "macavity_award_mystery_novel",
       "name": "Macavity Award - Mystery Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "macavity_award_first_mystery",
       "name": "Macavity Award - First Mystery",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "macavity_award_historical_mystery",
       "name": "Macavity Award - Historical Mystery",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "macavity_award_nonfiction_critical",
       "name": "Macavity Award - Nonfiction/Critical",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "shamus_award_pi_novel",
       "name": "Shamus Award - P.I. Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "shamus_award_paperback_original",
       "name": "Shamus Award - Paperback Original",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "shamus_award_first_pi_novel",
       "name": "Shamus Award - First P.I. Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "barry_award_mystery_novel",
       "name": "Barry Award - Mystery Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "barry_award_first_mystery_novel",
       "name": "Barry Award - First Mystery Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "barry_award_paperback_original",
       "name": "Barry Award - Paperback Original",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "barry_award_thriller",
       "name": "Barry Award - Thriller",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "barry_award_british_crime_novel",
       "name": "Barry Award - British Crime Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "hammett_prize",
       "name": "Hammett Prize",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "nero_award",
       "name": "Nero Award",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
@@ -1474,196 +1481,196 @@
       "source_id": "crime_writers_of_canada_award_novel",
       "name": "Crime Writers of Canada Award - Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "crime_writers_of_canada_award_first_novel",
       "name": "Crime Writers of Canada Award - First Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "crime_writers_of_canada_award_nonfiction",
       "name": "Crime Writers of Canada Award - Nonfiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "crime_writers_of_canada_award_juvenile_young_adult",
       "name": "Crime Writers of Canada Award - Juvenile/Young Adult",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "crime_writers_of_canada_award_french_language_crime_book",
       "name": "Crime Writers of Canada Award - French Language Crime Book",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "davitt_award_adult_novel",
       "name": "Davitt Award - Adult Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "davitt_award_debut_novel",
       "name": "Davitt Award - Debut Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "davitt_award_non_fiction",
       "name": "Davitt Award - Non-Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "davitt_award_young_adult_novel",
       "name": "Davitt Award - Young Adult Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "davitt_award_childrens_novel",
       "name": "Davitt Award - Children's Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "dilys_award",
       "name": "Dilys Award (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "gumshoe_award_mystery",
       "name": "Gumshoe Award - Mystery (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "gumshoe_award_thriller",
       "name": "Gumshoe Award - Thriller (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "gumshoe_award_first_novel",
       "name": "Gumshoe Award - First Novel (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "gumshoe_award_european_crime_novel",
       "name": "Gumshoe Award - European Crime Novel (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "lefty_award_humorous_mystery_novel",
       "name": "Lefty Award - Humorous Mystery Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "lefty_award_historical_mystery_novel",
       "name": "Lefty Award - Historical Mystery Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "lefty_award_mystery_novel",
       "name": "Lefty Award - Mystery Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "lefty_award_debut_mystery_novel",
       "name": "Lefty Award - Debut Mystery Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "ned_kelly_award_crime_fiction",
       "name": "Ned Kelly Award - Crime Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "ned_kelly_award_debut_crime_fiction",
       "name": "Ned Kelly Award - Debut Crime Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "ned_kelly_award_true_crime",
       "name": "Ned Kelly Award - True Crime",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "ned_kelly_award_international_crime_fiction",
       "name": "Ned Kelly Award - International Crime Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "ngaio_marsh_award_crime_novel",
       "name": "Ngaio Marsh Award - Crime Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "ngaio_marsh_award_first_novel",
       "name": "Ngaio Marsh Award - First Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "ngaio_marsh_award_non_fiction",
       "name": "Ngaio Marsh Award - Non-Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "ngaio_marsh_award_younger_readers",
       "name": "Ngaio Marsh Award - Younger Readers",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "theakston_old_peculier_crime_novel_of_the_year",
       "name": "Theakston Old Peculier Crime Novel of the Year",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
@@ -2426,203 +2433,189 @@
       "source_id": "goodreads_choice_awards_fiction",
       "name": "Goodreads Choice Awards - Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_historical_fiction",
       "name": "Goodreads Choice Awards - Historical Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_mystery_thriller",
       "name": "Goodreads Choice Awards - Mystery & Thriller",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_romance",
       "name": "Goodreads Choice Awards - Romance",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_romantasy",
       "name": "Goodreads Choice Awards - Romantasy",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_fantasy",
       "name": "Goodreads Choice Awards - Fantasy",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_science_fiction",
       "name": "Goodreads Choice Awards - Science Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_horror",
       "name": "Goodreads Choice Awards - Horror",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_debut_novel",
       "name": "Goodreads Choice Awards - Debut Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_audiobook",
       "name": "Goodreads Choice Awards - Audiobook",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_young_adult_fiction",
       "name": "Goodreads Choice Awards - Young Adult Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_young_adult_fantasy_science_fiction",
       "name": "Goodreads Choice Awards - Young Adult Fantasy & Science Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_nonfiction",
       "name": "Goodreads Choice Awards - Nonfiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_memoir",
       "name": "Goodreads Choice Awards - Memoir",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_history_biography",
       "name": "Goodreads Choice Awards - History & Biography",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": ""
-    },
-    {
-      "source_id": "goodreads_choice_awards_young_adult_series",
-      "name": "Goodreads Choice Awards - Young Adult Series (discontinued)",
-      "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_childrens_middle_grade",
       "name": "Goodreads Choice Awards - Children's & Middle Grade (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_picture_book",
       "name": "Goodreads Choice Awards - Picture Book (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_science_technology",
       "name": "Goodreads Choice Awards - Science & Technology (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_business",
       "name": "Goodreads Choice Awards - Business (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_food_cooking",
       "name": "Goodreads Choice Awards - Food & Cooking (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_travel_outdoors",
       "name": "Goodreads Choice Awards - Travel & Outdoors (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_graphic_novels_comics",
       "name": "Goodreads Choice Awards - Graphic Novels & Comics (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_poetry",
       "name": "Goodreads Choice Awards - Poetry (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_humor",
       "name": "Goodreads Choice Awards - Humor (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_paranormal_fantasy",
       "name": "Goodreads Choice Awards - Paranormal Fantasy (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": ""
-    },
-    {
-      "source_id": "goodreads_choice_awards_chick_lit",
-      "name": "Goodreads Choice Awards - Chick Lit (discontinued)",
-      "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_best_book",
       "name": "Goodreads Choice Awards - Best Book (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "goodreads_choice_awards_best_of_the_best",
-      "name": "Goodreads Choice Awards - Best of the Best (discontinued)",
+      "name": "Goodreads Choice Awards - Best of the Best",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
@@ -2741,56 +2734,56 @@
       "source_id": "anthony_award_childrens_ya",
       "name": "Anthony Award - Children's/YA",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "anthony_award_cozy_humorous_mystery",
       "name": "Anthony Award - Cozy/Humorous Mystery",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "anthony_award_critical_nonfiction_work",
       "name": "Anthony Award - Critical/Nonfiction Work",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "anthony_award_first_mystery",
       "name": "Anthony Award - First Mystery",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "anthony_award_historical_mystery",
       "name": "Anthony Award - Historical Mystery",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "anthony_award_mystery_novel",
       "name": "Anthony Award - Mystery Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "anthony_award_paperback_e_book_audiobook",
       "name": "Anthony Award - Paperback/E-book/Audiobook",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     },
     {
       "source_id": "anthony_award_paranormal_mystery",
       "name": "Anthony Award - Paranormal Mystery",
       "automated_status": "passed",
-      "manual_status": "not_checked",
+      "manual_status": "passed",
       "notes": ""
     }
   ]

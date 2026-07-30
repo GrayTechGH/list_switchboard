@@ -150,6 +150,13 @@ class DragonsJetpacksParser(ListParserBase):
       soup, table, headers = self.require_real_shelf_page(html, page_url)
       estimated_pages = max(
         estimated_pages, self.pagination_page_count(soup, page_url))
+      progress_total = max(page_number, estimated_pages)
+      if progress is not None:
+        progress(
+          page_number - 1,
+          progress_total,
+          f'Parsing {NAME} shelf page {page_number} of {progress_total} '
+          f'({len(rows)} selections found)')
       page_rows = table.find_all('tr', id=GROUP_BOOK_PATTERN)
       for row in page_rows:
         record_id = GROUP_BOOK_PATTERN.match(row.get('id', '')).group(1)
@@ -166,8 +173,9 @@ class DragonsJetpacksParser(ListParserBase):
       if progress is not None:
         progress(
           page_number,
-          max(page_number, estimated_pages),
-          f'Parsed {NAME} shelf page {page_number}')
+          progress_total,
+          f'Parsed {NAME} shelf page {page_number} of {progress_total} '
+          f'({len(rows)} selections found)')
       next_url = self.next_page_url(soup, page_url)
       if not next_url:
         break
@@ -177,6 +185,12 @@ class DragonsJetpacksParser(ListParserBase):
         raise ValueError(
           f'{NAME} pagination exceeded the {MAX_PAGES}-page safety limit.')
       try:
+        if progress is not None:
+          progress(
+            page_number,
+            progress_total,
+            f'Fetching {NAME} shelf page {page_number + 1} of '
+            f'{progress_total} ({len(rows)} selections found)')
         html = fetch_url(next_url)
       except Exception as err:
         if fetch_error is not None:

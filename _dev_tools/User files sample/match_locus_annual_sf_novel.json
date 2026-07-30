@@ -1769,7 +1769,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-08T05:57:54Z"
+      "unmatched_at": "2026-07-11T00:47:27Z"
     },
     {
       "entry_key": "time manifold 1|stephen baxter",
@@ -2606,7 +2606,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-08T05:57:54Z"
+      "unmatched_at": "2026-07-11T00:47:27Z"
     },
     {
       "entry_key": "hunter of worlds|c j cherryh",
@@ -2620,7 +2620,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-08T05:57:54Z"
+      "unmatched_at": "2026-07-11T00:47:27Z"
     },
     {
       "entry_key": "the faded sun shon jir|c j cherryh",
@@ -2634,7 +2634,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-08T05:57:54Z"
+      "unmatched_at": "2026-07-11T00:47:27Z"
     },
     {
       "entry_key": "the faded sun kutath|c j cherryh",
@@ -2648,7 +2648,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-08T05:57:54Z"
+      "unmatched_at": "2026-07-11T00:47:27Z"
     },
     {
       "entry_key": "cuckoo s egg|c j cherryh",
@@ -2662,7 +2662,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-08T05:57:54Z"
+      "unmatched_at": "2026-07-11T00:47:27Z"
     },
     {
       "entry_key": "heavy time|c j cherryh",
@@ -2676,7 +2676,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-08T05:57:54Z"
+      "unmatched_at": "2026-07-11T00:47:27Z"
     },
     {
       "entry_key": "cald of the long sun|gene wolfe",
@@ -2684,15 +2684,12 @@
         "Gene Wolfe"
       ],
       "imported_title": "Cald\u00e9 of the Long Sun",
-      "matched_at": "2026-07-08T05:57:54Z",
-      "matched_authors": [
-        "Gene Wolfe"
-      ],
-      "matched_book_id": 38627,
-      "matched_book_ids": [
+      "previous_match_source": "saved/manual override",
+      "previous_matched_book_id": 38627,
+      "previous_matched_book_ids": [
         38627
       ],
-      "matched_books": [
+      "previous_matched_books": [
         {
           "matched_authors": [
             "Gene Wolfe"
@@ -2701,7 +2698,8 @@
           "matched_title": "Epiphany of the Long Sun (Books 8-9)"
         }
       ],
-      "matched_title": "Epiphany of the Long Sun (Books 8-9)"
+      "unmatched": true,
+      "unmatched_at": "2026-07-11T00:47:27Z"
     },
     {
       "entry_key": "exodus from the long sun|gene wolfe",
@@ -2715,7 +2713,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-08T05:57:54Z"
+      "unmatched_at": "2026-07-11T00:47:27Z"
     },
     {
       "entry_key": "worldwar tilting the balance|harry turtledove",
@@ -2729,7 +2727,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-08T05:57:54Z"
+      "unmatched_at": "2026-07-11T00:47:27Z"
     },
     {
       "entry_key": "the book of dreams|jack vance",
@@ -2743,7 +2741,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-08T05:57:54Z"
+      "unmatched_at": "2026-07-11T00:47:27Z"
     },
     {
       "entry_key": "roderick at random|john sladek",
@@ -2757,7 +2755,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-08T05:57:54Z"
+      "unmatched_at": "2026-07-11T00:47:27Z"
     },
     {
       "entry_key": "the smoke ring|larry niven",
@@ -2796,7 +2794,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-08T05:57:54Z"
+      "unmatched_at": "2026-07-11T00:47:27Z"
     },
     {
       "entry_key": "warriors of dawn|m a foster",
@@ -2810,7 +2808,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-08T05:57:54Z"
+      "unmatched_at": "2026-07-11T00:47:27Z"
     },
     {
       "entry_key": "clay s ark|octavia e butler",
@@ -2824,7 +2822,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-08T05:57:54Z"
+      "unmatched_at": "2026-07-11T00:47:27Z"
     },
     {
       "entry_key": "a planet called treason|orson scott card",
@@ -2863,7 +2861,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-08T05:57:54Z"
+      "unmatched_at": "2026-07-11T00:47:27Z"
     },
     {
       "entry_key": "sign of the unicorn|roger zelazny",
@@ -2877,7 +2875,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-08T05:57:54Z"
+      "unmatched_at": "2026-07-11T00:47:27Z"
     },
     {
       "entry_key": "the hand of oberon|roger zelazny",
@@ -2891,7 +2889,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-08T05:57:54Z"
+      "unmatched_at": "2026-07-11T00:47:27Z"
     },
     {
       "entry_key": "the courts of chaos|roger zelazny",
@@ -2905,7 +2903,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-08T05:57:54Z"
+      "unmatched_at": "2026-07-11T00:47:27Z"
     },
     {
       "entry_key": "stardance ii|spider robinson jeanne robinson",
@@ -2922,6 +2920,6 @@
       "unmatched_at": "2026-07-08T05:57:54Z"
     }
   ],
-  "saved_at": "2026-07-08T05:57:54Z",
+  "saved_at": "2026-07-11T00:47:27Z",
   "schema_version": 2
 }

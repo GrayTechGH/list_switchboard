@@ -1,0 +1,2549 @@
+{
+  "append_state": {
+    "entry_count": 189,
+    "last_entry_key": "codebreaker|jay martel",
+    "last_position": "2026.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Sonia Levitin"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1989",
+      "category": "Best Young Adult",
+      "position": "1989",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Incident at Loring Groves"
+    },
+    {
+      "authors": [
+        "Ronald Kidd"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1989",
+      "category": "Best Young Adult",
+      "position": "1989.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Second Fiddle"
+    },
+    {
+      "authors": [
+        "Philip Pullman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1989",
+      "category": "Best Young Adult",
+      "position": "1989.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Shadow in the North"
+    },
+    {
+      "authors": [
+        "Todd Strasser"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1989",
+      "category": "Best Young Adult",
+      "position": "1989.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "The Accident"
+    },
+    {
+      "authors": [
+        "Barbara Brenner"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1989",
+      "category": "Best Young Adult",
+      "position": "1989.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "The Falcon Sting"
+    },
+    {
+      "authors": [
+        "Alane Ferguson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1990",
+      "category": "Best Young Adult",
+      "position": "1990",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Show Me the Evidence"
+    },
+    {
+      "authors": [
+        "M.E. Kerr"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1990",
+      "category": "Best Young Adult",
+      "position": "1990.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Fell Back"
+    },
+    {
+      "authors": [
+        "Christopher Pike"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1990",
+      "category": "Best Young Adult",
+      "position": "1990.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Remember Me"
+    },
+    {
+      "authors": [
+        "Theodore Taylor"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1990",
+      "category": "Best Young Adult",
+      "position": "1990.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Sniper"
+    },
+    {
+      "authors": [
+        "Avi"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1990",
+      "category": "Best Young Adult",
+      "position": "1990.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "The Man Who Was Poe"
+    },
+    {
+      "authors": [
+        "Chap Reaver"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1991",
+      "category": "Best Young Adult",
+      "position": "1991",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Mote"
+    },
+    {
+      "authors": [
+        "Stephen Schwandt"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1991",
+      "category": "Best Young Adult",
+      "position": "1991.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Guilt Trip"
+    },
+    {
+      "authors": [
+        "Gloria Whelan"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1991",
+      "category": "Best Young Adult",
+      "position": "1991.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "The Secret Keeper"
+    },
+    {
+      "authors": [
+        "Ernest Pintoff"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1991",
+      "category": "Best Young Adult",
+      "position": "1991.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Zachary"
+    },
+    {
+      "authors": [
+        "Theodore Taylor"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1992",
+      "category": "Best Young Adult",
+      "position": "1992",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "The Weirdo"
+    },
+    {
+      "authors": [
+        "Michael Cadnum"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1992",
+      "category": "Best Young Adult",
+      "position": "1992.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Calling Home"
+    },
+    {
+      "authors": [
+        "Peter Nelson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1992",
+      "category": "Best Young Adult",
+      "position": "1992.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Scarface"
+    },
+    {
+      "authors": [
+        "Patricia Windsor"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1992",
+      "category": "Best Young Adult",
+      "position": "1992.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "The Christmas Killer"
+    },
+    {
+      "authors": [
+        "Robert Cormier"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1992",
+      "category": "Best Young Adult",
+      "position": "1992.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "We All Fall Down"
+    },
+    {
+      "authors": [
+        "Chap Reaver"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1993",
+      "category": "Best Young Adult",
+      "position": "1993",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "A Little Bit Dead"
+    },
+    {
+      "authors": [
+        "Michael Cadnum"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1993",
+      "category": "Best Young Adult",
+      "position": "1993.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Breaking the Fall"
+    },
+    {
+      "authors": [
+        "Malcolm Rose"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1993",
+      "category": "Best Young Adult",
+      "position": "1993.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "The Highest Form of Killing"
+    },
+    {
+      "authors": [
+        "Joann Mazzio"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1993",
+      "category": "Best Young Adult",
+      "position": "1993.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "The One Who Came Back"
+    },
+    {
+      "authors": [
+        "Joan Lowery Nixon"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1993",
+      "category": "Best Young Adult",
+      "position": "1993.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "The Weekend Was Murder"
+    },
+    {
+      "authors": [
+        "Joan Lowery Nixon"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1994",
+      "category": "Best Young Adult",
+      "position": "1994",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "The Name of the Game Was Murder"
+    },
+    {
+      "authors": [
+        "Bebe Faas Rice"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1994",
+      "category": "Best Young Adult",
+      "position": "1994.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Class Trip"
+    },
+    {
+      "authors": [
+        "Richie Tankersley Cusick"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1994",
+      "category": "Best Young Adult",
+      "position": "1994.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Help Wanted"
+    },
+    {
+      "authors": [
+        "Patricia H. Rushford"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1994",
+      "category": "Best Young Adult",
+      "position": "1994.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Silent Witness"
+    },
+    {
+      "authors": [
+        "Gary Crew"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1994",
+      "category": "Best Young Adult",
+      "position": "1994.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Strange Objects"
+    },
+    {
+      "authors": [
+        "Nancy Springer"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1995",
+      "category": "Best Young Adult",
+      "position": "1995",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Toughing It"
+    },
+    {
+      "authors": [
+        "Kathryn Reiss"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1995",
+      "category": "Best Young Adult",
+      "position": "1995.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Pale Phoenix"
+    },
+    {
+      "authors": [
+        "Alane Ferguson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1995",
+      "category": "Best Young Adult",
+      "position": "1995.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Poison"
+    },
+    {
+      "authors": [
+        "Joan Lowery Nixon"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1995",
+      "category": "Best Young Adult",
+      "position": "1995.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Shadowmaker"
+    },
+    {
+      "authors": [
+        "Christopher Pike"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1995",
+      "category": "Best Young Adult",
+      "position": "1995.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "The Midnight Club"
+    },
+    {
+      "authors": [
+        "Rob MacGregor"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1996",
+      "category": "Best Young Adult",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Prophecy Rock"
+    },
+    {
+      "authors": [
+        "Gary Crew"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1996",
+      "category": "Best Young Adult",
+      "position": "1996.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Angel's Gate"
+    },
+    {
+      "authors": [
+        "Robert Cormier"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1996",
+      "category": "Best Young Adult",
+      "position": "1996.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "In the Middle of the Night"
+    },
+    {
+      "authors": [
+        "Joan Lowery Nixon"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1996",
+      "category": "Best Young Adult",
+      "position": "1996.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Spirit Seeker"
+    },
+    {
+      "authors": [
+        "Eve Bunting"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1996",
+      "category": "Best Young Adult",
+      "position": "1996.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Spying on Miss Muller"
+    },
+    {
+      "authors": [
+        "Willo Davis Roberts"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1997",
+      "category": "Best Young Adult",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Twisted Summer"
+    },
+    {
+      "authors": [
+        "Daniel Hayes"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1997",
+      "category": "Best Young Adult",
+      "position": "1997.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Flyers"
+    },
+    {
+      "authors": [
+        "Rob MacGregor"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1997",
+      "category": "Best Young Adult",
+      "position": "1997.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Hawk Moon"
+    },
+    {
+      "authors": [
+        "Peter Hautman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1997",
+      "category": "Best Young Adult",
+      "position": "1997.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Mr. Was"
+    },
+    {
+      "authors": [
+        "Mel Glenn"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1997",
+      "category": "Best Young Adult",
+      "position": "1997.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Who Killed Mr. Chippendale?"
+    },
+    {
+      "authors": [
+        "Will Hobbs"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1998",
+      "category": "Best Young Adult",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Ghost Canoe"
+    },
+    {
+      "authors": [
+        "Marilyn Sanger"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1998",
+      "category": "Best Young Adult",
+      "position": "1998.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Deal with a Ghost"
+    },
+    {
+      "authors": [
+        "Edward Bloor"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1998",
+      "category": "Best Young Adult",
+      "position": "1998.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Tangerine"
+    },
+    {
+      "authors": [
+        "Marsha Qualey"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1998",
+      "category": "Best Young Adult",
+      "position": "1998.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Thin Ice"
+    },
+    {
+      "authors": [
+        "Sonia Levitin"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1998",
+      "category": "Best Young Adult",
+      "position": "1998.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Yesterday's Child"
+    },
+    {
+      "authors": [
+        "Nancy Werlin"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1999",
+      "category": "Best Young Adult",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "The Killer's Cousin"
+    },
+    {
+      "authors": [
+        "Katharine Jay Bacon"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1999",
+      "category": "Best Young Adult",
+      "position": "1999.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Finn"
+    },
+    {
+      "authors": [
+        "Shelley Sykes"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1999",
+      "category": "Best Young Adult",
+      "position": "1999.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "For Mike"
+    },
+    {
+      "authors": [
+        "Kathryn Reiss"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1999",
+      "category": "Best Young Adult",
+      "position": "1999.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Paperquake"
+    },
+    {
+      "authors": [
+        "Will Hobbs"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1999",
+      "category": "Best Young Adult",
+      "position": "1999.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "The Maze"
+    },
+    {
+      "authors": [
+        "Vivian Vande Velde"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2000",
+      "category": "Best Young Adult",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Never Trust a Dead Man"
+    },
+    {
+      "authors": [
+        "Walter Dean Myers"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2000",
+      "category": "Best Young Adult",
+      "position": "2000.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Monster"
+    },
+    {
+      "authors": [
+        "Laurie Halse Anderson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2000",
+      "category": "Best Young Adult",
+      "position": "2000.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Speak"
+    },
+    {
+      "authors": [
+        "Vicki Cameron"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2000",
+      "category": "Best Young Adult",
+      "position": "2000.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "That Kind of Money"
+    },
+    {
+      "authors": [
+        "Dorothy Hoobler",
+        "Thomas Hoobler"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2000",
+      "category": "Best Young Adult",
+      "position": "2000.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "The Ghost in the Tokaido Inn"
+    },
+    {
+      "authors": [
+        "Elaine Marie Alphin"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2001",
+      "category": "Best Young Adult",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Counterfeit Son"
+    },
+    {
+      "authors": [
+        "Nancy Werlin"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2001",
+      "category": "Best Young Adult",
+      "position": "2001.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Locked Inside"
+    },
+    {
+      "authors": [
+        "E.L. Konigsburg"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2001",
+      "category": "Best Young Adult",
+      "position": "2001.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Silent to the Bone"
+    },
+    {
+      "authors": [
+        "Carol Plum-Ucci"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2001",
+      "category": "Best Young Adult",
+      "position": "2001.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "The Body of Christopher Creed"
+    },
+    {
+      "authors": [
+        "Tim Wynne-Jones"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2002",
+      "category": "Best Young Adult",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "The Boy in the Burning House"
+    },
+    {
+      "authors": [
+        "Elizabeth Chandler"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2002",
+      "category": "Best Young Adult",
+      "position": "2002.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Dark Secrets Don't Tell"
+    },
+    {
+      "authors": [
+        "Harriet K. Feder"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2002",
+      "category": "Best Young Adult",
+      "position": "2002.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Death on Sacred Ground"
+    },
+    {
+      "authors": [
+        "Joyce McDonald"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2002",
+      "category": "Best Young Adult",
+      "position": "2002.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Shades of Simon Gray"
+    },
+    {
+      "authors": [
+        "John C. Ford"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2002",
+      "category": "Best Young Adult",
+      "position": "2002.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "The Morgue and Me"
+    },
+    {
+      "authors": [
+        "Marcus Sedgwick"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2002",
+      "category": "Best Young Adult",
+      "position": "2002.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Witch Hill"
+    },
+    {
+      "authors": [
+        "Daniel Parker"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2003",
+      "category": "Best Young Adult",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "The Wessex Papers, Vols. 1-3"
+    },
+    {
+      "authors": [
+        "Nan Willard Cappo"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2003",
+      "category": "Best Young Adult",
+      "position": "2003.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Cheating Lessons"
+    },
+    {
+      "authors": [
+        "Mark Delaney"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2003",
+      "category": "Best Young Adult",
+      "position": "2003.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Hit and Run"
+    },
+    {
+      "authors": [
+        "Jenny Carroll"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2003",
+      "category": "Best Young Adult",
+      "position": "2003.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Safe House"
+    },
+    {
+      "authors": [
+        "Marianna Heusler"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2003",
+      "category": "Best Young Adult",
+      "position": "2003.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "The Night the Penningtons Vanished"
+    },
+    {
+      "authors": [
+        "Graham McNamee"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2004",
+      "category": "Best Young Adult",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Acceleration"
+    },
+    {
+      "authors": [
+        "Chris Priestly"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2004",
+      "category": "Best Young Adult",
+      "position": "2004.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Death and the Arrow"
+    },
+    {
+      "authors": [
+        "Bridget Crowley"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2004",
+      "category": "Best Young Adult",
+      "position": "2004.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Feast of Fools"
+    },
+    {
+      "authors": [
+        "Janet Anderson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2004",
+      "category": "Best Young Adult",
+      "position": "2004.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "The Last Treasure"
+    },
+    {
+      "authors": [
+        "Libby Sternberg"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2004",
+      "category": "Best Young Adult",
+      "position": "2004.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Uncovering Sadie's Secrets"
+    },
+    {
+      "authors": [
+        "Dorothy Hoobler",
+        "Thomas Hoobler"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2005",
+      "category": "Best Young Adult",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "In Darkness, Death"
+    },
+    {
+      "authors": [
+        "Kate Morgenroth"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2005",
+      "category": "Best Young Adult",
+      "position": "2005.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Jude"
+    },
+    {
+      "authors": [
+        "Lee Weatherly"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2005",
+      "category": "Best Young Adult",
+      "position": "2005.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Missing Abby"
+    },
+    {
+      "authors": [
+        "Edward Bloor"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2005",
+      "category": "Best Young Adult",
+      "position": "2005.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Story Time"
+    },
+    {
+      "authors": [
+        "Marcus Sedgwick"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2005",
+      "category": "Best Young Adult",
+      "position": "2005.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "The Book of Dead Days"
+    },
+    {
+      "authors": [
+        "John Feinstein"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2006",
+      "category": "Best Young Adult",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Last Shot"
+    },
+    {
+      "authors": [
+        "Peter Abrahams"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2006",
+      "category": "Best Young Adult",
+      "position": "2006.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Down the Rabbit Hole"
+    },
+    {
+      "authors": [
+        "Vicki Grant"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2006",
+      "category": "Best Young Adult",
+      "position": "2006.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Quid Pro Quo"
+    },
+    {
+      "authors": [
+        "Michael Spradlin"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2006",
+      "category": "Best Young Adult",
+      "position": "2006.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Spy Goddess, Book One: Live & Let Shop"
+    },
+    {
+      "authors": [
+        "Charlie Higson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2006",
+      "category": "Best Young Adult",
+      "position": "2006.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://edgarawards.com/category-list-best-young-adult/?instance=1&listpage=2"
+      },
+      "title": "Young Bond, Book One: Silverfin"
+    },
+    {
+      "authors": [
+        "Robin Merrow MacCready"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2007",
+      "category": "Best Young Adult",
+      "position": "2007",
+      "result": "winner",
+      "title": "Buried"
+    },
+    {
+      "authors": [
+        "Mariah Fredericks"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2007",
+      "category": "Best Young Adult",
+      "position": "2007.01",
+      "result": "nominee",
+      "title": "Crunch Time"
+    },
+    {
+      "authors": [
+        "Alane Ferguson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2007",
+      "category": "Best Young Adult",
+      "position": "2007.02",
+      "result": "nominee",
+      "title": "The Christopher Killer"
+    },
+    {
+      "authors": [
+        "Carol Plum-Ucci"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2007",
+      "category": "Best Young Adult",
+      "position": "2007.03",
+      "result": "nominee",
+      "title": "The Night My Sister Went Missing"
+    },
+    {
+      "authors": [
+        "Kevin Brooks"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2007",
+      "category": "Best Young Adult",
+      "position": "2007.04",
+      "result": "nominee",
+      "title": "The Road of the Dead"
+    },
+    {
+      "authors": [
+        "Tedd Arnold"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2008",
+      "category": "Best Young Adult",
+      "position": "2008",
+      "result": "winner",
+      "title": "Rat Life"
+    },
+    {
+      "authors": [
+        "S. A. Harazin"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2008",
+      "category": "Best Young Adult",
+      "position": "2008.01",
+      "result": "nominee",
+      "title": "Blood Brothers"
+    },
+    {
+      "authors": [
+        "Caroline B. Cooney"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2008",
+      "category": "Best Young Adult",
+      "position": "2008.02",
+      "result": "nominee",
+      "title": "Diamonds in the Shadows"
+    },
+    {
+      "authors": [
+        "Jeffry W. Johnston"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2008",
+      "category": "Best Young Adult",
+      "position": "2008.03",
+      "result": "nominee",
+      "title": "Fragments"
+    },
+    {
+      "authors": [
+        "M. Sindy Felin"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2008",
+      "category": "Best Young Adult",
+      "position": "2008.04",
+      "result": "nominee",
+      "title": "Touching Snow"
+    },
+    {
+      "authors": [
+        "John Green"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2009",
+      "category": "Best Young Adult",
+      "position": "2009",
+      "result": "winner",
+      "title": "Paper Towns"
+    },
+    {
+      "authors": [
+        "Siobhan Dowd"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2009",
+      "category": "Best Young Adult",
+      "position": "2009.01",
+      "result": "nominee",
+      "title": "Bog Child"
+    },
+    {
+      "authors": [
+        "Susan Juby"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2009",
+      "category": "Best Young Adult",
+      "position": "2009.02",
+      "result": "nominee",
+      "title": "Getting the Girl"
+    },
+    {
+      "authors": [
+        "Jack D. Ferraiolo"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2009",
+      "category": "Best Young Adult",
+      "position": "2009.03",
+      "result": "nominee",
+      "title": "The Big Splash"
+    },
+    {
+      "authors": [
+        "Margot McDonnell"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2009",
+      "category": "Best Young Adult",
+      "position": "2009.04",
+      "result": "nominee",
+      "title": "Torn to Pieces"
+    },
+    {
+      "authors": [
+        "Peter Abrahams"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2010",
+      "category": "Best Young Adult",
+      "position": "2010",
+      "result": "winner",
+      "title": "Reality Check"
+    },
+    {
+      "authors": [
+        "Caroline B. Cooney"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2010",
+      "category": "Best Young Adult",
+      "position": "2010.01",
+      "result": "nominee",
+      "title": "If the Witness Lied"
+    },
+    {
+      "authors": [
+        "Dene Low"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2010",
+      "category": "Best Young Adult",
+      "position": "2010.02",
+      "result": "nominee",
+      "title": "Petronella Saves Nearly Everyone"
+    },
+    {
+      "authors": [
+        "Saundra Mitchell"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2010",
+      "category": "Best Young Adult",
+      "position": "2010.03",
+      "result": "nominee",
+      "title": "Shadowed Summer"
+    },
+    {
+      "authors": [
+        "John C. Ford"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2010",
+      "category": "Best Young Adult",
+      "position": "2010.04",
+      "result": "nominee",
+      "title": "The Morgue and Me"
+    },
+    {
+      "authors": [
+        "Charlie Price"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2011",
+      "category": "Best Young Adult",
+      "position": "2011",
+      "result": "winner",
+      "title": "The Interrogation of Gabriel James"
+    },
+    {
+      "authors": [
+        "Barnabas Miller",
+        "Jordan Orlando"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2011",
+      "category": "Best Young Adult",
+      "position": "2011.01",
+      "result": "nominee",
+      "title": "7 Souls"
+    },
+    {
+      "authors": [
+        "Robert Paul Weston"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2011",
+      "category": "Best Young Adult",
+      "position": "2011.02",
+      "result": "nominee",
+      "title": "Dust City"
+    },
+    {
+      "authors": [
+        "A.S. King"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2011",
+      "category": "Best Young Adult",
+      "position": "2011.03",
+      "result": "nominee",
+      "title": "Please Ignore Vera Dietz"
+    },
+    {
+      "authors": [
+        "Mary Jane Beaufrand"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2011",
+      "category": "Best Young Adult",
+      "position": "2011.04",
+      "result": "nominee",
+      "title": "The River"
+    },
+    {
+      "authors": [
+        "Dandi Daley Mackall"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2012",
+      "category": "Best Young Adult",
+      "position": "2012",
+      "result": "winner",
+      "title": "The Silence of Murder"
+    },
+    {
+      "authors": [
+        "Todd Strasser"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2012",
+      "category": "Best Young Adult",
+      "position": "2012.01",
+      "result": "nominee",
+      "title": "Kill You Last"
+    },
+    {
+      "authors": [
+        "Harlan Coben"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2012",
+      "category": "Best Young Adult",
+      "position": "2012.02",
+      "result": "nominee",
+      "title": "Shelter"
+    },
+    {
+      "authors": [
+        "Kathryn Miller Haines"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2012",
+      "category": "Best Young Adult",
+      "position": "2012.03",
+      "result": "nominee",
+      "title": "The Girl is Murder"
+    },
+    {
+      "authors": [
+        "Maureen Johnson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2012",
+      "category": "Best Young Adult",
+      "position": "2012.04",
+      "result": "nominee",
+      "title": "The Name of the Star"
+    },
+    {
+      "authors": [
+        "Elizabeth Wein"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2013",
+      "category": "Best Young Adult",
+      "position": "2013",
+      "result": "winner",
+      "title": "Code Name Verity"
+    },
+    {
+      "authors": [
+        "Kat Rosenfield"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2013",
+      "category": "Best Young Adult",
+      "position": "2013.01",
+      "result": "nominee",
+      "title": "Amelia Anne is Dead and Gone"
+    },
+    {
+      "authors": [
+        "Niall Leonard"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2013",
+      "category": "Best Young Adult",
+      "position": "2013.02",
+      "result": "nominee",
+      "title": "Crusher"
+    },
+    {
+      "authors": [
+        "Kathryn Burak"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2013",
+      "category": "Best Young Adult",
+      "position": "2013.03",
+      "result": "nominee",
+      "title": "Emily's Dress and Other Missing Things"
+    },
+    {
+      "authors": [
+        "Elizabeth George"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2013",
+      "category": "Best Young Adult",
+      "position": "2013.04",
+      "result": "nominee",
+      "title": "The Edge of Nowhere"
+    },
+    {
+      "authors": [
+        "Annabel Pitcher"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2014",
+      "category": "Best Young Adult",
+      "position": "2014",
+      "result": "winner",
+      "title": "Ketchup Clouds"
+    },
+    {
+      "authors": [
+        "Julie Berry"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2014",
+      "category": "Best Young Adult",
+      "position": "2014.01",
+      "result": "nominee",
+      "title": "All the Truth That's in Me"
+    },
+    {
+      "authors": [
+        "Terra Elan McVoy"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2014",
+      "category": "Best Young Adult",
+      "position": "2014.02",
+      "result": "nominee",
+      "title": "Criminal"
+    },
+    {
+      "authors": [
+        "Tom McNeal"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2014",
+      "category": "Best Young Adult",
+      "position": "2014.03",
+      "result": "nominee",
+      "title": "Far Far Away"
+    },
+    {
+      "authors": [
+        "Kirsten Miller"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2014",
+      "category": "Best Young Adult",
+      "position": "2014.04",
+      "result": "nominee",
+      "title": "How to Lead a Life of Crime"
+    },
+    {
+      "authors": [
+        "James Klise"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2015",
+      "category": "Best Young Adult",
+      "position": "2015",
+      "result": "winner",
+      "title": "The Art of Secrets"
+    },
+    {
+      "authors": [
+        "Paolo Bacigalupi"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2015",
+      "category": "Best Young Adult",
+      "position": "2015.01",
+      "result": "nominee",
+      "title": "The Doubt Factory"
+    },
+    {
+      "authors": [
+        "Elle Cosimano"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2015",
+      "category": "Best Young Adult",
+      "position": "2015.02",
+      "result": "nominee",
+      "title": "Nearly Gone"
+    },
+    {
+      "authors": [
+        "Lamar Giles"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2015",
+      "category": "Best Young Adult",
+      "position": "2015.03",
+      "result": "nominee",
+      "title": "Fake ID"
+    },
+    {
+      "authors": [
+        "Blake Nelson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2015",
+      "category": "Best Young Adult",
+      "position": "2015.04",
+      "result": "nominee",
+      "title": "The Prince of Venice Beach"
+    },
+    {
+      "authors": [
+        "Mindy McGinnis"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2016",
+      "category": "Best Young Adult",
+      "position": "2016",
+      "result": "winner",
+      "title": "A Madness So Discreet"
+    },
+    {
+      "authors": [
+        "Lamar Giles"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2016",
+      "category": "Best Young Adult",
+      "position": "2016.01",
+      "result": "nominee",
+      "title": "Endangered"
+    },
+    {
+      "authors": [
+        "Melinda Salisbury"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2016",
+      "category": "Best Young Adult",
+      "position": "2016.02",
+      "result": "nominee",
+      "title": "The Sin Eater's Daughter"
+    },
+    {
+      "authors": [
+        "Nova Ren Suma"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2016",
+      "category": "Best Young Adult",
+      "position": "2016.03",
+      "result": "nominee",
+      "title": "The Walls Around Us"
+    },
+    {
+      "authors": [
+        "Henry Turner"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2016",
+      "category": "Best Young Adult",
+      "position": "2016.04",
+      "result": "nominee",
+      "title": "Ask the Dark"
+    },
+    {
+      "authors": [
+        "Monica Hesse"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2017",
+      "category": "Best Young Adult",
+      "position": "2017",
+      "result": "winner",
+      "title": "Girl in the Blue Coat"
+    },
+    {
+      "authors": [
+        "Brent Hartinger"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2017",
+      "category": "Best Young Adult",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "Three Truths and a Lie"
+    },
+    {
+      "authors": [
+        "April Henry"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2017",
+      "category": "Best Young Adult",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "The Girl I Used to Be"
+    },
+    {
+      "authors": [
+        "Justine Larbalestier"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2017",
+      "category": "Best Young Adult",
+      "position": "2017.03",
+      "result": "nominee",
+      "title": "My Sister Rosa"
+    },
+    {
+      "authors": [
+        "Billy Taylor"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2017",
+      "category": "Best Young Adult",
+      "position": "2017.04",
+      "result": "nominee",
+      "title": "Thieving Weasels"
+    },
+    {
+      "authors": [
+        "Jason Reynolds"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2018",
+      "category": "Best Young Adult",
+      "position": "2018",
+      "result": "winner",
+      "title": "Long Way Down"
+    },
+    {
+      "authors": [
+        "Scott Bergstrom"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2018",
+      "category": "Best Young Adult",
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "The Cruelty"
+    },
+    {
+      "authors": [
+        "Gillian French"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2018",
+      "category": "Best Young Adult",
+      "position": "2018.02",
+      "result": "nominee",
+      "title": "Grit"
+    },
+    {
+      "authors": [
+        "Jason Rekulak"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2018",
+      "category": "Best Young Adult",
+      "position": "2018.03",
+      "result": "nominee",
+      "title": "The Impossible Fortress"
+    },
+    {
+      "authors": [
+        "Angie Thomas"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2018",
+      "category": "Best Young Adult",
+      "position": "2018.04",
+      "result": "nominee",
+      "title": "The Hate U Give"
+    },
+    {
+      "authors": [
+        "Courtney Summers"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2019",
+      "category": "Best Young Adult",
+      "position": "2019",
+      "result": "winner",
+      "title": "Sadie"
+    },
+    {
+      "authors": [
+        "Erin Bowman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2019",
+      "category": "Best Young Adult",
+      "position": "2019.01",
+      "result": "nominee",
+      "title": "Contagion"
+    },
+    {
+      "authors": [
+        "Sasha Dawn"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2019",
+      "category": "Best Young Adult",
+      "position": "2019.02",
+      "result": "nominee",
+      "title": "Blink"
+    },
+    {
+      "authors": [
+        "Will Hill"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2019",
+      "category": "Best Young Adult",
+      "position": "2019.03",
+      "result": "nominee",
+      "title": "After the Fire"
+    },
+    {
+      "authors": [
+        "Nova Ren Suma"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2019",
+      "category": "Best Young Adult",
+      "position": "2019.04",
+      "result": "nominee",
+      "title": "A Room Away from the Wolves"
+    },
+    {
+      "authors": [
+        "Naomi Kritzer"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2020",
+      "category": "Best Young Adult",
+      "position": "2020",
+      "result": "winner",
+      "title": "Catfishing on CatNet"
+    },
+    {
+      "authors": [
+        "Adriana Mather"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2020",
+      "category": "Best Young Adult",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "Killing November"
+    },
+    {
+      "authors": [
+        "Randy Ribay"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2020",
+      "category": "Best Young Adult",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "Patron Saints of Nothing"
+    },
+    {
+      "authors": [
+        "Kristen Simmons"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2020",
+      "category": "Best Young Adult",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "The Deceivers"
+    },
+    {
+      "authors": [
+        "Leah Thomas"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2020",
+      "category": "Best Young Adult",
+      "position": "2020.04",
+      "result": "nominee",
+      "title": "Wild and Crooked"
+    },
+    {
+      "authors": [
+        "Katie Alender"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2021",
+      "category": "Best Young Adult",
+      "position": "2021",
+      "result": "winner",
+      "title": "The Companion"
+    },
+    {
+      "authors": [
+        "Jennifer Lynn Barnes"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2021",
+      "category": "Best Young Adult",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "The Inheritance Games"
+    },
+    {
+      "authors": [
+        "Monica Hesse"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2021",
+      "category": "Best Young Adult",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "The Went Left"
+    },
+    {
+      "authors": [
+        "June Hur"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2021",
+      "category": "Best Young Adult",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "Silence of Bones"
+    },
+    {
+      "authors": [
+        "Karen M. McManus"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2021",
+      "category": "Best Young Adult",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "The Cousins"
+    },
+    {
+      "authors": [
+        "Angeline Boulley"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2022",
+      "category": "Best Young Adult",
+      "position": "2022",
+      "result": "winner",
+      "title": "Firekeeper's Daughter"
+    },
+    {
+      "authors": [
+        "Faridah \u00c0b\u00edk\u00e9-\u00cdy\u00edm\u00edd\u00e9"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2022",
+      "category": "Best Young Adult",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "Ace of Spades"
+    },
+    {
+      "authors": [
+        "Pamela N. Harris"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2022",
+      "category": "Best Young Adult",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "When You Look Like Us"
+    },
+    {
+      "authors": [
+        "June Hur"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2022",
+      "category": "Best Young Adult",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "The Forest of Stolen Girls"
+    },
+    {
+      "authors": [
+        "Tess Sharpe"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2022",
+      "category": "Best Young Adult",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "The Girls I've Been"
+    },
+    {
+      "authors": [
+        "June Hur"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2023",
+      "category": "Best Young Adult",
+      "position": "2023",
+      "result": "winner",
+      "title": "The Red Palace"
+    },
+    {
+      "authors": [
+        "Alexa Donne"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2023",
+      "category": "Best Young Adult",
+      "position": "2023.01",
+      "result": "nominee",
+      "title": "Pretty Dead Queens"
+    },
+    {
+      "authors": [
+        "Eva V. Gibson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2023",
+      "category": "Best Young Adult",
+      "position": "2023.02",
+      "result": "nominee",
+      "title": "Frightmares"
+    },
+    {
+      "authors": [
+        "Juliana Goodman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2023",
+      "category": "Best Young Adult",
+      "position": "2023.03",
+      "result": "nominee",
+      "title": "The Black Girls Left Standing"
+    },
+    {
+      "authors": [
+        "Vincent Ralph"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2023",
+      "category": "Best Young Adult",
+      "position": "2023.04",
+      "result": "nominee",
+      "title": "Lock the Doors"
+    },
+    {
+      "authors": [
+        "April Henry"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2024",
+      "category": "Best Young Adult",
+      "position": "2024",
+      "result": "winner",
+      "title": "Girl Forgotten"
+    },
+    {
+      "authors": [
+        "Matthew J. Kirby"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2024",
+      "category": "Best Young Adult",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "Star Splitter"
+    },
+    {
+      "authors": [
+        "Cameron Kelly Rosenblum"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2024",
+      "category": "Best Young Adult",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "The Sharp Edge of Silence"
+    },
+    {
+      "authors": [
+        "Yvonne Woon"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2024",
+      "category": "Best Young Adult",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "My Flawless Life"
+    },
+    {
+      "authors": [
+        "Laura Zimmermann"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2024",
+      "category": "Best Young Adult",
+      "position": "2024.04",
+      "result": "nominee",
+      "title": "Just Do This One Thing for Me"
+    },
+    {
+      "authors": [
+        "Natalie D. Richards"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2025",
+      "category": "Best Young Adult",
+      "position": "2025",
+      "result": "winner",
+      "title": "49 Miles Alone"
+    },
+    {
+      "authors": [
+        "K.A. Cobell"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2025",
+      "category": "Best Young Adult",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "Looking for Smoke"
+    },
+    {
+      "authors": [
+        "Alexa Donne"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2025",
+      "category": "Best Young Adult",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "The Bitter End"
+    },
+    {
+      "authors": [
+        "June Hur"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2025",
+      "category": "Best Young Adult",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "A Crane Among Wolves"
+    },
+    {
+      "authors": [
+        "Maureen Johnson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2025",
+      "category": "Best Young Adult",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "Death at Morning House"
+    },
+    {
+      "authors": [
+        "Libba Bray"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2026",
+      "category": "Best Young Adult",
+      "position": "2026",
+      "result": "winner",
+      "title": "Under the Same Stars"
+    },
+    {
+      "authors": [
+        "Ravena Guron"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2026",
+      "category": "Best Young Adult",
+      "position": "2026.01",
+      "result": "nominee",
+      "title": "Catch Your Death"
+    },
+    {
+      "authors": [
+        "Cindy R.X. He"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2026",
+      "category": "Best Young Adult",
+      "position": "2026.02",
+      "result": "nominee",
+      "title": "This is Where We Die"
+    },
+    {
+      "authors": [
+        "Tiffany D. Jackson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2026",
+      "category": "Best Young Adult",
+      "position": "2026.03",
+      "result": "nominee",
+      "title": "The Scammer"
+    },
+    {
+      "authors": [
+        "Jay Martel"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2026",
+      "category": "Best Young Adult",
+      "position": "2026.04",
+      "result": "nominee",
+      "title": "Codebreaker"
+    }
+  ],
+  "fetched_at": "2026-07-16T23:43:39Z",
+  "list_id": "edgar_award_young_adult",
+  "list_name": "Edgar Award - Young Adult",
+  "match_series": false,
+  "notes": [],
+  "parser": "edgar_award_young_adult",
+  "schema_version": 2,
+  "source": {
+    "name": "Edgar Award - Young Adult",
+    "source_id": "edgar_award_young_adult",
+    "url": "https://edgarawards.com/category-list-best-young-adult/"
+  }
+}

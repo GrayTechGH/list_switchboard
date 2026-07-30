@@ -74,7 +74,7 @@ class UrlFetcherInternationalHorrorGuild(UrlFetcherGeneric):
         'International Horror Guild',
         OFFICIAL_FINAL_URL,
         lambda html, url, fetch_url=None, log=None, progress=None: (
-          parser.parse_official(
+          self.require_complete(parser.parse_official(
             html,
             url,
             self.NAME,
@@ -82,13 +82,14 @@ class UrlFetcherInternationalHorrorGuild(UrlFetcherGeneric):
             self.CATEGORY_ALIASES,
             fetch_url=fetch_url,
             log=log,
-            progress=progress)),
+            progress=progress),
+            'International Horror Guild')),
         source_rank=0),
       SourceAttempt(
         'SFADB',
         SFADB_URL,
         lambda html, url, fetch_url=None, log=None, progress=None: (
-          parser.parse_sfadb(
+          self.require_complete(parser.parse_sfadb(
             html,
             url,
             self.NAME,
@@ -96,9 +97,19 @@ class UrlFetcherInternationalHorrorGuild(UrlFetcherGeneric):
             self.CATEGORY_ALIASES,
             fetch_url=fetch_url,
             log=log,
-            progress=progress)),
+            progress=progress),
+            'SFADB')),
         source_rank=1),
     )
+
+  def require_complete(self, parsed, source_label):
+    try:
+      from calibre_plugins.list_switchboard.parser.international_horror_guild import (
+        require_complete_ihg_result,
+      )
+    except ImportError:
+      from parser.international_horror_guild import require_complete_ihg_result
+    return require_complete_ihg_result(parsed, self.CATEGORY, source_label)
 
   def source_choices(self):
     return SourceFallbackRunner(self.source_attempts()).source_choices()
@@ -130,14 +141,19 @@ class UrlFetcherInternationalHorrorGuildLongFiction(UrlFetcherInternationalHorro
   source_id = 'international_horror_guild_long_fiction'
   NAME = 'International Horror Guild - Long Fiction (discontinued)'
   CATEGORY = 'Long Fiction'
-  CATEGORY_ALIASES = ('long fiction',)
+  CATEGORY_ALIASES = ('long fiction', 'long story', 'long form')
 
 
 class UrlFetcherInternationalHorrorGuildMidLengthFiction(UrlFetcherInternationalHorrorGuild):
   source_id = 'international_horror_guild_mid_length_fiction'
   NAME = 'International Horror Guild - Mid-Length Fiction (discontinued)'
   CATEGORY = 'Mid-Length Fiction'
-  CATEGORY_ALIASES = ('mid-length fiction', 'mid length fiction')
+  CATEGORY_ALIASES = (
+    'mid-length fiction',
+    'mid length fiction',
+    'intermediate form',
+    'medium fiction',
+  )
 
 
 class UrlFetcherInternationalHorrorGuildCollection(UrlFetcherInternationalHorrorGuild):
@@ -172,7 +188,9 @@ class UrlFetcherInternationalHorrorGuildIllustratedNarrative(UrlFetcherInternati
   CATEGORY = 'Illustrated Narrative'
   CATEGORY_ALIASES = (
     'illustrated narrative',
+    'iillustrated narrative',
     'illustrated narrativel',
+    'graphic narrative',
     'graphic story/illustrated narrative',
     'graphic story illustrated narrative',
   )

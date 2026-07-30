@@ -29,6 +29,8 @@ except ImportError:
 
 
 GOODREADS_LOOKUP_DELAY_SECONDS = 1.5
+GOODREADS_REQUEST_TIMEOUT_SECONDS = 60
+GOODREADS_TIMEOUT_RETRIES = 3
 
 
 def unique_case_insensitive(names):
@@ -74,6 +76,41 @@ class GoodreadsMixin:
         return str(value).strip()
     return ''
 
+  def fetch_goodreads_url(self, url):
+    """Fetch a deep-recovery page with the shared Goodreads timeout policy."""
+    for retry in range(GOODREADS_TIMEOUT_RETRIES + 1):
+      try:
+        try:
+          return self.fetch_url(
+            url, timeout=GOODREADS_REQUEST_TIMEOUT_SECONDS)
+        except TypeError as err:
+          if 'timeout' not in str(err) and 'keyword' not in str(err):
+            raise
+          return self.fetch_url(url)
+      except Exception as err:
+        if retry >= GOODREADS_TIMEOUT_RETRIES or not self.is_goodreads_timeout(err):
+          raise
+
+  def is_goodreads_timeout(self, err):
+    pending = [err]
+    seen = set()
+    while pending:
+      current = pending.pop()
+      marker = id(current)
+      if marker in seen:
+        continue
+      seen.add(marker)
+      if isinstance(current, TimeoutError):
+        return True
+      message = str(current).lower()
+      if 'timed out' in message or 'timeout' in message:
+        return True
+      for attribute in ('reason', '__cause__', '__context__'):
+        nested = getattr(current, attribute, None)
+        if isinstance(nested, BaseException):
+          pending.append(nested)
+    return False
+
   def fetch_goodreads_series_names(self, goodreads_id):
     if not goodreads_id:
       return []
@@ -91,7 +128,7 @@ class GoodreadsMixin:
     self.debug_goodreads_lookup_url(url)
     self.last_goodreads_lookup_time = time.time()
     try:
-      html = self.fetch_url(url)
+      html = self.fetch_goodreads_url(url)
       series_names = self.extract_goodreads_series_names(html)
     except Exception as err:
       self.debug_goodreads_lookup_failed(goodreads_id, err)
@@ -117,7 +154,7 @@ class GoodreadsMixin:
     self.update_import_progress(message='Looking up Goodreads source page...')
     self.last_goodreads_lookup_time = time.time()
     try:
-      html = self.fetch_url(url)
+      html = self.fetch_goodreads_url(url)
       data = self.extract_goodreads_source_data(html)
     except Exception as err:
       self.debug_goodreads_lookup_failed(url, err, source=True)

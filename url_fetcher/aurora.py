@@ -59,8 +59,16 @@ class UrlFetcherAuroraNovel(UrlFetcherAurora):
   NAME = 'Aurora - Novel'
   FILTER_CATEGORIES = SPECULATIVE_REGIONAL_CATEGORIES
   CATEGORY = 'Novel'
-  CATEGORY_ALIASES = ('novel',)
-  ISFDB_CATEGORY_ALIASES = ('Best Novel - English',)
+  CATEGORY_ALIASES = (
+    'novel',
+    'novel in english',
+    'long-form, english',
+    'long-form work in english',
+  )
+  ISFDB_CATEGORY_ALIASES = (
+    'Best Novel - English',
+    'Best Long-Form Work in English / Meilleur livre en anglais',
+  )
   USE_ISFDB_FALLBACK = True
 
 
@@ -71,7 +79,12 @@ class UrlFetcherAuroraYANovel(UrlFetcherAurora):
     CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
   ) + SPECULATIVE_REGIONAL_CATEGORIES
   CATEGORY = 'YA Novel'
-  CATEGORY_ALIASES = ('ya novel', 'young adult novel')
+  CATEGORY_ALIASES = (
+    'ya novel',
+    'young adult novel',
+    'ya novel in english',
+    'young adult novel in english',
+  )
   ISFDB_CATEGORY_ALIASES = ('Best YA Novel - English',)
   USE_ISFDB_FALLBACK = True
 
@@ -93,7 +106,7 @@ class UrlFetcherAuroraRelatedWork(UrlFetcherAurora):
     CATEGORY_NONFICTION,
   ) + SPECULATIVE_REGIONAL_CATEGORIES
   CATEGORY = 'Related Work'
-  CATEGORY_ALIASES = ('related work',)
+  CATEGORY_ALIASES = ('related work', 'related work in english')
   BOOKS_ONLY = True
 
 
@@ -102,6 +115,10 @@ class UrlFetcherAuroraGraphicNovel(UrlFetcherAurora):
   NAME = 'Aurora - Graphic Novel'
   FILTER_CATEGORIES = SPECULATIVE_REGIONAL_CATEGORIES
   CATEGORY = 'Graphic Novel'
-  CATEGORY_ALIASES = ('graphic novel',)
+  CATEGORY_ALIASES = (
+    'graphic novel',
+    'graphic novel in english',
+    'graphic novel/comic',
+  )
   ISFDB_CATEGORY_ALIASES = ('Best Graphic Novel - English',)
   USE_ISFDB_FALLBACK = True

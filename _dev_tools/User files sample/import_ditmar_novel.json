@@ -216,7 +216,8 @@
     },
     {
       "authors": [
-        "Damien Broderick & Rory Barnes"
+        "Damien Broderick",
+        "Rory Barnes"
       ],
       "award": "Ditmar Award",
       "award_year": "1984",
@@ -840,7 +841,8 @@
     },
     {
       "authors": [
-        "Lucy Sussex & Judith Raphael Buckrich"
+        "Lucy Sussex",
+        "Judith Raphael Buckrich"
       ],
       "award": "Ditmar Award",
       "award_year": "1996",
@@ -856,7 +858,8 @@
     },
     {
       "authors": [
-        "Sean Williams & Shane Dix"
+        "Sean Williams",
+        "Shane Dix"
       ],
       "award": "Ditmar Award",
       "award_year": "1996",
@@ -1128,7 +1131,8 @@
     },
     {
       "authors": [
-        "Damien Broderick & Rory Barnes"
+        "Damien Broderick",
+        "Rory Barnes"
       ],
       "award": "Ditmar Award",
       "award_year": "2000",
@@ -1208,7 +1212,8 @@
     },
     {
       "authors": [
-        "Sean Williams & Shane Dix"
+        "Sean Williams",
+        "Shane Dix"
       ],
       "award": "Ditmar Award",
       "award_year": "2001",
@@ -1320,7 +1325,8 @@
     },
     {
       "authors": [
-        "Sean Williams & Shane Dix"
+        "Sean Williams",
+        "Shane Dix"
       ],
       "award": "Ditmar Award",
       "award_year": "2003",
@@ -1464,7 +1470,8 @@
     },
     {
       "authors": [
-        "Jonathan Blum & Kate Orman"
+        "Jonathan Blum",
+        "Kate Orman"
       ],
       "award": "Ditmar Award",
       "award_year": "2004",
@@ -1496,7 +1503,8 @@
     },
     {
       "authors": [
-        "Sean Williams & Shane Dix"
+        "Sean Williams",
+        "Shane Dix"
       ],
       "award": "Ditmar Award",
       "award_year": "2004",
@@ -1560,7 +1568,8 @@
     },
     {
       "authors": [
-        "Sean Williams & Shane Dix"
+        "Sean Williams",
+        "Shane Dix"
       ],
       "award": "Ditmar Award",
       "award_year": "2006",
@@ -2488,7 +2497,8 @@
     },
     {
       "authors": [
-        "Margo Lanagan & Deborah Biancotti"
+        "Margo Lanagan",
+        "Deborah Biancotti"
       ],
       "award": "Ditmar Award",
       "award_year": "2016",
@@ -3271,7 +3281,7 @@
       "title": "The Medusa Situation"
     }
   ],
-  "fetched_at": "2026-07-09T00:12:26Z",
+  "fetched_at": "2026-07-11T00:38:38Z",
   "list_id": "ditmar_novel",
   "list_name": "Ditmar - Novel",
   "match_series": false,

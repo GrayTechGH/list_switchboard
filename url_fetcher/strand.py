@@ -2,12 +2,17 @@
 # vim:fileencoding=UTF-8:ts=2:sw=2:sta:et:sts=2:ai
 
 from .generic import CATEGORY_CRIME_MYSTERY_THRILLER, UrlFetcherGeneric
+from .librarything_fallback import (
+  LIBRARYTHING_USER_AGENT,
+  LibraryThingFetchPolicyMixin,
+)
 
 
 STRAND_URL = 'https://www.librarything.com/award/1380/The-Strand-Critics-Award'
+STRAND_USER_AGENT = LIBRARYTHING_USER_AGENT
 
 
-class UrlFetcherStrandAward(UrlFetcherGeneric):
+class UrlFetcherStrandAward(LibraryThingFetchPolicyMixin, UrlFetcherGeneric):
 
   FILTER_CATEGORIES = (CATEGORY_CRIME_MYSTERY_THRILLER,)
   FETCH_URLS = ()
@@ -17,6 +22,9 @@ class UrlFetcherStrandAward(UrlFetcherGeneric):
   AWARD_NAME = 'The Strand Critics Award'
   CATEGORY = ''
   CATEGORY_ALIASES = ()
+
+  def fetch_url(self, fetch_url, url):
+    return self.fetch_librarything_url(fetch_url, url)
 
   def create_parser(self):
     try:

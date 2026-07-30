@@ -21,15 +21,17 @@ from bs4 import BeautifulSoup, UnicodeDammit
 try:
   from calibre_plugins.list_switchboard.parser.award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
-    normalize_heading, normalize_line, split_title_author, strip_editor_marker,
-    strip_publication_notes, strip_square_notes,
+    is_author_suffix, normalize_heading, normalize_line, split_title_author,
+    split_title_author_byline, strip_editor_marker, strip_publication_notes,
+    strip_square_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
-    normalize_heading, normalize_line, split_title_author, strip_editor_marker,
-    strip_publication_notes, strip_square_notes,
+    is_author_suffix, normalize_heading, normalize_line, split_title_author,
+    split_title_author_byline, strip_editor_marker, strip_publication_notes,
+    strip_square_notes,
   )
   from .generic import position_sort_key
 
@@ -51,6 +53,27 @@ EXCLUDED_CATEGORY_FRAGMENTS = (
   'lifetime',
   'short story',
 )
+
+OFFICIAL_CATEGORY_KEYS = {
+  'best novel',
+  'best novella',
+  'best short story',
+  'best collection',
+  'best anthology',
+}
+
+NUMBER_WORDS = {
+  'one': '1',
+  'two': '2',
+  'three': '3',
+  'four': '4',
+  'five': '5',
+  'six': '6',
+  'seven': '7',
+  'eight': '8',
+  'nine': '9',
+  'ten': '10',
+}
 
 
 def category_key(value):
@@ -82,8 +105,6 @@ class SplatterpunkParser(AwardParserBase):
     rows = []
     notes = [
       'Official KillerCon awards page exposes current-cycle nominees only.',
-      'As of July 5, 2026, the official page lists 2026 nominees and states '
-      'winners will be announced at KillerCon 2026, November 6-8, 2026.',
     ]
     for html, title, link in self.official_current_documents(source):
       year = self.award_year(html, title)
@@ -92,8 +113,11 @@ class SplatterpunkParser(AwardParserBase):
         text = self.node_text(node)
         if not text:
           continue
-        if node.name in ('h1', 'h2', 'h3', 'h4', 'h5', 'h6'):
+        if self.looks_like_category_heading(text):
           target_category = self.category_matches(text, category, category_aliases)
+          continue
+        if node.name in ('h1', 'h2', 'h3', 'h4', 'h5', 'h6'):
+          target_category = False
           continue
         if not target_category or node.name != 'p' or year is None:
           continue
@@ -185,7 +209,58 @@ class SplatterpunkParser(AwardParserBase):
         continue
       notes.extend(parsed.get('notes', ()))
       rows.extend(dict(entry) for entry in parsed.get('entries', ()))
+    rows = self.reconcile_official_winners(rows, notes)
     return self.parsed_from_rows(name, base_url, rows, notes)
+
+  def validate_official_api_source(self, source, page_name):
+    parsed = self.parse_json_source(self.decode_source(source))
+    items = parsed if isinstance(parsed, list) else [parsed]
+    if (
+        parsed is None or
+        not any(
+          isinstance(item, dict) and
+          isinstance(item.get('content'), dict) and
+          item['content'].get('rendered')
+          for item in items)):
+      raise ValueError(
+        f'Splatterpunk official {page_name} source was not a valid WordPress page.')
+
+  def validate_official_current_result(self, parsed):
+    entries = parsed.get('entries', ()) if parsed else ()
+    if not entries:
+      raise ValueError(
+        'Splatterpunk official current page did not expose the configured category.')
+    years = {entry.get('award_year') for entry in entries}
+    if len(years) != 1 or any(
+        entry.get('result') != RESULT_SHORTLISTED for entry in entries):
+      raise ValueError(
+        'Splatterpunk official current page returned an invalid nominee cycle.')
+
+  def validate_official_winner_result(self, parsed):
+    entries = parsed.get('entries', ()) if parsed else ()
+    years = sorted({
+      int(entry['award_year'])
+      for entry in entries
+      if str(entry.get('award_year', '')).isdigit()
+    })
+    if not years or years[0] != 2018:
+      raise ValueError(
+        'Splatterpunk official winner history did not start at 2018.')
+    expected = list(range(2018, years[-1] + 1))
+    if years != expected or any(
+        entry.get('result') != RESULT_WINNER for entry in entries):
+      raise ValueError(
+        'Splatterpunk official winner history was incomplete or invalid.')
+
+  def validate_goodreads_page(self, html):
+    soup = BeautifulSoup(self.decode_source(html), 'html.parser')
+    rows = soup.find_all('tr', itemtype='http://schema.org/Book')
+    if not rows or not any(
+        'Splatterpunk Award' in self.node_text(label)
+        for row in rows
+        for label in row.find_all('i')):
+      raise ValueError(
+        'Splatterpunk Goodreads source did not contain award book rows.')
 
   def discover_goodreads_page_urls(self, html, base_url=GOODREADS_URL):
     soup = BeautifulSoup(self.decode_source(html), 'html.parser')
@@ -198,6 +273,8 @@ class SplatterpunkParser(AwardParserBase):
       if 'page=' not in href and not text.isdigit():
         continue
       url = urljoin(base_url, href)
+      if re.search(r'[?&]page=1(?:&|$)', url):
+        url = GOODREADS_URL
       if url not in urls:
         urls.append(url)
     return tuple(urls)
@@ -225,22 +302,22 @@ class SplatterpunkParser(AwardParserBase):
       return None
     title, author = parsed
     title = self.clean_title(title)
-    author = self.clean_author(author)
-    if not title or not author:
+    authors = self.clean_official_authors(author)
+    if not title or not authors:
       return None
-    return {'title': title, 'author': author, 'result': result}
+    return {'title': title, 'authors': authors, 'result': result}
 
   def parse_edited_by(self, text):
-    match = re.match(r'^(.*?)\s*,?\s+edited\s+by\s+(.+)$', text, re.I)
+    match = re.match(r'^(.+)\s*,?\s+edited\s+by\s+(.+)$', text, re.I)
     if match is None:
       return None
     return match.group(1), match.group(2)
 
   def parse_by(self, text):
-    match = re.match(r'^(.*?)\s*,?\s+by\s+(.+)$', text, re.I)
-    if match is None:
+    title, author = split_title_author_byline(text)
+    if not title or not author:
       return None
-    return match.group(1), match.group(2)
+    return title.rstrip(' ,'), author
 
   def parse_comma(self, text):
     title, author = split_title_author(text)
@@ -255,13 +332,17 @@ class SplatterpunkParser(AwardParserBase):
     year = int(match.group(1))
     label_key = category_key(label[:match.start()])
     target_keys = self.category_keys(category, category_aliases)
+    nominee_index = label_key.find('nominee for')
     if (
-        label_key.startswith('splatterpunk award nominee for') and
-        any(key in label_key for key in target_keys)):
+        nominee_index >= 0 and
+        self.contains_category_phrase(label_key[nominee_index:], target_keys)):
       return year, RESULT_SHORTLISTED
-    if any(f'nominee for {key}' in label_key for key in target_keys):
-      return year, RESULT_SHORTLISTED
-    if any(f'splatterpunk award for {key}' in label_key for key in target_keys):
+    winner_prefix = 'splatterpunk award for '
+    winner_scope = (
+      label_key[len(winner_prefix):]
+      if label_key.startswith(winner_prefix)
+      else '')
+    if self.starts_with_category_phrase(winner_scope, target_keys):
       return year, RESULT_WINNER
     return None
 
@@ -279,8 +360,27 @@ class SplatterpunkParser(AwardParserBase):
     value = re.sub(r'^\s*(?:by|edited\s+by)\s+', '', value, flags=re.I)
     value = re.sub(r'\s*\((?:Goodreads Author|Author|Editor|Editors?)\)\s*',
                    ' ', value, flags=re.I)
-    value = re.sub(r'\s*,?\s*(?:eds?|editors?)\.?$', '', value, flags=re.I)
     return strip_editor_marker(strip_publication_notes(value)).strip(' "\'.,;')
+
+  def clean_official_authors(self, value):
+    value = self.clean_author(value)
+    alias_match = re.match(
+      r'^Sisters of Slaughter\s*[-:]\s*(.+)$',
+      value,
+      re.I)
+    if alias_match is not None:
+      value = alias_match.group(1)
+    parts = re.split(r'\s*(?:,|;|\band\b|&)\s*', value, flags=re.I)
+    authors = []
+    for part in parts:
+      part = part.strip(' ,;')
+      if not part:
+        continue
+      if is_author_suffix(part) and authors:
+        authors[-1] = f'{authors[-1]}, {part}'
+      elif part not in authors:
+        authors.append(part)
+    return authors
 
   def official_current_documents(self, source):
     return tuple(
@@ -359,9 +459,11 @@ class SplatterpunkParser(AwardParserBase):
     return 'Splatterpunk Award nominees' in text
 
   def looks_like_category_heading(self, text):
-    key = category_key(text)
-    return key.startswith('best ') or any(
-      fragment in key for fragment in EXCLUDED_CATEGORY_FRAGMENTS)
+    key = category_key(self.clean_category_label(text))
+    return (
+      key in OFFICIAL_CATEGORY_KEYS or
+      key.startswith('j f gonzalez lifetime achievement award')
+    )
 
   def clean_category_label(self, label):
     label = clean_source_text(label)
@@ -379,6 +481,93 @@ class SplatterpunkParser(AwardParserBase):
     keys = {category_key(alias) for alias in aliases if alias}
     keys.update(f'best {key}' for key in tuple(keys) if not key.startswith('best '))
     return keys
+
+  def contains_category_phrase(self, value, keys):
+    return any(
+      re.search(
+        rf'(?<![a-z0-9]){re.escape(key)}(?![a-z0-9])',
+        value) is not None
+      for key in keys)
+
+  def starts_with_category_phrase(self, value, keys):
+    return any(
+      re.match(rf'^{re.escape(key)}(?![a-z0-9])', value) is not None
+      for key in keys)
+
+  def reconcile_official_winners(self, rows, notes):
+    official_by_bucket = {}
+    for row in rows:
+      if self.is_official_winner(row):
+        official_by_bucket.setdefault(self.result_bucket(row), []).append(row)
+
+    reconciled = []
+    for row in rows:
+      bucket = self.result_bucket(row)
+      if not self.is_goodreads_winner(row) or bucket not in official_by_bucket:
+        reconciled.append(row)
+        continue
+      official_rows = official_by_bucket[bucket]
+      match = self.match_official_winner(row, official_rows)
+      if match is not None:
+        self.add_title_alias(match, row.get('title', ''))
+      else:
+        notes.append(
+          'Ignored a conflicting Goodreads winner because official KillerCon '
+          f'data already covers {bucket[0]} {row.get("category", "")}.')
+    return reconciled
+
+  def is_official_winner(self, row):
+    return (
+      row.get('result') == RESULT_WINNER and
+      self.entry_source_url(row).rstrip('/') ==
+      OFFICIAL_PAST_WINNERS_URL.rstrip('/')
+    )
+
+  def is_goodreads_winner(self, row):
+    return (
+      row.get('result') == RESULT_WINNER and
+      'goodreads.com/award/show/38981-splatterpunk-award' in
+      self.entry_source_url(row)
+    )
+
+  def entry_source_url(self, row):
+    source = row.get('source')
+    return source.get('url', '') if isinstance(source, dict) else ''
+
+  def result_bucket(self, row):
+    return (
+      str(row.get('award_year', '')),
+      category_key(row.get('category', '')),
+    )
+
+  def match_official_winner(self, supplement, official_rows):
+    title_key = category_key(supplement.get('title', ''))
+    for row in official_rows:
+      if category_key(row.get('title', '')) == title_key:
+        return row
+    supplement_authors = set(self.row_author_keys(supplement))
+    supplement_variant = self.title_variant_key(supplement.get('title', ''))
+    for row in official_rows:
+      if (
+          supplement_variant == self.title_variant_key(row.get('title', '')) and
+          supplement_authors.intersection(self.row_author_keys(row))):
+        return row
+    return None
+
+  def title_variant_key(self, value):
+    words = category_key(value).split()
+    return ' '.join(NUMBER_WORDS.get(word, word) for word in words)
+
+  def add_title_alias(self, row, alias):
+    alias = clean_source_text(alias)
+    if not alias or category_key(alias) == category_key(row.get('title', '')):
+      return
+    aliases = row.get('aliases') or []
+    if isinstance(aliases, str):
+      aliases = [aliases]
+    if alias not in aliases:
+      aliases.append(alias)
+    row['aliases'] = aliases
 
   def parsed_from_rows(self, name, base_url, rows, notes):
     rows = self.dedupe_rows(rows)
@@ -422,8 +611,17 @@ class SplatterpunkParser(AwardParserBase):
       str(row.get('award_year', '')),
       category_key(row.get('category', '')),
       category_key(row.get('title', '')),
-      category_key(row.get('author', '')),
+      tuple(self.row_author_keys(row)),
     )
+
+  def row_author_keys(self, row):
+    authors = row.get('authors', row.get('author', ()))
+    if isinstance(authors, str):
+      authors = (authors,)
+    return tuple(
+      category_key(author)
+      for author in authors or ()
+      if category_key(author))
 
   def unique_notes(self, notes):
     unique = []
