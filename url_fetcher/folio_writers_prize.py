@@ -56,13 +56,14 @@ class UrlFetcherFolioWritersPrize(UrlFetcherGeneric):
         self.URL,
         lambda html, url, fetch_url=None, log=None, progress=None: (
           self.create_official_parser().parse(
-            html, url, self.NAME, fetch_url=fetch_url, log=log, progress=progress)),
+            html, url, self.NAME, fetch_url=fetch_url, log=log, progress=progress,
+            validate=True)),
         source_rank=0),
       SourceAttempt(
         'Wikipedia',
         self.WIKIPEDIA_URL,
         lambda html, url, **_kwargs: self.create_wikipedia_parser().parse(
-          html, url, self.NAME),
+          html, url, self.NAME, validate=True),
         source_rank=1),
     )
 
@@ -90,14 +91,15 @@ class UrlFetcherFolioWritersPrize(UrlFetcherGeneric):
 
   def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
     return self.create_official_parser().parse(
-      html, self.URL, self.NAME, fetch_url=fetch_url, log=log, progress=progress)
+      html, self.URL, self.NAME, fetch_url=fetch_url, log=log, progress=progress,
+      validate=True)
 
 
 class UrlFetcherFolioWritersPrizeBookOfTheYear(UrlFetcherFolioWritersPrize):
 
   FILTER_CATEGORIES = (CATEGORY_REGIONAL_NATIONAL_AWARDS,)
   source_id = 'folio_writers_prize_book_of_the_year'
-  NAME = "Folio/Writers' Prize - Book of the Year"
+  NAME = "Folio/Writers' Prize - Book of the Year (discontinued)"
   CATEGORY = 'Book of the Year'
   CATEGORY_ALIASES = (
     'Book of the Year',
@@ -115,7 +117,7 @@ class UrlFetcherFolioWritersPrizeFiction(UrlFetcherFolioWritersPrize):
     CATEGORY_REGIONAL_NATIONAL_AWARDS,
   )
   source_id = 'folio_writers_prize_fiction'
-  NAME = "Folio/Writers' Prize - Fiction"
+  NAME = "Folio/Writers' Prize - Fiction (discontinued)"
   CATEGORY = 'Fiction'
   CATEGORY_ALIASES = ('Fiction',)
 
@@ -127,6 +129,6 @@ class UrlFetcherFolioWritersPrizeNonfiction(UrlFetcherFolioWritersPrize):
     CATEGORY_REGIONAL_NATIONAL_AWARDS,
   )
   source_id = 'folio_writers_prize_nonfiction'
-  NAME = "Folio/Writers' Prize - Non-Fiction"
+  NAME = "Folio/Writers' Prize - Non-Fiction (discontinued)"
   CATEGORY = 'Non-Fiction'
   CATEGORY_ALIASES = ('Non-Fiction', 'Nonfiction', 'Non Fiction')

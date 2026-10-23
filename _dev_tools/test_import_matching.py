@@ -4178,9 +4178,9 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
       "Costa/Whitbread Book Award - Children's Book (discontinued)", names)
     self.assertIn('Costa/Whitbread Book of the Year (discontinued)', names)
     self.assertIn('Giller Prize', names)
-    self.assertIn("Folio/Writers' Prize - Book of the Year", names)
-    self.assertIn("Folio/Writers' Prize - Fiction", names)
-    self.assertIn("Folio/Writers' Prize - Non-Fiction", names)
+    self.assertIn("Folio/Writers' Prize - Book of the Year (discontinued)", names)
+    self.assertIn("Folio/Writers' Prize - Fiction (discontinued)", names)
+    self.assertIn("Folio/Writers' Prize - Non-Fiction (discontinued)", names)
     self.assertIn('Goldsmiths Prize', names)
     self.assertIn('National Book Critics Circle Award - Fiction', names)
     self.assertIn('National Book Critics Circle Award - Nonfiction', names)
@@ -24695,9 +24695,9 @@ were ''[[Go Deep]]'' by [[Rilzy Adams]].
       ('2014.01', 'Red Doc', 'Anne Carson', 'shortlisted'),
       ('2014.02', 'How to Get Filthy Rich in Rising Asia', 'Mohsin Hamid', 'shortlisted'),
       ('2023', 'Constructing a Nervous System', 'Margo Jefferson', 'winner'),
-      ('2023.01', 'The Passengers', 'Will Ashon', 'shortlisted'),
-      ('2023.02', 'Scary Monsters', 'Michelle de Kretser', 'shortlisted'),
+      ('2023.01', 'Scary Monsters', 'Michelle de Kretser', 'shortlisted'),
       ('2024', 'The Home Child', 'Liz Berry', 'winner'),
+      ('2024.01', 'The Wren, The Wren', 'Anne Enright', 'shortlisted'),
     ], [
       (entry['position'], entry['title'], entry_author(entry), entry['result'])
       for entry in parsed['entries']
@@ -24709,13 +24709,14 @@ were ''[[Go Deep]]'' by [[Rilzy Adams]].
 
     html = '''
       <main>
-        <p>The 2022 winner is Colm Toibin, for his novel The Magician.</p>
+        <p>Many congratulations to Colm Toibin, who has been awarded the Rathbones Folio Prize 2022 for his novel The Magician.</p>
+        <h2>The Rathbones Folio Prize 2022 Shortlist</h2>
         <h2>The Rathbones Folio Prize 2022 Longlist</h2>
         <h4>A Little Devil in America - Hanif Abdurraqib (Allen Lane, Non-fiction)</h4>
+        <h4>***SHORTLISTED***</h4>
         <h4>Checkout 19 - Claire-Louise Bennett (Cape, Fiction)</h4>
         <h4>***SHORTLISTED***</h4>
         <h4>The Magician - Colm Toibin (Viking, Fiction)</h4>
-        <h4>***SHORTLISTED***</h4>
         <h2>Judges</h2>
         <p>News prose mentions another title by another writer.</p>
       </main>
@@ -24750,9 +24751,9 @@ were ''[[Go Deep]]'' by [[Rilzy Adams]].
         <tr><td>Paul Murray</td><td>The Bee Sting</td><td>Fiction shortlist</td></tr>
         <tr><td>Laura Cumming</td><td>Thunderclap</td><td>Non-Fiction winner</td></tr>
         <tr><td>Poet Name</td><td>Poetry Book</td><td>Poetry winner</td></tr>
-        <tr><td>2023</td><td>Margo Jefferson</td><td>Constructing a Nervous System</td><td>Winner</td></tr>
-        <tr><td></td><td>Will Ashon</td><td>The Passengers</td><td>Shortlist</td></tr>
-        <tr><td></td><td>Another Writer</td><td>Another Shortlisted Book</td><td></td></tr>
+        <tr><td>2023</td><td>Margo Jefferson</td><td>Constructing a Nervous System</td><td>Non-Fiction winner / Book of the Year winner</td></tr>
+        <tr><td></td><td>Will Ashon</td><td>The Passengers</td><td>Non-Fiction shortlist</td></tr>
+        <tr><td></td><td>Another Writer</td><td>Another Shortlisted Book</td><td>Fiction shortlist</td></tr>
       </table>
     '''
 
@@ -24761,6 +24762,7 @@ were ''[[Go Deep]]'' by [[Rilzy Adams]].
     overall = FolioWritersPrizeWikipediaParser('Book of the Year').parse(html)
 
     self.assertEqual([
+      ('2023.01', 'Another Shortlisted Book', 'Another Writer', 'shortlisted'),
       ('2024', 'The Wren, The Wren', 'Anne Enright', 'winner'),
       ('2024.01', 'The Bee Sting', 'Paul Murray', 'shortlisted'),
     ], [
@@ -24768,13 +24770,16 @@ were ''[[Go Deep]]'' by [[Rilzy Adams]].
       for entry in fiction['entries']
     ])
     self.assertEqual(
-      [('Thunderclap', 'Laura Cumming')],
+      [('Constructing a Nervous System', 'Margo Jefferson'),
+       ('The Passengers', 'Will Ashon'),
+       ('Thunderclap', 'Laura Cumming')],
       [(entry['title'], entry_author(entry)) for entry in nonfiction['entries']])
     self.assertEqual(
       [('Constructing a Nervous System', 'Margo Jefferson'),
-       ('The Passengers', 'Will Ashon'),
-       ('Another Shortlisted Book', 'Another Writer'),
-       ('The Home Child', 'Liz Berry')],
+       ('The Home Child', 'Liz Berry'),
+       ('The Wren, The Wren', 'Anne Enright'),
+       ('Thunderclap', 'Laura Cumming'),
+       ('Poetry Book', 'Poet Name')],
       [(entry['title'], entry_author(entry)) for entry in overall['entries']])
     self.assertNotIn('Poetry Book', [entry['title'] for entry in fiction['entries']])
 
@@ -24819,7 +24824,14 @@ were ''[[Go Deep]]'' by [[Rilzy Adams]].
     wiki_html = '''
       <table>
         <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td>2023</td><td>Michelle de Kretser</td><td>Scary Monsters</td><td>Fiction winner</td></tr>
+        <tr><td>2023</td><td>NoViolet Bulawayo</td><td>Glory</td><td>Fiction shortlist</td></tr>
+        <tr><td>2023</td><td>Sheila Heti</td><td>Pure Colour</td><td>Fiction shortlist</td></tr>
+        <tr><td>2023</td><td>Daisy Hildyard</td><td>Emergency</td><td>Fiction shortlist</td></tr>
+        <tr><td>2023</td><td>Elizabeth Strout</td><td>Lucy by the Sea</td><td>Fiction shortlist</td></tr>
         <tr><td>2024</td><td>Anne Enright</td><td>The Wren, The Wren</td><td>Fiction winner</td></tr>
+        <tr><td>2024</td><td>Paul Murray</td><td>The Bee Sting</td><td>Fiction shortlist</td></tr>
+        <tr><td>2024</td><td>Zadie Smith</td><td>The Fraud</td><td>Fiction shortlist</td></tr>
       </table>
     '''
     calls = []
@@ -24834,11 +24846,184 @@ were ''[[Go Deep]]'' by [[Rilzy Adams]].
 
     parsed = fetcher.fetch_and_parse(fetch_url)
 
-    self.assertEqual(['The Wren, The Wren'], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual(8, len(parsed['entries']))
+    self.assertEqual('Scary Monsters', parsed['entries'][0]['title'])
     self.assertEqual([fetcher.URL, fetcher.WIKIPEDIA_URL], calls)
     self.assertFalse(parsed['match_series'])
     with self.assertRaises(Exception):
       fetcher.fetch_and_parse(fetch_url, disable_fallbacks=True)
+
+  def test_folio_writers_prize_validated_era_baselines(self):
+    from parser.folio_writers_prize import (
+      CATEGORY_BOOK_OF_THE_YEAR,
+      CATEGORY_FICTION,
+      CATEGORY_NONFICTION,
+      FolioWritersPrizeOfficialParser,
+    )
+
+    years = (2014, 2015, 2017, 2018, 2019, 2020, 2021, 2022)
+    pages = {}
+
+    def cards(year):
+      return [(f'Title {year}-{index}', f'Author {year}-{index}')
+              for index in range(8)]
+
+    for year in years:
+      entries = cards(year)
+      if year in {2014, 2015}:
+        body = [
+          f'<p>The {year} winner was {entries[0][1]}, for {entries[0][0]}.</p>',
+          f'<h2>{year} Shortlist</h2>',
+        ]
+        body.extend(
+          f'<h1>{title}</h1><h2>{author}</h2>'
+          for title, author in entries)
+      elif year == 2017:
+        body = [
+          f'<p>The {year} winner was {entries[0][1]}, for {entries[0][0]}.</p>',
+          '<h2>Shortlist</h2>',
+        ]
+        body.extend(
+          f'<h3>{title}</h3><h4>{author} (Publisher)</h4>'
+          for title, author in entries)
+      elif year in {2018, 2019}:
+        body = [
+          f'<p>The {year} winner was {entries[0][1]}, for {entries[0][0]}.</p>',
+          '<h2>Shortlist</h2>',
+        ]
+        body.extend(f'<h4>{title} – {author} (Publisher)</h4>'
+                    for title, author in entries)
+      elif year == 2020:
+        body = [
+          f'<h1>{entries[0][1]} wins the {year} Writers\' Prize</h1>',
+          '<h1>Shortlist</h1>',
+        ]
+        body.extend(f'<h4>{title} – {author} (Publisher)</h4>'
+                    for title, author in entries)
+      elif year == 2021:
+        body = [
+          '<h1>Winner</h1>',
+          f'<h1>{entries[0][1]}’s {entries[0][0]}</h1>',
+          '<h1>Shortlist</h1>',
+        ]
+        body.extend(f'<h4>{title} – {author} (Publisher)</h4>'
+                    for title, author in entries)
+      else:
+        body = [
+          f'<p>Many congratulations to {entries[0][1]}, who has been awarded '
+          f'the Rathbones Folio Prize {year} for his novel {entries[0][0]}.</p>',
+          f'<h2>{year} Shortlist</h2><h2>{year} Longlist</h2>',
+        ]
+        body.extend(
+          f'<h4>***SHORTLISTED***</h4><h4>{title} – {author} (Publisher)</h4>'
+          for title, author in entries)
+      pages[f'/p{year}'] = '<main>' + ''.join(body) + '</main>'
+
+    fiction_2023 = [
+      ('Fiction Title 2023-0', 'Fiction Author 2023-0'),
+      ('Fiction Title 2023-1', 'Fiction Author 2023-1'),
+      ('Fiction Title 2023-2', 'Fiction Author 2023-2'),
+      ('Fiction Title 2023-3', 'Fiction Author 2023-3'),
+      ('Fiction Title 2023-4', 'Fiction Author 2023-4'),
+    ]
+    nonfiction_2023 = [
+      ('Nonfiction Title 2023-0', 'Nonfiction Author 2023-0'),
+      ('Nonfiction Title 2023-1', 'Nonfiction Author 2023-1'),
+      ('Nonfiction Title 2023-2', 'Nonfiction Author 2023-2'),
+      ('Nonfiction Title 2023-3', 'Nonfiction Author 2023-3'),
+      ('Nonfiction Title 2023-4', 'Nonfiction Author 2023-4'),
+    ]
+    pages['/p2023'] = (
+      '<main><h1>Nonfiction Title 2023-0 by Nonfiction Author 2023-0 '
+      '(Non-Fiction)</h1><h2>Shortlists</h2><h2>Non-Fiction</h2>'
+      + ''.join(
+        f'<p>{title} by {author}'
+        + (' – WINNER, NON-FICTION CATEGORY & BOOK OF THE YEAR'
+           if index == 0 else '') + '</p>'
+        for index, (title, author) in enumerate(nonfiction_2023))
+      + '<h2>Fiction</h2>'
+      + ''.join(
+        f'<p>{title} by {author}'
+        + (' – WINNER, FICTION CATEGORY' if index == 0 else '') + '</p>'
+        for index, (title, author) in enumerate(fiction_2023))
+      + '<h2>Poetry</h2><p>Poetry Title 2023 by Poetry Author 2023 – '
+        'WINNER, POETRY CATEGORY</p></main>')
+
+    fiction_2024 = [
+      ('Fiction Title 2024-0', 'Fiction Author 2024-0'),
+      ('Fiction Title 2024-1', 'Fiction Author 2024-1'),
+      ('Fiction Title 2024-2', 'Fiction Author 2024-2'),
+    ]
+    nonfiction_2024 = [
+      ('Nonfiction Title 2024-0', 'Nonfiction Author 2024-0'),
+      ('Nonfiction Title 2024-1', 'Nonfiction Author 2024-1'),
+      ('Nonfiction Title 2024-2', 'Nonfiction Author 2024-2'),
+    ]
+    pages['/p2024'] = (
+      '<main><h2>Fiction</h2><p>CATEGORY WINNER: Fiction Title 2024-0 by '
+      'Fiction Author 2024-0</p><h2>Non-Fiction</h2><p>CATEGORY WINNER: '
+      'Nonfiction Title 2024-0 by Nonfiction Author 2024-0</p><h2>Poetry</h2>'
+      '<p>CATEGORY WINNER / BOOK OF THE YEAR: Poetry Title 2024 by Poetry '
+      'Author 2024</p></main>')
+    for path, entries in (('/f2024', fiction_2024), ('/n2024', nonfiction_2024)):
+      category = 'Fiction' if path == '/f2024' else 'Non-Fiction'
+      pages[path] = (
+        f'<main><h1>2024 {category} Shortlist</h1><h2>CATEGORY WINNER</h2>'
+        + ''.join(f'<h2>{title}</h2><h3>{author}</h3>'
+                  for title, author in entries) + '</main>')
+
+    root = '<main>' + ''.join(
+      f'<a href="/p{year}">{year}</a>' for year in years + (2023, 2024, 2016, 2025)
+    ) + '<a href="/f2024">The Fiction Shortlist</a>' \
+        '<a href="/n2024">The Non-Fiction Shortlist</a></main>'
+
+    def fetch_url(url):
+      path = '/' + url.rstrip('/').split('/')[-1]
+      return pages[path]
+
+    for category, expected_total in (
+        (CATEGORY_BOOK_OF_THE_YEAR, 70),
+        (CATEGORY_FICTION, 8),
+        (CATEGORY_NONFICTION, 8)):
+      with self.subTest(category=category):
+        parsed = FolioWritersPrizeOfficialParser(category).parse(
+          root, 'https://example.test/', fetch_url=fetch_url, validate=True)
+        self.assertEqual(expected_total, len(parsed['entries']))
+        years_seen = [int(entry['award_year']) for entry in parsed['entries']]
+        self.assertNotIn(2016, years_seen)
+        self.assertNotIn(2025, years_seen)
+        counts = {}
+        for year in years_seen:
+          counts[year] = counts.get(year, 0) + 1
+        expected_counts = (
+          {year: 8 for year in years if year <= 2022} | {2023: 3, 2024: 3}
+          if category == CATEGORY_BOOK_OF_THE_YEAR
+          else {2023: 5, 2024: 3})
+        self.assertEqual(expected_counts, counts)
+        winners = [entry for entry in parsed['entries'] if entry['result'] == 'winner']
+        self.assertEqual(len(expected_counts), len(winners))
+        self.assertTrue(all(entry['position'] == entry['award_year'] for entry in winners))
+
+  def test_folio_writers_prize_prefix_variant_alias_and_final_by_split(self):
+    from parser.folio_writers_prize import FolioWritersPrizeOfficialParser
+
+    parser = FolioWritersPrizeOfficialParser('Non-Fiction')
+    rows = [
+      parser.row(2024, 'Thunderclap', 'Laura Cumming', 'shortlisted', 'source'),
+      parser.row(
+        2024, 'Thunderclap: a memoir of art and life & sudden death',
+        'Laura Cumming', 'winner', 'source'),
+      parser.row(2023, 'Lucy by the Sea', 'Elizabeth Strout', 'shortlisted', 'source'),
+    ]
+    deduped = parser.dedupe_rows([row for row in rows if row is not None])
+    self.assertEqual(2, len(deduped))
+    thunderclap = next(row for row in deduped if row['award_year'] == '2024')
+    self.assertEqual('Thunderclap: a memoir of art and life & sudden death', thunderclap['title'])
+    self.assertEqual(['Thunderclap'], thunderclap['aliases'])
+    self.assertEqual('winner', thunderclap['result'])
+    lucy = next(row for row in deduped if row['award_year'] == '2023')
+    self.assertEqual('Lucy by the Sea', lucy['title'])
+    self.assertEqual('Elizabeth Strout', lucy['author'])
 
   def test_nero_book_awards_official_archive_discovery_and_winner_promotion(self):
     from parser.nero_book_awards import NeroBookAwardsOfficialParser

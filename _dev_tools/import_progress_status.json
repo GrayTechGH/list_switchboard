@@ -1927,21 +1927,21 @@
     },
     {
       "source_id": "folio_writers_prize_book_of_the_year",
-      "name": "Folio/Writers' Prize - Book of the Year",
+      "name": "Folio/Writers' Prize - Book of the Year (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
     },
     {
       "source_id": "folio_writers_prize_fiction",
-      "name": "Folio/Writers' Prize - Fiction",
+      "name": "Folio/Writers' Prize - Fiction (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
     },
     {
       "source_id": "folio_writers_prize_nonfiction",
-      "name": "Folio/Writers' Prize - Non-Fiction",
+      "name": "Folio/Writers' Prize - Non-Fiction (discontinued)",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""
