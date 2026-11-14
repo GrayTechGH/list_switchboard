@@ -5,6 +5,13 @@
 
 from urllib.parse import parse_qs, urlparse
 
+from .dragons_and_jetpacks_transport import DragonsJetpacksFetchPolicy
+
+try:
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError
+except ImportError:
+  from errors import ImportCancelledError
+
 from .generic import (
   CATEGORY_FANTASY,
   CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,
@@ -37,16 +44,28 @@ class UrlFetcherDragonsJetpacks(GoodreadsFetchPolicyMixin, UrlFetcherGeneric):
     if progress is None and len(args) > 3:
       progress = args[3]
     self._dragons_fetch_progress = progress
+    log = kwargs.get('log', args[2] if len(args) > 2 else None)
+    self._dragons_fetch_policy = DragonsJetpacksFetchPolicy(
+      fetch_url, lambda url: self.legacy_fetch_url(fetch_url, url), self.parser(), log=log)
     try:
       return super().fetch_and_parse(fetch_url, *args, **kwargs)
     finally:
       self._dragons_fetch_progress = None
+      self._dragons_fetch_policy = None
 
   def fetch_url(self, fetch_url, url):
+    policy = getattr(self, '_dragons_fetch_policy', None)
+    if policy is not None:
+      return policy.fetch(url)
+    return self.legacy_fetch_url(fetch_url, url)
+
+  def legacy_fetch_url(self, fetch_url, url):
     retries = self.timeout_retries(url)
     for retry in range(retries + 1):
       try:
         return self.fetch_url_once(fetch_url, url)
+      except ImportCancelledError:
+        raise
       except Exception as err:
         if retry >= retries or not self.is_timeout_error(err):
           raise

@@ -7,15 +7,21 @@ try:
   from calibre_plugins.list_switchboard.parser.source_fallback import (
     SourceAttempt, SourceFallbackRunner,
   )
+  from calibre_plugins.list_switchboard.url_fetcher.librarything_fallback import (
+    LibraryThingFetchPolicyMixin, LibraryThingSourceAttempt,
+  )
 except ImportError:
   from parser.source_fallback import SourceAttempt, SourceFallbackRunner
+  from url_fetcher.librarything_fallback import (
+    LibraryThingFetchPolicyMixin, LibraryThingSourceAttempt,
+  )
 
 
 NED_KELLY_URL = 'https://www.librarything.com/award/2492/Ned-Kelly-Award'
 NED_KELLY_WIKI_URL = 'https://en.wikipedia.org/wiki/Ned_Kelly_Awards'
 
 
-class UrlFetcherNedKellyAward(UrlFetcherGeneric):
+class UrlFetcherNedKellyAward(LibraryThingFetchPolicyMixin, UrlFetcherGeneric):
 
   FILTER_CATEGORIES = (CATEGORY_CRIME_MYSTERY_THRILLER,)
   FETCH_URLS = ()
@@ -42,7 +48,8 @@ class UrlFetcherNedKellyAward(UrlFetcherGeneric):
         lambda html, url, **_kwargs: NedKellyWikipediaParser().parse(
           html, url, self.NAME, self.CATEGORY, self.CATEGORY_ALIASES),
         source_rank=0),
-      SourceAttempt(
+      LibraryThingSourceAttempt(
+        self,
         'LibraryThing',
         self.LIBRARYTHING_URL,
         lambda html, url, **_kwargs: NedKellyLibraryThingParser().parse(

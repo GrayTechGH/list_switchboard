@@ -33,6 +33,7 @@ DEBUG_SECTIONS = (
   ('writes', 'Metadata writes'),
   ('storage', 'List storage and saved matches'),
   ('recipe', 'Recipe fetch and parsed output'),
+  ('camoufox', 'Camoufox transport'),
   ('fallback', 'Fallback activity only'),
   ('import', 'Import matching and report'),
   ('goodreads', 'Goodreads lookups'),
@@ -323,6 +324,9 @@ class DebugMixin:
 
   def debug_parser_message(self, message):
     self.debug_log(message, section='recipe')
+
+  def debug_camoufox(self, message):
+    self.debug_log(message, section='camoufox')
 
   def debug_recipe_output(self, parsed):
     entries = parsed.get('entries') or []

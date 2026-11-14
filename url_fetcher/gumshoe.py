@@ -7,15 +7,21 @@ try:
   from calibre_plugins.list_switchboard.parser.source_fallback import (
     SourceAttempt, SourceFallbackRunner,
   )
+  from calibre_plugins.list_switchboard.url_fetcher.librarything_fallback import (
+    LibraryThingFetchPolicyMixin, LibraryThingSourceAttempt,
+  )
 except ImportError:
   from parser.source_fallback import SourceAttempt, SourceFallbackRunner
+  from url_fetcher.librarything_fallback import (
+    LibraryThingFetchPolicyMixin, LibraryThingSourceAttempt,
+  )
 
 
 GUMSHOE_URL = 'https://www.librarything.com/award/1785/Gumshoe-Award'
 GUMSHOE_WIKI_URL = 'https://en.wikipedia.org/wiki/Gumshoe_Awards'
 
 
-class UrlFetcherGumshoeAward(UrlFetcherGeneric):
+class UrlFetcherGumshoeAward(LibraryThingFetchPolicyMixin, UrlFetcherGeneric):
 
   FILTER_CATEGORIES = (CATEGORY_CRIME_MYSTERY_THRILLER,)
   FETCH_URLS = ()
@@ -35,7 +41,8 @@ class UrlFetcherGumshoeAward(UrlFetcherGeneric):
     except ImportError:
       from parser.gumshoe import GumshoeLibraryThingParser, GumshoeWikipediaParser
     return (
-      SourceAttempt(
+      LibraryThingSourceAttempt(
+        self,
         'LibraryThing',
         self.URL,
         lambda html, url, **_kwargs: GumshoeLibraryThingParser().parse(

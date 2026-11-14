@@ -22,6 +22,10 @@ Maintenance notes:
 - Historical contributor repairs are book-ID/title guarded. Runtime detail
   enrichment is limited to the newest advertised award year and stops after
   the first access challenge without discarding ballot rows.
+- Fetch validation is page-local so transport recovery never repeats the full
+  import. Page-error handlers must propagate cancellation, not partial results.
+- Dated pages must not identify another year after a navigation timeout. Past
+  overview navigation and an absent category do not establish page identity.
 """
 
 from datetime import date
@@ -31,6 +35,11 @@ import re
 from urllib.parse import unquote, urljoin, urlparse
 
 from bs4 import BeautifulSoup
+
+try:
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError
+except ImportError:
+  from errors import ImportCancelledError
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import ( # type: ignore
@@ -143,6 +152,84 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
     }
     self.contributor_corrections = load_goodreads_contributor_corrections()
 
+  def fetch_page_role(self, url):
+    path = urlparse(url).path.rstrip('/')
+    if path.startswith('/book/show/'):
+      return 'contributors'
+    if path == '/choiceawards' or re.fullmatch(r'/choiceawards/best-books-\d{4}', path):
+      return 'overview'
+    return 'ballot'
+
+  def validate_fetch_payload(self, html, url):
+    """Validate one fetched page without retaining rows or transport notes."""
+    role = self.fetch_page_role(url)
+    soup = BeautifulSoup(html or '', 'html.parser')
+    title = normalize_heading(self.clean_text(soup.title))
+    if self.is_challenge_page(html) or title.startswith(('just a moment', 'sign in', 'sign up', 'login')):
+      raise ValueError(f'Goodreads Choice {role} access challenge or login page: {url}')
+    if role != 'contributors':
+      self.validate_page_year(soup, url)
+    if role == 'ballot':
+      notes = []
+      if self.parse_category_page(html, url, notes=notes, validate=True):
+        return
+      reason = '; '.join(notes) or 'no usable ballot rows'
+    elif role == 'contributors':
+      if self.detail_contributors(html):
+        return
+      reason = 'no usable contributor names'
+    else:
+      for link in soup.find_all('a', href=True):
+        target = urlparse(urljoin(url, link['href']))
+        host = (target.hostname or '').casefold()
+        if (
+            (host == 'goodreads.com' or host.endswith('.goodreads.com'))
+            and re.fullmatch(r'/choiceawards/[^/]+-\d{4}/?', target.path)
+            and self.clean_text(link)):
+          return
+      reason = 'no recognizable Choice Awards navigation'
+    raise ValueError(f'Goodreads Choice {role} payload rejected: {reason}')
+
+  def validate_page_year(self, soup, url):
+    """Reject a previous document left behind by a timed-out navigation.
+
+    Historical overview links are navigation, not page identity. Prefer head
+    metadata/current-page headings; only metadata-free fragments fall back to
+    their ballot-link years. Category availability is independent of year.
+    """
+    def choice_year(value):
+      target = urlparse(urljoin(url, value or ''))
+      host = (target.hostname or '').casefold()
+      if host != 'goodreads.com' and not host.endswith('.goodreads.com'):
+        return None
+      match = re.fullmatch(r'/choiceawards/[^/]+-(\d{4})/?', target.path)
+      return int(match.group(1)) if match else None
+
+    expected = choice_year(url)
+    if expected is None:
+      return  # The undated landing page is allowed to redirect to the latest year.
+    identity_years = set()
+    for node in soup.select('link[rel="canonical"], meta[property="og:url"]'):
+      year = choice_year(node.get('href') or node.get('content'))
+      if year is not None:
+        identity_years.add(year)
+    for node in soup.select('title, h1'):
+      text = self.clean_text(node)
+      year = year_from_text(text)
+      if year is not None:
+        identity_years.add(year)
+    if not identity_years:
+      for link in soup.find_all('a', href=True):
+        target = urlparse(urljoin(url, link['href']))
+        if re.fullmatch(r'/choiceawards/best-books-\d{4}/?', target.path):
+          continue
+        year = choice_year(link['href'])
+        if year is not None and self.clean_text(link):
+          identity_years.add(year)
+    if identity_years and identity_years != {expected}:
+      observed = ', '.join(str(year) for year in sorted(identity_years))
+      raise ValueError(f'Goodreads Choice page year mismatch: requested {expected}, received {observed}: {url}')
+
   def parse(
       self, html, base_url=CHOICE_AWARDS_URL, name=AWARD_NAME,
       fetch_url=None, log=None, progress=None, overview_pages=None,
@@ -210,6 +297,8 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
           progress(index, total, f'Fetching Goodreads Choice Awards {year}')
         page_html = html if self.same_url(url, base_url) else fetch_url(url)
         pages.append((url, page_html))
+      except ImportCancelledError:
+        raise
       except Exception as err:
         notes.append(f'Goodreads Choice Awards overview could not be fetched: {url}: {err}')
     return tuple(pages)
@@ -249,6 +338,8 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
           fallback_category=link['category'],
           notes=notes,
           validate=True))
+      except ImportCancelledError:
+        raise
       except Exception as err:
         notes.append(
           f'Goodreads Choice Awards category page could not be fetched: '
@@ -950,6 +1041,8 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
         successful += 1
         row['authors'] = self.merge_authors(
           row.get('authors') or (), detail_authors)
+      except ImportCancelledError:
+        raise
       except Exception as err:
         if self.is_access_challenge_error(err):
           challenge = True

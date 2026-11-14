@@ -558,7 +558,8 @@ class StorageMixin:
       item = self.saved_match_item_for_book(item, entry, book_id, db)
     return item
 
-  def upsert_saved_match_override_for_book(self, list_id, entry, book_id, db=None):
+  def upsert_saved_match_override_for_book(
+      self, list_id, entry, book_id, db=None, existing_book_ids=()):
     key = entry_key(entry)
     if not key:
       return None
@@ -572,7 +573,12 @@ class StorageMixin:
         by_key[item_key] = dict(item)
       elif isinstance(item, dict):
         unkeyed.append(item)
-    by_key[key] = self.saved_match_item_for_book(by_key.get(key), entry, book_id, db)
+    item = by_key.get(key)
+    # Add Selected must snapshot the existing row before its first exact override
+    # suppresses automatic matches. Import Review still replaces selections exactly.
+    for existing_id in existing_book_ids:
+      item = self.saved_match_item_for_book(item, entry, existing_id, db)
+    by_key[key] = self.saved_match_item_for_book(item, entry, book_id, db)
     self.write_match_cache(list_id, unkeyed + list(by_key.values()))
     self.debug_storage_save_match(book_id, key, entry.get('position', ''))
     return by_key[key]

@@ -13,8 +13,14 @@ try:
   from calibre_plugins.list_switchboard.parser.source_fallback import (
     SourceAttempt, SourceFallbackRunner,
   )
+  from calibre_plugins.list_switchboard.url_fetcher.librarything_fallback import (
+    LibraryThingFetchPolicyMixin, LibraryThingSourceAttempt,
+  )
 except ImportError:
   from parser.source_fallback import SourceAttempt, SourceFallbackRunner
+  from url_fetcher.librarything_fallback import (
+    LibraryThingFetchPolicyMixin, LibraryThingSourceAttempt,
+  )
 
 
 CWC_URL = 'https://www.librarything.com/award/1612/Crime-Writers-of-Canada-Awards-of-Excellence'
@@ -28,7 +34,8 @@ CWC_YA_CATEGORIES = (
 )
 
 
-class UrlFetcherCrimeWritersOfCanadaAward(UrlFetcherGeneric):
+class UrlFetcherCrimeWritersOfCanadaAward(
+    LibraryThingFetchPolicyMixin, UrlFetcherGeneric):
 
   FILTER_CATEGORIES = CWC_CATEGORIES
   FETCH_URLS = ()
@@ -60,7 +67,8 @@ class UrlFetcherCrimeWritersOfCanadaAward(UrlFetcherGeneric):
 
   def source_attempts(self):
     return (
-      SourceAttempt(
+      LibraryThingSourceAttempt(
+        self,
         'LibraryThing',
         self.URL,
         lambda html, url, **_kwargs: self.create_librarything_parser().parse(

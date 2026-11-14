@@ -15,6 +15,7 @@ Maintenance notes:
 """
 
 import re
+from time import perf_counter
 from collections import Counter, OrderedDict
 
 from qt.core import QDialog, QInputDialog
@@ -389,13 +390,23 @@ class ListStateMixin:
       lambda: self._add_selected_to_active(force_match_review=force_match_review))
 
   def _add_selected_to_active(self, force_match_review=False):
+    started = perf_counter()
     ids = self.selected_ids_with_series() if prefs.get('include_calibre_series', False) else self.selected_book_ids()
+    self.debug_active_add_timing(
+      'selection and series expansion', started,
+      books=len(ids), include_series=bool(prefs.get('include_calibre_series', False)))
     self.debug_selection_ids(ids)
     if not ids:
       error_dialog(self.gui, 'List Switchboard', 'Select one or more books first.', show=True)
       return
 
     self.add_book_ids_to_active(ids, force_match_review=force_match_review)
+
+  def debug_active_add_timing(self, stage, started, **counts):
+    details = ' '.join(f'{key}={value}' for key, value in counts.items())
+    self.debug_log(
+      f'Add Selected timing: {stage} {perf_counter() - started:.3f}s'
+      + (f' {details}' if details else ''), section='selection')
 
   def selected_ids_with_series(self):
     return self.expand_ids_with_series(self.selected_book_ids())
@@ -422,12 +433,15 @@ class ListStateMixin:
     return sorted(expanded)
 
   def add_book_ids_to_active(self, ids, force_match_review=False):
+    total_started = stage_started = perf_counter()
     active = self.current_active()
     if active is None:
       active = self.create_new_active_list(selected_ids=ids)
       if active is None:
         return
+    self.debug_active_add_timing('resolve active list', stage_started)
 
+    stage_started = perf_counter()
     updates = {}
     skipped = 0
     active_field = prefs['active_list_field']
@@ -437,7 +451,11 @@ class ListStateMixin:
         skipped += 1
       else:
         updates[book_id] = active
+    self.debug_active_add_timing('read selected Active List values', stage_started, books=len(ids), pending=len(updates))
+    stage_started = perf_counter()
     cache = self.import_cache_for_active_list(active)
+    self.debug_active_add_timing('find import cache', stage_started, hit=bool(cache))
+    stage_started = perf_counter()
     if cache:
       self.debug_storage_cached_active_add_start(
         active, cache.get('list_id') or '', len(updates), len(cache.get('entries') or []))
@@ -446,28 +464,40 @@ class ListStateMixin:
     else:
       self.debug_storage_import_cache(active, 'miss for active add', reason='no cache for active list')
       active_index_updates = self.added_active_index_updates(active, updates)
+    self.debug_active_add_timing('prepare matches and indexes including dialog time', stage_started, accepted=len(updates))
     if not updates:
+      self.debug_active_add_timing('total including dialog time', total_started, added=0)
       self.status_message(
         f'Added 0 books to "{active}". Skipped {skipped} already on the list.')
       return
+    stage_started = perf_counter()
     self.write_fields(
       active_updates=updates,
       assign_series_indexes=True,
       active_index_updates=active_index_updates)
+    self.debug_active_add_timing('write and refresh metadata', stage_started, books=len(updates))
+    self.debug_active_add_timing('total including dialog time', total_started, added=len(updates))
     self.status_message(
       f'Added {len(updates)} books to "{active}". Skipped {skipped} already on the list.')
 
   def cached_active_add_updates(self, active, active_updates, cache, force_match_review=False):
+    stage_started = perf_counter()
     fallback_index_updates = self.added_active_index_updates(active, active_updates)
+    self.debug_active_add_timing('calculate fallback indexes', stage_started, books=len(active_updates))
     if not active_updates:
       return {}, {}
     entries = cache.get('entries') or []
     if not entries:
       return active_updates, fallback_index_updates
     db = self.db.new_api
+    stage_started = perf_counter()
     context = self.cached_active_add_context(active_updates, entries, cache, db)
+    self.debug_active_add_timing('build cached match context', stage_started, entries=len(entries))
+    stage_started = perf_counter()
     updates = {}
     index_updates = {}
+    added_ids_by_entry = {}
+    manual_entries = {}
     for book_id in active_updates:
       default_index = fallback_index_updates.get(book_id)
       entry, index_value, save_manual = self.cached_active_match_for_book(
@@ -483,15 +513,93 @@ class ListStateMixin:
         index_value = default_index
       if index_value is not None:
         index_updates[book_id] = index_value
+      if entry is not None:
+        key = entry_key(entry)
+        added_ids_by_entry.setdefault(key, []).append(book_id)
       if save_manual and entry is not None:
         self.debug_storage_cached_active_add_decision(
           book_id, 'saving nonautomatic override', entry, index_value)
-        self.upsert_saved_match_override_for_book(
-          cache.get('list_id') or active, entry, book_id, db=db)
+        manual_entries[key] = entry
       elif entry is not None:
         self.debug_storage_cached_active_add_decision(
           book_id, 'not saving override', entry, index_value)
+    self.debug_active_add_timing('resolve book matches including dialog time', stage_started, books=len(active_updates))
+    stage_started = perf_counter()
+    for key, entry in manual_entries.items():
+      added_ids = added_ids_by_entry[key]
+      self.upsert_saved_match_override_for_book(
+        cache.get('list_id') or active, entry, added_ids[-1], db=db,
+        existing_book_ids=(
+          self.cached_active_add_existing_book_ids(active, entry, context, db)
+          + added_ids[:-1]))
+    self.debug_active_add_timing('save manual overrides', stage_started, entries=len(manual_entries))
     return updates, index_updates
+
+  def cached_active_add_existing_book_ids(self, active, entry, context, db):
+    """Preserve current row membership when Add Selected creates an override.
+
+    Positions can be tied across unrelated series. Preserve only active books
+    with unambiguous button title/author or series/author evidence at that
+    position. Existing manual selections and blank directives stay authoritative.
+    """
+    if 'existing_book_ids_by_entry' not in context:
+      cache = context['cache']
+      list_id = cache.get('list_id') or active
+      directed_keys = set(self.saved_match_overrides(list_id))
+      directed_keys.update(self.saved_unmatched_overrides(list_id))
+      stage_started = perf_counter()
+      active_values = self.cached_active_add_all_field_for(
+        db, prefs['active_list_field'], context['all_ids'], default_value='')
+      active_key = normalize_key(active)
+      active_ids = [
+        book_id for book_id, value in active_values.items()
+        if normalize_key(clean_name('' if value is None else str(value))) == active_key
+      ]
+      self.debug_active_add_timing(
+        'find existing Active List books', stage_started,
+        library_books=len(context['all_ids']), active_books=len(active_ids))
+      stage_started = perf_counter()
+      active_context = self.cached_active_add_context(
+        dict.fromkeys(active_ids, active), context['entries'], cache, db)
+      self.debug_active_add_timing(
+        'build existing book context', stage_started, active_books=len(active_ids))
+      stage_started = perf_counter()
+      positions = self.active_review_positions_by_book(active_ids)
+      self.debug_active_add_timing(
+        'read existing book positions', stage_started, active_books=len(active_ids))
+      stage_started = perf_counter()
+      # Only entries at the book's position can own its current Active List row.
+      entries_by_position = {}
+      for candidate in active_context['unique_entries']:
+        position = self.normalized_position_text(candidate.get('position', ''))
+        if position:
+          entries_by_position.setdefault(position, []).append(candidate)
+      by_key = {}
+      for existing_id in sorted(active_ids):
+        if self.saved_cached_entry_for_book(existing_id, active_context) is not None:
+          continue
+        position = positions.get(existing_id)
+        if not position:
+          continue
+        position_entries = entries_by_position.get(position, ())
+        if not position_entries:
+          continue
+        candidates = [
+          candidate for evidence, candidate in self.cached_entry_candidates_for_book(
+            existing_id, active_context, candidate_entries=position_entries)
+          if (evidence['auto_eligible'] or (
+            evidence['series']
+            and evidence['author'] != CACHED_ACTIVE_ADD_BUTTON_MATCH_NONE))
+        ]
+        if len(candidates) != 1:
+          continue
+        key = entry_key(candidates[0])
+        if key not in directed_keys:
+          by_key.setdefault(key, []).append(existing_id)
+      self.debug_active_add_timing(
+        'classify existing row books', stage_started, active_books=len(active_ids))
+      context['existing_book_ids_by_entry'] = by_key
+    return context['existing_book_ids_by_entry'].get(entry_key(entry), [])
 
   def cached_active_add_context(self, active_updates, entries, cache, db):
     selected_ids = list(active_updates)
@@ -673,13 +781,15 @@ class ListStateMixin:
   def saved_cached_entry_for_book(self, book_id, context):
     return context['override_entries_by_book'].get(book_id)
 
-  def cached_entry_candidates_for_book(self, book_id, context, default_index=None):
+  def cached_entry_candidates_for_book(
+      self, book_id, context, default_index=None, candidate_entries=None):
     title = context['titles'].get(book_id, '') or ''
     authors = context['authors'].get(book_id, []) or []
     book_series = context.get('series', {}).get(book_id, []) if context.get('match_series') else []
     self.debug_storage_cached_active_add_book(book_id, title, authors, default_index)
     ranked = []
-    for entry in context['unique_entries']:
+    entries = context['unique_entries'] if candidate_entries is None else candidate_entries
+    for entry in entries:
       evidence = cached_active_add_button_candidate_evidence(
         entry,
         title,
@@ -737,6 +847,7 @@ class ListStateMixin:
     authors = db.field_for('authors', book_id, default_value=[]) or []
     if not isinstance(authors, (list, tuple)):
       authors = [str(authors)]
+    stage_started = perf_counter()
     d = ActiveAddMatchDialog(
       self.gui,
       title,
@@ -747,7 +858,13 @@ class ListStateMixin:
       initial_show_all=initial_show_all,
       preferred_entry=preferred_entry,
       active_list_name=active_list_name)
-    if d.exec() != QDialog.Accepted:
+    self.debug_active_add_timing(
+      'build match dialog', stage_started,
+      entries=len(entries), candidates=len(candidates))
+    stage_started = perf_counter()
+    accepted = d.exec() == QDialog.Accepted
+    self.debug_active_add_timing('match dialog open', stage_started, accepted=accepted)
+    if not accepted:
       return None, None, False
     entry = d.selected_entry
     index_value = d.index_value()
@@ -765,6 +882,7 @@ class ListStateMixin:
     return entry, index_value, save_manual
 
   def added_active_index_updates(self, active, active_updates):
+    started = perf_counter()
     index_field = self.active_series_index_field()
     if not active_updates:
       return {}
@@ -775,7 +893,8 @@ class ListStateMixin:
     max_index = 0
     max_in_field = 0
     found_active_index = False
-    for book_id in self.all_book_ids():
+    all_ids = self.all_book_ids()
+    for book_id in all_ids:
       if book_id in update_ids:
         continue
       index = self.read_active_position(index_field, book_id)
@@ -794,6 +913,9 @@ class ListStateMixin:
     for book_id in active_updates:
       index_updates[book_id] = float(next_index)
       next_index += 1
+    self.debug_active_add_timing(
+      'scan library for next index', started,
+      library_books=len(all_ids), pending=len(update_ids))
     return index_updates
 
   def select_active_list_books(self):

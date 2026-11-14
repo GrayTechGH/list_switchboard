@@ -15,7 +15,7 @@ Maintenance notes:
 """
 
 import re
-from urllib.parse import urljoin
+from urllib.parse import parse_qs, urljoin, urlparse
 
 from bs4 import BeautifulSoup, UnicodeDammit
 
@@ -188,6 +188,10 @@ def require_complete_lohf_result(parsed, category, source_label):
   return parsed
 
 
+class LOHFPaginationError(ValueError):
+  """Unsafe pagination must abort even when already parsed rows look complete."""
+
+
 class LadiesOfHorrorFictionParser(AwardParserBase):
 
   AWARD_NAME = AWARD_NAME
@@ -267,20 +271,97 @@ class LadiesOfHorrorFictionParser(AwardParserBase):
       rows.extend(dict(entry) for entry in parsed.get('entries', ()))
     return self.parsed_from_rows(name, base_url, rows, notes)
 
+  def normalized_goodreads_page_url(self, url):
+    parsed = urlparse(url)
+    expected = urlparse(GOODREADS_URL)
+    if (parsed.scheme != 'https' or parsed.netloc.casefold() != expected.netloc
+        or parsed.path.rstrip('/') != expected.path):
+      raise LOHFPaginationError('LOHF pagination left the Goodreads award.')
+    pages = parse_qs(parsed.query, keep_blank_values=True).get('page', ['1'])
+    if len(pages) != 1 or not pages[0].isdigit() or int(pages[0]) < 1:
+      raise LOHFPaginationError('LOHF returned an invalid page number.')
+    page = int(pages[0])
+    if page > 8:
+      raise LOHFPaginationError('LOHF pagination exceeded the eight-page safety bound.')
+    return GOODREADS_URL + (f'?page={page}' if page > 1 else '')
+
   def discover_goodreads_page_urls(self, html, base_url=GOODREADS_URL):
     soup = BeautifulSoup(self.decode_source(html), 'html.parser')
-    urls = [base_url]
+    urls = [self.normalized_goodreads_page_url(base_url)]
     for link in soup.find_all('a', href=True):
-      href = link.get('href') or ''
-      text = self.node_text(link)
-      if 'award/show/35484-ladies-of-horror-fiction-award' not in href:
+      target = urljoin(base_url, link['href'])
+      parsed = urlparse(target)
+      if parsed.path.rstrip('/') != urlparse(GOODREADS_URL).path:
         continue
-      if 'page=' not in href and not text.isdigit():
+      if 'page' not in parse_qs(parsed.query, keep_blank_values=True):
         continue
-      url = urljoin(base_url, href)
+      # Unrelated hosts are never followed, even if they copy the award path.
+      if parsed.scheme != 'https' or parsed.netloc.casefold() != 'www.goodreads.com':
+        continue
+      url = self.normalized_goodreads_page_url(target)
       if url not in urls:
         urls.append(url)
     return tuple(urls)
+
+  def validate_goodreads_payload(self, html, url):
+    """Recognize award works independently of the selected recipe category.
+
+    Canonical URLs sometimes omit pagination. Only explicit page metadata or
+    current-page controls identify a response; navigation links do not.
+    """
+    normalized = self.normalized_goodreads_page_url(url)
+    page = parse_qs(urlparse(normalized).query).get('page', ['1'])[0]
+    soup = BeautifulSoup(self.decode_source(html), 'html.parser')
+    for node in soup.select('title, h1'):
+      text = self.node_text(node).casefold()
+      if any(marker in text for marker in (
+          'just a moment', 'access denied', 'sign in', 'log in', 'page not found',
+          'verify you are human', 'security verification', 'javascript is disabled')):
+        raise ValueError('LOHF Goodreads returned a login, error, or challenge page.')
+    if soup.select_one('#challenge-running, #cf-challenge-running, form[action*="/user/sign_in"]'):
+      raise ValueError('LOHF Goodreads returned a login or challenge form.')
+    for node in soup.select('link[rel="canonical"], meta[property="og:url"]'):
+      value = node.get('href') or node.get('content')
+      if not value:
+        continue
+      identity = urljoin(url, value)
+      actual = self.normalized_goodreads_page_url(identity)
+      if 'page' in parse_qs(urlparse(identity).query) and actual != normalized:
+        raise ValueError('LOHF Goodreads returned another pagination page.')
+    for node in soup.select('.pagination .current, .pagination [aria-current="page"]'):
+      value = self.node_text(node)
+      if value.isdigit() and str(int(value)) != page:
+        raise ValueError('LOHF Goodreads returned another pagination page.')
+    for node in soup.select('title, h1'):
+      match = re.search(r'\bpage\s+(\d+)\s+(?:out\s+of|of)\s+\d+\b',
+                        self.node_text(node), re.I)
+      if match and str(int(match.group(1))) != page:
+        raise ValueError('LOHF Goodreads returned another pagination page.')
+    label_pattern = re.compile(
+      r'^Ladies\s+of\s+Horror\s+Fiction\s+Award\s+(?:Nominee\s+)?for\s+.+?\s*\((?:19|20)\d{2}\)$', re.I)
+    records = set()
+    for row in soup.find_all('tr'):
+      if 'Book' not in (row.get('itemtype') or ''):
+        continue
+      title, author = row.find(class_='bookTitle'), row.find(class_='authorName')
+      if title is None or author is None:
+        continue
+      for label in self.goodreads_label_texts(row):
+        if label_pattern.fullmatch(label) and self.node_text(title) and self.node_text(author):
+          records.add((self.node_text(title), self.node_text(author), label))
+    if not records:
+      lines = self.goodreads_lines(soup)
+      previous = -1
+      for index, line in enumerate(lines):
+        if not label_pattern.fullmatch(line):
+          continue
+        work = self.goodreads_work_from_buffer(lines[previous + 1:index])
+        previous = index
+        if work and all(work):
+          records.add((*work, line))
+    if not records:
+      raise ValueError('LOHF Goodreads returned no recognizable award work records.')
+    return frozenset(records)
 
   def goodreads_table_rows(self, soup, base_url, category, category_aliases):
     rows = []

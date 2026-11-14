@@ -12,6 +12,9 @@ Maintenance notes:
 - A plus sign splits selections only when it separates distinct linked titles.
   Plus signs inside one linked title or a parenthetical remain part of that
   title.
+- Rendered Reddit pages include sidebar/footer prose that resembles credits.
+  Scope HTML traversal to the wiki container; an unrecognized full Reddit
+  document must fail into the next transport rather than scan the page body.
 """
 
 import json
@@ -187,26 +190,37 @@ def paragraph_blocks(markdown):
 
 
 def html_row_markdown(node, base_url):
-  """Serialize emphasized HTML titles as Markdown while retaining nearby text."""
+  """Preserve links and emphasis regardless of which tag wraps the other."""
   chunks = []
 
-  def append(item):
+  def append(item, emphasized=False):
     if isinstance(item, NavigableString):
       chunks.append(str(item))
       return
     if not isinstance(item, Tag):
       return
-    if item.name in ('em', 'i'):
-      parent = item.parent if getattr(item.parent, 'name', '') == 'a' else None
-      href = urljoin(base_url, parent.get('href', '')) if parent else ''
+    if item.name == 'a':
       title = normalize_text(item.get_text(' ', strip=True))
-      chunks.append(f'[*{title}*]({href})' if href else f'*{title}*')
+      if emphasized or item.find(['em', 'i']) is not None:
+        title = f'*{title}*'
+      href = item.get('href') or ''
+      chunks.append(f'[{title}]({href})' if href else title)
+      return
+    if item.name in ('em', 'i'):
+      if item.find('a', href=True) is not None:
+        for child in item.children:
+          append(child, emphasized=True)
+      else:
+        chunks.append(f'*{normalize_text(item.get_text(" ", strip=True))}*')
+      return
+    if item.name == 'br':
+      chunks.append(' ')
       return
     for child in item.children:
-      append(child)
+      append(child, emphasized=emphasized)
 
   append(node)
-  return normalize_text(''.join(chunks))
+  return normalize_text(re.sub(r'\s+', ' ', ''.join(chunks)))
 
 
 class RBookclubParser(ListParserBase):
@@ -283,9 +297,10 @@ class RBookclubParser(ListParserBase):
 
   def blocks_from_html(self, payload, base_url):
     soup = BeautifulSoup(str(payload), 'html.parser')
+    root = self.wiki_html_root(soup)
     blocks = []
     started = False
-    for node in soup.find_all(['h1', 'h2', 'h3', 'p', 'li']):
+    for node in root.find_all(['h1', 'h2', 'h3', 'p', 'li']):
       text = normalize_text(node.get_text(' ', strip=True))
       if not text:
         continue
@@ -306,6 +321,28 @@ class RBookclubParser(ListParserBase):
       elif started:
         blocks.append(('row', html_row_markdown(node, base_url)))
     return blocks
+
+  def wiki_html_root(self, soup):
+    def has_heading(node):
+      return any(normalize_text(h.get_text(' ', strip=True)).casefold() == 'previous selections'
+        for h in node.find_all(['h1', 'h2', 'h3']))
+
+    # The rendered Shreddit wiki uses div.md.wiki. Classic Reddit wraps .md
+    # in .wiki-page-content. Prefer these boundaries over any enclosing main.
+    for selector in ('.md.wiki', '.wiki-page-content .md', '.wiki-page-content', '.md'):
+      for candidate in soup.select(selector):
+        if has_heading(candidate):
+          return candidate
+    title = soup.title.get_text(' ', strip=True).casefold() if soup.title else ''
+    if soup.find('shreddit-app') is not None or 'reddit' in title:
+      raise ValueError('Could not identify the r/bookclub wiki content container.')
+    if soup.find(['html', 'body']) is not None:
+      for candidate in soup.find_all('main'):
+        if has_heading(candidate):
+          return candidate
+      raise ValueError('Could not identify the r/bookclub wiki content container.')
+    # JSON content_html and archive responses can be standalone wiki fragments.
+    return soup
 
   def entries_from_blocks(self, blocks, base_url):
     sections = []
@@ -452,7 +489,7 @@ class RBookclubParser(ListParserBase):
     title_links = []
     for match in links:
       tail = body[match.end():]
-      role_match = re.match(r'\s+(translated\s+by|by)\s+', tail, re.I)
+      role_match = re.match(r'\s*[,)]?\s*(translated\s+by|by)\s+', tail, re.I)
       if role_match:
         title_links.append((match, role_match))
     if not title_links:

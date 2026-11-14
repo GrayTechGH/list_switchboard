@@ -20,15 +20,21 @@ from qt.core import QApplication, QDialog, QProgressDialog
 from calibre.gui2 import error_dialog, question_dialog
 
 try:
+  from calibre_plugins.list_switchboard.camoufox_transport import with_browser_operation
+except ImportError:
+  from camoufox_transport import with_browser_operation
+
+try:
   from calibre_plugins.list_switchboard.dialogs import (
     ImportCacheChoiceDialog, ImportRecipeDialog, ImportReportDialog)
 except ImportError:
   from dialogs import ImportCacheChoiceDialog, ImportRecipeDialog, ImportReportDialog
 
 try:
-  from calibre_plugins.list_switchboard.errors import ImportCancelledError, ListSwitchboardError
+  from calibre_plugins.list_switchboard.errors import (
+    ImportCancelledError, ListSwitchboardError, CamoufoxRequiredError)
 except ImportError:
-  from errors import ImportCancelledError, ListSwitchboardError
+  from errors import ImportCancelledError, ListSwitchboardError, CamoufoxRequiredError
 
 try:
   from calibre_plugins.list_switchboard.matching import (
@@ -192,6 +198,7 @@ class ImportFlowMixin:
     except Exception as err:
       self.show_exception('Active List Position Problems', err)
 
+  @with_browser_operation
   def import_recipe(self, recipe, import_options=None):
     if not self.ensure_configured():
       return
@@ -250,7 +257,7 @@ class ImportFlowMixin:
         recipe,
         import_options=import_options,
         cache=cache if can_incrementally_update else None)
-    except ImportCancelledError:
+    except (ImportCancelledError, CamoufoxRequiredError):
       raise
     except Exception:
       if cache and self.should_fallback_to_cached_import(recipe, cache):
@@ -460,6 +467,7 @@ class ImportFlowMixin:
     finally:
       self.close_import_progress()
 
+  @with_browser_operation
   def fetch_and_parse_recipe(self, recipe, import_options=None, cache=None):
     import_options = import_options or {}
     source_choice = import_options.get('source_choice', 'automatic')
@@ -467,7 +475,7 @@ class ImportFlowMixin:
       source_choice = 0
     try:
       fetch_kwargs = {
-        'sleep': lambda seconds, message: self.sleep_with_events(seconds, message),
+        'sleep': lambda seconds, message='Waiting before the next linked request...': self.sleep_with_events(seconds, message),
         'fetch_error': lambda url, err, entry: self.debug_recipe_linked_page_failed(url, err, entry),
         'log': lambda message: self.debug_parser_message(message),
         'progress': lambda done, total, message: self.update_import_fetch_progress(done, total, message),
@@ -488,7 +496,7 @@ class ImportFlowMixin:
       return recipe.fetch_and_parse(
         self.fetch_url,
         **fetch_kwargs)
-    except ImportCancelledError:
+    except (ImportCancelledError, CamoufoxRequiredError):
       raise
     except Exception as err:
       raise ListSwitchboardError(str(err))
@@ -771,14 +779,23 @@ class ImportFlowMixin:
 
     notes = []
     unknown_position_count = 0
+    ambiguous_position_count = 0
     active_positions = self.active_review_positions_by_book(active_book_ids)
     book_details = self.review_book_details(active_book_ids)
+    active_series = (
+      self.all_local_series_values(active_book_ids)
+      if any(len(position_rows) > 1 for position_rows in rows_by_position.values())
+      else {})
     for book_id, position in active_positions.items():
       target_rows = rows_by_position.get(position, [])
       if not target_rows:
         unknown_position_count += 1
         continue
-      target_row = self.active_position_target_row(book_id, target_rows, book_details)
+      target_row = self.active_position_target_row(
+        book_id, target_rows, book_details, active_series.get(book_id, []))
+      if target_row is None:
+        ambiguous_position_count += 1
+        continue
       if target_row.get('ignored'):
         continue
       if self.review_row_excludes_active_book(target_row, book_id):
@@ -800,6 +817,10 @@ class ImportFlowMixin:
     if unknown_position_count:
       notes.append(
         f'{unknown_position_count} current Active List book(s) use positions not found in the imported recipe.')
+    if ambiguous_position_count:
+      notes.append(
+        f'{ambiguous_position_count} current Active List book(s) could not be assigned '
+        'unambiguously to entries sharing a position.')
     return rows, notes
 
   def review_row_match_is_automatic(self, row):
@@ -835,22 +856,33 @@ class ImportFlowMixin:
       for detail in self.matched_book_details(book_ids, titles, authors)
     }
 
-  def active_position_target_row(self, book_id, rows, book_details):
+  def active_position_target_row(self, book_id, rows, book_details, book_series=None):
+    """Reconcile current membership without treating a tied rank as row identity.
+
+    Saved/current row ownership wins. A sole position still represents a manual
+    index edit; ties require unique title/series and author evidence through the
+    saved-match reconciliation helpers, without network recovery or new auto rules.
+    """
     for row in rows:
       if book_id in (row.get('book_ids') or []):
         return row
+    if len(rows) == 1:
+      return rows[0]
     detail = book_details.get(book_id) or {}
-    for row in rows:
-      entry = row.get('entry') or {}
-      if entry.get('title') and detail.get('matched_title'):
-        if normalize_key(entry.get('title')) != normalize_key(detail.get('matched_title')):
-          continue
-      imported_author = imported_author_search_text(entry)
-      if imported_author and detail.get('matched_authors'):
-        if not self.author_matches(detail.get('matched_authors'), imported_author):
-          continue
-      return row
-    return rows[0]
+    authors = detail.get('matched_authors') or []
+    if not authors:
+      return None
+    by_title, by_series = self.import_match_indexes(
+      [book_id], {book_id: detail.get('matched_title', '')},
+      {book_id: book_series or []})
+    candidates = [
+      row for row in rows
+      if imported_author_search_text(row.get('entry') or {})
+      and book_id in self.direct_match_candidates_for_entry(
+        row.get('entry') or {}, by_title=by_title, by_series=by_series,
+        authors={book_id: authors})
+    ]
+    return candidates[0] if len(candidates) == 1 else None
 
   def remember_review_row_previous_match(self, row):
     row['previous_book_ids'] = list(
@@ -908,6 +940,7 @@ class ImportFlowMixin:
       self, list_name, list_id, matched_count, entries_count, missing_entries,
       review_rows, notes=None, match_series=True, allow_goodreads_recovery=True,
       list_source_url='', requires_series_matching=False):
+    self.close_camoufox_transport()
     self.debug_import_missing_entries(missing_entries)
     match_index = getattr(self, '_import_list_review_auto_match_index', None)
     try:

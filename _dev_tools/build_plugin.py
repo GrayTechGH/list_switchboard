@@ -11,10 +11,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 RUNTIME_ROOT_FILES = frozenset((
   '__init__.py',
+  'camoufox_transport.py',
   'config.py',
   'debug.py',
   'errors.py',
   'goodreads.py',
+  'goodreads_recovery_transport.py',
   'import_flow.py',
   'list_state.py',
   'main.py',

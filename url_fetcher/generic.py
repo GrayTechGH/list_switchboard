@@ -7,9 +7,9 @@ except ImportError:
   urlparse = None
 
 try:
-  from calibre_plugins.list_switchboard.errors import ImportCancelledError
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
 except ImportError:
-  from errors import ImportCancelledError
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 try:
   from calibre_plugins.list_switchboard.parser.base import (
@@ -287,7 +287,7 @@ class UrlFetcherGeneric:
         parsed.setdefault('source', parsed_source(self.NAME, url, self.source_id))
         parsed.setdefault('match_series', self.options.get('match_series', True))
         return parsed
-      except ImportCancelledError:
+      except (ImportCancelledError, CamoufoxRequiredError):
         raise
       except Exception as err:
         last_error = err

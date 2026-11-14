@@ -24,6 +24,11 @@ from urllib.parse import parse_qs, urljoin, urlparse
 from bs4 import BeautifulSoup
 
 try:
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError
+except ImportError:
+  from errors import ImportCancelledError
+
+try:
   from calibre_plugins.list_switchboard.parser.award_base import ( # type: ignore
     is_author_suffix, normalize_line,
   )
@@ -192,6 +197,8 @@ class DragonsJetpacksParser(ListParserBase):
             f'Fetching {NAME} shelf page {page_number + 1} of '
             f'{progress_total} ({len(rows)} selections found)')
         html = fetch_url(next_url)
+      except ImportCancelledError:
+        raise
       except Exception as err:
         if fetch_error is not None:
           fetch_error(next_url, err, {'position': str(page_number + 1)})
@@ -236,6 +243,25 @@ class DragonsJetpacksParser(ListParserBase):
     title_key = title.casefold()
     if 'dragons & jetpacks' not in title_key or 'group-read shelf' not in title_key:
       raise ValueError(f'{NAME} returned an unrecognized Goodreads shelf title.')
+    expected_page = self.page_key(page_url)[3]
+    for current in soup.select('.pagination .current, .pagination [aria-current="page"]'):
+      value = normalize_line(current.get_text(' ', strip=True))
+      if value.isdigit() and int(value) != expected_page:
+        raise ValueError(f'{NAME} returned another shelf page.')
+    for metadata in soup.select('link[rel="canonical"], meta[property="og:url"]'):
+      value = metadata.get('href') or metadata.get('content') or ''
+      if not value:
+        continue
+      identity = urlparse(urljoin(page_url, value))
+      query = parse_qs(identity.query)
+      if identity.netloc.casefold() != 'www.goodreads.com' or identity.path != SHELF_PATH:
+        raise ValueError(f'{NAME} returned another group shelf.')
+      if 'shelf' in query and query['shelf'] != ['group-read']:
+        raise ValueError(f'{NAME} returned another shelf.')
+      # Goodreads may omit pagination from canonical URLs; only explicit pages
+      # identify the response when canonicalization strips query parameters.
+      if 'page' in query and query['page'] != [str(expected_page)]:
+        raise ValueError(f'{NAME} returned another shelf page.')
     return soup, table, headers
 
   def header_indexes(self, table):

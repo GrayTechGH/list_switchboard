@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # vim:fileencoding=UTF-8:ts=2:sw=2:sta:et:sts=2:ai
 
+import io
 import json
 import sys
 import types
@@ -693,6 +694,76 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertEqual('139.5', sword_laser['entries'][0]['position'])
     self.assertEqual('Finding Baba Yaga', sword_laser['entries'][0]['title'])
 
+  def test_r_fantasy_coauthors_across_recipes_and_table_shapes(self):
+    credits = (
+      ('Malazan Universe', 'Steven Erikson and Ian C. Esslemont',
+       ['Steven Erikson', 'Ian C. Esslemont']),
+      ('This Is How You Lose the Time War', 'Amal El-Mohtar and Max Gladstone',
+       ['Amal El-Mohtar', 'Max Gladstone']),
+      ('Vita Nostra', 'Marina and Sergey Dyachenko',
+       ['Marina Dyachenko', 'Sergey Dyachenko']),
+      ('The Empire Trilogy', 'Raymond Feist and Janny Wurts',
+       ['Raymond Feist', 'Janny Wurts']),
+      ('Watchmen', 'Alan Moore and Dave Gibbons', ['Alan Moore', 'Dave Gibbons']),
+      ('Dragonlance', 'Margaret Weis and Tracy Hickman',
+       ['Margaret Weis', 'Tracy Hickman']),
+      ('The Edge Chronicles', 'Paul Stewart, Chris Riddell',
+       ['Paul Stewart', 'Chris Riddell']),
+      ('The Death Gate Cycle', 'Margaret Weis and Tracy Hickman',
+       ['Margaret Weis', 'Tracy Hickman']),
+      ('Saga', 'Brian K. Vaughan and Fiona Staples',
+       ['Brian K. Vaughan', 'Fiona Staples']),
+      ('Saint Leibowitz', 'Walter M. Miller, Jr.', ['Walter M. Miller, Jr.']),
+      ('Mother of Learning', 'Nobody103 / Domagoj Kurmaić',
+       ['Nobody103 / Domagoj Kurmaić']),
+      ('Ash and Sand', 'Richard Nell', ['Richard Nell']),
+      ('Good Omens', 'Neil Gaiman & Terry Pratchett', ['Neil Gaiman', 'Terry Pratchett']),
+    )
+    for fetcher in (
+        UrlFetcherRFantasyTopNovels2025(),
+        UrlFetcherRFantasyTopStandaloneNovels2024(),
+        UrlFetcherRFantasyTopSelfPublishedNovels2024(),
+    ):
+      schema = fetcher.schemas[0]
+      rows = []
+      for position, (title, credit, _authors) in enumerate(credits, 1):
+        values = dict(position=str(position), title=title, author=credit,
+                      votes='42', rank_change='+1', ratings='123')
+        rows.append([values[field] for field in schema['fields']])
+      headers = schema['headers']
+      html = '<table><tr>' + ''.join(f'<th>{escape(h)}</th>' for h in headers) + '</tr>'
+      html += ''.join('<tr>' + ''.join(f'<td>{escape(v)}</td>' for v in row) + '</tr>'
+                      for row in rows) + '</table>'
+      shapes = {
+        'html': html,
+        'tokens': '\n'.join([*headers, *(v for row in rows for v in row)]),
+        'plain': '  '.join(headers) + '\n' + '\n'.join('  '.join(row) for row in rows),
+        'markdown': '\n'.join('| ' + ' | '.join(row) + ' |' for row in (
+          headers, ['---'] * len(headers), *rows)),
+      }
+      for shape, payload in shapes.items():
+        with self.subTest(recipe=fetcher.NAME, shape=shape):
+          entries = fetcher.parse(payload)['entries']
+          self.assertEqual([item[0] for item in credits], [e['title'] for e in entries])
+          self.assertEqual([item[2] for item in credits], [e['authors'] for e in entries])
+          self.assertEqual(['42'] * len(credits), [e['votes'] for e in entries])
+
+  def test_r_fantasy_coauthors_supply_individual_automatic_match_evidence(self):
+    import matching
+
+    fetcher = UrlFetcherRFantasyTopNovels2025()
+    entry = fetcher.parse('''<table>
+      <tr><th>Rank</th><th>Series</th><th>Votes</th><th>Author</th><th>Rank Change</th></tr>
+      <tr><td>59</td><td>This Is How You Lose the Time War</td><td>42</td>
+      <td>Amal El-Mohtar and Max Gladstone</td><td>+1</td></tr>
+      </table>''')['entries'][0]
+    for authors in (['Amal El-Mohtar'], ['Max Gladstone'], ['Amal El-Mohtar', 'Max Gladstone']):
+      with self.subTest(authors=authors):
+        self.assertTrue(matching.import_list_review_auto_candidate_evidence(
+          entry, entry['title'], authors)['auto_eligible'])
+    self.assertFalse(matching.import_list_review_auto_candidate_evidence(
+      entry, entry['title'], ['Unrelated Writer'])['auto_eligible'])
+
   def test_r_fantasy_fetchers_use_verified_wayback_fallbacks_with_provenance(self):
     from url_fetcher.r_fantasy_top_novels_2025 import UrlFetcherRFantasyTopNovels2025
     from url_fetcher.r_fantasy_top_self_published_novels_2024 import (
@@ -721,8 +792,8 @@ class ImportMatchingTest(unittest.TestCase):
       </table>
     '''
 
-    def fetch_url(url, **_kwargs):
-      attempts.append(url)
+    def fetch_url(url, **kwargs):
+      attempts.append((url, kwargs.get('transport', 'default')))
       if url == fetcher.FETCH_URLS[0]:
         return '<title>Reddit - Please wait for verification</title>'
       self.assertEqual(fetcher.WAYBACK_URL, url)
@@ -730,7 +801,11 @@ class ImportMatchingTest(unittest.TestCase):
 
     parsed = fetcher.fetch_and_parse(fetch_url)
 
-    self.assertEqual(list(fetcher.FETCH_URLS[:2]), attempts)
+    self.assertEqual([
+      (fetcher.FETCH_URLS[0], 'camoufox'),
+      (fetcher.FETCH_URLS[0], 'default'),
+      (fetcher.WAYBACK_URL, 'default'),
+    ], attempts)
     self.assertEqual(['Middle-Earth Universe'], [
       entry['title'] for entry in parsed['entries']])
     self.assertEqual(fetcher.WAYBACK_URL, parsed['source']['url'])
@@ -1227,7 +1302,7 @@ class ImportMatchingTest(unittest.TestCase):
           calls.append((url, timeout))
           if len(calls) <= 3:
             raise main.URLError(TimeoutError('The read operation timed out'))
-          return '<html></html>'
+          return '<h1 id="bookTitle">Example Series</h1><a class="authorName" href="/author/show/1">Writer</a><a href="/book/show/123">Book</a>'
 
         core.fetch_url = fetch_url
 
@@ -3933,9 +4008,9 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
 
     parsed = fetcher.fetch_and_parse(fetch_url)
 
-    self.assertEqual(list(fetcher.FETCH_URLS[:2]), calls)
+    self.assertEqual([fetcher.URL, fetcher.OLD_REDDIT_URL], calls)
     self.assertEqual(
-      'https://old.reddit.com/r/bookclub/wiki/previous/', calls[0])
+      'https://www.reddit.com/r/bookclub/wiki/previous/', calls[0])
     self.assertEqual(['Neverwhere'], [entry['title'] for entry in parsed['entries']])
     self.assertEqual(
       [{'label': 'Automatic', 'value': 'automatic'}],
@@ -3964,7 +4039,7 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
 
     def fetch_url(url, **_kwargs):
       attempts.append(url)
-      if url == fetcher.OLD_REDDIT_URL:
+      if url != fetcher.WAYBACK_URL:
         return '<title>Reddit - Please wait for verification</title>'
       self.assertEqual(fetcher.WAYBACK_URL, url)
       return '''
@@ -3980,7 +4055,7 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
     parsed = fetcher.fetch_and_parse(fetch_url)
 
     self.assertEqual(
-      [fetcher.OLD_REDDIT_URL, fetcher.WAYBACK_URL], attempts)
+      [fetcher.URL] + list(fetcher.FETCH_URLS), attempts)
     self.assertEqual(['Neverwhere (novel)'], [
       entry['title'] for entry in parsed['entries']])
     self.assertEqual(fetcher.WAYBACK_URL, parsed['source']['url'])
@@ -7936,11 +8011,13 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
       calls.append(url)
       attempts = calls.count(url)
       if url == choice_module.CHOICE_AWARDS_URL:
-        return ''
+        return f'<a href="{overview_url}">2012 Awards</a>'
       if url in (overview_url, category_url) and attempts <= 3:
         raise main.URLError(TimeoutError('The read operation timed out'))
       if url == overview_url:
         return f'<a href="{category_url}">Science Fiction</a>'
+      if '/book/show/' in url:
+        return '<div aria-label="List of contributors"><span data-testid="name">Writer</span></div>'
       return '''
         <main>
           <h1>Readers' Favorite Science Fiction</h1>
@@ -12659,6 +12736,7 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
       core.db = types.SimpleNamespace(new_api=object())
       core.added_active_index_updates = lambda _active, _updates: {1: 50.0}
       core.cached_active_add_context = lambda *_args: context
+      core.cached_active_add_existing_book_ids = lambda *_args: []
       saved = []
       core.upsert_saved_match_override_for_book = lambda *args, **kwargs: saved.append(
         (args, kwargs))
@@ -12690,6 +12768,169 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
     self.assertEqual({1: 'Example List'}, updates)
     self.assertEqual({1: 50.0}, indexes)
     self.assertEqual(1, len(saved))
+
+  def _cached_active_add_series_fixture(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    for cls in type(core).__mro__:
+      for name in vars(cls):
+        if name.startswith('debug_'):
+          setattr(core, name, lambda *_args, **_kwargs: None)
+    core.update_import_match_progress = lambda *_args, **_kwargs: None
+    core.update_import_match_step_progress = lambda *_args, **_kwargs: None
+    core.goodreads_source_recovery_candidates = lambda *_args: self.fail(
+      'adding to a cached list must not fetch sources')
+    entry = {
+      'position': '161', 'title': 'Wayward Children',
+      'authors': ['Seanan McGuire'],
+    }
+    other = {
+      'position': '161', 'title': 'Other Series', 'authors': ['Other Author'],
+    }
+    cache = {
+      'list_id': 'series_list', 'entries': [entry, other],
+      'match_series': True, 'requires_series_matching': True,
+    }
+    titles = {
+      1: 'Every Heart a Doorway', 2: 'Down Among the Sticks and Bones',
+      3: 'Other Book', 4: 'Not on the Active List',
+      5: 'Wrong Author', 6: 'Different Position',
+      40458: 'Through Gates of Garnet and Gold', 40459: 'Another Volume',
+    }
+    authors = {book_id: ['Seanan McGuire'] for book_id in titles}
+    authors[3] = ['Other Author']
+    authors[5] = ['Unrelated Writer']
+    series = {book_id: ['Wayward Children'] for book_id in titles}
+    series[3] = ['Other Series']
+    active_positions = {1: '161', 2: '161', 3: '161', 5: '161', 6: '162'}
+    main.prefs['active_list_field'] = '#reading_series'
+    active_values = {book_id: 'Series List' for book_id in active_positions}
+    stored = {'matches': []}
+
+    class FakeApi:
+      def all_field_for(self, field, ids, default_value=''):
+        values = {
+          'title': titles, 'authors': authors,
+          '#reading_series': active_values,
+        }.get(field, {})
+        return {book_id: values.get(book_id, default_value) for book_id in ids}
+
+      def field_for(self, field, book_id, default_value=''):
+        if field == '#reading_series':
+          raise AssertionError('Active List membership must use one bulk field read')
+        return self.all_field_for(field, [book_id], default_value)[book_id]
+
+    core.db = types.SimpleNamespace(new_api=FakeApi())
+    core.all_book_ids = lambda: list(titles)
+    core.all_local_series_values = lambda ids: {book_id: series[book_id] for book_id in ids}
+    core.active_book_ids_for_list = lambda _active: self.fail(
+      'cached add must use the bulk Active List field read')
+    core.active_review_positions_by_book = lambda _ids: dict(active_positions)
+    core.read_match_cache = lambda _list_id: deepcopy(stored)
+
+    def write_match_cache(_list_id, matches):
+      stored['matches'] = json.loads(json.dumps(matches))
+
+    core.write_match_cache = write_match_cache
+    core.added_active_index_updates = lambda _active, updates: {
+      book_id: 200.0 for book_id in updates}
+    core._active_add_match_chooser = lambda *_args, **_kwargs: (entry, 161.0, True)
+    return core, cache, entry, stored
+
+  def test_cached_active_add_series_preserves_existing_books_on_next_review(self):
+    core, cache, entry, stored = self._cached_active_add_series_fixture()
+
+    updates, indexes = core.cached_active_add_updates(
+      'Series List', {40458: 'Series List'}, cache)
+
+    self.assertEqual({40458: 'Series List'}, updates)
+    self.assertEqual({40458: 161.0}, indexes)
+    self.assertEqual([1, 2, 40458], stored['matches'][0]['matched_book_ids'])
+    self.assertEqual([1, 2, 40458], [
+      book['matched_book_id'] for book in stored['matches'][0]['matched_books']])
+    matched, _missing, rows = core.match_imported_entries(
+      cache['entries'], list_id=cache['list_id'], allow_goodreads_recovery=False,
+      requires_series_matching=True, return_details=True)
+    self.assertEqual([1, 2, 40458], rows[0]['book_ids'])
+    self.assertEqual('161', matched[40458])
+
+  def test_cached_active_add_series_batch_preserves_all_additions(self):
+    core, cache, _entry, stored = self._cached_active_add_series_fixture()
+    core.cached_active_add_updates(
+      'Series List', {40458: 'Series List', 40459: 'Series List'}, cache)
+    self.assertEqual([1, 2, 40458, 40459], stored['matches'][0]['matched_book_ids'])
+
+  def test_cached_active_add_existing_books_compare_only_same_position_entries(self):
+    core, cache, _entry, stored = self._cached_active_add_series_fixture()
+    cache['entries'].extend(
+      {'position': str(1000 + index), 'title': f'Unrelated {index}',
+       'authors': ['Other Author']}
+      for index in range(300)
+    )
+    compared_counts = []
+    original = core.cached_entry_candidates_for_book
+
+    def tracked_candidates(book_id, context, default_index=None, candidate_entries=None):
+      if book_id in (1, 2, 3, 5, 6):
+        compared_counts.append(len(candidate_entries))
+      return original(
+        book_id, context, default_index, candidate_entries=candidate_entries)
+
+    core.cached_entry_candidates_for_book = tracked_candidates
+    core.cached_active_add_updates('Series List', {40458: 'Series List'}, cache)
+
+    self.assertEqual([2, 2, 2, 2], compared_counts)
+    self.assertEqual([1, 2, 40458], stored['matches'][0]['matched_book_ids'])
+
+  def test_cached_active_add_series_batch_keeps_automatic_and_manual_additions(self):
+    for selected_ids in ([40458, 40459], [40459, 40458]):
+      with self.subTest(selected_ids=selected_ids):
+        core, cache, entry, stored = self._cached_active_add_series_fixture()
+        core.cached_active_match_for_book = lambda book_id, *_args, **_kwargs: (
+          entry, 161.0, book_id == 40458)
+        core.cached_active_add_updates(
+          'Series List', dict.fromkeys(selected_ids, 'Series List'), cache)
+        self.assertEqual(
+          {1, 2, 40458, 40459}, set(stored['matches'][0]['matched_book_ids']))
+
+  def test_cached_active_add_series_does_not_merge_ambiguous_tied_groups(self):
+    core, cache, _entry, stored = self._cached_active_add_series_fixture()
+    cache['entries'].append({
+      'position': '161', 'title': 'Every Heart a Doorway',
+      'authors': ['Seanan McGuire'],
+    })
+    core.cached_active_add_updates('Series List', {40458: 'Series List'}, cache)
+    self.assertEqual([2, 40458], stored['matches'][0]['matched_book_ids'])
+
+  def test_cached_active_add_series_does_not_take_other_override_books(self):
+    core, cache, _entry, stored = self._cached_active_add_series_fixture()
+    other = cache['entries'][1]
+    stored['matches'] = [core.saved_match_item_for_books(other, [1], core.db.new_api)]
+    core.cached_active_add_updates('Series List', {40458: 'Series List'}, cache)
+    self.assertEqual([1], stored['matches'][0]['matched_book_ids'])
+    self.assertEqual([2, 40458], stored['matches'][1]['matched_book_ids'])
+
+  def test_cached_active_add_series_keeps_explicit_selection_authoritative(self):
+    core, cache, entry, stored = self._cached_active_add_series_fixture()
+    stored['matches'] = [core.saved_match_item_for_books(entry, [2], core.db.new_api)]
+    core.cached_active_add_updates('Series List', {40458: 'Series List'}, cache)
+    self.assertEqual([2, 40458], stored['matches'][0]['matched_book_ids'])
+
+  def test_cached_active_add_series_does_not_restore_unmatched_books(self):
+    core, cache, entry, stored = self._cached_active_add_series_fixture()
+    stored['matches'] = [{
+      'entry_key': list_state.entry_key(entry), 'unmatched': True,
+      'previous_matched_book_ids': [1, 2],
+    }]
+    core.cached_active_add_updates('Series List', {40458: 'Series List'}, cache)
+    self.assertEqual([40458], stored['matches'][0]['matched_book_ids'])
+    self.assertNotIn('unmatched', stored['matches'][0])
+
+  def test_cached_active_add_series_cancel_does_not_save_override(self):
+    core, cache, _entry, stored = self._cached_active_add_series_fixture()
+    core._active_add_match_chooser = lambda *_args, **_kwargs: (None, None, False)
+    self.assertEqual(({}, {}), core.cached_active_add_updates(
+      'Series List', {40458: 'Series List'}, cache))
+    self.assertEqual([], stored['matches'])
 
   def test_cached_active_add_button_multiple_eligible_matches_open_chooser(self):
     core, context = self._cached_active_add_button_core(
@@ -13048,6 +13289,112 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
     self.assertEqual(True, second['matched'])
     self.assertEqual([7], second['book_ids'])
     self.assertEqual('active list/manual edit', second['match_source'])
+
+  def test_active_reconciliation_tied_series_button_adds_survive_last_book_match(self):
+    core, cache, wayward, stored = self._cached_active_add_series_fixture()
+    chicken = {'position': '161', 'title': 'Beware of Chicken', 'authors': ['CasualFarmer']}
+    cache['entries'] = [chicken, wayward]
+    core.active_book_ids_for_list = lambda _active: [1, 2]
+    core.active_review_positions_by_book = lambda _ids: {1: '161', 2: '161'}
+    rows = [core.import_review_row(entry) for entry in cache['entries']]
+
+    # Part B: list buttons have an Active List position, but no override yet.
+    core.reconcile_review_rows_with_active_list('Series List', rows, active_name='Series List')
+    self.assertEqual([], rows[0]['book_ids'])
+    self.assertEqual({1, 2}, set(rows[1]['book_ids']))
+    core.apply_import_review_match_changes(cache['list_id'], rows)
+    self.assertEqual(
+      list_state.entry_key(wayward), stored['matches'][0]['entry_key'])
+
+    # Part C: the last button's explicit choice must extend the same series row.
+    core.cached_active_add_updates('Series List', {40458: 'Series List'}, cache)
+    matched, _missing, rows = core.match_imported_entries(
+      cache['entries'], list_id=cache['list_id'], allow_goodreads_recovery=False,
+      requires_series_matching=False, return_details=True)
+    self.assertEqual([], rows[0]['book_ids'])
+    self.assertEqual({1, 2, 40458}, set(rows[1]['book_ids']))
+    self.assertEqual({1: '161', 2: '161', 40458: '161'}, matched)
+
+  def test_active_reconciliation_tied_position_never_uses_first_row_without_evidence(self):
+    core = self.build_active_reconciliation_core(active_ids=[7], active_positions={7: '161'})
+    core.all_local_series_values = lambda _ids: {7: []}
+    rows = [core.import_review_row(entry) for entry in [
+      {'position': '161', 'title': 'Beware of Chicken', 'authors': ['CasualFarmer']},
+      {'position': '161', 'title': 'Wayward Children', 'authors': ['Seanan McGuire']},
+    ]]
+    _rows, notes = core.reconcile_review_rows_with_active_list(
+      'Example List', rows, active_name='Example List')
+    self.assertEqual([[], []], [row['book_ids'] for row in rows])
+    self.assertTrue(any('unambiguously' in note for note in notes))
+
+  def test_active_reconciliation_tied_series_requires_author_evidence(self):
+    core = self.build_active_reconciliation_core(active_ids=[7], active_positions={7: '161'})
+    core.all_local_series_values = lambda _ids: {7: ['Wayward Children']}
+    rows = [core.import_review_row(entry) for entry in [
+      {'position': '161', 'title': 'Beware of Chicken', 'authors': ['CasualFarmer']},
+      {'position': '161', 'title': 'Wayward Children', 'authors': ['Seanan McGuire']},
+    ]]
+    core.reconcile_review_rows_with_active_list('Example List', rows, active_name='Example List')
+    self.assertEqual([[], []], [row['book_ids'] for row in rows])
+
+  def test_active_reconciliation_tied_series_ambiguity_keeps_both_rows_unmatched(self):
+    core, cache, wayward, _stored = self._cached_active_add_series_fixture()
+    core.active_book_ids_for_list = lambda _active: [1]
+    core.active_review_positions_by_book = lambda _ids: {1: '161'}
+    rows = [core.import_review_row(entry) for entry in [
+      wayward, dict(wayward, title='Wayward Children: Alternate', aliases=['Wayward Children']),
+    ]]
+    core.reconcile_review_rows_with_active_list('Series List', rows, active_name='Series List')
+    self.assertEqual([[], []], [row['book_ids'] for row in rows])
+
+  def test_active_reconciliation_tied_series_keeps_saved_ownership(self):
+    core, _cache, wayward, _stored = self._cached_active_add_series_fixture()
+    core.active_book_ids_for_list = lambda _active: [1]
+    core.active_review_positions_by_book = lambda _ids: {1: '161'}
+    saved = core.import_review_row(
+      {'position': '161', 'title': 'Manual substitute', 'authors': ['Other Author']},
+      matched=True, book_ids=[1], match_source='saved/manual override')
+    series_row = core.import_review_row(wayward)
+    core.reconcile_review_rows_with_active_list(
+      'Series List', [saved, series_row], active_name='Series List')
+    self.assertEqual([1], saved['book_ids'])
+    self.assertEqual([], series_row['book_ids'])
+
+  def test_active_reconciliation_tied_series_preserves_blank_directives(self):
+    for ignored in (False, True):
+      with self.subTest(ignored=ignored):
+        core, _cache, wayward, _stored = self._cached_active_add_series_fixture()
+        core.active_book_ids_for_list = lambda _active: [1]
+        core.active_review_positions_by_book = lambda _ids: {1: '161'}
+        other = core.import_review_row({
+          'position': '161', 'title': 'Beware of Chicken', 'authors': ['CasualFarmer'],
+        })
+        blank = core.import_review_row(
+          wayward, match_source='ignored' if ignored else 'explicit unmatched',
+          directive={'ignored': ignored, 'unmatched': True, 'previous_matched_book_ids': [1]})
+        core.reconcile_review_rows_with_active_list(
+          'Series List', [other, blank], active_name='Series List')
+        self.assertEqual([], other['book_ids'])
+        self.assertEqual([], blank['book_ids'])
+        self.assertEqual(ignored, blank['ignored'])
+
+  def test_active_reconciliation_tied_series_missing_authors_remain_unassigned(self):
+    for missing_authors in ('book', 'entry'):
+      with self.subTest(missing_authors=missing_authors):
+        core, _cache, wayward, _stored = self._cached_active_add_series_fixture()
+        core.active_book_ids_for_list = lambda _active: [1]
+        core.active_review_positions_by_book = lambda _ids: {1: '161'}
+        if missing_authors == 'book':
+          core.review_book_details = lambda _ids: {
+            1: {'matched_title': 'Every Heart a Doorway', 'matched_authors': []}}
+        else:
+          wayward = dict(wayward, authors=[])
+        rows = [core.import_review_row(entry) for entry in [
+          {'position': '161', 'title': 'Beware of Chicken', 'authors': ['CasualFarmer']},
+          wayward,
+        ]]
+        core.reconcile_review_rows_with_active_list('Series List', rows, active_name='Series List')
+        self.assertEqual([[], []], [row['book_ids'] for row in rows])
 
   def test_active_reconciliation_keeps_ignored_without_active_remap(self):
     core = self.build_active_reconciliation_core(active_ids=[])
@@ -26914,6 +27261,1713 @@ were ''[[Go Deep]]'' by [[Rilzy Adams]].
 
     self.assertEqual(fetcher.NAME, parsed['name'])
     self.assertEqual(['Red Herring'], [entry['title'] for entry in parsed['entries']])
+
+class CamoufoxPilotTest(unittest.TestCase):
+
+  def setUp(self):
+    from url_fetcher.librarything_fallback import LibraryThingFetchPolicyMixin
+    self.enterContext(patch.dict(main.prefs, {
+      'debug_librarything_transport': 'automatic',
+      'debug_browser_fallback_level': None,
+      'camoufox_first_use_confirmed': True,
+    }))
+    self.enterContext(patch.object(
+      LibraryThingFetchPolicyMixin, '_session_librarything_user_agent', ''))
+    self.core = main.ListSwitchboardCore(types.SimpleNamespace(), lambda **_kw: None)
+    self.core.update_import_progress = lambda *_a, **_kw: None
+    self.logs = []
+    self.core.debug_camoufox = self.logs.append
+    self.url = 'https://www.librarything.com/award/1380/test'
+
+  def capability(self, available=True, version=(9, 17, 0)):
+    return self.enterContext(patch.object(
+      main, 'camoufox_capability',
+      return_value=(available, version, 'test API' if available else 'unavailable')))
+
+  def test_force_old_never_checks_or_imports_camoufox(self):
+    main.prefs['debug_librarything_transport'] = 'old'
+    with patch.object(main, 'camoufox_capability') as capability:
+      with self.assertRaises(main.CamoufoxSkippedError):
+        self.core.fetch_url(self.url, transport='camoufox')
+    capability.assert_not_called()
+
+  def test_old_versions_and_missing_api_skip_without_prompt(self):
+    for version in ((6, 0, 0), (9, 15, 0), (9, 16, 0)):
+      with self.subTest(version=version), patch.object(
+          main, 'camoufox_capability', return_value=(False, version, 'unavailable')):
+        with patch.object(main, 'question_dialog') as prompt:
+          with self.assertRaises(main.CamoufoxSkippedError):
+            self.core.fetch_url(self.url, transport='camoufox')
+        prompt.assert_not_called()
+
+  def test_first_use_decline_is_remembered_only_for_current_import(self):
+    self.capability()
+    main.prefs['camoufox_first_use_confirmed'] = False
+    with patch.object(main, 'question_dialog', return_value=False) as prompt:
+      for _ in range(2):
+        with self.assertRaises(main.CamoufoxSkippedError):
+          self.core.fetch_url(self.url, transport='camoufox')
+    self.assertEqual(1, prompt.call_count)
+    self.assertFalse(main.prefs['camoufox_first_use_confirmed'])
+
+  def test_first_use_accept_persists_and_reuses_transport(self):
+    self.capability()
+    main.prefs['camoufox_first_use_confirmed'] = False
+    with patch.object(main, 'question_dialog', return_value=True) as prompt:
+      with patch.object(main, 'CamoufoxTransport') as factory:
+        factory.return_value.fetch.return_value = '<html>accepted</html>'
+        for _ in range(2):
+          self.assertEqual('<html>accepted</html>', self.core.fetch_url(
+            self.url, transport='camoufox'))
+        self.core.close_camoufox_transport()
+        self.core.close_camoufox_transport()
+        self.assertEqual(1, factory.call_count)
+        factory.return_value.close.assert_called_once()
+    self.assertEqual(1, prompt.call_count)
+    self.assertTrue(main.prefs['camoufox_first_use_confirmed'])
+
+  def test_failed_camoufox_trips_import_circuit_breaker(self):
+    from camoufox_transport import CamoufoxFetchError
+    self.capability()
+    with patch.object(main, 'CamoufoxTransport') as factory:
+      factory.return_value.fetch.side_effect = CamoufoxFetchError('startup failed')
+      with self.assertRaises(CamoufoxFetchError):
+        self.core.fetch_url(self.url, transport='camoufox')
+      with self.assertRaises(main.CamoufoxSkippedError):
+        self.core.fetch_url(self.url, transport='camoufox')
+      self.assertEqual(1, factory.call_count)
+      factory.return_value.close.assert_called_once()
+
+  def test_stage_one_failure_allows_legacy_recovery(self):
+    from camoufox_transport import CamoufoxFetchError
+    from url_fetcher.librarything_fallback import LibraryThingFetchPolicyMixin
+    self.capability()
+    main.prefs['debug_browser_fallback_level'] = 1
+    original = self.core.fetch_url
+
+    def fetch(url, **kwargs):
+      if kwargs.get('transport') == 'camoufox':
+        return original(url, **kwargs)
+      return '<html>legacy recovered</html>'
+
+    with patch.object(main, 'CamoufoxTransport') as factory:
+      factory.return_value.fetch.side_effect = CamoufoxFetchError('broken browser')
+      self.assertEqual('<html>legacy recovered</html>',
+        LibraryThingFetchPolicyMixin().fetch_librarything_url(fetch, self.url))
+      factory.return_value.close.assert_called_once()
+
+  def test_policy_uses_camoufox_first_then_retries_old_challenges(self):
+    from camoufox_transport import CamoufoxFetchError
+    from url_fetcher.librarything_fallback import LibraryThingFetchPolicyMixin
+    policy = LibraryThingFetchPolicyMixin()
+    policy.random_librarything_user_agent = lambda: 'Generated Agent'
+    calls = []
+
+    def fetch(url, **kwargs):
+      calls.append(kwargs)
+      if kwargs.get('transport') == 'camoufox':
+        raise CamoufoxFetchError('blocked')
+      if kwargs.get('user_agent') != 'Generated Agent':
+        return '<title>Just a moment...</title>'
+      return '<html>accepted</html>'
+
+    self.assertEqual('<html>accepted</html>', policy.fetch_librarything_url(fetch, self.url))
+    self.assertEqual({'transport': 'camoufox'}, calls[0])
+    self.assertEqual(3, len(calls))
+
+  def test_successful_camoufox_never_calls_old_transport(self):
+    from url_fetcher.librarything_fallback import LibraryThingFetchPolicyMixin
+    calls = []
+
+    def fetch(url, **kwargs):
+      calls.append(kwargs)
+      return '<html>accepted</html>'
+
+    self.assertEqual('<html>accepted</html>',
+      LibraryThingFetchPolicyMixin().fetch_librarything_url(fetch, self.url))
+    self.assertEqual([{'transport': 'camoufox'}], calls)
+
+  def test_every_registered_librarything_attempt_uses_shared_policy(self):
+    from urllib.parse import urlparse
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.librarything_fallback import (
+      LibraryThingFetchPolicyMixin, LibraryThingSourceAttempt)
+    found = 0
+    for recipe in available_url_fetchers():
+      attempts = recipe.source_attempts() if hasattr(recipe, 'source_attempts') else ()
+      urls = [(attempt.url, attempt) for attempt in attempts]
+      urls.append((recipe.URL, None))
+      for url, attempt in urls:
+        host = urlparse(url).hostname or ''
+        if host == 'librarything.com' or host.endswith('.librarything.com'):
+          found += 1
+          with self.subTest(recipe=recipe.source_id, url=url):
+            self.assertIsInstance(recipe, LibraryThingFetchPolicyMixin)
+            if attempt is not None:
+              self.assertIsInstance(attempt, LibraryThingSourceAttempt)
+    self.assertGreater(found, 0)
+
+  def test_transport_cleanup_on_parse_failure_and_cancellation(self):
+    from unittest.mock import Mock
+    for error in (ValueError('parse failed'), main.ImportCancelledError('cancelled')):
+      transport = Mock()
+      self.core.camoufox_transport = transport
+      recipe = types.SimpleNamespace(fetch_and_parse=Mock(side_effect=error))
+      with self.assertRaises(main.ListSwitchboardError):
+        self.core.fetch_and_parse_recipe(recipe)
+      transport.close.assert_called_once()
+      self.assertIsNone(self.core.camoufox_transport)
+
+  def test_pilot_recipes_parse_rendered_html_and_preserve_source(self):
+    from camoufox_transport import CamoufoxTransport
+    from _dev_tools.test_camoufox_transport import FakeBrowser, FakeResponse
+    from url_fetcher.strand import UrlFetcherStrandMysteryNovel
+    from url_fetcher.davitt import UrlFetcherDavittAdultNovel
+    from url_fetcher.macavity import UrlFetcherMacavityMysteryNovel
+    self.capability()
+    for factory, selected in (
+        (UrlFetcherStrandMysteryNovel, 'automatic'),
+        (UrlFetcherDavittAdultNovel, 0),
+        (UrlFetcherMacavityMysteryNovel, 2)):
+      recipe = factory()
+      html = f'''<h2>Winner</h2><table>
+        <tr><th>Work</th><th>Category</th><th>Year</th></tr>
+        <tr><td><a href="/work/1">Pilot Book</a> by
+          <a href="/author/1">Pilot Author</a></td>
+          <td>{recipe.CATEGORY}</td><td>2025</td></tr></table>'''
+      browser = FakeBrowser(FakeResponse(html.encode('utf-8')))
+      self.core.camoufox_transport = CamoufoxTransport(
+        browser_factory=lambda **_kw: browser)
+      with self.subTest(recipe=recipe.source_id):
+        parsed = self.core.fetch_and_parse_recipe(recipe, {'source_choice': selected})
+        self.assertEqual(['Pilot Book'], [entry['title'] for entry in parsed['entries']])
+        self.assertEqual(['Pilot Author'], parsed['entries'][0]['authors'])
+        expected_url = recipe.LIBRARYTHING_URL if hasattr(recipe, 'LIBRARYTHING_URL') else recipe.URL
+        self.assertEqual(expected_url, parsed['entries'][0]['source']['url'])
+        self.assertEqual(1, browser.shutdown_calls)
+
+  def test_indeterminate_progress_restores_original_range_after_failure(self):
+    from camoufox_transport import CamoufoxFetchError
+    from unittest.mock import Mock, call
+    self.capability()
+    progress = Mock()
+    progress.minimum.return_value = 0
+    progress.maximum.return_value = 1000
+    progress.value.return_value = 425
+    self.core.import_progress = progress
+    with patch.object(main, 'CamoufoxTransport') as factory:
+      factory.return_value.fetch.side_effect = CamoufoxFetchError('failed')
+      with self.assertRaises(CamoufoxFetchError):
+        self.core.fetch_url(self.url, transport='camoufox')
+    self.assertEqual([call(0, 0), call(0, 1000)], progress.setRange.call_args_list)
+    progress.setValue.assert_called_once_with(425)
+
+  def bookclub_markdown(self):
+    return '# Previous Selections\n\n# 2026\n\n# October 2026\n\nModern: Current Book by Current Author\n'
+
+  def test_bookclub_browser_first_for_automatic_and_stage_one(self):
+    from url_fetcher.r_bookclub import UrlFetcherRBookclub
+    self.capability()
+    for level in (0, 1):
+      main.prefs['debug_browser_fallback_level'] = level
+      with self.subTest(level=level), patch.object(main, 'CamoufoxTransport') as factory:
+        factory.return_value.fetch.return_value = self.bookclub_markdown()
+        parsed = self.core.fetch_and_parse_recipe(UrlFetcherRBookclub())
+        self.assertEqual(['Current Book'], [e['title'] for e in parsed['entries']])
+        self.assertEqual(UrlFetcherRBookclub.URL, parsed['source']['url'])
+        self.assertFalse(any('snapshot' in note for note in parsed['notes']))
+        self.assertEqual(('reddit.com', 'goodreads.com'), factory.call_args.kwargs['warmup_excluded_domains'])
+        self.assertFalse(factory.call_args.kwargs['check_challenges'])
+        self.assertEqual('r/bookclub', factory.call_args.kwargs['source_name'])
+        factory.return_value.close.assert_called_once()
+
+  def test_shared_legacy_stage_skips_browser_for_both_sites(self):
+    from url_fetcher.r_bookclub import UrlFetcherRBookclub
+    from url_fetcher.librarything_fallback import LibraryThingFetchPolicyMixin
+    main.prefs['debug_browser_fallback_level'] = 2
+    original = self.core.fetch_url
+    calls = []
+
+    def fetch(url, **kwargs):
+      if kwargs.get('transport') == 'camoufox':
+        return original(url, **kwargs)
+      calls.append(url)
+      return self.bookclub_markdown()
+
+    with patch.object(main, 'camoufox_capability') as capability:
+      self.assertTrue(UrlFetcherRBookclub().fetch_and_parse(fetch)['entries'])
+      LibraryThingFetchPolicyMixin().fetch_librarything_url(fetch, self.url)
+      capability.assert_not_called()
+    self.assertEqual([UrlFetcherRBookclub.OLD_REDDIT_URL, self.url], calls)
+
+  def test_bookclub_live_representations_precede_archive(self):
+    from errors import CamoufoxFetchError
+    from url_fetcher.r_bookclub import UrlFetcherRBookclub
+    recipe = UrlFetcherRBookclub()
+    calls = []
+
+    def fetch(url, **kwargs):
+      calls.append((url, kwargs.get('transport', 'default')))
+      if kwargs.get('transport') == 'camoufox':
+        raise CamoufoxFetchError('browser unavailable')
+      if url == recipe.WAYBACK_URL:
+        return '<h1>Previous Selections</h1><h1>2025</h1><h2>April 2025</h2><p>Modern: Archived Book by Archived Author</p>'
+      return '<title>Reddit - Please wait for verification</title>'
+
+    parsed = recipe.fetch_and_parse(fetch)
+    self.assertEqual([(recipe.URL, 'camoufox')] +
+      [(url, 'default') for url in recipe.FETCH_URLS], calls)
+    self.assertEqual(recipe.WAYBACK_URL, parsed['source']['url'])
+    self.assertTrue(any('2025-04-05' in note for note in parsed['notes']))
+
+  def test_bookclub_source_levels_select_archive_or_reject_missing_levels(self):
+    from url_fetcher.r_bookclub import UrlFetcherRBookclub
+    from url_fetcher.generic import UrlFetcherError
+    recipe = UrlFetcherRBookclub()
+    calls = []
+
+    def fetch(url, **kwargs):
+      calls.append((url, kwargs))
+      return '<h1>Previous Selections</h1><h1>2025</h1><h2>April 2025</h2><p>Modern: Archived Book by Archived Author</p>'
+
+    self.assertTrue(recipe.fetch_and_parse(fetch, force_fallback_level=1)['entries'])
+    self.assertEqual([(recipe.WAYBACK_URL, {})], calls)
+    for level in (2, 3):
+      with self.subTest(level=level), self.assertRaisesRegex(UrlFetcherError, 'No source fallback'):
+        recipe.fetch_and_parse(fetch, force_fallback_level=level)
+    self.assertEqual(1, len(calls))
+
+  def test_bookclub_interstitial_or_empty_browser_output_uses_legacy(self):
+    from url_fetcher.r_bookclub import UrlFetcherRBookclub
+    for payload in ('', '<h1>Blocked by network security</h1>'):
+      calls = []
+
+      def fetch(url, **kwargs):
+        calls.append(kwargs.get('transport', 'default'))
+        return payload if kwargs.get('transport') else self.bookclub_markdown()
+
+      with self.subTest(payload=payload):
+        self.assertTrue(UrlFetcherRBookclub().fetch_and_parse(fetch)['entries'])
+        self.assertEqual(['camoufox', 'default'], calls)
+
+  def test_bookclub_older_calibre_or_declined_consent_uses_live_legacy(self):
+    from url_fetcher.r_bookclub import UrlFetcherRBookclub
+    original = self.core.fetch_url
+
+    def fetch(url, **kwargs):
+      return original(url, **kwargs) if kwargs.get('transport') else self.bookclub_markdown()
+
+    with patch.object(main, 'camoufox_capability', return_value=(False, (9, 15, 0), 'old')):
+      self.assertTrue(UrlFetcherRBookclub().fetch_and_parse(fetch)['entries'])
+    self.capability()
+    main.prefs['camoufox_first_use_confirmed'] = False
+    with patch.object(main, 'question_dialog', return_value=False) as prompt:
+      self.assertTrue(UrlFetcherRBookclub().fetch_and_parse(fetch)['entries'])
+      prompt.assert_called_once()
+
+  def test_bookclub_cancellation_prevents_all_recovery(self):
+    from url_fetcher.r_bookclub import UrlFetcherRBookclub
+    calls = []
+
+    def cancel(url, **kwargs):
+      calls.append(url)
+      raise main.ImportCancelledError('cancelled')
+
+    with self.assertRaises(main.ImportCancelledError):
+      UrlFetcherRBookclub().fetch_and_parse(cancel)
+    self.assertEqual([UrlFetcherRBookclub.URL], calls)
+
+  def test_bookclub_disabled_source_fallback_keeps_live_representations(self):
+    from url_fetcher.r_bookclub import UrlFetcherRBookclub
+    from url_fetcher.generic import UrlFetcherError
+    calls = []
+
+    def blocked(url, **kwargs):
+      calls.append(url)
+      return ''
+
+    with self.assertRaises(UrlFetcherError):
+      UrlFetcherRBookclub().fetch_and_parse(blocked, disable_fallbacks=True)
+    self.assertEqual(6, len(calls))
+    self.assertNotIn(UrlFetcherRBookclub.WAYBACK_URL, calls)
+
+  def test_bookclub_web_failure_still_offers_saved_cache(self):
+    from unittest.mock import Mock
+    from url_fetcher.r_bookclub import UrlFetcherRBookclub
+    recipe = UrlFetcherRBookclub()
+    cache = {'entries': [{'title': 'Saved Book'}]}
+    self.core.read_import_cache = lambda _id: cache
+    self.core.choose_cached_import_action = lambda *_a: 'refresh'
+    self.core.should_fallback_to_cached_import = Mock(return_value=True)
+    self.core.cached_import_to_parsed = lambda _cache: {'entries': cache['entries']}
+    self.core.fetch_url = Mock(side_effect=RuntimeError('offline'))
+    parsed = self.core.load_or_fetch_recipe(recipe)
+    self.assertEqual(cache['entries'], parsed['entries'])
+    self.core.should_fallback_to_cached_import.assert_called_once_with(recipe, cache)
+
+  def test_first_use_consent_is_shared_between_sites_at_stage_one(self):
+    self.capability()
+    main.prefs['debug_browser_fallback_level'] = 1
+    main.prefs['camoufox_first_use_confirmed'] = False
+    with patch.object(main, 'question_dialog', return_value=True) as prompt:
+      with patch.object(main, 'CamoufoxTransport') as factory:
+        factory.return_value.fetch.return_value = '<html>accepted</html>'
+        self.core.fetch_url(self.url, transport='camoufox')
+        self.core.close_camoufox_transport()
+        from url_fetcher.r_bookclub import UrlFetcherRBookclub
+        self.core.fetch_url(UrlFetcherRBookclub.URL, transport='camoufox')
+        self.core.close_camoufox_transport()
+        prompt.assert_called_once()
+
+
+class RFantasyCamoufoxTest(unittest.TestCase):
+
+  setUp = CamoufoxPilotTest.setUp
+  capability = CamoufoxPilotTest.capability
+
+  def recipes(self):
+    return (UrlFetcherRFantasyTopNovels2025(), UrlFetcherRFantasyTopStandaloneNovels2024(),
+            UrlFetcherRFantasyTopSelfPublishedNovels2024())
+
+  def html(self, recipe):
+    schema = recipe.schemas[0]
+    values = dict(position='59', title='This Is How You Lose the Time War',
+                  author='Amal El-Mohtar and Max Gladstone', votes='33',
+                  rank_change='+22', ratings='1000')
+    return '<table><tr>' + ''.join(f'<th>{escape(h)}</th>' for h in schema['headers']) + \
+      '</tr><tr>' + ''.join(f'<td>{escape(values[f])}</td>' for f in schema['fields']) + \
+      '</tr></table>'
+
+  def test_all_recipes_try_browser_first_for_automatic_and_explicit_live_sources(self):
+    for recipe in self.recipes():
+      for options, expected_url in (
+          ({}, recipe.FETCH_URLS[0]),
+          ({'source_choice': 0}, recipe.FETCH_URLS[0]),
+          ({'source_choice': 2}, recipe.URL),
+          ({'force_fallback_level': 2}, recipe.URL),
+          ({'disable_fallbacks': True}, recipe.FETCH_URLS[0]),
+      ):
+        calls, progress = [], []
+
+        def fetch(url, **kwargs):
+          calls.append((url, kwargs))
+          return self.html(recipe)
+
+        with self.subTest(recipe=recipe.NAME, options=options):
+          parsed = recipe.fetch_and_parse(fetch, progress=lambda *args: progress.append(args), **options)
+          self.assertEqual([(expected_url, {'transport': 'camoufox'})], calls)
+          self.assertEqual(recipe.URL, parsed['source']['url'])
+          self.assertEqual(['Amal El-Mohtar', 'Max Gladstone'], parsed['entries'][0]['authors'])
+          self.assertTrue(parsed['match_series'])
+          self.assertFalse(any('snapshot' in note for note in parsed.get('notes', [])))
+          self.assertTrue(any('Camoufox' in message for _done, _total, message in progress))
+          self.assertTrue(all(isinstance(total, int) for _done, total, _message in progress))
+
+  def test_invalid_or_failed_browser_uses_same_source_legacy(self):
+    from errors import CamoufoxFetchError
+    for recipe in self.recipes():
+      for failure in ('', '<h1>blocked by network security</h1>', '<p>Unrelated table</p>',
+                      CamoufoxFetchError('HTTP 403')):
+        calls = []
+
+        def fetch(url, **kwargs):
+          calls.append((url, kwargs.get('transport', 'default')))
+          if kwargs.get('transport'):
+            if isinstance(failure, Exception):
+              raise failure
+            return failure
+          return self.html(recipe)
+
+        with self.subTest(recipe=recipe.NAME, failure=failure):
+          parsed = recipe.fetch_and_parse(fetch, source_choice=2)
+          self.assertEqual([(recipe.URL, 'camoufox'), (recipe.URL, 'default')], calls)
+          self.assertTrue(parsed['entries'])
+          self.assertFalse(parsed.get('notes'))
+
+  def test_archive_selection_and_forced_archive_remain_legacy_only(self):
+    for recipe in self.recipes():
+      for options in ({'source_choice': 1}, {'force_fallback_level': 1}):
+        calls = []
+
+        def fetch(url, **kwargs):
+          calls.append((url, kwargs))
+          return self.html(recipe)
+
+        with self.subTest(recipe=recipe.NAME, options=options):
+          parsed = recipe.fetch_and_parse(fetch, **options)
+          self.assertEqual([(recipe.WAYBACK_URL, {})], calls)
+          self.assertEqual(recipe.WAYBACK_URL, parsed['source']['url'])
+          self.assertTrue(any(recipe.WAYBACK_CAPTURE_DATE in note for note in parsed['notes']))
+
+  def test_browser_failure_preserves_legacy_source_order_and_resets_next_import(self):
+    from url_fetcher.generic import UrlFetcherError
+    for recipe in self.recipes():
+      calls = []
+
+      def blocked(url, **kwargs):
+        calls.append((url, kwargs.get('transport', 'default')))
+        return '<title>Reddit - Please wait for verification</title>'
+
+      with self.subTest(recipe=recipe.NAME), self.assertRaises(UrlFetcherError):
+        recipe.fetch_and_parse(blocked)
+      self.assertEqual([(recipe.FETCH_URLS[0], 'camoufox')] +
+        [(url, 'default') for url in recipe.FETCH_URLS], calls)
+      calls.clear()
+      recipe.fetch_and_parse(lambda url, **kwargs: calls.append((url, kwargs)) or self.html(recipe))
+      self.assertEqual([(recipe.FETCH_URLS[0], {'transport': 'camoufox'})], calls)
+
+  def test_legacy_callback_without_transport_keyword_still_works(self):
+    recipe = self.recipes()[0]
+    calls = []
+
+    def fetch(url):
+      calls.append(url)
+      return self.html(recipe)
+
+    self.assertTrue(recipe.fetch_and_parse(fetch)['entries'])
+    self.assertEqual([recipe.FETCH_URLS[0]], calls)
+
+  def test_cancellation_and_required_browser_failure_prevent_recovery(self):
+    from errors import CamoufoxRequiredError, ImportCancelledError
+    for exception in (ImportCancelledError, CamoufoxRequiredError):
+      for cancel_transport in ('camoufox', 'default'):
+        recipe = self.recipes()[0]
+        calls = []
+
+        def fetch(url, **kwargs):
+          transport = kwargs.get('transport', 'default')
+          calls.append(transport)
+          if transport == cancel_transport:
+            raise exception('stop')
+          return ''
+
+        with self.subTest(exception=exception, transport=cancel_transport):
+          with self.assertRaises(exception):
+            recipe.fetch_and_parse(fetch)
+          self.assertEqual(['camoufox'] if cancel_transport == 'camoufox' else
+            ['camoufox', 'default'], calls)
+
+  def test_shared_browser_stages_and_recipe_cleanup(self):
+    self.capability()
+    for recipe in self.recipes():
+      for stage in (0, 1):
+        main.prefs['debug_browser_fallback_level'] = stage
+        with self.subTest(recipe=recipe.NAME, stage=stage), patch.object(main, 'CamoufoxTransport') as factory:
+          factory.return_value.fetch.return_value = self.html(recipe)
+          parsed = self.core.fetch_and_parse_recipe(recipe, {'source_choice': 2})
+          self.assertTrue(parsed['entries'])
+          factory.return_value.fetch.assert_called_once()
+          self.assertEqual(recipe.URL, factory.return_value.fetch.call_args.args[0])
+          self.assertEqual('r/Fantasy', factory.call_args.kwargs['source_name'])
+          self.assertEqual(('reddit.com', 'goodreads.com'), factory.call_args.kwargs['warmup_excluded_domains'])
+          self.assertFalse(factory.call_args.kwargs['check_challenges'])
+          factory.return_value.close.assert_called_once()
+          self.assertIsNone(self.core.camoufox_transport)
+
+  def test_disabled_unavailable_and_declined_browser_recover_without_starting_it(self):
+    recipe = self.recipes()[0]
+    original = self.core.fetch_url
+    calls = []
+
+    def fetch(url, **kwargs):
+      if kwargs.get('transport'):
+        return original(url, **kwargs)
+      calls.append(url)
+      return self.html(recipe)
+
+    with patch.object(main, 'CamoufoxTransport') as factory:
+      main.prefs['debug_browser_fallback_level'] = 2
+      with patch.object(main, 'camoufox_capability') as capability:
+        recipe.fetch_and_parse(fetch)
+        capability.assert_not_called()
+      main.prefs['debug_browser_fallback_level'] = 0
+      with patch.object(main, 'camoufox_capability', return_value=(False, (9, 15, 0), 'old')):
+        recipe.fetch_and_parse(fetch)
+      self.capability()
+      main.prefs['camoufox_first_use_confirmed'] = False
+      with patch.object(main, 'question_dialog', return_value=False) as prompt:
+        recipe.fetch_and_parse(fetch)
+        prompt.assert_called_once()
+        self.assertIn('r/Fantasy', prompt.call_args.args[2])
+      factory.assert_not_called()
+    self.assertEqual([recipe.FETCH_URLS[0]] * 3, calls)
+
+  def test_rejected_browser_payload_closes_and_suppresses_the_shared_transport(self):
+    recipe = self.recipes()[0]
+    self.capability()
+    with patch.object(main, 'CamoufoxTransport') as factory:
+      factory.return_value.fetch.return_value = '<h1>blocked by network security</h1>'
+      response = io.BytesIO(self.html(recipe).encode())
+      response.headers = None
+      with patch.object(main, 'CalibreBrowser', object()), patch.object(self.core, 'calibre_browser') as legacy:
+        legacy.return_value.open.return_value = response
+        parsed = self.core.fetch_and_parse_recipe(recipe, {'source_choice': 2})
+      self.assertTrue(parsed['entries'])
+      factory.return_value.close.assert_called_once()
+      self.assertTrue(any('suppressed' in message for message in self.logs))
+
+
+class PulitzerCamoufoxTest(unittest.TestCase):
+
+  setUp = CamoufoxPilotTest.setUp
+  capability = CamoufoxPilotTest.capability
+
+  def recipes(self):
+    from url_fetcher.pulitzer import UrlFetcherPulitzerFiction, UrlFetcherPulitzerGeneralNonfiction
+    return (UrlFetcherPulitzerFiction(), UrlFetcherPulitzerGeneralNonfiction())
+
+  def official_html(self, recipe):
+    return f'''<html><head><title>{recipe.CATEGORY} | The Pulitzer Prizes</title></head><body>
+      <h1>{recipe.CATEGORY}</h1><button><span>2026</span></button>
+      <h2><a href="/winners/current">Current Book, by Current Author (Publisher)</a></h2>
+      <p>A citation mentioning Another Book by Another Author must not become an entry.</p>
+      <p>Finalists:</p><a href="/finalists/current">Finalist Book, by Writer, Jr. (Publisher)</a>
+      <a href="/finalists/current">Finalist Book, by Writer, Jr. (Publisher)</a>
+      <button>2023</button>
+      <h2><a href="/winners/first-tie">First Tied Book, by First Author</a></h2>
+      <h2><a href="/winners/second-tie">Second Tied Book, by Second Author</a></h2>
+      <div>Finalists:</div><a href="/finalists/tied-year">Other Book, by Other Author</a>
+      <button>2020</button><h2>No award</h2>
+      <div>Finalists:</div><a href="/finalists/no-award">Unawarded Book, by Final Author</a>
+      </body></html>'''
+
+  def wikipedia_html(self):
+    return '''<table><tr><th>Year</th><th>Author</th><th>Title</th></tr>
+      <tr><td>2026</td><td>Wiki Author</td><td>Wiki Winner</td></tr>
+      <tr><td>Wiki Final Author</td><td>Wiki Finalist</td></tr></table>'''
+
+  def britannica_html(self, recipe):
+    return f'''<h2>{recipe.CATEGORY}</h2><table>
+      <tr><th>Year</th><th>Author</th><th>Title</th></tr>
+      <tr><td>2026</td><td>Britannica Author</td><td>Britannica Winner</td></tr></table>'''
+
+  def test_default_attempt_execution_preserves_callback_order(self):
+    from parser.source_fallback import SourceAttempt, SourceFallbackRunner
+    events = []
+
+    def fetch(url):
+      events.append('fetch')
+      return '<html>source</html>'
+
+    def parse(html, url, **kwargs):
+      events.append('parse')
+      return {'name': 'Fixture', 'entries': [{'title': 'Book'}]}
+
+    parsed = SourceFallbackRunner((SourceAttempt('Fixture', 'https://example.com', parse),)).run(
+      fetch, before_fetch=lambda _url: events.append('before_fetch'),
+      after_fetch=lambda _url, _html: events.append('after_fetch'),
+      before_parse=lambda _url: events.append('before_parse'))
+    self.assertEqual(['before_fetch', 'fetch', 'after_fetch', 'before_parse', 'parse'], events)
+    self.assertEqual('https://example.com', parsed['source']['url'])
+
+  def test_official_fixtures_preserve_winners_finalists_ties_and_provenance(self):
+    for recipe in self.recipes():
+      with self.subTest(category=recipe.CATEGORY):
+        parsed = recipe.parse(self.official_html(recipe))
+        entries = parsed['entries']
+        self.assertEqual(6, len(entries))
+        self.assertEqual(['2020.01', '2023', '2023', '2023.01', '2026', '2026.01'],
+          [e['position'] for e in entries])
+        self.assertEqual(3, sum(e['result'] == 'winner' for e in entries))
+        self.assertEqual(['Writer, Jr.'], entries[-1]['authors'])
+        self.assertEqual('Current Book', entries[-2]['title'])
+        self.assertEqual('https://www.pulitzer.org/winners/current', entries[-2]['source']['url'])
+        self.assertTrue(all(e['category'] == recipe.CATEGORY for e in entries))
+
+  def test_official_parser_rejects_challenge_and_empty_output(self):
+    challenge = '<html><title>Just a moment...</title><body>Cloudflare</body></html>'
+    for recipe in self.recipes():
+      with self.assertRaisesRegex(ValueError, 'Cloudflare'):
+        recipe.parse(challenge)
+      self.assertFalse(recipe.parse('<html>no awards</html>')['entries'])
+
+  def test_browser_success_stops_legacy_and_retains_source_choices(self):
+    for recipe in self.recipes():
+      calls = []
+
+      def fetch(url, **kwargs):
+        calls.append((url, kwargs))
+        return self.official_html(recipe)
+
+      with self.subTest(category=recipe.CATEGORY):
+        parsed = recipe.fetch_and_parse(fetch)
+        self.assertEqual([(recipe.URL, {'transport': 'camoufox'})], calls)
+        self.assertEqual(recipe.URL, parsed['source']['url'])
+        self.assertEqual([], parsed['notes'])
+        self.assertEqual([('Official Pulitzer', 0), ('Wikipedia', 1), ('Britannica', 2)],
+          [(a.label, a.source_rank) for a in recipe.source_attempts()])
+
+  def test_failed_or_unusable_browser_payload_retries_same_official_source(self):
+    from errors import CamoufoxFetchError
+    for recipe in self.recipes():
+      for payload in (CamoufoxFetchError('browser broke'), '', '<html>login</html>',
+          '<title>Just a moment...</title><body>Cloudflare</body>'):
+        calls = []
+
+        def fetch(url, **kwargs):
+          calls.append((url, kwargs))
+          if kwargs.get('transport'):
+            if isinstance(payload, Exception):
+              raise payload
+            return payload
+          return self.official_html(recipe)
+
+        with self.subTest(category=recipe.CATEGORY, payload=repr(payload)):
+          parsed = recipe.fetch_and_parse(fetch)
+          self.assertEqual([(recipe.URL, {'transport': 'camoufox'}), (recipe.URL, {})], calls)
+          self.assertEqual([], parsed['notes'])
+
+  def test_both_official_transports_fail_before_wikipedia(self):
+    for recipe in self.recipes():
+      calls = []
+
+      def fetch(url, **kwargs):
+        calls.append(url)
+        if url == recipe.URL:
+          return ''
+        self.assertEqual(recipe.WIKIPEDIA_URL, url)
+        return self.wikipedia_html()
+
+      with self.subTest(category=recipe.CATEGORY):
+        parsed = recipe.fetch_and_parse(fetch)
+        self.assertEqual([recipe.URL, recipe.URL, recipe.WIKIPEDIA_URL], calls)
+        self.assertEqual(['Wiki Winner', 'Wiki Finalist'], [e['title'] for e in parsed['entries']])
+        self.assertEqual(1, len(parsed['notes']))
+        self.assertIn('Camoufox:', parsed['notes'][0])
+        self.assertIn('legacy:', parsed['notes'][0])
+
+  def test_selected_replacement_sources_and_source_levels_never_request_browser(self):
+    for recipe in self.recipes():
+      for selected in (1, 2):
+        calls = []
+
+        def fetch(url, **kwargs):
+          self.assertNotIn('transport', kwargs)
+          calls.append(url)
+          return self.wikipedia_html() if selected == 1 else self.britannica_html(recipe)
+
+        for options in ({'source_choice': selected}, {'force_fallback_level': selected}):
+          calls.clear()
+          with self.subTest(category=recipe.CATEGORY, options=options):
+            parsed = recipe.fetch_and_parse(fetch, **options)
+            self.assertEqual([recipe.WIKIPEDIA_URL if selected == 1 else recipe.BRITANNICA_URL], calls)
+            if selected == 2:
+              self.assertTrue(all(e['result'] == 'winner' for e in parsed['entries']))
+              self.assertTrue(any('winner-only' in note for note in parsed['notes']))
+
+  def test_all_earlier_sources_fail_before_britannica(self):
+    for recipe in self.recipes():
+      calls = []
+
+      def fetch(url, **kwargs):
+        calls.append(url)
+        return self.britannica_html(recipe) if url == recipe.BRITANNICA_URL else ''
+
+      parsed = recipe.fetch_and_parse(fetch)
+      self.assertEqual([recipe.URL, recipe.URL, recipe.WIKIPEDIA_URL, recipe.BRITANNICA_URL], calls)
+      self.assertEqual(3, len(parsed['notes']))
+      self.assertIn('winner-only', parsed['notes'][-1])
+
+  def test_official_only_allows_transport_retry_but_never_replacement_source(self):
+    from url_fetcher.generic import UrlFetcherError
+    for recipe in self.recipes():
+      for options in ({'source_choice': 0}, {'disable_fallbacks': True}):
+        calls = []
+
+        def fetch(url, **kwargs):
+          calls.append(url)
+          return ''
+
+        with self.assertRaises(UrlFetcherError):
+          recipe.fetch_and_parse(fetch, **options)
+        self.assertEqual([recipe.URL, recipe.URL], calls)
+
+  def test_shared_stages_and_older_calibre_use_correct_pulitzer_configuration(self):
+    from errors import CamoufoxFetchError
+    for recipe in self.recipes():
+      for stage in (0, 1, 2):
+        main.prefs['debug_browser_fallback_level'] = stage
+        original = self.core.fetch_url
+        calls = []
+
+        def fetch(url, **kwargs):
+          if kwargs.get('transport'):
+            return original(url, **kwargs)
+          calls.append(url)
+          return self.official_html(recipe)
+
+        with patch.object(main, 'camoufox_capability', return_value=(True, (9, 17, 0), 'API')) as capability:
+          with patch.object(main, 'CamoufoxTransport') as factory:
+            factory.return_value.fetch.side_effect = CamoufoxFetchError('retry legacy')
+            parsed = recipe.fetch_and_parse(fetch)
+            self.assertEqual(6, len(parsed['entries']))
+            if stage == 2:
+              capability.assert_not_called()
+              factory.assert_not_called()
+            else:
+              self.assertEqual('Pulitzer', factory.call_args.kwargs['source_name'])
+              self.assertEqual(('pulitzer.org', 'goodreads.com'), factory.call_args.kwargs['warmup_excluded_domains'])
+              self.assertFalse(factory.call_args.kwargs['check_challenges'])
+        self.core.close_camoufox_transport()
+        self.core._camoufox_disabled_reason = ''
+        self.assertEqual([recipe.URL], calls)
+
+  def test_unavailable_or_declined_browser_uses_legacy(self):
+    recipe = self.recipes()[0]
+    original = self.core.fetch_url
+
+    def fetch(url, **kwargs):
+      return original(url, **kwargs) if kwargs.get('transport') else self.official_html(recipe)
+
+    for version, reason in (((9, 15, 0), 'old'), ((9, 17, 0), 'missing API import')):
+      with self.subTest(reason=reason), patch.object(
+          main, 'camoufox_capability', return_value=(False, version, reason)):
+        with patch.object(main, 'CamoufoxTransport') as factory:
+          self.assertTrue(recipe.fetch_and_parse(fetch)['entries'])
+          factory.assert_not_called()
+    self.capability()
+    main.prefs['camoufox_first_use_confirmed'] = False
+    with patch.object(main, 'question_dialog', return_value=False) as prompt:
+      self.assertTrue(recipe.fetch_and_parse(fetch)['entries'])
+      prompt.assert_called_once()
+
+  def test_pulitzer_browser_failure_suppresses_restart_and_closes_once(self):
+    from errors import CamoufoxFetchError
+    self.capability()
+    recipe = self.recipes()[0]
+    original = self.core.fetch_url
+
+    def fetch(url, **kwargs):
+      return original(url, **kwargs) if kwargs.get('transport') else self.official_html(recipe)
+
+    with patch.object(main, 'CamoufoxTransport') as factory:
+      factory.return_value.fetch.side_effect = CamoufoxFetchError('startup failed')
+      for _attempt in range(2):
+        parsed = recipe.fetch_and_parse(fetch)
+        self.assertEqual([], parsed['notes'])
+      factory.assert_called_once()
+      factory.return_value.fetch.assert_called_once()
+      self.core.close_camoufox_transport()
+      factory.return_value.close.assert_called_once()
+
+  def test_pulitzer_accepts_shared_consent_and_persists_it(self):
+    self.capability()
+    main.prefs['camoufox_first_use_confirmed'] = False
+    with patch.object(main, 'question_dialog', return_value=True) as prompt:
+      with patch.object(main, 'CamoufoxTransport') as factory:
+        for recipe in self.recipes():
+          factory.return_value.fetch.return_value = self.official_html(recipe)
+          self.assertTrue(self.core.fetch_and_parse_recipe(recipe)['entries'])
+        prompt.assert_called_once()
+        self.assertIn('Pulitzer', prompt.call_args.args[2])
+        self.assertTrue(main.prefs['camoufox_first_use_confirmed'])
+        self.assertEqual(2, factory.return_value.close.call_count)
+
+  def test_cancellation_in_fetch_or_callbacks_stops_all_fallbacks(self):
+    recipe = self.recipes()[0]
+    for phase in ('fetch', 'before_fetch', 'after_fetch', 'before_parse', 'progress'):
+      calls = []
+
+      def cancel(*args):
+        raise main.ImportCancelledError('cancelled')
+
+      def fetch(url, **kwargs):
+        calls.append(url)
+        if phase == 'fetch':
+          cancel()
+        return self.official_html(recipe)
+
+      options = {phase: cancel} if phase != 'fetch' else {}
+      with self.subTest(phase=phase), self.assertRaises(main.ImportCancelledError):
+        recipe.fetch_and_parse(fetch, **options)
+      self.assertLessEqual(len(calls), 1)
+
+  def test_core_cleanup_and_cancellation_bypass_saved_cache(self):
+    from unittest.mock import Mock
+    self.capability()
+    recipe = self.recipes()[0]
+    with patch.object(main, 'CamoufoxTransport') as factory:
+      factory.return_value.fetch.return_value = self.official_html(recipe)
+      self.assertTrue(self.core.fetch_and_parse_recipe(recipe)['entries'])
+      factory.return_value.close.assert_called_once()
+    self.core.read_import_cache = lambda _id: {'entries': []}
+    self.core.choose_cached_import_action = lambda *_a: 'refresh'
+    self.core.should_fallback_to_cached_import = Mock()
+    with patch.object(main, 'CamoufoxTransport') as factory:
+      factory.return_value.fetch.side_effect = main.ImportCancelledError('cancelled')
+      with self.assertRaises(main.ImportCancelledError):
+        self.core.load_or_fetch_recipe(recipe)
+      factory.return_value.close.assert_called_once()
+      self.core.should_fallback_to_cached_import.assert_not_called()
+
+
+class GoodreadsChoiceCamoufoxTest(unittest.TestCase):
+
+  def setUp(self):
+    CamoufoxPilotTest.setUp(self)
+    self.core.sleep_with_events = lambda *_a: None
+    self.enterContext(patch.object(main, 'urlopen', side_effect=AssertionError('Unexpected test network request')))
+    self.enterContext(patch.object(main, 'CalibreBrowser', object()))
+    from url_fetcher.goodreads_choice_awards import UrlFetcherGoodreadsChoiceAwardsFiction
+    self.recipe = UrlFetcherGoodreadsChoiceAwardsFiction()
+    self.parser = self.recipe.parser()
+    self.root = self.recipe.URL
+    self.overview = self.root + '/best-books-2025'
+    self.ballot = self.root + '/readers-favorite-fiction-books-2025'
+    self.detail = 'https://www.goodreads.com/book/show/9000000.Test_Book'
+    self.enterContext(patch('parser.goodreads_choice_awards.goodreads_choice_candidate_years', return_value=(2025,)))
+
+  capability = CamoufoxPilotTest.capability
+
+  def ballot_html(self, category='Fiction'):
+    cards = []
+    for index in range(10):
+      if index == 1:
+        cards.append('<h2>All Nominees</h2>')
+      cards.append(f'''<section><span>{'WINNER ' if index == 0 else ''}{1000-index} votes</span>
+        <a href="/book/show/{9000000+index}.Test_Book"><img alt="Book {index} by Writer {index}" /></a>
+        </section>''')
+    return f'<h1>Readers’ Favorite {category}</h1>' + ''.join(cards) + '<h2>Rules &amp; Eligibility</h2>'
+
+  def payload(self, url, category='Fiction'):
+    if url == self.root:
+      return f'<a href="{self.overview}">2025 Awards</a>'
+    if url == self.overview:
+      ballot = self.ballot.replace('fiction', category.lower())
+      return f'<a href="{ballot}">{category}</a>'
+    if '/book/show/' in url:
+      return '<div aria-label="List of contributors"><span data-testid="name">Additional Writer</span></div>'
+    return self.ballot_html(category)
+
+  def policy(self, fetch, legacy=None):
+    from url_fetcher.goodreads_choice_transport import GoodreadsChoiceFetchPolicy
+    return GoodreadsChoiceFetchPolicy(fetch, legacy or (lambda url: self.payload(url)), self.parser, log=self.logs.append)
+
+  def response(self, url, **kwargs):
+    response = io.BytesIO(self.payload(url).encode())
+    response.headers = {}
+    return response
+
+  def test_payload_validation_for_all_roles_and_unrelated_category_overviews(self):
+    for url in (self.root, self.overview, self.ballot, self.detail):
+      self.parser.validate_fetch_payload(self.payload(url), url)
+    self.parser.validate_fetch_payload(
+      '<a href="/choiceawards/best-romance-books-2025">Romance</a>', self.overview)
+
+  def overview_with_identity(self, year, category='Romance'):
+    # Reduced from the actual rendered 2016 overview captured 2026-11-02.
+    return f'''<html><head><title>Readers' Favorite Books {year} — Goodreads Choice Awards</title>
+      <link rel="canonical" href="https://www.goodreads.com/choiceawards/best-books-{year}" />
+      <meta property="og:url" content="https://www.goodreads.com/choiceawards/best-books-{year}" /></head><body>
+      <a href="/choiceawards/best-books-2015">2015 Awards</a><a href="/choiceawards/best-books-2017">2017 Awards</a>
+      <a href="/choiceawards/best-{category.lower()}-books-{year}">{category}</a>
+      <h1>{year} Rules &amp; Eligibility</h1><h1>{year} Eligibility</h1></body></html>'''
+
+  def test_stale_overview_year_rejected_but_unrelated_category_and_history_links_allowed(self):
+    url = self.root + '/best-books-2017'
+    self.parser.validate_fetch_payload(self.overview_with_identity(2017), url)
+    with self.assertRaisesRegex(ValueError, 'requested 2017, received 2016'):
+      self.parser.validate_fetch_payload(self.overview_with_identity(2016), url)
+
+  def test_each_structural_year_signal_rejects_a_stale_page(self):
+    signals = (
+      '<link rel="canonical" href="/choiceawards/best-books-2016" />',
+      '<meta property="og:url" content="/choiceawards/best-books-2016" />',
+      '<title>Readers\' Favorite Books 2016 — Goodreads Choice Awards</title>',
+      '<h1>2016 Rules &amp; Eligibility</h1>')
+    for signal in signals:
+      with self.subTest(signal=signal), self.assertRaisesRegex(ValueError, 'year mismatch'):
+        self.parser.validate_fetch_payload(signal + '<a href="/choiceawards/best-romance-books-2017">Romance</a>',
+          self.root + '/best-books-2017')
+
+  def test_metadata_free_fragments_check_ballot_year_not_overview_navigation(self):
+    url = self.root + '/best-books-2017'
+    html = '<a href="/choiceawards/best-books-2016">2016 Awards</a><a href="/choiceawards/best-romance-books-2017">Romance</a>'
+    self.parser.validate_fetch_payload(html, url)
+    with self.assertRaisesRegex(ValueError, 'year mismatch'):
+      self.parser.validate_fetch_payload(html.replace('best-romance-books-2017', 'best-romance-books-2016'), url)
+
+  def test_undated_landing_page_and_date_free_ballot_fixtures_remain_supported(self):
+    self.parser.validate_fetch_payload(self.overview_with_identity(2016), self.root)
+    self.parser.validate_fetch_payload(self.ballot_html(), self.ballot)
+    with self.assertRaisesRegex(ValueError, 'year mismatch'):
+      self.parser.validate_fetch_payload('<link rel="canonical" href="/choiceawards/best-fiction-books-2016" />' + self.ballot_html(), self.ballot)
+
+  def test_stale_browser_overview_recovers_once_and_does_not_leak_failure_notes(self):
+    overview = self.root + '/best-books-2017'
+    calls = []
+
+    def fetch(url, **kwargs):
+      calls.append((url, kwargs.get('transport', 'legacy')))
+      if url == self.root:
+        return f'<a href="{overview}">2017 Awards</a>'
+      if url == overview:
+        return self.overview_with_identity(2016 if kwargs.get('transport') else 2017, 'Fiction')
+      return self.payload(url)
+
+    with patch('parser.goodreads_choice_awards.goodreads_choice_candidate_years', return_value=(2017,)):
+      parsed = self.recipe.fetch_and_parse(fetch)
+    self.assertEqual([], parsed['notes'])
+    self.assertEqual(10, len(parsed['entries']))
+    self.assertEqual({'2017'}, {e['award_year'] for e in parsed['entries']})
+    self.assertEqual(1, calls.count((overview, 'camoufox')))
+    self.assertEqual(1, calls.count((overview, 'legacy')))
+    recovered = calls.index((overview, 'legacy'))
+    self.assertTrue(all(transport == 'legacy' for _url, transport in calls[recovered:]))
+
+  def test_both_stale_transports_produce_explicit_partial_year_warning(self):
+    overview = self.root + '/best-books-2017'
+
+    def fetch(url, **kwargs):
+      if url == overview:
+        return self.overview_with_identity(2016)
+      return self.payload(url)
+
+    with patch('parser.goodreads_choice_awards.goodreads_choice_candidate_years', return_value=(2017, 2025)):
+      parsed = self.recipe.fetch_and_parse(fetch)
+    self.assertEqual(10, len(parsed['entries']))
+    self.assertTrue(any('best-books-2017' in note and 'year mismatch' in note for note in parsed['notes']))
+    self.assertEqual({'2025'}, {e['award_year'] for e in parsed['entries']})
+
+  def test_bad_payloads_rejected_without_mutating_notes(self):
+    payloads = ('', '<title>Sign in | Goodreads</title>', '<title>Just a moment...</title>',
+      '<h1>Verify you are human</h1>', '<html>garbage</html>')
+    for url in (self.root, self.overview, self.ballot, self.detail):
+      for html in payloads:
+        with self.subTest(url=url, html=html), self.assertRaises(ValueError):
+          self.parser.validate_fetch_payload(html, url)
+    with self.assertRaisesRegex(ValueError, 'heading'):
+      self.parser.validate_fetch_payload(self.ballot_html('Fantasy'), self.ballot)
+    with self.assertRaisesRegex(ValueError, 'expected 10-25'):
+      self.parser.validate_fetch_payload(self.ballot_html().replace('1005 votes', '0 votes').replace(
+        '<img alt="Book 9 by Writer 9" />', ''), self.ballot)
+
+  def test_browser_success_for_each_role_bypasses_legacy(self):
+    from unittest.mock import Mock
+    for url in (self.root, self.overview, self.ballot, self.detail):
+      browser = Mock(return_value=self.payload(url))
+      legacy = Mock()
+      policy = self.policy(browser, legacy)
+      self.assertEqual(self.payload(url), policy.fetch(url))
+      browser.assert_called_once_with(url, transport='camoufox', timeout=60)
+      legacy.assert_not_called()
+
+  def test_each_role_recovers_from_browser_failure_without_failure_notes(self):
+    from unittest.mock import Mock
+    from errors import CamoufoxFetchError
+    for url in (self.root, self.overview, self.ballot, self.detail):
+      for result in ('', '<h1>Verify you are human</h1>', CamoufoxFetchError('oversized response')):
+        browser = Mock(side_effect=result) if isinstance(result, Exception) else Mock(return_value=result)
+        policy = self.policy(browser)
+        self.assertEqual(self.payload(url), policy.fetch(url))
+        self.assertTrue(policy.browser_disabled)
+        policy.fetch(url)
+        browser.assert_called_once()
+
+  def test_linked_recovery_does_not_restart_import_or_leak_validation_notes(self):
+    for failure_url in (self.root, self.overview, self.ballot, self.detail):
+      calls = []
+
+      def fetch(url, **kwargs):
+        transport = kwargs.get('transport', 'legacy')
+        calls.append((url, transport))
+        return '<h1>Verify you are human</h1>' if transport == 'camoufox' and url == failure_url else self.payload(url)
+
+      parsed = self.recipe.fetch_and_parse(fetch)
+      self.assertEqual(10, len(parsed['entries']))
+      self.assertEqual([], parsed['notes'])
+      self.assertEqual(1 + (failure_url == self.root), sum(url == self.root for url, _t in calls))
+      self.assertEqual(1, calls.count((failure_url, 'legacy')))
+      failed_index = calls.index((failure_url, 'legacy'))
+      self.assertFalse(any(t == 'camoufox' for _u, t in calls[failed_index:]))
+      self.assertTrue(all(e['source']['url'] == self.ballot for e in parsed['entries']))
+
+  def test_shared_stages_configure_goodreads_and_cleanup(self):
+    from unittest.mock import Mock
+    self.capability()
+    for stage in (0, 1, 2):
+      main.prefs['debug_browser_fallback_level'] = stage
+      with patch.object(main, 'CamoufoxTransport') as factory:
+        factory.return_value.fetch.side_effect = lambda url, **kw: self.payload(url)
+        self.core.calibre_browser = Mock()
+        self.core.calibre_browser.return_value.open.side_effect = self.response
+        with patch.object(main, 'camoufox_capability', return_value=(True, (9, 17, 0), 'API')) as capability:
+          parsed = self.core.fetch_and_parse_recipe(self.recipe)
+        self.assertEqual(10, len(parsed['entries']))
+        if stage == 2:
+          factory.assert_not_called()
+          capability.assert_not_called()
+        else:
+          factory.assert_called_once()
+          factory.return_value.close.assert_called_once()
+          self.core.calibre_browser.assert_not_called()
+          self.assertEqual('Goodreads', factory.call_args.kwargs['source_name'])
+          self.assertEqual(('goodreads.com',), factory.call_args.kwargs['warmup_excluded_domains'])
+          self.assertFalse(factory.call_args.kwargs['check_challenges'])
+
+  def test_core_rejected_payload_suppresses_browser_and_next_import_resets(self):
+    from unittest.mock import Mock
+    self.capability()
+    self.core.calibre_browser = Mock()
+    self.core.calibre_browser.return_value.open.side_effect = self.response
+    with patch.object(main, 'CamoufoxTransport') as factory:
+      factory.return_value.fetch.return_value = '<h1>Verify you are human</h1>'
+      for _attempt in range(2):
+        parsed = self.core.fetch_and_parse_recipe(self.recipe)
+        self.assertEqual([], parsed['notes'])
+      self.assertEqual(2, factory.call_count)
+      self.assertEqual(2, factory.return_value.fetch.call_count)
+      self.assertEqual(2, factory.return_value.close.call_count)
+    self.assertTrue(any('suppressed' in line for line in self.logs))
+
+  def test_old_calibre_missing_api_and_decline_use_legacy(self):
+    from unittest.mock import Mock
+    self.core.calibre_browser = Mock()
+    self.core.calibre_browser.return_value.open.side_effect = self.response
+    for version in ((6, 0, 0), (9, 15, 0), (9, 17, 0)):
+      with patch.object(main, 'camoufox_capability', return_value=(False, version, 'missing API')):
+        with patch.object(main, 'CamoufoxTransport') as factory:
+          self.assertTrue(self.core.fetch_and_parse_recipe(self.recipe)['entries'])
+          factory.assert_not_called()
+    self.capability()
+    main.prefs['camoufox_first_use_confirmed'] = False
+    with patch.object(main, 'question_dialog', return_value=False) as prompt:
+      self.assertTrue(self.core.fetch_and_parse_recipe(self.recipe)['entries'])
+      prompt.assert_called_once()
+      self.assertFalse(main.prefs['camoufox_first_use_confirmed'])
+
+  def test_consent_accepts_once_and_persists(self):
+    self.capability()
+    main.prefs['camoufox_first_use_confirmed'] = False
+    with patch.object(main, 'question_dialog', return_value=True) as prompt:
+      with patch.object(main, 'CamoufoxTransport') as factory:
+        factory.return_value.fetch.side_effect = lambda url, **kw: self.payload(url)
+        self.assertTrue(self.core.fetch_and_parse_recipe(self.recipe)['entries'])
+      prompt.assert_called_once()
+      self.assertIn('Goodreads', prompt.call_args.args[2])
+      self.assertTrue(main.prefs['camoufox_first_use_confirmed'])
+
+  def test_core_browser_exception_recovers_and_closes_once(self):
+    from errors import CamoufoxFetchError
+    from unittest.mock import Mock
+    self.capability()
+    self.core.calibre_browser = Mock()
+    self.core.calibre_browser.return_value.open.side_effect = self.response
+    for stage in (0, 1):
+      main.prefs['debug_browser_fallback_level'] = stage
+      with patch.object(main, 'CamoufoxTransport') as factory:
+        factory.return_value.fetch.side_effect = CamoufoxFetchError('browser startup failed')
+        parsed = self.core.fetch_and_parse_recipe(self.recipe)
+        self.assertEqual([], parsed['notes'])
+        factory.return_value.fetch.assert_called_once()
+        factory.return_value.close.assert_called_once()
+
+  def test_core_enrichment_delay_cancellation_stops_and_closes(self):
+    self.capability()
+    calls = []
+
+    def fetch(url, **kwargs):
+      calls.append(url)
+      return self.payload(url)
+
+    def cancel(*args):
+      raise main.ImportCancelledError('cancelled during contributor delay')
+
+    self.core.sleep_with_events = cancel
+    with patch.object(main, 'CamoufoxTransport') as factory:
+      factory.return_value.fetch.side_effect = fetch
+      with self.assertRaises(main.ImportCancelledError):
+        self.core.fetch_and_parse_recipe(self.recipe)
+      factory.return_value.close.assert_called_once()
+    self.assertEqual(1, sum('/book/show/' in url for url in calls))
+
+  def test_non_goodreads_urls_do_not_use_browser_or_choice_validation(self):
+    from unittest.mock import Mock
+    browser, legacy = Mock(), Mock(return_value='external page')
+    self.assertEqual('external page', self.policy(browser, legacy).fetch('https://example.com/official'))
+    browser.assert_not_called()
+
+  def test_camoufox_log_never_contains_payload(self):
+    html = self.payload(self.root) + '<p>SECRET PAGE BODY</p>'
+    self.policy(lambda url, **kw: html).fetch(self.root)
+    self.assertTrue(any('role=overview transport=Camoufox accepted' in line for line in self.logs))
+    self.assertFalse(any('SECRET PAGE BODY' in line for line in self.logs))
+
+  def test_fiction_and_fantasy_pilot_preserve_ballot_results(self):
+    from url_fetcher.goodreads_choice_awards import (
+      UrlFetcherGoodreadsChoiceAwardsFiction, UrlFetcherGoodreadsChoiceAwardsFantasy)
+    for factory in (UrlFetcherGoodreadsChoiceAwardsFiction, UrlFetcherGoodreadsChoiceAwardsFantasy):
+      recipe = factory()
+      parsed = recipe.fetch_and_parse(lambda url, **kw: self.payload(url, recipe.CATEGORY))
+      self.assertEqual(10, len(parsed['entries']))
+      self.assertEqual(1, sum(e['result'] == 'winner' for e in parsed['entries']))
+      self.assertTrue(all(e['category'] == recipe.CATEGORY for e in parsed['entries']))
+      self.assertEqual([], parsed['notes'])
+
+  def test_linked_progress_cancellation_is_not_a_partial_result(self):
+    for marker in ('Goodreads Choice Awards 2025', 'result page', 'contributors'):
+      def progress(_done, _total, message):
+        if marker in message:
+          raise main.ImportCancelledError('cancelled in linked progress')
+      with self.subTest(marker=marker), self.assertRaises(main.ImportCancelledError):
+        self.recipe.fetch_and_parse(lambda url, **kw: self.payload(url), progress=progress)
+
+  def test_cancellation_in_ballot_parsing_is_not_a_failed_page_note(self):
+    with patch.object(type(self.parser), 'parse_category_page', side_effect=main.ImportCancelledError('cancelled while parsing')):
+      with self.assertRaises(main.ImportCancelledError):
+        self.recipe.fetch_and_parse(lambda url, **kw: self.payload(url))
+
+  def test_legacy_timeout_retries_remain_bounded_and_permanent_errors_single(self):
+    from errors import CamoufoxFetchError
+    from urllib.error import HTTPError
+    for failure in (TimeoutError('timed out'), HTTPError(self.root, 403, 'Forbidden', {}, None)):
+      calls = []
+
+      def fetch(url, **kwargs):
+        calls.append(kwargs)
+        if kwargs.get('transport'):
+          raise CamoufoxFetchError('browser startup failed')
+        raise failure
+
+      with self.assertRaises(Exception):
+        self.recipe.fetch_and_parse(fetch)
+      self.assertEqual(1, sum(bool(c.get('transport')) for c in calls))
+      self.assertEqual(4 if isinstance(failure, TimeoutError) else 1,
+        sum(not c.get('transport') for c in calls))
+      self.assertTrue(all(c.get('timeout') == 60 for c in calls))
+
+  def test_partial_year_failure_retains_rows_but_all_empty_fails(self):
+    from url_fetcher.generic import UrlFetcherError
+    with patch('parser.goodreads_choice_awards.goodreads_choice_candidate_years', return_value=(2024, 2025)):
+      def fetch(url, **kwargs):
+        if '2024' in url:
+          raise RuntimeError('HTTP Error 404')
+        return self.payload(url)
+      parsed = self.recipe.fetch_and_parse(fetch)
+      self.assertEqual(10, len(parsed['entries']))
+      self.assertTrue(any('2024' in note for note in parsed['notes']))
+    with self.assertRaisesRegex(UrlFetcherError, 'No usable'):
+      self.recipe.fetch_and_parse(lambda url, **kw: self.payload(self.root))
+
+  def test_enrichment_exhausted_challenge_keeps_ballot_and_stops(self):
+    detail_calls = []
+
+    def fetch(url, **kwargs):
+      if '/book/show/' in url:
+        detail_calls.append(url)
+        return '<h1>Verify you are human</h1>'
+      return self.payload(url)
+
+    parsed = self.recipe.fetch_and_parse(fetch)
+    self.assertEqual([self.detail, self.detail], detail_calls)
+    self.assertEqual(10, len(parsed['entries']))
+    self.assertEqual(['Writer 0'], parsed['entries'][0]['authors'])
+    self.assertTrue(any('enrichment stopped' in note for note in parsed['notes']))
+
+  def test_cancellation_at_every_page_role_and_progress_never_recovers(self):
+    from errors import ImportCancelledError
+    for cancel_url in (self.root, self.overview, self.ballot, self.detail):
+      calls = []
+
+      def fetch(url, **kwargs):
+        calls.append((url, kwargs))
+        if url == cancel_url:
+          raise ImportCancelledError('cancelled')
+        return self.payload(url)
+
+      with self.assertRaises(ImportCancelledError):
+        self.recipe.fetch_and_parse(fetch)
+      self.assertEqual(1, sum(url == cancel_url for url, _kw in calls))
+    for callback in ('progress', 'before_fetch', 'after_fetch', 'before_parse', 'sleep'):
+      def cancel(*a):
+        raise ImportCancelledError('cancelled')
+      with self.subTest(callback=callback), self.assertRaises(ImportCancelledError):
+        self.recipe.fetch_and_parse(lambda url, **kw: self.payload(url), **{callback: cancel})
+
+  def test_cancellation_in_validation_is_not_transport_failure(self):
+    from errors import ImportCancelledError
+    from unittest.mock import Mock
+    legacy = Mock()
+    policy = self.policy(lambda url, **kw: self.payload(url), legacy)
+    with patch.object(self.parser, 'validate_fetch_payload', side_effect=ImportCancelledError('cancelled')):
+      with self.assertRaises(ImportCancelledError):
+        policy.fetch(self.root)
+    legacy.assert_not_called()
+    self.assertFalse(policy.browser_disabled)
+
+  def test_core_cancellation_closes_once_and_does_not_offer_cache(self):
+    from unittest.mock import Mock
+    self.capability()
+    self.core.read_import_cache = lambda _id: {'entries': []}
+    self.core.choose_cached_import_action = lambda *_a: 'refresh'
+    self.core.should_fallback_to_cached_import = Mock()
+    with patch.object(main, 'CamoufoxTransport') as factory:
+      factory.return_value.fetch.side_effect = main.ImportCancelledError('cancelled')
+      with self.assertRaises(main.ImportCancelledError):
+        self.core.load_or_fetch_recipe(self.recipe)
+      factory.return_value.close.assert_called_once()
+    self.core.should_fallback_to_cached_import.assert_not_called()
+
+  def test_policy_applies_to_all_registered_choice_categories_only(self):
+    from url_fetcher import available_url_fetchers
+    from url_fetcher.goodreads_choice_awards import UrlFetcherGoodreadsChoiceAwards
+    from url_fetcher.dragons_and_jetpacks import UrlFetcherDragonsJetpacks
+    from url_fetcher.generic import GoodreadsFetchPolicyMixin
+    choices = [f for f in available_url_fetchers() if f.source_id.startswith('goodreads_choice_awards_')]
+    self.assertGreater(len(choices), 20)
+    for fetcher in choices:
+      self.assertIs(fetcher.__class__.fetch_and_parse, UrlFetcherGoodreadsChoiceAwards.fetch_and_parse)
+      self.assertIs(fetcher.__class__.fetch_url, UrlFetcherGoodreadsChoiceAwards.fetch_url)
+    self.assertIs(UrlFetcherDragonsJetpacks.request_timeout, GoodreadsFetchPolicyMixin.request_timeout)
+    self.assertIsNot(UrlFetcherDragonsJetpacks.fetch_url, UrlFetcherGoodreadsChoiceAwards.fetch_url)
+
+
+class RBookclubRenderedRepairTest(unittest.TestCase):
+
+  URL = 'https://www.reddit.com/r/bookclub/wiki/previous/'
+
+  def markdown(self):
+    return '''# Previous Selections
+
+# 2026
+
+# November 2026
+
+Modern: [*Lucy by the Sea*](https://www.reddit.com/r/bookclub/comments/lucy26/schedule/) by Elizabeth Strout
+
+# 2016
+
+# March 2016
+
+Classic: [*Madame Bovary*](http://en.wikipedia.org/wiki/Madame_Bovary), by Gustave Flaubert
+
+# 2010
+
+# August 2010
+
+Modern Book of the Month: [Neverwhere (novel)](http://en.wikipedia.org/wiki/Neverwhere_(novel)) by Neil Gaiman
+
+Project Gutenberg Book of the Month: [*The Call of the Wild*](http://en.wikipedia.org/wiki/The_Call_Of_The_Wild) by Jack London
+'''
+
+  def wiki_html(self):
+    return '''<div class="md wiki">
+      <h1>Previous Selections</h1><h1>2026</h1><h1>November 2026</h1>
+      <p>Modern: <a href="https://www.reddit.com/r/bookclub/comments/lucy26/schedule/"><em>Lucy by the Sea</em></a> by Elizabeth Strout</p>
+      <h1>2016</h1><h1>March 2016</h1>
+      <p>Classic: <a href="http://en.wikipedia.org/wiki/Madame_Bovary"><em>Madame Bovary</em></a>, by Gustave Flaubert</p>
+      <h1>2010</h1><h1>August 2010</h1>
+      <p>Modern Book of the Month: <faceplate-tracker><a href="http://en.wikipedia.org/wiki/Neverwhere_(novel)"><span>Neverwhere (novel)</span></a></faceplate-tracker> by Neil Gaiman</p>
+      <p>Project Gutenberg Book of the Month: <em><a href="http://en.wikipedia.org/wiki/The_Call_Of_The_Wild">The Call of the Wild</a></em> by Jack London</p>
+      </div>'''
+
+  def rendered_html(self):
+    # The .md.wiki / main#main-content boundary is from the live 2026-11-01
+    # capture. The surrounding noise reproduces the user's eight extra rows.
+    return '''<html><head><title>r/bookclub Wiki: Book Selection Schedule</title></head>
+      <body><shreddit-app><nav><h1>Previous Selections</h1></nav>
+      <main id="main-content"><div class="flex flex-col">''' + self.wiki_html() + '''</div></main>
+      <aside><p>Anyone can view, post, and comment to this community</p>
+      <p>Summer 2017 Long Read - Don Quixote by Miguel de Cervantes Saavedra</p>
+      <p>Big Read, Anna Karenina</p><p>Big Read June-July 2014, Ulysses</p>
+      <p>Big Read, Gravity's Rainbow</p><p>Big Read, Infinite Jest</p></aside>
+      <footer><p>Reddit, Inc. © 2026. All rights reserved</p>
+      <p>By continuing, you agree to our User Agreement and acknowledge our Privacy Policy</p></footer>
+      </shreddit-app></body></html>'''
+
+  def parse(self, payload):
+    from parser.r_bookclub import RBookclubParser
+    return RBookclubParser().parse(payload, self.URL)
+
+  def test_rendered_wiki_matches_markdown_full_entry_schemas(self):
+    expected = self.parse(self.markdown())
+    actual = self.parse(self.rendered_html())
+    self.assertEqual(expected, actual)
+    self.assertEqual(['Neverwhere (novel)', 'The Call of the Wild', 'Madame Bovary', 'Lucy by the Sea'],
+      [e['title'] for e in actual['entries']])
+    self.assertEqual(['1', '2', '3', '4'], [e['position'] for e in actual['entries']])
+    self.assertEqual(['2010', '2010', '2016', '2026'], [e['selection_year'] for e in actual['entries']])
+    self.assertEqual(['8', '8', '3', '11'], [e['selection_month'] for e in actual['entries']])
+    self.assertEqual(['Gustave Flaubert'], actual['entries'][2]['authors'])
+    self.assertEqual('reddit:lucy26', actual['entries'][3]['source_record_id'])
+
+  def test_source_view_and_json_html_preserve_the_same_entries(self):
+    expected = self.parse(self.markdown())
+    self.assertEqual(expected, self.parse('<html><body><pre>' + escape(self.markdown()) + '</pre></body></html>'))
+    self.assertEqual(expected, self.parse(json.dumps({'data': {'content_html': self.wiki_html()}})))
+    self.assertEqual(expected, self.parse(json.dumps({'data': {'content_md': self.markdown()}})))
+
+  def test_plain_and_emphasized_links_keep_book_and_selection_provenance(self):
+    entries = self.parse(self.rendered_html())['entries']
+    self.assertEqual('http://en.wikipedia.org/wiki/Neverwhere_(novel)', entries[0]['linked_book_url'])
+    self.assertEqual('http://en.wikipedia.org/wiki/The_Call_Of_The_Wild', entries[1]['linked_book_url'])
+    self.assertEqual('http://en.wikipedia.org/wiki/Madame_Bovary', entries[2]['linked_book_url'])
+    self.assertEqual('https://www.reddit.com/r/bookclub/comments/lucy26/schedule/', entries[3]['source']['url'])
+
+  def test_unknown_full_reddit_page_fails_even_if_footer_looks_like_a_selection(self):
+    for html in (
+        '<html><title>Reddit</title><main>' + self.wiki_html().replace('class="md wiki"', '') + '</main></html>',
+        '<shreddit-app><h1>Previous Selections</h1><h1>August 2010</h1><p>Fake by Footer Author</p></shreddit-app>',
+        '<html><body><h1>Previous Selections</h1><h1>August 2010</h1><p>Fake by Footer Author</p></body></html>'):
+      with self.subTest(html=html), self.assertRaisesRegex(ValueError, 'wiki content container'):
+        self.parse(html)
+
+  def test_classic_wiki_wrapper_and_standalone_fragments_still_work(self):
+    expected = self.parse(self.markdown())
+    content = self.wiki_html().removeprefix('<div class="md wiki">').rsplit('</div>', 1)[0]
+    classic = '<html><title>Reddit</title><body><div class="wiki-page-content"><div class="md">' + content + '</div></div><p>Noise by Footer Author</p></body></html>'
+    self.assertEqual(expected, self.parse(classic))
+    self.assertEqual(expected, self.parse(content))
+    self.assertEqual(expected, self.parse('<html><body><main>' + content + '</main></body></html>'))
+
+  def test_linked_credit_delimiters_preserve_by_in_titles_and_translator_roles(self):
+    from parser.r_bookclub import RBookclubParser
+    parser = RBookclubParser()
+    for separator in (' by ', ', by ', ') by ', ', translated by '):
+      component = parser.linked_components('[*Lucy by the Sea*](/r/bookclub/comments/test/)' + separator + 'Writer Jr.', self.URL)[0]
+      self.assertEqual('*Lucy by the Sea*', component['title'])
+      self.assertEqual('Writer Jr.', component['credit'])
+      self.assertEqual('translator' if 'translated' in separator else 'author', component['role'])
+
+  def test_unrecognized_browser_boundary_triggers_legacy_recovery(self):
+    from url_fetcher.r_bookclub import UrlFetcherRBookclub
+    calls = []
+
+    def fetch(url, **kwargs):
+      calls.append((url, kwargs))
+      if kwargs.get('transport'):
+        return '<html><title>Reddit</title><h1>Previous Selections</h1><h1>2010</h1><p>Fake by Footer Author</p></html>'
+      return json.dumps({'data': {'content_md': self.markdown()}})
+
+    recipe = UrlFetcherRBookclub()
+    actual = recipe.fetch_and_parse(fetch)
+    self.assertEqual(self.parse(self.markdown()), actual)
+    self.assertEqual([(recipe.URL, {'transport': 'camoufox'}), (recipe.OLD_REDDIT_URL, {})], calls)
+
+
+class PulitzerCoauthorTest(unittest.TestCase):
+
+  def official_html(self):
+    return '''<html><body><button>1968</button>
+      <h2><a href="/winners/will-and-ariel-durant">The Story of Civilization: Rousseau and Revolution, by Will and Ariel Durant (Simon &amp; Schuster)</a></h2>
+      <button>1980</button>
+      <h2><a href="/winners/douglas-r-hofstadter">Godel, Escher, Bach: an Eternal Golden Braid, by Douglas R. Hofstadter</a></h2>
+      <p>Finalists:</p>
+      <a href="/finalists/sandra-m-gilbert-and-susan-gubar">The Madwoman in the Attic, by Sandra M. Gilbert and Susan Gubar (Yale University Press)</a>
+      <a href="/finalists/sandra-m-gilbert-and-susan-gubar">The Madwoman in the Attic, by Sandra M. Gilbert and Susan Gubar (Yale University Press)</a>
+      </body></html>'''
+
+  def wikipedia_html(self):
+    return '''<table><tr><th>Year</th><th>Author</th><th>Title</th></tr>
+      <tr><td>1968</td><td>Will &amp; Ariel Durant</td><td>The Story of Civilization: Rousseau and Revolution</td></tr>
+      <tr><td>1980</td><td>Douglas R. Hofstadter</td><td>Godel, Escher, Bach: an Eternal Golden Braid</td></tr>
+      <tr><td>Sandra M. Gilbert and Susan Gubar</td><td>The Madwoman in the Attic</td></tr></table>'''
+
+  def britannica_html(self):
+    return '''<h2>General Nonfiction</h2><table><tr><th>Year</th><th>Author</th><th>Title</th></tr>
+      <tr><td>1968</td><td>Will and Ariel Durant</td><td>The Story of Civilization: Rousseau and Revolution</td></tr>
+      <tr><td>1991</td><td>Bert Hölldobler and Edward O. Wilson</td><td>The Ants</td></tr></table>'''
+
+  def cases(self):
+    from parser.pulitzer import PulitzerAwardParser, PulitzerWikipediaParser, PulitzerBritannicaParser
+    return (
+      (PulitzerAwardParser(), self.official_html(), 'https://www.pulitzer.org/prize-winners-by-category/223'),
+      (PulitzerWikipediaParser(), self.wikipedia_html(), 'https://en.wikipedia.org/wiki/Pulitzer_Prize_for_General_Nonfiction'),
+      (PulitzerBritannicaParser(), self.britannica_html(), 'https://www.britannica.com/topic/Pulitzer-Prize'),
+    )
+
+  def test_official_winner_and_finalist_coauthors_are_individual_names(self):
+    from parser.pulitzer import PulitzerAwardParser
+    parsed = PulitzerAwardParser().parse(self.official_html(), 'https://www.pulitzer.org/prize-winners-by-category/223',
+      'Pulitzer Prize - General Nonfiction', 'General Nonfiction')
+    entries = parsed['entries']
+    self.assertEqual(3, len(entries))
+    self.assertEqual([
+      ['Will Durant', 'Ariel Durant'], ['Douglas R. Hofstadter'], ['Sandra M. Gilbert', 'Susan Gubar'],
+    ], [e['authors'] for e in entries])
+    self.assertEqual(['1968', '1980', '1980.01'], [e['position'] for e in entries])
+    self.assertEqual(['winner', 'winner', 'nominee'], [e['result'] for e in entries])
+    self.assertEqual('https://www.pulitzer.org/finalists/sandra-m-gilbert-and-susan-gubar', entries[-1]['source']['url'])
+
+  def test_wikipedia_and_britannica_apply_the_same_cleanup(self):
+    for parser, html, url in self.cases()[1:]:
+      parsed = parser.parse(html, url, 'Pulitzer Prize - General Nonfiction', 'General Nonfiction')
+      self.assertEqual(['Will Durant', 'Ariel Durant'], parsed['entries'][0]['authors'])
+      if parser.__class__.__name__ == 'PulitzerWikipediaParser':
+        self.assertEqual(['Sandra M. Gilbert', 'Susan Gubar'], parsed['entries'][-1]['authors'])
+      else:
+        self.assertEqual(['Bert Hölldobler', 'Edward O. Wilson'], parsed['entries'][-1]['authors'])
+        self.assertTrue(all(e['result'] == 'winner' for e in parsed['entries']))
+        self.assertTrue(any('winner-only' in n for n in parsed['notes']))
+
+  def test_suffixes_initials_diacritics_and_comma_names_are_not_damaged(self):
+    from parser.pulitzer import pulitzer_authors
+    for credit, expected in (
+        ('Martin Luther King, Jr. and Alex Haley (Publisher)', ['Martin Luther King, Jr.', 'Alex Haley']),
+        ('Writer, Jr., and Second Writer', ['Writer, Jr.', 'Second Writer']),
+        ('Bert Hölldobler & Edward O. Wilson', ['Bert Hölldobler', 'Edward O. Wilson']),
+        ('J. R. Writer with Mary-Jane O’Neill', ['J. R. Writer', 'Mary-Jane O’Neill']),
+        ('Smith, John', ['Smith, John']),
+        ('Writer, Jr.', ['Writer, Jr.']),
+        ('Plato and Aristotle', ['Plato', 'Aristotle']),
+        ('Will Other and Ariel Durant', ['Will Other', 'Ariel Durant'])):
+      with self.subTest(credit=credit):
+        self.assertEqual(expected, pulitzer_authors(credit))
+
+  def test_repeated_contributors_are_deduplicated_in_source_order(self):
+    from parser.pulitzer import pulitzer_authors
+    self.assertEqual(['First Writer', 'Second Writer'], pulitzer_authors('First Writer and Second Writer and FIRST WRITER'))
+    self.assertEqual([], pulitzer_authors(''))
+    for credit in ('Will and Ariel Durant', 'Will & Ariel Durant', 'will AND ariel durant (Publisher)'):
+      self.assertEqual(['Will Durant', 'Ariel Durant'], pulitzer_authors(credit))
+
+  def test_only_authors_change_and_internal_raw_credit_contract_is_preserved(self):
+    import parser.pulitzer as module
+    for parser, html, url in self.cases():
+      before_rows = parser.parse_rows(html, url, 'General Nonfiction')
+      self.assertIn('author', before_rows[0])
+      self.assertNotIn('authors', before_rows[0])
+      with patch.object(module, 'pulitzer_authors', side_effect=lambda credit: [credit]):
+        before = parser.parse(html, url, 'Pulitzer Prize - General Nonfiction', 'General Nonfiction')
+      after = parser.parse(html, url, 'Pulitzer Prize - General Nonfiction', 'General Nonfiction')
+      for parsed in (before, after):
+        for entry in parsed['entries']:
+          entry.pop('authors')
+      self.assertEqual(before, after)
+      self.assertEqual(before_rows, parser.parse_rows(html, url, 'General Nonfiction'))
+
+  def test_fiction_title_and_single_author_remain_unchanged(self):
+    from parser.pulitzer import PulitzerAwardParser
+    html = '<html><body><button>2026</button><h2><a href="/winner">And Quiet Flows the Don, by Mikhail Sholokhov</a></h2></body></html>'
+    parsed = PulitzerAwardParser().parse(html, 'https://www.pulitzer.org/prize-winners-by-category/219', 'Pulitzer Prize - Fiction', 'Fiction')
+    self.assertEqual('And Quiet Flows the Don', parsed['entries'][0]['title'])
+    self.assertEqual(['Mikhail Sholokhov'], parsed['entries'][0]['authors'])
+
+
+class PulitzerSourceBoundaryTest(unittest.TestCase):
+
+  URL = 'https://en.wikipedia.org/wiki/Pulitzer_Prize_for_General_Nonfiction'
+
+  def official_html(self):
+    # Reduced from the official Camoufox capture of 2026-11-02.
+    return '''<html><body><button>2009</button><h2 class="fw-bold fs-3">
+      <a href="https://www.pulitzer.org/winners/douglas-blackmon"><em>Slavery by Another Name: The Re-Enslavement of Black Americans from the Civil War to World War II</em>, by Douglas A. Blackmon (Doubleday)</a></h2>
+      <p>Finalists:</p><a href="/finalists/arthur-herman"><em>Gandhi and Churchill</em>, by Arthur Herman (Bantam Books)</a></body></html>'''
+
+  def wikipedia_html(self):
+    # Reduced from the same day's Parsoid capture: publisher/rationale columns
+    # remain present when year and book cells are inherited on author rows.
+    return '''<table><tbody><tr><th>Year</th><th>Author(s)</th><th>Book</th><th>Publisher</th><th>Rationale</th></tr>
+      <tr><th rowspan="2" scope="row"><b>1968</b></th><td><b><a href="/wiki/Ariel_Durant">Ariel Durant</a></b></td>
+      <td rowspan="2"><i><b><a href="/wiki/Rousseau_and_Revolution">The Story of Civilization: Rousseau and Revolution</a></b></i></td>
+      <td rowspan="2"><b>Simon and Schuster</b></td><td rowspan="2"></td></tr>
+      <tr><td><b><a href="/wiki/Will_Durant">Will Durant</a></b></td></tr>
+      <tr><th rowspan="4" scope="row">1980</th><td>Douglas Hofstadter</td><td><i><a href="/wiki/Godel_Escher_Bach">Godel, Escher, Bach: An Eternal Golden Braid</a></i></td><td>Basic Books</td><td></td></tr>
+      <tr><td><a href="/wiki/Sandra_Gilbert">Sandra Gilbert</a></td><td rowspan="2"><i><a href="/wiki/The_Madwoman_in_the_Attic">The Madwoman in the Attic: The Woman Writer and the Nineteenth-Century Literary Imagination</a></i></td><td rowspan="2">Yale University Press</td><td rowspan="2"></td></tr>
+      <tr><td><a href="/wiki/Susan_Gubar">Susan Gubar</a></td></tr>
+      <tr><td>Lewis Thomas</td><td><i><a href="/wiki/The_Medusa_and_the_Snail">The Medusa and the Snail</a></i></td><td>Viking</td><td></td></tr></tbody></table>'''
+
+  def parse_wikipedia(self, html, **kwargs):
+    from parser.pulitzer import PulitzerWikipediaParser
+    return PulitzerWikipediaParser().parse(html, self.URL,
+      'Pulitzer Prize - General Nonfiction', 'General Nonfiction', **kwargs)
+
+  def test_official_title_by_is_not_the_author_boundary(self):
+    from url_fetcher.pulitzer import UrlFetcherPulitzerGeneralNonfiction
+    entries = UrlFetcherPulitzerGeneralNonfiction().parse(self.official_html())['entries']
+    self.assertEqual(2, len(entries))
+    self.assertEqual('Slavery by Another Name: The Re-Enslavement of Black Americans from the Civil War to World War II', entries[0]['title'])
+    self.assertEqual(['Douglas A. Blackmon'], entries[0]['authors'])
+    self.assertEqual(['2009', '2009.01'], [e['position'] for e in entries])
+    self.assertEqual(['winner', 'nominee'], [e['result'] for e in entries])
+    self.assertEqual('https://www.pulitzer.org/winners/douglas-blackmon', entries[0]['source']['url'])
+    self.assertEqual(['Arthur Herman'], entries[1]['authors'])
+
+  def test_explicit_byline_precedes_plain_by_and_plain_compatibility_remains(self):
+    from parser.pulitzer import PulitzerAwardParser
+    parser = PulitzerAwardParser()
+    for text, expected in (
+        ('Slavery by Another Name, by Douglas A. Blackmon (Doubleday)', ('Slavery by Another Name', 'Douglas A. Blackmon')),
+        ('A Book, by the River, by Writer, Jr. (Publisher)', ('A Book, by the River', 'Writer, Jr.')),
+        ('Slavery by Another Name by Douglas A. Blackmon', ('Slavery by Another Name', 'Douglas A. Blackmon')),
+        ('Ordinary Book by Writer', ('Ordinary Book', 'Writer')),
+        ('No author credit', ('', ''))):
+      with self.subTest(text=text):
+        self.assertEqual(expected, parser.title_author_from_text(text))
+
+  def test_wikipedia_shared_books_merge_authors_without_shifting_finalists(self):
+    entries = self.parse_wikipedia(self.wikipedia_html())['entries']
+    self.assertEqual(4, len(entries))
+    self.assertEqual(['1968', '1980', '1980.01', '1980.02'], [e['position'] for e in entries])
+    self.assertEqual([
+      ['Ariel Durant', 'Will Durant'], ['Douglas Hofstadter'],
+      ['Sandra Gilbert', 'Susan Gubar'], ['Lewis Thomas']], [e['authors'] for e in entries])
+    self.assertEqual('The Madwoman in the Attic: The Woman Writer and the Nineteenth-Century Literary Imagination', entries[2]['title'])
+    self.assertEqual(['winner', 'winner', 'nominee', 'nominee'], [e['result'] for e in entries])
+    self.assertEqual(self.URL, entries[2]['source']['url'])
+    self.assertTrue(all(e['category'] == 'General Nonfiction' for e in entries))
+
+  def test_wikipedia_year_span_handles_extra_columns_citations_and_suffixes(self):
+    html = '''<table><tr><th>Year</th><th>Author</th><th>Book</th><th>Publisher</th><th>Rationale</th></tr>
+      <tr><th rowspan="2">2026</th><td>Winner</td><td>Winning Book</td><td>Publisher</td><td></td></tr>
+      <tr><td>Writer, Jr.<sup>[3]</sup> and Second Writer</td><td>Finalist: A History of 1980<sup>[4]</sup></td><td>Another Publisher</td><td>A citation about Another Book by Someone Else</td></tr></table>'''
+    entries = self.parse_wikipedia(html)['entries']
+    self.assertEqual(['2026', '2026.01'], [e['position'] for e in entries])
+    self.assertEqual('Finalist: A History of 1980', entries[1]['title'])
+    self.assertEqual(['Writer, Jr.', 'Second Writer'], entries[1]['authors'])
+
+  def test_tied_winners_count_books_not_author_rows_and_no_award_is_skipped(self):
+    html = '''<table><tr><th>Year</th><th>Author</th><th>Book</th><th>Publisher</th></tr>
+      <tr><th rowspan="4">2020</th><td>First Writer</td><td rowspan="2">Shared Winning Book</td><td rowspan="2">Publisher</td></tr>
+      <tr><td>Second Writer</td></tr>
+      <tr><td>Other Winner</td><td>Other Winning Book</td><td>Publisher</td></tr>
+      <tr><td>Final Author</td><td>Finalist</td><td>Publisher</td></tr>
+      <tr><th rowspan="2">2021</th><td colspan="3">Not awarded</td></tr>
+      <tr><td>Unawarded Author</td><td>Unawarded Finalist</td><td>Publisher</td></tr></table>'''
+    entries = self.parse_wikipedia(html, tied_winner_years={2020: 2})['entries']
+    self.assertEqual(['2020', '2020', '2020.01', '2021.01'], [e['position'] for e in entries])
+    self.assertEqual(['winner', 'winner', 'nominee', 'nominee'], [e['result'] for e in entries])
+    self.assertEqual(['First Writer', 'Second Writer'], entries[0]['authors'])
+
+  def test_distinct_book_cells_are_not_merged_and_bad_spans_are_tolerated(self):
+    html = '''<table><tr><th>Year</th><th>Author</th><th>Title</th></tr>
+      <tr><td rowspan="2">2026</td><td rowspan="invalid">First Writer</td><td colspan="invalid">Same Title</td></tr>
+      <tr><td>Second Writer</td><td>Same Title</td></tr></table>'''
+    entries = self.parse_wikipedia(html)['entries']
+    self.assertEqual(2, len(entries))
+    self.assertEqual([['First Writer'], ['Second Writer']], [e['authors'] for e in entries])
+    self.assertEqual(['2026', '2026.01'], [e['position'] for e in entries])
+
+  def test_explicit_wikipedia_source_uses_repaired_parser_without_browser(self):
+    from url_fetcher.pulitzer import UrlFetcherPulitzerGeneralNonfiction
+    recipe = UrlFetcherPulitzerGeneralNonfiction()
+    calls = []
+
+    def fetch(url, **kwargs):
+      calls.append((url, kwargs))
+      return self.wikipedia_html()
+
+    parsed = recipe.fetch_and_parse(fetch, source_choice='1')
+    self.assertEqual([(recipe.WIKIPEDIA_URL, {})], calls)
+    self.assertEqual([], parsed['notes'])
+    self.assertEqual(['Sandra Gilbert', 'Susan Gubar'], parsed['entries'][2]['authors'])
+    self.assertEqual(self.URL, parsed['source']['url'])
+
+
+class DebugDisableCamoufoxTest(unittest.TestCase):
+
+  def setUp(self):
+    from unittest.mock import Mock
+    import dialogs.debug as dialog_module
+    self.dialog_module = dialog_module
+    self.enterContext(patch.dict(main.prefs, {
+      'debug_browser_fallback_level': None, 'debug_librarything_transport': 'automatic',
+      'debug_sections': {}, 'debug_logging': False, 'debug_force_fallback_level': 0,
+    }))
+
+    class CheckBox:
+      def __init__(self, label, parent=None):
+        self.label = label
+        self.checked = False
+      def setChecked(self, value):
+        self.checked = bool(value)
+      def isChecked(self):
+        return self.checked
+
+    class ComboBox:
+      def __init__(self, parent=None):
+        self.items = []
+        self.index = 0
+      def addItem(self, label, data):
+        self.items.append((label, data))
+      def findData(self, data):
+        return next((i for i, item in enumerate(self.items) if item[1] == data), -1)
+      def setCurrentIndex(self, index):
+        self.index = index
+      def currentData(self):
+        return self.items[self.index][1]
+
+    class Layout:
+      def __init__(self):
+        self.widgets = []
+      def addWidget(self, widget):
+        self.widgets.append(widget)
+
+    class ButtonBox:
+      Ok, Cancel = 1, 2
+      def __init__(self, *args):
+        self.accepted, self.rejected = Mock(), Mock()
+
+    for name, value in (('QCheckBox', CheckBox), ('QComboBox', ComboBox),
+        ('QVBoxLayout', Layout), ('QDialogButtonBox', ButtonBox)):
+      self.enterContext(patch.object(dialog_module, name, value))
+    self.enterContext(patch.object(main.QDialog, 'Accepted', 1, create=True))
+    self.core = main.ListSwitchboardCore(types.SimpleNamespace(), lambda **kw: None)
+    self.core.status_message = Mock()
+
+  def dialog(self):
+    return self.dialog_module.DebugDialog(None, main.DEBUG_SECTIONS)
+
+  def save(self, dialog, accepted=True):
+    dialog.exec = lambda: 1 if accepted else 0
+    with patch.object(main, 'DebugDialog', return_value=dialog):
+      self.core.show_debug_dialog()
+
+  def test_saved_browser_stages_map_to_simple_checkbox(self):
+    for stage in (0, 1, 2):
+      with self.subTest(stage=stage):
+        main.prefs['debug_browser_fallback_level'] = stage
+        self.assertEqual(stage == 2, self.dialog().disable_camoufox.isChecked())
+
+  def test_legacy_preference_migration_and_new_preference_precedence(self):
+    for mode in ('automatic', 'camoufox', 'old'):
+      main.prefs['debug_browser_fallback_level'] = None
+      main.prefs['debug_librarything_transport'] = mode
+      self.assertEqual(mode == 'old', self.dialog().disable_camoufox.isChecked())
+    main.prefs['debug_browser_fallback_level'] = 0
+    self.assertFalse(self.dialog().disable_camoufox.isChecked())
+    main.prefs['debug_browser_fallback_level'] = 2
+    main.prefs['debug_librarything_transport'] = 'automatic'
+    self.assertTrue(self.dialog().disable_camoufox.isChecked())
+
+  def test_source_fallback_selector_is_unchanged_and_browser_dropdown_removed(self):
+    dialog = self.dialog()
+    self.assertEqual([0, 1, 2, 3], [item[1] for item in dialog.force_fallback_level.items])
+    self.assertNotIn('browser_fallback_level', dialog.__dict__)
+    self.assertEqual('Disable Camoufox (use legacy fetching)', dialog.disable_camoufox.label)
+
+  def test_checkbox_save_reopen_and_enable_preserves_source_selection(self):
+    for disabled in (True, False):
+      dialog = self.dialog()
+      dialog.disable_camoufox.setChecked(disabled)
+      dialog.force_fallback_level.setCurrentIndex(3)
+      self.save(dialog)
+      self.assertEqual(2 if disabled else 0, main.prefs['debug_browser_fallback_level'])
+      reopened = self.dialog()
+      self.assertEqual(disabled, reopened.disable_camoufox.isChecked())
+      self.assertEqual(3, reopened.force_fallback_level.currentData())
+
+  def test_cancel_does_not_change_saved_preferences(self):
+    main.prefs['debug_browser_fallback_level'] = 1
+    before = deepcopy(dict(main.prefs))
+    dialog = self.dialog()
+    dialog.disable_camoufox.setChecked(True)
+    self.save(dialog, accepted=False)
+    self.assertEqual(before, dict(main.prefs))
+    self.core.status_message.assert_not_called()
+
+  def test_disabled_checkbox_prevents_browser_api_for_all_supported_hosts(self):
+    dialog = self.dialog()
+    dialog.disable_camoufox.setChecked(True)
+    self.save(dialog)
+    with patch.object(main, 'camoufox_capability') as capability:
+      with patch.object(main, 'CamoufoxTransport') as factory:
+        for host in ('www.librarything.com', 'www.reddit.com', 'www.pulitzer.org', 'www.goodreads.com'):
+          with self.assertRaises(main.CamoufoxSkippedError):
+            self.core.fetch_url('https://' + host + '/test', transport='camoufox')
+        factory.assert_not_called()
+        capability.assert_not_called()
+
 
 if __name__ == '__main__':
   unittest.main()

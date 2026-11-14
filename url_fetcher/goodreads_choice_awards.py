@@ -12,8 +12,10 @@ from .generic import (
   CATEGORY_UNKNOWN,
   CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
   GoodreadsFetchPolicyMixin,
+  UrlFetcherError,
   UrlFetcherGeneric,
 )
+from .goodreads_choice_transport import GoodreadsChoiceFetchPolicy
 
 try:
   from calibre_plugins.list_switchboard.parser.goodreads_choice_awards import ( # type: ignore
@@ -31,6 +33,25 @@ class UrlFetcherGoodreadsChoiceAwards(GoodreadsFetchPolicyMixin, UrlFetcherGener
   CATEGORY = ''
   CATEGORY_ALIASES = ()
   FILTER_CATEGORIES = (CATEGORY_UNKNOWN,)
+
+  def fetch_and_parse(self, fetch_url, *args, **kwargs):
+    legacy_fetch = super().fetch_url
+    log = kwargs.get('log', args[2] if len(args) > 2 else None)
+    self._choice_fetch_policy = GoodreadsChoiceFetchPolicy(
+      fetch_url, lambda url: legacy_fetch(fetch_url, url), self.parser(), log=log)
+    try:
+      parsed = super().fetch_and_parse(fetch_url, *args, **kwargs)
+      if not parsed.get('entries'):
+        raise UrlFetcherError('No usable Goodreads Choice Awards entries were parsed.')
+      return parsed
+    finally:
+      self._choice_fetch_policy = None
+
+  def fetch_url(self, fetch_url, url):
+    policy = getattr(self, '_choice_fetch_policy', None)
+    if policy is not None:
+      return policy.fetch(url)
+    return super().fetch_url(fetch_url, url)
 
   def create_parser(self):
     try:

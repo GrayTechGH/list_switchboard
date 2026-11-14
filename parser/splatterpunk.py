@@ -14,7 +14,7 @@ Maintenance notes:
 
 import json
 import re
-from urllib.parse import urljoin
+from urllib.parse import parse_qs, urljoin, urlparse
 
 from bs4 import BeautifulSoup, UnicodeDammit
 
@@ -252,32 +252,89 @@ class SplatterpunkParser(AwardParserBase):
       raise ValueError(
         'Splatterpunk official winner history was incomplete or invalid.')
 
-  def validate_goodreads_page(self, html):
-    soup = BeautifulSoup(self.decode_source(html), 'html.parser')
-    rows = soup.find_all('tr', itemtype='http://schema.org/Book')
-    if not rows or not any(
-        'Splatterpunk Award' in self.node_text(label)
-        for row in rows
-        for label in row.find_all('i')):
-      raise ValueError(
-        'Splatterpunk Goodreads source did not contain award book rows.')
+  def normalized_goodreads_page_url(self, url):
+    parsed = urlparse(url)
+    expected = urlparse(GOODREADS_URL)
+    if (parsed.scheme != 'https' or parsed.netloc.casefold() != expected.netloc
+        or parsed.path.rstrip('/') != expected.path):
+      raise ValueError('Splatterpunk pagination left the Goodreads award.')
+    pages = parse_qs(parsed.query, keep_blank_values=True).get('page', ['1'])
+    if len(pages) != 1 or not pages[0].isdigit() or int(pages[0]) < 1:
+      raise ValueError('Splatterpunk returned an invalid page number.')
+    page = int(pages[0])
+    if page > 25:
+      raise ValueError('Splatterpunk pagination exceeded the 25-page safety bound.')
+    return GOODREADS_URL + (f'?page={page}' if page > 1 else '')
 
   def discover_goodreads_page_urls(self, html, base_url=GOODREADS_URL):
     soup = BeautifulSoup(self.decode_source(html), 'html.parser')
-    urls = [base_url]
+    urls = [self.normalized_goodreads_page_url(base_url)]
     for link in soup.find_all('a', href=True):
-      href = link.get('href') or ''
-      text = self.node_text(link)
-      if 'award/show/38981-splatterpunk-award' not in href:
+      target = urljoin(base_url, link['href'])
+      parsed = urlparse(target)
+      if parsed.path.rstrip('/') != urlparse(GOODREADS_URL).path:
         continue
-      if 'page=' not in href and not text.isdigit():
+      if 'page' not in parse_qs(parsed.query, keep_blank_values=True):
         continue
-      url = urljoin(base_url, href)
-      if re.search(r'[?&]page=1(?:&|$)', url):
-        url = GOODREADS_URL
+      # Unrelated hosts are never followed, even if they copy the award path.
+      if parsed.scheme != 'https' or parsed.netloc.casefold() != 'www.goodreads.com':
+        continue
+      url = self.normalized_goodreads_page_url(target)
       if url not in urls:
         urls.append(url)
     return tuple(urls)
+
+  def validate_goodreads_page(self, html, url=GOODREADS_URL):
+    """Recognize award works independently of the selected recipe category.
+
+    Canonical URLs sometimes omit pagination. Only explicit page metadata or
+    current-page controls identify a response; navigation links do not.
+    """
+    normalized = self.normalized_goodreads_page_url(url)
+    page = parse_qs(urlparse(normalized).query).get('page', ['1'])[0]
+    soup = BeautifulSoup(self.decode_source(html), 'html.parser')
+    for node in soup.select('title, h1'):
+      text = self.node_text(node).casefold()
+      if any(marker in text for marker in (
+          'just a moment', 'access denied', 'sign in', 'log in', 'page not found',
+          'verify you are human', 'security verification', 'javascript is disabled')):
+        raise ValueError('Splatterpunk Goodreads did not contain award book rows (login, error, or challenge page).')
+    if soup.select_one('#challenge-running, #cf-challenge-running, form[action*="/user/sign_in"]'):
+      raise ValueError('Splatterpunk Goodreads did not contain award book rows (login or challenge form).')
+    for node in soup.select('link[rel="canonical"], meta[property="og:url"]'):
+      value = node.get('href') or node.get('content')
+      if not value:
+        continue
+      identity = urljoin(url, value)
+      actual = self.normalized_goodreads_page_url(identity)
+      if 'page' in parse_qs(urlparse(identity).query) and actual != normalized:
+        raise ValueError('Splatterpunk Goodreads returned another pagination page.')
+    for node in soup.select('.pagination .current, .pagination [aria-current="page"]'):
+      value = self.node_text(node)
+      if value.isdigit() and str(int(value)) != page:
+        raise ValueError('Splatterpunk Goodreads returned another pagination page.')
+    for node in soup.select('title, h1'):
+      match = re.search(r'\bpage\s+(\d+)\s+(?:out\s+of|of)\s+\d+\b',
+                        self.node_text(node), re.I)
+      if match and str(int(match.group(1))) != page:
+        raise ValueError('Splatterpunk Goodreads returned another pagination page.')
+    records = set()
+    for row in soup.find_all('tr', itemtype='http://schema.org/Book'):
+      title = row.find(class_='bookTitle')
+      author = row.find(class_='authorName')
+      if title is None or author is None:
+        continue
+      title, author = self.node_text(title), self.node_text(author)
+      if not title or not author:
+        continue
+      for label in row.find_all('i'):
+        label = self.node_text(label)
+        if re.fullmatch(
+            r'Splatterpunk Award (?:Nominee )?for .+?\s*\((?:19|20)\d{2}\)', label):
+          records.add((title, author, label))
+    if not records:
+      raise ValueError('Splatterpunk Goodreads source did not contain award book rows.')
+    return frozenset(records)
 
   def parse_official_winner_row(self, text, category):
     match = re.match(r'^((?:19|20)\d{2})\s*[-]\s*(.+)$', clean_source_text(text))

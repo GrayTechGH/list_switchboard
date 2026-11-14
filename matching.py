@@ -19,6 +19,11 @@ from collections import OrderedDict
 
 from calibre.ebooks.metadata import title_sort
 
+try:
+  from calibre_plugins.list_switchboard.camoufox_transport import with_browser_operation
+except ImportError:
+  from camoufox_transport import with_browser_operation
+
 
 SERIES_SUFFIX_WORDS = frozenset([
   'cycle', 'saga', 'series', 'trilogy', 'universe', 'world'
@@ -1194,6 +1199,7 @@ class MatchingMixin:
       'can_toggle_on': bool(matched or previous_book_ids or ignored),
     }
 
+  @with_browser_operation
   def match_imported_entries(
       self, entries, match_series=True, list_id=None, allow_goodreads_recovery=True,
       return_details=False, award_winners_only=False,

@@ -13,8 +13,14 @@ try:
   from calibre_plugins.list_switchboard.parser.source_fallback import (
     SourceAttempt, SourceFallbackRunner,
   )
+  from calibre_plugins.list_switchboard.url_fetcher.librarything_fallback import (
+    LibraryThingFetchPolicyMixin, LibraryThingSourceAttempt,
+  )
 except ImportError:
   from parser.source_fallback import SourceAttempt, SourceFallbackRunner
+  from url_fetcher.librarything_fallback import (
+    LibraryThingFetchPolicyMixin, LibraryThingSourceAttempt,
+  )
 
 
 DAVITT_URL = 'https://www.librarything.com/award/2525/Davitt-Award'
@@ -27,7 +33,7 @@ DAVITT_YA_CATEGORIES = (
 )
 
 
-class UrlFetcherDavittAward(UrlFetcherGeneric):
+class UrlFetcherDavittAward(LibraryThingFetchPolicyMixin, UrlFetcherGeneric):
 
   FILTER_CATEGORIES = DAVITT_CATEGORIES
   FETCH_URLS = ()
@@ -47,7 +53,8 @@ class UrlFetcherDavittAward(UrlFetcherGeneric):
     except ImportError:
       from parser.davitt import DavittLibraryThingParser, DavittWikipediaParser
     return (
-      SourceAttempt(
+      LibraryThingSourceAttempt(
+        self,
         'LibraryThing',
         self.URL,
         lambda html, url, **_kwargs: DavittLibraryThingParser().parse(

@@ -16,11 +16,13 @@ try:
     SourceAttempt, SourceFallbackRunner,
   )
   from calibre_plugins.list_switchboard.url_fetcher.librarything_fallback import (
-    LibraryThingAwardFallbackMixin,
+    LibraryThingAwardFallbackMixin, LibraryThingSourceAttempt,
   )
 except ImportError:
   from parser.source_fallback import SourceAttempt, SourceFallbackRunner
-  from url_fetcher.librarything_fallback import LibraryThingAwardFallbackMixin
+  from url_fetcher.librarything_fallback import (
+    LibraryThingAwardFallbackMixin, LibraryThingSourceAttempt,
+  )
 
 try:
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
@@ -96,7 +98,8 @@ class UrlFetcherAurealis(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
 
   def librarything_attempt(self, source_rank=2):
     parser = self.create_librarything_parser()
-    return SourceAttempt(
+    return LibraryThingSourceAttempt(
+      self,
       'LibraryThing',
       self.LIBRARYTHING_URL,
       lambda html, url, **_kwargs: parser.parse(

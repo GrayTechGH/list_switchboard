@@ -7,6 +7,7 @@ Goodreads lookup and recovery helpers.
 Maintenance notes:
 - Goodreads is best-effort enrichment. Network failures, parse failures, or
   missing BeautifulSoup must produce empty results rather than abort imports.
+  Explicit cancellation is control flow and must always propagate.
 - self.goodreads_series_cache stores both book lookups keyed by Goodreads id and
   source-page lookups keyed as "source:{url}".
 - GOODREADS_LOOKUP_DELAY_SECONDS throttles both book and source lookups. Keep
@@ -26,6 +27,16 @@ try:
   from calibre_plugins.list_switchboard.matching import normalize_key, normalize_match_text
 except ImportError:
   from matching import normalize_key, normalize_match_text
+
+try:
+  from calibre_plugins.list_switchboard.camoufox_transport import with_browser_operation
+  from calibre_plugins.list_switchboard.goodreads_recovery_transport import (
+    GoodreadsRecoveryFetchPolicy, is_goodreads_url)
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError
+except ImportError:
+  from camoufox_transport import with_browser_operation
+  from goodreads_recovery_transport import GoodreadsRecoveryFetchPolicy, is_goodreads_url
+  from errors import ImportCancelledError
 
 
 GOODREADS_LOOKUP_DELAY_SECONDS = 1.5
@@ -65,6 +76,8 @@ class GoodreadsMixin:
     try:
       identifiers = self.db.new_api.field_for('identifiers', book_id, default_value={}) or {}
       return identifiers if isinstance(identifiers, dict) else {}
+    except ImportCancelledError:
+      raise
     except Exception:
       return {}
 
@@ -76,8 +89,13 @@ class GoodreadsMixin:
         return str(value).strip()
     return ''
 
+  @with_browser_operation
   def fetch_goodreads_url(self, url):
-    """Fetch a deep-recovery page with the shared Goodreads timeout policy."""
+    """Recover one existing lookup, without restarting matching or crawling."""
+    role = 'book' if '/book/show/' in url else 'source'
+    return GoodreadsRecoveryFetchPolicy(self, self.fetch_goodreads_legacy_url).fetch(url, role)
+
+  def fetch_goodreads_legacy_url(self, url):
     for retry in range(GOODREADS_TIMEOUT_RETRIES + 1):
       try:
         try:
@@ -87,6 +105,8 @@ class GoodreadsMixin:
           if 'timeout' not in str(err) and 'keyword' not in str(err):
             raise
           return self.fetch_url(url)
+      except ImportCancelledError:
+        raise
       except Exception as err:
         if retry >= GOODREADS_TIMEOUT_RETRIES or not self.is_goodreads_timeout(err):
           raise
@@ -111,10 +131,12 @@ class GoodreadsMixin:
           pending.append(nested)
     return False
 
+  @with_browser_operation
   def fetch_goodreads_series_names(self, goodreads_id):
     if not goodreads_id:
       return []
     if goodreads_id in self.goodreads_series_cache:
+      self.debug_camoufox(f'Goodreads recovery role=book cache hit id={goodreads_id}')
       return self.goodreads_series_cache[goodreads_id]
 
     elapsed = time.time() - self.last_goodreads_lookup_time
@@ -130,6 +152,8 @@ class GoodreadsMixin:
     try:
       html = self.fetch_goodreads_url(url)
       series_names = self.extract_goodreads_series_names(html)
+    except ImportCancelledError:
+      raise
     except Exception as err:
       self.debug_goodreads_lookup_failed(goodreads_id, err)
       series_names = []
@@ -137,11 +161,13 @@ class GoodreadsMixin:
     self.debug_goodreads_lookup_result(goodreads_id, series_names)
     return series_names
 
+  @with_browser_operation
   def fetch_goodreads_source_data(self, url):
-    if not url or 'goodreads.com/' not in url:
+    if not is_goodreads_url(url):
       return {'series_names': [], 'books': []}
     cache_key = f'source:{url}'
     if cache_key in self.goodreads_series_cache:
+      self.debug_camoufox(f'Goodreads recovery role=source cache hit url={url}')
       return self.goodreads_series_cache[cache_key]
 
     elapsed = time.time() - self.last_goodreads_lookup_time
@@ -156,6 +182,8 @@ class GoodreadsMixin:
     try:
       html = self.fetch_goodreads_url(url)
       data = self.extract_goodreads_source_data(html)
+    except ImportCancelledError:
+      raise
     except Exception as err:
       self.debug_goodreads_lookup_failed(url, err, source=True)
       data = {'series_names': [], 'books': []}
@@ -202,6 +230,8 @@ class GoodreadsMixin:
     raw_payload = script_node.string or script_node.get_text() or ''
     try:
       payload = json.loads(raw_payload)
+    except ImportCancelledError:
+      raise
     except Exception as err:
       self.debug_goodreads_json_failed(err)
       return []

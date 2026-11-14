@@ -15,3 +15,27 @@ class DuplicateStoredListsError(ListSwitchboardError):
 
 class ImportCancelledError(ListSwitchboardError):
   pass
+
+
+class CamoufoxError(RuntimeError):
+  pass
+
+
+class CamoufoxUnavailableError(CamoufoxError):
+  pass
+
+
+class CamoufoxSkippedError(CamoufoxError):
+  pass
+
+
+class CamoufoxFetchError(CamoufoxError):
+  pass
+
+
+class CamoufoxChallengeError(CamoufoxFetchError):
+  pass
+
+
+class CamoufoxRequiredError(CamoufoxError):
+  """A diagnostic requirement failed; source/cache fallbacks must not mask it."""

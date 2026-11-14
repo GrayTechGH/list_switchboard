@@ -446,6 +446,23 @@ class StorageMixinTest(unittest.TestCase):
     self.assertEqual('example_list', loaded['list_id'])
     self.assertEqual(7, loaded['matches'][0]['matched_book_id'])
 
+  def test_add_selected_override_round_trip_preserves_existing_row_books(self):
+    entry = {
+      'position': '161', 'title': 'Wayward Children',
+      'authors': ['Seanan McGuire'],
+    }
+    db = types.SimpleNamespace(field_for=lambda field, book_id, default_value='': (
+      ['Seanan McGuire'] if field == 'authors' else f'Volume {book_id}'))
+    self.mixin.upsert_saved_match_override_for_book(
+      'series_list', entry, 40458, db=db, existing_book_ids=[1, 2])
+    self.mixin.upsert_saved_match_override_for_book(
+      'series_list', entry, 40459, db=db, existing_book_ids=[1, 2])
+
+    saved = self.mixin.saved_match_overrides('series_list')[storage.entry_key(entry)]
+    self.assertEqual([1, 2, 40458, 40459], saved['matched_book_ids'])
+    self.assertEqual([1, 2, 40458, 40459], [
+      book['matched_book_id'] for book in saved['matched_books']])
+
   def test_saved_match_overrides_skip_unmatched_rows(self):
     self.mixin.write_match_cache('Example List', [
       {'entry_key': 'book|author', 'matched_book_id': 7},

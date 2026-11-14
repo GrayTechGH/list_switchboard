@@ -7,11 +7,18 @@ try:
   from calibre_plugins.list_switchboard.parser.source_fallback import (
     SourceAttempt, SourceFallbackRunner,
   )
+  from calibre_plugins.list_switchboard.url_fetcher.librarything_fallback import (
+    LibraryThingFetchPolicyMixin, LibraryThingSourceAttempt,
+  )
 except ImportError:
   from parser.source_fallback import SourceAttempt, SourceFallbackRunner
+  from url_fetcher.librarything_fallback import (
+    LibraryThingFetchPolicyMixin, LibraryThingSourceAttempt,
+  )
 
 
-class UrlFetcherTheakstonOldPeculierCrimeNovelOfTheYear(UrlFetcherGeneric):
+class UrlFetcherTheakstonOldPeculierCrimeNovelOfTheYear(
+    LibraryThingFetchPolicyMixin, UrlFetcherGeneric):
 
   FILTER_CATEGORIES = (CATEGORY_CRIME_MYSTERY_THRILLER,)
   FETCH_URLS = ()
@@ -43,7 +50,8 @@ class UrlFetcherTheakstonOldPeculierCrimeNovelOfTheYear(UrlFetcherGeneric):
           html, url, self.NAME, self.CATEGORY, self.CATEGORY_ALIASES,
           allowed_results=('winner', 'shortlisted')),
         source_rank=0),
-      SourceAttempt(
+      LibraryThingSourceAttempt(
+        self,
         'LibraryThing',
         self.LIBRARYTHING_URL,
         lambda html, url, **_kwargs: TheakstonLibraryThingParser().parse(

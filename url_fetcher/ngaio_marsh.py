@@ -13,15 +13,21 @@ try:
   from calibre_plugins.list_switchboard.parser.source_fallback import (
     SourceAttempt, SourceFallbackRunner,
   )
+  from calibre_plugins.list_switchboard.url_fetcher.librarything_fallback import (
+    LibraryThingFetchPolicyMixin, LibraryThingSourceAttempt,
+  )
 except ImportError:
   from parser.source_fallback import SourceAttempt, SourceFallbackRunner
+  from url_fetcher.librarything_fallback import (
+    LibraryThingFetchPolicyMixin, LibraryThingSourceAttempt,
+  )
 
 
 NGAIO_URL = 'https://www.librarything.com/award/5348/Ngaio-Marsh-Award'
 NGAIO_WIKI_URL = 'https://en.wikipedia.org/wiki/Ngaio_Marsh_Awards'
 
 
-class UrlFetcherNgaioMarshAward(UrlFetcherGeneric):
+class UrlFetcherNgaioMarshAward(LibraryThingFetchPolicyMixin, UrlFetcherGeneric):
 
   FILTER_CATEGORIES = (CATEGORY_CRIME_MYSTERY_THRILLER,)
   FETCH_URLS = ()
@@ -48,7 +54,8 @@ class UrlFetcherNgaioMarshAward(UrlFetcherGeneric):
         lambda html, url, **_kwargs: NgaioMarshWikipediaParser().parse(
           html, url, self.NAME, self.CATEGORY, self.CATEGORY_ALIASES),
         source_rank=0),
-      SourceAttempt(
+      LibraryThingSourceAttempt(
+        self,
         'LibraryThing',
         self.LIBRARYTHING_URL,
         lambda html, url, **_kwargs: NgaioMarshLibraryThingParser().parse(
