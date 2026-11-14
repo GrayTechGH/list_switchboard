@@ -9,6 +9,10 @@ Maintenance notes:
 - Category pages and root award pages can both expose staged rows; the parser
   accepts either rows with explicit Category + Year cells or category-filtered
   pages with only Work + Year.
+- Live stage tables can be nested inside wrapper elements between the stage
+  heading and the next heading; traversal remains bounded to that section.
+- Multiple rows in the Winner section are co-winners and share the base
+  award-year position.
 """
 
 import re
@@ -67,7 +71,8 @@ class LibraryThingAwardParserBase(AwardParserBase):
     text = normalize_heading(heading.get_text(' ', strip=True))
     if text.startswith('winner'):
       return 'winner'
-    if text.startswith('nominee') or text.startswith('finalist'):
+    if (text.startswith('nominee') or text.startswith('finalist') or
+        text.startswith('shortlist')):
       return 'nominee'
     return None
 
@@ -77,10 +82,16 @@ class LibraryThingAwardParserBase(AwardParserBase):
       name = getattr(node, 'name', None)
       if name in {'h2', 'h3'}:
         break
-      if name == 'table':
-        rows.extend(node.find_all('tr')[1:])
-      elif name in {'ul', 'ol'}:
-        rows.extend(node.find_all('li', recursive=False))
+      if name is None:
+        continue
+      tables = [node] if name == 'table' else node.find_all('table')
+      for table in tables:
+        rows.extend(table.find_all('tr')[1:])
+      if tables:
+        continue
+      lists = [node] if name in {'ul', 'ol'} else node.find_all(['ul', 'ol'])
+      for item_list in lists:
+        rows.extend(item_list.find_all('li', recursive=False))
     return rows
 
   def parse_row(self, row, base_url, category, category_aliases, result):
@@ -108,7 +119,7 @@ class LibraryThingAwardParserBase(AwardParserBase):
       'title': title,
       'author': author,
       'result': result,
-      'source_url': self.first_work_url(work_cell, base_url) or base_url,
+      'source_url': base_url,
       'category': category,
     }
 
@@ -116,7 +127,11 @@ class LibraryThingAwardParserBase(AwardParserBase):
     links = cell.find_all('a')
     if len(links) >= 2:
       title = self.clean_title(links[0].get_text(' ', strip=True))
-      author = self.clean_author(links[1].get_text(' ', strip=True))
+      authors = [
+        self.clean_author(link.get_text(' ', strip=True))
+        for link in links[1:]
+      ]
+      author = ' & '.join(value for value in authors if value)
       return title, author
     text = normalize_line(cell.get_text(' ', strip=True))
     match = re.match(r'^(.+?)\s+by\s+(.+?)(?:\s+(?:19|20)\d{2})?$', text, re.I)
@@ -174,5 +189,6 @@ class LibraryThingAwardParserBase(AwardParserBase):
         self.build_award_entry(row, row['source_url'], year, row['category'])
         for row in by_year[year]
       ]
-      entries.extend(assign_positions(award_rows, int(year)))
+      entries.extend(assign_positions(
+        award_rows, int(year), tied_winners_share_position=True))
     return entries

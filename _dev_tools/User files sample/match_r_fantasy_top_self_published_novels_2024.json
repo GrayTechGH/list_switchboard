@@ -134,7 +134,7 @@
         }
       ],
       "unmatched": true,
-      "unmatched_at": "2026-07-09T06:56:56Z"
+      "unmatched_at": "2026-07-11T00:53:20Z"
     },
     {
       "entry_key": "the bound and the broken series|ryan cahill",
@@ -488,8 +488,33 @@
         }
       ],
       "matched_title": "The Last Sin Eater"
+    },
+    {
+      "entry_key": "obsidian|sienna frost",
+      "imported_author": [
+        "Sienna Frost"
+      ],
+      "imported_title": "Obsidian",
+      "matched_at": "2026-07-11T00:53:47Z",
+      "matched_authors": [
+        "Sienna Frost"
+      ],
+      "matched_book_id": 40214,
+      "matched_book_ids": [
+        40214
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Sienna Frost"
+          ],
+          "matched_book_id": 40214,
+          "matched_title": "Obsidian: Awakening"
+        }
+      ],
+      "matched_title": "Obsidian: Awakening"
     }
   ],
-  "saved_at": "2026-07-09T06:56:56Z",
+  "saved_at": "2026-07-11T00:53:47Z",
   "schema_version": 2
 }

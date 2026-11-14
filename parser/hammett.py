@@ -8,6 +8,15 @@ Maintenance notes:
 - The official Hammett archive is split across one overview page plus four
   year-range pages. Some 2017-2019 rows collapse winner, nominees, and judges
   into one heading block instead of separate lines.
+- Current Wix pages wrap year headings and entry text in sibling rich-text
+  components; legacy fixtures place entry nodes directly after each heading.
+- Bound winner text before inline Special Mention labels, use the final `by`
+  delimiter for titles containing that word, and remove `writing as` context
+  from matchable author values.
+- Resolve each entry's source URL from the anchor matching its title; a Wix
+  rich-text block can contain the winner and every nominee link together. When
+  that anchor is only an Amazon retail link, retain the containing IACW archive
+  page as the provenance URL.
 - LibraryThing remains the replacement fallback because it currently disagrees
   with the official 2024 winner.
 """
@@ -20,13 +29,15 @@ from lxml import html as lxml_html
 try:
   from calibre_plugins.list_switchboard.parser.award_base import (
     AwardParserBase, RESULT_NOMINEE, RESULT_WINNER, assign_positions,
-    normalize_heading, normalize_line, strip_publication_notes,
+    award_entry_source_url, normalize_heading, normalize_line,
+    strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_NOMINEE, RESULT_WINNER, assign_positions,
-    normalize_heading, normalize_line, strip_publication_notes,
+    award_entry_source_url, normalize_heading, normalize_line,
+    strip_publication_notes,
   )
   from .generic import position_sort_key
 
@@ -92,13 +103,24 @@ class HammettPrizeParser(AwardParserBase):
       year = self.year_from_heading(self.node_text(heading))
       if year is None:
         continue
-      section_nodes = []
-      for node in heading.itersiblings():
-        if getattr(node, 'tag', None) == 'h2' and self.year_from_heading(self.node_text(node)):
-          break
-        section_nodes.append(node)
+      section_nodes = self.section_nodes_for_heading(heading)
       rows.extend(self.parse_year_section(year, section_nodes, base_url, category))
     return rows
+
+  def section_nodes_for_heading(self, heading):
+    section_nodes = list(heading.itersiblings())
+    if not section_nodes:
+      # Wix can place each rich-text item in a sibling component, leaving the
+      # h2 itself with no siblings even though the year section is complete.
+      section_nodes = list(heading.getparent().itersiblings())
+    bounded_nodes = []
+    for node in section_nodes:
+      year_headings = node.xpath(
+        'self::h2 | .//h2') if getattr(node, 'xpath', None) is not None else ()
+      if any(self.year_from_heading(self.node_text(item)) for item in year_headings):
+        break
+      bounded_nodes.append(node)
+    return bounded_nodes
 
   def parse_year_section(self, year, nodes, base_url, category):
     rows = []
@@ -162,8 +184,10 @@ class HammettPrizeParser(AwardParserBase):
     if match is None:
       return ()
     rows = []
+    winner_text = re.split(
+      r'\s+Special Mention\s*:', match.group(1), maxsplit=1, flags=re.I)[0]
     winner_row = self.parse_entry_text(
-      match.group(1),
+      winner_text,
       RESULT_WINNER,
       year,
       base_url,
@@ -205,22 +229,31 @@ class HammettPrizeParser(AwardParserBase):
       'title': title,
       'author': author,
       'result': result,
-      'source_url': self.first_link_url(node, base_url) or base_url,
+      'source_url': self.entry_link_url(node, title, base_url) or base_url,
       'category': category,
     }
 
   def title_author_from_text(self, text):
     text = strip_publication_notes(normalize_line(text))
-    parts = re.split(r',?\s+by\s+', text, maxsplit=1, flags=re.I)
-    if len(parts) != 2:
+    delimiters = list(re.finditer(r',?\s+by\s+', text, re.I))
+    if not delimiters:
       return '', ''
-    return self.clean_title(parts[0]), self.clean_author(parts[1])
+    delimiter = delimiters[-1]
+    return (
+      self.clean_title(text[:delimiter.start()]),
+      self.clean_author(text[delimiter.end():]))
 
   def clean_title(self, value):
     return strip_publication_notes(normalize_line(value)).strip(' "\u201c\u201d,')
 
   def clean_author(self, value):
-    return strip_publication_notes(normalize_line(value)).strip(' "\u201c\u201d,')
+    value = strip_publication_notes(normalize_line(value))
+    # The live 2024 row currently ends with an unclosed publisher parenthesis.
+    value = re.sub(r'\s+\([^()]*$', '', value)
+    # Pseudonym context is useful on the source page but broadens Calibre's
+    # matchable author value beyond the credited author.
+    value = re.sub(r',?\s+writing\s+as\s+.+$', '', value, flags=re.I)
+    return value.strip(' "\u201c\u201d,')
 
   def after_label(self, text, label):
     match = re.match(r'^\s*' + re.escape(label) + r'\s*:\s*(.*)$', text, re.I)
@@ -230,9 +263,13 @@ class HammettPrizeParser(AwardParserBase):
     text = normalize_line(text)
     return int(text) if YEAR_HEADING.match(text or '') else None
 
-  def first_link_url(self, node, base_url):
-    hrefs = node.xpath('(.//a[@href])[1]/@href')
-    return urljoin(base_url, hrefs[0]) if hrefs else ''
+  def entry_link_url(self, node, title, base_url):
+    normalized_title = normalize_heading(title)
+    for link in node.xpath('.//a[@href]'):
+      if normalize_heading(self.clean_title(self.node_text(link))) != normalized_title:
+        continue
+      return award_entry_source_url(link.get('href'), base_url)
+    return ''
 
   def html_root(self, html):
     return lxml_html.fromstring(html or '<html></html>')

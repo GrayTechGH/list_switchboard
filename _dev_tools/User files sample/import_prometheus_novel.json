@@ -216,7 +216,8 @@
     },
     {
       "authors": [
-        "Larry Niven & Jerry Pournelle"
+        "Larry Niven",
+        "Jerry Pournelle"
       ],
       "award": "Prometheus Award",
       "award_year": "1983",
@@ -888,7 +889,8 @@
     },
     {
       "authors": [
-        "Jerry Pournelle & Michael Flynn"
+        "Jerry Pournelle",
+        "Michael Flynn"
       ],
       "award": "Prometheus Award",
       "award_year": "1992",
@@ -1240,7 +1242,8 @@
     },
     {
       "authors": [
-        "Orson Scott Card & Kathryn H. Kidd"
+        "Orson Scott Card",
+        "Kathryn H. Kidd"
       ],
       "award": "Prometheus Award",
       "award_year": "1995",
@@ -1320,7 +1323,8 @@
     },
     {
       "authors": [
-        "Alan Dean Foster & Eric Frank Russell"
+        "Alan Dean Foster",
+        "Eric Frank Russell"
       ],
       "award": "Prometheus Award",
       "award_year": "1996",
@@ -1544,7 +1548,8 @@
     },
     {
       "authors": [
-        "F. Paul Wilson & Matthew Costello"
+        "F. Paul Wilson",
+        "Matthew Costello"
       ],
       "award": "Prometheus Award",
       "award_year": "1999",
@@ -2024,7 +2029,8 @@
     },
     {
       "authors": [
-        "Brad Linaweaver & Kent J. Hastings"
+        "Brad Linaweaver",
+        "Kent J. Hastings"
       ],
       "award": "Prometheus Award",
       "award_year": "2005",
@@ -2168,7 +2174,8 @@
     },
     {
       "authors": [
-        "Claire Wolfe & Aaron Zelman"
+        "Claire Wolfe",
+        "Aaron Zelman"
       ],
       "award": "Prometheus Award",
       "award_year": "2006",
@@ -2312,7 +2319,8 @@
     },
     {
       "authors": [
-        "Larry Niven & Edward M. Lerner"
+        "Larry Niven",
+        "Edward M. Lerner"
       ],
       "award": "Prometheus Award",
       "award_year": "2008",
@@ -2440,7 +2448,8 @@
     },
     {
       "authors": [
-        "Dani Kollin & Eytan Kollin"
+        "Dani Kollin",
+        "Eytan Kollin"
       ],
       "award": "Prometheus Award",
       "award_year": "2010",
@@ -2648,7 +2657,8 @@
     },
     {
       "authors": [
-        "Thomas L. James & Carl C. Carlsson"
+        "Thomas L. James",
+        "Carl C. Carlsson"
       ],
       "award": "Prometheus Award",
       "award_year": "2012",
@@ -2760,7 +2770,8 @@
     },
     {
       "authors": [
-        "Dani Kollin & Eytan Kollin"
+        "Dani Kollin",
+        "Eytan Kollin"
       ],
       "award": "Prometheus Award",
       "award_year": "2013",
@@ -3144,7 +3155,8 @@
     },
     {
       "authors": [
-        "Doug Casey & John Hunt"
+        "Doug Casey",
+        "John Hunt"
       ],
       "award": "Prometheus Award",
       "award_year": "2018",
@@ -3256,7 +3268,8 @@
     },
     {
       "authors": [
-        "C. J. Cherryh & Jane S. Fancher"
+        "C. J. Cherryh",
+        "Jane S. Fancher"
       ],
       "award": "Prometheus Award",
       "award_year": "2020",
@@ -3672,7 +3685,8 @@
     },
     {
       "authors": [
-        "C. J. Cherryh & Jane S. Fancher"
+        "C. J. Cherryh",
+        "Jane S. Fancher"
       ],
       "award": "Prometheus Award",
       "award_year": "2025",
@@ -3815,7 +3829,7 @@
       "title": "War By Other Means"
     }
   ],
-  "fetched_at": "2026-07-09T00:46:38Z",
+  "fetched_at": "2026-07-11T00:48:55Z",
   "list_id": "prometheus_novel",
   "list_name": "Prometheus - Novel",
   "match_series": false,

@@ -1,0 +1,352 @@
+{
+  "append_state": {
+    "entry_count": 30,
+    "last_entry_key": "risky pursuit|nancy g west",
+    "last_position": "2026.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "April Henry"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2017",
+      "category": "Best Children's/YA",
+      "position": "2017",
+      "result": "winner",
+      "title": "The Girl I Used to Be"
+    },
+    {
+      "authors": [
+        "Maria Alexander"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2017",
+      "category": "Best Children's/YA",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "Snowed"
+    },
+    {
+      "authors": [
+        "J.C. Lane"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2017",
+      "category": "Best Children's/YA",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "Tag, You\u2019re Dead"
+    },
+    {
+      "authors": [
+        "Justine Larbalestier"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2017",
+      "category": "Best Children's/YA",
+      "position": "2017.03",
+      "result": "nominee",
+      "title": "My Sister Rosa"
+    },
+    {
+      "authors": [
+        "Owen Matthews"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2017",
+      "category": "Best Children's/YA",
+      "position": "2017.04",
+      "result": "nominee",
+      "title": "The Fixes"
+    },
+    {
+      "authors": [
+        "Richard Narvaez"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2021",
+      "category": "Best Children's/YA",
+      "position": "2021",
+      "result": "winner",
+      "title": "Holly Hernandez and the Death of Disco"
+    },
+    {
+      "authors": [
+        "Fleur Bradley"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2021",
+      "category": "Best Children's/YA",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "Midnight at the Barclay Hotel"
+    },
+    {
+      "authors": [
+        "Elizabeth C. Bunce"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2021",
+      "category": "Best Children's/YA",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "Premeditated Myrtle"
+    },
+    {
+      "authors": [
+        "Janae Marks"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2021",
+      "category": "Best Children's/YA",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "From the Desk of Zoe Washington"
+    },
+    {
+      "authors": [
+        "Alex Segura"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2021",
+      "category": "Best Children's/YA",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "Star Wars Poe Dameron: Free Fall"
+    },
+    {
+      "authors": [
+        "Alan Orloff"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2022",
+      "category": "Best Children's/YA",
+      "position": "2022",
+      "result": "winner",
+      "title": "I Play One on TV"
+    },
+    {
+      "authors": [
+        "Elizabeth C. Bunce"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2022",
+      "category": "Best Children's/YA",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "Cold-Blooded Myrtle"
+    },
+    {
+      "authors": [
+        "Greg Herren"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2022",
+      "category": "Best Children's/YA",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "Bury Me In Shadows"
+    },
+    {
+      "authors": [
+        "June Hur"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2022",
+      "category": "Best Children's/YA",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "The Forest of Stolen Girls"
+    },
+    {
+      "authors": [
+        "Nancy Springer"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2022",
+      "category": "Best Children's/YA",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "Enola Holmes and the Black Barouche"
+    },
+    {
+      "authors": [
+        "Nancy Springer"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2024",
+      "category": "Best Children's/YA",
+      "position": "2024",
+      "result": "winner",
+      "title": "Enola Holmes and the Mark of the Mongoose"
+    },
+    {
+      "authors": [
+        "Jamie Lane Barber"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2024",
+      "category": "Best Children's/YA",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "Finney and the Secret Tunnel"
+    },
+    {
+      "authors": [
+        "Elizabeth C. Bunce"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2024",
+      "category": "Best Children's/YA",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "Myrtle, Means, and Opportunity"
+    },
+    {
+      "authors": [
+        "K.B. Jackson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2024",
+      "category": "Best Children's/YA",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "The Sasquatch of Hawthorne Elementary"
+    },
+    {
+      "authors": [
+        "Taryn Sounders"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2024",
+      "category": "Best Children's/YA",
+      "position": "2024.04",
+      "result": "nominee",
+      "title": "The Mystery of the Radcliffe Riddle"
+    },
+    {
+      "authors": [
+        "Suja Sukumar"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Children's/YA",
+      "position": "2025",
+      "result": "winner",
+      "title": "When Mimi Went Missing"
+    },
+    {
+      "authors": [
+        "K.B. Jackson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Children's/YA",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "The Big Grey Man of Ben Macdhui"
+    },
+    {
+      "authors": [
+        "K.B. Jackson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Children's/YA",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "Sasquatch of Harriman Lake"
+    },
+    {
+      "authors": [
+        "Josh Proctor"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Children's/YA",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "First Week Free at the Roomy Toilet"
+    },
+    {
+      "authors": [
+        "James Ponti"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Children's/YA",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "The Sherlock Society"
+    },
+    {
+      "authors": [
+        "Chris Chan"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2026",
+      "category": "Best Children's/YA",
+      "position": "2026.01",
+      "result": "nominee",
+      "title": "Well-Behaved Children Seldom Make History"
+    },
+    {
+      "authors": [
+        "Lee Matthew Goldberg"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2026",
+      "category": "Best Children's/YA",
+      "position": "2026.02",
+      "result": "nominee",
+      "title": "Miles in Time"
+    },
+    {
+      "authors": [
+        "Tiffany D. Jackson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2026",
+      "category": "Best Children's/YA",
+      "position": "2026.03",
+      "result": "nominee",
+      "title": "The Scammer"
+    },
+    {
+      "authors": [
+        "Mia P. Manansala"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2026",
+      "category": "Best Children's/YA",
+      "position": "2026.04",
+      "result": "nominee",
+      "title": "Death in the Cards"
+    },
+    {
+      "authors": [
+        "Nancy G. West"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2026",
+      "category": "Best Children's/YA",
+      "position": "2026.05",
+      "result": "nominee",
+      "title": "Risky Pursuit"
+    }
+  ],
+  "fetched_at": "2026-07-18T02:38:24Z",
+  "list_id": "anthony_award_childrens_ya",
+  "list_name": "Anthony Award - Children's/YA",
+  "match_series": false,
+  "notes": [],
+  "parser": "anthony_award_childrens_ya",
+  "schema_version": 2,
+  "source": {
+    "name": "Anthony Award - Children's/YA",
+    "source_id": "anthony_award_childrens_ya",
+    "url": "https://www.stopyourekillingme.com/Awards/Anthony_Awards.html"
+  }
+}

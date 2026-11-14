@@ -8,6 +8,14 @@ from .r_fantasy_top_self_published_novels_2024 import (
 from .r_fantasy_top_standalone_novels_2024 import (
   UrlFetcherRFantasyTopStandaloneNovels2024,
 )
+from .bookbrowse import UrlFetcherBookBrowseOnlineBookClub
+from .dragons_and_jetpacks import UrlFetcherDragonsJetpacks
+from .spectology import UrlFetcherSpectology
+from .hugo_girl import UrlFetcherHugoGirl
+from .between_two_books import (
+  UrlFetcherBetweenTwoBooksIsolation,
+  UrlFetcherBetweenTwoBooksNumbered,
+)
 from .anthony import (
   UrlFetcherAnthonyAnthologyCollection,
   UrlFetcherAnthonyChildrensYA,
@@ -228,7 +236,6 @@ from .goodreads_choice_awards import (
   UrlFetcherGoodreadsChoiceAwardsBestBook,
   UrlFetcherGoodreadsChoiceAwardsBestOfTheBest,
   UrlFetcherGoodreadsChoiceAwardsBusiness,
-  UrlFetcherGoodreadsChoiceAwardsChickLit,
   UrlFetcherGoodreadsChoiceAwardsChildrensMiddleGrade,
   UrlFetcherGoodreadsChoiceAwardsDebutNovel,
   UrlFetcherGoodreadsChoiceAwardsFantasy,
@@ -252,7 +259,6 @@ from .goodreads_choice_awards import (
   UrlFetcherGoodreadsChoiceAwardsTravelOutdoors,
   UrlFetcherGoodreadsChoiceAwardsYoungAdultFantasyScienceFiction,
   UrlFetcherGoodreadsChoiceAwardsYoungAdultFiction,
-  UrlFetcherGoodreadsChoiceAwardsYoungAdultSeries,
 )
 from .morris import UrlFetcherWilliamCMorrisAward
 from .yalsa_nonfiction import UrlFetcherYALSAExcellenceNonfictionYoungAdults
@@ -309,6 +315,8 @@ from .library_reads import (
 from .barnes_noble_book_club import UrlFetcherBarnesNobleBookClub
 from .service95_book_club import UrlFetcherService95BookClub
 from .richard_judy_book_club import UrlFetcherRichardJudyBookClub
+from .r_bookclub import UrlFetcherRBookclub
+from .big_library_read import UrlFetcherBigLibraryRead, UrlFetcherLibbyReadsGlobal
 from .aurora import (
   UrlFetcherAuroraGraphicNovel,
   UrlFetcherAuroraNoveletteNovella,
@@ -460,6 +468,7 @@ from .world_fantasy import (
 )
 from .british_fantasy import (
   UrlFetcherBritishFantasyAnthology,
+  UrlFetcherBritishFantasyAnthologyCollection,
   UrlFetcherBritishFantasyBestNovel,
   UrlFetcherBritishFantasyCollection,
   UrlFetcherBritishFantasyFantasyNovel,
@@ -528,6 +537,15 @@ URL_FETCHER_CLASSES = (
   UrlFetcherBarnesNobleBookClub,
   UrlFetcherService95BookClub,
   UrlFetcherRichardJudyBookClub,
+  UrlFetcherRBookclub,
+  UrlFetcherBigLibraryRead,
+  UrlFetcherLibbyReadsGlobal,
+  UrlFetcherBookBrowseOnlineBookClub,
+  UrlFetcherDragonsJetpacks,
+  UrlFetcherSpectology,
+  UrlFetcherHugoGirl,
+  UrlFetcherBetweenTwoBooksNumbered,
+  UrlFetcherBetweenTwoBooksIsolation,
   UrlFetcherHugoAwardsNovel,
   UrlFetcherHugoAwardsNovella,
   UrlFetcherHugoAwardsSeries,
@@ -567,6 +585,7 @@ URL_FETCHER_CLASSES = (
   UrlFetcherBritishFantasyFantasyNovel,
   UrlFetcherBritishFantasyBestNovel,
   UrlFetcherBritishFantasyNovella,
+  UrlFetcherBritishFantasyAnthologyCollection,
   UrlFetcherBritishFantasyAnthology,
   UrlFetcherBritishFantasyCollection,
   UrlFetcherBritishFantasyNonfiction,
@@ -859,7 +878,6 @@ URL_FETCHER_CLASSES = (
   UrlFetcherGoodreadsChoiceAwardsNonfiction,
   UrlFetcherGoodreadsChoiceAwardsMemoir,
   UrlFetcherGoodreadsChoiceAwardsHistoryBiography,
-  UrlFetcherGoodreadsChoiceAwardsYoungAdultSeries,
   UrlFetcherGoodreadsChoiceAwardsChildrensMiddleGrade,
   UrlFetcherGoodreadsChoiceAwardsPictureBook,
   UrlFetcherGoodreadsChoiceAwardsScienceTechnology,
@@ -870,7 +888,6 @@ URL_FETCHER_CLASSES = (
   UrlFetcherGoodreadsChoiceAwardsPoetry,
   UrlFetcherGoodreadsChoiceAwardsHumor,
   UrlFetcherGoodreadsChoiceAwardsParanormalFantasy,
-  UrlFetcherGoodreadsChoiceAwardsChickLit,
   UrlFetcherGoodreadsChoiceAwardsBestBook,
   UrlFetcherGoodreadsChoiceAwardsBestOfTheBest,
   UrlFetcherWilliamCMorrisAward,

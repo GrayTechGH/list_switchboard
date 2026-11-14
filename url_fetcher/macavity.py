@@ -47,13 +47,25 @@ class UrlFetcherMacavityAward(LibraryThingAwardFallbackMixin, UrlFetcherGeneric)
 
   def create_sykm_parser(self):
     try:
-      from calibre_plugins.list_switchboard.parser.stopyourekillingme_base import (
-        StopYoureKillingMeAwardParserBase,
+      from calibre_plugins.list_switchboard.parser.macavity import (
+        MacavitySYKMAwardsParser,
       )
     except ImportError:
-      from parser.stopyourekillingme_base import StopYoureKillingMeAwardParserBase
+      from parser.macavity import MacavitySYKMAwardsParser
 
-    return StopYoureKillingMeAwardParserBase()
+    return MacavitySYKMAwardsParser()
+
+  def create_librarything_parser(self):
+    try:
+      from calibre_plugins.list_switchboard.parser.macavity import (
+        MacavityLibraryThingAwardsParser,
+      )
+    except ImportError:
+      from parser.macavity import MacavityLibraryThingAwardsParser
+
+    parser = MacavityLibraryThingAwardsParser()
+    parser.AWARD_NAME = self.LIBRARYTHING_AWARD_NAME or self.AWARD_NAME
+    return parser
 
   def create_parser(self):
     try:
@@ -150,7 +162,9 @@ class UrlFetcherMacavityHistoricalMystery(UrlFetcherMacavityAward):
   CATEGORY = 'Sue Feder Memorial Award for Best Historical Mystery'
   CATEGORY_ALIASES = (
     'Sue Feder Memorial Award for Best Historical Novel',
+    'Sue Feder Memorial Historical Mystery',
     'Sue Feder Historical Mystery Award',
+    'Sue Feder Historical Mystery',
     'Best Historical Mystery',
     'Best Historical Novel',
     'Historical Mystery',
@@ -169,6 +183,7 @@ class UrlFetcherMacavityNonfictionCritical(UrlFetcherMacavityAward):
     'Best Mystery-Related Nonfiction/Critical',
     'Best Nonfiction',
     'Best Non-Fiction',
+    'Best Critical/Biographical',
     'Best Mystery Critical/Biographical',
     'Nonfiction / Critical',
     'Non-Fiction',

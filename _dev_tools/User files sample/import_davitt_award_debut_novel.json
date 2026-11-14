@@ -1,0 +1,154 @@
+{
+  "append_state": {
+    "entry_count": 10,
+    "last_entry_key": "sheerwater|leah swann",
+    "last_position": "2021",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Jaye Ford"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2012",
+      "category": "Debut Fiction",
+      "position": "2012",
+      "result": "winner",
+      "title": "Beyond Fear"
+    },
+    {
+      "authors": [
+        "Maggie Groff"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2013",
+      "category": "Debut Fiction",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Mad_Men,_Bad_Girls_and_the_Guerilla_Knitters_Institute"
+      },
+      "title": "Mad Men, Bad Girls and the Guerilla Knitters Institute"
+    },
+    {
+      "authors": [
+        "Hannah Kent"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2014",
+      "category": "Debut Fiction",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Burial_Rites"
+      },
+      "title": "Burial Rites"
+    },
+    {
+      "authors": [
+        "Christine Bongers"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2015",
+      "category": "Debut Fiction",
+      "position": "2015",
+      "result": "winner",
+      "title": "Intruder"
+    },
+    {
+      "authors": [
+        "Emma Viskic"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2016",
+      "category": "Debut Fiction",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Resurrection_Bay_(novel)"
+      },
+      "title": "Resurrection Bay"
+    },
+    {
+      "authors": [
+        "Cath Ferla"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2017",
+      "category": "Debut Fiction",
+      "position": "2017",
+      "result": "winner",
+      "title": "Ghost Girls"
+    },
+    {
+      "authors": [
+        "Sarah Bailey"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2018",
+      "category": "Debut Fiction",
+      "position": "2018",
+      "result": "winner",
+      "title": "The Dark Lake"
+    },
+    {
+      "authors": [
+        "Bri Lee"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2019",
+      "category": "Debut Fiction",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Eggshell_Skull"
+      },
+      "title": "Eggshell Skull"
+    },
+    {
+      "authors": [
+        "Susan Hurley"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2020",
+      "category": "Debut Fiction",
+      "position": "2020",
+      "result": "winner",
+      "title": "Eight Lives"
+    },
+    {
+      "authors": [
+        "Leah Swann"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2021",
+      "category": "Debut Fiction",
+      "position": "2021",
+      "result": "winner",
+      "title": "Sheerwater"
+    }
+  ],
+  "fetched_at": "2026-07-16T16:08:03Z",
+  "list_id": "davitt_award_debut_novel",
+  "list_name": "Davitt Award - Debut Novel",
+  "match_series": false,
+  "notes": [
+    "LibraryThing failed: HTTP Error 403: Forbidden"
+  ],
+  "parser": "davitt_award_debut_novel",
+  "schema_version": 2,
+  "source": {
+    "name": "Davitt Award - Debut Novel",
+    "source_id": "davitt_award_debut_novel",
+    "url": "https://en.wikipedia.org/wiki/Davitt_Award"
+  }
+}

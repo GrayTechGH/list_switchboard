@@ -11,7 +11,9 @@ from .generic import (
 class UrlFetcherRomanticTimesReviewersChoiceRomance(UrlFetcherGeneric):
 
   source_id = 'romantic_times_reviewers_choice_romance'
-  NAME = "Romantic Times Reviewers' Choice Awards - Romance Categories"
+  NAME = (
+    "Romantic Times Reviewers' Choice Awards - Romance Categories "
+    '(discontinued)')
   URL = (
     'https://web.archive.org/cdx?url=www.rtbookreviews.com'
     '/blog/86292/2015-rt-reviewers-choice-award-nominees-mysterysuspensethriller-and-romantic-suspense'

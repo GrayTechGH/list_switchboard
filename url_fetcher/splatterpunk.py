@@ -18,15 +18,32 @@ except ImportError:
     OFFICIAL_PAST_WINNERS_URL,
   )
 
+try:
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError
+except ImportError:
+  from errors import ImportCancelledError
+
+from .splatterpunk_transport import SplatterpunkFetchPolicy
+
 from .generic import (
   CATEGORY_HORROR_DARK_FICTION,
+  GoodreadsFetchPolicyMixin,
   UrlFetcherError,
   UrlFetcherGeneric,
   parsed_source,
 )
 
+MAX_GOODREADS_PAGES = 25
 
-class UrlFetcherSplatterpunk(UrlFetcherGeneric):
+
+class UrlFetcherSplatterpunk(GoodreadsFetchPolicyMixin, UrlFetcherGeneric):
+  """Keep official sources authoritative and historical recovery page-local.
+
+  Invariants:
+  - Only the Goodreads supplement uses the per-import browser policy.
+  - The entire supplement is discarded if any required page still fails.
+  - Operation policy and progress state are cleared on success or failure.
+  """
 
   URL = OFFICIAL_AWARDS_URL
   FETCH_URLS = ()
@@ -54,6 +71,44 @@ class UrlFetcherSplatterpunk(UrlFetcherGeneric):
       before_fetch=None, after_fetch=None, before_parse=None,
       force_fallback_level=0, disable_fallbacks=False, source_choice=None,
       cached_parsed=None, incremental_update=False):
+    self._splatterpunk_progress = progress
+    self._splatterpunk_fetch_policy = SplatterpunkFetchPolicy(
+      fetch_url, lambda url: self.legacy_fetch_url(fetch_url, url), self.parser(),
+      log=log, progress=progress)
+    try:
+      return self._fetch_and_parse(
+        fetch_url, sleep, fetch_error, log, progress, before_fetch, after_fetch,
+        before_parse, force_fallback_level, disable_fallbacks, source_choice,
+        cached_parsed, incremental_update)
+    finally:
+      self._splatterpunk_fetch_policy = None
+      self._splatterpunk_progress = None
+
+  def fetch_url(self, fetch_url, url):
+    policy = getattr(self, '_splatterpunk_fetch_policy', None)
+    if policy is not None and url.startswith(GOODREADS_URL):
+      return policy.fetch(url)
+    return self.legacy_fetch_url(fetch_url, url)
+
+  def legacy_fetch_url(self, fetch_url, url):
+    retries = self.timeout_retries(url)
+    for retry in range(retries + 1):
+      try:
+        return self.fetch_url_once(fetch_url, url)
+      except ImportCancelledError:
+        raise
+      except Exception as err:
+        if retry >= retries or not self.is_timeout_error(err):
+          raise
+        progress = getattr(self, '_splatterpunk_progress', None)
+        if progress is not None:
+          progress(0, 1, f'Splatterpunk Goodreads timed out; retry {retry + 1} of {retries}: {url}')
+
+  def _fetch_and_parse(
+      self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
+      before_fetch=None, after_fetch=None, before_parse=None,
+      force_fallback_level=0, disable_fallbacks=False, source_choice=None,
+      cached_parsed=None, incremental_update=False):
     if source_choice not in (None, 'automatic'):
       raise UrlFetcherError(
         f'No source fallback attempt exists for selected source {source_choice}.')
@@ -66,6 +121,8 @@ class UrlFetcherSplatterpunk(UrlFetcherGeneric):
     try:
       parsed_results.append(self.fetch_parse_current(
         parser, fetcher_fetch_url, before_fetch, after_fetch, before_parse))
+    except ImportCancelledError:
+      raise
     except Exception as err:
       note = f'Splatterpunk official current nominees failed: {err}'
       notes.append(note)
@@ -75,6 +132,8 @@ class UrlFetcherSplatterpunk(UrlFetcherGeneric):
     try:
       parsed_results.append(self.fetch_parse_official_winners(
         parser, fetcher_fetch_url, before_fetch, after_fetch, before_parse))
+    except ImportCancelledError:
+      raise
     except Exception as err:
       note = f'Splatterpunk official past winners failed: {err}'
       notes.append(note)
@@ -83,7 +142,9 @@ class UrlFetcherSplatterpunk(UrlFetcherGeneric):
 
     try:
       parsed_results.extend(self.fetch_parse_goodreads_pages(
-        parser, fetcher_fetch_url, before_fetch, after_fetch, before_parse, log))
+        parser, fetcher_fetch_url, before_fetch, after_fetch, before_parse, log, progress))
+    except ImportCancelledError:
+      raise
     except Exception as err:
       note = f'Splatterpunk Goodreads historical supplement failed: {err}'
       notes.append(note)
@@ -106,53 +167,69 @@ class UrlFetcherSplatterpunk(UrlFetcherGeneric):
     source = self.fetch_page(
       fetch_url, OFFICIAL_AWARDS_API_URL, before_fetch, after_fetch)
     self.before_parse(before_parse, OFFICIAL_AWARDS_API_URL)
-    return parser.parse_official_current(
+    parser.validate_official_api_source(source, 'current nominees')
+    parsed = parser.parse_official_current(
       source,
       OFFICIAL_AWARDS_URL,
       self.NAME,
       self.CATEGORY,
       self.CATEGORY_ALIASES)
+    parser.validate_official_current_result(parsed)
+    return parsed
 
   def fetch_parse_official_winners(
       self, parser, fetch_url, before_fetch, after_fetch, before_parse):
     source = self.fetch_page(
       fetch_url, OFFICIAL_PAST_WINNERS_API_URL, before_fetch, after_fetch)
     self.before_parse(before_parse, OFFICIAL_PAST_WINNERS_API_URL)
-    return parser.parse_official_winners(
+    parser.validate_official_api_source(source, 'past winners')
+    parsed = parser.parse_official_winners(
       source,
       OFFICIAL_PAST_WINNERS_URL,
       self.NAME,
       self.CATEGORY,
       self.CATEGORY_ALIASES)
+    parser.validate_official_winner_result(parsed)
+    return parsed
 
   def fetch_parse_goodreads_pages(
-      self, parser, fetch_url, before_fetch, after_fetch, before_parse, log):
-    first_page = self.fetch_page(fetch_url, GOODREADS_URL, before_fetch, after_fetch)
-    self.before_parse(before_parse, GOODREADS_URL)
-    urls = list(parser.discover_goodreads_page_urls(first_page, GOODREADS_URL))
-    parsed_results = [
-      parser.parse_goodreads(
-        first_page,
-        GOODREADS_URL,
+      self, parser, fetch_url, before_fetch, after_fetch, before_parse, log,
+      progress=None):
+    pending = [GOODREADS_URL]
+    seen = set()
+    parsed_results = []
+    while pending:
+      if len(seen) >= MAX_GOODREADS_PAGES:
+        raise UrlFetcherError(
+          'Splatterpunk Goodreads pagination exceeded the '
+          f'{MAX_GOODREADS_PAGES}-page safety limit.')
+      url = pending.pop(0)
+      if url in seen:
+        continue
+      total = len(seen) + len(pending) + 1
+      if progress is not None:
+        progress(len(seen), total, f'Fetching Splatterpunk Goodreads page {len(seen) + 1} of {total}')
+      html = self.fetch_page(fetch_url, url, before_fetch, after_fetch)
+      self.before_parse(before_parse, url)
+      parser.validate_goodreads_page(html, url)
+      if progress is not None:
+        progress(len(seen), total, f'Parsing Splatterpunk Goodreads page {len(seen) + 1} of {total}')
+      seen.add(url)
+      parsed_results.append(parser.parse_goodreads(
+        html,
+        url,
         self.NAME,
         self.CATEGORY,
-        self.CATEGORY_ALIASES)
-    ]
-    for url in urls[1:6]:
-      try:
-        html = self.fetch_page(fetch_url, url, before_fetch, after_fetch)
-        self.before_parse(before_parse, url)
-        parsed_results.append(parser.parse_goodreads(
-          html,
-          url,
-          self.NAME,
-          self.CATEGORY,
-          self.CATEGORY_ALIASES))
-      except Exception as err:
-        note = f'Splatterpunk Goodreads page failed: {url}: {err}'
-        parsed_results.append({'entries': (), 'notes': [note]})
-        if log is not None:
-          log(note)
+        self.CATEGORY_ALIASES))
+      for discovered_url in parser.discover_goodreads_page_urls(html, url):
+        if discovered_url not in seen and discovered_url not in pending:
+          pending.append(discovered_url)
+      if progress is not None:
+        progress(len(seen), len(seen) + len(pending),
+          f'Parsed Splatterpunk Goodreads page {len(seen)} of {len(seen) + len(pending)}')
+    if not any(parsed.get('entries') for parsed in parsed_results):
+      raise ValueError(
+        'Splatterpunk Goodreads pages did not expose the configured category.')
     return parsed_results
 
   def fetch_page(self, fetch_url, url, before_fetch, after_fetch):

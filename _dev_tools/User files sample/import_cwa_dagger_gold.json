@@ -1,0 +1,3094 @@
+{
+  "append_state": {
+    "entry_count": 192,
+    "last_entry_key": "king of ashes|sa cosby",
+    "last_position": "2026.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Winston Graham"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1955",
+      "category": "Gold Dagger",
+      "position": "1955",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-little-walls/"
+      },
+      "title": "The Little Walls"
+    },
+    {
+      "authors": [
+        "Edward Grierson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1956",
+      "category": "Gold Dagger",
+      "position": "1956",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-second-man/"
+      },
+      "title": "The Second Man"
+    },
+    {
+      "authors": [
+        "Julian Symons"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1957",
+      "category": "Gold Dagger",
+      "position": "1957",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-colour-of-murder/"
+      },
+      "title": "The Colour of Murder"
+    },
+    {
+      "authors": [
+        "Margot Bennett"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1958",
+      "category": "Gold Dagger",
+      "position": "1958",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/someone-from-the-past/"
+      },
+      "title": "Someone from the Past"
+    },
+    {
+      "authors": [
+        "Eric Ambler"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1959",
+      "category": "Gold Dagger",
+      "position": "1959",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/passage-of-arms/"
+      },
+      "title": "Passage of Arms"
+    },
+    {
+      "authors": [
+        "Lionel Davidson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1960",
+      "category": "Gold Dagger",
+      "position": "1960",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-night-of-wenceslas/"
+      },
+      "title": "The Night of Wenceslas"
+    },
+    {
+      "authors": [
+        "Mary Kelly"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1961",
+      "category": "Gold Dagger",
+      "position": "1961",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-spoilt-kill/"
+      },
+      "title": "The Spoilt Kill"
+    },
+    {
+      "authors": [
+        "Joan Fleming"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1962",
+      "category": "Gold Dagger",
+      "position": "1962",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/when-i-grow-rich/"
+      },
+      "title": "When I Grow Rich"
+    },
+    {
+      "authors": [
+        "John le Carr"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1963",
+      "category": "Gold Dagger",
+      "position": "1963",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-spy-who-came-in-from-the-cold/"
+      },
+      "title": "The Spy Who Came In From The Cold"
+    },
+    {
+      "authors": [
+        "H.R.F Keating"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1964",
+      "category": "Gold Dagger",
+      "position": "1964",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-perfect-murder/"
+      },
+      "title": "The Perfect Murder"
+    },
+    {
+      "authors": [
+        "Ross Macdonald"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1965",
+      "category": "Gold Dagger",
+      "position": "1965",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-far-side-of-the-dollar/"
+      },
+      "title": "The Far Side of the Dollar"
+    },
+    {
+      "authors": [
+        "Lionel Davidson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1966",
+      "category": "Gold Dagger",
+      "position": "1966",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/a-long-way-to-shiloh/"
+      },
+      "title": "A Long Way to Shiloh"
+    },
+    {
+      "authors": [
+        "Emma Lathen"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1967",
+      "category": "Gold Dagger",
+      "position": "1967",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/murder-against-the-grain/"
+      },
+      "title": "Murder Against the Grain"
+    },
+    {
+      "authors": [
+        "Peter Dickinson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1968",
+      "category": "Gold Dagger",
+      "position": "1968",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/skin-deep-the-glass-sided-ants-nest/"
+      },
+      "title": "Skin Deep"
+    },
+    {
+      "authors": [
+        "Peter Dickinson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1969",
+      "category": "Gold Dagger",
+      "position": "1969",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/a-pride-of-heroes/"
+      },
+      "title": "A Pride of Heroes"
+    },
+    {
+      "authors": [
+        "Joan Fleming"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1970",
+      "category": "Gold Dagger",
+      "position": "1970",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/young-man-i-think-youre-dying/"
+      },
+      "title": "Young Man I Think You\u2019re Dying"
+    },
+    {
+      "authors": [
+        "James McClure"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1971",
+      "category": "Gold Dagger",
+      "position": "1971",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-steam-pig/"
+      },
+      "title": "The Steam Pig"
+    },
+    {
+      "authors": [
+        "Eric Ambler"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1972",
+      "category": "Gold Dagger",
+      "position": "1972",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-levanter/"
+      },
+      "title": "The Levanter"
+    },
+    {
+      "authors": [
+        "Robert Littell"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1973",
+      "category": "Gold Dagger",
+      "position": "1973",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-defection-of-a-j-lewinter/"
+      },
+      "title": "The Defection of A.J Lewinter"
+    },
+    {
+      "authors": [
+        "Anthony Price"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1974",
+      "category": "Gold Dagger",
+      "position": "1974",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/other-paths-to-glory/"
+      },
+      "title": "Other Paths to Glory"
+    },
+    {
+      "authors": [
+        "Nicholas Meyer"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1975",
+      "category": "Gold Dagger",
+      "position": "1975",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-seven-per-cent-solution/"
+      },
+      "title": "The seven per cent solution"
+    },
+    {
+      "authors": [
+        "Ruth Rendell"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1976",
+      "category": "Gold Dagger",
+      "position": "1976",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/a-demon-in-my-view/"
+      },
+      "title": "A Demon in my View"
+    },
+    {
+      "authors": [
+        "John le Carr"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1977",
+      "category": "Gold Dagger",
+      "position": "1977",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-honourable-schoolboy/"
+      },
+      "title": "The Honourable Schoolboy"
+    },
+    {
+      "authors": [
+        "Lionel Davidson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1978",
+      "category": "Gold Dagger",
+      "position": "1978",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-chelsea-murders/"
+      },
+      "title": "The Chelsea Murders"
+    },
+    {
+      "authors": [
+        "Dick Francis"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1979",
+      "category": "Gold Dagger",
+      "position": "1979",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/whip-hand/"
+      },
+      "title": "Whip Hand"
+    },
+    {
+      "authors": [
+        "H.R.F Keating"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1980",
+      "category": "Gold Dagger",
+      "position": "1980",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-murder-of-the-maharajah/"
+      },
+      "title": "The Murder of the Maharajah"
+    },
+    {
+      "authors": [
+        "Martin Cruz Smith"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1981",
+      "category": "Gold Dagger",
+      "position": "1981",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/gorky-park/"
+      },
+      "title": "Gorky Park"
+    },
+    {
+      "authors": [
+        "Peter Lovesey"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1982",
+      "category": "Gold Dagger",
+      "position": "1982",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-false-inspector-dew/"
+      },
+      "title": "The False Inspector Dew"
+    },
+    {
+      "authors": [
+        "John Hutton"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1983",
+      "category": "Gold Dagger",
+      "position": "1983",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/accidental-crimes/"
+      },
+      "title": "Accidental Crimes"
+    },
+    {
+      "authors": [
+        "B.M. Gill"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1984",
+      "category": "Gold Dagger",
+      "position": "1984",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-twelfth-juror/"
+      },
+      "title": "The Twelfth Juror"
+    },
+    {
+      "authors": [
+        "Paula Gosling"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1985",
+      "category": "Gold Dagger",
+      "position": "1985",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/monkey-puzzle/"
+      },
+      "title": "Monkey Puzzle"
+    },
+    {
+      "authors": [
+        "Ruth Rendell"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1986",
+      "category": "Gold Dagger",
+      "position": "1986",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/live-flesh/"
+      },
+      "title": "Live Flesh"
+    },
+    {
+      "authors": [
+        "Barbara Vine"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1987",
+      "category": "Gold Dagger",
+      "position": "1987",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/a-fatal-inversion/"
+      },
+      "title": "A Fatal Inversion"
+    },
+    {
+      "authors": [
+        "Michael Dibdin"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1988",
+      "category": "Gold Dagger",
+      "position": "1988",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/ratking/"
+      },
+      "title": "Ratking"
+    },
+    {
+      "authors": [
+        "Colin Dexter"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1989",
+      "category": "Gold Dagger",
+      "position": "1989",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-wench-is-dead/"
+      },
+      "title": "The Wench is Dead"
+    },
+    {
+      "authors": [
+        "Reginald Hill"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1990",
+      "category": "Gold Dagger",
+      "position": "1990",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/bones-and-silence/"
+      },
+      "title": "Bones and Silence"
+    },
+    {
+      "authors": [
+        "Barbara Vine"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1991",
+      "category": "Gold Dagger",
+      "position": "1991",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/king-solomons-carpet/"
+      },
+      "title": "King Solomon\u2019s Carpet"
+    },
+    {
+      "authors": [
+        "Colin Dexter"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1992",
+      "category": "Gold Dagger",
+      "position": "1992",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-way-through-the-woods/"
+      },
+      "title": "The Way Through the Woods"
+    },
+    {
+      "authors": [
+        "Patricia Cornwell"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1993",
+      "category": "Gold Dagger",
+      "position": "1993",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/cruel-and-unusual/"
+      },
+      "title": "Cruel and Unusual"
+    },
+    {
+      "authors": [
+        "Minette Walters"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1994",
+      "category": "Gold Dagger",
+      "position": "1994",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-scholds-bridle/"
+      },
+      "title": "The Schold\u2019s Bridle"
+    },
+    {
+      "authors": [
+        "Val McDermid"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1995",
+      "category": "Gold Dagger",
+      "position": "1995",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-mermaids-singing/"
+      },
+      "title": "The Mermaids Singing"
+    },
+    {
+      "authors": [
+        "Ben Elton"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1996",
+      "category": "Gold Dagger",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/popcorn/"
+      },
+      "title": "Popcorn"
+    },
+    {
+      "authors": [
+        "Ian Rankin"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1997",
+      "category": "Gold Dagger",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/black-and-blue/"
+      },
+      "title": "Black and Blue"
+    },
+    {
+      "authors": [
+        "James Lee Burke"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1998",
+      "category": "Gold Dagger",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/sunset-limited/"
+      },
+      "title": "Sunset Limited"
+    },
+    {
+      "authors": [
+        "Robert Wilson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "1999",
+      "category": "Gold Dagger",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/a-small-death-in-lisbon/"
+      },
+      "title": "A Small Death in Lisbon"
+    },
+    {
+      "authors": [
+        "Jonathan Lethem"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2000",
+      "category": "Gold Dagger",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/motherless-brooklyn/"
+      },
+      "title": "Motherless Brooklyn"
+    },
+    {
+      "authors": [
+        "Henning Mankell"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2001",
+      "category": "Gold Dagger",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/sidetracked/"
+      },
+      "title": "Sidetracked"
+    },
+    {
+      "authors": [
+        "Jose Carlos Samoza"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2002",
+      "category": "Gold Dagger",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-athenian-murders/"
+      },
+      "title": "The Athenian Murders"
+    },
+    {
+      "authors": [
+        "Minette Walters"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2003",
+      "category": "Gold Dagger",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/fox-evil/"
+      },
+      "title": "Fox Evil"
+    },
+    {
+      "authors": [
+        "Sara Paretsky"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2004",
+      "category": "Gold Dagger",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/blacklist/"
+      },
+      "title": "Blacklist"
+    },
+    {
+      "authors": [
+        "Mo Hayder"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2004",
+      "category": "Gold Dagger",
+      "position": "2004.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/tokyo/"
+      },
+      "title": "Tokyo"
+    },
+    {
+      "authors": [
+        "Val McDermid"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2004",
+      "category": "Gold Dagger",
+      "position": "2004.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-torment-of-others/"
+      },
+      "title": "The Torment of Others"
+    },
+    {
+      "authors": [
+        "James W. Nichol"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2004",
+      "category": "Gold Dagger",
+      "position": "2004.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/midnight-cab/"
+      },
+      "title": "Midnight Cab"
+    },
+    {
+      "authors": [
+        "Laura Wilson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2004",
+      "category": "Gold Dagger",
+      "position": "2004.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-lover/"
+      },
+      "title": "The Lover"
+    },
+    {
+      "authors": [
+        "Arnaldur Indri_ason"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2005",
+      "category": "Gold Dagger",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/silence-of-the-grave/"
+      },
+      "title": "Silence of the Grave"
+    },
+    {
+      "authors": [
+        "Ann Cleeves"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2006",
+      "category": "Gold Dagger",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/raven-black/"
+      },
+      "title": "Raven Black"
+    },
+    {
+      "authors": [
+        "Laura Wilson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2006",
+      "category": "Gold Dagger",
+      "position": "2006.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/a-thousand-lies/"
+      },
+      "title": "A Thousand Lies"
+    },
+    {
+      "authors": [
+        "Simon Beckett"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2006",
+      "category": "Gold Dagger",
+      "position": "2006.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-chemistry-of-death/"
+      },
+      "title": "The Chemistry of Death"
+    },
+    {
+      "authors": [
+        "Thomas H. Cook"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2006",
+      "category": "Gold Dagger",
+      "position": "2006.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/red-leaves/"
+      },
+      "title": "Red Leaves"
+    },
+    {
+      "authors": [
+        "Frances Fyfield"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2006",
+      "category": "Gold Dagger",
+      "position": "2006.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/safer-than-houses/"
+      },
+      "title": "Safer Than Houses"
+    },
+    {
+      "authors": [
+        "Bill James"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2006",
+      "category": "Gold Dagger",
+      "position": "2006.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/wolves-of-memory/"
+      },
+      "title": "Wolves of Memory"
+    },
+    {
+      "authors": [
+        "Peter Temple"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2007",
+      "category": "Gold Dagger",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-broken-shore/"
+      },
+      "title": "The Broken Shore"
+    },
+    {
+      "authors": [
+        "Giles Blunt"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2007",
+      "category": "Gold Dagger",
+      "position": "2007.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/fields-of-grief/"
+      },
+      "title": "Fields of Grief"
+    },
+    {
+      "authors": [
+        "James Lee Burke"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2007",
+      "category": "Gold Dagger",
+      "position": "2007.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/pegasus-descending/"
+      },
+      "title": "Pegasus Descending"
+    },
+    {
+      "authors": [
+        "Gillian Flynn"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2007",
+      "category": "Gold Dagger",
+      "position": "2007.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/sharp-objects/"
+      },
+      "title": "Sharp Objects"
+    },
+    {
+      "authors": [
+        "Craig Russell"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2007",
+      "category": "Gold Dagger",
+      "position": "2007.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/brother-grimm/"
+      },
+      "title": "Brother Grimm"
+    },
+    {
+      "authors": [
+        "CJ Sansom"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2007",
+      "category": "Gold Dagger",
+      "position": "2007.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/sovereign/"
+      },
+      "title": "Sovereign"
+    },
+    {
+      "authors": [
+        "Frances Fyfield"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2008",
+      "category": "Gold Dagger",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/blood-from-stone/"
+      },
+      "title": "Blood From Stone"
+    },
+    {
+      "authors": [
+        "Colin Cotterill"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2008",
+      "category": "Gold Dagger",
+      "position": "2008.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/coroners-lunch/"
+      },
+      "title": "Coroner\u2019s Lunch"
+    },
+    {
+      "authors": [
+        "Steve Hamilton"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2008",
+      "category": "Gold Dagger",
+      "position": "2008.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/night-work/"
+      },
+      "title": "Night Work"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2008",
+      "category": "Gold Dagger",
+      "position": "2008.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/what-the-dead-know/"
+      },
+      "title": "What The Dead Know"
+    },
+    {
+      "authors": [
+        "RN Morris"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2008",
+      "category": "Gold Dagger",
+      "position": "2008.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/a-vengeful-longing/"
+      },
+      "title": "A Vengeful Longing"
+    },
+    {
+      "authors": [
+        "James Lee Burke"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2008",
+      "category": "Gold Dagger",
+      "position": "2008.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-tin-roof-blowdown/"
+      },
+      "title": "The Tin Roof Blowdown"
+    },
+    {
+      "authors": [
+        "William Brodrick"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2009",
+      "category": "Gold Dagger",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/a-whispered-name/"
+      },
+      "title": "A Whispered Name"
+    },
+    {
+      "authors": [
+        "Gene Kerrigan"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2009",
+      "category": "Gold Dagger",
+      "position": "2009.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/dark-times-in-the-city/"
+      },
+      "title": "Dark Times In The City"
+    },
+    {
+      "authors": [
+        "Mark Billingham"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2009",
+      "category": "Gold Dagger",
+      "position": "2009.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/in-the-dark/"
+      },
+      "title": "In the Dark"
+    },
+    {
+      "authors": [
+        "Lawrence Block"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2009",
+      "category": "Gold Dagger",
+      "position": "2009.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/hit-and-run/"
+      },
+      "title": "Hit and Run"
+    },
+    {
+      "authors": [
+        "M.R. Hall"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2009",
+      "category": "Gold Dagger",
+      "position": "2009.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-coroner/"
+      },
+      "title": "The Coroner"
+    },
+    {
+      "authors": [
+        "Kate Atkinson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2009",
+      "category": "Gold Dagger",
+      "position": "2009.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/when-will-there-be-good-news/"
+      },
+      "title": "When Will There Be Good News?"
+    },
+    {
+      "authors": [
+        "Belinda Bauer"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2010",
+      "category": "Gold Dagger",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/blacklands-2/"
+      },
+      "title": "Blacklands"
+    },
+    {
+      "authors": [
+        "S J Bolton"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2010",
+      "category": "Gold Dagger",
+      "position": "2010.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/blood-harvest/"
+      },
+      "title": "Blood Harvest"
+    },
+    {
+      "authors": [
+        "George Pelecanos"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2010",
+      "category": "Gold Dagger",
+      "position": "2010.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-way-home/"
+      },
+      "title": "The Way Home"
+    },
+    {
+      "authors": [
+        "Karen Campbell"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2010",
+      "category": "Gold Dagger",
+      "position": "2010.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/shadowplay/"
+      },
+      "title": "Shadowplay"
+    },
+    {
+      "authors": [
+        "Richard Asplin"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2010",
+      "category": "Gold Dagger",
+      "position": "2010.04",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/conman/"
+      },
+      "title": "Conman"
+    },
+    {
+      "authors": [
+        "James Lee Burke"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2010",
+      "category": "Gold Dagger",
+      "position": "2010.05",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/rain-gods/"
+      },
+      "title": "Rain Gods"
+    },
+    {
+      "authors": [
+        "Patricia Duncker"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2010",
+      "category": "Gold Dagger",
+      "position": "2010.06",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-strange-case-of-the-composer-and-his-judge/"
+      },
+      "title": "The Strange Case of the Composer and his Judge"
+    },
+    {
+      "authors": [
+        "Denise Mina"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2010",
+      "category": "Gold Dagger",
+      "position": "2010.07",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/still-midnight/"
+      },
+      "title": "Still Midnight"
+    },
+    {
+      "authors": [
+        "Tom Franklin"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2011",
+      "category": "Gold Dagger",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/crooked-letter-crooked-letter/"
+      },
+      "title": "Crooked Letter, Crooked Letter"
+    },
+    {
+      "authors": [
+        "Steve Hamilton"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2011",
+      "category": "Gold Dagger",
+      "position": "2011.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-lock-artists/"
+      },
+      "title": "The Lock Artists"
+    },
+    {
+      "authors": [
+        "A.D. Miller"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2011",
+      "category": "Gold Dagger",
+      "position": "2011.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/snowdrops/"
+      },
+      "title": "Snowdrops"
+    },
+    {
+      "authors": [
+        "Denise Mina"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2011",
+      "category": "Gold Dagger",
+      "position": "2011.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-end-of-the-wasp-season/"
+      },
+      "title": "The End of the Wasp Season"
+    },
+    {
+      "authors": [
+        "Mo Hayder"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2011",
+      "category": "Gold Dagger",
+      "position": "2011.04",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/hanging-hill/"
+      },
+      "title": "Hanging Hill"
+    },
+    {
+      "authors": [
+        "Michael Koryta"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2011",
+      "category": "Gold Dagger",
+      "position": "2011.05",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-cypress-house/"
+      },
+      "title": "The Cypress House"
+    },
+    {
+      "authors": [
+        "M.J. McGrath"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2011",
+      "category": "Gold Dagger",
+      "position": "2011.06",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/white-heat/"
+      },
+      "title": "White Heat"
+    },
+    {
+      "authors": [
+        "Lucretia Grindle"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2011",
+      "category": "Gold Dagger",
+      "position": "2011.07",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-villa-triste/"
+      },
+      "title": "The Villa Triste"
+    },
+    {
+      "authors": [
+        "Gene Kerrigan"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2012",
+      "category": "Gold Dagger",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-rage/"
+      },
+      "title": "The Rage"
+    },
+    {
+      "authors": [
+        "Chris Womersley"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2012",
+      "category": "Gold Dagger",
+      "position": "2012.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/bereft/"
+      },
+      "title": "Bereft"
+    },
+    {
+      "authors": [
+        "N.J Cooper"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2012",
+      "category": "Gold Dagger",
+      "position": "2012.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/vengeance-in-mind/"
+      },
+      "title": "Vengeance in Mind"
+    },
+    {
+      "authors": [
+        "M.R. Hall"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2012",
+      "category": "Gold Dagger",
+      "position": "2012.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-flight/"
+      },
+      "title": "The Flight"
+    },
+    {
+      "authors": [
+        "Colin Cotterill"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2012",
+      "category": "Gold Dagger",
+      "position": "2012.04",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/grandad-theres-a-head-on-the-beach/"
+      },
+      "title": "Grandad, There\u2019s a Head on the Beach"
+    },
+    {
+      "authors": [
+        "Alice LaPlante"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2012",
+      "category": "Gold Dagger",
+      "position": "2012.05",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/turn-of-mind/"
+      },
+      "title": "Turn of Mind"
+    },
+    {
+      "authors": [
+        "Simon Lelic"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2012",
+      "category": "Gold Dagger",
+      "position": "2012.06",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-child-who/"
+      },
+      "title": "The Child Who"
+    },
+    {
+      "authors": [
+        "Mick Herron"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2013",
+      "category": "Gold Dagger",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/dead-lions/"
+      },
+      "title": "Dead Lions"
+    },
+    {
+      "authors": [
+        "Lauren Beukes"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2013",
+      "category": "Gold Dagger",
+      "position": "2013.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-shining-girls/"
+      },
+      "title": "The Shining Girls"
+    },
+    {
+      "authors": [
+        "Becky Mastermann"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2013",
+      "category": "Gold Dagger",
+      "position": "2013.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/rage-against-the-dying/"
+      },
+      "title": "Rage Against the Dying"
+    },
+    {
+      "authors": [
+        "Belinda Bauer"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2013",
+      "category": "Gold Dagger",
+      "position": "2013.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/rubbernecker/"
+      },
+      "title": "Rubbernecker"
+    },
+    {
+      "authors": [
+        "Sam Hawken"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2013",
+      "category": "Gold Dagger",
+      "position": "2013.04",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/tequilla-sunset/"
+      },
+      "title": "Tequilla Sunset"
+    },
+    {
+      "authors": [
+        "Sara Paretsky"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2013",
+      "category": "Gold Dagger",
+      "position": "2013.05",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/breakdown/"
+      },
+      "title": "Breakdown"
+    },
+    {
+      "authors": [
+        "Michael Robotham"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2013",
+      "category": "Gold Dagger",
+      "position": "2013.06",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/say-youre-sorry/"
+      },
+      "title": "Say You\u2019re Sorry"
+    },
+    {
+      "authors": [
+        "Don Winslow"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2013",
+      "category": "Gold Dagger",
+      "position": "2013.07",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-kings-of-cool/"
+      },
+      "title": "The Kings of Cool"
+    },
+    {
+      "authors": [
+        "Wiley Cash"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2014",
+      "category": "Gold Dagger",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/this-dark-road-to-mercy/"
+      },
+      "title": "This Dark Road to Mercy"
+    },
+    {
+      "authors": [
+        "Paula Daly"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2014",
+      "category": "Gold Dagger",
+      "position": "2014.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/keep-your-friends-close/"
+      },
+      "title": "Keep Your Friends Close"
+    },
+    {
+      "authors": [
+        "Paul Mendelson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2014",
+      "category": "Gold Dagger",
+      "position": "2014.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-first-rule-of-survival/"
+      },
+      "title": "The First Rule of Survival"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2014",
+      "category": "Gold Dagger",
+      "position": "2014.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/how-the-light-gets-in/"
+      },
+      "title": "How the Light Gets In"
+    },
+    {
+      "authors": [
+        "Simon Beckett"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2014",
+      "category": "Gold Dagger",
+      "position": "2014.04",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/stone-bruises/"
+      },
+      "title": "Stone Bruises"
+    },
+    {
+      "authors": [
+        "Mark Roberts"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2014",
+      "category": "Gold Dagger",
+      "position": "2014.05",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/what-she-saw/"
+      },
+      "title": "What She Saw"
+    },
+    {
+      "authors": [
+        "Gerald Seymour"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2014",
+      "category": "Gold Dagger",
+      "position": "2014.06",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-corporals-wife/"
+      },
+      "title": "The Corporal\u2019s Wife"
+    },
+    {
+      "authors": [
+        "Nick Stone"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2014",
+      "category": "Gold Dagger",
+      "position": "2014.07",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-verdict/"
+      },
+      "title": "The Verdict"
+    },
+    {
+      "authors": [
+        "Michael Robotham"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Gold Dagger",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/life-or-death/"
+      },
+      "title": "Life or Death"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Gold Dagger",
+      "position": "2015.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/mr-mercedes/"
+      },
+      "title": "Mr Mercedes"
+    },
+    {
+      "authors": [
+        "Attica Locke"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Gold Dagger",
+      "position": "2015.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/pleasantville/"
+      },
+      "title": "Pleasantville"
+    },
+    {
+      "authors": [
+        "Belinda Bauer"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Gold Dagger",
+      "position": "2015.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-shut-eye/"
+      },
+      "title": "The Shut Eye"
+    },
+    {
+      "authors": [
+        "James Carlos Blake"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Gold Dagger",
+      "position": "2015.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-rules-of-wolfe/"
+      },
+      "title": "The Rules of Wolfe"
+    },
+    {
+      "authors": [
+        "Robert Galbraith"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Gold Dagger",
+      "position": "2015.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-silkworm/"
+      },
+      "title": "The Silkworm"
+    },
+    {
+      "authors": [
+        "Sam Hawken"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Gold Dagger",
+      "position": "2015.06",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/missing/"
+      },
+      "title": "Missing"
+    },
+    {
+      "authors": [
+        "M.J. McGrath"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Gold Dagger",
+      "position": "2015.07",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-bone-seeker/"
+      },
+      "title": "The Bone Seeker"
+    },
+    {
+      "authors": [
+        "Paul Mendelson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Gold Dagger",
+      "position": "2015.08",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-serpentine-road/"
+      },
+      "title": "The Serpentine Road"
+    },
+    {
+      "authors": [
+        "Peter Swanson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Gold Dagger",
+      "position": "2015.09",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-kind-worth-killing/"
+      },
+      "title": "The Kind Worth Killing"
+    },
+    {
+      "authors": [
+        "Bill Beverly"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2016",
+      "category": "Gold Dagger",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/dodgers/"
+      },
+      "title": "Dodgers"
+    },
+    {
+      "authors": [
+        "Mick Herron"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2016",
+      "category": "Gold Dagger",
+      "position": "2016.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/real-tigers/"
+      },
+      "title": "Real Tigers"
+    },
+    {
+      "authors": [
+        "Denise Mina"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2016",
+      "category": "Gold Dagger",
+      "position": "2016.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/blood-salt-water/"
+      },
+      "title": "Blood Salt Water"
+    },
+    {
+      "authors": [
+        "Christopher Brookmyre"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2016",
+      "category": "Gold Dagger",
+      "position": "2016.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/black-widow/"
+      },
+      "title": "Black Widow"
+    },
+    {
+      "authors": [
+        "Jane Harper"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2017",
+      "category": "Gold Dagger",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-dry/"
+      },
+      "title": "The Dry"
+    },
+    {
+      "authors": [
+        "Belinda Bauer"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2017",
+      "category": "Gold Dagger",
+      "position": "2017.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-beautiful-dead/"
+      },
+      "title": "The Beautiful Dead"
+    },
+    {
+      "authors": [
+        "Abir Mukherjee"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2017",
+      "category": "Gold Dagger",
+      "position": "2017.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/a-rising-man/"
+      },
+      "title": "A Rising Man"
+    },
+    {
+      "authors": [
+        "Ray Celestin"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2017",
+      "category": "Gold Dagger",
+      "position": "2017.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/dead-mans-blues/"
+      },
+      "title": "Dead Man\u2019s Blues"
+    },
+    {
+      "authors": [
+        "Mick Herron"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2017",
+      "category": "Gold Dagger",
+      "position": "2017.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/spook-street/"
+      },
+      "title": "Spook Street"
+    },
+    {
+      "authors": [
+        "Derek B Miller"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2017",
+      "category": "Gold Dagger",
+      "position": "2017.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-girl-in-green/"
+      },
+      "title": "The Girl in Green"
+    },
+    {
+      "authors": [
+        "Steve Cavanagh"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2018",
+      "category": "Gold Dagger",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-liar/"
+      },
+      "title": "The Liar"
+    },
+    {
+      "authors": [
+        "Mick Herron"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2018",
+      "category": "Gold Dagger",
+      "position": "2018.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/london-rules/"
+      },
+      "title": "London Rules"
+    },
+    {
+      "authors": [
+        "Dennis Lehane"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2018",
+      "category": "Gold Dagger",
+      "position": "2018.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/since-we-fell/"
+      },
+      "title": "Since We Fell"
+    },
+    {
+      "authors": [
+        "Abir Mukherjee"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2018",
+      "category": "Gold Dagger",
+      "position": "2018.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/a-necessary-evil/"
+      },
+      "title": "A Necessary Evil"
+    },
+    {
+      "authors": [
+        "Emma Viskic"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2018",
+      "category": "Gold Dagger",
+      "position": "2018.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/resurrection-bay/"
+      },
+      "title": "Resurrection Bay"
+    },
+    {
+      "authors": [
+        "M W Craven"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2019",
+      "category": "Gold Dagger",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-puppet-show/"
+      },
+      "title": "The Puppet Show"
+    },
+    {
+      "authors": [
+        "Claire Askew"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2019",
+      "category": "Gold Dagger",
+      "position": "2019.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/all-the-hidden-truths/"
+      },
+      "title": "All the Hidden Truths"
+    },
+    {
+      "authors": [
+        "Christobel Kent"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2019",
+      "category": "Gold Dagger",
+      "position": "2019.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/what-we-did/"
+      },
+      "title": "What We Did"
+    },
+    {
+      "authors": [
+        "Donna Leon"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2019",
+      "category": "Gold Dagger",
+      "position": "2019.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/unto-us-a-son-is-given/"
+      },
+      "title": "Unto Us a Son is Given"
+    },
+    {
+      "authors": [
+        "Benjamin Wood"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2019",
+      "category": "Gold Dagger",
+      "position": "2019.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/a-station-on-the-path-to-somewhere-better/"
+      },
+      "title": "A Station on the Path to Somewhere Better"
+    },
+    {
+      "authors": [
+        "Derek B Miller"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2019",
+      "category": "Gold Dagger",
+      "position": "2019.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/american-by-day/"
+      },
+      "title": "American by Day"
+    },
+    {
+      "authors": [
+        "Michael Robotham"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2020",
+      "category": "Gold Dagger",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/good-girl-bad-girl/"
+      },
+      "title": "Good Girl, Bad Girl"
+    },
+    {
+      "authors": [
+        "Lou Berney"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2020",
+      "category": "Gold Dagger",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/november-road/"
+      },
+      "title": "November Road"
+    },
+    {
+      "authors": [
+        "Claire Askew"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2020",
+      "category": "Gold Dagger",
+      "position": "2020.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/what-you-pay-for/"
+      },
+      "title": "What You Pay For"
+    },
+    {
+      "authors": [
+        "John Fairfax"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2020",
+      "category": "Gold Dagger",
+      "position": "2020.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/forced-confessions/"
+      },
+      "title": "Forced Confessions"
+    },
+    {
+      "authors": [
+        "Mick Herron"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2020",
+      "category": "Gold Dagger",
+      "position": "2020.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/joe-country/"
+      },
+      "title": "Joe Country"
+    },
+    {
+      "authors": [
+        "Abir Mukherjee"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2020",
+      "category": "Gold Dagger",
+      "position": "2020.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/death-in-the-east-2/"
+      },
+      "title": "Death in the East"
+    },
+    {
+      "authors": [
+        "Chris Whitaker"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2021",
+      "category": "Gold Dagger",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/we-begin-at-the-end/"
+      },
+      "title": "We Begin at the End"
+    },
+    {
+      "authors": [
+        "S A Cosby"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2021",
+      "category": "Gold Dagger",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/blacktop-wasteland/"
+      },
+      "title": "Blacktop Wasteland"
+    },
+    {
+      "authors": [
+        "Nicci French"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2021",
+      "category": "Gold Dagger",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/house-of-correction/"
+      },
+      "title": "House of Correction"
+    },
+    {
+      "authors": [
+        "Elly Griffiths"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2021",
+      "category": "Gold Dagger",
+      "position": "2021.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-postscript-murders/"
+      },
+      "title": "The Postscript Murders"
+    },
+    {
+      "authors": [
+        "Thomas Mullen"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2021",
+      "category": "Gold Dagger",
+      "position": "2021.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/midnight-atlanta/"
+      },
+      "title": "Midnight Atlanta"
+    },
+    {
+      "authors": [
+        "Ben Creed"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2021",
+      "category": "Gold Dagger",
+      "position": "2021.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/city-of-ghosts/"
+      },
+      "title": "City of Ghosts"
+    },
+    {
+      "authors": [
+        "Robert Galbraith"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2021",
+      "category": "Gold Dagger",
+      "position": "2021.06",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/troubled-blood/"
+      },
+      "title": "Troubled Blood"
+    },
+    {
+      "authors": [
+        "Ray Celestin"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2022",
+      "category": "Gold Dagger",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/sunset-swing/"
+      },
+      "title": "Sunset Swing"
+    },
+    {
+      "authors": [
+        "Jacqueline Bublitz"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2022",
+      "category": "Gold Dagger",
+      "position": "2022.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/before-you-knew-my-name/"
+      },
+      "title": "Before You Knew My Name"
+    },
+    {
+      "authors": [
+        "SA Cosby"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2022",
+      "category": "Gold Dagger",
+      "position": "2022.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/razorblade-tears/"
+      },
+      "title": "Razorblade Tears"
+    },
+    {
+      "authors": [
+        "John Hart"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2022",
+      "category": "Gold Dagger",
+      "position": "2022.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-unwilling/"
+      },
+      "title": "The Unwilling"
+    },
+    {
+      "authors": [
+        "Abir Mukherjee"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2022",
+      "category": "Gold Dagger",
+      "position": "2022.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-shadows-of-men/"
+      },
+      "title": "The Shadows of Men"
+    },
+    {
+      "authors": [
+        "William Shaw"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2022",
+      "category": "Gold Dagger",
+      "position": "2022.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-trawlerman/"
+      },
+      "title": "The Trawlerman"
+    },
+    {
+      "authors": [
+        "George Dawes Green"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2023",
+      "category": "Gold Dagger",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-kingdoms-of-savannah/"
+      },
+      "title": "The Kingdoms of Savannah"
+    },
+    {
+      "authors": [
+        "Simon Mason"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2023",
+      "category": "Gold Dagger",
+      "position": "2023.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/a-killing-in-november/"
+      },
+      "title": "A Killing in November"
+    },
+    {
+      "authors": [
+        "Anna Mazzola"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2023",
+      "category": "Gold Dagger",
+      "position": "2023.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-clockwork-girl-2/"
+      },
+      "title": "The Clockwork Girl"
+    },
+    {
+      "authors": [
+        "WC Ryan"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2023",
+      "category": "Gold Dagger",
+      "position": "2023.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-winter-guest/"
+      },
+      "title": "The Winter Guest"
+    },
+    {
+      "authors": [
+        "Simon Van der Velde"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2023",
+      "category": "Gold Dagger",
+      "position": "2023.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-silent-brother/"
+      },
+      "title": "The Silent Brother"
+    },
+    {
+      "authors": [
+        "Vaseem Khan"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2023",
+      "category": "Gold Dagger",
+      "position": "2023.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-lost-man-of-bombay/"
+      },
+      "title": "The Lost Man of Bombay"
+    },
+    {
+      "authors": [
+        "Una Mannion"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2024",
+      "category": "Gold Dagger",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/tell-me-what-i-am/"
+      },
+      "title": "Tell Me What I Am"
+    },
+    {
+      "authors": [
+        "Maz Evans"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2024",
+      "category": "Gold Dagger",
+      "position": "2024.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/over-my-dead-body/"
+      },
+      "title": "Over My Dead Body"
+    },
+    {
+      "authors": [
+        "Mick Herron"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2024",
+      "category": "Gold Dagger",
+      "position": "2024.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-secret-hours/"
+      },
+      "title": "The Secret Hours"
+    },
+    {
+      "authors": [
+        "Dennis Lehane"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2024",
+      "category": "Gold Dagger",
+      "position": "2024.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/small-mercies/"
+      },
+      "title": "Small Mercies"
+    },
+    {
+      "authors": [
+        "Nilanjana Roy"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2024",
+      "category": "Gold Dagger",
+      "position": "2024.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/black-river/"
+      },
+      "title": "Black River"
+    },
+    {
+      "authors": [
+        "Jesse Sutanto"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2024",
+      "category": "Gold Dagger",
+      "position": "2024.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/vera-wongs-unsolicited-advice-for-murderers/"
+      },
+      "title": "Vera Wong\u2019s Unsolicited Advice for Murderers"
+    },
+    {
+      "authors": [
+        "Anna Mazzola"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2025",
+      "category": "Gold Dagger",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/book-of-secrets/"
+      },
+      "title": "The Book of Secrets"
+    },
+    {
+      "authors": [
+        "Tana French"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2025",
+      "category": "Gold Dagger",
+      "position": "2025.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-hunter-2/"
+      },
+      "title": "The Hunter"
+    },
+    {
+      "authors": [
+        "R.J. Ellory"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2025",
+      "category": "Gold Dagger",
+      "position": "2025.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-bell-tower/"
+      },
+      "title": "The Bell Tower"
+    },
+    {
+      "authors": [
+        "D.V. Bishop"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2025",
+      "category": "Gold Dagger",
+      "position": "2025.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/a-divine-fury/"
+      },
+      "title": "A Divine Fury"
+    },
+    {
+      "authors": [
+        "Bonnie Burke-Patel"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2025",
+      "category": "Gold Dagger",
+      "position": "2025.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/i-died-at-fallow-hall/"
+      },
+      "title": "I Died at Fallow Hall"
+    },
+    {
+      "authors": [
+        "Attica Locke"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2025",
+      "category": "Gold Dagger",
+      "position": "2025.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/guide-me-home/"
+      },
+      "title": "Guide Me Home"
+    },
+    {
+      "authors": [
+        "Abigail Dean"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2026",
+      "category": "Gold Dagger",
+      "position": "2026",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-death-of-us/"
+      },
+      "title": "The Death of Us"
+    },
+    {
+      "authors": [
+        "Laura Shepherd-Robinson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2026",
+      "category": "Gold Dagger",
+      "position": "2026.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-art-of-a-lie-2/"
+      },
+      "title": "The Art of a Lie"
+    },
+    {
+      "authors": [
+        "Ariel Lawhon"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2026",
+      "category": "Gold Dagger",
+      "position": "2026.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-frozen-river/"
+      },
+      "title": "The Frozen River"
+    },
+    {
+      "authors": [
+        "Vaseem Khan"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2026",
+      "category": "Gold Dagger",
+      "position": "2026.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-girl-in-cell-a/"
+      },
+      "title": "The Girl In Cell A"
+    },
+    {
+      "authors": [
+        "Holly Jackson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2026",
+      "category": "Gold Dagger",
+      "position": "2026.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/not-quite-dead-yet/"
+      },
+      "title": "Not Quite Dead Yet"
+    },
+    {
+      "authors": [
+        "SA Cosby"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2026",
+      "category": "Gold Dagger",
+      "position": "2026.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/king-of-ashes-2/"
+      },
+      "title": "King of Ashes"
+    }
+  ],
+  "fetched_at": "2026-07-18T00:46:24Z",
+  "list_id": "cwa_dagger_gold",
+  "list_name": "CWA Dagger - Gold Dagger",
+  "match_series": false,
+  "notes": [],
+  "parser": "cwa_dagger_gold",
+  "schema_version": 2,
+  "source": {
+    "name": "CWA Dagger - Gold Dagger",
+    "source_id": "cwa_dagger_gold",
+    "url": "https://thecwa.co.uk/past-winners/?past_winners_awards[]=gold&past_winners_awards[]=gold-crossed-herrings"
+  }
+}

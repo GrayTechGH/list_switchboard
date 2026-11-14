@@ -3,7 +3,17 @@
 
 """
 Crime Writers of Canada award parsers.
+
+Maintenance notes:
+- Both current sources use explicit ``and`` credits for some coauthored books;
+  normalize those boundaries before the shared entry builder creates the
+  canonical author list.
+- The dedicated Best Novel Wikipedia page emits each row-spanned year as a
+  separate table row under Parsoid. Its highlighted/bold row is the winner and
+  the remaining work rows for that year are nominees.
 """
+
+import re
 
 try:
   from calibre_plugins.list_switchboard.parser.librarything_base import (
@@ -22,7 +32,15 @@ except ImportError:
 AWARD_NAME = 'Crime Writers of Canada Award'
 
 
-class CrimeWritersOfCanadaLibraryThingParser(LibraryThingAwardParserBase):
+class CrimeWritersOfCanadaAuthorMixin:
+
+  def clean_author(self, value):
+    author = super().clean_author(value)
+    return re.sub(r'\s+and\s+', ' & ', author, flags=re.I)
+
+
+class CrimeWritersOfCanadaLibraryThingParser(
+    CrimeWritersOfCanadaAuthorMixin, LibraryThingAwardParserBase):
 
   AWARD_NAME = AWARD_NAME
 
@@ -35,7 +53,8 @@ class CrimeWritersOfCanadaLibraryThingParser(LibraryThingAwardParserBase):
     return None
 
 
-class CrimeWritersOfCanadaWikipediaParser(WikipediaAwardTableParserBase):
+class CrimeWritersOfCanadaWikipediaParser(
+    CrimeWritersOfCanadaAuthorMixin, WikipediaAwardTableParserBase):
 
   AWARD_NAME = AWARD_NAME
 
@@ -77,6 +96,9 @@ class CrimeWritersOfCanadaWikipediaParser(WikipediaAwardTableParserBase):
       return rows
     if not self.has_required_columns(header_map):
       return []
+    if self.has_split_year_rows(table):
+      return self.split_year_award_rows(
+        table, header_map, base_url, category)
     rows = []
     current_year = None
     for tr in self.all_rows(table):
@@ -105,6 +127,57 @@ class CrimeWritersOfCanadaWikipediaParser(WikipediaAwardTableParserBase):
         'category': category,
       })
     return rows
+
+  def has_split_year_rows(self, table):
+    for tr in self.all_rows(table):
+      cells = self.direct_cells(tr, include_headers=True)
+      if len(cells) == 1 and self.year_from_text(self.clean_cell_text(cells[0])):
+        return True
+    return False
+
+  def split_year_award_rows(self, table, header_map, base_url, category):
+    rows = []
+    current_year = None
+    for tr in self.all_rows(table):
+      cells = self.direct_cells(tr, include_headers=True)
+      if not cells or self.row_matches_header(cells, header_map):
+        continue
+      if len(cells) == 1:
+        current_year = self.year_from_text(self.clean_cell_text(cells[0])) or current_year
+        continue
+      if current_year is None:
+        continue
+      # Parsoid separates the rowspan year into the preceding row, so the
+      # author/title indexes are shifted left for every work row.
+      title_cell = self.cell_for_key(cells, header_map, 'title', True)
+      author_cell = self.cell_for_key(cells, header_map, 'author', True)
+      if title_cell is None or author_cell is None:
+        continue
+      title = self.clean_title(self.clean_cell_text(title_cell))
+      author = self.clean_author(self.clean_cell_text(author_cell))
+      if not title or not author:
+        continue
+      result = (
+        'winner'
+        if self.is_highlighted_winner_row(tr, title_cell, author_cell)
+        else 'nominee')
+      rows.append({
+        'award_year': str(current_year),
+        'title': title,
+        'author': author,
+        'result': result,
+        'source_url': self.first_link_url(title_cell, base_url) or base_url,
+        'category': category,
+      })
+    return rows
+
+  def is_highlighted_winner_row(self, row, title_cell, author_cell):
+    style = re.sub(r'\s+', '', row.get('style') or '').casefold()
+    if 'background:lightyellow' in style:
+      return True
+    return bool(
+      title_cell.xpath('.//b|.//strong')
+      and author_cell.xpath('.//b|.//strong'))
 
 
 def parse_crime_writers_canada_librarything(

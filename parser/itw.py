@@ -7,8 +7,9 @@ ITW Thriller Awards parser for the official past nominees and winners archive.
 Maintenance notes:
 - The official ITW archive is one long page. Each award year contains category
   headings followed by author/title/publisher blocks.
-- The first parsed work in a category/year block is the winner; later works are
-  finalists/nominees.
+- Current nominee blocks identify winners with the ``winner`` class. The
+  legacy page shape did not, so only legacy rows retain first-entry winner
+  inference.
 """
 
 import re
@@ -17,14 +18,14 @@ from bs4 import BeautifulSoup
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import (
-    AwardParserBase, assign_positions, normalize_heading, normalize_line,
-    strip_publication_notes,
+    AwardParserBase, assign_positions, is_author_suffix, normalize_heading,
+    normalize_line, strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
 except ImportError:
   from .award_base import (
-    AwardParserBase, assign_positions, normalize_heading, normalize_line,
-    strip_publication_notes,
+    AwardParserBase, assign_positions, is_author_suffix, normalize_heading,
+    normalize_line, strip_publication_notes,
   )
   from .generic import position_sort_key
 
@@ -57,6 +58,11 @@ class ITWThrillerAwardsParser(AwardParserBase):
       text = normalize_line(node.get_text(' ', strip=True))
       if not text:
         continue
+      if node.name == 'h3' and 'media_title' in node.get('class', ()):
+        # Current titles are descendants of rows already handled at the li
+        # boundary. A title beginning with "Best" must not look like the next
+        # category heading and discard the remaining nominees.
+        continue
       year = self.year_from_heading(text)
       if year is not None and node.name in {'h1', 'h2'}:
         current_year = year
@@ -83,7 +89,7 @@ class ITWThrillerAwardsParser(AwardParserBase):
             rows.append({
               'award_year': str(current_year),
               'title': title,
-              'author': self.clean_author(pending_author),
+              'authors': self.clean_authors(pending_author),
               'result': 'winner' if category_index == 0 else 'nominee',
               'source_url': source_url,
               'category': current_category,
@@ -92,6 +98,29 @@ class ITWThrillerAwardsParser(AwardParserBase):
             pending_author = ''
         continue
       if node.name == 'li' and current_year is not None and current_category:
+        author_node = node.find('p', class_='author')
+        title_node = node.find('h3', class_='media_title')
+        if author_node is not None and title_node is not None:
+          author = self.clean_author(author_node.get_text(' ', strip=True))
+          authors = self.clean_authors(author)
+          title = self.clean_title(
+            title_node.get_text(' ', strip=True), author)
+          if authors and title and not self.line_is_metadata(author):
+            classes = {
+              normalize_heading(value)
+              for value in node.get('class', ())
+            }
+            rows.append({
+              'award_year': str(current_year),
+              'title': title,
+              'authors': authors,
+              'result': 'winner' if 'winner' in classes else 'nominee',
+              'source_url': source_url,
+              'category': current_category,
+            })
+            category_index += 1
+          pending_author = ''
+          continue
         author = self.clean_author(text)
         if author and not self.line_is_metadata(author):
           pending_author = author
@@ -133,6 +162,11 @@ class ITWThrillerAwardsParser(AwardParserBase):
 
   def clean_title(self, value, author=''):
     title = strip_publication_notes(normalize_line(value)).strip(' "\u201c\u201d,')
+    title = re.split(
+      r'\s+(?:audio\s+)?narrated\s+by\b',
+      title,
+      maxsplit=1,
+      flags=re.I)[0].strip()
     if author:
       title = re.sub(
         r'\s+by\s+' + re.escape(author) + r'\s*$',
@@ -144,15 +178,35 @@ class ITWThrillerAwardsParser(AwardParserBase):
   def clean_author(self, value):
     return strip_publication_notes(normalize_line(value)).strip(' "\u201c\u201d,')
 
+  def clean_authors(self, value):
+    """Split the bounded ITW author credit while preserving name suffixes."""
+    parts = re.split(
+      r'\s*(?:,\s*(?:and\s+)?|;\s*|&|\band\b)\s*',
+      self.clean_author(value),
+      flags=re.I)
+    authors = []
+    for part in parts:
+      part = normalize_line(part).strip(' ,;')
+      if not part:
+        continue
+      if is_author_suffix(part) and authors:
+        authors[-1] = f'{authors[-1]}, {part}'
+      elif part not in authors:
+        authors.append(part)
+    return authors
+
   def dedupe_rows(self, rows):
     deduped = []
     seen = set()
     for row in rows:
+      authors = row.get('authors', row.get('author', ''))
+      if not isinstance(authors, str):
+        authors = ' '.join(authors or ())
       key = (
         row['award_year'],
         normalize_heading(row['category']),
         normalize_heading(row['title']),
-        normalize_heading(row['author']),
+        normalize_heading(authors),
       )
       if key in seen:
         continue

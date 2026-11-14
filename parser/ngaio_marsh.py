@@ -30,6 +30,15 @@ except ImportError:
 AWARD_NAME = 'Ngaio Marsh Award'
 
 
+def split_ngaio_authors(value):
+  """Split the bounded Wikipedia byline while preserving name suffixes."""
+  return [
+    author.strip()
+    for author in re.split(r'\s+(?:and|with|&)\s+', value, flags=re.I)
+    if author.strip()
+  ]
+
+
 class NgaioMarshLibraryThingParser(LibraryThingAwardParserBase):
 
   AWARD_NAME = AWARD_NAME
@@ -44,6 +53,14 @@ class NgaioMarshLibraryThingParser(LibraryThingAwardParserBase):
 
 
 class NgaioMarshWikipediaParser(AwardParserBase):
+
+  """
+  Parse Wikipedia's year sections and nested winner/finalist lists.
+
+  The 2010-2015 crime-novel sections predate category subheadings. Later
+  sections use headings such as ``Best Crime Novel`` while recipe categories
+  omit ``Best``; both shapes are intentional source boundaries.
+  """
 
   AWARD_NAME = AWARD_NAME
 
@@ -60,14 +77,22 @@ class NgaioMarshWikipediaParser(AwardParserBase):
       text = normalize_line(node.get_text(' ', strip=True))
       if not text:
         continue
+      if node.name == 'h2':
+        current_year = None
+        current_category = None
+        winner_depth = 0
+        continue
       year = self._year_from_heading(node.name, text)
       if year is not None:
         current_year = year
-        current_category = None
+        current_category = (
+          category if normalize_heading('Crime Novel') in accepted else None)
+        winner_depth = 0
         continue
       if node.name == 'h4':
-        normalized = normalize_heading(text)
+        normalized = self._category_heading(text)
         current_category = category if normalized in accepted else None
+        winner_depth = 0
         continue
       if node.name != 'li' or current_year is None or current_category is None:
         continue
@@ -90,6 +115,11 @@ class NgaioMarshWikipediaParser(AwardParserBase):
     match = re.match(r'^((?:19|20)\d{2})$', text)
     return int(match.group(1)) if match is not None else None
 
+  def _category_heading(self, text):
+    normalized = normalize_heading(text)
+    normalized = re.sub(r'^best\s+', '', normalized)
+    return re.sub(r'\s+new award$', '', normalized).strip()
+
   def _build_row(self, item, base_url, year, category, result):
     clone = BeautifulSoup(str(item), 'html.parser').find('li')
     if clone is None:
@@ -98,14 +128,18 @@ class NgaioMarshWikipediaParser(AwardParserBase):
       nested.decompose()
     text = normalize_line(clone.get_text(' ', strip=True))
     text = re.sub(r'\[\s*\d+\s*\]', '', text).strip()
-    if ' by ' not in text:
-      return None
-    title, author = text.rsplit(' by ', 1)
+    if ' by ' in text:
+      title, author = text.rsplit(' by ', 1)
+    else:
+      split = re.match(r'^(.+?)\s+[-\u2013\u2014]\s+(.+)$', text)
+      if split is None:
+        return None
+      title, author = split.groups()
     link = item.find('a', href=True)
     return {
       'award_year': str(year),
       'title': title.strip(' "\u201c\u201d,'),
-      'author': author.strip(),
+      'authors': split_ngaio_authors(author),
       'result': result,
       'source_url': urljoin(base_url, link['href']) if link is not None else base_url,
       'category': category,

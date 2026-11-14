@@ -6,38 +6,106 @@ Dublin Literary Award parsers.
 
 Maintenance notes:
 - V1 imports winners and shortlists only. Official longlist/nominated sections
-  are intentionally treated as boundaries, not parsed rows.
-- Official pages have used year pages with result headings and title/author
-  blocks. The parser accepts heading-pair rows such as `h3 Title` followed by
-  `h4 Author`, plus compact `Title by Author` and linked-title paragraphs.
-- Wikipedia is a replacement fallback for winner/shortlist rows and is not
-  merged into successful official parses.
+  are intentionally excluded.
+- The official WordPress API returns every prize-year record and embeds the
+  rendered winner and shortlist cards. Those named card classes are the source
+  contract; surrounding headings, prose, controls, judges, and related features
+  must not be interpreted as award rows.
+- The official 2000 prize-year page lost one shortlist card during migration.
+  ``Charming Billy`` is restored through one source-grounded correction.
+- Wikipedia is a replacement fallback and is not merged into a successful
+  official parse. Translated title cells retain both title forms for display
+  and automatic matching.
 """
 
+import json
 import re
 import unicodedata
-from urllib.parse import urljoin
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, NavigableString
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import ( # type: ignore
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
-    normalize_heading, normalize_line, split_title_author, strip_publication_notes,
+    normalize_heading, normalize_line, strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key # pyright: ignore[reportMissingImports]
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
-    normalize_heading, normalize_line, split_title_author, strip_publication_notes,
+    normalize_heading, normalize_line, strip_publication_notes,
   )
   from .generic import position_sort_key
 
 
 AWARD_NAME = 'Dublin Literary Award'
 OFFICIAL_URL = 'https://dublinliteraryaward.ie/the-library/prize-years/'
+OFFICIAL_API_URL = (
+  'https://dublinliteraryaward.ie/wp-json/wp/v2/prize_years_type'
+  '?per_page=100&orderby=date&order=desc&_fields=link,slug,title,content'
+)
 WIKIPEDIA_URL = 'https://en.wikipedia.org/wiki/Dublin_Literary_Award'
 CATEGORY = 'Novel'
+BASELINE_FIRST_YEAR = 1996
+BASELINE_LAST_YEAR = 2026
+
+# These totals count the winner once even when the official shortlist cards
+# repeat it. They lock the completed historical baseline against partial API
+# payloads or truncated rendered content.
+EXPECTED_BASELINE_COUNTS = {
+  1996: 7,
+  1997: 8,
+  1998: 10,
+  1999: 8,
+  2000: 7,
+  2001: 6,
+  2002: 7,
+  2003: 8,
+  2004: 10,
+  2005: 10,
+  2006: 10,
+  2007: 8,
+  2008: 8,
+  2009: 8,
+  2010: 8,
+  2011: 10,
+  2012: 10,
+  2013: 10,
+  2014: 10,
+  2015: 10,
+  2016: 10,
+  2017: 10,
+  2018: 10,
+  2019: 10,
+  2020: 10,
+  2021: 6,
+  2022: 6,
+  2023: 6,
+  2024: 6,
+  2025: 6,
+  2026: 6,
+}
+
+CHARMING_BILLY_CORRECTION = {
+  'award_year': '2000',
+  'title': 'Charming Billy',
+  'author': 'Alice McDermott',
+  'result': RESULT_SHORTLISTED,
+  'source_url': (
+    'https://www.irishtimes.com/news/'
+    'dublin-novelist-shortlisted-for-literary-award-1.252807'
+  ),
+  'category': CATEGORY,
+  'award': AWARD_NAME,
+}
+
+TITLE_CORRECTIONS = {
+  (
+    '2025',
+    normalize_heading('We Are light'),
+    normalize_heading('Gerda Blees'),
+  ): 'We Are Light',
+}
 
 HEADER_ALIASES = {
   'author': 'author',
@@ -100,76 +168,17 @@ class DublinLiteraryAwardMixin(AwardParserBase):
     return ''
 
   def year_from_url(self, value):
-    match = re.search(r'/prize-years/((?:19|20)\d{2})(?:/|$)', value or '')
+    match = re.search(r'/prize-years/((?:19|20)\d{2})(?:[-/]|$)', value or '')
     return int(match.group(1)) if match is not None else None
 
   def year_from_text(self, value):
     match = re.search(r'(?:19|20)\d{2}', value or '')
     return int(match.group(0)) if match is not None else None
 
-  def first_link_url(self, node, base_url):
-    link = node.find('a', href=True) if node is not None else None
-    if link is None and getattr(node, 'name', None) == 'a' and node.get('href'):
-      link = node
-    return urljoin(base_url, link['href']) if link is not None else ''
-
-  def title_link_text(self, node):
-    if node is None:
-      return ''
-    for link in node.find_all('a', href=True):
-      text = self.clean_text(link)
-      key = _key(text)
-      if text and self.year_from_text(text) is None and key not in {
-          'read more', 'more', 'winner', 'shortlist', 'longlist', 'nominated'}:
-        return text
-    return ''
-
-  def ignorable_author_line(self, text):
-    key = _key(text)
-    return (
-      not key or
-      key in {'winner', 'shortlist', 'shortlisted', 'longlist', 'nominated'} or
-      key.startswith('translated by ') or
-      key.startswith('published by ') or
-      key.startswith('publisher ') or
-      key.startswith('nominated by ') or
-      key.startswith('library ') or
-      key.startswith('libraries '))
-
-  def parse_text_entry(self, text):
-    text = normalize_line(_normalized_text(text))
-    text = re.sub(r'^\s*(?:winner|shortlist(?:ed)?|longlist(?:ed)?|nominated)\s*:?\s*', '', text, flags=re.I)
-    if not text or self.result_from_text(text) == 'longlisted':
-      return '', ''
-    by_match = re.match(r'^(.+?)\s+(?:by|written\s+by)\s+(.+)$', text, re.I)
-    if by_match is not None:
-      return self.clean_title(by_match.group(1)), self.clean_author(by_match.group(2))
-    dash_match = re.match(r'^(.+?)\s+[\u2013\u2014-]\s+(.+)$', text)
-    if dash_match is not None:
-      return self.clean_title(dash_match.group(1)), self.clean_author(dash_match.group(2))
-    title, author = split_title_author(text)
-    if title and author:
-      return self.clean_title(title), self.clean_author(author)
-    return '', ''
-
-  def parse_node_entry(self, node, base_url):
-    text = self.clean_text(node)
-    title = self.title_link_text(node)
-    if title:
-      remainder = normalize_line(text.replace(title, ' ', 1))
-      by_match = re.search(r'(?:^|\s)(?:by|written\s+by)\s+(.+)$', remainder, re.I)
-      author_text = by_match.group(1) if by_match is not None else remainder
-      if not self.ignorable_author_line(author_text):
-        author = self.clean_author(author_text)
-        if author:
-          return self.clean_title(title), author, self.first_link_url(node, base_url) or base_url
-    title, author = self.parse_text_entry(text)
-    return title, author, self.first_link_url(node, base_url) or base_url
-
-  def row(self, year, title, author, result, source_url):
+  def row(self, year, title, author, result, source_url, aliases=None):
     if result == 'longlisted' or not title or not author:
       return None
-    return {
+    row = {
       'award_year': str(year),
       'title': title,
       'author': author,
@@ -178,6 +187,9 @@ class DublinLiteraryAwardMixin(AwardParserBase):
       'category': CATEGORY,
       'award': AWARD_NAME,
     }
+    if aliases:
+      row['aliases'] = list(aliases)
+    return row
 
   def dedupe_rows(self, rows):
     deduped = []
@@ -290,105 +302,208 @@ class DublinLiteraryAwardMixin(AwardParserBase):
 class DublinLiteraryAwardOfficialParser(DublinLiteraryAwardMixin):
 
   def parse(
-      self, html, base_url=OFFICIAL_URL, name=AWARD_NAME, fetch_url=None,
+      self, payload, base_url=OFFICIAL_URL, name=AWARD_NAME, fetch_url=None,
       log=None, progress=None):
-    rows = self.parse_page_rows(html, base_url)
-    notes = []
-    links = self.year_links(html, base_url)
-    if fetch_url is not None and links:
-      total = len(links)
-      for index, (year, url) in enumerate(links, 1):
-        try:
-          if progress is not None:
-            progress(index, total, f'Fetching {name} prize year {index} of {total}')
-          rows.extend(self.parse_page_rows(fetch_url(url), url, fallback_year=year))
-        except Exception as err:
-          notes.append(f'{name} prize year could not be fetched: {url}: {err}')
-          if log is not None:
-            log(f'{name} prize year failed: {url}: {err}')
-    return self.parsed_from_rows(rows, name, base_url, notes=notes)
-
-  def year_links(self, html, base_url):
-    soup = BeautifulSoup(html, 'html.parser')
-    links = {}
-    for link in soup.find_all('a', href=True):
-      url = urljoin(base_url, link['href'])
-      year = self.year_from_url(url)
-      if year is not None:
-        links.setdefault(year, url)
-    return tuple((year, links[year]) for year in sorted(links))
-
-  def parse_page_rows(self, html, base_url, fallback_year=None):
-    soup = BeautifulSoup(html, 'html.parser')
-    root = soup.find('main') or soup.find('article') or soup.body or soup
-    year = (
-      self.year_from_url(base_url) or
-      self.year_from_text(self.clean_text(soup.find('h1'))) or
-      self.year_from_text(self.clean_text(soup.find('title'))) or
-      fallback_year)
+    del fetch_url, log, progress
+    records = self.load_records(payload)
     rows = []
-    current_result = ''
-    pending_title = ''
-    pending_url = ''
+    completed_years = set()
+    declared_counts = {}
+    notes = []
 
-    for node in root.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'li']):
-      if node.find_parent(['script', 'style', 'nav', 'header', 'footer', 'table']):
+    for record in records:
+      year = self.record_year(record)
+      if year is None:
         continue
-      text = self.clean_text(node)
-      if not text:
+      record_rows, declared_count, complete = self.parse_record(record, year)
+      if not complete:
+        if year <= BASELINE_LAST_YEAR:
+          raise ValueError(
+            f'Official Dublin Literary Award {year} is missing its winner or shortlist.')
+        notes.append(
+          f'{year} Dublin Literary Award is not complete yet and was not imported.')
         continue
-      node_year = self.year_from_text(text)
-      if node_year is not None:
-        year = node_year
-      stage = self.result_from_text(text)
-      if node.name in {'h1', 'h2'} and stage:
-        current_result = stage
-        pending_title = ''
-        pending_url = ''
-        continue
-      if node.name in {'h1', 'h2'} and not stage:
-        pending_title = ''
-        pending_url = ''
-        continue
-      if current_result not in {RESULT_WINNER, RESULT_SHORTLISTED} or year is None:
-        continue
-      if stage == 'longlisted':
-        current_result = 'longlisted'
-        pending_title = ''
-        pending_url = ''
-        continue
-      if self.ignorable_author_line(text):
-        continue
-      if node.name in {'h3', 'h4', 'h5', 'h6'}:
-        if stage in {RESULT_WINNER, RESULT_SHORTLISTED}:
-          current_result = stage
-          pending_title = ''
-          pending_url = ''
-          continue
-        if pending_title and node.name in {'h4', 'h5', 'h6'} and not self.ignorable_author_line(text):
-          row = self.row(year, pending_title, self.clean_author(text), current_result, pending_url or base_url)
-          if row is not None:
-            rows.append(row)
-          pending_title = ''
-          pending_url = ''
-          continue
-        pending_title = self.clean_title(self.title_link_text(node) or text)
-        pending_url = self.first_link_url(node, base_url) or base_url
-        continue
-      if pending_title:
-        if self.ignorable_author_line(text):
-          continue
-        row = self.row(year, pending_title, self.clean_author(text), current_result, pending_url or base_url)
-        if row is not None:
-          rows.append(row)
-        pending_title = ''
-        pending_url = ''
-        continue
-      title, author, source_url = self.parse_node_entry(node, base_url)
-      row = self.row(year, title, author, current_result, source_url)
-      if row is not None:
-        rows.append(row)
-    return rows
+      rows.extend(record_rows)
+      completed_years.add(year)
+      if declared_count is not None:
+        declared_counts[year] = declared_count
+
+    rows = self.apply_corrections(rows)
+    deduped = self.dedupe_rows(rows)
+    self.validate_coverage(deduped, completed_years, declared_counts)
+    notes.append(
+      'The migrated official 2000 page omits Charming Billy; a verified '
+      'contemporary shortlist record was added.')
+    return self.parsed_from_rows(deduped, name, OFFICIAL_URL, notes=notes)
+
+  def load_records(self, payload):
+    try:
+      records = json.loads(payload) if isinstance(payload, str) else payload
+    except Exception as err:
+      raise ValueError('Official Dublin Literary Award API returned invalid JSON.') from err
+    if not isinstance(records, list) or not records:
+      raise ValueError('Official Dublin Literary Award API returned no prize years.')
+    if not all(isinstance(record, dict) for record in records):
+      raise ValueError('Official Dublin Literary Award API returned invalid prize-year records.')
+    return records
+
+  def record_year(self, record):
+    title = record.get('title')
+    title = title.get('rendered', '') if isinstance(title, dict) else title
+    return (
+      self.year_from_text(str(title or '')) or
+      self.year_from_text(str(record.get('slug', ''))) or
+      self.year_from_url(str(record.get('link', ''))))
+
+  def record_content(self, record):
+    content = record.get('content')
+    content = content.get('rendered', '') if isinstance(content, dict) else content
+    return str(content or '')
+
+  def parse_record(self, record, year):
+    source_url = str(record.get('link') or '')
+    if not source_url:
+      raise ValueError(f'Official Dublin Literary Award {year} has no prize-year URL.')
+    soup = BeautifulSoup(self.record_content(record), 'html.parser')
+    winner_cards = [
+      card
+      for card in soup.select('.books-single-cover-item')
+      if self.result_from_text(self.clean_text(
+        card.select_one('.books-single-cover-item-classification'))) == RESULT_WINNER
+    ]
+    shortlist_block = next((
+      block
+      for block in soup.select('.fxb-books-list-block')
+      if _key(self.clean_text(block.select_one('.block-heading'))) == 'shortlist'
+    ), None)
+    if len(winner_cards) != 1 or shortlist_block is None:
+      return [], None, False
+
+    rows = []
+    winner = self.row_from_card(
+      winner_cards[0],
+      year,
+      RESULT_WINNER,
+      source_url,
+      '.books-single-cover-item-title',
+      '.books-single-cover-item-author')
+    if winner is None:
+      return [], None, False
+    rows.append(winner)
+
+    shortlist_cards = [
+      card
+      for card in shortlist_block.select('.books-list-item')
+      if 'fxb-mod-list-footer-button-wrap' not in card.get('class', ())
+    ]
+    if not shortlist_cards:
+      return [], None, False
+    for card in shortlist_cards:
+      parsed = self.row_from_card(
+        card,
+        year,
+        RESULT_SHORTLISTED,
+        source_url,
+        '.books-list-item-title',
+        '.books-list-item-author')
+      if parsed is None:
+        return [], None, False
+      rows.append(parsed)
+
+    declared_count = self.declared_shortlist_count(shortlist_block)
+    return rows, declared_count, True
+
+  def row_from_card(
+      self, card, year, result, source_url, title_selector, author_selector):
+    title_node = card.select_one(title_selector)
+    author_node = card.select_one(author_selector)
+    if title_node is None or author_node is None:
+      return None
+    title = self.clean_title(self.clean_text(title_node))
+    author = self.clean_author(self.clean_text(author_node))
+    corrected_title = TITLE_CORRECTIONS.get(
+      (str(year), normalize_heading(title), normalize_heading(author)))
+    return self.row(
+      year,
+      corrected_title or title,
+      author,
+      result,
+      source_url)
+
+  def declared_shortlist_count(self, block):
+    intro = self.clean_text(block.select_one('.fxb-books-list-intro'))
+    match = re.search(r'\b(\d{1,2})\s+books?\b', intro, re.I)
+    return int(match.group(1)) if match is not None else None
+
+  def apply_corrections(self, rows):
+    correction_key = (
+      CHARMING_BILLY_CORRECTION['award_year'],
+      normalize_heading(CHARMING_BILLY_CORRECTION['title']),
+      normalize_heading(CHARMING_BILLY_CORRECTION['author']),
+    )
+    existing_keys = {
+      (
+        row.get('award_year'),
+        normalize_heading(row.get('title', '')),
+        normalize_heading(row.get('author', '')),
+      )
+      for row in rows
+    }
+    if correction_key in existing_keys:
+      return rows
+
+    corrected = list(rows)
+    insert_at = next((
+      index
+      for index, row in enumerate(corrected)
+      if (
+        row.get('award_year') == CHARMING_BILLY_CORRECTION['award_year']
+        and row.get('result') != RESULT_WINNER)
+    ), len(corrected))
+    corrected.insert(insert_at, dict(CHARMING_BILLY_CORRECTION))
+    return corrected
+
+  def validate_coverage(self, rows, completed_years, declared_counts):
+    expected_years = set(range(BASELINE_FIRST_YEAR, BASELINE_LAST_YEAR + 1))
+    if set(EXPECTED_BASELINE_COUNTS) != expected_years:
+      raise ValueError(
+        'Dublin Literary Award baseline configuration is invalid.')
+
+    missing_years = sorted(expected_years - completed_years)
+    if missing_years:
+      raise ValueError(
+        'Official Dublin Literary Award history is incomplete; missing years: ' +
+        ', '.join(str(year) for year in missing_years))
+
+    by_year = {}
+    for row in rows:
+      by_year.setdefault(int(row['award_year']), []).append(row)
+    for year, expected_count in EXPECTED_BASELINE_COUNTS.items():
+      year_rows = by_year.get(year, ())
+      winners = sum(row.get('result') == RESULT_WINNER for row in year_rows)
+      if len(year_rows) != expected_count or winners != 1:
+        raise ValueError(
+          f'Official Dublin Literary Award {year} coverage is incomplete '
+          f'(expected {expected_count} rows and one winner).')
+
+    later_completed = sorted(year for year in completed_years if year > BASELINE_LAST_YEAR)
+    if later_completed:
+      expected_later = list(range(BASELINE_LAST_YEAR + 1, later_completed[-1] + 1))
+      if later_completed != expected_later:
+        raise ValueError('Official Dublin Literary Award completed years are not contiguous.')
+    for year in later_completed:
+      year_rows = by_year.get(year, ())
+      winners = sum(row.get('result') == RESULT_WINNER for row in year_rows)
+      if not year_rows or winners != 1:
+        raise ValueError(
+          f'Official Dublin Literary Award {year} is missing usable completed rows.')
+
+    for year, declared_count in declared_counts.items():
+      actual_count = len(by_year.get(year, ()))
+      if actual_count != declared_count:
+        raise ValueError(
+          f'Official Dublin Literary Award {year} declared {declared_count} '
+          f'shortlist books but produced {actual_count}.')
 
 
 class DublinLiteraryAwardWikipediaParser(DublinLiteraryAwardMixin):
@@ -403,6 +518,31 @@ class DublinLiteraryAwardWikipediaParser(DublinLiteraryAwardMixin):
         continue
       rows.extend(self.table_rows(grid[header_index + 1:], header_map, base_url))
     return self.parsed_from_rows(rows, name, base_url)
+
+  def title_parts(self, cell):
+    if cell is None:
+      return []
+    soup = BeautifulSoup(str(cell), 'html.parser')
+    root = soup.find(['td', 'th']) or soup
+    for removable in root.find_all(['script', 'style', 'sup']):
+      removable.decompose()
+
+    parts = []
+    text_nodes = []
+
+    def flush():
+      text = self.clean_title(normalize_line(' '.join(text_nodes)))
+      text_nodes.clear()
+      if text and text not in parts:
+        parts.append(text)
+
+    for descendant in root.descendants:
+      if getattr(descendant, 'name', None) == 'br':
+        flush()
+      elif isinstance(descendant, NavigableString):
+        text_nodes.append(_normalized_text(str(descendant)))
+    flush()
+    return parts
 
   def table_rows(self, grid, header_map, base_url):
     rows = []
@@ -421,14 +561,16 @@ class DublinLiteraryAwardWikipediaParser(DublinLiteraryAwardMixin):
         continue
       title_cell = self.cell_at(row, header_map, 'title')
       author_cell = self.cell_at(row, header_map, 'author')
-      title = self.clean_title(self.clean_text(title_cell))
+      title_parts = self.title_parts(title_cell)
       author = self.clean_author(self.clean_text(author_cell))
+      title = ' / '.join(title_parts)
       parsed = self.row(
         current_year,
         title,
         author,
         result,
-        self.first_link_url(title_cell, base_url) or base_url)
+        base_url,
+        aliases=title_parts if len(title_parts) > 1 else None)
       if parsed is not None:
         rows.append(parsed)
     return rows

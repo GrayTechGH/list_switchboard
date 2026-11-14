@@ -1,0 +1,207 @@
+{
+  "list_id": "hugo_girl",
+  "matches": [
+    {
+      "entry_key": "barrayar|lois mcmaster bujold",
+      "imported_author": [
+        "Lois McMaster Bujold"
+      ],
+      "imported_title": "Barrayar",
+      "matched_at": "2026-07-15T02:35:20Z",
+      "matched_authors": [
+        "Lois McMaster Bujold"
+      ],
+      "matched_book_id": 117,
+      "matched_book_ids": [
+        117
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Lois McMaster Bujold"
+          ],
+          "matched_book_id": 117,
+          "matched_title": "Cordelia's Honor (Books 2-3)"
+        }
+      ],
+      "matched_title": "Cordelia's Honor (Books 2-3)"
+    },
+    {
+      "entry_key": "the vor game|lois mcmaster bujold",
+      "imported_author": [
+        "Lois McMaster Bujold"
+      ],
+      "imported_title": "The Vor Game",
+      "matched_at": "2026-07-15T02:35:50Z",
+      "matched_authors": [
+        "Lois McMaster Bujold"
+      ],
+      "matched_book_id": 11149,
+      "matched_book_ids": [
+        11149
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Lois McMaster Bujold"
+          ],
+          "matched_book_id": 11149,
+          "matched_title": "Young Miles (Books 4, 4.1, 5)"
+        }
+      ],
+      "matched_title": "Young Miles (Books 4, 4.1, 5)"
+    },
+    {
+      "entry_key": "the sword in the stone|t h white",
+      "imported_author": [
+        "T.H. White"
+      ],
+      "imported_title": "The Sword in the Stone",
+      "matched_at": "2026-07-15T03:30:02Z",
+      "matched_authors": [
+        "T. H. White"
+      ],
+      "matched_book_id": 40332,
+      "matched_book_ids": [
+        40332
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "T. H. White"
+          ],
+          "matched_book_id": 40332,
+          "matched_title": "The Sword in the Stone: Essential Modern Classics"
+        }
+      ],
+      "matched_title": "The Sword in the Stone: Essential Modern Classics"
+    },
+    {
+      "entry_key": "blood of the dragon|george r r martin",
+      "imported_author": [
+        "George R. R. Martin"
+      ],
+      "imported_title": "Blood of the Dragon",
+      "matched_at": "2026-07-15T03:32:05Z",
+      "matched_authors": [
+        "George R. R. Martin"
+      ],
+      "matched_book_id": 40333,
+      "matched_book_ids": [
+        40333
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "George R. R. Martin"
+          ],
+          "matched_book_id": 40333,
+          "matched_title": "Fire & Blood"
+        }
+      ],
+      "matched_title": "Fire & Blood"
+    },
+    {
+      "entry_key": "harry potter the goblet of fire|j k rowling",
+      "imported_author": [
+        "J.K. Rowling"
+      ],
+      "imported_title": "Harry Potter & the Goblet of Fire",
+      "matched_at": "2026-07-15T03:44:45Z",
+      "matched_authors": [
+        "J. K. Rowling"
+      ],
+      "matched_book_id": 23769,
+      "matched_book_ids": [
+        23769
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "J. K. Rowling"
+          ],
+          "matched_book_id": 23769,
+          "matched_title": "Harry Potter and the Goblet of Fire"
+        }
+      ],
+      "matched_title": "Harry Potter and the Goblet of Fire"
+    },
+    {
+      "entry_key": "the diamond age|neal stephenson",
+      "imported_author": [
+        "Neal Stephenson"
+      ],
+      "imported_title": "The Diamond Age",
+      "matched_at": "2026-07-15T03:44:45Z",
+      "matched_authors": [
+        "Neal Stephenson"
+      ],
+      "matched_book_id": 34902,
+      "matched_book_ids": [
+        34902
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Neal Stephenson"
+          ],
+          "matched_book_id": 34902,
+          "matched_title": "The Diamond Age: Or, a Young Lady's Illustrated Primer"
+        }
+      ],
+      "matched_title": "The Diamond Age: Or, a Young Lady's Illustrated Primer"
+    },
+    {
+      "entry_key": "the courtship of princess leia|dave wolverton",
+      "imported_author": [
+        "Dave Wolverton"
+      ],
+      "imported_title": "The Courtship of Princess Leia",
+      "matched_at": "2026-07-15T04:12:26Z",
+      "matched_authors": [
+        "Dave Wolverton"
+      ],
+      "matched_book_id": 40337,
+      "matched_book_ids": [
+        40337
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Dave Wolverton"
+          ],
+          "matched_book_id": 40337,
+          "matched_title": "Star Wars: The Courtship of Princess Leia"
+        }
+      ],
+      "matched_title": "Star Wars: The Courtship of Princess Leia"
+    },
+    {
+      "entry_key": "where late the sweet birds sang|kate wilhelm",
+      "imported_author": [
+        "Kate Wilhelm"
+      ],
+      "imported_title": "Where Late the Sweet Birds Sang",
+      "matched_at": "2026-07-15T22:17:41Z",
+      "matched_authors": [
+        "Kate Elliott"
+      ],
+      "matched_book_id": 39828,
+      "matched_book_ids": [
+        39828
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Kate Elliott"
+          ],
+          "matched_book_id": 39828,
+          "matched_title": "The Law of Becoming"
+        }
+      ],
+      "matched_title": "The Law of Becoming"
+    }
+  ],
+  "saved_at": "2026-07-15T22:17:41Z",
+  "schema_version": 2
+}

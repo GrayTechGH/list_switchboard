@@ -11,7 +11,7 @@ from .generic import (
 class UrlFetcherRWARITAAwards(UrlFetcherGeneric):
 
   source_id = 'rwa_rita_awards'
-  NAME = 'RWA RITA Awards'
+  NAME = 'RWA RITA Awards (discontinued)'
   URL = 'https://en.wikipedia.org/wiki/RITA_Award'
   order = 247
   options = {'match_series': False}

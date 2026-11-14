@@ -35,6 +35,16 @@ class UrlFetcherBramStoker(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
 
     return BramStokerParser()
 
+  def create_isfdb_parser(self):
+    try:
+      from calibre_plugins.list_switchboard.parser.bram_stoker import (
+        BramStokerISFDBParser,
+      )
+    except ImportError:
+      from parser.bram_stoker import BramStokerISFDBParser
+
+    return BramStokerISFDBParser()
+
   def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
     return self.parser().parse(
       html,
@@ -120,7 +130,7 @@ class UrlFetcherBramStokerPoetryCollection(UrlFetcherBramStoker):
   source_id = 'bram_stoker_poetry_collection'
   NAME = 'Bram Stoker - Poetry Collection'
   CATEGORY = 'Poetry Collection'
-  CATEGORY_ALIASES = ('poetry collection',)
+  CATEGORY_ALIASES = ('poetry collection', 'poetry')
   ISFDB_CATEGORY_ALIASES = ('Superior Achievement in a Poetry Collection',)
   USE_ISFDB_FALLBACK = True
 
@@ -129,12 +139,11 @@ class UrlFetcherBramStokerGraphicNovel(UrlFetcherBramStoker):
   source_id = 'bram_stoker_graphic_novel'
   NAME = 'Bram Stoker - Graphic Novel'
   CATEGORY = 'Graphic Novel'
-  CATEGORY_ALIASES = ('graphic novel',)
-  ISFDB_CATEGORY_ALIASES = (
-    'Superior Achievement in a Graphic Novel',
-    'Superior Achievement in a Comic Book, Graphic Novel or Other Illustrated Narrative',
+  CATEGORY_ALIASES = (
+    'graphic novel',
+    'illustrated narrative',
+    'comic book, graphic novel, or other illustrated narrative',
   )
-  USE_ISFDB_FALLBACK = True
 
 
 class UrlFetcherBramStokerNonfiction(UrlFetcherBramStoker):
@@ -142,6 +151,14 @@ class UrlFetcherBramStokerNonfiction(UrlFetcherBramStoker):
   NAME = 'Bram Stoker - Nonfiction'
   FILTER_CATEGORIES = (CATEGORY_HORROR_DARK_FICTION, CATEGORY_NONFICTION)
   CATEGORY = 'Nonfiction'
-  CATEGORY_ALIASES = ('nonfiction', 'non fiction', 'non-fiction')
+  CATEGORY_ALIASES = (
+    'nonfiction',
+    'non fiction',
+    'non-fiction',
+    'nonfiction book',
+    'long nonfiction',
+    'long non-fiction',
+    'long non fiction',
+  )
   ISFDB_CATEGORY_ALIASES = ('Superior Achievement in Non-Fiction',)
   USE_ISFDB_FALLBACK = True

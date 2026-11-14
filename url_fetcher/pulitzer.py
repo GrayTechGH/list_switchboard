@@ -1,6 +1,16 @@
 #!/usr/bin/env python
 # vim:fileencoding=UTF-8:ts=2:sw=2:sta:et:sts=2:ai
 
+"""Pulitzer recipes with two transports inside the official source attempt.
+
+Maintenance notes:
+- Validate rendered and legacy HTML separately before replacing the official
+  source with Wikipedia or winner-only Britannica. A successful transport retry
+  remains source rank 0 and must not add a failed-source note.
+"""
+
+import time
+
 from .generic import (
   CATEGORY_LITERARY_GENERAL_FICTION,
   CATEGORY_NONFICTION,
@@ -15,6 +25,11 @@ try:
   )
 except ImportError:
   from parser.source_fallback import SourceAttempt, SourceFallbackRunner
+
+try:
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxSkippedError
+except ImportError:
+  from errors import ImportCancelledError, CamoufoxSkippedError
 
 
 PULITZER_FICTION_URL = 'https://www.pulitzer.org/prize-winners-by-category/219'
@@ -31,6 +46,57 @@ PULITZER_FICTION_BRITANNICA_URL = (
   'https://www.britannica.com/topic/winners-of-the-Pulitzer-Prize-for-fiction-2227349'
 )
 PULITZER_BRITANNICA_URL = 'https://www.britannica.com/topic/Pulitzer-Prize'
+
+
+class PulitzerOfficialAttempt(SourceAttempt):
+
+  def execute(
+      self, fetch_url, log=None, progress=None, before_fetch=None,
+      after_fetch=None, before_parse=None):
+    failures = []
+
+    def report(message):
+      if log is not None:
+        log(message)
+      owner = getattr(fetch_url, '__self__', None)
+      browser_log = getattr(owner, 'debug_camoufox', None)
+      if browser_log is not None:
+        browser_log(message)
+
+    def browser_fetch(url):
+      try:
+        return fetch_url(url, transport='camoufox')
+      except TypeError as err:
+        if 'transport' not in str(err) and 'keyword' not in str(err):
+          raise
+        raise CamoufoxSkippedError('Fetch callback does not support Camoufox.') from err
+
+    for label, transport in (('Camoufox', browser_fetch), ('legacy', fetch_url)):
+      started = time.monotonic()
+      try:
+        report(f'Official Pulitzer transport={label} url={self.url}')
+
+        def announce(url):
+          if before_fetch is not None:
+            before_fetch(url)
+          if progress is not None:
+            progress(0, 1, f'Fetching official Pulitzer via {label}...')
+
+        parsed = super().execute(
+          transport, log=log, progress=progress, before_fetch=announce,
+          after_fetch=after_fetch, before_parse=before_parse)
+        report(
+          f'Official Pulitzer transport={label} accepted entries={len(parsed["entries"])} '
+          f'seconds={time.monotonic() - started:.1f}')
+        return parsed
+      except ImportCancelledError:
+        raise
+      except Exception as err:
+        reason = str(err) or err.__class__.__name__
+        failures.append(f'{label}: {reason}')
+        report(
+          f'Official Pulitzer transport={label} failed seconds={time.monotonic() - started:.1f}: {reason}')
+    raise UrlFetcherError('Official Pulitzer transports failed: ' + '; '.join(failures))
 
 
 class UrlFetcherPulitzerAward(UrlFetcherGeneric):
@@ -69,7 +135,7 @@ class UrlFetcherPulitzerAward(UrlFetcherGeneric):
         PulitzerWikipediaParser,
       )
     return (
-      SourceAttempt(
+      PulitzerOfficialAttempt(
         'Official Pulitzer',
         self.URL,
         lambda html, url, **_kwargs: PulitzerAwardParser().parse(

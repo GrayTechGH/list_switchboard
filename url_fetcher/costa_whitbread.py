@@ -37,7 +37,7 @@ class UrlFetcherCostaWhitbreadNovel(UrlFetcherCostaWhitbreadBase):
     CATEGORY_REGIONAL_NATIONAL_AWARDS,
   )
   source_id = 'costa_whitbread_novel'
-  NAME = 'Costa/Whitbread Book Award - Novel'
+  NAME = 'Costa/Whitbread Book Award - Novel (discontinued)'
   URL = 'https://en.wikipedia.org/wiki/Costa_Book_Award_for_Novel'
   CATEGORY = 'Novel'
 
@@ -49,7 +49,7 @@ class UrlFetcherCostaWhitbreadFirstNovel(UrlFetcherCostaWhitbreadBase):
     CATEGORY_REGIONAL_NATIONAL_AWARDS,
   )
   source_id = 'costa_whitbread_first_novel'
-  NAME = 'Costa/Whitbread Book Award - First Novel'
+  NAME = 'Costa/Whitbread Book Award - First Novel (discontinued)'
   URL = 'https://en.wikipedia.org/wiki/Costa_Book_Award_for_First_Novel'
   CATEGORY = 'First Novel'
 
@@ -61,7 +61,7 @@ class UrlFetcherCostaWhitbreadBiography(UrlFetcherCostaWhitbreadBase):
     CATEGORY_REGIONAL_NATIONAL_AWARDS,
   )
   source_id = 'costa_whitbread_biography'
-  NAME = 'Costa/Whitbread Book Award - Biography'
+  NAME = 'Costa/Whitbread Book Award - Biography (discontinued)'
   URL = 'https://en.wikipedia.org/wiki/Costa_Book_Award_for_Biography'
   CATEGORY = 'Biography'
 
@@ -73,7 +73,7 @@ class UrlFetcherCostaWhitbreadChildrensBook(UrlFetcherCostaWhitbreadBase):
     CATEGORY_REGIONAL_NATIONAL_AWARDS,
   )
   source_id = 'costa_whitbread_childrens_book'
-  NAME = "Costa/Whitbread Book Award - Children's Book"
+  NAME = "Costa/Whitbread Book Award - Children's Book (discontinued)"
   URL = 'https://en.wikipedia.org/wiki/Costa_Book_Award_for_Children%27s_Book'
   CATEGORY = "Children's Book"
 
@@ -87,7 +87,7 @@ class UrlFetcherCostaWhitbreadBookOfTheYear(UrlFetcherCostaWhitbreadBase):
     CATEGORY_REGIONAL_NATIONAL_AWARDS,
   )
   source_id = 'costa_whitbread_book_of_the_year'
-  NAME = 'Costa/Whitbread Book of the Year'
+  NAME = 'Costa/Whitbread Book of the Year (discontinued)'
   URL = 'https://en.wikipedia.org/wiki/Costa_Book_Awards'
   CATEGORY = 'Book of the Year'
 

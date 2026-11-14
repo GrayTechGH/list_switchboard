@@ -19,12 +19,14 @@ from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 
 try:
+  from calibre_plugins.list_switchboard.parser.award_base import is_author_suffix
   from calibre_plugins.list_switchboard.parser.base import ListParserBase
   from calibre_plugins.list_switchboard.parser.generic import (
     matching_schema, normalize_header, row_entry, strip_markdown_link,
     token_header_start,
   )
 except ImportError:
+  from .award_base import is_author_suffix
   from .base import ListParserBase
   from .generic import (
     matching_schema, normalize_header, row_entry, strip_markdown_link,
@@ -66,12 +68,35 @@ class RedditResultsParser(ListParserBase):
     ):
       entries = strategy(soup, text, url, schemas)
       if entries:
+        for entry in entries:
+          entry['authors'] = _split_author_credits(entry['authors'])
         return {
           'name': name,
           'source': {'url': url, 'name': name, 'source_id': ''},
           'entries': entries,
         }
     raise ValueError('Could not find the r/Fantasy results table in the fetched page.')
+
+
+def _split_author_credits(credits):
+  """Split bounded author cells, keeping suffixes and slash pen-name credits."""
+  authors = []
+  for credit in credits:
+    # This source abbreviates the Dyachenkos' shared surname; do not infer
+    # surnames for arbitrary single-word authors or pen names.
+    if re.sub(r'\s+', ' ', credit).casefold() == 'marina and sergey dyachenko':
+      parts = ['Marina Dyachenko', 'Sergey Dyachenko']
+    else:
+      parts = re.split(r'\s+and\s+|\s*,\s*', credit, flags=re.I)
+    for part in parts:
+      part = part.strip()
+      if not part:
+        continue
+      if is_author_suffix(part) and authors:
+        authors[-1] = f'{authors[-1]}, {part}'
+      elif part not in authors:
+        authors.append(part)
+  return authors
 
 
 def _blocked_message(text):

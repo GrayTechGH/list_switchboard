@@ -18,9 +18,9 @@ except ImportError:
   from parser.base import parsed_source
 
 try:
-  from calibre_plugins.list_switchboard.errors import ImportCancelledError
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
 except ImportError:
-  from errors import ImportCancelledError
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 
 class SourceAttempt:
@@ -43,6 +43,22 @@ class SourceAttempt:
     self.usability_check = usability_check
     self.user_agent = user_agent
     self.max_response_bytes = max_response_bytes
+
+  def execute(
+      self, fetch_url, log=None, progress=None, before_fetch=None,
+      after_fetch=None, before_parse=None):
+    """Fetch and validate one source; transport-aware attempts may retry here."""
+    if before_fetch is not None:
+      before_fetch(self.url)
+    html = self.fetch_url(fetch_url)(self.url)
+    if after_fetch is not None:
+      after_fetch(self.url, html)
+    if before_parse is not None:
+      before_parse(self.url)
+    parsed = self.parse(html, fetch_url=fetch_url, log=log, progress=progress)
+    if not self.is_usable(parsed):
+      raise ValueError('parsed result did not contain usable entries')
+    return parsed
 
   def parse(self, html, fetch_url=None, log=None, progress=None):
     parser = self.parser
@@ -155,21 +171,13 @@ class SourceFallbackRunner:
           f'No source fallback attempt exists for forced level {force_fallback_level}.')
     for attempt in attempts:
       try:
-        if before_fetch is not None:
-          before_fetch(attempt.url)
-        html = attempt.fetch_url(fetch_url)(attempt.url)
-        if after_fetch is not None:
-          after_fetch(attempt.url, html)
-        if before_parse is not None:
-          before_parse(attempt.url)
-        parsed = attempt.parse(
-          html, fetch_url=fetch_url, log=log, progress=progress)
-        if not attempt.is_usable(parsed):
-          raise ValueError('parsed result did not contain usable entries')
+        parsed = attempt.execute(
+          fetch_url, log=log, progress=progress, before_fetch=before_fetch,
+          after_fetch=after_fetch, before_parse=before_parse)
         parsed.setdefault('source', parsed_source(parsed.get('name', ''), attempt.url))
         parsed['notes'] = failures + list(parsed.get('notes', ()))
         return parsed
-      except ImportCancelledError:
+      except (ImportCancelledError, CamoufoxRequiredError):
         raise
       except Exception as err:
         reason = str(err) or err.__class__.__name__

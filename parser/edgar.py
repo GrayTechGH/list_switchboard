@@ -8,7 +8,8 @@ Maintenance notes:
 - The official site exposes category pages as paginated tables, but may return
   an anti-bot verification page to normal fetchers. Empty/unusable official
   results are expected to be handled by the fetcher's source fallback.
-- Bold table rows denote winners on the official category pages.
+- The official CSS class `edgar-winner` makes winner rows bold. Older captures
+  may instead contain literal `strong` or `b` elements.
 """
 
 import re
@@ -18,14 +19,14 @@ from lxml import html as lxml_html
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import (
-    AwardParserBase, assign_positions, normalize_heading, normalize_line,
-    strip_publication_notes,
+    AwardParserBase, assign_positions, is_author_suffix, normalize_heading,
+    normalize_line, strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
 except ImportError:
   from .award_base import (
-    AwardParserBase, assign_positions, normalize_heading, normalize_line,
-    strip_publication_notes,
+    AwardParserBase, assign_positions, is_author_suffix, normalize_heading,
+    normalize_line, strip_publication_notes,
   )
   from .generic import position_sort_key
 
@@ -117,13 +118,13 @@ class EdgarAwardsParser(AwardParserBase):
       }
       year = self.year_from_text(values.get('award year'))
       title = self.clean_title(values.get('title'))
-      author = self.clean_author(values.get('author s name'))
-      if year is None or not title or not author:
+      authors = self.clean_authors(values.get('author s name'))
+      if year is None or not title or not authors:
         continue
       rows.append({
         'award_year': str(year),
         'title': title,
-        'author': author,
+        'authors': authors,
         'result': 'winner' if self.row_is_winner(tr) else 'nominee',
         'source_url': source_url,
         'category': values.get('award category') or default_category,
@@ -168,7 +169,11 @@ class EdgarAwardsParser(AwardParserBase):
     ))
 
   def row_is_winner(self, row):
-    return bool(row.xpath('.//strong|.//b'))
+    return bool(row.xpath('''
+      descendant-or-self::*[
+        contains(concat(" ", normalize-space(@class), " "), " edgar-winner ")
+      ] | .//strong | .//b
+    '''))
 
   def direct_cells(self, row, include_headers=False):
     selector = './td|./th' if include_headers else './td'
@@ -187,6 +192,22 @@ class EdgarAwardsParser(AwardParserBase):
 
   def clean_author(self, value):
     return strip_publication_notes(normalize_line(value)).strip()
+
+  def clean_authors(self, value):
+    """Split the bounded official author cell without splitting suffixes."""
+    value = self.clean_author(value)
+    parts = re.split(
+      r'\s*(?:,\s*(?:and\s+)?|;\s*|&|\band\b)\s*', value, flags=re.I)
+    authors = []
+    for part in parts:
+      part = normalize_line(part).strip(' ,;')
+      if not part:
+        continue
+      if is_author_suffix(part) and authors:
+        authors[-1] = f'{authors[-1]}, {part}'
+      elif part not in authors:
+        authors.append(part)
+    return authors
 
   def _log(self, log, label, data):
     if log is not None:

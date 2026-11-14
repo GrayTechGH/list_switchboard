@@ -25,11 +25,12 @@ YEAR_PAGE_URL = re.compile(r'/British_SF_Association_Awards_(\d{4})$')
 CATEGORY_BOUNDARIES = frozenset({
   'novel', 'novels', 'shorter fiction', 'shorter fiction novelette or novella',
   'short fiction', 'translated short fiction', 'fiction for younger readers',
-  'best fiction for younger readers', 'collection', 'collection or anthology',
-  'collection/anthology', 'nonfiction long', 'non fiction long', 'long nonfiction',
-  'long non fiction', 'nonfiction short', 'non fiction short', 'short nonfiction',
-  'short non fiction', 'non-fiction', 'non fiction', 'media presentation',
-  'media', 'artist', 'artwork', 'audio fiction', 'original audio fiction',
+  'best fiction for younger readers', 'book for younger readers', 'collection',
+  'collection or anthology', 'collection/anthology', 'nonfiction long',
+  'non fiction long', 'long nonfiction', 'long non fiction', 'nonfiction short',
+  'non fiction short', 'short nonfiction', 'short non fiction', 'non-fiction',
+  'non fiction', 'nonfiction', 'media presentation', 'media', 'artist', 'artwork',
+  'audio fiction', 'original audio fiction',
 })
 
 

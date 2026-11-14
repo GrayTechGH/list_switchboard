@@ -1,0 +1,958 @@
+{
+  "append_state": {
+    "entry_count": 55,
+    "last_entry_key": "zami a new spelling of my name|audre lorde",
+    "last_position": "55",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Emma Glass"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "1",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Emma Glass",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:1",
+      "theme_or_track": "Isolation reading list",
+      "title": "Rest & Be Thankful"
+    },
+    {
+      "authors": [
+        "Cathy Park Hong"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "2",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Cathy Park Hong",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:2",
+      "theme_or_track": "Isolation reading list",
+      "title": "Minor Feelings"
+    },
+    {
+      "authors": [
+        "Ottessa Moshfegh"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "3",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Ottessa Moshfegh",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:3",
+      "theme_or_track": "Isolation reading list",
+      "title": "My Year Of Rest And Relaxation"
+    },
+    {
+      "authors": [
+        "Jia Tolentino"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "4",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Jia Tolentino",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:4",
+      "theme_or_track": "Isolation reading list",
+      "title": "Trick Mirror"
+    },
+    {
+      "authors": [
+        "Anne Boyer"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "5",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Anne Boyer",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:5",
+      "theme_or_track": "Isolation reading list",
+      "title": "The Undying"
+    },
+    {
+      "authors": [
+        "Rebecca Tam\u00e1s"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "6",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Rebecca Tam\u00e1s",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:6",
+      "theme_or_track": "Compassion",
+      "title": "Witch"
+    },
+    {
+      "authors": [
+        "Emilie Pine"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "7",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Emilie Pine",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:7",
+      "theme_or_track": "Compassion",
+      "title": "Notes To Self"
+    },
+    {
+      "authors": [
+        "Sharon Olds"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "8",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Sharon Olds",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:8",
+      "theme_or_track": "Compassion",
+      "title": "Satan Says"
+    },
+    {
+      "authors": [
+        "Evan S Connell"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "9",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Evan S Connell",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:9",
+      "theme_or_track": "Compassion",
+      "title": "Mrs Bridge"
+    },
+    {
+      "authors": [
+        "Ilya Kaminsky"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "10",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Ilya Kaminsky",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:10",
+      "theme_or_track": "Compassion",
+      "title": "Deaf Republic"
+    },
+    {
+      "authors": [
+        "Lola Olufemi"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "11",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Lola Olufemi",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:11",
+      "theme_or_track": "Rebirth",
+      "title": "Feminism Interrupted"
+    },
+    {
+      "authors": [
+        "Marilynne Robinson"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "12",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Marilynne Robinson",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:12",
+      "theme_or_track": "Rebirth",
+      "title": "Lila"
+    },
+    {
+      "authors": [
+        "Rebecca Solnit"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "13",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Rebecca Solnit",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:13",
+      "theme_or_track": "Rebirth",
+      "title": "Hope In The Dark"
+    },
+    {
+      "authors": [
+        "Elizabeth-Jane Burnett"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "14",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Elizabeth-Jane Burnett",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:14",
+      "theme_or_track": "Rebirth",
+      "title": "The Grassling"
+    },
+    {
+      "authors": [
+        "Bessel Van Der Kolk"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "15",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Bessel Van Der Kolk",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:15",
+      "theme_or_track": "Rebirth",
+      "title": "The Body Keeps The Score"
+    },
+    {
+      "authors": [
+        "Chen Chen"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "16",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Chen Chen",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:16",
+      "theme_or_track": "Rebirth",
+      "title": "When I Grow Up I Want To Be A List Of Further Possibilities"
+    },
+    {
+      "authors": [
+        "David Wojnarowicz"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "17",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "David Wojnarowicz",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:17",
+      "theme_or_track": "Art in an Emergency",
+      "title": "The Waterfront Journals"
+    },
+    {
+      "authors": [
+        "Alain de Botton",
+        "John Armstrong"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "18",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Alain de Botton and John Armstrong",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:18",
+      "theme_or_track": "Art in an Emergency",
+      "title": "Art As Therapy"
+    },
+    {
+      "authors": [
+        "Claudia Rankine"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "19",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Claudia Rankine",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:19",
+      "theme_or_track": "Art in an Emergency",
+      "title": "Citizen: An American Lyric"
+    },
+    {
+      "authors": [
+        "Olivia Laing"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "20",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Olivia Laing",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:20",
+      "theme_or_track": "Art in an Emergency",
+      "title": "Funny Weather: Art in an Emergency"
+    },
+    {
+      "authors": [
+        "Peter McGough"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "21",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Peter McGough",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:21",
+      "theme_or_track": "Art in an Emergency",
+      "title": "I\u2019ve Seen the Future and I\u2019m Not Going"
+    },
+    {
+      "authors": [
+        "Stefan Bollmann"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "22",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Stefan Bollmann",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:22",
+      "theme_or_track": "Art in an Emergency",
+      "title": "Women Who Read Are Dangerous"
+    },
+    {
+      "authors": [],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "23",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:23",
+      "theme_or_track": "Art in an Emergency",
+      "title": "Frida Kahlo\u2019s diary"
+    },
+    {
+      "authors": [
+        "Lucie McKnight Hardy"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "24",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Lucie McKnight Hardy",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:24",
+      "theme_or_track": "Magic & Medicine",
+      "title": "Water Shall Refuse Them"
+    },
+    {
+      "authors": [
+        "Oliver Sacks"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "25",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Oliver Sacks",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:25",
+      "theme_or_track": "Magic & Medicine",
+      "title": "Musicophilia"
+    },
+    {
+      "authors": [
+        "Aja Monet"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "26",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Aja Monet",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:26",
+      "theme_or_track": "Magic & Medicine",
+      "title": "My Mother Was A Freedom Fighter"
+    },
+    {
+      "authors": [
+        "Susan Sontag"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "27",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Susan Sontag",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:27",
+      "theme_or_track": "Magic & Medicine",
+      "title": "Illness as Metaphor"
+    },
+    {
+      "authors": [
+        "Elaine Castillo"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "28",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Elaine Castillo",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:28",
+      "theme_or_track": "Community",
+      "title": "America Is Not The Heart"
+    },
+    {
+      "authors": [
+        "Sin\u00e9ad Gleeson"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "29",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Sin\u00e9ad Gleeson",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:29",
+      "theme_or_track": "Community",
+      "title": "Constellations"
+    },
+    {
+      "authors": [
+        "Yrsa Daley Ward"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "30",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Yrsa Daley Ward",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:30",
+      "theme_or_track": "Community",
+      "title": "Bone"
+    },
+    {
+      "authors": [
+        "Ursula K Le Guin"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "31",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Ursula K Le Guin",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:31",
+      "theme_or_track": "Community",
+      "title": "The Left Hand Of Darkness"
+    },
+    {
+      "authors": [
+        "Jim Crace"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "32",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Jim Crace",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:32",
+      "theme_or_track": "Community",
+      "title": "Harvest"
+    },
+    {
+      "authors": [
+        "Laura Jones",
+        "Heather McDaid"
+      ],
+      "club_name": "Between Two Books",
+      "contributor_role": "editor",
+      "is_reread": false,
+      "position": "33",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "ed. Laura Jones & Heather McDaid",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:33",
+      "theme_or_track": "Resistance",
+      "title": "Nasty Women"
+    },
+    {
+      "authors": [
+        "Carrie Fisher"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "34",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Carrie Fisher",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:34",
+      "theme_or_track": "Resistance",
+      "title": "The Princess Diarist"
+    },
+    {
+      "authors": [
+        "Leslie Jamison"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "35",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Leslie Jamison",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:35",
+      "theme_or_track": "Resistance",
+      "title": "The Recovering"
+    },
+    {
+      "authors": [
+        "Audre Lorde"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "36",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Audre Lorde",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:36",
+      "theme_or_track": "Resistance",
+      "title": "Your Silence Will Not Protect You"
+    },
+    {
+      "authors": [
+        "Nick Estes"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "37",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Nick Estes",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:37",
+      "theme_or_track": "Resistance",
+      "title": "Our History Is The Future"
+    },
+    {
+      "authors": [
+        "Tori Amos"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "38",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Tori Amos",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:38",
+      "theme_or_track": "Resistance",
+      "title": "Resistance"
+    },
+    {
+      "authors": [
+        "Lexi Frieman"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "39",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Lexi Frieman",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:39",
+      "theme_or_track": "Comedy",
+      "title": "Inappropriation"
+    },
+    {
+      "authors": [
+        "Naoise Dolan"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "40",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Naoise Dolan",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:40",
+      "theme_or_track": "Comedy",
+      "title": "Exciting Times"
+    },
+    {
+      "authors": [
+        "Hera Lindsay Bird"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "41",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Hera Lindsay Bird",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:41",
+      "theme_or_track": "Comedy",
+      "title": "Hera Lindsay Bird"
+    },
+    {
+      "authors": [
+        "Samantha Irby"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "42",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Samantha Irby",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:42",
+      "theme_or_track": "Comedy",
+      "title": "Wow, No Thank You"
+    },
+    {
+      "authors": [
+        "Nina Mingya Powles"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "43",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Nina Mingya Powles",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:43",
+      "theme_or_track": "Nourishment",
+      "title": "Tiny Moons"
+    },
+    {
+      "author_credential": "PhD",
+      "authors": [
+        "Laura Thomas"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "44",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Laura Thomas PhD",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:44",
+      "theme_or_track": "Nourishment",
+      "title": "Just Eat It"
+    },
+    {
+      "authors": [],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "45",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "from Cornucopia restaurant",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:45",
+      "theme_or_track": "Nourishment",
+      "title": "Cornucopia"
+    },
+    {
+      "authors": [
+        "JB Priestley"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "46",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "JB Priestley",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:46",
+      "theme_or_track": "Nourishment",
+      "title": "Delight"
+    },
+    {
+      "authors": [
+        "Glennon Doyle"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "47",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Glennon Doyle",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:47",
+      "theme_or_track": "Nourishment",
+      "title": "Carry On, Warrior"
+    },
+    {
+      "authors": [
+        "Ruby Tandoh"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "48",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Ruby Tandoh",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:48",
+      "theme_or_track": "Nourishment",
+      "title": "Eat Up!"
+    },
+    {
+      "authors": [
+        "J Kenji Lopez-Alt"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "49",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "J Kenji Lopez-Alt",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:49",
+      "theme_or_track": "Nourishment",
+      "title": "The Food Lab"
+    },
+    {
+      "authors": [
+        "Samin Nosrat"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "50",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Samin Nosrat",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:50",
+      "theme_or_track": "Nourishment",
+      "title": "Salt, Fat, Acid, Heat"
+    },
+    {
+      "authors": [
+        "Maggie Nelson"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "51",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Maggie Nelson",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:51",
+      "theme_or_track": "Love",
+      "title": "The Argonauts"
+    },
+    {
+      "authors": [
+        "Sally Rooney"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "52",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Sally Rooney",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:52",
+      "theme_or_track": "Love",
+      "title": "Normal People"
+    },
+    {
+      "authors": [
+        "Ocean Vuong"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "53",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Ocean Vuong",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:53",
+      "theme_or_track": "Love",
+      "title": "On Earth We\u2019re Briefly Gorgeous"
+    },
+    {
+      "authors": [
+        "Daphne du Maurier"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "54",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Daphne du Maurier",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:54",
+      "theme_or_track": "Love",
+      "title": "Rebecca"
+    },
+    {
+      "authors": [
+        "Audre Lorde"
+      ],
+      "club_name": "Between Two Books",
+      "is_reread": false,
+      "position": "55",
+      "priority_group": "A",
+      "program_era": "official isolation archive",
+      "raw_author_credit": "Audre Lorde",
+      "recipe_scope": "historical/incomplete isolation and themed lists",
+      "region": "Global",
+      "selection_type": "themed_recommendation",
+      "source_record_id": "between-two-books:isolation:55",
+      "theme_or_track": "Love",
+      "title": "Zami: A New Spelling of my Name"
+    }
+  ],
+  "fetched_at": "2026-07-14T22:02:12Z",
+  "list_id": "between_two_books_isolation_reading_lists",
+  "list_name": "Between Two Books - Isolation & Themed Lists",
+  "match_series": false,
+  "notes": [
+    "Historical/incomplete archive: the official page does not establish a complete dated Between Two Books chronology."
+  ],
+  "parser": "between_two_books_isolation_reading_lists",
+  "schema_version": 2,
+  "source": {
+    "name": "Between Two Books - Isolation & Themed Lists",
+    "source_id": "between_two_books_isolation_reading_lists",
+    "url": "https://betweentwobooks.co.uk/"
+  }
+}

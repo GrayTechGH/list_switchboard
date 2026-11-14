@@ -9,11 +9,30 @@ Maintenance notes:
   history pages, and table/archive pages should still own their page traversal.
 - Helpers here preserve the shared award entry contract used by import recipes:
   title, authors, position, source, award_year, award, category, and result.
+- Amazon retail links are never award provenance. Source-specific parsers
+  should retain the containing page when known; parsed_result() provides a
+  list-level safety net for award parsers that still expose an Amazon URL.
+- Wikipedia work/article links are identity metadata, not award provenance.
+  Wikipedia-backed results retain the containing list page as their source.
+- LibraryThing work links follow the same rule: the containing award/category
+  page is the source that establishes the result.
 - Non-award sources such as book clubs and community lists should inherit from
   ListParserBase directly.
 """
 
 import re
+from urllib.parse import urljoin, urlsplit
+
+DEFAULT_AUTHOR_NAME_SUFFIXES = (
+  'Jr', 'Sr', 'Inc', 'Ph.D', 'Phd', 'MD', 'M.D', 'I', 'II', 'III', 'IV',
+  'Junior', 'Senior',
+)
+AWARD_AUTHOR_SUFFIXES = ('Jr', 'Sr', 'II', 'III', 'IV', 'V')
+
+try:
+  from calibre.utils.config import tweaks
+except ImportError:
+  tweaks = {'author_name_suffixes': DEFAULT_AUTHOR_NAME_SUFFIXES}
 
 try:
   from calibre_plugins.list_switchboard.parser.base import (
@@ -39,6 +58,32 @@ def normalize_heading(value):
   return re.sub(r'\s+', ' ', value).strip()
 
 
+def award_entry_source_url(href, page_url):
+  """Resolve an entry link without replacing award provenance with Amazon."""
+  source_url = urljoin(page_url, href or '')
+  return page_url if is_amazon_retail_url(source_url) else source_url
+
+
+def is_amazon_retail_url(url):
+  hostname = (urlsplit(url or '').hostname or '').casefold().rstrip('.')
+  return (
+    hostname == 'amzn.to' or
+    hostname == 'amzn.eu' or
+    hostname.startswith('amazon.') or
+    '.amazon.' in hostname
+  )
+
+
+def is_wikipedia_url(url):
+  hostname = (urlsplit(url or '').hostname or '').casefold().rstrip('.')
+  return hostname == 'wikipedia.org' or hostname.endswith('.wikipedia.org')
+
+
+def is_librarything_url(url):
+  hostname = (urlsplit(url or '').hostname or '').casefold().rstrip('.')
+  return hostname == 'librarything.com' or hostname.endswith('.librarything.com')
+
+
 def strip_publication_notes(value):
   value = strip_square_notes(normalize_line(value))
   while True:
@@ -59,11 +104,35 @@ def strip_tie_marker(value):
 
 
 def strip_editor_marker(value):
-  return re.sub(r'\s*,?\s*eds?\.?\s*$', '', value, flags=re.I).strip()
+  return re.sub(
+    r'(?:,\s*|\s+)(?:eds?|editors?)\.?\s*$',
+    '',
+    value,
+    flags=re.I).strip()
+
+
+def _normalize_author_suffix(value):
+  return normalize_line(value).casefold().rstrip('.')
+
+
+def _combined_author_suffixes(configured=()):
+  return {
+    _normalize_author_suffix(suffix)
+    for suffix in (
+      *AWARD_AUTHOR_SUFFIXES,
+      *DEFAULT_AUTHOR_NAME_SUFFIXES,
+      *(configured or ()),
+    )
+    if normalize_line(suffix)
+  }
+
+
+AUTHOR_NAME_SUFFIXES = _combined_author_suffixes(
+  tweaks.get('author_name_suffixes', ()))
 
 
 def is_author_suffix(value):
-  return normalize_line(value).casefold().rstrip('.') in {'jr', 'sr', 'ii', 'iii', 'iv', 'v'}
+  return _normalize_author_suffix(value) in AUTHOR_NAME_SUFFIXES
 
 
 def _split_suffix_coauthor(value):
@@ -73,6 +142,20 @@ def _split_suffix_coauthor(value):
     re.I)
   if match is None:
     return None
+  return match.group(1).strip(), match.group(2).strip()
+
+
+def split_title_author_byline(text):
+  """
+  Split a source-contract ``Title by Author`` byline at its final boundary.
+
+  Use this only when the source defines the final `` by `` phrase as the
+  author delimiter. A non-greedy/first split corrupts titles that contain the
+  word themselves, such as ``Never Judge a Lady by Her Cover``.
+  """
+  match = re.match(r'^(.+)\s+by\s+(.+)$', normalize_line(text), re.I)
+  if match is None:
+    return '', ''
   return match.group(1).strip(), match.group(2).strip()
 
 
@@ -206,10 +289,25 @@ class AwardParserBase(ListParserBase):
       **metadata)
 
   def parsed_result(self, name, url, entries, notes=None):
+    normalized_entries = []
+    for entry in entries:
+      source = entry.get('source') if isinstance(entry, dict) else None
+      source_url = source.get('url') if isinstance(source, dict) else ''
+      linked_wikipedia_article = (
+        source_url != url and is_wikipedia_url(url) and is_wikipedia_url(source_url))
+      linked_librarything_work = (
+        source_url != url and is_librarything_url(url) and is_librarything_url(source_url))
+      if (is_amazon_retail_url(source_url) or linked_wikipedia_article or
+          linked_librarything_work):
+        entry = dict(entry)
+        source = dict(source)
+        source['url'] = url
+        entry['source'] = source
+      normalized_entries.append(entry)
     return {
       'name': name,
       'source': parsed_source(name, url),
-      'entries': entries,
+      'entries': normalized_entries,
       'notes': notes or [],
       'match_series': self.MATCH_SERIES,
     }

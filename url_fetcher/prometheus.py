@@ -11,6 +11,7 @@ from .isfdb_fallback import SFADBISFDYAwardFallbackMixin
 
 
 PROMETHEUS_AWARDS_URL = 'https://www.sfadb.com/Prometheus_Awards'
+PROMETHEUS_YOUNG_ADULT_HONOR_ROLL_URL = 'https://www.lfs.org/YAHonorRoll.shtml'
 PROMETHEUS_CATEGORIES = (CATEGORY_SCIENCE_FICTION, CATEGORY_FANTASY)
 
 
@@ -67,15 +68,45 @@ class UrlFetcherPrometheusHallOfFame(UrlFetcherPrometheus):
   ISFDB_CATEGORY_ALIASES = ('Prometheus Hall of Fame Award',)
   USE_ISFDB_FALLBACK = True
 
+  def parse_isfdb_award_type(
+      self, html, base_url, fetch_url=None, log=None, progress=None):
+    parsed = super().parse_isfdb_award_type(
+      html, base_url, fetch_url=fetch_url, log=log, progress=progress)
+    try:
+      from calibre_plugins.list_switchboard.parser.prometheus import (
+        collapse_repeated_hall_of_fame_entries,
+      )
+    except ImportError:
+      from parser.prometheus import collapse_repeated_hall_of_fame_entries
+    parsed['entries'] = collapse_repeated_hall_of_fame_entries(
+      parsed.get('entries', ()))
+    return parsed
 
-class UrlFetcherPrometheusYoungAdultHonorRoll(UrlFetcherPrometheus):
+
+class UrlFetcherPrometheusYoungAdultHonorRoll(UrlFetcherGeneric):
+  URL = PROMETHEUS_YOUNG_ADULT_HONOR_ROLL_URL
+  FETCH_URLS = (PROMETHEUS_YOUNG_ADULT_HONOR_ROLL_URL,)
   source_id = 'prometheus_young_adult_honor_roll'
   NAME = 'Prometheus - Young Adult Honor Roll'
   FILTER_CATEGORIES = (
     CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
   ) + PROMETHEUS_CATEGORIES
-  CATEGORY = 'Young Adult Honor Roll'
-  CATEGORY_ALIASES = ('young adult honor roll',)
+  order = 170
+  options = {
+    'match_series': False,
+  }
+
+  def create_parser(self):
+    try:
+      from calibre_plugins.list_switchboard.parser.prometheus import (
+        PrometheusYoungAdultHonorRollParser,
+      )
+    except ImportError:
+      from parser.prometheus import PrometheusYoungAdultHonorRollParser
+    return PrometheusYoungAdultHonorRollParser()
+
+  def parse(self, html, **_kwargs):
+    return self.parser().parse(html, self.URL, self.NAME)
 
 
 class UrlFetcherPrometheusSpecialAwards(UrlFetcherPrometheus):

@@ -1,0 +1,57 @@
+{
+  "append_state": {
+    "entry_count": 3,
+    "last_entry_key": "norwegian|karin fossum",
+    "last_position": "2007",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Henning Mankell"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2005",
+      "category": "European Crime Novel",
+      "position": "2005",
+      "result": "winner",
+      "title": "Swedish"
+    },
+    {
+      "authors": [
+        "Robert Wilson"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2006",
+      "category": "European Crime Novel",
+      "position": "2006",
+      "result": "winner",
+      "title": "British"
+    },
+    {
+      "authors": [
+        "Karin Fossum"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2007",
+      "category": "European Crime Novel",
+      "position": "2007",
+      "result": "winner",
+      "title": "Norwegian"
+    }
+  ],
+  "fetched_at": "2026-07-17T06:41:23Z",
+  "list_id": "gumshoe_award_european_crime_novel",
+  "list_name": "Gumshoe Award - European Crime Novel (discontinued)",
+  "match_series": false,
+  "notes": [
+    "LibraryThing failed: HTTP Error 403: Forbidden"
+  ],
+  "parser": "gumshoe_award_european_crime_novel",
+  "schema_version": 2,
+  "source": {
+    "name": "Gumshoe Award - European Crime Novel (discontinued)",
+    "source_id": "gumshoe_award_european_crime_novel",
+    "url": "https://en.wikipedia.org/wiki/Gumshoe_Awards"
+  }
+}

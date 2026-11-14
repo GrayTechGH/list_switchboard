@@ -1,0 +1,193 @@
+{
+  "append_state": {
+    "entry_count": 14,
+    "last_entry_key": "the midwatch|judith rossell",
+    "last_position": "2025",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Sulari Gentill"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2012",
+      "category": "Children's Novel",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/A_Decline_in_Prophets"
+      },
+      "title": "A Decline in Prophets"
+    },
+    {
+      "authors": [
+        "Maggie Groff"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2013",
+      "category": "Children's Novel",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Mad_Men,_Bad_Girls_and_the_Guerilla_Knitters_Institute"
+      },
+      "title": "Mad Men, Bad Girls and the Guerilla Knitters Institute"
+    },
+    {
+      "authors": [
+        "Jen Storer"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2014",
+      "category": "Children's Novel",
+      "position": "2014",
+      "result": "winner",
+      "title": "Spooked!"
+    },
+    {
+      "authors": [
+        "Judith Rossell"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2015",
+      "category": "Children's Novel",
+      "position": "2015",
+      "result": "winner",
+      "title": "Withering-By-Sea"
+    },
+    {
+      "authors": [
+        "R. A. Spratt"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2016",
+      "category": "Children's Novel",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Friday_Barnes,_Under_Suspicion"
+      },
+      "title": "Friday Barnes, Under Suspicion"
+    },
+    {
+      "authors": [
+        "Judith Rossell"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2017",
+      "category": "Children's Novel",
+      "position": "2017",
+      "result": "winner",
+      "title": "Wormwood Mire: A Stella Montgomery Intrigue"
+    },
+    {
+      "authors": [
+        "Allison Rushby"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2018",
+      "category": "Children's Novel",
+      "position": "2018",
+      "result": "winner",
+      "title": "The Turnkey"
+    },
+    {
+      "authors": [
+        "Judith Rossell"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2019",
+      "category": "Children's Novel",
+      "position": "2019",
+      "result": "winner",
+      "title": "Wakestone Hall"
+    },
+    {
+      "authors": [
+        "Jenny Blackford"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2020",
+      "category": "Children's Novel",
+      "position": "2020",
+      "result": "winner",
+      "title": "The Girl in the Mirror"
+    },
+    {
+      "authors": [
+        "Lian Tanner"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2021",
+      "category": "Children's Novel",
+      "position": "2021",
+      "result": "winner",
+      "title": "A Clue for Clara"
+    },
+    {
+      "authors": [
+        "Nicki Greenberg"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2022",
+      "category": "Children's Novel",
+      "position": "2022",
+      "result": "winner",
+      "title": "The Detective's Guide to Ocean Travel"
+    },
+    {
+      "authors": [
+        "Charlie Archbold"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2023",
+      "category": "Children's Novel",
+      "position": "2023",
+      "result": "winner",
+      "title": "The Sugarcane Kids and the Red-bottomed Boat"
+    },
+    {
+      "authors": [
+        "Lucinda Gifford"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2024",
+      "category": "Children's Novel",
+      "position": "2024",
+      "result": "winner",
+      "title": "The Wolves of Greycoat Hall"
+    },
+    {
+      "authors": [
+        "Judith Rossell"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2025",
+      "category": "Children's Novel",
+      "position": "2025",
+      "result": "winner",
+      "title": "The Midwatch"
+    }
+  ],
+  "fetched_at": "2026-07-16T15:48:12Z",
+  "list_id": "davitt_award_childrens_novel",
+  "list_name": "Davitt Award - Children's Novel",
+  "match_series": false,
+  "notes": [
+    "LibraryThing failed: HTTP Error 403: Forbidden"
+  ],
+  "parser": "davitt_award_childrens_novel",
+  "schema_version": 2,
+  "source": {
+    "name": "Davitt Award - Children's Novel",
+    "source_id": "davitt_award_childrens_novel",
+    "url": "https://en.wikipedia.org/wiki/Davitt_Award"
+  }
+}

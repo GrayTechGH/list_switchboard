@@ -11,6 +11,9 @@ Maintenance notes:
   list positions and include the discussion year as extra metadata.
 - The parser intentionally targets the online book club archive shape, not
   BookBrowse reviews, reading guides, or recommendation pages.
+- `BookBrowseOnlineBookClubParser` is the production adopter. Keep this base
+  focused on the legacy year-heading contract so current Discourse behavior
+  remains in the source-specific parser.
 """
 
 import re
@@ -22,6 +25,8 @@ try:
   from calibre_plugins.list_switchboard.parser.base import (
     CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS,
     CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,
+    entry_source_object,
+    imported_entry,
     ListParserBase,
     parsed_source,
   )
@@ -31,6 +36,8 @@ except ImportError:
   from .base import (
     CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS,
     CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,
+    entry_source_object,
+    imported_entry,
     ListParserBase,
     parsed_source,
   )
@@ -95,16 +102,15 @@ class BookBrowseBookClubParserBase(ListParserBase):
     title, author = self.title_author_from_text(self.node_text(heading))
     if not title or not author:
       return None
-    entry = {
-      'position': str(position),
-      'title': title,
-      'author': author,
-      'discussion_year': str(year),
-      'category': category,
-    }
     source_url = self.source_url_from_heading(heading, base_url)
-    if source_url:
-      entry['source_url'] = source_url
+    entry = imported_entry(
+      position,
+      title,
+      [author],
+      source=entry_source_object(source_url),
+      discussion_year=str(year),
+      category=category,
+    )
     return entry if self.include_entry(entry, heading) else None
 
   def title_author_from_text(self, text):
@@ -118,7 +124,6 @@ class BookBrowseBookClubParserBase(ListParserBase):
 
   def clean_title(self, value):
     value = normalize_line(value)
-    value = re.sub(r'\s+Book$', '', value, flags=re.I)
     value = re.sub(r'\s+by$', '', value, flags=re.I)
     return value.strip(' "\u201c\u201d,')
 

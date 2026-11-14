@@ -92,7 +92,11 @@ class UrlFetcherBSFAFictionForYoungerReaders(UrlFetcherBSFA):
     CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
   ) + BSFA_SPECULATIVE_REGIONAL_CATEGORIES
   CATEGORY = 'Fiction for Younger Readers'
-  CATEGORY_ALIASES = ('fiction for younger readers', 'best fiction for younger readers')
+  CATEGORY_ALIASES = (
+    'fiction for younger readers',
+    'best fiction for younger readers',
+    'book for younger readers',
+  )
   ISFDB_CATEGORY_ALIASES = ('Best Fiction for Younger Readers',)
   USE_ISFDB_FALLBACK = True
 
@@ -104,6 +108,13 @@ class UrlFetcherBSFALongNonfiction(UrlFetcherBSFA):
     CATEGORY_NONFICTION,
   ) + BSFA_SPECULATIVE_REGIONAL_CATEGORIES
   CATEGORY = 'Long Non-Fiction'
-  CATEGORY_ALIASES = ('long nonfiction', 'long non fiction', 'nonfiction long', 'non fiction long')
+  CATEGORY_ALIASES = (
+    'long nonfiction',
+    'long non fiction',
+    'nonfiction long',
+    'non fiction long',
+    'nonfiction',
+    'non fiction',
+  )
   ISFDB_CATEGORY_ALIASES = ('Best Long Non-Fiction', 'Best Non-Fiction')
   USE_ISFDB_FALLBACK = True

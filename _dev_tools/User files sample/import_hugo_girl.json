@@ -1,0 +1,2291 @@
+{
+  "append_state": {
+    "entry_count": 84,
+    "last_entry_key": "downbelow station|cj cherryh",
+    "last_position": "84",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Orson Scott Card"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2019-05-27",
+      "is_reread": false,
+      "official_sequence": 1,
+      "position": "1",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 1: Ender's Game \u2014 In The Bunner Tuggles",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "5",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-1-enders-game-0",
+      "selection_year": "2019",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-1-enders-game-0"
+      },
+      "source_record_id": "hugogirl:1",
+      "theme_or_track": "main numbered episode",
+      "title": "Ender's Game"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2019-06-05",
+      "is_reread": false,
+      "official_sequence": 2,
+      "position": "2",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 2: Binti \u2014 Those Malevolent Jellyfish",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "6",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-2-binti",
+      "selection_year": "2019",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-2-binti"
+      },
+      "source_record_id": "hugogirl:2",
+      "theme_or_track": "main numbered episode",
+      "title": "Binti"
+    },
+    {
+      "authors": [
+        "Alfred Bester"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2019-07-02",
+      "is_reread": false,
+      "official_sequence": 3,
+      "position": "3",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 3: The Demolished Man \u2014 Crossing the Peep Streams",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "7",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-3-the-demolished-man-peep-stream",
+      "selection_year": "2019",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-3-the-demolished-man-peep-stream"
+      },
+      "source_record_id": "hugogirl:3",
+      "theme_or_track": "main numbered episode",
+      "title": "The Demolished Man"
+    },
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2019-08-07",
+      "is_reread": false,
+      "official_sequence": 4,
+      "position": "4",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 4: American Gods \u2014 We Didn't Quite Understand Everything Here",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "8",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-4-american-gods-we-didnt-quite-understand-everything-here",
+      "selection_year": "2019",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-4-american-gods-we-didnt-quite-understand-everything-here"
+      },
+      "source_record_id": "hugogirl:4",
+      "theme_or_track": "main numbered episode",
+      "title": "American Gods"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2019-09-04",
+      "is_reread": false,
+      "official_sequence": 5,
+      "position": "5",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 5: The Left Hand of Darkness \u2014 TOO MALTY",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "9",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-5-the-left-hand-of-darkness-too-malty",
+      "selection_year": "2019",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-5-the-left-hand-of-darkness-too-malty"
+      },
+      "source_record_id": "hugogirl:5",
+      "theme_or_track": "main numbered episode",
+      "title": "The Left Hand of Darkness"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2019-10-02",
+      "is_reread": false,
+      "official_sequence": 6,
+      "position": "6",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 6: Hominids \u2014 MOON!",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "10",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-6-hominids-moon",
+      "selection_year": "2019",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-6-hominids-moon"
+      },
+      "source_record_id": "hugogirl:6",
+      "theme_or_track": "main numbered episode",
+      "title": "Hominids"
+    },
+    {
+      "authors": [
+        "J.K. Rowling"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2019-11-06",
+      "is_reread": false,
+      "official_sequence": 7,
+      "position": "7",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 7: Harry Potter & the Goblet of Fire \u2014 Snake milk, or, non-dairy snake beverage",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "11",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-7-harry-potter-the-goblet-of-fire-snake-milk-or-non-dairy-snake-beverage",
+      "selection_year": "2019",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-7-harry-potter-the-goblet-of-fire-snake-milk-or-non-dairy-snake-beverage"
+      },
+      "source_record_id": "hugogirl:7",
+      "theme_or_track": "main numbered episode",
+      "title": "Harry Potter & the Goblet of Fire"
+    },
+    {
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2019-12-04",
+      "is_reread": false,
+      "official_sequence": 8,
+      "position": "8",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 8: Rendezvous With Rama \u2014 Big Dumb Object",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "12",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-8-rendezvous-with-rama-big-dumb-object",
+      "selection_year": "2019",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-8-rendezvous-with-rama-big-dumb-object"
+      },
+      "source_record_id": "hugogirl:8",
+      "theme_or_track": "main numbered episode",
+      "title": "Rendezvous with Rama"
+    },
+    {
+      "authors": [
+        "Frank Herbert"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2020-01-01",
+      "is_reread": false,
+      "official_sequence": 9,
+      "position": "9",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 9: Dune \u2014 Lowbacca",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "1",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-9-dune-lowbacca",
+      "selection_year": "2020",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-9-dune-lowbacca"
+      },
+      "source_record_id": "hugogirl:9",
+      "theme_or_track": "main numbered episode",
+      "title": "Dune"
+    },
+    {
+      "authors": [
+        "Philip K. Dick"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2020-02-05",
+      "is_reread": false,
+      "official_sequence": 10,
+      "position": "10",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 10: The Man in the High Castle \u2014 This Could Have Just Been Bullet Points",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "2",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-10-the-man-in-the-high-castle-this-could-have-just-been-bullet-points",
+      "selection_year": "2020",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-10-the-man-in-the-high-castle-this-could-have-just-been-bullet-points"
+      },
+      "source_record_id": "hugogirl:10",
+      "theme_or_track": "main numbered episode",
+      "title": "The Man in the High Castle"
+    },
+    {
+      "authors": [
+        "Orson Scott Card"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2020-03-04",
+      "is_reread": false,
+      "official_sequence": 11,
+      "position": "11",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 11: Speaker for the Dead \u2014 Bugger Duggars",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "3",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-11-speaker-for-the-dead-bugger-duggars",
+      "selection_year": "2020",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-11-speaker-for-the-dead-bugger-duggars"
+      },
+      "source_record_id": "hugogirl:11",
+      "theme_or_track": "main numbered episode",
+      "title": "Speaker for the Dead"
+    },
+    {
+      "authors": [
+        "Emily St"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2020-03-23",
+      "is_reread": false,
+      "official_sequence": 12,
+      "position": "12",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 12: Station Eleven - Social Distancing Special",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "3",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-12-station-eleven-social-distancing-special",
+      "selection_year": "2020",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-12-station-eleven-social-distancing-special"
+      },
+      "source_record_id": "hugogirl:12",
+      "theme_or_track": "main numbered episode",
+      "title": "Station Eleven"
+    },
+    {
+      "authors": [
+        "Paolo Bacigalupi"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2020-05-06",
+      "is_reread": false,
+      "official_sequence": 14,
+      "position": "13",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 14: The Windup Girl: Six Springs a'Kinking",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "5",
+      "selection_type": "episode_selection",
+      "selection_url": "https://traffic.libsyn.com/secure/hugogirl/wind_up_girl_FINAL.mp3",
+      "selection_year": "2020",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://traffic.libsyn.com/secure/hugogirl/wind_up_girl_FINAL.mp3"
+      },
+      "source_record_id": "hugogirl:14",
+      "theme_or_track": "main numbered episode",
+      "title": "The Windup Girl"
+    },
+    {
+      "authors": [
+        "Mary Robinette Kowal"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2020-06-10",
+      "is_reread": false,
+      "official_sequence": 15,
+      "position": "14",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 15: The Calculating Stars - Thousands of Tampons",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "6",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-15-the-calculating-stars-thousands-of-tampons",
+      "selection_year": "2020",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-15-the-calculating-stars-thousands-of-tampons"
+      },
+      "source_record_id": "hugogirl:15",
+      "theme_or_track": "main numbered episode",
+      "title": "The Calculating Stars"
+    },
+    {
+      "authors": [
+        "Ann Leckie"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2020-07-01",
+      "is_reread": false,
+      "official_sequence": 16,
+      "position": "15",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 16: Ancillary Justice - Ship Protecc, Ship Attacc",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "7",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-16-ancillary-justice-ship-protecc-ship-attacc",
+      "selection_year": "2020",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-16-ancillary-justice-ship-protecc-ship-attacc"
+      },
+      "source_record_id": "hugogirl:16",
+      "theme_or_track": "main numbered episode",
+      "title": "Ancillary Justice"
+    },
+    {
+      "authors": [
+        "Susanna Clarke"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2020-08-05",
+      "is_reread": false,
+      "official_sequence": 17,
+      "position": "16",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 17: Jonathan Strange & Mr Norrell - Rad Bromance",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "8",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-17-jonathan-strange-mr-norrell",
+      "selection_year": "2020",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-17-jonathan-strange-mr-norrell"
+      },
+      "source_record_id": "hugogirl:17",
+      "theme_or_track": "main numbered episode",
+      "title": "Jonathan Strange & Mr Norrell"
+    },
+    {
+      "authors": [
+        "Dave Wolverton"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2020-09-02",
+      "is_reread": false,
+      "official_sequence": 18,
+      "position": "17",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 18: The Courtship of Princess Leia - Toyota Corellia",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "9",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-18-the-courtship-of-princess-leia-toyota-corellia",
+      "selection_year": "2020",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-18-the-courtship-of-princess-leia-toyota-corellia"
+      },
+      "source_record_id": "hugogirl:18",
+      "theme_or_track": "main numbered episode",
+      "title": "The Courtship of Princess Leia"
+    },
+    {
+      "authors": [
+        "Walter H. Miller"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2020-10-07",
+      "is_reread": false,
+      "official_sequence": 19,
+      "position": "18",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 19 - A Canticle for Leibowitz: Old Tumater Woman",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "10",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-19-a-canticle-for-leibowitz-old-tumater-woman",
+      "selection_year": "2020",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-19-a-canticle-for-leibowitz-old-tumater-woman"
+      },
+      "source_record_id": "hugogirl:19",
+      "theme_or_track": "main numbered episode",
+      "title": "A Canticle for Leibowitz"
+    },
+    {
+      "authors": [
+        "Fritz Leiber"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2020-10-27",
+      "is_reread": false,
+      "official_sequence": 20,
+      "position": "19",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 20 - Conjure Wife: Beefy",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "10",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-20-conjure-wife-beefy",
+      "selection_year": "2020",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-20-conjure-wife-beefy"
+      },
+      "source_record_id": "hugogirl:20",
+      "theme_or_track": "main numbered episode",
+      "title": "Conjure Wife"
+    },
+    {
+      "authors": [
+        "Philip Jos\u00e9 Farmer"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2020-11-04",
+      "is_reread": false,
+      "official_sequence": 21,
+      "position": "20",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 21 - To Your Scattered Bodies Go: The Crossover",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "11",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-21-to-your-scattered-bodies-go-the-crossover",
+      "selection_year": "2020",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-21-to-your-scattered-bodies-go-the-crossover"
+      },
+      "source_record_id": "hugogirl:21",
+      "theme_or_track": "main numbered episode",
+      "title": "To Your Scattered Bodies Go"
+    },
+    {
+      "authors": [
+        "N.K. Jemisin"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2020-12-02",
+      "is_reread": false,
+      "official_sequence": 22,
+      "position": "21",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 22 - The Fifth Season: Orogenous Zones",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "12",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-22-the-fifth-season-orogenous-zones",
+      "selection_year": "2020",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-22-the-fifth-season-orogenous-zones"
+      },
+      "source_record_id": "hugogirl:22",
+      "theme_or_track": "main numbered episode",
+      "title": "The Fifth Season"
+    },
+    {
+      "authors": [
+        "N. K. Jemisin"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2021-01-06",
+      "is_reread": false,
+      "official_sequence": 23,
+      "position": "22",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 23 - The Obelisk Gate: Butter Marble",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "1",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-23-the-obelisk-gate-butter-marble",
+      "selection_year": "2021",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-23-the-obelisk-gate-butter-marble"
+      },
+      "source_record_id": "hugogirl:23",
+      "theme_or_track": "main numbered episode",
+      "title": "The Obelisk Gate"
+    },
+    {
+      "authors": [
+        "N. K. Jemisin"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2021-02-03",
+      "is_reread": false,
+      "official_sequence": 24,
+      "position": "23",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 24 - The Stone Sky: Hippopotabus",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "2",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-24-the-stone-sky-hippopotabus",
+      "selection_year": "2021",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-24-the-stone-sky-hippopotabus"
+      },
+      "source_record_id": "hugogirl:24",
+      "theme_or_track": "main numbered episode",
+      "title": "The Stone Sky"
+    },
+    {
+      "authors": [
+        "Anne McCaffrey"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2021-03-03",
+      "is_reread": false,
+      "official_sequence": 25,
+      "position": "24",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 25 - Dragonflight: Misogynist Moments",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "3",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-25-dragonflight-misogynist-moments",
+      "selection_year": "2021",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-25-dragonflight-misogynist-moments"
+      },
+      "source_record_id": "hugogirl:25",
+      "theme_or_track": "main numbered episode",
+      "title": "Dragonflight"
+    },
+    {
+      "authors": [
+        "J. R. R. Tolkien"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2021-04-01",
+      "is_reread": false,
+      "official_sequence": 26,
+      "position": "25",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 26 - The Fellowship of the Ring: My Favorite Mordor",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "4",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-26-the-fellowship-of-the-ring-my-favorite-mordor",
+      "selection_year": "2021",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-26-the-fellowship-of-the-ring-my-favorite-mordor"
+      },
+      "source_record_id": "hugogirl:26",
+      "theme_or_track": "main numbered episode",
+      "title": "The Fellowship of the Ring"
+    },
+    {
+      "authors": [
+        "Robert Heinlein"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2021-04-07",
+      "is_reread": false,
+      "official_sequence": 27,
+      "position": "26",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 27 - Starship Troopers: 2 Bunner 2 Tuggles",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "4",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-27-starship-troopers-2-bunner-2-tuggles",
+      "selection_year": "2021",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-27-starship-troopers-2-bunner-2-tuggles"
+      },
+      "source_record_id": "hugogirl:27",
+      "theme_or_track": "main numbered episode",
+      "title": "Starship Troopers"
+    },
+    {
+      "authors": [
+        "Arkady Martine"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2021-05-05",
+      "is_reread": false,
+      "official_sequence": 28,
+      "position": "27",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 28 - A Memory Called Empire: Emma Jo",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "5",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-28-a-memory-called-empire-emma-jo",
+      "selection_year": "2021",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-28-a-memory-called-empire-emma-jo"
+      },
+      "source_record_id": "hugogirl:28",
+      "theme_or_track": "main numbered episode",
+      "title": "A Memory Called Empire"
+    },
+    {
+      "authors": [
+        "Dan Simmons"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2021-06-02",
+      "is_reread": false,
+      "official_sequence": 29,
+      "position": "28",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 29 - Hyperion: A Maxisode!",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "6",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-29-hyperion-a-maxisode",
+      "selection_year": "2021",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-29-hyperion-a-maxisode"
+      },
+      "source_record_id": "hugogirl:29",
+      "theme_or_track": "main numbered episode",
+      "title": "Hyperion"
+    },
+    {
+      "authors": [
+        "China Mi\u00e9ville"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2021-07-07",
+      "is_reread": false,
+      "official_sequence": 30,
+      "position": "29",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 30 - The City & the City: Earl Kerma",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "7",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-30-the-city-the-city-earl-kerma",
+      "selection_year": "2021",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-30-the-city-the-city-earl-kerma"
+      },
+      "source_record_id": "hugogirl:30",
+      "theme_or_track": "main numbered episode",
+      "title": "The City & the City"
+    },
+    {
+      "authors": [
+        "Martha Wells"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2021-08-04",
+      "is_reread": false,
+      "official_sequence": 31,
+      "position": "30",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 31 - Murderbot Diaries - All Systems Red: Jahoob Talk",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "8",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-31-murderbot-diaries-all-systems-red-jahoob-talk",
+      "selection_year": "2021",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-31-murderbot-diaries-all-systems-red-jahoob-talk"
+      },
+      "source_record_id": "hugogirl:31",
+      "theme_or_track": "main numbered episode",
+      "title": "All Systems Red"
+    },
+    {
+      "authors": [
+        "Cixin Liu"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2021-09-01",
+      "is_reread": false,
+      "official_sequence": 32,
+      "position": "31",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 32 - The Three-Body Problem: Bottle, Bertle",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "9",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-32-the-three-body-problem-bottle-bertle",
+      "selection_year": "2021",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-32-the-three-body-problem-bottle-bertle"
+      },
+      "source_record_id": "hugogirl:32",
+      "theme_or_track": "main numbered episode",
+      "title": "The Three-Body Problem"
+    },
+    {
+      "authors": [
+        "Dorothy Macardle"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2021-10-06",
+      "is_reread": false,
+      "official_sequence": 33,
+      "position": "32",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 33 - The Uninvited: Shirt & Trousers",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "10",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-33-the-uninvited-shirt-trousers",
+      "selection_year": "2021",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-33-the-uninvited-shirt-trousers"
+      },
+      "source_record_id": "hugogirl:33",
+      "theme_or_track": "main numbered episode",
+      "title": "The Uninvited"
+    },
+    {
+      "authors": [
+        "Isaac Asimov"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2021-11-03",
+      "is_reread": false,
+      "official_sequence": 34,
+      "position": "33",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 34 - Foundation: Tokyo Drift",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "11",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-34-foundation-tokyo-drift",
+      "selection_year": "2021",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-34-foundation-tokyo-drift"
+      },
+      "source_record_id": "hugogirl:34",
+      "theme_or_track": "main numbered episode",
+      "title": "Foundation"
+    },
+    {
+      "authors": [
+        "Joe Haldeman"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2021-12-01",
+      "is_reread": false,
+      "official_sequence": 35,
+      "position": "34",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 35 - The Forever War: The Turd Dimension",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "12",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-35-the-forever-war-the-turd-dimension",
+      "selection_year": "2021",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-35-the-forever-war-the-turd-dimension"
+      },
+      "source_record_id": "hugogirl:35",
+      "theme_or_track": "main numbered episode",
+      "title": "The Forever War"
+    },
+    {
+      "authors": [
+        "James SA Corey"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2022-01-05",
+      "is_reread": false,
+      "official_sequence": 36,
+      "position": "35",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 36 - Leviathan Wakes: Not Leviathan's Wake",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "1",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-36-leviathan-wakes-not-leviathans-wake",
+      "selection_year": "2022",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-36-leviathan-wakes-not-leviathans-wake"
+      },
+      "source_record_id": "hugogirl:36",
+      "theme_or_track": "main numbered episode",
+      "title": "Leviathan Wakes"
+    },
+    {
+      "authors": [
+        "Lois McMaster Bujold"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2022-02-02",
+      "is_reread": false,
+      "official_sequence": 37,
+      "position": "36",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 37 - Barrayar: Vorld of Vorkraft",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "2",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-37-barrayar-vorld-of-vorkraft",
+      "selection_year": "2022",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-37-barrayar-vorld-of-vorkraft"
+      },
+      "source_record_id": "hugogirl:37",
+      "theme_or_track": "main numbered episode",
+      "title": "Barrayar"
+    },
+    {
+      "authors": [
+        "Larry Niven"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2022-03-02",
+      "is_reread": false,
+      "official_sequence": 38,
+      "position": "37",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 38 - Ringworld: Tasp That Ass",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "3",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-38-ringworld-tasp-that-ass",
+      "selection_year": "2022",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-38-ringworld-tasp-that-ass"
+      },
+      "source_record_id": "hugogirl:38",
+      "theme_or_track": "main numbered episode",
+      "title": "Ringworld"
+    },
+    {
+      "authors": [
+        "Vonda McIntyre"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2022-04-06",
+      "is_reread": false,
+      "official_sequence": 39,
+      "position": "38",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 39 - Dreamsnake: An Endorsement Nonetheless",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "4",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-39-dreamsnake-an-endorsement-nonetheless",
+      "selection_year": "2022",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-39-dreamsnake-an-endorsement-nonetheless"
+      },
+      "source_record_id": "hugogirl:39",
+      "theme_or_track": "main numbered episode",
+      "title": "Dreamsnake"
+    },
+    {
+      "authors": [
+        "Karin Boye"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2022-05-04",
+      "is_reread": false,
+      "official_sequence": 40,
+      "position": "39",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 40 - Kallocain: Fun with Fascism",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "5",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-40-kallocain-fun-with-fascism",
+      "selection_year": "2022",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-40-kallocain-fun-with-fascism"
+      },
+      "source_record_id": "hugogirl:40",
+      "theme_or_track": "main numbered episode",
+      "title": "Kallocain"
+    },
+    {
+      "authors": [
+        "Dan Simmons"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2022-06-01",
+      "is_reread": false,
+      "official_sequence": 41,
+      "position": "40",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 41 - The Terror: Our Problematic Fave",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "6",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-41-the-terror-our-problematic-fave",
+      "selection_year": "2022",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-41-the-terror-our-problematic-fave"
+      },
+      "source_record_id": "hugogirl:41",
+      "theme_or_track": "main numbered episode",
+      "title": "The Terror"
+    },
+    {
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2022-07-06",
+      "is_reread": false,
+      "official_sequence": 42,
+      "position": "41",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 42 - 2001: A Space Odyssey: Friends of Hal",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "7",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-42-2001-a-space-odyssey-friends-of-hal",
+      "selection_year": "2022",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-42-2001-a-space-odyssey-friends-of-hal"
+      },
+      "source_record_id": "hugogirl:42",
+      "theme_or_track": "main numbered episode",
+      "title": "2001: A Space Odyssey"
+    },
+    {
+      "authors": [
+        "Jo Walton"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2022-08-03",
+      "is_reread": false,
+      "official_sequence": 43,
+      "position": "42",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 43 - Among Others: Doing is Doing!",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "8",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-43-among-others-doing-is-doing",
+      "selection_year": "2022",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-43-among-others-doing-is-doing"
+      },
+      "source_record_id": "hugogirl:43",
+      "theme_or_track": "main numbered episode",
+      "title": "Among Others"
+    },
+    {
+      "authors": [
+        "Samuel R. Delany"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2022-10-05",
+      "is_reread": false,
+      "official_sequence": 45,
+      "position": "43",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 45- Stars in My Pocket Like Grains of Sand: Taints & Feints",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "10",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-45-stars-in-my-pocket-like-grains-of-sand-taints-feints",
+      "selection_year": "2022",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-45-stars-in-my-pocket-like-grains-of-sand-taints-feints"
+      },
+      "source_record_id": "hugogirl:45",
+      "theme_or_track": "main numbered episode",
+      "title": "Stars in My Pocket Like Grains of Sand"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2022-11-02",
+      "is_reread": false,
+      "official_sequence": 47,
+      "position": "44",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 47 - The Word for World is Forest: Little Green Men",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "11",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-47-the-word-for-world-is-forest-little-green-men",
+      "selection_year": "2022",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-47-the-word-for-world-is-forest-little-green-men"
+      },
+      "source_record_id": "hugogirl:47",
+      "theme_or_track": "main numbered episode",
+      "title": "The Word for World Is Forest"
+    },
+    {
+      "authors": [
+        "James Tiptree Jr."
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2022-11-09",
+      "is_reread": false,
+      "official_sequence": 48,
+      "position": "45",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 48 - Houston, Houston, Do You Read?: Clone Wars",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "11",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-48-houston-houston-do-you-read-clone-wars",
+      "selection_year": "2022",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-48-houston-houston-do-you-read-clone-wars"
+      },
+      "source_record_id": "hugogirl:48",
+      "theme_or_track": "main numbered episode",
+      "title": "Houston, Houston, Do You Read?"
+    },
+    {
+      "authors": [
+        "Connie Willis"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2022-11-16",
+      "is_reread": false,
+      "official_sequence": 49,
+      "position": "46",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 49 - The Last of the Winnebagos: Spaceballs",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "11",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-49-the-last-of-the-winnebagos-spaceballs",
+      "selection_year": "2022",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-49-the-last-of-the-winnebagos-spaceballs"
+      },
+      "source_record_id": "hugogirl:49",
+      "theme_or_track": "main numbered episode",
+      "title": "The Last of the Winnebagos"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2022-11-23",
+      "is_reread": false,
+      "official_sequence": 50,
+      "position": "47",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 50 - The Emperor's Soul: Kuzco's Poison",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "11",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-50-the-emperors-soul-kuzcos-poison",
+      "selection_year": "2022",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-50-the-emperors-soul-kuzcos-poison"
+      },
+      "source_record_id": "hugogirl:50",
+      "theme_or_track": "main numbered episode",
+      "title": "The Emperor's Soul"
+    },
+    {
+      "authors": [
+        "William Gibson"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2022-12-07",
+      "is_reread": false,
+      "official_sequence": 51,
+      "position": "48",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 51 - Neuromancer: Peppered with Breasts",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "12",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-51-neuromancer-peppered-with-breasts",
+      "selection_year": "2022",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-51-neuromancer-peppered-with-breasts"
+      },
+      "source_record_id": "hugogirl:51",
+      "theme_or_track": "main numbered episode",
+      "title": "Neuromancer"
+    },
+    {
+      "authors": [
+        "Fritz Leiber"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2023-01-03",
+      "is_reread": false,
+      "official_sequence": 52,
+      "position": "49",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 52 - The Big Time: Maintainer Majora",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "1",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-52-the-big-time-maintainer-majora",
+      "selection_year": "2023",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-52-the-big-time-maintainer-majora"
+      },
+      "source_record_id": "hugogirl:52",
+      "theme_or_track": "main numbered episode",
+      "title": "The Big Time"
+    },
+    {
+      "authors": [
+        "Connie Willis"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2023-02-01",
+      "is_reread": false,
+      "official_sequence": 53,
+      "position": "50",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 53: Doomsday Book: Apocalyptic!",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "2",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-53-doomsday-book-apocalyptic",
+      "selection_year": "2023",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-53-doomsday-book-apocalyptic"
+      },
+      "source_record_id": "hugogirl:53",
+      "theme_or_track": "main numbered episode",
+      "title": "Doomsday Book"
+    },
+    {
+      "authors": [
+        "CJ Cherryh"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2023-03-01",
+      "is_reread": false,
+      "official_sequence": 54,
+      "position": "51",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 54 - Cyteen: Tape Worm",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "3",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-54-cyteen-tape-worm",
+      "selection_year": "2023",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-54-cyteen-tape-worm"
+      },
+      "source_record_id": "hugogirl:54",
+      "theme_or_track": "main numbered episode",
+      "title": "Cyteen"
+    },
+    {
+      "authors": [
+        "Kate Wilhelm"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2023-04-05",
+      "is_reread": false,
+      "official_sequence": 55,
+      "position": "52",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 55 - Where Late the Sweet Birds Sang: OH NO MAT PLAY",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "4",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-54-where-late-the-sweet-birds-sang-oh-no-mat-play",
+      "selection_year": "2023",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-54-where-late-the-sweet-birds-sang-oh-no-mat-play"
+      },
+      "source_record_id": "hugogirl:55",
+      "theme_or_track": "main numbered episode",
+      "title": "Where Late the Sweet Birds Sang"
+    },
+    {
+      "authors": [
+        "Michael Chabon"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2023-05-03",
+      "is_reread": false,
+      "official_sequence": 56,
+      "position": "53",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 56 - The Yiddish Policemen's Union: Too Much Pizza",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "5",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-56-the-yiddish-policemens-union-too-much-pizza",
+      "selection_year": "2023",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-56-the-yiddish-policemens-union-too-much-pizza"
+      },
+      "source_record_id": "hugogirl:56",
+      "theme_or_track": "main numbered episode",
+      "title": "The Yiddish Policemen's Union"
+    },
+    {
+      "authors": [
+        "T.H. White"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2023-06-07",
+      "is_reread": false,
+      "official_sequence": 57,
+      "position": "54",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 57 - The Sword in the Stone: Cheeky Fantasy",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "6",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-57-the-sword-in-the-stone-cheeky-fantasy",
+      "selection_year": "2023",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-57-the-sword-in-the-stone-cheeky-fantasy"
+      },
+      "source_record_id": "hugogirl:57",
+      "theme_or_track": "main numbered episode",
+      "title": "The Sword in the Stone"
+    },
+    {
+      "authors": [
+        "Connie Willis"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2023-07-05",
+      "is_reread": false,
+      "official_sequence": 58,
+      "position": "55",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 58 - To Say Nothing of the Dog: Technical Difficulties",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "7",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-58-to-say-nothing-of-the-dog-technical-difficulties",
+      "selection_year": "2023",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-58-to-say-nothing-of-the-dog-technical-difficulties"
+      },
+      "source_record_id": "hugogirl:58",
+      "theme_or_track": "main numbered episode",
+      "title": "To Say Nothing of the Dog"
+    },
+    {
+      "authors": [
+        "Robert Heinlein"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2023-08-02",
+      "is_reread": false,
+      "official_sequence": 59,
+      "position": "56",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 59 - The Moon is a Harsh Mistress: Funny-Once",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "8",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-59-the-moon-is-a-harsh-mistress-funny-once",
+      "selection_year": "2023",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-59-the-moon-is-a-harsh-mistress-funny-once"
+      },
+      "source_record_id": "hugogirl:59",
+      "theme_or_track": "main numbered episode",
+      "title": "The Moon is a Harsh Mistress"
+    },
+    {
+      "authors": [
+        "Joan D. Vinge"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2023-09-06",
+      "is_reread": false,
+      "official_sequence": 60,
+      "position": "57",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 60 - The Snow Queen: Kind of a Janet",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "9",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-60-the-snow-queen-kind-of-a-janet",
+      "selection_year": "2023",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-60-the-snow-queen-kind-of-a-janet"
+      },
+      "source_record_id": "hugogirl:60",
+      "theme_or_track": "main numbered episode",
+      "title": "The Snow Queen"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2023-10-04",
+      "is_reread": false,
+      "official_sequence": 61,
+      "position": "58",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 61 - Carrie: Dirtypillows Talk",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "10",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-61-carrie-dirtypillows-talk",
+      "selection_year": "2023",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-61-carrie-dirtypillows-talk"
+      },
+      "source_record_id": "hugogirl:61",
+      "theme_or_track": "main numbered episode",
+      "title": "Carrie"
+    },
+    {
+      "authors": [
+        "George R. R. Martin"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2023-11-01",
+      "is_reread": false,
+      "official_sequence": 62,
+      "position": "59",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 62 - Blood of the Dragon: Dugs Talk",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "11",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-62-blood-of-the-dragon-dugs-talk",
+      "selection_year": "2023",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-62-blood-of-the-dragon-dugs-talk"
+      },
+      "source_record_id": "hugogirl:62",
+      "theme_or_track": "main numbered episode",
+      "title": "Blood of the Dragon"
+    },
+    {
+      "authors": [
+        "Roger Zelazny"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2023-12-06",
+      "is_reread": false,
+      "official_sequence": 63,
+      "position": "60",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 63 - Lord of Light: We Get Slizzard",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "12",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-63-lord-of-light-we-get-slizzard",
+      "selection_year": "2023",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-63-lord-of-light-we-get-slizzard"
+      },
+      "source_record_id": "hugogirl:63",
+      "theme_or_track": "main numbered episode",
+      "title": "Lord of Light"
+    },
+    {
+      "authors": [
+        "Robert Charles Wilson"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2024-01-03",
+      "is_reread": false,
+      "official_sequence": 64,
+      "position": "61",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 64 - Spin: Eating Disorder Lawton",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "1",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-64-spin-eating-disorder-lawton",
+      "selection_year": "2024",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-64-spin-eating-disorder-lawton"
+      },
+      "source_record_id": "hugogirl:64",
+      "theme_or_track": "main numbered episode",
+      "title": "Spin"
+    },
+    {
+      "authors": [
+        "Mary Doria Russell"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2024-02-07",
+      "is_reread": false,
+      "official_sequence": 65,
+      "position": "62",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 65 - The Sparrow: Trigger Warning",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "2",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-65-the-sparrow-trigger-warning",
+      "selection_year": "2024",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-65-the-sparrow-trigger-warning"
+      },
+      "source_record_id": "hugogirl:65",
+      "theme_or_track": "main numbered episode",
+      "title": "The Sparrow"
+    },
+    {
+      "authors": [
+        "Philip Jos\u00e9 Farmer"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2024-03-06",
+      "is_reread": false,
+      "official_sequence": 66,
+      "position": "63",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 66 - The Wind Whales of Ishmael: #NotMyIshmael",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "3",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-66-the-wind-whales-of-ishmael-notmyishmael",
+      "selection_year": "2024",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-66-the-wind-whales-of-ishmael-notmyishmael"
+      },
+      "source_record_id": "hugogirl:66",
+      "theme_or_track": "main numbered episode",
+      "title": "The Wind Whales of Ishmael"
+    },
+    {
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2024-05-01",
+      "is_reread": false,
+      "official_sequence": 68,
+      "position": "64",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 68 - The Fountains of Paradise: Battery Dingleberry",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "5",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-68-the-fountains-of-paradise-battery-dingleberry",
+      "selection_year": "2024",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-68-the-fountains-of-paradise-battery-dingleberry"
+      },
+      "source_record_id": "hugogirl:68",
+      "theme_or_track": "main numbered episode",
+      "title": "The Fountains of Paradise"
+    },
+    {
+      "authors": [
+        "Lois McMaster Bujold"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2024-06-05",
+      "is_reread": false,
+      "official_sequence": 69,
+      "position": "65",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 69 - Mirror Dance: Res-erection",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "6",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-69-mirror-dance-res-erection",
+      "selection_year": "2024",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-69-mirror-dance-res-erection"
+      },
+      "source_record_id": "hugogirl:69",
+      "theme_or_track": "main numbered episode",
+      "title": "Mirror Dance"
+    },
+    {
+      "authors": [
+        "Amal El-Mohtar",
+        "Max Gladstone"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2024-08-01",
+      "is_reread": false,
+      "official_sequence": 71,
+      "position": "66",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 71 - This is How You Lose the Time War: Blue & Red's Excellent Adventure",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "8",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-71-this-is-how-you-lose-the-time-war-blue-reds-excellent-adventure",
+      "selection_year": "2024",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-71-this-is-how-you-lose-the-time-war-blue-reds-excellent-adventure"
+      },
+      "source_record_id": "hugogirl:71",
+      "theme_or_track": "main numbered episode",
+      "title": "This Is How You Lose the Time War"
+    },
+    {
+      "authors": [
+        "Vernor Vinge"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2024-09-04",
+      "is_reread": false,
+      "official_sequence": 72,
+      "position": "67",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 72 - A Fire Upon the Deep: Scrotum Riders",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "9",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-72-a-fire-upon-the-deep-scrotum-riders",
+      "selection_year": "2024",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-72-a-fire-upon-the-deep-scrotum-riders"
+      },
+      "source_record_id": "hugogirl:72",
+      "theme_or_track": "main numbered episode",
+      "title": "A Fire Upon the Deep"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2024-10-02",
+      "is_reread": false,
+      "official_sequence": 73,
+      "position": "68",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 73 - The Dispossessed: Stop Saying T1tties!",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "10",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-73-the-dispossessed-stop-saying-t1tties",
+      "selection_year": "2024",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-73-the-dispossessed-stop-saying-t1tties"
+      },
+      "source_record_id": "hugogirl:73",
+      "theme_or_track": "main numbered episode",
+      "title": "The Dispossessed"
+    },
+    {
+      "authors": [
+        "Kim Stanley Robinson"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2024-12-04",
+      "is_reread": false,
+      "official_sequence": 75,
+      "position": "69",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 75 - Red Mars: Other Effluvia",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "12",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-75-red-mars-other-effluvia",
+      "selection_year": "2024",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-75-red-mars-other-effluvia"
+      },
+      "source_record_id": "hugogirl:75",
+      "theme_or_track": "main numbered episode",
+      "title": "Red Mars"
+    },
+    {
+      "authors": [
+        "Vernor Vinge"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2025-01-01",
+      "is_reread": false,
+      "official_sequence": 76,
+      "position": "70",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 76 - A Deepness in the Sky: That's Just Like, Your Opinion, Cobber",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "1",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-76-a-deepness-in-the-sky-thats-just-like-your-opinion-cobber",
+      "selection_year": "2025",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-76-a-deepness-in-the-sky-thats-just-like-your-opinion-cobber"
+      },
+      "source_record_id": "hugogirl:76",
+      "theme_or_track": "main numbered episode",
+      "title": "A Deepness in the Sky"
+    },
+    {
+      "authors": [
+        "Fritz Leiber"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2025-02-08",
+      "is_reread": false,
+      "official_sequence": 77,
+      "position": "71",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 77 - The Wanderer: Horniest Hugo Winner",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "2",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-77-the-wanderer-horniest-hugo-winner",
+      "selection_year": "2025",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-77-the-wanderer-horniest-hugo-winner"
+      },
+      "source_record_id": "hugogirl:77",
+      "theme_or_track": "main numbered episode",
+      "title": "The Wanderer"
+    },
+    {
+      "authors": [
+        "Lois McMaster Bujold"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2025-03-05",
+      "is_reread": false,
+      "official_sequence": 78,
+      "position": "72",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 78 - The Vor Game: Jackson's Whole Grimussy",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "3",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-78-the-vor-game-jacksons-whole-milk",
+      "selection_year": "2025",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-78-the-vor-game-jacksons-whole-milk"
+      },
+      "source_record_id": "hugogirl:78",
+      "theme_or_track": "main numbered episode",
+      "title": "The Vor Game"
+    },
+    {
+      "authors": [
+        "John Brunner"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2025-05-07",
+      "is_reread": false,
+      "official_sequence": 80,
+      "position": "73",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 80 - Stand on Zanzibar: Get Shiggy with It",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "5",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-80-stand-on-zanzibar-get-shiggy-with-it",
+      "selection_year": "2025",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-80-stand-on-zanzibar-get-shiggy-with-it"
+      },
+      "source_record_id": "hugogirl:80",
+      "theme_or_track": "main numbered episode",
+      "title": "Stand on Zanzibar"
+    },
+    {
+      "authors": [
+        "Robert Heinlein"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2025-06-04",
+      "is_reread": false,
+      "official_sequence": 81,
+      "position": "74",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 81 - Double Star: Barely Science Fiction",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "6",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-81-double-star-barely-science-fiction",
+      "selection_year": "2025",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-81-double-star-barely-science-fiction"
+      },
+      "source_record_id": "hugogirl:81",
+      "theme_or_track": "main numbered episode",
+      "title": "Double Star"
+    },
+    {
+      "authors": [
+        "Arkady Martine"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2025-07-01",
+      "is_reread": false,
+      "official_sequence": 82,
+      "position": "75",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 82 - A Desolation Called Peace: Outright Feminism!",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "7",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-81-a-desolation-called-peace-outright-feminism",
+      "selection_year": "2025",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-81-a-desolation-called-peace-outright-feminism"
+      },
+      "source_record_id": "hugogirl:82",
+      "theme_or_track": "main numbered episode",
+      "title": "A Desolation Called Peace"
+    },
+    {
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2025-08-06",
+      "is_reread": false,
+      "official_sequence": 83,
+      "position": "76",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 83 - The Diamond Age: Ending Needed",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "8",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-83-the-diamond-age-ending-needed",
+      "selection_year": "2025",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-83-the-diamond-age-ending-needed"
+      },
+      "source_record_id": "hugogirl:83",
+      "theme_or_track": "main numbered episode",
+      "title": "The Diamond Age"
+    },
+    {
+      "authors": [
+        "John Scalzi"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2025-09-03",
+      "is_reread": false,
+      "official_sequence": 84,
+      "position": "77",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 84 - Redshirts: All I Got Was This Stupid T-shirt",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "9",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-84-redshirts-all-i-got-was-this-stupid-t-shirt",
+      "selection_year": "2025",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-84-redshirts-all-i-got-was-this-stupid-t-shirt"
+      },
+      "source_record_id": "hugogirl:84",
+      "theme_or_track": "main numbered episode",
+      "title": "Redshirts"
+    },
+    {
+      "authors": [
+        "Robert Jackson Bennett"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2025-11-05",
+      "is_reread": false,
+      "official_sequence": 86,
+      "position": "78",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 86 - The Tainted Cup: Parchment for Your Bunghole",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "11",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-86-the-tainted-cup-parchment-for-your-bunghole",
+      "selection_year": "2025",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-86-the-tainted-cup-parchment-for-your-bunghole"
+      },
+      "source_record_id": "hugogirl:86",
+      "theme_or_track": "main numbered episode",
+      "title": "The Tainted Cup"
+    },
+    {
+      "authors": [
+        "Joe Haldeman"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2025-12-02",
+      "is_reread": false,
+      "official_sequence": 87,
+      "position": "79",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 87 - Forever Peace: Telepathic Niceness",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "12",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-87-forever-peace-telepathic-niceness",
+      "selection_year": "2025",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-87-forever-peace-telepathic-niceness"
+      },
+      "source_record_id": "hugogirl:87",
+      "theme_or_track": "main numbered episode",
+      "title": "Forever Peace"
+    },
+    {
+      "authors": [
+        "Isaac Asimov"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2026-01-07",
+      "is_reread": false,
+      "official_sequence": 88,
+      "position": "80",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 88 - The Gods Themselves: Rock Wank",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "1",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-88-the-gods-themselves-rock-wank",
+      "selection_year": "2026",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-88-the-gods-themselves-rock-wank"
+      },
+      "source_record_id": "hugogirl:88",
+      "theme_or_track": "main numbered episode",
+      "title": "The Gods Themselves"
+    },
+    {
+      "authors": [
+        "Alfred Lansing"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2026-02-06",
+      "is_reread": false,
+      "official_sequence": 89,
+      "position": "81",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 89 - Endurance: Rotten Ice",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "2",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-89-endurance-rotten-ice",
+      "selection_year": "2026",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-89-endurance-rotten-ice"
+      },
+      "source_record_id": "hugogirl:89",
+      "theme_or_track": "main numbered episode",
+      "title": "Endurance: Shackleton's Incredible Voyage"
+    },
+    {
+      "authors": [
+        "Kim Stanley Robinson"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2026-03-11",
+      "is_reread": false,
+      "official_sequence": 90,
+      "position": "82",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 90 - Green Mars: Your Mom's a Mohole",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "3",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-90-green-mars-your-moms-a-mohole",
+      "selection_year": "2026",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-90-green-mars-your-moms-a-mohole"
+      },
+      "source_record_id": "hugogirl:90",
+      "theme_or_track": "main numbered episode",
+      "title": "Green Mars"
+    },
+    {
+      "authors": [
+        "Lois McMaster Bujold"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2026-05-06",
+      "is_reread": false,
+      "official_sequence": 92,
+      "position": "83",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 92 - Paladin of Souls: H4H",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "5",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-92-paladin-of-souls-h4h",
+      "selection_year": "2026",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-92-paladin-of-souls-h4h"
+      },
+      "source_record_id": "hugogirl:92",
+      "theme_or_track": "main numbered episode",
+      "title": "Paladin of Souls"
+    },
+    {
+      "authors": [
+        "CJ Cherryh"
+      ],
+      "club_name": "Hugo, Girl!",
+      "event_date": "2026-06-11",
+      "is_reread": false,
+      "official_sequence": 93,
+      "position": "84",
+      "priority_group": "A",
+      "program_era": "numbered podcast episodes",
+      "raw_episode_title": "Episode 93 - Downbelow Station: Chekov's Hisa",
+      "recipe_scope": "numbered book and novella discussions",
+      "region": "Global",
+      "selection_month": "6",
+      "selection_type": "episode_selection",
+      "selection_url": "https://hugogirl.libsyn.com/episode-93-downbelow-station-love-you",
+      "selection_year": "2026",
+      "source": {
+        "name": "Hugo, Girl!",
+        "source_id": "hugo_girl",
+        "url": "https://hugogirl.libsyn.com/episode-93-downbelow-station-love-you"
+      },
+      "source_record_id": "hugogirl:93",
+      "theme_or_track": "main numbered episode",
+      "title": "Downbelow Station"
+    }
+  ],
+  "fetched_at": "2026-07-15T00:06:59Z",
+  "list_id": "hugo_girl",
+  "list_name": "Hugo Girl!",
+  "match_series": false,
+  "notes": [],
+  "parser": "hugo_girl",
+  "schema_version": 2,
+  "source": {
+    "name": "Hugo, Girl!",
+    "source_id": "hugo_girl",
+    "url": "https://hugogirl.libsyn.com/rss"
+  }
+}

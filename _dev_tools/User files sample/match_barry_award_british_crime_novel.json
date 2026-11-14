@@ -1,0 +1,32 @@
+{
+  "list_id": "barry_award_british_crime_novel",
+  "matches": [
+    {
+      "entry_key": "started early took my dog|kate atkinson",
+      "imported_author": [
+        "Kate Atkinson"
+      ],
+      "imported_title": "Started Early, Took My Dog",
+      "matched_at": "2026-07-18T03:45:07Z",
+      "matched_authors": [
+        "Kate Elliott"
+      ],
+      "matched_book_id": 39828,
+      "matched_book_ids": [
+        39828
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Kate Elliott"
+          ],
+          "matched_book_id": 39828,
+          "matched_title": "The Law of Becoming"
+        }
+      ],
+      "matched_title": "The Law of Becoming"
+    }
+  ],
+  "saved_at": "2026-07-18T03:45:07Z",
+  "schema_version": 2
+}

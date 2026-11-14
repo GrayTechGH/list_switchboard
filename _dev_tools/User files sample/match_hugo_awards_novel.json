@@ -982,8 +982,266 @@
         }
       ],
       "matched_title": "Cordelia's Honor (Books 2-3)"
+    },
+    {
+      "entry_key": "dune|frank herbert",
+      "imported_author": [
+        "Frank Herbert"
+      ],
+      "imported_title": "Dune",
+      "matched_at": "2026-07-18T06:18:32Z",
+      "matched_authors": [
+        "Frank Herbert"
+      ],
+      "matched_book_id": 23621,
+      "matched_book_ids": [
+        23621
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Frank Herbert"
+          ],
+          "matched_book_id": 23621,
+          "matched_title": "Dune"
+        }
+      ],
+      "matched_title": "Dune"
+    },
+    {
+      "entry_key": "the moon is a harsh mistress|robert a heinlein",
+      "imported_author": [
+        "Robert A. Heinlein"
+      ],
+      "imported_title": "The Moon is a Harsh Mistress",
+      "matched_at": "2026-07-18T06:20:05Z",
+      "matched_authors": [
+        "Robert A. Heinlein"
+      ],
+      "matched_book_id": 19957,
+      "matched_book_ids": [
+        19957
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Robert A. Heinlein"
+          ],
+          "matched_book_id": 19957,
+          "matched_title": "The Moon Is a Harsh Mistress"
+        }
+      ],
+      "matched_title": "The Moon Is a Harsh Mistress"
+    },
+    {
+      "entry_key": "skylark duquesne|edward e smith",
+      "imported_author": [
+        "Edward E. Smith"
+      ],
+      "imported_title": "Skylark DuQuesne",
+      "matched_at": "2026-07-18T06:18:32Z",
+      "matched_authors": [
+        "E. E. \"doc\" Smith"
+      ],
+      "matched_book_id": 38397,
+      "matched_book_ids": [
+        38397
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "E. E. \"doc\" Smith"
+          ],
+          "matched_book_id": 38397,
+          "matched_title": "Skylark DuQuesne"
+        }
+      ],
+      "matched_title": "Skylark DuQuesne"
+    },
+    {
+      "entry_key": "the mote in god s eye|larry niven and jerry pournelle",
+      "imported_author": [
+        "Larry Niven and Jerry Pournelle"
+      ],
+      "imported_title": "The Mote in God\u2019s Eye",
+      "matched_at": "2026-07-18T06:18:32Z",
+      "matched_authors": [
+        "Larry Niven",
+        "Jerry Pournelle"
+      ],
+      "matched_book_id": 20044,
+      "matched_book_ids": [
+        20044
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Larry Niven",
+            "Jerry Pournelle"
+          ],
+          "matched_book_id": 20044,
+          "matched_title": "The Mote in God's Eye"
+        }
+      ],
+      "matched_title": "The Mote in God's Eye"
+    },
+    {
+      "entry_key": "inferno|larry niven and jerry pournelle",
+      "imported_author": [
+        "Larry Niven and Jerry Pournelle"
+      ],
+      "imported_title": "Inferno",
+      "matched_at": "2026-07-18T06:18:32Z",
+      "matched_authors": [
+        "Larry Niven",
+        "Jerry Pournelle"
+      ],
+      "matched_book_id": 20255,
+      "matched_book_ids": [
+        20255
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Larry Niven",
+            "Jerry Pournelle"
+          ],
+          "matched_book_id": 20255,
+          "matched_title": "Inferno"
+        }
+      ],
+      "matched_title": "Inferno"
+    },
+    {
+      "entry_key": "lucifer s hammer|larry niven and jerry pournelle",
+      "imported_author": [
+        "Larry Niven and Jerry Pournelle"
+      ],
+      "imported_title": "Lucifer\u2019s Hammer",
+      "matched_at": "2026-07-18T06:18:32Z",
+      "matched_authors": [
+        "Larry Niven",
+        "Jerry Pournelle"
+      ],
+      "matched_book_id": 16545,
+      "matched_book_ids": [
+        16545
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Larry Niven",
+            "Jerry Pournelle"
+          ],
+          "matched_book_id": 16545,
+          "matched_title": "Lucifer's Hammer"
+        }
+      ],
+      "matched_title": "Lucifer's Hammer"
+    },
+    {
+      "entry_key": "footfall|larry niven and jerry pournelle",
+      "imported_author": [
+        "Larry Niven and Jerry Pournelle"
+      ],
+      "imported_title": "Footfall",
+      "matched_at": "2026-07-18T06:18:32Z",
+      "matched_authors": [
+        "Larry Niven",
+        "Jerry Pournelle"
+      ],
+      "matched_book_id": 20254,
+      "matched_book_ids": [
+        20254
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Larry Niven",
+            "Jerry Pournelle"
+          ],
+          "matched_book_id": 20254,
+          "matched_title": "Footfall"
+        }
+      ],
+      "matched_title": "Footfall"
+    },
+    {
+      "entry_key": "warbound book iii of the grimnoir chronicle s|larry correia",
+      "imported_author": [
+        "Larry Correia"
+      ],
+      "imported_title": "Warbound, Book III of the Grimnoir Chronicle s",
+      "matched_at": "2026-07-18T06:18:32Z",
+      "matched_authors": [
+        "Larry Correia"
+      ],
+      "matched_book_id": 38289,
+      "matched_book_ids": [
+        38289
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Larry Correia"
+          ],
+          "matched_book_id": 38289,
+          "matched_title": "Warbound"
+        }
+      ],
+      "matched_title": "Warbound"
+    },
+    {
+      "entry_key": "the three body problem|cixin liu",
+      "imported_author": [
+        "Cixin Liu"
+      ],
+      "imported_title": "The Three Body Problem",
+      "matched_at": "2026-07-18T06:18:32Z",
+      "matched_authors": [
+        "Liu Cixin"
+      ],
+      "matched_book_id": 18520,
+      "matched_book_ids": [
+        18520
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Liu Cixin"
+          ],
+          "matched_book_id": 18520,
+          "matched_title": "The Three-Body Problem"
+        }
+      ],
+      "matched_title": "The Three-Body Problem"
+    },
+    {
+      "entry_key": "death s end|cixin liu",
+      "imported_author": [
+        "Cixin Liu"
+      ],
+      "imported_title": "Death\u2019s End",
+      "matched_at": "2026-07-18T06:18:32Z",
+      "matched_authors": [
+        "Liu Cixin"
+      ],
+      "matched_book_id": 18523,
+      "matched_book_ids": [
+        18523
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Liu Cixin"
+          ],
+          "matched_book_id": 18523,
+          "matched_title": "Death's End"
+        }
+      ],
+      "matched_title": "Death's End"
     }
   ],
-  "saved_at": "2026-07-08T16:01:21Z",
+  "saved_at": "2026-07-18T06:20:05Z",
   "schema_version": 2
 }

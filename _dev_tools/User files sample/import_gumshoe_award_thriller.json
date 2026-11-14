@@ -1,0 +1,78 @@
+{
+  "append_state": {
+    "entry_count": 4,
+    "last_entry_key": "the watchman|robert crais",
+    "last_position": "2008",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Barry Eisler"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2005",
+      "category": "Thriller",
+      "position": "2005",
+      "result": "winner",
+      "title": "Rain Storm"
+    },
+    {
+      "authors": [
+        "Joseph Finder"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2006",
+      "category": "Thriller",
+      "position": "2006",
+      "result": "winner",
+      "title": "Company Man"
+    },
+    {
+      "authors": [
+        "Robert Ferrigno"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2007",
+      "category": "Thriller",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Prayers_for_the_Assassin"
+      },
+      "title": "Prayers for the Assassin"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2008",
+      "category": "Thriller",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/The_Watchman_(Crais_novel)"
+      },
+      "title": "The Watchman"
+    }
+  ],
+  "fetched_at": "2026-07-17T06:46:05Z",
+  "list_id": "gumshoe_award_thriller",
+  "list_name": "Gumshoe Award - Thriller (discontinued)",
+  "match_series": false,
+  "notes": [
+    "LibraryThing failed: HTTP Error 403: Forbidden"
+  ],
+  "parser": "gumshoe_award_thriller",
+  "schema_version": 2,
+  "source": {
+    "name": "Gumshoe Award - Thriller (discontinued)",
+    "source_id": "gumshoe_award_thriller",
+    "url": "https://en.wikipedia.org/wiki/Gumshoe_Awards"
+  }
+}

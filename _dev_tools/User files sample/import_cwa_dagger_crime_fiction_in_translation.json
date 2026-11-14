@@ -1,0 +1,1976 @@
+{
+  "append_state": {
+    "entry_count": 122,
+    "last_entry_key": "strange pictures|uketsu",
+    "last_position": "2026.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Fred Vargas"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2006",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-three-evangelists/"
+      },
+      "title": "The Three Evangelists"
+    },
+    {
+      "authors": [
+        "Andrea Camilleri"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2006",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2006.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/excursion-to-tindari/"
+      },
+      "title": "Excursion to Tindari"
+    },
+    {
+      "authors": [
+        "Yasmina Khadra"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2006",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2006.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/autumn-of-the-phantoms/"
+      },
+      "title": "Autumn of the Phantoms"
+    },
+    {
+      "authors": [
+        "Dominique Manotti"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2006",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2006.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/dead-horsemeat/"
+      },
+      "title": "Dead Horsemeat"
+    },
+    {
+      "authors": [
+        "H"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2006",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2006.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/borkmanns-point/"
+      },
+      "title": "Borkmann\u2019s Point"
+    },
+    {
+      "authors": [
+        "Rafael Reig"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2006",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2006.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/blood-on-the-saddle/"
+      },
+      "title": "Blood on the Saddle"
+    },
+    {
+      "authors": [
+        "Fred Vargas"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2007",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/wash-this-blood-clean-from-my-hand/"
+      },
+      "title": "Wash this Blood Clean from my Hand"
+    },
+    {
+      "authors": [
+        "Yasmina Khadra"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2007",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2007.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-attack/"
+      },
+      "title": "The Attack"
+    },
+    {
+      "authors": [
+        "Asa Larsson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2007",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2007.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-savage-altar/"
+      },
+      "title": "The Savage Altar"
+    },
+    {
+      "authors": [
+        "Jo Nesbo"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2007",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2007.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-redbreast/"
+      },
+      "title": "The Redbreast"
+    },
+    {
+      "authors": [
+        "Karin Alvtegen"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2007",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2007.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/shame/"
+      },
+      "title": "Shame"
+    },
+    {
+      "authors": [
+        "Christian Jungersen"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2007",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2007.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-exception/"
+      },
+      "title": "The Exception"
+    },
+    {
+      "authors": [
+        "Dominique Manotti"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2008",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/lorraine-connection/"
+      },
+      "title": "Lorraine Connection"
+    },
+    {
+      "authors": [
+        "Andrea Camilleri"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2008",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2008.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-patience-of-the-spider/"
+      },
+      "title": "The Patience of the Spider"
+    },
+    {
+      "authors": [
+        "Stieg Larsson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2008",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2008.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-girl-with-the-dragon-tattoo/"
+      },
+      "title": "The Girl With the Dragon Tattoo"
+    },
+    {
+      "authors": [
+        "Martin Suter"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2008",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2008.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/a-deal-with-the-devil/"
+      },
+      "title": "A Deal with the Devil"
+    },
+    {
+      "authors": [
+        "Fred Vargas"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2009",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-chalk-circle-man/"
+      },
+      "title": "The Chalk Circle Man"
+    },
+    {
+      "authors": [
+        "Karin Alvtegen"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2009",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2009.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/shadow/"
+      },
+      "title": "Shadow"
+    },
+    {
+      "authors": [
+        "Arnaldur Indri_aso"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2009",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2009.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/artic-chill/"
+      },
+      "title": "Artic Chill"
+    },
+    {
+      "authors": [
+        "Stieg Larsson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2009",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2009.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-girl-who-played-with-fire/"
+      },
+      "title": "The Girl Who Played With Fire"
+    },
+    {
+      "authors": [
+        "Jo Nesbo"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2009",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2009.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-redeemer/"
+      },
+      "title": "The Redeemer"
+    },
+    {
+      "authors": [
+        "Johan Theorin"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2009",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2009.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/echoes-from-the-dead/"
+      },
+      "title": "Echoes from the Dead"
+    },
+    {
+      "authors": [
+        "Johan Theorin"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2010",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-darkest-room/"
+      },
+      "title": "The Darkest Room"
+    },
+    {
+      "authors": [
+        "Arnaldur Indri_aso"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2010",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2010.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/hypothermia/"
+      },
+      "title": "Hypothermia"
+    },
+    {
+      "authors": [
+        "Stieg Larsson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2010",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2010.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-girl-who-kicked-the-hornets-nest/"
+      },
+      "title": "The Girl Who Kicked the Hornets\u2019 Nest"
+    },
+    {
+      "authors": [
+        "Deon Mayer"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2010",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2010.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/thirteen-hours/"
+      },
+      "title": "Thirteen Hours"
+    },
+    {
+      "authors": [
+        "Tonino Benacquista"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2010",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2010.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/badfellas/"
+      },
+      "title": "Badfellas"
+    },
+    {
+      "authors": [
+        "Andrea Camilleri"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2010",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2010.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/august-heat/"
+      },
+      "title": "August Heat"
+    },
+    {
+      "authors": [
+        "Anders Roslund",
+        "B"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2011",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/three-seconds/"
+      },
+      "title": "Three Seconds"
+    },
+    {
+      "authors": [
+        "Andrea Camilleri"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2011",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2011.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-wings-of-the-sphinx/"
+      },
+      "title": "The Wings of the Sphinx"
+    },
+    {
+      "authors": [
+        "Ernesto Mallo"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2011",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2011.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/needle-in-a-haystack/"
+      },
+      "title": "Needle in a Haystack"
+    },
+    {
+      "authors": [
+        "Jean-Fran"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2011",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2011.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-saint-florentin-murders/"
+      },
+      "title": "The Saint-Florentin Murders"
+    },
+    {
+      "authors": [
+        "Fred Vargas"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2011",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2011.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/an-uncertain-place/"
+      },
+      "title": "An uncertain Place"
+    },
+    {
+      "authors": [
+        "Domingo Villar"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2011",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2011.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/death-on-a-galician-shore/"
+      },
+      "title": "Death on a Galician Shore"
+    },
+    {
+      "authors": [
+        "Andrea Camilleri"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2012",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-potters-field/"
+      },
+      "title": "The Potter\u2019s Field"
+    },
+    {
+      "authors": [
+        "Jo Nesbo"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2012",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2012.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/phantom/"
+      },
+      "title": "Phantom"
+    },
+    {
+      "authors": [
+        "Valerio Varesi"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2012",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2012.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-dark-valley/"
+      },
+      "title": "The Dark Valley"
+    },
+    {
+      "authors": [
+        "Maurizio de Giovanni"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2012",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2012.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/i-will-have-vengeance-2/"
+      },
+      "title": "I will have Vengeance"
+    },
+    {
+      "authors": [
+        "Quercus"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2012",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2012.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/until-thy-wrath-be-past/"
+      },
+      "title": "Until Thy Wrath Be Past"
+    },
+    {
+      "authors": [
+        "Deon Mayer"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2012",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2012.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/trackers/"
+      },
+      "title": "Trackers"
+    },
+    {
+      "authors": [
+        "Fred Vargas"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2013",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/ghost-riders-of-ordebec/"
+      },
+      "title": "Ghost Riders of Ordebec"
+    },
+    {
+      "authors": [
+        "Anders Roslund",
+        "B"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2013",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2013.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/two-soldiers/"
+      },
+      "title": "Two Soldiers"
+    },
+    {
+      "authors": [
+        "Marco Vichi"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2013",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2013.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/death-in-sardinia/"
+      },
+      "title": "Death in Sardinia"
+    },
+    {
+      "authors": [
+        "Ferdinand von Schirach"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2013",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2013.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-collini-case/"
+      },
+      "title": "The Collini Case"
+    },
+    {
+      "authors": [
+        "Pierre Lemaitre"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2013",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2013.04",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/alex/"
+      },
+      "title": "Alex"
+    },
+    {
+      "authors": [
+        "D A Mishani"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2013",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2013.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-missing-file/"
+      },
+      "title": "The Missing File"
+    },
+    {
+      "authors": [
+        "Arturo Perez-Reverte"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2014",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-siege-2/"
+      },
+      "title": "The Siege"
+    },
+    {
+      "authors": [
+        "Arnaldur Indridason"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2014",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2014.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/strange-shores/"
+      },
+      "title": "Strange Shores"
+    },
+    {
+      "authors": [
+        "Pierre Lemaitre"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2014",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2014.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/irene/"
+      },
+      "title": "Ir\u00e8ne"
+    },
+    {
+      "authors": [
+        "Olivier Truc"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2014",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2014.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/forty-days-without-shadow/"
+      },
+      "title": "Forty Days without Shadow"
+    },
+    {
+      "authors": [
+        "Simon Urban"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2014",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2014.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/plan-d/"
+      },
+      "title": "Plan D"
+    },
+    {
+      "authors": [
+        "Fred Vargas"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2014",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2014.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/dog-will-have-his-day/"
+      },
+      "title": "Dog Will Have His Day"
+    },
+    {
+      "authors": [
+        "Pierre Lemaitre"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/camille/"
+      },
+      "title": "Camille"
+    },
+    {
+      "authors": [
+        "Leif GW Persson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2015.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/falling-free-as-if-in-a-dream/"
+      },
+      "title": "Falling Free, As If In A Dream"
+    },
+    {
+      "authors": [
+        "Deon Meyer"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2015.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/cobra/"
+      },
+      "title": "Cobra"
+    },
+    {
+      "authors": [
+        "Karim Misk\u00e9"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2015.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/arab-jazz/"
+      },
+      "title": "Arab Jazz"
+    },
+    {
+      "authors": [
+        "Dolores Redondo"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2015.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-invisible-guardian/"
+      },
+      "title": "The Invisible Guardian"
+    },
+    {
+      "authors": [
+        "Andreas Norman"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2015.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/into-a-raging-blaze/"
+      },
+      "title": "Into a Raging Blaze"
+    },
+    {
+      "authors": [
+        "Pierre Lema\u00eetre"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2016",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-great-swindle/"
+      },
+      "title": "The Great Swindle"
+    },
+    {
+      "authors": [
+        "Cay Rademacher"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2016",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2016.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-murderer-in-ruins/"
+      },
+      "title": "The Murderer in Ruins"
+    },
+    {
+      "authors": [
+        "Hideo Yokoyama"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2016",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2016.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/six-four/"
+      },
+      "title": "Six Four"
+    },
+    {
+      "authors": [
+        "Sascha Arango"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2016",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2016.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-truth-and-other-lies/"
+      },
+      "title": "The Truth and Other Lies"
+    },
+    {
+      "authors": [
+        "Deon Meyer"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2016",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2016.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/icarus/"
+      },
+      "title": "Icarus"
+    },
+    {
+      "authors": [
+        "Leif G W Persson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2017",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-dying-detective/"
+      },
+      "title": "The Dying Detective"
+    },
+    {
+      "authors": [
+        "Antonio Manzini"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2017",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2017.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/a-cold-death/"
+      },
+      "title": "A Cold Death"
+    },
+    {
+      "authors": [
+        "Pierre Lemaitre"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2017",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2017.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/blood-wedding/"
+      },
+      "title": "Blood Wedding"
+    },
+    {
+      "authors": [
+        "Gianrico Carofiglio"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2017",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2017.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/a-fine-line/"
+      },
+      "title": "A Fine Line"
+    },
+    {
+      "authors": [
+        "Fred Vargas"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2017",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2017.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/climate-of-fear/"
+      },
+      "title": "Climate of Fear"
+    },
+    {
+      "authors": [
+        "Delores Redondo"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2017",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2017.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-legacy-of-the-bones/"
+      },
+      "title": "The Legacy of the Bones"
+    },
+    {
+      "authors": [
+        "Henning Mankell"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2018",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/after-the-fire/"
+      },
+      "title": "After the Fire"
+    },
+    {
+      "authors": [
+        "Jon Michelet"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2018",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2018.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-frozen-woman/"
+      },
+      "title": "The Frozen Woman"
+    },
+    {
+      "authors": [
+        "Dolores Redondo"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2018",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2018.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/offering-to-the-storm/"
+      },
+      "title": "Offering to the Storm"
+    },
+    {
+      "authors": [
+        "Fred Vargas"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2018",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2018.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-accordionist/"
+      },
+      "title": "The Accordionist"
+    },
+    {
+      "authors": [
+        "Oliver Bottini"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2018",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2018.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/zen-and-the-art-of-murder/"
+      },
+      "title": "Zen and the Art of Murder"
+    },
+    {
+      "authors": [
+        "Pierre Lema\u00eetre"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2018",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2018.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/three-days-and-a-life/"
+      },
+      "title": "Three Days and a Life"
+    },
+    {
+      "authors": [
+        "Dov Alfon"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2019",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/a-long-night-in-paris/"
+      },
+      "title": "A Long Night in Paris"
+    },
+    {
+      "authors": [
+        "Gianrico Carofiglio"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2019",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2019.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-cold-summer/"
+      },
+      "title": "The Cold Summer"
+    },
+    {
+      "authors": [
+        "Keigo Higashino"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2019",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2019.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/newcomer/"
+      },
+      "title": "Newcomer"
+    },
+    {
+      "authors": [
+        "H\u00e5kan Nesser"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2019",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2019.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-root-of-evil/"
+      },
+      "title": "The Root of Evil"
+    },
+    {
+      "authors": [
+        "Cay Rademacher"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2019",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2019.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-forger/"
+      },
+      "title": "The Forger"
+    },
+    {
+      "authors": [
+        "Karin Brynard"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2019",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2019.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/weeping-waters/"
+      },
+      "title": "Weeping Waters"
+    },
+    {
+      "authors": [
+        "Hannelore Cayre"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2020",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-godmother/"
+      },
+      "title": "The Godmother"
+    },
+    {
+      "authors": [
+        "Marion Brunet"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2020",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2020.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/summer-of-reckoning/"
+      },
+      "title": "Summer of Reckoning"
+    },
+    {
+      "authors": [
+        "K. Ferrari"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2020",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2020.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/like-flies-from-afar/"
+      },
+      "title": "Like Flies From Afar"
+    },
+    {
+      "authors": [
+        "Jorge Gal\u00e1n"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2020",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2020.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/november/"
+      },
+      "title": "November"
+    },
+    {
+      "authors": [
+        "Sergio Olgu\u00edn"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2020",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2020.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-fragility-of-bodies/"
+      },
+      "title": "The Fragility of Bodies"
+    },
+    {
+      "authors": [
+        "Antti Tuomainen"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2020",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2020.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/little-siberia/"
+      },
+      "title": "Little Siberia"
+    },
+    {
+      "authors": [
+        "Yun Ko-eun"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2021",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-disaster-tourist/"
+      },
+      "title": "The Disaster Tourist"
+    },
+    {
+      "authors": [
+        "D A Mishani"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2021",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2021.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/three/"
+      },
+      "title": "Three"
+    },
+    {
+      "authors": [
+        "Mikael Niemi"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2021",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2021.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/to-cook-a-bear/"
+      },
+      "title": "To Cook a Bear"
+    },
+    {
+      "authors": [
+        "Agnes Ravatn"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2021",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2021.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-seven-doors/"
+      },
+      "title": "The Seven Doors"
+    },
+    {
+      "authors": [
+        "Fredrik Backman"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2021",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2021.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/anxious-people/"
+      },
+      "title": "Anxious People"
+    },
+    {
+      "authors": [
+        "Roxanne Bouchard"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2021",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2021.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-coral-bride/"
+      },
+      "title": "The Coral Bride"
+    },
+    {
+      "authors": [
+        "Simone Buchholz"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2022",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/hotel-cartagena/"
+      },
+      "title": "Hotel Cartagena"
+    },
+    {
+      "authors": [
+        "K\u014dtar\u014d Isaka"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2022",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2022.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/bullet-train/"
+      },
+      "title": "Bullet Train"
+    },
+    {
+      "authors": [
+        "Sacha Naspini"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2022",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2022.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/oxygen/"
+      },
+      "title": "Oxygen"
+    },
+    {
+      "authors": [
+        "Samira Sedira"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2022",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2022.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/people-like-them/"
+      },
+      "title": "People Like Them"
+    },
+    {
+      "authors": [
+        "Antti Tuomainen"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2022",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2022.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-rabbit-factor/"
+      },
+      "title": "The Rabbit Factor"
+    },
+    {
+      "authors": [
+        "Javier Cercas"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2023",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/even-the-darkest-night/"
+      },
+      "title": "Even the Darkest Night"
+    },
+    {
+      "authors": [
+        "Zijin Chen"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2023",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2023.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/bad-kids/"
+      },
+      "title": "Bad Kids"
+    },
+    {
+      "authors": [
+        "Johana Gustawsson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2023",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2023.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-bleeding/"
+      },
+      "title": "The Bleeding"
+    },
+    {
+      "authors": [
+        "Herv\u00e9 Le Tellier"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2023",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2023.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-anomaly/"
+      },
+      "title": "The Anomaly"
+    },
+    {
+      "authors": [
+        "Morgan Audic"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2023",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2023.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/good-reasons-to-die/"
+      },
+      "title": "Good Reasons to Die"
+    },
+    {
+      "authors": [
+        "Michel Bussi"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2023",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2023.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-red-notebook/"
+      },
+      "title": "The Red Notebook"
+    },
+    {
+      "authors": [
+        "Maud Ventura"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2024",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/my-husband/"
+      },
+      "title": "My Husband"
+    },
+    {
+      "authors": [
+        "Juan G\u00f3mez-Jurado"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2024",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2024.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/red-queen/"
+      },
+      "title": "Red Queen"
+    },
+    {
+      "authors": [
+        "\u00c2sa Larsson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2024",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2024.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-sins-of-our-fathers/"
+      },
+      "title": "The Sins Of Our Fathers"
+    },
+    {
+      "authors": [
+        "Clo\u00e9 Mehdi"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2024",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2024.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/nothing-is-lost/"
+      },
+      "title": "Nothing Is Lost"
+    },
+    {
+      "authors": [
+        "Im Seong-sun"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2024",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2024.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-consultant/"
+      },
+      "title": "The Consultant"
+    },
+    {
+      "authors": [
+        "Yrsa Sigurdardottir"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2024",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2024.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-prey/"
+      },
+      "title": "The Prey"
+    },
+    {
+      "authors": [
+        "Akira Otani"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2025",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-night-of-baba-yaga/"
+      },
+      "title": "The Night of Baba Yaga"
+    },
+    {
+      "authors": [
+        "Herve Le Corre"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2025",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2025.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/dogs-and-wolves/"
+      },
+      "title": "Dogs and Wolves"
+    },
+    {
+      "authors": [
+        "Pierre Lemaitre"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2025",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2025.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/going-to-the-dogs/"
+      },
+      "title": "Going To The Dogs"
+    },
+    {
+      "authors": [
+        "Satu R\u00e4m\u00f6"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2025",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2025.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-clues-in-the-fjord/"
+      },
+      "title": "The Clues in the Fjord"
+    },
+    {
+      "authors": [
+        "Asako Yuzuki"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2025",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2025.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/butter/"
+      },
+      "title": "Butter"
+    },
+    {
+      "authors": [
+        "Alia Trabucco Zer\u00e1n"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2025",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2025.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/clean/"
+      },
+      "title": "Clean"
+    },
+    {
+      "authors": [
+        "Antti Tuomainen"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2026",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2026",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-winter-job/"
+      },
+      "title": "The Winter Job"
+    },
+    {
+      "authors": [
+        "Leonie Swann"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2026",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2026.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/big-bad-wool/"
+      },
+      "title": "Big Bad Wool"
+    },
+    {
+      "authors": [
+        "Jurica Pavi\u010di\u0107"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2026",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2026.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/red-water/"
+      },
+      "title": "Red Water"
+    },
+    {
+      "authors": [
+        "J\u00f8rn Lier Horst"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2026",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2026.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-lake/"
+      },
+      "title": "The Lake"
+    },
+    {
+      "authors": [
+        "Karsten Dusse"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2026",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2026.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/murder-mindfully/"
+      },
+      "title": "Murder Mindfully"
+    },
+    {
+      "authors": [
+        "Uketsu"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2026",
+      "category": "Crime Fiction in Translation Dagger",
+      "position": "2026.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/strange-pictures/"
+      },
+      "title": "Strange Pictures"
+    }
+  ],
+  "fetched_at": "2026-07-16T14:11:07Z",
+  "list_id": "cwa_dagger_crime_fiction_in_translation",
+  "list_name": "CWA Dagger - Crime Fiction in Translation",
+  "match_series": false,
+  "notes": [],
+  "parser": "cwa_dagger_crime_fiction_in_translation",
+  "schema_version": 2,
+  "source": {
+    "name": "CWA Dagger - Crime Fiction in Translation",
+    "source_id": "cwa_dagger_crime_fiction_in_translation",
+    "url": "https://thecwa.co.uk/past-winners/?past_winners_awards[]=international"
+  }
+}

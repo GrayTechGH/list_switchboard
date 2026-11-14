@@ -1,0 +1,1968 @@
+{
+  "append_state": {
+    "entry_count": 108,
+    "last_entry_key": "a founding mother|stephanie dray\u001flaura kamoie",
+    "last_position": "108",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Gail Honeyman"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "1",
+      "selection_label": "May \u201917 Pick",
+      "selection_month": "5",
+      "selection_type": "monthly_pick",
+      "selection_year": "2017",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/eleanor-oliphant-is-completely-fine/"
+      },
+      "title": "Eleanor Oliphant is Completely Fine"
+    },
+    {
+      "authors": [
+        "Kate Quinn"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "2",
+      "selection_label": "July \u201917 Pick",
+      "selection_month": "7",
+      "selection_type": "monthly_pick",
+      "selection_year": "2017",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-alice-network/"
+      },
+      "title": "The Alice Network"
+    },
+    {
+      "authors": [
+        "Ruth Ware"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "3",
+      "selection_label": "August \u201917 Pick",
+      "selection_month": "8",
+      "selection_type": "monthly_pick",
+      "selection_year": "2017",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-lying-game/"
+      },
+      "title": "The Lying Game"
+    },
+    {
+      "authors": [
+        "Celeste Ng"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "4",
+      "selection_label": "September \u201917 Pick",
+      "selection_month": "9",
+      "selection_type": "monthly_pick",
+      "selection_year": "2017",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/little-fires-everywhere/"
+      },
+      "title": "Little Fires Everywhere"
+    },
+    {
+      "authors": [
+        "Alice Hoffman"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "5",
+      "selection_label": "October \u201917 Pick",
+      "selection_month": "10",
+      "selection_type": "monthly_pick",
+      "selection_year": "2017",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/rules-of-magic/"
+      },
+      "title": "Rules of Magic"
+    },
+    {
+      "authors": [
+        "Ann Patchett"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "6",
+      "selection_label": "November \u201917 Pick",
+      "selection_month": "11",
+      "selection_type": "monthly_pick",
+      "selection_year": "2017",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/this-is-the-story-of-a-happy-marriage/"
+      },
+      "title": "This is The Story of a Happy Marriage"
+    },
+    {
+      "authors": [
+        "Liv Constantine"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "7",
+      "selection_label": "December \u201917 Pick",
+      "selection_month": "12",
+      "selection_type": "monthly_pick",
+      "selection_year": "2017",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-last-mrs-parrish/"
+      },
+      "title": "The Last Mrs Parrish"
+    },
+    {
+      "authors": [
+        "Bren\u00e9 Brown"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "8",
+      "selection_label": "January \u201918 Pick",
+      "selection_month": "1",
+      "selection_type": "monthly_pick",
+      "selection_year": "2018",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/braving-the-wilderness-the-quest-for-true-belonging-and-the-courage-to-stand-alone/"
+      },
+      "title": "Braving the Wilderness: The Quest for True Belonging and the Courage to Stand Alone"
+    },
+    {
+      "authors": [
+        "Jill Santopolo"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "9",
+      "selection_label": "February \u201918 Pick",
+      "selection_month": "2",
+      "selection_type": "monthly_pick",
+      "selection_year": "2018",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-light-we-lost/"
+      },
+      "title": "The Light We Lost"
+    },
+    {
+      "authors": [
+        "Balli Kaur Jaswal"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "10",
+      "selection_label": "March \u201918 Pick",
+      "selection_month": "3",
+      "selection_type": "monthly_pick",
+      "selection_year": "2018",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/erotic-stories-for-punjabi-widows/"
+      },
+      "title": "Erotic Stories for Punjabi Widows"
+    },
+    {
+      "authors": [
+        "Heather Harpham"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "11",
+      "selection_label": "April \u201918 Pick",
+      "selection_month": "4",
+      "selection_type": "monthly_pick",
+      "selection_year": "2018",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/happiness-a-memoir-the-crooked-little-road-to-semi-ever-after/"
+      },
+      "title": "Happiness: A Memoir: The Crooked Little Road to Semi-Ever After"
+    },
+    {
+      "authors": [
+        "Curtis Sittenfeld"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "12",
+      "selection_label": "May \u201918 Pick",
+      "selection_month": "5",
+      "selection_type": "monthly_pick",
+      "selection_year": "2018",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/you-think-it-ill-say-it/"
+      },
+      "title": "You Think It, I\u2019ll Say It"
+    },
+    {
+      "authors": [
+        "Catherine Steadman"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "13",
+      "selection_label": "June \u201918 Pick",
+      "selection_month": "6",
+      "selection_type": "monthly_pick",
+      "selection_year": "2018",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/something-in-the-water/"
+      },
+      "title": "Something in the Water"
+    },
+    {
+      "authors": [
+        "Chanel Cleeton"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "14",
+      "selection_label": "July \u201918 Pick",
+      "selection_month": "7",
+      "selection_type": "monthly_pick",
+      "selection_year": "2018",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/next-year-in-havana/"
+      },
+      "title": "Next Year in Havana"
+    },
+    {
+      "authors": [
+        "Maria Hummel"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "15",
+      "selection_label": "August \u201918 Pick",
+      "selection_month": "8",
+      "selection_type": "monthly_pick",
+      "selection_year": "2018",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/still-lives/"
+      },
+      "title": "Still Lives"
+    },
+    {
+      "authors": [
+        "Delia Owens"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "16",
+      "selection_label": "September \u201918 Pick",
+      "selection_month": "9",
+      "selection_type": "monthly_pick",
+      "selection_year": "2018",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/where-the-crawdads-sing/"
+      },
+      "title": "Where the Crawdads Sing"
+    },
+    {
+      "authors": [
+        "Laurie Frankel"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "17",
+      "selection_label": "October \u201918 Pick",
+      "selection_month": "10",
+      "selection_type": "monthly_pick",
+      "selection_year": "2018",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/this-is-how-it-always-is/"
+      },
+      "title": "This Is How It Always Is"
+    },
+    {
+      "authors": [
+        "Sandie Jones"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "18",
+      "selection_label": "November \u201918 Pick",
+      "selection_month": "11",
+      "selection_type": "monthly_pick",
+      "selection_year": "2018",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-other-woman/"
+      },
+      "title": "The Other Woman"
+    },
+    {
+      "authors": [
+        "Josie Silver"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "19",
+      "selection_label": "December \u201918 Pick",
+      "selection_month": "12",
+      "selection_type": "monthly_pick",
+      "selection_year": "2018",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/one-day-in-december/"
+      },
+      "title": "One Day In December"
+    },
+    {
+      "authors": [
+        "Susan Orlean"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "20",
+      "selection_label": "January \u201919 Pick",
+      "selection_month": "1",
+      "selection_type": "monthly_pick",
+      "selection_year": "2019",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-library-book/"
+      },
+      "title": "The Library Book"
+    },
+    {
+      "authors": [
+        "Jasmine Guillory"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "21",
+      "selection_label": "February \u201919 Pick",
+      "selection_month": "2",
+      "selection_type": "monthly_pick",
+      "selection_year": "2019",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-proposal/"
+      },
+      "title": "The Proposal"
+    },
+    {
+      "authors": [
+        "Taylor Jenkins Reid"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "22",
+      "selection_label": "March \u201919 Pick",
+      "selection_month": "3",
+      "selection_type": "monthly_pick",
+      "selection_year": "2019",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/daisy-jones-the-six/"
+      },
+      "title": "Daisy Jones & The Six"
+    },
+    {
+      "authors": [
+        "Yangsze Choo"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "23",
+      "selection_label": "April \u201919 Pick",
+      "selection_month": "4",
+      "selection_type": "monthly_pick",
+      "selection_year": "2019",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-night-tiger/"
+      },
+      "title": "The Night Tiger"
+    },
+    {
+      "authors": [
+        "Tembi Locke"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "24",
+      "selection_label": "May \u201919 Pick",
+      "selection_month": "5",
+      "selection_type": "monthly_pick",
+      "selection_year": "2019",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/from-scratch/"
+      },
+      "title": "From Scratch"
+    },
+    {
+      "authors": [
+        "Sarah Haywood"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "25",
+      "selection_label": "June \u201919 Pick",
+      "selection_month": "6",
+      "selection_type": "monthly_pick",
+      "selection_year": "2019",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-cactus/"
+      },
+      "title": "The Cactus"
+    },
+    {
+      "authors": [
+        "Chandler Baker"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "26",
+      "selection_label": "July \u201919 Pick",
+      "selection_month": "7",
+      "selection_type": "monthly_pick",
+      "selection_year": "2019",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/whisper-network/"
+      },
+      "title": "Whisper Network"
+    },
+    {
+      "authors": [
+        "Megan Miranda"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "27",
+      "selection_label": "August \u201919 Pick",
+      "selection_month": "8",
+      "selection_type": "monthly_pick",
+      "selection_year": "2019",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-last-house-guest/"
+      },
+      "title": "The Last House Guest"
+    },
+    {
+      "authors": [
+        "Lara Prescott"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "28",
+      "selection_label": "September \u201919 Pick",
+      "selection_month": "9",
+      "selection_type": "monthly_pick",
+      "selection_year": "2019",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-secrets-we-kept/"
+      },
+      "title": "The Secrets We Kept"
+    },
+    {
+      "authors": [
+        "Eve Rodsky"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "29",
+      "selection_label": "October \u201919 Pick",
+      "selection_month": "10",
+      "selection_type": "monthly_pick",
+      "selection_year": "2019",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/fair-play-a-game-changing-solution-when-you-have-too-much-to-do-and-more-life-to-live/"
+      },
+      "title": "Fair Play: A Game Changing Solution When You Have Too Much To Do (And More Life to Live)"
+    },
+    {
+      "authors": [
+        "Jojo Moyes"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "30",
+      "selection_label": "November \u201919 Pick",
+      "selection_month": "11",
+      "selection_type": "monthly_pick",
+      "selection_year": "2019",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-giver-of-stars/"
+      },
+      "title": "The Giver of Stars"
+    },
+    {
+      "authors": [
+        "Denise Mina"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "31",
+      "selection_label": "December \u201919 Pick",
+      "selection_month": "12",
+      "selection_type": "monthly_pick",
+      "selection_year": "2019",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/conviction/"
+      },
+      "title": "Conviction"
+    },
+    {
+      "authors": [
+        "Kiley Reid"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "32",
+      "selection_label": "January \u201920 Pick",
+      "selection_month": "1",
+      "selection_type": "monthly_pick",
+      "selection_year": "2020",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/such-a-fun-age/"
+      },
+      "title": "Such a Fun Age"
+    },
+    {
+      "authors": [
+        "Erica Bauermeister"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "33",
+      "selection_label": "February \u201920 Pick",
+      "selection_month": "2",
+      "selection_type": "monthly_pick",
+      "selection_year": "2020",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-scent-keeper/"
+      },
+      "title": "The Scent Keeper"
+    },
+    {
+      "authors": [
+        "Amanda Eyre Ward"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "34",
+      "selection_label": "March \u201920 Pick",
+      "selection_month": "3",
+      "selection_type": "monthly_pick",
+      "selection_year": "2020",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-jetsetters/"
+      },
+      "title": "The Jetsetters"
+    },
+    {
+      "authors": [
+        "Glennon Doyle"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "35",
+      "selection_label": "April \u201920 Pick",
+      "selection_month": "4",
+      "selection_type": "monthly_pick",
+      "selection_year": "2020",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/untamed/"
+      },
+      "title": "Untamed"
+    },
+    {
+      "authors": [
+        "Alka Joshi"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "36",
+      "selection_label": "May \u201920 Pick",
+      "selection_month": "5",
+      "selection_type": "monthly_pick",
+      "selection_year": "2020",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-henna-artist/"
+      },
+      "title": "The Henna Artist"
+    },
+    {
+      "authors": [
+        "Lucy Foley"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "37",
+      "selection_label": "June \u201920 Pick",
+      "selection_month": "6",
+      "selection_type": "monthly_pick",
+      "selection_year": "2020",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-guest-list/"
+      },
+      "title": "The Guest List"
+    },
+    {
+      "authors": [
+        "Edwidge Danticat"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "38",
+      "selection_label": "August \u201920 Pick",
+      "selection_month": "8",
+      "selection_type": "monthly_pick",
+      "selection_year": "2020",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/everything-inside/"
+      },
+      "title": "Everything Inside"
+    },
+    {
+      "authors": [
+        "Nancy Jooyoun Kim"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "39",
+      "selection_label": "September \u201920 Pick",
+      "selection_month": "9",
+      "selection_type": "monthly_pick",
+      "selection_year": "2020",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-last-story-of-mina-lee/"
+      },
+      "title": "The Last Story of Mina Lee"
+    },
+    {
+      "authors": [
+        "Peace Adzo Medie"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "40",
+      "selection_label": "October \u201920 Pick",
+      "selection_month": "10",
+      "selection_type": "monthly_pick",
+      "selection_year": "2020",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/his-only-wife/"
+      },
+      "title": "His Only Wife"
+    },
+    {
+      "authors": [
+        "Christie Tate"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "41",
+      "selection_label": "November \u201920 Pick",
+      "selection_month": "11",
+      "selection_type": "monthly_pick",
+      "selection_year": "2020",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/group/"
+      },
+      "title": "Group"
+    },
+    {
+      "authors": [
+        "KJ Dell'Antonia"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "42",
+      "selection_label": "December \u201920 Pick",
+      "selection_month": "12",
+      "selection_type": "monthly_pick",
+      "selection_year": "2020",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/chicken-sisters/"
+      },
+      "title": "Chicken Sisters"
+    },
+    {
+      "authors": [
+        "Anna North"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "43",
+      "selection_label": "January \u201921 Pick",
+      "selection_month": "1",
+      "selection_type": "monthly_pick",
+      "selection_year": "2021",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/outlawed/"
+      },
+      "title": "Outlawed"
+    },
+    {
+      "authors": [
+        "Sarah Pearse"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "44",
+      "selection_label": "February \u201921 Pick",
+      "selection_month": "2",
+      "selection_type": "monthly_pick",
+      "selection_year": "2021",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-sanatorium/"
+      },
+      "title": "The Sanatorium"
+    },
+    {
+      "authors": [
+        "Patricia Engel"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "45",
+      "selection_label": "March \u201921 Pick",
+      "selection_month": "3",
+      "selection_type": "monthly_pick",
+      "selection_year": "2021",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/infinite-country/"
+      },
+      "title": "Infinite Country"
+    },
+    {
+      "authors": [
+        "Flynn Berry"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "46",
+      "selection_label": "April \u201921 Pick",
+      "selection_month": "4",
+      "selection_type": "monthly_pick",
+      "selection_year": "2021",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/northern-spy/"
+      },
+      "title": "Northern Spy"
+    },
+    {
+      "authors": [
+        "Laura Dave"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "47",
+      "selection_label": "May \u201921 Pick",
+      "selection_month": "5",
+      "selection_type": "monthly_pick",
+      "selection_year": "2021",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-last-thing-he-told-me/"
+      },
+      "title": "The Last Thing He Told Me"
+    },
+    {
+      "authors": [
+        "Tia Williams"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "48",
+      "selection_label": "June \u201921 Pick",
+      "selection_month": "6",
+      "selection_type": "monthly_pick",
+      "selection_year": "2021",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/seven-days-in-june/"
+      },
+      "title": "Seven Days in June"
+    },
+    {
+      "authors": [
+        "Miranda Cowley Heller"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "49",
+      "selection_label": "July \u201921 Pick",
+      "selection_month": "7",
+      "selection_type": "monthly_pick",
+      "selection_year": "2021",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/paper-palace/"
+      },
+      "title": "Paper Palace"
+    },
+    {
+      "authors": [
+        "Andrea Bartz"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "50",
+      "selection_label": "August \u201921 Pick",
+      "selection_month": "8",
+      "selection_type": "monthly_pick",
+      "selection_year": "2021",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/we-were-never-here/"
+      },
+      "title": "We Were Never Here"
+    },
+    {
+      "authors": [
+        "Mar\u00eda Amparo Escand\u00f3n"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "51",
+      "selection_label": "September \u201921 Pick",
+      "selection_month": "9",
+      "selection_type": "monthly_pick",
+      "selection_year": "2021",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/l-a-weather/"
+      },
+      "title": "L.A. Weather"
+    },
+    {
+      "authors": [
+        "Chibundu Onuzo"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "52",
+      "selection_label": "October \u201921 Pick",
+      "selection_month": "10",
+      "selection_type": "monthly_pick",
+      "selection_year": "2021",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/sankofa/"
+      },
+      "title": "Sankofa"
+    },
+    {
+      "authors": [
+        "Elif Shafak"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "53",
+      "selection_label": "November \u201921 Pick",
+      "selection_month": "11",
+      "selection_type": "monthly_pick",
+      "selection_year": "2021",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-island-of-missing-trees/"
+      },
+      "title": "The Island of Missing Trees"
+    },
+    {
+      "authors": [
+        "Marissa Stapley"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "54",
+      "selection_label": "December \u201921 Pick",
+      "selection_month": "12",
+      "selection_type": "monthly_pick",
+      "selection_year": "2021",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/lucky/"
+      },
+      "title": "Lucky"
+    },
+    {
+      "authors": [
+        "Thrity Umrigar"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "55",
+      "selection_label": "January \u201922 Pick",
+      "selection_month": "1",
+      "selection_type": "monthly_pick",
+      "selection_year": "2022",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/honor/"
+      },
+      "title": "Honor"
+    },
+    {
+      "authors": [
+        "Nina de Gramont"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "56",
+      "selection_label": "February \u201922 Pick",
+      "selection_month": "2",
+      "selection_type": "monthly_pick",
+      "selection_year": "2022",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-christie-affair/"
+      },
+      "title": "The Christie Affair"
+    },
+    {
+      "authors": [
+        "Ellery Lloyd"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "57",
+      "selection_label": "March \u201922 Pick",
+      "selection_month": "3",
+      "selection_type": "monthly_pick",
+      "selection_year": "2022",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-club/"
+      },
+      "title": "The Club"
+    },
+    {
+      "authors": [
+        "Sara Novi\u0107"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "58",
+      "selection_label": "April \u201922 Pick",
+      "selection_month": "4",
+      "selection_type": "monthly_pick",
+      "selection_year": "2022",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/true-biz/"
+      },
+      "title": "True Biz"
+    },
+    {
+      "authors": [
+        "Pip Williams"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "59",
+      "selection_label": "May \u201922 Pick",
+      "selection_month": "5",
+      "selection_type": "monthly_pick",
+      "selection_year": "2022",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/dictionary-of-lost-words/"
+      },
+      "title": "Dictionary of Lost Words"
+    },
+    {
+      "authors": [
+        "Kirstin Chen"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "60",
+      "selection_label": "June \u201922 Pick",
+      "selection_month": "6",
+      "selection_type": "monthly_pick",
+      "selection_year": "2022",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/counterfeit/"
+      },
+      "title": "Counterfeit"
+    },
+    {
+      "authors": [
+        "Bolu Babalola"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "61",
+      "selection_label": "July \u201922 Pick",
+      "selection_month": "7",
+      "selection_type": "monthly_pick",
+      "selection_year": "2022",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/honey-spice/"
+      },
+      "title": "Honey & Spice"
+    },
+    {
+      "authors": [
+        "Gillian McAllister"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "62",
+      "selection_label": "August \u201922 Pick",
+      "selection_month": "8",
+      "selection_type": "monthly_pick",
+      "selection_year": "2022",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/wrong-place-wrong-time/"
+      },
+      "title": "Wrong Place, Wrong Time"
+    },
+    {
+      "authors": [
+        "Margaret Wilkerson Sexton"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "63",
+      "selection_label": "September \u201922 Pick",
+      "selection_month": "9",
+      "selection_type": "monthly_pick",
+      "selection_year": "2022",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/on-the-rooftop/"
+      },
+      "title": "On the Rooftop"
+    },
+    {
+      "authors": [
+        "Celeste Ng"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "64",
+      "selection_label": "October \u201922 Pick",
+      "selection_month": "10",
+      "selection_type": "monthly_pick",
+      "selection_year": "2022",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/our-missing-hearts/"
+      },
+      "title": "Our Missing Hearts"
+    },
+    {
+      "authors": [
+        "Cheryl Strayed"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "65",
+      "selection_label": "November \u201922 Pick",
+      "selection_month": "11",
+      "selection_type": "monthly_pick",
+      "selection_year": "2022",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/tiny-beautiful-things/"
+      },
+      "title": "Tiny Beautiful Things"
+    },
+    {
+      "authors": [
+        "Maggie O'Farrell"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "66",
+      "selection_label": "December \u201922 Pick",
+      "selection_month": "12",
+      "selection_type": "monthly_pick",
+      "selection_year": "2022",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-marriage-portrait/"
+      },
+      "title": "The Marriage Portrait"
+    },
+    {
+      "authors": [
+        "Ana Reyes"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "67",
+      "selection_label": "January \u201923 Pick",
+      "selection_month": "1",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-house-in-the-pines/"
+      },
+      "title": "The House in the Pines"
+    },
+    {
+      "authors": [
+        "Sadeqa Johnson"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "68",
+      "selection_label": "February \u201923 Pick",
+      "selection_month": "2",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-house-of-eve/"
+      },
+      "title": "The House of Eve"
+    },
+    {
+      "authors": [
+        "Kristin Hannah"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "69",
+      "selection_label": "March \u201923 Pick",
+      "selection_month": "3",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-nightingale/"
+      },
+      "title": "The Nightingale"
+    },
+    {
+      "authors": [
+        "Curtis Sittenfeld"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "70",
+      "selection_label": "April \u201923 Pick",
+      "selection_month": "4",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/romantic-comedy/"
+      },
+      "title": "Romantic Comedy"
+    },
+    {
+      "authors": [
+        "Crystal Smith Paul"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "71",
+      "selection_label": "May \u201923 Pick",
+      "selection_month": "5",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/did-you-hear-about-kitty-karr/"
+      },
+      "title": "Did You Hear About Kitty Karr?"
+    },
+    {
+      "authors": [
+        "Holly Smale"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "72",
+      "selection_label": "June \u201923 Pick",
+      "selection_month": "6",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/cassandra-in-reverse/"
+      },
+      "title": "Cassandra in Reverse"
+    },
+    {
+      "authors": [
+        "R.F. Kuang"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "73",
+      "selection_label": "July \u201923 Pick",
+      "selection_month": "7",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/yellowface/"
+      },
+      "title": "Yellowface"
+    },
+    {
+      "authors": [
+        "Ann Patchett"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "74",
+      "selection_label": "August \u201923 Pick",
+      "selection_month": "8",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/tom-lake/"
+      },
+      "title": "Tom Lake"
+    },
+    {
+      "authors": [
+        "Nina Simon"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "75",
+      "selection_label": "September \u201923 Pick",
+      "selection_month": "9",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/mother-daughter-murder-night/"
+      },
+      "title": "Mother-Daughter Murder Night"
+    },
+    {
+      "authors": [
+        "Alix E. Harrow"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "76",
+      "selection_label": "October \u201923 Pick",
+      "selection_month": "10",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/starling-house/"
+      },
+      "title": "Starling House"
+    },
+    {
+      "authors": [
+        "Cesca Major"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "77",
+      "selection_label": "November \u201923 Pick",
+      "selection_month": "11",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/maybe-next-time/"
+      },
+      "title": "Maybe Next Time"
+    },
+    {
+      "authors": [
+        "Ella Berman"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "78",
+      "selection_label": "December \u201923 Pick",
+      "selection_month": "12",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/before-we-were-innocent/"
+      },
+      "title": "Before We Were Innocent"
+    },
+    {
+      "authors": [
+        "Ashley Elston"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "79",
+      "selection_label": "January \u201924 Pick",
+      "selection_month": "1",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/first-lie-wins/"
+      },
+      "title": "First Lie Wins"
+    },
+    {
+      "authors": [
+        "D\u00e9Lana R. A. Dameron"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "80",
+      "selection_label": "February \u201924 Pick",
+      "selection_month": "2",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/redwood-court/"
+      },
+      "title": "Redwood Court"
+    },
+    {
+      "authors": [
+        "Xochitl Gonzalez"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "81",
+      "selection_label": "March \u201924 Pick",
+      "selection_month": "3",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/anita-de-monte-laughs-last/"
+      },
+      "title": "Anita de Monte Laughs Last"
+    },
+    {
+      "authors": [
+        "Claire Lombardo"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "82",
+      "selection_label": "April \u201924 Pick",
+      "selection_month": "4",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-most-fun-we-ever-had/"
+      },
+      "title": "The Most Fun We Ever Had"
+    },
+    {
+      "authors": [
+        "Yulin Kuang"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "83",
+      "selection_label": "May \u201924 Pick",
+      "selection_month": "5",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/how-to-end-a-love-story/"
+      },
+      "title": "How to End a Love Story"
+    },
+    {
+      "authors": [
+        "Ally Condie"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "84",
+      "selection_label": "June \u201924 Pick",
+      "selection_month": "6",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-unwedding/"
+      },
+      "title": "The Unwedding"
+    },
+    {
+      "authors": [
+        "J. Courtney Sullivan"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "85",
+      "selection_label": "July \u201924 Pick",
+      "selection_month": "7",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-cliffs/"
+      },
+      "title": "The Cliffs"
+    },
+    {
+      "authors": [
+        "Rainbow Rowell"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "86",
+      "selection_label": "August \u201924 Pick",
+      "selection_month": "8",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/slow-dance/"
+      },
+      "title": "Slow Dance"
+    },
+    {
+      "authors": [
+        "Margaret Renkl"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "87",
+      "selection_label": "September \u201924 Pick",
+      "selection_month": "9",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-comfort-of-crows/"
+      },
+      "title": "The Comfort of Crows"
+    },
+    {
+      "authors": [
+        "Lauren Ling Brown"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "88",
+      "selection_label": "October \u201924 Pick",
+      "selection_month": "10",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/society-of-lies/"
+      },
+      "title": "Society of Lies"
+    },
+    {
+      "authors": [
+        "Nemonte Nenquimo"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "89",
+      "selection_label": "November \u201924 Pick",
+      "selection_month": "11",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/we-will-be-jaguars/"
+      },
+      "title": "We Will Be Jaguars"
+    },
+    {
+      "authors": [
+        "Juhea Kim"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "90",
+      "selection_label": "December \u201924 Pick",
+      "selection_month": "12",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/city-of-nightbirds/"
+      },
+      "title": "City of Nightbirds"
+    },
+    {
+      "authors": [
+        "Kate Fagan"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "91",
+      "selection_label": "January \u201925 Pick",
+      "selection_month": "1",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-three-lives-of-cate-kay/"
+      },
+      "title": "The Three Lives of Cate Kay"
+    },
+    {
+      "authors": [
+        "Allegra Goodman"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "92",
+      "selection_label": "February \u201925 Pick",
+      "selection_month": "2",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/isola/"
+      },
+      "title": "Isola"
+    },
+    {
+      "authors": [
+        "Clare Leslie Hall"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "93",
+      "selection_label": "March \u201925 Pick",
+      "selection_month": "3",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/broken-country/"
+      },
+      "title": "Broken Country"
+    },
+    {
+      "authors": [
+        "Emily Everett"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "94",
+      "selection_label": "April \u201925 Pick",
+      "selection_month": "4",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/all-that-life-can-afford/"
+      },
+      "title": "All That Life Can Afford"
+    },
+    {
+      "authors": [
+        "Emily Henry"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "95",
+      "selection_label": "May \u201925 Pick",
+      "selection_month": "5",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/great-big-beautiful-life/"
+      },
+      "title": "Great Big Beautiful Life"
+    },
+    {
+      "authors": [
+        "Allison King"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "96",
+      "selection_label": "June \u201925 Pick",
+      "selection_month": "6",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-phoenix-pencil-company/"
+      },
+      "title": "The Phoenix Pencil Company"
+    },
+    {
+      "authors": [
+        "Beck Dorey-Stein"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "97",
+      "selection_label": "July \u201925 Pick",
+      "selection_month": "7",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/spectacular-things/"
+      },
+      "title": "Spectacular Things"
+    },
+    {
+      "authors": [
+        "Ashley Jordan"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "98",
+      "selection_label": "August \u201925 Pick",
+      "selection_month": "8",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/once-upon-a-time-in-dollywood/"
+      },
+      "title": "Once Upon a Time in Dollywood"
+    },
+    {
+      "authors": [
+        "Eliana Ramage"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "99",
+      "selection_label": "September \u201925 Pick",
+      "selection_month": "9",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/to-the-moon-and-back/"
+      },
+      "title": "To the Moon and Back"
+    },
+    {
+      "authors": [
+        "Charlotte McConaghy"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "100",
+      "selection_label": "November \u201925 Pick",
+      "selection_month": "11",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/wild-dark-shore/"
+      },
+      "title": "Wild Dark Shore"
+    },
+    {
+      "authors": [
+        "Rebecca Armitage"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "101",
+      "selection_label": "December \u201925 Pick",
+      "selection_month": "12",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-heir-apparent/"
+      },
+      "title": "The Heir Apparent"
+    },
+    {
+      "authors": [
+        "Laura Dave"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "102",
+      "selection_label": "January \u201926 Pick",
+      "selection_month": "1",
+      "selection_type": "monthly_pick",
+      "selection_year": "2026",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-first-time-i-saw-him/"
+      },
+      "title": "The First Time I Saw Him"
+    },
+    {
+      "authors": [
+        "Philippa Malicka"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "103",
+      "selection_label": "February \u201926 Pick",
+      "selection_month": "2",
+      "selection_type": "monthly_pick",
+      "selection_year": "2026",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/in-her-defense/"
+      },
+      "title": "In Her Defense"
+    },
+    {
+      "authors": [
+        "Rachel Hochhauser"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "104",
+      "selection_label": "March \u201926 Pick",
+      "selection_month": "3",
+      "selection_type": "monthly_pick",
+      "selection_year": "2026",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/lady-tremaine/"
+      },
+      "title": "Lady Tremaine"
+    },
+    {
+      "authors": [
+        "Emma Brodie"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "105",
+      "selection_label": "April \u201926 Pick",
+      "selection_month": "4",
+      "selection_type": "monthly_pick",
+      "selection_year": "2026",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/into-the-blue/"
+      },
+      "title": "Into The Blue"
+    },
+    {
+      "authors": [
+        "Alexandra Andrews"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "106",
+      "selection_label": "May \u201926 Pick",
+      "selection_month": "5",
+      "selection_type": "monthly_pick",
+      "selection_year": "2026",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/the-fine-art-of-lying/"
+      },
+      "title": "The Fine Art of Lying"
+    },
+    {
+      "authors": [
+        "Marie Benedict",
+        "Victoria Christopher Murray"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "107",
+      "selection_label": "June \u201926 Pick",
+      "selection_month": "6",
+      "selection_type": "monthly_pick",
+      "selection_year": "2026",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/a-pair-of-aces/"
+      },
+      "title": "A Pair of Aces"
+    },
+    {
+      "authors": [
+        "Stephanie Dray",
+        "Laura Kamoie"
+      ],
+      "club": "Reese's Book Club",
+      "club_scope": "main_monthly",
+      "position": "108",
+      "selection_label": "July '26 Pick",
+      "selection_month": "7",
+      "selection_type": "monthly_pick",
+      "selection_year": "2026",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://reesesbookclub.com/book/a-founding-mother/"
+      },
+      "title": "A Founding Mother"
+    }
+  ],
+  "fetched_at": "2026-07-15T16:54:41Z",
+  "list_id": "reese_book_club",
+  "list_name": "Reese's Book Club",
+  "match_series": false,
+  "notes": [],
+  "parser": "reese_book_club",
+  "schema_version": 2,
+  "source": {
+    "name": "Reese's Book Club",
+    "source_id": "reese_book_club",
+    "url": "https://reesesbookclub.com/our-picks/"
+  }
+}

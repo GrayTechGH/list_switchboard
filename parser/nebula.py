@@ -2,7 +2,7 @@
 # vim:fileencoding=UTF-8:ts=2:sw=2:sta:et:sts=2:ai
 
 """
-Nebula Awards parser for the official Best Novel award page.
+Nebula Awards parsers for official category pages and SFADB fallbacks.
 
 Maintenance notes:
 - The official award page is already category-filtered and paginated.
@@ -43,6 +43,14 @@ except ImportError:
 YEAR_HEADING = re.compile(r'^\d{4}$')
 AWARD_NAME = 'Nebula Award'
 CATEGORY_NAME = 'Best Novel'
+COMICS_NAME = 'Nebula Awards - Comics'
+COMICS_CATEGORY_NAME = 'Best Comic'
+COMICS_CATEGORY_ALIASES = (
+  'best comic',
+  'comic',
+  'best comics',
+  'comics',
+)
 ANDRE_NORTON_NAME = 'Nebula Awards - Andre Norton Middle Grade/YA'
 ANDRE_NORTON_AWARD_NAME = 'Andre Norton Nebula Award for Middle Grade and Young Adult Fiction'
 ANDRE_NORTON_CATEGORY_NAME = 'Andre Norton Middle Grade and Young Adult Fiction'
@@ -62,7 +70,8 @@ SFADB_CATEGORY_BOUNDARIES = frozenset({
   'novel', 'best novel', 'novella', 'best novella',
   'andre norton award', 'andre norton', 'middle grade and young adult fiction',
   'best middle grade and young adult fiction',
-  'comics', 'best comics', 'graphic story', 'game writing', 'dramatic presentation',
+  'comic', 'best comic', 'comics', 'best comics', 'graphic story',
+  'game writing', 'dramatic presentation',
   'script', 'short story', 'novelette',
 })
 
@@ -72,6 +81,50 @@ class NebulaSFADBCategoryParser(StandardItemMixin, SFADBParser):
   AWARD_NAME = AWARD_NAME
   YEAR_PAGE_URL = SFADB_YEAR_PAGE_URL
   CATEGORY_BOUNDARIES = SFADB_CATEGORY_BOUNDARIES
+
+
+class NebulaComicsSFADBParser(NebulaSFADBCategoryParser):
+  """Parse role-rich SFADB comic rows using title/person markup boundaries."""
+
+  def parse_year(self, html, source_url, year, category, category_aliases):
+    match = re.search(
+      r'\bEligibility Year\s*:\s*((?:19|20)\d{2})\b',
+      _node_text(lxml_html.fromstring(html or '<html></html>')),
+      re.I)
+    award_year = int(match.group(1)) if match is not None else year
+    return super().parse_year(
+      html, source_url, award_year, category, category_aliases)
+
+  def parse_item_node(self, node):
+    text, result = parse_winner_prefix(_node_text(node))
+    title_nodes = node.xpath('.//b')
+    author_nodes = node.xpath('.//a')
+    if not title_nodes or not author_nodes:
+      return super().parse_item_node(node)
+
+    title = normalize_line(_node_text(title_nodes[0]))
+    authors = []
+    for author_node in author_nodes:
+      preceding = _text_before_descendant(node, author_node)
+      if re.search(
+          r'\b(?:illustrated|lettered|colou?red)\s+by\b', preceding, re.I):
+        break
+      author = normalize_line(_node_text(author_node))
+      if author and author not in authors:
+        authors.append(author)
+
+    # SFADB's inaugural Carmilla row ends its unlabelled creator sequence with
+    # a malformed "illus23" marker. The official category page credits only
+    # the first linked person as the writer.
+    if re.search(r'\billus\d+\b', text, re.I) and authors:
+      authors = authors[:1]
+    if not title or not authors:
+      return super().parse_item_node(node)
+    return {
+      'title': title,
+      'authors': authors,
+      'result': result,
+    }
 
 
 class NebulaAndreNortonParser(AwardParserBase):
@@ -159,12 +212,11 @@ class NebulaAwardsNovelParser(ListParserBase):
   - Falls back to SFADB if original site fails.
   """
 
-  # SFADB attributes
-  AWARD_NAME = 'Nebula Award'
-  CATEGORY_BOUNDARIES = {
-    'best novel': 'best novel',
-    'novel': 'novel',
-  }
+  AWARD_NAME = AWARD_NAME
+  NAME = 'Nebula Awards - Novel'
+  CATEGORY = CATEGORY_NAME
+  CATEGORY_ALIASES = ('best novel', 'novel')
+  SFADB_PARSER_CLASS = NebulaSFADBCategoryParser
 
   def parse(self, first_page_html, base_url, fetch_url=None, log=None, progress=None):
     if 'sfadb' in first_page_html.lower() or 'sfadb.com' in base_url.lower():
@@ -182,7 +234,8 @@ class NebulaAwardsNovelParser(ListParserBase):
       seen_urls.add(url)
       page_index += 1
       _progress(progress, page_index, 0, f'Parsing Nebula Awards page {page_index}...')
-      page_entries, next_url = _parse_nebula_page(html, url)
+      page_entries, next_url = _parse_nebula_page(
+        html, url, self.AWARD_NAME, self.CATEGORY)
       entries.extend(page_entries)
       _log(log, 'page-parsed', {
         'url': url, 'entries': len(page_entries), 'next_url': next_url,
@@ -197,16 +250,16 @@ class NebulaAwardsNovelParser(ListParserBase):
         break
       url = next_url
     return {
-      'name': 'Nebula Awards - Novel',
-      'source': parsed_source('Nebula Awards - Novel', base_url),
+      'name': self.NAME,
+      'source': parsed_source(self.NAME, base_url),
       'entries': sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
       'notes': notes,
       'match_series': False,
     }
 
   def parse_sfadb(self, html, base_url, fetch_url, log=None, progress=None):
-    return NebulaSFADBCategoryParser().parse(
-      html, base_url, 'Nebula Awards - Novel', CATEGORY_NAME, ('best novel', 'novel'),
+    return self.SFADB_PARSER_CLASS().parse(
+      html, base_url, self.NAME, self.CATEGORY, self.CATEGORY_ALIASES,
       fetch_url=fetch_url, log=log, progress=progress)
 
   def parse_item(self, line):
@@ -237,14 +290,23 @@ class NebulaAwardsNovelParser(ListParserBase):
     }
 
 
-def _parse_nebula_page(html, page_url):
+class NebulaAwardsComicsParser(NebulaAwardsNovelParser):
+
+  NAME = COMICS_NAME
+  CATEGORY = COMICS_CATEGORY_NAME
+  CATEGORY_ALIASES = COMICS_CATEGORY_ALIASES
+  SFADB_PARSER_CLASS = NebulaComicsSFADBParser
+
+
+def _parse_nebula_page(html, page_url, award_name=AWARD_NAME, category=CATEGORY_NAME):
   root = lxml_html.fromstring(html or '<html></html>')
   entries = []
   for heading in root.xpath('//h2|//h3'):
     year_text = _node_text(heading)
     if not YEAR_HEADING.match(year_text):
       continue
-    entries.extend(_parse_nebula_year_entries(int(year_text), heading, page_url))
+    entries.extend(_parse_nebula_year_entries(
+      int(year_text), heading, page_url, award_name, category))
   return entries, _next_page_url(root, page_url)
 
 
@@ -323,13 +385,14 @@ def _assign_year_positions(rows, award_name, category):
   return entries
 
 
-def _parse_nebula_year_entries(year, heading, page_url):
+def _parse_nebula_year_entries(
+    year, heading, page_url, award_name=AWARD_NAME, category=CATEGORY_NAME):
   rows = []
   for node in heading.xpath('following::*'):
     if node.tag in ('h2', 'h3') and YEAR_HEADING.match(_node_text(node)):
       break
     if node.tag == 'li':
-      parsed = _parse_nebula_novel_item(_node_text(node), year)
+      parsed = _parse_nebula_novel_item(_node_text(node), year, category)
       if parsed is None:
         continue
       hrefs = node.xpath('(.//a[@href])[1]/@href')
@@ -350,14 +413,14 @@ def _parse_nebula_year_entries(year, heading, page_url):
       row['author'],
       source=entry_source_object(row['entry_url']),
       award_year=str(year),
-      award=AWARD_NAME,
-      category=CATEGORY_NAME,
+      award=award_name,
+      category=category,
       result=row['result']))
   return entries
 
 
-def _parse_nebula_novel_item(text, year):
-  result = _nebula_result_for_text(text, year)
+def _parse_nebula_novel_item(text, year, category=CATEGORY_NAME):
+  result = _nebula_result_for_text(text, year, category)
   if result is None:
     return None
   work_text = re.split(r'\s*\.\s*(?:Winner|Nominated)\b', text, 1, flags=re.I)[0]
@@ -375,10 +438,10 @@ def _parse_nebula_novel_item(text, year):
   return {'title': title, 'author': author, 'result': result}
 
 
-def _nebula_result_for_text(text, year):
-  if re.search(rf'\bWinner,\s*{re.escape(CATEGORY_NAME)}\s+in\s+{year}\b', text, re.I):
+def _nebula_result_for_text(text, year, category=CATEGORY_NAME):
+  if re.search(rf'\bWinner,\s*{re.escape(category)}\s+in\s+{year}\b', text, re.I):
     return 'winner'
-  if re.search(rf'\bNominated\s+for\b.*\b{re.escape(CATEGORY_NAME)}\s+in\s+{year}\b', text, re.I):
+  if re.search(rf'\bNominated\s+for\b.*\b{re.escape(category)}\s+in\s+{year}\b', text, re.I):
     return 'nominee'
   return None
 
@@ -415,6 +478,16 @@ def _node_text(node):
     text.strip()
     for text in node.xpath('.//text()[not(ancestor::script) and not(ancestor::style)]')
     if text.strip()))
+
+
+def _text_before_descendant(node, boundary):
+  fragments = []
+  for fragment in node.xpath('.//text()'):
+    parent = fragment.getparent()
+    if parent is boundary or boundary in parent.iterancestors():
+      break
+    fragments.append(str(fragment))
+  return normalize_line(' '.join(fragments))
 
 
 def _next_page_url(root, page_url):

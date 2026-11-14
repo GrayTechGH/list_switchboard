@@ -36,12 +36,14 @@ except ImportError:
 
 try:
   from calibre_plugins.list_switchboard.matching import (
+    entry_key_for_saved_match,
     imported_author_display_value, imported_author_key,
     imported_author_search_text, match_keys, normalize_match_text,
     series_match_keys,
   )
 except ImportError:
   from matching import (
+    entry_key_for_saved_match,
     imported_author_display_value, imported_author_key,
     imported_author_search_text, match_keys, normalize_match_text,
     series_match_keys,
@@ -68,10 +70,7 @@ def safe_list_id(value):
 
 
 def entry_key(entry):
-  return '|'.join([
-    normalize_match_text(entry.get('title', '')),
-    imported_author_key(entry),
-  ])
+  return entry_key_for_saved_match(entry)
 
 
 def entry_title_matches_book(entry, title):
@@ -214,6 +213,10 @@ def build_import_cache_data(list_id, parsed, recipe=None):
     'entries': entries,
     'notes': parsed.get('notes') or [],
     'match_series': parsed.get('match_series', True),
+    'requires_series_matching': bool(
+      parsed.get(
+        'requires_series_matching',
+        getattr(recipe, 'REQUIRES_SERIES_MATCHING', False))),
     'append_state': parsed_append_state({'entries': entries, 'source_revision': parsed.get('source_revision')}),
   }
   incremental_state = parsed.get('incremental_state')
@@ -405,6 +408,7 @@ class StorageMixin:
       'entries': [dict(entry) for entry in (cache.get('entries') or [])],
       'notes': cache.get('notes') or [],
       'match_series': cache.get('match_series', True),
+      'requires_series_matching': bool(cache.get('requires_series_matching', False)),
       'list_id': cache.get('list_id') or '',
       'from_cache': True,
     }
@@ -554,7 +558,8 @@ class StorageMixin:
       item = self.saved_match_item_for_book(item, entry, book_id, db)
     return item
 
-  def upsert_saved_match_override_for_book(self, list_id, entry, book_id, db=None):
+  def upsert_saved_match_override_for_book(
+      self, list_id, entry, book_id, db=None, existing_book_ids=()):
     key = entry_key(entry)
     if not key:
       return None
@@ -568,7 +573,12 @@ class StorageMixin:
         by_key[item_key] = dict(item)
       elif isinstance(item, dict):
         unkeyed.append(item)
-    by_key[key] = self.saved_match_item_for_book(by_key.get(key), entry, book_id, db)
+    item = by_key.get(key)
+    # Add Selected must snapshot the existing row before its first exact override
+    # suppresses automatic matches. Import Review still replaces selections exactly.
+    for existing_id in existing_book_ids:
+      item = self.saved_match_item_for_book(item, entry, existing_id, db)
+    by_key[key] = self.saved_match_item_for_book(item, entry, book_id, db)
     self.write_match_cache(list_id, unkeyed + list(by_key.values()))
     self.debug_storage_save_match(book_id, key, entry.get('position', ''))
     return by_key[key]
@@ -679,7 +689,15 @@ class StorageMixin:
         item = self.saved_match_item_for_books(
           row.get('entry') or {}, row.get('book_ids') or [], self.db.new_api)
         if item is not None:
+          # Duplicate imported works use a position-scoped review key so one
+          # year's manual decision cannot replace another year's directive.
+          item['entry_key'] = key
           by_key[key] = item
+          changed = True
+      elif matched and current_source == 'automatic' and source == 'saved/manual override':
+        if key in by_key and not item_is_ignored_directive(by_key[key]):
+          by_key.pop(key, None)
+          removed += 1
           changed = True
       elif matched and (original_ignored or source == 'explicit unmatched' or source == 'ignored'):
         if key in by_key and item_is_ignored_directive(by_key[key]):

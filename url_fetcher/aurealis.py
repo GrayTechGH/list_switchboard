@@ -16,11 +16,13 @@ try:
     SourceAttempt, SourceFallbackRunner,
   )
   from calibre_plugins.list_switchboard.url_fetcher.librarything_fallback import (
-    LibraryThingAwardFallbackMixin,
+    LibraryThingAwardFallbackMixin, LibraryThingSourceAttempt,
   )
 except ImportError:
   from parser.source_fallback import SourceAttempt, SourceFallbackRunner
-  from url_fetcher.librarything_fallback import LibraryThingAwardFallbackMixin
+  from url_fetcher.librarything_fallback import (
+    LibraryThingAwardFallbackMixin, LibraryThingSourceAttempt,
+  )
 
 try:
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
@@ -54,6 +56,8 @@ class UrlFetcherAurealis(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
   LIBRARYTHING_URL = LIBRARYTHING_AUREALIS_URL
   CATEGORY = ''
   CATEGORY_ALIASES = ()
+  SFADB_CATEGORY_ALIASES = ()
+  SFADB_YEARS = ()
   SKIP_QUOTED = False
   ISFDB_CATEGORY_IDS = ()
   LIBRARYTHING_CATEGORY_ALIASES = ()
@@ -65,7 +69,9 @@ class UrlFetcherAurealis(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
     except ImportError:
       from parser.aurealis import AurealisParser
 
-    return AurealisParser(skip_quoted=self.SKIP_QUOTED)
+    return AurealisParser(
+      skip_quoted=self.SKIP_QUOTED,
+      allowed_years=self.SFADB_YEARS)
 
   def create_isfdb_parser(self):
     try:
@@ -87,9 +93,13 @@ class UrlFetcherAurealis(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
   def librarything_aliases(self):
     return self.CATEGORY_ALIASES + self.LIBRARYTHING_CATEGORY_ALIASES
 
+  def sfadb_aliases(self):
+    return self.CATEGORY_ALIASES + self.SFADB_CATEGORY_ALIASES
+
   def librarything_attempt(self, source_rank=2):
     parser = self.create_librarything_parser()
-    return SourceAttempt(
+    return LibraryThingSourceAttempt(
+      self,
       'LibraryThing',
       self.LIBRARYTHING_URL,
       lambda html, url, **_kwargs: parser.parse(
@@ -176,7 +186,7 @@ class UrlFetcherAurealis(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
       self.URL,
       self.NAME,
       self.CATEGORY,
-      self.CATEGORY_ALIASES,
+      self.sfadb_aliases(),
       fetch_url=fetch_url,
       log=log,
       progress=progress)
@@ -193,7 +203,7 @@ class UrlFetcherAurealisSFNovel(UrlFetcherAurealis):
 
 class UrlFetcherAurealisGoldenAurealisNovel(UrlFetcherAurealis):
   source_id = 'aurealis_golden_aurealis_novel'
-  NAME = 'Aurealis - Golden Aurealis Novel'
+  NAME = 'Aurealis - Golden Aurealis Novel (discontinued)'
   FILTER_CATEGORIES = YOUNG_READER_SPECULATIVE_REGIONAL_CATEGORIES
   CATEGORY = 'Golden Aurealis - Novel'
   CATEGORY_ALIASES = ('golden aurealis novel',)
@@ -226,7 +236,6 @@ class UrlFetcherAurealisSFNovella(UrlFetcherAurealis):
   CATEGORY = 'SF Novella'
   CATEGORY_ALIASES = ('sf novella', 'science fiction novella')
   ISFDB_CATEGORY_IDS = (640,)
-  SKIP_QUOTED = True
 
 
 class UrlFetcherAurealisFantasyNovella(UrlFetcherAurealis):
@@ -236,7 +245,6 @@ class UrlFetcherAurealisFantasyNovella(UrlFetcherAurealis):
   CATEGORY = 'Fantasy Novella'
   CATEGORY_ALIASES = ('fantasy novella',)
   ISFDB_CATEGORY_IDS = (641,)
-  SKIP_QUOTED = True
 
 
 class UrlFetcherAurealisHorrorNovella(UrlFetcherAurealis):
@@ -246,7 +254,6 @@ class UrlFetcherAurealisHorrorNovella(UrlFetcherAurealis):
   CATEGORY = 'Horror Novella'
   CATEGORY_ALIASES = ('horror novella',)
   ISFDB_CATEGORY_IDS = (642,)
-  SKIP_QUOTED = True
 
 
 class UrlFetcherAurealisAnthology(UrlFetcherAurealis):
@@ -301,16 +308,21 @@ class UrlFetcherAurealisChildrensFiction(UrlFetcherAurealis):
 
 class UrlFetcherAurealisChildrensBook(UrlFetcherAurealis):
   source_id = 'aurealis_childrens_book'
-  NAME = "Aurealis - Children's Book"
+  NAME = "Aurealis - Children's Book (discontinued)"
   FILTER_CATEGORIES = YOUNG_READER_SPECULATIVE_REGIONAL_CATEGORIES
   CATEGORY = "Children's Book"
   CATEGORY_ALIASES = ("children's book", 'childrens book')
+  # SFADB calls this one-cycle category Children's Fiction. Constrain the alias
+  # to its 2014 award page so the continuing category is not folded into this
+  # discontinued recipe.
+  SFADB_CATEGORY_ALIASES = ("children's fiction", 'childrens fiction')
+  SFADB_YEARS = (2014,)
   ISFDB_CATEGORY_IDS = (34,)
 
 
 class UrlFetcherAurealisChildrensFictionWords(UrlFetcherAurealis):
   source_id = 'aurealis_childrens_fiction_words'
-  NAME = "Aurealis - Children's Fiction (Words)"
+  NAME = "Aurealis - Children's Fiction (Words) (discontinued)"
   FILTER_CATEGORIES = YOUNG_READER_SPECULATIVE_REGIONAL_CATEGORIES
   CATEGORY = "Children's Fiction (told primarily through words)"
   CATEGORY_ALIASES = (
@@ -319,12 +331,18 @@ class UrlFetcherAurealisChildrensFictionWords(UrlFetcherAurealis):
     "children's fiction words",
     "children's fiction (words)",
   )
+  # SFADB misspells "primarily" as "primary" on all three pages in this
+  # retired lineage. Keep the typo out of the other source parsers.
+  SFADB_CATEGORY_ALIASES = (
+    "children's fiction told primary through words",
+    'childrens fiction told primary through words',
+  )
   ISFDB_CATEGORY_IDS = (36,)
 
 
 class UrlFetcherAurealisChildrensFictionPictures(UrlFetcherAurealis):
   source_id = 'aurealis_childrens_fiction_pictures'
-  NAME = "Aurealis - Children's Fiction (Pictures)"
+  NAME = "Aurealis - Children's Fiction (Pictures) (discontinued)"
   FILTER_CATEGORIES = YOUNG_READER_SPECULATIVE_REGIONAL_CATEGORIES
   CATEGORY = "Children's Fiction (told primarily through pictures)"
   CATEGORY_ALIASES = (
@@ -338,7 +356,7 @@ class UrlFetcherAurealisChildrensFictionPictures(UrlFetcherAurealis):
 
 class UrlFetcherAurealisChildrens812LongFiction(UrlFetcherAurealis):
   source_id = 'aurealis_childrens_8_12_long_fiction'
-  NAME = "Aurealis - Children's 8-12 Long Fiction"
+  NAME = "Aurealis - Children's 8-12 Long Fiction (discontinued)"
   FILTER_CATEGORIES = YOUNG_READER_SPECULATIVE_REGIONAL_CATEGORIES
   CATEGORY = "Children's (8-12 years) Long Fiction"
   CATEGORY_ALIASES = (
@@ -351,7 +369,9 @@ class UrlFetcherAurealisChildrens812LongFiction(UrlFetcherAurealis):
 
 class UrlFetcherAurealisChildrens812IllustratedWorkPictureBook(UrlFetcherAurealis):
   source_id = 'aurealis_childrens_8_12_illustrated_work_picture_book'
-  NAME = "Aurealis - Children's 8-12 Illustrated Work/Picture Book"
+  NAME = (
+    "Aurealis - Children's 8-12 Illustrated Work/Picture Book "
+    '(discontinued)')
   FILTER_CATEGORIES = YOUNG_READER_SPECULATIVE_REGIONAL_CATEGORIES
   CATEGORY = "Children's (8-12 years) Illustrated Work/Picture Book"
   CATEGORY_ALIASES = (

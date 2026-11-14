@@ -1,0 +1,2678 @@
+{
+  "append_state": {
+    "entry_count": 166,
+    "last_entry_key": "broiler|eli cranor",
+    "last_position": "2024.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Elmore Leonard"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1991",
+      "category": "Hammett Prize",
+      "position": "1991",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Maximum Bob"
+    },
+    {
+      "authors": [
+        "Jerome Charyn"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1991",
+      "category": "Hammett Prize",
+      "position": "1991.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Elsinore"
+    },
+    {
+      "authors": [
+        "Robertson Davies"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1991",
+      "category": "Hammett Prize",
+      "position": "1991.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Murther & Walking Spirits"
+    },
+    {
+      "authors": [
+        "Norman Mailer"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1991",
+      "category": "Hammett Prize",
+      "position": "1991.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Harlot's Ghost"
+    },
+    {
+      "authors": [
+        "Paul West"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1991",
+      "category": "Hammett Prize",
+      "position": "1991.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "The Women of Whitechapel & Jack the Ripper"
+    },
+    {
+      "authors": [
+        "Alice Hoffman"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1992",
+      "category": "Hammett Prize",
+      "position": "1992",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Turtle Moon"
+    },
+    {
+      "authors": [
+        "Jane Stanton Hitchcock"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1992",
+      "category": "Hammett Prize",
+      "position": "1992.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Trick of the Eye"
+    },
+    {
+      "authors": [
+        "Donald E. Westlake"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1992",
+      "category": "Hammett Prize",
+      "position": "1992.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "White Butterfly by Walter Mosley (Norton Humans"
+    },
+    {
+      "authors": [
+        "James Crumley"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1993",
+      "category": "Hammett Prize",
+      "position": "1993",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "The Mexican Tree Duck"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1993",
+      "category": "Hammett Prize",
+      "position": "1993.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "The Black Ice"
+    },
+    {
+      "authors": [
+        "Sandra West Prowell"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1993",
+      "category": "Hammett Prize",
+      "position": "1993.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "By Evil Means"
+    },
+    {
+      "authors": [
+        "Steven Saylor"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1993",
+      "category": "Hammett Prize",
+      "position": "1993.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Catilina's Riddle"
+    },
+    {
+      "authors": [
+        "Randall Silvis"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1993",
+      "category": "Hammett Prize",
+      "position": "1993.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "An Occasional Hell"
+    },
+    {
+      "authors": [
+        "James Lee Burke"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1994",
+      "category": "Hammett Prize",
+      "position": "1994",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Dixie City Jam"
+    },
+    {
+      "authors": [
+        "Pinckney Benedict"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1994",
+      "category": "Hammett Prize",
+      "position": "1994.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Dogs of God"
+    },
+    {
+      "authors": [
+        "Mikal Gilmore"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1994",
+      "category": "Hammett Prize",
+      "position": "1994.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Shot in the Heart"
+    },
+    {
+      "authors": [
+        "Steve Lopez"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1994",
+      "category": "Hammett Prize",
+      "position": "1994.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Third and Indiana"
+    },
+    {
+      "authors": [
+        "Laura Joh Rowland"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1994",
+      "category": "Hammett Prize",
+      "position": "1994.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Shinju"
+    },
+    {
+      "authors": [
+        "Mary Willis Walker"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1995",
+      "category": "Hammett Prize",
+      "position": "1995",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Under the Beetle's Cellar"
+    },
+    {
+      "authors": [
+        "Susan Taylor Chehak"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1995",
+      "category": "Hammett Prize",
+      "position": "1995.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Smithereens"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1995",
+      "category": "Hammett Prize",
+      "position": "1995.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "The Last Coyote"
+    },
+    {
+      "authors": [
+        "Thomas H. Cook"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1995",
+      "category": "Hammett Prize",
+      "position": "1995.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Breakheart Hill"
+    },
+    {
+      "authors": [
+        "Andrew Klavan"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1995",
+      "category": "Hammett Prize",
+      "position": "1995.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "True Crime"
+    },
+    {
+      "authors": [
+        "Martin Cruz Smith"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1996",
+      "category": "Hammett Prize",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Rose"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1996",
+      "category": "Hammett Prize",
+      "position": "1996.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "The Poet"
+    },
+    {
+      "authors": [
+        "James W. Hall"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1996",
+      "category": "Hammett Prize",
+      "position": "1996.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Buzz Cut"
+    },
+    {
+      "authors": [
+        "Peter Robinson"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1996",
+      "category": "Hammett Prize",
+      "position": "1996.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Innocent Graves"
+    },
+    {
+      "authors": [
+        "Stephen Solomita"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1996",
+      "category": "Hammett Prize",
+      "position": "1996.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Damaged Goods"
+    },
+    {
+      "authors": [
+        "William Deverell"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1997",
+      "category": "Hammett Prize",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Trial of Passion"
+    },
+    {
+      "authors": [
+        "James Lee Burke"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1997",
+      "category": "Hammett Prize",
+      "position": "1997.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Cimarron Rose"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1997",
+      "category": "Hammett Prize",
+      "position": "1997.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Trunk Music"
+    },
+    {
+      "authors": [
+        "Bill Pronzini"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1997",
+      "category": "Hammett Prize",
+      "position": "1997.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "A Wasteland of Strangers"
+    },
+    {
+      "authors": [
+        "L.R. Wright"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1997",
+      "category": "Hammett Prize",
+      "position": "1997.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Acts of Murder"
+    },
+    {
+      "authors": [
+        "William Hoffman"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1998",
+      "category": "Hammett Prize",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Tidewater Blood"
+    },
+    {
+      "authors": [
+        "Kevin McColley"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1998",
+      "category": "Hammett Prize",
+      "position": "1998.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Praying to a Laughing God"
+    },
+    {
+      "authors": [
+        "Robert Noah"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1998",
+      "category": "Hammett Prize",
+      "position": "1998.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "The Man Who Stole the Mona Lisa"
+    },
+    {
+      "authors": [
+        "Domenic Stansberry"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1998",
+      "category": "Hammett Prize",
+      "position": "1998.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "The Last Days of Il Duce"
+    },
+    {
+      "authors": [
+        "Daniel Woodrell"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1998",
+      "category": "Hammett Prize",
+      "position": "1998.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Tomato Red"
+    },
+    {
+      "authors": [
+        "Martin Cruz Smith"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1999",
+      "category": "Hammett Prize",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Havana Bay"
+    },
+    {
+      "authors": [
+        "James Lee Burke"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1999",
+      "category": "Hammett Prize",
+      "position": "1999.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Heartwood"
+    },
+    {
+      "authors": [
+        "Rober Crais"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1999",
+      "category": "Hammett Prize",
+      "position": "1999.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "L.A. Requiem"
+    },
+    {
+      "authors": [
+        "Peter Robinson"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1999",
+      "category": "Hammett Prize",
+      "position": "1999.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "In a Dry Season"
+    },
+    {
+      "authors": [
+        "Scott Turow"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "1999",
+      "category": "Hammett Prize",
+      "position": "1999.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Personal Injuries"
+    },
+    {
+      "authors": [
+        "Margaret Atwood"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2000",
+      "category": "Hammett Prize",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "The Blind Assassin"
+    },
+    {
+      "authors": [
+        "Stephen Hunter"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2000",
+      "category": "Hammett Prize",
+      "position": "2000.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "Hot Springs"
+    },
+    {
+      "authors": [
+        "Joe R. Lansdale"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2000",
+      "category": "Hammett Prize",
+      "position": "2000.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "The Bottoms"
+    },
+    {
+      "authors": [
+        "Scott Phillips"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2000",
+      "category": "Hammett Prize",
+      "position": "2000.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "The Ice Harvest"
+    },
+    {
+      "authors": [
+        "Brad Smith"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2000",
+      "category": "Hammett Prize",
+      "position": "2000.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n"
+      },
+      "title": "One-Eyed Jacks"
+    },
+    {
+      "authors": [
+        "Alan Furst"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2001",
+      "category": "Hammett Prize",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "Kingdom of Shadows"
+    },
+    {
+      "authors": [
+        "Dennis Lehane"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2001",
+      "category": "Hammett Prize",
+      "position": "2001.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "Mystic River"
+    },
+    {
+      "authors": [
+        "T. Jefferson Parker"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2001",
+      "category": "Hammett Prize",
+      "position": "2001.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "Silent Joe"
+    },
+    {
+      "authors": [
+        "George P. Pelecanos"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2001",
+      "category": "Hammett Prize",
+      "position": "2001.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "Right as Rain"
+    },
+    {
+      "authors": [
+        "Rob Reuland"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2001",
+      "category": "Hammett Prize",
+      "position": "2001.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "Hollowpoint"
+    },
+    {
+      "authors": [
+        "Owen Parry"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2002",
+      "category": "Hammett Prize",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "Honor's Kingdom"
+    },
+    {
+      "authors": [
+        "James Lee Burke"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2002",
+      "category": "Hammett Prize",
+      "position": "2002.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "Jolie Blon's Bounce"
+    },
+    {
+      "authors": [
+        "John Case"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2002",
+      "category": "Hammett Prize",
+      "position": "2002.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "The Eighth Day"
+    },
+    {
+      "authors": [
+        "J. Robert Janes"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2002",
+      "category": "Hammett Prize",
+      "position": "2002.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "Flykiller"
+    },
+    {
+      "authors": [
+        "Walter Mosley"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2002",
+      "category": "Hammett Prize",
+      "position": "2002.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "Bad Boy Brawly Brown"
+    },
+    {
+      "authors": [
+        "Carol Goodman"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2003",
+      "category": "Hammett Prize",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "The Seduction of Water"
+    },
+    {
+      "authors": [
+        "Giles Blunt"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2003",
+      "category": "Hammett Prize",
+      "position": "2003.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "The Delicate Storm"
+    },
+    {
+      "authors": [
+        "Michael Gruber"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2003",
+      "category": "Hammett Prize",
+      "position": "2003.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "Tropic of Night"
+    },
+    {
+      "authors": [
+        "Dennis Lehane"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2003",
+      "category": "Hammett Prize",
+      "position": "2003.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "Shutter Island"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2003",
+      "category": "Hammett Prize",
+      "position": "2003.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "Every Secret Thing: A Novel"
+    },
+    {
+      "authors": [
+        "Chuck Hogan"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2004",
+      "category": "Hammett Prize",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "Prince of Thieves: A Novel"
+    },
+    {
+      "authors": [
+        "Colin Harrison"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2004",
+      "category": "Hammett Prize",
+      "position": "2004.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://us.macmillan.com/books/9780312427016/thehavanaroom"
+      },
+      "title": "The Havana Room"
+    },
+    {
+      "authors": [
+        "John Katzenbach"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2004",
+      "category": "Hammett Prize",
+      "position": "2004.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.johnkatzenbach.com/books/the-madmans-tale/"
+      },
+      "title": ") The Madman's Tale: A Novel"
+    },
+    {
+      "authors": [
+        "T. Jefferson Parker"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2004",
+      "category": "Hammett Prize",
+      "position": "2004.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "California Girl: A Novel"
+    },
+    {
+      "authors": [
+        "Peter Robinson"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2004",
+      "category": "Hammett Prize",
+      "position": "2004.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "Playing with Fire: A Novel of Suspense"
+    },
+    {
+      "authors": [
+        "Joseph Kanon"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2005",
+      "category": "Hammett Prize",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://josephkanon.com/alibi/"
+      },
+      "title": "Alibi: A Novel"
+    },
+    {
+      "authors": [
+        "John Brady"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2005",
+      "category": "Hammett Prize",
+      "position": "2005.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "Islandbridge"
+    },
+    {
+      "authors": [
+        "Martin L\u00edmon"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2005",
+      "category": "Hammett Prize",
+      "position": "2005.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "The Door to Bitterness"
+    },
+    {
+      "authors": [
+        "Cormac McCarthy"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2005",
+      "category": "Hammett Prize",
+      "position": "2005.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "No Country for Old Men"
+    },
+    {
+      "authors": [
+        "Don Winslow"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2005",
+      "category": "Hammett Prize",
+      "position": "2005.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.penguinrandomhouse.com/series/DAJ/power-of-the-dog-series/"
+      },
+      "title": "The Power of the Dog"
+    },
+    {
+      "authors": [
+        "Dan Fesperman"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2006",
+      "category": "Hammett Prize",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "The Prisoner of Guant\u00e1namo"
+    },
+    {
+      "authors": [
+        "John Case"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2006",
+      "category": "Hammett Prize",
+      "position": "2006.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "Ghost Dancer"
+    },
+    {
+      "authors": [
+        "Jim Nisbet"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2006",
+      "category": "Hammett Prize",
+      "position": "2006.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "Dark Companion"
+    },
+    {
+      "authors": [
+        "Bill Pronzini"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2006",
+      "category": "Hammett Prize",
+      "position": "2006.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "The Crimes of Jordan Wise"
+    },
+    {
+      "authors": [
+        "Robert Ward"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2006",
+      "category": "Hammett Prize",
+      "position": "2006.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.simonandschuster.com/books/Four-Kinds-Of-Rain/Robert-Ward/9781440550195"
+      },
+      "title": "Four Kinds of Rain"
+    },
+    {
+      "authors": [
+        "Gil Adamson"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2007",
+      "category": "Hammett Prize",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "The Outlander"
+    },
+    {
+      "authors": [
+        "Michael Chabon"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2007",
+      "category": "Hammett Prize",
+      "position": "2007.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "The Yiddish Policemen's Union: A Novel"
+    },
+    {
+      "authors": [
+        "Michael Dibdin"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2007",
+      "category": "Hammett Prize",
+      "position": "2007.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "End Games: An Aurelio Zen Mystery"
+    },
+    {
+      "authors": [
+        "Katie Estill"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2007",
+      "category": "Hammett Prize",
+      "position": "2007.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "(Pantheon) Dahlia's Gone: A Novel"
+    },
+    {
+      "authors": [
+        "Martin Cruz Smith"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2007",
+      "category": "Hammett Prize",
+      "position": "2007.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "Stalin's Ghost: An Arkady Renko Novel"
+    },
+    {
+      "authors": [
+        "George Pelecanos"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2008",
+      "category": "Hammett Prize",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "The Turnaround"
+    },
+    {
+      "authors": [
+        "Heywood Gould"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2008",
+      "category": "Hammett Prize",
+      "position": "2008.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "Leading Lady"
+    },
+    {
+      "authors": [
+        "Colin Harrison"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2008",
+      "category": "Hammett Prize",
+      "position": "2008.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "The Finder: A Novel"
+    },
+    {
+      "authors": [
+        "David Levien"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2008",
+      "category": "Hammett Prize",
+      "position": "2008.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "City of the Sun: A Novel"
+    },
+    {
+      "authors": [
+        "Abraham Rodriguez"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2008",
+      "category": "Hammett Prize",
+      "position": "2008.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "South by South Bronx"
+    },
+    {
+      "authors": [
+        "Jedediah Berry"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2009",
+      "category": "Hammett Prize",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "The Manual of Detection: A Novel"
+    },
+    {
+      "authors": [
+        "Megan E. Abbott"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2009",
+      "category": "Hammett Prize",
+      "position": "2009.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "Bury Me Deep: A Novel"
+    },
+    {
+      "authors": [
+        "Ace Atkins"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2009",
+      "category": "Hammett Prize",
+      "position": "2009.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "Devil's Garden"
+    },
+    {
+      "authors": [
+        "Walter Mosley"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2009",
+      "category": "Hammett Prize",
+      "position": "2009.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "The Long Fall"
+    },
+    {
+      "authors": [
+        "George Pelecanos"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2009",
+      "category": "Hammett Prize",
+      "position": "2009.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "The Way Home"
+    },
+    {
+      "authors": [
+        "Olen Steinhauer"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2010",
+      "category": "Hammett Prize",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "The Nearest Exit"
+    },
+    {
+      "authors": [
+        "Jonathan Eig"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2010",
+      "category": "Hammett Prize",
+      "position": "2010.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "Get Capone: The Secret Plot That Captured America's Most Wanted Gangster"
+    },
+    {
+      "authors": [
+        "Tom Franklin"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2010",
+      "category": "Hammett Prize",
+      "position": "2010.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "Crooked Letter, Crooked Letter: A Novel"
+    },
+    {
+      "authors": [
+        "T. Jefferson Parker"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2010",
+      "category": "Hammett Prize",
+      "position": "2010.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-1"
+      },
+      "title": "Iron River"
+    },
+    {
+      "authors": [
+        "James Sallis"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2011",
+      "category": "Hammett Prize",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "The Killer is Dying: A Novel"
+    },
+    {
+      "authors": [
+        "James Lee Burke"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2011",
+      "category": "Hammett Prize",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Feast Day of Fools: A Novel"
+    },
+    {
+      "authors": [
+        "Sara Gran"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2011",
+      "category": "Hammett Prize",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Claire DeWitt and the City of the Dead"
+    },
+    {
+      "authors": [
+        "Michael Ondaatje"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2011",
+      "category": "Hammett Prize",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "The Cat's Table"
+    },
+    {
+      "authors": [
+        "Thomas Perry"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2011",
+      "category": "Hammett Prize",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "The Informant"
+    },
+    {
+      "authors": [
+        "Howard Owen"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2012",
+      "category": "Hammett Prize",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Oregon Hill"
+    },
+    {
+      "authors": [
+        "William Landay"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2012",
+      "category": "Hammett Prize",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Defending Jacob: A Novel"
+    },
+    {
+      "authors": [
+        "Jim Lynch"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2012",
+      "category": "Hammett Prize",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Truth Like the Sun: A Novel"
+    },
+    {
+      "authors": [
+        "Kurt Palka"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2012",
+      "category": "Hammett Prize",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Patient Number 7"
+    },
+    {
+      "authors": [
+        "G. Willow Wilson"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2012",
+      "category": "Hammett Prize",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Alif the Unseen"
+    },
+    {
+      "authors": [
+        "Richard Lange"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2013",
+      "category": "Hammett Prize",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Angel Baby: A Novel"
+    },
+    {
+      "authors": [
+        "Craig Davidson"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2013",
+      "category": "Hammett Prize",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Cataract City: A Novel"
+    },
+    {
+      "authors": [
+        "Heywood Gould"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2013",
+      "category": "Hammett Prize",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Green Light for Murder"
+    },
+    {
+      "authors": [
+        "Lisa Moore"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2013",
+      "category": "Hammett Prize",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Caught"
+    },
+    {
+      "authors": [
+        "George P. Pelecanos"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2013",
+      "category": "Hammett Prize",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "The Double"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2014",
+      "category": "Hammett Prize",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Mr. Mercedes: A Novel"
+    },
+    {
+      "authors": [
+        "James Lee Burke"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2014",
+      "category": "Hammett Prize",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Wayfaring Stranger: A Novel"
+    },
+    {
+      "authors": [
+        "Krista Foss"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2014",
+      "category": "Hammett Prize",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Smoke River"
+    },
+    {
+      "authors": [
+        "Tod Goldberg"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2014",
+      "category": "Hammett Prize",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Gangsterland: A Novel"
+    },
+    {
+      "authors": [
+        "Peyton Marshall"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2014",
+      "category": "Hammett Prize",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Goodhouse: A Novel"
+    },
+    {
+      "authors": [
+        "Lisa Sandlin"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2015",
+      "category": "Hammett Prize",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "The Do-Right"
+    },
+    {
+      "authors": [
+        "Harlan Coben"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2015",
+      "category": "Hammett Prize",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "The Stranger"
+    },
+    {
+      "authors": [
+        "Michael J. McCann"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2015",
+      "category": "Hammett Prize",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Sorrow Lake: A March and Walker Crime Novel"
+    },
+    {
+      "authors": [
+        "Richard Price"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2015",
+      "category": "Hammett Prize",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "The Whites: A Novel"
+    },
+    {
+      "authors": [
+        "Stu Strumwasser"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2015",
+      "category": "Hammett Prize",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "The Organ Broker: A Novel"
+    },
+    {
+      "authors": [
+        "Domenic Stansberry"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2016",
+      "category": "Hammett Prize",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "The White Devil"
+    },
+    {
+      "authors": [
+        "Steve Hamilton"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2016",
+      "category": "Hammett Prize",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "The Second Life of Nick Mason"
+    },
+    {
+      "authors": [
+        "Nicholas Petrie"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2016",
+      "category": "Hammett Prize",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "The Drifter"
+    },
+    {
+      "authors": [
+        "Duane Swierczynski"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2016",
+      "category": "Hammett Prize",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Revolver"
+    },
+    {
+      "authors": [
+        "Bob Truluck"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2016",
+      "category": "Hammett Prize",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "The Big Nothing"
+    },
+    {
+      "authors": [
+        "Stephen Mack Jones"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2017",
+      "category": "Hammett Prize",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "August Snow"
+    },
+    {
+      "authors": [
+        "Karen Dionne"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2017",
+      "category": "Hammett Prize",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "The Marsh King's Daughter: A Novel"
+    },
+    {
+      "authors": [
+        "Ernest J. Gaines"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2017",
+      "category": "Hammett Prize",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "The Tragedy of Brady Sims: A Novel"
+    },
+    {
+      "authors": [
+        "Randall Silvis"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2017",
+      "category": "Hammett Prize",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Two Days Gone: A Novel"
+    },
+    {
+      "authors": [
+        "Lou Berney"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2018",
+      "category": "Hammett Prize",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "November Road"
+    },
+    {
+      "authors": [
+        "Robert Olen Butler"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2018",
+      "category": "Hammett Prize",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Paris in the Dark"
+    },
+    {
+      "authors": [
+        "William Boyle"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2018",
+      "category": "Hammett Prize",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "The Lonely Witness"
+    },
+    {
+      "authors": [
+        "Sam Wiebe"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2018",
+      "category": "Hammett Prize",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Cut You Down"
+    },
+    {
+      "authors": [
+        "Lisa Unger"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2018",
+      "category": "Hammett Prize",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Under My Skin"
+    },
+    {
+      "authors": [
+        "Jane Stanton Hitchcock"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2019",
+      "category": "Hammett Prize",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Bluff"
+    },
+    {
+      "authors": [
+        "Nicolas Meyer"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2019",
+      "category": "Hammett Prize",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "The Adventure of the Peculiar Protocols"
+    },
+    {
+      "authors": [
+        "Jonathan Moore"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2019",
+      "category": "Hammett Prize",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Blood Relations"
+    },
+    {
+      "authors": [
+        "William Bayer"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2019",
+      "category": "Hammett Prize",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "The Murals"
+    },
+    {
+      "authors": [
+        "Peter Houlahan"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2019",
+      "category": "Hammett Prize",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Norco '80: The True Story of the Most Spectacular Bank Robbery in American History"
+    },
+    {
+      "authors": [
+        "David Joy"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2020",
+      "category": "Hammett Prize",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "When These Mountains Burn"
+    },
+    {
+      "authors": [
+        "Cara Black"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2020",
+      "category": "Hammett Prize",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Three Hours in Paris"
+    },
+    {
+      "authors": [
+        "Sara Stewart Taylor"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2020",
+      "category": "Hammett Prize",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "The Mountains Wild"
+    },
+    {
+      "authors": [
+        "David Heska Wanbli Weiden"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2020",
+      "category": "Hammett Prize",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Winter Counts"
+    },
+    {
+      "authors": [
+        "Nev March"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2020",
+      "category": "Hammett Prize",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/copy-of-hammett-prize-past-winners-n-2"
+      },
+      "title": "Murder in Old Bombay"
+    },
+    {
+      "authors": [
+        "S.A. Cosby"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2021",
+      "category": "Hammett Prize",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/hammett-prize-past-winners-nominees-j"
+      },
+      "title": "Razorblade Tears"
+    },
+    {
+      "authors": [
+        "William Deverell"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2021",
+      "category": "Hammett Prize",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/hammett-prize-past-winners-nominees-j"
+      },
+      "title": "Stung"
+    },
+    {
+      "authors": [
+        "James Kestrel"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2021",
+      "category": "Hammett Prize",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/hammett-prize-past-winners-nominees-j"
+      },
+      "title": "Five Decembers"
+    },
+    {
+      "authors": [
+        "Colson Whitehead"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2021",
+      "category": "Hammett Prize",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/hammett-prize-past-winners-nominees-j"
+      },
+      "title": "Harlem Shuffle"
+    },
+    {
+      "authors": [
+        "Robin Yocum"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2021",
+      "category": "Hammett Prize",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/hammett-prize-past-winners-nominees-j"
+      },
+      "title": "The Sacrifice of Lester Yates"
+    },
+    {
+      "authors": [
+        "Samantha Jayne Allen"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2022",
+      "category": "Hammett Prize",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/hammett-prize-past-winners-nominees-j"
+      },
+      "title": "Pay Dirt Road"
+    },
+    {
+      "authors": [
+        "Brad Smith"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2022",
+      "category": "Hammett Prize",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/hammett-prize-past-winners-nominees-j"
+      },
+      "title": "Copperhead Road"
+    },
+    {
+      "authors": [
+        "Eli Cranor"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2022",
+      "category": "Hammett Prize",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/hammett-prize-past-winners-nominees-j"
+      },
+      "title": "Don't Know Tough"
+    },
+    {
+      "authors": [
+        "Lisa Scottoline"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2022",
+      "category": "Hammett Prize",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/hammett-prize-past-winners-nominees-j"
+      },
+      "title": "What Happened to the Bennetts"
+    },
+    {
+      "authors": [
+        "Chuck Hogan"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2022",
+      "category": "Hammett Prize",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/hammett-prize-past-winners-nominees-j"
+      },
+      "title": "Gangland"
+    },
+    {
+      "authors": [
+        "Colson Whitehead"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2023",
+      "category": "Hammett Prize",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/hammett-prize-past-winners-nominees-j"
+      },
+      "title": "Crook Manifesto"
+    },
+    {
+      "authors": [
+        "Gail AndersonDargatz"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2023",
+      "category": "Hammett Prize",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/hammett-prize-past-winners-nominees-j"
+      },
+      "title": "The Almost Widow"
+    },
+    {
+      "authors": [
+        "Sterling Watson"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2023",
+      "category": "Hammett Prize",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/hammett-prize-past-winners-nominees-j"
+      },
+      "title": "Night Letter"
+    },
+    {
+      "authors": [
+        "Cl\u00e9mence Michallon"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2023",
+      "category": "Hammett Prize",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/hammett-prize-past-winners-nominees-j"
+      },
+      "title": "The Quiet Tenant"
+    },
+    {
+      "authors": [
+        "Margaret Verble"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2023",
+      "category": "Hammett Prize",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.crimewritersna.org/hammett-prize-past-winners-nominees-j"
+      },
+      "title": "Stealing"
+    },
+    {
+      "authors": [
+        "Liz Moore"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2024",
+      "category": "Hammett Prize",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.penguinrandomhouse.com/books/676637/the-god-of-the-woods-by-liz-moore/"
+      },
+      "title": "God of the Woods"
+    },
+    {
+      "authors": [
+        "William Deverell"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2024",
+      "category": "Hammett Prize",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://ecwpress.com/products/long-shot-trial"
+      },
+      "title": "The Long-Shot Trial"
+    },
+    {
+      "authors": [
+        "Dietrich Kalteis"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2024",
+      "category": "Hammett Prize",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://ecwpress.com/products/crooked"
+      },
+      "title": "Crooked"
+    },
+    {
+      "authors": [
+        "Katrina Carrasco"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2024",
+      "category": "Hammett Prize",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://us.macmillan.com/books/9780374272685/roughtrade/"
+      },
+      "title": "Rough Trade"
+    },
+    {
+      "authors": [
+        "Eli Cranor"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2024",
+      "category": "Hammett Prize",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://sohopress.com/books/broiler/"
+      },
+      "title": "Broiler"
+    }
+  ],
+  "fetched_at": "2026-07-18T02:42:00Z",
+  "list_id": "hammett_prize",
+  "list_name": "Hammett Prize",
+  "match_series": false,
+  "notes": [],
+  "parser": "hammett_prize",
+  "schema_version": 2,
+  "source": {
+    "name": "Hammett Prize",
+    "source_id": "hammett_prize",
+    "url": "https://www.crimewritersna.org/hammett-prize"
+  }
+}

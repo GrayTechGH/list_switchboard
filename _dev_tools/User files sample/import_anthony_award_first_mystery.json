@@ -1,0 +1,2233 @@
+{
+  "append_state": {
+    "entry_count": 201,
+    "last_entry_key": "julie chan is dead|liann zhang",
+    "last_position": "2026.06",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Jonathan Kellerman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1986",
+      "category": "Best First Mystery",
+      "position": "1986",
+      "result": "winner",
+      "title": "When the Bough Breaks"
+    },
+    {
+      "authors": [
+        "Susan Kelly"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1986",
+      "category": "Best First Mystery",
+      "position": "1986.01",
+      "result": "nominee",
+      "title": "The Gemini Man"
+    },
+    {
+      "authors": [
+        "Dick Lochte"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1986",
+      "category": "Best First Mystery",
+      "position": "1986.02",
+      "result": "nominee",
+      "title": "Sleeping Dog"
+    },
+    {
+      "authors": [
+        "Robert Reeves"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1986",
+      "category": "Best First Mystery",
+      "position": "1986.03",
+      "result": "nominee",
+      "title": "Doubting Thomas"
+    },
+    {
+      "authors": [
+        "Andrew Vachss"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1986",
+      "category": "Best First Mystery",
+      "position": "1986.04",
+      "result": "nominee",
+      "title": "Flood"
+    },
+    {
+      "authors": [
+        "Bill Crider"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1987",
+      "category": "Best First Mystery",
+      "position": "1987",
+      "result": "winner",
+      "title": "Too Late To Die"
+    },
+    {
+      "authors": [
+        "Joan Hess"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1987",
+      "category": "Best First Mystery",
+      "position": "1987.01",
+      "result": "nominee",
+      "title": "Strangled Prose"
+    },
+    {
+      "authors": [
+        "Faye Kellerman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1987",
+      "category": "Best First Mystery",
+      "position": "1987.02",
+      "result": "nominee",
+      "title": "The Ritual Bath"
+    },
+    {
+      "authors": [
+        "Joseph Koenig"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1987",
+      "category": "Best First Mystery",
+      "position": "1987.03",
+      "result": "nominee",
+      "title": "Floater"
+    },
+    {
+      "authors": [
+        "Mike Lupica"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1987",
+      "category": "Best First Mystery",
+      "position": "1987.04",
+      "result": "nominee",
+      "title": "Dead Air"
+    },
+    {
+      "authors": [
+        "Gillian Roberts"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1988",
+      "category": "Best First Mystery",
+      "position": "1988",
+      "result": "winner",
+      "title": "Caught Dead in Philadelphia"
+    },
+    {
+      "authors": [
+        "Michael Allegretto"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1988",
+      "category": "Best First Mystery",
+      "position": "1988.01",
+      "result": "nominee",
+      "title": "Death on the Rocks"
+    },
+    {
+      "authors": [
+        "Robert Bowman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1988",
+      "category": "Best First Mystery",
+      "position": "1988.02",
+      "result": "nominee",
+      "title": "The House of Blue Lights"
+    },
+    {
+      "authors": [
+        "Mary Monica Pulver"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1988",
+      "category": "Best First Mystery",
+      "position": "1988.03",
+      "result": "nominee",
+      "title": "Murder at the War"
+    },
+    {
+      "authors": [
+        "Les Roberts"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1988",
+      "category": "Best First Mystery",
+      "position": "1988.04",
+      "result": "nominee",
+      "title": "An Infinite Number of Monkeys"
+    },
+    {
+      "authors": [
+        "Elizabeth George"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1989",
+      "category": "Best First Mystery",
+      "position": "1989",
+      "result": "winner",
+      "title": "A Great Deliverance"
+    },
+    {
+      "authors": [
+        "Mary Lou Bennett"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1989",
+      "category": "Best First Mystery",
+      "position": "1989.01",
+      "result": "nominee",
+      "title": "Murder Once Done"
+    },
+    {
+      "authors": [
+        "Caroline Graham"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1989",
+      "category": "Best First Mystery",
+      "position": "1989.02",
+      "result": "nominee",
+      "title": "The Killings at Badger\u2019s Drift"
+    },
+    {
+      "authors": [
+        "Linda Grant"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1989",
+      "category": "Best First Mystery",
+      "position": "1989.03",
+      "result": "nominee",
+      "title": "Random Access Murder"
+    },
+    {
+      "authors": [
+        "Gar Anthony Haywood"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1989",
+      "category": "Best First Mystery",
+      "position": "1989.04",
+      "result": "nominee",
+      "title": "Fear of the Dark"
+    },
+    {
+      "authors": [
+        "David Stout"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1989",
+      "category": "Best First Mystery",
+      "position": "1989.05",
+      "result": "nominee",
+      "title": "Carolina Skeletons"
+    },
+    {
+      "authors": [
+        "Karen Kijewski"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1990",
+      "category": "Best First Mystery",
+      "position": "1990",
+      "result": "winner",
+      "title": "Katwalk"
+    },
+    {
+      "authors": [
+        "Jill Churchill"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1990",
+      "category": "Best First Mystery",
+      "position": "1990.01",
+      "result": "nominee",
+      "title": "Grime & Punishment"
+    },
+    {
+      "authors": [
+        "Melodie Johnson Howe"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1990",
+      "category": "Best First Mystery",
+      "position": "1990.02",
+      "result": "nominee",
+      "title": "The Mother Shadow"
+    },
+    {
+      "authors": [
+        "Edith Skom"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1990",
+      "category": "Best First Mystery",
+      "position": "1990.03",
+      "result": "nominee",
+      "title": "The Mark Twain Murders"
+    },
+    {
+      "authors": [
+        "Susan Wolfe"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1990",
+      "category": "Best First Mystery",
+      "position": "1990.04",
+      "result": "nominee",
+      "title": "The Last Billable Hour"
+    },
+    {
+      "authors": [
+        "Patricia Cornwell"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1991",
+      "category": "Best First Mystery",
+      "position": "1991",
+      "result": "winner",
+      "title": "Postmortem"
+    },
+    {
+      "authors": [
+        "Diane Mott Davidson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1991",
+      "category": "Best First Mystery",
+      "position": "1991.01",
+      "result": "nominee",
+      "title": "Catering to Nobody"
+    },
+    {
+      "authors": [
+        "Janet Dawson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1991",
+      "category": "Best First Mystery",
+      "position": "1991.02",
+      "result": "nominee",
+      "title": "Kindred Crimes"
+    },
+    {
+      "authors": [
+        "Rochelle Krich"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1991",
+      "category": "Best First Mystery",
+      "position": "1991.03",
+      "result": "nominee",
+      "title": "Where\u2019s Mommy Now?"
+    },
+    {
+      "authors": [
+        "James McCahery"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1991",
+      "category": "Best First Mystery",
+      "position": "1991.04",
+      "result": "nominee",
+      "title": "Grave Undertaking"
+    },
+    {
+      "authors": [
+        "Sue Henry"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1992",
+      "category": "Best First Mystery",
+      "position": "1992",
+      "result": "winner",
+      "title": "Murder on the Iditarod Trail"
+    },
+    {
+      "authors": [
+        "Mary Cahill"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1992",
+      "category": "Best First Mystery",
+      "position": "1992.01",
+      "result": "nominee",
+      "title": "Carpool"
+    },
+    {
+      "authors": [
+        "Margaret Lucke"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1992",
+      "category": "Best First Mystery",
+      "position": "1992.02",
+      "result": "nominee",
+      "title": "A Relative Stranger"
+    },
+    {
+      "authors": [
+        "Rebecca Rothenberg"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1992",
+      "category": "Best First Mystery",
+      "position": "1992.03",
+      "result": "nominee",
+      "title": "The Bulrush Murders"
+    },
+    {
+      "authors": [
+        "Leslie Elizabeth Watts"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1992",
+      "category": "Best First Mystery",
+      "position": "1992.04",
+      "result": "nominee",
+      "title": "The Chocolate Box"
+    },
+    {
+      "authors": [
+        "Gloria White"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1992",
+      "category": "Best First Mystery",
+      "position": "1992.05",
+      "result": "nominee",
+      "title": "Murder on the Run"
+    },
+    {
+      "authors": [
+        "Barbara Neely"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1993",
+      "category": "Best First Mystery",
+      "position": "1993",
+      "result": "winner",
+      "title": "Blanche on the Lam"
+    },
+    {
+      "authors": [
+        "Susan Wittig Albert"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1993",
+      "category": "Best First Mystery",
+      "position": "1993.01",
+      "result": "nominee",
+      "title": "Thyme of Death"
+    },
+    {
+      "authors": [
+        "Carol Higgins Clark"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1993",
+      "category": "Best First Mystery",
+      "position": "1993.02",
+      "result": "nominee",
+      "title": "Decked"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1993",
+      "category": "Best First Mystery",
+      "position": "1993.03",
+      "result": "nominee",
+      "title": "The Black Echo"
+    },
+    {
+      "authors": [
+        "Charlene Weir"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1993",
+      "category": "Best First Mystery",
+      "position": "1993.04",
+      "result": "nominee",
+      "title": "The Winter Widow"
+    },
+    {
+      "authors": [
+        "Nevada Barr"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1994",
+      "category": "Best First Mystery",
+      "position": "1994",
+      "result": "winner",
+      "title": "Track of the Cat"
+    },
+    {
+      "authors": [
+        "Jan Burke"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1994",
+      "category": "Best First Mystery",
+      "position": "1994.01",
+      "result": "nominee",
+      "title": "Goodnight, Irene"
+    },
+    {
+      "authors": [
+        "Laurie R. King"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1994",
+      "category": "Best First Mystery",
+      "position": "1994.02",
+      "result": "nominee",
+      "title": "A Grave Talent"
+    },
+    {
+      "authors": [
+        "Sharan Newman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1994",
+      "category": "Best First Mystery",
+      "position": "1994.03",
+      "result": "nominee",
+      "title": "Death Comes as Epiphany"
+    },
+    {
+      "authors": [
+        "Abigail Padgett"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1994",
+      "category": "Best First Mystery",
+      "position": "1994.04",
+      "result": "nominee",
+      "title": "Child of Silence"
+    },
+    {
+      "authors": [
+        "Caleb Carr"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1995",
+      "category": "Best First Mystery",
+      "position": "1995",
+      "result": "winner",
+      "title": "The Alienist"
+    },
+    {
+      "authors": [
+        "David Guterson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1995",
+      "category": "Best First Mystery",
+      "position": "1995.01",
+      "result": "nominee",
+      "title": "Snow Falling on Cedars"
+    },
+    {
+      "authors": [
+        "Alex Keegan"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1995",
+      "category": "Best First Mystery",
+      "position": "1995.02",
+      "result": "nominee",
+      "title": "Cuckoo"
+    },
+    {
+      "authors": [
+        "Dennis Lehane"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1995",
+      "category": "Best First Mystery",
+      "position": "1995.03",
+      "result": "nominee",
+      "title": "A Drink Before the War"
+    },
+    {
+      "authors": [
+        "Carol O\u2019Connell"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1995",
+      "category": "Best First Mystery",
+      "position": "1995.04",
+      "result": "nominee",
+      "title": "Mallory\u2019s Oracle"
+    },
+    {
+      "authors": [
+        "Laura Joh Rowland"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1995",
+      "category": "Best First Mystery",
+      "position": "1995.05",
+      "result": "nominee",
+      "title": "Shinju"
+    },
+    {
+      "authors": [
+        "Michelle Spring"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1995",
+      "category": "Best First Mystery",
+      "position": "1995.06",
+      "result": "nominee",
+      "title": "Every Breath You Take"
+    },
+    {
+      "authors": [
+        "Doug J. Swanson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1995",
+      "category": "Best First Mystery",
+      "position": "1995.07",
+      "result": "nominee",
+      "title": "Big Town"
+    },
+    {
+      "authors": [
+        "Christopher West"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1995",
+      "category": "Best First Mystery",
+      "position": "1995.08",
+      "result": "nominee",
+      "title": "Death of a Blue Lantern"
+    },
+    {
+      "authors": [
+        "Virginia Lanier"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1996",
+      "category": "Best First Mystery",
+      "position": "1996",
+      "result": "winner",
+      "title": "Death in Bloodhound Red"
+    },
+    {
+      "authors": [
+        "Richard Barre"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1996",
+      "category": "Best First Mystery",
+      "position": "1996.01",
+      "result": "nominee",
+      "title": "The Innocents"
+    },
+    {
+      "authors": [
+        "G.M. Ford"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1996",
+      "category": "Best First Mystery",
+      "position": "1996.02",
+      "result": "nominee",
+      "title": "Who in Hell Is Wanda Fuca?"
+    },
+    {
+      "authors": [
+        "Charles Kenney"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1996",
+      "category": "Best First Mystery",
+      "position": "1996.03",
+      "result": "nominee",
+      "title": "Hammurabi\u2019s Code"
+    },
+    {
+      "authors": [
+        "Martha C. Lawrence"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1996",
+      "category": "Best First Mystery",
+      "position": "1996.04",
+      "result": "nominee",
+      "title": "Murder in Scorpio"
+    },
+    {
+      "authors": [
+        "Lee Child"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1998",
+      "category": "Best First Mystery",
+      "position": "1998",
+      "result": "winner",
+      "title": "Killing Floor"
+    },
+    {
+      "authors": [
+        "Grace Edwards"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1998",
+      "category": "Best First Mystery",
+      "position": "1998.01",
+      "result": "nominee",
+      "title": "If I Should Die"
+    },
+    {
+      "authors": [
+        "Maureen Jennings"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1998",
+      "category": "Best First Mystery",
+      "position": "1998.02",
+      "result": "nominee",
+      "title": "Except the Dying"
+    },
+    {
+      "authors": [
+        "Philip Reed"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1998",
+      "category": "Best First Mystery",
+      "position": "1998.03",
+      "result": "nominee",
+      "title": "Bird Dog"
+    },
+    {
+      "authors": [
+        "Robert E. Skinner"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1998",
+      "category": "Best First Mystery",
+      "position": "1998.04",
+      "result": "nominee",
+      "title": "Skin Deep, Blood Red"
+    },
+    {
+      "authors": [
+        "William Kent Krueger"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1999",
+      "category": "Best First Mystery",
+      "position": "1999",
+      "result": "winner",
+      "title": "Iron Lake"
+    },
+    {
+      "authors": [
+        "Jerrilyn Farmer"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1999",
+      "category": "Best First Mystery",
+      "position": "1999.01",
+      "result": "nominee",
+      "title": "Sympathy for the Devil"
+    },
+    {
+      "authors": [
+        "Jacqueline Fielder"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1999",
+      "category": "Best First Mystery",
+      "position": "1999.02",
+      "result": "nominee",
+      "title": "Tiger\u2019s Palette"
+    },
+    {
+      "authors": [
+        "Steve Hamilton"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1999",
+      "category": "Best First Mystery",
+      "position": "1999.03",
+      "result": "nominee",
+      "title": "A Cold Day in Paradise"
+    },
+    {
+      "authors": [
+        "Donald Harstad"
+      ],
+      "award": "Anthony Award",
+      "award_year": "1999",
+      "category": "Best First Mystery",
+      "position": "1999.04",
+      "result": "nominee",
+      "title": "Eleven Days"
+    },
+    {
+      "authors": [
+        "Donna Andrews"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2000",
+      "category": "Best First Mystery",
+      "position": "2000",
+      "result": "winner",
+      "title": "Murder With Peacocks"
+    },
+    {
+      "authors": [
+        "Cara Black"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2000",
+      "category": "Best First Mystery",
+      "position": "2000.01",
+      "result": "nominee",
+      "title": "Murder in the Marais"
+    },
+    {
+      "authors": [
+        "April Henry"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2000",
+      "category": "Best First Mystery",
+      "position": "2000.02",
+      "result": "nominee",
+      "title": "Circles of Confusion"
+    },
+    {
+      "authors": [
+        "Kris Neri"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2000",
+      "category": "Best First Mystery",
+      "position": "2000.03",
+      "result": "nominee",
+      "title": "Revenge of the Gypsy Queen"
+    },
+    {
+      "authors": [
+        "Paula L. Woods"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2000",
+      "category": "Best First Mystery",
+      "position": "2000.04",
+      "result": "nominee",
+      "title": "Inner City Blues"
+    },
+    {
+      "authors": [
+        "Qiu Xiaolong"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2001",
+      "category": "Best First Mystery",
+      "position": "2001",
+      "result": "winner",
+      "title": "Death of a Red Heroine"
+    },
+    {
+      "authors": [
+        "Stephen Booth"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2001",
+      "category": "Best First Mystery",
+      "position": "2001.01",
+      "result": "nominee",
+      "title": "Black Dog"
+    },
+    {
+      "authors": [
+        "David Liss"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2001",
+      "category": "Best First Mystery",
+      "position": "2001.02",
+      "result": "nominee",
+      "title": "A Conspiracy of Paper"
+    },
+    {
+      "authors": [
+        "Scott Philllips"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2001",
+      "category": "Best First Mystery",
+      "position": "2001.03",
+      "result": "nominee",
+      "title": "The Ice Harvest"
+    },
+    {
+      "authors": [
+        "Bob Truluck"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2001",
+      "category": "Best First Mystery",
+      "position": "2001.04",
+      "result": "nominee",
+      "title": "Street Level"
+    },
+    {
+      "authors": [
+        "Douglas E. Winter"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2001",
+      "category": "Best First Mystery",
+      "position": "2001.05",
+      "result": "nominee",
+      "title": "Run"
+    },
+    {
+      "authors": [
+        "C.J. Box"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2002",
+      "category": "Best First Mystery",
+      "position": "2002",
+      "result": "winner",
+      "title": "Open Season"
+    },
+    {
+      "authors": [
+        "K.J. Erikson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2002",
+      "category": "Best First Mystery",
+      "position": "2002.01",
+      "result": "nominee",
+      "title": "Third Person Singular"
+    },
+    {
+      "authors": [
+        "Jan Grape"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2002",
+      "category": "Best First Mystery",
+      "position": "2002.02",
+      "result": "nominee",
+      "title": "Austin City Blue"
+    },
+    {
+      "authors": [
+        "Denise Hamilton"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2002",
+      "category": "Best First Mystery",
+      "position": "2002.03",
+      "result": "nominee",
+      "title": "The Jasmine Trade"
+    },
+    {
+      "authors": [
+        "Andy Straka"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2002",
+      "category": "Best First Mystery",
+      "position": "2002.04",
+      "result": "nominee",
+      "title": "A Witness Above"
+    },
+    {
+      "authors": [
+        "Julia Spencer-Fleming"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2003",
+      "category": "Best First Mystery",
+      "position": "2003",
+      "result": "winner",
+      "title": "In the Bleak Midwinter"
+    },
+    {
+      "authors": [
+        "David Corbett"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2003",
+      "category": "Best First Mystery",
+      "position": "2003.01",
+      "result": "nominee",
+      "title": "The Devil\u2019s Redhead"
+    },
+    {
+      "authors": [
+        "Libby Fischer Hellmann"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2003",
+      "category": "Best First Mystery",
+      "position": "2003.02",
+      "result": "nominee",
+      "title": "An Eye for Murder"
+    },
+    {
+      "authors": [
+        "Jonathon King"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2003",
+      "category": "Best First Mystery",
+      "position": "2003.03",
+      "result": "nominee",
+      "title": "The Blue Edge of Midnight"
+    },
+    {
+      "authors": [
+        "Eddie Muller"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2003",
+      "category": "Best First Mystery",
+      "position": "2003.04",
+      "result": "nominee",
+      "title": "The Distance"
+    },
+    {
+      "authors": [
+        "P.J. Tracy"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2004",
+      "category": "Best First Mystery",
+      "position": "2004",
+      "result": "winner",
+      "title": "Monkeewrench / Want To Play?"
+    },
+    {
+      "authors": [
+        "Erin Hart"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2004",
+      "category": "Best First Mystery",
+      "position": "2004.01",
+      "result": "nominee",
+      "title": "Haunted Ground"
+    },
+    {
+      "authors": [
+        "Rebecca Pawel"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2004",
+      "category": "Best First Mystery",
+      "position": "2004.02",
+      "result": "nominee",
+      "title": "Death of a Nationalist"
+    },
+    {
+      "authors": [
+        "Lono Waiwaiole"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2004",
+      "category": "Best First Mystery",
+      "position": "2004.03",
+      "result": "nominee",
+      "title": "Wiley\u2019s Lament"
+    },
+    {
+      "authors": [
+        "Jacqueline Winspear"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2004",
+      "category": "Best First Mystery",
+      "position": "2004.04",
+      "result": "nominee",
+      "title": "Maisie Dobbs"
+    },
+    {
+      "authors": [
+        "Harley Jane Kozak"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2005",
+      "category": "Best First Mystery",
+      "position": "2005",
+      "result": "winner",
+      "title": "Dating Dead Men"
+    },
+    {
+      "authors": [
+        "Sandra Balzo"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2005",
+      "category": "Best First Mystery",
+      "position": "2005.01",
+      "result": "nominee",
+      "title": "Uncommon Grounds"
+    },
+    {
+      "authors": [
+        "Judy Clemens"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2005",
+      "category": "Best First Mystery",
+      "position": "2005.02",
+      "result": "nominee",
+      "title": "Till the Cows Come Home"
+    },
+    {
+      "authors": [
+        "Juliane Hoffman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2005",
+      "category": "Best First Mystery",
+      "position": "2005.03",
+      "result": "nominee",
+      "title": "Retribution"
+    },
+    {
+      "authors": [
+        "J.A. Konrath"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2005",
+      "category": "Best First Mystery",
+      "position": "2005.04",
+      "result": "nominee",
+      "title": "Whiskey Sour"
+    },
+    {
+      "authors": [
+        "Chris Grabenstein"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2006",
+      "category": "Best First Mystery",
+      "position": "2006",
+      "result": "winner",
+      "title": "Tilt-a-Whirl"
+    },
+    {
+      "authors": [
+        "Megan Abbott"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2006",
+      "category": "Best First Mystery",
+      "position": "2006.01",
+      "result": "nominee",
+      "title": "Die a Little"
+    },
+    {
+      "authors": [
+        "Brian Freeman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2006",
+      "category": "Best First Mystery",
+      "position": "2006.02",
+      "result": "nominee",
+      "title": "Immoral"
+    },
+    {
+      "authors": [
+        "Randall Hicks"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2006",
+      "category": "Best First Mystery",
+      "position": "2006.03",
+      "result": "nominee",
+      "title": "The Baby Game"
+    },
+    {
+      "authors": [
+        "Theresa Schwegel"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2006",
+      "category": "Best First Mystery",
+      "position": "2006.04",
+      "result": "nominee",
+      "title": "Officer Down"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2007",
+      "category": "Best First Mystery",
+      "position": "2007",
+      "result": "winner",
+      "title": "Still Life"
+    },
+    {
+      "authors": [
+        "John Hart"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2007",
+      "category": "Best First Mystery",
+      "position": "2007.01",
+      "result": "nominee",
+      "title": "King of Lies"
+    },
+    {
+      "authors": [
+        "Steve Hockensmith"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2007",
+      "category": "Best First Mystery",
+      "position": "2007.02",
+      "result": "nominee",
+      "title": "Holmes on the Range"
+    },
+    {
+      "authors": [
+        "Alexandra Sokoloff"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2007",
+      "category": "Best First Mystery",
+      "position": "2007.03",
+      "result": "nominee",
+      "title": "The Harrowing"
+    },
+    {
+      "authors": [
+        "Tana French"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2008",
+      "category": "Best First Mystery",
+      "position": "2008",
+      "result": "winner",
+      "title": "In the Woods"
+    },
+    {
+      "authors": [
+        "Sean Chercover"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2008",
+      "category": "Best First Mystery",
+      "position": "2008.01",
+      "result": "nominee",
+      "title": "Big City, Bad Blood"
+    },
+    {
+      "authors": [
+        "Lisa Lutz"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2008",
+      "category": "Best First Mystery",
+      "position": "2008.02",
+      "result": "nominee",
+      "title": "The Spellman Files"
+    },
+    {
+      "authors": [
+        "Marcus Sakey"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2008",
+      "category": "Best First Mystery",
+      "position": "2008.03",
+      "result": "nominee",
+      "title": "The Blade Itself"
+    },
+    {
+      "authors": [
+        "Stieg Larsson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2009",
+      "category": "Best First Mystery",
+      "position": "2009",
+      "result": "winner",
+      "title": "The Girl with the Dragon Tattoo"
+    },
+    {
+      "authors": [
+        "Rosemary Harris"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2009",
+      "category": "Best First Mystery",
+      "position": "2009.01",
+      "result": "nominee",
+      "title": "Pushing Up Daisies"
+    },
+    {
+      "authors": [
+        "Julie Kramer"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2009",
+      "category": "Best First Mystery",
+      "position": "2009.02",
+      "result": "nominee",
+      "title": "Stalking Susan"
+    },
+    {
+      "authors": [
+        "Tom Rob Smith"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2009",
+      "category": "Best First Mystery",
+      "position": "2009.03",
+      "result": "nominee",
+      "title": "Child 44"
+    },
+    {
+      "authors": [
+        "Sophie Littlefield"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2010",
+      "category": "Best First Mystery",
+      "position": "2010",
+      "result": "winner",
+      "title": "A Bad Day for Sorry"
+    },
+    {
+      "authors": [
+        "Alan Bradley"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2010",
+      "category": "Best First Mystery",
+      "position": "2010.01",
+      "result": "nominee",
+      "title": "The Sweetness at the Bottom of the Pie"
+    },
+    {
+      "authors": [
+        "Bryan Gruley"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2010",
+      "category": "Best First Mystery",
+      "position": "2010.02",
+      "result": "nominee",
+      "title": "Starvation Lake"
+    },
+    {
+      "authors": [
+        "Stefanie Pintoff"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2010",
+      "category": "Best First Mystery",
+      "position": "2010.03",
+      "result": "nominee",
+      "title": "In the Shadow of Gotham"
+    },
+    {
+      "authors": [
+        "Hilary Davidson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2011",
+      "category": "Best First Mystery",
+      "position": "2011",
+      "result": "winner",
+      "title": "The Damage Done"
+    },
+    {
+      "authors": [
+        "Bruce DeSilva"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2011",
+      "category": "Best First Mystery",
+      "position": "2011.01",
+      "result": "nominee",
+      "title": "Rogue Island"
+    },
+    {
+      "authors": [
+        "Paul Doiron"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2011",
+      "category": "Best First Mystery",
+      "position": "2011.02",
+      "result": "nominee",
+      "title": "The Poacher\u2019s Son"
+    },
+    {
+      "authors": [
+        "Graham Moore"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2011",
+      "category": "Best First Mystery",
+      "position": "2011.03",
+      "result": "nominee",
+      "title": "The Sherlockian"
+    },
+    {
+      "authors": [
+        "James Thompson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2011",
+      "category": "Best First Mystery",
+      "position": "2011.04",
+      "result": "nominee",
+      "title": "Snow Angels"
+    },
+    {
+      "authors": [
+        "Sara J. Henry"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2012",
+      "category": "Best First Mystery",
+      "position": "2012",
+      "result": "winner",
+      "title": "Learning To Swim"
+    },
+    {
+      "authors": [
+        "Darrell James"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2012",
+      "category": "Best First Mystery",
+      "position": "2012.01",
+      "result": "nominee",
+      "title": "Nazareth Child"
+    },
+    {
+      "authors": [
+        "Leonard Rosen"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2012",
+      "category": "Best First Mystery",
+      "position": "2012.02",
+      "result": "nominee",
+      "title": "All Cry Chaos"
+    },
+    {
+      "authors": [
+        "Rochelle Staab"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2012",
+      "category": "Best First Mystery",
+      "position": "2012.03",
+      "result": "nominee",
+      "title": "Who Do, Voodoo?"
+    },
+    {
+      "authors": [
+        "Taylor Stevens"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2012",
+      "category": "Best First Mystery",
+      "position": "2012.04",
+      "result": "nominee",
+      "title": "The Informationist"
+    },
+    {
+      "authors": [
+        "Steve Ulfelder"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2012",
+      "category": "Best First Mystery",
+      "position": "2012.05",
+      "result": "nominee",
+      "title": "Purgatory Chasm"
+    },
+    {
+      "authors": [
+        "S.J. Watson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2012",
+      "category": "Best First Mystery",
+      "position": "2012.06",
+      "result": "nominee",
+      "title": "Before I Go To Sleep"
+    },
+    {
+      "authors": [
+        "Chris Pavone"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2013",
+      "category": "Best First Mystery",
+      "position": "2013",
+      "result": "winner",
+      "title": "The Expats"
+    },
+    {
+      "authors": [
+        "Daniel Friedman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2013",
+      "category": "Best First Mystery",
+      "position": "2013.01",
+      "result": "nominee",
+      "title": "Don\u2019t Ever Get Old"
+    },
+    {
+      "authors": [
+        "Owen Laukkanen"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2013",
+      "category": "Best First Mystery",
+      "position": "2013.02",
+      "result": "nominee",
+      "title": "The Professionals"
+    },
+    {
+      "authors": [
+        "Matthew Quirk"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2013",
+      "category": "Best First Mystery",
+      "position": "2013.03",
+      "result": "nominee",
+      "title": "The 500"
+    },
+    {
+      "authors": [
+        "Michael Sears"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2013",
+      "category": "Best First Mystery",
+      "position": "2013.04",
+      "result": "nominee",
+      "title": "Black Fridays"
+    },
+    {
+      "authors": [
+        "Matt Coyle"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2014",
+      "category": "Best First Mystery",
+      "position": "2014",
+      "result": "winner",
+      "title": "Yesterday\u2019s Echo"
+    },
+    {
+      "authors": [
+        "Roger Hobbs"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2014",
+      "category": "Best First Mystery",
+      "position": "2014.01",
+      "result": "nominee",
+      "title": "Ghostman"
+    },
+    {
+      "authors": [
+        "Becky Masterman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2014",
+      "category": "Best First Mystery",
+      "position": "2014.02",
+      "result": "nominee",
+      "title": "Rage Against the Dying"
+    },
+    {
+      "authors": [
+        "Kimberly McCreight"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2014",
+      "category": "Best First Mystery",
+      "position": "2014.03",
+      "result": "nominee",
+      "title": "Reconstructing Amelia"
+    },
+    {
+      "authors": [
+        "Todd Robinson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2014",
+      "category": "Best First Mystery",
+      "position": "2014.04",
+      "result": "nominee",
+      "title": "The Hard Bounce"
+    },
+    {
+      "authors": [
+        "Lori Rader-Day"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2015",
+      "category": "Best First Mystery",
+      "position": "2015",
+      "result": "winner",
+      "title": "The Black Hour"
+    },
+    {
+      "authors": [
+        "Kristi Belcamino"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2015",
+      "category": "Best First Mystery",
+      "position": "2015.01",
+      "result": "nominee",
+      "title": "Blessed Are the Dead"
+    },
+    {
+      "authors": [
+        "M.P. Cooley"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2015",
+      "category": "Best First Mystery",
+      "position": "2015.02",
+      "result": "nominee",
+      "title": "Ice Shear"
+    },
+    {
+      "authors": [
+        "Julia Dahl"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2015",
+      "category": "Best First Mystery",
+      "position": "2015.03",
+      "result": "nominee",
+      "title": "Invisible City"
+    },
+    {
+      "authors": [
+        "Allen Eskens"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2015",
+      "category": "Best First Mystery",
+      "position": "2015.04",
+      "result": "nominee",
+      "title": "The Life We Bury"
+    },
+    {
+      "authors": [
+        "Glen Erik Hamilton"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2016",
+      "category": "Best First Mystery",
+      "position": "2016",
+      "result": "winner",
+      "title": "Past Crimes"
+    },
+    {
+      "authors": [
+        "Patricia Abbott"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2016",
+      "category": "Best First Mystery",
+      "position": "2016.01",
+      "result": "nominee",
+      "title": "Concrete Angel"
+    },
+    {
+      "authors": [
+        "Rob Hart"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2016",
+      "category": "Best First Mystery",
+      "position": "2016.02",
+      "result": "nominee",
+      "title": "New Yorked"
+    },
+    {
+      "authors": [
+        "Brian Panowich"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2016",
+      "category": "Best First Mystery",
+      "position": "2016.03",
+      "result": "nominee",
+      "title": "Bull Mountain"
+    },
+    {
+      "authors": [
+        "Art Taylor"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2016",
+      "category": "Best First Mystery",
+      "position": "2016.04",
+      "result": "nominee",
+      "title": "On the Road with Del & Louise"
+    },
+    {
+      "authors": [
+        "Kellye Garrett"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2018",
+      "category": "Best First Mystery",
+      "position": "2018",
+      "result": "winner",
+      "title": "Hollywood Homicide"
+    },
+    {
+      "authors": [
+        "Jane Harper"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2018",
+      "category": "Best First Mystery",
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "The Dry"
+    },
+    {
+      "authors": [
+        "Jordan Harper"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2018",
+      "category": "Best First Mystery",
+      "position": "2018.02",
+      "result": "nominee",
+      "title": "She Rides Shotgun"
+    },
+    {
+      "authors": [
+        "Christopher Irvin"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2018",
+      "category": "Best First Mystery",
+      "position": "2018.03",
+      "result": "nominee",
+      "title": "Ragged; or, The Loveliest Lies of All"
+    },
+    {
+      "authors": [
+        "Kristen Lepionka"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2018",
+      "category": "Best First Mystery",
+      "position": "2018.04",
+      "result": "nominee",
+      "title": "The Last Place You Look"
+    },
+    {
+      "authors": [
+        "Oyinkan Braithwaite"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2019",
+      "category": "Best First Mystery",
+      "position": "2019",
+      "result": "winner",
+      "title": "My Sister, the Serial Killer"
+    },
+    {
+      "authors": [
+        "Tracy Clark"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2019",
+      "category": "Best First Mystery",
+      "position": "2019.01",
+      "result": "nominee",
+      "title": "Broken Places"
+    },
+    {
+      "authors": [
+        "John Copenhaver"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2019",
+      "category": "Best First Mystery",
+      "position": "2019.02",
+      "result": "nominee",
+      "title": "Dodging and Burning"
+    },
+    {
+      "authors": [
+        "Aimee Hix"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2019",
+      "category": "Best First Mystery",
+      "position": "2019.03",
+      "result": "nominee",
+      "title": "What Doesn\u2019t Kill You"
+    },
+    {
+      "authors": [
+        "James A. McLaughlin"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2019",
+      "category": "Best First Mystery",
+      "position": "2019.04",
+      "result": "nominee",
+      "title": "Bearskin"
+    },
+    {
+      "authors": [
+        "Tara Laskowski"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2020",
+      "category": "Best First Mystery",
+      "position": "2020",
+      "result": "winner",
+      "title": "One Night Gone"
+    },
+    {
+      "authors": [
+        "Tori Eldridge"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2020",
+      "category": "Best First Mystery",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "The Ninja Daughter"
+    },
+    {
+      "authors": [
+        "Angie Kim"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2020",
+      "category": "Best First Mystery",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "Miracle Creek"
+    },
+    {
+      "authors": [
+        "John Vercher"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2020",
+      "category": "Best First Mystery",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "Three-Fifths"
+    },
+    {
+      "authors": [
+        "Lauren Wilkinson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2020",
+      "category": "Best First Mystery",
+      "position": "2020.04",
+      "result": "nominee",
+      "title": "American Spy"
+    },
+    {
+      "authors": [
+        "David Heska Wanbli Weiden"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2021",
+      "category": "Best First Mystery",
+      "position": "2021",
+      "result": "winner",
+      "title": "Winter Counts"
+    },
+    {
+      "authors": [
+        "Mary Keliikoa"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2021",
+      "category": "Best First Mystery",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "Derailed"
+    },
+    {
+      "authors": [
+        "Nev March"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2021",
+      "category": "Best First Mystery",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "Murder in Old Bombay"
+    },
+    {
+      "authors": [
+        "Erica Ruth Neubauer"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2021",
+      "category": "Best First Mystery",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "Murder at the Mena House"
+    },
+    {
+      "authors": [
+        "Richard Osman"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2021",
+      "category": "Best First Mystery",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "The Thursday Murder Club"
+    },
+    {
+      "authors": [
+        "Mia P. Manansala"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2022",
+      "category": "Best First Mystery",
+      "position": "2022",
+      "result": "winner",
+      "title": "Arsenic and Adobo"
+    },
+    {
+      "authors": [
+        "Yasmin Angoe"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2022",
+      "category": "Best First Mystery",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "Her Name Is Knight"
+    },
+    {
+      "authors": [
+        "Zakiya Dalila Harris"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2022",
+      "category": "Best First Mystery",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "The Other Black Girl"
+    },
+    {
+      "authors": [
+        "Heather Levy"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2022",
+      "category": "Best First Mystery",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "Walking Through Needles"
+    },
+    {
+      "authors": [
+        "Wanda M. Morris"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2022",
+      "category": "Best First Mystery",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "All Her Little Secrets"
+    },
+    {
+      "authors": [
+        "Nita Prose"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2023",
+      "category": "Best First Mystery",
+      "position": "2023",
+      "result": "winner",
+      "title": "The Maid"
+    },
+    {
+      "authors": [
+        "Eli Cranor"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2023",
+      "category": "Best First Mystery",
+      "position": "2023.01",
+      "result": "nominee",
+      "title": "Don\u2019t Know Tough"
+    },
+    {
+      "authors": [
+        "Ramona Emerson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2023",
+      "category": "Best First Mystery",
+      "position": "2023.02",
+      "result": "nominee",
+      "title": "Shutter"
+    },
+    {
+      "authors": [
+        "Harini Nagendra"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2023",
+      "category": "Best First Mystery",
+      "position": "2023.03",
+      "result": "nominee",
+      "title": "The Bangalore Detectives Club"
+    },
+    {
+      "authors": [
+        "Rob Osler"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2023",
+      "category": "Best First Mystery",
+      "position": "2023.04",
+      "result": "nominee",
+      "title": "Devil\u2019s Chew Toy"
+    },
+    {
+      "authors": [
+        "Nina Simon"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2024",
+      "category": "Best First Mystery",
+      "position": "2024",
+      "result": "winner",
+      "title": "Mother-Daughter Murder Night"
+    },
+    {
+      "authors": [
+        "I.S. Berry"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2024",
+      "category": "Best First Mystery",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "The Peacock and the Sparrow"
+    },
+    {
+      "authors": [
+        "Lina Chern"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2024",
+      "category": "Best First Mystery",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "Play the Fool"
+    },
+    {
+      "authors": [
+        "Margot Douaihy"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2024",
+      "category": "Best First Mystery",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "Scorched Grace"
+    },
+    {
+      "authors": [
+        "Iris Yamashita"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2024",
+      "category": "Best First Mystery",
+      "position": "2024.04",
+      "result": "nominee",
+      "title": "City Under One Roof"
+    },
+    {
+      "authors": [
+        "K.T. Nguyen"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best First Mystery",
+      "position": "2025",
+      "result": "winner",
+      "title": "You Know What You Did"
+    },
+    {
+      "authors": [
+        "Audrey Lee"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best First Mystery",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "The Mechanics of Memory"
+    },
+    {
+      "authors": [
+        "Jennifer K. Morita"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best First Mystery",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "Ghosts of Waik\u012bk\u012b"
+    },
+    {
+      "authors": [
+        "Rob D. Smith"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best First Mystery",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "Good-Looking Ugly"
+    },
+    {
+      "authors": [
+        "Henry Wise"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best First Mystery",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "Holy City"
+    },
+    {
+      "authors": [
+        "Adrian Andover"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2026",
+      "category": "Best First Mystery",
+      "position": "2026.01",
+      "result": "nominee",
+      "title": "Whiskey Business"
+    },
+    {
+      "authors": [
+        "Laurie L. Dove"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2026",
+      "category": "Best First Mystery",
+      "position": "2026.02",
+      "result": "nominee",
+      "title": "Mask of the Deer Woman"
+    },
+    {
+      "authors": [
+        "Sue Hincenbergs"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2026",
+      "category": "Best First Mystery",
+      "position": "2026.03",
+      "result": "nominee",
+      "title": "The Retirement Plan"
+    },
+    {
+      "authors": [
+        "Michael Rigg"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2026",
+      "category": "Best First Mystery",
+      "position": "2026.04",
+      "result": "nominee",
+      "title": "Voices of the Elysian Fields"
+    },
+    {
+      "authors": [
+        "Zoe B. Wallbrook"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2026",
+      "category": "Best First Mystery",
+      "position": "2026.05",
+      "result": "nominee",
+      "title": "History Lessons"
+    },
+    {
+      "authors": [
+        "Liann Zhang"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2026",
+      "category": "Best First Mystery",
+      "position": "2026.06",
+      "result": "nominee",
+      "title": "Julie Chan Is Dead"
+    }
+  ],
+  "fetched_at": "2026-07-18T02:39:30Z",
+  "list_id": "anthony_award_first_mystery",
+  "list_name": "Anthony Award - First Mystery",
+  "match_series": false,
+  "notes": [],
+  "parser": "anthony_award_first_mystery",
+  "schema_version": 2,
+  "source": {
+    "name": "Anthony Award - First Mystery",
+    "source_id": "anthony_award_first_mystery",
+    "url": "https://www.stopyourekillingme.com/Awards/Anthony_Awards.html"
+  }
+}

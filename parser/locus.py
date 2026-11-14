@@ -23,13 +23,13 @@ from bs4.element import NavigableString, Tag
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import (
-    split_title_author,
+    is_author_suffix, split_title_author,
   )
   from calibre_plugins.list_switchboard.parser.base import (
     entry_source_object, imported_entry, parsed_source, ListParserBase)
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
 except ImportError:
-  from .award_base import split_title_author
+  from .award_base import is_author_suffix, split_title_author
   from .base import entry_source_object, imported_entry, parsed_source, ListParserBase
   from .generic import position_sort_key
 
@@ -47,6 +47,24 @@ ANNUAL_BOUNDARY = frozenset({
   'illustrated and art book', 'art book', 'editor', 'magazine', 'publisher',
   'artist',
 })
+ROLE_AWARE_CATEGORIES = frozenset({
+  'illustrated and art book', 'art book', 'non fiction', 'nonfiction',
+  'translated novel',
+})
+CONTRIBUTOR_ROLE_PREFIX = re.compile(
+  r'\b(?:'
+  r'art(?:\s+and\s+adaptation)?|adapted|compiled|edited|illustrated|'
+  r'translated|retold|written(?:\s+and\s+illustrated)?'
+  r')\s+by\s+',
+  re.I)
+CONTRIBUTOR_TRAILING_ROLE = re.compile(
+  r'\s+(?:eds?\.?|editors?|text|art|artist|illustrator|'
+  r'trans(?:lators?)?\d*)\.?$',
+  re.I)
+CONTRIBUTOR_ROLE_ONLY = re.compile(
+  r'^(?:eds?\.?|editors?|text|art|artist|illustrator|'
+  r'trans(?:lators?)?\d*)$',
+  re.I)
 
 
 class LocusAnnualAwardsParser(ListParserBase):
@@ -162,16 +180,18 @@ def _locus_year_links(soup, base_url):
 
 def _parse_annual_year(html, source_url, year, category, category_aliases, log=None):
   soup = BeautifulSoup(html, 'html.parser')
-  lines = _locus_text_lines(soup)
-  category_lines = _annual_category_lines(lines, category_aliases)
-  rows = []
-  for line in category_lines:
-    match = RANKED_LINE.match(line)
-    item_text = match.group(2) if match is not None else line
-    parsed = _parse_annual_item(item_text)
-    if parsed is None:
-      continue
-    rows.append(parsed)
+  rows = _structured_annual_rows(soup, category, category_aliases)
+  if rows is None:
+    lines = _locus_text_lines(soup)
+    category_lines = _annual_category_lines(lines, category_aliases)
+    rows = []
+    for line in category_lines:
+      match = RANKED_LINE.match(line)
+      item_text = match.group(2) if match is not None else line
+      parsed = _parse_annual_item(item_text)
+      if parsed is None:
+        continue
+      rows.append(parsed)
 
   entries = []
   suffix_index = 0
@@ -186,13 +206,147 @@ def _parse_annual_year(html, source_url, year, category, category_aliases, log=N
     entries.append(imported_entry(
       position,
       row['title'],
-      row['author'],
+      row.get('authors', row['author']),
       source=entry_source_object(source_url),
       award_year=str(year),
       award=LOCUS_AWARD,
       category=category,
       result=row['result']))
   return entries
+
+
+def _structured_annual_rows(soup, category, aliases):
+  """
+  Parse SFADB's category blocks while preserving linked multi-author credits.
+
+  Some annual rows separate three or more authors with both commas and an
+  ampersand. The generic text splitter cannot distinguish the first author
+  comma from a comma inside a title. SFADB's bold title and linked-person nodes
+  provide that boundary; malformed/plain-text pages continue through the
+  existing text fallback.
+  """
+  normalized_aliases = {_normalize_heading(alias) for alias in aliases}
+  parse_contributor_roles = _normalize_heading(category) in ROLE_AWARE_CATEGORIES
+  for block in soup.find_all('div', class_='categoryblock'):
+    heading = block.find('div', class_='category')
+    if heading is None:
+      continue
+    if _normalize_heading(heading.get_text(' ', strip=True)) not in normalized_aliases:
+      continue
+    rows = []
+    for item in block.find_all('li'):
+      parsed = _parse_annual_item(item.get_text(' ', strip=True))
+      if parsed is None:
+        continue
+      if parse_contributor_roles:
+        parsed = _restore_role_aware_contributors(item, parsed)
+      else:
+        parsed = _restore_structured_authors(item, parsed)
+      rows.append(parsed)
+    return rows
+  return None
+
+
+def _restore_role_aware_contributors(item, parsed):
+  """
+  Use the SFADB title node to isolate role-rich contributor credits.
+
+  Locus Non-Fiction, Art Book, and Translated Novel rows can mix writers,
+  editors, adapters, translators, artists, and illustrators. The import schema
+  intentionally stores their names rather than roles, so each becomes a
+  canonical author while role labels and ``et al.`` are discarded.
+  """
+  title_node = item.find('b')
+  if title_node is None:
+    return parsed
+  title = _normalize_line(title_node.get_text(' ', strip=True))
+  item_text = _strip_publication_notes(
+    _normalize_line(item.get_text(' ', strip=True)))
+  _, separator, credit = item_text.partition(title)
+  if not title or not separator:
+    return parsed
+  authors = _split_role_aware_contributors(credit.lstrip(' ,'))
+  if not authors:
+    return parsed
+  parsed['title'] = title.strip(' "\u201c\u201d,')
+  parsed['authors'] = authors
+  return parsed
+
+
+def _split_role_aware_contributors(value):
+  value = CONTRIBUTOR_ROLE_PREFIX.sub('; ', value)
+  value = re.sub(r'\bwith\s+', '; ', value, flags=re.I)
+  value = re.sub(
+    r'(?:^|[;,])\s*(?:artist|illustrator)\s+(?=\S)',
+    '; ',
+    value,
+    flags=re.I)
+  authors = []
+  for raw_group in re.split(r'\s*[,;]\s*', value):
+    group = CONTRIBUTOR_TRAILING_ROLE.sub('', raw_group).strip(' ,;.')
+    if not group or CONTRIBUTOR_ROLE_ONLY.fullmatch(group):
+      continue
+    if re.match(r'^et\s+al\.?$', group, re.I):
+      continue
+    if is_author_suffix(group) and authors:
+      authors[-1] = f'{authors[-1]}, {group}'
+      continue
+    group = _expand_shared_contributor_surname(group)
+    for author in re.split(r'\s+(?:&|and)\s+', group, flags=re.I):
+      author = author.strip(' ,;.')
+      if author and author not in authors:
+        authors.append(author)
+  return authors
+
+
+def _expand_shared_contributor_surname(value):
+  match = re.fullmatch(r'([^,&;]+?)\s+(?:&|and)\s+([^,&;]+)', value, re.I)
+  if match is None:
+    return value
+  left, right = (part.strip() for part in match.groups())
+  right_words = right.split()
+  if len(left.split()) == 1 and len(right_words) > 1:
+    return f'{left} {right_words[-1]} & {right}'
+  return value
+
+
+def _restore_structured_authors(item, parsed):
+  title_node = item.find('b')
+  first_author_link = item.find('a')
+  if title_node is None or first_author_link is None:
+    return parsed
+  descendants = list(item.descendants)
+  if descendants.index(title_node) > descendants.index(first_author_link):
+    return parsed
+
+  title = _normalize_line(title_node.get_text(' ', strip=True))
+  if not title or title == parsed['title']:
+    return parsed
+  authors = [
+    _normalize_line(link.get_text(' ', strip=True))
+    for link in item.find_all('a')
+  ]
+  authors = [author for author in authors if author]
+  if len(authors) < 2:
+    return parsed
+
+  # Only accept a structurally recovered credit when removing the linked names
+  # leaves punctuation/conjunctions. This excludes illustrator/editor role
+  # links from changing the established text-parser behavior.
+  item_text = _strip_publication_notes(
+    _normalize_line(item.get_text(' ', strip=True)))
+  _, separator, credit = item_text.partition(title)
+  if not separator:
+    return parsed
+  remainder = credit.lstrip(' ,')
+  for author in authors:
+    remainder = remainder.replace(author, '', 1)
+  if not re.fullmatch(r'[\s,&]*(?:(?:and)[\s,&]*)*', remainder, re.I):
+    return parsed
+
+  parsed['title'] = title.strip(' "\u201c\u201d,')
+  parsed['authors'] = authors
+  return parsed
 
 
 def _annual_category_lines(lines, aliases):
@@ -341,10 +495,28 @@ def _ordered_list_item_line(node):
 def _strip_publication_notes(value):
   value = _normalize_line(value)
   while True:
-    stripped = re.sub(r'\s*(?:\([^()]*\)|\[[^\[\]]*\])\s*$', '', value).strip()
+    stripped = _strip_trailing_balanced_note(value)
     if stripped == value:
       return value
     value = stripped
+
+
+def _strip_trailing_balanced_note(value):
+  pairs = {')': '(', ']': '['}
+  closing = value[-1:] if value else ''
+  opening = pairs.get(closing)
+  if opening is None:
+    return value
+  depth = 0
+  for index in range(len(value) - 1, -1, -1):
+    character = value[index]
+    if character == closing:
+      depth += 1
+    elif character == opening:
+      depth -= 1
+      if depth == 0:
+        return value[:index].rstrip()
+  return value
 
 
 def _strip_tie_marker(value):

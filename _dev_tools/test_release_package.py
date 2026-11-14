@@ -23,6 +23,12 @@ class ReleasePackageTests(unittest.TestCase):
 
     self.assertTrue(REQUIRED_MEMBERS <= members)
     self.assertTrue(RUNTIME_ROOT_FILES <= members)
+    self.assertIn('url_fetcher/goodreads_choice_transport.py', members)
+    self.assertIn('url_fetcher/dragons_and_jetpacks_transport.py', members)
+    self.assertIn('url_fetcher/ladies_of_horror_fiction_transport.py', members)
+    self.assertIn('url_fetcher/splatterpunk_transport.py', members)
+    self.assertIn('url_fetcher/this_is_horror_transport.py', members)
+    self.assertIn('goodreads_recovery_transport.py', members)
     self.assertFalse(any('__pycache__' in name or name.endswith('.bak') for name in members))
 
   def test_package_check_rejects_development_residue(self):

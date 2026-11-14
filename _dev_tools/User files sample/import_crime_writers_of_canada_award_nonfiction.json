@@ -1,0 +1,470 @@
+{
+  "append_state": {
+    "entry_count": 38,
+    "last_entry_key": "the beatle bandit|nate hendley",
+    "last_position": "2022",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Martin Friedland"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1985",
+      "category": "True Crime",
+      "position": "1985",
+      "result": "winner",
+      "title": "The Trials of Israel Lipsky"
+    },
+    {
+      "authors": [
+        "Maggie Siggins"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1986",
+      "category": "True Crime",
+      "position": "1986",
+      "result": "winner",
+      "title": "A Canadian Tragedy"
+    },
+    {
+      "authors": [
+        "Elliott Leyton"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1987",
+      "category": "True Crime",
+      "position": "1987",
+      "result": "winner",
+      "title": "Hunting Humans"
+    },
+    {
+      "authors": [
+        "Gary Ross"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1988",
+      "category": "True Crime",
+      "position": "1988",
+      "result": "winner",
+      "title": "Stung"
+    },
+    {
+      "authors": [
+        "Mick Lowe"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1989",
+      "category": "True Crime",
+      "position": "1989",
+      "result": "winner",
+      "title": "Conspiracy of Brothers"
+    },
+    {
+      "authors": [
+        "Lisa Priest"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1990",
+      "category": "True Crime",
+      "position": "1990",
+      "result": "winner",
+      "title": "Conspiracy of Silence"
+    },
+    {
+      "authors": [
+        "Susan Mayse"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1991",
+      "category": "True Crime",
+      "position": "1991",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Ginger:_The_Life_and_Death_of_Albert_Goodwin"
+      },
+      "title": "Ginger: The Life and Death of Albert Goodwin"
+    },
+    {
+      "authors": [
+        "William Lowther"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1992",
+      "category": "True Crime",
+      "position": "1992",
+      "result": "winner",
+      "title": "Arms and the Man"
+    },
+    {
+      "authors": [
+        "Kirk Makin"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1993",
+      "category": "True Crime",
+      "position": "1993",
+      "result": "winner",
+      "title": "Redrum the Innocent"
+    },
+    {
+      "authors": [
+        "David R. Williams"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1994",
+      "category": "True Crime",
+      "position": "1994",
+      "result": "winner",
+      "title": "With Malice Aforethought"
+    },
+    {
+      "authors": [
+        "Michael Harris"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1995",
+      "category": "True Crime",
+      "position": "1995",
+      "result": "winner",
+      "title": "The Prodigal Husband"
+    },
+    {
+      "authors": [
+        "Lois Simmie"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1996",
+      "category": "True Crime",
+      "position": "1996",
+      "result": "winner",
+      "title": "The Secret Lives of Sgt. John Wilson"
+    },
+    {
+      "authors": [
+        "Jean Monet"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1997",
+      "category": "True Crime",
+      "position": "1997",
+      "result": "winner",
+      "title": "The Cassock and the Crown"
+    },
+    {
+      "authors": [
+        "Patricia Pearson"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1998",
+      "category": "True Crime",
+      "position": "1998",
+      "result": "winner",
+      "title": "When She Was Bad"
+    },
+    {
+      "authors": [
+        "Derek Finkle"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1999",
+      "category": "True Crime",
+      "position": "1999",
+      "result": "winner",
+      "title": "No Claim to Mercy"
+    },
+    {
+      "authors": [
+        "Gordon Sinclair, Jr."
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2000",
+      "category": "True Crime",
+      "position": "2000",
+      "result": "winner",
+      "title": "Cowboys and Indians"
+    },
+    {
+      "authors": [
+        "A.B. McKillop"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2001",
+      "category": "True Crime",
+      "position": "2001",
+      "result": "winner",
+      "title": "The Spinster and the Prophet"
+    },
+    {
+      "authors": [
+        "Stevie Cameron",
+        "Harvey Cashore"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2002",
+      "category": "True Crime",
+      "position": "2002",
+      "result": "winner",
+      "title": "The Last Amigo"
+    },
+    {
+      "authors": [
+        "Andrew Nikiforuk"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2002",
+      "category": "True Crime",
+      "position": "2002.01",
+      "result": "winner",
+      "title": "Saboteurs"
+    },
+    {
+      "authors": [
+        "Andrew Mitrovica"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2003",
+      "category": "True Crime",
+      "position": "2003",
+      "result": "winner",
+      "title": "Covert Entry"
+    },
+    {
+      "authors": [
+        "Julian Sher",
+        "William Marsden"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2004",
+      "category": "True Crime",
+      "position": "2004",
+      "result": "winner",
+      "title": "The Road to Hell"
+    },
+    {
+      "authors": [
+        "Matthew Hart"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2005",
+      "category": "True Crime",
+      "position": "2005",
+      "result": "winner",
+      "title": "The Irish Game"
+    },
+    {
+      "authors": [
+        "Rebecca Godfrey"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2006",
+      "category": "True Crime",
+      "position": "2006",
+      "result": "winner",
+      "title": "Under the Bridge"
+    },
+    {
+      "authors": [
+        "Brian O'Dea"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2007",
+      "category": "True Crime",
+      "position": "2007",
+      "result": "winner",
+      "title": "High"
+    },
+    {
+      "authors": [
+        "Julian Sher"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2008",
+      "category": "True Crime",
+      "position": "2008",
+      "result": "winner",
+      "title": "One Child at a Time"
+    },
+    {
+      "authors": [
+        "Michael Calce",
+        "Craig Silverman"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2009",
+      "category": "True Crime",
+      "position": "2009",
+      "result": "winner",
+      "title": "Mafiaboy"
+    },
+    {
+      "authors": [
+        "Terry Gould"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2010",
+      "category": "True Crime",
+      "position": "2010",
+      "result": "winner",
+      "title": "Murder Without Borders"
+    },
+    {
+      "authors": [
+        "Stevie Cameron"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2011",
+      "category": "True Crime",
+      "position": "2011",
+      "result": "winner",
+      "title": "On the Farm"
+    },
+    {
+      "authors": [
+        "Joshua Knelman"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2012",
+      "category": "True Crime",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Hot_Art"
+      },
+      "title": "Hot Art"
+    },
+    {
+      "authors": [
+        "Steve Lillebuen"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2013",
+      "category": "True Crime",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/The_Devil's_Cinema"
+      },
+      "title": "The Devil's Cinema"
+    },
+    {
+      "authors": [
+        "Charlotte Gray"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2015",
+      "category": "True Crime",
+      "position": "2015",
+      "result": "winner",
+      "title": "The Massey Murder"
+    },
+    {
+      "authors": [
+        "Dean Jobb"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2016",
+      "category": "True Crime",
+      "position": "2016",
+      "result": "winner",
+      "title": "Empire of Deception: The Incredible Story of a Master Swindler Who Seduced a City and Captivated the Nation"
+    },
+    {
+      "authors": [
+        "Jeremy Grimaldi"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2017",
+      "category": "True Crime",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/A_Daughter's_Deadly_Deception:_The_Jennifer_Pan_Story"
+      },
+      "title": "A Daughter's Deadly Deception: The Jennifer Pan Story"
+    },
+    {
+      "authors": [
+        "Trevor Cole"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2018",
+      "category": "True Crime",
+      "position": "2018",
+      "result": "winner",
+      "title": "The Whisky King: remarkable true story of Canada's most infamous bootlegger and the undercover Mountie on his trail"
+    },
+    {
+      "authors": [
+        "Sarah Weinman"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2019",
+      "category": "True Crime",
+      "position": "2019",
+      "result": "winner",
+      "title": "The Real Lolita: Kidnapping of Sally Horner and the Novel that Scandalized the World"
+    },
+    {
+      "authors": [
+        "Charlotte Gray"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2020",
+      "category": "True Crime",
+      "position": "2020",
+      "result": "winner",
+      "title": "Murdered Midas: A Millionaire, His Gold Mine, and a Strange Death on an Island Paradise"
+    },
+    {
+      "authors": [
+        "Justin Ling"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2021",
+      "category": "True Crime",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Missing_from_the_Village"
+      },
+      "title": "Missing from the Village"
+    },
+    {
+      "authors": [
+        "Nate Hendley"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2022",
+      "category": "True Crime",
+      "position": "2022",
+      "result": "winner",
+      "title": "The Beatle Bandit"
+    }
+  ],
+  "fetched_at": "2026-07-15T22:20:28Z",
+  "list_id": "crime_writers_of_canada_award_nonfiction",
+  "list_name": "Crime Writers of Canada Award - Nonfiction",
+  "match_series": false,
+  "notes": [
+    "LibraryThing failed: HTTP Error 403: Forbidden"
+  ],
+  "parser": "crime_writers_of_canada_award_nonfiction",
+  "schema_version": 2,
+  "source": {
+    "name": "Crime Writers of Canada Award - Nonfiction",
+    "source_id": "crime_writers_of_canada_award_nonfiction",
+    "url": "https://en.wikipedia.org/wiki/Crime_Writers_of_Canada_Awards_of_Excellence"
+  }
+}

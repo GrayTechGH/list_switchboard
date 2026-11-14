@@ -133,6 +133,9 @@ class UrlFetcherAustralasianShadowsLongFiction(UrlFetcherAustralasianShadows):
   CATEGORY_ALIASES = (
     'long fiction',
     'paul haines award for long fiction',
+    'paul haines awards for long fiction',
+    'the paul haines award for long fiction',
+    'the paul haines awards for long fiction',
   )
 
 
@@ -140,14 +143,15 @@ class UrlFetcherAustralasianShadowsCollectedWork(UrlFetcherAustralasianShadows):
   source_id = 'australasian_shadows_collected_work'
   NAME = 'Australasian Shadows - Collected Work'
   CATEGORY = 'Collected Work'
-  CATEGORY_ALIASES = ('collected work', 'collection')
+  CATEGORY_ALIASES = (
+    'collected work', 'collected works', 'collection', 'collections')
 
 
 class UrlFetcherAustralasianShadowsEditedWork(UrlFetcherAustralasianShadows):
   source_id = 'australasian_shadows_edited_work'
   NAME = 'Australasian Shadows - Edited Work'
   CATEGORY = 'Edited Work'
-  CATEGORY_ALIASES = ('edited work', 'edited publication')
+  CATEGORY_ALIASES = ('edited work', 'edited works', 'edited publication')
 
 
 class UrlFetcherAustralasianShadowsGraphicNovel(UrlFetcherAustralasianShadows):
@@ -159,10 +163,18 @@ class UrlFetcherAustralasianShadowsGraphicNovel(UrlFetcherAustralasianShadows):
     'graphic novel comic',
     'graphic novel comics',
     'graphic novel or comic',
+    'graphic novels and comics',
     'graphic novels comic',
     'graphic novels comics',
     'comic',
     'comics',
+    'comic graphic novel',
+    'comic/graphic novel',
+    'comics graphic novels',
+    'comics/graphic novels',
+    'written work in a comic graphic novel',
+    'written work in a comic/graphic novel',
+    'written work in comic graphic novel',
   )
 
 
@@ -178,4 +190,7 @@ class UrlFetcherAustralasianShadowsNonfiction(UrlFetcherAustralasianShadows):
     'rocky wood award for non-fiction and criticism',
     'rocky wood award for non fiction and criticism',
     'rocky wood award for nonfiction and criticism',
+    'the rocky wood award for non-fiction and criticism',
+    'the rocky wood award for non fiction and criticism',
+    'the rocky wood award for nonfiction and criticism',
   )

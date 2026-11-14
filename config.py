@@ -18,6 +18,10 @@ prefs.defaults['include_calibre_series'] = False
 prefs.defaults['debug_logging'] = False
 prefs.defaults['debug_sections'] = {}
 prefs.defaults['debug_force_fallback_level'] = 0
+prefs.defaults['debug_librarything_transport'] = 'automatic'
+# None retains the saved pilot setting until the shared selector is saved.
+prefs.defaults['debug_browser_fallback_level'] = None
+prefs.defaults['camoufox_first_use_confirmed'] = False
 prefs.defaults['find_match_title_mode'] = 'similar'
 prefs.defaults['find_match_author_mode'] = 'similar'
 prefs.defaults['find_match_title_soundex_length'] = 6

@@ -57,6 +57,7 @@ HEADER_ALIASES = {
   'book': 'title',
   'work': 'title',
   'novel': 'title',
+  'award': 'result',
   'result': 'result',
   'status': 'result',
   'outcome': 'result',
@@ -64,6 +65,8 @@ HEADER_ALIASES = {
 }
 RESULT_ALIASES = {
   'winner': RESULT_WINNER,
+  'winners': RESULT_WINNER,
+  'joint winners': RESULT_WINNER,
   'won': RESULT_WINNER,
   'shortlist': RESULT_SHORTLISTED,
   'shortlisted': RESULT_SHORTLISTED,
@@ -364,99 +367,160 @@ class BookerPrizeWikipediaParser(BookerPrizeOfficialParser):
 
   def parse_wikipedia_rows(self, html, base_url, category):
     root = self.html_root(html)
-    rows = []
+    explicit_rows = []
+    winner_summary_rows = []
+    explicit_years = set()
     for table in root.xpath('//table'):
-      header_map = self.header_map(table)
-      if self.has_required_columns(header_map):
-        rows.extend(self.rows_from_table(table, header_map, base_url, category))
-    return rows
+      grid = self.table_grid(table)
+      header_index, header_map = self.header_map(grid)
+      table_year = self.year_before_table(table)
+      if self.has_wikipedia_columns(header_map, table_year):
+        table_rows = self.rows_from_table(
+          grid[header_index + 1:],
+          header_map,
+          base_url,
+          category,
+          table_year)
+        if 'result' in header_map:
+          explicit_rows.extend(table_rows)
+          explicit_years.update(row['award_year'] for row in table_rows)
+        else:
+          winner_summary_rows.extend(table_rows)
+    # International Booker repeats its recent winners in a consolidated table
+    # and in richer per-year Award tables. Prefer the latter so spelling
+    # differences such as "al-Harthi"/"Alharthi" cannot create duplicates.
+    return explicit_rows + [
+      row for row in winner_summary_rows
+      if row['award_year'] not in explicit_years
+    ]
 
-  def rows_from_table(self, table, header_map, base_url, category):
+  def rows_from_table(
+      self, table_rows, header_map, base_url, category, table_year=None):
     rows = []
-    current_year = None
-    row_count_by_year = {}
-    for tr in table.xpath('.//tr'):
-      cells = tr.xpath('./td|./th')
-      if not cells or self.row_matches_header(cells, header_map):
+    current_result_by_year = {}
+    for cells in table_rows:
+      if not cells:
         continue
-      missing_year = self.row_omits_year(cells, header_map, current_year)
-      year_cell = self.cell_for_key(cells, header_map, 'year', False)
-      year = None if missing_year else self.year_from_text(self.clean_cell_text(year_cell))
-      if year is None:
-        year = current_year
+      year_cell = self.cell_for_key(cells, header_map, 'year')
+      year = self.year_from_text(self.clean_cell_text(year_cell)) or table_year
       if year is None:
         continue
-      current_year = year
 
-      title_cell = self.cell_for_key(cells, header_map, 'title', missing_year)
-      author_cell = self.cell_for_key(cells, header_map, 'author', missing_year)
+      title_cell = self.cell_for_key(cells, header_map, 'title')
+      author_cell = self.cell_for_key(cells, header_map, 'author')
       if title_cell is None or author_cell is None:
         continue
-      result = self.result_from_cell(
-        self.cell_for_key(cells, header_map, 'result', missing_year))
+      if 'result' not in header_map:
+        # International Booker's consolidated year/work table contains winners
+        # only and therefore has no explicit result column.
+        result = RESULT_WINNER
+      else:
+        result = self.result_from_cell(
+          self.cell_for_key(cells, header_map, 'result'))
       if result == 'ignored':
+        current_result_by_year[year] = result
         continue
       if result is None:
-        row_count = row_count_by_year.get(year, 0)
-        result = RESULT_WINNER if row_count == 0 else RESULT_SHORTLISTED
+        result = current_result_by_year.get(year)
       if result not in (RESULT_WINNER, RESULT_SHORTLISTED):
         continue
-      title = self.clean_title(self.clean_cell_text(title_cell))
+      current_result_by_year[year] = result
+      title = self.clean_title(self.title_cell_text(title_cell))
       author = self.clean_author(self.clean_cell_text(author_cell))
       if not title or not author:
         continue
-      row_count_by_year[year] = row_count_by_year.get(year, 0) + 1
       rows.append({
         'award_year': str(year),
         'title': title,
         'author': author,
         'result': result,
-        'source_url': self.first_link_url(title_cell, base_url) or base_url,
+        # The containing article establishes the award result. A linked book
+        # article identifies the work but is not result provenance.
+        'source_url': base_url,
         'category': category,
       })
     return rows
 
-  def header_map(self, table):
+  def table_grid(self, table):
+    """
+    Expand Wikipedia rowspans/colspans into a stable logical column grid.
+
+    Booker tables inherit year and result cells across multiple physical rows.
+    Reading direct cells by index shifts Author and Title into the wrong
+    columns as soon as either inherited cell is omitted.
+    """
+    grid = []
+    rowspans = {}
     for tr in table.xpath('.//tr'):
+      row = []
+      column = 0
+      for cell in tr.xpath('./td|./th'):
+        while column in rowspans:
+          span_cell, remaining = rowspans[column]
+          row.append(span_cell)
+          if remaining <= 1:
+            del rowspans[column]
+          else:
+            rowspans[column] = (span_cell, remaining - 1)
+          column += 1
+        rowspan = self.span_value(cell, 'rowspan')
+        colspan = self.span_value(cell, 'colspan')
+        for _index in range(colspan):
+          row.append(cell)
+          if rowspan > 1:
+            rowspans[column] = (cell, rowspan - 1)
+          column += 1
+      while column in rowspans:
+        span_cell, remaining = rowspans[column]
+        row.append(span_cell)
+        if remaining <= 1:
+          del rowspans[column]
+        else:
+          rowspans[column] = (span_cell, remaining - 1)
+        column += 1
+      if row:
+        grid.append(row)
+    return grid
+
+  def span_value(self, cell, attribute):
+    try:
+      return max(1, int(cell.get(attribute) or 1))
+    except (TypeError, ValueError):
+      return 1
+
+  def header_map(self, grid):
+    for row_index, cells in enumerate(grid):
       mapped = {}
-      for index, cell in enumerate(tr.xpath('./th|./td')):
+      for index, cell in enumerate(cells):
         key = HEADER_ALIASES.get(normalize_heading(self.clean_cell_text(cell)))
         if key is not None and key not in mapped:
           mapped[key] = index
-      if self.has_required_columns(mapped):
-        return mapped
-    return {}
+      if all(key in mapped for key in ('title', 'author')):
+        return row_index, mapped
+    return -1, {}
 
-  def has_required_columns(self, header_map):
-    return all(key in header_map for key in ('year', 'title', 'author'))
+  def has_wikipedia_columns(self, header_map, table_year):
+    return (
+      all(key in header_map for key in ('title', 'author'))
+      and ('year' in header_map or table_year is not None)
+      and ('result' in header_map or 'year' in header_map)
+    )
 
-  def row_matches_header(self, cells, header_map):
-    for key, index in header_map.items():
-      if index >= len(cells):
-        return False
-      if HEADER_ALIASES.get(normalize_heading(self.clean_cell_text(cells[index]))) != key:
-        return False
-    return True
-
-  def row_omits_year(self, cells, header_map, current_year):
-    if current_year is None or header_map.get('year') != 0:
-      return False
-    first_text = self.clean_cell_text(cells[0]) if cells else ''
-    return self.year_from_text(first_text) is None and len(cells) <= max(header_map.values())
-
-  def cell_for_key(self, cells, header_map, key, missing_year):
+  def cell_for_key(self, cells, header_map, key):
     index = header_map.get(key)
     if index is None:
       return None
-    if missing_year and index > header_map.get('year', -1):
-      index -= 1
     if index < 0 or index >= len(cells):
       return None
     return cells[index]
 
   def result_from_cell(self, cell):
+    if cell is None:
+      return None
     text = normalize_heading(self.clean_cell_text(cell))
-    if not text or text in IGNORED_STAGES:
+    if not text:
+      return None
+    if text in IGNORED_STAGES:
       return 'ignored'
     if 'longlist' in text or 'longlisted' in text:
       return 'ignored'
@@ -466,6 +530,23 @@ class BookerPrizeWikipediaParser(BookerPrizeOfficialParser):
       if text.startswith(alias + ' '):
         return result
     return None
+
+  def year_before_table(self, table):
+    for heading in reversed(table.xpath(
+        'preceding::*[self::h2 or self::h3 or self::h4 or self::h5]')):
+      year = self.year_from_text(self.node_text(heading))
+      if year is not None:
+        return year
+    return None
+
+  def title_cell_text(self, cell):
+    title_nodes = cell.xpath(
+      '(.//*[self::i or self::cite or self::em])[1]')
+    if title_nodes:
+      title = self.clean_cell_text(title_nodes[0])
+      if title:
+        return title
+    return self.clean_cell_text(cell)
 
   def clean_cell_text(self, cell):
     if cell is None:

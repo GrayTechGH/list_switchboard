@@ -268,7 +268,7 @@ class MatchReviewDialog(QDialog):
     self.view_book_button = QPushButton('View book', self)
     self.previous_button = QPushButton('Previous', self)
     self.next_button = QPushButton('Next', self)
-    self.cancel_button = QPushButton('Cancel', self)
+    self.cancel_button = QPushButton('Close', self)
     for button in (
         self.match_button, self.ignore_button, self.view_book_button,
         self.previous_button, self.next_button, self.cancel_button):

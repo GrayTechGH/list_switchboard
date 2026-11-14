@@ -8,26 +8,35 @@ Maintenance notes:
 - SYKM award pages are long text/link archives grouped by year and category,
   not table pages. Parse line boundaries first, then parse only configured
   category rows.
+- Current award tables split result markers and work text across adjacent
+  cells; join only those structural rows before applying the line parser.
+- Multiple winner-marked rows in one configured category/year are co-winners
+  and share the base award-year position.
+- A terminal `(tie)` annotates a category heading rather than changing its
+  category identity.
+- Work anchors may lead directly to Amazon. Preserve the containing SYKM award
+  page as provenance for those rows instead of exposing the retailer URL.
 - The parser targets book categories. Person-only, short-story, and award
   navigation lines should be ignored unless a future recipe configures them
   deliberately.
 """
 
 import re
-from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
-from bs4.element import NavigableString, Tag
+from bs4.element import Comment, NavigableString, Tag
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import (
-    AwardParserBase, assign_positions, normalize_heading, normalize_line,
+    AwardParserBase, assign_positions, award_entry_source_url,
+    is_author_suffix, normalize_heading, normalize_line,
     strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
 except ImportError:
   from .award_base import (
-    AwardParserBase, assign_positions, normalize_heading, normalize_line,
+    AwardParserBase, assign_positions, award_entry_source_url,
+    is_author_suffix, normalize_heading, normalize_line,
     strip_publication_notes,
   )
   from .generic import position_sort_key
@@ -58,6 +67,8 @@ class StopYoureKillingMeAwardParserBase(AwardParserBase):
   """
 
   AWARD_NAME = ''
+  AUTHOR_CREDIT_CORRECTIONS = {}
+  TIED_WINNERS_SHARE_POSITION = True
 
   def parse(self, html, base_url, name, category, category_aliases=(),
             award_name=None):
@@ -121,6 +132,8 @@ class StopYoureKillingMeAwardParserBase(AwardParserBase):
       current.append(re.sub(r'\s*\r?\n\s*', ' ', str(value)))
 
     def walk(node):
+      if isinstance(node, Comment):
+        return
       if isinstance(node, NavigableString):
         append_text(node)
         return
@@ -129,6 +142,26 @@ class StopYoureKillingMeAwardParserBase(AwardParserBase):
       if node.name == 'br':
         flush()
         return
+      if node.name == 'tr':
+        cells = node.find_all('td', recursive=False)
+        cell_text = [
+          normalize_line(cell.get_text(' ', strip=False))
+          for cell in cells
+        ]
+        is_entry_row = (
+          len(cells) >= 2 and
+          bool(re.fullmatch(r'[*\u2217\u00b0]', cell_text[0] or ''))
+        )
+        is_category_row = (
+          len(cells) == 1 and cells[0].has_attr('colspan')
+        )
+        if is_entry_row or is_category_row:
+          if current:
+            flush()
+          text = normalize_line(' '.join(cell_text))
+          if text:
+            fragments.append({'text': text, 'nodes': (node,)})
+          return
       if node.name in {'script', 'style'}:
         return
       started_with_content = bool(current)
@@ -172,6 +205,7 @@ class StopYoureKillingMeAwardParserBase(AwardParserBase):
         text = text[index:]
         break
     text = re.sub(r'^\s*Image:?\s+', '', text, flags=re.I)
+    text = re.sub(r'\s*\(\s*tie\s*\)\s*:?\s*$', '', text, flags=re.I)
     return normalize_line(text)
 
   def looks_like_category_heading(self, text):
@@ -217,7 +251,25 @@ class StopYoureKillingMeAwardParserBase(AwardParserBase):
 
   def clean_author(self, value):
     value = self.strip_review_tail(value)
-    return strip_publication_notes(normalize_line(value)).strip(' "\u201c\u201d,')
+    value = strip_publication_notes(normalize_line(value)).strip(' "\u201c\u201d,')
+    return ' & '.join(self.split_author_credit(value))
+
+  def split_author_credit(self, value):
+    """Split the bounded author/editor credit without splitting name suffixes."""
+    corrected = self.AUTHOR_CREDIT_CORRECTIONS.get(normalize_heading(value))
+    if corrected is not None:
+      return list(corrected)
+    parts = re.split(r'\s*(?:,\s*(?:and\s+)?|;\s*|&|\band\b)\s*', value, flags=re.I)
+    authors = []
+    for part in parts:
+      part = normalize_line(part).strip(' ,;')
+      if not part:
+        continue
+      if is_author_suffix(part) and authors:
+        authors[-1] = f'{authors[-1]}, {part}'
+      elif part not in authors:
+        authors.append(part)
+    return authors
 
   def first_work_url(self, fragment, base_url):
     for node in fragment.get('nodes', ()):
@@ -229,7 +281,7 @@ class StopYoureKillingMeAwardParserBase(AwardParserBase):
         href = link.get('href', '')
         if text == 'review' or 'review' in href.casefold():
           continue
-        return urljoin(base_url, href)
+        return award_entry_source_url(href, base_url)
     return ''
 
   def dedupe_rows(self, rows):
@@ -260,5 +312,8 @@ class StopYoureKillingMeAwardParserBase(AwardParserBase):
           award=row.get('award') or award_name or self.AWARD_NAME)
         for row in by_year[year]
       ]
-      entries.extend(assign_positions(award_rows, int(year)))
+      entries.extend(assign_positions(
+        award_rows,
+        int(year),
+        tied_winners_share_position=self.TIED_WINNERS_SHARE_POSITION))
     return entries

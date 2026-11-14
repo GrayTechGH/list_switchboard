@@ -8,6 +8,8 @@ Maintenance notes:
 - Pulitzer category pages expose year sections with winner headings followed
   by a `Finalists:` marker and finalist work links.
 - The rendered page can duplicate finalist links, so dedupe is load-bearing.
+- Split only source-bounded author credits, never title text or arbitrary
+  commas. The Durants' shared-surname credit is a reviewed source exception.
 """
 
 import re
@@ -30,6 +32,22 @@ except ImportError:
 
 
 AWARD_NAME = 'Pulitzer Prize'
+
+
+def pulitzer_authors(value):
+  """Normalize isolated credits consistently across official/fallback sources."""
+  credit = strip_publication_notes(normalize_line(value)).strip(' "\u201c\u201d,;')
+  if normalize_heading(credit) == 'will and ariel durant':
+    return ['Will Durant', 'Ariel Durant']
+  authors = []
+  seen = set()
+  for part in re.split(r'\s+(?:and|&|with)\s+', credit, flags=re.I):
+    author = part.strip(' ,;')
+    key = author.casefold()
+    if author and key not in seen:
+      seen.add(key)
+      authors.append(author)
+  return authors
 
 
 class PulitzerAwardParser(AwardParserBase):
@@ -115,7 +133,10 @@ class PulitzerAwardParser(AwardParserBase):
 
   def title_author_from_text(self, value):
     text = normalize_line(value)
-    match = re.match(r'^(.+?)\s*,?\s+by\s+(.+)$', text, re.I)
+    # Prefer the source's comma/by boundary over a `by` inside a book title.
+    match = re.match(r'^(.+),\s+by\s+(.+)$', text, re.I)
+    if match is None:
+      match = re.match(r'^(.+)\s+by\s+(.+)$', text, re.I)
     if match is None:
       return '', ''
     title = self.clean_title(match.group(1))
@@ -184,7 +205,9 @@ class PulitzerAwardParser(AwardParserBase):
     entries = []
     for year in sorted(by_year, key=lambda value: int(value)):
       award_rows = [
-        self.build_award_entry(row, row['source_url'], year, row['category'])
+        self.build_award_entry(
+          dict(row, authors=pulitzer_authors(row['author'])),
+          row['source_url'], year, row['category'])
         for row in by_year[year]
       ]
       entries.extend(assign_positions(
@@ -208,6 +231,8 @@ class PulitzerWikipediaParser(AwardParserBase):
     column.
   - Known tied-winner years must be configured by the fetcher because the table
     shape alone cannot always distinguish the second winner from a finalist.
+  - Rowspanned book cells identify one work with multiple author rows. Count
+    the work once before assigning winner/finalist positions.
   """
 
   AWARD_NAME = AWARD_NAME
@@ -251,8 +276,8 @@ class PulitzerWikipediaParser(AwardParserBase):
     current_year = None
     row_count_by_year = {}
     no_award_years = set()
-    for tr in table.xpath('.//tr'):
-      cells = tr.xpath('./td|./th')
+    book_rows = {}
+    for cells in self.table_grid(table):
       if not cells or self.row_matches_header(cells, header_map):
         continue
       missing_year = self.row_omits_year(cells, header_map, current_year)
@@ -279,6 +304,11 @@ class PulitzerWikipediaParser(AwardParserBase):
       if not title or not author:
         continue
 
+      book_key = (year, title_cell)
+      if book_key in book_rows:
+        book_rows[book_key]['author'] += ' and ' + author
+        continue
+
       year_row_count = row_count_by_year.get(year, 0)
       winner_count = tied_winner_counts.get(year, 1)
       result = (
@@ -295,7 +325,40 @@ class PulitzerWikipediaParser(AwardParserBase):
         'source_url': self.first_link_url(title_cell, base_url) or base_url,
         'category': category,
       })
+      book_rows[book_key] = rows[-1]
     return rows
+
+  def table_grid(self, table):
+    """Retain cell identity while expanding inherited year/book columns."""
+    rowspans = {}
+    for tr in table.xpath('.//tr'):
+      row = {}
+      for column, (cell, remaining) in list(rowspans.items()):
+        row[column] = cell
+        if remaining == 1:
+          del rowspans[column]
+        else:
+          rowspans[column] = (cell, remaining - 1)
+      column = 0
+      for cell in tr.xpath('./td|./th'):
+        while column in row:
+          column += 1
+        colspan = self.span_value(cell, 'colspan')
+        rowspan = self.span_value(cell, 'rowspan')
+        for offset in range(colspan):
+          index = column + offset
+          row[index] = cell
+          if rowspan > 1:
+            rowspans[index] = (cell, rowspan - 1)
+        column += colspan
+      if row:
+        yield [row.get(index) for index in range(max(row) + 1)]
+
+  def span_value(self, cell, attribute):
+    try:
+      return max(1, int(cell.get(attribute) or 1))
+    except (TypeError, ValueError):
+      return 1
 
   def header_map(self, table):
     for tr in table.xpath('.//tr'):
@@ -392,7 +455,9 @@ class PulitzerWikipediaParser(AwardParserBase):
     entries = []
     for year in sorted(by_year, key=lambda value: int(value)):
       award_rows = [
-        self.build_award_entry(row, row['source_url'], year, row['category'])
+        self.build_award_entry(
+          dict(row, authors=pulitzer_authors(row['author'])),
+          row['source_url'], year, row['category'])
         for row in by_year[year]
       ]
       entries.extend(assign_positions(
@@ -585,7 +650,9 @@ class PulitzerBritannicaParser(AwardParserBase):
     entries = []
     for year in sorted(by_year, key=lambda value: int(value)):
       award_rows = [
-        self.build_award_entry(row, row['source_url'], year, row['category'])
+        self.build_award_entry(
+          dict(row, authors=pulitzer_authors(row['author'])),
+          row['source_url'], year, row['category'])
         for row in by_year[year]
       ]
       entries.extend(assign_positions(

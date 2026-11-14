@@ -1,0 +1,442 @@
+{
+  "append_state": {
+    "entry_count": 38,
+    "last_entry_key": "the berry pickers|amanda peters",
+    "last_position": "2024",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Medora Sale"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1987",
+      "category": "First Novel",
+      "position": "1987",
+      "result": "winner",
+      "title": "Murder on the Run"
+    },
+    {
+      "authors": [
+        "Laurence Gough"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1988",
+      "category": "First Novel",
+      "position": "1988",
+      "result": "winner",
+      "title": "The Goldfish Bowl"
+    },
+    {
+      "authors": [
+        "John Brady"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1989",
+      "category": "First Novel",
+      "position": "1989",
+      "result": "winner",
+      "title": "A Stone of the Heart"
+    },
+    {
+      "authors": [
+        "John Lawrence Reynolds"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1990",
+      "category": "First Novel",
+      "position": "1990",
+      "result": "winner",
+      "title": "The Man Who Murdered God"
+    },
+    {
+      "authors": [
+        "Carsten Stroud"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1991",
+      "category": "First Novel",
+      "position": "1991",
+      "result": "winner",
+      "title": "Sniper's Moon"
+    },
+    {
+      "authors": [
+        "Paul Grescoe"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1992",
+      "category": "First Novel",
+      "position": "1992",
+      "result": "winner",
+      "title": "Flesh Wound"
+    },
+    {
+      "authors": [
+        "Sean Stewart"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1993",
+      "category": "First Novel",
+      "position": "1993",
+      "result": "winner",
+      "title": "Passion Play"
+    },
+    {
+      "authors": [
+        "Gavin Scott"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1994",
+      "category": "First Novel",
+      "position": "1994",
+      "result": "winner",
+      "title": "Memory Trace"
+    },
+    {
+      "authors": [
+        "Sparkle Hayter"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1995",
+      "category": "First Novel",
+      "position": "1995",
+      "result": "winner",
+      "title": "What's A Girl Gotta Do?"
+    },
+    {
+      "authors": [
+        "John Spencer Hill"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1996",
+      "category": "First Novel",
+      "position": "1996",
+      "result": "winner",
+      "title": "The Last Castrato"
+    },
+    {
+      "authors": [
+        "C. C. Benison"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1997",
+      "category": "First Novel",
+      "position": "1997",
+      "result": "winner",
+      "title": "Death At Buckingham Palace"
+    },
+    {
+      "authors": [
+        "Kathy Reichs"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1998",
+      "category": "First Novel",
+      "position": "1998",
+      "result": "winner",
+      "title": "D\u00e9ja Dead"
+    },
+    {
+      "authors": [
+        "Liz Brady"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1999",
+      "category": "First Novel",
+      "position": "1999",
+      "result": "winner",
+      "title": "Sudden Blow"
+    },
+    {
+      "authors": [
+        "Andrew Pyper"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2000",
+      "category": "First Novel",
+      "position": "2000",
+      "result": "winner",
+      "title": "Lost Girls"
+    },
+    {
+      "authors": [
+        "Mark Zuehlke"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2001",
+      "category": "First Novel",
+      "position": "2001",
+      "result": "winner",
+      "title": "Hands Like Clouds"
+    },
+    {
+      "authors": [
+        "Jon Redfern"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2002",
+      "category": "First Novel",
+      "position": "2002",
+      "result": "winner",
+      "title": "The Boy Must Die"
+    },
+    {
+      "authors": [
+        "James W. Nichol"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2003",
+      "category": "First Novel",
+      "position": "2003",
+      "result": "winner",
+      "title": "Midnight Cab"
+    },
+    {
+      "authors": [
+        "Jan Rehner"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2004",
+      "category": "First Novel",
+      "position": "2004",
+      "result": "winner",
+      "title": "Just Murder"
+    },
+    {
+      "authors": [
+        "Jon Evans"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2005",
+      "category": "First Novel",
+      "position": "2005",
+      "result": "winner",
+      "title": "Dark Places"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2006",
+      "category": "First Novel",
+      "position": "2006",
+      "result": "winner",
+      "title": "Still Life"
+    },
+    {
+      "authors": [
+        "Anne Emery"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2007",
+      "category": "First Novel",
+      "position": "2007",
+      "result": "winner",
+      "title": "Sign of the Cross"
+    },
+    {
+      "authors": [
+        "Liam Durcan"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2008",
+      "category": "First Novel",
+      "position": "2008",
+      "result": "winner",
+      "title": "Garcia's Heart"
+    },
+    {
+      "authors": [
+        "Howard Shrier"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2009",
+      "category": "First Novel",
+      "position": "2009",
+      "result": "winner",
+      "title": "Buffalo Jump"
+    },
+    {
+      "authors": [
+        "Alan Bradley"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2010",
+      "category": "First Novel",
+      "position": "2010",
+      "result": "winner",
+      "title": "The Sweetness at the Bottom of the Pie"
+    },
+    {
+      "authors": [
+        "Avner Mandelman"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2011",
+      "category": "First Novel",
+      "position": "2011",
+      "result": "winner",
+      "title": "The Debba"
+    },
+    {
+      "authors": [
+        "Ian Hamilton"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2012",
+      "category": "First Novel",
+      "position": "2012",
+      "result": "winner",
+      "title": "Water Rat of Wanchai"
+    },
+    {
+      "authors": [
+        "Simone St. James"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2013",
+      "category": "First Novel",
+      "position": "2013",
+      "result": "winner",
+      "title": "The Haunting of Maddy Clare"
+    },
+    {
+      "authors": [
+        "J. Kent Messum"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2014",
+      "category": "First Novel",
+      "position": "2014",
+      "result": "winner",
+      "title": "Bait"
+    },
+    {
+      "authors": [
+        "Steve Burrows"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2015",
+      "category": "First Novel",
+      "position": "2015",
+      "result": "winner",
+      "title": "A Siege of Bitterns"
+    },
+    {
+      "authors": [
+        "Ausma Zehanat Khan"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2016",
+      "category": "First Novel",
+      "position": "2016",
+      "result": "winner",
+      "title": "Unquiet Dead"
+    },
+    {
+      "authors": [
+        "Elle Wild"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2017",
+      "category": "First Novel",
+      "position": "2017",
+      "result": "winner",
+      "title": "Strange Things Done"
+    },
+    {
+      "authors": [
+        "Dave Butler"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2018",
+      "category": "First Novel",
+      "position": "2018",
+      "result": "winner",
+      "title": "Full Curl"
+    },
+    {
+      "authors": [
+        "A.J. Devlin"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2019",
+      "category": "First Novel",
+      "position": "2019",
+      "result": "winner",
+      "title": "Cobra Clutch"
+    },
+    {
+      "authors": [
+        "Philip Elliott"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2020",
+      "category": "First Novel",
+      "position": "2020",
+      "result": "winner",
+      "title": "Nobody Move"
+    },
+    {
+      "authors": [
+        "Guglielmo D'Izzia"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2021",
+      "category": "First Novel",
+      "position": "2021",
+      "result": "winner",
+      "title": "The Transaction"
+    },
+    {
+      "authors": [
+        "Ashley Audrain"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2022",
+      "category": "First Novel",
+      "position": "2022",
+      "result": "winner",
+      "title": "The Push"
+    },
+    {
+      "authors": [
+        "Sam Shelstad"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2023",
+      "category": "First Novel",
+      "position": "2023",
+      "result": "winner",
+      "title": "Citizens of Light"
+    },
+    {
+      "authors": [
+        "Amanda Peters"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2024",
+      "category": "First Novel",
+      "position": "2024",
+      "result": "winner",
+      "title": "The Berry Pickers"
+    }
+  ],
+  "fetched_at": "2026-07-16T12:49:09Z",
+  "list_id": "crime_writers_of_canada_award_first_novel",
+  "list_name": "Crime Writers of Canada Award - First Novel",
+  "match_series": false,
+  "notes": [
+    "LibraryThing failed: HTTP Error 403: Forbidden"
+  ],
+  "parser": "crime_writers_of_canada_award_first_novel",
+  "schema_version": 2,
+  "source": {
+    "name": "Crime Writers of Canada Award - First Novel",
+    "source_id": "crime_writers_of_canada_award_first_novel",
+    "url": "https://en.wikipedia.org/wiki/Crime_Writers_of_Canada_Awards_of_Excellence"
+  }
+}

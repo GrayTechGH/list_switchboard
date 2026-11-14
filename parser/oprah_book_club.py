@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 
 from .book_club_base import (
   BookClubParserBase, clean_author, clean_title, parse_year, split_title_author,
-  text_blocks, parsed_source,
+  text_blocks, parsed_source, position_sort_key,
 )
 
 
@@ -23,6 +23,11 @@ class OprahBookClubParser(BookClubParserBase):
   DEFAULT_SCOPE = 'primary_selections'
   DEFAULT_SELECTION_TYPE = 'primary_pick'
   LISTICLE_PAGE_SIZE = 20
+
+  def entry_sort_key(self, entry):
+    # The official selection number is authoritative; card years are incomplete
+    # and can describe the book rather than the club selection.
+    return position_sort_key(entry.get('position', ''))
 
   def parse(self, html, base_url, name=None, scope=None, fetch_url=None):
     soup = BeautifulSoup(html or '<html></html>', 'html.parser')
@@ -194,6 +199,7 @@ class OprahBookClubParser(BookClubParserBase):
     return entries
 
   def complete_entry(self, entry, text):
+    entry['authors'] = self.split_authors(entry.get('authors', []))
     rank = entry.get('position', '')
     try:
       rank_int = int(float(rank))
@@ -215,6 +221,17 @@ class OprahBookClubParser(BookClubParserBase):
     if flags:
       entry['scope_flags'] = ', '.join(dict.fromkeys(flags))
     return entry
+
+  def split_authors(self, values):
+    if not isinstance(values, (list, tuple, set)):
+      values = [values]
+    authors = []
+    for value in values:
+      for author in re.split(r'\s+(?:and|&)\s+', clean_author(value), flags=re.I):
+        author = author.strip()
+        if author and author not in authors:
+          authors.append(author)
+    return authors
 
   def era_for_entry(self, rank, year):
     try:

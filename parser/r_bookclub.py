@@ -12,10 +12,14 @@ Maintenance notes:
 - A plus sign splits selections only when it separates distinct linked titles.
   Plus signs inside one linked title or a parenthetical remain part of that
   title.
+- Rendered Reddit pages include sidebar/footer prose that resembles credits.
+  Scope HTML traversal to the wiki container; an unrecognized full Reddit
+  document must fail into the next transport rather than scan the page body.
 """
 
 import json
 import re
+from pathlib import Path
 from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup, NavigableString, Tag
@@ -74,6 +78,7 @@ MONTH_PATTERN = '|'.join(MONTHS)
 MARKDOWN_LINK_RE = re.compile(
   r'\[([^\]]+)\]\(([^()]*(?:\([^()]*\)[^()]*)*)\)')
 REDDIT_POST_RE = re.compile(r'/comments/([^/]+)/', re.I)
+HISTORICAL_CORRECTIONS_FILE = 'r_bookclub_corrections.json'
 
 
 def normalize_text(value):
@@ -120,14 +125,29 @@ def reddit_post_id(url):
 
 
 def clean_title(value):
-  return markdown_text(value).strip(' \"\'\u2018\u2019\u201c\u201d,.;')
+  value = markdown_text(value).strip(' \"\'\u2018\u2019\u201c\u201d,.;')
+  while value.endswith(')') and value.count(')') > value.count('('):
+    value = value[:-1].rstrip()
+  return value
 
 
 def clean_credit(value):
   value = markdown_text(value)
+  value = value.replace('\\', '')
+  # These are navigation/resource labels attached to the selection, not credits.
+  value = re.split(
+    r'\s+(?:\+\s*)?\[?(?:posts?|marginalia|gutenberg(?:\s+link)?|'
+    r'parallel\s*text|librivox|audiobook)(?:\b|\s*\[)',
+    value, maxsplit=1, flags=re.I)[0]
   value = re.sub(r'\s+-\s+(?:two\s+)?posts?\b.*$', '', value, flags=re.I)
-  value = re.sub(r'\s*\((?:continued|undiscussed)\b[^)]*\)\s*$', '', value, flags=re.I)
-  return value.strip(' \"\'\u2018\u2019\u201c\u201d,.;')
+  value = re.sub(r'\s+-\s+two\s*$', '', value, flags=re.I)
+  value = re.sub(
+    r'\s*\((?:continued\b[^)]*|undiscussed\b[^)]*|gutenberg(?:\s+link)?|'
+    r'converted\s+to\s+a\s+big\s+read|big\s+read\s+through\b[^)]*)\)\s*$',
+    '', value, flags=re.I)
+  preserve_suffix_period = bool(re.search(r'\b(?:Jr|Sr)\.\s*$', value, re.I))
+  value = value.strip(' \"\'\u2018\u2019\u201c\u201d,.;')
+  return value + '.' if preserve_suffix_period else value
 
 
 def split_authors(value):
@@ -136,6 +156,8 @@ def split_authors(value):
   credit = re.sub(r'(?:,?\s*)\bet\s+al\.?,?', '', credit, flags=re.I).strip(' ,;')
   parts = re.split(
     r'(?:,\s*)?\s+(?:and|with|&)\s+|\s*;\s*', credit, flags=re.I)
+  if len(parts) > 1 and ',' in credit:
+    parts = [item for part in parts for item in re.split(r'\s*,\s*', part)]
   if incomplete and len(parts) == 1 and ',' in credit:
     parts = re.split(r'\s*,\s*', credit)
   authors = []
@@ -168,26 +190,37 @@ def paragraph_blocks(markdown):
 
 
 def html_row_markdown(node, base_url):
-  """Serialize emphasized HTML titles as Markdown while retaining nearby text."""
+  """Preserve links and emphasis regardless of which tag wraps the other."""
   chunks = []
 
-  def append(item):
+  def append(item, emphasized=False):
     if isinstance(item, NavigableString):
       chunks.append(str(item))
       return
     if not isinstance(item, Tag):
       return
-    if item.name in ('em', 'i'):
-      parent = item.parent if getattr(item.parent, 'name', '') == 'a' else None
-      href = urljoin(base_url, parent.get('href', '')) if parent else ''
+    if item.name == 'a':
       title = normalize_text(item.get_text(' ', strip=True))
-      chunks.append(f'[*{title}*]({href})' if href else f'*{title}*')
+      if emphasized or item.find(['em', 'i']) is not None:
+        title = f'*{title}*'
+      href = item.get('href') or ''
+      chunks.append(f'[{title}]({href})' if href else title)
+      return
+    if item.name in ('em', 'i'):
+      if item.find('a', href=True) is not None:
+        for child in item.children:
+          append(child, emphasized=True)
+      else:
+        chunks.append(f'*{normalize_text(item.get_text(" ", strip=True))}*')
+      return
+    if item.name == 'br':
+      chunks.append(' ')
       return
     for child in item.children:
-      append(child)
+      append(child, emphasized=emphasized)
 
   append(node)
-  return normalize_text(''.join(chunks))
+  return normalize_text(re.sub(r'\s+', ' ', ''.join(chunks)))
 
 
 class RBookclubParser(ListParserBase):
@@ -208,7 +241,7 @@ class RBookclubParser(ListParserBase):
     entries, notes = self.entries_from_blocks(blocks, base_url)
     if not entries:
       raise ValueError('Could not find r/bookclub selection rows in the fetched wiki page.')
-    list_name = name or 'r/bookclub Previous Selections'
+    list_name = name or 'r/bookclub'
     return {
       'name': list_name,
       'source': parsed_source(list_name, base_url, self.SOURCE_ID),
@@ -264,12 +297,17 @@ class RBookclubParser(ListParserBase):
 
   def blocks_from_html(self, payload, base_url):
     soup = BeautifulSoup(str(payload), 'html.parser')
+    root = self.wiki_html_root(soup)
     blocks = []
     started = False
-    for node in soup.find_all(['h1', 'h2', 'h3', 'p', 'li']):
+    for node in root.find_all(['h1', 'h2', 'h3', 'p', 'li']):
       text = normalize_text(node.get_text(' ', strip=True))
       if not text:
         continue
+      boundary = node.find(['h1', 'h2', 'h3']) if node.name == 'li' else None
+      if started and boundary and normalize_text(
+          boundary.get_text(' ', strip=True)).casefold() in ('page title', 'page sections'):
+        break
       if node.name in ('h1', 'h2', 'h3'):
         if text.casefold() == 'previous selections':
           started = True
@@ -283,6 +321,28 @@ class RBookclubParser(ListParserBase):
       elif started:
         blocks.append(('row', html_row_markdown(node, base_url)))
     return blocks
+
+  def wiki_html_root(self, soup):
+    def has_heading(node):
+      return any(normalize_text(h.get_text(' ', strip=True)).casefold() == 'previous selections'
+        for h in node.find_all(['h1', 'h2', 'h3']))
+
+    # The rendered Shreddit wiki uses div.md.wiki. Classic Reddit wraps .md
+    # in .wiki-page-content. Prefer these boundaries over any enclosing main.
+    for selector in ('.md.wiki', '.wiki-page-content .md', '.wiki-page-content', '.md'):
+      for candidate in soup.select(selector):
+        if has_heading(candidate):
+          return candidate
+    title = soup.title.get_text(' ', strip=True).casefold() if soup.title else ''
+    if soup.find('shreddit-app') is not None or 'reddit' in title:
+      raise ValueError('Could not identify the r/bookclub wiki content container.')
+    if soup.find(['html', 'body']) is not None:
+      for candidate in soup.find_all('main'):
+        if has_heading(candidate):
+          return candidate
+      raise ValueError('Could not identify the r/bookclub wiki content container.')
+    # JSON content_html and archive responses can be standalone wiki fragments.
+    return soup
 
   def entries_from_blocks(self, blocks, base_url):
     sections = []
@@ -306,8 +366,7 @@ class RBookclubParser(ListParserBase):
       text = markdown_text(value)
       if not current_section or not text:
         continue
-      if text.casefold() == 'inactive':
-        notes.append(self.section_note(current_section, 'Inactive; no selections listed.'))
+      if self.is_intentional_empty_row(text):
         continue
       current_section['rows'].append(value)
 
@@ -323,6 +382,10 @@ class RBookclubParser(ListParserBase):
       entry['position'] = str(index)
     return entries, notes
 
+  def is_intentional_empty_row(self, row):
+    text = normalize_text(row).casefold().strip(' .')
+    return text == 'inactive' or bool(re.fullmatch(r'short\s+story\s*:\s*none', text))
+
   def section_note(self, section, message):
     context = ' '.join(filter(None, (section.get('label'), section.get('year'))))
     return f'{context}: {message}' if context else message
@@ -334,6 +397,11 @@ class RBookclubParser(ListParserBase):
     if not components:
       component = self.plain_component(body)
       components = [component] if component else []
+    if not components:
+      correction = self.historical_correction(raw, section)
+      if correction:
+        label = correction.get('label') or label
+        components = [correction['component']]
     if not components:
       return []
 
@@ -389,6 +457,26 @@ class RBookclubParser(ListParserBase):
         **metadata))
     return entries
 
+  def historical_correction(self, row, section):
+    """Recover three source rows whose historical wiki records omit credits."""
+    text = markdown_text(row).replace('\\', '').casefold()
+    for correction in load_historical_corrections():
+      if any(str(correction.get(field) or '') != str(section.get(field) or '')
+             for field in ('year', 'month', 'month_end')):
+        continue
+      if normalize_text(correction.get('raw_text')).casefold() != text:
+        continue
+      return {
+        'label': correction.get('label') or '',
+        'component': {
+          'title': correction.get('title') or '',
+          'credit': correction.get('author') or '',
+          'role': correction.get('role') or 'author',
+          'url': '',
+        },
+      }
+    return None
+
   def split_label(self, row, section):
     first_link = row.find('[')
     colon = row.find(':')
@@ -401,7 +489,7 @@ class RBookclubParser(ListParserBase):
     title_links = []
     for match in links:
       tail = body[match.end():]
-      role_match = re.match(r'\s+(translated\s+by|by)\s+', tail, re.I)
+      role_match = re.match(r'\s*[,)]?\s*(translated\s+by|by)\s+', tail, re.I)
       if role_match:
         title_links.append((match, role_match))
     if not title_links:
@@ -469,3 +557,15 @@ class RBookclubParser(ListParserBase):
 
 def parse_r_bookclub(payload, base_url, name=None):
   return RBookclubParser().parse(payload, base_url, name=name)
+
+
+def load_historical_corrections():
+  try:
+    from importlib import resources
+    package = 'calibre_plugins.list_switchboard.parser.data'
+    text = resources.files(package).joinpath(
+      HISTORICAL_CORRECTIONS_FILE).read_text(encoding='utf-8')
+  except Exception:
+    path = Path(__file__).with_name('data') / HISTORICAL_CORRECTIONS_FILE
+    text = path.read_text(encoding='utf-8')
+  return tuple(json.loads(text).get('rows') or ())

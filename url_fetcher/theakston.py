@@ -7,18 +7,28 @@ try:
   from calibre_plugins.list_switchboard.parser.source_fallback import (
     SourceAttempt, SourceFallbackRunner,
   )
+  from calibre_plugins.list_switchboard.url_fetcher.librarything_fallback import (
+    LibraryThingFetchPolicyMixin, LibraryThingSourceAttempt,
+  )
 except ImportError:
   from parser.source_fallback import SourceAttempt, SourceFallbackRunner
+  from url_fetcher.librarything_fallback import (
+    LibraryThingFetchPolicyMixin, LibraryThingSourceAttempt,
+  )
 
 
-class UrlFetcherTheakstonOldPeculierCrimeNovelOfTheYear(UrlFetcherGeneric):
+class UrlFetcherTheakstonOldPeculierCrimeNovelOfTheYear(
+    LibraryThingFetchPolicyMixin, UrlFetcherGeneric):
 
   FILTER_CATEGORIES = (CATEGORY_CRIME_MYSTERY_THRILLER,)
   FETCH_URLS = ()
   order = 237
   options = {'match_series': False}
-  URL = 'https://www.librarything.com/award/2016/Theakston-Old-Peculier-Crime-Novel-of-the-Year'
-  WIKIPEDIA_URL = 'https://en.wikipedia.org/wiki/Theakston_Old_Peculier_Crime_Novel_of_the_Year_Award'
+  URL = 'https://en.wikipedia.org/wiki/Theakston_Old_Peculier_Crime_Novel_of_the_Year_Award'
+  WIKIPEDIA_URL = URL
+  LIBRARYTHING_URL = (
+    'https://www.librarything.com/award/2016/'
+    'Theakston-Old-Peculier-Crime-Novel-of-the-Year')
   source_id = 'theakston_old_peculier_crime_novel_of_the_year'
   NAME = 'Theakston Old Peculier Crime Novel of the Year'
   CATEGORY = 'Theakston Old Peculier Crime Novel of the Year'
@@ -34,17 +44,18 @@ class UrlFetcherTheakstonOldPeculierCrimeNovelOfTheYear(UrlFetcherGeneric):
       from parser.theakston import TheakstonLibraryThingParser, TheakstonWikipediaParser
     return (
       SourceAttempt(
-        'LibraryThing',
-        self.URL,
-        lambda html, url, **_kwargs: TheakstonLibraryThingParser().parse(
-          html, url, self.NAME, self.CATEGORY, self.CATEGORY_ALIASES),
-        source_rank=0),
-      SourceAttempt(
         'Wikipedia',
-        self.WIKIPEDIA_URL,
+        self.URL,
         lambda html, url, **_kwargs: TheakstonWikipediaParser().parse(
           html, url, self.NAME, self.CATEGORY, self.CATEGORY_ALIASES,
           allowed_results=('winner', 'shortlisted')),
+        source_rank=0),
+      LibraryThingSourceAttempt(
+        self,
+        'LibraryThing',
+        self.LIBRARYTHING_URL,
+        lambda html, url, **_kwargs: TheakstonLibraryThingParser().parse(
+          html, url, self.NAME, self.CATEGORY, self.CATEGORY_ALIASES),
         source_rank=1),
     )
 

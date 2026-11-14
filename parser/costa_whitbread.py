@@ -11,6 +11,9 @@ Maintenance notes:
 - Category pages use row-spanned years and result cells. Some older Biography
   rows omit the visible shortlist result after the winner row, so blank
   same-year rows after a winner are treated as shortlisted entries.
+- Wikipedia remains the only live source, but exact coverage and narrowly
+  verified corrections are packaged because a few historical year buckets are
+  incomplete or malformed on the live pages.
 """
 
 import re
@@ -24,12 +27,16 @@ try:
     normalize_heading, normalize_line, strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key # pyright: ignore[reportMissingImports]
+  from calibre_plugins.list_switchboard.parser.data.costa_whitbread_corrections import ( # type: ignore
+    CORRECTIONS,
+  )
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
     normalize_heading, normalize_line, strip_publication_notes,
   )
   from .generic import position_sort_key
+  from .data.costa_whitbread_corrections import CORRECTIONS
 
 
 AWARD_PREFIX = 'Costa/Whitbread Book Award'
@@ -68,6 +75,101 @@ CATEGORY_ALIASES = {
   'short story': 'Short Story',
 }
 
+RECIPE_KEYS = {
+  'novel': 'novel',
+  'first novel': 'first_novel',
+  'biography': 'biography',
+  'childrens book': 'childrens_book',
+  'children s book': 'childrens_book',
+  'book of the year': 'book_of_the_year',
+}
+
+BASE_NOTES = {
+  'novel': (
+    'Public shortlist coverage begins in 1995; earlier entries contain '
+    'category winners only.',
+  ),
+  'first_novel': (
+    'Public shortlist coverage begins in 1995; earlier entries contain '
+    'category winners only.',
+    'No First Novel award was presented from 1976 through 1980.',
+  ),
+  'biography': (
+    'Public shortlist coverage begins in 1995; earlier entries contain '
+    'category winners only.',
+  ),
+  'childrens_book': (
+    'Public shortlist coverage begins in 1995; earlier entries contain '
+    'category winners only.',
+    "No Children's Book award was presented in 1975.",
+  ),
+  'book_of_the_year': (
+    'The 1980 Whitbread Book of the Year was an isolated award; the recurring '
+    'overall award runs from 1985 through 2021.',
+  ),
+}
+
+
+def load_costa_whitbread_corrections():
+  """Return the packaged data after checking its internal schema and totals."""
+  data = CORRECTIONS
+  required_recipes = set(RECIPE_KEYS.values())
+  if data.get('schema_version') != 1:
+    raise ValueError('Costa/Whitbread corrections have an unsupported schema.')
+  coverage = data.get('coverage')
+  totals = data.get('expected_totals')
+  if not isinstance(coverage, dict) or set(coverage) != required_recipes:
+    raise ValueError('Costa/Whitbread corrections have invalid recipe coverage.')
+  if not isinstance(totals, dict) or set(totals) != required_recipes:
+    raise ValueError('Costa/Whitbread corrections have invalid expected totals.')
+  for recipe, years in coverage.items():
+    if not isinstance(years, dict) or not years:
+      raise ValueError(f'Costa/Whitbread {recipe} coverage is empty.')
+    for year, counts in years.items():
+      if not re.fullmatch(r'(?:19|20)\d{2}', str(year)):
+        raise ValueError(f'Costa/Whitbread {recipe} coverage has an invalid year.')
+      if not isinstance(counts, dict):
+        raise ValueError(f'Costa/Whitbread {recipe} coverage has invalid counts.')
+      rows = counts.get('rows')
+      winners = counts.get('winners')
+      if not isinstance(rows, int) or not isinstance(winners, int):
+        raise ValueError(f'Costa/Whitbread {recipe} coverage counts must be integers.')
+      if rows < 1 or winners < 1 or winners > rows:
+        raise ValueError(f'Costa/Whitbread {recipe} coverage counts are incoherent.')
+    if sum(item['rows'] for item in years.values()) != totals[recipe]:
+      raise ValueError(f'Costa/Whitbread {recipe} expected total is inconsistent.')
+
+  replacements = data.get('replacement_years')
+  if not isinstance(replacements, dict):
+    raise ValueError('Costa/Whitbread replacement years are invalid.')
+  for recipe, years in replacements.items():
+    if recipe not in coverage or not isinstance(years, dict):
+      raise ValueError('Costa/Whitbread replacement recipe is invalid.')
+    for year, rows in years.items():
+      expected = coverage[recipe].get(year)
+      if expected is None or not isinstance(rows, list):
+        raise ValueError('Costa/Whitbread replacement year is outside coverage.')
+      winners = 0
+      for row in rows:
+        if not isinstance(row, dict):
+          raise ValueError('Costa/Whitbread replacement row is invalid.')
+        authors = row.get('authors')
+        if (
+            not normalize_line(row.get('title', '')) or
+            not isinstance(authors, list) or not authors or
+            any(not normalize_line(author) for author in authors) or
+            row.get('result') not in {RESULT_WINNER, RESULT_SHORTLISTED} or
+            not str(row.get('source_url', '')).startswith('https://')):
+          raise ValueError('Costa/Whitbread replacement row is incomplete.')
+        winners += row['result'] == RESULT_WINNER
+      if len(rows) != expected['rows'] or winners != expected['winners']:
+        raise ValueError('Costa/Whitbread replacement year counts are inconsistent.')
+
+  for key in ('title_corrections', 'author_overrides'):
+    if not isinstance(data.get(key), (list, tuple)):
+      raise ValueError(f'Costa/Whitbread {key} are invalid.')
+  return data
+
 
 class CostaWhitbreadCategoryParser(AwardParserBase):
 
@@ -77,12 +179,128 @@ class CostaWhitbreadCategoryParser(AwardParserBase):
     self.category = category
 
   def parse(self, html, base_url, name=None):
-    rows = self.dedupe_rows(self.parse_rows(html, base_url))
+    corrections = load_costa_whitbread_corrections()
+    recipe = self.recipe_key()
+    rows = self.normalize_rows(self.parse_rows(html, base_url), corrections, recipe)
+    rows = self.dedupe_rows(rows)
+    rows, replacement_notes = self.apply_replacements(rows, corrections, recipe)
+    self.validate_coverage(rows, corrections['coverage'][recipe], recipe)
     entries = self.entries_from_rows(rows)
     return self.parsed_result(
       name or self.AWARD_NAME,
       base_url,
-      sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))))
+      sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
+      notes=list(BASE_NOTES[recipe]) + replacement_notes)
+
+  def recipe_key(self):
+    recipe = RECIPE_KEYS.get(normalize_heading(self.category))
+    if recipe is None:
+      raise ValueError(f'Unsupported Costa/Whitbread category: {self.category}')
+    return recipe
+
+  def normalize_rows(self, rows, corrections, recipe):
+    normalized = []
+    title_corrections = {
+      (item['year'], normalize_line(item['source_title']).casefold()): item
+      for item in corrections['title_corrections']
+      if item.get('recipe') == recipe
+    }
+    author_overrides = {
+      (item['year'], normalize_heading(item['title'])): item['authors']
+      for item in corrections['author_overrides']
+      if item.get('recipe') == recipe
+    }
+    for source_row in rows:
+      row = dict(source_row)
+      title = row.get('title', '')
+      correction = title_corrections.get(
+        (row.get('award_year'), normalize_line(title).casefold()))
+      if correction is not None:
+        aliases = list(row.get('aliases') or [])
+        if title != correction['title'] and title not in aliases:
+          aliases.append(title)
+        row['title'] = correction['title']
+        if aliases:
+          row['aliases'] = aliases
+
+      author_value = row.pop('author', row.get('authors', []))
+      if isinstance(author_value, str):
+        source_authors = [author_value]
+      else:
+        source_authors = list(author_value or [])
+      authors = []
+      for author in source_authors:
+        if recipe == 'biography':
+          authors.extend(
+            part for part in re.split(r'\s+(?:and|&)\s+', author, flags=re.I)
+            if normalize_line(part))
+        else:
+          authors.append(author)
+      authors = [self.clean_author(author) for author in authors]
+      override = author_overrides.get(
+        (row.get('award_year'), normalize_heading(row.get('title', ''))))
+      row['authors'] = list(override) if override is not None else authors
+      normalized.append(row)
+    return normalized
+
+  def apply_replacements(self, rows, corrections, recipe):
+    replacements = corrections['replacement_years'].get(recipe, {})
+    if not replacements:
+      return rows, []
+    by_year = {}
+    for row in rows:
+      by_year.setdefault(row['award_year'], []).append(row)
+    notes = []
+    for year, replacement_rows in replacements.items():
+      live_rows = by_year.get(year, [])
+      if self.rows_signature(live_rows) == self.rows_signature(replacement_rows):
+        continue
+      by_year[year] = [
+        dict(
+          replacement,
+          award_year=year,
+          category=self.category,
+        )
+        for replacement in replacement_rows
+      ]
+      notes.append(
+        f'{self.AWARD_NAME} {year} uses packaged verified records because the '
+        'live Wikipedia year was incomplete or inconsistent.')
+    corrected = []
+    for year in sorted(by_year, key=lambda value: int(value)):
+      corrected.extend(by_year[year])
+    return corrected, notes
+
+  def rows_signature(self, rows):
+    return tuple(
+      (
+        normalize_heading(row.get('title', '')),
+        tuple(normalize_heading(author) for author in row.get(
+          'authors', [row.get('author', '')])),
+        row.get('result'),
+      )
+      for row in rows
+    )
+
+  def validate_coverage(self, rows, expected, recipe):
+    actual = {}
+    for row in rows:
+      counts = actual.setdefault(
+        row['award_year'], {'rows': 0, 'winners': 0})
+      counts['rows'] += 1
+      counts['winners'] += row.get('result') == RESULT_WINNER
+    if actual == expected:
+      return
+    years = sorted(
+      set(actual) | set(expected), key=lambda value: int(value))
+    mismatches = [
+      f'{year}: expected {expected.get(year)}, parsed {actual.get(year)}'
+      for year in years
+      if actual.get(year) != expected.get(year)
+    ]
+    raise ValueError(
+      f'{self.AWARD_NAME} failed exact coverage validation for {recipe}: ' +
+      '; '.join(mismatches))
 
   def parse_rows(self, html, base_url):
     soup = BeautifulSoup(html, 'html.parser')
@@ -245,7 +463,8 @@ class CostaWhitbreadCategoryParser(AwardParserBase):
         row['award_year'],
         normalize_heading(row['category']),
         normalize_heading(row['title']),
-        normalize_heading(row['author']),
+        tuple(normalize_heading(author) for author in row.get(
+          'authors', [row.get('author', '')])),
       )
       if key in seen:
         continue

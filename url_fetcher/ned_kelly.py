@@ -7,21 +7,28 @@ try:
   from calibre_plugins.list_switchboard.parser.source_fallback import (
     SourceAttempt, SourceFallbackRunner,
   )
+  from calibre_plugins.list_switchboard.url_fetcher.librarything_fallback import (
+    LibraryThingFetchPolicyMixin, LibraryThingSourceAttempt,
+  )
 except ImportError:
   from parser.source_fallback import SourceAttempt, SourceFallbackRunner
+  from url_fetcher.librarything_fallback import (
+    LibraryThingFetchPolicyMixin, LibraryThingSourceAttempt,
+  )
 
 
 NED_KELLY_URL = 'https://www.librarything.com/award/2492/Ned-Kelly-Award'
 NED_KELLY_WIKI_URL = 'https://en.wikipedia.org/wiki/Ned_Kelly_Awards'
 
 
-class UrlFetcherNedKellyAward(UrlFetcherGeneric):
+class UrlFetcherNedKellyAward(LibraryThingFetchPolicyMixin, UrlFetcherGeneric):
 
   FILTER_CATEGORIES = (CATEGORY_CRIME_MYSTERY_THRILLER,)
   FETCH_URLS = ()
   order = 235
   options = {'match_series': False}
-  URL = NED_KELLY_URL
+  URL = NED_KELLY_WIKI_URL
+  LIBRARYTHING_URL = NED_KELLY_URL
   WIKIPEDIA_URL = NED_KELLY_WIKI_URL
   CATEGORY = ''
   CATEGORY_ALIASES = ()
@@ -36,15 +43,16 @@ class UrlFetcherNedKellyAward(UrlFetcherGeneric):
       from parser.ned_kelly import NedKellyLibraryThingParser, NedKellyWikipediaParser
     return (
       SourceAttempt(
-        'LibraryThing',
+        'Wikipedia',
         self.URL,
-        lambda html, url, **_kwargs: NedKellyLibraryThingParser().parse(
+        lambda html, url, **_kwargs: NedKellyWikipediaParser().parse(
           html, url, self.NAME, self.CATEGORY, self.CATEGORY_ALIASES),
         source_rank=0),
-      SourceAttempt(
-        'Wikipedia',
-        self.WIKIPEDIA_URL,
-        lambda html, url, **_kwargs: NedKellyWikipediaParser().parse(
+      LibraryThingSourceAttempt(
+        self,
+        'LibraryThing',
+        self.LIBRARYTHING_URL,
+        lambda html, url, **_kwargs: NedKellyLibraryThingParser().parse(
           html, url, self.NAME, self.CATEGORY, self.CATEGORY_ALIASES),
         source_rank=1),
     )
@@ -73,14 +81,15 @@ class UrlFetcherNedKellyCrimeFiction(UrlFetcherNedKellyAward):
   source_id = 'ned_kelly_award_crime_fiction'
   NAME = 'Ned Kelly Award - Crime Fiction'
   CATEGORY = 'Best Crime Novel'
-  CATEGORY_ALIASES = ('Crime Fiction', 'Best Novel')
+  CATEGORY_ALIASES = ('Crime Fiction', 'Best Novel', 'Fiction')
 
 
 class UrlFetcherNedKellyDebutCrimeFiction(UrlFetcherNedKellyAward):
   source_id = 'ned_kelly_award_debut_crime_fiction'
   NAME = 'Ned Kelly Award - Debut Crime Fiction'
   CATEGORY = 'Best Debut Crime Novel'
-  CATEGORY_ALIASES = ('Best First Novel', 'Debut Crime Fiction', 'First Novel')
+  CATEGORY_ALIASES = (
+    'Best First Novel', 'Debut Crime Fiction', 'First Novel', 'First Fiction')
 
 
 class UrlFetcherNedKellyTrueCrime(UrlFetcherNedKellyAward):

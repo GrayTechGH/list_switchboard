@@ -7,10 +7,13 @@ Aurealis Award parser for SFADB year pages.
 Maintenance notes:
 - SFADB exposes one overview page with linked yearly award pages.
 - The book-ish import recipes intentionally exclude short story categories.
-- Novella categories can contain quoted magazine-style short fiction rows; those
-  recipes can request quoted-title filtering via skip_quoted=True.
+- Novella categories contain both standalone/bold and quoted magazine or
+  anthology rows. Current Aurealis novella recipes retain both source shapes;
+  skip_quoted remains an explicit parser option for narrower consumers.
 - skip_quoted is stored as an instance attribute so parse_item() can read it
   without changing its signature (see SFADBParser refactor warning).
+- Retired category recipes can restrict SFADB year-link discovery when a
+  historical heading was later reused for a different category lineage.
 """
 
 import re
@@ -66,8 +69,15 @@ class AurealisParser(StandardItemMixin, SFADBParser):
   YEAR_PAGE_URL = YEAR_PAGE_URL
   CATEGORY_BOUNDARIES = CATEGORY_BOUNDARIES
 
-  def __init__(self, skip_quoted=False):
+  def __init__(self, skip_quoted=False, allowed_years=()):
     self.skip_quoted = skip_quoted
+    self.allowed_years = frozenset(allowed_years)
+
+  def year_links(self, root, base_url):
+    links = super().year_links(root, base_url)
+    if not self.allowed_years:
+      return links
+    return [link for link in links if link['year'] in self.allowed_years]
 
   def _filter_item(self, text):
     if self.skip_quoted and _is_quoted_title(text):

@@ -1,0 +1,2742 @@
+{
+  "append_state": {
+    "entry_count": 170,
+    "last_entry_key": "the midnight king|tariq ashkanani",
+    "last_position": "2026.06",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "John Creed"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2002",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-sirius-crossing/"
+      },
+      "title": "The Sirius Crossing"
+    },
+    {
+      "authors": [
+        "Stephen Leather"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2002",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2002.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/tango-one/"
+      },
+      "title": "Tango One"
+    },
+    {
+      "authors": [
+        "Rom Bradby"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2002",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2002.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-master-of-rain/"
+      },
+      "title": "The Master of Rain"
+    },
+    {
+      "authors": [
+        "Lee Child"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2002",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2002.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/without-fail/"
+      },
+      "title": "Without Fail"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2002",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2002.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/hostage/"
+      },
+      "title": "Hostage"
+    },
+    {
+      "authors": [
+        "Leif Davidsen"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2002",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2002.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/limes-photograph/"
+      },
+      "title": "Lime\u2019s Photograph"
+    },
+    {
+      "authors": [
+        "CC Humphreys"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2002",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2002.06",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-french-executioner/"
+      },
+      "title": "The French Executioner"
+    },
+    {
+      "authors": [
+        "Dan Fesperman"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2003",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-small-boat-of-great-sorrows/"
+      },
+      "title": "The Small Boat of Great Sorrows"
+    },
+    {
+      "authors": [
+        "Lucretia Grindle"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2003",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2003.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-nightspinners/"
+      },
+      "title": "The Nightspinners"
+    },
+    {
+      "authors": [
+        "Roger Jon Ellory"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2003",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2003.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/candlemoth/"
+      },
+      "title": "Candlemoth"
+    },
+    {
+      "authors": [
+        "Henry Porter"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2003",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2003.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/empire-state/"
+      },
+      "title": "Empire State"
+    },
+    {
+      "authors": [
+        "Gerald Seymour"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2003",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2003.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/traitors-kiss/"
+      },
+      "title": "Traitor\u2019s Kiss"
+    },
+    {
+      "authors": [
+        "Lee Child"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2003",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2003.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/persuader/"
+      },
+      "title": "Persuader"
+    },
+    {
+      "authors": [
+        "Jeffery Deaver"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2004",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/gardens-of-beasts/"
+      },
+      "title": "Gardens of Beasts"
+    },
+    {
+      "authors": [
+        "Joseph Finder"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2004",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2004.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/paranoia/"
+      },
+      "title": "Paranoia"
+    },
+    {
+      "authors": [
+        "Dan Fesperman"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2004",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2004.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-warlords-son/"
+      },
+      "title": "The Warlord\u2019s Son"
+    },
+    {
+      "authors": [
+        "Stephen Leather"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2004",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2004.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/hard-landing/"
+      },
+      "title": "Hard Landing"
+    },
+    {
+      "authors": [
+        "Adrian McKinty"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2004",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2004.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/dead-i-may-well-be/"
+      },
+      "title": "Dead I May Well Be"
+    },
+    {
+      "authors": [
+        "Daniel Silva"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2004",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2004.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-confessor/"
+      },
+      "title": "The Confessor"
+    },
+    {
+      "authors": [
+        "Mo Hayder"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2004",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2004.06",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/tokyo-2/"
+      },
+      "title": "Tokyo"
+    },
+    {
+      "authors": [
+        "Henry Porter"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2005",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/brandeburg/"
+      },
+      "title": "Brandeburg"
+    },
+    {
+      "authors": [
+        "Simon Kernick"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2005",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2005.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/a-good-day-to-die/"
+      },
+      "title": "A Good Day to Die"
+    },
+    {
+      "authors": [
+        "Adrian Mathews"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2005",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2005.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-apothecarys-house/"
+      },
+      "title": "The Apothecary\u2019s House"
+    },
+    {
+      "authors": [
+        "Kate Mosse"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2005",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2005.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/labyrinth/"
+      },
+      "title": "Labyrinth"
+    },
+    {
+      "authors": [
+        "Joel Ross"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2005",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2005.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/double-cross-blind/"
+      },
+      "title": "Double Cross Blind"
+    },
+    {
+      "authors": [
+        "Daniel Silva"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2005",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2005.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/a-death-in-vienna/"
+      },
+      "title": "A Death in Vienna"
+    },
+    {
+      "authors": [
+        "G.M. Ford"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2005",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2005.06",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/a-blind-eye/"
+      },
+      "title": "A Blind Eye"
+    },
+    {
+      "authors": [
+        "Nick Stone"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2006",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/mr-clarinet/"
+      },
+      "title": "Mr Clarinet"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2006",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2006.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-lincoln-lawyer/"
+      },
+      "title": "The Lincoln Lawyer"
+    },
+    {
+      "authors": [
+        "Jo-Ann Goodwin"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2006",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2006.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/sweet-gum/"
+      },
+      "title": "Sweet Gum"
+    },
+    {
+      "authors": [
+        "Mo Hayder"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2006",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2006.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/pig-island/"
+      },
+      "title": "Pig Island"
+    },
+    {
+      "authors": [
+        "Daniel Silva"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2006",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2006.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-english-assassin/"
+      },
+      "title": "The English Assassin"
+    },
+    {
+      "authors": [
+        "Martyn Waites"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2006",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2006.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-mercy-seat/"
+      },
+      "title": "The Mercy Seat"
+    },
+    {
+      "authors": [
+        "David Wolstencroft"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2006",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2006.06",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/contact-zero/"
+      },
+      "title": "Contact Zero"
+    },
+    {
+      "authors": [
+        "Gillian Flynn"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2007",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/sharp-objects-2/"
+      },
+      "title": "Sharp Objects"
+    },
+    {
+      "authors": [
+        "Karin Slaughter"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2007",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2007.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/triptych/"
+      },
+      "title": "Triptych"
+    },
+    {
+      "authors": [
+        "Alex Berenson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2007",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2007.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-faithful-spy/"
+      },
+      "title": "The Faithful Spy"
+    },
+    {
+      "authors": [
+        "Harlan Coben"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2007",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2007.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-woods/"
+      },
+      "title": "The Woods"
+    },
+    {
+      "authors": [
+        "RJ Ellory"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2007",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2007.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/city-of-lies/"
+      },
+      "title": "City of Lies"
+    },
+    {
+      "authors": [
+        "Michael Marshall"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2007",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2007.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-intruders/"
+      },
+      "title": "The Intruders"
+    },
+    {
+      "authors": [
+        "Michael Robotham"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2007",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2007.06",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-night-ferry/"
+      },
+      "title": "The Night Ferry"
+    },
+    {
+      "authors": [
+        "Tom Rob Smith"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2008",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/child-44/"
+      },
+      "title": "Child 44"
+    },
+    {
+      "authors": [
+        "David Stone"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2008",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2008.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-echelon-vendetta/"
+      },
+      "title": "The Echelon Vendetta"
+    },
+    {
+      "authors": [
+        "Mo Hayder"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2008",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2008.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/ritual/"
+      },
+      "title": "Ritual"
+    },
+    {
+      "authors": [
+        "Gregg Hurwitz"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2008",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2008.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/i-see-you/"
+      },
+      "title": "I see You"
+    },
+    {
+      "authors": [
+        "Michael Robotham"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2008",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2008.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/shatter/"
+      },
+      "title": "Shatter"
+    },
+    {
+      "authors": [
+        "John Hart"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2009",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-last-child/"
+      },
+      "title": "The Last Child"
+    },
+    {
+      "authors": [
+        "Andrew Williams"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2009",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2009.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-interrogator-2/"
+      },
+      "title": "The Interrogator"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2009",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2009.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-brass-verdict/"
+      },
+      "title": "The Brass Verdict"
+    },
+    {
+      "authors": [
+        "Gillian Flynn"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2009",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2009.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/dark-places/"
+      },
+      "title": "Dark Places"
+    },
+    {
+      "authors": [
+        "Charlie Newton"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2009",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2009.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/calumet-city/"
+      },
+      "title": "Calumet City"
+    },
+    {
+      "authors": [
+        "Daniel Silva"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2009",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2009.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/moscow-rules/"
+      },
+      "title": "Moscow Rules"
+    },
+    {
+      "authors": [
+        "Olen Steinhauer"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2009",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2009.06",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-tourist/"
+      },
+      "title": "The Tourist"
+    },
+    {
+      "authors": [
+        "Simon Conway"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2010",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/a-loyal-spy/"
+      },
+      "title": "A Loyal Spy"
+    },
+    {
+      "authors": [
+        "Scott Turow"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2010",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2010.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/innocent/"
+      },
+      "title": "Innocent"
+    },
+    {
+      "authors": [
+        "Henry Porter"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2010",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2010.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-dying-light/"
+      },
+      "title": "The Dying Light"
+    },
+    {
+      "authors": [
+        "Don Winslow"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2010",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2010.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-gentlemens-hour/"
+      },
+      "title": "The Gentlemen\u2019s Hour"
+    },
+    {
+      "authors": [
+        "Lee Child"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2010",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2010.04",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/61-hours/"
+      },
+      "title": "61 Hours"
+    },
+    {
+      "authors": [
+        "Mo Hayder"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2010",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2010.05",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/gone/"
+      },
+      "title": "Gone"
+    },
+    {
+      "authors": [
+        "Mick Herron"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2010",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2010.06",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/slow-horses/"
+      },
+      "title": "Slow Horses"
+    },
+    {
+      "authors": [
+        "Steve Hamilton"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2011",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-lock-artists-2/"
+      },
+      "title": "The Lock Artists"
+    },
+    {
+      "authors": [
+        "Michael Gruber"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2011",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2011.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-good-son/"
+      },
+      "title": "The Good Son"
+    },
+    {
+      "authors": [
+        "Craig Smith"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2011",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2011.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/cold-rain/"
+      },
+      "title": "Cold Rain"
+    },
+    {
+      "authors": [
+        "SJ Watson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2011",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2011.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/before-i-go-to-sleep/"
+      },
+      "title": "Before I Go To Sleep"
+    },
+    {
+      "authors": [
+        "Don Winslow"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2011",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2011.04",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/savages/"
+      },
+      "title": "Savages"
+    },
+    {
+      "authors": [
+        "Charles Cumming"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2011",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2011.05",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-trinity-six/"
+      },
+      "title": "The Trinity Six"
+    },
+    {
+      "authors": [
+        "Frederick Forsyth"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2011",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2011.06",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-cobra/"
+      },
+      "title": "The Cobra"
+    },
+    {
+      "authors": [
+        "Chris Morgan Jones"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2011",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2011.07",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/an-agent-of-deceit/"
+      },
+      "title": "An Agent of Deceit"
+    },
+    {
+      "authors": [
+        "Charles Cumming"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2012",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/a-foreign-country/"
+      },
+      "title": "A Foreign Country"
+    },
+    {
+      "authors": [
+        "Megan Abbott"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2012",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2012.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/dare-me/"
+      },
+      "title": "Dare Me"
+    },
+    {
+      "authors": [
+        "Robert Harris"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2012",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2012.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-fear-index/"
+      },
+      "title": "The Fear Index"
+    },
+    {
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2012",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2012.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/reamde/"
+      },
+      "title": "Reamde"
+    },
+    {
+      "authors": [
+        "Simon Lelic"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2012",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2012.04",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-child-who-2/"
+      },
+      "title": "The Child Who"
+    },
+    {
+      "authors": [
+        "Alex Berenson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2012",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2012.05",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-shadow-patrol/"
+      },
+      "title": "The Shadow Patrol"
+    },
+    {
+      "authors": [
+        "Ryan David Jahn"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2012",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2012.06",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-dispatcher/"
+      },
+      "title": "The Dispatcher"
+    },
+    {
+      "authors": [
+        "Alan Judd"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2012",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2012.07",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/uncommon-entry/"
+      },
+      "title": "Uncommon Entry"
+    },
+    {
+      "authors": [
+        "Roger Hobbs"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2013",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/ghostman/"
+      },
+      "title": "Ghostman"
+    },
+    {
+      "authors": [
+        "Stuart Neville"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2013",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2013.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/ratlines/"
+      },
+      "title": "Ratlines"
+    },
+    {
+      "authors": [
+        "Mark Oldfield"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2013",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2013.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-sentinel/"
+      },
+      "title": "The Sentinel"
+    },
+    {
+      "authors": [
+        "Robert Wilson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2013",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2013.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/capital-punishment/"
+      },
+      "title": "Capital Punishment"
+    },
+    {
+      "authors": [
+        "Liz Jensen"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2013",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2013.04",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-uninvited/"
+      },
+      "title": "The Uninvited"
+    },
+    {
+      "authors": [
+        "Malcolm Mackay"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2013",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2013.05",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-necessary-death-of-lewis-winter/"
+      },
+      "title": "The Necessary Death of Lewis Winter"
+    },
+    {
+      "authors": [
+        "Andrew Williams"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2013",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2013.06",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-poison-tide/"
+      },
+      "title": "The Poison Tide"
+    },
+    {
+      "authors": [
+        "Jonathan Holt"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2013",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2013.07",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-abduction/"
+      },
+      "title": "The Abduction"
+    },
+    {
+      "authors": [
+        "Robert Harris"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2014",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/an-officer-and-a-spy/"
+      },
+      "title": "An Officer and A Spy"
+    },
+    {
+      "authors": [
+        "Louise Doughty"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2014",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2014.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/apple-tree-yard/"
+      },
+      "title": "Apple Tree Yard"
+    },
+    {
+      "authors": [
+        "Greg Iles"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2014",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2014.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/natchez-burning/"
+      },
+      "title": "Natchez Burning"
+    },
+    {
+      "authors": [
+        "Lee Child"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2014",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2014.03",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/never-go-back/"
+      },
+      "title": "Never Go Back"
+    },
+    {
+      "authors": [
+        "Will Ferguson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2014",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2014.04",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/419/"
+      },
+      "title": "419"
+    },
+    {
+      "authors": [
+        "Terry Hayes"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2014",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2014.05",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/i-am-pilgrim-2/"
+      },
+      "title": "I Am Pilgrim"
+    },
+    {
+      "authors": [
+        "Gerald Seymour"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2014",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2014.06",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-corporals-wife-2/"
+      },
+      "title": "The Corporal\u2019s Wife"
+    },
+    {
+      "authors": [
+        "Karin Slaughter"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/cop-town/"
+      },
+      "title": "Cop Town"
+    },
+    {
+      "authors": [
+        "Sam Hawken"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2015.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/missing-2/"
+      },
+      "title": "MISSING"
+    },
+    {
+      "authors": [
+        "Paula Hawkins"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2015.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-girl-on-the-train/"
+      },
+      "title": "The Girl on the Train"
+    },
+    {
+      "authors": [
+        "Mick Herron"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2015.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/nobody-walks/"
+      },
+      "title": "Nobody Walks"
+    },
+    {
+      "authors": [
+        "Patrick Hoffman"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2015.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-white-van/"
+      },
+      "title": "The White Van"
+    },
+    {
+      "authors": [
+        "Malcolm MacKay"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2015.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-night-the-rich-men-burned/"
+      },
+      "title": "The Night The Rich Men Burned"
+    },
+    {
+      "authors": [
+        "Peter Swanson"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2015.06",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-kind-worth-killing-2/"
+      },
+      "title": "The Kind Worth Killing"
+    },
+    {
+      "authors": [
+        "Linwood Barclay"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2015.07",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/no-safe-house/"
+      },
+      "title": "No Safe House"
+    },
+    {
+      "authors": [
+        "Steve Cavanagh"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2015.08",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-defence/"
+      },
+      "title": "The Defence"
+    },
+    {
+      "authors": [
+        "Harlan Coben"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2015.09",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-stranger/"
+      },
+      "title": "The Stranger"
+    },
+    {
+      "authors": [
+        "Simon Kernick"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2015.10",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-final-minute/"
+      },
+      "title": "The Final Minute"
+    },
+    {
+      "authors": [
+        "Patrick Lee"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2015.11",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/runner/"
+      },
+      "title": "Runner"
+    },
+    {
+      "authors": [
+        "M. P Wright"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2015",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2015.12",
+      "result": "longlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/heartman/"
+      },
+      "title": "Heartman"
+    },
+    {
+      "authors": [
+        "Don Winslow"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2016",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-cartel/"
+      },
+      "title": "The Cartel"
+    },
+    {
+      "authors": [
+        "Adrian McKinty"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2016",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2016.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/rain-dogs/"
+      },
+      "title": "Rain Dogs"
+    },
+    {
+      "authors": [
+        "Mick Herron"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2016",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2016.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/real-tigers-2/"
+      },
+      "title": "Real Tigers"
+    },
+    {
+      "authors": [
+        "Daniel Silva"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2016",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2016.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-english-spy/"
+      },
+      "title": "The English Spy"
+    },
+    {
+      "authors": [
+        "Lee Child"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2016",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2016.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/make-me/"
+      },
+      "title": "Make Me"
+    },
+    {
+      "authors": [
+        "Mick Herron"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2017",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/spook-street-2/"
+      },
+      "title": "Spook Street"
+    },
+    {
+      "authors": [
+        "Megan Aboott"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2017",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2017.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/you-will-know-me/"
+      },
+      "title": "You Will Know Me"
+    },
+    {
+      "authors": [
+        "Jules Grant"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2017",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2017.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/we-go-around-in-the-night-and-are-consumed-by-fire/"
+      },
+      "title": "We Go Around in the Night and Are Consumed by Fire"
+    },
+    {
+      "authors": [
+        "J S Carol"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2017",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2017.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-killing-game/"
+      },
+      "title": "The Killing Game"
+    },
+    {
+      "authors": [
+        "John Hart"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2017",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2017.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/redemption-road/"
+      },
+      "title": "Redemption Road"
+    },
+    {
+      "authors": [
+        "William Ryan"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2017",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2017.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-constant-soldier/"
+      },
+      "title": "The Constant Soldier"
+    },
+    {
+      "authors": [
+        "Attica Locke"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2018",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/bluebird-bluebird-2/"
+      },
+      "title": "Bluebird, Bluebird"
+    },
+    {
+      "authors": [
+        "Mick Herron"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2018",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2018.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/london-rules-2/"
+      },
+      "title": "London Rules"
+    },
+    {
+      "authors": [
+        "Emily Koch"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2018",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2018.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/if-i-die-before-i-wake/"
+      },
+      "title": "If I Die Before I Wake"
+    },
+    {
+      "authors": [
+        "Colette McBeth"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2018",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2018.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/an-act-of-silence/"
+      },
+      "title": "An Act of Silence"
+    },
+    {
+      "authors": [
+        "C J Tudor"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2018",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2018.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-chalk-man/"
+      },
+      "title": "The Chalk Man"
+    },
+    {
+      "authors": [
+        "Don Winslow"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2018",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2018.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-force/"
+      },
+      "title": "The Force"
+    },
+    {
+      "authors": [
+        "Holly Watt"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2019",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/to-the-lions/"
+      },
+      "title": "To The Lions"
+    },
+    {
+      "authors": [
+        "Megan Abbott"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2019",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2019.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/give-me-your-hand/"
+      },
+      "title": "Give Me Your Hand"
+    },
+    {
+      "authors": [
+        "Dan Fesperman"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2019",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2019.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/safe-houses/"
+      },
+      "title": "Safe Houses"
+    },
+    {
+      "authors": [
+        "Luke Jennings"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2019",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2019.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/no-tomorrow/"
+      },
+      "title": "No Tomorrow"
+    },
+    {
+      "authors": [
+        "Stephen Mack Jones"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2019",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2019.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/lives-laid-away/"
+      },
+      "title": "Lives Laid Away"
+    },
+    {
+      "authors": [
+        "Tim Willocks"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2019",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2019.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/memo-from-turner/"
+      },
+      "title": "Memo from Turner"
+    },
+    {
+      "authors": [
+        "Lou Berney"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2020",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/november-road-2/"
+      },
+      "title": "November Road"
+    },
+    {
+      "authors": [
+        "Eva Dolan"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2020",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2020.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/between-two-evils/"
+      },
+      "title": "Between Two Evils"
+    },
+    {
+      "authors": [
+        "David Koepp"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2020",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2020.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/cold-storage/"
+      },
+      "title": "Cold Storage"
+    },
+    {
+      "authors": [
+        "AA Dhand"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2020",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2020.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/one-way-out/"
+      },
+      "title": "One Way Out"
+    },
+    {
+      "authors": [
+        "Alex North"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2020",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2020.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-whisper-man/"
+      },
+      "title": "The Whisper Man"
+    },
+    {
+      "authors": [
+        "Tom Chatfield"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2020",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2020.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/this-is-gomorrah/"
+      },
+      "title": "This is Gomorrah"
+    },
+    {
+      "authors": [
+        "Michael Robotham"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2021",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/when-she-was-good/"
+      },
+      "title": "When She Was Good"
+    },
+    {
+      "authors": [
+        "Stuart Turton"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2021",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2021.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-devil-and-the-dark-water/"
+      },
+      "title": "The Devil and the Dark Water"
+    },
+    {
+      "authors": [
+        "Ruth Ware"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2021",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2021.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/one-by-one/"
+      },
+      "title": "One by One"
+    },
+    {
+      "authors": [
+        "Chris Whitaker"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2021",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2021.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/we-begin-at-the-end-2/"
+      },
+      "title": "We Begin at the End"
+    },
+    {
+      "authors": [
+        "Robert Galbraith"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2021",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2021.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/troubled-blood-2/"
+      },
+      "title": "Troubled Blood"
+    },
+    {
+      "authors": [
+        "Catherine Ryan Howard"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2021",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2021.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-nothing-man/"
+      },
+      "title": "The Nothing Man"
+    },
+    {
+      "authors": [
+        "MW Craven"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2022",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/dead-ground/"
+      },
+      "title": "Dead Ground"
+    },
+    {
+      "authors": [
+        "Linwood Barclay"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2022",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2022.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/find-you-first/"
+      },
+      "title": "Find You First"
+    },
+    {
+      "authors": [
+        "Sharon Bolton"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2022",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2022.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-pact/"
+      },
+      "title": "The Pact"
+    },
+    {
+      "authors": [
+        "Steve Cavanagh"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2022",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2022.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-devils-advocate/"
+      },
+      "title": "The Devil\u2019s Advocate"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2022",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2022.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/dream-girl/"
+      },
+      "title": "Dream Girl"
+    },
+    {
+      "authors": [
+        "SA Cosby"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2022",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2022.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/razorblade-tears-2/"
+      },
+      "title": "Razorblade Tears"
+    },
+    {
+      "authors": [
+        "John Brownlow"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2023",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/agent-seventeen/"
+      },
+      "title": "Agent Seventeen"
+    },
+    {
+      "authors": [
+        "Linwood Barclay"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2023",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2023.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/take-your-breath-away/"
+      },
+      "title": "Take Your Breath Away"
+    },
+    {
+      "authors": [
+        "MW Craven"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2023",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2023.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-botanist/"
+      },
+      "title": "The Botanist"
+    },
+    {
+      "authors": [
+        "Robert Galbraith"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2023",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2023.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-ink-black-heart/"
+      },
+      "title": "The Ink Black Heart"
+    },
+    {
+      "authors": [
+        "Ava Glass"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2023",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2023.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-chase/"
+      },
+      "title": "The Chase"
+    },
+    {
+      "authors": [
+        "Alan Parks"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2023",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2023.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/may-god-forgive/"
+      },
+      "title": "May God Forgive"
+    },
+    {
+      "authors": [
+        "Jordan Harper"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2024",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/everybody-knows/"
+      },
+      "title": "Everybody Knows"
+    },
+    {
+      "authors": [
+        "S A Cosby"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2024",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2024.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/all-the-sinners-bleed/"
+      },
+      "title": "All the Sinners Bleed"
+    },
+    {
+      "authors": [
+        "Eli Cranor"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2024",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2024.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/ozark-dogs/"
+      },
+      "title": "Ozark Dogs"
+    },
+    {
+      "authors": [
+        "Kotaro Isaka"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2024",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2024.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-mantis/"
+      },
+      "title": "The Mantis"
+    },
+    {
+      "authors": [
+        "Femi Kayode"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2024",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2024.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/gaslight/"
+      },
+      "title": "Gaslight"
+    },
+    {
+      "authors": [
+        "T J Newman"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2024",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2024.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/drowning/"
+      },
+      "title": "Drowning"
+    },
+    {
+      "authors": [
+        "Lou Berney"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2025",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/dark-ride/"
+      },
+      "title": "Dark Ride"
+    },
+    {
+      "authors": [
+        "Abir Mukherjee"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2025",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2025.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/hunted-2/"
+      },
+      "title": "Hunted"
+    },
+    {
+      "authors": [
+        "Stuart Neville"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2025",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2025.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/blood-like-mine/"
+      },
+      "title": "Blood Like Mine"
+    },
+    {
+      "authors": [
+        "Don Winslow"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2025",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2025.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/city-in-ruins/"
+      },
+      "title": "City in Ruins"
+    },
+    {
+      "authors": [
+        "MW Craven"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2025",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2025.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/nobodys-hero/"
+      },
+      "title": "Nobody\u2019s Hero"
+    },
+    {
+      "authors": [
+        "Garry Disher"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2025",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2025.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/sanctuary/"
+      },
+      "title": "Sanctuary"
+    },
+    {
+      "authors": [
+        "SA Cosby"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2026",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2026",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/king-of-ashes/"
+      },
+      "title": "King of Ashes"
+    },
+    {
+      "authors": [
+        "Karin Slaughter"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2026",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2026.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/we-are-all-guilty-here/"
+      },
+      "title": "We Are All Guilty Here"
+    },
+    {
+      "authors": [
+        "Liam McIlvanney"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2026",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2026.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-good-father/"
+      },
+      "title": "The Good Father"
+    },
+    {
+      "authors": [
+        "Noelle W Ihli"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2026",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2026.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/such-quiet-girls/"
+      },
+      "title": "Such Quiet Girls"
+    },
+    {
+      "authors": [
+        "Mark Ezra"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2026",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2026.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/a-sting-in-her-tale/"
+      },
+      "title": "A Sting in her Tale"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2026",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2026.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-big-empty/"
+      },
+      "title": "The Big Empty"
+    },
+    {
+      "authors": [
+        "Tariq Ashkanani"
+      ],
+      "award": "CWA Dagger",
+      "award_year": "2026",
+      "category": "Ian Fleming Steel Dagger",
+      "position": "2026.06",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thecwa.co.uk/past-winners/the-midnight-king/"
+      },
+      "title": "The Midnight King"
+    }
+  ],
+  "fetched_at": "2026-07-16T14:15:18Z",
+  "list_id": "cwa_dagger_ian_fleming_steel",
+  "list_name": "CWA Dagger - Ian Fleming Steel Dagger",
+  "match_series": false,
+  "notes": [],
+  "parser": "cwa_dagger_ian_fleming_steel",
+  "schema_version": 2,
+  "source": {
+    "name": "CWA Dagger - Ian Fleming Steel Dagger",
+    "source_id": "cwa_dagger_ian_fleming_steel",
+    "url": "https://thecwa.co.uk/past-winners/?past_winners_awards[]=ian-fleming-steel"
+  }
+}

@@ -7,9 +7,10 @@ from io import StringIO
 from qt.core import (
   QApplication, QComboBox, QDialog, QDialogButtonBox, QGridLayout, QHBoxLayout,
   QHeaderView, QLabel, QPushButton, QSizePolicy, QTableWidget,
-  QTableWidgetItem, QUrl, QVBoxLayout
+  QTableWidgetItem, Qt, QUrl, QVBoxLayout
 )
 
+from calibre.ebooks.metadata import title_sort
 from calibre.gui2 import error_dialog, safe_open_url
 
 try:
@@ -41,11 +42,26 @@ AWARD_FILTER_NOMINEES = 'Nominees only'
 IMPORT_REVIEW_HEADERS = [
   'Position', 'Title', 'Author', 'ID', 'Match', 'Source',
 ]
+IMPORT_REVIEW_TEXT_TOOLTIP_COLUMNS = (1, 2)
 IMPORT_REVIEW_ID_COLUMN = 3
 IMPORT_REVIEW_FIXED_COLUMNS = (0, 3, 4, 5)
 IMPORT_REVIEW_STRETCH_COLUMNS = (1, 2)
 IMPORT_REVIEW_FIXED_COLUMN_PADDING = 28
 IMPORT_REVIEW_ID_WIDTH_FACTOR = 1.75
+
+
+class ImportReviewTableItem(QTableWidgetItem):
+  """Table item with a typed sort key and its underlying review row."""
+
+  def __init__(self, text, sort_key, review_row):
+    QTableWidgetItem.__init__(self, text)
+    self.sort_key = sort_key
+    self.review_row = review_row
+
+  def __lt__(self, other):
+    if isinstance(other, ImportReviewTableItem):
+      return self.sort_key < other.sort_key
+    return QTableWidgetItem.__lt__(self, other)
 
 
 class ImportReportDialog(QDialog):
@@ -89,18 +105,23 @@ class ImportReportDialog(QDialog):
     self.deep_recovery_requested = False
     self.setWindowTitle('Import List Review')
     notes = [note for note in (notes or []) if note]
-    note_text = '\n' + '\n'.join(notes) if notes else ''
+    self.notes_count = len(notes)
 
     layout = QVBoxLayout()
     self.setLayout(layout)
-    summary = QLabel(
-      f'Review "{list_name}" before writing it as the Active List.\n'
-      f'Matched {matched_count} of {entries_count} recipe entries.'
-      f'{note_text}',
+    self.summary_label = QLabel(
+      self.compact_summary_text(
+        list_name, matched_count, entries_count),
       self)
-    summary.setWordWrap(True)
-    summary.setSizePolicy(self.ignored_width_size_policy())
-    layout.addWidget(summary)
+    self.summary_label.setWordWrap(True)
+    self.summary_label.setSizePolicy(self.ignored_width_size_policy())
+    layout.addWidget(self.summary_label)
+
+    self.notes_label = QLabel('\n'.join(notes), self)
+    self.notes_label.setWordWrap(True)
+    self.notes_label.setSizePolicy(self.ignored_width_size_policy())
+    self.notes_label.setVisible(False)
+    layout.addWidget(self.notes_label)
 
     view_layout = QHBoxLayout()
     view_layout.addWidget(QLabel('View:', self))
@@ -109,13 +130,24 @@ class ImportReportDialog(QDialog):
     self.view_combo.setCurrentText(VIEW_UNMATCHED)
     view_layout.addWidget(self.view_combo)
     view_layout.addSpacing(12)
-    view_layout.addWidget(QLabel('Award:', self))
+    self.award_filter_label = QLabel('Award:', self)
+    view_layout.addWidget(self.award_filter_label)
     self.award_filter_combo = QComboBox(self)
     self.award_filter_combo.addItems([
       AWARD_FILTER_ALL, AWARD_FILTER_WINNERS, AWARD_FILTER_NOMINEES,
     ])
     view_layout.addWidget(self.award_filter_combo)
+    award_filter_available = self.has_award_results()
+    self.award_filter_label.setVisible(award_filter_available)
+    self.award_filter_combo.setVisible(award_filter_available)
     view_layout.addStretch(1)
+    self.notes_button = None
+    if notes:
+      self.notes_button = QPushButton(
+        self.notes_button_text(False), self)
+      self.notes_button.setCheckable(True)
+      self.notes_button.setToolTip('Show source and import notes')
+      view_layout.addWidget(self.notes_button)
     layout.addLayout(view_layout)
 
     self.toggle_button = QPushButton('Toggle match', self)
@@ -129,6 +161,7 @@ class ImportReportDialog(QDialog):
     self.match_table.setSelectionBehavior(QTableWidget.SelectionBehavior.SelectRows)
     self.match_table.setEditTriggers(QTableWidget.EditTrigger.NoEditTriggers)
     self.configure_table_column_resizing()
+    self.configure_table_sorting()
     layout.addWidget(self.match_table)
 
     action_layout = QGridLayout()
@@ -158,8 +191,22 @@ class ImportReportDialog(QDialog):
     self.find_button.clicked.connect(self.open_find_matches)
     self.match_mode_button.clicked.connect(self.open_match_mode)
     self.copy_button.clicked.connect(self.copy_current_view)
+    if self.notes_button is not None:
+      self.notes_button.toggled.connect(self.set_notes_visible)
     self.update_table()
     self.resize(*self.initial_report_size())
+
+  def compact_summary_text(self, list_name, matched_count, entries_count):
+    return f'"{list_name}" — {matched_count} of {entries_count} matched.'
+
+  def notes_button_text(self, expanded):
+    action = 'Hide notes' if expanded else 'Notes'
+    return f'{action} ({self.notes_count})'
+
+  def set_notes_visible(self, visible):
+    self.notes_label.setVisible(bool(visible))
+    if self.notes_button is not None:
+      self.notes_button.setText(self.notes_button_text(bool(visible)))
 
   def normalized_review_row(self, row):
     row = dict(row or {})
@@ -223,6 +270,12 @@ class ImportReportDialog(QDialog):
     except Exception:
       return AWARD_FILTER_ALL
 
+  def has_award_results(self):
+    return any(
+      str((row.get('entry') or {}).get('result', '') or '').strip()
+      for row in self.review_rows
+    )
+
   def row_matches_view_filter(self, row):
     mode = self.current_view_mode()
     if mode == VIEW_MATCHED:
@@ -260,15 +313,18 @@ class ImportReportDialog(QDialog):
 
   def update_table_for_row(self, selected_row=None):
     self.visible_rows = self.rows_for_current_view()
+    self.set_table_sorting_enabled(False)
     self.match_table.setRowCount(len(self.visible_rows))
     for row_index, row in enumerate(self.visible_rows):
       display_values = self.display_values_for_row(row)
       for column, value in enumerate(display_values):
-        item = QTableWidgetItem(value)
+        item = ImportReviewTableItem(
+          value, self.table_sort_key(row, column, value), row)
         tooltip = self.tooltip_for_table_cell(row, column)
         if tooltip:
           item.setToolTip(tooltip)
         self.match_table.setItem(row_index, column, item)
+    self.set_table_sorting_enabled(True)
     if selected_row in self.visible_rows:
       self.select_review_row(selected_row)
     elif self.visible_rows:
@@ -284,6 +340,50 @@ class ImportReportDialog(QDialog):
       header.setSectionResizeMode(column, fixed_mode)
     for column in IMPORT_REVIEW_STRETCH_COLUMNS:
       header.setSectionResizeMode(column, stretch_mode)
+
+  def configure_table_sorting(self):
+    header = self.match_table.horizontalHeader()
+    header.setSortIndicatorShown(True)
+    header.setSortIndicator(
+      0, self.qt_sort_order('AscendingOrder'))
+    self.match_table.setSortingEnabled(True)
+
+  def set_table_sorting_enabled(self, enabled):
+    setter = getattr(self.match_table, 'setSortingEnabled', None)
+    if callable(setter):
+      setter(bool(enabled))
+
+  def qt_sort_order(self, order_name):
+    try:
+      return getattr(Qt.SortOrder, order_name)
+    except AttributeError:
+      return getattr(Qt, order_name)
+
+  def table_sort_key(self, row, column, display_value):
+    if column == 0:
+      try:
+        return float(row.get('imported_position', '') or '')
+      except (TypeError, ValueError):
+        return 0.0
+    if column == IMPORT_REVIEW_ID_COLUMN:
+      values = []
+      for book_id in self.book_id_text_values(row):
+        try:
+          values.append(int(book_id))
+        except (TypeError, ValueError):
+          values.append(0)
+      return tuple(values) or (-1,)
+    if column == 1:
+      return self.title_table_sort_key(display_value)
+    return str(display_value or '').casefold()
+
+  def title_table_sort_key(self, value):
+    value = str(value or '')
+    try:
+      localized = title_sort(value)
+      return title_sort(localized, lang='eng').casefold()
+    except Exception:
+      return value.casefold()
 
   def header_resize_mode(self, mode_name):
     try:
@@ -337,9 +437,21 @@ class ImportReportDialog(QDialog):
     if not self.table_has_selection():
       return None
     row = self.match_table.currentRow()
-    if row < 0 or row >= len(self.visible_rows):
-      return None
-    return self.visible_rows[row]
+    return self.review_row_at_table_row(row)
+
+  def selected_review_rows(self):
+    selection_model = self.match_table.selectionModel()
+    selected_rows = getattr(selection_model, 'selectedRows', None)
+    if callable(selected_rows):
+      row_indexes = sorted({index.row() for index in selected_rows()})
+      rows = [
+        self.review_row_at_table_row(row_index) for row_index in row_indexes
+      ]
+      rows = [row for row in rows if row is not None]
+      if rows:
+        return rows
+    row = self.selected_review_row()
+    return [row] if row is not None else []
 
   def table_has_selection(self):
     selection_model = getattr(self.match_table, 'selectionModel', None)
@@ -350,6 +462,19 @@ class ImportReportDialog(QDialog):
     if not callable(has_selection):
       return True
     return bool(has_selection())
+
+  def review_row_at_table_row(self, row_index):
+    if row_index < 0:
+      return None
+    item_getter = getattr(self.match_table, 'item', None)
+    if callable(item_getter):
+      item = item_getter(row_index, 0)
+      review_row = getattr(item, 'review_row', None)
+      if review_row is not None:
+        return review_row
+    if row_index >= len(self.visible_rows):
+      return None
+    return self.visible_rows[row_index]
 
   def update_toggle_button(self, *_args):
     row = self.selected_review_row()
@@ -377,9 +502,14 @@ class ImportReportDialog(QDialog):
     safe_open_url(QUrl(url))
 
   def toggle_selected_match(self):
-    row = self.selected_review_row()
-    if row is None:
+    rows = self.selected_review_rows()
+    if not rows:
       return
+    for row in rows:
+      self.toggle_review_row(row)
+    self.update_table_for_row(rows[0])
+
+  def toggle_review_row(self, row):
     if row.get('matched'):
       row['previous_book_ids'] = list(row.get('book_ids') or [])
       row['previous_matched_books'] = list(row.get('matched_books') or [])
@@ -396,7 +526,7 @@ class ImportReportDialog(QDialog):
         row['ignored'] = False
         row['book_ids'] = list(row.get('previous_book_ids') or [])
         row['matched_books'] = list(row.get('previous_matched_books') or [])
-        row['match_source'] = row.get('previous_match_source') or 'automatic'
+        row['match_source'] = self.restored_match_source(row)
         row['can_toggle_on'] = True
       else:
         row['matched'] = False
@@ -410,7 +540,26 @@ class ImportReportDialog(QDialog):
       row['matched_books'] = []
       row['match_source'] = 'ignored'
       row['can_toggle_on'] = True
-    self.update_table_for_row(row)
+
+  def restored_match_source(self, row):
+    source = row.get('previous_match_source') or 'automatic'
+    if source != 'saved/manual override':
+      return source
+    callback = getattr(self, 'selected_match_source_callback', None)
+    if not callable(callback):
+      return source
+    books_by_id = {
+      book.get('matched_book_id'): book
+      for book in (row.get('previous_matched_books') or [])
+      if book.get('matched_book_id') is not None
+    }
+    candidates = [
+      books_by_id.get(book_id, {'book_id': book_id})
+      for book_id in (row.get('previous_book_ids') or [])
+    ]
+    if candidates and all(callback(row, candidate) == 'automatic' for candidate in candidates):
+      return 'automatic'
+    return source
 
   def matched_books_text(self, row, field):
     values = []
@@ -452,11 +601,13 @@ class ImportReportDialog(QDialog):
     return values
 
   def tooltip_for_table_cell(self, row, column):
-    if column != IMPORT_REVIEW_ID_COLUMN:
-      return ''
-    full_text = self.book_ids_full_text(row)
-    display_text = self.book_ids_display_text(row)
-    return full_text if full_text != display_text else ''
+    if column == IMPORT_REVIEW_ID_COLUMN:
+      full_text = self.book_ids_full_text(row)
+      display_text = self.book_ids_display_text(row)
+      return full_text if full_text != display_text else ''
+    if column in IMPORT_REVIEW_TEXT_TOOLTIP_COLUMNS:
+      return self.display_values_for_row(row)[column]
+    return ''
 
   def csv_values_for_row(self, row):
     match = 'Yes' if row.get('matched') else 'No'
@@ -484,8 +635,15 @@ class ImportReportDialog(QDialog):
   def candidate_review_rows(self):
     return [
       row for row in self.review_rows
-      if not row.get('matched') and row.get('possible_matches')
+      if (
+        not row.get('matched')
+        and not row.get('ignored')
+        and row.get('possible_matches')
+      )
     ]
+
+  def find_match_review_rows(self):
+    return [row for row in self.review_rows if not row.get('ignored')]
 
   def select_review_row(self, target_row):
     if target_row is None:
@@ -496,8 +654,16 @@ class ImportReportDialog(QDialog):
       except Exception:
         pass
       self.update_table_for_row(target_row)
-    for row_index, row in enumerate(self.visible_rows):
-      if row is target_row:
+    row_count = getattr(self.match_table, 'rowCount', None)
+    if callable(row_count):
+      for row_index in range(row_count()):
+        if self.review_row_at_table_row(row_index) is target_row:
+          self.match_table.setCurrentCell(row_index, 0)
+          return
+    else:
+      for row_index, row in enumerate(self.visible_rows):
+        if row is not target_row:
+          continue
         self.match_table.setCurrentCell(row_index, 0)
         return
 
@@ -541,7 +707,7 @@ class ImportReportDialog(QDialog):
   def open_find_matches(self):
     selected_row = self.selected_review_row()
     if not self.candidate_review_rows():
-      self.run_find_matches(self.review_rows)
+      self.run_find_matches(self.find_match_review_rows())
       self.update_table()
       if not self.candidate_review_rows():
         self.show_find_notice(
@@ -560,11 +726,11 @@ class ImportReportDialog(QDialog):
       return rows
     index = self.current_find_match_index()
     try:
-      self.find_match_callback(self.review_rows, self.find_match_settings, index=index)
+      self.find_match_callback(rows, self.find_match_settings, index=index)
     except TypeError as err:
       if 'index' not in str(err):
         raise
-      self.find_match_callback(self.review_rows, self.find_match_settings)
+      self.find_match_callback(rows, self.find_match_settings)
     return rows
 
   def current_find_match_index(self):

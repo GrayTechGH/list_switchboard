@@ -1,0 +1,1222 @@
+{
+  "append_state": {
+    "entry_count": 92,
+    "last_entry_key": "the shampoo effect|jenny jackson",
+    "last_position": "1",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Tara Conklin"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "92",
+      "selection_label": "March 2019",
+      "selection_month": "3",
+      "selection_type": "monthly_pick",
+      "selection_year": "2019",
+      "title": "The Last Romantics"
+    },
+    {
+      "authors": [
+        "Julie Yip-Williams"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "91",
+      "selection_label": "April 2019",
+      "selection_month": "4",
+      "selection_type": "monthly_pick",
+      "selection_year": "2019",
+      "title": "The Unwinding of the Miracle"
+    },
+    {
+      "authors": [
+        "Etaf Rum"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "90",
+      "selection_label": "May 2019",
+      "selection_month": "5",
+      "selection_type": "monthly_pick",
+      "selection_year": "2019",
+      "title": "A Woman Is No Man"
+    },
+    {
+      "authors": [
+        "Jean Kwok"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "89",
+      "selection_label": "June 2019",
+      "selection_month": "6",
+      "selection_type": "monthly_pick",
+      "selection_year": "2019",
+      "title": "Searching for Sylvie Lee"
+    },
+    {
+      "authors": [
+        "Linda Holmes"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "88",
+      "selection_label": "July 2019",
+      "selection_month": "7",
+      "selection_type": "monthly_pick",
+      "selection_year": "2019",
+      "title": "Evvie Drake Starts Over"
+    },
+    {
+      "authors": [
+        "Nicole Dennis-Benn"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "87",
+      "selection_label": "August 2019",
+      "selection_month": "8",
+      "selection_type": "monthly_pick",
+      "selection_year": "2019",
+      "title": "Patsy"
+    },
+    {
+      "authors": [
+        "Cara Wall"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "86",
+      "selection_label": "September 2019",
+      "selection_month": "9",
+      "selection_type": "monthly_pick",
+      "selection_year": "2019",
+      "title": "The Dearly Beloved"
+    },
+    {
+      "authors": [
+        "Ann Patchett"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "85",
+      "selection_label": "October 2019",
+      "selection_month": "10",
+      "selection_type": "monthly_pick",
+      "selection_year": "2019",
+      "title": "The Dutch House"
+    },
+    {
+      "authors": [
+        "Kevin Wilson"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "84",
+      "selection_label": "November 2019",
+      "selection_month": "11",
+      "selection_type": "monthly_pick",
+      "selection_year": "2019",
+      "title": "Nothing to See Here"
+    },
+    {
+      "authors": [
+        "Margaret Renkl"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "83",
+      "selection_label": "December 2019",
+      "selection_month": "12",
+      "selection_type": "monthly_pick",
+      "selection_year": "2019",
+      "title": "Late Migrations"
+    },
+    {
+      "authors": [
+        "Ann Napolitano"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "82",
+      "selection_label": "January 2020",
+      "selection_month": "1",
+      "selection_type": "monthly_pick",
+      "selection_year": "2020",
+      "title": "Dear Edward"
+    },
+    {
+      "authors": [
+        "Abi Dar\u00e9"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "81",
+      "selection_label": "February 2020",
+      "selection_month": "2",
+      "selection_type": "monthly_pick",
+      "selection_year": "2020",
+      "title": "The Girl With The Louding Voice"
+    },
+    {
+      "authors": [
+        "Lily King"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "80",
+      "selection_label": "March 2020",
+      "selection_month": "3",
+      "selection_type": "monthly_pick",
+      "selection_year": "2020",
+      "title": "Writers & Lovers"
+    },
+    {
+      "authors": [
+        "Elizabeth Wetmore"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "79",
+      "selection_label": "April 2020",
+      "selection_month": "4",
+      "selection_type": "monthly_pick",
+      "selection_year": "2020",
+      "title": "Valentine"
+    },
+    {
+      "authors": [
+        "Emma Straub"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "78",
+      "selection_label": "May 2020",
+      "selection_month": "5",
+      "selection_type": "monthly_pick",
+      "selection_year": "2020",
+      "title": "All Adults Here"
+    },
+    {
+      "authors": [
+        "Megha Majumdar"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "77",
+      "selection_label": "June 2020",
+      "selection_month": "6",
+      "selection_type": "monthly_pick",
+      "selection_year": "2020",
+      "title": "A Burning"
+    },
+    {
+      "authors": [
+        "J. Courtney Sullivan"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "76",
+      "selection_label": "July 2020",
+      "selection_month": "7",
+      "selection_type": "monthly_pick",
+      "selection_year": "2020",
+      "title": "Friends and Strangers"
+    },
+    {
+      "authors": [
+        "R. Eric Thomas"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "74",
+      "scope_flags": "essay_collection",
+      "selection_label": "August 2020",
+      "selection_month": "8",
+      "selection_type": "special_pick",
+      "selection_year": "2020",
+      "title": "Here for It"
+    },
+    {
+      "authors": [
+        "Ella Berman"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "75",
+      "selection_label": "August 2020",
+      "selection_month": "8",
+      "selection_type": "monthly_pick",
+      "selection_year": "2020",
+      "title": "The Comeback"
+    },
+    {
+      "authors": [
+        "Yaa Gyasi"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "73",
+      "selection_label": "September 2020",
+      "selection_month": "9",
+      "selection_type": "monthly_pick",
+      "selection_year": "2020",
+      "title": "Transcendent Kingdom"
+    },
+    {
+      "authors": [
+        "Rumaan Alam"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "72",
+      "selection_label": "October 2020",
+      "selection_month": "10",
+      "selection_type": "monthly_pick",
+      "selection_year": "2020",
+      "title": "Leave the World Behind"
+    },
+    {
+      "authors": [
+        "Susie Yang"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "71",
+      "selection_label": "November 2020",
+      "selection_month": "11",
+      "selection_type": "monthly_pick",
+      "selection_year": "2020",
+      "title": "White Ivy"
+    },
+    {
+      "authors": [
+        "Toni Morrison"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "70",
+      "selection_label": "December 2020",
+      "selection_month": "12",
+      "selection_type": "monthly_pick",
+      "selection_year": "2020",
+      "title": "The Bluest Eye"
+    },
+    {
+      "authors": [
+        "Mateo Askaripour"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "69",
+      "selection_label": "January 2021",
+      "selection_month": "1",
+      "selection_type": "monthly_pick",
+      "selection_year": "2021",
+      "title": "Black Buck"
+    },
+    {
+      "authors": [
+        "Lauren Fox"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "67",
+      "selection_label": "February 2021",
+      "selection_month": "2",
+      "selection_type": "monthly_pick",
+      "selection_year": "2021",
+      "title": "Send for Me"
+    },
+    {
+      "authors": [
+        "Kristin Hannah"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "68",
+      "selection_label": "February 2021",
+      "selection_month": "2",
+      "selection_type": "monthly_pick",
+      "selection_year": "2021",
+      "title": "The Four Winds"
+    },
+    {
+      "authors": [
+        "Naima Coster"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "66",
+      "selection_label": "March 2021",
+      "selection_month": "3",
+      "selection_type": "monthly_pick",
+      "selection_year": "2021",
+      "title": "What's Mine and Yours"
+    },
+    {
+      "authors": [
+        "Cynthia D'Aprix Sweeney"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "65",
+      "selection_label": "April 2021",
+      "selection_month": "4",
+      "selection_type": "monthly_pick",
+      "selection_year": "2021",
+      "title": "Good Company"
+    },
+    {
+      "authors": [
+        "Maggie Shipstead"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "64",
+      "selection_label": "May 2021",
+      "selection_month": "5",
+      "selection_type": "monthly_pick",
+      "selection_year": "2021",
+      "title": "Great Circle"
+    },
+    {
+      "authors": [
+        "Taylor Jenkins Reid"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "63",
+      "selection_label": "June 2021",
+      "selection_month": "6",
+      "selection_type": "monthly_pick",
+      "selection_year": "2021",
+      "title": "Malibu Rising"
+    },
+    {
+      "authors": [
+        "Jason Mott"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "62",
+      "selection_label": "July 2021",
+      "selection_month": "7",
+      "selection_type": "monthly_pick",
+      "selection_year": "2021",
+      "title": "Hell of a Book"
+    },
+    {
+      "authors": [
+        "Megan Abbott"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "61",
+      "selection_label": "August 2021",
+      "selection_month": "8",
+      "selection_type": "monthly_pick",
+      "selection_year": "2021",
+      "title": "The Turnout"
+    },
+    {
+      "authors": [
+        "Qian Julie Wang"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "60",
+      "selection_label": "September 2021",
+      "selection_month": "9",
+      "selection_type": "monthly_pick",
+      "selection_year": "2021",
+      "title": "Beautiful Country"
+    },
+    {
+      "authors": [
+        "Amor Towles"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "59",
+      "selection_label": "October 2021",
+      "selection_month": "10",
+      "selection_type": "monthly_pick",
+      "selection_year": "2021",
+      "title": "The Lincoln Highway"
+    },
+    {
+      "authors": [
+        "Naomi Krupitsky"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "58",
+      "selection_label": "November 2021",
+      "selection_month": "11",
+      "selection_type": "monthly_pick",
+      "selection_year": "2021",
+      "title": "The Family"
+    },
+    {
+      "authors": [
+        "Lisa Harding"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "57",
+      "selection_label": "December 2021",
+      "selection_month": "12",
+      "selection_type": "monthly_pick",
+      "selection_year": "2021",
+      "title": "Bright Burning Things"
+    },
+    {
+      "authors": [
+        "Jessamine Chan"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "56",
+      "selection_label": "January 2022",
+      "selection_month": "1",
+      "selection_type": "monthly_pick",
+      "selection_year": "2022",
+      "title": "The School for Good Mothers"
+    },
+    {
+      "authors": [
+        "Charmaine Wilkerson"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "55",
+      "selection_label": "February 2022",
+      "selection_month": "2",
+      "selection_type": "monthly_pick",
+      "selection_year": "2022",
+      "title": "Black Cake"
+    },
+    {
+      "authors": [
+        "Lee Cole"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "54",
+      "selection_label": "March 2022",
+      "selection_month": "3",
+      "selection_type": "monthly_pick",
+      "selection_year": "2022",
+      "title": "Groundskeeping"
+    },
+    {
+      "authors": [
+        "Tara M. Stringfellow"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "53",
+      "selection_label": "April 2022",
+      "selection_month": "4",
+      "selection_type": "monthly_pick",
+      "selection_year": "2022",
+      "title": "Memphis"
+    },
+    {
+      "authors": [
+        "Shelby Van Pelt"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "52",
+      "selection_label": "May 2022",
+      "selection_month": "5",
+      "selection_type": "monthly_pick",
+      "selection_year": "2022",
+      "title": "Remarkably Bright Creatures"
+    },
+    {
+      "authors": [
+        "Salma El-Wardany"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "51",
+      "selection_label": "June 2022",
+      "selection_month": "6",
+      "selection_type": "monthly_pick",
+      "selection_year": "2022",
+      "title": "These Impossible Things"
+    },
+    {
+      "authors": [
+        "Nikki Erlick"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "50",
+      "selection_label": "July 2022",
+      "selection_month": "7",
+      "selection_type": "monthly_pick",
+      "selection_year": "2022",
+      "title": "The Measure"
+    },
+    {
+      "authors": [
+        "Jamie Ford"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "49",
+      "selection_label": "August 2022",
+      "selection_month": "8",
+      "selection_type": "monthly_pick",
+      "selection_year": "2022",
+      "title": "The Many Daughters of Afong Moy"
+    },
+    {
+      "authors": [
+        "Javier Zamora"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "48",
+      "selection_label": "September 2022",
+      "selection_month": "9",
+      "selection_type": "monthly_pick",
+      "selection_year": "2022",
+      "title": "Solito"
+    },
+    {
+      "authors": [
+        "Joanna Quinn"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "47",
+      "selection_label": "October 2022",
+      "selection_month": "10",
+      "selection_type": "monthly_pick",
+      "selection_year": "2022",
+      "title": "The Whalebone Theatre"
+    },
+    {
+      "authors": [
+        "Katy Hays"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "46",
+      "selection_label": "November 2022",
+      "selection_month": "11",
+      "selection_type": "monthly_pick",
+      "selection_year": "2022",
+      "title": "The Cloisters"
+    },
+    {
+      "authors": [
+        "Donna Tartt"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "45",
+      "selection_label": "December 2022",
+      "selection_month": "12",
+      "selection_type": "monthly_pick",
+      "selection_year": "2022",
+      "title": "The Secret History"
+    },
+    {
+      "authors": [
+        "Allegra Goodman"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "44",
+      "selection_label": "January 2023",
+      "selection_month": "1",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "title": "Sam"
+    },
+    {
+      "authors": [
+        "Jessica George"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "43",
+      "selection_label": "February 2023",
+      "selection_month": "2",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "title": "Maame"
+    },
+    {
+      "authors": [
+        "Diane Marie Brown"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "42",
+      "selection_label": "March 2023",
+      "selection_month": "3",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "title": "Black Candle Women"
+    },
+    {
+      "authors": [
+        "Michelle Min Sterling"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "41",
+      "selection_label": "April 2023",
+      "selection_month": "4",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "title": "Camp Zero"
+    },
+    {
+      "authors": [
+        "Nana Kwame Adjei-Brenyah"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "40",
+      "selection_label": "May 2023",
+      "selection_month": "5",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "title": "Chain-Gang All Stars"
+    },
+    {
+      "authors": [
+        "Steven Rowley"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "39",
+      "selection_label": "June 2023",
+      "selection_month": "6",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "title": "The Celebrants"
+    },
+    {
+      "authors": [
+        "Thao Thai"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "38",
+      "selection_label": "July 2023",
+      "selection_month": "7",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "title": "Banyan Moon"
+    },
+    {
+      "authors": [
+        "Judy Blume"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "37",
+      "season": "summer",
+      "selection_label": "August 2023",
+      "selection_month": "8",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "title": "Summer Sisters"
+    },
+    {
+      "authors": [
+        "Fran Littlewood"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "36",
+      "selection_label": "September 2023",
+      "selection_month": "9",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "title": "Amazing Grace Adams"
+    },
+    {
+      "authors": [
+        "Safiya Sinclair"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "35",
+      "selection_label": "October 2023",
+      "selection_month": "10",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "title": "How to Say Babylon"
+    },
+    {
+      "authors": [
+        "Kehinde Fadipe"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "34",
+      "selection_label": "November 2023",
+      "selection_month": "11",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "title": "The Sun Sets in Singapore"
+    },
+    {
+      "authors": [
+        "Lauren Grodstein"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "33",
+      "selection_label": "December 2023",
+      "selection_month": "12",
+      "selection_type": "monthly_pick",
+      "selection_year": "2023",
+      "title": "We Must Not Think of Ourselves"
+    },
+    {
+      "authors": [
+        "Bonnie Jo Campbell"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "32",
+      "selection_label": "January 2024",
+      "selection_month": "1",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "title": "The Waters"
+    },
+    {
+      "authors": [
+        "Dolly Alderton"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "31",
+      "selection_label": "February 2024",
+      "selection_month": "2",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "title": "Good Material"
+    },
+    {
+      "authors": [
+        "Cristina Henriquez"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "29",
+      "selection_label": "March 2024",
+      "selection_month": "3",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "title": "The Great Divide"
+    },
+    {
+      "authors": [
+        "Sandra Cisneros"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "30",
+      "selection_label": "March 2024",
+      "selection_month": "3",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "title": "The House on Mango Street"
+    },
+    {
+      "authors": [
+        "Holly Gramazio"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "28",
+      "selection_label": "April 2024",
+      "selection_month": "4",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "title": "The Husbands"
+    },
+    {
+      "authors": [
+        "Rachel Khong"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "27",
+      "selection_label": "May 2024",
+      "selection_month": "5",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "title": "Real Americans"
+    },
+    {
+      "authors": [
+        "Essie Chambers"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "26",
+      "selection_label": "June 2024",
+      "selection_month": "6",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "title": "Swift River"
+    },
+    {
+      "authors": [
+        "Chris Whitaker"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "25",
+      "selection_label": "July 2024",
+      "selection_month": "7",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "title": "All the Colors of the Dark"
+    },
+    {
+      "authors": [
+        "Alison Espach"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "24",
+      "selection_label": "August 2024",
+      "selection_month": "8",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "title": "The Wedding People"
+    },
+    {
+      "authors": [
+        "Coco Mellors"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "23",
+      "selection_label": "September 2024",
+      "selection_month": "9",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "title": "Blue Sisters"
+    },
+    {
+      "authors": [
+        "Louise Erdrich"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "22",
+      "selection_label": "October 2024",
+      "selection_month": "10",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "title": "The Mighty Red"
+    },
+    {
+      "authors": [
+        "Nikki May"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "21",
+      "selection_label": "November 2024",
+      "selection_month": "11",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "title": "This Motherless Land"
+    },
+    {
+      "authors": [
+        "Mary Oliver"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "20",
+      "selection_label": "December 2024",
+      "selection_month": "12",
+      "selection_type": "monthly_pick",
+      "selection_year": "2024",
+      "title": "Devotions"
+    },
+    {
+      "authors": [
+        "Emma Knight"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "19",
+      "selection_label": "January 2025",
+      "selection_month": "1",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "title": "The Life Cycle of the Common Octopus"
+    },
+    {
+      "authors": [
+        "Jessica Soffer"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "18",
+      "selection_label": "February 2025",
+      "selection_month": "2",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "title": "This Is a Love Story"
+    },
+    {
+      "authors": [
+        "Laila Lalami"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "17",
+      "selection_label": "March 2025",
+      "selection_month": "3",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "title": "The Dream Hotel"
+    },
+    {
+      "authors": [
+        "Amity Gaige"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "16",
+      "selection_label": "April 2025",
+      "selection_month": "4",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "title": "Heartwood"
+    },
+    {
+      "authors": [
+        "Florence Knapp"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "15",
+      "selection_label": "May 2025",
+      "selection_month": "5",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "title": "The Names"
+    },
+    {
+      "authors": [
+        "Claire Lynch"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "14",
+      "selection_label": "June 2025",
+      "selection_month": "6",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "title": "A Family Matter"
+    },
+    {
+      "authors": [
+        "Meredith Lavender",
+        "Kendall Shores"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "13",
+      "selection_label": "July 2025",
+      "selection_month": "7",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "title": "Happy Wife"
+    },
+    {
+      "authors": [
+        "Emma Nanami Strenner"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "12",
+      "selection_label": "August 2025",
+      "selection_month": "8",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "title": "My Other Heart"
+    },
+    {
+      "authors": [
+        "Patrick Ryan"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "11",
+      "selection_label": "September 2025",
+      "selection_month": "9",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "title": "Buckeye"
+    },
+    {
+      "authors": [
+        "Heather Aimee O'Neill"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "10",
+      "selection_label": "October 2025",
+      "selection_month": "10",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "title": "The Irish Goodbye"
+    },
+    {
+      "authors": [
+        "Oyinkan Braithwaite"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "9",
+      "selection_label": "November 2025",
+      "selection_month": "11",
+      "selection_type": "monthly_pick",
+      "selection_year": "2025",
+      "title": "Cursed Daughters"
+    },
+    {
+      "authors": [
+        "Jane Austen"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "8",
+      "scope_flags": "classic",
+      "selection_label": "December 2025",
+      "selection_month": "12",
+      "selection_type": "classic_pick",
+      "selection_year": "2025",
+      "title": "Pride and Prejudice"
+    },
+    {
+      "authors": [
+        "Stefan Merrill Block"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "7",
+      "selection_label": "January 2026",
+      "selection_month": "1",
+      "selection_type": "monthly_pick",
+      "selection_year": "2026",
+      "title": "Homeschooled"
+    },
+    {
+      "authors": [
+        "Maurene Goo"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "6",
+      "selection_label": "February 2026",
+      "selection_month": "2",
+      "selection_type": "monthly_pick",
+      "selection_year": "2026",
+      "title": "One & Only"
+    },
+    {
+      "authors": [
+        "Amy Jo Burns"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "5",
+      "selection_label": "March 2026",
+      "selection_month": "3",
+      "selection_type": "monthly_pick",
+      "selection_year": "2026",
+      "title": "Wait for Me"
+    },
+    {
+      "authors": [
+        "Woody Brown"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "4",
+      "selection_label": "April 2026",
+      "selection_month": "4",
+      "selection_type": "monthly_pick",
+      "selection_year": "2026",
+      "title": "Upward Bound"
+    },
+    {
+      "authors": [
+        "Gillian McAllister"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "3",
+      "selection_label": "May 2026",
+      "selection_month": "5",
+      "selection_type": "monthly_pick",
+      "selection_year": "2026",
+      "title": "Caller Unknown"
+    },
+    {
+      "authors": [
+        "Melissa Albert"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "2",
+      "selection_label": "June 2026",
+      "selection_month": "6",
+      "selection_type": "monthly_pick",
+      "selection_year": "2026",
+      "title": "The Children"
+    },
+    {
+      "authors": [
+        "Jenny Jackson"
+      ],
+      "club": "Read With Jenna",
+      "club_scope": "main_monthly",
+      "position": "1",
+      "selection_label": "July 2026",
+      "selection_month": "7",
+      "selection_type": "monthly_pick",
+      "selection_year": "2026",
+      "title": "The Shampoo Effect"
+    }
+  ],
+  "fetched_at": "2026-07-15T16:53:13Z",
+  "list_id": "read_with_jenna",
+  "list_name": "Read With Jenna",
+  "match_series": false,
+  "notes": [],
+  "parser": "read_with_jenna",
+  "schema_version": 2,
+  "source": {
+    "name": "Read With Jenna",
+    "source_id": "read_with_jenna",
+    "url": "https://www.today.com/shop/read-jenna-book-club-list-today-s-jenna-bush-hager-t164652"
+  }
+}

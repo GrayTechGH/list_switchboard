@@ -1,0 +1,1927 @@
+{
+  "append_state": {
+    "entry_count": 173,
+    "last_entry_key": "julie chan is dead|liann zhang",
+    "last_position": "2026.06",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Charles Todd"
+      ],
+      "award": "Barry Award",
+      "award_year": "1997",
+      "category": "Best First Mystery Novel",
+      "position": "1997",
+      "result": "winner",
+      "title": "A Test of Wills"
+    },
+    {
+      "authors": [
+        "Jameson Cole"
+      ],
+      "award": "Barry Award",
+      "award_year": "1997",
+      "category": "Best First Mystery Novel",
+      "position": "1997.01",
+      "result": "nominee",
+      "title": "A Killing in Quail Country"
+    },
+    {
+      "authors": [
+        "H. Michael Frase"
+      ],
+      "award": "Barry Award",
+      "award_year": "1997",
+      "category": "Best First Mystery Novel",
+      "position": "1997.02",
+      "result": "nominee",
+      "title": "Fatal Gift"
+    },
+    {
+      "authors": [
+        "G.D. Gearino"
+      ],
+      "award": "Barry Award",
+      "award_year": "1997",
+      "category": "Best First Mystery Novel",
+      "position": "1997.03",
+      "result": "nominee",
+      "title": "What the Deaf Mute Heard"
+    },
+    {
+      "authors": [
+        "Michael C. White"
+      ],
+      "award": "Barry Award",
+      "award_year": "1997",
+      "category": "Best First Mystery Novel",
+      "position": "1997.04",
+      "result": "nominee",
+      "title": "A Brother\u2019s Blood"
+    },
+    {
+      "authors": [
+        "Lee Child"
+      ],
+      "award": "Barry Award",
+      "award_year": "1998",
+      "category": "Best First Mystery Novel",
+      "position": "1998",
+      "result": "winner",
+      "title": "Killing Floor"
+    },
+    {
+      "authors": [
+        "Rosemary Aubert"
+      ],
+      "award": "Barry Award",
+      "award_year": "1998",
+      "category": "Best First Mystery Novel",
+      "position": "1998.01",
+      "result": "nominee",
+      "title": "Free Reign"
+    },
+    {
+      "authors": [
+        "Maureen Jennings"
+      ],
+      "award": "Barry Award",
+      "award_year": "1998",
+      "category": "Best First Mystery Novel",
+      "position": "1998.02",
+      "result": "nominee",
+      "title": "Except the Dying"
+    },
+    {
+      "authors": [
+        "Joseph Kanon"
+      ],
+      "award": "Barry Award",
+      "award_year": "1998",
+      "category": "Best First Mystery Novel",
+      "position": "1998.03",
+      "result": "nominee",
+      "title": "Los Alamos"
+    },
+    {
+      "authors": [
+        "Lisa See"
+      ],
+      "award": "Barry Award",
+      "award_year": "1998",
+      "category": "Best First Mystery Novel",
+      "position": "1998.04",
+      "result": "nominee",
+      "title": "Flower Net"
+    },
+    {
+      "authors": [
+        "Barbara Seranella"
+      ],
+      "award": "Barry Award",
+      "award_year": "1998",
+      "category": "Best First Mystery Novel",
+      "position": "1998.05",
+      "result": "nominee",
+      "title": "No Human Involved"
+    },
+    {
+      "authors": [
+        "William Kent Krueger"
+      ],
+      "award": "Barry Award",
+      "award_year": "1999",
+      "category": "Best First Mystery Novel",
+      "position": "1999",
+      "result": "winner",
+      "title": "Iron Lake"
+    },
+    {
+      "authors": [
+        "John Billheimer"
+      ],
+      "award": "Barry Award",
+      "award_year": "1999",
+      "category": "Best First Mystery Novel",
+      "position": "1999.01",
+      "result": "nominee",
+      "title": "The Contrary Blues"
+    },
+    {
+      "authors": [
+        "Steve Hamilton"
+      ],
+      "award": "Barry Award",
+      "award_year": "1999",
+      "category": "Best First Mystery Novel",
+      "position": "1999.02",
+      "result": "nominee",
+      "title": "A Cold Day in Paradise"
+    },
+    {
+      "authors": [
+        "Robin Hathaway"
+      ],
+      "award": "Barry Award",
+      "award_year": "1999",
+      "category": "Best First Mystery Novel",
+      "position": "1999.03",
+      "result": "nominee",
+      "title": "The Doctor Digs a Grave"
+    },
+    {
+      "authors": [
+        "William Hoffman"
+      ],
+      "award": "Barry Award",
+      "award_year": "1999",
+      "category": "Best First Mystery Novel",
+      "position": "1999.04",
+      "result": "nominee",
+      "title": "Tidewater Blood"
+    },
+    {
+      "authors": [
+        "J. Wallis Martin"
+      ],
+      "award": "Barry Award",
+      "award_year": "1999",
+      "category": "Best First Mystery Novel",
+      "position": "1999.05",
+      "result": "nominee",
+      "title": "A Likeness in Stone"
+    },
+    {
+      "authors": [
+        "Lisa Reardon"
+      ],
+      "award": "Barry Award",
+      "award_year": "1999",
+      "category": "Best First Mystery Novel",
+      "position": "1999.06",
+      "result": "nominee",
+      "title": "Billy Dead"
+    },
+    {
+      "authors": [
+        "D.R. Schanker"
+      ],
+      "award": "Barry Award",
+      "award_year": "1999",
+      "category": "Best First Mystery Novel",
+      "position": "1999.07",
+      "result": "nominee",
+      "title": "A Criminal Appeal"
+    },
+    {
+      "authors": [
+        "Donna Andrews"
+      ],
+      "award": "Barry Award",
+      "award_year": "2000",
+      "category": "Best First Mystery Novel",
+      "position": "2000",
+      "result": "winner",
+      "title": "Murder With Peacocks"
+    },
+    {
+      "authors": [
+        "Mark Coggins"
+      ],
+      "award": "Barry Award",
+      "award_year": "2000",
+      "category": "Best First Mystery Novel",
+      "position": "2000.01",
+      "result": "nominee",
+      "title": "The Immortal Game"
+    },
+    {
+      "authors": [
+        "Dan Fesperman"
+      ],
+      "award": "Barry Award",
+      "award_year": "2000",
+      "category": "Best First Mystery Novel",
+      "position": "2000.02",
+      "result": "nominee",
+      "title": "Lie in the Dark"
+    },
+    {
+      "authors": [
+        "Stan Jones"
+      ],
+      "award": "Barry Award",
+      "award_year": "2000",
+      "category": "Best First Mystery Novel",
+      "position": "2000.03",
+      "result": "nominee",
+      "title": "White Sky, Black Ice"
+    },
+    {
+      "authors": [
+        "Gregg Main"
+      ],
+      "award": "Barry Award",
+      "award_year": "2000",
+      "category": "Best First Mystery Novel",
+      "position": "2000.04",
+      "result": "nominee",
+      "title": "Every Trace"
+    },
+    {
+      "authors": [
+        "David Liss"
+      ],
+      "award": "Barry Award",
+      "award_year": "2001",
+      "category": "Best First Mystery Novel",
+      "position": "2001",
+      "result": "winner",
+      "title": "A Conspiracy of Paper"
+    },
+    {
+      "authors": [
+        "Stephen Horn"
+      ],
+      "award": "Barry Award",
+      "award_year": "2001",
+      "category": "Best First Mystery Novel",
+      "position": "2001.01",
+      "result": "nominee",
+      "title": "In Her Defense"
+    },
+    {
+      "authors": [
+        "Scott Phillips"
+      ],
+      "award": "Barry Award",
+      "award_year": "2001",
+      "category": "Best First Mystery Novel",
+      "position": "2001.02",
+      "result": "nominee",
+      "title": "The Ice Harvest"
+    },
+    {
+      "authors": [
+        "Bob Truluck"
+      ],
+      "award": "Barry Award",
+      "award_year": "2001",
+      "category": "Best First Mystery Novel",
+      "position": "2001.03",
+      "result": "nominee",
+      "title": "Street Level"
+    },
+    {
+      "authors": [
+        "Qiu Xiaolong"
+      ],
+      "award": "Barry Award",
+      "award_year": "2001",
+      "category": "Best First Mystery Novel",
+      "position": "2001.04",
+      "result": "nominee",
+      "title": "Death of a Red Heroine"
+    },
+    {
+      "authors": [
+        "C.J. Box"
+      ],
+      "award": "Barry Award",
+      "award_year": "2002",
+      "category": "Best First Mystery Novel",
+      "position": "2002",
+      "result": "winner",
+      "title": "Open Season"
+    },
+    {
+      "authors": [
+        "K.J. Erickson"
+      ],
+      "award": "Barry Award",
+      "award_year": "2002",
+      "category": "Best First Mystery Novel",
+      "position": "2002.01",
+      "result": "nominee",
+      "title": "Third Person Singular"
+    },
+    {
+      "authors": [
+        "David Fulmer"
+      ],
+      "award": "Barry Award",
+      "award_year": "2002",
+      "category": "Best First Mystery Novel",
+      "position": "2002.02",
+      "result": "nominee",
+      "title": "Chasing the Devil\u2019s Tail"
+    },
+    {
+      "authors": [
+        "M.K. Preston"
+      ],
+      "award": "Barry Award",
+      "award_year": "2002",
+      "category": "Best First Mystery Novel",
+      "position": "2002.03",
+      "result": "nominee",
+      "title": "Perhaps She\u2019ll Die"
+    },
+    {
+      "authors": [
+        "Karin Slaughter"
+      ],
+      "award": "Barry Award",
+      "award_year": "2002",
+      "category": "Best First Mystery Novel",
+      "position": "2002.04",
+      "result": "nominee",
+      "title": "Blindsighted"
+    },
+    {
+      "authors": [
+        "Sarah Strohmeyer"
+      ],
+      "award": "Barry Award",
+      "award_year": "2002",
+      "category": "Best First Mystery Novel",
+      "position": "2002.05",
+      "result": "nominee",
+      "title": "Bubbles Unbound"
+    },
+    {
+      "authors": [
+        "Julia Spencer-Fleming"
+      ],
+      "award": "Barry Award",
+      "award_year": "2003",
+      "category": "Best First Mystery Novel",
+      "position": "2003",
+      "result": "winner",
+      "title": "In the Bleak Midwinter"
+    },
+    {
+      "authors": [
+        "David Corbett"
+      ],
+      "award": "Barry Award",
+      "award_year": "2003",
+      "category": "Best First Mystery Novel",
+      "position": "2003.01",
+      "result": "nominee",
+      "title": "The Devil\u2019s Redhead"
+    },
+    {
+      "authors": [
+        "Pip Granger"
+      ],
+      "award": "Barry Award",
+      "award_year": "2003",
+      "category": "Best First Mystery Novel",
+      "position": "2003.02",
+      "result": "nominee",
+      "title": "Not All Tarts Are Apple"
+    },
+    {
+      "authors": [
+        "Jonathan King"
+      ],
+      "award": "Barry Award",
+      "award_year": "2003",
+      "category": "Best First Mystery Novel",
+      "position": "2003.03",
+      "result": "nominee",
+      "title": "The Blue Edge of Midnight"
+    },
+    {
+      "authors": [
+        "Eddie Muller"
+      ],
+      "award": "Barry Award",
+      "award_year": "2003",
+      "category": "Best First Mystery Novel",
+      "position": "2003.04",
+      "result": "nominee",
+      "title": "The Distance"
+    },
+    {
+      "authors": [
+        "Ben Rehder"
+      ],
+      "award": "Barry Award",
+      "award_year": "2003",
+      "category": "Best First Mystery Novel",
+      "position": "2003.05",
+      "result": "nominee",
+      "title": "Buck Fever"
+    },
+    {
+      "authors": [
+        "P.J. Tracy"
+      ],
+      "award": "Barry Award",
+      "award_year": "2004",
+      "category": "Best First Mystery Novel",
+      "position": "2004",
+      "result": "winner",
+      "title": "Monkeewrench"
+    },
+    {
+      "authors": [
+        "William Landay"
+      ],
+      "award": "Barry Award",
+      "award_year": "2004",
+      "category": "Best First Mystery Novel",
+      "position": "2004.01",
+      "result": "nominee",
+      "title": "Mission Flats"
+    },
+    {
+      "authors": [
+        "Olen Steinhauer"
+      ],
+      "award": "Barry Award",
+      "award_year": "2004",
+      "category": "Best First Mystery Novel",
+      "position": "2004.02",
+      "result": "nominee",
+      "title": "The Bridge of Sighs"
+    },
+    {
+      "authors": [
+        "Wallace Stroby"
+      ],
+      "award": "Barry Award",
+      "award_year": "2004",
+      "category": "Best First Mystery Novel",
+      "position": "2004.03",
+      "result": "nominee",
+      "title": "Barbed Wire Kiss"
+    },
+    {
+      "authors": [
+        "Jacqueline Winspear"
+      ],
+      "award": "Barry Award",
+      "award_year": "2004",
+      "category": "Best First Mystery Novel",
+      "position": "2004.04",
+      "result": "nominee",
+      "title": "Maisie Dobbs"
+    },
+    {
+      "authors": [
+        "Edward Wright"
+      ],
+      "award": "Barry Award",
+      "award_year": "2004",
+      "category": "Best First Mystery Novel",
+      "position": "2004.05",
+      "result": "nominee",
+      "title": "Clea\u2019s Moon"
+    },
+    {
+      "authors": [
+        "Carlos Ruiz Zaf\u00f3n"
+      ],
+      "award": "Barry Award",
+      "award_year": "2005",
+      "category": "Best First Mystery Novel",
+      "position": "2005",
+      "result": "winner",
+      "title": "The Shadow of The Wind"
+    },
+    {
+      "authors": [
+        "Charles Benoit"
+      ],
+      "award": "Barry Award",
+      "award_year": "2005",
+      "category": "Best First Mystery Novel",
+      "position": "2005.01",
+      "result": "nominee",
+      "title": "Relative Danger"
+    },
+    {
+      "authors": [
+        "James O. Born"
+      ],
+      "award": "Barry Award",
+      "award_year": "2005",
+      "category": "Best First Mystery Novel",
+      "position": "2005.02",
+      "result": "nominee",
+      "title": "Walking Money"
+    },
+    {
+      "authors": [
+        "Colin Cotterill"
+      ],
+      "award": "Barry Award",
+      "award_year": "2005",
+      "category": "Best First Mystery Novel",
+      "position": "2005.03",
+      "result": "nominee",
+      "title": "The Coroner\u2019s Lunch"
+    },
+    {
+      "authors": [
+        "Claire Matturro"
+      ],
+      "award": "Barry Award",
+      "award_year": "2005",
+      "category": "Best First Mystery Novel",
+      "position": "2005.04",
+      "result": "nominee",
+      "title": "Skinny-Dipping"
+    },
+    {
+      "authors": [
+        "Will Thomas"
+      ],
+      "award": "Barry Award",
+      "award_year": "2005",
+      "category": "Best First Mystery Novel",
+      "position": "2005.05",
+      "result": "nominee",
+      "title": "Some Danger Involved"
+    },
+    {
+      "authors": [
+        "Stuart MacBride"
+      ],
+      "award": "Barry Award",
+      "award_year": "2006",
+      "category": "Best First Mystery Novel",
+      "position": "2006",
+      "result": "winner",
+      "title": "Cold Granite"
+    },
+    {
+      "authors": [
+        "Megan Abbott"
+      ],
+      "award": "Barry Award",
+      "award_year": "2006",
+      "category": "Best First Mystery Novel",
+      "position": "2006.01",
+      "result": "nominee",
+      "title": "Die a Little"
+    },
+    {
+      "authors": [
+        "Brian Freeman"
+      ],
+      "award": "Barry Award",
+      "award_year": "2006",
+      "category": "Best First Mystery Novel",
+      "position": "2006.02",
+      "result": "nominee",
+      "title": "Immoral"
+    },
+    {
+      "authors": [
+        "Randall Hicks"
+      ],
+      "award": "Barry Award",
+      "award_year": "2006",
+      "category": "Best First Mystery Novel",
+      "position": "2006.03",
+      "result": "nominee",
+      "title": "The Baby Game"
+    },
+    {
+      "authors": [
+        "David Hosp"
+      ],
+      "award": "Barry Award",
+      "award_year": "2006",
+      "category": "Best First Mystery Novel",
+      "position": "2006.04",
+      "result": "nominee",
+      "title": "Dark Harbor"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Barry Award",
+      "award_year": "2007",
+      "category": "Best First Mystery Novel",
+      "position": "2007",
+      "result": "winner",
+      "title": "Still Life"
+    },
+    {
+      "authors": [
+        "Alex Berenson"
+      ],
+      "award": "Barry Award",
+      "award_year": "2007",
+      "category": "Best First Mystery Novel",
+      "position": "2007.01",
+      "result": "nominee",
+      "title": "The Faithful Spy"
+    },
+    {
+      "authors": [
+        "Gillian Flynn"
+      ],
+      "award": "Barry Award",
+      "award_year": "2007",
+      "category": "Best First Mystery Novel",
+      "position": "2007.02",
+      "result": "nominee",
+      "title": "Sharp Objects"
+    },
+    {
+      "authors": [
+        "Tom Gabbay"
+      ],
+      "award": "Barry Award",
+      "award_year": "2007",
+      "category": "Best First Mystery Novel",
+      "position": "2007.03",
+      "result": "nominee",
+      "title": "The Berlin Conspiracy"
+    },
+    {
+      "authors": [
+        "John Hart"
+      ],
+      "award": "Barry Award",
+      "award_year": "2007",
+      "category": "Best First Mystery Novel",
+      "position": "2007.04",
+      "result": "nominee",
+      "title": "The King of Lies"
+    },
+    {
+      "authors": [
+        "Cornelia Read"
+      ],
+      "award": "Barry Award",
+      "award_year": "2007",
+      "category": "Best First Mystery Novel",
+      "position": "2007.05",
+      "result": "nominee",
+      "title": "A Field of Darkness"
+    },
+    {
+      "authors": [
+        "Tana French"
+      ],
+      "award": "Barry Award",
+      "award_year": "2008",
+      "category": "Best First Mystery Novel",
+      "position": "2008",
+      "result": "winner",
+      "title": "In the Woods"
+    },
+    {
+      "authors": [
+        "Gordon Campbell"
+      ],
+      "award": "Barry Award",
+      "award_year": "2008",
+      "category": "Best First Mystery Novel",
+      "position": "2008.01",
+      "result": "nominee",
+      "title": "Missing Witness"
+    },
+    {
+      "authors": [
+        "Sean Chercover"
+      ],
+      "award": "Barry Award",
+      "award_year": "2008",
+      "category": "Best First Mystery Novel",
+      "position": "2008.02",
+      "result": "nominee",
+      "title": "Big City, Bad Blood"
+    },
+    {
+      "authors": [
+        "Lisa Lutz"
+      ],
+      "award": "Barry Award",
+      "award_year": "2008",
+      "category": "Best First Mystery Novel",
+      "position": "2008.03",
+      "result": "nominee",
+      "title": "The Spellman Files"
+    },
+    {
+      "authors": [
+        "Matt Beynon Rees"
+      ],
+      "award": "Barry Award",
+      "award_year": "2008",
+      "category": "Best First Mystery Novel",
+      "position": "2008.04",
+      "result": "nominee",
+      "title": "The Collaborator of Bethlehem"
+    },
+    {
+      "authors": [
+        "Marcus Sakey"
+      ],
+      "award": "Barry Award",
+      "award_year": "2008",
+      "category": "Best First Mystery Novel",
+      "position": "2008.05",
+      "result": "nominee",
+      "title": "The Blade Itself"
+    },
+    {
+      "authors": [
+        "Tom Rob Smith"
+      ],
+      "award": "Barry Award",
+      "award_year": "2009",
+      "category": "Best First Mystery Novel",
+      "position": "2009",
+      "result": "winner",
+      "title": "Child 44"
+    },
+    {
+      "authors": [
+        "Tom Epperson"
+      ],
+      "award": "Barry Award",
+      "award_year": "2009",
+      "category": "Best First Mystery Novel",
+      "position": "2009.01",
+      "result": "nominee",
+      "title": "The Kind One"
+    },
+    {
+      "authors": [
+        "Julie Kramer"
+      ],
+      "award": "Barry Award",
+      "award_year": "2009",
+      "category": "Best First Mystery Novel",
+      "position": "2009.02",
+      "result": "nominee",
+      "title": "Stalking Susan"
+    },
+    {
+      "authors": [
+        "David Levien"
+      ],
+      "award": "Barry Award",
+      "award_year": "2009",
+      "category": "Best First Mystery Novel",
+      "position": "2009.03",
+      "result": "nominee",
+      "title": "City of the Sun"
+    },
+    {
+      "authors": [
+        "Michael Stanley"
+      ],
+      "award": "Barry Award",
+      "award_year": "2009",
+      "category": "Best First Mystery Novel",
+      "position": "2009.04",
+      "result": "nominee",
+      "title": "A Carrion Death"
+    },
+    {
+      "authors": [
+        "Carolyn D. Wall"
+      ],
+      "award": "Barry Award",
+      "award_year": "2009",
+      "category": "Best First Mystery Novel",
+      "position": "2009.05",
+      "result": "nominee",
+      "title": "Sweeping Up Glass"
+    },
+    {
+      "authors": [
+        "Alan Bradley"
+      ],
+      "award": "Barry Award",
+      "award_year": "2010",
+      "category": "Best First Mystery Novel",
+      "position": "2010",
+      "result": "winner",
+      "title": "The Sweetness at the Bottom of the Pie"
+    },
+    {
+      "authors": [
+        "Josh Bazell"
+      ],
+      "award": "Barry Award",
+      "award_year": "2010",
+      "category": "Best First Mystery Novel",
+      "position": "2010.01",
+      "result": "nominee",
+      "title": "Beat the Reaper"
+    },
+    {
+      "authors": [
+        "Rebecca Cantrell"
+      ],
+      "award": "Barry Award",
+      "award_year": "2010",
+      "category": "Best First Mystery Novel",
+      "position": "2010.02",
+      "result": "nominee",
+      "title": "A Trace of Smoke"
+    },
+    {
+      "authors": [
+        "Sophie Littlefield"
+      ],
+      "award": "Barry Award",
+      "award_year": "2010",
+      "category": "Best First Mystery Novel",
+      "position": "2010.03",
+      "result": "nominee",
+      "title": "A Bad Day for Sorry"
+    },
+    {
+      "authors": [
+        "Attica Locke"
+      ],
+      "award": "Barry Award",
+      "award_year": "2010",
+      "category": "Best First Mystery Novel",
+      "position": "2010.04",
+      "result": "nominee",
+      "title": "Black Water Rising"
+    },
+    {
+      "authors": [
+        "Stuart Neville"
+      ],
+      "award": "Barry Award",
+      "award_year": "2010",
+      "category": "Best First Mystery Novel",
+      "position": "2010.05",
+      "result": "nominee",
+      "title": "The Ghosts of Belfast"
+    },
+    {
+      "authors": [
+        "Paul Doiron"
+      ],
+      "award": "Barry Award",
+      "award_year": "2011",
+      "category": "Best First Mystery Novel",
+      "position": "2011",
+      "result": "winner",
+      "title": "The Poacher\u2019s Son"
+    },
+    {
+      "authors": [
+        "Lou Berney"
+      ],
+      "award": "Barry Award",
+      "award_year": "2011",
+      "category": "Best First Mystery Novel",
+      "position": "2011.01",
+      "result": "nominee",
+      "title": "Gutshot Straight"
+    },
+    {
+      "authors": [
+        "Bruce DeSilva"
+      ],
+      "award": "Barry Award",
+      "award_year": "2011",
+      "category": "Best First Mystery Novel",
+      "position": "2011.02",
+      "result": "nominee",
+      "title": "Rogue Island"
+    },
+    {
+      "authors": [
+        "Graham Moore"
+      ],
+      "award": "Barry Award",
+      "award_year": "2011",
+      "category": "Best First Mystery Novel",
+      "position": "2011.03",
+      "result": "nominee",
+      "title": "The Sherlockian"
+    },
+    {
+      "authors": [
+        "William Ryan"
+      ],
+      "award": "Barry Award",
+      "award_year": "2011",
+      "category": "Best First Mystery Novel",
+      "position": "2011.04",
+      "result": "nominee",
+      "title": "The Holy Thief"
+    },
+    {
+      "authors": [
+        "Keith Thomson"
+      ],
+      "award": "Barry Award",
+      "award_year": "2011",
+      "category": "Best First Mystery Novel",
+      "position": "2011.05",
+      "result": "nominee",
+      "title": "Once a Spy"
+    },
+    {
+      "authors": [
+        "Taylor Stevens"
+      ],
+      "award": "Barry Award",
+      "award_year": "2012",
+      "category": "Best First Mystery Novel",
+      "position": "2012",
+      "result": "winner",
+      "title": "The Informationist"
+    },
+    {
+      "authors": [
+        "Sara Henry"
+      ],
+      "award": "Barry Award",
+      "award_year": "2012",
+      "category": "Best First Mystery Novel",
+      "position": "2012.01",
+      "result": "nominee",
+      "title": "Learning To Swim"
+    },
+    {
+      "authors": [
+        "Keigo Higashino"
+      ],
+      "award": "Barry Award",
+      "award_year": "2012",
+      "category": "Best First Mystery Novel",
+      "position": "2012.02",
+      "result": "nominee",
+      "title": "The Devotion of Suspect X"
+    },
+    {
+      "authors": [
+        "Lene Kaaberbol",
+        "Agnette Friis"
+      ],
+      "award": "Barry Award",
+      "award_year": "2012",
+      "category": "Best First Mystery Novel",
+      "position": "2012.03",
+      "result": "nominee",
+      "title": "The Boy in the Suitcase"
+    },
+    {
+      "authors": [
+        "Alice LaPlante"
+      ],
+      "award": "Barry Award",
+      "award_year": "2012",
+      "category": "Best First Mystery Novel",
+      "position": "2012.04",
+      "result": "nominee",
+      "title": "Turn of Mind"
+    },
+    {
+      "authors": [
+        "S.J. Watson"
+      ],
+      "award": "Barry Award",
+      "award_year": "2012",
+      "category": "Best First Mystery Novel",
+      "position": "2012.05",
+      "result": "nominee",
+      "title": "Before I Go To Sleep"
+    },
+    {
+      "authors": [
+        "Julia Keller"
+      ],
+      "award": "Barry Award",
+      "award_year": "2013",
+      "category": "Best First Mystery Novel",
+      "position": "2013",
+      "result": "winner",
+      "title": "A Killing in the Hills"
+    },
+    {
+      "authors": [
+        "Alex Grecian"
+      ],
+      "award": "Barry Award",
+      "award_year": "2013",
+      "category": "Best First Mystery Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "title": "The Yard"
+    },
+    {
+      "authors": [
+        "Owen Laukkanen"
+      ],
+      "award": "Barry Award",
+      "award_year": "2013",
+      "category": "Best First Mystery Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "title": "The Professionals"
+    },
+    {
+      "authors": [
+        "David Mark"
+      ],
+      "award": "Barry Award",
+      "award_year": "2013",
+      "category": "Best First Mystery Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "title": "The Dark Winter"
+    },
+    {
+      "authors": [
+        "Tim O\u2019Mara"
+      ],
+      "award": "Barry Award",
+      "award_year": "2013",
+      "category": "Best First Mystery Novel",
+      "position": "2013.04",
+      "result": "nominee",
+      "title": "Sacrifice Fly"
+    },
+    {
+      "authors": [
+        "Michael Sears"
+      ],
+      "award": "Barry Award",
+      "award_year": "2013",
+      "category": "Best First Mystery Novel",
+      "position": "2013.05",
+      "result": "nominee",
+      "title": "Black Fridays"
+    },
+    {
+      "authors": [
+        "Barry Lancet"
+      ],
+      "award": "Barry Award",
+      "award_year": "2014",
+      "category": "Best First Mystery Novel",
+      "position": "2014",
+      "result": "winner",
+      "title": "Japantown"
+    },
+    {
+      "authors": [
+        "Hannah Kent"
+      ],
+      "award": "Barry Award",
+      "award_year": "2014",
+      "category": "Best First Mystery Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "title": "Burial Rites"
+    },
+    {
+      "authors": [
+        "Charlie Lovett"
+      ],
+      "award": "Barry Award",
+      "award_year": "2014",
+      "category": "Best First Mystery Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "title": "The Bookman\u2019s Tale"
+    },
+    {
+      "authors": [
+        "Becky Masterman"
+      ],
+      "award": "Barry Award",
+      "award_year": "2014",
+      "category": "Best First Mystery Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "title": "Rage Against the Dying"
+    },
+    {
+      "authors": [
+        "Jenny Milchman"
+      ],
+      "award": "Barry Award",
+      "award_year": "2014",
+      "category": "Best First Mystery Novel",
+      "position": "2014.04",
+      "result": "nominee",
+      "title": "Cover of Snow"
+    },
+    {
+      "authors": [
+        "Derek B. Miller"
+      ],
+      "award": "Barry Award",
+      "award_year": "2014",
+      "category": "Best First Mystery Novel",
+      "position": "2014.05",
+      "result": "nominee",
+      "title": "Norwegian by Night"
+    },
+    {
+      "authors": [
+        "Julia Dahl"
+      ],
+      "award": "Barry Award",
+      "award_year": "2015",
+      "category": "Best First Mystery Novel",
+      "position": "2015",
+      "result": "winner",
+      "title": "Invisible City"
+    },
+    {
+      "authors": [
+        "Adam Brookes"
+      ],
+      "award": "Barry Award",
+      "award_year": "2015",
+      "category": "Best First Mystery Novel",
+      "position": "2015.01",
+      "result": "nominee",
+      "title": "Night Heron"
+    },
+    {
+      "authors": [
+        "M.P. Cooley"
+      ],
+      "award": "Barry Award",
+      "award_year": "2015",
+      "category": "Best First Mystery Novel",
+      "position": "2015.02",
+      "result": "nominee",
+      "title": "Ice Shear"
+    },
+    {
+      "authors": [
+        "Elizabeth Little"
+      ],
+      "award": "Barry Award",
+      "award_year": "2015",
+      "category": "Best First Mystery Novel",
+      "position": "2015.03",
+      "result": "nominee",
+      "title": "Dear Daughter"
+    },
+    {
+      "authors": [
+        "Laura McHugh"
+      ],
+      "award": "Barry Award",
+      "award_year": "2015",
+      "category": "Best First Mystery Novel",
+      "position": "2015.04",
+      "result": "nominee",
+      "title": "The Weight of Blood"
+    },
+    {
+      "authors": [
+        "William Shaw"
+      ],
+      "award": "Barry Award",
+      "award_year": "2015",
+      "category": "Best First Mystery Novel",
+      "position": "2015.05",
+      "result": "nominee",
+      "title": "She\u2019s Leaving Home"
+    },
+    {
+      "authors": [
+        "Ausma Zehanat Khan"
+      ],
+      "award": "Barry Award",
+      "award_year": "2016",
+      "category": "Best First Mystery Novel",
+      "position": "2016",
+      "result": "winner",
+      "title": "The Unquiet Dead"
+    },
+    {
+      "authors": [
+        "John A. Connell"
+      ],
+      "award": "Barry Award",
+      "award_year": "2016",
+      "category": "Best First Mystery Novel",
+      "position": "2016.01",
+      "result": "nominee",
+      "title": "Ruins of War"
+    },
+    {
+      "authors": [
+        "Glen Erik Hamilton"
+      ],
+      "award": "Barry Award",
+      "award_year": "2016",
+      "category": "Best First Mystery Novel",
+      "position": "2016.02",
+      "result": "nominee",
+      "title": "Past Crimes"
+    },
+    {
+      "authors": [
+        "Elsa Hart"
+      ],
+      "award": "Barry Award",
+      "award_year": "2016",
+      "category": "Best First Mystery Novel",
+      "position": "2016.03",
+      "result": "nominee",
+      "title": "Jade Dragon Mountain"
+    },
+    {
+      "authors": [
+        "Paula Hawkins"
+      ],
+      "award": "Barry Award",
+      "award_year": "2016",
+      "category": "Best First Mystery Novel",
+      "position": "2016.04",
+      "result": "nominee",
+      "title": "The Girl on the Train"
+    },
+    {
+      "authors": [
+        "Brian Panowich"
+      ],
+      "award": "Barry Award",
+      "award_year": "2016",
+      "category": "Best First Mystery Novel",
+      "position": "2016.05",
+      "result": "nominee",
+      "title": "Bull Mountain"
+    },
+    {
+      "authors": [
+        "Nicholas Petrie"
+      ],
+      "award": "Barry Award",
+      "award_year": "2017",
+      "category": "Best First Mystery Novel",
+      "position": "2017",
+      "result": "winner",
+      "title": "The Drifter"
+    },
+    {
+      "authors": [
+        "Bill Beverl y"
+      ],
+      "award": "Barry Award",
+      "award_year": "2017",
+      "category": "Best First Mystery Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "Dodgers"
+    },
+    {
+      "authors": [
+        "Samuel Bjork"
+      ],
+      "award": "Barry Award",
+      "award_year": "2017",
+      "category": "Best First Mystery Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "I\u2019m Traveling Alone"
+    },
+    {
+      "authors": [
+        "Joe Ide"
+      ],
+      "award": "Barry Award",
+      "award_year": "2017",
+      "category": "Best First Mystery Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "title": "IQ"
+    },
+    {
+      "authors": [
+        "Iain Reid"
+      ],
+      "award": "Barry Award",
+      "award_year": "2017",
+      "category": "Best First Mystery Novel",
+      "position": "2017.04",
+      "result": "nominee",
+      "title": "I\u2019m Thinking of Ending Things"
+    },
+    {
+      "authors": [
+        "Susie Steiner"
+      ],
+      "award": "Barry Award",
+      "award_year": "2017",
+      "category": "Best First Mystery Novel",
+      "position": "2017.05",
+      "result": "nominee",
+      "title": "Missing, Presumed"
+    },
+    {
+      "authors": [
+        "Jane Harper"
+      ],
+      "award": "Barry Award",
+      "award_year": "2018",
+      "category": "Best First Mystery Novel",
+      "position": "2018",
+      "result": "winner",
+      "title": "The Dry"
+    },
+    {
+      "authors": [
+        "Jordan Harpe r"
+      ],
+      "award": "Barry Award",
+      "award_year": "2018",
+      "category": "Best First Mystery Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "She Rides Shotgun"
+    },
+    {
+      "authors": [
+        "Sheena Kamal"
+      ],
+      "award": "Barry Award",
+      "award_year": "2018",
+      "category": "Best First Mystery Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "title": "The Lost Ones"
+    },
+    {
+      "authors": [
+        "H.B. Lyle"
+      ],
+      "award": "Barry Award",
+      "award_year": "2018",
+      "category": "Best First Mystery Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "title": "The Irregular"
+    },
+    {
+      "authors": [
+        "Abir Mukherjee"
+      ],
+      "award": "Barry Award",
+      "award_year": "2018",
+      "category": "Best First Mystery Novel",
+      "position": "2018.04",
+      "result": "nominee",
+      "title": "A Rising Man"
+    },
+    {
+      "authors": [
+        "Gabriel Tallent"
+      ],
+      "award": "Barry Award",
+      "award_year": "2018",
+      "category": "Best First Mystery Novel",
+      "position": "2018.05",
+      "result": "nominee",
+      "title": "My Absolute Darling"
+    },
+    {
+      "authors": [
+        "C.J. Tudor"
+      ],
+      "award": "Barry Award",
+      "award_year": "2019",
+      "category": "Best First Mystery Novel",
+      "position": "2019",
+      "result": "winner",
+      "title": "The Chalk Man"
+    },
+    {
+      "authors": [
+        "Oyinkan Braithwaite"
+      ],
+      "award": "Barry Award",
+      "award_year": "2019",
+      "category": "Best First Mystery Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "title": "My Sister, the Serial Killer"
+    },
+    {
+      "authors": [
+        "Karen Cleveland"
+      ],
+      "award": "Barry Award",
+      "award_year": "2019",
+      "category": "Best First Mystery Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "title": "Need To Know"
+    },
+    {
+      "authors": [
+        "John Copenhaver"
+      ],
+      "award": "Barry Award",
+      "award_year": "2019",
+      "category": "Best First Mystery Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "title": "Dodging and Burning"
+    },
+    {
+      "authors": [
+        "Caz Frear"
+      ],
+      "award": "Barry Award",
+      "award_year": "2019",
+      "category": "Best First Mystery Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "title": "Sweet Little Lies"
+    },
+    {
+      "authors": [
+        "James A. McLaughlin"
+      ],
+      "award": "Barry Award",
+      "award_year": "2019",
+      "category": "Best First Mystery Novel",
+      "position": "2019.05",
+      "result": "nominee",
+      "title": "Bearskin"
+    },
+    {
+      "authors": [
+        "S\u00f8ren Sveistrup"
+      ],
+      "award": "Barry Award",
+      "award_year": "2020",
+      "category": "Best First Mystery Novel",
+      "position": "2020",
+      "result": "winner",
+      "title": "The Chestnut Man"
+    },
+    {
+      "authors": [
+        "Chris Hammer"
+      ],
+      "award": "Barry Award",
+      "award_year": "2020",
+      "category": "Best First Mystery Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "Scrublands"
+    },
+    {
+      "authors": [
+        "S.A. Lelchuk"
+      ],
+      "award": "Barry Award",
+      "award_year": "2020",
+      "category": "Best First Mystery Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "Save Me from Dangerous Men"
+    },
+    {
+      "authors": [
+        "Alex Michaelides"
+      ],
+      "award": "Barry Award",
+      "award_year": "2020",
+      "category": "Best First Mystery Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "The Silent Patient"
+    },
+    {
+      "authors": [
+        "Holly Watt"
+      ],
+      "award": "Barry Award",
+      "award_year": "2020",
+      "category": "Best First Mystery Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "title": "To the Lions"
+    },
+    {
+      "authors": [
+        "Lauren Wilkinson"
+      ],
+      "award": "Barry Award",
+      "award_year": "2020",
+      "category": "Best First Mystery Novel",
+      "position": "2020.05",
+      "result": "nominee",
+      "title": "American Spy"
+    },
+    {
+      "authors": [
+        "David Heska Wanbli Weiden"
+      ],
+      "award": "Barry Award",
+      "award_year": "2021",
+      "category": "Best First Mystery Novel",
+      "position": "2021",
+      "result": "winner",
+      "title": "Winter Counts"
+    },
+    {
+      "authors": [
+        "Chris Hauty"
+      ],
+      "award": "Barry Award",
+      "award_year": "2021",
+      "category": "Best First Mystery Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "Deep State"
+    },
+    {
+      "authors": [
+        "Nev March"
+      ],
+      "award": "Barry Award",
+      "award_year": "2021",
+      "category": "Best First Mystery Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "Murder in Old Bombay"
+    },
+    {
+      "authors": [
+        "Richard Osman"
+      ],
+      "award": "Barry Award",
+      "award_year": "2021",
+      "category": "Best First Mystery Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "The Thursday Murder Club"
+    },
+    {
+      "authors": [
+        "Alex Pavesi"
+      ],
+      "award": "Barry Award",
+      "award_year": "2021",
+      "category": "Best First Mystery Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "The Eighth Detective"
+    },
+    {
+      "authors": [
+        "Stephanie Wrobel"
+      ],
+      "award": "Barry Award",
+      "award_year": "2021",
+      "category": "Best First Mystery Novel",
+      "position": "2021.05",
+      "result": "nominee",
+      "title": "Darling Rose Gold"
+    },
+    {
+      "authors": [
+        "Connor Sullivan"
+      ],
+      "award": "Barry Award",
+      "award_year": "2022",
+      "category": "Best First Mystery Novel",
+      "position": "2022",
+      "result": "winner",
+      "title": "Sleeping Bear"
+    },
+    {
+      "authors": [
+        "Alexandra Andrews"
+      ],
+      "award": "Barry Award",
+      "award_year": "2022",
+      "category": "Best First Mystery Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "Who Is Maud Dixon?"
+    },
+    {
+      "authors": [
+        "Abigail Dean"
+      ],
+      "award": "Barry Award",
+      "award_year": "2022",
+      "category": "Best First Mystery Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "Girl A"
+    },
+    {
+      "authors": [
+        "Taylor Moore"
+      ],
+      "award": "Barry Award",
+      "award_year": "2022",
+      "category": "Best First Mystery Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "Down Range"
+    },
+    {
+      "authors": [
+        "T.J. Newman"
+      ],
+      "award": "Barry Award",
+      "award_year": "2022",
+      "category": "Best First Mystery Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "Falling"
+    },
+    {
+      "authors": [
+        "Brandon Webb",
+        "John David Mann"
+      ],
+      "award": "Barry Award",
+      "award_year": "2022",
+      "category": "Best First Mystery Novel",
+      "position": "2022.05",
+      "result": "nominee",
+      "title": "Steel Fear"
+    },
+    {
+      "authors": [
+        "I.S. Berry"
+      ],
+      "award": "Barry Award",
+      "award_year": "2024",
+      "category": "Best First Mystery Novel",
+      "position": "2024",
+      "result": "winner",
+      "title": "The Peacock and the Sparrow"
+    },
+    {
+      "authors": [
+        "Michael Bennett"
+      ],
+      "award": "Barry Award",
+      "award_year": "2024",
+      "category": "Best First Mystery Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "Better the Blood"
+    },
+    {
+      "authors": [
+        "Bruce Borgos"
+      ],
+      "award": "Barry Award",
+      "award_year": "2024",
+      "category": "Best First Mystery Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "The Bitter Past"
+    },
+    {
+      "authors": [
+        "Amy Chua"
+      ],
+      "award": "Barry Award",
+      "award_year": "2024",
+      "category": "Best First Mystery Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "The Golden Gate"
+    },
+    {
+      "authors": [
+        "Deepti Kapoor"
+      ],
+      "award": "Barry Award",
+      "award_year": "2024",
+      "category": "Best First Mystery Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "title": "Age of Vice"
+    },
+    {
+      "authors": [
+        "Nina Simon"
+      ],
+      "award": "Barry Award",
+      "award_year": "2024",
+      "category": "Best First Mystery Novel",
+      "position": "2024.05",
+      "result": "nominee",
+      "title": "Mother-Daughter Murder Night"
+    },
+    {
+      "authors": [
+        "Iris Yamashita"
+      ],
+      "award": "Barry Award",
+      "award_year": "2024",
+      "category": "Best First Mystery Novel",
+      "position": "2024.06",
+      "result": "nominee",
+      "title": "City Under One Roof"
+    },
+    {
+      "authors": [
+        "C.B. Bernard"
+      ],
+      "award": "Barry Award",
+      "award_year": "2025",
+      "category": "Best First Mystery Novel",
+      "position": "2025",
+      "result": "winner",
+      "title": "Ordinary Bear"
+    },
+    {
+      "authors": [
+        "Kat Ailes"
+      ],
+      "award": "Barry Award",
+      "award_year": "2025",
+      "category": "Best First Mystery Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "The Expectant Detectives"
+    },
+    {
+      "authors": [
+        "Tom Baragwanath"
+      ],
+      "award": "Barry Award",
+      "award_year": "2025",
+      "category": "Best First Mystery Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "Paper Cage"
+    },
+    {
+      "authors": [
+        "Jo Callaghan"
+      ],
+      "award": "Barry Award",
+      "award_year": "2025",
+      "category": "Best First Mystery Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "In the Blink of an Eye"
+    },
+    {
+      "authors": [
+        "Ashley Elston"
+      ],
+      "award": "Barry Award",
+      "award_year": "2025",
+      "category": "Best First Mystery Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "First Lie Wins"
+    },
+    {
+      "authors": [
+        "Amy Tintera"
+      ],
+      "award": "Barry Award",
+      "award_year": "2025",
+      "category": "Best First Mystery Novel",
+      "position": "2025.05",
+      "result": "nominee",
+      "title": "Listen for the Lie"
+    },
+    {
+      "authors": [
+        "Amran Gowani"
+      ],
+      "award": "Barry Award",
+      "award_year": "2026",
+      "category": "Best First Mystery Novel",
+      "position": "2026.01",
+      "result": "nominee",
+      "title": "Leverage"
+    },
+    {
+      "authors": [
+        "Sarah Harman"
+      ],
+      "award": "Barry Award",
+      "award_year": "2026",
+      "category": "Best First Mystery Novel",
+      "position": "2026.02",
+      "result": "nominee",
+      "title": "All the Other Mothers Hate Me"
+    },
+    {
+      "authors": [
+        "Jakob Kerr"
+      ],
+      "award": "Barry Award",
+      "award_year": "2026",
+      "category": "Best First Mystery Novel",
+      "position": "2026.03",
+      "result": "nominee",
+      "title": "Dead Money"
+    },
+    {
+      "authors": [
+        "Zoe Rankin"
+      ],
+      "award": "Barry Award",
+      "award_year": "2026",
+      "category": "Best First Mystery Novel",
+      "position": "2026.04",
+      "result": "nominee",
+      "title": "The Vanishing Place"
+    },
+    {
+      "authors": [
+        "Tanya Scott"
+      ],
+      "award": "Barry Award",
+      "award_year": "2026",
+      "category": "Best First Mystery Novel",
+      "position": "2026.05",
+      "result": "nominee",
+      "title": "Stillwater"
+    },
+    {
+      "authors": [
+        "Liann Zhang"
+      ],
+      "award": "Barry Award",
+      "award_year": "2026",
+      "category": "Best First Mystery Novel",
+      "position": "2026.06",
+      "result": "nominee",
+      "title": "Julie Chan Is Dead"
+    }
+  ],
+  "fetched_at": "2026-07-18T02:36:30Z",
+  "list_id": "barry_award_first_mystery_novel",
+  "list_name": "Barry Award - First Mystery Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "barry_award_first_mystery_novel",
+  "schema_version": 2,
+  "source": {
+    "name": "Barry Award - First Mystery Novel",
+    "source_id": "barry_award_first_mystery_novel",
+    "url": "https://www.stopyourekillingme.com/Awards/Barry_Awards.html"
+  }
+}

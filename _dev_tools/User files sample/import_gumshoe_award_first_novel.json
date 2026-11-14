@@ -1,0 +1,106 @@
+{
+  "append_state": {
+    "entry_count": 7,
+    "last_entry_key": "big city bad blood|sean chercover",
+    "last_position": "2008",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "C. J. Box"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2002",
+      "category": "First Novel",
+      "position": "2002",
+      "result": "winner",
+      "title": "Open Season"
+    },
+    {
+      "authors": [
+        "Eddie Muller"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2003",
+      "category": "First Novel",
+      "position": "2003",
+      "result": "winner",
+      "title": "The Distance"
+    },
+    {
+      "authors": [
+        "P.J. Tracy"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2004",
+      "category": "First Novel",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Monkeewrench"
+      },
+      "title": "Monkeewrench"
+    },
+    {
+      "authors": [
+        "Dylan Schaffer"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2005",
+      "category": "First Novel",
+      "position": "2005",
+      "result": "winner",
+      "title": "Misdemeanor Man"
+    },
+    {
+      "authors": [
+        "Randall Hicks"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2006",
+      "category": "First Novel",
+      "position": "2006",
+      "result": "winner",
+      "title": "The Baby Game"
+    },
+    {
+      "authors": [
+        "John Hart"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2007",
+      "category": "First Novel",
+      "position": "2007",
+      "result": "winner",
+      "title": "The King of Lies"
+    },
+    {
+      "authors": [
+        "Sean Chercover"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2008",
+      "category": "First Novel",
+      "position": "2008",
+      "result": "winner",
+      "title": "Big City, Bad Blood"
+    }
+  ],
+  "fetched_at": "2026-07-17T06:43:50Z",
+  "list_id": "gumshoe_award_first_novel",
+  "list_name": "Gumshoe Award - First Novel (discontinued)",
+  "match_series": false,
+  "notes": [
+    "LibraryThing failed: HTTP Error 403: Forbidden"
+  ],
+  "parser": "gumshoe_award_first_novel",
+  "schema_version": 2,
+  "source": {
+    "name": "Gumshoe Award - First Novel (discontinued)",
+    "source_id": "gumshoe_award_first_novel",
+    "url": "https://en.wikipedia.org/wiki/Gumshoe_Awards"
+  }
+}

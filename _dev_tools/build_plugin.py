@@ -11,10 +11,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 RUNTIME_ROOT_FILES = frozenset((
   '__init__.py',
+  'camoufox_transport.py',
   'config.py',
   'debug.py',
   'errors.py',
   'goodreads.py',
+  'goodreads_recovery_transport.py',
   'import_flow.py',
   'list_state.py',
   'main.py',
@@ -31,6 +33,10 @@ REQUIRED_MEMBERS = frozenset((
   'images/icon.png',
   'parser/__init__.py',
   'parser/data/spsfc_results.json',
+  'parser/data/r_bookclub_corrections.json',
+  'parser/data/big_library_read_history.json',
+  'parser/data/costa_whitbread_corrections.py',
+  'parser/data/shirley_jackson_isfdb_supplement.json',
   'url_fetcher/__init__.py',
 ))
 PROHIBITED_PARTS = frozenset(('.git', '__pycache__', '_dev_tools', '_docs'))

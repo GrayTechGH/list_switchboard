@@ -1,0 +1,77 @@
+{
+  "append_state": {
+    "entry_count": 5,
+    "last_entry_key": "death in ghostly hue|susan van kirk",
+    "last_position": "2025.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Olivia Blacke"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Paranormal Mystery",
+      "position": "2025",
+      "result": "winner",
+      "title": "A New Lease on Death"
+    },
+    {
+      "authors": [
+        "Lynn Cahoon"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Paranormal Mystery",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "Five Furry Familiars"
+    },
+    {
+      "authors": [
+        "Ramona Emerson"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Paranormal Mystery",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "Exposure"
+    },
+    {
+      "authors": [
+        "Carolyn Haines"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Paranormal Mystery",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "Lights, Camera, Bone"
+    },
+    {
+      "authors": [
+        "Susan Van Kirk"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2025",
+      "category": "Best Paranormal Mystery",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "Death in Ghostly Hue"
+    }
+  ],
+  "fetched_at": "2026-07-18T02:40:14Z",
+  "list_id": "anthony_award_paranormal_mystery",
+  "list_name": "Anthony Award - Paranormal Mystery",
+  "match_series": false,
+  "notes": [],
+  "parser": "anthony_award_paranormal_mystery",
+  "schema_version": 2,
+  "source": {
+    "name": "Anthony Award - Paranormal Mystery",
+    "source_id": "anthony_award_paranormal_mystery",
+    "url": "https://www.stopyourekillingme.com/Awards/Anthony_Awards.html"
+  }
+}
