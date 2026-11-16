@@ -69,6 +69,19 @@ class UrlFetcherITWThrillerAward(LibraryThingAwardFallbackMixin, UrlFetcherGener
         disable_fallbacks=disable_fallbacks,
         source_choice=source_choice)
     parsed.setdefault('match_series', self.options.get('match_series', True))
+    return self.format_titles(parsed)
+
+  def format_titles(self, parsed):
+    """Use Calibre's title casing for source titles printed entirely in caps."""
+    uppercase_entries = [
+      entry for entry in parsed.get('entries', ())
+      if entry.get('title', '').isupper()
+    ]
+    if uppercase_entries:
+      from calibre.utils.titlecase import titlecase
+
+      for entry in uppercase_entries:
+        entry['title'] = titlecase(entry['title'])
     return parsed
 
   def source_attempts(self):
@@ -87,12 +100,13 @@ class UrlFetcherITWThrillerAward(LibraryThingAwardFallbackMixin, UrlFetcherGener
     return SourceFallbackRunner(self.source_attempts()).source_choices()
 
   def parse(self, html, **_kwargs):
-    return self.parser().parse(
+    parsed = self.parser().parse(
       html,
       self.URL,
       self.NAME,
       self.CATEGORY,
       self.CATEGORY_ALIASES)
+    return self.format_titles(parsed)
 
 
 class UrlFetcherITWBestStandaloneThrillerNovel(UrlFetcherITWThrillerAward):

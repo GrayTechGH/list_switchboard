@@ -7,33 +7,28 @@ Philip K. Dick Award parser for SFADB year pages.
 Maintenance notes:
 - SFADB exposes one page per award year with Winner, Special Citation, and
   Finalists sections.
-- Like Clarke, year pages use a section-result model rather than the standard
-  category/boundary model. parse_year() is overridden accordingly.
+- Year pages use a section-result model rather than one award-category block.
+  RESULT_SECTIONS configures shared year parsing, including the legacy text shape.
 - Special citations use .5-style positions to match the user's preferred list
-  indexing. assign_positions() from the base is not used here because special
-  citations require a separate counter.
+  indexing. Only the assign_year_positions() hook differs from the base because
+  special citations require a separate counter.
 """
 
 import re
 
-from bs4 import BeautifulSoup
-
 try:
-  from calibre_plugins.list_switchboard.parser.base import (
-    entry_source_object, imported_entry)
   from calibre_plugins.list_switchboard.parser.sfadb_base import (
     SFADBParser,
-    normalize_heading, normalize_line,
+    normalize_line,
     strip_publication_notes, strip_square_notes, strip_tie_marker,
-    split_title_author as award_split_title_author, text_lines,
+    split_title_author as award_split_title_author,
   )
 except ImportError:
-  from .base import entry_source_object, imported_entry
   from .sfadb_base import (
     SFADBParser,
-    normalize_heading, normalize_line,
+    normalize_line,
     strip_publication_notes, strip_square_notes, strip_tie_marker,
-    split_title_author as award_split_title_author, text_lines,
+    split_title_author as award_split_title_author,
   )
 
 
@@ -50,35 +45,10 @@ BOUNDARY_HEADINGS = frozenset({
 })
 
 
-def _is_boundary(line):
-  heading = normalize_heading(line)
-  if not heading:
-    return False
-  if heading in BOUNDARY_HEADINGS:
-    return True
-  return heading.startswith('this page last updated')
-
-
 def _special_citation_position(year, index):
   if index == 0:
     return f'{year}.5'
   return f'{year}.5{index}'
-
-
-def _category_block_rows(soup):
-  rows = []
-  for block in soup.find_all('div', class_='categoryblock'):
-    heading_node = block.find('div', class_='category')
-    heading = normalize_heading(
-      heading_node.get_text(' ', strip=True) if heading_node else '')
-    result = SECTION_RESULTS.get(heading)
-    if result is None:
-      continue
-    for item in block.find_all('li'):
-      line = normalize_line(item.get_text(' ', strip=True))
-      if line:
-        rows.append((line, result))
-  return rows
 
 
 def _split_title_author(text):
@@ -92,7 +62,8 @@ class PhilipKDickParser(SFADBParser):
 
   AWARD_NAME = AWARD_NAME
   YEAR_PAGE_URL = YEAR_PAGE_URL
-  CATEGORY_BOUNDARIES = frozenset()  # not used; section model overrides parse_year
+  CATEGORY_BOUNDARIES = BOUNDARY_HEADINGS
+  RESULT_SECTIONS = SECTION_RESULTS
 
   def parse(self, overview_html, base_url, name=None, category=None,
             category_aliases=None, fetch_url=None, log=None, progress=None):
@@ -103,35 +74,7 @@ class PhilipKDickParser(SFADBParser):
       category_aliases=(),
       fetch_url=fetch_url, log=log, progress=progress)
 
-  def parse_year(self, html, source_url, year, category, category_aliases):
-    soup = BeautifulSoup(html, 'html.parser')
-    rows = []
-    block_rows = _category_block_rows(soup)
-    if block_rows:
-      for line, result in block_rows:
-        parsed = self.parse_item(line)
-        if parsed is None:
-          continue
-        parsed['result'] = result
-        rows.append(parsed)
-    else:
-      result = None
-      for line in text_lines(soup):
-        heading = normalize_heading(line)
-        if heading in SECTION_RESULTS:
-          result = SECTION_RESULTS[heading]
-          continue
-        if result is None:
-          continue
-        if _is_boundary(line):
-          result = None
-          continue
-        parsed = self.parse_item(line)
-        if parsed is None:
-          continue
-        parsed['result'] = result
-        rows.append(parsed)
-
+  def assign_year_positions(self, rows, year):
     entries = []
     suffix_index = 0
     citation_index = 0
@@ -147,15 +90,7 @@ class PhilipKDickParser(SFADBParser):
       else:
         suffix_index += 1
         position = f'{year}.{suffix_index:02d}'
-      entries.append(imported_entry(
-        position,
-        row['title'],
-        row['author'],
-        source=entry_source_object(source_url),
-        award_year=str(year),
-        award=self.AWARD_NAME,
-        category=CATEGORY_NAME,
-        result=result))
+      entries.append(dict(row, position=position))
     return entries
 
   def parse_item(self, text):

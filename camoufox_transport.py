@@ -41,6 +41,9 @@ DEFAULT_RESPONSE_MAX_BYTES = 10 * 1024 * 1024
 POLL_INTERVAL_SECONDS = 0.1
 SHUTDOWN_JOIN_SECONDS = 2.0
 STARTUP_ALLOWANCE_SECONDS = 300
+# Calibre can recover a timed-out navigation with a ten-second DOM-ready wait
+# before serializing the response. The outer watchdog must let that finish.
+RESPONSE_GRACE_SECONDS = 15
 
 
 @contextmanager
@@ -226,11 +229,21 @@ class CamoufoxTransport:
     self._log('initializing browser (first use may download browser data)')
     browser = self._factory()(
       headless=True,
+      start_worker=True,
       warmup=True,
       warmup_excluded_domains=self.warmup_excluded_domains,
       max_tabs=1,
       block_images=True,
       verify_ssl_certificates=True)
+    try:
+      # Worker creation can return before warmup finishes. This harmless query
+      # waits for readiness without charging browser setup to the first page.
+      user_agent = getattr(browser, 'user_agent', None)
+      if callable(user_agent):
+        user_agent()
+    except BaseException:
+      browser.shutdown()
+      raise
     with self._browser_lock:
       closed = self.closed
       if not closed:
@@ -281,19 +294,27 @@ class CamoufoxTransport:
     thread = threading.Thread(
       target=run, name='ListSwitchboardCamoufoxFetch', daemon=True)
     self._active_thread = thread
-    deadline = time.monotonic() + STARTUP_ALLOWANCE_SECONDS + float(timeout)
+    starting_browser = self.browser is None
+    deadline = time.monotonic() + (
+      STARTUP_ALLOWANCE_SECONDS if starting_browser else float(timeout) + RESPONSE_GRACE_SECONDS)
     thread.start()
-    message = wait_message or (
-      f'Starting Camoufox for {self.source_name}; first use may download browser data...')
     try:
       while True:
+        # Browser publication ends startup; every page gets only its own timeout.
+        if starting_browser and self.browser is not None:
+          starting_browser = False
+          deadline = time.monotonic() + float(timeout) + RESPONSE_GRACE_SECONDS
+        message = wait_message or (
+          f'Starting Camoufox for {self.source_name}; first use may download browser data...'
+          if starting_browser else f'Loading {self.source_name} page with Camoufox...')
         if self.wait_callback is not None:
           self.wait_callback(message)
         if not thread.is_alive():
           break
         if time.monotonic() >= deadline:
           self.close()
-          raise CamoufoxFetchError('Camoufox startup or request exceeded its time limit.')
+          stage = 'browser startup' if starting_browser else 'request'
+          raise CamoufoxFetchError(f'Camoufox {stage} exceeded its time limit.')
         thread.join(self.poll_interval)
     except ImportCancelledError:
       self._log(f'fetch cancelled url={url}')

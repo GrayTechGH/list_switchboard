@@ -6,6 +6,12 @@
 from urllib.parse import urlparse
 
 try:
+  from calibre_plugins.list_switchboard.http_policy import random_user_agent
+except ImportError:
+  from http_policy import random_user_agent
+
+
+try:
   from calibre.utils.https import get_https_resource_securely as calibre_https_fetch
 except ImportError:
   calibre_https_fetch = None
@@ -78,11 +84,6 @@ class UrlFetcherLibbyReadsGlobal(PackagedHistoryFallbackMixin, UrlFetcherGeneric
   source_id = 'libby_reads_global'
   NAME = 'Libby Reads Global'
   URL = 'https://www.libbylife.com/libby-reads'
-  USER_AGENT = (
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
-    'AppleWebKit/537.36 (KHTML, like Gecko) '
-    'Chrome/150.0.0.0 Safari/537.36'
-  )
   RESPONSE_MAX_BYTES = 10 * 1024 * 1024
   order = 56
   FILTER_CATEGORIES = (CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,)
@@ -107,7 +108,7 @@ class UrlFetcherLibbyReadsGlobal(PackagedHistoryFallbackMixin, UrlFetcherGeneric
       # a current browser identity. Calibre's native secure HTTPS helper uses a
       # different TLS/HTTP fingerprint and succeeds anonymously.
       headers = {
-        'User-Agent': self.USER_AGENT,
+        'User-Agent': random_user_agent(),
         'Accept': 'text/html,application/xhtml+xml,*/*;q=0.8',
         'Accept-Language': 'en-US,en;q=0.9',
       }

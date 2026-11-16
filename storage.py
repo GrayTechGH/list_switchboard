@@ -38,14 +38,14 @@ try:
   from calibre_plugins.list_switchboard.matching import (
     entry_key_for_saved_match,
     imported_author_display_value, imported_author_key,
-    imported_author_search_text, match_keys, normalize_match_text,
+    imported_author_search_text, match_keys, normalize_key, normalize_match_text,
     series_match_keys,
   )
 except ImportError:
   from matching import (
     entry_key_for_saved_match,
     imported_author_display_value, imported_author_key,
-    imported_author_search_text, match_keys, normalize_match_text,
+    imported_author_search_text, match_keys, normalize_key, normalize_match_text,
     series_match_keys,
   )
 
@@ -453,6 +453,40 @@ class StorageMixin:
     self.debug_storage_match_cache(safe_id, 'hit', matches=len(data.get('matches') or []))
     return data
 
+  def remove_saved_matches_for_list(self, list_name):
+    """Clear overrides for a removed list while retaining parsed imports.
+
+    Resolve display names through cached metadata or registered recipe names;
+    deriving an ID from a display name can target an unrelated recipe.
+    """
+    list_key = normalize_key(list_name)
+    if not list_key:
+      return
+    list_ids = set()
+    for path in self.import_cache_paths():
+      data = self.read_json_file(path)
+      if data and normalize_key(data.get('list_name', '')) == list_key:
+        list_ids.add(os.path.basename(path)[len('import_'):-len('.json')])
+    try:
+      from calibre_plugins.list_switchboard.url_fetcher import available_url_fetchers
+    except ImportError:
+      from url_fetcher import available_url_fetchers
+    for recipe in available_url_fetchers():
+      if normalize_key(recipe.NAME) == list_key:
+        list_ids.add(safe_list_id(recipe.source_id))
+    for list_id in sorted(list_ids):
+      try:
+        os.remove(self.match_cache_path(list_id))
+      except FileNotFoundError:
+        continue
+      except OSError as err:
+        raise ListSwitchboardError(
+          f'The list was removed, but saved matches for "{list_name}" '
+          f'could not be cleared: {err}') from err
+      invalidator = getattr(self, 'invalidate_cached_active_add_import_map', None)
+      if invalidator is not None:
+        invalidator(list_id)
+
   def write_match_cache(self, list_id, matches):
     safe_id = safe_list_id(list_id)
     path = self.match_cache_path(safe_id)
@@ -746,12 +780,10 @@ class StorageMixin:
 
   def saved_match_entry_for_book(
       self, book_id, position, entries, db, match_series=True, book_series=None):
+    """Infer only from work identity; any weaker association needs a choice."""
     if not entries:
       self.debug_storage_save_match_skipped(book_id, 'no cached entry at active position', position)
       return None
-    if len(entries) == 1:
-      return entries[0]
-
     title = db.field_for('title', book_id, default_value='') or ''
     authors = db.field_for('authors', book_id, default_value=[]) or []
     matches = [
@@ -774,8 +806,6 @@ class StorageMixin:
       entry for entry in entries
       if self.author_matches(authors, imported_author_search_text(entry))
     ]
-    if len(author_matches) == 1:
-      return author_matches[0]
     candidates = matches or series_matches or author_matches or entries
     return self.choose_saved_match_entry(
       book_id, position, candidates, db, book_series=book_series)
@@ -877,11 +907,10 @@ class StorageMixin:
       entry = entries_by_key.get(key)
       if entry is None:
         continue
-      entry_position = self.normalized_position_text(entry.get('position', ''))
       matched_book_ids = matched_book_ids_for_match_item(item)
       if not matched_book_ids:
         continue
-      if any(active_positions_by_book.get(book_id) == entry_position for book_id in matched_book_ids):
+      if any(book_id in active_book_ids for book_id in matched_book_ids):
         continue
       by_key[key] = self.unmatched_match_item_for_review_row({
         'entry': entry,
@@ -927,13 +956,7 @@ class StorageMixin:
           self.read_field(self.active_list_field_key(), book_id))
         normalized_position = self.normalized_position_text(position)
         position_entries = entries_by_position.get(normalized_position, [])
-        existing_entries = [
-          entry for entry in existing_entries_by_book.get(book_id, [])
-          if (
-            self.normalized_position_text(entry.get('position', ''))
-            == normalized_position
-          )
-        ]
+        existing_entries = existing_entries_by_book.get(book_id, [])
         if existing_entries:
           continue
         saved_entry_keys_at_position = existing_entry_keys_by_position.get(normalized_position, set())

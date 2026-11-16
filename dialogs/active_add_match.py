@@ -6,6 +6,8 @@ from qt.core import (
   QSizePolicy, QTableWidget, QTableWidgetItem, Qt, QVBoxLayout
 )
 
+from calibre.gui2 import question_dialog
+
 try:
   from calibre_plugins.list_switchboard.matching import imported_author_search_text
 except ImportError:
@@ -211,3 +213,10 @@ class ActiveAddMatchDialog(QDialog):
     if self.selected_entry is None:
       return
     QDialog.accept(self)
+
+  def reject(self):
+    if question_dialog(
+        self, 'Discard pending choices',
+        'Discard all pending choices and cancel this add operation?',
+        default_yes=False, yes_text='Discard choices', no_text='Continue reviewing'):
+      QDialog.reject(self)

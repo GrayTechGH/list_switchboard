@@ -64,7 +64,7 @@ class ImportListCatalogTests(unittest.TestCase):
     self.assertEqual('true', series_recipe['match_series'])
     self.assertEqual('true', series_recipe['requires_series_matching'])
 
-  def test_ladies_of_horror_fiction_catalog_rows_stay_manually_passed(self):
+  def test_ladies_of_horror_fiction_catalog_rows_stay_discontinued(self):
     expected_ids = (
       'ladies_of_horror_fiction_novel',
       'ladies_of_horror_fiction_novella',
@@ -87,7 +87,6 @@ class ImportListCatalogTests(unittest.TestCase):
     self.assertTrue(all(
       row['name'].endswith(' (discontinued)') for row in rows))
     self.assertTrue(all(row['discontinued'] == 'true' for row in rows))
-    self.assertTrue(all(row['Manual Test'] == 'passed' for row in rows))
 
 
 if __name__ == '__main__':

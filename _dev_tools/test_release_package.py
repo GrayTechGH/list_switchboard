@@ -29,6 +29,12 @@ class ReleasePackageTests(unittest.TestCase):
     self.assertIn('url_fetcher/splatterpunk_transport.py', members)
     self.assertIn('url_fetcher/this_is_horror_transport.py', members)
     self.assertIn('goodreads_recovery_transport.py', members)
+    self.assertIn('http_policy.py', members)
+    self.assertIn('sfadb_transport.py', members)
+    self.assertIn('url_fetcher/isfdb_transport.py', members)
+    self.assertIn('url_fetcher/isfdb_originals.py', members)
+    self.assertIn('parser/isfdb_title.py', members)
+    self.assertIn('url_fetcher/spsfc_transport.py', members)
     self.assertFalse(any('__pycache__' in name or name.endswith('.bak') for name in members))
 
   def test_package_check_rejects_development_residue(self):

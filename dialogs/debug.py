@@ -7,11 +7,6 @@ from qt.core import QCheckBox, QComboBox, QDialog, QDialogButtonBox, QLabel, QVB
 
 from calibre_plugins.list_switchboard.config import prefs
 
-try:
-  from calibre_plugins.list_switchboard.camoufox_transport import browser_fallback_level
-except ImportError:
-  from camoufox_transport import browser_fallback_level
-
 
 class DebugDialog(QDialog):
 
@@ -52,12 +47,7 @@ class DebugDialog(QDialog):
     self.force_fallback_level.setCurrentIndex(index if index >= 0 else 0)
     layout.addWidget(self.force_fallback_level)
 
-    self.disable_camoufox = QCheckBox('Disable Camoufox (use legacy fetching)', self)
-    self.disable_camoufox.setChecked(browser_fallback_level(prefs) == 2)
-    layout.addWidget(self.disable_camoufox)
     help_text = QLabel(
-      'Applies to LibraryThing, r/bookclub, official Pulitzer, Goodreads Choice Awards, and Goodreads deep recovery. '
-      'When unchecked, try Camoufox first, then legacy fetching. '
       'Fetcher levels select recovery sources. For r/bookclub, source level 1 is Wayback; '
       'source levels 2 and 3 are unavailable.', self)
     help_text.setWordWrap(True)

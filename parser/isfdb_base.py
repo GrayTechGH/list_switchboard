@@ -16,6 +16,7 @@ Maintenance notes:
 """
 
 import re
+from copy import deepcopy
 from urllib.parse import urljoin
 
 from lxml import html as lxml_html
@@ -50,6 +51,12 @@ RESULT_BY_LEVEL = {
   'longlisted': 'longlisted',
 }
 
+CREDIT_ROLE = r'(?:authors?|writers?|illustrators?|artists?|editors?|adaptors?|adapters?)'
+CREDIT_ROLE_NOTE = r'\(\s*' + CREDIT_ROLE + r'(?:\s*(?:and|&|/|,)\s*' + CREDIT_ROLE + r')*\s*\)'
+CREDIT_ROLE_SEPARATOR = re.compile(
+  CREDIT_ROLE_NOTE + r'\s*(?:,\s*(?:and\s+)?|;\s*|\band\b\s*|&&?\s*)', re.I)
+CREDIT_ROLE_NOTE_RE = re.compile(CREDIT_ROLE_NOTE, re.I)
+
 
 class ISFDBAwardParserBase(AwardParserBase):
   """
@@ -68,6 +75,7 @@ class ISFDBAwardParserBase(AwardParserBase):
   """
 
   AWARD_NAME = ''
+  CAPTURE_ORIGINAL_WORK = False
 
   HEADER_ALIASES = {
     'award level': 'level',
@@ -122,9 +130,12 @@ class ISFDBAwardParserBase(AwardParserBase):
 
     Some category pages do not expose column headers. Their stable shape is a
     year heading row followed by records with award level, title, and author.
+    A starred level is meaningful only under an explicit result-section heading
+    such as Finalists; do not infer its meaning across a new year boundary.
     """
     rows = []
     current_year = None
+    section_result = None
     for tr in table.xpath('.//tr'):
       cells = self.direct_cells(tr, include_headers=True)
       if not cells:
@@ -133,13 +144,19 @@ class ISFDBAwardParserBase(AwardParserBase):
         year = self.year_from_text(self.node_text(cells[0]))
         if year is not None:
           current_year = year
+          section_result = None
+        else:
+          section_result = self.result_from_level(self.node_text(cells[0]).strip(' -'))
         continue
       if current_year is None or len(cells) < 3:
         continue
       level_cell, title_cell, author_cell = cells[:3]
-      result = self.result_from_level(self.node_text(level_cell))
+      level = self.node_text(self.without_tooltips(level_cell))
+      result = self.result_from_level(level)
+      if result is None and level == '*':
+        result = section_result
       title = self.clean_title(self.title_from_cell(title_cell))
-      author = self.clean_author(self.author_from_cell(author_cell))
+      author = self.author_credit_from_cell(author_cell)
       if not title or not author or result is None:
         continue
       row = {
@@ -151,6 +168,7 @@ class ISFDBAwardParserBase(AwardParserBase):
         'category': category,
         'award': self.AWARD_NAME,
       }
+      self.capture_original_work(row, title_cell, base_url)
       if self.include_row(row, tr):
         rows.append(row)
     return rows
@@ -163,9 +181,11 @@ class ISFDBAwardParserBase(AwardParserBase):
     Award-year `ay.cgi` pages expose one year per page. Their stable shape is a
     blank separator row, a category heading row, optional separator rows such as
     `--- Finalists ---`, then records with award level, title, and author.
+    Starred rows require an explicit result section within the same category.
     """
     rows = []
     current_category = None
+    section_result = None
     for tr in table.xpath('./tr|./tbody/tr'):
       cells = self.direct_cells(tr)
       if not cells:
@@ -174,17 +194,23 @@ class ISFDBAwardParserBase(AwardParserBase):
         heading_text = self.node_text(cells[0])
         if cells[0].xpath('.//a[contains(@href, "/award_category.cgi?")]'):
           current_category = heading_text
+          section_result = None
+        else:
+          section_result = self.result_from_level(heading_text.strip(' -'))
         continue
       if current_category is None or len(cells) < 3:
         continue
       level_cell, title_cell, author_cell = cells[:3]
-      result = self.result_from_level(self.node_text(level_cell))
+      level = self.node_text(self.without_tooltips(level_cell))
+      result = self.result_from_level(level)
+      if result is None and level == '*':
+        result = section_result
       if result is None:
         continue
       if not self.category_matches(current_category, category, category_aliases):
         continue
       title = self.clean_title(self.title_from_cell(title_cell))
-      author = self.clean_author(self.author_from_cell(author_cell))
+      author = self.author_credit_from_cell(author_cell)
       if not title or not author:
         continue
       row = {
@@ -196,6 +222,7 @@ class ISFDBAwardParserBase(AwardParserBase):
         'category': category,
         'award': self.AWARD_NAME,
       }
+      self.capture_original_work(row, title_cell, base_url)
       if self.include_row(row, tr):
         rows.append(row)
     return rows
@@ -226,8 +253,8 @@ class ISFDBAwardParserBase(AwardParserBase):
     author_cell = cells[header_map['author']]
     year = self.year_from_text(self.cell_text(cells, header_map.get('year')))
     title = self.clean_title(self.title_from_cell(title_cell))
-    author = self.clean_author(self.author_from_cell(author_cell))
-    level = self.cell_text(cells, header_map.get('level'))
+    author = self.author_credit_from_cell(author_cell)
+    level = self.node_text(self.without_tooltips(cells[header_map['level']]))
     result = self.result_from_level(level)
     row_category = (
       self.cell_text(cells, header_map.get('category'))
@@ -246,7 +273,24 @@ class ISFDBAwardParserBase(AwardParserBase):
       'category': category,
       'award': self.cell_text(cells, header_map.get('award')) or self.AWARD_NAME,
     }
+    self.capture_original_work(row, title_cell, base_url)
     return row if self.include_row(row, tr) else None
+
+  def capture_original_work(self, row, title_cell, base_url):
+    if self.CAPTURE_ORIGINAL_WORK:
+      try:
+        from calibre_plugins.list_switchboard.parser.isfdb_title import original_link
+      except ImportError:
+        from .isfdb_title import original_link
+      original = original_link(
+        lxml_html.tostring(title_cell, encoding='unicode'), base_url)
+      if original is not None:
+        edition_title = original.pop('edition_title', '')
+        if edition_title:
+          row['title'] = self.clean_title(edition_title)
+        if row['source_url'] == original['url']:
+          row['source_url'] = base_url
+        row['original_work'] = original
 
   def include_row(self, _row, _tr):
     return True
@@ -263,7 +307,53 @@ class ISFDBAwardParserBase(AwardParserBase):
     return self.node_text(links[0]) if links else self.node_text(cell)
 
   def author_from_cell(self, cell):
-    return self.node_text(cell)
+    authors = []
+    fragments = []
+    for fragment in cell.xpath('.//text()'):
+      parent = fragment.getparent()
+      if (
+          normalize_line(str(fragment)).casefold() == 'and'
+          and parent is not None
+          and str(parent.tag).casefold() in {'b', 'strong'}):
+        authors.append(normalize_line(' '.join(fragments)))
+        fragments = []
+      else:
+        fragments.append(str(fragment))
+    authors.append(normalize_line(' '.join(fragments)))
+    return ' & '.join(author.replace('&', '&&') for author in authors if author)
+
+  def author_credit_from_cell(self, cell):
+    """Clean shared/specialized credits without treating roles as people.
+
+    A known parenthesized role can mark a contributor boundary even in plain
+    cells. Bare `and` without that evidence keeps its existing meaning.
+    """
+    value = self.clean_author(self.author_from_cell(self.without_tooltips(cell)))
+
+    def clean(credit):
+      credit = CREDIT_ROLE_SEPARATOR.sub(' & ', credit)
+      return normalize_line(CREDIT_ROLE_NOTE_RE.sub('', credit)).strip(' ,;')
+
+    if isinstance(value, (list, tuple)):
+      return [credit for credit in (clean(item) for item in value) if credit]
+    return clean(value)
+
+  def without_tooltips(self, cell):
+    """Remove alias/help UI before reading contributor or award-level cells.
+
+    ISFDB tooltips contain alternative names or nomination notes. Keep the
+    primary credit/status and structural separators without mutating the tree
+    used by other table readers.
+    """
+    selector = (
+      './/*[contains(concat(" ", normalize-space(@class), " "), " tooltiptext ") '
+      'or contains(concat(" ", normalize-space(@class), " "), " mouseover ")]')
+    if not cell.xpath(selector):
+      return cell
+    cell = deepcopy(cell)
+    for node in cell.xpath(selector):
+      node.drop_tree()
+    return cell
 
   def first_record_url(self, cell, base_url):
     hrefs = cell.xpath('(.//a[@href])[1]/@href')

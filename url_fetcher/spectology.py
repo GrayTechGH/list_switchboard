@@ -23,11 +23,6 @@ class UrlFetcherSpectology(UrlFetcherGeneric):
     CATEGORY_FANTASY,
   )
   options = {'match_series': False}
-  USER_AGENT = (
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
-    'AppleWebKit/537.36 (KHTML, like Gecko) '
-    'Chrome/150.0.0.0 Safari/537.36'
-  )
 
   def source_choices(self):
     return ({'label': 'Automatic', 'value': 'automatic'},)

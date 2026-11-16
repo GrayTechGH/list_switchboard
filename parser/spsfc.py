@@ -25,13 +25,19 @@ from lxml import html as lxml_html
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import (
-    AwardParserBase, normalize_heading, normalize_line, strip_publication_notes,
+    AwardParserBase, normalize_heading, normalize_line, split_title_author_byline,
+    strip_publication_notes,
   )
+  from calibre_plugins.list_switchboard.parser.base import author_list
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
 except ImportError:
   from .award_base import (
-    AwardParserBase, normalize_heading, normalize_line, strip_publication_notes,
+    AwardParserBase, normalize_heading, normalize_line, split_title_author_byline,
+    strip_publication_notes,
   )
+  from .base import author_list
+  from errors import ImportCancelledError, CamoufoxRequiredError
   from .generic import position_sort_key
 
 
@@ -45,6 +51,12 @@ FILE770_FINALISTS = 'file770_finalists'
 CURATED_RESULTS_FILE = 'spsfc_results.json'
 
 SPSFC_SOURCE_PAGES = (
+  {
+    'url': 'https://spsfc.space/2026/10/08/the-spsfc-5-winner-is/',
+    'competition': 'SPSFC 5',
+    'award_year': 2026,
+    'kind': OFFICIAL_RESULT,
+  },
   {
     'url': 'https://spsfc.space/2025/08/07/and-the-spsfc-4-winner-is/',
     'competition': 'SPSFC 4',
@@ -104,11 +116,15 @@ class SPSFCAwardsParser(AwardParserBase):
       self._progress(progress, index, len(pages), f'Fetching {page["competition"]}...')
       try:
         page_html = html if _same_url(url, base_url) else fetch_url(url)
+      except (ImportCancelledError, CamoufoxRequiredError):
+        raise
       except Exception as err:
         notes.append(f'{page["competition"]} source could not be fetched: {url}: {err}')
         self._log(log, 'fetch-failed', {'url': url, 'error': str(err)})
         continue
       parsed_rows = self.parse_source_page(page_html, page)
+      if not parsed_rows:
+        notes.append(f'{page["competition"]} source did not contain usable award entries: {url}')
       rows = _merge_rows(rows, parsed_rows)
       self._log(log, 'source-parsed', {
         'url': url, 'competition': page['competition'], 'entries': len(parsed_rows),
@@ -121,14 +137,22 @@ class SPSFCAwardsParser(AwardParserBase):
       notes)
 
   def parse_source_page(self, html, page):
+    root = _html_root(html)
+    for node in root.xpath('//title|//h1|//h2[contains(@class, "post-title") or contains(@class, "entry-title")]'):
+      match = re.search(r'\bSPSFC\s*#?\s*(\d+)\b', _node_text(node), re.I)
+      if match is not None and f'SPSFC {match.group(1)}' != page['competition']:
+        raise ValueError(f'SPSFC page identifies another competition: {page["url"]}')
+      if match is not None:
+        # Later post-title headings can be unrelated recent-post navigation.
+        break
     if page['kind'] == OFFICIAL_RESULT:
       return self.parse_official_result_page(html, page)
     return self.parse_finalist_page(html, page)
 
   def parse_official_result_page(self, html, page):
-    root = _html_root(html)
+    root = _article_root(_html_root(html))
     rows = []
-    for heading in root.xpath('//h2|//h3'):
+    for heading in root.xpath('.//h2|.//h3'):
       placement = PLACEMENT_HEADINGS.get(normalize_heading(_node_text(heading)))
       if placement is None:
         continue
@@ -253,11 +277,11 @@ class SPSFCAwardsParser(AwardParserBase):
 def _split_title_author(value):
   text = normalize_line(value)
   text = re.sub(r'^\s*(?:[•*\-]\s*)+', '', text).strip()
-  match = re.match(r'^(.+?)\s+by\s+(.+)$', text, re.I)
-  if match is None:
+  title, author = split_title_author_byline(text)
+  if not title or not author:
     return '', ''
-  title = strip_publication_notes(match.group(1)).strip(' "\u201c\u201d,')
-  author = strip_publication_notes(match.group(2)).strip(' "\u201c\u201d,')
+  title = strip_publication_notes(title).strip(' "\u201c\u201d,')
+  author = strip_publication_notes(author).strip(' "\u201c\u201d,')
   return title, author
 
 
@@ -282,9 +306,10 @@ def _goodreads_url_in_node(node):
 
 def _article_root(root):
   selectors = (
-    '//article',
     '//*[contains(concat(" ", normalize-space(@class), " "), " entry-content ")]',
     '//*[contains(concat(" ", normalize-space(@class), " "), " post-content ")]',
+    '//*[contains(concat(" ", normalize-space(@class), " "), " wp-block-post-content ")]',
+    '//article',
     '//*[contains(concat(" ", normalize-space(@class), " "), " post ")]',
     '//*[@id="content"]',
     '//main',
@@ -352,8 +377,13 @@ def _row_key(row):
   return (
     row.get('competition', ''),
     normalize_heading(row.get('title', '')),
-    normalize_heading(row.get('author', '')),
+    _row_author_key(row),
   )
+
+
+def _row_author_key(row):
+  return tuple(normalize_heading(author) for author in author_list(
+    row.get('authors', row.get('author', ''))))
 
 
 def _row_priority(row):
@@ -365,7 +395,7 @@ def _row_sort_key(row):
   return (
     int(placement) if placement is not None else 99,
     normalize_heading(row.get('title', '')),
-    normalize_heading(row.get('author', '')),
+    _row_author_key(row),
   )
 
 

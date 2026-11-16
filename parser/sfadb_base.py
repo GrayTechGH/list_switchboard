@@ -13,6 +13,11 @@ Maintenance notes:
   'author', and 'result', or None to skip the row.
 - Source-specific subclasses may override parse_item_node() when SFADB markup
   provides load-bearing title/person boundaries that plain text loses.
+- Single-category awards may set RESULT_SECTIONS to map normalized section
+  headings to result labels instead of selecting one award-category block.
+  Current production adopters are parser.clarke.ClarkeParser and
+  parser.philip_k_dick.PhilipKDickParser; ordinary category-based adapters leave
+  the mapping empty. Only position assignment needs a hook for special citations.
 - The position-assignment contract: winner rows in a year get str(year),
   preserving tied winners; nominees get year.NN with a two-digit suffix. If a
   year has no winner, all rows get year.NN suffixes.
@@ -25,6 +30,11 @@ import re
 from urllib.parse import urljoin
 
 from lxml import html as lxml_html
+
+try:
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError
+except ImportError:
+  from errors import ImportCancelledError
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import (
@@ -77,6 +87,7 @@ class SFADBParser(AwardParserBase):
   AWARD_NAME = ''
   YEAR_PAGE_URL = None      # compiled regex with one capture group for the year
   CATEGORY_BOUNDARIES = frozenset()
+  RESULT_SECTIONS = {}
 
   def parse(self, overview_html, base_url, name, category, category_aliases,
             fetch_url=None, log=None, progress=None):
@@ -92,6 +103,8 @@ class SFADBParser(AwardParserBase):
                      f'Fetching {self.AWARD_NAME} {year}...')
       try:
         html = fetch_url(url) if fetch_url is not None else ''
+      except ImportCancelledError:
+        raise
       except Exception as err:
         notes.append(f'{self.AWARD_NAME} {year} could not be fetched: {err}')
         self._log(log, 'fetch-failed', {'year': year, 'url': url, 'error': str(err)})
@@ -130,6 +143,12 @@ class SFADBParser(AwardParserBase):
 
   def parse_year(self, html, source_url, year, category, category_aliases):
     root = html_root(html)
+    if self.RESULT_SECTIONS:
+      rows = [
+        self.build_award_entry(row, source_url, year, category)
+        for row in self.result_section_rows(root)
+      ]
+      return self.assign_year_positions(rows, year)
     category_items = self.category_block_items(root, category_aliases)
     if category_items is not None:
       rows = []
@@ -137,14 +156,51 @@ class SFADBParser(AwardParserBase):
         parsed = self.parse_item_node(item)
         if parsed is not None:
           rows.append(self.build_award_entry(parsed, source_url, year, category))
-      return assign_positions(rows, year, tied_winners_share_position=True)
+      return self.assign_year_positions(rows, year)
 
     rows = []
     for line in self.category_lines(xpath_text_lines(root), category_aliases):
       parsed = self.parse_item(line)
       if parsed is not None:
         rows.append(self.build_award_entry(parsed, source_url, year, category))
+    return self.assign_year_positions(rows, year)
+
+  def assign_year_positions(self, rows, year):
     return assign_positions(rows, year, tied_winners_share_position=True)
+
+  def result_section_rows(self, root):
+    """Read result-labelled sections; text fallback is for pages without blocks."""
+    blocks = root.xpath(
+      '//div[contains(concat(" ", normalize-space(@class), " "), " categoryblock ")]')
+    if blocks:
+      for block in blocks:
+        headings = block.xpath(
+          './div[contains(concat(" ", normalize-space(@class), " "), " category ")]')
+        heading = normalize_heading(node_text(headings[0]) if headings else '')
+        result = self.RESULT_SECTIONS.get(heading)
+        if result is None:
+          continue
+        for item in block.xpath('.//li'):
+          parsed = self.parse_item_node(item)
+          if parsed is not None:
+            parsed['result'] = result
+            yield parsed
+      return
+
+    result = None
+    for line in xpath_text_lines(root):
+      heading = normalize_heading(line)
+      if heading in self.RESULT_SECTIONS:
+        result = self.RESULT_SECTIONS[heading]
+        continue
+      if self.is_category_boundary(line) or heading.startswith('this page last updated'):
+        result = None
+        continue
+      if result is not None:
+        parsed = self.parse_item(line)
+        if parsed is not None:
+          parsed['result'] = result
+          yield parsed
 
   def category_block_lines(self, root, aliases):
     """
@@ -270,7 +326,44 @@ class StandardItemMixin:
 
   Subclasses may override _filter_item(text) -> bool to reject rows before
   title/author splitting (e.g. quoted-title or non-book filtering).
+  Prefer linked credits only for sources where every named contributor in the
+  row belongs in the author list. Other families may have narrower role rules.
   """
+
+  PREFER_LINKED_CREDITS = False
+
+  def parse_item_node(self, node):
+    if not self.PREFER_LINKED_CREDITS:
+      return super().parse_item_node(node)
+    text, result = parse_winner_prefix(node_text(node))
+    if normalize_heading(text) == 'no award' or not self._filter_item(text):
+      return None
+    title_nodes = node.xpath('./b | ./strong')
+    people = node.xpath('./a[@href]')
+    if not title_nodes or not people:
+      return super().parse_item_node(node)
+    title_node = title_nodes[0]
+    ordered = list(node.iter())
+    # Quoted fiction can have a bold containing publication after its author.
+    if ordered.index(title_node) > ordered.index(people[0]):
+      return super().parse_item_node(node)
+    prefix = [node.text or '']
+    for child in node:
+      if child is people[0]:
+        break
+      prefix.extend((
+        lxml_html.tostring(child, method='text', encoding='unicode', with_tail=False),
+        child.tail or ''))
+    title_text, _title_result = parse_winner_prefix(normalize_line(''.join(prefix)))
+    if not title_text.endswith(','):
+      return super().parse_item_node(node)
+    # A series/collective work can span several bold nodes and date labels.
+    title = strip_publication_notes(title_text[:-1]).strip(' "\u201c\u201d,')
+    authors = list(dict.fromkeys(
+      author for author in (node_text(person) for person in people) if author))
+    if not title or not authors:
+      return super().parse_item_node(node)
+    return {'title': title, 'authors': authors, 'result': result}
 
   def parse_item(self, text):
     text, result = parse_winner_prefix(text)

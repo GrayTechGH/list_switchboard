@@ -11,16 +11,16 @@ Maintenance notes:
   Camoufox transport. This policy tries it before the bounded legacy identities
   while keeping editorial source rank unchanged.
 - LibraryThing may reject an otherwise valid browser identity with HTTP 403.
-  Use the tested identity first, then a bounded set of Calibre-generated Chrome
-  identities before allowing the source attempt to fail.
+  Use only freshly generated Calibre agents, with bounded retries before
+  allowing the source attempt to fail.
 """
 
 from urllib.parse import urlparse
 
 try:
-  from calibre.utils.random_ua import random_common_chrome_user_agent
+  from calibre_plugins.list_switchboard.http_policy import random_user_agent
 except ImportError:
-  random_common_chrome_user_agent = None
+  from http_policy import random_user_agent
 
 try:
   from calibre_plugins.list_switchboard.errors import ImportCancelledError
@@ -42,18 +42,10 @@ except ImportError:
   from parser.source_fallback import SourceAttempt
 
 
-LIBRARYTHING_USER_AGENT = (
-  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
-  'AppleWebKit/537.36 (KHTML, like Gecko) '
-  'Chrome/150.0.0.0 Safari/537.36'
-)
-
-
 class LibraryThingFetchPolicyMixin:
   """Try Camoufox, then retry with a small set of Chrome identities."""
 
-  LIBRARYTHING_RANDOM_USER_AGENT_ATTEMPTS = 2
-  _session_librarything_user_agent = ''
+  LIBRARYTHING_RANDOM_USER_AGENT_ATTEMPTS = 3
 
   def fetch_librarything_url(self, fetch_url, url):
     host = (urlparse(url).hostname or '').casefold()
@@ -91,7 +83,6 @@ class LibraryThingFetchPolicyMixin:
         if is_challenge_payload(payload):
           raise RuntimeError(
             'LibraryThing returned a browser verification page.')
-        LibraryThingFetchPolicyMixin._session_librarything_user_agent = user_agent
         return payload
       except ImportCancelledError:
         raise
@@ -111,13 +102,6 @@ class LibraryThingFetchPolicyMixin:
 
   def librarything_user_agents(self):
     user_agents = set()
-    cached = LibraryThingFetchPolicyMixin._session_librarything_user_agent
-    if cached:
-      user_agents.add(cached)
-      yield cached
-    if LIBRARYTHING_USER_AGENT not in user_agents:
-      user_agents.add(LIBRARYTHING_USER_AGENT)
-      yield LIBRARYTHING_USER_AGENT
     for _attempt in range(self.LIBRARYTHING_RANDOM_USER_AGENT_ATTEMPTS):
       try:
         generated = self.random_librarything_user_agent()
@@ -136,9 +120,7 @@ class LibraryThingFetchPolicyMixin:
       return fetch_url(url)
 
   def random_librarything_user_agent(self):
-    if random_common_chrome_user_agent is None:
-      return ''
-    return random_common_chrome_user_agent()
+    return random_user_agent()
 
 
 class LibraryThingSourceAttempt(SourceAttempt):

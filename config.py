@@ -5,21 +5,31 @@ __license__ = 'GPL v3'
 __copyright__ = '2026, List Switchboard contributors'
 __docformat__ = 'restructuredtext en'
 
-from qt.core import QComboBox, QFormLayout, QLabel, QWidget
+from qt.core import QCheckBox, QComboBox, QFormLayout, QLabel, QSpinBox, QWidget
 
 from calibre.gui2 import error_dialog
 from calibre.utils.config import JSONConfig
+
+try:
+  from calibre_plugins.list_switchboard.camoufox_transport import (
+    MINIMUM_CAMOUFOX_VERSION, browser_fallback_level, calibre_version_tuple,
+  )
+except ImportError:
+  from camoufox_transport import (
+    MINIMUM_CAMOUFOX_VERSION, browser_fallback_level, calibre_version_tuple,
+  )
 
 
 prefs = JSONConfig('plugins/list_switchboard')
 prefs.defaults['active_list_field'] = ''
 prefs.defaults['stored_lists_field'] = ''
 prefs.defaults['include_calibre_series'] = False
+prefs.defaults['max_selected_books'] = 20
 prefs.defaults['debug_logging'] = False
 prefs.defaults['debug_sections'] = {}
 prefs.defaults['debug_force_fallback_level'] = 0
 prefs.defaults['debug_librarything_transport'] = 'automatic'
-# None retains the saved pilot setting until the shared selector is saved.
+# None retains the saved pilot setting until configuration saves the checkbox.
 prefs.defaults['debug_browser_fallback_level'] = None
 prefs.defaults['camoufox_first_use_confirmed'] = False
 prefs.defaults['find_match_title_mode'] = 'similar'
@@ -55,6 +65,31 @@ class ConfigWidget(QWidget):
 
     self.l.addRow(QLabel('Active List Field:'), self.active_field)
     self.l.addRow(QLabel('Stored Lists Field:'), self.stored_field)
+
+    self.camoufox_supported = calibre_version_tuple() >= MINIMUM_CAMOUFOX_VERSION
+    self.enable_camoufox = QCheckBox('Enable Camoufox', self)
+    self.enable_camoufox.setChecked(
+      self.camoufox_supported and browser_fallback_level(prefs) != 2)
+    self.enable_camoufox.setEnabled(self.camoufox_supported)
+    self.enable_camoufox.setToolTip(
+      'Use Camoufox first for supported web sources, with legacy fetching as fallback. '
+      'Requires Calibre 9.16 or newer.')
+    self.l.addRow(self.enable_camoufox)
+
+    self.max_selected_books = QSpinBox(self)
+    self.max_selected_books.setRange(1, 1000000)
+    try:
+      selection_limit = int(prefs.get('max_selected_books', 20))
+    except (TypeError, ValueError):
+      selection_limit = 20
+    if selection_limit < 1:
+      selection_limit = 20
+    self.max_selected_books.setValue(selection_limit)
+    self.max_selected_books.setToolTip(
+      'Maximum books per Add Selected or Create New Active List action. '
+      'Books added through Include series count toward the limit. '
+      'An action exceeding the limit stops without changing any books.')
+    self.l.addRow(QLabel('Maximum selected books:'), self.max_selected_books)
 
   def _populate_fields(self):
     self.active_field.addItem('Choose a series-like custom field...', '')
@@ -108,3 +143,7 @@ class ConfigWidget(QWidget):
   def save_settings(self):
     prefs['active_list_field'] = self.active_field.currentData() or ''
     prefs['stored_lists_field'] = self.stored_field.currentData() or ''
+    # Saving other settings on old Calibre must not disable support after an upgrade.
+    if self.camoufox_supported:
+      prefs['debug_browser_fallback_level'] = 0 if self.enable_camoufox.isChecked() else 2
+    prefs['max_selected_books'] = self.max_selected_books.value()

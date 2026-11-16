@@ -28,6 +28,13 @@ from urllib.request import Request, urlopen
 
 from bs4 import UnicodeDammit
 
+try:
+  from calibre_plugins.list_switchboard.http_policy import random_user_agent
+  from calibre_plugins.list_switchboard.sfadb_transport import is_sfadb_url, fetch_sfadb_url
+except ImportError:
+  from http_policy import random_user_agent
+  from sfadb_transport import is_sfadb_url, fetch_sfadb_url
+
 from qt.core import QApplication, QDialog, QMessageBox
 
 from calibre.gui2 import error_dialog, question_dialog
@@ -148,11 +155,6 @@ A Calibre GUI plugin for managing an active reading list and stored alternate li
 
 List Switchboard only edits the configured metadata fields. It does not delete, move, convert, or modify book files.'''
 
-DEFAULT_USER_AGENT = (
-  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
-  'AppleWebKit/537.36 (KHTML, like Gecko) '
-  'Chrome/124.0.0.0 Safari/537.36'
-)
 DEFAULT_RESPONSE_MAX_BYTES = 10 * 1024 * 1024
 LARGE_RESPONSE_MAX_BYTES = 32 * 1024 * 1024
 DEFAULT_REQUEST_TIMEOUT = 30
@@ -379,7 +381,7 @@ class ListSwitchboardCore(
 
   def fetch_headers(self, user_agent=None):
     return {
-      'User-Agent': user_agent or DEFAULT_USER_AGENT,
+      'User-Agent': user_agent or random_user_agent(),
       'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
       'Accept-Language': 'en-US,en;q=0.9',
       'Connection': 'close',
@@ -394,6 +396,14 @@ class ListSwitchboardCore(
         url, max_bytes=max_bytes, timeout=timeout)
     if transport != 'default':
       raise ValueError(f'Unknown fetch transport: {transport}')
+    if is_sfadb_url(url):
+      return fetch_sfadb_url(
+        self, url, user_agent=user_agent, max_bytes=max_bytes, timeout=timeout)
+    return self.fetch_legacy_url(
+      url, user_agent=user_agent, max_bytes=max_bytes, timeout=timeout)
+
+  def fetch_legacy_url(self, url, user_agent=None, max_bytes=None, timeout=None):
+    max_bytes = max_bytes or DEFAULT_RESPONSE_MAX_BYTES
     timeout = timeout or DEFAULT_REQUEST_TIMEOUT
     headers = self.fetch_headers(user_agent=user_agent)
     if CalibreBrowser is not None:
@@ -423,8 +433,8 @@ class ListSwitchboardCore(
     level = browser_fallback_level(prefs)
     self.debug_camoufox(f'browser stage={level} url={url}')
     if level == 2:
-      self.debug_camoufox('Camoufox skipped: disabled in Debug (legacy-only mode)')
-      raise CamoufoxSkippedError('Camoufox disabled in Debug (legacy-only mode).')
+      self.debug_camoufox('Camoufox skipped: disabled in configuration (legacy-only mode)')
+      raise CamoufoxSkippedError('Camoufox disabled in configuration (legacy-only mode).')
     available, version, capability = camoufox_capability()
     self.debug_camoufox(
       f'capability calibre={format_version(version)} available={available} '
@@ -444,11 +454,14 @@ class ListSwitchboardCore(
     reddit = host == 'reddit.com' or host.endswith('.reddit.com')
     pulitzer = host == 'pulitzer.org' or host.endswith('.pulitzer.org')
     goodreads = host == 'goodreads.com' or host.endswith('.goodreads.com')
+    isfdb = host == 'isfdb.org' or host.endswith('.isfdb.org')
+    spsfc = host == 'spsfc.space' or host.endswith('.spsfc.space')
+    sfadb = is_sfadb_url(url)
     reddit_source = 'r/Fantasy' if urlparse(url).path.casefold().startswith('/r/fantasy/') else 'r/bookclub'
-    source_name = ('Goodreads' if goodreads else
-      (reddit_source if reddit else ('Pulitzer' if pulitzer else 'LibraryThing')))
-    excluded_domain = ('goodreads.com' if goodreads else
-      ('reddit.com' if reddit else ('pulitzer.org' if pulitzer else 'librarything.com')))
+    source_name = ('SFADB' if sfadb else ('SPSFC' if spsfc else ('ISFDB' if isfdb else ('Goodreads' if goodreads else
+      (reddit_source if reddit else ('Pulitzer' if pulitzer else 'LibraryThing'))))))
+    excluded_domain = ('sfadb.com' if sfadb else ('spsfc.space' if spsfc else ('isfdb.org' if isfdb else ('goodreads.com' if goodreads else
+      ('reddit.com' if reddit else ('pulitzer.org' if pulitzer else 'librarything.com'))))))
     if not prefs.get(
         'camoufox_first_use_confirmed', False):
       confirmed = question_dialog(
@@ -473,7 +486,7 @@ class ListSwitchboardCore(
         log=self.debug_camoufox,
         source_name=source_name,
         warmup_excluded_domains=tuple(dict.fromkeys((excluded_domain, 'goodreads.com'))),
-        check_challenges=not (reddit or pulitzer or goodreads),
+        check_challenges=not (reddit or pulitzer or goodreads or isfdb or spsfc or sfadb),
         wait_callback=lambda message: self.update_import_progress(
           message=message))
       self.camoufox_transport = transport
@@ -481,12 +494,8 @@ class ListSwitchboardCore(
     # Validation and progress wording belong to this request's site, not the
     # site which happened to construct the shared browser first.
     transport.source_name = source_name
-    transport.check_challenges = not (reddit or pulitzer or goodreads)
-    progress = getattr(self, 'import_progress', None)
-    progress_state = None
-    if progress is not None:
-      progress_state = (progress.minimum(), progress.maximum(), progress.value())
-      progress.setRange(0, 0)
+    transport.check_challenges = not (reddit or pulitzer or goodreads or isfdb or spsfc or sfadb)
+    # Page timing is unknown; keep completed phase progress steady and use wait text.
     try:
       return transport.fetch(
         url,
@@ -500,10 +509,6 @@ class ListSwitchboardCore(
       self.close_camoufox_transport()
       self._camoufox_disabled_reason = str(err) or err.__class__.__name__
       raise
-    finally:
-      if progress_state is not None:
-        progress.setRange(progress_state[0], progress_state[1])
-        progress.setValue(progress_state[2])
 
   def close_camoufox_transport(self):
     transport = getattr(self, 'camoufox_transport', None)
@@ -575,7 +580,6 @@ class ListSwitchboardCore(
       for key, box in d.section_boxes.items()
     }
     prefs['debug_force_fallback_level'] = int(d.force_fallback_level.currentData() or 0)
-    prefs['debug_browser_fallback_level'] = 2 if d.disable_camoufox.isChecked() else 0
     if prefs['debug_logging']:
       self.status_message('List Switchboard debug logging is on for all sections.')
     else:
