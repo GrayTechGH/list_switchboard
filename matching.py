@@ -302,6 +302,47 @@ def entry_key_for_saved_match(entry, position_scoped=False):
   return key
 
 
+def original_edition_saved_keys(entry):
+  """Recover prior source identities only from verified original-work lineage."""
+  if not (entry.get('original_work') or {}).get('resolved_at'):
+    return ()
+  return tuple(dict.fromkeys(
+    (entry_key_for_saved_match(edition, position_scoped=True), entry_key_for_saved_match(edition))
+    for edition in entry.get('translated_editions', ())
+    if edition.get('title') and edition.get('authors')))
+
+
+def original_edition_saved_choice(pairs, owners, saved, unmatched, book_ids):
+  choices = []
+  seen = set()
+  for keys in pairs:
+    found = None
+    for mapping, negative in ((unmatched, True), (saved, False)):
+      key = next((key for key in keys if key in mapping), None)
+      if key is not None:
+        if len(owners.get(key, ())) != 1:
+          return None, None, True
+        found = (key, negative, mapping[key])
+        break
+    if found is None or found[0] in seen:
+      continue
+    key, negative, directive = found
+    seen.add(key)
+    if negative:
+      previous = {'matched_book_ids': directive.get('previous_matched_book_ids'),
+        'matched_book_id': directive.get('previous_matched_book_id')}
+      signature = ('ignored' if directive.get('ignored') else 'unmatched', tuple(sorted(book_ids(previous))))
+    else:
+      signature = ('matched', tuple(sorted(book_ids(directive))))
+    choices.append((signature, negative, directive))
+  if not choices:
+    return None, None, False
+  if len({choice[0] for choice in choices}) != 1:
+    return None, None, True
+  _, negative, directive = choices[0]
+  return (directive, None, False) if negative else (None, directive, False)
+
+
 def import_entry_priority(entry):
   if imported_entry_source_url(entry) and not (entry.get('votes') or entry.get('percent')):
     return 2
@@ -1246,6 +1287,11 @@ class MatchingMixin:
       base_entry_key_counts[base_entry_key] = (
         base_entry_key_counts.get(base_entry_key, 0) + 1)
     total_entries = len(entries)
+    original_keys = [original_edition_saved_keys(entry) for entry in entries]
+    original_key_owners = {}
+    for index, pairs in enumerate(original_keys):
+      for key in {key for pair in pairs for key in pair}:
+        original_key_owners.setdefault(key, set()).add(index)
     for entry_index, entry in enumerate(entries, start=1):
       row_key = entry_index - 1
       base_entry_key = base_entry_keys[row_key]
@@ -1284,6 +1330,20 @@ class MatchingMixin:
       unmatched_override = unmatched_overrides.get(saved_entry_key)
       if unmatched_override is None and saved_entry_key != base_entry_key:
         unmatched_override = unmatched_overrides.get(base_entry_key)
+      saved_override = saved_overrides.get(saved_entry_key)
+      if saved_override is None and saved_entry_key != base_entry_key:
+        saved_override = saved_overrides.get(base_entry_key)
+      if unmatched_override is None and saved_override is None:
+        unmatched_override, saved_override, conflict = original_edition_saved_choice(
+          original_keys[row_key], original_key_owners, saved_overrides,
+          unmatched_overrides, self.saved_override_book_ids)
+        if conflict:
+          row['match_source'] = row['original_match_source'] = 'saved choices need review'
+          row['saved_choice_conflict'] = True
+          state['skip_auto'] = True
+          self.update_import_match_progress(entry_index, total_entries,
+            f'Saved choices need review: {entry.get("title", "")}')
+          continue
       if unmatched_override:
         override_source = 'ignored' if unmatched_override.get('ignored') else 'explicit unmatched'
         row.update(self.import_review_row(
@@ -1295,9 +1355,6 @@ class MatchingMixin:
           total_entries,
           f'Matched {entry_index} of {total_entries} recipe entries...')
         continue
-      saved_override = saved_overrides.get(saved_entry_key)
-      if saved_override is None and saved_entry_key != base_entry_key:
-        saved_override = saved_overrides.get(base_entry_key)
       if saved_override is not None:
         state['saved_override'] = saved_override
         saved_book_ids = self.saved_override_book_ids(saved_override, available_ids=ids)

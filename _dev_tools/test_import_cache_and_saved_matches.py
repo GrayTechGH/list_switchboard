@@ -8,6 +8,7 @@ import tempfile
 import types
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 
 if globals().get('__file__') and __file__ != '<string>':
@@ -321,6 +322,56 @@ class StorageMixinTest(unittest.TestCase):
     loaded = self.mixin.import_cache_for_active_list('example list')
 
     self.assertEqual('example_list', loaded['list_id'])
+
+  def test_remove_saved_matches_preserves_imports_and_unrelated_lists(self):
+    for list_id, name in (
+        ('recipe_a', 'Example-List'), ('recipe_b', 'Example List'),
+        ('recipe_c', 'Example-List')):
+      self.mixin.write_import_cache(list_id, {'name': name, 'entries': []})
+      self.mixin.write_match_cache(list_id, [{'unmatched': True}])
+    imports = {
+      path: Path(path).read_bytes() for path in self.mixin.import_cache_paths()
+    }
+    unrelated = Path(self.mixin.match_cache_path('recipe_b'))
+    unrelated_before = unrelated.read_bytes()
+
+    self.mixin.remove_saved_matches_for_list('EXAMPLE-LIST')
+    self.mixin.remove_saved_matches_for_list('EXAMPLE-LIST')
+
+    self.assertFalse(Path(self.mixin.match_cache_path('recipe_a')).exists())
+    self.assertFalse(Path(self.mixin.match_cache_path('recipe_c')).exists())
+    self.assertEqual(unrelated_before, unrelated.read_bytes())
+    self.assertTrue(all(Path(path).read_bytes() == data for path, data in imports.items()))
+    self.assertEqual(['recipe_a', 'recipe_b', 'recipe_c', 'recipe_a', 'recipe_c'],
+                     self.mixin.invalidated)
+
+  def test_remove_saved_matches_resolves_registered_recipe_without_import_cache(self):
+    list_id = 'r_fantasy_top_standalone_novels_2024'
+    path = Path(self.mixin.match_cache_path(list_id))
+    path.write_text('{broken saved matches', encoding='utf-8')
+
+    self.mixin.remove_saved_matches_for_list('r/Fantasy Top Standalone Novels 2024')
+
+    self.assertFalse(path.exists())
+    self.assertEqual([list_id], self.mixin.invalidated)
+
+  def test_remove_saved_matches_does_not_guess_unknown_list_ids(self):
+    self.mixin.write_match_cache('custom_list', [{'matched_book_id': 123}])
+    path = Path(self.mixin.match_cache_path('custom_list'))
+    before = path.read_bytes()
+
+    self.mixin.remove_saved_matches_for_list('Custom List')
+    self.mixin.remove_saved_matches_for_list('')
+
+    self.assertEqual(before, path.read_bytes())
+
+  def test_remove_saved_matches_reports_delete_failure(self):
+    self.mixin.write_import_cache('example', {'name': 'Example List', 'entries': []})
+    self.mixin.write_match_cache('example', [{'matched_book_id': 123}])
+    with patch.object(storage.os, 'remove', side_effect=PermissionError('locked')):
+      with self.assertRaisesRegex(storage.ListSwitchboardError, 'saved matches.*could not be cleared'):
+        self.mixin.remove_saved_matches_for_list('Example List')
+    self.assertTrue(Path(self.mixin.match_cache_path('example')).exists())
 
   def test_cached_import_to_parsed_keeps_schema2_entries(self):
     cache = self.mixin.write_import_cache('Example List', {
@@ -927,7 +978,7 @@ class StorageMixinTest(unittest.TestCase):
       'No manual match overrides needed for "Example List". Direct matches will be recomputed.',
       self.mixin.status_messages[-1])
 
-  def test_save_active_matches_duplicate_position_uses_unique_author_match(self):
+  def test_save_active_matches_unique_author_without_work_identity_requires_a_choice(self):
     recipe = self.configure_save_active_matches_fixture()
     self.mixin.write_import_cache('Example List', {
       'name': 'Example List',
@@ -957,8 +1008,13 @@ class StorageMixinTest(unittest.TestCase):
     self.mixin.db = FakeDb()
     self.mixin.author_matches = lambda book_authors, imported_author: imported_author in ' '.join(book_authors)
     self.mixin.direct_match_candidates_for_entry = lambda *_args, **_kwargs: []
-    self.mixin._saved_match_entry_chooser = lambda *_args: self.fail(
-      'unique tied-position author match should not require prompting')
+    calls = []
+
+    def chooser(book_id, position, entries, _db):
+      calls.append((book_id, position, len(entries)))
+      return entries[0]
+
+    self.mixin._saved_match_entry_chooser = chooser
 
     self.mixin.save_active_matches_for_recipe(recipe)
 
@@ -966,6 +1022,45 @@ class StorageMixinTest(unittest.TestCase):
     self.assertEqual(1, len(loaded['matches']))
     self.assertEqual('vorkosigan saga|lois mcmaster bujold', loaded['matches'][0]['entry_key'])
     self.assertEqual(2, loaded['matches'][0]['matched_book_id'])
+    self.assertEqual([(2, '1', 1)], calls)
+
+  def test_save_active_matches_single_position_without_identity_needs_explicit_acceptance(self):
+    for accept in (False, True):
+      with self.subTest(accept=accept):
+        recipe = self.configure_save_active_matches_fixture()
+        self.mixin.write_match_cache('Example List', [])
+        self.mixin.active_book_ids_for_list = lambda _list_name: [1]
+        self.mixin.write_import_cache('Example List', {
+          'name': 'Example List',
+          'entries': [{'position': '1', 'title': 'Unrelated Work', 'authors': ['Jane Smith']}],
+          'match_series': False,
+        })
+        calls = []
+
+        def chooser(book_id, position, entries, _db):
+          calls.append((book_id, position, len(entries)))
+          return entries[0] if accept else None
+
+        self.mixin._saved_match_entry_chooser = chooser
+        self.mixin.save_active_matches_for_recipe(recipe)
+        self.assertEqual([(1, '1', 1)], calls)
+        saved = self.mixin.read_match_cache('Example List')['matches']
+        self.assertEqual(1 if accept else 0, len(saved))
+
+  def test_save_active_matches_preserves_saved_ownership_across_position_changes(self):
+    recipe = self.configure_save_active_matches_fixture()
+    self.mixin.active_book_ids_for_list = lambda _list_name: [2]
+    self.mixin.read_position_display = lambda *_args: ('7', 7.0)
+    directive = {
+      'entry_key': 'book two imported|author two',
+      'matched_book_id': 2,
+      'matched_book_ids': [2],
+    }
+    self.mixin.write_match_cache('Example List', [directive])
+    self.mixin._saved_match_entry_chooser = lambda *_args: self.fail(
+      'position changes must not discard or reconfirm existing saved ownership')
+    self.mixin.save_active_matches_for_recipe(recipe)
+    self.assertEqual([directive], self.mixin.read_match_cache('Example List')['matches'])
 
   def test_save_active_matches_reuses_existing_tied_position_match(self):
     recipe = self.configure_save_active_matches_fixture()

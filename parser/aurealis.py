@@ -14,6 +14,9 @@ Maintenance notes:
   without changing its signature (see SFADBParser refactor warning).
 - Retired category recipes can restrict SFADB year-link discovery when a
   historical heading was later reused for a different category lineage.
+- Named graphic/children's-work contributors, including illustrators, are
+  canonical credits. Use the shared bold-title/linked-people item reader so
+  comma-separated names, role labels and et al. cannot change title boundaries.
 """
 
 import re
@@ -69,9 +72,10 @@ class AurealisParser(StandardItemMixin, SFADBParser):
   YEAR_PAGE_URL = YEAR_PAGE_URL
   CATEGORY_BOUNDARIES = CATEGORY_BOUNDARIES
 
-  def __init__(self, skip_quoted=False, allowed_years=()):
+  def __init__(self, skip_quoted=False, allowed_years=(), prefer_linked_credits=False):
     self.skip_quoted = skip_quoted
     self.allowed_years = frozenset(allowed_years)
+    self.PREFER_LINKED_CREDITS = prefer_linked_credits
 
   def year_links(self, root, base_url):
     links = super().year_links(root, base_url)

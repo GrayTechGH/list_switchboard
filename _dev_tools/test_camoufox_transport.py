@@ -64,6 +64,24 @@ class FakeBrowser:
 
 class CamoufoxTransportTests(unittest.TestCase):
 
+  def test_wait_text_distinguishes_browser_startup_from_later_pages(self):
+    messages = []
+    browser = FakeBrowser(FakeResponse(b'<html>page</html>'))
+    transport = CamoufoxTransport(
+      browser_factory=lambda **_kw: browser, source_name='Goodreads',
+      wait_callback=messages.append)
+    try:
+      transport.fetch('https://www.goodreads.com/award/1')
+      self.assertTrue(messages)
+      self.assertTrue(all(message.startswith(('Starting Camoufox', 'Loading Goodreads'))
+        for message in messages))
+      messages.clear()
+      transport.fetch('https://www.goodreads.com/award/1?page=2')
+      self.assertTrue(messages)
+      self.assertTrue(all(message == 'Loading Goodreads page with Camoufox...' for message in messages))
+    finally:
+      transport.close()
+
   def test_unreadable_calibre_headers_keep_rendered_body_limit(self):
     class BrokenHeadersResponse:
       status = 200
@@ -114,28 +132,129 @@ class CamoufoxTransportTests(unittest.TestCase):
     try:
       self.assertIn('cf-turnstile', transport.fetch('https://www.reddit.com/r/bookclub/wiki/previous/'))
       self.assertEqual(('reddit.com',), calls[0]['warmup_excluded_domains'])
+      self.assertTrue(calls[0]['start_worker'])
     finally:
       transport.close()
 
   def test_outer_deadline_stops_a_stalled_startup(self):
     release = threading.Event()
+    initializing = threading.Event()
+    closed = threading.Event()
+    browser = FakeBrowser(FakeResponse(b'<html></html>'))
+    original_shutdown = browser.shutdown
+    def shutdown():
+      original_shutdown()
+      closed.set()
+    browser.shutdown = shutdown
+    def factory(**kwargs):
+      initializing.set()
+      release.wait(2)
+      return browser
+    transport = CamoufoxTransport(
+      browser_factory=factory,
+      wait_callback=lambda _message: initializing.wait(1))
+    try:
+      with patch('camoufox_transport.STARTUP_ALLOWANCE_SECONDS', -1):
+        with self.assertRaisesRegex(CamoufoxFetchError, 'browser startup exceeded'):
+          transport.fetch('https://www.librarything.com/award/1', timeout=60)
+    finally:
+      release.set()
+    self.assertTrue(closed.wait(1))
+    self.assertTrue(transport.closed)
+    self.assertEqual(1, browser.shutdown_calls)
+
+  def test_reused_browser_request_does_not_get_startup_allowance(self):
+    release = threading.Event()
+    browser = FakeBrowser(FakeResponse(b'<html></html>'), release)
+    now = [0.0]
+    transport = CamoufoxTransport(wait_callback=lambda message: now.__setitem__(0, 76.0))
+    transport.browser = browser
+    try:
+      with patch('camoufox_transport.time.monotonic', side_effect=lambda: now[0]):
+        with self.assertRaisesRegex(CamoufoxFetchError, 'request exceeded'):
+          transport.fetch('https://www.isfdb.org/cgi-bin/ay.cgi?61+2021', timeout=60)
+      self.assertTrue(transport.closed)
+      self.assertTrue(release.is_set())
+    finally:
+      transport.close()
+
+  def test_first_page_request_gets_own_deadline_after_browser_startup(self):
+    release = threading.Event()
+    initialized = threading.Event()
     opened = threading.Event()
     browser = FakeBrowser(FakeResponse(b'<html></html>'), release)
     original_open = browser.open
-
-    def open_browser(*args, **kwargs):
+    def open_page(*args, **kwargs):
       opened.set()
       return original_open(*args, **kwargs)
+    browser.open = open_page
+    def factory(**kwargs):
+      initialized.wait(2)
+      return browser
+    now = [0.0]
+    messages = []
+    def wait(message):
+      messages.append(message)
+      if message.startswith('Starting'):
+        now[0] = 5.0
+        initialized.set()
+        opened.wait(1)
+      else:
+        now[0] = 81.0
+    transport = CamoufoxTransport(browser_factory=factory, wait_callback=wait, poll_interval=0.001)
+    try:
+      with patch('camoufox_transport.time.monotonic', side_effect=lambda: now[0]):
+        with self.assertRaisesRegex(CamoufoxFetchError, 'request exceeded'):
+          transport.fetch('https://www.isfdb.org/cgi-bin/awardtype.cgi?61', timeout=60)
+      self.assertTrue(any(message.startswith('Starting') for message in messages))
+      self.assertTrue(any(message.startswith('Loading') for message in messages))
+    finally:
+      initialized.set()
+      transport.close()
 
-    browser.open = open_browser
-    transport = CamoufoxTransport(
-      browser_factory=lambda **_kw: browser,
-      wait_callback=lambda _message: opened.wait(1))
-    with patch('camoufox_transport.STARTUP_ALLOWANCE_SECONDS', -1):
-      with self.assertRaisesRegex(CamoufoxFetchError, 'time limit'):
-        transport.fetch('https://www.librarything.com/award/1', timeout=0)
-    self.assertTrue(transport.closed)
-    self.assertEqual(1, browser.shutdown_calls)
+  def test_navigation_timeout_allows_calibre_dom_recovery_before_outer_deadline(self):
+    release = threading.Event()
+    browser = FakeBrowser(FakeResponse(b'<html>recovered</html>'), release)
+    now = [0.0]
+    calls = []
+    def wait(message):
+      calls.append(message)
+      now[0] = 61.0
+      if len(calls) > 1:
+        release.set()
+    transport = CamoufoxTransport(wait_callback=wait, poll_interval=0.001)
+    transport.browser = browser
+    try:
+      with patch('camoufox_transport.time.monotonic', side_effect=lambda: now[0]):
+        self.assertEqual('<html>recovered</html>', transport.fetch('https://www.isfdb.org/', timeout=60))
+      self.assertEqual(60, browser.open_calls[0][1])
+      self.assertFalse(transport.closed)
+    finally:
+      transport.close()
+
+  def test_worker_readiness_precedes_browser_publication_and_failure_closes_it(self):
+    for fail in (False, True):
+      browser = FakeBrowser(FakeResponse(b'<html>ready</html>'))
+      transport = CamoufoxTransport(browser_factory=lambda **kwargs: browser)
+      calls = []
+      def ready():
+        calls.append('ready')
+        self.assertIsNone(transport.browser)
+        if fail:
+          raise RuntimeError('warmup failed')
+        return 'browser fingerprint'
+      browser.user_agent = ready
+      try:
+        if fail:
+          with self.assertRaisesRegex(CamoufoxFetchError, 'warmup failed'):
+            transport.fetch('https://www.isfdb.org/')
+          self.assertIsNone(transport.browser)
+        else:
+          self.assertEqual('<html>ready</html>', transport.fetch('https://www.isfdb.org/'))
+        self.assertEqual(['ready'], calls)
+      finally:
+        transport.close()
+      self.assertEqual(1, browser.shutdown_calls)
 
   def test_cloudflare_script_on_usable_award_page_is_not_a_challenge(self):
     from camoufox_transport import is_challenge_payload

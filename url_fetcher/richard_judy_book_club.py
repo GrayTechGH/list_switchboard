@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 # vim:fileencoding=UTF-8:ts=2:sw=2:sta:et:sts=2:ai
 
+try:
+  from calibre_plugins.list_switchboard.http_policy import random_user_agent
+except ImportError:
+  from http_policy import random_user_agent
+
 from .generic import (
   CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS, UrlFetcherError, UrlFetcherGeneric,
 )
@@ -13,15 +18,7 @@ class UrlFetcherRichardJudyBookClub(UrlFetcherGeneric):
   URL = 'https://www.tgjonesonline.co.uk/books/book-club'
   BOOK_NOTIFICATION_URL = (
     'https://www.booknotification.com/book-clubs/richard-judy-book-club/')
-  # BookNotification rejects the plugin's older default Chrome identity with a
-  # successful "Browser Update Required" page instead of the history table.
-  BOOK_NOTIFICATION_USER_AGENT = (
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
-    'AppleWebKit/537.36 (KHTML, like Gecko) '
-    'Chrome/150.0.0.0 Safari/537.36'
-  )
   USER_AGENT_RETRIES = 2
-  _session_book_notification_user_agent = ''
   order = 53
   FILTER_CATEGORIES = (CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS,)
   options = {'match_series': False}
@@ -42,9 +39,7 @@ class UrlFetcherRichardJudyBookClub(UrlFetcherGeneric):
     if url != self.BOOK_NOTIFICATION_URL:
       return super().fetch_url(fetch_url, url)
     tried = set()
-    user_agent = (
-      type(self)._session_book_notification_user_agent or
-      self.BOOK_NOTIFICATION_USER_AGENT)
+    user_agent = self.random_user_agent()
     html = self.fetch_with_user_agent(fetch_url, url, user_agent)
     tried.add(user_agent)
     if not self.browser_update_required(html):
@@ -57,7 +52,6 @@ class UrlFetcherRichardJudyBookClub(UrlFetcherGeneric):
       tried.add(user_agent)
       html = self.fetch_with_user_agent(fetch_url, url, user_agent)
       if not self.browser_update_required(html):
-        type(self)._session_book_notification_user_agent = user_agent
         return html
     return html
 
@@ -70,11 +64,7 @@ class UrlFetcherRichardJudyBookClub(UrlFetcherGeneric):
       return fetch_url(url)
 
   def random_user_agent(self):
-    try:
-      from calibre.utils.random_ua import random_common_chrome_user_agent
-      return random_common_chrome_user_agent()
-    except Exception:
-      return ''
+    return random_user_agent()
 
   def browser_update_required(self, html):
     response_text = (

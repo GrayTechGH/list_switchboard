@@ -2,9 +2,10 @@
 # vim:fileencoding=UTF-8:ts=2:sw=2:sta:et:sts=2:ai
 
 from .generic import CATEGORY_SCIENCE_FICTION, UrlFetcherGeneric
+from .spsfc_transport import SPSFCFetchPolicy
 
 
-SPSFC_AWARDS_URL = 'https://spsfc.space/2025/08/07/and-the-spsfc-4-winner-is/'
+SPSFC_AWARDS_URL = 'https://spsfc.space/2026/10/08/the-spsfc-5-winner-is/'
 
 
 class UrlFetcherSPSFCNovelFinalists(UrlFetcherGeneric):
@@ -26,6 +27,10 @@ class UrlFetcherSPSFCNovelFinalists(UrlFetcherGeneric):
       from parser.spsfc import SPSFCAwardsParser
 
     return SPSFCAwardsParser()
+
+  def fetch_and_parse(self, fetch_url, *args, **kwargs):
+    policy = SPSFCFetchPolicy(fetch_url, self.parser(), log=kwargs.get('log'))
+    return super().fetch_and_parse(policy.fetch, *args, **kwargs)
 
   def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
     return self.parser().parse(

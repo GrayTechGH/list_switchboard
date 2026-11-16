@@ -186,6 +186,7 @@ class UrlFetcherBritishFantasyHorrorNovel(UrlFetcherBritishFantasy):
     'horror novel',
     'best horror novel',
     'horror novel the august derleth award',
+    'horror novel august derleth award',
     'the august derleth award for best horror novel',
     'august derleth award horror novel',
   )
@@ -201,6 +202,7 @@ class UrlFetcherBritishFantasyFantasyNovel(UrlFetcherBritishFantasy):
     'fantasy novel',
     'best fantasy novel',
     'fantasy novel the robert holdstock award',
+    'fantasy novel robert holdstock award',
     'the robert holdstock award for best fantasy novel',
     'robert holdstock award fantasy novel',
   )

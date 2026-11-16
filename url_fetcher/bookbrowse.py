@@ -6,6 +6,12 @@
 from urllib.parse import urlparse
 
 try:
+  from calibre_plugins.list_switchboard.http_policy import random_user_agent
+except ImportError:
+  from http_policy import random_user_agent
+
+
+try:
   from calibre.utils.https import get_https_resource_securely as calibre_https_fetch
 except ImportError:
   calibre_https_fetch = None
@@ -28,10 +34,6 @@ class UrlFetcherBookBrowseOnlineBookClub(UrlFetcherGeneric):
     CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS,
   )
   options = {'match_series': False}
-  USER_AGENT = (
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
-    'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36'
-  )
   RESPONSE_MAX_BYTES = 10 * 1024 * 1024
 
   def source_choices(self):
@@ -58,7 +60,7 @@ class UrlFetcherBookBrowseOnlineBookClub(UrlFetcherGeneric):
       # a current browser identity. Calibre's secure HTTPS helper uses a
       # different native transport and succeeds anonymously on the same URLs.
       headers = {
-        'User-Agent': self.USER_AGENT,
+        'User-Agent': random_user_agent(),
         'Accept': 'text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8',
         'Accept-Language': 'en-US,en;q=0.9',
       }
@@ -76,6 +78,7 @@ class UrlFetcherBookBrowseOnlineBookClub(UrlFetcherGeneric):
         # A migrated brief can redirect to an official /reviews/ URL whose
         # redirect request is rejected while the same final URL succeeds as a
         # fresh Calibre HTTPS request.
+        headers['User-Agent'] = random_user_agent()
         payload = calibre_https_fetch(
           redirect_url, cacerts=None, timeout=30, headers=headers)
       if len(payload) > self.RESPONSE_MAX_BYTES:

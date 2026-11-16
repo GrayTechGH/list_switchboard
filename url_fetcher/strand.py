@@ -3,13 +3,11 @@
 
 from .generic import CATEGORY_CRIME_MYSTERY_THRILLER, UrlFetcherGeneric
 from .librarything_fallback import (
-  LIBRARYTHING_USER_AGENT,
   LibraryThingFetchPolicyMixin,
 )
 
 
 STRAND_URL = 'https://www.librarything.com/award/1380/The-Strand-Critics-Award'
-STRAND_USER_AGENT = LIBRARYTHING_USER_AGENT
 
 
 class UrlFetcherStrandAward(LibraryThingFetchPolicyMixin, UrlFetcherGeneric):

@@ -6,6 +6,7 @@ Seiun Award parser for SFADB year pages.
 
 Maintenance notes:
 - SFADB exposes only foreign/translated Seiun categories.
+- Japanese Long Work and Comic use the shared ISFDB reader; SFADB is disabled.
 - This recipe intentionally imports only the long-form book-matchable category
   labels and excludes translated short story/short form categories.
 - Seiun rows use 'Title, Author' order without publisher parentheticals, which

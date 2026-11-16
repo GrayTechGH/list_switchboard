@@ -6,15 +6,17 @@ Arthur C. Clarke Award parsers.
 
 Maintenance notes:
 - The official Clarke page is the primary source. It exposes winners and
-  shortlists on one page as year groups with "Title - Author" rows.
-- SFADB exposes one page per award year with Winner, optional Runner-up, and
-  Shortlist sections. It stays as the replacement fallback and is the only
-  source here that preserves historical runner-up labels.
+  shortlists in its #about section as year groups with "Title - Author" rows.
+  Preserve that navigation fragment in provenance so browsers reveal the list.
+- SFADB exposes one page per award year with categoryblock sections for Winner,
+  optional Runner-up/Third Place, and Shortlist. Read title/person boundaries
+  structurally and exclude translator credits. Plain heading/row pages remain
+  a legacy fallback only when no category blocks exist. SFADB stays the
+  replacement source and preserves its historical placing labels.
 - The award is always for a novel, so there is no category-selection layer.
-  Clarke year pages use a section-result model (headings map to result strings)
-  rather than the category/boundary model shared by other SFADB parsers.
-  SFADBParser.parse() and year_links() are reused; parse_year() is overridden
-  because the per-page structure differs from the standard category pattern.
+  Clarke configures the shared SFADB result-section model (headings map to
+  result strings) rather than selecting one award-category block. Year parsing,
+  canonical entry construction and positioning stay in SFADBParser.
 """
 
 import re
@@ -22,20 +24,22 @@ import re
 from lxml import html as lxml_html
 
 try:
-  from calibre_plugins.list_switchboard.parser.award_base import AwardParserBase
+  from calibre_plugins.list_switchboard.parser.award_base import (
+    AwardParserBase, split_title_author as award_split_title_author,
+  )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
   from calibre_plugins.list_switchboard.parser.sfadb_base import (
     SFADBParser,
     normalize_heading, normalize_line, strip_publication_notes,
-    html_root, xpath_text_lines, assign_positions,
+    node_text, assign_positions,
   )
 except ImportError:
-  from .award_base import AwardParserBase
+  from .award_base import AwardParserBase, split_title_author as award_split_title_author
   from .generic import position_sort_key
   from .sfadb_base import (
     SFADBParser,
     normalize_heading, normalize_line, strip_publication_notes,
-    html_root, xpath_text_lines, assign_positions,
+    node_text, assign_positions,
   )
 
 
@@ -46,6 +50,8 @@ YEAR_PAGE_URL = re.compile(r'/Arthur_C_Clarke_Award_(\d{4})$')
 OFFICIAL_YEAR = re.compile(r'^((?:19|20)\d{2})(.*)$')
 OFFICIAL_DASH_SEPARATOR = re.compile(r'\s+[-\u2013\u2014]\s*|\s*[-\u2013\u2014]\s+')
 OFFICIAL_WINNER_SUFFIX = re.compile(r'\s*(?:[-\u2013\u2014]\s*)?winner\s*$', re.I)
+OFFICIAL_TRANSLATOR_CREDIT = re.compile(
+  r'(?:^|\s*[,;]\s*|\s+)translated\s+by\b.*$', re.I)
 OFFICIAL_STOP_TEXT = re.compile(
   r'\s*[-\u2013\u2014_]*\s*(?:to submit titles|contact|submissions for the '
   r'publishing year|the arthur c\.?\s*clarke award is administered).*$',
@@ -54,6 +60,7 @@ SECTION_RESULTS = {
   'winner': 'winner',
   'runner up': 'runner-up',
   'runner-up': 'runner-up',
+  'third place': 'third-place',
   'shortlist': 'nominee',
 }
 BOUNDARY_HEADINGS = frozenset({
@@ -69,19 +76,8 @@ OFFICIAL_STOP_HEADINGS = (
 
 def _split_title_author(text):
   work_text = strip_publication_notes(text)
-  if ',' not in work_text:
-    return '', ''
-  title, author = work_text.rsplit(',', 1)
-  return title.strip(), author.strip()
-
-
-def _is_boundary(line):
-  heading = normalize_heading(line)
-  if not heading:
-    return False
-  if heading in BOUNDARY_HEADINGS:
-    return True
-  return heading.startswith('this page last updated')
+  work_text = re.sub(r',\s*translated\s+by\b.*$', '', work_text, flags=re.I).strip()
+  return award_split_title_author(work_text)
 
 
 def _split_official_row(text):
@@ -127,6 +123,8 @@ class OfficialClarkeParser(AwardParserBase):
     markers become winners; all other rows in the year group are nominees.
   - Parsing starts at the "Winners and shortlists" marker so homepage copy,
     judges, and contact text do not become import rows.
+  - Explicit trailing translator credits are excluded after isolating the
+    work author; translator wording inside a title must remain intact.
   """
 
   AWARD_NAME = AWARD_NAME
@@ -187,6 +185,7 @@ class OfficialClarkeParser(AwardParserBase):
     result = 'winner' if OFFICIAL_WINNER_SUFFIX.search(text) else 'nominee'
     text = OFFICIAL_WINNER_SUFFIX.sub('', text).strip(' -\u2013\u2014')
     title, author = _split_official_row(text)
+    author = OFFICIAL_TRANSLATOR_CREDIT.sub('', author).strip()
     if not title or not author:
       return None
     return {
@@ -200,8 +199,8 @@ class ClarkeParser(SFADBParser):
 
   AWARD_NAME = AWARD_NAME
   YEAR_PAGE_URL = YEAR_PAGE_URL
-  # Not used directly — Clarke pages use section headings, not category/boundary.
-  CATEGORY_BOUNDARIES = frozenset()
+  CATEGORY_BOUNDARIES = BOUNDARY_HEADINGS
+  RESULT_SECTIONS = SECTION_RESULTS
 
   def parse(self, overview_html, base_url, name=None, category=None,
             category_aliases=None, fetch_url=None, log=None, progress=None):
@@ -213,31 +212,25 @@ class ClarkeParser(SFADBParser):
       category_aliases=(),
       fetch_url=fetch_url, log=log, progress=progress)
 
-  def parse_year(self, html, source_url, year, category, category_aliases):
-    rows = []
-    result = None
-    for line in xpath_text_lines(html_root(html)):
-      heading = normalize_heading(line)
-      if heading in SECTION_RESULTS:
-        result = SECTION_RESULTS[heading]
-        continue
-      if result is None:
-        continue
-      if _is_boundary(line):
-        result = None
-        continue
-      parsed = self.parse_item(line)
-      if parsed is None:
-        continue
-      parsed['result'] = result
-      parsed.update({
-        'source_url': source_url,
-        'award_year': str(year),
-        'award': self.AWARD_NAME,
-        'category': CATEGORY_NAME,
-      })
-      rows.append(parsed)
-    return assign_positions(rows, year)
+  def parse_item_node(self, node):
+    title_nodes = node.xpath('(./b | ./strong)[1]')
+    if not title_nodes:
+      return self.parse_item(node_text(node))
+    title_node = title_nodes[0]
+    title = strip_publication_notes(node_text(title_node)).strip(' "\u201c\u201d,')
+    authors = []
+    credit = title_node.tail or ''
+    for sibling in title_node.itersiblings():
+      if re.search(r'\btranslated\s+by\b', credit, re.I):
+        break
+      if sibling.tag == 'a':
+        author = normalize_line(node_text(sibling)).strip(' ,')
+        if author and author not in authors:
+          authors.append(author)
+      credit += ' ' + node_text(sibling) + ' ' + (sibling.tail or '')
+    if not title or not authors:
+      return self.parse_item(node_text(node))
+    return {'title': title, 'authors': authors}
 
   def parse_item(self, text):
     text = normalize_line(text)

@@ -61,6 +61,10 @@ except ImportError:
   from storage import entry_key
 
 
+class ActiveAddCancelled(Exception):
+  pass
+
+
 CACHED_ACTIVE_ADD_BUTTON_MATCH_EXACT = 'exact'
 CACHED_ACTIVE_ADD_BUTTON_MATCH_PARTIAL = 'partial'
 CACHED_ACTIVE_ADD_BUTTON_MATCH_NONE = 'none'
@@ -391,7 +395,11 @@ class ListStateMixin:
 
   def _add_selected_to_active(self, force_match_review=False):
     started = perf_counter()
-    ids = self.selected_ids_with_series() if prefs.get('include_calibre_series', False) else self.selected_book_ids()
+    ids = self.selected_book_ids()
+    if not self.check_selected_book_limit(ids):
+      return
+    if prefs.get('include_calibre_series', False):
+      ids = self.selected_ids_with_series(ids)
     self.debug_active_add_timing(
       'selection and series expansion', started,
       books=len(ids), include_series=bool(prefs.get('include_calibre_series', False)))
@@ -408,8 +416,28 @@ class ListStateMixin:
       f'Add Selected timing: {stage} {perf_counter() - started:.3f}s'
       + (f' {details}' if details else ''), section='selection')
 
-  def selected_ids_with_series(self):
-    return self.expand_ids_with_series(self.selected_book_ids())
+  def check_selected_book_limit(self, ids):
+    try:
+      limit = int(prefs.get('max_selected_books', 20))
+    except (TypeError, ValueError):
+      limit = 20
+    if limit < 1:
+      limit = 20
+    count = len(set(ids))
+    if count <= limit:
+      return True
+    error_dialog(
+      self.gui, 'Too many selected books',
+      f'This action includes {count} books; the maximum is {limit}.\n\n'
+      'Change "Maximum selected books" in List Switchboard > Maintenance > Configure.\n'
+      'Books added through Include series count toward this limit.', show=True)
+    return False
+
+  def selected_ids_with_series(self, ids=None):
+    selected_ids = list(dict.fromkeys(self.selected_book_ids() if ids is None else ids))
+    selected_set = set(selected_ids)
+    expanded_ids = self.expand_ids_with_series(selected_ids)
+    return selected_ids + [book_id for book_id in expanded_ids if book_id not in selected_set]
 
   def expand_ids_with_series(self, ids):
     ids = sorted(set(ids))
@@ -433,6 +461,8 @@ class ListStateMixin:
     return sorted(expanded)
 
   def add_book_ids_to_active(self, ids, force_match_review=False):
+    if not self.check_selected_book_limit(ids):
+      return
     total_started = stage_started = perf_counter()
     active = self.current_active()
     if active is None:
@@ -459,8 +489,12 @@ class ListStateMixin:
     if cache:
       self.debug_storage_cached_active_add_start(
         active, cache.get('list_id') or '', len(updates), len(cache.get('entries') or []))
-      updates, active_index_updates = self.cached_active_add_updates(
-        active, updates, cache, force_match_review=force_match_review)
+      try:
+        updates, active_index_updates = self.cached_active_add_updates(
+          active, updates, cache, force_match_review=force_match_review)
+      except ActiveAddCancelled:
+        self.status_message(f'Adding books to "{active}" cancelled.')
+        return
     else:
       self.debug_storage_import_cache(active, 'miss for active add', reason='no cache for active list')
       active_index_updates = self.added_active_index_updates(active, updates)
@@ -506,8 +540,9 @@ class ListStateMixin:
         active_list_name=active)
       if entry is None and index_value is None:
         self.debug_storage_cached_active_add_decision(
-          book_id, 'skipped no cached entry/index selected')
-        continue
+          book_id, 'cancelled cached Active List add')
+        # Choices and overrides are staged until every book has been reviewed.
+        raise ActiveAddCancelled()
       updates[book_id] = active_updates[book_id]
       if index_value is None:
         index_value = default_index
@@ -1008,7 +1043,8 @@ class ListStateMixin:
       self.create_new_active_list(selected_ids=self.selected_book_ids())
       return
     _counts, stored = self.library_state()
-    choices = [name for name in stored if normalize_key(name) != normalize_key(active)]
+    choices = sort_names(
+      name for name in stored if normalize_key(name) != normalize_key(active))
     if not choices:
       self.status_message('There are no Stored Lists to switch to.')
       return
@@ -1076,6 +1112,8 @@ class ListStateMixin:
 
   def _create_new_active_list(self, selected_ids=None):
     selected_ids = selected_ids if selected_ids is not None else self.selected_book_ids()
+    if not self.check_selected_book_limit(selected_ids):
+      return None
     name, ok = QInputDialog.getText(self.gui, 'Create New Active List', 'New Active List name:')
     if not ok:
       return None
@@ -1196,6 +1234,7 @@ class ListStateMixin:
       return
     if not question_dialog(self.gui, 'Remove Active List',
       'This removes the list name from the configured metadata field.\n'
+      'Saved match overrides for this list will also be cleared.\n'
       'No books or book files will be deleted.\n\n'
       'This change cannot be undone by List Switchboard.\n'
       'You can manually edit the configured metadata fields afterward if needed.'):
@@ -1217,6 +1256,7 @@ class ListStateMixin:
       active_updates=active_updates,
       stored_updates=stored_updates,
       finishing_message=f'Removed Active List "{active}".')
+    self.remove_saved_matches_for_list(active)
     self.invalidate_cached_active_add_import_map()
     self.status_message(f'Removed Active List "{active}".')
 
@@ -1284,13 +1324,17 @@ class ListStateMixin:
       name = d.choice
     if not question_dialog(self.gui, 'Remove Stored List',
       f'Remove "{name}" from Stored Lists?\n\n'
-      'This only removes the list name from the configured Stored Lists Field.\n'
+      'This removes the list name from the configured Stored Lists Field.\n'
+      'Saved match overrides will be cleared if this list is no longer active.\n'
       'No books or book files will be deleted.\n\n'
       'This change cannot be undone by List Switchboard.'):
       return
     key = normalize_key(name)
     stored_updates = {}
+    still_active = False
     for book_id in self.all_book_ids():
+      if normalize_key(self.read_field(prefs['active_list_field'], book_id)) == key:
+        still_active = True
       raw_stored = self.read_field(prefs['stored_lists_field'], book_id)
       stored_updates[book_id] = rebuild_stored_lists(
         raw_stored, lambda entries: (entry for entry in entries if normalize_key(entry) != key))
@@ -1299,6 +1343,8 @@ class ListStateMixin:
       f'Removing Stored List "{name}"...',
       stored_updates=stored_updates,
       finishing_message=f'Removed Stored List "{name}".')
+    if not still_active:
+      self.remove_saved_matches_for_list(name)
     self.status_message(f'Removed Stored List "{name}".')
 
   def resolve_active_conflict(self, grouped):

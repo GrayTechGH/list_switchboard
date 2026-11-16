@@ -13,6 +13,11 @@ Maintenance notes:
 """
 
 import argparse
+
+try:
+  from _dev_tools.calibre_user_agent import random_user_agent
+except ImportError:
+  from calibre_user_agent import random_user_agent
 import datetime as _datetime
 import json
 import re
@@ -24,10 +29,6 @@ from urllib.parse import quote_plus
 ROOT = Path(__file__).resolve().parents[1]
 FETCHER_DIR = ROOT / 'url_fetcher'
 DEFAULT_OUTPUT = ROOT / '_dev_tools' / 'Scraps Cache' / 'librarything'
-USER_AGENT = (
-  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
-  'AppleWebKit/537.36 Chrome/125 Safari/537.36'
-)
 
 
 FUTURE_AWARDS = (
@@ -368,7 +369,7 @@ def curl_download(url, output_path):
     '--show-error',
     '--compressed',
     '-A',
-    USER_AGENT,
+    random_user_agent(),
     '--output',
     str(output_path),
     url,

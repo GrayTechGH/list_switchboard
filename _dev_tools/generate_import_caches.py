@@ -25,6 +25,7 @@ if str(ROOT) not in sys.path:
   sys.path.insert(0, str(ROOT))
 
 
+from _dev_tools.calibre_user_agent import random_user_agent  # noqa: E402
 from storage import build_import_cache_data, safe_list_id  # noqa: E402
 from url_fetcher import available_url_fetchers  # noqa: E402
 
@@ -57,11 +58,7 @@ def load_source_text(source):
   if '://' not in source_text:
     return Path(source_text).read_text(encoding='utf-8')
   headers = {
-    'User-Agent': (
-      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
-      'AppleWebKit/537.36 (KHTML, like Gecko) '
-      'Chrome/124.0.0.0 Safari/537.36'
-    ),
+    'User-Agent': random_user_agent(),
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
     'Accept-Language': 'en-US,en;q=0.9',
     'Connection': 'close',

@@ -29,7 +29,7 @@ class SavedMatchChoiceDialog(QDialog):
     layout = QVBoxLayout()
     self.setLayout(layout)
     layout.addWidget(QLabel(
-      'Multiple imported entries share this tied position.\n'
+      'The existing position does not establish which imported entry matches.\n'
       'Choose the imported entry that matches this Calibre book, or skip it.',
       self))
 

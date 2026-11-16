@@ -77,6 +77,9 @@ sys.modules.setdefault('calibre', calibre)
 sys.modules.setdefault('calibre.ebooks', calibre_ebooks)
 sys.modules.setdefault('calibre.ebooks.metadata', calibre_ebooks_metadata)
 sys.modules.setdefault('calibre.gui2', calibre_gui2)
+random_ua = types.ModuleType('calibre.utils.random_ua')
+random_ua.random_common_chrome_user_agent = lambda: 'Calibre Generated Agent'
+sys.modules.setdefault('calibre.utils.random_ua', random_ua)
 
 plugin_package = types.ModuleType('calibre_plugins')
 list_switchboard_package = types.ModuleType('calibre_plugins.list_switchboard')
@@ -1060,13 +1063,13 @@ class ImportMatchingTest(unittest.TestCase):
     with self.assertRaises(main.ImportCancelledError):
       core.fetch_and_parse_recipe(recipe)
 
-  def test_fetch_headers_accept_optional_user_agent(self):
+  def test_fetch_headers_generate_a_fresh_calibre_agent_per_request(self):
     core = object.__new__(main.ListSwitchboardCore)
-
-    self.assertEqual(main.DEFAULT_USER_AGENT, core.fetch_headers()['User-Agent'])
-    self.assertEqual(
-      'Custom Agent',
-      core.fetch_headers(user_agent='Custom Agent')['User-Agent'])
+    with patch.object(random_ua, 'random_common_chrome_user_agent',
+               side_effect=['Generated Agent 1', 'Generated Agent 2']) as generate:
+      self.assertEqual('Generated Agent 1', core.fetch_headers()['User-Agent'])
+      self.assertEqual('Generated Agent 2', core.fetch_headers()['User-Agent'])
+    self.assertEqual(2, generate.call_count)
 
   def test_barnes_noble_fetcher_uses_supported_browser_identity(self):
     from url_fetcher.barnes_noble_book_club import UrlFetcherBarnesNobleBookClub
@@ -1085,33 +1088,22 @@ class ImportMatchingTest(unittest.TestCase):
       calls.append((url, user_agent))
       return accepted if user_agent == 'Generated Agent 2' else rejected
 
-    UrlFetcherBarnesNobleBookClub._session_user_agent = ''
-    try:
-      fetcher = UrlFetcherBarnesNobleBookClub()
-      fetcher.random_user_agent = lambda: next(generated)
-      self.assertEqual(accepted, fetcher.fetch_url(fetch_url, fetcher.URL))
-
-      self.assertEqual(fetcher.URL, calls[0][0])
-      self.assertIn('Chrome/150.', calls[0][1])
-      self.assertEqual(
-        ['Generated Agent 1', 'Generated Agent 2'],
-        [user_agent for _url, user_agent in calls[1:]])
-      self.assertEqual(
-        'Generated Agent 2', UrlFetcherBarnesNobleBookClub._session_user_agent)
-
-      session_calls = []
-      session_fetcher = UrlFetcherBarnesNobleBookClub()
-      session_fetcher.fetch_url(
-        lambda url, user_agent=None: session_calls.append((url, user_agent)) or accepted,
-        session_fetcher.URL)
-      self.assertEqual('Generated Agent 2', session_calls[0][1])
-
-      with self.assertRaises(UrlFetcherError) as caught:
-        fetcher.parse(rejected)
-      self.assertIn('User-Agent version needs to be updated', str(caught.exception))
-      self.assertIn('Calibre-generated browser identities', str(caught.exception))
-    finally:
-      UrlFetcherBarnesNobleBookClub._session_user_agent = ''
+    fetcher = UrlFetcherBarnesNobleBookClub()
+    fetcher.random_user_agent = lambda: next(generated)
+    self.assertEqual(accepted, fetcher.fetch_url(fetch_url, fetcher.URL))
+    self.assertEqual(
+      ['Generated Agent 1', 'Generated Agent 2'],
+      [agent for _url, agent in calls])
+    session_fetcher = UrlFetcherBarnesNobleBookClub()
+    session_fetcher.random_user_agent = lambda: 'Fresh Agent'
+    session_calls = []
+    session_fetcher.fetch_url(
+      lambda url, **kwargs: session_calls.append(kwargs) or accepted,
+      session_fetcher.URL)
+    self.assertEqual([{'user_agent': 'Fresh Agent'}], session_calls)
+    with self.assertRaises(UrlFetcherError) as caught:
+      fetcher.parse(rejected)
+    self.assertIn('Calibre-generated browser identities', str(caught.exception))
 
   def test_decode_url_response_rejects_oversized_declared_length_without_reading(self):
     class Headers:
@@ -1362,8 +1354,7 @@ class ImportMatchingTest(unittest.TestCase):
     self.assertIn('calibre browser available=', message)
     self.assertTrue(any('SSL fetch diagnostics:' in item[1] for item in logged))
 
-  def test_isfdb_fallback_attempt_passes_user_agent_to_fetch_url(self):
-    from url_fetcher.isfdb_fallback import ISFDB_USER_AGENT
+  def test_isfdb_fallback_uses_default_random_agent_transport(self):
     from url_fetcher.locus import UrlFetcherLocusAnnualSFNovel
 
     fetcher = UrlFetcherLocusAnnualSFNovel()
@@ -1380,7 +1371,7 @@ class ImportMatchingTest(unittest.TestCase):
     attempt.fetch_url(fetch_url)('https://www.isfdb.org/cgi-bin/awardtype.cgi?28')
 
     self.assertEqual([
-      ('https://www.isfdb.org/cgi-bin/awardtype.cgi?28', ISFDB_USER_AGENT)
+      ('https://www.isfdb.org/cgi-bin/awardtype.cgi?28', None)
     ], calls)
 
   def test_sword_and_laser_parser_accepts_raw_wikitext_table(self):
@@ -1974,7 +1965,7 @@ class ImportMatchingTest(unittest.TestCase):
       [fetcher.URL, fetcher.BOOK_NOTIFICATION_URL],
       [url for url, _user_agent in attempts])
     self.assertIsNone(attempts[0][1])
-    self.assertIn('Chrome/150.', attempts[1][1])
+    self.assertEqual('Calibre Generated Agent', attempts[1][1])
     self.assertEqual(['Summer Island'], [entry['title'] for entry in parsed['entries']])
     self.assertEqual(fetcher.BOOK_NOTIFICATION_URL, parsed['source']['url'])
 
@@ -2001,18 +1992,11 @@ class ImportMatchingTest(unittest.TestCase):
         return '<html><h1>Richard and Judy Book Club</h1></html>'
       return accepted if user_agent == 'Generated Agent 2' else rejected
 
-    UrlFetcherRichardJudyBookClub._session_book_notification_user_agent = ''
-    try:
-      parsed = fetcher.fetch_and_parse(fetch_url)
-      self.assertEqual(['Summer Island'], [entry['title'] for entry in parsed['entries']])
-      self.assertEqual(
-        [fetcher.BOOK_NOTIFICATION_USER_AGENT, 'Generated Agent 1', 'Generated Agent 2'],
-        [user_agent for url, user_agent in calls if url == fetcher.BOOK_NOTIFICATION_URL])
-      self.assertEqual(
-        'Generated Agent 2',
-        UrlFetcherRichardJudyBookClub._session_book_notification_user_agent)
-    finally:
-      UrlFetcherRichardJudyBookClub._session_book_notification_user_agent = ''
+    parsed = fetcher.fetch_and_parse(fetch_url)
+    self.assertEqual(['Summer Island'], [entry['title'] for entry in parsed['entries']])
+    self.assertEqual(
+      ['Generated Agent 1', 'Generated Agent 2'],
+      [agent for url, agent in calls if url == fetcher.BOOK_NOTIFICATION_URL])
 
   def test_service95_fetcher_follows_monthly_book_detail_links(self):
     from url_fetcher.service95_book_club import UrlFetcherService95BookClub
@@ -2907,7 +2891,7 @@ Graphic Novel: Watchmen by Alan Moore, Dave Gibbons & John Higgins
     self.assertEqual(40, len(fetched['entries']))
     self.assertTrue(user_agents)
     self.assertEqual(
-      {fetcher.USER_AGENT}, set(user_agents))
+      {None}, set(user_agents))
 
     secure_calls = []
 
@@ -2929,7 +2913,7 @@ Graphic Novel: Watchmen by Alan Moore, Dave Gibbons & John Higgins
     self.assertEqual(40, len(secure_result['entries']))
     self.assertEqual(4, len(secure_calls))
     self.assertTrue(all(
-      call[3]['User-Agent'] == fetcher.USER_AGENT for call in secure_calls))
+      call[3]['User-Agent'] == 'Calibre Generated Agent' for call in secure_calls))
 
     def failing_fetch(url):
       if url == fetcher.URL:
@@ -2971,7 +2955,7 @@ Graphic Novel: Watchmen by Alan Moore, Dave Gibbons & John Higgins
       self.assertEqual(
         ({'label': 'Automatic', 'value': 'automatic'},),
         fetcher.source_choices())
-    self.assertIn('Chrome/', UrlFetcherLibbyReadsGlobal.USER_AGENT)
+    self.assertIsNone(UrlFetcherLibbyReadsGlobal.USER_AGENT)
 
     registry_ids = [fetcher.source_id for fetcher in available_url_fetchers()]
     self.assertLess(
@@ -3454,7 +3438,7 @@ Graphic Novel: Watchmen by Alan Moore, Dave Gibbons & John Higgins
       CATEGORY_SCIENCE_FICTION,
       CATEGORY_FANTASY,
     ], filters)
-    self.assertEqual([(fetcher.URL, {'user_agent': fetcher.USER_AGENT})], calls)
+    self.assertEqual([(fetcher.URL, {})], calls)
     self.assertEqual(28, len(parsed['entries']))
     self.assertFalse(parsed['match_series'])
     self.assertEqual(
@@ -3953,7 +3937,7 @@ Graphic Novel: Watchmen by Alan Moore, Dave Gibbons & John Higgins
     self.assertIn('BookBrowse Book Club', payload)
     self.assertEqual(fetcher.URL, calls[0][0])
     self.assertIsNone(calls[0][1]['cacerts'])
-    self.assertEqual(fetcher.USER_AGENT, calls[0][1]['headers']['User-Agent'])
+    self.assertEqual('Calibre Generated Agent', calls[0][1]['headers']['User-Agent'])
 
   def test_bookbrowse_calibre_https_retries_rejected_official_redirect_directly(self):
     import url_fetcher.bookbrowse as bookbrowse_fetcher
@@ -10698,6 +10682,7 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
       active_values[book_id] if field == main.prefs['active_list_field']
       else stored_values[book_id])
     core.write_fields_with_progress = lambda *_args, **kwargs: captured.update(kwargs)
+    core.remove_saved_matches_for_list = lambda name: captured.update(removed_matches=name)
     core.status_message = lambda _message: None
 
     original_question_dialog = list_state.question_dialog
@@ -10708,10 +10693,62 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
       list_state.question_dialog = original_question_dialog
 
     self.assertEqual({1: ''}, captured.get('active_updates'))
+    self.assertEqual('Current List', captured.get('removed_matches'))
     self.assertEqual({
       1: 'Other List [3]',
       3: '',
     }, captured.get('stored_updates'))
+
+  def test_remove_list_clears_saved_matches_only_after_success(self):
+    main.prefs['active_list_field'] = '#reading_series'
+    main.prefs['stored_lists_field'] = '#stored_lists'
+    for kind in ('active', 'stored'):
+      for outcome in ('confirmed', 'cancelled', 'write_failed'):
+        with self.subTest(kind=kind, outcome=outcome):
+          core = object.__new__(main.ListSwitchboardCore)
+          events = []
+          core.gui = None
+          core.current_active = lambda: 'Target List'
+          core.all_book_ids = lambda: [1]
+          core.read_field = lambda field, book_id: (
+            ('Target List' if kind == 'active' else 'Other List')
+            if field == main.prefs['active_list_field'] else 'Target List [1]')
+          core.status_message = lambda _message: None
+          core.remove_saved_matches_for_list = lambda name: events.append(('clear', name))
+
+          def write(*_args, **_kwargs):
+            events.append(('write', None))
+            if outcome == 'write_failed':
+              raise main.ListSwitchboardError('injected write failure')
+
+          core.write_fields_with_progress = write
+          action = (core._remove_active_list if kind == 'active'
+                    else lambda: core._remove_stored_list('Target List'))
+          with patch.object(list_state, 'question_dialog', return_value=outcome != 'cancelled'):
+            if outcome == 'write_failed':
+              with self.assertRaisesRegex(main.ListSwitchboardError, 'injected write failure'):
+                action()
+            else:
+              action()
+          expected = [] if outcome == 'cancelled' else [('write', None)]
+          if outcome == 'confirmed':
+            expected.append(('clear', 'Target List'))
+          self.assertEqual(expected, events)
+
+  def test_remove_stored_list_preserves_matches_when_list_is_still_active(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    main.prefs['active_list_field'] = '#reading_series'
+    main.prefs['stored_lists_field'] = '#stored_lists'
+    core.gui = None
+    core.all_book_ids = lambda: [1]
+    core.read_field = lambda field, book_id: (
+      'target list' if field == main.prefs['active_list_field'] else 'Target List [1]')
+    core.status_message = lambda _message: None
+    core.write_fields_with_progress = lambda *_args, **_kwargs: None
+    core.remove_saved_matches_for_list = lambda _name: self.fail('Active list still needs its matches')
+
+    with patch.object(list_state, 'question_dialog', return_value=True):
+      core._remove_stored_list('Target List')
 
   def test_public_list_actions_stop_when_not_configured(self):
     core = object.__new__(main.ListSwitchboardCore)
@@ -11058,6 +11095,24 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
     self.assertEqual(
       'Phase 2 of 3 — Match and prepare review\nMatching books...', labels[-1])
     self.assertEqual([0, 800, 800, 0], values)
+
+  def test_hidden_active_progress_returns_but_cancelled_or_closed_progress_stays_closed(self):
+    core = object.__new__(main.ListSwitchboardCore)
+    for cancelled in (False, True):
+      shown = []
+      core.import_progress = types.SimpleNamespace(
+        setLabelText=lambda _value: None, setValue=lambda _value: None,
+        setFixedWidth=lambda _value: None, isHidden=lambda: True,
+        show=lambda: shown.append(True), wasCanceled=lambda: cancelled)
+      if cancelled:
+        with self.assertRaises(main.ImportCancelledError):
+          core.update_import_progress(500, 'Waiting for a page...')
+      else:
+        core.update_import_progress(500, 'Waiting for a page...')
+      self.assertEqual([] if cancelled else [True], shown)
+    core.import_progress = None
+    core.update_import_progress(message='No active progress dialog')
+    self.assertIsNone(core.import_progress)
 
   def test_import_progress_dynamic_phase_numbers(self):
     core = object.__new__(main.ListSwitchboardCore)
@@ -12928,9 +12983,124 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
   def test_cached_active_add_series_cancel_does_not_save_override(self):
     core, cache, _entry, stored = self._cached_active_add_series_fixture()
     core._active_add_match_chooser = lambda *_args, **_kwargs: (None, None, False)
-    self.assertEqual(({}, {}), core.cached_active_add_updates(
-      'Series List', {40458: 'Series List'}, cache))
+    with self.assertRaises(list_state.ActiveAddCancelled):
+      core.cached_active_add_updates('Series List', {40458: 'Series List'}, cache)
     self.assertEqual([], stored['matches'])
+
+  def test_active_add_cancel_requires_explicit_discard_confirmation(self):
+    import dialogs.active_add_match as dialog_module
+
+    for discard in (False, True):
+      with self.subTest(discard=discard):
+        dialog = object.__new__(dialog_module.ActiveAddMatchDialog)
+        dialog.selected_entry = {'position': '57', 'title': 'Selected row'}
+        dialog.visible_entries = [dialog.selected_entry]
+        dialog.show_all_entries = True
+        before = dict(dialog.__dict__)
+        with patch.object(dialog_module, 'question_dialog', return_value=discard) as confirm:
+          with patch.object(dialog_module.QDialog, 'reject', create=True) as reject:
+            dialog.reject()
+            self.assertEqual(1 if discard else 0, reject.call_count)
+        confirm.assert_called_once()
+        self.assertFalse(confirm.call_args.kwargs['default_yes'])
+        self.assertEqual('Discard choices', confirm.call_args.kwargs['yes_text'])
+        self.assertEqual('Continue reviewing', confirm.call_args.kwargs['no_text'])
+        self.assertEqual(before, dialog.__dict__)
+
+  def test_active_add_declining_discard_preserves_earlier_pending_choices(self):
+    import dialogs.active_add_match as dialog_module
+
+    core, cache, entry, stored = self._cached_active_add_series_fixture()
+    reviewed = []
+
+    def choose(book_id, *_args, **_kwargs):
+      reviewed.append(book_id)
+      if book_id == 40459:
+        self.assertEqual([], stored['matches'])
+        dialog = object.__new__(dialog_module.ActiveAddMatchDialog)
+        dialog.selected_entry = entry
+        with patch.object(dialog_module, 'question_dialog', return_value=False):
+          with patch.object(dialog_module.QDialog, 'reject', create=True) as reject:
+            dialog.reject()
+            reject.assert_not_called()
+        self.assertEqual(entry, dialog.selected_entry)
+      return entry, 161.0, True
+
+    core._active_add_match_chooser = choose
+    updates, indexes = core.cached_active_add_updates(
+      'Series List', {40458: 'Series List', 40459: 'Series List'}, cache)
+
+    self.assertEqual([40458, 40459], reviewed)
+    self.assertEqual({40458: 'Series List', 40459: 'Series List'}, updates)
+    self.assertEqual({40458: 161.0, 40459: 161.0}, indexes)
+    self.assertEqual([1, 2, 40458, 40459], stored['matches'][0]['matched_book_ids'])
+
+  def test_add_selected_series_keeps_explicit_selection_before_expanded_ids(self):
+    core, _cache, _entry, _stored = self._cached_active_add_series_fixture()
+    core.selected_book_ids = lambda: [40459, 40458, 40459]
+
+    expanded = core.selected_ids_with_series()
+
+    self.assertEqual([40459, 40458], expanded[:2])
+    self.assertEqual(len(expanded), len(set(expanded)))
+    self.assertIn(1, expanded[2:])
+    self.assertNotIn(3, expanded)
+
+  def test_add_selected_unmatched_book_cancel_stops_series_dialogs(self):
+    core, cache, _entry, stored = self._cached_active_add_series_fixture()
+    cache['entries'] = [
+      {'position': '1', 'title': 'Piranesi', 'authors': ['Susanna Clarke']},
+    ]
+    core.selected_book_ids = lambda: [40458]
+    core.current_active = lambda: 'Series List'
+    core.import_cache_for_active_list = lambda _active: cache
+    core.read_field = lambda *_args: ''
+    core.write_fields = lambda **_kwargs: self.fail('Cancelled add must not write metadata')
+    messages = []
+    core.status_message = messages.append
+    reviewed = []
+
+    def choose(book_id, _entries, candidates, _index, _db, **_kwargs):
+      reviewed.append(book_id)
+      self.assertEqual([], candidates)
+      return None, None, False
+
+    core._active_add_match_chooser = choose
+    with patch.dict(main.prefs, {'include_calibre_series': True}):
+      core._add_selected_to_active()
+
+    self.assertEqual([40458], reviewed)
+    self.assertEqual([], stored['matches'])
+    self.assertEqual(['Adding books to "Series List" cancelled.'], messages)
+
+  def test_add_selected_later_cancel_discards_prior_manual_or_automatic_choices(self):
+    for automatic in (False, True):
+      with self.subTest(automatic=automatic):
+        core, cache, entry, stored = self._cached_active_add_series_fixture()
+        first_id = 1 if automatic else 40458
+        if automatic:
+          cache['entries'].append({
+            'position': '1', 'title': 'Every Heart a Doorway',
+            'authors': ['Seanan McGuire'],
+          })
+        core.current_active = lambda: 'Series List'
+        core.import_cache_for_active_list = lambda _active: cache
+        core.read_field = lambda *_args: ''
+        core.write_fields = lambda **_kwargs: self.fail('Cancelled add must not write metadata')
+        messages = []
+        core.status_message = messages.append
+        reviewed = []
+
+        def choose(book_id, *_args, **_kwargs):
+          reviewed.append(book_id)
+          return (entry, 161.0, True) if book_id == first_id else (None, None, False)
+
+        core._active_add_match_chooser = choose
+        core.add_book_ids_to_active([first_id, 40459, 4])
+
+        self.assertEqual([40459] if automatic else [first_id, 40459], reviewed)
+        self.assertEqual([], stored['matches'])
+        self.assertEqual(['Adding books to "Series List" cancelled.'], messages)
 
   def test_cached_active_add_button_multiple_eligible_matches_open_chooser(self):
     core, context = self._cached_active_add_button_core(
@@ -13260,7 +13430,49 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
     self.assertEqual('automatic', row['match_source'])
     self.assertEqual([], row['previous_book_ids'])
 
-  def test_active_reconciliation_changed_index_remaps_book(self):
+  def test_award_reconciliation_keeps_automatic_identity_when_source_positions_change(self):
+    core = self.build_active_reconciliation_core(active_ids=[1], active_positions={1: '1996'})
+    core.all_local_series_values = lambda _ids: {}
+    first = core.import_review_row(
+      {'position': '1995', 'award_year': '1995', 'title': 'First Book', 'authors': ['Author One']},
+      matched=True, book_ids=[1], match_source='automatic')
+    second = core.import_review_row({
+      'position': '1996', 'award_year': '1996', 'title': 'Second Book', 'authors': ['Author Two']})
+
+    _rows, notes = core.reconcile_review_rows_with_active_list(
+      'Example List', [first, second], active_name='Example List')
+    self.assertEqual([1], first['book_ids'])
+    self.assertEqual('automatic', first['match_source'])
+    self.assertEqual([], second['book_ids'])
+    self.assertEqual([], notes)
+
+  def test_award_reconciliation_same_position_requires_matching_title_and_author(self):
+    for title, authors, expected in (
+        ('Second Book', ['Author Two'], []),
+        ('First Book', ['Jane Smith'], []),
+        ('First Book', ['Author One'], [1])):
+      with self.subTest(title=title, authors=authors):
+        core = self.build_active_reconciliation_core(active_ids=[1], active_positions={1: '1996'})
+        core.all_local_series_values = lambda _ids: {}
+        row = core.import_review_row({
+          'position': '1996', 'award_year': '1996', 'title': title, 'authors': authors})
+        core.reconcile_review_rows_with_active_list(
+          'Example List', [row], active_name='Example List')
+        self.assertEqual(expected, row['book_ids'])
+
+  def test_award_reconciliation_keeps_explicit_saved_substitution(self):
+    core = self.build_active_reconciliation_core(active_ids=[1], active_positions={1: '1996'})
+    core.all_local_series_values = lambda _ids: {}
+    row = core.import_review_row(
+      {'position': '1996', 'award_year': '1996', 'title': 'Second Book', 'authors': ['Author Two']},
+      matched=True, book_ids=[1], match_source='saved/manual override')
+    _rows, notes = core.reconcile_review_rows_with_active_list(
+      'Example List', [row], active_name='Example List')
+    self.assertEqual([], notes)
+    self.assertEqual([1], row['book_ids'])
+    self.assertEqual('saved/manual override', row['match_source'])
+
+  def test_active_reconciliation_changed_index_does_not_remap_a_different_work(self):
     core = self.build_active_reconciliation_core(active_ids=[7], active_positions={7: '2'})
     first = core.import_review_row(
       {'position': '1', 'title': 'Moved Book', 'authors': ['Move Author']},
@@ -13283,12 +13495,107 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
 
     self.assertEqual([], notes)
     self.assertEqual([first, second], rows)
-    self.assertEqual(False, first['matched'])
-    self.assertEqual([], first['book_ids'])
-    self.assertEqual([7], first['previous_book_ids'])
-    self.assertEqual(True, second['matched'])
-    self.assertEqual([7], second['book_ids'])
-    self.assertEqual('active list/manual edit', second['match_source'])
+    self.assertEqual(True, first['matched'])
+    self.assertEqual([7], first['book_ids'])
+    self.assertEqual([], first['previous_book_ids'])
+    self.assertEqual('automatic', first['match_source'])
+    self.assertEqual(False, second['matched'])
+    self.assertEqual([], second['book_ids'])
+
+  def test_active_reconciliation_source_reordering_resolves_identity_across_positions(self):
+    for old_position, new_position, metadata in (
+        ('1', '7', {'source': {'url': 'https://www.reddit.com/r/Fantasy/'}}),
+        ('12', '3', {'source': {'url': 'https://www.librarything.com/award/1'}}),
+        ('1996', '1995', {'award_year': '1995'})):
+      with self.subTest(metadata=metadata):
+        core = self.build_active_reconciliation_core(
+          active_ids=[1], active_positions={1: old_position})
+        wrong = core.import_review_row({
+          'position': old_position, 'title': 'Second Book', 'authors': ['Author Two'], **metadata})
+        right = core.import_review_row({
+          'position': new_position, 'title': 'First Book', 'authors': ['Author One'], **metadata})
+        _rows, notes = core.reconcile_review_rows_with_active_list(
+          'Example List', [wrong, right], active_name='Example List')
+        self.assertEqual([], wrong['book_ids'])
+        self.assertEqual([1], right['book_ids'])
+        self.assertEqual('active list/manual edit', right['match_source'])
+        self.assertEqual([], notes)
+
+  def test_active_reconciliation_unique_position_without_identity_stays_unmatched(self):
+    core = self.build_active_reconciliation_core(active_ids=[1], active_positions={1: '1'})
+    row = core.import_review_row({
+      'position': '1', 'title': 'Second Book', 'authors': ['Author Two']})
+    _rows, notes = core.reconcile_review_rows_with_active_list(
+      'Example List', [row], active_name='Example List')
+    self.assertEqual([], row['book_ids'])
+    self.assertFalse(row['matched'])
+    self.assertTrue(any('unambiguously' in note for note in notes))
+
+  def test_active_reconciliation_repeated_work_does_not_use_position_to_break_identity_tie(self):
+    core = self.build_active_reconciliation_core(active_ids=[1], active_positions={1: '1'})
+    rows = [core.import_review_row({
+      'position': position, 'title': 'First Book', 'authors': ['Author One']})
+      for position in ('1', '7')]
+    _rows, notes = core.reconcile_review_rows_with_active_list(
+      'Example List', rows, active_name='Example List')
+    self.assertEqual([[], []], [row['book_ids'] for row in rows])
+    self.assertTrue(any('unambiguously' in note for note in notes))
+
+  def test_active_reconciliation_preserves_narrowed_saved_set(self):
+    core = self.build_active_reconciliation_core(
+      active_ids=[1, 2], active_positions={1: '1', 2: '1'})
+    core.review_book_details = lambda _ids: {
+      2: {'matched_title': 'First Book', 'matched_authors': ['Author One']}}
+    row = core.import_review_row(
+      {'position': '1', 'title': 'First Book', 'authors': ['Author One']},
+      matched=True, book_ids=[1], match_source='saved/manual override')
+    core.reconcile_review_rows_with_active_list('Example List', [row], active_name='Example List')
+    self.assertEqual([1], row['book_ids'])
+    self.assertEqual('saved/manual override', row['match_source'])
+
+  def test_active_reconciliation_keeps_saved_substitution_across_source_reordering(self):
+    core = self.build_active_reconciliation_core(active_ids=[1], active_positions={1: '1'})
+    explicit = core.import_review_row(
+      {'position': '7', 'title': 'Second Book', 'authors': ['Author Two']},
+      matched=True, book_ids=[1], match_source='saved/manual override')
+    other = core.import_review_row({
+      'position': '1', 'title': 'First Book', 'authors': ['Author One']})
+    core.reconcile_review_rows_with_active_list(
+      'Example List', [explicit, other], active_name='Example List')
+    self.assertEqual([1], explicit['book_ids'])
+    self.assertEqual('saved/manual override', explicit['match_source'])
+    self.assertEqual([], other['book_ids'])
+
+  def test_active_reconciliation_identity_index_skips_unrelated_entries(self):
+    core = self.build_active_reconciliation_core(active_ids=[1], active_positions={1: '1'})
+    rows = [core.import_review_row({
+      'position': str(index), 'title': f'Unrelated Work {index}', 'authors': ['Jane Smith']})
+      for index in range(1, 401)]
+    right = core.import_review_row({
+      'position': '401', 'title': 'First Book', 'authors': ['Author One']})
+    rows.append(right)
+    original = core.active_position_target_row
+    candidate_counts = []
+
+    def resolve(book_id, candidates, details, series):
+      candidate_counts.append(len(candidates))
+      return original(book_id, candidates, details, series)
+
+    core.active_position_target_row = resolve
+    core.reconcile_review_rows_with_active_list('Example List', rows, active_name='Example List')
+    self.assertEqual([1], candidate_counts)
+    self.assertEqual([1], right['book_ids'])
+    self.assertTrue(all(not row['book_ids'] for row in rows[:-1]))
+
+  def test_active_reconciliation_reordered_explicit_unmatched_choice_stays_blank(self):
+    core = self.build_active_reconciliation_core(active_ids=[1], active_positions={1: '9'})
+    row = core.import_review_row(
+      {'position': '1', 'title': 'First Book', 'authors': ['Author One']},
+      match_source='explicit unmatched',
+      directive={'unmatched': True, 'previous_matched_book_ids': [1]})
+    core.reconcile_review_rows_with_active_list('Example List', [row], active_name='Example List')
+    self.assertEqual([], row['book_ids'])
+    self.assertEqual('explicit unmatched', row['match_source'])
 
   def test_active_reconciliation_tied_series_button_adds_survive_last_book_match(self):
     core, cache, wayward, stored = self._cached_active_add_series_fixture()
@@ -13454,6 +13761,9 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
   def test_active_reconciliation_allows_other_active_book_for_blank_row(self):
     core = self.build_active_reconciliation_core(
       active_ids=[1, 2], active_positions={1: '1', 2: '1'})
+    core.review_book_details = lambda _ids: {
+      book_id: {'matched_title': 'First Book', 'matched_authors': ['Author One']}
+      for book_id in (1, 2)}
     row = core.import_review_row(
       {'position': '1', 'title': 'First Book', 'authors': ['Author One']},
       match_source='explicit unmatched',
@@ -15535,6 +15845,64 @@ class AwardParserSmokeTest(unittest.TestCase):
       ['Jane Doe, Jr.', 'John Roe'],
       ITWThrillerAwardsParser().clean_authors('Jane Doe, Jr., John Roe'))
 
+  def test_itw_finalists_exclude_footer_and_navigation_rows(self):
+    from parser.itw import ITWThrillerAwardsParser
+
+    archive = '''
+      <h1>The 2009 Thriller Awards</h1>
+      <div class="award_category"><h2>BEST FIRST NOVEL</h2>
+        <ul class="award_nominees_list">
+          <li class="single_award"><p class="author">Charlie Newton</p>
+            <h3 class="media_title">Calumet City</h3></li>
+          <li class="single_award winner"><p class="author">Tom Rob Smith</p>
+            <h3 class="media_title">Child 44</h3></li>
+          <li class="single_award"><p class="author">Steven Thomas</p>
+            <h3 class="media_title">Criminal Paradise</h3></li>
+        </ul>
+      </div>'''
+    footer = '''
+      <footer><ul><li>Code of Conduct</li></ul><h3>Programs</h3>
+        <ul><li>ITW Presents</li></ul><h3>Awards</h3></footer>
+      <aside><ul><li>Volunteer</li></ul><h2>ARE YOU A MEMBER?</h2></aside>'''
+    for html in (f'<main>{archive}</main>{footer}', archive + footer):
+      with self.subTest(main='<main>' in html):
+        parsed = ITWThrillerAwardsParser().parse(html,
+          'https://thrillerwriters.org/past-nominees-and-winners',
+          'ITW Thriller Award - First Novel', 'Best First Novel', ('first novel',))
+        self.assertEqual([
+          ('Child 44', 'winner'), ('Calumet City', 'nominee'),
+          ('Criminal Paradise', 'nominee'),
+        ], [(e['title'], e['result']) for e in parsed['entries']])
+
+  def test_itw_title_case_applies_to_both_sources_and_direct_parse(self):
+    from url_fetcher.itw import UrlFetcherITWBestAudiobook
+
+    formatter = types.ModuleType('calibre.utils.titlecase')
+    formatter.titlecase = unittest.mock.Mock(return_value="The Cheater's Wife")
+    html = '''<h1>2026 ITW Thriller Awards</h1><h2>Best Audiobook</h2><ul>
+      <li class="single_award"><p class="author">CN Mabry, N'Dia Rae</p>
+        <h3 class="media_title">THE CHEATER'S WIFE<br>Narrated by Actor</h3></li>
+      <li class="single_award winner"><p class="author">Writer</p>
+        <h3 class="media_title">The McCloud Case</h3></li></ul>'''
+    recipe = UrlFetcherITWBestAudiobook()
+    with patch.dict(sys.modules, {'calibre.utils.titlecase': formatter}):
+      direct = recipe.parse(html)
+      formatter.titlecase.assert_called_once_with("THE CHEATER'S WIFE")
+      formatter.titlecase.reset_mock()
+      official = recipe.fetch_and_parse(lambda url: html, source_choice=0)
+      self.assertEqual(direct, official)
+      formatter.titlecase.assert_called_once_with("THE CHEATER'S WIFE")
+      fallback = deepcopy(direct)
+      fallback['entries'][1]['title'] = "THE CHEATER'S WIFE"
+      fallback_attempt = unittest.mock.Mock(source_rank=1, label='LibraryThing')
+      fallback_attempt.execute.return_value = fallback
+      with patch.object(recipe, 'source_attempts', return_value=(fallback_attempt,)):
+        parsed = recipe.fetch_and_parse(lambda url: html, source_choice=1)
+      self.assertEqual(["The McCloud Case", "The Cheater's Wife"],
+        [e['title'] for e in parsed['entries']])
+      self.assertEqual('nominee', parsed['entries'][1]['result'])
+      self.assertEqual(['CN Mabry', "N'Dia Rae"], parsed['entries'][1]['authors'])
+
   def test_itw_uppercase_titles_match_mixed_case_library_titles(self):
     core = object.__new__(main.ListSwitchboardCore)
     entry = {
@@ -15894,6 +16262,79 @@ class AwardParserSmokeTest(unittest.TestCase):
     self.assertFalse(any(
       'highly commended' in message for _done, _total, message in progress))
 
+  def test_cwa_cached_pagination_recovers_boundary_year(self):
+    from unittest.mock import patch
+    from urllib.parse import parse_qs, urlsplit
+    from url_fetcher.cwa import UrlFetcherCWAGoldDagger
+
+    def card(title, year, result='Shortlisted'):
+      return f'''<a href="https://thecwa.co.uk/past-winners/{title}/">
+        <span class="title">{title}</span><span class="author">Author</span>
+        <span>Gold Dagger</span><span>{year} | {result}</span></a>'''
+
+    first = card('A', 2025) + card('B', 2026) + '''
+      <span>Page 1 of 2</span><a rel="next" href="/past-winners/page/2/
+      ?past_winners_awards[]=gold&amp;from_year=2025&amp;to_year=2026&amp;past_winners_accolades[]=shortlisted">Next</a>'''.replace('\n', '')
+    second = card('B', 2026) + card('C', 2026)
+    complete_year = card('B', 2026) + card('C', 2026) + card('D', 2026)
+
+    def run(recovery):
+      calls, progress = [], []
+
+      def fetch(url):
+        calls.append(url)
+        query = parse_qs(urlsplit(url).query)
+        if query.get('from_year') == ['2026']:
+          if isinstance(recovery, Exception):
+            raise recovery
+          return recovery
+        if query.get('past_winners_accolades[]') != ['shortlisted']:
+          return '<html></html>' if 'from_year' in query else card('B', 2026)
+        return second if '/page/2/' in url else first
+
+      recipe = UrlFetcherCWAGoldDagger()
+      recipe.START_YEAR = 2025
+      with patch('parser.cwa.ARCHIVE_PAGE_SIZE', 2):
+        parsed = recipe.fetch_and_parse(
+          fetch, source_choice='automatic',
+          progress=lambda *args: progress.append(args))
+      return parsed, calls, progress
+
+    parsed, calls, progress = run(complete_year)
+    self.assertEqual(['A', 'B', 'C', 'D'], [e['title'] for e in parsed['entries']])
+    self.assertEqual([], parsed['notes'])
+    self.assertEqual(8, len(calls))
+    self.assertIn('from_year=2026&to_year=2026', calls[-1])
+    self.assertTrue(all(isinstance(total, int) and 0 <= done <= total
+      for done, total, _message in progress))
+    self.assertEqual(progress[-1][0], progress[-1][1])
+    self.assertEqual('https://thecwa.co.uk/past-winners/D/',
+      parsed['entries'][-1]['source']['url'])
+
+    invalid = (
+      ('missing', card('B', 2026)),
+      ('wrong year', complete_year + card('Other', 2024)),
+      ('wrong result', complete_year + card('Winner', 2026, 'Winner')),
+      ('multiple pages', complete_year + '<span>Page 1 of 2</span>'),
+      ('over count', complete_year + card('Extra', 2026)),
+      ('empty', '<html></html>'),
+      ('fetch failure', OSError('unavailable')),
+    )
+    for label, html in invalid:
+      with self.subTest(label=label):
+        partial, _calls, _progress = run(html)
+        self.assertEqual(['A', 'B', 'C'], [e['title'] for e in partial['entries']])
+        self.assertTrue(any('3 of 4 expected entries' in note and '1 missing' in note
+          for note in partial['notes']))
+        self.assertTrue(all(url.startswith('https://thecwa.co.uk/') for url in _calls))
+        self.assertEqual('https://thecwa.co.uk/past-winners/B/',
+          partial['entries'][1]['source']['url'])
+
+    from errors import ImportCancelledError, CamoufoxRequiredError
+    for error in (ImportCancelledError('cancel'), CamoufoxRequiredError('required')):
+      with self.subTest(error=type(error).__name__), self.assertRaises(type(error)):
+        run(error)
+
   def test_crime_writers_of_canada_splits_explicit_coauthors(self):
     from parser.crime_writers_canada import (
       CrimeWritersOfCanadaLibraryThingParser,
@@ -16084,7 +16525,6 @@ class AwardParserSmokeTest(unittest.TestCase):
   def test_strand_fetcher_uses_current_browser_identity(self):
     from url_fetcher.librarything_fallback import LibraryThingFetchPolicyMixin
     from url_fetcher.strand import (
-      STRAND_USER_AGENT,
       UrlFetcherStrandDebutMystery,
     )
 
@@ -16108,14 +16548,10 @@ class AwardParserSmokeTest(unittest.TestCase):
       calls.append((url, user_agent))
       return html
 
-    LibraryThingFetchPolicyMixin._session_librarything_user_agent = ''
-    self.addCleanup(
-      setattr, LibraryThingFetchPolicyMixin,
-      '_session_librarything_user_agent', '')
     fetcher = UrlFetcherStrandDebutMystery()
     parsed = fetcher.fetch_and_parse(fetch_url)
 
-    self.assertEqual([(fetcher.URL, STRAND_USER_AGENT)], calls)
+    self.assertEqual([(fetcher.URL, 'Calibre Generated Agent')], calls)
     self.assertEqual([
       ('2025', 'Debut Winner', 'winner'),
       ('2025.01', 'Debut Nominee', 'nominee'),
@@ -16127,7 +16563,6 @@ class AwardParserSmokeTest(unittest.TestCase):
   def test_librarything_fallback_retries_generated_browser_identities(self):
     from url_fetcher.agatha import UrlFetcherAgathaChildrensYA
     from url_fetcher.librarything_fallback import (
-      LIBRARYTHING_USER_AGENT,
       LibraryThingFetchPolicyMixin,
     )
 
@@ -16140,10 +16575,6 @@ class AwardParserSmokeTest(unittest.TestCase):
         raise RuntimeError('HTTP Error 403: Forbidden')
       return '<html>LibraryThing award</html>'
 
-    LibraryThingFetchPolicyMixin._session_librarything_user_agent = ''
-    self.addCleanup(
-      setattr, LibraryThingFetchPolicyMixin,
-      '_session_librarything_user_agent', '')
     fetcher = UrlFetcherAgathaChildrensYA()
     fetcher.random_librarything_user_agent = lambda: next(generated)
     payload = fetcher.librarything_attempt().fetch_url(fetch_url)(
@@ -16151,13 +16582,9 @@ class AwardParserSmokeTest(unittest.TestCase):
 
     self.assertEqual('<html>LibraryThing award</html>', payload)
     self.assertEqual([
-      LIBRARYTHING_USER_AGENT,
       'Generated Agent 1',
       'Generated Agent 2',
     ], [user_agent for _url, user_agent in calls])
-    self.assertEqual(
-      'Generated Agent 2',
-      LibraryThingFetchPolicyMixin._session_librarything_user_agent)
 
   def test_barry_parser_keeps_amazon_links_at_the_sykm_award_page(self):
     from url_fetcher.barry import UrlFetcherBarryMysteryNovel
@@ -18215,8 +18642,97 @@ class AwardParserSmokeTest(unittest.TestCase):
 
     fetched.clear()
     explicit = fetcher.fetch_and_parse(fetch_url, source_choice=1)
-    self.assertEqual([fetcher.isfdb_url()], fetched)
+    self.assertEqual([fetcher.isfdb_url(), fetcher.isfdb_url()], fetched)
     self.assertEqual('ISFDB fixture', explicit['entries'][0]['title'])
+
+  def test_isfdb_author_tooltips_are_not_credits_in_any_table_shape(self):
+    from parser.isfdb_base import ISFDBAwardParserBase
+    parser = ISFDBAwardParserBase()
+    credit = '''<div class="tooltip"><a href="/cgi-bin/ea.cgi?1">Andrea K. Höst</a>
+      <sup class="mouseover">?</sup><span class="tooltiptext tooltipnarrow">
+        <a href="/cgi-bin/ea.cgi?2">Andrea K. Hoest</a><br>Andrea K. Host</span></div>
+      <b>and</b> <a href="/cgi-bin/ea.cgi?3">John Doe, Jr.</a>'''
+    shapes = (
+      ('<table><tr><th>Year</th><th>Level</th><th>Title</th><th>Author</th></tr>'
+        f'<tr><td>2012</td><td>Win</td><td>And All the Stars</td><td>{credit}</td></tr></table>'),
+      ('<table><tr><th colspan="3">2012</th></tr>'
+        f'<tr><td>Win</td><td>And All the Stars</td><td>{credit}</td></tr></table>'),
+      ('<title>Aurealis Award 2012</title><table><tr><td colspan="3">'
+        '<a href="/cgi-bin/award_category.cgi?50">SF Novel</a></td></tr>'
+        f'<tr><td>Win</td><td>And All the Stars</td><td>{credit}</td></tr></table>'),
+    )
+    for html in shapes:
+      with self.subTest(html=html[:70]):
+        parsed = parser.parse(html, 'https://www.isfdb.org/cgi-bin/ay.cgi?1+2012',
+          'Aurealis', 'SF Novel')
+        self.assertEqual(1, len(parsed['entries']))
+        self.assertEqual(['Andrea K. Höst', 'John Doe, Jr.'], parsed['entries'][0]['authors'])
+
+  def test_isfdb_role_marked_plain_credits_split_in_every_table_shape(self):
+    from parser.isfdb_base import ISFDBAwardParserBase
+    credit = 'Tom Taylor (author) and James Brouwer (illustrator)'
+    shapes = (
+      '<table><tr><th>Year</th><th>Level</th><th>Title</th><th>Author</th></tr>'
+        f'<tr><td>2011</td><td>Win</td><td>The Deep</td><td>{credit}</td></tr></table>',
+      '<table><tr><th colspan="3">2011</th></tr>'
+        f'<tr><td>Win</td><td>The Deep</td><td>{credit}</td></tr></table>',
+      '<title>Aurealis Award 2011</title><table><tr><td colspan="3">'
+        '<a href="/cgi-bin/award_category.cgi?47">Graphic Novel</a></td></tr>'
+        f'<tr><td>Win</td><td>The Deep</td><td>{credit}</td></tr></table>',
+    )
+    for html in shapes:
+      with self.subTest(shape=html[:60]):
+        rows = ISFDBAwardParserBase().parse(
+          html, 'https://www.isfdb.org/cgi-bin/ay.cgi?1+2011',
+          'Aurealis', 'Graphic Novel')['entries']
+        self.assertEqual(1, len(rows))
+        self.assertEqual('The Deep', rows[0]['title'])
+        self.assertEqual(['Tom Taylor', 'James Brouwer'], rows[0]['authors'])
+        self.assertEqual('winner', rows[0]['result'])
+
+  def test_isfdb_role_boundaries_preserve_suffixes_literal_ampersands_and_unmarked_names(self):
+    from lxml import html as lxml_html
+    from parser.isfdb_base import ISFDBAwardParserBase
+    samples = (
+      ('Mirranda Burton (author and illustrator)', ['Mirranda Burton']),
+      ('John Doe, Jr. (writer), Jane Smith (artist)', ['John Doe, Jr.', 'Jane Smith']),
+      ('Tom Taylor (author) &amp; James Brouwer (illustrator)', ['Tom Taylor', 'James Brouwer']),
+      ('Research &amp; Design (author); Jane Smith (illustrator)', ['Research & Design', 'Jane Smith']),
+      ('John (David) Doe (author) and Jane Smith (illustrator)', ['John (David) Doe', 'Jane Smith']),
+      ('Alice and Bob', ['Alice and Bob']),
+    )
+    parser = ISFDBAwardParserBase()
+    for markup, authors in samples:
+      with self.subTest(credit=markup):
+        cell = lxml_html.fromstring('<td>' + markup + '</td>')
+        credit = parser.author_credit_from_cell(cell)
+        entry = parser.build_award_entry(
+          {'title': 'A Work', 'author': credit}, 'https://www.isfdb.org/', 2011, 'Graphic Novel')
+        self.assertEqual(authors, entry['authors'])
+
+  def test_isfdb_role_cleanup_applies_after_specialized_credit_readers(self):
+    from parser.bram_stoker import BramStokerISFDBParser
+    from parser.shirley_jackson import ShirleyJacksonISFDBParser
+    html = '''<table><tr><th colspan="3">2011</th></tr><tr><td>Win</td><td>The Deep</td>
+      <td>Tom Taylor (author) and James Brouwer (illustrator)</td></tr></table>'''
+    for parser_class in (BramStokerISFDBParser, ShirleyJacksonISFDBParser):
+      with self.subTest(parser=parser_class.__name__):
+        rows = parser_class().parse(html, 'https://www.isfdb.org/cgi-bin/ay.cgi?1+2011',
+          'Award', 'Graphic Novel')['entries']
+        self.assertEqual(['Tom Taylor', 'James Brouwer'], rows[0]['authors'])
+
+  def test_isfdb_author_ui_cleanup_precedes_specialized_contributor_readers(self):
+    from parser.bram_stoker import BramStokerISFDBParser
+    from parser.shirley_jackson import ShirleyJacksonISFDBParser
+    html = '''<table><tr><th colspan="3">2025</th></tr><tr><td>Win</td><td>A Book</td>
+      <td><div class="tooltip"><a href="/cgi-bin/ea.cgi?1">First Author</a>
+        <sup class="mouseover">?</sup><span class="tooltiptext">Pseudonym</span></div>
+        <b>and</b><a href="/cgi-bin/ea.cgi?2">Second Author</a></td></tr></table>'''
+    for parser_class in (BramStokerISFDBParser, ShirleyJacksonISFDBParser):
+      with self.subTest(parser=parser_class.__name__):
+        parsed = parser_class().parse(html, 'https://www.isfdb.org/cgi-bin/ay.cgi?1+2025',
+          'Award', 'Novel')
+        self.assertEqual(['First Author', 'Second Author'], parsed['entries'][0]['authors'])
 
   def test_isfdb_award_parser_base_smoke(self):
     from parser.isfdb_base import ISFDBAwardParserBase
@@ -19036,6 +19552,186 @@ class AwardParserSmokeTest(unittest.TestCase):
         'George R.R. Martin Can Fuck Off Into the Sun, Or: The 2020 Hugo '
         'Awards Ceremony (Rageblog Edition)'])
 
+  def test_aurealis_sfadb_linked_graphic_credits_keep_title_boundaries(self):
+    from lxml import html as lxml_html
+    from parser.aurealis import AurealisParser
+    samples = (
+      ('<b>The Art of Graeme Base</b>, <a href="Julie_Watts">Julie Watts</a>, '
+        'illustrated by <a href="Graeme_Base">Graeme Base</a> (Penguin/Viking)',
+        'The Art of Graeme Base', ['Julie Watts', 'Graeme Base']),
+      ('<b>EEEK!: Weird Australian Tales of Suspense</b>, '
+        '<a href="Jason_Paulos">Jason Paulos</a>, et al (Black House Comics)',
+        'EEEK!: Weird Australian Tales of Suspense', ['Jason Paulos']),
+      ('<b>The Deep: Here Be Dragons</b>, <a href="Tom_Taylor">Tom Taylor</a> '
+        '(author) and <a href="James_Brouwer">James Brouwer</a> (illustrator) (Gestalt)',
+        'The Deep: Here Be Dragons', ['Tom Taylor', 'James Brouwer']),
+      ('<b>Hidden</b>, <a href="Mirranda_Burton">Mirranda Burton</a>, '
+        'author and illustrator (Black Pepper)', 'Hidden', ['Mirranda Burton']),
+      ('<b>Salsa Invertebraxa</b>, <a href="Mozchops">Mozchops</a>, '
+        'author and illustrator (Pecksniff Press)', 'Salsa Invertebraxa', ['Mozchops']),
+      ('<b>Blue</b>, <a href="Pat_Grant">Pat Grant</a>, author and illustrator (Top Shelf)',
+        'Blue', ['Pat Grant']),
+      ('<b>Changing Ways #2</b>, <a href="Justin_Randall">Justin Randall</a>, '
+        'author and illustrator (Gestalt)', 'Changing Ways #2', ['Justin Randall']),
+      ('<b>It Shines and Shakes and Laughs</b>, <a href="Tim_Molloy">Tim Molloy</a>, '
+        'author and illustrator (Milk Shadow Books)',
+        'It Shines and Shakes and Laughs', ['Tim Molloy']),
+      ('<b>The Undertaker Morton Stone Vol. 1</b>, <a href="Gary_Chaloner">Gary Chaloner</a>, '
+        '<a href="Ben_Templesmith">Ben Templesmith</a> &amp; '
+        '<a href="Ashley_Wood">Ashley Wood</a> (Gestalt)',
+        'The Undertaker Morton Stone Vol. 1', ['Gary Chaloner', 'Ben Templesmith', 'Ashley Wood']),
+      ('<b>Dark Heart #1</b>, <a href="Scott_Wilson">Scott Wilson</a>, '
+        '<a href="Katie_Houghton-Ward">Katie Houghton-Ward</a> &amp; '
+        '<a href="Justin_Randall">Justin Randall</a> (Gestalt)',
+        'Dark Heart #1', ['Scott Wilson', 'Katie Houghton-Ward', 'Justin Randall']),
+      ('<b>The Photographer</b>, <a href="Mark_Rafidi">Mark Rafidi</a>, '
+        'illustrated by <a href="Paul_O_Sullivan">Paul O\'Sullivan</a> (Hawkeye)',
+        'The Photographer', ['Mark Rafidi', "Paul O'Sullivan"]),
+    )
+    parser = AurealisParser(prefer_linked_credits=True)
+    for markup, title, authors in samples:
+      with self.subTest(title=title):
+        row = parser.parse_item_node(lxml_html.fromstring('<li>' + markup + '</li>'))
+        self.assertEqual(title, row['title'])
+        self.assertEqual(authors, row['authors'])
+        self.assertEqual('nominee', row['result'])
+
+  def test_aurealis_graphic_markup_preserves_ties_commas_suffixes_and_provenance(self):
+    from parser.aurealis import AurealisParser
+    html = '''<div class="categoryblock"><div class="category">Graphic Novel</div><ul>
+      <li><span class="winner">Winner (tie):</span> <b>Hidden</b>,
+        <a href="Mirranda_Burton">Mirranda Burton</a>, author and illustrator (Black Pepper)</li>
+      <li><span class="winner">Winner (tie):</span> <b>The Deep</b>,
+        <a href="Tom_Taylor">Tom Taylor</a> (author) and
+        <a href="James_Brouwer">James Brouwer</a> (illustrator) (Gestalt)</li>
+      <li><strong>Giants, Trolls, Witches, Beasts</strong>,
+        <a href="Author">John Doe, Jr.</a> &amp; <a href="Artist">Jane Smith</a> (Publisher)</li>
+      </ul></div>'''
+    url = 'https://www.sfadb.com/Aurealis_Awards_2012'
+    rows = AurealisParser(prefer_linked_credits=True).parse_year(
+      html, url, 2012, 'Graphic Novel', ('graphic novel',))
+    self.assertEqual(['2012', '2012', '2012.01'], [row['position'] for row in rows])
+    self.assertEqual(['winner', 'winner', 'nominee'], [row['result'] for row in rows])
+    self.assertEqual('Giants, Trolls, Witches, Beasts', rows[2]['title'])
+    self.assertEqual(['John Doe, Jr.', 'Jane Smith'], rows[2]['authors'])
+    self.assertTrue(all(row['source']['url'] == url for row in rows))
+
+  def test_aurealis_linked_credit_reader_retains_quoted_novella_with_bold_publication(self):
+    from lxml import html as lxml_html
+    from parser.aurealis import AurealisParser
+    node = lxml_html.fromstring('''<li>“A Novella”, <a href="Writer">A Writer</a>
+      (<b>Containing Anthology</b> Publisher)</li>''')
+    row = AurealisParser(prefer_linked_credits=True).parse_item_node(node)
+    self.assertEqual('A Novella', row['title'])
+    self.assertEqual('A Writer', row['author'])
+    self.assertIsNone(AurealisParser(skip_quoted=True, prefer_linked_credits=True).parse_item_node(node))
+
+  def test_aurealis_linked_credit_reader_retains_unlinked_and_legacy_rows(self):
+    from lxml import html as lxml_html
+    from parser.aurealis import AurealisParser
+    for markup, title, author in (
+        ('<b>Fly The Colour Fantastica</b>, Anonymous (Publisher)',
+          'Fly The Colour Fantastica', 'Anonymous'),
+        ('Winner: A Book, John Doe, Jr. (Publisher)', 'A Book', 'John Doe, Jr.')):
+      with self.subTest(title=title):
+        row = AurealisParser(prefer_linked_credits=True).parse_item_node(
+          lxml_html.fromstring('<li>' + markup + '</li>'))
+        self.assertEqual(title, row['title'])
+        self.assertEqual(author, row['author'])
+
+  def test_aurealis_linked_credit_reader_does_not_truncate_composite_titles(self):
+    from lxml import html as lxml_html
+    from parser.aurealis import AurealisParser
+    samples = (
+      ('Winner (tie): <b>Enchanter</b> and <b>Starman: The Axis Trilogy</b>, '
+        '<a href="Sara_Douglass">Sara Douglass</a> (HarperCollins)',
+        'Enchanter and Starman: The Axis Trilogy'),
+      ('Winner: The Watergivers: <b>The Last Stormlord</b> (2009), '
+        '<b>Stormlord Rising</b> (2010), <b>Stormlord’s Exile</b> (2011), '
+        '<a href="Glenda_Larke">Glenda Larke</a> (HarperVoyager)',
+        'The Watergivers: The Last Stormlord (2009), Stormlord Rising (2010), Stormlord’s Exile'),
+    )
+    for markup, title in samples:
+      with self.subTest(title=title):
+        row = AurealisParser(prefer_linked_credits=True).parse_item_node(
+          lxml_html.fromstring('<li>' + markup + '</li>'))
+        self.assertEqual(title, row['title'])
+        self.assertEqual('winner', row['result'])
+
+  def test_aurealis_childrens_fiction_sfadb_flow_separates_all_reported_illustration_credits(self):
+    from url_fetcher.aurealis import UrlFetcherAurealisChildrensFiction
+    fetcher = UrlFetcherAurealisChildrensFiction()
+    cases = {
+      2020: [('Jinxed!: The Curious Curse of Cora Bell', 'Rebecca McRitchie', "Sharon O'Connor")],
+      2023: [('The Wrath of the Woolington Wyrm', 'Karen Foxlee', 'Frieda Chiu')],
+      2025: [
+        ('The Bother with the Bonkillyknock Beast', 'Karen Foxlee', 'Freda Chiu'),
+        ('Bravepaw and the Heartstone of Alluria', 'L. M. Wilkinson', 'Lavanya Naidu')],
+    }
+
+    def fetch(url):
+      if url == fetcher.URL:
+        return ''.join(f'<a href="/Aurealis_Awards_{year}">{year}</a>' for year in cases)
+      year = int(url.rsplit('_', 1)[-1])
+      items = ''.join(f'''<li><b>{title}</b>, <a href="Writer">{writer}</a>, illustrated by
+        <a href="Artist">{artist}</a> (Publisher)</li>''' for title, writer, artist in cases[year])
+      return ('<div class="categoryblock"><div class="category">Children\'s Fiction</div>'
+        '<ul>' + items + '</ul></div>')
+
+    parsed = fetcher.fetch_and_parse(fetch, source_choice=0)
+    self.assertEqual(4, len(parsed['entries']))
+    self.assertEqual([], parsed['notes'])
+    for row in parsed['entries']:
+      year = int(row['award_year'])
+      title, writer, artist = next(case for case in cases[year] if case[0] == row['title'])
+      self.assertEqual(title, row['title'])
+      self.assertEqual([writer, artist], row['authors'])
+      self.assertEqual('nominee', row['result'])
+      self.assertEqual(fetcher.URL + '_' + str(year), row['source']['url'])
+
+  def test_aurealis_related_childrens_picture_recipe_retains_named_writer_and_artist(self):
+    from url_fetcher.aurealis import UrlFetcherAurealisChildrensFictionPictures
+    fetcher = UrlFetcherAurealisChildrensFictionPictures()
+    html = '''<div class="categoryblock"><div class="category">Children's Fiction Told Primarily Through Pictures</div>
+      <ul><li><span class="winner">Winner:</span> <b>Sounds Spooky</b>,
+      <a href="Christopher_Cheng">Christopher Cheng</a> (author) and
+      <a href="Sarah_Davis">Sarah Davis</a> (illustrator) (Publisher)</li></ul></div>'''
+    rows = fetcher.parser().parse_year(html, fetcher.URL + '_2012', 2012,
+      fetcher.CATEGORY, fetcher.sfadb_aliases())
+    self.assertEqual(1, len(rows))
+    self.assertEqual('Sounds Spooky', rows[0]['title'])
+    self.assertEqual(['Christopher Cheng', 'Sarah Davis'], rows[0]['authors'])
+    self.assertEqual('2012', rows[0]['position'])
+
+  def test_aurealis_composite_illustrated_title_keeps_work_prefix_and_creator_boundary(self):
+    from lxml import html as lxml_html
+    from url_fetcher.aurealis import UrlFetcherAurealisChildrens812IllustratedWorkPictureBook
+    fetcher = UrlFetcherAurealisChildrens812IllustratedWorkPictureBook()
+    node = lxml_html.fromstring('''<li><span class="winner">Winner:</span>
+      <b>Escape!</b>, <b>Under Siege</b>, <b>Race to the Ruins</b>, <b>The Heavy Crown</b>
+      (The Wolf Kingdom series), <a href="Richard_Harland">Richard Harland</a>,
+      illustrated by <a href="Laura_Peterson">Laura Peterson</a> (Scholastic)</li>''')
+    row = fetcher.parser().parse_item_node(node)
+    self.assertEqual('Escape!, Under Siege, Race to the Ruins, The Heavy Crown', row['title'])
+    self.assertEqual(['Richard Harland', 'Laura Peterson'], row['authors'])
+    self.assertEqual('winner', row['result'])
+
+  def test_aurealis_isfdb_graphic_categories_clean_role_credit_from_saved_scraps(self):
+    from url_fetcher.aurealis import UrlFetcherAurealisGraphicNovelIllustratedWork
+    fetcher = UrlFetcherAurealisGraphicNovelIllustratedWork()
+    urls = fetcher.isfdb_urls()
+    folder = SCRAPS_ISFDB_ROOT / 'aurealis_categories'
+    sources = dict(zip(urls, [
+      (folder / filename).read_bytes().decode('iso-8859-1') for filename in (
+        'aurealis_graphic_novel_illustrated_work.html',
+        'aurealis_graphic_novel_illustrated_work_alt.html')]))
+    parsed = fetcher.parse_isfdb_pages(sources[urls[0]], urls[0], urls, fetch_url=sources.__getitem__)
+    self.assertEqual(48, len(parsed['entries']))
+    by_title = {row['title']: row for row in parsed['entries']}
+    self.assertEqual(['Tom Taylor', 'James Brouwer'], by_title['The Deep: Here be Dragons']['authors'])
+    self.assertEqual(['Mirranda Burton'], by_title['Hidden']['authors'])
+    self.assertEqual([], parsed['notes'])
+
   def test_aurealis_isfdb_category_smoke_uses_saved_scraps(self):
     from url_fetcher.aurealis import UrlFetcherAurealisSFNovel
 
@@ -19045,15 +19741,83 @@ class AwardParserSmokeTest(unittest.TestCase):
     url = 'https://www.isfdb.org/cgi-bin/award_category.cgi?50+1'
 
     parsed = fetcher.parse_isfdb_pages(
-      load_text(path),
+      path.read_bytes().decode('iso-8859-1'),
       url,
       (url,),
       fetch_url=lambda extra_url: self.fail(f'unexpected extra fetch: {extra_url}'))
 
     self.assertEqual(fetcher.NAME, parsed['name'])
-    self.assertTrue(parsed['entries'])
+    self.assertEqual(142, len(parsed['entries']))
+    by_title = {row['title']: row for row in parsed['entries']}
+    self.assertEqual(['Andrea K. Höst'], by_title['And All the Stars']['authors'])
+    self.assertEqual(['Shane Dix', 'Sean Williams'], by_title['The Unknown Soldier']['authors'])
     self.assertTrue(all(
       entry.get('category') == fetcher.CATEGORY for entry in parsed['entries']))
+
+  def test_aurealis_isfdb_requests_use_camoufox_first_for_every_category(self):
+    from url_fetcher.aurealis import UrlFetcherAurealisSFNovel
+    fetcher = UrlFetcherAurealisSFNovel()
+    fetcher.ISFDB_CATEGORY_IDS = (50, 51)
+    urls = fetcher.isfdb_urls()
+    calls = []
+
+    def fetch(url, **kwargs):
+      calls.append((url, kwargs))
+      self.assertNotIn('user_agent', kwargs)
+      index = urls.index(url) + 1
+      return f'''<table><tr><th>Year</th><th>Level</th><th>Title</th><th>Author</th></tr>
+        <tr><td>2025</td><td>Nomination</td><td>Book {index}</td><td>Author Person</td></tr></table>'''
+
+    parsed = fetcher.fetch_and_parse(fetch, source_choice=1)
+    self.assertEqual([(url, {'transport': 'camoufox'}) for url in urls], calls)
+    self.assertEqual(['Book 1', 'Book 2'], [row['title'] for row in parsed['entries']])
+    attempts = fetcher.source_attempts()
+    self.assertIsNone(attempts[0].user_agent)
+    self.assertIsNone(attempts[1].user_agent)
+    self.assertIsNone(attempts[2].user_agent)
+
+  def test_isfdb_starred_finalists_require_an_explicit_result_section_in_the_same_year(self):
+    from parser.isfdb_base import ISFDBAwardParserBase
+    parser = ISFDBAwardParserBase()
+    parser.AWARD_NAME = 'Aurealis Award'
+    html = '''<table><tr><td colspan="3">2015</td></tr>
+      <tr><td>*</td><td>Unknown Before Section</td><td>Writer</td></tr>
+      <tr><td>Win</td><td>Winning Book</td><td>First Author</td></tr>
+      <tr><td colspan="3">--- Finalists -------</td></tr>
+      <tr><td>*</td><td>The Earthborn</td><td>Paul Collins</td></tr>
+      <tr><td>Nomination</td><td>Explicit Nominee</td><td>Another Author</td></tr>
+      <tr><td colspan="3">2016</td></tr>
+      <tr><td>*</td><td>Unknown After Year Change</td><td>Writer</td></tr>
+      <tr><td>Win</td><td>Next Winner</td><td>Next Author</td></tr>
+      <tr><td colspan="3">Unknown section</td></tr>
+      <tr><td>*</td><td>Unknown After Heading</td><td>Writer</td></tr></table>'''
+    parsed = parser.parse(
+      html, 'https://www.isfdb.org/cgi-bin/award_category.cgi?50+1',
+      'Aurealis - SF Novel', 'SF Novel', ('sf novel',))
+    rows = {row['title']: row for row in parsed['entries']}
+    self.assertEqual({'Winning Book', 'The Earthborn', 'Explicit Nominee', 'Next Winner'}, set(rows))
+    self.assertEqual('nominee', rows['The Earthborn']['result'])
+    self.assertEqual(['Paul Collins'], rows['The Earthborn']['authors'])
+    self.assertEqual('2015', rows['The Earthborn']['award_year'])
+    self.assertEqual('winner', rows['Next Winner']['result'])
+
+  def test_aurealis_isfdb_secondary_category_cancellation_does_not_return_partial_rows(self):
+    from url_fetcher.aurealis import UrlFetcherAurealisSFNovel
+    fetcher = UrlFetcherAurealisSFNovel()
+    fetcher.ISFDB_CATEGORY_IDS = (50, 51)
+    urls = fetcher.isfdb_urls()
+    calls = []
+
+    def fetch(url, **_kwargs):
+      calls.append(url)
+      if url == urls[1]:
+        raise main.ImportCancelledError('cancelled during second category')
+      return '''<table><tr><th>Year</th><th>Level</th><th>Title</th><th>Author</th></tr>
+        <tr><td>2025</td><td>Win</td><td>A Book</td><td>Author Person</td></tr></table>'''
+
+    with self.assertRaises(main.ImportCancelledError):
+      fetcher.fetch_and_parse(fetch, source_choice=1)
+    self.assertEqual(list(urls), calls)
 
   def test_aurealis_childrens_book_uses_single_sfadb_category_alias(self):
     from url_fetcher.aurealis import UrlFetcherAurealisChildrensBook
@@ -27262,6 +28026,258 @@ were ''[[Go Deep]]'' by [[Rilzy Adams]].
     self.assertEqual(fetcher.NAME, parsed['name'])
     self.assertEqual(['Red Herring'], [entry['title'] for entry in parsed['entries']])
 
+class ClarkeAuthorCreditTest(unittest.TestCase):
+
+  def test_official_translator_credits_are_excluded_from_work_authors(self):
+    from parser.clarke import OfficialClarkeParser
+    parser = OfficialClarkeParser()
+    for credit, expected in (
+        ('Herv\u00e9 Le Tellier, translated by Adriana Hunter', 'Herv\u00e9 Le Tellier'),
+        ('Herv\u00e9 Le Tellier translated by Adriana Hunter', 'Herv\u00e9 Le Tellier'),
+        ('Herv\u00e9 Le Tellier; TRANSLATED BY Adriana Hunter', 'Herv\u00e9 Le Tellier'),
+        ('Writer, Jr., translated by Another Person', 'Writer, Jr.'),
+        ('Writer & Coauthor, translated by Another Person', 'Writer & Coauthor')):
+      with self.subTest(credit=credit):
+        row = parser.parse_item('The Anomaly - ' + credit)
+        self.assertEqual(expected, row['author'])
+        self.assertEqual('The Anomaly', row['title'])
+    self.assertIsNone(parser.parse_item('A Book - translated by Another Person'))
+    row = parser.parse_item('Translated by Moonlight - Original Writer')
+    self.assertEqual('Translated by Moonlight', row['title'])
+    self.assertEqual('Original Writer', row['author'])
+
+  def test_official_clarke_recipe_keeps_positions_provenance_and_clean_match_evidence(self):
+    from url_fetcher.clarke import UrlFetcherArthurCClarkeAwardNovel
+    recipe = UrlFetcherArthurCClarkeAwardNovel()
+    html = '''<section id="home-section"><p>Other Writer - Homepage text</p></section>
+      <section id="about-section"><h2>Winners and shortlists</h2>
+      <p><em>2023</em><br>Venomous Lumpsucker - Ned Beauman - WINNER<br>
+      The Red Scholar's Wake - Aliette de Bodard<br>
+      Plutoshine - Lucy Kissick<br>
+      The Anomaly - Herv\u00e9 Le Tellier, translated by Adriana Hunter<br>
+      The Coral Bones - E. J. Swift<br>Metronome - Tom Watson</p>
+      <p>To submit titles for the next award please contact us</p></section>'''
+    parsed = recipe.fetch_and_parse(lambda _url: html, source_choice=0)
+    self.assertEqual(6, len(parsed['entries']))
+    row = parsed['entries'][3]
+    self.assertEqual('The Anomaly', row['title'])
+    self.assertEqual(['Herv\u00e9 Le Tellier'], row['authors'])
+    self.assertEqual('2023.03', row['position'])
+    self.assertEqual('nominee', row['result'])
+    self.assertEqual('https://www.clarkeaward.com/#about', row['source']['url'])
+    self.assertTrue(matching.import_list_review_auto_candidate_evidence(
+      row, 'The Anomaly', ['Herv\u00e9 Le Tellier'])['auto_eligible'])
+
+
+class ClarkeSFADBTest(unittest.TestCase):
+
+  OVERVIEW = '''<a href="Arthur_C_Clarke_Award_1989">1989</a>
+    <a href="Arthur_C_Clarke_Award_2023">2023</a>'''
+  YEAR_1989 = '''<div class="categoryblock">
+    <div class="category"><span class="winner">Winner</span></div>
+    <ul><li><b>Unquenchable Fire</b>, <a href="Rachel_Pollack">Rachel Pollack</a> (Century)</li></ul></div>
+    <div class="categoryblock"><div class="category">Runner-up</div>
+    <ul><li><b>The Empire of Fear</b>, <a href="Brian_Stableford">Brian Stableford</a> (Publisher)</li></ul></div>
+    <div class="categoryblock"><div class="category">Third Place</div>
+    <ul><li><b>Rumours of Spring</b>, <a href="Richard_Grant">Richard Grant</a> (Publisher)</li></ul></div>
+    <div class="categoryblock"><div class="category">Shortlist</div>
+    <ul><li><b>Kairos</b>, <a href="Gwyneth_Jones">Gwyneth Jones</a> (Publisher)</li></ul></div>
+    <div class="categoryblock"><div class="category">Judges</div>
+    <ul><li><b>Not a book</b>, <a href="Judge">Judge Person</a></li></ul></div>
+    <h2>Shortlist</h2><p>Outside the blocks, Unrelated Person</p>'''
+  YEAR_2023 = '''<html><head><meta charset="utf-8"></head><body>
+    <div class="categoryblock"><div class="category">Winner</div>
+    <ul><li><b>Venomous Lumpsucker</b>, <a href="Ned_Beauman">Ned Beauman</a> (Sceptre)</li></ul></div>
+    <div class="categoryblock"><div class="category">Shortlist</div><ul>
+    <li><b>The Anomaly</b>, <a href="Herve_Le_Tellier">Herv\u00e9 Le Tellier</a>,
+    translated by <a href="Adriana_Hunter">Adriana Hunter</a> (Michael Joseph)</li>
+    <li><b>Translated by Moonlight, A Novel</b>, <a href="Writer">Writer, Jr.</a> &amp;
+    <a href="Coauthor">Second Writer</a>, <em>translated by</em>
+    <a href="Translator">Another Person</a> (Publisher)</li>
+    </ul></div></body></html>'''
+
+  def test_sfadb_blocks_preserve_canonical_schema_placings_and_year_provenance(self):
+    from parser.clarke import ClarkeParser
+    url = 'https://www.sfadb.com/Arthur_C_Clarke_Award_1989'
+    rows = ClarkeParser().parse_year(self.YEAR_1989, url, 1989, 'Novel', ())
+    self.assertEqual(['1989', '1989.01', '1989.02', '1989.03'], [row['position'] for row in rows])
+    self.assertEqual(['winner', 'runner-up', 'third-place', 'nominee'], [row['result'] for row in rows])
+    self.assertEqual('Rumours of Spring', rows[2]['title'])
+    self.assertEqual(['Richard Grant'], rows[2]['authors'])
+    for row in rows:
+      self.assertEqual(url, row['source']['url'])
+      self.assertEqual('1989', row['award_year'])
+      self.assertEqual('Arthur C. Clarke Award', row['award'])
+      self.assertEqual('Novel', row['category'])
+      self.assertNotIn('author', row)
+      self.assertNotIn('source_url', row)
+
+  def test_sfadb_structural_credits_keep_title_commas_suffixes_and_exclude_translators(self):
+    from parser.clarke import ClarkeParser
+    url = 'https://www.sfadb.com/Arthur_C_Clarke_Award_2023'
+    for html in (self.YEAR_2023, self.YEAR_2023.encode('utf-8')):
+      rows = ClarkeParser().parse_year(html, url, 2023, 'Novel', ())
+      self.assertEqual(3, len(rows))
+      self.assertEqual(['Herv\u00e9 Le Tellier'], rows[1]['authors'])
+      self.assertEqual('The Anomaly', rows[1]['title'])
+      self.assertEqual('Translated by Moonlight, A Novel', rows[2]['title'])
+      self.assertEqual(['Writer, Jr.', 'Second Writer'], rows[2]['authors'])
+
+  def test_sfadb_legacy_rows_still_build_schema2_entries(self):
+    from parser.clarke import ClarkeParser
+    url = 'https://www.sfadb.com/Arthur_C_Clarke_Award_2023'
+    rows = ClarkeParser().parse_year('''<h2>Winner</h2><p>Winner Book, Original Writer (Publisher)</p>
+      <h2>Shortlist</h2><p>The Anomaly, Herv\u00e9 Le Tellier, translated by Adriana Hunter (Publisher)</p>
+      <p>Another Book, Writer, Jr. (Publisher)</p><h2>Copyright</h2><p>Not a book, Person</p>''',
+      url, 2023, 'Novel', ())
+    self.assertEqual(3, len(rows))
+    self.assertEqual(['Herv\u00e9 Le Tellier'], rows[1]['authors'])
+    self.assertEqual(['Writer, Jr.'], rows[2]['authors'])
+    self.assertEqual('The Anomaly', rows[1]['title'])
+    self.assertTrue(all(row['source']['url'] == url for row in rows))
+
+  def test_sfadb_explicit_and_automatic_fallback_fetch_flows(self):
+    from url_fetcher.clarke import UrlFetcherArthurCClarkeAwardNovel
+    for choice in (1, 'automatic'):
+      with self.subTest(choice=choice):
+        recipe = UrlFetcherArthurCClarkeAwardNovel()
+        calls = []
+        def fetch(url):
+          calls.append(url)
+          if url == recipe.URL:
+            raise RuntimeError('official unavailable')
+          return {
+            recipe.SFADB_URL: self.OVERVIEW,
+            recipe.SFADB_URL + '_1989': self.YEAR_1989,
+            recipe.SFADB_URL + '_2023': self.YEAR_2023,
+          }[url]
+        parsed = recipe.fetch_and_parse(fetch, source_choice=choice)
+        self.assertEqual(7, len(parsed['entries']))
+        expected = [recipe.SFADB_URL, recipe.SFADB_URL + '_1989', recipe.SFADB_URL + '_2023']
+        self.assertEqual(expected if choice == 1 else [recipe.URL] + expected, calls)
+        self.assertEqual(recipe.SFADB_URL, parsed['source']['url'])
+        self.assertTrue(all(row.get('authors') and row.get('source') for row in parsed['entries']))
+
+  def test_unknown_category_blocks_do_not_trigger_flattened_fallback(self):
+    from parser.clarke import ClarkeParser
+    html = '''<div class="categoryblock"><div class="category">Judges</div>
+      <li><b>A book</b>, <a href="Person">Person</a></li></div>
+      <h2>Winner</h2><p>Unrelated Book, Person</p>'''
+    self.assertEqual([], ClarkeParser().parse_year(html, 'https://www.sfadb.com/year', 2023, 'Novel', ()))
+
+  def test_shared_result_sections_work_without_an_award_specific_year_parser(self):
+    from parser.sfadb_base import SFADBParser, StandardItemMixin
+
+    class SectionAward(StandardItemMixin, SFADBParser):
+      AWARD_NAME = 'Example Award'
+      RESULT_SECTIONS = {'winner': 'winner', 'shortlist': 'nominee'}
+      CATEGORY_BOUNDARIES = frozenset({'judges'})
+
+    rows = SectionAward().parse_year('''<div class="categoryblock">
+      <div class="category">Winner</div><li>First Book, First Author (Publisher)</li>
+      <li>Second Book, Second Author (Publisher)</li></div>
+      <div class="categoryblock"><div class="category">Shortlist</div>
+      <li>Third Book, Third Author (Publisher)</li></div>''',
+      'https://www.sfadb.com/Example_2023', 2023, 'Novel', ())
+    self.assertEqual(['2023', '2023', '2023.01'], [row['position'] for row in rows])
+    self.assertEqual(['winner', 'winner', 'nominee'], [row['result'] for row in rows])
+    self.assertEqual(['Third Author'], rows[2]['authors'])
+
+  def test_sfadb_year_fetch_cancellation_stops_before_next_year(self):
+    from url_fetcher.clarke import UrlFetcherArthurCClarkeAwardNovel
+    recipe = UrlFetcherArthurCClarkeAwardNovel()
+    calls = []
+    def fetch(url):
+      calls.append(url)
+      if url == recipe.SFADB_URL:
+        return self.OVERVIEW
+      raise main.ImportCancelledError('cancelled during first year')
+    with self.assertRaises(main.ImportCancelledError):
+      recipe.fetch_and_parse(fetch, source_choice=1)
+    self.assertEqual([recipe.SFADB_URL, recipe.SFADB_URL + '_1989'], calls)
+
+
+class SFADBAdapterAuditTest(unittest.TestCase):
+
+  def test_british_fantasy_decorated_novel_headings_stay_in_their_category(self):
+    from parser.british_fantasy import BritishFantasySFADBParser
+    from url_fetcher.british_fantasy import (
+      UrlFetcherBritishFantasyBestNovel, UrlFetcherBritishFantasyFantasyNovel,
+      UrlFetcherBritishFantasyHorrorNovel,
+    )
+    html = '''<div class="categoryblock"><div class="category">Fantasy Novel (robert Holdstock Award)</div>
+      <li><b>Fantasy Book</b>, <a>Fantasy Writer</a> (Publisher)</li></div>
+      <div class="categoryblock"><div class="category">Horror Novel (august Derleth Award)</div>
+      <li><b>Horror Book</b>, <a>Horror Writer</a> (Publisher)</li></div>
+      <div class="categoryblock"><div class="category">August Derleth Award (novel)</div>
+      <li><b>Historical Book</b>, <a>Historical Writer</a> (Publisher)</li></div>'''
+    for factory, expected, year in (
+        (UrlFetcherBritishFantasyFantasyNovel, 'Fantasy Book', 2025),
+        (UrlFetcherBritishFantasyHorrorNovel, 'Horror Book', 2025),
+        (UrlFetcherBritishFantasyBestNovel, 'Historical Book', 2011)):
+      f = factory()
+      with self.subTest(category=f.CATEGORY):
+        rows = BritishFantasySFADBParser().parse_year(
+          html, 'https://www.sfadb.com/British_Fantasy_Awards_' + str(year),
+          year, f.CATEGORY, f.CATEGORY_ALIASES)
+        self.assertEqual([expected], [row['title'] for row in rows])
+
+  def test_locus_annual_cancellation_is_not_swallowed_as_a_failed_year(self):
+    from parser.locus import LocusAnnualAwardsParser
+    overview = '<a href="Locus_Awards_2024">2024</a><a href="Locus_Awards_2025">2025</a>'
+    calls = []
+    def fetch(url):
+      calls.append(url)
+      raise main.ImportCancelledError('cancelled during first year')
+    with self.assertRaises(main.ImportCancelledError):
+      LocusAnnualAwardsParser().parse(
+        overview, 'https://www.sfadb.com/Locus_Awards', 'Locus - SF Novel',
+        'SF Novel', ('sf novel',), fetch_url=fetch)
+    self.assertEqual(['https://www.sfadb.com/Locus_Awards_2024'], calls)
+
+  def test_legacy_year_page_uses_shared_sections_and_keeps_citation_positions(self):
+    from parser.philip_k_dick import PhilipKDickParser
+    overview = '<a href="Philip_K_Dick_Award_2026">2026</a>'
+    html = '''<h2>Winner</h2><p>Winning Book, First Author (Publisher)</p>
+      <h2>Special Citation</h2><p>First Citation, Writer, Jr. (Publisher)</p>
+      <p>Second Citation, Another Writer (Publisher)</p>
+      <h2>Finalists</h2><p>Finalist One, Two Writers &amp; Coauthor (Publisher)</p>
+      <p>Finalist Two, Original Writer, translated by Translator Person (Publisher)</p>
+      <h2>Copyright</h2><p>Not a book, Person</p>'''
+    parsed = PhilipKDickParser().parse(
+      overview, 'https://www.sfadb.com/Philip_K_Dick_Award', fetch_url=lambda _url: html)
+    rows = {row['title']: row for row in parsed['entries']}
+    self.assertEqual(5, len(rows))
+    self.assertEqual('2026', rows['Winning Book']['position'])
+    self.assertEqual('2026.5', rows['First Citation']['position'])
+    self.assertEqual('2026.51', rows['Second Citation']['position'])
+    self.assertEqual('2026.01', rows['Finalist One']['position'])
+    self.assertEqual('2026.02', rows['Finalist Two']['position'])
+    self.assertEqual(['Writer, Jr.'], rows['First Citation']['authors'])
+    self.assertEqual(['Original Writer'], rows['Finalist Two']['authors'])
+    for row in rows.values():
+      self.assertEqual('https://www.sfadb.com/Philip_K_Dick_Award_2026', row['source']['url'])
+      self.assertNotIn('author', row)
+      self.assertNotIn('source_url', row)
+
+  def test_structured_and_legacy_result_sections_have_identical_entries(self):
+    from parser.philip_k_dick import PhilipKDickParser
+    structured = '''<div class="categoryblock"><div class="category">Winner</div>
+      <li><b>First Book</b>, <a>First Author</a> (Publisher)</li></div>
+      <div class="categoryblock"><div class="category">Special Citation</div>
+      <li><b>Second Book</b>, <a>Second Author</a> (Publisher)</li></div>
+      <div class="categoryblock"><div class="category">Finalists</div>
+      <li><b>Third Book</b>, <a>Third Author</a> (Publisher)</li></div>'''
+    legacy = '''<h2>Winner</h2><p>First Book, First Author (Publisher)</p>
+      <h2>Special Citation</h2><p>Second Book, Second Author (Publisher)</p>
+      <h2>Finalists</h2><p>Third Book, Third Author (Publisher)</p>'''
+    parser = PhilipKDickParser()
+    url = 'https://www.sfadb.com/Philip_K_Dick_Award_2026'
+    self.assertEqual(
+      parser.parse_year(structured, url, 2026, 'Novel', ()),
+      parser.parse_year(legacy, url, 2026, 'Novel', ()))
+
+
 class CamoufoxPilotTest(unittest.TestCase):
 
   def setUp(self):
@@ -27271,8 +28287,6 @@ class CamoufoxPilotTest(unittest.TestCase):
       'debug_browser_fallback_level': None,
       'camoufox_first_use_confirmed': True,
     }))
-    self.enterContext(patch.object(
-      LibraryThingFetchPolicyMixin, '_session_librarything_user_agent', ''))
     self.core = main.ListSwitchboardCore(types.SimpleNamespace(), lambda **_kw: None)
     self.core.update_import_progress = lambda *_a, **_kw: None
     self.logs = []
@@ -27373,7 +28387,7 @@ class CamoufoxPilotTest(unittest.TestCase):
 
     self.assertEqual('<html>accepted</html>', policy.fetch_librarything_url(fetch, self.url))
     self.assertEqual({'transport': 'camoufox'}, calls[0])
-    self.assertEqual(3, len(calls))
+    self.assertEqual(2, len(calls))
 
   def test_successful_camoufox_never_calls_old_transport(self):
     from url_fetcher.librarything_fallback import LibraryThingFetchPolicyMixin
@@ -27446,21 +28460,32 @@ class CamoufoxPilotTest(unittest.TestCase):
         self.assertEqual(expected_url, parsed['entries'][0]['source']['url'])
         self.assertEqual(1, browser.shutdown_calls)
 
-  def test_indeterminate_progress_restores_original_range_after_failure(self):
+  def test_camoufox_wait_keeps_progress_steady_on_success_failure_and_cancellation(self):
     from camoufox_transport import CamoufoxFetchError
-    from unittest.mock import Mock, call
+    from unittest.mock import Mock
     self.capability()
-    progress = Mock()
-    progress.minimum.return_value = 0
-    progress.maximum.return_value = 1000
-    progress.value.return_value = 425
-    self.core.import_progress = progress
-    with patch.object(main, 'CamoufoxTransport') as factory:
-      factory.return_value.fetch.side_effect = CamoufoxFetchError('failed')
-      with self.assertRaises(CamoufoxFetchError):
-        self.core.fetch_url(self.url, transport='camoufox')
-    self.assertEqual([call(0, 0), call(0, 1000)], progress.setRange.call_args_list)
-    progress.setValue.assert_called_once_with(425)
+    for error in (None, CamoufoxFetchError('failed'), main.ImportCancelledError('cancelled')):
+      with self.subTest(error=error):
+        progress = Mock()
+        self.core.import_progress = progress
+        self.core.camoufox_transport = None
+        self.core._camoufox_disabled_reason = ''
+        self.core.update_import_progress = Mock()
+        with patch.object(main, 'CamoufoxTransport') as factory:
+          def fetch(*_args, **_kwargs):
+            factory.call_args.kwargs['wait_callback']('Loading page with Camoufox...')
+            if error is not None:
+              raise error
+            return '<html>page</html>'
+          factory.return_value.fetch.side_effect = fetch
+          if error is not None:
+            with self.assertRaises(type(error)):
+              self.core.fetch_url(self.url, transport='camoufox')
+          else:
+            self.assertEqual('<html>page</html>', self.core.fetch_url(self.url, transport='camoufox'))
+        self.core.update_import_progress.assert_called_once_with(message='Loading page with Camoufox...')
+        progress.setRange.assert_not_called()
+        progress.setValue.assert_not_called()
 
   def bookclub_markdown(self):
     return '# Previous Selections\n\n# 2026\n\n# October 2026\n\nModern: Current Book by Current Author\n'
@@ -28854,7 +29879,7 @@ class PulitzerSourceBoundaryTest(unittest.TestCase):
     self.assertEqual(self.URL, parsed['source']['url'])
 
 
-class DebugDisableCamoufoxTest(unittest.TestCase):
+class DebugSettingsTest(unittest.TestCase):
 
   def setUp(self):
     from unittest.mock import Mock
@@ -28913,60 +29938,29 @@ class DebugDisableCamoufoxTest(unittest.TestCase):
     with patch.object(main, 'DebugDialog', return_value=dialog):
       self.core.show_debug_dialog()
 
-  def test_saved_browser_stages_map_to_simple_checkbox(self):
-    for stage in (0, 1, 2):
-      with self.subTest(stage=stage):
-        main.prefs['debug_browser_fallback_level'] = stage
-        self.assertEqual(stage == 2, self.dialog().disable_camoufox.isChecked())
-
-  def test_legacy_preference_migration_and_new_preference_precedence(self):
-    for mode in ('automatic', 'camoufox', 'old'):
-      main.prefs['debug_browser_fallback_level'] = None
-      main.prefs['debug_librarything_transport'] = mode
-      self.assertEqual(mode == 'old', self.dialog().disable_camoufox.isChecked())
-    main.prefs['debug_browser_fallback_level'] = 0
-    self.assertFalse(self.dialog().disable_camoufox.isChecked())
-    main.prefs['debug_browser_fallback_level'] = 2
-    main.prefs['debug_librarything_transport'] = 'automatic'
-    self.assertTrue(self.dialog().disable_camoufox.isChecked())
-
   def test_source_fallback_selector_is_unchanged_and_browser_dropdown_removed(self):
     dialog = self.dialog()
     self.assertEqual([0, 1, 2, 3], [item[1] for item in dialog.force_fallback_level.items])
     self.assertNotIn('browser_fallback_level', dialog.__dict__)
-    self.assertEqual('Disable Camoufox (use legacy fetching)', dialog.disable_camoufox.label)
+    self.assertNotIn('disable_camoufox', dialog.__dict__)
 
-  def test_checkbox_save_reopen_and_enable_preserves_source_selection(self):
-    for disabled in (True, False):
+  def test_debug_save_preserves_browser_preference(self):
+    for level in (None, 0, 1, 2):
+      main.prefs['debug_browser_fallback_level'] = level
       dialog = self.dialog()
-      dialog.disable_camoufox.setChecked(disabled)
       dialog.force_fallback_level.setCurrentIndex(3)
       self.save(dialog)
-      self.assertEqual(2 if disabled else 0, main.prefs['debug_browser_fallback_level'])
+      self.assertEqual(level, main.prefs['debug_browser_fallback_level'])
       reopened = self.dialog()
-      self.assertEqual(disabled, reopened.disable_camoufox.isChecked())
       self.assertEqual(3, reopened.force_fallback_level.currentData())
 
   def test_cancel_does_not_change_saved_preferences(self):
     main.prefs['debug_browser_fallback_level'] = 1
     before = deepcopy(dict(main.prefs))
     dialog = self.dialog()
-    dialog.disable_camoufox.setChecked(True)
     self.save(dialog, accepted=False)
     self.assertEqual(before, dict(main.prefs))
     self.core.status_message.assert_not_called()
-
-  def test_disabled_checkbox_prevents_browser_api_for_all_supported_hosts(self):
-    dialog = self.dialog()
-    dialog.disable_camoufox.setChecked(True)
-    self.save(dialog)
-    with patch.object(main, 'camoufox_capability') as capability:
-      with patch.object(main, 'CamoufoxTransport') as factory:
-        for host in ('www.librarything.com', 'www.reddit.com', 'www.pulitzer.org', 'www.goodreads.com'):
-          with self.assertRaises(main.CamoufoxSkippedError):
-            self.core.fetch_url('https://' + host + '/test', transport='camoufox')
-        factory.assert_not_called()
-        capability.assert_not_called()
 
 
 if __name__ == '__main__':

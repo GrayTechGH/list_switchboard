@@ -16,7 +16,8 @@ except ImportError:
   from parser.source_fallback import SourceAttempt, SourceFallbackRunner
 
 
-OFFICIAL_URL = 'https://www.clarkeaward.com/'
+# The site's archive is hidden until its About section is selected.
+OFFICIAL_URL = 'https://www.clarkeaward.com/#about'
 SFADB_URL = 'https://www.sfadb.com/Arthur_C_Clarke_Award'
 
 

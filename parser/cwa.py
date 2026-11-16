@@ -12,7 +12,10 @@ Maintenance notes:
 - Historical and Translation use narrow year windows. Gold and Steel use
   full-history accolade streams whose duplicate boundary pages are retried to
   the pagination-derived expected count. The site randomizes equal-year cards,
-  so ordinary one-pass pagination can silently omit rows.
+  so ordinary one-pass pagination can silently omit rows. Cached overlaps need
+  single-year recovery because repeated page requests can stay identical.
+  Unresolved overlaps retain available entries with explicit missing-count notes;
+  completeness recovery must not discard a usable official-source import.
 - Translator credits are useful display context on the source page, but should
   not become part of the work author used for matching.
 """
@@ -23,12 +26,14 @@ from urllib.parse import parse_qsl, urlencode, urljoin, urlsplit, urlunsplit
 from lxml import html as lxml_html
 
 try:
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
   from calibre_plugins.list_switchboard.parser.award_base import (
     AwardParserBase, assign_positions, normalize_heading, normalize_line,
     strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
 except ImportError:
+  from errors import ImportCancelledError, CamoufoxRequiredError
   from .award_base import (
     AwardParserBase, assign_positions, normalize_heading, normalize_line,
     strip_publication_notes,
@@ -113,6 +118,7 @@ class CWADaggerParser(AwardParserBase):
   def parse_accolade_archives(
       self, html, base_url, name, category, start_year, fetch_url, log, progress,
       category_aliases=()):
+    notes = []
     initial_rows = self.parse_page(
       html, base_url, category, category_aliases)
     if not initial_rows:
@@ -155,21 +161,26 @@ class CWADaggerParser(AwardParserBase):
           message))
       completed_pages += max(state['pages'] - 1, 0)
       expected_count = self.expected_archive_count(page_rows)
-      stream_rows = self.complete_unstable_archive(
+      stream_rows, stream_notes = self.complete_unstable_archive(
         stream_rows, stream_urls, page_rows, expected_count,
         category, category_aliases,
         fetch_url, log, state['labels'], start_year, latest_year, progress,
         total_pages)
       rows.extend(stream_rows)
+      notes.extend(stream_notes)
 
     expected_years = {
       str(year) for year in range(int(start_year), latest_year + 1)
     }
     parsed_years = {row['award_year'] for row in rows}
-    if not rows or parsed_years != expected_years:
+    if not rows or (parsed_years != expected_years and not notes):
       raise ValueError(
         f'{AWARD_NAME} years {start_year}-{latest_year} '
         'did not return the expected entries.')
+    missing_years = sorted(expected_years - parsed_years, key=int)
+    if missing_years:
+      notes.append(f'{AWARD_NAME} official archive omitted years: '
+        f'{", ".join(missing_years)}.')
     self._progress(
       progress, total_pages, total_pages,
       f'Parsed {name} official accolade archives...')
@@ -178,7 +189,7 @@ class CWADaggerParser(AwardParserBase):
       name,
       base_url,
       sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
-      [])
+      notes)
 
   def fetch_accolade_pages(
       self, state, category, category_aliases, fetch_url, log,
@@ -234,15 +245,19 @@ class CWADaggerParser(AwardParserBase):
   def complete_unstable_archive(
       self, rows, page_urls, page_rows, expected_count, category, category_aliases,
       fetch_url, log, labels, start_year, latest_year, progress, total_pages):
+    notes = []
     rows = self.dedupe_rows(rows)
     group_label = self.accolade_group_label(labels)
     retry_urls = self.overlap_page_urls(page_rows, page_urls) or list(page_urls)
     for retry in range(1, MAX_STABILITY_RETRIES + 1):
       if len(rows) >= expected_count:
         break
+      previous_count = len(rows)
       for url in retry_urls:
         try:
           retry_html = fetch_url(url)
+        except (ImportCancelledError, CamoufoxRequiredError):
+          raise
         except Exception as err:
           self._log(log, 'fetch-failed', {'url': url, 'error': str(err)})
           continue
@@ -257,12 +272,71 @@ class CWADaggerParser(AwardParserBase):
           f'(pass {retry})...')
         if len(rows) >= expected_count:
           break
-    if len(rows) != expected_count:
+      if len(rows) == previous_count:
+        break
+    if len(rows) < expected_count:
+      rows, recovery_notes = self.recover_boundary_years(
+        rows, page_urls, page_rows, expected_count, category, category_aliases,
+        fetch_url, log, labels, progress, total_pages)
+      notes.extend(recovery_notes)
+    if len(rows) > expected_count:
       raise ValueError(
         f'{AWARD_NAME} {", ".join(labels)} archive returned '
         f'{len(rows)} of {expected_count} expected entries for '
         f'{start_year}-{latest_year}.')
-    return rows
+    if len(rows) < expected_count:
+      note = (
+        f'{AWARD_NAME} {", ".join(labels)} archive returned '
+        f'{len(rows)} of {expected_count} expected entries for '
+        f'{start_year}-{latest_year} after pagination overlap recovery; '
+        f'imported the available entries ({expected_count - len(rows)} missing).')
+      notes.append(note)
+      self._log(log, 'pagination-incomplete', {'note': note})
+    return rows, notes
+
+  def recover_boundary_years(
+      self, rows, page_urls, page_rows, expected_count, category, category_aliases,
+      fetch_url, log, labels, progress, total_pages):
+    # Every year spanning pages can lose cards, even when no duplicate from
+    # that year happened to survive. A one-page year query removes that boundary.
+    notes = []
+    year_pages = {}
+    for index, group in enumerate(page_rows):
+      for row in group:
+        year_pages.setdefault(row['award_year'], set()).add(index)
+    years = sorted(
+      (year for year, pages in year_pages.items() if len(pages) > 1),
+      key=int, reverse=True)
+    expected_results = {self.result_from_label(label) for label in labels}
+    accolades = tuple(label.replace(' ', '-') for label in labels)
+    for year in years:
+      self._progress(
+        progress, max(total_pages - 1, 0), total_pages,
+        f'Checking {category} {year} {self.accolade_group_label(labels)}...')
+      url = self.year_archive_url(page_urls[0], year, accolades=accolades)
+      try:
+        html = fetch_url(url)
+        recovered = self.parse_page(html, url, category, category_aliases)
+        if (self.page_count(html) != 1 or not recovered or
+            any(row['award_year'] != year or row['result'] not in expected_results
+                for row in recovered)):
+          raise ValueError('did not return one complete year page')
+        combined = self.dedupe_rows(rows + recovered)
+        if len(combined) > expected_count:
+          raise ValueError('returned more than the expected archive count')
+      except (ImportCancelledError, CamoufoxRequiredError):
+        raise
+      except Exception as err:
+        note = (
+          f'{AWARD_NAME} year {year} {", ".join(labels)} recovery '
+          f'failed: {err}')
+        notes.append(note)
+        self._log(log, 'recovery-failed', {'url': url, 'error': str(err)})
+        continue
+      rows = combined
+      if len(rows) >= expected_count:
+        break
+    return rows, notes
 
   def accolade_group_label(self, labels):
     labels = tuple(labels or ())

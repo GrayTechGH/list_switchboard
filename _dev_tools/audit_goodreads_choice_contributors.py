@@ -9,6 +9,11 @@ packaged contributor ledger.
 """
 
 import argparse
+
+try:
+  from _dev_tools.calibre_user_agent import random_user_agent
+except ImportError:
+  from calibre_user_agent import random_user_agent
 from datetime import date
 import json
 from pathlib import Path
@@ -38,9 +43,6 @@ from parser.goodreads_choice_awards import (  # noqa: E402
 )
 
 
-USER_AGENT = (
-  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
-  'AppleWebKit/537.36 Chrome/125 Safari/537.36')
 REQUEST_TIMEOUT_SECONDS = 60
 TIMEOUT_RETRIES = 3
 EXCLUDED_CATEGORY_KEYS = {
@@ -68,7 +70,7 @@ class ThrottledFetcher:
     for attempt in range(TIMEOUT_RETRIES + 1):
       self.last_request_at = time.monotonic()
       try:
-        request = Request(url, headers={'User-Agent': USER_AGENT})
+        request = Request(url, headers={'User-Agent': random_user_agent()})
         with urlopen(request, timeout=REQUEST_TIMEOUT_SECONDS) as response:
           html = response.read().decode('utf-8', errors='replace')
         if self.challenge_parser.is_challenge_page(html):

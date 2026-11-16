@@ -10,6 +10,8 @@ Maintenance notes:
 - Current nominee blocks identify winners with the ``winner`` class. The
   legacy page shape did not, so only legacy rows retain first-entry winner
   inference.
+- Archive traversal excludes navigation, footer and sidebar sections: the last
+  category must not turn later site links into author/title pairs.
 """
 
 import re
@@ -47,6 +49,9 @@ class ITWThrillerAwardsParser(AwardParserBase):
 
   def parse_rows(self, html, source_url, category, category_aliases):
     soup = BeautifulSoup(html, 'html.parser')
+    content = soup.find('main') or soup
+    for node in content.find_all(['header', 'nav', 'footer', 'aside']):
+      node.decompose()
     accepted_categories = self.accepted_category_headings(category, category_aliases)
     current_year = None
     current_category = None
@@ -54,7 +59,7 @@ class ITWThrillerAwardsParser(AwardParserBase):
     category_index = 0
     rows = []
 
-    for node in soup.find_all(['h1', 'h2', 'h3', 'li']):
+    for node in content.find_all(['h1', 'h2', 'h3', 'li']):
       text = normalize_line(node.get_text(' ', strip=True))
       if not text:
         continue

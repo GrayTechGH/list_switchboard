@@ -58,6 +58,9 @@ class UrlFetcherSeiunTranslatedNovel(UrlFetcherSeiun):
     'foreign long form',
   )
   ISFDB_CATEGORY_ALIASES = ('Best Translated Long Story',)
+  ISFDB_CATEGORY_ID = '635'
+  ISFDB_SOURCE_LABEL = 'ISFDB (original works)'
+  RESOLVE_ISFDB_ORIGINAL_WORKS = True
   USE_ISFDB_FALLBACK = True
 
 
@@ -65,6 +68,10 @@ class UrlFetcherSeiunJapaneseLongWork(UrlFetcherSeiun):
 
   source_id = 'seiun_japanese_long_work'
   NAME = 'Seiun - Japanese Long Work'
+  # SFADB explicitly covers only Seiun's foreign novel and short-story awards.
+  USE_SFADB_SOURCE = False
+  URL = 'https://www.isfdb.org/cgi-bin/awardtype.cgi?61'
+  FETCH_URLS = (URL,)
   CATEGORY = 'Japanese Long Work'
   CATEGORY_ALIASES = (
     'japanese novel',
@@ -82,14 +89,25 @@ class UrlFetcherSeiunComic(UrlFetcherSeiun):
 
   source_id = 'seiun_comic'
   NAME = 'Seiun - Comic'
+  USE_SFADB_SOURCE = False
+  ISFDB_CATEGORY_ID = '1236'
+  URL = 'https://www.isfdb.org/cgi-bin/award_category.cgi?1236+1'
+  FETCH_URLS = (URL,)
   CATEGORY = 'Comic'
   CATEGORY_ALIASES = ('comic', 'comics')
+  ISFDB_CATEGORY_ALIASES = ('Best Comics',)
+  USE_ISFDB_FALLBACK = True
 
 
 class UrlFetcherSeiunNonfiction(UrlFetcherSeiun):
 
   source_id = 'seiun_nonfiction'
   NAME = 'Seiun - Nonfiction'
+  # SFADB's two foreign-nonfiction records do not cover the full category.
+  USE_SFADB_SOURCE = False
+  ISFDB_CATEGORY_ID = '638'
+  URL = 'https://www.isfdb.org/cgi-bin/award_category.cgi?638+1'
+  FETCH_URLS = (URL,)
   FILTER_CATEGORIES = (
     CATEGORY_NONFICTION,
     CATEGORY_SCIENCE_FICTION,

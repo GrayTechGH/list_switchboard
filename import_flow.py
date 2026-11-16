@@ -256,7 +256,9 @@ class ImportFlowMixin:
       parsed = self.fetch_and_parse_recipe(
         recipe,
         import_options=import_options,
-        cache=cache if can_incrementally_update else None)
+        cache=cache if can_incrementally_update else None,
+        **({'original_work_cache': cache}
+          if getattr(recipe, 'RESOLVE_ISFDB_ORIGINAL_WORKS', False) else {}))
     except (ImportCancelledError, CamoufoxRequiredError):
       raise
     except Exception:
@@ -306,6 +308,7 @@ class ImportFlowMixin:
     progress.setAutoReset(False)
     progress.setValue(0)
     constrain_import_progress_dialog(progress)
+    progress.show()
     QApplication.processEvents()
     return progress
 
@@ -384,6 +387,9 @@ class ImportFlowMixin:
     if value is not None:
       progress.setValue(value)
       constrain_import_progress_dialog(progress)
+    is_hidden = getattr(progress, 'isHidden', None)
+    if is_hidden is not None and is_hidden() and not progress.wasCanceled():
+      progress.show()
     QApplication.processEvents()
     if message is not None or value is not None:
       constrain_import_progress_dialog(progress)
@@ -468,7 +474,8 @@ class ImportFlowMixin:
       self.close_import_progress()
 
   @with_browser_operation
-  def fetch_and_parse_recipe(self, recipe, import_options=None, cache=None):
+  def fetch_and_parse_recipe(
+      self, recipe, import_options=None, cache=None, original_work_cache=None):
     import_options = import_options or {}
     source_choice = import_options.get('source_choice', 'automatic')
     if bool(import_options.get('disable_fallbacks', False)):
@@ -493,6 +500,8 @@ class ImportFlowMixin:
         # older custom fetchers retain their existing fetch_and_parse signature.
         fetch_kwargs['cached_parsed'] = cache
         fetch_kwargs['incremental_update'] = True
+      if getattr(recipe, 'RESOLVE_ISFDB_ORIGINAL_WORKS', False):
+        fetch_kwargs['original_work_cache'] = original_work_cache
       return recipe.fetch_and_parse(
         self.fetch_url,
         **fetch_kwargs)
@@ -728,6 +737,12 @@ class ImportFlowMixin:
     return position_key, str(position), book_id
 
   def reconcile_review_rows_with_active_list(self, list_name, review_rows, active_name=None):
+    """Reconcile every recipe by work identity, independent of source positions.
+
+    Current row ownership and saved directives take precedence. An unassigned
+    active book needs one title/series-and-author candidate across the import;
+    its old position cannot create a match or break an identity tie.
+    """
     rows = list(review_rows or [])
     if not rows:
       return rows, []
@@ -746,11 +761,6 @@ class ImportFlowMixin:
         row.get('imported_position', '') or (row.get('entry') or {}).get('position', ''))
       if position:
         rows_by_position.setdefault(position, []).append(row)
-
-    book_to_row = {}
-    for row in rows:
-      for book_id in row.get('book_ids') or []:
-        book_to_row[book_id] = row
 
     for row in rows:
       if row.get('ignored') or not row.get('matched'):
@@ -780,39 +790,47 @@ class ImportFlowMixin:
     notes = []
     unknown_position_count = 0
     ambiguous_position_count = 0
-    active_positions = self.active_review_positions_by_book(active_book_ids)
-    book_details = self.review_book_details(active_book_ids)
-    active_series = (
-      self.all_local_series_values(active_book_ids)
-      if any(len(position_rows) > 1 for position_rows in rows_by_position.values())
-      else {})
-    for book_id, position in active_positions.items():
-      target_rows = rows_by_position.get(position, [])
-      if not target_rows:
-        unknown_position_count += 1
-        continue
+    owned_book_ids = {
+      book_id for row in rows if row.get('matched')
+      for book_id in (row.get('book_ids') or [])
+    }
+    unresolved_book_ids = active_book_ids - owned_book_ids
+    if not unresolved_book_ids:
+      return rows, notes
+    active_positions = self.active_review_positions_by_book(unresolved_book_ids)
+    book_details = self.review_book_details(unresolved_book_ids)
+    active_series = self.all_local_series_values(unresolved_book_ids)
+    rows_by_identity = {}
+    for index, row in enumerate(rows):
+      for key in self.import_entry_keys(row.get('entry') or {}):
+        rows_by_identity.setdefault(key, []).append(index)
+    for book_id in sorted(unresolved_book_ids):
+      detail = book_details.get(book_id) or {}
+      by_title, by_series = self.import_match_indexes(
+        [book_id], {book_id: detail.get('matched_title', '')},
+        {book_id: active_series.get(book_id, [])})
+      candidate_indexes = {
+        index for key in (*by_title, *by_series)
+        for index in rows_by_identity.get(key, [])
+      }
+      target_rows = [rows[index] for index in sorted(candidate_indexes)]
       target_row = self.active_position_target_row(
         book_id, target_rows, book_details, active_series.get(book_id, []))
       if target_row is None:
-        ambiguous_position_count += 1
+        if active_positions.get(book_id) not in rows_by_position:
+          unknown_position_count += 1
+        else:
+          ambiguous_position_count += 1
         continue
       if target_row.get('ignored'):
         continue
+      if target_row.get('saved_choice_conflict'):
+        continue
       if self.review_row_excludes_active_book(target_row, book_id):
         continue
-      current_row = book_to_row.get(book_id)
-      if current_row is target_row and book_id in (target_row.get('book_ids') or []):
+      if target_row.get('match_source') == 'saved/manual override':
         continue
-      if (
-          current_row is not None
-          and self.review_row_match_is_automatic(current_row)
-          and current_row is not target_row
-          and self.review_row_match_is_automatic(target_row)):
-        continue
-      if current_row is not None and current_row is not target_row:
-        self.remove_book_from_review_row(current_row, book_id)
       self.add_active_manual_match_to_review_row(target_row, book_id, book_details)
-      book_to_row[book_id] = target_row
 
     if unknown_position_count:
       notes.append(
@@ -820,7 +838,7 @@ class ImportFlowMixin:
     if ambiguous_position_count:
       notes.append(
         f'{ambiguous_position_count} current Active List book(s) could not be assigned '
-        'unambiguously to entries sharing a position.')
+        'unambiguously to imported entries by book identity.')
     return rows, notes
 
   def review_row_match_is_automatic(self, row):
@@ -857,17 +875,15 @@ class ImportFlowMixin:
     }
 
   def active_position_target_row(self, book_id, rows, book_details, book_series=None):
-    """Reconcile current membership without treating a tied rank as row identity.
+    """Resolve candidate rows by identity; retained name is a compatibility hook.
 
-    Saved/current row ownership wins. A sole position still represents a manual
-    index edit; ties require unique title/series and author evidence through the
-    saved-match reconciliation helpers, without network recovery or new auto rules.
+    Saved/current row ownership wins. Every other candidate needs unique
+    title/series and author evidence, regardless of recipe, source or position.
+    This uses existing matching helpers without network recovery.
     """
     for row in rows:
       if book_id in (row.get('book_ids') or []):
         return row
-    if len(rows) == 1:
-      return rows[0]
     detail = book_details.get(book_id) or {}
     authors = detail.get('matched_authors') or []
     if not authors:

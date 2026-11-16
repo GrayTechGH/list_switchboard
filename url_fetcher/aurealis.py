@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # vim:fileencoding=UTF-8:ts=2:sw=2:sta:et:sts=2:ai
 
+from .isfdb_transport import ISFDBSourceAttempt
+
 from .generic import (
   CATEGORY_FANTASY,
   CATEGORY_HORROR_DARK_FICTION,
@@ -12,6 +14,7 @@ from .generic import (
 )
 
 try:
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError
   from calibre_plugins.list_switchboard.parser.source_fallback import (
     SourceAttempt, SourceFallbackRunner,
   )
@@ -19,6 +22,7 @@ try:
     LibraryThingAwardFallbackMixin, LibraryThingSourceAttempt,
   )
 except ImportError:
+  from errors import ImportCancelledError
   from parser.source_fallback import SourceAttempt, SourceFallbackRunner
   from url_fetcher.librarything_fallback import (
     LibraryThingAwardFallbackMixin, LibraryThingSourceAttempt,
@@ -59,6 +63,7 @@ class UrlFetcherAurealis(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
   SFADB_CATEGORY_ALIASES = ()
   SFADB_YEARS = ()
   SKIP_QUOTED = False
+  PREFER_LINKED_CREDITS = False
   ISFDB_CATEGORY_IDS = ()
   LIBRARYTHING_CATEGORY_ALIASES = ()
   USE_LIBRARYTHING_FALLBACK = True
@@ -71,7 +76,8 @@ class UrlFetcherAurealis(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
 
     return AurealisParser(
       skip_quoted=self.SKIP_QUOTED,
-      allowed_years=self.SFADB_YEARS)
+      allowed_years=self.SFADB_YEARS,
+      prefer_linked_credits=self.PREFER_LINKED_CREDITS)
 
   def create_isfdb_parser(self):
     try:
@@ -135,15 +141,20 @@ class UrlFetcherAurealis(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
     ]
     isfdb_urls = self.isfdb_urls()
     if isfdb_urls:
-      attempts.append(SourceAttempt(
+      attempts.append(ISFDBSourceAttempt(
         'ISFDB',
         isfdb_urls[0],
         lambda html, url, **kwargs: self.parse_isfdb_pages(
           html, url, isfdb_urls, **kwargs),
-        source_rank=1))
+        source_rank=1,
+        page_validator=self.isfdb_page_usable))
     if self.USE_LIBRARYTHING_FALLBACK:
       attempts.append(self.librarything_attempt(source_rank=2))
     return tuple(attempts)
+
+  def isfdb_page_usable(self, html, url):
+    return bool(self.create_isfdb_parser().parse(
+      html, url, self.NAME, self.CATEGORY, self.CATEGORY_ALIASES).get('entries'))
 
   def source_choices(self):
     return SourceFallbackRunner(self.source_attempts()).source_choices()
@@ -170,6 +181,8 @@ class UrlFetcherAurealis(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
           self.CATEGORY_ALIASES)
         entries.extend(extra.get('entries', ()))
         notes.extend(extra.get('notes', ()))
+      except ImportCancelledError:
+        raise
       except Exception as err:
         notes.append(f'{self.AWARD_NAME} ISFDB category {url} could not be fetched: {err}')
         if log is not None:
@@ -275,6 +288,7 @@ class UrlFetcherAurealisCollection(UrlFetcherAurealis):
 
 
 class UrlFetcherAurealisGraphicNovelIllustratedWork(UrlFetcherAurealis):
+  PREFER_LINKED_CREDITS = True
   source_id = 'aurealis_graphic_novel_illustrated_work'
   NAME = 'Aurealis - Graphic Novel/Illustrated Work'
   FILTER_CATEGORIES = SPECULATIVE_REGIONAL_CATEGORIES
@@ -298,6 +312,7 @@ class UrlFetcherAurealisYoungAdultNovel(UrlFetcherAurealis):
 
 
 class UrlFetcherAurealisChildrensFiction(UrlFetcherAurealis):
+  PREFER_LINKED_CREDITS = True
   source_id = 'aurealis_childrens_fiction'
   NAME = "Aurealis - Children's Fiction"
   FILTER_CATEGORIES = YOUNG_READER_SPECULATIVE_REGIONAL_CATEGORIES
@@ -307,6 +322,7 @@ class UrlFetcherAurealisChildrensFiction(UrlFetcherAurealis):
 
 
 class UrlFetcherAurealisChildrensBook(UrlFetcherAurealis):
+  PREFER_LINKED_CREDITS = True
   source_id = 'aurealis_childrens_book'
   NAME = "Aurealis - Children's Book (discontinued)"
   FILTER_CATEGORIES = YOUNG_READER_SPECULATIVE_REGIONAL_CATEGORIES
@@ -321,6 +337,7 @@ class UrlFetcherAurealisChildrensBook(UrlFetcherAurealis):
 
 
 class UrlFetcherAurealisChildrensFictionWords(UrlFetcherAurealis):
+  PREFER_LINKED_CREDITS = True
   source_id = 'aurealis_childrens_fiction_words'
   NAME = "Aurealis - Children's Fiction (Words) (discontinued)"
   FILTER_CATEGORIES = YOUNG_READER_SPECULATIVE_REGIONAL_CATEGORIES
@@ -341,6 +358,7 @@ class UrlFetcherAurealisChildrensFictionWords(UrlFetcherAurealis):
 
 
 class UrlFetcherAurealisChildrensFictionPictures(UrlFetcherAurealis):
+  PREFER_LINKED_CREDITS = True
   source_id = 'aurealis_childrens_fiction_pictures'
   NAME = "Aurealis - Children's Fiction (Pictures) (discontinued)"
   FILTER_CATEGORIES = YOUNG_READER_SPECULATIVE_REGIONAL_CATEGORIES
@@ -355,6 +373,7 @@ class UrlFetcherAurealisChildrensFictionPictures(UrlFetcherAurealis):
 
 
 class UrlFetcherAurealisChildrens812LongFiction(UrlFetcherAurealis):
+  PREFER_LINKED_CREDITS = True
   source_id = 'aurealis_childrens_8_12_long_fiction'
   NAME = "Aurealis - Children's 8-12 Long Fiction (discontinued)"
   FILTER_CATEGORIES = YOUNG_READER_SPECULATIVE_REGIONAL_CATEGORIES
@@ -368,6 +387,7 @@ class UrlFetcherAurealisChildrens812LongFiction(UrlFetcherAurealis):
 
 
 class UrlFetcherAurealisChildrens812IllustratedWorkPictureBook(UrlFetcherAurealis):
+  PREFER_LINKED_CREDITS = True
   source_id = 'aurealis_childrens_8_12_illustrated_work_picture_book'
   NAME = (
     "Aurealis - Children's 8-12 Illustrated Work/Picture Book "

@@ -22,6 +22,11 @@ from bs4 import BeautifulSoup
 from bs4.element import NavigableString, Tag
 
 try:
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError
+except ImportError:
+  from errors import ImportCancelledError
+
+try:
   from calibre_plugins.list_switchboard.parser.award_base import (
     is_author_suffix, split_title_author,
   )
@@ -93,6 +98,8 @@ class LocusAnnualAwardsParser(ListParserBase):
       _progress(progress, index, len(year_links), f'Fetching Locus Awards {year}...')
       try:
         html = fetch_url(url) if fetch_url is not None else ''
+      except ImportCancelledError:
+        raise
       except Exception as err:
         notes.append(f'Locus Awards {year} could not be fetched: {err}')
         _log(log, 'fetch-failed', {'year': year, 'url': url, 'error': str(err)})
