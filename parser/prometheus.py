@@ -28,17 +28,20 @@ try:
     entry_source_object, imported_entry,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
+  from calibre_plugins.list_switchboard.parser.incremental import (
+    ParsedUnitCache, project_parsed_units, restore_parsed_units)
   from calibre_plugins.list_switchboard.parser.sfadb_base import (
     SFADBParser, StandardItemMixin,
-    normalize_heading, normalize_line, strip_tie_marker,
+    normalize_heading, normalize_line, strip_tie_marker, html_root, node_text, parse_winner_prefix,
   )
 except ImportError:
   from .award_base import AwardParserBase
   from .base import entry_source_object, imported_entry
   from .generic import position_sort_key
+  from .incremental import ParsedUnitCache, project_parsed_units, restore_parsed_units
   from .sfadb_base import (
     SFADBParser, StandardItemMixin,
-    normalize_heading, normalize_line, strip_tie_marker,
+    normalize_heading, normalize_line, strip_tie_marker, html_root, node_text, parse_winner_prefix,
   )
 
 
@@ -243,19 +246,43 @@ class PrometheusParser(StandardItemMixin, SFADBParser):
     self.books_only = books_only
 
   def parse(self, overview_html, base_url, name, category, category_aliases,
-            fetch_url=None, log=None, progress=None):
+            fetch_url=None, log=None, progress=None, cached_parsed=None,
+            incremental_update=False, enable_incremental=False):
+    collapse = normalize_heading(category) == 'hall of fame'
+    strategy = 'prometheus-hall-projections-v1'
+    source_key = f'{base_url}|{name}|{category}|{tuple(category_aliases)}|{self.books_only}'
+    if enable_incremental and collapse:
+      cache = ParsedUnitCache(strategy, source_key, cached_parsed, incremental_update)
+      cached_parsed = restore_parsed_units(cache)
     parsed = super().parse(
       overview_html, base_url, name, category, category_aliases,
-      fetch_url=fetch_url, log=log, progress=progress)
-    if normalize_heading(category) == 'hall of fame':
-      parsed['entries'] = collapse_repeated_hall_of_fame_entries(
-        parsed.get('entries', ()))
+      fetch_url=fetch_url, log=log, progress=progress, cached_parsed=cached_parsed,
+      incremental_update=incremental_update, enable_incremental=enable_incremental,
+      configuration_key={'books_only': self.books_only})
+    if collapse:
+      collapsed = collapse_repeated_hall_of_fame_entries(parsed.get('entries', ()))
+      if enable_incremental:
+        parsed['incremental_state'] = project_parsed_units(parsed, collapsed,
+          strategy, source_key, _hall_of_fame_entry_key)
+      parsed['entries'] = collapsed
     return parsed
 
   def _filter_item(self, text):
     if self.books_only and not _is_book_like_hall_of_fame_item(text):
       return False
     return True
+
+  def unit_is_settled(self, html, entries, category, aliases):
+    if normalize_heading(category) == 'hall of fame':
+      # A short-fiction/media winner is excluded from the Calibre book scope,
+      # but its explicit winner marker still closes this historical ballot.
+      items = self.category_block_items(html_root(html), aliases)
+      for item in items or ():
+        text, result = parse_winner_prefix(node_text(item))
+        if result == 'winner' and (not self._filter_item(text) or
+            _is_quoted_title(text) or normalize_heading(text) == 'no award'):
+          return True
+    return super().unit_is_settled(html, entries, category, aliases)
 
 
 def parse_prometheus_awards(

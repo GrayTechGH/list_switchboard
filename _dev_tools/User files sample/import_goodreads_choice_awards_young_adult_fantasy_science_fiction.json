@@ -1,0 +1,5109 @@
+{
+  "append_state": {
+    "entry_count": 299,
+    "last_entry_key": "breath of the dragon|shannon lee",
+    "last_position": "2025.19",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Veronica Roth"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fantasy",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2011"
+      },
+      "title": "Divergent",
+      "votes": "8273"
+    },
+    {
+      "authors": [
+        "Cassandra Clare"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fantasy",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2011"
+      },
+      "title": "City of Fallen Angels",
+      "votes": "5655"
+    },
+    {
+      "authors": [
+        "Ransom Riggs"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fantasy",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2011"
+      },
+      "title": "Miss Peregrine's Home for Peculiar Children",
+      "votes": "4666"
+    },
+    {
+      "authors": [
+        "Richelle Mead"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fantasy",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2011"
+      },
+      "title": "Bloodlines",
+      "votes": "4509"
+    },
+    {
+      "authors": [
+        "Julie Kagawa"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fantasy",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2011"
+      },
+      "title": "The Iron Knight",
+      "votes": "2718"
+    },
+    {
+      "authors": [
+        "Becca Fitzpatrick"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fantasy",
+      "position": "2011.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2011"
+      },
+      "title": "Silence",
+      "votes": "2690"
+    },
+    {
+      "authors": [
+        "Lauren Oliver"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fantasy",
+      "position": "2011.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2011"
+      },
+      "title": "Delirium",
+      "votes": "2662"
+    },
+    {
+      "authors": [
+        "Maggie Stiefvater"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fantasy",
+      "position": "2011.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2011"
+      },
+      "title": "Forever",
+      "votes": "2620"
+    },
+    {
+      "authors": [
+        "Beth Revis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fantasy",
+      "position": "2011.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2011"
+      },
+      "title": "Across the Universe",
+      "votes": "2252"
+    },
+    {
+      "authors": [
+        "P.C. Cast"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fantasy",
+      "position": "2011.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2011"
+      },
+      "title": "Awakened",
+      "votes": "2218"
+    },
+    {
+      "authors": [
+        "Lauren DeStefano"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fantasy",
+      "position": "2011.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2011"
+      },
+      "title": "Wither",
+      "votes": "1114"
+    },
+    {
+      "authors": [
+        "Lauren Kate"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fantasy",
+      "position": "2011.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2011"
+      },
+      "title": "Passion",
+      "votes": "973"
+    },
+    {
+      "authors": [
+        "Cynthia Hand"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fantasy",
+      "position": "2011.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2011"
+      },
+      "title": "Unearthly",
+      "votes": "965"
+    },
+    {
+      "authors": [
+        "Rachel Hawkins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fantasy",
+      "position": "2011.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2011"
+      },
+      "title": "Demonglass",
+      "votes": "934"
+    },
+    {
+      "authors": [
+        "Melissa Marr"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fantasy",
+      "position": "2011.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2011"
+      },
+      "title": "Darkest Mercy",
+      "votes": "715"
+    },
+    {
+      "authors": [
+        "Laini Taylor"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fantasy",
+      "position": "2011.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2011"
+      },
+      "title": "Daughter of Smoke & Bone",
+      "votes": "708"
+    },
+    {
+      "authors": [
+        "Maureen Johnson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fantasy",
+      "position": "2011.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2011"
+      },
+      "title": "The Name of the Star",
+      "votes": "603"
+    },
+    {
+      "authors": [
+        "Tamora Pierce"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fantasy",
+      "position": "2011.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2011"
+      },
+      "title": "Mastiff",
+      "votes": "480"
+    },
+    {
+      "authors": [
+        "Scott Westerfeld"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fantasy",
+      "position": "2011.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2011"
+      },
+      "title": "Goliath",
+      "votes": "455"
+    },
+    {
+      "authors": [
+        "Lisa Tawn Bergren"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fantasy",
+      "position": "2011.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2011"
+      },
+      "title": "Waterfall",
+      "votes": "216"
+    },
+    {
+      "authors": [
+        "Veronica Roth"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fantasy",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2012"
+      },
+      "title": "Insurgent",
+      "votes": "23827"
+    },
+    {
+      "authors": [
+        "Cassandra Clare"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fantasy",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2012"
+      },
+      "title": "City of Lost Souls",
+      "votes": "14814"
+    },
+    {
+      "authors": [
+        "Richelle Mead"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fantasy",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2012"
+      },
+      "title": "The Golden Lily",
+      "votes": "7462"
+    },
+    {
+      "authors": [
+        "Marissa Meyer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fantasy",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2012"
+      },
+      "title": "Cinder",
+      "votes": "7098"
+    },
+    {
+      "authors": [
+        "Jennifer L. Armentrout"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fantasy",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2012"
+      },
+      "title": "Onyx",
+      "votes": "6072"
+    },
+    {
+      "authors": [
+        "Kristin Cashore"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fantasy",
+      "position": "2012.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2012"
+      },
+      "title": "Bitterblue",
+      "votes": "5952"
+    },
+    {
+      "authors": [
+        "Lauren Oliver"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fantasy",
+      "position": "2012.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2012"
+      },
+      "title": "Pandemonium",
+      "votes": "5089"
+    },
+    {
+      "authors": [
+        "Kiera Cass"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fantasy",
+      "position": "2012.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2012"
+      },
+      "title": "The Selection",
+      "votes": "4689"
+    },
+    {
+      "authors": [
+        "Leigh Bardugo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fantasy",
+      "position": "2012.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2012"
+      },
+      "title": "Shadow and Bone",
+      "votes": "4373"
+    },
+    {
+      "authors": [
+        "Pittacus Lore"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fantasy",
+      "position": "2012.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2012"
+      },
+      "title": "The Rise of Nine",
+      "votes": "3836"
+    },
+    {
+      "authors": [
+        "Marie Lu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fantasy",
+      "position": "2012.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2012"
+      },
+      "title": "Legend",
+      "votes": "2384"
+    },
+    {
+      "authors": [
+        "Veronica Rossi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fantasy",
+      "position": "2012.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2012"
+      },
+      "title": "Under the Never Sky",
+      "votes": "2087"
+    },
+    {
+      "authors": [
+        "Julie Kagawa"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fantasy",
+      "position": "2012.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2012"
+      },
+      "title": "The Immortal Rules",
+      "votes": "1971"
+    },
+    {
+      "authors": [
+        "Cynthia Hand"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fantasy",
+      "position": "2012.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2012"
+      },
+      "title": "Hallowed",
+      "votes": "1452"
+    },
+    {
+      "authors": [
+        "Wendy Higgins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fantasy",
+      "position": "2012.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2012"
+      },
+      "title": "Sweet Evil",
+      "votes": "1434"
+    },
+    {
+      "authors": [
+        "Maggie Stiefvater"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fantasy",
+      "position": "2012.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2012"
+      },
+      "title": "The Raven Boys",
+      "votes": "953"
+    },
+    {
+      "authors": [
+        "Becca Fitzpatrick"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fantasy",
+      "position": "2012.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2012"
+      },
+      "title": "Finale",
+      "votes": "936"
+    },
+    {
+      "authors": [
+        "Rachel Hartman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fantasy",
+      "position": "2012.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2012"
+      },
+      "title": "Seraphina",
+      "votes": "785"
+    },
+    {
+      "authors": [
+        "Sarah J. Maas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fantasy",
+      "position": "2012.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2012"
+      },
+      "title": "Throne of Glass",
+      "votes": "603"
+    },
+    {
+      "authors": [
+        "Libba Bray"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fantasy",
+      "position": "2012.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2012"
+      },
+      "title": "The Diviners",
+      "votes": "523"
+    },
+    {
+      "authors": [
+        "Veronica Roth"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fantasy",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2013"
+      },
+      "title": "Allegiant",
+      "votes": "36157"
+    },
+    {
+      "authors": [
+        "Cassandra Clare"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fantasy",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2013"
+      },
+      "title": "Clockwork Princess",
+      "votes": "34727"
+    },
+    {
+      "authors": [
+        "Richelle Mead"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fantasy",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2013"
+      },
+      "title": "The Indigo Spell",
+      "votes": "12523"
+    },
+    {
+      "authors": [
+        "Jennifer L. Armentrout"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fantasy",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2013"
+      },
+      "title": "Opal",
+      "votes": "12504"
+    },
+    {
+      "authors": [
+        "Marissa Meyer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fantasy",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2013"
+      },
+      "title": "Scarlet",
+      "votes": "11103"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fantasy",
+      "position": "2013.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2013"
+      },
+      "title": "Steelheart",
+      "votes": "10401"
+    },
+    {
+      "authors": [
+        "Rick Yancey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fantasy",
+      "position": "2013.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2013"
+      },
+      "title": "The 5th Wave",
+      "votes": "10218"
+    },
+    {
+      "authors": [
+        "Kiera Cass"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fantasy",
+      "position": "2013.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2013"
+      },
+      "title": "The Elite",
+      "votes": "9250"
+    },
+    {
+      "authors": [
+        "Sarah J. Maas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fantasy",
+      "position": "2013.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2013"
+      },
+      "title": "Crown of Midnight",
+      "votes": "7812"
+    },
+    {
+      "authors": [
+        "Marie Lu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fantasy",
+      "position": "2013.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2013"
+      },
+      "title": "Prodigy",
+      "votes": "6920"
+    },
+    {
+      "authors": [
+        "Tahereh Mafi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fantasy",
+      "position": "2013.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2013"
+      },
+      "title": "Unravel Me",
+      "votes": "3520"
+    },
+    {
+      "authors": [
+        "Lauren Oliver"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fantasy",
+      "position": "2013.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2013"
+      },
+      "title": "Requiem",
+      "votes": "3397"
+    },
+    {
+      "authors": [
+        "Alexandra Bracken"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fantasy",
+      "position": "2013.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2013"
+      },
+      "title": "The Darkest Minds",
+      "votes": "2786"
+    },
+    {
+      "authors": [
+        "Michael Grant"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fantasy",
+      "position": "2013.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2013"
+      },
+      "title": "Light",
+      "votes": "2331"
+    },
+    {
+      "authors": [
+        "Veronica Rossi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fantasy",
+      "position": "2013.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2013"
+      },
+      "title": "Through the Ever Night",
+      "votes": "2085"
+    },
+    {
+      "authors": [
+        "Maggie Stiefvater"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fantasy",
+      "position": "2013.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2013"
+      },
+      "title": "The Dream Thieves",
+      "votes": "1519"
+    },
+    {
+      "authors": [
+        "Gail Carriger"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fantasy",
+      "position": "2013.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2013"
+      },
+      "title": "Etiquette & Espionage",
+      "votes": "1186"
+    },
+    {
+      "authors": [
+        "Leigh Bardugo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fantasy",
+      "position": "2013.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2013"
+      },
+      "title": "Siege and Storm",
+      "votes": "966"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fantasy",
+      "position": "2013.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2013"
+      },
+      "title": "The Rithmatist",
+      "votes": "933"
+    },
+    {
+      "authors": [
+        "Pittacus Lore"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fantasy",
+      "position": "2013.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2013"
+      },
+      "title": "The Fall of Five",
+      "votes": "695"
+    },
+    {
+      "authors": [
+        "Cassandra Clare"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fantasy",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2014"
+      },
+      "title": "City of Heavenly Fire",
+      "votes": "53247"
+    },
+    {
+      "authors": [
+        "Ransom Riggs"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fantasy",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2014"
+      },
+      "title": "Hollow City",
+      "votes": "27851"
+    },
+    {
+      "authors": [
+        "Marissa Meyer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fantasy",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2014"
+      },
+      "title": "Cress",
+      "votes": "25979"
+    },
+    {
+      "authors": [
+        "Kiera Cass"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fantasy",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2014"
+      },
+      "title": "The One",
+      "votes": "23988"
+    },
+    {
+      "authors": [
+        "Sarah J. Maas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fantasy",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2014"
+      },
+      "title": "Heir of Fire",
+      "votes": "21935"
+    },
+    {
+      "authors": [
+        "Veronica Roth"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fantasy",
+      "position": "2014.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2014"
+      },
+      "title": "Four",
+      "votes": "20929"
+    },
+    {
+      "authors": [
+        "Richelle Mead"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fantasy",
+      "position": "2014.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2014"
+      },
+      "title": "Silver Shadows",
+      "votes": "18174"
+    },
+    {
+      "authors": [
+        "Laini Taylor"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fantasy",
+      "position": "2014.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2014"
+      },
+      "title": "Dreams of Gods & Monsters",
+      "votes": "15821"
+    },
+    {
+      "authors": [
+        "Tahereh Mafi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fantasy",
+      "position": "2014.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2014"
+      },
+      "title": "Ignite Me",
+      "votes": "14504"
+    },
+    {
+      "authors": [
+        "Pierce Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fantasy",
+      "position": "2014.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2014"
+      },
+      "title": "Red Rising",
+      "votes": "10831"
+    },
+    {
+      "authors": [
+        "Jennifer L. Armentrout"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fantasy",
+      "position": "2014.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2014"
+      },
+      "title": "White Hot Kiss",
+      "votes": "5873"
+    },
+    {
+      "authors": [
+        "Jennifer L. Armentrout"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fantasy",
+      "position": "2014.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2014"
+      },
+      "title": "Opposition",
+      "votes": "4260"
+    },
+    {
+      "authors": [
+        "Marie Lu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fantasy",
+      "position": "2014.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2014"
+      },
+      "title": "The Young Elites",
+      "votes": "4187"
+    },
+    {
+      "authors": [
+        "Leslye Walton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fantasy",
+      "position": "2014.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2014"
+      },
+      "title": "The Strange and Beautiful Sorrows of Ava Lavender",
+      "votes": "3787"
+    },
+    {
+      "authors": [
+        "Amie Kaufman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fantasy",
+      "position": "2014.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2014"
+      },
+      "title": "These Broken Stars",
+      "votes": "3680"
+    },
+    {
+      "authors": [
+        "Maggie Stiefvater"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fantasy",
+      "position": "2014.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2014"
+      },
+      "title": "Blue Lily, Lily Blue",
+      "votes": "3439"
+    },
+    {
+      "authors": [
+        "Marie Rutkoski"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fantasy",
+      "position": "2014.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2014"
+      },
+      "title": "The Winner's Curse",
+      "votes": "2402"
+    },
+    {
+      "authors": [
+        "Mary E. Pearson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fantasy",
+      "position": "2014.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2014"
+      },
+      "title": "The Kiss of Deception",
+      "votes": "2279"
+    },
+    {
+      "authors": [
+        "Leigh Bardugo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fantasy",
+      "position": "2014.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2014"
+      },
+      "title": "Ruin and Rising",
+      "votes": "1955"
+    },
+    {
+      "authors": [
+        "Rick Yancey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fantasy",
+      "position": "2014.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2014"
+      },
+      "title": "The Infinite Sea",
+      "votes": "1916"
+    },
+    {
+      "authors": [
+        "Sarah J. Maas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fantasy",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2015"
+      },
+      "title": "Queen of Shadows",
+      "votes": "35770"
+    },
+    {
+      "authors": [
+        "Rainbow Rowell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fantasy",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2015"
+      },
+      "title": "Carry On",
+      "votes": "29569"
+    },
+    {
+      "authors": [
+        "Marissa Meyer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fantasy",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2015"
+      },
+      "title": "Winter",
+      "votes": "28418"
+    },
+    {
+      "authors": [
+        "Victoria Aveyard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fantasy",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2015"
+      },
+      "title": "Red Queen",
+      "votes": "27915"
+    },
+    {
+      "authors": [
+        "Kiera Cass"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fantasy",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2015"
+      },
+      "title": "The Heir",
+      "votes": "26005"
+    },
+    {
+      "authors": [
+        "Sarah J. Maas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fantasy",
+      "position": "2015.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2015"
+      },
+      "title": "A Court of Thorns and Roses",
+      "votes": "18272"
+    },
+    {
+      "authors": [
+        "Naomi Novik"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fantasy",
+      "position": "2015.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2015"
+      },
+      "title": "Uprooted",
+      "votes": "17315"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fantasy",
+      "position": "2015.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2015"
+      },
+      "title": "Firefight",
+      "votes": "15602"
+    },
+    {
+      "authors": [
+        "Leigh Bardugo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fantasy",
+      "position": "2015.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2015"
+      },
+      "title": "Six of Crows",
+      "votes": "14219"
+    },
+    {
+      "authors": [
+        "Sabaa Tahir"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fantasy",
+      "position": "2015.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2015"
+      },
+      "title": "An Ember in the Ashes",
+      "votes": "10783"
+    },
+    {
+      "authors": [
+        "Ren\u00e9e Ahdieh"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fantasy",
+      "position": "2015.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2015"
+      },
+      "title": "The Wrath and the Dawn",
+      "votes": "4837"
+    },
+    {
+      "authors": [
+        "Ransom Riggs"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fantasy",
+      "position": "2015.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2015"
+      },
+      "title": "Library of Souls",
+      "votes": "4679"
+    },
+    {
+      "authors": [
+        "Kresley Cole"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fantasy",
+      "position": "2015.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2015"
+      },
+      "title": "Dead of Winter",
+      "votes": "4295"
+    },
+    {
+      "authors": [
+        "Richelle Mead"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fantasy",
+      "position": "2015.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2015"
+      },
+      "title": "The Ruby Circle",
+      "votes": "3781"
+    },
+    {
+      "authors": [
+        "Marie Rutkoski"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fantasy",
+      "position": "2015.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2015"
+      },
+      "title": "The Winner's Crime",
+      "votes": "2764"
+    },
+    {
+      "authors": [
+        "Mary E. Pearson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fantasy",
+      "position": "2015.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2015"
+      },
+      "title": "The Heart of Betrayal",
+      "votes": "1998"
+    },
+    {
+      "authors": [
+        "Susan Ee"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fantasy",
+      "position": "2015.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2015"
+      },
+      "title": "End of Days",
+      "votes": "1947"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fantasy",
+      "position": "2015.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2015"
+      },
+      "title": "The Darkest Part of the Forest",
+      "votes": "1626"
+    },
+    {
+      "authors": [
+        "Morgan Rhodes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fantasy",
+      "position": "2015.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2015"
+      },
+      "title": "Gathering Darkness",
+      "votes": "1488"
+    },
+    {
+      "authors": [
+        "Amie Kaufman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fantasy",
+      "position": "2015.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2015"
+      },
+      "title": "Illuminae",
+      "votes": "1377"
+    },
+    {
+      "authors": [
+        "Sarah J. Maas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fantasy",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2016"
+      },
+      "title": "A Court of Mist and Fury",
+      "votes": "57776"
+    },
+    {
+      "authors": [
+        "Cassandra Clare"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fantasy",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2016"
+      },
+      "title": "Lady Midnight",
+      "votes": "38636"
+    },
+    {
+      "authors": [
+        "Sarah J. Maas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fantasy",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2016"
+      },
+      "title": "Empire of Storms",
+      "votes": "31665"
+    },
+    {
+      "authors": [
+        "Leigh Bardugo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fantasy",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2016"
+      },
+      "title": "Crooked Kingdom",
+      "votes": "28178"
+    },
+    {
+      "authors": [
+        "Maggie Stiefvater"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fantasy",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2016"
+      },
+      "title": "The Raven King",
+      "votes": "27120"
+    },
+    {
+      "authors": [
+        "Victoria Aveyard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fantasy",
+      "position": "2016.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2016"
+      },
+      "title": "Glass Sword",
+      "votes": "26554"
+    },
+    {
+      "authors": [
+        "Kiera Cass"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fantasy",
+      "position": "2016.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2016"
+      },
+      "title": "The Crown",
+      "votes": "23686"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fantasy",
+      "position": "2016.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2016"
+      },
+      "title": "Calamity",
+      "votes": "16020"
+    },
+    {
+      "authors": [
+        "Marissa Meyer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fantasy",
+      "position": "2016.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2016"
+      },
+      "title": "Heartless",
+      "votes": "14138"
+    },
+    {
+      "authors": [
+        "Sabaa Tahir"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fantasy",
+      "position": "2016.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2016"
+      },
+      "title": "A Torch Against the Night",
+      "votes": "10856"
+    },
+    {
+      "authors": [
+        "Shaun David Hutchinson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fantasy",
+      "position": "2016.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2016"
+      },
+      "title": "We Are the Ants",
+      "votes": "5214"
+    },
+    {
+      "authors": [
+        "Ren\u00e9e Ahdieh"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fantasy",
+      "position": "2016.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2016"
+      },
+      "title": "The Rose & the Dagger",
+      "votes": "3863"
+    },
+    {
+      "authors": [
+        "Marie Rutkoski"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fantasy",
+      "position": "2016.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2016"
+      },
+      "title": "The Winner's Kiss",
+      "votes": "3855"
+    },
+    {
+      "authors": [
+        "Pittacus Lore"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fantasy",
+      "position": "2016.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2016"
+      },
+      "title": "United as One",
+      "votes": "3500"
+    },
+    {
+      "authors": [
+        "Alwyn Hamilton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fantasy",
+      "position": "2016.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2016"
+      },
+      "title": "Rebel of the Sands",
+      "votes": "2876"
+    },
+    {
+      "authors": [
+        "Amie Kaufman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fantasy",
+      "position": "2016.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2016"
+      },
+      "title": "Gemina",
+      "votes": "1774"
+    },
+    {
+      "authors": [
+        "Cynthia Hand"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fantasy",
+      "position": "2016.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2016"
+      },
+      "title": "My Lady Jane",
+      "votes": "1644"
+    },
+    {
+      "authors": [
+        "Marie Lu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fantasy",
+      "position": "2016.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2016"
+      },
+      "title": "The Midnight Star",
+      "votes": "1164"
+    },
+    {
+      "authors": [
+        "Kiersten White"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fantasy",
+      "position": "2016.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2016"
+      },
+      "title": "And I Darken",
+      "votes": "893"
+    },
+    {
+      "authors": [
+        "Julie Eshbaugh"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fantasy",
+      "position": "2016.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2016"
+      },
+      "title": "Ivory and Bone",
+      "votes": "605"
+    },
+    {
+      "authors": [
+        "Sarah J. Maas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fantasy",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2017"
+      },
+      "title": "A Court of Wings and Ruin",
+      "votes": "71165"
+    },
+    {
+      "authors": [
+        "Cassandra Clare"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fantasy",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2017"
+      },
+      "title": "Lord of Shadows",
+      "votes": "40104"
+    },
+    {
+      "authors": [
+        "Victoria Aveyard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fantasy",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2017"
+      },
+      "title": "King's Cage",
+      "votes": "24789"
+    },
+    {
+      "authors": [
+        "Laini Taylor"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fantasy",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2017"
+      },
+      "title": "Strange the Dreamer",
+      "votes": "24705"
+    },
+    {
+      "authors": [
+        "Stephanie Garber"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fantasy",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2017"
+      },
+      "title": "Caraval",
+      "votes": "21976"
+    },
+    {
+      "authors": [
+        "Sarah J. Maas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fantasy",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2017"
+      },
+      "title": "Tower of Dawn",
+      "votes": "19127"
+    },
+    {
+      "authors": [
+        "Marie Lu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fantasy",
+      "position": "2017.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2017"
+      },
+      "title": "Warcross",
+      "votes": "16838"
+    },
+    {
+      "authors": [
+        "Neal Shusterman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fantasy",
+      "position": "2017.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2017"
+      },
+      "title": "Scythe",
+      "votes": "15775"
+    },
+    {
+      "authors": [
+        "Veronica Roth"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fantasy",
+      "position": "2017.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2017"
+      },
+      "title": "Carve the Mark",
+      "votes": "13723"
+    },
+    {
+      "authors": [
+        "Victoria Schwab"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fantasy",
+      "position": "2017.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2017"
+      },
+      "title": "Our Dark Duet",
+      "votes": "12839"
+    },
+    {
+      "authors": [
+        "S. Jae-Jones"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fantasy",
+      "position": "2017.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2017"
+      },
+      "title": "Wintersong",
+      "votes": "4630"
+    },
+    {
+      "authors": [
+        "Ren\u00e9e Ahdieh"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fantasy",
+      "position": "2017.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2017"
+      },
+      "title": "Flame in the Mist",
+      "votes": "3973"
+    },
+    {
+      "authors": [
+        "Philip Pullman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fantasy",
+      "position": "2017.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2017"
+      },
+      "title": "La Belle Sauvage",
+      "votes": "3261"
+    },
+    {
+      "authors": [
+        "Leigh Bardugo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fantasy",
+      "position": "2017.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2017"
+      },
+      "title": "The Language of Thorns",
+      "votes": "2723"
+    },
+    {
+      "authors": [
+        "Alwyn Hamilton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fantasy",
+      "position": "2017.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2017"
+      },
+      "title": "Traitor to the Throne",
+      "votes": "2670"
+    },
+    {
+      "authors": [
+        "Samantha Shannon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fantasy",
+      "position": "2017.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2017"
+      },
+      "title": "The Song Rising",
+      "votes": "2421"
+    },
+    {
+      "authors": [
+        "Maggie Stiefvater"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fantasy",
+      "position": "2017.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2017"
+      },
+      "title": "All the Crooked Saints",
+      "votes": "2312"
+    },
+    {
+      "authors": [
+        "Morgan Rhodes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fantasy",
+      "position": "2017.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2017"
+      },
+      "title": "Crystal Storm",
+      "votes": "2072"
+    },
+    {
+      "authors": [
+        "Sarah Rees Brennan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fantasy",
+      "position": "2017.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2017"
+      },
+      "title": "In Other Lands",
+      "votes": "1264"
+    },
+    {
+      "authors": [
+        "Laurie Forest"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fantasy",
+      "position": "2017.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2017"
+      },
+      "title": "The Black Witch",
+      "votes": "1253"
+    },
+    {
+      "authors": [
+        "Sarah J. Maas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fantasy",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2018"
+      },
+      "title": "Kingdom of Ash",
+      "votes": "68782"
+    },
+    {
+      "authors": [
+        "Tomi Adeyemi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fantasy",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2018"
+      },
+      "title": "Children of Blood and Bone",
+      "votes": "50156"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fantasy",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2018"
+      },
+      "title": "The Cruel Prince",
+      "votes": "34161"
+    },
+    {
+      "authors": [
+        "Victoria Aveyard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fantasy",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2018"
+      },
+      "title": "War Storm",
+      "votes": "22852"
+    },
+    {
+      "authors": [
+        "Sarah J. Maas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fantasy",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2018"
+      },
+      "title": "A Court of Frost and Starlight",
+      "votes": "19856"
+    },
+    {
+      "authors": [
+        "Amie Kaufman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fantasy",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2018"
+      },
+      "title": "Obsidio",
+      "votes": "19386"
+    },
+    {
+      "authors": [
+        "Neal Shusterman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fantasy",
+      "position": "2018.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2018"
+      },
+      "title": "Thunderhead",
+      "votes": "19353"
+    },
+    {
+      "authors": [
+        "Tahereh Mafi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fantasy",
+      "position": "2018.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2018"
+      },
+      "title": "Restore Me",
+      "votes": "14475"
+    },
+    {
+      "authors": [
+        "Sabaa Tahir"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fantasy",
+      "position": "2018.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2018"
+      },
+      "title": "A Reaper at the Gates",
+      "votes": "13767"
+    },
+    {
+      "authors": [
+        "Marie Lu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fantasy",
+      "position": "2018.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2018"
+      },
+      "title": "Wildcard",
+      "votes": "10287"
+    },
+    {
+      "authors": [
+        "Dhonielle Clayton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fantasy",
+      "position": "2018.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2018"
+      },
+      "title": "The Belles",
+      "votes": "4795"
+    },
+    {
+      "authors": [
+        "Justina Ireland"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fantasy",
+      "position": "2018.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2018"
+      },
+      "title": "Dread Nation",
+      "votes": "4701"
+    },
+    {
+      "authors": [
+        "Veronica Roth"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fantasy",
+      "position": "2018.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2018"
+      },
+      "title": "The Fates Divide",
+      "votes": "4428"
+    },
+    {
+      "authors": [
+        "Adrienne Young"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fantasy",
+      "position": "2018.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2018"
+      },
+      "title": "Sky in the Deep",
+      "votes": "4333"
+    },
+    {
+      "authors": [
+        "Laini Taylor"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fantasy",
+      "position": "2018.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2018"
+      },
+      "title": "Muse of Nightmares",
+      "votes": "3898"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fantasy",
+      "position": "2018.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2018"
+      },
+      "title": "Skyward",
+      "votes": "3269"
+    },
+    {
+      "authors": [
+        "Melissa Albert"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fantasy",
+      "position": "2018.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2018"
+      },
+      "title": "The Hazel Wood",
+      "votes": "2984"
+    },
+    {
+      "authors": [
+        "Stephanie Garber"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fantasy",
+      "position": "2018.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2018"
+      },
+      "title": "Legendary",
+      "votes": "2954"
+    },
+    {
+      "authors": [
+        "Jay Kristoff"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fantasy",
+      "position": "2018.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2018"
+      },
+      "title": "LIFEL1K3",
+      "votes": "1749"
+    },
+    {
+      "authors": [
+        "Susan Dennard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fantasy",
+      "position": "2018.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2018"
+      },
+      "title": "Sightwitch",
+      "votes": "922"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fantasy",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2019"
+      },
+      "title": "The Wicked King",
+      "votes": "48181"
+    },
+    {
+      "authors": [
+        "Rainbow Rowell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fantasy",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2019"
+      },
+      "title": "Wayward Son",
+      "votes": "39909"
+    },
+    {
+      "authors": [
+        "Cassandra Clare"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fantasy",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2019"
+      },
+      "title": "Queen of Air and Darkness",
+      "votes": "35431"
+    },
+    {
+      "authors": [
+        "Leigh Bardugo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fantasy",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2019"
+      },
+      "title": "King of Scars",
+      "votes": "25250"
+    },
+    {
+      "authors": [
+        "Rory Power"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fantasy",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2019"
+      },
+      "title": "Wilder Girls",
+      "votes": "23072"
+    },
+    {
+      "authors": [
+        "Neal Shusterman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fantasy",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2019"
+      },
+      "title": "The Toll",
+      "votes": "20323"
+    },
+    {
+      "authors": [
+        "Brigid Kemmerer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fantasy",
+      "position": "2019.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2019"
+      },
+      "title": "A Curse So Dark and Lonely",
+      "votes": "17037"
+    },
+    {
+      "authors": [
+        "Stephanie Garber"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fantasy",
+      "position": "2019.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2019"
+      },
+      "title": "Finale",
+      "votes": "15942"
+    },
+    {
+      "authors": [
+        "Margaret Rogerson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fantasy",
+      "position": "2019.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2019"
+      },
+      "title": "Sorcery of Thorns",
+      "votes": "15723"
+    },
+    {
+      "authors": [
+        "Amie Kaufman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fantasy",
+      "position": "2019.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2019"
+      },
+      "title": "Aurora Rising",
+      "votes": "14457"
+    },
+    {
+      "authors": [
+        "Marissa Meyer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fantasy",
+      "position": "2019.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2019"
+      },
+      "title": "Supernova",
+      "votes": "7423"
+    },
+    {
+      "authors": [
+        "Tahereh Mafi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fantasy",
+      "position": "2019.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2019"
+      },
+      "title": "Defy Me",
+      "votes": "5699"
+    },
+    {
+      "authors": [
+        "Susan Dennard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fantasy",
+      "position": "2019.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2019"
+      },
+      "title": "Bloodwitch",
+      "votes": "4484"
+    },
+    {
+      "authors": [
+        "Maggie Stiefvater"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fantasy",
+      "position": "2019.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2019"
+      },
+      "title": "Call Down the Hawk",
+      "votes": "4477"
+    },
+    {
+      "authors": [
+        "Astrid Scholte"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fantasy",
+      "position": "2019.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2019"
+      },
+      "title": "Four Dead Queens",
+      "votes": "4057"
+    },
+    {
+      "authors": [
+        "Marie Lu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fantasy",
+      "position": "2019.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2019"
+      },
+      "title": "Rebel",
+      "votes": "4055"
+    },
+    {
+      "authors": [
+        "Philip Pullman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fantasy",
+      "position": "2019.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2019"
+      },
+      "title": "The Secret Commonwealth",
+      "votes": "2580"
+    },
+    {
+      "authors": [
+        "Shelby Mahurin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fantasy",
+      "position": "2019.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2019"
+      },
+      "title": "Serpent & Dove",
+      "votes": "2482"
+    },
+    {
+      "authors": [
+        "Hafsah Faizal"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fantasy",
+      "position": "2019.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2019"
+      },
+      "title": "We Hunt the Flame",
+      "votes": "1916"
+    },
+    {
+      "authors": [
+        "Roshani Chokshi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fantasy",
+      "position": "2019.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2019"
+      },
+      "title": "The Gilded Wolves",
+      "votes": "1859"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fantasy",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2020"
+      },
+      "title": "The Queen of Nothing",
+      "votes": "62771"
+    },
+    {
+      "authors": [
+        "Suzanne Collins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fantasy",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2020"
+      },
+      "title": "The Ballad of Songbirds and Snakes",
+      "votes": "59681"
+    },
+    {
+      "authors": [
+        "Cassandra Clare"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fantasy",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2020"
+      },
+      "title": "Chain of Gold",
+      "votes": "42233"
+    },
+    {
+      "authors": [
+        "Stephenie Meyer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fantasy",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2020"
+      },
+      "title": "Midnight Sun",
+      "votes": "35466"
+    },
+    {
+      "authors": [
+        "Tomi Adeyemi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fantasy",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2020"
+      },
+      "title": "Children of Virtue and Vengeance",
+      "votes": "28489"
+    },
+    {
+      "authors": [
+        "Aiden Thomas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fantasy",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2020"
+      },
+      "title": "Cemetery Boys",
+      "votes": "27570"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fantasy",
+      "position": "2020.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2020"
+      },
+      "title": "Starsight",
+      "votes": "27263"
+    },
+    {
+      "authors": [
+        "Adrienne Young"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fantasy",
+      "position": "2020.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2020"
+      },
+      "title": "Fable",
+      "votes": "15617"
+    },
+    {
+      "authors": [
+        "Kalynn Bayron"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fantasy",
+      "position": "2020.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2020"
+      },
+      "title": "Cinderella Is Dead",
+      "votes": "15179"
+    },
+    {
+      "authors": [
+        "Tracy Deonn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fantasy",
+      "position": "2020.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2020"
+      },
+      "title": "Legendborn",
+      "votes": "14101"
+    },
+    {
+      "authors": [
+        "Melissa Bashardoust"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fantasy",
+      "position": "2020.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2020"
+      },
+      "title": "Girl, Serpent, Thorn",
+      "votes": "6107"
+    },
+    {
+      "authors": [
+        "Roseanne A. Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fantasy",
+      "position": "2020.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2020"
+      },
+      "title": "A Song of Wraiths and Ruin",
+      "votes": "5577"
+    },
+    {
+      "authors": [
+        "Marie Lu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fantasy",
+      "position": "2020.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2020"
+      },
+      "title": "The Kingdom of Back",
+      "votes": "5423"
+    },
+    {
+      "authors": [
+        "Chloe Gong"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fantasy",
+      "position": "2020.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2020"
+      },
+      "title": "These Violent Delights",
+      "votes": "3461"
+    },
+    {
+      "authors": [
+        "Adalyn Grace"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fantasy",
+      "position": "2020.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2020"
+      },
+      "title": "All the Stars and Teeth",
+      "votes": "2956"
+    },
+    {
+      "authors": [
+        "Tricia Levenseller"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fantasy",
+      "position": "2020.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2020"
+      },
+      "title": "The Shadows Between Us",
+      "votes": "2928"
+    },
+    {
+      "authors": [
+        "T.J. Klune"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fantasy",
+      "position": "2020.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2020"
+      },
+      "title": "The Extraordinaries",
+      "votes": "2249"
+    },
+    {
+      "authors": [
+        "Megan Whalen Turner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fantasy",
+      "position": "2020.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2020"
+      },
+      "title": "Return of the Thief",
+      "votes": "1726"
+    },
+    {
+      "authors": [
+        "Jordan Ifueko"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fantasy",
+      "position": "2020.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2020"
+      },
+      "title": "Raybearer",
+      "votes": "1205"
+    },
+    {
+      "authors": [
+        "Leigh Bardugo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fantasy",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2021"
+      },
+      "title": "Rule of Wolves",
+      "votes": "48212"
+    },
+    {
+      "authors": [
+        "Cassandra Clare"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fantasy",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2021"
+      },
+      "title": "Chain of Iron",
+      "votes": "31911"
+    },
+    {
+      "authors": [
+        "Alexandra Bracken"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fantasy",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2021"
+      },
+      "title": "Lore",
+      "votes": "27855"
+    },
+    {
+      "authors": [
+        "Rainbow Rowell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fantasy",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2021"
+      },
+      "title": "Any Way the Wind Blows",
+      "votes": "26842"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fantasy",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2021"
+      },
+      "title": "How the King of Elfhame Learned to Hate Stories",
+      "votes": "26479"
+    },
+    {
+      "authors": [
+        "Xiran Jay Zhao"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fantasy",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2021"
+      },
+      "title": "Iron Widow",
+      "votes": "23754"
+    },
+    {
+      "authors": [
+        "Namina Forna"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fantasy",
+      "position": "2021.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2021"
+      },
+      "title": "The Gilded Ones",
+      "votes": "23486"
+    },
+    {
+      "authors": [
+        "Chloe Gong"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fantasy",
+      "position": "2021.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2021"
+      },
+      "title": "Our Violent Ends",
+      "votes": "19782"
+    },
+    {
+      "authors": [
+        "Sabaa Tahir"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fantasy",
+      "position": "2021.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2021"
+      },
+      "title": "A \u200bSky Beyond the Storm",
+      "votes": "19505"
+    },
+    {
+      "authors": [
+        "Stephanie Garber"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fantasy",
+      "position": "2021.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2021"
+      },
+      "title": "Once Upon a Broken Heart",
+      "votes": "17698"
+    },
+    {
+      "authors": [
+        "Krystal Sutherland"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fantasy",
+      "position": "2021.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2021"
+      },
+      "title": "House of Hollow",
+      "votes": "6510"
+    },
+    {
+      "authors": [
+        "Elizabeth Lim"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fantasy",
+      "position": "2021.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2021"
+      },
+      "title": "Six Crimson Cranes",
+      "votes": "6214"
+    },
+    {
+      "authors": [
+        "Adrienne Young"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fantasy",
+      "position": "2021.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2021"
+      },
+      "title": "Namesake",
+      "votes": "6080"
+    },
+    {
+      "authors": [
+        "Victoria Aveyard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fantasy",
+      "position": "2021.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2021"
+      },
+      "title": "Realm Breaker",
+      "votes": "5210"
+    },
+    {
+      "authors": [
+        "Hafsah Faizal"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fantasy",
+      "position": "2021.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2021"
+      },
+      "title": "We Free the Stars",
+      "votes": "5193"
+    },
+    {
+      "authors": [
+        "Shelby Mahurin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fantasy",
+      "position": "2021.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2021"
+      },
+      "title": "Gods & Monsters",
+      "votes": "5187"
+    },
+    {
+      "authors": [
+        "Lexi Ryan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fantasy",
+      "position": "2021.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2021"
+      },
+      "title": "These Hollow Vows",
+      "votes": "3937"
+    },
+    {
+      "authors": [
+        "Aiden Thomas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fantasy",
+      "position": "2021.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2021"
+      },
+      "title": "Lost in the Never Woods",
+      "votes": "3640"
+    },
+    {
+      "authors": [
+        "Joan He"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fantasy",
+      "position": "2021.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2021"
+      },
+      "title": "The Ones We're Meant to Find",
+      "votes": "3086"
+    },
+    {
+      "authors": [
+        "Brigid Kemmerer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fantasy",
+      "position": "2021.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2021"
+      },
+      "title": "A Vow So Bold and Deadly",
+      "votes": "3052"
+    },
+    {
+      "authors": [
+        "V.E. Schwab",
+        "Victoria Schwab"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fantasy",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2022"
+      },
+      "title": "Gallant",
+      "votes": "40467"
+    },
+    {
+      "authors": [
+        "Tracy Deonn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fantasy",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2022"
+      },
+      "title": "Bloodmarked",
+      "votes": "37691"
+    },
+    {
+      "authors": [
+        "Kerri Maniscalco"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fantasy",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2022"
+      },
+      "title": "Kingdom of the Feared",
+      "votes": "34823"
+    },
+    {
+      "authors": [
+        "Stephanie Garber"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fantasy",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2022"
+      },
+      "title": "The Ballad of Never After",
+      "votes": "32165"
+    },
+    {
+      "authors": [
+        "Axie Oh"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fantasy",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2022"
+      },
+      "title": "The Girl Who Fell Beneath the Sea",
+      "votes": "28009"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fantasy",
+      "position": "2022.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2022"
+      },
+      "title": "Cytonic",
+      "votes": "19674"
+    },
+    {
+      "authors": [
+        "Chloe Gong"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fantasy",
+      "position": "2022.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2022"
+      },
+      "title": "Foul Lady Fortune",
+      "votes": "18638"
+    },
+    {
+      "authors": [
+        "Adalyn Grace"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fantasy",
+      "position": "2022.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2022"
+      },
+      "title": "Belladonna",
+      "votes": "17662"
+    },
+    {
+      "authors": [
+        "Marissa Meyer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fantasy",
+      "position": "2022.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2022"
+      },
+      "title": "Cursed",
+      "votes": "17483"
+    },
+    {
+      "authors": [
+        "Tahereh Mafi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fantasy",
+      "position": "2022.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2022"
+      },
+      "title": "This Woven Kingdom",
+      "votes": "16678"
+    },
+    {
+      "authors": [
+        "Lexi Ryan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fantasy",
+      "position": "2022.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2022"
+      },
+      "title": "These Twisted Bonds",
+      "votes": "5038"
+    },
+    {
+      "authors": [
+        "Erik J. Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fantasy",
+      "position": "2022.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2022"
+      },
+      "title": "All That\u2019s Left in the World",
+      "votes": "4973"
+    },
+    {
+      "authors": [
+        "Aiden Thomas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fantasy",
+      "position": "2022.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2022"
+      },
+      "title": "The Sunbearer Trials",
+      "votes": "4609"
+    },
+    {
+      "authors": [
+        "Emily J. Taylor"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fantasy",
+      "position": "2022.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2022"
+      },
+      "title": "Hotel Magnifique",
+      "votes": "4531"
+    },
+    {
+      "authors": [
+        "Judy I. Lin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fantasy",
+      "position": "2022.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2022"
+      },
+      "title": "A Magic Steeped in Poison",
+      "votes": "4426"
+    },
+    {
+      "authors": [
+        "F.T. Lukens"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fantasy",
+      "position": "2022.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2022"
+      },
+      "title": "So This Is Ever After",
+      "votes": "4408"
+    },
+    {
+      "authors": [
+        "Ann Liang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fantasy",
+      "position": "2022.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2022"
+      },
+      "title": "If You Could See the Sun",
+      "votes": "4296"
+    },
+    {
+      "authors": [
+        "Vanessa Len"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fantasy",
+      "position": "2022.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2022"
+      },
+      "title": "Only a Monster",
+      "votes": "3169"
+    },
+    {
+      "authors": [
+        "Elizabeth Lim"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fantasy",
+      "position": "2022.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2022"
+      },
+      "title": "The Dragon's Promise",
+      "votes": "2404"
+    },
+    {
+      "authors": [
+        "Gina Chen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fantasy",
+      "position": "2022.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2022"
+      },
+      "title": "Violet Made of Thorns",
+      "votes": "2147"
+    },
+    {
+      "authors": [
+        "Rebecca Ross"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fantasy",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2023"
+      },
+      "title": "Divine Rivals",
+      "votes": "117671"
+    },
+    {
+      "authors": [
+        "Stephanie Garber"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fantasy",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2023"
+      },
+      "title": "A Curse for True Love",
+      "votes": "57204"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fantasy",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2023"
+      },
+      "title": "The Stolen Heir",
+      "votes": "52089"
+    },
+    {
+      "authors": [
+        "Cassandra Clare"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fantasy",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2023"
+      },
+      "title": "Chain of Thorns",
+      "votes": "29780"
+    },
+    {
+      "authors": [
+        "Lauren Roberts"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fantasy",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2023"
+      },
+      "title": "Powerless",
+      "votes": "28558"
+    },
+    {
+      "authors": [
+        "Isabel Iba\u00f1ez"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fantasy",
+      "position": "2023.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2023"
+      },
+      "title": "What the River Knows",
+      "votes": "25890"
+    },
+    {
+      "authors": [
+        "Ava Reid"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fantasy",
+      "position": "2023.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2023"
+      },
+      "title": "A Study in Drowning",
+      "votes": "21695"
+    },
+    {
+      "authors": [
+        "Adalyn Grace"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fantasy",
+      "position": "2023.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2023"
+      },
+      "title": "Foxglove",
+      "votes": "13731"
+    },
+    {
+      "authors": [
+        "Tahereh Mafi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fantasy",
+      "position": "2023.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2023"
+      },
+      "title": "These Infinite Threads",
+      "votes": "13425"
+    },
+    {
+      "authors": [
+        "Chloe Gong"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fantasy",
+      "position": "2023.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2023"
+      },
+      "title": "Foul Heart Huntsman",
+      "votes": "11754"
+    },
+    {
+      "authors": [
+        "Am\u00e9lie Wen Zhao"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fantasy",
+      "position": "2023.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2023"
+      },
+      "title": "Song of Silver, Flame Like Night",
+      "votes": "3912"
+    },
+    {
+      "authors": [
+        "Kika Hatzopoulou"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fantasy",
+      "position": "2023.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2023"
+      },
+      "title": "Threads That Bind",
+      "votes": "3876"
+    },
+    {
+      "authors": [
+        "Liselle Sambury"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fantasy",
+      "position": "2023.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2023"
+      },
+      "title": "Delicious Monsters",
+      "votes": "3691"
+    },
+    {
+      "authors": [
+        "Erin A. Craig"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fantasy",
+      "position": "2023.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2023"
+      },
+      "title": "House of Roots and Ruin",
+      "votes": "3505"
+    },
+    {
+      "authors": [
+        "Maiya Ibrahim"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fantasy",
+      "position": "2023.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2023"
+      },
+      "title": "Spice Road",
+      "votes": "3177"
+    },
+    {
+      "authors": [
+        "Terry J. Benton-Walker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fantasy",
+      "position": "2023.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2023"
+      },
+      "title": "Blood Debts",
+      "votes": "2889"
+    },
+    {
+      "authors": [
+        "Alexandra Bracken"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fantasy",
+      "position": "2023.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2023"
+      },
+      "title": "Silver in the Bone",
+      "votes": "2581"
+    },
+    {
+      "authors": [
+        "Shelby Mahurin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fantasy",
+      "position": "2023.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2023"
+      },
+      "title": "The Scarlet Veil",
+      "votes": "2301"
+    },
+    {
+      "authors": [
+        "Rachel Griffin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fantasy",
+      "position": "2023.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2023"
+      },
+      "title": "Bring Me Your Midnight",
+      "votes": "2199"
+    },
+    {
+      "authors": [
+        "J. Elle"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fantasy",
+      "position": "2023.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fantasy-books-2023"
+      },
+      "title": "House of Marionne",
+      "votes": "935"
+    },
+    {
+      "authors": [
+        "Rebecca Ross"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fantasy",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-books-2024"
+      },
+      "title": "Ruthless Vows",
+      "votes": "93230"
+    },
+    {
+      "authors": [
+        "Lauren Roberts"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fantasy",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-books-2024"
+      },
+      "title": "Reckless",
+      "votes": "85070"
+    },
+    {
+      "authors": [
+        "Kristen Ciccarelli"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fantasy",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-books-2024"
+      },
+      "title": "Heartless Hunter",
+      "votes": "62945"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fantasy",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-books-2024"
+      },
+      "title": "The Prisoner\u2019s Throne",
+      "votes": "36108"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fantasy",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-books-2024"
+      },
+      "title": "Defiant",
+      "votes": "24158"
+    },
+    {
+      "authors": [
+        "C.G. Drews"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fantasy",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-books-2024"
+      },
+      "title": "Don't Let the Forest In",
+      "votes": "23297"
+    },
+    {
+      "authors": [
+        "Isabel Iba\u00f1ez"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fantasy",
+      "position": "2024.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-books-2024"
+      },
+      "title": "Where the Library Hides",
+      "votes": "19417"
+    },
+    {
+      "authors": [
+        "Adalyn Grace"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fantasy",
+      "position": "2024.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-books-2024"
+      },
+      "title": "Wisteria",
+      "votes": "17953"
+    },
+    {
+      "authors": [
+        "Sabaa Tahir"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fantasy",
+      "position": "2024.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-books-2024"
+      },
+      "title": "Heir",
+      "votes": "16771"
+    },
+    {
+      "authors": [
+        "Tahereh Mafi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fantasy",
+      "position": "2024.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-books-2024"
+      },
+      "title": "All This Twisted Glory",
+      "votes": "12633"
+    },
+    {
+      "authors": [
+        "A.B. Poranek"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fantasy",
+      "position": "2024.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-books-2024"
+      },
+      "title": "Where the Dark Stands Still",
+      "votes": "5634"
+    },
+    {
+      "authors": [
+        "Tigest Girma"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fantasy",
+      "position": "2024.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-books-2024"
+      },
+      "title": "Immortal Dark",
+      "votes": "5369"
+    },
+    {
+      "authors": [
+        "Kamilah Cole"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fantasy",
+      "position": "2024.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-books-2024"
+      },
+      "title": "So Let Them Burn",
+      "votes": "3911"
+    },
+    {
+      "authors": [
+        "Krystal Sutherland"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fantasy",
+      "position": "2024.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-books-2024"
+      },
+      "title": "The Invocations",
+      "votes": "3409"
+    },
+    {
+      "authors": [
+        "Bethany Baptiste"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fantasy",
+      "position": "2024.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-books-2024"
+      },
+      "title": "The Poisons We Drink",
+      "votes": "3180"
+    },
+    {
+      "authors": [
+        "Makiia Lucier"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fantasy",
+      "position": "2024.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-books-2024"
+      },
+      "title": "Dragonfruit",
+      "votes": "3138"
+    },
+    {
+      "authors": [
+        "Tricia Levenseller"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fantasy",
+      "position": "2024.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-books-2024"
+      },
+      "title": "The Darkness Within Us",
+      "votes": "3007"
+    },
+    {
+      "authors": [
+        "Amber Chen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fantasy",
+      "position": "2024.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-books-2024"
+      },
+      "title": "Of Jade and Dragons",
+      "votes": "2650"
+    },
+    {
+      "authors": [
+        "Emily Varga"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fantasy",
+      "position": "2024.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-books-2024"
+      },
+      "title": "For She Is Wrath",
+      "votes": "2404"
+    },
+    {
+      "authors": [
+        "Kelly Andrew"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fantasy",
+      "position": "2024.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-books-2024"
+      },
+      "title": "Your Blood, My Bones",
+      "votes": "2136"
+    },
+    {
+      "authors": [
+        "Suzanne Collins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fantasy & Sci-Fi",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-and-science-fiction-books-2025"
+      },
+      "title": "Sunrise on the Reaping",
+      "votes": "300427"
+    },
+    {
+      "authors": [
+        "Lauren Roberts"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fantasy & Sci-Fi",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-and-science-fiction-books-2025"
+      },
+      "title": "Fearless",
+      "votes": "65594"
+    },
+    {
+      "authors": [
+        "Kristen Ciccarelli"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fantasy & Sci-Fi",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-and-science-fiction-books-2025"
+      },
+      "title": "Rebel Witch",
+      "votes": "59072"
+    },
+    {
+      "authors": [
+        "Tracy Deonn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fantasy & Sci-Fi",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-and-science-fiction-books-2025"
+      },
+      "title": "Oathbound",
+      "votes": "30594"
+    },
+    {
+      "authors": [
+        "Tahereh Mafi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fantasy & Sci-Fi",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-and-science-fiction-books-2025"
+      },
+      "title": "Watch Me",
+      "votes": "28370"
+    },
+    {
+      "authors": [
+        "Laura Steven"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fantasy & Sci-Fi",
+      "position": "2025.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-and-science-fiction-books-2025"
+      },
+      "title": "Our Infinite Fates",
+      "votes": "18354"
+    },
+    {
+      "authors": [
+        "C.G. Drews"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fantasy & Sci-Fi",
+      "position": "2025.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-and-science-fiction-books-2025"
+      },
+      "title": "Hazelthorn",
+      "votes": "17522"
+    },
+    {
+      "authors": [
+        "Allison Saft"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fantasy & Sci-Fi",
+      "position": "2025.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-and-science-fiction-books-2025"
+      },
+      "title": "Wings of Starlight",
+      "votes": "17166"
+    },
+    {
+      "authors": [
+        "Sasha Peyton Smith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fantasy & Sci-Fi",
+      "position": "2025.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-and-science-fiction-books-2025"
+      },
+      "title": "The Rose Bargain",
+      "votes": "13551"
+    },
+    {
+      "authors": [
+        "Xiran Jay Zhao"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fantasy & Sci-Fi",
+      "position": "2025.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-and-science-fiction-books-2025"
+      },
+      "title": "Heavenly Tyrant",
+      "votes": "11990"
+    },
+    {
+      "authors": [
+        "Nikita Gill"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fantasy & Sci-Fi",
+      "position": "2025.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-and-science-fiction-books-2025"
+      },
+      "title": "Hekate",
+      "votes": "5805"
+    },
+    {
+      "authors": [
+        "I.V. Marie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fantasy & Sci-Fi",
+      "position": "2025.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-and-science-fiction-books-2025"
+      },
+      "title": "Immortal Consequences",
+      "votes": "4676"
+    },
+    {
+      "authors": [
+        "Tahereh Mafi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fantasy & Sci-Fi",
+      "position": "2025.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-and-science-fiction-books-2025"
+      },
+      "title": "Every Spiral of Fate",
+      "votes": "4529"
+    },
+    {
+      "authors": [
+        "S.F. Williamson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fantasy & Sci-Fi",
+      "position": "2025.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-and-science-fiction-books-2025"
+      },
+      "title": "A Language of Dragons",
+      "votes": "4199"
+    },
+    {
+      "authors": [
+        "Axie Oh"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fantasy & Sci-Fi",
+      "position": "2025.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-and-science-fiction-books-2025"
+      },
+      "title": "The Floating World",
+      "votes": "3497"
+    },
+    {
+      "authors": [
+        "Sue Lynn Tan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fantasy & Sci-Fi",
+      "position": "2025.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-and-science-fiction-books-2025"
+      },
+      "title": "Never Ever After",
+      "votes": "3458"
+    },
+    {
+      "authors": [
+        "Marissa Meyer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fantasy & Sci-Fi",
+      "position": "2025.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-and-science-fiction-books-2025"
+      },
+      "title": "The House Saphir",
+      "votes": "3233"
+    },
+    {
+      "authors": [
+        "Elizabeth Lim"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fantasy & Sci-Fi",
+      "position": "2025.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-and-science-fiction-books-2025"
+      },
+      "title": "A Forgery of Fate",
+      "votes": "2900"
+    },
+    {
+      "authors": [
+        "Emily J. Taylor"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fantasy & Sci-Fi",
+      "position": "2025.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-and-science-fiction-books-2025"
+      },
+      "title": "The Otherwhere Post",
+      "votes": "2806"
+    },
+    {
+      "authors": [
+        "Shannon Lee"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fantasy & Sci-Fi",
+      "position": "2025.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fantasy-and-science-fiction-books-2025"
+      },
+      "title": "Breath of the Dragon",
+      "votes": "1761"
+    }
+  ],
+  "fetched_at": "2026-07-28T04:36:48Z",
+  "list_id": "goodreads_choice_awards_young_adult_fantasy_science_fiction",
+  "list_name": "Goodreads Choice Awards - Young Adult Fantasy & Science Fiction",
+  "match_series": false,
+  "notes": [
+    "Goodreads contributor enrichment could not check 19 newest-year rows; ballot credits were retained."
+  ],
+  "parser": "goodreads_choice_awards_young_adult_fantasy_science_fiction",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Goodreads Choice Awards - Young Adult Fantasy & Science Fiction",
+    "source_id": "goodreads_choice_awards_young_adult_fantasy_science_fiction",
+    "url": "https://www.goodreads.com/choiceawards"
+  }
+}

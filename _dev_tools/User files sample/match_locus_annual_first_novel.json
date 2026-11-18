@@ -1,0 +1,115 @@
+{
+  "list_id": "locus_annual_first_novel",
+  "matches": [
+    {
+      "entry_key": "magician|raymond e feist",
+      "imported_author": [
+        "Raymond E. Feist"
+      ],
+      "imported_title": "Magician",
+      "matched_at": "2026-07-23T04:44:18Z",
+      "matched_authors": [
+        "Raymond E. Feist"
+      ],
+      "matched_book_id": 31302,
+      "matched_book_ids": [
+        31302,
+        31301
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Raymond E. Feist"
+          ],
+          "matched_book_id": 31302,
+          "matched_title": "Magician: Apprentice"
+        },
+        {
+          "matched_authors": [
+            "Raymond E. Feist"
+          ],
+          "matched_book_id": 31301,
+          "matched_title": "Magician: Master"
+        }
+      ],
+      "matched_title": "Magician: Master"
+    },
+    {
+      "entry_key": "the atrocity archive|charles stross",
+      "imported_author": [
+        "Charles Stross"
+      ],
+      "imported_title": "The Atrocity Archive",
+      "matched_at": "2026-07-23T04:44:18Z",
+      "matched_authors": [
+        "Charles Stross"
+      ],
+      "matched_book_id": 36451,
+      "matched_book_ids": [
+        36451
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Charles Stross"
+          ],
+          "matched_book_id": 36451,
+          "matched_title": "The Atrocity Archives"
+        }
+      ],
+      "matched_title": "The Atrocity Archives"
+    },
+    {
+      "entry_key": "melusine|sarah monette",
+      "imported_author": [
+        "Sarah Monette"
+      ],
+      "imported_title": "Melusine",
+      "matched_at": "2026-07-23T04:44:18Z",
+      "matched_authors": [
+        "Sarah Monette"
+      ],
+      "matched_book_id": 37150,
+      "matched_book_ids": [
+        37150
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Sarah Monette"
+          ],
+          "matched_book_id": 37150,
+          "matched_title": "M\u00e9lusine"
+        }
+      ],
+      "matched_title": "M\u00e9lusine"
+    },
+    {
+      "entry_key": "iron widow|xiran jay zhoa",
+      "imported_author": [
+        "Xiran Jay Zhoa"
+      ],
+      "imported_title": "Iron Widow",
+      "matched_at": "2026-07-23T04:44:18Z",
+      "matched_authors": [
+        "Xiran Jay Zhao"
+      ],
+      "matched_book_id": 21723,
+      "matched_book_ids": [
+        21723
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Xiran Jay Zhao"
+          ],
+          "matched_book_id": 21723,
+          "matched_title": "Iron Widow"
+        }
+      ],
+      "matched_title": "Iron Widow"
+    }
+  ],
+  "saved_at": "2026-07-23T04:44:18Z",
+  "schema_version": 2
+}

@@ -90,6 +90,11 @@ sys.modules.setdefault('calibre_plugins.list_switchboard', list_switchboard_pack
 sys.modules.setdefault('calibre_plugins.list_switchboard.config', config_module)
 
 import main
+import wayback_policy
+# Network callbacks in this fixture module are simulated. Timing is exercised
+# with deterministic clocks and actual transport processors in its own suite.
+wayback_policy.REQUEST_CLOCK = types.SimpleNamespace(
+  wait=lambda *_args, **_kwargs: None, limited=lambda *_args, **_kwargs: None)
 import list_state
 import matching
 import dialogs.import_find as import_find_module
@@ -2948,7 +2953,8 @@ Graphic Novel: Watchmen by Alan Moore, Dave Gibbons & John Higgins
     fetchers = (UrlFetcherBigLibraryRead(), UrlFetcherLibbyReadsGlobal())
     for fetcher in fetchers:
       self.assertFalse(fetcher.options['match_series'])
-      self.assertFalse(fetcher.SUPPORTS_INCREMENTAL_UPDATE)
+      self.assertEqual(fetcher.source_id == 'libby_reads_global',
+        fetcher.SUPPORTS_INCREMENTAL_UPDATE)
       self.assertEqual(
         [CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS],
         [item['label'] for item in fetcher.get_filter_list()])
@@ -3245,7 +3251,7 @@ Graphic Novel: Watchmen by Alan Moore, Dave Gibbons & John Higgins
     self.assertEqual(58, fetcher.order)
     self.assertIn('per_page=100', fetcher.URL)
     self.assertFalse(fetcher.options['match_series'])
-    self.assertFalse(fetcher.SUPPORTS_INCREMENTAL_UPDATE)
+    self.assertTrue(fetcher.SUPPORTS_INCREMENTAL_UPDATE)
     self.assertEqual(
       [
         CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,
@@ -3259,7 +3265,7 @@ Graphic Novel: Watchmen by Alan Moore, Dave Gibbons & John Higgins
 
     registry = available_url_fetchers()
     registry_ids = [item.source_id for item in registry]
-    self.assertEqual(395, len(registry))
+    self.assertEqual(394, len(registry))
     self.assertEqual(
       registry_ids.index('bookbrowse_online_book_club') + 1,
       registry_ids.index('dragons_and_jetpacks'))
@@ -3268,7 +3274,6 @@ Graphic Novel: Watchmen by Alan Moore, Dave Gibbons & John Higgins
       registry_ids.index('hugo_awards_novel'))
 
   def test_dragons_and_jetpacks_reports_initial_fetch_and_timeout_retries(self):
-    from parser.dragons_and_jetpacks import SHELF_URL
     from url_fetcher.dragons_and_jetpacks import UrlFetcherDragonsJetpacks
 
     page = dragons_jetpacks_page([
@@ -3290,7 +3295,7 @@ Graphic Novel: Watchmen by Alan Moore, Dave Gibbons & John Higgins
       progress=lambda done, total, message: progress_updates.append(
         (done, total, message)))
 
-    self.assertEqual([(SHELF_URL, 60)] * 4, calls)
+    self.assertEqual([(UrlFetcherDragonsJetpacks().primary_urls()[0], 60)] * 4, calls)
     self.assertEqual(['Example'], [entry['title'] for entry in parsed['entries']])
     self.assertEqual([
       'Fetching Dragons & Jetpacks shelf page 1 (discovering page count)',
@@ -3592,7 +3597,7 @@ Graphic Novel: Watchmen by Alan Moore, Dave Gibbons & John Higgins
     ], [item['label'] for item in fetcher.get_filter_list()])
 
     registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
-    self.assertEqual(395, len(registry_ids))
+    self.assertEqual(394, len(registry_ids))
     self.assertEqual(
       registry_ids.index('spectology') + 1,
       registry_ids.index('hugo_girl'))
@@ -3761,7 +3766,7 @@ Graphic Novel: Watchmen by Alan Moore, Dave Gibbons & John Higgins
     self.assertEqual(
       'Between Two Books - Isolation & Themed Lists', isolation.NAME)
     registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
-    self.assertEqual(395, len(registry_ids))
+    self.assertEqual(394, len(registry_ids))
     self.assertEqual(
       registry_ids.index('hugo_girl') + 1,
       registry_ids.index(numbered.source_id))
@@ -4180,7 +4185,7 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
       'r/Fantasy Top Self-Published Novels 2024',
       'Sword and Laser',
     ], names[:4])
-    self.assertEqual(395, len(names))
+    self.assertEqual(394, len(names))
     self.assertIn('r/bookclub', names)
     self.assertIn('BookBrowse Online Book Club', names)
     self.assertIn('Theakston Old Peculier Crime Novel of the Year', names)
@@ -4299,7 +4304,7 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
     self.assertIn('John Newbery Medal', names)
     self.assertIn('CBCA Book of the Year - Older Readers', names)
     self.assertIn('CBCA Book of the Year - Younger Readers', names)
-    self.assertIn('CBCA Book of the Year - Middle Readers', names)
+    self.assertNotIn('CBCA Book of the Year - Middle Readers', names)
     self.assertIn('CBCA Book of the Year - Early Childhood', names)
     self.assertIn('CBCA Book of the Year - Picture Book', names)
     self.assertIn('CBCA Book of the Year - Eve Pownall', names)
@@ -7803,7 +7808,7 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
       'r_fantasy_top_self_published_novels_2024',
       'sword_and_laser_book_list',
     ], source_ids[:4])
-    self.assertEqual(395, len(source_ids))
+    self.assertEqual(394, len(source_ids))
     self.assertIn('hammett_prize', source_ids)
     self.assertIn('nero_award', source_ids)
     self.assertIn('strand_critics_award_mystery_novel', source_ids)
@@ -8543,7 +8548,10 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
       if url.endswith('/readers-favorite-romance-books-2025'):
         return category
       if url.startswith('https://www.goodreads.com/choiceawards/best-books-'):
-        return '<main></main>'
+        if url.endswith('-2025'):
+          return overview
+        year = url.rsplit('-', 1)[-1]
+        return f'<title>{year} Goodreads Choice Awards</title><a href="{url}">{year} Awards</a>'
       self.fail(url)
 
     parsed = current.fetch_and_parse(fetch_url)
@@ -10542,7 +10550,6 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
     from url_fetcher.cbca_book_of_the_year import (
       UrlFetcherCBCABookOfTheYearEarlyChildhood,
       UrlFetcherCBCABookOfTheYearEvePownall,
-      UrlFetcherCBCABookOfTheYearMiddleReaders,
       UrlFetcherCBCABookOfTheYearNewIllustrator,
       UrlFetcherCBCABookOfTheYearOlderReaders,
       UrlFetcherCBCABookOfTheYearPictureBook,
@@ -10552,7 +10559,6 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
     fetchers = (
       UrlFetcherCBCABookOfTheYearOlderReaders(),
       UrlFetcherCBCABookOfTheYearYoungerReaders(),
-      UrlFetcherCBCABookOfTheYearMiddleReaders(),
       UrlFetcherCBCABookOfTheYearEarlyChildhood(),
       UrlFetcherCBCABookOfTheYearPictureBook(),
       UrlFetcherCBCABookOfTheYearEvePownall(),
@@ -10562,15 +10568,15 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
     self.assertEqual([
       'cbca_book_of_the_year_older_readers',
       'cbca_book_of_the_year_younger_readers',
-      'cbca_book_of_the_year_middle_readers',
       'cbca_book_of_the_year_early_childhood',
       'cbca_book_of_the_year_picture_book',
       'cbca_book_of_the_year_eve_pownall',
       'cbca_book_of_the_year_new_illustrator',
     ], [fetcher.source_id for fetcher in fetchers])
-    self.assertEqual(list(range(264, 271)), [fetcher.order for fetcher in fetchers])
+    self.assertEqual([264, 265, 267, 268, 269, 270], [fetcher.order for fetcher in fetchers])
 
     registry_ids = [recipe.source_id for recipe in available_url_fetchers()]
+    self.assertNotIn('cbca_book_of_the_year_middle_readers', registry_ids)
     for fetcher in fetchers:
       self.assertIn(fetcher.source_id, registry_ids)
     self.assertLess(
@@ -16370,6 +16376,103 @@ class AwardParserSmokeTest(unittest.TestCase):
     self.assertEqual(
       [['Michael Calce', 'Craig Silverman'], ['Jane Doe, Jr.', 'John Roe']],
       [entry['authors'] for entry in wikipedia['entries']])
+
+  def test_nero_official_reads_wrapped_year_sections_and_later_winners(self):
+    from url_fetcher.nero import UrlFetcherNeroAward, NERO_WINNERS_URL
+
+    html = '''<nav><ul><li>Not an award</li></ul></nav>
+      <div><h1>The Nero Award Winners &amp; Finalists</h1></div>
+      <main><h3>2020</h3><p>No finalists recorded here.</p>
+        <h3>2019</h3><p><strong><em>Down the River Unto the Sea</em>
+          by Walter Moseley</strong></p>
+        <h3>2011</h3><ul>
+          <li><strong><em>Bury Your Dead</em>, Louise Penny</strong></li>
+          <li><em>Ice Cold,</em> Tess Gerritsen<strong><em> -- </em></strong>Publisher</li>
+        </ul><h4>(Sorry, we did not keep a record of finalists until 2007.)</h4>
+        <h3>2006</h3><ul><li><strong><em>Wrong Entry</em> by Wrong Author</strong></li></ul>
+      </main>'''
+    winners = '''<h1>The Nero Award Winners—Chronological</h1><table>
+      <tr><td>2026</td><td><em>A Future Winner</em> by A Writer</td></tr>
+      <tr><td>2020</td><td><em>One Good Deed</em> by David Baldacci</td></tr>
+      <tr><td>2019</td><td><em>Duplicate Winner</em> by Another Credit</td></tr>
+      <tr><td>2000</td><td><em>Coyote Revenge</em> by Fred Harris</td></tr>
+      <tr><td>1990</td><td>No award</td></tr></table>'''
+    recipe = UrlFetcherNeroAward()
+    calls = []
+    def fetch(url):
+      calls.append(url)
+      return {recipe.URL: html, NERO_WINNERS_URL: winners}[url]
+    parsed = recipe.fetch_and_parse(fetch, source_choice='automatic')
+    self.assertEqual([recipe.URL, NERO_WINNERS_URL], calls)
+    self.assertEqual([
+      ('2000', 'Coyote Revenge', ['Fred Harris'], 'winner'),
+      ('2011', 'Bury Your Dead', ['Louise Penny'], 'winner'),
+      ('2011.01', 'Ice Cold', ['Tess Gerritsen'], 'nominee'),
+      ('2019', 'Down the River Unto the Sea', ['Walter Moseley'], 'winner'),
+      ('2020', 'One Good Deed', ['David Baldacci'], 'winner'),
+      ('2026', 'A Future Winner', ['A Writer'], 'winner'),
+    ], [(e['position'], e['title'], e['authors'], e['result']) for e in parsed['entries']])
+    self.assertEqual(NERO_WINNERS_URL, parsed['entries'][0]['source']['url'])
+    self.assertEqual(recipe.URL, parsed['entries'][1]['source']['url'])
+    self.assertTrue(any('winner-only coverage for 2019, 2020, 2026' in note
+      for note in parsed['notes']))
+
+  def test_nero_official_legacy_heading_and_black_orchid_boundary(self):
+    from url_fetcher.nero import UrlFetcherNeroAward
+
+    parsed = UrlFetcherNeroAward().parse('''<h1>The Nero Award Finalists</h1>
+      <h3>2007</h3><ul>
+        <li><strong><em>All Mortal Flesh</em> — Julia Spencer-Fleming, Publisher</strong></li>
+        <li><em>A Stolen Season</em> — Steve Hamilton, Publisher</li>
+        <li><em>Black Orchid Blues</em>, Persia Walker</li></ul>
+      <h2>Black Orchid Novella Award</h2><h3>2007</h3><ul>
+        <li><strong><em>Wrong Novella</em> by Wrong Author</strong></li></ul>''')
+    self.assertEqual(['All Mortal Flesh', 'A Stolen Season', 'Black Orchid Blues'],
+      [e['title'] for e in parsed['entries']])
+    self.assertEqual([], parsed['notes'])
+
+  def test_nero_official_preserves_split_titles_by_words_suffixes_and_year_cells(self):
+    from parser.nero import NeroAwardOfficialParser
+    from url_fetcher.nero import NERO_WINNERS_URL
+
+    rows = NeroAwardOfficialParser().parse_winner_rows('''
+      <h1>The Nero Award Winners—Chronological</h1><table>
+        <tr><center><td>2000</td></center><td>
+          <em>Coyote Revenge</em> by Fred Harris</td></tr>
+        <tr><td>2017</td><td><em>With Six You Get Wall</em>y by Al Lamanda</td></tr>
+        <tr><td>2012</td><td><em>Guilt by Association</em>, Marcia Clark, Publisher</td></tr>
+        <tr><td>2025</td><td><em>A Case</em> by Jane Doe, Jr., Publisher</td></tr>
+        <tr><td>1990</td><td>No award</td></tr>
+      </table>''', NERO_WINNERS_URL, 'Nero Award')
+    self.assertEqual([
+      ('2000', 'Coyote Revenge', 'Fred Harris'),
+      ('2017', 'With Six You Get Wally', 'Al Lamanda'),
+      ('2012', 'Guilt by Association', 'Marcia Clark'),
+      ('2025', 'A Case', 'Jane Doe, Jr.'),
+    ], [(r['award_year'], r['title'], r['author']) for r in rows])
+
+  def test_nero_official_supplement_failure_is_partial_but_cancel_propagates(self):
+    from url_fetcher.nero import UrlFetcherNeroAward
+    from errors import ImportCancelledError, CamoufoxRequiredError
+
+    html = '''<h1>The Nero Award Finalists</h1><h3>2018</h3><ul>
+      <li><strong><em>August Snow</em> by Stephen Mack Jones</strong></li>
+      <li><em>The Dime</em> by Kathleen Kent</li></ul>'''
+    def fetch(url):
+      raise error
+    error = OSError('unavailable')
+    parsed = UrlFetcherNeroAward().parse(html, fetch_url=fetch)
+    self.assertEqual(2, len(parsed['entries']))
+    self.assertTrue(any('winners supplement failed' in note for note in parsed['notes']))
+    for error in (ImportCancelledError('cancel'), CamoufoxRequiredError('required')):
+      with self.subTest(error=type(error).__name__), self.assertRaises(type(error)):
+        UrlFetcherNeroAward().parse(html, fetch_url=fetch)
+
+  def test_nero_official_missing_archive_heading_is_rejected(self):
+    from url_fetcher.nero import UrlFetcherNeroAward
+    with self.assertRaisesRegex(ValueError, 'did not expose Nero finalist rows'):
+      UrlFetcherNeroAward().parse('''<h1>Black Orchid Novella Award</h1>
+        <h3>2025</h3><ul><li><em>Unrelated</em> by Writer</li></ul>''')
 
   def test_anthony_anthology_parser_splits_editor_credits(self):
     from url_fetcher.anthony import UrlFetcherAnthonyAnthologyCollection
@@ -22997,7 +23100,7 @@ class AwardParserSmokeTest(unittest.TestCase):
       ('2025', 'Love Me Till Wednesday', 'Suzanne Lissaman', 'Romantic Comedy', 'winner'),
       ('2025.01', 'Exposure!', 'Julia Boggio', 'Romantic Comedy', 'shortlisted'),
       ('2025.02', 'All the Painted Stars', 'Emma Denny',
-       'Popular Romantic Fiction Novel', 'shortlisted'),
+       'Popular Romantic Fiction', 'shortlisted'),
     ], [
       (
         entry['position'],
@@ -23674,7 +23777,7 @@ were ''[[Go Deep]]'' by [[Rilzy Adams]].
     self.assertLess(
       registry_ids.index('romantic_times_reviewers_choice_romance'),
       registry_ids.index('writers_trust_atwood_gibson_fiction'))
-    self.assertEqual(395, len(registry_ids))
+    self.assertEqual(394, len(registry_ids))
 
   def test_lambda_literary_awards_parser_reads_directory_and_current_shortlists(self):
     from parser.lambda_literary_awards import (
@@ -27584,7 +27687,7 @@ were ''[[Go Deep]]'' by [[Rilzy Adams]].
       fetched.append(url)
       if url == fiction.URL:
         return '<ul><li>Rita Bullwinkel - Headshot (Daunt Books) - 2024</li></ul>'
-      if url == SHORTLIST_URL_2026:
+      if url in fiction.SHORTLIST_URLS:
         return '<p>This article was published on Wednesday 18 March 2026</p>'
       self.fail(url)
 
@@ -27593,7 +27696,7 @@ were ''[[Go Deep]]'' by [[Rilzy Adams]].
     self.assertEqual('James Tait Black Prize - Fiction', parsed['name'])
     self.assertEqual(['Headshot'], [entry['title'] for entry in parsed['entries']])
     self.assertFalse(parsed['match_series'])
-    self.assertEqual([fiction.URL, SHORTLIST_URL_2026], fetched)
+    self.assertEqual([fiction.URL, *fiction.SHORTLIST_URLS], fetched)
 
   def test_writers_trust_history_parser_handles_author_and_translator_shapes(self):
     from parser.writers_trust import WritersTrustOfficialParser
@@ -27800,7 +27903,7 @@ were ''[[Go Deep]]'' by [[Rilzy Adams]].
     self.assertEqual("Writers' Trust - Atwood Gibson Fiction Prize", parsed['name'])
     self.assertEqual(['History Winner'], [entry['title'] for entry in parsed['entries']])
     self.assertFalse(parsed['match_series'])
-    self.assertEqual([fetcher.URL, fetcher.CURRENT_URL], fetched)
+    self.assertEqual([fetcher.CURRENT_URL, fetcher.URL], fetched)
     self.assertIn('current award page could not be fetched', parsed['notes'][0])
 
   def test_walter_scott_official_pdf_text_parses_smoke_years(self):
@@ -28304,6 +28407,23 @@ class CamoufoxPilotTest(unittest.TestCase):
       with self.assertRaises(main.CamoufoxSkippedError):
         self.core.fetch_url(self.url, transport='camoufox')
     capability.assert_not_called()
+
+  def test_other_recipe_hosts_keep_their_own_challenge_validation(self):
+    self.capability()
+    with patch.object(main, 'CamoufoxTransport') as factory:
+      factory.return_value.fetch.return_value = '<html><script src="/cdn-cgi/challenge-platform/script.js"></script><h1>Official award</h1></html>'
+      official = 'https://pen.org/literary-awards/example/'
+      self.core.fetch_url(official, transport='camoufox')
+      self.assertFalse(factory.call_args.kwargs['check_challenges'])
+      self.assertFalse(factory.return_value.check_challenges)
+      self.assertEqual('pen.org', factory.return_value.source_name)
+      self.assertEqual(('pen.org', 'goodreads.com'), factory.call_args.kwargs['warmup_excluded_domains'])
+      self.core.fetch_url(self.url, transport='camoufox')
+      self.assertTrue(factory.return_value.check_challenges)
+      self.assertEqual('LibraryThing', factory.return_value.source_name)
+      self.core.fetch_url(official, transport='camoufox')
+      self.assertFalse(factory.return_value.check_challenges)
+      self.core.close_camoufox_transport()
 
   def test_old_versions_and_missing_api_skip_without_prompt(self):
     for version in ((6, 0, 0), (9, 15, 0), (9, 16, 0)):

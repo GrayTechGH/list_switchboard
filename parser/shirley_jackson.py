@@ -67,10 +67,14 @@ class ShirleyJacksonParser(StandardItemMixin, SFADBParser):
   CATEGORY_BOUNDARIES = CATEGORY_BOUNDARIES
 
   def parse(self, overview_html, base_url, name, category, category_aliases,
-            fetch_url=None, log=None, progress=None):
+            fetch_url=None, log=None, progress=None, cached_parsed=None,
+            incremental_update=False, enable_incremental=False):
+    coverage = load_shirley_jackson_isfdb_supplement()['coverage'][category_key(category)]
     parsed = super().parse(
       overview_html, base_url, name, category, category_aliases,
-      fetch_url=fetch_url, log=log, progress=progress)
+      fetch_url=fetch_url, log=log, progress=progress, cached_parsed=cached_parsed,
+      incremental_update=incremental_update, enable_incremental=enable_incremental,
+      configuration_key=coverage)
     return require_complete_shirley_jackson_result(parsed, category, 'SFADB')
 
   def parse_item_node(self, node):

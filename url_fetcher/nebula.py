@@ -19,6 +19,7 @@ except ImportError:
 
 class UrlFetcherNebulaAwardsNovel(UrlFetcherGeneric):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'nebula_awards_novel'
   NAME = 'Nebula Awards - Novel'
   FILTER_CATEGORIES = (
@@ -46,7 +47,8 @@ class UrlFetcherNebulaAwardsNovel(UrlFetcherGeneric):
   def fetch_and_parse(
       self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
       before_fetch=None, after_fetch=None, before_parse=None,
-      force_fallback_level=0, disable_fallbacks=False, source_choice=None):
+      force_fallback_level=0, disable_fallbacks=False, source_choice=None,
+      cached_parsed=None, incremental_update=False):
     parsed = SourceFallbackRunner(
       self.source_attempts(),
       error_class=UrlFetcherError).run(
@@ -58,7 +60,8 @@ class UrlFetcherNebulaAwardsNovel(UrlFetcherGeneric):
         before_parse=before_parse,
         force_fallback_level=force_fallback_level,
         disable_fallbacks=disable_fallbacks,
-        source_choice=source_choice)
+        source_choice=source_choice, cached_parsed=cached_parsed,
+        incremental_update=incremental_update)
     parsed.setdefault('match_series', self.options.get('match_series', True))
     return parsed
 
@@ -74,20 +77,21 @@ class UrlFetcherNebulaAwardsNovel(UrlFetcherGeneric):
         'SFADB',
         self.SFADB_URL,
         parser.parse_sfadb,
-        source_rank=1),
+        source_rank=1, supports_incremental=True),
     )
 
   def source_choices(self):
     return SourceFallbackRunner(self.source_attempts()).source_choices()
 
-  def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
+  def parse(self, html, fetch_url=None, log=None, progress=None, **kwargs):
     base_url = getattr(self, '_last_fetch_url', None) or self.URL
     return self.parser().parse(
       html,
       base_url,
       fetch_url=fetch_url,
       log=log,
-      progress=progress)
+      progress=progress, cached_parsed=kwargs.get('cached_parsed'),
+      incremental_update=kwargs.get('incremental_update', False))
 
 
 class UrlFetcherNebulaSFADBCategory(UrlFetcherGeneric):
@@ -113,7 +117,7 @@ class UrlFetcherNebulaSFADBCategory(UrlFetcherGeneric):
 
     return NebulaSFADBCategoryParser()
 
-  def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
+  def parse(self, html, fetch_url=None, log=None, progress=None, **kwargs):
     return self.parser().parse(
       html,
       self.URL,
@@ -122,10 +126,12 @@ class UrlFetcherNebulaSFADBCategory(UrlFetcherGeneric):
       self.CATEGORY_ALIASES,
       fetch_url=fetch_url,
       log=log,
-      progress=progress)
+      progress=progress, cached_parsed=kwargs.get('cached_parsed'),
+      incremental_update=kwargs.get('incremental_update', False), enable_incremental=True)
 
 
 class UrlFetcherNebulaAwardsNovella(UrlFetcherNebulaSFADBCategory):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'nebula_awards_novella'
   NAME = 'Nebula Awards - Novella'
   CATEGORY = 'Best Novella'
@@ -133,6 +139,7 @@ class UrlFetcherNebulaAwardsNovella(UrlFetcherNebulaSFADBCategory):
 
 
 class UrlFetcherNebulaAndreNorton(UrlFetcherNebulaSFADBCategory):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'nebula_andre_norton_middle_grade_young_adult'
   NAME = 'Nebula Awards - Andre Norton Middle Grade/YA'
   URL = 'https://nebulas.sfwa.org/award/andre-norton-award/'
@@ -163,7 +170,8 @@ class UrlFetcherNebulaAndreNorton(UrlFetcherNebulaSFADBCategory):
   def fetch_and_parse(
       self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
       before_fetch=None, after_fetch=None, before_parse=None,
-      force_fallback_level=0, disable_fallbacks=False, source_choice=None):
+      force_fallback_level=0, disable_fallbacks=False, source_choice=None,
+      cached_parsed=None, incremental_update=False):
     parsed = SourceFallbackRunner(
       self.source_attempts(),
       error_class=UrlFetcherError).run(
@@ -175,7 +183,8 @@ class UrlFetcherNebulaAndreNorton(UrlFetcherNebulaSFADBCategory):
         before_parse=before_parse,
         force_fallback_level=force_fallback_level,
         disable_fallbacks=disable_fallbacks,
-        source_choice=source_choice)
+        source_choice=source_choice, cached_parsed=cached_parsed,
+        incremental_update=incremental_update)
     parsed.setdefault('match_series', self.options.get('match_series', True))
     return parsed
 
@@ -191,22 +200,24 @@ class UrlFetcherNebulaAndreNorton(UrlFetcherNebulaSFADBCategory):
         'SFADB',
         self.SFADB_URL,
         parser.parse_sfadb,
-        source_rank=1),
+        source_rank=1, supports_incremental=True),
     )
 
   def source_choices(self):
     return SourceFallbackRunner(self.source_attempts()).source_choices()
 
-  def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
+  def parse(self, html, fetch_url=None, log=None, progress=None, **kwargs):
     return self.parser().parse(
       html,
       self.URL,
       fetch_url=fetch_url,
       log=log,
-      progress=progress)
+      progress=progress, cached_parsed=kwargs.get('cached_parsed'),
+      incremental_update=kwargs.get('incremental_update', False))
 
 
 class UrlFetcherNebulaAwardsComics(UrlFetcherNebulaAwardsNovel):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'nebula_awards_comics'
   NAME = 'Nebula Awards - Comics'
   URL = 'https://nebulas.sfwa.org/award/best-comic/'

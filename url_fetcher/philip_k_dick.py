@@ -6,6 +6,7 @@ from .generic import CATEGORY_SCIENCE_FICTION, UrlFetcherGeneric
 
 class UrlFetcherPhilipKDickAwardNovel(UrlFetcherGeneric):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'philip_k_dick_award_novel'
   NAME = 'Philip K. Dick Award - Novel'
   FILTER_CATEGORIES = (CATEGORY_SCIENCE_FICTION,)
@@ -26,10 +27,11 @@ class UrlFetcherPhilipKDickAwardNovel(UrlFetcherGeneric):
 
     return PhilipKDickParser()
 
-  def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
+  def parse(self, html, fetch_url=None, log=None, progress=None, **kwargs):
     return self.parser().parse(
       html,
       self.URL,
       fetch_url=fetch_url,
       log=log,
-      progress=progress)
+      progress=progress, cached_parsed=kwargs.get('cached_parsed'),
+      incremental_update=kwargs.get('incremental_update', False), enable_incremental=True)

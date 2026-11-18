@@ -2152,12 +2152,13 @@
       "title": "Murder in the Fifth Position"
     }
   ],
-  "fetched_at": "2026-07-18T02:41:15Z",
+  "fetched_at": "2026-11-16T00:53:15Z",
   "list_id": "agatha_award_best_novel",
   "list_name": "Agatha Award - Contemporary Novel",
   "match_series": false,
   "notes": [],
   "parser": "agatha_award_best_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Agatha Award - Contemporary Novel",

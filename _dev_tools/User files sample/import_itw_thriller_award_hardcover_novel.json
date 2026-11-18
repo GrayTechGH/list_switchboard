@@ -1,0 +1,970 @@
+{
+  "append_state": {
+    "entry_count": 86,
+    "last_entry_key": "the drift|c j tudor",
+    "last_position": "2024.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Jeffrey Deaver"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2009",
+      "category": "Best Hardcover Novel",
+      "position": "2009",
+      "result": "winner",
+      "title": "The Bodies Left Behind"
+    },
+    {
+      "authors": [
+        "Harlan Coben"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2009",
+      "category": "Best Hardcover Novel",
+      "position": "2009.01",
+      "result": "nominee",
+      "title": "Hold Tight"
+    },
+    {
+      "authors": [
+        "Jeffrey Deaver"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2009",
+      "category": "Best Hardcover Novel",
+      "position": "2009.02",
+      "result": "nominee",
+      "title": "The Broken Window"
+    },
+    {
+      "authors": [
+        "Andrew Gross"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2009",
+      "category": "Best Hardcover Novel",
+      "position": "2009.03",
+      "result": "nominee",
+      "title": "The Dark Tide"
+    },
+    {
+      "authors": [
+        "Brad Thor"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2009",
+      "category": "Best Hardcover Novel",
+      "position": "2009.04",
+      "result": "nominee",
+      "title": "The Last Patriot"
+    },
+    {
+      "authors": [
+        "Lisa Gardner"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2010",
+      "category": "Best Hardcover Novel",
+      "position": "2010",
+      "result": "winner",
+      "title": "The Neighbor"
+    },
+    {
+      "authors": [
+        "Joseph Finder"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2010",
+      "category": "Best Hardcover Novel",
+      "position": "2010.01",
+      "result": "nominee",
+      "title": "Vanished"
+    },
+    {
+      "authors": [
+        "Harlan Coben"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2010",
+      "category": "Best Hardcover Novel",
+      "position": "2010.02",
+      "result": "nominee",
+      "title": "Long Lost"
+    },
+    {
+      "authors": [
+        "Linwood Barclay"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2010",
+      "category": "Best Hardcover Novel",
+      "position": "2010.03",
+      "result": "nominee",
+      "title": "Fear The Worst"
+    },
+    {
+      "authors": [
+        "T. Jefferson Parker"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2010",
+      "category": "Best Hardcover Novel",
+      "position": "2010.04",
+      "result": "nominee",
+      "title": "The Renegades"
+    },
+    {
+      "authors": [
+        "John Sandford"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2011",
+      "category": "Best Hardcover Novel",
+      "position": "2011",
+      "result": "winner",
+      "title": "Bad Blood"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2011",
+      "category": "Best Hardcover Novel",
+      "position": "2011.01",
+      "result": "nominee",
+      "title": "The Reversal"
+    },
+    {
+      "authors": [
+        "Jeffery Deaver"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2011",
+      "category": "Best Hardcover Novel",
+      "position": "2011.02",
+      "result": "nominee",
+      "title": "Edge: A Novel"
+    },
+    {
+      "authors": [
+        "Brian Freeman"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2011",
+      "category": "Best Hardcover Novel",
+      "position": "2011.03",
+      "result": "nominee",
+      "title": "The Burying Place"
+    },
+    {
+      "authors": [
+        "Mo Hayder"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2011",
+      "category": "Best Hardcover Novel",
+      "position": "2011.04",
+      "result": "nominee",
+      "title": "Skin"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2012",
+      "category": "Best Hardcover Novel",
+      "position": "2012",
+      "result": "winner",
+      "title": "11/22/63"
+    },
+    {
+      "authors": [
+        "Joseph Finder"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2012",
+      "category": "Best Hardcover Novel",
+      "position": "2012.01",
+      "result": "nominee",
+      "title": "Buried Secrets"
+    },
+    {
+      "authors": [
+        "Jonathan Hayes"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2012",
+      "category": "Best Hardcover Novel",
+      "position": "2012.02",
+      "result": "nominee",
+      "title": "A Hard Death"
+    },
+    {
+      "authors": [
+        "Michael Koryta"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2012",
+      "category": "Best Hardcover Novel",
+      "position": "2012.03",
+      "result": "nominee",
+      "title": "The Ridge"
+    },
+    {
+      "authors": [
+        "Marcus Sakey"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2012",
+      "category": "Best Hardcover Novel",
+      "position": "2012.04",
+      "result": "nominee",
+      "title": "The Two Deaths of Daniel Hayes"
+    },
+    {
+      "authors": [
+        "Brian Freeman"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2013",
+      "category": "Best Hardcover Novel",
+      "position": "2013",
+      "result": "winner",
+      "title": "Spilled Blood"
+    },
+    {
+      "authors": [
+        "Sean Chercover"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2013",
+      "category": "Best Hardcover Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "title": "The Trinity Game"
+    },
+    {
+      "authors": [
+        "Lisa Gardner"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2013",
+      "category": "Best Hardcover Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "title": "Catch Me"
+    },
+    {
+      "authors": [
+        "Gregg Hurwitz"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2013",
+      "category": "Best Hardcover Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "title": "The Survivor"
+    },
+    {
+      "authors": [
+        "William Landay"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2013",
+      "category": "Best Hardcover Novel",
+      "position": "2013.04",
+      "result": "nominee",
+      "title": "Defending Jacob"
+    },
+    {
+      "authors": [
+        "Andrew Pyper"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2014",
+      "category": "Best Hardcover Novel",
+      "position": "2014",
+      "result": "winner",
+      "title": "The Demonologist"
+    },
+    {
+      "authors": [
+        "Linda Castillo"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2014",
+      "category": "Best Hardcover Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "title": "Her Last Breath"
+    },
+    {
+      "authors": [
+        "Lee Child"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2014",
+      "category": "Best Hardcover Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "title": "Never Go Back"
+    },
+    {
+      "authors": [
+        "Lisa Gardner"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2014",
+      "category": "Best Hardcover Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "title": "Touch and Go"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2014",
+      "category": "Best Hardcover Novel",
+      "position": "2014.04",
+      "result": "nominee",
+      "title": "Doctor Sleep"
+    },
+    {
+      "authors": [
+        "Owen Laukkanen"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2014",
+      "category": "Best Hardcover Novel",
+      "position": "2014.05",
+      "result": "nominee",
+      "title": "Criminal Enterprise"
+    },
+    {
+      "authors": [
+        "Douglas Preston",
+        "Lincoln Child"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2014",
+      "category": "Best Hardcover Novel",
+      "position": "2014.06",
+      "result": "nominee",
+      "title": "White Fire"
+    },
+    {
+      "authors": [
+        "Megan Abbott"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2015",
+      "category": "Best Hardcover Novel",
+      "position": "2015",
+      "result": "winner",
+      "title": "The Fever"
+    },
+    {
+      "authors": [
+        "Lauren Beukes"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2015",
+      "category": "Best Hardcover Novel",
+      "position": "2015.01",
+      "result": "nominee",
+      "title": "Broken Monsters"
+    },
+    {
+      "authors": [
+        "Joseph Finder"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2015",
+      "category": "Best Hardcover Novel",
+      "position": "2015.02",
+      "result": "nominee",
+      "title": "Suspicion"
+    },
+    {
+      "authors": [
+        "Greg Iles"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2015",
+      "category": "Best Hardcover Novel",
+      "position": "2015.03",
+      "result": "nominee",
+      "title": "Natchez Burning"
+    },
+    {
+      "authors": [
+        "Chevy Stevens"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2015",
+      "category": "Best Hardcover Novel",
+      "position": "2015.04",
+      "result": "nominee",
+      "title": "That Night"
+    },
+    {
+      "authors": [
+        "Ian Caldwell"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2016",
+      "category": "Best Hardcover Novel",
+      "position": "2016",
+      "result": "winner",
+      "title": "The Fifth Gospel"
+    },
+    {
+      "authors": [
+        "Tess Gerritsen"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2016",
+      "category": "Best Hardcover Novel",
+      "position": "2016.01",
+      "result": "nominee",
+      "title": "Playing With Fire"
+    },
+    {
+      "authors": [
+        "Paula Hawkins"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2016",
+      "category": "Best Hardcover Novel",
+      "position": "2016.02",
+      "result": "nominee",
+      "title": "The Girl on the Train"
+    },
+    {
+      "authors": [
+        "Laura McHugh"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2016",
+      "category": "Best Hardcover Novel",
+      "position": "2016.03",
+      "result": "nominee",
+      "title": "Arrowood"
+    },
+    {
+      "authors": [
+        "Ben H. Winters"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2016",
+      "category": "Best Hardcover Novel",
+      "position": "2016.04",
+      "result": "nominee",
+      "title": "Underground Airlines"
+    },
+    {
+      "authors": [
+        "Noah Hawley"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2017",
+      "category": "Best Hardcover Novel",
+      "position": "2017",
+      "result": "winner",
+      "title": "Before the Fall"
+    },
+    {
+      "authors": [
+        "Megan Abbott"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2017",
+      "category": "Best Hardcover Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "You Will Know Me"
+    },
+    {
+      "authors": [
+        "Reed Farrel Coleman"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2017",
+      "category": "Best Hardcover Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "Where It Hurts"
+    },
+    {
+      "authors": [
+        "Laura McHugh"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2017",
+      "category": "Best Hardcover Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "title": "Arrowood"
+    },
+    {
+      "authors": [
+        "Ben H. Winters"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2017",
+      "category": "Best Hardcover Novel",
+      "position": "2017.04",
+      "result": "nominee",
+      "title": "Underground Airlines"
+    },
+    {
+      "authors": [
+        "Riley Sager"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2018",
+      "category": "Best Hardcover Novel",
+      "position": "2018",
+      "result": "winner",
+      "title": "Final Girls"
+    },
+    {
+      "authors": [
+        "Dan Chaon"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2018",
+      "category": "Best Hardcover Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "Ill Will"
+    },
+    {
+      "authors": [
+        "Denise Mina"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2018",
+      "category": "Best Hardcover Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "title": "The Long Drop"
+    },
+    {
+      "authors": [
+        "B.A. Paris"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2018",
+      "category": "Best Hardcover Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "title": "The Breakdown"
+    },
+    {
+      "authors": [
+        "Gin Phillips"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2018",
+      "category": "Best Hardcover Novel",
+      "position": "2018.04",
+      "result": "nominee",
+      "title": "Fierce Kingdom"
+    },
+    {
+      "authors": [
+        "Jennifer Hillier"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2019",
+      "category": "Best Hardcover Novel",
+      "position": "2019",
+      "result": "winner",
+      "title": "Jar of Hearts"
+    },
+    {
+      "authors": [
+        "Lou Berney"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2019",
+      "category": "Best Hardcover Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "title": "November Road"
+    },
+    {
+      "authors": [
+        "Julia Heaberlin"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2019",
+      "category": "Best Hardcover Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "title": "Paper Ghosts"
+    },
+    {
+      "authors": [
+        "Karin Slaughter"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2019",
+      "category": "Best Hardcover Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "title": "Pieces of Her"
+    },
+    {
+      "authors": [
+        "Paul Tremblay"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2019",
+      "category": "Best Hardcover Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "title": "The Cabin at the End of the World"
+    },
+    {
+      "authors": [
+        "Adrian McKinty"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2020",
+      "category": "Best Hardcover Novel",
+      "position": "2020",
+      "result": "winner",
+      "title": "The Chain"
+    },
+    {
+      "authors": [
+        "David Baldacci"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2020",
+      "category": "Best Hardcover Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "One Good Deed"
+    },
+    {
+      "authors": [
+        "Joe Clifford"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2020",
+      "category": "Best Hardcover Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "Rag and Bone"
+    },
+    {
+      "authors": [
+        "Rachel Howzell Hall"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2020",
+      "category": "Best Hardcover Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "They All Fall Down"
+    },
+    {
+      "authors": [
+        "Denise Mina"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2020",
+      "category": "Best Hardcover Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "title": "Conviction"
+    },
+    {
+      "authors": [
+        "S.A. Cosby"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2021",
+      "category": "Best Hardcover Novel",
+      "position": "2021",
+      "result": "winner",
+      "title": "Blacktop Wasteland"
+    },
+    {
+      "authors": [
+        "Joe Ide"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2021",
+      "category": "Best Hardcover Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "Hi Five"
+    },
+    {
+      "authors": [
+        "Richard Osman"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2021",
+      "category": "Best Hardcover Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "The Thursday Murder Club"
+    },
+    {
+      "authors": [
+        "Ivy Pochoda"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2021",
+      "category": "Best Hardcover Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "These Women"
+    },
+    {
+      "authors": [
+        "Lisa Unger"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2021",
+      "category": "Best Hardcover Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "Confessions on the 7:45"
+    },
+    {
+      "authors": [
+        "S.A. Cosby"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2022",
+      "category": "Best Hardcover Novel",
+      "position": "2022",
+      "result": "winner",
+      "title": "Razorblade Tears"
+    },
+    {
+      "authors": [
+        "Megan Abbott"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2022",
+      "category": "Best Hardcover Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "The Turnout"
+    },
+    {
+      "authors": [
+        "Alice Feeney"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2022",
+      "category": "Best Hardcover Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "Rock Paper Scissors"
+    },
+    {
+      "authors": [
+        "Rachel Howzell Hall"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2022",
+      "category": "Best Hardcover Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "These Toxic Things"
+    },
+    {
+      "authors": [
+        "Alma Katsu"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2022",
+      "category": "Best Hardcover Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "Red Widow"
+    },
+    {
+      "authors": [
+        "Eric Rickstad"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2022",
+      "category": "Best Hardcover Novel",
+      "position": "2022.05",
+      "result": "nominee",
+      "title": "I Am Not Who You Think I Am"
+    },
+    {
+      "authors": [
+        "Catriona Ward"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2023",
+      "category": "Best Hardcover Novel",
+      "position": "2023",
+      "result": "winner",
+      "title": "Sundial"
+    },
+    {
+      "authors": [
+        "Delilah S. Dawson"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2023",
+      "category": "Best Hardcover Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "title": "The Violence"
+    },
+    {
+      "authors": [
+        "Jennifer Hillier"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2023",
+      "category": "Best Hardcover Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "title": "Things We Do in the Dark"
+    },
+    {
+      "authors": [
+        "Alma Katsu"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2023",
+      "category": "Best Hardcover Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "title": "The Fervor"
+    },
+    {
+      "authors": [
+        "Jennifer McMahon"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2023",
+      "category": "Best Hardcover Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "title": "The Children on the Hill"
+    },
+    {
+      "authors": [
+        "Chris Pavone"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2023",
+      "category": "Best Hardcover Novel",
+      "position": "2023.05",
+      "result": "nominee",
+      "title": "Two Nights in Lisbon"
+    },
+    {
+      "authors": [
+        "Erin Young"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2023",
+      "category": "Best Hardcover Novel",
+      "position": "2023.06",
+      "result": "nominee",
+      "title": "The Fields"
+    },
+    {
+      "authors": [
+        "S.A. Cosby"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2024",
+      "category": "Best Hardcover Novel",
+      "position": "2024",
+      "result": "winner",
+      "title": "All the Sinners Bleed"
+    },
+    {
+      "authors": [
+        "Robert Dugoni"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2024",
+      "category": "Best Hardcover Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "Her Deadly Game"
+    },
+    {
+      "authors": [
+        "J.T. Ellison"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2024",
+      "category": "Best Hardcover Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "It\u2019s One of Us"
+    },
+    {
+      "authors": [
+        "Mick Herron"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2024",
+      "category": "Best Hardcover Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "The Secret Hours"
+    },
+    {
+      "authors": [
+        "Joe Ide"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2024",
+      "category": "Best Hardcover Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "title": "Fixit"
+    },
+    {
+      "authors": [
+        "C.J. Tudor"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2024",
+      "category": "Best Hardcover Novel",
+      "position": "2024.05",
+      "result": "nominee",
+      "title": "The Drift"
+    }
+  ],
+  "fetched_at": "2026-11-16T00:36:10Z",
+  "list_id": "itw_thriller_award_hardcover_novel",
+  "list_name": "ITW Thriller Award - Hardcover Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "itw_thriller_award_hardcover_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "ITW Thriller Award - Hardcover Novel",
+    "source_id": "itw_thriller_award_hardcover_novel",
+    "url": "https://thrillerwriters.org/past-nominees-and-winners"
+  }
+}

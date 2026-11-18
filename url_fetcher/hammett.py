@@ -21,6 +21,7 @@ HAMMETT_CATEGORIES = (CATEGORY_CRIME_MYSTERY_THRILLER,)
 
 
 class UrlFetcherHammettPrize(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   FILTER_CATEGORIES = HAMMETT_CATEGORIES
   FETCH_URLS = ()
@@ -45,7 +46,8 @@ class UrlFetcherHammettPrize(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
   def fetch_and_parse(
       self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
       before_fetch=None, after_fetch=None, before_parse=None,
-      force_fallback_level=0, disable_fallbacks=False, source_choice=None):
+      force_fallback_level=0, disable_fallbacks=False, source_choice=None,
+      cached_parsed=None, incremental_update=False):
     parsed = SourceFallbackRunner(
       self.source_attempts(),
       error_class=UrlFetcherError).run(
@@ -57,7 +59,8 @@ class UrlFetcherHammettPrize(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
         before_parse=before_parse,
         force_fallback_level=force_fallback_level,
         disable_fallbacks=disable_fallbacks,
-        source_choice=source_choice)
+        source_choice=source_choice, cached_parsed=cached_parsed,
+        incremental_update=incremental_update)
     parsed.setdefault('match_series', self.options.get('match_series', True))
     return parsed
 
@@ -69,14 +72,14 @@ class UrlFetcherHammettPrize(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
         self.URL,
         lambda html, url, **kwargs: official_parser.parse(
           html, url, self.NAME, self.CATEGORY, self.CATEGORY_ALIASES, **kwargs),
-        source_rank=0),
+        source_rank=0, supports_incremental=True),
       self.librarything_attempt(source_rank=1),
     )
 
   def source_choices(self):
     return SourceFallbackRunner(self.source_attempts()).source_choices()
 
-  def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
+  def parse(self, html, fetch_url=None, log=None, progress=None, **kwargs):
     return self.parser().parse(
       html,
       self.URL,
@@ -85,4 +88,5 @@ class UrlFetcherHammettPrize(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
       self.CATEGORY_ALIASES,
       fetch_url=fetch_url,
       log=log,
-      progress=progress)
+      progress=progress, cached_parsed=kwargs.get('cached_parsed'),
+      incremental_update=kwargs.get('incremental_update', False))

@@ -1,0 +1,519 @@
+{
+  "append_state": {
+    "entry_count": 45,
+    "last_entry_key": "davy|edgar pangborn",
+    "last_position": "45",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Frank Herbert"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "1",
+      "result": "ranked",
+      "title": "Dune"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "2",
+      "result": "ranked",
+      "title": "The Left Hand of Darkness"
+    },
+    {
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "3",
+      "result": "ranked",
+      "title": "Childhood's End"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "4",
+      "result": "ranked",
+      "title": "The Moon Is a Harsh Mistress"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "5",
+      "result": "ranked",
+      "title": "Stranger in a Strange Land"
+    },
+    {
+      "authors": [
+        "Isaac Asimov"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "6",
+      "result": "ranked",
+      "title": "The Foundation Trilogy"
+    },
+    {
+      "authors": [
+        "Walter M. Miller, Jr."
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "7",
+      "result": "ranked",
+      "title": "A Canticle for Leibowitz"
+    },
+    {
+      "authors": [
+        "Frederik Pohl"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "8",
+      "result": "ranked",
+      "title": "Gateway"
+    },
+    {
+      "authors": [
+        "Larry Niven"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "9",
+      "result": "ranked",
+      "title": "Ringworld"
+    },
+    {
+      "authors": [
+        "Alfred Bester"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "10",
+      "result": "ranked",
+      "title": "The Stars My Destination"
+    },
+    {
+      "authors": [
+        "Roger Zelazny"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "11",
+      "result": "ranked",
+      "title": "Lord of Light"
+    },
+    {
+      "authors": [
+        "Theodore Sturgeon"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "12",
+      "result": "ranked",
+      "title": "More Than Human"
+    },
+    {
+      "authors": [
+        "Larry Niven",
+        "Jerry Pournelle"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "13",
+      "result": "ranked",
+      "title": "The Mote in God's Eye"
+    },
+    {
+      "authors": [
+        "Philip K. Dick"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "14",
+      "result": "ranked",
+      "title": "The Man in the High Castle"
+    },
+    {
+      "authors": [
+        "H. G. Wells"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "15",
+      "result": "ranked",
+      "title": "The Time Machine"
+    },
+    {
+      "authors": [
+        "John Brunner"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "16",
+      "result": "ranked",
+      "title": "Stand on Zanzibar"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "17",
+      "result": "ranked",
+      "title": "The Dispossessed"
+    },
+    {
+      "authors": [
+        "Alfred Bester"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "18",
+      "result": "ranked",
+      "title": "The Demolished Man"
+    },
+    {
+      "authors": [
+        "Joe Haldeman"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "18",
+      "result": "ranked",
+      "title": "The Forever War"
+    },
+    {
+      "authors": [
+        "Ray Bradbury"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "20",
+      "result": "ranked",
+      "title": "The Martian Chronicles"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "21",
+      "result": "ranked",
+      "title": "Starship Troopers"
+    },
+    {
+      "authors": [
+        "Robert Silverberg"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "22",
+      "result": "ranked",
+      "title": "Dying Inside"
+    },
+    {
+      "authors": [
+        "Samuel R. Delany"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "23",
+      "result": "ranked",
+      "title": "Dhalgren"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "24",
+      "result": "ranked",
+      "title": "Time Enough for Love"
+    },
+    {
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "25",
+      "result": "ranked",
+      "title": "Rendezvous with Rama"
+    },
+    {
+      "authors": [
+        "Clifford D. Simak"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "25",
+      "result": "ranked",
+      "title": "Way Station"
+    },
+    {
+      "authors": [
+        "Philip Jos\u00e9 Farmer"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "27",
+      "result": "ranked",
+      "title": "To Your Scattered Bodies Go"
+    },
+    {
+      "authors": [
+        "George R. Stewart"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "28",
+      "result": "ranked",
+      "title": "Earth Abides"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "29",
+      "result": "ranked",
+      "title": "The Door Into Summer"
+    },
+    {
+      "authors": [
+        "Clifford D. Simak"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "30",
+      "result": "ranked",
+      "title": "City"
+    },
+    {
+      "authors": [
+        "James H. Schmitz"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "31",
+      "result": "ranked",
+      "title": "The Witches of Karres"
+    },
+    {
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "32",
+      "result": "ranked",
+      "title": "The City and the Stars"
+    },
+    {
+      "authors": [
+        "Isaac Asimov"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "33",
+      "result": "ranked",
+      "title": "The Caves of Steel"
+    },
+    {
+      "authors": [
+        "George Orwell"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "34",
+      "result": "ranked",
+      "title": "Nineteen Eighty-Four"
+    },
+    {
+      "authors": [
+        "Cordwainer Smith"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "35",
+      "result": "ranked",
+      "title": "Norstrilia"
+    },
+    {
+      "authors": [
+        "Hal Clement"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "36",
+      "result": "ranked",
+      "title": "Mission of Gravity"
+    },
+    {
+      "authors": [
+        "Philip K. Dick"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "37",
+      "result": "ranked",
+      "title": "Ubik"
+    },
+    {
+      "authors": [
+        "Gregory Benford"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "38",
+      "result": "ranked",
+      "title": "Timescape"
+    },
+    {
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "38",
+      "result": "ranked",
+      "title": "2001: A Space Odyssey"
+    },
+    {
+      "authors": [
+        "Ray Bradbury"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "40",
+      "result": "ranked",
+      "title": "Fahrenheit 451"
+    },
+    {
+      "authors": [
+        "C. J. Cherryh"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "41",
+      "result": "ranked",
+      "title": "Downbelow Station"
+    },
+    {
+      "authors": [
+        "H. G. Wells"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "42",
+      "result": "ranked",
+      "title": "The War of the Worlds"
+    },
+    {
+      "authors": [
+        "Olaf Stapledon"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "43",
+      "result": "ranked",
+      "title": "Last and First Men"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "44",
+      "result": "ranked",
+      "title": "Double Star"
+    },
+    {
+      "authors": [
+        "Edgar Pangborn"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1987",
+      "position": "45",
+      "result": "ranked",
+      "title": "Davy"
+    }
+  ],
+  "fetched_at": "2026-07-23T05:09:13Z",
+  "list_id": "locus_all_time_1987_sf_novel",
+  "list_name": "Locus - All-Time 1987 SF Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "locus_all_time_1987_sf_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Locus - All-Time 1987 SF Novel",
+    "source_id": "locus_all_time_1987_sf_novel",
+    "url": "https://www.sfadb.com/Locus_1987_SF"
+  }
+}

@@ -1,0 +1,1010 @@
+{
+  "append_state": {
+    "entry_count": 59,
+    "last_entry_key": "midnight echo 19|dan rabarts",
+    "last_position": "2024.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Jennifer Brozek",
+        "Amanda Pillar"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2009",
+      "category": "Edited Work",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Grants Pass"
+    },
+    {
+      "authors": [
+        "Stephen Clark"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2009",
+      "category": "Edited Work",
+      "position": "2009.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Festive Fear"
+    },
+    {
+      "authors": [
+        "Stuart Mayne"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2009",
+      "category": "Edited Work",
+      "position": "2009.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Aurealis #42"
+    },
+    {
+      "authors": [
+        "Angela Challis",
+        "Marty Young"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2010",
+      "category": "Edited Work",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Macabre: A Journey through Australia's Darkest Fears"
+    },
+    {
+      "authors": [
+        "Lee Battersby"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2010",
+      "category": "Edited Work",
+      "position": "2010.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Midnight Echo #4"
+    },
+    {
+      "authors": [
+        "Liz Grzyb"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2010",
+      "category": "Edited Work",
+      "position": "2010.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Scary Kisses"
+    },
+    {
+      "authors": [
+        "Amanda Pillar",
+        "Pete Kempshall"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2010",
+      "category": "Edited Work",
+      "position": "2010.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Scenes From The Second Storey"
+    },
+    {
+      "authors": [
+        "Russell B. Farr"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2011",
+      "category": "Edited Work",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Dead Red Heart"
+    },
+    {
+      "authors": [
+        "Liz Grzyb"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2011",
+      "category": "Edited Work",
+      "position": "2011.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "More Scary Kisses"
+    },
+    {
+      "authors": [
+        "David Kernot",
+        "David Conyers",
+        "Jason Fischer"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2011",
+      "category": "Edited Work",
+      "position": "2011.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Midnight Echo #6"
+    },
+    {
+      "authors": [
+        "Liz Grzyb",
+        "Talie Helene"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2011",
+      "category": "Edited Work",
+      "position": "2011.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "The Year's Best Fantasy and Horror"
+    },
+    {
+      "authors": [
+        "Craig Bezant"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2012",
+      "category": "Edited Work",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Surviving The End"
+    },
+    {
+      "authors": [
+        "David Conyers",
+        "Brian M. Sammons"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2012",
+      "category": "Edited Work",
+      "position": "2012.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Cthulhu Unbound 3"
+    },
+    {
+      "authors": [
+        "Liz Grzyb",
+        "Talie Helene"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2012",
+      "category": "Edited Work",
+      "position": "2012.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "The Year's Best Australian Fantasy & Horror"
+    },
+    {
+      "authors": [
+        "Dan Rabarts",
+        "Lee Murray"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2013",
+      "category": "Edited Work",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Baby Teeth - Bite Sized Tales of Terror"
+    },
+    {
+      "authors": [
+        "Geoff Brown"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2013",
+      "category": "Edited Work",
+      "position": "2013.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Midnight Echo #9"
+    },
+    {
+      "authors": [
+        "Craig Bezant"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2013",
+      "category": "Edited Work",
+      "position": "2013.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "A Killer Among Demons"
+    },
+    {
+      "authors": [
+        "Sophie Yorkston"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2013",
+      "category": "Edited Work",
+      "position": "2013.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Star Quake 1"
+    },
+    {
+      "authors": [
+        "Sophie Yorkson"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2014",
+      "category": "Edited Work",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "SQ Mag #14"
+    },
+    {
+      "authors": [
+        "Geoff Brown",
+        "Amanda J. Spedding"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2014",
+      "category": "Edited Work",
+      "position": "2014.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "SNAFU"
+    },
+    {
+      "authors": [
+        "Simon Dewar"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2014",
+      "category": "Edited Work",
+      "position": "2014.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Suspended in Dusk"
+    },
+    {
+      "authors": [
+        "Marty Young"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2015",
+      "category": "Edited Work",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Blurring the Line"
+    },
+    {
+      "authors": [
+        "Amanda Pillar"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2015",
+      "category": "Edited Work",
+      "position": "2015.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Bloodlines"
+    },
+    {
+      "authors": [
+        "Cameron Trost"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2015",
+      "category": "Edited Work",
+      "position": "2015.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Lighthouses"
+    },
+    {
+      "authors": [
+        "Kaaron Warren"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2015",
+      "category": "Edited Work",
+      "position": "2015.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Midnight Echo 11"
+    },
+    {
+      "authors": [
+        "Shane J. Cummings"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2016",
+      "category": "Edited Work",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Dead of Night"
+    },
+    {
+      "authors": [
+        "Shane Jiraiya Cummings"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2016",
+      "category": "Edited Work",
+      "position": "2016.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Dead of Night"
+    },
+    {
+      "authors": [
+        "Jack Dann"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2016",
+      "category": "Edited Work",
+      "position": "2016.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Dreaming in the Dark"
+    },
+    {
+      "authors": [
+        "Dan Rabarts",
+        "Lee Murray"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2016",
+      "category": "Edited Work",
+      "position": "2016.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "At the Edge"
+    },
+    {
+      "authors": [
+        "Steve Proposch",
+        "Christopher Sequeira",
+        "Bryce Stevens"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2017",
+      "category": "Edited Work",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Cthulhu Deep Down Under Volume 1"
+    },
+    {
+      "authors": [
+        "Brian Craddock"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2017",
+      "category": "Edited Work",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "The Paul Haines Award for Long Fiction: Ismail's Expulsion"
+    },
+    {
+      "authors": [
+        "Shane Jiraiya Cummings",
+        "Anthony P Ferguson"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2017",
+      "category": "Edited Work",
+      "position": "2017.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Midnight Echo #12"
+    },
+    {
+      "authors": [
+        "Steven Dillon"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2017",
+      "category": "Edited Work",
+      "position": "2017.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Below the Stairs - Tales from the Cellar"
+    },
+    {
+      "authors": [
+        "Lee Murray"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2018",
+      "category": "Edited Work",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Hellhole Anthology of Subterranean Horror"
+    },
+    {
+      "authors": [
+        "Sequeira",
+        "Proposch",
+        "Stevens"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2018",
+      "category": "Edited Work",
+      "position": "2018.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Cthulhu Land Long White Cloud"
+    },
+    {
+      "authors": [
+        "Sequeira",
+        "Proposch",
+        "Stevens"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2018",
+      "category": "Edited Work",
+      "position": "2018.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Cthulhu Deep Down Under Vol. 2"
+    },
+    {
+      "authors": [
+        "Deborah Sheldon"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2019",
+      "category": "Edited Work",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Midnight Echo #14"
+    },
+    {
+      "authors": [
+        "Steve Dillon"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2019",
+      "category": "Edited Work",
+      "position": "2019.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Beside the Seaside: Tales from the Day-Tripper"
+    },
+    {
+      "authors": [
+        "Marie O'Regan",
+        "Lee Murray"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2019",
+      "category": "Edited Work",
+      "position": "2019.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Trickster's Treats #3 - the Seven Deadly Sins Edition"
+    },
+    {
+      "authors": [
+        "Lee Murray"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2020",
+      "category": "Edited Work",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Midnight Echo issue 15"
+    },
+    {
+      "authors": [
+        "Lee Murray",
+        "Geneve Flynn"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2020",
+      "category": "Edited Work",
+      "position": "2020.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Black Cranes: Tales of Unquiet Women"
+    },
+    {
+      "authors": [
+        "Eugen Bacon",
+        "Milton Davis"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2020",
+      "category": "Edited Work",
+      "position": "2020.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Hadithi & the State of Black Speculative Fiction"
+    },
+    {
+      "authors": [
+        "Tabatha Wood",
+        "Cassie Hart"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2020",
+      "category": "Edited Work",
+      "position": "2020.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Black Dogs, Black Tales - Where the Dogs Don't Die"
+    },
+    {
+      "authors": [
+        "Louise Zedda-Sampson",
+        "Geneve Flynn"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2020",
+      "category": "Edited Work",
+      "position": "2020.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Trickster's Treats 4 - Coming, Buried or Not!"
+    },
+    {
+      "authors": [
+        "Deborah Sheldon"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2021",
+      "category": "Edited Work",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Spawn: Weird Horror Tales About Pregnancy, Birth and Babies"
+    },
+    {
+      "authors": [
+        "Amanda J Spedding",
+        "Geoff Brown"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2021",
+      "category": "Edited Work",
+      "position": "2021.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "SNAFU: Holy War"
+    },
+    {
+      "authors": [
+        "Tim Hawken"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2021",
+      "category": "Edited Work",
+      "position": "2021.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Midnight Echo #16"
+    },
+    {
+      "authors": [
+        "Cassie Hart",
+        "Sloane Leong"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2022",
+      "category": "Edited Work",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Death in the Mouth: An Anthology of Original Horror by People of Colour"
+    },
+    {
+      "authors": [
+        "Andrew Cull",
+        "Gabino Iglesias"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2022",
+      "category": "Edited Work",
+      "position": "2022.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Found: An Anthology of Found Footage Horror Stories"
+    },
+    {
+      "authors": [
+        "Greg Chapman"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2022",
+      "category": "Edited Work",
+      "position": "2022.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Midnight Echo Issue 17"
+    },
+    {
+      "authors": [
+        "Deborah Sheldon"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2023",
+      "category": "Edited Work",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Killer Creatures Down Under"
+    },
+    {
+      "authors": [
+        "Cameron Trost"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2023",
+      "category": "Edited Work",
+      "position": "2023.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Black Beacon Book of Horror"
+    },
+    {
+      "authors": [
+        "Lee Murray"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2023",
+      "category": "Edited Work",
+      "position": "2023.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Remains to be Told"
+    },
+    {
+      "authors": [
+        "Geoff Brown",
+        "AJ Spedding"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2023",
+      "category": "Edited Work",
+      "position": "2023.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "SNAFU Punk'd"
+    },
+    {
+      "authors": [
+        "Sloane Leong",
+        "Cassie Hart"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2024",
+      "category": "Edited Work",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/2024-australasian-shadows-awards-winners/"
+      },
+      "title": "Death in the Mouth Volume 2: Original Horror from the Margins"
+    },
+    {
+      "authors": [
+        "Steven Paulsen",
+        "Christopher Sequeira"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2024",
+      "category": "Edited Work",
+      "position": "2024.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/2024-australasian-shadows-awards-winners/"
+      },
+      "title": "Nosferatu Unbound"
+    },
+    {
+      "authors": [
+        "Andrew Cull",
+        "Gabino Iglesias"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2024",
+      "category": "Edited Work",
+      "position": "2024.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/2024-australasian-shadows-awards-winners/"
+      },
+      "title": "Found 2: More Stories of Found Footage Horror"
+    },
+    {
+      "authors": [
+        "L. E. Daniels",
+        "Christa Carmen"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2024",
+      "category": "Edited Work",
+      "position": "2024.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/2024-australasian-shadows-awards-winners/"
+      },
+      "title": "Monsters in the Mills"
+    },
+    {
+      "authors": [
+        "Dan Rabarts"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2024",
+      "category": "Edited Work",
+      "position": "2024.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/2024-australasian-shadows-awards-winners/"
+      },
+      "title": "Midnight Echo #19"
+    }
+  ],
+  "fetched_at": "2026-07-26T09:31:41Z",
+  "list_id": "australasian_shadows_edited_work",
+  "list_name": "Australasian Shadows - Edited Work",
+  "match_series": false,
+  "notes": [
+    "Official AHWA current awards page exposes current-cycle finalists only.",
+    "Official AHWA past-winners page includes many historical shortlists, but not uniformly for every category/year.",
+    "Official annual posts supplement recent winner/shortlist gaps.",
+    "Wikipedia is a replacement fallback only; ISFDB is reference-only in V1.",
+    "Official AHWA 2025 Edited Work states No shortlist, but a winner will be announced at the presentation.",
+    "Official AHWA 2025 Edited Work row could not be parsed: Graphic Novels/Comics:",
+    "Official AHWA 2025 Edited Work states No award will be presented in this category in 2025.",
+    "Official AHWA 2018 Edited Work row could not be parsed: Behind the Mask Steve Dillon",
+    "Official AHWA 2017 Edited Work states Written Work in a Comic/Graphic Novel: No Award.",
+    "Official AHWA 2014 Edited Work states Collection: No shortlist.",
+    "Official AHWA 2013 Edited Work states Collection: No shortlist."
+  ],
+  "parser": "australasian_shadows_edited_work",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Australasian Shadows - Edited Work",
+    "source_id": "australasian_shadows_edited_work",
+    "url": "https://australasianhorror.com/australian-shadows-awards/"
+  }
+}

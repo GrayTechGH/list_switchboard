@@ -1,0 +1,1693 @@
+{
+  "append_state": {
+    "entry_count": 95,
+    "last_entry_key": "the hunger and the dusk vol 1|g willow wilson\u001fchris wildgoose",
+    "last_position": "2025.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Kaja Foglio",
+        "Phil Foglio",
+        "Cheyenne Wright"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2009",
+      "category": "Best Graphic Story or Comic",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2009-hugo-awards/"
+      },
+      "title": "Girl Genius, Volume 8: Agatha Heterodyne and the Chapel of Bones"
+    },
+    {
+      "authors": [
+        "Joss Whedon",
+        "Brett Matthews",
+        "Will Conrad",
+        "Michelle Madsen",
+        "Jo Chen"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2009",
+      "category": "Best Graphic Story or Comic",
+      "position": "2009.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2009-hugo-awards/"
+      },
+      "title": "Serenity: Better Days"
+    },
+    {
+      "authors": [
+        "Jim Butcher",
+        "Ardian Syaf"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2009",
+      "category": "Best Graphic Story or Comic",
+      "position": "2009.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2009-hugo-awards/"
+      },
+      "title": "The Dresden Files: Welcome to the Jungle"
+    },
+    {
+      "authors": [
+        "Bill Willingham",
+        "Mark Buckingham",
+        "Steve Leialoha",
+        "Andrew Pepoy",
+        "Lee Loughridge",
+        "Todd Klein"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2009",
+      "category": "Best Graphic Story or Comic",
+      "position": "2009.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2009-hugo-awards/"
+      },
+      "title": "Fables: War and Pieces"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan",
+        "Pia Guerra",
+        "Jose Marzan, Jr."
+      ],
+      "award": "Hugo Award",
+      "award_year": "2009",
+      "category": "Best Graphic Story or Comic",
+      "position": "2009.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2009-hugo-awards/"
+      },
+      "title": "Y: The Last Man, Volume 10: Whys and Wherefores"
+    },
+    {
+      "authors": [
+        "Howard Tayler"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2009",
+      "category": "Best Graphic Story or Comic",
+      "position": "2009.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2009-hugo-awards/"
+      },
+      "title": "Schlock Mercenary: The Body Politic"
+    },
+    {
+      "authors": [
+        "Kaja Foglio",
+        "Phil Foglio",
+        "Cheyenne Wright"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2010",
+      "category": "Best Graphic Story or Comic",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2010-hugo-awards/"
+      },
+      "title": "Girl Genius, Volume 9: Agatha Heterodyne and the Heirs of the Storm"
+    },
+    {
+      "authors": [
+        "Neil Gaiman",
+        "Andy Kubert",
+        "Scott Williams"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2010",
+      "category": "Best Graphic Story or Comic",
+      "position": "2010.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2010-hugo-awards/"
+      },
+      "title": "Batman: Whatever Happened to the Caped Crusader?"
+    },
+    {
+      "authors": [
+        "Bill Willingham",
+        "Mark Buckingham",
+        "Peter Gross",
+        "Andrew Pepoy",
+        "Michael Allred",
+        "David Hahn",
+        "Lee Loughridge",
+        "Laura Allred",
+        "Todd Klein"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2010",
+      "category": "Best Graphic Story or Comic",
+      "position": "2010.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2010-hugo-awards/"
+      },
+      "title": "Fables Vol 12: The Dark Ages"
+    },
+    {
+      "authors": [
+        "Paul Cornell",
+        "Leonard Kirk",
+        "Mike Collins",
+        "Adrian Alphona",
+        "Ardian Syaf"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2010",
+      "category": "Best Graphic Story or Comic",
+      "position": "2010.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2010-hugo-awards/"
+      },
+      "title": "Captain Britain And MI13. Volume 3: Vampire State"
+    },
+    {
+      "authors": [
+        "Howard Tayler"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2010",
+      "category": "Best Graphic Story or Comic",
+      "position": "2010.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2010-hugo-awards/"
+      },
+      "title": "Schlock Mercenary: The Longshoreman of the Apocalypse"
+    },
+    {
+      "authors": [
+        "Phil Foglio",
+        "Kaja Foglio",
+        "Cheyenne Wright"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2011",
+      "category": "Best Graphic Story or Comic",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2011-hugo-awards/"
+      },
+      "title": "Girl Genius, Volume 10: Agatha Heterodyne and the Guardian Muse"
+    },
+    {
+      "authors": [
+        "Bill Willingham",
+        "Mark Buckingham"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2011",
+      "category": "Best Graphic Story or Comic",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2011-hugo-awards/"
+      },
+      "title": "Fables: Witches"
+    },
+    {
+      "authors": [
+        "Howard Tayler",
+        "Travis Walton"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2011",
+      "category": "Best Graphic Story or Comic",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2011-hugo-awards/"
+      },
+      "title": "Schlock Mercenary: Massively Parallel"
+    },
+    {
+      "authors": [
+        "Bryan Talbot"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2011",
+      "category": "Best Graphic Story or Comic",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2011-hugo-awards/"
+      },
+      "title": "Grandville Mon Amour"
+    },
+    {
+      "authors": [
+        "Mike Carey",
+        "Peter Gross"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2011",
+      "category": "Best Graphic Story or Comic",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2011-hugo-awards/"
+      },
+      "title": "The Unwritten, Volume 2: Inside Man"
+    },
+    {
+      "authors": [
+        "Ursula Vernon"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2012",
+      "category": "Best Graphic Story or Comic",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2012-hugo-awards/"
+      },
+      "title": "Digger"
+    },
+    {
+      "authors": [
+        "Bill Willingham",
+        "Mark Buckingham"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2012",
+      "category": "Best Graphic Story or Comic",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2012-hugo-awards/"
+      },
+      "title": "Fables Vol 15: Rose Red"
+    },
+    {
+      "authors": [
+        "Joe Hill",
+        "Gabriel Rodriguez"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2012",
+      "category": "Best Graphic Story or Comic",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2012-hugo-awards/"
+      },
+      "title": "Locke & Key Volume 4: Keys To The Kingdom"
+    },
+    {
+      "authors": [
+        "Howard Tayler",
+        "Travis Walton"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2012",
+      "category": "Best Graphic Story or Comic",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2012-hugo-awards/"
+      },
+      "title": "Schlock Mercenary: Force Multiplication"
+    },
+    {
+      "authors": [
+        "Mike Carey",
+        "Peter Gross"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2012",
+      "category": "Best Graphic Story or Comic",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2012-hugo-awards/"
+      },
+      "title": "The Unwritten (Volume 4): Leviathan"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan",
+        "Fiona Staples"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2013",
+      "category": "Best Graphic Story or Comic",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2013-hugo-awards/"
+      },
+      "title": "Saga, Volume One"
+    },
+    {
+      "authors": [
+        "Joe Hill",
+        "Gabriel Rodriguez"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2013",
+      "category": "Best Graphic Story or Comic",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2013-hugo-awards/"
+      },
+      "title": "Locke & Key Volume 5: Clockworks"
+    },
+    {
+      "authors": [
+        "Howard Tayler",
+        "Travis Walton"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2013",
+      "category": "Best Graphic Story or Comic",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2013-hugo-awards/"
+      },
+      "title": "Schlock Mercenary: Random Access Memorabilia"
+    },
+    {
+      "authors": [
+        "Bryan Talbot"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2013",
+      "category": "Best Graphic Story or Comic",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2013-hugo-awards/"
+      },
+      "title": "Grandville B\u00eate Noire"
+    },
+    {
+      "authors": [
+        "Paul Cornell",
+        "Ryan Kelly",
+        "Jimmy Broxton",
+        "Goran Sud\u017euka"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2013",
+      "category": "Best Graphic Story or Comic",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2013-hugo-awards/"
+      },
+      "title": "Saucer Country, Volume 1: Run"
+    },
+    {
+      "authors": [
+        "Randall Munroe"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2014",
+      "category": "Best Graphic Story or Comic",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2014-hugo-awards/"
+      },
+      "title": "Time"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan",
+        "Fiona Staples"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2014",
+      "category": "Best Graphic Story or Comic",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2014-hugo-awards/"
+      },
+      "title": "Saga, Volume 2"
+    },
+    {
+      "authors": [
+        "Phil Foglio",
+        "Kaja Foglio",
+        "Cheyenne Wright"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2014",
+      "category": "Best Graphic Story or Comic",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2014-hugo-awards/"
+      },
+      "title": "Girl Genius, Volume 13: Agatha Heterodyne & The Sleeping City"
+    },
+    {
+      "authors": [
+        "Paul Cornell",
+        "Jimmy Broxton"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2014",
+      "category": "Best Graphic Story or Comic",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2014-hugo-awards/"
+      },
+      "title": "The Girl Who Loved Doctor Who"
+    },
+    {
+      "authors": [
+        "George R.R. Martin",
+        "Raya Golden"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2014",
+      "category": "Best Graphic Story or Comic",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2014-hugo-awards/"
+      },
+      "title": "The Meathouse Man"
+    },
+    {
+      "authors": [
+        "G. Willow Wilson",
+        "Adrian Alphona",
+        "Jake Wyatt"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2015",
+      "category": "Best Graphic Story or Comic",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2015-hugo-awards/"
+      },
+      "title": "Ms. Marvel Volume 1: No Normal"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan",
+        "Fiona Staples (Image Comics))"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2015",
+      "category": "Best Graphic Story or Comic",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2015-hugo-awards/"
+      },
+      "title": "Saga Volume 3"
+    },
+    {
+      "authors": [
+        "Kurtis J. Weibe",
+        "Roc Upchurch"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2015",
+      "category": "Best Graphic Story or Comic",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2015-hugo-awards/"
+      },
+      "title": "Rat Queens Volume 1: Sass and Sorcery"
+    },
+    {
+      "authors": [
+        "Matt Fraction",
+        "Chip Zdarsky"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2015",
+      "category": "Best Graphic Story or Comic",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2015-hugo-awards/"
+      },
+      "title": "Sex Criminals Volume 1: One Weird Trick"
+    },
+    {
+      "authors": [
+        "Carter Reid"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2015",
+      "category": "Best Graphic Story or Comic",
+      "position": "2015.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2015-hugo-awards/"
+      },
+      "title": "The Zombie Nation Book #2 : Reduce Reuse Reanimate"
+    },
+    {
+      "authors": [
+        "Neil Gaiman",
+        "J.H. Williams III"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2016",
+      "category": "Best Graphic Story or Comic",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2016-hugo-awards/"
+      },
+      "title": "The Sandman: Overture"
+    },
+    {
+      "authors": [
+        "Corinna Bechko",
+        "Gabriel Hardman"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2016",
+      "category": "Best Graphic Story or Comic",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2016-hugo-awards/"
+      },
+      "title": "Invisible Republic Vol 1"
+    },
+    {
+      "authors": [
+        "Boaz Lavie",
+        "Asaf Hanuka",
+        "Tomer Hanuka"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2016",
+      "category": "Best Graphic Story or Comic",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2016-hugo-awards/"
+      },
+      "title": "The Divine"
+    },
+    {
+      "authors": [
+        "Aaron Williams"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2016",
+      "category": "Best Graphic Story or Comic",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2016-hugo-awards/"
+      },
+      "title": "Full Frontal Nerdity"
+    },
+    {
+      "authors": [
+        "Grey Carter",
+        "Cory Rydell"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2016",
+      "category": "Best Graphic Story or Comic",
+      "position": "2016.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2016-hugo-awards/"
+      },
+      "title": "Erin Dies Alone"
+    },
+    {
+      "authors": [
+        "Marjorie Liu",
+        "Sana Takeda"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Graphic Story or Comic",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      },
+      "title": "Monstress, Volume 1: Awakening"
+    },
+    {
+      "authors": [
+        "G. Willow Wilson",
+        "Takeshi Miyazawa"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Graphic Story or Comic",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      },
+      "title": "Ms. Marvel, Volume 5: Super Famous"
+    },
+    {
+      "authors": [
+        "Fiona Staples",
+        "Brian K. Vaughan",
+        "Fonografiks"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Graphic Story or Comic",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      },
+      "title": "Saga, Volume 6"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan",
+        "Cliff Chiang",
+        "Matthew Wilson",
+        "Jared Fletcher"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Graphic Story or Comic",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      },
+      "title": "Paper Girls, Volume 1"
+    },
+    {
+      "authors": [
+        "Ta-Nehisi Coates",
+        "Brian Stelfreeze"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Graphic Story or Comic",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      },
+      "title": "Black Panther, Volume 1: A Nation Under Our Feet"
+    },
+    {
+      "authors": [
+        "Tom King",
+        "Gabriel Hernandez Walta"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Graphic Story or Comic",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      },
+      "title": "The Vision, Volume 1: Little Worse Than A Man"
+    },
+    {
+      "authors": [
+        "Marjorie M. Liu",
+        "Sana Takeda"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Graphic Story or Comic",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      },
+      "title": "Monstress, Volume 2: The Blood"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan",
+        "Fiona Staples"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Graphic Story or Comic",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      },
+      "title": "Saga, Volume 7"
+    },
+    {
+      "authors": [
+        "Kelly Sue DeConnick",
+        "Valentine De Landro",
+        "Taki Soma",
+        "Kelly Fitzpatrick",
+        "Clayton Cowles"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Graphic Story or Comic",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      },
+      "title": "Bitch Planet, Volume 2: President Bitch"
+    },
+    {
+      "authors": [
+        "Saladin Ahmed",
+        "Christian Ward",
+        "Clayton Cowles"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Graphic Story or Comic",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      },
+      "title": "Black Bolt, Volume 1: Hard Time"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan",
+        "Cliff Chiang",
+        "Matthew Wilson",
+        "Jared Fletcher"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Graphic Story or Comic",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      },
+      "title": "Paper Girls, Volume 3"
+    },
+    {
+      "authors": [
+        "Emil Ferris"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Graphic Story or Comic",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      },
+      "title": "My Favorite Thing is Monsters"
+    },
+    {
+      "authors": [
+        "Marjorie Liu",
+        "Sana Takeda"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Graphic Story or Comic",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/"
+      },
+      "title": "Monstress, Volume 3: Haven"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor",
+        "Aaron Covington",
+        "Andr\u00e9 Lima Ara\u00fajo",
+        "Mario Del Pennino",
+        "Tana Ford"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Graphic Story or Comic",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/"
+      },
+      "title": "Black Panther: Long Live the King"
+    },
+    {
+      "authors": [
+        "Saladin Ahmed",
+        "Sami Kivel\u00e4",
+        "Jason Wordie",
+        "Jim Campbell"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Graphic Story or Comic",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/"
+      },
+      "title": "Abbott"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan",
+        "Fiona Staples"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Graphic Story or Comic",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/"
+      },
+      "title": "Saga, Volume 9"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan",
+        "Cliff Chiang",
+        "Matt Wilson",
+        "Jared K. Fletcher"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Graphic Story or Comic",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/"
+      },
+      "title": "Paper Girls, Volume 4"
+    },
+    {
+      "authors": [
+        "Tillie Walden"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Graphic Story or Comic",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/"
+      },
+      "title": "On a Sunbeam"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor",
+        "Tana Ford",
+        "James Devlin"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Graphic Story or Comic",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/"
+      },
+      "title": "LaGuardia"
+    },
+    {
+      "authors": [
+        "Marjorie Liu",
+        "Sana Takeda"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Graphic Story or Comic",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/"
+      },
+      "title": "Monstress, Volume 4: The Chosen"
+    },
+    {
+      "authors": [
+        "Joamette Gil"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Graphic Story or Comic",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/"
+      },
+      "title": "Mooncakes, by Wendy Xu and Suzanne Walker"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan",
+        "Cliff Chiang",
+        "Matt Wilson",
+        "Jared K. Fletcher"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Graphic Story or Comic",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/"
+      },
+      "title": "Paper Girls, Volume 6"
+    },
+    {
+      "authors": [
+        "Matt Wilson",
+        "Clayton Cowles"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Graphic Story or Comic",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/"
+      },
+      "title": "The Wicked + The Divine, Volume 9: \u201cOkay\u201d, by Kieron Gillen and Jamie McKelvie"
+    },
+    {
+      "authors": [
+        "Clayton Cowles"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Graphic Story or Comic",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/"
+      },
+      "title": "Die, Volume 1: Fantasy Heartbreaker, by Kieron Gillen and Stephanie Hans"
+    },
+    {
+      "authors": [
+        "Octavia Butler",
+        "Damian Duffy",
+        "John Jennings"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Graphic Story or Comic",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/"
+      },
+      "title": "Parable of the Sower: A Graphic Novel Adaptation"
+    },
+    {
+      "authors": [
+        "Seanan McGuire",
+        "Takeshi Miyazawa",
+        "Rosi K\u00e4mpe"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Graphic Story or Comic",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/"
+      },
+      "title": "Ghost-Spider vol. 1: Dog Days Are Over"
+    },
+    {
+      "authors": [
+        "Marjorie Liu",
+        "Sana Takeda"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Graphic Story or Comic",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/"
+      },
+      "title": "Monstress, vol. 5: Warchild"
+    },
+    {
+      "authors": [
+        "Kieron Gillen",
+        "Dan Mora",
+        "Tamra Bonvillain",
+        "Ed Dukeshire"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Graphic Story or Comic",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/"
+      },
+      "title": "Once & Future vol. 1: The King Is Undead"
+    },
+    {
+      "authors": [
+        "G. Willow Wilson",
+        "Christian Ward"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Graphic Story or Comic",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/"
+      },
+      "title": "Invisible Kingdom, vol 2: Edge of Everything"
+    },
+    {
+      "authors": [
+        "Kieron Gillen",
+        "Stephanie Hans",
+        "Clayton Cowles"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Graphic Story or Comic",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/"
+      },
+      "title": "DIE, Volume 2: Split the Party"
+    },
+    {
+      "authors": [
+        "N.K. Jemisin",
+        "Jamal Campbell"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Graphic Story or Comic",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      },
+      "title": "Far Sector"
+    },
+    {
+      "authors": [
+        "Kieron Gillen",
+        "Stephanie Hans",
+        "Clayton Cowles"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Graphic Story or Comic",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      },
+      "title": "DIE, vol. 4: Bleed"
+    },
+    {
+      "authors": [
+        "Rachel Smythe"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Graphic Story or Comic",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      },
+      "title": "Lore Olympus, vol. 1"
+    },
+    {
+      "authors": [
+        "Marjorie Liu",
+        "Sana Takeda"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Graphic Story or Comic",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      },
+      "title": "Monstress, vol. 6: The Vow"
+    },
+    {
+      "authors": [
+        "Kieron Gillen",
+        "Dan Mora",
+        "Tamra Bonvillain"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Graphic Story or Comic",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      },
+      "title": "Once & Future, vol. 3: The Parliament of Magpies"
+    },
+    {
+      "authors": [
+        "Tom King",
+        "Mitch Gerads",
+        "Evan \u201cDoc\u201d Shaner"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Graphic Story or Comic",
+      "position": "2022.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      },
+      "title": "Strange Adventures"
+    },
+    {
+      "authors": [
+        "Bartosz Sztybor",
+        "Filipe Andrade",
+        "Alessio Fioriniello",
+        "Roman Titov",
+        "Krzysztof Ostrowski"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Graphic Story or Comic",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      },
+      "title": "Cyberpunk 2077: Big City Dreams"
+    },
+    {
+      "authors": [
+        "Lilah Sturges",
+        "Drew Johnson",
+        "Zid"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Graphic Story or Comic",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      },
+      "title": "DUNE: The Official Movie Graphic Novel"
+    },
+    {
+      "authors": [
+        "Marjorie Liu",
+        "Sana Takeda"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Graphic Story or Comic",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      },
+      "title": "Monstress vol. 7: Devourer"
+    },
+    {
+      "authors": [
+        "Kieron Gillen",
+        "Dan Mora"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Graphic Story or Comic",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      },
+      "title": "Once & Future Vol 4: Monarchies in the UK"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan",
+        "Fiona Staples",
+        "Fonografiks"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Graphic Story or Comic",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      },
+      "title": "Saga, Vol. 10"
+    },
+    {
+      "authors": [
+        "Tom King",
+        "Bilquis Evely",
+        "Matheus Lopes"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Graphic Story or Comic",
+      "position": "2023.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      },
+      "title": "Supergirl: Woman of Tomorrow"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan",
+        "Fiona Staples"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Graphic Story or Comic",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/"
+      },
+      "title": "Saga, Vol. 11"
+    },
+    {
+      "authors": [
+        "Zach Weinersmith",
+        "Boulet"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Graphic Story or Comic",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/"
+      },
+      "title": "Bea Wolf"
+    },
+    {
+      "authors": [
+        "Deena Mohamed"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Graphic Story or Comic",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/"
+      },
+      "title": "Shubeik Lubeik"
+    },
+    {
+      "authors": [
+        "\u5218\u6148\u6b23",
+        "Liu Cixin",
+        "\u8521\u52b2",
+        "Cai Jin",
+        "\u6208\u95fb\u9814",
+        "Ge Wendi",
+        "\u8584\u66ae",
+        "Bo Mu",
+        "\u8349\u796d\u4e5d\u65e5\u4e1c",
+        "Caojijiuridong"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Graphic Story or Comic",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/"
+      },
+      "title": "\u4e09\u4f53\u6f2b\u753b\uff1a\u7b2c\u4e00\u90e8 / The Three Body Problem, Part One"
+    },
+    {
+      "authors": [
+        "Paul Cornell",
+        "Valeria Burzo"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Graphic Story or Comic",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/"
+      },
+      "title": "The Witches of World War II"
+    },
+    {
+      "authors": [
+        "Kelly Sue DeConnick",
+        "Phil Jimenez",
+        "Gene Ha",
+        "Nicola Scott"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Graphic Story or Comic",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/"
+      },
+      "title": "Wonder Woman Historia: The Amazons"
+    },
+    {
+      "authors": [
+        "Ryan North",
+        "Chris Fenoglio"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Graphic Story or Comic",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/"
+      },
+      "title": "Star Trek: Lower Decks: Warp Your Own Way"
+    },
+    {
+      "authors": [
+        "Molly Knox Ostertag"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Graphic Story or Comic",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/"
+      },
+      "title": "The Deep Dark"
+    },
+    {
+      "authors": [
+        "Marjorie Liu",
+        "Sana Takeda"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Graphic Story or Comic",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/"
+      },
+      "title": "Monstress, Vol. 9: The Possessed"
+    },
+    {
+      "authors": [
+        "Kieron Gillen",
+        "Stephanie Hans",
+        "Clayton Cowles"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Graphic Story or Comic",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/"
+      },
+      "title": "We Called Them Giants"
+    },
+    {
+      "authors": [
+        "Emil Ferris"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Graphic Story or Comic",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/"
+      },
+      "title": "My Favorite Thing Is Monsters, Book 2"
+    },
+    {
+      "authors": [
+        "G. Willow Wilson",
+        "Chris Wildgoose"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Graphic Story or Comic",
+      "position": "2025.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/"
+      },
+      "title": "The Hunger and the Dusk: Vol. 1"
+    }
+  ],
+  "fetched_at": "2026-07-23T01:34:34Z",
+  "list_id": "hugo_awards_graphic_story_or_comic",
+  "list_name": "Hugo Awards - Graphic Story or Comic",
+  "match_series": false,
+  "notes": [],
+  "parser": "hugo_awards_graphic_story_or_comic",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Hugo Awards - Graphic Story or Comic",
+    "source_id": "hugo_awards_graphic_story_or_comic",
+    "url": "https://www.thehugoawards.org/hugo-history/"
+  }
+}

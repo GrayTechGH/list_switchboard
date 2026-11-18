@@ -33,7 +33,7 @@ class UrlFetcherSeiun(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
 
     return SeiunParser()
 
-  def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
+  def parse(self, html, fetch_url=None, log=None, progress=None, **kwargs):
     return self.parser().parse(
       html,
       self.URL,
@@ -42,10 +42,14 @@ class UrlFetcherSeiun(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
       category_aliases=self.CATEGORY_ALIASES,
       fetch_url=fetch_url,
       log=log,
-      progress=progress)
+      progress=progress, cached_parsed=kwargs.get('cached_parsed'),
+      incremental_update=kwargs.get('incremental_update', False),
+      enable_incremental=self.ENABLE_SFADB_INCREMENTAL)
 
 
 class UrlFetcherSeiunTranslatedNovel(UrlFetcherSeiun):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_SFADB_INCREMENTAL = True
 
   source_id = 'seiun_translated_novel'
   NAME = 'Seiun - Translated Novel'
@@ -65,6 +69,8 @@ class UrlFetcherSeiunTranslatedNovel(UrlFetcherSeiun):
 
 
 class UrlFetcherSeiunJapaneseLongWork(UrlFetcherSeiun):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_ISFDB_INCREMENTAL = True
 
   source_id = 'seiun_japanese_long_work'
   NAME = 'Seiun - Japanese Long Work'

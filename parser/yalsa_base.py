@@ -14,6 +14,7 @@ Maintenance notes:
 """
 
 from datetime import date
+import json
 import re
 from urllib.parse import urljoin
 
@@ -25,12 +26,16 @@ try:
     normalize_heading, normalize_line, strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key # pyright: ignore[reportMissingImports]
+  from calibre_plugins.list_switchboard.parser.incremental import ParsedUnitCache,project_source_rows,restore_source_rows
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError,CamoufoxRequiredError
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
     normalize_heading, normalize_line, strip_publication_notes,
   )
   from .generic import position_sort_key
+  from .incremental import ParsedUnitCache,project_source_rows,restore_source_rows
+  from errors import ImportCancelledError,CamoufoxRequiredError
 
 
 YMA_URL_TEMPLATE = (
@@ -56,6 +61,98 @@ CREATOR_PREFIX_RE = re.compile(
 
 def yma_awards_url(year):
   return YMA_URL_TEMPLATE.format(year=int(year))
+
+
+def yalsa_heading_years(html):
+  years=set()
+  for heading in BeautifulSoup(html or '','html.parser').find_all('h1'):
+    text=normalize_line(heading.get_text(' ',strip=True))
+    for pattern in (r'\bwins?\s+((?:19|20)\d{2})\b',
+        r'\bannounces\s+(?:the\s+)?((?:19|20)\d{2})\s+Youth Media',
+        r'^((?:19|20)\d{2})\s+.*(?:Morris|Nonfiction|Printz|Youth Media)'):
+      match=re.search(pattern,text,re.I)
+      if match:years.add(int(match.group(1)));break
+  return years
+
+
+def read_yalsa_sources(parser,html,base_url,name,fetch_url,current_year,
+    cached_parsed=None,incremental_update=False,log=None,progress=None):
+  """Refresh history/current pages and reuse settled official supplements.
+
+  The caller owns award boundaries, including true finalists versus Honor
+  Books. Preserve original source rows through merging so fresh history and
+  current winners cannot overwrite a cached supplement's result/provenance.
+  """
+  cache=ParsedUnitCache('yalsa-official-supplements-v1',json.dumps([
+    base_url,name,type(parser).__name__,parser.CURRENT_URL]),cached_parsed,incremental_update)
+  notes=[]
+  def previous(key):
+    try:return restore_source_rows(cache.previous(key),(cache.old_units.get(key) or {}).get('metadata') or {})
+    except (ValueError,TypeError):return []
+  history=parser.history_rows(html,base_url)
+  history_complete=bool(history)
+  if not history_complete:
+    history=previous('history')
+    notes.append('Official YALSA history did not expose a usable award snapshot; retained cached rows.')
+  max_history_year=max((int(r['award_year']) for r in history),default=None)
+  annual_urls={}
+  current,complete=previous('current'),False
+  try:
+    if progress is not None:progress(1,1,parser.CURRENT_FETCH_MESSAGE)
+    current_html=fetch_url(parser.CURRENT_URL)
+    fresh=parser.current_page_rows(current_html,parser.CURRENT_URL)
+    annual_urls=getattr(parser,'annual_award_links',lambda *_a:{})(current_html,parser.CURRENT_URL)
+    if not fresh:raise ValueError('Official current award page did not expose usable rows.')
+    current,complete=fresh,True
+  except (ImportCancelledError,CamoufoxRequiredError):
+    raise
+  except Exception as err:
+    notes.append(f'{parser.CURRENT_FAILED_LABEL} could not be fetched: {parser.CURRENT_URL}: {err}')
+    if log is not None:log(notes[-1])
+    for key,unit in cache.old_units.items():
+      if key.isdigit() and unit.get('revision'):annual_urls[int(key)]=unit['revision']
+  units={'history':(history,base_url,history_complete),'current':(current,parser.CURRENT_URL,complete)}
+  rows=history+current
+  years=list(range(max_history_year+1,current_year+1)) if max_history_year is not None else []
+  for index,year in enumerate(years,1):
+    key=str(year)
+    url=annual_urls.get(year) or yma_awards_url(year)
+    old=cache.old_units.get(key) or {}
+    prior=previous(key)
+    if (old.get('complete') is True and old.get('revision')==url and year<current_year and prior and
+        any(r.get('result')==RESULT_WINNER for r in prior)):
+      source_rows,done=prior,True
+    else:
+      source_rows,done=prior,False
+      try:
+        if progress is not None:progress(index,max(1,len(years)),f'Fetching {year} {parser.SUPPLEMENT_FETCH_LABEL}')
+        payload=fetch_url(url)
+        heading_years=yalsa_heading_years(payload)
+        if heading_years and heading_years!={year}:
+          raise ValueError('Official supplement heading identifies another award year.')
+        reader=getattr(parser,'supplement_page_rows',parser.yma_page_rows)
+        found=reader(payload,url)
+        if not found or any(str(r['award_year'])!=key for r in found):
+          raise ValueError('Official supplement did not expose a usable snapshot for the requested award year.')
+        source_rows,done=found,True
+      except (ImportCancelledError,CamoufoxRequiredError):
+        raise
+      except Exception as err:
+        notes.append(f'{parser.SUPPLEMENT_FAILED_LABEL} could not be fetched: {url}: {err}')
+        if log is not None:log(notes[-1])
+    units[key]=(source_rows,url,done)
+    rows.extend(source_rows)
+  entries=sorted(parser.entries_from_rows(parser.dedupe_rows(rows)),key=lambda item:position_sort_key(item.get('position','')))
+  if not entries:raise ValueError(parser.NO_ENTRIES_MESSAGE)
+  for key,(source_rows,revision,done) in units.items():
+    projected,metadata=project_source_rows(source_rows,entries,
+      lambda row:(str(row['award_year']),normalize_heading(row['title'])))
+    cache.put(key,projected,revision=revision,complete=done,metadata=metadata)
+  if parser.FINAL_NOTE:notes.append(parser.FINAL_NOTE)
+  result=parser.parsed_result(name,base_url,entries,notes=notes)
+  result['incremental_state']=cache.state(entries)
+  result['incremental_state']['discovery']={'refresh_units':[str(current_year)]}
+  return result
 
 
 class YALSAOfficialAwardParserBase(AwardParserBase):
@@ -84,9 +181,12 @@ class YALSAOfficialAwardParserBase(AwardParserBase):
   def parse(
       self, html, base_url=None, name=None, fetch_url=None,
       current_year=None, current_page=None, supplement_pages=(),
-      log=None, progress=None):
+      log=None, progress=None,cached_parsed=None,incremental_update=False):
     base_url = base_url or self.HISTORY_URL
     name = name or self.AWARD_NAME
+    if fetch_url is not None and current_page is None and not supplement_pages:
+      return read_yalsa_sources(self,html,base_url,name,fetch_url,int(current_year or date.today().year),
+        cached_parsed,incremental_update,log,progress)
     rows = self.history_rows(html, base_url)
     notes = []
     max_history_year = max((int(row['award_year']) for row in rows), default=None)
@@ -103,6 +203,8 @@ class YALSAOfficialAwardParserBase(AwardParserBase):
         fetched_current_page = fetch_url(self.CURRENT_URL)
         rows.extend(self.current_page_rows(fetched_current_page, self.CURRENT_URL))
         annual_urls.update(self.annual_award_links(fetched_current_page, self.CURRENT_URL))
+      except (ImportCancelledError,CamoufoxRequiredError):
+        raise
       except Exception as err:
         notes.append(f'{self.CURRENT_FAILED_LABEL} could not be fetched: {self.CURRENT_URL}: {err}')
         if log is not None:
@@ -120,6 +222,8 @@ class YALSAOfficialAwardParserBase(AwardParserBase):
           if progress is not None:
             progress(index, total, f'Fetching {year} {self.SUPPLEMENT_FETCH_LABEL}')
           rows.extend(self.supplement_page_rows(fetch_url(url), url))
+        except (ImportCancelledError,CamoufoxRequiredError):
+          raise
         except Exception as err:
           notes.append(f'{self.SUPPLEMENT_FAILED_LABEL} could not be fetched: {url}: {err}')
           if log is not None:
@@ -305,6 +409,13 @@ class YALSAOfficialAwardParserBase(AwardParserBase):
       if match is not None:
         return int(match.group(1))
     return None
+
+  def annual_page_year(self,html,url,lines):
+    # Migrated ALA award stories can retain /news/2011/11/ in their URL. Their
+    # article heading states the award year independently of that route.
+    years=yalsa_heading_years(html)
+    if len(years)==1:return next(iter(years))
+    return self.year_from_url_or_lines(url,lines)
 
   def dedupe_rows(self, rows):
     by_key = {}

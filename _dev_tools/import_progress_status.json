@@ -16,9 +16,9 @@
     ]
   },
   "summary": {
-    "registered_recipes": 395,
-    "automated_passed": 395,
-    "manual_verified": 199
+    "registered_recipes": 394,
+    "automated_passed": 394,
+    "manual_verified": 223
   },
   "recipes": [
     {
@@ -1418,169 +1418,169 @@
       "source_id": "barry_award_mystery_novel",
       "name": "Barry Award - Mystery Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-16: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "barry_award_first_mystery_novel",
       "name": "Barry Award - First Mystery Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-16: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "barry_award_paperback_original",
       "name": "Barry Award - Paperback Original",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-16: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "barry_award_thriller",
       "name": "Barry Award - Thriller",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-16: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "barry_award_british_crime_novel",
       "name": "Barry Award - British Crime Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-16: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "hammett_prize",
       "name": "Hammett Prize",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-16: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "nero_award",
       "name": "Nero Award",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-16: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "strand_critics_award_mystery_novel",
       "name": "Strand Critics Award - Mystery Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-16: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "strand_critics_award_debut_mystery",
       "name": "Strand Critics Award - Debut Mystery",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-16: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "crime_writers_of_canada_award_novel",
       "name": "Crime Writers of Canada Award - Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-16: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "crime_writers_of_canada_award_first_novel",
       "name": "Crime Writers of Canada Award - First Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-16: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "crime_writers_of_canada_award_nonfiction",
       "name": "Crime Writers of Canada Award - Nonfiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-16: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "crime_writers_of_canada_award_juvenile_young_adult",
       "name": "Crime Writers of Canada Award - Juvenile/Young Adult",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-16: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "crime_writers_of_canada_award_french_language_crime_book",
       "name": "Crime Writers of Canada Award - French Language Crime Book",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-16: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "davitt_award_adult_novel",
       "name": "Davitt Award - Adult Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-16: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "davitt_award_debut_novel",
       "name": "Davitt Award - Debut Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-16: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "davitt_award_non_fiction",
       "name": "Davitt Award - Non-Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-16: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "davitt_award_young_adult_novel",
       "name": "Davitt Award - Young Adult Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-16: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "davitt_award_childrens_novel",
       "name": "Davitt Award - Children's Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-16: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "dilys_award",
       "name": "Dilys Award (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-16: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "gumshoe_award_mystery",
       "name": "Gumshoe Award - Mystery (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-16: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "gumshoe_award_thriller",
       "name": "Gumshoe Award - Thriller (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-16: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "gumshoe_award_first_novel",
       "name": "Gumshoe Award - First Novel (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-16: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "gumshoe_award_european_crime_novel",
       "name": "Gumshoe Award - European Crime Novel (discontinued)",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-16: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "lefty_award_humorous_mystery_novel",
@@ -2663,13 +2663,6 @@
     {
       "source_id": "cbca_book_of_the_year_younger_readers",
       "name": "CBCA Book of the Year - Younger Readers",
-      "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": ""
-    },
-    {
-      "source_id": "cbca_book_of_the_year_middle_readers",
-      "name": "CBCA Book of the Year - Middle Readers",
       "automated_status": "passed",
       "manual_status": "not_checked",
       "notes": ""

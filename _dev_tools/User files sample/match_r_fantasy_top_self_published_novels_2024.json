@@ -134,7 +134,7 @@
         }
       ],
       "unmatched": true,
-      "unmatched_at": "2026-07-11T00:53:20Z"
+      "unmatched_at": "2026-11-14T11:15:56Z"
     },
     {
       "entry_key": "the bound and the broken series|ryan cahill",
@@ -420,24 +420,24 @@
         "Michael Michel"
       ],
       "imported_title": "The Price of Power",
-      "matched_at": "2026-07-09T05:03:46Z",
+      "matched_at": "2026-11-14T11:13:19Z",
       "matched_authors": [
         "Michael Michel"
       ],
-      "matched_book_id": 38208,
+      "matched_book_id": 38209,
       "matched_book_ids": [
-        38208
+        38209
       ],
       "matched_books": [
         {
           "matched_authors": [
             "Michael Michel"
           ],
-          "matched_book_id": 38208,
-          "matched_title": "A Graveyard for Heroes"
+          "matched_book_id": 38209,
+          "matched_title": "The Price of Power"
         }
       ],
-      "matched_title": "A Graveyard for Heroes"
+      "matched_title": "The Price of Power"
     },
     {
       "entry_key": "iconoclasts|mike shel",
@@ -445,24 +445,32 @@
         "Mike Shel"
       ],
       "imported_title": "Iconoclasts",
-      "matched_at": "2026-07-09T06:35:10Z",
+      "matched_at": "2026-11-14T11:13:19Z",
       "matched_authors": [
-        "Francine Rivers"
+        "Mike Shel"
       ],
-      "matched_book_id": 40217,
+      "matched_book_id": 40215,
       "matched_book_ids": [
-        40217
+        40215,
+        40216
       ],
       "matched_books": [
         {
           "matched_authors": [
-            "Francine Rivers"
+            "Mike Shel"
           ],
-          "matched_book_id": 40217,
-          "matched_title": "The Last Sin Eater"
+          "matched_book_id": 40215,
+          "matched_title": "Aching God"
+        },
+        {
+          "matched_authors": [
+            "Mike Shel"
+          ],
+          "matched_book_id": 40216,
+          "matched_title": "Idols Fall"
         }
       ],
-      "matched_title": "The Last Sin Eater"
+      "matched_title": "Idols Fall"
     },
     {
       "entry_key": "hybrid helix|j c m berne",
@@ -513,8 +521,416 @@
         }
       ],
       "matched_title": "Obsidian: Awakening"
+    },
+    {
+      "entry_key": "cradle|will wight",
+      "imported_author": [
+        "Will Wight"
+      ],
+      "imported_title": "Cradle",
+      "matched_at": "2026-11-14T11:13:19Z",
+      "matched_authors": [
+        "Will Wight"
+      ],
+      "matched_book_id": 30423,
+      "matched_book_ids": [
+        30423,
+        30427,
+        30413,
+        30422,
+        30411,
+        30419,
+        30425,
+        30420,
+        30414,
+        30410,
+        30421,
+        30415
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Will Wight"
+          ],
+          "matched_book_id": 30423,
+          "matched_title": "Blackflame"
+        },
+        {
+          "matched_authors": [
+            "Will Wight"
+          ],
+          "matched_book_id": 30427,
+          "matched_title": "Bloodline"
+        },
+        {
+          "matched_authors": [
+            "Will Wight"
+          ],
+          "matched_book_id": 30413,
+          "matched_title": "Dreadgod"
+        },
+        {
+          "matched_authors": [
+            "Will Wight"
+          ],
+          "matched_book_id": 30422,
+          "matched_title": "Ghostwater"
+        },
+        {
+          "matched_authors": [
+            "Will Wight"
+          ],
+          "matched_book_id": 30411,
+          "matched_title": "Reaper"
+        },
+        {
+          "matched_authors": [
+            "Will Wight"
+          ],
+          "matched_book_id": 30419,
+          "matched_title": "Skysworn"
+        },
+        {
+          "matched_authors": [
+            "Will Wight"
+          ],
+          "matched_book_id": 30425,
+          "matched_title": "Soulsmith"
+        },
+        {
+          "matched_authors": [
+            "Will Wight"
+          ],
+          "matched_book_id": 30420,
+          "matched_title": "Uncrowned"
+        },
+        {
+          "matched_authors": [
+            "Will Wight"
+          ],
+          "matched_book_id": 30414,
+          "matched_title": "Underlord"
+        },
+        {
+          "matched_authors": [
+            "Will Wight"
+          ],
+          "matched_book_id": 30410,
+          "matched_title": "Unsouled"
+        },
+        {
+          "matched_authors": [
+            "Will Wight"
+          ],
+          "matched_book_id": 30421,
+          "matched_title": "Waybound"
+        },
+        {
+          "matched_authors": [
+            "Will Wight"
+          ],
+          "matched_book_id": 30415,
+          "matched_title": "Wintersteel"
+        }
+      ],
+      "matched_title": "Wintersteel"
+    },
+    {
+      "entry_key": "the lamplight murder mysteries|morgan stang",
+      "imported_author": [
+        "Morgan Stang"
+      ],
+      "imported_title": "The Lamplight Murder Mysteries",
+      "matched_at": "2026-11-14T11:13:19Z",
+      "matched_authors": [
+        "Morgan Stang"
+      ],
+      "matched_book_id": 36984,
+      "matched_book_ids": [
+        36984,
+        40211,
+        40210
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Morgan Stang"
+          ],
+          "matched_book_id": 36984,
+          "matched_title": "Murder at Spindle Manor"
+        },
+        {
+          "matched_authors": [
+            "Morgan Stang"
+          ],
+          "matched_book_id": 40211,
+          "matched_title": "Murder on Hunter's Eve"
+        },
+        {
+          "matched_authors": [
+            "Morgan Stang"
+          ],
+          "matched_book_id": 40210,
+          "matched_title": "Murder on the Lamplight Express"
+        }
+      ],
+      "matched_title": "Murder on the Lamplight Express"
+    },
+    {
+      "entry_key": "the dark profit saga|j zachary pike",
+      "imported_author": [
+        "J. Zachary Pike"
+      ],
+      "imported_title": "The Dark Profit Saga",
+      "matched_at": "2026-11-14T11:13:19Z",
+      "matched_authors": [
+        "J. Zachary Pike"
+      ],
+      "matched_book_id": 31466,
+      "matched_book_ids": [
+        31466,
+        40212
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "J. Zachary Pike"
+          ],
+          "matched_book_id": 31466,
+          "matched_title": "Orconomics"
+        },
+        {
+          "matched_authors": [
+            "J. Zachary Pike"
+          ],
+          "matched_book_id": 40212,
+          "matched_title": "Son of a Liche"
+        }
+      ],
+      "matched_title": "Son of a Liche"
+    },
+    {
+      "entry_key": "ash and sand|richard nell",
+      "imported_author": [
+        "Richard Nell"
+      ],
+      "imported_title": "Ash and Sand",
+      "matched_at": "2026-11-14T11:13:19Z",
+      "matched_authors": [
+        "Richard Nell"
+      ],
+      "matched_book_id": 30713,
+      "matched_book_ids": [
+        30713,
+        30711,
+        30712
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Richard Nell"
+          ],
+          "matched_book_id": 30713,
+          "matched_title": "Kings of Ash"
+        },
+        {
+          "matched_authors": [
+            "Richard Nell"
+          ],
+          "matched_book_id": 30711,
+          "matched_title": "Kings of Heaven"
+        },
+        {
+          "matched_authors": [
+            "Richard Nell"
+          ],
+          "matched_book_id": 30712,
+          "matched_title": "Kings of Paradise"
+        }
+      ],
+      "matched_title": "Kings of Paradise"
+    },
+    {
+      "entry_key": "rivenworld|m l spencer",
+      "imported_author": [
+        "M.L. Spencer"
+      ],
+      "imported_title": "Rivenworld",
+      "matched_at": "2026-11-14T11:13:19Z",
+      "matched_authors": [
+        "M. L. Spencer"
+      ],
+      "matched_book_id": 38217,
+      "matched_book_ids": [
+        38217,
+        38216
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "M. L. Spencer"
+          ],
+          "matched_book_id": 38217,
+          "matched_title": "Dragon Mage"
+        },
+        {
+          "matched_authors": [
+            "M. L. Spencer"
+          ],
+          "matched_book_id": 38216,
+          "matched_title": "The Dragon's Boy"
+        }
+      ],
+      "matched_title": "The Dragon's Boy"
+    },
+    {
+      "entry_key": "arcane ascension|andrew rowe",
+      "imported_author": [
+        "Andrew Rowe"
+      ],
+      "imported_title": "Arcane Ascension",
+      "matched_at": "2026-11-14T11:13:19Z",
+      "matched_authors": [
+        "Andrew Rowe"
+      ],
+      "matched_book_id": 31126,
+      "matched_book_ids": [
+        31126,
+        31129,
+        31128,
+        31127,
+        31130,
+        31125
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Andrew Rowe"
+          ],
+          "matched_book_id": 31126,
+          "matched_title": "A Brief History of Chronomancy"
+        },
+        {
+          "matched_authors": [
+            "Andrew Rowe"
+          ],
+          "matched_book_id": 31129,
+          "matched_title": "On the Shoulders of Titans"
+        },
+        {
+          "matched_authors": [
+            "Andrew Rowe"
+          ],
+          "matched_book_id": 31128,
+          "matched_title": "Sufficiently Advanced Magic"
+        },
+        {
+          "matched_authors": [
+            "Andrew Rowe"
+          ],
+          "matched_book_id": 31127,
+          "matched_title": "The Silence of Unworthy Gods"
+        },
+        {
+          "matched_authors": [
+            "Andrew Rowe"
+          ],
+          "matched_book_id": 31130,
+          "matched_title": "The Torch That Ignites the Stars"
+        },
+        {
+          "matched_authors": [
+            "Andrew Rowe"
+          ],
+          "matched_book_id": 31125,
+          "matched_title": "When Wizards Follow Fools"
+        }
+      ],
+      "matched_title": "When Wizards Follow Fools"
+    },
+    {
+      "entry_key": "the obsidian pat h|michael r fletcher",
+      "imported_author": [
+        "Michael R. Fletcher"
+      ],
+      "imported_title": "The Obsidian Pat h",
+      "matched_at": "2026-11-14T11:13:19Z",
+      "matched_authors": [
+        "Michael R. Fletcher"
+      ],
+      "matched_book_id": 40192,
+      "matched_book_ids": [
+        40192,
+        40190,
+        40191,
+        40470
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Michael R. Fletcher"
+          ],
+          "matched_book_id": 40192,
+          "matched_title": "An End to Sorrow"
+        },
+        {
+          "matched_authors": [
+            "Michael R. Fletcher"
+          ],
+          "matched_book_id": 40190,
+          "matched_title": "Black Stone Heart"
+        },
+        {
+          "matched_authors": [
+            "Michael R. Fletcher"
+          ],
+          "matched_book_id": 40191,
+          "matched_title": "She Dreams in Blood"
+        },
+        {
+          "matched_authors": [
+            "Michael R. Fletcher"
+          ],
+          "matched_book_id": 40470,
+          "matched_title": "The Lord of the Empty Mirror"
+        }
+      ],
+      "matched_title": "The Lord of the Empty Mirror"
+    },
+    {
+      "entry_key": "crown and tide|michael roberti",
+      "imported_author": [
+        "Michael Roberti"
+      ],
+      "imported_title": "Crown and Tide",
+      "matched_at": "2026-11-14T11:13:19Z",
+      "matched_authors": [
+        "Michael Roberti"
+      ],
+      "matched_book_id": 40218,
+      "matched_book_ids": [
+        40218,
+        40219
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Michael Roberti"
+          ],
+          "matched_book_id": 40218,
+          "matched_title": "A Grave for Us All"
+        },
+        {
+          "matched_authors": [
+            "Michael Roberti"
+          ],
+          "matched_book_id": 40219,
+          "matched_title": "The Traitors We Are"
+        }
+      ],
+      "matched_title": "The Traitors We Are"
     }
   ],
-  "saved_at": "2026-07-11T00:53:47Z",
+  "saved_at": "2026-11-14T11:15:56Z",
   "schema_version": 2
 }

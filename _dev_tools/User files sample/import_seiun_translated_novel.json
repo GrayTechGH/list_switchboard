@@ -1,0 +1,3760 @@
+{
+  "append_state": {
+    "entry_count": 233,
+    "last_entry_key": "the tusks of extinction|ray nayler",
+    "last_position": "2026.06",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "J. G. Ballard"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1970",
+      "category": "Translated Novel",
+      "position": "1970",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1970"
+      },
+      "title": "The Crystal World"
+    },
+    {
+      "authors": [
+        "Michael Crichton"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1971",
+      "category": "Translated Novel",
+      "position": "1971",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1971"
+      },
+      "title": "The Andromeda Strain"
+    },
+    {
+      "authors": [
+        "Robert Silverberg"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1972",
+      "category": "Translated Novel",
+      "position": "1972",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1972"
+      },
+      "title": "Nightwings"
+    },
+    {
+      "authors": [
+        "Kurt Vonnegut, Jr."
+      ],
+      "award": "Seiun Award",
+      "award_year": "1973",
+      "category": "Translated Novel",
+      "position": "1973",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1973"
+      },
+      "title": "The Sirens of Titan"
+    },
+    {
+      "authors": [
+        "Frank Herbert"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1974",
+      "category": "Translated Novel",
+      "position": "1974",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1974"
+      },
+      "title": "Dune"
+    },
+    {
+      "authors": [
+        "Robert Silverberg"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1975",
+      "category": "Translated Novel",
+      "position": "1975",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1975"
+      },
+      "title": "Up the Line"
+    },
+    {
+      "authors": [
+        "Roger Zelazny"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1976",
+      "category": "Translated Novel",
+      "position": "1976",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1976"
+      },
+      "title": "This Immortal"
+    },
+    {
+      "authors": [
+        "Jack Vance"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1977",
+      "category": "Translated Novel",
+      "position": "1977",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1977"
+      },
+      "title": "The Dragon Masters"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1978",
+      "category": "Translated Novel",
+      "position": "1978",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1978"
+      },
+      "title": "I Will Fear No Evil"
+    },
+    {
+      "authors": [
+        "Larry Niven"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1979",
+      "category": "Translated Novel",
+      "position": "1979",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1979"
+      },
+      "title": "Ringworld"
+    },
+    {
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1980",
+      "category": "Translated Novel",
+      "position": "1980",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1980"
+      },
+      "title": "Rendezvous with Rama"
+    },
+    {
+      "authors": [
+        "James P. Hogan"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1981",
+      "category": "Translated Novel",
+      "position": "1981",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1981"
+      },
+      "title": "Inherit the Stars"
+    },
+    {
+      "authors": [
+        "James P. Hogan"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1982",
+      "category": "Translated Novel",
+      "position": "1982",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1982"
+      },
+      "title": "The Genesis Machine"
+    },
+    {
+      "authors": [
+        "Robert L. Forward"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1983",
+      "category": "Translated Novel",
+      "position": "1983",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1983"
+      },
+      "title": "Dragon's Egg"
+    },
+    {
+      "authors": [
+        "Barrington J. Bayley"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1984",
+      "category": "Translated Novel",
+      "position": "1984",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1984"
+      },
+      "title": "The Garments of Caean"
+    },
+    {
+      "authors": [
+        "Barrington J. Bayley"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1985",
+      "category": "Translated Novel",
+      "position": "1985",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1985"
+      },
+      "title": "The Zen Gun"
+    },
+    {
+      "authors": [
+        "Michael Moorcock"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1986",
+      "category": "Translated Novel",
+      "position": "1986",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1986"
+      },
+      "title": "The Elric Saga"
+    },
+    {
+      "authors": [
+        "William Gibson"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1987",
+      "category": "Translated Novel",
+      "position": "1987",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1987"
+      },
+      "title": "Neuromancer"
+    },
+    {
+      "authors": [
+        "Cordwainer Smith"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1988",
+      "category": "Translated Novel",
+      "position": "1988",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1988"
+      },
+      "title": "Norstrilia"
+    },
+    {
+      "authors": [
+        "Larry Niven",
+        "Jerry Pournelle"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1989",
+      "category": "Translated Novel",
+      "position": "1989",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1989"
+      },
+      "title": "Footfall"
+    },
+    {
+      "authors": [
+        "Barrington J. Bayley"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1990",
+      "category": "Translated Novel",
+      "position": "1990",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1990"
+      },
+      "title": "Collision with Chronos"
+    },
+    {
+      "authors": [
+        "David Brin"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1991",
+      "category": "Translated Novel",
+      "position": "1991",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1991"
+      },
+      "title": "The Uplift War"
+    },
+    {
+      "authors": [
+        "Charles Sheffield"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1992",
+      "category": "Translated Novel",
+      "position": "1992",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1992"
+      },
+      "title": "The McAndrew Chronicles"
+    },
+    {
+      "authors": [
+        "Poul Anderson"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1993",
+      "category": "Translated Novel",
+      "position": "1993",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1993"
+      },
+      "title": "Tau Zero"
+    },
+    {
+      "authors": [
+        "James P. Hogan"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1994",
+      "category": "Translated Novel",
+      "position": "1994",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1994"
+      },
+      "title": "Entoverse"
+    },
+    {
+      "authors": [
+        "Dan Simmons"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1995",
+      "category": "Translated Novel",
+      "position": "1995",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1995"
+      },
+      "title": "Hyperion"
+    },
+    {
+      "authors": [
+        "Poul Anderson"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1995",
+      "category": "Translated Novel",
+      "position": "1995.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1995"
+      },
+      "title": "The Boat of a Million Years"
+    },
+    {
+      "authors": [
+        "Ian Watson"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1995",
+      "category": "Translated Novel",
+      "position": "1995.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1995"
+      },
+      "title": "The Book of the River"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1995",
+      "category": "Translated Novel",
+      "position": "1995.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1995"
+      },
+      "title": "Far-Seer"
+    },
+    {
+      "authors": [
+        "Charles Platt"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1995",
+      "category": "Translated Novel",
+      "position": "1995.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1995"
+      },
+      "title": "Free Zone"
+    },
+    {
+      "authors": [
+        "John E. Stith"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1995",
+      "category": "Translated Novel",
+      "position": "1995.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1995"
+      },
+      "title": "Manhattan Transfer"
+    },
+    {
+      "authors": [
+        "Anne McCaffrey",
+        "Mercedes Lackey"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1995",
+      "category": "Translated Novel",
+      "position": "1995.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1995"
+      },
+      "title": "The Ship Who Searched"
+    },
+    {
+      "authors": [
+        "John Varley"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1995",
+      "category": "Translated Novel",
+      "position": "1995.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1995"
+      },
+      "title": "Steel Beach"
+    },
+    {
+      "authors": [
+        "Jerry Pournelle",
+        "Michael Flynn"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1998",
+      "category": "Translated Novel",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1998"
+      },
+      "title": "Fallen Angels , Larry Niven"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1998",
+      "category": "Translated Novel",
+      "position": "1998.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1998"
+      },
+      "title": "Desolation Road"
+    },
+    {
+      "authors": [
+        "Iain M. Banks"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1998",
+      "category": "Translated Novel",
+      "position": "1998.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1998"
+      },
+      "title": "Feersum Endjinn"
+    },
+    {
+      "authors": [
+        "Steven Gould"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1998",
+      "category": "Translated Novel",
+      "position": "1998.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1998"
+      },
+      "title": "Jumper"
+    },
+    {
+      "authors": [
+        "John Crowley"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1998",
+      "category": "Translated Novel",
+      "position": "1998.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1998"
+      },
+      "title": "Little, Big"
+    },
+    {
+      "authors": [
+        "Nancy A. Collins"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1998",
+      "category": "Translated Novel",
+      "position": "1998.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1998"
+      },
+      "title": "Midnight Blue"
+    },
+    {
+      "authors": [
+        "Greg Bear"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1998",
+      "category": "Translated Novel",
+      "position": "1998.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1998"
+      },
+      "title": "Moving Mars"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1998",
+      "category": "Translated Novel",
+      "position": "1998.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1998"
+      },
+      "title": "The Terminal Experiment"
+    },
+    {
+      "authors": [
+        "Kim Stanley Robinson"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1999",
+      "category": "Translated Novel",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1999"
+      },
+      "title": "Red Mars"
+    },
+    {
+      "authors": [
+        "Stephen Baxter"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1999",
+      "category": "Translated Novel",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_1999"
+      },
+      "title": "The Time Ships"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2001",
+      "category": "Translated Novel",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2001"
+      },
+      "title": "Frameshift"
+    },
+    {
+      "authors": [
+        "William Gibson"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2001",
+      "category": "Translated Novel",
+      "position": "2001.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2001"
+      },
+      "title": "All Tomorrow's Parties"
+    },
+    {
+      "authors": [
+        "Lois McMaster Bujold"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2001",
+      "category": "Translated Novel",
+      "position": "2001.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2001"
+      },
+      "title": "Barrayar"
+    },
+    {
+      "authors": [
+        "Greg Bear"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2001",
+      "category": "Translated Novel",
+      "position": "2001.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2001"
+      },
+      "title": "Darwin's Radio"
+    },
+    {
+      "authors": [
+        "Orson Scott Card"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2001",
+      "category": "Translated Novel",
+      "position": "2001.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2001"
+      },
+      "title": "Ender's Shadow"
+    },
+    {
+      "authors": [
+        "Arthur C. Clarke",
+        "Stephen Baxter"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2001",
+      "category": "Translated Novel",
+      "position": "2001.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2001"
+      },
+      "title": "The Light of Other Days"
+    },
+    {
+      "authors": [
+        "Vonda N. McIntyre"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2001",
+      "category": "Translated Novel",
+      "position": "2001.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2001"
+      },
+      "title": "The Moon and the Sun"
+    },
+    {
+      "authors": [
+        "Isaac Asimov",
+        "Robert Silverberg"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2001",
+      "category": "Translated Novel",
+      "position": "2001.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2001"
+      },
+      "title": "The Positronic Man"
+    },
+    {
+      "authors": [
+        "Daniel F. Galouye"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2001",
+      "category": "Translated Novel",
+      "position": "2001.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2001"
+      },
+      "title": "Simulacron-3"
+    },
+    {
+      "authors": [
+        "Pat Murphy"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2002",
+      "category": "Translated Novel",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2002"
+      },
+      "title": "There and Back Again, by Max Merriwell"
+    },
+    {
+      "authors": [
+        "Anne McCaffrey"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2002",
+      "category": "Translated Novel",
+      "position": "2002.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2002"
+      },
+      "title": "All the Weyrs of Pern"
+    },
+    {
+      "authors": [
+        "David Brin"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2002",
+      "category": "Translated Novel",
+      "position": "2002.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2002"
+      },
+      "title": "Brightness Reef"
+    },
+    {
+      "authors": [
+        "Lois McMaster Bujold"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2002",
+      "category": "Translated Novel",
+      "position": "2002.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2002"
+      },
+      "title": "Cetaganda"
+    },
+    {
+      "authors": [
+        "Orson Scott Card"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2002",
+      "category": "Translated Novel",
+      "position": "2002.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2002"
+      },
+      "title": "Children of the Mind"
+    },
+    {
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2002",
+      "category": "Translated Novel",
+      "position": "2002.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2002"
+      },
+      "title": "The Diamond Age"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2002",
+      "category": "Translated Novel",
+      "position": "2002.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2002"
+      },
+      "title": "Flashforward"
+    },
+    {
+      "authors": [
+        "Kim Stanley Robinson"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2002",
+      "category": "Translated Novel",
+      "position": "2002.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2002"
+      },
+      "title": "Green Mars"
+    },
+    {
+      "authors": [
+        "Ian Watson"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2002",
+      "category": "Translated Novel",
+      "position": "2002.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2002"
+      },
+      "title": "Orgasmachine"
+    },
+    {
+      "authors": [
+        "Iain M. Banks"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2002",
+      "category": "Translated Novel",
+      "position": "2002.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2002"
+      },
+      "title": "The Player of Games"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2003",
+      "category": "Translated Novel",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2003"
+      },
+      "title": "Illegal Alien"
+    },
+    {
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2003",
+      "category": "Translated Novel",
+      "position": "2003.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2003"
+      },
+      "title": "Cryptonomicon"
+    },
+    {
+      "authors": [
+        "Edgar Pangborn"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2003",
+      "category": "Translated Novel",
+      "position": "2003.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2003"
+      },
+      "title": "Davy"
+    },
+    {
+      "authors": [
+        "Vernor Vinge"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2003",
+      "category": "Translated Novel",
+      "position": "2003.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2003"
+      },
+      "title": "A Deepness in the Sky"
+    },
+    {
+      "authors": [
+        "Rudy Rucker"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2003",
+      "category": "Translated Novel",
+      "position": "2003.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2003"
+      },
+      "title": "Freeware"
+    },
+    {
+      "authors": [
+        "Michael Moorcock"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2003",
+      "category": "Translated Novel",
+      "position": "2003.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2003"
+      },
+      "title": "Gloriana"
+    },
+    {
+      "authors": [
+        "Connie Willis"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2003",
+      "category": "Translated Novel",
+      "position": "2003.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2003"
+      },
+      "title": "Passage"
+    },
+    {
+      "authors": [
+        "R. A. Lafferty"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2003",
+      "category": "Translated Novel",
+      "position": "2003.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2003"
+      },
+      "title": "The Reefs of Earth"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2003",
+      "category": "Translated Novel",
+      "position": "2003.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2003"
+      },
+      "title": "The Telling"
+    },
+    {
+      "authors": [
+        "Martin Scott"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2003",
+      "category": "Translated Novel",
+      "position": "2003.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2003"
+      },
+      "title": "Thraxas"
+    },
+    {
+      "authors": [
+        "David Brin"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2004",
+      "category": "Translated Novel",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2004"
+      },
+      "title": "Heaven's Reach"
+    },
+    {
+      "authors": [
+        "Joe R. Lansdale"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2004",
+      "category": "Translated Novel",
+      "position": "2004.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2004"
+      },
+      "title": "The Drive-In"
+    },
+    {
+      "authors": [
+        "Lois McMaster Bujold"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2004",
+      "category": "Translated Novel",
+      "position": "2004.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2004"
+      },
+      "title": "Ethan of Athos"
+    },
+    {
+      "authors": [
+        "Jacques Vallee"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2004",
+      "category": "Translated Novel",
+      "position": "2004.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2004"
+      },
+      "title": "Fastwalker"
+    },
+    {
+      "authors": [
+        "Patrick O'Leary"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2004",
+      "category": "Translated Novel",
+      "position": "2004.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2004"
+      },
+      "title": "The Impossible Bird"
+    },
+    {
+      "authors": [
+        "James Byron Huggins"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2004",
+      "category": "Translated Novel",
+      "position": "2004.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2004"
+      },
+      "title": "Leviathan"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2004",
+      "category": "Translated Novel",
+      "position": "2004.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2004"
+      },
+      "title": "The Other Wind"
+    },
+    {
+      "authors": [
+        "Greg Egan"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2005",
+      "category": "Translated Novel",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2005"
+      },
+      "title": "Distress"
+    },
+    {
+      "authors": [
+        "Robert Reed"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2005",
+      "category": "Translated Novel",
+      "position": "2005.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2005"
+      },
+      "title": "Down the Bright Way"
+    },
+    {
+      "authors": [
+        "Ian Watson"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2005",
+      "category": "Translated Novel",
+      "position": "2005.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2005"
+      },
+      "title": "The Embedding"
+    },
+    {
+      "authors": [
+        "Gene Wolfe"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2005",
+      "category": "Translated Novel",
+      "position": "2005.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2005"
+      },
+      "title": "The Fifth Head of Cerberus"
+    },
+    {
+      "authors": [
+        "Jeffrey Ford"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2005",
+      "category": "Translated Novel",
+      "position": "2005.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2005"
+      },
+      "title": "The Physiognomy"
+    },
+    {
+      "authors": [
+        "Christopher Priest"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2005",
+      "category": "Translated Novel",
+      "position": "2005.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2005"
+      },
+      "title": "The Prestige"
+    },
+    {
+      "authors": [
+        "Connie Willis"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2005",
+      "category": "Translated Novel",
+      "position": "2005.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2005"
+      },
+      "title": "To Say Nothing of the Dog"
+    },
+    {
+      "authors": [
+        "Greg Egan"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2006",
+      "category": "Translated Novel",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2006"
+      },
+      "title": "Diaspora"
+    },
+    {
+      "authors": [
+        "Richard Morgan"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2006",
+      "category": "Translated Novel",
+      "position": "2006.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2006"
+      },
+      "title": "Altered Carbon"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2006",
+      "category": "Translated Novel",
+      "position": "2006.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2006"
+      },
+      "title": "Neanderthal Parallax Trilogy : Hominids, Humans, Hybrids"
+    },
+    {
+      "authors": [
+        "Alastair Reynolds"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2006",
+      "category": "Translated Novel",
+      "position": "2006.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2006"
+      },
+      "title": "Revelation Space"
+    },
+    {
+      "authors": [
+        "R. A. Lafferty"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2006",
+      "category": "Translated Novel",
+      "position": "2006.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2006"
+      },
+      "title": "Space Chantey"
+    },
+    {
+      "authors": [
+        "Fritz Leiber"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2006",
+      "category": "Translated Novel",
+      "position": "2006.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2006"
+      },
+      "title": "The Swords of Lankhmar"
+    },
+    {
+      "authors": [
+        "George R. R. Martin"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2006",
+      "category": "Translated Novel",
+      "position": "2006.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2006"
+      },
+      "title": "Tuf Voyaging"
+    },
+    {
+      "authors": [
+        "Theodore Sturgeon"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2006",
+      "category": "Translated Novel",
+      "position": "2006.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2006"
+      },
+      "title": "Venus Plus X"
+    },
+    {
+      "authors": [
+        "Philip Reeve"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2007",
+      "category": "Translated Novel",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2007"
+      },
+      "title": "Mortal Engines"
+    },
+    {
+      "authors": [
+        "Alastair Reynolds"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2007",
+      "category": "Translated Novel",
+      "position": "2007.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2007"
+      },
+      "title": "Chasm City"
+    },
+    {
+      "authors": [
+        "Wil McCarthy"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2007",
+      "category": "Translated Novel",
+      "position": "2007.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2007"
+      },
+      "title": "The Collapsium"
+    },
+    {
+      "authors": [
+        "Dan Simmons"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2007",
+      "category": "Translated Novel",
+      "position": "2007.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2007"
+      },
+      "title": "Ilium"
+    },
+    {
+      "authors": [
+        "Geoffrey A. Landis"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2007",
+      "category": "Translated Novel",
+      "position": "2007.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2007"
+      },
+      "title": "Mars Crossing"
+    },
+    {
+      "authors": [
+        "Charles Stross"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2007",
+      "category": "Translated Novel",
+      "position": "2007.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2007"
+      },
+      "title": "Singularity Sky"
+    },
+    {
+      "authors": [
+        "James Tiptree, Jr."
+      ],
+      "award": "Seiun Award",
+      "award_year": "2008",
+      "category": "Translated Novel",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2008"
+      },
+      "title": "Brightness Falls from the Air"
+    },
+    {
+      "authors": [
+        "Charles Stross"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2008",
+      "category": "Translated Novel",
+      "position": "2008.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2008"
+      },
+      "title": "The Atrocity Archives"
+    },
+    {
+      "authors": [
+        "Joe Haldeman"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2008",
+      "category": "Translated Novel",
+      "position": "2008.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2008"
+      },
+      "title": "Camouflage"
+    },
+    {
+      "authors": [
+        "John C. Wright"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2008",
+      "category": "Translated Novel",
+      "position": "2008.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2008"
+      },
+      "title": "The Golden Age"
+    },
+    {
+      "authors": [
+        "Alfred Bester"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2008",
+      "category": "Translated Novel",
+      "position": "2008.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2008"
+      },
+      "title": "Golem 100"
+    },
+    {
+      "authors": [
+        "David Brin"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2008",
+      "category": "Translated Novel",
+      "position": "2008.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2008"
+      },
+      "title": "Kiln People"
+    },
+    {
+      "authors": [
+        "John Scalzi"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2008",
+      "category": "Translated Novel",
+      "position": "2008.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2008"
+      },
+      "title": "Old Man's War"
+    },
+    {
+      "authors": [
+        "Dan Simmons"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2008",
+      "category": "Translated Novel",
+      "position": "2008.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2008"
+      },
+      "title": "Olympos"
+    },
+    {
+      "authors": [
+        "Christopher Priest"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2008",
+      "category": "Translated Novel",
+      "position": "2008.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2008"
+      },
+      "title": "The Separation"
+    },
+    {
+      "authors": [
+        "Robert Charles Wilson"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2009",
+      "category": "Translated Novel",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2009"
+      },
+      "title": "Spin"
+    },
+    {
+      "authors": [
+        "John Scalzi"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2009",
+      "category": "Translated Novel",
+      "position": "2009.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2009"
+      },
+      "title": "The Ghost Brigades"
+    },
+    {
+      "authors": [
+        "M. John Harrison"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2009",
+      "category": "Translated Novel",
+      "position": "2009.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2009"
+      },
+      "title": "Light"
+    },
+    {
+      "authors": [
+        "Alastair Reynolds"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2009",
+      "category": "Translated Novel",
+      "position": "2009.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2009"
+      },
+      "title": "Redemption Ark"
+    },
+    {
+      "authors": [
+        "Jack McDevitt"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2009",
+      "category": "Translated Novel",
+      "position": "2009.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2009"
+      },
+      "title": "Seeker"
+    },
+    {
+      "authors": [
+        "Karl Schroeder"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2009",
+      "category": "Translated Novel",
+      "position": "2009.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2009"
+      },
+      "title": "Sun of Suns"
+    },
+    {
+      "authors": [
+        "Gene Wolfe"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2009",
+      "category": "Translated Novel",
+      "position": "2009.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2009"
+      },
+      "title": "The Urth of the New Sun"
+    },
+    {
+      "authors": [
+        "John Scalzi"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2010",
+      "category": "Translated Novel",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2010"
+      },
+      "title": "The Last Colony"
+    },
+    {
+      "authors": [
+        "Charles Stross"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2010",
+      "category": "Translated Novel",
+      "position": "2010.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2010"
+      },
+      "title": "Accelerando"
+    },
+    {
+      "authors": [
+        "China Mi\ufffdville"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2010",
+      "category": "Translated Novel",
+      "position": "2010.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2010"
+      },
+      "title": "Perdido Street Station"
+    },
+    {
+      "authors": [
+        "Nancy Kress"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2010",
+      "category": "Translated Novel",
+      "position": "2010.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2010"
+      },
+      "title": "Probability trilogy"
+    },
+    {
+      "authors": [
+        "Vernor Vinge"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2010",
+      "category": "Translated Novel",
+      "position": "2010.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2010"
+      },
+      "title": "Rainbows End"
+    },
+    {
+      "authors": [
+        "Michael Chabon"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2010",
+      "category": "Translated Novel",
+      "position": "2010.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2010"
+      },
+      "title": "The Yiddish Policeman's Union"
+    },
+    {
+      "authors": [
+        "Michael F. Flynn"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2011",
+      "category": "Translated Novel",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2011"
+      },
+      "title": "Eifelheim"
+    },
+    {
+      "authors": [
+        "Felix J. Palma"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2011",
+      "category": "Translated Novel",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2011"
+      },
+      "title": "El Mapa del Tiempo"
+    },
+    {
+      "authors": [
+        "Bernard Beckett"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2011",
+      "category": "Translated Novel",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2011"
+      },
+      "title": "Genesis"
+    },
+    {
+      "authors": [
+        "Gardner Dozois",
+        "Daniel Abraham"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2011",
+      "category": "Translated Novel",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2011"
+      },
+      "title": "Hunter's Run , George R. R. Martin"
+    },
+    {
+      "authors": [
+        "Jo Walton"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2011",
+      "category": "Translated Novel",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2011"
+      },
+      "title": "Small Change trilogy"
+    },
+    {
+      "authors": [
+        "China Mi\ufffdville"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2011",
+      "category": "Translated Novel",
+      "position": "2011.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2011"
+      },
+      "title": "Un Lun Dun"
+    },
+    {
+      "authors": [
+        "Max Brooks"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2011",
+      "category": "Translated Novel",
+      "position": "2011.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2011"
+      },
+      "title": "World War Z"
+    },
+    {
+      "authors": [
+        "Paolo Bacigalupi"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2012",
+      "category": "Translated Novel",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2012"
+      },
+      "title": "The Windup Girl"
+    },
+    {
+      "authors": [
+        "Robert Charles Wilson"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2012",
+      "category": "Translated Novel",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2012"
+      },
+      "title": "The Chronoliths"
+    },
+    {
+      "authors": [
+        "China Mi\ufffdville"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2012",
+      "category": "Translated Novel",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2012"
+      },
+      "title": "The City & the City"
+    },
+    {
+      "authors": [
+        "Samuel R. Delany"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2012",
+      "category": "Translated Novel",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2012"
+      },
+      "title": "Dhalgren"
+    },
+    {
+      "authors": [
+        "Cory Doctorow"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2012",
+      "category": "Translated Novel",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2012"
+      },
+      "title": "Little Brother"
+    },
+    {
+      "authors": [
+        "J. G. Ballard"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2012",
+      "category": "Translated Novel",
+      "position": "2012.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2012"
+      },
+      "title": "Millennium People"
+    },
+    {
+      "authors": [
+        "John Scalzi"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2013",
+      "category": "Translated Novel",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2013"
+      },
+      "title": "The Android's Dream"
+    },
+    {
+      "authors": [
+        "Connie Willis"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2013",
+      "category": "Translated Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2013"
+      },
+      "title": "Blackout"
+    },
+    {
+      "authors": [
+        "Scott Westerfeld"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2013",
+      "category": "Translated Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2013"
+      },
+      "title": "Leviathan trilogy"
+    },
+    {
+      "authors": [
+        "Hannu Rajaniemi"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2013",
+      "category": "Translated Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2013"
+      },
+      "title": "The Quantum Thief"
+    },
+    {
+      "authors": [
+        "Robert Charles Wilson"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2013",
+      "category": "Translated Novel",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2013"
+      },
+      "title": "Vortex"
+    },
+    {
+      "authors": [
+        "Peter Watts"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2014",
+      "category": "Translated Novel",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2014"
+      },
+      "title": "Blindsight"
+    },
+    {
+      "authors": [
+        "Connie Willis"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2014",
+      "category": "Translated Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2014"
+      },
+      "title": "All Clear"
+    },
+    {
+      "authors": [
+        "China Mi\ufffdville"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2014",
+      "category": "Translated Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2014"
+      },
+      "title": "Embassytown"
+    },
+    {
+      "authors": [
+        "Greg Egan"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2014",
+      "category": "Translated Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2014"
+      },
+      "title": "Incandescence"
+    },
+    {
+      "authors": [
+        "Christopher Priest"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2014",
+      "category": "Translated Novel",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2014"
+      },
+      "title": "The Islanders"
+    },
+    {
+      "authors": [
+        "China Mi\ufffdville"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2014",
+      "category": "Translated Novel",
+      "position": "2014.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2014"
+      },
+      "title": "Kraken"
+    },
+    {
+      "authors": [
+        "R. A. Lafferty"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2014",
+      "category": "Translated Novel",
+      "position": "2014.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2014"
+      },
+      "title": "Serpent's Egg"
+    },
+    {
+      "authors": [
+        "Andy Weir"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2015",
+      "category": "Translated Novel",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2015"
+      },
+      "title": "The Martian"
+    },
+    {
+      "authors": [
+        "Jo Walton"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2015",
+      "category": "Translated Novel",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2015"
+      },
+      "title": "Among Others"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2015",
+      "category": "Translated Novel",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2015"
+      },
+      "title": "The Dervish House"
+    },
+    {
+      "authors": [
+        "Orson Scott Card"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2015",
+      "category": "Translated Novel",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2015"
+      },
+      "title": "Pathfinder"
+    },
+    {
+      "authors": [
+        "Ernest Cline"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2015",
+      "category": "Translated Novel",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2015"
+      },
+      "title": "Ready Player One"
+    },
+    {
+      "authors": [
+        "John Scalzi"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2015",
+      "category": "Translated Novel",
+      "position": "2015.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2015"
+      },
+      "title": "Redshirts"
+    },
+    {
+      "authors": [
+        "Ann Leckie"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2016",
+      "category": "Translated Novel",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2016"
+      },
+      "title": "Ancillary Justice"
+    },
+    {
+      "authors": [
+        "Gareth L. Powell"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2016",
+      "category": "Translated Novel",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2016"
+      },
+      "title": "Ack-Ack Macaque"
+    },
+    {
+      "authors": [
+        "Lavie Tidhar"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2016",
+      "category": "Translated Novel",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2016"
+      },
+      "title": "The Violent Century"
+    },
+    {
+      "authors": [
+        "Philip K. Dick"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2016",
+      "category": "Translated Novel",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2016"
+      },
+      "title": "Vulcan's Hammer"
+    },
+    {
+      "authors": [
+        "Paolo Bacigalupi"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2016",
+      "category": "Translated Novel",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2016"
+      },
+      "title": "The Water Knife"
+    },
+    {
+      "authors": [
+        "Greg Egan"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2016",
+      "category": "Translated Novel",
+      "position": "2016.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2016"
+      },
+      "title": "Zendegi"
+    },
+    {
+      "authors": [
+        "Peter Tieryas"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2017",
+      "category": "Translated Novel",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2017"
+      },
+      "title": "United States of Japan"
+    },
+    {
+      "authors": [
+        "Steven Millhauser"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2017",
+      "category": "Translated Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2017"
+      },
+      "title": "Enchanted Night"
+    },
+    {
+      "authors": [
+        "Claire North"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2017",
+      "category": "Translated Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2017"
+      },
+      "title": "The First Fifteen Lives of Harry August"
+    },
+    {
+      "authors": [
+        "Ken Liu"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2017",
+      "category": "Translated Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2017"
+      },
+      "title": "The Grace of Kings"
+    },
+    {
+      "authors": [
+        "Ann Leckie"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2017",
+      "category": "Translated Novel",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2017"
+      },
+      "title": "Imperial Radch trilogy"
+    },
+    {
+      "authors": [
+        "Jack Vance"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2017",
+      "category": "Translated Novel",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2017"
+      },
+      "title": "Jack Vance Treasury 1"
+    },
+    {
+      "authors": [
+        "John Sladek"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2017",
+      "category": "Translated Novel",
+      "position": "2017.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2017"
+      },
+      "title": "Roderick"
+    },
+    {
+      "authors": [
+        "Sylvain Neuvel"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2018",
+      "category": "Translated Novel",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2018"
+      },
+      "title": "Sleeping Giants"
+    },
+    {
+      "authors": [
+        "Christopher Priest"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2018",
+      "category": "Translated Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2018"
+      },
+      "title": "The Adjacent"
+    },
+    {
+      "authors": [
+        "Kim Stanley Robinson"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2018",
+      "category": "Translated Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2018"
+      },
+      "title": "Blue Mars"
+    },
+    {
+      "authors": [
+        "Gene Wolfe"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2018",
+      "category": "Translated Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2018"
+      },
+      "title": "A Borrowed Man"
+    },
+    {
+      "authors": [
+        "Roman Arbitman"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2018",
+      "category": "Translated Novel",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2018"
+      },
+      "title": "The History of Soviet Fantastika"
+    },
+    {
+      "authors": [
+        "Jo Walton"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2018",
+      "category": "Translated Novel",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2018"
+      },
+      "title": "My Real Children"
+    },
+    {
+      "authors": [
+        "Jack Vance"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2018",
+      "category": "Translated Novel",
+      "position": "2018.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2018"
+      },
+      "title": "Space Opera"
+    },
+    {
+      "authors": [
+        "Peter Tieryas"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2019",
+      "category": "Translated Novel",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2019"
+      },
+      "title": "Mecha Samurai Empire"
+    },
+    {
+      "authors": [
+        "Andy Weir"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2019",
+      "category": "Translated Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2019"
+      },
+      "title": "Artemis"
+    },
+    {
+      "authors": [
+        "Ann Leckie"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2019",
+      "category": "Translated Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2019"
+      },
+      "title": "Provenance"
+    },
+    {
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2019",
+      "category": "Translated Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2019"
+      },
+      "title": "Seveneves"
+    },
+    {
+      "authors": [
+        "Mur Lafferty"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2019",
+      "category": "Translated Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2019"
+      },
+      "title": "Six Wakes"
+    },
+    {
+      "authors": [
+        "Sylvain Neuvel"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2019",
+      "category": "Translated Novel",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2019"
+      },
+      "title": "Waking Gods"
+    },
+    {
+      "authors": [
+        "Dennis E. Taylor"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2019",
+      "category": "Translated Novel",
+      "position": "2019.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2019"
+      },
+      "title": "We Are Legion"
+    },
+    {
+      "authors": [
+        "Cixin Liu"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2020",
+      "category": "Translated Novel",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2020"
+      },
+      "title": "The Three-Body Problem"
+    },
+    {
+      "authors": [
+        "Fonda Lee"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2020",
+      "category": "Translated Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2020"
+      },
+      "title": "Jade City"
+    },
+    {
+      "authors": [
+        "Becky Chambers"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2020",
+      "category": "Translated Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2020"
+      },
+      "title": "The Long Way to a Small, Angry Planet"
+    },
+    {
+      "authors": [
+        "Lavie Tidhar"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2020",
+      "category": "Translated Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2020"
+      },
+      "title": "A Man Lies Dreaming"
+    },
+    {
+      "authors": [
+        "Martha Wells"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2020",
+      "category": "Translated Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2020"
+      },
+      "title": "The Murderbot Diaries"
+    },
+    {
+      "authors": [
+        "Sylvain Neuvel"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2020",
+      "category": "Translated Novel",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2020"
+      },
+      "title": "Only Human"
+    },
+    {
+      "authors": [
+        "Charles L. Harness"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2020",
+      "category": "Translated Novel",
+      "position": "2020.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2020"
+      },
+      "title": "The Paradox Men"
+    },
+    {
+      "authors": [
+        "Cixin Liu"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2021",
+      "category": "Translated Novel",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2021"
+      },
+      "title": "The Dark Forest"
+    },
+    {
+      "authors": [
+        "Charlie Jane Anders"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2021",
+      "category": "Translated Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2021"
+      },
+      "title": "All the Birds in the Sky"
+    },
+    {
+      "authors": [
+        "Allen Steele"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2021",
+      "category": "Translated Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2021"
+      },
+      "title": "Avengers of the Moon"
+    },
+    {
+      "authors": [
+        "Mary Robinette Kowal"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2021",
+      "category": "Translated Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2021"
+      },
+      "title": "The Calculating Stars"
+    },
+    {
+      "authors": [
+        "Gareth L. Powell"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2021",
+      "category": "Translated Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2021"
+      },
+      "title": "Embers of War"
+    },
+    {
+      "authors": [
+        "N. K. Jemisin"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2021",
+      "category": "Translated Novel",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2021"
+      },
+      "title": "The Fifth Season"
+    },
+    {
+      "authors": [
+        "Yoon Ha Lee"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2021",
+      "category": "Translated Novel",
+      "position": "2021.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2021"
+      },
+      "title": "Ninefox Gambit"
+    },
+    {
+      "authors": [
+        "Kate Mascarenhas"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2021",
+      "category": "Translated Novel",
+      "position": "2021.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2021"
+      },
+      "title": "The Psychology of Time Travel"
+    },
+    {
+      "authors": [
+        "Theodora Goss"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2021",
+      "category": "Translated Novel",
+      "position": "2021.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2021"
+      },
+      "title": "The Strange Case of the Alchemist's Daughter"
+    },
+    {
+      "authors": [
+        "Andy Weir"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2022",
+      "category": "Translated Novel",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2022"
+      },
+      "title": "Project Hail Mary"
+    },
+    {
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2022",
+      "category": "Translated Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2022"
+      },
+      "title": "Children of Time"
+    },
+    {
+      "authors": [
+        "Cixin Liu"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2022",
+      "category": "Translated Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2022"
+      },
+      "title": "Death's End"
+    },
+    {
+      "authors": [
+        "Mary Robinette Kowal"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2022",
+      "category": "Translated Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2022"
+      },
+      "title": "The Fated Sky"
+    },
+    {
+      "authors": [
+        "Wu Ying-Mi"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2022",
+      "category": "Translated Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2022"
+      },
+      "title": "The Man with the Compound Eyes"
+    },
+    {
+      "authors": [
+        "Martha Wells"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2022",
+      "category": "Translated Novel",
+      "position": "2022.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2022"
+      },
+      "title": "Network Effect"
+    },
+    {
+      "authors": [
+        "Michael Bishop"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2022",
+      "category": "Translated Novel",
+      "position": "2022.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2022"
+      },
+      "title": "No Enemy but Time"
+    },
+    {
+      "authors": [
+        "Amal El-Mohtar",
+        "Max Gladstone"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2022",
+      "category": "Translated Novel",
+      "position": "2022.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2022"
+      },
+      "title": "This Is How You Lose the Time War"
+    },
+    {
+      "authors": [
+        "Isaac Asimov"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2023",
+      "category": "Translated Novel",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2023"
+      },
+      "title": "Foundation series"
+    },
+    {
+      "authors": [
+        "Herv\u00e9 Le Tellier"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2023",
+      "category": "Translated Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2023"
+      },
+      "title": "The Anomaly"
+    },
+    {
+      "authors": [
+        "Cixin Liu"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2023",
+      "category": "Translated Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2023"
+      },
+      "title": "Ball Lightning"
+    },
+    {
+      "authors": [
+        "David Wellington"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2023",
+      "category": "Translated Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2023"
+      },
+      "title": "The Last Astronaut"
+    },
+    {
+      "authors": [
+        "Jacqueline Koyanagi",
+        "Curtis C. Chen"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2023",
+      "category": "Translated Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2023"
+      },
+      "title": "Ninth Step Station , Malka Older , Fran Wilde"
+    },
+    {
+      "authors": [
+        "Andreas Eschbach"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2023",
+      "category": "Translated Novel",
+      "position": "2023.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2023"
+      },
+      "title": "NSA: National Security Agency"
+    },
+    {
+      "authors": [
+        "Baoshu"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2023",
+      "category": "Translated Novel",
+      "position": "2023.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2023"
+      },
+      "title": "The Redemption of Time"
+    },
+    {
+      "authors": [
+        "John Scalzi"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2024",
+      "category": "Translated Novel",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2024"
+      },
+      "title": "The Kaiju Preservation Society"
+    },
+    {
+      "authors": [
+        "Adam Oyebanji"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2024",
+      "category": "Translated Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2024"
+      },
+      "title": "Braking Day"
+    },
+    {
+      "authors": [
+        "Laurent Binet"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2024",
+      "category": "Translated Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2024"
+      },
+      "title": "Civilizations"
+    },
+    {
+      "authors": [
+        "Eddie Robson"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2024",
+      "category": "Translated Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2024"
+      },
+      "title": "Drunk on All Your Strange New Worlds"
+    },
+    {
+      "authors": [
+        "Kim Cho-yeop"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2024",
+      "category": "Translated Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2024"
+      },
+      "title": "The Greenhouse at the End of the World"
+    },
+    {
+      "authors": [
+        "Xiran Jay Zhao"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2024",
+      "category": "Translated Novel",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2024"
+      },
+      "title": "Iron Widow"
+    },
+    {
+      "authors": [
+        "Edward Ashton"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2024",
+      "category": "Translated Novel",
+      "position": "2024.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2024"
+      },
+      "title": "Mickey 7"
+    },
+    {
+      "authors": [
+        "Martha Wells"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2025",
+      "category": "Translated Novel",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2025"
+      },
+      "title": "System Collapse"
+    },
+    {
+      "authors": [
+        "Han Song"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2025",
+      "category": "Translated Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2025"
+      },
+      "title": "Hospital"
+    },
+    {
+      "authors": [
+        "P. Dj\u00e8l\u00ed Clark"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2025",
+      "category": "Translated Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2025"
+      },
+      "title": "A Master of Djinn"
+    },
+    {
+      "authors": [
+        "Lavie Tidhar"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2025",
+      "category": "Translated Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2025"
+      },
+      "title": "Neom"
+    },
+    {
+      "authors": [
+        "William Brewer"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2025",
+      "category": "Translated Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2025"
+      },
+      "title": "The Red Arrow"
+    },
+    {
+      "authors": [
+        "Catherynne M. Valente"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2025",
+      "category": "Translated Novel",
+      "position": "2025.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2025"
+      },
+      "title": "Space Opera"
+    },
+    {
+      "authors": [
+        "Nick Harkaway"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2025",
+      "category": "Translated Novel",
+      "position": "2025.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2025"
+      },
+      "title": "Titanium Noir"
+    },
+    {
+      "authors": [
+        "R. F. Kuang"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2026",
+      "category": "Translated Novel",
+      "position": "2026",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2026"
+      },
+      "title": "Babel"
+    },
+    {
+      "authors": [
+        "Alastair Reynolds"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2026",
+      "category": "Translated Novel",
+      "position": "2026",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2026"
+      },
+      "title": "Eversion"
+    },
+    {
+      "authors": [
+        "China Mi\u00e9ville",
+        "Keanu Reeves"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2026",
+      "category": "Translated Novel",
+      "position": "2026.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2026"
+      },
+      "title": "The Book of Elsewhere"
+    },
+    {
+      "authors": [
+        "Sarah Brooks"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2026",
+      "category": "Translated Novel",
+      "position": "2026.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2026"
+      },
+      "title": "The Cautious Traveller's Guide to the Wastelands"
+    },
+    {
+      "authors": [
+        "Rob Hart"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2026",
+      "category": "Translated Novel",
+      "position": "2026.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2026"
+      },
+      "title": "The Paradox Hotel"
+    },
+    {
+      "authors": [
+        "James Morrow"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2026",
+      "category": "Translated Novel",
+      "position": "2026.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2026"
+      },
+      "title": "Shambling Towards Hiroshima"
+    },
+    {
+      "authors": [
+        "Emily Tesh"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2026",
+      "category": "Translated Novel",
+      "position": "2026.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2026"
+      },
+      "title": "Some Desperate Glory"
+    },
+    {
+      "authors": [
+        "Ray Nayler"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2026",
+      "category": "Translated Novel",
+      "position": "2026.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Seiun_Awards_2026"
+      },
+      "title": "The Tusks of Extinction"
+    }
+  ],
+  "fetched_at": "2026-11-15T19:56:31Z",
+  "list_id": "seiun_translated_novel",
+  "list_name": "Seiun - Translated Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "seiun_translated_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Seiun - Translated Novel",
+    "source_id": "seiun_translated_novel",
+    "url": "https://www.sfadb.com/Seiun_Awards"
+  }
+}

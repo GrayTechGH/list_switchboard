@@ -1,0 +1,1024 @@
+{
+  "append_state": {
+    "entry_count": 91,
+    "last_entry_key": "who shot the man in the black coat|steven stewart",
+    "last_position": "2025.07",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2008",
+      "category": "Best Mystery Novel",
+      "position": "2008",
+      "result": "winner",
+      "title": "What the Dead Know"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2008",
+      "category": "Best Mystery Novel",
+      "position": "2008.01",
+      "result": "nominee",
+      "title": "The Watchman"
+    },
+    {
+      "authors": [
+        "John Hart"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2008",
+      "category": "Best Mystery Novel",
+      "position": "2008.02",
+      "result": "nominee",
+      "title": "Down River"
+    },
+    {
+      "authors": [
+        "Charlie Huston"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2008",
+      "category": "Best Mystery Novel",
+      "position": "2008.03",
+      "result": "nominee",
+      "title": "The Shotgun Rule"
+    },
+    {
+      "authors": [
+        "William Landay"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2008",
+      "category": "Best Mystery Novel",
+      "position": "2008.04",
+      "result": "nominee",
+      "title": "The Strangler"
+    },
+    {
+      "authors": [
+        "Richard Price"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2009",
+      "category": "Best Mystery Novel",
+      "position": "2009",
+      "result": "winner",
+      "title": "Lush Life"
+    },
+    {
+      "authors": [
+        "Kate Atkinson"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2009",
+      "category": "Best Mystery Novel",
+      "position": "2009.01",
+      "result": "nominee",
+      "title": "When Will There Be Good News?"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2009",
+      "category": "Best Mystery Novel",
+      "position": "2009.02",
+      "result": "nominee",
+      "title": "The Brass Verdict"
+    },
+    {
+      "authors": [
+        "Thomas H. Cook"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2009",
+      "category": "Best Mystery Novel",
+      "position": "2009.03",
+      "result": "nominee",
+      "title": "Master of the Delta"
+    },
+    {
+      "authors": [
+        "Stieg Larsson"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2009",
+      "category": "Best Mystery Novel",
+      "position": "2009.04",
+      "result": "nominee",
+      "title": "The Girl with the Dragon Tattoo"
+    },
+    {
+      "authors": [
+        "David Levien"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2009",
+      "category": "Best Mystery Novel",
+      "position": "2009.05",
+      "result": "nominee",
+      "title": "City of the Sun"
+    },
+    {
+      "authors": [
+        "Justin Peacock"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2009",
+      "category": "Best Mystery Novel",
+      "position": "2009.06",
+      "result": "nominee",
+      "title": "A Cure for Night: A Novel"
+    },
+    {
+      "authors": [
+        "Michael Stanley"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2009",
+      "category": "Best Mystery Novel",
+      "position": "2009.07",
+      "result": "nominee",
+      "title": "A Carrion Death"
+    },
+    {
+      "authors": [
+        "Joseph Wambaugh"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2009",
+      "category": "Best Mystery Novel",
+      "position": "2009.08",
+      "result": "nominee",
+      "title": "Hollywood Crows"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2010",
+      "category": "Best Mystery Novel",
+      "position": "2010",
+      "result": "winner",
+      "title": "Nine Dragons"
+    },
+    {
+      "authors": [
+        "Charlie Huston"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2010",
+      "category": "Best Mystery Novel",
+      "position": "2010.01",
+      "result": "nominee",
+      "title": "The Mystic Arts of Erasing All Signs of Death"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2010",
+      "category": "Best Mystery Novel",
+      "position": "2010.02",
+      "result": "nominee",
+      "title": "Life Sentences"
+    },
+    {
+      "authors": [
+        "T. Jefferson Parker"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2010",
+      "category": "Best Mystery Novel",
+      "position": "2010.03",
+      "result": "nominee",
+      "title": "The Renegades"
+    },
+    {
+      "authors": [
+        "Sarah Waters"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2010",
+      "category": "Best Mystery Novel",
+      "position": "2010.04",
+      "result": "nominee",
+      "title": "The Little Stranger"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2011",
+      "category": "Best Mystery Novel",
+      "position": "2011",
+      "result": "winner",
+      "title": "The Reversal"
+    },
+    {
+      "authors": [
+        "Tana French"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2011",
+      "category": "Best Mystery Novel",
+      "position": "2011.01",
+      "result": "nominee",
+      "title": "Faithful Place"
+    },
+    {
+      "authors": [
+        "Stieg Larsson"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2011",
+      "category": "Best Mystery Novel",
+      "position": "2011.02",
+      "result": "nominee",
+      "title": "The Girl Who Kicked the Hornet's Nest"
+    },
+    {
+      "authors": [
+        "Dennis Lehane"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2011",
+      "category": "Best Mystery Novel",
+      "position": "2011.03",
+      "result": "nominee",
+      "title": "Moonlight Mile"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2011",
+      "category": "Best Mystery Novel",
+      "position": "2011.04",
+      "result": "nominee",
+      "title": "I'd Know You Anywhere"
+    },
+    {
+      "authors": [
+        "Joseph Finder"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2012",
+      "category": "Best Mystery Novel",
+      "position": "2012",
+      "result": "winner",
+      "title": "Buried Secrets"
+    },
+    {
+      "authors": [
+        "George Pelecanos"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2012",
+      "category": "Best Mystery Novel",
+      "position": "2012",
+      "result": "winner",
+      "title": "The Cut"
+    },
+    {
+      "authors": [
+        "Lee Child"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2012",
+      "category": "Best Mystery Novel",
+      "position": "2012.01",
+      "result": "nominee",
+      "title": "The Affair"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2012",
+      "category": "Best Mystery Novel",
+      "position": "2012.02",
+      "result": "nominee",
+      "title": "The Drop"
+    },
+    {
+      "authors": [
+        "P. D. James"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2012",
+      "category": "Best Mystery Novel",
+      "position": "2012.03",
+      "result": "nominee",
+      "title": "Death Comes to Pemberley"
+    },
+    {
+      "authors": [
+        "William Landay"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2013",
+      "category": "Best Mystery Novel",
+      "position": "2013",
+      "result": "winner",
+      "title": "Defending Jacob: A Novel"
+    },
+    {
+      "authors": [
+        "Lyndsay Faye"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2013",
+      "category": "Best Mystery Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "title": "The Gods of Gotham"
+    },
+    {
+      "authors": [
+        "Gillian Flynn"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2013",
+      "category": "Best Mystery Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "title": "Gone Girl"
+    },
+    {
+      "authors": [
+        "Tana French"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2013",
+      "category": "Best Mystery Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "title": "Broken Harbour"
+    },
+    {
+      "authors": [
+        "Dennis Lehane"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2013",
+      "category": "Best Mystery Novel",
+      "position": "2013.04",
+      "result": "nominee",
+      "title": "Live by Night"
+    },
+    {
+      "authors": [
+        "Lauren Beukes"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2014",
+      "category": "Best Mystery Novel",
+      "position": "2014",
+      "result": "winner",
+      "title": "The Shining Girls"
+    },
+    {
+      "authors": [
+        "William Boyd"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2014",
+      "category": "Best Mystery Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "title": "Solo"
+    },
+    {
+      "authors": [
+        "Thomas H. Cook"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2014",
+      "category": "Best Mystery Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "title": "Sandrine's Case"
+    },
+    {
+      "authors": [
+        "Craig Johnson"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2014",
+      "category": "Best Mystery Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "title": "A Serpent's Tooth"
+    },
+    {
+      "authors": [
+        "Stuart Neville"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2014",
+      "category": "Best Mystery Novel",
+      "position": "2014.04",
+      "result": "nominee",
+      "title": "Ratlines"
+    },
+    {
+      "authors": [
+        "George P. Pelecanos"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2014",
+      "category": "Best Mystery Novel",
+      "position": "2014.05",
+      "result": "nominee",
+      "title": "The Double"
+    },
+    {
+      "authors": [
+        "Megan Abbott"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2015",
+      "category": "Best Mystery Novel",
+      "position": "2015",
+      "result": "winner",
+      "title": "The Fever"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2015",
+      "category": "Best Mystery Novel",
+      "position": "2015",
+      "result": "winner",
+      "title": "After I'm Gone"
+    },
+    {
+      "authors": [
+        "Richard Price"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2016",
+      "category": "Best Mystery Novel",
+      "position": "2016",
+      "result": "winner",
+      "title": "The Whites"
+    },
+    {
+      "authors": [
+        "Tana French"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2017",
+      "category": "Best Mystery Novel",
+      "position": "2017",
+      "result": "winner",
+      "title": "The Trespasser"
+    },
+    {
+      "authors": [
+        "Megan Abbott"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2017",
+      "category": "Best Mystery Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "You Will Know Me"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2017",
+      "category": "Best Mystery Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "The Wrong Side of Goodbye"
+    },
+    {
+      "authors": [
+        "Alison Gaylin"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2017",
+      "category": "Best Mystery Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "title": "What Remains of Me"
+    },
+    {
+      "authors": [
+        "Val McDermid"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2017",
+      "category": "Best Mystery Novel",
+      "position": "2017.04",
+      "result": "nominee",
+      "title": "Out of Bounds"
+    },
+    {
+      "authors": [
+        "Ruth Ware"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2017",
+      "category": "Best Mystery Novel",
+      "position": "2017.05",
+      "result": "nominee",
+      "title": "The Woman in Cabin 10"
+    },
+    {
+      "authors": [
+        "Ivy Pochoda"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2018",
+      "category": "Best Mystery Novel",
+      "position": "2018",
+      "result": "winner",
+      "title": "Wonder Valley"
+    },
+    {
+      "authors": [
+        "Kate Atkinson"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2019",
+      "category": "Best Mystery Novel",
+      "position": "2019",
+      "result": "winner",
+      "title": "Transcription"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2019",
+      "category": "Best Mystery Novel",
+      "position": "2019",
+      "result": "winner",
+      "title": "Sunburn"
+    },
+    {
+      "authors": [
+        "Anthony Horowitz"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2020",
+      "category": "Best Mystery Novel",
+      "position": "2020",
+      "result": "winner",
+      "title": "The Sentence Is Death"
+    },
+    {
+      "authors": [
+        "Kate Atkinson"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2020",
+      "category": "Best Mystery Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "Big Sky"
+    },
+    {
+      "authors": [
+        "Jane Harper"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2020",
+      "category": "Best Mystery Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "The Lost Man"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2020",
+      "category": "Best Mystery Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "Lady in the Lake"
+    },
+    {
+      "authors": [
+        "Attica Locke"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2020",
+      "category": "Best Mystery Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "title": "Heaven, My Home"
+    },
+    {
+      "authors": [
+        "Don Winslow"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2020",
+      "category": "Best Mystery Novel",
+      "position": "2020.05",
+      "result": "nominee",
+      "title": "The Border"
+    },
+    {
+      "authors": [
+        "John Banville"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2021",
+      "category": "Best Mystery Novel",
+      "position": "2021",
+      "result": "winner",
+      "title": "Snow"
+    },
+    {
+      "authors": [
+        "Debra Jo Immergut"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2021",
+      "category": "Best Mystery Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "You Again"
+    },
+    {
+      "authors": [
+        "Walter Mosley"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2021",
+      "category": "Best Mystery Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "Trouble Is What I Do"
+    },
+    {
+      "authors": [
+        "Kwei Quartey"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2021",
+      "category": "Best Mystery Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "The Missing American"
+    },
+    {
+      "authors": [
+        "Ian Rankin"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2021",
+      "category": "Best Mystery Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "A Song for the Dark Times"
+    },
+    {
+      "authors": [
+        "Paul Tremblay"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2021",
+      "category": "Best Mystery Novel",
+      "position": "2021.05",
+      "result": "nominee",
+      "title": "Survivor Song"
+    },
+    {
+      "authors": [
+        "Lisa Unger"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2021",
+      "category": "Best Mystery Novel",
+      "position": "2021.06",
+      "result": "nominee",
+      "title": "Confessions on the 7:45"
+    },
+    {
+      "authors": [
+        "S. A. Cosby"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2022",
+      "category": "Best Mystery Novel",
+      "position": "2022",
+      "result": "winner",
+      "title": "Razorblade Tears"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2022",
+      "category": "Best Mystery Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "The Dark Hours"
+    },
+    {
+      "authors": [
+        "Tod Goldberg"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2022",
+      "category": "Best Mystery Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "The Low Desert: Gangster Stories"
+    },
+    {
+      "authors": [
+        "Rachel Howzell Hall"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2022",
+      "category": "Best Mystery Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "These Toxic Things"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2022",
+      "category": "Best Mystery Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "Dream Girl"
+    },
+    {
+      "authors": [
+        "Val McDermid"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2022",
+      "category": "Best Mystery Novel",
+      "position": "2022.05",
+      "result": "nominee",
+      "title": "1979"
+    },
+    {
+      "authors": [
+        "Alex Segura"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2023",
+      "category": "Best Mystery Novel",
+      "position": "2023",
+      "result": "winner",
+      "title": "Secret Identity: A Novel"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2023",
+      "category": "Best Mystery Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "title": "Desert Star"
+    },
+    {
+      "authors": [
+        "Laurie R. King"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2023",
+      "category": "Best Mystery Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "title": "Back to the Garden"
+    },
+    {
+      "authors": [
+        "Wanda M. Morris"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2023",
+      "category": "Best Mystery Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "title": "Anywhere You Run"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2023",
+      "category": "Best Mystery Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "title": "A World of Curiosities"
+    },
+    {
+      "authors": [
+        "John Searles"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2023",
+      "category": "Best Mystery Novel",
+      "position": "2023.05",
+      "result": "nominee",
+      "title": "Her Last Affair: A Novel"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2024",
+      "category": "Best Mystery Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "Resurrection Walk"
+    },
+    {
+      "authors": [
+        "S. A. Cosby"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2024",
+      "category": "Best Mystery Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "All the Sinners Bleed"
+    },
+    {
+      "authors": [
+        "Jordan Harper"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2024",
+      "category": "Best Mystery Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "Everybody Knows"
+    },
+    {
+      "authors": [
+        "Cheryl A. Head"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2024",
+      "category": "Best Mystery Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "title": "Time's Undoing"
+    },
+    {
+      "authors": [
+        "Mick Herron"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2024",
+      "category": "Best Mystery Novel",
+      "position": "2024.05",
+      "result": "nominee",
+      "title": "The Secret Hours"
+    },
+    {
+      "authors": [
+        "Dennis Lehane"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2024",
+      "category": "Best Mystery Novel",
+      "position": "2024.06",
+      "result": "nominee",
+      "title": "Small Mercies"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2024",
+      "category": "Best Mystery Novel",
+      "position": "2024.07",
+      "result": "nominee",
+      "title": "Prom Mom"
+    },
+    {
+      "authors": [
+        "Patrick Canning"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2025",
+      "category": "Best Mystery Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "For Your Benefit"
+    },
+    {
+      "authors": [
+        "Kim Carter"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2025",
+      "category": "Best Mystery Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "The Root of All Evil: A Clara and Iris Mystery"
+    },
+    {
+      "authors": [
+        "Ramona Emerson"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2025",
+      "category": "Best Mystery Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "Exposure"
+    },
+    {
+      "authors": [
+        "Russell Little"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2025",
+      "category": "Best Mystery Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "Murder By Storm"
+    },
+    {
+      "authors": [
+        "William Maz"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2025",
+      "category": "Best Mystery Novel",
+      "position": "2025.05",
+      "result": "nominee",
+      "title": "The Bucharest Legacy: The Rise of the Oligarchs"
+    },
+    {
+      "authors": [
+        "Lauren Nossett"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2025",
+      "category": "Best Mystery Novel",
+      "position": "2025.06",
+      "result": "nominee",
+      "title": "The Professor"
+    },
+    {
+      "authors": [
+        "Steven Stewart"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2025",
+      "category": "Best Mystery Novel",
+      "position": "2025.07",
+      "result": "nominee",
+      "title": "Who Shot the Man in the Black Coat?"
+    }
+  ],
+  "fetched_at": "2026-11-16T06:19:02Z",
+  "list_id": "strand_critics_award_mystery_novel",
+  "list_name": "Strand Critics Award - Mystery Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "strand_critics_award_mystery_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Strand Critics Award - Mystery Novel",
+    "source_id": "strand_critics_award_mystery_novel",
+    "url": "https://www.librarything.com/award/1380/The-Strand-Critics-Award"
+  }
+}

@@ -1,0 +1,717 @@
+{
+  "append_state": {
+    "entry_count": 63,
+    "last_entry_key": "the in laws|laura wolfe",
+    "last_position": "2024.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "CJ Lyons"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2013",
+      "category": "Best E-Book Original Novel",
+      "position": "2013",
+      "result": "winner",
+      "title": "Blind Faith"
+    },
+    {
+      "authors": [
+        "Jon Land"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2013",
+      "category": "Best E-Book Original Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "title": "Pandora\u2019s Temple"
+    },
+    {
+      "authors": [
+        "Alexandra Sokoloff"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2013",
+      "category": "Best E-Book Original Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "title": "Huntress Moon"
+    },
+    {
+      "authors": [
+        "Allen Wyler"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2013",
+      "category": "Best E-Book Original Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "title": "Dead End Deal"
+    },
+    {
+      "authors": [
+        "Allen Wyler"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2013",
+      "category": "Best E-Book Original Novel",
+      "position": "2013.04",
+      "result": "nominee",
+      "title": "Dead Wrong"
+    },
+    {
+      "authors": [
+        "Rebecca Cantrell"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2014",
+      "category": "Best E-Book Original Novel",
+      "position": "2014",
+      "result": "winner",
+      "title": "The World Beneath"
+    },
+    {
+      "authors": [
+        "J.G. Faherty"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2014",
+      "category": "Best E-Book Original Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "title": "The Burning Time"
+    },
+    {
+      "authors": [
+        "Joshua Graham"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2014",
+      "category": "Best E-Book Original Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "title": "Terminus"
+    },
+    {
+      "authors": [
+        "James Lepore",
+        "Carlos Davis"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2014",
+      "category": "Best E-Book Original Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "title": "No Dawn for Men"
+    },
+    {
+      "authors": [
+        "Luke Preston"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2014",
+      "category": "Best E-Book Original Novel",
+      "position": "2014.04",
+      "result": "nominee",
+      "title": "Out of Exile"
+    },
+    {
+      "authors": [
+        "C.J. Lyons"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2015",
+      "category": "Best E-Book Original Novel",
+      "position": "2015",
+      "result": "winner",
+      "title": "Hard Fall"
+    },
+    {
+      "authors": [
+        "Sean Black"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2015",
+      "category": "Best E-Book Original Novel",
+      "position": "2015.01",
+      "result": "nominee",
+      "title": "Post"
+    },
+    {
+      "authors": [
+        "Layton Green"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2015",
+      "category": "Best E-Book Original Novel",
+      "position": "2015.02",
+      "result": "nominee",
+      "title": "The Metaxy Project"
+    },
+    {
+      "authors": [
+        "Michael Logan"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2015",
+      "category": "Best E-Book Original Novel",
+      "position": "2015.03",
+      "result": "nominee",
+      "title": "Wannabes"
+    },
+    {
+      "authors": [
+        "Gil Reavill"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2015",
+      "category": "Best E-Book Original Novel",
+      "position": "2015.04",
+      "result": "nominee",
+      "title": "13 Hollywood Apes"
+    },
+    {
+      "authors": [
+        "Chris Kuzneski"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2016",
+      "category": "Best E-Book Original Novel",
+      "position": "2016",
+      "result": "winner",
+      "title": "The Prisoner\u2019s Gold"
+    },
+    {
+      "authors": [
+        "Diane Capri"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2016",
+      "category": "Best E-Book Original Novel",
+      "position": "2016.01",
+      "result": "nominee",
+      "title": "Jack and Joe"
+    },
+    {
+      "authors": [
+        "Robert McClure"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2016",
+      "category": "Best E-Book Original Novel",
+      "position": "2016.02",
+      "result": "nominee",
+      "title": "Deadly Lullaby"
+    },
+    {
+      "authors": [
+        "Caitlin O'Connell"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2016",
+      "category": "Best E-Book Original Novel",
+      "position": "2016.03",
+      "result": "nominee",
+      "title": "Ivory Ghosts"
+    },
+    {
+      "authors": [
+        "Eric Rickstad"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2016",
+      "category": "Best E-Book Original Novel",
+      "position": "2016.04",
+      "result": "nominee",
+      "title": "Lie in Wait"
+    },
+    {
+      "authors": [
+        "James Scott Bell"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2017",
+      "category": "Best E-Book Original Novel",
+      "position": "2017",
+      "result": "winner",
+      "title": "Romeo's Way"
+    },
+    {
+      "authors": [
+        "Sean Black"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2017",
+      "category": "Best E-Book Original Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "The Edge of Alone"
+    },
+    {
+      "authors": [
+        "Sibel Hodge"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2017",
+      "category": "Best E-Book Original Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "Untouchable"
+    },
+    {
+      "authors": [
+        "J.F. Penn"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2017",
+      "category": "Best E-Book Original Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "title": "Destroyer of Worlds"
+    },
+    {
+      "authors": [
+        "Richard Thomas"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2017",
+      "category": "Best E-Book Original Novel",
+      "position": "2017.04",
+      "result": "nominee",
+      "title": "Breaker"
+    },
+    {
+      "authors": [
+        "Sean Black"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2018",
+      "category": "Best E-Book Original Novel",
+      "position": "2018",
+      "result": "winner",
+      "title": "Second Chance"
+    },
+    {
+      "authors": [
+        "Jeff Gunhus"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2018",
+      "category": "Best E-Book Original Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "Resurrection America"
+    },
+    {
+      "authors": [
+        "Alan McDermott"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2018",
+      "category": "Best E-Book Original Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "title": "Trojan"
+    },
+    {
+      "authors": [
+        "Caroline Mitchell"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2018",
+      "category": "Best E-Book Original Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "title": "Witness"
+    },
+    {
+      "authors": [
+        "Kevin Wignall"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2018",
+      "category": "Best E-Book Original Novel",
+      "position": "2018.04",
+      "result": "nominee",
+      "title": "A Fragile Thing"
+    },
+    {
+      "authors": [
+        "Alan Orloff"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2019",
+      "category": "Best E-Book Original Novel",
+      "position": "2019",
+      "result": "winner",
+      "title": "Pray for the Innocent"
+    },
+    {
+      "authors": [
+        "Clare Chase"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2019",
+      "category": "Best E-Book Original Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "title": "Murder on the Marshes"
+    },
+    {
+      "authors": [
+        "Gary Grossman"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2019",
+      "category": "Best E-Book Original Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "title": "Executive Force"
+    },
+    {
+      "authors": [
+        "Samantha Hayes"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2019",
+      "category": "Best E-Book Original Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "title": "The Reunion"
+    },
+    {
+      "authors": [
+        "T.S. Nichols"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2019",
+      "category": "Best E-Book Original Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "title": "The Memory Detective"
+    },
+    {
+      "authors": [
+        "Kerry Wilkinson"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2020",
+      "category": "Best E-Book Original Novel",
+      "position": "2020",
+      "result": "winner",
+      "title": "Close to You"
+    },
+    {
+      "authors": [
+        "Brett Battles"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2020",
+      "category": "Best E-Book Original Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "Night Man"
+    },
+    {
+      "authors": [
+        "Sean Black"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2020",
+      "category": "Best E-Book Original Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "The Deep Abiding"
+    },
+    {
+      "authors": [
+        "Brian Shea"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2020",
+      "category": "Best E-Book Original Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "Murder Board"
+    },
+    {
+      "authors": [
+        "LynDee Walker"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2020",
+      "category": "Best E-Book Original Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "title": "Leave No Stone"
+    },
+    {
+      "authors": [
+        "Jeff Buick"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2021",
+      "category": "Best E-Book Original Novel",
+      "position": "2021",
+      "result": "winner",
+      "title": "A Killing Game"
+    },
+    {
+      "authors": [
+        "Sean Black"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2021",
+      "category": "Best E-Book Original Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "Avenue of Thieves"
+    },
+    {
+      "authors": [
+        "Diane Capri"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2021",
+      "category": "Best E-Book Original Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "Full Metal Jack"
+    },
+    {
+      "authors": [
+        "Jake Needham"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2021",
+      "category": "Best E-Book Original Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "Mongkok Station"
+    },
+    {
+      "authors": [
+        "Kirk Russell"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2021",
+      "category": "Best E-Book Original Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "No Hesitation"
+    },
+    {
+      "authors": [
+        "E.J. Findorff"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2022",
+      "category": "Best E-Book Original Novel",
+      "position": "2022",
+      "result": "winner",
+      "title": "Blood Parish"
+    },
+    {
+      "authors": [
+        "Greig Beck"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2022",
+      "category": "Best E-Book Original Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "The Dark Side: Alex Hunter 9"
+    },
+    {
+      "authors": [
+        "John Connell"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2022",
+      "category": "Best E-Book Original Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "Where the Wicked Tread"
+    },
+    {
+      "authors": [
+        "Wendy Dranfield"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2022",
+      "category": "Best E-Book Original Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "Little Girl Taken"
+    },
+    {
+      "authors": [
+        "S. E. Green"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2022",
+      "category": "Best E-Book Original Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "Mother May I"
+    },
+    {
+      "authors": [
+        "Andrew Kaplan"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2022",
+      "category": "Best E-Book Original Novel",
+      "position": "2022.05",
+      "result": "nominee",
+      "title": "Blue Madagascar"
+    },
+    {
+      "authors": [
+        "Karin Nordin"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2022",
+      "category": "Best E-Book Original Novel",
+      "position": "2022.06",
+      "result": "nominee",
+      "title": "Last One Alive"
+    },
+    {
+      "authors": [
+        "Diane Jeffrey"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2023",
+      "category": "Best E-Book Original Novel",
+      "position": "2023",
+      "result": "winner",
+      "title": "The Couple at Causeway Cottage"
+    },
+    {
+      "authors": [
+        "Bill Byrnes"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2023",
+      "category": "Best E-Book Original Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "title": "Evasive Species"
+    },
+    {
+      "authors": [
+        "Grant McKenzie"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2023",
+      "category": "Best E-Book Original Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "title": "The Seven Truths of Hannah Baxter"
+    },
+    {
+      "authors": [
+        "Rick Mofina"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2023",
+      "category": "Best E-Book Original Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "title": "The Hollow Place"
+    },
+    {
+      "authors": [
+        "Carrie Rubin"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2023",
+      "category": "Best E-Book Original Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "title": "Fatal Rounds"
+    },
+    {
+      "authors": [
+        "Robert Swartwood"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2024",
+      "category": "Best E-Book Original Novel",
+      "position": "2024",
+      "result": "winner",
+      "title": "The Killing Room"
+    },
+    {
+      "authors": [
+        "Jeff Buick"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2024",
+      "category": "Best E-Book Original Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "The Vulture Fund"
+    },
+    {
+      "authors": [
+        "Rona Halsall"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2024",
+      "category": "Best E-Book Original Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "The Bigamist"
+    },
+    {
+      "authors": [
+        "Matt Phillips"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2024",
+      "category": "Best E-Book Original Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "A Good Rush of Blood"
+    },
+    {
+      "authors": [
+        "Lisa Regan"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2024",
+      "category": "Best E-Book Original Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "title": "Close Her Eyes"
+    },
+    {
+      "authors": [
+        "Laura Wolfe"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2024",
+      "category": "Best E-Book Original Novel",
+      "position": "2024.05",
+      "result": "nominee",
+      "title": "The In-Laws"
+    }
+  ],
+  "fetched_at": "2026-11-16T00:38:50Z",
+  "list_id": "itw_thriller_award_e_book_original_novel",
+  "list_name": "ITW Thriller Award - E-Book Original Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "itw_thriller_award_e_book_original_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "ITW Thriller Award - E-Book Original Novel",
+    "source_id": "itw_thriller_award_e_book_original_novel",
+    "url": "https://thrillerwriters.org/past-nominees-and-winners"
+  }
+}

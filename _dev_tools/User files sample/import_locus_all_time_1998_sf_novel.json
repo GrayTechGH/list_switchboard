@@ -1,0 +1,596 @@
+{
+  "append_state": {
+    "entry_count": 52,
+    "last_entry_key": "the gods themselves|isaac asimov",
+    "last_position": "52",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Frank Herbert"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "1",
+      "result": "ranked",
+      "title": "Dune"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "2",
+      "result": "ranked",
+      "title": "The Moon Is a Harsh Mistress"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "3",
+      "result": "ranked",
+      "title": "The Left Hand of Darkness"
+    },
+    {
+      "authors": [
+        "Isaac Asimov"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "4",
+      "result": "ranked",
+      "title": "The Foundation Trilogy"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "5",
+      "result": "ranked",
+      "title": "Stranger in a Strange Land"
+    },
+    {
+      "authors": [
+        "Alfred Bester"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "6",
+      "result": "ranked",
+      "title": "The Stars My Destination"
+    },
+    {
+      "authors": [
+        "Walter M. Miller, Jr."
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "7",
+      "result": "ranked",
+      "title": "A Canticle for Leibowitz"
+    },
+    {
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "8",
+      "result": "ranked",
+      "title": "Childhood's End"
+    },
+    {
+      "authors": [
+        "Orson Scott Card"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "9",
+      "result": "ranked",
+      "title": "Ender's Game"
+    },
+    {
+      "authors": [
+        "Dan Simmons"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "10",
+      "result": "ranked",
+      "title": "Hyperion"
+    },
+    {
+      "authors": [
+        "Frederik Pohl"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "11",
+      "result": "ranked",
+      "title": "Gateway"
+    },
+    {
+      "authors": [
+        "Joe Haldeman"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "12",
+      "result": "ranked",
+      "title": "The Forever War"
+    },
+    {
+      "authors": [
+        "Theodore Sturgeon"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "13",
+      "result": "ranked",
+      "title": "More Than Human"
+    },
+    {
+      "authors": [
+        "Roger Zelazny"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "14",
+      "result": "ranked",
+      "title": "Lord of Light"
+    },
+    {
+      "authors": [
+        "William Gibson"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "15",
+      "result": "ranked",
+      "title": "Neuromancer"
+    },
+    {
+      "authors": [
+        "David Brin"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "16",
+      "result": "ranked",
+      "title": "Startide Rising"
+    },
+    {
+      "authors": [
+        "H. G. Wells"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "17",
+      "result": "ranked",
+      "title": "The Time Machine"
+    },
+    {
+      "authors": [
+        "Philip K. Dick"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "18",
+      "result": "ranked",
+      "title": "The Man in the High Castle"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "19",
+      "result": "ranked",
+      "title": "The Dispossessed"
+    },
+    {
+      "authors": [
+        "John Brunner"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "20",
+      "result": "ranked",
+      "title": "Stand on Zanzibar"
+    },
+    {
+      "authors": [
+        "George Orwell"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "21",
+      "result": "ranked",
+      "title": "Nineteen Eighty-Four"
+    },
+    {
+      "authors": [
+        "Alfred Bester"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "22",
+      "result": "ranked",
+      "title": "The Demolished Man"
+    },
+    {
+      "authors": [
+        "Ray Bradbury"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "23",
+      "result": "ranked",
+      "title": "The Martian Chronicles"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "24",
+      "result": "ranked",
+      "title": "Starship Troopers"
+    },
+    {
+      "authors": [
+        "C. J. Cherryh"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "25",
+      "result": "ranked",
+      "title": "Downbelow Station"
+    },
+    {
+      "authors": [
+        "Larry Niven"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "25",
+      "result": "ranked",
+      "title": "Ringworld"
+    },
+    {
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "27",
+      "result": "ranked",
+      "title": "2001: A Space Odyssey"
+    },
+    {
+      "authors": [
+        "H. G. Wells"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "28",
+      "result": "ranked",
+      "title": "The War of the Worlds"
+    },
+    {
+      "authors": [
+        "Ray Bradbury"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "29",
+      "result": "ranked",
+      "title": "Fahrenheit 451"
+    },
+    {
+      "authors": [
+        "Larry Niven",
+        "Jerry Pournelle"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "30",
+      "result": "ranked",
+      "title": "The Mote in God's Eye"
+    },
+    {
+      "authors": [
+        "Clifford D. Simak"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "31",
+      "result": "ranked",
+      "title": "Way Station"
+    },
+    {
+      "authors": [
+        "Olaf Stapledon"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "32",
+      "result": "ranked",
+      "title": "Star Maker"
+    },
+    {
+      "authors": [
+        "Robert Silverberg"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "33",
+      "result": "ranked",
+      "title": "Dying Inside"
+    },
+    {
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "34",
+      "result": "ranked",
+      "title": "The City and the Stars"
+    },
+    {
+      "authors": [
+        "Samuel R. Delany"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "35",
+      "result": "ranked",
+      "title": "Dhalgren"
+    },
+    {
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "36",
+      "result": "ranked",
+      "title": "Rendezvous with Rama"
+    },
+    {
+      "authors": [
+        "Hal Clement"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "37",
+      "result": "ranked",
+      "title": "Mission of Gravity"
+    },
+    {
+      "authors": [
+        "C. J. Cherryh"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "38",
+      "result": "ranked",
+      "title": "Cyteen"
+    },
+    {
+      "authors": [
+        "Clifford D. Simak"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "38",
+      "result": "ranked",
+      "title": "City"
+    },
+    {
+      "authors": [
+        "Daniel Keyes"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "40",
+      "result": "ranked",
+      "title": "Flowers for Algernon"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "41",
+      "result": "ranked",
+      "title": "Double Star"
+    },
+    {
+      "authors": [
+        "George R. Stewart"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "41",
+      "result": "ranked",
+      "title": "Earth Abides"
+    },
+    {
+      "authors": [
+        "Philip K. Dick"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "43",
+      "result": "ranked",
+      "title": "Ubik"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "43",
+      "result": "ranked",
+      "title": "The Door Into Summer"
+    },
+    {
+      "authors": [
+        "Olaf Stapledon"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "43",
+      "result": "ranked",
+      "title": "Last and First Men"
+    },
+    {
+      "authors": [
+        "James H. Schmitz"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "46",
+      "result": "ranked",
+      "title": "The Witches of Karres"
+    },
+    {
+      "authors": [
+        "Cordwainer Smith"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "46",
+      "result": "ranked",
+      "title": "Norstrilia"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "48",
+      "result": "ranked",
+      "title": "Have Space Suit -- Will Travel"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "48",
+      "result": "ranked",
+      "title": "Time Enough for Love"
+    },
+    {
+      "authors": [
+        "Mary Shelley"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "48",
+      "result": "ranked",
+      "title": "Frankenstein"
+    },
+    {
+      "authors": [
+        "Philip K. Dick"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "51",
+      "result": "ranked",
+      "title": "Do Androids Dream of Electric Sheep?"
+    },
+    {
+      "authors": [
+        "Isaac Asimov"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time SF Novel",
+      "poll_year": "1998",
+      "position": "52",
+      "result": "ranked",
+      "title": "The Gods Themselves"
+    }
+  ],
+  "fetched_at": "2026-07-23T05:10:22Z",
+  "list_id": "locus_all_time_1998_sf_novel",
+  "list_name": "Locus - All-Time 1998 SF Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "locus_all_time_1998_sf_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Locus - All-Time 1998 SF Novel",
+    "source_id": "locus_all_time_1998_sf_novel",
+    "url": "https://www.sfadb.com/Locus_1998_SF"
+  }
+}

@@ -44,7 +44,7 @@ class UrlFetcherNommo(UrlFetcherGeneric):
 
     return NommoAwardsParser()
 
-  def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
+  def parse(self, html, fetch_url=None, log=None, progress=None, **kwargs):
     return self.parser().parse(
       html,
       self.URL,
@@ -52,22 +52,26 @@ class UrlFetcherNommo(UrlFetcherGeneric):
       self.CATEGORY,
       fetch_url=fetch_url,
       log=log,
-      progress=progress)
+      progress=progress, cached_parsed=kwargs.get('cached_parsed'),
+      incremental_update=kwargs.get('incremental_update', False))
 
 
 class UrlFetcherNommoNovel(UrlFetcherNommo):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'nommo_novel'
   NAME = 'Nommo - Novel'
   CATEGORY = 'Novel'
 
 
 class UrlFetcherNommoNovella(UrlFetcherNommo):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'nommo_novella'
   NAME = 'Nommo - Novella'
   CATEGORY = 'Novella'
 
 
 class UrlFetcherNommoGraphicNovel(UrlFetcherNommo):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'nommo_graphic_novel'
   NAME = 'Nommo - Graphic Novel'
   CATEGORY = 'Graphic Novel'

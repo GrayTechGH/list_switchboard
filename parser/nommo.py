@@ -12,6 +12,8 @@ Maintenance notes:
 """
 
 import re
+import json
+import datetime
 from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
@@ -20,9 +22,14 @@ try:
   from calibre_plugins.list_switchboard.parser.base import (
     entry_source_object, imported_entry, parsed_source, ListParserBase)
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
+  from calibre_plugins.list_switchboard.parser.incremental import (
+    ParsedUnitCache, project_source_rows, restore_source_rows)
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
 except ImportError:
   from .base import entry_source_object, imported_entry, parsed_source, ListParserBase
   from .generic import position_sort_key
+  from .incremental import ParsedUnitCache, project_source_rows, restore_source_rows
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 
 AWARD_NAME = 'Nommo Award'
@@ -53,29 +60,70 @@ class NommoAwardsParser(ListParserBase):
   """
 
   def parse(self, html, base_url, name, category,
-            fetch_url=None, official_urls=None, log=None, progress=None):
+            fetch_url=None, official_urls=None, log=None, progress=None,
+            cached_parsed=None, incremental_update=False):
     rows = _parse_nommo_wikipedia_rows(html, base_url, category)
     notes = []
-    urls = official_urls if official_urls is not None else OFFICIAL_FALLBACK_URLS
+    urls = tuple(official_urls if official_urls is not None else OFFICIAL_FALLBACK_URLS)
+    cache = ParsedUnitCache('nommo-official-projections-v1',
+      json.dumps([base_url, name, category, urls]), cached_parsed, incremental_update)
+    sources = [(base_url, list(rows), bool(rows), False)]
     if fetch_url is not None:
       _progress(progress, 0, len(urls), f'Checking {name} official fallback pages...')
       for index, url in enumerate(urls, start=1):
+        old_unit = cache.old_units.get(url) or {}
+        try:
+          old_rows = restore_source_rows(cache.previous(url), old_unit.get('metadata') or {})
+        except (ValueError, TypeError):
+          old_rows = None
+        closed_2024 = (url in OFFICIAL_FALLBACK_URLS and 2024 < datetime.datetime.now().year)
+        primary_has_2024 = any(str(row['award_year']) == '2024' for row in sources[0][1])
+        redundant = primary_has_2024 and (old_unit.get('metadata') or {}).get('redundant') is True
+        if (closed_2024 and old_unit.get('complete') is True and
+            old_unit.get('revision') == 2024 and (old_rows or redundant)):
+          rows = _merge_rows(rows, old_rows or [])
+          sources.append((url, old_rows or [], True, redundant))
+          continue
         _progress(progress, index, len(urls), f'Fetching Nommo fallback page {index}...')
         try:
           fallback_html = fetch_url(url)
+          fallback_rows = _parse_nommo_official_rows(fallback_html, url, category)
+        except (ImportCancelledError, CamoufoxRequiredError):
+          raise
         except Exception as err:
           notes.append(f'Nommo fallback page could not be fetched: {url}: {err}')
           _log(log, 'fallback-fetch-failed', {'url': url, 'error': str(err)})
+          retained = old_rows or []
+          rows = _merge_rows(rows, retained)
+          sources.append((url, retained, False, False))
           continue
-        fallback_rows = _parse_nommo_official_rows(fallback_html, url, category)
+        complete = bool(fallback_rows) and all(str(row['award_year']) == '2024' for row in fallback_rows)
+        # Existing merge precedence discards an entire official year/category
+        # already present in Wikipedia. A verified dated page can be skipped
+        # while that primary coverage remains, even if its narrow parser has
+        # no usable rows. Removing primary coverage forces the request again.
+        title = BeautifulSoup(fallback_html, 'html.parser').title
+        redundant = bool(url in OFFICIAL_FALLBACK_URLS and primary_has_2024 and title and
+          _normalize_nommo_heading(title.get_text(' ', strip=True)) == '2024 nommo awards winners')
+        sources.append((url, fallback_rows, complete or redundant, redundant))
         rows = _merge_rows(rows, fallback_rows)
         if fallback_rows:
           _log(log, 'fallback-parsed', {'url': url, 'entries': len(fallback_rows)})
     entries = _nommo_entries(rows)
+    entries = sorted(entries, key=lambda item: position_sort_key(item.get('position', '')))
+    for url, source_rows, complete, redundant in sources:
+      projected, metadata = project_source_rows(source_rows, entries,
+        lambda row: (str(row['award_year']), _normalize_nommo_heading(row['title'])))
+      metadata['redundant'] = redundant
+      cache.put(url, projected, revision=2024 if url != base_url else None,
+        complete=complete, metadata=metadata)
+    state = cache.state(entries)
+    state['discovery'] = {'refresh_units': [base_url]}
     return {
       'name': name,
       'source': parsed_source(name, base_url),
-      'entries': sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
+      'entries': entries,
+      'incremental_state': state,
       'notes': notes,
       'match_series': False,
     }

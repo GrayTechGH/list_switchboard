@@ -25,12 +25,16 @@ try:
     normalize_heading, normalize_line, strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key # pyright: ignore[reportMissingImports]
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
+  from calibre_plugins.list_switchboard.parser.base import author_list
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
     normalize_heading, normalize_line, strip_publication_notes,
   )
   from .generic import position_sort_key
+  from errors import ImportCancelledError, CamoufoxRequiredError
+  from .base import author_list
 
 
 AWARD_NAME = 'ACT Book of the Year Award'
@@ -87,7 +91,7 @@ class ACTBookOfTheYearParserMixin(AwardParserBase):
 
   def clean_author(self, value):
     value = strip_publication_notes(normalize_line(_normalized_text(value)))
-    value = re.sub(r'^\s*(?:by|author|authors)\s*:?\s*', '', value, flags=re.I)
+    value = re.sub(r'^\s*(?:by|authors?)(?:\s*:\s*|\s+)', '', value, flags=re.I)
     value = re.sub(r'\s*(?:,|;|:|[\u2013\u2014-])\s*$', '', value).strip()
     return value.strip(' "\'\u2018\u2019\u201c\u201d,')
 
@@ -169,12 +173,19 @@ class ACTBookOfTheYearOfficialParser(ACTBookOfTheYearParserMixin):
       year_pages=(), **_kwargs):
     rows = []
     notes = []
+    soup = BeautifulSoup(html, 'html.parser')
+    banner_year = self.year_from_text(self.clean_text(soup.find('h1')))
+    if soup.find(id='main') is not None and banner_year:
+      source = self.read_official_year(html, base_url, banner_year)
+      return self.parsed_rows(source['rows'], name, base_url, notes=source['notes'])
     discovered_pages = list(year_pages) or self.discover_year_pages(html, base_url)
     if discovered_pages and fetch_url is not None:
       for year, url in discovered_pages:
         try:
           page_html = fetch_url(url)
           rows.extend(self.parse_year_page(page_html, url, default_year=year))
+        except (ImportCancelledError, CamoufoxRequiredError):
+          raise
         except Exception as err:
           notes.append(f'Libraries ACT year page {year} could not be fetched: {err}')
     else:
@@ -183,28 +194,25 @@ class ACTBookOfTheYearOfficialParser(ACTBookOfTheYearParserMixin):
     return self.parsed_rows(rows, name, base_url, notes=notes)
 
   def discover_year_pages(self, html, base_url=OFFICIAL_URL):
-    soup = BeautifulSoup(html, 'html.parser')
-    pages = []
-    seen = set()
-    for link in soup.find_all('a', href=True):
-      text = self.clean_text(link)
-      href = link.get('href', '')
-      haystack = f'{text} {href}'
-      year = self.year_from_text(haystack)
-      if year is None:
-        continue
-      key = normalize_heading(haystack)
-      if 'book of the year' not in key and not re.search(r'/(?:19|20)\d{2}(?:$|[/?#])', href):
-        continue
-      url = urljoin(base_url, href)
-      if url in seen:
-        continue
-      seen.add(url)
-      pages.append((year, url))
-    return tuple(sorted(pages, key=lambda item: item[0]))
+    try:
+      from calibre_plugins.list_switchboard.parser.act_book_sources import discover_archive
+    except ImportError:
+      from .act_book_sources import discover_archive
+    discovered = discover_archive(html, base_url, validate=False)
+    return tuple((year, url) for year, urls in sorted(discovered['years'].items()) for url in urls)
+
+  def read_official_year(self, html, base_url, year):
+    try:
+      from calibre_plugins.list_switchboard.parser.act_book_sources import read_year
+    except ImportError:
+      from .act_book_sources import read_year
+    return read_year(self, html, base_url, year)
 
   def parse_year_page(self, html, base_url=OFFICIAL_URL, default_year=None):
     soup = BeautifulSoup(html, 'html.parser')
+    if soup.find(id='main') is not None and soup.find('table') is not None:
+      year = default_year or self.year_from_text(self.clean_text(soup.find('h1')))
+      return self.read_official_year(html, base_url, year)['rows']
     root = soup.find('main') or soup.find('article') or soup.body or soup
     year = default_year or self.year_from_text(self.clean_text(root)) or self.year_from_text(base_url)
     rows = []
@@ -294,7 +302,15 @@ class ACTBookOfTheYearOfficialParser(ACTBookOfTheYearParserMixin):
         continue
       for wiki_row in wiki_rows:
         if wiki_row.get('award_year') == year and wiki_row.get('result') == RESULT_WINNER:
-          rows.append(wiki_row)
+          matching = next((row for row in rows if row.get('award_year') == year and
+            normalize_heading(row.get('title', '')) == normalize_heading(wiki_row.get('title', '')) and
+            sorted(normalize_heading(a) for a in author_list(row.get('authors', []))) ==
+            sorted(normalize_heading(a) for a in author_list(wiki_row.get('authors', [])))), None)
+          if matching is not None:
+            matching['result'] = RESULT_WINNER
+            matching['source'] = wiki_row.get('source', matching.get('source'))
+          else:
+            rows.append(wiki_row)
     source = official_parsed.get('source') if isinstance(official_parsed.get('source'), dict) else {}
     return self.parsed_result(
       official_parsed.get('name') or AWARD_NAME,

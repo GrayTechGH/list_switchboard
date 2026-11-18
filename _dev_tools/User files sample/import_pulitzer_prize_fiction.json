@@ -1,0 +1,2711 @@
+{
+  "append_state": {
+    "entry_count": 168,
+    "last_entry_key": "stag dance a quartet|torrey peters",
+    "last_position": "2026.02",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "James A. Michener"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1948",
+      "category": "Fiction",
+      "position": "1948",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/james-michener"
+      },
+      "title": "Tales of the South Pacific"
+    },
+    {
+      "authors": [
+        "James Gould Cozzens"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1949",
+      "category": "Fiction",
+      "position": "1949",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/james-gould-cozzens"
+      },
+      "title": "Guard of Honor"
+    },
+    {
+      "authors": [
+        "A. B. Guthrie"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1950",
+      "category": "Fiction",
+      "position": "1950",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/b-guthrie"
+      },
+      "title": "The Way West"
+    },
+    {
+      "authors": [
+        "Conrad Richter"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1951",
+      "category": "Fiction",
+      "position": "1951",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/conrad-richter"
+      },
+      "title": "The Town"
+    },
+    {
+      "authors": [
+        "Herman Wouk"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1952",
+      "category": "Fiction",
+      "position": "1952",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/herman-wouk"
+      },
+      "title": "The Caine Mutiny"
+    },
+    {
+      "authors": [
+        "Ernest Hemingway"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1953",
+      "category": "Fiction",
+      "position": "1953",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/ernest-hemingway"
+      },
+      "title": "The Old Man and the Sea"
+    },
+    {
+      "authors": [
+        "William Faulkner"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1955",
+      "category": "Fiction",
+      "position": "1955",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/william-faulkner"
+      },
+      "title": "A Fable"
+    },
+    {
+      "authors": [
+        "MacKinlay Kantor"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1956",
+      "category": "Fiction",
+      "position": "1956",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/mackinlay-kantor"
+      },
+      "title": "Andersonville"
+    },
+    {
+      "authors": [
+        "James Agee"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1958",
+      "category": "Fiction",
+      "position": "1958",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/james-agee"
+      },
+      "title": "A Death In The Family"
+    },
+    {
+      "authors": [
+        "Robert Lewis Taylor"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1959",
+      "category": "Fiction",
+      "position": "1959",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/robert-lewis-taylor"
+      },
+      "title": "The Travels of Jaimie McPheeters"
+    },
+    {
+      "authors": [
+        "Allen Drury"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1960",
+      "category": "Fiction",
+      "position": "1960",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/allen-drury"
+      },
+      "title": "Advise and Consent"
+    },
+    {
+      "authors": [
+        "Harper Lee"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1961",
+      "category": "Fiction",
+      "position": "1961",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/harper-lee"
+      },
+      "title": "To Kill A Mockingbird"
+    },
+    {
+      "authors": [
+        "Edwin O'Connor"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1962",
+      "category": "Fiction",
+      "position": "1962",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/edwin-oconnor"
+      },
+      "title": "The Edge of Sadness"
+    },
+    {
+      "authors": [
+        "William Faulkner"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1963",
+      "category": "Fiction",
+      "position": "1963",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/william-faulkner-0"
+      },
+      "title": "The Reivers"
+    },
+    {
+      "authors": [
+        "Shirley Ann Grau"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1965",
+      "category": "Fiction",
+      "position": "1965",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/shirley-ann-grau"
+      },
+      "title": "The Keepers Of The House"
+    },
+    {
+      "authors": [
+        "Katherine Anne Porter"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1966",
+      "category": "Fiction",
+      "position": "1966",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/katherine-anne-porter"
+      },
+      "title": "Collected Stories"
+    },
+    {
+      "authors": [
+        "Bernard Malamud"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1967",
+      "category": "Fiction",
+      "position": "1967",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/bernard-malamud"
+      },
+      "title": "The Fixer"
+    },
+    {
+      "authors": [
+        "William Styron"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1968",
+      "category": "Fiction",
+      "position": "1968",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/william-styron"
+      },
+      "title": "The Confessions of Nat Turner"
+    },
+    {
+      "authors": [
+        "N. Scott Momaday"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1969",
+      "category": "Fiction",
+      "position": "1969",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/n-scott-momaday"
+      },
+      "title": "House Made of Dawn"
+    },
+    {
+      "authors": [
+        "Jean Stafford"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1970",
+      "category": "Fiction",
+      "position": "1970",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/jean-stafford"
+      },
+      "title": "Collected Stories"
+    },
+    {
+      "authors": [
+        "Wallace Stegner"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1972",
+      "category": "Fiction",
+      "position": "1972",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/wallace-stegner"
+      },
+      "title": "Angle of Repose"
+    },
+    {
+      "authors": [
+        "Eudora Welty"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1973",
+      "category": "Fiction",
+      "position": "1973",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/eudora-welty"
+      },
+      "title": "The Optimist's Daughter"
+    },
+    {
+      "authors": [
+        "Michael Shaara"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1975",
+      "category": "Fiction",
+      "position": "1975",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/michael-shaara"
+      },
+      "title": "The Killer Angels"
+    },
+    {
+      "authors": [
+        "Saul Bellow"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1976",
+      "category": "Fiction",
+      "position": "1976",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/saul-bellow"
+      },
+      "title": "Humboldt's Gift"
+    },
+    {
+      "authors": [
+        "James Alan McPherson"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1978",
+      "category": "Fiction",
+      "position": "1978",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/james-alan-mcpherson"
+      },
+      "title": "Elbow Room"
+    },
+    {
+      "authors": [
+        "John Cheever"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1979",
+      "category": "Fiction",
+      "position": "1979",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/john-cheever"
+      },
+      "title": "The Stories of John Cheever"
+    },
+    {
+      "authors": [
+        "Norman Mailer"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1980",
+      "category": "Fiction",
+      "position": "1980",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/norman-mailer-0"
+      },
+      "title": "The Executioner's Song"
+    },
+    {
+      "authors": [
+        "Philip Roth"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1980",
+      "category": "Fiction",
+      "position": "1980.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/philip-roth"
+      },
+      "title": "The Ghost Writer"
+    },
+    {
+      "authors": [
+        "William Wharton"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1980",
+      "category": "Fiction",
+      "position": "1980.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/william-wharton"
+      },
+      "title": "Birdy"
+    },
+    {
+      "authors": [
+        "John Kennedy Toole"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1981",
+      "category": "Fiction",
+      "position": "1981",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/john-kennedy-toole"
+      },
+      "title": "A Confederacy of Dunces"
+    },
+    {
+      "authors": [
+        "Frederick Buechner"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1981",
+      "category": "Fiction",
+      "position": "1981.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/frederick-buechner"
+      },
+      "title": "Godric"
+    },
+    {
+      "authors": [
+        "William Maxwell"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1981",
+      "category": "Fiction",
+      "position": "1981.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/william-maxwell"
+      },
+      "title": "So Long, See You Tomorrow"
+    },
+    {
+      "authors": [
+        "John Updike"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1982",
+      "category": "Fiction",
+      "position": "1982",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/john-updike"
+      },
+      "title": "Rabbit Is Rich"
+    },
+    {
+      "authors": [
+        "Marilynne Robinson"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1982",
+      "category": "Fiction",
+      "position": "1982.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/marilynne-robinson"
+      },
+      "title": "Housekeeping"
+    },
+    {
+      "authors": [
+        "Robert Stone"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1982",
+      "category": "Fiction",
+      "position": "1982.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/robert-stone"
+      },
+      "title": "A Flag for Sunrise"
+    },
+    {
+      "authors": [
+        "Alice Walker"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1983",
+      "category": "Fiction",
+      "position": "1983",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/alice-walker"
+      },
+      "title": "The Color Purple"
+    },
+    {
+      "authors": [
+        "Chaim Grade"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1983",
+      "category": "Fiction",
+      "position": "1983.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/chaim-grade"
+      },
+      "title": "Rabbis and Wives"
+    },
+    {
+      "authors": [
+        "Anne Tyler"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1983",
+      "category": "Fiction",
+      "position": "1983.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/anne-tyler"
+      },
+      "title": "Dinner at the Homesick Restaurant"
+    },
+    {
+      "authors": [
+        "William Kennedy"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1984",
+      "category": "Fiction",
+      "position": "1984",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/william-kennedy"
+      },
+      "title": "Ironweed"
+    },
+    {
+      "authors": [
+        "Thomas Berger"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1984",
+      "category": "Fiction",
+      "position": "1984.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/thomas-berger"
+      },
+      "title": "The Feud"
+    },
+    {
+      "authors": [
+        "Raymond Carver"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1984",
+      "category": "Fiction",
+      "position": "1984.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/raymond-carver"
+      },
+      "title": "Cathedral"
+    },
+    {
+      "authors": [
+        "Alison Lurie"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1985",
+      "category": "Fiction",
+      "position": "1985",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/alison-lurie"
+      },
+      "title": "Foreign Affairs"
+    },
+    {
+      "authors": [
+        "Diana O'Hehir"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1985",
+      "category": "Fiction",
+      "position": "1985.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/diana-ohehir"
+      },
+      "title": "I Wish This War Were Over"
+    },
+    {
+      "authors": [
+        "Douglas Unger"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1985",
+      "category": "Fiction",
+      "position": "1985.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/douglas-unger"
+      },
+      "title": "Leaving the Land"
+    },
+    {
+      "authors": [
+        "Larry McMurtry"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1986",
+      "category": "Fiction",
+      "position": "1986",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/larry-mcmurtry"
+      },
+      "title": "Lonesome Dove"
+    },
+    {
+      "authors": [
+        "Russell Banks"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1986",
+      "category": "Fiction",
+      "position": "1986.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/russell-banks"
+      },
+      "title": "Continental Drift"
+    },
+    {
+      "authors": [
+        "Anne Tyler"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1986",
+      "category": "Fiction",
+      "position": "1986.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/anne-tyler-0"
+      },
+      "title": "The Accidental Tourist"
+    },
+    {
+      "authors": [
+        "Peter Taylor"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1987",
+      "category": "Fiction",
+      "position": "1987",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/peter-taylor"
+      },
+      "title": "A Summons to Memphis"
+    },
+    {
+      "authors": [
+        "Donald Barthelme"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1987",
+      "category": "Fiction",
+      "position": "1987.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/donald-barthelme"
+      },
+      "title": "Paradise"
+    },
+    {
+      "authors": [
+        "Norman Rush"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1987",
+      "category": "Fiction",
+      "position": "1987.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/norman-rush"
+      },
+      "title": "Whites"
+    },
+    {
+      "authors": [
+        "Toni Morrison"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1988",
+      "category": "Fiction",
+      "position": "1988",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/toni-morrison"
+      },
+      "title": "Beloved"
+    },
+    {
+      "authors": [
+        "Diane Johnson"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1988",
+      "category": "Fiction",
+      "position": "1988.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/diane-johnson-0"
+      },
+      "title": "Persian Nights"
+    },
+    {
+      "authors": [
+        "Alice McDermott"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1988",
+      "category": "Fiction",
+      "position": "1988.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/alice-mcdermott-0"
+      },
+      "title": "That Night"
+    },
+    {
+      "authors": [
+        "Anne Tyler"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1989",
+      "category": "Fiction",
+      "position": "1989",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/anne-tyler"
+      },
+      "title": "Breathing Lessons"
+    },
+    {
+      "authors": [
+        "Raymond Carver"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1989",
+      "category": "Fiction",
+      "position": "1989.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/raymond-carver-0"
+      },
+      "title": "Where I'm Calling From"
+    },
+    {
+      "authors": [
+        "Oscar Hijuelos"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1990",
+      "category": "Fiction",
+      "position": "1990",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/oscar-hijuelos"
+      },
+      "title": "The Mambo Kings Play Songs of Love"
+    },
+    {
+      "authors": [
+        "E.L. Doctorow"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1990",
+      "category": "Fiction",
+      "position": "1990.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/el-doctorow"
+      },
+      "title": "Billy Bathgate"
+    },
+    {
+      "authors": [
+        "John Updike"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1991",
+      "category": "Fiction",
+      "position": "1991",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/john-updike-0"
+      },
+      "title": "Rabbit At Rest"
+    },
+    {
+      "authors": [
+        "Linda Hogan"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1991",
+      "category": "Fiction",
+      "position": "1991.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/linda-hogan"
+      },
+      "title": "Mean Spirit"
+    },
+    {
+      "authors": [
+        "Tim O'Brien"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1991",
+      "category": "Fiction",
+      "position": "1991.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/tim-obrien"
+      },
+      "title": "The Things They Carried"
+    },
+    {
+      "authors": [
+        "Jane Smiley"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1992",
+      "category": "Fiction",
+      "position": "1992",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/jane-smiley"
+      },
+      "title": "A Thousand Acres"
+    },
+    {
+      "authors": [
+        "Don DeLillo"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1992",
+      "category": "Fiction",
+      "position": "1992.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/don-delillo"
+      },
+      "title": "Mao II"
+    },
+    {
+      "authors": [
+        "David Gates"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1992",
+      "category": "Fiction",
+      "position": "1992.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/david-gates"
+      },
+      "title": "Jernigan"
+    },
+    {
+      "authors": [
+        "Robert M. Pirsig"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1992",
+      "category": "Fiction",
+      "position": "1992.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/robert-m-pirsig"
+      },
+      "title": "Lila: An Inquiry into Morals"
+    },
+    {
+      "authors": [
+        "Robert Olen Butler"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1993",
+      "category": "Fiction",
+      "position": "1993",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/robert-olen-butler"
+      },
+      "title": "A Good Scent from a Strange Mountain"
+    },
+    {
+      "authors": [
+        "Alice McDermott"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1993",
+      "category": "Fiction",
+      "position": "1993.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/alice-mcdermott-1"
+      },
+      "title": "At Weddings and Wakes"
+    },
+    {
+      "authors": [
+        "Joyce Carol Oates"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1993",
+      "category": "Fiction",
+      "position": "1993.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/joyce-carol-oates"
+      },
+      "title": "Black Water"
+    },
+    {
+      "authors": [
+        "E. Annie Proulx"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1994",
+      "category": "Fiction",
+      "position": "1994",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/e-annie-proulx"
+      },
+      "title": "The Shipping News"
+    },
+    {
+      "authors": [
+        "Reynolds Price"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1994",
+      "category": "Fiction",
+      "position": "1994.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/reynolds-price-0"
+      },
+      "title": "The Collected Stories"
+    },
+    {
+      "authors": [
+        "Philip Roth"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1994",
+      "category": "Fiction",
+      "position": "1994.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/philip-roth-0"
+      },
+      "title": "Operation Shylock: A Confession"
+    },
+    {
+      "authors": [
+        "Carol Shields"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1995",
+      "category": "Fiction",
+      "position": "1995",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/carol-shields"
+      },
+      "title": "The Stone Diaries"
+    },
+    {
+      "authors": [
+        "Joyce Carol Oates"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1995",
+      "category": "Fiction",
+      "position": "1995.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/joyce-carol-oates-0"
+      },
+      "title": "What I Lived For"
+    },
+    {
+      "authors": [
+        "Grace Paley"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1995",
+      "category": "Fiction",
+      "position": "1995.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/grace-paley"
+      },
+      "title": "The Collected Stories"
+    },
+    {
+      "authors": [
+        "Richard Ford"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1996",
+      "category": "Fiction",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/richard-ford"
+      },
+      "title": "Independence Day"
+    },
+    {
+      "authors": [
+        "Oscar Hijuelos"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1996",
+      "category": "Fiction",
+      "position": "1996.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/oscar-hijuelos"
+      },
+      "title": "Mr. Ives' Christmas"
+    },
+    {
+      "authors": [
+        "Philip Roth"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1996",
+      "category": "Fiction",
+      "position": "1996.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/philip-roth-1"
+      },
+      "title": "Sabbath's Theater"
+    },
+    {
+      "authors": [
+        "Steven Millhauser"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1997",
+      "category": "Fiction",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/steven-millhauser"
+      },
+      "title": "Martin Dressler: The Tale of an American Dreamer"
+    },
+    {
+      "authors": [
+        "Ursula K. LeGuin"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1997",
+      "category": "Fiction",
+      "position": "1997.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/ursula-k-leguin"
+      },
+      "title": "Unlocking the Air and Other Stories"
+    },
+    {
+      "authors": [
+        "Joanna Scott"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1997",
+      "category": "Fiction",
+      "position": "1997.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/joanna-scott"
+      },
+      "title": "The Manikin"
+    },
+    {
+      "authors": [
+        "Philip Roth"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1998",
+      "category": "Fiction",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/philip-roth"
+      },
+      "title": "American Pastoral"
+    },
+    {
+      "authors": [
+        "Don DeLillo"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1998",
+      "category": "Fiction",
+      "position": "1998.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/don-delillo-0"
+      },
+      "title": "Underworld"
+    },
+    {
+      "authors": [
+        "Robert Stone"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1998",
+      "category": "Fiction",
+      "position": "1998.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/robert-stone-0"
+      },
+      "title": "Bear and His Daughter: Stories"
+    },
+    {
+      "authors": [
+        "Michael Cunningham"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1999",
+      "category": "Fiction",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/michael-cunningham"
+      },
+      "title": "The Hours"
+    },
+    {
+      "authors": [
+        "Russell Banks"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1999",
+      "category": "Fiction",
+      "position": "1999.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/russell-banks-0"
+      },
+      "title": "Cloudsplitter"
+    },
+    {
+      "authors": [
+        "Barbara Kingsolver"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "1999",
+      "category": "Fiction",
+      "position": "1999.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/barbara-kingsolver"
+      },
+      "title": "The Poisonwood Bible"
+    },
+    {
+      "authors": [
+        "Jhumpa Lahiri"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2000",
+      "category": "Fiction",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/jhumpa-lahiri"
+      },
+      "title": "Interpreter of Maladies"
+    },
+    {
+      "authors": [
+        "Annie Proulx"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2000",
+      "category": "Fiction",
+      "position": "2000.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/annie-proulx"
+      },
+      "title": "Close Range: Wyoming Stories"
+    },
+    {
+      "authors": [
+        "Ha Jin"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2000",
+      "category": "Fiction",
+      "position": "2000.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/ha-jin"
+      },
+      "title": "Waiting"
+    },
+    {
+      "authors": [
+        "Michael Chabon"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2001",
+      "category": "Fiction",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/michael-chabon"
+      },
+      "title": "The Amazing Adventures of Kavalier & Clay"
+    },
+    {
+      "authors": [
+        "Joyce Carol Oates"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2001",
+      "category": "Fiction",
+      "position": "2001.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/joyce-carol-oates-1"
+      },
+      "title": "Blonde"
+    },
+    {
+      "authors": [
+        "Joy Williams"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2001",
+      "category": "Fiction",
+      "position": "2001.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/joy-williams"
+      },
+      "title": "The Quick and the Dead"
+    },
+    {
+      "authors": [
+        "Richard Russo"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2002",
+      "category": "Fiction",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/richard-russo"
+      },
+      "title": "Empire Falls"
+    },
+    {
+      "authors": [
+        "Jonathan Franzen"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2002",
+      "category": "Fiction",
+      "position": "2002.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/jonathan-franzen"
+      },
+      "title": "The Corrections"
+    },
+    {
+      "authors": [
+        "Colson Whitehead"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2002",
+      "category": "Fiction",
+      "position": "2002.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/colson-whitehead"
+      },
+      "title": "John Henry Days"
+    },
+    {
+      "authors": [
+        "Jeffrey Eugenides"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2003",
+      "category": "Fiction",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/jeffrey-eugenides"
+      },
+      "title": "Middlesex"
+    },
+    {
+      "authors": [
+        "Andrea Barrett"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2003",
+      "category": "Fiction",
+      "position": "2003.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/andrea-barrett"
+      },
+      "title": "Servants of the Map: Stories"
+    },
+    {
+      "authors": [
+        "Adam Haslett"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2003",
+      "category": "Fiction",
+      "position": "2003.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/adam-haslett"
+      },
+      "title": "You Are Not a Stranger Here"
+    },
+    {
+      "authors": [
+        "Edward P. Jones"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2004",
+      "category": "Fiction",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/edward-p-jones"
+      },
+      "title": "The Known World"
+    },
+    {
+      "authors": [
+        "Susan Choi"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2004",
+      "category": "Fiction",
+      "position": "2004.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/susan-choi"
+      },
+      "title": "American Woman"
+    },
+    {
+      "authors": [
+        "Marianne Wiggins"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2004",
+      "category": "Fiction",
+      "position": "2004.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/marianne-wiggins"
+      },
+      "title": "Evidence of Things Unseen"
+    },
+    {
+      "authors": [
+        "Marilynne Robinson"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2005",
+      "category": "Fiction",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/marilynne-robinson"
+      },
+      "title": "Gilead"
+    },
+    {
+      "authors": [
+        "Ha Jin"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2005",
+      "category": "Fiction",
+      "position": "2005.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/ha-jin-0"
+      },
+      "title": "War Trash"
+    },
+    {
+      "authors": [
+        "Ward Just"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2005",
+      "category": "Fiction",
+      "position": "2005.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/ward-just"
+      },
+      "title": "An Unfinished Season"
+    },
+    {
+      "authors": [
+        "Geraldine Brooks"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2006",
+      "category": "Fiction",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/geraldine-brooks"
+      },
+      "title": "March"
+    },
+    {
+      "authors": [
+        "E.L. Doctorow"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2006",
+      "category": "Fiction",
+      "position": "2006.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/el-doctorow-0"
+      },
+      "title": "The March"
+    },
+    {
+      "authors": [
+        "Lee Martin"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2006",
+      "category": "Fiction",
+      "position": "2006.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/lee-martin"
+      },
+      "title": "The Bright Forever"
+    },
+    {
+      "authors": [
+        "Cormac McCarthy"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2007",
+      "category": "Fiction",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/cormac-mccarthy"
+      },
+      "title": "The Road"
+    },
+    {
+      "authors": [
+        "Alice McDermott"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2007",
+      "category": "Fiction",
+      "position": "2007.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/alice-mcdermott"
+      },
+      "title": "After This"
+    },
+    {
+      "authors": [
+        "Richard Powers"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2007",
+      "category": "Fiction",
+      "position": "2007.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/richard-powers"
+      },
+      "title": "The Echo Maker"
+    },
+    {
+      "authors": [
+        "Junot Diaz"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2008",
+      "category": "Fiction",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/junot-diaz"
+      },
+      "title": "The Brief Wondrous Life of Oscar Wao"
+    },
+    {
+      "authors": [
+        "Denis Johnson"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2008",
+      "category": "Fiction",
+      "position": "2008.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/denis-johnson"
+      },
+      "title": "Tree of Smoke"
+    },
+    {
+      "authors": [
+        "Lore Segal"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2008",
+      "category": "Fiction",
+      "position": "2008.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/lore-segal"
+      },
+      "title": "Shakespeare's Kitchen"
+    },
+    {
+      "authors": [
+        "Elizabeth Strout"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2009",
+      "category": "Fiction",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/elizabeth-strout"
+      },
+      "title": "Olive Kitteridge"
+    },
+    {
+      "authors": [
+        "Louise Erdrich"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2009",
+      "category": "Fiction",
+      "position": "2009.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/louise-erdrich"
+      },
+      "title": "The Plague of Doves"
+    },
+    {
+      "authors": [
+        "Christine Schutt"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2009",
+      "category": "Fiction",
+      "position": "2009.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/christine-schutt"
+      },
+      "title": "All Souls"
+    },
+    {
+      "authors": [
+        "Paul Harding"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2010",
+      "category": "Fiction",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/paul-harding"
+      },
+      "title": "Tinkers"
+    },
+    {
+      "authors": [
+        "Lydia Millet"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2010",
+      "category": "Fiction",
+      "position": "2010.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/lydia-millet"
+      },
+      "title": "Love in Infant Monkeys"
+    },
+    {
+      "authors": [
+        "Daniyal Mueenuddin"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2010",
+      "category": "Fiction",
+      "position": "2010.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/daniyal-mueenuddin"
+      },
+      "title": "In Other Rooms, Other Wonders"
+    },
+    {
+      "authors": [
+        "Jennifer Egan"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2011",
+      "category": "Fiction",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/jennifer-egan"
+      },
+      "title": "A Visit from the Goon Squad"
+    },
+    {
+      "authors": [
+        "Jonathan Dee"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2011",
+      "category": "Fiction",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/jonathan-dee"
+      },
+      "title": "The Privileges"
+    },
+    {
+      "authors": [
+        "Chang-rae Lee"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2011",
+      "category": "Fiction",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/chang-rae-lee"
+      },
+      "title": "The Surrendered"
+    },
+    {
+      "authors": [
+        "Denis Johnson"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2012",
+      "category": "Fiction",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/denis-johnson-0"
+      },
+      "title": "Train Dreams"
+    },
+    {
+      "authors": [
+        "Karen Russell"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2012",
+      "category": "Fiction",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/karen-russell"
+      },
+      "title": "Swamplandia!"
+    },
+    {
+      "authors": [
+        "David Foster Wallace"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2012",
+      "category": "Fiction",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/david-foster-wallace"
+      },
+      "title": "The Pale King"
+    },
+    {
+      "authors": [
+        "Adam Johnson"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2013",
+      "category": "Fiction",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/adam-johnson"
+      },
+      "title": "The Orphan Master's Son"
+    },
+    {
+      "authors": [
+        "Nathan Englander"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2013",
+      "category": "Fiction",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/nathan-englander"
+      },
+      "title": "What We Talk About When We Talk About Anne Frank"
+    },
+    {
+      "authors": [
+        "Eowyn Ivey"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2013",
+      "category": "Fiction",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/eowyn-ivey"
+      },
+      "title": "The Snow Child"
+    },
+    {
+      "authors": [
+        "Donna Tartt"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2014",
+      "category": "Fiction",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/donna-tartt"
+      },
+      "title": "The Goldfinch"
+    },
+    {
+      "authors": [
+        "Philipp Meyer"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2014",
+      "category": "Fiction",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/philipp-meyer"
+      },
+      "title": "The Son"
+    },
+    {
+      "authors": [
+        "Bob Shacochis"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2014",
+      "category": "Fiction",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/bob-shacochis"
+      },
+      "title": "The Woman Who Lost Her Soul"
+    },
+    {
+      "authors": [
+        "Anthony Doerr"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2015",
+      "category": "Fiction",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/anthony-doerr"
+      },
+      "title": "All the Light We Cannot See"
+    },
+    {
+      "authors": [
+        "Richard Ford"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2015",
+      "category": "Fiction",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/richard-ford"
+      },
+      "title": "Let Me Be Frank With You"
+    },
+    {
+      "authors": [
+        "Laila Lalami"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2015",
+      "category": "Fiction",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/laila-lalami"
+      },
+      "title": "The Moor's Account"
+    },
+    {
+      "authors": [
+        "Joyce Carol Oates"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2015",
+      "category": "Fiction",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/joyce-carol-oates-2"
+      },
+      "title": "Lovely, Dark, Deep"
+    },
+    {
+      "authors": [
+        "Viet Thanh Nguyen"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2016",
+      "category": "Fiction",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/viet-thanh-nguyen"
+      },
+      "title": "The Sympathizer"
+    },
+    {
+      "authors": [
+        "Kelly Link"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2016",
+      "category": "Fiction",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/kelly-link"
+      },
+      "title": "Get in Trouble: Stories"
+    },
+    {
+      "authors": [
+        "Margaret Verble"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2016",
+      "category": "Fiction",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/margaret-verble"
+      },
+      "title": "Maud's Line"
+    },
+    {
+      "authors": [
+        "Colson Whitehead"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2017",
+      "category": "Fiction",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/colson-whitehead"
+      },
+      "title": "The Underground Railroad"
+    },
+    {
+      "authors": [
+        "Adam Haslett"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2017",
+      "category": "Fiction",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/adam-haslett-0"
+      },
+      "title": "Imagine Me Gone"
+    },
+    {
+      "authors": [
+        "C. E. Morgan"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2017",
+      "category": "Fiction",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/c-e-morgan"
+      },
+      "title": "The Sport of Kings"
+    },
+    {
+      "authors": [
+        "Andrew Sean Greer"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2018",
+      "category": "Fiction",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/andrew-sean-greer"
+      },
+      "title": "Less"
+    },
+    {
+      "authors": [
+        "Elif Batuman"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2018",
+      "category": "Fiction",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/elif-batuman"
+      },
+      "title": "The Idiot"
+    },
+    {
+      "authors": [
+        "Hernan Diaz"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2018",
+      "category": "Fiction",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/hernan-diaz"
+      },
+      "title": "In the Distance"
+    },
+    {
+      "authors": [
+        "Richard Powers"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2019",
+      "category": "Fiction",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/richard-powers"
+      },
+      "title": "The Overstory"
+    },
+    {
+      "authors": [
+        "Rebecca Makkai"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2019",
+      "category": "Fiction",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/rebecca-makkai"
+      },
+      "title": "The Great Believers"
+    },
+    {
+      "authors": [
+        "Tommy Orange"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2019",
+      "category": "Fiction",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/tommy-orange"
+      },
+      "title": "There There"
+    },
+    {
+      "authors": [
+        "Colson Whitehead"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2020",
+      "category": "Fiction",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/colson-whitehead-0"
+      },
+      "title": "The Nickel Boys"
+    },
+    {
+      "authors": [
+        "Ben Lerner"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2020",
+      "category": "Fiction",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/ben-lerner"
+      },
+      "title": "The Topeka School"
+    },
+    {
+      "authors": [
+        "Ann Patchett"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2020",
+      "category": "Fiction",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/ann-patchett"
+      },
+      "title": "The Dutch House"
+    },
+    {
+      "authors": [
+        "Louise Erdrich"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2021",
+      "category": "Fiction",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/louise-erdrich"
+      },
+      "title": "The Night Watchman"
+    },
+    {
+      "authors": [
+        "Percival Everett"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2021",
+      "category": "Fiction",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/percival-everett"
+      },
+      "title": "Telephone"
+    },
+    {
+      "authors": [
+        "Daniel Mason"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2021",
+      "category": "Fiction",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/daniel-mason"
+      },
+      "title": "A Registry of My Passage Upon the Earth"
+    },
+    {
+      "authors": [
+        "Joshua Cohen"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2022",
+      "category": "Fiction",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/joshua-cohen"
+      },
+      "title": "The Netanyahus: An Account of a Minor and Ultimately Even Negligible Episode in the History of a Very Famous Family"
+    },
+    {
+      "authors": [
+        "Gayl Jones"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2022",
+      "category": "Fiction",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/gayl-jones"
+      },
+      "title": "Palmares"
+    },
+    {
+      "authors": [
+        "Francisco Goldman"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2022",
+      "category": "Fiction",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/francisco-goldman"
+      },
+      "title": "Monkey Boy"
+    },
+    {
+      "authors": [
+        "Hernan Diaz"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2023",
+      "category": "Fiction",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/hernan-diaz"
+      },
+      "title": "Trust"
+    },
+    {
+      "authors": [
+        "Barbara Kingsolver"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2023",
+      "category": "Fiction",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/barbara-kingsolver"
+      },
+      "title": "Demon Copperhead"
+    },
+    {
+      "authors": [
+        "Vauhini Vara"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2023",
+      "category": "Fiction",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/vauhini-vara"
+      },
+      "title": "The Immortal King Rao"
+    },
+    {
+      "authors": [
+        "Jayne Anne Phillips"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2024",
+      "category": "Fiction",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/jayne-anne-phillips"
+      },
+      "title": "Night Watch"
+    },
+    {
+      "authors": [
+        "Yiyun Li"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2024",
+      "category": "Fiction",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/yiyun-li"
+      },
+      "title": "Wednesday\u2019s Child"
+    },
+    {
+      "authors": [
+        "Ed Park"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2024",
+      "category": "Fiction",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/ed-park"
+      },
+      "title": "Same Bed Different Dreams"
+    },
+    {
+      "authors": [
+        "Percival Everett"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2025",
+      "category": "Fiction",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/node/percival-everett-0"
+      },
+      "title": "James"
+    },
+    {
+      "authors": [
+        "Gayl Jones"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2025",
+      "category": "Fiction",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/node/gayl-jones-0"
+      },
+      "title": "The Unicorn Woman"
+    },
+    {
+      "authors": [
+        "Stacey Levine"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2025",
+      "category": "Fiction",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/node/stacey-levine"
+      },
+      "title": "Mice 1961"
+    },
+    {
+      "authors": [
+        "Rita Bullwinkel"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2025",
+      "category": "Fiction",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/node/rita-bullwinkel"
+      },
+      "title": "Headshot: A Novel"
+    },
+    {
+      "authors": [
+        "Daniel Kraus"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2026",
+      "category": "Fiction",
+      "position": "2026",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/winners/daniel-kraus"
+      },
+      "title": "Angel Down"
+    },
+    {
+      "authors": [
+        "Katie Kitamura"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2026",
+      "category": "Fiction",
+      "position": "2026.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/katie-kitamura"
+      },
+      "title": "Audition"
+    },
+    {
+      "authors": [
+        "Torrey Peters"
+      ],
+      "award": "Pulitzer Prize",
+      "award_year": "2026",
+      "category": "Fiction",
+      "position": "2026.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.pulitzer.org/finalists/torrey-peters"
+      },
+      "title": "Stag Dance: A Quartet"
+    }
+  ],
+  "fetched_at": "2026-11-02T05:06:31Z",
+  "list_id": "pulitzer_prize_fiction",
+  "list_name": "Pulitzer Prize - Fiction",
+  "match_series": false,
+  "notes": [],
+  "parser": "pulitzer_prize_fiction",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Pulitzer Prize - Fiction",
+    "source_id": "pulitzer_prize_fiction",
+    "url": "https://www.pulitzer.org/prize-winners-by-category/219"
+  }
+}

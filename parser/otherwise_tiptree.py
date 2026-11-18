@@ -14,6 +14,7 @@ Maintenance notes:
 """
 
 import re
+import datetime
 
 from bs4 import BeautifulSoup
 
@@ -22,11 +23,16 @@ try:
     author_list, entry_source_object, imported_entry, ListParserBase,
     parsed_source)
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
+  from calibre_plugins.list_switchboard.parser.incremental import (
+    ParsedUnitCache, project_source_rows, restore_source_rows)
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
 except ImportError:
   from .base import (
     author_list, entry_source_object, imported_entry, ListParserBase,
     parsed_source)
   from .generic import position_sort_key
+  from .incremental import ParsedUnitCache, project_source_rows, restore_source_rows
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 
 AWARD_NAME = 'Otherwise/Tiptree Award'
@@ -66,7 +72,8 @@ class OtherwiseTiptreeAwardsParser(ListParserBase):
     non-winner rows.
   """
 
-  def parse(self, overview_html, base_url, fetch_url=None, log=None, progress=None):
+  def parse(self, overview_html, base_url, fetch_url=None, log=None, progress=None,
+            cached_parsed=None, incremental_update=False):
     page_specs = [
       (OTHERWISE_URL, overview_html),
       (TIPTREE_URL, None),
@@ -75,23 +82,63 @@ class OtherwiseTiptreeAwardsParser(ListParserBase):
     ]
     rows = []
     notes = []
+    sources = []
+    cache = ParsedUnitCache('otherwise-tiptree-projections-v1',
+      f'{base_url}|{tuple(url for url, _html in page_specs)}', cached_parsed, incremental_update)
     _progress(progress, 0, len(page_specs), 'Preparing Otherwise/Tiptree pages...')
     for index, (url, html) in enumerate(page_specs, start=1):
       _progress(progress, index, len(page_specs), f'Fetching Otherwise/Tiptree page {index}...')
+      old_unit = cache.old_units.get(url) or {}
+      old_metadata = old_unit.get('metadata') or {}
+      old_rows = None
+      try:
+        old_rows = restore_source_rows(cache.previous(url), old_metadata)
+        if any(not str(row.get('award_year', '')).isdigit() or
+            not row.get('title') or not isinstance(row.get('author'), str) or
+            row.get('result') not in RESULT_ORDER or row.get('source_url') != url for row in old_rows):
+          raise ValueError('Invalid original Otherwise/Tiptree rows.')
+      except (ValueError, TypeError):
+        old_rows = None
+      if (url in (TIPTREE_URL, TIPTREE_NOMINEES_URL) and
+          old_unit.get('complete') is True and old_unit.get('revision') == 2019 and
+          old_metadata.get('closed') is True and old_rows and
+          max(int(row['award_year']) for row in old_rows) <= 2019 < datetime.datetime.now().year):
+        rows.extend(old_rows)
+        sources.append((url, old_rows, True))
+        continue
       try:
         page_html = html if html is not None else fetch_url(url)
+        parsed_rows = _parse_otherwise_page(page_html, url)
+        if not parsed_rows:
+          raise ValueError('No recognizable award book rows were found.')
+      except (ImportCancelledError, CamoufoxRequiredError):
+        raise
       except Exception as err:
         notes.append(f'Otherwise/Tiptree page could not be fetched: {url}: {err}')
         _log(log, 'fetch-failed', {'url': url, 'error': str(err)})
+        retained = old_rows or []
+        rows.extend(retained)
+        sources.append((url, retained, False))
         continue
-      parsed_rows = _parse_otherwise_page(page_html, url)
       rows.extend(parsed_rows)
+      sources.append((url, parsed_rows, True))
       _log(log, 'page-parsed', {'url': url, 'entries': len(parsed_rows)})
     entries = _otherwise_entries(rows)
+    entries = sorted(entries, key=lambda item: position_sort_key(item.get('position', '')))
+    for url, source_rows, complete in sources:
+      projected, metadata = project_source_rows(source_rows, entries,
+        lambda row: (str(row['award_year']), _normalize_identity(row['title'])))
+      metadata['closed'] = bool(url in (TIPTREE_URL, TIPTREE_NOMINEES_URL) and source_rows and
+        max(int(row['award_year']) for row in source_rows) <= 2019)
+      cache.put(url, projected, revision=2019 if metadata['closed'] else None,
+        complete=complete, metadata=metadata)
+    state = cache.state(entries)
+    state['discovery'] = {'refresh_units': [OTHERWISE_URL, OTHERWISE_NOMINEES_URL]}
     return {
       'name': 'Otherwise/Tiptree - Books and Series',
       'source': parsed_source('Otherwise/Tiptree - Books and Series', OTHERWISE_URL),
-      'entries': sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
+      'entries': entries,
+      'incremental_state': state,
       'notes': notes,
       'match_series': False,
     }

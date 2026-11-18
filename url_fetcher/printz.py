@@ -11,6 +11,7 @@ except ImportError:
 
 class UrlFetcherMichaelLPrintzAward(UrlFetcherGeneric):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'michael_l_printz_award'
   NAME = 'Michael L. Printz Award'
   URL = HISTORY_URL
@@ -32,5 +33,6 @@ class UrlFetcherMichaelLPrintzAward(UrlFetcherGeneric):
       self.NAME,
       fetch_url=fetch_url,
       current_year=kwargs.get('current_year'),
+      cached_parsed=kwargs.get('cached_parsed'),incremental_update=kwargs.get('incremental_update',False),
       log=log,
       progress=progress)

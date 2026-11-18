@@ -52,6 +52,8 @@ class SFADBISFDYAwardFallbackMixin:
   USE_ISFDB_FALLBACK = False
   USE_SFADB_SOURCE = True
   RESOLVE_ISFDB_ORIGINAL_WORKS = False
+  ENABLE_SFADB_INCREMENTAL = False
+  ENABLE_ISFDB_INCREMENTAL = False
 
   def create_isfdb_parser(self):
     parser = ISFDBAwardParserBase()
@@ -76,7 +78,7 @@ class SFADBISFDYAwardFallbackMixin:
         'SFADB',
         self.URL,
         lambda html, _url, **kwargs: self.parse(html, **kwargs),
-        source_rank=0))
+        source_rank=0, supports_incremental=self.ENABLE_SFADB_INCREMENTAL))
     isfdb_url = self.isfdb_url()
     if isfdb_url:
       attempts.append(ISFDBSourceAttempt(
@@ -85,7 +87,8 @@ class SFADBISFDYAwardFallbackMixin:
         lambda html, url, **kwargs: self.parse_isfdb_source(
           html, url, original_work_cache=original_work_cache, **kwargs),
         source_rank=len(attempts),
-        page_validator=self.isfdb_page_usable))
+        page_validator=self.isfdb_page_usable,
+        supports_incremental=self.ENABLE_ISFDB_INCREMENTAL))
     return tuple(attempts)
 
   def source_choices(self):
@@ -95,7 +98,7 @@ class SFADBISFDYAwardFallbackMixin:
       self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
       before_fetch=None, after_fetch=None, before_parse=None,
       force_fallback_level=0, disable_fallbacks=False, source_choice=None,
-      original_work_cache=None):
+      original_work_cache=None, cached_parsed=None, incremental_update=False):
     attempts = (self.source_attempts(original_work_cache=original_work_cache)
       if self.RESOLVE_ISFDB_ORIGINAL_WORKS else self.source_attempts())
     parsed = SourceFallbackRunner(
@@ -109,7 +112,8 @@ class SFADBISFDYAwardFallbackMixin:
         before_parse=before_parse,
         force_fallback_level=force_fallback_level,
         disable_fallbacks=disable_fallbacks,
-        source_choice=source_choice)
+        source_choice=source_choice, cached_parsed=cached_parsed,
+        incremental_update=incremental_update)
     parsed['match_series'] = self.options.get('match_series', True)
     return parsed
 
@@ -137,12 +141,23 @@ class SFADBISFDYAwardFallbackMixin:
 
   def parse_isfdb_source(
       self, html, base_url, fetch_url=None, log=None, progress=None,
-      original_work_cache=None):
+      original_work_cache=None, cached_parsed=None, incremental_update=False):
     award_progress = progress
     if self.RESOLVE_ISFDB_ORIGINAL_WORKS and progress is not None:
       award_progress = lambda _done, _total, message: progress(0, 1, message)
-    parsed = self.parse_isfdb_award_type(
-      html, base_url, fetch_url=fetch_url, log=log, progress=award_progress)
+    if self.ENABLE_ISFDB_INCREMENTAL and not self.ISFDB_CATEGORY_ID:
+      try:
+        from calibre_plugins.list_switchboard.parser.isfdb_incremental import parse_year_pages
+      except ImportError:
+        from parser.isfdb_incremental import parse_year_pages
+      parsed = parse_year_pages(self.create_isfdb_parser(), html, base_url,
+        self.NAME, self.CATEGORY, self.isfdb_category_aliases(), fetch_url=fetch_url,
+        log=log, progress=award_progress, cached_parsed=cached_parsed,
+        incremental_update=incremental_update)
+      parsed['notes'] = list(self.ISFDB_SOURCE_NOTES) + parsed['notes']
+    else:
+      parsed = self.parse_isfdb_award_type(
+        html, base_url, fetch_url=fetch_url, log=log, progress=award_progress)
     if self.RESOLVE_ISFDB_ORIGINAL_WORKS:
       from .isfdb_originals import resolve_original_works
       parsed = resolve_original_works(parsed, fetch_url,

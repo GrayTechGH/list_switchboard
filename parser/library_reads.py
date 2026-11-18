@@ -23,6 +23,11 @@ from bs4 import BeautifulSoup
 
 from .book_club_base import BookClubParserBase, MONTHS, normalize_line, parse_month
 from .base import parsed_source
+from .incremental import ParsedUnitCache
+try:
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
+except ImportError:
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 
 SHEET_CSV_URL = (
@@ -42,13 +47,15 @@ class LibraryReadsParser(BookClubParserBase):
   def parse(self, html, base_url, name=None, scope=None, fetch_url=None, **_kwargs):
     scope = scope or self.DEFAULT_SCOPE
     notes = []
+    csv_source = self.looks_like_csv(html)
     entries = self.entries_from_source(html, base_url, scope)
     if not entries and fetch_url is not None and self.looks_like_archive(html):
       try:
         csv_text = fetch_url(SHEET_CSV_URL)
         entries = self.entries_from_source(csv_text, SHEET_CSV_URL, scope)
-        notes.append(
-          'LibraryReads imported from the official public archive spreadsheet linked from the archive page.')
+        csv_source = self.looks_like_csv(csv_text)
+      except (ImportCancelledError, CamoufoxRequiredError):
+        raise
       except Exception as err:
         notes.append(f'LibraryReads public archive spreadsheet could not be fetched: {err}')
     if not entries and self.looks_like_archive(html):
@@ -56,13 +63,21 @@ class LibraryReadsParser(BookClubParserBase):
         'LibraryReads archive page exposes month/document links; no monthly rows were available in the fetched source.')
     notes.extend(self.notes_for_entries(entries))
     entries = self.positioned_entries(entries)
-    return {
+    if csv_source:
+      notes.insert(0, 'LibraryReads imported from the official public archive spreadsheet linked from the archive page.')
+    parsed = {
       'name': name or self.CLUB_NAME,
       'source': parsed_source(name or self.CLUB_NAME, base_url),
       'entries': entries,
       'notes': notes,
       'match_series': False,
     }
+    if csv_source and entries:
+      units = ParsedUnitCache('libraryreads-endpoint-v1', [base_url, scope])
+      units.put(SHEET_CSV_URL, entries, 'csv-v1')
+      parsed['incremental_state'] = units.state(entries)
+      parsed['incremental_state']['discovery'] = {'endpoint':SHEET_CSV_URL,'endpoint_verified':True}
+    return parsed
 
   def positioned_entries(self, entries):
     """Sort chronologically, then assign unique positions across all months."""

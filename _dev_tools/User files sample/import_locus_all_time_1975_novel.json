@@ -1,0 +1,486 @@
+{
+  "append_state": {
+    "entry_count": 42,
+    "last_entry_key": "rite of passage|alexei panshin",
+    "last_position": "41",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Frank Herbert"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "1",
+      "result": "ranked",
+      "title": "Dune"
+    },
+    {
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "2",
+      "result": "ranked",
+      "title": "Childhood's End"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "3",
+      "result": "ranked",
+      "title": "The Left Hand of Darkness"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "4",
+      "result": "ranked",
+      "title": "Stranger in a Strange Land"
+    },
+    {
+      "authors": [
+        "Walter M. Miller, Jr."
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "5",
+      "result": "ranked",
+      "title": "A Canticle for Leibowitz"
+    },
+    {
+      "authors": [
+        "Isaac Asimov"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "6",
+      "result": "ranked",
+      "title": "The Foundation Trilogy"
+    },
+    {
+      "authors": [
+        "Alfred Bester"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "7",
+      "result": "ranked",
+      "title": "The Stars My Destination"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "8",
+      "result": "ranked",
+      "title": "The Moon Is a Harsh Mistress"
+    },
+    {
+      "authors": [
+        "Theodore Sturgeon"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "9",
+      "result": "ranked",
+      "title": "More Than Human"
+    },
+    {
+      "authors": [
+        "Roger Zelazny"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "10",
+      "result": "ranked",
+      "title": "Lord of Light"
+    },
+    {
+      "authors": [
+        "John Brunner"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "11",
+      "result": "ranked",
+      "title": "Stand on Zanzibar"
+    },
+    {
+      "authors": [
+        "Larry Niven"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "12",
+      "result": "ranked",
+      "title": "Ringworld"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "13",
+      "result": "ranked",
+      "title": "The Dispossessed"
+    },
+    {
+      "authors": [
+        "Alfred Bester"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "14",
+      "result": "ranked",
+      "title": "The Demolished Man"
+    },
+    {
+      "authors": [
+        "J. R. R. Tolkien"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "15",
+      "result": "ranked",
+      "title": "The Lord of the Rings"
+    },
+    {
+      "authors": [
+        "Hal Clement"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "16",
+      "result": "ranked",
+      "title": "Mission of Gravity"
+    },
+    {
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "17",
+      "result": "ranked",
+      "title": "The City and the Stars"
+    },
+    {
+      "authors": [
+        "Philip Jos\u00e9 Farmer"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "17",
+      "result": "ranked",
+      "title": "To Your Scattered Bodies Go"
+    },
+    {
+      "authors": [
+        "Robert Silverberg"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "19",
+      "result": "ranked",
+      "title": "Dying Inside"
+    },
+    {
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "20",
+      "result": "ranked",
+      "title": "Rendezvous with Rama"
+    },
+    {
+      "authors": [
+        "H. G. Wells"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "20",
+      "result": "ranked",
+      "title": "The Time Machine"
+    },
+    {
+      "authors": [
+        "Philip K. Dick"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "22",
+      "result": "ranked",
+      "title": "The Man in the High Castle"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "22",
+      "result": "ranked",
+      "title": "Starship Troopers"
+    },
+    {
+      "authors": [
+        "Ray Bradbury"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "24",
+      "result": "ranked",
+      "title": "The Martian Chronicles"
+    },
+    {
+      "authors": [
+        "Frederik Pohl",
+        "C. M. Kornbluth"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "24",
+      "result": "ranked",
+      "title": "The Space Merchants"
+    },
+    {
+      "authors": [
+        "H. G. Wells"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "24",
+      "result": "ranked",
+      "title": "The War of the Worlds"
+    },
+    {
+      "authors": [
+        "James Blish"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "27",
+      "result": "ranked",
+      "title": "Cities in Flight"
+    },
+    {
+      "authors": [
+        "James Blish"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "28",
+      "result": "ranked",
+      "title": "A Case of Conscience"
+    },
+    {
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "28",
+      "result": "ranked",
+      "title": "2001: A Space Odyssey"
+    },
+    {
+      "authors": [
+        "Isaac Asimov"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "30",
+      "result": "ranked",
+      "title": "The Caves of Steel"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "30",
+      "result": "ranked",
+      "title": "Time Enough for Love"
+    },
+    {
+      "authors": [
+        "Olaf Stapledon"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "30",
+      "result": "ranked",
+      "title": "Last and First Men"
+    },
+    {
+      "authors": [
+        "Olaf Stapledon"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "30",
+      "result": "ranked",
+      "title": "Star Maker"
+    },
+    {
+      "authors": [
+        "Frank Herbert"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "34",
+      "result": "ranked",
+      "title": "The Dragon in the Sea"
+    },
+    {
+      "authors": [
+        "Edgar Pangborn"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "34",
+      "result": "ranked",
+      "title": "Davy"
+    },
+    {
+      "authors": [
+        "Samuel R. Delany"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "36",
+      "result": "ranked",
+      "title": "Babel-17"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "36",
+      "result": "ranked",
+      "title": "The Door Into Summer"
+    },
+    {
+      "authors": [
+        "Daniel Keyes"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "36",
+      "result": "ranked",
+      "title": "Flowers for Algernon"
+    },
+    {
+      "authors": [
+        "Edgar Pangborn"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "36",
+      "result": "ranked",
+      "title": "A Mirror for Observers"
+    },
+    {
+      "authors": [
+        "James H. Schmitz"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "36",
+      "result": "ranked",
+      "title": "The Witches of Karres"
+    },
+    {
+      "authors": [
+        "George Orwell"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "41",
+      "result": "ranked",
+      "title": "Nineteen Eighty-Four"
+    },
+    {
+      "authors": [
+        "Alexei Panshin"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Novel",
+      "poll_year": "1975",
+      "position": "41",
+      "result": "ranked",
+      "title": "Rite of Passage"
+    }
+  ],
+  "fetched_at": "2026-07-23T05:49:30Z",
+  "list_id": "locus_all_time_1975_novel",
+  "list_name": "Locus - All-Time 1975 Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "locus_all_time_1975_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Locus - All-Time 1975 Novel",
+    "source_id": "locus_all_time_1975_novel",
+    "url": "https://www.sfadb.com/Locus_1975"
+  }
+}

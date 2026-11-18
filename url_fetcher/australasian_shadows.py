@@ -70,7 +70,8 @@ class UrlFetcherAustralasianShadows(UrlFetcherGeneric):
         before_parse=before_parse,
         force_fallback_level=force_fallback_level,
         disable_fallbacks=disable_fallbacks,
-        source_choice=source_choice)
+        source_choice=source_choice, cached_parsed=cached_parsed,
+        incremental_update=incremental_update)
     parsed.setdefault('match_series', self.options.get('match_series', True))
     return parsed
 
@@ -80,7 +81,7 @@ class UrlFetcherAustralasianShadows(UrlFetcherGeneric):
       SourceAttempt(
         'Australasian Horror Writers Association',
         OFFICIAL_CURRENT_API_URL,
-        lambda html, url, fetch_url=None, log=None, progress=None: (
+        lambda html, url, fetch_url=None, log=None, progress=None, **kwargs: (
           parser.parse_official(
             html,
             url,
@@ -89,8 +90,8 @@ class UrlFetcherAustralasianShadows(UrlFetcherGeneric):
             self.CATEGORY_ALIASES,
             fetch_url=fetch_url,
             log=log,
-            progress=progress)),
-        source_rank=0),
+            progress=progress, **kwargs)),
+        source_rank=0, supports_incremental=True),
       SourceAttempt(
         'Wikipedia',
         WIKIPEDIA_URL,
@@ -110,16 +111,19 @@ class UrlFetcherAustralasianShadows(UrlFetcherGeneric):
   def source_choices(self):
     return SourceFallbackRunner(self.source_attempts()).source_choices()
 
-  def parse(self, html, **_kwargs):
+  def parse(self, html, **kwargs):
     return self.parser().parse_official(
       html,
       OFFICIAL_CURRENT_API_URL,
       self.NAME,
       self.CATEGORY,
-      self.CATEGORY_ALIASES)
+      self.CATEGORY_ALIASES, fetch_url=kwargs.get('fetch_url'), log=kwargs.get('log'),
+      progress=kwargs.get('progress'), cached_parsed=kwargs.get('cached_parsed'),
+      incremental_update=kwargs.get('incremental_update', False))
 
 
 class UrlFetcherAustralasianShadowsNovel(UrlFetcherAustralasianShadows):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'australasian_shadows_novel'
   NAME = 'Australasian Shadows - Novel'
   CATEGORY = 'Novel'
@@ -127,6 +131,7 @@ class UrlFetcherAustralasianShadowsNovel(UrlFetcherAustralasianShadows):
 
 
 class UrlFetcherAustralasianShadowsLongFiction(UrlFetcherAustralasianShadows):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'australasian_shadows_long_fiction'
   NAME = 'Australasian Shadows - Long Fiction'
   CATEGORY = 'Long Fiction'
@@ -140,6 +145,7 @@ class UrlFetcherAustralasianShadowsLongFiction(UrlFetcherAustralasianShadows):
 
 
 class UrlFetcherAustralasianShadowsCollectedWork(UrlFetcherAustralasianShadows):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'australasian_shadows_collected_work'
   NAME = 'Australasian Shadows - Collected Work'
   CATEGORY = 'Collected Work'
@@ -148,6 +154,7 @@ class UrlFetcherAustralasianShadowsCollectedWork(UrlFetcherAustralasianShadows):
 
 
 class UrlFetcherAustralasianShadowsEditedWork(UrlFetcherAustralasianShadows):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'australasian_shadows_edited_work'
   NAME = 'Australasian Shadows - Edited Work'
   CATEGORY = 'Edited Work'
@@ -155,6 +162,7 @@ class UrlFetcherAustralasianShadowsEditedWork(UrlFetcherAustralasianShadows):
 
 
 class UrlFetcherAustralasianShadowsGraphicNovel(UrlFetcherAustralasianShadows):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'australasian_shadows_graphic_novel'
   NAME = 'Australasian Shadows - Graphic Novel/Comic'
   CATEGORY = 'Graphic Novel/Comic'
@@ -179,6 +187,7 @@ class UrlFetcherAustralasianShadowsGraphicNovel(UrlFetcherAustralasianShadows):
 
 
 class UrlFetcherAustralasianShadowsNonfiction(UrlFetcherAustralasianShadows):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'australasian_shadows_nonfiction'
   NAME = 'Australasian Shadows - Non-Fiction'
   FILTER_CATEGORIES = AUSTRALASIAN_SHADOWS_NONFICTION_CATEGORIES

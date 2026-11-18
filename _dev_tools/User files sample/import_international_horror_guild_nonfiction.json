@@ -1,0 +1,795 @@
+{
+  "append_state": {
+    "entry_count": 49,
+    "last_entry_key": "the science of stephen king|bob weinberg\u001flois m gresh",
+    "last_position": "2007.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "David Pringle"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "1998",
+      "category": "Non-Fiction",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "The St. James Guide to Horror, Ghosts and Gothic Writers"
+    },
+    {
+      "authors": [
+        "Clive Bloom"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "1998",
+      "category": "Non-Fiction",
+      "position": "1998.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Gothic Horror: A Reader's Guide from Poe to King and Beyond"
+    },
+    {
+      "authors": [
+        "Richard Laymon"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "1998",
+      "category": "Non-Fiction",
+      "position": "1998.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "A Writer's Tale"
+    },
+    {
+      "authors": [
+        "David J. Skal"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "1998",
+      "category": "Non-Fiction",
+      "position": "1998.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Screams of Reason: Mad Science and Popular Culture"
+    },
+    {
+      "authors": [
+        "Pete Tombs"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "1998",
+      "category": "Non-Fiction",
+      "position": "1998.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Mondo Macabro: Weird and Wonderful Cinema Around the World"
+    },
+    {
+      "authors": [
+        "Neil Barron"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "1999",
+      "category": "Non-Fiction",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Fantasy and Horror: A Critical and Historical Guide to Literature, Illustration, Film, TV, Radio and the Internet"
+    },
+    {
+      "authors": [
+        "Richard Davenport-Hines"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "1999",
+      "category": "Non-Fiction",
+      "position": "1999.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Gothic: Four Hundred Years of Excess, Horror, Evil and Ruin"
+    },
+    {
+      "authors": [
+        "Chris Jarocha-Ernst"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "1999",
+      "category": "Non-Fiction",
+      "position": "1999.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "A Cthulhu Mythos: Bibliography and Concordance"
+    },
+    {
+      "authors": [
+        "S.T. Joshi"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "1999",
+      "category": "Non-Fiction",
+      "position": "1999.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Sixty Years of Arkham House"
+    },
+    {
+      "authors": [
+        "Victoria Price"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "1999",
+      "category": "Non-Fiction",
+      "position": "1999.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Vincent Price: A Daughter's Biography"
+    },
+    {
+      "authors": [
+        "William Sheehan"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2000",
+      "category": "Non-Fiction",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "At the Foot of the Story Tree"
+    },
+    {
+      "authors": [
+        "Ken Gelder"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2000",
+      "category": "Non-Fiction",
+      "position": "2000.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "The Horror Reader"
+    },
+    {
+      "authors": [
+        "Howard Phillips Lovecraft",
+        "S. T. Joshi",
+        "David E. Schultz"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2000",
+      "category": "Non-Fiction",
+      "position": "2000.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Lord of a Visible World: An Autobiography in Letters"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2000",
+      "category": "Non-Fiction",
+      "position": "2000.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "On Writing: A Memoir of the Craft"
+    },
+    {
+      "authors": [
+        "Robert Weinberg"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2000",
+      "category": "Non-Fiction",
+      "position": "2000.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Horror of the 20th Century: An Illustrated History"
+    },
+    {
+      "authors": [
+        "David J. Schow"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2001",
+      "category": "Non-Fiction",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "WILD HAIRS"
+    },
+    {
+      "authors": [
+        "Bruce Campbell"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2001",
+      "category": "Non-Fiction",
+      "position": "2001.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "IF CHINS COULD KILL: CONFESSIONS OF A B MOVIE ACTOR"
+    },
+    {
+      "authors": [
+        "S.T. Joshi"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2001",
+      "category": "Non-Fiction",
+      "position": "2001.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "RAMSEY CAMPBELL AND MODERN HORROR FICTION"
+    },
+    {
+      "authors": [
+        "E. Hoffman Price"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2001",
+      "category": "Non-Fiction",
+      "position": "2001.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "BOOK OF THE DEAD: FRIENDS OF YESTERYEAR: FICTIONEERS & OTHERS"
+    },
+    {
+      "authors": [
+        "Beth Gwinn",
+        "Stanley Wiater"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2001",
+      "category": "Non-Fiction",
+      "position": "2001.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "DARK DREAMERS: FACING THE MASTERS OF FEAR"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2002",
+      "category": "Non-Fiction",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "RAMSEY CAMPBELL, PROBABLY"
+    },
+    {
+      "authors": [
+        "Mike Ashley"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2002",
+      "category": "Non-Fiction",
+      "position": "2002.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "ALGERNON BLACKWOOD: AN EXTRAORDINARY LIFE"
+    },
+    {
+      "authors": [
+        "Richard Bleiler"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2002",
+      "category": "Non-Fiction",
+      "position": "2002.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "SUPERNATURAL FICTION WRITERS: CONTEMPORARY FANTASY AND HORROR"
+    },
+    {
+      "authors": [
+        "Jack Morgan"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2002",
+      "category": "Non-Fiction",
+      "position": "2002.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "THE BIOLOGY OF HORROR: GOTHIC LITERATURE AND FILM"
+    },
+    {
+      "authors": [
+        "Douglas E. Winter"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2002",
+      "category": "Non-Fiction",
+      "position": "2002.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "CLIVE BARKER: THE DARK FANTASTIC"
+    },
+    {
+      "authors": [
+        "Erik Larson"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2003",
+      "category": "Non-Fiction",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "The Devil in the White City: Murder, Magic, and Madness at the Fair That Changed America"
+    },
+    {
+      "authors": [
+        "S.T. Joshi",
+        "David E. Schultz"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2003",
+      "category": "Non-Fiction",
+      "position": "2003.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "H.P. Lovecraft: Selected Letters to Alfred Galpin"
+    },
+    {
+      "authors": [
+        "Tony Magistrale"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2003",
+      "category": "Non-Fiction",
+      "position": "2003.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Hollywood's Stephen King"
+    },
+    {
+      "authors": [
+        "Jess Nevins"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2003",
+      "category": "Non-Fiction",
+      "position": "2003.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Heroes & Monsters: The Unofficial Companion to the League of Extraordinary Gentlemen"
+    },
+    {
+      "authors": [
+        "David E. Schultz",
+        "Scott Connors"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2003",
+      "category": "Non-Fiction",
+      "position": "2003.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "The Selected Letters of Clark Ashton Smith"
+    },
+    {
+      "authors": [
+        "DM Mitchell"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2004",
+      "category": "Non-Fiction",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "A SERIOUS LIFE"
+    },
+    {
+      "authors": [
+        "Alan Clark"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2004",
+      "category": "Non-Fiction",
+      "position": "2004.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "THE PAINT IN MY BLOOD"
+    },
+    {
+      "authors": [
+        "Joseph McCabe"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2004",
+      "category": "Non-Fiction",
+      "position": "2004.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "HANGING OUT WITH THE DREAM KING: CONVERSATIONS WITH NEIL GAIMAN AND HIS COLLABORATORS"
+    },
+    {
+      "authors": [
+        "Milt Thomas"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2004",
+      "category": "Non-Fiction",
+      "position": "2004.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "CAVE OF A THOUSAND TALES"
+    },
+    {
+      "authors": [
+        "S.T. Joshi",
+        "Stefan Dziemianowicz"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2005",
+      "category": "Non-Fiction",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Supernatural Literature of the World: An Encyclopedia"
+    },
+    {
+      "authors": [
+        "Christopher Frayling"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2005",
+      "category": "Non-Fiction",
+      "position": "2005.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Mad, Bad and Dangerous? The Scientists and The Cinema"
+    },
+    {
+      "authors": [
+        "Stephen Jones",
+        "Kim Newman"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2005",
+      "category": "Non-Fiction",
+      "position": "2005.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Horror: Another 100 Best Books"
+    },
+    {
+      "authors": [
+        "Denis Meikle"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2005",
+      "category": "Non-Fiction",
+      "position": "2005.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "The Ring Companion"
+    },
+    {
+      "authors": [
+        "Norman Partridge"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2005",
+      "category": "Non-Fiction",
+      "position": "2005.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Mr. Fox and Other Feral Tales"
+    },
+    {
+      "authors": [
+        "S.T. Joshi"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2006",
+      "category": "Non-Fiction",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Icons of Horror and the Supernatural"
+    },
+    {
+      "authors": [
+        "John Clute"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2006",
+      "category": "Non-Fiction",
+      "position": "2006.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "The Darkening Garden"
+    },
+    {
+      "authors": [
+        "Scott Connors"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2006",
+      "category": "Non-Fiction",
+      "position": "2006.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "The Freedom of Fantastic Things"
+    },
+    {
+      "authors": [
+        "Mark Morris"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2006",
+      "category": "Non-Fiction",
+      "position": "2006.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Cinema Macabre"
+    },
+    {
+      "authors": [
+        "Kim Paffenroth"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2006",
+      "category": "Non-Fiction",
+      "position": "2006.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Gospel of the Living Dead"
+    },
+    {
+      "authors": [
+        "Tim Lucas"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2007",
+      "category": "Non-Fiction",
+      "position": "2007",
+      "result": "winner",
+      "title": "Mario Bava: All the Colors of Dark"
+    },
+    {
+      "authors": [
+        "Susan Tyler Hitchcock"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2007",
+      "category": "Non-Fiction",
+      "position": "2007.01",
+      "result": "shortlisted",
+      "title": "Frankenstein: A Cultural History"
+    },
+    {
+      "authors": [
+        "Rosemary Pardoe",
+        "S.T. Joshi"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2007",
+      "category": "Non-Fiction",
+      "position": "2007.02",
+      "result": "shortlisted",
+      "title": "Warnings to the Curious: A Sheaf of Criticism on M.R. James"
+    },
+    {
+      "authors": [
+        "Peter Straub"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2007",
+      "category": "Non-Fiction",
+      "position": "2007.03",
+      "result": "shortlisted",
+      "title": "Sides"
+    },
+    {
+      "authors": [
+        "Bob Weinberg",
+        "Lois M. Gresh"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2007",
+      "category": "Non-Fiction",
+      "position": "2007.04",
+      "result": "shortlisted",
+      "title": "The Science of Stephen King"
+    }
+  ],
+  "fetched_at": "2026-07-28T06:20:22Z",
+  "list_id": "international_horror_guild_nonfiction",
+  "list_name": "International Horror Guild - Non-Fiction (discontinued)",
+  "match_series": false,
+  "notes": [
+    "Official IHG 2007 final-awards page includes nominee/shortlist rows.",
+    "Official IHG 1998-2006 recipient page generally includes Other Nominees / Also nominated rows.",
+    "Official IHG 1994-1997 sections are winner-only in this parser when official pages state nominations are unavailable or not listed."
+  ],
+  "parser": "international_horror_guild_nonfiction",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "International Horror Guild - Non-Fiction (discontinued)",
+    "source_id": "international_horror_guild_nonfiction",
+    "url": "https://www.horroraward.org/index.html"
+  }
+}

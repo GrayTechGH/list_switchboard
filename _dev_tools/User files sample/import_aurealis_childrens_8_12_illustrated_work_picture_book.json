@@ -1,0 +1,191 @@
+{
+  "append_state": {
+    "entry_count": 10,
+    "last_entry_key": "tashi and the golem|anna fienberg\u001fkim gamble",
+    "last_position": "2010.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Richard Harland",
+        "Laura Peterson"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2009",
+      "category": "Children's (8-12 years) Illustrated Work/Picture Book",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2009"
+      },
+      "title": "Escape!, Under Siege, Race to the Ruins, The Heavy Crown"
+    },
+    {
+      "authors": [
+        "Sally Morgan",
+        "Ezekiel, Ambelin and Blaze Kwaymullina"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2009",
+      "category": "Children's (8-12 years) Illustrated Work/Picture Book",
+      "position": "2009.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2009"
+      },
+      "title": "Curly and the Fent"
+    },
+    {
+      "authors": [
+        "Anna Fienberg",
+        "Barbara Fienberg",
+        "Kim Gamble"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2009",
+      "category": "Children's (8-12 years) Illustrated Work/Picture Book",
+      "position": "2009.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2009"
+      },
+      "title": "Tashi and the Phoenix"
+    },
+    {
+      "authors": [
+        "Ian Irvine",
+        "David Cornish"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2009",
+      "category": "Children's (8-12 years) Illustrated Work/Picture Book",
+      "position": "2009.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2009"
+      },
+      "title": "Thorn Castle, Giant's Lair, Black Crypt, Wizardry Crag"
+    },
+    {
+      "authors": [
+        "Richard Tulloch",
+        "Terry Denton"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2009",
+      "category": "Children's (8-12 years) Illustrated Work/Picture Book",
+      "position": "2009.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2009"
+      },
+      "title": "Twisted Tales"
+    },
+    {
+      "authors": [
+        "Pamela Freeman",
+        "Kim Gamble"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2010",
+      "category": "Children's (8-12 years) Illustrated Work/Picture Book",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2010"
+      },
+      "title": "Victor's Challenge"
+    },
+    {
+      "authors": [
+        "Graeme Base"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2010",
+      "category": "Children's (8-12 years) Illustrated Work/Picture Book",
+      "position": "2010.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2010"
+      },
+      "title": "Enigma"
+    },
+    {
+      "authors": [
+        "Gregory Rogers"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2010",
+      "category": "Children's (8-12 years) Illustrated Work/Picture Book",
+      "position": "2010.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2010"
+      },
+      "title": "The Hero of Little Street"
+    },
+    {
+      "authors": [
+        "Dan McGuiness"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2010",
+      "category": "Children's (8-12 years) Illustrated Work/Picture Book",
+      "position": "2010.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2010"
+      },
+      "title": "Pilot and Huxley"
+    },
+    {
+      "authors": [
+        "Anna Fienberg",
+        "Kim Gamble"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2010",
+      "category": "Children's (8-12 years) Illustrated Work/Picture Book",
+      "position": "2010.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2010"
+      },
+      "title": "Tashi and the Golem"
+    }
+  ],
+  "fetched_at": "2026-11-15T04:17:13Z",
+  "list_id": "aurealis_childrens_8_12_illustrated_work_picture_book",
+  "list_name": "Aurealis - Children's 8-12 Illustrated Work/Picture Book (discontinued)",
+  "match_series": false,
+  "notes": [],
+  "parser": "aurealis_childrens_8_12_illustrated_work_picture_book",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Aurealis - Children's 8-12 Illustrated Work/Picture Book (discontinued)",
+    "source_id": "aurealis_childrens_8_12_illustrated_work_picture_book",
+    "url": "https://www.sfadb.com/Aurealis_Awards"
+  }
+}

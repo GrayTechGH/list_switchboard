@@ -1,0 +1,937 @@
+{
+  "append_state": {
+    "entry_count": 83,
+    "last_entry_key": "prey|vanda symon",
+    "last_position": "2025.06",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Alix Bosco"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2010",
+      "category": "Crime Novel",
+      "position": "2010",
+      "result": "winner",
+      "title": "Cut & Run"
+    },
+    {
+      "authors": [
+        "Vanda Symon"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2010",
+      "category": "Crime Novel",
+      "position": "2010.01",
+      "result": "nominee",
+      "title": "Containment"
+    },
+    {
+      "authors": [
+        "Neil Cross"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2010",
+      "category": "Crime Novel",
+      "position": "2010.02",
+      "result": "nominee",
+      "title": "Burial"
+    },
+    {
+      "authors": [
+        "Paul Cleave"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2011",
+      "category": "Crime Novel",
+      "position": "2011",
+      "result": "winner",
+      "title": "Blood Men"
+    },
+    {
+      "authors": [
+        "Paddy Richardson"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2011",
+      "category": "Crime Novel",
+      "position": "2011.01",
+      "result": "nominee",
+      "title": "Hunting Blind"
+    },
+    {
+      "authors": [
+        "Neil Cross"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2011",
+      "category": "Crime Novel",
+      "position": "2011.02",
+      "result": "nominee",
+      "title": "Captured"
+    },
+    {
+      "authors": [
+        "Alix Bosco"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2011",
+      "category": "Crime Novel",
+      "position": "2011.03",
+      "result": "nominee",
+      "title": "Slaughter Falls"
+    },
+    {
+      "authors": [
+        "Neil Cross"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2012",
+      "category": "Crime Novel",
+      "position": "2012",
+      "result": "winner",
+      "title": "Luther: The Calling"
+    },
+    {
+      "authors": [
+        "Paul Cleave"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2012",
+      "category": "Crime Novel",
+      "position": "2012.01",
+      "result": "nominee",
+      "title": "Collecting Cooper"
+    },
+    {
+      "authors": [
+        "Ben Sanders"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2012",
+      "category": "Crime Novel",
+      "position": "2012.02",
+      "result": "nominee",
+      "title": "By Any Means"
+    },
+    {
+      "authors": [
+        "Vanda Symon"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2012",
+      "category": "Crime Novel",
+      "position": "2012.03",
+      "result": "nominee",
+      "title": "Bound"
+    },
+    {
+      "authors": [
+        "Paul Thomas"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2013",
+      "category": "Crime Novel",
+      "position": "2013",
+      "result": "winner",
+      "title": "Death on Demand"
+    },
+    {
+      "authors": [
+        "Paul Cleave"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2013",
+      "category": "Crime Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "title": "The Laughterhouse"
+    },
+    {
+      "authors": [
+        "Julian Novitz"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2013",
+      "category": "Crime Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "title": "Little Sister"
+    },
+    {
+      "authors": [
+        "Vanda Symon"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2013",
+      "category": "Crime Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "title": "The Faceless"
+    },
+    {
+      "authors": [
+        "Liam McIlvanney"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2014",
+      "category": "Crime Novel",
+      "position": "2014",
+      "result": "winner",
+      "title": "Where The Dead Men Go"
+    },
+    {
+      "authors": [
+        "Paul Cleave"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2014",
+      "category": "Crime Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "title": "Joe Victim"
+    },
+    {
+      "authors": [
+        "Alan Duff"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2014",
+      "category": "Crime Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "title": "Frederick's Coat"
+    },
+    {
+      "authors": [
+        "Donna Malane"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2014",
+      "category": "Crime Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "title": "My Brother's Keeper"
+    },
+    {
+      "authors": [
+        "Paul Cleave"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2015",
+      "category": "Crime Novel",
+      "position": "2015",
+      "result": "winner",
+      "title": "Five Minutes Alone"
+    },
+    {
+      "authors": [
+        "Barbara Ewing"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2015",
+      "category": "Crime Novel",
+      "position": "2015.01",
+      "result": "nominee",
+      "title": "The Petticoat Men"
+    },
+    {
+      "authors": [
+        "Tina Shaw"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2015",
+      "category": "Crime Novel",
+      "position": "2015.02",
+      "result": "nominee",
+      "title": "The Children's Pond"
+    },
+    {
+      "authors": [
+        "Paddy Richardson"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2015",
+      "category": "Crime Novel",
+      "position": "2015.03",
+      "result": "nominee",
+      "title": "Swimming in the Dark"
+    },
+    {
+      "authors": [
+        "Paul Thomas"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2015",
+      "category": "Crime Novel",
+      "position": "2015.04",
+      "result": "nominee",
+      "title": "Fallout"
+    },
+    {
+      "authors": [
+        "Paul Cleave"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2016",
+      "category": "Crime Novel",
+      "position": "2016",
+      "result": "winner",
+      "title": "Trust No One"
+    },
+    {
+      "authors": [
+        "Ray Berard"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2016",
+      "category": "Crime Novel",
+      "position": "2016.01",
+      "result": "nominee",
+      "title": "Inside the Black Horse"
+    },
+    {
+      "authors": [
+        "Adam Christopher"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2016",
+      "category": "Crime Novel",
+      "position": "2016.02",
+      "result": "nominee",
+      "title": "Made to Kill"
+    },
+    {
+      "authors": [
+        "Tanya Moir"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2016",
+      "category": "Crime Novel",
+      "position": "2016.03",
+      "result": "nominee",
+      "title": "The Legend of Winstone Blackhat"
+    },
+    {
+      "authors": [
+        "Ben Sanders"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2016",
+      "category": "Crime Novel",
+      "position": "2016.04",
+      "result": "nominee",
+      "title": "American Blood"
+    },
+    {
+      "authors": [
+        "Fiona Sussman"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2017",
+      "category": "Crime Novel",
+      "position": "2017",
+      "result": "winner",
+      "title": "The Last Time We Spoke"
+    },
+    {
+      "authors": [
+        "Finn Bell"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2017",
+      "category": "Crime Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "Pancake Money"
+    },
+    {
+      "authors": [
+        "C. J. Carver"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2017",
+      "category": "Crime Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "Spare Me The Truth"
+    },
+    {
+      "authors": [
+        "Jonothan Cullinane"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2017",
+      "category": "Crime Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "title": "Red Herring"
+    },
+    {
+      "authors": [
+        "Ben Sanders"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2017",
+      "category": "Crime Novel",
+      "position": "2017.04",
+      "result": "nominee",
+      "title": "Marshall's Law"
+    },
+    {
+      "authors": [
+        "Alan Carter"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2018",
+      "category": "Crime Novel",
+      "position": "2018",
+      "result": "winner",
+      "title": "Marlborough Man"
+    },
+    {
+      "authors": [
+        "Charity Norman"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2018",
+      "category": "Crime Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "See You in September"
+    },
+    {
+      "authors": [
+        "Kirsten McDougall"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2018",
+      "category": "Crime Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "title": "Tess"
+    },
+    {
+      "authors": [
+        "Nathan Blackwell"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2018",
+      "category": "Crime Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "title": "The Sound of Her Voice"
+    },
+    {
+      "authors": [
+        "Paul Cleave"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2018",
+      "category": "Crime Novel",
+      "position": "2018.04",
+      "result": "nominee",
+      "title": "A Killer Harvest"
+    },
+    {
+      "authors": [
+        "Stella Duffy"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2018",
+      "category": "Crime Novel",
+      "position": "2018.05",
+      "result": "nominee",
+      "title": "The Hidden Room"
+    },
+    {
+      "authors": [
+        "Fiona Kidman"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2019",
+      "category": "Crime Novel",
+      "position": "2019",
+      "result": "winner",
+      "title": "This Mortal Boy"
+    },
+    {
+      "authors": [
+        "Ngaio Marsh",
+        "Stella Duffy"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2019",
+      "category": "Crime Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "title": "Money in the Morgue"
+    },
+    {
+      "authors": [
+        "Liam Mcilvanney"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2019",
+      "category": "Crime Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "title": "The Quaker"
+    },
+    {
+      "authors": [
+        "J. P. Pomare"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2019",
+      "category": "Crime Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "title": "Call Me Evie"
+    },
+    {
+      "authors": [
+        "Jen Shieff"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2019",
+      "category": "Crime Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "title": "The Vanishing Act"
+    },
+    {
+      "authors": [
+        "Becky Manawatu"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2020",
+      "category": "Crime Novel",
+      "position": "2020",
+      "result": "winner",
+      "title": "Au\u0113"
+    },
+    {
+      "authors": [
+        "Paul Cleave"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2020",
+      "category": "Crime Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "Whatever it Takes"
+    },
+    {
+      "authors": [
+        "Gudrun Frerichs"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2020",
+      "category": "Crime Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "Girl from the Tree House"
+    },
+    {
+      "authors": [
+        "R. W. R. McDonald"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2020",
+      "category": "Crime Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "The Nancys"
+    },
+    {
+      "authors": [
+        "J. P. Pomare"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2020",
+      "category": "Crime Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "title": "In the Clearing"
+    },
+    {
+      "authors": [
+        "Ren\u00e9e"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2020",
+      "category": "Crime Novel",
+      "position": "2020.05",
+      "result": "nominee",
+      "title": "The Wild Card"
+    },
+    {
+      "authors": [
+        "Brannavan Gnanalingam"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2021",
+      "category": "Crime Novel",
+      "position": "2021",
+      "result": "winner",
+      "title": "Sprigs"
+    },
+    {
+      "authors": [
+        "Nikki Crutchley"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2021",
+      "category": "Crime Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "The Murder Club"
+    },
+    {
+      "authors": [
+        "Carl Nixon"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2021",
+      "category": "Crime Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "The Tally Stick"
+    },
+    {
+      "authors": [
+        "Charity Norman"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2021",
+      "category": "Crime Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "The Secrets of Strangers"
+    },
+    {
+      "authors": [
+        "J. P. Pomare"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2021",
+      "category": "Crime Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "Tell Me Lies"
+    },
+    {
+      "authors": [
+        "Jacqueline Bublitz"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2022",
+      "category": "Crime Novel",
+      "position": "2022",
+      "result": "winner",
+      "title": "Before You Knew My Name"
+    },
+    {
+      "authors": [
+        "Paul Cleave"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2022",
+      "category": "Crime Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "The Quiet People"
+    },
+    {
+      "authors": [
+        "R. W. R. McDonald"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2022",
+      "category": "Crime Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "Nancy Business"
+    },
+    {
+      "authors": [
+        "Kirsten McDougall"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2022",
+      "category": "Crime Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "She\u2019s a Killer"
+    },
+    {
+      "authors": [
+        "Ben Sanders"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2022",
+      "category": "Crime Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "The Devils You Know"
+    },
+    {
+      "authors": [
+        "Nalini Singh"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2022",
+      "category": "Crime Novel",
+      "position": "2022.05",
+      "result": "nominee",
+      "title": "Quiet in Her Bones"
+    },
+    {
+      "authors": [
+        "Charity Norman"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2023",
+      "category": "Crime Novel",
+      "position": "2023",
+      "result": "winner",
+      "title": "Remember Me"
+    },
+    {
+      "authors": [
+        "Michael Bennett"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2023",
+      "category": "Crime Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "title": "Better the Blood"
+    },
+    {
+      "authors": [
+        "Simon Lendrum"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2023",
+      "category": "Crime Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "title": "The Slow Roll"
+    },
+    {
+      "authors": [
+        "Ren\u00e9e"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2023",
+      "category": "Crime Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "title": "Blood Matters"
+    },
+    {
+      "authors": [
+        "Ben Sanders"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2023",
+      "category": "Crime Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "title": "Exit .45"
+    },
+    {
+      "authors": [
+        "Fiona Sussman"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2023",
+      "category": "Crime Novel",
+      "position": "2023.05",
+      "result": "nominee",
+      "title": "The Doctor\u2019s Wife"
+    },
+    {
+      "authors": [
+        "Chad Taylor"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2023",
+      "category": "Crime Novel",
+      "position": "2023.06",
+      "result": "nominee",
+      "title": "Blue Hotel"
+    },
+    {
+      "authors": [
+        "DV Bishop"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2024",
+      "category": "Crime Novel",
+      "position": "2024",
+      "result": "winner",
+      "title": "Ritual of Fire"
+    },
+    {
+      "authors": [
+        "Claire Baylis"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2024",
+      "category": "Crime Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "Dice"
+    },
+    {
+      "authors": [
+        "Gabriel Bergmoser"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2024",
+      "category": "Crime Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "The Caretaker"
+    },
+    {
+      "authors": [
+        "Catherine Chidgey"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2024",
+      "category": "Crime Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "Pet"
+    },
+    {
+      "authors": [
+        "Jill Johnson"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2024",
+      "category": "Crime Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "title": "Devil's Breath"
+    },
+    {
+      "authors": [
+        "Anthony McCarten"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2024",
+      "category": "Crime Novel",
+      "position": "2024.05",
+      "result": "nominee",
+      "title": "Going Zero"
+    },
+    {
+      "authors": [
+        "Vanda Symon"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2024",
+      "category": "Crime Novel",
+      "position": "2024.06",
+      "result": "nominee",
+      "title": "Expectant"
+    },
+    {
+      "authors": [
+        "Michael Bennett"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2025",
+      "category": "Crime Novel",
+      "position": "2025",
+      "result": "winner",
+      "title": "Return to Blood"
+    },
+    {
+      "authors": [
+        "DV Bishop"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2025",
+      "category": "Crime Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "A Divine Fury"
+    },
+    {
+      "authors": [
+        "Sherryl Clark"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2025",
+      "category": "Crime Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "Woman, Missing"
+    },
+    {
+      "authors": [
+        "Charity Norman"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2025",
+      "category": "Crime Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "Home Truths"
+    },
+    {
+      "authors": [
+        "JP Pomare"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2025",
+      "category": "Crime Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "17 Years Later"
+    },
+    {
+      "authors": [
+        "Gavin Strawhan"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2025",
+      "category": "Crime Novel",
+      "position": "2025.05",
+      "result": "nominee",
+      "title": "The Call"
+    },
+    {
+      "authors": [
+        "Vanda Symon"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2025",
+      "category": "Crime Novel",
+      "position": "2025.06",
+      "result": "nominee",
+      "title": "Prey"
+    }
+  ],
+  "fetched_at": "2026-07-19T06:58:22Z",
+  "list_id": "ngaio_marsh_award_crime_novel",
+  "list_name": "Ngaio Marsh Award - Crime Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "ngaio_marsh_award_crime_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Ngaio Marsh Award - Crime Novel",
+    "source_id": "ngaio_marsh_award_crime_novel",
+    "url": "https://en.wikipedia.org/wiki/Ngaio_Marsh_Awards"
+  }
+}

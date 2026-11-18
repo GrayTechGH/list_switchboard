@@ -918,12 +918,13 @@
       "votes": "5"
     }
   ],
-  "fetched_at": "2026-07-11T00:50:29Z",
+  "fetched_at": "2026-11-14T11:08:32Z",
   "list_id": "r_fantasy_top_self_published_novels_2024",
   "list_name": "r/Fantasy Top Self-Published Novels 2024",
   "match_series": true,
   "notes": [],
   "parser": "r_fantasy_top_self_published_novels_2024",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "r/Fantasy Top Self-Published Novels 2024",

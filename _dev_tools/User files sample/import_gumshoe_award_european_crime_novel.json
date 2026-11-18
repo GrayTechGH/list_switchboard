@@ -1,8 +1,8 @@
 {
   "append_state": {
-    "entry_count": 3,
-    "last_entry_key": "norwegian|karin fossum",
-    "last_position": "2007",
+    "entry_count": 14,
+    "last_entry_key": "the minotaur|barbara vine",
+    "last_position": "2007.03",
     "source_revision": null
   },
   "entries": [
@@ -15,7 +15,51 @@
       "category": "European Crime Novel",
       "position": "2005",
       "result": "winner",
-      "title": "Swedish"
+      "title": "The Return of the Dancing Master"
+    },
+    {
+      "authors": [
+        "Boris Akunin"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2005",
+      "category": "European Crime Novel",
+      "position": "2005.01",
+      "result": "nominee",
+      "title": "Murder on the Leviathan"
+    },
+    {
+      "authors": [
+        "Donna Leon"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2005",
+      "category": "European Crime Novel",
+      "position": "2005.02",
+      "result": "nominee",
+      "title": "Doctored Evidence"
+    },
+    {
+      "authors": [
+        "Ian Rankin"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2005",
+      "category": "European Crime Novel",
+      "position": "2005.03",
+      "result": "nominee",
+      "title": "A Question of Blood"
+    },
+    {
+      "authors": [
+        "Carlos Ruiz Zaf\u00f3n"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2005",
+      "category": "European Crime Novel",
+      "position": "2005.04",
+      "result": "nominee",
+      "title": "The Shadow of the Wind"
     },
     {
       "authors": [
@@ -26,7 +70,51 @@
       "category": "European Crime Novel",
       "position": "2006",
       "result": "winner",
-      "title": "British"
+      "title": "The Silent and the Damned"
+    },
+    {
+      "authors": [
+        "Jasper Fforde"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2006",
+      "category": "European Crime Novel",
+      "position": "2006.01",
+      "result": "nominee",
+      "title": "The Big Over Easy"
+    },
+    {
+      "authors": [
+        "Allan Guthrie"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2006",
+      "category": "European Crime Novel",
+      "position": "2006.02",
+      "result": "nominee",
+      "title": "Kiss Her Goodbye"
+    },
+    {
+      "authors": [
+        "Arnaldur Indri\u00f0ason"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2006",
+      "category": "European Crime Novel",
+      "position": "2006.03",
+      "result": "nominee",
+      "title": "Jar City"
+    },
+    {
+      "authors": [
+        "Fred Vargas"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2006",
+      "category": "European Crime Novel",
+      "position": "2006.04",
+      "result": "nominee",
+      "title": "Have Mercy on Us All"
     },
     {
       "authors": [
@@ -37,21 +125,53 @@
       "category": "European Crime Novel",
       "position": "2007",
       "result": "winner",
-      "title": "Norwegian"
+      "title": "When the Devil Holds the Candle"
+    },
+    {
+      "authors": [
+        "Ken Bruen"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2007",
+      "category": "European Crime Novel",
+      "position": "2007.01",
+      "result": "nominee",
+      "title": "The Dramatist"
+    },
+    {
+      "authors": [
+        "Gianrico Carofiglio"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2007",
+      "category": "European Crime Novel",
+      "position": "2007.02",
+      "result": "nominee",
+      "title": "A Walk in the Dark"
+    },
+    {
+      "authors": [
+        "Barbara Vine"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2007",
+      "category": "European Crime Novel",
+      "position": "2007.03",
+      "result": "nominee",
+      "title": "The Minotaur"
     }
   ],
-  "fetched_at": "2026-07-17T06:41:23Z",
+  "fetched_at": "2026-11-16T07:15:20Z",
   "list_id": "gumshoe_award_european_crime_novel",
   "list_name": "Gumshoe Award - European Crime Novel (discontinued)",
   "match_series": false,
-  "notes": [
-    "LibraryThing failed: HTTP Error 403: Forbidden"
-  ],
+  "notes": [],
   "parser": "gumshoe_award_european_crime_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Gumshoe Award - European Crime Novel (discontinued)",
     "source_id": "gumshoe_award_european_crime_novel",
-    "url": "https://en.wikipedia.org/wiki/Gumshoe_Awards"
+    "url": "https://www.librarything.com/award/1785/Gumshoe-Award"
   }
 }

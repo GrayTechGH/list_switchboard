@@ -6,7 +6,14 @@ from .generic import (
   CATEGORY_NONFICTION,
   CATEGORY_REGIONAL_NATIONAL_AWARDS,
   UrlFetcherGeneric,
+  UrlFetcherError,
 )
+from .writers_trust_transport import WritersTrustFetchPolicy
+
+try:
+  from calibre_plugins.list_switchboard.parser.writers_trust_updates import fetch_writers_trust
+except ImportError:
+  from parser.writers_trust_updates import fetch_writers_trust
 
 
 ATWOOD_HISTORY_URL = (
@@ -43,6 +50,22 @@ class UrlFetcherWritersTrustAward(UrlFetcherGeneric):
   CATEGORY_ALIASES = ()
   CURRENT_URL = ''
 
+  def fetch_and_parse(self,fetch_url,sleep=None,fetch_error=None,log=None,progress=None,
+      before_fetch=None,after_fetch=None,before_parse=None,force_fallback_level=0,
+      disable_fallbacks=False,source_choice=None,cached_parsed=None,incremental_update=False):
+    if source_choice not in (None,'automatic',0,'0') or (int(force_fallback_level or 0)>0 and not disable_fallbacks):
+      raise UrlFetcherError('No URL fallback exists for the selected source.')
+    legacy=super().fetch_url
+    self._trust_fetch_policy=WritersTrustFetchPolicy(fetch_url,lambda url:legacy(fetch_url,url),self.parser(),log)
+    try:
+      return fetch_writers_trust(self,fetch_url,cached_parsed,incremental_update,
+        before_fetch,after_fetch,before_parse,progress)
+    finally:self._trust_fetch_policy=None
+
+  def fetch_url(self,fetch_url,url):
+    policy=getattr(self,'_trust_fetch_policy',None)
+    return policy.fetch(url) if policy is not None else super().fetch_url(fetch_url,url)
+
   def create_parser(self):
     try:
       from calibre_plugins.list_switchboard.parser.writers_trust import (
@@ -66,6 +89,7 @@ class UrlFetcherWritersTrustAward(UrlFetcherGeneric):
 
 class UrlFetcherWritersTrustAtwoodGibsonFiction(UrlFetcherWritersTrustAward):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   FILTER_CATEGORIES = (
     CATEGORY_LITERARY_GENERAL_FICTION,
     CATEGORY_REGIONAL_NATIONAL_AWARDS,
@@ -81,6 +105,7 @@ class UrlFetcherWritersTrustAtwoodGibsonFiction(UrlFetcherWritersTrustAward):
 
 class UrlFetcherWritersTrustHilaryWestonNonfiction(UrlFetcherWritersTrustAward):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   FILTER_CATEGORIES = (
     CATEGORY_NONFICTION,
     CATEGORY_REGIONAL_NATIONAL_AWARDS,
@@ -96,6 +121,7 @@ class UrlFetcherWritersTrustHilaryWestonNonfiction(UrlFetcherWritersTrustAward):
 
 class UrlFetcherWritersTrustBalsilliePublicPolicy(UrlFetcherWritersTrustAward):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   FILTER_CATEGORIES = (
     CATEGORY_NONFICTION,
     CATEGORY_REGIONAL_NATIONAL_AWARDS,
@@ -112,6 +138,7 @@ class UrlFetcherWritersTrustBalsilliePublicPolicy(UrlFetcherWritersTrustAward):
 class UrlFetcherWritersTrustShaughnessyCohenPoliticalWriting(
     UrlFetcherWritersTrustAward):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   FILTER_CATEGORIES = (
     CATEGORY_NONFICTION,
     CATEGORY_REGIONAL_NATIONAL_AWARDS,

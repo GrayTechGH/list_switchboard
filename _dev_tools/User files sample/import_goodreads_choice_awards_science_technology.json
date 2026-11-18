@@ -1,0 +1,2064 @@
+{
+  "append_state": {
+    "entry_count": 120,
+    "last_entry_key": "t minus ai|michael kanaan",
+    "last_position": "2020.19",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "John Hargrove",
+        "Howard Chua-Eoan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science & Technology",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2015"
+      },
+      "title": "Beneath the Surface: Killer Whales, SeaWorld, and the Truth Beyond Blackfish",
+      "votes": "8097"
+    },
+    {
+      "authors": [
+        "Rachel Swaby"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science & Technology",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2015"
+      },
+      "title": "Headstrong",
+      "votes": "7744"
+    },
+    {
+      "authors": [
+        "Susan Casey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science & Technology",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2015"
+      },
+      "title": "Voices in the Ocean",
+      "votes": "7712"
+    },
+    {
+      "authors": [
+        "Val McDermid"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science & Technology",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2015"
+      },
+      "title": "Forensics",
+      "votes": "7640"
+    },
+    {
+      "authors": [
+        "Emily Nagoski"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science & Technology",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2015"
+      },
+      "title": "Come as You Are",
+      "votes": "7492"
+    },
+    {
+      "authors": [
+        "Ashlee Vance"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science & Technology",
+      "position": "2015.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2015"
+      },
+      "title": "Elon Musk",
+      "votes": "7025"
+    },
+    {
+      "authors": [
+        "Kim Cross"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science & Technology",
+      "position": "2015.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2015"
+      },
+      "title": "What Stands in a Storm",
+      "votes": "6815"
+    },
+    {
+      "authors": [
+        "Oliver Sacks"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science & Technology",
+      "position": "2015.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2015"
+      },
+      "title": "On the Move",
+      "votes": "6135"
+    },
+    {
+      "authors": [
+        "David Perlmutter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science & Technology",
+      "position": "2015.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2015"
+      },
+      "title": "Brain Maker",
+      "votes": "5159"
+    },
+    {
+      "authors": [
+        "Giulia Enders"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science & Technology",
+      "position": "2015.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2015"
+      },
+      "title": "Gut",
+      "votes": "5082"
+    },
+    {
+      "authors": [
+        "Stephen Richard Witt"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science & Technology",
+      "position": "2015.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2015"
+      },
+      "title": "How Music Got Free",
+      "votes": "1898"
+    },
+    {
+      "authors": [
+        "Carl Safina"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science & Technology",
+      "position": "2015.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2015"
+      },
+      "title": "Beyond Words",
+      "votes": "1689"
+    },
+    {
+      "authors": [
+        "Brent Schlender"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science & Technology",
+      "position": "2015.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2015"
+      },
+      "title": "Becoming Steve Jobs",
+      "votes": "1467"
+    },
+    {
+      "authors": [
+        "Sy Montgomery"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science & Technology",
+      "position": "2015.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2015"
+      },
+      "title": "The Soul of an Octopus",
+      "votes": "1396"
+    },
+    {
+      "authors": [
+        "Norman Doidge"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science & Technology",
+      "position": "2015.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2015"
+      },
+      "title": "The Brain's Way of Healing",
+      "votes": "1231"
+    },
+    {
+      "authors": [
+        "Peter H. Diamandis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science & Technology",
+      "position": "2015.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2015"
+      },
+      "title": "Bold",
+      "votes": "890"
+    },
+    {
+      "authors": [
+        "Marc Goodman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science & Technology",
+      "position": "2015.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2015"
+      },
+      "title": "Future Crimes",
+      "votes": "797"
+    },
+    {
+      "authors": [
+        "Joshua Davis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science & Technology",
+      "position": "2015.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2015"
+      },
+      "title": "Spare Parts",
+      "votes": "770"
+    },
+    {
+      "authors": [
+        "Steve Silberman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science & Technology",
+      "position": "2015.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2015"
+      },
+      "title": "NeuroTribes",
+      "votes": "731"
+    },
+    {
+      "authors": [
+        "Cynthia Barnett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Science & Technology",
+      "position": "2015.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2015"
+      },
+      "title": "Rain",
+      "votes": "646"
+    },
+    {
+      "authors": [
+        "Frans de Waal"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science & Technology",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2016"
+      },
+      "title": "Are We Smart Enough to Know How Smart Animals Are?",
+      "votes": "12370"
+    },
+    {
+      "authors": [
+        "Siddhartha Mukherjee"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science & Technology",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2016"
+      },
+      "title": "The Gene",
+      "votes": "9820"
+    },
+    {
+      "authors": [
+        "Mary Roach"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science & Technology",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2016"
+      },
+      "title": "Grunt",
+      "votes": "9797"
+    },
+    {
+      "authors": [
+        "Jennifer Ackerman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science & Technology",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2016"
+      },
+      "title": "The Genius of Birds",
+      "votes": "9719"
+    },
+    {
+      "authors": [
+        "Sean Carroll"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science & Technology",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2016"
+      },
+      "title": "The Big Picture",
+      "votes": "8589"
+    },
+    {
+      "authors": [
+        "Luke Dittrich"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science & Technology",
+      "position": "2016.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2016"
+      },
+      "title": "Patient H.M.",
+      "votes": "6983"
+    },
+    {
+      "authors": [
+        "Dean Burnett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science & Technology",
+      "position": "2016.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2016"
+      },
+      "title": "Idiot Brain",
+      "votes": "6957"
+    },
+    {
+      "authors": [
+        "James R. Doty"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science & Technology",
+      "position": "2016.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2016"
+      },
+      "title": "Into the Magic Shop",
+      "votes": "6818"
+    },
+    {
+      "authors": [
+        "Randall Munroe"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science & Technology",
+      "position": "2016.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2016"
+      },
+      "title": "Thing Explainer",
+      "votes": "6713"
+    },
+    {
+      "authors": [
+        "John Donvan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science & Technology",
+      "position": "2016.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2016"
+      },
+      "title": "In a Different Key",
+      "votes": "6415"
+    },
+    {
+      "authors": [
+        "Nathanael Johnson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science & Technology",
+      "position": "2016.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2016"
+      },
+      "title": "Unseen City",
+      "votes": "2513"
+    },
+    {
+      "authors": [
+        "Robert Moor"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science & Technology",
+      "position": "2016.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2016"
+      },
+      "title": "On Trails",
+      "votes": "2232"
+    },
+    {
+      "authors": [
+        "Brian Christian"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science & Technology",
+      "position": "2016.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2016"
+      },
+      "title": "Algorithms to Live By",
+      "votes": "2228"
+    },
+    {
+      "authors": [
+        "Jo Marchant"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science & Technology",
+      "position": "2016.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2016"
+      },
+      "title": "Cure",
+      "votes": "1887"
+    },
+    {
+      "authors": [
+        "Ed Yong"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science & Technology",
+      "position": "2016.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2016"
+      },
+      "title": "I Contain Multitudes",
+      "votes": "1618"
+    },
+    {
+      "authors": [
+        "Kevin Kelly"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science & Technology",
+      "position": "2016.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2016"
+      },
+      "title": "The Inevitable",
+      "votes": "1137"
+    },
+    {
+      "authors": [
+        "James Gleick"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science & Technology",
+      "position": "2016.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2016"
+      },
+      "title": "Time Travel",
+      "votes": "850"
+    },
+    {
+      "authors": [
+        "Cathy O'Neil"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science & Technology",
+      "position": "2016.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2016"
+      },
+      "title": "Weapons of Math Destruction",
+      "votes": "756"
+    },
+    {
+      "authors": [
+        "Julie Zickefoose"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science & Technology",
+      "position": "2016.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2016"
+      },
+      "title": "Baby Birds",
+      "votes": "664"
+    },
+    {
+      "authors": [
+        "Mary Ellen Hannibal"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Science & Technology",
+      "position": "2016.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2016"
+      },
+      "title": "Citizen Scientist",
+      "votes": "310"
+    },
+    {
+      "authors": [
+        "Neil deGrasse Tyson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science & Technology",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2017"
+      },
+      "title": "Astrophysics for People in a Hurry",
+      "votes": "42173"
+    },
+    {
+      "authors": [
+        "Angela Saini"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science & Technology",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2017"
+      },
+      "title": "Inferior",
+      "votes": "9945"
+    },
+    {
+      "authors": [
+        "Seth Stephens-Davidowitz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science & Technology",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2017"
+      },
+      "title": "Everybody Lies",
+      "votes": "8766"
+    },
+    {
+      "authors": [
+        "Jorge Cham"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science & Technology",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2017"
+      },
+      "title": "We Have No Idea",
+      "votes": "8511"
+    },
+    {
+      "authors": [
+        "Dan Egan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science & Technology",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2017"
+      },
+      "title": "The Death and Life of the Great Lakes",
+      "votes": "8262"
+    },
+    {
+      "authors": [
+        "Peter Godfrey-Smith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science & Technology",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2017"
+      },
+      "title": "Other Minds",
+      "votes": "7638"
+    },
+    {
+      "authors": [
+        "Gary Taubes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science & Technology",
+      "position": "2017.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2017"
+      },
+      "title": "The Case Against Sugar",
+      "votes": "7097"
+    },
+    {
+      "authors": [
+        "Bill Schutt"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science & Technology",
+      "position": "2017.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2017"
+      },
+      "title": "Cannibalism",
+      "votes": "6981"
+    },
+    {
+      "authors": [
+        "Florence Williams"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science & Technology",
+      "position": "2017.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2017"
+      },
+      "title": "The Nature Fix",
+      "votes": "5736"
+    },
+    {
+      "authors": [
+        "Derek Thompson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science & Technology",
+      "position": "2017.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2017"
+      },
+      "title": "Hit Makers",
+      "votes": "5588"
+    },
+    {
+      "authors": [
+        "Robert M. Sapolsky"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science & Technology",
+      "position": "2017.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2017"
+      },
+      "title": "Behave",
+      "votes": "2003"
+    },
+    {
+      "authors": [
+        "Eric Barker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science & Technology",
+      "position": "2017.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2017"
+      },
+      "title": "Barking Up the Wrong Tree",
+      "votes": "1679"
+    },
+    {
+      "authors": [
+        "Adam Alter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science & Technology",
+      "position": "2017.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2017"
+      },
+      "title": "Irresistible",
+      "votes": "1398"
+    },
+    {
+      "authors": [
+        "Paul A. Offit"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science & Technology",
+      "position": "2017.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2017"
+      },
+      "title": "Pandora's Lab",
+      "votes": "1119"
+    },
+    {
+      "authors": [
+        "Lawrence M. Krauss"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science & Technology",
+      "position": "2017.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2017"
+      },
+      "title": "The Greatest Story Ever Told\u2014So Far",
+      "votes": "959"
+    },
+    {
+      "authors": [
+        "Jennifer A. Doudna"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science & Technology",
+      "position": "2017.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2017"
+      },
+      "title": "A Crack in Creation",
+      "votes": "892"
+    },
+    {
+      "authors": [
+        "Joichi Ito"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science & Technology",
+      "position": "2017.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2017"
+      },
+      "title": "Whiplash",
+      "votes": "766"
+    },
+    {
+      "authors": [
+        "Kelly Weinersmith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science & Technology",
+      "position": "2017.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2017"
+      },
+      "title": "Soonish",
+      "votes": "758"
+    },
+    {
+      "authors": [
+        "Sam Kean"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science & Technology",
+      "position": "2017.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2017"
+      },
+      "title": "Caesar's Last Breath",
+      "votes": "519"
+    },
+    {
+      "authors": [
+        "Max Tegmark"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Science & Technology",
+      "position": "2017.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2017"
+      },
+      "title": "Life 3.0",
+      "votes": "498"
+    },
+    {
+      "authors": [
+        "Steve Brusatte"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Science & Technology",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2018"
+      },
+      "title": "The Rise and Fall of the Dinosaurs: A New History of a Lost World",
+      "votes": "19050"
+    },
+    {
+      "authors": [
+        "Stephen W. Hawking"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Science & Technology",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2018"
+      },
+      "title": "Brief Answers to the Big Questions",
+      "votes": "13783"
+    },
+    {
+      "authors": [
+        "Carl Zimmer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Science & Technology",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2018"
+      },
+      "title": "She Has Her Mother's Laugh",
+      "votes": "12026"
+    },
+    {
+      "authors": [
+        "Claire L. Evans"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Science & Technology",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2018"
+      },
+      "title": "Broad Band",
+      "votes": "10651"
+    },
+    {
+      "authors": [
+        "Michael Pollan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Science & Technology",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2018"
+      },
+      "title": "How to Change Your Mind",
+      "votes": "10021"
+    },
+    {
+      "authors": [
+        "Nick Pyenson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Science & Technology",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2018"
+      },
+      "title": "Spying on Whales",
+      "votes": "9510"
+    },
+    {
+      "authors": [
+        "Michio Kaku"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Science & Technology",
+      "position": "2018.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2018"
+      },
+      "title": "The Future of Humanity",
+      "votes": "9127"
+    },
+    {
+      "authors": [
+        "Daniel H. Pink"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Science & Technology",
+      "position": "2018.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2018"
+      },
+      "title": "When",
+      "votes": "9118"
+    },
+    {
+      "authors": [
+        "Carlo Rovelli"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Science & Technology",
+      "position": "2018.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2018"
+      },
+      "title": "The Order of Time",
+      "votes": "8538"
+    },
+    {
+      "authors": [
+        "Neil deGrasse Tyson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Science & Technology",
+      "position": "2018.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2018"
+      },
+      "title": "Accessory to War",
+      "votes": "7355"
+    },
+    {
+      "authors": [
+        "Adam Becker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Science & Technology",
+      "position": "2018.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2018"
+      },
+      "title": "What Is Real?",
+      "votes": "2135"
+    },
+    {
+      "authors": [
+        "Christian Davenport"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Science & Technology",
+      "position": "2018.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2018"
+      },
+      "title": "The Space Barons",
+      "votes": "2036"
+    },
+    {
+      "authors": [
+        "Justin McElroy"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Science & Technology",
+      "position": "2018.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2018"
+      },
+      "title": "The Sawbones Book",
+      "votes": "1976"
+    },
+    {
+      "authors": [
+        "Sabine Hossenfelder"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Science & Technology",
+      "position": "2018.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2018"
+      },
+      "title": "Lost in Math",
+      "votes": "1922"
+    },
+    {
+      "authors": [
+        "Lucy Jones"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Science & Technology",
+      "position": "2018.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2018"
+      },
+      "title": "The Big Ones",
+      "votes": "1691"
+    },
+    {
+      "authors": [
+        "Ryan North"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Science & Technology",
+      "position": "2018.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2018"
+      },
+      "title": "How to Invent Everything",
+      "votes": "1461"
+    },
+    {
+      "authors": [
+        "Varun Sivaram"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Science & Technology",
+      "position": "2018.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2018"
+      },
+      "title": "Taming the Sun",
+      "votes": "1430"
+    },
+    {
+      "authors": [
+        "David Reich"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Science & Technology",
+      "position": "2018.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2018"
+      },
+      "title": "Who We Are and How We Got Here",
+      "votes": "1375"
+    },
+    {
+      "authors": [
+        "Safiya Umoja Noble"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Science & Technology",
+      "position": "2018.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2018"
+      },
+      "title": "Algorithms of Oppression",
+      "votes": "1098"
+    },
+    {
+      "authors": [
+        "David Quammen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Science & Technology",
+      "position": "2018.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2018"
+      },
+      "title": "The Tangled Tree",
+      "votes": "658"
+    },
+    {
+      "authors": [
+        "Caitlin Doughty"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science & Technology",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2019"
+      },
+      "title": "Will My Cat Eat My Eyeballs? Big Questions from Tiny Mortals About Death",
+      "votes": "29594"
+    },
+    {
+      "authors": [
+        "Caroline Criado P\u00e9rez"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science & Technology",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2019"
+      },
+      "title": "Invisible Women",
+      "votes": "28859"
+    },
+    {
+      "authors": [
+        "Bill Bryson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science & Technology",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2019"
+      },
+      "title": "The Body",
+      "votes": "15466"
+    },
+    {
+      "authors": [
+        "Randall Munroe"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science & Technology",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2019"
+      },
+      "title": "How To",
+      "votes": "13830"
+    },
+    {
+      "authors": [
+        "Frans de Waal"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science & Technology",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2019"
+      },
+      "title": "Mama's Last Hug",
+      "votes": "12407"
+    },
+    {
+      "authors": [
+        "Cal Newport"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science & Technology",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2019"
+      },
+      "title": "Digital Minimalism",
+      "votes": "9468"
+    },
+    {
+      "authors": [
+        "David Wallace-Wells"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science & Technology",
+      "position": "2019.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2019"
+      },
+      "title": "The Uninhabitable Earth",
+      "votes": "8174"
+    },
+    {
+      "authors": [
+        "Robert Macfarlane"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science & Technology",
+      "position": "2019.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2019"
+      },
+      "title": "Underland",
+      "votes": "7023"
+    },
+    {
+      "authors": [
+        "Richard Preston"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science & Technology",
+      "position": "2019.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2019"
+      },
+      "title": "Crisis in the Red Zone",
+      "votes": "6113"
+    },
+    {
+      "authors": [
+        "Jonathan Safran Foer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science & Technology",
+      "position": "2019.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2019"
+      },
+      "title": "We Are the Weather",
+      "votes": "5890"
+    },
+    {
+      "authors": [
+        "Judith Grisel"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science & Technology",
+      "position": "2019.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2019"
+      },
+      "title": "Never Enough",
+      "votes": "2899"
+    },
+    {
+      "authors": [
+        "Jamie Metzl"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science & Technology",
+      "position": "2019.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2019"
+      },
+      "title": "Hacking Darwin",
+      "votes": "2275"
+    },
+    {
+      "authors": [
+        "Nir Eyal"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science & Technology",
+      "position": "2019.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2019"
+      },
+      "title": "Indistractable",
+      "votes": "2202"
+    },
+    {
+      "authors": [
+        "Emily Nagoski"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science & Technology",
+      "position": "2019.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2019"
+      },
+      "title": "Burnout",
+      "votes": "1866"
+    },
+    {
+      "authors": [
+        "Gretchen McCulloch"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science & Technology",
+      "position": "2019.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2019"
+      },
+      "title": "Because Internet",
+      "votes": "1583"
+    },
+    {
+      "authors": [
+        "David A. Sinclair"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science & Technology",
+      "position": "2019.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2019"
+      },
+      "title": "Lifespan",
+      "votes": "920"
+    },
+    {
+      "authors": [
+        "Steffanie Strathdee"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science & Technology",
+      "position": "2019.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2019"
+      },
+      "title": "The Perfect Predator",
+      "votes": "914"
+    },
+    {
+      "authors": [
+        "Mike Isaac"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science & Technology",
+      "position": "2019.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2019"
+      },
+      "title": "Super Pumped",
+      "votes": "833"
+    },
+    {
+      "authors": [
+        "Sean Carroll"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science & Technology",
+      "position": "2019.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2019"
+      },
+      "title": "Something Deeply Hidden",
+      "votes": "790"
+    },
+    {
+      "authors": [
+        "Nicholas A. Christakis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Science & Technology",
+      "position": "2019.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2019"
+      },
+      "title": "Blueprint",
+      "votes": "788"
+    },
+    {
+      "authors": [
+        "David Attenborough"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science & Technology",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2020"
+      },
+      "title": "A Life on Our Planet: My Witness Statement and a Vision for the Future",
+      "votes": "35675"
+    },
+    {
+      "authors": [
+        "Adam Rutherford"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science & Technology",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2020"
+      },
+      "title": "How to Argue With a Racist",
+      "votes": "21152"
+    },
+    {
+      "authors": [
+        "James Nestor"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science & Technology",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2020"
+      },
+      "title": "Breath",
+      "votes": "13101"
+    },
+    {
+      "authors": [
+        "Merlin Sheldrake"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science & Technology",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2020"
+      },
+      "title": "Entangled Life",
+      "votes": "11411"
+    },
+    {
+      "authors": [
+        "Katie Mack"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science & Technology",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2020"
+      },
+      "title": "The End of Everything",
+      "votes": "10860"
+    },
+    {
+      "authors": [
+        "Sarah Frier"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science & Technology",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2020"
+      },
+      "title": "No Filter",
+      "votes": "10809"
+    },
+    {
+      "authors": [
+        "Christiana Figueres"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science & Technology",
+      "position": "2020.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2020"
+      },
+      "title": "The Future We Choose",
+      "votes": "8692"
+    },
+    {
+      "authors": [
+        "Lulu Miller"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science & Technology",
+      "position": "2020.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2020"
+      },
+      "title": "Why Fish Don\u2019t Exist",
+      "votes": "8167"
+    },
+    {
+      "authors": [
+        "Bonnie Tsui"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science & Technology",
+      "position": "2020.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2020"
+      },
+      "title": "Why We Swim",
+      "votes": "7961"
+    },
+    {
+      "authors": [
+        "Helen Macdonald"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science & Technology",
+      "position": "2020.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2020"
+      },
+      "title": "Vesper Flights",
+      "votes": "7883"
+    },
+    {
+      "authors": [
+        "Mark Kenyon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science & Technology",
+      "position": "2020.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2020"
+      },
+      "title": "That Wild Country",
+      "votes": "3544"
+    },
+    {
+      "authors": [
+        "Hope Jahren"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science & Technology",
+      "position": "2020.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2020"
+      },
+      "title": "The Story of More",
+      "votes": "3333"
+    },
+    {
+      "authors": [
+        "Patrik Svensson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science & Technology",
+      "position": "2020.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2020"
+      },
+      "title": "The Book of Eels",
+      "votes": "3080"
+    },
+    {
+      "authors": [
+        "Sonia Shah"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science & Technology",
+      "position": "2020.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2020"
+      },
+      "title": "The Next Great Migration",
+      "votes": "2960"
+    },
+    {
+      "authors": [
+        "Brian Greene"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science & Technology",
+      "position": "2020.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2020"
+      },
+      "title": "Until the End of Time",
+      "votes": "2667"
+    },
+    {
+      "authors": [
+        "Jennifer Ackerman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science & Technology",
+      "position": "2020.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2020"
+      },
+      "title": "The Bird Way",
+      "votes": "1108"
+    },
+    {
+      "authors": [
+        "Michael Shellenberger"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science & Technology",
+      "position": "2020.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2020"
+      },
+      "title": "Apocalypse Never",
+      "votes": "933"
+    },
+    {
+      "authors": [
+        "Jonathan C. Slaght"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science & Technology",
+      "position": "2020.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2020"
+      },
+      "title": "Owls of the Eastern Ice",
+      "votes": "833"
+    },
+    {
+      "authors": [
+        "Neil Shubin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science & Technology",
+      "position": "2020.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2020"
+      },
+      "title": "Some Assembly Required",
+      "votes": "789"
+    },
+    {
+      "authors": [
+        "Michael Kanaan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Science & Technology",
+      "position": "2020.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-science-technology-books-2020"
+      },
+      "title": "T-Minus AI",
+      "votes": "475"
+    }
+  ],
+  "fetched_at": "2026-07-28T04:20:46Z",
+  "list_id": "goodreads_choice_awards_science_technology",
+  "list_name": "Goodreads Choice Awards - Science & Technology (discontinued)",
+  "match_series": false,
+  "notes": [],
+  "parser": "goodreads_choice_awards_science_technology",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Goodreads Choice Awards - Science & Technology (discontinued)",
+    "source_id": "goodreads_choice_awards_science_technology",
+    "url": "https://www.goodreads.com/choiceawards"
+  }
+}

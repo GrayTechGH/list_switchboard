@@ -835,12 +835,13 @@
       "title": "Citizen of the Galaxy"
     }
   ],
-  "fetched_at": "2026-07-11T00:42:53Z",
+  "fetched_at": "2026-07-23T06:04:26Z",
   "list_id": "locus_all_time_2012_sf_20th_novel",
   "list_name": "Locus - All-Time 2012 20th Century SF Novel",
   "match_series": false,
   "notes": [],
   "parser": "locus_all_time_2012_sf_20th_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Locus - All-Time 2012 20th Century SF Novel",

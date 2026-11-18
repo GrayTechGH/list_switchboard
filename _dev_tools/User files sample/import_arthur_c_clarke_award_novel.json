@@ -1,0 +1,2740 @@
+{
+  "append_state": {
+    "entry_count": 247,
+    "last_entry_key": "the salt oracle|lorraine wilson",
+    "last_position": "2026.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Margaret Atwood"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987",
+      "result": "winner",
+      "title": "The Handmaid\u2019s Tale"
+    },
+    {
+      "authors": [
+        "Bob Shaw"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987.01",
+      "result": "nominee",
+      "title": "The Ragged Astronauts"
+    },
+    {
+      "authors": [
+        "Greg Bear"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987.02",
+      "result": "nominee",
+      "title": "Eon"
+    },
+    {
+      "authors": [
+        "Samuel R. Delany"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987.03",
+      "result": "nominee",
+      "title": "Stars in my Pocket like Grains of Sand"
+    },
+    {
+      "authors": [
+        "Gwyneth Jones"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987.04",
+      "result": "nominee",
+      "title": "Escape Plans"
+    },
+    {
+      "authors": [
+        "Kim Stanley Robinson"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987.05",
+      "result": "nominee",
+      "title": "The Memory of Whiteness"
+    },
+    {
+      "authors": [
+        "Josephine Saxton"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987.06",
+      "result": "nominee",
+      "title": "Queen of the States"
+    },
+    {
+      "authors": [
+        "Lucius Shepard"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987.07",
+      "result": "nominee",
+      "title": "Green Eyes"
+    },
+    {
+      "authors": [
+        "George Turner"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988",
+      "result": "winner",
+      "title": "The Sea and Summer"
+    },
+    {
+      "authors": [
+        "Stanislaw Lem"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988.01",
+      "result": "nominee",
+      "title": "Fiasco"
+    },
+    {
+      "authors": [
+        "Michael Bishop"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988.02",
+      "result": "nominee",
+      "title": "Ancient of Days"
+    },
+    {
+      "authors": [
+        "John Crowley"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988.03",
+      "result": "nominee",
+      "title": "Aegypt"
+    },
+    {
+      "authors": [
+        "Ken Grimwood"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988.04",
+      "result": "nominee",
+      "title": "Replay"
+    },
+    {
+      "authors": [
+        "Keith Roberts"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988.05",
+      "result": "nominee",
+      "title": "Gr\u00e1inne"
+    },
+    {
+      "authors": [
+        "H.F. Saint"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988.06",
+      "result": "nominee",
+      "title": "Memoirs of an Invisible Man"
+    },
+    {
+      "authors": [
+        "Rachel Pollack"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989",
+      "result": "winner",
+      "title": "Unquenchable Fire"
+    },
+    {
+      "authors": [
+        "Brian Stableford"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989.01",
+      "result": "nominee",
+      "title": "The Empire of Fear"
+    },
+    {
+      "authors": [
+        "Michael Bishop"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989.02",
+      "result": "nominee",
+      "title": "Philip K. Dick is Dead, Alas"
+    },
+    {
+      "authors": [
+        "Richard Grant"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989.03",
+      "result": "nominee",
+      "title": "Rumours of Spring"
+    },
+    {
+      "authors": [
+        "Gwyneth Jones"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989.04",
+      "result": "nominee",
+      "title": "Kairos"
+    },
+    {
+      "authors": [
+        "Lucius Shepard"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989.05",
+      "result": "nominee",
+      "title": "Life During Wartime"
+    },
+    {
+      "authors": [
+        "Ian Watson"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989.06",
+      "result": "nominee",
+      "title": "Whores of Babylon"
+    },
+    {
+      "authors": [
+        "Geoff Ryman"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990",
+      "result": "winner",
+      "title": "The Child Garden"
+    },
+    {
+      "authors": [
+        "Jonathan Carroll"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.01",
+      "result": "nominee",
+      "title": "A Child Across the Sky"
+    },
+    {
+      "authors": [
+        "Lisa Goldstein"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.02",
+      "result": "nominee",
+      "title": "A Mask for the General"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.03",
+      "result": "nominee",
+      "title": "Desolation Road"
+    },
+    {
+      "authors": [
+        "Paul Park"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.04",
+      "result": "nominee",
+      "title": "Soldiers of Paradise"
+    },
+    {
+      "authors": [
+        "Mike Resnick"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.05",
+      "result": "nominee",
+      "title": "Ivory"
+    },
+    {
+      "authors": [
+        "David Zindell"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.06",
+      "result": "nominee",
+      "title": "Neverness"
+    },
+    {
+      "authors": [
+        "Colin Greenland"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991",
+      "result": "winner",
+      "title": "Take Back Plenty"
+    },
+    {
+      "authors": [
+        "Mary Gentle"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991.01",
+      "result": "nominee",
+      "title": "Rats and Gargoyles"
+    },
+    {
+      "authors": [
+        "Iain M. Banks"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991.02",
+      "result": "nominee",
+      "title": "Use of Weapons"
+    },
+    {
+      "authors": [
+        "Misha Nogha"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991.03",
+      "result": "nominee",
+      "title": "Red Spider, White Web"
+    },
+    {
+      "authors": [
+        "K.W. Jeter"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991.04",
+      "result": "nominee",
+      "title": "Farewell Horizontal"
+    },
+    {
+      "authors": [
+        "Pat Murphy"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991.05",
+      "result": "nominee",
+      "title": "The City, Not Long After"
+    },
+    {
+      "authors": [
+        "Pat Cadigan"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992",
+      "result": "winner",
+      "title": "Synners"
+    },
+    {
+      "authors": [
+        "Paul J. McAuley"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.01",
+      "result": "nominee",
+      "title": "Eternal Light"
+    },
+    {
+      "authors": [
+        "Stephen Baxter"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.02",
+      "result": "nominee",
+      "title": "Raft"
+    },
+    {
+      "authors": [
+        "Gwyneth Jones"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.03",
+      "result": "nominee",
+      "title": "White Queen"
+    },
+    {
+      "authors": [
+        "Richard Paul Russo"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.04",
+      "result": "nominee",
+      "title": "Subterranean Gallery"
+    },
+    {
+      "authors": [
+        "Dan Simmons"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.05",
+      "result": "nominee",
+      "title": "The Hyperion Cantos"
+    },
+    {
+      "authors": [
+        "Marge Piercy"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993",
+      "result": "winner",
+      "title": "He, She and It"
+    },
+    {
+      "authors": [
+        "Kim Stanley Robinson"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.01",
+      "result": "nominee",
+      "title": "Red Mars"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.02",
+      "result": "nominee",
+      "title": "Hearts, Hands and Voices"
+    },
+    {
+      "authors": [
+        "Richard Paul Russo"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.03",
+      "result": "nominee",
+      "title": "Destroying Angel"
+    },
+    {
+      "authors": [
+        "Michael Swanwick"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.04",
+      "result": "nominee",
+      "title": "Stations of the Tide"
+    },
+    {
+      "authors": [
+        "Sue Thomas"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.05",
+      "result": "nominee",
+      "title": "Correspondence"
+    },
+    {
+      "authors": [
+        "Lisa Tuttle"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.06",
+      "result": "nominee",
+      "title": "Lost Futures"
+    },
+    {
+      "authors": [
+        "Connie Willis"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.07",
+      "result": "nominee",
+      "title": "Doomsday Book"
+    },
+    {
+      "authors": [
+        "Jeff Noon"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994",
+      "result": "winner",
+      "title": "Vurt"
+    },
+    {
+      "authors": [
+        "John Barnes"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.01",
+      "result": "nominee",
+      "title": "A Million Open Doors"
+    },
+    {
+      "authors": [
+        "Nicola Griffith"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.02",
+      "result": "nominee",
+      "title": "Ammonite"
+    },
+    {
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.03",
+      "result": "nominee",
+      "title": "Snow Crash"
+    },
+    {
+      "authors": [
+        "Michael Swanwick"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.04",
+      "result": "nominee",
+      "title": "The Iron Dragon\u2019s Daughter"
+    },
+    {
+      "authors": [
+        "David Zindell"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.05",
+      "result": "nominee",
+      "title": "The Broken God"
+    },
+    {
+      "authors": [
+        "Pat Cadigan"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995",
+      "result": "winner",
+      "title": "Fools"
+    },
+    {
+      "authors": [
+        "John Barnes"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.01",
+      "result": "nominee",
+      "title": "Mother of Storms"
+    },
+    {
+      "authors": [
+        "Gwyneth Jones"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.02",
+      "result": "nominee",
+      "title": "North Wind"
+    },
+    {
+      "authors": [
+        "Paul J. McAuley"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.03",
+      "result": "nominee",
+      "title": "Pasquale\u2019s Angel"
+    },
+    {
+      "authors": [
+        "James Morrow"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.04",
+      "result": "nominee",
+      "title": "Towing Jehovah"
+    },
+    {
+      "authors": [
+        "Kristine Kathryn Rusch"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.05",
+      "result": "nominee",
+      "title": "Alien Influences"
+    },
+    {
+      "authors": [
+        "Paul J. McAuley"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996",
+      "result": "winner",
+      "title": "Fairyland"
+    },
+    {
+      "authors": [
+        "Ken MacLeod"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.01",
+      "result": "nominee",
+      "title": "The Star Fraction"
+    },
+    {
+      "authors": [
+        "Patricia Anthony"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.02",
+      "result": "nominee",
+      "title": "Happy Policeman"
+    },
+    {
+      "authors": [
+        "Stephen Baxter"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.03",
+      "result": "nominee",
+      "title": "The Time Ships"
+    },
+    {
+      "authors": [
+        "Christopher Priest"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.04",
+      "result": "nominee",
+      "title": "The Prestige"
+    },
+    {
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.05",
+      "result": "nominee",
+      "title": "The Diamond Age"
+    },
+    {
+      "authors": [
+        "Amitav Ghosh"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997",
+      "result": "winner",
+      "title": "The Calcutta Chromosome"
+    },
+    {
+      "authors": [
+        "Stephen Baxter"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.01",
+      "result": "nominee",
+      "title": "Voyage"
+    },
+    {
+      "authors": [
+        "Jack McDevitt"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.02",
+      "result": "nominee",
+      "title": "Engines of God"
+    },
+    {
+      "authors": [
+        "Kim Stanley Robinson"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.03",
+      "result": "nominee",
+      "title": "Blue Mars"
+    },
+    {
+      "authors": [
+        "Sheri S. Tepper"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.04",
+      "result": "nominee",
+      "title": "Gibbon\u2019s Decline and Fall"
+    },
+    {
+      "authors": [
+        "N. Lee Wood"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.05",
+      "result": "nominee",
+      "title": "Looking for the Mahdi"
+    },
+    {
+      "authors": [
+        "Mary Doria Russell"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998",
+      "result": "winner",
+      "title": "The Sparrow"
+    },
+    {
+      "authors": [
+        "Stephen Baxter"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.01",
+      "result": "nominee",
+      "title": "Titan"
+    },
+    {
+      "authors": [
+        "Elizabeth Hand"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.02",
+      "result": "nominee",
+      "title": "Glimmering"
+    },
+    {
+      "authors": [
+        "James Lovegrove"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.03",
+      "result": "nominee",
+      "title": "Days"
+    },
+    {
+      "authors": [
+        "Jeff Noon"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.04",
+      "result": "nominee",
+      "title": "Nymphomation"
+    },
+    {
+      "authors": [
+        "Sheri S. Tepper"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.05",
+      "result": "nominee",
+      "title": "The Family Tree"
+    },
+    {
+      "authors": [
+        "Tricia Sullivan"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999",
+      "result": "winner",
+      "title": "Dreaming In Smoke"
+    },
+    {
+      "authors": [
+        "John Barnes"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.01",
+      "result": "nominee",
+      "title": "Earth Made Of Glass"
+    },
+    {
+      "authors": [
+        "Peter Delacorte"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.02",
+      "result": "nominee",
+      "title": "Time On My Hands"
+    },
+    {
+      "authors": [
+        "Ken MacLeod"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.03",
+      "result": "nominee",
+      "title": "The Cassini Division"
+    },
+    {
+      "authors": [
+        "Christopher Priest"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.04",
+      "result": "nominee",
+      "title": "The Extremes"
+    },
+    {
+      "authors": [
+        "Alison Sinclair"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.05",
+      "result": "nominee",
+      "title": "Cavalcade"
+    },
+    {
+      "authors": [
+        "Bruce Sterling"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000",
+      "result": "winner",
+      "title": "Distraction"
+    },
+    {
+      "authors": [
+        "Stephen Baxter"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.01",
+      "result": "nominee",
+      "title": "Manifold: Time"
+    },
+    {
+      "authors": [
+        "Kathleen Ann Goonan"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.02",
+      "result": "nominee",
+      "title": "The Bones of Time"
+    },
+    {
+      "authors": [
+        "Justina Robson"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.03",
+      "result": "nominee",
+      "title": "Silver Screen"
+    },
+    {
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.04",
+      "result": "nominee",
+      "title": "Cryptonomicon"
+    },
+    {
+      "authors": [
+        "Vernor Vinge"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.05",
+      "result": "nominee",
+      "title": "A Deepness in the Sky"
+    },
+    {
+      "authors": [
+        "China Mi\u00e9ville"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001",
+      "result": "winner",
+      "title": "Perdido Street Station"
+    },
+    {
+      "authors": [
+        "Octavia E. Butler"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.01",
+      "result": "nominee",
+      "title": "Parable of the Talents"
+    },
+    {
+      "authors": [
+        "Mary Gentle"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.02",
+      "result": "nominee",
+      "title": "Ash: A Secret History"
+    },
+    {
+      "authors": [
+        "Ken MacLeod"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.03",
+      "result": "nominee",
+      "title": "Cosmonaut Keep"
+    },
+    {
+      "authors": [
+        "Alastair Reynolds"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.04",
+      "result": "nominee",
+      "title": "Revelation Space"
+    },
+    {
+      "authors": [
+        "Adam Roberts"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.05",
+      "result": "nominee",
+      "title": "Salt"
+    },
+    {
+      "authors": [
+        "Gwyneth Jones"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002",
+      "result": "winner",
+      "title": "Bold As Love"
+    },
+    {
+      "authors": [
+        "Jon Courtenay Grimwood"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.01",
+      "result": "nominee",
+      "title": "Pashazade"
+    },
+    {
+      "authors": [
+        "Peter F. Hamilton"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.02",
+      "result": "nominee",
+      "title": "Fallen Dragon"
+    },
+    {
+      "authors": [
+        "Paul J. McAuley"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.03",
+      "result": "nominee",
+      "title": "The Secret of Life"
+    },
+    {
+      "authors": [
+        "Justina Robson"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.04",
+      "result": "nominee",
+      "title": "Mappa Mundi"
+    },
+    {
+      "authors": [
+        "Connie Willis"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.05",
+      "result": "nominee",
+      "title": "Passage"
+    },
+    {
+      "authors": [
+        "Christopher Priest"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003",
+      "result": "winner",
+      "title": "The Separation"
+    },
+    {
+      "authors": [
+        "David Brin"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.01",
+      "result": "nominee",
+      "title": "Kil\u2019n People"
+    },
+    {
+      "authors": [
+        "M. John Harrison"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.02",
+      "result": "nominee",
+      "title": "Light"
+    },
+    {
+      "authors": [
+        "China Mi\u00e9ville"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.03",
+      "result": "nominee",
+      "title": "The Scar"
+    },
+    {
+      "authors": [
+        "Elizabeth Moon"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.04",
+      "result": "nominee",
+      "title": "Speed of Dark"
+    },
+    {
+      "authors": [
+        "Kim Stanley Robinson"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.05",
+      "result": "nominee",
+      "title": "The Years of Rice and Salt"
+    },
+    {
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004",
+      "result": "winner",
+      "title": "Quicksilver"
+    },
+    {
+      "authors": [
+        "Stephen Baxter"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.01",
+      "result": "nominee",
+      "title": "Coalescent"
+    },
+    {
+      "authors": [
+        "Greg Bear"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.02",
+      "result": "nominee",
+      "title": "Darwin\u2019s Children"
+    },
+    {
+      "authors": [
+        "William Gibson"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.03",
+      "result": "nominee",
+      "title": "Pattern Recognition"
+    },
+    {
+      "authors": [
+        "Gwyneth Jones"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.04",
+      "result": "nominee",
+      "title": "Midnight Lamp"
+    },
+    {
+      "authors": [
+        "Tricia Sullivan"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.05",
+      "result": "nominee",
+      "title": "Maul"
+    },
+    {
+      "authors": [
+        "China Mi\u00e9ville"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005",
+      "result": "winner",
+      "title": "Iron Council"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.01",
+      "result": "nominee",
+      "title": "River of Gods"
+    },
+    {
+      "authors": [
+        "David Mitchell"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.02",
+      "result": "nominee",
+      "title": "Cloud Atlas"
+    },
+    {
+      "authors": [
+        "Richard Morgan"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.03",
+      "result": "nominee",
+      "title": "Market Forces"
+    },
+    {
+      "authors": [
+        "Audrey Niffenegger"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.04",
+      "result": "nominee",
+      "title": "The Time Traveler\u2019s Wife"
+    },
+    {
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.05",
+      "result": "nominee",
+      "title": "The System of the World"
+    },
+    {
+      "authors": [
+        "Geoff Ryman"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006",
+      "result": "winner",
+      "title": "Air"
+    },
+    {
+      "authors": [
+        "Kazuo Ishiguro"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.01",
+      "result": "nominee",
+      "title": "Never Let Me Go"
+    },
+    {
+      "authors": [
+        "Ken MacLeod"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.02",
+      "result": "nominee",
+      "title": "Learning The World"
+    },
+    {
+      "authors": [
+        "Alastair Reynolds"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.03",
+      "result": "nominee",
+      "title": "Pushing Ice"
+    },
+    {
+      "authors": [
+        "Charles Stross"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.04",
+      "result": "nominee",
+      "title": "Accelerando"
+    },
+    {
+      "authors": [
+        "Liz Williams"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.05",
+      "result": "nominee",
+      "title": "Banner Of Souls"
+    },
+    {
+      "authors": [
+        "M. John Harrison"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007",
+      "result": "winner",
+      "title": "Nova Swing"
+    },
+    {
+      "authors": [
+        "Jon Courtenay Grimwood"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.01",
+      "result": "nominee",
+      "title": "End of the World Blues"
+    },
+    {
+      "authors": [
+        "Lydia Millet"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.02",
+      "result": "nominee",
+      "title": "Oh Pure and Radiant Heart"
+    },
+    {
+      "authors": [
+        "Jan Morris"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.03",
+      "result": "nominee",
+      "title": "Hav"
+    },
+    {
+      "authors": [
+        "Adam Roberts"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.04",
+      "result": "nominee",
+      "title": "Gradisil"
+    },
+    {
+      "authors": [
+        "Brian Stableford"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.05",
+      "result": "nominee",
+      "title": "Streaking"
+    },
+    {
+      "authors": [
+        "Richard Morgan"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008",
+      "result": "winner",
+      "title": "Thirteen"
+    },
+    {
+      "authors": [
+        "Matthew de Abaitua"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.01",
+      "result": "nominee",
+      "title": "The Red Men"
+    },
+    {
+      "authors": [
+        "Stephen Baxter"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.02",
+      "result": "nominee",
+      "title": "The H-Bomb Girl"
+    },
+    {
+      "authors": [
+        "Sarah Hall"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.03",
+      "result": "nominee",
+      "title": "The Carhullan Army"
+    },
+    {
+      "authors": [
+        "Steven Hall"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.04",
+      "result": "nominee",
+      "title": "The Raw Shark Texts"
+    },
+    {
+      "authors": [
+        "Ken MacLeod"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.05",
+      "result": "nominee",
+      "title": "The Execution Channel"
+    },
+    {
+      "authors": [
+        "Ian R. MacLeod"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009",
+      "result": "winner",
+      "title": "Song of Time"
+    },
+    {
+      "authors": [
+        "Paul McAuley"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009.01",
+      "result": "nominee",
+      "title": "The Quiet War"
+    },
+    {
+      "authors": [
+        "Alastair Reynolds"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009.02",
+      "result": "nominee",
+      "title": "House of Suns"
+    },
+    {
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009.03",
+      "result": "nominee",
+      "title": "Anathem"
+    },
+    {
+      "authors": [
+        "Sheri S. Tepper"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009.04",
+      "result": "nominee",
+      "title": "The Margarets"
+    },
+    {
+      "authors": [
+        "Mark Wernham"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009.05",
+      "result": "nominee",
+      "title": "Martin Martin\u2019s on the Other Side"
+    },
+    {
+      "authors": [
+        "China Mi\u00e9ville"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010",
+      "result": "winner",
+      "title": "The City & The City"
+    },
+    {
+      "authors": [
+        "Gwyneth Jones"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.01",
+      "result": "nominee",
+      "title": "Spirit"
+    },
+    {
+      "authors": [
+        "Adam Roberts"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.02",
+      "result": "nominee",
+      "title": "Yellow Blue Tibia"
+    },
+    {
+      "authors": [
+        "Kim Stanley Robinson"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.03",
+      "result": "nominee",
+      "title": "Galileo\u2019s Dream"
+    },
+    {
+      "authors": [
+        "Marcel Theroux"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.04",
+      "result": "nominee",
+      "title": "Far North"
+    },
+    {
+      "authors": [
+        "Chris Wooding"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.05",
+      "result": "nominee",
+      "title": "Retribution Falls"
+    },
+    {
+      "authors": [
+        "Lauren Beukes"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011",
+      "result": "winner",
+      "title": "Zoo City"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.01",
+      "result": "nominee",
+      "title": "The Dervish House"
+    },
+    {
+      "authors": [
+        "Patrick Ness"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.02",
+      "result": "nominee",
+      "title": "Monsters of Men"
+    },
+    {
+      "authors": [
+        "Richard Powers"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.03",
+      "result": "nominee",
+      "title": "Generosity"
+    },
+    {
+      "authors": [
+        "Tim Powers"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.04",
+      "result": "nominee",
+      "title": "Declare"
+    },
+    {
+      "authors": [
+        "Tricia Sullivan"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.05",
+      "result": "nominee",
+      "title": "Lightborn"
+    },
+    {
+      "authors": [
+        "Jane Rogers"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012",
+      "result": "winner",
+      "title": "The Testament of Jessie Lamb"
+    },
+    {
+      "authors": [
+        "Greg Bear"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.01",
+      "result": "nominee",
+      "title": "Hull Zero Three"
+    },
+    {
+      "authors": [
+        "Drew Magary"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.02",
+      "result": "nominee",
+      "title": "The End Specialist"
+    },
+    {
+      "authors": [
+        "China Mi\u00e9ville"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.03",
+      "result": "nominee",
+      "title": "Embassytown"
+    },
+    {
+      "authors": [
+        "Charles Stross"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.04",
+      "result": "nominee",
+      "title": "Rule 34"
+    },
+    {
+      "authors": [
+        "Sheri S. Tepper"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.05",
+      "result": "nominee",
+      "title": "The Waters Rising"
+    },
+    {
+      "authors": [
+        "Chris Beckett"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013",
+      "result": "winner",
+      "title": "Dark Eden"
+    },
+    {
+      "authors": [
+        "Adrian Barnes"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "title": "Nod"
+    },
+    {
+      "authors": [
+        "Nick Harkaway"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "title": "Angelmaker"
+    },
+    {
+      "authors": [
+        "Peter Heller"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "title": "The Dog Stars"
+    },
+    {
+      "authors": [
+        "Ken MacLeod"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.04",
+      "result": "nominee",
+      "title": "Intrusion"
+    },
+    {
+      "authors": [
+        "Kim Stanley Robinson"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.05",
+      "result": "nominee",
+      "title": "2312"
+    },
+    {
+      "authors": [
+        "Ann Leckie"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014",
+      "result": "winner",
+      "title": "Ancillary Justice"
+    },
+    {
+      "authors": [
+        "Kameron Hurley"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "title": "God\u2019s War"
+    },
+    {
+      "authors": [
+        "Phillip Mann"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "title": "The Disestablishment of Paradise"
+    },
+    {
+      "authors": [
+        "Ramez Naam"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "title": "Nexus"
+    },
+    {
+      "authors": [
+        "Christopher Priest"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.04",
+      "result": "nominee",
+      "title": "The Adjacent"
+    },
+    {
+      "authors": [
+        "James Smythe"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.05",
+      "result": "nominee",
+      "title": "The Machine"
+    },
+    {
+      "authors": [
+        "Emily St John Mandel"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015",
+      "result": "winner",
+      "title": "Station Eleven"
+    },
+    {
+      "authors": [
+        "M.R. Carey"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.01",
+      "result": "nominee",
+      "title": "The Girl With All The Gifts"
+    },
+    {
+      "authors": [
+        "Michel Faber"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.02",
+      "result": "nominee",
+      "title": "The Book Of Strange New Things"
+    },
+    {
+      "authors": [
+        "Dave Hutchinson"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.03",
+      "result": "nominee",
+      "title": "Europe In Autumn"
+    },
+    {
+      "authors": [
+        "Emmi It\u00e4ranta"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.04",
+      "result": "nominee",
+      "title": "Memory Of Water"
+    },
+    {
+      "authors": [
+        "Claire North"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.05",
+      "result": "nominee",
+      "title": "The First Fifteen Lives Of Harry August"
+    },
+    {
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016",
+      "result": "winner",
+      "title": "Children of Time"
+    },
+    {
+      "authors": [
+        "Becky Chambers"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.01",
+      "result": "nominee",
+      "title": "The Long Way to a Small Angry Planet"
+    },
+    {
+      "authors": [
+        "Dave Hutchinson"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.02",
+      "result": "nominee",
+      "title": "Europe at Midnight"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.03",
+      "result": "nominee",
+      "title": "The Book of Phoenix"
+    },
+    {
+      "authors": [
+        "Iain Pears"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.04",
+      "result": "nominee",
+      "title": "Arcadia"
+    },
+    {
+      "authors": [
+        "J.P. Smythe"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.05",
+      "result": "nominee",
+      "title": "Way Down Dark"
+    },
+    {
+      "authors": [
+        "Colson Whitehead"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017",
+      "result": "winner",
+      "title": "The Underground Railroad"
+    },
+    {
+      "authors": [
+        "Becky Chambers"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "A Closed and Common Orbit"
+    },
+    {
+      "authors": [
+        "Yoon Ha Lee"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "Ninefox Gambit"
+    },
+    {
+      "authors": [
+        "Emma Newman"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "title": "After Atlas"
+    },
+    {
+      "authors": [
+        "Tricia Sullivan"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.04",
+      "result": "nominee",
+      "title": "Occupy Me"
+    },
+    {
+      "authors": [
+        "Lavie Tidhar"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.05",
+      "result": "nominee",
+      "title": "Central Station"
+    },
+    {
+      "authors": [
+        "Anne Charnock"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018",
+      "result": "winner",
+      "title": "Dreams Before the Start of Time"
+    },
+    {
+      "authors": [
+        "C. Robert Cargill"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "Sea of Rust"
+    },
+    {
+      "authors": [
+        "Omar El Akkad"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "title": "American War"
+    },
+    {
+      "authors": [
+        "Jaroslav Kalfar"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "title": "Spaceman of Bohemia"
+    },
+    {
+      "authors": [
+        "Jennie Melamed"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.04",
+      "result": "nominee",
+      "title": "Gather the Daughters"
+    },
+    {
+      "authors": [
+        "Jeff VanderMeer"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.05",
+      "result": "nominee",
+      "title": "Borne"
+    },
+    {
+      "authors": [
+        "Tade Thompson"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019",
+      "result": "winner",
+      "title": "Rosewater"
+    },
+    {
+      "authors": [
+        "Sue Burke"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "title": "Semiosis"
+    },
+    {
+      "authors": [
+        "Yoon Ha Lee"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "title": "Revenant Gun"
+    },
+    {
+      "authors": [
+        "Ahmed Saadawi"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "title": "Frankenstein in Baghdad"
+    },
+    {
+      "authors": [
+        "Simon St\u00e5lenhag"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "title": "The Electric State"
+    },
+    {
+      "authors": [
+        "Aliya Whiteley"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.05",
+      "result": "nominee",
+      "title": "The Loosening Skin"
+    },
+    {
+      "authors": [
+        "Namwali Serpell"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020",
+      "result": "winner",
+      "title": "The Old Drift"
+    },
+    {
+      "authors": [
+        "Charlie Jane Anders"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "The City in the Middle of the Night"
+    },
+    {
+      "authors": [
+        "Kameron Hurley"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "The Light Brigade"
+    },
+    {
+      "authors": [
+        "Arkady Martine"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "A Memory Called Empire"
+    },
+    {
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "title": "Cage of Souls"
+    },
+    {
+      "authors": [
+        "David Wellington"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.05",
+      "result": "nominee",
+      "title": "The Last Astronaut"
+    },
+    {
+      "authors": [
+        "Laura Jean McKay"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021",
+      "result": "winner",
+      "title": "The Animals in That Country"
+    },
+    {
+      "authors": [
+        "Patience Agbabi"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "The Infinite"
+    },
+    {
+      "authors": [
+        "Simon Jimenez"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "The Vanished Birds"
+    },
+    {
+      "authors": [
+        "Hao Jingfang"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "Vagabonds"
+    },
+    {
+      "authors": [
+        "R.B. Kelly"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "Edge of Heaven"
+    },
+    {
+      "authors": [
+        "Valerie Valdes"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.05",
+      "result": "nominee",
+      "title": "Chilling Effect"
+    },
+    {
+      "authors": [
+        "Harry Josephine Giles"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022",
+      "result": "winner",
+      "title": "Deep Wheel Orcadia"
+    },
+    {
+      "authors": [
+        "Kazuo Ishiguro"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "Klara and the Sun"
+    },
+    {
+      "authors": [
+        "Arkady Martine"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "A Desolation Called Peace"
+    },
+    {
+      "authors": [
+        "Courttia Newland"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "A River Called Time"
+    },
+    {
+      "authors": [
+        "Mercurio D. Rivera"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "Wergen: The Alien Love War"
+    },
+    {
+      "authors": [
+        "Aliya Whiteley"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.05",
+      "result": "nominee",
+      "title": "Skyward Inn"
+    },
+    {
+      "authors": [
+        "Ned Beauman"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023",
+      "result": "winner",
+      "title": "Venomous Lumpsucker"
+    },
+    {
+      "authors": [
+        "Aliette de Bodard"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "title": "The Red Scholar's Wake"
+    },
+    {
+      "authors": [
+        "Lucy Kissick"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "title": "Plutoshine"
+    },
+    {
+      "authors": [
+        "Herv\u00e9 Le Tellier"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "title": "The Anomaly"
+    },
+    {
+      "authors": [
+        "E. J. Swift"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "title": "The Coral Bones"
+    },
+    {
+      "authors": [
+        "Tom Watson"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023.05",
+      "result": "nominee",
+      "title": "Metronome"
+    },
+    {
+      "authors": [
+        "Martin MacInnes"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024",
+      "result": "winner",
+      "title": "In Ascension"
+    },
+    {
+      "authors": [
+        "Nana Kwame Adjei-Brenyah"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "Chain-Gang All-Stars"
+    },
+    {
+      "authors": [
+        "Lavanya Lakshminarayan"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "The Ten Percent Thief"
+    },
+    {
+      "authors": [
+        "Ray Nayler"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "The Mountain in the Sea"
+    },
+    {
+      "authors": [
+        "Emily Tesh"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "title": "Some Desperate Glory"
+    },
+    {
+      "authors": [
+        "Isabel Waidner"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.05",
+      "result": "nominee",
+      "title": "Corey Fah Does Social Mobility"
+    },
+    {
+      "authors": [
+        "Sierra Greer"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025",
+      "result": "winner",
+      "title": "Annie Bot"
+    },
+    {
+      "authors": [
+        "Julia Armfield"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "Private Rites"
+    },
+    {
+      "authors": [
+        "Kaliane Bradley"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "The Ministry of Time"
+    },
+    {
+      "authors": [
+        "Ian Green"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "Extremophile"
+    },
+    {
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "Service Model"
+    },
+    {
+      "authors": [
+        "Maud Woolf"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.05",
+      "result": "nominee",
+      "title": "Thirteen Ways to Kill Lulabelle Rock"
+    },
+    {
+      "authors": [
+        "E.J. Swift"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2026",
+      "category": "Novel",
+      "position": "2026",
+      "result": "winner",
+      "title": "When There Are Wolves Again"
+    },
+    {
+      "authors": [
+        "Matt Dinniman"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2026",
+      "category": "Novel",
+      "position": "2026.01",
+      "result": "nominee",
+      "title": "Dungeon Crawler Carl"
+    },
+    {
+      "authors": [
+        "Laila Lalami"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2026",
+      "category": "Novel",
+      "position": "2026.02",
+      "result": "nominee",
+      "title": "The Dream Hotel"
+    },
+    {
+      "authors": [
+        "Silvia Park"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2026",
+      "category": "Novel",
+      "position": "2026.03",
+      "result": "nominee",
+      "title": "Luminous"
+    },
+    {
+      "authors": [
+        "qntm"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2026",
+      "category": "Novel",
+      "position": "2026.04",
+      "result": "nominee",
+      "title": "There Is No Antimemetics Division"
+    },
+    {
+      "authors": [
+        "Lorraine Wilson"
+      ],
+      "award": "Arthur C. Clarke Award",
+      "award_year": "2026",
+      "category": "Novel",
+      "position": "2026.05",
+      "result": "nominee",
+      "title": "The Salt Oracle"
+    }
+  ],
+  "fetched_at": "2026-11-16T01:14:53Z",
+  "list_id": "arthur_c_clarke_award_novel",
+  "list_name": "Arthur C. Clarke Award - Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "arthur_c_clarke_award_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Arthur C. Clarke Award - Novel",
+    "source_id": "arthur_c_clarke_award_novel",
+    "url": "https://www.clarkeaward.com/#about"
+  }
+}

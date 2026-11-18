@@ -1,21 +1,21 @@
 {
   "append_state": {
-    "entry_count": 38,
-    "last_entry_key": "the beatle bandit|nate hendley",
-    "last_position": "2022",
+    "entry_count": 138,
+    "last_entry_key": "a gentleman and a thief the daring jewel heists of a jazz age rogue|dean jobb",
+    "last_position": "2025.02",
     "source_revision": null
   },
   "entries": [
     {
       "authors": [
-        "Martin Friedland"
+        "Martin L. Friedland"
       ],
       "award": "Crime Writers of Canada Award",
       "award_year": "1985",
       "category": "True Crime",
       "position": "1985",
       "result": "winner",
-      "title": "The Trials of Israel Lipsky"
+      "title": "The Trials of Israel Lipski: A True Story of a Victorian Murder in the East End of London"
     },
     {
       "authors": [
@@ -26,7 +26,7 @@
       "category": "True Crime",
       "position": "1986",
       "result": "winner",
-      "title": "A Canadian Tragedy"
+      "title": "A Canadian Tragedy: JoAnn and Colin Thatcher: A Story of Love and Hate"
     },
     {
       "authors": [
@@ -37,7 +37,7 @@
       "category": "True Crime",
       "position": "1987",
       "result": "winner",
-      "title": "Hunting Humans"
+      "title": "Hunting Humans: The Rise of the Modern Multiple Murderer"
     },
     {
       "authors": [
@@ -48,7 +48,7 @@
       "category": "True Crime",
       "position": "1988",
       "result": "winner",
-      "title": "Stung"
+      "title": "Stung: The Incredible Obsession of Brian Molony"
     },
     {
       "authors": [
@@ -59,7 +59,7 @@
       "category": "True Crime",
       "position": "1989",
       "result": "winner",
-      "title": "Conspiracy of Brothers"
+      "title": "Conspiracy of Brothers: A True Story of Murder, Bikers and the Law"
     },
     {
       "authors": [
@@ -81,11 +81,6 @@
       "category": "True Crime",
       "position": "1991",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/Ginger:_The_Life_and_Death_of_Albert_Goodwin"
-      },
       "title": "Ginger: The Life and Death of Albert Goodwin"
     },
     {
@@ -97,7 +92,7 @@
       "category": "True Crime",
       "position": "1992",
       "result": "winner",
-      "title": "Arms and the Man"
+      "title": "Arms and the Man: Dr. Gerald Bull, Iraq and the Supergun"
     },
     {
       "authors": [
@@ -108,7 +103,7 @@
       "category": "True Crime",
       "position": "1993",
       "result": "winner",
-      "title": "Redrum the Innocent"
+      "title": "Redrum The Innocent: The Murder of Christine Jessop and the Controversial Conviction of her Next-Door Neighbour, Guy Paul Morin"
     },
     {
       "authors": [
@@ -119,7 +114,7 @@
       "category": "True Crime",
       "position": "1994",
       "result": "winner",
-      "title": "With Malice Aforethought"
+      "title": "With malice aforethought: Six spectacular Canadian trials"
     },
     {
       "authors": [
@@ -130,7 +125,7 @@
       "category": "True Crime",
       "position": "1995",
       "result": "winner",
-      "title": "The Prodigal Husband"
+      "title": "The Prodigal Husband: The Tragedy of Helmuth and Hanna Buxbaum"
     },
     {
       "authors": [
@@ -141,7 +136,7 @@
       "category": "True Crime",
       "position": "1996",
       "result": "winner",
-      "title": "The Secret Lives of Sgt. John Wilson"
+      "title": "Secret Lives of Sgt. John Wilson"
     },
     {
       "authors": [
@@ -152,7 +147,7 @@
       "category": "True Crime",
       "position": "1997",
       "result": "winner",
-      "title": "The Cassock and the Crown"
+      "title": "The cassock and the crown Canada's most controversial murder trial"
     },
     {
       "authors": [
@@ -163,7 +158,29 @@
       "category": "True Crime",
       "position": "1998",
       "result": "winner",
-      "title": "When She Was Bad"
+      "title": "When She Was Bad...: Violent Women and the Myth of Innocence"
+    },
+    {
+      "authors": [
+        "Andreas Schroeder"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1998",
+      "category": "True Crime",
+      "position": "1998.01",
+      "result": "nominee",
+      "title": "Cheats, Charlatans, and Chicanery"
+    },
+    {
+      "authors": [
+        "David Stafford"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1998",
+      "category": "True Crime",
+      "position": "1998.02",
+      "result": "nominee",
+      "title": "Churchill and Secret Service"
     },
     {
       "authors": [
@@ -174,52 +191,227 @@
       "category": "True Crime",
       "position": "1999",
       "result": "winner",
-      "title": "No Claim to Mercy"
+      "title": "No Claim to Mercy: The Controversial Case for Murder Against Robert Baltovich"
     },
     {
       "authors": [
-        "Gordon Sinclair, Jr."
+        "Stevie Cameron"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1999",
+      "category": "True Crime",
+      "position": "1999.01",
+      "result": "nominee",
+      "title": "Blue Trust: The Author, the Lawyer, His Wife, and Her Money"
+    },
+    {
+      "authors": [
+        "David M. Paciocco"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1999",
+      "category": "True Crime",
+      "position": "1999.02",
+      "result": "nominee",
+      "title": "Getting Away with Murder: The Canadian Criminal Justice System"
+    },
+    {
+      "authors": [
+        "Bill Schiller"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1999",
+      "category": "True Crime",
+      "position": "1999.03",
+      "result": "nominee",
+      "title": "A Hand in the Water: The Many Lies of Albert Walker"
+    },
+    {
+      "authors": [
+        "Alison Shaw"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1999",
+      "category": "True Crime",
+      "position": "1999.04",
+      "result": "nominee",
+      "title": "A Friend of the Family: The True Story of David Snow"
+    },
+    {
+      "authors": [
+        "Rudy Wiebe"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1999",
+      "category": "True Crime",
+      "position": "1999.05",
+      "result": "nominee",
+      "title": "Stolen Life: The Journey of a Cree Woman"
+    },
+    {
+      "authors": [
+        "Gordon Sinclair Jr."
       ],
       "award": "Crime Writers of Canada Award",
       "award_year": "2000",
       "category": "True Crime",
       "position": "2000",
       "result": "winner",
-      "title": "Cowboys and Indians"
+      "title": "Cowboys and Indians: The Shooting of J.J. Harper"
     },
     {
       "authors": [
-        "A.B. McKillop"
+        "Yves Lavigne"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2000",
+      "category": "True Crime",
+      "position": "2000.01",
+      "result": "nominee",
+      "title": "Hells Angels at War"
+    },
+    {
+      "authors": [
+        "Peter McSherry"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2000",
+      "category": "True Crime",
+      "position": "2000.02",
+      "result": "nominee",
+      "title": "The Big Red Fox : The Incredible Story of Norman"
+    },
+    {
+      "authors": [
+        "Jeremy Mercer"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2000",
+      "category": "True Crime",
+      "position": "2000.03",
+      "result": "nominee",
+      "title": "Money for Nothing: The Ten Best Ways to Make Money Illegally in North America"
+    },
+    {
+      "authors": [
+        "Joyce Milgaard"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2000",
+      "category": "True Crime",
+      "position": "2000.04",
+      "result": "nominee",
+      "title": "A Mother's Story: My Battle To Free David Milgaard"
+    },
+    {
+      "authors": [
+        "A. B. McKillop"
       ],
       "award": "Crime Writers of Canada Award",
       "award_year": "2001",
       "category": "True Crime",
       "position": "2001",
       "result": "winner",
-      "title": "The Spinster and the Prophet"
+      "title": "The Spinster and the Prophet: H.G. Wells, Florence Deeks, and the Case of the Plagiarized Text"
     },
     {
       "authors": [
-        "Stevie Cameron",
-        "Harvey Cashore"
+        "Mark D. Johnson"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2001",
+      "category": "True Crime",
+      "position": "2001.01",
+      "result": "nominee",
+      "title": "No Tears to the Gallows: The Strange Case of Frank McCullough"
+    },
+    {
+      "authors": [
+        "Linden MacIntyre"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2001",
+      "category": "True Crime",
+      "position": "2001.02",
+      "result": "nominee",
+      "title": "Who killed Ty Conn"
+    },
+    {
+      "authors": [
+        "John Lawrence Reynolds"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2001",
+      "category": "True Crime",
+      "position": "2001.03",
+      "result": "nominee",
+      "title": "Mad Notions: A True Tale of Murder and Mayhem"
+    },
+    {
+      "authors": [
+        "Stevie Cameron"
       ],
       "award": "Crime Writers of Canada Award",
       "award_year": "2002",
       "category": "True Crime",
       "position": "2002",
       "result": "winner",
-      "title": "The Last Amigo"
+      "title": "The Last Amigo: Karlheinz Schreiber and the Anatomy of a Scandal"
     },
     {
       "authors": [
-        "Andrew Nikiforuk"
+        "Peter Edwards"
       ],
       "award": "Crime Writers of Canada Award",
       "award_year": "2002",
       "category": "True Crime",
       "position": "2002.01",
-      "result": "winner",
-      "title": "Saboteurs"
+      "result": "nominee",
+      "title": "One Dead Indian: The Premier, the Police, and the Ipperwash Crisis"
+    },
+    {
+      "authors": [
+        "Andr\u00e9 Marois"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2002",
+      "category": "True Crime",
+      "position": "2002.02",
+      "result": "nominee",
+      "title": "Trente-huit morts dont neuf femmes"
+    },
+    {
+      "authors": [
+        "Greg Owens"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2002",
+      "category": "True Crime",
+      "position": "2002.03",
+      "result": "nominee",
+      "title": "No Kill, No Thrill: The Shocking True Story of Charles Ng - One of North America's Most Horrific Serial Killers"
+    },
+    {
+      "authors": [
+        "John Lawrence Reynolds"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2002",
+      "category": "True Crime",
+      "position": "2002.04",
+      "result": "nominee",
+      "title": "Free Rider: How A Bay Street Whiz Kid Stole and Spent $20 Million"
+    },
+    {
+      "authors": [
+        "Ellen Singer"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2002",
+      "category": "True Crime",
+      "position": "2002.05",
+      "result": "nominee",
+      "title": "Quicksand: One woman's escape from the husband who stalked her, a true story"
     },
     {
       "authors": [
@@ -230,19 +422,95 @@
       "category": "True Crime",
       "position": "2003",
       "result": "winner",
-      "title": "Covert Entry"
+      "title": "Covert Entry : Spies, Lies and Crimes Inside Canada's Secret Service"
     },
     {
       "authors": [
-        "Julian Sher",
-        "William Marsden"
+        "Doug Clark"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2003",
+      "category": "True Crime",
+      "position": "2003.01",
+      "result": "nominee",
+      "title": "Dark Paths, Cold Trails: A Mountie's Quest to Link Serial Killers to Their Victims"
+    },
+    {
+      "authors": [
+        "Max Haines"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2003",
+      "category": "True Crime",
+      "position": "2003.02",
+      "result": "nominee",
+      "title": "Unnatural Causes"
+    },
+    {
+      "authors": [
+        "Peter Paradis"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2003",
+      "category": "True Crime",
+      "position": "2003.03",
+      "result": "nominee",
+      "title": "Nasty Business: One Biker Gang's Bloody War Against the Hells Angels"
+    },
+    {
+      "authors": [
+        "Mary E. Thompson"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2003",
+      "category": "True Crime",
+      "position": "2003.04",
+      "result": "nominee",
+      "title": "Letters from Prison"
+    },
+    {
+      "authors": [
+        "Julian Sher"
       ],
       "award": "Crime Writers of Canada Award",
       "award_year": "2004",
       "category": "True Crime",
       "position": "2004",
       "result": "winner",
-      "title": "The Road to Hell"
+      "title": "The Road to Hell: How the Biker Gangs are Conquering Canada"
+    },
+    {
+      "authors": [
+        "Jane Doe"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2004",
+      "category": "True Crime",
+      "position": "2004.01",
+      "result": "nominee",
+      "title": "The Story of Jane Doe: A Book About Rape"
+    },
+    {
+      "authors": [
+        "Mike McIntyre"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2004",
+      "category": "True Crime",
+      "position": "2004.02",
+      "result": "nominee",
+      "title": "Nowhere to Run: The Killing of Constable Dennis Strongquill"
+    },
+    {
+      "authors": [
+        "Jeffrey Miller"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2004",
+      "category": "True Crime",
+      "position": "2004.03",
+      "result": "nominee",
+      "title": "Where There's Life, There's Lawsuits: Not Altogether Serious Ruminations on Law and Life"
     },
     {
       "authors": [
@@ -253,7 +521,51 @@
       "category": "True Crime",
       "position": "2005",
       "result": "winner",
-      "title": "The Irish Game"
+      "title": "The Irish Game: A True Story of Crime and Art"
+    },
+    {
+      "authors": [
+        "Pierre de Champlain"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2005",
+      "category": "True Crime",
+      "position": "2005.01",
+      "result": "nominee",
+      "title": "MOBSTERS. Gangsters and Men of Honour"
+    },
+    {
+      "authors": [
+        "Peter Edwards"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2005",
+      "category": "True Crime",
+      "position": "2005.02",
+      "result": "nominee",
+      "title": "Night Justice: The True Story of the Black Donnellys"
+    },
+    {
+      "authors": [
+        "Max Haines"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2005",
+      "category": "True Crime",
+      "position": "2005.03",
+      "result": "nominee",
+      "title": "Instruments of Murder"
+    },
+    {
+      "authors": [
+        "Chris Mathers"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2005",
+      "category": "True Crime",
+      "position": "2005.04",
+      "result": "nominee",
+      "title": "Crime School: Money Laundering: True Crime Meets the World of Business and Finance"
     },
     {
       "authors": [
@@ -268,6 +580,39 @@
     },
     {
       "authors": [
+        "Linda Diebel"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2006",
+      "category": "True Crime",
+      "position": "2006.01",
+      "result": "nominee",
+      "title": "Betrayed: The Assassination of Digna Ochoa"
+    },
+    {
+      "authors": [
+        "Susanne Reber"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2006",
+      "category": "True Crime",
+      "position": "2006.02",
+      "result": "nominee",
+      "title": "Starlight Tour: The Last, Lonely Night of Neil Stonechild"
+    },
+    {
+      "authors": [
+        "Daniel Sanger"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2006",
+      "category": "True Crime",
+      "position": "2006.03",
+      "result": "nominee",
+      "title": "Hells Witness: Motorcycle Gangs In Canada"
+    },
+    {
+      "authors": [
         "Brian O'Dea"
       ],
       "award": "Crime Writers of Canada Award",
@@ -275,7 +620,51 @@
       "category": "True Crime",
       "position": "2007",
       "result": "winner",
-      "title": "High"
+      "title": "High: Confessions of an International Drug Smuggler"
+    },
+    {
+      "authors": [
+        "Edward Butts"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2007",
+      "category": "True Crime",
+      "position": "2007.01",
+      "result": "nominee",
+      "title": "The Desperate Ones: Forgotten Canadian Outlaws"
+    },
+    {
+      "authors": [
+        "Guy Lawson"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2007",
+      "category": "True Crime",
+      "position": "2007.02",
+      "result": "nominee",
+      "title": "The Brotherhoods"
+    },
+    {
+      "authors": [
+        "Mike McIntyre"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2007",
+      "category": "True Crime",
+      "position": "2007.03",
+      "result": "nominee",
+      "title": "To the Grave: Inside a Spectacular RCMP Sting"
+    },
+    {
+      "authors": [
+        "Linda Spalding"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2007",
+      "category": "True Crime",
+      "position": "2007.04",
+      "result": "nominee",
+      "title": "Who Named the Knife: A Book of Murder and Memory"
     },
     {
       "authors": [
@@ -286,19 +675,106 @@
       "category": "True Crime",
       "position": "2008",
       "result": "winner",
-      "title": "One Child at a Time"
+      "title": "Caught in the Web: Inside the Police Hunt to Rescue Children from Online Predators"
     },
     {
       "authors": [
-        "Michael Calce",
-        "Craig Silverman"
+        "Rodrigo Bascu\u00f1\u00e1n"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2008",
+      "category": "True Crime",
+      "position": "2008.01",
+      "result": "nominee",
+      "title": "Enter the Babylon System: Unpacking Gun Culture from Samuel Colt to 50 Cent"
+    },
+    {
+      "authors": [
+        "Robert J. Hoshowsky"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2008",
+      "category": "True Crime",
+      "position": "2008.02",
+      "result": "nominee",
+      "title": "The Last to Die: Ronald Turpin, Arthur Lucas, and the End of Capital Punishment in Canada"
+    },
+    {
+      "authors": [
+        "Brian Vallee"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2008",
+      "category": "True Crime",
+      "position": "2008.03",
+      "result": "nominee",
+      "title": "The War on Women: Elly Armour, Jane Hurshman, and Criminal Violence in Canadian Homes"
+    },
+    {
+      "authors": [
+        "Paul Watson"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2008",
+      "category": "True Crime",
+      "position": "2008.04",
+      "result": "nominee",
+      "title": "Where War Lives"
+    },
+    {
+      "authors": [
+        "Michael Calce"
       ],
       "award": "Crime Writers of Canada Award",
       "award_year": "2009",
       "category": "True Crime",
       "position": "2009",
       "result": "winner",
-      "title": "Mafiaboy"
+      "title": "Mafiaboy: How I Cracked the Internet and Why It's Still Broken"
+    },
+    {
+      "authors": [
+        "Daphne Bramham"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2009",
+      "category": "True Crime",
+      "position": "2009.01",
+      "result": "nominee",
+      "title": "The Secret Lives of Saints: Child Brides and Lost Boys in a Polygamous Mormon Sect"
+    },
+    {
+      "authors": [
+        "Sharon Butala"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2009",
+      "category": "True Crime",
+      "position": "2009.02",
+      "result": "nominee",
+      "title": "The Girl in Saskatoon: A Meditation on Friendship, Memory and Murder"
+    },
+    {
+      "authors": [
+        "Alex Caine"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2009",
+      "category": "True Crime",
+      "position": "2009.03",
+      "result": "nominee",
+      "title": "Befriend and Betray: Infiltrating the Hells Angels, Bandidos and Other Criminal Brotherhoods"
+    },
+    {
+      "authors": [
+        "Kerry Pither"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2009",
+      "category": "True Crime",
+      "position": "2009.04",
+      "result": "nominee",
+      "title": "Dark Days: The Story of Four Canadians Tortured in the Name of Fighting Terror"
     },
     {
       "authors": [
@@ -309,7 +785,51 @@
       "category": "True Crime",
       "position": "2010",
       "result": "winner",
-      "title": "Murder Without Borders"
+      "title": "Murder Without Borders: Dying for the Story in the World's Most Dangerous Places"
+    },
+    {
+      "authors": [
+        "Patrick Brode"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2010",
+      "category": "True Crime",
+      "position": "2010.01",
+      "result": "nominee",
+      "title": "The Slasher Killings: A Canadian Sex-Crime Panic, 1945-1946"
+    },
+    {
+      "authors": [
+        "Alex Caine"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2010",
+      "category": "True Crime",
+      "position": "2010.02",
+      "result": "nominee",
+      "title": "The Fat Mexican: The Bloody Rise of the Bandidos Motorcycle Club"
+    },
+    {
+      "authors": [
+        "Robert Remington"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2010",
+      "category": "True Crime",
+      "position": "2010.03",
+      "result": "nominee",
+      "title": "Runaway Devil: How Forbidden Love Drove a 12-Year-Old to Murder Her Family"
+    },
+    {
+      "authors": [
+        "Jon Wells"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2010",
+      "category": "True Crime",
+      "position": "2010.04",
+      "result": "nominee",
+      "title": "Post-Mortem: Justice at Last for Yvette Budram"
     },
     {
       "authors": [
@@ -320,7 +840,29 @@
       "category": "True Crime",
       "position": "2011",
       "result": "winner",
-      "title": "On the Farm"
+      "title": "On the Farm: Robert William Pickton and the Tragic Story of Vancouver's Missing Women"
+    },
+    {
+      "authors": [
+        "Roy MacGregor"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2011",
+      "category": "True Crime",
+      "position": "2011.01",
+      "result": "nominee",
+      "title": "Northern Light: The Enduring Mystery of Tom Thomson and the Woman Who Loved Him"
+    },
+    {
+      "authors": [
+        "Robert Wright"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2011",
+      "category": "True Crime",
+      "position": "2011.02",
+      "result": "nominee",
+      "title": "Our Man in Tehran: The True Story Behind the Secret Mission to Save Six Americans during the Iran Hostage Crisis & the Foreign Ambassador Who Worked w/the CIA to Bring Them Home"
     },
     {
       "authors": [
@@ -331,12 +873,40 @@
       "category": "True Crime",
       "position": "2012",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/Hot_Art"
-      },
-      "title": "Hot Art"
+      "title": "Hot Art: Chasing Thieves and Detectives Through the Secret World of Stolen Art"
+    },
+    {
+      "authors": [
+        "Jay Bahadur"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2012",
+      "category": "True Crime",
+      "position": "2012.01",
+      "result": "nominee",
+      "title": "The Pirates of Somalia: Inside Their Hidden World"
+    },
+    {
+      "authors": [
+        "Robert Fowler"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2012",
+      "category": "True Crime",
+      "position": "2012.02",
+      "result": "nominee",
+      "title": "A Season In Hell"
+    },
+    {
+      "authors": [
+        "Adrian Humphreys"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2012",
+      "category": "True Crime",
+      "position": "2012.03",
+      "result": "nominee",
+      "title": "The Weasel: A Double Life in the Mob"
     },
     {
       "authors": [
@@ -347,12 +917,40 @@
       "category": "True Crime",
       "position": "2013",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/The_Devil's_Cinema"
-      },
-      "title": "The Devil's Cinema"
+      "title": "The Devil's Cinema: The Untold Story Behind Mark Twitchell's Kill Room"
+    },
+    {
+      "authors": [
+        "Anita Arvast"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2013",
+      "category": "True Crime",
+      "position": "2013.01",
+      "result": "nominee",
+      "title": "Bloody justice the truth behind the Bandido Massacre at Shedden"
+    },
+    {
+      "authors": [
+        "Guy Lawson"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2013",
+      "category": "True Crime",
+      "position": "2013.02",
+      "result": "nominee",
+      "title": "Octopus: Sam Israel, the Secret Market, and Wall Street's Wildest Con"
+    },
+    {
+      "authors": [
+        "Bruce Livesey"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2013",
+      "category": "True Crime",
+      "position": "2013.03",
+      "result": "nominee",
+      "title": "Thieves of Bay Street: How Banks, Brokerages and the Wealthy Steal Billions from Canadians"
     },
     {
       "authors": [
@@ -363,7 +961,51 @@
       "category": "True Crime",
       "position": "2015",
       "result": "winner",
-      "title": "The Massey Murder"
+      "title": "The Massey Murder: A Maid, Her Master and the Trial that Shocked a Country"
+    },
+    {
+      "authors": [
+        "Bob Deasy"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2015",
+      "category": "True Crime",
+      "position": "2015.01",
+      "result": "nominee",
+      "title": "Being Uncle Charlie: A Life Undercover with Killers, Kingpins, Bikers and Druglords"
+    },
+    {
+      "authors": [
+        "Joan I. McEwen"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2015",
+      "category": "True Crime",
+      "position": "2015.02",
+      "result": "nominee",
+      "title": "Innocence on trial : the framing of Ivan Henry"
+    },
+    {
+      "authors": [
+        "Bill Reynolds"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2015",
+      "category": "True Crime",
+      "position": "2015.03",
+      "result": "nominee",
+      "title": "Life Real Loud: John Lefebvre, Neteller and the Revolution in Online Gambling"
+    },
+    {
+      "authors": [
+        "Paula Todd"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2015",
+      "category": "True Crime",
+      "position": "2015.04",
+      "result": "nominee",
+      "title": "Extreme Mean: Trolls, Bullies and Predators Online"
     },
     {
       "authors": [
@@ -378,6 +1020,50 @@
     },
     {
       "authors": [
+        "Gary Garrison"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2016",
+      "category": "True Crime",
+      "position": "2016.01",
+      "result": "nominee",
+      "title": "Human on the Inside : unlocking the truth about Canada's prisons"
+    },
+    {
+      "authors": [
+        "Debra Komar"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2016",
+      "category": "True Crime",
+      "position": "2016.02",
+      "result": "nominee",
+      "title": "The Bastard of Fort Stikine: The Hudson's Bay Company and the Murder of John McLoughlin Jr."
+    },
+    {
+      "authors": [
+        "Jerry Langton"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2016",
+      "category": "True Crime",
+      "position": "2016.03",
+      "result": "nominee",
+      "title": "Cold War: How Organized Crime Works in Canada and Why It's Just About to Get More Violent"
+    },
+    {
+      "authors": [
+        "Colleen Lewis"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2016",
+      "category": "True Crime",
+      "position": "2016.04",
+      "result": "nominee",
+      "title": "Mr. Big: The Investigation into the Deaths of Karen and Krista Hart"
+    },
+    {
+      "authors": [
         "Jeremy Grimaldi"
       ],
       "award": "Crime Writers of Canada Award",
@@ -385,12 +1071,51 @@
       "category": "True Crime",
       "position": "2017",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/A_Daughter's_Deadly_Deception:_The_Jennifer_Pan_Story"
-      },
       "title": "A Daughter's Deadly Deception: The Jennifer Pan Story"
+    },
+    {
+      "authors": [
+        "Christie Blatchford"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2017",
+      "category": "True Crime",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "Life Sentence: Stories from Four Decades of Court Reporting -- or, How I Fell Out of Love with the Canadian Justice System"
+    },
+    {
+      "authors": [
+        "Joe Friesen"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2017",
+      "category": "True Crime",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "The Ballad of Danny Wolfe: Life of a Modern Outlaw"
+    },
+    {
+      "authors": [
+        "Debra Komar"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2017",
+      "category": "True Crime",
+      "position": "2017.03",
+      "result": "nominee",
+      "title": "Black River Road: An Unthinkable Crime, an Unlikely Suspect, and the Question of Character"
+    },
+    {
+      "authors": [
+        "Bobbi-Jean MacKinnon"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2017",
+      "category": "True Crime",
+      "position": "2017.04",
+      "result": "nominee",
+      "title": "Shadow of Doubt: The Trial of Dennis Oland"
     },
     {
       "authors": [
@@ -401,7 +1126,51 @@
       "category": "True Crime",
       "position": "2018",
       "result": "winner",
-      "title": "The Whisky King: remarkable true story of Canada's most infamous bootlegger and the undercover Mountie on his trail"
+      "title": "The Whisky King: The remarkable true story of Canada's most infamous bootlegger and the undercover Mountie on his trail"
+    },
+    {
+      "authors": [
+        "Michael Arntfield"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2018",
+      "category": "True Crime",
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "Murder in Plain English: From Manifestos to Memes--Looking at Murder through the Words of Killers"
+    },
+    {
+      "authors": [
+        "Eve Lazarus"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2018",
+      "category": "True Crime",
+      "position": "2018.02",
+      "result": "nominee",
+      "title": "Blood, Sweat and Fear: The Story of Inspector Vance, A Pioneer Forensics Investigator"
+    },
+    {
+      "authors": [
+        "Rachel Rose"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2018",
+      "category": "True Crime",
+      "position": "2018.03",
+      "result": "nominee",
+      "title": "The Dog Lover Unit: Lessons in Courage from the World's K9 Cops"
+    },
+    {
+      "authors": [
+        "Alex Roslin"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2018",
+      "category": "True Crime",
+      "position": "2018.04",
+      "result": "nominee",
+      "title": "Police Wife: The Secret Epidemic of Police Domestic Violence"
     },
     {
       "authors": [
@@ -412,7 +1181,51 @@
       "category": "True Crime",
       "position": "2019",
       "result": "winner",
-      "title": "The Real Lolita: Kidnapping of Sally Horner and the Novel that Scandalized the World"
+      "title": "The Real Lolita: The Kidnapping of Sally Horner and the Novel That Scandalized the World"
+    },
+    {
+      "authors": [
+        "Patrick Brode"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2019",
+      "category": "True Crime",
+      "position": "2019.01",
+      "result": "nominee",
+      "title": "Dying for a Drink: How a Prohibition Preacher Got Away with Murder"
+    },
+    {
+      "authors": [
+        "Thomas Giacomaro"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2019",
+      "category": "True Crime",
+      "position": "2019.02",
+      "result": "nominee",
+      "title": "The King of Con: How a Smooth-Talking Jersey Boy Made and Lost Billions, Baffled the FBI, Eluded the Mob, and Lived to Tell the Crooked Tale"
+    },
+    {
+      "authors": [
+        "Nate Hendley"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2019",
+      "category": "True Crime",
+      "position": "2019.03",
+      "result": "nominee",
+      "title": "The Boy on the Bicycle: A Forgotten Case of Wrongful Conviction in Toronto"
+    },
+    {
+      "authors": [
+        "Eve Lazarus"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2019",
+      "category": "True Crime",
+      "position": "2019.04",
+      "result": "nominee",
+      "title": "Murder by Milkshake: An Astonishing True Story of Adultery, Arsenic, and a Charismatic Killer"
     },
     {
       "authors": [
@@ -427,6 +1240,50 @@
     },
     {
       "authors": [
+        "Vanessa Brown"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2020",
+      "category": "True Crime",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "The Forest City Killer: A Serial Murderer, a Cold-Case Sleuth, and a Search for Justice"
+    },
+    {
+      "authors": [
+        "Katie Daubs"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2020",
+      "category": "True Crime",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "The Missing Millionaire: The True Story of Ambrose Small and the City Obsessed With Finding Him"
+    },
+    {
+      "authors": [
+        "Kevin Donovan"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2020",
+      "category": "True Crime",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "The Billionaire Murders: The Mysterious Deaths of Barry and Honey Sherman"
+    },
+    {
+      "authors": [
+        "Debra Komar"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2020",
+      "category": "True Crime",
+      "position": "2020.04",
+      "result": "nominee",
+      "title": "The Court of Better Fiction: Three Trials, Two Executions, and Arctic Sovereignty"
+    },
+    {
+      "authors": [
         "Justin Ling"
       ],
       "award": "Crime Writers of Canada Award",
@@ -434,12 +1291,51 @@
       "category": "True Crime",
       "position": "2021",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/Missing_from_the_Village"
-      },
-      "title": "Missing from the Village"
+      "title": "Missing from the Village: The Story of Serial Killer Bruce McArthur, the Search for Justice, and the System That Failed Toronto's Queer Community"
+    },
+    {
+      "authors": [
+        "Jeff Blackstock"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2021",
+      "category": "True Crime",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "Murder in the Family : How the Search to my Mother's Killer led to my father"
+    },
+    {
+      "authors": [
+        "Norm Boucher"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2021",
+      "category": "True Crime",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "Horseplay: My Time Undercover on the Granville Strip"
+    },
+    {
+      "authors": [
+        "Silver Donald Cameron"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2021",
+      "category": "True Crime",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "Blood in the Water: A True Story of Revenge in the Maritimes"
+    },
+    {
+      "authors": [
+        "Michael Nest"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2021",
+      "category": "True Crime",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "Cold Case North: The Search for James Brady and Absolom Halkett"
     },
     {
       "authors": [
@@ -450,21 +1346,196 @@
       "category": "True Crime",
       "position": "2022",
       "result": "winner",
-      "title": "The Beatle Bandit"
+      "title": "The Beatle Bandit: A Serial Bank Robber's Deadly Heist, a Cross-Country Manhunt, and the Insanity Plea that Shook the Nation"
+    },
+    {
+      "authors": [
+        "Sarah Berman"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2022",
+      "category": "True Crime",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "Don't Call it a Cult: The Shocking Story of Keith Raniere and the Women of NXIVM"
+    },
+    {
+      "authors": [
+        "Aaron Chapman"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2022",
+      "category": "True Crime",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "Vancouver Vice: Crime and Spectacle in the City\u2019s West End"
+    },
+    {
+      "authors": [
+        "Catherine Fogarty"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2022",
+      "category": "True Crime",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "Murder on the Inside: The True Story of the Deadly Riot at Kingston Penitentiary"
+    },
+    {
+      "authors": [
+        "Lorna Poplak"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2022",
+      "category": "True Crime",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "The Don: The Story of Toronto's Infamous Jail"
+    },
+    {
+      "authors": [
+        "Rosemary Sullivan"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2023",
+      "category": "True Crime",
+      "position": "2023",
+      "result": "winner",
+      "title": "The Betrayal of Anne Frank: A Cold Case Investigation"
+    },
+    {
+      "authors": [
+        "Michael Arntfield"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2023",
+      "category": "True Crime",
+      "position": "2023.01",
+      "result": "nominee",
+      "title": "How to Solve a Cold Case: And Everything Else You Wanted To Know About Catching Killers"
+    },
+    {
+      "authors": [
+        "Sharon Anne Cook"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2023",
+      "category": "True Crime",
+      "position": "2023.02",
+      "result": "nominee",
+      "title": "The Castleton Massacre: Survivors\u2019 Stories of the Killins Femicide"
+    },
+    {
+      "authors": [
+        "Harley Rustad"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2023",
+      "category": "True Crime",
+      "position": "2023.03",
+      "result": "nominee",
+      "title": "Lost in the Valley of Death: A Story of Obsession and Danger in the Himalayas"
+    },
+    {
+      "authors": [
+        "Michael Lista"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2024",
+      "category": "True Crime",
+      "position": "2024",
+      "result": "winner",
+      "title": "Human Scale, The: Murder, Mischief and Other Selected Mayhems"
+    },
+    {
+      "authors": [
+        "Josef Lewkowicz"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2024",
+      "category": "True Crime",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "The Survivor: How I Survived Six Concentration Camps and Became a Nazi Hunter"
+    },
+    {
+      "authors": [
+        "David Rabinovitch"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2024",
+      "category": "True Crime",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "Jukebox Empire: The Mob and the Dark Side of the American Dream"
+    },
+    {
+      "authors": [
+        "Bill Waiser"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2024",
+      "category": "True Crime",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "Cheated: The Laurier Liberals and the Theft of First Nations Reserve Land"
+    },
+    {
+      "authors": [
+        "Denise Chong"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2025",
+      "category": "True Crime",
+      "position": "2025",
+      "result": "winner",
+      "title": "Out of Darkness: Rumana Monzur's Journey through Betrayal, Tyranny and Abuse"
+    },
+    {
+      "authors": [
+        "Tanya Talaga"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2025",
+      "category": "True Crime",
+      "position": "2025",
+      "result": "winner",
+      "title": "The Knowing"
+    },
+    {
+      "authors": [
+        "Nate Hendley"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2025",
+      "category": "True Crime",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "Atrocity on the Atlantic: Attack on a Hospital Ship During the Great War"
+    },
+    {
+      "authors": [
+        "Dean Jobb"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2025",
+      "category": "True Crime",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "A Gentleman and a Thief: The Daring Jewel Heists of a Jazz Age Rogue"
     }
   ],
-  "fetched_at": "2026-07-15T22:20:28Z",
+  "fetched_at": "2026-11-16T06:32:54Z",
   "list_id": "crime_writers_of_canada_award_nonfiction",
   "list_name": "Crime Writers of Canada Award - Nonfiction",
   "match_series": false,
-  "notes": [
-    "LibraryThing failed: HTTP Error 403: Forbidden"
-  ],
+  "notes": [],
   "parser": "crime_writers_of_canada_award_nonfiction",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Crime Writers of Canada Award - Nonfiction",
     "source_id": "crime_writers_of_canada_award_nonfiction",
-    "url": "https://en.wikipedia.org/wiki/Crime_Writers_of_Canada_Awards_of_Excellence"
+    "url": "https://www.librarything.com/award/1612/Crime-Writers-of-Canada-Awards-of-Excellence"
   }
 }

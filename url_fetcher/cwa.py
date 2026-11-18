@@ -50,7 +50,8 @@ class UrlFetcherCWADagger(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
   def fetch_and_parse(
       self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
       before_fetch=None, after_fetch=None, before_parse=None,
-      force_fallback_level=0, disable_fallbacks=False, source_choice=None):
+      force_fallback_level=0, disable_fallbacks=False, source_choice=None,
+      cached_parsed=None, incremental_update=False):
     parsed = SourceFallbackRunner(
       self.source_attempts(),
       error_class=UrlFetcherError).run(
@@ -62,7 +63,8 @@ class UrlFetcherCWADagger(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
         before_parse=before_parse,
         force_fallback_level=force_fallback_level,
         disable_fallbacks=disable_fallbacks,
-        source_choice=source_choice)
+        source_choice=source_choice, cached_parsed=cached_parsed,
+        incremental_update=incremental_update)
     parsed.setdefault('match_series', self.options.get('match_series', True))
     return parsed
 
@@ -77,15 +79,16 @@ class UrlFetcherCWADagger(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
           start_year=self.START_YEAR,
           category_aliases=self.OFFICIAL_CATEGORY_ALIASES,
           archive_by_accolade=self.ARCHIVE_BY_ACCOLADE,
+          enable_incremental=True,
           **kwargs),
-        source_rank=0),
+        source_rank=0, supports_incremental=True),
       self.librarything_attempt(source_rank=1),
     )
 
   def source_choices(self):
     return SourceFallbackRunner(self.source_attempts()).source_choices()
 
-  def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
+  def parse(self, html, fetch_url=None, log=None, progress=None, **kwargs):
     return self.parser().parse(
       html,
       self.URL,
@@ -96,10 +99,13 @@ class UrlFetcherCWADagger(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
       progress=progress,
       start_year=self.START_YEAR,
       category_aliases=self.OFFICIAL_CATEGORY_ALIASES,
-      archive_by_accolade=self.ARCHIVE_BY_ACCOLADE)
+      archive_by_accolade=self.ARCHIVE_BY_ACCOLADE,
+      cached_parsed=kwargs.get('cached_parsed'),
+      incremental_update=kwargs.get('incremental_update', False), enable_incremental=True)
 
 
 class UrlFetcherCWAGoldDagger(UrlFetcherCWADagger):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'cwa_dagger_gold'
   NAME = 'CWA Dagger - Gold Dagger'
   URL = (
@@ -117,6 +123,7 @@ class UrlFetcherCWAGoldDagger(UrlFetcherCWADagger):
 
 
 class UrlFetcherCWAIanFlemingSteelDagger(UrlFetcherCWADagger):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'cwa_dagger_ian_fleming_steel'
   NAME = 'CWA Dagger - Ian Fleming Steel Dagger'
   URL = 'https://thecwa.co.uk/past-winners/?past_winners_awards[]=ian-fleming-steel'
@@ -130,6 +137,7 @@ class UrlFetcherCWAIanFlemingSteelDagger(UrlFetcherCWADagger):
 
 
 class UrlFetcherCWAHistoricalDagger(UrlFetcherCWADagger):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'cwa_dagger_historical'
   NAME = 'CWA Dagger - Historical Dagger'
   URL = 'https://thecwa.co.uk/past-winners/?past_winners_awards[]=historical'
@@ -146,6 +154,7 @@ class UrlFetcherCWAHistoricalDagger(UrlFetcherCWADagger):
 
 
 class UrlFetcherCWACrimeFictionInTranslationDagger(UrlFetcherCWADagger):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'cwa_dagger_crime_fiction_in_translation'
   NAME = 'CWA Dagger - Crime Fiction in Translation'
   URL = 'https://thecwa.co.uk/past-winners/?past_winners_awards[]=international'

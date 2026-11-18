@@ -4134,12 +4134,13 @@
       "title": "One Death at a Time"
     }
   ],
-  "fetched_at": "2026-07-16T23:43:06Z",
+  "fetched_at": "2026-11-15T22:31:31Z",
   "list_id": "edgar_award_paperback_original",
   "list_name": "Edgar Award - Paperback Original",
   "match_series": false,
   "notes": [],
   "parser": "edgar_award_paperback_original",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Edgar Award - Paperback Original",

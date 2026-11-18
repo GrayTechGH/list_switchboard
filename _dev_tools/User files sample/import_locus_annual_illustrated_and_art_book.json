@@ -1,0 +1,5146 @@
+{
+  "append_state": {
+    "entry_count": 310,
+    "last_entry_key": "faraway dreaming|ulla thynell",
+    "last_position": "2026.09",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Michael Whelan"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Illustrated and Art Book",
+      "position": "1994",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "The Art of Michael Whelan: Scenes/Visions"
+    },
+    {
+      "authors": [
+        "Don Maitz"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Illustrated and Art Book",
+      "position": "1994.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "Dreamquests: The Art of Don Maitz"
+    },
+    {
+      "authors": [
+        "Hannes Bok"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Illustrated and Art Book",
+      "position": "1994.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "A Hannes Bok Treasury"
+    },
+    {
+      "authors": [
+        "Scott McCloud"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Illustrated and Art Book",
+      "position": "1994.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "Understanding Comics: The Invisible Art"
+    },
+    {
+      "authors": [
+        "Virgil Finlay"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Illustrated and Art Book",
+      "position": "1994.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "Virgil Finlay's Strange Science"
+    },
+    {
+      "authors": [
+        "Virgil Finlay"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Illustrated and Art Book",
+      "position": "1994.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "Virgil Finlay's Phantasms"
+    },
+    {
+      "authors": [
+        "Anonymous"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Illustrated and Art Book",
+      "position": "1994.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "Tolkien's World"
+    },
+    {
+      "authors": [
+        "Nancy Willard",
+        "Leo Dillon",
+        "Diane Dillon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Illustrated and Art Book",
+      "position": "1994.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "The Sorcerer's Apprentice"
+    },
+    {
+      "authors": [
+        "Carl Lundgren"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Illustrated and Art Book",
+      "position": "1994.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "Carl Lundgren: Great Artist"
+    },
+    {
+      "authors": [
+        "Ray Bradbury",
+        "Leo Dillon",
+        "Diane Dillon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Illustrated and Art Book",
+      "position": "1994.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "Switch on the Night"
+    },
+    {
+      "authors": [
+        "Patrick Woodroffe"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Illustrated and Art Book",
+      "position": "1994.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "Pastures in the Sky"
+    },
+    {
+      "authors": [
+        "Cathy Burnett",
+        "Arnie Fenner"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1995",
+      "category": "Illustrated and Art Book",
+      "position": "1995",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1995"
+      },
+      "title": "Spectrum: The Best in Contemporary Fantastic Art"
+    },
+    {
+      "authors": [
+        "Harlan Ellison",
+        "Jacek Yerka"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1995",
+      "category": "Illustrated and Art Book",
+      "position": "1995.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1995"
+      },
+      "title": "Mind Fields"
+    },
+    {
+      "authors": [
+        "Harlan Ellison",
+        "Isaac Asimov",
+        "Mark Zug"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1995",
+      "category": "Illustrated and Art Book",
+      "position": "1995.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1995"
+      },
+      "title": "I, Robot: the Illustrated Screenplay"
+    },
+    {
+      "authors": [
+        "Gahan Wilson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1995",
+      "category": "Illustrated and Art Book",
+      "position": "1995.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1995"
+      },
+      "title": "Still Weird"
+    },
+    {
+      "authors": [
+        "Terry Jones",
+        "Brian Froud"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1995",
+      "category": "Illustrated and Art Book",
+      "position": "1995.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1995"
+      },
+      "title": "Lady Cottington's Pressed Fairy Book"
+    },
+    {
+      "authors": [
+        "Virgil Finlay"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1995",
+      "category": "Illustrated and Art Book",
+      "position": "1995.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1995"
+      },
+      "title": "Virgil Finlay's Far Beyond"
+    },
+    {
+      "authors": [
+        "Jacek Yerka"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1995",
+      "category": "Illustrated and Art Book",
+      "position": "1995.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1995"
+      },
+      "title": "The Fantastic Art of Jacek Yerka"
+    },
+    {
+      "authors": [
+        "Dean Morrissey"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1995",
+      "category": "Illustrated and Art Book",
+      "position": "1995.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1995"
+      },
+      "title": "Ship of Dreams"
+    },
+    {
+      "authors": [
+        "J. K. Potter"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1995",
+      "category": "Illustrated and Art Book",
+      "position": "1995.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1995"
+      },
+      "title": "Horripilations: The Art of J.K. Potter"
+    },
+    {
+      "authors": [
+        "James Christensen"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1995",
+      "category": "Illustrated and Art Book",
+      "position": "1995.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1995"
+      },
+      "title": "The Art of James Christensen: A Journey of the Imagination"
+    },
+    {
+      "authors": [
+        "Peter Sis"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1995",
+      "category": "Illustrated and Art Book",
+      "position": "1995.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1995"
+      },
+      "title": "The Three Golden Keys"
+    },
+    {
+      "authors": [
+        "Cathy Burnett",
+        "Arnie Fenner"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Illustrated and Art Book",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "Spectrum 2: The Best in Contemporary Fantastic Art"
+    },
+    {
+      "authors": [
+        "James Gurney"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Illustrated and Art Book",
+      "position": "1996.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "Dinotopia: The World Beneath"
+    },
+    {
+      "authors": [
+        "Bob Eggleton"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Illustrated and Art Book",
+      "position": "1996.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "Alien Horizons: The Fantastic Art of Bob Eggleton"
+    },
+    {
+      "authors": [
+        "Wayne Barlowe"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Illustrated and Art Book",
+      "position": "1996.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "The Alien Life of Wayne Barlowe"
+    },
+    {
+      "authors": [
+        "Stephen D. Korshak",
+        "Hannes Bok"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Illustrated and Art Book",
+      "position": "1996.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "A Hannes Bok Showcase"
+    },
+    {
+      "authors": [
+        "Barclay Shaw"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Illustrated and Art Book",
+      "position": "1996.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "Electric Dreams: The Art of Barclay Shaw"
+    },
+    {
+      "authors": [
+        "Stephen E. Fabian"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Illustrated and Art Book",
+      "position": "1996.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "Stephen E. Fabian's Women & Wonders"
+    },
+    {
+      "authors": [
+        "Cathy Burnett",
+        "Arnie Fenner",
+        "Jim Loehr"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Illustrated and Art Book",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "Spectrum 3: The Best in Contemporary Fantastic Art"
+    },
+    {
+      "authors": [
+        "Patti Perret"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Illustrated and Art Book",
+      "position": "1997.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "The Faces of Fantasy"
+    },
+    {
+      "authors": [
+        "Clifford Ross",
+        "Karen Wilkin",
+        "Edward Gorey"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Illustrated and Art Book",
+      "position": "1997.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "The World of Edward Gorey"
+    },
+    {
+      "authors": [
+        "J. K. Potter"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Illustrated and Art Book",
+      "position": "1997.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "Neurotica: The Darkest Art of J.K. Potter"
+    },
+    {
+      "authors": [
+        "H. R. Giger"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Illustrated and Art Book",
+      "position": "1997.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "H.R. Giger's Film Design"
+    },
+    {
+      "authors": [
+        "Laurence S. Cutler",
+        "Judy Goffman Cutler",
+        "Maxfield Parrish"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Illustrated and Art Book",
+      "position": "1997.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "Maxfield Parrish: A Retrospective"
+    },
+    {
+      "authors": [
+        "George Orwell",
+        "Ralph Steadman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Illustrated and Art Book",
+      "position": "1997.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "Animal Farm: 50th Anniversary Edition"
+    },
+    {
+      "authors": [
+        "Mark Helprin",
+        "Chris Van Allsburg"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Illustrated and Art Book",
+      "position": "1997.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "A City in Winter"
+    },
+    {
+      "authors": [
+        "Rosemary Sutcliff",
+        "Alan Lee"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Illustrated and Art Book",
+      "position": "1997.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "The Wanderings of Odysseus"
+    },
+    {
+      "authors": [
+        "Vincent Di Fate"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1998",
+      "category": "Illustrated and Art Book",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1998"
+      },
+      "title": "Infinite Worlds: The Fantastic Visions of Science Fiction Art"
+    },
+    {
+      "authors": [
+        "Cathy Fenner",
+        "Arnie Fenner",
+        "Jim Loehr"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1998",
+      "category": "Illustrated and Art Book",
+      "position": "1998.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1998"
+      },
+      "title": "Spectrum 4: The Best in Contemporary Fantastic Art"
+    },
+    {
+      "authors": [
+        "Michael Whelan",
+        "Arnie Fenner",
+        "Cathy Fenner"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1998",
+      "category": "Illustrated and Art Book",
+      "position": "1998.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1998"
+      },
+      "title": "Something in My Eye: Excursions into Fear"
+    },
+    {
+      "authors": [
+        "Harlan Ellison",
+        "Rick Berry"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1998",
+      "category": "Illustrated and Art Book",
+      "position": "1998.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1998"
+      },
+      "title": "Repent Harlequin!\" Said the Ticktockman"
+    },
+    {
+      "authors": [
+        "H. R. Giger"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1998",
+      "category": "Illustrated and Art Book",
+      "position": "1998.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1998"
+      },
+      "title": "www HRGiger com"
+    },
+    {
+      "authors": [
+        "Stephen King",
+        "Dave McKean"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1998",
+      "category": "Illustrated and Art Book",
+      "position": "1998.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1998"
+      },
+      "title": "The Dark Tower IV: Wizard and Glass"
+    },
+    {
+      "authors": [
+        "Susan E. Meyer"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1998",
+      "category": "Illustrated and Art Book",
+      "position": "1998.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1998"
+      },
+      "title": "A Treasury of Great Children's Book Illustrators"
+    },
+    {
+      "authors": [
+        "Mark Helprin",
+        "Chris Van Allsburg"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1998",
+      "category": "Illustrated and Art Book",
+      "position": "1998.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1998"
+      },
+      "title": "The Veil of Snows"
+    },
+    {
+      "authors": [
+        "Cathy Fenner",
+        "Arnie Fenner"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1999",
+      "category": "Illustrated and Art Book",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1999"
+      },
+      "title": "Spectrum 5: The Best in Contemporary Fantastic Art"
+    },
+    {
+      "authors": [
+        "Frank Frazetta"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1999",
+      "category": "Illustrated and Art Book",
+      "position": "1999.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1999"
+      },
+      "title": "Icon: A Retrospective by the Grand Master of Fantastic Art, Frank Frazetta"
+    },
+    {
+      "authors": [
+        "Frank M. Robinson",
+        "Lawrence Davidson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1999",
+      "category": "Illustrated and Art Book",
+      "position": "1999.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1999"
+      },
+      "title": "Pulp Culture: The Art of Fiction Magazines"
+    },
+    {
+      "authors": [
+        "Neil Gaiman",
+        "Charles Vess"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1999",
+      "category": "Illustrated and Art Book",
+      "position": "1999.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1999"
+      },
+      "title": "Stardust"
+    },
+    {
+      "authors": [
+        "Wayne Barlowe"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1999",
+      "category": "Illustrated and Art Book",
+      "position": "1999.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1999"
+      },
+      "title": "Barlowe's Inferno"
+    },
+    {
+      "authors": [
+        "Brian Froud"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1999",
+      "category": "Illustrated and Art Book",
+      "position": "1999.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1999"
+      },
+      "title": "Good Faeries/Bad Faeries"
+    },
+    {
+      "authors": [
+        "Dave McKean"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1999",
+      "category": "Illustrated and Art Book",
+      "position": "1999.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1999"
+      },
+      "title": "Dustcovers: The Collected Sandman Covers"
+    },
+    {
+      "authors": [
+        "Leo Dillon",
+        "Diane Dillon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1999",
+      "category": "Illustrated and Art Book",
+      "position": "1999.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1999"
+      },
+      "title": "To Every Thing There Is a Season"
+    },
+    {
+      "authors": [
+        "H. R. Giger"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1999",
+      "category": "Illustrated and Art Book",
+      "position": "1999.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1999"
+      },
+      "title": "H.R. Giger's Retrospective 1964-1984"
+    },
+    {
+      "authors": [
+        "Alan M. Clark",
+        "Elizabeth Engstrom"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1999",
+      "category": "Illustrated and Art Book",
+      "position": "1999.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1999"
+      },
+      "title": "Imagination Fully Dilated"
+    },
+    {
+      "authors": [
+        "Frank M. Robinson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2000",
+      "category": "Illustrated and Art Book",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2000"
+      },
+      "title": "Science Fiction of the 20th Century"
+    },
+    {
+      "authors": [
+        "Cathy Fenner",
+        "Arnie Fenner"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2000",
+      "category": "Illustrated and Art Book",
+      "position": "2000.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2000"
+      },
+      "title": "Spectrum 6: The Best in Contemporary Fantastic Art"
+    },
+    {
+      "authors": [
+        "Frank Frazetta"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2000",
+      "category": "Illustrated and Art Book",
+      "position": "2000.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2000"
+      },
+      "title": "Legacy"
+    },
+    {
+      "authors": [
+        "Jim Burns"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2000",
+      "category": "Illustrated and Art Book",
+      "position": "2000.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2000"
+      },
+      "title": "Transluminal: The Paintings of Jim Burns"
+    },
+    {
+      "authors": [
+        "Neil Gaiman",
+        "Yoshitaka Amano"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2000",
+      "category": "Illustrated and Art Book",
+      "position": "2000.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2000"
+      },
+      "title": "The Sandman: The Dream Hunters"
+    },
+    {
+      "authors": [
+        "Sylvia Yount",
+        "Maxfield Parrish"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2000",
+      "category": "Illustrated and Art Book",
+      "position": "2000.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2000"
+      },
+      "title": "Maxfield Parrish, Maxfield Parrish 1870-1966"
+    },
+    {
+      "authors": [
+        "(US title: Fantasy Art Masters )",
+        "Dick Jude"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2000",
+      "category": "Illustrated and Art Book",
+      "position": "2000.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2000"
+      },
+      "title": "Fantasy Art of the New Millennium"
+    },
+    {
+      "authors": [
+        "Nigel Suckling",
+        "Julie Bell"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2000",
+      "category": "Illustrated and Art Book",
+      "position": "2000.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2000"
+      },
+      "title": "Soft as Steel: The Art of Julie Bell"
+    },
+    {
+      "authors": [
+        "Robert E. Howard",
+        "Gary Gianni"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2000",
+      "category": "Illustrated and Art Book",
+      "position": "2000.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2000"
+      },
+      "title": "The Savage Tales of Solomon Kane"
+    },
+    {
+      "authors": [
+        "Shirley Rousseau Murphy",
+        "Leo Dillon",
+        "Diane Dillon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2000",
+      "category": "Illustrated and Art Book",
+      "position": "2000.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2000"
+      },
+      "title": "Wind Child"
+    },
+    {
+      "authors": [
+        "John Marsden",
+        "Shaun Tan"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2000",
+      "category": "Illustrated and Art Book",
+      "position": "2000.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2000"
+      },
+      "title": "The Rabbits"
+    },
+    {
+      "authors": [
+        "Cathy Fenner",
+        "Arnie Fenner"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Illustrated and Art Book",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "Spectrum 7: The Best in Contemporary Fantastic Art"
+    },
+    {
+      "authors": [
+        "Frank Kelly Freas",
+        "Laura Brodian Freas"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Illustrated and Art Book",
+      "position": "2001.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "Frank Kelly Freas: As He Sees It"
+    },
+    {
+      "authors": [
+        "Bob Eggleton",
+        "Nigel Suckling"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Illustrated and Art Book",
+      "position": "2001.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "Greetings from Earth: The Art of Bob Eggleton"
+    },
+    {
+      "authors": [
+        "Robert Weinberg"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Illustrated and Art Book",
+      "position": "2001.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "Horror of the 20th Century: An Illustrated History"
+    },
+    {
+      "authors": [
+        "Ron Goulart"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Illustrated and Art Book",
+      "position": "2001.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "Comic Book Culture"
+    },
+    {
+      "authors": [
+        "(by Jules Verne)",
+        "Leo Dillon",
+        "Diane Dillon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Illustrated and Art Book",
+      "position": "2001.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "20,000 Leagues Under the Sea"
+    },
+    {
+      "authors": [
+        "Ron Walotsky"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Illustrated and Art Book",
+      "position": "2001.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "Inner Visions: The Art of Ron Walotsky"
+    },
+    {
+      "authors": [
+        "Doris Vallejo",
+        "Rowena Morrill"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Illustrated and Art Book",
+      "position": "2001.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "The Art of Rowena"
+    },
+    {
+      "authors": [
+        "Boris Vallejo"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Illustrated and Art Book",
+      "position": "2001.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "Dreams: The Art of Boris Vallejo"
+    },
+    {
+      "authors": [
+        "Jane Frank",
+        "Howard Frank"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Illustrated and Art Book",
+      "position": "2001.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "The Frank Collection: A Showcase of the World's Finest Fantastic Art"
+    },
+    {
+      "authors": [
+        "Alisa Kwitney"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Illustrated and Art Book",
+      "position": "2001.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "Vertigo Visions: Artwork from the Cutting Edge of Comics"
+    },
+    {
+      "authors": [
+        "David Langford",
+        "Josh Kirby"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Illustrated and Art Book",
+      "position": "2001.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "Josh Kirby: A Cosmic Cornucopia"
+    },
+    {
+      "authors": [
+        "Chris Moore",
+        "Stephen Gallagher"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Illustrated and Art Book",
+      "position": "2001.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "Journeyman: The Art of Chris Moore"
+    },
+    {
+      "authors": [
+        "Cathy Fenner",
+        "Arnie Fenner"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Illustrated and Art Book",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "Spectrum 8: The Best in Contemporary Fantastic Art"
+    },
+    {
+      "authors": [
+        "Ron Miller",
+        "Frederick C. Durant III",
+        "Melvin H. Schuetz",
+        "Chesley Bonestell"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Illustrated and Art Book",
+      "position": "2002.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "The Art of Chesley Bonestell"
+    },
+    {
+      "authors": [
+        "Jane Frank",
+        "Richard Powers"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Illustrated and Art Book",
+      "position": "2002.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "The Art of Richard Powers"
+    },
+    {
+      "authors": [
+        "Terry Pratchett",
+        "Paul Kidby"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Illustrated and Art Book",
+      "position": "2002.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "The Last Hero"
+    },
+    {
+      "authors": [
+        "Richard A. Lupoff"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Illustrated and Art Book",
+      "position": "2002.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "The Great American Paperback"
+    },
+    {
+      "authors": [
+        "Cathy Fenner",
+        "Arnie Fenner",
+        "Frank Frazetta"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Illustrated and Art Book",
+      "position": "2002.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "Testament: The Life and Art of Frank Frazetta"
+    },
+    {
+      "authors": [
+        "Randy Broecker"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Illustrated and Art Book",
+      "position": "2002.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "Fantasy of the 20th Century: An Illustrated History"
+    },
+    {
+      "authors": [
+        "Brom"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Illustrated and Art Book",
+      "position": "2002.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "Offerings: The Art of Brom"
+    },
+    {
+      "authors": [
+        "Stephen Youll"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Illustrated and Art Book",
+      "position": "2002.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "The Art of Stephen Youll: Paradox"
+    },
+    {
+      "authors": [
+        "Shaun Tan"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Illustrated and Art Book",
+      "position": "2002.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "The Red Tree"
+    },
+    {
+      "authors": [
+        "Peter Haining"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Illustrated and Art Book",
+      "position": "2002.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "The Classic Era of American Pulp Magazines"
+    },
+    {
+      "authors": [
+        "H. G. Wells",
+        "Tom Kidd"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Illustrated and Art Book",
+      "position": "2002.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "The War of the Worlds"
+    },
+    {
+      "authors": [
+        "Michael Kaluta"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Illustrated and Art Book",
+      "position": "2002.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "Wings of Twilight: The Art of Michael Kaluta"
+    },
+    {
+      "authors": [
+        "Beth Gwinn",
+        "Stanley Wiater"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Illustrated and Art Book",
+      "position": "2002.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "Dark Dreamers: Facing the Masters of Fear"
+    },
+    {
+      "authors": [
+        "Nick Bantock"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Illustrated and Art Book",
+      "position": "2002.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "The Artful Dodger: Images & Reflections"
+    },
+    {
+      "authors": [
+        "Fred Gambino"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Illustrated and Art Book",
+      "position": "2002.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "Ground Zero"
+    },
+    {
+      "authors": [
+        "Chris Morgan"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Illustrated and Art Book",
+      "position": "2002.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "Hardyware: The Art of David A. Hardy"
+    },
+    {
+      "authors": [
+        "Cathy Fenner",
+        "Arnie Fenner"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Illustrated and Art Book",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "Spectrum 9: The Best in Contemporary Fantastic Art"
+    },
+    {
+      "authors": [
+        "Bob Eggleton",
+        "John Grant"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Illustrated and Art Book",
+      "position": "2003.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "Dragonhenge"
+    },
+    {
+      "authors": [
+        "Jerry Weist"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Illustrated and Art Book",
+      "position": "2003.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "Bradbury: An Illustrated Life"
+    },
+    {
+      "authors": [
+        "Vincent Di Fate"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Illustrated and Art Book",
+      "position": "2003.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "The Science Fiction Art of Vincent Di Fate"
+    },
+    {
+      "authors": [
+        "Cathy Fenner",
+        "Arnie Fenner",
+        "Jeffrey Jones"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Illustrated and Art Book",
+      "position": "2003.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "The Art of Jeffrey Jones"
+    },
+    {
+      "authors": [
+        "Hilaire Belloc",
+        "Edward Gorey"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Illustrated and Art Book",
+      "position": "2003.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "Cautionary Tales for Children"
+    },
+    {
+      "authors": [
+        "Paul Barnett"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Illustrated and Art Book",
+      "position": "2003.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "Paper Tiger Fantasy Art Gallery"
+    },
+    {
+      "authors": [
+        "(US title: More Fantasy Art Masters: The Best Fantasy",
+        "Science Fiction Artists Show How They Work )",
+        "Dick Jude"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Illustrated and Art Book",
+      "position": "2003.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "Fantasy Art Masters: The Best in Fantasy and SF Art Worldwide"
+    },
+    {
+      "authors": [
+        "P. Craig Russell"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Illustrated and Art Book",
+      "position": "2003.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "Richard Wagner's The Ring of The Nibelung, Volume One"
+    },
+    {
+      "authors": [
+        "P. Craig Russell"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Illustrated and Art Book",
+      "position": "2003.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "Richard Wagner's The Ring of The Nibelung, Volume Two"
+    },
+    {
+      "authors": [
+        "Cathy Fenner",
+        "Arnie Fenner"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Illustrated and Art Book",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "Spectrum 11: The Best in Contemporary Fantastic Art"
+    },
+    {
+      "authors": [
+        "Terry Pratchett",
+        "Paul Kidby"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Illustrated and Art Book",
+      "position": "2005.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "Terry Pratchett: The Art of Discworld"
+    },
+    {
+      "authors": [
+        "Gahan Wilson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Illustrated and Art Book",
+      "position": "2005.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "The Best of Gahan Wilson"
+    },
+    {
+      "authors": [
+        "Luis Royo"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Illustrated and Art Book",
+      "position": "2005.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "Fantastic Art: The Best of Luis Royo"
+    },
+    {
+      "authors": [
+        "Alan M. Clark"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Illustrated and Art Book",
+      "position": "2005.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "The Paint in My Blood"
+    },
+    {
+      "authors": [
+        "David A. Hardy",
+        "Patrick Moore"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Illustrated and Art Book",
+      "position": "2005.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "Futures: 50 Years in Space: The Challenge of the Stars"
+    },
+    {
+      "authors": [
+        "Virginia Hamilton",
+        "Leo Dillon",
+        "Diane Dillon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Illustrated and Art Book",
+      "position": "2005.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "The People Could Fly: The Picture Book"
+    },
+    {
+      "authors": [
+        "Keith Parkinson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Illustrated and Art Book",
+      "position": "2005.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "Kingsgate: The Art of Keith Parkinson"
+    },
+    {
+      "authors": [
+        "John Grant",
+        "Audre Vysniauskas"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Illustrated and Art Book",
+      "position": "2005.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "Digital Art for the 21st Century: Renderosity"
+    },
+    {
+      "authors": [
+        "Richard Hescox"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Illustrated and Art Book",
+      "position": "2005.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "The Deceiving Eye: The Art of Richard Hescox"
+    },
+    {
+      "authors": [
+        "Caniglia"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Illustrated and Art Book",
+      "position": "2005.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "As Dead As Leaves: The Art of Caniglia"
+    },
+    {
+      "authors": [
+        "Ilene Meyer"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Illustrated and Art Book",
+      "position": "2005.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "Ilene Meyer: Paintings, Drawings, Perceptions"
+    },
+    {
+      "authors": [
+        "Cathy Fenner",
+        "Arnie Fenner"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Illustrated and Art Book",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Spectrum 12: The Best in Contemporary Fantastic Art"
+    },
+    {
+      "authors": [
+        "Clive Barker"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Illustrated and Art Book",
+      "position": "2006.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Visions of Heaven and Hell"
+    },
+    {
+      "authors": [
+        "Audrey Niffenegger"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Illustrated and Art Book",
+      "position": "2006.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "The Three Incestuous Sisters"
+    },
+    {
+      "authors": [
+        "Jim Burns"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Illustrated and Art Book",
+      "position": "2006.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Imago"
+    },
+    {
+      "authors": [
+        "Brom"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Illustrated and Art Book",
+      "position": "2006.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "The Plucker"
+    },
+    {
+      "authors": [
+        "Rob Alexander"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Illustrated and Art Book",
+      "position": "2006.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Welcome to My Worlds: The Art of Rob Alexander"
+    },
+    {
+      "authors": [
+        "Paul Gravett"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Illustrated and Art Book",
+      "position": "2006.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Graphic Novels: Stories to Change Your Life"
+    },
+    {
+      "authors": [
+        "Robert Williams"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Illustrated and Art Book",
+      "position": "2006.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Through Prehensile Eyes: Seeing the Art of Robert Williams"
+    },
+    {
+      "authors": [
+        "Slawek Wojtowicz"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Illustrated and Art Book",
+      "position": "2006.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Daydreaming: The Art of Slawak Wojtowicz"
+    },
+    {
+      "authors": [
+        "Luis Ortiz"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Illustrated and Art Book",
+      "position": "2006.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Arts Unknown: The Life & Art of Lee Brown Coye"
+    },
+    {
+      "authors": [
+        "Max Bertolini"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Illustrated and Art Book",
+      "position": "2006.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Revelations: The Art of Max Bertolini"
+    },
+    {
+      "authors": [
+        "Alec Gillis"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Illustrated and Art Book",
+      "position": "2006.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Worlds: A Mission of Discovery"
+    },
+    {
+      "authors": [
+        "John Ruskin",
+        "Iassen Ghiuselev"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Illustrated and Art Book",
+      "position": "2006.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "The King of the Golden River"
+    },
+    {
+      "authors": [
+        "Martin Jenkins",
+        "Chris Riddell"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Illustrated and Art Book",
+      "position": "2006.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Jonathan Swift's Gulliver"
+    },
+    {
+      "authors": [
+        "Cathy Fenner",
+        "Arnie Fenner"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Illustrated and Art Book",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "Spectrum 13: The Best in Contemporary Fantastic Art"
+    },
+    {
+      "authors": [
+        "John Picacio"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Illustrated and Art Book",
+      "position": "2007.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "Cover Story: The Art of John Picacio"
+    },
+    {
+      "authors": [
+        "Edward Gorey"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Illustrated and Art Book",
+      "position": "2007.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "Amphigorey Again"
+    },
+    {
+      "authors": [
+        "Boris Vallejo",
+        "Julie Bell"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Illustrated and Art Book",
+      "position": "2007.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "The Fabulous Women of Boris Vallejo and Julie Bell"
+    },
+    {
+      "authors": [
+        "John Jude Palencar"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Illustrated and Art Book",
+      "position": "2007.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "Origins: The Art of John Jude Palencar"
+    },
+    {
+      "authors": [
+        "Maurice Sendak"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Illustrated and Art Book",
+      "position": "2007.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "Mommy?"
+    },
+    {
+      "authors": [
+        "James Bama"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Illustrated and Art Book",
+      "position": "2007.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "James Bama: American Realist"
+    },
+    {
+      "authors": [
+        "Barry Klugerman",
+        "J. David Spurlock"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Illustrated and Art Book",
+      "position": "2007.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "RGK: The Art of Roy G. Krenkel"
+    },
+    {
+      "authors": [
+        "Yoshitaka Amano"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Illustrated and Art Book",
+      "position": "2007.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "Fairies"
+    },
+    {
+      "authors": [
+        "Tom Kidd"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Illustrated and Art Book",
+      "position": "2007.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "Kiddography: The Art & Life of Tom Kidd"
+    },
+    {
+      "authors": [
+        "Steve Starger",
+        "J. David Spurlock"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Illustrated and Art Book",
+      "position": "2007.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "Wally's World: The Brilliant Life and Tragic Death of Wally Wood, The World's Second-Best Comic Book Artist"
+    },
+    {
+      "authors": [
+        "Yoshitaka Amano"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Illustrated and Art Book",
+      "position": "2007.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "Coffin: The Art of Vampire Hunter D"
+    },
+    {
+      "authors": [
+        "Jon Foster"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Illustrated and Art Book",
+      "position": "2007.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "r/evolution: The Art of Jon Foster"
+    },
+    {
+      "authors": [
+        "Michael Parkes"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Illustrated and Art Book",
+      "position": "2007.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "The Art of Michael Parkes"
+    },
+    {
+      "authors": [
+        "Shaun Tan"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Illustrated and Art Book",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "The Arrival"
+    },
+    {
+      "authors": [
+        "Cathy Fenner",
+        "Arnie Fenner"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Illustrated and Art Book",
+      "position": "2008.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Spectrum 14: The Best in Contemporary Fantastic Art"
+    },
+    {
+      "authors": [
+        "Luis Ortiz"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Illustrated and Art Book",
+      "position": "2008.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Emshwiller: Infinity x Two"
+    },
+    {
+      "authors": [
+        "Claus Brusen",
+        "Marcel Salome"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Illustrated and Art Book",
+      "position": "2008.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Dreamscape: The Best of Imaginary Realism"
+    },
+    {
+      "authors": [
+        "Sebastian Peake",
+        "Alison Eldred",
+        "G. Peter Winnington"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Illustrated and Art Book",
+      "position": "2008.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Mervyn Peake: The Man and His Art"
+    },
+    {
+      "authors": [
+        "Martin McKenna"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Illustrated and Art Book",
+      "position": "2008.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Fantasy Art Now: The Very Best in Contemporary Fantasy Art & Illustration"
+    },
+    {
+      "authors": [
+        "Nicky Raven",
+        "John Howe"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Illustrated and Art Book",
+      "position": "2008.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Beowulf: A Tale of Blood, Heat, and Ashes"
+    },
+    {
+      "authors": [
+        "Yoshitaka Amano"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Illustrated and Art Book",
+      "position": "2008.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Worlds of Amano"
+    },
+    {
+      "authors": [
+        "Audrey Niffenegger"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Illustrated and Art Book",
+      "position": "2008.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "The Adventuress"
+    },
+    {
+      "authors": [
+        "Rafal Olbinski"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Illustrated and Art Book",
+      "position": "2008.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Women: Motifs and Variations"
+    },
+    {
+      "authors": [
+        "Cathy Fenner",
+        "Arnie Fenner"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Illustrated and Art Book",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "Spectrum 17: The Best in Contemporary Fantastic Art"
+    },
+    {
+      "authors": [
+        "Charles Vess",
+        "Neil Gaiman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Illustrated and Art Book",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "Instructions"
+    },
+    {
+      "authors": [
+        "Shaun Tan"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Illustrated and Art Book",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "The Bird King and Other Sketches"
+    },
+    {
+      "authors": [
+        "Donato Giancola"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Illustrated and Art Book",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "Middle-Earth: Visions of a Modern Myth"
+    },
+    {
+      "authors": [
+        "Bob Eggleton"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Illustrated and Art Book",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "Dragon's Domain"
+    },
+    {
+      "authors": [
+        "Tom Kidd"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Illustrated and Art Book",
+      "position": "2011.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "Otherworlds"
+    },
+    {
+      "authors": [
+        "Anonymous"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Illustrated and Art Book",
+      "position": "2011.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "Star Wars Art: Visions"
+    },
+    {
+      "authors": [
+        "Jack Gaughan",
+        "Luis Ortiz"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Illustrated and Art Book",
+      "position": "2011.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "Outermost"
+    },
+    {
+      "authors": [
+        "Cathy Fenner",
+        "Arnie Fenner"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Illustrated and Art Book",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Spectrum 18: The Best in Contemporary Fantastic Art"
+    },
+    {
+      "authors": [
+        "Karen Haber"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Illustrated and Art Book",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Masters of Science Fiction and Fantasy Art"
+    },
+    {
+      "authors": [
+        "Mike Ashley"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Illustrated and Art Book",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Out of This World: Science Fiction But Not As You Know It"
+    },
+    {
+      "authors": [
+        "Cor Blok"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Illustrated and Art Book",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "A Tolkien Tapestry: Pictures to Accompany The Lord of the Rings"
+    },
+    {
+      "authors": [
+        "Jeffrey Jones"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Illustrated and Art Book",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Jeffrey Jones: A Life in Art"
+    },
+    {
+      "authors": [
+        "Chris Foss"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Illustrated and Art Book",
+      "position": "2012.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Hardware: The Definitive SF Works of Chris Foss"
+    },
+    {
+      "authors": [
+        "Vincent Zhao"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Illustrated and Art Book",
+      "position": "2012.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Fantasy+ 3: Best Hand-painted Illustrations"
+    },
+    {
+      "authors": [
+        "Daniel Wade"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Illustrated and Art Book",
+      "position": "2012.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Expos\u00e9 9: Finest Digital Art in the Known Universe"
+    },
+    {
+      "authors": [
+        "Cathy Fenner",
+        "Arnie Fenner"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Illustrated and Art Book",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Spectrum 19: The Best in Contemporary Fantastic Art"
+    },
+    {
+      "authors": [
+        "Brian J. Robb"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Illustrated and Art Book",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Steampunk: An Illustrated History"
+    },
+    {
+      "authors": [
+        "Wayne G. Hammond",
+        "Christina Scull"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Illustrated and Art Book",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "J.R.R. Tolkien: The Art of The Hobbit by J.R.R. Tolkien"
+    },
+    {
+      "authors": [
+        "Brian Froud",
+        "Wendy Froud"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Illustrated and Art Book",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Trolls"
+    },
+    {
+      "authors": [
+        "Scott Tracy Griffin"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Illustrated and Art Book",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Tarzan: The Centennial Celebration"
+    },
+    {
+      "authors": [
+        "Stephan Martiniere"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Illustrated and Art Book",
+      "position": "2013.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Velocity"
+    },
+    {
+      "authors": [
+        "Patrick Wilshire",
+        "J. David Spurlock"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Illustrated and Art Book",
+      "position": "2013.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "The Art of the Dragon"
+    },
+    {
+      "authors": [
+        "Eric Klopfer"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Illustrated and Art Book",
+      "position": "2013.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Star Wars Art: Illustration"
+    },
+    {
+      "authors": [
+        "Paul Guinan",
+        "Anina Bennett"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Illustrated and Art Book",
+      "position": "2013.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Frank Reade: Adventures in the Age of Invention"
+    },
+    {
+      "authors": [
+        "John Fleskes"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Illustrated and Art Book",
+      "position": "2013.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Spectrum Fantastic Art Live!"
+    },
+    {
+      "authors": [
+        "Vincent Zhao"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Illustrated and Art Book",
+      "position": "2013.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Fantasy+ 4: The Best Artworks of Fantastic Art"
+    },
+    {
+      "authors": [
+        "Cathy Fenner",
+        "Arnie Fenner"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Illustrated and Art Book",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "Spectrum 20: The Best in Contemporary Fantastic Art"
+    },
+    {
+      "authors": [
+        "Justin G. Schiller",
+        "Dennis M. V. David",
+        "Leonard S. Marcus"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Illustrated and Art Book",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "Maurice Sendak: A Celebration of the Artist and His Work"
+    },
+    {
+      "authors": [
+        "Joseph Wrzos"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Illustrated and Art Book",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "Hannes Bok: A Life in Illustration"
+    },
+    {
+      "authors": [
+        "Stephen D. Korshak",
+        "J. David Spurlock"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Illustrated and Art Book",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "The Alluring Art of Margaret Brundage"
+    },
+    {
+      "authors": [
+        "Shaun Tan"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Illustrated and Art Book",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "Rules of Summer"
+    },
+    {
+      "authors": [
+        "Frank Frazetta"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Illustrated and Art Book",
+      "position": "2014.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "Frank Frazetta: Art and Remembrances"
+    },
+    {
+      "authors": [
+        "Gerald Brom",
+        "John Fleskes"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Illustrated and Art Book",
+      "position": "2014.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "The Art of Brom"
+    },
+    {
+      "authors": [
+        "Frank Frazetta",
+        "J. David Spurlock"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Illustrated and Art Book",
+      "position": "2014.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "The Frazetta Sketchbook"
+    },
+    {
+      "authors": [
+        "Stephan Martiniere"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Illustrated and Art Book",
+      "position": "2014.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "Trajectory"
+    },
+    {
+      "authors": [
+        "John Fleskes"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Illustrated and Art Book",
+      "position": "2014.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "Spectrum Fantastic Art Live 2"
+    },
+    {
+      "authors": [
+        "John Fleskes"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Illustrated and Art Book",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Spectrum 21: The Best in Contemporary Fantastic Art"
+    },
+    {
+      "authors": [
+        "Hayley Campbell"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Illustrated and Art Book",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "The Art of Neil Gaiman"
+    },
+    {
+      "authors": [
+        "Ron Miller"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Illustrated and Art Book",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "The Art of Space: The History of Space Art, from the Earliest Visions to the Graphics of the Modern Era"
+    },
+    {
+      "authors": [
+        "Brian Froud",
+        "Wendy Froud"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Illustrated and Art Book",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Brian Froud's Faeries' Tales"
+    },
+    {
+      "authors": [
+        "Jim Burns"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Illustrated and Art Book",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "The Art of Jim Burns: Hyperluminal"
+    },
+    {
+      "authors": [
+        "Robert Weinberg",
+        "Douglas Ellis",
+        "Robert T. Garcia"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Illustrated and Art Book",
+      "position": "2015.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "The Collectors' Book of Virgil Finlay"
+    },
+    {
+      "authors": [
+        "Boris Vallejo",
+        "Julie Bell"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Illustrated and Art Book",
+      "position": "2015.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Dreamland"
+    },
+    {
+      "authors": [
+        "Ian Miller"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Illustrated and Art Book",
+      "position": "2015.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "The Art of Ian Miller"
+    },
+    {
+      "authors": [
+        "Anonymous"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Illustrated and Art Book",
+      "position": "2015.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Sketching from the Imagination: Fantasy"
+    },
+    {
+      "authors": [
+        "Martin de Diego S\u00e1daba"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Illustrated and Art Book",
+      "position": "2015.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Biomech Art: Surrealism, Cyborgs and Alien Universes"
+    },
+    {
+      "authors": [
+        "Fred Gambino"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Illustrated and Art Book",
+      "position": "2015.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "The Art of Fred Gambino: Dark Shepherd"
+    },
+    {
+      "authors": [
+        "Julie Dillon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2016",
+      "category": "Illustrated and Art Book",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2016"
+      },
+      "title": "Julie Dillon's Imagined Realms, Book 2: Earth and Sky"
+    },
+    {
+      "authors": [
+        "Cathy Fenner"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2016",
+      "category": "Illustrated and Art Book",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2016"
+      },
+      "title": "Women of Wonder: Celebrating Women Creators of Fantastic Art"
+    },
+    {
+      "authors": [
+        "Steven Heller"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2016",
+      "category": "Illustrated and Art Book",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2016"
+      },
+      "title": "Edward Gorey: His Book Cover Art & Design"
+    },
+    {
+      "authors": [
+        "John Fleskes"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2016",
+      "category": "Illustrated and Art Book",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2016"
+      },
+      "title": "Spectrum 22: The Best in Contemporary Fantastic Art"
+    },
+    {
+      "authors": [
+        "Malcolm R. Phifer",
+        "Michael C. Phifer"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2016",
+      "category": "Illustrated and Art Book",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2016"
+      },
+      "title": "The Fantasy Illustration Library, Volume One: Lands & Legends"
+    },
+    {
+      "authors": [
+        "Charles Vess"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Illustrated and Art Book",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Walking Through the Landscape of Faerie"
+    },
+    {
+      "authors": [
+        "John Fleskes"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Illustrated and Art Book",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Spectrum 23: The Best in Contemporary Fantastic Art"
+    },
+    {
+      "authors": [
+        "Shaun Tan"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Illustrated and Art Book",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "The Singing Bones"
+    },
+    {
+      "authors": [
+        "Mahlon F. Craft",
+        "Kinuko Y. Craft"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Illustrated and Art Book",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Beauty and the Beast"
+    },
+    {
+      "authors": [
+        "Ron Miller"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Illustrated and Art Book",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Spaceships: An Illustrated History of the Real and the Imagined"
+    },
+    {
+      "authors": [
+        "Ralph McQuarrie"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Illustrated and Art Book",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Star Wars Art: Ralph McQuarrie"
+    },
+    {
+      "authors": [
+        "Yoshitaka Amano"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Illustrated and Art Book",
+      "position": "2017.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Yoshitaka Amano: Illustrations"
+    },
+    {
+      "authors": [
+        "Stephanie Law"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Illustrated and Art Book",
+      "position": "2017.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Descants & Cadences: The Art of Stephanie Law"
+    },
+    {
+      "authors": [
+        "Kinuko Y. Craft"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Illustrated and Art Book",
+      "position": "2017.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Myth & Magic: An Enchanted Fantasy Coloring Book"
+    },
+    {
+      "authors": [
+        "Dermot Power"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Illustrated and Art Book",
+      "position": "2017.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "The Art of the Film: Fantastic Beasts and Where to Find Them"
+    },
+    {
+      "authors": [
+        "Douglas Ellis",
+        "Ed Hulse",
+        "Robert Weinberg"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Illustrated and Art Book",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "The Art of the Pulps: An Illustrated History"
+    },
+    {
+      "authors": [
+        "John Fleskes"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Illustrated and Art Book",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Spectrum 24: The Best in Contemporary Fantastic Art"
+    },
+    {
+      "authors": [
+        "Paul Kidby"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Illustrated and Art Book",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Terry Pratchett's Discworld Imaginarium"
+    },
+    {
+      "authors": [
+        "Gregory Manchess"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Illustrated and Art Book",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Above the Timberline"
+    },
+    {
+      "authors": [
+        "Christina Rossetti",
+        "Omar Rayyan"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Illustrated and Art Book",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Goblin Market"
+    },
+    {
+      "authors": [
+        "Kevin Crossley-Holland",
+        "Jeffrey Alan Love"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Illustrated and Art Book",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Norse Myths: Tales of Odin, Thor, and Loki"
+    },
+    {
+      "authors": [
+        "Syd Mead"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Illustrated and Art Book",
+      "position": "2018.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "The Movie Art of Syd Mead: Visual Futurist"
+    },
+    {
+      "authors": [
+        "Wendy Pini"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Illustrated and Art Book",
+      "position": "2018.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Line of Beauty: the Art of Wendy Pini"
+    },
+    {
+      "authors": [
+        "James Wyatt"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Illustrated and Art Book",
+      "position": "2018.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "The Art of Magic: The Gathering: Kaladesh"
+    },
+    {
+      "authors": [
+        "Jean-Baptiste Monge"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Illustrated and Art Book",
+      "position": "2018.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Celtic Faeries: The Secret Kingdom"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin",
+        "Charles Vess"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Illustrated and Art Book",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "The Books of Earthsea: The Complete Illustrated Edition"
+    },
+    {
+      "authors": [
+        "Michael Whelan"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Illustrated and Art Book",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "Beyond Science Fiction: The Alternative Realism of Michael Whelan"
+    },
+    {
+      "authors": [
+        "Michael Witwer",
+        "Kyle Newman",
+        "Jon Peterson",
+        "Sam Witwer"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Illustrated and Art Book",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "Dungeons & Dragons Art and Arcana: A Visual History"
+    },
+    {
+      "authors": [
+        "Shaun Tan"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Illustrated and Art Book",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "Cicada"
+    },
+    {
+      "authors": [
+        "John Fleskes"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Illustrated and Art Book",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "Spectrum 25: The Best in Contemporary Fantastic Art"
+    },
+    {
+      "authors": [
+        "John Howe"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Illustrated and Art Book",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "A Middle-earth Traveler: Sketches from Bag End to Mordor"
+    },
+    {
+      "authors": [
+        "Florent Gorges"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Illustrated and Art Book",
+      "position": "2019.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "Yoshitaka Amano: The Illustrated Biography \u2013 Beyond the Fantasy"
+    },
+    {
+      "authors": [
+        "J. K. Rowling",
+        "Lisbeth Zwerger"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Illustrated and Art Book",
+      "position": "2019.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "The Tales of Beedle Bard"
+    },
+    {
+      "authors": [
+        "Jeffrey Alan Love"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Illustrated and Art Book",
+      "position": "2019.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "The Thousand Demon Tree"
+    },
+    {
+      "authors": [
+        "Simon St\u00e5lenhag"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Illustrated and Art Book",
+      "position": "2019.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "The Electric State"
+    },
+    {
+      "authors": [
+        "John Fleskes"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Illustrated and Art Book",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "Spectrum 26: The Best in Contemporary Fantastic Art"
+    },
+    {
+      "authors": [
+        "Julie Dillon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Illustrated and Art Book",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "Daydreamer's Journey"
+    },
+    {
+      "authors": [
+        "Yuko Shimizu"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Illustrated and Art Book",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "The Fairy Tales of Oscar Wilde"
+    },
+    {
+      "authors": [
+        "Donato Giancola"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Illustrated and Art Book",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "Middle-earth: Journeys in Myth and Legend"
+    },
+    {
+      "authors": [
+        "David Day"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Illustrated and Art Book",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "The Illustrated World of Tolkien"
+    },
+    {
+      "authors": [
+        "Jesse Pires"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Illustrated and Art Book",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "Dream Dance: The Art of Ed Emshwiller"
+    },
+    {
+      "authors": [
+        "Bill Sienkiewicz"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Illustrated and Art Book",
+      "position": "2020.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "The Island of Doctor Moreau"
+    },
+    {
+      "authors": [
+        "Tran Nguyen"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Illustrated and Art Book",
+      "position": "2020.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "Ambedo: Tran Nguyen"
+    },
+    {
+      "authors": [
+        "Mark A. Nelson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Illustrated and Art Book",
+      "position": "2020.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "Fantasy World-Building: A Guide to Developing Mythic Worlds and Legendary Creatures"
+    },
+    {
+      "authors": [
+        "Raya Golden"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Illustrated and Art Book",
+      "position": "2020.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "Starport"
+    },
+    {
+      "authors": [
+        "Piers Bizony"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Illustrated and Art Book",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "The Art of NASA: The Illustrations that Sold the Missions"
+    },
+    {
+      "authors": [
+        "Alan Lee"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Illustrated and Art Book",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "The Hobbit Sketchbook"
+    },
+    {
+      "authors": [
+        "Adam Cesare",
+        "Iris Compiet"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Illustrated and Art Book",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "The Dark Crystal Bestiary: The Definitive Guide to the Creatures of Thra"
+    },
+    {
+      "authors": [
+        "Katherine Chu",
+        "John Fleskes"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Illustrated and Art Book",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "Spectrum 27: The Best in Contemporary Fantastic Art"
+    },
+    {
+      "authors": [
+        "J. David Spurlock",
+        "Frank Frazetta"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Illustrated and Art Book",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "Fantastic Paintings of Frazetta"
+    },
+    {
+      "authors": [
+        "George R. R. Martin",
+        "Gary Gianni"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Illustrated and Art Book",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "A Storm of Swords: The Illustrated Edition"
+    },
+    {
+      "authors": [
+        "Frank Cho"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Illustrated and Art Book",
+      "position": "2021.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "The Art of Frank Cho: A Twenty-Year Retrospective"
+    },
+    {
+      "authors": [
+        "Jesse Kowalski"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Illustrated and Art Book",
+      "position": "2021.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "Enchanted: A History of Fantasy Illustration"
+    },
+    {
+      "authors": [
+        "Dian Hanson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Illustrated and Art Book",
+      "position": "2021.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "Masterpieces of Fantasy Art"
+    },
+    {
+      "authors": [
+        "J. M. Barrie",
+        "Brecht Evens"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Illustrated and Art Book",
+      "position": "2021.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "Peter Pan"
+    },
+    {
+      "authors": [
+        "Charles Vess"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Illustrated and Art Book",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "The Art of Neil Gaiman & Charles Vess's Stardust"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor",
+        "John Jennings",
+        "David Brame"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Illustrated and Art Book",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "After the Rain"
+    },
+    {
+      "authors": [
+        "Cathy Fenner",
+        "Arnie Fenner"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Illustrated and Art Book",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "Spectrum Fantastic Art Quarterly Volume One"
+    },
+    {
+      "authors": [
+        "Maggie Tokuda-Hall",
+        "Lisa Sterle"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Illustrated and Art Book",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "Squad"
+    },
+    {
+      "authors": [
+        "George Orwell",
+        "Fido Nesti"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Illustrated and Art Book",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "1984: The Graphic Novel"
+    },
+    {
+      "authors": [
+        "Jessie Burton",
+        "Olivia Lomenech"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Illustrated and Art Book",
+      "position": "2022.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "Medusa"
+    },
+    {
+      "authors": [
+        "Simon St\u00e5lenhag"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Illustrated and Art Book",
+      "position": "2022.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "The Labyrinth"
+    },
+    {
+      "authors": [
+        "Kevin Crossley-Holland",
+        "Jeffrey Alan Love"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Illustrated and Art Book",
+      "position": "2022.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "Norse Tales: Stories from Across the Rainbow Bridge"
+    },
+    {
+      "authors": [
+        "Michael Bukowski"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Illustrated and Art Book",
+      "position": "2022.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "Monstrous Mythologies"
+    },
+    {
+      "authors": [
+        "David Bowles",
+        "Ra\u00fal the Third"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Illustrated and Art Book",
+      "position": "2022.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "Clockwork Curandera Volume 1: The witch Owl Parliament"
+    },
+    {
+      "authors": [
+        "Neil Gaiman",
+        "Colleen Doran"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Illustrated and Art Book",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Chivalry"
+    },
+    {
+      "authors": [
+        "Shaun Tan"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Illustrated and Art Book",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Creature: Paintings, Drawings, and Reflections"
+    },
+    {
+      "authors": [
+        "Tananarive Due",
+        "Steven Barnes",
+        "Marco Finnegan"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Illustrated and Art Book",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "The Keeper"
+    },
+    {
+      "authors": [
+        "Cathy Fenner",
+        "Arnie Fenner"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Illustrated and Art Book",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Spectrum Fantastic Art Quarterly Volume Two"
+    },
+    {
+      "authors": [
+        "Marjorie Liu",
+        "Sana Takeda"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Illustrated and Art Book",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "The Night Eaters Book 1: She Eats the Night"
+    },
+    {
+      "authors": [
+        "Valya Dudycz Lupescu",
+        "Vic Terra"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Illustrated and Art Book",
+      "position": "2023.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Mother Christmas, Vol 1: The Muse"
+    },
+    {
+      "authors": [
+        "Ekow Eshun"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Illustrated and Art Book",
+      "position": "2023.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "In the Black Fantastic"
+    },
+    {
+      "authors": [
+        "Dianne Borsini-Burr",
+        "Kinuko Y. Craft"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Illustrated and Art Book",
+      "position": "2023.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Visions of Beauty"
+    },
+    {
+      "authors": [
+        "George Orwell",
+        "Omar Rayyan"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Illustrated and Art Book",
+      "position": "2023.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Animal Farm: A Fairy Story"
+    },
+    {
+      "authors": [
+        "Kim DeMulder",
+        "Rowena"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Illustrated and Art Book",
+      "position": "2023.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Paintings & Drawings of Rowena"
+    },
+    {
+      "authors": [
+        "Iain M. Banks"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Illustrated and Art Book",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "The Culture: The Drawings"
+    },
+    {
+      "authors": [
+        "Kevin M. Strait",
+        "Kinshasha Holman Conwill"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Illustrated and Art Book",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "Afrofuturism: A History of Black Futures"
+    },
+    {
+      "authors": [
+        "Dian Hanson",
+        "Frank Frazetta"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Illustrated and Art Book",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "The Fantastic Worlds of Frank Frazetta"
+    },
+    {
+      "authors": [
+        "Ray Bradbury",
+        "Al Feldstein",
+        "Jack Davis",
+        "Frank Frazetta",
+        "Al Williamson",
+        "Wallace Wood"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Illustrated and Art Book",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "Home to Stay! The Complete Ray Bradbury EC Stories"
+    },
+    {
+      "authors": [
+        "Adam Rowe"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Illustrated and Art Book",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "Worlds Beyond Time: Sci-Fi Art of the 1970s"
+    },
+    {
+      "authors": [
+        "Cathy Fenner",
+        "Arnie Fenner"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Illustrated and Art Book",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "Spectrum Fantastic Art Quarterly, Volume Three"
+    },
+    {
+      "authors": [
+        "George R. R. Martin",
+        "Raya Golden"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Illustrated and Art Book",
+      "position": "2024.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "Voyaging, Volume One: The Plague Star"
+    },
+    {
+      "authors": [
+        "Tony DiTerlizzi"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Illustrated and Art Book",
+      "position": "2024.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "The Pen & Ink Drawings of Tony DiTerlizzi"
+    },
+    {
+      "authors": [
+        "Dave McKean"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Illustrated and Art Book",
+      "position": "2024.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "Thalamus, Volumes 1 & 2: The Art of Dave McKean"
+    },
+    {
+      "authors": [
+        "Ayize Jama-Everett",
+        "Tristan Roach"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Illustrated and Art Book",
+      "position": "2024.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "The Last Count of Monte Cristo"
+    },
+    {
+      "authors": [
+        "Peter S. Beagle",
+        "Tom Kidd"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Illustrated and Art Book",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "The Last Unicorn"
+    },
+    {
+      "authors": [
+        "Susanna Clarke",
+        "Charles Vess"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Illustrated and Art Book",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Jonathan Strange & Mr Norrell"
+    },
+    {
+      "authors": [
+        "Lafcadio Hearn",
+        "Yei Theodora Ozaki",
+        "Sakyu"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Illustrated and Art Book",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Supernatural Tales from Japan"
+    },
+    {
+      "authors": [
+        "Suzanne Collins",
+        "Nico Delort"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Illustrated and Art Book",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "The Hunger Games"
+    },
+    {
+      "authors": [
+        "Marisa Lewis"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Illustrated and Art Book",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Frank Frazetta: An Artists' Tribute"
+    },
+    {
+      "authors": [
+        "Adam Lee"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Illustrated and Art Book",
+      "position": "2025.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Dungeons & Dragons: Worlds & Realms"
+    },
+    {
+      "authors": [
+        "Stephanie Law"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Illustrated and Art Book",
+      "position": "2025.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Undying Tales: Mythologies of Species on the Verge of Extinction"
+    },
+    {
+      "authors": [
+        "Kate\u0159ina \u010cupov\u00e1",
+        "Julie Nov\u00e1kov\u00e1"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Illustrated and Art Book",
+      "position": "2025.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "R.U.R.: The Karel \u010capek Classic"
+    },
+    {
+      "authors": [
+        "Scott Dunbier",
+        "Mike Mignola"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Illustrated and Art Book",
+      "position": "2025.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Hell, Ink & Water: The Art of Mike Mignola"
+    },
+    {
+      "authors": [
+        "Tad Williams",
+        "Donato Giancola"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Illustrated and Art Book",
+      "position": "2025.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Stone of Farewell"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor",
+        "Tana Ford"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Illustrated and Art Book",
+      "position": "2026",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "The Space Cat"
+    },
+    {
+      "authors": [
+        "Paul Kidby"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Illustrated and Art Book",
+      "position": "2026.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Designing Terry Pratchett's Discworld"
+    },
+    {
+      "authors": [
+        "Sara Frazetta",
+        "Arnie Fenner",
+        "Frank Frazetta"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Illustrated and Art Book",
+      "position": "2026.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Frank Frazetta: Fine Lines"
+    },
+    {
+      "authors": [
+        "Alix E. Harrow",
+        "Rovina Cai"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Illustrated and Art Book",
+      "position": "2026.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Starling House"
+    },
+    {
+      "authors": [
+        "Leigh Bardugo",
+        "John Picacio"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Illustrated and Art Book",
+      "position": "2026.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "The Invisible Parade"
+    },
+    {
+      "authors": [
+        "Joseph Sheridan Le Fanu",
+        "Rosemary Valero-O'Connell"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Illustrated and Art Book",
+      "position": "2026.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Carmilla"
+    },
+    {
+      "authors": [
+        "Simon St\u00e5lenhag"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Illustrated and Art Book",
+      "position": "2026.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Sunset at Zero Point"
+    },
+    {
+      "authors": [
+        "Amanda T. Zehnder",
+        "David M. Brinley"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Illustrated and Art Book",
+      "position": "2026.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Icons of the Fantastic: Illustrations of Imaginative Literature from the Korshak Collection"
+    },
+    {
+      "authors": [
+        "Rebecca K. Reynolds",
+        "Justin Gerard"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Illustrated and Art Book",
+      "position": "2026.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Edmund Spenser's The Faerie Queene Volumes 1-3"
+    },
+    {
+      "authors": [
+        "Ulla Thynell"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Illustrated and Art Book",
+      "position": "2026.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Faraway Dreaming"
+    }
+  ],
+  "fetched_at": "2026-07-23T07:21:41Z",
+  "list_id": "locus_annual_illustrated_and_art_book",
+  "list_name": "Locus - Annual Illustrated and Art Book",
+  "match_series": false,
+  "notes": [],
+  "parser": "locus_annual_illustrated_and_art_book",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Locus - Annual Illustrated and Art Book",
+    "source_id": "locus_annual_illustrated_and_art_book",
+    "url": "https://www.sfadb.com/Locus_Awards"
+  }
+}

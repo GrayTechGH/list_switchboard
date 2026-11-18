@@ -17,6 +17,7 @@ PROMETHEUS_CATEGORIES = (CATEGORY_SCIENCE_FICTION, CATEGORY_FANTASY)
 
 class UrlFetcherPrometheus(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
 
+  ENABLE_SFADB_INCREMENTAL = True
   URL = PROMETHEUS_AWARDS_URL
   FETCH_URLS = (PROMETHEUS_AWARDS_URL,)
   FILTER_CATEGORIES = PROMETHEUS_CATEGORIES
@@ -38,7 +39,7 @@ class UrlFetcherPrometheus(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
 
     return PrometheusParser(books_only=self.BOOKS_ONLY)
 
-  def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
+  def parse(self, html, fetch_url=None, log=None, progress=None, **kwargs):
     return self.parser().parse(
       html,
       self.URL,
@@ -47,10 +48,12 @@ class UrlFetcherPrometheus(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
       self.CATEGORY_ALIASES,
       fetch_url=fetch_url,
       log=log,
-      progress=progress)
+      progress=progress, cached_parsed=kwargs.get('cached_parsed'),
+      incremental_update=kwargs.get('incremental_update', False), enable_incremental=True)
 
 
 class UrlFetcherPrometheusNovel(UrlFetcherPrometheus):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'prometheus_novel'
   NAME = 'Prometheus - Novel'
   CATEGORY = 'Novel'
@@ -60,6 +63,7 @@ class UrlFetcherPrometheusNovel(UrlFetcherPrometheus):
 
 
 class UrlFetcherPrometheusHallOfFame(UrlFetcherPrometheus):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'prometheus_hall_of_fame'
   NAME = 'Prometheus - Hall of Fame'
   CATEGORY = 'Hall of Fame'
@@ -110,6 +114,7 @@ class UrlFetcherPrometheusYoungAdultHonorRoll(UrlFetcherGeneric):
 
 
 class UrlFetcherPrometheusSpecialAwards(UrlFetcherPrometheus):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'prometheus_special_awards'
   NAME = 'Prometheus - Special Awards'
   CATEGORY = 'Special Awards'

@@ -1,0 +1,1479 @@
+{
+  "append_state": {
+    "entry_count": 88,
+    "last_entry_key": "track changes|abigail nussbaum",
+    "last_position": "2025.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Jack Vance"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2010",
+      "category": "Best Related Work",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2010-hugo-awards/"
+      },
+      "title": "This is Me, Jack Vance! (Or, More Properly, This is \u201cI\u201d)"
+    },
+    {
+      "authors": [
+        "Farah Mendlesohn"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2010",
+      "category": "Best Related Work",
+      "position": "2010.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2010-hugo-awards/"
+      },
+      "title": "The Inter-Galactic Playground: A Critical Study of Children\u2019s and Teens\u2019 Science Fiction"
+    },
+    {
+      "authors": [
+        "Michael Swanwick"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2010",
+      "category": "Best Related Work",
+      "position": "2010.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2010-hugo-awards/"
+      },
+      "title": "Hope-In-The-Mist: The Extraordinary Career and Mysterious Life of Hope Mirrlees"
+    },
+    {
+      "authors": [
+        "Helen Merrick"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2010",
+      "category": "Best Related Work",
+      "position": "2010.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2010-hugo-awards/"
+      },
+      "title": "The Secret Feminist Cabal: A Cultural History of SF Feminisms"
+    },
+    {
+      "authors": [
+        "Farah Mendlesohn"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2010",
+      "category": "Best Related Work",
+      "position": "2010.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2010-hugo-awards/"
+      },
+      "title": "On Joanna Russ"
+    },
+    {
+      "authors": [
+        "John Clute"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2010",
+      "category": "Best Related Work",
+      "position": "2010.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2010-hugo-awards/"
+      },
+      "title": "Canary Fever: Reviews"
+    },
+    {
+      "authors": [
+        "Lynne M. Thomas",
+        "Tara O\u2019Shea"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2011",
+      "category": "Best Related Work",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2011-hugo-awards/"
+      },
+      "title": "Chicks Dig Time Lords: A Celebration of Doctor Who by the Women Who Love It"
+    },
+    {
+      "authors": [
+        "William H. Patterson, Jr."
+      ],
+      "award": "Hugo Award",
+      "award_year": "2011",
+      "category": "Best Related Work",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2011-hugo-awards/"
+      },
+      "title": "Robert A. Heinlein: In Dialogue with His Century, Volume 1: (1907\u20131948): Learning Curve"
+    },
+    {
+      "authors": [
+        "Mike Resnick",
+        "Barry N. Malzberg"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2011",
+      "category": "Best Related Work",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2011-hugo-awards/"
+      },
+      "title": "The Business of Science Fiction: Two Insiders Discuss Writing and Publishing"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson",
+        "Jordan Sanderson",
+        "Howard Tayler",
+        "Dan Wells"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2011",
+      "category": "Best Related Work",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2011-hugo-awards/"
+      },
+      "title": "Writing Excuses, Season 4"
+    },
+    {
+      "authors": [
+        "Gary K. Wolfe"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2011",
+      "category": "Best Related Work",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2011-hugo-awards/"
+      },
+      "title": "Bearings: Reviews 1997-2001"
+    },
+    {
+      "authors": [
+        "John Clute",
+        "David Langford",
+        "Peter Nicholls",
+        "Graham Sleight"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2012",
+      "category": "Best Related Work",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2012-hugo-awards/"
+      },
+      "title": "The Encyclopedia of Science Fiction, Third Edition"
+    },
+    {
+      "authors": [
+        "Jeff VanderMeer",
+        "S. J. Chambers"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2012",
+      "category": "Best Related Work",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2012-hugo-awards/"
+      },
+      "title": "The Steampunk Bible: An Illustrated Guide to the World of Imaginary Airships, Corsets and Goggles, Mad Scientists, and Strange Literature"
+    },
+    {
+      "authors": [
+        "Seanan McGuire"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2012",
+      "category": "Best Related Work",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2012-hugo-awards/"
+      },
+      "title": "Wicked Girls"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson",
+        "Dan Wells",
+        "Howard Tayler",
+        "Mary Robinette Kowal",
+        "Jordan Sanderson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2012",
+      "category": "Best Related Work",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2012-hugo-awards/"
+      },
+      "title": "Writing Excuses, Season 6"
+    },
+    {
+      "authors": [
+        "Daniel M. Kimmel"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2012",
+      "category": "Best Related Work",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2012-hugo-awards/"
+      },
+      "title": "Jar Jar Binks Must Die\u2026and other Observations about Science Fiction Movies"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson",
+        "Dan Wells",
+        "Mary Robinette Kowal",
+        "Howard Tayler",
+        "Jordan Sanderson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2013",
+      "category": "Best Related Work",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2013-hugo-awards/"
+      },
+      "title": "Writing Excuses Season Seven"
+    },
+    {
+      "authors": [
+        "Lynne M. Thomas",
+        "Sigrid Ellis"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2013",
+      "category": "Best Related Work",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2013-hugo-awards/"
+      },
+      "title": "Chicks Dig Comics: A Celebration of Comic Books by the Women Who Love Them"
+    },
+    {
+      "authors": [
+        "Deborah Stanish",
+        "L.M. Myles"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2013",
+      "category": "Best Related Work",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2013-hugo-awards/"
+      },
+      "title": "Chicks Unravel Time: Women Journey Through Every Season of Doctor Who"
+    },
+    {
+      "authors": [
+        "Edward James",
+        "Farah Mendlesohn"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2013",
+      "category": "Best Related Work",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2013-hugo-awards/"
+      },
+      "title": "The Cambridge Companion to Fantasy Literature"
+    },
+    {
+      "authors": [
+        "Martin H. Greenberg",
+        "John Helfers"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2013",
+      "category": "Best Related Work",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2013-hugo-awards/"
+      },
+      "title": "I Have an Idea for a Book \u2026 The Bibliography of Martin H. Greenberg"
+    },
+    {
+      "authors": [
+        "Kameron Hurley"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2014",
+      "category": "Best Related Work",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2014-hugo-awards/"
+      },
+      "title": "We Have Always Fought: Challenging the Women, Cattle and Slaves Narrative"
+    },
+    {
+      "authors": [
+        "Jeff VanderMeer",
+        "Jeremy Zerfoss"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2014",
+      "category": "Best Related Work",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2014-hugo-awards/"
+      },
+      "title": "Wonderbook: The Illustrated Guide to Creating Imaginative Fiction"
+    },
+    {
+      "authors": [
+        "Sigrid Ellis",
+        "Michael Damian Thomas"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2014",
+      "category": "Best Related Work",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2014-hugo-awards/"
+      },
+      "title": "Queers Dig Time Lords: A Celebration of Doctor Who by the LGBTQ Fans Who Love It"
+    },
+    {
+      "authors": [
+        "Justin Landon",
+        "Jared Shurin"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2014",
+      "category": "Best Related Work",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2014-hugo-awards/"
+      },
+      "title": "Speculative Fiction 2012: The Best Online Reviews, Essays and Commentary"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson",
+        "Dan Wells",
+        "Mary Robinette Kowal",
+        "Howard Tayler",
+        "Jordan Sanderson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2014",
+      "category": "Best Related Work",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2014-hugo-awards/"
+      },
+      "title": "Writing Excuses Season 8"
+    },
+    {
+      "authors": [
+        "Ken Burnside"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2015",
+      "category": "Best Related Work",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2015-hugo-awards/"
+      },
+      "title": "The Hot Equations: Thermodynamics and Military SF"
+    },
+    {
+      "authors": [
+        "Tedd Roberts"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2015",
+      "category": "Best Related Work",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2015-hugo-awards/"
+      },
+      "title": "Why Science is Never Settled"
+    },
+    {
+      "authors": [
+        "John C. Wright"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2015",
+      "category": "Best Related Work",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2015-hugo-awards/"
+      },
+      "title": "Transhuman and Subhuman: Essays on Science Fiction and Awful Truth"
+    },
+    {
+      "authors": [
+        "Lou Antonelli"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2015",
+      "category": "Best Related Work",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2015-hugo-awards/"
+      },
+      "title": "Letters from Gardner"
+    },
+    {
+      "authors": [
+        "Michael Z. Williamson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2015",
+      "category": "Best Related Work",
+      "position": "2015.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2015-hugo-awards/"
+      },
+      "title": "Wisdom from My Internet"
+    },
+    {
+      "authors": [
+        "Marc Aramini"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2016",
+      "category": "Best Related Work",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2016-hugo-awards/"
+      },
+      "title": "Between Light and Shadow: An Exploration of the Fiction of Gene Wolfe, 1951 to 1986"
+    },
+    {
+      "authors": [
+        "Moira Greyland"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2016",
+      "category": "Best Related Work",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2016-hugo-awards/"
+      },
+      "title": "The Story of Moira Greyland"
+    },
+    {
+      "authors": [
+        "Jeffro Johnson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2016",
+      "category": "Best Related Work",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2016-hugo-awards/"
+      },
+      "title": "The First Draft of My Appendix N Book"
+    },
+    {
+      "authors": [
+        "Daniel Eness"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2016",
+      "category": "Best Related Work",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2016-hugo-awards/"
+      },
+      "title": "Safe Space as Rape Room"
+    },
+    {
+      "authors": [
+        "Vox Day"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2016",
+      "category": "Best Related Work",
+      "position": "2016.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2016-hugo-awards/"
+      },
+      "title": "SJWs Always Lie: Taking Down the Thought Police"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Related Work",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      },
+      "title": "Words Are My Matter: Writings About Life and Books, 2000-2016"
+    },
+    {
+      "authors": [
+        "Carrie Fisher"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Related Work",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      },
+      "title": "The Princess Diarist"
+    },
+    {
+      "authors": [
+        "Kameron Hurley"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Related Work",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      },
+      "title": "The Geek Feminist Revolution"
+    },
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Related Work",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      },
+      "title": "The View From the Cheap Seats"
+    },
+    {
+      "authors": [
+        "Sarah Gailey"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Related Work",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      },
+      "title": "The Women of Harry Potter posts"
+    },
+    {
+      "authors": [
+        "Robert Silverberg",
+        "Alvaro Zinos-Amaro"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Related Work",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      },
+      "title": "Traveler of Worlds: Conversations with Robert Silverberg"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Related Work",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      },
+      "title": "No Time to Spare: Thinking About What Matters"
+    },
+    {
+      "authors": [
+        "Zo\u00eb Quinn"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Related Work",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      },
+      "title": "Crash Override: How Gamergate (Nearly) Destroyed My Life, and How We Can Win the Fight Against Online Hate"
+    },
+    {
+      "authors": [
+        "Alexandra Pierce",
+        "Mimi Mondal"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Related Work",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      },
+      "title": "Luminescent Threads: Connections to Octavia E. Butler"
+    },
+    {
+      "authors": [
+        "Paul Kincaid"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Related Work",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      },
+      "title": "Iain M. Banks"
+    },
+    {
+      "authors": [
+        "Liz Bourke"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Related Work",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      },
+      "title": "Sleeping with Monsters: Readings and Reactions in Science Fiction and Fantasy"
+    },
+    {
+      "authors": [
+        "Nat Segaloff"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Related Work",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      },
+      "title": "A Lit Fuse: The Provocative Life of Harlan Ellison"
+    },
+    {
+      "authors": [
+        "Organization for Transformative Works"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Related Work",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/"
+      },
+      "title": "Archive of Our Own"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin",
+        "David Naimon"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Related Work",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/"
+      },
+      "title": "Ursula K. Le Guin: Conversations on Writing"
+    },
+    {
+      "authors": [
+        "Jo Walton"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Related Work",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/"
+      },
+      "title": "An Informal History of the Hugos: A Personal Look Back at the Hugo Awards, 1953-2000"
+    },
+    {
+      "authors": [
+        "Lindsay Ellis",
+        "Angelina Meehan"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Related Work",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/"
+      },
+      "title": "The Hobbit Duology"
+    },
+    {
+      "authors": [
+        "Alec Nevala-Lee"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Related Work",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/"
+      },
+      "title": "Astounding: John W. Campbell, Isaac Asimov, Robert A. Heinlein, L. Ron Hubbard, and the Golden Age of Science Fiction"
+    },
+    {
+      "authors": [
+        "Jeannette Ng"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Related Work",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/"
+      },
+      "title": "2019 John W. Campbell Award Acceptance Speech"
+    },
+    {
+      "authors": [
+        "Arwen Curry"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Related Work",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/"
+      },
+      "title": "Worlds of Ursula K. Le Guin"
+    },
+    {
+      "authors": [
+        "Mallory O\u2019Meara"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Related Work",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/"
+      },
+      "title": "The Lady from the Black Lagoon: Hollywood Monsters and the Lost Legacy of Milicent Patrick"
+    },
+    {
+      "authors": [
+        "J. Michael Straczynski"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Related Work",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/"
+      },
+      "title": "Becoming Superman: My Journey from Poverty to Hollywood"
+    },
+    {
+      "authors": [
+        "Farah Mendlesohn"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Related Work",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/"
+      },
+      "title": "The Pleasant Profession of Robert A. Heinlein"
+    },
+    {
+      "authors": [
+        "Gwyneth Jones"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Related Work",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/"
+      },
+      "title": "Joanna Russ"
+    },
+    {
+      "authors": [
+        "Maria Dahvana Headley"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Related Work",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/"
+      },
+      "title": "Beowulf: A New Translation"
+    },
+    {
+      "authors": [
+        "Lynell George"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Related Work",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/"
+      },
+      "title": "A Handful of Earth, A Handful of Sky: The World of Octavia E. Butler"
+    },
+    {
+      "authors": [
+        "L.D. Lewis",
+        "Brent Lambert",
+        "Iori Kusano",
+        "Vida Cruz"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Related Work",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/"
+      },
+      "title": "FIYAHCON"
+    },
+    {
+      "authors": [
+        "Natalie Luhrs"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Related Work",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/"
+      },
+      "title": "George R.R. Martin Can Fuck Off Into the Sun, Or: The 2020 Hugo Awards Ceremony (Rageblog Edition)"
+    },
+    {
+      "authors": [
+        "Jenny Nicholson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Related Work",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/"
+      },
+      "title": "The Last Bronycon: a fandom autopsy"
+    },
+    {
+      "authors": [
+        "Claire Rousseau",
+        "C",
+        "Cassie Hart",
+        "Adri Joy",
+        "Marguerite Kenner",
+        "Cheryl Morgan",
+        "Alasdair Stuart"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Related Work",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/"
+      },
+      "title": "CoNZealand Fringe"
+    },
+    {
+      "authors": [
+        "Charlie Jane Anders"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Related Work",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      },
+      "title": "Never Say You Can\u2019t Survive"
+    },
+    {
+      "authors": [
+        "Elsa Sjunneson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Related Work",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      },
+      "title": "Being Seen: One Deafblind Woman\u2019s Fight to End Ableism"
+    },
+    {
+      "authors": [
+        "Camestros Felapton"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Related Work",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      },
+      "title": "The Complete Debarkle: Saga of a Culture War"
+    },
+    {
+      "authors": [
+        "Andrew Nette",
+        "Iain McIntyre"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Related Work",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      },
+      "title": "Dangerous Visions and New Worlds: Radical Science Fiction, 1950 to 1985"
+    },
+    {
+      "authors": [
+        "Emily St. James"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Related Work",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      },
+      "title": "How Twitter can ruin a life"
+    },
+    {
+      "authors": [
+        "Abraham Riesman"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Related Work",
+      "position": "2022.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      },
+      "title": "True Believer: The Rise and Fall of Stan Lee"
+    },
+    {
+      "authors": [
+        "Rob Wilkins"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Related Work",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      },
+      "title": "Terry Pratchett: A Life With Footnotes"
+    },
+    {
+      "authors": [
+        "Kyle Buchanan"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Related Work",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      },
+      "title": "Blood, Sweat & Chrome: The Wild and True Story of Mad Max: Fury Road"
+    },
+    {
+      "authors": [
+        "Lawrence M. Schoen"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Related Work",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      },
+      "title": "Buffalito World Outreach Project"
+    },
+    {
+      "authors": [
+        "Yang Feng"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Related Work",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      },
+      "title": "Chinese Science Fiction, An Oral History, Volume 1"
+    },
+    {
+      "authors": [
+        "S.L. Huang"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Related Work",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      },
+      "title": "The Ghost of Workshops Past"
+    },
+    {
+      "authors": [
+        "Wil Wheaton"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Related Work",
+      "position": "2023.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      },
+      "title": "Still Just a Geek: An Annotated Memoir"
+    },
+    {
+      "authors": [
+        "Kelly Weinersmith",
+        "Zach Weinersmith"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Related Work",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/"
+      },
+      "title": "A City on Mars"
+    },
+    {
+      "authors": [
+        "Niall Harrison"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Related Work",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/"
+      },
+      "title": "All These Worlds: Reviews & Essays"
+    },
+    {
+      "authors": [
+        "\u6768\u67ab",
+        "Yang Feng"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Related Work",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/"
+      },
+      "title": "\u4e2d\u56fd\u79d1\u5e7b\u53e3\u8ff0\u53f2, \u7b2c\u4e8c\u5377, \u7b2c\u4e09\u5377\uff0c(Chinese Science Fiction: An Oral History, vols 2 and 3)"
+    },
+    {
+      "authors": [
+        "Iain M. Banks"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Related Work",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/"
+      },
+      "title": "The Culture: The Drawings"
+    },
+    {
+      "authors": [
+        "\u738b\u96c5\u5a77",
+        "Tina Wong"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Related Work",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/"
+      },
+      "title": "\u96e8\u679cX\u8bbf\u8c08 (Discover X)"
+    },
+    {
+      "authors": [
+        "Maureen Kincaid Speller",
+        "Nina Allan"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Related Work",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/"
+      },
+      "title": "A Traveller in Time: The Critical Practice of Maureen Kincaid Speller"
+    },
+    {
+      "authors": [
+        "Jordan S. Carroll"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Related Work",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/"
+      },
+      "title": "Speculative Whiteness: Science Fiction and the Alt-Right"
+    },
+    {
+      "authors": [
+        "Chris M. Barkley",
+        "Jason Sanford"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Related Work",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/"
+      },
+      "title": "The 2023 Hugo Awards: A Report on Censorship and Exclusion"
+    },
+    {
+      "authors": [
+        "Jenny Nicholson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Related Work",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/"
+      },
+      "title": "The Spectacular Failure of the Star Wars Hotel"
+    },
+    {
+      "authors": [
+        "Camestros Felapton",
+        "Heather Rose Jones"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Related Work",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/"
+      },
+      "title": "Charting the Cliff: An Investigation into the 2023 Hugo Nomination Statistics"
+    },
+    {
+      "authors": [
+        "Abigail Nussbaum"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Related Work",
+      "position": "2025.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/"
+      },
+      "title": "Track Changes"
+    }
+  ],
+  "fetched_at": "2026-07-23T03:07:51Z",
+  "list_id": "hugo_awards_related_work",
+  "list_name": "Hugo Awards - Related Work",
+  "match_series": false,
+  "notes": [],
+  "parser": "hugo_awards_related_work",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Hugo Awards - Related Work",
+    "source_id": "hugo_awards_related_work",
+    "url": "https://www.thehugoawards.org/hugo-history/"
+  }
+}

@@ -1,0 +1,3425 @@
+{
+  "append_state": {
+    "entry_count": 200,
+    "last_entry_key": "wild symphony|dan brown",
+    "last_position": "2020.19",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Al Yankovic"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Picture",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2011"
+      },
+      "title": "When I Grow Up: A Weird Al Rhyming New York Times Bestselling Picture Book That Celebrates Creativity",
+      "votes": "1967"
+    },
+    {
+      "authors": [
+        "Jon Klassen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Picture",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2011"
+      },
+      "title": "I Want My Hat Back",
+      "votes": "1821"
+    },
+    {
+      "authors": [
+        "M\u00e9lanie Watt"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Picture",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2011"
+      },
+      "title": "Scaredy Squirrel Has a Birthday Party",
+      "votes": "1241"
+    },
+    {
+      "authors": [
+        "Kevin Henkes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Picture",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2011"
+      },
+      "title": "Little White Rabbit",
+      "votes": "1204"
+    },
+    {
+      "authors": [
+        "Jef Czekaj"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Picture",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2011"
+      },
+      "title": "Cat Secrets",
+      "votes": "993"
+    },
+    {
+      "authors": [
+        "Lane Smith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Picture",
+      "position": "2011.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2011"
+      },
+      "title": "Grandpa Green",
+      "votes": "924"
+    },
+    {
+      "authors": [
+        "Tom Lichtenheld"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Picture",
+      "position": "2011.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2011"
+      },
+      "title": "Cloudette",
+      "votes": "907"
+    },
+    {
+      "authors": [
+        "Chris Van Allsburg"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Picture",
+      "position": "2011.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2011"
+      },
+      "title": "Queen of the Falls",
+      "votes": "872"
+    },
+    {
+      "authors": [
+        "Mo Willems"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Picture",
+      "position": "2011.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2011"
+      },
+      "title": "Hooray for Amanda & Her Alligator!",
+      "votes": "839"
+    },
+    {
+      "authors": [
+        "John Rocco"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Picture",
+      "position": "2011.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2011"
+      },
+      "title": "Blackout",
+      "votes": "756"
+    },
+    {
+      "authors": [
+        "Laura Joffe Numeroff"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Picture",
+      "position": "2011.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2011"
+      },
+      "title": "If You Give a Dog a Donut",
+      "votes": "405"
+    },
+    {
+      "authors": [
+        "Carter Goodrich"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Picture",
+      "position": "2011.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2011"
+      },
+      "title": "Say Hello to Zorro!",
+      "votes": "368"
+    },
+    {
+      "authors": [
+        "Lee Wardlaw"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Picture",
+      "position": "2011.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2011"
+      },
+      "title": "Won-Ton",
+      "votes": "337"
+    },
+    {
+      "authors": [
+        "Mo Willems"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Picture",
+      "position": "2011.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2011"
+      },
+      "title": "I Broke My Trunk!",
+      "votes": "327"
+    },
+    {
+      "authors": [
+        "Stephen A. Savage"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Picture",
+      "position": "2011.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2011"
+      },
+      "title": "Where's Walrus?",
+      "votes": "312"
+    },
+    {
+      "authors": [
+        "Patrick McDonnell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Picture",
+      "position": "2011.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2011"
+      },
+      "title": "Me... Jane",
+      "votes": "293"
+    },
+    {
+      "authors": [
+        "Anna Dewdney"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Picture",
+      "position": "2011.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2011"
+      },
+      "title": "Llama Llama Home with Mama",
+      "votes": "256"
+    },
+    {
+      "authors": [
+        "Judy Schachner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Picture",
+      "position": "2011.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2011"
+      },
+      "title": "Skippyjon Jones, Class Action",
+      "votes": "240"
+    },
+    {
+      "authors": [
+        "Michael Hall"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Picture",
+      "position": "2011.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2011"
+      },
+      "title": "Perfect Square",
+      "votes": "220"
+    },
+    {
+      "authors": [
+        "Peter Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Picture",
+      "position": "2011.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2011"
+      },
+      "title": "You Will Be My Friend!",
+      "votes": "99"
+    },
+    {
+      "authors": [
+        "Ian Falconer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Picture",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2012"
+      },
+      "title": "Olivia and the Fairy Princesses",
+      "votes": "7699"
+    },
+    {
+      "authors": [
+        "Mo Willems"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Picture",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2012"
+      },
+      "title": "The Duckling Gets a Cookie!?",
+      "votes": "6971"
+    },
+    {
+      "authors": [
+        "Eric Litwin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Picture",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2012"
+      },
+      "title": "Pete the Cat and His Four Groovy Buttons",
+      "votes": "3712"
+    },
+    {
+      "authors": [
+        "Jon Klassen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Picture",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2012"
+      },
+      "title": "This Is Not My Hat",
+      "votes": "3595"
+    },
+    {
+      "authors": [
+        "Aaron Reynolds"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Picture",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2012"
+      },
+      "title": "Creepy Carrots!",
+      "votes": "2330"
+    },
+    {
+      "authors": [
+        "Mo Willems"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Picture",
+      "position": "2012.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2012"
+      },
+      "title": "Listen to My Trumpet!",
+      "votes": "2156"
+    },
+    {
+      "authors": [
+        "Mac Barnett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Picture",
+      "position": "2012.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2012"
+      },
+      "title": "Extra Yarn",
+      "votes": "1887"
+    },
+    {
+      "authors": [
+        "Ame Dyckman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Picture",
+      "position": "2012.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2012"
+      },
+      "title": "Boy + Bot",
+      "votes": "1803"
+    },
+    {
+      "authors": [
+        "Toni Buzzeo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Picture",
+      "position": "2012.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2012"
+      },
+      "title": "One Cool Friend",
+      "votes": "1636"
+    },
+    {
+      "authors": [
+        "Mo Willems"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Picture",
+      "position": "2012.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2012"
+      },
+      "title": "Goldilocks and the Three Dinosaurs",
+      "votes": "1355"
+    },
+    {
+      "authors": [
+        "Amy Krouse Rosenthal"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Picture",
+      "position": "2012.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2012"
+      },
+      "title": "Chopsticks",
+      "votes": "844"
+    },
+    {
+      "authors": [
+        "Laura Vaccaro Seeger"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Picture",
+      "position": "2012.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2012"
+      },
+      "title": "Green",
+      "votes": "775"
+    },
+    {
+      "authors": [
+        "Kelly Bingham"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Picture",
+      "position": "2012.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2012"
+      },
+      "title": "Z Is for Moose",
+      "votes": "766"
+    },
+    {
+      "authors": [
+        "Julie Fogliano"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Picture",
+      "position": "2012.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2012"
+      },
+      "title": "And Then It's Spring",
+      "votes": "645"
+    },
+    {
+      "authors": [
+        "William Joyce"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Picture",
+      "position": "2012.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2012"
+      },
+      "title": "The Fantastic Flying Books of Mr. Morris Lessmore",
+      "votes": "582"
+    },
+    {
+      "authors": [
+        "Mac Barnett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Picture",
+      "position": "2012.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2012"
+      },
+      "title": "Chloe and the Lion",
+      "votes": "494"
+    },
+    {
+      "authors": [
+        "Ari Berk"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Picture",
+      "position": "2012.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2012"
+      },
+      "title": "Nightsong",
+      "votes": "433"
+    },
+    {
+      "authors": [
+        "Adam Rubin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Picture",
+      "position": "2012.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2012"
+      },
+      "title": "Dragons Love Tacos",
+      "votes": "329"
+    },
+    {
+      "authors": [
+        "Celyn Lawrence"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Picture",
+      "position": "2012.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2012"
+      },
+      "title": "Wheel-Mouse vs All The Crazy Robots",
+      "votes": "259"
+    },
+    {
+      "authors": [
+        "Michael Buckley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Picture",
+      "position": "2012.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2012"
+      },
+      "title": "Kel Gilligan's Daredevil Stunt Show",
+      "votes": "69"
+    },
+    {
+      "authors": [
+        "Drew Daywalt",
+        "Oliver Jeffers"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Picture",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2013"
+      },
+      "title": "The Day the Crayons Quit",
+      "votes": "9087"
+    },
+    {
+      "authors": [
+        "Lemony Snicket"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Picture",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2013"
+      },
+      "title": "The Dark",
+      "votes": "8466"
+    },
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Picture",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2013"
+      },
+      "title": "Chu's Day",
+      "votes": "7124"
+    },
+    {
+      "authors": [
+        "Lucy Cooke"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Picture",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2013"
+      },
+      "title": "A Little Book of Sloth",
+      "votes": "6248"
+    },
+    {
+      "authors": [
+        "Aaron Becker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Picture",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2013"
+      },
+      "title": "Journey",
+      "votes": "4893"
+    },
+    {
+      "authors": [
+        "Bob Shea"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Picture",
+      "position": "2013.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2013"
+      },
+      "title": "Unicorn Thinks He's Pretty Great",
+      "votes": "4480"
+    },
+    {
+      "authors": [
+        "Maurice Sendak"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Picture",
+      "position": "2013.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2013"
+      },
+      "title": "My Brother's Book",
+      "votes": "3542"
+    },
+    {
+      "authors": [
+        "Mac Barnett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Picture",
+      "position": "2013.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2013"
+      },
+      "title": "Count the Monkeys",
+      "votes": "2975"
+    },
+    {
+      "authors": [
+        "Molly Idle"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Picture",
+      "position": "2013.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2013"
+      },
+      "title": "Flora and the Flamingo",
+      "votes": "2895"
+    },
+    {
+      "authors": [
+        "Mo Willems"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Picture",
+      "position": "2013.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2013"
+      },
+      "title": "That Is Not a Good Idea!",
+      "votes": "2805"
+    },
+    {
+      "authors": [
+        "Paul Fleischman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Picture",
+      "position": "2013.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2013"
+      },
+      "title": "The Matchbox Diary",
+      "votes": "1451"
+    },
+    {
+      "authors": [
+        "Peter Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Picture",
+      "position": "2013.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2013"
+      },
+      "title": "Mr. Tiger Goes Wild",
+      "votes": "1398"
+    },
+    {
+      "authors": [
+        "Amy Krouse Rosenthal"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Picture",
+      "position": "2013.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2013"
+      },
+      "title": "Exclamation Mark",
+      "votes": "1171"
+    },
+    {
+      "authors": [
+        "Jesse Klausmeier"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Picture",
+      "position": "2013.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2013"
+      },
+      "title": "Open This Little Book",
+      "votes": "1125"
+    },
+    {
+      "authors": [
+        "Jennifer Berne"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Picture",
+      "position": "2013.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2013"
+      },
+      "title": "On a Beam of Light",
+      "votes": "924"
+    },
+    {
+      "authors": [
+        "David Wiesner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Picture",
+      "position": "2013.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2013"
+      },
+      "title": "Mr. Wuffles!",
+      "votes": "857"
+    },
+    {
+      "authors": [
+        "Bridget Heos"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Picture",
+      "position": "2013.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2013"
+      },
+      "title": "Mustache Baby",
+      "votes": "726"
+    },
+    {
+      "authors": [
+        "Erin Dealey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Picture",
+      "position": "2013.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2013"
+      },
+      "title": "Deck the Walls",
+      "votes": "338"
+    },
+    {
+      "authors": [
+        "Julie Fogliano"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Picture",
+      "position": "2013.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2013"
+      },
+      "title": "If You Want to See a Whale",
+      "votes": "253"
+    },
+    {
+      "authors": [
+        "Pat Zietlow Miller"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Picture",
+      "position": "2013.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2013"
+      },
+      "title": "Sophie's Squash",
+      "votes": "239"
+    },
+    {
+      "authors": [
+        "Mo Willems"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Picture",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2014"
+      },
+      "title": "The Pigeon Needs a Bath!",
+      "votes": "26074"
+    },
+    {
+      "authors": [
+        "B.J. Novak"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Picture",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2014"
+      },
+      "title": "The Book with No Pictures",
+      "votes": "21589"
+    },
+    {
+      "authors": [
+        "Ben Hatke"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Picture",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2014"
+      },
+      "title": "Julia's House for Lost Creatures",
+      "votes": "10289"
+    },
+    {
+      "authors": [
+        "Luis Carlos Montalv\u00e1n"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Picture",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2014"
+      },
+      "title": "Tuesday Tucks Me In",
+      "votes": "9660"
+    },
+    {
+      "authors": [
+        "Kobi Yamada"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Picture",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2014"
+      },
+      "title": "What Do You Do With an Idea?",
+      "votes": "6949"
+    },
+    {
+      "authors": [
+        "Jenny Offill"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Picture",
+      "position": "2014.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2014"
+      },
+      "title": "Sparky!",
+      "votes": "6768"
+    },
+    {
+      "authors": [
+        "Patricia Hruby Powell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Picture",
+      "position": "2014.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2014"
+      },
+      "title": "Josephine",
+      "votes": "5394"
+    },
+    {
+      "authors": [
+        "Jon J. Muth"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Picture",
+      "position": "2014.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2014"
+      },
+      "title": "Hi, Koo!",
+      "votes": "5350"
+    },
+    {
+      "authors": [
+        "Deborah Underwood"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Picture",
+      "position": "2014.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2014"
+      },
+      "title": "Here Comes the Easter Cat",
+      "votes": "5329"
+    },
+    {
+      "authors": [
+        "Aaron Becker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Picture",
+      "position": "2014.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2014"
+      },
+      "title": "Quest",
+      "votes": "4611"
+    },
+    {
+      "authors": [
+        "Dan Santat"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Picture",
+      "position": "2014.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2014"
+      },
+      "title": "The Adventures of Beekle",
+      "votes": "2578"
+    },
+    {
+      "authors": [
+        "Lori Nichols"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Picture",
+      "position": "2014.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2014"
+      },
+      "title": "Maple",
+      "votes": "2570"
+    },
+    {
+      "authors": [
+        "Daniel Beaty"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Picture",
+      "position": "2014.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2014"
+      },
+      "title": "Knock Knock",
+      "votes": "2477"
+    },
+    {
+      "authors": [
+        "Sam Garton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Picture",
+      "position": "2014.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2014"
+      },
+      "title": "I Am Otter",
+      "votes": "1849"
+    },
+    {
+      "authors": [
+        "Paul B. Janeczko"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Picture",
+      "position": "2014.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2014"
+      },
+      "title": "Firefly July",
+      "votes": "1782"
+    },
+    {
+      "authors": [
+        "Mark Pett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Picture",
+      "position": "2014.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2014"
+      },
+      "title": "The Girl and the Bicycle",
+      "votes": "1709"
+    },
+    {
+      "authors": [
+        "Kelly DiPucchio"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Picture",
+      "position": "2014.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2014"
+      },
+      "title": "Gaston",
+      "votes": "1165"
+    },
+    {
+      "authors": [
+        "Lois Ehlert"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Picture",
+      "position": "2014.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2014"
+      },
+      "title": "The Scraps Book",
+      "votes": "1153"
+    },
+    {
+      "authors": [
+        "Ilchi Lee"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Picture",
+      "position": "2014.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2014"
+      },
+      "title": "Bird of the Soul",
+      "votes": "1065"
+    },
+    {
+      "authors": [
+        "Mac Barnett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Picture",
+      "position": "2014.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2014"
+      },
+      "title": "Sam and Dave Dig a Hole",
+      "votes": "692"
+    },
+    {
+      "authors": [
+        "Drew Daywalt",
+        "Oliver Jeffers"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Picture",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2015"
+      },
+      "title": "The Day the Crayons Came Home",
+      "votes": "16011"
+    },
+    {
+      "authors": [
+        "Sally M. Walker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Picture",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2015"
+      },
+      "title": "Winnie",
+      "votes": "11810"
+    },
+    {
+      "authors": [
+        "Mo Willems"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Picture",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2015"
+      },
+      "title": "I Will Take a Nap!",
+      "votes": "11267"
+    },
+    {
+      "authors": [
+        "Dr. Seuss"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Picture",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2015"
+      },
+      "title": "What Pet Should I Get?",
+      "votes": "11151"
+    },
+    {
+      "authors": [
+        "Kate Beaton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Picture",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2015"
+      },
+      "title": "The Princess and the Pony",
+      "votes": "7497"
+    },
+    {
+      "authors": [
+        "Jory John"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Picture",
+      "position": "2015.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2015"
+      },
+      "title": "Goodnight Already!",
+      "votes": "6834"
+    },
+    {
+      "authors": [
+        "Kadir Nelson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Picture",
+      "position": "2015.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2015"
+      },
+      "title": "If You Plant a Seed",
+      "votes": "6582"
+    },
+    {
+      "authors": [
+        "Michael Hall"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Picture",
+      "position": "2015.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2015"
+      },
+      "title": "Red",
+      "votes": "6358"
+    },
+    {
+      "authors": [
+        "Amy Krouse Rosenthal"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Picture",
+      "position": "2015.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2015"
+      },
+      "title": "I Wish You More",
+      "votes": "5832"
+    },
+    {
+      "authors": [
+        "JonArno Lawson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Picture",
+      "position": "2015.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2015"
+      },
+      "title": "Sidewalk Flowers",
+      "votes": "5375"
+    },
+    {
+      "authors": [
+        "Ame Dyckman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Picture",
+      "position": "2015.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2015"
+      },
+      "title": "Wolfie the Bunny",
+      "votes": "2409"
+    },
+    {
+      "authors": [
+        "Mara Rockliff"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Picture",
+      "position": "2015.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2015"
+      },
+      "title": "Mesmerized",
+      "votes": "2369"
+    },
+    {
+      "authors": [
+        "Sara O'Leary"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Picture",
+      "position": "2015.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2015"
+      },
+      "title": "This Is Sadie",
+      "votes": "2008"
+    },
+    {
+      "authors": [
+        "Matt de la Pe\u00f1a"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Picture",
+      "position": "2015.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2015"
+      },
+      "title": "Last Stop on Market Street",
+      "votes": "1924"
+    },
+    {
+      "authors": [
+        "Jimmy Fallon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Picture",
+      "position": "2015.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2015"
+      },
+      "title": "Your Baby's First Word Will Be DADA",
+      "votes": "1807"
+    },
+    {
+      "authors": [
+        "Deborah Underwood"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Picture",
+      "position": "2015.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2015"
+      },
+      "title": "Interstellar Cinderella",
+      "votes": "1781"
+    },
+    {
+      "authors": [
+        "Emily Jenkins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Picture",
+      "position": "2015.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2015"
+      },
+      "title": "A Fine Dessert",
+      "votes": "1177"
+    },
+    {
+      "authors": [
+        "Sam Garton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Picture",
+      "position": "2015.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2015"
+      },
+      "title": "Otter in Space",
+      "votes": "1099"
+    },
+    {
+      "authors": [
+        "Daniel Miyares"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Picture",
+      "position": "2015.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2015"
+      },
+      "title": "Float",
+      "votes": "1083"
+    },
+    {
+      "authors": [
+        "Kevin Henkes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Picture",
+      "position": "2015.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2015"
+      },
+      "title": "Waiting",
+      "votes": "660"
+    },
+    {
+      "authors": [
+        "Mo Willems"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Picture",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2016"
+      },
+      "title": "The Thank You Book",
+      "votes": "16433"
+    },
+    {
+      "authors": [
+        "Brendan Wenzel"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Picture",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2016"
+      },
+      "title": "They All Saw a Cat",
+      "votes": "11291"
+    },
+    {
+      "authors": [
+        "Dan Santat"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Picture",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2016"
+      },
+      "title": "Are We There Yet?",
+      "votes": "10942"
+    },
+    {
+      "authors": [
+        "Kobi Yamada"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Picture",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2016"
+      },
+      "title": "What Do You Do With a Problem?",
+      "votes": "10743"
+    },
+    {
+      "authors": [
+        "Caron Levis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Picture",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2016"
+      },
+      "title": "Ida, Always",
+      "votes": "9761"
+    },
+    {
+      "authors": [
+        "Oliver Jeffers"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Picture",
+      "position": "2016.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2016"
+      },
+      "title": "A Child of Books",
+      "votes": "9541"
+    },
+    {
+      "authors": [
+        "Ben Hatke"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Picture",
+      "position": "2016.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2016"
+      },
+      "title": "Nobody Likes a Goblin",
+      "votes": "7029"
+    },
+    {
+      "authors": [
+        "Andrea Beaty"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Picture",
+      "position": "2016.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2016"
+      },
+      "title": "Ada Twist, Scientist (The Questioneers",
+      "votes": "6769"
+    },
+    {
+      "authors": [
+        "Sam Garton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Picture",
+      "position": "2016.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2016"
+      },
+      "title": "Otter Goes to School",
+      "votes": "6524"
+    },
+    {
+      "authors": [
+        "Jon Klassen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Picture",
+      "position": "2016.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2016"
+      },
+      "title": "We Found a Hat",
+      "votes": "5610"
+    },
+    {
+      "authors": [
+        "Sherman Alexie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Picture",
+      "position": "2016.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2016"
+      },
+      "title": "Thunder Boy Jr.",
+      "votes": "3203"
+    },
+    {
+      "authors": [
+        "Julie Fogliano"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Picture",
+      "position": "2016.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2016"
+      },
+      "title": "When Green Becomes Tomatoes",
+      "votes": "2621"
+    },
+    {
+      "authors": [
+        "J.J. Austrian"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Picture",
+      "position": "2016.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2016"
+      },
+      "title": "Worm Loves Worm",
+      "votes": "2342"
+    },
+    {
+      "authors": [
+        "Julie Falatko"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Picture",
+      "position": "2016.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2016"
+      },
+      "title": "Snappsy the Alligator",
+      "votes": "2149"
+    },
+    {
+      "authors": [
+        "Adam Rex"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Picture",
+      "position": "2016.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2016"
+      },
+      "title": "School's First Day of School",
+      "votes": "1873"
+    },
+    {
+      "authors": [
+        "Lucy Ruth Cummins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Picture",
+      "position": "2016.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2016"
+      },
+      "title": "A Hungry Lion, or A Dwindling Assortment of Animals",
+      "votes": "1744"
+    },
+    {
+      "authors": [
+        "Jane Smiley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Picture",
+      "position": "2016.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2016"
+      },
+      "title": "Twenty Yawns",
+      "votes": "1431"
+    },
+    {
+      "authors": [
+        "Molly Idle"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Picture",
+      "position": "2016.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2016"
+      },
+      "title": "Flora and the Peacocks",
+      "votes": "1151"
+    },
+    {
+      "authors": [
+        "Kate Beaton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Picture",
+      "position": "2016.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2016"
+      },
+      "title": "King Baby",
+      "votes": "997"
+    },
+    {
+      "authors": [
+        "F. Isabel Campoy"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Picture",
+      "position": "2016.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2016"
+      },
+      "title": "Maybe Something Beautiful",
+      "votes": "732"
+    },
+    {
+      "authors": [
+        "R.J. Palacio"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Picture",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2017"
+      },
+      "title": "We're All Wonders",
+      "votes": "24470"
+    },
+    {
+      "authors": [
+        "Malala Yousafzai"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Picture",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2017"
+      },
+      "title": "Malala's Magic Pencil",
+      "votes": "16741"
+    },
+    {
+      "authors": [
+        "Chelsea Clinton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Picture",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2017"
+      },
+      "title": "She Persisted",
+      "votes": "15500"
+    },
+    {
+      "authors": [
+        "Kate Messner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Picture",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2017"
+      },
+      "title": "Over and Under the Pond",
+      "votes": "8483"
+    },
+    {
+      "authors": [
+        "Emily Jenkins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Picture",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2017"
+      },
+      "title": "A Greyhound, a Groundhog",
+      "votes": "7857"
+    },
+    {
+      "authors": [
+        "Mac Barnett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Picture",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2017"
+      },
+      "title": "Triangle",
+      "votes": "7755"
+    },
+    {
+      "authors": [
+        "Corinna Luyken"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Picture",
+      "position": "2017.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2017"
+      },
+      "title": "The Book of Mistakes",
+      "votes": "7240"
+    },
+    {
+      "authors": [
+        "Stephanie Graegin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Picture",
+      "position": "2017.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2017"
+      },
+      "title": "Little Fox in the Forest",
+      "votes": "7000"
+    },
+    {
+      "authors": [
+        "Drew Daywalt"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Picture",
+      "position": "2017.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2017"
+      },
+      "title": "The Legend of Rock Paper Scissors",
+      "votes": "6684"
+    },
+    {
+      "authors": [
+        "Cynthia Levinson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Picture",
+      "position": "2017.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2017"
+      },
+      "title": "The Youngest Marcher",
+      "votes": "6094"
+    },
+    {
+      "authors": [
+        "Bao Phi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Picture",
+      "position": "2017.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2017"
+      },
+      "title": "A Different Pond",
+      "votes": "2855"
+    },
+    {
+      "authors": [
+        "Jonathan London"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Picture",
+      "position": "2017.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2017"
+      },
+      "title": "Duck and Hippo in the Rainstorm",
+      "votes": "2517"
+    },
+    {
+      "authors": [
+        "Bill Martin Jr."
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Picture",
+      "position": "2017.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2017"
+      },
+      "title": "Spunky Little Monkey",
+      "votes": "2308"
+    },
+    {
+      "authors": [
+        "Jen Campbell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Picture",
+      "position": "2017.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2017"
+      },
+      "title": "Franklin's Flying Bookshop",
+      "votes": "1912"
+    },
+    {
+      "authors": [
+        "Ryan T. Higgins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Picture",
+      "position": "2017.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2017"
+      },
+      "title": "Be Quiet!",
+      "votes": "1809"
+    },
+    {
+      "authors": [
+        "Jessie Sima"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Picture",
+      "position": "2017.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2017"
+      },
+      "title": "Not Quite Narwhal",
+      "votes": "1740"
+    },
+    {
+      "authors": [
+        "Gaia Cornwall"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Picture",
+      "position": "2017.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2017"
+      },
+      "title": "Jabari Jumps",
+      "votes": "1646"
+    },
+    {
+      "authors": [
+        "Josh Funk"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Picture",
+      "position": "2017.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2017"
+      },
+      "title": "The Case of the Stinky Stench",
+      "votes": "1578"
+    },
+    {
+      "authors": [
+        "Chris Colfer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Picture",
+      "position": "2017.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2017"
+      },
+      "title": "Trollbella Throws a Party",
+      "votes": "1235"
+    },
+    {
+      "authors": [
+        "Dan Santat"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Picture",
+      "position": "2017.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2017"
+      },
+      "title": "After the Fall",
+      "votes": "1137"
+    },
+    {
+      "authors": [
+        "Grace Byers"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Picture",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2018"
+      },
+      "title": "I Am Enough",
+      "votes": "25841"
+    },
+    {
+      "authors": [
+        "Chronicle Books"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Picture",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2018"
+      },
+      "title": "A Day in the Life of Marlon Bundo",
+      "votes": "25670"
+    },
+    {
+      "authors": [
+        "Vashti Harrison"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Picture",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2018"
+      },
+      "title": "Little Leaders",
+      "votes": "16644"
+    },
+    {
+      "authors": [
+        "Ryan T. Higgins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Picture",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2018"
+      },
+      "title": "We Don't Eat Our Classmates",
+      "votes": "11438"
+    },
+    {
+      "authors": [
+        "Marianna Coppo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Picture",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2018"
+      },
+      "title": "Petra",
+      "votes": "10585"
+    },
+    {
+      "authors": [
+        "Cori Doerrfeld"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Picture",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2018"
+      },
+      "title": "The Rabbit Listened",
+      "votes": "9683"
+    },
+    {
+      "authors": [
+        "Sophie Blackall"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Picture",
+      "position": "2018.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2018"
+      },
+      "title": "Hello Lighthouse",
+      "votes": "9563"
+    },
+    {
+      "authors": [
+        "Terry Fan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Picture",
+      "position": "2018.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2018"
+      },
+      "title": "Ocean Meets Sky",
+      "votes": "9242"
+    },
+    {
+      "authors": [
+        "Matt de la Pe\u00f1a"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Picture",
+      "position": "2018.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2018"
+      },
+      "title": "Love",
+      "votes": "8984"
+    },
+    {
+      "authors": [
+        "Jessica Love"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Picture",
+      "position": "2018.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2018"
+      },
+      "title": "Juli\u00e1n Is a Mermaid",
+      "votes": "6513"
+    },
+    {
+      "authors": [
+        "Peter H. Reynolds"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Picture",
+      "position": "2018.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2018"
+      },
+      "title": "The Word Collector",
+      "votes": "2743"
+    },
+    {
+      "authors": [
+        "Brian Selznick"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Picture",
+      "position": "2018.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2018"
+      },
+      "title": "Baby Monkey, Private Eye",
+      "votes": "2675"
+    },
+    {
+      "authors": [
+        "Minh L\u00ea"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Picture",
+      "position": "2018.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2018"
+      },
+      "title": "Drawn Together",
+      "votes": "2420"
+    },
+    {
+      "authors": [
+        "Junot D\u00edaz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Picture",
+      "position": "2018.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2018"
+      },
+      "title": "Islandborn",
+      "votes": "2374"
+    },
+    {
+      "authors": [
+        "Jason Flom"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Picture",
+      "position": "2018.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2018"
+      },
+      "title": "Lulu is a Rhinoceros",
+      "votes": "2073"
+    },
+    {
+      "authors": [
+        "Jacqueline Woodson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Picture",
+      "position": "2018.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2018"
+      },
+      "title": "The Day You Begin",
+      "votes": "1198"
+    },
+    {
+      "authors": [
+        "Daniel Haack"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Picture",
+      "position": "2018.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2018"
+      },
+      "title": "Prince & Knight",
+      "votes": "1133"
+    },
+    {
+      "authors": [
+        "Jillian Tamaki"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Picture",
+      "position": "2018.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2018"
+      },
+      "title": "They Say Blue",
+      "votes": "1075"
+    },
+    {
+      "authors": [
+        "Matt Haig"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Picture",
+      "position": "2018.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2018"
+      },
+      "title": "The Truth Pixie",
+      "votes": "956"
+    },
+    {
+      "authors": [
+        "Jen Campbell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Picture",
+      "position": "2018.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2018"
+      },
+      "title": "Franklin and Luna Go to the Moon",
+      "votes": "888"
+    },
+    {
+      "authors": [
+        "Fred Rogers"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Picture",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2019"
+      },
+      "title": "A Beautiful Day in the Neighborhood: The Poetry of Mister Rogers",
+      "votes": "29860"
+    },
+    {
+      "authors": [
+        "Lupita Nyong'o"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Picture",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2019"
+      },
+      "title": "Sulwe",
+      "votes": "26891"
+    },
+    {
+      "authors": [
+        "Jory John"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Picture",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2019"
+      },
+      "title": "The Good Egg",
+      "votes": "18586"
+    },
+    {
+      "authors": [
+        "Matthew A. Cherry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Picture",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2019"
+      },
+      "title": "Hair Love",
+      "votes": "12925"
+    },
+    {
+      "authors": [
+        "Diana Murray"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Picture",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2019"
+      },
+      "title": "Unicorn Day",
+      "votes": "8998"
+    },
+    {
+      "authors": [
+        "Michael Engler"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Picture",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2019"
+      },
+      "title": "A Tiger Like Me",
+      "votes": "7954"
+    },
+    {
+      "authors": [
+        "Mo Willems"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Picture",
+      "position": "2019.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2019"
+      },
+      "title": "Because",
+      "votes": "7396"
+    },
+    {
+      "authors": [
+        "Anna Kang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Picture",
+      "position": "2019.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2019"
+      },
+      "title": "We Are (Not) Friends",
+      "votes": "6069"
+    },
+    {
+      "authors": [
+        "Mac Barnett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Picture",
+      "position": "2019.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2019"
+      },
+      "title": "Just Because",
+      "votes": "5807"
+    },
+    {
+      "authors": [
+        "Kate DiCamillo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Picture",
+      "position": "2019.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2019"
+      },
+      "title": "A Piglet Named Mercy",
+      "votes": "5713"
+    },
+    {
+      "authors": [
+        "Lisa Robinson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Picture",
+      "position": "2019.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2019"
+      },
+      "title": "Pirates Don't Go to Kindergarten!",
+      "votes": "2943"
+    },
+    {
+      "authors": [
+        "Ibtihaj Muhammad"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Picture",
+      "position": "2019.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2019"
+      },
+      "title": "The Proudest Blue",
+      "votes": "2875"
+    },
+    {
+      "authors": [
+        "Kwame Alexander"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Picture",
+      "position": "2019.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2019"
+      },
+      "title": "How to Read a Book",
+      "votes": "2604"
+    },
+    {
+      "authors": [
+        "Josh Funk"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Picture",
+      "position": "2019.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2019"
+      },
+      "title": "It's Not Hansel and Gretel",
+      "votes": "1976"
+    },
+    {
+      "authors": [
+        "Kevin Noble Maillard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Picture",
+      "position": "2019.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2019"
+      },
+      "title": "Fry Bread",
+      "votes": "1655"
+    },
+    {
+      "authors": [
+        "Ellen Javernick"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Picture",
+      "position": "2019.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2019"
+      },
+      "title": "What If Everybody Thought That?",
+      "votes": "1466"
+    },
+    {
+      "authors": [
+        "Lindsay Ward"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Picture",
+      "position": "2019.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2019"
+      },
+      "title": "Vacation for Dexter!",
+      "votes": "1459"
+    },
+    {
+      "authors": [
+        "Kwame Alexander"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Picture",
+      "position": "2019.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2019"
+      },
+      "title": "The Undefeated",
+      "votes": "838"
+    },
+    {
+      "authors": [
+        "Lauren H. Kerstein"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Picture",
+      "position": "2019.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2019"
+      },
+      "title": "Rosie the Dragon and Charlie Make Waves",
+      "votes": "823"
+    },
+    {
+      "authors": [
+        "Erin Dealey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Picture",
+      "position": "2019.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2019"
+      },
+      "title": "Snow Globe Wishes",
+      "votes": "650"
+    },
+    {
+      "authors": [
+        "Ibram X. Kendi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Picture",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2020"
+      },
+      "title": "Antiracist Baby",
+      "votes": "28359"
+    },
+    {
+      "authors": [
+        "Vanessa Brantley-Newton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Picture",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2020"
+      },
+      "title": "Just Like Me",
+      "votes": "24858"
+    },
+    {
+      "authors": [
+        "Jory John"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Picture",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2020"
+      },
+      "title": "The Cool Bean",
+      "votes": "17011"
+    },
+    {
+      "authors": [
+        "Jimmy Kimmel"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Picture",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2020"
+      },
+      "title": "The Serious Goose",
+      "votes": "16998"
+    },
+    {
+      "authors": [
+        "Lindsay Ward"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Picture",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2020"
+      },
+      "title": "This Book Is Gray",
+      "votes": "13717"
+    },
+    {
+      "authors": [
+        "Guns N' Roses"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Picture",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2020"
+      },
+      "title": "Sweet Child o' Mine",
+      "votes": "10933"
+    },
+    {
+      "authors": [
+        "Derrick Barnes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Picture",
+      "position": "2020.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2020"
+      },
+      "title": "I Am Every Good Thing",
+      "votes": "10650"
+    },
+    {
+      "authors": [
+        "Dalai Lama XIV"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Picture",
+      "position": "2020.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2020"
+      },
+      "title": "The Seed of Compassion",
+      "votes": "10392"
+    },
+    {
+      "authors": [
+        "Rita Lorraine Hubbard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Picture",
+      "position": "2020.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2020"
+      },
+      "title": "The Oldest Student",
+      "votes": "8164"
+    },
+    {
+      "authors": [
+        "Ged Adamson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Picture",
+      "position": "2020.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2020"
+      },
+      "title": "Bird Hugs",
+      "votes": "8038"
+    },
+    {
+      "authors": [
+        "Jessica Love"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Picture",
+      "position": "2020.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2020"
+      },
+      "title": "Juli\u00e1n at the Wedding",
+      "votes": "3582"
+    },
+    {
+      "authors": [
+        "Nancy Redd"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Picture",
+      "position": "2020.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2020"
+      },
+      "title": "Bedtime Bonnet",
+      "votes": "3385"
+    },
+    {
+      "authors": [
+        "Elizabeth Jenner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Picture",
+      "position": "2020.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2020"
+      },
+      "title": "Coronavirus",
+      "votes": "3334"
+    },
+    {
+      "authors": [
+        "Hillary Rodham Clinton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Picture",
+      "position": "2020.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2020"
+      },
+      "title": "Grandma's Gardens",
+      "votes": "3063"
+    },
+    {
+      "authors": [
+        "Kristen Bell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Picture",
+      "position": "2020.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2020"
+      },
+      "title": "The World Needs More Purple People",
+      "votes": "2600"
+    },
+    {
+      "authors": [
+        "Justine Avery"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Picture",
+      "position": "2020.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2020"
+      },
+      "title": "Think Outside the Box",
+      "votes": "2342"
+    },
+    {
+      "authors": [
+        "Carole Lindstrom"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Picture",
+      "position": "2020.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2020"
+      },
+      "title": "We Are Water Protectors",
+      "votes": "2113"
+    },
+    {
+      "authors": [
+        "K. O'Neill"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Picture",
+      "position": "2020.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2020"
+      },
+      "title": "Dewdrop",
+      "votes": "1322"
+    },
+    {
+      "authors": [
+        "Ryan T. Higgins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Picture",
+      "position": "2020.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2020"
+      },
+      "title": "We Will Rock Our Classmates",
+      "votes": "975"
+    },
+    {
+      "authors": [
+        "Dan Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Picture",
+      "position": "2020.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-picture-books-2020"
+      },
+      "title": "Wild Symphony",
+      "votes": "847"
+    }
+  ],
+  "fetched_at": "2026-07-28T03:16:55Z",
+  "list_id": "goodreads_choice_awards_picture_book",
+  "list_name": "Goodreads Choice Awards - Picture Book (discontinued)",
+  "match_series": false,
+  "notes": [],
+  "parser": "goodreads_choice_awards_picture_book",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Goodreads Choice Awards - Picture Book (discontinued)",
+    "source_id": "goodreads_choice_awards_picture_book",
+    "url": "https://www.goodreads.com/choiceawards"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "list_id": "goodreads_choice_awards_fantasy",
+  "matches": [
+    {
+      "entry_key": "babel|r f kuang",
+      "imported_author": [
+        "R.F. Kuang"
+      ],
+      "imported_title": "Babel",
+      "matched_at": "2026-07-22T06:48:59Z",
+      "matched_authors": [
+        "R. F. Kuang"
+      ],
+      "matched_book_id": 30618,
+      "matched_book_ids": [
+        30618
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "R. F. Kuang"
+          ],
+          "matched_book_id": 30618,
+          "matched_title": "Babel. An Arcane History"
+        }
+      ],
+      "matched_title": "Babel. An Arcane History"
+    },
+    {
+      "entry_key": "emily wilde s map of the otherlands|heather fawcett",
+      "imported_author": [
+        "Heather Fawcett"
+      ],
+      "imported_title": "Emily Wilde\u2019s Map of the Otherlands",
+      "matched_at": "2026-07-22T06:49:41Z",
+      "matched_authors": [
+        "Heather Fawcett"
+      ],
+      "matched_book_id": 38806,
+      "matched_book_ids": [
+        38806
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Heather Fawcett"
+          ],
+          "matched_book_id": 38806,
+          "matched_title": "Emily Wilde's Compendium of Lost Tales"
+        }
+      ],
+      "matched_title": "Emily Wilde's Compendium of Lost Tales"
+    }
+  ],
+  "saved_at": "2026-07-22T06:49:41Z",
+  "schema_version": 2
+}

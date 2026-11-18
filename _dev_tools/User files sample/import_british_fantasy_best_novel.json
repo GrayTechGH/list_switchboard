@@ -1,8 +1,8 @@
 {
   "append_state": {
-    "entry_count": 1,
-    "last_entry_key": "the knight of the swords|michael moorcock",
-    "last_position": "1972",
+    "entry_count": 153,
+    "last_entry_key": "the silent land|graham joyce",
+    "last_position": "2011.04",
     "source_revision": null
   },
   "entries": [
@@ -16,20 +16,2269 @@
       "position": "1972",
       "result": "winner",
       "title": "The Knight of the Swords"
+    },
+    {
+      "authors": [
+        "Michael Moorcock"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1973",
+      "category": "Best Novel",
+      "position": "1973",
+      "result": "winner",
+      "title": "The King of the Swords"
+    },
+    {
+      "authors": [
+        "Poul Anderson"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1974",
+      "category": "Best Novel",
+      "position": "1974",
+      "result": "winner",
+      "title": "Hrolf Kraki\u2019s Saga"
+    },
+    {
+      "authors": [
+        "Michael Moorcock"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1975",
+      "category": "Best Novel",
+      "position": "1975",
+      "result": "winner",
+      "title": "The Sword and the Stallion"
+    },
+    {
+      "authors": [
+        "Michael Shea"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1975",
+      "category": "Best Novel",
+      "position": "1975.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1975"
+      },
+      "title": "A Quest for Simbilis"
+    },
+    {
+      "authors": [
+        "Richard Adams"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1975",
+      "category": "Best Novel",
+      "position": "1975.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1975"
+      },
+      "title": "Shardik"
+    },
+    {
+      "authors": [
+        "Michael Moorcock"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976",
+      "result": "winner",
+      "title": "The Hollow Lands"
+    },
+    {
+      "authors": [
+        "Karl Edward Wagner"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1976"
+      },
+      "title": "Bloodstone"
+    },
+    {
+      "authors": [
+        "Gary Myers"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1976"
+      },
+      "title": "The House of the Worm"
+    },
+    {
+      "authors": [
+        "John Norman"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1976"
+      },
+      "title": "Marauders of Gor"
+    },
+    {
+      "authors": [
+        "Adrian Cole"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1976"
+      },
+      "title": "A Plague of Nightmares"
+    },
+    {
+      "authors": [
+        "Gordon Dickson"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1977",
+      "category": "Best Novel",
+      "position": "1977",
+      "result": "winner",
+      "title": "The Dragon and The George"
+    },
+    {
+      "authors": [
+        "Katherine Kurtz"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1977",
+      "category": "Best Novel",
+      "position": "1977.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1977"
+      },
+      "title": "Camber of Culdi"
+    },
+    {
+      "authors": [
+        "Anne Rice"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1977",
+      "category": "Best Novel",
+      "position": "1977.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1977"
+      },
+      "title": "Interview with the Vampire"
+    },
+    {
+      "authors": [
+        "Piers Anthony"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1978",
+      "category": "Best Novel",
+      "position": "1978",
+      "result": "winner",
+      "title": "A Spell for Chameleon"
+    },
+    {
+      "authors": [
+        "Andrew J. Offutt"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1978",
+      "category": "Best Novel",
+      "position": "1978.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1978"
+      },
+      "title": "My Lord Barbarian"
+    },
+    {
+      "authors": [
+        "Fritz Leiber"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1978",
+      "category": "Best Novel",
+      "position": "1978.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1978"
+      },
+      "title": "Our Lady of Darkness"
+    },
+    {
+      "authors": [
+        "Stephen Donaldson"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1979",
+      "category": "Best Novel",
+      "position": "1979",
+      "result": "winner",
+      "title": "The Chronicles of Thomas Covenant the Unbeliever"
+    },
+    {
+      "authors": [
+        "George R. R. Martin"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1979",
+      "category": "Best Novel",
+      "position": "1979.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1979"
+      },
+      "title": "Dying of the Light"
+    },
+    {
+      "authors": [
+        "Michael Moorcock"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1979",
+      "category": "Best Novel",
+      "position": "1979.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1979"
+      },
+      "title": "Gloriana"
+    },
+    {
+      "authors": [
+        "Tanith Lee"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1979",
+      "category": "Best Novel",
+      "position": "1979.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1979"
+      },
+      "title": "The Quest of the White Witch"
+    },
+    {
+      "authors": [
+        "Richard Cowper"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1979",
+      "category": "Best Novel",
+      "position": "1979.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1979"
+      },
+      "title": "The Road to Corlay"
+    },
+    {
+      "authors": [
+        "Tanith Lee"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1980",
+      "category": "Best Novel",
+      "position": "1980",
+      "result": "winner",
+      "title": "Death\u2019s Master"
+    },
+    {
+      "authors": [
+        "Patricia A. McKillip"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1980",
+      "category": "Best Novel",
+      "position": "1980.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1980"
+      },
+      "title": "Harpist in the Wind"
+    },
+    {
+      "authors": [
+        "Phyllis Eisenstein"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1980",
+      "category": "Best Novel",
+      "position": "1980.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1980"
+      },
+      "title": "Sorcerer's Son"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1981",
+      "category": "Best Novel",
+      "position": "1981",
+      "result": "winner",
+      "title": "To Wake The Dead"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1981",
+      "category": "Best Novel",
+      "position": "1981.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1981"
+      },
+      "title": "Firestarter"
+    },
+    {
+      "authors": [
+        "Tanith Lee"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1981",
+      "category": "Best Novel",
+      "position": "1981.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1981"
+      },
+      "title": "Kill the Dead"
+    },
+    {
+      "authors": [
+        "M. John Harrison"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1981",
+      "category": "Best Novel",
+      "position": "1981.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1981"
+      },
+      "title": "A Storm of Wings"
+    },
+    {
+      "authors": [
+        "Stephen R. Donaldson"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1981",
+      "category": "Best Novel",
+      "position": "1981.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1981"
+      },
+      "title": "The Wounded Land"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1982",
+      "category": "Best Novel",
+      "position": "1982",
+      "result": "winner",
+      "title": "Cujo"
+    },
+    {
+      "authors": [
+        "Katherine Kurtz"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1982",
+      "category": "Best Novel",
+      "position": "1982.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1982"
+      },
+      "title": "Camber the Heretic"
+    },
+    {
+      "authors": [
+        "Tanith Lee"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1982",
+      "category": "Best Novel",
+      "position": "1982.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1982"
+      },
+      "title": "Delusion's Master"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1982",
+      "category": "Best Novel",
+      "position": "1982.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1982"
+      },
+      "title": "The Nameless"
+    },
+    {
+      "authors": [
+        "Gene Wolfe"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1983",
+      "category": "Best Novel",
+      "position": "1983",
+      "result": "winner",
+      "title": "The Sword of the Lictor"
+    },
+    {
+      "authors": [
+        "M. John Harrison"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1983",
+      "category": "Best Novel",
+      "position": "1983.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1983"
+      },
+      "title": "In Viriconium"
+    },
+    {
+      "authors": [
+        "Robert Bloch"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1983",
+      "category": "Best Novel",
+      "position": "1983.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1983"
+      },
+      "title": "Psycho II"
+    },
+    {
+      "authors": [
+        "Peter Straub"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1984",
+      "category": "Best Novel",
+      "position": "1984",
+      "result": "winner",
+      "title": "Floating Dragon"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1985",
+      "category": "Best Novel",
+      "position": "1985",
+      "result": "winner",
+      "title": "Incarnate"
+    },
+    {
+      "authors": [
+        "Jack Vance"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1985",
+      "category": "Best Novel",
+      "position": "1985.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1985"
+      },
+      "title": "Lyonesse"
+    },
+    {
+      "authors": [
+        "Angela Carter"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1985",
+      "category": "Best Novel",
+      "position": "1985.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1985"
+      },
+      "title": "Nights at the Circus"
+    },
+    {
+      "authors": [
+        "TED Kline"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1986",
+      "category": "Best Novel",
+      "position": "1986",
+      "result": "winner",
+      "title": "The Ceremonies"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1987",
+      "category": "Best Novel",
+      "position": "1987",
+      "result": "winner",
+      "title": "It"
+    },
+    {
+      "authors": [
+        "Brian Lumley"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1987",
+      "category": "Best Novel",
+      "position": "1987.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1987"
+      },
+      "title": "Necroscope"
+    },
+    {
+      "authors": [
+        "Dean R. Koontz"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1987",
+      "category": "Best Novel",
+      "position": "1987.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1987"
+      },
+      "title": "Strangers"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1988",
+      "category": "Best Novel",
+      "position": "1988",
+      "result": "winner",
+      "title": "The Hungry Moon"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1989",
+      "category": "Best Novel",
+      "position": "1989",
+      "result": "winner",
+      "title": "The Influence"
+    },
+    {
+      "authors": [
+        "Dan Simmons"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1990",
+      "category": "Best Novel",
+      "position": "1990",
+      "result": "winner",
+      "title": "Carrion Comfort"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1991",
+      "category": "Best Novel",
+      "position": "1991",
+      "result": "winner",
+      "title": "Midnight Sun"
+    },
+    {
+      "authors": [
+        "Jonathan Carroll"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1992",
+      "category": "Best Novel",
+      "position": "1992",
+      "result": "winner",
+      "title": "Outside the Dog Museum"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1992",
+      "category": "Best Novel",
+      "position": "1992.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1992"
+      },
+      "title": "The Count of Eleven"
+    },
+    {
+      "authors": [
+        "Dan Simmons"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1992",
+      "category": "Best Novel",
+      "position": "1992.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1992"
+      },
+      "title": "Summer of Night"
+    },
+    {
+      "authors": [
+        "Graham Joyce"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1993",
+      "category": "Best Novel",
+      "position": "1993",
+      "result": "winner",
+      "title": "Dark Sister"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1994",
+      "category": "Best Novel",
+      "position": "1994",
+      "result": "winner",
+      "title": "The Long Lost"
+    },
+    {
+      "authors": [
+        "Michael Marshall Smith"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1995",
+      "category": "Best Novel",
+      "position": "1995",
+      "result": "winner",
+      "title": "Only Forward"
+    },
+    {
+      "authors": [
+        "Brian Lumley"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1995",
+      "category": "Best Novel",
+      "position": "1995.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1995"
+      },
+      "title": "Blood Wars"
+    },
+    {
+      "authors": [
+        "Mark Chadbourn"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1995",
+      "category": "Best Novel",
+      "position": "1995.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1995"
+      },
+      "title": "Nocturne"
+    },
+    {
+      "authors": [
+        "Paul J. McAuley"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1995",
+      "category": "Best Novel",
+      "position": "1995.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1995"
+      },
+      "title": "Pasquale's Angel"
+    },
+    {
+      "authors": [
+        "Kim Newman"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1995",
+      "category": "Best Novel",
+      "position": "1995.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1995"
+      },
+      "title": "The Quorum"
+    },
+    {
+      "authors": [
+        "Graham Joyce"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1996",
+      "category": "Best Novel",
+      "position": "1996",
+      "result": "winner",
+      "title": "Requiem"
+    },
+    {
+      "authors": [
+        "Simon Clark"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1996",
+      "category": "Best Novel",
+      "position": "1996.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1996"
+      },
+      "title": "Blood Crazy"
+    },
+    {
+      "authors": [
+        "Chaz Brenchley"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1996",
+      "category": "Best Novel",
+      "position": "1996.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1996"
+      },
+      "title": "Dead of Light"
+    },
+    {
+      "authors": [
+        "Stephen R. Donaldson"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1996",
+      "category": "Best Novel",
+      "position": "1996.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1996"
+      },
+      "title": "The Gap Into Madness: Chaos and Order"
+    },
+    {
+      "authors": [
+        "Stephen Baxter"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1996",
+      "category": "Best Novel",
+      "position": "1996.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1996"
+      },
+      "title": "The Time Ships"
+    },
+    {
+      "authors": [
+        "Graham Joyce"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1997",
+      "category": "Best Novel",
+      "position": "1997",
+      "result": "winner",
+      "title": "The Tooth Fairy"
+    },
+    {
+      "authors": [
+        "Robin Hobb"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1997",
+      "category": "Best Novel",
+      "position": "1997.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1997"
+      },
+      "title": "Assassin's Apprentice"
+    },
+    {
+      "authors": [
+        "Iain M. Banks"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1997",
+      "category": "Best Novel",
+      "position": "1997.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1997"
+      },
+      "title": "Excession"
+    },
+    {
+      "authors": [
+        "Peter Straub"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1997",
+      "category": "Best Novel",
+      "position": "1997.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1997"
+      },
+      "title": "The Hellfire Club"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1997",
+      "category": "Best Novel",
+      "position": "1997.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1997"
+      },
+      "title": "Hogfather"
+    },
+    {
+      "authors": [
+        "Clive Barker"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1997",
+      "category": "Best Novel",
+      "position": "1997.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1997"
+      },
+      "title": "Sacrament"
+    },
+    {
+      "authors": [
+        "Storm Constantine"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1997",
+      "category": "Best Novel",
+      "position": "1997.06",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1997"
+      },
+      "title": "Scenting Hallowed Blood"
+    },
+    {
+      "authors": [
+        "Michael Marshall Smith"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1997",
+      "category": "Best Novel",
+      "position": "1997.07",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1997"
+      },
+      "title": "Spares"
+    },
+    {
+      "authors": [
+        "Chaz Brenchley"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1998",
+      "category": "Best Novel",
+      "position": "1998",
+      "result": "winner",
+      "title": "Tower of the King\u2019s Daughter"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1998",
+      "category": "Best Novel",
+      "position": "1998.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1998"
+      },
+      "title": "The House on Nazareth Hill"
+    },
+    {
+      "authors": [
+        "Tim Lebbon"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1998",
+      "category": "Best Novel",
+      "position": "1998.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1998"
+      },
+      "title": "Mesmer"
+    },
+    {
+      "authors": [
+        "David Eddings",
+        "Leigh Eddings"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1998",
+      "category": "Best Novel",
+      "position": "1998.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1998"
+      },
+      "title": "Polgara the Sorceress"
+    },
+    {
+      "authors": [
+        "M. John Harrison"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1998",
+      "category": "Best Novel",
+      "position": "1998.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1998"
+      },
+      "title": "Signs of Life"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1999",
+      "category": "Best Novel",
+      "position": "1999",
+      "result": "winner",
+      "title": "Bag of Bones"
+    },
+    {
+      "authors": [
+        "Stephen Laws"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1999",
+      "category": "Best Novel",
+      "position": "1999.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1999"
+      },
+      "title": "Chasm"
+    },
+    {
+      "authors": [
+        "Robert Holdstock"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1999",
+      "category": "Best Novel",
+      "position": "1999.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1999"
+      },
+      "title": "Gate of Ivory"
+    },
+    {
+      "authors": [
+        "Jonathan Carroll"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1999",
+      "category": "Best Novel",
+      "position": "1999.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1999"
+      },
+      "title": "Kissing the Beehive"
+    },
+    {
+      "authors": [
+        "Michael Marshall Smith"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1999",
+      "category": "Best Novel",
+      "position": "1999.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1999"
+      },
+      "title": "One of Us"
+    },
+    {
+      "authors": [
+        "Charles de Lint"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1999",
+      "category": "Best Novel",
+      "position": "1999.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1999"
+      },
+      "title": "Someplace to Be Flying"
+    },
+    {
+      "authors": [
+        "Graham Joyce"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1999",
+      "category": "Best Novel",
+      "position": "1999.06",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1999"
+      },
+      "title": "The Stormwatcher"
+    },
+    {
+      "authors": [
+        "Simon Clark"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1999",
+      "category": "Best Novel",
+      "position": "1999.07",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1999"
+      },
+      "title": "Vampyrrhic"
+    },
+    {
+      "authors": [
+        "Graham Joyce"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2000",
+      "category": "Best Novel",
+      "position": "2000",
+      "result": "winner",
+      "title": "Indigo"
+    },
+    {
+      "authors": [
+        "Freda Warrington"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2000",
+      "category": "Best Novel",
+      "position": "2000.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2000"
+      },
+      "title": "The Amber Citadel"
+    },
+    {
+      "authors": [
+        "Jonathan Carroll"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2000",
+      "category": "Best Novel",
+      "position": "2000.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2000"
+      },
+      "title": "The Marriage of Sticks"
+    },
+    {
+      "authors": [
+        "Chaz Brenchley"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2000",
+      "category": "Best Novel",
+      "position": "2000.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2000"
+      },
+      "title": "Shelter"
+    },
+    {
+      "authors": [
+        "Mark Chadbourn"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2000",
+      "category": "Best Novel",
+      "position": "2000.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2000"
+      },
+      "title": "World's End"
+    },
+    {
+      "authors": [
+        "China Mieville"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2001",
+      "category": "Best Novel",
+      "position": "2001",
+      "result": "winner",
+      "title": "Perdido Street Station"
+    },
+    {
+      "authors": [
+        "Tim Lebbon",
+        "Gavin Williams"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2001",
+      "category": "Best Novel",
+      "position": "2001.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2001"
+      },
+      "title": "Hush"
+    },
+    {
+      "authors": [
+        "Peter Straub"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2001",
+      "category": "Best Novel",
+      "position": "2001.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2001"
+      },
+      "title": "Mr. X"
+    },
+    {
+      "authors": [
+        "Steve Lockley",
+        "Paul Lewis"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2001",
+      "category": "Best Novel",
+      "position": "2001.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2001"
+      },
+      "title": "The Ragchild"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2001",
+      "category": "Best Novel",
+      "position": "2001.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2001"
+      },
+      "title": "Silent Children"
+    },
+    {
+      "authors": [
+        "Simon Clark"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2002",
+      "category": "Best Novel",
+      "position": "2002",
+      "result": "winner",
+      "title": "The Night of the Triffids"
+    },
+    {
+      "authors": [
+        "Mark Chadbourn"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2002",
+      "category": "Best Novel",
+      "position": "2002.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2002"
+      },
+      "title": "Always Forever"
+    },
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2002",
+      "category": "Best Novel",
+      "position": "2002.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2002"
+      },
+      "title": "American Gods"
+    },
+    {
+      "authors": [
+        "Gwyneth Jones"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2002",
+      "category": "Best Novel",
+      "position": "2002.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2002"
+      },
+      "title": "Bold as Love"
+    },
+    {
+      "authors": [
+        "Graham Joyce"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2002",
+      "category": "Best Novel",
+      "position": "2002.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2002"
+      },
+      "title": "Smoking Poppy"
+    },
+    {
+      "authors": [
+        "China Mieville"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2003",
+      "category": "Best Novel",
+      "position": "2003",
+      "result": "winner",
+      "title": "The Scar"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2003",
+      "category": "Best Novel",
+      "position": "2003.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2003"
+      },
+      "title": "The Darkest Part of the Woods"
+    },
+    {
+      "authors": [
+        "Mark Chadbourn"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2003",
+      "category": "Best Novel",
+      "position": "2003.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2003"
+      },
+      "title": "The Devil in Green"
+    },
+    {
+      "authors": [
+        "Graham Joyce"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2003",
+      "category": "Best Novel",
+      "position": "2003.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2003"
+      },
+      "title": "The Facts of Life"
+    },
+    {
+      "authors": [
+        "Jonathan Carroll"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2003",
+      "category": "Best Novel",
+      "position": "2003.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2003"
+      },
+      "title": "White Apples"
+    },
+    {
+      "authors": [
+        "Christopher Fowler"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2004",
+      "category": "Best Novel",
+      "position": "2004",
+      "result": "winner",
+      "title": "Full Dark House"
+    },
+    {
+      "authors": [
+        "Jon Courtenay Grimwood"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2004",
+      "category": "Best Novel",
+      "position": "2004.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2004"
+      },
+      "title": "Felaheen: The Third Arabesk"
+    },
+    {
+      "authors": [
+        "Peter Straub"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2004",
+      "category": "Best Novel",
+      "position": "2004.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2004"
+      },
+      "title": "lost boy lost girl"
+    },
+    {
+      "authors": [
+        "James Herbert"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2004",
+      "category": "Best Novel",
+      "position": "2004.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2004"
+      },
+      "title": "Nobody True"
+    },
+    {
+      "authors": [
+        "Liz Williams"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2004",
+      "category": "Best Novel",
+      "position": "2004.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2004"
+      },
+      "title": "The Poison Master"
+    },
+    {
+      "authors": [
+        "Simon Clark"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2004",
+      "category": "Best Novel",
+      "position": "2004.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2004"
+      },
+      "title": "Vampyrrhic Rites"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2005",
+      "category": "Best Novel",
+      "position": "2005",
+      "result": "winner",
+      "title": "The Dark Tower VII: The Dark Tower"
+    },
+    {
+      "authors": [
+        "Clive Barker"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2005",
+      "category": "Best Novel",
+      "position": "2005.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2005"
+      },
+      "title": "Abarat: Days of Magic, Nights of War"
+    },
+    {
+      "authors": [
+        "Susanna Clarke"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2005",
+      "category": "Best Novel",
+      "position": "2005.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2005"
+      },
+      "title": "Jonathan Strange & Mr Norrell"
+    },
+    {
+      "authors": [
+        "Mark Chadbourn"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2005",
+      "category": "Best Novel",
+      "position": "2005.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2005"
+      },
+      "title": "The Queen of Sinister"
+    },
+    {
+      "authors": [
+        "Christopher Fowler"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2005",
+      "category": "Best Novel",
+      "position": "2005.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2005"
+      },
+      "title": "The Water Room"
+    },
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2006",
+      "category": "Best Novel",
+      "position": "2006",
+      "result": "winner",
+      "title": "Anansi Boys"
+    },
+    {
+      "authors": [
+        "George R. R. Martin"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2006",
+      "category": "Best Novel",
+      "position": "2006.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2006"
+      },
+      "title": "A Feast for Crows"
+    },
+    {
+      "authors": [
+        "Mark Chadbourn"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2006",
+      "category": "Best Novel",
+      "position": "2006.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2006"
+      },
+      "title": "The Hounds of Avalon"
+    },
+    {
+      "authors": [
+        "Mark Morris"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2006",
+      "category": "Best Novel",
+      "position": "2006.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2006"
+      },
+      "title": "Nowhere Near an Angel"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2006",
+      "category": "Best Novel",
+      "position": "2006.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2006"
+      },
+      "title": "Secret Stories"
+    },
+    {
+      "authors": [
+        "Hal Duncan"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2006",
+      "category": "Best Novel",
+      "position": "2006.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2006"
+      },
+      "title": "Vellum"
+    },
+    {
+      "authors": [
+        "Tim Lebbon"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2007",
+      "category": "Best Novel",
+      "position": "2007",
+      "result": "winner",
+      "title": "Dusk"
+    },
+    {
+      "authors": [
+        "Sarah Pinborough"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2007",
+      "category": "Best Novel",
+      "position": "2007.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2007"
+      },
+      "title": "Breeding Ground"
+    },
+    {
+      "authors": [
+        "Chaz Brenchley"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2007",
+      "category": "Best Novel",
+      "position": "2007.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2007"
+      },
+      "title": "Bridge of Dreams"
+    },
+    {
+      "authors": [
+        "Mike Carey"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2007",
+      "category": "Best Novel",
+      "position": "2007.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2007"
+      },
+      "title": "The Devil You Know"
+    },
+    {
+      "authors": [
+        "Mark Samuels"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2007",
+      "category": "Best Novel",
+      "position": "2007.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2007"
+      },
+      "title": "The Face of Twilight"
+    },
+    {
+      "authors": [
+        "Mark Chadbourn"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2007",
+      "category": "Best Novel",
+      "position": "2007.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2007"
+      },
+      "title": "Jack of Ravens"
+    },
+    {
+      "authors": [
+        "Scott Lynch"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2007",
+      "category": "Best Novel",
+      "position": "2007.06",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2007"
+      },
+      "title": "The Lies of Locke Lamora"
+    },
+    {
+      "authors": [
+        "M. John Harrison"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2007",
+      "category": "Best Novel",
+      "position": "2007.07",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2007"
+      },
+      "title": "Nova Swing"
+    },
+    {
+      "authors": [
+        "Conrad Williams"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2007",
+      "category": "Best Novel",
+      "position": "2007.08",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2007"
+      },
+      "title": "The Unblemished"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2008",
+      "category": "Best Novel",
+      "position": "2008",
+      "result": "winner",
+      "title": "The Grin of the Dark"
+    },
+    {
+      "authors": [
+        "Joe Hill"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2008",
+      "category": "Best Novel",
+      "position": "2008.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2008"
+      },
+      "title": "Heart-Shaped Box"
+    },
+    {
+      "authors": [
+        "Michael Marshall"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2008",
+      "category": "Best Novel",
+      "position": "2008.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2008"
+      },
+      "title": "The Intruders"
+    },
+    {
+      "authors": [
+        "Michael Marshall Smith"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2008",
+      "category": "Best Novel",
+      "position": "2008.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2008"
+      },
+      "title": "The Servants"
+    },
+    {
+      "authors": [
+        "Sarah Pinborough"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2008",
+      "category": "Best Novel",
+      "position": "2008.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2008"
+      },
+      "title": "The Taken"
+    },
+    {
+      "authors": [
+        "Dan Simmons"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2008",
+      "category": "Best Novel",
+      "position": "2008.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2008"
+      },
+      "title": "The Terror"
+    },
+    {
+      "authors": [
+        "Graham Joyce"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2009",
+      "category": "Best Novel",
+      "position": "2009",
+      "result": "winner",
+      "title": "Memoirs of a Master Forger"
+    },
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2009",
+      "category": "Best Novel",
+      "position": "2009.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2009"
+      },
+      "title": "The Graveyard Book"
+    },
+    {
+      "authors": [
+        "Simon Clark"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2009",
+      "category": "Best Novel",
+      "position": "2009.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2009"
+      },
+      "title": "Midnight Man"
+    },
+    {
+      "authors": [
+        "Gary McMahon"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2009",
+      "category": "Best Novel",
+      "position": "2009.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2009"
+      },
+      "title": "Rain Dogs"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2009",
+      "category": "Best Novel",
+      "position": "2009.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2009"
+      },
+      "title": "Thieving Fear"
+    },
+    {
+      "authors": [
+        "Christopher Fowler"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2009",
+      "category": "Best Novel",
+      "position": "2009.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2009"
+      },
+      "title": "The Victoria Vanishes"
+    },
+    {
+      "authors": [
+        "Conrad Williams"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2010",
+      "category": "Best Novel",
+      "position": "2010",
+      "result": "winner",
+      "title": "One"
+    },
+    {
+      "authors": [
+        "Joe Abercrombie"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2010",
+      "category": "Best Novel",
+      "position": "2010.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2010"
+      },
+      "title": "Best Served Cold"
+    },
+    {
+      "authors": [
+        "Sam Stone"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2010",
+      "category": "Best Novel",
+      "position": "2010.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2010"
+      },
+      "title": "Futile Flame"
+    },
+    {
+      "authors": [
+        "Mike Carey"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2010",
+      "category": "Best Novel",
+      "position": "2010.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2010"
+      },
+      "title": "The Naming of the Beasts"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2010",
+      "category": "Best Novel",
+      "position": "2010.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2010"
+      },
+      "title": "Under the Dome"
+    },
+    {
+      "authors": [
+        "Sam Stone"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2011",
+      "category": "Best Novel",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2011"
+      },
+      "title": "Demon Dance"
+    },
+    {
+      "authors": [
+        "Adam Nevill"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2011",
+      "category": "Best Novel",
+      "position": "2011.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2011"
+      },
+      "title": "Apartment 16"
+    },
+    {
+      "authors": [
+        "Tom Fletcher"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2011",
+      "category": "Best Novel",
+      "position": "2011.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2011"
+      },
+      "title": "The Leaping"
+    },
+    {
+      "authors": [
+        "Gary McMahon"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2011",
+      "category": "Best Novel",
+      "position": "2011.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2011"
+      },
+      "title": "Pretty Little Dead Things"
+    },
+    {
+      "authors": [
+        "Graham Joyce"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2011",
+      "category": "Best Novel",
+      "position": "2011.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2011"
+      },
+      "title": "The Silent Land"
     }
   ],
-  "fetched_at": "2026-07-14T06:42:02Z",
+  "fetched_at": "2026-11-15T00:26:23Z",
   "list_id": "british_fantasy_best_novel",
-  "list_name": "British Fantasy - Best Novel (discontinued)",
+  "list_name": "British Fantasy - Horror/Fantasy Novel (discontinued)",
   "match_series": false,
   "notes": [
     "Official BFS winners archive is winner-only.",
-    "Official BFS shortlist coverage is current-cycle only; historical shortlist rows come from SFADB year pages."
+    "Official BFS shortlist coverage is current-cycle only; historical shortlist rows come from SFADB year pages.",
+    "Normalized the 2009 British Fantasy Best Novel pseudonym credit to Graham Joyce.",
+    "Corrected the 1983 British Fantasy Best Novel title from \"Sword of the Lictor\" to \"The Sword of the Lictor\".",
+    "SFADB winner rows were omitted where the authoritative official BFS archive already supplied that year and category winner."
   ],
   "parser": "british_fantasy_best_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
-    "name": "British Fantasy - Best Novel (discontinued)",
+    "name": "British Fantasy - Horror/Fantasy Novel (discontinued)",
     "source_id": "british_fantasy_best_novel",
     "url": "https://britishfantasysociety.org/about-the-bfs/the-british-fantasy-awards/bfa-winners/"
   }

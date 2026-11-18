@@ -1,0 +1,2350 @@
+{
+  "append_state": {
+    "entry_count": 145,
+    "last_entry_key": "the village beyond the mist|sachiko kashiwaba",
+    "last_position": "2026.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Jane Yolen"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "1998",
+      "category": "Children's Literature",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_1998"
+      },
+      "title": "Young Merlin: Passager; Hobby; Merlin"
+    },
+    {
+      "authors": [
+        "Susan Cooper"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "1998",
+      "category": "Children's Literature",
+      "position": "1998.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_1998"
+      },
+      "title": "The Boggart and the Monster"
+    },
+    {
+      "authors": [
+        "Dahlov Ipcar"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "1998",
+      "category": "Children's Literature",
+      "position": "1998.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_1998"
+      },
+      "title": "A Dark Horn Blowing"
+    },
+    {
+      "authors": [
+        "Robin McKinley"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "1998",
+      "category": "Children's Literature",
+      "position": "1998.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_1998"
+      },
+      "title": "Rose Daughter"
+    },
+    {
+      "authors": [
+        "Diana Wynne Jones"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "1999",
+      "category": "Children's Literature",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_1999"
+      },
+      "title": "Winner: Dark Lord of Derkholm"
+    },
+    {
+      "authors": [
+        "Gail Carson Levine"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "1999",
+      "category": "Children's Literature",
+      "position": "1999.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_1999"
+      },
+      "title": "Ella Enchanted"
+    },
+    {
+      "authors": [
+        "J. K. Rowling"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "1999",
+      "category": "Children's Literature",
+      "position": "1999.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_1999"
+      },
+      "title": "Harry Potter and the Philosopher's Stone: Harry Potter and the Sorcerer's Stone"
+    },
+    {
+      "authors": [
+        "Kara Dalkey"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "1999",
+      "category": "Children's Literature",
+      "position": "1999.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_1999"
+      },
+      "title": "Heavenward Path"
+    },
+    {
+      "authors": [
+        "Gerald Morris"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "1999",
+      "category": "Children's Literature",
+      "position": "1999.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_1999"
+      },
+      "title": "The Squire's Tale"
+    },
+    {
+      "authors": [
+        "Franny Billingsley"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2000",
+      "category": "Children's Literature",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2000"
+      },
+      "title": "Winner: The Folk Keeper"
+    },
+    {
+      "authors": [
+        "Tamora Pierce"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2000",
+      "category": "Children's Literature",
+      "position": "2000.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2000"
+      },
+      "title": "The Circle of Magic"
+    },
+    {
+      "authors": [
+        "J. K. Rowling"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2000",
+      "category": "Children's Literature",
+      "position": "2000.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2000"
+      },
+      "title": "Harry Potter and the Prisoner of Azkaban"
+    },
+    {
+      "authors": [
+        "Cynthia Voigt"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2000",
+      "category": "Children's Literature",
+      "position": "2000.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2000"
+      },
+      "title": "Kingdom"
+    },
+    {
+      "authors": [
+        "David Almond"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2000",
+      "category": "Children's Literature",
+      "position": "2000.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2000"
+      },
+      "title": "Skellig"
+    },
+    {
+      "authors": [
+        "Dia Calhoun"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2001",
+      "category": "Children's Literature",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2001"
+      },
+      "title": "Winner: Aria of the Sea"
+    },
+    {
+      "authors": [
+        "Donna Jo Napoli"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2001",
+      "category": "Children's Literature",
+      "position": "2001.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2001"
+      },
+      "title": "Beast"
+    },
+    {
+      "authors": [
+        "Jane Yolen"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2001",
+      "category": "Children's Literature",
+      "position": "2001.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2001"
+      },
+      "title": "Boots and the Seven Leaguers"
+    },
+    {
+      "authors": [
+        "Laurel Winter"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2001",
+      "category": "Children's Literature",
+      "position": "2001.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2001"
+      },
+      "title": "Growing Wings"
+    },
+    {
+      "authors": [
+        "Rita Murphy"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2001",
+      "category": "Children's Literature",
+      "position": "2001.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2001"
+      },
+      "title": "Night Flying"
+    },
+    {
+      "authors": [
+        "Peter Dickinson"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2002",
+      "category": "Children's Literature",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2002"
+      },
+      "title": "Winner: The Ropemaker"
+    },
+    {
+      "authors": [
+        "Eva Ibbotson"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2002",
+      "category": "Children's Literature",
+      "position": "2002.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2002"
+      },
+      "title": "Island of the Aunts"
+    },
+    {
+      "authors": [
+        "Gail Carson Levine"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2002",
+      "category": "Children's Literature",
+      "position": "2002.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2002"
+      },
+      "title": "The Two Princess of Bamarre"
+    },
+    {
+      "authors": [
+        "Diane Duane"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2002",
+      "category": "Children's Literature",
+      "position": "2002.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2002"
+      },
+      "title": "The Wizard's Dilemma"
+    },
+    {
+      "authors": [
+        "Michael Chabon"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2003",
+      "category": "Children's Literature",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2003"
+      },
+      "title": "Winner: Summerland"
+    },
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2003",
+      "category": "Children's Literature",
+      "position": "2003.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2003"
+      },
+      "title": "Coraline"
+    },
+    {
+      "authors": [
+        "Vivian Vande Velde"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2003",
+      "category": "Children's Literature",
+      "position": "2003.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2003"
+      },
+      "title": "Heir Apparent"
+    },
+    {
+      "authors": [
+        "Nancy Farmer"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2003",
+      "category": "Children's Literature",
+      "position": "2003.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2003"
+      },
+      "title": "The House of the Scorpion"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2003",
+      "category": "Children's Literature",
+      "position": "2003.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2003"
+      },
+      "title": "Tithe: A Modern Faerie Tale"
+    },
+    {
+      "authors": [
+        "Clare B. Dunkle"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2004",
+      "category": "Children's Literature",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2004"
+      },
+      "title": "Winner: The Hollow Kingdom"
+    },
+    {
+      "authors": [
+        "Shannon Hale"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2004",
+      "category": "Children's Literature",
+      "position": "2004.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2004"
+      },
+      "title": "The Goose Girl"
+    },
+    {
+      "authors": [
+        "Cornelia Funke"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2004",
+      "category": "Children's Literature",
+      "position": "2004.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2004"
+      },
+      "title": "Inkheart"
+    },
+    {
+      "authors": [
+        "Kate DiCamillo"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2004",
+      "category": "Children's Literature",
+      "position": "2004.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2004"
+      },
+      "title": "The Tale of Despereaux"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2004",
+      "category": "Children's Literature",
+      "position": "2004.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2004"
+      },
+      "title": "The Wee Free Men"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2005",
+      "category": "Children's Literature",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2005"
+      },
+      "title": "Winner: A Hat Full of Sky"
+    },
+    {
+      "authors": [
+        "Garth Nix"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2005",
+      "category": "Children's Literature",
+      "position": "2005.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2005"
+      },
+      "title": "The Abhorsen Trilogy: Sabriel; Lirael; Abhorsen"
+    },
+    {
+      "authors": [
+        "Kevin Crossley-Holland"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2005",
+      "category": "Children's Literature",
+      "position": "2005.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2005"
+      },
+      "title": "Arthur Trilogy: The Seeing Stone; At the Crossing Places; King of the Middle March"
+    },
+    {
+      "authors": [
+        "Nancy Farmer"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2005",
+      "category": "Children's Literature",
+      "position": "2005.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2005"
+      },
+      "title": "The Sea of Trolls"
+    },
+    {
+      "authors": [
+        "Monica Furlong"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2005",
+      "category": "Children's Literature",
+      "position": "2005.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2005"
+      },
+      "title": "Trilogy: Wise Child; Juniper; Colman"
+    },
+    {
+      "authors": [
+        "Jonathan Stroud"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2006",
+      "category": "Children's Literature",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2006"
+      },
+      "title": "Winner: The Bartimaeus Trilogy; The Amulet of Samarkand; The Golem's Eye; Ptolemy's Gate"
+    },
+    {
+      "authors": [
+        "Clare B. Dunkle"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2006",
+      "category": "Children's Literature",
+      "position": "2006.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2006"
+      },
+      "title": "By These Ten Bones"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2006",
+      "category": "Children's Literature",
+      "position": "2006.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2006"
+      },
+      "title": "Valiant"
+    },
+    {
+      "authors": [
+        "Diane Duane"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2006",
+      "category": "Children's Literature",
+      "position": "2006.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2006"
+      },
+      "title": "Wizards at War"
+    },
+    {
+      "authors": [
+        "Catherine Fisher"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2007",
+      "category": "Children's Literature",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2007"
+      },
+      "title": "Winner: Corbenic"
+    },
+    {
+      "authors": [
+        "Martine Leavitt"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2007",
+      "category": "Children's Literature",
+      "position": "2007.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2007"
+      },
+      "title": "Keturah and Lord Death"
+    },
+    {
+      "authors": [
+        "Diana Wynne Jones"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2007",
+      "category": "Children's Literature",
+      "position": "2007.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2007"
+      },
+      "title": "The Pinhoe Egg"
+    },
+    {
+      "authors": [
+        "Nina Kiriki Hoffman"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2007",
+      "category": "Children's Literature",
+      "position": "2007.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2007"
+      },
+      "title": "Spirits that Walk in Shadow"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2007",
+      "category": "Children's Literature",
+      "position": "2007.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2007"
+      },
+      "title": "Wintersmith"
+    },
+    {
+      "authors": [
+        "J. K. Rowling"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2008",
+      "category": "Children's Literature",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2008"
+      },
+      "title": "Winner: The Harry Potter Series"
+    },
+    {
+      "authors": [
+        "Nancy Springer"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2008",
+      "category": "Children's Literature",
+      "position": "2008.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2008"
+      },
+      "title": "Dussie"
+    },
+    {
+      "authors": [
+        "Kate Thompson"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2008",
+      "category": "Children's Literature",
+      "position": "2008.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2008"
+      },
+      "title": "The New Policeman"
+    },
+    {
+      "authors": [
+        "Derek Landy"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2008",
+      "category": "Children's Literature",
+      "position": "2008.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2008"
+      },
+      "title": "Skulduggery Pleasant"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2008",
+      "category": "Children's Literature",
+      "position": "2008.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2008"
+      },
+      "title": "Tithe: A Modern Faerie Tale; Valiant: A Modern Tale of Faerie; Ironside: A Modern Faery's Tale"
+    },
+    {
+      "authors": [
+        "Kristin Cashore"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2009",
+      "category": "Children's Literature",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2009"
+      },
+      "title": "Winner: Graceling"
+    },
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2009",
+      "category": "Children's Literature",
+      "position": "2009.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2009"
+      },
+      "title": "The Graveyard Book"
+    },
+    {
+      "authors": [
+        "Diana Wynne Jones"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2009",
+      "category": "Children's Literature",
+      "position": "2009.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2009"
+      },
+      "title": "House of Many Ways"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2009",
+      "category": "Children's Literature",
+      "position": "2009.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2009"
+      },
+      "title": "Nation"
+    },
+    {
+      "authors": [
+        "Ingrid Law"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2009",
+      "category": "Children's Literature",
+      "position": "2009.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2009"
+      },
+      "title": "Savvy"
+    },
+    {
+      "authors": [
+        "Grace Lin"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2010",
+      "category": "Children's Literature",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2010"
+      },
+      "title": "Winner: Where the Mountain Meets the Moon"
+    },
+    {
+      "authors": [
+        "Malinda Lo"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2010",
+      "category": "Children's Literature",
+      "position": "2010.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2010"
+      },
+      "title": "Ash"
+    },
+    {
+      "authors": [
+        "Shannon Hale"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2010",
+      "category": "Children's Literature",
+      "position": "2010.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2010"
+      },
+      "title": "Books of Bayern: The Goose Girl; Enna Burning; River Secrets; Forest Born"
+    },
+    {
+      "authors": [
+        "Lisa Mantchev"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2010",
+      "category": "Children's Literature",
+      "position": "2010.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2010"
+      },
+      "title": "Eyes Like Stars"
+    },
+    {
+      "authors": [
+        "Kage Baker"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2010",
+      "category": "Children's Literature",
+      "position": "2010.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2010"
+      },
+      "title": "The Hotel Under the Sand"
+    },
+    {
+      "authors": [
+        "Megan Whalen Turner"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2011",
+      "category": "Children's Literature",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2011"
+      },
+      "title": "The Queen's Thief series: The Thief, The Queen of Attolia, The King of Attolia, and A Conspiracy of Kings"
+    },
+    {
+      "authors": [
+        "Polly Shulman"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2011",
+      "category": "Children's Literature",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2011"
+      },
+      "title": "The Grimm Legacy"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2011",
+      "category": "Children's Literature",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2011"
+      },
+      "title": "I Shall Wear Midnight"
+    },
+    {
+      "authors": [
+        "Catherine Fisher"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2011",
+      "category": "Children's Literature",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2011"
+      },
+      "title": "Incarceron and Sapphique"
+    },
+    {
+      "authors": [
+        "Heather Tomlinson"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2011",
+      "category": "Children's Literature",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2011"
+      },
+      "title": "Toads and Diamonds"
+    },
+    {
+      "authors": [
+        "Delia Sherman"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2012",
+      "category": "Children's Literature",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2012"
+      },
+      "title": "Winner: The Freedom Maze"
+    },
+    {
+      "authors": [
+        "Tamora Pierce"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2012",
+      "category": "Children's Literature",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2012"
+      },
+      "title": "Beka Cooper trilogy: Terrier, Bloodhound, Mastiff"
+    },
+    {
+      "authors": [
+        "Catherynne M. Valente"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2012",
+      "category": "Children's Literature",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2012"
+      },
+      "title": "The Girl Who Circumnavigated Fairyland in a Ship of Her Own Making"
+    },
+    {
+      "authors": [
+        "Maggie Stiefvater"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2012",
+      "category": "Children's Literature",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2012"
+      },
+      "title": "The Scorpio Races"
+    },
+    {
+      "authors": [
+        "Lisa Mantchev"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2012",
+      "category": "Children's Literature",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2012"
+      },
+      "title": "Th\u00e9\u00e2tre Illuminata series: Eyes Like Stars, Perchance to Dream, So Silver Bright"
+    },
+    {
+      "authors": [
+        "Sarah Beth Durst"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2013",
+      "category": "Children's Literature",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2013"
+      },
+      "title": "Winner: Vessel"
+    },
+    {
+      "authors": [
+        "Jorge Aguirre",
+        "Rafael Rosado"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2013",
+      "category": "Children's Literature",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2013"
+      },
+      "title": "Giants Beware!"
+    },
+    {
+      "authors": [
+        "Christopher Healy"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2013",
+      "category": "Children's Literature",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2013"
+      },
+      "title": "The Hero's Guide to Saving Your Kingdom"
+    },
+    {
+      "authors": [
+        "Merrie Haskell"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2013",
+      "category": "Children's Literature",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2013"
+      },
+      "title": "The Princess Curse"
+    },
+    {
+      "authors": [
+        "Sherwood Smith"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2013",
+      "category": "Children's Literature",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2013"
+      },
+      "title": "The Spy Princess"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2014",
+      "category": "Children's Literature",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2014"
+      },
+      "title": "Winner: Doll Bones"
+    },
+    {
+      "authors": [
+        "Sarah Beth Durst"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2014",
+      "category": "Children's Literature",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2014"
+      },
+      "title": "Conjured"
+    },
+    {
+      "authors": [
+        "William Alexander"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2014",
+      "category": "Children's Literature",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2014"
+      },
+      "title": "Ghoulish Song"
+    },
+    {
+      "authors": [
+        "Joseph Bruchac"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2014",
+      "category": "Children's Literature",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2014"
+      },
+      "title": "Killer of Enemies"
+    },
+    {
+      "authors": [
+        "Robin McKinley"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2014",
+      "category": "Children's Literature",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2014"
+      },
+      "title": "Shadows"
+    },
+    {
+      "authors": [
+        "Natalie Lloyd"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2015",
+      "category": "Children's Literature",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2015"
+      },
+      "title": "Winner: A Snicker of Magic"
+    },
+    {
+      "authors": [
+        "Merrie Haskell"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2015",
+      "category": "Children's Literature",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2015"
+      },
+      "title": "The Castle Behind Thorns"
+    },
+    {
+      "authors": [
+        "Robin LaFevers"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2015",
+      "category": "Children's Literature",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2015"
+      },
+      "title": "His Fair Assassin series"
+    },
+    {
+      "authors": [
+        "Diana Wynne Jones",
+        "Ursula Jones"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2015",
+      "category": "Children's Literature",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2015"
+      },
+      "title": "The Islands of Chaldea"
+    },
+    {
+      "authors": [
+        "Jonathan Auxier"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2015",
+      "category": "Children's Literature",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2015"
+      },
+      "title": "The Night Gardener"
+    },
+    {
+      "authors": [
+        "Ursula Vernon"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2016",
+      "category": "Children's Literature",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2016"
+      },
+      "title": "Winner: Castle Hangnail"
+    },
+    {
+      "authors": [
+        "Cassie Beasley"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2016",
+      "category": "Children's Literature",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2016"
+      },
+      "title": "Circus Mirandus"
+    },
+    {
+      "authors": [
+        "Sarah Beth Durst"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2016",
+      "category": "Children's Literature",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2016"
+      },
+      "title": "The Girl Who Could Not Dream"
+    },
+    {
+      "authors": [
+        "Robert Beatty"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2016",
+      "category": "Children's Literature",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2016"
+      },
+      "title": "Serafina and the Black Cloak"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2016",
+      "category": "Children's Literature",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2016"
+      },
+      "title": "Tiffany Aching Series: Wee Free Men; Hat Full of Sky; Wintersmith; I Shall Wear Midnight; The Shepherd's Crown"
+    },
+    {
+      "authors": [
+        "Adam Gidwitz"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2017",
+      "category": "Children's Literature",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2017"
+      },
+      "title": "Winner: The Inquisitor's Tale: Or, The Three Magical Children and their Holy Dog"
+    },
+    {
+      "authors": [
+        "Delia Sherman"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2017",
+      "category": "Children's Literature",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2017"
+      },
+      "title": "The Evil Wizard Smallbone"
+    },
+    {
+      "authors": [
+        "S. E. Grove"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2017",
+      "category": "Children's Literature",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2017"
+      },
+      "title": "The Mapmakers Trilogy: The Glass Sentence; The Golden Specific; The Crimson Skew"
+    },
+    {
+      "authors": [
+        "Bridget Hodder"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2017",
+      "category": "Children's Literature",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2017"
+      },
+      "title": "The Rat Prince"
+    },
+    {
+      "authors": [
+        "Grace Lin"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2017",
+      "category": "Children's Literature",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2017"
+      },
+      "title": "When the Sea Turned to Silver"
+    },
+    {
+      "authors": [
+        "Garth Nix"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2018",
+      "category": "Children's Literature",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2018"
+      },
+      "title": "Winner: Frogkisser!"
+    },
+    {
+      "authors": [
+        "Stephanie Burgis"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2018",
+      "category": "Children's Literature",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2018"
+      },
+      "title": "The Dragon with a Chocolate Heart"
+    },
+    {
+      "authors": [
+        "Nidhi Chanani"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2018",
+      "category": "Children's Literature",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2018"
+      },
+      "title": "Pashmina"
+    },
+    {
+      "authors": [
+        "A. F. Harrold"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2018",
+      "category": "Children's Literature",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2018"
+      },
+      "title": "The Song from Somewhere Else"
+    },
+    {
+      "authors": [
+        "Cassie Beasley"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2018",
+      "category": "Children's Literature",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2018"
+      },
+      "title": "Tumble and Blue"
+    },
+    {
+      "authors": [
+        "Wendy Mass",
+        "Rebecca Stead"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2019",
+      "category": "Children's Literature",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2019"
+      },
+      "title": "Winner: Bob"
+    },
+    {
+      "authors": [
+        "Jorge Aguirre",
+        "Rafael Rosado"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2019",
+      "category": "Children's Literature",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2019"
+      },
+      "title": "Giants Beware!; Dragons Beware!; Monsters Beware!"
+    },
+    {
+      "authors": [
+        "Sarah Beth Durst"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2019",
+      "category": "Children's Literature",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2019"
+      },
+      "title": "The Stone Girl's Story"
+    },
+    {
+      "authors": [
+        "Jonathan Auxier"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2019",
+      "category": "Children's Literature",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2019"
+      },
+      "title": "Sweep: The Story of a Girl and Her Monster"
+    },
+    {
+      "authors": [
+        "Emily Tetri"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2019",
+      "category": "Children's Literature",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2019"
+      },
+      "title": "Tiger vs. Nightmare"
+    },
+    {
+      "authors": [
+        "Yoon Ha Lee"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2020",
+      "category": "Children's Literature",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2020"
+      },
+      "title": "Winner: Dragon Pearl"
+    },
+    {
+      "authors": [
+        "Erin Entrada Kelly"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2020",
+      "category": "Children's Literature",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2020"
+      },
+      "title": "Lalani of the Distant Sea"
+    },
+    {
+      "authors": [
+        "Anne Ursu"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2020",
+      "category": "Children's Literature",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2020"
+      },
+      "title": "The Lost Girl"
+    },
+    {
+      "authors": [
+        "Suzanne Nelson"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2020",
+      "category": "Children's Literature",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2020"
+      },
+      "title": "A Tale Magnolius"
+    },
+    {
+      "authors": [
+        "Hilary McKay"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2020",
+      "category": "Children's Literature",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2020"
+      },
+      "title": "The Time of Green Magic"
+    },
+    {
+      "authors": [
+        "T. Kingfisher"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2021",
+      "category": "Children's Literature",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2021"
+      },
+      "title": "Winner: A Wizard's Guide to Defensive Baking"
+    },
+    {
+      "authors": [
+        "Jenn Reese"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2021",
+      "category": "Children's Literature",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2021"
+      },
+      "title": "A Game of Fox and Squirrels"
+    },
+    {
+      "authors": [
+        "Carlos Hernandez"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2021",
+      "category": "Children's Literature",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2021"
+      },
+      "title": "Sal and Gabi Break the Universe; Sal and Gabi Fix the Universe"
+    },
+    {
+      "authors": [
+        "Lev Grossman"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2021",
+      "category": "Children's Literature",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2021"
+      },
+      "title": "The Silver Arrow"
+    },
+    {
+      "authors": [
+        "Kat Leyh"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2021",
+      "category": "Children's Literature",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2021"
+      },
+      "title": "Snapdragon"
+    },
+    {
+      "authors": [
+        "Tae Keller"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2021",
+      "category": "Children's Literature",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2021"
+      },
+      "title": "When You Trap a Tiger"
+    },
+    {
+      "authors": [
+        "Lori M. Lee"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2022",
+      "category": "Children's Literature",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2022"
+      },
+      "title": "Winner (tie): Pahua and the Soul Stealer"
+    },
+    {
+      "authors": [
+        "Eden Royce"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2022",
+      "category": "Children's Literature",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2022"
+      },
+      "title": "Winner (tie): Root Magic"
+    },
+    {
+      "authors": [
+        "Regina M. Hansen"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2022",
+      "category": "Children's Literature",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2022"
+      },
+      "title": "The Coming Storm"
+    },
+    {
+      "authors": [
+        "Sayantani DasGupta"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2022",
+      "category": "Children's Literature",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2022"
+      },
+      "title": "The Kiranmala and the Kingdom Beyond trilogy"
+    },
+    {
+      "authors": [
+        "Kelly Barnhill"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2023",
+      "category": "Children's Literature",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2023"
+      },
+      "title": "Winner: The Ogress and the Orphans"
+    },
+    {
+      "authors": [
+        "Kate DiCamillo"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2023",
+      "category": "Children's Literature",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2023"
+      },
+      "title": "The Beatryce Prophecy"
+    },
+    {
+      "authors": [
+        "Sofiya Pasternack"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2023",
+      "category": "Children's Literature",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2023"
+      },
+      "title": "Black Bird, Blue Road"
+    },
+    {
+      "authors": [
+        "Brian Farrey"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2023",
+      "category": "Children's Literature",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2023"
+      },
+      "title": "The Counterclockwise Heart"
+    },
+    {
+      "authors": [
+        "Tracy Badua"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2023",
+      "category": "Children's Literature",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2023"
+      },
+      "title": "Freddie vs. the Family Curse"
+    },
+    {
+      "authors": [
+        "Christina Soontornvat"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2023",
+      "category": "Children's Literature",
+      "position": "2023.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2023"
+      },
+      "title": "The Last Mapmaker"
+    },
+    {
+      "authors": [
+        "L. D. Lapinski"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2023",
+      "category": "Children's Literature",
+      "position": "2023.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2023"
+      },
+      "title": "Strangeworlds Travel Agency trilogy"
+    },
+    {
+      "authors": [
+        "K. O'Neill"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2024",
+      "category": "Children's Literature",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2024"
+      },
+      "title": "Winner: Moth Keeper"
+    },
+    {
+      "authors": [
+        "Zach Weinersmith",
+        "Boulet"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2024",
+      "category": "Children's Literature",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2024"
+      },
+      "title": "Bea Wolf"
+    },
+    {
+      "authors": [
+        "Patricia C. Wrede"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2024",
+      "category": "Children's Literature",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2024"
+      },
+      "title": "The Dark Lord's Daughter"
+    },
+    {
+      "authors": [
+        "Ethan M. Aldridge"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2024",
+      "category": "Children's Literature",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2024"
+      },
+      "title": "Deephaven"
+    },
+    {
+      "authors": [
+        "Alechia Dow"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2024",
+      "category": "Children's Literature",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2024"
+      },
+      "title": "Just a Pinch of Magic"
+    },
+    {
+      "authors": [
+        "Rebecca Stead",
+        "Wendy Mass"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2024",
+      "category": "Children's Literature",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2024"
+      },
+      "title": "The Lost Library"
+    },
+    {
+      "authors": [
+        "Brian Young"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2024",
+      "category": "Children's Literature",
+      "position": "2024.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2024"
+      },
+      "title": "Water Monster duology"
+    },
+    {
+      "authors": [
+        "Frances Hardinge",
+        "Emily Gravett"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2025",
+      "category": "Children's Literature",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2025"
+      },
+      "title": "Winner: Island of Whispers"
+    },
+    {
+      "authors": [
+        "Kaela Rivera"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2025",
+      "category": "Children's Literature",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2025"
+      },
+      "title": "The Cece Rios trilogy"
+    },
+    {
+      "authors": [
+        "Lisa Stringfellow"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2025",
+      "category": "Children's Literature",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2025"
+      },
+      "title": "Kingdom of Dust"
+    },
+    {
+      "authors": [
+        "David A. Robertson"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2025",
+      "category": "Children's Literature",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2025"
+      },
+      "title": "The Misewa Saga"
+    },
+    {
+      "authors": [
+        "Rajani LaRocca"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2025",
+      "category": "Children's Literature",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2025"
+      },
+      "title": "Sona and the Golden Beasts"
+    },
+    {
+      "authors": [
+        "Victor Pin\u00f1eiro"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2026",
+      "category": "Children's Literature",
+      "position": "2026.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2026"
+      },
+      "title": "The Island of Forgotten Gods"
+    },
+    {
+      "authors": [
+        "David A. Robertson"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2026",
+      "category": "Children's Literature",
+      "position": "2026.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2026"
+      },
+      "title": "The Misewa Saga, David A. Robertson (Tundra; Puffin Canada): The Barren Grounds; The Great Bear; The Stone Child; The Portal Keeper; The Sleeping Giant; The World\u2019s End"
+    },
+    {
+      "authors": [
+        "Aubrey Hartman"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2026",
+      "category": "Children's Literature",
+      "position": "2026.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2026"
+      },
+      "title": "The Undead Fox of Deadwood Forest"
+    },
+    {
+      "authors": [
+        "Sachiko Kashiwaba"
+      ],
+      "award": "Mythopoeic Award",
+      "award_year": "2026",
+      "category": "Children's Literature",
+      "position": "2026.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Mythopoeic_Awards_2026"
+      },
+      "title": "The Village Beyond the Mist"
+    }
+  ],
+  "fetched_at": "2026-07-23T17:31:30Z",
+  "list_id": "mythopoeic_childrens_literature",
+  "list_name": "Mythopoeic - Children's Literature",
+  "match_series": false,
+  "notes": [],
+  "parser": "mythopoeic_childrens_literature",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Mythopoeic - Children's Literature",
+    "source_id": "mythopoeic_childrens_literature",
+    "url": "https://www.sfadb.com/Mythopoeic_Awards"
+  }
+}

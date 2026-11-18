@@ -108,11 +108,16 @@ class NationalBookAwardParser(AwardParserBase):
     return title, author, self.node_href(title_node, base_url)
 
   def first_title_node(self, node):
-    nodes = node.xpath(
-      '(.//*[self::h1 or self::h2 or self::h3]//a[@href]'
-      '|.//figcaption//a[@href]'
-      '|.//a[@href][not(ancestor::*[contains(concat(" ", normalize-space(@class), " "), " author ")])])[1]')
-    return nodes[0] if nodes else None
+    # The cover-image anchor precedes the textual title on current pages.
+    # XPath unions sort by document order, losing this intended precedence.
+    for selector in (
+        './/*[self::h1 or self::h2 or self::h3]//a[@href]',
+        './/figcaption//a[@href]',
+        './/a[@href][not(ancestor::*[contains(concat(" ", normalize-space(@class), " "), " author ")])]'):
+      for candidate in node.xpath(selector):
+        if self.node_text(candidate):
+          return candidate
+    return None
 
   def author_text(self, node):
     candidates = node.xpath(
@@ -120,6 +125,12 @@ class NationalBookAwardParser(AwardParserBase):
       '|.//p[contains(concat(" ", normalize-space(@class), " "), " author ")]'
       '|.//*[contains(concat(" ", normalize-space(@class), " "), " author ")]')
     for candidate in candidates:
+      text = self.clean_author(self.node_text(candidate))
+      if text:
+        return text
+    # Finalist figures use a plain h2 immediately after their h1 title, while
+    # winner cards wrap the same fields in book-data.
+    for candidate in node.xpath('.//h1/following-sibling::h2'):
       text = self.clean_author(self.node_text(candidate))
       if text:
         return text

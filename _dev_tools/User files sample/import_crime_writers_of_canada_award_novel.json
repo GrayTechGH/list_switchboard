@@ -1,8 +1,8 @@
 {
   "append_state": {
-    "entry_count": 203,
-    "last_entry_key": "sunset and jericho|sam wiebe",
-    "last_position": "2024.04",
+    "entry_count": 206,
+    "last_entry_key": "the grey wolf|louise penny",
+    "last_position": "2025.04",
     "source_revision": null
   },
   "entries": [
@@ -136,7 +136,7 @@
       "category": "Novel",
       "position": "1986.03",
       "result": "nominee",
-      "title": "Murder with Muskets"
+      "title": "Murder With Muskets"
     },
     {
       "authors": [
@@ -169,11 +169,6 @@
       "category": "Novel",
       "position": "1987.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/The_Telling_of_Lies"
-      },
       "title": "The Telling of Lies"
     },
     {
@@ -207,7 +202,7 @@
       "category": "Novel",
       "position": "1987.04",
       "result": "nominee",
-      "title": "A Single Death"
+      "title": "The Man Who Changed His Name: An Inspector Charlie Salter Mystery"
     },
     {
       "authors": [
@@ -218,11 +213,6 @@
       "category": "Novel",
       "position": "1988",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/Swann:_A_Mystery"
-      },
       "title": "Swann"
     },
     {
@@ -256,7 +246,7 @@
       "category": "Novel",
       "position": "1988.03",
       "result": "nominee",
-      "title": "A Body Surrounded by Water"
+      "title": "A Body Surrounded by Water: An Inspector Charlie Salter Mystery"
     },
     {
       "authors": [
@@ -289,7 +279,7 @@
       "category": "Novel",
       "position": "1989.02",
       "result": "nominee",
-      "title": "Death on a #8 Hook"
+      "title": "Death on a No. 8 Hook"
     },
     {
       "authors": [
@@ -399,11 +389,6 @@
       "category": "Novel",
       "position": "1991.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/Lies_of_Silence"
-      },
       "title": "Lies of Silence"
     },
     {
@@ -422,26 +407,10 @@
         "Peter Robinson"
       ],
       "award": "Crime Writers of Canada Award",
-      "award_year": "1991",
-      "category": "Novel",
-      "position": "1991.05",
-      "result": "nominee",
-      "title": "Caedmon's Song"
-    },
-    {
-      "authors": [
-        "Peter Robinson"
-      ],
-      "award": "Crime Writers of Canada Award",
       "award_year": "1992",
       "category": "Novel",
       "position": "1992",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/Past_Reason_Hated"
-      },
       "title": "Past Reason Hated"
     },
     {
@@ -475,7 +444,7 @@
       "category": "Novel",
       "position": "1993",
       "result": "winner",
-      "title": "Lizardskin"
+      "title": "Lizard Skin"
     },
     {
       "authors": [
@@ -486,7 +455,7 @@
       "category": "Novel",
       "position": "1993.01",
       "result": "nominee",
-      "title": "The Wandering Soul Murders"
+      "title": "The wandering soul murders"
     },
     {
       "authors": [
@@ -552,7 +521,7 @@
       "category": "Novel",
       "position": "1994.02",
       "result": "nominee",
-      "title": "There Was an Old Woman"
+      "title": "There was an Old Woman: A Benny Cooperman Mystery"
     },
     {
       "authors": [
@@ -596,7 +565,7 @@
       "category": "Novel",
       "position": "1995",
       "result": "winner",
-      "title": "A Colder Kind of Death"
+      "title": "A colder kind of death"
     },
     {
       "authors": [
@@ -629,7 +598,7 @@
       "category": "Novel",
       "position": "1995.03",
       "result": "nominee",
-      "title": "Solitary Dancer"
+      "title": "Solitary dancer"
     },
     {
       "authors": [
@@ -644,7 +613,7 @@
     },
     {
       "authors": [
-        "L. R. Wright"
+        "Laurali R. Wright"
       ],
       "award": "Crime Writers of Canada Award",
       "award_year": "1996",
@@ -662,7 +631,7 @@
       "category": "Novel",
       "position": "1996.01",
       "result": "nominee",
-      "title": "Street Legal"
+      "title": "Street Legal: The Betrayal"
     },
     {
       "authors": [
@@ -706,11 +675,6 @@
       "category": "Novel",
       "position": "1997",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/Innocent_Graves"
-      },
       "title": "Innocent Graves"
     },
     {
@@ -722,11 +686,6 @@
       "category": "Novel",
       "position": "1997.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/Alias_Grace"
-      },
       "title": "Alias Grace"
     },
     {
@@ -804,7 +763,7 @@
       "category": "Novel",
       "position": "1998.03",
       "result": "nominee",
-      "title": "Ghirlandaio's Daughter"
+      "title": "Ghirlandaio\u2019s Daughter"
     },
     {
       "authors": [
@@ -958,12 +917,7 @@
       "category": "Novel",
       "position": "2001",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/Cold_Is_the_Grave"
-      },
-      "title": "Cold Is the Grave"
+      "title": "Cold is the Grave"
     },
     {
       "authors": [
@@ -974,11 +928,6 @@
       "category": "Novel",
       "position": "2001.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/Forty_Words_for_Sorrow"
-      },
       "title": "Forty Words for Sorrow"
     },
     {
@@ -990,7 +939,7 @@
       "category": "Novel",
       "position": "2001.02",
       "result": "nominee",
-      "title": "One Eyed Jacks"
+      "title": "One-Eyed Jacks"
     },
     {
       "authors": [
@@ -1001,7 +950,7 @@
       "category": "Novel",
       "position": "2001.03",
       "result": "nominee",
-      "title": "The Kidnapping of Rosie Dawn"
+      "title": "The kidnapping of Rosie Dawn"
     },
     {
       "authors": [
@@ -1122,11 +1071,6 @@
       "category": "Novel",
       "position": "2003.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/Grave_Secrets"
-      },
       "title": "Grave Secrets"
     },
     {
@@ -1164,25 +1108,25 @@
     },
     {
       "authors": [
-        "David Rotenberg"
+        "Peter Robinson"
       ],
       "award": "Crime Writers of Canada Award",
       "award_year": "2004",
       "category": "Novel",
       "position": "2004.03",
       "result": "nominee",
-      "title": "The Hua Shan Hospital Murders"
+      "title": "The Summer that Never Was"
     },
     {
       "authors": [
-        "Peter Robinson"
+        "David Rotenberg"
       ],
       "award": "Crime Writers of Canada Award",
       "award_year": "2004",
       "category": "Novel",
       "position": "2004.04",
       "result": "nominee",
-      "title": "The Summer That Never Was"
+      "title": "The Hua Shan Hospital Murders"
     },
     {
       "authors": [
@@ -1204,7 +1148,7 @@
       "category": "Novel",
       "position": "2005.01",
       "result": "nominee",
-      "title": "The Last Good Day"
+      "title": "The last good day"
     },
     {
       "authors": [
@@ -1237,7 +1181,7 @@
       "category": "Novel",
       "position": "2005.04",
       "result": "nominee",
-      "title": "Sweep Lotus"
+      "title": "Sweep Lotus: An Elias McCann Mystery"
     },
     {
       "authors": [
@@ -1270,7 +1214,7 @@
       "category": "Novel",
       "position": "2006.02",
       "result": "nominee",
-      "title": "Black Fly Season"
+      "title": "Blackfly Season"
     },
     {
       "authors": [
@@ -1318,7 +1262,7 @@
     },
     {
       "authors": [
-        "Emma Cole"
+        "Susanna Kearsley"
       ],
       "award": "Crime Writers of Canada Award",
       "award_year": "2007",
@@ -1380,7 +1324,7 @@
       "category": "Novel",
       "position": "2008.02",
       "result": "nominee",
-      "title": "Snow Candy"
+      "title": "SNOW CANDY"
     },
     {
       "authors": [
@@ -1402,11 +1346,6 @@
       "category": "Novel",
       "position": "2008.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/The_Cruelest_Month"
-      },
       "title": "The Cruelest Month"
     },
     {
@@ -1418,11 +1357,6 @@
       "category": "Novel",
       "position": "2009",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/Too_Close_to_Home_(novel)"
-      },
       "title": "Too Close to Home"
     },
     {
@@ -1445,7 +1379,7 @@
       "category": "Novel",
       "position": "2009.02",
       "result": "nominee",
-      "title": "Transgression"
+      "title": "Transgression: A Novel of Love and War"
     },
     {
       "authors": [
@@ -1456,7 +1390,7 @@
       "category": "Novel",
       "position": "2009.03",
       "result": "nominee",
-      "title": "The Murder Stone"
+      "title": "A Rule Against Murder"
     },
     {
       "authors": [
@@ -1493,14 +1427,14 @@
     },
     {
       "authors": [
-        "R. J. Harlick"
+        "R.J. Harlick"
       ],
       "award": "Crime Writers of Canada Award",
       "award_year": "2010",
       "category": "Novel",
       "position": "2010.02",
       "result": "nominee",
-      "title": "Arctic Blue Death"
+      "title": "Arctic Blue Death: A Meg Harris Mystery"
     },
     {
       "authors": [
@@ -1511,7 +1445,7 @@
       "category": "Novel",
       "position": "2010.03",
       "result": "nominee",
-      "title": "Finger's Twist"
+      "title": "The Finger's Twist"
     },
     {
       "authors": [
@@ -1544,7 +1478,7 @@
       "category": "Novel",
       "position": "2011.01",
       "result": "nominee",
-      "title": "Slow Recoil"
+      "title": "Slow recoil"
     },
     {
       "authors": [
@@ -1610,7 +1544,7 @@
       "category": "Novel",
       "position": "2012.02",
       "result": "nominee",
-      "title": "I'll See You in My Dreams"
+      "title": "I'll See You in My Dreams: An Arthur Beauchamp Novel"
     },
     {
       "authors": [
@@ -1632,7 +1566,7 @@
       "category": "Novel",
       "position": "2012.04",
       "result": "nominee",
-      "title": "The Guilty Plea"
+      "title": "The Guilty Plea: A Novel"
     },
     {
       "authors": [
@@ -1676,7 +1610,7 @@
       "category": "Novel",
       "position": "2013.03",
       "result": "nominee",
-      "title": "The Messenger"
+      "title": "The Messenger: A Novel"
     },
     {
       "authors": [
@@ -1691,14 +1625,14 @@
     },
     {
       "authors": [
-        "Se\u00e1n Haldane"
+        "Sean Haldane"
       ],
       "award": "Crime Writers of Canada Award",
       "award_year": "2014",
       "category": "Novel",
       "position": "2014",
       "result": "winner",
-      "title": "The Devil's Making"
+      "title": "The Devil's Making: A Mystery"
     },
     {
       "authors": [
@@ -1720,7 +1654,7 @@
       "category": "Novel",
       "position": "2014.02",
       "result": "nominee",
-      "title": "Presto Variations"
+      "title": "Presto Variations: A Ray Tate and Djuna Brown Mystery"
     },
     {
       "authors": [
@@ -1753,7 +1687,7 @@
       "category": "Novel",
       "position": "2015",
       "result": "winner",
-      "title": "Plague: Murder Has a New Friend"
+      "title": "Plague"
     },
     {
       "authors": [
@@ -1819,7 +1753,7 @@
       "category": "Novel",
       "position": "2016.01",
       "result": "nominee",
-      "title": "Hungry Ghosts"
+      "title": "Hungry Ghosts: An Inspector Ramirez Novel"
     },
     {
       "authors": [
@@ -1841,7 +1775,7 @@
       "category": "Novel",
       "position": "2016.03",
       "result": "nominee",
-      "title": "A Killing in Zion"
+      "title": "A Killing in Zion: A Mystery"
     },
     {
       "authors": [
@@ -1896,7 +1830,7 @@
       "category": "Novel",
       "position": "2017.03",
       "result": "nominee",
-      "title": "Dead Ground in Between"
+      "title": "Dead Ground In Between"
     },
     {
       "authors": [
@@ -1929,7 +1863,7 @@
       "category": "Novel",
       "position": "2018.01",
       "result": "nominee",
-      "title": "The Winners' Circle"
+      "title": "The Winners\u2019 Circle"
     },
     {
       "authors": [
@@ -1962,7 +1896,7 @@
       "category": "Novel",
       "position": "2018.04",
       "result": "nominee",
-      "title": "The Forgotten Girl"
+      "title": "The Forgotten Girl: A Thriller"
     },
     {
       "authors": [
@@ -1984,7 +1918,7 @@
       "category": "Novel",
       "position": "2019.01",
       "result": "nominee",
-      "title": "Cape Diamond"
+      "title": "Cape Diamond: A Frank Yakabuski Mystery"
     },
     {
       "authors": [
@@ -2028,7 +1962,7 @@
       "category": "Novel",
       "position": "2020",
       "result": "winner",
-      "title": "Greenwood"
+      "title": "Greenwood: A Novel"
     },
     {
       "authors": [
@@ -2054,7 +1988,7 @@
     },
     {
       "authors": [
-        "Melissa Stapley"
+        "Marissa Stapley"
       ],
       "award": "Crime Writers of Canada Award",
       "award_year": "2020",
@@ -2094,16 +2028,11 @@
       "category": "Novel",
       "position": "2021.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/How_a_Woman_Becomes_a_Lake"
-      },
       "title": "How a Woman Becomes a Lake"
     },
     {
       "authors": [
-        "Cecilia Ekb\u00e4ck"
+        "Cecilia Ekback"
       ],
       "award": "Crime Writers of Canada Award",
       "award_year": "2021",
@@ -2114,30 +2043,14 @@
     },
     {
       "authors": [
-        "Thomas King"
+        "Roz Nay"
       ],
       "award": "Crime Writers of Canada Award",
       "award_year": "2021",
       "category": "Novel",
       "position": "2021.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/Obsidian_(novel)"
-      },
-      "title": "Obsidian"
-    },
-    {
-      "authors": [
-        "Roz Nay"
-      ],
-      "award": "Crime Writers of Canada Award",
-      "award_year": "2021",
-      "category": "Novel",
-      "position": "2021.04",
-      "result": "nominee",
-      "title": "Hurry Home"
+      "title": "Hurry Home: A Novel"
     },
     {
       "authors": [
@@ -2148,7 +2061,7 @@
       "category": "Novel",
       "position": "2022",
       "result": "winner",
-      "title": "Under an Outlaw Moon"
+      "title": "Under an Outlaw Moon: A Novel"
     },
     {
       "authors": [
@@ -2170,11 +2083,11 @@
       "category": "Novel",
       "position": "2022.02",
       "result": "nominee",
-      "title": "Lost Immunity"
+      "title": "Lost Immunity: A Thriller"
     },
     {
       "authors": [
-        "Shari Lapena"
+        "Shari Lape\u00f1a"
       ],
       "award": "Crime Writers of Canada Award",
       "award_year": "2022",
@@ -2247,7 +2160,7 @@
       "category": "Novel",
       "position": "2023.04",
       "result": "nominee",
-      "title": "Daughters of the Occupation"
+      "title": "Daughters of the Occupation: A Novel of WWII"
     },
     {
       "authors": [
@@ -2273,7 +2186,7 @@
     },
     {
       "authors": [
-        "Shari Lapena"
+        "Shari Lape\u00f1a"
       ],
       "award": "Crime Writers of Canada Award",
       "award_year": "2024",
@@ -2302,21 +2215,75 @@
       "category": "Novel",
       "position": "2024.04",
       "result": "nominee",
-      "title": "Sunset and Jericho"
+      "title": "Sunset and Jericho: A Wakeland Novel"
+    },
+    {
+      "authors": [
+        "Conor Kerr"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025",
+      "result": "winner",
+      "title": "Prairie Edge"
+    },
+    {
+      "authors": [
+        "Colin Barrett"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "Wild Houses"
+    },
+    {
+      "authors": [
+        "Jaima Fixsen"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "The Specimen"
+    },
+    {
+      "authors": [
+        "John MacLachlan Gray"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "Mr. Good-Evening: A Mystery"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "The Grey Wolf"
     }
   ],
-  "fetched_at": "2026-07-15T22:48:35Z",
+  "fetched_at": "2026-11-16T06:24:43Z",
   "list_id": "crime_writers_of_canada_award_novel",
   "list_name": "Crime Writers of Canada Award - Novel",
   "match_series": false,
-  "notes": [
-    "LibraryThing failed: HTTP Error 403: Forbidden"
-  ],
+  "notes": [],
   "parser": "crime_writers_of_canada_award_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Crime Writers of Canada Award - Novel",
     "source_id": "crime_writers_of_canada_award_novel",
-    "url": "https://en.wikipedia.org/wiki/Crime_Writers_of_Canada_Award_for_Best_Novel"
+    "url": "https://www.librarything.com/award/1612/Crime-Writers-of-Canada-Awards-of-Excellence"
   }
 }

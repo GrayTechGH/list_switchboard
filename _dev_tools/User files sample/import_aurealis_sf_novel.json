@@ -2459,12 +2459,13 @@
       "title": "Volatile Memory"
     }
   ],
-  "fetched_at": "2026-07-11T00:31:18Z",
+  "fetched_at": "2026-11-15T01:28:02Z",
   "list_id": "aurealis_sf_novel",
   "list_name": "Aurealis - SF Novel",
   "match_series": false,
   "notes": [],
   "parser": "aurealis_sf_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Aurealis - SF Novel",

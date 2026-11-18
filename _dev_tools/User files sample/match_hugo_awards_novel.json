@@ -1014,7 +1014,7 @@
         "Robert A. Heinlein"
       ],
       "imported_title": "The Moon is a Harsh Mistress",
-      "matched_at": "2026-07-18T06:20:05Z",
+      "matched_at": "2026-07-18T06:28:54Z",
       "matched_authors": [
         "Robert A. Heinlein"
       ],
@@ -1240,8 +1240,207 @@
         }
       ],
       "matched_title": "Death's End"
+    },
+    {
+      "entry_key": "the moon is a harsh mistress|robert a heinlein|position:1966.03",
+      "ignored": true,
+      "imported_author": [
+        "Robert A. Heinlein"
+      ],
+      "imported_title": "The Moon is a Harsh Mistress",
+      "previous_match_source": "saved/manual override",
+      "previous_matched_book_id": 19957,
+      "previous_matched_book_ids": [
+        19957
+      ],
+      "previous_matched_books": [
+        {
+          "matched_authors": [
+            "Robert A. Heinlein"
+          ],
+          "matched_book_id": 19957,
+          "matched_title": "The Moon Is a Harsh Mistress"
+        }
+      ],
+      "unmatched": true,
+      "unmatched_at": "2026-07-23T00:19:25Z"
+    },
+    {
+      "entry_key": "the moon is a harsh mistress|robert a heinlein|position:1967",
+      "imported_author": [
+        "Robert A. Heinlein"
+      ],
+      "imported_title": "The Moon is a Harsh Mistress",
+      "matched_at": "2026-07-18T07:01:39Z",
+      "matched_authors": [
+        "Robert A. Heinlein"
+      ],
+      "matched_book_id": 19957,
+      "matched_book_ids": [
+        19957
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Robert A. Heinlein"
+          ],
+          "matched_book_id": 19957,
+          "matched_title": "The Moon Is a Harsh Mistress"
+        }
+      ],
+      "matched_title": "The Moon Is a Harsh Mistress"
+    },
+    {
+      "entry_key": "the wheel of time|robert jordan\u001fbrandon sanderson",
+      "imported_author": [
+        "Robert Jordan",
+        "Brandon Sanderson"
+      ],
+      "imported_title": "The Wheel of Time",
+      "matched_at": "2026-07-23T00:18:16Z",
+      "matched_authors": [
+        "Robert Jordan",
+        "Brandon Sanderson"
+      ],
+      "matched_book_id": 17902,
+      "matched_book_ids": [
+        17902,
+        31248,
+        30545,
+        30559,
+        30890,
+        30489,
+        32738,
+        31244,
+        31245,
+        31712,
+        30564,
+        30547,
+        31713,
+        32154,
+        33674,
+        33353
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Robert Jordan"
+          ],
+          "matched_book_id": 17902,
+          "matched_title": "Crossroads of Twilight"
+        },
+        {
+          "matched_authors": [
+            "Robert Jordan"
+          ],
+          "matched_book_id": 31248,
+          "matched_title": "A Crown of Swords"
+        },
+        {
+          "matched_authors": [
+            "Robert Jordan"
+          ],
+          "matched_book_id": 30545,
+          "matched_title": "The Dragon Reborn"
+        },
+        {
+          "matched_authors": [
+            "Robert Jordan"
+          ],
+          "matched_book_id": 30559,
+          "matched_title": "The Eye of the World"
+        },
+        {
+          "matched_authors": [
+            "Robert Jordan"
+          ],
+          "matched_book_id": 30890,
+          "matched_title": "The Fires of Heaven"
+        },
+        {
+          "matched_authors": [
+            "Robert Jordan"
+          ],
+          "matched_book_id": 30489,
+          "matched_title": "The Great Hunt"
+        },
+        {
+          "matched_authors": [
+            "Robert Jordan"
+          ],
+          "matched_book_id": 32738,
+          "matched_title": "Knife of Dreams"
+        },
+        {
+          "matched_authors": [
+            "Robert Jordan"
+          ],
+          "matched_book_id": 31244,
+          "matched_title": "Lord of Chaos"
+        },
+        {
+          "matched_authors": [
+            "Robert Jordan"
+          ],
+          "matched_book_id": 31245,
+          "matched_title": "New Spring"
+        },
+        {
+          "matched_authors": [
+            "Robert Jordan"
+          ],
+          "matched_book_id": 31712,
+          "matched_title": "The Path of Daggers"
+        },
+        {
+          "matched_authors": [
+            "Robert Jordan"
+          ],
+          "matched_book_id": 30564,
+          "matched_title": "The Shadow Rising"
+        },
+        {
+          "matched_authors": [
+            "Robert Jordan"
+          ],
+          "matched_book_id": 30547,
+          "matched_title": "The Strike at Shayol Ghul"
+        },
+        {
+          "matched_authors": [
+            "Robert Jordan"
+          ],
+          "matched_book_id": 31713,
+          "matched_title": "Winter's Heart"
+        },
+        {
+          "matched_authors": [
+            "Robert Jordan",
+            "Brandon Sanderson"
+          ],
+          "matched_book_id": 32154,
+          "matched_title": "The Gathering Storm"
+        },
+        {
+          "matched_authors": [
+            "Robert Jordan",
+            "Brandon Sanderson"
+          ],
+          "matched_book_id": 33674,
+          "matched_title": "A Memory of Light"
+        },
+        {
+          "matched_authors": [
+            "Robert Jordan",
+            "Brandon Sanderson"
+          ],
+          "matched_book_id": 33353,
+          "matched_title": "Towers of Midnight"
+        }
+      ],
+      "matched_title": "Towers of Midnight"
     }
   ],
-  "saved_at": "2026-07-18T06:20:05Z",
+  "saved_at": "2026-07-23T00:19:25Z",
   "schema_version": 2
 }

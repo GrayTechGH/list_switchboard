@@ -12,6 +12,8 @@ Maintenance notes:
 """
 
 import re
+import json
+import datetime
 from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
@@ -22,12 +24,16 @@ try:
     normalize_heading, normalize_line, strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key # pyright: ignore[reportMissingImports]
+  from calibre_plugins.list_switchboard.parser.incremental import ParsedUnitCache,project_source_rows,restore_source_rows
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError,CamoufoxRequiredError
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
     normalize_heading, normalize_line, strip_publication_notes,
   )
   from .generic import position_sort_key
+  from .incremental import ParsedUnitCache,project_source_rows,restore_source_rows
+  from errors import ImportCancelledError,CamoufoxRequiredError
 
 
 AWARD_NAME = 'Goldsmiths Prize'
@@ -42,29 +48,64 @@ class GoldsmithsOfficialParser(AwardParserBase):
 
   def parse(
       self, html, base_url=OFFICIAL_URL, name=AWARD_NAME, fetch_url=None,
-      log=None, progress=None):
+      log=None, progress=None,cached_parsed=None,incremental_update=False):
     archive_rows, year_links = self.archive_index_rows(html, base_url)
     rows = list(archive_rows)
     notes = []
+    cache=ParsedUnitCache('goldsmiths-annual-shortlists-v1',json.dumps([
+      base_url,name,self.AWARD_NAME,CATEGORY]),cached_parsed,incremental_update)
+    units={}
+    winners={int(row['award_year']):row for row in archive_rows}
+    latest=max((year for year,url in year_links),default=0)
 
     if fetch_url is not None and year_links:
       total = len(year_links)
       for index, (year, url) in enumerate(year_links, 1):
+        winner=winners.get(year)
+        revision=[year,normalize_heading(winner['title']),normalize_heading(winner['author'])] if winner else [year]
+        old=cache.old_units.get(url) or {}
+        previous=[]
+        try:
+          previous=restore_source_rows(cache.previous(url),old.get('metadata') or {})
+        except (ValueError,TypeError):
+          pass
+        if (year<min(latest,datetime.datetime.now().year) and winner and
+            old.get('complete') is True and old.get('revision')==revision and previous):
+          rows.extend(previous)
+          units[url]=(previous,revision,True)
+          continue
         try:
           if progress is not None:
             progress(index, total, f'Fetching {name} archive page {index} of {total}')
-          rows.extend(self.year_page_rows(fetch_url(url), url, year))
+          year_rows=self.year_page_rows(fetch_url(url), url, year)
+          if not year_rows:
+            raise ValueError('Official year page had no usable shortlist cards.')
+          rows.extend(year_rows)
+          units[url]=(year_rows,revision,True)
+        except (ImportCancelledError,CamoufoxRequiredError):
+          raise
         except Exception as err:
+          rows.extend(previous)
+          units[url]=(previous,revision,False)
           notes.append(f'{name} archive page could not be fetched: {url}: {err}')
           if log is not None:
             log(f'{name} archive page failed: {url}: {err}')
 
     entries = self.entries_from_rows(self.dedupe_rows(rows))
-    return self.parsed_result(
+    entries=sorted(entries,key=lambda item:position_sort_key(item.get('position','')))
+    units['archive']=(archive_rows,None,True)
+    for key,(source_rows,revision,complete) in units.items():
+      projected,metadata=project_source_rows(source_rows,entries,
+        lambda row:(str(row['award_year']),normalize_heading(row['title'])))
+      cache.put(key,projected,revision=revision,complete=complete,metadata=metadata)
+    parsed=self.parsed_result(
       name,
       base_url,
-      sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
+      entries,
       notes=notes)
+    parsed['incremental_state']=cache.state(entries)
+    parsed['incremental_state']['discovery']={'refresh_units':[url for year,url in year_links if year==latest]}
+    return parsed
 
   def archive_index_rows(self, html, base_url):
     soup = BeautifulSoup(html, 'html.parser')
@@ -127,6 +168,9 @@ class GoldsmithsOfficialParser(AwardParserBase):
     year = self.year_from_url(page_url) or self.year_from_text(self.clean_text(soup.find('title'))) or fallback_year
     if year is None:
       return []
+    title_year=self.year_from_text(self.clean_text(soup.find('title')))
+    if title_year is not None and title_year!=year:
+      raise ValueError('Official year page identified another award year.')
     rows = []
     for card in soup.find_all('article'):
       classes = card.get('class', []) or []

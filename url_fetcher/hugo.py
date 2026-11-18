@@ -36,17 +36,20 @@ class UrlFetcherHugoAwards(UrlFetcherGeneric):
 
     return getattr(hugo, self.PARSER_CLASS_NAME)()
 
-  def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
+  def parse(self, html, fetch_url=None, log=None, progress=None, **kwargs):
     return self.parser().parse(
       html,
       self.URL,
       fetch_url=fetch_url,
       log=log,
-      progress=progress)
+      progress=progress,
+      cached_parsed=kwargs.get('cached_parsed'),
+      incremental_update=kwargs.get('incremental_update', False))
 
 
 class UrlFetcherHugoAwardsNovel(UrlFetcherHugoAwards):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'hugo_awards_novel'
   NAME = 'Hugo Awards - Novel'
   FILTER_CATEGORIES = SPECULATIVE_CATEGORIES
@@ -55,6 +58,7 @@ class UrlFetcherHugoAwardsNovel(UrlFetcherHugoAwards):
 
 class UrlFetcherHugoAwardsNovella(UrlFetcherHugoAwards):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'hugo_awards_novella'
   NAME = 'Hugo Awards - Novella'
   FILTER_CATEGORIES = SPECULATIVE_CATEGORIES
@@ -63,6 +67,7 @@ class UrlFetcherHugoAwardsNovella(UrlFetcherHugoAwards):
 
 class UrlFetcherHugoAwardsSeries(UrlFetcherHugoAwards):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'hugo_awards_series'
   NAME = 'Hugo Awards - Series'
   REQUIRES_SERIES_MATCHING = True
@@ -80,6 +85,7 @@ class UrlFetcherHugoAwardsSeries(UrlFetcherHugoAwards):
 
 class UrlFetcherHugoAwardsGraphicStory(UrlFetcherHugoAwards):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'hugo_awards_graphic_story_or_comic'
   NAME = 'Hugo Awards - Graphic Story or Comic'
   FILTER_CATEGORIES = SPECULATIVE_CATEGORIES
@@ -88,6 +94,7 @@ class UrlFetcherHugoAwardsGraphicStory(UrlFetcherHugoAwards):
 
 class UrlFetcherHugoAwardsRelatedWork(UrlFetcherHugoAwards):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'hugo_awards_related_work'
   NAME = 'Hugo Awards - Related Work'
   FILTER_CATEGORIES = (CATEGORY_NONFICTION,) + SPECULATIVE_CATEGORIES
@@ -96,6 +103,7 @@ class UrlFetcherHugoAwardsRelatedWork(UrlFetcherHugoAwards):
 
 class UrlFetcherLodestarAward(UrlFetcherHugoAwards):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'lodestar_award_young_adult_book'
   NAME = 'Lodestar Award - Young Adult Book'
   FILTER_CATEGORIES = (

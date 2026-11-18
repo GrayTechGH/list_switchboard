@@ -9,22 +9,25 @@ from .generic import (
   UrlFetcherGeneric,
   parsed_source,
 )
+from .pen_america_transport import PENAmericaFetchPolicy
 
 try:
   from calibre_plugins.list_switchboard.parser.pen_america import (
     PENAwardConfig, PENAmericaAwardParser,
   )
+  from calibre_plugins.list_switchboard.parser.pen_america_updates import fetch_pen_america
 except ImportError:
   from parser.pen_america import PENAwardConfig, PENAmericaAwardParser
+  from parser.pen_america_updates import fetch_pen_america
 
 
 PEN_ANNUAL_POST_URLS = (
+  ('https://pen.org/2026-literary-awards-winners/', 'annual'),
   ('https://pen.org/2026-pen-america-literary-awards-finalists/', 'annual'),
   ('https://pen.org/announcing-the-2025-pen-america-literary-awards-winners/', 'annual'),
-  ('https://pen.org/2025-pen-america-literary-awards-finalists/', 'annual'),
-  ('https://pen.org/announcing-the-2024-pen-america-literary-awards-winners/', 'annual'),
+  ('https://pen.org/announcing-the-2025-pen-america-literary-awards-finalists/', 'annual'),
   ('https://pen.org/2024-pen-america-literary-awards-finalists/', 'annual'),
-  ('https://pen.org/2023-pen-america-literary-awards-finalists/', 'annual'),
+  ('https://pen.org/announcing-the-2023-pen-america-literary-awards-finalists/', 'annual'),
 )
 
 
@@ -59,20 +62,15 @@ class UrlFetcherPENAmericaAward(UrlFetcherGeneric):
   def fetch_and_parse(
       self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
       before_fetch=None, after_fetch=None, before_parse=None,
-      force_fallback_level=0, disable_fallbacks=False, source_choice=None):
-    pages = []
-    urls = [(self.LANDING_URL, 'landing')] + list(self.ANNUAL_POST_URLS)
-    for index, (url, page_kind) in enumerate(urls, start=1):
-      if before_fetch is not None:
-        before_fetch(url)
-      html = self.fetch_url(fetch_url, url)
-      if after_fetch is not None:
-        after_fetch(url, html)
-      if progress is not None:
-        progress(index, len(urls), 'Fetched PEN America source %d of %d' % (
-          index, len(urls)))
-      pages.append((url, html, page_kind))
-    parsed = self.parser().parse(pages, self.LANDING_URL, self.NAME, self.config())
+      force_fallback_level=0, disable_fallbacks=False, source_choice=None,
+      cached_parsed=None,incremental_update=False):
+    if source_choice not in (None,'automatic',0,'0') or (int(force_fallback_level or 0)>0 and not disable_fallbacks):
+      raise UrlFetcherError('No URL fallback exists for the selected source.')
+    legacy=super().fetch_url
+    policy=PENAmericaFetchPolicy(fetch_url,lambda url:legacy(fetch_url,url),
+      lambda html,url:self.parser().read_source(html,url,self.config(),'landing' if url==self.URL else 'annual'),log)
+    parsed=fetch_pen_america(self,policy.fetch,cached_parsed,incremental_update,
+      before_fetch,after_fetch,before_parse,progress,log)
     if not parsed.get('entries'):
       raise UrlFetcherError('%s produced no entries' % self.NAME)
     parsed.setdefault('source', parsed_source(self.NAME, self.LANDING_URL, self.source_id))
@@ -84,6 +82,7 @@ class UrlFetcherPENAmericaAward(UrlFetcherGeneric):
 
 
 class UrlFetcherPENGalbraithAward(UrlFetcherPENAmericaAward):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'pen_galbraith_award_nonfiction'
   NAME = 'PEN/John Kenneth Galbraith Award for Nonfiction'
   AWARD_NAME = NAME
@@ -102,6 +101,7 @@ class UrlFetcherPENGalbraithAward(UrlFetcherPENAmericaAward):
 
 
 class UrlFetcherPENDiamonsteinSpielvogelAward(UrlFetcherPENAmericaAward):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'pen_diamonstein_spielvogel_award_essay'
   NAME = 'PEN/Diamonstein-Spielvogel Award for the Art of the Essay'
   AWARD_NAME = NAME
@@ -122,6 +122,7 @@ class UrlFetcherPENDiamonsteinSpielvogelAward(UrlFetcherPENAmericaAward):
 
 
 class UrlFetcherPENJeanSteinBookAward(UrlFetcherPENAmericaAward):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'pen_jean_stein_book_award'
   NAME = 'PEN/Jean Stein Book Award'
   AWARD_NAME = NAME
@@ -140,6 +141,7 @@ class UrlFetcherPENJeanSteinBookAward(UrlFetcherPENAmericaAward):
 
 
 class UrlFetcherPENOpenBookAward(UrlFetcherPENAmericaAward):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'pen_open_book_award'
   NAME = 'PEN Open Book Award'
   AWARD_NAME = NAME

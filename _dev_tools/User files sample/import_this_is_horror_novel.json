@@ -1,0 +1,1088 @@
+{
+  "append_state": {
+    "entry_count": 66,
+    "last_entry_key": "last night of freedom|dan howarth",
+    "last_position": "2024.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Gary McMahon"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/features/this-is-horror-awards-2011-the-winners/novel-of-the-year/"
+      },
+      "title": "The Concrete Grove"
+    },
+    {
+      "authors": [
+        "BC Furtney"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/features/this-is-horror-awards-2011-the-winners/novel-of-the-year/"
+      },
+      "title": "Scarla"
+    },
+    {
+      "authors": [
+        "Adam Nevill"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2011/"
+      },
+      "title": "The Ritual"
+    },
+    {
+      "authors": [
+        "David Moody"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2011/"
+      },
+      "title": "Them Or Us"
+    },
+    {
+      "authors": [
+        "Jack Ketchum",
+        "Lucky McKee"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2011/"
+      },
+      "title": "The Woman"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2011/"
+      },
+      "title": "11:22:63"
+    },
+    {
+      "authors": [
+        "Mark Morris"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.06",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2011/"
+      },
+      "title": "Dead Island"
+    },
+    {
+      "authors": [
+        "Adrian Chamberlin"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.07",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2011/"
+      },
+      "title": "The Caretakers"
+    },
+    {
+      "authors": [
+        "Peter Straub"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.08",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2011/"
+      },
+      "title": "A Dark Matter"
+    },
+    {
+      "authors": [
+        "Stephen Graham Jones"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/2012-winners/year/"
+      },
+      "title": "The Last Final Girl"
+    },
+    {
+      "authors": [
+        "Chuck Wendig"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/2012-winners/year/"
+      },
+      "title": "Blackbirds"
+    },
+    {
+      "authors": [
+        "Adam Nevill"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2012/"
+      },
+      "title": "Last Days"
+    },
+    {
+      "authors": [
+        "Simon Bestwick"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2012/"
+      },
+      "title": "The Faceless"
+    },
+    {
+      "authors": [
+        "Alison Littlewood"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2012/"
+      },
+      "title": "A Cold Season"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/2013-winners/year/"
+      },
+      "title": "Doctor Sleep"
+    },
+    {
+      "authors": [
+        "Benjamin Percy"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/2013-winners/year/"
+      },
+      "title": "Red Moon"
+    },
+    {
+      "authors": [
+        "Joe Hill"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/horror-awards-2013/"
+      },
+      "title": "NOS4A2"
+    },
+    {
+      "authors": [
+        "Lauren Beukes"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/horror-awards-2013/"
+      },
+      "title": "The Shining Girls"
+    },
+    {
+      "authors": [
+        "Graham Joyce"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/horror-awards-2013/"
+      },
+      "title": "The Year of the Ladybird"
+    },
+    {
+      "authors": [
+        "Josh Malerman"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2014-winners/"
+      },
+      "title": "Bird Box"
+    },
+    {
+      "authors": [
+        "Lauren Beukes"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2014-winners/"
+      },
+      "title": "Broken Monsters"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2014-vote-now/"
+      },
+      "title": "Revival"
+    },
+    {
+      "authors": [
+        "M.R. Carey"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2014-vote-now/"
+      },
+      "title": "The Girl With All The Gifts"
+    },
+    {
+      "authors": [
+        "Nick Cutter"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2014-vote-now/"
+      },
+      "title": "The Troop"
+    },
+    {
+      "authors": [
+        "Paul Tremblay"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2015-the-winners/"
+      },
+      "title": "A Head Full of Ghosts"
+    },
+    {
+      "authors": [
+        "Adam Nevill"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2015-the-winners/"
+      },
+      "title": "Lost Girl"
+    },
+    {
+      "authors": [
+        "Ania Ahlborn"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2015-vote-now/"
+      },
+      "title": "Brother"
+    },
+    {
+      "authors": [
+        "Jeremy Robert Johnson"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2015-vote-now/"
+      },
+      "title": "Skullcrack City"
+    },
+    {
+      "authors": [
+        "Nick Cutter"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2015-vote-now/"
+      },
+      "title": "The Deep"
+    },
+    {
+      "authors": [
+        "Simon Kurt Unsworth"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2015-vote-now/"
+      },
+      "title": "The Devil's Detective"
+    },
+    {
+      "authors": [
+        "John Langan"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2016-the-winners/"
+      },
+      "title": "The Fisherman"
+    },
+    {
+      "authors": [
+        "Stephen Graham Jones"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2016-the-winners/"
+      },
+      "title": "Mongrels"
+    },
+    {
+      "authors": [
+        "Paul Tremblay"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2016-vote-now/"
+      },
+      "title": "Disappearance at Devil's Rock"
+    },
+    {
+      "authors": [
+        "Gemma Files"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2016-vote-now/"
+      },
+      "title": "Experimental Film"
+    },
+    {
+      "authors": [
+        "Damien Angelica Walters"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2016-vote-now/"
+      },
+      "title": "Paper Tigers"
+    },
+    {
+      "authors": [
+        "Bracken MacLeod"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2016-vote-now/"
+      },
+      "title": "Stranded"
+    },
+    {
+      "authors": [
+        "S.P. Miskowski"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2017-the-winners/"
+      },
+      "title": "I Wish I Was Like You"
+    },
+    {
+      "authors": [
+        "Andy Davidson"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2017-the-winners/"
+      },
+      "title": "In the Valley of the Sun"
+    },
+    {
+      "authors": [
+        "Josh Malerman"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2017-vote-now/"
+      },
+      "title": "Black Mad Wheel"
+    },
+    {
+      "authors": [
+        "Victor LaValle"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2017-vote-now/"
+      },
+      "title": "The Changeling"
+    },
+    {
+      "authors": [
+        "Ania Ahlborn"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2017-vote-now/"
+      },
+      "title": "The Devil Crept In"
+    },
+    {
+      "authors": [
+        "Gwendolyn Kiste"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2018-the-winners/"
+      },
+      "title": "The Rust Maidens"
+    },
+    {
+      "authors": [
+        "Paul Tremblay"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2018-the-winners/"
+      },
+      "title": "The Cabin at the End of the World"
+    },
+    {
+      "authors": [
+        "Gabino Iglesias"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2018-vote-now/"
+      },
+      "title": "Coyote Songs"
+    },
+    {
+      "authors": [
+        "Alma Katsu"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2018-vote-now/"
+      },
+      "title": "The Hunger"
+    },
+    {
+      "authors": [
+        "Robert R. McCammon"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2018-vote-now/"
+      },
+      "title": "The Listener"
+    },
+    {
+      "authors": [
+        "Sarah Read"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/this-is-horror-awards-2019-the-winners/"
+      },
+      "title": "The Bone Weaver's Orchard"
+    },
+    {
+      "authors": [
+        "Jonathan Janz"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/this-is-horror-awards-2019-the-winners/"
+      },
+      "title": "The Dark Game"
+    },
+    {
+      "authors": [
+        "Max Booth III"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2019-vote-now/"
+      },
+      "title": "Carnivorous Lunar Activities"
+    },
+    {
+      "authors": [
+        "Adam Nevill"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2019-vote-now/"
+      },
+      "title": "The Reddening"
+    },
+    {
+      "authors": [
+        "Rory Power"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2019-vote-now/"
+      },
+      "title": "Wilder Girls"
+    },
+    {
+      "authors": [
+        "Stephen Graham Jones"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/this-is-horror-awards-2020-the-winners/"
+      },
+      "title": "The Only Good Indians"
+    },
+    {
+      "authors": [
+        "Silvia Moreno-Garcia"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/this-is-horror-awards-2020-the-winners/"
+      },
+      "title": "Mexican Gothic"
+    },
+    {
+      "authors": [
+        "Chuck Palahniuk"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2020-vote-now/"
+      },
+      "title": "The Invention of Sound"
+    },
+    {
+      "authors": [
+        "Grady Hendrix"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2020-vote-now/"
+      },
+      "title": "The Southern Book Club's Guide to Slaying Vampires"
+    },
+    {
+      "authors": [
+        "Simone St. James"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2020-vote-now/"
+      },
+      "title": "The Sun Down Motel"
+    },
+    {
+      "authors": [
+        "Stephen Graham Jones"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/this-is-horror-awards-2021-the-winners/"
+      },
+      "title": "My Heart Is a Chainsaw"
+    },
+    {
+      "authors": [
+        "Gus Moreno"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/this-is-horror-awards-2021-the-winners/"
+      },
+      "title": "This Thing Between Us"
+    },
+    {
+      "authors": [
+        "Hailey Piper"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2021-vote-now/"
+      },
+      "title": "Queen of Teeth"
+    },
+    {
+      "authors": [
+        "David Demchuk"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2021-vote-now/"
+      },
+      "title": "Red X"
+    },
+    {
+      "authors": [
+        "Lee Mandelo"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2021-vote-now/"
+      },
+      "title": "Summer Sons"
+    },
+    {
+      "authors": [
+        "Ronald Malfi"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2024-the-winners/"
+      },
+      "title": "Small Town Horror"
+    },
+    {
+      "authors": [
+        "CJ Leede"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2024-the-winners/"
+      },
+      "title": "American Rapture"
+    },
+    {
+      "authors": [
+        "Adam Nevill"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2024-vote-now/"
+      },
+      "title": "All the Fiends of Hell"
+    },
+    {
+      "authors": [
+        "Josh Malerman"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2024-vote-now/"
+      },
+      "title": "Incidents Around the House"
+    },
+    {
+      "authors": [
+        "Dan Howarth"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2024-vote-now/"
+      },
+      "title": "Last Night of Freedom"
+    }
+  ],
+  "fetched_at": "2026-11-14T11:41:36Z",
+  "list_id": "this_is_horror_novel",
+  "list_name": "This Is Horror - Novel",
+  "match_series": false,
+  "notes": [
+    "Official ballot order is retained after winner and runner-up promotion.",
+    "The 2022 and 2023 cycles are explicit empty gaps pending official Legacy Awards shortlists or results.",
+    "No completed official 2025 ballot or result page is available.",
+    "Official This Is Horror ballot pages provide the complete historical nominee set for each available award cycle.",
+    "Official This Is Horror result pages identify the winner and runner-up within each complete official ballot.",
+    "Goodreads is checked as a paginated diagnostic supplement; official This Is Horror ballots remain authoritative.",
+    "Goodreads overlaps were excluded in favor of official ballot rows."
+  ],
+  "parser": "this_is_horror_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "This Is Horror - Novel",
+    "source_id": "this_is_horror_novel",
+    "url": "https://www.thisishorror.co.uk/awards/"
+  }
+}

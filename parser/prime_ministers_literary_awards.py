@@ -13,7 +13,9 @@ Maintenance notes:
 """
 
 import re
-from urllib.parse import urljoin
+import json
+import datetime
+from urllib.parse import urljoin,urlsplit
 
 from bs4 import BeautifulSoup
 
@@ -23,12 +25,16 @@ try:
     assign_positions, normalize_heading, normalize_line, strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key # pyright: ignore[reportMissingImports]
+  from calibre_plugins.list_switchboard.parser.incremental import ParsedUnitCache,project_source_rows,restore_source_rows
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError,CamoufoxRequiredError
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_LONGLISTED, RESULT_SHORTLISTED, RESULT_WINNER,
     assign_positions, normalize_heading, normalize_line, strip_publication_notes,
   )
   from .generic import position_sort_key
+  from .incremental import ParsedUnitCache,project_source_rows,restore_source_rows
+  from errors import ImportCancelledError,CamoufoxRequiredError
 
 
 AWARD_NAME = "Prime Minister's Literary Awards"
@@ -62,6 +68,8 @@ def _category_key(value):
 class PrimeMinistersLiteraryAwardsOfficialParser(AwardParserBase):
 
   AWARD_NAME = AWARD_NAME
+  UPDATE_STRATEGY = 'pmla-annual-source-rows-v1'
+  EXTRA_SOURCE_SCOPE = ()
 
   def __init__(self, category, category_aliases=()):
     self.category = category
@@ -70,34 +78,86 @@ class PrimeMinistersLiteraryAwardsOfficialParser(AwardParserBase):
 
   def parse(
       self, html, base_url=OFFICIAL_URL, name=AWARD_NAME, fetch_url=None,
-      log=None, progress=None):
-    pages = [(base_url, html)]
+      log=None, progress=None,cached_parsed=None,incremental_update=False):
     notes = []
     archive_links = self.archive_links(html, base_url)
+    scope = [base_url,name,self.category,self.category_aliases]
+    if self.EXTRA_SOURCE_SCOPE:
+      scope.append(self.EXTRA_SOURCE_SCOPE)
+    cache=ParsedUnitCache(self.UPDATE_STRATEGY,json.dumps(scope),cached_parsed,incremental_update)
+    rows=self.page_rows(html,base_url)
+    units={'current':(list(rows),None,True)}
+    latest=max([self.year_from_text(url) or 0 for url in archive_links]+
+      [int(r['award_year']) for r in rows]+[0])
     if fetch_url is not None and archive_links:
       total = len(archive_links)
       for index, url in enumerate(archive_links, 1):
         if url == base_url:
           continue
+        year=self.year_from_text(url)
+        old=cache.old_units.get(url) or {}
+        previous=[]
+        try:
+          previous=restore_source_rows(cache.previous(url),old.get('metadata') or {})
+        except (ValueError,TypeError):
+          pass
+        if (year<min(latest,datetime.datetime.now().year) and old.get('complete') is True and
+            old.get('revision')==year and (not previous or any(r['result']==RESULT_WINNER for r in previous))):
+          rows.extend(previous)
+          units[url]=(previous,year,True)
+          continue
         try:
           if progress is not None:
             progress(index, total, f'Fetching {name} archive page {index} of {total}')
-          pages.append((url, fetch_url(url)))
+          page=fetch_url(url)
+          source_rows=self.annual_rows(page,url,year,fetch_url)
+          complete=bool(source_rows) or self.valid_empty_year(page,year)
+          if not complete:
+            notes.append(f'{name} archive page had no usable category snapshot: {url}')
+            if previous:
+              source_rows=previous
+          rows.extend(source_rows)
+          units[url]=(source_rows,year,complete)
+        except (ImportCancelledError,CamoufoxRequiredError):
+          raise
         except Exception as err:
+          rows.extend(previous)
+          units[url]=(previous,year,False)
           notes.append(f'{name} archive page could not be fetched: {url}: {err}')
           if log is not None:
             log(f'{name} archive page failed: {url}: {err}')
 
-    rows = []
-    for url, page_html in pages:
-      rows.extend(self.page_rows(page_html, url))
-
     entries = self.entries_from_rows(self.dedupe_rows(rows))
-    return self.parsed_result(
+    entries=sorted(entries,key=lambda item:position_sort_key(item.get('position','')))
+    for url,(source_rows,revision,complete) in units.items():
+      projected,metadata=project_source_rows(source_rows,entries,
+        lambda row:(str(row['award_year']),normalize_heading(row['title'])))
+      cache.put(url,projected,revision=revision,complete=complete,metadata=metadata)
+    parsed=self.parsed_result(
       name,
       base_url,
-      sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
+      entries,
       notes=notes)
+    parsed['incremental_state']=cache.state(entries)
+    parsed['incremental_state']['discovery']={'refresh_units':['current']}
+    return parsed
+
+  def annual_rows(self, page, url, year, fetch_url):
+    rows = self.page_rows(page, url)
+    if any(str(row['award_year']) != str(year) for row in rows):
+      raise ValueError('Official annual archive returned another award year.')
+    return rows
+
+  def valid_empty_year(self,page,year):
+    soup=BeautifulSoup(page,'html.parser')
+    heading=soup.find('h1')
+    if not heading or self.year_from_text(self.clean_text(heading))!=year:
+      return False
+    categories=[self.clean_text(h) for h in soup.find_all('h2')]
+    known={'fiction','nonfiction','australian history','young adult literature',
+      'children s literature','poetry'}
+    return any(_category_key(c) in known for c in categories) and not any(
+      self.category_matches(c) for c in categories)
 
   def archive_links(self, html, base_url):
     soup = BeautifulSoup(html, 'html.parser')
@@ -113,7 +173,11 @@ class PrimeMinistersLiteraryAwardsOfficialParser(AwardParserBase):
         continue
       if 'pmla' not in href and 'prime-ministers-literary-awards' not in href:
         continue
-      links[year] = urljoin(base_url, href)
+      url=urljoin(base_url,href)
+      if urlsplit(url).netloc!=urlsplit(base_url).netloc or not re.search(
+          r'/(?:19|20)\d{2}-(?:pmla|prime-ministers-literary-awards)-winners-',url):
+        continue
+      links[year] = url
     return tuple(url for _year, url in sorted(links.items()))
 
   def page_rows(self, html, page_url):
@@ -170,6 +234,12 @@ class PrimeMinistersLiteraryAwardsOfficialParser(AwardParserBase):
   def card_rows(self, soup, page_url):
     rows = []
     page_year = self.year_from_text(self.clean_text(soup.find('title'))) or self.year_from_text(page_url)
+    if page_year is None:
+      for label in soup.find_all('p'):
+        match=re.fullmatch(r'Prime Minister[\u2019\']s Literary Awards\s+(20\d{2})',self.clean_text(label),re.I)
+        if match:
+          page_year=int(match.group(1))
+          break
     if page_year is None:
       return rows
     for heading in soup.find_all(['h2', 'h3']):
@@ -251,7 +321,7 @@ class PrimeMinistersLiteraryAwardsOfficialParser(AwardParserBase):
   def parse_card_title(self, text):
     result = RESULT_SHORTLISTED
     text = normalize_line(text)
-    match = re.match(r'^winner\s*:\s*(.+)$', text, re.I)
+    match = re.match(r'^(?:winner\s*:|\[winner\])\s*(.+)$', text, re.I)
     if match is not None:
       result = RESULT_WINNER
       text = match.group(1).strip()

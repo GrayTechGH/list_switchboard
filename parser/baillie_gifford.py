@@ -25,6 +25,7 @@ try:
     strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER,
@@ -32,6 +33,7 @@ except ImportError:
     strip_publication_notes,
   )
   from .generic import position_sort_key
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 
 AWARD_NAME = 'Baillie Gifford Prize'
@@ -116,6 +118,8 @@ class BaillieGiffordPrizeParser(AwardParserBase):
     if fetch_url is not None and source_url:
       try:
         detail = self.parse_detail_page(fetch_url(source_url), source_url)
+      except (ImportCancelledError, CamoufoxRequiredError):
+        raise
       except Exception as err:
         notes.append(
           'Baillie Gifford detail page failed for %s: %s' % (

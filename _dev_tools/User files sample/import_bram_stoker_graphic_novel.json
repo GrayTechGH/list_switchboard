@@ -1,0 +1,1781 @@
+{
+  "append_state": {
+    "entry_count": 107,
+    "last_entry_key": "let this one be a devil|steve foxe\u001fjames iv tynion\u001fpiotr kowalski",
+    "last_position": "2025.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Len Wein"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1998",
+      "category": "Graphic Novel",
+      "position": "1998.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1999"
+      },
+      "title": "The Dreaming: Trial and Error"
+    },
+    {
+      "authors": [
+        "Garth Ennis"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1998",
+      "category": "Graphic Novel",
+      "position": "1998.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1999"
+      },
+      "title": "Preacher"
+    },
+    {
+      "authors": [
+        "Sergio Aragones",
+        "Mark Evanier"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1998",
+      "category": "Graphic Novel",
+      "position": "1998.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1999"
+      },
+      "title": "Sergio Aragones' Dia de les Muertos"
+    },
+    {
+      "authors": [
+        "Garth Ennis"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1998",
+      "category": "Graphic Novel",
+      "position": "1998.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1999"
+      },
+      "title": "The Son of Man"
+    },
+    {
+      "authors": [
+        "Neil Gaiman",
+        "Yoshitaka Amano"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1999",
+      "category": "Graphic Novel",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2000"
+      },
+      "title": "The Sandman: The Dream Hunters"
+    },
+    {
+      "authors": [
+        "David Quinn"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1999",
+      "category": "Graphic Novel",
+      "position": "1999.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2000"
+      },
+      "title": "Faust: Book of M"
+    },
+    {
+      "authors": [
+        "Mike Mignola"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1999",
+      "category": "Graphic Novel",
+      "position": "1999.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2000"
+      },
+      "title": "Hellboy: Box Full of Evil"
+    },
+    {
+      "authors": [
+        "Joe R. Lansdale"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1999",
+      "category": "Graphic Novel",
+      "position": "1999.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2000"
+      },
+      "title": "Jonah Hex: Shadows West #1"
+    },
+    {
+      "authors": [
+        "Alan Moore"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2000",
+      "category": "Graphic Novel",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2001"
+      },
+      "title": "The League of Extraordinary Gentlemen"
+    },
+    {
+      "authors": [
+        "Robert Weinberg"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2000",
+      "category": "Graphic Novel",
+      "position": "2000.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2001"
+      },
+      "title": "Cable #79-84"
+    },
+    {
+      "authors": [
+        "Joe R. Lansdale"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2000",
+      "category": "Graphic Novel",
+      "position": "2000.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2001"
+      },
+      "title": "Red Romance"
+    },
+    {
+      "authors": [
+        "Bernie Wrightson"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2000",
+      "category": "Graphic Novel",
+      "position": "2000.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2001"
+      },
+      "title": "Spuds"
+    },
+    {
+      "authors": [
+        "Jeff Mariotte"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2001",
+      "category": "Graphic Novel",
+      "position": "2001.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2002"
+      },
+      "title": "Desperadoes: Quiet of the Grave"
+    },
+    {
+      "authors": [
+        "Caitl\u00edn R. Kiernan"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2001",
+      "category": "Graphic Novel",
+      "position": "2001.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2002"
+      },
+      "title": "The First Adventures of Miss Catterina Poe"
+    },
+    {
+      "authors": [
+        "Brian Azzarello"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2001",
+      "category": "Graphic Novel",
+      "position": "2001.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2002"
+      },
+      "title": "Freezes Over"
+    },
+    {
+      "authors": [
+        "Kevin Smith"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2001",
+      "category": "Graphic Novel",
+      "position": "2001.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2002"
+      },
+      "title": "Quiver"
+    },
+    {
+      "authors": [
+        "Various Authors"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2001",
+      "category": "Graphic Novel",
+      "position": "2001.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2002"
+      },
+      "title": "Weird Western Tales"
+    },
+    {
+      "authors": [
+        "Robert Weinberg"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2002",
+      "category": "Graphic Novel",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2003"
+      },
+      "title": "Nightside"
+    },
+    {
+      "authors": [
+        "Peter Lenkov"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2002",
+      "category": "Graphic Novel",
+      "position": "2002.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2003"
+      },
+      "title": "Fort: Prophet of the Unexplained"
+    },
+    {
+      "authors": [
+        "Steve Gerber"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2002",
+      "category": "Graphic Novel",
+      "position": "2002.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2003"
+      },
+      "title": "Howard the Duck"
+    },
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2003",
+      "category": "Graphic Novel",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2004"
+      },
+      "title": "The Sandman: Endless Nights"
+    },
+    {
+      "authors": [
+        "Tom Pomplun"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2003",
+      "category": "Graphic Novel",
+      "position": "2003.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2004"
+      },
+      "title": "Graphic Classics: Ambrose Bierce"
+    },
+    {
+      "authors": [
+        "Stefan Petrucha"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2003",
+      "category": "Graphic Novel",
+      "position": "2003.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2004"
+      },
+      "title": "Kolchak: \"Devil in the Details"
+    },
+    {
+      "authors": [
+        "Alan Moore"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2003",
+      "category": "Graphic Novel",
+      "position": "2003.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2004"
+      },
+      "title": "The League of Extraordinary Gentlemen, Volume II"
+    },
+    {
+      "authors": [
+        "Robert Weinberg"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2003",
+      "category": "Graphic Novel",
+      "position": "2003.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2004"
+      },
+      "title": "Vampire the Masqerade Giovanni -- The Machiavelli Conundrum"
+    },
+    {
+      "authors": [
+        "Jai Nitz"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2004",
+      "category": "Graphic Novel",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2005"
+      },
+      "title": "Heaven's Devils"
+    },
+    {
+      "authors": [
+        "Steve Niles"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2004",
+      "category": "Graphic Novel",
+      "position": "2004.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2005"
+      },
+      "title": "Aleister Arcane"
+    },
+    {
+      "authors": [
+        "Tom Pomplun"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2004",
+      "category": "Graphic Novel",
+      "position": "2004.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2005"
+      },
+      "title": "Graphic Classics: Robert Louis Stevenson"
+    },
+    {
+      "authors": [
+        "James Lowder"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2004",
+      "category": "Graphic Novel",
+      "position": "2004.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2005"
+      },
+      "title": "Lost Loves"
+    },
+    {
+      "authors": [
+        "Alan Moore"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2011",
+      "category": "Graphic Novel",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2012"
+      },
+      "title": "Neonomicon"
+    },
+    {
+      "authors": [
+        "Vera Brosgol"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2011",
+      "category": "Graphic Novel",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2012"
+      },
+      "title": "Anya's Ghost"
+    },
+    {
+      "authors": [
+        "Mike Mignola",
+        "Christopher Golden"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2011",
+      "category": "Graphic Novel",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2012"
+      },
+      "title": "Baltimore: The Plague Ships"
+    },
+    {
+      "authors": [
+        "Jeff Jensen"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2011",
+      "category": "Graphic Novel",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2012"
+      },
+      "title": "Green River Killer"
+    },
+    {
+      "authors": [
+        "Joe Hill"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2011",
+      "category": "Graphic Novel",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2012"
+      },
+      "title": "Locke & Key, Vol. 4: Keys to the Kingdom"
+    },
+    {
+      "authors": [
+        "Jonathan Maberry"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2011",
+      "category": "Graphic Novel",
+      "position": "2011.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2012"
+      },
+      "title": "Marvel Universe vs. Wolverine"
+    },
+    {
+      "authors": [
+        "Rocky Wood",
+        "Lisa Morton"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2012",
+      "category": "Graphic Novel",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2013"
+      },
+      "title": "Witch Hunts: A Graphic History of the Burning Times"
+    },
+    {
+      "authors": [
+        "Peter J. Wacks",
+        "Guy Anthony De Marco"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2012",
+      "category": "Graphic Novel",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2013"
+      },
+      "title": "Behind These Eyes"
+    },
+    {
+      "authors": [
+        "Terry Moore"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2012",
+      "category": "Graphic Novel",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2013"
+      },
+      "title": "Rachel Rising Vol. 1: The Shadow of Death"
+    },
+    {
+      "authors": [
+        "Cullen Bunn"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2012",
+      "category": "Graphic Novel",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2013"
+      },
+      "title": "The Sixth Gun Volume 3: Bound"
+    },
+    {
+      "authors": [
+        "Ravi Thornton"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2012",
+      "category": "Graphic Novel",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2013"
+      },
+      "title": "The Tale of Brin and Bent and Minno Marylebone"
+    },
+    {
+      "authors": [
+        "Caitl\u00edn R. Kiernan"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2013",
+      "category": "Graphic Novel",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2014"
+      },
+      "title": "Alabaster: Wolves"
+    },
+    {
+      "authors": [
+        "Paul Tobin"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2013",
+      "category": "Graphic Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2014"
+      },
+      "title": "Colder"
+    },
+    {
+      "authors": [
+        "Ed Brubaker"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2013",
+      "category": "Graphic Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2014"
+      },
+      "title": "Fatale Book Three: West of Hell"
+    },
+    {
+      "authors": [
+        "Cameron Stewart"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2013",
+      "category": "Graphic Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2014"
+      },
+      "title": "Sin Titulo"
+    },
+    {
+      "authors": [
+        "Brandon Seifert"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2013",
+      "category": "Graphic Novel",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2014"
+      },
+      "title": "Witch Doctor, Vol. 2: Mal Practice"
+    },
+    {
+      "authors": [
+        "Jonathan Maberry",
+        "Tyler Crook"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2014",
+      "category": "Graphic Novel",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2015"
+      },
+      "title": "Bad Blood"
+    },
+    {
+      "authors": [
+        "Joe R. Lansdale",
+        "Daniele Serra"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2014",
+      "category": "Graphic Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2015"
+      },
+      "title": "I Tell You It's Love"
+    },
+    {
+      "authors": [
+        "Joe Hill",
+        "Gabriel Rodriguez"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2014",
+      "category": "Graphic Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2015"
+      },
+      "title": "Locke and Key: Vol. 6: Alpha and Omega"
+    },
+    {
+      "authors": [
+        "Emily Carroll"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2014",
+      "category": "Graphic Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2015"
+      },
+      "title": "Through the Woods"
+    },
+    {
+      "authors": [
+        "Paul Tobin"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2014",
+      "category": "Graphic Novel",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2015"
+      },
+      "title": "The Witcher"
+    },
+    {
+      "authors": [
+        "Sam Weller",
+        "Mort Castle"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2015",
+      "category": "Graphic Novel",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2016"
+      },
+      "title": "Shadow Show: Stories in Celebration of Ray Bradbury"
+    },
+    {
+      "authors": [
+        "Cullen Bunn"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2015",
+      "category": "Graphic Novel",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2016"
+      },
+      "title": "Harrow County, Vol. 1: Countless Haints"
+    },
+    {
+      "authors": [
+        "Victor Gischler"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2015",
+      "category": "Graphic Novel",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2016"
+      },
+      "title": "Hellbound"
+    },
+    {
+      "authors": [
+        "Robert Kirkman"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2015",
+      "category": "Graphic Novel",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2016"
+      },
+      "title": "Outcast, Vol. 1: A Darkness Surrounds Him"
+    },
+    {
+      "authors": [
+        "Scott Snyder"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2015",
+      "category": "Graphic Novel",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2016"
+      },
+      "title": "Wytches, Vol. 1"
+    },
+    {
+      "authors": [
+        "James Chambers"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2016",
+      "category": "Graphic Novel",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2017"
+      },
+      "title": "Kolchak the Night Stalker: The Forgotten Lore of Edgar Allan Poe"
+    },
+    {
+      "authors": [
+        "Cullen Bunn"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2016",
+      "category": "Graphic Novel",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2017"
+      },
+      "title": "Blood Feud"
+    },
+    {
+      "authors": [
+        "Alex de Campi"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2016",
+      "category": "Graphic Novel",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2017"
+      },
+      "title": "No Mercy: Volume 2"
+    },
+    {
+      "authors": [
+        "Robert Kirkman"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2016",
+      "category": "Graphic Novel",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2017"
+      },
+      "title": "Outcast: Volume 3: This Little Light"
+    },
+    {
+      "authors": [
+        "Alan Moore"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2016",
+      "category": "Graphic Novel",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2017"
+      },
+      "title": "Providence: Act 1"
+    },
+    {
+      "authors": [
+        "Mark Alan Miller",
+        "Joe R. Lansdale"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2016",
+      "category": "Graphic Novel",
+      "position": "2016.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2017"
+      },
+      "title": "The Steam Man"
+    },
+    {
+      "authors": [
+        "Damian Duffy",
+        "Octavia E. Butler"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2017",
+      "category": "Graphic Novel",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2018"
+      },
+      "title": "Kindred: A Graphic Novel Adaptation"
+    },
+    {
+      "authors": [
+        "Jonathan Hickman"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2017",
+      "category": "Graphic Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2018"
+      },
+      "title": "The Black Monday Murders"
+    },
+    {
+      "authors": [
+        "Mike Carey",
+        "Ethan David Arvind"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2017",
+      "category": "Graphic Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2018"
+      },
+      "title": "Darkness Visible"
+    },
+    {
+      "authors": [
+        "Marjorie Liu"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2017",
+      "category": "Graphic Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2018"
+      },
+      "title": "Monstress, Volume 2: The Blood"
+    },
+    {
+      "authors": [
+        "Emil Ferris"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2017",
+      "category": "Graphic Novel",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2018"
+      },
+      "title": "My Favorite Thing Is Monsters"
+    },
+    {
+      "authors": [
+        "Victor LaValle",
+        "Dietrich Smith"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2018",
+      "category": "Graphic Novel",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2019"
+      },
+      "title": "Victor LaValle's Destroyer"
+    },
+    {
+      "authors": [
+        "Saladin Ahmed",
+        "Sami Kivel\u00e4"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2018",
+      "category": "Graphic Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2019"
+      },
+      "title": "Abbott"
+    },
+    {
+      "authors": [
+        "Cullen Bunn"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2018",
+      "category": "Graphic Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2019"
+      },
+      "title": "Bone Parish"
+    },
+    {
+      "authors": [
+        "Marjorie Liu",
+        "Sana Takeda"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2018",
+      "category": "Graphic Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2019"
+      },
+      "title": "Monstress Volume 3: Haven"
+    },
+    {
+      "authors": [
+        "Brian Azzarello",
+        "Eduardo Risso"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2018",
+      "category": "Graphic Novel",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2019"
+      },
+      "title": "Moonshine Vol. 2: Misery Train"
+    },
+    {
+      "authors": [
+        "Neil Gaiman",
+        "Colleen Doran"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2019",
+      "category": "Graphic Novel",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2020"
+      },
+      "title": "Neil Gaiman's Snow, Glass, Apples"
+    },
+    {
+      "authors": [
+        "Cullen Bunn",
+        "Jonas Scharf"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2019",
+      "category": "Graphic Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2020"
+      },
+      "title": "Bone Parish Vol. 2"
+    },
+    {
+      "authors": [
+        "Alessandro Manzetti",
+        "Stefano Cardoselli"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2019",
+      "category": "Graphic Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2020"
+      },
+      "title": "Calcutta Horror"
+    },
+    {
+      "authors": [
+        "Gou Tanabe"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2019",
+      "category": "Graphic Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2020"
+      },
+      "title": "H.P. Lovecraft's At the Mountains of Madness, The First Volume"
+    },
+    {
+      "authors": [
+        "Marjorie Liu",
+        "Sana Takeda"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2019",
+      "category": "Graphic Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2020"
+      },
+      "title": "Monstress Volume 4: The Chosen"
+    },
+    {
+      "authors": [
+        "Nancy Holder",
+        "Chiara Di Francia",
+        "Amelia Woo"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2020",
+      "category": "Graphic Novel",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2021"
+      },
+      "title": "Mary Shelley Presents"
+    },
+    {
+      "authors": [
+        "Alessandra Manzetti",
+        "Stefano Cardoselli"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2020",
+      "category": "Graphic Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2021"
+      },
+      "title": "Her Life Matters:"
+    },
+    {
+      "authors": [
+        "Steve Niles",
+        "Salvatore Simeone",
+        "Szymon Kudranski"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2020",
+      "category": "Graphic Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2021"
+      },
+      "title": "Lonesome Days, Savage Nights"
+    },
+    {
+      "authors": [
+        "Steven Archer"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2020",
+      "category": "Graphic Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2021"
+      },
+      "title": "The Masque of the Red Death"
+    },
+    {
+      "authors": [
+        "Rich Douek",
+        "Alex Cormack"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2020",
+      "category": "Graphic Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2021"
+      },
+      "title": "Road of Bones"
+    },
+    {
+      "authors": [
+        "Jennifer Brody",
+        "Jules Rivera"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2020",
+      "category": "Graphic Novel",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2021"
+      },
+      "title": "Spectre Deep 6"
+    },
+    {
+      "authors": [
+        "Alessandro Manzetti",
+        "Stefano Cardoselli"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2021",
+      "category": "Graphic Novel",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2022"
+      },
+      "title": "The Inhabitant of the Lake"
+    },
+    {
+      "authors": [
+        "Saladin Ahmed",
+        "Sami Kivel\u00e4"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2021",
+      "category": "Graphic Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2022"
+      },
+      "title": "Abbott 1973"
+    },
+    {
+      "authors": [
+        "Kami Garcia",
+        "Mico Suayan",
+        "Jason Badower",
+        "Mike Mayhew"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2021",
+      "category": "Graphic Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2022"
+      },
+      "title": "Joker/Harley: Criminal Insanity"
+    },
+    {
+      "authors": [
+        "Grant Morrison",
+        "Alex Child",
+        "Naomi Franquiz"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2021",
+      "category": "Graphic Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2022"
+      },
+      "title": "Proctor Valley Road"
+    },
+    {
+      "authors": [
+        "Dan Panosian",
+        "Marianna Ignazzi"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2021",
+      "category": "Graphic Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2022"
+      },
+      "title": "An Unkindness of Ravens"
+    },
+    {
+      "authors": [
+        "James Aquilone"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2022",
+      "category": "Graphic Novel",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2023"
+      },
+      "title": "Kolchak: The Night Stalker: 50th Anniversary"
+    },
+    {
+      "authors": [
+        "Sarah Gailey",
+        "Pius Bak"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2022",
+      "category": "Graphic Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2023"
+      },
+      "title": "Eat the Rich"
+    },
+    {
+      "authors": [
+        "Alessandro Manzetti",
+        "Stefano Cardoselli"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2022",
+      "category": "Graphic Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2023"
+      },
+      "title": "Kraken Inferno: The Last Hunt"
+    },
+    {
+      "authors": [
+        "Skottie Young",
+        "Jorge Corona"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2022",
+      "category": "Graphic Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2023"
+      },
+      "title": "The Me You Love in the Dark"
+    },
+    {
+      "authors": [
+        "James IV Tynion",
+        "Werther Dell'Edera"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2022",
+      "category": "Graphic Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2023"
+      },
+      "title": "Something is Killing the Children Vol 4"
+    },
+    {
+      "authors": [
+        "Amy Chu",
+        "Soo Lee"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2023",
+      "category": "Graphic Novel",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2024"
+      },
+      "title": "Carmilla: The First Vampire"
+    },
+    {
+      "authors": [
+        "Adam Cesare",
+        "David Stoll"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2023",
+      "category": "Graphic Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2024"
+      },
+      "title": "Dead Mall"
+    },
+    {
+      "authors": [
+        "Cullen Bunn",
+        "Leomacs"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2023",
+      "category": "Graphic Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2024"
+      },
+      "title": "Ghostlore, Vol. 1"
+    },
+    {
+      "authors": [
+        "Gou Tanabe"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2023",
+      "category": "Graphic Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2024"
+      },
+      "title": "H.P. Lovecraft's The Shadow Overe Innsmouth"
+    },
+    {
+      "authors": [
+        "Junji Ito"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2023",
+      "category": "Graphic Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2024"
+      },
+      "title": "Tombs"
+    },
+    {
+      "authors": [
+        "Gou Tanabe"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2024",
+      "category": "Graphic Novel",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2025"
+      },
+      "title": "H.P. Lovecraft's The Call of Cthulhu"
+    },
+    {
+      "authors": [
+        "Patrick Horvath"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2024",
+      "category": "Graphic Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2025"
+      },
+      "title": "Beneath the Trees Where Nobody Sees"
+    },
+    {
+      "authors": [
+        "Maggie Umber"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2024",
+      "category": "Graphic Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2025"
+      },
+      "title": "Chrysanthemum Under the Waves"
+    },
+    {
+      "authors": [
+        "Robin Ha"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2024",
+      "category": "Graphic Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2025"
+      },
+      "title": "The Fox Maidens"
+    },
+    {
+      "authors": [
+        "Beth Hetland"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2024",
+      "category": "Graphic Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2025"
+      },
+      "title": "Tender"
+    },
+    {
+      "authors": [
+        "Mike Mignola"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2025",
+      "category": "Graphic Novel",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2026"
+      },
+      "title": "Bowling with Corpses and Other Tales from Lands Unknown"
+    },
+    {
+      "authors": [
+        "Daniel Kraus",
+        "Dani"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2025",
+      "category": "Graphic Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2026"
+      },
+      "title": "Athanasia"
+    },
+    {
+      "authors": [
+        "Sandy King"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2025",
+      "category": "Graphic Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2026"
+      },
+      "title": "John Carpenter's Tales for a HalloweeNight Vol. 11"
+    },
+    {
+      "authors": [
+        "Cullen Bunn",
+        "Danny Luckert"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2025",
+      "category": "Graphic Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2026"
+      },
+      "title": "Jumpscare"
+    },
+    {
+      "authors": [
+        "Steve Foxe",
+        "James IV Tynion",
+        "Piotr Kowalski"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2025",
+      "category": "Graphic Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2026"
+      },
+      "title": "Let This One Be a Devil"
+    }
+  ],
+  "fetched_at": "2026-07-27T22:09:06Z",
+  "list_id": "bram_stoker_graphic_novel",
+  "list_name": "Bram Stoker - Graphic Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "bram_stoker_graphic_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Bram Stoker - Graphic Novel",
+    "source_id": "bram_stoker_graphic_novel",
+    "url": "https://www.sfadb.com/Bram_Stoker_Awards"
+  }
+}

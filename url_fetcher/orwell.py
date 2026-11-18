@@ -21,12 +21,13 @@ ORWELL_URL = 'https://www.orwellfoundation.com/the-orwell-prizes/previous-winner
 ORWELL_OFFICIAL_EXTRA_URLS = (
   'https://www.orwellfoundation.com/the-orwell-foundation/news-events/news-events/news/finalists-announced-for-the-orwell-prizes-in-political-writing-and-political-fiction/',
   'https://www.orwellfoundation.com/the-orwell-foundation/news-events/news-events/news/the-orwell-prizes-2025-finalists-announced/',
-  'https://www.orwellfoundation.com/the-orwell-foundation/news-events/news-events/news/the-winners-of-the-orwell-prizes-2025/',
+  'https://www.orwellfoundation.com/the-orwell-foundation/news-events/news-events/news/announcing-the-winners-of-the-orwell-prizes-2025/',
 )
 ORWELL_WIKIPEDIA_URL = 'https://en.wikipedia.org/wiki/Orwell_Prize'
 
 
 class UrlFetcherOrwellPrizePoliticalWriting(UrlFetcherGeneric):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   source_id = 'orwell_prize_political_writing'
   NAME = 'Orwell Prize for Political Writing'
@@ -65,14 +66,14 @@ class UrlFetcherOrwellPrizePoliticalWriting(UrlFetcherGeneric):
       SourceAttempt(
         'Official Orwell',
         self.URL,
-        lambda html, url, fetch_url=None, progress=None, **_kwargs:
+        lambda html, url, fetch_url=None, progress=None, **kwargs:
           self.parse_official_pages(
             html,
             url,
             fetch_url,
             OrwellOfficialParser(),
-            progress=progress),
-        source_rank=0),
+            progress=progress, **kwargs),
+        source_rank=0, supports_incremental=True),
       SourceAttempt(
         'Wikipedia',
         ORWELL_WIKIPEDIA_URL,
@@ -87,7 +88,8 @@ class UrlFetcherOrwellPrizePoliticalWriting(UrlFetcherGeneric):
   def fetch_and_parse(
       self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
       before_fetch=None, after_fetch=None, before_parse=None,
-      force_fallback_level=0, disable_fallbacks=False, source_choice=None):
+      force_fallback_level=0, disable_fallbacks=False, source_choice=None,
+      cached_parsed=None, incremental_update=False):
     parsed = SourceFallbackRunner(
       self.source_attempts(),
       error_class=UrlFetcherError).run(
@@ -99,20 +101,18 @@ class UrlFetcherOrwellPrizePoliticalWriting(UrlFetcherGeneric):
         before_parse=before_parse,
         force_fallback_level=force_fallback_level,
         disable_fallbacks=disable_fallbacks,
-        source_choice=source_choice)
+        source_choice=source_choice,cached_parsed=cached_parsed,
+        incremental_update=incremental_update)
     parsed.setdefault('match_series', self.options.get('match_series', True))
     return parsed
 
-  def parse_official_pages(self, html, base_url, fetch_url, parser, progress=None):
-    pages = [(base_url, html)]
-    urls = (base_url,) + tuple(ORWELL_OFFICIAL_EXTRA_URLS)
+  def parse_official_pages(self, html, base_url, fetch_url, parser, progress=None,
+      cached_parsed=None,incremental_update=False,log=None):
     if fetch_url is not None:
-      for index, url in enumerate(ORWELL_OFFICIAL_EXTRA_URLS, start=2):
-        pages.append((url, fetch_url(url)))
-        if progress is not None:
-          progress(index, len(urls), 'Fetched Orwell source %d of %d' % (
-            index, len(urls)))
-    parsed = parser.parse(pages, base_url, self.NAME, self.CATEGORY)
+      return parser.parse_sources(html,base_url,self.NAME,self.CATEGORY,
+        ORWELL_OFFICIAL_EXTRA_URLS,fetch_url,cached_parsed=cached_parsed,
+        incremental_update=incremental_update,progress=progress)
+    parsed = parser.parse(html, base_url, self.NAME, self.CATEGORY)
     if not parsed.get('entries'):
       raise UrlFetcherError('Official Orwell produced no entries')
     parsed.setdefault('source', parsed_source(self.NAME, base_url, self.source_id))

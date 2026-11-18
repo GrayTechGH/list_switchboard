@@ -7,6 +7,7 @@ from .generic import (
   UrlFetcherError,
   UrlFetcherGeneric,
 )
+from .royal_society_transport import RoyalSocietyFetchPolicy
 
 try:
   from calibre_plugins.list_switchboard.parser.source_fallback import (
@@ -26,6 +27,7 @@ ROYAL_SOCIETY_SCIENCE_BOOK_PRIZE_WIKIPEDIA_URL = (
 
 class UrlFetcherRoyalSocietyScienceBookPrize(UrlFetcherGeneric):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'royal_society_science_book_prize'
   NAME = 'Royal Society Trivedi Science Book Prize'
   URL = ROYAL_SOCIETY_SCIENCE_BOOK_PRIZE_URL
@@ -61,13 +63,13 @@ class UrlFetcherRoyalSocietyScienceBookPrize(UrlFetcherGeneric):
       SourceAttempt(
         'Official Royal Society',
         self.URL,
-        lambda html, url, fetch_url=None, **_kwargs: self.parser().parse(
+        lambda html, url, fetch_url=None, **kwargs: self.parser().parse(
           html,
           url,
           self.NAME,
           self.CATEGORY,
-          fetch_url=fetch_url),
-        source_rank=0),
+          fetch_url=fetch_url,**kwargs),
+        source_rank=0,supports_incremental=True),
       SourceAttempt(
         'Wikipedia',
         ROYAL_SOCIETY_SCIENCE_BOOK_PRIZE_WIKIPEDIA_URL,
@@ -85,11 +87,14 @@ class UrlFetcherRoyalSocietyScienceBookPrize(UrlFetcherGeneric):
   def fetch_and_parse(
       self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
       before_fetch=None, after_fetch=None, before_parse=None,
-      force_fallback_level=0, disable_fallbacks=False, source_choice=None):
+      force_fallback_level=0, disable_fallbacks=False, source_choice=None,
+      cached_parsed=None,incremental_update=False):
+    legacy=super().fetch_url
+    policy=RoyalSocietyFetchPolicy(fetch_url,lambda url:legacy(fetch_url,url),self.parser(),log)
     parsed = SourceFallbackRunner(
       self.source_attempts(),
       error_class=UrlFetcherError).run(
-        fetch_url,
+        policy.fetch,
         log=log,
         progress=progress,
         before_fetch=before_fetch,
@@ -97,7 +102,8 @@ class UrlFetcherRoyalSocietyScienceBookPrize(UrlFetcherGeneric):
         before_parse=before_parse,
         force_fallback_level=force_fallback_level,
         disable_fallbacks=disable_fallbacks,
-        source_choice=source_choice)
+        source_choice=source_choice,cached_parsed=cached_parsed,
+        incremental_update=incremental_update)
     parsed.setdefault('match_series', self.options.get('match_series', True))
     return parsed
 

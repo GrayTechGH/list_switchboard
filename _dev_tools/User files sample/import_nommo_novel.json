@@ -574,12 +574,13 @@
       "title": "The Incredible Dreams of Garba Dakaskus"
     }
   ],
-  "fetched_at": "2026-07-09T00:43:43Z",
+  "fetched_at": "2026-07-23T18:58:32Z",
   "list_id": "nommo_novel",
   "list_name": "Nommo - Novel",
   "match_series": false,
   "notes": [],
   "parser": "nommo_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Nommo - Novel",

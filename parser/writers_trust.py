@@ -92,6 +92,10 @@ class WritersTrustOfficialParser(AwardParserBase):
 
   def page_rows(self, html, base_url):
     soup = BeautifulSoup(html, 'html.parser')
+    if soup.select_one('[data-winner]') is not None:
+      return self.modern_history_rows(soup,base_url)
+    if soup.select_one('.book-title') is not None and self.has_award_heading(soup):
+      return self.modern_current_rows(soup,base_url)
     for removable in soup.find_all(['script', 'style', 'sup']):
       removable.decompose()
     nodes = [
@@ -142,6 +146,69 @@ class WritersTrustOfficialParser(AwardParserBase):
         'source_url': source_url or base_url,
         'category': self.category,
       })
+    return rows
+
+  def has_award_heading(self,soup):
+    key=normalize_heading(self.award_name)
+    return any(normalize_heading(h.get_text(' ',strip=True))==key for h in soup.find_all(['h1','h2','h3']))
+
+  def modern_history_rows(self,soup,base_url):
+    rows=[]
+    for card in soup.select('[data-winner]'):
+      label=card.get('data-winner')
+      if label not in ('winner','finalist'):continue
+      group=None;year=None
+      for parent in card.parents:
+        if not getattr(parent,'find',None):continue
+        heading=parent.find('h4',recursive=False)
+        if heading is not None and re.fullmatch(r'(?:19|20)\d{2}',self.clean_text(heading)):
+          group=parent;year=self.clean_text(heading);break
+      if group is None:continue
+      award=group.parent.find('h3',recursive=False)
+      if award is None or normalize_heading(self.clean_text(award))!=normalize_heading(self.award_name):continue
+      title=card.select_one('.book-title')
+      authors=list(dict.fromkeys(self.clean_text(h) for h in card.find_all('h4') if self.clean_text(h)))
+      if title is None or not authors:continue
+      rows.append({'award_year':year,'title':self.clean_title(self.clean_text(title)),
+        'author':self.clean_author(' & '.join(authors)),
+        'result':RESULT_WINNER if label=='winner' else RESULT_SHORTLISTED,
+        'source_url':base_url,'category':self.category})
+    return rows
+
+  def modern_current_rows(self,soup,base_url):
+    rows=[]
+    for title in soup.select('article .book-title'):
+      heading=title.find_previous('h2')
+      phase=self.boundary_from_text(self.clean_text(heading)) if heading is not None else None
+      if phase is None or phase[0] is None or phase[1] is None:continue
+      author=title.find_previous_sibling('h3') or title.find_next_sibling('h4')
+      if author is None:continue
+      rows.append({'award_year':str(phase[0]),'title':self.clean_title(self.clean_text(title)),
+        'author':self.clean_author(self.clean_text(author)),'result':phase[1],
+        'source_url':base_url,'category':self.category})
+    return rows
+
+  def validate_fetch_payload(self,html,url):
+    if self.is_security_checkpoint(html):raise ValueError('Writers Trust official page returned a security checkpoint.')
+    soup=BeautifulSoup(html or '','html.parser')
+    rows=self.page_rows(html,url)
+    if not rows:raise ValueError('Official Writers Trust page did not expose award records.')
+    if soup.select_one('[data-winner]') is not None:
+      if self.current_url and url.rstrip('/')==self.current_url.rstrip('/'):
+        raise ValueError('Writers Trust returned archive markup for the current-page request.')
+      if not self.has_award_heading(soup):raise ValueError('Official Writers Trust page did not identify this prize.')
+      expected=0
+      for card in soup.select('[data-winner]'):
+        if card.get('data-winner') not in ('winner','finalist'):continue
+        group=next((p for p in card.parents if getattr(p,'find',None) and p.find('h4',recursive=False) is not None and
+          re.fullmatch(r'(?:19|20)\d{2}',self.clean_text(p.find('h4',recursive=False)))),None)
+        award=group.parent.find('h3',recursive=False) if group else None
+        if award is not None and normalize_heading(self.clean_text(award))==normalize_heading(self.award_name):expected+=1
+      if len(rows)!=expected:raise ValueError('Official Writers Trust archive has incomplete book cards.')
+    elif soup.select_one('.book-title') is not None:
+      if self.current_url and url.rstrip('/')!=self.current_url.rstrip('/'):
+        raise ValueError('Writers Trust returned current-page markup for an archive request.')
+      if len(rows)!=len(soup.select('article .book-title')):raise ValueError('Official Writers Trust current roster has incomplete book cards.')
     return rows
 
   def boundary_from_text(self, text):

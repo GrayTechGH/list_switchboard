@@ -4,6 +4,10 @@
 """URL fetcher for the BookBrowse Online Book Club."""
 
 from urllib.parse import urlparse
+try:
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
+except ImportError:
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 try:
   from calibre_plugins.list_switchboard.http_policy import random_user_agent
@@ -29,6 +33,7 @@ class UrlFetcherBookBrowseOnlineBookClub(UrlFetcherGeneric):
   NAME = 'BookBrowse Online Book Club'
   URL = 'https://www.bookbrowse.com/onlinebookclub/'
   order = 57
+  SUPPORTS_INCREMENTAL_UPDATE = True
   FILTER_CATEGORIES = (
     CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,
     CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS,
@@ -51,6 +56,8 @@ class UrlFetcherBookBrowseOnlineBookClub(UrlFetcherGeneric):
   def fetch_url(self, fetch_url, url):
     try:
       return super().fetch_url(fetch_url, url)
+    except (ImportCancelledError,CamoufoxRequiredError):
+      raise
     except Exception:
       host = (urlparse(url).hostname or '').casefold()
       if calibre_https_fetch is None or not (
@@ -87,6 +94,8 @@ class UrlFetcherBookBrowseOnlineBookClub(UrlFetcherGeneric):
         return payload.decode('utf-8', 'replace')
       return str(payload or '')
 
-  def parse(self, html, fetch_url=None, progress=None, **_kwargs):
+  def parse(self, html, fetch_url=None, progress=None, cached_parsed=None,
+            incremental_update=False, **_kwargs):
     return self.parser().parse(
-      html, self.URL, self.NAME, fetch_url=fetch_url, progress=progress)
+      html, self.URL, self.NAME, fetch_url=fetch_url, progress=progress,
+      cached_parsed=cached_parsed,incremental_update=incremental_update)

@@ -1,8 +1,8 @@
 {
   "append_state": {
-    "entry_count": 166,
-    "last_entry_key": "broiler|eli cranor",
-    "last_position": "2024.04",
+    "entry_count": 171,
+    "last_entry_key": "party of liars|kelsey cox",
+    "last_position": "2025.04",
     "source_revision": null
   },
   "entries": [
@@ -2661,14 +2661,95 @@
         "url": "https://sohopress.com/books/broiler/"
       },
       "title": "Broiler"
+    },
+    {
+      "authors": [
+        "Ron Currie"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2025",
+      "category": "Hammett Prize",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.penguinrandomhouse.com/books/761720/the-savage-noble-death-of-babs-dionne-by-ron-currie/"
+      },
+      "title": "The Savage, Noble Death of Babs Dionne"
+    },
+    {
+      "authors": [
+        "Megan Abbott"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2025",
+      "category": "Hammett Prize",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.penguinrandomhouse.com/books/611567/el-dorado-drive-by-megan-abbott/"
+      },
+      "title": "El Dorado Drive"
+    },
+    {
+      "authors": [
+        "Domenic Stansberry"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2025",
+      "category": "Hammett Prize",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.domenicstansberry.com/new-page-3"
+      },
+      "title": "The Lizard"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2025",
+      "category": "Hammett Prize",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.penguinrandomhouse.com/books/589944/the-big-empty-by-robert-crais/"
+      },
+      "title": "The Big Empty"
+    },
+    {
+      "authors": [
+        "Kelsey Cox"
+      ],
+      "award": "Hammett Prize",
+      "award_year": "2025",
+      "category": "Hammett Prize",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://us.macmillan.com/books/9781250378811/partyofliars/"
+      },
+      "title": "Party of Liars"
     }
   ],
-  "fetched_at": "2026-07-18T02:42:00Z",
+  "fetched_at": "2026-11-16T05:08:55Z",
   "list_id": "hammett_prize",
   "list_name": "Hammett Prize",
   "match_series": false,
   "notes": [],
   "parser": "hammett_prize",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Hammett Prize",

@@ -1,0 +1,165 @@
+{
+  "list_id": "locus_annual_fantasy_novel",
+  "matches": [
+    {
+      "entry_key": "enchanter s end game|david eddings",
+      "imported_author": [
+        "David Eddings"
+      ],
+      "imported_title": "Enchanter's End Game",
+      "matched_at": "2026-07-23T06:13:20Z",
+      "matched_authors": [
+        "David Eddings"
+      ],
+      "matched_book_id": 39130,
+      "matched_book_ids": [
+        39130
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "David Eddings"
+          ],
+          "matched_book_id": 39130,
+          "matched_title": "Enchanters' End Game"
+        }
+      ],
+      "matched_title": "Enchanters' End Game"
+    },
+    {
+      "entry_key": "dragonsbane|barbara hambly|position:1986.02",
+      "imported_author": [
+        "Barbara Hambly"
+      ],
+      "imported_title": "Dragonsbane",
+      "matched_at": "2026-07-23T06:13:20Z",
+      "matched_authors": [
+        "Barbara Hambly"
+      ],
+      "matched_book_id": 16353,
+      "matched_book_ids": [
+        16353
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Barbara Hambly"
+          ],
+          "matched_book_id": 16353,
+          "matched_title": "Dragonsbane"
+        }
+      ],
+      "matched_title": "Dragonsbane"
+    },
+    {
+      "entry_key": "the falling woman|pat murphy|position:1987.15",
+      "imported_author": [
+        "Pat Murphy"
+      ],
+      "imported_title": "The Falling Woman",
+      "matched_at": "2026-07-23T06:13:20Z",
+      "matched_authors": [
+        "Pat Murphy"
+      ],
+      "matched_book_id": 38686,
+      "matched_book_ids": [
+        38686
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Pat Murphy"
+          ],
+          "matched_book_id": 38686,
+          "matched_title": "The Falling Woman"
+        }
+      ],
+      "matched_title": "The Falling Woman"
+    },
+    {
+      "entry_key": "the wizard knight|gene wolfe tor 2 volumes",
+      "imported_author": [
+        "Gene Wolfe (Tor (2 volumes))"
+      ],
+      "imported_title": "The Wizard Knight",
+      "matched_at": "2026-07-23T06:24:57Z",
+      "matched_authors": [
+        "Gene Wolfe"
+      ],
+      "matched_book_id": 38560,
+      "matched_book_ids": [
+        38560,
+        38559
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Gene Wolfe"
+          ],
+          "matched_book_id": 38560,
+          "matched_title": "The Wizard"
+        },
+        {
+          "matched_authors": [
+            "Gene Wolfe"
+          ],
+          "matched_book_id": 38559,
+          "matched_title": "The Wizard Knight"
+        }
+      ],
+      "matched_title": "The Wizard Knight"
+    },
+    {
+      "entry_key": "anno dracula 1976 1991 johnny alucard|kim newman",
+      "imported_author": [
+        "Kim Newman"
+      ],
+      "imported_title": "Anno Dracula 1976-1991: Johnny Alucard",
+      "matched_at": "2026-07-23T06:24:57Z",
+      "matched_authors": [
+        "Kim Newman"
+      ],
+      "matched_book_id": 11536,
+      "matched_book_ids": [
+        11536
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Kim Newman"
+          ],
+          "matched_book_id": 11536,
+          "matched_title": "Anno Dracula"
+        }
+      ],
+      "matched_title": "Anno Dracula"
+    },
+    {
+      "entry_key": "babel|r f kuang",
+      "imported_author": [
+        "R. F. Kuang"
+      ],
+      "imported_title": "Babel",
+      "matched_at": "2026-07-23T06:24:57Z",
+      "matched_authors": [
+        "R. F. Kuang"
+      ],
+      "matched_book_id": 30618,
+      "matched_book_ids": [
+        30618
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "R. F. Kuang"
+          ],
+          "matched_book_id": 30618,
+          "matched_title": "Babel. An Arcane History"
+        }
+      ],
+      "matched_title": "Babel. An Arcane History"
+    }
+  ],
+  "saved_at": "2026-07-23T06:24:57Z",
+  "schema_version": 2
+}

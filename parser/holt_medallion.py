@@ -14,7 +14,8 @@ Maintenance notes:
 
 import json
 import re
-from urllib.parse import urljoin
+import datetime
+from urllib.parse import urljoin,urlsplit
 
 from bs4 import BeautifulSoup
 
@@ -24,12 +25,18 @@ try:
     normalize_heading, normalize_line, strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key # pyright: ignore[reportMissingImports]
+  from calibre_plugins.list_switchboard.parser.base import author_list
+  from calibre_plugins.list_switchboard.parser.incremental import ParsedUnitCache,project_source_rows,restore_source_rows
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError,CamoufoxRequiredError
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
     normalize_heading, normalize_line, strip_publication_notes,
   )
   from .generic import position_sort_key
+  from .base import author_list
+  from .incremental import ParsedUnitCache,project_source_rows,restore_source_rows
+  from errors import ImportCancelledError,CamoufoxRequiredError
 
 
 HOLT_AWARD_NAME = 'HOLT Medallion'
@@ -46,7 +53,9 @@ class HOLTMedallionParser(AwardParserBase):
 
   def parse(
       self, html, base_url=HOLT_URL, name=HOLT_AWARD_NAME, fetch_url=None,
-      pages=None):
+      pages=None,cached_parsed=None,incremental_update=False):
+    if fetch_url is not None and pages is None:
+      return self.parse_live_sources(html,base_url,name,fetch_url,cached_parsed,incremental_update)
     notes = []
     if pages is None:
       page_refs = self.discover_page_refs(html, base_url, fetch_url, notes)
@@ -67,12 +76,103 @@ class HOLTMedallionParser(AwardParserBase):
       sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
       notes=notes)
 
+  def parse_live_sources(self,html,base_url,name,fetch_url,cached_parsed,incremental_update):
+    """Retain closed annual ballots under their fresh discovery references.
+
+    A year owns its finalist and winner pages together. Original source rows
+    remain available after winner promotion and cross-page deduplication.
+    Undated history and winnerless/current years always refresh.
+    """
+    cache=ParsedUnitCache('holt-closed-annual-ballots-v1',json.dumps([
+      base_url,name,type(self).__name__,HOLT_SEARCH_URL]),cached_parsed,incremental_update)
+    notes=[]
+    refs=list(self.refs_from_landing_page(html,base_url))
+    discovery_complete=True
+    try:
+      search=fetch_url(HOLT_SEARCH_URL)
+      data=json.loads(search)
+      if not isinstance(data,list) or not self.refs_from_search_json(search):
+        raise ValueError('Official HOLT search did not expose result references.')
+      refs.extend(self.refs_from_search_json(search))
+    except (ImportCancelledError,CamoufoxRequiredError):
+      raise
+    except Exception as err:
+      discovery_complete=False
+      notes.append(f'Official VRW HOLT search endpoint could not be fetched: {err}')
+      for unit in cache.old_units.values():
+        refs.extend((unit.get('metadata') or {}).get('refs') or [])
+    groups={}
+    for ref in self.dedupe_refs(refs):
+      urls=[ref.get('url') or '',ref.get('rest_url') or '']
+      if any(url and (urlsplit(url).scheme not in ('https','http') or
+          urlsplit(url).hostname not in ('virginiaromancewriters.com','www.virginiaromancewriters.com')) for url in urls):
+        continue
+      year=self.year_from_text(ref.get('title') or ref.get('url') or '')
+      key=str(year) if year is not None else 'page:'+(ref.get('url') or ref.get('rest_url'))
+      groups.setdefault(key,[]).append(ref)
+    if not groups:
+      raise ValueError('Official HOLT discovery did not expose result pages.')
+    latest=max((int(key) for key in groups if key.isdigit()),default=0)
+    units={}
+    rows=[]
+    for key,group in groups.items():
+      old=cache.old_units.get(key) or {}
+      metadata=old.get('metadata') or {}
+      previous=[]
+      try:previous=restore_source_rows(cache.previous(key),metadata)
+      except (ValueError,TypeError):pass
+      if (discovery_complete and old.get('complete') is True and old.get('revision')==group and
+          key.isdigit() and int(key)<min(latest,datetime.datetime.now().year) and
+          metadata.get('settled') is True and previous):
+        source_rows,complete,unit_notes=previous,True,list(metadata.get('notes') or [])
+      else:
+        source_rows,complete,unit_notes=[],True,[]
+        for ref in group:
+          try:
+            content,url,title=self.rest_page_content(fetch_url(ref.get('rest_url') or ref['url']),ref['url'],ref['title'])
+            found=self.parse_content_page(content,url,title)
+            if key.isdigit() and any(r['award_year']!=key for r in found):
+              raise ValueError('Official HOLT result page returned another award year.')
+            if not found:
+              if self.video_only_awards_page(content,title,url):
+                unit_notes.append(f'Official VRW HOLT {self.year_from_text(title or url)} awards page did not expose text winner rows; it appears to be video-only.')
+              else:
+                raise ValueError('Official HOLT result page had no usable text snapshot.')
+            source_rows.extend(found)
+          except (ImportCancelledError,CamoufoxRequiredError):
+            raise
+          except Exception as err:
+            complete=False
+            unit_notes.append(f'Official VRW HOLT page could not be fetched: {ref.get("url")}: {err}')
+        if not complete and previous:
+          source_rows=previous
+      rows.extend(source_rows)
+      notes.extend(unit_notes)
+      winners={(r['award_year'],normalize_heading(r['category'])) for r in source_rows if r['result']==RESULT_WINNER}
+      settled=bool(source_rows) and all((r['award_year'],normalize_heading(r['category'])) in winners for r in source_rows)
+      units[key]=(source_rows,group,complete and discovery_complete,unit_notes,settled)
+    rows=self.dedupe_rows(self.with_source_order(rows))
+    entries=sorted(self.entries_from_rows(rows),key=lambda item:position_sort_key(item.get('position','')))
+    for key,(source_rows,group,complete,unit_notes,settled) in units.items():
+      projected,metadata=project_source_rows(source_rows,entries,
+        lambda row:(str(row['award_year']),normalize_heading(row['category']),normalize_heading(row['title']),
+          tuple(normalize_heading(a) for a in author_list(row.get('authors',row.get('author'))))))
+      metadata.update(refs=group,notes=unit_notes,settled=settled)
+      cache.put(key,projected,revision=group,complete=complete,metadata=metadata)
+    self.add_coverage_notes(rows,notes)
+    parsed=self.parsed_result(name,base_url,entries,notes=notes)
+    parsed['incremental_state']=cache.state(entries)
+    parsed['incremental_state']['discovery']={'refresh_units':[str(latest)]}
+    return parsed
+
   def discover_page_refs(self, html, base_url, fetch_url, notes):
     refs = []
     refs.extend(self.refs_from_landing_page(html, base_url))
     if fetch_url is not None:
       try:
         refs.extend(self.refs_from_search_json(fetch_url(HOLT_SEARCH_URL)))
+      except (ImportCancelledError,CamoufoxRequiredError):
+        raise
       except Exception as err:
         notes.append(f'Official VRW HOLT search endpoint could not be fetched: {err}')
     return self.dedupe_refs(refs)
@@ -154,6 +254,8 @@ class HOLTMedallionParser(AwardParserBase):
       try:
         content_html, source_url, title = self.rest_page_content(
           fetch_url(rest_url), ref.get('url') or rest_url, ref.get('title') or '')
+      except (ImportCancelledError,CamoufoxRequiredError):
+        raise
       except Exception as err:
         notes.append(f'Official VRW HOLT page could not be fetched: {ref.get("url")}: {err}')
         continue

@@ -1,0 +1,562 @@
+{
+  "append_state": {
+    "entry_count": 49,
+    "last_entry_key": "california bear|duane swierczynski",
+    "last_position": "2025.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2017",
+      "category": "Best Mystery Novel",
+      "position": "2017",
+      "result": "winner",
+      "title": "A Great Reckoning"
+    },
+    {
+      "authors": [
+        "Matt Coyle"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2017",
+      "category": "Best Mystery Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "Dark Fissures"
+    },
+    {
+      "authors": [
+        "Gigi Pandian"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2017",
+      "category": "Best Mystery Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "Michelangelo\u2019s Ghost"
+    },
+    {
+      "authors": [
+        "Terry Shames"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2017",
+      "category": "Best Mystery Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "title": "The Necessary Murder of Nonie Blake"
+    },
+    {
+      "authors": [
+        "James W. Ziskin"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2017",
+      "category": "Best Mystery Novel",
+      "position": "2017.04",
+      "result": "nominee",
+      "title": "Heart of Stone"
+    },
+    {
+      "authors": [
+        "William Kent Krueger"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2018",
+      "category": "Best Mystery Novel",
+      "position": "2018",
+      "result": "winner",
+      "title": "Sulfur Springs"
+    },
+    {
+      "authors": [
+        "Matt Coyle"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2018",
+      "category": "Best Mystery Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "Blood Truth"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2018",
+      "category": "Best Mystery Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "title": "Glass Houses"
+    },
+    {
+      "authors": [
+        "Terry Shames"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2018",
+      "category": "Best Mystery Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "title": "An Unsettling Crime for Samuel Craddock"
+    },
+    {
+      "authors": [
+        "James W. Ziskin"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2018",
+      "category": "Best Mystery Novel",
+      "position": "2018.04",
+      "result": "nominee",
+      "title": "Cast the First Stone"
+    },
+    {
+      "authors": [
+        "Lou Berney"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2019",
+      "category": "Best Mystery Novel",
+      "position": "2019",
+      "result": "winner",
+      "title": "November Road"
+    },
+    {
+      "authors": [
+        "Matt Coyle"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2019",
+      "category": "Best Mystery Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "title": "Wrong Light"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2019",
+      "category": "Best Mystery Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "title": "Kingdom of the Blind"
+    },
+    {
+      "authors": [
+        "Lori Rader-Day"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2019",
+      "category": "Best Mystery Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "title": "Under a Dark Sky"
+    },
+    {
+      "authors": [
+        "Terry Shames"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2019",
+      "category": "Best Mystery Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "title": "A Reckoning in the Back Country"
+    },
+    {
+      "authors": [
+        "James W. Ziskin"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2019",
+      "category": "Best Mystery Novel",
+      "position": "2019.05",
+      "result": "nominee",
+      "title": "A Stone\u2019s Throw"
+    },
+    {
+      "authors": [
+        "Matt Coyle"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2020",
+      "category": "Best Mystery Novel",
+      "position": "2020",
+      "result": "winner",
+      "title": "Lost Tomorrows"
+    },
+    {
+      "authors": [
+        "Steph Cha"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2020",
+      "category": "Best Mystery Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "Your House Will Pay"
+    },
+    {
+      "authors": [
+        "Tracy Clark"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2020",
+      "category": "Best Mystery Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "Borrowed Time"
+    },
+    {
+      "authors": [
+        "Rachel Howzell Hall"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2020",
+      "category": "Best Mystery Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "They All Fall Down"
+    },
+    {
+      "authors": [
+        "Attica Locke"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2020",
+      "category": "Best Mystery Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "title": "Heaven, My Home"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2021",
+      "category": "Best Mystery Novel",
+      "position": "2021",
+      "result": "winner",
+      "title": "All the Devils Are Here"
+    },
+    {
+      "authors": [
+        "Tracy Clark"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2021",
+      "category": "Best Mystery Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "What You Don\u2019t See"
+    },
+    {
+      "authors": [
+        "S.A. Cosby"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2021",
+      "category": "Best Mystery Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "Blacktop Wasteland"
+    },
+    {
+      "authors": [
+        "Matt Coyle"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2021",
+      "category": "Best Mystery Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "Blind Vigil"
+    },
+    {
+      "authors": [
+        "Rachel Howzell Hall"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2021",
+      "category": "Best Mystery Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "And Now She\u2019s Gone"
+    },
+    {
+      "authors": [
+        "William Kent Krueger"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2022",
+      "category": "Best Mystery Novel",
+      "position": "2022",
+      "result": "winner",
+      "title": "Lightning Strike"
+    },
+    {
+      "authors": [
+        "Tracy Clark"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2022",
+      "category": "Best Mystery Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "Runner"
+    },
+    {
+      "authors": [
+        "S.A. Cosby"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2022",
+      "category": "Best Mystery Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "Razorblade Tears"
+    },
+    {
+      "authors": [
+        "Matt Coyle"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2022",
+      "category": "Best Mystery Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "Last Redemption"
+    },
+    {
+      "authors": [
+        "P.J. Vernon"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2022",
+      "category": "Best Mystery Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "Bath Haus"
+    },
+    {
+      "authors": [
+        "Kellye Garrett"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2023",
+      "category": "Best Mystery Novel",
+      "position": "2023",
+      "result": "winner",
+      "title": "Like a Sister"
+    },
+    {
+      "authors": [
+        "Laurie R. King"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2023",
+      "category": "Best Mystery Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "title": "Back to the Garden"
+    },
+    {
+      "authors": [
+        "James L\u2019Etoile"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2023",
+      "category": "Best Mystery Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "title": "Dead Drop"
+    },
+    {
+      "authors": [
+        "Gigi Pandian"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2023",
+      "category": "Best Mystery Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "title": "Under Lock & Skeleton Key"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2023",
+      "category": "Best Mystery Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "title": "A World of Curiosities"
+    },
+    {
+      "authors": [
+        "Alex Segura"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2023",
+      "category": "Best Mystery Novel",
+      "position": "2023.05",
+      "result": "nominee",
+      "title": "Secret Identity"
+    },
+    {
+      "authors": [
+        "Tracy Clark"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2024",
+      "category": "Best Mystery Novel",
+      "position": "2024",
+      "result": "winner",
+      "title": "Hide"
+    },
+    {
+      "authors": [
+        "S.A. Cosby"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2024",
+      "category": "Best Mystery Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "All the Sinners Bleed"
+    },
+    {
+      "authors": [
+        "Matt Coyle"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2024",
+      "category": "Best Mystery Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "Odyssey\u2019s End"
+    },
+    {
+      "authors": [
+        "Jordan Harper"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2024",
+      "category": "Best Mystery Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "Everybody Knows"
+    },
+    {
+      "authors": [
+        "James L\u2019Etoile"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2024",
+      "category": "Best Mystery Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "title": "Face of Greed"
+    },
+    {
+      "authors": [
+        "Gigi Pandian"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2024",
+      "category": "Best Mystery Novel",
+      "position": "2024.05",
+      "result": "nominee",
+      "title": "The Raven Thief"
+    },
+    {
+      "authors": [
+        "James L\u2019Etoile"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2025",
+      "category": "Best Mystery Novel",
+      "position": "2025",
+      "result": "winner",
+      "title": "Served Cold"
+    },
+    {
+      "authors": [
+        "Claire Booth"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2025",
+      "category": "Best Mystery Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "Home Fires"
+    },
+    {
+      "authors": [
+        "Margot Douaihy"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2025",
+      "category": "Best Mystery Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "Blessed Water"
+    },
+    {
+      "authors": [
+        "Rob Hart"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2025",
+      "category": "Best Mystery Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "Assassins Anonymous"
+    },
+    {
+      "authors": [
+        "Leslie Karst"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2025",
+      "category": "Best Mystery Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "Molten Death"
+    },
+    {
+      "authors": [
+        "Duane Swierczynski"
+      ],
+      "award": "Lefty Award",
+      "award_year": "2025",
+      "category": "Best Mystery Novel",
+      "position": "2025.05",
+      "result": "nominee",
+      "title": "California Bear"
+    }
+  ],
+  "fetched_at": "2026-07-18T22:29:57Z",
+  "list_id": "lefty_award_mystery_novel",
+  "list_name": "Lefty Award - Mystery Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "lefty_award_mystery_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Lefty Award - Mystery Novel",
+    "source_id": "lefty_award_mystery_novel",
+    "url": "https://www.stopyourekillingme.com/Awards/Lefty_Awards.html"
+  }
+}

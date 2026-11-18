@@ -1,8 +1,8 @@
 {
   "append_state": {
-    "entry_count": 154,
-    "last_entry_key": "the dentist|tim sullivan",
-    "last_position": "2026.06",
+    "entry_count": 159,
+    "last_entry_key": "wolf six|alex shaw",
+    "last_position": "2026.05",
     "source_revision": null
   },
   "entries": [
@@ -82,6 +82,61 @@
       "position": "1998.03",
       "result": "nominee",
       "title": "Dead Body Language"
+    },
+    {
+      "authors": [
+        "Robin Burcell"
+      ],
+      "award": "Barry Award",
+      "award_year": "2000",
+      "category": "Best Paperback Original Mystery Novel",
+      "position": "2000",
+      "result": "winner",
+      "title": "Every Move She Makes"
+    },
+    {
+      "authors": [
+        "Caroline Roe"
+      ],
+      "award": "Barry Award",
+      "award_year": "2000",
+      "category": "Best Paperback Original Mystery Novel",
+      "position": "2000",
+      "result": "winner",
+      "title": "Antidote for Avarice"
+    },
+    {
+      "authors": [
+        "Sinclair Browning"
+      ],
+      "award": "Barry Award",
+      "award_year": "2000",
+      "category": "Best Paperback Original Mystery Novel",
+      "position": "2000.01",
+      "result": "nominee",
+      "title": "The Last Song Dogs"
+    },
+    {
+      "authors": [
+        "Carolyn Haines"
+      ],
+      "award": "Barry Award",
+      "award_year": "2000",
+      "category": "Best Paperback Original Mystery Novel",
+      "position": "2000.02",
+      "result": "nominee",
+      "title": "Them Bones"
+    },
+    {
+      "authors": [
+        "Jerry Kennealy"
+      ],
+      "award": "Barry Award",
+      "award_year": "2000",
+      "category": "Best Paperback Original Mystery Novel",
+      "position": "2000.03",
+      "result": "nominee",
+      "title": "The Hunted"
     },
     {
       "authors": [
@@ -1637,6 +1692,17 @@
     },
     {
       "authors": [
+        "Tim Sullivan"
+      ],
+      "award": "Barry Award",
+      "award_year": "2026",
+      "category": "Best Paperback Original Mystery Novel",
+      "position": "2026",
+      "result": "winner",
+      "title": "The Dentist"
+    },
+    {
+      "authors": [
         "Bruce Robert Coffin"
       ],
       "award": "Barry Award",
@@ -1689,25 +1755,15 @@
       "position": "2026.05",
       "result": "nominee",
       "title": "Wolf Six"
-    },
-    {
-      "authors": [
-        "Tim Sullivan"
-      ],
-      "award": "Barry Award",
-      "award_year": "2026",
-      "category": "Best Paperback Original Mystery Novel",
-      "position": "2026.06",
-      "result": "nominee",
-      "title": "The Dentist"
     }
   ],
-  "fetched_at": "2026-07-18T02:37:09Z",
+  "fetched_at": "2026-11-16T04:57:44Z",
   "list_id": "barry_award_paperback_original",
   "list_name": "Barry Award - Paperback Original",
   "match_series": false,
   "notes": [],
   "parser": "barry_award_paperback_original",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Barry Award - Paperback Original",

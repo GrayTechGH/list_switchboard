@@ -1,0 +1,887 @@
+{
+  "append_state": {
+    "entry_count": 55,
+    "last_entry_key": "masques of satan|reggie oliver",
+    "last_position": "2007.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "1994",
+      "category": "Collection",
+      "position": "1994",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Angels and Visitations"
+    },
+    {
+      "authors": [
+        "Edward Gorman"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "1995",
+      "category": "Collection",
+      "position": "1995",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Cages"
+    },
+    {
+      "authors": [
+        "Terry Lamsley"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "1996",
+      "category": "Collection",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Conference with the Dead"
+    },
+    {
+      "authors": [
+        "Brian McNaughton"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "1997",
+      "category": "Collection",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "The Throne of Bones"
+    },
+    {
+      "authors": [
+        "John Shirley"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "1998",
+      "category": "Collection",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Black Butterflies: A Flock on the Dark Side"
+    },
+    {
+      "authors": [
+        "Brian Hodge"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "1998",
+      "category": "Collection",
+      "position": "1998.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Falling Idols"
+    },
+    {
+      "authors": [
+        "Kathe Koja"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "1998",
+      "category": "Collection",
+      "position": "1998.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Extremities"
+    },
+    {
+      "authors": [
+        "Joyce Carol Oates"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "1998",
+      "category": "Collection",
+      "position": "1998.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "The Collector of Hearts: New Tales of the Grotesque"
+    },
+    {
+      "authors": [
+        "David J. Schow"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "1998",
+      "category": "Collection",
+      "position": "1998.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Crypt Orchids"
+    },
+    {
+      "authors": [
+        "Douglas Clegg"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "1999",
+      "category": "Collection",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "The Nightmare Chronicles"
+    },
+    {
+      "authors": [
+        "David Case"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "1999",
+      "category": "Collection",
+      "position": "1999.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Brotherly Love and Other Tales of Faith and Knowledge"
+    },
+    {
+      "authors": [
+        "Jean Ray"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "1999",
+      "category": "Collection",
+      "position": "1999.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "My Private Spectres"
+    },
+    {
+      "authors": [
+        "Jay Russell"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "1999",
+      "category": "Collection",
+      "position": "1999.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Waltzes and Whispers"
+    },
+    {
+      "authors": [
+        "Michael Marshall Smith"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "1999",
+      "category": "Collection",
+      "position": "1999.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "What You Make of It"
+    },
+    {
+      "authors": [
+        "Steve Rasnic Tem"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2000",
+      "category": "Collection",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "City Fishing"
+    },
+    {
+      "authors": [
+        "Thomas Tessier"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2000",
+      "category": "Collection",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Ghost Music and Other Tales"
+    },
+    {
+      "authors": [
+        "Dennis Etchison"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2000",
+      "category": "Collection",
+      "position": "2000.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "The Death Artist"
+    },
+    {
+      "authors": [
+        "Caitlin R. Kiernan"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2000",
+      "category": "Collection",
+      "position": "2000.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Tales of Pain and Wonder"
+    },
+    {
+      "authors": [
+        "Al Sarrantonio"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2000",
+      "category": "Collection",
+      "position": "2000.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Toybox"
+    },
+    {
+      "authors": [
+        "Peter Straub"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2000",
+      "category": "Collection",
+      "position": "2000.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Magic Terror: Seven Tales"
+    },
+    {
+      "authors": [
+        "David B. Silva"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2001",
+      "category": "Collection",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "THROUGH SHATTERED GLASS"
+    },
+    {
+      "authors": [
+        "Dennis Etchison"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2001",
+      "category": "Collection",
+      "position": "2001.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "TALKING IN THE DARK"
+    },
+    {
+      "authors": [
+        "William F. Nolan"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2001",
+      "category": "Collection",
+      "position": "2001.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "DARK UNIVERSE"
+    },
+    {
+      "authors": [
+        "Norman Partridge"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2001",
+      "category": "Collection",
+      "position": "2001.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "THE MAN WITH THE BARBED WIRE FISTS"
+    },
+    {
+      "authors": [
+        "David J. Schow"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2001",
+      "category": "Collection",
+      "position": "2001.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "EYE"
+    },
+    {
+      "authors": [
+        "Chet Williamson"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2002",
+      "category": "Collection",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "FIGURES IN RAIN"
+    },
+    {
+      "authors": [
+        "Nancy Collins"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2002",
+      "category": "Collection",
+      "position": "2002.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "KNUCKLES AND TALES"
+    },
+    {
+      "authors": [
+        "Brian Hodge"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2002",
+      "category": "Collection",
+      "position": "2002.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "LIES AND UGLINESS"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2002",
+      "category": "Collection",
+      "position": "2002.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "EVERYTHING'S EVENTUAL"
+    },
+    {
+      "authors": [
+        "Thomas Ligotti"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2002",
+      "category": "Collection",
+      "position": "2002.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "MY WORK IS NOT YET DONE"
+    },
+    {
+      "authors": [
+        "Steve Rasnic Tem",
+        "Melanie Tem"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2002",
+      "category": "Collection",
+      "position": "2002.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "IMAGINATION BOX"
+    },
+    {
+      "authors": [
+        "Glen Hirshberg"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2003",
+      "category": "Collection",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "The Two Sams: Ghost Stories"
+    },
+    {
+      "authors": [
+        "Michael Marshall Smith"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2003",
+      "category": "Collection",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "More Tomorrows & Other Stories"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2003",
+      "category": "Collection",
+      "position": "2003.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Told by The Dead"
+    },
+    {
+      "authors": [
+        "Elizabeth Hand"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2003",
+      "category": "Collection",
+      "position": "2003.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Bibliomancy"
+    },
+    {
+      "authors": [
+        "George R.R. Martin"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2003",
+      "category": "Collection",
+      "position": "2003.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "GRRM: A RRetrospective"
+    },
+    {
+      "authors": [
+        "Reggie Oliver"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2003",
+      "category": "Collection",
+      "position": "2003.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "The Dreams of Cardinal Vittorini"
+    },
+    {
+      "authors": [
+        "Brian Evenson"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2004",
+      "category": "Collection",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "THE WAVERING KNIFE"
+    },
+    {
+      "authors": [
+        "John Connolly"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2004",
+      "category": "Collection",
+      "position": "2004.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "NOCTURNES"
+    },
+    {
+      "authors": [
+        "Stephen Gallagher"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2004",
+      "category": "Collection",
+      "position": "2004.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "OUT OF HIS MIND"
+    },
+    {
+      "authors": [
+        "Francis Oliver"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2004",
+      "category": "Collection",
+      "position": "2004.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "DANCING ON AIR"
+    },
+    {
+      "authors": [
+        "Conrad Williams"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2004",
+      "category": "Collection",
+      "position": "2004.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "USE ONCE THEN DESTROY"
+    },
+    {
+      "authors": [
+        "Joe Hill"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2005",
+      "category": "Collection",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "20th Century Ghosts"
+    },
+    {
+      "authors": [
+        "Michael Cunningham"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2005",
+      "category": "Collection",
+      "position": "2005.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Specimen Days"
+    },
+    {
+      "authors": [
+        "Caitlin Kiernan"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2005",
+      "category": "Collection",
+      "position": "2005.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "To Charles Fort, with Love"
+    },
+    {
+      "authors": [
+        "Kelly Link"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2005",
+      "category": "Collection",
+      "position": "2005.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Magic for Beginners"
+    },
+    {
+      "authors": [
+        "Terry Dowling"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2006",
+      "category": "Collection",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Basic Black"
+    },
+    {
+      "authors": [
+        "Glen Hirshberg"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2006",
+      "category": "Collection",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "American Morons"
+    },
+    {
+      "authors": [
+        "Joel Lane"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2006",
+      "category": "Collection",
+      "position": "2006.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "The Lost District and Other Stories"
+    },
+    {
+      "authors": [
+        "M. Rickert"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2006",
+      "category": "Collection",
+      "position": "2006.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.horroraward.org/prevrec.html"
+      },
+      "title": "Map of Dreams"
+    },
+    {
+      "authors": [
+        "Lucius Shepard"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2007",
+      "category": "Collection",
+      "position": "2007",
+      "result": "winner",
+      "title": "Dagger Key and Other Stories"
+    },
+    {
+      "authors": [
+        "Laird Barron"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2007",
+      "category": "Collection",
+      "position": "2007.01",
+      "result": "shortlisted",
+      "title": "The Imago Sequence and Other Stories"
+    },
+    {
+      "authors": [
+        "Stephen Gallagher"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2007",
+      "category": "Collection",
+      "position": "2007.02",
+      "result": "shortlisted",
+      "title": "Plots and Misadventures"
+    },
+    {
+      "authors": [
+        "Joe R. Lansdale"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2007",
+      "category": "Collection",
+      "position": "2007.03",
+      "result": "shortlisted",
+      "title": "Shadows Kith and Kin"
+    },
+    {
+      "authors": [
+        "Reggie Oliver"
+      ],
+      "award": "International Horror Guild Award",
+      "award_year": "2007",
+      "category": "Collection",
+      "position": "2007.04",
+      "result": "shortlisted",
+      "title": "Masques of Satan"
+    }
+  ],
+  "fetched_at": "2026-07-28T05:45:51Z",
+  "list_id": "international_horror_guild_collection",
+  "list_name": "International Horror Guild - Collection (discontinued)",
+  "match_series": false,
+  "notes": [
+    "Official IHG 2007 final-awards page includes nominee/shortlist rows.",
+    "Official IHG 1998-2006 recipient page generally includes Other Nominees / Also nominated rows.",
+    "Official IHG 1994-1997 sections are winner-only in this parser when official pages state nominations are unavailable or not listed.",
+    "Official IHG 1997 page states nominations are not listed due to the changeover in administration and system of nomination and judging.",
+    "Official IHG 1996 page states the 1996, 1995, and 1994 awards were not administered in the current manner and no nominations are available.",
+    "Official IHG 1995 page states the 1996, 1995, and 1994 awards were not administered in the current manner and no nominations are available.",
+    "Official IHG 1994 page states the 1996, 1995, and 1994 awards were not administered in the current manner and no nominations are available."
+  ],
+  "parser": "international_horror_guild_collection",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "International Horror Guild - Collection (discontinued)",
+    "source_id": "international_horror_guild_collection",
+    "url": "https://www.horroraward.org/index.html"
+  }
+}

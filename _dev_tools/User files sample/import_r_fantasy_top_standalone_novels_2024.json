@@ -567,12 +567,13 @@
       "votes": "10"
     }
   ],
-  "fetched_at": "2026-07-11T00:49:37Z",
+  "fetched_at": "2026-11-14T10:28:26Z",
   "list_id": "r_fantasy_top_standalone_novels_2024",
   "list_name": "r/Fantasy Top Standalone Novels 2024",
   "match_series": true,
   "notes": [],
   "parser": "r_fantasy_top_standalone_novels_2024",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "r/Fantasy Top Standalone Novels 2024",

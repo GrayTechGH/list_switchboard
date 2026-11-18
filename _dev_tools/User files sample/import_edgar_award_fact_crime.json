@@ -4859,12 +4859,13 @@
       "title": "Story of a Murder: The Wives, the Mistress, and Dr. Crippen"
     }
   ],
-  "fetched_at": "2026-07-16T23:31:39Z",
+  "fetched_at": "2026-11-15T22:35:56Z",
   "list_id": "edgar_award_fact_crime",
   "list_name": "Edgar Award - Fact Crime",
   "match_series": false,
   "notes": [],
   "parser": "edgar_award_fact_crime",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Edgar Award - Fact Crime",

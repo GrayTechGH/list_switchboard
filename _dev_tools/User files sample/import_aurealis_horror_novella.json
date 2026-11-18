@@ -1,0 +1,983 @@
+{
+  "append_state": {
+    "entry_count": 60,
+    "last_entry_key": "willow close|helena o connor",
+    "last_position": "2026.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Deborah Kalin"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2016",
+      "category": "Horror Novella",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2016"
+      },
+      "title": "The Miseducation of Mara Lys"
+    },
+    {
+      "authors": [
+        "Deborah Kalin"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2016",
+      "category": "Horror Novella",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2016"
+      },
+      "title": "The Cherry Crow Children of Haverny Wood"
+    },
+    {
+      "authors": [
+        "Dirk Flinthart"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2016",
+      "category": "Horror Novella",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2016"
+      },
+      "title": "Night Shift"
+    },
+    {
+      "authors": [
+        "Angela Slatter"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2016",
+      "category": "Horror Novella",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2016"
+      },
+      "title": "Ripper"
+    },
+    {
+      "authors": [
+        "Jay Kristoff"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2016",
+      "category": "Horror Novella",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2016"
+      },
+      "title": "Sleepless"
+    },
+    {
+      "authors": [
+        "Deborah Kalin"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2016",
+      "category": "Horror Novella",
+      "position": "2016.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2016"
+      },
+      "title": "Wages of Honey"
+    },
+    {
+      "authors": [
+        "Kirstyn McDermott"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2017",
+      "category": "Horror Novella",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2017"
+      },
+      "title": "Burnt Sugar"
+    },
+    {
+      "authors": [
+        "Jeremy Bates"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2017",
+      "category": "Horror Novella",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2017"
+      },
+      "title": "Box of Bones"
+    },
+    {
+      "authors": [
+        "Christopher Ruz"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2017",
+      "category": "Horror Novella",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2017"
+      },
+      "title": "Pan"
+    },
+    {
+      "authors": [
+        "Alan Baxter"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2017",
+      "category": "Horror Novella",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2017"
+      },
+      "title": "Served Cold"
+    },
+    {
+      "authors": [
+        "Tara Calaby"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2017",
+      "category": "Horror Novella",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2017"
+      },
+      "title": "The Starlight Circus"
+    },
+    {
+      "authors": [
+        "Deborah Biancotti"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2017",
+      "category": "Horror Novella",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2017"
+      },
+      "title": "Waking in Winter"
+    },
+    {
+      "authors": [
+        "Chris Mason"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2018",
+      "category": "Horror Novella",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2018"
+      },
+      "title": "The Stairwell"
+    },
+    {
+      "authors": [
+        "Kaaron Warren"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2018",
+      "category": "Horror Novella",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2018"
+      },
+      "title": "Furtherest"
+    },
+    {
+      "authors": [
+        "Michael Grey"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2018",
+      "category": "Horror Novella",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2018"
+      },
+      "title": "Grind"
+    },
+    {
+      "authors": [
+        "Andrew Cull"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2018",
+      "category": "Horror Novella",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2018"
+      },
+      "title": "Hope and Walker"
+    },
+    {
+      "authors": [
+        "Jeremy Bates"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2018",
+      "category": "Horror Novella",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2018"
+      },
+      "title": "The Mailman"
+    },
+    {
+      "authors": [
+        "Angela Slatter"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2018",
+      "category": "Horror Novella",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2018"
+      },
+      "title": "No Good Deed"
+    },
+    {
+      "authors": [
+        "Kaaron Warren"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2019",
+      "category": "Horror Novella",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2019"
+      },
+      "title": "Crisis Apparition"
+    },
+    {
+      "authors": [
+        "Matthew R. Davis"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2019",
+      "category": "Horror Novella",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2019"
+      },
+      "title": "Andromeda Ascends"
+    },
+    {
+      "authors": [
+        "Chris Mason"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2019",
+      "category": "Horror Novella",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2019"
+      },
+      "title": "The Black Sea"
+    },
+    {
+      "authors": [
+        "David Kuraria"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2019",
+      "category": "Horror Novella",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2019"
+      },
+      "title": "Kopura Rising"
+    },
+    {
+      "authors": [
+        "Kirstyn McDermott"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2019",
+      "category": "Horror Novella",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2019"
+      },
+      "title": "Triquetra"
+    },
+    {
+      "authors": [
+        "Angela Rega"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2019",
+      "category": "Horror Novella",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2019"
+      },
+      "title": "With This Needle I Thee Thread"
+    },
+    {
+      "authors": [
+        "Kaaron Warren"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2020",
+      "category": "Horror Novella",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2020"
+      },
+      "title": "Into Bones Like Oil"
+    },
+    {
+      "authors": [
+        "Matthew R. Davis"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2020",
+      "category": "Horror Novella",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2020"
+      },
+      "title": "Supermassive Black Mass"
+    },
+    {
+      "authors": [
+        "Alan Baxter"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2020",
+      "category": "Horror Novella",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2020"
+      },
+      "title": "Yellowheart"
+    },
+    {
+      "authors": [
+        "Chris Mason"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2021",
+      "category": "Horror Novella",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2021"
+      },
+      "title": "The Saltbush Queen"
+    },
+    {
+      "authors": [
+        "J. Ashley-Smith"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2021",
+      "category": "Horror Novella",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2021"
+      },
+      "title": "The Attic Tragedy"
+    },
+    {
+      "authors": [
+        "Robert Hood"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2021",
+      "category": "Horror Novella",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2021"
+      },
+      "title": "Bad Weather"
+    },
+    {
+      "authors": [
+        "Andrew Cull"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2021",
+      "category": "Horror Novella",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2021"
+      },
+      "title": "The Cockroach King"
+    },
+    {
+      "authors": [
+        "Michael Gardner"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2021",
+      "category": "Horror Novella",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2021"
+      },
+      "title": "Foundations"
+    },
+    {
+      "authors": [
+        "Alf Simpson"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2022",
+      "category": "Horror Novella",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2022"
+      },
+      "title": "All the Long Way Down"
+    },
+    {
+      "authors": [
+        "Alan Baxter"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2022",
+      "category": "Horror Novella",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2022"
+      },
+      "title": "The Band Plays On"
+    },
+    {
+      "authors": [
+        "Alister Hodge"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2022",
+      "category": "Horror Novella",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2022"
+      },
+      "title": "Cryptid Killers"
+    },
+    {
+      "authors": [
+        "Matthew R. Davis"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2022",
+      "category": "Horror Novella",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2022"
+      },
+      "title": "Hell's Teeth"
+    },
+    {
+      "authors": [
+        "Zachary Ashford"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2022",
+      "category": "Horror Novella",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2022"
+      },
+      "title": "When the Cicadas Stop Singing"
+    },
+    {
+      "authors": [
+        "Aaron Dries"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2023",
+      "category": "Horror Novella",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2023"
+      },
+      "title": "Kookaburra Cruel"
+    },
+    {
+      "authors": [
+        "Faith Mudge"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2023",
+      "category": "Horror Novella",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2023"
+      },
+      "title": "Among the Faded Woods"
+    },
+    {
+      "authors": [
+        "Matan Elul"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2023",
+      "category": "Horror Novella",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2023"
+      },
+      "title": "Glyphlight"
+    },
+    {
+      "authors": [
+        "Kirstyn McDermott"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2023",
+      "category": "Horror Novella",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2023"
+      },
+      "title": "The New Wife"
+    },
+    {
+      "authors": [
+        "Jeff Clulow"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2023",
+      "category": "Horror Novella",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2023"
+      },
+      "title": "Rat's Alley"
+    },
+    {
+      "authors": [
+        "Angela Slatter"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2023",
+      "category": "Horror Novella",
+      "position": "2023.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2023"
+      },
+      "title": "Songs from Dark Annie's Bower"
+    },
+    {
+      "authors": [
+        "J. S. Breukelaar"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2024",
+      "category": "Horror Novella",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2024"
+      },
+      "title": "Quicksilver"
+    },
+    {
+      "authors": [
+        "Kaaron Warren"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2024",
+      "category": "Horror Novella",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2024"
+      },
+      "title": "Bitters"
+    },
+    {
+      "authors": [
+        "J. S. Breukelaar"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2024",
+      "category": "Horror Novella",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2024"
+      },
+      "title": "Hole World"
+    },
+    {
+      "authors": [
+        "Alan Baxter"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2024",
+      "category": "Horror Novella",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2024"
+      },
+      "title": "The Leaves Forget"
+    },
+    {
+      "authors": [
+        "Zachary Ashford"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2024",
+      "category": "Horror Novella",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2024"
+      },
+      "title": "The Morass"
+    },
+    {
+      "authors": [
+        "Madeleine D'Este"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2024",
+      "category": "Horror Novella",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2024"
+      },
+      "title": "Radcliffe"
+    },
+    {
+      "authors": [
+        "Pauline Yates"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2025",
+      "category": "Horror Novella",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2025"
+      },
+      "title": "Shattered"
+    },
+    {
+      "authors": [
+        "Angela Slatter"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2025",
+      "category": "Horror Novella",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2025"
+      },
+      "title": "Bell, Book and Lamp"
+    },
+    {
+      "authors": [
+        "Tansy Rayner Roberts"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2025",
+      "category": "Horror Novella",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2025"
+      },
+      "title": "The Daredevil Duchess' Guide to Castle Hauntings"
+    },
+    {
+      "authors": [
+        "Kyla Lee Ward"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2025",
+      "category": "Horror Novella",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2025"
+      },
+      "title": "Maleficium"
+    },
+    {
+      "authors": [
+        "Nikky Lee"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2025",
+      "category": "Horror Novella",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2025"
+      },
+      "title": "We Who Remain"
+    },
+    {
+      "authors": [
+        "Ron Schroer"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2026",
+      "category": "Horror Novella",
+      "position": "2026",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2026"
+      },
+      "title": "Walpurgis"
+    },
+    {
+      "authors": [
+        "A. G. Slatter"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2026",
+      "category": "Horror Novella",
+      "position": "2026.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2026"
+      },
+      "title": "The Cold House"
+    },
+    {
+      "authors": [
+        "Eugen Bacon"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2026",
+      "category": "Horror Novella",
+      "position": "2026.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2026"
+      },
+      "title": "The Nga\u2019phandileh Whisperer"
+    },
+    {
+      "authors": [
+        "Jessica A. McMinn"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2026",
+      "category": "Horror Novella",
+      "position": "2026.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2026"
+      },
+      "title": "Parasitic Omens"
+    },
+    {
+      "authors": [
+        "JJ Carpenter"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2026",
+      "category": "Horror Novella",
+      "position": "2026.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2026"
+      },
+      "title": "Sideshow Souls"
+    },
+    {
+      "authors": [
+        "Helena O'Connor"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2026",
+      "category": "Horror Novella",
+      "position": "2026.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2026"
+      },
+      "title": "Willow Close"
+    }
+  ],
+  "fetched_at": "2026-07-20T11:32:55Z",
+  "list_id": "aurealis_horror_novella",
+  "list_name": "Aurealis - Horror Novella",
+  "match_series": false,
+  "notes": [],
+  "parser": "aurealis_horror_novella",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Aurealis - Horror Novella",
+    "source_id": "aurealis_horror_novella",
+    "url": "https://www.sfadb.com/Aurealis_Awards"
+  }
+}

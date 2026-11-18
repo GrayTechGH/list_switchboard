@@ -23,6 +23,7 @@ SFADB_URL = 'https://www.sfadb.com/Arthur_C_Clarke_Award'
 
 class UrlFetcherArthurCClarkeAwardNovel(UrlFetcherGeneric):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'arthur_c_clarke_award_novel'
   NAME = 'Arthur C. Clarke Award - Novel'
   FILTER_CATEGORIES = (CATEGORY_SCIENCE_FICTION, CATEGORY_REGIONAL_NATIONAL_AWARDS)
@@ -53,7 +54,8 @@ class UrlFetcherArthurCClarkeAwardNovel(UrlFetcherGeneric):
   def fetch_and_parse(
       self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
       before_fetch=None, after_fetch=None, before_parse=None,
-      force_fallback_level=0, disable_fallbacks=False, source_choice=None):
+      force_fallback_level=0, disable_fallbacks=False, source_choice=None,
+      cached_parsed=None, incremental_update=False):
     parsed = SourceFallbackRunner(
       self.source_attempts(),
       error_class=UrlFetcherError).run(
@@ -65,7 +67,8 @@ class UrlFetcherArthurCClarkeAwardNovel(UrlFetcherGeneric):
         before_parse=before_parse,
         force_fallback_level=force_fallback_level,
         disable_fallbacks=disable_fallbacks,
-        source_choice=source_choice)
+        source_choice=source_choice, cached_parsed=cached_parsed,
+        incremental_update=incremental_update)
     parsed.setdefault('match_series', self.options.get('match_series', True))
     return parsed
 
@@ -79,8 +82,9 @@ class UrlFetcherArthurCClarkeAwardNovel(UrlFetcherGeneric):
       SourceAttempt(
         'SFADB',
         self.SFADB_URL,
-        self.create_sfadb_parser(),
-        source_rank=1),
+        lambda html, url, **kwargs: self.create_sfadb_parser().parse(
+          html, url, enable_incremental=True, **kwargs),
+        source_rank=1, supports_incremental=True),
     )
 
   def source_choices(self):

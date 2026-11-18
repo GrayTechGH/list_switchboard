@@ -1,0 +1,272 @@
+{
+  "append_state": {
+    "entry_count": 20,
+    "last_entry_key": "the girl who owned a city|o t nelson",
+    "last_position": "20",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Dave Freer"
+      ],
+      "award": "Prometheus Award",
+      "category": "Young Adult Honor Roll",
+      "position": "1",
+      "recognition": "Winners of the Special Award for Young Adult Fiction",
+      "result": "winner",
+      "title": "Storm-Dragon"
+    },
+    {
+      "authors": [
+        "Cory Doctorow"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2014",
+      "category": "Young Adult Honor Roll",
+      "position": "2",
+      "recognition": "Best Novel winners",
+      "result": "winner",
+      "title": "Homeland"
+    },
+    {
+      "authors": [
+        "Delia Sherman"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2012",
+      "category": "Young Adult Honor Roll",
+      "position": "3",
+      "recognition": "Best Novel winners",
+      "result": "winner",
+      "title": "The Freedom Maze"
+    },
+    {
+      "authors": [
+        "Cory Doctorow"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2009",
+      "category": "Young Adult Honor Roll",
+      "position": "4",
+      "recognition": "Best Novel winners",
+      "result": "winner",
+      "title": "Little Brother"
+    },
+    {
+      "authors": [
+        "Harry Turtledove"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2008",
+      "category": "Young Adult Honor Roll",
+      "position": "5",
+      "recognition": "Best Novel winners",
+      "result": "winner",
+      "title": "The Gladiator"
+    },
+    {
+      "authors": [
+        "Ken MacLeod"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2006",
+      "category": "Young Adult Honor Roll",
+      "position": "6",
+      "recognition": "Best Novel winners",
+      "result": "winner",
+      "title": "Learning the World"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2022",
+      "category": "Young Adult Honor Roll",
+      "position": "7",
+      "recognition": "Hall of Fame winners",
+      "result": "winner",
+      "title": "Citizen of the Galaxy"
+    },
+    {
+      "authors": [
+        "Hans Christian Andersen"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2000",
+      "category": "Young Adult Honor Roll",
+      "position": "8",
+      "recognition": "Hall of Fame winners",
+      "result": "winner",
+      "title": "The Emperor's New Clothes"
+    },
+    {
+      "authors": [
+        "Robert Heinlein"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1996",
+      "category": "Young Adult Honor Roll",
+      "position": "9",
+      "recognition": "Hall of Fame winners",
+      "result": "winner",
+      "title": "Red Planet"
+    },
+    {
+      "authors": [
+        "J. Neil Schulman"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1989",
+      "category": "Young Adult Honor Roll",
+      "position": "10",
+      "recognition": "Hall of Fame winners",
+      "result": "winner",
+      "title": "Alongside Night"
+    },
+    {
+      "authors": [
+        "Leslie Fish"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2014",
+      "category": "Young Adult Honor Roll",
+      "position": "11",
+      "recognition": "Special Award Winner",
+      "result": "winner",
+      "title": "Tower of Horses"
+    },
+    {
+      "authors": [
+        "Pierce Brown"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2016",
+      "category": "Young Adult Honor Roll",
+      "position": "12",
+      "recognition": "Best Novel finalists",
+      "result": "nominee",
+      "title": "Golden Son"
+    },
+    {
+      "authors": [
+        "Thomas L. James",
+        "Carol C. Carlsson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2012",
+      "category": "Young Adult Honor Roll",
+      "position": "13",
+      "recognition": "Best Novel finalists",
+      "result": "nominee",
+      "title": "In the Shadow of Ares"
+    },
+    {
+      "authors": [
+        "Claire Wolfe",
+        "Aaron Zelman"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2006",
+      "category": "Young Adult Honor Roll",
+      "position": "14",
+      "recognition": "Best Novel finalists",
+      "result": "nominee",
+      "title": "RebelFire: Out of the Gray Zone"
+    },
+    {
+      "authors": [
+        "J. K. Rowling"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2004",
+      "category": "Young Adult Honor Roll",
+      "position": "15",
+      "recognition": "Best Novel finalists",
+      "result": "nominee",
+      "title": "Harry Potter and the Order of the Phoenix"
+    },
+    {
+      "authors": [
+        "Ayn Rand"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1987",
+      "category": "Young Adult Honor Roll",
+      "position": "16",
+      "recognition": "Other works that may appeal to younger readers:",
+      "result": "winner",
+      "title": "Anthem"
+    },
+    {
+      "authors": [
+        "George Orwell"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2011",
+      "category": "Young Adult Honor Roll",
+      "position": "17",
+      "recognition": "Other works that may appeal to younger readers:",
+      "result": "winner",
+      "title": "Animal Farm"
+    },
+    {
+      "authors": [
+        "T. H. White"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2009",
+      "category": "Young Adult Honor Roll",
+      "position": "18",
+      "recognition": "Other works that may appeal to younger readers:",
+      "recognition_years": [
+        "2004",
+        "2009"
+      ],
+      "result": "nominee",
+      "title": "The Once and Future King"
+    },
+    {
+      "authors": [
+        "T. H. White"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2009",
+      "category": "Young Adult Honor Roll",
+      "position": "19",
+      "recognition": "Other works that may appeal to younger readers:",
+      "recognition_years": [
+        "2004",
+        "2009"
+      ],
+      "result": "nominee",
+      "title": "The Book of Merlyn"
+    },
+    {
+      "authors": [
+        "O.T. Nelson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2011",
+      "category": "Young Adult Honor Roll",
+      "position": "20",
+      "recognition": "Other works that may appeal to younger readers:",
+      "result": "nominee",
+      "title": "The Girl Who Owned a City"
+    }
+  ],
+  "fetched_at": "2026-07-24T10:16:40Z",
+  "list_id": "prometheus_young_adult_honor_roll",
+  "list_name": "Prometheus - Young Adult Honor Roll",
+  "match_series": false,
+  "notes": [],
+  "parser": "prometheus_young_adult_honor_roll",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Prometheus - Young Adult Honor Roll",
+    "source_id": "prometheus_young_adult_honor_roll",
+    "url": "https://www.lfs.org/YAHonorRoll.shtml"
+  }
+}

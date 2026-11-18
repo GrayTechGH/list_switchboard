@@ -11,6 +11,7 @@ SHIRLEY_JACKSON_CATEGORIES = (CATEGORY_HORROR_DARK_FICTION,)
 
 class UrlFetcherShirleyJackson(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
 
+  ENABLE_SFADB_INCREMENTAL = True
   URL = SHIRLEY_JACKSON_AWARDS_URL
   FETCH_URLS = (SHIRLEY_JACKSON_AWARDS_URL,)
   FILTER_CATEGORIES = SHIRLEY_JACKSON_CATEGORIES
@@ -50,7 +51,7 @@ class UrlFetcherShirleyJackson(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
         attempt.label = 'ISFDB + packaged supplement'
     return tuple(attempts)
 
-  def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
+  def parse(self, html, fetch_url=None, log=None, progress=None, **kwargs):
     return self.parser().parse(
       html,
       self.URL,
@@ -59,7 +60,8 @@ class UrlFetcherShirleyJackson(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
       self.CATEGORY_ALIASES,
       fetch_url=fetch_url,
       log=log,
-      progress=progress)
+      progress=progress, cached_parsed=kwargs.get('cached_parsed'),
+      incremental_update=kwargs.get('incremental_update', False), enable_incremental=True)
 
   def parse_isfdb_award_type(
       self, html, base_url, fetch_url=None, log=None, progress=None):
@@ -83,6 +85,7 @@ class UrlFetcherShirleyJackson(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
 
 
 class UrlFetcherShirleyJacksonNovel(UrlFetcherShirleyJackson):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'shirley_jackson_novel'
   NAME = 'Shirley Jackson - Novel'
   CATEGORY = 'Novel'
@@ -92,6 +95,7 @@ class UrlFetcherShirleyJacksonNovel(UrlFetcherShirleyJackson):
 
 
 class UrlFetcherShirleyJacksonNovella(UrlFetcherShirleyJackson):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'shirley_jackson_novella'
   NAME = 'Shirley Jackson - Novella'
   CATEGORY = 'Novella'
@@ -101,6 +105,7 @@ class UrlFetcherShirleyJacksonNovella(UrlFetcherShirleyJackson):
 
 
 class UrlFetcherShirleyJacksonSingleAuthorCollection(UrlFetcherShirleyJackson):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'shirley_jackson_single_author_collection'
   NAME = 'Shirley Jackson - Single-Author Collection'
   CATEGORY = 'Single-Author Collection'
@@ -110,6 +115,7 @@ class UrlFetcherShirleyJacksonSingleAuthorCollection(UrlFetcherShirleyJackson):
 
 
 class UrlFetcherShirleyJacksonEditedAnthology(UrlFetcherShirleyJackson):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'shirley_jackson_edited_anthology'
   NAME = 'Shirley Jackson - Edited Anthology'
   CATEGORY = 'Edited Anthology'

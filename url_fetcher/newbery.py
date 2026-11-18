@@ -11,6 +11,7 @@ except ImportError:
 
 class UrlFetcherJohnNewberyMedal(UrlFetcherGeneric):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'john_newbery_medal'
   MAX_RESPONSE_BYTES = 32 * 1024 * 1024
   NAME = 'John Newbery Medal'
@@ -33,5 +34,6 @@ class UrlFetcherJohnNewberyMedal(UrlFetcherGeneric):
       self.NAME,
       fetch_url=fetch_url,
       current_year=kwargs.get('current_year'),
+      cached_parsed=kwargs.get('cached_parsed'),incremental_update=kwargs.get('incremental_update',False),
       log=log,
       progress=progress)

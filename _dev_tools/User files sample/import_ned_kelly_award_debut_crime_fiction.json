@@ -1,0 +1,480 @@
+{
+  "append_state": {
+    "entry_count": 32,
+    "last_entry_key": "all you took from me|lisa kenway",
+    "last_position": "2025",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "John Dale"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "1996",
+      "category": "Best Debut Crime Novel",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Dark_Angel_(Dale_novel)"
+      },
+      "title": "Dark Angel"
+    },
+    {
+      "authors": [
+        "Peter Temple"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "1997",
+      "category": "Best Debut Crime Novel",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Bad_Debts"
+      },
+      "title": "Bad Debts"
+    },
+    {
+      "authors": [
+        "Peter Doyle"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "1997",
+      "category": "Best Debut Crime Novel",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Get_Rich_Quick_(novel)"
+      },
+      "title": "Get Rich Quick"
+    },
+    {
+      "authors": [
+        "Andrew Masterson"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "1999",
+      "category": "Best Debut Crime Novel",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/The_Last_Days_(Australian_novel)"
+      },
+      "title": "The Last Days"
+    },
+    {
+      "authors": [
+        "Marshall Browne"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2000",
+      "category": "Best Debut Crime Novel",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/The_Wooden_Leg_of_Inspector_Anders"
+      },
+      "title": "The Wooden Leg of Inspector Anders"
+    },
+    {
+      "authors": [
+        "Andrew McGahan"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2001",
+      "category": "Best Debut Crime Novel",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Last_Drinks"
+      },
+      "title": "Last Drinks"
+    },
+    {
+      "authors": [
+        "Bunty Avieson"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2002",
+      "category": "Best Debut Crime Novel",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Apartment_255"
+      },
+      "title": "Apartment 255"
+    },
+    {
+      "authors": [
+        "Emma Darcy"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2002",
+      "category": "Best Debut Crime Novel",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Emma_Darcy"
+      },
+      "title": "Who Killed Angelique?"
+    },
+    {
+      "authors": [
+        "Alex Palmer"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2003",
+      "category": "Best Debut Crime Novel",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Blood_Redemption"
+      },
+      "title": "Blood Redemption"
+    },
+    {
+      "authors": [
+        "Jane R. Goodall"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2004",
+      "category": "Best Debut Crime Novel",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/The_Walker_(novel)?action=edit&redlink=1"
+      },
+      "title": "The Walker"
+    },
+    {
+      "authors": [
+        "Wayne Grogan"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2004",
+      "category": "Best Debut Crime Novel",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Junkie_Pilgrim?action=edit&redlink=1"
+      },
+      "title": "Junkie Pilgrim"
+    },
+    {
+      "authors": [
+        "Malcolm Knox"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2005",
+      "category": "Best Debut Crime Novel",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/A_Private_Man"
+      },
+      "title": "A Private Man"
+    },
+    {
+      "authors": [
+        "Wendy James"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2006",
+      "category": "Best Debut Crime Novel",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Out_of_the_Silence_(James_novel)"
+      },
+      "title": "Out of the Silence"
+    },
+    {
+      "authors": [
+        "Adrian Hyland"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2007",
+      "category": "Best Debut Crime Novel",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Diamond_Dove_(novel)"
+      },
+      "title": "Diamond Dove"
+    },
+    {
+      "authors": [
+        "Chris Womersley"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2008",
+      "category": "Best Debut Crime Novel",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/The_Low_Road_(novel)"
+      },
+      "title": "The Low Road"
+    },
+    {
+      "authors": [
+        "Nick Gadd"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2009",
+      "category": "Best Debut Crime Novel",
+      "position": "2009",
+      "result": "winner",
+      "title": "Ghostlines"
+    },
+    {
+      "authors": [
+        "Mark Dapin"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2010",
+      "category": "Best Debut Crime Novel",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Mark_Dapin"
+      },
+      "title": "King of the Cross"
+    },
+    {
+      "authors": [
+        "Alan Carter"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2011",
+      "category": "Best Debut Crime Novel",
+      "position": "2011",
+      "result": "winner",
+      "title": "Prime Cut"
+    },
+    {
+      "authors": [
+        "Peter Twohig"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2012",
+      "category": "Best Debut Crime Novel",
+      "position": "2012",
+      "result": "winner",
+      "title": "The Cartographer"
+    },
+    {
+      "authors": [
+        "Zane Lovitt"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2013",
+      "category": "Best Debut Crime Novel",
+      "position": "2013",
+      "result": "winner",
+      "title": "The Midnight Promise"
+    },
+    {
+      "authors": [
+        "Candice Fox"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2014",
+      "category": "Best Debut Crime Novel",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Candice_Fox"
+      },
+      "title": "Hades"
+    },
+    {
+      "authors": [
+        "Jock Serong"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2015",
+      "category": "Best Debut Crime Novel",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Quota_(novel)"
+      },
+      "title": "Quota"
+    },
+    {
+      "authors": [
+        "Emma Viskic"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2016",
+      "category": "Best Debut Crime Novel",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Resurrection_Bay_(novel)"
+      },
+      "title": "Resurrection Bay"
+    },
+    {
+      "authors": [
+        "Jane Harper"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2017",
+      "category": "Best Debut Crime Novel",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/The_Dry_(novel)"
+      },
+      "title": "The Dry"
+    },
+    {
+      "authors": [
+        "Sarah Bailey"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2018",
+      "category": "Best Debut Crime Novel",
+      "position": "2018",
+      "result": "winner",
+      "title": "The Dark Lake"
+    },
+    {
+      "authors": [
+        "Dervla McTiernan"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2019",
+      "category": "Best Debut Crime Novel",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/The_R\u00fain"
+      },
+      "title": "The R\u00fain"
+    },
+    {
+      "authors": [
+        "Natalie Conyer"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2020",
+      "category": "Best Debut Crime Novel",
+      "position": "2020",
+      "result": "winner",
+      "title": "Present Tense"
+    },
+    {
+      "authors": [
+        "Loraine Peck"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2021",
+      "category": "Best Debut Crime Novel",
+      "position": "2021",
+      "result": "winner",
+      "title": "The Second Son"
+    },
+    {
+      "authors": [
+        "Josh Kemp"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2022",
+      "category": "Best Debut Crime Novel",
+      "position": "2022",
+      "result": "winner",
+      "title": "Banjawarn"
+    },
+    {
+      "authors": [
+        "Shelley Burr"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2023",
+      "category": "Best Debut Crime Novel",
+      "position": "2023",
+      "result": "winner",
+      "title": "Wake"
+    },
+    {
+      "authors": [
+        "Matt Francis"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2024",
+      "category": "Best Debut Crime Novel",
+      "position": "2024",
+      "result": "winner",
+      "title": "Murder in the Pacific: Ifira Point"
+    },
+    {
+      "authors": [
+        "Lisa Kenway"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2025",
+      "category": "Best Debut Crime Novel",
+      "position": "2025",
+      "result": "winner",
+      "title": "All You Took From Me"
+    }
+  ],
+  "fetched_at": "2026-07-19T04:46:53Z",
+  "list_id": "ned_kelly_award_debut_crime_fiction",
+  "list_name": "Ned Kelly Award - Debut Crime Fiction",
+  "match_series": false,
+  "notes": [],
+  "parser": "ned_kelly_award_debut_crime_fiction",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Ned Kelly Award - Debut Crime Fiction",
+    "source_id": "ned_kelly_award_debut_crime_fiction",
+    "url": "https://en.wikipedia.org/wiki/Ned_Kelly_Awards"
+  }
+}

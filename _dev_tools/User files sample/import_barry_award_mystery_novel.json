@@ -1,8 +1,8 @@
 {
   "append_state": {
-    "entry_count": 175,
+    "entry_count": 183,
     "last_entry_key": "presumed guilty|scott turow",
-    "last_position": "2026.06",
+    "last_position": "2026.05",
     "source_revision": null
   },
   "entries": [
@@ -148,6 +148,94 @@
       "position": "1998.06",
       "result": "nominee",
       "title": "The Death and Life of Bobby Z"
+    },
+    {
+      "authors": [
+        "Reginald Hill"
+      ],
+      "award": "Barry Award",
+      "award_year": "1999",
+      "category": "Best Mystery Novel",
+      "position": "1999",
+      "result": "winner",
+      "title": "On Beulah Height"
+    },
+    {
+      "authors": [
+        "Dennis Lehane"
+      ],
+      "award": "Barry Award",
+      "award_year": "1999",
+      "category": "Best Mystery Novel",
+      "position": "1999",
+      "result": "winner",
+      "title": "Gone, Baby, Gone"
+    },
+    {
+      "authors": [
+        "Rhys Bowen"
+      ],
+      "award": "Barry Award",
+      "award_year": "1999",
+      "category": "Best Mystery Novel",
+      "position": "1999.01",
+      "result": "nominee",
+      "title": "Evan Help Us"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Barry Award",
+      "award_year": "1999",
+      "category": "Best Mystery Novel",
+      "position": "1999.02",
+      "result": "nominee",
+      "title": "Blood Work"
+    },
+    {
+      "authors": [
+        "Jeffery Deaver"
+      ],
+      "award": "Barry Award",
+      "award_year": "1999",
+      "category": "Best Mystery Novel",
+      "position": "1999.03",
+      "result": "nominee",
+      "title": "The Coffin Dancer"
+    },
+    {
+      "authors": [
+        "Carol O\u2019Connell"
+      ],
+      "award": "Barry Award",
+      "award_year": "1999",
+      "category": "Best Mystery Novel",
+      "position": "1999.04",
+      "result": "nominee",
+      "title": "Judas Child"
+    },
+    {
+      "authors": [
+        "Ian Rankin"
+      ],
+      "award": "Barry Award",
+      "award_year": "1999",
+      "category": "Best Mystery Novel",
+      "position": "1999.05",
+      "result": "nominee",
+      "title": "The Hanging Garden"
+    },
+    {
+      "authors": [
+        "Mary Willis Walker"
+      ],
+      "award": "Barry Award",
+      "award_year": "1999",
+      "category": "Best Mystery Novel",
+      "position": "1999.06",
+      "result": "nominee",
+      "title": "All the Dead Lie Down"
     },
     {
       "authors": [
@@ -1867,6 +1955,17 @@
     },
     {
       "authors": [
+        "S.A. Cosby"
+      ],
+      "award": "Barry Award",
+      "award_year": "2026",
+      "category": "Best Mystery Novel",
+      "position": "2026",
+      "result": "winner",
+      "title": "King of Ashes"
+    },
+    {
+      "authors": [
         "Belinda Bauer"
       ],
       "award": "Barry Award",
@@ -1889,23 +1988,12 @@
     },
     {
       "authors": [
-        "S.A. Cosby"
-      ],
-      "award": "Barry Award",
-      "award_year": "2026",
-      "category": "Best Mystery Novel",
-      "position": "2026.03",
-      "result": "nominee",
-      "title": "King of Ashes"
-    },
-    {
-      "authors": [
         "Louise Penny"
       ],
       "award": "Barry Award",
       "award_year": "2026",
       "category": "Best Mystery Novel",
-      "position": "2026.04",
+      "position": "2026.03",
       "result": "nominee",
       "title": "The Black Wolf"
     },
@@ -1916,7 +2004,7 @@
       "award": "Barry Award",
       "award_year": "2026",
       "category": "Best Mystery Novel",
-      "position": "2026.05",
+      "position": "2026.04",
       "result": "nominee",
       "title": "The White Crow"
     },
@@ -1927,17 +2015,18 @@
       "award": "Barry Award",
       "award_year": "2026",
       "category": "Best Mystery Novel",
-      "position": "2026.06",
+      "position": "2026.05",
       "result": "nominee",
       "title": "Presumed Guilty"
     }
   ],
-  "fetched_at": "2026-07-18T02:36:54Z",
+  "fetched_at": "2026-11-16T02:01:49Z",
   "list_id": "barry_award_mystery_novel",
   "list_name": "Barry Award - Mystery Novel",
   "match_series": false,
   "notes": [],
   "parser": "barry_award_mystery_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Barry Award - Mystery Novel",

@@ -1,0 +1,139 @@
+{
+  "append_state": {
+    "entry_count": 7,
+    "last_entry_key": "alex ada|jonathan luna\u001fsarah vaughn",
+    "last_position": "2016",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Brad Linaweaver",
+        "Edward E. Kramer"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1998",
+      "category": "Special Awards",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1998"
+      },
+      "title": "Free Space"
+    },
+    {
+      "authors": [
+        "Mark Tier",
+        "Martin H. Greenberg"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2005",
+      "category": "Special Awards",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2005"
+      },
+      "title": "Give Me Liberty"
+    },
+    {
+      "authors": [
+        "illustrated by Scott Bieser"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2005",
+      "category": "Special Awards",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2005"
+      },
+      "title": "The Probability Broach: The Graphic Novel , L. Neil Smith"
+    },
+    {
+      "authors": [
+        "Mark Tier",
+        "Martin H. Greenberg"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2005",
+      "category": "Special Awards",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2005"
+      },
+      "title": "Visions of Liberty"
+    },
+    {
+      "authors": [
+        "Joss Whedon"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2006",
+      "category": "Special Awards",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2006"
+      },
+      "title": "Serenity"
+    },
+    {
+      "authors": [
+        "for for combination of 2013 novella \"Tower of Horses\" with filk song \"The Horsetaker's Daughter\""
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2014",
+      "category": "Special Awards",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2014"
+      },
+      "title": "Leslie Fish"
+    },
+    {
+      "authors": [
+        "Jonathan Luna",
+        "Sarah Vaughn"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2016",
+      "category": "Special Awards",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2016"
+      },
+      "title": "Alex + Ada"
+    }
+  ],
+  "fetched_at": "2026-07-24T10:00:54Z",
+  "list_id": "prometheus_special_awards",
+  "list_name": "Prometheus - Special Awards",
+  "match_series": false,
+  "notes": [],
+  "parser": "prometheus_special_awards",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Prometheus - Special Awards",
+    "source_id": "prometheus_special_awards",
+    "url": "https://www.sfadb.com/Prometheus_Awards"
+  }
+}

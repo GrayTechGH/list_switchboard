@@ -27,11 +27,13 @@ RUNTIME_ROOT_FILES = frozenset((
   'sfadb_transport.py',
   'storage.py',
   'ui.py',
+  'wayback_policy.py',
 ))
 RUNTIME_DIRECTORIES = ('dialogs', 'images', 'parser', 'url_fetcher')
 RUNTIME_SUFFIXES = frozenset(('.json', '.png', '.py'))
 REQUIRED_MEMBERS = frozenset((
   '__init__.py',
+  'wayback_policy.py',
   'images/icon.png',
   'parser/__init__.py',
   'parser/data/spsfc_results.json',

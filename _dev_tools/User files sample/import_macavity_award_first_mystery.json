@@ -1,0 +1,1761 @@
+{
+  "append_state": {
+    "entry_count": 158,
+    "last_entry_key": "stillwater|tanya scott",
+    "last_position": "2026.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Faye Kellerman"
+      ],
+      "award": "Macavity Award",
+      "award_year": "1987",
+      "category": "Best First Mystery",
+      "position": "1987",
+      "result": "winner",
+      "title": "The Ritual Bath"
+    },
+    {
+      "authors": [
+        "Marilyn Wallace"
+      ],
+      "award": "Macavity Award",
+      "award_year": "1987",
+      "category": "Best First Mystery",
+      "position": "1987",
+      "result": "winner",
+      "title": "A Case of Loyalties"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "Macavity Award",
+      "award_year": "1988",
+      "category": "Best First Mystery",
+      "position": "1988",
+      "result": "winner",
+      "title": "The Monkey\u2019s Raincoat"
+    },
+    {
+      "authors": [
+        "Caroline Graham"
+      ],
+      "award": "Macavity Award",
+      "award_year": "1989",
+      "category": "Best First Mystery",
+      "position": "1989",
+      "result": "winner",
+      "title": "The Killings at Badger\u2019s Drift"
+    },
+    {
+      "authors": [
+        "Jill Churchill"
+      ],
+      "award": "Macavity Award",
+      "award_year": "1990",
+      "category": "Best First Mystery",
+      "position": "1990",
+      "result": "winner",
+      "title": "Grime and Punishment"
+    },
+    {
+      "authors": [
+        "Patricia Cornwell"
+      ],
+      "award": "Macavity Award",
+      "award_year": "1991",
+      "category": "Best First Mystery",
+      "position": "1991",
+      "result": "winner",
+      "title": "Postmortem"
+    },
+    {
+      "authors": [
+        "Sue Henry"
+      ],
+      "award": "Macavity Award",
+      "award_year": "1992",
+      "category": "Best First Mystery",
+      "position": "1992",
+      "result": "winner",
+      "title": "Murder on the Iditarod Trail"
+    },
+    {
+      "authors": [
+        "Mary Willis Walker"
+      ],
+      "award": "Macavity Award",
+      "award_year": "1992",
+      "category": "Best First Mystery",
+      "position": "1992",
+      "result": "winner",
+      "title": "Zero at the Bone"
+    },
+    {
+      "authors": [
+        "BarbaraNeely"
+      ],
+      "award": "Macavity Award",
+      "award_year": "1993",
+      "category": "Best First Mystery",
+      "position": "1993",
+      "result": "winner",
+      "title": "Blanche on the Lam"
+    },
+    {
+      "authors": [
+        "Sharan Newman"
+      ],
+      "award": "Macavity Award",
+      "award_year": "1994",
+      "category": "Best First Mystery",
+      "position": "1994",
+      "result": "winner",
+      "title": "Death Comes as Epiphany"
+    },
+    {
+      "authors": [
+        "Jeff Abbott"
+      ],
+      "award": "Macavity Award",
+      "award_year": "1995",
+      "category": "Best First Mystery",
+      "position": "1995",
+      "result": "winner",
+      "title": "Do Unto Others"
+    },
+    {
+      "authors": [
+        "Dianne Day"
+      ],
+      "award": "Macavity Award",
+      "award_year": "1996",
+      "category": "Best First Mystery",
+      "position": "1996",
+      "result": "winner",
+      "title": "The Strange Files of Fremont Jones"
+    },
+    {
+      "authors": [
+        "Dale Furutani"
+      ],
+      "award": "Macavity Award",
+      "award_year": "1997",
+      "category": "Best First Mystery",
+      "position": "1997",
+      "result": "winner",
+      "title": "Death in Little Tokyo"
+    },
+    {
+      "authors": [
+        "Penny Warner"
+      ],
+      "award": "Macavity Award",
+      "award_year": "1998",
+      "category": "Best First Mystery",
+      "position": "1998",
+      "result": "winner",
+      "title": "Dead Body Language"
+    },
+    {
+      "authors": [
+        "Lee Child"
+      ],
+      "award": "Macavity Award",
+      "award_year": "1998",
+      "category": "Best First Mystery",
+      "position": "1998.01",
+      "result": "nominee",
+      "title": "Killing Floor"
+    },
+    {
+      "authors": [
+        "Aljean Harmetz"
+      ],
+      "award": "Macavity Award",
+      "award_year": "1998",
+      "category": "Best First Mystery",
+      "position": "1998.02",
+      "result": "nominee",
+      "title": "Off the Face of the Earth"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "Macavity Award",
+      "award_year": "1998",
+      "category": "Best First Mystery",
+      "position": "1998.03",
+      "result": "nominee",
+      "title": "Charm City"
+    },
+    {
+      "authors": [
+        "Sujata Massey"
+      ],
+      "award": "Macavity Award",
+      "award_year": "1998",
+      "category": "Best First Mystery",
+      "position": "1998.04",
+      "result": "nominee",
+      "title": "The Salaryman\u2019s Wife"
+    },
+    {
+      "authors": [
+        "Jerrilyn Farmer"
+      ],
+      "award": "Macavity Award",
+      "award_year": "1999",
+      "category": "Best First Mystery",
+      "position": "1999",
+      "result": "winner",
+      "title": "Sympathy for the Devil"
+    },
+    {
+      "authors": [
+        "Jacqueline Fiedler"
+      ],
+      "award": "Macavity Award",
+      "award_year": "1999",
+      "category": "Best First Mystery",
+      "position": "1999.01",
+      "result": "nominee",
+      "title": "Tiger\u2019s Palette"
+    },
+    {
+      "authors": [
+        "Robin Hathaway"
+      ],
+      "award": "Macavity Award",
+      "award_year": "1999",
+      "category": "Best First Mystery",
+      "position": "1999.02",
+      "result": "nominee",
+      "title": "The Doctor Digs a Grave"
+    },
+    {
+      "authors": [
+        "Paula L. Woods"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2000",
+      "category": "Best First Mystery",
+      "position": "2000",
+      "result": "winner",
+      "title": "Inner City Blues"
+    },
+    {
+      "authors": [
+        "Donna Andrews"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2000",
+      "category": "Best First Mystery",
+      "position": "2000.01",
+      "result": "nominee",
+      "title": "Murder with Peacocks"
+    },
+    {
+      "authors": [
+        "Cara Black"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2000",
+      "category": "Best First Mystery",
+      "position": "2000.02",
+      "result": "nominee",
+      "title": "Murder in the Marais"
+    },
+    {
+      "authors": [
+        "Kris Neri"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2000",
+      "category": "Best First Mystery",
+      "position": "2000.03",
+      "result": "nominee",
+      "title": "Revenge of the Gypsy Queen"
+    },
+    {
+      "authors": [
+        "David Liss"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2001",
+      "category": "Best First Mystery",
+      "position": "2001",
+      "result": "winner",
+      "title": "A Conspiracy of Paper"
+    },
+    {
+      "authors": [
+        "Kate Grilley"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2001",
+      "category": "Best First Mystery",
+      "position": "2001.01",
+      "result": "nominee",
+      "title": "Death Dances to a Reggae Beat"
+    },
+    {
+      "authors": [
+        "Julie Wray Herman"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2001",
+      "category": "Best First Mystery",
+      "position": "2001.02",
+      "result": "nominee",
+      "title": "Three Dirty Women and the Garden of Death"
+    },
+    {
+      "authors": [
+        "Marcia Simpson"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2001",
+      "category": "Best First Mystery",
+      "position": "2001.03",
+      "result": "nominee",
+      "title": "Crow in Stolen Colors"
+    },
+    {
+      "authors": [
+        "C. J. Box"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2002",
+      "category": "Best First Mystery",
+      "position": "2002",
+      "result": "winner",
+      "title": "Open Season"
+    },
+    {
+      "authors": [
+        "Denise Hamilton"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2002",
+      "category": "Best First Mystery",
+      "position": "2002.01",
+      "result": "nominee",
+      "title": "The Jasmine Trade"
+    },
+    {
+      "authors": [
+        "Karin Slaughter"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2002",
+      "category": "Best First Mystery",
+      "position": "2002.02",
+      "result": "nominee",
+      "title": "Blindsighted"
+    },
+    {
+      "authors": [
+        "M.K. Preston"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2002",
+      "category": "Best First Mystery",
+      "position": "2002.03",
+      "result": "nominee",
+      "title": "Perhaps She\u2019ll Die"
+    },
+    {
+      "authors": [
+        "Julia Spencer-Fleming"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2003",
+      "category": "Best First Mystery",
+      "position": "2003",
+      "result": "winner",
+      "title": "In the Bleak Midwinter"
+    },
+    {
+      "authors": [
+        "Radine Trees Nehring"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2003",
+      "category": "Best First Mystery",
+      "position": "2003.01",
+      "result": "nominee",
+      "title": "A Valley To Die For"
+    },
+    {
+      "authors": [
+        "Jonathon King"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2003",
+      "category": "Best First Mystery",
+      "position": "2003.02",
+      "result": "nominee",
+      "title": "The Blue Edge of Midnight"
+    },
+    {
+      "authors": [
+        "Eddie Muller"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2003",
+      "category": "Best First Mystery",
+      "position": "2003.03",
+      "result": "nominee",
+      "title": "The Distance"
+    },
+    {
+      "authors": [
+        "Jacqueline Winspear"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2004",
+      "category": "Best First Mystery",
+      "position": "2004",
+      "result": "winner",
+      "title": "Maisie Dobbs"
+    },
+    {
+      "authors": [
+        "James Hime"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2004",
+      "category": "Best First Mystery",
+      "position": "2004.01",
+      "result": "nominee",
+      "title": "Night of the Dance"
+    },
+    {
+      "authors": [
+        "Rebecca C. Pawel"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2004",
+      "category": "Best First Mystery",
+      "position": "2004.02",
+      "result": "nominee",
+      "title": "Death of a Nationalist"
+    },
+    {
+      "authors": [
+        "Olen Steinhauer"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2004",
+      "category": "Best First Mystery",
+      "position": "2004.03",
+      "result": "nominee",
+      "title": "The Bridge of Sighs"
+    },
+    {
+      "authors": [
+        "Harley Jane Kozak"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2005",
+      "category": "Best First Mystery",
+      "position": "2005",
+      "result": "winner",
+      "title": "Dating Dead Men"
+    },
+    {
+      "authors": [
+        "Sandra Balzo"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2005",
+      "category": "Best First Mystery",
+      "position": "2005.01",
+      "result": "nominee",
+      "title": "Uncommon Grounds"
+    },
+    {
+      "authors": [
+        "Naomi Hirahara"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2005",
+      "category": "Best First Mystery",
+      "position": "2005.02",
+      "result": "nominee",
+      "title": "Summer of the Big Bachi"
+    },
+    {
+      "authors": [
+        "J A Konrath"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2005",
+      "category": "Best First Mystery",
+      "position": "2005.03",
+      "result": "nominee",
+      "title": "Whiskey Sour"
+    },
+    {
+      "authors": [
+        "Dylan Schaffer"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2005",
+      "category": "Best First Mystery",
+      "position": "2005.04",
+      "result": "nominee",
+      "title": "Misdemeanor Man"
+    },
+    {
+      "authors": [
+        "Brian Freeman"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2006",
+      "category": "Best First Mystery",
+      "position": "2006",
+      "result": "winner",
+      "title": "Immoral"
+    },
+    {
+      "authors": [
+        "Mike Harrison"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2006",
+      "category": "Best First Mystery",
+      "position": "2006.01",
+      "result": "nominee",
+      "title": "All Shook Up"
+    },
+    {
+      "authors": [
+        "Randall Hicks"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2006",
+      "category": "Best First Mystery",
+      "position": "2006.02",
+      "result": "nominee",
+      "title": "Baby Game"
+    },
+    {
+      "authors": [
+        "Nick Stone"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2007",
+      "category": "Best First Mystery",
+      "position": "2007",
+      "result": "winner",
+      "title": "Mr. Clarinet"
+    },
+    {
+      "authors": [
+        "Jane K. Cleland"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2007",
+      "category": "Best First Mystery",
+      "position": "2007.01",
+      "result": "nominee",
+      "title": "Consigned to Death"
+    },
+    {
+      "authors": [
+        "Troy Cook"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2007",
+      "category": "Best First Mystery",
+      "position": "2007.02",
+      "result": "nominee",
+      "title": "47 Rules of Highly Effective Bank Robbers"
+    },
+    {
+      "authors": [
+        "John Hart"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2007",
+      "category": "Best First Mystery",
+      "position": "2007.03",
+      "result": "nominee",
+      "title": "King of Lies"
+    },
+    {
+      "authors": [
+        "Cornelia Read"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2007",
+      "category": "Best First Mystery",
+      "position": "2007.04",
+      "result": "nominee",
+      "title": "A Field of Darkness"
+    },
+    {
+      "authors": [
+        "Tana French"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2008",
+      "category": "Best First Mystery",
+      "position": "2008",
+      "result": "winner",
+      "title": "In the Woods"
+    },
+    {
+      "authors": [
+        "Joe Hill"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2008",
+      "category": "Best First Mystery",
+      "position": "2008.01",
+      "result": "nominee",
+      "title": "Heart-Shaped Box"
+    },
+    {
+      "authors": [
+        "Lisa Lutz"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2008",
+      "category": "Best First Mystery",
+      "position": "2008.02",
+      "result": "nominee",
+      "title": "The Spellman Files"
+    },
+    {
+      "authors": [
+        "Tim Maleeny"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2008",
+      "category": "Best First Mystery",
+      "position": "2008.03",
+      "result": "nominee",
+      "title": "Stealing the Dragon"
+    },
+    {
+      "authors": [
+        "Matt Beynon Rees"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2008",
+      "category": "Best First Mystery",
+      "position": "2008.04",
+      "result": "nominee",
+      "title": "The Collaborator of Bethlehem"
+    },
+    {
+      "authors": [
+        "Stieg Larsson"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2009",
+      "category": "Best First Mystery",
+      "position": "2009",
+      "result": "winner",
+      "title": "The Girl with the Dragon Tattoo"
+    },
+    {
+      "authors": [
+        "Zoe Ferraris"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2009",
+      "category": "Best First Mystery",
+      "position": "2009.01",
+      "result": "nominee",
+      "title": "Finding Nouf"
+    },
+    {
+      "authors": [
+        "G.M. Malliet"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2009",
+      "category": "Best First Mystery",
+      "position": "2009.02",
+      "result": "nominee",
+      "title": "Death of a Cozy Writer"
+    },
+    {
+      "authors": [
+        "Charlie Newton"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2009",
+      "category": "Best First Mystery",
+      "position": "2009.03",
+      "result": "nominee",
+      "title": "Calumet City"
+    },
+    {
+      "authors": [
+        "Scott Pratt"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2009",
+      "category": "Best First Mystery",
+      "position": "2009.04",
+      "result": "nominee",
+      "title": "An Innocent Client"
+    },
+    {
+      "authors": [
+        "Michael Stanley"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2009",
+      "category": "Best First Mystery",
+      "position": "2009.05",
+      "result": "nominee",
+      "title": "A Carrion Death"
+    },
+    {
+      "authors": [
+        "Dan Waddell"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2009",
+      "category": "Best First Mystery",
+      "position": "2009.06",
+      "result": "nominee",
+      "title": "The Blood Detective"
+    },
+    {
+      "authors": [
+        "Alan Bradley"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2010",
+      "category": "Best First Mystery",
+      "position": "2010",
+      "result": "winner",
+      "title": "The Sweetness at the Bottom of the Pie"
+    },
+    {
+      "authors": [
+        "Jamie Freveletti"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2010",
+      "category": "Best First Mystery",
+      "position": "2010.01",
+      "result": "nominee",
+      "title": "Running from the Devil"
+    },
+    {
+      "authors": [
+        "Sophie Littlefield"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2010",
+      "category": "Best First Mystery",
+      "position": "2010.02",
+      "result": "nominee",
+      "title": "A Bad Day for Sorry"
+    },
+    {
+      "authors": [
+        "Stuart Neville"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2010",
+      "category": "Best First Mystery",
+      "position": "2010.03",
+      "result": "nominee",
+      "title": "The Ghosts of Belfast"
+    },
+    {
+      "authors": [
+        "Malla Nunn"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2010",
+      "category": "Best First Mystery",
+      "position": "2010.04",
+      "result": "nominee",
+      "title": "A Beautiful Place to Die"
+    },
+    {
+      "authors": [
+        "Bruce DeSilva"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2011",
+      "category": "Best First Mystery",
+      "position": "2011",
+      "result": "winner",
+      "title": "Rogue Island"
+    },
+    {
+      "authors": [
+        "Hilary Davidson"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2011",
+      "category": "Best First Mystery",
+      "position": "2011.01",
+      "result": "nominee",
+      "title": "The Damage Done"
+    },
+    {
+      "authors": [
+        "Paul Doiron"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2011",
+      "category": "Best First Mystery",
+      "position": "2011.02",
+      "result": "nominee",
+      "title": "The Poacher\u2019s Son"
+    },
+    {
+      "authors": [
+        "Sasscer Hill"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2011",
+      "category": "Best First Mystery",
+      "position": "2011.03",
+      "result": "nominee",
+      "title": "Full Mortality"
+    },
+    {
+      "authors": [
+        "Simon Lelic"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2011",
+      "category": "Best First Mystery",
+      "position": "2011.04",
+      "result": "nominee",
+      "title": "A Thousand Cuts"
+    },
+    {
+      "authors": [
+        "Leonard Rosen"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2012",
+      "category": "Best First Mystery",
+      "position": "2012",
+      "result": "winner",
+      "title": "All Cry Chaos"
+    },
+    {
+      "authors": [
+        "Sara J. Henry"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2012",
+      "category": "Best First Mystery",
+      "position": "2012.01",
+      "result": "nominee",
+      "title": "Learning to Swim"
+    },
+    {
+      "authors": [
+        "Darrell James"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2012",
+      "category": "Best First Mystery",
+      "position": "2012.02",
+      "result": "nominee",
+      "title": "Nazareth Child"
+    },
+    {
+      "authors": [
+        "Alice LaPlante"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2012",
+      "category": "Best First Mystery",
+      "position": "2012.03",
+      "result": "nominee",
+      "title": "Turn of Mind"
+    },
+    {
+      "authors": [
+        "Taylor Stevens"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2012",
+      "category": "Best First Mystery",
+      "position": "2012.04",
+      "result": "nominee",
+      "title": "The Informationist"
+    },
+    {
+      "authors": [
+        "S.J. Watson"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2012",
+      "category": "Best First Mystery",
+      "position": "2012.05",
+      "result": "nominee",
+      "title": "Before I Go To Sleep"
+    },
+    {
+      "authors": [
+        "Daniel Friedman"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2013",
+      "category": "Best First Mystery",
+      "position": "2013",
+      "result": "winner",
+      "title": "Don\u2019t Ever Get Old"
+    },
+    {
+      "authors": [
+        "Susan M. Boyer"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2013",
+      "category": "Best First Mystery",
+      "position": "2013.01",
+      "result": "nominee",
+      "title": "Low Country Boil"
+    },
+    {
+      "authors": [
+        "Susan Elia MacNeal"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2013",
+      "category": "Best First Mystery",
+      "position": "2013.02",
+      "result": "nominee",
+      "title": "Mr. Churchill\u2019s Secretary"
+    },
+    {
+      "authors": [
+        "Chris Pavone"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2013",
+      "category": "Best First Mystery",
+      "position": "2013.03",
+      "result": "nominee",
+      "title": "The Expats"
+    },
+    {
+      "authors": [
+        "Terry Shames"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2014",
+      "category": "Best First Mystery",
+      "position": "2014",
+      "result": "winner",
+      "title": "A Killing at Cotton Hill"
+    },
+    {
+      "authors": [
+        "Matt Coyle"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2014",
+      "category": "Best First Mystery",
+      "position": "2014.01",
+      "result": "nominee",
+      "title": "Yesterday\u2019s Echo"
+    },
+    {
+      "authors": [
+        "Becky Masterman"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2014",
+      "category": "Best First Mystery",
+      "position": "2014.02",
+      "result": "nominee",
+      "title": "Rage Against the Dying"
+    },
+    {
+      "authors": [
+        "Jenny Milchman"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2014",
+      "category": "Best First Mystery",
+      "position": "2014.03",
+      "result": "nominee",
+      "title": "Cover of Snow"
+    },
+    {
+      "authors": [
+        "Derek Miller"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2014",
+      "category": "Best First Mystery",
+      "position": "2014.04",
+      "result": "nominee",
+      "title": "Norwegian by Night"
+    },
+    {
+      "authors": [
+        "Julia Dahl"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2015",
+      "category": "Best First Mystery",
+      "position": "2015",
+      "result": "winner",
+      "title": "Invisible City"
+    },
+    {
+      "authors": [
+        "Kristi Belcamino"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2015",
+      "category": "Best First Mystery",
+      "position": "2015.01",
+      "result": "nominee",
+      "title": "Blessed Are the Dead"
+    },
+    {
+      "authors": [
+        "Tom Bouman"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2015",
+      "category": "Best First Mystery",
+      "position": "2015.02",
+      "result": "nominee",
+      "title": "Dry Bones in the Valley"
+    },
+    {
+      "authors": [
+        "Sarah Hilary"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2015",
+      "category": "Best First Mystery",
+      "position": "2015.03",
+      "result": "nominee",
+      "title": "Someone Else\u2019s Skin"
+    },
+    {
+      "authors": [
+        "Elizabeth Little"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2015",
+      "category": "Best First Mystery",
+      "position": "2015.04",
+      "result": "nominee",
+      "title": "Dear Daughter"
+    },
+    {
+      "authors": [
+        "Lori Rader-Day"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2015",
+      "category": "Best First Mystery",
+      "position": "2015.05",
+      "result": "nominee",
+      "title": "The Black Hour"
+    },
+    {
+      "authors": [
+        "Glen Erik Hamilton"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2016",
+      "category": "Best First Mystery",
+      "position": "2016",
+      "result": "winner",
+      "title": "Past Crimes"
+    },
+    {
+      "authors": [
+        "Patricia Abbott"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2016",
+      "category": "Best First Mystery",
+      "position": "2016.01",
+      "result": "nominee",
+      "title": "Concrete Angel"
+    },
+    {
+      "authors": [
+        "Chris Holm"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2016",
+      "category": "Best First Mystery",
+      "position": "2016.02",
+      "result": "nominee",
+      "title": "The Killing Kind"
+    },
+    {
+      "authors": [
+        "David Joy"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2016",
+      "category": "Best First Mystery",
+      "position": "2016.03",
+      "result": "nominee",
+      "title": "Where All Light Tends to Go"
+    },
+    {
+      "authors": [
+        "Ausma Zehanat Khan"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2016",
+      "category": "Best First Mystery",
+      "position": "2016.04",
+      "result": "nominee",
+      "title": "The Unquiet Dead"
+    },
+    {
+      "authors": [
+        "Art Taylor"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2016",
+      "category": "Best First Mystery",
+      "position": "2016.05",
+      "result": "nominee",
+      "title": "On the Road with Del and Louise"
+    },
+    {
+      "authors": [
+        "Joe Ide"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2017",
+      "category": "Best First Mystery",
+      "position": "2017",
+      "result": "winner",
+      "title": "IQ"
+    },
+    {
+      "authors": [
+        "Fiona Barton"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2017",
+      "category": "Best First Mystery",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "The Widow"
+    },
+    {
+      "authors": [
+        "Flynn Berry"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2017",
+      "category": "Best First Mystery",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "Under the Harrow"
+    },
+    {
+      "authors": [
+        "Bill Beverly"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2017",
+      "category": "Best First Mystery",
+      "position": "2017.03",
+      "result": "nominee",
+      "title": "Dodgers"
+    },
+    {
+      "authors": [
+        "Renee Patrick"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2017",
+      "category": "Best First Mystery",
+      "position": "2017.04",
+      "result": "nominee",
+      "title": "Design for Dying"
+    },
+    {
+      "authors": [
+        "Sheena Kamal"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2018",
+      "category": "Best First Mystery",
+      "position": "2018",
+      "result": "winner",
+      "title": "The Lost Ones"
+    },
+    {
+      "authors": [
+        "Kellye Garrett"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2018",
+      "category": "Best First Mystery",
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "Hollywood Homicide"
+    },
+    {
+      "authors": [
+        "Jane Harper"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2018",
+      "category": "Best First Mystery",
+      "position": "2018.02",
+      "result": "nominee",
+      "title": "The Dry"
+    },
+    {
+      "authors": [
+        "Jordan Harper"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2018",
+      "category": "Best First Mystery",
+      "position": "2018.03",
+      "result": "nominee",
+      "title": "She Rides Shotgun"
+    },
+    {
+      "authors": [
+        "Kristen Lepionka"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2018",
+      "category": "Best First Mystery",
+      "position": "2018.04",
+      "result": "nominee",
+      "title": "The Last Place You Look"
+    },
+    {
+      "authors": [
+        "Wendall Thomas"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2018",
+      "category": "Best First Mystery",
+      "position": "2018.05",
+      "result": "nominee",
+      "title": "Lost Luggage"
+    },
+    {
+      "authors": [
+        "John Copenhaver"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2019",
+      "category": "Best First Mystery",
+      "position": "2019",
+      "result": "winner",
+      "title": "Dodging and Burning"
+    },
+    {
+      "authors": [
+        "Oyinkan Braithwaite"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2019",
+      "category": "Best First Mystery",
+      "position": "2019.01",
+      "result": "nominee",
+      "title": "My Sister, the Serial Killer"
+    },
+    {
+      "authors": [
+        "Delia Owens"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2019",
+      "category": "Best First Mystery",
+      "position": "2019.02",
+      "result": "nominee",
+      "title": "Where the Crawdads Sing"
+    },
+    {
+      "authors": [
+        "Catherine Steadman"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2019",
+      "category": "Best First Mystery",
+      "position": "2019.03",
+      "result": "nominee",
+      "title": "Something in the Water"
+    },
+    {
+      "authors": [
+        "C.J. Tudor"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2019",
+      "category": "Best First Mystery",
+      "position": "2019.04",
+      "result": "nominee",
+      "title": "The Chalk Man"
+    },
+    {
+      "authors": [
+        "Tara Laskowski"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2020",
+      "category": "Best First Mystery",
+      "position": "2020",
+      "result": "winner",
+      "title": "One Night Gone"
+    },
+    {
+      "authors": [
+        "Tori Eldridge"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2020",
+      "category": "Best First Mystery",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "The Ninja Daughter"
+    },
+    {
+      "authors": [
+        "Samantha Downing"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2020",
+      "category": "Best First Mystery",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "My Lovely Wife"
+    },
+    {
+      "authors": [
+        "Angie Kim"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2020",
+      "category": "Best First Mystery",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "Miracle Creek"
+    },
+    {
+      "authors": [
+        "J.P. Pomare"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2020",
+      "category": "Best First Mystery",
+      "position": "2020.04",
+      "result": "nominee",
+      "title": "Call Me Evie"
+    },
+    {
+      "authors": [
+        "Lauren Wilkinson"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2020",
+      "category": "Best First Mystery",
+      "position": "2020.05",
+      "result": "nominee",
+      "title": "American Spy"
+    },
+    {
+      "authors": [
+        "David Heska Wanbli Weiden"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2021",
+      "category": "Best First Mystery",
+      "position": "2021",
+      "result": "winner",
+      "title": "Winter Counts"
+    },
+    {
+      "authors": [
+        "Deepa Anappara"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2021",
+      "category": "Best First Mystery",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "Djinn Patrol on the Purple Line"
+    },
+    {
+      "authors": [
+        "Nev March"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2021",
+      "category": "Best First Mystery",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "Murder in Old Bombay"
+    },
+    {
+      "authors": [
+        "Richard Osman"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2021",
+      "category": "Best First Mystery",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "The Thursday Murder Club"
+    },
+    {
+      "authors": [
+        "Stephanie Wrobel"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2021",
+      "category": "Best First Mystery",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "Darling Rose Gold"
+    },
+    {
+      "authors": [
+        "Mia P. Manansala"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2022",
+      "category": "Best First Mystery",
+      "position": "2022",
+      "result": "winner",
+      "title": "Arsenic and Adobo"
+    },
+    {
+      "authors": [
+        "Alexandra Andrews"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2022",
+      "category": "Best First Mystery",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "Who is Maude Dixon?"
+    },
+    {
+      "authors": [
+        "Abigail Dean"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2022",
+      "category": "Best First Mystery",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "Girl A"
+    },
+    {
+      "authors": [
+        "Erin Flanagan"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2022",
+      "category": "Best First Mystery",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "Deer Season"
+    },
+    {
+      "authors": [
+        "Wanda M. Morris"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2022",
+      "category": "Best First Mystery",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "All Her Little Secrets"
+    },
+    {
+      "authors": [
+        "Nita Prose"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2023",
+      "category": "Best First Mystery",
+      "position": "2023",
+      "result": "winner",
+      "title": "The Maid"
+    },
+    {
+      "authors": [
+        "Jacqueline Bublitz"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2023",
+      "category": "Best First Mystery",
+      "position": "2023.01",
+      "result": "nominee",
+      "title": "Before You Knew My Name"
+    },
+    {
+      "authors": [
+        "A.J. Devlin"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2023",
+      "category": "Best First Mystery",
+      "position": "2023.02",
+      "result": "nominee",
+      "title": "Five Moves of Doom"
+    },
+    {
+      "authors": [
+        "Ramona Emerson"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2023",
+      "category": "Best First Mystery",
+      "position": "2023.03",
+      "result": "nominee",
+      "title": "Shutter"
+    },
+    {
+      "authors": [
+        "Rob Osler"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2023",
+      "category": "Best First Mystery",
+      "position": "2023.04",
+      "result": "nominee",
+      "title": "Devil\u2019s Chew Toy"
+    },
+    {
+      "authors": [
+        "Jane Pek"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2023",
+      "category": "Best First Mystery",
+      "position": "2023.05",
+      "result": "nominee",
+      "title": "The Verifiers"
+    },
+    {
+      "authors": [
+        "I.S. Berry"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2024",
+      "category": "Best First Mystery",
+      "position": "2024",
+      "result": "winner",
+      "title": "The Peacock and the Sparrow"
+    },
+    {
+      "authors": [
+        "Amy Chua"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2024",
+      "category": "Best First Mystery",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "The Golden Gate"
+    },
+    {
+      "authors": [
+        "Margot Douaihy"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2024",
+      "category": "Best First Mystery",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "Scorched Grace"
+    },
+    {
+      "authors": [
+        "Ritu Mukerji"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2024",
+      "category": "Best First Mystery",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "Murder by Degrees"
+    },
+    {
+      "authors": [
+        "Josh Pachter"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2024",
+      "category": "Best First Mystery",
+      "position": "2024.04",
+      "result": "nominee",
+      "title": "Dutch Threat"
+    },
+    {
+      "authors": [
+        "Nina Simon"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2024",
+      "category": "Best First Mystery",
+      "position": "2024.05",
+      "result": "nominee",
+      "title": "Mother-Daughter Murder Night"
+    },
+    {
+      "authors": [
+        "Jennifer K. Morita"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2025",
+      "category": "Best First Mystery",
+      "position": "2025",
+      "result": "winner",
+      "title": "Ghosts of Waikiki"
+    },
+    {
+      "authors": [
+        "Brian Copeland"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2025",
+      "category": "Best First Mystery",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "Outraged"
+    },
+    {
+      "authors": [
+        "David Goodman"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2025",
+      "category": "Best First Mystery",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "A Reluctant Spy"
+    },
+    {
+      "authors": [
+        "K.T. Nguyen"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2025",
+      "category": "Best First Mystery",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "You Know What You Did"
+    },
+    {
+      "authors": [
+        "Hansen Shi"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2025",
+      "category": "Best First Mystery",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "The Expat"
+    },
+    {
+      "authors": [
+        "Henry Wise"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2025",
+      "category": "Best First Mystery",
+      "position": "2025.05",
+      "result": "nominee",
+      "title": "Holy City"
+    },
+    {
+      "authors": [
+        "Zoe B. Wallbrook"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2026",
+      "category": "Best First Mystery",
+      "position": "2026",
+      "result": "winner",
+      "title": "History Lessons"
+    },
+    {
+      "authors": [
+        "Sandra Jackson-Opoku"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2026",
+      "category": "Best First Mystery",
+      "position": "2026.01",
+      "result": "nominee",
+      "title": "Savvy Summers and the Sweet Potato Crimes"
+    },
+    {
+      "authors": [
+        "Jakob Kerr"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2026",
+      "category": "Best First Mystery",
+      "position": "2026.02",
+      "result": "nominee",
+      "title": "Dead Money"
+    },
+    {
+      "authors": [
+        "Michael Rigg"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2026",
+      "category": "Best First Mystery",
+      "position": "2026.03",
+      "result": "nominee",
+      "title": "Voices of the Elysian Fields"
+    },
+    {
+      "authors": [
+        "Tanya Scott"
+      ],
+      "award": "Macavity Award",
+      "award_year": "2026",
+      "category": "Best First Mystery",
+      "position": "2026.04",
+      "result": "nominee",
+      "title": "Stillwater"
+    }
+  ],
+  "fetched_at": "2026-11-16T01:05:01Z",
+  "list_id": "macavity_award_first_mystery",
+  "list_name": "Macavity Award - First Mystery",
+  "match_series": false,
+  "notes": [],
+  "parser": "macavity_award_first_mystery",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Macavity Award - First Mystery",
+    "source_id": "macavity_award_first_mystery",
+    "url": "https://mysteryreaders.org/macavity-awards/"
+  }
+}

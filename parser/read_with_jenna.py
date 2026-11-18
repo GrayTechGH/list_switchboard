@@ -23,11 +23,12 @@ from .book_club_base import (
   text_blocks,
 )
 from .base import parsed_source
+from .incremental import ParsedUnitCache, position_independent_fingerprint
 
 try:
-  from calibre_plugins.list_switchboard.errors import ImportCancelledError
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
 except ImportError:
-  from errors import ImportCancelledError
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 
 ENTRY_CORRECTIONS = {
@@ -148,9 +149,11 @@ class ReadWithJennaJuniorParser(BookClubParserBase):
 
   def parse(
       self, html, base_url, name=None, scope=None, fetch_url=None,
-      bootstrap_url=''):
+      bootstrap_url='', cached_parsed=None, incremental_update=False):
     scope = scope or self.DEFAULT_SCOPE
     notes = []
+    units = ParsedUnitCache('jenna-jr-years-v1', [base_url, scope],
+      cached_parsed, incremental_update)
     initial_soup = BeautifulSoup(html or '<html></html>', 'html.parser')
     initial_year = self.page_year(initial_soup, base_url)
     if initial_year:
@@ -167,13 +170,28 @@ class ReadWithJennaJuniorParser(BookClubParserBase):
           'Read With Jenna Jr. annual discovery requires a fetch callback.')
       first_page = (current_year, current_url, fetch_url(current_url))
 
-    pages = self.collect_annual_pages(first_page, fetch_url, notes)
+    link_map = {}
+    pages = self.collect_annual_pages(first_page, fetch_url, notes, units, link_map)
     positioned = []
     for year, page_url, page_html in sorted(pages, key=lambda item: item[0]):
+      if page_html is None:
+        category_order = {value:index for index,value in enumerate(JUNIOR_CATEGORY_ORDER)}
+        positioned.extend((year,category_order.get(entry.get('scope_flags'),0),index,entry)
+          for index,entry in enumerate(units.units[page_url]['entries']))
+        continue
       page_entries, page_notes = self.entries_from_annual_page(
         page_html, page_url, year, scope, base_url)
       notes.extend(page_notes)
+      complete = bool(page_entries) and not page_notes
+      if not complete and units.previous(page_url):
+        category_order = {value:index for index,value in enumerate(JUNIOR_CATEGORY_ORDER)}
+        positioned.extend((year,category_order.get(entry.get('scope_flags'),0),index,entry)
+          for index,entry in enumerate(units.failed(page_url,year)))
+        continue
       positioned.extend(page_entries)
+      units.put(page_url, [item[3] for item in page_entries], year,
+        complete=complete,
+        metadata={'links': link_map.get(page_url, [])})
 
     positioned.sort(key=lambda item: (item[0], item[1], item[2]))
     entries = []
@@ -183,15 +201,20 @@ class ReadWithJennaJuniorParser(BookClubParserBase):
       entries.append(entry)
     if not entries:
       raise ValueError('No Read With Jenna Jr. annual selections were found.')
-    return {
+    parsed = {
       'name': name or self.CLUB_NAME,
       'source': parsed_source(name or self.CLUB_NAME, base_url),
       'entries': entries,
       'notes': notes,
       'match_series': False,
     }
+    parsed['incremental_state'] = units.state(entries, identity=position_independent_fingerprint)
+    parsed['incremental_state']['discovery'] = {'refresh_units': [first_page[1]]}
+    if incremental_update:
+      parsed['incremental_update'] = True
+    return parsed
 
-  def collect_annual_pages(self, first_page, fetch_url, notes):
+  def collect_annual_pages(self, first_page, fetch_url, notes, units=None, link_map=None):
     pages = []
     queue = [first_page]
     visited = set()
@@ -203,21 +226,41 @@ class ReadWithJennaJuniorParser(BookClubParserBase):
       visited.add(page_url)
       visited_years.add(year)
       pages.append((year, page_url, page_html))
-      soup = BeautifulSoup(page_html or '<html></html>', 'html.parser')
-      for linked_year, linked_url in self.annual_links(soup, page_url):
+      if page_html is None and units is not None:
+        links = ((units.old_units.get(page_url) or {}).get('metadata') or {}).get('links') or []
+      else:
+        soup = BeautifulSoup(page_html or '<html></html>', 'html.parser')
+        links = self.annual_links(soup, page_url)
+      if link_map is not None:
+        link_map[page_url] = links
+      for linked_year, linked_url in links:
         queued = any(
           item[0] == linked_year or item[1] == linked_url for item in queue)
         if linked_year in visited_years or linked_url in visited or queued:
           continue
         if fetch_url is None:
           continue
+        metadata = ((units.old_units.get(linked_url) or {}).get('metadata') or {}) if units else {}
+        cached_links = metadata.get('links')
+        valid_links = isinstance(cached_links, list) and all(
+          isinstance(pair, (list,tuple)) and len(pair)==2 and
+          isinstance(pair[0],str) and re.fullmatch(r'20\d{2}',pair[0]) and
+          isinstance(pair[1],str) and self.is_today_url(pair[1]) for pair in cached_links)
+        if units is not None and linked_year < first_page[0] and valid_links:
+          reused = units.reuse(linked_url, linked_year)
+          if reused is not None:
+            queue.append((linked_year, linked_url, None))
+            continue
         try:
           linked_html = fetch_url(linked_url)
-        except ImportCancelledError:
+        except (ImportCancelledError, CamoufoxRequiredError):
           raise
         except Exception as err:
           notes.append(
             f'Read With Jenna Jr. {linked_year} page could not be fetched: {err}')
+          if units is not None:
+            units.failed(linked_url, linked_year)
+            queue.append((linked_year, linked_url, None))
           continue
         queue.append((linked_year, linked_url, linked_html))
     return pages

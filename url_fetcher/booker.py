@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # vim:fileencoding=UTF-8:ts=2:sw=2:sta:et:sts=2:ai
 
-import re
-from urllib.parse import urljoin
-
-from lxml import html as lxml_html
+from .booker_transport import BookerOfficialSourceAttempt
 
 from .generic import (
   CATEGORY_LITERARY_GENERAL_FICTION,
@@ -18,12 +15,12 @@ try:
   from calibre_plugins.list_switchboard.parser.source_fallback import (
     SourceAttempt, SourceFallbackRunner,
   )
-  from calibre_plugins.list_switchboard.parser.award_base import normalize_line
-  from calibre_plugins.list_switchboard.parser.generic import position_sort_key
+  from calibre_plugins.list_switchboard.parser.booker_updates import fetch_booker_years
+  from calibre_plugins.list_switchboard.parser.booker_modern import index_links
 except ImportError:
   from parser.source_fallback import SourceAttempt, SourceFallbackRunner
-  from parser.award_base import normalize_line
-  from parser.generic import position_sort_key
+  from parser.booker_updates import fetch_booker_years
+  from parser.booker_modern import index_links
 
 
 BOOKER_PRIZE_YEARS_URL = 'https://thebookerprizes.com/the-booker-library/prize-years'
@@ -70,15 +67,15 @@ class UrlFetcherBookerPrizeBase(UrlFetcherGeneric):
 
   def source_attempts(self):
     return (
-      SourceAttempt(
+      BookerOfficialSourceAttempt(self,
         'Official Booker',
         self.URL,
-        lambda html, url, fetch_url=None, **_kwargs: self.parse_official_years(
+        lambda html, url, fetch_url=None, cached_parsed=None, incremental_update=False, progress=None, **_kwargs: self.parse_official_years(
           html,
           url,
           fetch_url,
-          self.parser()),
-        source_rank=0),
+          self.parser(), cached_parsed, incremental_update, progress),
+        source_rank=0, supports_incremental=True),
       SourceAttempt(
         'Wikipedia',
         self.WIKIPEDIA_URL,
@@ -96,7 +93,8 @@ class UrlFetcherBookerPrizeBase(UrlFetcherGeneric):
   def fetch_and_parse(
       self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
       before_fetch=None, after_fetch=None, before_parse=None,
-      force_fallback_level=0, disable_fallbacks=False, source_choice=None):
+      force_fallback_level=0, disable_fallbacks=False, source_choice=None,
+      cached_parsed=None, incremental_update=False):
     parsed = SourceFallbackRunner(
       self.source_attempts(),
       error_class=UrlFetcherError).run(
@@ -108,57 +106,32 @@ class UrlFetcherBookerPrizeBase(UrlFetcherGeneric):
         before_parse=before_parse,
         force_fallback_level=force_fallback_level,
         disable_fallbacks=disable_fallbacks,
-        source_choice=source_choice)
+        source_choice=source_choice, cached_parsed=cached_parsed,
+        incremental_update=incremental_update)
     parsed.setdefault('match_series', self.options.get('match_series', True))
     return parsed
 
   def parse(self, html, **_kwargs):
     return self.parse_official_years(html, self.URL, None, self.parser())
 
-  def parse_official_years(self, html, base_url, fetch_url, parser):
-    urls = self.year_urls(html, base_url)
-    if not urls:
-      raise UrlFetcherError('Official Booker Library had no prize-year URLs')
+  def parse_official_years(self, html, base_url, fetch_url, parser,
+      cached_parsed=None, incremental_update=False, progress=None):
     if fetch_url is None:
-      urls = [base_url]
-      fetch_url = lambda _url: html
-
-    entries = []
-    notes = []
-    for year_url in urls:
-      parsed = parser.parse(
-        fetch_url(year_url),
-        year_url,
-        self.NAME,
-        self.CATEGORY,
-        fetch_url=fetch_url)
-      entries.extend(parsed.get('entries', ()))
-      notes.extend(parsed.get('notes', ()))
-    if not entries:
+      return parser.parse(html, base_url, self.NAME, self.CATEGORY)
+    parsed = fetch_booker_years(self, parser, html, base_url, fetch_url,
+      cached_parsed, incremental_update, progress)
+    if not parsed.get('entries'):
       raise UrlFetcherError('Official Booker Library produced no entries')
-    return {
-      'name': self.NAME,
-      'source': parsed_source(self.NAME, base_url, self.source_id),
-      'entries': sorted(
-        entries, key=lambda item: position_sort_key(item.get('position', ''))),
-      'notes': notes,
-      'match_series': False,
-    }
+    parsed['source'] = parsed_source(self.NAME, base_url, self.source_id)
+    return parsed
 
   def year_urls(self, html, base_url):
-    root = lxml_html.fromstring(html or '<html></html>')
-    urls = []
-    for href in root.xpath('//a[@href]/@href|//option[@value]/@value'):
-      url = urljoin(base_url, href)
-      path = normalize_line(url).rstrip('/')
-      if not re.search(self.YEAR_URL_PATTERN, path):
-        continue
-      if url not in urls:
-        urls.append(url)
-    return urls
+    return index_links(html, base_url, self.YEAR_URL_PATTERN)[0]
 
 
 class UrlFetcherBookerPrize(UrlFetcherBookerPrizeBase):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  FIRST_YEAR = 1969
   source_id = 'booker_prize'
   NAME = 'Booker Prize'
   AWARD_NAME = NAME
@@ -168,6 +141,8 @@ class UrlFetcherBookerPrize(UrlFetcherBookerPrizeBase):
 
 
 class UrlFetcherInternationalBookerPrize(UrlFetcherBookerPrizeBase):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  FIRST_YEAR = 2005
   source_id = 'international_booker_prize'
   NAME = 'International Booker Prize'
   AWARD_NAME = NAME

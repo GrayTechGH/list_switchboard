@@ -16,7 +16,7 @@ Maintenance notes:
 
 import json
 import re
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlsplit
 
 from bs4 import BeautifulSoup
 
@@ -26,12 +26,14 @@ try:
     normalize_heading, normalize_line, strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key # pyright: ignore[reportMissingImports]
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
     normalize_heading, normalize_line, strip_publication_notes,
   )
   from .generic import position_sort_key
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 
 LAMBDA_AWARD_NAME = 'Lambda Literary Awards'
@@ -71,6 +73,7 @@ HEADER_ALIASES = {
   'title': 'title',
   'work': 'title',
   'year': 'year',
+  'year published': 'year',
 }
 
 
@@ -96,6 +99,8 @@ class LambdaLiteraryAwardsRomanceParser(AwardParserBase):
       for url in LAMBDA_CURRENT_URLS:
         try:
           pages.append((url, fetch_url(url)))
+        except (ImportCancelledError, CamoufoxRequiredError):
+          raise
         except Exception as err:
           notes.append(f'Lambda current award page could not be fetched: {url}: {err}')
 
@@ -228,6 +233,12 @@ class LambdaLiteraryAwardsRomanceParser(AwardParserBase):
     return rows
 
   def parse_current_finalists_page(self, html, url):
+    try:
+      from calibre_plugins.list_switchboard.parser.lambda_current import modern_page, read_current
+    except ImportError:
+      from .lambda_current import modern_page, read_current
+    if modern_page(html):
+      return read_current(self, html, url, 'finalists')['rows']
     soup = BeautifulSoup(html, 'html.parser')
     year = self.current_publication_year(soup, url)
     if year is None:
@@ -269,6 +280,12 @@ class LambdaLiteraryAwardsRomanceParser(AwardParserBase):
     }
 
   def parse_current_winners_page(self, html, url):
+    try:
+      from calibre_plugins.list_switchboard.parser.lambda_current import modern_page, read_current
+    except ImportError:
+      from .lambda_current import modern_page, read_current
+    if modern_page(html):
+      return read_current(self, html, url, 'winners')['rows']
     soup = BeautifulSoup(html, 'html.parser')
     year = self.current_publication_year(soup, url)
     if year is None:
@@ -353,7 +370,7 @@ class LambdaLiteraryAwardsRomanceParser(AwardParserBase):
 
   def clean_title(self, value):
     value = strip_publication_notes(normalize_line(value))
-    value = re.sub(r'^\s*(?:winner|finalist)\s*:?\s*', '', value, flags=re.I)
+    value = re.sub(r'^\s*(?:winner|finalist)\s*:\s*', '', value, flags=re.I)
     return value.strip(' "\'\u2018\u2019\u201c\u201d,')
 
   def clean_author(self, value):
@@ -405,7 +422,10 @@ class LambdaLiteraryAwardsRomanceParser(AwardParserBase):
     return int(match.group(0)) if match is not None else None
 
   def has_airtable_embed(self, html):
-    return bool(LAMBDA_AIRTABLE_EMBED_RE.search(html or ''))
+    soup = BeautifulSoup(html or '', 'html.parser')
+    return any(urlsplit(frame['src']).hostname == 'airtable.com' and
+      urlsplit(frame['src']).path.startswith('/embed/')
+      for frame in soup.find_all('iframe', src=True))
 
   def dedupe_rows(self, rows):
     best_rows = {}

@@ -3816,12 +3816,13 @@
       "title": "The Salt Oracle"
     }
   ],
-  "fetched_at": "2026-07-11T00:36:42Z",
+  "fetched_at": "2026-07-22T01:03:00Z",
   "list_id": "bsfa_novel",
   "list_name": "BSFA - Novel",
   "match_series": false,
   "notes": [],
   "parser": "bsfa_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "BSFA - Novel",

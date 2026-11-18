@@ -1,0 +1,981 @@
+{
+  "append_state": {
+    "entry_count": 61,
+    "last_entry_key": "the crimson road|a g slatter",
+    "last_position": "2025.06",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Kirstyn McDermott"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Perfections"
+    },
+    {
+      "authors": [
+        "Lee Battersby"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "The Corpse Rat King"
+    },
+    {
+      "authors": [
+        "Jason Nahrung"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Blood and Dust"
+    },
+    {
+      "authors": [
+        "Marty Young"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "809 Jacob Street"
+    },
+    {
+      "authors": [
+        "Timothy Bowden"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Undead Kelly"
+    },
+    {
+      "authors": [
+        "Scott Tyson"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Topsiders"
+    },
+    {
+      "authors": [
+        "Aaron Sterns",
+        "Greg McLean"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Wolf Creek: Origin"
+    },
+    {
+      "authors": [
+        "Jeremy Bates"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Suicide Forest"
+    },
+    {
+      "authors": [
+        "Greig Beck"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Book of the Dead"
+    },
+    {
+      "authors": [
+        "Lauren Dawes"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Dark Deceit"
+    },
+    {
+      "authors": [
+        "Matthew Tait"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Davey Ribbon"
+    },
+    {
+      "authors": [
+        "Jeremy Bates"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "The Catacombs"
+    },
+    {
+      "authors": [
+        "Kaaron Warren"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "The Grief Hole"
+    },
+    {
+      "authors": [
+        "Greg Chapman"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Hollow House"
+    },
+    {
+      "authors": [
+        "Luke Gracias"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "The Devil's Prayer"
+    },
+    {
+      "authors": [
+        "Rick Kennett"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Presumed Dead"
+    },
+    {
+      "authors": [
+        "Brett McBean"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "The Invasion"
+    },
+    {
+      "authors": [
+        "Lee Murray"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Into the Mist"
+    },
+    {
+      "authors": [
+        "TJ Park"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.06",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Unbidden"
+    },
+    {
+      "authors": [
+        "Deborah Sheldon"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.07",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Devil Dragon"
+    },
+    {
+      "authors": [
+        "Angela Slatter"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Corpselight"
+    },
+    {
+      "authors": [
+        "J.S. Breukelaar"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Aletheia"
+    },
+    {
+      "authors": [
+        "W.W. Mortensen"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Slithers"
+    },
+    {
+      "authors": [
+        "Lois Murphy"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Soon"
+    },
+    {
+      "authors": [
+        "Matthew Tait"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Providence Place"
+    },
+    {
+      "authors": [
+        "Kaaron Warren"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Tide of Stone"
+    },
+    {
+      "authors": [
+        "Alan Baxter"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Devouring Dark"
+    },
+    {
+      "authors": [
+        "Deborah Sheldon"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Contrition"
+    },
+    {
+      "authors": [
+        "Dan Rabarts",
+        "Lee Murray"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Teeth of the Wolf"
+    },
+    {
+      "authors": [
+        "Catherine Jinks"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Shepherd"
+    },
+    {
+      "authors": [
+        "Kate Richards"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Fusion"
+    },
+    {
+      "authors": [
+        "Madeleine D'Este"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "The Flower and the Serpent"
+    },
+    {
+      "authors": [
+        "Matthew Tait"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Deception Pass"
+    },
+    {
+      "authors": [
+        "Venero Armanno"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "The Crying Forest"
+    },
+    {
+      "authors": [
+        "Marty Young"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Gutterbreed"
+    },
+    {
+      "authors": [
+        "Kathleen Jennings"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Flyaway"
+    },
+    {
+      "authors": [
+        "J.P. Townley"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "The Girls Left Behind"
+    },
+    {
+      "authors": [
+        "Cassie Hart"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Butcherbird"
+    },
+    {
+      "authors": [
+        "Martin Livings"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "An Ill Wind"
+    },
+    {
+      "authors": [
+        "Jason Fischer"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Papa Lucy and the Boneman"
+    },
+    {
+      "authors": [
+        "Jennifer Mills"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "The Airways"
+    },
+    {
+      "authors": [
+        "Jeremy Bates"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Merfolk"
+    },
+    {
+      "authors": [
+        "Angela Slatter"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "The Path of Thorns"
+    },
+    {
+      "authors": [
+        "Trent Jamieson"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "The Stone Road"
+    },
+    {
+      "authors": [
+        "James McKenzie Watson"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Denizen"
+    },
+    {
+      "authors": [
+        "Ian J. Middleton",
+        "Denver Grenell"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Red Ruin"
+    },
+    {
+      "authors": [
+        "Katya de Becerra"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "When Ghosts Call Us Home"
+    },
+    {
+      "authors": [
+        "Deborah Sheldon"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Cretaceous Canyon"
+    },
+    {
+      "authors": [
+        "Maria Lewis"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "The Graveyard Shift"
+    },
+    {
+      "authors": [
+        "Zachary Ashford"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Polyphemus"
+    },
+    {
+      "authors": [
+        "Caroline Angel"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/2024-australasian-shadows-awards-winners/"
+      },
+      "title": "The Dead Spot"
+    },
+    {
+      "authors": [
+        "Angela Slatter"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/2024-australasian-shadows-awards-winners/"
+      },
+      "title": "The Briar Book of the Dead"
+    },
+    {
+      "authors": [
+        "Joshua Kemp"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/2024-australasian-shadows-awards-winners/"
+      },
+      "title": "Jasper Cliff"
+    },
+    {
+      "authors": [
+        "JS Brukelaar"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/2024-australasian-shadows-awards-winners/"
+      },
+      "title": "Remedy"
+    },
+    {
+      "authors": [
+        "Kaaron Warren"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/2024-australasian-shadows-awards-winners/"
+      },
+      "title": "The Underhistory"
+    },
+    {
+      "authors": [
+        "Madeleine D'Este"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.01",
+      "result": "shortlisted",
+      "title": "Black Soil White Bread"
+    },
+    {
+      "authors": [
+        "Dmetri Kakmi"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.02",
+      "result": "shortlisted",
+      "title": "The Woman in the Well"
+    },
+    {
+      "authors": [
+        "Martin Livings"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.03",
+      "result": "shortlisted",
+      "title": "The Obituary"
+    },
+    {
+      "authors": [
+        "Margaret McGovern"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.04",
+      "result": "shortlisted",
+      "title": "This Stays Between Us"
+    },
+    {
+      "authors": [
+        "A. Rushby"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.05",
+      "result": "shortlisted",
+      "title": "Slashed Beauties"
+    },
+    {
+      "authors": [
+        "A. G. Slatter"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.06",
+      "result": "shortlisted",
+      "title": "The Crimson Road"
+    }
+  ],
+  "fetched_at": "2026-07-27T07:52:36Z",
+  "list_id": "australasian_shadows_novel",
+  "list_name": "Australasian Shadows - Novel",
+  "match_series": false,
+  "notes": [
+    "Official AHWA current awards page exposes current-cycle finalists only.",
+    "Official AHWA past-winners page includes many historical shortlists, but not uniformly for every category/year.",
+    "Official annual posts supplement recent winner/shortlist gaps.",
+    "Wikipedia is a replacement fallback only; ISFDB is reference-only in V1.",
+    "Official AHWA 2025 Novel row could not be parsed: GUIDELINES",
+    "Official AHWA 2025 Novel row could not be parsed: Full Awards entry rules can be found HERE",
+    "Official AHWA 2025 Novel row could not be parsed: Full entry list can be found HERE",
+    "Official AHWA 2025 Novel row could not be parsed: Up to three works of horror/dark fiction may be entered per author in each of the following categories:"
+  ],
+  "parser": "australasian_shadows_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Australasian Shadows - Novel",
+    "source_id": "australasian_shadows_novel",
+    "url": "https://australasianhorror.com/australian-shadows-awards/"
+  }
+}

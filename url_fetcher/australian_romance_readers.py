@@ -10,6 +10,7 @@ from .generic import (
 
 class UrlFetcherAustralianRomanceReadersAwards(UrlFetcherGeneric):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'australian_romance_readers_awards'
   NAME = 'Australian Romance Readers Awards'
   URL = 'https://australianromancereaders.com.au/awards/'
@@ -26,5 +27,6 @@ class UrlFetcherAustralianRomanceReadersAwards(UrlFetcherGeneric):
       from parser.australian_romance_readers import AustralianRomanceReadersAwardsParser
     return AustralianRomanceReadersAwardsParser()
 
-  def parse(self, html, fetch_url=None, **_kwargs):
-    return self.parser().parse(html, self.URL, self.NAME, fetch_url=fetch_url)
+  def parse(self, html, fetch_url=None,cached_parsed=None,incremental_update=False, **_kwargs):
+    return self.parser().parse(html, self.URL, self.NAME, fetch_url=fetch_url,
+      cached_parsed=cached_parsed,incremental_update=incremental_update)

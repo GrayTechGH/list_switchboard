@@ -1,0 +1,5128 @@
+{
+  "append_state": {
+    "entry_count": 300,
+    "last_entry_key": "king of kings|scott anderson",
+    "last_position": "2025.19",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Walter Isaacson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "History & Biography",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2011"
+      },
+      "title": "Steve Jobs",
+      "votes": "5463"
+    },
+    {
+      "authors": [
+        "Erik Larson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "History & Biography",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2011"
+      },
+      "title": "In the Garden of Beasts",
+      "votes": "3128"
+    },
+    {
+      "authors": [
+        "Robert K. Massie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "History & Biography",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2011"
+      },
+      "title": "Catherine the Great",
+      "votes": "2097"
+    },
+    {
+      "authors": [
+        "Elizabeth Letts"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "History & Biography",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2011"
+      },
+      "title": "The Eighty-Dollar Champion",
+      "votes": "1371"
+    },
+    {
+      "authors": [
+        "Annie Jacobsen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "History & Biography",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2011"
+      },
+      "title": "Area 51",
+      "votes": "1265"
+    },
+    {
+      "authors": [
+        "Gayle Tzemach Lemmon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "History & Biography",
+      "position": "2011.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2011"
+      },
+      "title": "The Dressmaker of Khair Khana",
+      "votes": "1129"
+    },
+    {
+      "authors": [
+        "David McCullough"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "History & Biography",
+      "position": "2011.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2011"
+      },
+      "title": "The Greater Journey",
+      "votes": "943"
+    },
+    {
+      "authors": [
+        "Mitchell Zuckoff"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "History & Biography",
+      "position": "2011.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2011"
+      },
+      "title": "Lost in Shangri-la",
+      "votes": "843"
+    },
+    {
+      "authors": [
+        "Manning Marable"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "History & Biography",
+      "position": "2011.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2011"
+      },
+      "title": "Malcolm X",
+      "votes": "767"
+    },
+    {
+      "authors": [
+        "Paul Collins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "History & Biography",
+      "position": "2011.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2011"
+      },
+      "title": "The Murder of the Century",
+      "votes": "626"
+    },
+    {
+      "authors": [
+        "Candice Millard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "History & Biography",
+      "position": "2011.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2011"
+      },
+      "title": "Destiny of the Republic",
+      "votes": "268"
+    },
+    {
+      "authors": [
+        "Adam Hochschild"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "History & Biography",
+      "position": "2011.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2011"
+      },
+      "title": "To End All Wars",
+      "votes": "261"
+    },
+    {
+      "authors": [
+        "Adam Goodheart"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "History & Biography",
+      "position": "2011.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2011"
+      },
+      "title": "1861",
+      "votes": "246"
+    },
+    {
+      "authors": [
+        "Frank Brady"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "History & Biography",
+      "position": "2011.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2011"
+      },
+      "title": "Endgame",
+      "votes": "219"
+    },
+    {
+      "authors": [
+        "Sarah Vowell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "History & Biography",
+      "position": "2011.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2011"
+      },
+      "title": "Unfamiliar Fishes",
+      "votes": "204"
+    },
+    {
+      "authors": [
+        "Mark Seal"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "History & Biography",
+      "position": "2011.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2011"
+      },
+      "title": "The Man in the Rockefeller Suit",
+      "votes": "158"
+    },
+    {
+      "authors": [
+        "Bill O'Reilly"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "History & Biography",
+      "position": "2011.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2011"
+      },
+      "title": "Killing Lincoln",
+      "votes": "157"
+    },
+    {
+      "authors": [
+        "Charles C. Mann"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "History & Biography",
+      "position": "2011.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2011"
+      },
+      "title": "1493",
+      "votes": "80"
+    },
+    {
+      "authors": [
+        "Janny Scott"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "History & Biography",
+      "position": "2011.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2011"
+      },
+      "title": "A Singular Woman",
+      "votes": "79"
+    },
+    {
+      "authors": [
+        "Julia Scheeres"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "History & Biography",
+      "position": "2011.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2011"
+      },
+      "title": "A Thousand Lives",
+      "votes": "73"
+    },
+    {
+      "authors": [
+        "Sally Bedell Smith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "History & Biography",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2012"
+      },
+      "title": "Elizabeth the Queen: The Life of a Modern Monarch",
+      "votes": "6507"
+    },
+    {
+      "authors": [
+        "Rachel Maddow"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "History & Biography",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2012"
+      },
+      "title": "Drift",
+      "votes": "4313"
+    },
+    {
+      "authors": [
+        "Bill O'Reilly"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "History & Biography",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2012"
+      },
+      "title": "Killing Kennedy",
+      "votes": "4280"
+    },
+    {
+      "authors": [
+        "Bob Spitz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "History & Biography",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2012"
+      },
+      "title": "Dearie",
+      "votes": "2802"
+    },
+    {
+      "authors": [
+        "Blaine Harden"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "History & Biography",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2012"
+      },
+      "title": "Escape from Camp 14",
+      "votes": "2493"
+    },
+    {
+      "authors": [
+        "Eric Blehm"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "History & Biography",
+      "position": "2012.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2012"
+      },
+      "title": "Fearless",
+      "votes": "2183"
+    },
+    {
+      "authors": [
+        "Tom Reiss"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "History & Biography",
+      "position": "2012.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2012"
+      },
+      "title": "The Black Count",
+      "votes": "1972"
+    },
+    {
+      "authors": [
+        "Jon Meacham"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "History & Biography",
+      "position": "2012.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2012"
+      },
+      "title": "Thomas Jefferson",
+      "votes": "1875"
+    },
+    {
+      "authors": [
+        "Robin Gaby Fisher"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "History & Biography",
+      "position": "2012.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2012"
+      },
+      "title": "The Woman Who Wasn't There",
+      "votes": "1780"
+    },
+    {
+      "authors": [
+        "D.T. Max"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "History & Biography",
+      "position": "2012.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2012"
+      },
+      "title": "Every Love Story Is a Ghost Story",
+      "votes": "1662"
+    },
+    {
+      "authors": [
+        "Robert A. Caro"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "History & Biography",
+      "position": "2012.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2012"
+      },
+      "title": "The Passage of Power",
+      "votes": "988"
+    },
+    {
+      "authors": [
+        "Ben Macintyre"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "History & Biography",
+      "position": "2012.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2012"
+      },
+      "title": "Double Cross",
+      "votes": "709"
+    },
+    {
+      "authors": [
+        "Paul French"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "History & Biography",
+      "position": "2012.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2012"
+      },
+      "title": "Midnight in Peking",
+      "votes": "693"
+    },
+    {
+      "authors": [
+        "Mark Sundeen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "History & Biography",
+      "position": "2012.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2012"
+      },
+      "title": "The Man Who Quit Money",
+      "votes": "653"
+    },
+    {
+      "authors": [
+        "Peter L. Bergen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "History & Biography",
+      "position": "2012.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2012"
+      },
+      "title": "Manhunt",
+      "votes": "232"
+    },
+    {
+      "authors": [
+        "Nancy Gibbs"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "History & Biography",
+      "position": "2012.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2012"
+      },
+      "title": "The Presidents Club",
+      "votes": "160"
+    },
+    {
+      "authors": [
+        "Antony Beevor"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "History & Biography",
+      "position": "2012.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2012"
+      },
+      "title": "The Second World War",
+      "votes": "129"
+    },
+    {
+      "authors": [
+        "Tim Weiner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "History & Biography",
+      "position": "2012.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2012"
+      },
+      "title": "Enemies",
+      "votes": "115"
+    },
+    {
+      "authors": [
+        "Douglas Brinkley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "History & Biography",
+      "position": "2012.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2012"
+      },
+      "title": "Cronkite",
+      "votes": "86"
+    },
+    {
+      "authors": [
+        "John M. Barry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "History & Biography",
+      "position": "2012.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2012"
+      },
+      "title": "Roger Williams and the Creation of the American Soul",
+      "votes": "55"
+    },
+    {
+      "authors": [
+        "Brian Jay Jones"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "History & Biography",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2013"
+      },
+      "title": "Jim Henson: The Biography",
+      "votes": "16105"
+    },
+    {
+      "authors": [
+        "Denise Kiernan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "History & Biography",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2013"
+      },
+      "title": "The Girls of Atomic City",
+      "votes": "6847"
+    },
+    {
+      "authors": [
+        "Bill Dedman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "History & Biography",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2013"
+      },
+      "title": "Empty Mansions",
+      "votes": "6381"
+    },
+    {
+      "authors": [
+        "Bill Bryson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "History & Biography",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2013"
+      },
+      "title": "One Summer",
+      "votes": "6053"
+    },
+    {
+      "authors": [
+        "Daniel James Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "History & Biography",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2013"
+      },
+      "title": "The Boys in the Boat",
+      "votes": "3492"
+    },
+    {
+      "authors": [
+        "Matthew Goodman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "History & Biography",
+      "position": "2013.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2013"
+      },
+      "title": "Eighty Days",
+      "votes": "3244"
+    },
+    {
+      "authors": [
+        "Jeff Guinn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "History & Biography",
+      "position": "2013.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2013"
+      },
+      "title": "Manson",
+      "votes": "3222"
+    },
+    {
+      "authors": [
+        "Mitchell Zuckoff"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "History & Biography",
+      "position": "2013.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2013"
+      },
+      "title": "Frozen in Time",
+      "votes": "3066"
+    },
+    {
+      "authors": [
+        "Jeremy Scahill"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "History & Biography",
+      "position": "2013.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2013"
+      },
+      "title": "Dirty Wars",
+      "votes": "2633"
+    },
+    {
+      "authors": [
+        "Rick Atkinson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "History & Biography",
+      "position": "2013.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2013"
+      },
+      "title": "The Guns at Last Light",
+      "votes": "2488"
+    },
+    {
+      "authors": [
+        "Adam Makos"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "History & Biography",
+      "position": "2013.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2013"
+      },
+      "title": "A Higher Call",
+      "votes": "1285"
+    },
+    {
+      "authors": [
+        "Nathaniel Philbrick"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "History & Biography",
+      "position": "2013.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2013"
+      },
+      "title": "Bunker Hill",
+      "votes": "1193"
+    },
+    {
+      "authors": [
+        "Margalit Fox"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "History & Biography",
+      "position": "2013.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2013"
+      },
+      "title": "The Riddle of the Labyrinth",
+      "votes": "837"
+    },
+    {
+      "authors": [
+        "George Packer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "History & Biography",
+      "position": "2013.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2013"
+      },
+      "title": "The Unwinding",
+      "votes": "772"
+    },
+    {
+      "authors": [
+        "Brendan I. Koerner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "History & Biography",
+      "position": "2013.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2013"
+      },
+      "title": "The Skies Belong to Us",
+      "votes": "771"
+    },
+    {
+      "authors": [
+        "Reza Aslan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "History & Biography",
+      "position": "2013.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2013"
+      },
+      "title": "Zealot",
+      "votes": "750"
+    },
+    {
+      "authors": [
+        "Lily Koppel"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "History & Biography",
+      "position": "2013.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2013"
+      },
+      "title": "The Astronaut Wives Club",
+      "votes": "683"
+    },
+    {
+      "authors": [
+        "Bill O'Reilly"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "History & Biography",
+      "position": "2013.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2013"
+      },
+      "title": "Killing Jesus",
+      "votes": "582"
+    },
+    {
+      "authors": [
+        "David Shields"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "History & Biography",
+      "position": "2013.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2013"
+      },
+      "title": "Salinger",
+      "votes": "564"
+    },
+    {
+      "authors": [
+        "Scott Anderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "History & Biography",
+      "position": "2013.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2013"
+      },
+      "title": "Lawrence in Arabia",
+      "votes": "289"
+    },
+    {
+      "authors": [
+        "Helen Rappaport"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "History & Biography",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2014"
+      },
+      "title": "The Romanov Sisters: The Lost Lives of the Daughters of Nicholas and Alexandra",
+      "votes": "21118"
+    },
+    {
+      "authors": [
+        "Karen Abbott"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "History & Biography",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2014"
+      },
+      "title": "Liar, Temptress, Soldier, Spy",
+      "votes": "14093"
+    },
+    {
+      "authors": [
+        "Amy Pascale"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "History & Biography",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2014"
+      },
+      "title": "Joss Whedon",
+      "votes": "10076"
+    },
+    {
+      "authors": [
+        "Bill O'Reilly"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "History & Biography",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2014"
+      },
+      "title": "Killing Patton",
+      "votes": "9933"
+    },
+    {
+      "authors": [
+        "Kara Cooney"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "History & Biography",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2014"
+      },
+      "title": "The Woman Who Would Be King",
+      "votes": "9085"
+    },
+    {
+      "authors": [
+        "Lynn Sherr"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "History & Biography",
+      "position": "2014.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2014"
+      },
+      "title": "Sally Ride",
+      "votes": "8533"
+    },
+    {
+      "authors": [
+        "Hampton Sides"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "History & Biography",
+      "position": "2014.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2014"
+      },
+      "title": "In the Kingdom of Ice",
+      "votes": "7203"
+    },
+    {
+      "authors": [
+        "Roland Lazenby"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "History & Biography",
+      "position": "2014.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2014"
+      },
+      "title": "Michael Jordan",
+      "votes": "6375"
+    },
+    {
+      "authors": [
+        "Jeff Hobbs"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "History & Biography",
+      "position": "2014.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2014"
+      },
+      "title": "The Short and Tragic Life of Robert Peace",
+      "votes": "6153"
+    },
+    {
+      "authors": [
+        "Ben Bradlee Jr."
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "History & Biography",
+      "position": "2014.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2014"
+      },
+      "title": "The Kid",
+      "votes": "4997"
+    },
+    {
+      "authors": [
+        "Ben Montgomery"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "History & Biography",
+      "position": "2014.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2014"
+      },
+      "title": "Grandma Gatewood's Walk",
+      "votes": "2570"
+    },
+    {
+      "authors": [
+        "Vicki Constantine Croke"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "History & Biography",
+      "position": "2014.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2014"
+      },
+      "title": "Elephant Company",
+      "votes": "2461"
+    },
+    {
+      "authors": [
+        "Ben Macintyre"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "History & Biography",
+      "position": "2014.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2014"
+      },
+      "title": "A Spy Among Friends",
+      "votes": "1930"
+    },
+    {
+      "authors": [
+        "Kai Bird"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "History & Biography",
+      "position": "2014.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2014"
+      },
+      "title": "The Good Spy",
+      "votes": "1823"
+    },
+    {
+      "authors": [
+        "Peter Stark"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "History & Biography",
+      "position": "2014.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2014"
+      },
+      "title": "Astoria",
+      "votes": "1642"
+    },
+    {
+      "authors": [
+        "Marja Mills"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "History & Biography",
+      "position": "2014.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2014"
+      },
+      "title": "The Mockingbird Next Door",
+      "votes": "1540"
+    },
+    {
+      "authors": [
+        "Carl Hoffman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "History & Biography",
+      "position": "2014.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2014"
+      },
+      "title": "Savage Harvest",
+      "votes": "991"
+    },
+    {
+      "authors": [
+        "Tim Townsend"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "History & Biography",
+      "position": "2014.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2014"
+      },
+      "title": "Mission at Nuremberg",
+      "votes": "865"
+    },
+    {
+      "authors": [
+        "Robert L. O'Connell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "History & Biography",
+      "position": "2014.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2014"
+      },
+      "title": "Fierce Patriot",
+      "votes": "489"
+    },
+    {
+      "authors": [
+        "Mark Harris"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "History & Biography",
+      "position": "2014.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2014"
+      },
+      "title": "Five Came Back",
+      "votes": "220"
+    },
+    {
+      "authors": [
+        "Erik Larson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "History & Biography",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2015"
+      },
+      "title": "Dead Wake: The Last Crossing of the Lusitania",
+      "votes": "22427"
+    },
+    {
+      "authors": [
+        "Stacy Schiff"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "History & Biography",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2015"
+      },
+      "title": "The Witches",
+      "votes": "12805"
+    },
+    {
+      "authors": [
+        "David McCullough"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "History & Biography",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2015"
+      },
+      "title": "The Wright Brothers",
+      "votes": "11820"
+    },
+    {
+      "authors": [
+        "Wendy Holden"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "History & Biography",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2015"
+      },
+      "title": "Born Survivors",
+      "votes": "10027"
+    },
+    {
+      "authors": [
+        "Laura Ingalls Wilder"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "History & Biography",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2015"
+      },
+      "title": "Pioneer Girl",
+      "votes": "9784"
+    },
+    {
+      "authors": [
+        "Molly Guptill Manning"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "History & Biography",
+      "position": "2015.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2015"
+      },
+      "title": "When Books Went to War",
+      "votes": "7297"
+    },
+    {
+      "authors": [
+        "Charlotte Gordon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "History & Biography",
+      "position": "2015.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2015"
+      },
+      "title": "Romantic Outlaws",
+      "votes": "6214"
+    },
+    {
+      "authors": [
+        "Sarah Helm"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "History & Biography",
+      "position": "2015.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2015"
+      },
+      "title": "Ravensbr\u00fcck",
+      "votes": "5587"
+    },
+    {
+      "authors": [
+        "Rinker Buck"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "History & Biography",
+      "position": "2015.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2015"
+      },
+      "title": "The Oregon Trail",
+      "votes": "4945"
+    },
+    {
+      "authors": [
+        "Susan Southard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "History & Biography",
+      "position": "2015.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2015"
+      },
+      "title": "Nagasaki",
+      "votes": "4607"
+    },
+    {
+      "authors": [
+        "Joseph J. Ellis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "History & Biography",
+      "position": "2015.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2015"
+      },
+      "title": "The Quartet",
+      "votes": "2436"
+    },
+    {
+      "authors": [
+        "David E. Hoffman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "History & Biography",
+      "position": "2015.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2015"
+      },
+      "title": "The Billion Dollar Spy",
+      "votes": "1764"
+    },
+    {
+      "authors": [
+        "Gayle Tzemach Lemmon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "History & Biography",
+      "position": "2015.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2015"
+      },
+      "title": "Ashley's War",
+      "votes": "1735"
+    },
+    {
+      "authors": [
+        "Kate Clifford Larson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "History & Biography",
+      "position": "2015.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2015"
+      },
+      "title": "Rosemary",
+      "votes": "1717"
+    },
+    {
+      "authors": [
+        "Piu Marie Eatwell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "History & Biography",
+      "position": "2015.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2015"
+      },
+      "title": "The Dead Duke, His Secret Wife, and the Missing Corpse",
+      "votes": "1701"
+    },
+    {
+      "authors": [
+        "Bill O'Reilly"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "History & Biography",
+      "position": "2015.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2015"
+      },
+      "title": "Killing Reagan",
+      "votes": "1434"
+    },
+    {
+      "authors": [
+        "Paul Fischer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "History & Biography",
+      "position": "2015.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2015"
+      },
+      "title": "A Kim Jong-Il Production",
+      "votes": "1337"
+    },
+    {
+      "authors": [
+        "Eric Blehm"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "History & Biography",
+      "position": "2015.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2015"
+      },
+      "title": "Legend",
+      "votes": "1205"
+    },
+    {
+      "authors": [
+        "Sarah Vowell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "History & Biography",
+      "position": "2015.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2015"
+      },
+      "title": "Lafayette in the Somewhat United States",
+      "votes": "1108"
+    },
+    {
+      "authors": [
+        "Kate Andersen Brower"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "History & Biography",
+      "position": "2015.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2015"
+      },
+      "title": "The Residence",
+      "votes": "897"
+    },
+    {
+      "authors": [
+        "William Shatner",
+        "David Fisher"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "History & Biography",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2016"
+      },
+      "title": "Leonard: My Fifty-Year Friendship with a Remarkable Man",
+      "votes": "16477"
+    },
+    {
+      "authors": [
+        "Simon Sebag Montefiore"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "History & Biography",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2016"
+      },
+      "title": "The Romanovs, 1613-1918",
+      "votes": "15398"
+    },
+    {
+      "authors": [
+        "Kate Andersen Brower"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "History & Biography",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2016"
+      },
+      "title": "First Women",
+      "votes": "13488"
+    },
+    {
+      "authors": [
+        "Nathalia Holt"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "History & Biography",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2016"
+      },
+      "title": "Rise of the Rocket Girls",
+      "votes": "12995"
+    },
+    {
+      "authors": [
+        "Rebecca Traister"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "History & Biography",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2016"
+      },
+      "title": "All the Single Ladies",
+      "votes": "10343"
+    },
+    {
+      "authors": [
+        "Nancy Isenberg"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "History & Biography",
+      "position": "2016.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2016"
+      },
+      "title": "White Trash",
+      "votes": "10033"
+    },
+    {
+      "authors": [
+        "Margot Lee Shetterly"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "History & Biography",
+      "position": "2016.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2016"
+      },
+      "title": "Hidden Figures",
+      "votes": "9715"
+    },
+    {
+      "authors": [
+        "Skip Hollandsworth"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "History & Biography",
+      "position": "2016.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2016"
+      },
+      "title": "The Midnight Assassin",
+      "votes": "7397"
+    },
+    {
+      "authors": [
+        "Randy W. Roberts"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "History & Biography",
+      "position": "2016.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2016"
+      },
+      "title": "Blood Brothers",
+      "votes": "5654"
+    },
+    {
+      "authors": [
+        "Bill O'Reilly"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "History & Biography",
+      "position": "2016.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2016"
+      },
+      "title": "Killing the Rising Sun",
+      "votes": "4139"
+    },
+    {
+      "authors": [
+        "Nathaniel Philbrick"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "History & Biography",
+      "position": "2016.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2016"
+      },
+      "title": "Valiant Ambition",
+      "votes": "2278"
+    },
+    {
+      "authors": [
+        "Timothy Egan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "History & Biography",
+      "position": "2016.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2016"
+      },
+      "title": "The Immortal Irishman",
+      "votes": "2157"
+    },
+    {
+      "authors": [
+        "Clint Hill"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "History & Biography",
+      "position": "2016.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2016"
+      },
+      "title": "Five Presidents",
+      "votes": "1898"
+    },
+    {
+      "authors": [
+        "Pamela Rotner Sakamoto"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "History & Biography",
+      "position": "2016.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2016"
+      },
+      "title": "Midnight in Broad Daylight",
+      "votes": "1611"
+    },
+    {
+      "authors": [
+        "Neal Bascomb"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "History & Biography",
+      "position": "2016.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2016"
+      },
+      "title": "The Winter Fortress",
+      "votes": "1560"
+    },
+    {
+      "authors": [
+        "Adam Hochschild"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "History & Biography",
+      "position": "2016.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2016"
+      },
+      "title": "Spain in Our Hearts",
+      "votes": "1085"
+    },
+    {
+      "authors": [
+        "Ruth Franklin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "History & Biography",
+      "position": "2016.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2016"
+      },
+      "title": "Shirley Jackson",
+      "votes": "965"
+    },
+    {
+      "authors": [
+        "Bill Lascher"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "History & Biography",
+      "position": "2016.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2016"
+      },
+      "title": "Eve of a Hundred Midnights",
+      "votes": "657"
+    },
+    {
+      "authors": [
+        "Candice Millard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "History & Biography",
+      "position": "2016.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2016"
+      },
+      "title": "Hero of the Empire",
+      "votes": "593"
+    },
+    {
+      "authors": [
+        "Patrick Phillips"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "History & Biography",
+      "position": "2016.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2016"
+      },
+      "title": "Blood at the Root",
+      "votes": "327"
+    },
+    {
+      "authors": [
+        "Kate Moore"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "History & Biography",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2017"
+      },
+      "title": "The Radium Girls: The Dark Story of America\u2019s Shining Women",
+      "votes": "24696"
+    },
+    {
+      "authors": [
+        "David Grann"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "History & Biography",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2017"
+      },
+      "title": "Killers of the Flower Moon",
+      "votes": "18988"
+    },
+    {
+      "authors": [
+        "Julia Baird"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "History & Biography",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2017"
+      },
+      "title": "Victoria The Queen",
+      "votes": "13124"
+    },
+    {
+      "authors": [
+        "Lucy Worsley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "History & Biography",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2017"
+      },
+      "title": "Jane Austen at Home",
+      "votes": "12427"
+    },
+    {
+      "authors": [
+        "Jeffrey Kluger"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "History & Biography",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2017"
+      },
+      "title": "Apollo 8",
+      "votes": "11387"
+    },
+    {
+      "authors": [
+        "Ron Chernow"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "History & Biography",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2017"
+      },
+      "title": "Grant",
+      "votes": "10846"
+    },
+    {
+      "authors": [
+        "Melissa Fleming"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "History & Biography",
+      "position": "2017.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2017"
+      },
+      "title": "A Hope More Powerful Than the Sea",
+      "votes": "10651"
+    },
+    {
+      "authors": [
+        "Michael Lewis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "History & Biography",
+      "position": "2017.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2017"
+      },
+      "title": "The Undoing Project",
+      "votes": "7772"
+    },
+    {
+      "authors": [
+        "Timothy Snyder"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "History & Biography",
+      "position": "2017.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2017"
+      },
+      "title": "On Tyranny",
+      "votes": "7582"
+    },
+    {
+      "authors": [
+        "Timothy B. Tyson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "History & Biography",
+      "position": "2017.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2017"
+      },
+      "title": "The Blood of Emmett Till",
+      "votes": "7327"
+    },
+    {
+      "authors": [
+        "Jeff Guinn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "History & Biography",
+      "position": "2017.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2017"
+      },
+      "title": "The Road to Jonestown",
+      "votes": "3019"
+    },
+    {
+      "authors": [
+        "Walter Isaacson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "History & Biography",
+      "position": "2017.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2017"
+      },
+      "title": "Leonardo da Vinci",
+      "votes": "2487"
+    },
+    {
+      "authors": [
+        "Jennifer Wright"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "History & Biography",
+      "position": "2017.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2017"
+      },
+      "title": "Get Well Soon",
+      "votes": "2283"
+    },
+    {
+      "authors": [
+        "Giles Milton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "History & Biography",
+      "position": "2017.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2017"
+      },
+      "title": "Churchill's Ministry of Ungentlemanly Warfare",
+      "votes": "1640"
+    },
+    {
+      "authors": [
+        "Chris Whipple"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "History & Biography",
+      "position": "2017.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2017"
+      },
+      "title": "The Gatekeepers",
+      "votes": "1558"
+    },
+    {
+      "authors": [
+        "Donald Stratton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "History & Biography",
+      "position": "2017.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2017"
+      },
+      "title": "All the Gallant Men",
+      "votes": "1253"
+    },
+    {
+      "authors": [
+        "Mark Bowden"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "History & Biography",
+      "position": "2017.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2017"
+      },
+      "title": "Hu\u1ebf 1968",
+      "votes": "1227"
+    },
+    {
+      "authors": [
+        "Mike Duncan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "History & Biography",
+      "position": "2017.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2017"
+      },
+      "title": "The Storm Before the Storm",
+      "votes": "1221"
+    },
+    {
+      "authors": [
+        "Bill O'Reilly"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "History & Biography",
+      "position": "2017.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2017"
+      },
+      "title": "Killing England",
+      "votes": "1089"
+    },
+    {
+      "authors": [
+        "Lynne Olson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "History & Biography",
+      "position": "2017.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2017"
+      },
+      "title": "Last Hope Island",
+      "votes": "550"
+    },
+    {
+      "authors": [
+        "Maxwell King"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "History & Biography",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2018"
+      },
+      "title": "The Good Neighbor: The Life and Work of Fred Rogers",
+      "votes": "44826"
+    },
+    {
+      "authors": [
+        "Dave Itzkoff"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "History & Biography",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2018"
+      },
+      "title": "Robin",
+      "votes": "19394"
+    },
+    {
+      "authors": [
+        "Zora Neale Hurston"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "History & Biography",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2018"
+      },
+      "title": "Barracoon",
+      "votes": "12486"
+    },
+    {
+      "authors": [
+        "Liz Rosenberg"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "History & Biography",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2018"
+      },
+      "title": "House of Dreams",
+      "votes": "11097"
+    },
+    {
+      "authors": [
+        "Elaine F. Weiss"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "History & Biography",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2018"
+      },
+      "title": "The Woman's Hour",
+      "votes": "10471"
+    },
+    {
+      "authors": [
+        "Catherine Kerrison"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "History & Biography",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2018"
+      },
+      "title": "Jefferson's Daughters",
+      "votes": "10279"
+    },
+    {
+      "authors": [
+        "Keith O'Brien"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "History & Biography",
+      "position": "2018.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2018"
+      },
+      "title": "Fly Girls",
+      "votes": "10244"
+    },
+    {
+      "authors": [
+        "Robert Kurson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "History & Biography",
+      "position": "2018.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2018"
+      },
+      "title": "Rocket Men",
+      "votes": "7084"
+    },
+    {
+      "authors": [
+        "Nathaniel Philbrick"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "History & Biography",
+      "position": "2018.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2018"
+      },
+      "title": "In the Hurricane's Eye",
+      "votes": "6177"
+    },
+    {
+      "authors": [
+        "Dave Eggers"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "History & Biography",
+      "position": "2018.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2018"
+      },
+      "title": "The Monk of Mokha",
+      "votes": "5770"
+    },
+    {
+      "authors": [
+        "Doris Kearns Goodwin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "History & Biography",
+      "position": "2018.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2018"
+      },
+      "title": "Leadership",
+      "votes": "2753"
+    },
+    {
+      "authors": [
+        "Dan Abrams"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "History & Biography",
+      "position": "2018.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2018"
+      },
+      "title": "Lincoln's Last Trial",
+      "votes": "2431"
+    },
+    {
+      "authors": [
+        "David Christian"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "History & Biography",
+      "position": "2018.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2018"
+      },
+      "title": "Origin Story",
+      "votes": "2074"
+    },
+    {
+      "authors": [
+        "Jill Lepore"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "History & Biography",
+      "position": "2018.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2018"
+      },
+      "title": "These Truths",
+      "votes": "1568"
+    },
+    {
+      "authors": [
+        "Ronen Bergman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "History & Biography",
+      "position": "2018.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2018"
+      },
+      "title": "Rise and Kill First",
+      "votes": "1535"
+    },
+    {
+      "authors": [
+        "Sam Anderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "History & Biography",
+      "position": "2018.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2018"
+      },
+      "title": "Boom Town",
+      "votes": "1326"
+    },
+    {
+      "authors": [
+        "Lawrence Wright"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "History & Biography",
+      "position": "2018.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2018"
+      },
+      "title": "God Save Texas",
+      "votes": "1296"
+    },
+    {
+      "authors": [
+        "Bill O'Reilly"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "History & Biography",
+      "position": "2018.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2018"
+      },
+      "title": "Killing the SS",
+      "votes": "1232"
+    },
+    {
+      "authors": [
+        "Lynn Vincent"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "History & Biography",
+      "position": "2018.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2018"
+      },
+      "title": "Indianapolis",
+      "votes": "1105"
+    },
+    {
+      "authors": [
+        "Jon Meacham"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "History & Biography",
+      "position": "2018.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2018"
+      },
+      "title": "The Soul of America",
+      "votes": "1020"
+    },
+    {
+      "authors": [
+        "Hallie Rubenhold"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "History & Biography",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2019"
+      },
+      "title": "The Five: The Untold Lives of the Women Killed by Jack the Ripper",
+      "votes": "31783"
+    },
+    {
+      "authors": [
+        "Adam Higginbotham"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "History & Biography",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2019"
+      },
+      "title": "Midnight in Chernobyl",
+      "votes": "19711"
+    },
+    {
+      "authors": [
+        "Patrick Radden Keefe"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "History & Biography",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2019"
+      },
+      "title": "Say Nothing",
+      "votes": "14733"
+    },
+    {
+      "authors": [
+        "Judy Christie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "History & Biography",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2019"
+      },
+      "title": "Before and After",
+      "votes": "13545"
+    },
+    {
+      "authors": [
+        "Sonia Purnell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "History & Biography",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2019"
+      },
+      "title": "A Woman of No Importance",
+      "votes": "13252"
+    },
+    {
+      "authors": [
+        "Garrett M. Graff"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "History & Biography",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2019"
+      },
+      "title": "The Only Plane in the Sky",
+      "votes": "11383"
+    },
+    {
+      "authors": [
+        "David McCullough"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "History & Biography",
+      "position": "2019.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2019"
+      },
+      "title": "The Pioneers",
+      "votes": "10097"
+    },
+    {
+      "authors": [
+        "Evan Thomas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "History & Biography",
+      "position": "2019.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2019"
+      },
+      "title": "First",
+      "votes": "8874"
+    },
+    {
+      "authors": [
+        "Brad Meltzer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "History & Biography",
+      "position": "2019.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2019"
+      },
+      "title": "The First Conspiracy",
+      "votes": "8788"
+    },
+    {
+      "authors": [
+        "David Treuer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "History & Biography",
+      "position": "2019.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2019"
+      },
+      "title": "The Heartbeat of Wounded Knee",
+      "votes": "7711"
+    },
+    {
+      "authors": [
+        "Lynne Olson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "History & Biography",
+      "position": "2019.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2019"
+      },
+      "title": "Madame Fourcade's Secret War",
+      "votes": "3065"
+    },
+    {
+      "authors": [
+        "Daniel Immerwahr"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "History & Biography",
+      "position": "2019.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2019"
+      },
+      "title": "How to Hide an Empire",
+      "votes": "2561"
+    },
+    {
+      "authors": [
+        "Robert Matzen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "History & Biography",
+      "position": "2019.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2019"
+      },
+      "title": "Dutch Girl",
+      "votes": "2418"
+    },
+    {
+      "authors": [
+        "Mallory O'Meara"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "History & Biography",
+      "position": "2019.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2019"
+      },
+      "title": "The Lady from the Black Lagoon",
+      "votes": "2251"
+    },
+    {
+      "authors": [
+        "Larry Loftis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "History & Biography",
+      "position": "2019.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2019"
+      },
+      "title": "Code Name",
+      "votes": "2092"
+    },
+    {
+      "authors": [
+        "Jared Diamond"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "History & Biography",
+      "position": "2019.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2019"
+      },
+      "title": "Upheaval",
+      "votes": "1772"
+    },
+    {
+      "authors": [
+        "Rick Atkinson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "History & Biography",
+      "position": "2019.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2019"
+      },
+      "title": "The British Are Coming",
+      "votes": "1664"
+    },
+    {
+      "authors": [
+        "Adam Makos"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "History & Biography",
+      "position": "2019.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2019"
+      },
+      "title": "Spearhead",
+      "votes": "1483"
+    },
+    {
+      "authors": [
+        "Aaron Bobrow-Strain"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "History & Biography",
+      "position": "2019.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2019"
+      },
+      "title": "The Death and Life of Aida Hernandez",
+      "votes": "833"
+    },
+    {
+      "authors": [
+        "William Dalrymple"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "History & Biography",
+      "position": "2019.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2019"
+      },
+      "title": "The Anarchy",
+      "votes": "595"
+    },
+    {
+      "authors": [
+        "Isabel Wilkerson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "History & Biography",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2020"
+      },
+      "title": "Caste: The Origins of Our Discontents",
+      "votes": "45806"
+    },
+    {
+      "authors": [
+        "Erik Larson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "History & Biography",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2020"
+      },
+      "title": "The Splendid and the Vile",
+      "votes": "40761"
+    },
+    {
+      "authors": [
+        "Daina Ramey Berry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "History & Biography",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2020"
+      },
+      "title": "A Black Women's History of the United States",
+      "votes": "25786"
+    },
+    {
+      "authors": [
+        "James Patterson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "History & Biography",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2020"
+      },
+      "title": "The House of Kennedy",
+      "votes": "16409"
+    },
+    {
+      "authors": [
+        "Heather Dune Macadam"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "History & Biography",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2020"
+      },
+      "title": "999",
+      "votes": "11762"
+    },
+    {
+      "authors": [
+        "Alexis Coe"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "History & Biography",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2020"
+      },
+      "title": "You Never Forget Your First",
+      "votes": "10308"
+    },
+    {
+      "authors": [
+        "Michael Chabon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "History & Biography",
+      "position": "2020.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2020"
+      },
+      "title": "Fight of the Century",
+      "votes": "9114"
+    },
+    {
+      "authors": [
+        "Deirdre Mask"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "History & Biography",
+      "position": "2020.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2020"
+      },
+      "title": "The Address Book",
+      "votes": "9025"
+    },
+    {
+      "authors": [
+        "Jon Meacham"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "History & Biography",
+      "position": "2020.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2020"
+      },
+      "title": "His Truth Is Marching On",
+      "votes": "8921"
+    },
+    {
+      "authors": [
+        "Brad Meltzer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "History & Biography",
+      "position": "2020.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2020"
+      },
+      "title": "The Lincoln Conspiracy",
+      "votes": "8519"
+    },
+    {
+      "authors": [
+        "Ben Macintyre"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "History & Biography",
+      "position": "2020.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2020"
+      },
+      "title": "Agent Sonya",
+      "votes": "3402"
+    },
+    {
+      "authors": [
+        "Chris Wallace"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "History & Biography",
+      "position": "2020.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2020"
+      },
+      "title": "Countdown 1945",
+      "votes": "2725"
+    },
+    {
+      "authors": [
+        "Greg Jenner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "History & Biography",
+      "position": "2020.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2020"
+      },
+      "title": "Dead Famous",
+      "votes": "2674"
+    },
+    {
+      "authors": [
+        "Candacy A. Taylor"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "History & Biography",
+      "position": "2020.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2020"
+      },
+      "title": "Overground Railroad",
+      "votes": "2516"
+    },
+    {
+      "authors": [
+        "Eddie S. Glaude Jr."
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "History & Biography",
+      "position": "2020.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2020"
+      },
+      "title": "Begin Again",
+      "votes": "1944"
+    },
+    {
+      "authors": [
+        "Eric Cervini"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "History & Biography",
+      "position": "2020.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2020"
+      },
+      "title": "The Deviant's War",
+      "votes": "1751"
+    },
+    {
+      "authors": [
+        "Morgan Jerkins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "History & Biography",
+      "position": "2020.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2020"
+      },
+      "title": "Wandering in Strange Lands",
+      "votes": "1648"
+    },
+    {
+      "authors": [
+        "Bill O'Reilly"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "History & Biography",
+      "position": "2020.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2020"
+      },
+      "title": "Killing Crazy Horse",
+      "votes": "1198"
+    },
+    {
+      "authors": [
+        "Rutger Bregman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "History & Biography",
+      "position": "2020.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2020"
+      },
+      "title": "Humankind",
+      "votes": "972"
+    },
+    {
+      "authors": [
+        "Heather Cox Richardson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "History & Biography",
+      "position": "2020.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2020"
+      },
+      "title": "How the South Won the Civil War",
+      "votes": "700"
+    },
+    {
+      "authors": [
+        "Patrick Radden Keefe"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "History & Biography",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2021"
+      },
+      "title": "Empire of Pain: The Secret History of the Sackler Dynasty",
+      "votes": "19969"
+    },
+    {
+      "authors": [
+        "Kate Moore"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "History & Biography",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2021"
+      },
+      "title": "The Woman They Could Not Silence",
+      "votes": "16199"
+    },
+    {
+      "authors": [
+        "Walter Isaacson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "History & Biography",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2021"
+      },
+      "title": "The Code Breaker",
+      "votes": "15574"
+    },
+    {
+      "authors": [
+        "Ibram X. Kendi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "History & Biography",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2021"
+      },
+      "title": "Four Hundred Souls",
+      "votes": "15115"
+    },
+    {
+      "authors": [
+        "Anderson Cooper"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "History & Biography",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2021"
+      },
+      "title": "Vanderbilt",
+      "votes": "15071"
+    },
+    {
+      "authors": [
+        "Julia Cooke"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "History & Biography",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2021"
+      },
+      "title": "Come Fly the World",
+      "votes": "13994"
+    },
+    {
+      "authors": [
+        "Clint Smith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "History & Biography",
+      "position": "2021.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2021"
+      },
+      "title": "How the Word Is Passed",
+      "votes": "13067"
+    },
+    {
+      "authors": [
+        "Janice P. Nimura"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "History & Biography",
+      "position": "2021.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2021"
+      },
+      "title": "The Doctors Blackwell",
+      "votes": "11760"
+    },
+    {
+      "authors": [
+        "Judy Batalion"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "History & Biography",
+      "position": "2021.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2021"
+      },
+      "title": "The Light of Days",
+      "votes": "11692"
+    },
+    {
+      "authors": [
+        "Malcolm Gladwell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "History & Biography",
+      "position": "2021.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2021"
+      },
+      "title": "The Bomber Mafia",
+      "votes": "11653"
+    },
+    {
+      "authors": [
+        "Anna Malaika Tubbs"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "History & Biography",
+      "position": "2021.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2021"
+      },
+      "title": "The Three Mothers",
+      "votes": "3597"
+    },
+    {
+      "authors": [
+        "Annette Gordon-Reed"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "History & Biography",
+      "position": "2021.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2021"
+      },
+      "title": "On Juneteenth",
+      "votes": "3522"
+    },
+    {
+      "authors": [
+        "Annalee Newitz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "History & Biography",
+      "position": "2021.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2021"
+      },
+      "title": "Four Lost Cities",
+      "votes": "3487"
+    },
+    {
+      "authors": [
+        "James Patterson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "History & Biography",
+      "position": "2021.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2021"
+      },
+      "title": "Walk in My Combat Boots",
+      "votes": "3366"
+    },
+    {
+      "authors": [
+        "Julian Sancton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "History & Biography",
+      "position": "2021.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2021"
+      },
+      "title": "Madhouse at the End of the Earth",
+      "votes": "3030"
+    },
+    {
+      "authors": [
+        "Rachel Maddow"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "History & Biography",
+      "position": "2021.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2021"
+      },
+      "title": "Bag Man",
+      "votes": "2494"
+    },
+    {
+      "authors": [
+        "Matthew Pearl"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "History & Biography",
+      "position": "2021.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2021"
+      },
+      "title": "The Taking of Jemima Boone",
+      "votes": "1779"
+    },
+    {
+      "authors": [
+        "Daniel James Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "History & Biography",
+      "position": "2021.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2021"
+      },
+      "title": "Facing the Mountain",
+      "votes": "1505"
+    },
+    {
+      "authors": [
+        "Brad Stone"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "History & Biography",
+      "position": "2021.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2021"
+      },
+      "title": "Amazon Unbound",
+      "votes": "1475"
+    },
+    {
+      "authors": [
+        "Carol Leonnig"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "History & Biography",
+      "position": "2021.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2021"
+      },
+      "title": "Zero Fail",
+      "votes": "1169"
+    },
+    {
+      "authors": [
+        "Huw Lemmey",
+        "Ben Miller"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "History & Biography",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2022"
+      },
+      "title": "Bad Gays: A Homosexual History",
+      "votes": "22711"
+    },
+    {
+      "authors": [
+        "Robert Samuels"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "History & Biography",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2022"
+      },
+      "title": "His Name Is George Floyd",
+      "votes": "22265"
+    },
+    {
+      "authors": [
+        "Shelley Puhak"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "History & Biography",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2022"
+      },
+      "title": "The Dark Queens",
+      "votes": "21891"
+    },
+    {
+      "authors": [
+        "Jonathan Freedland"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "History & Biography",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2022"
+      },
+      "title": "The Escape Artist",
+      "votes": "17126"
+    },
+    {
+      "authors": [
+        "Jon Meacham"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "History & Biography",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2022"
+      },
+      "title": "And There Was Light",
+      "votes": "15066"
+    },
+    {
+      "authors": [
+        "Nathalia Holt"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "History & Biography",
+      "position": "2022.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2022"
+      },
+      "title": "Wise Gals",
+      "votes": "14950"
+    },
+    {
+      "authors": [
+        "Amy Odell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "History & Biography",
+      "position": "2022.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2022"
+      },
+      "title": "Anna",
+      "votes": "12768"
+    },
+    {
+      "authors": [
+        "Ben Riggs"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "History & Biography",
+      "position": "2022.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2022"
+      },
+      "title": "Slaying the Dragon",
+      "votes": "12622"
+    },
+    {
+      "authors": [
+        "Damien Lewis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "History & Biography",
+      "position": "2022.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2022"
+      },
+      "title": "Agent Josephine",
+      "votes": "9231"
+    },
+    {
+      "authors": [
+        "Candice Millard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "History & Biography",
+      "position": "2022.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2022"
+      },
+      "title": "River of the Gods",
+      "votes": "9031"
+    },
+    {
+      "authors": [
+        "Danyel Smith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "History & Biography",
+      "position": "2022.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2022"
+      },
+      "title": "Shine Bright",
+      "votes": "2762"
+    },
+    {
+      "authors": [
+        "Bill Shaffer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "History & Biography",
+      "position": "2022.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2022"
+      },
+      "title": "The Scandalous Hamiltons",
+      "votes": "2293"
+    },
+    {
+      "authors": [
+        "Ben Macintyre"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "History & Biography",
+      "position": "2022.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2022"
+      },
+      "title": "Prisoners of the Castle",
+      "votes": "1934"
+    },
+    {
+      "authors": [
+        "Kelly Lytle Hern\u00e1ndez"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "History & Biography",
+      "position": "2022.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2022"
+      },
+      "title": "Bad Mexicans",
+      "votes": "1795"
+    },
+    {
+      "authors": [
+        "Jeff Yang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "History & Biography",
+      "position": "2022.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2022"
+      },
+      "title": "Rise",
+      "votes": "1773"
+    },
+    {
+      "authors": [
+        "Stacy Schiff"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "History & Biography",
+      "position": "2022.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2022"
+      },
+      "title": "The Revolutionary",
+      "votes": "1584"
+    },
+    {
+      "authors": [
+        "Michael Benson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "History & Biography",
+      "position": "2022.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2022"
+      },
+      "title": "Gangsters vs. Nazis",
+      "votes": "1519"
+    },
+    {
+      "authors": [
+        "T.J. English"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "History & Biography",
+      "position": "2022.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2022"
+      },
+      "title": "Dangerous Rhythms",
+      "votes": "1077"
+    },
+    {
+      "authors": [
+        "Adam Hochschild"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "History & Biography",
+      "position": "2022.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2022"
+      },
+      "title": "American Midnight",
+      "votes": "1020"
+    },
+    {
+      "authors": [
+        "Margaret A. Burnham"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "History & Biography",
+      "position": "2022.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2022"
+      },
+      "title": "By Hands Now Known",
+      "votes": "962"
+    },
+    {
+      "authors": [
+        "David Grann"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "History & Biography",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2023"
+      },
+      "title": "The Wager: A Tale of Shipwreck, Mutiny and Murder",
+      "votes": "40132"
+    },
+    {
+      "authors": [
+        "Loren Grush"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "History & Biography",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2023"
+      },
+      "title": "The Six",
+      "votes": "24315"
+    },
+    {
+      "authors": [
+        "Bill O'Reilly"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "History & Biography",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2023"
+      },
+      "title": "Killing the Witches",
+      "votes": "22698"
+    },
+    {
+      "authors": [
+        "Jonathan Eig"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "History & Biography",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2023"
+      },
+      "title": "King",
+      "votes": "19454"
+    },
+    {
+      "authors": [
+        "Lena Andrews"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "History & Biography",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2023"
+      },
+      "title": "Valiant Women",
+      "votes": "17446"
+    },
+    {
+      "authors": [
+        "Michael Harriot"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "History & Biography",
+      "position": "2023.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2023"
+      },
+      "title": "Black AF History",
+      "votes": "17288"
+    },
+    {
+      "authors": [
+        "Timothy Egan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "History & Biography",
+      "position": "2023.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2023"
+      },
+      "title": "A Fever in the Heartland",
+      "votes": "14246"
+    },
+    {
+      "authors": [
+        "Walter Isaacson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "History & Biography",
+      "position": "2023.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2023"
+      },
+      "title": "Elon Musk",
+      "votes": "13162"
+    },
+    {
+      "authors": [
+        "Jonathan Kennedy"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "History & Biography",
+      "position": "2023.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2023"
+      },
+      "title": "Pathogenesis",
+      "votes": "11244"
+    },
+    {
+      "authors": [
+        "Anderson Cooper"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "History & Biography",
+      "position": "2023.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2023"
+      },
+      "title": "Astor",
+      "votes": "10435"
+    },
+    {
+      "authors": [
+        "Peter Frankopan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "History & Biography",
+      "position": "2023.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2023"
+      },
+      "title": "The Earth Transformed",
+      "votes": "3444"
+    },
+    {
+      "authors": [
+        "David von Drehle"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "History & Biography",
+      "position": "2023.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2023"
+      },
+      "title": "The Book of Charlie",
+      "votes": "3353"
+    },
+    {
+      "authors": [
+        "Heather Dune Macadam"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "History & Biography",
+      "position": "2023.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2023"
+      },
+      "title": "Star Crossed",
+      "votes": "3247"
+    },
+    {
+      "authors": [
+        "Ilyon Woo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "History & Biography",
+      "position": "2023.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2023"
+      },
+      "title": "Master Slave Husband Wife",
+      "votes": "3159"
+    },
+    {
+      "authors": [
+        "Donovan X. Ramsey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "History & Biography",
+      "position": "2023.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2023"
+      },
+      "title": "When Crack Was King",
+      "votes": "2634"
+    },
+    {
+      "authors": [
+        "Brad Meltzer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "History & Biography",
+      "position": "2023.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2023"
+      },
+      "title": "The Nazi Conspiracy",
+      "votes": "2570"
+    },
+    {
+      "authors": [
+        "Christopher C. Gorham"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "History & Biography",
+      "position": "2023.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2023"
+      },
+      "title": "The Confidante",
+      "votes": "2516"
+    },
+    {
+      "authors": [
+        "Tracy Kidder"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "History & Biography",
+      "position": "2023.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2023"
+      },
+      "title": "Rough Sleepers",
+      "votes": "2142"
+    },
+    {
+      "authors": [
+        "Rory Carroll"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "History & Biography",
+      "position": "2023.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2023"
+      },
+      "title": "There Will Be Fire",
+      "votes": "1930"
+    },
+    {
+      "authors": [
+        "Michael Lewis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "History & Biography",
+      "position": "2023.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-history-biography-books-2023"
+      },
+      "title": "Going Infinite",
+      "votes": "1602"
+    },
+    {
+      "authors": [
+        "Evan Friss"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "History & Biography",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2024"
+      },
+      "title": "The Bookshop: A History of the American Bookstore",
+      "votes": "38847"
+    },
+    {
+      "authors": [
+        "Sharon McMahon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "History & Biography",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2024"
+      },
+      "title": "The Small and the Mighty",
+      "votes": "31360"
+    },
+    {
+      "authors": [
+        "Erik Larson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "History & Biography",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2024"
+      },
+      "title": "The Demon of Unrest",
+      "votes": "26235"
+    },
+    {
+      "authors": [
+        "Dava Sobel"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "History & Biography",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2024"
+      },
+      "title": "The Elements of Marie Curie",
+      "votes": "21644"
+    },
+    {
+      "authors": [
+        "Jeremy Dauber"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "History & Biography",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2024"
+      },
+      "title": "American Scary",
+      "votes": "18934"
+    },
+    {
+      "authors": [
+        "Kathleen Sheppard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "History & Biography",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2024"
+      },
+      "title": "Women in the Valley of the Kings",
+      "votes": "17443"
+    },
+    {
+      "authors": [
+        "Yuval Noah Harari"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "History & Biography",
+      "position": "2024.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2024"
+      },
+      "title": "Nexus",
+      "votes": "17400"
+    },
+    {
+      "authors": [
+        "Maureen Callahan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "History & Biography",
+      "position": "2024.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2024"
+      },
+      "title": "Ask Not",
+      "votes": "16640"
+    },
+    {
+      "authors": [
+        "Adam Higginbotham"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "History & Biography",
+      "position": "2024.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2024"
+      },
+      "title": "Challenger",
+      "votes": "12631"
+    },
+    {
+      "authors": [
+        "Douglas Preston"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "History & Biography",
+      "position": "2024.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2024"
+      },
+      "title": "The Lost Tomb",
+      "votes": "11334"
+    },
+    {
+      "authors": [
+        "Julie Satow"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "History & Biography",
+      "position": "2024.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2024"
+      },
+      "title": "When Women Ran Fifth Avenue",
+      "votes": "4309"
+    },
+    {
+      "authors": [
+        "Katie Gee Salisbury"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "History & Biography",
+      "position": "2024.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2024"
+      },
+      "title": "Not Your China Doll",
+      "votes": "4230"
+    },
+    {
+      "authors": [
+        "Antonia Hylton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "History & Biography",
+      "position": "2024.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2024"
+      },
+      "title": "Madness",
+      "votes": "3777"
+    },
+    {
+      "authors": [
+        "Rebecca Nagle"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "History & Biography",
+      "position": "2024.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2024"
+      },
+      "title": "By the Fire We Carry",
+      "votes": "3472"
+    },
+    {
+      "authors": [
+        "George Stephanopoulos"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "History & Biography",
+      "position": "2024.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2024"
+      },
+      "title": "The Situation Room",
+      "votes": "3051"
+    },
+    {
+      "authors": [
+        "Hampton Sides"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "History & Biography",
+      "position": "2024.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2024"
+      },
+      "title": "The Wide Wide Sea",
+      "votes": "2572"
+    },
+    {
+      "authors": [
+        "Garrett M. Graff"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "History & Biography",
+      "position": "2024.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2024"
+      },
+      "title": "When the Sea Came Alive",
+      "votes": "2450"
+    },
+    {
+      "authors": [
+        "Ben Macintyre"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "History & Biography",
+      "position": "2024.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2024"
+      },
+      "title": "The Siege",
+      "votes": "2166"
+    },
+    {
+      "authors": [
+        "Jonathan Blitzer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "History & Biography",
+      "position": "2024.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2024"
+      },
+      "title": "Everyone Who Is Gone Is Here",
+      "votes": "2040"
+    },
+    {
+      "authors": [
+        "Abbott Kahler"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "History & Biography",
+      "position": "2024.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2024"
+      },
+      "title": "Eden Undone",
+      "votes": "1591"
+    },
+    {
+      "authors": [
+        "Zoe Venditozzi",
+        "Claire Mitchell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "History & Biography",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2025"
+      },
+      "title": "How to Kill a Witch: The Patriarchy's Guide to Silencing Women",
+      "votes": "45858"
+    },
+    {
+      "authors": [
+        "Rebecca Romney"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "History & Biography",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2025"
+      },
+      "title": "Jane Austen's Bookshelf",
+      "votes": "28598"
+    },
+    {
+      "authors": [
+        "Olivia Campbell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "History & Biography",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2025"
+      },
+      "title": "Sisters in Science",
+      "votes": "28524"
+    },
+    {
+      "authors": [
+        "Nicholas Boggs"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "History & Biography",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2025"
+      },
+      "title": "Baldwin",
+      "votes": "19929"
+    },
+    {
+      "authors": [
+        "Lisa Rogak"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "History & Biography",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2025"
+      },
+      "title": "Propaganda Girls",
+      "votes": "16840"
+    },
+    {
+      "authors": [
+        "Ron Chernow"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "History & Biography",
+      "position": "2025.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2025"
+      },
+      "title": "Mark Twain",
+      "votes": "16298"
+    },
+    {
+      "authors": [
+        "Sophie Elmhirst"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "History & Biography",
+      "position": "2025.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2025"
+      },
+      "title": "A Marriage at Sea",
+      "votes": "14612"
+    },
+    {
+      "authors": [
+        "Lydia Reeder"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "History & Biography",
+      "position": "2025.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2025"
+      },
+      "title": "The Cure for Women",
+      "votes": "13606"
+    },
+    {
+      "authors": [
+        "Brad Meltzer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "History & Biography",
+      "position": "2025.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2025"
+      },
+      "title": "The JFK Conspiracy",
+      "votes": "13227"
+    },
+    {
+      "authors": [
+        "Eve L. Ewing"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "History & Biography",
+      "position": "2025.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2025"
+      },
+      "title": "Original Sins",
+      "votes": "12303"
+    },
+    {
+      "authors": [
+        "Andrew Ross Sorkin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "History & Biography",
+      "position": "2025.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2025"
+      },
+      "title": "1929",
+      "votes": "4324"
+    },
+    {
+      "authors": [
+        "Haley Cohen Gilliland"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "History & Biography",
+      "position": "2025.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2025"
+      },
+      "title": "A Flower Traveled in My Blood",
+      "votes": "4230"
+    },
+    {
+      "authors": [
+        "Jill Lepore"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "History & Biography",
+      "position": "2025.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2025"
+      },
+      "title": "We the People",
+      "votes": "3758"
+    },
+    {
+      "authors": [
+        "Susan Morrison"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "History & Biography",
+      "position": "2025.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2025"
+      },
+      "title": "Lorne",
+      "votes": "3522"
+    },
+    {
+      "authors": [
+        "Siddharth Kara"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "History & Biography",
+      "position": "2025.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2025"
+      },
+      "title": "The Zorg",
+      "votes": "3272"
+    },
+    {
+      "authors": [
+        "Garrett M. Graff"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "History & Biography",
+      "position": "2025.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2025"
+      },
+      "title": "The Devil Reached Toward the Sky",
+      "votes": "2149"
+    },
+    {
+      "authors": [
+        "Rick Atkinson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "History & Biography",
+      "position": "2025.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2025"
+      },
+      "title": "The Fate of the Day",
+      "votes": "2010"
+    },
+    {
+      "authors": [
+        "Buddy Levy"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "History & Biography",
+      "position": "2025.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2025"
+      },
+      "title": "Realm of Ice and Sky",
+      "votes": "1999"
+    },
+    {
+      "authors": [
+        "Stephen Greenblatt"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "History & Biography",
+      "position": "2025.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2025"
+      },
+      "title": "Dark Renaissance",
+      "votes": "1700"
+    },
+    {
+      "authors": [
+        "Scott Anderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "History & Biography",
+      "position": "2025.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-history-bio-books-2025"
+      },
+      "title": "King of Kings",
+      "votes": "1161"
+    }
+  ],
+  "fetched_at": "2026-07-28T02:35:01Z",
+  "list_id": "goodreads_choice_awards_history_biography",
+  "list_name": "Goodreads Choice Awards - History & Biography",
+  "match_series": false,
+  "notes": [
+    "Goodreads contributor enrichment could not check 19 newest-year rows; ballot credits were retained."
+  ],
+  "parser": "goodreads_choice_awards_history_biography",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Goodreads Choice Awards - History & Biography",
+    "source_id": "goodreads_choice_awards_history_biography",
+    "url": "https://www.goodreads.com/choiceawards"
+  }
+}

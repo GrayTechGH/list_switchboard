@@ -1,0 +1,100 @@
+{
+  "append_state": {
+    "entry_count": 7,
+    "last_entry_key": "a case of matricide|graeme macrae burnet",
+    "last_position": "2025",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Adrian McKinty"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2020",
+      "category": "Best International Crime Novel",
+      "position": "2020",
+      "result": "winner",
+      "title": "The Chain"
+    },
+    {
+      "authors": [
+        "Chris Whittaker"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2021",
+      "category": "Best International Crime Novel",
+      "position": "2021",
+      "result": "winner",
+      "title": "We Begin at the End"
+    },
+    {
+      "authors": [
+        "Chris Whitaker"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2021",
+      "category": "Best International Crime Novel",
+      "position": "2021",
+      "result": "winner",
+      "title": "We Begin at the End"
+    },
+    {
+      "authors": [
+        "Nita Prose"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2022",
+      "category": "Best International Crime Novel",
+      "position": "2022",
+      "result": "winner",
+      "title": "The Maid"
+    },
+    {
+      "authors": [
+        "Keith Bruton"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2023",
+      "category": "Best International Crime Novel",
+      "position": "2023",
+      "result": "winner",
+      "title": "The Lemon Man"
+    },
+    {
+      "authors": [
+        "Louise Candlish"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2024",
+      "category": "Best International Crime Novel",
+      "position": "2024",
+      "result": "winner",
+      "title": "The Only Suspect"
+    },
+    {
+      "authors": [
+        "Graeme Macrae Burnet"
+      ],
+      "award": "Ned Kelly Award",
+      "award_year": "2025",
+      "category": "Best International Crime Novel",
+      "position": "2025",
+      "result": "winner",
+      "title": "A Case of Matricide"
+    }
+  ],
+  "fetched_at": "2026-07-19T05:16:52Z",
+  "list_id": "ned_kelly_award_international_crime_fiction",
+  "list_name": "Ned Kelly Award - International Crime Fiction",
+  "match_series": false,
+  "notes": [],
+  "parser": "ned_kelly_award_international_crime_fiction",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Ned Kelly Award - International Crime Fiction",
+    "source_id": "ned_kelly_award_international_crime_fiction",
+    "url": "https://en.wikipedia.org/wiki/Ned_Kelly_Awards"
+  }
+}

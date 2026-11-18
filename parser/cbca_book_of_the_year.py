@@ -16,24 +16,26 @@ Maintenance notes:
 
 from datetime import date
 import re
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlsplit
 
 from bs4 import BeautifulSoup
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import ( # type: ignore
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
-    normalize_heading, normalize_line, strip_publication_notes,
+    normalize_heading, normalize_line, strip_publication_notes, is_author_suffix,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key # pyright: ignore[reportMissingImports]
   from calibre_plugins.list_switchboard.parser.pdf_text import extract_pdf_text # pyright: ignore[reportMissingImports]
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
-    normalize_heading, normalize_line, strip_publication_notes,
+    normalize_heading, normalize_line, strip_publication_notes, is_author_suffix,
   )
   from .generic import position_sort_key
   from .pdf_text import extract_pdf_text
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 
 AWARD_NAME = 'CBCA Book of the Year'
@@ -87,6 +89,7 @@ ALL_CATEGORY_ALIASES = {
     'Picture Book',
   ),
   CATEGORY_EVE_POWNALL: (
+    'Book of the Year Award: Eve Pownall',
     'Book of the Year Award: Eve Pownall Award for Information Books',
     'Eve Pownall Award for Information Books',
     'Eve Pownall Award',
@@ -182,6 +185,8 @@ class CBCABookOfTheYearParser(AwardParserBase):
         if progress is not None:
           progress(1, 1, 'Fetching CBCA 1946-on PDF')
         rows.extend(self.pdf_rows(fetch_url(pdf_url), pdf_url))
+      except (ImportCancelledError, CamoufoxRequiredError):
+        raise
       except Exception as err:
         notes.append(f'CBCA 1946-on PDF could not be fetched: {pdf_url}: {err}')
         if log is not None:
@@ -198,6 +203,8 @@ class CBCABookOfTheYearParser(AwardParserBase):
           if progress is not None:
             progress(index, 1, f'Fetching CBCA annual page {index}')
           rows.extend(self.html_rows(fetch_url(page_url), page_url))
+        except (ImportCancelledError, CamoufoxRequiredError):
+          raise
         except Exception as err:
           notes.append(f'CBCA annual page could not be fetched: {page_url}: {err}')
           if log is not None:
@@ -220,6 +227,8 @@ class CBCABookOfTheYearParser(AwardParserBase):
     if awards_page is None:
       try:
         awards_page = fetch_url(AWARDS_URL)
+      except (ImportCancelledError, CamoufoxRequiredError):
+        raise
       except Exception as err:
         notes.append(f'CBCA awards page could not be fetched: {AWARDS_URL}: {err}')
         if log is not None:
@@ -234,6 +243,10 @@ class CBCABookOfTheYearParser(AwardParserBase):
     return tuple(dict.fromkeys(links))
 
   def html_rows(self, html, base_url):
+    from .cbca_sources import modern_html_rows
+    modern = modern_html_rows(self, html, base_url)
+    if modern is not None:
+      return modern
     year = self.year_from_text(base_url)
     default_result = RESULT_SHORTLISTED if 'shortlist' in normalize_heading(base_url) else None
     rows = []
@@ -273,6 +286,10 @@ class CBCABookOfTheYearParser(AwardParserBase):
     return rows
 
   def pdf_rows(self, pdf_or_text, source_url=PDF_URL):
+    from .cbca_sources import history_pdf_rows
+    modern = history_pdf_rows(self, pdf_or_text, source_url)
+    if modern is not None:
+      return modern
     return self.rows_from_pdf_text(extract_pdf_text(pdf_or_text), source_url)
 
   def rows_from_pdf_text(self, text, source_url):
@@ -371,6 +388,8 @@ class CBCABookOfTheYearParser(AwardParserBase):
 
   def category_from_text(self, value):
     key = _category_key(value)
+    if key.startswith('the '):
+      key = key[4:]
     if not key:
       return None
     for category, aliases in ALL_CATEGORY_ALIASES.items():
@@ -400,6 +419,11 @@ class CBCABookOfTheYearParser(AwardParserBase):
     return self.build_row(year, category, title, author, result, source_url)
 
   def title_author_from_html_text(self, value):
+    parenthetical = re.fullmatch(r'\s*(.+?)\s*\(([^()]+)\)\s*', normalize_line(value))
+    if parenthetical and ',' in parenthetical[2]:
+      # A few official archive entries put both creator and publisher in brackets.
+      creator, _, _publisher = parenthetical[2].rpartition(',')
+      return self.clean_title(parenthetical[1]), self.clean_author(creator)
     value = self.clean_entry_text(value)
     if not value:
       return None
@@ -407,7 +431,7 @@ class CBCABookOfTheYearParser(AwardParserBase):
     first_comma = value.find(',')
     by_is_primary_separator = (
       by_match is not None
-      and (first_comma < 0 or by_match.start(0) < first_comma)
+      and (first_comma < 0 or all(is_author_suffix(part) for part in value[first_comma + 1:].split(',')))
       and not re.search(r'\b(?:illus|ill|illustrated|written|text)\s+by\b',
                         value[:by_match.start(2)], re.I))
     if by_is_primary_separator:
@@ -496,7 +520,7 @@ class CBCABookOfTheYearParser(AwardParserBase):
     value = normalize_line(value)
     value = re.sub(r'^\s*[*\-\u2022]\s*', '', value)
     value = strip_publication_notes(value)
-    return value.strip(' "\'\u2018\u2019\u201c\u201d,.;:')
+    return value.strip(' "\'\u2018\u2019\u201c\u201d,;:')
 
   def clean_title(self, value):
     value = self.strip_publisher_tail(strip_publication_notes(normalize_line(value)))
@@ -506,10 +530,10 @@ class CBCABookOfTheYearParser(AwardParserBase):
     value = normalize_line(value)
     value = CREATOR_PREFIX_RE.sub('', value)
     value = strip_publication_notes(value)
-    value = self.strip_publisher_tail(value)
+    value = re.sub(r',\s*HGCP\)\s*$', '', value)
     value = re.sub(r'\billus\.?\s+by\b', 'illustrated by', value, flags=re.I)
     value = re.sub(r'\bill\.?\s+', 'illustrated ', value, flags=re.I)
-    return normalize_line(value).strip(' "\'\u2018\u2019\u201c\u201d,.;:')
+    return normalize_line(value).strip(' "\'\u2018\u2019\u201c\u201d,;:')
 
   def strip_publisher_tail(self, value):
     value = normalize_line(value)
@@ -585,12 +609,18 @@ class CBCABookOfTheYearParser(AwardParserBase):
     urls = []
     for link in soup.find_all('a', href=True):
       href = link['href']
+      url = urljoin(base_url, href)
+      parsed = urlsplit(url)
+      if parsed.scheme not in ('https', 'http') or parsed.hostname not in ('cbca.org.au', 'www.cbca.org.au'):
+        continue
+      if parsed.path.casefold().endswith('.pdf'):
+        continue
       combined = normalize_heading(f'{link.get_text(" ", strip=True)} {href}')
       if not YEAR_RE.search(combined):
         continue
-      if 'shortlist' not in combined and 'book of the year award winners' not in combined:
+      if not re.search(r'\b(?:shortlist|winners)\b', combined):
         continue
-      urls.append(urljoin(base_url, href))
+      urls.append(url)
     return tuple(urls)
 
   def looks_like_pdf_text(self, source, base_url):

@@ -1,0 +1,32 @@
+{
+  "list_id": "british_fantasy_horror_novel",
+  "matches": [
+    {
+      "entry_key": "nos4r2|joe hill",
+      "imported_author": [
+        "Joe Hill"
+      ],
+      "imported_title": "NOS4R2",
+      "matched_at": "2026-11-15T00:24:13Z",
+      "matched_authors": [
+        "Joe Hill"
+      ],
+      "matched_book_id": 18383,
+      "matched_book_ids": [
+        18383
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Joe Hill"
+          ],
+          "matched_book_id": 18383,
+          "matched_title": "Nos4a2"
+        }
+      ],
+      "matched_title": "Nos4a2"
+    }
+  ],
+  "saved_at": "2026-11-15T00:24:13Z",
+  "schema_version": 2
+}

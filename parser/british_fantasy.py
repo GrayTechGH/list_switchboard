@@ -353,7 +353,8 @@ class BritishFantasyParser(AwardParserBase):
 
   def parse_sfadb(
       self, html, base_url, name, category, category_aliases=(),
-      fetch_url=None, log=None, progress=None, min_year=None, max_year=None):
+      fetch_url=None, log=None, progress=None, min_year=None, max_year=None,
+      cached_parsed=None, incremental_update=False, enable_incremental=False):
     parsed = BritishFantasySFADBParser().parse(
       html,
       base_url,
@@ -362,7 +363,8 @@ class BritishFantasyParser(AwardParserBase):
       self.sfadb_category_aliases(category, category_aliases),
       fetch_url=fetch_url,
       log=log,
-      progress=progress)
+      progress=progress, cached_parsed=cached_parsed,
+      incremental_update=incremental_update, enable_incremental=enable_incremental)
     rows = [
       self.apply_title_fixes(dict(entry), parsed.setdefault('notes', []))
       for entry in parsed.get('entries', ())

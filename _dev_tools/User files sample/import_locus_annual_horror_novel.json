@@ -1,0 +1,3194 @@
+{
+  "append_state": {
+    "entry_count": 198,
+    "last_entry_key": "the crimson road|a g slatter",
+    "last_position": "2026.09",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Barbara Hambly"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1989",
+      "category": "Horror Novel",
+      "position": "1989",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1989"
+      },
+      "title": "Those Who Hunt the Night"
+    },
+    {
+      "authors": [
+        "Anne Rice"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1989",
+      "category": "Horror Novel",
+      "position": "1989.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1989"
+      },
+      "title": "The Queen of the Damned"
+    },
+    {
+      "authors": [
+        "Raymond E. Feist"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1989",
+      "category": "Horror Novel",
+      "position": "1989.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1989"
+      },
+      "title": "Faerie Tale"
+    },
+    {
+      "authors": [
+        "Peter Straub"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1989",
+      "category": "Horror Novel",
+      "position": "1989.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1989"
+      },
+      "title": "Koko"
+    },
+    {
+      "authors": [
+        "Robert R. McCammon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1989",
+      "category": "Horror Novel",
+      "position": "1989.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1989"
+      },
+      "title": "Stinger"
+    },
+    {
+      "authors": [
+        "Thomas Harris"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1989",
+      "category": "Horror Novel",
+      "position": "1989.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1989"
+      },
+      "title": "The Silence of the Lambs"
+    },
+    {
+      "authors": [
+        "Brian Stableford"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1989",
+      "category": "Horror Novel",
+      "position": "1989.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1989"
+      },
+      "title": "The Empire of Fear"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1989",
+      "category": "Horror Novel",
+      "position": "1989.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1989"
+      },
+      "title": "The Influence"
+    },
+    {
+      "authors": [
+        "Joe R. Lansdale"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1989",
+      "category": "Horror Novel",
+      "position": "1989.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1989"
+      },
+      "title": "The Drive-In"
+    },
+    {
+      "authors": [
+        "Lee Killough"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1989",
+      "category": "Horror Novel",
+      "position": "1989.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1989"
+      },
+      "title": "Bloodlinks"
+    },
+    {
+      "authors": [
+        "John Skipp",
+        "Craig Spector"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1989",
+      "category": "Horror Novel",
+      "position": "1989.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1989"
+      },
+      "title": "The Scream"
+    },
+    {
+      "authors": [
+        "David J. Skal"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1989",
+      "category": "Horror Novel",
+      "position": "1989.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1989"
+      },
+      "title": "Antibodies"
+    },
+    {
+      "authors": [
+        "John Shirley"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1989",
+      "category": "Horror Novel",
+      "position": "1989.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1989"
+      },
+      "title": "In Darkness Waiting"
+    },
+    {
+      "authors": [
+        "David J. Schow"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1989",
+      "category": "Horror Novel",
+      "position": "1989.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1989"
+      },
+      "title": "The Kill Riff"
+    },
+    {
+      "authors": [
+        "Dan Simmons"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Horror Novel",
+      "position": "1990",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "Carrion Comfort"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Horror Novel",
+      "position": "1990.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "The Dark Half"
+    },
+    {
+      "authors": [
+        "Clive Barker"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Horror Novel",
+      "position": "1990.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "The Great and Secret Show"
+    },
+    {
+      "authors": [
+        "Katherine Dunn"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Horror Novel",
+      "position": "1990.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "Geek Love"
+    },
+    {
+      "authors": [
+        "Dean R. Koontz"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Horror Novel",
+      "position": "1990.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "Midnight"
+    },
+    {
+      "authors": [
+        "Robert R. McCammon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Horror Novel",
+      "position": "1990.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "The Wolf's Hour"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Horror Novel",
+      "position": "1990.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "Ancient Images"
+    },
+    {
+      "authors": [
+        "K. W. Jeter"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Horror Novel",
+      "position": "1990.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "In the Land of the Dead"
+    },
+    {
+      "authors": [
+        "Peter Straub"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Horror Novel",
+      "position": "1990.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "Mystery"
+    },
+    {
+      "authors": [
+        "Nancy A. Collins"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Horror Novel",
+      "position": "1990.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "Sunglasses After Dark"
+    },
+    {
+      "authors": [
+        "Jack Butler"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Horror Novel",
+      "position": "1990.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "Nightshade"
+    },
+    {
+      "authors": [
+        "Michael Paine"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Horror Novel",
+      "position": "1990.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "Owl Light"
+    },
+    {
+      "authors": [
+        "Marianne Wiggins"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Horror Novel",
+      "position": "1990.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "John Dollar"
+    },
+    {
+      "authors": [
+        "Anne Rice"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1991",
+      "category": "Horror Novel",
+      "position": "1991",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1991"
+      },
+      "title": "The Witching Hour"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1991",
+      "category": "Horror Novel",
+      "position": "1991.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1991"
+      },
+      "title": "The Stand: The Complete & Uncut Edition"
+    },
+    {
+      "authors": [
+        "S. P. Somtow"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1991",
+      "category": "Horror Novel",
+      "position": "1991.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1991"
+      },
+      "title": "Moon Dance"
+    },
+    {
+      "authors": [
+        "Nancy A. Collins"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1991",
+      "category": "Horror Novel",
+      "position": "1991.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1991"
+      },
+      "title": "Tempter"
+    },
+    {
+      "authors": [
+        "Brian Stableford"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1991",
+      "category": "Horror Novel",
+      "position": "1991.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1991"
+      },
+      "title": "The Werewolves of London"
+    },
+    {
+      "authors": [
+        "Valerie Martin"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1991",
+      "category": "Horror Novel",
+      "position": "1991.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1991"
+      },
+      "title": "Mary Reilly"
+    },
+    {
+      "authors": [
+        "Garfield Reeves-Stevens"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1991",
+      "category": "Horror Novel",
+      "position": "1991.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1991"
+      },
+      "title": "Dark Matter"
+    },
+    {
+      "authors": [
+        "Alan Rodgers"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1991",
+      "category": "Horror Novel",
+      "position": "1991.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1991"
+      },
+      "title": "Fire"
+    },
+    {
+      "authors": [
+        "Dean R. Koontz"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1991",
+      "category": "Horror Novel",
+      "position": "1991.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1991"
+      },
+      "title": "The Bad Place"
+    },
+    {
+      "authors": [
+        "Emmanuel Carr\u00e8re"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1991",
+      "category": "Horror Novel",
+      "position": "1991.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1991"
+      },
+      "title": "Gothic Romance"
+    },
+    {
+      "authors": [
+        "Dan Simmons"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1992",
+      "category": "Horror Novel",
+      "position": "1992",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1992"
+      },
+      "title": "Summer of Night"
+    },
+    {
+      "authors": [
+        "Clive Barker"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1992",
+      "category": "Horror Novel",
+      "position": "1992.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1992"
+      },
+      "title": "Imajica"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1992",
+      "category": "Horror Novel",
+      "position": "1992.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1992"
+      },
+      "title": "The Dark Tower III: The Waste Lands"
+    },
+    {
+      "authors": [
+        "Thomas M. Disch"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1992",
+      "category": "Horror Novel",
+      "position": "1992.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1992"
+      },
+      "title": "The M.D."
+    },
+    {
+      "authors": [
+        "Tanya Huff"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1992",
+      "category": "Horror Novel",
+      "position": "1992.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1992"
+      },
+      "title": "Blood Price"
+    },
+    {
+      "authors": [
+        "Nancy A. Collins"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1992",
+      "category": "Horror Novel",
+      "position": "1992.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1992"
+      },
+      "title": "In the Blood"
+    },
+    {
+      "authors": [
+        "Kathe Koja"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1992",
+      "category": "Horror Novel",
+      "position": "1992.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1992"
+      },
+      "title": "The Cipher"
+    },
+    {
+      "authors": [
+        "Michael Cadnum"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1992",
+      "category": "Horror Novel",
+      "position": "1992.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1992"
+      },
+      "title": "Saint Peter's Wolf"
+    },
+    {
+      "authors": [
+        "Peter Straub"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1992",
+      "category": "Horror Novel",
+      "position": "1992.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1992"
+      },
+      "title": "Mrs. God"
+    },
+    {
+      "authors": [
+        "Brian Stableford"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1992",
+      "category": "Horror Novel",
+      "position": "1992.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1992"
+      },
+      "title": "The Angel of Pain"
+    },
+    {
+      "authors": [
+        "Robert R. McCammon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1992",
+      "category": "Horror Novel",
+      "position": "1992.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1992"
+      },
+      "title": "Boy's Life"
+    },
+    {
+      "authors": [
+        "Robert Holdstock"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1992",
+      "category": "Horror Novel",
+      "position": "1992.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1992"
+      },
+      "title": "The Fetch"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1992",
+      "category": "Horror Novel",
+      "position": "1992.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1992"
+      },
+      "title": "Needful Things"
+    },
+    {
+      "authors": [
+        "Dan Simmons"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Horror Novel",
+      "position": "1993",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "Children of the Night"
+    },
+    {
+      "authors": [
+        "Orson Scott Card"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Horror Novel",
+      "position": "1993.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "Lost Boys"
+    },
+    {
+      "authors": [
+        "Clive Barker"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Horror Novel",
+      "position": "1993.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "The Thief of Always"
+    },
+    {
+      "authors": [
+        "Anne Rice"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Horror Novel",
+      "position": "1993.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "The Tale of the Body Thief"
+    },
+    {
+      "authors": [
+        "Kathe Koja"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Horror Novel",
+      "position": "1993.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "Bad Brains"
+    },
+    {
+      "authors": [
+        "Tanith Lee"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Horror Novel",
+      "position": "1993.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "Dark Dance"
+    },
+    {
+      "authors": [
+        "Tanya Huff"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Horror Novel",
+      "position": "1993.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "Blood Lines"
+    },
+    {
+      "authors": [
+        "S. P. Somtow"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Horror Novel",
+      "position": "1993.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "Valentine"
+    },
+    {
+      "authors": [
+        "Melanie Tem"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Horror Novel",
+      "position": "1993.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "Wilding"
+    },
+    {
+      "authors": [
+        "K. W. Jeter"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Horror Novel",
+      "position": "1993.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "Wolf Flow"
+    },
+    {
+      "authors": [
+        "Poppy Z. Brite"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Horror Novel",
+      "position": "1993.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "Lost Souls"
+    },
+    {
+      "authors": [
+        "Brian Stableford"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Horror Novel",
+      "position": "1993.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "Young Blood"
+    },
+    {
+      "authors": [
+        "Michael Cadnum"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Horror Novel",
+      "position": "1993.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "Ghostwright"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Horror Novel",
+      "position": "1993.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "Dolores Claiborne"
+    },
+    {
+      "authors": [
+        "Lucius Shepard"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Horror Novel",
+      "position": "1994",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "The Golden"
+    },
+    {
+      "authors": [
+        "Kim Newman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Horror Novel",
+      "position": "1994.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "Anno Dracula"
+    },
+    {
+      "authors": [
+        "Steven Brust"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Horror Novel",
+      "position": "1994.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "Agyar"
+    },
+    {
+      "authors": [
+        "Dean Koontz"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Horror Novel",
+      "position": "1994.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "Mr. Murder"
+    },
+    {
+      "authors": [
+        "Anne Rice"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Horror Novel",
+      "position": "1994.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "Lasher"
+    },
+    {
+      "authors": [
+        "Poppy Z. Brite"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Horror Novel",
+      "position": "1994.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "Drawing Blood"
+    },
+    {
+      "authors": [
+        "Michael Blumlein"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Horror Novel",
+      "position": "1994.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "X, Y"
+    },
+    {
+      "authors": [
+        "Tanith Lee"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Horror Novel",
+      "position": "1994.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "Personal Darkness"
+    },
+    {
+      "authors": [
+        "Melanie Tem",
+        "Nancy Holder"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Horror Novel",
+      "position": "1994.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "Making Love"
+    },
+    {
+      "authors": [
+        "Tanya Huff"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Horror Novel",
+      "position": "1994.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "Blood Pact"
+    },
+    {
+      "authors": [
+        "Bradley Denton"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Horror Novel",
+      "position": "1994.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "Blackburn"
+    },
+    {
+      "authors": [
+        "Tim Powers"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Horror Novel",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "Expiration Date"
+    },
+    {
+      "authors": [
+        "Barbara Hambly"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Horror Novel",
+      "position": "1996.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "Travelling with the Dead"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Horror Novel",
+      "position": "1996.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "Rose Madder"
+    },
+    {
+      "authors": [
+        "Kim Newman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Horror Novel",
+      "position": "1996.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "The Bloody Red Baron"
+    },
+    {
+      "authors": [
+        "Nancy A. Collins"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Horror Novel",
+      "position": "1996.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "Paint it Black"
+    },
+    {
+      "authors": [
+        "James P. Blaylock"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Horror Novel",
+      "position": "1996.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "All the Bells on Earth"
+    },
+    {
+      "authors": [
+        "Jack Cady"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Horror Novel",
+      "position": "1996.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "The Off Season"
+    },
+    {
+      "authors": [
+        "Anne Rice"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Horror Novel",
+      "position": "1996.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "Memnoch the Devil"
+    },
+    {
+      "authors": [
+        "S. P. Somtow"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Horror Novel",
+      "position": "1996.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "Vanitas"
+    },
+    {
+      "authors": [
+        "Melanie Tem"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Horror Novel",
+      "position": "1996.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "Desmodus"
+    },
+    {
+      "authors": [
+        "Tanith Lee"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Horror Novel",
+      "position": "1996.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "Vivia"
+    },
+    {
+      "authors": [
+        "Tom Tryon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Horror Novel",
+      "position": "1996.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "Night Magic"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Horror Novel",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "Desperation"
+    },
+    {
+      "authors": [
+        "Clive Barker"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Horror Novel",
+      "position": "1997.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "Sacrament"
+    },
+    {
+      "authors": [
+        "Robert Holdstock"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Horror Novel",
+      "position": "1997.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "Unknown Regions"
+    },
+    {
+      "authors": [
+        "Brian Stableford"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Horror Novel",
+      "position": "1997.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "The Hunger and Ecstasy of Vampires"
+    },
+    {
+      "authors": [
+        "Graham Joyce"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Horror Novel",
+      "position": "1997.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "Requiem"
+    },
+    {
+      "authors": [
+        "Marc Laidlaw"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Horror Novel",
+      "position": "1997.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "The 37th Mandala"
+    },
+    {
+      "authors": [
+        "Anne Rice"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Horror Novel",
+      "position": "1997.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "Servant of the Bones"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Horror Novel",
+      "position": "1997.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "The Green Mile"
+    },
+    {
+      "authors": [
+        "Lisa Tuttle"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Horror Novel",
+      "position": "1997.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "The Pillow Friend"
+    },
+    {
+      "authors": [
+        "Todd Grimson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Horror Novel",
+      "position": "1997.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "Stainless"
+    },
+    {
+      "authors": [
+        "Joe Hill"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Horror Novel",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "The Fireman"
+    },
+    {
+      "authors": [
+        "Matt Ruff"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Horror Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Lovecraft Country"
+    },
+    {
+      "authors": [
+        "Cherie Priest"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Horror Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "The Family Plot"
+    },
+    {
+      "authors": [
+        "Silvia Moreno-Garcia"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Horror Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Certain Dark Things"
+    },
+    {
+      "authors": [
+        "Thomas Olde Heuvelt"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Horror Novel",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "HEX"
+    },
+    {
+      "authors": [
+        "Paul Tremblay"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Horror Novel",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Disappearance at Devil's Rock"
+    },
+    {
+      "authors": [
+        "M. R. Carey"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Horror Novel",
+      "position": "2017.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Fellside"
+    },
+    {
+      "authors": [
+        "John Langan"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Horror Novel",
+      "position": "2017.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "The Fisherman"
+    },
+    {
+      "authors": [
+        "Stephen Graham Jones"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Horror Novel",
+      "position": "2017.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Mongrels"
+    },
+    {
+      "authors": [
+        "R. S. Belcher"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Horror Novel",
+      "position": "2017.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "The Brotherhood of the Wheel"
+    },
+    {
+      "authors": [
+        "Victor LaValle"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Horror Novel",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "The Changeling"
+    },
+    {
+      "authors": [
+        "Cassandra Khaw"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Horror Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Food of the Gods"
+    },
+    {
+      "authors": [
+        "Kit Reed"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Horror Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Mormama"
+    },
+    {
+      "authors": [
+        "Sarah Pinborough"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Horror Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Behind Her Eyes"
+    },
+    {
+      "authors": [
+        "Ian R. MacLeod"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Horror Novel",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Red Snow"
+    },
+    {
+      "authors": [
+        "Paul La Farge"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Horror Novel",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "The Night Ocean"
+    },
+    {
+      "authors": [
+        "Steve Rasnic Tem"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Horror Novel",
+      "position": "2018.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Ubo"
+    },
+    {
+      "authors": [
+        "John Darnielle"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Horror Novel",
+      "position": "2018.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Universal Harvester"
+    },
+    {
+      "authors": [
+        "Jonathan L. Howard"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Horror Novel",
+      "position": "2018.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "After the End of the World"
+    },
+    {
+      "authors": [
+        "Dan Chaon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Horror Novel",
+      "position": "2018.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Ill Will"
+    },
+    {
+      "authors": [
+        "Paul Tremblay"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Horror Novel",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "The Cabin at the End of the World"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Horror Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "The Outsider"
+    },
+    {
+      "authors": [
+        "Sarah Pinborough"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Horror Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "Cross Her Heart"
+    },
+    {
+      "authors": [
+        "Dale Bailey"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Horror Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "In the Night Wood"
+    },
+    {
+      "authors": [
+        "Alma Katsu"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Horror Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "The Hunger"
+    },
+    {
+      "authors": [
+        "Kaaron Warren"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Horror Novel",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "Tide of Stone"
+    },
+    {
+      "authors": [
+        "Gabino Iglesias"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Horror Novel",
+      "position": "2019.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "Coyote Songs"
+    },
+    {
+      "authors": [
+        "Grady Hendrix"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Horror Novel",
+      "position": "2019.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "We Sold Our Souls"
+    },
+    {
+      "authors": [
+        "Robert McCammon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Horror Novel",
+      "position": "2019.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "The Listener"
+    },
+    {
+      "authors": [
+        "Michael Cisco"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Horror Novel",
+      "position": "2019.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "Unlanguage"
+    },
+    {
+      "authors": [
+        "Marlon James"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Horror Novel",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "Black Leopard, Red Wolf"
+    },
+    {
+      "authors": [
+        "T. Kingfisher"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Horror Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "The Twisted Ones"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Horror Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "The Institute"
+    },
+    {
+      "authors": [
+        "Elizabeth Hand"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Horror Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "Curious Toys"
+    },
+    {
+      "authors": [
+        "Cherie Priest"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Horror Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "The Toll"
+    },
+    {
+      "authors": [
+        "Kim Newman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Horror Novel",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "Anno Dracula 1999: Daikaiji"
+    },
+    {
+      "authors": [
+        "Richard Kadrey"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Horror Novel",
+      "position": "2020.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "The Grand Dark"
+    },
+    {
+      "authors": [
+        "Barbara Hambly"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Horror Novel",
+      "position": "2020.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "Prisoner of Midnight"
+    },
+    {
+      "authors": [
+        "Claire North"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Horror Novel",
+      "position": "2020.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "The Pursuit of William Abbey"
+    },
+    {
+      "authors": [
+        "Stephen Chbosky"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Horror Novel",
+      "position": "2020.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "Imaginary Friend"
+    },
+    {
+      "authors": [
+        "Silvia Moreno-Garcia"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Horror Novel",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "Mexican Gothic"
+    },
+    {
+      "authors": [
+        "Stephen Graham Jones"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Horror Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "The Only Good Indians"
+    },
+    {
+      "authors": [
+        "Maria Dahvana Headley"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Horror Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "Beowulf"
+    },
+    {
+      "authors": [
+        "T. Kingfisher"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Horror Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "The Hollow Places"
+    },
+    {
+      "authors": [
+        "Grady Hendrix"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Horror Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "The Southern Book Club's Guide to Slaying Vampires"
+    },
+    {
+      "authors": [
+        "Paul Tremblay"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Horror Novel",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "Survivor Song"
+    },
+    {
+      "authors": [
+        "Max Brooks"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Horror Novel",
+      "position": "2021.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "Devolution"
+    },
+    {
+      "authors": [
+        "Alma Katsu"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Horror Novel",
+      "position": "2021.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "The Deep"
+    },
+    {
+      "authors": [
+        "Emily M. Danforth"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Horror Novel",
+      "position": "2021.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "Plain Bad Heroines"
+    },
+    {
+      "authors": [
+        "Hiroko Oyamada"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Horror Novel",
+      "position": "2021.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "The Hole"
+    },
+    {
+      "authors": [
+        "Stephen Graham Jones"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Horror Novel",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "My Heart Is a Chainsaw"
+    },
+    {
+      "authors": [
+        "Rivers Solomon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Horror Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "Sorrowland"
+    },
+    {
+      "authors": [
+        "Chuck Wendig"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Horror Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "The Book of Accidents"
+    },
+    {
+      "authors": [
+        "Grady Hendrix"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Horror Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "The Final Girl Support Group"
+    },
+    {
+      "authors": [
+        "Caitlin Starling"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Horror Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "The Death of Jane Lawrence"
+    },
+    {
+      "authors": [
+        "Premee Mohamed"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Horror Novel",
+      "position": "2022.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "A Broken Darkness"
+    },
+    {
+      "authors": [
+        "Daryl Gregory"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Horror Novel",
+      "position": "2022.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "Revelator"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Horror Novel",
+      "position": "2022.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "Later"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Horror Novel",
+      "position": "2022.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "Billy Summers"
+    },
+    {
+      "authors": [
+        "Joe R. Lansdale"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Horror Novel",
+      "position": "2022.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "Moon Lake"
+    },
+    {
+      "authors": [
+        "T. Kingfisher"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Horror Novel",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "What Moves the Dead"
+    },
+    {
+      "authors": [
+        "Paul Tremblay"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Horror Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "The Pallbearers Club"
+    },
+    {
+      "authors": [
+        "Sarah Gailey"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Horror Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Just Like Home"
+    },
+    {
+      "authors": [
+        "Gabino Iglesias"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Horror Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "The Devil Takes You Home"
+    },
+    {
+      "authors": [
+        "Hailey Piper"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Horror Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "No Gods for Drowning"
+    },
+    {
+      "authors": [
+        "Alma Katsu"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Horror Novel",
+      "position": "2023.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "The Fervor"
+    },
+    {
+      "authors": [
+        "Catriona Ward"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Horror Novel",
+      "position": "2023.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Sundial"
+    },
+    {
+      "authors": [
+        "Thomas Olde Heuvelt"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Horror Novel",
+      "position": "2023.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Echo"
+    },
+    {
+      "authors": [
+        "Christopher Golden"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Horror Novel",
+      "position": "2023.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Road of Bones"
+    },
+    {
+      "authors": [
+        "Stephanie Feldman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Horror Novel",
+      "position": "2023.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Saturnalia"
+    },
+    {
+      "authors": [
+        "Stephen King",
+        "Richard Chizmar"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Horror Novel",
+      "position": "2023.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Gwendy's Final Task"
+    },
+    {
+      "authors": [
+        "T. Kingfisher"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Horror Novel",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "A House with Good Bones"
+    },
+    {
+      "authors": [
+        "Silvia Moreno-Garcia"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Horror Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "Silver Nitrate"
+    },
+    {
+      "authors": [
+        "Alix E. Harrow"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Horror Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "Starling House"
+    },
+    {
+      "authors": [
+        "Tananarive Due"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Horror Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "The Reformatory"
+    },
+    {
+      "authors": [
+        "Stephen Graham Jones"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Horror Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "Don't Fear the Reaper"
+    },
+    {
+      "authors": [
+        "Victor LaValle"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Horror Novel",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "Lone Women"
+    },
+    {
+      "authors": [
+        "Grady Hendrix"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Horror Novel",
+      "position": "2024.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "How to Sell a Haunted House"
+    },
+    {
+      "authors": [
+        "Isabel Ca\u00f1as"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Horror Novel",
+      "position": "2024.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "Vampires of El Norte"
+    },
+    {
+      "authors": [
+        "Elizabeth Hand"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Horror Novel",
+      "position": "2024.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "A Haunting on the Hill"
+    },
+    {
+      "authors": [
+        "Chuck Wendig"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Horror Novel",
+      "position": "2024.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "Black River Orchard"
+    },
+    {
+      "authors": [
+        "Chuck Tingle"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Horror Novel",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Bury Your Gays"
+    },
+    {
+      "authors": [
+        "Stephen Graham Jones"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Horror Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "The Angel of Indian Lake"
+    },
+    {
+      "authors": [
+        "Rivers Solomon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Horror Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Model Home"
+    },
+    {
+      "authors": [
+        "Paul Tremblay"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Horror Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Horror Movie"
+    },
+    {
+      "authors": [
+        "Gabino Iglesias"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Horror Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "House of Bone and Rain"
+    },
+    {
+      "authors": [
+        "Gretchen Felker-Martin"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Horror Novel",
+      "position": "2025.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Cuckoo"
+    },
+    {
+      "authors": [
+        "Cynthia Pelayo"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Horror Novel",
+      "position": "2025.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Forgotten Sisters"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Horror Novel",
+      "position": "2025.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "The Wilding"
+    },
+    {
+      "authors": [
+        "Josh Malerman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Horror Novel",
+      "position": "2025.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Incidents Around the House"
+    },
+    {
+      "authors": [
+        "Kaaron Warren"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Horror Novel",
+      "position": "2025.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "The Underhistory"
+    },
+    {
+      "authors": [
+        "Stephen Graham Jones"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Horror Novel",
+      "position": "2026",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "The Buffalo Hunter Hunter"
+    },
+    {
+      "authors": [
+        "Silvia Moreno-Garcia"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Horror Novel",
+      "position": "2026.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "The Bewitching"
+    },
+    {
+      "authors": [
+        "Joe Hill"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Horror Novel",
+      "position": "2026.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "King Sorrow"
+    },
+    {
+      "authors": [
+        "Chuck Wendig"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Horror Novel",
+      "position": "2026.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "The Staircase in the Woods"
+    },
+    {
+      "authors": [
+        "Sarah Gailey"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Horror Novel",
+      "position": "2026.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Spread Me"
+    },
+    {
+      "authors": [
+        "Isabel Ca\u00f1as"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Horror Novel",
+      "position": "2026.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "The Possession of Alba D\u00edaz"
+    },
+    {
+      "authors": [
+        "Cherie Priest"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Horror Novel",
+      "position": "2026.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "It Was Her House First"
+    },
+    {
+      "authors": [
+        "Cassandra Khaw"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Horror Novel",
+      "position": "2026.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "The Library at Hellebore"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Horror Novel",
+      "position": "2026.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Never Flinch"
+    },
+    {
+      "authors": [
+        "A. G. Slatter"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Horror Novel",
+      "position": "2026.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "The Crimson Road"
+    }
+  ],
+  "fetched_at": "2026-07-23T07:04:58Z",
+  "list_id": "locus_annual_horror_novel",
+  "list_name": "Locus - Annual Horror Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "locus_annual_horror_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Locus - Annual Horror Novel",
+    "source_id": "locus_annual_horror_novel",
+    "url": "https://www.sfadb.com/Locus_Awards"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "append_state": {
+    "entry_count": 6,
+    "last_entry_key": "song for a scarlet runner|julie hunt",
+    "last_position": "2014.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Kirsty Murray"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2014",
+      "category": "Children's Book",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2014"
+      },
+      "title": "The Four Seasons of Lucy McKenzie"
+    },
+    {
+      "authors": [
+        "Lian Tanner"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2014",
+      "category": "Children's Book",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2014"
+      },
+      "title": "Ice Breaker: The Hidden 1"
+    },
+    {
+      "authors": [
+        "Isobelle Carmody"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2014",
+      "category": "Children's Book",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2014"
+      },
+      "title": "Kingdom of the Lost, Book 2: Cloud Road"
+    },
+    {
+      "authors": [
+        "Jackie French"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2014",
+      "category": "Children's Book",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2014"
+      },
+      "title": "Refuge"
+    },
+    {
+      "authors": [
+        "Shaun Tan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2014",
+      "category": "Children's Book",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2014"
+      },
+      "title": "Rules of Summer"
+    },
+    {
+      "authors": [
+        "Julie Hunt"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2014",
+      "category": "Children's Book",
+      "position": "2014.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2014"
+      },
+      "title": "Song for a Scarlet Runner"
+    }
+  ],
+  "fetched_at": "2026-11-15T03:35:00Z",
+  "list_id": "aurealis_childrens_book",
+  "list_name": "Aurealis - Children's Book (discontinued)",
+  "match_series": false,
+  "notes": [],
+  "parser": "aurealis_childrens_book",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Aurealis - Children's Book (discontinued)",
+    "source_id": "aurealis_childrens_book",
+    "url": "https://www.sfadb.com/Aurealis_Awards"
+  }
+}

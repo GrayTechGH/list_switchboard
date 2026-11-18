@@ -55,10 +55,10 @@ class UrlFetcherNeroBookAwards(UrlFetcherGeneric):
       SourceAttempt(
         'Nero Book Awards',
         self.URL,
-        lambda html, url, fetch_url=None, log=None, progress=None: (
+        lambda html, url, fetch_url=None, log=None, progress=None,**kwargs: (
           self.create_official_parser().parse(
-            html, url, self.NAME, fetch_url=fetch_url, log=log, progress=progress)),
-        source_rank=0),
+            html, url, self.NAME, fetch_url=fetch_url, log=log, progress=progress,**kwargs)),
+        source_rank=0,supports_incremental=True),
       SourceAttempt(
         'Wikipedia',
         self.WIKIPEDIA_URL,
@@ -73,7 +73,8 @@ class UrlFetcherNeroBookAwards(UrlFetcherGeneric):
   def fetch_and_parse(
       self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
       before_fetch=None, after_fetch=None, before_parse=None,
-      force_fallback_level=0, disable_fallbacks=False, source_choice=None):
+      force_fallback_level=0, disable_fallbacks=False, source_choice=None,
+      cached_parsed=None,incremental_update=False):
     parsed = SourceFallbackRunner(
       self.source_attempts(),
       error_class=UrlFetcherError).run(
@@ -85,7 +86,7 @@ class UrlFetcherNeroBookAwards(UrlFetcherGeneric):
         before_parse=before_parse,
         force_fallback_level=force_fallback_level,
         disable_fallbacks=disable_fallbacks,
-        source_choice=source_choice)
+        source_choice=source_choice,cached_parsed=cached_parsed,incremental_update=incremental_update)
     parsed.setdefault('match_series', self.options.get('match_series', True))
     return parsed
 
@@ -95,6 +96,7 @@ class UrlFetcherNeroBookAwards(UrlFetcherGeneric):
 
 
 class UrlFetcherNeroBookAwardsFiction(UrlFetcherNeroBookAwards):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   FILTER_CATEGORIES = (
     CATEGORY_LITERARY_GENERAL_FICTION,
@@ -107,6 +109,7 @@ class UrlFetcherNeroBookAwardsFiction(UrlFetcherNeroBookAwards):
 
 
 class UrlFetcherNeroBookAwardsDebutFiction(UrlFetcherNeroBookAwards):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   FILTER_CATEGORIES = (
     CATEGORY_LITERARY_GENERAL_FICTION,
@@ -119,6 +122,7 @@ class UrlFetcherNeroBookAwardsDebutFiction(UrlFetcherNeroBookAwards):
 
 
 class UrlFetcherNeroBookAwardsNonfiction(UrlFetcherNeroBookAwards):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   FILTER_CATEGORIES = (
     CATEGORY_NONFICTION,
@@ -131,6 +135,7 @@ class UrlFetcherNeroBookAwardsNonfiction(UrlFetcherNeroBookAwards):
 
 
 class UrlFetcherNeroBookAwardsChildrensFiction(UrlFetcherNeroBookAwards):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   FILTER_CATEGORIES = (
     CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
@@ -147,6 +152,7 @@ class UrlFetcherNeroBookAwardsChildrensFiction(UrlFetcherNeroBookAwards):
 
 
 class UrlFetcherNeroBookAwardsGoldPrize(UrlFetcherNeroBookAwards):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   FILTER_CATEGORIES = (CATEGORY_REGIONAL_NATIONAL_AWARDS,)
   source_id = 'nero_book_awards_gold_prize'

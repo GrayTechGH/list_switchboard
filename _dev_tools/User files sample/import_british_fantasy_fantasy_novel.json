@@ -1,8 +1,8 @@
 {
   "append_state": {
-    "entry_count": 74,
-    "last_entry_key": "upon a starlit tide|kell woods",
-    "last_position": "2026.06",
+    "entry_count": 79,
+    "last_entry_key": "a song of legends lost|m h ayinde",
+    "last_position": "2026.10",
     "source_revision": null
   },
   "entries": [
@@ -1026,7 +1026,23 @@
     },
     {
       "authors": [
-        "Shona Kinsella"
+        "Kell Woods"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2026",
+      "category": "Fantasy Novel",
+      "position": "2026",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2026"
+      },
+      "title": "Upon a Starlit Tide"
+    },
+    {
+      "authors": [
+        "Samantha Shannon"
       ],
       "award": "British Fantasy Award",
       "award_year": "2026",
@@ -1036,9 +1052,9 @@
       "source": {
         "name": "",
         "source_id": "",
-        "url": "https://britishfantasysociety.org/the-british-fantasy-awards-2026-shortlists/"
+        "url": "https://britishfantasysociety.org/british-fantasy-awards-shortlists/"
       },
-      "title": "Daughters of Nicnevin"
+      "title": "A Day of Fallen Night"
     },
     {
       "authors": [
@@ -1052,13 +1068,13 @@
       "source": {
         "name": "",
         "source_id": "",
-        "url": "https://britishfantasysociety.org/the-british-fantasy-awards-2026-shortlists/"
+        "url": "https://britishfantasysociety.org/british-fantasy-awards-shortlists/"
       },
-      "title": "Magic, Maps, and Mischief"
+      "title": "At Eternity's Gates"
     },
     {
       "authors": [
-        "M H Ayinde"
+        "David Green"
       ],
       "award": "British Fantasy Award",
       "award_year": "2026",
@@ -1068,13 +1084,13 @@
       "source": {
         "name": "",
         "source_id": "",
-        "url": "https://britishfantasysociety.org/the-british-fantasy-awards-2026-shortlists/"
+        "url": "https://britishfantasysociety.org/british-fantasy-awards-shortlists/"
       },
-      "title": "A Song of Legends Lost"
+      "title": "Beyond Sundered Seas"
     },
     {
       "authors": [
-        "Annabel Campbell"
+        "Wole Talabi"
       ],
       "award": "British Fantasy Award",
       "award_year": "2026",
@@ -1084,13 +1100,13 @@
       "source": {
         "name": "",
         "source_id": "",
-        "url": "https://britishfantasysociety.org/the-british-fantasy-awards-2026-shortlists/"
+        "url": "https://britishfantasysociety.org/british-fantasy-awards-shortlists/"
       },
-      "title": "The Outcast Mage"
+      "title": "Shigidi and the Brass Head of Obalufon"
     },
     {
       "authors": [
-        "Richard Swan"
+        "Jen Williams"
       ],
       "award": "British Fantasy Award",
       "award_year": "2026",
@@ -1100,13 +1116,13 @@
       "source": {
         "name": "",
         "source_id": "",
-        "url": "https://britishfantasysociety.org/the-british-fantasy-awards-2026-shortlists/"
+        "url": "https://britishfantasysociety.org/british-fantasy-awards-shortlists/"
       },
-      "title": "Grave Empire"
+      "title": "Talonsister"
     },
     {
       "authors": [
-        "Kell Woods"
+        "Shona Kinsella"
       ],
       "award": "British Fantasy Award",
       "award_year": "2026",
@@ -1116,20 +1132,86 @@
       "source": {
         "name": "",
         "source_id": "",
-        "url": "https://britishfantasysociety.org/the-british-fantasy-awards-2026-shortlists/"
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2026"
       },
-      "title": "Upon a Starlit Tide"
+      "title": "Daughters of Nicnevin"
+    },
+    {
+      "authors": [
+        "Richard Swan"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2026",
+      "category": "Fantasy Novel",
+      "position": "2026.07",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2026"
+      },
+      "title": "Grave Empire"
+    },
+    {
+      "authors": [
+        "David Green"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2026",
+      "category": "Fantasy Novel",
+      "position": "2026.08",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2026"
+      },
+      "title": "Magic, Maps, and Mischief"
+    },
+    {
+      "authors": [
+        "Annabel Campbell"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2026",
+      "category": "Fantasy Novel",
+      "position": "2026.09",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2026"
+      },
+      "title": "The Outcast Mage"
+    },
+    {
+      "authors": [
+        "M. H. Ayinde"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2026",
+      "category": "Fantasy Novel",
+      "position": "2026.10",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2026"
+      },
+      "title": "A Song of Legends Lost"
     }
   ],
-  "fetched_at": "2026-07-14T06:33:38Z",
+  "fetched_at": "2026-11-15T00:24:56Z",
   "list_id": "british_fantasy_fantasy_novel",
   "list_name": "British Fantasy - Fantasy Novel",
   "match_series": false,
   "notes": [
     "Official BFS winners archive is winner-only.",
-    "Official BFS shortlist coverage is current-cycle only; historical shortlist rows come from SFADB year pages."
+    "Official BFS shortlist coverage is current-cycle only; historical shortlist rows come from SFADB year pages.",
+    "SFADB winner rows were omitted where the authoritative official BFS archive already supplied that year and category winner."
   ],
   "parser": "british_fantasy_fantasy_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "British Fantasy - Fantasy Novel",

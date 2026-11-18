@@ -2,6 +2,7 @@
 # vim:fileencoding=UTF-8:ts=2:sw=2:sta:et:sts=2:ai
 
 import re
+import json
 from urllib.parse import urljoin
 
 from lxml import html as lxml_html
@@ -20,10 +21,12 @@ try:
   )
   from calibre_plugins.list_switchboard.parser.award_base import normalize_line
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
+  from calibre_plugins.list_switchboard.parser.annual_updates import read_annual_pages
 except ImportError:
   from parser.source_fallback import SourceAttempt, SourceFallbackRunner
   from parser.award_base import normalize_line
   from parser.generic import position_sort_key
+  from parser.annual_updates import read_annual_pages
 
 
 BAILLIE_GIFFORD_YEARS_URL = (
@@ -35,6 +38,7 @@ BAILLIE_GIFFORD_WIKIPEDIA_URL = (
 
 
 class UrlFetcherBaillieGiffordPrize(UrlFetcherGeneric):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   source_id = 'baillie_gifford_prize'
   NAME = 'Baillie Gifford Prize'
@@ -73,12 +77,12 @@ class UrlFetcherBaillieGiffordPrize(UrlFetcherGeneric):
       SourceAttempt(
         'Official Baillie Gifford',
         self.URL,
-        lambda html, url, fetch_url=None, **_kwargs: self.parse_official_years(
+        lambda html, url, fetch_url=None, **kwargs: self.parse_official_years(
           html,
           url,
           fetch_url,
-          BaillieGiffordPrizeParser()),
-        source_rank=0),
+          BaillieGiffordPrizeParser(), **kwargs),
+        source_rank=0, supports_incremental=True),
       SourceAttempt(
         'Wikipedia',
         BAILLIE_GIFFORD_WIKIPEDIA_URL,
@@ -93,7 +97,8 @@ class UrlFetcherBaillieGiffordPrize(UrlFetcherGeneric):
   def fetch_and_parse(
       self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
       before_fetch=None, after_fetch=None, before_parse=None,
-      force_fallback_level=0, disable_fallbacks=False, source_choice=None):
+      force_fallback_level=0, disable_fallbacks=False, source_choice=None,
+      cached_parsed=None, incremental_update=False):
     parsed = SourceFallbackRunner(
       self.source_attempts(),
       error_class=UrlFetcherError).run(
@@ -105,17 +110,28 @@ class UrlFetcherBaillieGiffordPrize(UrlFetcherGeneric):
         before_parse=before_parse,
         force_fallback_level=force_fallback_level,
         disable_fallbacks=disable_fallbacks,
-        source_choice=source_choice)
+        source_choice=source_choice, cached_parsed=cached_parsed,
+        incremental_update=incremental_update)
     parsed.setdefault('match_series', self.options.get('match_series', True))
     return parsed
 
   def parse(self, html, **_kwargs):
     return self.parse_official_years(html, self.URL, None, self.parser())
 
-  def parse_official_years(self, html, base_url, fetch_url, parser):
+  def parse_official_years(self, html, base_url, fetch_url, parser,
+      cached_parsed=None, incremental_update=False, log=None, progress=None):
     urls = self.year_urls(html, base_url)
     if not urls:
       raise UrlFetcherError('Official Baillie Gifford had no year URLs')
+    if fetch_url is not None:
+      result = read_annual_pages(json.dumps([base_url, self.source_id, self.CATEGORY, type(parser).__name__]),
+        [(url, int(url.rstrip('/').rsplit('/',1)[-1])) for url in urls],
+        fetch_url, lambda page, url: parser.parse(page, url, self.NAME, self.CATEGORY, fetch_url=fetch_url),
+        cached_parsed=cached_parsed, incremental_update=incremental_update, progress=progress)
+      if not result['entries']:
+        raise UrlFetcherError('Official Baillie Gifford produced no entries')
+      result.update(name=self.NAME, source=parsed_source(self.NAME, base_url, self.source_id), match_series=False)
+      return result
     if fetch_url is None:
       urls = [base_url]
       fetch_url = lambda _url: html

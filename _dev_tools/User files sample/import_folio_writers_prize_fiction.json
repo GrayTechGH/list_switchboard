@@ -1,0 +1,154 @@
+{
+  "append_state": {
+    "entry_count": 8,
+    "last_entry_key": "the fraud|zadie smith",
+    "last_position": "2024.02",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Michelle de Kretser"
+      ],
+      "award": "Folio/Writers' Prize",
+      "award_year": "2023",
+      "category": "Fiction",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thewritersprize.com/2023-prize/"
+      },
+      "title": "Scary Monsters"
+    },
+    {
+      "authors": [
+        "NoViolet Bulawayo"
+      ],
+      "award": "Folio/Writers' Prize",
+      "award_year": "2023",
+      "category": "Fiction",
+      "position": "2023.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thewritersprize.com/2023-prize/"
+      },
+      "title": "Glory"
+    },
+    {
+      "authors": [
+        "Sheila Heti"
+      ],
+      "award": "Folio/Writers' Prize",
+      "award_year": "2023",
+      "category": "Fiction",
+      "position": "2023.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thewritersprize.com/2023-prize/"
+      },
+      "title": "Pure Colour"
+    },
+    {
+      "authors": [
+        "Daisy Hildyard"
+      ],
+      "award": "Folio/Writers' Prize",
+      "award_year": "2023",
+      "category": "Fiction",
+      "position": "2023.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thewritersprize.com/2023-prize/"
+      },
+      "title": "Emergency"
+    },
+    {
+      "authors": [
+        "Elizabeth Strout"
+      ],
+      "award": "Folio/Writers' Prize",
+      "award_year": "2023",
+      "category": "Fiction",
+      "position": "2023.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thewritersprize.com/2023-prize/"
+      },
+      "title": "Lucy by the Sea"
+    },
+    {
+      "authors": [
+        "Anne Enright"
+      ],
+      "award": "Folio/Writers' Prize",
+      "award_year": "2024",
+      "category": "Fiction",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thewritersprize.com/2024-fiction-shortlist/"
+      },
+      "title": "The Wren, The Wren"
+    },
+    {
+      "authors": [
+        "Paul Murray"
+      ],
+      "award": "Folio/Writers' Prize",
+      "award_year": "2024",
+      "category": "Fiction",
+      "position": "2024.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thewritersprize.com/2024-fiction-shortlist/"
+      },
+      "title": "The Bee Sting"
+    },
+    {
+      "authors": [
+        "Zadie Smith"
+      ],
+      "award": "Folio/Writers' Prize",
+      "award_year": "2024",
+      "category": "Fiction",
+      "position": "2024.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thewritersprize.com/2024-fiction-shortlist/"
+      },
+      "title": "The Fraud"
+    }
+  ],
+  "fetched_at": "2026-08-01T05:35:33Z",
+  "list_id": "folio_writers_prize_fiction",
+  "list_name": "Folio/Writers' Prize - Fiction (discontinued)",
+  "match_series": false,
+  "notes": [
+    "The published Writers' Prize archive covers 2014-2015 and 2017-2024; no prize was awarded in 2016 and 2024 is the final published year.",
+    "Fiction was introduced as a separate category in 2023."
+  ],
+  "parser": "folio_writers_prize_fiction",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Folio/Writers' Prize - Fiction (discontinued)",
+    "source_id": "folio_writers_prize_fiction",
+    "url": "https://thewritersprize.com/"
+  }
+}

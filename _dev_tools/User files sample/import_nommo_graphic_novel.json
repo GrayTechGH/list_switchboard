@@ -1,0 +1,524 @@
+{
+  "append_state": {
+    "entry_count": 43,
+    "last_entry_key": "you have ten years|murewa ayodele mamode ogbewele dotun akande and samuel iwunze",
+    "last_position": "2025.02",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Chronic No. 3 Various writers",
+        "artists"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2017",
+      "category": "Graphic Novel",
+      "position": "2017",
+      "result": "winner",
+      "title": "The Corpse Exhibition"
+    },
+    {
+      "authors": [
+        "Ibrahim Ganiyu, Chike Newman Nwankwo",
+        "Akinwade Ayodeji Akinola"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2017",
+      "category": "Graphic Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "June 12"
+    },
+    {
+      "authors": [
+        "Xavier Ighorodje",
+        "Stanley Obende"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2017",
+      "category": "Graphic Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "Avonome"
+    },
+    {
+      "authors": [
+        "Jide Martin",
+        "Toheeb Deen Ipaye"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2017",
+      "category": "Graphic Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "title": "Might of Guardian Prime"
+    },
+    {
+      "authors": [
+        "Kwabena Ofei",
+        "Setor Fiadzigbey"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2018",
+      "category": "Graphic Novel",
+      "position": "2018",
+      "result": "winner",
+      "title": "Lake of Tears"
+    },
+    {
+      "authors": [
+        "Wale Awelenje",
+        "Jide Martin"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2018",
+      "category": "Graphic Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "Guardian Prime Genesis"
+    },
+    {
+      "authors": [
+        "Michael Balogun",
+        "Adeleye Yusuf"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2018",
+      "category": "Graphic Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "title": "Ireti Bidemi"
+    },
+    {
+      "authors": [
+        "Tobe Ezeogu",
+        "Keith Issac"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2018",
+      "category": "Graphic Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "title": "Hero Kakere"
+    },
+    {
+      "authors": [
+        "Tobe Ezeogu",
+        "Ozo Ezeogu"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2018",
+      "category": "Graphic Novel",
+      "position": "2018.04",
+      "result": "nominee",
+      "title": "Eru"
+    },
+    {
+      "authors": [
+        "Robert S. Malan",
+        "John Cockshaw"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2018",
+      "category": "Graphic Novel",
+      "position": "2018.05",
+      "result": "nominee",
+      "title": "Quest of the Sign of the Shining Beast"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor",
+        "Leonardo Romero"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2019",
+      "category": "Graphic Novel",
+      "position": "2019",
+      "result": "winner",
+      "title": "Shuri"
+    },
+    {
+      "authors": [
+        "Marguerite Abouet , Mathieu Sapin, Judith Taboy,",
+        "Marie B\u00e9drune"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2019",
+      "category": "Graphic Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "title": "Akissi: Tales of Michief"
+    },
+    {
+      "authors": [
+        "Farida Bedwei",
+        "Ravi Allotey"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2019",
+      "category": "Graphic Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "title": "Karmzah"
+    },
+    {
+      "authors": [
+        "Tobe Max Ezeogu",
+        "Ozo Ezeogu"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2019",
+      "category": "Graphic Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "title": "Eru"
+    },
+    {
+      "authors": [
+        "Cassandra Mark",
+        "Tobe Max Ezeogu"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2019",
+      "category": "Graphic Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "title": "T\u00e0t\u00e0sh\u00e9"
+    },
+    {
+      "authors": [
+        "Loyiso Mkize, Mohale Mashigo,",
+        "Clyde Beech"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2019",
+      "category": "Graphic Novel",
+      "position": "2019.05",
+      "result": "nominee",
+      "title": "Kwezi"
+    },
+    {
+      "authors": [
+        "Luke Molver"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2019",
+      "category": "Graphic Novel",
+      "position": "2019.06",
+      "result": "nominee",
+      "title": "Shaka Rising"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor , Andr\u00e9 Ara\u00fajo, Mario Del Pennino, Tana Ford,",
+        "Aaron Covington"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2019",
+      "category": "Graphic Novel",
+      "position": "2019.07",
+      "result": "nominee",
+      "title": "Black Panther: Long Live the King"
+    },
+    {
+      "authors": [
+        "Roye Okupe",
+        "Chima Kalu"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2019",
+      "category": "Graphic Novel",
+      "position": "2019.08",
+      "result": "nominee",
+      "title": "Malika Warrior Queen Part Two"
+    },
+    {
+      "authors": [
+        "Austine Osas, Abiodun Awodele,",
+        "Yusuf Temitope"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2019",
+      "category": "Graphic Novel",
+      "position": "2019.09",
+      "result": "nominee",
+      "title": "Under the Sun"
+    },
+    {
+      "authors": [
+        "Yvonne Wanyoike, Kendi Mberia,",
+        "Salim Busuru"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2019",
+      "category": "Graphic Novel",
+      "position": "2019.10",
+      "result": "nominee",
+      "title": "Rovik"
+    },
+    {
+      "authors": [
+        "Morakinyo Araoye, Steven Akinyemi,",
+        "Ogim Ekpezu"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2020",
+      "category": "Graphic Novel",
+      "position": "2020",
+      "result": "winner",
+      "title": "Danfo"
+    },
+    {
+      "authors": [
+        "Ssentongo Charles"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2020",
+      "category": "Graphic Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "Sanu"
+    },
+    {
+      "authors": [
+        "Beserat Debebe",
+        "Stanley Obende"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2020",
+      "category": "Graphic Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "Hawi"
+    },
+    {
+      "authors": [
+        "Mika Hirwa"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2020",
+      "category": "Graphic Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "Kami"
+    },
+    {
+      "authors": [
+        "Kiprop Kimutai",
+        "Salim Busuru"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2020",
+      "category": "Graphic Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "title": "Beast from Venus"
+    },
+    {
+      "authors": [
+        "Bill Masuku"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2020",
+      "category": "Graphic Novel",
+      "position": "2020.05",
+      "result": "nominee",
+      "title": "Captain South Africa"
+    },
+    {
+      "authors": [
+        "Bill Masuku"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2020",
+      "category": "Graphic Novel",
+      "position": "2020.06",
+      "result": "nominee",
+      "title": "Welcome to the Dead World"
+    },
+    {
+      "authors": [
+        "Ziki Nelson",
+        "Jason Lamy"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2020",
+      "category": "Graphic Novel",
+      "position": "2020.07",
+      "result": "nominee",
+      "title": "Nani"
+    },
+    {
+      "authors": [
+        "Nana Akosua Hanson",
+        "AnimaxFYB"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2021",
+      "category": "Graphic Novel",
+      "position": "2021",
+      "result": "winner",
+      "title": "MoonGirls"
+    },
+    {
+      "authors": [
+        "Murewa Ayodele",
+        "Dotun Akande"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2021",
+      "category": "Graphic Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "New Men"
+    },
+    {
+      "authors": [
+        "Mazuba Chimbeza"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2021",
+      "category": "Graphic Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "Titan"
+    },
+    {
+      "authors": [
+        "Qintu Collab"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2021",
+      "category": "Graphic Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "Meanwhile\u2026"
+    },
+    {
+      "authors": [
+        "Anna Mbale",
+        "Mwiche Songolo"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2021",
+      "category": "Graphic Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "Alex"
+    },
+    {
+      "authors": [
+        "Mwiche Songolo"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2021",
+      "category": "Graphic Novel",
+      "position": "2021.05",
+      "result": "nominee",
+      "title": "Black Sheep"
+    },
+    {
+      "authors": [
+        "Roye Okupe",
+        "Godwin Akpan"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2022",
+      "category": "Graphic Novel",
+      "position": "2022",
+      "result": "winner",
+      "title": "Iyanu: Child of Wonder, Volume 2"
+    },
+    {
+      "authors": [
+        "Awele Emili"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2022",
+      "category": "Graphic Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "The Ijournal"
+    },
+    {
+      "authors": [
+        "Mamode Ogbewele and Chigozie Amadi"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2024",
+      "category": "Graphic Novel",
+      "position": "2024",
+      "result": "winner",
+      "title": "Grimm's Assistant"
+    },
+    {
+      "authors": [
+        "Dani\u00ebl Hugo"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2024",
+      "category": "Graphic Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "Die Strandloper"
+    },
+    {
+      "authors": [
+        "Roye Okupe and Sunkanmi Akinboye"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2024",
+      "category": "Graphic Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "WindMaker volume 1"
+    },
+    {
+      "authors": [
+        "John Uche and Francis Goodluck"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2025",
+      "category": "Graphic Novel",
+      "position": "2025",
+      "result": "winner",
+      "title": "Celestial Eyes Vol. 1"
+    },
+    {
+      "authors": [
+        "Dotun Akande and Murewa Ayodele"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2025",
+      "category": "Graphic Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "Akogun: Brutalizer of Gods"
+    },
+    {
+      "authors": [
+        "Murewa Ayodele , Mamode Ogbewele, Dotun Akande, and Samuel Iwunze"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2025",
+      "category": "Graphic Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "You Have Ten Years"
+    }
+  ],
+  "fetched_at": "2026-07-23T18:57:54Z",
+  "list_id": "nommo_graphic_novel",
+  "list_name": "Nommo - Graphic Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "nommo_graphic_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Nommo - Graphic Novel",
+    "source_id": "nommo_graphic_novel",
+    "url": "https://en.wikipedia.org/wiki/Nommo_Awards"
+  }
+}

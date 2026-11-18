@@ -1,0 +1,3425 @@
+{
+  "append_state": {
+    "entry_count": 212,
+    "last_entry_key": "kindling stories|kathleen jennings",
+    "last_position": "2025.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Manly Wade Wellman"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1975",
+      "category": "Collection",
+      "position": "1975",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1975"
+      },
+      "title": "Worse Things Waiting"
+    },
+    {
+      "authors": [
+        "Basil Copper"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1975",
+      "category": "Collection",
+      "position": "1975.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1975"
+      },
+      "title": "From Evil's Pillow"
+    },
+    {
+      "authors": [
+        "Avram Davidson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1976",
+      "category": "Collection",
+      "position": "1976",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1976"
+      },
+      "title": "The Enquiries of Doctor Eszterhazy"
+    },
+    {
+      "authors": [
+        "Harlan Ellison"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1976",
+      "category": "Collection",
+      "position": "1976.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1976"
+      },
+      "title": "Deathbird Stories"
+    },
+    {
+      "authors": [
+        "Frank Belknap Long"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1976",
+      "category": "Collection",
+      "position": "1976.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1976"
+      },
+      "title": "The Early Long"
+    },
+    {
+      "authors": [
+        "E. Hoffmann Price"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1976",
+      "category": "Collection",
+      "position": "1976.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1976"
+      },
+      "title": "Far Lands, Other Days"
+    },
+    {
+      "authors": [
+        "Lucius Shepard"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1988",
+      "category": "Collection",
+      "position": "1988",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1988"
+      },
+      "title": "The Jaguar Hunter"
+    },
+    {
+      "authors": [
+        "Tanith Lee"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1988",
+      "category": "Collection",
+      "position": "1988.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1988"
+      },
+      "title": "Night's Sorceries"
+    },
+    {
+      "authors": [
+        "Michael Shea"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1988",
+      "category": "Collection",
+      "position": "1988.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1988"
+      },
+      "title": "Polyphemus"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1988",
+      "category": "Collection",
+      "position": "1988.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1988"
+      },
+      "title": "Scared Stiff, Tales of Sex and Death"
+    },
+    {
+      "authors": [
+        "Karl Edward Wagner"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1988",
+      "category": "Collection",
+      "position": "1988.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1988"
+      },
+      "title": "Why Not You and I?"
+    },
+    {
+      "authors": [
+        "Harlan Ellison"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1989",
+      "category": "Collection",
+      "position": "1989",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1989"
+      },
+      "title": "Angry Candy"
+    },
+    {
+      "authors": [
+        "Gene Wolfe"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1989",
+      "category": "Collection",
+      "position": "1989",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1989"
+      },
+      "title": "Storeys from the Old Hotel"
+    },
+    {
+      "authors": [
+        "Dennis Etchison"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1989",
+      "category": "Collection",
+      "position": "1989.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1989"
+      },
+      "title": "The Blood Kiss"
+    },
+    {
+      "authors": [
+        "Clive Barker"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1989",
+      "category": "Collection",
+      "position": "1989.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1989"
+      },
+      "title": "Cabal"
+    },
+    {
+      "authors": [
+        "Charles Beaumont",
+        "Roger Anker"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1989",
+      "category": "Collection",
+      "position": "1989.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1989"
+      },
+      "title": "Charles Beaumont: Selected Stories"
+    },
+    {
+      "authors": [
+        "Fritz Leiber"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1989",
+      "category": "Collection",
+      "position": "1989.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1989"
+      },
+      "title": "The Knight and Knave of Swords"
+    },
+    {
+      "authors": [
+        "Richard Matheson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1990",
+      "category": "Collection",
+      "position": "1990",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1990"
+      },
+      "title": "Richard Matheson: Collected Stories"
+    },
+    {
+      "authors": [
+        "Robert R. McCammon"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1990",
+      "category": "Collection",
+      "position": "1990.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1990"
+      },
+      "title": "Blue World and Other Stories"
+    },
+    {
+      "authors": [
+        "Joe R. Lansdale"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1990",
+      "category": "Collection",
+      "position": "1990.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1990"
+      },
+      "title": "By Bizarre Hands"
+    },
+    {
+      "authors": [
+        "Harlan Ellison"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1990",
+      "category": "Collection",
+      "position": "1990.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1990"
+      },
+      "title": "Harlan Ellison's Watching"
+    },
+    {
+      "authors": [
+        "John Crowley"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1990",
+      "category": "Collection",
+      "position": "1990.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1990"
+      },
+      "title": "Novelty"
+    },
+    {
+      "authors": [
+        "Carol Emshwiller"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1991",
+      "category": "Collection",
+      "position": "1991",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1991"
+      },
+      "title": "The Start of the End of It All and Other Stories"
+    },
+    {
+      "authors": [
+        "Michael Blumlein"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1991",
+      "category": "Collection",
+      "position": "1991.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1991"
+      },
+      "title": "The Brains of Rats"
+    },
+    {
+      "authors": [
+        "Peter Straub"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1991",
+      "category": "Collection",
+      "position": "1991.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1991"
+      },
+      "title": "Houses Without Doors"
+    },
+    {
+      "authors": [
+        "Fritz Leiber"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1991",
+      "category": "Collection",
+      "position": "1991.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1991"
+      },
+      "title": "The Leiber Chronicles"
+    },
+    {
+      "authors": [
+        "Dan Simmons"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1991",
+      "category": "Collection",
+      "position": "1991.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1991"
+      },
+      "title": "Prayers to Broken Stones"
+    },
+    {
+      "authors": [
+        "Lucius Shepard"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1992",
+      "category": "Collection",
+      "position": "1992",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1992"
+      },
+      "title": "The Ends of the Earth"
+    },
+    {
+      "authors": [
+        "Robert Holdstock"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1992",
+      "category": "Collection",
+      "position": "1992.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1992"
+      },
+      "title": "The Bone Forest"
+    },
+    {
+      "authors": [
+        "Thomas Ligotti"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1992",
+      "category": "Collection",
+      "position": "1992.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1992"
+      },
+      "title": "Grimscribe: His Lives and Works"
+    },
+    {
+      "authors": [
+        "R. A. Lafferty"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1992",
+      "category": "Collection",
+      "position": "1992.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1992"
+      },
+      "title": "Lafferty In Orbit"
+    },
+    {
+      "authors": [
+        "Fred Chappell"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1992",
+      "category": "Collection",
+      "position": "1992.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1992"
+      },
+      "title": "More Shapes Than One"
+    },
+    {
+      "authors": [
+        "Howard Waldrop"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1992",
+      "category": "Collection",
+      "position": "1992.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1992"
+      },
+      "title": "Night of the Cooters: More Neat Stories"
+    },
+    {
+      "authors": [
+        "Jack Cady"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1993",
+      "category": "Collection",
+      "position": "1993",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1993"
+      },
+      "title": "The Sons of Noah & Other Stories"
+    },
+    {
+      "authors": [
+        "Greg Bear"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1993",
+      "category": "Collection",
+      "position": "1993.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1993"
+      },
+      "title": "Bear's Fantasies"
+    },
+    {
+      "authors": [
+        "James P. Blaylock"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1993",
+      "category": "Collection",
+      "position": "1993.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1993"
+      },
+      "title": "Lord Kelvin's Machine"
+    },
+    {
+      "authors": [
+        "John Kessel"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1993",
+      "category": "Collection",
+      "position": "1993.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1993"
+      },
+      "title": "Meeting in Infinity"
+    },
+    {
+      "authors": [
+        "Norman Partridge"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1993",
+      "category": "Collection",
+      "position": "1993.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1993"
+      },
+      "title": "Mr. Fox and Other Feral Tales"
+    },
+    {
+      "authors": [
+        "Charles de Lint"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1993",
+      "category": "Collection",
+      "position": "1993.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1993"
+      },
+      "title": "Spiritwalk"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1994",
+      "category": "Collection",
+      "position": "1994",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1994"
+      },
+      "title": "Alone with the Horrors"
+    },
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1994",
+      "category": "Collection",
+      "position": "1994.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1994"
+      },
+      "title": "Angels & Visitations: A Miscellany"
+    },
+    {
+      "authors": [
+        "John Crowley"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1994",
+      "category": "Collection",
+      "position": "1994.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1994"
+      },
+      "title": "Antiquities"
+    },
+    {
+      "authors": [
+        "Charles de Lint"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1994",
+      "category": "Collection",
+      "position": "1994.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1994"
+      },
+      "title": "Dreams Underfoot"
+    },
+    {
+      "authors": [
+        "Garry Kilworth"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1994",
+      "category": "Collection",
+      "position": "1994.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1994"
+      },
+      "title": "Hogfoot Right and Bird-hands"
+    },
+    {
+      "authors": [
+        "Darrell Schweitzer"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1994",
+      "category": "Collection",
+      "position": "1994.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1994"
+      },
+      "title": "Transients and Other Disquieting Stories"
+    },
+    {
+      "authors": [
+        "Terry Lamsley"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1994",
+      "category": "Collection",
+      "position": "1994.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1994"
+      },
+      "title": "Under the Crust"
+    },
+    {
+      "authors": [
+        "Bradley Denton"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1995",
+      "category": "Collection",
+      "position": "1995",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1995"
+      },
+      "title": "The Calvin Coolidge Home for Dead Comedians"
+    },
+    {
+      "authors": [
+        "Robert Bloch"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1995",
+      "category": "Collection",
+      "position": "1995.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1995"
+      },
+      "title": "The Early Fears"
+    },
+    {
+      "authors": [
+        "Joel Lane"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1995",
+      "category": "Collection",
+      "position": "1995.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1995"
+      },
+      "title": "The Earth Wire & Other Stories"
+    },
+    {
+      "authors": [
+        "Joyce Carol Oates"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1995",
+      "category": "Collection",
+      "position": "1995.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1995"
+      },
+      "title": "Haunted: Tales of the Grotesque"
+    },
+    {
+      "authors": [
+        "Lisa Goldstein"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1995",
+      "category": "Collection",
+      "position": "1995.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1995"
+      },
+      "title": "Travellers In Magic"
+    },
+    {
+      "authors": [
+        "Gwyneth Jones"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1996",
+      "category": "Collection",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1996"
+      },
+      "title": "Seven Tales and a Fable"
+    },
+    {
+      "authors": [
+        "Hugh B. Cave"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1996",
+      "category": "Collection",
+      "position": "1996.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1996"
+      },
+      "title": "Death Stalks the Night"
+    },
+    {
+      "authors": [
+        "Charles de Lint"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1996",
+      "category": "Collection",
+      "position": "1996.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1996"
+      },
+      "title": "The Ivory and the Horn"
+    },
+    {
+      "authors": [
+        "Jonathan Carroll"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1996",
+      "category": "Collection",
+      "position": "1996.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1996"
+      },
+      "title": "The Panic Hand"
+    },
+    {
+      "authors": [
+        "Brian W. Aldiss"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1996",
+      "category": "Collection",
+      "position": "1996.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1996"
+      },
+      "title": "The Secret of This Book"
+    },
+    {
+      "authors": [
+        "Jonathan Lethem"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1997",
+      "category": "Collection",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1997"
+      },
+      "title": "The Wall of the Sky, the Wall of the Eye"
+    },
+    {
+      "authors": [
+        "Norman Partridge"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1997",
+      "category": "Collection",
+      "position": "1997.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1997"
+      },
+      "title": "Bad Intentions"
+    },
+    {
+      "authors": [
+        "James Morrow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1997",
+      "category": "Collection",
+      "position": "1997.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1997"
+      },
+      "title": "Bible Stories for Adults"
+    },
+    {
+      "authors": [
+        "Terry Lamsley"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1997",
+      "category": "Collection",
+      "position": "1997.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1997"
+      },
+      "title": "Conference with the Dead"
+    },
+    {
+      "authors": [
+        "Richard T. Chizmar"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1997",
+      "category": "Collection",
+      "position": "1997.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1997"
+      },
+      "title": "Midnight Promises"
+    },
+    {
+      "authors": [
+        "Thomas Ligotti"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1997",
+      "category": "Collection",
+      "position": "1997.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1997"
+      },
+      "title": "The Nightmare Factory"
+    },
+    {
+      "authors": [
+        "S. P. Somtow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1997",
+      "category": "Collection",
+      "position": "1997.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1997"
+      },
+      "title": "The Pavilion of Frozen Women"
+    },
+    {
+      "authors": [
+        "Brian McNaughton"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1998",
+      "category": "Collection",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1998"
+      },
+      "title": "The Throne of Bones"
+    },
+    {
+      "authors": [
+        "Ray Bradbury"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1998",
+      "category": "Collection",
+      "position": "1998.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1998"
+      },
+      "title": "Driving Blind"
+    },
+    {
+      "authors": [
+        "Paul Di Filippo"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1998",
+      "category": "Collection",
+      "position": "1998.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1998"
+      },
+      "title": "Fractal Paisleys"
+    },
+    {
+      "authors": [
+        "Michael Swanwick"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1998",
+      "category": "Collection",
+      "position": "1998.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1998"
+      },
+      "title": "A Geography of Unknown Lands"
+    },
+    {
+      "authors": [
+        "Peter S. Beagle"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1998",
+      "category": "Collection",
+      "position": "1998.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1998"
+      },
+      "title": "Giant Bones"
+    },
+    {
+      "authors": [
+        "Karen Joy Fowler"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1999",
+      "category": "Collection",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1999"
+      },
+      "title": "Black Glass"
+    },
+    {
+      "authors": [
+        "Gahan Wilson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1999",
+      "category": "Collection",
+      "position": "1999.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1999"
+      },
+      "title": "The Cleft and Other Odd Tales"
+    },
+    {
+      "authors": [
+        "Elizabeth Hand"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1999",
+      "category": "Collection",
+      "position": "1999.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1999"
+      },
+      "title": "Last Summer at Mars Hill"
+    },
+    {
+      "authors": [
+        "Graham Masterton",
+        "Ray Clark",
+        "Matt Williams"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1999",
+      "category": "Collection",
+      "position": "1999.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1999"
+      },
+      "title": "Manitou Man: The Worlds of Graham Masterton"
+    },
+    {
+      "authors": [
+        "Jack Cady"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1999",
+      "category": "Collection",
+      "position": "1999.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1999"
+      },
+      "title": "The Night We Buried Road Dog"
+    },
+    {
+      "authors": [
+        "Charles de Lint"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2000",
+      "category": "Collection",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2000"
+      },
+      "title": "Moonlight and Vines"
+    },
+    {
+      "authors": [
+        "Stephen R. Donaldson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2000",
+      "category": "Collection",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2000"
+      },
+      "title": "Reave the Just and Other Tales"
+    },
+    {
+      "authors": [
+        "Tom Piccirilli"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2000",
+      "category": "Collection",
+      "position": "2000.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2000"
+      },
+      "title": "Deep Into That Darkness Peering"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2000",
+      "category": "Collection",
+      "position": "2000.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2000"
+      },
+      "title": "Hearts in Atlantis"
+    },
+    {
+      "authors": [
+        "Darrell Schweitzer",
+        "Jason Van Hollander"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2000",
+      "category": "Collection",
+      "position": "2000.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2000"
+      },
+      "title": "Necromancies and Netherworlds: Uncanny Stories"
+    },
+    {
+      "authors": [
+        "Andy Duncan"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2001",
+      "category": "Collection",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2001"
+      },
+      "title": "Beluthahatchie and Other Stories"
+    },
+    {
+      "authors": [
+        "Terry Dowling"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2001",
+      "category": "Collection",
+      "position": "2001.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2001"
+      },
+      "title": "Blackwater Days"
+    },
+    {
+      "authors": [
+        "Peter Straub"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2001",
+      "category": "Collection",
+      "position": "2001.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2001"
+      },
+      "title": "Magic Terror: Seven Tales"
+    },
+    {
+      "authors": [
+        "Neal Barrett, Jr."
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2001",
+      "category": "Collection",
+      "position": "2001.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2001"
+      },
+      "title": "Perpetuity Blues and Other Stories"
+    },
+    {
+      "authors": [
+        "Robert Charles Wilson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2001",
+      "category": "Collection",
+      "position": "2001.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2001"
+      },
+      "title": "The Perseids and Other Stories"
+    },
+    {
+      "authors": [
+        "M. John Harrison"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2001",
+      "category": "Collection",
+      "position": "2001.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2001"
+      },
+      "title": "Travel Arrangements"
+    },
+    {
+      "authors": [
+        "Nalo Hopkinson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2002",
+      "category": "Collection",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2002"
+      },
+      "title": "Skin Folk"
+    },
+    {
+      "authors": [
+        "William F. Nolan"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2002",
+      "category": "Collection",
+      "position": "2002.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2002"
+      },
+      "title": "Dark Universe: Stories 1951-2001"
+    },
+    {
+      "authors": [
+        "Harlan Ellison",
+        "Terry Dowling",
+        "Richard Delap",
+        "Gil Lamont"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2002",
+      "category": "Collection",
+      "position": "2002.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2002"
+      },
+      "title": "The Essential Ellison: A 50-Year Retrospective: Revised and Expanded"
+    },
+    {
+      "authors": [
+        "Kelly Link"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2002",
+      "category": "Collection",
+      "position": "2002.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2002"
+      },
+      "title": "Stranger Things Happen"
+    },
+    {
+      "authors": [
+        "Dennis Etchison"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2002",
+      "category": "Collection",
+      "position": "2002.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2002"
+      },
+      "title": "Talking in the Dark"
+    },
+    {
+      "authors": [
+        "Jeffrey Ford"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2003",
+      "category": "Collection",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2003"
+      },
+      "title": "The Fantasy Writer's Assistant and Other Stories"
+    },
+    {
+      "authors": [
+        "Jeff VanderMeer"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2003",
+      "category": "Collection",
+      "position": "2003.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2003"
+      },
+      "title": "City of Saints and Madmen: The Book of Ambergris [revised]"
+    },
+    {
+      "authors": [
+        "Chet Williamson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2003",
+      "category": "Collection",
+      "position": "2003.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2003"
+      },
+      "title": "Figures in Rain"
+    },
+    {
+      "authors": [
+        "Richard Parks"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2003",
+      "category": "Collection",
+      "position": "2003.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2003"
+      },
+      "title": "The Ogre's Wife: Fairy Tales for Grownups"
+    },
+    {
+      "authors": [
+        "Charles de Lint"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2003",
+      "category": "Collection",
+      "position": "2003.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2003"
+      },
+      "title": "Waifs and Strays"
+    },
+    {
+      "authors": [
+        "Robin McKinley",
+        "Peter Dickinson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2003",
+      "category": "Collection",
+      "position": "2003.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2003"
+      },
+      "title": "Water: Tales of Elemental Spirits"
+    },
+    {
+      "authors": [
+        "Elizabeth Hand"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2004",
+      "category": "Collection",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2004"
+      },
+      "title": "Bibliomancy"
+    },
+    {
+      "authors": [
+        "Jack Cady"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2004",
+      "category": "Collection",
+      "position": "2004.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2004"
+      },
+      "title": "Ghosts of Yesterday"
+    },
+    {
+      "authors": [
+        "George R. R. Martin"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2004",
+      "category": "Collection",
+      "position": "2004.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2004"
+      },
+      "title": "GRRM: A RRetrospective"
+    },
+    {
+      "authors": [
+        "Michael Marshall Smith"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2004",
+      "category": "Collection",
+      "position": "2004.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2004"
+      },
+      "title": "More Tomorrow & Other Stories"
+    },
+    {
+      "authors": [
+        "Glen Hirshberg"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2004",
+      "category": "Collection",
+      "position": "2004.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2004"
+      },
+      "title": "The Two Sams: Ghost Stories"
+    },
+    {
+      "authors": [
+        "Margo Lanagan"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2005",
+      "category": "Collection",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2005"
+      },
+      "title": "Black Juice"
+    },
+    {
+      "authors": [
+        "Ian R. MacLeod"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2005",
+      "category": "Collection",
+      "position": "2005.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2005"
+      },
+      "title": "Breathmoss and Other Exhalations"
+    },
+    {
+      "authors": [
+        "John M. Ford"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2005",
+      "category": "Collection",
+      "position": "2005.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2005"
+      },
+      "title": "Heat of Fusion and Other Stories"
+    },
+    {
+      "authors": [
+        "Joe R. Lansdale"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2005",
+      "category": "Collection",
+      "position": "2005.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2005"
+      },
+      "title": "Mad Dog Summer and Other Stories"
+    },
+    {
+      "authors": [
+        "Peter Crowther"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2005",
+      "category": "Collection",
+      "position": "2005.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2005"
+      },
+      "title": "Songs of Leaving"
+    },
+    {
+      "authors": [
+        "Eileen Gunn"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2005",
+      "category": "Collection",
+      "position": "2005.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2005"
+      },
+      "title": "Stable Strategies and Others"
+    },
+    {
+      "authors": [
+        "Lucius Shepard"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2005",
+      "category": "Collection",
+      "position": "2005.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2005"
+      },
+      "title": "Trujillo and Other Stories"
+    },
+    {
+      "authors": [
+        "Bruce Holland Rogers"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2006",
+      "category": "Collection",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2006"
+      },
+      "title": "The Keyhole Opera"
+    },
+    {
+      "authors": [
+        "Joe Hill"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2006",
+      "category": "Collection",
+      "position": "2006.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2006"
+      },
+      "title": "20th Century Ghosts"
+    },
+    {
+      "authors": [
+        "Holly Phillips"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2006",
+      "category": "Collection",
+      "position": "2006.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2006"
+      },
+      "title": "In the Palace of Repose"
+    },
+    {
+      "authors": [
+        "Kelly Link"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2006",
+      "category": "Collection",
+      "position": "2006.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2006"
+      },
+      "title": "Magic for Beginners"
+    },
+    {
+      "authors": [
+        "Caitl\u00edn R. Kiernan"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2006",
+      "category": "Collection",
+      "position": "2006.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2006"
+      },
+      "title": "To Charles Fort, with Love"
+    },
+    {
+      "authors": [
+        "M. Rickert"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2007",
+      "category": "Collection",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2007"
+      },
+      "title": "Map of Dreams"
+    },
+    {
+      "authors": [
+        "Glen Hirshberg"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2007",
+      "category": "Collection",
+      "position": "2007.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2007"
+      },
+      "title": "American Morons"
+    },
+    {
+      "authors": [
+        "Jeffrey Ford"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2007",
+      "category": "Collection",
+      "position": "2007.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2007"
+      },
+      "title": "The Empire of Ice Cream"
+    },
+    {
+      "authors": [
+        "Susanna Clarke"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2007",
+      "category": "Collection",
+      "position": "2007.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2007"
+      },
+      "title": "The Ladies of Grace Adieu and Other Stories"
+    },
+    {
+      "authors": [
+        "Margo Lanagan"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2007",
+      "category": "Collection",
+      "position": "2007.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2007"
+      },
+      "title": "Red Spikes"
+    },
+    {
+      "authors": [
+        "Robert Shearman"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2008",
+      "category": "Collection",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2008"
+      },
+      "title": "Tiny Deaths"
+    },
+    {
+      "authors": [
+        "Lucius Shepard"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2008",
+      "category": "Collection",
+      "position": "2008.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2008"
+      },
+      "title": "Dagger Key and Other Stories"
+    },
+    {
+      "authors": [
+        "Tim Pratt"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2008",
+      "category": "Collection",
+      "position": "2008.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2008"
+      },
+      "title": "Hart & Boot & Other Stories"
+    },
+    {
+      "authors": [
+        "Stephen Gallagher"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2008",
+      "category": "Collection",
+      "position": "2008.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2008"
+      },
+      "title": "Plots and Misadventures"
+    },
+    {
+      "authors": [
+        "Ellen Klages"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2008",
+      "category": "Collection",
+      "position": "2008.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2008"
+      },
+      "title": "Portable Childhoods"
+    },
+    {
+      "authors": [
+        "Kim Newman"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2008",
+      "category": "Collection",
+      "position": "2008.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2008"
+      },
+      "title": "The Secret Files of the Diogenes Club"
+    },
+    {
+      "authors": [
+        "Jeffrey Ford"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2009",
+      "category": "Collection",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2009"
+      },
+      "title": "The Drowned Life"
+    },
+    {
+      "authors": [
+        "Nisi Shawl"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2009",
+      "category": "Collection",
+      "position": "2009.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2009"
+      },
+      "title": "Filter House"
+    },
+    {
+      "authors": [
+        "Kelly Link"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2009",
+      "category": "Collection",
+      "position": "2009.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2009"
+      },
+      "title": "Pretty Monsters"
+    },
+    {
+      "authors": [
+        "Peter S. Beagle"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2009",
+      "category": "Collection",
+      "position": "2009.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2009"
+      },
+      "title": "Strange Roads"
+    },
+    {
+      "authors": [
+        "Shaun Tan"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2009",
+      "category": "Collection",
+      "position": "2009.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2009"
+      },
+      "title": "Tales from Outer Suburbia"
+    },
+    {
+      "authors": [
+        "Ludmilla Petrushevskaya"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2010",
+      "category": "Collection",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2010"
+      },
+      "title": "There Once Lived a Woman Who Tried To Kill Her Neighbor's Baby: Scary Fairy Tales"
+    },
+    {
+      "authors": [
+        "Gene Wolfe"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2010",
+      "category": "Collection",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2010"
+      },
+      "title": "The Very Best of Gene Wolfe/The Best of Gene Wolfe"
+    },
+    {
+      "authors": [
+        "Paul Witcover"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2010",
+      "category": "Collection",
+      "position": "2010.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2010"
+      },
+      "title": "Everland and Other Stories"
+    },
+    {
+      "authors": [
+        "Brian Evenson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2010",
+      "category": "Collection",
+      "position": "2010.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2010"
+      },
+      "title": "Fugue State"
+    },
+    {
+      "authors": [
+        "Barbara Roden"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2010",
+      "category": "Collection",
+      "position": "2010.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2010"
+      },
+      "title": "Northwest Passages"
+    },
+    {
+      "authors": [
+        "Peter S. Beagle"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2010",
+      "category": "Collection",
+      "position": "2010.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2010"
+      },
+      "title": "We Never Talk About My Brother"
+    },
+    {
+      "authors": [
+        "Karen Joy Fowler"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2011",
+      "category": "Collection",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2011"
+      },
+      "title": "What I Didn't See and Other Stories"
+    },
+    {
+      "authors": [
+        "Caitl\u00edn R. Kiernan"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2011",
+      "category": "Collection",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2011"
+      },
+      "title": "The Ammonite Violin & Others"
+    },
+    {
+      "authors": [
+        "M. Rickert"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2011",
+      "category": "Collection",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2011"
+      },
+      "title": "Holiday"
+    },
+    {
+      "authors": [
+        "Angela Slatter"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2011",
+      "category": "Collection",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2011"
+      },
+      "title": "Sourdough and Other Stories"
+    },
+    {
+      "authors": [
+        "Jeff VanderMeer"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2011",
+      "category": "Collection",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2011"
+      },
+      "title": "The Third Bear"
+    },
+    {
+      "authors": [
+        "Tim Powers"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2012",
+      "category": "Collection",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2012"
+      },
+      "title": "The Bible Repairman and Other Stories"
+    },
+    {
+      "authors": [
+        "Maureen F. McHugh"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2012",
+      "category": "Collection",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2012"
+      },
+      "title": "After the Apocalypse: Stories"
+    },
+    {
+      "authors": [
+        "Lisa L. Hannett"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2012",
+      "category": "Collection",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2012"
+      },
+      "title": "Bluegrass Symphony"
+    },
+    {
+      "authors": [
+        "Reggie Oliver"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2012",
+      "category": "Collection",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2012"
+      },
+      "title": "Mrs Midnight and Other Stories"
+    },
+    {
+      "authors": [
+        "Caitl\u00edn R. Kiernan"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2012",
+      "category": "Collection",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2012"
+      },
+      "title": "Two Worlds and In Between"
+    },
+    {
+      "authors": [
+        "Joel Lane"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2013",
+      "category": "Collection",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2013"
+      },
+      "title": "Where Furnaces Burn"
+    },
+    {
+      "authors": [
+        "Kij Johnson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2013",
+      "category": "Collection",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2013"
+      },
+      "title": "At the Mouth of the River of Bees"
+    },
+    {
+      "authors": [
+        "Karin Tidbeck"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2013",
+      "category": "Collection",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2013"
+      },
+      "title": "Jagannath: Stories"
+    },
+    {
+      "authors": [
+        "Robert Shearman"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2013",
+      "category": "Collection",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2013"
+      },
+      "title": "Remember Why You Fear Me"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2013",
+      "category": "Collection",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2013"
+      },
+      "title": "The Unreal and the Real: Selected Stories Volume One: Where on Earth"
+    },
+    {
+      "authors": [
+        "Caitl\u00edn R. Kiernan"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2014",
+      "category": "Collection",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2014"
+      },
+      "title": "The Ape's Wife and Other Stories"
+    },
+    {
+      "authors": [
+        "Laird Barron"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2014",
+      "category": "Collection",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2014"
+      },
+      "title": "The Beautiful Thing That Awaits Us All and Other Stories"
+    },
+    {
+      "authors": [
+        "Reggie Oliver"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2014",
+      "category": "Collection",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2014"
+      },
+      "title": "Flowers of the Sea"
+    },
+    {
+      "authors": [
+        "Rachel Swirsky"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2014",
+      "category": "Collection",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2014"
+      },
+      "title": "How the World Became Quiet"
+    },
+    {
+      "authors": [
+        "Nathan Ballingrud"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2014",
+      "category": "Collection",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2014"
+      },
+      "title": "North American Lake Monsters"
+    },
+    {
+      "authors": [
+        "Angela Slatter"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2015",
+      "category": "Collection",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2015"
+      },
+      "title": "The Bitterwood Bible and Other Recountings"
+    },
+    {
+      "authors": [
+        "Helen Marshall"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2015",
+      "category": "Collection",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2015"
+      },
+      "title": "Gifts for the One Who Comes After"
+    },
+    {
+      "authors": [
+        "Janeen Webb"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2015",
+      "category": "Collection",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2015"
+      },
+      "title": "Death at the Blue Elephant"
+    },
+    {
+      "authors": [
+        "Rebecca Lloyd"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2015",
+      "category": "Collection",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2015"
+      },
+      "title": "Mercy and Other Stories"
+    },
+    {
+      "authors": [
+        "Robert Shearman"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2015",
+      "category": "Collection",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2015"
+      },
+      "title": "They Do the Same Things Different There"
+    },
+    {
+      "authors": [
+        "C. S. E. Cooney"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2016",
+      "category": "Collection",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2016"
+      },
+      "title": "Bone Swans"
+    },
+    {
+      "authors": [
+        "Kelly Link"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2016",
+      "category": "Collection",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2016"
+      },
+      "title": "Get in Trouble"
+    },
+    {
+      "authors": [
+        "Leena Krohn"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2016",
+      "category": "Collection",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2016"
+      },
+      "title": "Leena Krohn: The Collected Fiction"
+    },
+    {
+      "authors": [
+        "James Morrow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2016",
+      "category": "Collection",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2016"
+      },
+      "title": "Reality by Other Means: The Best Short Fiction of James Morrow"
+    },
+    {
+      "authors": [
+        "V. H. Leslie"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2016",
+      "category": "Collection",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2016"
+      },
+      "title": "Skein and Bone"
+    },
+    {
+      "authors": [
+        "Mary Rickert"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2016",
+      "category": "Collection",
+      "position": "2016.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2016"
+      },
+      "title": "You Have Never Been Here"
+    },
+    {
+      "authors": [
+        "Jeffrey Ford"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2017",
+      "category": "Collection",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2017"
+      },
+      "title": "A Natural History of Hell"
+    },
+    {
+      "authors": [
+        "Tina Connolly"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2017",
+      "category": "Collection",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2017"
+      },
+      "title": "On the Eyeball Floor and Other Stories"
+    },
+    {
+      "authors": [
+        "Ken Liu"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2017",
+      "category": "Collection",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2017"
+      },
+      "title": "The Paper Menagerie and Other Stories"
+    },
+    {
+      "authors": [
+        "Joe Abercrombie"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2017",
+      "category": "Collection",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2017"
+      },
+      "title": "Sharp Ends"
+    },
+    {
+      "authors": [
+        "L. S. Johnson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2017",
+      "category": "Collection",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2017"
+      },
+      "title": "Vacui Magia"
+    },
+    {
+      "authors": [
+        "Jane Yolen"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2018",
+      "category": "Collection",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2018"
+      },
+      "title": "The Emerald Circus"
+    },
+    {
+      "authors": [
+        "Tim Powers"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2018",
+      "category": "Collection",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2018"
+      },
+      "title": "Down and Out in Purgatory: The Collected Stories of Tim Powers"
+    },
+    {
+      "authors": [
+        "Carmen Maria Machado"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2018",
+      "category": "Collection",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2018"
+      },
+      "title": "Her Body and Other Parties"
+    },
+    {
+      "authors": [
+        "Sofia Samatar"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2018",
+      "category": "Collection",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2018"
+      },
+      "title": "Tender"
+    },
+    {
+      "authors": [
+        "Ellen Klages"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2018",
+      "category": "Collection",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2018"
+      },
+      "title": "Wicked Wonders"
+    },
+    {
+      "authors": [
+        "Paolo Bacigalupi",
+        "Tobias S. Buckell"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2019",
+      "category": "Collection",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2019"
+      },
+      "title": "The Tangled Lands"
+    },
+    {
+      "authors": [
+        "Andy Duncan"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2019",
+      "category": "Collection",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2019"
+      },
+      "title": "An Agent of Utopia"
+    },
+    {
+      "authors": [
+        "N. K. Jemisin"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2019",
+      "category": "Collection",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2019"
+      },
+      "title": "How Long 'til Black Future Month?"
+    },
+    {
+      "authors": [
+        "Margo Lanagan"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2019",
+      "category": "Collection",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2019"
+      },
+      "title": "Phantom Limbs"
+    },
+    {
+      "authors": [
+        "Amanda Downum"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2019",
+      "category": "Collection",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2019"
+      },
+      "title": "Still So Strange"
+    },
+    {
+      "authors": [
+        "Brian Evenson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2020",
+      "category": "Collection",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2020"
+      },
+      "title": "Song for the Unraveling of the World"
+    },
+    {
+      "authors": [
+        "Nino Cipri"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2020",
+      "category": "Collection",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2020"
+      },
+      "title": "Homesick"
+    },
+    {
+      "authors": [
+        "John Hornor Jacobs"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2020",
+      "category": "Collection",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2020"
+      },
+      "title": "A Lush and Seething Hell"
+    },
+    {
+      "authors": [
+        "Sarah Pinsker"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2020",
+      "category": "Collection",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2020"
+      },
+      "title": "Sooner or Later Everything Falls into the Sea"
+    },
+    {
+      "authors": [
+        "Molly Gloss"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2020",
+      "category": "Collection",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2020"
+      },
+      "title": "Unforeseen"
+    },
+    {
+      "authors": [
+        "Aoko Matsuda"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2021",
+      "category": "Collection",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2021"
+      },
+      "title": "Where the Wild Ladies Are"
+    },
+    {
+      "authors": [
+        "Jeffrey Ford"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2021",
+      "category": "Collection",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2021"
+      },
+      "title": "The Best of Jeffrey Ford"
+    },
+    {
+      "authors": [
+        "Sheree Ren\u00e9e Thomas"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2021",
+      "category": "Collection",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2021"
+      },
+      "title": "Nine Bar Blues"
+    },
+    {
+      "authors": [
+        "Kathe Koja"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2021",
+      "category": "Collection",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2021"
+      },
+      "title": "Velocities: Stories"
+    },
+    {
+      "authors": [
+        "Robert Shearman"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2021",
+      "category": "Collection",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2021"
+      },
+      "title": "We All Hear Stories in the Dark"
+    },
+    {
+      "authors": [
+        "Usman T. Malik"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2022",
+      "category": "Collection",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2022"
+      },
+      "title": "Midnight Doorways: Fables from Pakistan"
+    },
+    {
+      "authors": [
+        "Jeffrey Ford"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2022",
+      "category": "Collection",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2022"
+      },
+      "title": "Big Dark Hole"
+    },
+    {
+      "authors": [
+        "A. C. Wise"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2022",
+      "category": "Collection",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2022"
+      },
+      "title": "The Ghost Sequences"
+    },
+    {
+      "authors": [
+        "Isabel Yap"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2022",
+      "category": "Collection",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2022"
+      },
+      "title": "Never Have I Ever"
+    },
+    {
+      "authors": [
+        "Jen Fawkes"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2022",
+      "category": "Collection",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2022"
+      },
+      "title": "Tales the Devil Told Me"
+    },
+    {
+      "authors": [
+        "Angela Slatter"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2022",
+      "category": "Collection",
+      "position": "2022.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2022"
+      },
+      "title": "The Tallow-Wife and Other Tales"
+    },
+    {
+      "authors": [
+        "Tim Lebbon"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2023",
+      "category": "Collection",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2023"
+      },
+      "title": "All Nightmare Long"
+    },
+    {
+      "authors": [
+        "Sam J. Miller"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2023",
+      "category": "Collection",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2023"
+      },
+      "title": "Boys, Beasts & Men"
+    },
+    {
+      "authors": [
+        "Cassandra Khaw"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2023",
+      "category": "Collection",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2023"
+      },
+      "title": "Breakable Things"
+    },
+    {
+      "authors": [
+        "C. S. E. Cooney"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2023",
+      "category": "Collection",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2023"
+      },
+      "title": "Dark Breakers"
+    },
+    {
+      "authors": [
+        "Luigi Musolino"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2023",
+      "category": "Collection",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2023"
+      },
+      "title": "A Different Darkness and Other Abominations"
+    },
+    {
+      "authors": [
+        "Premee Mohamed"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2024",
+      "category": "Collection",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2024"
+      },
+      "title": "No One Will Come Back for Us and Other Stories"
+    },
+    {
+      "authors": [
+        "Peter S. Beagle"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2024",
+      "category": "Collection",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2024"
+      },
+      "title": "The Essential Peter S. Beable, Volumes 1 & 2"
+    },
+    {
+      "authors": [
+        "Lisa L. Hannett"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2024",
+      "category": "Collection",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2024"
+      },
+      "title": "The Fortunate Isles"
+    },
+    {
+      "authors": [
+        "Tobi Ogundiran"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2024",
+      "category": "Collection",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2024"
+      },
+      "title": "Jackal, Jackal"
+    },
+    {
+      "authors": [
+        "E. Lily Yu"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2024",
+      "category": "Collection",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2024"
+      },
+      "title": "Jewel Box"
+    },
+    {
+      "authors": [
+        "Kelly Link"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2024",
+      "category": "Collection",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2024"
+      },
+      "title": "White Cat, Black Dog"
+    },
+    {
+      "authors": [
+        "Mariana Enriquez",
+        "Megan McDowell"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2025",
+      "category": "Collection",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2025"
+      },
+      "title": "A Sunny Place for Shady People"
+    },
+    {
+      "authors": [
+        "Ananda Lima"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2025",
+      "category": "Collection",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2025"
+      },
+      "title": "Craft: Stories I Wrote for the Devil"
+    },
+    {
+      "authors": [
+        "'Pemi Aguda"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2025",
+      "category": "Collection",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2025"
+      },
+      "title": "Ghostroots"
+    },
+    {
+      "authors": [
+        "Brian Evenson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2025",
+      "category": "Collection",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2025"
+      },
+      "title": "Good Night, Sleep Tight"
+    },
+    {
+      "authors": [
+        "Kathleen Jennings"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2025",
+      "category": "Collection",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2025"
+      },
+      "title": "Kindling: Stories"
+    }
+  ],
+  "fetched_at": "2026-07-24T11:30:12Z",
+  "list_id": "world_fantasy_collection",
+  "list_name": "World Fantasy - Collection",
+  "match_series": false,
+  "notes": [],
+  "parser": "world_fantasy_collection",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "World Fantasy - Collection",
+    "source_id": "world_fantasy_collection",
+    "url": "https://www.sfadb.com/World_Fantasy_Awards"
+  }
+}

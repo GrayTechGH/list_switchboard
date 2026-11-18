@@ -25,6 +25,7 @@ FANTASY_HORROR_CATEGORIES = (
 
 class UrlFetcherLocusAnnual(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
 
+  ENABLE_SFADB_INCREMENTAL = True
   URL = LOCUS_AWARDS_URL
   FETCH_URLS = (LOCUS_AWARDS_URL,)
   FILTER_CATEGORIES = SPECULATIVE_CATEGORIES
@@ -45,7 +46,7 @@ class UrlFetcherLocusAnnual(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
 
     return LocusAnnualAwardsParser()
 
-  def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
+  def parse(self, html, fetch_url=None, log=None, progress=None, **kwargs):
     return self.parser().parse(
       html,
       self.URL,
@@ -54,7 +55,8 @@ class UrlFetcherLocusAnnual(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
       self.CATEGORY_ALIASES,
       fetch_url=fetch_url,
       log=log,
-      progress=progress)
+      progress=progress, cached_parsed=kwargs.get('cached_parsed'),
+      incremental_update=kwargs.get('incremental_update', False), enable_incremental=True)
 
 
 class UrlFetcherLocusAllTime(UrlFetcherGeneric):
@@ -87,6 +89,7 @@ class UrlFetcherLocusAllTime(UrlFetcherGeneric):
 
 
 class UrlFetcherLocusAnnualSFNovel(UrlFetcherLocusAnnual):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'locus_annual_sf_novel'
   NAME = 'Locus - Annual SF Novel'
   FILTER_CATEGORIES = (CATEGORY_SCIENCE_FICTION,)
@@ -97,6 +100,7 @@ class UrlFetcherLocusAnnualSFNovel(UrlFetcherLocusAnnual):
 
 
 class UrlFetcherLocusAnnualFantasyNovel(UrlFetcherLocusAnnual):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'locus_annual_fantasy_novel'
   NAME = 'Locus - Annual Fantasy Novel'
   FILTER_CATEGORIES = (CATEGORY_FANTASY,)
@@ -107,6 +111,7 @@ class UrlFetcherLocusAnnualFantasyNovel(UrlFetcherLocusAnnual):
 
 
 class UrlFetcherLocusAnnualHorrorNovel(UrlFetcherLocusAnnual):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'locus_annual_horror_novel'
   NAME = 'Locus - Annual Horror Novel'
   FILTER_CATEGORIES = (CATEGORY_HORROR_DARK_FICTION,)
@@ -117,6 +122,7 @@ class UrlFetcherLocusAnnualHorrorNovel(UrlFetcherLocusAnnual):
 
 
 class UrlFetcherLocusAnnualYoungAdultNovel(UrlFetcherLocusAnnual):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'locus_annual_young_adult_novel'
   NAME = 'Locus - Annual Young Adult Novel'
   FILTER_CATEGORIES = (
@@ -127,6 +133,7 @@ class UrlFetcherLocusAnnualYoungAdultNovel(UrlFetcherLocusAnnual):
 
 
 class UrlFetcherLocusAnnualFirstNovel(UrlFetcherLocusAnnual):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'locus_annual_first_novel'
   NAME = 'Locus - Annual First Novel'
   CATEGORY = 'First Novel'
@@ -136,6 +143,7 @@ class UrlFetcherLocusAnnualFirstNovel(UrlFetcherLocusAnnual):
 
 
 class UrlFetcherLocusAnnualTranslatedNovel(UrlFetcherLocusAnnual):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'locus_annual_translated_novel'
   NAME = 'Locus - Annual Translated Novel'
   CATEGORY = 'Translated Novel'
@@ -143,6 +151,7 @@ class UrlFetcherLocusAnnualTranslatedNovel(UrlFetcherLocusAnnual):
 
 
 class UrlFetcherLocusAnnualNovella(UrlFetcherLocusAnnual):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'locus_annual_novella'
   NAME = 'Locus - Annual Novella'
   CATEGORY = 'Novella'
@@ -152,6 +161,7 @@ class UrlFetcherLocusAnnualNovella(UrlFetcherLocusAnnual):
 
 
 class UrlFetcherLocusAnnualAnthology(UrlFetcherLocusAnnual):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'locus_annual_anthology'
   NAME = 'Locus - Annual Anthology'
   CATEGORY = 'Anthology'
@@ -161,6 +171,7 @@ class UrlFetcherLocusAnnualAnthology(UrlFetcherLocusAnnual):
 
 
 class UrlFetcherLocusAnnualCollection(UrlFetcherLocusAnnual):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'locus_annual_collection'
   NAME = 'Locus - Annual Collection'
   CATEGORY = 'Collection'
@@ -170,6 +181,7 @@ class UrlFetcherLocusAnnualCollection(UrlFetcherLocusAnnual):
 
 
 class UrlFetcherLocusAnnualNonfiction(UrlFetcherLocusAnnual):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'locus_annual_nonfiction'
   NAME = 'Locus - Annual Non-Fiction'
   FILTER_CATEGORIES = (CATEGORY_NONFICTION,) + SPECULATIVE_CATEGORIES
@@ -178,6 +190,7 @@ class UrlFetcherLocusAnnualNonfiction(UrlFetcherLocusAnnual):
 
 
 class UrlFetcherLocusAnnualIllustratedAndArtBook(UrlFetcherLocusAnnual):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'locus_annual_illustrated_and_art_book'
   NAME = 'Locus - Annual Illustrated and Art Book'
   FILTER_CATEGORIES = (CATEGORY_NONFICTION,) + SPECULATIVE_CATEGORIES

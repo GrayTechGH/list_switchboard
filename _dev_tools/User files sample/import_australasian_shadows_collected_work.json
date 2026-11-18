@@ -1,0 +1,841 @@
+{
+  "append_state": {
+    "entry_count": 52,
+    "last_entry_key": "the connections we keep|pauline yates",
+    "last_position": "2025.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Brett McBean"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2011",
+      "category": "Collected Work",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Tales of Sin and Madness"
+    },
+    {
+      "authors": [
+        "Lisa L. Hannett"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2011",
+      "category": "Collected Work",
+      "position": "2011.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Bluegrass Symphony"
+    },
+    {
+      "authors": [
+        "Paul Haines"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2011",
+      "category": "Collected Work",
+      "position": "2011.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "The Last Days of Kali Yuga"
+    },
+    {
+      "authors": [
+        "Lucy Sussex"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2011",
+      "category": "Collected Work",
+      "position": "2011.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Matilda Told Such Dreadful Lies"
+    },
+    {
+      "authors": [
+        "Shane Jiraiya Cummings"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2011",
+      "category": "Collected Work",
+      "position": "2011.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Apocrypha Sequence"
+    },
+    {
+      "authors": [
+        "Kaaron Warren"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2012",
+      "category": "Collected Work",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Through Splintered Walls"
+    },
+    {
+      "authors": [
+        "Felicity Dowker"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2012",
+      "category": "Collected Work",
+      "position": "2012.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Bread and Circuses"
+    },
+    {
+      "authors": [
+        "Martin Livings"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2012",
+      "category": "Collected Work",
+      "position": "2012.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Living With The Dead"
+    },
+    {
+      "authors": [
+        "Jo Anderton"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2013",
+      "category": "Collected Work",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "The Bone Chime Song and other stories"
+    },
+    {
+      "authors": [
+        "Andrew J. McKiernan"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2014",
+      "category": "Collected Work",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Last Year When We Were Young"
+    },
+    {
+      "authors": [
+        "Rob Hood"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2015",
+      "category": "Collected Work",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Peripheral Visions: The Collected Ghost Stories"
+    },
+    {
+      "authors": [
+        "Shane Jiraiya Cummings"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2015",
+      "category": "Collected Work",
+      "position": "2015.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "The Abandonment of Grace and Everything After"
+    },
+    {
+      "authors": [
+        "Deborah Kalin"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2015",
+      "category": "Collected Work",
+      "position": "2015.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Cherry Crow Children"
+    },
+    {
+      "authors": [
+        "Alan Baxter"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2016",
+      "category": "Collected Work",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Crow Shine"
+    },
+    {
+      "authors": [
+        "Jack Dann"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2016",
+      "category": "Collected Work",
+      "position": "2016.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Concentration"
+    },
+    {
+      "authors": [
+        "Grant Stone"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2016",
+      "category": "Collected Work",
+      "position": "2016.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Everything Is Fine"
+    },
+    {
+      "authors": [
+        "Deborah Sheldon"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2017",
+      "category": "Collected Work",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Perfect Little Stitches and Other Stories"
+    },
+    {
+      "authors": [
+        "Margo Lanagan"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2017",
+      "category": "Collected Work",
+      "position": "2017.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Singing My Sister Down and Other Stories"
+    },
+    {
+      "authors": [
+        "Steven Paulsen"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2018",
+      "category": "Collected Work",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Shadows on the Wall"
+    },
+    {
+      "authors": [
+        "Andrew Cull"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2018",
+      "category": "Collected Work",
+      "position": "2018.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Bones"
+    },
+    {
+      "authors": [
+        "Brian Craddock"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2018",
+      "category": "Collected Work",
+      "position": "2018.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "The Dalziel Files"
+    },
+    {
+      "authors": [
+        "Kaaron Warren"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2018",
+      "category": "Collected Work",
+      "position": "2018.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Exploring Dark Fiction A Primer"
+    },
+    {
+      "authors": [
+        "David Schembri"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2018",
+      "category": "Collected Work",
+      "position": "2018.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Beneath the Ferny Tree"
+    },
+    {
+      "authors": [
+        "Alan Baxter"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2019",
+      "category": "Collected Work",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Served Cold"
+    },
+    {
+      "authors": [
+        "J.S. Breukelaar"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2019",
+      "category": "Collected Work",
+      "position": "2019.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Collision: Stories"
+    },
+    {
+      "authors": [
+        "Deborah Sheldon"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2019",
+      "category": "Collected Work",
+      "position": "2019.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Figments and Fragments"
+    },
+    {
+      "authors": [
+        "Angela Slatter"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2020",
+      "category": "Collected Work",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "The Heart is a Mirror for Sinners"
+    },
+    {
+      "authors": [
+        "Marty Young"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2020",
+      "category": "Collected Work",
+      "position": "2020.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Behind the Midnight Blinds"
+    },
+    {
+      "authors": [
+        "Angela Slatter"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2020",
+      "category": "Collected Work",
+      "position": "2020.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Red New Day"
+    },
+    {
+      "authors": [
+        "Greg Chapman"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2020",
+      "category": "Collected Work",
+      "position": "2020.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Bleak Precision"
+    },
+    {
+      "authors": [
+        "Lee Murray"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2020",
+      "category": "Collected Work",
+      "position": "2020.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Grotesque"
+    },
+    {
+      "authors": [
+        "Karron Warren"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2021",
+      "category": "Collected Work",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Tool Tales"
+    },
+    {
+      "authors": [
+        "Angela Slatter"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2021",
+      "category": "Collected Work",
+      "position": "2021.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "The Tallow-Wife and Other Tales"
+    },
+    {
+      "authors": [
+        "Tabatha Wood"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2021",
+      "category": "Collected Work",
+      "position": "2021.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Seeds"
+    },
+    {
+      "authors": [
+        "Joanne Anderton"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2021",
+      "category": "Collected Work",
+      "position": "2021.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Inanimates"
+    },
+    {
+      "authors": [
+        "Eugen Bacon"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2021",
+      "category": "Collected Work",
+      "position": "2021.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Danged Black Thing"
+    },
+    {
+      "authors": [
+        "Kirstyn McDermott"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2022",
+      "category": "Collected Work",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Hard Places"
+    },
+    {
+      "authors": [
+        "Aaron Dries"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2022",
+      "category": "Collected Work",
+      "position": "2022.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Cut to Care: A Collection of Little Hurts"
+    },
+    {
+      "authors": [
+        "Deborah Sheldon"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2022",
+      "category": "Collected Work",
+      "position": "2022.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Liminal Spaces: Horror Stories"
+    },
+    {
+      "authors": [
+        "Michael Botur"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2022",
+      "category": "Collected Work",
+      "position": "2022.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "The Devil Took Her: Tales of Horror"
+    },
+    {
+      "authors": [
+        "Tabatha Wood"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2022",
+      "category": "Collected Work",
+      "position": "2022.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Reflections"
+    },
+    {
+      "authors": [
+        "Greg Chapman"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2023",
+      "category": "Collected Work",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Midnight Masquerade"
+    },
+    {
+      "authors": [
+        "Matthew R Davis"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2023",
+      "category": "Collected Work",
+      "position": "2023.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Bites Eyes"
+    },
+    {
+      "authors": [
+        "Pamela Jeffs"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2023",
+      "category": "Collected Work",
+      "position": "2023.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Precarious Waters"
+    },
+    {
+      "authors": [
+        "Noel Osualdini",
+        "T.M. McLean"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2023",
+      "category": "Collected Work",
+      "position": "2023.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/australian-shadows-awards/past-winners/"
+      },
+      "title": "Stingers"
+    },
+    {
+      "authors": [
+        "Greg Chapman"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2024",
+      "category": "Collected Work",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/2024-australasian-shadows-awards-winners/"
+      },
+      "title": "Black Days and Bloody Nights"
+    },
+    {
+      "authors": [
+        "Jeff Clulow"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2024",
+      "category": "Collected Work",
+      "position": "2024.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/2024-australasian-shadows-awards-winners/"
+      },
+      "title": "Remixed Myths"
+    },
+    {
+      "authors": [
+        "Chuck McKenzie"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2024",
+      "category": "Collected Work",
+      "position": "2024.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://australasianhorror.com/2024-australasian-shadows-awards-winners/"
+      },
+      "title": "The Dark Man, by Referral and Less Pleasant Tales"
+    },
+    {
+      "authors": [
+        "Jeff Clulow"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2025",
+      "category": "Collected Work",
+      "position": "2025.01",
+      "result": "shortlisted",
+      "title": "The Leper's Garden"
+    },
+    {
+      "authors": [
+        "Pamela Jeffs"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2025",
+      "category": "Collected Work",
+      "position": "2025.02",
+      "result": "shortlisted",
+      "title": "This Dark Architect and Other Grim Tales"
+    },
+    {
+      "authors": [
+        "Craig Stanton"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2025",
+      "category": "Collected Work",
+      "position": "2025.03",
+      "result": "shortlisted",
+      "title": "Shadows of Razorhurst"
+    },
+    {
+      "authors": [
+        "Pauline Yates"
+      ],
+      "award": "Australasian Shadows Award",
+      "award_year": "2025",
+      "category": "Collected Work",
+      "position": "2025.04",
+      "result": "shortlisted",
+      "title": "The Connections We Keep"
+    }
+  ],
+  "fetched_at": "2026-07-26T09:30:45Z",
+  "list_id": "australasian_shadows_collected_work",
+  "list_name": "Australasian Shadows - Collected Work",
+  "match_series": false,
+  "notes": [
+    "Official AHWA current awards page exposes current-cycle finalists only.",
+    "Official AHWA past-winners page includes many historical shortlists, but not uniformly for every category/year.",
+    "Official annual posts supplement recent winner/shortlist gaps.",
+    "Wikipedia is a replacement fallback only; ISFDB is reference-only in V1."
+  ],
+  "parser": "australasian_shadows_collected_work",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Australasian Shadows - Collected Work",
+    "source_id": "australasian_shadows_collected_work",
+    "url": "https://australasianhorror.com/australian-shadows-awards/"
+  }
+}

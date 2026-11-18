@@ -1,8 +1,8 @@
 {
   "append_state": {
-    "entry_count": 26,
-    "last_entry_key": "bisection|sheila jenn",
-    "last_position": "2025.05",
+    "entry_count": 32,
+    "last_entry_key": "time traitors|eli donovan",
+    "last_position": "2026.05",
     "source_revision": null
   },
   "entries": [
@@ -482,18 +482,133 @@
         "url": "https://www.goodreads.com/book/show/205648930-bisection"
       },
       "title": "Bisection"
+    },
+    {
+      "authors": [
+        "Nikki Null"
+      ],
+      "award": "Self-Published Science Fiction Competition",
+      "award_source_url": "https://spsfc.space/2026/10/08/the-spsfc-5-winner-is/",
+      "award_year": "2026",
+      "category": "Novel",
+      "competition": "SPSFC 5",
+      "placement": 1,
+      "position": "2026",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/236182558-our-simulated-selves"
+      },
+      "title": "Our Simulated Selves"
+    },
+    {
+      "authors": [
+        "Jacob Terracina"
+      ],
+      "award": "Self-Published Science Fiction Competition",
+      "award_source_url": "https://spsfc.space/2026/10/08/the-spsfc-5-winner-is/",
+      "award_year": "2026",
+      "category": "Novel",
+      "competition": "SPSFC 5",
+      "placement": 2,
+      "position": "2026.01",
+      "result": "runner-up",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/240072524-ab-initio"
+      },
+      "title": "ab initio"
+    },
+    {
+      "authors": [
+        "Noam Josephides"
+      ],
+      "award": "Self-Published Science Fiction Competition",
+      "award_source_url": "https://spsfc.space/2026/10/08/the-spsfc-5-winner-is/",
+      "award_year": "2026",
+      "category": "Novel",
+      "competition": "SPSFC 5",
+      "placement": 3,
+      "position": "2026.02",
+      "result": "runner-up",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/210466823"
+      },
+      "title": "Generations"
+    },
+    {
+      "authors": [
+        "Marianne Pickles"
+      ],
+      "award": "Self-Published Science Fiction Competition",
+      "award_source_url": "https://spsfc.space/2026/10/08/the-spsfc-5-winner-is/",
+      "award_year": "2026",
+      "category": "Novel",
+      "competition": "SPSFC 5",
+      "placement": 4,
+      "position": "2026.03",
+      "result": "runner-up",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/218643451"
+      },
+      "title": "Artificial Selection"
+    },
+    {
+      "authors": [
+        "N.S. Chaudhury"
+      ],
+      "award": "Self-Published Science Fiction Competition",
+      "award_source_url": "https://spsfc.space/2026/10/08/the-spsfc-5-winner-is/",
+      "award_year": "2026",
+      "category": "Novel",
+      "competition": "SPSFC 5",
+      "placement": 5,
+      "position": "2026.04",
+      "result": "runner-up",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/230099821-frostbyte"
+      },
+      "title": "FrostByte"
+    },
+    {
+      "authors": [
+        "Eli Donovan"
+      ],
+      "award": "Self-Published Science Fiction Competition",
+      "award_source_url": "https://spsfc.space/2026/10/08/the-spsfc-5-winner-is/",
+      "award_year": "2026",
+      "category": "Novel",
+      "competition": "SPSFC 5",
+      "placement": 6,
+      "position": "2026.05",
+      "result": "runner-up",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/book/show/80236209"
+      },
+      "title": "Time Traitors"
     }
   ],
-  "fetched_at": "2026-07-09T06:58:11Z",
+  "fetched_at": "2026-11-15T05:09:23Z",
   "list_id": "spsfc_novel_finalists",
   "list_name": "SPSFC - Novel Finalists",
   "match_series": false,
   "notes": [],
   "parser": "spsfc_novel_finalists",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "SPSFC - Novel Finalists",
     "source_id": "spsfc_novel_finalists",
-    "url": "https://spsfc.space/2025/08/07/and-the-spsfc-4-winner-is/"
+    "url": "https://spsfc.space/2026/10/08/the-spsfc-5-winner-is/"
   }
 }

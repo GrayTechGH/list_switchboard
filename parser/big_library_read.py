@@ -29,6 +29,11 @@ from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
 from bs4 import BeautifulSoup, UnicodeDammit
+from .incremental import ParsedUnitCache, position_independent_fingerprint
+try:
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
+except ImportError:
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 try:
   from calibre_plugins.list_switchboard.parser.base import (
@@ -491,10 +496,15 @@ class LibbyReadsGlobalParser(CommunityReadParserBase):
       raise ValueError('The fixed Libby Reads event is missing from the ledger.')
     return matches[0]
 
-  def parse(self, html, base_url=LIBBY_READS_URL, name=None, fetch_url=None):
+  def parse(self, html, base_url=LIBBY_READS_URL, name=None, fetch_url=None,
+            cached_parsed=None, incremental_update=False, today=None):
     soup = reject_interstitial(html, self.CLUB_NAME)
     if fetch_url is None:
       raise ValueError('Libby Reads event-page fetching is unavailable.')
+    units = ParsedUnitCache('libby-global-events-v1', [base_url,self.COLLECTION],
+      cached_parsed,incremental_update)
+    today = (today or date.today()).isoformat()
+    failed, notes = set(), []
     specs = list(LIBBY_ARCHIVE_SPECS)
     known_urls = {url for url, _year in specs}
     for anchor in soup.find_all('a', href=True):
@@ -517,15 +527,47 @@ class LibbyReadsGlobalParser(CommunityReadParserBase):
         # to the verified ledger row while current event pages remain live.
         row = self.fixed_completed_row(source_url)
       else:
-        detail = reject_interstitial(fetch_url(source_url), 'Libby Reads event page')
-        row = self.detail_row(detail, source_url, fallback_year=fallback_year)
+        old = units.previous(source_url)
+        closed = (len(old)==1 and old[0].get('discussion_end_date','') < today)
+        cached = units.reuse(source_url,fallback_year) if closed else None
+        if cached:
+          entry = cached[0]
+          row = self.remote_row(entry['title'],entry['authors'],
+            entry['discussion_start_date'],entry['discussion_end_date'],source_url)
+        else:
+          try:
+            detail = reject_interstitial(fetch_url(source_url), 'Libby Reads event page')
+            row = self.detail_row(detail, source_url, fallback_year=fallback_year)
+          except (ImportCancelledError,CamoufoxRequiredError):
+            raise
+          except Exception as err:
+            if not old:
+              raise
+            entry = old[0]
+            row = self.remote_row(entry['title'],entry['authors'],
+              entry['discussion_start_date'],entry['discussion_end_date'],source_url)
+            failed.add(source_url)
+            notes.append(f'Libby Reads event refresh failed; saved remote entry retained: {source_url}: {err}')
       key = (row['start_date'], normalize_identity(row['title']))
       if key not in seen:
         seen.add(key)
         rows.append(row)
     self.validate_complete(rows)
     rows = self.continuity_rows(rows)
-    return self.result_from_rows(rows, name or self.CLUB_NAME, base_url)
+    parsed = self.result_from_rows(rows, name or self.CLUB_NAME, base_url,notes)
+    entries = parsed['entries']
+    units.put('predecessor',[e for e in entries if e['program_era']!=self.PROGRAM_ERA])
+    refresh = []
+    for source_url,fallback_year in specs:
+      event = [e for e in entries if e.get('selection_url')==source_url]
+      units.put(source_url,event,fallback_year,complete=bool(event) and source_url not in failed)
+      if event and event[0]['discussion_end_date'] >= today:
+        refresh.append(source_url)
+    parsed['incremental_state'] = units.state(entries,identity=position_independent_fingerprint)
+    parsed['incremental_state']['discovery'] = {'refresh_units':refresh}
+    if incremental_update:
+      parsed['incremental_update'] = True
+    return parsed
 
   def detail_row(self, soup, source_url, fallback_year=None):
     heading = soup.find('h1')

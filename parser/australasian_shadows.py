@@ -28,6 +28,9 @@ try:
     strip_publication_notes, strip_square_notes, strip_tie_marker,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
+  from calibre_plugins.list_switchboard.parser.incremental import (
+    ParsedUnitCache, project_source_rows, restore_source_rows)
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
@@ -35,6 +38,8 @@ except ImportError:
     strip_publication_notes, strip_square_notes, strip_tie_marker,
   )
   from .generic import position_sort_key
+  from .incremental import ParsedUnitCache, project_source_rows, restore_source_rows
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 
 AWARD_NAME = 'Australasian Shadows Award'
@@ -124,18 +129,47 @@ class AustralasianShadowsParser(AwardParserBase):
 
   def parse_official(
       self, html, base_url, name, category, category_aliases=(),
-      fetch_url=None, log=None, progress=None):
+      fetch_url=None, log=None, progress=None, cached_parsed=None, incremental_update=False):
+    cache = ParsedUnitCache('shadows-official-projections-v1',
+      f'{base_url}|{name}|{category}|{tuple(category_aliases)}', cached_parsed, incremental_update)
     parsed_results = [
       self.parse_official_document(html, base_url, name, category, category_aliases)
     ]
+    sources = [(base_url, parsed_results[0], True)]
     if fetch_url is not None:
       for url in self.official_supplement_urls(base_url):
+        old_unit = cache.old_units.get(url) or {}
+        old = None
         try:
-          parsed_results.append(self.parse_official_document(
-            fetch_url(url), url, name, category, category_aliases))
+          metadata = old_unit.get('metadata', {})
+          source_notes = metadata.get('notes')
+          if not isinstance(source_notes, list) or any(not isinstance(note, str) for note in source_notes):
+            raise ValueError('Missing source notes.')
+          old = {'entries': restore_source_rows(cache.previous(url), metadata), 'notes': source_notes}
+        except ValueError:
+          pass
+        closed = url == OFFICIAL_2024_WINNERS_API_URL
+        if closed and old_unit.get('complete') is True and old_unit.get('revision') == 2024 and old is not None:
+          parsed_results.append(old)
+          sources.append((url, old, True))
+          continue
+        try:
+          payload = fetch_url(url)
+          if closed and not any(
+              self.year_from_text(title or self.html_text(content)) == 2024 and
+              'winner' in (title or self.html_text(content)).casefold()
+              for content, title in self.source_documents(payload)):
+            raise ValueError('The closed 2024 winner post was not recognizable.')
+          result = self.parse_official_document(payload, url, name, category, category_aliases)
+          parsed_results.append(result)
+          sources.append((url, result, True))
+        except (ImportCancelledError, CamoufoxRequiredError):
+          raise
         except Exception as err:
           note = f'Australasian Shadows official supplement failed: {url}: {err}'
-          parsed_results.append({'entries': (), 'notes': [note]})
+          retained = old or {'entries': [], 'notes': []}
+          parsed_results.append(dict(retained, notes=list(retained['notes']) + [note]))
+          sources.append((url, retained, False))
           if log is not None:
             log(note)
     notes = [
@@ -150,6 +184,15 @@ class AustralasianShadowsParser(AwardParserBase):
       rows.extend(parsed.get('entries', ()))
       notes.extend(parsed.get('notes', ()))
     parsed = self.parsed_from_rows(name, OFFICIAL_CURRENT_URL, rows, notes)
+    for url, result, complete in sources:
+      projected, metadata = project_source_rows(result['entries'], parsed['entries'], self.row_key)
+      metadata['notes'] = list(result.get('notes', []))
+      cache.put(url, projected, revision=2024 if url == OFFICIAL_2024_WINNERS_API_URL else None,
+        complete=complete, metadata=metadata)
+    state = cache.state(parsed['entries'])
+    state['discovery'] = {'refresh_units': [url for url, _result, _complete in sources
+      if url != OFFICIAL_2024_WINNERS_API_URL]}
+    parsed['incremental_state'] = state
     return parsed
 
   def parse_wikipedia(

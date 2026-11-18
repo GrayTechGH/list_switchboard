@@ -20,6 +20,11 @@ from datetime import date, datetime
 from urllib.parse import parse_qs, quote, urljoin, urlparse
 
 from lxml import html as lxml_html
+from .incremental import ParsedUnitCache, entry_fingerprint
+try:
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
+except ImportError:
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 try:
   from calibre_plugins.list_switchboard.parser.base import (
@@ -67,22 +72,39 @@ class BookBrowseOnlineBookClubParser(BookBrowseBookClubParserBase):
 
   def parse(
       self, landing_html, base_url, name='BookBrowse Online Book Club',
-      fetch_url=None, current_date=None, progress=None):
+      fetch_url=None, current_date=None, progress=None, cached_parsed=None,
+      incremental_update=False):
     if fetch_url is None:
       raise ValueError('BookBrowse parsing requires linked-source fetching.')
     self.require_real_page(landing_html, 'BookBrowse Online Book Club landing page')
     today = current_date or date.today()
     if isinstance(today, str):
       today = date.fromisoformat(today)
+    units = ParsedUnitCache('bookbrowse-discussions-v1',[base_url,CATEGORY],
+      cached_parsed,incremental_update)
 
-    legacy_html = fetch_url(LEGACY_URL)
-    legacy = self.parse_legacy(legacy_html, name)
+    legacy_unit = units.old_units.get('legacy') or {}
+    order = (legacy_unit.get('metadata') or {}).get('source_order')
+    order_ready = isinstance(order,dict) and all(
+      type(order.get(entry.get('source_record_id'))) is int for entry in units.previous('legacy'))
+    legacy = units.reuse('legacy','closed-booktalk-2024') if order_ready else None
+    if legacy is None:
+      legacy_html = fetch_url(LEGACY_URL)
+      legacy = self.parse_legacy(legacy_html, name)
+      order = {entry['source_record_id']:entry['_source_order'] for entry in legacy}
+    else:
+      for entry in legacy:
+        entry['_era_rank'] = 1
+        entry['_source_order'] = order[entry['source_record_id']]
+    units.put('legacy',legacy,'closed-booktalk-2024',metadata={'source_order':order})
 
     upcoming, upcoming_notes = self.parse_upcoming(
       landing_html, base_url, fetch_url, name, today, progress=progress)
     categories_payload = fetch_url(CATEGORIES_URL)
+    old_dates = units.old_discovery.get('topic_dates')
+    date_cache = dict(old_dates) if isinstance(old_dates,dict) else {}
     current, notes = self.parse_current(
-      categories_payload, fetch_url, name, progress=progress)
+      categories_payload, fetch_url, name, progress=progress, date_cache=date_cache)
     notes[:0] = upcoming_notes
 
     entries = self.merge_entries(legacy + upcoming + current)
@@ -90,13 +112,21 @@ class BookBrowseOnlineBookClubParser(BookBrowseBookClubParserBase):
       entry['position'] = str(position)
       entry.pop('_source_order', None)
       entry.pop('_era_rank', None)
-    return {
+    parsed = {
       'name': name,
       'source': parsed_source(name, base_url),
       'entries': entries,
       'notes': notes,
       'match_series': False,
     }
+    units.put('fresh-identities',[entry for entry in entries if entry.get('program_era')!='legacy_booktalk'])
+    parsed['incremental_state'] = units.state(entries,identity=lambda entry:entry_fingerprint(
+      {key:value for key,value in entry.items() if key not in ('position','_era_rank','_source_order')}))
+    parsed['incremental_state']['discovery'] = {'topic_dates':date_cache,
+      'refresh_units':['fresh-identities']}
+    if incremental_update:
+      parsed['incremental_update'] = True
+    return parsed
 
   def parse_legacy(self, html, name):
     self.require_real_page(html, 'BookBrowse legacy BookTalk archive')
@@ -163,7 +193,7 @@ class BookBrowseOnlineBookClubParser(BookBrowseBookClubParserBase):
     values = parse_qs(urlparse(source_url).query).get('forumid', ())
     return values[0] if values else ''
 
-  def parse_current(self, payload, fetch_url, name, progress=None):
+  def parse_current(self, payload, fetch_url, name, progress=None, date_cache=None):
     data = self.json_object(payload, 'BookBrowse Discourse category index')
     categories = [
       item for item in data.get('categories', [])
@@ -173,6 +203,7 @@ class BookBrowseOnlineBookClubParser(BookBrowseBookClubParserBase):
     entries = []
     enrichment = []
     notes = []
+    date_cache = date_cache if date_cache is not None else {}
     total = len(categories)
     for index, category in enumerate(categories, 1):
       category_id = category.get('id')
@@ -208,8 +239,18 @@ class BookBrowseOnlineBookClubParser(BookBrowseBookClubParserBase):
     for entry, topic_url, category_id, title in enrichment:
       try:
         topic_json_url = urljoin(COMMUNITY_URL, topic_url.rstrip('/') + '.json')
-        topic = self.json_object(fetch_url(topic_json_url), f'BookBrowse About topic {category_id}')
-        event_date = self.topic_date(topic)
+        cached_date = date_cache.get(topic_json_url)
+        cached_date = cached_date if isinstance(cached_date,dict) else {}
+        event_date = cached_date.get('date') if cached_date.get('category_id')==category_id else ''
+        try:
+          event_date = date.fromisoformat(event_date).isoformat() if event_date else ''
+        except (TypeError,ValueError):
+          event_date = ''
+        if not event_date:
+          topic = self.json_object(fetch_url(topic_json_url), f'BookBrowse About topic {category_id}')
+          event_date = self.topic_date(topic)
+          if event_date:
+            date_cache[topic_json_url] = {'category_id':category_id,'date':event_date}
         if event_date:
           entry.update({
             'event_date': event_date,
@@ -217,6 +258,8 @@ class BookBrowseOnlineBookClubParser(BookBrowseBookClubParserBase):
             'selection_year': event_date[:4],
             'selection_month': str(int(event_date[5:7])),
           })
+      except (ImportCancelledError,CamoufoxRequiredError):
+        raise
       except Exception as err:
         notes.append(f'BookBrowse discussion date was unavailable for {title}: {err}')
     if progress is not None:
@@ -281,6 +324,8 @@ class BookBrowseOnlineBookClubParser(BookBrowseBookClubParserBase):
         title, authors = self.detail_identity(detail)
         if not title or not authors:
           raise ValueError('book detail did not expose title and author')
+      except (ImportCancelledError,CamoufoxRequiredError):
+        raise
       except Exception as err:
         notes.append(f'BookBrowse upcoming discussion was unavailable: {detail_url}: {err}')
         continue

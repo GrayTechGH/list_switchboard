@@ -22,6 +22,7 @@ SPECULATIVE_REGIONAL_CATEGORIES = (
 
 class UrlFetcherAurora(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
 
+  ENABLE_SFADB_INCREMENTAL = True
   URL = AURORA_AWARDS_URL
   FETCH_URLS = (AURORA_AWARDS_URL,)
   order = 180
@@ -42,7 +43,7 @@ class UrlFetcherAurora(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
 
     return AuroraParser(books_only=self.BOOKS_ONLY)
 
-  def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
+  def parse(self, html, fetch_url=None, log=None, progress=None, **kwargs):
     return self.parser().parse(
       html,
       self.URL,
@@ -51,10 +52,13 @@ class UrlFetcherAurora(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
       self.CATEGORY_ALIASES,
       fetch_url=fetch_url,
       log=log,
-      progress=progress)
+      progress=progress, cached_parsed=kwargs.get('cached_parsed'),
+      incremental_update=kwargs.get('incremental_update', False), enable_incremental=True,
+      configuration_key={'books_only': self.BOOKS_ONLY})
 
 
 class UrlFetcherAuroraNovel(UrlFetcherAurora):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'aurora_novel'
   NAME = 'Aurora - Novel'
   FILTER_CATEGORIES = SPECULATIVE_REGIONAL_CATEGORIES
@@ -73,6 +77,7 @@ class UrlFetcherAuroraNovel(UrlFetcherAurora):
 
 
 class UrlFetcherAuroraYANovel(UrlFetcherAurora):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'aurora_ya_novel'
   NAME = 'Aurora - YA Novel'
   FILTER_CATEGORIES = (
@@ -90,6 +95,7 @@ class UrlFetcherAuroraYANovel(UrlFetcherAurora):
 
 
 class UrlFetcherAuroraNoveletteNovella(UrlFetcherAurora):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'aurora_novelette_novella'
   NAME = 'Aurora - Novelette/Novella'
   FILTER_CATEGORIES = SPECULATIVE_REGIONAL_CATEGORIES
@@ -100,6 +106,7 @@ class UrlFetcherAuroraNoveletteNovella(UrlFetcherAurora):
 
 
 class UrlFetcherAuroraRelatedWork(UrlFetcherAurora):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'aurora_related_work'
   NAME = 'Aurora - Related Work'
   FILTER_CATEGORIES = (
@@ -111,6 +118,7 @@ class UrlFetcherAuroraRelatedWork(UrlFetcherAurora):
 
 
 class UrlFetcherAuroraGraphicNovel(UrlFetcherAurora):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'aurora_graphic_novel'
   NAME = 'Aurora - Graphic Novel'
   FILTER_CATEGORIES = SPECULATIVE_REGIONAL_CATEGORIES

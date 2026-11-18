@@ -1,8 +1,8 @@
 {
   "append_state": {
-    "entry_count": 4,
-    "last_entry_key": "the watchman|robert crais",
-    "last_position": "2008",
+    "entry_count": 20,
+    "last_entry_key": "thirteen|richard k morgan",
+    "last_position": "2008.04",
     "source_revision": null
   },
   "entries": [
@@ -15,7 +15,51 @@
       "category": "Thriller",
       "position": "2005",
       "result": "winner",
-      "title": "Rain Storm"
+      "title": "Winner Take All"
+    },
+    {
+      "authors": [
+        "Robert Ferrigno"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2005",
+      "category": "Thriller",
+      "position": "2005.01",
+      "result": "nominee",
+      "title": "The Wake-Up"
+    },
+    {
+      "authors": [
+        "Alan Furst"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2005",
+      "category": "Thriller",
+      "position": "2005.02",
+      "result": "nominee",
+      "title": "Dark Voyage"
+    },
+    {
+      "authors": [
+        "Dean Koontz"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2005",
+      "category": "Thriller",
+      "position": "2005.03",
+      "result": "nominee",
+      "title": "Life Expectancy"
+    },
+    {
+      "authors": [
+        "Daniel Silva"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2005",
+      "category": "Thriller",
+      "position": "2005.04",
+      "result": "nominee",
+      "title": "A Death in Vienna"
     },
     {
       "authors": [
@@ -30,6 +74,50 @@
     },
     {
       "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2006",
+      "category": "Thriller",
+      "position": "2006.01",
+      "result": "nominee",
+      "title": "The Lincoln Lawyer"
+    },
+    {
+      "authors": [
+        "Jonnie Jacobs"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2006",
+      "category": "Thriller",
+      "position": "2006.02",
+      "result": "nominee",
+      "title": "Evidence of Guilt"
+    },
+    {
+      "authors": [
+        "William Lashner"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2006",
+      "category": "Thriller",
+      "position": "2006.03",
+      "result": "nominee",
+      "title": "Falls the Shadow"
+    },
+    {
+      "authors": [
+        "David Morrell"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2006",
+      "category": "Thriller",
+      "position": "2006.04",
+      "result": "nominee",
+      "title": "Creepers"
+    },
+    {
+      "authors": [
         "Robert Ferrigno"
       ],
       "award": "Gumshoe Award",
@@ -37,12 +125,51 @@
       "category": "Thriller",
       "position": "2007",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/Prayers_for_the_Assassin"
-      },
       "title": "Prayers for the Assassin"
+    },
+    {
+      "authors": [
+        "Lee Child"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2007",
+      "category": "Thriller",
+      "position": "2007.01",
+      "result": "nominee",
+      "title": "The Hard Way"
+    },
+    {
+      "authors": [
+        "Barry Eisler"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2007",
+      "category": "Thriller",
+      "position": "2007.02",
+      "result": "nominee",
+      "title": "Extremis"
+    },
+    {
+      "authors": [
+        "William Lashner"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2007",
+      "category": "Thriller",
+      "position": "2007.03",
+      "result": "nominee",
+      "title": "Marked Man"
+    },
+    {
+      "authors": [
+        "M. J. Rose"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2007",
+      "category": "Thriller",
+      "position": "2007.04",
+      "result": "nominee",
+      "title": "The Venus Fix"
     },
     {
       "authors": [
@@ -53,26 +180,64 @@
       "category": "Thriller",
       "position": "2008",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/The_Watchman_(Crais_novel)"
-      },
       "title": "The Watchman"
+    },
+    {
+      "authors": [
+        "Lee Child"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2008",
+      "category": "Thriller",
+      "position": "2008.01",
+      "result": "nominee",
+      "title": "Bad Luck and Trouble"
+    },
+    {
+      "authors": [
+        "Joseph Finder"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2008",
+      "category": "Thriller",
+      "position": "2008.02",
+      "result": "nominee",
+      "title": "Power Play"
+    },
+    {
+      "authors": [
+        "Michael Gruber"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2008",
+      "category": "Thriller",
+      "position": "2008.03",
+      "result": "nominee",
+      "title": "The Book of Air and Shadows"
+    },
+    {
+      "authors": [
+        "Richard K. Morgan"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2008",
+      "category": "Thriller",
+      "position": "2008.04",
+      "result": "nominee",
+      "title": "Thirteen"
     }
   ],
-  "fetched_at": "2026-07-17T06:46:05Z",
+  "fetched_at": "2026-11-16T07:09:38Z",
   "list_id": "gumshoe_award_thriller",
   "list_name": "Gumshoe Award - Thriller (discontinued)",
   "match_series": false,
-  "notes": [
-    "LibraryThing failed: HTTP Error 403: Forbidden"
-  ],
+  "notes": [],
   "parser": "gumshoe_award_thriller",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Gumshoe Award - Thriller (discontinued)",
     "source_id": "gumshoe_award_thriller",
-    "url": "https://en.wikipedia.org/wiki/Gumshoe_Awards"
+    "url": "https://www.librarything.com/award/1785/Gumshoe-Award"
   }
 }

@@ -1,0 +1,2399 @@
+{
+  "append_state": {
+    "entry_count": 215,
+    "last_entry_key": "catch me on a blue day|m e proctor",
+    "last_position": "2026.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Max Byrd"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1982",
+      "category": "Best P.I. Paperback Original",
+      "position": "1982",
+      "result": "winner",
+      "title": "California Thriller"
+    },
+    {
+      "authors": [
+        "Hamilton T. Caine"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1982",
+      "category": "Best P.I. Paperback Original",
+      "position": "1982.01",
+      "result": "nominee",
+      "title": "Carpenter, Detective"
+    },
+    {
+      "authors": [
+        "James Ellroy"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1982",
+      "category": "Best P.I. Paperback Original",
+      "position": "1982.02",
+      "result": "nominee",
+      "title": "Brown\u2019s Requiem"
+    },
+    {
+      "authors": [
+        "L.A. Morse"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1982",
+      "category": "Best P.I. Paperback Original",
+      "position": "1982.03",
+      "result": "nominee",
+      "title": "The Old Dick"
+    },
+    {
+      "authors": [
+        "George Ogan"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1982",
+      "category": "Best P.I. Paperback Original",
+      "position": "1982.04",
+      "result": "nominee",
+      "title": "Murder in the Wind"
+    },
+    {
+      "authors": [
+        "William Campbell Gault"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1983",
+      "category": "Best P.I. Paperback Original",
+      "position": "1983",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.stopyourekillingme.com/G_Authors/Gault_William-Campbell.html"
+      },
+      "title": "The Cana Diversion"
+    },
+    {
+      "authors": [
+        "Dimitri Gat"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1983",
+      "category": "Best P.I. Paperback Original",
+      "position": "1983.01",
+      "result": "nominee",
+      "title": "Nevsky\u2019s Return"
+    },
+    {
+      "authors": [
+        "Jack Lynch"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1983",
+      "category": "Best P.I. Paperback Original",
+      "position": "1983.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.stopyourekillingme.com/L_Authors/Lynch_Jack.html"
+      },
+      "title": "Pieces of Death"
+    },
+    {
+      "authors": [
+        "Warren Murphy"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1983",
+      "category": "Best P.I. Paperback Original",
+      "position": "1983.03",
+      "result": "nominee",
+      "title": "Smoked Out"
+    },
+    {
+      "authors": [
+        "Paul Engleman"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1984",
+      "category": "Best P.I. Paperback Original",
+      "position": "1984",
+      "result": "winner",
+      "title": "Dead in Centerfield"
+    },
+    {
+      "authors": [
+        "Max Byrd"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1984",
+      "category": "Best P.I. Paperback Original",
+      "position": "1984.01",
+      "result": "nominee",
+      "title": "Finders Weepers"
+    },
+    {
+      "authors": [
+        "Elliot Lewis"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1984",
+      "category": "Best P.I. Paperback Original",
+      "position": "1984.02",
+      "result": "nominee",
+      "title": "Death and the Single Girl"
+    },
+    {
+      "authors": [
+        "Warren Murphy"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1984",
+      "category": "Best P.I. Paperback Original",
+      "position": "1984.03",
+      "result": "nominee",
+      "title": "Trace"
+    },
+    {
+      "authors": [
+        "Robert J. Randisi"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1984",
+      "category": "Best P.I. Paperback Original",
+      "position": "1984.04",
+      "result": "nominee",
+      "title": "The Steinway Collection"
+    },
+    {
+      "authors": [
+        "Warren Murphy"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1985",
+      "category": "Best P.I. Paperback Original",
+      "position": "1985",
+      "result": "winner",
+      "title": "The Ceiling of Hell"
+    },
+    {
+      "authors": [
+        "Paul Benjamin"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1985",
+      "category": "Best P.I. Paperback Original",
+      "position": "1985.01",
+      "result": "nominee",
+      "title": "Squeeze Play"
+    },
+    {
+      "authors": [
+        "Jack Lynch"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1985",
+      "category": "Best P.I. Paperback Original",
+      "position": "1985.02",
+      "result": "nominee",
+      "title": "San Quentin"
+    },
+    {
+      "authors": [
+        "Warren Murphy"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1985",
+      "category": "Best P.I. Paperback Original",
+      "position": "1985.03",
+      "result": "nominee",
+      "title": "And 47 Miles of Rope"
+    },
+    {
+      "authors": [
+        "Reed Stephens"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1985",
+      "category": "Best P.I. Paperback Original",
+      "position": "1985.04",
+      "result": "nominee",
+      "title": "The Man Who Risked His Partner"
+    },
+    {
+      "authors": [
+        "Earl Emerson"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1986",
+      "category": "Best P.I. Paperback Original",
+      "position": "1986",
+      "result": "winner",
+      "title": "Poverty Bay"
+    },
+    {
+      "authors": [
+        "Earl Emerson"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1986",
+      "category": "Best P.I. Paperback Original",
+      "position": "1986.01",
+      "result": "nominee",
+      "title": "The Rainy City"
+    },
+    {
+      "authors": [
+        "Douglas Heyes"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1986",
+      "category": "Best P.I. Paperback Original",
+      "position": "1986.02",
+      "result": "nominee",
+      "title": "The Kill"
+    },
+    {
+      "authors": [
+        "Warren Murphy"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1986",
+      "category": "Best P.I. Paperback Original",
+      "position": "1986.03",
+      "result": "nominee",
+      "title": "Pigs Get Fat"
+    },
+    {
+      "authors": [
+        "Philip Ross"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1986",
+      "category": "Best P.I. Paperback Original",
+      "position": "1986.04",
+      "result": "nominee",
+      "title": "Blue Heron"
+    },
+    {
+      "authors": [
+        "Rob Kantner"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1987",
+      "category": "Best P.I. Paperback Original",
+      "position": "1987",
+      "result": "winner",
+      "title": "The Back-Door Man"
+    },
+    {
+      "authors": [
+        "Kenn Davis"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1987",
+      "category": "Best P.I. Paperback Original",
+      "position": "1987.01",
+      "result": "nominee",
+      "title": "Melting Point"
+    },
+    {
+      "authors": [
+        "Earl Emerson"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1987",
+      "category": "Best P.I. Paperback Original",
+      "position": "1987.02",
+      "result": "nominee",
+      "title": "Nervous Laughter"
+    },
+    {
+      "authors": [
+        "T.J. MacGregor"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1987",
+      "category": "Best P.I. Paperback Original",
+      "position": "1987.03",
+      "result": "nominee",
+      "title": "Dark Fields"
+    },
+    {
+      "authors": [
+        "Warren Murphy"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1987",
+      "category": "Best P.I. Paperback Original",
+      "position": "1987.04",
+      "result": "nominee",
+      "title": "Too Old a Cat"
+    },
+    {
+      "authors": [
+        "L.J. Washburn"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1988",
+      "category": "Best P.I. Paperback Original",
+      "position": "1988",
+      "result": "winner",
+      "title": "Wild Night"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1988",
+      "category": "Best P.I. Paperback Original",
+      "position": "1988.01",
+      "result": "nominee",
+      "title": "The Monkey\u2019s Raincoat"
+    },
+    {
+      "authors": [
+        "Gaylord Dold"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1988",
+      "category": "Best P.I. Paperback Original",
+      "position": "1988.02",
+      "result": "nominee",
+      "title": "Snake Eyes"
+    },
+    {
+      "authors": [
+        "David Everson"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1988",
+      "category": "Best P.I. Paperback Original",
+      "position": "1988.03",
+      "result": "nominee",
+      "title": "Recount"
+    },
+    {
+      "authors": [
+        "Joseph Louis"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1988",
+      "category": "Best P.I. Paperback Original",
+      "position": "1988.04",
+      "result": "nominee",
+      "title": "Madelaine"
+    },
+    {
+      "authors": [
+        "Rob Kantner"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1989",
+      "category": "Best P.I. Paperback Original",
+      "position": "1989",
+      "result": "winner",
+      "title": "Dirty Work"
+    },
+    {
+      "authors": [
+        "John Birkett"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1989",
+      "category": "Best P.I. Paperback Original",
+      "position": "1989.01",
+      "result": "nominee",
+      "title": "The Last Private Eye"
+    },
+    {
+      "authors": [
+        "Gaylord Dold"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1989",
+      "category": "Best P.I. Paperback Original",
+      "position": "1989.02",
+      "result": "nominee",
+      "title": "Bonepile"
+    },
+    {
+      "authors": [
+        "David Everson"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1989",
+      "category": "Best P.I. Paperback Original",
+      "position": "1989.03",
+      "result": "nominee",
+      "title": "Rebound"
+    },
+    {
+      "authors": [
+        "W.R. Philbrick"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1989",
+      "category": "Best P.I. Paperback Original",
+      "position": "1989.04",
+      "result": "nominee",
+      "title": "The Crystal Blue Persuasion"
+    },
+    {
+      "authors": [
+        "Rob Kantner"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1990",
+      "category": "Best P.I. Paperback Original",
+      "position": "1990",
+      "result": "winner",
+      "title": "Hell\u2019s Only Half Full"
+    },
+    {
+      "authors": [
+        "Gaylord Dold"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1990",
+      "category": "Best P.I. Paperback Original",
+      "position": "1990.01",
+      "result": "nominee",
+      "title": "Muscle and Blood"
+    },
+    {
+      "authors": [
+        "Richard Hilary"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1990",
+      "category": "Best P.I. Paperback Original",
+      "position": "1990.02",
+      "result": "nominee",
+      "title": "Behind the Fact"
+    },
+    {
+      "authors": [
+        "W.R. Philbrick"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1990",
+      "category": "Best P.I. Paperback Original",
+      "position": "1990.03",
+      "result": "nominee",
+      "title": "Tough Enough"
+    },
+    {
+      "authors": [
+        "Deborah Valentine"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1990",
+      "category": "Best P.I. Paperback Original",
+      "position": "1990.04",
+      "result": "nominee",
+      "title": "A Collector of Photographs"
+    },
+    {
+      "authors": [
+        "W. Glenn Duncan"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1991",
+      "category": "Best P.I. Paperback Original",
+      "position": "1991",
+      "result": "winner",
+      "title": "Rafferty: Fatal Sisters"
+    },
+    {
+      "authors": [
+        "Marvin Albert"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1991",
+      "category": "Best P.I. Paperback Original",
+      "position": "1991.01",
+      "result": "nominee",
+      "title": "Bimbo Heaven"
+    },
+    {
+      "authors": [
+        "John Birkett"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1991",
+      "category": "Best P.I. Paperback Original",
+      "position": "1991.02",
+      "result": "nominee",
+      "title": "The Queen\u2019s Mare"
+    },
+    {
+      "authors": [
+        "Rob Kantner"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1991",
+      "category": "Best P.I. Paperback Original",
+      "position": "1991.03",
+      "result": "nominee",
+      "title": "Made in Detroit"
+    },
+    {
+      "authors": [
+        "Monroe Thompson"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1991",
+      "category": "Best P.I. Paperback Original",
+      "position": "1991.04",
+      "result": "nominee",
+      "title": "The Blue Room"
+    },
+    {
+      "authors": [
+        "Paul Kemprecos"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1992",
+      "category": "Best P.I. Paperback Original",
+      "position": "1992",
+      "result": "winner",
+      "title": "Cool Blue Tomb"
+    },
+    {
+      "authors": [
+        "Daniel Hearn"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1992",
+      "category": "Best P.I. Paperback Original",
+      "position": "1992.01",
+      "result": "nominee",
+      "title": "Black Light"
+    },
+    {
+      "authors": [
+        "Kay Hooper"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1992",
+      "category": "Best P.I. Paperback Original",
+      "position": "1992.02",
+      "result": "nominee",
+      "title": "House of Cards"
+    },
+    {
+      "authors": [
+        "Rob Kantner"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1992",
+      "category": "Best P.I. Paperback Original",
+      "position": "1992.03",
+      "result": "nominee",
+      "title": "The Thousand-Yard Stare"
+    },
+    {
+      "authors": [
+        "Marele Day"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1993",
+      "category": "Best P.I. Paperback Original",
+      "position": "1993",
+      "result": "winner",
+      "title": "The Last Tango of Dolores Delgado"
+    },
+    {
+      "authors": [
+        "Catherine Dain"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1993",
+      "category": "Best P.I. Paperback Original",
+      "position": "1993.01",
+      "result": "nominee",
+      "title": "Lay it on the Line"
+    },
+    {
+      "authors": [
+        "Marc Davis"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1993",
+      "category": "Best P.I. Paperback Original",
+      "position": "1993.02",
+      "result": "nominee",
+      "title": "Dirty Money"
+    },
+    {
+      "authors": [
+        "Wayne D. Dundee"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1993",
+      "category": "Best P.I. Paperback Original",
+      "position": "1993.03",
+      "result": "nominee",
+      "title": "The Brutal Ballet"
+    },
+    {
+      "authors": [
+        "Rodman Philbrick"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1994",
+      "category": "Best P.I. Paperback Original",
+      "position": "1994",
+      "result": "winner",
+      "title": "Brothers and Sinners"
+    },
+    {
+      "authors": [
+        "Milton Bass"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1994",
+      "category": "Best P.I. Paperback Original",
+      "position": "1994.01",
+      "result": "nominee",
+      "title": "The Half-Hearted Detective"
+    },
+    {
+      "authors": [
+        "Richard Fliegel"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1994",
+      "category": "Best P.I. Paperback Original",
+      "position": "1994.02",
+      "result": "nominee",
+      "title": "A Minyon For The Dead"
+    },
+    {
+      "authors": [
+        "Ed Gorman"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1994",
+      "category": "Best P.I. Paperback Original",
+      "position": "1994.03",
+      "result": "nominee",
+      "title": "Shadow Games"
+    },
+    {
+      "authors": [
+        "Steven Womack"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1994",
+      "category": "Best P.I. Paperback Original",
+      "position": "1994.04",
+      "result": "nominee",
+      "title": "Torch Town Boogie"
+    },
+    {
+      "authors": [
+        "Ed Goldberg"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1995",
+      "category": "Best P.I. Paperback Original",
+      "position": "1995",
+      "result": "winner",
+      "title": "Served Cold"
+    },
+    {
+      "authors": [
+        "Leo Axler"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1995",
+      "category": "Best P.I. Paperback Original",
+      "position": "1995.01",
+      "result": "nominee",
+      "title": "Double Plot"
+    },
+    {
+      "authors": [
+        "Catherine Dain"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1995",
+      "category": "Best P.I. Paperback Original",
+      "position": "1995.02",
+      "result": "nominee",
+      "title": "Lament for a Dead Cowboy"
+    },
+    {
+      "authors": [
+        "Bridget McKenna"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1995",
+      "category": "Best P.I. Paperback Original",
+      "position": "1995.03",
+      "result": "nominee",
+      "title": "Dead Ahead"
+    },
+    {
+      "authors": [
+        "Patricia Wallace"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1995",
+      "category": "Best P.I. Paperback Original",
+      "position": "1995.04",
+      "result": "nominee",
+      "title": "Deadly Devotion"
+    },
+    {
+      "authors": [
+        "William Jaspersohn"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1996",
+      "category": "Best P.I. Paperback Original",
+      "position": "1996",
+      "result": "winner",
+      "title": "Native Angels"
+    },
+    {
+      "authors": [
+        "J.D. Knight"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1996",
+      "category": "Best P.I. Paperback Original",
+      "position": "1996.01",
+      "result": "nominee",
+      "title": "Zero Tolerance"
+    },
+    {
+      "authors": [
+        "Shelley Singer"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1996",
+      "category": "Best P.I. Paperback Original",
+      "position": "1996.02",
+      "result": "nominee",
+      "title": "Interview with Mattie"
+    },
+    {
+      "authors": [
+        "Gloria White"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1996",
+      "category": "Best P.I. Paperback Original",
+      "position": "1996.03",
+      "result": "nominee",
+      "title": "Charged with Guilt"
+    },
+    {
+      "authors": [
+        "Steven Womack"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1996",
+      "category": "Best P.I. Paperback Original",
+      "position": "1996.04",
+      "result": "nominee",
+      "title": "Way Past Dead"
+    },
+    {
+      "authors": [
+        "Harlan Coben"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1997",
+      "category": "Best P.I. Paperback Original",
+      "position": "1997",
+      "result": "winner",
+      "title": "Fade Away"
+    },
+    {
+      "authors": [
+        "Ruthe Furie"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1997",
+      "category": "Best P.I. Paperback Original",
+      "position": "1997.01",
+      "result": "nominee",
+      "title": "A Natural Death"
+    },
+    {
+      "authors": [
+        "Steven Womack"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1997",
+      "category": "Best P.I. Paperback Original",
+      "position": "1997.02",
+      "result": "nominee",
+      "title": "Chain of Fools"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1998",
+      "category": "Best P.I. Paperback Original",
+      "position": "1998",
+      "result": "winner",
+      "title": "Charm City"
+    },
+    {
+      "authors": [
+        "Harlan Coben"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1998",
+      "category": "Best P.I. Paperback Original",
+      "position": "1998.01",
+      "result": "nominee",
+      "title": "Back Spin"
+    },
+    {
+      "authors": [
+        "Tim Hemlin"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1998",
+      "category": "Best P.I. Paperback Original",
+      "position": "1998.02",
+      "result": "nominee",
+      "title": "A Whisper of Rage"
+    },
+    {
+      "authors": [
+        "Randye Lordon"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1998",
+      "category": "Best P.I. Paperback Original",
+      "position": "1998.03",
+      "result": "nominee",
+      "title": "Father, Forgive Me"
+    },
+    {
+      "authors": [
+        "Gloria White"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1998",
+      "category": "Best P.I. Paperback Original",
+      "position": "1998.04",
+      "result": "nominee",
+      "title": "Sunset and Santiago"
+    },
+    {
+      "authors": [
+        "Steven Womack"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1999",
+      "category": "Best P.I. Paperback Original",
+      "position": "1999",
+      "result": "winner",
+      "title": "Murder Manual"
+    },
+    {
+      "authors": [
+        "Phillip DePoy"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1999",
+      "category": "Best P.I. Paperback Original",
+      "position": "1999.01",
+      "result": "nominee",
+      "title": "Too Easy"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1999",
+      "category": "Best P.I. Paperback Original",
+      "position": "1999.02",
+      "result": "nominee",
+      "title": "Butchers Hill"
+    },
+    {
+      "authors": [
+        "Rick Riordan"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1999",
+      "category": "Best P.I. Paperback Original",
+      "position": "1999.03",
+      "result": "nominee",
+      "title": "The Widower\u2019s Two Step"
+    },
+    {
+      "authors": [
+        "Janice Steinberg"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1999",
+      "category": "Best P.I. Paperback Original",
+      "position": "1999.04",
+      "result": "nominee",
+      "title": "Death in a City of Mystics"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2000",
+      "category": "Best P.I. Paperback Original",
+      "position": "2000",
+      "result": "winner",
+      "title": "In Big Trouble"
+    },
+    {
+      "authors": [
+        "Leo Atkins"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2000",
+      "category": "Best P.I. Paperback Original",
+      "position": "2000.01",
+      "result": "nominee",
+      "title": "Deadbeat"
+    },
+    {
+      "authors": [
+        "Ruth Birmingham"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2000",
+      "category": "Best P.I. Paperback Original",
+      "position": "2000.02",
+      "result": "nominee",
+      "title": "Fulton County Blues"
+    },
+    {
+      "authors": [
+        "Sinclair Browning"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2000",
+      "category": "Best P.I. Paperback Original",
+      "position": "2000.03",
+      "result": "nominee",
+      "title": "The Last Song Dogs"
+    },
+    {
+      "authors": [
+        "Thomas Lipinski"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2000",
+      "category": "Best P.I. Paperback Original",
+      "position": "2000.04",
+      "result": "nominee",
+      "title": "Steel City Confessions"
+    },
+    {
+      "authors": [
+        "Thomas Lipinski"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2001",
+      "category": "Best P.I. Paperback Original",
+      "position": "2001",
+      "result": "winner",
+      "title": "Death in the Steel City"
+    },
+    {
+      "authors": [
+        "Mary Jo Adamson"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2001",
+      "category": "Best P.I. Paperback Original",
+      "position": "2001.01",
+      "result": "nominee",
+      "title": "The Blazing Tree"
+    },
+    {
+      "authors": [
+        "Sinclair Browning"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2001",
+      "category": "Best P.I. Paperback Original",
+      "position": "2001.02",
+      "result": "nominee",
+      "title": "The Sporting Club"
+    },
+    {
+      "authors": [
+        "Max Allan Collins"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2001",
+      "category": "Best P.I. Paperback Original",
+      "position": "2001.03",
+      "result": "nominee",
+      "title": "The Hindenburg Murders"
+    },
+    {
+      "authors": [
+        "Katy Munger"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2001",
+      "category": "Best P.I. Paperback Original",
+      "position": "2001.04",
+      "result": "nominee",
+      "title": "Bad to the Bone"
+    },
+    {
+      "authors": [
+        "Steven Womack"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2001",
+      "category": "Best P.I. Paperback Original",
+      "position": "2001.05",
+      "result": "nominee",
+      "title": "Dirty Money"
+    },
+    {
+      "authors": [
+        "Lyda Morehouse"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2002",
+      "category": "Best P.I. Paperback Original",
+      "position": "2002",
+      "result": "winner",
+      "title": "Archangel Protocol"
+    },
+    {
+      "authors": [
+        "Janet LaPierre"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2002",
+      "category": "Best P.I. Paperback Original",
+      "position": "2002.01",
+      "result": "nominee",
+      "title": "Keepers"
+    },
+    {
+      "authors": [
+        "Robert Westbrook"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2002",
+      "category": "Best P.I. Paperback Original",
+      "position": "2002.02",
+      "result": "nominee",
+      "title": "Ancient Enemy"
+    },
+    {
+      "authors": [
+        "D. Daniel Judson"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2003",
+      "category": "Best P.I. Paperback Original",
+      "position": "2003",
+      "result": "winner",
+      "title": "The Poisoned Rose"
+    },
+    {
+      "authors": [
+        "Paul Boray"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2003",
+      "category": "Best P.I. Paperback Original",
+      "position": "2003.01",
+      "result": "nominee",
+      "title": "Cash Out"
+    },
+    {
+      "authors": [
+        "Richard Helms"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2003",
+      "category": "Best P.I. Paperback Original",
+      "position": "2003.02",
+      "result": "nominee",
+      "title": "Juicy Watusi"
+    },
+    {
+      "authors": [
+        "Max Allan Collins"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2003",
+      "category": "Best P.I. Paperback Original",
+      "position": "2003.03",
+      "result": "nominee",
+      "title": "The Lusitania Murders"
+    },
+    {
+      "authors": [
+        "P.J. Parrish"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2003",
+      "category": "Best P.I. Paperback Original",
+      "position": "2003.04",
+      "result": "nominee",
+      "title": "Paint It Black"
+    },
+    {
+      "authors": [
+        "Andy Straka"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2004",
+      "category": "Best P.I. Paperback Original",
+      "position": "2004",
+      "result": "winner",
+      "title": "Cold Quarry"
+    },
+    {
+      "authors": [
+        "David Cole"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2004",
+      "category": "Best P.I. Paperback Original",
+      "position": "2004.01",
+      "result": "nominee",
+      "title": "Dragonfly Bones"
+    },
+    {
+      "authors": [
+        "Richard Helms"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2004",
+      "category": "Best P.I. Paperback Original",
+      "position": "2004.02",
+      "result": "nominee",
+      "title": "Wet Debt"
+    },
+    {
+      "authors": [
+        "P.J. Parrish"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2004",
+      "category": "Best P.I. Paperback Original",
+      "position": "2004.03",
+      "result": "nominee",
+      "title": "Thicker Than Water"
+    },
+    {
+      "authors": [
+        "Max Phillips"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2005",
+      "category": "Best P.I. Paperback Original",
+      "position": "2005",
+      "result": "winner",
+      "title": "Fade to Blonde"
+    },
+    {
+      "authors": [
+        "Sallie Bissell"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2005",
+      "category": "Best P.I. Paperback Original",
+      "position": "2005.01",
+      "result": "nominee",
+      "title": "Call the Devil by His Oldest Name"
+    },
+    {
+      "authors": [
+        "Jack Bludis"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2005",
+      "category": "Best P.I. Paperback Original",
+      "position": "2005.02",
+      "result": "nominee",
+      "title": "Shadow of the Dahlia"
+    },
+    {
+      "authors": [
+        "Max Allan Collins"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2005",
+      "category": "Best P.I. Paperback Original",
+      "position": "2005.03",
+      "result": "nominee",
+      "title": "The London Blitz Murders"
+    },
+    {
+      "authors": [
+        "P.J. Parrish"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2005",
+      "category": "Best P.I. Paperback Original",
+      "position": "2005.04",
+      "result": "nominee",
+      "title": "Island of Bones"
+    },
+    {
+      "authors": [
+        "Reed Farrell Coleman"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2006",
+      "category": "Best P.I. Paperback Original",
+      "position": "2006",
+      "result": "winner",
+      "title": "The James Deans"
+    },
+    {
+      "authors": [
+        "David Cole"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2006",
+      "category": "Best P.I. Paperback Original",
+      "position": "2006.01",
+      "result": "nominee",
+      "title": "Falling Down"
+    },
+    {
+      "authors": [
+        "Joel Goldman"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2006",
+      "category": "Best P.I. Paperback Original",
+      "position": "2006.02",
+      "result": "nominee",
+      "title": "Deadlocked"
+    },
+    {
+      "authors": [
+        "Richard Helms"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2006",
+      "category": "Best P.I. Paperback Original",
+      "position": "2006.03",
+      "result": "nominee",
+      "title": "Cordite Wine"
+    },
+    {
+      "authors": [
+        "P.J. Parrish"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2006",
+      "category": "Best P.I. Paperback Original",
+      "position": "2006.04",
+      "result": "nominee",
+      "title": "A Killing Rain"
+    },
+    {
+      "authors": [
+        "P.J. Parrish"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2007",
+      "category": "Best P.I. Paperback Original",
+      "position": "2007",
+      "result": "winner",
+      "title": "An Unquiet Grave"
+    },
+    {
+      "authors": [
+        "Lori G. Armstrong"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2007",
+      "category": "Best P.I. Paperback Original",
+      "position": "2007.01",
+      "result": "nominee",
+      "title": "Hallowed Ground"
+    },
+    {
+      "authors": [
+        "Pete Hautman"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2007",
+      "category": "Best P.I. Paperback Original",
+      "position": "2007.02",
+      "result": "nominee",
+      "title": "The Prop"
+    },
+    {
+      "authors": [
+        "Paco Ignacio Taibo II",
+        "Subcomandante Marcos"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2007",
+      "category": "Best P.I. Paperback Original",
+      "position": "2007.03",
+      "result": "nominee",
+      "title": "The Uncomfortable Dead"
+    },
+    {
+      "authors": [
+        "Brian M. Wiprud"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2007",
+      "category": "Best P.I. Paperback Original",
+      "position": "2007.04",
+      "result": "nominee",
+      "title": "Crooked"
+    },
+    {
+      "authors": [
+        "Richard Aleas"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2008",
+      "category": "Best P.I. Paperback Original",
+      "position": "2008",
+      "result": "winner",
+      "title": "Songs of Innocence"
+    },
+    {
+      "authors": [
+        "Kelley Armstrong"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2008",
+      "category": "Best P.I. Paperback Original",
+      "position": "2008.01",
+      "result": "nominee",
+      "title": "Exit Strategy"
+    },
+    {
+      "authors": [
+        "Linwood Barclay"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2008",
+      "category": "Best P.I. Paperback Original",
+      "position": "2008.02",
+      "result": "nominee",
+      "title": "Stone Rain"
+    },
+    {
+      "authors": [
+        "Max Allan Collins"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2008",
+      "category": "Best P.I. Paperback Original",
+      "position": "2008.03",
+      "result": "nominee",
+      "title": "Deadly Beloved"
+    },
+    {
+      "authors": [
+        "David Corbett"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2008",
+      "category": "Best P.I. Paperback Original",
+      "position": "2008.04",
+      "result": "nominee",
+      "title": "Blood of Paradise"
+    },
+    {
+      "authors": [
+        "Lori Armstrong"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2009",
+      "category": "Best P.I. Paperback Original",
+      "position": "2009",
+      "result": "winner",
+      "title": "Snow Blind"
+    },
+    {
+      "authors": [
+        "Karen Olson"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2009",
+      "category": "Best P.I. Paperback Original",
+      "position": "2009.01",
+      "result": "nominee",
+      "title": "Shot Girl"
+    },
+    {
+      "authors": [
+        "Jason Pinter"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2009",
+      "category": "Best P.I. Paperback Original",
+      "position": "2009.02",
+      "result": "nominee",
+      "title": "The Stolen"
+    },
+    {
+      "authors": [
+        "Will Thomas"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2009",
+      "category": "Best P.I. Paperback Original",
+      "position": "2009.03",
+      "result": "nominee",
+      "title": "The Black Hand"
+    },
+    {
+      "authors": [
+        "Dave White"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2009",
+      "category": "Best P.I. Paperback Original",
+      "position": "2009.04",
+      "result": "nominee",
+      "title": "The Evil That Men Do"
+    },
+    {
+      "authors": [
+        "Ira Berkowitz"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2010",
+      "category": "Best P.I. Paperback Original",
+      "position": "2010",
+      "result": "winner",
+      "title": "Sinner\u2019s Ball"
+    },
+    {
+      "authors": [
+        "Raymond Benson"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2010",
+      "category": "Best P.I. Paperback Original",
+      "position": "2010.01",
+      "result": "nominee",
+      "title": "Dark Side of the Morgue"
+    },
+    {
+      "authors": [
+        "Laura Caldwell"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2010",
+      "category": "Best P.I. Paperback Original",
+      "position": "2010.02",
+      "result": "nominee",
+      "title": "Red Blooded Murder"
+    },
+    {
+      "authors": [
+        "Rick Mofina"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2010",
+      "category": "Best P.I. Paperback Original",
+      "position": "2010.03",
+      "result": "nominee",
+      "title": "Vengeance Road"
+    },
+    {
+      "authors": [
+        "Marc Strange"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2010",
+      "category": "Best P.I. Paperback Original",
+      "position": "2010.04",
+      "result": "nominee",
+      "title": "Body Blows"
+    },
+    {
+      "authors": [
+        "Christopher G. Moore"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2011",
+      "category": "Best P.I. Paperback Original",
+      "position": "2011",
+      "result": "winner",
+      "title": "Asia Hand"
+    },
+    {
+      "authors": [
+        "John Gilstrap"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2011",
+      "category": "Best P.I. Paperback Original",
+      "position": "2011.01",
+      "result": "nominee",
+      "title": "Hostage Zero"
+    },
+    {
+      "authors": [
+        "Tom Henighan"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2011",
+      "category": "Best P.I. Paperback Original",
+      "position": "2011.02",
+      "result": "nominee",
+      "title": "Nightshade"
+    },
+    {
+      "authors": [
+        "John Lutz"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2011",
+      "category": "Best P.I. Paperback Original",
+      "position": "2011.03",
+      "result": "nominee",
+      "title": "Mister X"
+    },
+    {
+      "authors": [
+        "Rick Mofina"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2011",
+      "category": "Best P.I. Paperback Original",
+      "position": "2011.04",
+      "result": "nominee",
+      "title": "The Panic Zone"
+    },
+    {
+      "authors": [
+        "P.J. Parrish"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2011",
+      "category": "Best P.I. Paperback Original",
+      "position": "2011.05",
+      "result": "nominee",
+      "title": "The Little Death"
+    },
+    {
+      "authors": [
+        "Duane Swiercyzinski"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2012",
+      "category": "Best P.I. Paperback Original",
+      "position": "2012",
+      "result": "winner",
+      "title": "Fun & Games"
+    },
+    {
+      "authors": [
+        "Max Allan Collins"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2012",
+      "category": "Best P.I. Paperback Original",
+      "position": "2012.01",
+      "result": "nominee",
+      "title": "Quarry\u2019s Ex"
+    },
+    {
+      "authors": [
+        "John Gilstrap"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2012",
+      "category": "Best P.I. Paperback Original",
+      "position": "2012.02",
+      "result": "nominee",
+      "title": "Threat Warning"
+    },
+    {
+      "authors": [
+        "John Lutz"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2012",
+      "category": "Best P.I. Paperback Original",
+      "position": "2012.03",
+      "result": "nominee",
+      "title": "Serial"
+    },
+    {
+      "authors": [
+        "James L. Ross"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2012",
+      "category": "Best P.I. Paperback Original",
+      "position": "2012.04",
+      "result": "nominee",
+      "title": "Long Pig"
+    },
+    {
+      "authors": [
+        "Alison Gaylin"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2013",
+      "category": "Best P.I. Paperback Original",
+      "position": "2013",
+      "result": "winner",
+      "title": "And She Was"
+    },
+    {
+      "authors": [
+        "Kevin J. Anderson"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2013",
+      "category": "Best P.I. Paperback Original",
+      "position": "2013.01",
+      "result": "nominee",
+      "title": "Death Warmed Over"
+    },
+    {
+      "authors": [
+        "Robert Goldsborough"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2013",
+      "category": "Best P.I. Paperback Original",
+      "position": "2013.02",
+      "result": "nominee",
+      "title": "Archie Meets Nero Wolfe"
+    },
+    {
+      "authors": [
+        "Joseph Koenig"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2013",
+      "category": "Best P.I. Paperback Original",
+      "position": "2013.03",
+      "result": "nominee",
+      "title": "False Negative"
+    },
+    {
+      "authors": [
+        "John Lutz"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2013",
+      "category": "Best P.I. Paperback Original",
+      "position": "2013.04",
+      "result": "nominee",
+      "title": "Pulse"
+    },
+    {
+      "authors": [
+        "P.J. Parrish"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2014",
+      "category": "Best P.I. Paperback Original",
+      "position": "2014",
+      "result": "winner",
+      "title": "Heart of Ice"
+    },
+    {
+      "authors": [
+        "Max Allan Collins"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2014",
+      "category": "Best P.I. Paperback Original",
+      "position": "2014.01",
+      "result": "nominee",
+      "title": "Seduction of the Innocent"
+    },
+    {
+      "authors": [
+        "Alison Gaylin"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2014",
+      "category": "Best P.I. Paperback Original",
+      "position": "2014.02",
+      "result": "nominee",
+      "title": "Into the Dark"
+    },
+    {
+      "authors": [
+        "Darrell James"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2014",
+      "category": "Best P.I. Paperback Original",
+      "position": "2014.03",
+      "result": "nominee",
+      "title": "Purgatory Key"
+    },
+    {
+      "authors": [
+        "Robert J. Randisi"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2014",
+      "category": "Best P.I. Paperback Original",
+      "position": "2014.04",
+      "result": "nominee",
+      "title": "The Honky Tonk Big Hoss Boogie"
+    },
+    {
+      "authors": [
+        "Vincent Zandri"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2015",
+      "category": "Best P.I. Paperback Original",
+      "position": "2015",
+      "result": "winner",
+      "title": "Moonlight Weeps"
+    },
+    {
+      "authors": [
+        "Michael Craven"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2015",
+      "category": "Best P.I. Paperback Original",
+      "position": "2015.01",
+      "result": "nominee",
+      "title": "The Detective & the Pipe Girl"
+    },
+    {
+      "authors": [
+        "M.C. Grant"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2015",
+      "category": "Best P.I. Paperback Original",
+      "position": "2015.02",
+      "result": "nominee",
+      "title": "Beauty with a Bomb"
+    },
+    {
+      "authors": [
+        "Robert K. Lewis"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2015",
+      "category": "Best P.I. Paperback Original",
+      "position": "2015.03",
+      "result": "nominee",
+      "title": "Critical Damage"
+    },
+    {
+      "authors": [
+        "Kris Nelscott"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2015",
+      "category": "Best P.I. Paperback Original",
+      "position": "2015.04",
+      "result": "nominee",
+      "title": "Street Justice"
+    },
+    {
+      "authors": [
+        "J.L. Abramo"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2016",
+      "category": "Best P.I. Paperback Original",
+      "position": "2016",
+      "result": "winner",
+      "title": "Circling the Runway"
+    },
+    {
+      "authors": [
+        "O\u2019Neil De Noux"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2016",
+      "category": "Best P.I. Paperback Original",
+      "position": "2016.01",
+      "result": "nominee",
+      "title": "The Long Cold"
+    },
+    {
+      "authors": [
+        "Max Everhart"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2016",
+      "category": "Best P.I. Paperback Original",
+      "position": "2016.02",
+      "result": "nominee",
+      "title": "Split to Splinters"
+    },
+    {
+      "authors": [
+        "Dana King"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2016",
+      "category": "Best P.I. Paperback Original",
+      "position": "2016.03",
+      "result": "nominee",
+      "title": "The Man in the Window"
+    },
+    {
+      "authors": [
+        "Clive Rosengren"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2016",
+      "category": "Best P.I. Paperback Original",
+      "position": "2016.04",
+      "result": "nominee",
+      "title": "Red Desert"
+    },
+    {
+      "authors": [
+        "Rich Zahradnik"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2018",
+      "category": "Best P.I. Paperback Original",
+      "position": "2018",
+      "result": "winner",
+      "title": "Lights Out Summer"
+    },
+    {
+      "authors": [
+        "Terence Faherty"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2018",
+      "category": "Best P.I. Paperback Original",
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "Play a Cold Hand"
+    },
+    {
+      "authors": [
+        "Vaseem Khan"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2018",
+      "category": "Best P.I. Paperback Original",
+      "position": "2018.02",
+      "result": "nominee",
+      "title": "The Strange Disappearance of a Bollywood Star"
+    },
+    {
+      "authors": [
+        "M. Ruth Myers"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2018",
+      "category": "Best P.I. Paperback Original",
+      "position": "2018.03",
+      "result": "nominee",
+      "title": "Dames Fight Harder"
+    },
+    {
+      "authors": [
+        "Bradley Spinelli"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2018",
+      "category": "Best P.I. Paperback Original",
+      "position": "2018.04",
+      "result": "nominee",
+      "title": "The Painted Gun"
+    },
+    {
+      "authors": [
+        "Max Wirestone"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2019",
+      "category": "Best P.I. Paperback Original",
+      "position": "2019",
+      "result": "winner",
+      "title": "The Questionable Behavior of Dahlia Moss"
+    },
+    {
+      "authors": [
+        "James D. F. Hannah"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2019",
+      "category": "Best P.I. Paperback Original",
+      "position": "2019.01",
+      "result": "nominee",
+      "title": "She Talks to Angels"
+    },
+    {
+      "authors": [
+        "John Jantunen"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2019",
+      "category": "Best P.I. Paperback Original",
+      "position": "2019.02",
+      "result": "nominee",
+      "title": "No Quarter"
+    },
+    {
+      "authors": [
+        "Paul Kemprecos"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2019",
+      "category": "Best P.I. Paperback Original",
+      "position": "2019.03",
+      "result": "nominee",
+      "title": "Shark Bait"
+    },
+    {
+      "authors": [
+        "Charles Salzberg"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2019",
+      "category": "Best P.I. Paperback Original",
+      "position": "2019.04",
+      "result": "nominee",
+      "title": "Second Story Man"
+    },
+    {
+      "authors": [
+        "James D.F. Hannah"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2020",
+      "category": "Best P.I. Paperback Original",
+      "position": "2020",
+      "result": "winner",
+      "title": "Behind the Wall of Sleep"
+    },
+    {
+      "authors": [
+        "J.D. Allen"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2020",
+      "category": "Best P.I. Paperback Original",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "The Skin Game"
+    },
+    {
+      "authors": [
+        "Richard Helms"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2020",
+      "category": "Best P.I. Paperback Original",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "Paid in Spades"
+    },
+    {
+      "authors": [
+        "M. Ruth Myers"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2020",
+      "category": "Best P.I. Paperback Original",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "Ration of Lies"
+    },
+    {
+      "authors": [
+        "Lisa Sandlin"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2020",
+      "category": "Best P.I. Paperback Original",
+      "position": "2020.04",
+      "result": "nominee",
+      "title": "The Bird Boys"
+    },
+    {
+      "authors": [
+        "Richard Helms"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2021",
+      "category": "Best P.I. Paperback Original",
+      "position": "2021",
+      "result": "winner",
+      "title": "Brittle Karma"
+    },
+    {
+      "authors": [
+        "Grant Bywaters"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2021",
+      "category": "Best P.I. Paperback Original",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "Farewell Las Vegas"
+    },
+    {
+      "authors": [
+        "Ralph Dennis"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2021",
+      "category": "Best P.I. Paperback Original",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "All Kinds of Ugly"
+    },
+    {
+      "authors": [
+        "John Lantigua"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2021",
+      "category": "Best P.I. Paperback Original",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "Remember My Face"
+    },
+    {
+      "authors": [
+        "Debbi Mack"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2021",
+      "category": "Best P.I. Paperback Original",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "Damaged Goods"
+    },
+    {
+      "authors": [
+        "John McFetridge"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2022",
+      "category": "Best P.I. Paperback Original",
+      "position": "2022",
+      "result": "winner",
+      "title": "Every City is Every Other City"
+    },
+    {
+      "authors": [
+        "John Nardizzi"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2022",
+      "category": "Best P.I. Paperback Original",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "The Burden of Innocence"
+    },
+    {
+      "authors": [
+        "Manuel Ramos"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2022",
+      "category": "Best P.I. Paperback Original",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "Angels in the Wind"
+    },
+    {
+      "authors": [
+        "Clive Rosengren"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2022",
+      "category": "Best P.I. Paperback Original",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "Frog in a Bucket"
+    },
+    {
+      "authors": [
+        "Andrew Welsh-Huggins"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2022",
+      "category": "Best P.I. Paperback Original",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "An Empty Grave"
+    },
+    {
+      "authors": [
+        "J.R. Sanders"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2023",
+      "category": "Best P.I. Paperback Original",
+      "position": "2023",
+      "result": "winner",
+      "title": "Dead-Bang Fall"
+    },
+    {
+      "authors": [
+        "Max Allan Collins"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2023",
+      "category": "Best P.I. Paperback Original",
+      "position": "2023.01",
+      "result": "nominee",
+      "title": "Quarry\u2019s Blood"
+    },
+    {
+      "authors": [
+        "Libby Fischer Hellmann"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2023",
+      "category": "Best P.I. Paperback Original",
+      "position": "2023.02",
+      "result": "nominee",
+      "title": "DoubleBlind"
+    },
+    {
+      "authors": [
+        "Charles Salzberg"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2023",
+      "category": "Best P.I. Paperback Original",
+      "position": "2023.03",
+      "result": "nominee",
+      "title": "Canary in the Coal Mine"
+    },
+    {
+      "authors": [
+        "Gabriel Valjan"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2023",
+      "category": "Best P.I. Paperback Original",
+      "position": "2023.04",
+      "result": "nominee",
+      "title": "Hush Hush"
+    },
+    {
+      "authors": [
+        "Gabriel Valjan"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2024",
+      "category": "Best P.I. Paperback Original",
+      "position": "2024",
+      "result": "winner",
+      "title": "Liar\u2019s Dice"
+    },
+    {
+      "authors": [
+        "Jonathan J. Brown"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2024",
+      "category": "Best P.I. Paperback Original",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "Drums Guns \u2019N\u2019 Money"
+    },
+    {
+      "authors": [
+        "Corey Lynn Fayman"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2024",
+      "category": "Best P.I. Paperback Original",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "Gillespie Field Groove"
+    },
+    {
+      "authors": [
+        "Liz Milliron"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2024",
+      "category": "Best P.I. Paperback Original",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "The Truth We Hide"
+    },
+    {
+      "authors": [
+        "J.R. Sanders"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2024",
+      "category": "Best P.I. Paperback Original",
+      "position": "2024.04",
+      "result": "nominee",
+      "title": "Bring the Night"
+    },
+    {
+      "authors": [
+        "J.T. Siemens"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2025",
+      "category": "Best P.I. Paperback Original",
+      "position": "2025",
+      "result": "winner",
+      "title": "Call of the Void"
+    },
+    {
+      "authors": [
+        "Mark Coggins"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2025",
+      "category": "Best P.I. Paperback Original",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "Geisha Confidential"
+    },
+    {
+      "authors": [
+        "Max Allan Collins"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2025",
+      "category": "Best P.I. Paperback Original",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "Quarry\u2019s Return"
+    },
+    {
+      "authors": [
+        "Teel James Glenn"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2025",
+      "category": "Best P.I. Paperback Original",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "Not Born of Woman"
+    },
+    {
+      "authors": [
+        "Neil S. Plakcy"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2025",
+      "category": "Best P.I. Paperback Original",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "Bless Our Sleep"
+    },
+    {
+      "authors": [
+        "Gabriel Valjan"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2025",
+      "category": "Best P.I. Paperback Original",
+      "position": "2025.05",
+      "result": "nominee",
+      "title": "The Big Lie"
+    },
+    {
+      "authors": [
+        "Raymond Benson"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2026",
+      "category": "Best P.I. Paperback Original",
+      "position": "2026.01",
+      "result": "nominee",
+      "title": "The Hook and the Eye"
+    },
+    {
+      "authors": [
+        "Cindy Fazzi"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2026",
+      "category": "Best P.I. Paperback Original",
+      "position": "2026.02",
+      "result": "nominee",
+      "title": "Sunday or the Highway"
+    },
+    {
+      "authors": [
+        "Claire M. Johnson"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2026",
+      "category": "Best P.I. Paperback Original",
+      "position": "2026.03",
+      "result": "nominee",
+      "title": "City Lights"
+    },
+    {
+      "authors": [
+        "Phil Lecomber"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2026",
+      "category": "Best P.I. Paperback Original",
+      "position": "2026.04",
+      "result": "nominee",
+      "title": "Midnight Streets"
+    },
+    {
+      "authors": [
+        "M.E. Proctor"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2026",
+      "category": "Best P.I. Paperback Original",
+      "position": "2026.05",
+      "result": "nominee",
+      "title": "Catch Me on a Blue Day"
+    }
+  ],
+  "fetched_at": "2026-11-16T01:08:56Z",
+  "list_id": "shamus_award_paperback_original",
+  "list_name": "Shamus Award - Paperback Original",
+  "match_series": false,
+  "notes": [],
+  "parser": "shamus_award_paperback_original",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Shamus Award - Paperback Original",
+    "source_id": "shamus_award_paperback_original",
+    "url": "https://www.stopyourekillingme.com/Awards/Shamus_Awards.html"
+  }
+}

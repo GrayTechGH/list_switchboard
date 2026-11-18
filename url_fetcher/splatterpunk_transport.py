@@ -1,4 +1,4 @@
-"""Per-request browser recovery for Splatterpunk Goodreads award pages only.
+"""Separate browser recovery for Splatterpunk REST and Goodreads award pages.
 
 Invariants:
 - Structural/identity checks are page-local; accepted record sets detect stale
@@ -10,9 +10,11 @@ Invariants:
 import time
 
 try:
-  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxSkippedError
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxSkippedError, CamoufoxRequiredError
+  from calibre_plugins.list_switchboard.parser.splatterpunk import OFFICIAL_AWARDS_API_URL,OFFICIAL_PAST_WINNERS_API_URL
 except ImportError:
-  from errors import ImportCancelledError, CamoufoxSkippedError
+  from errors import ImportCancelledError, CamoufoxSkippedError, CamoufoxRequiredError
+  from parser.splatterpunk import OFFICIAL_AWARDS_API_URL,OFFICIAL_PAST_WINNERS_API_URL
 
 
 class SplatterpunkFetchPolicy:
@@ -52,7 +54,7 @@ class SplatterpunkFetchPolicy:
           f'Splatterpunk Goodreads role={role} transport=Camoufox accepted '
           f'seconds={time.monotonic() - started:.1f}')
         return html
-      except ImportCancelledError:
+      except (ImportCancelledError,CamoufoxRequiredError):
         raise
       except Exception as err:
         self.browser_disabled = True
@@ -70,7 +72,7 @@ class SplatterpunkFetchPolicy:
     try:
       html = self.legacy_fetch(url)
       self.validate(html, url)
-    except ImportCancelledError:
+    except (ImportCancelledError,CamoufoxRequiredError):
       raise
     except Exception as err:
       self.report(
@@ -88,3 +90,34 @@ class SplatterpunkFetchPolicy:
     if any(key != page and value == records for key, value in self.page_records.items()):
       raise ValueError('Splatterpunk Goodreads returned repeated work records for another page.')
     self.page_records[page] = records
+
+
+class SplatterpunkOfficialFetchPolicy:
+  """Keep KillerCon REST identity validation separate from Goodreads paging."""
+
+  def __init__(self,fetch_url,legacy_fetch,parser,log=None):
+    self.fetch_url,self.legacy_fetch,self.parser,self.log=fetch_url,legacy_fetch,parser,log
+    self.owner=getattr(fetch_url,'__self__',None)
+    self.browser_disabled=False
+
+  def fetch(self,url):
+    if url not in (OFFICIAL_AWARDS_API_URL,OFFICIAL_PAST_WINNERS_API_URL):
+      return self.legacy_fetch(url)
+    role='past winners' if url==OFFICIAL_PAST_WINNERS_API_URL else 'current nominees'
+    if not self.browser_disabled:
+      try:
+        try:html=self.fetch_url(url,transport='camoufox',timeout=60)
+        except TypeError as err:
+          if 'transport' not in str(err) and 'keyword' not in str(err):raise
+          raise CamoufoxSkippedError('Fetch callback does not support Camoufox.') from err
+        self.parser.validate_official_api_source(html,role)
+        return html
+      except (ImportCancelledError,CamoufoxRequiredError):raise
+      except Exception as err:
+        self.browser_disabled=True
+        if self.log is not None:self.log(f'KillerCon browser recovery: {err}; using legacy fetching.')
+        reject=getattr(self.owner,'reject_camoufox_payload',None)
+        if reject is not None and not isinstance(err,CamoufoxSkippedError):reject(str(err))
+    html=self.legacy_fetch(url)
+    self.parser.validate_official_api_source(html,role)
+    return html

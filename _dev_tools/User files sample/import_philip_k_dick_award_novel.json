@@ -4329,12 +4329,13 @@
       "title": "Uncertain Sons and Other Stories"
     }
   ],
-  "fetched_at": "2026-07-11T00:48:00Z",
+  "fetched_at": "2026-11-15T00:13:13Z",
   "list_id": "philip_k_dick_award_novel",
   "list_name": "Philip K. Dick Award - Novel",
   "match_series": false,
   "notes": [],
   "parser": "philip_k_dick_award_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Philip K. Dick Award - Novel",

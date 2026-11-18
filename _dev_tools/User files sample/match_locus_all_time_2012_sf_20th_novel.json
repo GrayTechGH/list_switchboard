@@ -168,8 +168,58 @@
         }
       ],
       "matched_title": "Cordelia's Honor (Books 2-3)"
+    },
+    {
+      "entry_key": "dune|frank herbert",
+      "imported_author": [
+        "Frank Herbert"
+      ],
+      "imported_title": "Dune",
+      "matched_at": "2026-07-23T05:13:26Z",
+      "matched_authors": [
+        "Frank Herbert"
+      ],
+      "matched_book_id": 23621,
+      "matched_book_ids": [
+        23621
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Frank Herbert"
+          ],
+          "matched_book_id": 23621,
+          "matched_title": "Dune"
+        }
+      ],
+      "matched_title": "Dune"
+    },
+    {
+      "entry_key": "solaris|stanislaw lem",
+      "imported_author": [
+        "Stanislaw Lem"
+      ],
+      "imported_title": "Solaris",
+      "matched_at": "2026-07-23T05:18:58Z",
+      "matched_authors": [
+        "Stanis\u0142aw Lem"
+      ],
+      "matched_book_id": 16875,
+      "matched_book_ids": [
+        16875
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Stanis\u0142aw Lem"
+          ],
+          "matched_book_id": 16875,
+          "matched_title": "Solaris"
+        }
+      ],
+      "matched_title": "Solaris"
     }
   ],
-  "saved_at": "2026-07-11T00:43:12Z",
+  "saved_at": "2026-07-23T05:18:58Z",
   "schema_version": 2
 }

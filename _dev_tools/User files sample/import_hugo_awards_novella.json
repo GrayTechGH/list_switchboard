@@ -1,0 +1,4917 @@
+{
+  "append_state": {
+    "entry_count": 305,
+    "last_entry_key": "the brides of high hill|nghi vo",
+    "last_position": "2025.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Philip Jos\u00e9 Farmer"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1968",
+      "category": "Best Novella",
+      "position": "1968",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1968-hugo-awards/"
+      },
+      "title": "Riders of the Purple Wage"
+    },
+    {
+      "authors": [
+        "Anne McCaffrey"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1968",
+      "category": "Best Novella",
+      "position": "1968.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1968-hugo-awards/"
+      },
+      "title": "Weyr Search"
+    },
+    {
+      "authors": [
+        "Roger Zelazny"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1968",
+      "category": "Best Novella",
+      "position": "1968.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1968-hugo-awards/"
+      },
+      "title": "Damnation Alley"
+    },
+    {
+      "authors": [
+        "Samuel R. Delany"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1968",
+      "category": "Best Novella",
+      "position": "1968.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1968-hugo-awards/"
+      },
+      "title": "The Star Pit"
+    },
+    {
+      "authors": [
+        "Robert Silverberg"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1968",
+      "category": "Best Novella",
+      "position": "1968.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1968-hugo-awards/"
+      },
+      "title": "Hawksbill Station"
+    },
+    {
+      "authors": [
+        "Robert Silverberg"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1969",
+      "category": "Best Novella",
+      "position": "1969",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1969-hugo-awards/"
+      },
+      "title": "Nightwings"
+    },
+    {
+      "authors": [
+        "Anne McCaffrey"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1969",
+      "category": "Best Novella",
+      "position": "1969.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1969-hugo-awards/"
+      },
+      "title": "Dragonrider"
+    },
+    {
+      "authors": [
+        "Samuel R. Delany"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1969",
+      "category": "Best Novella",
+      "position": "1969.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1969-hugo-awards/"
+      },
+      "title": "Lines of Power"
+    },
+    {
+      "authors": [
+        "Dean McLaughlin"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1969",
+      "category": "Best Novella",
+      "position": "1969.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1969-hugo-awards/"
+      },
+      "title": "Hawk Among the Sparrows"
+    },
+    {
+      "authors": [
+        "Fritz Leiber"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1970",
+      "category": "Best Novella",
+      "position": "1970",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1970-hugo-awards/"
+      },
+      "title": "Ship of Shadows"
+    },
+    {
+      "authors": [
+        "Harlan Ellison"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1970",
+      "category": "Best Novella",
+      "position": "1970.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1970-hugo-awards/"
+      },
+      "title": "A Boy and His Dog"
+    },
+    {
+      "authors": [
+        "James Blish"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1970",
+      "category": "Best Novella",
+      "position": "1970.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1970-hugo-awards/"
+      },
+      "title": "We All Die Naked"
+    },
+    {
+      "authors": [
+        "Anne McCaffrey"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1970",
+      "category": "Best Novella",
+      "position": "1970.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1970-hugo-awards/"
+      },
+      "title": "Dramatic Mission"
+    },
+    {
+      "authors": [
+        "Robert Silverberg"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1970",
+      "category": "Best Novella",
+      "position": "1970.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1970-hugo-awards/"
+      },
+      "title": "To Jorslem"
+    },
+    {
+      "authors": [
+        "Fritz Leiber"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1971",
+      "category": "Best Novella",
+      "position": "1971",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1971-hugo-awards/"
+      },
+      "title": "Ill Met in Lankhmar"
+    },
+    {
+      "authors": [
+        "Clifford D. Simak"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1971",
+      "category": "Best Novella",
+      "position": "1971.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1971-hugo-awards/"
+      },
+      "title": "The Thing in the Stone"
+    },
+    {
+      "authors": [
+        "Harlan Ellison"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1971",
+      "category": "Best Novella",
+      "position": "1971.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1971-hugo-awards/"
+      },
+      "title": "The Region Between"
+    },
+    {
+      "authors": [
+        "Robert Silverberg"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1971",
+      "category": "Best Novella",
+      "position": "1971.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1971-hugo-awards/"
+      },
+      "title": "The World Outside"
+    },
+    {
+      "authors": [
+        "Dean R. Koontz"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1971",
+      "category": "Best Novella",
+      "position": "1971.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1971-hugo-awards/"
+      },
+      "title": "Beastchild"
+    },
+    {
+      "authors": [
+        "Poul Anderson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1972",
+      "category": "Best Novella",
+      "position": "1972",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1972-hugo-awards/"
+      },
+      "title": "The Queen of Air and Darkness"
+    },
+    {
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1972",
+      "category": "Best Novella",
+      "position": "1972.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1972-hugo-awards/"
+      },
+      "title": "A Meeting with Medusa"
+    },
+    {
+      "authors": [
+        "Larry Niven"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1972",
+      "category": "Best Novella",
+      "position": "1972.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1972-hugo-awards/"
+      },
+      "title": "The Fourth Profession"
+    },
+    {
+      "authors": [
+        "John Brunner"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1972",
+      "category": "Best Novella",
+      "position": "1972.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1972-hugo-awards/"
+      },
+      "title": "Dread Empire"
+    },
+    {
+      "authors": [
+        "Gardner R. Dozois"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1972",
+      "category": "Best Novella",
+      "position": "1972.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1972-hugo-awards/"
+      },
+      "title": "A Special Kind of Morning"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1973",
+      "category": "Best Novella",
+      "position": "1973",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1973-hugo-awards/"
+      },
+      "title": "The Word for World is Forest"
+    },
+    {
+      "authors": [
+        "Frederik Pohl"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1973",
+      "category": "Best Novella",
+      "position": "1973.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1973-hugo-awards/"
+      },
+      "title": "The Gold at the Starbow\u2019s End"
+    },
+    {
+      "authors": [
+        "Gene Wolfe"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1973",
+      "category": "Best Novella",
+      "position": "1973.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1973-hugo-awards/"
+      },
+      "title": "The Fifth Head of Cerberus"
+    },
+    {
+      "authors": [
+        "Joe Haldeman"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1973",
+      "category": "Best Novella",
+      "position": "1973.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1973-hugo-awards/"
+      },
+      "title": "Hero"
+    },
+    {
+      "authors": [
+        "Jerry Pournelle"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1973",
+      "category": "Best Novella",
+      "position": "1973.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1973-hugo-awards/"
+      },
+      "title": "The Mercenary"
+    },
+    {
+      "authors": [
+        "James Tiptree, Jr."
+      ],
+      "award": "Hugo Award",
+      "award_year": "1974",
+      "category": "Best Novella",
+      "position": "1974",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1974-hugo-awards/"
+      },
+      "title": "The Girl Who Was Plugged In"
+    },
+    {
+      "authors": [
+        "Gene Wolfe"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1974",
+      "category": "Best Novella",
+      "position": "1974.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1974-hugo-awards/"
+      },
+      "title": "The Death of Doctor Island"
+    },
+    {
+      "authors": [
+        "Michael Bishop"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1974",
+      "category": "Best Novella",
+      "position": "1974.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1974-hugo-awards/"
+      },
+      "title": "Death and Designation Among the Asadi"
+    },
+    {
+      "authors": [
+        "Michael Bishop"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1974",
+      "category": "Best Novella",
+      "position": "1974.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1974-hugo-awards/"
+      },
+      "title": "The White Otters of Childhood"
+    },
+    {
+      "authors": [
+        "Gardner Dozois"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1974",
+      "category": "Best Novella",
+      "position": "1974.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1974-hugo-awards/"
+      },
+      "title": "Chains of the Sea"
+    },
+    {
+      "authors": [
+        "George R. R. Martin"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1975",
+      "category": "Best Novella",
+      "position": "1975",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1975-hugo-awards/"
+      },
+      "title": "A Song for Lya"
+    },
+    {
+      "authors": [
+        "Gardner Dozois"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1975",
+      "category": "Best Novella",
+      "position": "1975.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1975-hugo-awards/"
+      },
+      "title": "Strangers"
+    },
+    {
+      "authors": [
+        "Robert Silverberg"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1975",
+      "category": "Best Novella",
+      "position": "1975.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1975-hugo-awards/"
+      },
+      "title": "Born with the Dead"
+    },
+    {
+      "authors": [
+        "Norman Spinrad"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1975",
+      "category": "Best Novella",
+      "position": "1975.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1975-hugo-awards/"
+      },
+      "title": "Riding the Torch"
+    },
+    {
+      "authors": [
+        "Jack Vance"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1975",
+      "category": "Best Novella",
+      "position": "1975.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1975-hugo-awards/"
+      },
+      "title": "Assault on a City"
+    },
+    {
+      "authors": [
+        "Roger Zelazny"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1976",
+      "category": "Best Novella",
+      "position": "1976",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1976-hugo-awards/"
+      },
+      "title": "Home Is the Hangman"
+    },
+    {
+      "authors": [
+        "George R. R. Martin",
+        "Lisa Tuttle"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1976",
+      "category": "Best Novella",
+      "position": "1976.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1976-hugo-awards/"
+      },
+      "title": "The Storms of Windhaven"
+    },
+    {
+      "authors": [
+        "Larry Niven"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1976",
+      "category": "Best Novella",
+      "position": "1976.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1976-hugo-awards/"
+      },
+      "title": "ARM"
+    },
+    {
+      "authors": [
+        "Algis Budrys"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1976",
+      "category": "Best Novella",
+      "position": "1976.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1976-hugo-awards/"
+      },
+      "title": "The Silent Eyes of Time"
+    },
+    {
+      "authors": [
+        "Richard Cowper"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1976",
+      "category": "Best Novella",
+      "position": "1976.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1976-hugo-awards/"
+      },
+      "title": "The Custodians"
+    },
+    {
+      "authors": [
+        "Spider Robinson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1977",
+      "category": "Best Novella",
+      "position": "1977",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1977-hugo-awards/"
+      },
+      "title": "By Any Other Name"
+    },
+    {
+      "authors": [
+        "James Tiptree, Jr."
+      ],
+      "award": "Hugo Award",
+      "award_year": "1977",
+      "category": "Best Novella",
+      "position": "1977.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1977-hugo-awards/"
+      },
+      "title": "Houston, Houston, Do You Read?"
+    },
+    {
+      "authors": [
+        "Michael Bishop"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1977",
+      "category": "Best Novella",
+      "position": "1977.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1977-hugo-awards/"
+      },
+      "title": "The Samurai and the Willows"
+    },
+    {
+      "authors": [
+        "Richard Cowper"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1977",
+      "category": "Best Novella",
+      "position": "1977.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1977-hugo-awards/"
+      },
+      "title": "Piper at the Gates of Dawn"
+    },
+    {
+      "authors": [
+        "Spider Robinson",
+        "Jeanne Robinson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1978",
+      "category": "Best Novella",
+      "position": "1978",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1978-hugo-awards/"
+      },
+      "title": "Stardance"
+    },
+    {
+      "authors": [
+        "John Varley"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1978",
+      "category": "Best Novella",
+      "position": "1978.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1978-hugo-awards/"
+      },
+      "title": "In the Hall of the Martian Kings"
+    },
+    {
+      "authors": [
+        "Vonda N. McIntyre"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1978",
+      "category": "Best Novella",
+      "position": "1978.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1978-hugo-awards/"
+      },
+      "title": "Aztecs"
+    },
+    {
+      "authors": [
+        "Gregory Benford"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1978",
+      "category": "Best Novella",
+      "position": "1978.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1978-hugo-awards/"
+      },
+      "title": "A Snark in the Night"
+    },
+    {
+      "authors": [
+        "Keith Laumer"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1978",
+      "category": "Best Novella",
+      "position": "1978.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1978-hugo-awards/"
+      },
+      "title": "The Wonderful Secret"
+    },
+    {
+      "authors": [
+        "John Varley"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1979",
+      "category": "Best Novella",
+      "position": "1979",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1979-hugo-awards/"
+      },
+      "title": "The Persistence of Vision"
+    },
+    {
+      "authors": [
+        "Joan D. Vinge"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1979",
+      "category": "Best Novella",
+      "position": "1979.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1979-hugo-awards/"
+      },
+      "title": "Fireship"
+    },
+    {
+      "authors": [
+        "Christopher Priest"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1979",
+      "category": "Best Novella",
+      "position": "1979.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1979-hugo-awards/"
+      },
+      "title": "The Watched"
+    },
+    {
+      "authors": [
+        "Brian W. Aldiss"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1979",
+      "category": "Best Novella",
+      "position": "1979.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1979-hugo-awards/"
+      },
+      "title": "Enemies of the System"
+    },
+    {
+      "authors": [
+        "Gene Wolfe"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1979",
+      "category": "Best Novella",
+      "position": "1979.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1979-hugo-awards/"
+      },
+      "title": "Seven American Nights"
+    },
+    {
+      "authors": [
+        "Barry B. Longyear"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1980",
+      "category": "Best Novella",
+      "position": "1980",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1980-hugo-awards/"
+      },
+      "title": "Enemy Mine"
+    },
+    {
+      "authors": [
+        "Orson Scott Card"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1980",
+      "category": "Best Novella",
+      "position": "1980.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1980-hugo-awards/"
+      },
+      "title": "Songhouse"
+    },
+    {
+      "authors": [
+        "Donald Kingsbury"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1980",
+      "category": "Best Novella",
+      "position": "1980.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1980-hugo-awards/"
+      },
+      "title": "The Moon Goddess and the Son"
+    },
+    {
+      "authors": [
+        "Ted Reynolds"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1980",
+      "category": "Best Novella",
+      "position": "1980.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1980-hugo-awards/"
+      },
+      "title": "Ker-Plop"
+    },
+    {
+      "authors": [
+        "Hilbert Schenck"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1980",
+      "category": "Best Novella",
+      "position": "1980.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1980-hugo-awards/"
+      },
+      "title": "The Battle of the Abaco Reefs"
+    },
+    {
+      "authors": [
+        "Gordon R. Dickson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1981",
+      "category": "Best Novella",
+      "position": "1981",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1981-hugo-awards/"
+      },
+      "title": "Lost Dorsai"
+    },
+    {
+      "authors": [
+        "George R. R. Martin",
+        "Lisa Tuttle"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1981",
+      "category": "Best Novella",
+      "position": "1981.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1981-hugo-awards/"
+      },
+      "title": "One-Wing"
+    },
+    {
+      "authors": [
+        "George R. R. Martin"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1981",
+      "category": "Best Novella",
+      "position": "1981.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1981-hugo-awards/"
+      },
+      "title": "Nightflyers"
+    },
+    {
+      "authors": [
+        "Thomas M. Disch"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1981",
+      "category": "Best Novella",
+      "position": "1981.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1981-hugo-awards/"
+      },
+      "title": "The Brave Little Toaster"
+    },
+    {
+      "authors": [
+        "Harlan Ellison"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1981",
+      "category": "Best Novella",
+      "position": "1981.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1981-hugo-awards/"
+      },
+      "title": "All the Lies That Are My Life"
+    },
+    {
+      "authors": [
+        "Poul Anderson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1982",
+      "category": "Best Novella",
+      "position": "1982",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1982-hugo-awards/"
+      },
+      "title": "The Saturn Game"
+    },
+    {
+      "authors": [
+        "Phyllis Eisenstein"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1982",
+      "category": "Best Novella",
+      "position": "1982.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1982-hugo-awards/"
+      },
+      "title": "In the Western Tradition"
+    },
+    {
+      "authors": [
+        "John Varley"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1982",
+      "category": "Best Novella",
+      "position": "1982.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1982-hugo-awards/"
+      },
+      "title": "Blue Champagne"
+    },
+    {
+      "authors": [
+        "Kate Wilhelm"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1982",
+      "category": "Best Novella",
+      "position": "1982.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1982-hugo-awards/"
+      },
+      "title": "With Thimbles, with Forks, and Hope"
+    },
+    {
+      "authors": [
+        "Vernor Vinge"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1982",
+      "category": "Best Novella",
+      "position": "1982.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1982-hugo-awards/"
+      },
+      "title": "True Names"
+    },
+    {
+      "authors": [
+        "David R. Palmer"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1982",
+      "category": "Best Novella",
+      "position": "1982.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1982-hugo-awards/"
+      },
+      "title": "Emergence"
+    },
+    {
+      "authors": [
+        "Joanna Russ"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1983",
+      "category": "Best Novella",
+      "position": "1983",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1983-hugo-awards/"
+      },
+      "title": "Souls"
+    },
+    {
+      "authors": [
+        "David Brin"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1983",
+      "category": "Best Novella",
+      "position": "1983.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1983-hugo-awards/"
+      },
+      "title": "The Postman"
+    },
+    {
+      "authors": [
+        "George R. R. Martin"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1983",
+      "category": "Best Novella",
+      "position": "1983.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1983-hugo-awards/"
+      },
+      "title": "Unsound Variations"
+    },
+    {
+      "authors": [
+        "Joseph H. Delaney"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1983",
+      "category": "Best Novella",
+      "position": "1983.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1983-hugo-awards/"
+      },
+      "title": "Brainchild"
+    },
+    {
+      "authors": [
+        "Kim Stanley Robinson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1983",
+      "category": "Best Novella",
+      "position": "1983.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1983-hugo-awards/"
+      },
+      "title": "To Leave a Mark"
+    },
+    {
+      "authors": [
+        "John Kessel"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1983",
+      "category": "Best Novella",
+      "position": "1983.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1983-hugo-awards/"
+      },
+      "title": "Another Orphan"
+    },
+    {
+      "authors": [
+        "Timothy Zahn"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1984",
+      "category": "Best Novella",
+      "position": "1984",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1984-hugo-awards/"
+      },
+      "title": "Cascade Point"
+    },
+    {
+      "authors": [
+        "Greg Bear"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1984",
+      "category": "Best Novella",
+      "position": "1984.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1984-hugo-awards/"
+      },
+      "title": "Hardfought"
+    },
+    {
+      "authors": [
+        "Joseph H. Delaney"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1984",
+      "category": "Best Novella",
+      "position": "1984.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1984-hugo-awards/"
+      },
+      "title": "In the Face of My Enemy"
+    },
+    {
+      "authors": [
+        "David R. Palmer"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1984",
+      "category": "Best Novella",
+      "position": "1984.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1984-hugo-awards/"
+      },
+      "title": "Seeking"
+    },
+    {
+      "authors": [
+        "Hilbert Schenck"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1984",
+      "category": "Best Novella",
+      "position": "1984.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1984-hugo-awards/"
+      },
+      "title": "Hurricane Claude"
+    },
+    {
+      "authors": [
+        "John Varley"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1985",
+      "category": "Best Novella",
+      "position": "1985",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1995-hugo-awards-2/"
+      },
+      "title": "Press Enter []"
+    },
+    {
+      "authors": [
+        "David Brin"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1985",
+      "category": "Best Novella",
+      "position": "1985.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1995-hugo-awards-2/"
+      },
+      "title": "Cyclops"
+    },
+    {
+      "authors": [
+        "Joseph H. Delaney",
+        "Marc Stiegler"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1985",
+      "category": "Best Novella",
+      "position": "1985.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1995-hugo-awards-2/"
+      },
+      "title": "Valentina"
+    },
+    {
+      "authors": [
+        "Charles L. Harness"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1985",
+      "category": "Best Novella",
+      "position": "1985.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1995-hugo-awards-2/"
+      },
+      "title": "Summer Solstice"
+    },
+    {
+      "authors": [
+        "Geoffrey A. Landis"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1985",
+      "category": "Best Novella",
+      "position": "1985.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1995-hugo-awards-2/"
+      },
+      "title": "Elemental"
+    },
+    {
+      "authors": [
+        "Roger Zelazny"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1986",
+      "category": "Best Novella",
+      "position": "1986",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1986-hugo-awards/"
+      },
+      "title": "24 Views of Mt. Fuji, by Hokusai"
+    },
+    {
+      "authors": [
+        "Robert Silverberg"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1986",
+      "category": "Best Novella",
+      "position": "1986.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1986-hugo-awards/"
+      },
+      "title": "Sailing to Byzantium"
+    },
+    {
+      "authors": [
+        "James Tiptree, Jr."
+      ],
+      "award": "Hugo Award",
+      "award_year": "1986",
+      "category": "Best Novella",
+      "position": "1986.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1986-hugo-awards/"
+      },
+      "title": "The Only Neat Thing to Do"
+    },
+    {
+      "authors": [
+        "Kim Stanley Robinson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1986",
+      "category": "Best Novella",
+      "position": "1986.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1986-hugo-awards/"
+      },
+      "title": "Green Mars"
+    },
+    {
+      "authors": [
+        "C. J. Cherryh"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1986",
+      "category": "Best Novella",
+      "position": "1986.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1986-hugo-awards/"
+      },
+      "title": "The Scapegoat"
+    },
+    {
+      "authors": [
+        "Robert Silverberg"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1987",
+      "category": "Best Novella",
+      "position": "1987",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1987-hugo-awards/"
+      },
+      "title": "Gilgamesh in the Outback"
+    },
+    {
+      "authors": [
+        "Kim Stanley Robinson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1987",
+      "category": "Best Novella",
+      "position": "1987.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1987-hugo-awards/"
+      },
+      "title": "Escape from Kathmandu"
+    },
+    {
+      "authors": [
+        "Lucius Shepard"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1987",
+      "category": "Best Novella",
+      "position": "1987.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1987-hugo-awards/"
+      },
+      "title": "R & R"
+    },
+    {
+      "authors": [
+        "Connie Willis"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1987",
+      "category": "Best Novella",
+      "position": "1987.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1987-hugo-awards/"
+      },
+      "title": "Spice Pogrom"
+    },
+    {
+      "authors": [
+        "Michael F. Flynn"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1987",
+      "category": "Best Novella",
+      "position": "1987.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1987-hugo-awards/"
+      },
+      "title": "Eifelheim"
+    },
+    {
+      "authors": [
+        "Orson Scott Card"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1988",
+      "category": "Best Novella",
+      "position": "1988",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1988-hugo-awards/"
+      },
+      "title": "Eye for Eye"
+    },
+    {
+      "authors": [
+        "Robert Silverberg"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1988",
+      "category": "Best Novella",
+      "position": "1988.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1988-hugo-awards/"
+      },
+      "title": "The Secret Sharer"
+    },
+    {
+      "authors": [
+        "Kim Stanley Robinson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1988",
+      "category": "Best Novella",
+      "position": "1988.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1988-hugo-awards/"
+      },
+      "title": "The Blind Geometer"
+    },
+    {
+      "authors": [
+        "Kim Stanley Robinson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1988",
+      "category": "Best Novella",
+      "position": "1988.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1988-hugo-awards/"
+      },
+      "title": "Mother Goddess of the World"
+    },
+    {
+      "authors": [
+        "Michael Flynn"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1988",
+      "category": "Best Novella",
+      "position": "1988.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1988-hugo-awards/"
+      },
+      "title": "The Forest of Time"
+    },
+    {
+      "authors": [
+        "Connie Willis"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1989",
+      "category": "Best Novella",
+      "position": "1989",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1989-hugo-awards/"
+      },
+      "title": "The Last of the Winnebagos"
+    },
+    {
+      "authors": [
+        "Lucius Shepard"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1989",
+      "category": "Best Novella",
+      "position": "1989.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1989-hugo-awards/"
+      },
+      "title": "The Scalehunter\u2019s Beautiful Daughter"
+    },
+    {
+      "authors": [
+        "Norman Spinrad"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1989",
+      "category": "Best Novella",
+      "position": "1989.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1989-hugo-awards/"
+      },
+      "title": "Journals of the Plague Years"
+    },
+    {
+      "authors": [
+        "Bradley Denton"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1989",
+      "category": "Best Novella",
+      "position": "1989.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1989-hugo-awards/"
+      },
+      "title": "The Calvin Coolidge Home for Dead Comedians"
+    },
+    {
+      "authors": [
+        "Walter Jon Williams"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1989",
+      "category": "Best Novella",
+      "position": "1989.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1989-hugo-awards/"
+      },
+      "title": "Surfacing"
+    },
+    {
+      "authors": [
+        "Lois McMaster Bujold"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1990",
+      "category": "Best Novella",
+      "position": "1990",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1990-hugo-awards/"
+      },
+      "title": "The Mountains of Mourning"
+    },
+    {
+      "authors": [
+        "Lucius Shepard"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1990",
+      "category": "Best Novella",
+      "position": "1990.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1990-hugo-awards/"
+      },
+      "title": "The Father of Stones"
+    },
+    {
+      "authors": [
+        "Megan Lindholm"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1990",
+      "category": "Best Novella",
+      "position": "1990.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1990-hugo-awards/"
+      },
+      "title": "A Touch of Lavender"
+    },
+    {
+      "authors": [
+        "Connie Willis"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1990",
+      "category": "Best Novella",
+      "position": "1990.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1990-hugo-awards/"
+      },
+      "title": "Time Out"
+    },
+    {
+      "authors": [
+        "Judith Moffett"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1990",
+      "category": "Best Novella",
+      "position": "1990.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1990-hugo-awards/"
+      },
+      "title": "Tiny Tango"
+    },
+    {
+      "authors": [
+        "Joe Haldeman"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1991",
+      "category": "Best Novella",
+      "position": "1991",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1991-hugo-awards/"
+      },
+      "title": "The Hemingway Hoax"
+    },
+    {
+      "authors": [
+        "Mike Resnick"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1991",
+      "category": "Best Novella",
+      "position": "1991.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1991-hugo-awards/"
+      },
+      "title": "Bully!"
+    },
+    {
+      "authors": [
+        "Kim Stanley Robinson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1991",
+      "category": "Best Novella",
+      "position": "1991.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1991-hugo-awards/"
+      },
+      "title": "A Short, Sharp Shock"
+    },
+    {
+      "authors": [
+        "Pat Murphy"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1991",
+      "category": "Best Novella",
+      "position": "1991.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1991-hugo-awards/"
+      },
+      "title": "Bones"
+    },
+    {
+      "authors": [
+        "Pat Cadigan"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1991",
+      "category": "Best Novella",
+      "position": "1991.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1991-hugo-awards/"
+      },
+      "title": "Fool to Believe"
+    },
+    {
+      "authors": [
+        "Nancy Kress"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1992",
+      "category": "Best Novella",
+      "position": "1992",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1992-hugo-awards/"
+      },
+      "title": "Beggars in Spain"
+    },
+    {
+      "authors": [
+        "Kristine Kathryn Rusch"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1992",
+      "category": "Best Novella",
+      "position": "1992.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1992-hugo-awards/"
+      },
+      "title": "The Gallery of His Dreams"
+    },
+    {
+      "authors": [
+        "Connie Willis"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1992",
+      "category": "Best Novella",
+      "position": "1992.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1992-hugo-awards/"
+      },
+      "title": "Jack"
+    },
+    {
+      "authors": [
+        "Michael Swanwick"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1992",
+      "category": "Best Novella",
+      "position": "1992.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1992-hugo-awards/"
+      },
+      "title": "Griffin\u2019s Egg"
+    },
+    {
+      "authors": [
+        "Nancy Kress"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1992",
+      "category": "Best Novella",
+      "position": "1992.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1992-hugo-awards/"
+      },
+      "title": "And Wild for to Hold"
+    },
+    {
+      "authors": [
+        "Lucius Shepard"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1993",
+      "category": "Best Novella",
+      "position": "1993",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1993-hugo-awards/"
+      },
+      "title": "Barnacle Bill the Spacer"
+    },
+    {
+      "authors": [
+        "Frederik Pohl"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1993",
+      "category": "Best Novella",
+      "position": "1993.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1993-hugo-awards/"
+      },
+      "title": "Stopping at Slowyear"
+    },
+    {
+      "authors": [
+        "Maureen F. McHugh"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1993",
+      "category": "Best Novella",
+      "position": "1993.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1993-hugo-awards/"
+      },
+      "title": "Protection"
+    },
+    {
+      "authors": [
+        "Jonathan Carroll"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1993",
+      "category": "Best Novella",
+      "position": "1993.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1993-hugo-awards/"
+      },
+      "title": "Uh-Oh City"
+    },
+    {
+      "authors": [
+        "Bradley Denton"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1993",
+      "category": "Best Novella",
+      "position": "1993.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1993-hugo-awards/"
+      },
+      "title": "The Territory"
+    },
+    {
+      "authors": [
+        "Harry Turtledove"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1994",
+      "category": "Best Novella",
+      "position": "1994",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1994-hugo-awards/"
+      },
+      "title": "Down in the Bottomlands"
+    },
+    {
+      "authors": [
+        "Walter Jon Williams"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1994",
+      "category": "Best Novella",
+      "position": "1994.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1994-hugo-awards/"
+      },
+      "title": "Wall, Stone, Craft"
+    },
+    {
+      "authors": [
+        "G. David Nordley"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1994",
+      "category": "Best Novella",
+      "position": "1994.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1994-hugo-awards/"
+      },
+      "title": "Into the Miranda Rift"
+    },
+    {
+      "authors": [
+        "Jack Cady"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1994",
+      "category": "Best Novella",
+      "position": "1994.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1994-hugo-awards/"
+      },
+      "title": "The Night We Buried Road Dog"
+    },
+    {
+      "authors": [
+        "Pat Murphy"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1994",
+      "category": "Best Novella",
+      "position": "1994.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1994-hugo-awards/"
+      },
+      "title": "An American Childhood"
+    },
+    {
+      "authors": [
+        "Harlan Ellison"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1994",
+      "category": "Best Novella",
+      "position": "1994.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1994-hugo-awards/"
+      },
+      "title": "Mefisto in Onyx"
+    },
+    {
+      "authors": [
+        "Mike Resnick"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1995",
+      "category": "Best Novella",
+      "position": "1995",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1995-hugo-awards/"
+      },
+      "title": "Seven Views of Olduvai Gorge"
+    },
+    {
+      "authors": [
+        "Brian Stableford"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1995",
+      "category": "Best Novella",
+      "position": "1995.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1995-hugo-awards/"
+      },
+      "title": "Les Fleurs du Mal"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1995",
+      "category": "Best Novella",
+      "position": "1995.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1995-hugo-awards/"
+      },
+      "title": "Forgiveness Day"
+    },
+    {
+      "authors": [
+        "Michael Bishop"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1995",
+      "category": "Best Novella",
+      "position": "1995.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1995-hugo-awards/"
+      },
+      "title": "Cri de Coeur"
+    },
+    {
+      "authors": [
+        "Michael F. Flynn"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1995",
+      "category": "Best Novella",
+      "position": "1995.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1995-hugo-awards/"
+      },
+      "title": "Melodies of the Heart"
+    },
+    {
+      "authors": [
+        "Allen Steele"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1996",
+      "category": "Best Novella",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1996-hugo-awards/"
+      },
+      "title": "The Death of Captain Future"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1996",
+      "category": "Best Novella",
+      "position": "1996.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1996-hugo-awards/"
+      },
+      "title": "A Woman\u2019s Liberation"
+    },
+    {
+      "authors": [
+        "Mike Resnick",
+        "Susan Shwartz"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1996",
+      "category": "Best Novella",
+      "position": "1996.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1996-hugo-awards/"
+      },
+      "title": "Bibi"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1996",
+      "category": "Best Novella",
+      "position": "1996.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1996-hugo-awards/"
+      },
+      "title": "A Man of the People"
+    },
+    {
+      "authors": [
+        "Nancy Kress"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1996",
+      "category": "Best Novella",
+      "position": "1996.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1996-hugo-awards/"
+      },
+      "title": "Fault Lines"
+    },
+    {
+      "authors": [
+        "George R. R. Martin"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1997",
+      "category": "Best Novella",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1997-hugo-awards/"
+      },
+      "title": "Blood of the Dragon"
+    },
+    {
+      "authors": [
+        "Jack McDevitt"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1997",
+      "category": "Best Novella",
+      "position": "1997.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1997-hugo-awards/"
+      },
+      "title": "Time Travelers Never Die"
+    },
+    {
+      "authors": [
+        "Gregory Benford"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1997",
+      "category": "Best Novella",
+      "position": "1997.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1997-hugo-awards/"
+      },
+      "title": "Immersion"
+    },
+    {
+      "authors": [
+        "Jerry Oltion"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1997",
+      "category": "Best Novella",
+      "position": "1997.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1997-hugo-awards/"
+      },
+      "title": "Abandon in Place"
+    },
+    {
+      "authors": [
+        "Mary Rosenblum"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1997",
+      "category": "Best Novella",
+      "position": "1997.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1997-hugo-awards/"
+      },
+      "title": "Gas Fish"
+    },
+    {
+      "authors": [
+        "Maureen F. McHugh"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1997",
+      "category": "Best Novella",
+      "position": "1997.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1997-hugo-awards/"
+      },
+      "title": "The Cost to Be Wise"
+    },
+    {
+      "authors": [
+        "Allen Steele"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1998",
+      "category": "Best Novella",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1998-hugo-awards/"
+      },
+      "title": "\u2026Where Angels Fear to Tread"
+    },
+    {
+      "authors": [
+        "Adam-Troy Castro"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1998",
+      "category": "Best Novella",
+      "position": "1998.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1998-hugo-awards/"
+      },
+      "title": "The Funeral March of the Marionettes"
+    },
+    {
+      "authors": [
+        "Geoffrey A. Landis"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1998",
+      "category": "Best Novella",
+      "position": "1998.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1998-hugo-awards/"
+      },
+      "title": "Ecopoiesis"
+    },
+    {
+      "authors": [
+        "Paul Levinson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1998",
+      "category": "Best Novella",
+      "position": "1998.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1998-hugo-awards/"
+      },
+      "title": "Loose Ends"
+    },
+    {
+      "authors": [
+        "Robert Reed"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1998",
+      "category": "Best Novella",
+      "position": "1998.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1998-hugo-awards/"
+      },
+      "title": "Marrow"
+    },
+    {
+      "authors": [
+        "Greg Egan"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1999",
+      "category": "Best Novella",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1999-hugo-awards/"
+      },
+      "title": "Oceanic"
+    },
+    {
+      "authors": [
+        "Catherine Asaro"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1999",
+      "category": "Best Novella",
+      "position": "1999.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1999-hugo-awards/"
+      },
+      "title": "Aurora in Four Voices"
+    },
+    {
+      "authors": [
+        "Ted Chiang"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1999",
+      "category": "Best Novella",
+      "position": "1999.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1999-hugo-awards/"
+      },
+      "title": "Story of Your Life"
+    },
+    {
+      "authors": [
+        "Terry Bisson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1999",
+      "category": "Best Novella",
+      "position": "1999.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1999-hugo-awards/"
+      },
+      "title": "Get Me to the Church on Time"
+    },
+    {
+      "authors": [
+        "Ian R. MacLeod"
+      ],
+      "award": "Hugo Award",
+      "award_year": "1999",
+      "category": "Best Novella",
+      "position": "1999.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/1999-hugo-awards/"
+      },
+      "title": "The Summer Isles"
+    },
+    {
+      "authors": [
+        "Connie Willis"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2000",
+      "category": "Best Novella",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2000-hugo-awards/"
+      },
+      "title": "The Winds of Marble Arch"
+    },
+    {
+      "authors": [
+        "Harry Turtledove"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2000",
+      "category": "Best Novella",
+      "position": "2000.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2000-hugo-awards/"
+      },
+      "title": "Forty, Counting Down"
+    },
+    {
+      "authors": [
+        "Adam-Troy Castro",
+        "Jerry Oltion"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2000",
+      "category": "Best Novella",
+      "position": "2000.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2000-hugo-awards/"
+      },
+      "title": "The Astronaut from Wyoming"
+    },
+    {
+      "authors": [
+        "Mike Resnick"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2000",
+      "category": "Best Novella",
+      "position": "2000.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2000-hugo-awards/"
+      },
+      "title": "Hunting the Snark"
+    },
+    {
+      "authors": [
+        "Kage Baker"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2000",
+      "category": "Best Novella",
+      "position": "2000.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2000-hugo-awards/"
+      },
+      "title": "Son, Observe the Time"
+    },
+    {
+      "authors": [
+        "Jack Williamson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2001",
+      "category": "Best Novella",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2001-hugo-awards/"
+      },
+      "title": "The Ultimate Earth"
+    },
+    {
+      "authors": [
+        "Catherine Asaro"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2001",
+      "category": "Best Novella",
+      "position": "2001.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2001-hugo-awards/"
+      },
+      "title": "A Roll of the Dice"
+    },
+    {
+      "authors": [
+        "Kristine Kathryn Rusch"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2001",
+      "category": "Best Novella",
+      "position": "2001.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2001-hugo-awards/"
+      },
+      "title": "The Retrieval Artist"
+    },
+    {
+      "authors": [
+        "Greg Egan"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2001",
+      "category": "Best Novella",
+      "position": "2001.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2001-hugo-awards/"
+      },
+      "title": "Oracle"
+    },
+    {
+      "authors": [
+        "Ted Chiang"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2001",
+      "category": "Best Novella",
+      "position": "2001.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2001-hugo-awards/"
+      },
+      "title": "Seventy-Two Letters"
+    },
+    {
+      "authors": [
+        "Lucius Shepard"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2001",
+      "category": "Best Novella",
+      "position": "2001.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2001-hugo-awards/"
+      },
+      "title": "Radiant Green Star"
+    },
+    {
+      "authors": [
+        "Vernor Vinge"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2002",
+      "category": "Best Novella",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2002-hugo-awards/"
+      },
+      "title": "Fast Times at Fairmont High"
+    },
+    {
+      "authors": [
+        "Allen M. Steele"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2002",
+      "category": "Best Novella",
+      "position": "2002.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2002-hugo-awards/"
+      },
+      "title": "Stealing Alabama"
+    },
+    {
+      "authors": [
+        "Brenda W. Clough"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2002",
+      "category": "Best Novella",
+      "position": "2002.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2002-hugo-awards/"
+      },
+      "title": "May Be Some Time"
+    },
+    {
+      "authors": [
+        "Andy Duncan"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2002",
+      "category": "Best Novella",
+      "position": "2002.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2002-hugo-awards/"
+      },
+      "title": "The Chief Designer"
+    },
+    {
+      "authors": [
+        "Jack Dann"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2002",
+      "category": "Best Novella",
+      "position": "2002.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2002-hugo-awards/"
+      },
+      "title": "The Diamond Pit"
+    },
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2003",
+      "category": "Best Novella",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2003-hugo-awards/"
+      },
+      "title": "Coraline"
+    },
+    {
+      "authors": [
+        "Richard Chwedyk"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2003",
+      "category": "Best Novella",
+      "position": "2003.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2003-hugo-awards/"
+      },
+      "title": "Bronte\u2019s Egg"
+    },
+    {
+      "authors": [
+        "Ian R. MacLeod"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2003",
+      "category": "Best Novella",
+      "position": "2003.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2003-hugo-awards/"
+      },
+      "title": "Breathmoss"
+    },
+    {
+      "authors": [
+        "Paul Di Filippo"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2003",
+      "category": "Best Novella",
+      "position": "2003.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2003-hugo-awards/"
+      },
+      "title": "A Year in the Linear City"
+    },
+    {
+      "authors": [
+        "Charles Coleman Finlay"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2003",
+      "category": "Best Novella",
+      "position": "2003.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2003-hugo-awards/"
+      },
+      "title": "The Political Officer"
+    },
+    {
+      "authors": [
+        "Pat Forde"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2003",
+      "category": "Best Novella",
+      "position": "2003.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2003-hugo-awards/"
+      },
+      "title": "In Spirit"
+    },
+    {
+      "authors": [
+        "Vernor Vinge"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2004",
+      "category": "Best Novella",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2004-hugo-awards/"
+      },
+      "title": "The Cookie Monster"
+    },
+    {
+      "authors": [
+        "Kage Baker"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2004",
+      "category": "Best Novella",
+      "position": "2004.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2004-hugo-awards/"
+      },
+      "title": "The Empress of Mars"
+    },
+    {
+      "authors": [
+        "Connie Willis"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2004",
+      "category": "Best Novella",
+      "position": "2004.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2004-hugo-awards/"
+      },
+      "title": "Just Like the Ones We Used to Know"
+    },
+    {
+      "authors": [
+        "Walter Jon Williams"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2004",
+      "category": "Best Novella",
+      "position": "2004.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2004-hugo-awards/"
+      },
+      "title": "The Green Leopard Plague"
+    },
+    {
+      "authors": [
+        "Catherine Asaro"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2004",
+      "category": "Best Novella",
+      "position": "2004.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2004-hugo-awards/"
+      },
+      "title": "Walk in Silence"
+    },
+    {
+      "authors": [
+        "Charles Stross"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2005",
+      "category": "Best Novella",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2005-hugo-awards/"
+      },
+      "title": "The Concrete Jungle"
+    },
+    {
+      "authors": [
+        "Bradley Denton"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2005",
+      "category": "Best Novella",
+      "position": "2005.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2005-hugo-awards/"
+      },
+      "title": "Sergeant Chip"
+    },
+    {
+      "authors": [
+        "Charles Stross"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2005",
+      "category": "Best Novella",
+      "position": "2005.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2005-hugo-awards/"
+      },
+      "title": "Elector"
+    },
+    {
+      "authors": [
+        "Lois McMaster Bujold"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2005",
+      "category": "Best Novella",
+      "position": "2005.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2005-hugo-awards/"
+      },
+      "title": "Winterfair Gifts"
+    },
+    {
+      "authors": [
+        "Michael A. Burstein"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2005",
+      "category": "Best Novella",
+      "position": "2005.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2005-hugo-awards/"
+      },
+      "title": "Time Ablaze"
+    },
+    {
+      "authors": [
+        "Connie Willis"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2006",
+      "category": "Best Novella",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2006-hugo-awards/"
+      },
+      "title": "Inside Job"
+    },
+    {
+      "authors": [
+        "James Patrick Kelly"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2006",
+      "category": "Best Novella",
+      "position": "2006.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2006-hugo-awards/"
+      },
+      "title": "Burn"
+    },
+    {
+      "authors": [
+        "Kelly Link"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2006",
+      "category": "Best Novella",
+      "position": "2006.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2006-hugo-awards/"
+      },
+      "title": "Magic for Beginners"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2006",
+      "category": "Best Novella",
+      "position": "2006.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2006-hugo-awards/"
+      },
+      "title": "The Little Goddess"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2006",
+      "category": "Best Novella",
+      "position": "2006.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2006-hugo-awards/"
+      },
+      "title": "Identity Theft"
+    },
+    {
+      "authors": [
+        "Robert Reed"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2007",
+      "category": "Best Novella",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2007-hugo-awards/"
+      },
+      "title": "A Billion Eves"
+    },
+    {
+      "authors": [
+        "Michael Swanwick"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2007",
+      "category": "Best Novella",
+      "position": "2007.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2007-hugo-awards/"
+      },
+      "title": "Lord Weary\u2019s Empire"
+    },
+    {
+      "authors": [
+        "Robert Charles Wilson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2007",
+      "category": "Best Novella",
+      "position": "2007.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2007-hugo-awards/"
+      },
+      "title": "Julian: A Christmas Story"
+    },
+    {
+      "authors": [
+        "Paul Melko"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2007",
+      "category": "Best Novella",
+      "position": "2007.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2007-hugo-awards/"
+      },
+      "title": "The Walls of the Universe"
+    },
+    {
+      "authors": [
+        "William Shunn"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2007",
+      "category": "Best Novella",
+      "position": "2007.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2007-hugo-awards/"
+      },
+      "title": "Inclination"
+    },
+    {
+      "authors": [
+        "Connie Willis"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2008",
+      "category": "Best Novella",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2008-hugo-awards/"
+      },
+      "title": "All Seated on the Ground"
+    },
+    {
+      "authors": [
+        "Kristine Kathryn Rusch"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2008",
+      "category": "Best Novella",
+      "position": "2008.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2008-hugo-awards/"
+      },
+      "title": "Recovering Apollo 8"
+    },
+    {
+      "authors": [
+        "Nancy Kress"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2008",
+      "category": "Best Novella",
+      "position": "2008.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2008-hugo-awards/"
+      },
+      "title": "The Fountain of Age"
+    },
+    {
+      "authors": [
+        "Gene Wolfe"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2008",
+      "category": "Best Novella",
+      "position": "2008.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2008-hugo-awards/"
+      },
+      "title": "Memorare"
+    },
+    {
+      "authors": [
+        "Lucius Shepard"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2008",
+      "category": "Best Novella",
+      "position": "2008.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2008-hugo-awards/"
+      },
+      "title": "Stars Seen Through Stone"
+    },
+    {
+      "authors": [
+        "Nancy Kress"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2009",
+      "category": "Best Novella",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2009-hugo-awards/"
+      },
+      "title": "The Erdmann Nexus"
+    },
+    {
+      "authors": [
+        "Robert Reed"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2009",
+      "category": "Best Novella",
+      "position": "2009.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2009-hugo-awards/"
+      },
+      "title": "Truth"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2009",
+      "category": "Best Novella",
+      "position": "2009.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2009-hugo-awards/"
+      },
+      "title": "The Tear"
+    },
+    {
+      "authors": [
+        "Benjamin Rosenbaum",
+        "Cory Doctorow"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2009",
+      "category": "Best Novella",
+      "position": "2009.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2009-hugo-awards/"
+      },
+      "title": "True Names"
+    },
+    {
+      "authors": [
+        "Charles Coleman Finlay"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2009",
+      "category": "Best Novella",
+      "position": "2009.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2009-hugo-awards/"
+      },
+      "title": "The Political Prisoner"
+    },
+    {
+      "authors": [
+        "Charles Stross"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2010",
+      "category": "Best Novella",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2010-hugo-awards/"
+      },
+      "title": "Palimpsest"
+    },
+    {
+      "authors": [
+        "John Scalzi"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2010",
+      "category": "Best Novella",
+      "position": "2010.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2010-hugo-awards/"
+      },
+      "title": "The God Engines"
+    },
+    {
+      "authors": [
+        "Kage Baker"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2010",
+      "category": "Best Novella",
+      "position": "2010.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2010-hugo-awards/"
+      },
+      "title": "The Women of Nell Gwynne\u2019s"
+    },
+    {
+      "authors": [
+        "Nancy Kress"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2010",
+      "category": "Best Novella",
+      "position": "2010.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2010-hugo-awards/"
+      },
+      "title": "Act One"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2010",
+      "category": "Best Novella",
+      "position": "2010.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2010-hugo-awards/"
+      },
+      "title": "Vishnu at the Cat Circus"
+    },
+    {
+      "authors": [
+        "James Morrow"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2010",
+      "category": "Best Novella",
+      "position": "2010.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2010-hugo-awards/"
+      },
+      "title": "Shambling Towards Hiroshima"
+    },
+    {
+      "authors": [
+        "Ted Chiang"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2011",
+      "category": "Best Novella",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2011-hugo-awards/"
+      },
+      "title": "The Lifecycle of Software Objects"
+    },
+    {
+      "authors": [
+        "Alastair Reynolds"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2011",
+      "category": "Best Novella",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2011-hugo-awards/"
+      },
+      "title": "Troika"
+    },
+    {
+      "authors": [
+        "Rachel Swirsky"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2011",
+      "category": "Best Novella",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2011-hugo-awards/"
+      },
+      "title": "The Lady Who Plucked Red Flowers beneath the Queen\u2019s Window"
+    },
+    {
+      "authors": [
+        "Geoffrey A. Landis"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2011",
+      "category": "Best Novella",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2011-hugo-awards/"
+      },
+      "title": "The Sultan of the Clouds"
+    },
+    {
+      "authors": [
+        "Elizabeth Hand"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2011",
+      "category": "Best Novella",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2011-hugo-awards/"
+      },
+      "title": "The Maiden Flight of McCauley\u2019s Bellerophon"
+    },
+    {
+      "authors": [
+        "Kij Johnson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2012",
+      "category": "Best Novella",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2012-hugo-awards/"
+      },
+      "title": "The Man Who Bridged the Mist"
+    },
+    {
+      "authors": [
+        "Mary Robinette Kowal"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2012",
+      "category": "Best Novella",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2012-hugo-awards/"
+      },
+      "title": "Kiss Me Twice"
+    },
+    {
+      "authors": [
+        "Catherynne M. Valente"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2012",
+      "category": "Best Novella",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2012-hugo-awards/"
+      },
+      "title": "Silently and Very Fast"
+    },
+    {
+      "authors": [
+        "Ken Liu"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2012",
+      "category": "Best Novella",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2012-hugo-awards/"
+      },
+      "title": "The Man Who Ended History: A Documentary"
+    },
+    {
+      "authors": [
+        "Mira Grant"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2012",
+      "category": "Best Novella",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2012-hugo-awards/"
+      },
+      "title": "Countdown"
+    },
+    {
+      "authors": [
+        "Carolyn Ives Gilman"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2012",
+      "category": "Best Novella",
+      "position": "2012.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2012-hugo-awards/"
+      },
+      "title": "The Ice Owl"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2013",
+      "category": "Best Novella",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2013-hugo-awards/"
+      },
+      "title": "The Emperor\u2019s Soul"
+    },
+    {
+      "authors": [
+        "Nancy Kress"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2013",
+      "category": "Best Novella",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2013-hugo-awards/"
+      },
+      "title": "After the Fall, Before the Fall, During the Fall"
+    },
+    {
+      "authors": [
+        "Jay Lake"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2013",
+      "category": "Best Novella",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2013-hugo-awards/"
+      },
+      "title": "The Stars Do Not Lie"
+    },
+    {
+      "authors": [
+        "Aliette de Bodard"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2013",
+      "category": "Best Novella",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2013-hugo-awards/"
+      },
+      "title": "On a Red Station, Drifting"
+    },
+    {
+      "authors": [
+        "Mira Grant"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2013",
+      "category": "Best Novella",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2013-hugo-awards/"
+      },
+      "title": "San Diego 2014: The Last Stand of the California Browncoats"
+    },
+    {
+      "authors": [
+        "Charles Stross"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2014",
+      "category": "Best Novella",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2014-hugo-awards/"
+      },
+      "title": "Equoid"
+    },
+    {
+      "authors": [
+        "Catherynne M. Valente"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2014",
+      "category": "Best Novella",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2014-hugo-awards/"
+      },
+      "title": "Six-Gun Snow White"
+    },
+    {
+      "authors": [
+        "Andy Duncan",
+        "Ellen Klages"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2014",
+      "category": "Best Novella",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2014-hugo-awards/"
+      },
+      "title": "Wakulla Springs"
+    },
+    {
+      "authors": [
+        "Brad Torgersen"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2014",
+      "category": "Best Novella",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2014-hugo-awards/"
+      },
+      "title": "The Chaplain\u2019s Legacy"
+    },
+    {
+      "authors": [
+        "Dan Wells"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2014",
+      "category": "Best Novella",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2014-hugo-awards/"
+      },
+      "title": "The Butcher of Khardov"
+    },
+    {
+      "authors": [
+        "Arlan Andrews, Sr."
+      ],
+      "award": "Hugo Award",
+      "award_year": "2015",
+      "category": "Best Novella",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2015-hugo-awards/"
+      },
+      "title": "Flow"
+    },
+    {
+      "authors": [
+        "Tom Kratman"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2015",
+      "category": "Best Novella",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2015-hugo-awards/"
+      },
+      "title": "Big Boys Don\u2019t Cry"
+    },
+    {
+      "authors": [
+        "John C. Wright"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2015",
+      "category": "Best Novella",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2015-hugo-awards/"
+      },
+      "title": "One Bright Star to Guide Them"
+    },
+    {
+      "authors": [
+        "John C. Wright"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2015",
+      "category": "Best Novella",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2015-hugo-awards/"
+      },
+      "title": "The Plural of Helen of Troy"
+    },
+    {
+      "authors": [
+        "John C. Wright"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2015",
+      "category": "Best Novella",
+      "position": "2015.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2015-hugo-awards/"
+      },
+      "title": "Pale Realms of Shade"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2016",
+      "category": "Best Novella",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2016-hugo-awards/"
+      },
+      "title": "Binti"
+    },
+    {
+      "authors": [
+        "Lois McMaster Bujold"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2016",
+      "category": "Best Novella",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2016-hugo-awards/"
+      },
+      "title": "Penric\u2019s Demon"
+    },
+    {
+      "authors": [
+        "Alastair Reynolds"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2016",
+      "category": "Best Novella",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2016-hugo-awards/"
+      },
+      "title": "Slow Bullets"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2016",
+      "category": "Best Novella",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2016-hugo-awards/"
+      },
+      "title": "Perfect State"
+    },
+    {
+      "authors": [
+        "Daniel Polansky"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2016",
+      "category": "Best Novella",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2016-hugo-awards/"
+      },
+      "title": "The Builders"
+    },
+    {
+      "authors": [
+        "Seanan McGuire"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Novella",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      },
+      "title": "Every Heart a Doorway"
+    },
+    {
+      "authors": [
+        "Kij Johnson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Novella",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      },
+      "title": "The Dream-Quest of Vellitt Boe"
+    },
+    {
+      "authors": [
+        "Lois McMaster Bujold"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Novella",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      },
+      "title": "Penric and the Shaman"
+    },
+    {
+      "authors": [
+        "Victor LaValle"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Novella",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      },
+      "title": "The Ballad of Black Tom"
+    },
+    {
+      "authors": [
+        "Kai Ashante Wilson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Novella",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      },
+      "title": "A Taste of Honey"
+    },
+    {
+      "authors": [
+        "China Mi\u00e9ville"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Novella",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      },
+      "title": "This Census-Taker"
+    },
+    {
+      "authors": [
+        "Martha Wells"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Novella",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      },
+      "title": "All Systems Red"
+    },
+    {
+      "authors": [
+        "Sarah Pinsker"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Novella",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      },
+      "title": "And Then There Were (N-One),"
+    },
+    {
+      "authors": [
+        "Seanan McGuire"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Novella",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      },
+      "title": "Down Among the Sticks and Bones"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Novella",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      },
+      "title": "Binti: Home"
+    },
+    {
+      "authors": [
+        "JY Yang"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Novella",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      },
+      "title": "The Black Tides of Heaven"
+    },
+    {
+      "authors": [
+        "Sarah Gailey"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Novella",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      },
+      "title": "River of Teeth"
+    },
+    {
+      "authors": [
+        "Martha Wells"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Novella",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/"
+      },
+      "title": "Artificial Condition"
+    },
+    {
+      "authors": [
+        "Aliette de Bodard"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Novella",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/"
+      },
+      "title": "The Tea Master and the Detective"
+    },
+    {
+      "authors": [
+        "Seanan McGuire"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Novella",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/"
+      },
+      "title": "Beneath the Sugar Sky"
+    },
+    {
+      "authors": [
+        "P. Dj\u00e8l\u00ed Clark"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Novella",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/"
+      },
+      "title": "The Black God\u2019s Drums"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Novella",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/"
+      },
+      "title": "Binti: The Night Masquerade"
+    },
+    {
+      "authors": [
+        "Kelly Robson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Novella",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/"
+      },
+      "title": "Gods, Monsters, and the Lucky Peach"
+    },
+    {
+      "authors": [
+        "Amal El-Mohtar",
+        "Max Gladstone"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Novella",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/"
+      },
+      "title": "This Is How You Lose the Time War"
+    },
+    {
+      "authors": [
+        "Seanan McGuire"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Novella",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/"
+      },
+      "title": "In an Absent Dream"
+    },
+    {
+      "authors": [
+        "Becky Chambers"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Novella",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/"
+      },
+      "title": "To Be Taught, If Fortunate"
+    },
+    {
+      "authors": [
+        "P. Dj\u00e8l\u00ed Clark"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Novella",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/"
+      },
+      "title": "The Haunting of Tram Car 015"
+    },
+    {
+      "authors": [
+        "Ted Chiang"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Novella",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/"
+      },
+      "title": "Anxiety Is the Dizziness of Freedom"
+    },
+    {
+      "authors": [
+        "Rivers Solomon",
+        "Daveed Diggs",
+        "William Hutson",
+        "Jonathan Snipes"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Novella",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/"
+      },
+      "title": "The Deep"
+    },
+    {
+      "authors": [
+        "Nghi Vo"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Novella",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/"
+      },
+      "title": "The Empress of Salt and Fortune"
+    },
+    {
+      "authors": [
+        "P. Dj\u00e8l\u00ed Clark"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Novella",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/"
+      },
+      "title": "Ring Shout"
+    },
+    {
+      "authors": [
+        "Seanan McGuire"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Novella",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/"
+      },
+      "title": "Come Tumbling Down"
+    },
+    {
+      "authors": [
+        "Sarah Gailey"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Novella",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/"
+      },
+      "title": "Upright Women Wanted"
+    },
+    {
+      "authors": [
+        "Nino Cipri"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Novella",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/"
+      },
+      "title": "Finna"
+    },
+    {
+      "authors": [
+        "Tochi Onyebuchi"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Novella",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/"
+      },
+      "title": "Riot Baby"
+    },
+    {
+      "authors": [
+        "Becky Chambers"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Novella",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      },
+      "title": "A Psalm for the Wild-Built"
+    },
+    {
+      "authors": [
+        "Seanan McGuire"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Novella",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      },
+      "title": "Across the Green Grass Fields"
+    },
+    {
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Novella",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      },
+      "title": "Elder Race"
+    },
+    {
+      "authors": [
+        "Aliette de Bodard"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Novella",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      },
+      "title": "Fireheart Tiger"
+    },
+    {
+      "authors": [
+        "Catherynne M. Valente"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Novella",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      },
+      "title": "The Past Is Red"
+    },
+    {
+      "authors": [
+        "Alix E. Harrow"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Novella",
+      "position": "2022.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      },
+      "title": "A Spindle Splintered"
+    },
+    {
+      "authors": [
+        "Seanan McGuire"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Novella",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      },
+      "title": "Where the Drowned Girls Go"
+    },
+    {
+      "authors": [
+        "C.L. Polk"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Novella",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      },
+      "title": "Even Though I Knew the End"
+    },
+    {
+      "authors": [
+        "Nghi Vo"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Novella",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      },
+      "title": "Into the Riverlands"
+    },
+    {
+      "authors": [
+        "Alix E. Harrow"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Novella",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      },
+      "title": "A Mirror Mended"
+    },
+    {
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Novella",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      },
+      "title": "Ogres"
+    },
+    {
+      "authors": [
+        "T. Kingfisher"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Novella",
+      "position": "2023.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      },
+      "title": "What Moves the Dead"
+    },
+    {
+      "authors": [
+        "T. Kingfisher"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Novella",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/"
+      },
+      "title": "Thornhedge"
+    },
+    {
+      "authors": [
+        "He Xi",
+        "\u4f55\u5915"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Novella",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/"
+      },
+      "title": "Life Does Not Allow Us to Meet"
+    },
+    {
+      "authors": [
+        "Nghi Vo"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Novella",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/"
+      },
+      "title": "Mammoths at the Gates"
+    },
+    {
+      "authors": [
+        "Malka Older"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Novella",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/"
+      },
+      "title": "The Mimicking of Known Successes"
+    },
+    {
+      "authors": [
+        "Arkady Martine"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Novella",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/"
+      },
+      "title": "Rose/House"
+    },
+    {
+      "authors": [
+        "Wang Jinkang",
+        "\u738b\u664b\u5eb7"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Novella",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/"
+      },
+      "title": "Seeds of Mercury"
+    },
+    {
+      "authors": [
+        "Ray Nayler"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Novella",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/"
+      },
+      "title": "The Tusks of Extinction"
+    },
+    {
+      "authors": [
+        "T. Kingfisher"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Novella",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/"
+      },
+      "title": "What Feasts at Night"
+    },
+    {
+      "authors": [
+        "Premee Mohamed"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Novella",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/"
+      },
+      "title": "The Butcher of the Forest"
+    },
+    {
+      "authors": [
+        "Sofia Samatar"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Novella",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/"
+      },
+      "title": "The Practice, the Horizon, and the Chain"
+    },
+    {
+      "authors": [
+        "Aliette de Bodard"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Novella",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/"
+      },
+      "title": "Navigational Entanglements"
+    },
+    {
+      "authors": [
+        "Nghi Vo"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Novella",
+      "position": "2025.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/"
+      },
+      "title": "The Brides of High Hill"
+    }
+  ],
+  "fetched_at": "2026-07-23T02:11:26Z",
+  "list_id": "hugo_awards_novella",
+  "list_name": "Hugo Awards - Novella",
+  "match_series": false,
+  "notes": [],
+  "parser": "hugo_awards_novella",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Hugo Awards - Novella",
+    "source_id": "hugo_awards_novella",
+    "url": "https://www.thehugoawards.org/hugo-history/"
+  }
+}

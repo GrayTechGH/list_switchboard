@@ -1,0 +1,1833 @@
+{
+  "append_state": {
+    "entry_count": 112,
+    "last_entry_key": "writing the magic essays on crafting fantasy fiction|dan coxon\u001frichard v hirst",
+    "last_position": "2026.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Stephen Baxter"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2002",
+      "category": "Long Non-Fiction",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2002"
+      },
+      "title": "Omegatropic"
+    },
+    {
+      "authors": [
+        "Gene Wolfe"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2002",
+      "category": "Long Non-Fiction",
+      "position": "2002.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2002"
+      },
+      "title": "The Best Introduction to the Mountains"
+    },
+    {
+      "authors": [
+        "Andrew M. Butler"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2002",
+      "category": "Long Non-Fiction",
+      "position": "2002.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2002"
+      },
+      "title": "The Pocket Essential Terry Pratchett"
+    },
+    {
+      "authors": [
+        "Justina Robson"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2002",
+      "category": "Long Non-Fiction",
+      "position": "2002.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2002"
+      },
+      "title": "Storming the Bastille"
+    },
+    {
+      "authors": [
+        "Michelle Le Blanc",
+        "Colin Odell"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2002",
+      "category": "Long Non-Fiction",
+      "position": "2002.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2002"
+      },
+      "title": "Tim Burton"
+    },
+    {
+      "authors": [
+        "David Langford"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2003",
+      "category": "Long Non-Fiction",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2003"
+      },
+      "title": "Introduction"
+    },
+    {
+      "authors": [
+        "Nick Gevers",
+        "Christopher Priest"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2003",
+      "category": "Long Non-Fiction",
+      "position": "2003.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2003"
+      },
+      "title": "The Interrogation"
+    },
+    {
+      "authors": [
+        "Oliver Morton"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2003",
+      "category": "Long Non-Fiction",
+      "position": "2003.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2003"
+      },
+      "title": "Mapping Mars"
+    },
+    {
+      "authors": [
+        "Fred Smith"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2003",
+      "category": "Long Non-Fiction",
+      "position": "2003.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2003"
+      },
+      "title": "Once There Was a Magazine"
+    },
+    {
+      "authors": [
+        "Lucius Shepard"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2003",
+      "category": "Long Non-Fiction",
+      "position": "2003.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2003"
+      },
+      "title": "The Time Machine"
+    },
+    {
+      "authors": [
+        "Farah Mendlesohn"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2004",
+      "category": "Long Non-Fiction",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2004"
+      },
+      "title": "Reading Science Fiction"
+    },
+    {
+      "authors": [
+        "M. J. Simpson"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2004",
+      "category": "Long Non-Fiction",
+      "position": "2004.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2004"
+      },
+      "title": "Hitchhiker: A Biography of Douglas Adams"
+    },
+    {
+      "authors": [
+        "John H. Arnold",
+        "Andy Wood"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2004",
+      "category": "Long Non-Fiction",
+      "position": "2004.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2004"
+      },
+      "title": "Nothing is Written: Politics, Ideology and the Burden of History in the Fall Revolution Quartet"
+    },
+    {
+      "authors": [
+        "Mike Ashley"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2004",
+      "category": "Long Non-Fiction",
+      "position": "2004.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2004"
+      },
+      "title": "The Profession of Science Fiction #58: Mapping the Territory"
+    },
+    {
+      "authors": [
+        "Cheryl Morgan"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2004",
+      "category": "Long Non-Fiction",
+      "position": "2004.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2004"
+      },
+      "title": "A Sick Mind"
+    },
+    {
+      "authors": [
+        "Gary K. Wolfe"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2006",
+      "category": "Long Non-Fiction",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2006"
+      },
+      "title": "Soundings: Reviews 1992-1996"
+    },
+    {
+      "authors": [
+        "Paul Kincaid",
+        "Andrew M. Butler"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2007",
+      "category": "Long Non-Fiction",
+      "position": "2007.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2007"
+      },
+      "title": "The Arthur C. Clarke Award: A Critical Anthology"
+    },
+    {
+      "authors": [
+        "Justine Larbalestier"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2007",
+      "category": "Long Non-Fiction",
+      "position": "2007.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2007"
+      },
+      "title": "Daughters of Earth: Feminist Science Fiction in the Twentieth Century"
+    },
+    {
+      "authors": [
+        "Paul Gravett"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2007",
+      "category": "Long Non-Fiction",
+      "position": "2007.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2007"
+      },
+      "title": "Great British Comics"
+    },
+    {
+      "authors": [
+        "Julie Phillips"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2007",
+      "category": "Long Non-Fiction",
+      "position": "2007.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2007"
+      },
+      "title": "James Tiptree, Jr.: The Double Life of Alice B. Sheldon"
+    },
+    {
+      "authors": [
+        "Farah Mendlesohn"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2007",
+      "category": "Long Non-Fiction",
+      "position": "2007.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2007"
+      },
+      "title": "Polder: A Festschrift for John Clute and Judith Clute"
+    },
+    {
+      "authors": [
+        "Farah Mendlesohn"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2009",
+      "category": "Long Non-Fiction",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2009"
+      },
+      "title": "Rhetorics of Fantasy"
+    },
+    {
+      "authors": [
+        "John Clute"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2009",
+      "category": "Long Non-Fiction",
+      "position": "2009.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2009"
+      },
+      "title": "Physics for Amnesia"
+    },
+    {
+      "authors": [
+        "Roz Kaveney"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2009",
+      "category": "Long Non-Fiction",
+      "position": "2009.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2009"
+      },
+      "title": "Superheroes!: Capes and Crusaders in Comics and Films"
+    },
+    {
+      "authors": [
+        "Paul Kincaid"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2009",
+      "category": "Long Non-Fiction",
+      "position": "2009.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2009"
+      },
+      "title": "What It Is We Do When We Read Science Fiction"
+    },
+    {
+      "authors": [
+        "Nick Lowe"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2010",
+      "category": "Long Non-Fiction",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2010"
+      },
+      "title": "Mutant Popcorn"
+    },
+    {
+      "authors": [
+        "John Clute"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2010",
+      "category": "Long Non-Fiction",
+      "position": "2010.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2010"
+      },
+      "title": "Canary Fever: Reviews"
+    },
+    {
+      "authors": [
+        "Deepa D."
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2010",
+      "category": "Long Non-Fiction",
+      "position": "2010.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2010"
+      },
+      "title": "I Didn't Dream of Dragons"
+    },
+    {
+      "authors": [
+        "Farah Mendlesohn",
+        "Edward James"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2010",
+      "category": "Long Non-Fiction",
+      "position": "2010.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2010"
+      },
+      "title": "A Short History of Fantasy"
+    },
+    {
+      "authors": [
+        "Paul Kincaid"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2011",
+      "category": "Long Non-Fiction",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2011"
+      },
+      "title": "Blogging the Hugos: Decline"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan",
+        "Gary K. Wolfe"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2011",
+      "category": "Long Non-Fiction",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2011"
+      },
+      "title": "Notes from Coode Street Podcast"
+    },
+    {
+      "authors": [
+        "Francis Spufford"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2011",
+      "category": "Long Non-Fiction",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2011"
+      },
+      "title": "Red Plenty"
+    },
+    {
+      "authors": [
+        "Adam Roberts"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2011",
+      "category": "Long Non-Fiction",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2011"
+      },
+      "title": "Review of The Wheel of Time"
+    },
+    {
+      "authors": [
+        "Abigail Nussbaum"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2011",
+      "category": "Long Non-Fiction",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2011"
+      },
+      "title": "With Both Feet in the Clouds"
+    },
+    {
+      "authors": [
+        "Peter Nicholls",
+        "David Langford"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2012",
+      "category": "Long Non-Fiction",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2012"
+      },
+      "title": "The Encyclopedia of Science Fiction, Third Edition , John Clute"
+    },
+    {
+      "authors": [
+        "Mike Ashley"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2012",
+      "category": "Long Non-Fiction",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2012"
+      },
+      "title": "Out of This World: Science Fiction But Not as You Know It"
+    },
+    {
+      "authors": [
+        "Jared Shurin",
+        "Anne Perry"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2012",
+      "category": "Long Non-Fiction",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2012"
+      },
+      "title": "Pornokitsch"
+    },
+    {
+      "authors": [
+        "Abigail Nussbaum (Asking the Wrong Questions (blog))"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2012",
+      "category": "Long Non-Fiction",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2012"
+      },
+      "title": "Review of Arslan by M.J. Engh"
+    },
+    {
+      "authors": [
+        "Ian Sales"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2012",
+      "category": "Long Non-Fiction",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2012"
+      },
+      "title": "SF Mistressworks"
+    },
+    {
+      "authors": [
+        "Tony Keen",
+        "Simon Bradshaw"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2012",
+      "category": "Long Non-Fiction",
+      "position": "2012.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2012"
+      },
+      "title": "The Unsilent Library: Essays on the Russell T. Davies Era of the New Doctor Who , Graham Sleight"
+    },
+    {
+      "authors": [
+        "chief editor"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2013",
+      "category": "Long Non-Fiction",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2013"
+      },
+      "title": "The World SF Blog , Lavie Tidhar"
+    },
+    {
+      "authors": [
+        "Edward James",
+        "Farah Mendlesohn"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2013",
+      "category": "Long Non-Fiction",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2013"
+      },
+      "title": "The Cambridge Companion to Fantasy Literature"
+    },
+    {
+      "authors": [
+        "Karen Burnham"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2013",
+      "category": "Long Non-Fiction",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2013"
+      },
+      "title": "The Complexity of the Humble Space Suit"
+    },
+    {
+      "authors": [
+        "Maureen Kincaid Speller"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2013",
+      "category": "Long Non-Fiction",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2013"
+      },
+      "title": "The Shortlist Project"
+    },
+    {
+      "authors": [
+        "Paul Kincaid"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2013",
+      "category": "Long Non-Fiction",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2013"
+      },
+      "title": "The Widening Gyre"
+    },
+    {
+      "authors": [
+        "Jeff VanderMeer"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2014",
+      "category": "Long Non-Fiction",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2014"
+      },
+      "title": "Wonderbook"
+    },
+    {
+      "authors": [
+        "John J. Johnston"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2014",
+      "category": "Long Non-Fiction",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2014"
+      },
+      "title": "Going Forth by Night"
+    },
+    {
+      "authors": [
+        "Liz Bourke"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2014",
+      "category": "Long Non-Fiction",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2014"
+      },
+      "title": "Sleeps with Monsters"
+    },
+    {
+      "authors": [
+        "Edward James"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2015",
+      "category": "Long Non-Fiction",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2015"
+      },
+      "title": "Science Fiction and Fantasy Writers in the Great War"
+    },
+    {
+      "authors": [
+        "Paul Kincaid"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2015",
+      "category": "Long Non-Fiction",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2015"
+      },
+      "title": "Call and Response"
+    },
+    {
+      "authors": [
+        "Jonathan McCalmont"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2015",
+      "category": "Long Non-Fiction",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2015"
+      },
+      "title": "Deep Forests and Manicured Gardens: A Look at Two New Short Fiction Magazines"
+    },
+    {
+      "authors": [
+        "Karen Burnham"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2015",
+      "category": "Long Non-Fiction",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2015"
+      },
+      "title": "Greg Egan"
+    },
+    {
+      "authors": [
+        "Niall Harrison"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2015",
+      "category": "Long Non-Fiction",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2015"
+      },
+      "title": "The State of British SF and Fantasy: A Symposium"
+    },
+    {
+      "authors": [
+        "Adam Roberts"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2016",
+      "category": "Long Non-Fiction",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2016"
+      },
+      "title": "Rave and Let Die: The SF and Fantasy of 2014"
+    },
+    {
+      "authors": [
+        "Jeff VanderMeer"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2016",
+      "category": "Long Non-Fiction",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2016"
+      },
+      "title": "From Annihilation to Acceptance: A Writer's Surreal Journey"
+    },
+    {
+      "authors": [
+        "Alisa Krasnostein",
+        "Alexandra Pierce"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2016",
+      "category": "Long Non-Fiction",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2016"
+      },
+      "title": "Letters to Tiptree"
+    },
+    {
+      "authors": [
+        "Nina Allan"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2016",
+      "category": "Long Non-Fiction",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2016"
+      },
+      "title": "Time Pieces: Doctor Change or Doctor Die"
+    },
+    {
+      "authors": [
+        "Jonathan McCalmont"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2016",
+      "category": "Long Non-Fiction",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2016"
+      },
+      "title": "What Price, Your Critical Agency"
+    },
+    {
+      "authors": [
+        "Geoff Ryman"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2017",
+      "category": "Long Non-Fiction",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2017"
+      },
+      "title": "100 African Writers of SFF"
+    },
+    {
+      "authors": [
+        "Erin Hor\u00e1kov\u00e1"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2017",
+      "category": "Long Non-Fiction",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2017"
+      },
+      "title": "Boucher, Backbone and Blake: The Legacy of Blakes Seven"
+    },
+    {
+      "authors": [
+        "Anna McFarlane"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2017",
+      "category": "Long Non-Fiction",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2017"
+      },
+      "title": "Breaking the Cycle of the Golden Age: Jack Glass and Isaac Asimov\u2019s Foundation Trilogy"
+    },
+    {
+      "authors": [
+        "Ann VanderMeer",
+        "Jeff VanderMeer"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2017",
+      "category": "Long Non-Fiction",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2017"
+      },
+      "title": "Introduction"
+    },
+    {
+      "authors": [
+        "Paul Graham Raven"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2017",
+      "category": "Long Non-Fiction",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2017"
+      },
+      "title": "New Model Authors? Authority, Authordom, Anarchism and the Atomized Text in a Networked World"
+    },
+    {
+      "authors": [
+        "Rob Hansen"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2017",
+      "category": "Long Non-Fiction",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2017"
+      },
+      "title": "THEN: Science Fiction Fandom in the UK 1930-1980"
+    },
+    {
+      "authors": [
+        "Paul Kincaid"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2018",
+      "category": "Long Non-Fiction",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2018"
+      },
+      "title": "Iain M. Banks"
+    },
+    {
+      "authors": [
+        "Shadow Clarke Award jurors"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2018",
+      "category": "Long Non-Fiction",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2018"
+      },
+      "title": "The 2017 Shadow Clarke Award blog"
+    },
+    {
+      "authors": [
+        "Juliet E. McKenna"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2018",
+      "category": "Long Non-Fiction",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2018"
+      },
+      "title": "The Myth of Meritocracy and the Reality of the Leaky Pipe and Other Obstacles in Science Fiction & Fantasy"
+    },
+    {
+      "authors": [
+        "Vandana Singh"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2018",
+      "category": "Long Non-Fiction",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2018"
+      },
+      "title": "The Unthinkability of Climate Change: Thoughts on Amitav Ghosh's The Great Derangement"
+    },
+    {
+      "authors": [
+        "Adam Roberts"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2018",
+      "category": "Long Non-Fiction",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2018"
+      },
+      "title": "Wells at the World's End 2017 blog posts"
+    },
+    {
+      "authors": [
+        "Aliette de Bodard"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2019",
+      "category": "Long Non-Fiction",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2019"
+      },
+      "title": "On motherhood and erasure: people-shaped holes, hollow characters and the illusion of impossible adventures"
+    },
+    {
+      "authors": [
+        "Ruth EJ Booth"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2019",
+      "category": "Long Non-Fiction",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2019"
+      },
+      "title": "Noise and Sparks 2018 articles"
+    },
+    {
+      "authors": [
+        "Adam Roberts"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2019",
+      "category": "Long Non-Fiction",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2019"
+      },
+      "title": "Publishing the Science Fiction Canon: The Case of Scientific Romance"
+    },
+    {
+      "authors": [
+        "Liz Bourke"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2019",
+      "category": "Long Non-Fiction",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2019"
+      },
+      "title": "Sleeps With Monsters 2018 articles"
+    },
+    {
+      "authors": [
+        "Nina Allan"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2019",
+      "category": "Long Non-Fiction",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2019"
+      },
+      "title": "Time Pieces 2018 articles"
+    },
+    {
+      "authors": [
+        "Farah Mendlesohn"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2020",
+      "category": "Long Non-Fiction",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2020"
+      },
+      "title": "The Pleasant Profession of Robert A. Heinlein"
+    },
+    {
+      "authors": [
+        "Gareth L. Powell"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2020",
+      "category": "Long Non-Fiction",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2020"
+      },
+      "title": "About Writing"
+    },
+    {
+      "authors": [
+        "Jo Lindsay Walton"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2020",
+      "category": "Long Non-Fiction",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2020"
+      },
+      "title": "Away Day: Star Trek and the Utopia of Merit"
+    },
+    {
+      "authors": [
+        "Adam Roberts"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2020",
+      "category": "Long Non-Fiction",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2020"
+      },
+      "title": "HG Wells: A Literary Life"
+    },
+    {
+      "authors": [
+        "Glyn Morgan",
+        "C. Palmer-Patel"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2020",
+      "category": "Long Non-Fiction",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2020"
+      },
+      "title": "Sideways in Time: Critical Essays on Alternate History Fiction"
+    },
+    {
+      "authors": [
+        "Adam Roberts"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2021",
+      "category": "Long Non-Fiction",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2021"
+      },
+      "title": "It's the End of the World: But What Are We Really Afraid Of?"
+    },
+    {
+      "authors": [
+        "Jo Walton"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2021",
+      "category": "Long Non-Fiction",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2021"
+      },
+      "title": "Books In Which No Bad Things Happen"
+    },
+    {
+      "authors": [
+        "Jo Lindsay Walton"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2021",
+      "category": "Long Non-Fiction",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2021"
+      },
+      "title": "Estranged Entrepreneurs and the Meaning of Money in Cory Doctorow\u2019s Down and Out in the Magic Kingdom"
+    },
+    {
+      "authors": [
+        "Andrew Milner",
+        "J. R. Burgmann"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2021",
+      "category": "Long Non-Fiction",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2021"
+      },
+      "title": "Science Fiction and Climate Change"
+    },
+    {
+      "authors": [
+        "Francesca T Barbini"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2021",
+      "category": "Long Non-Fiction",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2021"
+      },
+      "title": "Ties That Bind: Love in Science Fiction and Fantasy"
+    },
+    {
+      "authors": [
+        "Paul Kincaid"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2021",
+      "category": "Long Non-Fiction",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2021"
+      },
+      "title": "The Unstable Realities of Christopher Priest"
+    },
+    {
+      "authors": [
+        "Francesca T. Barbini"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2022",
+      "category": "Long Non-Fiction",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2022"
+      },
+      "title": "Worlds Apart: Worldbuilding in Fantasy and Science Fiction"
+    },
+    {
+      "authors": [
+        "Mark Bould"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2022",
+      "category": "Long Non-Fiction",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2022"
+      },
+      "title": "The Anthropocene Unconscious: Climate Catastrophe Culture"
+    },
+    {
+      "authors": [
+        "Anna McFarlane"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2022",
+      "category": "Long Non-Fiction",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2022"
+      },
+      "title": "Cyberpunk Culture and Psychology: Seeing Through the Mirrorshades"
+    },
+    {
+      "authors": [
+        "Joy Sanchez-Taylor"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2022",
+      "category": "Long Non-Fiction",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2022"
+      },
+      "title": "Diverse Futures: Science Fiction and Authors of Color"
+    },
+    {
+      "authors": [
+        "Alison Scott",
+        "Liz Batty"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2022",
+      "category": "Long Non-Fiction",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2022"
+      },
+      "title": "Octothorpe , John Coxon"
+    },
+    {
+      "authors": [
+        "Val Nolan"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2022",
+      "category": "Long Non-Fiction",
+      "position": "2022.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2022"
+      },
+      "title": "Science Fiction and the Pathways out of the COVID Crisis"
+    },
+    {
+      "authors": [
+        "Rob Wilkins"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2023",
+      "category": "Long Non-Fiction",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2023"
+      },
+      "title": "Terry Pratchett: A Life with Footnotes"
+    },
+    {
+      "authors": [
+        "Maureen Kincaid Speller"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2023",
+      "category": "Long Non-Fiction",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2023"
+      },
+      "title": "The Critic and the Clue: Tracking Alan Garner\u2019s Treacle Walker"
+    },
+    {
+      "authors": [
+        "Fiona Moore"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2023",
+      "category": "Long Non-Fiction",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2023"
+      },
+      "title": "Management Lessons from Game of Thrones: Organization Theory and Strategy in Westeros"
+    },
+    {
+      "authors": [
+        "Wole Talabi"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2023",
+      "category": "Long Non-Fiction",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2023"
+      },
+      "title": "Preliminary Observations from an Incomplete History of African SFF"
+    },
+    {
+      "authors": [
+        "Oghenechovwe Donald Ekpeki"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2023",
+      "category": "Long Non-Fiction",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2023"
+      },
+      "title": "Too Dystopian for Whom? A Continental Nigerian Writer\u2019s Perspective"
+    },
+    {
+      "authors": [
+        "Nina Allan"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2024",
+      "category": "Long Non-Fiction",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2024"
+      },
+      "title": "A Traveller in Time: The Critical Practice of Maureen Kincaid Speller"
+    },
+    {
+      "authors": [
+        "Niall Harrison"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2024",
+      "category": "Long Non-Fiction",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2024"
+      },
+      "title": "All These Worlds"
+    },
+    {
+      "authors": [
+        "Chinelo Onwualu"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2024",
+      "category": "Long Non-Fiction",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2024"
+      },
+      "title": "Ex Marginalia: Essays on Writing Speculative Fiction by Persons of Color"
+    },
+    {
+      "authors": [
+        "Farah Mendlesohn"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2024",
+      "category": "Long Non-Fiction",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2024"
+      },
+      "title": "The Female Man"
+    },
+    {
+      "authors": [
+        "Tiffani Angus",
+        "Val Nolan"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2024",
+      "category": "Long Non-Fiction",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2024"
+      },
+      "title": "Spec Fic for Newbies: A Beginner\u2019s Guide to Writing Subgenres of Science Fiction, Fantasy, and Horror"
+    },
+    {
+      "authors": [
+        "Abigail Nussbaum"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2025",
+      "category": "Long Non-Fiction",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2025"
+      },
+      "title": "Track Changes"
+    },
+    {
+      "authors": [
+        "John Clute"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2025",
+      "category": "Long Non-Fiction",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2025"
+      },
+      "title": "The Book Blinders"
+    },
+    {
+      "authors": [
+        "Paul March-Russell"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2025",
+      "category": "Long Non-Fiction",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2025"
+      },
+      "title": "J. G. Ballard's Crash: A Critical Companion"
+    },
+    {
+      "authors": [
+        "Paul Kincaid"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2025",
+      "category": "Long Non-Fiction",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2025"
+      },
+      "title": "Keith Roberts's Pavane: A Critical Companion"
+    },
+    {
+      "authors": [
+        "Tiffani Angus",
+        "Val Nolan"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2025",
+      "category": "Long Non-Fiction",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2025"
+      },
+      "title": "Spec Fic for Newbies Vol 2"
+    },
+    {
+      "authors": [
+        "Paul Kincaid"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2026",
+      "category": "Long Non-Fiction",
+      "position": "2026",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2026"
+      },
+      "title": "Colourfields: Writing About Writing About Science Fiction"
+    },
+    {
+      "authors": [
+        "Joy Sanchez-Taylor"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2026",
+      "category": "Long Non-Fiction",
+      "position": "2026.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2026"
+      },
+      "title": "Dispelling Fantasies: Authors of Colour Re-imagining a Genre"
+    },
+    {
+      "authors": [
+        "Adam Roberts"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2026",
+      "category": "Long Non-Fiction",
+      "position": "2026.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2026"
+      },
+      "title": "Fantasy: A Short History"
+    },
+    {
+      "authors": [
+        "Kate Holterhoff"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2026",
+      "category": "Long Non-Fiction",
+      "position": "2026.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2026"
+      },
+      "title": "Speculation and the Darwinian Method in British Romance Fiction, 1859-1914"
+    },
+    {
+      "authors": [
+        "Payton McCarty-Simas"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2026",
+      "category": "Long Non-Fiction",
+      "position": "2026.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2026"
+      },
+      "title": "That Very Witch: Fear, Feminism and the American Witch Film"
+    },
+    {
+      "authors": [
+        "Dan Coxon",
+        "Richard V. Hirst"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2026",
+      "category": "Long Non-Fiction",
+      "position": "2026.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2026"
+      },
+      "title": "Writing the Magic: Essays on Crafting Fantasy Fiction"
+    }
+  ],
+  "fetched_at": "2026-07-22T01:00:18Z",
+  "list_id": "bsfa_long_nonfiction",
+  "list_name": "BSFA - Long Non-Fiction",
+  "match_series": false,
+  "notes": [],
+  "parser": "bsfa_long_nonfiction",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "BSFA - Long Non-Fiction",
+    "source_id": "bsfa_long_nonfiction",
+    "url": "https://www.sfadb.com/British_SF_Association_Awards"
+  }
+}

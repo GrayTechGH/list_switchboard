@@ -1,0 +1,5127 @@
+{
+  "append_state": {
+    "entry_count": 300,
+    "last_entry_key": "the incandescent|emily tesh",
+    "last_position": "2025.19",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "George R.R. Martin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Fantasy",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2011"
+      },
+      "title": "A Dance with Dragons",
+      "votes": "8530"
+    },
+    {
+      "authors": [
+        "Erin Morgenstern"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Fantasy",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2011"
+      },
+      "title": "The Night Circus",
+      "votes": "8519"
+    },
+    {
+      "authors": [
+        "Patrick Rothfuss"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Fantasy",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2011"
+      },
+      "title": "The Wise Man's Fear",
+      "votes": "4962"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Fantasy",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2011"
+      },
+      "title": "Snuff",
+      "votes": "2479"
+    },
+    {
+      "authors": [
+        "Jennifer McMahon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Fantasy",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2011"
+      },
+      "title": "Don't Breathe a Word",
+      "votes": "1894"
+    },
+    {
+      "authors": [
+        "Lev Grossman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Fantasy",
+      "position": "2011.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2011"
+      },
+      "title": "The Magician King",
+      "votes": "1656"
+    },
+    {
+      "authors": [
+        "Jasper Fforde"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Fantasy",
+      "position": "2011.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2011"
+      },
+      "title": "One of Our Thursdays Is Missing",
+      "votes": "1584"
+    },
+    {
+      "authors": [
+        "Anne Bishop"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Fantasy",
+      "position": "2011.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2011"
+      },
+      "title": "Twilight's Dawn",
+      "votes": "1418"
+    },
+    {
+      "authors": [
+        "Jacqueline Carey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Fantasy",
+      "position": "2011.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2011"
+      },
+      "title": "Naamah's Blessing",
+      "votes": "1391"
+    },
+    {
+      "authors": [
+        "Mark Lawrence"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Fantasy",
+      "position": "2011.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2011"
+      },
+      "title": "Prince of Thorns",
+      "votes": "1164"
+    },
+    {
+      "authors": [
+        "Trudi Canavan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Fantasy",
+      "position": "2011.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2011"
+      },
+      "title": "The Rogue",
+      "votes": "559"
+    },
+    {
+      "authors": [
+        "Jo Walton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Fantasy",
+      "position": "2011.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2011"
+      },
+      "title": "Among Others",
+      "votes": "534"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Fantasy",
+      "position": "2011.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2011"
+      },
+      "title": "The Alloy of Law",
+      "votes": "397"
+    },
+    {
+      "authors": [
+        "Michelle Sagara"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Fantasy",
+      "position": "2011.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2011"
+      },
+      "title": "Cast in Ruin",
+      "votes": "358"
+    },
+    {
+      "authors": [
+        "Catherynne M. Valente"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Fantasy",
+      "position": "2011.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2011"
+      },
+      "title": "Deathless",
+      "votes": "342"
+    },
+    {
+      "authors": [
+        "Joe Abercrombie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Fantasy",
+      "position": "2011.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2011"
+      },
+      "title": "The Heroes",
+      "votes": "329"
+    },
+    {
+      "authors": [
+        "Kristen Britain"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Fantasy",
+      "position": "2011.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2011"
+      },
+      "title": "Blackveil",
+      "votes": "297"
+    },
+    {
+      "authors": [
+        "N.K. Jemisin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Fantasy",
+      "position": "2011.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2011"
+      },
+      "title": "The Kingdom of Gods",
+      "votes": "187"
+    },
+    {
+      "authors": [
+        "Terry Brooks"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Fantasy",
+      "position": "2011.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2011"
+      },
+      "title": "The Measure of the Magic",
+      "votes": "167"
+    },
+    {
+      "authors": [
+        "Terry Goodkind"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Fantasy",
+      "position": "2011.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2011"
+      },
+      "title": "The Omen Machine",
+      "votes": "117"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Fantasy",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2012"
+      },
+      "title": "The Wind Through the Keyhole",
+      "votes": "8226"
+    },
+    {
+      "authors": [
+        "Jasper Fforde"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Fantasy",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2012"
+      },
+      "title": "The Woman Who Died A Lot",
+      "votes": "5221"
+    },
+    {
+      "authors": [
+        "Terry Goodkind"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Fantasy",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2012"
+      },
+      "title": "The First Confessor",
+      "votes": "4510"
+    },
+    {
+      "authors": [
+        "Mark Lawrence"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Fantasy",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2012"
+      },
+      "title": "King of Thorns",
+      "votes": "4332"
+    },
+    {
+      "authors": [
+        "Brent Weeks"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Fantasy",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2012"
+      },
+      "title": "The Blinding Knife",
+      "votes": "3491"
+    },
+    {
+      "authors": [
+        "Trudi Canavan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Fantasy",
+      "position": "2012.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2012"
+      },
+      "title": "The Traitor Queen",
+      "votes": "3142"
+    },
+    {
+      "authors": [
+        "Robin Hobb"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Fantasy",
+      "position": "2012.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2012"
+      },
+      "title": "City of Dragons",
+      "votes": "2893"
+    },
+    {
+      "authors": [
+        "N.K. Jemisin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Fantasy",
+      "position": "2012.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2012"
+      },
+      "title": "The Killing Moon",
+      "votes": "2483"
+    },
+    {
+      "authors": [
+        "Graham Joyce"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Fantasy",
+      "position": "2012.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2012"
+      },
+      "title": "Some Kind of Fairy Tale",
+      "votes": "2266"
+    },
+    {
+      "authors": [
+        "G. Willow Wilson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Fantasy",
+      "position": "2012.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2012"
+      },
+      "title": "Alif the Unseen",
+      "votes": "1969"
+    },
+    {
+      "authors": [
+        "Anne Bishop"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Fantasy",
+      "position": "2012.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2012"
+      },
+      "title": "Bridge of Dreams",
+      "votes": "1331"
+    },
+    {
+      "authors": [
+        "Lynn Flewelling"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Fantasy",
+      "position": "2012.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2012"
+      },
+      "title": "Casket of Souls",
+      "votes": "1070"
+    },
+    {
+      "authors": [
+        "Michael J. Sullivan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Fantasy",
+      "position": "2012.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2012"
+      },
+      "title": "Percepliquis",
+      "votes": "1039"
+    },
+    {
+      "authors": [
+        "Saladin Ahmed"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Fantasy",
+      "position": "2012.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2012"
+      },
+      "title": "Throne of the Crescent Moon",
+      "votes": "930"
+    },
+    {
+      "authors": [
+        "Daniel Abraham"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Fantasy",
+      "position": "2012.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2012"
+      },
+      "title": "The King's Blood",
+      "votes": "797"
+    },
+    {
+      "authors": [
+        "Michelle Sagara"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Fantasy",
+      "position": "2012.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2012"
+      },
+      "title": "Cast in Peril",
+      "votes": "779"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Fantasy",
+      "position": "2012.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2012"
+      },
+      "title": "The Emperor's Soul",
+      "votes": "572"
+    },
+    {
+      "authors": [
+        "Terry Brooks"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Fantasy",
+      "position": "2012.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2012"
+      },
+      "title": "Wards of Faerie",
+      "votes": "409"
+    },
+    {
+      "authors": [
+        "Joe Abercrombie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Fantasy",
+      "position": "2012.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2012"
+      },
+      "title": "Red Country",
+      "votes": "298"
+    },
+    {
+      "authors": [
+        "Steven Erikson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Fantasy",
+      "position": "2012.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2012"
+      },
+      "title": "Forge of Darkness",
+      "votes": "184"
+    },
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Fantasy",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2013"
+      },
+      "title": "The Ocean at the End of the Lane",
+      "votes": "43534"
+    },
+    {
+      "authors": [
+        "Robert Jordan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Fantasy",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2013"
+      },
+      "title": "A Memory of Light",
+      "votes": "13021"
+    },
+    {
+      "authors": [
+        "Helene Wecker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Fantasy",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2013"
+      },
+      "title": "The Golem and the Jinni",
+      "votes": "8378"
+    },
+    {
+      "authors": [
+        "Scott Lynch"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Fantasy",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2013"
+      },
+      "title": "The Republic of Thieves",
+      "votes": "7231"
+    },
+    {
+      "authors": [
+        "Yangsze Choo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Fantasy",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2013"
+      },
+      "title": "The Ghost Bride",
+      "votes": "6969"
+    },
+    {
+      "authors": [
+        "Susanna Kearsley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Fantasy",
+      "position": "2013.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2013"
+      },
+      "title": "The Firebird",
+      "votes": "6381"
+    },
+    {
+      "authors": [
+        "Robin Hobb"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Fantasy",
+      "position": "2013.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2013"
+      },
+      "title": "Blood of Dragons",
+      "votes": "5016"
+    },
+    {
+      "authors": [
+        "Bee Ridgway"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Fantasy",
+      "position": "2013.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2013"
+      },
+      "title": "The River of No Return",
+      "votes": "4947"
+    },
+    {
+      "authors": [
+        "Mark Lawrence"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Fantasy",
+      "position": "2013.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2013"
+      },
+      "title": "Emperor of Thorns",
+      "votes": "4914"
+    },
+    {
+      "authors": [
+        "Lindsay Buroker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Fantasy",
+      "position": "2013.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2013"
+      },
+      "title": "Forged in Blood I",
+      "votes": "4154"
+    },
+    {
+      "authors": [
+        "R.A. Salvatore"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Fantasy",
+      "position": "2013.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2013"
+      },
+      "title": "The Companions",
+      "votes": "2084"
+    },
+    {
+      "authors": [
+        "V.E. Schwab"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Fantasy",
+      "position": "2013.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2013"
+      },
+      "title": "Vicious",
+      "votes": "2059"
+    },
+    {
+      "authors": [
+        "Peter V. Brett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Fantasy",
+      "position": "2013.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2013"
+      },
+      "title": "The Daylight War",
+      "votes": "2016"
+    },
+    {
+      "authors": [
+        "Michael J. Sullivan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Fantasy",
+      "position": "2013.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2013"
+      },
+      "title": "The Crown Tower",
+      "votes": "1952"
+    },
+    {
+      "authors": [
+        "Brian McClellan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Fantasy",
+      "position": "2013.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2013"
+      },
+      "title": "Promise of Blood",
+      "votes": "1535"
+    },
+    {
+      "authors": [
+        "Emily Croy Barker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Fantasy",
+      "position": "2013.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2013"
+      },
+      "title": "The Thinking Woman's Guide to Real Magic",
+      "votes": "832"
+    },
+    {
+      "authors": [
+        "Marie Brennan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Fantasy",
+      "position": "2013.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2013"
+      },
+      "title": "A Natural History of Dragons",
+      "votes": "697"
+    },
+    {
+      "authors": [
+        "Terry Goodkind"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Fantasy",
+      "position": "2013.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2013"
+      },
+      "title": "The Third Kingdom",
+      "votes": "489"
+    },
+    {
+      "authors": [
+        "M.J. Rose"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Fantasy",
+      "position": "2013.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2013"
+      },
+      "title": "Seduction",
+      "votes": "481"
+    },
+    {
+      "authors": [
+        "Guy Gavriel Kay"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Fantasy",
+      "position": "2013.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2013"
+      },
+      "title": "River of Stars",
+      "votes": "292"
+    },
+    {
+      "authors": [
+        "Deborah Harkness"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Fantasy",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2014"
+      },
+      "title": "The Book of Life",
+      "votes": "51462"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Fantasy",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2014"
+      },
+      "title": "Words of Radiance",
+      "votes": "28449"
+    },
+    {
+      "authors": [
+        "Jim Butcher"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Fantasy",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2014"
+      },
+      "title": "Skin Game",
+      "votes": "22104"
+    },
+    {
+      "authors": [
+        "Patrick Rothfuss"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Fantasy",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2014"
+      },
+      "title": "The Slow Regard of Silent Things",
+      "votes": "19301"
+    },
+    {
+      "authors": [
+        "Lev Grossman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Fantasy",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2014"
+      },
+      "title": "The Magician's Land",
+      "votes": "16751"
+    },
+    {
+      "authors": [
+        "Patricia Briggs"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Fantasy",
+      "position": "2014.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2014"
+      },
+      "title": "Night Broken",
+      "votes": "16402"
+    },
+    {
+      "authors": [
+        "Jeaniene Frost"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Fantasy",
+      "position": "2014.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2014"
+      },
+      "title": "Up from the Grave",
+      "votes": "16174"
+    },
+    {
+      "authors": [
+        "Kim Harrison"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Fantasy",
+      "position": "2014.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2014"
+      },
+      "title": "The Witch with No Name",
+      "votes": "13762"
+    },
+    {
+      "authors": [
+        "Ilona Andrews"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Fantasy",
+      "position": "2014.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2014"
+      },
+      "title": "Magic Breaks",
+      "votes": "13413"
+    },
+    {
+      "authors": [
+        "Robert Jackson Bennett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Fantasy",
+      "position": "2014.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2014"
+      },
+      "title": "City of Stairs",
+      "votes": "8713"
+    },
+    {
+      "authors": [
+        "Mark Lawrence"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Fantasy",
+      "position": "2014.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2014"
+      },
+      "title": "Prince of Fools",
+      "votes": "4544"
+    },
+    {
+      "authors": [
+        "Brent Weeks"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Fantasy",
+      "position": "2014.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2014"
+      },
+      "title": "The Broken Eye",
+      "votes": "3431"
+    },
+    {
+      "authors": [
+        "Erika Johansen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Fantasy",
+      "position": "2014.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2014"
+      },
+      "title": "The Queen of the Tearling",
+      "votes": "3428"
+    },
+    {
+      "authors": [
+        "Robin Hobb"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Fantasy",
+      "position": "2014.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2014"
+      },
+      "title": "Fool's Assassin",
+      "votes": "2925"
+    },
+    {
+      "authors": [
+        "Anne Bishop"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Fantasy",
+      "position": "2014.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2014"
+      },
+      "title": "Murder of Crows",
+      "votes": "2722"
+    },
+    {
+      "authors": [
+        "Katherine Addison"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Fantasy",
+      "position": "2014.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2014"
+      },
+      "title": "The Goblin Emperor",
+      "votes": "2063"
+    },
+    {
+      "authors": [
+        "Brian Staveley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Fantasy",
+      "position": "2014.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2014"
+      },
+      "title": "The Emperor's Blades",
+      "votes": "1669"
+    },
+    {
+      "authors": [
+        "Kevin Hearne"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Fantasy",
+      "position": "2014.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2014"
+      },
+      "title": "Shattered",
+      "votes": "1400"
+    },
+    {
+      "authors": [
+        "Anthony Ryan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Fantasy",
+      "position": "2014.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2014"
+      },
+      "title": "Tower Lord",
+      "votes": "1254"
+    },
+    {
+      "authors": [
+        "Sebastien de Castell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Fantasy",
+      "position": "2014.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2014"
+      },
+      "title": "Traitor's Blade",
+      "votes": "844"
+    },
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Fantasy",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2015"
+      },
+      "title": "Trigger Warning: Short Fictions and Disturbances",
+      "votes": "33681"
+    },
+    {
+      "authors": [
+        "V.E. Schwab"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Fantasy",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2015"
+      },
+      "title": "A Darker Shade of Magic",
+      "votes": "30530"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Fantasy",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2015"
+      },
+      "title": "Shadows of Self",
+      "votes": "18171"
+    },
+    {
+      "authors": [
+        "Ilona Andrews"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Fantasy",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2015"
+      },
+      "title": "Magic Shifts",
+      "votes": "16527"
+    },
+    {
+      "authors": [
+        "Jim Butcher"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Fantasy",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2015"
+      },
+      "title": "The Aeronaut's Windlass",
+      "votes": "13360"
+    },
+    {
+      "authors": [
+        "Robin Hobb"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Fantasy",
+      "position": "2015.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2015"
+      },
+      "title": "Fool's Quest",
+      "votes": "12690"
+    },
+    {
+      "authors": [
+        "Anne Bishop"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Fantasy",
+      "position": "2015.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2015"
+      },
+      "title": "Vision in Silver",
+      "votes": "12084"
+    },
+    {
+      "authors": [
+        "Patricia Briggs"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Fantasy",
+      "position": "2015.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2015"
+      },
+      "title": "Dead Heat",
+      "votes": "11446"
+    },
+    {
+      "authors": [
+        "Karen Marie Moning"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Fantasy",
+      "position": "2015.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2015"
+      },
+      "title": "Burned",
+      "votes": "10878"
+    },
+    {
+      "authors": [
+        "N.K. Jemisin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Fantasy",
+      "position": "2015.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2015"
+      },
+      "title": "The Fifth Season",
+      "votes": "8312"
+    },
+    {
+      "authors": [
+        "Erika Johansen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Fantasy",
+      "position": "2015.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2015"
+      },
+      "title": "The Invasion of the Tearling",
+      "votes": "4007"
+    },
+    {
+      "authors": [
+        "Mark Lawrence"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Fantasy",
+      "position": "2015.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2015"
+      },
+      "title": "The Liar's Key",
+      "votes": "3520"
+    },
+    {
+      "authors": [
+        "Kazuo Ishiguro"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Fantasy",
+      "position": "2015.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2015"
+      },
+      "title": "The Buried Giant",
+      "votes": "3424"
+    },
+    {
+      "authors": [
+        "Annette Marie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Fantasy",
+      "position": "2015.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2015"
+      },
+      "title": "Yield the Night",
+      "votes": "3184"
+    },
+    {
+      "authors": [
+        "Peter V. Brett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Fantasy",
+      "position": "2015.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2015"
+      },
+      "title": "The Skull Throne",
+      "votes": "3182"
+    },
+    {
+      "authors": [
+        "Samantha Shannon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Fantasy",
+      "position": "2015.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2015"
+      },
+      "title": "The Mime Order",
+      "votes": "2634"
+    },
+    {
+      "authors": [
+        "Brian McClellan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Fantasy",
+      "position": "2015.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2015"
+      },
+      "title": "The Autumn Republic",
+      "votes": "2093"
+    },
+    {
+      "authors": [
+        "Shannon Mayer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Fantasy",
+      "position": "2015.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2015"
+      },
+      "title": "Recurve",
+      "votes": "2019"
+    },
+    {
+      "authors": [
+        "Melissa F. Olson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Fantasy",
+      "position": "2015.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2015"
+      },
+      "title": "Boundary Crossed",
+      "votes": "1727"
+    },
+    {
+      "authors": [
+        "Brian Staveley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Fantasy",
+      "position": "2015.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2015"
+      },
+      "title": "The Providence of Fire",
+      "votes": "702"
+    },
+    {
+      "authors": [
+        "J.K. Rowling",
+        "Jack Thorne",
+        "John Tiffany"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Fantasy",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2016"
+      },
+      "title": "Harry Potter and the Cursed Child: Parts One and Two",
+      "votes": "128543"
+    },
+    {
+      "authors": [
+        "V.E. Schwab"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Fantasy",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2016"
+      },
+      "title": "A Gathering of Shadows",
+      "votes": "38615"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Fantasy",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2016"
+      },
+      "title": "The Bands of Mourning",
+      "votes": "28982"
+    },
+    {
+      "authors": [
+        "Karen Marie Moning"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Fantasy",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2016"
+      },
+      "title": "Feverborn",
+      "votes": "16412"
+    },
+    {
+      "authors": [
+        "Patricia Briggs"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Fantasy",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2016"
+      },
+      "title": "Fire Touched",
+      "votes": "14798"
+    },
+    {
+      "authors": [
+        "Charlie Jane Anders"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Fantasy",
+      "position": "2016.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2016"
+      },
+      "title": "All the Birds in the Sky",
+      "votes": "13753"
+    },
+    {
+      "authors": [
+        "Ilona Andrews"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Fantasy",
+      "position": "2016.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2016"
+      },
+      "title": "Magic Binds",
+      "votes": "13346"
+    },
+    {
+      "authors": [
+        "Amy Harmon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Fantasy",
+      "position": "2016.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2016"
+      },
+      "title": "The Bird and the Sword",
+      "votes": "12739"
+    },
+    {
+      "authors": [
+        "Anne Bishop"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Fantasy",
+      "position": "2016.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2016"
+      },
+      "title": "Marked in Flesh",
+      "votes": "10114"
+    },
+    {
+      "authors": [
+        "Darynda Jones"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Fantasy",
+      "position": "2016.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2016"
+      },
+      "title": "The Curse of Tenth Grave",
+      "votes": "8924"
+    },
+    {
+      "authors": [
+        "N.K. Jemisin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Fantasy",
+      "position": "2016.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2016"
+      },
+      "title": "The Obelisk Gate",
+      "votes": "4987"
+    },
+    {
+      "authors": [
+        "Ken Liu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Fantasy",
+      "position": "2016.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2016"
+      },
+      "title": "The Paper Menagerie and Other Stories",
+      "votes": "4952"
+    },
+    {
+      "authors": [
+        "Michael J. Sullivan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Fantasy",
+      "position": "2016.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2016"
+      },
+      "title": "Age of Myth",
+      "votes": "4870"
+    },
+    {
+      "authors": [
+        "Kevin Hearne"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Fantasy",
+      "position": "2016.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2016"
+      },
+      "title": "Staked",
+      "votes": "3354"
+    },
+    {
+      "authors": [
+        "Daniel O'Malley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Fantasy",
+      "position": "2016.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2016"
+      },
+      "title": "Stiletto",
+      "votes": "3208"
+    },
+    {
+      "authors": [
+        "Seanan McGuire"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Fantasy",
+      "position": "2016.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2016"
+      },
+      "title": "Every Heart a Doorway",
+      "votes": "1986"
+    },
+    {
+      "authors": [
+        "Mark Lawrence"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Fantasy",
+      "position": "2016.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2016"
+      },
+      "title": "The Wheel of Osheim",
+      "votes": "1613"
+    },
+    {
+      "authors": [
+        "Karpov Kinrade"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Fantasy",
+      "position": "2016.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2016"
+      },
+      "title": "Vampire Girl",
+      "votes": "1497"
+    },
+    {
+      "authors": [
+        "Brent Weeks"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Fantasy",
+      "position": "2016.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2016"
+      },
+      "title": "The Blood Mirror",
+      "votes": "1246"
+    },
+    {
+      "authors": [
+        "Robert Jackson Bennett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Fantasy",
+      "position": "2016.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2016"
+      },
+      "title": "City of Blades",
+      "votes": "713"
+    },
+    {
+      "authors": [
+        "J.K. Rowling"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Fantasy",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2017"
+      },
+      "title": "Fantastic Beasts and Where to Find Them: The Original Screenplay",
+      "votes": "92611"
+    },
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Fantasy",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2017"
+      },
+      "title": "Norse Mythology",
+      "votes": "54591"
+    },
+    {
+      "authors": [
+        "V.E. Schwab"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Fantasy",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2017"
+      },
+      "title": "A Conjuring of Light",
+      "votes": "50134"
+    },
+    {
+      "authors": [
+        "Katherine Arden"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Fantasy",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2017"
+      },
+      "title": "The Bear and the Nightingale",
+      "votes": "24505"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Fantasy",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2017"
+      },
+      "title": "Oathbringer",
+      "votes": "23979"
+    },
+    {
+      "authors": [
+        "Ilona Andrews"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Fantasy",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2017"
+      },
+      "title": "One Fell Sweep",
+      "votes": "16490"
+    },
+    {
+      "authors": [
+        "Karen Marie Moning"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Fantasy",
+      "position": "2017.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2017"
+      },
+      "title": "Feversong",
+      "votes": "15136"
+    },
+    {
+      "authors": [
+        "Robin Hobb"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Fantasy",
+      "position": "2017.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2017"
+      },
+      "title": "Assassin's Fate",
+      "votes": "14612"
+    },
+    {
+      "authors": [
+        "N.K. Jemisin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Fantasy",
+      "position": "2017.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2017"
+      },
+      "title": "The Stone Sky",
+      "votes": "13885"
+    },
+    {
+      "authors": [
+        "Erika Johansen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Fantasy",
+      "position": "2017.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2017"
+      },
+      "title": "The Fate of the Tearling",
+      "votes": "13450"
+    },
+    {
+      "authors": [
+        "Anne Bishop"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Fantasy",
+      "position": "2017.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2017"
+      },
+      "title": "Etched in Bone",
+      "votes": "5602"
+    },
+    {
+      "authors": [
+        "Mark Lawrence"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Fantasy",
+      "position": "2017.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2017"
+      },
+      "title": "Red Sister",
+      "votes": "5230"
+    },
+    {
+      "authors": [
+        "Darynda Jones"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Fantasy",
+      "position": "2017.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2017"
+      },
+      "title": "Eleventh Grave in Moonlight",
+      "votes": "4749"
+    },
+    {
+      "authors": [
+        "Patricia Briggs"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Fantasy",
+      "position": "2017.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2017"
+      },
+      "title": "Silence Fallen",
+      "votes": "3391"
+    },
+    {
+      "authors": [
+        "Nicholas Eames"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Fantasy",
+      "position": "2017.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2017"
+      },
+      "title": "Kings of the Wyld",
+      "votes": "1995"
+    },
+    {
+      "authors": [
+        "Tad Williams"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Fantasy",
+      "position": "2017.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2017"
+      },
+      "title": "The Witchwood Crown",
+      "votes": "1684"
+    },
+    {
+      "authors": [
+        "Brian McClellan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Fantasy",
+      "position": "2017.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2017"
+      },
+      "title": "Sins of Empire",
+      "votes": "1621"
+    },
+    {
+      "authors": [
+        "Aleron Kong"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Fantasy",
+      "position": "2017.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2017"
+      },
+      "title": "The Land",
+      "votes": "1561"
+    },
+    {
+      "authors": [
+        "Michael J. Sullivan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Fantasy",
+      "position": "2017.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2017"
+      },
+      "title": "Age of Swords",
+      "votes": "1248"
+    },
+    {
+      "authors": [
+        "Robert Jackson Bennett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Fantasy",
+      "position": "2017.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2017"
+      },
+      "title": "City of Miracles",
+      "votes": "874"
+    },
+    {
+      "authors": [
+        "Madeline Miller"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Fantasy",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2018"
+      },
+      "title": "Circe",
+      "votes": "78733"
+    },
+    {
+      "authors": [
+        "Guillermo del Toro"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Fantasy",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2018"
+      },
+      "title": "The Shape of Water",
+      "votes": "42447"
+    },
+    {
+      "authors": [
+        "Naomi Novik"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Fantasy",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2018"
+      },
+      "title": "Spinning Silver",
+      "votes": "33866"
+    },
+    {
+      "authors": [
+        "Nora Roberts"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Fantasy",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2018"
+      },
+      "title": "Year One",
+      "votes": "31131"
+    },
+    {
+      "authors": [
+        "Ilona Andrews"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Fantasy",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2018"
+      },
+      "title": "Iron and Magic",
+      "votes": "18626"
+    },
+    {
+      "authors": [
+        "R.F. Kuang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Fantasy",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2018"
+      },
+      "title": "The Poppy War",
+      "votes": "18040"
+    },
+    {
+      "authors": [
+        "Seanan McGuire"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Fantasy",
+      "position": "2018.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2018"
+      },
+      "title": "Beneath the Sugar Sky",
+      "votes": "16582"
+    },
+    {
+      "authors": [
+        "Karen Marie Moning"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Fantasy",
+      "position": "2018.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2018"
+      },
+      "title": "High Voltage",
+      "votes": "13158"
+    },
+    {
+      "authors": [
+        "Patricia Briggs"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Fantasy",
+      "position": "2018.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2018"
+      },
+      "title": "Burn Bright",
+      "votes": "12338"
+    },
+    {
+      "authors": [
+        "Mark Lawrence"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Fantasy",
+      "position": "2018.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2018"
+      },
+      "title": "Grey Sister",
+      "votes": "11954"
+    },
+    {
+      "authors": [
+        "Peng Shepherd"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Fantasy",
+      "position": "2018.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2018"
+      },
+      "title": "The Book of M",
+      "votes": "5600"
+    },
+    {
+      "authors": [
+        "Katherine Arden"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Fantasy",
+      "position": "2018.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2018"
+      },
+      "title": "The Girl in the Tower",
+      "votes": "4636"
+    },
+    {
+      "authors": [
+        "Michael J. Sullivan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Fantasy",
+      "position": "2018.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2018"
+      },
+      "title": "Age of War",
+      "votes": "4013"
+    },
+    {
+      "authors": [
+        "Aleron Kong"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Fantasy",
+      "position": "2018.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2018"
+      },
+      "title": "The Land",
+      "votes": "3791"
+    },
+    {
+      "authors": [
+        "Deborah Harkness"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Fantasy",
+      "position": "2018.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2018"
+      },
+      "title": "Time's Convert",
+      "votes": "3662"
+    },
+    {
+      "authors": [
+        "Ilona Andrews"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Fantasy",
+      "position": "2018.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2018"
+      },
+      "title": "Magic Triumphs",
+      "votes": "3549"
+    },
+    {
+      "authors": [
+        "Josiah Bancroft"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Fantasy",
+      "position": "2018.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2018"
+      },
+      "title": "Senlin Ascends",
+      "votes": "3066"
+    },
+    {
+      "authors": [
+        "Brian McClellan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Fantasy",
+      "position": "2018.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2018"
+      },
+      "title": "Wrath of Empire",
+      "votes": "2397"
+    },
+    {
+      "authors": [
+        "Robert Jackson Bennett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Fantasy",
+      "position": "2018.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2018"
+      },
+      "title": "Foundryside",
+      "votes": "1121"
+    },
+    {
+      "authors": [
+        "Nicholas Eames"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Fantasy",
+      "position": "2018.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2018"
+      },
+      "title": "Bloody Rose",
+      "votes": "1117"
+    },
+    {
+      "authors": [
+        "Leigh Bardugo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Fantasy",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2019"
+      },
+      "title": "Ninth House",
+      "votes": "53430"
+    },
+    {
+      "authors": [
+        "Erin Morgenstern"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Fantasy",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2019"
+      },
+      "title": "The Starless Sea",
+      "votes": "35351"
+    },
+    {
+      "authors": [
+        "George R.R. Martin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Fantasy",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2019"
+      },
+      "title": "Fire & Blood",
+      "votes": "32778"
+    },
+    {
+      "authors": [
+        "Samantha Shannon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Fantasy",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2019"
+      },
+      "title": "The Priory of the Orange Tree",
+      "votes": "30868"
+    },
+    {
+      "authors": [
+        "Cassandra Clare"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Fantasy",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2019"
+      },
+      "title": "The Red Scrolls of Magic",
+      "votes": "29553"
+    },
+    {
+      "authors": [
+        "Katherine Arden"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Fantasy",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2019"
+      },
+      "title": "The Winter of the Witch",
+      "votes": "26836"
+    },
+    {
+      "authors": [
+        "Nora Roberts"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Fantasy",
+      "position": "2019.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2019"
+      },
+      "title": "Of Blood and Bone",
+      "votes": "25671"
+    },
+    {
+      "authors": [
+        "Patricia Briggs"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Fantasy",
+      "position": "2019.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2019"
+      },
+      "title": "Storm Cursed",
+      "votes": "22383"
+    },
+    {
+      "authors": [
+        "Marlon James"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Fantasy",
+      "position": "2019.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2019"
+      },
+      "title": "Black Leopard, Red Wolf",
+      "votes": "15015"
+    },
+    {
+      "authors": [
+        "Seanan McGuire"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Fantasy",
+      "position": "2019.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2019"
+      },
+      "title": "Middlegame",
+      "votes": "14421"
+    },
+    {
+      "authors": [
+        "Alix E. Harrow"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Fantasy",
+      "position": "2019.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2019"
+      },
+      "title": "The Ten Thousand Doors of January",
+      "votes": "6698"
+    },
+    {
+      "authors": [
+        "Silvia Moreno-Garcia"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Fantasy",
+      "position": "2019.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2019"
+      },
+      "title": "Gods of Jade and Shadow",
+      "votes": "6541"
+    },
+    {
+      "authors": [
+        "S.A. Chakraborty"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Fantasy",
+      "position": "2019.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2019"
+      },
+      "title": "The Kingdom of Copper",
+      "votes": "5588"
+    },
+    {
+      "authors": [
+        "R.F. Kuang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Fantasy",
+      "position": "2019.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2019"
+      },
+      "title": "The Dragon Republic",
+      "votes": "4669"
+    },
+    {
+      "authors": [
+        "Jay Kristoff"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Fantasy",
+      "position": "2019.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2019"
+      },
+      "title": "Darkdawn",
+      "votes": "4593"
+    },
+    {
+      "authors": [
+        "Sarah Gailey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Fantasy",
+      "position": "2019.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2019"
+      },
+      "title": "Magic for Liars",
+      "votes": "4424"
+    },
+    {
+      "authors": [
+        "Brent Weeks"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Fantasy",
+      "position": "2019.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2019"
+      },
+      "title": "The Burning White",
+      "votes": "2745"
+    },
+    {
+      "authors": [
+        "Michael J. Sullivan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Fantasy",
+      "position": "2019.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2019"
+      },
+      "title": "Age of Legend",
+      "votes": "2239"
+    },
+    {
+      "authors": [
+        "Joe Abercrombie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Fantasy",
+      "position": "2019.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2019"
+      },
+      "title": "A Little Hatred",
+      "votes": "2097"
+    },
+    {
+      "authors": [
+        "Mark Lawrence"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Fantasy",
+      "position": "2019.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2019"
+      },
+      "title": "Holy Sister",
+      "votes": "2047"
+    },
+    {
+      "authors": [
+        "Sarah J. Maas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Fantasy",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2020"
+      },
+      "title": "House of Earth and Blood",
+      "votes": "95084"
+    },
+    {
+      "authors": [
+        "V.E. Schwab"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Fantasy",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2020"
+      },
+      "title": "The Invisible Life of Addie LaRue",
+      "votes": "93262"
+    },
+    {
+      "authors": [
+        "T.J. Klune"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Fantasy",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2020"
+      },
+      "title": "The House in the Cerulean Sea",
+      "votes": "45778"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Fantasy",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2020"
+      },
+      "title": "Rhythm of War",
+      "votes": "34162"
+    },
+    {
+      "authors": [
+        "N.K. Jemisin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Fantasy",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2020"
+      },
+      "title": "The City We Became",
+      "votes": "29105"
+    },
+    {
+      "authors": [
+        "Alix E. Harrow"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Fantasy",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2020"
+      },
+      "title": "The Once and Future Witches",
+      "votes": "22697"
+    },
+    {
+      "authors": [
+        "Susanna Clarke"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Fantasy",
+      "position": "2020.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2020"
+      },
+      "title": "Piranesi",
+      "votes": "19179"
+    },
+    {
+      "authors": [
+        "Naomi Novik"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Fantasy",
+      "position": "2020.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2020"
+      },
+      "title": "A Deadly Education",
+      "votes": "18109"
+    },
+    {
+      "authors": [
+        "S.A. Chakraborty"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Fantasy",
+      "position": "2020.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2020"
+      },
+      "title": "The Empire of Gold",
+      "votes": "15292"
+    },
+    {
+      "authors": [
+        "Jim Butcher"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Fantasy",
+      "position": "2020.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2020"
+      },
+      "title": "Peace Talks",
+      "votes": "15245"
+    },
+    {
+      "authors": [
+        "R.F. Kuang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Fantasy",
+      "position": "2020.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2020"
+      },
+      "title": "The Burning God",
+      "votes": "5619"
+    },
+    {
+      "authors": [
+        "Rebecca Roanhorse"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Fantasy",
+      "position": "2020.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2020"
+      },
+      "title": "Black Sun",
+      "votes": "4780"
+    },
+    {
+      "authors": [
+        "Patricia Briggs"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Fantasy",
+      "position": "2020.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2020"
+      },
+      "title": "Smoke Bitten",
+      "votes": "4283"
+    },
+    {
+      "authors": [
+        "Mark Lawrence"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Fantasy",
+      "position": "2020.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2020"
+      },
+      "title": "The Girl and the Stars",
+      "votes": "3782"
+    },
+    {
+      "authors": [
+        "Nghi Vo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Fantasy",
+      "position": "2020.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2020"
+      },
+      "title": "The Empress of Salt and Fortune",
+      "votes": "3020"
+    },
+    {
+      "authors": [
+        "Jim Butcher"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Fantasy",
+      "position": "2020.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2020"
+      },
+      "title": "Battle Ground",
+      "votes": "2496"
+    },
+    {
+      "authors": [
+        "Will Wight"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Fantasy",
+      "position": "2020.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2020"
+      },
+      "title": "Wintersteel",
+      "votes": "2271"
+    },
+    {
+      "authors": [
+        "Andrea Stewart"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Fantasy",
+      "position": "2020.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2020"
+      },
+      "title": "The Bone Shard Daughter",
+      "votes": "2158"
+    },
+    {
+      "authors": [
+        "Joe Abercrombie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Fantasy",
+      "position": "2020.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2020"
+      },
+      "title": "The Trouble With Peace",
+      "votes": "1671"
+    },
+    {
+      "authors": [
+        "Michael J. Sullivan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Fantasy",
+      "position": "2020.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2020"
+      },
+      "title": "Age of Empyre",
+      "votes": "1247"
+    },
+    {
+      "authors": [
+        "Sarah J. Maas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Fantasy",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2021"
+      },
+      "title": "A \u200bCourt of Silver Flames",
+      "votes": "111498"
+    },
+    {
+      "authors": [
+        "T.J. Klune"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Fantasy",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2021"
+      },
+      "title": "Under the Whispering Door",
+      "votes": "56324"
+    },
+    {
+      "authors": [
+        "Jennifer L. Armentrout"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Fantasy",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2021"
+      },
+      "title": "The \u200bCrown of Gilded Bones",
+      "votes": "47241"
+    },
+    {
+      "authors": [
+        "Shelley Parker-Chan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Fantasy",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2021"
+      },
+      "title": "She Who Became the Sun",
+      "votes": "28661"
+    },
+    {
+      "authors": [
+        "Jennifer Saint"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Fantasy",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2021"
+      },
+      "title": "Ariadne",
+      "votes": "27730"
+    },
+    {
+      "authors": [
+        "Naomi Novik"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Fantasy",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2021"
+      },
+      "title": "The Last Graduate",
+      "votes": "24089"
+    },
+    {
+      "authors": [
+        "Alice Hoffman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Fantasy",
+      "position": "2021.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2021"
+      },
+      "title": "The Book of Magic",
+      "votes": "17570"
+    },
+    {
+      "authors": [
+        "Genevieve Gornichec"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Fantasy",
+      "position": "2021.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2021"
+      },
+      "title": "The Witch's Heart",
+      "votes": "15892"
+    },
+    {
+      "authors": [
+        "Zoraida C\u00f3rdova"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Fantasy",
+      "position": "2021.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2021"
+      },
+      "title": "The Inheritance of Orqu\u00eddea Divina",
+      "votes": "14992"
+    },
+    {
+      "authors": [
+        "John Gwynne"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Fantasy",
+      "position": "2021.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2021"
+      },
+      "title": "The Shadow of the Gods",
+      "votes": "14140"
+    },
+    {
+      "authors": [
+        "Hannah Whitten"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Fantasy",
+      "position": "2021.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2021"
+      },
+      "title": "For the Wolf",
+      "votes": "5306"
+    },
+    {
+      "authors": [
+        "Tasha Suri"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Fantasy",
+      "position": "2021.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2021"
+      },
+      "title": "The Jasmine Throne",
+      "votes": "4740"
+    },
+    {
+      "authors": [
+        "Nghi Vo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Fantasy",
+      "position": "2021.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2021"
+      },
+      "title": "The Chosen and the Beautiful",
+      "votes": "4185"
+    },
+    {
+      "authors": [
+        "P. Dj\u00e8l\u00ed Clark"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Fantasy",
+      "position": "2021.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2021"
+      },
+      "title": "A Master of Djinn",
+      "votes": "3790"
+    },
+    {
+      "authors": [
+        "Heather Walter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Fantasy",
+      "position": "2021.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2021"
+      },
+      "title": "Malice",
+      "votes": "3212"
+    },
+    {
+      "authors": [
+        "Helene Wecker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Fantasy",
+      "position": "2021.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2021"
+      },
+      "title": "The Hidden Palace",
+      "votes": "3082"
+    },
+    {
+      "authors": [
+        "Ava Reid"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Fantasy",
+      "position": "2021.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2021"
+      },
+      "title": "The Wolf and the Woodsman",
+      "votes": "2705"
+    },
+    {
+      "authors": [
+        "Alix E. Harrow"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Fantasy",
+      "position": "2021.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2021"
+      },
+      "title": "A Spindle Splintered",
+      "votes": "2340"
+    },
+    {
+      "authors": [
+        "Rivers Solomon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Fantasy",
+      "position": "2021.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2021"
+      },
+      "title": "Sorrowland",
+      "votes": "2326"
+    },
+    {
+      "authors": [
+        "C.L. Clark"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Fantasy",
+      "position": "2021.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2021"
+      },
+      "title": "The Unbroken",
+      "votes": "1451"
+    },
+    {
+      "authors": [
+        "Sarah J. Maas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Fantasy",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2022"
+      },
+      "title": "House of Sky and Breath",
+      "votes": "105718"
+    },
+    {
+      "authors": [
+        "R.F. Kuang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Fantasy",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2022"
+      },
+      "title": "Babel",
+      "votes": "62732"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Fantasy",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2022"
+      },
+      "title": "Fairy Tale",
+      "votes": "60818"
+    },
+    {
+      "authors": [
+        "Olivie Blake"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Fantasy",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2022"
+      },
+      "title": "The Atlas Six",
+      "votes": "57401"
+    },
+    {
+      "authors": [
+        "Jennifer L. Armentrout"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Fantasy",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2022"
+      },
+      "title": "The War of Two Queens",
+      "votes": "34791"
+    },
+    {
+      "authors": [
+        "Sue Lynn Tan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Fantasy",
+      "position": "2022.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2022"
+      },
+      "title": "Daughter of the Moon Goddess",
+      "votes": "33066"
+    },
+    {
+      "authors": [
+        "Sangu Mandanna"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Fantasy",
+      "position": "2022.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2022"
+      },
+      "title": "The Very Secret Society of Irregular Witches",
+      "votes": "30599"
+    },
+    {
+      "authors": [
+        "Travis Baldree"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Fantasy",
+      "position": "2022.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2022"
+      },
+      "title": "Legends & Lattes",
+      "votes": "26408"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Fantasy",
+      "position": "2022.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2022"
+      },
+      "title": "The Lost Metal",
+      "votes": "21294"
+    },
+    {
+      "authors": [
+        "Naomi Novik"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Fantasy",
+      "position": "2022.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2022"
+      },
+      "title": "The Golden Enclaves",
+      "votes": "19076"
+    },
+    {
+      "authors": [
+        "Jennifer Saint"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Fantasy",
+      "position": "2022.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2022"
+      },
+      "title": "Elektra",
+      "votes": "6178"
+    },
+    {
+      "authors": [
+        "Vaishnavi Patel"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Fantasy",
+      "position": "2022.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2022"
+      },
+      "title": "Kaikeyi",
+      "votes": "6145"
+    },
+    {
+      "authors": [
+        "Sunyi Dean"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Fantasy",
+      "position": "2022.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2022"
+      },
+      "title": "The Book Eaters",
+      "votes": "6095"
+    },
+    {
+      "authors": [
+        "Kelly Barnhill"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Fantasy",
+      "position": "2022.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2022"
+      },
+      "title": "When Women Were Dragons",
+      "votes": "5573"
+    },
+    {
+      "authors": [
+        "T. Kingfisher"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Fantasy",
+      "position": "2022.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2022"
+      },
+      "title": "Nettle & Bone",
+      "votes": "5293"
+    },
+    {
+      "authors": [
+        "N.K. Jemisin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Fantasy",
+      "position": "2022.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2022"
+      },
+      "title": "The World We Make",
+      "votes": "3974"
+    },
+    {
+      "authors": [
+        "Rebecca Ross"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Fantasy",
+      "position": "2022.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2022"
+      },
+      "title": "A River Enchanted",
+      "votes": "3696"
+    },
+    {
+      "authors": [
+        "GennaRose Nethercott"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Fantasy",
+      "position": "2022.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2022"
+      },
+      "title": "Thistlefoot",
+      "votes": "3369"
+    },
+    {
+      "authors": [
+        "Chelsea Abdullah"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Fantasy",
+      "position": "2022.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2022"
+      },
+      "title": "The Stardust Thief",
+      "votes": "2987"
+    },
+    {
+      "authors": [
+        "J.M. Miro"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Fantasy",
+      "position": "2022.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2022"
+      },
+      "title": "Ordinary Monsters",
+      "votes": "2156"
+    },
+    {
+      "authors": [
+        "Leigh Bardugo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Fantasy",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2023"
+      },
+      "title": "Hell Bent",
+      "votes": "75800"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Fantasy",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2023"
+      },
+      "title": "Tress of the Emerald Sea",
+      "votes": "57818"
+    },
+    {
+      "authors": [
+        "Samantha Shannon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Fantasy",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2023"
+      },
+      "title": "A Day of Fallen Night",
+      "votes": "39708"
+    },
+    {
+      "authors": [
+        "Heather Fawcett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Fantasy",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2023"
+      },
+      "title": "Emily Wilde's Encyclopaedia of Faeries",
+      "votes": "38650"
+    },
+    {
+      "authors": [
+        "Travis Baldree"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Fantasy",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2023"
+      },
+      "title": "Bookshops & Bonedust",
+      "votes": "38157"
+    },
+    {
+      "authors": [
+        "V.E. Schwab"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Fantasy",
+      "position": "2023.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2023"
+      },
+      "title": "The Fragile Threads of Power",
+      "votes": "37138"
+    },
+    {
+      "authors": [
+        "Cassandra Clare"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Fantasy",
+      "position": "2023.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2023"
+      },
+      "title": "Sword Catcher",
+      "votes": "30578"
+    },
+    {
+      "authors": [
+        "Shannon Chakraborty"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Fantasy",
+      "position": "2023.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2023"
+      },
+      "title": "The Adventures of Amina al-Sirafi",
+      "votes": "28274"
+    },
+    {
+      "authors": [
+        "Alix E. Harrow"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Fantasy",
+      "position": "2023.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2023"
+      },
+      "title": "Starling House",
+      "votes": "27920"
+    },
+    {
+      "authors": [
+        "Adrienne Young"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Fantasy",
+      "position": "2023.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2023"
+      },
+      "title": "The Unmaking of June Farrow",
+      "votes": "24489"
+    },
+    {
+      "authors": [
+        "Natalie Haynes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Fantasy",
+      "position": "2023.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2023"
+      },
+      "title": "Stone Blind",
+      "votes": "9336"
+    },
+    {
+      "authors": [
+        "Mark Lawrence"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Fantasy",
+      "position": "2023.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2023"
+      },
+      "title": "The Book That Wouldn\u2019t Burn",
+      "votes": "8313"
+    },
+    {
+      "authors": [
+        "Emma T\u00f6rzs"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Fantasy",
+      "position": "2023.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2023"
+      },
+      "title": "Ink Blood Sister Scribe",
+      "votes": "6895"
+    },
+    {
+      "authors": [
+        "Costanza Casati"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Fantasy",
+      "position": "2023.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2023"
+      },
+      "title": "Clytemnestra",
+      "votes": "6588"
+    },
+    {
+      "authors": [
+        "James Islington"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Fantasy",
+      "position": "2023.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2023"
+      },
+      "title": "The Will of the Many",
+      "votes": "5659"
+    },
+    {
+      "authors": [
+        "Jennifer Saint"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Fantasy",
+      "position": "2023.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2023"
+      },
+      "title": "Atalanta",
+      "votes": "5118"
+    },
+    {
+      "authors": [
+        "Roshani Chokshi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Fantasy",
+      "position": "2023.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2023"
+      },
+      "title": "The Last Tale of the Flower Bride",
+      "votes": "4922"
+    },
+    {
+      "authors": [
+        "Salman Rushdie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Fantasy",
+      "position": "2023.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2023"
+      },
+      "title": "Victory City",
+      "votes": "4245"
+    },
+    {
+      "authors": [
+        "Martha Wells"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Fantasy",
+      "position": "2023.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2023"
+      },
+      "title": "Witch King",
+      "votes": "3994"
+    },
+    {
+      "authors": [
+        "Cherie Dimaline"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Fantasy",
+      "position": "2023.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-fantasy-books-2023"
+      },
+      "title": "VenCo",
+      "votes": "2418"
+    },
+    {
+      "authors": [
+        "T.J. Klune"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Fantasy",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2024"
+      },
+      "title": "Somewhere Beyond the Sea",
+      "votes": "69854"
+    },
+    {
+      "authors": [
+        "Leigh Bardugo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Fantasy",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2024"
+      },
+      "title": "The Familiar",
+      "votes": "68564"
+    },
+    {
+      "authors": [
+        "Heather Fawcett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Fantasy",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2024"
+      },
+      "title": "Emily Wilde\u2019s Map of the Otherlands",
+      "votes": "50157"
+    },
+    {
+      "authors": [
+        "Gareth Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Fantasy",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2024"
+      },
+      "title": "The Book of Doors",
+      "votes": "33455"
+    },
+    {
+      "authors": [
+        "Jay Kristoff"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Fantasy",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2024"
+      },
+      "title": "Empire of the Damned",
+      "votes": "28376"
+    },
+    {
+      "authors": [
+        "Mai Corland"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Fantasy",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2024"
+      },
+      "title": "Five Broken Blades",
+      "votes": "28356"
+    },
+    {
+      "authors": [
+        "Yangsze Choo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Fantasy",
+      "position": "2024.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2024"
+      },
+      "title": "The Fox Wife",
+      "votes": "21029"
+    },
+    {
+      "authors": [
+        "Meg Shaffer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Fantasy",
+      "position": "2024.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2024"
+      },
+      "title": "The Lost Story",
+      "votes": "20328"
+    },
+    {
+      "authors": [
+        "Robert Jackson Bennett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Fantasy",
+      "position": "2024.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2024"
+      },
+      "title": "The Tainted Cup",
+      "votes": "19218"
+    },
+    {
+      "authors": [
+        "Deborah Harkness"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Fantasy",
+      "position": "2024.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2024"
+      },
+      "title": "The Black Bird Oracle",
+      "votes": "18784"
+    },
+    {
+      "authors": [
+        "Alexis Henderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Fantasy",
+      "position": "2024.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2024"
+      },
+      "title": "An Academy for Liars",
+      "votes": "8243"
+    },
+    {
+      "authors": [
+        "T. Kingfisher"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Fantasy",
+      "position": "2024.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2024"
+      },
+      "title": "A Sorceress Comes to Call",
+      "votes": "8073"
+    },
+    {
+      "authors": [
+        "Ann Liang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Fantasy",
+      "position": "2024.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2024"
+      },
+      "title": "A Song to Drown Rivers",
+      "votes": "7438"
+    },
+    {
+      "authors": [
+        "Katherine Arden"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Fantasy",
+      "position": "2024.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2024"
+      },
+      "title": "The Warm Hands of Ghosts",
+      "votes": "6222"
+    },
+    {
+      "authors": [
+        "Veronica Roth"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Fantasy",
+      "position": "2024.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2024"
+      },
+      "title": "When Among Crows",
+      "votes": "5726"
+    },
+    {
+      "authors": [
+        "K.X. Song"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Fantasy",
+      "position": "2024.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2024"
+      },
+      "title": "The Night Ends with Fire",
+      "votes": "4747"
+    },
+    {
+      "authors": [
+        "Lev Grossman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Fantasy",
+      "position": "2024.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2024"
+      },
+      "title": "The Bright Sword",
+      "votes": "4282"
+    },
+    {
+      "authors": [
+        "Frances White"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Fantasy",
+      "position": "2024.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2024"
+      },
+      "title": "Voyage of the Damned",
+      "votes": "4180"
+    },
+    {
+      "authors": [
+        "P. Dj\u00e8l\u00ed Clark"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Fantasy",
+      "position": "2024.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2024"
+      },
+      "title": "The Dead Cat Tail Assassins",
+      "votes": "3635"
+    },
+    {
+      "authors": [
+        "Rose Sutherland"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Fantasy",
+      "position": "2024.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2024"
+      },
+      "title": "A Sweet Sting of Salt",
+      "votes": "3048"
+    },
+    {
+      "authors": [
+        "V.E. Schwab"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Fantasy",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2025"
+      },
+      "title": "Bury Our Bones in the Midnight Soil",
+      "votes": "102408"
+    },
+    {
+      "authors": [
+        "R.F. Kuang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Fantasy",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2025"
+      },
+      "title": "Katabasis",
+      "votes": "87125"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Fantasy",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2025"
+      },
+      "title": "Wind and Truth",
+      "votes": "50158"
+    },
+    {
+      "authors": [
+        "Stephanie Garber"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Fantasy",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2025"
+      },
+      "title": "Alchemy of Secrets",
+      "votes": "47888"
+    },
+    {
+      "authors": [
+        "Emilia Hart"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Fantasy",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2025"
+      },
+      "title": "The Sirens",
+      "votes": "32082"
+    },
+    {
+      "authors": [
+        "James Islington"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Fantasy",
+      "position": "2025.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2025"
+      },
+      "title": "The Strength of the Few",
+      "votes": "30007"
+    },
+    {
+      "authors": [
+        "Joe Abercrombie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Fantasy",
+      "position": "2025.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2025"
+      },
+      "title": "The Devils",
+      "votes": "27429"
+    },
+    {
+      "authors": [
+        "Samantha Sotto Yambao"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Fantasy",
+      "position": "2025.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2025"
+      },
+      "title": "Water Moon",
+      "votes": "25469"
+    },
+    {
+      "authors": [
+        "Antonia Hodgson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Fantasy",
+      "position": "2025.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2025"
+      },
+      "title": "The Raven Scholar",
+      "votes": "24050"
+    },
+    {
+      "authors": [
+        "Amal El-Mohtar"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Fantasy",
+      "position": "2025.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2025"
+      },
+      "title": "The River Has Roots",
+      "votes": "23389"
+    },
+    {
+      "authors": [
+        "Travis Baldree"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Fantasy",
+      "position": "2025.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2025"
+      },
+      "title": "Brigands & Breadknives",
+      "votes": "9577"
+    },
+    {
+      "authors": [
+        "Robert Jackson Bennett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Fantasy",
+      "position": "2025.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2025"
+      },
+      "title": "A Drop of Corruption",
+      "votes": "9524"
+    },
+    {
+      "authors": [
+        "T. Kingfisher"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Fantasy",
+      "position": "2025.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2025"
+      },
+      "title": "Hemlock & Silver",
+      "votes": "9516"
+    },
+    {
+      "authors": [
+        "Morgan Ryan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Fantasy",
+      "position": "2025.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2025"
+      },
+      "title": "A Resistance of Witches",
+      "votes": "8227"
+    },
+    {
+      "authors": [
+        "Alix E. Harrow"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Fantasy",
+      "position": "2025.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2025"
+      },
+      "title": "The Everlasting",
+      "votes": "8019"
+    },
+    {
+      "authors": [
+        "Joe Hill"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Fantasy",
+      "position": "2025.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2025"
+      },
+      "title": "King Sorrow",
+      "votes": "7738"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Fantasy",
+      "position": "2025.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2025"
+      },
+      "title": "Thief of Night",
+      "votes": "7055"
+    },
+    {
+      "authors": [
+        "Marie Lu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Fantasy",
+      "position": "2025.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2025"
+      },
+      "title": "Red City",
+      "votes": "5135"
+    },
+    {
+      "authors": [
+        "Gareth Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Fantasy",
+      "position": "2025.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2025"
+      },
+      "title": "The Society of Unknowable Objects",
+      "votes": "4519"
+    },
+    {
+      "authors": [
+        "Emily Tesh"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Fantasy",
+      "position": "2025.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2025"
+      },
+      "title": "The Incandescent",
+      "votes": "2482"
+    }
+  ],
+  "fetched_at": "2026-07-28T01:50:40Z",
+  "list_id": "goodreads_choice_awards_fantasy",
+  "list_name": "Goodreads Choice Awards - Fantasy",
+  "match_series": false,
+  "notes": [
+    "Goodreads contributor enrichment could not check 19 newest-year rows; ballot credits were retained."
+  ],
+  "parser": "goodreads_choice_awards_fantasy",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Goodreads Choice Awards - Fantasy",
+    "source_id": "goodreads_choice_awards_fantasy",
+    "url": "https://www.goodreads.com/choiceawards"
+  }
+}

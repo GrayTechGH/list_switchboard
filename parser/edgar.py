@@ -13,6 +13,8 @@ Maintenance notes:
 """
 
 import re
+import json
+import datetime
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 from lxml import html as lxml_html
@@ -23,12 +25,17 @@ try:
     normalize_line, strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
+  from calibre_plugins.list_switchboard.parser.incremental import (
+    ParsedUnitCache, project_source_rows, restore_source_rows)
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
 except ImportError:
   from .award_base import (
     AwardParserBase, assign_positions, is_author_suffix, normalize_heading,
     normalize_line, strip_publication_notes,
   )
   from .generic import position_sort_key
+  from .incremental import ParsedUnitCache, project_source_rows, restore_source_rows
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 
 AWARD_NAME = 'Edgar Award'
@@ -50,7 +57,11 @@ class EdgarAwardsParser(AwardParserBase):
   AWARD_NAME = AWARD_NAME
 
   def parse(self, html, base_url, name, category,
-            fetch_url=None, log=None, progress=None):
+            fetch_url=None, log=None, progress=None, cached_parsed=None,
+            incremental_update=False, enable_incremental=False):
+    if enable_incremental:
+      return self.parse_with_year_cache(html, base_url, name, category,
+        fetch_url, log, progress, cached_parsed, incremental_update)
     notes = []
     rows = self.parse_page(html, base_url, category)
     pages_seen = {base_url}
@@ -84,6 +95,123 @@ class EdgarAwardsParser(AwardParserBase):
       base_url,
       sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
       notes)
+
+  def parse_with_year_cache(self, html, base_url, name, category,
+      fetch_url, log, progress, cached_parsed, incremental_update):
+    cache = ParsedUnitCache('edgar-ordered-ballots-v1',
+      json.dumps([base_url, name, category, PAGE_SIZE, type(self).__name__]),
+      cached_parsed, incremental_update)
+    total = self.total_records(html)
+    first = self.parse_page(html, base_url, category)
+    original = {}
+    for key, unit in cache.old_units.items():
+      try:
+        original[key] = restore_source_rows(cache.previous(key), unit.get('metadata') or {})
+      except (ValueError, TypeError):
+        continue
+    rows = self.reuse_ordered_tail(first, total, cache, original)
+    notes = []
+    complete = True
+    pages = self.page_count(total) if total is not None else 1
+    self._progress(progress, 1, pages, f'Parsed {name} page 1...')
+    if rows is None:
+      rows = list(first)
+      for number in range(2, min(pages, MAX_PAGES) + 1):
+        try:
+          page_rows = self.parse_page(fetch_url(self.page_url(base_url, number)),
+            self.page_url(base_url, number), category)
+          if not page_rows:
+            raise ValueError('No usable Edgar table rows.')
+          rows.extend(page_rows)
+        except (ImportCancelledError, CamoufoxRequiredError):
+          raise
+        except Exception as err:
+          notes.append(f'{AWARD_NAME} page {number} could not be fetched or parsed: {err}')
+          complete = False
+          break
+        self._progress(progress, number, pages, f'Parsed {name} page {number}...')
+      complete = complete and total is not None and len(rows) == total
+      if not complete and rows:
+        boundary = min(int(row['award_year']) for row in rows)
+        # The last fetched page may end inside a ballot. Keep its prior whole
+        # year rather than mixing a promoted fresh winner with stale nominees.
+        if original.get(str(boundary)):
+          rows = [row for row in rows if int(row['award_year']) > boundary] + original[str(boundary)]
+        for year, old_rows in original.items():
+          if int(year) < boundary:
+            rows.extend(old_rows)
+    entries = sorted(self.entries_from_rows(rows),
+      key=lambda item: position_sort_key(item.get('position', '')))
+    by_year = {}
+    for row in rows:
+      by_year.setdefault(row['award_year'], []).append(row)
+    for year, year_rows in by_year.items():
+      projected, metadata = project_source_rows(year_rows, entries,
+        lambda row: (str(row['award_year']), row['title'], tuple(row['authors'])))
+      metadata['settled'] = any(row['result'] == 'winner' for row in year_rows)
+      cache.put(str(year), projected, revision=str(year), complete=complete, metadata=metadata)
+    state = cache.state(entries)
+    state['discovery'] = {'total': total,
+      'row_order': [self.row_identity(row) for row in rows],
+      'refresh_units': [str(max(int(year) for year in by_year))] if by_year else []}
+    result = self.parsed_result(name, base_url, entries, notes)
+    result['incremental_state'] = state
+    return result
+
+  def row_identity(self, row):
+    return json.dumps([str(row['award_year']), row['title'], row['authors'],
+      row['category'], row['result']], ensure_ascii=False, separators=(',', ':'))
+
+  def reuse_ordered_tail(self, first, total, cache, original):
+    """Cut off only at a contiguous cached suffix with a whole settled ballot.
+
+    The advertised count must explain the changed front exactly. Page offsets
+    never identify cached rows; recompute page provenance after inserts shift
+    the historical tail. Missing/pending/unsettled tail units force a full crawl.
+    """
+    order = cache.old_discovery.get('row_order')
+    old_total = cache.old_discovery.get('total')
+    if (not first or type(total) is not int or type(old_total) is not int or
+        not isinstance(order, list) or len(order) != old_total or
+        any(not isinstance(key, str) for key in order) or len(set(order)) != len(order) or
+        len(first) != min(total, PAGE_SIZE)):
+      return None
+    fresh = [self.row_identity(row) for row in first]
+    if len(set(fresh)) != len(fresh):
+      return None
+    positions = {key: index for index, key in enumerate(order)}
+    known = {self.row_identity(row): row for rows in original.values() for row in rows}
+    latest = max(int(row['award_year']) for row in first)
+    for offset, key in enumerate(fresh):
+      anchor = positions.get(key)
+      if anchor is None or fresh[offset:] != order[anchor:anchor+len(fresh)-offset]:
+        continue
+      current_order = fresh[:offset] + order[anchor:]
+      if (len(current_order) != total or len(set(current_order)) != total or
+          any(key not in known for key in order[anchor+len(fresh)-offset:])):
+        continue
+      matched = set(fresh[offset:])
+      whole_ballot = False
+      for year, rows in original.items():
+        identities = {self.row_identity(row) for row in rows}
+        if (identities and identities <= matched and int(year) < min(latest, datetime.datetime.now().year) and
+            (cache.old_units[year].get('metadata') or {}).get('settled') is True):
+          whole_ballot = True
+      tail = [known[key] for key in order[anchor+len(fresh)-offset:]]
+      if not whole_ballot or any(
+          int(row['award_year']) >= min(latest, datetime.datetime.now().year) or
+          cache.old_units[str(row['award_year'])].get('complete') is not True or
+          (cache.old_units[str(row['award_year'])].get('metadata') or {}).get('settled') is not True
+          for row in tail):
+        continue
+      rows = list(first) + [dict(row) for row in tail]
+      if [int(row['award_year']) for row in rows] != sorted(
+          (int(row['award_year']) for row in rows), reverse=True):
+        continue
+      for index, row in enumerate(rows):
+        row['source_url'] = self.page_url(first[0]['source_url'], index // PAGE_SIZE + 1) if index >= PAGE_SIZE else first[0]['source_url']
+      return rows
+    return None
 
   def parse_page(self, html, source_url, default_category):
     root = lxml_html.fromstring(html or '<html></html>')

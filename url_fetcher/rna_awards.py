@@ -10,6 +10,7 @@ from .generic import (
 
 class UrlFetcherRNARomanticNovelAwards(UrlFetcherGeneric):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'rna_romantic_novel_awards'
   NAME = 'RNA Romantic Novel of the Year Awards'
   URL = 'https://romanticnovelistsassociation.org/past-winners'
@@ -26,12 +27,14 @@ class UrlFetcherRNARomanticNovelAwards(UrlFetcherGeneric):
       from parser.rna_awards import RNARomanticNovelAwardsParser
     return RNARomanticNovelAwardsParser()
 
-  def parse(self, html, fetch_url=None, **_kwargs):
-    return self.parser().parse(html, self.URL, self.NAME, fetch_url=fetch_url)
+  def parse(self, html, fetch_url=None,cached_parsed=None,incremental_update=False, **_kwargs):
+    return self.parser().parse(html, self.URL, self.NAME, fetch_url=fetch_url,
+      cached_parsed=cached_parsed,incremental_update=incremental_update)
 
 
 class UrlFetcherRNAJoanHessayonAward(UrlFetcherRNARomanticNovelAwards):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'rna_joan_hessayon_award'
   NAME = 'RNA Joan Hessayon Award for New Writers'
 

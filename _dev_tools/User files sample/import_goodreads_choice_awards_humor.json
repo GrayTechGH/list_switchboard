@@ -1,0 +1,4445 @@
+{
+  "append_state": {
+    "entry_count": 260,
+    "last_entry_key": "not funny|jena friedman",
+    "last_position": "2023.19",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Tina Fey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Humor",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2011"
+      },
+      "title": "Bossypants",
+      "votes": "8722"
+    },
+    {
+      "authors": [
+        "Adam Mansbach"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Humor",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2011"
+      },
+      "title": "Go the Fuck to Sleep",
+      "votes": "7781"
+    },
+    {
+      "authors": [
+        "Betty White"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Humor",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2011"
+      },
+      "title": "If You Ask Me",
+      "votes": "3321"
+    },
+    {
+      "authors": [
+        "Jen Lancaster"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Humor",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2011"
+      },
+      "title": "If You Were Here",
+      "votes": "2228"
+    },
+    {
+      "authors": [
+        "Mindy Kaling"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Humor",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2011"
+      },
+      "title": "Is Everyone Hanging Out Without Me?",
+      "votes": "2110"
+    },
+    {
+      "authors": [
+        "Chelsea Handler"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Humor",
+      "position": "2011.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2011"
+      },
+      "title": "Lies That Chelsea Handler Told Me",
+      "votes": "1963"
+    },
+    {
+      "authors": [
+        "Ellen DeGeneres"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Humor",
+      "position": "2011.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2011"
+      },
+      "title": "Seriously... I'm Kidding",
+      "votes": "1923"
+    },
+    {
+      "authors": [
+        "Jimmy Fallon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Humor",
+      "position": "2011.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2011"
+      },
+      "title": "Thank You Notes",
+      "votes": "882"
+    },
+    {
+      "authors": [
+        "Demetri Martin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Humor",
+      "position": "2011.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2011"
+      },
+      "title": "This is a Book",
+      "votes": "863"
+    },
+    {
+      "authors": [
+        "Penn Jillette"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Humor",
+      "position": "2011.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2011"
+      },
+      "title": "God, No! Signs You May Already Be an Atheist and Other Magical Tales",
+      "votes": "856"
+    },
+    {
+      "authors": [
+        "Laurie Notaro"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Humor",
+      "position": "2011.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2011"
+      },
+      "title": "It Looked Different on the Model",
+      "votes": "410"
+    },
+    {
+      "authors": [
+        "Jillian Madison"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Humor",
+      "position": "2011.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2011"
+      },
+      "title": "Damn You, Autocorrect!",
+      "votes": "389"
+    },
+    {
+      "authors": [
+        "Matthew Norman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Humor",
+      "position": "2011.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2011"
+      },
+      "title": "Domestic Violets",
+      "votes": "273"
+    },
+    {
+      "authors": [
+        "Donna Andrews"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Humor",
+      "position": "2011.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2011"
+      },
+      "title": "The Real Macaw",
+      "votes": "240"
+    },
+    {
+      "authors": [
+        "Albert Brooks"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Humor",
+      "position": "2011.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2011"
+      },
+      "title": "2030",
+      "votes": "215"
+    },
+    {
+      "authors": [
+        "Wade Rouse"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Humor",
+      "position": "2011.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2011"
+      },
+      "title": "It's All Relative",
+      "votes": "200"
+    },
+    {
+      "authors": [
+        "Jen Tucker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Humor",
+      "position": "2011.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2011"
+      },
+      "title": "The Day I Wore My Panties Inside Out",
+      "votes": "161"
+    },
+    {
+      "authors": [
+        "Tim Dorsey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Humor",
+      "position": "2011.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2011"
+      },
+      "title": "Electric Barracuda",
+      "votes": "124"
+    },
+    {
+      "authors": [
+        "Jonathan Gould"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Humor",
+      "position": "2011.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2011"
+      },
+      "title": "Doodling",
+      "votes": "116"
+    },
+    {
+      "authors": [
+        "Patton Oswalt"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Humor",
+      "position": "2011.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2011"
+      },
+      "title": "Zombie Spaceship Wasteland",
+      "votes": "101"
+    },
+    {
+      "authors": [
+        "Jenny Lawson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Humor",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2012"
+      },
+      "title": "Let's Pretend This Never Happened: A Mostly True Memoir",
+      "votes": "13066"
+    },
+    {
+      "authors": [
+        "Stephen Colbert"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Humor",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2012"
+      },
+      "title": "I am a Pole",
+      "votes": "4984"
+    },
+    {
+      "authors": [
+        "Caitlin Moran"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Humor",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2012"
+      },
+      "title": "How to Be a Woman",
+      "votes": "4836"
+    },
+    {
+      "authors": [
+        "Jen Campbell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Humor",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2012"
+      },
+      "title": "Weird Things Customers Say in Bookshops",
+      "votes": "4717"
+    },
+    {
+      "authors": [
+        "Christopher Moore"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Humor",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2012"
+      },
+      "title": "Sacr\u00e9 Bleu",
+      "votes": "4243"
+    },
+    {
+      "authors": [
+        "Jeffrey Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Humor",
+      "position": "2012.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2012"
+      },
+      "title": "Darth Vader and Son",
+      "votes": "4199"
+    },
+    {
+      "authors": [
+        "Kevin Smith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Humor",
+      "position": "2012.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2012"
+      },
+      "title": "Tough Shit",
+      "votes": "3959"
+    },
+    {
+      "authors": [
+        "Maria Semple"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Humor",
+      "position": "2012.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2012"
+      },
+      "title": "Where'd You Go, Bernadette",
+      "votes": "2569"
+    },
+    {
+      "authors": [
+        "Andy Cohen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Humor",
+      "position": "2012.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2012"
+      },
+      "title": "Most Talkative",
+      "votes": "1883"
+    },
+    {
+      "authors": [
+        "Justin Halpern"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Humor",
+      "position": "2012.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2012"
+      },
+      "title": "I Suck at Girls",
+      "votes": "1875"
+    },
+    {
+      "authors": [
+        "Lisa Lutz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Humor",
+      "position": "2012.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2012"
+      },
+      "title": "Trail of the Spellmans",
+      "votes": "1203"
+    },
+    {
+      "authors": [
+        "Baratunde R. Thurston"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Humor",
+      "position": "2012.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2012"
+      },
+      "title": "How to Be Black",
+      "votes": "1088"
+    },
+    {
+      "authors": [
+        "Jen Lancaster"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Humor",
+      "position": "2012.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2012"
+      },
+      "title": "Jeneration X",
+      "votes": "996"
+    },
+    {
+      "authors": [
+        "A.J. Jacobs"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Humor",
+      "position": "2012.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2012"
+      },
+      "title": "Drop Dead Healthy",
+      "votes": "948"
+    },
+    {
+      "authors": [
+        "Matthew Inman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Humor",
+      "position": "2012.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2012"
+      },
+      "title": "How to Tell If Your Cat Is Plotting to Kill You",
+      "votes": "749"
+    },
+    {
+      "authors": [
+        "Fanny Merkin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Humor",
+      "position": "2012.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2012"
+      },
+      "title": "Fifty Shames of Earl Grey",
+      "votes": "626"
+    },
+    {
+      "authors": [
+        "Stephen Colbert"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Humor",
+      "position": "2012.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2012"
+      },
+      "title": "America Again",
+      "votes": "578"
+    },
+    {
+      "authors": [
+        "Michael Ian Black"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Humor",
+      "position": "2012.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2012"
+      },
+      "title": "You're Not Doing It Right",
+      "votes": "509"
+    },
+    {
+      "authors": [
+        "Tracy H. Tucker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Humor",
+      "position": "2012.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2012"
+      },
+      "title": "I Kill Me",
+      "votes": "94"
+    },
+    {
+      "authors": [
+        "Adam Carolla"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Humor",
+      "position": "2012.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2012"
+      },
+      "title": "Not Taco Bell Material",
+      "votes": "93"
+    },
+    {
+      "authors": [
+        "Allie Brosh"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Humor",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2013"
+      },
+      "title": "Hyperbole and a Half: Unfortunate Situations, Flawed Coping Mechanisms, Mayhem, and Other Things That Happened",
+      "votes": "14309"
+    },
+    {
+      "authors": [
+        "Alice Clayton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Humor",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2013"
+      },
+      "title": "Wallbanger",
+      "votes": "12494"
+    },
+    {
+      "authors": [
+        "David Sedaris"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Humor",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2013"
+      },
+      "title": "Let's Explore Diabetes with Owls",
+      "votes": "12423"
+    },
+    {
+      "authors": [
+        "Si Robertson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Humor",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2013"
+      },
+      "title": "Si-cology 1",
+      "votes": "8520"
+    },
+    {
+      "authors": [
+        "Jeffrey Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Humor",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2013"
+      },
+      "title": "Vader's Little Princess",
+      "votes": "7818"
+    },
+    {
+      "authors": [
+        "Matthew Inman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Humor",
+      "position": "2013.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2013"
+      },
+      "title": "My Dog",
+      "votes": "7432"
+    },
+    {
+      "authors": [
+        "Billy Crystal"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Humor",
+      "position": "2013.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2013"
+      },
+      "title": "Still Foolin' 'Em",
+      "votes": "6202"
+    },
+    {
+      "authors": [
+        "Jim Gaffigan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Humor",
+      "position": "2013.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2013"
+      },
+      "title": "Dad Is Fat",
+      "votes": "6087"
+    },
+    {
+      "authors": [
+        "Ian Doescher"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Humor",
+      "position": "2013.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2013"
+      },
+      "title": "William Shakespeare's Star Wars",
+      "votes": "5604"
+    },
+    {
+      "authors": [
+        "Carl Hiaasen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Humor",
+      "position": "2013.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2013"
+      },
+      "title": "Bad Monkey",
+      "votes": "5092"
+    },
+    {
+      "authors": [
+        "Kelly Williams Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Humor",
+      "position": "2013.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2013"
+      },
+      "title": "Adulting",
+      "votes": "2574"
+    },
+    {
+      "authors": [
+        "Jen Lancaster"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Humor",
+      "position": "2013.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2013"
+      },
+      "title": "The Tao of Martha",
+      "votes": "1951"
+    },
+    {
+      "authors": [
+        "Ryan North"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Humor",
+      "position": "2013.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2013"
+      },
+      "title": "To Be or Not To Be",
+      "votes": "1897"
+    },
+    {
+      "authors": [
+        "Amber Dusick"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Humor",
+      "position": "2013.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2013"
+      },
+      "title": "Parenting",
+      "votes": "1574"
+    },
+    {
+      "authors": [
+        "Lisa Lutz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Humor",
+      "position": "2013.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2013"
+      },
+      "title": "The Last Word",
+      "votes": "1455"
+    },
+    {
+      "authors": [
+        "Ross Mathews"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Humor",
+      "position": "2013.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2013"
+      },
+      "title": "Man Up!",
+      "votes": "1258"
+    },
+    {
+      "authors": [
+        "Sophie Kinsella"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Humor",
+      "position": "2013.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2013"
+      },
+      "title": "Wedding Night",
+      "votes": "1227"
+    },
+    {
+      "authors": [
+        "Tara Sivec"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Humor",
+      "position": "2013.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2013"
+      },
+      "title": "Love and Lists",
+      "votes": "892"
+    },
+    {
+      "authors": [
+        "Helen Fielding"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Humor",
+      "position": "2013.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2013"
+      },
+      "title": "Mad About the Boy",
+      "votes": "693"
+    },
+    {
+      "authors": [
+        "Dave Barry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Humor",
+      "position": "2013.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2013"
+      },
+      "title": "Insane City",
+      "votes": "206"
+    },
+    {
+      "authors": [
+        "Amy Poehler"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Humor",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2014"
+      },
+      "title": "Yes Please",
+      "votes": "36009"
+    },
+    {
+      "authors": [
+        "Neil Patrick Harris"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Humor",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2014"
+      },
+      "title": "Neil Patrick Harris",
+      "votes": "27062"
+    },
+    {
+      "authors": [
+        "Alice Clayton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Humor",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2014"
+      },
+      "title": "Rusty Nailed",
+      "votes": "20263"
+    },
+    {
+      "authors": [
+        "Hannah Hart"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Humor",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2014"
+      },
+      "title": "My Drunk Kitchen",
+      "votes": "18620"
+    },
+    {
+      "authors": [
+        "Lena Dunham"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Humor",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2014"
+      },
+      "title": "Not That Kind of Girl",
+      "votes": "11933"
+    },
+    {
+      "authors": [
+        "Christopher Moore"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Humor",
+      "position": "2014.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2014"
+      },
+      "title": "The Serpent of Venice",
+      "votes": "10903"
+    },
+    {
+      "authors": [
+        "Ian Doescher"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Humor",
+      "position": "2014.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2014"
+      },
+      "title": "William Shakespeare's The Empire Striketh Back",
+      "votes": "10718"
+    },
+    {
+      "authors": [
+        "Jen Mann"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Humor",
+      "position": "2014.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2014"
+      },
+      "title": "People I Want to Punch in the Throat",
+      "votes": "9241"
+    },
+    {
+      "authors": [
+        "Tara Sivec"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Humor",
+      "position": "2014.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2014"
+      },
+      "title": "Shame on You",
+      "votes": "7403"
+    },
+    {
+      "authors": [
+        "Chelsea Handler"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Humor",
+      "position": "2014.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2014"
+      },
+      "title": "Uganda Be Kidding Me",
+      "votes": "6561"
+    },
+    {
+      "authors": [
+        "Matthew Inman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Humor",
+      "position": "2014.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2014"
+      },
+      "title": "The Terrible and Wonderful Reasons Why I Run Long Distances",
+      "votes": "3854"
+    },
+    {
+      "authors": [
+        "Katie Heaney"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Humor",
+      "position": "2014.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2014"
+      },
+      "title": "Never Have I Ever",
+      "votes": "3824"
+    },
+    {
+      "authors": [
+        "B.J. Novak"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Humor",
+      "position": "2014.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2014"
+      },
+      "title": "One More Thing",
+      "votes": "3713"
+    },
+    {
+      "authors": [
+        "Emma Chase"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Humor",
+      "position": "2014.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2014"
+      },
+      "title": "Tied",
+      "votes": "3246"
+    },
+    {
+      "authors": [
+        "Grace Helbig"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Humor",
+      "position": "2014.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2014"
+      },
+      "title": "Grace's Guide",
+      "votes": "2693"
+    },
+    {
+      "authors": [
+        "Stephanie Pearl-McPhee"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Humor",
+      "position": "2014.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2014"
+      },
+      "title": "The Amazing Thing About the Way It Goes",
+      "votes": "2562"
+    },
+    {
+      "authors": [
+        "Jim Gaffigan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Humor",
+      "position": "2014.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2014"
+      },
+      "title": "Food",
+      "votes": "2302"
+    },
+    {
+      "authors": [
+        "Tara Sivec"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Humor",
+      "position": "2014.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2014"
+      },
+      "title": "Passion and Ponies",
+      "votes": "1954"
+    },
+    {
+      "authors": [
+        "Daniel O'Brien"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Humor",
+      "position": "2014.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2014"
+      },
+      "title": "How to Fight Presidents",
+      "votes": "1496"
+    },
+    {
+      "authors": [
+        "Kirsty Dallas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Humor",
+      "position": "2014.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2014"
+      },
+      "title": "Decker's Wood",
+      "votes": "684"
+    },
+    {
+      "authors": [
+        "Mindy Kaling"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Humor",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2015"
+      },
+      "title": "Why Not Me?",
+      "votes": "32224"
+    },
+    {
+      "authors": [
+        "Felicia Day"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Humor",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2015"
+      },
+      "title": "You're Never Weird on the Internet",
+      "votes": "27250"
+    },
+    {
+      "authors": [
+        "Jenny Lawson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Humor",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2015"
+      },
+      "title": "Furiously Happy",
+      "votes": "23915"
+    },
+    {
+      "authors": [
+        "Tyler Oakley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Humor",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2015"
+      },
+      "title": "Binge",
+      "votes": "9652"
+    },
+    {
+      "authors": [
+        "Kunal Nayyar"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Humor",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2015"
+      },
+      "title": "Yes, My Accent Is Real",
+      "votes": "9592"
+    },
+    {
+      "authors": [
+        "Sam Maggs"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Humor",
+      "position": "2015.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2015"
+      },
+      "title": "The Fangirl's Guide to the Galaxy",
+      "votes": "9346"
+    },
+    {
+      "authors": [
+        "Shane Dawson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Humor",
+      "position": "2015.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2015"
+      },
+      "title": "I Hate Myselfie",
+      "votes": "9227"
+    },
+    {
+      "authors": [
+        "Daniel Howell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Humor",
+      "position": "2015.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2015"
+      },
+      "title": "The Amazing Book is Not on Fire",
+      "votes": "9117"
+    },
+    {
+      "authors": [
+        "Brittany Gibbons"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Humor",
+      "position": "2015.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2015"
+      },
+      "title": "Fat Girl Walking",
+      "votes": "8263"
+    },
+    {
+      "authors": [
+        "Miranda Sings"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Humor",
+      "position": "2015.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2015"
+      },
+      "title": "Selp-Helf",
+      "votes": "6696"
+    },
+    {
+      "authors": [
+        "Josh Sundquist"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Humor",
+      "position": "2015.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2015"
+      },
+      "title": "We Should Hang Out Sometime",
+      "votes": "3839"
+    },
+    {
+      "authors": [
+        "Mamrie Hart"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Humor",
+      "position": "2015.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2015"
+      },
+      "title": "You Deserve a Drink",
+      "votes": "3339"
+    },
+    {
+      "authors": [
+        "Jen Lancaster"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Humor",
+      "position": "2015.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2015"
+      },
+      "title": "I Regret Nothing",
+      "votes": "2047"
+    },
+    {
+      "authors": [
+        "Patton Oswalt"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Humor",
+      "position": "2015.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2015"
+      },
+      "title": "Silver Screen Fiend",
+      "votes": "2004"
+    },
+    {
+      "authors": [
+        "Sarah Colonna"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Humor",
+      "position": "2015.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2015"
+      },
+      "title": "Has Anyone Seen My Pants?",
+      "votes": "1383"
+    },
+    {
+      "authors": [
+        "Etgar Keret"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Humor",
+      "position": "2015.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2015"
+      },
+      "title": "The Seven Good Years",
+      "votes": "1242"
+    },
+    {
+      "authors": [
+        "Nick Offerman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Humor",
+      "position": "2015.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2015"
+      },
+      "title": "Gumption",
+      "votes": "1170"
+    },
+    {
+      "authors": [
+        "PewDiePie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Humor",
+      "position": "2015.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2015"
+      },
+      "title": "This Book Loves You",
+      "votes": "981"
+    },
+    {
+      "authors": [
+        "Issa Rae"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Humor",
+      "position": "2015.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2015"
+      },
+      "title": "The Misadventures of Awkward Black Girl",
+      "votes": "857"
+    },
+    {
+      "authors": [
+        "Judd Apatow"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Humor",
+      "position": "2015.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2015"
+      },
+      "title": "Sick in the Head",
+      "votes": "812"
+    },
+    {
+      "authors": [
+        "Amy Schumer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Humor",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2016"
+      },
+      "title": "The Girl with the Lower Back Tattoo",
+      "votes": "41080"
+    },
+    {
+      "authors": [
+        "Anna Kendrick"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Humor",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2016"
+      },
+      "title": "Scrappy Little Nobody",
+      "votes": "23353"
+    },
+    {
+      "authors": [
+        "Mara Wilson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Humor",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2016"
+      },
+      "title": "Where Am I Now?",
+      "votes": "19166"
+    },
+    {
+      "authors": [
+        "Kate Siegel"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Humor",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2016"
+      },
+      "title": "Mother, Can You Not?",
+      "votes": "15148"
+    },
+    {
+      "authors": [
+        "Phoebe Robinson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Humor",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2016"
+      },
+      "title": "You Can't Touch My Hair",
+      "votes": "11647"
+    },
+    {
+      "authors": [
+        "Shane Dawson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Humor",
+      "position": "2016.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2016"
+      },
+      "title": "It Gets Worse",
+      "votes": "10521"
+    },
+    {
+      "authors": [
+        "Luvvie Ajayi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Humor",
+      "position": "2016.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2016"
+      },
+      "title": "I'm Judging You",
+      "votes": "8701"
+    },
+    {
+      "authors": [
+        "Daniel Howell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Humor",
+      "position": "2016.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2016"
+      },
+      "title": "Dan and Phil Go Outside",
+      "votes": "6926"
+    },
+    {
+      "authors": [
+        "Norm Macdonald"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Humor",
+      "position": "2016.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2016"
+      },
+      "title": "Based on a True Story",
+      "votes": "6457"
+    },
+    {
+      "authors": [
+        "Karen Alpert"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Humor",
+      "position": "2016.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2016"
+      },
+      "title": "I Want My Epidural Back",
+      "votes": "5794"
+    },
+    {
+      "authors": [
+        "Tig Notaro"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Humor",
+      "position": "2016.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2016"
+      },
+      "title": "I'm Just a Person",
+      "votes": "2917"
+    },
+    {
+      "authors": [
+        "Jennifer Keishin Armstrong"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Humor",
+      "position": "2016.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2016"
+      },
+      "title": "Seinfeldia",
+      "votes": "2859"
+    },
+    {
+      "authors": [
+        "Laurie Notaro"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Humor",
+      "position": "2016.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2016"
+      },
+      "title": "Housebroken",
+      "votes": "2436"
+    },
+    {
+      "authors": [
+        "Jessi Klein"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Humor",
+      "position": "2016.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2016"
+      },
+      "title": "You'll Grow Out of It",
+      "votes": "2333"
+    },
+    {
+      "authors": [
+        "Jen Kirkman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Humor",
+      "position": "2016.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2016"
+      },
+      "title": "I Know What I'm Doing and Other Lies I Tell Myself",
+      "votes": "2115"
+    },
+    {
+      "authors": [
+        "Zach Anner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Humor",
+      "position": "2016.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2016"
+      },
+      "title": "If at Birth You Don't Succeed",
+      "votes": "1842"
+    },
+    {
+      "authors": [
+        "Sara Benincasa"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Humor",
+      "position": "2016.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2016"
+      },
+      "title": "Real Artists Have Day Jobs",
+      "votes": "1427"
+    },
+    {
+      "authors": [
+        "Michael Ian Black"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Humor",
+      "position": "2016.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2016"
+      },
+      "title": "Navel Gazing",
+      "votes": "1127"
+    },
+    {
+      "authors": [
+        "Dave Barry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Humor",
+      "position": "2016.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2016"
+      },
+      "title": "Best. State. Ever.",
+      "votes": "1011"
+    },
+    {
+      "authors": [
+        "Alan Partridge"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Humor",
+      "position": "2016.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2016"
+      },
+      "title": "Alan Partridge",
+      "votes": "508"
+    },
+    {
+      "authors": [
+        "Lauren Graham"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Humor",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2017"
+      },
+      "title": "Talking as Fast as I Can: From Gilmore Girls to Gilmore Girls, and Everything in Between",
+      "votes": "48077"
+    },
+    {
+      "authors": [
+        "Kevin Hart"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Humor",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2017"
+      },
+      "title": "I Can't Make This Up",
+      "votes": "20807"
+    },
+    {
+      "authors": [
+        "Anna Faris"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Humor",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2017"
+      },
+      "title": "Unqualified",
+      "votes": "14393"
+    },
+    {
+      "authors": [
+        "Samantha Irby"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Humor",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2017"
+      },
+      "title": "We Are Never Meeting in Real Life.",
+      "votes": "13285"
+    },
+    {
+      "authors": [
+        "Gabourey Sidibe"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Humor",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2017"
+      },
+      "title": "This Is Just My Face",
+      "votes": "12557"
+    },
+    {
+      "authors": [
+        "Chris Smith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Humor",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2017"
+      },
+      "title": "The Daily Show",
+      "votes": "12241"
+    },
+    {
+      "authors": [
+        "Finding by David Sedaris"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Humor",
+      "position": "2017.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2017"
+      },
+      "title": "Theft",
+      "votes": "12212"
+    },
+    {
+      "authors": [
+        "Eddie Izzard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Humor",
+      "position": "2017.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2017"
+      },
+      "title": "Believe Me",
+      "votes": "10794"
+    },
+    {
+      "authors": [
+        "Scaachi Koul"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Humor",
+      "position": "2017.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2017"
+      },
+      "title": "One Day We'll All Be Dead and None of This Will Matter",
+      "votes": "10771"
+    },
+    {
+      "authors": [
+        "W. Kamau Bell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Humor",
+      "position": "2017.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2017"
+      },
+      "title": "The Awkward Thoughts of W. Kamau Bell",
+      "votes": "6402"
+    },
+    {
+      "authors": [
+        "Al Franken"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Humor",
+      "position": "2017.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2017"
+      },
+      "title": "Al Franken",
+      "votes": "2882"
+    },
+    {
+      "authors": [
+        "Whitney Cummings"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Humor",
+      "position": "2017.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2017"
+      },
+      "title": "I'm Fine...And Other Lies",
+      "votes": "2195"
+    },
+    {
+      "authors": [
+        "Rhett McLaughlin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Humor",
+      "position": "2017.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2017"
+      },
+      "title": "Rhett & Link's Book of Mythicality",
+      "votes": "1879"
+    },
+    {
+      "authors": [
+        "Bassem Youssef"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Humor",
+      "position": "2017.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2017"
+      },
+      "title": "Revolution for Dummies",
+      "votes": "1875"
+    },
+    {
+      "authors": [
+        "John Hodgman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Humor",
+      "position": "2017.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2017"
+      },
+      "title": "Vacationland",
+      "votes": "1545"
+    },
+    {
+      "authors": [
+        "Stephen Colbert"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Humor",
+      "position": "2017.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2017"
+      },
+      "title": "Stephen Colbert's Midnight Confessions",
+      "votes": "1381"
+    },
+    {
+      "authors": [
+        "Lisa Scottoline"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Humor",
+      "position": "2017.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2017"
+      },
+      "title": "I Need a Lifeguard Everywhere But the Pool",
+      "votes": "1220"
+    },
+    {
+      "authors": [
+        "Erin Chack"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Humor",
+      "position": "2017.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2017"
+      },
+      "title": "This Is Really Happening",
+      "votes": "1082"
+    },
+    {
+      "authors": [
+        "Matt Bellassai"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Humor",
+      "position": "2017.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2017"
+      },
+      "title": "Everything Is Awful",
+      "votes": "1022"
+    },
+    {
+      "authors": [
+        "Marc Maron"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Humor",
+      "position": "2017.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2017"
+      },
+      "title": "Waiting for the Punch",
+      "votes": "981"
+    },
+    {
+      "authors": [
+        "Tiffany Haddish"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Humor",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2018"
+      },
+      "title": "The Last Black Unicorn",
+      "votes": "32252"
+    },
+    {
+      "authors": [
+        "David Sedaris"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Humor",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2018"
+      },
+      "title": "Calypso",
+      "votes": "30382"
+    },
+    {
+      "authors": [
+        "Megan Mullally"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Humor",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2018"
+      },
+      "title": "The Greatest Love Story Ever Told",
+      "votes": "14686"
+    },
+    {
+      "authors": [
+        "Busy Philipps"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Humor",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2018"
+      },
+      "title": "This Will Only Hurt a Little",
+      "votes": "12403"
+    },
+    {
+      "authors": [
+        "Andrew Shaffer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Humor",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2018"
+      },
+      "title": "Hope Never Dies",
+      "votes": "11788"
+    },
+    {
+      "authors": [
+        "Retta"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Humor",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2018"
+      },
+      "title": "So Close to Being the Sh*t, Y\u2019all Don\u2019t Even Know",
+      "votes": "10853"
+    },
+    {
+      "authors": [
+        "Phoebe Robinson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Humor",
+      "position": "2018.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2018"
+      },
+      "title": "Everything's Trash, But It's Okay",
+      "votes": "9015"
+    },
+    {
+      "authors": [
+        "Lisa Scottoline"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Humor",
+      "position": "2018.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2018"
+      },
+      "title": "I See Life Through Ros\u00e9-Colored Glasses",
+      "votes": "8502"
+    },
+    {
+      "authors": [
+        "Jimmy O. Yang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Humor",
+      "position": "2018.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2018"
+      },
+      "title": "How to American",
+      "votes": "7691"
+    },
+    {
+      "authors": [
+        "D.L. Hughley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Humor",
+      "position": "2018.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2018"
+      },
+      "title": "How Not to Get Shot",
+      "votes": "7006"
+    },
+    {
+      "authors": [
+        "Ellie Kemper"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Humor",
+      "position": "2018.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2018"
+      },
+      "title": "My Squirrel Days",
+      "votes": "2796"
+    },
+    {
+      "authors": [
+        "Eric Idle"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Humor",
+      "position": "2018.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2018"
+      },
+      "title": "Always Look on the Bright Side of Life",
+      "votes": "2727"
+    },
+    {
+      "authors": [
+        "Guy Branum"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Humor",
+      "position": "2018.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2018"
+      },
+      "title": "My Life as a Goddess",
+      "votes": "2557"
+    },
+    {
+      "authors": [
+        "Mike Reiss"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Humor",
+      "position": "2018.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2018"
+      },
+      "title": "Springfield Confidential",
+      "votes": "2357"
+    },
+    {
+      "authors": [
+        "Nell Scovell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Humor",
+      "position": "2018.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2018"
+      },
+      "title": "Just the Funny Parts",
+      "votes": "2002"
+    },
+    {
+      "authors": [
+        "Simon Rich"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Humor",
+      "position": "2018.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2018"
+      },
+      "title": "Hits and Misses",
+      "votes": "1891"
+    },
+    {
+      "authors": [
+        "Sloane Crosley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Humor",
+      "position": "2018.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2018"
+      },
+      "title": "Look Alive Out There",
+      "votes": "1732"
+    },
+    {
+      "authors": [
+        "Tom Papa"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Humor",
+      "position": "2018.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2018"
+      },
+      "title": "Your Dad Stole My Rake",
+      "votes": "1302"
+    },
+    {
+      "authors": [
+        "Erin Gibson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Humor",
+      "position": "2018.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2018"
+      },
+      "title": "Feminasty",
+      "votes": "1295"
+    },
+    {
+      "authors": [
+        "Maeve Higgins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Humor",
+      "position": "2018.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2018"
+      },
+      "title": "Maeve in America",
+      "votes": "1145"
+    },
+    {
+      "authors": [
+        "Ali Wong"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Humor",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2019"
+      },
+      "title": "Dear Girls: Intimate Tales, Untold Secrets, & Advice for Living Your Best Life",
+      "votes": "41454"
+    },
+    {
+      "authors": [
+        "Chelsea Handler"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Humor",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2019"
+      },
+      "title": "Life Will Be the Death of Me",
+      "votes": "17229"
+    },
+    {
+      "authors": [
+        "Ian Doescher"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Humor",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2019"
+      },
+      "title": "William Shakespeare's Much Ado About Mean Girls",
+      "votes": "13978"
+    },
+    {
+      "authors": [
+        "Gary Janetti"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Humor",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2019"
+      },
+      "title": "Do You Mind If I Cancel?",
+      "votes": "12900"
+    },
+    {
+      "authors": [
+        "Helen Ellis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Humor",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2019"
+      },
+      "title": "Southern Lady Code",
+      "votes": "11423"
+    },
+    {
+      "authors": [
+        "Matt Kracht"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Humor",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2019"
+      },
+      "title": "The Field Guide to Dumb Birds of North America",
+      "votes": "10347"
+    },
+    {
+      "authors": [
+        "Craig Ferguson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Humor",
+      "position": "2019.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2019"
+      },
+      "title": "Riding the Elephant",
+      "votes": "9402"
+    },
+    {
+      "authors": [
+        "Andrew Shaffer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Humor",
+      "position": "2019.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2019"
+      },
+      "title": "Hope Rides Again",
+      "votes": "8649"
+    },
+    {
+      "authors": [
+        "Amanda Seales"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Humor",
+      "position": "2019.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2019"
+      },
+      "title": "Small Doses",
+      "votes": "8601"
+    },
+    {
+      "authors": [
+        "Selina Meyer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Humor",
+      "position": "2019.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2019"
+      },
+      "title": "A Woman First",
+      "votes": "7314"
+    },
+    {
+      "authors": [
+        "Adam Kay"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Humor",
+      "position": "2019.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2019"
+      },
+      "title": "Twas the Nightshift before Christmas",
+      "votes": "3124"
+    },
+    {
+      "authors": [
+        "Rebecca Fishbein"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Humor",
+      "position": "2019.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2019"
+      },
+      "title": "Good Things Happen to People You Hate",
+      "votes": "2985"
+    },
+    {
+      "authors": [
+        "John Waters"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Humor",
+      "position": "2019.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2019"
+      },
+      "title": "Mr. Know-It-All",
+      "votes": "2843"
+    },
+    {
+      "authors": [
+        "Aaron Reynolds"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Humor",
+      "position": "2019.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2019"
+      },
+      "title": "Effin' Birds",
+      "votes": "2396"
+    },
+    {
+      "authors": [
+        "Chris Kattan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Humor",
+      "position": "2019.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2019"
+      },
+      "title": "Baby, Don't Hurt Me",
+      "votes": "2218"
+    },
+    {
+      "authors": [
+        "Joel Golby"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Humor",
+      "position": "2019.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2019"
+      },
+      "title": "Brilliant, Brilliant, Brilliant Brilliant Brilliant",
+      "votes": "1909"
+    },
+    {
+      "authors": [
+        "John Hodgman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Humor",
+      "position": "2019.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2019"
+      },
+      "title": "Medallion Status",
+      "votes": "1681"
+    },
+    {
+      "authors": [
+        "Josh Gondelman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Humor",
+      "position": "2019.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2019"
+      },
+      "title": "Nice Try",
+      "votes": "1625"
+    },
+    {
+      "authors": [
+        "Jeannie Gaffigan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Humor",
+      "position": "2019.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2019"
+      },
+      "title": "When Life Gives You Pears",
+      "votes": "1623"
+    },
+    {
+      "authors": [
+        "Raphael Bob-Waksberg"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Humor",
+      "position": "2019.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2019"
+      },
+      "title": "Someone Who Will Love You in All Your Damaged Glory",
+      "votes": "997"
+    },
+    {
+      "authors": [
+        "Nathan W. Pyle"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Humor",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2020"
+      },
+      "title": "Strange Planet",
+      "votes": "45156"
+    },
+    {
+      "authors": [
+        "Samantha Irby"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Humor",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2020"
+      },
+      "title": "Wow, No Thank You.",
+      "votes": "32461"
+    },
+    {
+      "authors": [
+        "Allie Brosh"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Humor",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2020"
+      },
+      "title": "Solutions and Other Problems",
+      "votes": "27674"
+    },
+    {
+      "authors": [
+        "Colin Jost"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Humor",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2020"
+      },
+      "title": "A Very Punchable Face",
+      "votes": "23034"
+    },
+    {
+      "authors": [
+        "Andy Greene"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Humor",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2020"
+      },
+      "title": "The Office",
+      "votes": "20099"
+    },
+    {
+      "authors": [
+        "Trixie Mattel"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Humor",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2020"
+      },
+      "title": "Trixie and Katya's Guide to Modern Womanhood",
+      "votes": "19683"
+    },
+    {
+      "authors": [
+        "Chlo\u00e9 Hilliard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Humor",
+      "position": "2020.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2020"
+      },
+      "title": "F*ck Your Diet",
+      "votes": "16176"
+    },
+    {
+      "authors": [
+        "Jerry Seinfeld"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Humor",
+      "position": "2020.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2020"
+      },
+      "title": "Is This Anything?",
+      "votes": "13084"
+    },
+    {
+      "authors": [
+        "Mike Birbiglia"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Humor",
+      "position": "2020.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2020"
+      },
+      "title": "The New One",
+      "votes": "7386"
+    },
+    {
+      "authors": [
+        "Duchess Goldblatt"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Humor",
+      "position": "2020.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2020"
+      },
+      "title": "Becoming Duchess Goldblatt",
+      "votes": "6931"
+    },
+    {
+      "authors": [
+        "Christopher Moore"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Humor",
+      "position": "2020.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2020"
+      },
+      "title": "Shakespeare for Squirrels",
+      "votes": "3131"
+    },
+    {
+      "authors": [
+        "Nicole Byer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Humor",
+      "position": "2020.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2020"
+      },
+      "title": "#VERYFAT #VERYBRAVE",
+      "votes": "2730"
+    },
+    {
+      "authors": [
+        "Colin Quinn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Humor",
+      "position": "2020.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2020"
+      },
+      "title": "Overstated",
+      "votes": "2222"
+    },
+    {
+      "authors": [
+        "Lindy West"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Humor",
+      "position": "2020.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2020"
+      },
+      "title": "Shit, Actually",
+      "votes": "1936"
+    },
+    {
+      "authors": [
+        "Carl Hiaasen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Humor",
+      "position": "2020.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2020"
+      },
+      "title": "Squeeze Me",
+      "votes": "1816"
+    },
+    {
+      "authors": [
+        "Tom Papa"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Humor",
+      "position": "2020.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2020"
+      },
+      "title": "You're Doing Great!",
+      "votes": "1671"
+    },
+    {
+      "authors": [
+        "Desus"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Humor",
+      "position": "2020.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2020"
+      },
+      "title": "God-Level Knowledge Darts",
+      "votes": "1419"
+    },
+    {
+      "authors": [
+        "Shayla Lawson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Humor",
+      "position": "2020.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2020"
+      },
+      "title": "This Is Major",
+      "votes": "1387"
+    },
+    {
+      "authors": [
+        "Greg Mania"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Humor",
+      "position": "2020.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2020"
+      },
+      "title": "Born to Be Public",
+      "votes": "1131"
+    },
+    {
+      "authors": [
+        "Christopher Buckley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Humor",
+      "position": "2020.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2020"
+      },
+      "title": "Make Russia Great Again",
+      "votes": "610"
+    },
+    {
+      "authors": [
+        "Jenny Lawson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Humor",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2021"
+      },
+      "title": "Broken",
+      "votes": "26788"
+    },
+    {
+      "authors": [
+        "Leslie Jordan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Humor",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2021"
+      },
+      "title": "How Y'all Doing?",
+      "votes": "21669"
+    },
+    {
+      "authors": [
+        "Nick Offerman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Humor",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2021"
+      },
+      "title": "Where the Deer and the Antelope Play",
+      "votes": "19691"
+    },
+    {
+      "authors": [
+        "Seth Rogen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Humor",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2021"
+      },
+      "title": "Yearbook",
+      "votes": "19242"
+    },
+    {
+      "authors": [
+        "Phoebe Robinson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Humor",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2021"
+      },
+      "title": "Please Don't Sit on My Bed in Your Outside Clothes",
+      "votes": "15261"
+    },
+    {
+      "authors": [
+        "Amber Ruffin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Humor",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2021"
+      },
+      "title": "You'll Never Believe What Happened to Lacey",
+      "votes": "15171"
+    },
+    {
+      "authors": [
+        "Meichi Ng"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Humor",
+      "position": "2021.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2021"
+      },
+      "title": "Barely Functional Adult",
+      "votes": "13094"
+    },
+    {
+      "authors": [
+        "David Sedaris"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Humor",
+      "position": "2021.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2021"
+      },
+      "title": "A Carnival of Snackery",
+      "votes": "12354"
+    },
+    {
+      "authors": [
+        "Sophia Benoit"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Humor",
+      "position": "2021.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2021"
+      },
+      "title": "Well, This Is Exhausting",
+      "votes": "10969"
+    },
+    {
+      "authors": [
+        "Amber Share"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Humor",
+      "position": "2021.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2021"
+      },
+      "title": "Subpar Parks",
+      "votes": "9701"
+    },
+    {
+      "authors": [
+        "Brent Spiner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Humor",
+      "position": "2021.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2021"
+      },
+      "title": "Fan Fiction",
+      "votes": "3492"
+    },
+    {
+      "authors": [
+        "Quinta Brunson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Humor",
+      "position": "2021.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2021"
+      },
+      "title": "She Memes Well",
+      "votes": "3200"
+    },
+    {
+      "authors": [
+        "Casey Wilson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Humor",
+      "position": "2021.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2021"
+      },
+      "title": "The Wreckage of My Presence",
+      "votes": "2477"
+    },
+    {
+      "authors": [
+        "Helen Ellis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Humor",
+      "position": "2021.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2021"
+      },
+      "title": "Bring Your Baggage and Don't Pack Light",
+      "votes": "2396"
+    },
+    {
+      "authors": [
+        "Kliph Nesteroff"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Humor",
+      "position": "2021.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2021"
+      },
+      "title": "We Had a Little Real Estate Problem",
+      "votes": "2160"
+    },
+    {
+      "authors": [
+        "William Evans"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Humor",
+      "position": "2021.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2021"
+      },
+      "title": "Black Nerd Problems",
+      "votes": "2025"
+    },
+    {
+      "authors": [
+        "Kelly Conaboy"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Humor",
+      "position": "2021.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2021"
+      },
+      "title": "The Particulars of Peter",
+      "votes": "1588"
+    },
+    {
+      "authors": [
+        "D.L. Hughley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Humor",
+      "position": "2021.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2021"
+      },
+      "title": "How to Survive America",
+      "votes": "1541"
+    },
+    {
+      "authors": [
+        "Simon Rich"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Humor",
+      "position": "2021.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2021"
+      },
+      "title": "New Teeth",
+      "votes": "836"
+    },
+    {
+      "authors": [
+        "Jen Spyra"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Humor",
+      "position": "2021.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2021"
+      },
+      "title": "Big Time",
+      "votes": "525"
+    },
+    {
+      "authors": [
+        "Jenna Fischer",
+        "Angela Kinsey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Humor",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2022"
+      },
+      "title": "The Office BFFs: Tales of The Office from Two Best Friends Who Were There",
+      "votes": "37551"
+    },
+    {
+      "authors": [
+        "Jill Gutowitz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Humor",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2022"
+      },
+      "title": "Girls Can Kiss Now",
+      "votes": "22034"
+    },
+    {
+      "authors": [
+        "Molly Shannon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Humor",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2022"
+      },
+      "title": "Hello, Molly!",
+      "votes": "19443"
+    },
+    {
+      "authors": [
+        "Hannah Gadsby"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Humor",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2022"
+      },
+      "title": "Ten Steps to Nanette",
+      "votes": "19214"
+    },
+    {
+      "authors": [
+        "Laura Clery"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Humor",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2022"
+      },
+      "title": "Idiots",
+      "votes": "17979"
+    },
+    {
+      "authors": [
+        "David Sedaris"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Humor",
+      "position": "2022.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2022"
+      },
+      "title": "Happy-Go-Lucky",
+      "votes": "17373"
+    },
+    {
+      "authors": [
+        "Chuck Klosterman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Humor",
+      "position": "2022.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2022"
+      },
+      "title": "The Nineties",
+      "votes": "16716"
+    },
+    {
+      "authors": [
+        "Matt Kracht"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Humor",
+      "position": "2022.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2022"
+      },
+      "title": "The Field Guide to Dumb Birds of the Whole Stupid World",
+      "votes": "16648"
+    },
+    {
+      "authors": [
+        "Mel Brooks"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Humor",
+      "position": "2022.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2022"
+      },
+      "title": "All About Me! My Remarkable Life in Show Business",
+      "votes": "16030"
+    },
+    {
+      "authors": [
+        "Jessi Klein"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Humor",
+      "position": "2022.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2022"
+      },
+      "title": "I'll Show Myself Out",
+      "votes": "11929"
+    },
+    {
+      "authors": [
+        "Anjelah Johnson-Reyes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Humor",
+      "position": "2022.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2022"
+      },
+      "title": "Who Do I Think I Am?",
+      "votes": "3275"
+    },
+    {
+      "authors": [
+        "Tom Segura"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Humor",
+      "position": "2022.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2022"
+      },
+      "title": "I'd Like to Play Alone, Please",
+      "votes": "3260"
+    },
+    {
+      "authors": [
+        "Laurie Notaro"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Humor",
+      "position": "2022.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2022"
+      },
+      "title": "Excuse Me While I Disappear",
+      "votes": "3019"
+    },
+    {
+      "authors": [
+        "Gary Janetti"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Humor",
+      "position": "2022.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2022"
+      },
+      "title": "Start Without Me",
+      "votes": "2843"
+    },
+    {
+      "authors": [
+        "Ginny Hogan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Humor",
+      "position": "2022.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2022"
+      },
+      "title": "I'm More Dateable than a Plate of Refried Beans",
+      "votes": "2594"
+    },
+    {
+      "authors": [
+        "Jen Mann"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Humor",
+      "position": "2022.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2022"
+      },
+      "title": "Midlife Bites",
+      "votes": "2401"
+    },
+    {
+      "authors": [
+        "Sona Movsesian"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Humor",
+      "position": "2022.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2022"
+      },
+      "title": "The World's Worst Assistant",
+      "votes": "2394"
+    },
+    {
+      "authors": [
+        "Natasha Leggero"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Humor",
+      "position": "2022.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2022"
+      },
+      "title": "The World Deserves My Children",
+      "votes": "1861"
+    },
+    {
+      "authors": [
+        "Judd Apatow"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Humor",
+      "position": "2022.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2022"
+      },
+      "title": "Sicker in the Head",
+      "votes": "1420"
+    },
+    {
+      "authors": [
+        "Shawn Levy"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Humor",
+      "position": "2022.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2022"
+      },
+      "title": "In On the Joke",
+      "votes": "1260"
+    },
+    {
+      "authors": [
+        "Henry Winkler",
+        "James Kaplan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Humor",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2023"
+      },
+      "title": "Being Henry: The Fonz . . . and Beyond",
+      "votes": "36770"
+    },
+    {
+      "authors": [
+        "Leslie Jones"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Humor",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2023"
+      },
+      "title": "Leslie F*cking Jones",
+      "votes": "27791"
+    },
+    {
+      "authors": [
+        "Maria Bamford"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Humor",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2023"
+      },
+      "title": "Sure, I'll Join Your Cult",
+      "votes": "24792"
+    },
+    {
+      "authors": [
+        "Laura Belgray"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Humor",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2023"
+      },
+      "title": "Tough Titties",
+      "votes": "18074"
+    },
+    {
+      "authors": [
+        "Samantha Irby"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Humor",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2023"
+      },
+      "title": "Quietly Hostile",
+      "votes": "17350"
+    },
+    {
+      "authors": [
+        "Fern Brady"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Humor",
+      "position": "2023.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2023"
+      },
+      "title": "Strong Female Character",
+      "votes": "15883"
+    },
+    {
+      "authors": [
+        "David Mitchell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Humor",
+      "position": "2023.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2023"
+      },
+      "title": "Unruly",
+      "votes": "13352"
+    },
+    {
+      "authors": [
+        "Cody Rigsby"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Humor",
+      "position": "2023.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2023"
+      },
+      "title": "XOXO, Cody",
+      "votes": "13153"
+    },
+    {
+      "authors": [
+        "Amber Ruffin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Humor",
+      "position": "2023.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2023"
+      },
+      "title": "The World Record Book of Racist Stories",
+      "votes": "12392"
+    },
+    {
+      "authors": [
+        "Ziwe"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Humor",
+      "position": "2023.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2023"
+      },
+      "title": "Black Friend",
+      "votes": "11858"
+    },
+    {
+      "authors": [
+        "R. Eric Thomas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Humor",
+      "position": "2023.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2023"
+      },
+      "title": "Congratulations, the Best is Over!",
+      "votes": "3913"
+    },
+    {
+      "authors": [
+        "Harrison Scott Key"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Humor",
+      "position": "2023.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2023"
+      },
+      "title": "How to Stay Married",
+      "votes": "3858"
+    },
+    {
+      "authors": [
+        "Elizabeth Passarella"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Humor",
+      "position": "2023.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2023"
+      },
+      "title": "It Was an Ugly Couch Anyway",
+      "votes": "3759"
+    },
+    {
+      "authors": [
+        "Lillian Stone"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Humor",
+      "position": "2023.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2023"
+      },
+      "title": "Everybody's Favorite",
+      "votes": "3145"
+    },
+    {
+      "authors": [
+        "David Zucker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Humor",
+      "position": "2023.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2023"
+      },
+      "title": "Surely You Can't Be Serious",
+      "votes": "2969"
+    },
+    {
+      "authors": [
+        "Gary Gulman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Humor",
+      "position": "2023.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2023"
+      },
+      "title": "Misfit",
+      "votes": "2533"
+    },
+    {
+      "authors": [
+        "Aparna Nancherla"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Humor",
+      "position": "2023.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2023"
+      },
+      "title": "Unreliable Narrator",
+      "votes": "2257"
+    },
+    {
+      "authors": [
+        "Blythe Roberson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Humor",
+      "position": "2023.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2023"
+      },
+      "title": "America the Beautiful?",
+      "votes": "1866"
+    },
+    {
+      "authors": [
+        "Alexandra Petri"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Humor",
+      "position": "2023.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2023"
+      },
+      "title": "Alexandra Petri's US History",
+      "votes": "1137"
+    },
+    {
+      "authors": [
+        "Jena Friedman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Humor",
+      "position": "2023.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-humor-books-2023"
+      },
+      "title": "Not Funny",
+      "votes": "1072"
+    }
+  ],
+  "fetched_at": "2026-07-28T02:57:28Z",
+  "list_id": "goodreads_choice_awards_humor",
+  "list_name": "Goodreads Choice Awards - Humor (discontinued)",
+  "match_series": false,
+  "notes": [],
+  "parser": "goodreads_choice_awards_humor",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Goodreads Choice Awards - Humor (discontinued)",
+    "source_id": "goodreads_choice_awards_humor",
+    "url": "https://www.goodreads.com/choiceawards"
+  }
+}

@@ -22,6 +22,7 @@ try:
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER,
     assign_positions, normalize_heading, normalize_line,
     strip_publication_notes,
+    split_title_author_byline,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
   from calibre_plugins.list_switchboard.parser.librarything_base import (
@@ -32,6 +33,7 @@ except ImportError:
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER,
     assign_positions, normalize_heading, normalize_line,
     strip_publication_notes,
+    split_title_author_byline,
   )
   from .generic import position_sort_key
   from .librarything_base import LibraryThingAwardParserBase
@@ -101,15 +103,23 @@ class LukasOfficialParser(AwardParserBase):
       pages = ((base_url, pages),)
     category = category or self.CATEGORY
     rows = []
+    notes = []
     for page_url, page_html in pages:
-      rows.extend(self.parse_rows(page_html, page_url, category))
+      from .lukas_modern import read_modern_lukas
+      modern=read_modern_lukas(self,page_html,page_url,category)
+      if modern is None:rows.extend(self.parse_rows(page_html,page_url,category))
+      else:
+        rows.extend(modern['rows']);notes.extend(modern['notes'])
     entries = self.entries_from_rows(self.dedupe_rows(rows))
     return self.parsed_result(
       name,
       base_url,
-      sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))))
+      sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),notes=notes)
 
   def parse_rows(self, html, base_url, category):
+    from .lukas_modern import read_modern_lukas
+    modern=read_modern_lukas(self,html,base_url,category)
+    if modern is not None:return modern['rows']
     root = self.html_root(html)
     rows = []
     for heading in self.prize_headings(root):
@@ -134,6 +144,14 @@ class LukasOfficialParser(AwardParserBase):
           if row is not None:
             rows.append(row)
     return rows
+
+  def read_official_source(self,html,url,category):
+    from .lukas_modern import read_modern_lukas
+    modern=read_modern_lukas(self,html,url,category)
+    if modern is not None:return modern
+    rows=self.parse_rows(html,url,category)
+    if not rows:raise ValueError('Official Lukas source did not expose its configured prize.')
+    return {'kind':'legacy','rows':rows,'notes':[],'complete':True,'rosters':{},'revisions':{}}
 
   def prize_headings(self, root):
     headings = []
@@ -308,9 +326,8 @@ class LukasOfficialParser(AwardParserBase):
 
   def title_author_from_text(self, value):
     text = strip_publication_notes(self.strip_result_prefix(value))
-    by_match = re.match(r'^(.+?)\s+by\s+(.+)$', text, re.I)
-    if by_match is not None:
-      return by_match.group(1).strip(), by_match.group(2).strip()
+    if re.search(r'\s+by\s+',text,re.I):
+      return split_title_author_byline(text)
     for_match = re.match(r'^(.+?)\s+for\s+(?:their\s+book\s+)?(.+)$', text, re.I)
     if for_match is not None:
       return for_match.group(2).strip(), for_match.group(1).strip()

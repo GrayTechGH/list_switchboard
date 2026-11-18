@@ -78,7 +78,8 @@
     },
     {
       "authors": [
-        "Steven Erikson and Ian C. Esslemont"
+        "Steven Erikson",
+        "Ian C. Esslemont"
       ],
       "position": "6",
       "rank_change": "3",
@@ -820,7 +821,8 @@
     },
     {
       "authors": [
-        "Amal El-Mohtar and Max Gladstone"
+        "Amal El-Mohtar",
+        "Max Gladstone"
       ],
       "position": "59",
       "rank_change": "22",
@@ -2024,7 +2026,8 @@
     },
     {
       "authors": [
-        "Marina and Sergey Dyachenko"
+        "Marina Dyachenko",
+        "Sergey Dyachenko"
       ],
       "position": "139",
       "rank_change": "62",
@@ -2066,7 +2069,8 @@
     },
     {
       "authors": [
-        "Raymond Feist and Janny Wurts"
+        "Raymond Feist",
+        "Janny Wurts"
       ],
       "position": "139",
       "rank_change": "-50",
@@ -2192,7 +2196,8 @@
     },
     {
       "authors": [
-        "Alan Moore and Dave Gibbons"
+        "Alan Moore",
+        "Dave Gibbons"
       ],
       "position": "150",
       "rank_change": "228",
@@ -2360,7 +2365,8 @@
     },
     {
       "authors": [
-        "Margaret Weis and Tracy Hickman"
+        "Margaret Weis",
+        "Tracy Hickman"
       ],
       "position": "161",
       "rank_change": "40",
@@ -3228,7 +3234,8 @@
     },
     {
       "authors": [
-        "Paul Stewart, Chris Riddell"
+        "Paul Stewart",
+        "Chris Riddell"
       ],
       "position": "212",
       "rank_change": "323",
@@ -3382,7 +3389,8 @@
     },
     {
       "authors": [
-        "Margaret Weis and Tracy Hickman"
+        "Margaret Weis",
+        "Tracy Hickman"
       ],
       "position": "212",
       "rank_change": "166",
@@ -3984,7 +3992,8 @@
     },
     {
       "authors": [
-        "Brian K. Vaughan and Fiona Staples"
+        "Brian K. Vaughan",
+        "Fiona Staples"
       ],
       "position": "247",
       "rank_change": "-89",
@@ -4109,12 +4118,13 @@
       "votes": "5"
     }
   ],
-  "fetched_at": "2026-07-12T19:54:48Z",
+  "fetched_at": "2026-11-13T03:08:39Z",
   "list_id": "r_fantasy_top_novels_2025",
   "list_name": "r/Fantasy Top Novels 2025",
   "match_series": true,
   "notes": [],
   "parser": "r_fantasy_top_novels_2025",
+  "requires_series_matching": true,
   "schema_version": 2,
   "source": {
     "name": "r/Fantasy Top Novels 2025",

@@ -13,6 +13,7 @@ OTHERWISE_TIPTREE_URL = 'https://www.sfadb.com/Otherwise_Award'
 
 class UrlFetcherOtherwiseTiptreeBooksAndSeries(UrlFetcherGeneric):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'otherwise_tiptree_books_and_series'
   NAME = 'Otherwise/Tiptree - Books and Series'
   FILTER_CATEGORIES = (
@@ -36,10 +37,11 @@ class UrlFetcherOtherwiseTiptreeBooksAndSeries(UrlFetcherGeneric):
 
     return OtherwiseTiptreeAwardsParser()
 
-  def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
+  def parse(self, html, fetch_url=None, log=None, progress=None, **kwargs):
     return self.parser().parse(
       html,
       self.URL,
       fetch_url=fetch_url,
       log=log,
-      progress=progress)
+      progress=progress, cached_parsed=kwargs.get('cached_parsed'),
+      incremental_update=kwargs.get('incremental_update', False))

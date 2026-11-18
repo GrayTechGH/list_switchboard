@@ -227,12 +227,13 @@
       "title": "Vera Wong's Guide to Snooping"
     }
   ],
-  "fetched_at": "2026-07-16T23:40:18Z",
+  "fetched_at": "2026-11-15T22:43:15Z",
   "list_id": "edgar_award_lilian_jackson_braun_award",
   "list_name": "Edgar Award - Lilian Jackson Braun Award",
   "match_series": false,
   "notes": [],
   "parser": "edgar_award_lilian_jackson_braun_award",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Edgar Award - Lilian Jackson Braun Award",

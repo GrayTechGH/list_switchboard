@@ -1,0 +1,2849 @@
+{
+  "append_state": {
+    "entry_count": 174,
+    "last_entry_key": "the oxford handbook of biblical monsters|brandon r grafius\u001fjohn w morehead",
+    "last_position": "2025.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Muriel Spark"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1987",
+      "category": "Nonfiction",
+      "position": "1987",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1988"
+      },
+      "title": "Mary Shelley"
+    },
+    {
+      "authors": [
+        "Joe Bob Briggs"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1987",
+      "category": "Nonfiction",
+      "position": "1987.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1988"
+      },
+      "title": "Joe Bob Goes to the Drive-In"
+    },
+    {
+      "authors": [
+        "Paul A. Gagne"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1987",
+      "category": "Nonfiction",
+      "position": "1987.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1988"
+      },
+      "title": "The Zombies That Ate Pittsburgh"
+    },
+    {
+      "authors": [
+        "Harlan Ellison"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1989",
+      "category": "Nonfiction",
+      "position": "1989",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1990"
+      },
+      "title": "Harlan Ellison's Watching"
+    },
+    {
+      "authors": [
+        "Stephen Jones",
+        "Kim Newman"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1989",
+      "category": "Nonfiction",
+      "position": "1989",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1990"
+      },
+      "title": "Horror: 100 Best Books"
+    },
+    {
+      "authors": [
+        "Norine Dresser"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1989",
+      "category": "Nonfiction",
+      "position": "1989.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1990"
+      },
+      "title": "American Vampires: Fans, Victims, Practitioners"
+    },
+    {
+      "authors": [
+        "Peter Cannon"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1989",
+      "category": "Nonfiction",
+      "position": "1989.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1990"
+      },
+      "title": "H.P. Lovecraft"
+    },
+    {
+      "authors": [
+        "Leonard Wolf"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1989",
+      "category": "Nonfiction",
+      "position": "1989.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1990"
+      },
+      "title": "Horror: A Connoisseur's Guide to Literature and Film"
+    },
+    {
+      "authors": [
+        "Stanley Wiater"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1990",
+      "category": "Nonfiction",
+      "position": "1990",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1991"
+      },
+      "title": "Dark Dreamers: Conversations with the Masters of Horror"
+    },
+    {
+      "authors": [
+        "David J. Skal"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1990",
+      "category": "Nonfiction",
+      "position": "1990.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1991"
+      },
+      "title": "Hollywood Gothic"
+    },
+    {
+      "authors": [
+        "Neil Barron"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1990",
+      "category": "Nonfiction",
+      "position": "1990.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1991"
+      },
+      "title": "Horror Literature: A Reader's Guide"
+    },
+    {
+      "authors": [
+        "Joe Bob Briggs"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1990",
+      "category": "Nonfiction",
+      "position": "1990.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1991"
+      },
+      "title": "Joe Bob Goes Back to the Drive-In"
+    },
+    {
+      "authors": [
+        "S. T. Joshi"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1990",
+      "category": "Nonfiction",
+      "position": "1990.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1991"
+      },
+      "title": "The Weird Tale"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1991",
+      "category": "Nonfiction",
+      "position": "1991",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1992"
+      },
+      "title": "Clive Barker's Shadows in Eden"
+    },
+    {
+      "authors": [
+        "Katherine Ramsland"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1991",
+      "category": "Nonfiction",
+      "position": "1991.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1992"
+      },
+      "title": "Prism of the Night: A Biography of Anne Rice"
+    },
+    {
+      "authors": [
+        "Stephen J. Spignesi"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1991",
+      "category": "Nonfiction",
+      "position": "1991.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1992"
+      },
+      "title": "The Shape Under the Sheet: The Complete Stephen King Encyclopedia"
+    },
+    {
+      "authors": [
+        "Ellen Guillen"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1991",
+      "category": "Nonfiction",
+      "position": "1991.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1992"
+      },
+      "title": "Vampires Among Us"
+    },
+    {
+      "authors": [
+        "Christopher Golden"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1992",
+      "category": "Nonfiction",
+      "position": "1992",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1993"
+      },
+      "title": "Cut! Horror Writers on Horror Film"
+    },
+    {
+      "authors": [
+        "Stanley Wiater"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1992",
+      "category": "Nonfiction",
+      "position": "1992.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1993"
+      },
+      "title": "Dark Visions: Conversations with the Masters of the Horror Film"
+    },
+    {
+      "authors": [
+        "Carol J. Clover"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1992",
+      "category": "Nonfiction",
+      "position": "1992.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1993"
+      },
+      "title": "Men, Women, and Chain Saws"
+    },
+    {
+      "authors": [
+        "John Russo"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1992",
+      "category": "Nonfiction",
+      "position": "1992.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1993"
+      },
+      "title": "Scare Tactics"
+    },
+    {
+      "authors": [
+        "Cosette Kies"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1992",
+      "category": "Nonfiction",
+      "position": "1992.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1993"
+      },
+      "title": "Young Adult Horror Fiction"
+    },
+    {
+      "authors": [
+        "Robert Bloch"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1993",
+      "category": "Nonfiction",
+      "position": "1993",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1994"
+      },
+      "title": "Once Around the Bloch: An Unauthorized Autobiography"
+    },
+    {
+      "authors": [
+        "Shirley Harrison",
+        "Michael Barrett"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1993",
+      "category": "Nonfiction",
+      "position": "1993.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1994"
+      },
+      "title": "The Diary of Jack the Ripper"
+    },
+    {
+      "authors": [
+        "David J. Skal"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1993",
+      "category": "Nonfiction",
+      "position": "1993.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1994"
+      },
+      "title": "The Monster Show: A Cultural History of Horror"
+    },
+    {
+      "authors": [
+        "Mike Ashley",
+        "William G. Contento"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1995",
+      "category": "Nonfiction",
+      "position": "1995",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1996"
+      },
+      "title": "The Supernatural Index"
+    },
+    {
+      "authors": [
+        "James Randi"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1995",
+      "category": "Nonfiction",
+      "position": "1995.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1996"
+      },
+      "title": "An Encyclopedia of Claims, Frauds, and Hoaxes of the Occult and Supernatural"
+    },
+    {
+      "authors": [
+        "Cathal Tohill",
+        "Pete Tombs"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1995",
+      "category": "Nonfiction",
+      "position": "1995.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1996"
+      },
+      "title": "Immoral Tales: European Sex and Horror Movies 1956-1984"
+    },
+    {
+      "authors": [
+        "Janet Leigh",
+        "Christopher Nickens"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1995",
+      "category": "Nonfiction",
+      "position": "1995.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1996"
+      },
+      "title": "Psycho: Behind the Scenes of the Classic Thriller"
+    },
+    {
+      "authors": [
+        "S. T. Joshi"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1996",
+      "category": "Nonfiction",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1997"
+      },
+      "title": "H.P. Lovecraft: A Life"
+    },
+    {
+      "authors": [
+        "Barbara Belford"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1996",
+      "category": "Nonfiction",
+      "position": "1996.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1997"
+      },
+      "title": "Bram Stoker: A Biography of the Author of Dracula"
+    },
+    {
+      "authors": [
+        "Don Hutchison"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1996",
+      "category": "Nonfiction",
+      "position": "1996.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1997"
+      },
+      "title": "The Great Pulp Heroes"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1996",
+      "category": "Nonfiction",
+      "position": "1996.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1997"
+      },
+      "title": "The Illustrated Werewolf Movie Guide"
+    },
+    {
+      "authors": [
+        "David J. Skal"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1996",
+      "category": "Nonfiction",
+      "position": "1996.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1997"
+      },
+      "title": "V is for Vampire: An A to Z Guide to Everything Undead"
+    },
+    {
+      "authors": [
+        "Stanley Wiater"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1997",
+      "category": "Nonfiction",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1998"
+      },
+      "title": "Dark Thoughts: On Writing"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1997",
+      "category": "Nonfiction",
+      "position": "1997.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1998"
+      },
+      "title": "Clive Barker's A-Z of Horror"
+    },
+    {
+      "authors": [
+        "Katherine Ramsland"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1997",
+      "category": "Nonfiction",
+      "position": "1997.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1998"
+      },
+      "title": "Dean Koontz: A Writer's Biography"
+    },
+    {
+      "authors": [
+        "John Clute",
+        "John Grant"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1997",
+      "category": "Nonfiction",
+      "position": "1997.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1998"
+      },
+      "title": "The Encyclopedia of Fantasy"
+    },
+    {
+      "authors": [
+        "Marcus Hearn",
+        "Alan Barnes"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1997",
+      "category": "Nonfiction",
+      "position": "1997.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1998"
+      },
+      "title": "The Hammer Story"
+    },
+    {
+      "authors": [
+        "Tim Lucas"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1997",
+      "category": "Nonfiction",
+      "position": "1997.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1998"
+      },
+      "title": "Video Watchdog"
+    },
+    {
+      "authors": [
+        "Paula Guran"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1998",
+      "category": "Nonfiction",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1999"
+      },
+      "title": "DarkEcho Vol. 5 #1-50"
+    },
+    {
+      "authors": [
+        "Clive Bloom"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1998",
+      "category": "Nonfiction",
+      "position": "1998.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1999"
+      },
+      "title": "Gothic Horror: A Reader's Guide from Poe to King and Beyond"
+    },
+    {
+      "authors": [
+        "Jeanne Cavelos"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1998",
+      "category": "Nonfiction",
+      "position": "1998.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1999"
+      },
+      "title": "The Science of the X-Files"
+    },
+    {
+      "authors": [
+        "Richard Laymon"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1998",
+      "category": "Nonfiction",
+      "position": "1998.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1999"
+      },
+      "title": "A Writer's Tale"
+    },
+    {
+      "authors": [
+        "Paula Guran"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1999",
+      "category": "Nonfiction",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2000"
+      },
+      "title": "DarkEcho"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1999",
+      "category": "Nonfiction",
+      "position": "1999.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2000"
+      },
+      "title": "The Essential Monster Movie Guide"
+    },
+    {
+      "authors": [
+        "David B. Silva",
+        "Paul F. Olson"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1999",
+      "category": "Nonfiction",
+      "position": "1999.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2000"
+      },
+      "title": "Hellnotes"
+    },
+    {
+      "authors": [
+        "Victoria Price"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1999",
+      "category": "Nonfiction",
+      "position": "1999.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2000"
+      },
+      "title": "Vincent Price: A Daughter's Biography"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2000",
+      "category": "Nonfiction",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2001"
+      },
+      "title": "On Writing"
+    },
+    {
+      "authors": [
+        "Bill Sheehan"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2000",
+      "category": "Nonfiction",
+      "position": "2000.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2001"
+      },
+      "title": "At the Foot of the Story Tree: An Inquiry into the Fiction of Peter Straub"
+    },
+    {
+      "authors": [
+        "David B. Silva",
+        "Paul F. Olson"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2000",
+      "category": "Nonfiction",
+      "position": "2000.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2001"
+      },
+      "title": "Hellnotes"
+    },
+    {
+      "authors": [
+        "Robert Weinberg"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2000",
+      "category": "Nonfiction",
+      "position": "2000.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2001"
+      },
+      "title": "Horror of the 20th Century: An Illustrated History"
+    },
+    {
+      "authors": [
+        "Brian Keene"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2001",
+      "category": "Nonfiction",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2002"
+      },
+      "title": "Jobs in Hell"
+    },
+    {
+      "authors": [
+        "David B. Silva",
+        "Paul F. Olson"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2001",
+      "category": "Nonfiction",
+      "position": "2001.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2002"
+      },
+      "title": "Hellnotes"
+    },
+    {
+      "authors": [
+        "Bruce Campbell"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2001",
+      "category": "Nonfiction",
+      "position": "2001.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2002"
+      },
+      "title": "If Chins Could Kill: Confessions of a B Movie Actor"
+    },
+    {
+      "authors": [
+        "Brian A. Hopkins",
+        "Garrett Peck"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2001",
+      "category": "Nonfiction",
+      "position": "2001.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2002"
+      },
+      "title": "Personal Demons"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2002",
+      "category": "Nonfiction",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2003"
+      },
+      "title": "Ramsey Campbell, Probably: Essays on Horror and Sundry Fantasies"
+    },
+    {
+      "authors": [
+        "David B. Silva",
+        "Paul F. Olson",
+        "Garrett Peck"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2002",
+      "category": "Nonfiction",
+      "position": "2002.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2003"
+      },
+      "title": "Hellnotes"
+    },
+    {
+      "authors": [
+        "Brian Keene",
+        "Kelly Laymon"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2002",
+      "category": "Nonfiction",
+      "position": "2002.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2003"
+      },
+      "title": "Jobs in Hell"
+    },
+    {
+      "authors": [
+        "Ralan Conley"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2002",
+      "category": "Nonfiction",
+      "position": "2002.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2003"
+      },
+      "title": "Ralan.com"
+    },
+    {
+      "authors": [
+        "Richard Bleiler"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2002",
+      "category": "Nonfiction",
+      "position": "2002.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2003"
+      },
+      "title": "Supernatural Fiction Writers: Contemporary Fantasy and Horror, Second Edition"
+    },
+    {
+      "authors": [
+        "Thomas F. Monteleone"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2003",
+      "category": "Nonfiction",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2004"
+      },
+      "title": "The Mothers and Fathers Italian Association"
+    },
+    {
+      "authors": [
+        "Gary Spencer Millidge",
+        "Smoky Man"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2003",
+      "category": "Nonfiction",
+      "position": "2003.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2004"
+      },
+      "title": "Alan Moore: Portrait of an Extraordinary Gentleman"
+    },
+    {
+      "authors": [
+        "Gary A. Braunbeck"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2003",
+      "category": "Nonfiction",
+      "position": "2003.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2004"
+      },
+      "title": "Fear in a Handful of Dust"
+    },
+    {
+      "authors": [
+        "Judi Rohrig"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2003",
+      "category": "Nonfiction",
+      "position": "2003.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2004"
+      },
+      "title": "Hellnotes"
+    },
+    {
+      "authors": [
+        "Ralan Conley"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2003",
+      "category": "Nonfiction",
+      "position": "2003.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2004"
+      },
+      "title": "Ralan.com"
+    },
+    {
+      "authors": [
+        "Judi Rohrig"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2004",
+      "category": "Nonfiction",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2005"
+      },
+      "title": "Hellnotes"
+    },
+    {
+      "authors": [
+        "Thomas F. Monteleone"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2004",
+      "category": "Nonfiction",
+      "position": "2004.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2005"
+      },
+      "title": "The Complete Idiot's Guide to Writing a Novel"
+    },
+    {
+      "authors": [
+        "Joseph McCabe"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2004",
+      "category": "Nonfiction",
+      "position": "2004.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2005"
+      },
+      "title": "Hanging Out with the Dream King: Conversations with Neil Gaiman and His Collaborators"
+    },
+    {
+      "authors": [
+        "Ralan Conley"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2004",
+      "category": "Nonfiction",
+      "position": "2004.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2005"
+      },
+      "title": "Ralan.com"
+    },
+    {
+      "authors": [
+        "Bev Vincent"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2004",
+      "category": "Nonfiction",
+      "position": "2004.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2005"
+      },
+      "title": "The Road to the Dark Tower: Exploring Stephen King's Magnum Opus"
+    },
+    {
+      "authors": [
+        "Stephen Jones",
+        "Kim Newman"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2005",
+      "category": "Nonfiction",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2006"
+      },
+      "title": "Horror: Another 100 Best Books"
+    },
+    {
+      "authors": [
+        "Sam Weller"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2005",
+      "category": "Nonfiction",
+      "position": "2005.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2006"
+      },
+      "title": "The Bradbury Chronicles: The Life of Ray Bradbury"
+    },
+    {
+      "authors": [
+        "Loren Rhoades"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2005",
+      "category": "Nonfiction",
+      "position": "2005.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2006"
+      },
+      "title": "Morbid Curiosity #9"
+    },
+    {
+      "authors": [
+        "Michael McCarty"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2005",
+      "category": "Nonfiction",
+      "position": "2005.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2006"
+      },
+      "title": "More Giants of the Genre"
+    },
+    {
+      "authors": [
+        "Rhonda Wilcox"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2005",
+      "category": "Nonfiction",
+      "position": "2005.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2006"
+      },
+      "title": "Why Buffy Matters: The Art of Buffy the Vampire Slayer"
+    },
+    {
+      "authors": [
+        "Michael Largo"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2006",
+      "category": "Nonfiction",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2007"
+      },
+      "title": "Final Exits: The Illustrated Encyclopedia of How We Die"
+    },
+    {
+      "authors": [
+        "Kim Paffenroth"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2006",
+      "category": "Nonfiction",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2007"
+      },
+      "title": "Gospel of the Living Dead: George Romero's Visions of Hell on Earth"
+    },
+    {
+      "authors": [
+        "Mark Morris"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2006",
+      "category": "Nonfiction",
+      "position": "2006.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2007"
+      },
+      "title": "Cinema Macabre"
+    },
+    {
+      "authors": [
+        "Rocky Wood"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2006",
+      "category": "Nonfiction",
+      "position": "2006.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2007"
+      },
+      "title": "Stephen King: Uncollected, Unpublished"
+    },
+    {
+      "authors": [
+        "Jonathan Maberry",
+        "David F. Kramer"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2007",
+      "category": "Nonfiction",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2008"
+      },
+      "title": "The Cryptopedia: A Dictionary of the Weird, Strange & Downright Bizarre"
+    },
+    {
+      "authors": [
+        "Joshua Gee"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2007",
+      "category": "Nonfiction",
+      "position": "2007.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2008"
+      },
+      "title": "Encyclopedia Horrifica"
+    },
+    {
+      "authors": [
+        "Michael Largo"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2007",
+      "category": "Nonfiction",
+      "position": "2007.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2008"
+      },
+      "title": "The Portable Obituary: How the Famous, Rich, and Powerful Really Died"
+    },
+    {
+      "authors": [
+        "Joe Nassise",
+        "David Niall Wilson"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2007",
+      "category": "Nonfiction",
+      "position": "2007.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2008"
+      },
+      "title": "Storytellers Unplugged"
+    },
+    {
+      "authors": [
+        "Lisa Morton"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2008",
+      "category": "Nonfiction",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2009"
+      },
+      "title": "A Hallowe'en Anthology"
+    },
+    {
+      "authors": [
+        "Amy Wallace",
+        "Del Howison",
+        "Scott Bradley"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2008",
+      "category": "Nonfiction",
+      "position": "2008.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2009"
+      },
+      "title": "The Book of Lists: Horror"
+    },
+    {
+      "authors": [
+        "Gregory Lamberson"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2008",
+      "category": "Nonfiction",
+      "position": "2008.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2009"
+      },
+      "title": "Cheap Scares"
+    },
+    {
+      "authors": [
+        "Jonathan Maberry"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2008",
+      "category": "Nonfiction",
+      "position": "2008.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2009"
+      },
+      "title": "Zombie CSU"
+    },
+    {
+      "authors": [
+        "Michael Knost"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2009",
+      "category": "Nonfiction",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2010"
+      },
+      "title": "Writers Workshop of Horror"
+    },
+    {
+      "authors": [
+        "L. L. Soares",
+        "Michael Arruda"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2009",
+      "category": "Nonfiction",
+      "position": "2009.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2010"
+      },
+      "title": "Cinema Knife Fight"
+    },
+    {
+      "authors": [
+        "Bev Vincent"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2009",
+      "category": "Nonfiction",
+      "position": "2009.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2010"
+      },
+      "title": "The Stephen King Illustrated Companion"
+    },
+    {
+      "authors": [
+        "Rocky Wood",
+        "Justin Brook"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2009",
+      "category": "Nonfiction",
+      "position": "2009.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2010"
+      },
+      "title": "Stephen King: The Non-Fiction"
+    },
+    {
+      "authors": [
+        "Gary A. Braunbeck"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2010",
+      "category": "Nonfiction",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2011"
+      },
+      "title": "To Each Their Darkness"
+    },
+    {
+      "authors": [
+        "Thomas Ligotti"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2010",
+      "category": "Nonfiction",
+      "position": "2010.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2011"
+      },
+      "title": "The Conspiracy Against the Human Race: A Contrivance of Horror"
+    },
+    {
+      "authors": [
+        "Sam Weller"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2010",
+      "category": "Nonfiction",
+      "position": "2010.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2011"
+      },
+      "title": "Listen to the Echoes: The Ray Bradbury Interviews"
+    },
+    {
+      "authors": [
+        "Jonathan Maberry",
+        "Janice Gable Bashman"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2010",
+      "category": "Nonfiction",
+      "position": "2010.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2011"
+      },
+      "title": "Wanted Undead or Alive"
+    },
+    {
+      "authors": [
+        "Rocky Wood"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2011",
+      "category": "Nonfiction",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2012"
+      },
+      "title": "Stephen King: A Literary Companion"
+    },
+    {
+      "authors": [
+        "Matt Mogk"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2011",
+      "category": "Nonfiction",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2012"
+      },
+      "title": "Everything You Ever Wanted to Know About Zombies"
+    },
+    {
+      "authors": [
+        "John C. Tibbetts"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2011",
+      "category": "Nonfiction",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2012"
+      },
+      "title": "The Gothic Imagination"
+    },
+    {
+      "authors": [
+        "Lesley Pratt Bannatyne"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2011",
+      "category": "Nonfiction",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2012"
+      },
+      "title": "Halloween Nation: Behind the Scenes of America's Fright Night"
+    },
+    {
+      "authors": [
+        "Gary William Crawford",
+        "Jim Rockhill",
+        "Brian J. Showers"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2011",
+      "category": "Nonfiction",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2012"
+      },
+      "title": "Reflections in a Glass Darkly"
+    },
+    {
+      "authors": [
+        "Nick Mamatas"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2011",
+      "category": "Nonfiction",
+      "position": "2011.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2012"
+      },
+      "title": "Starve Better"
+    },
+    {
+      "authors": [
+        "Lisa Morton"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2012",
+      "category": "Nonfiction",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2013"
+      },
+      "title": "Trick or Treat: A History of Halloween"
+    },
+    {
+      "authors": [
+        "Les Klinger"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2012",
+      "category": "Nonfiction",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2013"
+      },
+      "title": "The Annotated Sandman, Volume 1"
+    },
+    {
+      "authors": [
+        "Kendall R. Phillips"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2012",
+      "category": "Nonfiction",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2013"
+      },
+      "title": "Dark Directions: Romero, Craven, Carpenter, and the Modern Horror Film"
+    },
+    {
+      "authors": [
+        "Kim Paffenroth",
+        "John W. Morehead"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2012",
+      "category": "Nonfiction",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2013"
+      },
+      "title": "The Undead and Theology"
+    },
+    {
+      "authors": [
+        "Michael R. Collings"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2012",
+      "category": "Nonfiction",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2013"
+      },
+      "title": "Writing Darkness"
+    },
+    {
+      "authors": [
+        "William F. Nolan"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2013",
+      "category": "Nonfiction",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2014"
+      },
+      "title": "Nolan on Bradbury: Sixty Years of Writing about the Master of Science Fiction"
+    },
+    {
+      "authors": [
+        "Barbara Brodman",
+        "James E. Doan"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2013",
+      "category": "Nonfiction",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2014"
+      },
+      "title": "Images of the Modern Vampire: The Hip and the Atavistic"
+    },
+    {
+      "authors": [
+        "Jarkko Toikkanen"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2013",
+      "category": "Nonfiction",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2014"
+      },
+      "title": "The Intermedial Experience of Horror: Suspended Failures"
+    },
+    {
+      "authors": [
+        "Robert H. Waught"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2013",
+      "category": "Nonfiction",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2014"
+      },
+      "title": "Lovecraft and Influence: His Predecessors and Successors"
+    },
+    {
+      "authors": [
+        "Gary William Crawford"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2013",
+      "category": "Nonfiction",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2014"
+      },
+      "title": "Ramsey Campbell: Critical Essays on the Modern Master of Horror"
+    },
+    {
+      "authors": [
+        "Lucy A. Snyder"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2014",
+      "category": "Nonfiction",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2015"
+      },
+      "title": "Shooting Yourself in the Head for Fun and Profit: A Writer's Survival Guide"
+    },
+    {
+      "authors": [
+        "Jason V Brock"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2014",
+      "category": "Nonfiction",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2015"
+      },
+      "title": "Disorders of Magnitude"
+    },
+    {
+      "authors": [
+        "Joe Mynhardt",
+        "Emma Audsley"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2014",
+      "category": "Nonfiction",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2015"
+      },
+      "title": "Horror 101: The Way Forward"
+    },
+    {
+      "authors": [
+        "S. T. Joshi"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2014",
+      "category": "Nonfiction",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2015"
+      },
+      "title": "Lovecraft and a World in Transition"
+    },
+    {
+      "authors": [
+        "Leslie S. Klinger"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2014",
+      "category": "Nonfiction",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2015"
+      },
+      "title": "The New Annotated H.P. Lovecraft"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2015",
+      "category": "Nonfiction",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2016"
+      },
+      "title": "The Art of Horror"
+    },
+    {
+      "authors": [
+        "Michael Knost"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2015",
+      "category": "Nonfiction",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2016"
+      },
+      "title": "Author's Guide to Marketing with Teeth"
+    },
+    {
+      "authors": [
+        "Joe Mynhardt",
+        "Emma Audsley"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2015",
+      "category": "Nonfiction",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2016"
+      },
+      "title": "Horror 201: The Silver Scream"
+    },
+    {
+      "authors": [
+        "Danel Olson"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2015",
+      "category": "Nonfiction",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2016"
+      },
+      "title": "Studies in the Horror Film: Stanley Kubrick's The Shining"
+    },
+    {
+      "authors": [
+        "Justin Everett",
+        "Jeffrey H. Shanks"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2015",
+      "category": "Nonfiction",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2016"
+      },
+      "title": "The Unique Legacy of Weird Tales: The Evolution of Modern Fantasy and Horror"
+    },
+    {
+      "authors": [
+        "Ruth Franklin"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2016",
+      "category": "Nonfiction",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2017"
+      },
+      "title": "Shirley Jackson: A Rather Haunted Life"
+    },
+    {
+      "authors": [
+        "John Tibbetts"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2016",
+      "category": "Nonfiction",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2017"
+      },
+      "title": "The Gothis Worlds of Peter Straub"
+    },
+    {
+      "authors": [
+        "Danel Olson"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2016",
+      "category": "Nonfiction",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2017"
+      },
+      "title": "Guillermo del Toro's \"The Devil's Backbone\" and \"Pan's Labyrinth\": Studies in the Horror Film"
+    },
+    {
+      "authors": [
+        "Leo Braudy"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2016",
+      "category": "Nonfiction",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2017"
+      },
+      "title": "Haunted: On Ghosts, Witches, Vampires, Zombies and Other Monsters of the Natural and Supernatural"
+    },
+    {
+      "authors": [
+        "W. Scott Poole"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2016",
+      "category": "Nonfiction",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2017"
+      },
+      "title": "In the Mountains of Madness: The Life, Death and Extraordinary Afterlife of H. P. Lovecraft"
+    },
+    {
+      "authors": [
+        "David J. Skal"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2016",
+      "category": "Nonfiction",
+      "position": "2016.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2017"
+      },
+      "title": "Something in the Blood: The Untold Story of Bram Stoker, the Man Who Wrote Dracula"
+    },
+    {
+      "authors": [
+        "Grady Hendrix"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2017",
+      "category": "Nonfiction",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2018"
+      },
+      "title": "Paperbacks from Hell"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2017",
+      "category": "Nonfiction",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2018"
+      },
+      "title": "The Art of Horror Movies"
+    },
+    {
+      "authors": [
+        "Michele Brittany"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2017",
+      "category": "Nonfiction",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2018"
+      },
+      "title": "Horror in Space"
+    },
+    {
+      "authors": [
+        "Kinitra D. Brooks"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2017",
+      "category": "Nonfiction",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2018"
+      },
+      "title": "Searching for Sycorax"
+    },
+    {
+      "authors": [
+        "Joe Mynhardt",
+        "Eugene Johnson"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2017",
+      "category": "Nonfiction",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2018"
+      },
+      "title": "Where Nightmares Come From"
+    },
+    {
+      "authors": [
+        "Joe Mynhardt",
+        "Eugene Johnson"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2018",
+      "category": "Nonfiction",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2019"
+      },
+      "title": "It's Alive: Bringing Your Nightmares to Life"
+    },
+    {
+      "authors": [
+        "John Connolly"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2018",
+      "category": "Nonfiction",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2019"
+      },
+      "title": "Horror Express"
+    },
+    {
+      "authors": [
+        "Lee Gambin"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2018",
+      "category": "Nonfiction",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2019"
+      },
+      "title": "The Howling: Studies in the Horror Film"
+    },
+    {
+      "authors": [
+        "Kevin J. Wemore, Jr."
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2018",
+      "category": "Nonfiction",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2019"
+      },
+      "title": "Uncovering Stranger Things: Essays on Eighties Nostalgia, Cynicism and Innocence in the Series"
+    },
+    {
+      "authors": [
+        "Howard David Ingham"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2018",
+      "category": "Nonfiction",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2019"
+      },
+      "title": "We Don't Go Back: A Watcher's Guide to Folk Horror"
+    },
+    {
+      "authors": [
+        "Lisa Kr\u00f6ger",
+        "Melanie R. Anderson"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2019",
+      "category": "Nonfiction",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2020"
+      },
+      "title": "Monster, She Wrote: The Women Who Pioneered Horror and Speculative Fiction"
+    },
+    {
+      "authors": [
+        "Harriet E. H. Earle"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2019",
+      "category": "Nonfiction",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2020"
+      },
+      "title": "Gender, Sexuality, and Queerness in American Horror Story : Critical Essays"
+    },
+    {
+      "authors": [
+        "Eleanor Beal",
+        "Jonathan Greenaway"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2019",
+      "category": "Nonfiction",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2020"
+      },
+      "title": "Horror and Religion: New Literary Approaches to Theology, Race, and Sexuality"
+    },
+    {
+      "authors": [
+        "Alexandra Heller-Nicholas"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2019",
+      "category": "Nonfiction",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2020"
+      },
+      "title": "Masks in Horror Cinema: Eyes Without Faces"
+    },
+    {
+      "authors": [
+        "John B. Kachuba"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2019",
+      "category": "Nonfiction",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2020"
+      },
+      "title": "Shapeshifters: A History"
+    },
+    {
+      "authors": [
+        "Tim Waggoner"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2020",
+      "category": "Nonfiction",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2021"
+      },
+      "title": "Writing in the Dark"
+    },
+    {
+      "authors": [
+        "Alexandra Heller-Nicholas"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2020",
+      "category": "Nonfiction",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2021"
+      },
+      "title": "1000 Women in Horror"
+    },
+    {
+      "authors": [
+        "Brian Keene"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2020",
+      "category": "Nonfiction",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2021"
+      },
+      "title": "End of the Road"
+    },
+    {
+      "authors": [
+        "Kelly Florence",
+        "Meg Hafdahl"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2020",
+      "category": "Nonfiction",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2021"
+      },
+      "title": "The Science of Women in Horror: The Special Effects, Stunts, and True Stories Behind Your Favorite Fright Films"
+    },
+    {
+      "authors": [
+        "Kevin J. Wetmore, Jr."
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2020",
+      "category": "Nonfiction",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2021"
+      },
+      "title": "The Streaming of Hill House: Essays on the Haunting Netflix Adaptation"
+    },
+    {
+      "authors": [
+        "Alison Peirse"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2020",
+      "category": "Nonfiction",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2021"
+      },
+      "title": "Women Make Horror: Filmmaking, Feminism, Genre"
+    },
+    {
+      "authors": [
+        "Michael Knost"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2021",
+      "category": "Nonfiction",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2022"
+      },
+      "title": "Writers Workshop of Horror 2"
+    },
+    {
+      "authors": [
+        "Danel Olson"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2021",
+      "category": "Nonfiction",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2022"
+      },
+      "title": "9/11 Gothic: Decrypting Ghosts and Trauma in New York City\u2019s Terrorism Novels"
+    },
+    {
+      "authors": [
+        "Kevin J. Wetmore, Jr."
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2021",
+      "category": "Nonfiction",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2022"
+      },
+      "title": "Eaters of the Dead: Myths and Realities of Cannibal Monsters"
+    },
+    {
+      "authors": [
+        "Jeffrey Andrew Weinstock",
+        "Regina M. Hansen"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2021",
+      "category": "Nonfiction",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2022"
+      },
+      "title": "Giving the Devil His Due: Satan and Cinema"
+    },
+    {
+      "authors": [
+        "Kristopher Woofter"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2021",
+      "category": "Nonfiction",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2022"
+      },
+      "title": "Shirley Jackson: A Companion"
+    },
+    {
+      "authors": [
+        "Tim Waggoner"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2022",
+      "category": "Nonfiction",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2023"
+      },
+      "title": "Writing in the Dark: The Workbook"
+    },
+    {
+      "authors": [
+        "Leanna Renee Hieber",
+        "Andrea Janes"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2022",
+      "category": "Nonfiction",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2023"
+      },
+      "title": "A Haunted History of Invisible Women: True Stories of American's Ghosts"
+    },
+    {
+      "authors": [
+        "Lisa Kr\u00f6ger",
+        "Melanie R. Anderson"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2022",
+      "category": "Nonfiction",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2023"
+      },
+      "title": "Toil and Trouble: A Women's History of the Occult"
+    },
+    {
+      "authors": [
+        "Michael Cisco"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2022",
+      "category": "Nonfiction",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2023"
+      },
+      "title": "Weird Fiction: A Genre Study"
+    },
+    {
+      "authors": [
+        "Stephanie M. Wytovich"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2022",
+      "category": "Nonfiction",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2023"
+      },
+      "title": "Writing Poetry in the Dark"
+    },
+    {
+      "authors": [
+        "Sadie Hartmann"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2023",
+      "category": "Nonfiction",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2024"
+      },
+      "title": "101 Horror Books to Read Before You're Murdered"
+    },
+    {
+      "authors": [
+        "Lisa Morton"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2023",
+      "category": "Nonfiction",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2024"
+      },
+      "title": "The Art of the Zombie Movie"
+    },
+    {
+      "authors": [
+        "Robin R. Means Coleman",
+        "Mark H. Harris"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2023",
+      "category": "Nonfiction",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2024"
+      },
+      "title": "The Black Guy Dies First: Black Horror Cinema from Fodder to Oscar"
+    },
+    {
+      "authors": [
+        "Lee Murray",
+        "Angela Yuriko Smith"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2023",
+      "category": "Nonfiction",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2024"
+      },
+      "title": "Unquiet Spirits: Essays by Asian Women in Horror"
+    },
+    {
+      "authors": [
+        "Claire Fitzpatrick"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2023",
+      "category": "Nonfiction",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2024"
+      },
+      "title": "A Vindication of Monsters: Essays on Mary Wollstonecraft and Mary Shelley"
+    },
+    {
+      "authors": [
+        "Emily C. Hughes"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2024",
+      "category": "Nonfiction",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2025"
+      },
+      "title": "Horror for Weenies: Everything You Need to Know About the Films You\u2019re Too Scared to Watch"
+    },
+    {
+      "authors": [
+        "Jeremy Dauber"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2024",
+      "category": "Nonfiction",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2025"
+      },
+      "title": "American Scary: A History of Horror, from Salem to Stephen King and Beyond"
+    },
+    {
+      "authors": [
+        "Anna Bogutskaya"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2024",
+      "category": "Nonfiction",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2025"
+      },
+      "title": "Feeding the Monster: Why Horror Has a Hold on Us"
+    },
+    {
+      "authors": [
+        "Heidi Honeycutt"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2024",
+      "category": "Nonfiction",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2025"
+      },
+      "title": "I Spit on Your Celluloid: The History of Women Directing Horror Movies"
+    },
+    {
+      "authors": [
+        "Cassandra O'Sullivan Sachar"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2024",
+      "category": "Nonfiction",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2025"
+      },
+      "title": "No More Haunted Dolls: Horror Fiction that Transcends the Tropes"
+    },
+    {
+      "authors": [
+        "Becky Siegel Spratford"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2025",
+      "category": "Nonfiction",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2026"
+      },
+      "title": "Why I Love Horror: Essays on Horror Literature"
+    },
+    {
+      "authors": [
+        "Leanna Renee Hieber",
+        "Andrea Janes"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2025",
+      "category": "Nonfiction",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2026"
+      },
+      "title": "America's Most Gothic"
+    },
+    {
+      "authors": [
+        "Naomi Simone Borwein"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2025",
+      "category": "Nonfiction",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2026"
+      },
+      "title": "Global Indigenous Horror"
+    },
+    {
+      "authors": [
+        "Coltan Scrivner"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2025",
+      "category": "Nonfiction",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2026"
+      },
+      "title": "Morbidly Curious: A Scientist Explain Why We Can't Look Away"
+    },
+    {
+      "authors": [
+        "Brandon R. Grafius",
+        "John W. Morehead"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2025",
+      "category": "Nonfiction",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2026"
+      },
+      "title": "The Oxford Handbook of Biblical Monsters"
+    }
+  ],
+  "fetched_at": "2026-07-27T22:16:43Z",
+  "list_id": "bram_stoker_nonfiction",
+  "list_name": "Bram Stoker - Nonfiction",
+  "match_series": false,
+  "notes": [],
+  "parser": "bram_stoker_nonfiction",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Bram Stoker - Nonfiction",
+    "source_id": "bram_stoker_nonfiction",
+    "url": "https://www.sfadb.com/Bram_Stoker_Awards"
+  }
+}

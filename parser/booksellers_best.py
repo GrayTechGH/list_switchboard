@@ -11,48 +11,52 @@ Maintenance notes:
 - Official finalist/shortlist coverage is archive-dependent. The parser imports
   finalists only from official archived pages that visibly expose finalist rows.
 - LibraryThing and FictionDB remain reference-only for this recipe.
+- A capture can contain next-year entry rules above older results. Bound each
+  annual award section and its winner/finalist stages before assigning metadata.
 """
 
 import json
 import re
+from copy import deepcopy
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, UnicodeDammit
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import ( # type: ignore
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
-    normalize_heading, normalize_line, strip_publication_notes,
+    normalize_heading, normalize_line, strip_publication_notes, is_author_suffix,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key # pyright: ignore[reportMissingImports]
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
-    normalize_heading, normalize_line, strip_publication_notes,
+    normalize_heading, normalize_line, strip_publication_notes, is_author_suffix,
   )
   from .generic import position_sort_key
 
 
 BOOKSELLERS_BEST_AWARD_NAME = "Booksellers' Best Award"
 BOOKSELLERS_BEST_CDX_URL = (
-  'https://web.archive.org/cdx?url=www.gdrwa.org/contests.html'
+  'https://web.archive.org/cdx/search/cdx?url=www.gdrwa.org/contests.html'
   '&output=json&fl=timestamp,original,statuscode,mimetype,digest'
-  '&filter=statuscode:200&collapse=digest')
+  '&filter=statuscode:200&collapse=digest&gzip=false')
 BOOKSELLERS_BEST_DISPLAY_URL = (
   'https://web.archive.org/web/*/http://www.gdrwa.org/contests.html')
 BOOKSELLERS_BEST_CDX_URLS = (
   BOOKSELLERS_BEST_CDX_URL,
-  'https://web.archive.org/cdx?url=www.gdrwa.org/bba*&output=json'
+  'https://web.archive.org/cdx/search/cdx?url=www.gdrwa.org/bba*&output=json'
   '&fl=timestamp,original,statuscode,mimetype,digest&filter=statuscode:200'
-  '&collapse=urlkey&limit=200',
-  'https://web.archive.org/cdx?url=www.gdrwa.org/winners*&output=json'
+  '&collapse=urlkey&limit=200&gzip=false',
+  'https://web.archive.org/cdx/search/cdx?url=www.gdrwa.org/winners*&output=json'
   '&fl=timestamp,original,statuscode,mimetype,digest&filter=statuscode:200'
-  '&collapse=urlkey&limit=200',
+  '&collapse=urlkey&limit=200&gzip=false',
 )
 
 RESULT_PRIORITY = {RESULT_WINNER: 0, RESULT_SHORTLISTED: 1}
 
 CATEGORY_ALIASES = {
   'traditional': 'Traditional',
+  'traditional/sweet': 'Traditional',
   'best traditional romance': 'Traditional',
   'short contemporary': 'Short Contemporary Romance',
   'short contemporary romance': 'Short Contemporary Romance',
@@ -60,6 +64,7 @@ CATEGORY_ALIASES = {
   'long contemporary': 'Long Contemporary Romance',
   'long contemporary romance': 'Long Contemporary Romance',
   'single title': 'Single Title',
+  'single title/mainstream': 'Single Title',
   'single title romance': 'Single Title Romance',
   'short historical': 'Short Historical',
   'long historical': 'Long Historical',
@@ -72,10 +77,12 @@ CATEGORY_ALIASES = {
   'inspirational': 'Inspirational Romance',
   'inspirational romance': 'Inspirational Romance',
   'erotic romance': 'Erotic Romance',
+  'erotic': 'Erotic Romance',
   'paranormal/time travel/futuristic': 'Paranormal/Time Travel/Futuristic',
   'paranormal/tt/futuristic': 'Paranormal/Time Travel/Futuristic',
   'paranormal / tt / futuristic': 'Paranormal/Time Travel/Futuristic',
   'paranormal romance': 'Paranormal Romance',
+  'paranormal': 'Paranormal Romance',
   'parnormal romance': 'Paranormal Romance',
   'young adult': 'Young Adult Romance',
   'young adult romance': 'Young Adult Romance',
@@ -99,7 +106,12 @@ class BooksellersBestAwardParser(AwardParserBase):
 
   def parse(
       self, html, base_url=BOOKSELLERS_BEST_CDX_URL,
-      name=BOOKSELLERS_BEST_AWARD_NAME, fetch_url=None, pages=None):
+      name=BOOKSELLERS_BEST_AWARD_NAME, fetch_url=None, pages=None,
+      cached_parsed=None, incremental_update=False):
+    if fetch_url is not None and pages is None and self.looks_like_cdx(html):
+      from .booksellers_best_updates import fetch_booksellers_best
+      return fetch_booksellers_best(self,fetch_url,base_url,name,cached_parsed,
+        incremental_update,initial_source=html)
     notes = []
     if pages is not None:
       rows = []
@@ -111,6 +123,9 @@ class BooksellersBestAwardParser(AwardParserBase):
       rows = self.parse_page_rows(html, base_url, notes)
 
     rows = self.dedupe_rows(self.with_source_order(rows))
+    return self.result_from_rows(rows,base_url,name,notes)
+
+  def result_from_rows(self,rows,base_url,name,notes):
     entries = self.entries_from_rows(rows)
     self.add_coverage_notes(rows, notes)
     if not rows:
@@ -189,12 +204,39 @@ class BooksellersBestAwardParser(AwardParserBase):
 
   def parse_page_rows(self, html, source_url, notes):
     soup = BeautifulSoup(self.source_text(html), 'html.parser')
+    return [row for section in self.award_sections(soup)
+      for row in self.parse_section_rows(section, source_url, notes)]
+
+  def award_sections(self, soup):
+    """Entry rules for a new cycle can precede a previous year's results."""
+    soup = self.booksellers_section(soup)
+    headings = [node for node in soup.find_all(['h1', 'h2', 'h3', 'h4'])
+      if re.search(r'\bbookseller(?:s| s)? best\b', normalize_heading(node.get_text(' ', strip=True)))
+      and self.year_from_text(node.get_text(' ', strip=True)) is not None]
+    if len(headings) < 2:
+      return [soup]
+    sections = []
+    for heading in headings:
+      section = BeautifulSoup('<html><body></body></html>', 'html.parser')
+      section.body.append(deepcopy(heading))
+      for node in heading.next_siblings:
+        if any(node is boundary for boundary in headings):
+          break
+        section.body.append(deepcopy(node))
+      sections.append(section)
+    return sections
+
+  def parse_section_rows(self, soup, source_url, notes):
     page_text = normalize_heading(soup.get_text(' ', strip=True)[:3000])
     url_text = normalize_heading(source_url)
     if not self.is_booksellers_page(page_text, url_text):
       return []
+    image_only = self.known_image_roster(soup)
     result = self.result_for_page(soup, source_url)
     if result is None:
+      if image_only:
+        notes.append('The archived 2017 Booksellers Best finalist roster is image-only; '
+          'this HTML recipe cannot import those finalists. Official HTML winners remain available.')
       if self.is_entry_or_rules_page(page_text):
         notes.append(
           f'Official GDRW archived page exposed entry/rules text but no winner '
@@ -207,11 +249,38 @@ class BooksellersBestAwardParser(AwardParserBase):
     rows = []
     rows.extend(self.parse_heading_sections(soup, source_url, year, result))
     rows.extend(self.parse_legacy_paragraphs(soup, source_url, year, result, len(rows)))
+    rows.extend(self.parse_inline_category_rows(soup, source_url, year, result, len(rows)))
     if not rows and self.is_entry_or_rules_page(page_text):
       notes.append(
         f'Official GDRW archived {year} page exposed entry/rules text but no '
         'winner or finalist rows.')
+    if not rows and image_only:
+      notes.append('The archived 2017 Booksellers Best finalist roster is image-only; '
+        'this HTML recipe cannot import those finalists. Official HTML winners remain available.')
     return rows
+
+  def known_image_roster(self, soup):
+    return (self.year_for_page(soup, '') == 2017 and
+      any(str(image.get('src', '')) == 'images/finalists2017.gif' for image in soup.find_all('img')) and
+      not any(self.category_from_text(node.get_text(' ', strip=True))
+        for node in soup.find_all(['h3', 'h4', 'h5'])))
+
+  def booksellers_section(self, soup):
+    if 'between the sheets' not in normalize_heading(soup.get_text(' ', strip=True)):
+      return soup
+    heading = next((node for node in soup.find_all(['h1', 'h2', 'h3', 'h4'])
+      if re.search(r'\bbookseller(?:s| s)? best\b', normalize_heading(node.get_text(' ', strip=True)))), None)
+    if heading is None:
+      return soup
+    section = BeautifulSoup('<html><body></body></html>', 'html.parser')
+    section.body.append(deepcopy(heading))
+    for node in heading.next_siblings:
+      if getattr(node, 'name', None) in ('h1', 'h2', 'h3'):
+        text = normalize_heading(node.get_text(' ', strip=True))
+        if 'between the sheets' in text or ('contest' in text and 'bookseller' not in text):
+          break
+      section.body.append(deepcopy(node))
+    return section
 
   def is_booksellers_page(self, page_text, url_text):
     combined = f'{page_text} {url_text}'
@@ -223,6 +292,7 @@ class BooksellersBestAwardParser(AwardParserBase):
     )
 
   def result_for_page(self, soup, source_url):
+    soup = self.booksellers_section(soup)
     text = normalize_heading(f'{source_url} {self.title_text(soup)}')
     page_text = normalize_heading(soup.get_text(' ', strip=True)[:3000])
     if 'between the sheets' in page_text:
@@ -237,12 +307,32 @@ class BooksellersBestAwardParser(AwardParserBase):
     url_year = self.year_from_url(source_url)
     if url_year is not None:
       return url_year
-    for heading in soup.find_all(['h1', 'h2', 'title']):
+    result_years = set()
+    for node in soup.find_all('p'):
+      text = normalize_heading(node.get_text(' ', strip=True))
+      if (len(text) <= 350 and re.search(r'\bbookseller(?:s| s)? best\b', text)
+          and re.search(r'\b(?:finalists?|winners?)\b', text)):
+        years = {int(value) for value in re.findall(r'\b(?:19|20)\d{2}\b', text)}
+        if len(years) == 1:
+          result_years.update(years)
+    if len(result_years) == 1:
+      return result_years.pop()
+    for heading in soup.find_all(['h1', 'h2', 'h3', 'title']):
       text = normalize_line(heading.get_text(' ', strip=True))
       if re.search(r'booksellers|book sellers|bba', text, re.I):
         year = self.year_from_text(text)
         if year is not None:
           return year
+    years = set()
+    for node in soup.find_all(['p', 'td']):
+      text = normalize_heading(node.get_text(' ', strip=True))
+      if len(text) > 350 or not re.search(r'\bbookseller(?:s| s)? best\b', text):
+        continue
+      match = re.search(r'\b(?:finalists?|winners?)\s+(?:for|of)\s+(?:the\s+)?((?:19|20)\d{2})\b', text)
+      if match:
+        years.add(int(match.group(1)))
+    if len(years) == 1:
+      return years.pop()
     return None
 
   def year_from_url(self, url):
@@ -275,17 +365,50 @@ class BooksellersBestAwardParser(AwardParserBase):
       category = self.category_from_text(heading.get_text(' ', strip=True))
       if not category:
         continue
+      section_result = self.result_before_node(heading, result)
+      section_year = self.year_before_node(heading, year)
+      section_has_rows = False
       for node in heading.next_siblings:
         name = getattr(node, 'name', None)
         if name in {'h1', 'h2', 'h3', 'h4', 'h5'}:
           break
-        if name not in {'p', 'div', 'ul', 'ol'}:
+        if name not in {'p', 'div', 'ul', 'ol', 'h6'}:
           continue
-        parsed_rows = self.rows_from_node(node, source_url, year, category, result, len(rows))
+        parsed_rows = self.rows_from_node(node, source_url, section_year, category, section_result, len(rows))
         rows.extend(parsed_rows)
-        if parsed_rows:
+        if not parsed_rows and section_has_rows:
           break
+        section_has_rows = section_has_rows or bool(parsed_rows)
     return rows
+
+  def result_before_node(self, node, default):
+    # One annual section can show winners followed by the full finalist roster.
+    for previous in node.previous_elements:
+      name = getattr(previous, 'name', None)
+      if name not in ('h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p'):
+        continue
+      text = normalize_heading(previous.get_text(' ', strip=True))
+      if len(text) > 220:
+        continue
+      label = (name != 'p' or previous.find(['strong', 'b']) is not None)
+      match = re.search(r'\b(winners?|finalists?)$', text) if label else None
+      if match is None:
+        match = re.search(r'\bannounce(?:s)? (?:the )?(winners?|finalists?)\b', text)
+      if match is not None:
+        return RESULT_WINNER if match.group(1).startswith('winner') else RESULT_SHORTLISTED
+    return default
+
+  def year_before_node(self, node, default):
+    for previous in node.previous_elements:
+      if getattr(previous, 'name', None) not in ('h1', 'h2', 'h3', 'h4', 'h5', 'p'):
+        continue
+      text = normalize_heading(previous.get_text(' ', strip=True))
+      if (len(text) <= 350 and re.search(r'\bbookseller(?:s| s)? best\b', text)
+          and re.search(r'\b(?:finalists?|winners?)\b', text)):
+        years = {int(value) for value in re.findall(r'\b(?:19|20)\d{2}\b', text)}
+        if len(years) == 1:
+          return years.pop()
+    return default
 
   def parse_legacy_paragraphs(self, soup, source_url, year, result, source_order_start=0):
     rows = []
@@ -293,6 +416,8 @@ class BooksellersBestAwardParser(AwardParserBase):
       category = self.category_from_paragraph(paragraph)
       if not category:
         continue
+      section_result = self.result_before_node(paragraph, result)
+      section_year = self.year_before_node(paragraph, year)
       lines = self.paragraph_lines(paragraph)
       category_seen = False
       for line in lines:
@@ -306,7 +431,7 @@ class BooksellersBestAwardParser(AwardParserBase):
           continue
         title, author = parsed
         rows.append(self.row(
-          year, title, author, category, result, source_url,
+          section_year, title, author, category, section_result, source_url,
           source_order_start + len(rows)))
     return rows
 
@@ -318,8 +443,31 @@ class BooksellersBestAwardParser(AwardParserBase):
     lines = self.paragraph_lines(paragraph)
     return self.category_from_text(lines[0]) if lines else ''
 
+  def parse_inline_category_rows(self, soup, source_url, year, result, source_order_start=0):
+    rows = []
+    for paragraph in soup.find_all('p'):
+      for line in self.paragraph_lines(paragraph):
+        match = re.match(r'^(.+?)\s+[-\u2013\u2014]\s+(.+)$', line)
+        category = self.category_from_text(match.group(1)) if match else ''
+        if not category:
+          continue
+        credit = re.split(r',\s*Editor\s+', match.group(2), maxsplit=1, flags=re.I)[0]
+        credit = re.sub(r'\s+\ufffd\s+', ' - ', credit)
+        parsed = self.title_author_from_text(credit)
+        row_year = self.year_before_node(paragraph, year)
+        # This single official 2013 row omits its title/byline separator.
+        if row_year == 2013 and category == 'Traditional' and credit == 'The Nanny Who Saved Christmas Michelle Douglas':
+          parsed = ('The Nanny Who Saved Christmas', 'Michelle Douglas')
+        if parsed is not None:
+          rows.append(self.row(row_year, *parsed, category,
+            self.result_before_node(paragraph, result), source_url, source_order_start + len(rows)))
+    return rows
+
   def paragraph_lines(self, node):
     fragment = BeautifulSoup(str(node), 'html.parser')
+    # Source formatting newlines are HTML whitespace; only BR splits entries.
+    for text in fragment.find_all(string=True):
+      text.replace_with(re.sub(r'\s+', ' ', str(text)))
     for br in fragment.find_all('br'):
       br.replace_with('\n')
     text = fragment.get_text(' ', strip=False)
@@ -354,10 +502,24 @@ class BooksellersBestAwardParser(AwardParserBase):
       title = self.clean_title(emphasis.get_text(' ', strip=True))
       if not title or self.category_from_text(title):
         continue
-      author = self.author_after_emphasis(emphasis)
+      author = self.author_before_emphasis(emphasis) or self.author_after_emphasis(emphasis)
       if author:
         rows.append((title, author))
     return tuple(rows)
+
+  def author_before_emphasis(self, emphasis):
+    parts = []
+    for sibling in emphasis.previous_siblings:
+      if getattr(sibling, 'name', None) == 'em':
+        break
+      if getattr(sibling, 'name', None) == 'br' and any(part.strip(' ,') for part in parts):
+        break
+      parts.append(sibling.get_text(' ', strip=True) if hasattr(sibling, 'get_text') else str(sibling))
+    text = normalize_line(' '.join(reversed(parts)))
+    if not text.endswith(',') or len(text) > 160:
+      return ''
+    author = self.clean_author(text[:-1])
+    return '' if normalize_heading(author) in ('winner', 'finalist', 'shortlist') else author
 
   def author_after_emphasis(self, emphasis):
     parts = []
@@ -367,7 +529,7 @@ class BooksellersBestAwardParser(AwardParserBase):
       parts.append(sibling.get_text(' ', strip=True) if hasattr(sibling, 'get_text') else str(sibling))
     text = normalize_line(' '.join(parts))
     text = re.sub(r'^(?:by|[-\u2013\u2014,])\s*', '', text, flags=re.I).strip()
-    if ',' in text:
+    if ',' in text and not is_author_suffix(text.rsplit(',',1)[-1]):
       text = text.rsplit(',', 1)[-1].strip()
     text = re.sub(r'^\s*(?:and|&)\s+', '', text, flags=re.I).strip()
     text = re.sub(r'\s+(?:and|&)\s*$', '', text, flags=re.I).strip()
@@ -375,9 +537,18 @@ class BooksellersBestAwardParser(AwardParserBase):
 
   def title_author_from_text(self, text):
     text = normalize_line(text)
-    if not text or self.category_from_text(text) or self.skip_line(text):
+    if (not text or self.category_from_text(text) or
+        (text.startswith('(') and text.endswith(')'))):
       return None
-    match = re.match(r'^(.+?)\s+by\s+(.+)$', text, re.I)
+    reverse = re.match(r'^(.+?),\s*["\u201c](.+?)["\u201d]\s*$', text)
+    if reverse is not None:
+      return self.clean_title(reverse.group(2)), self.clean_author(reverse.group(1))
+    # The 2014 roster puts its separating comma inside the quoted title.
+    match = re.match(r'^["\u201c](.+?)["\u201d]\s*,?\s+(.+)$', text)
+    if match is None and self.skip_line(text):
+      return None
+    if match is None:
+      match = re.match(r'^(.+?)\s+by\s+(.+)$', text, re.I)
     if match is None:
       match = re.match(r'^(.+?)\s*[-\u2013\u2014]\s*(.+)$', text)
     if match is None:
@@ -413,7 +584,7 @@ class BooksellersBestAwardParser(AwardParserBase):
 
   def clean_author(self, value):
     value = strip_publication_notes(normalize_line(value))
-    value = re.sub(r'\s+\*+$', '', value).strip()
+    value = re.sub(r'\s*\*+$', '', value).strip()
     return value.strip(' "\u201c\u201d,')
 
   def row(self, year, title, author, category, result, source_url, source_order):
@@ -497,7 +668,7 @@ class BooksellersBestAwardParser(AwardParserBase):
 
   def source_text(self, source):
     if isinstance(source, bytes):
-      return source.decode('utf-8', 'replace')
+      return UnicodeDammit(source).unicode_markup or ''
     return source or ''
 
 

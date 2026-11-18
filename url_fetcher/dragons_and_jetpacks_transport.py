@@ -10,9 +10,9 @@ Invariants:
 import time
 
 try:
-  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxSkippedError
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxSkippedError, CamoufoxRequiredError
 except ImportError:
-  from errors import ImportCancelledError, CamoufoxSkippedError
+  from errors import ImportCancelledError, CamoufoxSkippedError, CamoufoxRequiredError
 
 
 class DragonsJetpacksFetchPolicy:
@@ -51,7 +51,7 @@ class DragonsJetpacksFetchPolicy:
           f'Dragons & Jetpacks role={role} transport=Camoufox accepted '
           f'seconds={time.monotonic() - started:.1f}')
         return html
-      except ImportCancelledError:
+      except (ImportCancelledError,CamoufoxRequiredError):
         raise
       except Exception as err:
         self.browser_disabled = True
@@ -67,7 +67,7 @@ class DragonsJetpacksFetchPolicy:
     try:
       html = self.legacy_fetch(url)
       self.validate(html, url)
-    except ImportCancelledError:
+    except (ImportCancelledError,CamoufoxRequiredError):
       raise
     except Exception as err:
       self.report(

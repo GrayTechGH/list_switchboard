@@ -3281,12 +3281,13 @@
       "title": "The Medusa Situation"
     }
   ],
-  "fetched_at": "2026-07-11T00:38:38Z",
+  "fetched_at": "2026-07-22T01:18:18Z",
   "list_id": "ditmar_novel",
   "list_name": "Ditmar - Novel",
   "match_series": false,
   "notes": [],
   "parser": "ditmar_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Ditmar - Novel",

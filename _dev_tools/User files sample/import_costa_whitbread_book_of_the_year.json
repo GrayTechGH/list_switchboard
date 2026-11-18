@@ -1,0 +1,455 @@
+{
+  "append_state": {
+    "entry_count": 38,
+    "last_entry_key": "the kids|hannah lowe",
+    "last_position": "2021",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "aliases": [
+        "How Far Can You Go"
+      ],
+      "authors": [
+        "David Lodge"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "1980",
+      "category": "Novel",
+      "position": "1980",
+      "result": "winner",
+      "title": "How Far Can You Go?"
+    },
+    {
+      "authors": [
+        "Douglas Dunn"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "1985",
+      "category": "Poetry",
+      "position": "1985",
+      "result": "winner",
+      "title": "Elegies"
+    },
+    {
+      "authors": [
+        "Kazuo Ishiguro"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986",
+      "result": "winner",
+      "title": "An Artist of the Floating World"
+    },
+    {
+      "authors": [
+        "Christopher Nolan"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "1987",
+      "category": "Biography",
+      "position": "1987",
+      "result": "winner",
+      "title": "Under the Eye of the Clock"
+    },
+    {
+      "authors": [
+        "Paul Sayer"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "1988",
+      "category": "First Novel",
+      "position": "1988",
+      "result": "winner",
+      "title": "The Comforts of Madness"
+    },
+    {
+      "authors": [
+        "Richard Holmes"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "1989",
+      "category": "Biography",
+      "position": "1989",
+      "result": "winner",
+      "title": "Coleridge: Early Visions"
+    },
+    {
+      "authors": [
+        "Nicholas Mosley"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990",
+      "result": "winner",
+      "title": "Hopeful Monsters"
+    },
+    {
+      "authors": [
+        "John Richardson"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "1991",
+      "category": "Biography",
+      "position": "1991",
+      "result": "winner",
+      "title": "A Life of Picasso"
+    },
+    {
+      "authors": [
+        "Jeff Torrington"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "1992",
+      "category": "First Novel",
+      "position": "1992",
+      "result": "winner",
+      "title": "Swing Hammer Swing!"
+    },
+    {
+      "authors": [
+        "Joan Brady"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993",
+      "result": "winner",
+      "title": "Theory of War"
+    },
+    {
+      "authors": [
+        "William Trevor"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994",
+      "result": "winner",
+      "title": "Felicia's Journey"
+    },
+    {
+      "authors": [
+        "Kate Atkinson"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "1995",
+      "category": "First Novel",
+      "position": "1995",
+      "result": "winner",
+      "title": "Behind the Scenes at the Museum"
+    },
+    {
+      "authors": [
+        "Seamus Heaney"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "1996",
+      "category": "Poetry",
+      "position": "1996",
+      "result": "winner",
+      "title": "The Spirit Level"
+    },
+    {
+      "authors": [
+        "Ted Hughes"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "1997",
+      "category": "Poetry",
+      "position": "1997",
+      "result": "winner",
+      "title": "Tales from Ovid"
+    },
+    {
+      "authors": [
+        "Ted Hughes"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "1998",
+      "category": "Poetry",
+      "position": "1998",
+      "result": "winner",
+      "title": "Birthday Letters"
+    },
+    {
+      "authors": [
+        "Seamus Heaney"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "1999",
+      "category": "Poetry",
+      "position": "1999",
+      "result": "winner",
+      "title": "Beowulf: A New Verse Translation"
+    },
+    {
+      "authors": [
+        "Matthew Kneale"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000",
+      "result": "winner",
+      "title": "English Passengers"
+    },
+    {
+      "authors": [
+        "Philip Pullman"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "2001",
+      "category": "Children's Book",
+      "position": "2001",
+      "result": "winner",
+      "title": "The Amber Spyglass"
+    },
+    {
+      "authors": [
+        "Claire Tomalin"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "2002",
+      "category": "Biography",
+      "position": "2002",
+      "result": "winner",
+      "title": "Samuel Pepys: The Unequalled Self"
+    },
+    {
+      "authors": [
+        "Mark Haddon"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003",
+      "result": "winner",
+      "title": "The Curious Incident of the Dog in the Night-Time"
+    },
+    {
+      "authors": [
+        "Andrea Levy"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004",
+      "result": "winner",
+      "title": "Small Island"
+    },
+    {
+      "aliases": [
+        "Matisse the Master"
+      ],
+      "authors": [
+        "Hilary Spurling"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "2005",
+      "category": "Biography",
+      "position": "2005",
+      "result": "winner",
+      "title": "Matisse: The Master"
+    },
+    {
+      "authors": [
+        "Stef Penney"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "2006",
+      "category": "First Novel",
+      "position": "2006",
+      "result": "winner",
+      "title": "The Tenderness of Wolves"
+    },
+    {
+      "authors": [
+        "A.L. Kennedy"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007",
+      "result": "winner",
+      "title": "Day"
+    },
+    {
+      "authors": [
+        "Sebastian Barry"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008",
+      "result": "winner",
+      "title": "The Secret Scripture"
+    },
+    {
+      "authors": [
+        "Christopher Reid"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "2009",
+      "category": "Poetry",
+      "position": "2009",
+      "result": "winner",
+      "title": "A Scattering"
+    },
+    {
+      "authors": [
+        "Jo Shapcott"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "2010",
+      "category": "Poetry",
+      "position": "2010",
+      "result": "winner",
+      "title": "Of Mutability"
+    },
+    {
+      "authors": [
+        "Andrew Miller"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011",
+      "result": "winner",
+      "title": "Pure"
+    },
+    {
+      "aliases": [
+        "Bring up the Bodies"
+      ],
+      "authors": [
+        "Hilary Mantel"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012",
+      "result": "winner",
+      "title": "Bring Up the Bodies"
+    },
+    {
+      "authors": [
+        "Nathan Filer"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "2013",
+      "category": "First Novel",
+      "position": "2013",
+      "result": "winner",
+      "title": "The Shock of the Fall"
+    },
+    {
+      "authors": [
+        "Helen Macdonald"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "2014",
+      "category": "Biography",
+      "position": "2014",
+      "result": "winner",
+      "title": "H is for Hawk"
+    },
+    {
+      "authors": [
+        "Frances Hardinge"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "2015",
+      "category": "Children's Book",
+      "position": "2015",
+      "result": "winner",
+      "title": "The Lie Tree"
+    },
+    {
+      "authors": [
+        "Sebastian Barry"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016",
+      "result": "winner",
+      "title": "Days Without End"
+    },
+    {
+      "authors": [
+        "Helen Dunmore"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "2017",
+      "category": "Poetry",
+      "position": "2017",
+      "result": "winner",
+      "title": "Inside the Wave"
+    },
+    {
+      "authors": [
+        "Bart van Es"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "2018",
+      "category": "Biography",
+      "position": "2018",
+      "result": "winner",
+      "title": "The Cut Out Girl: A Story of War and Family, Lost and Found"
+    },
+    {
+      "aliases": [
+        "The Volunteer"
+      ],
+      "authors": [
+        "Jack Fairweather"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "2019",
+      "category": "Biography",
+      "position": "2019",
+      "result": "winner",
+      "title": "The Volunteer: The True Story of the Resistance Hero who Infiltrated Auschwitz"
+    },
+    {
+      "authors": [
+        "Monique Roffey"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020",
+      "result": "winner",
+      "title": "The Mermaid of Black Conch: A Love Story"
+    },
+    {
+      "authors": [
+        "Hannah Lowe"
+      ],
+      "award": "Costa/Whitbread Book of the Year",
+      "award_year": "2021",
+      "category": "Poetry",
+      "position": "2021",
+      "result": "winner",
+      "title": "The Kids"
+    }
+  ],
+  "fetched_at": "2026-07-30T02:02:15Z",
+  "list_id": "costa_whitbread_book_of_the_year",
+  "list_name": "Costa/Whitbread Book of the Year (discontinued)",
+  "match_series": false,
+  "notes": [
+    "The 1980 Whitbread Book of the Year was an isolated award; the recurring overall award runs from 1985 through 2021."
+  ],
+  "parser": "costa_whitbread_book_of_the_year",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Costa/Whitbread Book of the Year (discontinued)",
+    "source_id": "costa_whitbread_book_of_the_year",
+    "url": "https://en.wikipedia.org/wiki/Costa_Book_Awards"
+  }
+}

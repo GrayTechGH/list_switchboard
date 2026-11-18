@@ -21,6 +21,8 @@ Maintenance notes:
 """
 
 import re
+import json
+import datetime
 from urllib.parse import parse_qsl, urlencode, urljoin, urlsplit, urlunsplit
 
 from lxml import html as lxml_html
@@ -32,6 +34,7 @@ try:
     strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
+  from calibre_plugins.list_switchboard.parser.incremental import ParsedUnitCache
 except ImportError:
   from errors import ImportCancelledError, CamoufoxRequiredError
   from .award_base import (
@@ -39,6 +42,7 @@ except ImportError:
     strip_publication_notes,
   )
   from .generic import position_sort_key
+  from .incremental import ParsedUnitCache
 
 
 AWARD_NAME = 'CWA Dagger'
@@ -69,7 +73,12 @@ class CWADaggerParser(AwardParserBase):
 
   def parse(self, html, base_url, name, category,
             fetch_url=None, log=None, progress=None, start_year=None,
-            category_aliases=(), archive_by_accolade=False):
+            category_aliases=(), archive_by_accolade=False, cached_parsed=None,
+            incremental_update=False, enable_incremental=False):
+    if enable_incremental and start_year is not None and fetch_url is not None:
+      return self.parse_cached_years(html, base_url, name, category, fetch_url,
+        log, progress, start_year, category_aliases, archive_by_accolade,
+        cached_parsed, incremental_update)
     if fetch_url is not None and start_year is not None:
       if archive_by_accolade:
         return self.parse_accolade_archives(
@@ -95,6 +104,8 @@ class CWADaggerParser(AwardParserBase):
       page_number += 1
       try:
         page_html = fetch_url(next_url)
+      except (ImportCancelledError, CamoufoxRequiredError):
+        raise
       except Exception as err:
         notes.append(f'{AWARD_NAME} page {page_number} could not be fetched: {err}')
         self._log(log, 'fetch-failed', {'url': next_url, 'error': str(err)})
@@ -115,6 +126,89 @@ class CWADaggerParser(AwardParserBase):
       sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
       notes)
 
+  def parse_cached_years(self, html, base_url, name, category, fetch_url,
+      log, progress, start_year, category_aliases, archive_by_accolade,
+      cached_parsed, incremental_update):
+    cache = ParsedUnitCache('cwa-complete-years-v1', json.dumps([
+      base_url, name, category, start_year, category_aliases, archive_by_accolade,
+      self.ACCOLADE_GROUPS], sort_keys=True), cached_parsed, incremental_update)
+    initial = self.parse_page(html, base_url, category, category_aliases)
+    if not initial:
+      raise ValueError(f'{AWARD_NAME} did not expose any {category} entries.')
+    latest = max(int(row['award_year']) for row in initial)
+    old_latest = cache.old_discovery.get('latest_year')
+    old_orders = cache.old_discovery.get('year_orders')
+    if (not cache.old_units or type(old_latest) is not int or old_latest > latest or
+        not isinstance(old_orders, dict)):
+      parsed = self.parse(html, base_url, name, category, fetch_url=fetch_url,
+        log=log, progress=progress, start_year=start_year,
+        category_aliases=category_aliases, archive_by_accolade=archive_by_accolade)
+      by_year = {}
+      for entry in parsed['entries']:
+        by_year.setdefault(entry['award_year'], []).append(entry)
+      # An unresolved archive overlap cannot certify any historical ballot.
+      # Retain the usable partial import, but retry its units on the next update.
+      for year, rows in by_year.items():
+        cache.put(year, rows, revision=year, complete=not parsed.get('notes'),
+          metadata={'settled': any(row['result'] == 'winner' for row in rows)})
+      parsed['incremental_state'] = self.cached_year_state(cache, parsed['entries'], latest)
+      return parsed
+    entries, notes = [], []
+    years = list(range(int(start_year), latest + 1))
+    for index, year in enumerate(years, 1):
+      key = str(year)
+      old = cache.old_units.get(key) or {}
+      reused = None
+      if (year < min(latest, datetime.datetime.now().year) and
+          (old.get('metadata') or {}).get('settled') is True):
+        reused = cache.reuse(key, revision=key)
+      if reused is not None:
+        entries.extend(reused)
+      else:
+        try:
+          if archive_by_accolade:
+            rows = self.fetch_year_accolades(base_url, category, year,
+              fetch_url, log, category_aliases)
+          else:
+            rows = self.fetch_individual_years(base_url, category, [year],
+              fetch_url, log, category_aliases)
+          if not rows or any(str(row['award_year']) != key for row in rows):
+            raise ValueError('CWA year query did not return the expected ballot.')
+          current = self.entries_from_rows(self.dedupe_rows(rows))
+          # Equal-year source cards can arrive in a different order through
+          # narrow queries. Keep known work/result order, even when that unit
+          # was removed from a stale cache; fresh results replace their rows.
+          order = old_orders.get(key)
+          if isinstance(order, list) and all(isinstance(item, str) for item in order):
+            positions = {item: number for number, item in enumerate(order)}
+            current.sort(key=lambda entry: positions.get(self.year_entry_identity(entry), len(order)))
+            current = assign_positions(current, year)
+          cache.put(key, current, revision=key,
+            metadata={'settled': any(row['result'] == 'winner' for row in current)})
+          entries.extend(current)
+        except (ImportCancelledError, CamoufoxRequiredError):
+          raise
+        except Exception as err:
+          entries.extend(cache.failed(key, revision=key))
+          notes.append(f'{AWARD_NAME} year {year} could not be refreshed: {err}; retained cached entries.')
+      self._progress(progress, index, len(years), f'Processed {name} {year}...')
+    entries.sort(key=lambda entry: position_sort_key(entry.get('position', '')))
+    parsed = self.parsed_result(name, base_url, entries, notes)
+    parsed['incremental_state'] = self.cached_year_state(cache, entries, latest)
+    return parsed
+
+  def year_entry_identity(self, entry):
+    return json.dumps([entry['title'], entry['authors'], entry['result']], ensure_ascii=False)
+
+  def cached_year_state(self, cache, entries, latest):
+    orders = {}
+    for entry in entries:
+      orders.setdefault(entry['award_year'], []).append(self.year_entry_identity(entry))
+    state = cache.state(entries)
+    state['discovery'] = {'latest_year': latest, 'year_orders': orders,
+      'refresh_units': [str(latest)]}
+    return state
+
   def parse_accolade_archives(
       self, html, base_url, name, category, start_year, fetch_url, log, progress,
       category_aliases=()):
@@ -134,6 +228,8 @@ class CWADaggerParser(AwardParserBase):
         base_url, start_year, latest_year, accolades=accolades)
       try:
         page_html = fetch_url(url)
+      except (ImportCancelledError, CamoufoxRequiredError):
+        raise
       except Exception as err:
         self._log(log, 'fetch-failed', {'url': url, 'error': str(err)})
         raise ValueError(
@@ -209,6 +305,8 @@ class CWADaggerParser(AwardParserBase):
       page_urls.append(next_url)
       try:
         page_html = fetch_url(next_url)
+      except (ImportCancelledError, CamoufoxRequiredError):
+        raise
       except Exception as err:
         self._log(log, 'fetch-failed', {'url': next_url, 'error': str(err)})
         raise ValueError(
@@ -381,6 +479,8 @@ class CWADaggerParser(AwardParserBase):
       url = self.year_archive_url(base_url, oldest_year, newest_year)
       try:
         group_html = fetch_url(url)
+      except (ImportCancelledError, CamoufoxRequiredError):
+        raise
       except Exception as err:
         self._log(log, 'fetch-failed', {'url': url, 'error': str(err)})
         raise ValueError(
@@ -420,6 +520,8 @@ class CWADaggerParser(AwardParserBase):
       url = self.year_archive_url(base_url, year)
       try:
         year_html = fetch_url(url)
+      except (ImportCancelledError, CamoufoxRequiredError):
+        raise
       except Exception as err:
         self._log(log, 'fetch-failed', {'url': url, 'error': str(err)})
         raise ValueError(
@@ -445,6 +547,8 @@ class CWADaggerParser(AwardParserBase):
       label_text = ', '.join(labels)
       try:
         accolade_html = fetch_url(url)
+      except (ImportCancelledError, CamoufoxRequiredError):
+        raise
       except Exception as err:
         self._log(log, 'fetch-failed', {'url': url, 'error': str(err)})
         raise ValueError(

@@ -1,0 +1,2971 @@
+{
+  "append_state": {
+    "entry_count": 184,
+    "last_entry_key": "the scald crow|grace daly",
+    "last_position": "2025.06",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Lisa W. Cantrell"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1987",
+      "category": "First Novel",
+      "position": "1987",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1988"
+      },
+      "title": "The Manse"
+    },
+    {
+      "authors": [
+        "Clive Barker"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1987",
+      "category": "First Novel",
+      "position": "1987.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1988"
+      },
+      "title": "The Damnation Game"
+    },
+    {
+      "authors": [
+        "Steve Rasnic Tem"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1987",
+      "category": "First Novel",
+      "position": "1987.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1988"
+      },
+      "title": "Excavation"
+    },
+    {
+      "authors": [
+        "Tony Richards"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1987",
+      "category": "First Novel",
+      "position": "1987.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1988"
+      },
+      "title": "The Harvest Bride"
+    },
+    {
+      "authors": [
+        "Rex Miller"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1987",
+      "category": "First Novel",
+      "position": "1987.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1988"
+      },
+      "title": "Slob"
+    },
+    {
+      "authors": [
+        "Kelley Wilde"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1988",
+      "category": "First Novel",
+      "position": "1988",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1989"
+      },
+      "title": "The Suiting"
+    },
+    {
+      "authors": [
+        "Michael Paine"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1988",
+      "category": "First Novel",
+      "position": "1988.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1989"
+      },
+      "title": "Cities of the Dead"
+    },
+    {
+      "authors": [
+        "Alan Lee Harris"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1988",
+      "category": "First Novel",
+      "position": "1988.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1989"
+      },
+      "title": "Deliver Us From Evil"
+    },
+    {
+      "authors": [
+        "J. Michael Straczynski"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1988",
+      "category": "First Novel",
+      "position": "1988.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1989"
+      },
+      "title": "Demon Night"
+    },
+    {
+      "authors": [
+        "John L. Byrne"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1988",
+      "category": "First Novel",
+      "position": "1988.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1989"
+      },
+      "title": "Fear Book"
+    },
+    {
+      "authors": [
+        "Kevin J. Anderson"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1988",
+      "category": "First Novel",
+      "position": "1988.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1989"
+      },
+      "title": "Resurrection, Inc."
+    },
+    {
+      "authors": [
+        "Nancy A. Collins"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1989",
+      "category": "First Novel",
+      "position": "1989",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1990"
+      },
+      "title": "Sunglasses After Dark"
+    },
+    {
+      "authors": [
+        "Tom Elliot"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1989",
+      "category": "First Novel",
+      "position": "1989.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1990"
+      },
+      "title": "The Dwelling"
+    },
+    {
+      "authors": [
+        "Douglas Clegg"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1989",
+      "category": "First Novel",
+      "position": "1989.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1990"
+      },
+      "title": "Goat Dance"
+    },
+    {
+      "authors": [
+        "Dean Wesley Smith"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1989",
+      "category": "First Novel",
+      "position": "1989.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1990"
+      },
+      "title": "Laying the Music to Rest"
+    },
+    {
+      "authors": [
+        "Jean Paiva"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1989",
+      "category": "First Novel",
+      "position": "1989.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1990"
+      },
+      "title": "The Lilith Factor"
+    },
+    {
+      "authors": [
+        "Bentley Little"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1990",
+      "category": "First Novel",
+      "position": "1990",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1991"
+      },
+      "title": "The Revelation"
+    },
+    {
+      "authors": [
+        "Alan Rodgers"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1990",
+      "category": "First Novel",
+      "position": "1990.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1991"
+      },
+      "title": "Blood of the Children"
+    },
+    {
+      "authors": [
+        "Tom Piccirilli"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1990",
+      "category": "First Novel",
+      "position": "1990.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1991"
+      },
+      "title": "Dark Father"
+    },
+    {
+      "authors": [
+        "T. Chris Martindale"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1990",
+      "category": "First Novel",
+      "position": "1990.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1991"
+      },
+      "title": "Nightblood"
+    },
+    {
+      "authors": [
+        "Kathe Koja"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1991",
+      "category": "First Novel",
+      "position": "1991",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1992"
+      },
+      "title": "The Cipher"
+    },
+    {
+      "authors": [
+        "Melanie Tem"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1991",
+      "category": "First Novel",
+      "position": "1991",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1992"
+      },
+      "title": "Prodigal"
+    },
+    {
+      "authors": [
+        "Ashley McConnell"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1991",
+      "category": "First Novel",
+      "position": "1991.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1992"
+      },
+      "title": "Unearthed"
+    },
+    {
+      "authors": [
+        "Dennis Danvers"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1991",
+      "category": "First Novel",
+      "position": "1991.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1992"
+      },
+      "title": "Wilderness"
+    },
+    {
+      "authors": [
+        "Chris Curry",
+        "L. Dean James"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1991",
+      "category": "First Novel",
+      "position": "1991.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1992"
+      },
+      "title": "Winter Scream"
+    },
+    {
+      "authors": [
+        "Elizabeth Massie"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1992",
+      "category": "First Novel",
+      "position": "1992",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1993"
+      },
+      "title": "Sineater"
+    },
+    {
+      "authors": [
+        "Brian D'Amato"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1992",
+      "category": "First Novel",
+      "position": "1992.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1993"
+      },
+      "title": "Beauty"
+    },
+    {
+      "authors": [
+        "Wayne Allen Sallee"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1992",
+      "category": "First Novel",
+      "position": "1992.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1993"
+      },
+      "title": "The Holy Terror"
+    },
+    {
+      "authors": [
+        "Gary Raisor"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1992",
+      "category": "First Novel",
+      "position": "1992.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1993"
+      },
+      "title": "Less Than Human"
+    },
+    {
+      "authors": [
+        "Poppy Z. Brite"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1992",
+      "category": "First Novel",
+      "position": "1992.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1993"
+      },
+      "title": "Lost Souls"
+    },
+    {
+      "authors": [
+        "Nina Kiriki Hoffman"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1993",
+      "category": "First Novel",
+      "position": "1993",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1994"
+      },
+      "title": "The Thread That Binds the Bones"
+    },
+    {
+      "authors": [
+        "Yvonne Navarro"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1993",
+      "category": "First Novel",
+      "position": "1993.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1994"
+      },
+      "title": "Afterage"
+    },
+    {
+      "authors": [
+        "Richard Christian Matheson"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1993",
+      "category": "First Novel",
+      "position": "1993.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1994"
+      },
+      "title": "Created By"
+    },
+    {
+      "authors": [
+        "Anne Billson"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1993",
+      "category": "First Novel",
+      "position": "1993.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1994"
+      },
+      "title": "Suckers"
+    },
+    {
+      "authors": [
+        "Philip Nutman"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1993",
+      "category": "First Novel",
+      "position": "1993.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1994"
+      },
+      "title": "Wet Work"
+    },
+    {
+      "authors": [
+        "Michael Arnzen"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1994",
+      "category": "First Novel",
+      "position": "1994",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1995"
+      },
+      "title": "Grave Markings"
+    },
+    {
+      "authors": [
+        "Jay R. Bonansinga"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1994",
+      "category": "First Novel",
+      "position": "1994.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1995"
+      },
+      "title": "The Black Mariah"
+    },
+    {
+      "authors": [
+        "Robert Devereaux"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1994",
+      "category": "First Novel",
+      "position": "1994.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1995"
+      },
+      "title": "Deadweight"
+    },
+    {
+      "authors": [
+        "Nancy Kilpatrick"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1994",
+      "category": "First Novel",
+      "position": "1994.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1995"
+      },
+      "title": "Near Death"
+    },
+    {
+      "authors": [
+        "Lucy Taylor"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1995",
+      "category": "First Novel",
+      "position": "1995",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1996"
+      },
+      "title": "The Safety of Unknown Cities"
+    },
+    {
+      "authors": [
+        "Tananarive Due"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1995",
+      "category": "First Novel",
+      "position": "1995.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1996"
+      },
+      "title": "The Between"
+    },
+    {
+      "authors": [
+        "Gary Bowen"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1995",
+      "category": "First Novel",
+      "position": "1995.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1996"
+      },
+      "title": "Diary of a Vampire"
+    },
+    {
+      "authors": [
+        "Robert Giardi"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1995",
+      "category": "First Novel",
+      "position": "1995.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1996"
+      },
+      "title": "Madeleine's Ghost"
+    },
+    {
+      "authors": [
+        "Edo van Belkom"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1995",
+      "category": "First Novel",
+      "position": "1995.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1996"
+      },
+      "title": "Wyrm Wolf"
+    },
+    {
+      "authors": [
+        "Owl Goingback"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1996",
+      "category": "First Novel",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1997"
+      },
+      "title": "Crota"
+    },
+    {
+      "authors": [
+        "Del Stone, Jr."
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1996",
+      "category": "First Novel",
+      "position": "1996.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1997"
+      },
+      "title": "Dead Heat"
+    },
+    {
+      "authors": [
+        "Donald Burleson"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1996",
+      "category": "First Novel",
+      "position": "1996.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1997"
+      },
+      "title": "Flute Song"
+    },
+    {
+      "authors": [
+        "Greg Kihn"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1996",
+      "category": "First Novel",
+      "position": "1996.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1997"
+      },
+      "title": "Horror Show"
+    },
+    {
+      "authors": [
+        "Kirsten Bakis"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1997",
+      "category": "First Novel",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1998"
+      },
+      "title": "Lives of the Monster Dogs"
+    },
+    {
+      "authors": [
+        "Stephen Dedman"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1997",
+      "category": "First Novel",
+      "position": "1997.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1998"
+      },
+      "title": "The Art of Arrow Cutting"
+    },
+    {
+      "authors": [
+        "Mary Ann Mitchell"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1997",
+      "category": "First Novel",
+      "position": "1997.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1998"
+      },
+      "title": "Drawn to the Grave"
+    },
+    {
+      "authors": [
+        "Barry Hoffman"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1997",
+      "category": "First Novel",
+      "position": "1997.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1998"
+      },
+      "title": "Hungry Eyes"
+    },
+    {
+      "authors": [
+        "Mary Murrey"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1997",
+      "category": "First Novel",
+      "position": "1997.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1998"
+      },
+      "title": "The Inquisitor"
+    },
+    {
+      "authors": [
+        "Michael Marano"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1998",
+      "category": "First Novel",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1999"
+      },
+      "title": "Dawn Song"
+    },
+    {
+      "authors": [
+        "P. D. Cacek"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1998",
+      "category": "First Novel",
+      "position": "1998.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1999"
+      },
+      "title": "Night Prayers"
+    },
+    {
+      "authors": [
+        "Caitl\u00edn R. Kiernan"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1998",
+      "category": "First Novel",
+      "position": "1998.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1999"
+      },
+      "title": "Silk"
+    },
+    {
+      "authors": [
+        "Charlee Jacob"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1998",
+      "category": "First Novel",
+      "position": "1998.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1999"
+      },
+      "title": "The Symbiotic Fascination"
+    },
+    {
+      "authors": [
+        "J. G. Passarella"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1999",
+      "category": "First Novel",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2000"
+      },
+      "title": "Wither"
+    },
+    {
+      "authors": [
+        "John Connolly"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1999",
+      "category": "First Novel",
+      "position": "1999.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2000"
+      },
+      "title": "Every Dead Thing"
+    },
+    {
+      "authors": [
+        "China Mi\u00e9ville"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1999",
+      "category": "First Novel",
+      "position": "1999.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2000"
+      },
+      "title": "King Rat"
+    },
+    {
+      "authors": [
+        "Steve Beai"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1999",
+      "category": "First Novel",
+      "position": "1999.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2000"
+      },
+      "title": "Widow's Walk"
+    },
+    {
+      "authors": [
+        "Brian A. Hopkins"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2000",
+      "category": "First Novel",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2001"
+      },
+      "title": "The Licking Valley Coon Hunters Club"
+    },
+    {
+      "authors": [
+        "Mark Z. Danielewski"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2000",
+      "category": "First Novel",
+      "position": "2000.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2001"
+      },
+      "title": "House of Leaves"
+    },
+    {
+      "authors": [
+        "Simon Clark"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2000",
+      "category": "First Novel",
+      "position": "2000.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2001"
+      },
+      "title": "Nailed by the Heart"
+    },
+    {
+      "authors": [
+        "Douglas E. Winter"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2000",
+      "category": "First Novel",
+      "position": "2000.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2001"
+      },
+      "title": "Run"
+    },
+    {
+      "authors": [
+        "Michael Oliveri"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2001",
+      "category": "First Novel",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2002"
+      },
+      "title": "Deadliest of the Species"
+    },
+    {
+      "authors": [
+        "Diana Barron"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2001",
+      "category": "First Novel",
+      "position": "2001.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2002"
+      },
+      "title": "Phantom Feast"
+    },
+    {
+      "authors": [
+        "Joseph M. Nassise"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2001",
+      "category": "First Novel",
+      "position": "2001.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2002"
+      },
+      "title": "Riverwatch"
+    },
+    {
+      "authors": [
+        "d. g. k. goldberg"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2001",
+      "category": "First Novel",
+      "position": "2001.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2002"
+      },
+      "title": "Skating on the Edge"
+    },
+    {
+      "authors": [
+        "Alice Sebold"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2002",
+      "category": "First Novel",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2003"
+      },
+      "title": "The Lovely Bones"
+    },
+    {
+      "authors": [
+        "Michael Laimo"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2002",
+      "category": "First Novel",
+      "position": "2002.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2003"
+      },
+      "title": "Atmosphere"
+    },
+    {
+      "authors": [
+        "Tina Jens"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2002",
+      "category": "First Novel",
+      "position": "2002.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2003"
+      },
+      "title": "The Blues Ain't Nothing'"
+    },
+    {
+      "authors": [
+        "Scott Nicholson"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2002",
+      "category": "First Novel",
+      "position": "2002.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2003"
+      },
+      "title": "The Red Church"
+    },
+    {
+      "authors": [
+        "Brian Keene"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2003",
+      "category": "First Novel",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2004"
+      },
+      "title": "The Rising"
+    },
+    {
+      "authors": [
+        "Jeffrey Thomas"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2003",
+      "category": "First Novel",
+      "position": "2003.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2004"
+      },
+      "title": "Monstrocity"
+    },
+    {
+      "authors": [
+        "Jeff VanderMeer"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2003",
+      "category": "First Novel",
+      "position": "2003.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2004"
+      },
+      "title": "Veniss Underground"
+    },
+    {
+      "authors": [
+        "William D. Gagliani"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2003",
+      "category": "First Novel",
+      "position": "2003.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2004"
+      },
+      "title": "Wolf's Trap"
+    },
+    {
+      "authors": [
+        "John Everson"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2004",
+      "category": "First Novel",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2005"
+      },
+      "title": "Covenant"
+    },
+    {
+      "authors": [
+        "Lee Thomas"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2004",
+      "category": "First Novel",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2005"
+      },
+      "title": "Stained"
+    },
+    {
+      "authors": [
+        "James Kidman"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2004",
+      "category": "First Novel",
+      "position": "2004.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2005"
+      },
+      "title": "Black Fire"
+    },
+    {
+      "authors": [
+        "Nick Mamatas"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2004",
+      "category": "First Novel",
+      "position": "2004.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2005"
+      },
+      "title": "Move Under Ground"
+    },
+    {
+      "authors": [
+        "Weston Ochse"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2005",
+      "category": "First Novel",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2006"
+      },
+      "title": "Scarecrow Gods"
+    },
+    {
+      "authors": [
+        "Kealan-Patrick Burke"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2005",
+      "category": "First Novel",
+      "position": "2005.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2006"
+      },
+      "title": "The Hides"
+    },
+    {
+      "authors": [
+        "Alan M. Clark",
+        "Jeremy Robert Johnson"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2005",
+      "category": "First Novel",
+      "position": "2005.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2006"
+      },
+      "title": "Siren Promised"
+    },
+    {
+      "authors": [
+        "Jonathan Maberry"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2006",
+      "category": "First Novel",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2007"
+      },
+      "title": "Ghost Road Blues"
+    },
+    {
+      "authors": [
+        "Nate Kenyon"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2006",
+      "category": "First Novel",
+      "position": "2006.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2007"
+      },
+      "title": "Bloodstone"
+    },
+    {
+      "authors": [
+        "Alexandra Sokoloff"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2006",
+      "category": "First Novel",
+      "position": "2006.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2007"
+      },
+      "title": "The Harrowing"
+    },
+    {
+      "authors": [
+        "Sarah Langan"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2006",
+      "category": "First Novel",
+      "position": "2006.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2007"
+      },
+      "title": "The Keeper"
+    },
+    {
+      "authors": [
+        "Joe Hill"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2007",
+      "category": "First Novel",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2008"
+      },
+      "title": "Heart-Shaped Box"
+    },
+    {
+      "authors": [
+        "Mary SanGiovanni"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2007",
+      "category": "First Novel",
+      "position": "2007.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2008"
+      },
+      "title": "The Hollower"
+    },
+    {
+      "authors": [
+        "Michael Calvillo"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2007",
+      "category": "First Novel",
+      "position": "2007.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2008"
+      },
+      "title": "I Will Rise"
+    },
+    {
+      "authors": [
+        "John R. Little"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2007",
+      "category": "First Novel",
+      "position": "2007.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2008"
+      },
+      "title": "The Memory Tree"
+    },
+    {
+      "authors": [
+        "Lisa Mannetti"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2008",
+      "category": "First Novel",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2009"
+      },
+      "title": "The Gentling Box"
+    },
+    {
+      "authors": [
+        "Joel A. Sutherland"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2008",
+      "category": "First Novel",
+      "position": "2008.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2009"
+      },
+      "title": "Frozen Blood"
+    },
+    {
+      "authors": [
+        "Christopher Conlon"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2008",
+      "category": "First Novel",
+      "position": "2008.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2009"
+      },
+      "title": "Midnight on Mourn Street"
+    },
+    {
+      "authors": [
+        "Michael McCarty",
+        "Mark McLaughlin"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2008",
+      "category": "First Novel",
+      "position": "2008.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2009"
+      },
+      "title": "Monster Behind the Wheel"
+    },
+    {
+      "authors": [
+        "David Oppegaard"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2008",
+      "category": "First Novel",
+      "position": "2008.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2009"
+      },
+      "title": "The Suicide Collectors"
+    },
+    {
+      "authors": [
+        "Hank Schwaeble"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2009",
+      "category": "First Novel",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2010"
+      },
+      "title": "Damnable"
+    },
+    {
+      "authors": [
+        "S. G. Browne"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2009",
+      "category": "First Novel",
+      "position": "2009.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2010"
+      },
+      "title": "Breathers"
+    },
+    {
+      "authors": [
+        "Paul Tremblay"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2009",
+      "category": "First Novel",
+      "position": "2009.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2010"
+      },
+      "title": "The Little Sleep"
+    },
+    {
+      "authors": [
+        "Daniel G. Keohane"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2009",
+      "category": "First Novel",
+      "position": "2009.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2010"
+      },
+      "title": "Solomon's Grave"
+    },
+    {
+      "authors": [
+        "Benjamin Kane Ethridge"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2010",
+      "category": "First Novel",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2011"
+      },
+      "title": "Black and Orange"
+    },
+    {
+      "authors": [
+        "Lisa Morton"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2010",
+      "category": "First Novel",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2011"
+      },
+      "title": "Castle of Los Angeles"
+    },
+    {
+      "authors": [
+        "Gemma Files"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2010",
+      "category": "First Novel",
+      "position": "2010.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2011"
+      },
+      "title": "A Book of Tongues"
+    },
+    {
+      "authors": [
+        "Lucy A. Snyder"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2010",
+      "category": "First Novel",
+      "position": "2010.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2011"
+      },
+      "title": "Spellbent"
+    },
+    {
+      "authors": [
+        "Allyson Bird"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2011",
+      "category": "First Novel",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2012"
+      },
+      "title": "Isis Unbound"
+    },
+    {
+      "authors": [
+        "Lee Frazer"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2011",
+      "category": "First Novel",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2012"
+      },
+      "title": "The Lamplighters"
+    },
+    {
+      "authors": [
+        "Thomas S. Roche"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2011",
+      "category": "First Novel",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2012"
+      },
+      "title": "The Panama Laugh"
+    },
+    {
+      "authors": [
+        "John Hornor Jacobs"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2011",
+      "category": "First Novel",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2012"
+      },
+      "title": "Southern Gods"
+    },
+    {
+      "authors": [
+        "Brett J. Talley"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2011",
+      "category": "First Novel",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2012"
+      },
+      "title": "That Which Should Not Be"
+    },
+    {
+      "authors": [
+        "L. L. Soares"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2012",
+      "category": "First Novel",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2013"
+      },
+      "title": "Life Rage"
+    },
+    {
+      "authors": [
+        "Richard E. Gropp"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2012",
+      "category": "First Novel",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2013"
+      },
+      "title": "Bad Glass"
+    },
+    {
+      "authors": [
+        "Michael Boccacino"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2012",
+      "category": "First Novel",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2013"
+      },
+      "title": "Charlotte Markham and the House of Darklings"
+    },
+    {
+      "authors": [
+        "Charles Day"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2012",
+      "category": "First Novel",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2013"
+      },
+      "title": "The Legend of the Pumpkin Thief"
+    },
+    {
+      "authors": [
+        "Peter Dudar"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2012",
+      "category": "First Novel",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2013"
+      },
+      "title": "A Requiem for Dead Flies"
+    },
+    {
+      "authors": [
+        "Deborah Coates"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2012",
+      "category": "First Novel",
+      "position": "2012.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2013"
+      },
+      "title": "Wide Open"
+    },
+    {
+      "authors": [
+        "Rena Mason"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2013",
+      "category": "First Novel",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2014"
+      },
+      "title": "The Evolutionist"
+    },
+    {
+      "authors": [
+        "Kate Jonez"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2013",
+      "category": "First Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2014"
+      },
+      "title": "Candy House"
+    },
+    {
+      "authors": [
+        "Jonathan Moore"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2013",
+      "category": "First Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2014"
+      },
+      "title": "Redheads"
+    },
+    {
+      "authors": [
+        "Royce Prouty"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2013",
+      "category": "First Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2014"
+      },
+      "title": "Stoker's Manuscript"
+    },
+    {
+      "authors": [
+        "John Mantooth"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2013",
+      "category": "First Novel",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2014"
+      },
+      "title": "The Year of the Storm"
+    },
+    {
+      "authors": [
+        "Maria Alexander"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2014",
+      "category": "First Novel",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2015"
+      },
+      "title": "Mr. Wicker"
+    },
+    {
+      "authors": [
+        "Josh Malerman"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2014",
+      "category": "First Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2015"
+      },
+      "title": "Bird Box"
+    },
+    {
+      "authors": [
+        "David Cronenberg"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2014",
+      "category": "First Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2015"
+      },
+      "title": "Consumed"
+    },
+    {
+      "authors": [
+        "J. D. Barker"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2014",
+      "category": "First Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2015"
+      },
+      "title": "Foresake"
+    },
+    {
+      "authors": [
+        "Michael Knost"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2014",
+      "category": "First Novel",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2015"
+      },
+      "title": "Return of the Mothman"
+    },
+    {
+      "authors": [
+        "Nicole Cushing"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2015",
+      "category": "First Novel",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2016"
+      },
+      "title": "Mr. Suicide"
+    },
+    {
+      "authors": [
+        "John McIlveen"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2015",
+      "category": "First Novel",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2016"
+      },
+      "title": "Hannahwhere"
+    },
+    {
+      "authors": [
+        "Jean Claude Smith"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2015",
+      "category": "First Novel",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2016"
+      },
+      "title": "Riding the Centipede"
+    },
+    {
+      "authors": [
+        "Courtney Alameda"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2015",
+      "category": "First Novel",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2016"
+      },
+      "title": "Shutter"
+    },
+    {
+      "authors": [
+        "Brian Kirk"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2015",
+      "category": "First Novel",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2016"
+      },
+      "title": "We Are Monsters"
+    },
+    {
+      "authors": [
+        "Tom Deady"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2016",
+      "category": "First Novel",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2017"
+      },
+      "title": "Haven"
+    },
+    {
+      "authors": [
+        "Barbara Barnett"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2016",
+      "category": "First Novel",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2017"
+      },
+      "title": "The Apothecary's Curse"
+    },
+    {
+      "authors": [
+        "Stephanie M. Wytovich"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2016",
+      "category": "First Novel",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2017"
+      },
+      "title": "The Eighth"
+    },
+    {
+      "authors": [
+        "Greg Chapman"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2016",
+      "category": "First Novel",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2017"
+      },
+      "title": "Hollow House"
+    },
+    {
+      "authors": [
+        "Michelle Garza",
+        "Melissa Lason"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2016",
+      "category": "First Novel",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2017"
+      },
+      "title": "Mayan Blue"
+    },
+    {
+      "authors": [
+        "Robert Payne Cabeen"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2017",
+      "category": "First Novel",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2018"
+      },
+      "title": "Cold Cuts"
+    },
+    {
+      "authors": [
+        "Jeremy Hepler"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2017",
+      "category": "First Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2018"
+      },
+      "title": "The Boulevard Monster"
+    },
+    {
+      "authors": [
+        "Andy Davidson"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2017",
+      "category": "First Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2018"
+      },
+      "title": "In the Valley of the Sun"
+    },
+    {
+      "authors": [
+        "Scott Thomas"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2017",
+      "category": "First Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2018"
+      },
+      "title": "Kill Creek"
+    },
+    {
+      "authors": [
+        "Matt Hayward"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2017",
+      "category": "First Novel",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2018"
+      },
+      "title": "What Do Monsters Fear?"
+    },
+    {
+      "authors": [
+        "Gwendolyn Kiste"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2018",
+      "category": "First Novel",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2019"
+      },
+      "title": "The Rust Maidens"
+    },
+    {
+      "authors": [
+        "Zoje Stage"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2018",
+      "category": "First Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2019"
+      },
+      "title": "Baby Teeth"
+    },
+    {
+      "authors": [
+        "T. E. Gray"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2018",
+      "category": "First Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2019"
+      },
+      "title": "I Am the River"
+    },
+    {
+      "authors": [
+        "Tony Tremblay"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2018",
+      "category": "First Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2019"
+      },
+      "title": "The Moore House"
+    },
+    {
+      "authors": [
+        "Julia Fine"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2018",
+      "category": "First Novel",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2019"
+      },
+      "title": "What Should Be Wild"
+    },
+    {
+      "authors": [
+        "Sarah Read"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2019",
+      "category": "First Novel",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2020"
+      },
+      "title": "The Bone Weaver's Orchard"
+    },
+    {
+      "authors": [
+        "Gemma Amor"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2019",
+      "category": "First Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2020"
+      },
+      "title": "Dear Laura"
+    },
+    {
+      "authors": [
+        "Eric J. Guignard"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2019",
+      "category": "First Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2020"
+      },
+      "title": "Doorways to the Deadeye"
+    },
+    {
+      "authors": [
+        "Michelle Renee Lane"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2019",
+      "category": "First Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2020"
+      },
+      "title": "Invisible Chains"
+    },
+    {
+      "authors": [
+        "Caitlin Starling"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2019",
+      "category": "First Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2020"
+      },
+      "title": "The Luminous Dead"
+    },
+    {
+      "authors": [
+        "EV Knight"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2020",
+      "category": "First Novel",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2021"
+      },
+      "title": "The Fourth Whore"
+    },
+    {
+      "authors": [
+        "Rachel Harrison"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2020",
+      "category": "First Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2021"
+      },
+      "title": "The Return"
+    },
+    {
+      "authors": [
+        "Polly Hall"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2020",
+      "category": "First Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2021"
+      },
+      "title": "The Taxidermist's Lover"
+    },
+    {
+      "authors": [
+        "Ross Jeffery"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2020",
+      "category": "First Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2021"
+      },
+      "title": "Tome"
+    },
+    {
+      "authors": [
+        "Kate Reed Petty"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2020",
+      "category": "First Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2021"
+      },
+      "title": "True Story"
+    },
+    {
+      "authors": [
+        "Hailey Piper"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2021",
+      "category": "First Novel",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2022"
+      },
+      "title": "Queen of Teeth"
+    },
+    {
+      "authors": [
+        "Lisa Quigley"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2021",
+      "category": "First Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2022"
+      },
+      "title": "The Forest"
+    },
+    {
+      "authors": [
+        "S. Alessandro Martinez"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2021",
+      "category": "First Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2022"
+      },
+      "title": "Helminth"
+    },
+    {
+      "authors": [
+        "Terry Miles"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2021",
+      "category": "First Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2022"
+      },
+      "title": "Rabbits"
+    },
+    {
+      "authors": [
+        "Nicol Willson"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2021",
+      "category": "First Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2022"
+      },
+      "title": "Tidepool"
+    },
+    {
+      "authors": [
+        "LaTanya McQueen"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2021",
+      "category": "First Novel",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2022"
+      },
+      "title": "When the Reckoning Comes"
+    },
+    {
+      "authors": [
+        "Christi Nogle"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2022",
+      "category": "First Novel",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2023"
+      },
+      "title": "Beulah"
+    },
+    {
+      "authors": [
+        "Ally Wilkes"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2022",
+      "category": "First Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2023"
+      },
+      "title": "All the White Spaces"
+    },
+    {
+      "authors": [
+        "KC Jones"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2022",
+      "category": "First Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2023"
+      },
+      "title": "Black Tide"
+    },
+    {
+      "authors": [
+        "Isabel Ca\u00f1as"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2022",
+      "category": "First Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2023"
+      },
+      "title": "The Hacienda"
+    },
+    {
+      "authors": [
+        "Erin E. Adams"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2022",
+      "category": "First Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2023"
+      },
+      "title": "Jackal"
+    },
+    {
+      "authors": [
+        "Christa Carmen"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2023",
+      "category": "First Novel",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2024"
+      },
+      "title": "The Daughters of Block Island"
+    },
+    {
+      "authors": [
+        "Sam Rebelein"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2023",
+      "category": "First Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2024"
+      },
+      "title": "Edenville"
+    },
+    {
+      "authors": [
+        "Eric LaRocca"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2023",
+      "category": "First Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2024"
+      },
+      "title": "Everything the Darkness Eats"
+    },
+    {
+      "authors": [
+        "CJ Leede"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2023",
+      "category": "First Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2024"
+      },
+      "title": "Maeve Fly"
+    },
+    {
+      "authors": [
+        "Johnny Compton"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2023",
+      "category": "First Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2024"
+      },
+      "title": "The Spite House"
+    },
+    {
+      "authors": [
+        "Monika Kim"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2024",
+      "category": "First Novel",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2025"
+      },
+      "title": "The Eyes Are the Best Part"
+    },
+    {
+      "authors": [
+        "Lindy Ryan"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2024",
+      "category": "First Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2025"
+      },
+      "title": "Bless Your Heart"
+    },
+    {
+      "authors": [
+        "Jessica Drake-Thomas"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2024",
+      "category": "First Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2025"
+      },
+      "title": "Hollow Girls"
+    },
+    {
+      "authors": [
+        "Donyae Coles"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2024",
+      "category": "First Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2025"
+      },
+      "title": "Midnight Rooms"
+    },
+    {
+      "authors": [
+        "Jenny Kiefer"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2024",
+      "category": "First Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2025"
+      },
+      "title": "This Wretched Valley"
+    },
+    {
+      "authors": [
+        "Michael Wehunt"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2025",
+      "category": "First Novel",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2026"
+      },
+      "title": "The October Film Haunt"
+    },
+    {
+      "authors": [
+        "Hester Steel"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2025",
+      "category": "First Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2026"
+      },
+      "title": "The Faceless Thing We Adore"
+    },
+    {
+      "authors": [
+        "Tanya Pell"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2025",
+      "category": "First Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2026"
+      },
+      "title": "Her Wicked Roots"
+    },
+    {
+      "authors": [
+        "Neena Viel"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2025",
+      "category": "First Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2026"
+      },
+      "title": "Listen to Your Sister"
+    },
+    {
+      "authors": [
+        "Kathryn Tennison"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2025",
+      "category": "First Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2026"
+      },
+      "title": "Molting"
+    },
+    {
+      "authors": [
+        "Bitter Karella"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2025",
+      "category": "First Novel",
+      "position": "2025.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2026"
+      },
+      "title": "Moonflow"
+    },
+    {
+      "authors": [
+        "Grace Daly"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2025",
+      "category": "First Novel",
+      "position": "2025.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2026"
+      },
+      "title": "The Scald-Crow"
+    }
+  ],
+  "fetched_at": "2026-07-27T22:07:56Z",
+  "list_id": "bram_stoker_first_novel",
+  "list_name": "Bram Stoker - First Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "bram_stoker_first_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Bram Stoker - First Novel",
+    "source_id": "bram_stoker_first_novel",
+    "url": "https://www.sfadb.com/Bram_Stoker_Awards"
+  }
+}

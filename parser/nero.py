@@ -5,9 +5,12 @@
 Nero Award parsers for official, LibraryThing, and Wikipedia sources.
 
 Maintenance notes:
-- The official Wolfe Pack source is split across two pages: the finalists page
-  carries 2007+ finalist sections, while the chronological winners page fills
-  in years not represented on the finalist page.
+- The official Wolfe Pack source is split across two pages. Its title/menu and
+  year sections can have different parents; follow bounded headings and lists
+  in document order. A year can also contain a single emphasized winner paragraph.
+- The chronological winners page fills years without finalist-page records.
+  Later winner-only years are reported explicitly rather than implying complete
+  finalist coverage.
 - The finalists page marks winners with bold text and explicitly notes that
   finalist records were not kept until 2007, so pre-2007 rows stay winner-only.
 - LibraryThing remains a replacement fallback only; Wikipedia is the final
@@ -17,9 +20,11 @@ Maintenance notes:
 import re
 from urllib.parse import urljoin
 
+from bs4 import UnicodeDammit
 from lxml import html as lxml_html
 
 try:
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
   from calibre_plugins.list_switchboard.parser.award_base import (
     AwardParserBase,
     RESULT_NOMINEE,
@@ -35,6 +40,7 @@ try:
     LibraryThingAwardParserBase,
   )
 except ImportError:
+  from errors import ImportCancelledError, CamoufoxRequiredError
   from .award_base import (
     AwardParserBase,
     RESULT_NOMINEE,
@@ -52,7 +58,7 @@ except ImportError:
 YEAR_HEADING = re.compile(r'^(19|20)\d{2}$')
 YEAR_TEXT = re.compile(r'(19|20)\d{2}')
 NERO_WINNERS_URL = (
-  'https://wp.nerowolfe.org/htm/literary_awards/nero_award/awardees_chron.htm'
+  'https://www.nerowolfe.org/htm/literary_awards/nero_award/awardees_chron.htm'
 )
 
 
@@ -79,8 +85,20 @@ class NeroAwardOfficialParser(AwardParserBase):
         for row in winner_rows:
           if row['award_year'] not in finalist_years:
             rows.append(row)
+      except (ImportCancelledError, CamoufoxRequiredError):
+        raise
       except Exception as err:
         notes.append(f'Official Wolfe Pack winners supplement failed: {err}')
+
+    nominee_years = {row['award_year'] for row in rows if row['result'] != RESULT_WINNER}
+    winner_only_years = sorted({
+      row['award_year'] for row in rows
+      if int(row['award_year']) >= 2007 and row['award_year'] not in nominee_years
+    }, key=int)
+    if winner_only_years:
+      notes.append('Official Wolfe Pack provides winner-only coverage for '
+        f'{", ".join(winner_only_years)}; finalists are not listed in this archive '
+        'for those years.')
 
     entries = self.entries_from_rows(self.dedupe_rows(rows))
     return self.parsed_result(
@@ -97,7 +115,10 @@ class NeroAwardOfficialParser(AwardParserBase):
     rows = []
     for year, nodes in self.year_sections(heading):
       for node in nodes:
-        for item in node.xpath('.//li'):
+        items = node.xpath('.//li') if node.tag in {'ul', 'ol'} else ()
+        if node.tag == 'p' and node.xpath('.//em|.//i') and not node.xpath('ancestor::li'):
+          items = (node,)
+        for item in items:
           row = self.parse_finalist_item(item, year, base_url, category)
           if row is not None:
             rows.append(row)
@@ -106,7 +127,8 @@ class NeroAwardOfficialParser(AwardParserBase):
   def finalists_heading(self, root):
     headings = root.xpath('//h1')
     for heading in headings:
-      if 'nero award finalists' in normalize_heading(self.node_text(heading)):
+      text = normalize_heading(self.node_text(heading))
+      if 'nero award' in text and 'finalists' in text:
         return heading
     return None
 
@@ -114,9 +136,11 @@ class NeroAwardOfficialParser(AwardParserBase):
     sections = []
     current_year = None
     current_nodes = []
-    for node in heading.itersiblings():
+    for node in heading.xpath(
+        'following::*[self::h1 or self::h2 or self::h3 or self::h4 '
+        'or self::ul or self::ol or self::p]'):
       tag = getattr(node, 'tag', '')
-      if tag in {'h3', 'h4'}:
+      if tag in {'h1', 'h2', 'h3', 'h4'}:
         text = self.node_text(node)
         year = self.year_from_heading(text)
         if year is not None:
@@ -125,12 +149,11 @@ class NeroAwardOfficialParser(AwardParserBase):
           current_year = year
           current_nodes = []
           continue
-        if current_year is not None and 'black orchid' in normalize_heading(text):
-          if current_nodes:
-            sections.append((current_year, tuple(current_nodes)))
-          break
-        if current_year is not None and 'did not keep a record of finalists' in normalize_heading(text):
-          break
+        if current_year is not None:
+          normalized = normalize_heading(text)
+          if (tag in {'h1', 'h2'} or 'black orchid' in normalized or
+              'did not keep a record of finalists' in normalized):
+            break
       if current_year is not None:
         current_nodes.append(node)
     if current_year is not None and current_nodes:
@@ -139,7 +162,7 @@ class NeroAwardOfficialParser(AwardParserBase):
 
   def parse_finalist_item(self, node, year, base_url, category):
     text = self.node_text(node)
-    if not text or 'black orchid' in normalize_heading(text):
+    if not text:
       return None
     title, author = self.entry_from_node(node, text)
     if not title or not author:
@@ -154,7 +177,9 @@ class NeroAwardOfficialParser(AwardParserBase):
     }
 
   def is_winner_item(self, node):
-    return bool(node.xpath('.//strong'))
+    # Several 2011 nominees bold only the publisher separator, not the work.
+    return any(re.search(r'\w', self.node_text(bold))
+      for bold in node.xpath('.//strong|.//b'))
 
   def parse_winner_rows(self, html, base_url, category):
     root = self.html_root(html)
@@ -163,7 +188,8 @@ class NeroAwardOfficialParser(AwardParserBase):
       raise ValueError('official Wolfe Pack winners page did not expose the Nero winners table')
     rows = []
     for tr in table.xpath('.//tr'):
-      cells = tr.xpath('./th|./td')
+      # The official 2000 year cell is wrapped in an invalid <center> element.
+      cells = tr.xpath('./th|./td|./center/th|./center/td')
       if len(cells) < 2:
         continue
       year = self.year_from_text(self.node_text(cells[0]))
@@ -197,7 +223,17 @@ class NeroAwardOfficialParser(AwardParserBase):
     return tables[0] if tables else None
 
   def entry_from_node(self, node, text):
-    title = self.title_from_node(node)
+    # Some titles end outside their emphasis tag ("Wall</em>y by ...").
+    # The final explicit byline preserves that tail and titles containing "by".
+    marked_title = self.title_from_node(node)
+    byline = re.match(r'^(.+)\s+by\s+.+$', text, re.I)
+    if (byline is not None and (not marked_title or
+        normalize_line(byline.group(1)).casefold().startswith(marked_title.casefold()))):
+      title = self.clean_title(byline.group(1))
+      author = self.author_after_title(text, byline.group(1))
+      if title and author:
+        return title, author
+    title = marked_title
     if title:
       author = self.author_after_title(text, title)
       if author:
@@ -264,12 +300,14 @@ class NeroAwardOfficialParser(AwardParserBase):
     return urljoin(base_url, hrefs[0]) if hrefs else ''
 
   def node_text(self, node):
-    return normalize_line(' '.join(
-      text.strip()
+    return normalize_line(''.join(
+      text
       for text in node.xpath('.//text()[not(ancestor::script) and not(ancestor::style)]')
-      if text.strip()))
+    ))
 
   def html_root(self, html):
+    if isinstance(html, bytes):
+      html = UnicodeDammit(html).unicode_markup
     return lxml_html.fromstring(html or '<html></html>')
 
   def dedupe_rows(self, rows):
