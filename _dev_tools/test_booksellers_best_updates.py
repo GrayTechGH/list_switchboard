@@ -16,7 +16,7 @@ from url_fetcher.booksellers_best import UrlFetcherBooksellersBestAward
 class BooksellersBestUpdateTests(unittest.TestCase):
 
   def setUp(self):
-    clock = patch('wayback_policy.REQUEST_CLOCK')
+    clock = patch('transport.wayback.REQUEST_CLOCK')
     clock.start()
     self.addCleanup(clock.stop)
     native = patch('url_fetcher.booksellers_best.calibre_https_fetch', None)
@@ -263,27 +263,27 @@ class BooksellersBestUpdateTests(unittest.TestCase):
         self.assertEqual([], calls)
 
   def test_archive_requests_and_next_import_share_spacing_with_ui_sleep(self):
-    from wayback_policy import WaybackRequestClock
+    from transport.wayback import WaybackRequestClock
     now = [10.0]
     clock = WaybackRequestClock(clock=lambda: now[0])
     delays = []
     def pause(delay):
       delays.append(delay)
       now[0] += delay
-    with patch('wayback_policy.REQUEST_CLOCK', clock):
+    with patch('transport.wayback.REQUEST_CLOCK', clock):
       parsed = self.recipe.fetch_and_parse(self.fetch, sleep=pause)
     self.assertEqual(2, len(parsed['entries']))
     self.assertEqual([10] * (len(self.calls) - 1), delays)
     delays.clear()
-    with patch('wayback_policy.REQUEST_CLOCK', clock):
+    with patch('transport.wayback.REQUEST_CLOCK', clock):
       self.recipe.fetch_and_parse(self.fetch, sleep=pause,
         cached_parsed=self.cache(parsed), incremental_update=True)
     self.assertEqual([10, 10, 10], delays)
 
   def test_archive_spacing_cancellation_stops_before_next_network_request(self):
-    from wayback_policy import WaybackRequestClock
+    from transport.wayback import WaybackRequestClock
     def cancel(_delay): raise ImportCancelledError('cancelled during archive delay')
-    with patch('wayback_policy.REQUEST_CLOCK', WaybackRequestClock(clock=lambda: 10)):
+    with patch('transport.wayback.REQUEST_CLOCK', WaybackRequestClock(clock=lambda: 10)):
       with self.assertRaises(ImportCancelledError):
         self.recipe.fetch_and_parse(self.fetch, sleep=cancel)
     self.assertEqual([self.recipe.URL], self.calls)

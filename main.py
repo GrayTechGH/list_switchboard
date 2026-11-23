@@ -30,16 +30,16 @@ _STANDARD_URLOPEN = urlopen
 from bs4 import UnicodeDammit
 
 try:
-  from calibre_plugins.list_switchboard.http_policy import random_user_agent
-  from calibre_plugins.list_switchboard.sfadb_transport import is_sfadb_url, fetch_sfadb_url
-  from calibre_plugins.list_switchboard.wayback_policy import (
+  from calibre_plugins.list_switchboard.transport.http import random_user_agent
+  from calibre_plugins.list_switchboard.transport.sfadb import is_sfadb_url, fetch_sfadb_url
+  from calibre_plugins.list_switchboard.transport.wayback import (
     is_wayback_url, install_browser_pacing, wait_for_wayback, paced_urlopen,
     note_wayback_error,
   )
 except ImportError:
-  from http_policy import random_user_agent
-  from sfadb_transport import is_sfadb_url, fetch_sfadb_url
-  from wayback_policy import (
+  from transport.http import random_user_agent
+  from transport.sfadb import is_sfadb_url, fetch_sfadb_url
+  from transport.wayback import (
     is_wayback_url, install_browser_pacing, wait_for_wayback, paced_urlopen,
     note_wayback_error,
   )
@@ -62,11 +62,11 @@ except ImportError:
   from errors import DuplicateStoredListsError, ImportCancelledError, ListSwitchboardError
 
 try:
-  from calibre_plugins.list_switchboard.goodreads import (
+  from calibre_plugins.list_switchboard.goodreads.lookup import (
     GOODREADS_LOOKUP_DELAY_SECONDS, GoodreadsMixin
   )
 except ImportError:
-  from goodreads import GOODREADS_LOOKUP_DELAY_SECONDS, GoodreadsMixin
+  from goodreads.lookup import GOODREADS_LOOKUP_DELAY_SECONDS, GoodreadsMixin
 
 try:
   from calibre_plugins.list_switchboard.import_flow import (
@@ -139,12 +139,12 @@ except ImportError:
   from dialogs import DebugDialog
 
 try:
-  from calibre_plugins.list_switchboard.camoufox_transport import (
+  from calibre_plugins.list_switchboard.transport.camoufox import (
     CamoufoxError, CamoufoxRequiredError, CamoufoxSkippedError,
     CamoufoxTransport, camoufox_capability, format_version, browser_fallback_level,
   )
 except ImportError:
-  from camoufox_transport import (
+  from transport.camoufox import (
     CamoufoxError, CamoufoxRequiredError, CamoufoxSkippedError,
     CamoufoxTransport, camoufox_capability, format_version, browser_fallback_level,
   )
@@ -494,6 +494,9 @@ class ListSwitchboardCore(
       (reddit_source if reddit else ('Pulitzer' if pulitzer else ('LibraryThing' if librarything else host)))))))
     excluded_domain = ('sfadb.com' if sfadb else ('spsfc.space' if spsfc else ('isfdb.org' if isfdb else ('goodreads.com' if goodreads else
       ('reddit.com' if reddit else ('pulitzer.org' if pulitzer else ('librarything.com' if librarything else host)))))))
+    if host == 'britannica.com' or host.endswith('.britannica.com'):
+      source_name = 'Britannica'
+      excluded_domain = 'britannica.com'
     if not prefs.get(
         'camoufox_first_use_confirmed', False):
       confirmed = question_dialog(

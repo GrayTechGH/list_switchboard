@@ -17,7 +17,7 @@ import json
 import datetime
 from urllib.parse import urljoin
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, UnicodeDammit
 from bs4.element import Tag
 from lxml import html as lxml_html
 
@@ -469,31 +469,31 @@ class OrwellOfficialParser(AwardParserBase):
     rows = []
     current_year = None
     current_result_by_year = {}
-    for tr in table.xpath('.//tr'):
-      cells = tr.xpath('./td|./th')
+    for cells in self.table_grid(table):
       if not cells or self.row_matches_header(cells, header_map):
         continue
-      missing_year = self.row_omits_year(cells, header_map, current_year)
-      year_cell = self.cell_for_key(cells, header_map, 'year', False)
-      year = None if missing_year else self.year_from_text(self.clean_cell_text(year_cell))
+      year_cell = self.cell_for_key(cells, header_map, 'year')
+      year = self.year_from_text(self.clean_cell_text(year_cell))
       if year is None:
         year = current_year
       if year is None:
         continue
       current_year = year
-      title_cell = self.cell_for_key(cells, header_map, 'title', missing_year)
-      author_cell = self.cell_for_key(cells, header_map, 'author', missing_year)
-      if title_cell is None or author_cell is None:
+      title_cell = self.cell_for_key(cells, header_map, 'title')
+      author_cell = self.cell_for_key(cells, header_map, 'author')
+      if title_cell is None or author_cell is None or title_cell is author_cell:
         continue
-      result = self.result_from_cell(
-        self.cell_for_key(cells, header_map, 'result', missing_year))
+      result_cell = self.cell_for_key(cells, header_map, 'result')
+      result = self.result_from_cell(result_cell)
       if result is None:
+        if self.clean_cell_text(result_cell):
+          continue
         result = (
           RESULT_SHORTLISTED
           if current_result_by_year.get(year) == RESULT_SHORTLISTED
           else RESULT_WINNER)
       current_result_by_year[year] = result
-      title = self.clean_title(self.clean_cell_text(title_cell))
+      title = self.title_from_cell(title_cell)
       author = self.clean_author(self.clean_cell_text(author_cell))
       if not title or not author:
         continue
@@ -507,10 +507,13 @@ class OrwellOfficialParser(AwardParserBase):
       })
     return rows
 
+  def title_from_cell(self, cell):
+    return self.clean_title(self.clean_cell_text(cell))
+
   def header_map(self, table):
-    for tr in table.xpath('.//tr'):
+    for cells in self.table_grid(table):
       mapped = {}
-      for index, cell in enumerate(tr.xpath('./th|./td')):
+      for index, cell in enumerate(cells):
         key = HEADER_ALIASES.get(normalize_heading(self.clean_cell_text(cell)))
         if key is not None and key not in mapped:
           mapped[key] = index
@@ -529,18 +532,10 @@ class OrwellOfficialParser(AwardParserBase):
         return False
     return True
 
-  def row_omits_year(self, cells, header_map, current_year):
-    if current_year is None or header_map.get('year') != 0:
-      return False
-    first_text = self.clean_cell_text(cells[0]) if cells else ''
-    return self.year_from_text(first_text) is None and len(cells) <= max(header_map.values())
-
-  def cell_for_key(self, cells, header_map, key, missing_year):
+  def cell_for_key(self, cells, header_map, key):
     index = header_map.get(key)
     if index is None:
       return None
-    if missing_year and index > header_map.get('year', -1):
-      index -= 1
     if index < 0 or index >= len(cells):
       return None
     return cells[index]
@@ -593,7 +588,7 @@ class OrwellOfficialParser(AwardParserBase):
   def clean_author(self, value):
     text = normalize_line(value)
     text = re.sub(r'^\s*by\s+', '', text, flags=re.I)
-    text = re.sub(r'\s*,?\s*(?:translated|translation|edited|ed\.?|eds?\.?)\b.*$', '', text, flags=re.I)
+    text = re.sub(r'(?:\s*,\s*|\s+)(?:translated|translation|edited|ed\.?|eds?\.?)\b.*$', '', text, flags=re.I)
     return strip_publication_notes(text).strip(' "\u201c\u201d,')
 
   def strip_result_prefix(self, value):
@@ -690,9 +685,15 @@ class OrwellOfficialParser(AwardParserBase):
 
 
 class OrwellWikipediaParser(OrwellOfficialParser):
-  """Parse the bounded Political Writing table on Wikipedia's Orwell page."""
+  """Read 2019-onward Political Writing tables under bare or wrapped headings.
+
+  Table ownership follows the nearest document heading, including headings in
+  mw-heading wrappers and Parsoid sections. Adjacent prize headings end scope.
+  """
 
   def parse(self, html, base_url, name, category=CATEGORY):
+    if isinstance(html, bytes):
+      html = UnicodeDammit(html, is_html=True).unicode_markup
     root = lxml_html.fromstring(html or '<html></html>')
     rows = []
     for table in self.political_writing_tables(root):
@@ -706,14 +707,25 @@ class OrwellWikipediaParser(OrwellOfficialParser):
       sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))))
 
   def political_writing_tables(self, root):
-    for heading in root.xpath('//h2|//h3|//h4'):
-      text = normalize_heading(self.node_text_lxml(heading))
+    for table in root.xpath('//table'):
+      headings = table.xpath('preceding::*[self::h2 or self::h3 or self::h4][1]')
+      if not headings:
+        continue
+      text = normalize_heading(self.node_text_lxml(headings[0]))
       if 'political writing' not in text or '2019' not in text:
         continue
-      for sibling in heading.itersiblings():
-        if (sibling.tag or '').lower() in {'h2', 'h3', 'h4'}:
-          break
-        if (sibling.tag or '').lower() == 'table':
-          yield sibling
-        for table in sibling.xpath('.//table'):
-          yield table
+      yield table
+
+  def title_from_cell(self, cell):
+    text = self.clean_cell_text(cell)
+    titles = cell.xpath('.//i|.//em')
+    if titles:
+      title = self.clean_cell_text(titles[0])
+      if title and text.startswith(title):
+        remainder = text[len(title):].strip()
+        if remainder.startswith('(') and remainder.endswith(')'):
+          text = title
+    return normalize_line(text)
+
+  def clean_author(self, value):
+    return re.sub(r'\s+and\s+', ' & ', super().clean_author(value), flags=re.I)

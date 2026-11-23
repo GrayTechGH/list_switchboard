@@ -4042,10 +4042,10 @@
       "live_report": "_dev_tools\\Scraps Cache\\update_implementation\\hammett\\verification-1\\live.json"
     },
     "national_book_award_fiction": {
-      "status": "complete",
+      "status": "awaiting_live_verification",
       "registry_index_at_start": 239,
       "name": "National Book Award - Fiction",
-      "updated_at": "2026-11-16T17:35:17+00:00",
+      "updated_at": "2026-11-20T04:32:32+00:00",
       "history": [
         {
           "status": "in_progress",
@@ -4061,9 +4061,21 @@
           "status": "complete",
           "reason": "Renewed isolated live verification after annual-helper provenance restoration and opt-in partial-import handling. Existing National Book Award semantics remain unchanged: official category scope, fresh discovery/current/latest/unsettled years, source-scoped history, bounded gateway retries and replacement Wikipedia fallback. Real missing-entry recovery and repeat equal full output with fewer requests.",
           "at": "2026-11-16T17:35:17+00:00"
+        },
+        {
+          "status": "awaiting_live_verification",
+          "reason": "2026-11-19 category-ownership review supersedes old parity evidence. The implemented official year reader has reusable units, but current Foundation historical routes are empty or mix categories, forcing the single-page Wikipedia replacement. Full/update/repeat results agree without request savings. Await corrected official-source proof before re-enabling Updates; complete imports remain available.",
+          "at": "2026-11-20T04:05:38+00:00",
+          "previous_live_report": "_dev_tools\\Scraps Cache\\update_implementation\\annual-renewed\\national_book_award_fiction\\live.json"
+        },
+        {
+          "status": "awaiting_live_verification",
+          "reason": "The current policy retains usable Foundation years and optionally supplements only failed years from Wikipedia; supplement outages are nonfatal. Existing annual reuse remains implemented, but the old replacement-only parity/no-savings receipts do not qualify this policy. Await new recipe-specific full/update/recovery proof before advertising Updates.",
+          "at": "2026-11-20T04:32:32+00:00",
+          "previous_live_report": "_dev_tools\\Scraps Cache\\nba-official-routing\\national_book_award_fiction_final.json"
         }
       ],
-      "reason": "Renewed isolated live verification after annual-helper provenance restoration and opt-in partial-import handling. Existing National Book Award semantics remain unchanged: official category scope, fresh discovery/current/latest/unsettled years, source-scoped history, bounded gateway retries and replacement Wikipedia fallback. Real missing-entry recovery and repeat equal full output with fewer requests.",
+      "reason": "The current policy retains usable Foundation years and optionally supplements only failed years from Wikipedia; supplement outages are nonfatal. Existing annual reuse remains implemented, but the old replacement-only parity/no-savings receipts do not qualify this policy. Await new recipe-specific full/update/recovery proof before advertising Updates.",
       "source_paths": [
         "Official National Book Foundation annual category pages; Wikipedia remains replacement full refresh"
       ],
@@ -4071,19 +4083,25 @@
         "parser/annual_updates.py",
         "parser/national_book_award.py",
         "url_fetcher/national_book_award.py",
-        "_dev_tools/test_official_annual_updates.py"
+        "_dev_tools/test_official_annual_updates.py",
+        "parser/national_book_award_official.py",
+        "_dev_tools/test_national_book_award_official.py",
+        "_dev_tools/test_national_book_award_supplement.py"
       ],
       "evidence": [
-        "_dev_tools\\Scraps Cache\\update_implementation\\annual-renewed\\national_book_award_fiction"
+        "_dev_tools\\Scraps Cache\\update_implementation\\annual-renewed\\national_book_award_fiction",
+        "_docs/NATIONAL_BOOK_AWARD_SOURCE_AUDIT.md",
+        "_dev_tools/Scraps Cache/nba-official-routing/verification.json",
+        "_dev_tools\\Scraps Cache\\nba-official-routing\\national_book_award_fiction_final.json",
+        "_dev_tools/test_national_book_award_supplement.py"
       ],
-      "automated_report": "_dev_tools\\Scraps Cache\\update_implementation\\annual-renewed\\automated-2\\national_book_award_fiction.json",
-      "live_report": "_dev_tools\\Scraps Cache\\update_implementation\\annual-renewed\\national_book_award_fiction\\live.json"
+      "automated_report": "_dev_tools\\Scraps Cache\\update_implementation\\annual-renewed\\automated-2\\national_book_award_fiction.json"
     },
     "national_book_award_nonfiction": {
-      "status": "complete",
+      "status": "awaiting_live_verification",
       "registry_index_at_start": 240,
       "name": "National Book Award - Nonfiction",
-      "updated_at": "2026-11-16T17:35:19+00:00",
+      "updated_at": "2026-11-20T04:32:32+00:00",
       "history": [
         {
           "status": "in_progress",
@@ -4099,9 +4117,21 @@
           "status": "complete",
           "reason": "Renewed isolated live verification after annual-helper provenance restoration and opt-in partial-import handling. Existing National Book Award semantics remain unchanged: official category scope, fresh discovery/current/latest/unsettled years, source-scoped history, bounded gateway retries and replacement Wikipedia fallback. Real missing-entry recovery and repeat equal full output with fewer requests.",
           "at": "2026-11-16T17:35:19+00:00"
+        },
+        {
+          "status": "awaiting_live_verification",
+          "reason": "2026-11-19 category-ownership review supersedes old parity evidence. The implemented official year reader has reusable units, but current Foundation historical routes are empty or mix categories, forcing the single-page Wikipedia replacement. Full/update/repeat results agree without request savings. Await corrected official-source proof before re-enabling Updates; complete imports remain available.",
+          "at": "2026-11-20T04:05:38+00:00",
+          "previous_live_report": "_dev_tools\\Scraps Cache\\update_implementation\\annual-renewed\\national_book_award_nonfiction\\live.json"
+        },
+        {
+          "status": "awaiting_live_verification",
+          "reason": "The current policy retains usable Foundation years and optionally supplements only failed years from Wikipedia; supplement outages are nonfatal. Existing annual reuse remains implemented, but the old replacement-only parity/no-savings receipts do not qualify this policy. Await new recipe-specific full/update/recovery proof before advertising Updates.",
+          "at": "2026-11-20T04:32:32+00:00",
+          "previous_live_report": "_dev_tools\\Scraps Cache\\nba-official-routing\\national_book_award_nonfiction_final.json"
         }
       ],
-      "reason": "Renewed isolated live verification after annual-helper provenance restoration and opt-in partial-import handling. Existing National Book Award semantics remain unchanged: official category scope, fresh discovery/current/latest/unsettled years, source-scoped history, bounded gateway retries and replacement Wikipedia fallback. Real missing-entry recovery and repeat equal full output with fewer requests.",
+      "reason": "The current policy retains usable Foundation years and optionally supplements only failed years from Wikipedia; supplement outages are nonfatal. Existing annual reuse remains implemented, but the old replacement-only parity/no-savings receipts do not qualify this policy. Await new recipe-specific full/update/recovery proof before advertising Updates.",
       "source_paths": [
         "Official National Book Foundation annual category pages; Wikipedia remains replacement full refresh"
       ],
@@ -4109,19 +4139,25 @@
         "parser/annual_updates.py",
         "parser/national_book_award.py",
         "url_fetcher/national_book_award.py",
-        "_dev_tools/test_official_annual_updates.py"
+        "_dev_tools/test_official_annual_updates.py",
+        "parser/national_book_award_official.py",
+        "_dev_tools/test_national_book_award_official.py",
+        "_dev_tools/test_national_book_award_supplement.py"
       ],
       "evidence": [
-        "_dev_tools\\Scraps Cache\\update_implementation\\annual-renewed\\national_book_award_nonfiction"
+        "_dev_tools\\Scraps Cache\\update_implementation\\annual-renewed\\national_book_award_nonfiction",
+        "_docs/NATIONAL_BOOK_AWARD_SOURCE_AUDIT.md",
+        "_dev_tools/Scraps Cache/nba-official-routing/verification.json",
+        "_dev_tools\\Scraps Cache\\nba-official-routing\\national_book_award_nonfiction_final.json",
+        "_dev_tools/test_national_book_award_supplement.py"
       ],
-      "automated_report": "_dev_tools\\Scraps Cache\\update_implementation\\annual-renewed\\automated-2\\national_book_award_nonfiction.json",
-      "live_report": "_dev_tools\\Scraps Cache\\update_implementation\\annual-renewed\\national_book_award_nonfiction\\live.json"
+      "automated_report": "_dev_tools\\Scraps Cache\\update_implementation\\annual-renewed\\automated-2\\national_book_award_nonfiction.json"
     },
     "national_book_award_young_peoples_literature": {
-      "status": "complete",
+      "status": "awaiting_live_verification",
       "registry_index_at_start": 241,
       "name": "National Book Award - Young People's Literature",
-      "updated_at": "2026-11-16T17:35:21+00:00",
+      "updated_at": "2026-11-20T04:32:32+00:00",
       "history": [
         {
           "status": "in_progress",
@@ -4137,9 +4173,21 @@
           "status": "complete",
           "reason": "Renewed isolated live verification after annual-helper provenance restoration and opt-in partial-import handling. Existing National Book Award semantics remain unchanged: official category scope, fresh discovery/current/latest/unsettled years, source-scoped history, bounded gateway retries and replacement Wikipedia fallback. Real missing-entry recovery and repeat equal full output with fewer requests.",
           "at": "2026-11-16T17:35:21+00:00"
+        },
+        {
+          "status": "awaiting_live_verification",
+          "reason": "2026-11-19 category-ownership review supersedes old parity evidence. The implemented official year reader has reusable units, but current Foundation historical routes are empty or mix categories, forcing the single-page Wikipedia replacement. Full/update/repeat results agree without request savings. Await corrected official-source proof before re-enabling Updates; complete imports remain available.",
+          "at": "2026-11-20T04:05:38+00:00",
+          "previous_live_report": "_dev_tools\\Scraps Cache\\update_implementation\\annual-renewed\\national_book_award_young_peoples_literature\\live.json"
+        },
+        {
+          "status": "awaiting_live_verification",
+          "reason": "The current policy retains usable Foundation years and optionally supplements only failed years from Wikipedia; supplement outages are nonfatal. Existing annual reuse remains implemented, but the old replacement-only parity/no-savings receipts do not qualify this policy. Await new recipe-specific full/update/recovery proof before advertising Updates.",
+          "at": "2026-11-20T04:32:32+00:00",
+          "previous_live_report": "_dev_tools\\Scraps Cache\\nba-official-routing\\national_book_award_young_peoples_literature_final.json"
         }
       ],
-      "reason": "Renewed isolated live verification after annual-helper provenance restoration and opt-in partial-import handling. Existing National Book Award semantics remain unchanged: official category scope, fresh discovery/current/latest/unsettled years, source-scoped history, bounded gateway retries and replacement Wikipedia fallback. Real missing-entry recovery and repeat equal full output with fewer requests.",
+      "reason": "The current policy retains usable Foundation years and optionally supplements only failed years from Wikipedia; supplement outages are nonfatal. Existing annual reuse remains implemented, but the old replacement-only parity/no-savings receipts do not qualify this policy. Await new recipe-specific full/update/recovery proof before advertising Updates.",
       "source_paths": [
         "Official National Book Foundation annual category pages; Wikipedia remains replacement full refresh"
       ],
@@ -4147,13 +4195,19 @@
         "parser/annual_updates.py",
         "parser/national_book_award.py",
         "url_fetcher/national_book_award.py",
-        "_dev_tools/test_official_annual_updates.py"
+        "_dev_tools/test_official_annual_updates.py",
+        "parser/national_book_award_official.py",
+        "_dev_tools/test_national_book_award_official.py",
+        "_dev_tools/test_national_book_award_supplement.py"
       ],
       "evidence": [
-        "_dev_tools\\Scraps Cache\\update_implementation\\annual-renewed\\national_book_award_young_peoples_literature"
+        "_dev_tools\\Scraps Cache\\update_implementation\\annual-renewed\\national_book_award_young_peoples_literature",
+        "_docs/NATIONAL_BOOK_AWARD_SOURCE_AUDIT.md",
+        "_dev_tools/Scraps Cache/nba-official-routing/verification.json",
+        "_dev_tools\\Scraps Cache\\nba-official-routing\\national_book_award_young_peoples_literature_final.json",
+        "_dev_tools/test_national_book_award_supplement.py"
       ],
-      "automated_report": "_dev_tools\\Scraps Cache\\update_implementation\\annual-renewed\\automated-2\\national_book_award_young_peoples_literature.json",
-      "live_report": "_dev_tools\\Scraps Cache\\update_implementation\\annual-renewed\\national_book_award_young_peoples_literature\\live.json"
+      "automated_report": "_dev_tools\\Scraps Cache\\update_implementation\\annual-renewed\\automated-2\\national_book_award_young_peoples_literature.json"
     },
     "baillie_gifford_prize": {
       "status": "complete",

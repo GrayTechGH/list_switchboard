@@ -13,7 +13,7 @@ from urllib.response import addinfourl
 
 from _dev_tools import test_import_matching
 import main
-import wayback_policy as policy
+from transport import wayback as policy
 from url_fetcher import booksellers_best
 
 

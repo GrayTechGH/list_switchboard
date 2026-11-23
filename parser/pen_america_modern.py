@@ -21,10 +21,21 @@ def source_soup(html):
   return BeautifulSoup(html or '','html.parser')
 
 
+def citation_line(node):
+  label=next((n for n in node.find_all(['em','i','strong','b']) if n.get_text(strip=True)),None)
+  if label is None:return False
+  text=normalize_line(label.get_text(' ',strip=True))
+  return (':' in text and normalize_heading(text) in
+    ('from the judges citation','judges citation','judge citation','citation') and
+    normalize_line(node.get_text(' ',strip=True)).startswith(text))
+
+
 def marked_work(parser,node):
+  # Removing a citation label would turn its emphasized title and prose into a byline.
+  if citation_line(node):return None
   fragment=source_soup(str(node))
   for label in fragment.find_all(['em','i']):
-    if normalize_heading(label.get_text(' ',strip=True)).startswith(('judges','judge','citation','from the judges')):label.decompose()
+    if normalize_heading(label.get_text(' ',strip=True)).startswith(('judges','judge')):label.decompose()
   for link in fragment.find_all('a'):
     if normalize_heading(link.get_text(' ',strip=True)) in ('bookshop','bookshop org','buy the book'):link.decompose()
   title_node=next((n for n in fragment.find_all(['em','i']) if normalize_line(n.get_text(' ',strip=True))),None)
@@ -53,9 +64,10 @@ def marked_work(parser,node):
 
 
 def byline_candidate(node):
+  if citation_line(node):return False
   text=normalize_line(node.get_text(' ',strip=True))
   marks=[n for n in node.find_all(['em','i']) if normalize_line(n.get_text(' ',strip=True)) and
-    not normalize_heading(n.get_text(' ',strip=True)).startswith(('judge','citation','from the judges'))]
+    not normalize_heading(n.get_text(' ',strip=True)).startswith('judge')]
   if not marks:return False
   title=marks[0].get_text(' ',strip=True)
   title_first=text.startswith(title) and (title.endswith(',') or text[len(title):].lstrip().startswith(','))

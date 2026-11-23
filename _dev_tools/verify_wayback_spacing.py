@@ -26,7 +26,7 @@ def worker(sandbox, output):
   from qt.core import QApplication
   from calibre.constants import config_dir, cache_dir, numeric_version
   from calibre_plugins.list_switchboard.main import ListSwitchboardCore
-  from calibre_plugins.list_switchboard import wayback_policy as policy
+  from calibre_plugins.list_switchboard.transport import wayback as policy
   import mechanize
   for path in (config_dir, cache_dir()):
     require(Path(path).resolve().is_relative_to(Path(sandbox).resolve()), 'Calibre state escaped isolation')

@@ -15,12 +15,13 @@ Maintenance notes:
 import re
 from urllib.parse import urljoin
 
+from bs4 import UnicodeDammit
 from lxml import html as lxml_html
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER,
-    assign_positions, normalize_heading, normalize_line,
+    assign_positions, normalize_heading, normalize_line, is_author_suffix,
     strip_publication_notes,
     split_title_author_byline,
   )
@@ -31,7 +32,7 @@ try:
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER,
-    assign_positions, normalize_heading, normalize_line,
+    assign_positions, normalize_heading, normalize_line, is_author_suffix,
     strip_publication_notes,
     split_title_author_byline,
   )
@@ -239,29 +240,29 @@ class LukasOfficialParser(AwardParserBase):
     rows = []
     current_year = None
     row_count_by_year = {}
-    for tr in table.xpath('.//tr'):
-      cells = tr.xpath('./td|./th')
+    for cells in self.table_grid(table):
       if not cells or self.row_matches_header(cells, header_map):
         continue
-      missing_year = self.row_omits_year(cells, header_map, current_year)
-      year_cell = self.cell_for_key(cells, header_map, 'year', False)
-      year = None if missing_year else self.year_from_text(self.clean_cell_text(year_cell))
+      year_cell = self.cell_for_key(cells, header_map, 'year')
+      year = self.year_from_text(self.clean_cell_text(year_cell))
       if year is None:
         year = current_year
       if year is None:
         continue
       current_year = year
-      title_cell = self.cell_for_key(cells, header_map, 'title', missing_year)
-      author_cell = self.cell_for_key(cells, header_map, 'author', missing_year)
-      if title_cell is None or author_cell is None:
+      title_cell = self.cell_for_key(cells, header_map, 'title')
+      author_cell = self.cell_for_key(cells, header_map, 'author')
+      if title_cell is None or author_cell is None or title_cell is author_cell:
         continue
-      title = self.clean_title(self.clean_cell_text(title_cell))
+      title = self.title_from_cell(title_cell)
       author = self.clean_author(self.clean_cell_text(author_cell))
       if not title or not author:
         continue
-      result = self.result_from_cell(
-        self.cell_for_key(cells, header_map, 'result', missing_year))
+      result_cell = self.cell_for_key(cells, header_map, 'result')
+      result = self.result_from_cell(result_cell)
       if result is None:
+        if self.clean_cell_text(result_cell):
+          continue
         row_count = row_count_by_year.get(year, 0)
         result = RESULT_WINNER if row_count == 0 else RESULT_SHORTLISTED
       row_count_by_year[year] = row_count_by_year.get(year, 0) + 1
@@ -274,6 +275,9 @@ class LukasOfficialParser(AwardParserBase):
         'category': category,
       })
     return rows
+
+  def title_from_cell(self, cell):
+    return self.clean_title(self.clean_cell_text(cell))
 
   def result_and_work_text(self, text, default_result):
     match = re.match(
@@ -381,10 +385,25 @@ class LukasOfficialParser(AwardParserBase):
   def clean_author(self, value):
     text = normalize_line(value)
     text = re.sub(r'^\s*by\s+', '', text, flags=re.I)
-    text = re.sub(r'\s*,?\s*(?:translated|translation|edited|ed\.?|eds?\.?)\b.*$', '', text, flags=re.I)
+    text = re.sub(r'(?:\s*,\s*|\s+)(?:translated|translation|edited|ed\.?|eds?\.?)\b.*$', '', text, flags=re.I)
     return strip_publication_notes(text).strip(' "\u201c\u201d,')
 
+  def clean_official_author(self, value):
+    """Split bounded Columbia credits while retaining suffixes on their names."""
+    authors = []
+    for part in re.split(r'\s+&\s+|\s+and\s+|\s*,\s*', self.clean_author(value), flags=re.I):
+      part = part.strip()
+      if not part:
+        continue
+      if is_author_suffix(part) and authors:
+        authors[-1] += ', ' + part
+      else:
+        authors.append(part)
+    return ' & '.join(authors)
+
   def html_root(self, html):
+    if isinstance(html, bytes):
+      html = UnicodeDammit(html, is_html=True).unicode_markup
     return lxml_html.fromstring(html or '<html></html>')
 
   def node_text(self, node):
@@ -413,9 +432,9 @@ class LukasOfficialParser(AwardParserBase):
     return int(match.group(0)) if match is not None else None
 
   def header_map(self, table):
-    for tr in table.xpath('.//tr'):
+    for cells in self.table_grid(table):
       mapped = {}
-      for index, cell in enumerate(tr.xpath('./th|./td')):
+      for index, cell in enumerate(cells):
         key = HEADER_ALIASES.get(normalize_heading(self.clean_cell_text(cell)))
         if key is not None and key not in mapped:
           mapped[key] = index
@@ -434,18 +453,10 @@ class LukasOfficialParser(AwardParserBase):
         return False
     return True
 
-  def row_omits_year(self, cells, header_map, current_year):
-    if current_year is None or header_map.get('year') != 0:
-      return False
-    first_text = self.clean_cell_text(cells[0]) if cells else ''
-    return self.year_from_text(first_text) is None and len(cells) <= max(header_map.values())
-
-  def cell_for_key(self, cells, header_map, key, missing_year):
+  def cell_for_key(self, cells, header_map, key):
     index = header_map.get(key)
     if index is None:
       return None
-    if missing_year and index > header_map.get('year', -1):
-      index -= 1
     if index < 0 or index >= len(cells):
       return None
     return cells[index]
@@ -505,8 +516,12 @@ class LukasOfficialParser(AwardParserBase):
     return entries
 
 
-class LukasWikipediaParser(LukasOfficialParser):
-  """Parse the J. Anthony Lukas Book Prize Wikipedia recipient table."""
+class LukasWikipediaTableMixin:
+  """Keep Wikipedia title markup and bounded coauthor credits source-specific.
+
+  Precede the configured LukasOfficialParser subclass in the MRO. Its table,
+  entry and author helpers are required; the subclass owns the prize/category.
+  """
 
   def parse(self, html, base_url, name, category=None):
     category = category or self.CATEGORY
@@ -516,6 +531,24 @@ class LukasWikipediaParser(LukasOfficialParser):
       name,
       base_url,
       sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))))
+
+  def title_from_cell(self, cell):
+    text = self.clean_cell_text(cell)
+    titles = cell.xpath('.//i|.//em')
+    if titles:
+      title = self.clean_cell_text(titles[0])
+      if title and text.startswith(title):
+        remainder = text[len(title):].strip()
+        if remainder.startswith('(') and remainder.endswith(')'):
+          text = title
+    return normalize_line(text)
+
+  def clean_author(self, value):
+    return re.sub(r'\s+and\s+', ' & ', super().clean_author(value), flags=re.I)
+
+
+class LukasWikipediaParser(LukasWikipediaTableMixin, LukasOfficialParser):
+  """Parse the J. Anthony Lukas Book Prize Wikipedia recipient table."""
 
 
 class MarkLyntonHistoryPrizeParser(LukasOfficialParser):
@@ -540,17 +573,9 @@ class MarkLyntonHistoryPrizeParser(LukasOfficialParser):
   )
 
 
-class MarkLyntonHistoryPrizeWikipediaParser(MarkLyntonHistoryPrizeParser):
+class MarkLyntonHistoryPrizeWikipediaParser(
+    LukasWikipediaTableMixin, MarkLyntonHistoryPrizeParser):
   """Parse the Mark Lynton History Prize Wikipedia recipient table."""
-
-  def parse(self, html, base_url, name, category=None):
-    category = category or self.CATEGORY
-    rows = self.parse_table_rows(self.html_root(html), base_url, category)
-    entries = self.entries_from_rows(self.dedupe_rows(rows))
-    return self.parsed_result(
-      name,
-      base_url,
-      sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))))
 
 
 class LukasLibraryThingParser(LibraryThingAwardParserBase):

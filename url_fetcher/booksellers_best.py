@@ -10,14 +10,14 @@ except ImportError:
 
 try:
   from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
-  from calibre_plugins.list_switchboard.http_policy import random_user_agent
+  from calibre_plugins.list_switchboard.transport.http import random_user_agent
   from calibre_plugins.list_switchboard.parser.booksellers_best import BOOKSELLERS_BEST_CDX_URL
-  from calibre_plugins.list_switchboard.wayback_policy import paced_native_https, wait_for_wayback
+  from calibre_plugins.list_switchboard.transport.wayback import paced_native_https, wait_for_wayback
 except ImportError:
   from errors import ImportCancelledError, CamoufoxRequiredError
-  from http_policy import random_user_agent
+  from transport.http import random_user_agent
   from parser.booksellers_best import BOOKSELLERS_BEST_CDX_URL
-  from wayback_policy import paced_native_https, wait_for_wayback
+  from transport.wayback import paced_native_https, wait_for_wayback
 
 from .generic import (
   CATEGORY_REGIONAL_NATIONAL_AWARDS,

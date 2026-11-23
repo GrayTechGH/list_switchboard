@@ -4,7 +4,7 @@ import unittest
 
 from _dev_tools import test_import_matching as support
 from errors import CamoufoxFetchError, ImportCancelledError
-from sfadb_transport import is_sfadb_url, validate_sfadb_page
+from transport.sfadb import is_sfadb_url, validate_sfadb_page
 from url_fetcher.seiun import UrlFetcherSeiunTranslatedNovel
 from url_fetcher.aurealis import UrlFetcherAurealisGraphicNovelIllustratedWork
 

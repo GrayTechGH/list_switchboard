@@ -9,24 +9,27 @@ Maintenance notes:
   finalists, longlists, press-kit copy, reviews, and social assets together.
   Keep parsing bounded to nonfiction winner/finalist sections.
 - V1 imports winners and finalists only. Longlists are intentionally ignored.
+- Normalize malformed embedded ALA fragments with html5lib. Work identity ends
+  at the publisher line of a bounded paragraph; review prose is never a byline.
 """
 
 import re
+from copy import deepcopy
 from urllib.parse import urljoin
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, UnicodeDammit
 from bs4.element import Tag
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import (
     AwardParserBase, RESULT_WINNER, assign_positions, normalize_heading,
-    normalize_line, strip_publication_notes,
+    normalize_line, strip_publication_notes, is_author_suffix,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_WINNER, assign_positions, normalize_heading,
-    normalize_line, strip_publication_notes,
+    normalize_line, strip_publication_notes, is_author_suffix,
   )
   from .generic import position_sort_key
 
@@ -65,17 +68,29 @@ class AndrewCarnegieOfficialParser(AwardParserBase):
       sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))))
 
   def parse_rows(self, html, base_url, category):
-    soup = BeautifulSoup(html or '', 'html.parser')
+    if isinstance(html, bytes):
+      html = UnicodeDammit(html, is_html=True).unicode_markup
+    # ALA embeds document fragments and sometimes leaves image tags unclosed.
+    soup = BeautifulSoup(html or '', 'html5lib')
     rows = []
-    for heading in self.nonfiction_result_headings(soup):
-      result = self.result_from_heading(self.node_text(heading))
-      if result is None:
+    result = None
+    for node in soup.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'strong', 'p', 'li']):
+      if node.find_parent(['nav', 'footer', 'header']):
         continue
-      for node in self.section_nodes(heading):
-        for item in self.row_nodes(node):
-          row = self.row_from_node(item, base_url, category, result)
-          if row is not None:
-            rows.append(row)
+      if self.is_heading_node(node):
+        if node.name == 'strong' and node.find_parent(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']):
+          continue
+        text = self.node_text(node)
+        if self.is_nonfiction_result_heading(text):
+          result = self.result_from_heading(text)
+        elif self.is_boundary_heading(node):
+          result = None
+        continue
+      if result is None or (node.name == 'li' and node.find('p')):
+        continue
+      row = self.row_from_node(node, base_url, category, result)
+      if row is not None:
+        rows.append(row)
     return rows
 
   def nonfiction_result_headings(self, soup):
@@ -167,19 +182,52 @@ class AndrewCarnegieOfficialParser(AwardParserBase):
     if self.is_ignored_text(text):
       return None
     year = self.year_from_text(base_url) or self.year_from_text(text)
-    title, author = self.title_author_from_node(node)
-    if not title or not author:
-      title, author = self.title_author_from_text(text)
+    title, author = self.byline_from_node(node, result)
     if year is None or not title or not author:
+      return None
+    author = self.clean_author(author)
+    if not author:
       return None
     return {
       'award_year': str(year),
       'title': self.clean_title(title),
-      'author': self.clean_author(author),
+      'author': author,
       'result': result,
       'source_url': self.first_link_url(node, base_url) or base_url,
       'category': category,
     }
+
+  def byline_from_node(self, node, result):
+    fragment = deepcopy(node)
+    for br in fragment.find_all('br'):
+      br.replace_with('\n')
+    lines = [normalize_line(line) for line in fragment.get_text(' ', strip=False).split('\n')]
+    lines = [line for line in lines if line]
+    if len(lines) >= 3 and lines[2].startswith('(') and lines[2].endswith(')'):
+      # Winner credits are author/title/publisher; finalists identify their
+      # title with Booklist links, in either order and sometimes split links.
+      links = [normalize_line(a.get_text(' ', strip=True)) for a in node.find_all('a', href=True)
+        if 'booklistonline.com' in a['href'] and a.get_text(strip=True)
+        and not self.is_ignored_text(a.get_text(' ', strip=True))]
+      title_indexes = [index for index in (0, 1) if links and all(link in lines[index] for link in links)]
+      title_index = title_indexes[0] if len(title_indexes) == 1 else 1 if result == RESULT_WINNER else None
+      if title_index is None:
+        return '', ''
+      title = re.sub(r'\s+\.$', '', lines[title_index])
+      return title, lines[1-title_index]
+    if len(lines) != 1:
+      return '', ''
+    title_node = next((n for n in node.find_all(['em', 'i', 'a']) if n.get_text(strip=True)), None)
+    if title_node is None or not title_node.get_text(strip=True):
+      return '', ''
+    title = self.node_text(title_node)
+    before, found, after = self.node_text(node).partition(title)
+    if before.strip() or not found:
+      return '', ''
+    byline = re.match(r'^\s*(?:by\s+|,\s*)(.+)$', after, re.I)
+    if byline is None:
+      return '', ''
+    return title, strip_publication_notes(byline.group(1))
 
   def title_author_from_node(self, node):
     if not isinstance(node, Tag):
@@ -342,14 +390,17 @@ class AndrewCarnegieOfficialParser(AwardParserBase):
     return normalize_line(text)
 
   def clean_title(self, value):
-    text = strip_publication_notes(normalize_line(value))
-    text = re.sub(r'^\s*(?:winner|finalist)\s*:?\s*', '', text, flags=re.I)
-    return text.strip(' "\u201c\u201d,')
+    text = normalize_line(value)
+    text = re.sub(r'^\s*(?:winner|finalist)\s*:\s*', '', text, flags=re.I)
+    return text.strip(' ,')
 
   def clean_author(self, value):
     text = self.strip_author_label(value)
-    text = re.sub(r'\s*,?\s*(?:translated|translation|edited|ed\.?|eds?\.?)\b.*$', '', text, flags=re.I)
-    return strip_publication_notes(text).strip(' "\u201c\u201d,')
+    text = re.sub(r'(?:[.,]\s*|\s+)(?:translated|translation|edited|ed\.?|eds?\.?)\b.*$', '', text, flags=re.I)
+    text = strip_publication_notes(text).strip(' "\u201c\u201d,')
+    if text.endswith('.') and not is_author_suffix(re.split(r'[\s,]+', text)[-1]):
+      text = text[:-1]
+    return re.sub(r'\s+and\s+', ' & ', text, flags=re.I)
 
   def first_link_url(self, node, base_url):
     if not isinstance(node, Tag):
@@ -380,7 +431,18 @@ class AndrewCarnegieOfficialParser(AwardParserBase):
       current = best_by_key.get(key)
       if current is None or RESULT_ORDER.get(row['result'], 99) < RESULT_ORDER.get(current['result'], 99):
         best_by_key[key] = row
-    return list(best_by_key.values())
+    deduped = deepcopy(list(best_by_key.values()))
+    kept = []
+    for row in deduped:
+      matches = [winner for winner in deduped if winner['result'] == RESULT_WINNER
+        and winner['award_year'] == row['award_year'] and winner['category'] == row['category']
+        and normalize_heading(winner['author']) == normalize_heading(row['author'])
+        and ':' in winner['title'] and normalize_heading(winner['title'].split(':', 1)[0]) == normalize_heading(row['title'])]
+      if row['result'] != RESULT_WINNER and len(matches) == 1:
+        matches[0].setdefault('aliases', []).append(row['title'])
+      else:
+        kept.append(row)
+    return kept
 
   def entries_from_rows(self, rows):
     by_year = {}

@@ -87,7 +87,7 @@ class OfficialAnnualUpdateTests(unittest.TestCase):
     self.assertEqual('winner',update['entries'][0]['result'])
     self.assertTrue(update['incremental_state']['units'][self.unit(2022)]['complete'])
 
-  def test_full_failure_reaches_replacement_but_update_retains_pending_history(self):
+  def test_failed_year_keeps_other_official_years_and_cached_pending_history(self):
     full = self.parse()
     old = self.cache(full)
     old['incremental_state']['units'][self.unit(2022)]['complete'] = False
@@ -95,8 +95,9 @@ class OfficialAnnualUpdateTests(unittest.TestCase):
     update = self.parse(old)
     self.assertEqual(full['entries'],update['entries'])
     self.assertFalse(update['incremental_state']['units'][self.unit(2022)]['complete'])
-    with self.assertRaises(UrlFetcherError):
-      self.parse()
+    partial = self.parse()
+    self.assertEqual({'2023','2024'}, {entry['award_year'] for entry in partial['entries']})
+    self.assertTrue(any('Wikipedia supplement unavailable' in note for note in partial['notes']))
     self.failures.clear()
     self.assertEqual(full['entries'],self.parse(self.cache(update))['entries'])
 

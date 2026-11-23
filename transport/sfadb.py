@@ -1,4 +1,4 @@
-"""Shared browser-first transport for SFADB award pages.
+"""Browser-first request policy for SFADB award pages.
 
 Parsers retain source/category interpretation. Transport validation recognizes
 award overview/year structure and rejects challenge pages or a stale year.

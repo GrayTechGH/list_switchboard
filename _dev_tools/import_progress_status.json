@@ -18,7 +18,7 @@
   "summary": {
     "registered_recipes": 394,
     "automated_passed": 394,
-    "manual_verified": 223
+    "manual_verified": 250
   },
   "recipes": [
     {
@@ -1586,183 +1586,183 @@
       "source_id": "lefty_award_humorous_mystery_novel",
       "name": "Lefty Award - Humorous Mystery Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-19: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "lefty_award_historical_mystery_novel",
       "name": "Lefty Award - Historical Mystery Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-19: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "lefty_award_mystery_novel",
       "name": "Lefty Award - Mystery Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-19: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "lefty_award_debut_mystery_novel",
       "name": "Lefty Award - Debut Mystery Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-19: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "ned_kelly_award_crime_fiction",
       "name": "Ned Kelly Award - Crime Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-19: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "ned_kelly_award_debut_crime_fiction",
       "name": "Ned Kelly Award - Debut Crime Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-19: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "ned_kelly_award_true_crime",
       "name": "Ned Kelly Award - True Crime",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-19: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "ned_kelly_award_international_crime_fiction",
       "name": "Ned Kelly Award - International Crime Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-19: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "ngaio_marsh_award_crime_novel",
       "name": "Ngaio Marsh Award - Crime Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-19: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "ngaio_marsh_award_first_novel",
       "name": "Ngaio Marsh Award - First Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-19: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "ngaio_marsh_award_non_fiction",
       "name": "Ngaio Marsh Award - Non-Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-19: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "ngaio_marsh_award_younger_readers",
       "name": "Ngaio Marsh Award - Younger Readers",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-19: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "theakston_old_peculier_crime_novel_of_the_year",
       "name": "Theakston Old Peculier Crime Novel of the Year",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-19: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "pulitzer_prize_fiction",
       "name": "Pulitzer Prize - Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-19: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "pulitzer_prize_general_nonfiction",
       "name": "Pulitzer Prize - General Nonfiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-19: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "national_book_award_fiction",
       "name": "National Book Award - Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": ""
+      "manual_status": "passed",
+      "notes": "2026-11-22: User directed all three National Book Award recipes to be marked manually passed (2.2.0)."
     },
     {
       "source_id": "national_book_award_nonfiction",
       "name": "National Book Award - Nonfiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": ""
+      "manual_status": "passed",
+      "notes": "2026-11-22: User directed all three National Book Award recipes to be marked manually passed (2.2.0)."
     },
     {
       "source_id": "national_book_award_young_peoples_literature",
       "name": "National Book Award - Young People's Literature",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": ""
+      "manual_status": "passed",
+      "notes": "2026-11-22: User confirmed Foundation fetch passed (2.2.0); clarified the 2026-11-21 results were Young People's Literature, not Fiction."
     },
     {
       "source_id": "baillie_gifford_prize",
       "name": "Baillie Gifford Prize",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": ""
+      "manual_status": "passed",
+      "notes": "2026-11-22: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "pen_galbraith_award_nonfiction",
       "name": "PEN/John Kenneth Galbraith Award for Nonfiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": ""
+      "manual_status": "passed",
+      "notes": "2026-11-22: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "pen_diamonstein_spielvogel_award_essay",
       "name": "PEN/Diamonstein-Spielvogel Award for the Art of the Essay",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": ""
+      "manual_status": "passed",
+      "notes": "2026-11-22: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "pen_jean_stein_book_award",
       "name": "PEN/Jean Stein Book Award",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": ""
+      "manual_status": "passed",
+      "notes": "2026-11-22: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "pen_open_book_award",
       "name": "PEN Open Book Award",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": ""
+      "manual_status": "passed",
+      "notes": "2026-11-22: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "pen_faulkner_award_fiction",
       "name": "PEN/Faulkner Award for Fiction",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": ""
+      "manual_status": "passed",
+      "notes": "2026-11-22: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "pen_hemingway_award_debut_novel",
       "name": "PEN/Hemingway Award for Debut Novel",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": ""
+      "manual_status": "passed",
+      "notes": "2026-11-22: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "j_anthony_lukas_book_prize",
       "name": "J. Anthony Lukas Book Prize",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": "2026-11-14: Manual retest required for Camoufox fetching, including applicable fallback/supplement paths (2.1.0)."
+      "manual_status": "passed",
+      "notes": "2026-11-22: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "mark_lynton_history_prize",
@@ -1775,8 +1775,8 @@
       "source_id": "orwell_prize_political_writing",
       "name": "Orwell Prize for Political Writing",
       "automated_status": "passed",
-      "manual_status": "not_checked",
-      "notes": ""
+      "manual_status": "passed",
+      "notes": "2026-11-22: User confirmed manual retest passed (2.2.0)."
     },
     {
       "source_id": "andrew_carnegie_medal_nonfiction",

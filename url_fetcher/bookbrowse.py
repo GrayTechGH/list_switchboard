@@ -10,9 +10,9 @@ except ImportError:
   from errors import ImportCancelledError, CamoufoxRequiredError
 
 try:
-  from calibre_plugins.list_switchboard.http_policy import random_user_agent
+  from calibre_plugins.list_switchboard.transport.http import random_user_agent
 except ImportError:
-  from http_policy import random_user_agent
+  from transport.http import random_user_agent
 
 
 try:

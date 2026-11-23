@@ -117,6 +117,57 @@ class LukasUpdateTests(unittest.TestCase):
     self.assertEqual(['Winner Writer, Jr.'],next(row for row in parsed['entries'] if row['title']=='Winner 2026')['authors'])
     self.assertTrue(any('names without book titles' in note for note in parsed['notes']))
 
+  def test_historical_finalist_names_cannot_be_paired_as_books(self):
+    html='''<main><h1>The J. Anthony Lukas Prize Project Awards</h1>
+      <h3>Winners since 2010</h3><table><tr><th></th><th></th>
+      <th>Lukas Book Prize</th><th>Lynton History Prize</th></tr>
+      <tr><td>2011</td><td>Winners</td><td>Eliza Griswold</td><td>History Writer</td></tr>
+      <tr><td></td><td></td><td>The Tenth Parallel</td><td>History Book</td></tr>
+      <tr><td></td><td>Finalists</td><td>Jefferson Cowie</td><td>Patrick Wilcken</td></tr>
+      <tr><td></td><td></td><td>Paul Greenberg</td><td>Second Historian</td></tr>
+      <tr><td></td><td></td><td>Siddartha Mukherjee</td><td></td></tr>
+      <tr><td></td><td>Jurors</td><td>Excluded Judge</td><td>Other Judge</td></tr>
+      <tr><td>2010</td><td>Winners</td><td>David Finkel</td><td>Older Historian</td></tr>
+      <tr><td></td><td></td><td>The Good Soldiers</td><td>Older History Book</td></tr>
+      <tr><td></td><td>Finalists</td><td>Patrick Radden Keefe</td><td>Jenny Uglow</td></tr>
+      <tr><td></td><td></td><td>Beryl Satter</td><td>Another Historian</td></tr>
+      </table></main>'''
+    for factory in FETCHERS:
+      recipe=factory()
+      with self.subTest(recipe=recipe.NAME):
+        source=recipe.parser().read_official_source(html,LUKAS_URL,recipe.CATEGORY)
+        self.assertTrue(source['complete']);self.assertTrue(source['notes'])
+        self.assertEqual(2,len(source['rows']))
+        self.assertTrue(all(row['result']=='winner' for row in source['rows']))
+        finalists=[r for r in source['rosters'][2011] if r['result']=='finalist']
+        self.assertTrue(all(r['title'] is None for r in finalists))
+        self.assertEqual(3 if factory is FETCHERS[0] else 2,len(finalists))
+
+  def test_title_bearing_finalists_start_in_2022_and_split_joint_credits(self):
+    for year,title,credit,authors in (
+        (2022,'Empire of Pain','Patrick Radden Keefe',['Patrick Radden Keefe']),
+        (2023,'His Name Is George Floyd','Robert Samuels and Toluse Olorunnipa',['Robert Samuels','Toluse Olorunnipa']),
+        (2025,'The Unclaimed','Pamela Prickett and Stefan Timmermans',['Pamela Prickett','Stefan Timmermans'])):
+      with self.subTest(year=year):
+        self.years=[year]
+        html=self.archive().replace('Finalist Writer',credit).replace(f'Finalist {year}',title)
+        parsed=self.recipe.parse(html)
+        finalist=next(row for row in parsed['entries'] if row['title']==title)
+        self.assertEqual(authors,finalist['authors']);self.assertEqual('finalist',finalist['result'])
+
+  def test_official_coauthors_preserve_suffixes_and_cached_news_certification(self):
+    credit='Writer One, Jr., Writer Two and Writer Three'
+    self.overrides[LUKAS_URL]=self.archive().replace('Winner Writer, Jr.',credit)
+    for url in LUKAS_OFFICIAL_EXTRA_URLS:
+      self.overrides[url]=self.news(2026,'winners' in url).replace('Winner Writer, Jr.',credit)
+    full=self.parse()
+    winner=next(row for row in full['entries'] if row['title']=='Winner 2026')
+    self.assertEqual(['Writer One, Jr.','Writer Two','Writer Three'],winner['authors'])
+    self.calls.clear();updated=self.parse(self.cache(full))
+    self.assertEqual([(LUKAS_URL,'camoufox')],self.calls)
+    self.assertEqual(full['entries'],updated['entries'])
+    self.assertEqual(full['entries'],self.parse(self.cache(updated))['entries'])
+
   def test_missing_winner_title_marks_archive_pending_and_retains_previous_history(self):
     full=self.parse();self.overrides[LUKAS_URL]=self.archive().replace('<td>Winner 2025</td>','<td></td>')
     updated=self.parse(self.cache(full));self.assertEqual(full['entries'],updated['entries'])

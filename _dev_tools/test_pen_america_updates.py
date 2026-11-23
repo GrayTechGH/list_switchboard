@@ -212,6 +212,41 @@ class PENAmericaUpdateTests(unittest.TestCase):
     parsed=self.recipe.parser().read_source(html,CURRENT,self.recipe.config(),'annual')
     self.assertTrue(parsed['complete']);self.assertEqual(2,len(parsed['rows']))
 
+  def test_galbraith_judges_citation_does_not_create_second_winner(self):
+    url='https://pen.org/announcing-the-2025-pen-america-literary-awards-winners/'
+    for label in ('From the judges\u2019 citation: \u201c','Judges\u2019 citation:','Citation:'):
+      for author in ('Ana Raquel Minian','<strong>Ana Raquel Minian</strong>'):
+        with self.subTest(label=label,author=author):
+          html=document('Announcing the 2025 PEN America Literary Awards Winners',f'''
+            <h2>{self.recipe.NAME}</h2>
+            <p>Winner: <em>In The Shadow of Liberty,</em> <strong>Ana Raquel Minian</strong> (Viking Penguin, 2024)</p>
+            <p><em>{label}</em><em>In The Shadow of Liberty </em>by {author} is a vivid history
+            of immigration policy in the United States that examines the sometimes inhumane
+            treatment of those who come to the country seeking asylum and economic security.</p>
+            <h2>PEN Another Prize</h2>''')
+          parsed=self.recipe.parser().read_source(html,url,self.recipe.config(),'annual')
+          self.assertTrue(parsed['complete']);self.assertEqual([],parsed['notes'])
+          self.assertEqual([('In The Shadow of Liberty','Ana Raquel Minian','winner')],
+            [(r['title'],r['author'],r['result']) for r in parsed['rows']])
+
+  def test_citation_rejection_preserves_full_update_and_repeat_rosters(self):
+    self.overrides[OLD]=self.annual(2025).replace('<h2>PEN Another Prize</h2>',
+      '<p><em>From the judges citation:</em><em>Prior Winner</em> by Prior Writer, Jr. '
+      'is a vivid history.</p><h2>PEN Another Prize</h2>')
+    full=self.parse()
+    self.assertEqual(1,sum(r['title']=='Prior Winner' for r in full['entries']))
+    updated=self.parse(self.cache(full));repeated=self.parse(self.cache(updated))
+    self.assertEqual(full['entries'],updated['entries'])
+    self.assertEqual(full['entries'],repeated['entries'])
+    self.assertTrue(all(unit['complete'] for unit in repeated['incremental_state']['units'].values()))
+
+  def test_citation_in_a_real_title_is_not_a_commentary_label(self):
+    html=self.annual(2026).replace('Current Winner','Citation: A History')
+    parsed=self.recipe.parser().read_source(html,CURRENT,self.recipe.config(),'annual')
+    self.assertTrue(parsed['complete'])
+    self.assertEqual('Citation: A History',parsed['rows'][0]['title'])
+    self.assertEqual('Current Writer',parsed['rows'][0]['author'])
+
   def test_one_broken_cohonoree_marks_entire_history_source_incomplete(self):
     html=document(self.recipe.NAME,'''<h3>Previous Winners</h3><p><strong>2010</strong><br/>
       <strong>Actual Writer</strong>, <em>Actual Book</em> (Publisher)<br/>

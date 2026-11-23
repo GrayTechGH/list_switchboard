@@ -90,7 +90,7 @@ sys.modules.setdefault('calibre_plugins.list_switchboard', list_switchboard_pack
 sys.modules.setdefault('calibre_plugins.list_switchboard.config', config_module)
 
 import main
-import wayback_policy
+from transport import wayback as wayback_policy
 # Network callbacks in this fixture module are simulated. Timing is exercised
 # with deterministic clocks and actual transport processors in its own suite.
 wayback_policy.REQUEST_CLOCK = types.SimpleNamespace(
@@ -11193,6 +11193,52 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
       fallback_core.import_progress_phase_value))
     self.assertTrue(fallback['from_cache'])
 
+  def test_cached_import_failure_prompt_reports_bot_verification_and_full_details(self):
+    import import_flow
+    core = object.__new__(main.ListSwitchboardCore)
+    core.gui = None
+    recipe = types.SimpleNamespace(NAME="National Book Award - Young People's Literature")
+    cache = {'fetched_at': '2026-11-21T06:20:13Z', 'entries': [{}] * 294}
+    details = ('Could not fetch or parse the imported list.\n\nTried:\n- Foundation failed: '
+      'Foundation returned a bot-verification page instead of award data; '
+      'Camoufox: Foundation browser response still requires bot verification.')
+    for accepted in (False, True):
+      with self.subTest(accepted=accepted):
+        with patch.object(import_flow, 'question_dialog', return_value=accepted) as prompt:
+          self.assertEqual(accepted, core.should_fallback_to_cached_import(
+            recipe, cache, RuntimeError(details)))
+        message = prompt.call_args.args[2]
+        self.assertIn('bot-verification page. Camoufox was also blocked.', message)
+        self.assertIn('2026-11-21T06:20:13Z with 294 entries', message)
+        self.assertNotIn('Tried:', message)
+        self.assertEqual(details, prompt.call_args.kwargs['det_msg'])
+
+  def test_cached_import_failure_prompt_keeps_long_source_errors_in_details(self):
+    import import_flow
+    core = object.__new__(main.ListSwitchboardCore)
+    core.gui = None
+    recipe = types.SimpleNamespace(NAME='Example Import')
+    details = ('Could not fetch or parse the imported list.\n\nTried:\n'
+      '- Official failed: HTTP 403 <Forbidden> at https://example.com/' + 'x' * 500 +
+      '\n- Wikipedia failed: offline')
+    with patch.object(import_flow, 'question_dialog', return_value=True) as prompt:
+      core.should_fallback_to_cached_import(recipe, {'entries': [{}]}, RuntimeError(details))
+    message = prompt.call_args.args[2]
+    self.assertIn('Reason: Official failed: HTTP 403 &lt;Forbidden&gt;', message)
+    self.assertNotIn('x' * 100, message)
+    self.assertNotIn('Wikipedia failed', message)
+    self.assertEqual(details, prompt.call_args.kwargs['det_msg'])
+    self.assertLess(len(message), 450)
+
+  def test_cached_import_failure_prompt_reports_empty_exception(self):
+    import import_flow
+    core = object.__new__(main.ListSwitchboardCore)
+    core.gui = None
+    recipe = types.SimpleNamespace(NAME='Example Import')
+    with patch.object(import_flow, 'question_dialog', return_value=False) as prompt:
+      core.should_fallback_to_cached_import(recipe, {'entries': []}, RuntimeError())
+    self.assertIn('did not provide an error message', prompt.call_args.args[2])
+
   def test_import_progress_reaches_100_before_review_and_after_zero_writes(self):
     core = object.__new__(main.ListSwitchboardCore)
     entry = {'position': '1', 'title': 'Example Book', 'authors': ['Example Author']}
@@ -12999,6 +13045,7 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
     for discard in (False, True):
       with self.subTest(discard=discard):
         dialog = object.__new__(dialog_module.ActiveAddMatchDialog)
+        dialog.has_pending_choices = True
         dialog.selected_entry = {'position': '57', 'title': 'Selected row'}
         dialog.visible_entries = [dialog.selected_entry]
         dialog.show_all_entries = True
@@ -13013,6 +13060,255 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
         self.assertEqual('Continue reviewing', confirm.call_args.kwargs['no_text'])
         self.assertEqual(before, dialog.__dict__)
 
+  def test_active_add_batch_commits_only_final_review_choices(self):
+    from unittest.mock import Mock
+
+    core, cache, entry, stored = self._cached_active_add_series_fixture()
+    core.gui = None
+    del core._active_add_match_chooser
+    other = cache['entries'][1]
+    dialog = Mock()
+    dialog.exec.return_value = 1
+    dialog.choices = {40458: (other, 170.0, True), 40459: (entry, 161.0, True)}
+
+    def build_dialog(_parent, books, **kwargs):
+      self.assertEqual([], stored['matches'])
+      self.assertEqual([40458, 40459], [book['book_id'] for book in books])
+      self.assertTrue(all(book['choice'] is None for book in books))
+      self.assertEqual('Series List', kwargs['active_list_name'])
+      return dialog
+
+    with patch.object(list_state, 'ActiveAddMatchBatchDialog', side_effect=build_dialog):
+      with patch.object(list_state.QDialog, 'Accepted', 1, create=True):
+        updates, indexes = core.cached_active_add_updates(
+          'Series List', {40458: 'Series List', 40459: 'Series List'}, cache)
+    self.assertEqual({40458: 'Series List', 40459: 'Series List'}, updates)
+    self.assertEqual({40458: 170.0, 40459: 161.0}, indexes)
+    saved = {item['entry_key'][0]: item['matched_book_ids'] for item in stored['matches']}
+    self.assertEqual([3, 40458], saved[list_state.entry_key(other)[0]])
+    self.assertEqual([1, 2, 40459], saved[list_state.entry_key(entry)[0]])
+
+  def test_active_add_batch_cancel_does_not_save_any_choices(self):
+    from unittest.mock import Mock
+
+    core, cache, entry, stored = self._cached_active_add_series_fixture()
+    core.gui = None
+    del core._active_add_match_chooser
+    dialog = Mock()
+    dialog.exec.return_value = 0
+    dialog.choices = {40458: (entry, 161.0, True)}
+    with patch.object(list_state, 'ActiveAddMatchBatchDialog', return_value=dialog):
+      with patch.object(list_state.QDialog, 'Accepted', 1, create=True):
+        with self.assertRaises(list_state.ActiveAddCancelled):
+          core.cached_active_add_updates(
+            'Series List', {40458: 'Series List', 40459: 'Series List'}, cache)
+    self.assertEqual([], stored['matches'])
+
+  def test_active_add_batch_all_automatic_matches_do_not_open_review(self):
+    core, cache, entry, stored = self._cached_active_add_series_fixture()
+    del core._active_add_match_chooser
+    core.cached_active_match_for_book = lambda *_args, **_kwargs: (entry, 161.0, False)
+    with patch.object(list_state, 'ActiveAddMatchBatchDialog') as dialog:
+      updates, _indexes = core.cached_active_add_updates(
+        'Series List', {40458: 'Series List', 40459: 'Series List'}, cache)
+    dialog.assert_not_called()
+    self.assertEqual(2, len(updates))
+    self.assertEqual([], stored['matches'])
+
+  def test_active_add_batch_keeps_automatic_matches_out_of_manual_overrides(self):
+    from unittest.mock import Mock
+
+    core, cache, entry, stored = self._cached_active_add_series_fixture()
+    core.gui = None
+    context = core.cached_active_add_context(
+      {1: 'Series List', 40458: 'Series List'}, cache['entries'], cache, core.db.new_api)
+    request = list_state.ActiveAddMatchRequest(40458, cache['entries'], [], 200.0)
+    dialog = Mock()
+    dialog.exec.return_value = 1
+    dialog.choices = {1: (entry, 161.0, True), 40458: (entry, 161.0, True)}
+    with patch.object(list_state, 'ActiveAddMatchBatchDialog', return_value=dialog):
+      with patch.object(list_state.QDialog, 'Accepted', 1, create=True):
+        choices = core.review_cached_active_add_choices(
+          'Series List', {1: 'Series List', 40458: 'Series List'}, context,
+          {1: 200.0, 40458: 201.0}, {1: (entry, 161.0, False)}, {40458: request})
+    self.assertFalse(choices[1][2])
+    self.assertTrue(choices[40458][2])
+    self.assertEqual([], stored['matches'])
+
+  def test_active_add_batch_prepares_forced_automatic_review_without_opening_dialog(self):
+    core, context = self._cached_active_add_button_core('Dune', ['Frank Herbert'])
+    entry = {'position': '1', 'title': 'Dune', 'authors': ['Frank Herbert']}
+    context['entries'] = context['unique_entries'] = [entry]
+    if hasattr(core, '_active_add_match_chooser'):
+      del core._active_add_match_chooser
+    with patch.object(list_state, 'ActiveAddMatchDialog') as dialog:
+      request = core.cached_active_match_for_book(
+        1, context, 10.0, object(), force_match_review=True, prepare_only=True)
+    self.assertIsInstance(request, list_state.ActiveAddMatchRequest)
+    self.assertEqual(entry, request.automatic_entry)
+    self.assertTrue(request.initial_show_all)
+    dialog.assert_not_called()
+
+  def test_active_add_batch_previous_preserves_unaccepted_page_draft(self):
+    from dialogs.active_add_match import ActiveAddMatchBatchDialog
+    from unittest.mock import Mock
+
+    dialog = object.__new__(ActiveAddMatchBatchDialog)
+    entry = {'position': '57', 'title': 'Draft match'}
+    dialog.books = [{'book_id': 1}, {'book_id': 2}]
+    dialog.book_number = 1
+    dialog.choices = {}
+    dialog.current_entry = lambda: entry
+    dialog.index_edit = types.SimpleNamespace(text=lambda: '57.5')
+    dialog.show_all_entries = True
+    dialog.load_book = Mock()
+    dialog.previous_book()
+    dialog.load_book.assert_called_once_with(0)
+    self.assertEqual({'entry': entry, 'index': '57.5', 'show_all': True}, dialog.books[1]['draft'])
+    self.assertEqual({}, dialog.choices)
+
+  def test_active_add_batch_next_can_revisit_an_empty_page(self):
+    from dialogs.active_add_match import ActiveAddMatchBatchDialog
+    from unittest.mock import Mock
+
+    dialog = object.__new__(ActiveAddMatchBatchDialog)
+    dialog.books = [{'book_id': 1}, {'book_id': 2}]
+    dialog.book_number = 0
+    dialog.choices = {}
+    dialog.has_pending_choices = False
+    dialog.current_entry = lambda: None
+    dialog.index_edit = types.SimpleNamespace(text=lambda: '358')
+    dialog.show_all_entries = False
+    dialog.load_book = Mock()
+    dialog.next_book()
+    dialog.load_book.assert_called_once_with(1)
+    self.assertEqual({}, dialog.choices)
+    self.assertFalse(dialog.has_pending_choices)
+
+  def test_active_add_batch_next_with_highlighted_match_cancels_without_prompt(self):
+    import dialogs.active_add_match as dialog_module
+    from unittest.mock import Mock
+
+    dialog = object.__new__(dialog_module.ActiveAddMatchBatchDialog)
+    entry = {'position': '141', 'title': 'Rivers of London'}
+    dialog.books = [{'book_id': 1}, {'book_id': 2}]
+    dialog.book_number = 0
+    dialog.choices = {}
+    dialog.has_pending_choices = False
+    dialog.current_entry = lambda: entry
+    dialog.index_edit = types.SimpleNamespace(text=lambda: '141')
+    dialog.show_all_entries = False
+    dialog.load_book = Mock()
+    dialog.next_book()
+    dialog.load_book.assert_called_once_with(1)
+    self.assertEqual({}, dialog.choices)
+    self.assertEqual(entry, dialog.books[0]['draft']['entry'])
+    self.assertFalse(dialog.has_pending_choices)
+    with patch.object(dialog_module, 'question_dialog') as confirm:
+      with patch.object(dialog_module.QDialog, 'reject', create=True) as reject:
+        dialog.reject()
+        reject.assert_called_once_with(dialog)
+    confirm.assert_not_called()
+
+  def test_active_add_batch_match_selected_still_protects_choice_on_cancel(self):
+    import dialogs.active_add_match as dialog_module
+    from unittest.mock import Mock
+
+    dialog = object.__new__(dialog_module.ActiveAddMatchBatchDialog)
+    entry = {'position': '141', 'title': 'Rivers of London'}
+    dialog.books = [{'book_id': 1, 'default_index': 358}, {'book_id': 2}]
+    dialog.book_number = 0
+    dialog.choices = {}
+    dialog.has_pending_choices = False
+    dialog.current_entry = lambda: entry
+    dialog.index_edit = types.SimpleNamespace(text=lambda: '141')
+    dialog.show_all_entries = False
+    dialog.load_book = Mock()
+    dialog.accept()
+    dialog.load_book.assert_called_once_with(1)
+    self.assertEqual({1: (entry, 141.0, True)}, dialog.choices)
+    self.assertTrue(dialog.has_pending_choices)
+    with patch.object(dialog_module, 'question_dialog', return_value=False) as confirm:
+      with patch.object(dialog_module.QDialog, 'reject', create=True) as reject:
+        dialog.reject()
+        reject.assert_not_called()
+    confirm.assert_called_once()
+
+  def test_active_add_batch_next_does_not_replace_an_accepted_choice(self):
+    from dialogs.active_add_match import ActiveAddMatchBatchDialog
+    from unittest.mock import Mock
+
+    dialog = object.__new__(ActiveAddMatchBatchDialog)
+    accepted = {'position': '141', 'title': 'Rivers of London'}
+    draft = {'position': '142', 'title': 'Broken Homes'}
+    dialog.books = [{'book_id': 1}, {'book_id': 2}]
+    dialog.book_number = 0
+    dialog.choices = {1: (accepted, 141.0, True)}
+    dialog.has_pending_choices = True
+    dialog.current_entry = lambda: draft
+    dialog.index_edit = types.SimpleNamespace(text=lambda: '142')
+    dialog.show_all_entries = True
+    dialog.load_book = Mock()
+    dialog.next_book()
+    self.assertEqual({1: (accepted, 141.0, True)}, dialog.choices)
+    self.assertEqual(draft, dialog.books[0]['draft']['entry'])
+    self.assertTrue(dialog.has_pending_choices)
+
+  def test_active_add_batch_finish_requires_all_books_resolved(self):
+    from dialogs.active_add_match import ActiveAddMatchBatchDialog
+
+    dialog = object.__new__(ActiveAddMatchBatchDialog)
+    entry = {'position': '57', 'title': 'Chosen match'}
+    dialog.books = [{'book_id': 1}, {'book_id': 2}]
+    dialog.book_number = 1
+    dialog.choices = {}
+    dialog.current_entry = lambda: entry
+    self.assertFalse(dialog.can_finish())
+    dialog.choices[1] = (entry, 57.0, True)
+    self.assertTrue(dialog.can_finish())
+    dialog.current_entry = lambda: None
+    self.assertFalse(dialog.can_finish())
+    dialog.choices[2] = (entry, 57.0, True)
+    self.assertTrue(dialog.can_finish())
+
+  def test_active_add_cancel_without_pending_choices_does_not_prompt(self):
+    import dialogs.active_add_match as dialog_module
+
+    for entries in ([], [{'position': '57', 'title': 'Preselected row'}]):
+      with self.subTest(entries=entries):
+        dialog = object.__new__(dialog_module.ActiveAddMatchDialog)
+        dialog.has_pending_choices = False
+        dialog.selected_entry = None
+        dialog.visible_entries = entries
+        dialog.index_edit = types.SimpleNamespace(text=lambda: '358')
+        with patch.object(dialog_module, 'question_dialog') as confirm:
+          with patch.object(dialog_module.QDialog, 'reject', create=True) as reject:
+            dialog.reject()
+            reject.assert_called_once_with(dialog)
+        confirm.assert_not_called()
+
+  def test_cached_active_add_chooser_knows_about_prior_staged_books(self):
+    for automatic in (False, True):
+      with self.subTest(automatic=automatic):
+        core, cache, entry, _stored = self._cached_active_add_series_fixture()
+        first_id = 1 if automatic else 40458
+        if automatic:
+          cache['entries'].append({
+            'position': '1', 'title': 'Every Heart a Doorway',
+            'authors': ['Seanan McGuire'],
+          })
+        pending = {}
+
+        def choose(book_id, *_args, **kwargs):
+          pending[book_id] = kwargs.get('has_pending_choices')
+          return entry, 161.0, True
+
+        core._active_add_match_chooser = choose
+        core.cached_active_add_updates('Series List',
+          {first_id: 'Series List', 40459: 'Series List'}, cache)
+        self.assertEqual(
+          {40459: True} if automatic else {40458: False, 40459: True}, pending)
+
   def test_active_add_declining_discard_preserves_earlier_pending_choices(self):
     import dialogs.active_add_match as dialog_module
 
@@ -13024,6 +13320,7 @@ Modern Book of the Month: Neverwhere by Neil Gaiman
       if book_id == 40459:
         self.assertEqual([], stored['matches'])
         dialog = object.__new__(dialog_module.ActiveAddMatchDialog)
+        dialog.has_pending_choices = _kwargs.get('has_pending_choices')
         dialog.selected_entry = entry
         with patch.object(dialog_module, 'question_dialog', return_value=False):
           with patch.object(dialog_module.QDialog, 'reject', create=True) as reject:
@@ -20577,6 +20874,195 @@ class AwardParserSmokeTest(unittest.TestCase):
       ['Andrew Rule', 'John Silvester'],
       parsed['entries'][0]['authors'])
 
+  def test_ned_kelly_wikipedia_finalists_across_decades_and_categories(self):
+    from url_fetcher.ned_kelly import (
+      UrlFetcherNedKellyCrimeFiction,
+      UrlFetcherNedKellyDebutCrimeFiction,
+      UrlFetcherNedKellyInternationalCrimeFiction,
+      UrlFetcherNedKellyTrueCrime,
+    )
+
+    cases = (
+      (UrlFetcherNedKellyCrimeFiction(), 'Best Crime Novel', (2003, 2010, 2024)),
+      (UrlFetcherNedKellyDebutCrimeFiction(), 'Best First Novel', (2010, 2024)),
+      (UrlFetcherNedKellyInternationalCrimeFiction(), 'Best International Crime Novel', (2024,)),
+      (UrlFetcherNedKellyTrueCrime(), 'Best True Crime', (2024,)),
+    )
+    parts = ['<h2>Shortlists</h2>']
+    for fetcher, heading, years in cases:
+      parts.append(f'<div class="mw-heading"><h3>{heading}</h3></div>')
+      for year in years:
+        # Live Wikipedia puts category and decade headings at the same level.
+        parts.append(f'''
+          <div class="mw-heading"><h3>{year // 10 * 10}s</h3></div>
+          <table>
+            <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th><th>Ref.</th></tr>
+            <tr><th rowspan="3">{year}</th><td>Winner Author</td>
+              <td>{heading} winner {year}</td><td>Winner</td><td>[1]</td></tr>
+            <tr><td>First Author</td><td>{heading} finalist one {year}</td>
+              <td rowspan="2">Finalist</td><td rowspan="2">[2]</td></tr>
+            <tr><td>Second Author</td><td>{heading} finalist two {year}</td></tr>
+          </table>
+        ''')
+    parts.append('''
+      <h2>References</h2><table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td>2024</td><td>Wrong Author</td><td>Outside category</td><td>Finalist</td></tr>
+      </table>
+    ''')
+    html = ''.join(parts)
+    for fetcher, heading, years in cases:
+      with self.subTest(recipe=fetcher.source_id):
+        parsed = fetcher.source_attempts()[0].parse(html)
+        expected = []
+        for year in years:
+          expected.extend([
+            (f'{heading} winner {year}', 'winner', str(year)),
+            (f'{heading} finalist one {year}', 'shortlisted', f'{year}.01'),
+            (f'{heading} finalist two {year}', 'shortlisted', f'{year}.02'),
+          ])
+        self.assertEqual(expected, [
+          (row['title'], row['result'], row['position'])
+          for row in parsed['entries']])
+        self.assertTrue(all(
+          row['source']['url'] == fetcher.URL for row in parsed['entries']))
+
+  def test_ned_kelly_wikipedia_rowspanned_ties_and_finalist_boundaries(self):
+    from url_fetcher.ned_kelly import UrlFetcherNedKellyCrimeFiction
+
+    html = '''
+      <table><tr><th>Year</th><th>Best Novel</th></tr>
+        <tr><td>2006</td><td>Crook as Rookwood by Chris Nyst<br>
+          The Broken Shore by Peter Temple</td></tr></table>
+      <h3>Best Crime Novel</h3><h4>2000s</h4>
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th><th>Ref.</th></tr>
+        <tr><th rowspan="4">2006</th><td>Chris Nyst</td><td>Crook as Rookwood</td>
+          <td rowspan="2">Winner</td><td rowspan="2">[1]</td></tr>
+        <tr><td>Peter Temple</td><td>The Broken Shore</td></tr>
+        <tr><td>Marshall Browne</td><td>Rendezvous at Kamakura Inn</td>
+          <td rowspan="2">Finalist</td><td rowspan="2">[2]</td></tr>
+        <tr><td>Peter Corris</td><td>Saving Billie</td></tr>
+        <tr><td>2006</td><td>Other Author</td><td>Same-year longlist</td><td>Longlisted</td></tr>
+        <tr><td>2007</td><td>Unknown Author</td><td>Unlabelled</td><td></td></tr>
+        <tr><td>2008</td><td>Other Author</td><td>Longlist only</td><td>Longlisted</td></tr>
+      </table>
+      <h3>Best Debut Crime Novel</h3><h4>2000s</h4>
+      <table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td>2006</td><td>Wrong Author</td><td>Wrong category</td><td>Finalist</td></tr>
+      </table>
+    '''
+    fetcher = UrlFetcherNedKellyCrimeFiction()
+    entries = fetcher.source_attempts()[0].parse(html)['entries']
+    self.assertEqual([
+      ('Crook as Rookwood', 'winner', '2006'),
+      ('The Broken Shore', 'winner', '2006'),
+      ('Rendezvous at Kamakura Inn', 'shortlisted', '2006.01'),
+      ('Saving Billie', 'shortlisted', '2006.02'),
+    ], [(row['title'], row['result'], row['position']) for row in entries])
+
+  def test_ned_kelly_wikipedia_empty_category_does_not_borrow_next_table(self):
+    from url_fetcher.ned_kelly import UrlFetcherNedKellyCrimeFiction
+
+    fetcher = UrlFetcherNedKellyCrimeFiction()
+    parsed = fetcher.source_attempts()[0].parse('''
+      <h3>Best Crime Novel</h3><p>No shortlist available.</p>
+      <h3>Best Debut Crime Novel</h3><h3>2020s</h3>
+      <table><tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td>2024</td><td>Wrong Author</td><td>Wrong category</td><td>Finalist</td></tr>
+      </table>
+    ''')
+    self.assertEqual([], parsed['entries'])
+
+  def test_ned_kelly_wikipedia_merges_known_summary_winner_variants(self):
+    from url_fetcher.ned_kelly import (
+      UrlFetcherNedKellyDebutCrimeFiction,
+      UrlFetcherNedKellyInternationalCrimeFiction,
+      UrlFetcherNedKellyTrueCrime,
+    )
+
+    html = '''
+      <table><tr><th>Year</th><th>Best First Novel</th><th>Best True Crime</th>
+        <th>Best International Crime</th></tr>
+        <tr><td>2011</td><td></td>
+          <td>Abandoned - The Sad Death of Dianne Brimble by Geesche Jacobsen</td><td></td></tr>
+        <tr><td>2012</td><td></td><td>Sins of the Father: The Untold Story Behind
+          Schapelle Corby's Ill-Fated Drug Run by Eamonn Duff</td><td></td></tr>
+        <tr><td>2021</td><td>The Second Son by Loraine Peck</td>
+          <td>Stalking Claremont by Bret Christian</td>
+          <td>We Begin at the End by Chris Whittaker</td></tr>
+      </table>
+      <h3>Best Debut Crime Novel</h3><table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td>2021</td><td>Lorraine Peck</td><td>The Second Son</td><td>Winner</td></tr>
+        <tr><td></td><td>Finalist Author</td><td>Debut Finalist</td><td>Finalist</td></tr>
+      </table>
+      <h3>Best International Crime Novel</h3><table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td>2021</td><td>Chris Whitaker</td><td>We Begin at the End</td><td>Winner</td></tr>
+        <tr><td></td><td>Another Author</td><td>Another Winner</td><td>Winner</td></tr>
+        <tr><td></td><td>Finalist Author</td><td>International Finalist</td><td>Finalist</td></tr>
+      </table>
+      <h3>Best True Crime</h3><table>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td>2011</td><td>Geesche Jacobson</td>
+          <td>Abandoned: The Sad Death of Dianne Brimble</td><td>Winner</td></tr>
+        <tr><td>2012</td><td>Eamonn Duff</td><td>Sins of the Father</td><td>Winner</td></tr>
+        <tr><td>2021</td><td>Bret Christian</td>
+          <td>Stalking Claremont: Inside the hunt for a serial killer</td><td>Winner</td></tr>
+        <tr><td></td><td>Finalist Author</td><td>True Crime Finalist</td><td>Finalist</td></tr>
+      </table>
+    '''
+    cases = (
+      (UrlFetcherNedKellyDebutCrimeFiction(), ['The Second Son'], 'Debut Finalist'),
+      (UrlFetcherNedKellyInternationalCrimeFiction(),
+        ['We Begin at the End', 'Another Winner'], 'International Finalist'),
+      (UrlFetcherNedKellyTrueCrime(), [
+        'Abandoned - The Sad Death of Dianne Brimble',
+        "Sins of the Father: The Untold Story Behind Schapelle Corby's Ill-Fated Drug Run",
+        'Stalking Claremont',
+      ], 'True Crime Finalist'),
+    )
+    for fetcher, winners, finalist in cases:
+      with self.subTest(recipe=fetcher.source_id):
+        entries = fetcher.source_attempts()[0].parse(html)['entries']
+        self.assertEqual(winners, [row['title'] for row in entries if row['result'] == 'winner'])
+        self.assertEqual([finalist], [row['title'] for row in entries if row['result'] == 'shortlisted'])
+        self.assertTrue(all(
+          row['position'] == row['award_year'] for row in entries if row['result'] == 'winner'))
+    changed = html.replace('Lorraine Peck', 'Different Author')
+    fetcher = UrlFetcherNedKellyDebutCrimeFiction()
+    self.assertEqual(2, sum(
+      row['result'] == 'winner'
+      for row in fetcher.source_attempts()[0].parse(changed)['entries']))
+    changed_summary = html.replace('Loraine Peck', 'Other Summary Author')
+    self.assertEqual(2, sum(
+      row['result'] == 'winner'
+      for row in fetcher.source_attempts()[0].parse(changed_summary)['entries']))
+
+  def test_ned_kelly_librarything_accepts_all_finalist_stage_labels(self):
+    from url_fetcher.ned_kelly import UrlFetcherNedKellyCrimeFiction
+
+    fetcher = UrlFetcherNedKellyCrimeFiction()
+    for stage in ('Nominee', 'Finalist', 'Shortlist'):
+      with self.subTest(stage=stage):
+        parsed = fetcher.source_attempts()[1].parse(f'''
+          <h2>Winner 1</h2><table><tr><th>Work</th><th>Category</th><th>Year</th></tr>
+            <tr><td>Winner Book by Winner Author</td><td>Fiction</td><td>2003</td></tr>
+          </table>
+          <h2>{stage} 3</h2><div><table>
+            <tr><th>Work</th><th>Category</th><th>Year</th></tr>
+            <tr><td>Winner Book by Winner Author</td><td>Fiction</td><td>2003</td></tr>
+            <tr><td>Finalist Book by Finalist Author</td><td>Fiction</td><td>2003</td></tr>
+            <tr><td>Wrong Book by Wrong Author</td><td>First Fiction</td><td>2003</td></tr>
+          </table></div>
+        ''')
+        self.assertEqual([
+          ('Winner Book', 'winner', '2003'),
+          ('Finalist Book', 'nominee', '2003.01'),
+        ], [(row['title'], row['result'], row['position']) for row in parsed['entries']])
+
   def test_ned_kelly_fetcher_uses_wikipedia_before_librarything(self):
     from url_fetcher.ned_kelly import (
       NED_KELLY_URL,
@@ -20896,6 +21382,358 @@ class AwardParserSmokeTest(unittest.TestCase):
     self.assertEqual(['winner', 'shortlisted', 'shortlisted'], [
       entry['result'] for entry in parsed['entries']
     ])
+
+  def test_national_book_award_wikipedia_inherits_year_without_shifting_columns(self):
+    from parser.national_book_award import NationalBookAwardWikipediaParser
+
+    parsed = NationalBookAwardWikipediaParser().parse('''
+      <table class="wikitable">
+        <caption>Fiction winners and finalists</caption>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th><th>Ref.</th></tr>
+        <tr><th rowspan="2">1950</th><td>Nelson Algren</td>
+          <td>The Man with the Golden Arm</td><td>Winner</td><td>[1]</td></tr>
+        <tr><td colspan="3">No runners up were recognized.</td><td>[2]</td></tr>
+        <tr><th rowspan="2">1951</th><td>William Faulkner</td>
+          <td>Collected Stories of William Faulkner</td><td>Winner</td><td>[3]</td></tr>
+        <tr><td>Brendan Gill</td><td>The Trouble of One House</td><td>Finalist</td><td></td></tr>
+      </table>''', 'https://en.wikipedia.org/wiki/National_Book_Award_for_Fiction',
+      'National Book Award - Fiction', 'Fiction')
+
+    self.assertEqual([
+      ('1950', 'The Man with the Golden Arm', 'Nelson Algren', 'winner'),
+      ('1951', 'Collected Stories of William Faulkner', 'William Faulkner', 'winner'),
+      ('1951.01', 'The Trouble of One House', 'Brendan Gill', 'nominee'),
+    ], [(e['position'], e['title'], entry_author(e), e['result']) for e in parsed['entries']])
+
+  def test_national_book_award_wikipedia_inherits_tied_winner_result(self):
+    from parser.national_book_award import NationalBookAwardWikipediaParser
+
+    parsed = NationalBookAwardWikipediaParser().parse('''
+      <table><tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th><th>Ref.</th></tr>
+        <tr><th rowspan="3">1973</th><td>John Barth</td><td>Chimera</td>
+          <td rowspan="2">Winner</td><td>[1]</td></tr>
+        <tr><td>John Williams</td><td>Augustus</td><td>[2]</td></tr>
+        <tr><td>Brock Brower</td><td>The Late Great Creature</td><td>Finalist</td><td></td></tr>
+      </table>''', 'https://en.wikipedia.org/wiki/National_Book_Award_for_Fiction', 'NBA', 'Fiction')
+    self.assertEqual([
+      ('1973', 'Chimera', 'John Barth', 'winner'),
+      ('1973', 'Augustus', 'John Williams', 'winner'),
+      ('1973.01', 'The Late Great Creature', 'Brock Brower', 'nominee'),
+    ], [(e['position'], e['title'], entry_author(e), e['result']) for e in parsed['entries']])
+
+  def test_national_book_award_wikipedia_inherits_hardcover_and_paperback(self):
+    from parser.national_book_award import NationalBookAwardWikipediaParser
+
+    parsed = NationalBookAwardWikipediaParser().parse('''
+      <table><tr><th>Year</th><th>Format</th><th>Author</th><th>Title</th><th>Result</th><th>Ref.</th></tr>
+        <tr><th rowspan="4">1980</th><th rowspan="2">Hardcover</th>
+          <td>William Styron</td><td>Sophie's Choice</td><td>Winner</td><td>[1]</td></tr>
+        <tr><td>James Baldwin</td><td>Just Above My Head</td><td>Finalist</td><td></td></tr>
+        <tr><th rowspan="2">Paperback</th><td>John Irving</td>
+          <td>The World According to Garp</td><td>Winner</td><td>[2]</td></tr>
+        <tr><td>Paul Bowles</td><td>Collected Stories</td><td>Finalist</td><td></td></tr>
+      </table>''', 'https://en.wikipedia.org/wiki/National_Book_Award_for_Fiction', 'NBA', 'Fiction')
+    self.assertEqual([
+      ('1980', "Sophie's Choice", 'William Styron', 'winner'),
+      ('1980', 'The World According to Garp', 'John Irving', 'winner'),
+      ('1980.01', 'Just Above My Head', 'James Baldwin', 'nominee'),
+      ('1980.02', 'Collected Stories', 'Paul Bowles', 'nominee'),
+    ], [(e['position'], e['title'], entry_author(e), e['result']) for e in parsed['entries']])
+
+  def test_national_book_award_wikipedia_inherits_finalist_and_reference_cells(self):
+    from parser.national_book_award import NationalBookAwardWikipediaParser
+
+    parsed = NationalBookAwardWikipediaParser().parse('''
+      <table><tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th><th>Ref.</th></tr>
+        <tr><th rowspan="4">1969</th><td>Meindert DeJong</td><td>Journey from Peppermint Street</td>
+          <td>Winner</td><td>[1]</td></tr>
+        <tr><td>Lloyd Alexander</td><td>The High King</td>
+          <td rowspan="3">Finalist</td><td rowspan="3">[2]</td></tr>
+        <tr><td>Patricia Clapp</td><td>Constance: A Story of Early Plymouth</td></tr>
+        <tr><td>Esther Hautzig</td><td>The Endless Steppe</td></tr>
+      </table>''', 'https://en.wikipedia.org/wiki/National_Book_Award_for_Young_People%27s_Literature',
+      'NBA', "Young People's Literature")
+    self.assertEqual([
+      ('1969', 'Journey from Peppermint Street', 'Meindert DeJong', 'winner'),
+      ('1969.01', 'The High King', 'Lloyd Alexander', 'nominee'),
+      ('1969.02', 'Constance: A Story of Early Plymouth', 'Patricia Clapp', 'nominee'),
+      ('1969.03', 'The Endless Steppe', 'Esther Hautzig', 'nominee'),
+    ], [(e['position'], e['title'], entry_author(e), e['result']) for e in parsed['entries']])
+
+  def test_national_book_award_wikipedia_decodes_utf8_bytes_before_parsing(self):
+    from parser.national_book_award import NationalBookAwardWikipediaParser
+
+    source_url = 'https://en.wikipedia.org/wiki/National_Book_Award_for_Fiction'
+    html = '''<table><tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+      <tr><td>1969</td><td>Jerzy Kosi\u0144ski<sup>[1]</sup></td>
+      <td><a href="/wiki/Steps_(book)">Steps</a></td><td>Winner</td></tr></table>'''
+    parsed = NationalBookAwardWikipediaParser().parse(html.encode('utf-8'), source_url, 'NBA', 'Fiction')
+    self.assertEqual('Jerzy Kosi\u0144ski', entry_author(parsed['entries'][0]))
+    self.assertEqual(source_url, parsed['entries'][0]['source']['url'])
+
+  def test_national_book_award_wikipedia_skips_nonbook_rows_and_longlists(self):
+    from parser.national_book_award import NationalBookAwardWikipediaParser
+
+    parsed = NationalBookAwardWikipediaParser().parse('''
+      <table><tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td rowspan="3">2024</td><td>Winner Author</td><td>Winner Book</td><td>Winner</td></tr>
+        <tr><td>Other Author</td><td>Longlisted Book</td><td>Longlist</td></tr>
+        <tr><td colspan="3">No other finalists recognized.</td></tr>
+      </table>''', 'https://en.wikipedia.org/wiki/National_Book_Award_for_Fiction', 'NBA', 'Fiction')
+    self.assertEqual(['Winner Book'], [e['title'] for e in parsed['entries']])
+
+  def test_national_book_award_nonfiction_uses_nearest_historical_category(self):
+    from parser.national_book_award import NationalBookAwardWikipediaParser
+
+    parsed = NationalBookAwardWikipediaParser().parse('''
+      <h2>Recipients</h2><h3>1960s</h3><h4>1964-1969</h4>
+      <div class="mw-heading"><h5>History and Biography</h5></div>
+      <table><tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td>1964</td><td>William H. McNeill</td><td>The Rise of the West</td><td>Winner</td></tr>
+      </table>
+      <h5>Science, Philosophy and Religion</h5>
+      <table><caption>National Book Awards: Nonfiction books, Science, Philosophy and Religion, 1964-1969</caption>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td rowspan="2">1964</td><td>Christopher Tunnard and Boris Pushkarev</td>
+          <td>Man-made America</td><td>Winner</td></tr>
+        <tr><td>Nathan Glazer and Daniel Patrick Moynihan</td>
+          <td>Beyond the Melting Pot</td><td>Finalist</td></tr>
+      </table>
+      <h3>1990s</h3>
+      <table><caption>National Book Award for Nonfiction winners and finalists, 1990-1999</caption>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td>1990</td><td>Ron Chernow</td><td>The House of Morgan</td><td>Winner</td></tr>
+      </table>''', 'https://en.wikipedia.org/wiki/National_Book_Award_for_Nonfiction', 'NBA', 'Nonfiction')
+    entries = {e['title']: e for e in parsed['entries']}
+    self.assertEqual('History and Biography', entries['The Rise of the West']['category'])
+    self.assertEqual('Science, Philosophy and Religion', entries['Beyond the Melting Pot']['category'])
+    self.assertEqual(['Nathan Glazer', 'Daniel Patrick Moynihan'], entries['Beyond the Melting Pot']['authors'])
+    self.assertEqual('nominee', entries['Beyond the Melting Pot']['result'])
+    self.assertEqual('Nonfiction', entries['The House of Morgan']['category'])
+
+  def test_national_book_award_nonfiction_keeps_row_categories_and_format_groups(self):
+    from parser.national_book_award import NationalBookAwardWikipediaParser
+
+    parsed = NationalBookAwardWikipediaParser().parse('''
+      <h2>Recipients</h2><h3>1970s</h3><h4>History, biography, and Autobiography</h4>
+      <table><caption>History and Biography winners and finalists</caption>
+        <tr><th>Year</th><th>Category</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td rowspan="3">1971</td><td rowspan="2">History</td>
+          <td>Author One</td><td>History Winner</td><td>Winner</td></tr>
+        <tr><td>Author Two</td><td>History Finalist</td><td>Finalist</td></tr>
+        <tr><td>Biography and Autobiography</td><td>Author Three</td><td>Biography Winner</td><td>Winner</td></tr>
+      </table>
+      <h3>1980s</h3><h5>History</h5>
+      <table><tr><th>Year</th><th>Category</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td rowspan="2">1980</td><td>Hardcover</td><td>Author Four</td><td>Hardcover Winner</td><td>Winner</td></tr>
+        <tr><td>Paperback</td><td>Author Five</td><td>Paperback Winner</td><td>Winner</td></tr>
+      </table>''', 'https://en.wikipedia.org/wiki/National_Book_Award_for_Nonfiction', 'NBA', 'Nonfiction')
+    entries = {e['title']: e for e in parsed['entries']}
+    for title in ('History Winner', 'History Finalist', 'Hardcover Winner', 'Paperback Winner'):
+      self.assertEqual('History', entries[title]['category'])
+    self.assertEqual('Biography and Autobiography', entries['Biography Winner']['category'])
+    self.assertEqual('1980', entries['Paperback Winner']['position'])
+
+  def test_national_book_award_official_preserves_structured_coauthors_and_suffixes(self):
+    from parser.national_book_award import NationalBookAwardParser
+
+    for credit, expected in (
+        ('<div>Nathan Glazer,</div><div>Daniel P. Moynihan</div>', ['Nathan Glazer', 'Daniel P. Moynihan']),
+        ('<div>Nathan Glazer</div><div>Daniel P. Moynihan</div>', ['Nathan Glazer', 'Daniel P. Moynihan']),
+        ('<div>Walter M. Miller, Jr.,</div><div>Other Writer</div>', ['Walter M. Miller, Jr.', 'Other Writer']),
+        ('Walter M. Miller, Jr., and Other Writer', ['Walter M. Miller, Jr.', 'Other Writer']),
+        ('<div>Writer One (editor),</div><div>Writer Two (editor)</div>', ['Writer One', 'Writer Two']),
+        ('Organization A && B', ['Organization A & B']),
+    ):
+      with self.subTest(credit=credit):
+        html = '<div class="finalists-wrapper"><figure class="winner-list">'\
+          '<h1><a href="/books/beyond-the-melting-pot/">Beyond the Melting Pot</a></h1>'\
+          f'<h2>{credit}</h2></figure></div>'
+        parsed = NationalBookAwardParser().parse(html,
+          'https://www.nationalbook.org/awards-prizes/national-book-awards-1964/?cat=nonfiction',
+          'NBA', 'Nonfiction')
+        self.assertEqual(expected, parsed['entries'][0]['authors'])
+        self.assertEqual('Nonfiction', parsed['entries'][0]['category'])
+
+  def test_national_book_award_wikipedia_preserves_comma_coauthors_and_suffixes(self):
+    from parser.national_book_award import NationalBookAwardWikipediaParser
+
+    parsed = NationalBookAwardWikipediaParser().parse('''
+      <table><tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td>1980</td><td>Walter M. Miller, Jr., Other Writer, and Third Writer</td>
+          <td>Shared Book</td><td>Winner</td></tr>
+      </table>''', 'https://en.wikipedia.org/wiki/National_Book_Award_for_Nonfiction', 'NBA', 'Nonfiction')
+    self.assertEqual(['Walter M. Miller, Jr.', 'Other Writer', 'Third Writer'], parsed['entries'][0]['authors'])
+
+  def test_national_book_award_young_people_keeps_historical_and_modern_categories(self):
+    from parser.national_book_award import NationalBookAwardWikipediaParser
+
+    parsed = NationalBookAwardWikipediaParser().parse('''
+      <h2>Recipients</h2>
+      <table><caption>Children's Books winners and finalists, 1969 to 1979</caption>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td>1969</td><td>Meindert DeJong</td><td>Journey from Peppermint Street</td><td>Winner</td></tr>
+      </table>
+      <table><caption>Young People's Literature, 1996 to date</caption>
+        <tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td>1996</td><td>Victor Martinez</td><td>Parrot in the Oven, Mi Vida</td><td>Winner</td></tr>
+      </table>''', 'https://en.wikipedia.org/wiki/National_Book_Award_for_Young_People%27s_Literature',
+      'NBA', "Young People's Literature")
+    self.assertEqual(["Children's Books", "Young People's Literature"],
+      [e['category'] for e in parsed['entries']])
+
+  def test_national_book_award_young_people_inherits_category_and_finalist_cells(self):
+    from parser.national_book_award import NationalBookAwardWikipediaParser
+
+    parsed = NationalBookAwardWikipediaParser().parse('''
+      <h2>Recipients</h2>
+      <table><caption>Children's Books winners and finalists, 1980 to 1983</caption>
+        <tr><th>Year</th><th>Category</th><th>Author</th><th>Title</th><th>Result</th><th>Ref.</th></tr>
+        <tr><td rowspan="7">1982</td><td rowspan="3">Fiction, hardcover</td>
+          <td>Winner One</td><td>Fiction Winner</td><td>Winner</td><td></td></tr>
+        <tr><td>Finalist One</td><td>First Finalist</td><td rowspan="2">Finalist</td><td rowspan="2">[1]</td></tr>
+        <tr><td>Finalist Two</td><td>Second Finalist</td></tr>
+        <tr><td>Fiction, paperback</td><td>Winner Two</td><td>Paperback Winner</td><td>Winner</td><td></td></tr>
+        <tr><td>Non-fiction</td><td>Winner Three</td><td>Nonfiction Winner</td><td>Winner</td><td></td></tr>
+        <tr><td>Picture books, hardcover</td><td>Nancy Willard with Alice and Martin Provensen</td>
+          <td>A Visit to William Blake's Inn</td><td>Winner</td><td></td></tr>
+        <tr><td>Picture books, paper</td><td>Winner Four</td><td>Paperback Picture Book</td><td>Winner</td><td></td></tr>
+      </table>''', 'https://en.wikipedia.org/wiki/National_Book_Award_for_Young_People%27s_Literature',
+      'NBA', "Young People's Literature")
+    entries = {e['title']: e for e in parsed['entries']}
+    self.assertEqual(7, len(entries))
+    for title in ('Fiction Winner', 'First Finalist', 'Second Finalist', 'Paperback Winner'):
+      self.assertEqual('Fiction', entries[title]['category'])
+    self.assertEqual('nominee', entries['Second Finalist']['result'])
+    self.assertEqual('Nonfiction', entries['Nonfiction Winner']['category'])
+    self.assertEqual('Picture Books', entries["A Visit to William Blake's Inn"]['category'])
+    self.assertEqual('Picture Books', entries['Paperback Picture Book']['category'])
+    self.assertEqual(['Nancy Willard', 'Alice Provensen', 'Martin Provensen'],
+      entries["A Visit to William Blake's Inn"]['authors'])
+    self.assertTrue(all(e['position'] == '1982' for e in entries.values() if e['result'] == 'winner'))
+
+  def test_national_book_award_wikipedia_separates_title_notes_from_title_parentheses(self):
+    from parser.national_book_award import NationalBookAwardWikipediaParser
+
+    parsed = NationalBookAwardWikipediaParser().parse('''
+      <table><tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>
+        <tr><td rowspan="5">1983</td><td>Writer One</td><td><i>Me (Moth)</i></td><td>Winner</td></tr>
+        <tr><td>Writer Two</td><td><i>Shadow</i> (translation of a poem by <a>Blaise Cendrars</a>)</td><td>Finalist</td></tr>
+        <tr><td>Writer Three</td><td><i>Darwin to DNA</i> (new)</td><td>Finalist</td></tr>
+        <tr><td>Writer Four</td><td><span><i>Harlem Stomp!</i></span> (about the Harlem Renaissance)</td><td>Finalist</td></tr>
+        <tr><td>Writer Five</td><td><i>Miss MacIntosh, My Darling,</i> Volumes 1 and 2</td><td>Finalist</td></tr>
+      </table>''', 'https://en.wikipedia.org/wiki/National_Book_Award_for_Young_People%27s_Literature',
+      'NBA', "Young People's Literature")
+    self.assertEqual(['Me (Moth)', 'Shadow', 'Darwin to DNA', 'Harlem Stomp!',
+      'Miss MacIntosh, My Darling, Volumes 1 and 2'], [e['title'] for e in parsed['entries']])
+
+  def test_national_book_award_shared_surname_credits_keep_complete_names(self):
+    from parser.national_book_award import NationalBookAwardParser, NationalBookAwardWikipediaParser
+    from parser.base import author_list
+
+    for parser in (NationalBookAwardParser(), NationalBookAwardWikipediaParser()):
+      for credit, expected in (
+          ('Vera and Bill Cleaver', ['Vera Cleaver', 'Bill Cleaver']),
+          ("Ingri and Edgar Parin d'Aulaire", ["Ingri d'Aulaire", "Edgar Parin d'Aulaire"]),
+          ('Nancy Willard with Alice and Martin Provensen', ['Nancy Willard', 'Alice Provensen', 'Martin Provensen']),
+          ('Walter M. Miller, Jr., and Other Writer', ['Walter M. Miller, Jr.', 'Other Writer']),
+      ):
+        with self.subTest(parser=type(parser).__name__, credit=credit):
+          self.assertEqual(expected, author_list(parser.clean_author(credit)))
+
+  def test_national_book_award_official_joint_author_divs_keep_complete_names(self):
+    from parser.national_book_award import NationalBookAwardParser
+
+    parsed = NationalBookAwardParser().parse('''
+      <div class="finalists-wrapper"><figure class="winner-list">
+        <h1><a href="/books/a-visit-to-william-blakes-inn/">A Visit to William Blake's Inn</a></h1>
+        <h2><div>Nancy Willard,</div><div>Alice and Martin Provensen</div></h2>
+      </figure></div>''', 'https://www.nationalbook.org/awards-prizes/national-book-awards-1982/?cat=ypl',
+      'NBA', "Young People's Literature")
+    self.assertEqual(['Nancy Willard', 'Alice Provensen', 'Martin Provensen'], parsed['entries'][0]['authors'])
+
+  def test_national_book_award_official_rejects_silently_selected_other_category(self):
+    from parser.national_book_award import NationalBookAwardParser
+
+    html = '''<a class="category-winner is-active" href="?cat=fiction">Fiction</a>
+      <div class="winner-book"><div class="winner-book-item"><div class="book-data">
+        <h1><a href="/books/chimera/">Chimera</a></h1><h2>John Barth</h2>
+      </div></div></div>'''
+    for category in ('Nonfiction', "Young People's Literature"):
+      with self.subTest(category=category), self.assertRaisesRegex(ValueError, 'selected Fiction'):
+        NationalBookAwardParser().parse(html,
+          'https://www.nationalbook.org/awards-prizes/national-book-awards-1973/?cat=nonfiction',
+          'NBA', category)
+
+  def test_national_book_award_official_accepts_correct_and_historical_child_tabs(self):
+    from parser.national_book_award import NationalBookAwardParser
+
+    for label, category in (('Fiction', 'Fiction'), ('Nonfiction', 'Nonfiction'),
+        ("Young People's Literature", "Young People's Literature"),
+        ("Children's Books", "Young People's Literature"),
+        ("Children's Literature", "Young People's Literature")):
+      with self.subTest(label=label):
+        html = f'<a class="category-winner is-active">{label}</a>'\
+          '<div class="winner-book"><div class="winner-book-item"><div class="book-data">'\
+          '<h1><a href="/books/book/">Right Book</a></h1><h2>Right Author</h2></div></div></div>'
+        parsed = NationalBookAwardParser().parse(html,
+          'https://www.nationalbook.org/awards-prizes/national-book-awards-1973/', 'NBA', category)
+        self.assertEqual(['Right Book'], [e['title'] for e in parsed['entries']])
+
+  def test_national_book_award_wrong_official_category_uses_wikipedia_fallback(self):
+    from url_fetcher.generic import UrlFetcherError
+    from url_fetcher.national_book_award import (
+      UrlFetcherNationalBookAwardFiction, UrlFetcherNationalBookAwardNonfiction,
+      UrlFetcherNationalBookAwardYoungPeoplesLiterature,
+    )
+
+    for cls, selected in ((UrlFetcherNationalBookAwardFiction, 'Autobiography/Biography - Hardcover'),
+        (UrlFetcherNationalBookAwardNonfiction, 'Fiction'),
+        (UrlFetcherNationalBookAwardYoungPeoplesLiterature, 'Fiction')):
+      with self.subTest(recipe=cls.__name__):
+        recipe = cls()
+        calls = []
+        def fetch(url):
+          calls.append(url)
+          if url == recipe.URL:
+            return '<a href="https://www.nationalbook.org/awards-prizes/national-book-awards-1973/">1973</a>'
+          if url == recipe.WIKIPEDIA_URL:
+            return '<table><tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th></tr>'\
+              '<tr><td>1973</td><td>Right Author</td><td>Right Book</td><td>Winner</td></tr></table>'
+          return f'<a class="category-winner is-active">{selected}</a>'\
+            '<div class="winner-book"><div class="winner-book-item"><div class="book-data">'\
+            '<h1><a href="/books/chimera/">Chimera</a></h1><h2>John Barth</h2></div></div></div>'
+        parsed = recipe.fetch_and_parse(fetch)
+        self.assertEqual(['Right Book'], [e['title'] for e in parsed['entries']])
+        self.assertEqual(recipe.WIKIPEDIA_URL, calls[-1])
+        self.assertTrue(any(f'selected {selected}' in note for note in parsed['notes']))
+        with self.assertRaisesRegex(UrlFetcherError, 'page selected'):
+          recipe.fetch_and_parse(fetch, source_choice=0)
+
+  def test_national_book_award_wikipedia_choice_uses_correct_columns_for_all_recipes(self):
+    from url_fetcher.national_book_award import (
+      UrlFetcherNationalBookAwardFiction, UrlFetcherNationalBookAwardNonfiction,
+      UrlFetcherNationalBookAwardYoungPeoplesLiterature,
+    )
+
+    html = '''<table><tr><th>Year</th><th>Author</th><th>Title</th><th>Result</th><th>Ref.</th></tr>
+      <tr><td rowspan="2">2024</td><td>Winner Author</td><td>Winner Book</td><td>Winner</td><td>[1]</td></tr>
+      <tr><td>Finalist Author</td><td>Finalist Book</td><td>Finalist</td><td></td></tr></table>'''
+    for cls in (UrlFetcherNationalBookAwardFiction, UrlFetcherNationalBookAwardNonfiction,
+        UrlFetcherNationalBookAwardYoungPeoplesLiterature):
+      with self.subTest(recipe=cls.__name__):
+        recipe = cls()
+        calls = []
+        def fetch(url):
+          calls.append(url)
+          return html
+        parsed = recipe.fetch_and_parse(fetch, source_choice=1)
+        self.assertEqual([recipe.WIKIPEDIA_URL], calls)
+        self.assertEqual([
+          ('2024', 'Winner Book', 'Winner Author', 'winner'),
+          ('2024.01', 'Finalist Book', 'Finalist Author', 'nominee'),
+        ], [(e['position'], e['title'], entry_author(e), e['result']) for e in parsed['entries']])
+        self.assertTrue(all(e['category'] == recipe.CATEGORY for e in parsed['entries']))
 
   def test_booker_wikipedia_parser_reads_award_and_rowspanned_cells(self):
     from parser.booker import BookerPrizeWikipediaParser
@@ -28461,7 +29299,7 @@ class CamoufoxPilotTest(unittest.TestCase):
     self.assertTrue(main.prefs['camoufox_first_use_confirmed'])
 
   def test_failed_camoufox_trips_import_circuit_breaker(self):
-    from camoufox_transport import CamoufoxFetchError
+    from transport.camoufox import CamoufoxFetchError
     self.capability()
     with patch.object(main, 'CamoufoxTransport') as factory:
       factory.return_value.fetch.side_effect = CamoufoxFetchError('startup failed')
@@ -28473,7 +29311,7 @@ class CamoufoxPilotTest(unittest.TestCase):
       factory.return_value.close.assert_called_once()
 
   def test_stage_one_failure_allows_legacy_recovery(self):
-    from camoufox_transport import CamoufoxFetchError
+    from transport.camoufox import CamoufoxFetchError
     from url_fetcher.librarything_fallback import LibraryThingFetchPolicyMixin
     self.capability()
     main.prefs['debug_browser_fallback_level'] = 1
@@ -28491,7 +29329,7 @@ class CamoufoxPilotTest(unittest.TestCase):
       factory.return_value.close.assert_called_once()
 
   def test_policy_uses_camoufox_first_then_retries_old_challenges(self):
-    from camoufox_transport import CamoufoxFetchError
+    from transport.camoufox import CamoufoxFetchError
     from url_fetcher.librarything_fallback import LibraryThingFetchPolicyMixin
     policy = LibraryThingFetchPolicyMixin()
     policy.random_librarything_user_agent = lambda: 'Generated Agent'
@@ -28553,7 +29391,7 @@ class CamoufoxPilotTest(unittest.TestCase):
       self.assertIsNone(self.core.camoufox_transport)
 
   def test_pilot_recipes_parse_rendered_html_and_preserve_source(self):
-    from camoufox_transport import CamoufoxTransport
+    from transport.camoufox import CamoufoxTransport
     from _dev_tools.test_camoufox_transport import FakeBrowser, FakeResponse
     from url_fetcher.strand import UrlFetcherStrandMysteryNovel
     from url_fetcher.davitt import UrlFetcherDavittAdultNovel
@@ -28581,7 +29419,7 @@ class CamoufoxPilotTest(unittest.TestCase):
         self.assertEqual(1, browser.shutdown_calls)
 
   def test_camoufox_wait_keeps_progress_steady_on_success_failure_and_cancellation(self):
-    from camoufox_transport import CamoufoxFetchError
+    from transport.camoufox import CamoufoxFetchError
     from unittest.mock import Mock
     self.capability()
     for error in (None, CamoufoxFetchError('failed'), main.ImportCancelledError('cancelled')):
@@ -28748,7 +29586,9 @@ class CamoufoxPilotTest(unittest.TestCase):
     self.core.fetch_url = Mock(side_effect=RuntimeError('offline'))
     parsed = self.core.load_or_fetch_recipe(recipe)
     self.assertEqual(cache['entries'], parsed['entries'])
-    self.core.should_fallback_to_cached_import.assert_called_once_with(recipe, cache)
+    self.core.should_fallback_to_cached_import.assert_called_once()
+    self.assertEqual((recipe, cache), self.core.should_fallback_to_cached_import.call_args.args[:2])
+    self.assertIn('offline', str(self.core.should_fallback_to_cached_import.call_args.args[2]))
 
   def test_first_use_consent_is_shared_between_sites_at_stage_one(self):
     self.capability()
@@ -29081,37 +29921,171 @@ class PulitzerCamoufoxTest(unittest.TestCase):
         self.assertIn('Camoufox:', parsed['notes'][0])
         self.assertIn('legacy:', parsed['notes'][0])
 
-  def test_selected_replacement_sources_and_source_levels_never_request_browser(self):
+  def test_selected_wikipedia_and_source_level_never_request_browser(self):
     for recipe in self.recipes():
-      for selected in (1, 2):
+      calls = []
+
+      def fetch(url, **kwargs):
+        self.assertNotIn('transport', kwargs)
+        calls.append(url)
+        return self.wikipedia_html()
+
+      for options in ({'source_choice': 1}, {'force_fallback_level': 1}):
+        calls.clear()
+        with self.subTest(category=recipe.CATEGORY, options=options):
+          parsed = recipe.fetch_and_parse(fetch, **options)
+          self.assertEqual([recipe.WIKIPEDIA_URL], calls)
+
+  def test_selected_britannica_uses_camoufox_without_requesting_other_sources(self):
+    for recipe in self.recipes():
+      for options in ({'source_choice': 2}, {'force_fallback_level': 2}):
         calls = []
 
         def fetch(url, **kwargs):
-          self.assertNotIn('transport', kwargs)
-          calls.append(url)
-          return self.wikipedia_html() if selected == 1 else self.britannica_html(recipe)
+          calls.append((url, kwargs))
+          return self.britannica_html(recipe)
 
-        for options in ({'source_choice': selected}, {'force_fallback_level': selected}):
-          calls.clear()
-          with self.subTest(category=recipe.CATEGORY, options=options):
-            parsed = recipe.fetch_and_parse(fetch, **options)
-            self.assertEqual([recipe.WIKIPEDIA_URL if selected == 1 else recipe.BRITANNICA_URL], calls)
-            if selected == 2:
-              self.assertTrue(all(e['result'] == 'winner' for e in parsed['entries']))
-              self.assertTrue(any('winner-only' in note for note in parsed['notes']))
+        with self.subTest(category=recipe.CATEGORY, options=options):
+          parsed = recipe.fetch_and_parse(fetch, **options)
+          self.assertEqual([(recipe.BRITANNICA_URL, {'transport': 'camoufox'})], calls)
+          self.assertEqual(recipe.BRITANNICA_URL, parsed['source']['url'])
+          self.assertEqual(['Britannica Winner'], [e['title'] for e in parsed['entries']])
+          self.assertEqual(['winner'], [e['result'] for e in parsed['entries']])
+          self.assertEqual(['Britannica fallback is winner-only; finalists are not available.'], parsed['notes'])
+
+  def test_britannica_retries_same_url_after_failed_or_empty_browser_parse(self):
+    from errors import CamoufoxFetchError
+    for recipe in self.recipes():
+      for payload in (CamoufoxFetchError('browser unavailable'), '',
+          '<html><title>Just a moment...</title><body>Cloudflare</body></html>'):
+        calls = []
+
+        def fetch(url, **kwargs):
+          calls.append((url, kwargs))
+          if kwargs.get('transport'):
+            if isinstance(payload, Exception):
+              raise payload
+            return payload
+          return self.britannica_html(recipe)
+
+        with self.subTest(category=recipe.CATEGORY, payload=repr(payload)):
+          parsed = recipe.fetch_and_parse(fetch, source_choice=2)
+          self.assertEqual([(recipe.BRITANNICA_URL, {'transport': 'camoufox'}),
+            (recipe.BRITANNICA_URL, {})], calls)
+          self.assertEqual(1, len(parsed['notes']))
+          self.assertIn('winner-only', parsed['notes'][0])
+
+  def test_britannica_shared_browser_stages_and_legacy_callback(self):
+    for recipe in self.recipes():
+      for stage in (0, 1, 2):
+        self.core._camoufox_disabled_reason = ''
+        main.prefs['debug_browser_fallback_level'] = stage
+        original = self.core.fetch_url
+        legacy_calls = []
+
+        def fetch(url, **kwargs):
+          if kwargs.get('transport'):
+            return original(url, **kwargs)
+          legacy_calls.append(url)
+          return self.britannica_html(recipe)
+
+        with self.subTest(category=recipe.CATEGORY, stage=stage), patch.object(
+            main, 'camoufox_capability', return_value=(True, (9, 18, 0), 'API')) as capability:
+          with patch.object(main, 'CamoufoxTransport') as factory:
+            factory.return_value.fetch.return_value = self.britannica_html(recipe)
+            parsed = recipe.fetch_and_parse(fetch, source_choice=2)
+            self.assertEqual(1, len(parsed['entries']))
+            if stage == 2:
+              capability.assert_not_called()
+              factory.assert_not_called()
+              self.assertEqual([recipe.BRITANNICA_URL], legacy_calls)
+            else:
+              factory.return_value.fetch.assert_called_once()
+              self.assertEqual([], legacy_calls)
+              self.assertEqual('Britannica', factory.call_args.kwargs['source_name'])
+              self.assertEqual(('britannica.com', 'goodreads.com'),
+                factory.call_args.kwargs['warmup_excluded_domains'])
+              self.assertFalse(factory.call_args.kwargs['check_challenges'])
+        self.core.close_camoufox_transport()
+      calls = []
+
+      def old_fetch(url):
+        calls.append(url)
+        return self.britannica_html(recipe)
+
+      self.assertTrue(recipe.fetch_and_parse(old_fetch, source_choice=2)['entries'])
+      self.assertEqual([recipe.BRITANNICA_URL], calls)
+
+  def test_britannica_cancellation_stops_transport_retry(self):
+    for recipe in self.recipes():
+      for phase in ('fetch', 'before_fetch', 'after_fetch', 'before_parse', 'progress'):
+        calls = []
+
+        def cancel(*args):
+          raise main.ImportCancelledError('cancelled')
+
+        def fetch(url, **kwargs):
+          calls.append((url, kwargs))
+          if phase == 'fetch':
+            cancel()
+          return self.britannica_html(recipe)
+
+        options = {phase: cancel} if phase != 'fetch' else {}
+        with self.subTest(category=recipe.CATEGORY, phase=phase), self.assertRaises(main.ImportCancelledError):
+          recipe.fetch_and_parse(fetch, source_choice=2, **options)
+        self.assertLessEqual(len(calls), 1)
 
   def test_all_earlier_sources_fail_before_britannica(self):
     for recipe in self.recipes():
       calls = []
 
       def fetch(url, **kwargs):
-        calls.append(url)
+        calls.append((url, kwargs))
         return self.britannica_html(recipe) if url == recipe.BRITANNICA_URL else ''
 
       parsed = recipe.fetch_and_parse(fetch)
-      self.assertEqual([recipe.URL, recipe.URL, recipe.WIKIPEDIA_URL, recipe.BRITANNICA_URL], calls)
+      self.assertEqual([(recipe.URL, {'transport': 'camoufox'}), (recipe.URL, {}),
+        (recipe.WIKIPEDIA_URL, {}), (recipe.BRITANNICA_URL, {'transport': 'camoufox'})], calls)
       self.assertEqual(3, len(parsed['notes']))
       self.assertIn('winner-only', parsed['notes'][-1])
+
+  def test_britannica_failure_reports_both_transports(self):
+    from url_fetcher.generic import UrlFetcherError
+    for recipe in self.recipes():
+      calls = []
+
+      def fetch(url, **kwargs):
+        calls.append((url, kwargs))
+        raise RuntimeError('blocked browser' if kwargs else 'legacy HTTP 403')
+
+      with self.subTest(category=recipe.CATEGORY), self.assertRaises(UrlFetcherError) as error:
+        recipe.fetch_and_parse(fetch, source_choice=2)
+      self.assertIn('Britannica transports failed', str(error.exception))
+      self.assertIn('Camoufox: blocked browser', str(error.exception))
+      self.assertIn('legacy: legacy HTTP 403', str(error.exception))
+      self.assertEqual(2, len(calls))
+
+  def test_britannica_does_not_restart_browser_after_official_transport_failure(self):
+    from errors import CamoufoxFetchError
+    self.capability()
+    recipe = self.recipes()[0]
+    original = self.core.fetch_url
+    legacy_calls = []
+
+    def fetch(url, **kwargs):
+      if kwargs.get('transport'):
+        return original(url, **kwargs)
+      legacy_calls.append(url)
+      return self.britannica_html(recipe) if url == recipe.BRITANNICA_URL else ''
+
+    with patch.object(main, 'CamoufoxTransport') as factory:
+      factory.return_value.fetch.side_effect = CamoufoxFetchError('startup failed')
+      parsed = recipe.fetch_and_parse(fetch)
+      factory.assert_called_once()
+      factory.return_value.fetch.assert_called_once()
+      factory.return_value.close.assert_called_once()
+    self.assertEqual([recipe.URL, recipe.WIKIPEDIA_URL, recipe.BRITANNICA_URL], legacy_calls)
+    self.assertEqual(['Britannica Winner'], [e['title'] for e in parsed['entries']])
 
   def test_official_only_allows_transport_retry_but_never_replacement_source(self):
     from url_fetcher.generic import UrlFetcherError

@@ -9,9 +9,9 @@ from urllib.error import HTTPError
 from unittest.mock import Mock, patch
 
 from _dev_tools import test_import_matching as fixtures
-from camoufox_transport import browser_operation
+from transport.camoufox import browser_operation
 from errors import ImportCancelledError, CamoufoxFetchError
-from goodreads_recovery_transport import validate_recovery_payload
+from goodreads.recovery_transport import validate_recovery_payload
 
 main = fixtures.main
 

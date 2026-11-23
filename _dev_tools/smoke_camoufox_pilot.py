@@ -100,7 +100,7 @@ def compare_bookclub(core, prefs, recipe, capture_dir=None):
 
 def check_goodreads_recovery(core, capture_dir=None, source_first=False):
   """Live transport/extraction plus a forced recovery probe in an in-memory DB."""
-  from calibre_plugins.list_switchboard.camoufox_transport import browser_operation
+  from calibre_plugins.list_switchboard.transport.camoufox import browser_operation
   book_url = 'https://www.goodreads.com/book/show/3'
   source_url = 'https://www.goodreads.com/series/45107-the-abbey-girls'
   messages = []
@@ -194,7 +194,7 @@ def worker(args):
   from calibre.constants import numeric_version, config_dir, cache_dir
   from calibre_plugins.list_switchboard.config import prefs
   from calibre_plugins.list_switchboard.main import ListSwitchboardCore
-  from calibre_plugins.list_switchboard import camoufox_transport
+  from calibre_plugins.list_switchboard.transport import camoufox as camoufox_transport
   from bs4 import BeautifulSoup
   from calibre_plugins.list_switchboard.url_fetcher.strand import UrlFetcherStrandMysteryNovel
   from calibre_plugins.list_switchboard.url_fetcher.davitt import UrlFetcherDavittAdultNovel

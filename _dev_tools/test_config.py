@@ -137,8 +137,9 @@ class SelectedBookLimitTest(unittest.TestCase):
     self.notice.assert_called_once()
     message = self.notice.call_args.args[2]
     self.assertIn('21 books', message)
-    self.assertIn('maximum is 20', message)
+    self.assertIn('maximum 20', message)
     self.assertIn('Maintenance > Configure', message)
+    self.assertNotIn('Include series:', message)
 
   def test_series_expansion_is_limited_before_metadata_or_matching(self):
     self.core.selected_book_ids = lambda: [20]
@@ -150,6 +151,11 @@ class SelectedBookLimitTest(unittest.TestCase):
       self.core._add_selected_to_active()
     self.core.current_active.assert_not_called()
     self.notice.assert_called_once()
+    message = self.notice.call_args.args[2]
+    self.assertIn('Include series:', message)
+    self.assertIn('1 selected, 21 total', message)
+    self.assertIn('maximum 20', message)
+    self.assertIn('Maintenance > Configure', message)
 
   def test_create_list_is_blocked_before_name_prompt(self):
     with patch.object(fixtures.list_state.QInputDialog, 'getText', create=True) as prompt:

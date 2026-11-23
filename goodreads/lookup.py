@@ -2,7 +2,7 @@
 # vim:fileencoding=UTF-8:ts=2:sw=2:sta:et:sts=2:ai
 
 """
-Goodreads lookup and recovery helpers.
+Goodreads book, series, and source lookup helpers.
 
 Maintenance notes:
 - Goodreads is best-effort enrichment. Network failures, parse failures, or
@@ -29,13 +29,13 @@ except ImportError:
   from matching import normalize_key, normalize_match_text
 
 try:
-  from calibre_plugins.list_switchboard.camoufox_transport import with_browser_operation
-  from calibre_plugins.list_switchboard.goodreads_recovery_transport import (
+  from calibre_plugins.list_switchboard.transport.camoufox import with_browser_operation
+  from calibre_plugins.list_switchboard.goodreads.recovery_transport import (
     GoodreadsRecoveryFetchPolicy, is_goodreads_url)
   from calibre_plugins.list_switchboard.errors import ImportCancelledError
 except ImportError:
-  from camoufox_transport import with_browser_operation
-  from goodreads_recovery_transport import GoodreadsRecoveryFetchPolicy, is_goodreads_url
+  from transport.camoufox import with_browser_operation
+  from .recovery_transport import GoodreadsRecoveryFetchPolicy, is_goodreads_url
   from errors import ImportCancelledError
 
 

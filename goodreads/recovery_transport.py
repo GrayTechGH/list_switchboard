@@ -1,4 +1,4 @@
-"""Browser-first transport for existing Goodreads matching recovery only.
+"""Goodreads-specific browser-first policy for existing matching recovery.
 
 Maintenance notes:
 - HTML stays request-local. Both transports must pass the same structural gate

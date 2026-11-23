@@ -1184,6 +1184,67 @@ class StorageMixinTest(unittest.TestCase):
     self.assertEqual({'book one imported|author one', 'book two imported|author two'}, set(by_key))
     self.assertEqual(1, by_key['book one imported|author one']['matched_book_id'])
 
+  def test_save_active_matches_restores_explicit_choice_in_fresh_review(self):
+    import main
+
+    for tied_position in (False, True):
+      with self.subTest(tied_position=tied_position):
+        recipe = self.configure_save_active_matches_fixture()
+        entries = self.mixin.read_import_cache('Example List')['entries']
+        if not tied_position:
+          entries = entries[:1]
+        self.mixin.write_import_cache('Example List', {
+          'name': 'Example List', 'entries': entries, 'match_series': True,
+        })
+        self.mixin.write_match_cache('Example List', [])
+        self.mixin.active_book_ids_for_list = lambda _name: [1]
+        self.mixin.direct_match_candidates_for_entry = (
+          lambda entry, **_kwargs: [1] if entry == entries[0] else [])
+        choices = []
+
+        def chooser(book_id, _position, candidates, _db):
+          choices.append(book_id)
+          return candidates[0]
+
+        self.mixin._saved_match_entry_chooser = chooser
+        self.mixin.save_active_matches_for_recipe(recipe)
+        self.assertEqual([1], choices)
+        saved = self.mixin.read_match_cache('Example List')['matches']
+        self.assertEqual([1], [item['matched_book_id'] for item in saved])
+
+        # Reopen the disk-backed choices without the saving instance or its
+        # broad direct matcher, as a later Import List Review does.
+        fresh_storage = FakeStorage(self.temp_dir)
+        core = object.__new__(main.ListSwitchboardCore)
+        core.db = self.mixin.db
+        core.all_book_ids = self.mixin.all_book_ids
+        core.all_local_series_values = self.mixin.all_local_series_values
+        core.read_match_cache = fresh_storage.read_match_cache
+        core.active_book_ids_for_list = lambda _name: [1]
+        core.active_series_index_field = lambda: None
+        core.read_field = lambda *_args: 'Example List'
+        core.read_position_display = self.mixin.read_position_display
+        for name in (
+            'update_import_match_progress', 'update_import_match_step_progress',
+            'debug_import_match_start', 'debug_import_saved_override_lookup',
+            'debug_import_empty_entry', 'debug_import_candidate_rejected',
+            'debug_import_match_entry', 'debug_import_match_entry_detail',
+            'debug_import_matched_book'):
+          setattr(core, name, lambda *_args, **_kwargs: None)
+        matched, _missing, rows = core.match_imported_entries_for_list(
+          entries, list_id='example_list', allow_goodreads_recovery=False,
+          return_details=True, requires_series_matching=True)
+        rows, notes = core.reconcile_review_rows_with_active_list(
+          'Example List', rows, active_name='Example List')
+        self.assertEqual({1: '1'}, matched)
+        self.assertEqual([1], rows[0]['book_ids'])
+        self.assertEqual('saved/manual override', rows[0]['match_source'])
+        self.assertEqual([], notes)
+        self.mixin._saved_match_entry_chooser = lambda *_args: self.fail(
+          'an already saved choice must not prompt again')
+        self.mixin.save_active_matches_for_recipe(recipe)
+        self.assertEqual(saved, self.mixin.read_match_cache('Example List')['matches'])
+
   def test_save_active_matches_reuses_complete_tied_position_matches(self):
     recipe = self.configure_save_active_matches_fixture()
     self.mixin.write_match_cache('Example List', [

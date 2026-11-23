@@ -26,7 +26,7 @@ def worker(args):
   from calibre.constants import config_dir, cache_dir
   from calibre_plugins.list_switchboard.config import prefs
   from calibre_plugins.list_switchboard.main import ListSwitchboardCore
-  from calibre_plugins.list_switchboard.camoufox_transport import browser_operation
+  from calibre_plugins.list_switchboard.transport.camoufox import browser_operation
   from calibre_plugins.list_switchboard.errors import ImportCancelledError
   from calibre_plugins.list_switchboard.parser.goodreads_choice_awards import GoodreadsChoiceAwardsParser
   from calibre_plugins.list_switchboard.url_fetcher.goodreads_choice_transport import GoodreadsChoiceFetchPolicy

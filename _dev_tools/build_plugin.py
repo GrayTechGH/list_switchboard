@@ -11,29 +11,30 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 RUNTIME_ROOT_FILES = frozenset((
   '__init__.py',
-  'camoufox_transport.py',
   'config.py',
   'debug.py',
   'errors.py',
-  'goodreads.py',
-  'goodreads_recovery_transport.py',
-  'http_policy.py',
   'import_flow.py',
   'list_state.py',
   'main.py',
   'matching.py',
   'metadata.py',
   'plugin-import-name-list_switchboard.txt',
-  'sfadb_transport.py',
   'storage.py',
   'ui.py',
-  'wayback_policy.py',
 ))
-RUNTIME_DIRECTORIES = ('dialogs', 'images', 'parser', 'url_fetcher')
+RUNTIME_DIRECTORIES = ('dialogs', 'goodreads', 'images', 'parser', 'transport', 'url_fetcher')
 RUNTIME_SUFFIXES = frozenset(('.json', '.png', '.py'))
 REQUIRED_MEMBERS = frozenset((
+  'transport/__init__.py',
+  'transport/camoufox.py',
+  'goodreads/__init__.py',
+  'goodreads/lookup.py',
+  'goodreads/recovery_transport.py',
+  'transport/http.py',
+  'transport/sfadb.py',
   '__init__.py',
-  'wayback_policy.py',
+  'transport/wayback.py',
   'images/icon.png',
   'parser/__init__.py',
   'parser/data/spsfc_results.json',

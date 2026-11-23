@@ -1,4 +1,4 @@
-"""One process-wide request clock for the plugin's Wayback transports.
+"""Shared process-wide request clock for the plugin's Wayback transports.
 
 Request processors run for redirect hops as well as initial requests. Waiting
 never holds the clock lock, so UI event processing and cancellation can reenter

@@ -1,4 +1,4 @@
-"""User agents for legacy HTTP transports."""
+"""Fresh Calibre user agents for legacy HTTP transports."""
 
 
 def random_user_agent():

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # vim:fileencoding=UTF-8:ts=2:sw=2:sta:et:sts=2:ai
 
-"""Import-scoped adapter for Calibre's optional Camoufox recipe browser.
+"""Shared import-scoped adapter for Calibre's optional Camoufox recipe browser.
 
 Maintenance notes:
 - Calibre 9.16 introduced the browser API used here. Imports stay lazy so the

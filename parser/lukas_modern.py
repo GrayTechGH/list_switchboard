@@ -1,7 +1,8 @@
 """Read Columbia's paired prize table and bounded annual summary rosters.
 
-The archive alternates author/title rows for winners and finalists. Shortlist
-rows contain names only, never inferred book titles; juror rows are excluded.
+The archive alternates author/title rows for winners and 2022-onward finalists.
+Earlier finalists and shortlist rows contain names only, never inferred book
+titles; juror rows are excluded.
 Annual summaries end at About the Prizes, before repeated book biographies.
 """
 
@@ -15,6 +16,9 @@ try:
   from calibre_plugins.list_switchboard.parser.award_base import normalize_heading,normalize_line
 except ImportError:
   from .award_base import normalize_heading,normalize_line
+
+
+FINALIST_TITLES_FROM_YEAR = 2022
 
 
 def soup_for(source):
@@ -63,11 +67,12 @@ def archive_rows(parser,root,table,column,url,category):
     value=texts[column]
     if not value:continue
     roster=rosters.setdefault(year,[])
-    if stage=='shortlisted':
-      roster.append({'author':parser.clean_author(value),'title':None,'result':stage})
+    # Earlier finalist blocks list consecutive people, not alternating book rows.
+    if stage=='shortlisted' or (stage=='finalist' and year<FINALIST_TITLES_FROM_YEAR):
+      roster.append({'author':parser.clean_official_author(value),'title':None,'result':stage})
       missing_titles=True
     elif pending is None:
-      pending={'author':parser.clean_author(value),'title':None,'result':stage}
+      pending={'author':parser.clean_official_author(value),'title':None,'result':stage}
       roster.append(pending)
     else:
       pending['title']=parser.clean_title(value)
@@ -126,8 +131,9 @@ def news_rows(parser,root,title,url,category):
       fragment=soup_for(str(node));mark=fragment.find(['em','i']);mark.replace_with('__LUKAS_TITLE__')
       prefix=fragment.get_text(' ',strip=True).split('__LUKAS_TITLE__',1)[0]
       prefix=re.sub(r'^\s*(?:winner|finalists?|shortlist(?:ed)?)\s*:\s*','',prefix,flags=re.I)
-      author=parser.clean_author(prefix.strip(' ,:'))
+      author=parser.clean_official_author(prefix.strip(' ,:'))
     else:book_title,author=parser.title_author_from_text(work)
+    author=parser.clean_official_author(author)
     if not book_title or not author:
       complete=False;continue
     rows.append({'award_year':str(year),'category':category,'source_url':url,

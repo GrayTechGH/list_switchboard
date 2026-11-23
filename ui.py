@@ -5,12 +5,18 @@ __license__ = 'GPL v3'
 __copyright__ = '2026, List Switchboard contributors'
 __docformat__ = 'restructuredtext en'
 
+from inspect import signature
+
 if False:
   get_icons = None
 
-from qt.core import QAction, QActionGroup, QApplication, QMenu, Qt
+from qt.core import QAction, QActionGroup, QApplication, QMenu, QPoint, Qt
 
 from calibre.gui2.actions import InterfaceAction
+try:
+  from calibre.gui2.actions import show_menu_under_widget
+except ImportError:
+  show_menu_under_widget = None
 from calibre_plugins.list_switchboard.main import ListSwitchboardCore
 
 
@@ -20,8 +26,9 @@ class ListSwitchboardAction(InterfaceAction):
     'List SB',
     None,
     'Add selected books to Active List',
-    None
+    ()  # Register in Calibre Shortcuts with no default key binding.
   )
+  action_shortcut_name = 'Add selected books to Active List'
   action_type = 'current'
   action_add_menu = True
   action_menu_clone_qaction = 'Add selected books to Active List'
@@ -32,6 +39,27 @@ class ListSwitchboardAction(InterfaceAction):
     self.qaction.setToolTip('Add selected books to Active List')
     self.qaction.setStatusTip('Add selected books to Active List')
     self.qaction.triggered.connect(self.add_selected_to_active)
+    # Calibre binds shortcuts to this clone. Ctrl/Shift in the key binding
+    # must not activate the toolbar's modifier-click review/debug behavior.
+    self.menuless_qaction.triggered.disconnect(self.qaction.trigger)
+    self.menuless_qaction.triggered.connect(self.add_selected_from_shortcut)
+    # Keep registered actions alive across menu rebuilds so Calibre retains
+    # their shortcut targets and does not register the same names twice.
+    self.create_action(
+      spec=('Import List...', None, 'Import a list', ()),
+      attr='import_list_action', shortcut_name='Import List...')
+    self.import_list_action.triggered.connect(lambda: self.core().choose_and_import_recipe())
+    self.gui.addAction(self.import_list_action)
+    self.create_action(
+      spec=('Manage Active List...', None, 'Manage the current Active List', ()),
+      attr='manage_active_list_action', shortcut_name='Manage Active List...')
+    self.manage_active_list_action.triggered.connect(lambda: self.core().manage_current_active_list())
+    self.gui.addAction(self.manage_active_list_action)
+    self.create_action(
+      spec=('Show Main Menu', None, 'Show the List Switchboard menu', ()),
+      attr='show_main_menu_action', shortcut_name='Show Main Menu')
+    self.show_main_menu_action.triggered.connect(self.show_main_menu)
+    self.gui.addAction(self.show_main_menu_action)
     self.populate_menu(self.qaction.menu())
 
   def core(self):
@@ -69,14 +97,12 @@ class ListSwitchboardAction(InterfaceAction):
 
     menu.addSeparator()
 
-    self.add_menu_action(menu, 'Import List...',
-      lambda: self.core().choose_and_import_recipe())
+    menu.addAction(self.import_list_action)
 
     menu.addSeparator()
 
     active_menu = menu.addMenu('Active List')
-    self.add_menu_action(active_menu, 'Manage Active List...',
-      lambda: self.core().manage_current_active_list())
+    active_menu.addAction(self.manage_active_list_action)
     self.add_menu_action(active_menu, 'Show Position Problems...',
       lambda: self.core().show_current_active_list_position_problems())
     active_menu.addSeparator()
@@ -139,6 +165,18 @@ class ListSwitchboardAction(InterfaceAction):
       self.core().show_debug_dialog()
       return
     self.core().add_selected_to_active(force_match_review=shift)
+
+  def add_selected_from_shortcut(self, checked=False):
+    self.core().add_selected_to_active()
+
+  def show_main_menu(self, checked=False):
+    menu = self.qaction.menu()
+    if show_menu_under_widget is None:
+      menu.exec(self.gui.library_view.mapToGlobal(QPoint(10, 10)))
+    else:
+      # Older Calibre has no helper; newer signatures differ by the name argument.
+      kwargs = {'name': self.name} if 'name' in signature(show_menu_under_widget).parameters else {}
+      show_menu_under_widget(self.gui, menu, self.qaction, **kwargs)
 
   def configure(self):
     self.interface_action_base_plugin.do_user_config(parent=self.gui)

@@ -2855,36 +2855,45 @@
     },
     "national_book_award_fiction": {
       "candidate": "Yes",
-      "reason": "Keep complete parsed ballots by award year/category and source URL; reread the index for new links and fetch current, unsettled, failed or changed-source years. Skip settled historical year pages and rerun dedupe/result positioning over cached plus new rows. A missing winner, partial shortlist or failed page must not become a completed checkpoint.",
-      "source_path": "Official discovery page and linked annual/category archive pages: Fiction",
+      "reason": "The current policy retains usable Foundation years and optionally supplements only failed years from Wikipedia; supplement outages are nonfatal. Existing annual reuse remains implemented, but the old replacement-only parity/no-savings receipts do not qualify this policy. Await new recipe-specific full/update/recovery proof before advertising Updates.",
+      "source_path": "Official Foundation year units with optional Wikipedia supplementation of failed years",
       "evidence": [
-        "url_fetcher/national_book_award.py",
-        "parser/national_book_award.py"
+        "_dev_tools\\Scraps Cache\\update_implementation\\annual-renewed\\national_book_award_fiction",
+        "_docs/NATIONAL_BOOK_AWARD_SOURCE_AUDIT.md",
+        "_dev_tools/Scraps Cache/nba-official-routing/verification.json",
+        "_dev_tools\\Scraps Cache\\nba-official-routing\\national_book_award_fiction_final.json",
+        "_dev_tools/test_national_book_award_supplement.py"
       ],
       "discontinued": false,
-      "reviewed_at": "2026-11-16T08:23:37+00:00"
+      "reviewed_at": "2026-11-20T04:32:32+00:00"
     },
     "national_book_award_nonfiction": {
       "candidate": "Yes",
-      "reason": "Keep complete parsed ballots by award year/category and source URL; reread the index for new links and fetch current, unsettled, failed or changed-source years. Skip settled historical year pages and rerun dedupe/result positioning over cached plus new rows. A missing winner, partial shortlist or failed page must not become a completed checkpoint.",
-      "source_path": "Official discovery page and linked annual/category archive pages: Nonfiction",
+      "reason": "The current policy retains usable Foundation years and optionally supplements only failed years from Wikipedia; supplement outages are nonfatal. Existing annual reuse remains implemented, but the old replacement-only parity/no-savings receipts do not qualify this policy. Await new recipe-specific full/update/recovery proof before advertising Updates.",
+      "source_path": "Official Foundation year units with optional Wikipedia supplementation of failed years",
       "evidence": [
-        "url_fetcher/national_book_award.py",
-        "parser/national_book_award.py"
+        "_dev_tools\\Scraps Cache\\update_implementation\\annual-renewed\\national_book_award_nonfiction",
+        "_docs/NATIONAL_BOOK_AWARD_SOURCE_AUDIT.md",
+        "_dev_tools/Scraps Cache/nba-official-routing/verification.json",
+        "_dev_tools\\Scraps Cache\\nba-official-routing\\national_book_award_nonfiction_final.json",
+        "_dev_tools/test_national_book_award_supplement.py"
       ],
       "discontinued": false,
-      "reviewed_at": "2026-11-16T08:23:39+00:00"
+      "reviewed_at": "2026-11-20T04:32:32+00:00"
     },
     "national_book_award_young_peoples_literature": {
       "candidate": "Yes",
-      "reason": "Keep complete parsed ballots by award year/category and source URL; reread the index for new links and fetch current, unsettled, failed or changed-source years. Skip settled historical year pages and rerun dedupe/result positioning over cached plus new rows. A missing winner, partial shortlist or failed page must not become a completed checkpoint.",
-      "source_path": "Official discovery page and linked annual/category archive pages: Young People's Literature",
+      "reason": "The current policy retains usable Foundation years and optionally supplements only failed years from Wikipedia; supplement outages are nonfatal. Existing annual reuse remains implemented, but the old replacement-only parity/no-savings receipts do not qualify this policy. Await new recipe-specific full/update/recovery proof before advertising Updates.",
+      "source_path": "Official Foundation year units with optional Wikipedia supplementation of failed years",
       "evidence": [
-        "url_fetcher/national_book_award.py",
-        "parser/national_book_award.py"
+        "_dev_tools\\Scraps Cache\\update_implementation\\annual-renewed\\national_book_award_young_peoples_literature",
+        "_docs/NATIONAL_BOOK_AWARD_SOURCE_AUDIT.md",
+        "_dev_tools/Scraps Cache/nba-official-routing/verification.json",
+        "_dev_tools\\Scraps Cache\\nba-official-routing\\national_book_award_young_peoples_literature_final.json",
+        "_dev_tools/test_national_book_award_supplement.py"
       ],
       "discontinued": false,
-      "reviewed_at": "2026-11-16T08:23:41+00:00"
+      "reviewed_at": "2026-11-20T04:32:32+00:00"
     },
     "baillie_gifford_prize": {
       "candidate": "Yes",

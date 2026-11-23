@@ -23,7 +23,7 @@ def worker(sandbox, output):
   from calibre_plugins.list_switchboard.url_fetcher import booksellers_best as transport
   from calibre_plugins.list_switchboard.parser.booksellers_best import BOOKSELLERS_BEST_CDX_URLS
   from calibre_plugins.list_switchboard.parser.booksellers_best_updates import capture_index
-  from calibre_plugins.list_switchboard import wayback_policy
+  from calibre_plugins.list_switchboard.transport import wayback as wayback_policy
   from _dev_tools.verify_import_updates import capture_payload, write_json
   for path in (config_dir, cache_dir()):
     if not Path(path).resolve().is_relative_to(Path(sandbox).resolve()):
